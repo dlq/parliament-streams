@@ -11,8 +11,12 @@ record.
 ## What Is Here
 
 - `data/channels.json`: canonical source catalogue.
+- `schema/channels.schema.json`: machine-readable catalogue schema.
 - `parliament_streams/scrapers/`: Python parsers for the schedule/EPG sources
   already understood by the prototype.
+- `parliament_streams/healthcheck.py`: repeatable live endpoint/page health
+  checker for catalogue entries.
+- `reports/health/`: dated JSON health reports from live validation passes.
 - `docs/sources-and-provenance.md`: source ownership, reuse, and provenance
   boundaries.
 - `docs/source-rights-and-permissions.md`: source-by-source permission and
@@ -31,8 +35,8 @@ The catalogue includes:
   appropriate;
 - one legacy DASH research candidate kept for provenance;
 - official pages used for source attribution and validation;
-- schedule/EPG scrape surfaces for CPAC, Quebec, Ontario, New Zealand, and
-  Brazil;
+- schedule/EPG scrape surfaces for CPAC, Quebec, Ontario, New Zealand, Brazil,
+  Spain, Ireland, and Nunavut;
 - permission status, evidence links, and reuse recommendations for every
   channel entry.
 
@@ -58,17 +62,21 @@ They parse supplied HTML/JSON strings. Network fetching is deliberately not
 hidden inside the parsers so validation runs can record exactly what was
 downloaded, when, and from which official endpoint.
 
+Schedule sources use `scraper_status: implemented` when a parser exists and
+`scraper_status: planned` when a source is documented but still needs parser
+work.
+
 Parse a saved response with the scraper CLI:
 
 ```sh
-python3 -m parliament_streams.scrapers cpac /path/to/cpac-schedule.html
+uv run --extra dev python -m parliament_streams.scrapers cpac /path/to/cpac-schedule.html
 ```
 
 Quebec uses two official JSON endpoints, so pass the live response first and
 the upcoming response second:
 
 ```sh
-python3 -m parliament_streams.scrapers quebec-webdiffusion live.json upcoming.json
+uv run --extra dev python -m parliament_streams.scrapers quebec-webdiffusion live.json upcoming.json
 ```
 
 The command prints parsed channel metadata as JSON. It does not fetch network
@@ -76,17 +84,15 @@ resources itself.
 
 ## Verify
 
-Install the lightweight development tools first:
-
-```sh
-python3 -m pip install ".[dev]"
-```
-
-Run the local verification pass:
+Install `uv`, then run the local verification pass:
 
 ```sh
 make verify
 ```
+
+The Makefile uses `uv run --extra dev`, so contributors get a Python 3.11+
+environment and the pinned Ruff version from `uv.lock` instead of relying on a
+system Python.
 
 This runs JSON validation, Ruff linting, Python import/compile checks, and the
 unit tests.
@@ -96,6 +102,22 @@ Format Python sources with:
 ```sh
 make format
 ```
+
+Run a live health check against playback URLs and official link-out pages:
+
+```sh
+make healthcheck
+```
+
+To save a dated report:
+
+```sh
+uv run --extra dev python -m parliament_streams.healthcheck --output reports/health/YYYY-MM-DD-catalogue-health.json
+```
+
+The health checker records HTTP status, content type, final URL, and whether
+direct HLS/DASH entries look like manifests. It is a technical availability
+check only; it does not determine redistribution permission.
 
 ## Rights And Reuse
 

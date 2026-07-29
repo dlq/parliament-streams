@@ -1,20 +1,26 @@
-.PHONY: verify test json-check compile format lint
+.PHONY: verify test json-check compile format lint healthcheck
 
-PYTHON ?= python3
+UV ?= uv
+UV_RUN ?= $(UV) run --extra dev
+UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
+PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 
 verify: json-check lint compile test
 
 json-check:
-	$(PYTHON) -m json.tool data/channels.json >/dev/null
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/channels.json >/dev/null
 
 compile:
-	$(PYTHON) -m compileall parliament_streams tests
+	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m compileall parliament_streams tests
 
 format:
-	ruff format parliament_streams tests
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) ruff format parliament_streams tests
 
 lint:
-	ruff check parliament_streams tests
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) ruff check parliament_streams tests
 
 test:
-	$(PYTHON) -m unittest discover -s tests
+	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m unittest discover -s tests
+
+healthcheck:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m parliament_streams.healthcheck

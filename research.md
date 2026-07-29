@@ -4,6 +4,43 @@ This is a working research log, not an endorsed stream directory or legal assess
 
 Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `plan.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
 
+## 2026-07-29 catalogue health refresh
+
+Live validation was rerun from the current development environment with the
+new repeatable checker:
+
+```sh
+python3 -m parliament_streams.healthcheck --output reports/health/2026-07-29-catalogue-health.json
+```
+
+Initial result before catalogue updates: 41 entries checked, 39 OK, 1 warning,
+1 error.
+
+- Nunavut's previous direct iSi LIVE HLS URL returned HTTP 404. The official
+  Assembly webcast page still links to `https://video.isilive.ca/nunavut/live-eng.html`,
+  so the catalogue now records Nunavut as an official live player page rather
+  than a direct HLS source.
+- France National Assembly returned HTTP 200 with
+  `application/vnd.apple.mpegurl`, but the body was a minimal/malformed playlist
+  snippet rather than a standard `#EXTM3U` manifest. The entry is still useful
+  but now marked for review.
+- Spain's Congreso en Directo page documents simultaneous Plenary and up to
+  five committee/live web signals. Direct HLS signals `canal1` through `canal5`
+  all returned HLS master manifests and were added as `needs_review` entries
+  because the deeper sample-variant check returned 404 for the first variant in
+  each master.
+- Oireachtas TV has strong official embed evidence and required credit/rules of
+  coverage language. The raw CloudFront HLS URLs discovered through playlist
+  indexes returned HTTP 403 from this environment, so the catalogue records
+  Oireachtas as an official embed/link-out source rather than direct HLS.
+- Brazil TV Camara channel 2 was checked as a possible nearby addition, but
+  `https://stream3.camara.gov.br/tv2/manifest.m3u8` returned HTTP 404 and was
+  not added.
+- Iceland Althingi's playlist-index hostname did not resolve from this
+  environment and was not added.
+- Bundestag Parlamentsfernsehen remains promising from official pages, but the
+  sampled HLS URL returned HTTP 504 and was not added in this pass.
+
 Date researched: 2026-05-12  
 Original goal: determine whether publicly available parliamentary video streams and schedule metadata could support a channel-style viewer. Current use: preserve the source discovery evidence behind the public catalogue.
 

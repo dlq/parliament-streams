@@ -29,26 +29,26 @@ official page, official API, official embed, or official streaming vendor path.
 Before opening a pull request, run:
 
 ```sh
-python3 -m pip install ".[dev]"
-```
-
-Then run:
-
-```sh
 make verify
 ```
 
-`make verify` validates the JSON catalogue, runs Ruff linting, compiles Python
-modules, and runs the data/scraper contract tests.
+The Makefile uses `uv run --extra dev`, so install `uv` first if it is not
+already available. `make verify` validates the JSON catalogue, checks the
+schema contract, runs Ruff linting, compiles Python modules, and runs the
+data/scraper contract tests.
 
 Python scrapers should parse supplied HTML/JSON strings. Do not hide network
 fetches inside parser functions; fetch scripts should record where data came
 from and when it was retrieved.
 
+For `epg_sources`, use `scraper_status: implemented` only when the named
+scraper module exists. Use `scraper: planned` and `scraper_status: planned` for
+documented schedule sources that still need parser work.
+
 To test a parser manually, save the official response to disk and run:
 
 ```sh
-python3 -m parliament_streams.scrapers <scraper-id> <response-file>
+uv run --extra dev python -m parliament_streams.scrapers <scraper-id> <response-file>
 ```
 
 ## Research Notes

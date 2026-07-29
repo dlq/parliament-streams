@@ -16,6 +16,7 @@ class ScraperContractTests(unittest.TestCase):
                 source["scraper"]
                 for channel in catalogue["channels"]
                 for source in channel.get("epg_sources", [])
+                if source["scraper_status"] == "implemented"
             }
         )
 

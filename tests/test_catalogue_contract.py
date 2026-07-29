@@ -5,6 +5,19 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE_PATH = ROOT / "data" / "channels.json"
+SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
+
+SOURCE_TYPES = {"direct_hls", "direct_dash", "official_page", "youtube"}
+DISPLAY_MODES = {"native_player", "link_out"}
+TECHNICAL_STATUSES = {"validated", "needs_review", "link_only"}
+PROGRAM_CONFIDENCE = {"low", "medium", "high"}
+SCRAPER_STATUSES = {"implemented", "planned"}
+PERMISSION_STATUSES = {
+    "personal_use_pending_review",
+    "noncommercial_pending_review",
+    "explicit_reuse_with_conditions",
+    "embed_only",
+}
 
 
 class CatalogueContractTests(unittest.TestCase):
@@ -15,8 +28,73 @@ class CatalogueContractTests(unittest.TestCase):
 
     def test_catalogue_has_expected_top_level_shape(self):
         self.assertEqual(self.catalogue["schema_version"], 1)
-        self.assertEqual(self.catalogue["generated_from"], "App/ChannelCatalog.swift")
-        self.assertGreaterEqual(len(self.channels), 40)
+        self.assertEqual(
+            self.catalogue["generated_from"], "curated research and live endpoint validation"
+        )
+        self.assertGreaterEqual(len(self.channels), 45)
+
+    def test_schema_file_is_present_and_aligned(self):
+        schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
+        self.assertEqual(schema["title"], "Parliament Streams Catalogue")
+        self.assertEqual(
+            set(schema["$defs"]["channel"]["properties"]["source_type"]["enum"]), SOURCE_TYPES
+        )
+        self.assertEqual(
+            set(schema["$defs"]["channel"]["properties"]["technical_status"]["enum"]),
+            TECHNICAL_STATUSES,
+        )
+
+    def test_channel_records_follow_declared_schema_contract(self):
+        seen_ids = set()
+        required_channel_keys = {
+            "id",
+            "name",
+            "short_name",
+            "jurisdiction_level",
+            "country_or_region",
+            "legislature",
+            "language",
+            "source_type",
+            "display_mode",
+            "playback_url",
+            "official_url",
+            "attribution_text",
+            "technical_status",
+            "availability",
+            "metadata_level",
+            "program",
+            "epg_sources",
+            "permission",
+        }
+        required_program_keys = {
+            "current_event_title",
+            "current_event_time",
+            "next_event_title",
+            "next_event_time",
+            "confidence",
+        }
+        required_permission_keys = {"status", "summary", "evidence", "recommendation"}
+
+        for channel in self.channels:
+            with self.subTest(channel=channel["id"]):
+                self.assertEqual(set(channel), required_channel_keys)
+                self.assertNotIn(channel["id"], seen_ids)
+                seen_ids.add(channel["id"])
+                self.assertIn(channel["source_type"], SOURCE_TYPES)
+                self.assertIn(channel["display_mode"], DISPLAY_MODES)
+                self.assertIn(channel["technical_status"], TECHNICAL_STATUSES)
+                self.assertTrue(urlparse(channel["official_url"]).scheme.startswith("http"))
+                if channel["source_type"].startswith("direct_"):
+                    self.assertIsInstance(channel["playback_url"], str)
+                else:
+                    self.assertIsNone(channel["playback_url"])
+
+                self.assertEqual(set(channel["program"]), required_program_keys)
+                self.assertIn(channel["program"]["confidence"], PROGRAM_CONFIDENCE)
+                self.assertEqual(set(channel["permission"]), required_permission_keys)
+                self.assertIn(channel["permission"]["status"], PERMISSION_STATUSES)
+                for evidence_url in channel["permission"]["evidence"]:
+                    self.assertTrue(urlparse(evidence_url).scheme.startswith("http"))
 
     def test_hls_and_youtube_endpoints_are_present(self):
         source_types = {channel["source_type"] for channel in self.channels}
@@ -50,7 +128,17 @@ class CatalogueContractTests(unittest.TestCase):
                 with self.subTest(channel=channel["id"], scraper=source["scraper"]):
                     self.assertIn("url", source)
                     self.assertIn("scraper", source)
+                    self.assertIn("scraper_status", source)
                     self.assertIn("method", source)
+                    self.assertIn(source["scraper_status"], SCRAPER_STATUSES)
+                    if source["scraper_status"] == "implemented":
+                        self.assertNotEqual(source["scraper"], "planned")
+                    else:
+                        self.assertEqual(source["scraper"], "planned")
+
+    def test_healthcheck_cli_is_importable(self):
+        module = __import__("parliament_streams.healthcheck", fromlist=["main"])
+        self.assertTrue(hasattr(module, "main"))
 
 
 if __name__ == "__main__":

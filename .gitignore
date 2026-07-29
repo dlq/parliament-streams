@@ -24,9 +24,13 @@ build/
 # Python local build/cache state
 __pycache__/
 *.py[cod]
+*.egg-info/
+.pycache/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.uv-cache/
+.venv/
 
 # Local editor settings
 .vscode/
