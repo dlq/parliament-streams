@@ -16,6 +16,8 @@ For channel/source changes, include:
 - source type: HLS, DASH, YouTube, official player, official page, or unknown;
 - validation date and region;
 - status code, content type, and observed player behavior if tested;
+- whether the URL came from a static HTTP response, official API, browser
+  network trace, DOM/player configuration, or a third-party playlist seed;
 - terms, permission, or attribution notes;
 - schedule/EPG endpoint, if one exists;
 - known caveats such as geofencing, login prompts, off-air behavior, or
@@ -50,6 +52,28 @@ To test a parser manually, save the official response to disk and run:
 ```sh
 uv run --extra dev python -m parliament_streams.scrapers <scraper-id> <response-file>
 ```
+
+## Validation Reports
+
+Live validation reports belong under `reports/health/` and should use dated
+filenames. Static endpoint checks and browser/player checks answer different
+questions, so keep them separate:
+
+- static health checks confirm current URL reachability and manifest shape;
+- tier refresh reports document country-level stream-discovery coverage;
+- browser validation reports document manifests discovered only after an
+  official page loads scripts or player configuration.
+
+To rerun the browser validator locally:
+
+```sh
+npm install --no-save playwright
+node tools/deep_validate_browser.mjs
+```
+
+Do not treat a browser-discovered stream as redistributable just because it
+plays. Add or update the permission evidence in
+`docs/source-rights-and-permissions.md`.
 
 ## Research Notes
 

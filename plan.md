@@ -34,6 +34,10 @@ Done:
 - `docs/sources-and-provenance.md` explains repository license scope and
   external-source limitations.
 - `research.md` remains the working evidence log for stream discovery.
+- Democracy-priority Tier 1, Tier 2, and Tier 3 stream checks were refreshed on
+  2026-07-29, with detailed JSON reports under `reports/health/`.
+- A deeper browser/player validation pass for Tier 1 and Tier 2 official pages
+  now exists in `tools/deep_validate_browser.mjs`.
 - CI and `make verify` now validate JSON, compile Python modules, and run the
   contract tests.
 
@@ -48,17 +52,19 @@ Retired from the active project:
 
 Near-term:
 
-1. Split repeated permission summaries into a normalized `data/permissions.json`
+1. Normalize validation history so dated health reports can be linked from
+   catalogue entries without copying transient HTTP details into every channel.
+2. Split repeated permission summaries into a normalized `data/permissions.json`
    only if the inline channel entries become hard to review.
-2. Add explicit schemas for stream/source entries, permission evidence, EPG
+3. Add explicit schemas for stream/source entries, permission evidence, EPG
    scrape surfaces, validation history, and generated reports.
-3. Add validation-history fields for endpoint checks, including checked date,
-   HTTP status, content type, and validator environment.
 4. Distinguish first-party, official-vendor, platform, and third-party relay
    endpoints explicitly.
 5. Add a source freshness field for URLs that are likely to drift.
 6. Make the schema distinguish source discovery from permission status, because
    a stream can be technically reachable but unsuitable for redistribution.
+7. Decide whether event-specific findings such as HouseLive/C-SPAN should live
+   in a separate events/fallback dataset instead of the channel catalogue.
 
 Later:
 
@@ -86,9 +92,9 @@ Candidate future scrapers:
 2. European Parliament Multimedia Centre REST calls.
 3. Portugal ARTV agenda.
 4. Spain Congreso/Canal Parlamento programming.
-5. Netherlands, France, Denmark, Greece, Luxembourg, Mauritius, Italy, India,
-   Thailand, Slovakia, Nunavut, and other second-ring sources when structured
-   official endpoints are found.
+5. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
+   Israel, El Salvador, Mauritius, Italy, India, Thailand, Slovakia, Nunavut,
+   and other second-ring sources when structured official endpoints are found.
 
 ## Rights And Permission Work
 
@@ -96,12 +102,14 @@ Near-term:
 
 1. Keep `docs/source-rights-and-permissions.md` as the evidence-backed matrix for
    source terms and permission status.
-2. Add a short public-facing `docs/rights-summary.md` if the detailed matrix
+2. Prioritize rights review for newly added official-page/player discoveries:
+   Norway, Estonia, Chile, Israel, and El Salvador.
+3. Add a short public-facing `docs/rights-summary.md` if the detailed matrix
    becomes too long for readers who only need the current posture.
-3. Record written permission requests and responses as summarized evidence, not
+4. Record written permission requests and responses as summarized evidence, not
    raw private correspondence.
-4. Keep CPAC marked link-out/pending unless written consent is obtained.
-5. Keep YouTube sources link-out or compliant-embed only; do not extract
+5. Keep CPAC marked link-out/pending unless written consent is obtained.
+6. Keep YouTube sources link-out or compliant-embed only; do not extract
    YouTube manifests.
 
 ## Research And Advocacy

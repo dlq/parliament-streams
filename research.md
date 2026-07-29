@@ -41,6 +41,50 @@ Initial result before catalogue updates: 41 entries checked, 39 OK, 1 warning,
 - Bundestag Parlamentsfernsehen remains promising from official pages, but the
   sampled HLS URL returned HTTP 504 and was not added in this pass.
 
+## 2026-07-29 Tier 1 democracy HLS refresh
+
+The Democracy Index Tier 1 country list was checked again for currently open
+direct HLS/DASH sources, using the same conservative rule as the May pass:
+count a source only when the manifest itself validates as HLS/DASH, or when an
+official page exposes a manifest that then validates.
+
+Detailed report:
+`reports/health/2026-07-29-tier1-democracy-hls.json`.
+
+Confirmed open HLS on 2026-07-29:
+
+| Country | Open HLS count | Notes |
+| --- | ---: | --- |
+| New Zealand | 1 | Existing Parliament TV HLS still validates. |
+| Denmark | 1 | Existing Folketinget/Kaltura HLS still validates. |
+| Netherlands | 3 | Existing plenairezaal stream plus additional official Tweede Kamer room/event streams validated. |
+| Luxembourg | 1 | Existing Chamber TV HLS still validates. |
+| Canada | 1 | Existing CPAC HLS still validates. |
+| Estonia | 2 | Official Riigikogu live pages exposed `rk_live_1` and `rk_live_2` HLS manifests; both validated and were added to the catalogue. |
+| Spain | 3 | Canal Parlamento plus Congreso direct channels 1 and 2 validated in this targeted pass. |
+| Portugal | 1 | Existing ARTV HLS still validates. |
+| Greece | 1 | Existing Hellenic Parliament TV HLS still validates. |
+
+No open direct HLS/DASH was confirmed in this pass for Norway, Sweden,
+Iceland, Switzerland, Finland, Ireland, Australia, Taiwan, Germany, Uruguay,
+Japan, United Kingdom, Costa Rica, Austria, Mauritius, Czech Republic, or the
+France edge case. Several official discovery/player pages were reachable and
+remain good follow-up targets, but their raw manifests were blocked, inactive,
+stale, or absent from static page inspection.
+
+Changes since the May research:
+
+- Estonia improved from official-page fallback to two validated HLS manifests
+  discovered from official Riigikogu live pages.
+- Germany's previously validated Bundestag HLS candidate timed out, and the
+  other sampled Bundestag channels returned 404.
+- Mauritius's previously validated CloudFront HLS candidate returned 404,
+  while the official Parliament page remained reachable.
+- Ireland's direct CloudFront HLS candidates still returned 403 from this
+  validation environment.
+- France National Assembly's candidate returned HTTP 200 with an HLS content
+  type, but the response body did not validate as an HLS manifest.
+
 Date researched: 2026-05-12  
 Original goal: determine whether publicly available parliamentary video streams and schedule metadata could support a channel-style viewer. Current use: preserve the source discovery evidence behind the public catalogue.
 
@@ -659,9 +703,118 @@ Summary:
 | Lesotho | Not validated. | No robust fallback validated in this pass. | Needs manual/browser follow-up against official parliament and national broadcaster channels. |
 | Moldova | Validated HLS 200, but third-party. | Official Parliament site/player should be preferred if found. | `https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8` returned HTTP 200, but it is Privesc.eu rather than first-party parliament infrastructure. Treat as a relay/fallback, not a canonical source. |
 
-Engineering interpretation for this tier:
+## 2026-07-29 Tier 2 democracy HLS refresh
+
+The 46-country flawed-democracy list was checked again for currently open
+direct HLS/DASH sources. This pass validated known direct candidates and also
+looked for static `.m3u8`/`.mpd` manifest URLs exposed by official discovery
+pages. It did not inspect JavaScript player network traffic.
+
+Detailed report:
+`reports/health/2026-07-29-tier2-democracy-hls.json`.
+
+Confirmed open direct HLS/DASH on 2026-07-29:
+
+| Country | Open HLS/DASH count | Notes |
+| --- | ---: | --- |
+| South Korea | 1 HLS | `https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8` still validates, but this remains a broadcaster route rather than a clean first-party parliament source. |
+| Italy | 2 HLS | Senate HLS still validates; the Camera/Radio Radicale HLS also validates but should remain secondary to official Camera/Senate sources. |
+| India | 2 HLS | Both Sansad TV HLS feeds still validate. |
+| Slovakia | 1 HLS | TV NRSR/public-broadcaster HLS still validates. |
+| Mongolia | 1 DASH | SkyGo DASH still validates, but remains a distribution-platform candidate requiring ownership and terms review. |
+| Brazil | 2 HLS | TV Camara still validates; Canal Gov also validates but is broader government TV rather than legislature-specific. |
+| Thailand | 1 HLS | Thai Parliament TV HLS still validates. |
+| Moldova | 1 HLS | Privesc.eu HLS still validates, but remains a third-party relay rather than a canonical parliament source. |
+
+No open direct HLS/DASH was confirmed in this pass for France, Malta, United
+States, Chile, Slovenia, Israel, Latvia, Belgium, Botswana, Lithuania, Cape
+Verde, Poland, Cyprus, South Africa, Malaysia, Trinidad and Tobago,
+Timor-Leste, Panama, Suriname, Jamaica, Montenegro, Philippines, Dominican
+Republic, Argentina, Hungary, Croatia, Namibia, Indonesia, Colombia, Bulgaria,
+North Macedonia, Serbia, Ghana, Albania, Sri Lanka, Singapore, Guyana, or
+Lesotho.
+
+Changes since the May research:
+
+- Malaysia's two Dewan HLS candidates returned 403 from this environment.
+- Indonesia's raw-IP HLS candidate returned 404.
+- France National Assembly again returned HTTP 200 with an HLS content type,
+  but the response body did not validate as an HLS manifest.
+- Malta, Chile, Israel, Hungary, Montenegro, and North Macedonia remained
+  blocked, stale, or timed out on their sampled direct candidates.
+- No newly discovered static official-page manifest was strong enough to add
+  to the catalogue in this pass.
+
+## 2026-07-29 Tier 3 democracy HLS triage
+
+The Tier 3 hybrid-regime list was checked as a lightweight triage pass rather
+than a deep browser/player inspection. EIU's 2025 press release says the 2025
+index has 32 hybrid-regime countries; public ranking summaries were used to
+identify the working country list for this pass.
+
+Detailed report:
+`reports/health/2026-07-29-tier3-democracy-hls.json`.
+
+Method:
+
+- Use `iptv-org` legislative and full playlist indexes only as discovery
+  seeds.
+- Validate direct HLS/DASH candidates where a candidate was found.
+- Fetch likely official parliamentary pages and extract static `.m3u8`/`.mpd`
+  references.
+- Do not inspect JavaScript-only player traffic or extract YouTube manifests.
+
+Confirmed open direct HLS/DASH on 2026-07-29:
+
+| Country | Open HLS/DASH count | Notes |
+| --- | ---: | --- |
+| El Salvador | 1 HLS | `https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8` returned HTTP 200 with an HLS content type and valid manifest body. The URL is on the official Asamblea Legislativa domain and was added to the catalogue with permission review pending. |
+
+No open direct HLS/DASH was confirmed in this triage pass for Papua New
+Guinea, Zambia, Peru, Bhutan, Liberia, Fiji, Armenia, Madagascar, Mexico,
+Ecuador, Tanzania, Hong Kong, Bosnia and Herzegovina, Kenya, Honduras, Morocco,
+Ukraine, Tunisia, Georgia, Nepal, Guatemala, Uganda, Gambia, Bangladesh, Benin,
+Sierra Leone, Turkey, Bolivia, Ivory Coast, Nigeria, or Angola.
+
+The Peru Congreso TV seed candidate
+`http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/canalelcongreso.stream/playlist.m3u8`
+returned 403. Many official pages were reachable and remain potential browser
+inspection targets, but this pass did not find static manifests on those pages.
+
+## 2026-07-29 Tier 1 and Tier 2 deep browser validation
+
+After the static Tier 1 and Tier 2 passes, a headless Chromium validation pass
+loaded official/discovery pages, waited for page scripts and player requests,
+captured `.m3u8`/`.mpd` network and DOM references, and revalidated discovered
+manifests. This still does not solve authenticated, geo-blocked, DRM-protected,
+interaction-gated, or sitting-time-only players.
+
+Detailed report:
+`reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json`.
+
+Confirmed browser-discovered manifests on 2026-07-29:
+
+| Country | Open HLS/DASH count | Notes |
+| --- | ---: | --- |
+| Norway | 3 HLS | Official Stortinget Nett-TV page exposed a master/DVR playlist and two variant playlists. The master playlist was added to the catalogue. |
+| United States | 6 HLS, 1 DASH | HouseLive exposed an event-specific DASH manifest and C-SPAN exposed event HLS manifests. These were not added because they appear event/editorial-broadcaster specific rather than stable canonical parliamentary channels. |
+| Chile | 2 HLS | Official Camara television page exposed a master playlist and a chunklist. The master playlist was added to the catalogue. |
+| Israel | 2 HLS | Official Knesset Channel page exposed a master playlist and a chunklist. The master playlist was added to the catalogue. |
+| Italy | 3 HLS | Official Senate web TV exposed the already-known Senate stream plus variant playlists. The existing catalogue entry remains sufficient. |
+| Brazil | 1 HLS | Official TV Camara page exposed the already-catalogued TV Camara stream. |
+
+Catalogue changes from this deep pass:
+
+- Added `norway-stortinget`.
+- Added `chile-camara-tv`.
+- Added `israel-knesset-channel`.
+- Left United States HouseLive/C-SPAN findings as research-only until stable
+  channel identity, schedule/event semantics, and rights posture are clearer.
+
+Engineering interpretation for Tier 2 and Tier 3:
 
 - The flawed-democracy tier has more direct manifests than expected, but fewer clean first-party manifests than the raw count suggests.
+- The hybrid-regime triage was low-yield for static direct HLS/DASH discovery; El Salvador was the only clean official-domain direct HLS addition.
 - YouTube and official-player fallback support is essential here. Without it, coverage drops sharply.
 - Do not mix first-party parliamentary feeds, public-broadcaster relays, and third-party mirrors under one generic "stream" label. Store source ownership and rights-review status.
 - Several candidates are sitting-only. A validator should distinguish "404 because no sitting is active" from "broken URL"; this requires scheduled rechecks during known plenary hours.

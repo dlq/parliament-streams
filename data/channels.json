@@ -88,6 +88,48 @@
             }
         },
         {
+            "id": "norway-stortinget",
+            "name": "Norway Stortinget",
+            "short_name": "NO",
+            "jurisdiction_level": "national",
+            "country_or_region": "Norway",
+            "legislature": "Stortinget",
+            "language": "Norwegian",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+            "official_url": "https://www.stortinget.no/nett-tv",
+            "attribution_text": "Official Stortinget Nett-TV page exposed this HLS manifest during browser validation.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Stortinget chamber stream",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.stortinget.no/nett-tv",
+                    "method": "GET",
+                    "kind": "nett_tv_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "The official Stortinget Nett-TV page exposed a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.stortinget.no/nett-tv",
+                    "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
+            }
+        },
+        {
             "id": "brazil-tv-camara",
             "name": "Brazil TV Camara",
             "short_name": "BR",
@@ -562,6 +604,90 @@
             }
         },
         {
+            "id": "chile-camara-tv",
+            "name": "Chile Camara TV",
+            "short_name": "CL",
+            "jurisdiction_level": "national",
+            "country_or_region": "Chile",
+            "legislature": "Camara de Diputadas y Diputados",
+            "language": "Spanish",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+            "official_url": "https://www.camara.cl/prensa/television.aspx",
+            "attribution_text": "Official Camara television page exposed this HLS manifest during browser validation.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Camara TV live stream",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.camara.cl/prensa/television.aspx",
+                    "method": "GET",
+                    "kind": "television_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "The official Camara television page exposed a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.camara.cl/prensa/television.aspx",
+                    "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
+            }
+        },
+        {
+            "id": "israel-knesset-channel",
+            "name": "Israel Knesset Channel",
+            "short_name": "IL",
+            "jurisdiction_level": "national",
+            "country_or_region": "Israel",
+            "legislature": "Knesset",
+            "language": "Hebrew",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+            "official_url": "https://www.knesset.tv/live/",
+            "attribution_text": "Official Knesset Channel live page exposed this HLS manifest during browser validation.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Knesset Channel live stream",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.knesset.tv/live/",
+                    "method": "GET",
+                    "kind": "live_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "The official Knesset Channel live page exposed a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.knesset.tv/live/",
+                    "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
+            }
+        },
+        {
             "id": "portugal-artv",
             "name": "Portugal ARTV Canal Parlamento",
             "short_name": "PT",
@@ -658,6 +784,90 @@
                     "https://www.chd.lu/"
                 ],
                 "recommendation": "Link-out or pending until terms or permission are documented."
+            }
+        },
+        {
+            "id": "estonia-riigikogu-live-1",
+            "name": "Estonia Riigikogu Live 1",
+            "short_name": "EE 1",
+            "jurisdiction_level": "national",
+            "country_or_region": "Estonia",
+            "legislature": "Riigikogu",
+            "language": "Estonian",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+            "official_url": "https://www.riigikogu.ee/live/1/en",
+            "attribution_text": "Official Riigikogu live page exposes this HLS manifest through its player.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Riigikogu live stream 1",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+                    "method": "GET",
+                    "kind": "live_broadcast_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Official Riigikogu live page exposes a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+                    "https://www.riigikogu.ee/live/1/en"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
+            }
+        },
+        {
+            "id": "estonia-riigikogu-live-2",
+            "name": "Estonia Riigikogu Live 2",
+            "short_name": "EE 2",
+            "jurisdiction_level": "national",
+            "country_or_region": "Estonia",
+            "legislature": "Riigikogu",
+            "language": "Estonian",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+            "official_url": "https://www.riigikogu.ee/live/2/en",
+            "attribution_text": "Official Riigikogu live page exposes this HLS manifest through its player.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Riigikogu live stream 2",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+                    "method": "GET",
+                    "kind": "live_broadcast_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Official Riigikogu live page exposes a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+                    "https://www.riigikogu.ee/live/2/en"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
             }
         },
         {
@@ -1968,6 +2178,48 @@
                     "https://www.youtube.com/@AsambleaCRC"
                 ],
                 "recommendation": "Use official YouTube links or compliant embeds only."
+            }
+        },
+        {
+            "id": "el-salvador-legislative-assembly",
+            "name": "El Salvador Legislative Assembly",
+            "short_name": "SV",
+            "jurisdiction_level": "national",
+            "country_or_region": "El Salvador",
+            "legislature": "Asamblea Legislativa de El Salvador",
+            "language": "Spanish",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
+            "official_url": "https://www.asamblea.gob.sv/",
+            "attribution_text": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Legislative Assembly plenary stream",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.asamblea.gob.sv/",
+                    "method": "GET",
+                    "kind": "official_site_schedule_target",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "The HLS manifest is hosted on the official Asamblea Legislativa domain, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.asamblea.gob.sv/",
+                    "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
             }
         }
     ]

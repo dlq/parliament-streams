@@ -1,0 +1,714 @@
+{
+  "checked_at": "2026-07-29T15:45:51Z",
+  "countries": [
+    {
+      "country": "Norway",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.stortinget.no/nett-tv",
+          "kind": "official_page",
+          "url": "https://www.stortinget.no/nett-tv",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+          "kind": "hls",
+          "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Sweden",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.riksdagen.se/en/contact-and-visit/media/broadcasts/",
+          "kind": "official_page",
+          "url": "https://www.riksdagen.se/en/contact-and-visit/media/broadcasts/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Iceland",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "kind": "hls",
+          "url": "https://althingi-live.secure.footprint.net/althingi/live/index.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.althingi.is/",
+          "error": "HTTP 403",
+          "kind": "official_page",
+          "url": "https://www.althingi.is/",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://par-pcache.simplex.tv/content?externalid=-1&enableHLS=1",
+          "kind": "official_hls_like",
+          "url": "https://par-pcache.simplex.tv/content?externalid=-1&enableHLS=1",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parlament.ch/en",
+          "kind": "official_page",
+          "url": "https://www.parlament.ch/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://sc-par-lb-02.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "error": "HTTP 404",
+          "kind": "discovered_manifest",
+          "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Finland",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://verkkolahetys.eduskunta.fi/fi",
+          "kind": "official_page",
+          "url": "https://verkkolahetys.eduskunta.fi/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Denmark",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegurl",
+          "final_url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
+          "kind": "hls",
+          "url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Ireland",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://d33zah5htxvoxb.cloudfront.net/el/live/oirtv/hls.m3u8",
+          "error": "HTTP 403",
+          "kind": "hls",
+          "url": "https://d33zah5htxvoxb.cloudfront.net/el/live/oirtv/hls.m3u8",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://d33zah5htxvoxb.cloudfront.net/el/live/dail/hls.m3u8",
+          "error": "HTTP 403",
+          "kind": "hls",
+          "url": "https://d33zah5htxvoxb.cloudfront.net/el/live/dail/hls.m3u8",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://d33zah5htxvoxb.cloudfront.net/el/live/seanad/hls.m3u8",
+          "error": "HTTP 403",
+          "kind": "hls",
+          "url": "https://d33zah5htxvoxb.cloudfront.net/el/live/seanad/hls.m3u8",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+          "kind": "official_page",
+          "url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Netherlands",
+      "open_hls_count": 3,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Luxembourg",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
+          "kind": "hls",
+          "url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Australia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://www.aph.gov.au/live?ps=10",
+          "error": "HTTP 403",
+          "kind": "official_page",
+          "url": "https://www.aph.gov.au/live?ps=10",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "Taiwan",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliamentarytv.org.tw/",
+          "kind": "official_page",
+          "url": "https://www.parliamentarytv.org.tw/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://ivod.ly.gov.tw/Live",
+          "kind": "official_page",
+          "url": "https://ivod.ly.gov.tw/Live",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "timeout: The read operation timed out",
+          "kind": "hls",
+          "url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+          "status": "error",
+          "note": "timeout: The read operation timed out"
+        },
+        {
+          "http_status": 404,
+          "content_type": "text/html",
+          "final_url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk2/_definst_/live/video/hk2_de.smil/playlist.m3u8",
+          "error": "HTTP 404",
+          "kind": "hls",
+          "url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk2/_definst_/live/video/hk2_de.smil/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "http_status": 404,
+          "content_type": "text/html",
+          "final_url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk3/_definst_/live/video/hk3_de.smil/playlist.m3u8",
+          "error": "HTTP 404",
+          "kind": "hls",
+          "url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk3/_definst_/live/video/hk3_de.smil/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "http_status": 404,
+          "content_type": "text/html",
+          "final_url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_de.smil/playlist.m3u8",
+          "error": "HTTP 404",
+          "kind": "hls",
+          "url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_de.smil/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
+          "kind": "hls",
+          "url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Uruguay",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://parlamento.gub.uy/",
+          "error": "HTTP 403",
+          "kind": "official_page",
+          "url": "https://parlamento.gub.uy/",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://hlslive.shugiintv.go.jp/main/amlst:main/playlist.m3u8%20",
+          "kind": "hls_template_guess",
+          "url": "http://hlslive.shugiintv.go.jp/main/amlst:main/playlist.m3u8",
+          "status": "warning",
+          "note": "Reachable but not HLS manifest"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://hlslive.shugiintv.go.jp/room1/amlst:room1/playlist.m3u8%20",
+          "kind": "hls_template_guess",
+          "url": "http://hlslive.shugiintv.go.jp/room1/amlst:room1/playlist.m3u8",
+          "status": "warning",
+          "note": "Reachable but not HLS manifest"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://hlslive.shugiintv.go.jp/1/amlst:1/playlist.m3u8%20",
+          "kind": "hls_template_guess",
+          "url": "http://hlslive.shugiintv.go.jp/1/amlst:1/playlist.m3u8",
+          "status": "warning",
+          "note": "Reachable but not HLS manifest"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=EUC-JP",
+          "final_url": "https://www.shugiintv.go.jp/en/",
+          "kind": "official_page",
+          "url": "https://www.shugiintv.go.jp/en/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8%20",
+          "kind": "discovered_manifest",
+          "url": "http://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+          "status": "warning",
+          "note": "Discovered manifest did not validate"
+        },
+        {
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+          "error": "HTTP 404",
+          "kind": "discovered_manifest",
+          "url": "https://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_parliament/iptv_hd_abr_v1.mpd",
+          "error": "HTTP 403",
+          "kind": "dash_geo",
+          "url": "https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_parliament/iptv_hd_abr_v1.mpd",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliamentlive.tv/Commons",
+          "kind": "official_page",
+          "url": "https://www.parliamentlive.tv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Costa Rica",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.youtube.com/@AsambleaCRC",
+          "kind": "official_page",
+          "url": "https://www.youtube.com/@AsambleaCRC",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Austria",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.parlament.gv.at/aktuelles/mediathek",
+          "kind": "official_page",
+          "url": "https://www.parlament.gv.at/aktuelles/mediathek",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Mauritius",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://d3haas31wb246g.cloudfront.net/live/88d4336f-f9bb-4dae-a567-41608b05f529/live.isml/live.m3u8",
+          "error": "HTTP 404",
+          "kind": "hls",
+          "url": "https://d3haas31wb246g.cloudfront.net/live/88d4336f-f9bb-4dae-a567-41608b05f529/live.isml/live.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://mauritiusassembly.govmu.org/mauritiusassembly/",
+          "kind": "official_page",
+          "url": "https://mauritiusassembly.govmu.org/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Estonia",
+      "open_hls_count": 2,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.riigikogu.ee/live/1/en",
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/live/1/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.riigikogu.ee/live/2/en",
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/live/2/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le302.euddn.net/479573c49d665c7a3a8b219d445eb82fb35af5e022d7c192234effe126ad52b2c24f1d10cc7dbfde3b87aa63755add67c5f3fff47b3895f129451d2010771019087584fb0f229420a8ad29d7f95e3b7e8a040c6b753ff061bf7ba6aa632b07311b0a9eef95c97c5c2f6cca54ba6537b293a20080e35bc75de31b5a8c0f5c883cfa0845b24860b97dd80a0e31b31165c19da3614537569e8f236e4a0a09bdd1565a38a51d70a450701b892b3dfda92c68/smil:rk_live_1.smil/playlist.m3u8",
+          "kind": "discovered_manifest",
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le303.euddn.net/9b44ed3cea86b9f0bee5abed200750f0b748839aebb3605f45903b40f84bb1f6de3b8972ca31c1ee45d70090733c0433ea89efd235da20696c95a5eefe036f8b2daffe4df191e18b75c52eb3974355efc55862606dcc2df32c04ec41389e23cb670bef0b2c07418921ba7d3557f57fa57b9b3a03e30ddc9aa515bd0b6fd23d5aeee2c391f528d59e433bb6da40895a979f220bba6b5d1e5111870d10c85aa63a4138e848e6d667e1e3c03f16464b377e/smil:rk_live_2.smil/playlist.m3u8",
+          "kind": "discovered_manifest",
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "open_hls_count": 3,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Czech Republic",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://pspen.psp.cz/live-broadcast/",
+          "kind": "official_page",
+          "url": "https://pspen.psp.cz/live-broadcast/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+          "kind": "official_page",
+          "url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
+          "kind": "hls",
+          "url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Greece",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://702e2e484b144c71ba38bca0d41f37cd.msvdn.net/bpk-tv/VOULITV/default/index.m3u8",
+          "kind": "hls",
+          "url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "France",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+          "kind": "hls",
+          "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+          "status": "warning",
+          "note": "Reachable but not HLS manifest"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://videos.assemblee-nationale.fr/direct.php",
+          "kind": "official_page",
+          "url": "https://videos.assemblee-nationale.fr/direct.php",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://videos.senat.fr/direct.1",
+          "kind": "official_page",
+          "url": "https://videos.senat.fr/video/seance_direct.html",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    }
+  ]
+}

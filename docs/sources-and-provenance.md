@@ -25,6 +25,27 @@ entries, schedule/EPG scrape surfaces, and official YouTube/link-out sources.
 
 Each source should be treated as provisional unless its own official page and terms clearly support the intended use. Some direct URLs are discovered through official pages, official APIs, or official player infrastructure, but that does not automatically mean they are appropriate for all redistribution or embedding contexts.
 
+## Validation Reports
+
+`reports/health/` contains dated technical validation artifacts. They are
+snapshots from a specific date, network environment, and validator method; they
+are not permanent availability guarantees and not permission records.
+
+The current report families are:
+
+- catalogue health checks, which validate entries already in
+  `data/channels.json`;
+- democracy-tier HLS/DASH refresh reports, which validate known candidates and
+  static official-page manifest references;
+- deep browser validation reports, which load official pages in Chromium and
+  capture manifests revealed by player scripts or network requests.
+
+Deep browser findings need extra caution. A manifest can be technically public
+but still be event-specific, session-conditioned, geofenced, DRM-protected, or
+unsuitable for native playback or redistribution. Preserve the discovery page,
+validator method, and rights status when promoting a finding into the
+catalogue.
+
 ## Legal and Terms Posture
 
 The catalogue uses conservative labels such as personal-use pending review,
@@ -46,7 +67,10 @@ Before using this catalogue outside research or advocacy:
 
 ## Research Log
 
-`research.md` is a working log. It contains validated findings, failed checks, speculative candidates, external references, and older observations that can become stale. It should not be treated as a polished public registry.
+`research.md` is a working log. It contains validated findings, failed checks,
+speculative candidates, external references, browser-discovered manifests, and
+older observations that can become stale. It should not be treated as a
+polished public registry.
 
 The file is intended to be public, but it should still be treated as research evidence rather than permission guidance. Revalidate URLs, playback behavior, schedules, and terms before relying on an entry.
 

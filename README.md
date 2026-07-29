@@ -16,6 +16,8 @@ record.
   already understood by the prototype.
 - `parliament_streams/healthcheck.py`: repeatable live endpoint/page health
   checker for catalogue entries.
+- `tools/deep_validate_browser.mjs`: optional Playwright/Chromium validator
+  for official player pages that only expose manifests after JavaScript runs.
 - `reports/health/`: dated JSON health reports from live validation passes.
 - `docs/sources-and-provenance.md`: source ownership, reuse, and provenance
   boundaries.
@@ -36,13 +38,24 @@ The catalogue includes:
 - one legacy DASH research candidate kept for provenance;
 - official pages used for source attribution and validation;
 - schedule/EPG scrape surfaces for CPAC, Quebec, Ontario, New Zealand, Brazil,
-  Spain, Ireland, and Nunavut;
+  Spain, Ireland, Estonia, Norway, Chile, Israel, El Salvador, and Nunavut;
 - permission status, evidence links, and reuse recommendations for every
   channel entry.
 
 This is not an endorsed global directory and not a rebroadcast service. Public
 availability does not automatically mean permission to redistribute, embed, or
 play a stream natively in another product.
+
+The current democracy-priority validation work is recorded in:
+
+- `reports/health/2026-07-29-tier1-democracy-hls.json`
+- `reports/health/2026-07-29-tier2-democracy-hls.json`
+- `reports/health/2026-07-29-tier3-democracy-hls.json`
+- `reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json`
+
+The latest pass added or confirmed direct official-page/player HLS entries for
+Norway, Estonia, Chile, Israel, and El Salvador, while keeping permission status
+pending unless documentary reuse evidence is recorded.
 
 ## Python Scrapers
 
@@ -118,6 +131,28 @@ uv run --extra dev python -m parliament_streams.healthcheck --output reports/hea
 The health checker records HTTP status, content type, final URL, and whether
 direct HLS/DASH entries look like manifests. It is a technical availability
 check only; it does not determine redistribution permission.
+
+For a deeper browser/player pass against Tier 1 and Tier 2 official pages, run:
+
+```sh
+node --version
+npm install --no-save playwright
+node tools/deep_validate_browser.mjs
+```
+
+If Playwright is installed outside the repository, point `NODE_PATH` at the
+directory containing `playwright`:
+
+```sh
+NODE_PATH=/path/to/node_modules node tools/deep_validate_browser.mjs
+```
+
+The browser validator uses Playwright's Chromium automation to load official
+pages, wait for player scripts, capture `.m3u8` and `.mpd` network/DOM
+references, and validate discovered manifests. It is intentionally separate
+from `make verify` because it performs live network checks against third-party
+sites and can be affected by geofencing, cookies, JavaScript changes, sitting
+hours, authentication prompts, and player behavior.
 
 ## Rights And Reuse
 

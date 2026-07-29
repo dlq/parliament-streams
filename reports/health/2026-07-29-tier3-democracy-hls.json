@@ -1,0 +1,709 @@
+{
+  "checked_at": "2026-07-29T16:02:37Z",
+  "scope": "Democracy Index 2025 Tier 3 hybrid-regime countries, based on EIU 2025 regime counts and current hybrid list derived from public ranking summaries",
+  "method": "Triage pass: validate known direct HLS candidates from public legislative/IPTV indexes and extract static .m3u8/.mpd URLs from official parliament pages. JavaScript player network traffic and YouTube manifest extraction are out of scope.",
+  "source_notes": [
+    "EIU 2025 press release reports 32 hybrid-regime countries.",
+    "Public ranking summaries were used to identify the 32 hybrid-regime country names after 2025 movements from hybrid to flawed democracy."
+  ],
+  "elapsed_seconds": 24.86,
+  "countries": [
+    {
+      "country": "Papua New Guinea",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://parliament.gov.pg/",
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.pg/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Zambia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.gov.zm/",
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.zm/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Peru",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/canalelcongreso.stream/playlist.m3u8",
+          "error": "HTTP 403",
+          "kind": "hls",
+          "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/canalelcongreso.stream/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.congreso.gob.pe/",
+          "kind": "official_page",
+          "url": "https://www.congreso.gob.pe/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "kind": "official_page",
+          "url": "https://www.congresotv.pe/",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "country": "Bhutan",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "kind": "official_page",
+          "url": "https://www.nab.gov.bt/",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "kind": "official_page",
+          "url": "https://www.nationalcouncil.bt/",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "country": "Liberia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "kind": "official_page",
+          "url": "https://legislature.gov.lr/",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "country": "Fiji",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 307,
+          "content_type": "text/html",
+          "final_url": "https://www.parliament.gov.fj/",
+          "error": "HTTP 307",
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.fj/",
+          "status": "error",
+          "note": "HTTP 307"
+        }
+      ]
+    },
+    {
+      "country": "Armenia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 308,
+          "content_type": null,
+          "final_url": "https://www.parliament.am/hy",
+          "error": "HTTP 308",
+          "kind": "official_page",
+          "url": "https://www.parliament.am/",
+          "status": "error",
+          "note": "HTTP 308"
+        }
+      ]
+    },
+    {
+      "country": "Madagascar",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 2,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://assemblee-nationale.mg/",
+          "kind": "official_page",
+          "url": "https://assemblee-nationale.mg/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://senat.mg/",
+          "kind": "official_page",
+          "url": "https://www.senat.mg/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Mexico",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 3,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.canaldelcongreso.gob.mx/",
+          "kind": "official_page",
+          "url": "https://www.canaldelcongreso.gob.mx/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=ISO-8859-1",
+          "final_url": "https://www.diputados.gob.mx/",
+          "kind": "official_page",
+          "url": "https://www.diputados.gob.mx/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.senado.gob.mx/",
+          "kind": "official_page",
+          "url": "https://www.senado.gob.mx/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Ecuador",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.asambleanacional.gob.ec/es",
+          "kind": "official_page",
+          "url": "https://www.asambleanacional.gob.ec/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Tanzania",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.go.tz/",
+          "kind": "official_page",
+          "url": "https://www.parliament.go.tz/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Hong Kong",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.legco.gov.hk/en/",
+          "kind": "official_page",
+          "url": "https://www.legco.gov.hk/en/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parlament.ba/",
+          "kind": "official_page",
+          "url": "https://www.parlament.ba/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Kenya",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.go.ke/",
+          "kind": "official_page",
+          "url": "https://www.parliament.go.ke/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.go.ke/the-national-assembly/house-live",
+          "error": "HTTP 404",
+          "kind": "official_page",
+          "url": "https://www.parliament.go.ke/the-national-assembly/house-live",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Honduras",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.congresonacional.hn'. (_ssl.c:1129)>",
+          "kind": "official_page",
+          "url": "https://www.congresonacional.hn/",
+          "status": "error",
+          "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.congresonacional.hn'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "country": "Morocco",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parlement.ma/",
+          "error": "HTTP 403",
+          "kind": "official_page",
+          "url": "https://www.parlement.ma/",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.chambredesrepresentants.ma/",
+          "error": "HTTP 403",
+          "kind": "official_page",
+          "url": "https://www.chambredesrepresentants.ma/",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.chambredesconseillers.ma/ar",
+          "kind": "official_page",
+          "url": "https://www.chambredesconseillers.ma/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Ukraine",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.rada.gov.ua/",
+          "kind": "official_page",
+          "url": "https://www.rada.gov.ua/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Tunisia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.arp.tn/",
+          "kind": "official_page",
+          "url": "https://www.arp.tn/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Georgia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://parliament.ge/en",
+          "kind": "official_page",
+          "url": "https://parliament.ge/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "El Salvador",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
+          "kind": "hls",
+          "url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.asamblea.gob.sv/",
+          "kind": "official_page",
+          "url": "https://www.asamblea.gob.sv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Nepal",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://hr.parliament.gov.np/np",
+          "kind": "official_page",
+          "url": "https://hr.parliament.gov.np/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Guatemala",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.congreso.gob.gt/",
+          "kind": "official_page",
+          "url": "https://www.congreso.gob.gt/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Uganda",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.go.ug/",
+          "kind": "official_page",
+          "url": "https://www.parliament.go.ug/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Gambia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://assembly.gm/",
+          "kind": "official_page",
+          "url": "https://assembly.gm/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Bangladesh",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.gov.bd/",
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.bd/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Benin",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://assemblee-nationale.bj/",
+          "kind": "official_page",
+          "url": "https://assemblee-nationale.bj/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Sierra Leone",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.sl/",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "country": "Turkey",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.tbmm.gov.tr/",
+          "kind": "official_page",
+          "url": "https://www.tbmm.gov.tr/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Bolivia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://diputados.gob.bo/",
+          "kind": "official_page",
+          "url": "https://www.diputados.bo/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "kind": "official_page",
+          "url": "https://web.senado.gob.bo/",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "country": "Ivory Coast",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 2,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.assnat.ci/",
+          "kind": "official_page",
+          "url": "https://www.assnat.ci/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.senat.ci/",
+          "kind": "official_page",
+          "url": "https://www.senat.ci/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Nigeria",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://nass.gov.ng/",
+          "kind": "official_page",
+          "url": "https://nass.gov.ng/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Angola",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "official_pages_reachable": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.parlamento.ao/",
+          "kind": "official_page",
+          "url": "https://www.parlamento.ao/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    }
+  ]
+}
