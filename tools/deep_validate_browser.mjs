@@ -23,10 +23,31 @@ const PAGE_TIMEOUT_MS = 20_000;
 const SETTLE_MS = 5_000;
 const MAX_PAGES_PER_COUNTRY = 4;
 
-const REPORT_INPUTS = [
+const DEFAULT_REPORT_INPUTS = [
   "reports/health/2026-07-29-tier1-democracy-hls.json",
   "reports/health/2026-07-29-tier2-democracy-hls.json",
 ];
+const DEFAULT_REPORT_OUTPUT = "reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json";
+
+function parseArgs(argv) {
+  const args = {
+    inputs: [...DEFAULT_REPORT_INPUTS],
+    output: DEFAULT_REPORT_OUTPUT,
+  };
+  for (let index = 0; index < argv.length; index += 1) {
+    const arg = argv[index];
+    if (arg === "--input") {
+      args.inputs = argv[index + 1].split(",");
+      index += 1;
+    } else if (arg === "--output") {
+      args.output = argv[index + 1];
+      index += 1;
+    } else {
+      throw new Error(`Unknown argument: ${arg}`);
+    }
+  }
+  return args;
+}
 
 function isManifestUrl(url) {
   const lower = url.toLowerCase();
@@ -41,9 +62,9 @@ async function readJson(path) {
   return JSON.parse(await fs.readFile(path, "utf8"));
 }
 
-async function collectTargets() {
+async function collectTargets(reportInputs) {
   const targets = [];
-  for (const input of REPORT_INPUTS) {
+  for (const input of reportInputs) {
     const report = await readJson(input);
     for (const country of report.countries) {
       const officialPages = [];
@@ -179,7 +200,8 @@ async function inspectPage(browser, target, pageUrl) {
 }
 
 async function main() {
-  const targets = await collectTargets();
+  const args = parseArgs(process.argv.slice(2));
+  const targets = await collectTargets(args.inputs);
   const browser = await chromium.launch({ headless: true });
   const pageResults = [];
 
@@ -229,16 +251,15 @@ async function main() {
 
   const report = {
     checked_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
-    scope: "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from the 2026-07-29 static reports.",
+    scope: "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from static reports.",
     method:
       "Headless Chromium loads official/discovery pages, waits for scripts/player requests, captures .m3u8/.mpd network and DOM references, then validates discovered manifests. This does not solve authenticated, geo-blocked, DRM, or interaction-gated players.",
-    inputs: REPORT_INPUTS,
+    inputs: args.inputs,
     countries: [...countries.values()],
     pages: pageResults,
   };
 
-  const out = "reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json";
-  await fs.writeFile(out, `${JSON.stringify(report, null, 2)}\n`);
+  await fs.writeFile(args.output, `${JSON.stringify(report, null, 2)}\n`);
 
   for (const country of report.countries) {
     if (country.open_hls_count || country.open_dash_count) {
@@ -250,7 +271,7 @@ async function main() {
       }
     }
   }
-  console.log(`REPORT ${out}`);
+  console.log(`REPORT ${args.output}`);
 }
 
 await main();

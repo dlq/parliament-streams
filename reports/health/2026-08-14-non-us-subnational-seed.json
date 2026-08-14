@@ -1,0 +1,269 @@
+{
+  "scope": "Non-US sub-national legislative stream discovery",
+  "countries": [
+    {
+      "country": "British Columbia, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/YldIU1hsTlljRWZF/hbs-prim-house-httpo/HouseP.smil/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/YldIU1hsTlljRWZF/hbs-prim-dougfir-httpo/DougFirP.smil/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Alberta, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://assemblyonline.assembly.ab.ca/harmony/"
+        }
+      ]
+    },
+    {
+      "country": "Saskatchewan, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/"
+        }
+      ]
+    },
+    {
+      "country": "Manitoba, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html"
+        }
+      ]
+    },
+    {
+      "country": "Nunavut, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.nu.ca/webcasts"
+        },
+        {
+          "kind": "hls",
+          "url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Prince Edward Island, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.pe.ca/watch-live"
+        }
+      ]
+    },
+    {
+      "country": "Northwest Territories, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
+        }
+      ]
+    },
+    {
+      "country": "Newfoundland and Labrador, Canada",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/live_video_audio.aspx"
+        }
+      ]
+    },
+    {
+      "country": "Scotland, United Kingdom",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.scottishparliament.tv/"
+        }
+      ]
+    },
+    {
+      "country": "Wales, United Kingdom",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.senedd.tv/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://senedd.wales/media/media-faqs/"
+        }
+      ]
+    },
+    {
+      "country": "Northern Ireland, United Kingdom",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://niassembly.tv/"
+        }
+      ]
+    },
+    {
+      "country": "New South Wales, Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.nsw.gov.au/la/Pages/webcasts.aspx"
+        }
+      ]
+    },
+    {
+      "country": "Victoria, Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.vic.gov.au/video-and-audio/live-broadcast/"
+        }
+      ]
+    },
+    {
+      "country": "Queensland, Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://tv.parliament.qld.gov.au/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.qld.gov.au/Visit-and-learn/Broadcasts"
+        }
+      ]
+    },
+    {
+      "country": "Western Australia, Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.wa.gov.au/WebCMS/webcms.nsf/content/live-broadcast"
+        }
+      ]
+    },
+    {
+      "country": "North Rhine-Westphalia, Germany",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.landtag.nrw.de/home/aktuelles-tv-und-video.html"
+        }
+      ]
+    },
+    {
+      "country": "Baden-Wurttemberg, Germany",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.landtag-bw.de/de/mediathek/landtag-live"
+        },
+        {
+          "kind": "hls",
+          "url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Bavaria, Germany",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.bayern.landtag.de/aktuelles/plenum-online/"
+        }
+      ]
+    },
+    {
+      "country": "Catalonia, Spain",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.cat/web/canal-parlament/index.html"
+        }
+      ]
+    },
+    {
+      "country": "Valencia, Spain",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.cortsvalencianes.es/ca-va/activitat/actualitat/canal-corts"
+        },
+        {
+          "kind": "hls",
+          "url": "https://streamserver3.seneca.tv/cval_live/cdn_enc_3/master.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Andalucia, Spain",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actualidad/canalparlamento.do"
+        },
+        {
+          "kind": "hls",
+          "url": "http://193.147.254.64:1935/realizacion1/realizacion1/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Navarre, Spain",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://parlamentodenavarra.es/"
+        },
+        {
+          "kind": "hls",
+          "url": "https://broadcasting.parlamentodenavarra.es/live/canal1/master.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Jalisco, Mexico",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.congresojal.gob.mx/"
+        },
+        {
+          "kind": "hls",
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Colima, Mexico",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.congresocol.gob.mx/"
+        },
+        {
+          "kind": "hls",
+          "url": "https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8"
+        }
+      ]
+    }
+  ]
+}

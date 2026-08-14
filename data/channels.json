@@ -1,7 +1,7 @@
 {
     "schema_version": 1,
     "generated_from": "curated research and live endpoint validation",
-    "generated_on": "2026-07-29",
+    "generated_on": "2026-08-14",
     "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
     "channels": [
         {
@@ -78,8 +78,8 @@
                 }
             ],
             "permission": {
-                "status": "explicit_reuse_with_conditions",
-                "summary": "Current rights review found an official video portal but did not find explicit native-stream permission in the latest pass.",
+                "status": "personal_use_pending_review",
+                "summary": "Rights review found an official video portal but did not find explicit native-stream permission.",
                 "evidence": [
                     "https://videos.parliament.nz/",
                     "https://www.parliament.nz/"
@@ -766,7 +766,7 @@
             "playback_url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
             "official_url": "https://www.chd.lu/",
             "attribution_text": "Chamber TV HLS candidate from official player infrastructure.",
-            "technical_status": "validated",
+            "technical_status": "needs_review",
             "availability": "event_based",
             "metadata_level": "schedule_target",
             "program": {
@@ -779,11 +779,11 @@
             "epg_sources": [],
             "permission": {
                 "status": "personal_use_pending_review",
-                "summary": "Official player HLS candidate without recorded reuse permission.",
+                "summary": "Official player HLS candidate without recorded reuse permission. The endpoint was not reachable from the 2026-08-14 validation environment.",
                 "evidence": [
                     "https://www.chd.lu/"
                 ],
-                "recommendation": "Link-out or pending until terms or permission are documented."
+                "recommendation": "Link-out or pending until current availability and terms or permission are documented."
             }
         },
         {
@@ -1809,7 +1809,7 @@
             "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
             "official_url": "https://www.ola.org/en/legislative-business/video",
             "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
-            "technical_status": "validated",
+            "technical_status": "needs_review",
             "availability": "sitting_only",
             "metadata_level": "current_and_next_event_target",
             "program": {
@@ -1830,12 +1830,12 @@
             ],
             "permission": {
                 "status": "noncommercial_pending_review",
-                "summary": "Ontario terms permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, but full live-stream relay is less clearly covered.",
+                "summary": "The previous direct HLS endpoint returned HTTP 404 during 2026-08-14 validation; official source and current captioned playback route need review.",
                 "evidence": [
                     "https://www.ola.org/en/legislative-business/video",
                     "https://www.ola.org/en/office-assembly/copyright-privacy"
                 ],
-                "recommendation": "Use cautiously and seek written clarification for full live stream reuse."
+                "recommendation": "Keep as pending/review until a current source-supported captioned House stream is documented."
             }
         },
         {
@@ -2014,16 +2014,16 @@
             "country_or_region": "Nunavut",
             "legislature": "Legislative Assembly of Nunavut",
             "language": "English / Inuktitut",
-            "source_type": "official_page",
-            "display_mode": "link_out",
-            "playback_url": null,
-            "official_url": "https://video.isilive.ca/nunavut/live-eng.html",
-            "attribution_text": "Official Legislative Assembly of Nunavut live player page linked from the Assembly webcast page.",
-            "technical_status": "link_only",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
+            "official_url": "https://www.assembly.nu.ca/webcasts",
+            "attribution_text": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
+            "technical_status": "validated",
             "availability": "event_based",
             "metadata_level": "archive_and_live_page",
             "program": {
-                "current_event_title": "Nunavut Legislative Assembly live player",
+                "current_event_title": "Nunavut Legislative Assembly webcast",
                 "current_event_time": "Live during sittings",
                 "next_event_title": "Official webcast archive and sitting calendar",
                 "next_event_time": "Research target",
@@ -2040,12 +2040,12 @@
             ],
             "permission": {
                 "status": "personal_use_pending_review",
-                "summary": "The previous direct iSi LIVE HLS URL returned 404 on 2026-07-29. The official Assembly webcast page still links to a live iSi player page, but no current direct HLS permission or replacement manifest has been recorded.",
+                "summary": "The direct iSi LIVE HLS URL returned HTTP 200 with an HLS manifest and permissive CORS on 2026-08-14. Official Assembly pages document live and archived webcasts, but explicit third-party native playback or redistribution permission has not been recorded.",
                 "evidence": [
-                    "https://www.assembly.nu.ca/webcasts?page=1",
+                    "https://www.assembly.nu.ca/webcasts",
                     "https://video.isilive.ca/nunavut/live-eng.html"
                 ],
-                "recommendation": "Link to the official live player page until the current direct stream and reuse terms are documented."
+                "recommendation": "Keep native playback permission-pending and seek written clarification before treating the HLS endpoint as redistributable."
             }
         },
         {
@@ -2148,6 +2148,48 @@
             }
         },
         {
+            "id": "germany-bundestag-1",
+            "name": "Germany Bundestag 1",
+            "short_name": "DE 1",
+            "jurisdiction_level": "national",
+            "country_or_region": "Germany",
+            "legislature": "Deutscher Bundestag",
+            "language": "German",
+            "source_type": "direct_hls",
+            "display_mode": "native_player",
+            "playback_url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+            "official_url": "https://www.bundestag.de/mediathek",
+            "attribution_text": "Bundestag Parlamentsfernsehen channel 1 HLS candidate validated during democracy-tier refresh.",
+            "technical_status": "validated",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Bundestag Parlamentsfernsehen 1",
+                "current_event_time": "Active around scheduled proceedings",
+                "next_event_title": "Official schedule integration",
+                "next_event_time": "Planned",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.bundestag.de/mediathek",
+                    "method": "GET",
+                    "kind": "mediathek_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Bundestag Parlamentsfernsehen HLS candidate validated in the 2026-08-14 Tier 1 refresh, but no sufficient documentary reuse evidence has been recorded.",
+                "evidence": [
+                    "https://www.bundestag.de/mediathek",
+                    "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8"
+                ],
+                "recommendation": "Link out or keep as pending until terms or permission are documented."
+            }
+        },
+        {
             "id": "costa-rica-assembly-youtube",
             "name": "Costa Rica Assembly YouTube",
             "short_name": "CR",
@@ -2193,7 +2235,7 @@
             "playback_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
             "official_url": "https://www.asamblea.gob.sv/",
             "attribution_text": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
-            "technical_status": "validated",
+            "technical_status": "needs_review",
             "availability": "event_based",
             "metadata_level": "schedule_target",
             "program": {
@@ -2214,12 +2256,268 @@
             ],
             "permission": {
                 "status": "personal_use_pending_review",
-                "summary": "The HLS manifest is hosted on the official Asamblea Legislativa domain, but no sufficient documentary reuse evidence has been recorded.",
+                "summary": "The HLS manifest is hosted on the official Asamblea Legislativa domain, but standard TLS verification failed in the 2026-08-14 Python healthcheck; no sufficient documentary reuse evidence has been recorded.",
                 "evidence": [
                     "https://www.asamblea.gob.sv/",
                     "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8"
                 ],
-                "recommendation": "Link out or keep as pending until terms or permission are documented."
+                "recommendation": "Link out or keep as pending until TLS behavior and terms or permission are documented."
+            }
+        },
+        {
+            "id": "european-parliament-multimedia-centre",
+            "name": "European Parliament Multimedia Centre",
+            "short_name": "EP",
+            "jurisdiction_level": "supranational",
+            "country_or_region": "European Union",
+            "legislature": "European Parliament",
+            "language": "Multilingual",
+            "source_type": "official_page",
+            "display_mode": "link_out",
+            "playback_url": null,
+            "official_url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+            "attribution_text": "Official European Parliament Multimedia Centre webstreaming page.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "European Parliament plenary, committee, and institutional webstreams",
+                "current_event_time": "Live around scheduled proceedings and events",
+                "next_event_title": "Multimedia Centre schedule and event metadata",
+                "next_event_time": "Research target",
+                "confidence": "high"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+                    "method": "GET",
+                    "kind": "webstreaming_schedule_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "explicit_reuse_with_conditions",
+                "summary": "European Parliament pages describe live streaming, embed support, downloads, and reuse of Multimedia Centre material free of charge with acknowledgement of the European Union / EP source. No stable raw HLS URL was validated in the August 2026 passes.",
+                "evidence": [
+                    "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+                    "https://www.europarl.europa.eu/news/en/media-services/multimedia-centre",
+                    "https://multimedia.europarl.europa.eu/en/webstreaming"
+                ],
+                "recommendation": "Use official links/embeds and preserve required EU/EP attribution; do not treat dynamic player manifests as stable channels until documented."
+            }
+        },
+        {
+            "id": "council-of-eu-live",
+            "name": "Council of the European Union Live",
+            "short_name": "EU Council",
+            "jurisdiction_level": "supranational",
+            "country_or_region": "European Union",
+            "legislature": "Council of the European Union",
+            "language": "Multilingual",
+            "source_type": "official_page",
+            "display_mode": "link_out",
+            "playback_url": null,
+            "official_url": "https://video.consilium.europa.eu/home/en",
+            "attribution_text": "Official Council live page for public Council sessions and related events.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "Council public sessions and events",
+                "current_event_time": "Live around scheduled public sessions",
+                "next_event_title": "Council live schedule and archive",
+                "next_event_time": "Research target",
+                "confidence": "high"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://video.consilium.europa.eu/home/en",
+                    "method": "GET",
+                    "kind": "council_live_schedule_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Council pages document live and recorded public sessions in all EU languages, but this project has not recorded sufficient native stream reuse permission.",
+                "evidence": [
+                    "https://video.consilium.europa.eu/home/en",
+                    "https://www.consilium.europa.eu/en/press/",
+                    "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/"
+                ],
+                "recommendation": "Use official link-out pending terms review and avoid extracting dynamic player manifests."
+            }
+        },
+        {
+            "id": "eu-audiovisual-ebs",
+            "name": "EU Audiovisual Service / EBS",
+            "short_name": "EBS",
+            "jurisdiction_level": "supranational",
+            "country_or_region": "European Union",
+            "legislature": "European Union institutions",
+            "language": "Multilingual",
+            "source_type": "official_page",
+            "display_mode": "link_out",
+            "playback_url": null,
+            "official_url": "https://audiovisual.ec.europa.eu/en",
+            "attribution_text": "Official European Union Audiovisual Service / Europe by Satellite page.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "EU institutional live and audiovisual coverage",
+                "current_event_time": "Live around scheduled EU events",
+                "next_event_title": "EBS schedule and audiovisual metadata",
+                "next_event_time": "Research target",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://audiovisual.ec.europa.eu/en",
+                    "method": "GET",
+                    "kind": "audiovisual_service_live_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Official EU Audiovisual Service page is reachable and publishes EBS live/schedule surfaces, but this project has not recorded sufficient native stream reuse permission.",
+                "evidence": [
+                    "https://audiovisual.ec.europa.eu/en",
+                    "https://www.europarl.europa.eu/website/multimedia-centre/en/europe-by-satellite.html"
+                ],
+                "recommendation": "Use official link-out pending terms review; keep distinct from parliamentary chamber streams."
+            }
+        },
+        {
+            "id": "un-web-tv",
+            "name": "United Nations Web TV",
+            "short_name": "UN Web TV",
+            "jurisdiction_level": "supranational",
+            "country_or_region": "United Nations",
+            "legislature": "United Nations bodies",
+            "language": "Multilingual",
+            "source_type": "official_page",
+            "display_mode": "link_out",
+            "playback_url": null,
+            "official_url": "https://webtv.un.org/en/schedule",
+            "attribution_text": "Official United Nations Web TV live schedule page.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "metadata_level": "daily_schedule_target",
+            "program": {
+                "current_event_title": "UN meetings, events, and briefings",
+                "current_event_time": "Live around scheduled UN coverage",
+                "next_event_title": "UN Web TV live schedule",
+                "next_event_time": "Research target",
+                "confidence": "high"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://webtv.un.org/en/schedule",
+                    "method": "GET",
+                    "kind": "live_schedule_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "UN Web TV provides official live and on-demand multilingual coverage and event links/embed codes, but this project has not recorded sufficient native stream reuse permission.",
+                "evidence": [
+                    "https://webtv.un.org/en/schedule",
+                    "https://media.un.org/en",
+                    "https://www.un.org/en/node/205121"
+                ],
+                "recommendation": "Use official schedule/event links or documented embeds; do not extract dynamic manifests without permission."
+            }
+        },
+        {
+            "id": "council-of-europe-pace-live",
+            "name": "Council of Europe / PACE Live",
+            "short_name": "PACE",
+            "jurisdiction_level": "supranational",
+            "country_or_region": "Council of Europe",
+            "legislature": "Parliamentary Assembly of the Council of Europe",
+            "language": "Multilingual",
+            "source_type": "official_page",
+            "display_mode": "link_out",
+            "playback_url": null,
+            "official_url": "https://www.coe.int/en/web/portal/live",
+            "attribution_text": "Official Council of Europe live webcast page carrying PACE and other Council of Europe sessions/events.",
+            "technical_status": "needs_review",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "PACE and Council of Europe live sessions/events",
+                "current_event_time": "Live around scheduled sessions",
+                "next_event_title": "PACE live and multimedia resources",
+                "next_event_time": "Research target",
+                "confidence": "low"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.coe.int/en/web/portal/live",
+                    "method": "GET",
+                    "kind": "live_webcast_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Council of Europe audiovisual pages state PACE sessions and other major events are live-streamed, but Council of Europe/PACE pages returned 403 from parts of the 2026-08-14 validation environment and native stream reuse permission is not documented.",
+                "evidence": [
+                    "https://www.coe.int/en/web/portal/live",
+                    "https://www.coe.int/en/web/portal/audiovisual-services1",
+                    "https://pace.coe.int/en/sessions/livestream"
+                ],
+                "recommendation": "Keep as watchlist/link-out pending source-specific terms and current page access review."
+            }
+        },
+        {
+            "id": "osce-live",
+            "name": "OSCE Live",
+            "short_name": "OSCE",
+            "jurisdiction_level": "supranational",
+            "country_or_region": "OSCE",
+            "legislature": "Organization for Security and Co-operation in Europe",
+            "language": "Multilingual",
+            "source_type": "official_page",
+            "display_mode": "link_out",
+            "playback_url": null,
+            "official_url": "https://www.osce.org/live",
+            "attribution_text": "Official OSCE live page for streamed events.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "metadata_level": "schedule_target",
+            "program": {
+                "current_event_title": "OSCE live events",
+                "current_event_time": "Live around scheduled events",
+                "next_event_title": "OSCE live schedule/event pages",
+                "next_event_time": "Research target",
+                "confidence": "medium"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.osce.org/live",
+                    "method": "GET",
+                    "kind": "live_page",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "personal_use_pending_review",
+                "summary": "Official OSCE live page is reachable, but this project has not recorded sufficient stream reuse permission or a stable parliamentary-specific direct stream.",
+                "evidence": [
+                    "https://www.osce.org/live",
+                    "https://www.oscepa.org/en/"
+                ],
+                "recommendation": "Use official link-out pending terms review; keep OSCE PA-specific coverage as a research target."
             }
         }
     ]

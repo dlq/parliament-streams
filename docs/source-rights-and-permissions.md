@@ -6,7 +6,7 @@ technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
 
-Last reviewed: 2026-07-29.
+Last reviewed: 2026-08-14.
 
 ## Catalogue Position
 
@@ -33,6 +33,15 @@ The conservative catalogue posture is:
 - treat browser-discovered official-page/player manifests such as Norway,
   Estonia, Chile, Israel, and El Salvador as technically useful but still
   pending rights review unless source terms or written permission support reuse;
+- treat Germany Bundestag channel 1 as a technically validated but permission-
+  pending source after the 2026-08-14 Tier 1 refresh;
+- treat Nunavut Legislative Assembly TV as technically validated but
+  permission-pending after the 2026-08-14 non-US sub-national refresh;
+- treat Luxembourg, El Salvador, and the Ontario captioned House endpoint as
+  needing technical review after 2026-08-14 validation failures;
+- treat supranational EU/UN/OSCE/Council of Europe sources as official link-out
+  and schedule targets unless a direct stream path and reuse posture are
+  documented;
 - treat all other direct HLS/DASH sources as research entries until their terms
   or permissions are documented;
 - keep YouTube sources as official links or compliant embeds only; do not
@@ -49,7 +58,7 @@ The conservative catalogue posture is:
 | Brazil TV Camara | Direct HLS discovered, `explicit_reuse_with_conditions` | [TV Camara page](https://www.camara.leg.br/tv/), [terms of use](https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade) | Promising but incomplete. The Camara portal terms allow free reproduction of published data, images, infographics, and information with source/author credit, and state portal information is public and free to reproduce. The same terms also note YouTube API terms for videos on the portal. | Keep as promising but confirm TV Camara-specific stream reuse before treating the HLS endpoint as redistributable. |
 | Spain Congreso en Directo / Canal Parlamento | Direct HLS discovered, `explicit_reuse_with_conditions` | [Congreso en directo](https://www.congreso.es/es/web/guest/congreso-en-directo), [Canal Parlamento information](https://www.congreso.es/es/cem/mas-informacion), [FAQs](https://www.congreso.es/es/cem/faqs) | Strong rights support. Official pages state Congreso en Directo provides Plenary and up to five committee/live signals through the Congress website. FAQ text says the institutional signal is distributed free to media and citizens, and videos can be downloaded and used freely after sessions. The five committee HLS masters returned 200 but sample variants returned 404 on 2026-07-29. | Keep the existing Canal Parlamento entry as validated; keep newly added committee HLS masters in technical review until variant playback is confirmed. |
 | Ireland Oireachtas TV | Official embed/link-out, `explicit_reuse_with_conditions` | [Oireachtas TV](https://www.oireachtas.ie/en/oireachtas-tv/), [embed codes](https://www.oireachtas.ie/en/oireachtas-tv/embed-codes/), [committee schedule](https://www.oireachtas.ie/en/committees/schedule/) | Official page provides live streams and embed codes for Oireachtas TV, Dail, Seanad, and committee rooms. Use is subject to rules of coverage and required credit to the Houses of the Oireachtas Service. Raw HLS URLs returned 403 from this validation environment. | Use official embed codes or link out; do not list raw HLS unless a source-supported direct playback path is confirmed. |
-| New Zealand Parliament TV | Direct HLS discovered, `explicit_reuse_with_conditions` | [Parliament in action portal](https://videos.parliament.nz/), [New Zealand Parliament homepage](https://www.parliament.nz/) | Official video portal found, but no current explicit reuse or native-stream permission found in this pass. | Treat as pending/link-out until terms or permission are found. |
+| New Zealand Parliament TV | Direct HLS discovered, `personal_use_pending_review` | [Parliament in action portal](https://videos.parliament.nz/), [New Zealand Parliament homepage](https://www.parliament.nz/) | Official video portal found, but no current explicit reuse or native-stream permission found in this pass. | Treat as pending/link-out until terms or permission are found. |
 | UK Parliament YouTube | Link-out, `embed_only` | [UK Parliament YouTube](https://www.youtube.com/UKParliament) | Link-out only. The project does not extract YouTube manifests. | Use official YouTube links or compliant embeds only. |
 | Australia Parliament Live YouTube | Link-out, `embed_only` | [AUS Parliament Live](https://www.youtube.com/@AUSParliamentLive) | Link-out only. The project does not extract YouTube manifests. | Use official YouTube links or compliant embeds only. |
 | Taiwan Parliamentary TV | Link-out, `embed_only` | [Parliamentary TV](https://www.parliamentarytv.org.tw/) | Link-out only in the current catalogue. Terms not yet reviewed. | Keep link-out only pending terms review. |
@@ -69,17 +78,26 @@ than a redistributable native stream.
 | France National Assembly | `france-national-assembly` | `personal_use_pending_review` | https://videos.assemblee-nationale.fr/direct.php | Link-out/pending |
 | Chile Camara TV | `chile-camara-tv` | `personal_use_pending_review` | https://www.camara.cl/prensa/television.aspx | Link-out/pending until terms or permission are documented |
 | Israel Knesset Channel | `israel-knesset-channel` | `personal_use_pending_review` | https://www.knesset.tv/live/ | Link-out/pending until terms or permission are documented |
+| Germany Bundestag 1 | `germany-bundestag-1` | `personal_use_pending_review` | https://www.bundestag.de/mediathek | Link-out/pending until terms or permission are documented |
 | Portugal ARTV Canal Parlamento | `portugal-artv` | `personal_use_pending_review` | https://www.parlamento.pt/ | Link-out/pending |
 | Greece Hellenic Parliament TV | `greece-hellenic-parliament-tv` | `personal_use_pending_review` | https://www.hellenicparliament.gr/ | Link-out/pending |
-| Luxembourg Chamber TV | `luxembourg-chamber-tv` | `personal_use_pending_review` | https://www.chd.lu/ | Link-out/pending |
+| Luxembourg Chamber TV | `luxembourg-chamber-tv` | `personal_use_pending_review` | https://www.chd.lu/ | Link-out/pending; endpoint was unreachable from the 2026-08-14 validation environment |
 | Estonia Riigikogu live streams | `estonia-riigikogu-live-1`, `estonia-riigikogu-live-2` | `personal_use_pending_review` | https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/ | Link-out/pending until terms or permission are documented |
 | Italy Senate | `italy-senate` | `personal_use_pending_review` | https://webtv.senato.it/ | Link-out/pending |
 | India Sansad TV 1/2 | `india-sansad-tv-1`, `india-sansad-tv-2` | `personal_use_pending_review` | https://sansadtv.nic.in/ | Link-out/pending |
 | Thailand Parliament TV | `thailand-parliament-tv` | `personal_use_pending_review` | https://tpchannel.org/ | Link-out/pending |
 | Slovakia TV NRSR | `slovakia-tv-nrsr` | `personal_use_pending_review` | https://www.nrsr.sk/ | Link-out/pending |
 | Mongolia Parliament TV | `mongolia-parliament-tv` | `personal_use_pending_review` | https://www.parliament.mn/ | Keep as research-only DASH experiment |
-| Nunavut Legislative Assembly TV | `nunavut-legislative-assembly-tv` | `personal_use_pending_review` | https://www.assembly.nu.ca/webcasts?page=1 | Previous direct HLS URL returned 404 on 2026-07-29; link to the official live player page pending a current source-supported manifest. |
-| El Salvador Legislative Assembly | `el-salvador-legislative-assembly` | `personal_use_pending_review` | https://www.asamblea.gob.sv/ | Link-out/pending until terms or permission are documented |
+| Nunavut Legislative Assembly TV | `nunavut-legislative-assembly-tv` | `personal_use_pending_review` | https://www.assembly.nu.ca/webcasts | Direct iSi LIVE HLS endpoint returned HTTP 200 with an HLS manifest on 2026-08-14. Keep native playback permission-pending until explicit reuse terms or written permission are documented. |
+| Other non-US sub-national targets | Research only | `personal_use_pending_review` | BC, Alberta, Saskatchewan, Manitoba, PEI, NWT, Newfoundland and Labrador, Scotland, Wales/Senedd, Northern Ireland, Australian states, German Landtage, Spanish autonomous parliaments, and selected Mexican regional channels | Several official live/archive pages are useful link-out or schedule candidates. Do not promote direct streams into the catalogue until official provenance and reuse terms are documented. |
+| Ontario captioned House stream | `ontario-house-en-cc` | `noncommercial_pending_review` | https://www.ola.org/en/legislative-business/video | Direct captioned HLS endpoint returned 404 on 2026-08-14; review current official captioned route. |
+| El Salvador Legislative Assembly | `el-salvador-legislative-assembly` | `personal_use_pending_review` | https://www.asamblea.gob.sv/ | Link-out/pending; standard TLS verification failed in the 2026-08-14 Python healthcheck |
+| European Parliament Multimedia Centre | `european-parliament-multimedia-centre` | `explicit_reuse_with_conditions` | https://multimedia.europarl.europa.eu/en/webstreaming | Use official links/embeds and preserve EU/EP attribution; no stable raw HLS validated. |
+| Council of the European Union Live | `council-of-eu-live` | `personal_use_pending_review` | https://video.consilium.europa.eu/home/en | Link-out/pending until terms or permission are documented. |
+| EU Audiovisual Service / EBS | `eu-audiovisual-ebs` | `personal_use_pending_review` | https://audiovisual.ec.europa.eu/en | Link-out/pending; keep distinct from parliamentary chamber streams. |
+| United Nations Web TV | `un-web-tv` | `personal_use_pending_review` | https://webtv.un.org/en/schedule | Use official schedule/event links or documented embeds; no native stream reuse permission recorded. |
+| Council of Europe / PACE Live | `council-of-europe-pace-live` | `personal_use_pending_review` | https://www.coe.int/en/web/portal/live | Watchlist/link-out pending; Council of Europe/PACE pages returned 403 from parts of this validation environment. |
+| OSCE Live | `osce-live` | `personal_use_pending_review` | https://www.osce.org/live | Link-out/pending; keep OSCE PA-specific coverage as a research target. |
 
 ## Permission Request Template
 

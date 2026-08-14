@@ -1,0 +1,259 @@
+{
+  "checked_at": "2026-08-14T21:07:02Z",
+  "scope": "Supranational EU/UN-adjacent official streaming and schedule targets",
+  "method": "Refresh from prior report seeds: validate known direct HLS/DASH candidates, fetch official/discovery pages, extract static .m3u8/.mpd references, and validate discovered manifests. JavaScript player network traffic is out of scope.",
+  "seed_report": "/tmp/supranational-seed.json",
+  "elapsed_seconds": 2.07,
+  "countries": [
+    {
+      "country": "European Parliament",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 202,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+          "elapsed_seconds": 0.341,
+          "kind": "official_page",
+          "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "European Parliament Audiovisual Services",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 202,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+          "elapsed_seconds": 0.159,
+          "kind": "official_page",
+          "url": "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "European Union Audiovisual Service / EBS",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://audiovisual.ec.europa.eu/en",
+          "elapsed_seconds": 0.468,
+          "kind": "official_page",
+          "url": "https://audiovisual.ec.europa.eu/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Council of the European Union",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://video.consilium.europa.eu/home/en",
+          "elapsed_seconds": 1.315,
+          "kind": "official_page",
+          "url": "https://video.consilium.europa.eu/home/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "United Nations Web TV",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://webtv.un.org/en/schedule",
+          "elapsed_seconds": 0.177,
+          "kind": "official_page",
+          "url": "https://webtv.un.org/en/schedule",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://media.un.org/en",
+          "elapsed_seconds": 0.178,
+          "kind": "official_page",
+          "url": "https://media.un.org/en",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Parliamentary Assembly of the Council of Europe",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://pace.coe.int/en/sessions/livestream",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.151,
+          "kind": "official_page",
+          "url": "https://pace.coe.int/en/sessions/livestream",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://pace.coe.int/en/pages/multimedia-resources",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.073,
+          "kind": "official_page",
+          "url": "https://pace.coe.int/en/pages/multimedia-resources",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "Council of Europe Live Webcast",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://www.coe.int/en/web/portal/live",
+          "elapsed_seconds": 1.316,
+          "kind": "official_page",
+          "url": "https://www.coe.int/en/web/portal/live",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.coe.int/en/web/portal/audiovisual-services1",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.067,
+          "kind": "official_page",
+          "url": "https://www.coe.int/en/web/portal/audiovisual-services1",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "OSCE Live",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://news.osce.org/live",
+          "elapsed_seconds": 1.313,
+          "kind": "official_page",
+          "url": "https://www.osce.org/live",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "OSCE Parliamentary Assembly",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.oscepa.org/en/",
+          "elapsed_seconds": 1.773,
+          "kind": "official_page",
+          "url": "https://www.oscepa.org/en/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "NATO Parliamentary Assembly",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.nato-pa.int/",
+          "elapsed_seconds": 1.845,
+          "kind": "official_page",
+          "url": "https://www.nato-pa.int/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Inter-Parliamentary Union",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.ipu.org/",
+          "elapsed_seconds": 1.529,
+          "kind": "official_page",
+          "url": "https://www.ipu.org/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Nordic Council",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.norden.org/en",
+          "error": "HTTP 403",
+          "elapsed_seconds": 1.071,
+          "kind": "official_page",
+          "url": "https://www.norden.org/en",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    }
+  ]
+}

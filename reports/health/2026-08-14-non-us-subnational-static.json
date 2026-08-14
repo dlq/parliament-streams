@@ -1,0 +1,574 @@
+{
+  "checked_at": "2026-08-14T21:23:52Z",
+  "scope": "Non-US sub-national legislative stream discovery",
+  "method": "Refresh from prior report seeds: validate known direct HLS/DASH candidates, fetch official/discovery pages, extract static .m3u8/.mpd references, and validate discovered manifests. JavaScript player network traffic is out of scope.",
+  "seed_report": "reports/health/2026-08-14-non-us-subnational-seed.json",
+  "elapsed_seconds": 12.06,
+  "countries": [
+    {
+      "country": "British Columbia, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+          "elapsed_seconds": 0.618,
+          "kind": "official_page",
+          "url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 421,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://cdn3.wowza.com/5/YldIU1hsTlljRWZF/hbs-prim-house-httpo/HouseP.smil/playlist.m3u8",
+          "error": "HTTP 421",
+          "elapsed_seconds": 3.365,
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/YldIU1hsTlljRWZF/hbs-prim-house-httpo/HouseP.smil/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 421"
+        },
+        {
+          "http_status": 421,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://cdn3.wowza.com/5/YldIU1hsTlljRWZF/hbs-prim-dougfir-httpo/DougFirP.smil/playlist.m3u8",
+          "error": "HTTP 421",
+          "elapsed_seconds": 3.203,
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/YldIU1hsTlljRWZF/hbs-prim-dougfir-httpo/DougFirP.smil/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 421"
+        }
+      ]
+    },
+    {
+      "country": "Alberta, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+          "elapsed_seconds": 1.045,
+          "kind": "official_page",
+          "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://assemblyonline.assembly.ab.ca/harmony/",
+          "elapsed_seconds": 0.72,
+          "kind": "official_page",
+          "url": "https://assemblyonline.assembly.ab.ca/harmony/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Saskatchewan, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+          "elapsed_seconds": 0.156,
+          "kind": "official_page",
+          "url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Manitoba, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+          "elapsed_seconds": 0.235,
+          "kind": "official_page",
+          "url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Nunavut, Canada",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.assembly.nu.ca/webcasts",
+          "elapsed_seconds": 0.223,
+          "kind": "official_page",
+          "url": "https://www.assembly.nu.ca/webcasts",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
+          "elapsed_seconds": 0.101,
+          "kind": "hls",
+          "url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Prince Edward Island, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.assembly.pe.ca/watch-live",
+          "elapsed_seconds": 0.491,
+          "kind": "official_page",
+          "url": "https://www.assembly.pe.ca/watch-live",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Northwest Territories, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+          "elapsed_seconds": 0.973,
+          "kind": "official_page",
+          "url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Newfoundland and Labrador, Canada",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/live_video_audio.aspx",
+          "elapsed_seconds": 0.334,
+          "kind": "official_page",
+          "url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/live_video_audio.aspx",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Scotland, United Kingdom",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.scottishparliament.tv/",
+          "elapsed_seconds": 0.739,
+          "kind": "official_page",
+          "url": "https://www.scottishparliament.tv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Wales, United Kingdom",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.senedd.tv/",
+          "elapsed_seconds": 0.639,
+          "kind": "official_page",
+          "url": "https://www.senedd.tv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://senedd.wales/media/media-faqs/",
+          "elapsed_seconds": 0.759,
+          "kind": "official_page",
+          "url": "https://senedd.wales/media/media-faqs/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Northern Ireland, United Kingdom",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://niassembly.tv/",
+          "elapsed_seconds": 0.215,
+          "kind": "official_page",
+          "url": "https://niassembly.tv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "New South Wales, Australia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.nsw.gov.au/la/Pages/webcasts.aspx",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.25,
+          "kind": "official_page",
+          "url": "https://www.parliament.nsw.gov.au/la/Pages/webcasts.aspx",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Victoria, Australia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.vic.gov.au/watch/?utm_source=oldwebsite&utm_medium=redirect&utm_campaign=december2023&utm_content=/video-and-audio",
+          "elapsed_seconds": 0.725,
+          "kind": "official_page",
+          "url": "https://www.parliament.vic.gov.au/video-and-audio/live-broadcast/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Queensland, Australia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://tv.parliament.qld.gov.au/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.231,
+          "kind": "official_page",
+          "url": "https://tv.parliament.qld.gov.au/",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://www.parliament.qld.gov.au/Visit-and-learn/Broadcasts",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.532,
+          "kind": "official_page",
+          "url": "https://www.parliament.qld.gov.au/Visit-and-learn/Broadcasts",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "Western Australia, Australia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://www.parliament.wa.gov.au/WebCMS/webcms.nsf/content/live-broadcast",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.213,
+          "kind": "official_page",
+          "url": "https://www.parliament.wa.gov.au/WebCMS/webcms.nsf/content/live-broadcast",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "North Rhine-Westphalia, Germany",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://www.landtag.nrw.de/home/aktuelles-tv-und-video.html",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.796,
+          "kind": "official_page",
+          "url": "https://www.landtag.nrw.de/home/aktuelles-tv-und-video.html",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Baden-Wurttemberg, Germany",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+          "elapsed_seconds": 0.818,
+          "kind": "official_page",
+          "url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.652,
+          "kind": "hls",
+          "url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Bavaria, Germany",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+          "elapsed_seconds": 0.453,
+          "kind": "official_page",
+          "url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Catalonia, Spain",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+          "elapsed_seconds": 2.413,
+          "kind": "official_page",
+          "url": "https://www.parlament.cat/web/canal-parlament/index.html",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Valencia, Spain",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.cortsvalencianes.es/ca-va/activitat/actualitat/canal-corts",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.716,
+          "kind": "official_page",
+          "url": "https://www.cortsvalencianes.es/ca-va/activitat/actualitat/canal-corts",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 10.002,
+          "kind": "hls",
+          "url": "https://streamserver3.seneca.tv/cval_live/cdn_enc_3/master.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "country": "Andalucia, Spain",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=ISO-8859-1",
+          "final_url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actualidad/canalparlamento.do",
+          "elapsed_seconds": 0.618,
+          "kind": "official_page",
+          "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actualidad/canalparlamento.do",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 10.003,
+          "kind": "hls",
+          "url": "http://193.147.254.64:1935/realizacion1/realizacion1/playlist.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "country": "Navarre, Spain",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://parlamentodenavarra.es/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.114,
+          "kind": "official_page",
+          "url": "https://parlamentodenavarra.es/",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 404,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://broadcasting.parlamentodenavarra.es/live/canal1/master.m3u8",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.601,
+          "kind": "hls",
+          "url": "https://broadcasting.parlamentodenavarra.es/live/canal1/master.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Jalisco, Mexico",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.congresojal.gob.mx/",
+          "elapsed_seconds": 1.128,
+          "kind": "official_page",
+          "url": "https://www.congresojal.gob.mx/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "elapsed_seconds": 0.255,
+          "kind": "hls",
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    },
+    {
+      "country": "Colima, Mexico",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://congresocol.gob.mx/web/www/index.php",
+          "elapsed_seconds": 1.412,
+          "kind": "official_page",
+          "url": "https://www.congresocol.gob.mx/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8",
+          "elapsed_seconds": 0.232,
+          "kind": "hls",
+          "url": "https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        }
+      ]
+    }
+  ]
+}

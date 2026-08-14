@@ -71,6 +71,14 @@ npm install --no-save playwright
 node tools/deep_validate_browser.mjs
 ```
 
+To validate a specific seed or prior report and write a dated output:
+
+```sh
+node tools/deep_validate_browser.mjs \
+  --input reports/health/YYYY-MM-DD-seed-or-report.json \
+  --output reports/health/YYYY-MM-DD-browser-validation.json
+```
+
 Do not treat a browser-discovered stream as redistributable just because it
 plays. Add or update the permission evidence in
 `docs/source-rights-and-permissions.md`.

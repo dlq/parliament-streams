@@ -37,6 +37,8 @@ The current report families are:
   `data/channels.json`;
 - democracy-tier HLS/DASH refresh reports, which validate known candidates and
   static official-page manifest references;
+- supranational and non-US sub-national discovery reports, which document
+  bounded exploratory passes and should not be read as comprehensive coverage;
 - deep browser validation reports, which load official pages in Chromium and
   capture manifests revealed by player scripts or network requests.
 

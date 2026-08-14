@@ -1,0 +1,307 @@
+{
+  "checked_at": "2026-08-14T21:08:40Z",
+  "scope": "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from static reports.",
+  "method": "Headless Chromium loads official/discovery pages, waits for scripts/player requests, captures .m3u8/.mpd network and DOM references, then validates discovered manifests. This does not solve authenticated, geo-blocked, DRM, or interaction-gated players.",
+  "inputs": [
+    "/tmp/supranational-seed.json"
+  ],
+  "countries": [
+    {
+      "country": "European Parliament",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "European Parliament Audiovisual Services",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "European Union Audiovisual Service / EBS",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Council of the European Union",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "United Nations Web TV",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Parliamentary Assembly of the Council of Europe",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Council of Europe Live Webcast",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "OSCE Live",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "OSCE Parliamentary Assembly",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "NATO Parliamentary Assembly",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Inter-Parliamentary Union",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Nordic Council",
+      "tier_report": "/tmp/supranational-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    }
+  ],
+  "pages": [
+    {
+      "country": "European Parliament",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+      "final_url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+      "page_status": 202,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "European Parliament Audiovisual Services",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+      "final_url": "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+      "page_status": 202,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "European Union Audiovisual Service / EBS",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://audiovisual.ec.europa.eu/en",
+      "final_url": "https://audiovisual.ec.europa.eu/en",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Council of the European Union",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://video.consilium.europa.eu/home/en",
+      "final_url": "https://video.consilium.europa.eu/home/en",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United Nations Web TV",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://webtv.un.org/en/schedule",
+      "final_url": "https://webtv.un.org/en/schedule",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United Nations Web TV",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://media.un.org/en",
+      "final_url": "https://media.un.org/en",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Parliamentary Assembly of the Council of Europe",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://pace.coe.int/en/sessions/livestream",
+      "final_url": "https://pace.coe.int/en/sessions/livestream?__cf_chl_rt_tk=4pAH5AGNfKRDHAD8sp6ZPmV7H3U3mwwj9.qydFpvXrs-1786741665-1.0.1.1-5dUTd2vgw19uCpm3bOY0JUyzI7Y7NIPwNBEoWo_N_7s",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Parliamentary Assembly of the Council of Europe",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://pace.coe.int/en/pages/multimedia-resources",
+      "final_url": "https://pace.coe.int/en/pages/multimedia-resources?__cf_chl_rt_tk=dKO1fCxMcUwWVmsbpA5YZIoE9ZaNnOvzf8HnRRifmQY-1786741670-1.0.1.1-BEaKxkYvp1ogdN.8oCToe_xs2qRzDVdwYyjCmw6I.0U",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Council of Europe Live Webcast",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.coe.int/en/web/portal/live",
+      "final_url": "https://www.coe.int/en/web/portal/live",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "TypeError: Liferay.Menu is not a constructor"
+      ]
+    },
+    {
+      "country": "Council of Europe Live Webcast",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.coe.int/en/web/portal/audiovisual-services1",
+      "final_url": "https://www.coe.int/en/web/portal/audiovisual-services1",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "TypeError: Liferay.Menu is not a constructor"
+      ]
+    },
+    {
+      "country": "OSCE Live",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.osce.org/live",
+      "final_url": "https://news.osce.org/live",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "OSCE Parliamentary Assembly",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.oscepa.org/en/",
+      "final_url": "https://www.oscepa.org/en/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "NATO Parliamentary Assembly",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.nato-pa.int/",
+      "final_url": "https://www.nato-pa.int/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Inter-Parliamentary Union",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.ipu.org/",
+      "final_url": "https://www.ipu.org/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Nordic Council",
+      "tier_report": "/tmp/supranational-seed.json",
+      "page_url": "https://www.norden.org/en",
+      "final_url": "https://www.norden.org/en",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    }
+  ]
+}

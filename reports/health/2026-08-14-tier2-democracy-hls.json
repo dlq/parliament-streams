@@ -1,0 +1,1205 @@
+{
+  "checked_at": "2026-08-14T20:50:07Z",
+  "scope": "Democracy Index Tier 2 flawed-democracy countries from research.md May 2026 list",
+  "method": "Refresh from prior report seeds: validate known direct HLS/DASH candidates, fetch official/discovery pages, extract static .m3u8/.mpd references, and validate discovered manifests. JavaScript player network traffic is out of scope.",
+  "seed_report": "reports/health/2026-07-29-tier2-democracy-hls.json",
+  "elapsed_seconds": 37.5,
+  "countries": [
+    {
+      "country": "France",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+          "elapsed_seconds": 0.346,
+          "kind": "hls",
+          "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+          "status": "warning",
+          "note": "Reachable but not HLS manifest"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://videos.assemblee-nationale.fr/direct.php",
+          "elapsed_seconds": 0.082,
+          "kind": "official_page",
+          "url": "https://videos.assemblee-nationale.fr/direct.php",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://videos.senat.fr/direct.1",
+          "elapsed_seconds": 0.322,
+          "kind": "official_page",
+          "url": "https://videos.senat.fr/video/seance_direct.html",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Malta",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 406,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://stream.smashmalta.com:25463/live/webplayer/livestream/23.m3u8",
+          "error": "HTTP 406",
+          "elapsed_seconds": 0.429,
+          "kind": "hls",
+          "url": "https://stream.smashmalta.com:25463/live/webplayer/livestream/23.m3u8",
+          "status": "error",
+          "note": "HTTP 406"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parlament.mt/en/live-streaming/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.354,
+          "kind": "official_page",
+          "url": "https://www.parlament.mt/en/live-streaming/",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "United States",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://live.house.gov/",
+          "elapsed_seconds": 0.156,
+          "kind": "official_page",
+          "url": "https://live.house.gov/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://www.senate.gov/floor/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.19,
+          "kind": "official_page",
+          "url": "https://www.senate.gov/floor/",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.c-span.org/",
+          "elapsed_seconds": 0.124,
+          "kind": "official_page",
+          "url": "https://www.c-span.org/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Chile",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 503,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8",
+          "error": "HTTP 503",
+          "elapsed_seconds": 0.329,
+          "kind": "hls",
+          "url": "http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 503"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.camara.cl/prensa/television.aspx",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.1,
+          "kind": "official_page",
+          "url": "https://www.camara.cl/prensa/television.aspx",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://tv.senado.cl/",
+          "elapsed_seconds": 0.925,
+          "kind": "official_page",
+          "url": "https://tv.senado.cl/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Slovenia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 54] Connection reset by peer>",
+          "elapsed_seconds": 3.498,
+          "kind": "official_page",
+          "url": "https://www.dz-rs.si/wps/portal/en/Home/mediji/Broadcasts",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+        }
+      ]
+    },
+    {
+      "country": "Israel",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.649,
+          "kind": "hls",
+          "url": "https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.knesset.tv/live/",
+          "elapsed_seconds": 4.385,
+          "kind": "official_page",
+          "url": "https://www.knesset.tv/live/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable",
+          "discovered_manifests": [
+            "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+            "https://watch.knesset.tv?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+          ]
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "elapsed_seconds": 0.67,
+          "kind": "discovered_manifest",
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://watch.knesset.tv?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "elapsed_seconds": 0.853,
+          "kind": "discovered_manifest",
+          "url": "https://watch.knesset.tv?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "status": "warning",
+          "note": "Reachable but not HLS manifest"
+        }
+      ]
+    },
+    {
+      "country": "South Korea",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+          "elapsed_seconds": 1.064,
+          "kind": "hls",
+          "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=utf-8",
+          "final_url": "https://www.natv.go.kr/",
+          "elapsed_seconds": 0.929,
+          "kind": "official_page",
+          "url": "https://www.natv.go.kr/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Latvia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.saeima.lv/en/about-saeima/information-about-the-saeima/live-broadcasts",
+          "elapsed_seconds": 0.831,
+          "kind": "official_page",
+          "url": "https://www.saeima.lv/en/about-saeima/information-about-the-saeima/live-broadcasts",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Belgium",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=iso-8859-1",
+          "final_url": "https://www.dekamer.be/kvvcr/showpage.cfm?section=/media&language=en&story=live.xml",
+          "elapsed_seconds": 0.557,
+          "kind": "official_page",
+          "url": "https://www.dekamer.be/kvvcr/showpage.cfm?section=/media&language=en&story=live.xml",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=ISO-8859-1",
+          "final_url": "https://www.senate.be/",
+          "elapsed_seconds": 0.668,
+          "kind": "official_page",
+          "url": "https://www.senate.be/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Botswana",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.gov.bw/",
+          "elapsed_seconds": 2.642,
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.bw/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Lithuania",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=2",
+          "elapsed_seconds": 3.191,
+          "kind": "official_page",
+          "url": "https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=2",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Cape Verde",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parlamento.cv/",
+          "elapsed_seconds": 1.072,
+          "kind": "official_page",
+          "url": "https://www.parlamento.cv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Italy",
+      "open_hls_count": 3,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+          "elapsed_seconds": 0.347,
+          "kind": "hls",
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+          "elapsed_seconds": 0.581,
+          "kind": "hls",
+          "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://webtv.senato.it/webtv",
+          "elapsed_seconds": 0.449,
+          "kind": "official_page",
+          "url": "https://webtv.senato.it/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable",
+          "discovered_manifests": [
+            "https://senato-vod.morescreens.com/vod_hls/20230509_0930_commissione09_1080p_,360p,480p,576p,720p,1080p,.mp4.urlset/playlist.m3u8?id=video_645a03f8adc897.45433871\\u0026amp;video_id=22946\\u0026amp;token=\\u0026amp;authority_instance_id=empty\\u0026amp;profile_id=empty\\u0026amp;application_installation_id=empty\\u0026amp;uuid=empty\\u0026amp;subscriber_id=empty\\u0026amp;application_id=empty\\u0026amp;detected_delivery_method=hls\\u0026amp;playlist_template=nginx\\u0022"
+          ]
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://senato-vod.morescreens.com/vod_hls/20230509_0930_commissione09_1080p_,360p,480p,576p,720p,1080p,.mp4.urlset/playlist.m3u8?id=video_645a03f8adc897.45433871\\u0026amp;video_id=22946\\u0026amp;token=\\u0026amp;authority_instance_id=empty\\u0026amp;profile_id=empty\\u0026amp;application_installation_id=empty\\u0026amp;uuid=empty\\u0026amp;subscriber_id=empty\\u0026amp;application_id=empty\\u0026amp;detected_delivery_method=hls\\u0026amp;playlist_template=nginx\\u0022",
+          "elapsed_seconds": 0.36,
+          "kind": "discovered_manifest",
+          "url": "https://senato-vod.morescreens.com/vod_hls/20230509_0930_commissione09_1080p_,360p,480p,576p,720p,1080p,.mp4.urlset/playlist.m3u8?id=video_645a03f8adc897.45433871\\u0026amp;video_id=22946\\u0026amp;token=\\u0026amp;authority_instance_id=empty\\u0026amp;profile_id=empty\\u0026amp;application_installation_id=empty\\u0026amp;uuid=empty\\u0026amp;subscriber_id=empty\\u0026amp;application_id=empty\\u0026amp;detected_delivery_method=hls\\u0026amp;playlist_template=nginx\\u0022",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://webtv.camera.it/",
+          "elapsed_seconds": 0.676,
+          "kind": "official_page",
+          "url": "https://webtv.camera.it/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Poland",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=utf-8",
+          "final_url": "https://www.sejm.gov.pl/Sejm10.nsf/transmisje.xsp",
+          "elapsed_seconds": 0.531,
+          "kind": "official_page",
+          "url": "https://www.sejm.gov.pl/Sejm10.nsf/transmisje.xsp",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Cyprus",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": "text/html",
+          "final_url": "https://www.parliament.cy/en/live-broadcast",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.102,
+          "kind": "official_page",
+          "url": "https://www.parliament.cy/en/live-broadcast",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "India",
+      "open_hls_count": 2,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
+          "elapsed_seconds": 0.347,
+          "kind": "hls",
+          "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
+          "elapsed_seconds": 0.291,
+          "kind": "hls",
+          "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+          "elapsed_seconds": 0.592,
+          "kind": "official_page",
+          "url": "https://sansadtv.nic.in/",
+          "status": "error",
+          "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+        }
+      ]
+    },
+    {
+      "country": "Slovakia",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
+          "elapsed_seconds": 0.386,
+          "kind": "hls",
+          "url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.nrsr.sk/web/?sid=tv",
+          "elapsed_seconds": 1.072,
+          "kind": "official_page",
+          "url": "https://www.nrsr.sk/web/?sid=tv",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "South Africa",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.gov.za/live-streaming",
+          "error": "HTTP 404",
+          "elapsed_seconds": 2.07,
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.za/live-streaming",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Malaysia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.09,
+          "kind": "hls",
+          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.063,
+          "kind": "hls",
+          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+          "elapsed_seconds": 0.981,
+          "kind": "official_page",
+          "url": "https://parlimen.gov.my/",
+          "status": "error",
+          "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+        }
+      ]
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.ttparliament.org/",
+          "elapsed_seconds": 2.804,
+          "kind": "official_page",
+          "url": "https://www.ttparliament.org/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Timor-Leste",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 8.005,
+          "kind": "official_page",
+          "url": "https://www.parlamento.tl/",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "country": "Panama",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+          "elapsed_seconds": 0.291,
+          "kind": "official_page",
+          "url": "https://www.asamblea.gob.pa/",
+          "status": "error",
+          "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+        }
+      ]
+    },
+    {
+      "country": "Suriname",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.dna.sr/",
+          "elapsed_seconds": 0.449,
+          "kind": "official_page",
+          "url": "https://www.dna.sr/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Jamaica",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://japarliament.gov.jm/",
+          "elapsed_seconds": 0.255,
+          "kind": "official_page",
+          "url": "https://japarliament.gov.jm/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Montenegro",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "elapsed_seconds": 0.002,
+          "kind": "hls",
+          "url": "https://rtcgstream.me/tv2/playlist.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.skupstina.me/",
+          "elapsed_seconds": 0.62,
+          "kind": "official_page",
+          "url": "https://www.skupstina.me/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Philippines",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.congress.gov.ph/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.082,
+          "kind": "official_page",
+          "url": "https://www.congress.gov.ph/",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "http_status": 523,
+          "content_type": null,
+          "final_url": "https://web.senate.gov.ph/",
+          "error": "HTTP 523",
+          "elapsed_seconds": 3.428,
+          "kind": "official_page",
+          "url": "https://web.senate.gov.ph/",
+          "status": "error",
+          "note": "HTTP 523"
+        }
+      ]
+    },
+    {
+      "country": "Dominican Republic",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://camaradediputados.gob.do/",
+          "elapsed_seconds": 2.677,
+          "kind": "official_page",
+          "url": "https://www.camaradediputados.gob.do/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Mongolia",
+      "open_hls_count": 0,
+      "open_dash_count": 1,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/dash+xml",
+          "final_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+          "elapsed_seconds": 0.657,
+          "kind": "dash",
+          "url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+          "status": "ok",
+          "note": "DASH MPD detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.mn/",
+          "elapsed_seconds": 2.838,
+          "kind": "official_page",
+          "url": "https://www.parliament.mn/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Argentina",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+          "elapsed_seconds": 0.366,
+          "kind": "official_page",
+          "url": "https://www.diputados.gov.ar/",
+          "status": "error",
+          "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.senado.gob.ar/",
+          "elapsed_seconds": 1.531,
+          "kind": "official_page",
+          "url": "https://www.senado.gob.ar/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Hungary",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 16.007,
+          "kind": "hls",
+          "url": "http://plenaris.parlament.hu:1935/edgelive/smil:mkogyplen.smil/playlist.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        },
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 16.006,
+          "kind": "hls",
+          "url": "http://tab.parlament.hu:1935/edgelive/smil:mkogytab.smil/playlist.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://www.parlament.hu/web/guest/elo-kozvetites",
+          "elapsed_seconds": 1.876,
+          "kind": "official_page",
+          "url": "https://www.parlament.hu/web/guest/elo-kozvetites",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Croatia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.sabor.hr/en/press/live-broadcast",
+          "error": "HTTP 404",
+          "elapsed_seconds": 0.515,
+          "kind": "official_page",
+          "url": "https://www.sabor.hr/en/press/live-broadcast",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "country": "Brazil",
+      "open_hls_count": 2,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "elapsed_seconds": 0.502,
+          "kind": "hls",
+          "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://canalgov-stream.ebc.com.br/index.m3u8",
+          "elapsed_seconds": 0.826,
+          "kind": "hls",
+          "url": "https://canalgov-stream.ebc.com.br/index.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.camara.leg.br/tv/",
+          "elapsed_seconds": 0.9,
+          "kind": "official_page",
+          "url": "https://www.camara.leg.br/tv/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable",
+          "discovered_manifests": [
+            "https://stream3.camara.gov.br/tv1/manifest.m3u8"
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Namibia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.na/",
+          "elapsed_seconds": 2.306,
+          "kind": "official_page",
+          "url": "https://www.parliament.na/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "http://103.18.181.69:1935/golive/livestream/playlist.m3u8",
+          "elapsed_seconds": 1.729,
+          "kind": "hls",
+          "url": "http://103.18.181.69:1935/golive/livestream/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://www.dpr.go.id/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.105,
+          "kind": "official_page",
+          "url": "https://www.dpr.go.id/",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "country": "Colombia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "elapsed_seconds": 0.002,
+          "kind": "official_page",
+          "url": "https://www.canalcongreso.gov.co/",
+          "status": "error",
+          "note": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "country": "Bulgaria",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 8.453,
+          "kind": "official_page",
+          "url": "https://www.parliament.bg/en/",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "country": "North Macedonia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error timed out>",
+          "elapsed_seconds": 8.003,
+          "kind": "hls",
+          "url": "https://vipottbpkstream.vip.hr/Content/onevip-hls/Live/Channel(Sobraniski_Kanal)/index.m3u8",
+          "status": "error",
+          "note": "URLError: <urlopen error timed out>"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.sobranie.mk/",
+          "elapsed_seconds": 1.758,
+          "kind": "official_page",
+          "url": "https://www.sobranie.mk/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Thailand",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "elapsed_seconds": 1.253,
+          "kind": "hls",
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://tpchannel.org/",
+          "elapsed_seconds": 0.778,
+          "kind": "official_page",
+          "url": "https://tpchannel.org/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Serbia",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": null,
+          "content_type": null,
+          "final_url": null,
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.parlament.rs'. (_ssl.c:1082)>",
+          "elapsed_seconds": 0.248,
+          "kind": "official_page",
+          "url": "https://www.parlament.rs/",
+          "status": "error",
+          "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.parlament.rs'. (_ssl.c:1082)>"
+        }
+      ]
+    },
+    {
+      "country": "Ghana",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.gh/",
+          "elapsed_seconds": 0.419,
+          "kind": "official_page",
+          "url": "https://www.parliament.gh/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Albania",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://www.parlament.al/",
+          "elapsed_seconds": 0.469,
+          "kind": "official_page",
+          "url": "https://www.parlament.al/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Sri Lanka",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parliament.lk/",
+          "elapsed_seconds": 0.773,
+          "kind": "official_page",
+          "url": "https://www.parliament.lk/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Singapore",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://www.parliament.gov.sg/",
+          "elapsed_seconds": 0.786,
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.sg/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Guyana",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://parliament.gov.gy/",
+          "elapsed_seconds": 0.316,
+          "kind": "official_page",
+          "url": "https://parliament.gov.gy/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Lesotho",
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "has_open_hls": false,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://parliament.ls/",
+          "elapsed_seconds": 2.652,
+          "kind": "official_page",
+          "url": "https://www.parliament.ls/",
+          "status": "page_ok",
+          "note": "Official/discovery page reachable"
+        }
+      ]
+    },
+    {
+      "country": "Moldova",
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "has_open_hls": true,
+      "results": [
+        {
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8",
+          "elapsed_seconds": 0.422,
+          "kind": "hls",
+          "url": "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8",
+          "status": "ok",
+          "note": "HLS manifest detected"
+        },
+        {
+          "http_status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.parlament.md/",
+          "error": "HTTP 403",
+          "elapsed_seconds": 0.09,
+          "kind": "official_page",
+          "url": "https://www.parlament.md/",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    }
+  ]
+}

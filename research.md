@@ -811,6 +811,94 @@ Catalogue changes from this deep pass:
 - Left United States HouseLive/C-SPAN findings as research-only until stable
   channel identity, schedule/event semantics, and rights posture are clearer.
 
+## 2026-08-14 catalogue and Tier 1/Tier 2 validation refresh
+
+The catalogue and national-level Democracy Index Tier 1/Tier 2 candidates were
+refreshed again on 2026-08-14.
+
+Detailed reports:
+
+- `reports/health/2026-08-14-catalogue-health.json`
+- `reports/health/2026-08-14-tier1-democracy-hls.json`
+- `reports/health/2026-08-14-tier2-democracy-hls.json`
+- `reports/health/2026-08-14-tier1-tier2-deep-browser-validation.json`
+
+Existing catalogue health:
+
+- Total entries checked: 54.
+- Result counts: 44 OK, 7 warnings, 3 errors.
+- `ontario-house-en-cc` returned HTTP 404 and was downgraded to
+  `needs_review`.
+- `luxembourg-chamber-tv` was unreachable from the validation environment and
+  was downgraded to `needs_review`.
+- `el-salvador-legislative-assembly` returned a valid HLS response with
+  `curl -k`, but standard Python TLS verification failed; it was downgraded to
+  `needs_review`.
+- France National Assembly still returned HTTP 200 with an HLS content type,
+  but the response body did not validate as an HLS manifest.
+- Spain Congreso channels 1-5 still returned HLS masters but failed sample
+  variant checks.
+
+After adding supranational official-page entries later in the same refresh, the
+catalogue health report was rerun: 60 entries checked, 49 OK, 7 warnings, and
+4 errors. The additional error was `council-of-europe-pace-live`, where Council
+of Europe/PACE pages returned 403 from the validation environment.
+
+Tier 1 static validation confirmed open HLS for New Zealand, Denmark,
+Netherlands, Germany, Canada, Estonia, Spain, Portugal, and Greece. Germany's
+Bundestag channel 1 candidate validated again after failing in the July pass,
+so `germany-bundestag-1` was added to the catalogue with permission review
+pending. Luxembourg did not validate from this environment.
+
+Tier 2 static validation confirmed open HLS/DASH for Israel, South Korea,
+Italy, India, Slovakia, Mongolia, Brazil, Indonesia, Thailand, and Moldova.
+Israel was already in the catalogue from the prior browser pass. Indonesia's
+raw-IP stream validated again, but it remains too fragile and weakly sourced to
+promote as a canonical catalogue entry.
+
+The August deep browser pass reconfirmed browser/player-discovered manifests
+for Norway, Israel, Italy, and Brazil. It also found a United States HouseLive
+DASH event URL dated 2026-08-13, but this remains research-only because it is
+event-specific rather than a stable national-level channel.
+
+## 2026-08-14 supranational EU/UN-adjacent validation pass
+
+The supranational pass focused on official EU, UN, Council of Europe/PACE,
+OSCE, NATO PA, IPU, and Nordic Council surfaces. Static validation and browser
+validation found no stable raw HLS/DASH manifests for these targets, but several
+sources are strong official schedule/player/link-out candidates.
+
+Detailed reports:
+
+- `reports/health/2026-08-14-supranational-static.json`
+- `reports/health/2026-08-14-supranational-deep-browser-validation.json`
+
+Catalogue additions:
+
+- `european-parliament-multimedia-centre`: official European Parliament
+  webstreaming and Multimedia Centre target. This remains the strongest
+  supranational parliamentary source because official pages document live
+  streaming, multilingual coverage, embed support, downloads, and reuse with
+  EU/EP attribution.
+- `council-of-eu-live`: official Council public-session live/archive page.
+- `eu-audiovisual-ebs`: official EU Audiovisual Service / EBS live and schedule
+  surface, kept distinct from parliamentary chamber streams.
+- `un-web-tv`: official UN Web TV live schedule and event coverage. This covers
+  General Assembly, Security Council, ECOSOC, Human Rights Council, ICJ, press
+  briefings, and UN conferences as event/schedule coverage rather than a
+  parliament channel.
+- `council-of-europe-pace-live`: official Council of Europe live page for PACE
+  and related Council of Europe events. PACE-specific pages returned 403 from
+  this validation environment, so the entry is marked `needs_review`.
+- `osce-live`: official OSCE live page, with OSCE PA kept as a specific
+  follow-up target.
+
+Research-only / watchlist:
+
+- NATO Parliamentary Assembly, Inter-Parliamentary Union, OSCE Parliamentary
+  Assembly, and Nordic Council remain watchlist targets until a stronger
+  official live/schedule page or direct source is validated.
+
 Engineering interpretation for Tier 2 and Tier 3:
 
 - The flawed-democracy tier has more direct manifests than expected, but fewer clean first-party manifests than the raw count suggests.
@@ -1041,3 +1129,79 @@ Do not open a broad sub-national catalogue yet. A useful next step is a curated 
 5. Supra-national: PACE and Nordic Council as event-based official-player cards.
 
 For the public catalogue, official-player-only sub-national/supra-national bodies should be represented as official-page or metadata-first entries until a direct stream path and reuse posture are validated.
+
+## 2026-08-14 non-US sub-national refresh
+
+Scope: a bounded refresh of non-U.S. sub-national legislative options, focused
+on likely high-value public parliamentary sources rather than a full global
+province/state crawl.
+
+Reports:
+
+- `reports/health/2026-08-14-non-us-subnational-seed.json`
+- `reports/health/2026-08-14-non-us-subnational-static.json`
+- `reports/health/2026-08-14-non-us-subnational-deep-browser-validation.json`
+
+Targets checked:
+
+- Canada: British Columbia, Alberta, Saskatchewan, Manitoba, Nunavut, Prince
+  Edward Island, Northwest Territories, and Newfoundland and Labrador.
+- UK devolved legislatures: Scottish Parliament, Senedd/Wales, and Northern
+  Ireland Assembly.
+- Australia: New South Wales, Victoria, Queensland, and Western Australia.
+- Germany: North Rhine-Westphalia, Baden-Wurttemberg, and Bavaria.
+- Spain: Catalonia, Valencia, Andalucia, and Navarre.
+- Mexico: Jalisco and Colima.
+
+Static validation results:
+
+- Nunavut Legislative Assembly TV validated as direct HLS:
+  `http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8`.
+- Jalisco's Canal Parlamento del Congreso de Jalisco validated as HLS:
+  `https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8`.
+- Colima's ICRTV regional channel validated as HLS:
+  `https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8`.
+- British Columbia's previous Wowza House and Committee A URLs now return HTTP
+  421 from CloudFront.
+- Valencia timed out, Andalucia timed out or refused connections, and Navarre's
+  previous HLS candidate returned HTTP 404.
+- Baden-Wurttemberg's indexed live page exposes
+  `https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8`, but the
+  URL returned HTTP 404 during this pass, likely because it is off-air or
+  session-specific.
+
+Browser validation results:
+
+- The browser pass checked 27 official pages.
+- No additional stable HLS/DASH manifests validated from dynamic official
+  player traffic.
+- Page statuses were 20 HTTP 200, 4 HTTP 403, and 3 HTTP 404.
+- The 403/404 results were concentrated in some Australian, German, Spanish,
+  and Navarre pages; these need updated official-page discovery before further
+  stream extraction attempts.
+
+Catalogue decision:
+
+- Updated `nunavut-legislative-assembly-tv` from link-only to validated direct
+  HLS, with `personal_use_pending_review` rights status.
+- Did not add Jalisco or Colima yet. They validate technically, but Jalisco
+  still needs stronger official provenance/rights review, and Colima is a
+  regional public channel rather than a clean legislature-owned parliamentary
+  feed.
+- Did not add official-page records for all UK/Australia/Germany/Spain targets
+  yet. They are better kept as research/watchlist targets until each has a
+  source-specific entry, schedule surface, and permission note.
+
+Best next sub-national expansion order:
+
+1. Canada: keep Nunavut, then investigate BC, Alberta, Saskatchewan, Manitoba,
+   PEI, NWT, and Newfoundland and Labrador as official-page/schedule records.
+2. UK devolved: add Scotland, Senedd/Wales, and Northern Ireland as
+   official-player/schedule entries if the catalogue starts including more
+   link-out sub-national bodies.
+3. Germany: revisit Baden-Wurttemberg on a sitting day and inspect NRW/Bavaria
+   with corrected official URLs.
+4. Australia: revisit state pages with updated official URLs and expect
+   restrictive broadcast conditions.
+5. Spain/Mexico: keep as lower-priority regional clusters until official
+   provenance and reuse language are clearer.

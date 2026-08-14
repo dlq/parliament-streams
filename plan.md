@@ -38,6 +38,15 @@ Done:
   2026-07-29, with detailed JSON reports under `reports/health/`.
 - A deeper browser/player validation pass for Tier 1 and Tier 2 official pages
   now exists in `tools/deep_validate_browser.mjs`.
+- Catalogue health plus Tier 1/Tier 2 national-level validation was refreshed
+  again on 2026-08-14.
+- A supranational EU/UN-adjacent pass added official-page and schedule targets
+  for European Parliament, EU Council/EBS, UN Web TV, Council of Europe/PACE,
+  and OSCE.
+- A non-US sub-national pass refreshed Canadian, UK devolved, Australian,
+  German, Spanish, and Mexican regional legislature targets on 2026-08-14;
+  Nunavut is now the only new validated direct-HLS catalogue promotion from
+  that pass.
 - CI and `make verify` now validate JSON, compile Python modules, and run the
   contract tests.
 
@@ -65,6 +74,10 @@ Near-term:
    a stream can be technically reachable but unsuitable for redistribution.
 7. Decide whether event-specific findings such as HouseLive/C-SPAN should live
    in a separate events/fallback dataset instead of the channel catalogue.
+8. Decide whether supranational institutions need a separate `entity_type` or
+   `institution_family` field, because they are not country-level legislatures.
+9. Decide whether sub-national institutions should get separate expansion
+   criteria before adding many official-page/link-out entries.
 
 Later:
 
@@ -90,11 +103,17 @@ Candidate future scrapers:
 
 1. UK Parliamentlive guide/day/info surfaces.
 2. European Parliament Multimedia Centre REST calls.
-3. Portugal ARTV agenda.
-4. Spain Congreso/Canal Parlamento programming.
-5. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
+3. UN Web TV schedule/event pages.
+4. Council of the European Union live schedule.
+5. Council of Europe/PACE live and multimedia resources.
+6. Portugal ARTV agenda.
+7. Spain Congreso/Canal Parlamento programming.
+8. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
    Israel, El Salvador, Mauritius, Italy, India, Thailand, Slovakia, Nunavut,
    and other second-ring sources when structured official endpoints are found.
+9. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
+   Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
+   catalogue starts expanding beyond national/supranational coverage.
 
 ## Rights And Permission Work
 
@@ -103,7 +122,9 @@ Near-term:
 1. Keep `docs/source-rights-and-permissions.md` as the evidence-backed matrix for
    source terms and permission status.
 2. Prioritize rights review for newly added official-page/player discoveries:
-   Norway, Estonia, Chile, Israel, and El Salvador.
+   Norway, Estonia, Chile, Israel, El Salvador, Germany, European Parliament,
+   UN Web TV, Council of the European Union, Council of Europe/PACE, OSCE, and
+   Nunavut.
 3. Add a short public-facing `docs/rights-summary.md` if the detailed matrix
    becomes too long for readers who only need the current posture.
 4. Record written permission requests and responses as summarized evidence, not

@@ -35,10 +35,15 @@ The catalogue includes:
   official-vendor player infrastructure;
 - official YouTube/link-out sources where direct stream reuse is not
   appropriate;
+- supranational official-page/schedule targets for EU, UN, Council of Europe,
+  and OSCE coverage where direct stream reuse is not documented;
+- selected non-US sub-national legislatures where an official source or
+  validated official-vendor stream has been documented;
 - one legacy DASH research candidate kept for provenance;
 - official pages used for source attribution and validation;
 - schedule/EPG scrape surfaces for CPAC, Quebec, Ontario, New Zealand, Brazil,
-  Spain, Ireland, Estonia, Norway, Chile, Israel, El Salvador, and Nunavut;
+  Spain, Ireland, Estonia, Norway, Chile, Israel, Germany, El Salvador, and
+  Nunavut, plus supranational EU/UN/Council of Europe/OSCE targets;
 - permission status, evidence links, and reuse recommendations for every
   channel entry.
 
@@ -46,16 +51,39 @@ This is not an endorsed global directory and not a rebroadcast service. Public
 availability does not automatically mean permission to redistribute, embed, or
 play a stream natively in another product.
 
-The current democracy-priority validation work is recorded in:
+The current democracy-priority validation work is recorded in dated reports,
+including:
 
+- `reports/health/2026-08-14-catalogue-health.json`
+- `reports/health/2026-08-14-tier1-democracy-hls.json`
+- `reports/health/2026-08-14-tier2-democracy-hls.json`
+- `reports/health/2026-08-14-tier1-tier2-deep-browser-validation.json`
+- `reports/health/2026-08-14-supranational-static.json`
+- `reports/health/2026-08-14-supranational-deep-browser-validation.json`
+- `reports/health/2026-08-14-non-us-subnational-static.json`
+- `reports/health/2026-08-14-non-us-subnational-deep-browser-validation.json`
 - `reports/health/2026-07-29-tier1-democracy-hls.json`
 - `reports/health/2026-07-29-tier2-democracy-hls.json`
 - `reports/health/2026-07-29-tier3-democracy-hls.json`
 - `reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json`
 
-The latest pass added or confirmed direct official-page/player HLS entries for
-Norway, Estonia, Chile, Israel, and El Salvador, while keeping permission status
-pending unless documentary reuse evidence is recorded.
+The August 14 national refresh added Germany's Bundestag channel 1 as a validated but
+permission-pending national HLS source, reconfirmed several existing national
+sources, and downgraded endpoints that did not validate cleanly.
+
+The supranational pass added official-page entries for European Parliament
+Multimedia Centre, Council of the European Union Live, EU Audiovisual Service /
+EBS, United Nations Web TV, Council of Europe / PACE Live, and OSCE Live. These
+are link-out/schedule targets; no stable raw HLS/DASH manifest was validated
+for them in the static or browser pass.
+
+The non-US sub-national pass reconfirmed that Canada is the strongest expansion
+cluster. Nunavut's Legislative Assembly TV HLS endpoint validated on 2026-08-14
+and is now recorded as a permission-pending direct HLS source. UK devolved
+parliaments, additional Canadian provincial/territorial assemblies, Australian
+states, German Landtage, Spanish autonomous parliaments, and selected Mexican
+regional channels remain research targets unless their direct stream paths and
+reuse terms are documented.
 
 ## Python Scrapers
 
