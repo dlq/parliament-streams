@@ -32,6 +32,8 @@ jobs:
           cp -R site/. _site/
           cp data/channels.json _site/data/channels.json
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
