@@ -1,12 +1,14 @@
-# Parliaments
+# Parliament Streams
 
-Parliaments is a documentation and data project for public parliamentary
+Parliament Streams is a documentation and data project for public parliamentary
 video sources. It records the stream endpoints, official pages, schedule/EPG
 surfaces, scraper notes, and rights/permission evidence found while researching
 open parliamentary video access.
 
 The repository is intended to be a public, inspectable catalogue and research
 record.
+
+**[Browse the public catalogue](https://dlq.github.io/parliament-streams/)**
 
 ## What Is Here
 

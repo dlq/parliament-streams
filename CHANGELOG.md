@@ -47,6 +47,8 @@ application. Earlier application work remains available in Git history.
 
 ### Fixed
 
+- Aligned the repository description, website, topics, and README branding with
+  the Parliament Streams public catalogue.
 - Installed `uv` in CI so Makefile verification commands use the same locked
   environment as local development and Dependabot checks.
 - Applied the current tested Ruff and GitHub Actions dependency updates in one
