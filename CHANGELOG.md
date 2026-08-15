@@ -49,6 +49,8 @@ application. Earlier application work remains available in Git history.
 
 - Installed `uv` in CI so Makefile verification commands use the same locked
   environment as local development and Dependabot checks.
+- Applied the current tested Ruff and GitHub Actions dependency updates in one
+  consolidated maintenance change.
 - Restored the jurisdiction, format, and use-guidance filters at desktop widths
   while keeping them in a collapsible control on mobile.
 - Made `site/index.html` load the complete catalogue when opened directly as a
