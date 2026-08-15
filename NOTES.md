@@ -2,7 +2,15 @@
 
 This is a working research log, not an endorsed stream directory or legal assessment. It includes successful checks, failed checks, stale candidates, third-party references, and notes that require revalidation before reuse in a public catalogue, downstream product, or advocacy material.
 
-Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `plan.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
+Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `PLANS.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
+
+## Historical Scope
+
+These notes retain earlier exploratory work, including observations from the
+retired Apple-platform viewer prototype. They are evidence, not current product
+requirements or implementation guidance. For the active static catalogue and
+maintenance workflow, use `README.md`, `PLANS.md`, and the source-rights
+documentation.
 
 ## 2026-07-29 catalogue health refresh
 
@@ -909,15 +917,15 @@ Engineering interpretation for Tier 2 and Tier 3:
 
 ## Catalogue implications
 
-The active catalogue roadmap now lives in `plan.md`. This research file intentionally keeps the evidence: source validation, schedule discovery, terms notes, comparable-product observations, and candidate-source research.
+The active catalogue roadmap now lives in `PLANS.md`. This research file intentionally keeps the evidence: source validation, schedule discovery, terms notes, comparable-product observations, and candidate-source research.
 
-Do not treat older research findings below as the current project plan without checking `plan.md`, `data/channels.json`, and `docs/source-rights-and-permissions.md`.
+Do not treat older research findings below as the current project plan without checking `PLANS.md`, `data/channels.json`, and `docs/source-rights-and-permissions.md`.
 
 ### Pre-implementation evidence retained
 
 Date of pass: 2026-05-12.
 
-This pass checked playback/CORS, terms, schedules, YouTube integration, and source-quality risks for the first likely catalogue sources. The active recommendations have moved to `plan.md`; these notes remain as evidence.
+This pass checked playback/CORS, terms, schedules, YouTube integration, and source-quality risks for the first likely catalogue sources. The active recommendations have moved to `PLANS.md`; these notes remain as evidence.
 
 Playback/CORS probe:
 

@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-08-14T20:50:07Z",
-  "scope": "Democracy Index Tier 2 flawed-democracy countries from research.md May 2026 list",
+  "scope": "Democracy Index Tier 2 flawed-democracy countries from NOTES.md May 2026 list",
   "method": "Refresh from prior report seeds: validate known direct HLS/DASH candidates, fetch official/discovery pages, extract static .m3u8/.mpd references, and validate discovered manifests. JavaScript player network traffic is out of scope.",
   "seed_report": "reports/health/2026-07-29-tier2-democracy-hls.json",
   "elapsed_seconds": 37.5,

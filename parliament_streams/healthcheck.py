@@ -166,9 +166,22 @@ def check_channel(channel: dict[str, Any], timeout: int, retries: int) -> dict[s
     return result
 
 
-def run_healthcheck(catalogue_path: Path, timeout: int, retries: int) -> dict[str, Any]:
+def run_healthcheck(
+    catalogue_path: Path,
+    timeout: int,
+    retries: int,
+    channel_ids: set[str] | None = None,
+) -> dict[str, Any]:
     catalogue = load_catalogue(catalogue_path)
-    results = [check_channel(channel, timeout, retries) for channel in catalogue["channels"]]
+    channels = catalogue["channels"]
+    if channel_ids:
+        known_ids = {channel["id"] for channel in channels}
+        unknown_ids = sorted(channel_ids - known_ids)
+        if unknown_ids:
+            raise ValueError(f"Unknown catalogue ids: {', '.join(unknown_ids)}")
+        channels = [channel for channel in channels if channel["id"] in channel_ids]
+
+    results = [check_channel(channel, timeout, retries) for channel in channels]
     counts: dict[str, int] = {}
     for result in results:
         counts[result["status"]] = counts.get(result["status"], 0) + 1
@@ -211,9 +224,23 @@ def main(argv: list[str] | None = None) -> int:
         type=Path,
         help="Optional JSON report output path.",
     )
+    parser.add_argument(
+        "--id",
+        dest="channel_ids",
+        action="append",
+        help="Check one catalogue id; repeat this option to check multiple entries.",
+    )
     args = parser.parse_args(argv)
 
-    report = run_healthcheck(args.catalogue, args.timeout, args.retries)
+    try:
+        report = run_healthcheck(
+            args.catalogue,
+            args.timeout,
+            args.retries,
+            set(args.channel_ids) if args.channel_ids else None,
+        )
+    except ValueError as error:
+        parser.error(str(error))
     encoded = json.dumps(report, indent=2, sort_keys=True)
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

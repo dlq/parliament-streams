@@ -22,19 +22,16 @@
       "required": [
         "id",
         "name",
-        "short_name",
         "jurisdiction_level",
         "country_or_region",
         "legislature",
         "language",
         "source_type",
-        "display_mode",
         "playback_url",
         "official_url",
         "attribution_text",
         "technical_status",
         "availability",
-        "metadata_level",
         "program",
         "epg_sources",
         "permission"
@@ -43,7 +40,6 @@
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
         "name": { "type": "string", "minLength": 1 },
-        "short_name": { "type": "string", "minLength": 1 },
         "jurisdiction_level": { "type": "string", "minLength": 1 },
         "country_or_region": { "type": "string", "minLength": 1 },
         "legislature": { "type": "string", "minLength": 1 },
@@ -51,10 +47,6 @@
         "source_type": {
           "type": "string",
           "enum": ["direct_hls", "direct_dash", "official_page", "youtube"]
-        },
-        "display_mode": {
-          "type": "string",
-          "enum": ["native_player", "link_out"]
         },
         "playback_url": {
           "anyOf": [
@@ -72,7 +64,6 @@
           "type": "string",
           "enum": ["always_on", "sitting_only", "event_based"]
         },
-        "metadata_level": { "type": "string", "minLength": 1 },
         "program": { "$ref": "#/$defs/program" },
         "epg_sources": {
           "type": "array",
@@ -128,7 +119,8 @@
             "personal_use_pending_review",
             "noncommercial_pending_review",
             "explicit_reuse_with_conditions",
-            "embed_only"
+            "embed_only",
+            "no_third_party_reuse"
           ]
         },
         "summary": { "type": "string", "minLength": 1 },

@@ -10,10 +10,13 @@ record.
 
 ## What Is Here
 
+- `site/`: a build-free static catalogue interface for GitHub Pages. It
+  loads the published `data/channels.json` artifact directly; no application
+  backend, user accounts, analytics, or server-side stream proxy is used.
 - `data/channels.json`: canonical source catalogue.
 - `schema/channels.schema.json`: machine-readable catalogue schema.
-- `parliament_streams/scrapers/`: Python parsers for the schedule/EPG sources
-  already understood by the prototype.
+- `parliament_streams/scrapers/`: Python parsers for schedule/EPG sources with
+  documented, reproducible parsing logic.
 - `parliament_streams/healthcheck.py`: repeatable live endpoint/page health
   checker for catalogue entries.
 - `tools/deep_validate_browser.mjs`: optional Playwright/Chromium validator
@@ -23,8 +26,11 @@ record.
   boundaries.
 - `docs/source-rights-and-permissions.md`: source-by-source permission and
   rights evidence.
-- `research.md`: working research log for stream discovery and source notes.
-- `plan.md`: current roadmap for the documentation/data project.
+- `docs/open-stream-principles.md`: the project position on open protocols,
+  access, terms, metadata, and accessibility for public legislative streams.
+- `NOTES.md`: working research log for stream discovery and source notes.
+- `PLANS.md`: current roadmap for the documentation/data project.
+- `CHANGELOG.md`: project-focused change history.
 - `tests/`: data-contract and scraper-registry tests.
 
 ## Catalogue Scope
@@ -51,9 +57,78 @@ This is not an endorsed global directory and not a rebroadcast service. Public
 availability does not automatically mean permission to redistribute, embed, or
 play a stream natively in another product.
 
+## Public Catalogue Site
+
+The repository includes a GitHub Pages interface in `site/`. It provides
+search and filters over the canonical catalogue, source/EPG/provenance details,
+and an official outbound link for every entry.
+
+The page enables native playback where all of the following conditions are
+recorded in `data/channels.json`:
+
+1. the entry has a direct playback URL;
+2. its technical status is `validated`; and
+3. its recorded terms do not expressly prohibit third-party reuse.
+
+This is an opt-out research posture: the absence of recorded affirmative
+permission is not represented as a licence or other grant of rights. Direct
+endpoints with `no_third_party_reuse` remain link-out only, and sources without
+a validated direct endpoint remain link-out only. HLS playback uses the
+browser's native support where available and loads pinned `hls.js` in the
+browser for compatible non-Safari browsers; this is client-side code only, not
+a backend or proxy.
+
+Every native player includes the recorded source attribution and direct links
+to relevant supporting sources. `explicit_reuse_with_conditions` means the project
+has recorded affirmative official terms. `personal_use_pending_review` and
+`noncommercial_pending_review` mean that the player is offered under this
+opt-out policy, not that permission has been granted. `no_third_party_reuse`
+means the source terms expressly rule out a third-party player without separate
+permission. Source owners can request prompt removal through the repository
+owner on GitHub.
+
+The deploy workflow in `.github/workflows/pages.yml` publishes only the site
+files and the canonical `data/channels.json` data artifact. To enable it once
+on GitHub, set **Settings → Pages → Build and deployment → Source** to
+**GitHub Actions**. Thereafter pushes affecting `site/` or `data/channels.json`
+publish the updated page.
+
+For a local preview, serve the repository root rather than opening the HTML
+file directly:
+
+```sh
+make site
+```
+
+Then visit `http://localhost:8000/site/`. The page reads the same canonical
+`data/channels.json` file used by the deployment workflow. A static server is
+needed because browsers do not permit module code opened through `file://` to
+fetch the adjacent JSON data reliably.
+
+## Languages
+
+The static interface supports English, French, Spanish, Brazilian Portuguese,
+Danish, German, Estonian, Greek, Hindi, Irish, Italian, Luxembourgish, Dutch,
+Norwegian Bokmal, Slovak, Thai, Simplified Chinese, Inuktitut syllabics, and
+te reo Maori. Select a
+language in the site header or use `?lang=fr` (substituting a supported locale
+code) in a shared URL; the selection is also stored locally in the browser.
+
+The locale setting translates interface chrome and project-authored explanatory
+copy. Official source names, programme records, attribution text, permission
+summaries, and evidence links remain as recorded in the canonical catalogue.
+This avoids presenting unreviewed translations as authoritative source or legal
+material.
+
+The Inuktitut syllabics interface is a best-effort machine-generated draft,
+using terminology sources from Nunavut and awaiting review by an Inuktitut
+speaker. It must not be treated as an authoritative translation.
+
 The current democracy-priority validation work is recorded in dated reports,
 including:
 
+- `reports/health/2026-08-15-catalogue-health.json`
+- `reports/health/2026-08-15-review-health.json`
 - `reports/health/2026-08-14-catalogue-health.json`
 - `reports/health/2026-08-14-tier1-democracy-hls.json`
 - `reports/health/2026-08-14-tier2-democracy-hls.json`
@@ -87,9 +162,9 @@ reuse terms are documented.
 
 ## Python Scrapers
 
-The scraper modules are small standard-library parsers. They are meant to
-document and reproduce the parsing logic that used to live in Swift schedule
-adapters.
+The scraper modules are small standard-library parsers. They document and
+reproduce the parsing logic used to turn official schedule surfaces into
+catalogue metadata.
 
 Current scraper ids:
 
@@ -156,6 +231,14 @@ To save a dated report:
 uv run --extra dev python -m parliament_streams.healthcheck --output reports/health/YYYY-MM-DD-catalogue-health.json
 ```
 
+To check selected entries only, repeat `--id`:
+
+```sh
+uv run --extra dev python -m parliament_streams.healthcheck \
+  --id france-national-assembly \
+  --id mongolia-parliament-tv
+```
+
 The health checker records HTTP status, content type, final URL, and whether
 direct HLS/DASH entries look like manifests. It is a technical availability
 check only; it does not determine redistribution permission.
@@ -165,14 +248,20 @@ For a deeper browser/player pass against Tier 1 and Tier 2 official pages, run:
 ```sh
 node --version
 npm install --no-save playwright
-node tools/deep_validate_browser.mjs
+node tools/deep_validate_browser.mjs \
+  --input reports/health/2026-08-14-tier1-democracy-hls.json \
+  --input reports/health/2026-08-14-tier2-democracy-hls.json \
+  --output reports/health/YYYY-MM-DD-tier1-tier2-deep-browser-validation.json
 ```
 
 If Playwright is installed outside the repository, point `NODE_PATH` at the
 directory containing `playwright`:
 
 ```sh
-NODE_PATH=/path/to/node_modules node tools/deep_validate_browser.mjs
+NODE_PATH=/path/to/node_modules node tools/deep_validate_browser.mjs \
+  --input reports/health/2026-08-14-tier1-democracy-hls.json \
+  --input reports/health/2026-08-14-tier2-democracy-hls.json \
+  --output reports/health/YYYY-MM-DD-tier1-tier2-deep-browser-validation.json
 ```
 
 The browser validator uses Playwright's Chromium automation to load official

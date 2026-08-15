@@ -1,6 +1,7 @@
 import json
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -8,7 +9,6 @@ CATALOGUE_PATH = ROOT / "data" / "channels.json"
 SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
 
 SOURCE_TYPES = {"direct_hls", "direct_dash", "official_page", "youtube"}
-DISPLAY_MODES = {"native_player", "link_out"}
 TECHNICAL_STATUSES = {"validated", "needs_review", "link_only"}
 PROGRAM_CONFIDENCE = {"low", "medium", "high"}
 SCRAPER_STATUSES = {"implemented", "planned"}
@@ -17,6 +17,7 @@ PERMISSION_STATUSES = {
     "noncommercial_pending_review",
     "explicit_reuse_with_conditions",
     "embed_only",
+    "no_third_party_reuse",
 }
 
 
@@ -27,7 +28,7 @@ class CatalogueContractTests(unittest.TestCase):
         cls.channels = cls.catalogue["channels"]
 
     def test_catalogue_has_expected_top_level_shape(self):
-        self.assertEqual(self.catalogue["schema_version"], 1)
+        self.assertEqual(self.catalogue["schema_version"], 2)
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
@@ -43,25 +44,26 @@ class CatalogueContractTests(unittest.TestCase):
             set(schema["$defs"]["channel"]["properties"]["technical_status"]["enum"]),
             TECHNICAL_STATUSES,
         )
+        self.assertEqual(
+            set(schema["$defs"]["permission"]["properties"]["status"]["enum"]),
+            PERMISSION_STATUSES,
+        )
 
     def test_channel_records_follow_declared_schema_contract(self):
         seen_ids = set()
         required_channel_keys = {
             "id",
             "name",
-            "short_name",
             "jurisdiction_level",
             "country_or_region",
             "legislature",
             "language",
             "source_type",
-            "display_mode",
             "playback_url",
             "official_url",
             "attribution_text",
             "technical_status",
             "availability",
-            "metadata_level",
             "program",
             "epg_sources",
             "permission",
@@ -81,7 +83,6 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertNotIn(channel["id"], seen_ids)
                 seen_ids.add(channel["id"])
                 self.assertIn(channel["source_type"], SOURCE_TYPES)
-                self.assertIn(channel["display_mode"], DISPLAY_MODES)
                 self.assertIn(channel["technical_status"], TECHNICAL_STATUSES)
                 self.assertTrue(urlparse(channel["official_url"]).scheme.startswith("http"))
                 if channel["source_type"].startswith("direct_"):
@@ -139,6 +140,25 @@ class CatalogueContractTests(unittest.TestCase):
     def test_healthcheck_cli_is_importable(self):
         module = __import__("parliament_streams.healthcheck", fromlist=["main"])
         self.assertTrue(hasattr(module, "main"))
+
+    def test_healthcheck_can_select_catalogue_ids(self):
+        from parliament_streams import healthcheck
+
+        with patch.object(
+            healthcheck,
+            "check_channel",
+            return_value={"id": "cpac-ca", "status": "ok"},
+        ) as check_channel:
+            report = healthcheck.run_healthcheck(
+                CATALOGUE_PATH,
+                timeout=1,
+                retries=0,
+                channel_ids={"cpac-ca"},
+            )
+
+        self.assertEqual(report["total"], 1)
+        self.assertEqual(report["counts"], {"ok": 1})
+        self.assertEqual(check_channel.call_args.args[0]["id"], "cpac-ca")
 
 
 if __name__ == "__main__":

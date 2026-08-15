@@ -13,7 +13,7 @@ For channel/source changes, include:
 
 - official legislature or broadcaster page URL;
 - stream URL, official embed URL, official YouTube URL, or official player URL;
-- source type: HLS, DASH, YouTube, official player, official page, or unknown;
+- source type: `direct_hls`, `direct_dash`, `youtube`, or `official_page`;
 - validation date and region;
 - status code, content type, and observed player behavior if tested;
 - whether the URL came from a static HTTP response, official API, browser
@@ -44,8 +44,10 @@ fetches inside parser functions; fetch scripts should record where data came
 from and when it was retrieved.
 
 For `epg_sources`, use `scraper_status: implemented` only when the named
-scraper module exists. Use `scraper: planned` and `scraper_status: planned` for
-documented schedule sources that still need parser work.
+scraper module exists and is registered. Use `scraper: planned` and
+`scraper_status: planned` for documented schedule sources that still need
+parser work. This is maintainer metadata and is not presented as live schedule
+status on the public catalogue page.
 
 To test a parser manually, save the official response to disk and run:
 
@@ -79,11 +81,12 @@ node tools/deep_validate_browser.mjs \
   --output reports/health/YYYY-MM-DD-browser-validation.json
 ```
 
-Do not treat a browser-discovered stream as redistributable just because it
-plays. Add or update the permission evidence in
-`docs/source-rights-and-permissions.md`.
+Do not represent a browser-discovered stream as licensed or otherwise permitted
+just because it plays. Add or update the permission evidence in
+`docs/source-rights-and-permissions.md`, including any terms that expressly
+prohibit third-party playback.
 
 ## Research Notes
 
-`research.md` is a working log. Prefer moving polished, reusable source guidance
+`NOTES.md` is a working log. Prefer moving polished, reusable source guidance
 into `docs/` once a finding is stable.

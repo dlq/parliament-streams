@@ -1,8 +1,8 @@
 # Security
 
-This is a public-interest documentation and data repository. It does not
-currently include accounts, payments, analytics, a server-side sync layer, or
-push notifications.
+This is a public-interest documentation and data repository with a static
+GitHub Pages catalogue. It does not include accounts, payments, analytics, a
+server-side sync layer, or push notifications.
 
 Please do not open a public issue for sensitive reports involving:
 
@@ -13,7 +13,7 @@ Please do not open a public issue for sensitive reports involving:
   traces, or screenshots;
 - a privacy issue that could identify contributors, permission contacts, or
   validation environments;
-- a vulnerability in future hosted catalogue, validation, or reporting tools.
+- a vulnerability in the static catalogue, validation, or reporting tools.
 
 For now, report sensitive issues privately to the repository owner through
 GitHub. Public broken links, source corrections, schedule metadata issues, and

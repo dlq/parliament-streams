@@ -6,59 +6,45 @@ technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
 
-Last reviewed: 2026-08-14.
+Last reviewed: 2026-08-15.
 
 ## Catalogue Position
 
 Public availability is not the same thing as permission to redistribute,
-embed, catalogue, or play a stream in a third-party product. A source should be
-described as reusable only when an official page, terms of use, licence, or
-direct written permission supports that use.
+embed, catalogue, or play a stream in a third-party product. This project does
+not represent the absence of recorded permission as a licence or other grant of
+rights.
 
-The conservative catalogue posture is:
+The catalogue uses an opt-out playback posture:
 
-- keep CPAC as link-out/pending unless CPAC gives written consent;
-- keep Denmark as a strong rights-supported candidate, subject to attribution,
-  no-modification, no-endorsement, and licence-copy conditions;
-- treat Quebec and Ontario as non-commercial, attribution-required candidates
-  where written clarification would still reduce risk;
-- treat Brazil as promising but incomplete until TV Camara-specific native HLS
-  reuse expectations are confirmed;
-- treat Spain Congreso en Directo as a strong rights candidate because official
-  pages document up to five simultaneous web signals and free
-  institutional-signal access, while keeping the newly discovered committee HLS
-  masters in technical review until variant playback is confirmed;
-- treat Oireachtas as official embed/link-out unless a source-supported direct
-  HLS route is documented;
-- treat browser-discovered official-page/player manifests such as Norway,
-  Estonia, Chile, Israel, and El Salvador as technically useful but still
-  pending rights review unless source terms or written permission support reuse;
-- treat Germany Bundestag channel 1 as a technically validated but permission-
-  pending source after the 2026-08-14 Tier 1 refresh;
-- treat Nunavut Legislative Assembly TV as technically validated but
-  permission-pending after the 2026-08-14 non-US sub-national refresh;
-- treat Luxembourg, El Salvador, and the Ontario captioned House endpoint as
-  needing technical review after 2026-08-14 validation failures;
-- treat supranational EU/UN/OSCE/Council of Europe sources as official link-out
-  and schedule targets unless a direct stream path and reuse posture are
-  documented;
-- treat all other direct HLS/DASH sources as research entries until their terms
-  or permissions are documented;
+- keep CPAC as link-out only: its terms expressly prohibit third-party
+  embedding, retransmission, hotlinking, inline linking, and related uses
+  without written consent;
+- allow client-side playback for technically validated public direct HLS/DASH
+  endpoints unless a source's recorded terms expressly prohibit third-party
+  reuse; this is a project policy, not a conclusion that permission exists;
+- preserve visible attribution, source-condition links, and all known
+  restrictions for every playable source;
+- keep technically unvalidated endpoints and entries without direct playback
+  URLs as official link-out or embed targets;
 - keep YouTube sources as official links or compliant embeds only; do not
   extract YouTube manifests.
+
+Source owners may request removal or correction through the repository owner on
+GitHub. The project will promptly disable playback while the report is reviewed.
 
 ## Evidence Summary
 
 | Source | Catalogue status | Evidence checked | Rights read | Recommendation |
 | --- | --- | --- | --- | --- |
-| CPAC Canada | Direct HLS discovered, `personal_use_pending_review` | [CPAC terms of use](https://www.cpac.ca/terms-of-use) | CPAC grants only personal, non-commercial viewing on CPAC.ca and prohibits retransmission, embedding, hotlinking, inline linking, scraping, caching, and other uses without prior written consent. | Link to CPAC.ca only unless written consent is obtained. |
-| Denmark Folketinget | Direct HLS discovered, `personal_use_pending_review` | [Deling og rettigheder](https://www.ft.dk/da/aktuelt/tv-fra-folketinget/deling-og-rettigheder) | Strong support. Folketinget states TV productions may be used and shared subject to conditions, grants broad royalty-free rights across media/formats, permits public digital performance/webcast, and lists attribution/no-modification/no-endorsement limitations. | Strong reuse candidate if attribution and licence conditions are represented. |
-| Quebec National Assembly canal01-canal14 | Direct HLS discovered, `noncommercial_pending_review` | [Live webdiffusion](https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html), [conditions d'utilisation](https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html) | Strong but bounded. Terms cover videos/audio and permit free reproduction if reasonable, fair, non-commercial/non-lucrative, unmodified, non-prejudicial, and credited. Debate reproduction for diffusion does not require authorization subject to Assembly law sections 48 and 49; other uses need authorization. | Possible for non-commercial catalogue/reuse with visible credit and no modification. Written clarification would reduce risk. |
+| CPAC Canada | Direct HLS discovered, `no_third_party_reuse` | [CPAC terms of use](https://www.cpac.ca/terms-of-use) | CPAC grants only personal, non-commercial viewing on CPAC.ca and prohibits retransmission, embedding, hotlinking, inline linking, scraping, caching, and other uses without prior written consent. | Link to CPAC.ca only. Use the recorded HLS in a third-party player only with written consent. |
+| Denmark Folketinget | Direct HLS discovered, `explicit_reuse_with_conditions` | [Deling og rettigheder](https://www.ft.dk/da/aktuelt/tv-fra-folketinget/deling-og-rettigheder) | Folketinget grants a global, royalty-free, non-exclusive right to reproduce, disseminate, publicly show, and transmit its TV productions across media and formats, including webcasts. The terms require attribution, a link to the terms, no modification except technically necessary changes, no implied endorsement, no logo use, and no access restrictions inconsistent with the licence. | Native playback is allowed when those conditions are shown and followed. |
+| Quebec National Assembly canal01-canal14 | Direct HLS discovered, `explicit_reuse_with_conditions` | [Live webdiffusion](https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html), [conditions d'utilisation](https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html) | Terms cover videos/audio and permit free reproduction when reasonable, fair, non-commercial/non-lucrative, unmodified, non-prejudicial, and credited. Reproducing Assembly, committee, or subcommittee debates in whole or part for dissemination needs no authorization, subject to the Assembly Act. | Native playback is allowed for this non-commercial catalogue with the visible credit “Assemblée nationale du Québec”, no modification, no logo use, and no implication of endorsement. |
 | Ontario Legislative Assembly streams | Direct HLS discovered, `noncommercial_pending_review` | [Live House video](https://www.ola.org/en/legislative-business/video), [copyright and privacy](https://www.ola.org/en/office-assembly/copyright-privacy) | Moderate support. Terms define electronic channels to include video streaming services and permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, subject to IP law and parliamentary privilege. | Use cautiously. Full live-stream relay is less clearly covered than excerpts; written clarification is recommended. |
-| Brazil TV Camara | Direct HLS discovered, `explicit_reuse_with_conditions` | [TV Camara page](https://www.camara.leg.br/tv/), [terms of use](https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade) | Promising but incomplete. The Camara portal terms allow free reproduction of published data, images, infographics, and information with source/author credit, and state portal information is public and free to reproduce. The same terms also note YouTube API terms for videos on the portal. | Keep as promising but confirm TV Camara-specific stream reuse before treating the HLS endpoint as redistributable. |
-| Spain Congreso en Directo / Canal Parlamento | Direct HLS discovered, `explicit_reuse_with_conditions` | [Congreso en directo](https://www.congreso.es/es/web/guest/congreso-en-directo), [Canal Parlamento information](https://www.congreso.es/es/cem/mas-informacion), [FAQs](https://www.congreso.es/es/cem/faqs) | Strong rights support. Official pages state Congreso en Directo provides Plenary and up to five committee/live signals through the Congress website. FAQ text says the institutional signal is distributed free to media and citizens, and videos can be downloaded and used freely after sessions. The five committee HLS masters returned 200 but sample variants returned 404 on 2026-07-29. | Keep the existing Canal Parlamento entry as validated; keep newly added committee HLS masters in technical review until variant playback is confirmed. |
+| Brazil TV Camara | Direct HLS discovered, `personal_use_pending_review` | [TV Camara page](https://www.camara.leg.br/tv/), [terms of use](https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade) | The Camara portal terms allow reproduction of public portal information with source/author credit, but do not clearly authorize third-party native playback of the recorded TV Camara HLS endpoint. The terms also direct portal video use to YouTube terms where applicable. | Link to the official TV Camara page until it confirms a native-HLS reuse path. |
+| Spain Congreso en Directo / Canal Parlamento | Direct HLS discovered, `personal_use_pending_review` | [Congreso en directo](https://www.congreso.es/es/web/guest/congreso-en-directo), [Canal Parlamento information](https://www.congreso.es/es/cem/mas-informacion), [FAQs](https://www.congreso.es/es/cem/faqs) | Official pages state Congreso en Directo provides Plenary and up to five committee/live signals through the Congress website. The FAQ says the institutional signal is distributed free to media and citizens, while videos may be downloaded and used freely after sessions. That is strong support for official access and archive reuse, but it does not clearly authorize a third-party raw-live-HLS player. | Link to the official source for live use. Keep the existing validated endpoint and committee HLS masters as technical/provenance records only. |
 | Ireland Oireachtas TV | Official embed/link-out, `explicit_reuse_with_conditions` | [Oireachtas TV](https://www.oireachtas.ie/en/oireachtas-tv/), [embed codes](https://www.oireachtas.ie/en/oireachtas-tv/embed-codes/), [committee schedule](https://www.oireachtas.ie/en/committees/schedule/) | Official page provides live streams and embed codes for Oireachtas TV, Dail, Seanad, and committee rooms. Use is subject to rules of coverage and required credit to the Houses of the Oireachtas Service. Raw HLS URLs returned 403 from this validation environment. | Use official embed codes or link out; do not list raw HLS unless a source-supported direct playback path is confirmed. |
-| New Zealand Parliament TV | Direct HLS discovered, `personal_use_pending_review` | [Parliament in action portal](https://videos.parliament.nz/), [New Zealand Parliament homepage](https://www.parliament.nz/) | Official video portal found, but no current explicit reuse or native-stream permission found in this pass. | Treat as pending/link-out until terms or permission are found. |
+| New Zealand Parliament TV | Direct HLS discovered, `explicit_reuse_with_conditions` | [Parliament TV terms](https://www3.parliament.nz/en/get-involved/information-for-the-press/parliament-tv-terms-and-conditions/), [copyright](https://www3.parliament.nz/en/footer/copyright/) | Parliament TV terms expressly permit television broadcast, webcast, and recording of live House proceedings in other media. Use must comply with legal obligations, contain no commercial sponsorship or advertising, and not mislead; Parliament may direct a broadcaster to stop or alter coverage. The copyright page says the specific Parliament TV terms govern, rather than a Creative Commons licence. | Native playback is allowed for this ad-free, unmodified catalogue with clear attribution and source terms. Do not continue use contrary to a Parliament direction. |
 | UK Parliament YouTube | Link-out, `embed_only` | [UK Parliament YouTube](https://www.youtube.com/UKParliament) | Link-out only. The project does not extract YouTube manifests. | Use official YouTube links or compliant embeds only. |
 | Australia Parliament Live YouTube | Link-out, `embed_only` | [AUS Parliament Live](https://www.youtube.com/@AUSParliamentLive) | Link-out only. The project does not extract YouTube manifests. | Use official YouTube links or compliant embeds only. |
 | Taiwan Parliamentary TV | Link-out, `embed_only` | [Parliamentary TV](https://www.parliamentarytv.org.tw/) | Link-out only in the current catalogue. Terms not yet reviewed. | Keep link-out only pending terms review. |
@@ -67,18 +53,26 @@ The conservative catalogue posture is:
 ## Pending Rights Review
 
 These sources are public or official-looking, but this file does not yet
-contain enough documentary evidence for confident reuse. Until each has a terms
-page, licence, or written permission record, treat it as a research entry rather
-than a redistributable native stream.
+contain enough documentary evidence for confident reuse. Their rights status is
+still unresolved even where the public site makes a technically validated
+direct endpoint playable under its opt-out policy.
+
+This status can also mean that terms exist but authorize a different route than
+the discovered endpoint: an official embed, a requested broadcast feed, or
+post-session video. It does not mean that the project is waiting for a response
+from the source.
+
+The recommendations below describe the safest documented route; they do not
+override the public site's technical playback gate.
 
 | Source | Catalogue ids | Current status | Official page | Recommendation |
 | --- | --- | --- | --- | --- |
-| Netherlands Tweede Kamer | `netherlands-tweede-kamer` | `personal_use_pending_review` | https://www.tweedekamer.nl/debat_en_vergadering/livedebat | Link-out/pending |
-| Norway Stortinget | `norway-stortinget` | `personal_use_pending_review` | https://www.stortinget.no/nett-tv | Link-out/pending until terms or permission are documented |
+| Netherlands Tweede Kamer | `netherlands-tweede-kamer` | `personal_use_pending_review` | https://www.tweedekamer.nl/debat_en_vergadering/livedebat | The Kamer's [audiovisual material guidance](https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen) permits recognised media to use the official download/embed service for journalistic use. It does not document public use of the catalogued raw HLS endpoint. Use the official service or link out. |
+| Norway Stortinget | `norway-stortinget` | `personal_use_pending_review` | https://www.stortinget.no/nett-tv | The [retransmission terms](https://www.stortinget.no/no/Stottemeny/Hjelp/Nett-TV/Videreformidling-av-Stortingets-nett-TV/) require a formal arrangement and a dedicated publication point. Link out, or obtain that arrangement before enabling third-party playback. |
 | France National Assembly | `france-national-assembly` | `personal_use_pending_review` | https://videos.assemblee-nationale.fr/direct.php | Link-out/pending |
 | Chile Camara TV | `chile-camara-tv` | `personal_use_pending_review` | https://www.camara.cl/prensa/television.aspx | Link-out/pending until terms or permission are documented |
 | Israel Knesset Channel | `israel-knesset-channel` | `personal_use_pending_review` | https://www.knesset.tv/live/ | Link-out/pending until terms or permission are documented |
-| Germany Bundestag 1 | `germany-bundestag-1` | `personal_use_pending_review` | https://www.bundestag.de/mediathek | Link-out/pending until terms or permission are documented |
+| Germany Bundestag 1 | `germany-bundestag-1` | `personal_use_pending_review` | https://www.bundestag.de/mediathek | [Bundestag terms](https://www.bundestag.de/resource/blob/296016/nutzungsbedingungen_de.pdf) permit archive downloads/embeds under conditions and offer a live signal to third parties on request. Do not treat the browser-discovered raw HLS as that requested signal; use an official embed, link out, or request the live route. |
 | Portugal ARTV Canal Parlamento | `portugal-artv` | `personal_use_pending_review` | https://www.parlamento.pt/ | Link-out/pending |
 | Greece Hellenic Parliament TV | `greece-hellenic-parliament-tv` | `personal_use_pending_review` | https://www.hellenicparliament.gr/ | Link-out/pending |
 | Luxembourg Chamber TV | `luxembourg-chamber-tv` | `personal_use_pending_review` | https://www.chd.lu/ | Link-out/pending; endpoint was unreachable from the 2026-08-14 validation environment |

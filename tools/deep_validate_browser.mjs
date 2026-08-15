@@ -15,36 +15,32 @@ function loadPlaywright() {
   }
 }
 
-const { chromium } = loadPlaywright();
-
 const USER_AGENT =
   "parliament-streams-deep-validation/0.1 (+https://github.com/dlq/parliament-streams)";
 const PAGE_TIMEOUT_MS = 20_000;
 const SETTLE_MS = 5_000;
 const MAX_PAGES_PER_COUNTRY = 4;
 
-const DEFAULT_REPORT_INPUTS = [
-  "reports/health/2026-07-29-tier1-democracy-hls.json",
-  "reports/health/2026-07-29-tier2-democracy-hls.json",
-];
-const DEFAULT_REPORT_OUTPUT = "reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json";
-
 function parseArgs(argv) {
-  const args = {
-    inputs: [...DEFAULT_REPORT_INPUTS],
-    output: DEFAULT_REPORT_OUTPUT,
-  };
+  const args = { inputs: [], output: null };
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     if (arg === "--input") {
-      args.inputs = argv[index + 1].split(",");
+      const input = argv[index + 1];
+      if (!input) throw new Error("--input requires a report path.");
+      args.inputs.push(...input.split(","));
       index += 1;
     } else if (arg === "--output") {
-      args.output = argv[index + 1];
+      const output = argv[index + 1];
+      if (!output) throw new Error("--output requires a report path.");
+      args.output = output;
       index += 1;
     } else {
       throw new Error(`Unknown argument: ${arg}`);
     }
+  }
+  if (!args.inputs.length || !args.output) {
+    throw new Error("Usage: node tools/deep_validate_browser.mjs --input REPORT [--input REPORT] --output REPORT");
   }
   return args;
 }
@@ -201,6 +197,7 @@ async function inspectPage(browser, target, pageUrl) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  const { chromium } = loadPlaywright();
   const targets = await collectTargets(args.inputs);
   const browser = await chromium.launch({ headless: true });
   const pageResults = [];

@@ -1,4 +1,4 @@
-# Parliaments Plan
+# Parliaments Plans
 
 This is the live plan for Parliaments as a documentation and data project. The
 current repository should be optimized for public research, source provenance,
@@ -33,7 +33,7 @@ Done:
   and recommendations.
 - `docs/sources-and-provenance.md` explains repository license scope and
   external-source limitations.
-- `research.md` remains the working evidence log for stream discovery.
+- `NOTES.md` remains the working evidence log for stream discovery.
 - Democracy-priority Tier 1, Tier 2, and Tier 3 stream checks were refreshed on
   2026-07-29, with detailed JSON reports under `reports/health/`.
 - A deeper browser/player validation pass for Tier 1 and Tier 2 official pages
@@ -49,6 +49,9 @@ Done:
   that pass.
 - CI and `make verify` now validate JSON, compile Python modules, and run the
   contract tests.
+- `site/` provides a build-free GitHub Pages catalogue driven by the canonical
+  JSON data, with client-side playback only for eligible validated endpoints.
+- The 2026-08-15 catalogue/review reports record the latest validation pass.
 
 Retired from the active project:
 
@@ -65,8 +68,8 @@ Near-term:
    catalogue entries without copying transient HTTP details into every channel.
 2. Split repeated permission summaries into a normalized `data/permissions.json`
    only if the inline channel entries become hard to review.
-3. Add explicit schemas for stream/source entries, permission evidence, EPG
-   scrape surfaces, validation history, and generated reports.
+3. Complete schema coverage for validation history and generated reports beyond
+   the existing channel, permission, and EPG definitions.
 4. Distinguish first-party, official-vendor, platform, and third-party relay
    endpoints explicitly.
 5. Add a source freshness field for URLs that are likely to drift.
@@ -81,9 +84,8 @@ Near-term:
 
 Later:
 
-1. Build a small static catalogue view from `data/channels.json`.
-2. Publish periodic validation reports without republishing external content.
-3. Add CSV exports for source, endpoint, permission, and EPG inventories.
+1. Publish periodic validation reports without republishing external content.
+2. Add CSV exports for source, endpoint, permission, and EPG inventories.
 
 ## Scraper Work
 
@@ -115,6 +117,31 @@ Candidate future scrapers:
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
    catalogue starts expanding beyond national/supranational coverage.
 
+### Browser-Side EPG Enrichment
+
+Browser-side schedule fetching is not a general replacement for the Python
+scrapers. A 2026-08-15 CORS check of the 23 unique recorded EPG URLs found only
+two sources that return `Access-Control-Allow-Origin: *`:
+
+- EU Audiovisual Service / EBS: `https://audiovisual.ec.europa.eu/en`
+- European Parliament Multimedia Centre:
+  `https://multimedia.europarl.europa.eu/en/webstreaming`
+
+Neither surface has yet been validated as a stable, parseable browser-side EPG
+feed. The other 21 sources do not currently permit browser cross-origin reads,
+even where their pages are publicly reachable. Any future in-page enrichment
+must be optional and limited to sources that explicitly allow it; collected
+Python inputs and generated catalogue data remain the canonical approach.
+
+### Deferred Locale Work
+
+Before adding Mongolian or Hebrew as selectable site locales, review their
+catalogue scan order, label lengths, sorting, and the compact detail grid at
+desktop and mobile widths. Hebrew also requires a deliberate right-to-left
+layout pass, including column alignment, icon/flag placement, punctuation,
+external-link markers, and player controls. Do not expose either locale merely
+because the catalogue records content in that language.
+
 ## Rights And Permission Work
 
 Near-term:
@@ -129,7 +156,7 @@ Near-term:
    becomes too long for readers who only need the current posture.
 4. Record written permission requests and responses as summarized evidence, not
    raw private correspondence.
-5. Keep CPAC marked link-out/pending unless written consent is obtained.
+5. Keep CPAC marked `no_third_party_reuse` unless written consent is obtained.
 6. Keep YouTube sources link-out or compliant-embed only; do not extract
    YouTube manifests.
 
@@ -151,5 +178,5 @@ Useful advocacy asks:
 - CORS/browser compatibility;
 - explicit off-air and no-signal status.
 
-Detailed discovery history belongs in `research.md`; action-oriented next steps
+Detailed discovery history belongs in `NOTES.md`; action-oriented next steps
 belong here.

@@ -1,4 +1,4 @@
-.PHONY: verify test json-check compile format lint healthcheck
+.PHONY: verify test json-check compile format lint healthcheck site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --extra dev
@@ -25,3 +25,6 @@ test:
 
 healthcheck:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m parliament_streams.healthcheck
+
+site:
+	python3 -m http.server 8000

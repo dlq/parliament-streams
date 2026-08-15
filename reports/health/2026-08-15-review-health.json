@@ -1,0 +1,196 @@
+{
+  "catalogue": "data/channels.json",
+  "checked_at": "2026-08-15T18:28:10Z",
+  "counts": {
+    "error": 4,
+    "ok": 1,
+    "warning": 6
+  },
+  "results": [
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:27:48Z",
+      "content_type": "application/x-mpegURL",
+      "final_url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
+      "hls_media_playlist_count": 0,
+      "hls_variant_count": 1,
+      "http_status": 200,
+      "id": "spain-congreso-directo-1",
+      "note": "HLS master detected, but sample variant check failed.",
+      "sample_variant": {
+        "attempts": 1,
+        "content_type": "application/json",
+        "final_url": "https://congresodirecto.akamaized.net/hls/live/2038274-b/canal1/bitrate_1.m3u8",
+        "http_status": 404,
+        "looks_like_hls": false,
+        "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/bitrate_1.m3u8"
+      },
+      "source_type": "direct_hls",
+      "status": "warning",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:27:49Z",
+      "content_type": "application/x-mpegURL",
+      "final_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+      "hls_media_playlist_count": 0,
+      "hls_variant_count": 1,
+      "http_status": 200,
+      "id": "spain-congreso-directo-2",
+      "note": "HLS master detected, but sample variant check failed.",
+      "sample_variant": {
+        "attempts": 1,
+        "content_type": "application/json",
+        "final_url": "https://congresodirecto.akamaized.net/hls/live/2038275-b/canal2/bitrate_1.m3u8",
+        "http_status": 404,
+        "looks_like_hls": false,
+        "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/bitrate_1.m3u8"
+      },
+      "source_type": "direct_hls",
+      "status": "warning",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:27:51Z",
+      "content_type": "application/x-mpegURL",
+      "final_url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
+      "hls_media_playlist_count": 0,
+      "hls_variant_count": 1,
+      "http_status": 200,
+      "id": "spain-congreso-directo-3",
+      "note": "HLS master detected, but sample variant check failed.",
+      "sample_variant": {
+        "attempts": 1,
+        "content_type": "application/json",
+        "final_url": "https://congresodirecto.akamaized.net/hls/live/2038276-b/canal3/bitrate_1.m3u8",
+        "http_status": 404,
+        "looks_like_hls": false,
+        "url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/bitrate_1.m3u8"
+      },
+      "source_type": "direct_hls",
+      "status": "warning",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:27:52Z",
+      "content_type": "application/x-mpegURL",
+      "final_url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
+      "hls_media_playlist_count": 0,
+      "hls_variant_count": 1,
+      "http_status": 200,
+      "id": "spain-congreso-directo-4",
+      "note": "HLS master detected, but sample variant check failed.",
+      "sample_variant": {
+        "attempts": 1,
+        "content_type": "application/json",
+        "final_url": "https://congresodirecto.akamaized.net/hls/live/2038277-b/canal4/bitrate_1.m3u8",
+        "http_status": 404,
+        "looks_like_hls": false,
+        "url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/bitrate_1.m3u8"
+      },
+      "source_type": "direct_hls",
+      "status": "warning",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:27:52Z",
+      "content_type": "application/x-mpegURL",
+      "final_url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
+      "hls_media_playlist_count": 0,
+      "hls_variant_count": 1,
+      "http_status": 200,
+      "id": "spain-congreso-directo-5",
+      "note": "HLS master detected, but sample variant check failed.",
+      "sample_variant": {
+        "attempts": 1,
+        "content_type": "application/json",
+        "final_url": "https://congresodirecto.akamaized.net/hls/live/2038278-b/canal5/bitrate_1.m3u8",
+        "http_status": 404,
+        "looks_like_hls": false,
+        "url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/bitrate_1.m3u8"
+      },
+      "source_type": "direct_hls",
+      "status": "warning",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:27:54Z",
+      "content_type": "application/vnd.apple.mpegurl",
+      "final_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "http_status": 200,
+      "id": "france-national-assembly",
+      "note": "Response did not start with #EXTM3U.",
+      "source_type": "direct_hls",
+      "status": "warning",
+      "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8"
+    },
+    {
+      "attempts": 2,
+      "checked_at": "2026-08-15T18:27:54Z",
+      "content_type": null,
+      "final_url": null,
+      "http_status": null,
+      "id": "luxembourg-chamber-tv",
+      "note": "<urlopen error [Errno 51] Network is unreachable>",
+      "source_type": "direct_hls",
+      "status": "error",
+      "url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:28:07Z",
+      "content_type": "application/dash+xml",
+      "final_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+      "http_status": 200,
+      "id": "mongolia-parliament-tv",
+      "note": "DASH MPD detected.",
+      "source_type": "direct_dash",
+      "status": "ok",
+      "url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:28:08Z",
+      "content_type": "text/html",
+      "final_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
+      "http_status": 404,
+      "id": "ontario-house-en-cc",
+      "note": "HTTP 404",
+      "source_type": "direct_hls",
+      "status": "error",
+      "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8"
+    },
+    {
+      "attempts": 2,
+      "checked_at": "2026-08-15T18:28:08Z",
+      "content_type": null,
+      "final_url": null,
+      "http_status": null,
+      "id": "el-salvador-legislative-assembly",
+      "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+      "source_type": "direct_hls",
+      "status": "error",
+      "url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8"
+    },
+    {
+      "attempts": 1,
+      "checked_at": "2026-08-15T18:28:09Z",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.coe.int/en/web/portal/live",
+      "http_status": 403,
+      "id": "council-of-europe-pace-live",
+      "note": "HTTP 403",
+      "source_type": "official_page",
+      "status": "error",
+      "url": "https://www.coe.int/en/web/portal/live"
+    }
+  ],
+  "retries": 1,
+  "timeout_seconds": 12,
+  "total": 11
+}

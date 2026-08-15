@@ -6,14 +6,17 @@ legislature, broadcaster, streaming vendor, or video platform.
 
 ## Code License Scope
 
-The repository license covers the project code and documentation written for this repository.
+The repository licence covers the project code and documentation written for
+this repository. Local third-party visual assets have their own recorded terms:
+see `site/assets/flags/ATTRIBUTION.md` and its accompanying licence file.
 
 It does not grant rights to:
 
 - parliamentary broadcast video;
 - official logos, coats of arms, seals, watermarks, or marks;
 - official website screenshots;
-- third-party player assets;
+- third-party player assets, except local assets whose separate terms are
+  recorded in their attribution files;
 - stream URLs or schedule data owned or operated by external bodies;
 - YouTube pages, thumbnails, metadata, or embedded player behavior.
 
@@ -50,14 +53,17 @@ catalogue.
 
 ## Legal and Terms Posture
 
-The catalogue uses conservative labels such as personal-use pending review,
-noncommercial pending review, explicit reuse with conditions, and embed-only.
-These are research notes, not legal advice.
+The catalogue uses labels such as personal-use pending review, noncommercial
+pending review, explicit reuse with conditions, embed-only, and no third-party
+reuse. These are research notes, not legal advice.
 
 Maintain the source-by-source evidence in
 [`source-rights-and-permissions.md`](source-rights-and-permissions.md). Public
-availability is not enough by itself for redistribution, embedding, native
-playback, or a third-party catalogue.
+availability alone is not a licence or other grant of rights. The public site
+nevertheless offers technically validated direct endpoints under its opt-out
+playback policy unless recorded terms expressly prohibit third-party reuse.
+Source owners can request prompt removal through the repository owner on
+GitHub.
 
 Before using this catalogue outside research or advocacy:
 
@@ -69,7 +75,7 @@ Before using this catalogue outside research or advocacy:
 
 ## Research Log
 
-`research.md` is a working log. It contains validated findings, failed checks,
+`NOTES.md` is a working log. It contains validated findings, failed checks,
 speculative candidates, external references, browser-discovered manifests, and
 older observations that can become stale. It should not be treated as a
 polished public registry.

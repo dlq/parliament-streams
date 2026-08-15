@@ -1,15 +1,21 @@
 # Privacy
 
-Parliaments is a documentation and data repository. It does not operate a
-hosted service, user account system, analytics pipeline, telemetry SDK, push
-notification system, or sync backend.
+Parliaments is a documentation and data repository with a static GitHub Pages
+catalogue. It does not operate user accounts, analytics, telemetry, push
+notifications, a server-side stream proxy, or a sync backend.
+
+The static page is served by GitHub Pages. It loads the catalogue JSON from the
+same published repository and, when a visitor chooses playback, may load
+`hls.js` from jsDelivr and request a selected source's public stream directly.
+GitHub, jsDelivr, and the selected source may apply their own logging, cookies,
+geolocation rules, and terms; they are not controlled by this project.
 
 The tracked repository contains public source URLs, official page URLs,
 schedule/EPG endpoint notes, and research documentation. It should not contain
 private correspondence, credentials, secrets, API keys, or personal viewing
 history.
 
-Future fetch or validation scripts may make network requests to official
+Fetch or validation scripts may make network requests to official
 source pages, schedule pages, stream endpoints, YouTube pages, or streaming
 vendor infrastructure. Those services may have their own logging, cookies,
 tracking, geolocation rules, account prompts, or terms. They are not controlled
