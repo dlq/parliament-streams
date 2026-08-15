@@ -211,8 +211,9 @@ The Makefile uses `uv run --extra dev`, so contributors get a Python 3.11+
 environment and the pinned Ruff version from `uv.lock` instead of relying on a
 system Python.
 
-This runs JSON validation, Ruff linting, Python import/compile checks, and the
-unit suite with a 90% minimum branch-coverage gate for `parliament_streams/`.
+This runs JSON validation, Ruff formatting and lint checks, Python
+import/compile checks, and the unit suite with a 90% minimum branch-coverage
+gate for `parliament_streams/`.
 
 Format Python sources with:
 
