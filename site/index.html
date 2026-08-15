@@ -47,18 +47,23 @@
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
             <input id="search" type="search" autocomplete="off" placeholder="Search country, legislature, or channel">
           </label>
-          <label>
-            <span class="visually-hidden" id="jurisdiction-label">Jurisdiction</span>
-            <select id="level-filter"><option value="">All jurisdictions</option></select>
-          </label>
-          <label>
-            <span class="visually-hidden" id="source-type-label">Source type</span>
-            <select id="format-filter"><option value="">All source types</option></select>
-          </label>
-          <label>
-            <span class="visually-hidden" id="use-guidance-label">Use guidance</span>
-            <select id="rights-filter"><option value="">All rights statuses</option></select>
-          </label>
+          <details class="filter-disclosure" open>
+            <summary><span id="filters-label">Filters</span><span class="filter-summary-icon" aria-hidden="true">⌄</span></summary>
+            <div class="filter-controls">
+              <label>
+                <span class="visually-hidden" id="jurisdiction-label">Jurisdiction</span>
+                <select id="level-filter"><option value="">All jurisdictions</option></select>
+              </label>
+              <label>
+                <span class="visually-hidden" id="source-type-label">Source type</span>
+                <select id="format-filter"><option value="">All source types</option></select>
+              </label>
+              <label>
+                <span class="visually-hidden" id="use-guidance-label">Use guidance</span>
+                <select id="rights-filter"><option value="">All rights statuses</option></select>
+              </label>
+            </div>
+          </details>
         </form>
 
         <p class="results-count" id="results-count" aria-live="polite"></p>
@@ -112,6 +117,8 @@
       <a id="about-link" href="https://github.com/dlq/parliament-streams/blob/main/README.md" target="_blank" rel="noreferrer">About the project</a>
     </footer>
 
-    <script type="module" src="app.js?v=20260815-2"></script>
+    <script defer src="catalogue-data.js"></script>
+    <script defer src="i18n.js"></script>
+    <script defer src="app.js?v=20260815-7"></script>
   </body>
 </html>

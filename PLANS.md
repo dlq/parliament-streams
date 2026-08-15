@@ -47,6 +47,9 @@ Done:
   German, Spanish, and Mexican regional legislature targets on 2026-08-14;
   Nunavut is now the only new validated direct-HLS catalogue promotion from
   that pass.
+- Scottish Parliament TV, Senedd TV, and Northern Ireland Assembly TV are now
+  represented as official-page and schedule entries; direct playback remains
+  intentionally disabled without a documented supported route.
 - CI and `make verify` now validate JSON, compile Python modules, and run the
   contract tests.
 - `site/` provides a build-free GitHub Pages catalogue driven by the canonical
@@ -79,8 +82,28 @@ Near-term:
    in a separate events/fallback dataset instead of the channel catalogue.
 8. Decide whether supranational institutions need a separate `entity_type` or
    `institution_family` field, because they are not country-level legislatures.
-9. Decide whether sub-national institutions should get separate expansion
-   criteria before adding many official-page/link-out entries.
+9. Define separate expansion criteria for sub-national institutions before
+   adding official-page/link-out entries beyond the current curated set.
+
+Strong candidates for the next sub-national pass:
+
+1. Add official-page and schedule entries for British Columbia, Alberta,
+   Saskatchewan, Manitoba, Prince Edward Island, Northwest Territories, and
+   Newfoundland and Labrador. Treat obsolete direct endpoints separately from
+   otherwise useful official webcast and calendar pages.
+2. Add official-page and schedule entries for New South Wales, Victoria,
+   Queensland, and Western Australia after recording each parliament's
+   broadcast conditions and attribution requirements.
+3. Review North Rhine-Westphalia, Bavaria, and Catalonia as official-player and
+   schedule candidates with source-specific permission notes.
+4. Recheck Jalisco's validated HLS for first-party provenance and reuse terms;
+   promote it only if it can be tied clearly to the Congreso de Jalisco.
+5. Keep Colima separate as a legislature-adjacent regional broadcaster unless
+   stronger evidence establishes a parliamentary channel relationship.
+6. Revisit Baden-Wurttemberg, Valencia, Andalucia, and Navarre during active
+   sittings. Their previous direct-stream candidates were unavailable, timed
+   out, refused connections, or returned 404 and should not be promoted from
+   stale endpoint evidence.
 
 Later:
 

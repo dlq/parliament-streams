@@ -120,6 +120,24 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertIn("summary", channel["permission"])
                 self.assertIn("evidence", channel["permission"])
 
+    def test_uk_devolved_legislatures_are_documented_as_link_out_sources(self):
+        expected_permissions = {
+            "scottish-parliament-tv": "explicit_reuse_with_conditions",
+            "senedd-tv": "explicit_reuse_with_conditions",
+            "northern-ireland-assembly-tv": "no_third_party_reuse",
+        }
+        channels = {channel["id"]: channel for channel in self.channels}
+
+        for channel_id, permission_status in expected_permissions.items():
+            with self.subTest(channel=channel_id):
+                channel = channels[channel_id]
+                self.assertEqual(channel["jurisdiction_level"], "subnational")
+                self.assertEqual(channel["source_type"], "official_page")
+                self.assertEqual(channel["technical_status"], "link_only")
+                self.assertIsNone(channel["playback_url"])
+                self.assertEqual(channel["permission"]["status"], permission_status)
+                self.assertTrue(channel["epg_sources"])
+
     def test_epg_sources_are_declared_with_scraper_ids(self):
         epg_sources = [channel for channel in self.channels if channel.get("epg_sources")]
 

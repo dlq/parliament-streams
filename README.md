@@ -88,23 +88,25 @@ means the source terms expressly rule out a third-party player without separate
 permission. Source owners can request prompt removal through the repository
 owner on GitHub.
 
-The deploy workflow in `.github/workflows/pages.yml` publishes only the site
-files and the canonical `data/channels.json` data artifact. To enable it once
+The deploy workflow in `.github/workflows/pages.yml` publishes the site files
+and the canonical `data/channels.json` data artifact. To enable it once
 on GitHub, set **Settings → Pages → Build and deployment → Source** to
 **GitHub Actions**. Thereafter pushes affecting `site/` or `data/channels.json`
 publish the updated page.
 
-For a local preview, serve the repository root rather than opening the HTML
-file directly:
+For a quick local preview, open `site/index.html` directly. The checked-in
+`site/catalogue-data.js` snapshot allows the page to work without a local
+server. It is generated from the canonical JSON and checked for drift by CI.
+
+To preview the hosted data-loading path instead, serve the repository root:
 
 ```sh
 make site
 ```
 
-Then visit `http://localhost:8000/site/`. The page reads the same canonical
-`data/channels.json` file used by the deployment workflow. A static server is
-needed because browsers do not permit module code opened through `file://` to
-fetch the adjacent JSON data reliably.
+Then visit `http://localhost:8000/site/`. The served page requests the same
+canonical `data/channels.json` file used by the deployment workflow and falls
+back to the generated snapshot if that request is unavailable.
 
 ## Languages
 
@@ -153,13 +155,15 @@ EBS, United Nations Web TV, Council of Europe / PACE Live, and OSCE Live. These
 are link-out/schedule targets; no stable raw HLS/DASH manifest was validated
 for them in the static or browser pass.
 
-The non-US sub-national pass reconfirmed that Canada is the strongest expansion
-cluster. Nunavut's Legislative Assembly TV HLS endpoint validated on 2026-08-14
-and is now recorded as a permission-pending direct HLS source. UK devolved
-parliaments, additional Canadian provincial/territorial assemblies, Australian
-states, German Landtage, Spanish autonomous parliaments, and selected Mexican
-regional channels remain research targets unless their direct stream paths and
-reuse terms are documented.
+The non-US sub-national pass reconfirmed that Canada is the strongest direct
+stream expansion cluster. Nunavut's Legislative Assembly TV HLS endpoint
+validated on 2026-08-14 and is recorded as a permission-pending direct HLS
+source. Scottish Parliament TV, Senedd TV, and Northern Ireland Assembly TV
+are now documented as official-page and schedule entries with source-specific
+rights guidance. Additional Canadian provincial/territorial assemblies,
+Australian states, German Landtage, Spanish autonomous parliaments, and
+selected Mexican regional channels remain research targets unless their
+official playback routes and reuse terms are documented.
 
 ## Python Scrapers
 
@@ -211,9 +215,15 @@ The Makefile uses `uv run --extra dev`, so contributors get a Python 3.11+
 environment and the pinned Ruff version from `uv.lock` instead of relying on a
 system Python.
 
-This runs JSON validation, Ruff formatting and lint checks, Python
-import/compile checks, and the unit suite with a 90% minimum branch-coverage
-gate for `parliament_streams/`.
+This runs JSON validation, checks that the direct-file site snapshot is current,
+checks Ruff formatting and linting, compiles Python modules, and runs the unit
+suite with a 90% minimum branch-coverage gate for `parliament_streams/`.
+
+After changing `data/channels.json`, refresh the direct-file snapshot with:
+
+```sh
+make site-data
+```
 
 Format Python sources with:
 

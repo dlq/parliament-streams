@@ -1,4 +1,4 @@
-.PHONY: verify test coverage json-check compile format format-check lint healthcheck site
+.PHONY: verify test coverage json-check site-data site-data-check compile format format-check lint healthcheck site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --extra dev
@@ -6,10 +6,16 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: json-check format-check lint compile coverage
+verify: json-check site-data-check format-check lint compile coverage
 
 json-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/channels.json >/dev/null
+
+site-data:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_site_data.py
+
+site-data-check:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_site_data.py --check
 
 compile:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m compileall $(PYTHON_SOURCES)

@@ -1,4 +1,5 @@
-export const locales = [
+(() => {
+const locales = [
   ["en", "English"], ["fr", "Français"], ["es", "Español"], ["pt-BR", "Português (Brasil)"],
   ["da", "Dansk"], ["de", "Deutsch"], ["et", "Eesti"], ["el", "Ελληνικά"],
   ["hi", "हिन्दी"], ["ga", "Gaeilge"], ["it", "Italiano"], ["lb", "Lëtzebuergesch"], ["nl", "Nederlands"], ["nb", "Norsk bokmål"], ["sk", "Slovenčina"],
@@ -11,7 +12,7 @@ const en = {
   nav: "Catalogue", language: "Language", research: "Public research catalogue",
   title: "Parliamentary video, documented.",
   lede: "Official stream endpoints, watch pages, schedule surfaces, and the evidence needed to judge how each source may be used.",
-  browse: "Browse sources", catalogue: "Catalogue", json: "View source JSON", search: "Search country, legislature, or channel",
+  browse: "Browse sources", catalogue: "Catalogue", json: "View source JSON", search: "Search country, legislature, or channel", filters: "Filters", close: "Close source details",
   allJur: "All jurisdictions", allTypes: "All source types", allUse: "All use guidance",
   source: "Source", jurisdiction: "Jurisdiction", format: "Format", contentLanguage: "Language", access: "Access", use: "Use",
   care: "Use with care", methodTitle: "Technical access and provider terms are different questions.",
@@ -192,20 +193,45 @@ Object.assign(shared, {
 shared.ga.openStreams = "Prionsabail sruthanna oscailte";
 shared.lb.openStreams = "Prinzipie fir oppe Streams";
 
-export function message(locale, key, values = {}) {
+const mobileLabels = {
+  fr: { filters: "Filtres", close: "Fermer les détails de la source" },
+  es: { filters: "Filtros", close: "Cerrar detalles de la fuente" },
+  "pt-BR": { filters: "Filtros", close: "Fechar detalhes da fonte" },
+  da: { filters: "Filtre", close: "Luk kildedetaljer" },
+  de: { filters: "Filter", close: "Quelldetails schließen" },
+  et: { filters: "Filtrid", close: "Sulge allika üksikasjad" },
+  el: { filters: "Φίλτρα", close: "Κλείσιμο λεπτομερειών πηγής" },
+  hi: { filters: "फ़िल्टर", close: "स्रोत विवरण बंद करें" },
+  ga: { filters: "Scagairí", close: "Dún sonraí na foinse" },
+  it: { filters: "Filtri", close: "Chiudi i dettagli della fonte" },
+  lb: { filters: "Filter", close: "Quelldetailer zoumaachen" },
+  nl: { filters: "Filters", close: "Brondetails sluiten" },
+  nb: { filters: "Filtre", close: "Lukk kildedetaljer" },
+  sk: { filters: "Filtre", close: "Zavrieť podrobnosti zdroja" },
+  th: { filters: "ตัวกรอง", close: "ปิดรายละเอียดแหล่งที่มา" },
+  "zh-Hans": { filters: "过滤器", close: "关闭来源详情" },
+  "iu-Cans": { filters: "ᓴᓗᒻᒪᖅᓴᐃᔾᔪᑎᑦ", close: "ᒪᑐᓗᒋᑦ ᑐᑭᓯᒋᐊᕐᕕᐅᑉ ᓇᓗᓇᐃᖅᓯᓂᖏᑦ" },
+  mi: { filters: "Ngā tātari", close: "Katia ngā taipitopito puna" },
+};
+Object.entries(mobileLabels).forEach(([locale, labels]) => Object.assign(shared[locale], labels));
+
+function message(locale, key, values = {}) {
   const value = shared[locale]?.[key] ?? en[key] ?? key;
   if (typeof value !== "string") return value;
   return value.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");
 }
 
-export function localizedLabel(locale, value) {
+function localizedLabel(locale, value) {
   return shared[locale]?.labels?.[value] ?? en.labels[value] ?? value.replaceAll("_", " ");
 }
 
-export function supportedLocale(candidate) {
+function supportedLocale(candidate) {
   if (!candidate) return "en";
   const exact = locales.find(([code]) => code.toLocaleLowerCase() === candidate.toLocaleLowerCase());
   if (exact) return exact[0];
   const language = candidate.split("-")[0].toLocaleLowerCase();
   return locales.find(([code]) => code.split("-")[0] === language)?.[0] ?? "en";
 }
+
+window.ParliamentStreamsI18n = { locales, localizedLabel, message, supportedLocale };
+})();

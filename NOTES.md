@@ -1213,3 +1213,20 @@ Best next sub-national expansion order:
    restrictive broadcast conditions.
 5. Spain/Mexico: keep as lower-priority regional clusters until official
    provenance and reuse language are clearer.
+
+## 2026-08-15 UK devolved legislature catalogue additions
+
+Added Scottish Parliament TV, Senedd TV, and Northern Ireland Assembly TV as
+sub-national `official_page` entries. Each records an official live/archive
+surface and at least one schedule source; no stable direct HLS/DASH endpoint is
+claimed.
+
+- Scottish Parliament TV is link-out with `explicit_reuse_with_conditions`.
+  The Scottish Parliament Copyright Licence supports reuse with attribution,
+  while separate clip guidance and the no-framing condition still apply.
+- Senedd TV is link-out with `explicit_reuse_with_conditions`. Commission
+  copyright terms support acknowledged reuse and Senedd-provided clip sharing
+  or embedding, but prohibit framing official pages.
+- Northern Ireland Assembly TV is link-out with `no_third_party_reuse` because
+  published copyright guidance requires formal agreement for direct linking,
+  reproduction, copying, or downloading of live and archive proceedings.

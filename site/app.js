@@ -1,17 +1,20 @@
-// The deployed Pages artifact places its JSON beside this module; local source
+(() => {
+// The deployed Pages artifact places its JSON beside this script; local server
 // previews serve the repository's data directory one level above site/.
-import { locales, localizedLabel, message, supportedLocale } from "./i18n.js";
+const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
 
-const catalogueUrl = new URL("./data/channels.json", import.meta.url);
-const localCatalogueUrl = new URL("../data/channels.json", import.meta.url);
+const appScriptUrl = document.currentScript?.src ?? window.location.href;
+const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
+const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
 const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], selectedId: null, hls: null, generatedOn: "", locale: initialLocale, sort: { key: "source", direction: "ascending" } };
+const state = { channels: [], selectedId: null, hls: null, generatedOn: "", locale: initialLocale, mobileDetailOpen: false, sort: { key: "source", direction: "ascending" } };
 const elements = {
   stats: document.querySelector("#catalogue-stats"),
   list: document.querySelector("#channel-list"),
   detail: document.querySelector("#detail-panel"),
+  filterDisclosure: document.querySelector(".filter-disclosure"),
   count: document.querySelector("#results-count"),
   search: document.querySelector("#search"),
   level: document.querySelector("#level-filter"),
@@ -50,10 +53,13 @@ const jurisdictionFlagAssets = {
   Norway: "assets/flags/no.svg",
   Portugal: "assets/flags/pt.svg",
   Quebec: "assets/flags/quebec.svg",
+  Scotland: "assets/flags/scotland.svg",
   Slovakia: "assets/flags/sk.svg",
   Spain: "assets/flags/es.svg",
   Taiwan: "assets/flags/tw.svg",
   Thailand: "assets/flags/th.svg",
+  Wales: "assets/flags/wales.svg",
+  "Northern Ireland": "assets/flags/northern-ireland.svg",
   "United Kingdom": "assets/flags/gb.svg",
   "United Nations": "assets/flags/un.svg",
 };
@@ -97,11 +103,31 @@ const specialJurisdictionNames = {
   "zh-Hans": { "Council of Europe": "欧洲委员会", "United Nations": "联合国", OSCE: "欧洲安全与合作组织", Quebec: "魁北克", Ontario: "安大略", Nunavut: "努纳武特" },
 };
 
+const devolvedJurisdictionNames = {
+  da: { Scotland: "Skotland", Wales: "Wales", "Northern Ireland": "Nordirland" },
+  de: { Scotland: "Schottland", Wales: "Wales", "Northern Ireland": "Nordirland" },
+  el: { Scotland: "Σκωτία", Wales: "Ουαλία", "Northern Ireland": "Βόρεια Ιρλανδία" },
+  es: { Scotland: "Escocia", Wales: "Gales", "Northern Ireland": "Irlanda del Norte" },
+  et: { Scotland: "Šotimaa", Wales: "Wales", "Northern Ireland": "Põhja-Iirimaa" },
+  fr: { Scotland: "Écosse", Wales: "pays de Galles", "Northern Ireland": "Irlande du Nord" },
+  ga: { Scotland: "Albain", Wales: "an Bhreatain Bheag", "Northern Ireland": "Tuaisceart Éireann" },
+  hi: { Scotland: "स्कॉटलैंड", Wales: "वेल्स", "Northern Ireland": "उत्तरी आयरलैंड" },
+  it: { Scotland: "Scozia", Wales: "Galles", "Northern Ireland": "Irlanda del Nord" },
+  lb: { Scotland: "Schottland", Wales: "Wales", "Northern Ireland": "Nordirland" },
+  mi: { Scotland: "Koterana", Wales: "Wēra", "Northern Ireland": "Airani ki te Raki" },
+  nb: { Scotland: "Skottland", Wales: "Wales", "Northern Ireland": "Nord-Irland" },
+  nl: { Scotland: "Schotland", Wales: "Wales", "Northern Ireland": "Noord-Ierland" },
+  "pt-BR": { Scotland: "Escócia", Wales: "País de Gales", "Northern Ireland": "Irlanda do Norte" },
+  sk: { Scotland: "Škótsko", Wales: "Wales", "Northern Ireland": "Severné Írsko" },
+  th: { Scotland: "สกอตแลนด์", Wales: "เวลส์", "Northern Ireland": "ไอร์แลนด์เหนือ" },
+  "zh-Hans": { Scotland: "苏格兰", Wales: "威尔士", "Northern Ireland": "北爱尔兰" },
+};
+
 const languageCodes = {
-  Danish: "da", Dutch: "nl", English: "en", Estonian: "et", French: "fr", German: "de",
+  Danish: "da", Dutch: "nl", English: "en", Estonian: "et", French: "fr", Gaelic: "gd", German: "de",
   Greek: "el", Hebrew: "he", Hindi: "hi", Inuktitut: "iu", Irish: "ga", Italian: "it",
   Luxembourgish: "lb", Mandarin: "zh", Mongolian: "mn", Norwegian: "no", Portuguese: "pt",
-  Slovak: "sk", Spanish: "es", Thai: "th",
+  Slovak: "sk", Spanish: "es", Thai: "th", Welsh: "cy",
 };
 
 // Chromium does not currently ship te reo Maori language-display data. These
@@ -127,7 +153,7 @@ function t(key, values) { return message(state.locale, key, values); }
 function label(value) { return localizedLabel(state.locale, value); }
 function slug(value) { return value.replaceAll("_", "-"); }
 function jurisdictionName(name) {
-  const specialName = specialJurisdictionNames[state.locale]?.[name];
+  const specialName = specialJurisdictionNames[state.locale]?.[name] ?? devolvedJurisdictionNames[state.locale]?.[name];
   if (specialName) return specialName;
   const code = jurisdictionCodes[name];
   if (!code) return name;
@@ -182,6 +208,7 @@ function applyStaticTranslations() {
   setText("jurisdiction-label", t("jurisdiction"));
   setText("source-type-label", t("sourceType"));
   setText("use-guidance-label", t("useGuidance"));
+  setText("filters-label", t("filters"));
   document.querySelector("#catalogue-results").setAttribute("aria-label", t("catalogueResults"));
   document.querySelector("#channel-table").setAttribute("aria-label", t("catalogueTable"));
   ["source", "jurisdiction", "format", "language", "access", "use"].forEach((key) => setText(`sort-${key}`, t(key === "language" ? "contentLanguage" : key)));
@@ -276,7 +303,10 @@ function renderList() {
   const channels = filteredChannels();
   renderSortHeaders();
   elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
-  if (!channels.some((channel) => channel.id === state.selectedId)) state.selectedId = channels[0]?.id ?? null;
+  if (!channels.some((channel) => channel.id === state.selectedId)) {
+    state.selectedId = channels[0]?.id ?? null;
+    state.mobileDetailOpen = false;
+  }
   elements.list.innerHTML = channels.length ? channels.map((channel) => `
     <button class="channel-button" type="button" role="row" data-channel-id="${channel.id}" aria-pressed="${channel.id === state.selectedId}">
       <span role="cell"><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-label="Embedded playback available" title="Embedded playback available">&#9654;</span>' : ""}</span><span class="legislature">${channel.legislature}</span></span>
@@ -288,9 +318,65 @@ function renderList() {
     </button>`).join("") : `<p class="detail-empty">${t("noResults")}</p>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
     state.selectedId = button.dataset.channelId;
+    state.mobileDetailOpen = window.matchMedia("(max-width: 680px)").matches;
     renderList();
-    renderDetail();
+    renderDetail({ startPlayer: true });
   }));
+}
+function closeMobileDetail() {
+  state.mobileDetailOpen = false;
+  elements.detail.classList.remove("is-open");
+  elements.detail.style.removeProperty("--mobile-sheet-height");
+}
+function syncFilterDisclosure(mediaQuery) {
+  elements.filterDisclosure.open = !mediaQuery.matches;
+}
+function setMobileSheetHeight(height) {
+  const minimum = 150;
+  const maximum = Math.round(window.innerHeight * 0.9);
+  elements.detail.style.setProperty("--mobile-sheet-height", `${Math.min(maximum, Math.max(minimum, height))}px`);
+}
+function setupMobileSheetControls() {
+  const grabber = elements.detail.querySelector("[data-resize-detail]");
+  let startY = 0;
+  let startHeight = 0;
+  let moved = false;
+  let suppressClick = false;
+  const snapHeights = () => [150, Math.round(window.innerHeight * 0.54), Math.round(window.innerHeight * 0.9)];
+  const snapToNearest = () => {
+    const current = elements.detail.getBoundingClientRect().height;
+    const nearest = snapHeights().reduce((best, height) => Math.abs(height - current) < Math.abs(best - current) ? height : best);
+    setMobileSheetHeight(nearest);
+  };
+
+  grabber.addEventListener("pointerdown", (event) => {
+    startY = event.clientY;
+    startHeight = elements.detail.getBoundingClientRect().height;
+    moved = false;
+    grabber.setPointerCapture(event.pointerId);
+  });
+  grabber.addEventListener("pointermove", (event) => {
+    if (!grabber.hasPointerCapture(event.pointerId)) return;
+    moved ||= Math.abs(event.clientY - startY) > 4;
+    setMobileSheetHeight(startHeight + startY - event.clientY);
+  });
+  grabber.addEventListener("pointerup", (event) => {
+    if (!grabber.hasPointerCapture(event.pointerId)) return;
+    grabber.releasePointerCapture(event.pointerId);
+    suppressClick = moved;
+    snapToNearest();
+  });
+  grabber.addEventListener("pointercancel", snapToNearest);
+  grabber.addEventListener("click", () => {
+    if (suppressClick) {
+      suppressClick = false;
+      return;
+    }
+    const heights = snapHeights();
+    const current = elements.detail.getBoundingClientRect().height;
+    const currentIndex = heights.reduce((bestIndex, height, index) => Math.abs(height - current) < Math.abs(heights[bestIndex] - current) ? index : bestIndex, 0);
+    setMobileSheetHeight(heights[(currentIndex + 1) % heights.length]);
+  });
 }
 function epgMarkup(channel) {
   if (!channel.epg_sources.length) return `<span>${t("noSchedule")}</span>`;
@@ -322,15 +408,18 @@ function evidenceMarkup(channel) {
     return `<a href="${url}" target="_blank" rel="noreferrer" title="${url}">${label}${suffix} ↗</a>`;
   }).join(" ");
 }
-function renderDetail() {
+function renderDetail({ startPlayer = false } = {}) {
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   const channel = state.channels.find((item) => item.id === state.selectedId);
-  if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">Select a source to view its documentation.</p>`; return; }
+  if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">Select a source to view its documentation.</p>`; closeMobileDetail(); return; }
   const allowed = canPlay(channel);
   const playbackMessage = allowed
     ? "This technically validated public endpoint is available under the catalogue's opt-out playback policy. This is not a statement that the catalogue has received a licence; review the source notes and report any concern for prompt removal."
     : channel.permission.recommendation;
   elements.detail.innerHTML = `
+    <div class="mobile-sheet-controls">
+      <button class="detail-grabber" data-resize-detail type="button" aria-label="Resize source details"><span></span></button>
+    </div>
     <h3 class="detail-title">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · ${channel.legislature}</p>
     <div class="media-frame" id="media-frame">
@@ -351,7 +440,10 @@ function renderDetail() {
     </dl>
     <p class="detail-note"><strong>${t("reuse")}</strong> ${channel.permission.summary} ${evidenceMarkup(channel)}</p>
     <p class="detail-note"><strong>${t("recommendation")}</strong> ${playbackMessage}</p>`;
+  elements.detail.classList.toggle("is-open", state.mobileDetailOpen);
   document.querySelectorAll("[data-start-playback]").forEach((button) => button.addEventListener("click", () => startPlayback(channel)));
+  setupMobileSheetControls();
+  if (startPlayer && allowed) startPlayback(channel);
 }
 function loadHlsLibrary() {
   if (window.Hls) return Promise.resolve();
@@ -388,16 +480,22 @@ async function startPlayback(channel) {
 }
 async function init() {
   try {
+    const mobileLayout = window.matchMedia("(max-width: 680px)");
+    syncFilterDisclosure(mobileLayout);
+    mobileLayout.addEventListener("change", () => syncFilterDisclosure(mobileLayout));
     elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}">${name}</option>`).join("");
     elements.locale.value = state.locale;
     applyStaticTranslations();
     elements.locale.addEventListener("change", () => setLocale(elements.locale.value));
-    let response = await fetch(catalogueUrl, { cache: "no-store" });
-    if (!response.ok && catalogueUrl.href !== localCatalogueUrl.href) {
-      response = await fetch(localCatalogueUrl, { cache: "no-store" });
+    let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;
+    if (window.location.protocol !== "file:") {
+      let response = await fetch(catalogueUrl, { cache: "no-store" });
+      if (!response.ok && catalogueUrl.href !== localCatalogueUrl.href) {
+        response = await fetch(localCatalogueUrl, { cache: "no-store" });
+      }
+      if (response.ok) catalogue = await response.json();
     }
-    if (!response.ok) throw new Error(`Catalogue request failed (${response.status})`);
-    const catalogue = await response.json();
+    if (!catalogue) throw new Error("Catalogue data is unavailable.");
     state.channels = catalogue.channels;
     state.generatedOn = catalogue.generated_on;
     state.selectedId = state.channels.find(canPlay)?.id ?? state.channels[0]?.id ?? null;
@@ -423,3 +521,4 @@ async function init() {
 }
 
 init();
+})();

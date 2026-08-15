@@ -22,9 +22,16 @@ application. Earlier application work remains available in Git history.
   for Python and JavaScript.
 - Parser and health-check tests with a 90% enforced Python branch-coverage
   threshold.
+- Official-page, schedule, rights, and jurisdiction-flag records for the
+  Scottish Parliament, Senedd Cymru, and Northern Ireland Assembly.
 
 ### Changed
 
+- Reworked the mobile source details into a non-modal, resizable bottom sheet
+  that keeps the catalogue available for switching streams.
+- Tightened mobile catalogue rows and reorganized sheet spacing, actions, and
+  metadata for smaller screens.
+- Made selection of an embeddable catalogue entry start its player immediately.
 - Simplified the schema v2 catalogue by removing inactive `short_name`,
   `display_mode`, and `metadata_level` fields.
 - Made deep browser validation require explicit input and output report paths,
@@ -40,6 +47,10 @@ application. Earlier application work remains available in Git history.
 
 ### Fixed
 
+- Restored the jurisdiction, format, and use-guidance filters at desktop widths
+  while keeping them in a collapsible control on mobile.
+- Made `site/index.html` load the complete catalogue when opened directly as a
+  local file, with a generated data snapshot kept in sync by CI.
 - Removed an unused catalogue-filter helper and obsolete multilingual
   translation keys.
 - Standardized row alignment, outbound-link treatment, terminology tooltips,

@@ -35,9 +35,10 @@ make verify
 ```
 
 The Makefile uses `uv run --extra dev`, so install `uv` first if it is not
-already available. `make verify` validates the JSON catalogue, checks the
-schema contract, runs Ruff linting, compiles Python modules, and runs the
-data/scraper contract tests.
+already available. `make verify` validates the JSON catalogue and generated
+site snapshot, checks the schema contract, runs Ruff linting, compiles Python
+modules, and runs the data/scraper contract tests. After changing
+`data/channels.json`, run `make site-data` to refresh the direct-file snapshot.
 
 Python scrapers should parse supplied HTML/JSON strings. Do not hide network
 fetches inside parser functions; fetch scripts should record where data came

@@ -2303,6 +2303,142 @@
             }
         },
         {
+            "id": "scottish-parliament-tv",
+            "name": "Scottish Parliament TV",
+            "jurisdiction_level": "subnational",
+            "country_or_region": "Scotland",
+            "legislature": "Scottish Parliament",
+            "language": "English / Gaelic",
+            "source_type": "official_page",
+            "playback_url": null,
+            "official_url": "https://www.scottishparliament.tv/",
+            "attribution_text": "Official Scottish Parliament TV page with live and archived chamber and committee coverage, including accessible variants where scheduled.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "program": {
+                "current_event_title": "Scottish Parliament chamber and committee coverage",
+                "current_event_time": "Live around scheduled parliamentary business",
+                "next_event_title": "What's On parliamentary schedule",
+                "next_event_time": "See the official schedule",
+                "confidence": "high"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.scottishparliament.tv/",
+                    "method": "GET",
+                    "kind": "parliament_tv_schedule_page",
+                    "scraper_status": "planned"
+                },
+                {
+                    "scraper": "planned",
+                    "url": "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/",
+                    "method": "GET",
+                    "kind": "parliamentary_business_schedule",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "explicit_reuse_with_conditions",
+                "summary": "The Scottish Parliament Copyright Licence permits broad reuse with attribution, no implied endorsement, and restrictions on party-political and advertising uses. Separate Parliament TV clip guidance requires fair and accurate reporting and limits editing. The official site requires links to open in their normal form rather than within third-party frames.",
+                "evidence": [
+                    "https://www.scottishparliament.tv/",
+                    "https://www.parliament.scot/about/copyright",
+                    "https://www.parliament.scot/about/how-parliament-works/policies/social-media-use-of-parliament-tv-clips",
+                    "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/"
+                ],
+                "recommendation": "Link to Scottish Parliament TV and preserve attribution. Do not frame the official site or treat dynamic player manifests as a licensed direct stream."
+            }
+        },
+        {
+            "id": "senedd-tv",
+            "name": "Senedd TV",
+            "jurisdiction_level": "subnational",
+            "country_or_region": "Wales",
+            "legislature": "Senedd Cymru / Welsh Parliament",
+            "language": "Welsh / English",
+            "source_type": "official_page",
+            "playback_url": null,
+            "official_url": "https://www.senedd.tv/",
+            "attribution_text": "Official Senedd TV page with live and archived public Plenary and committee proceedings.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "program": {
+                "current_event_title": "Senedd Plenary and committee coverage",
+                "current_event_time": "Live around scheduled public meetings",
+                "next_event_title": "Senedd TV and parliamentary meeting schedules",
+                "next_event_time": "See the official schedules",
+                "confidence": "high"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://www.senedd.tv/",
+                    "method": "GET",
+                    "kind": "senedd_tv_schedule_page",
+                    "scraper_status": "planned"
+                },
+                {
+                    "scraper": "planned",
+                    "url": "https://senedd.wales/calendar",
+                    "method": "GET",
+                    "kind": "parliamentary_meetings_calendar",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "explicit_reuse_with_conditions",
+                "summary": "Senedd Commission copyright material may be reproduced with source and copyright acknowledgement, subject to accuracy, non-misleading use, and restrictions on commercial promotion and other prohibited contexts. Senedd TV clips may be shared or embedded under those terms, but Senedd web pages may not be framed by another site.",
+                "evidence": [
+                    "https://www.senedd.tv/",
+                    "https://senedd.wales/commission/access-to-information/copyright/",
+                    "https://senedd.wales/media/images-and-video/",
+                    "https://senedd.wales/calendar"
+                ],
+                "recommendation": "Link to the official live page. Use only Senedd-provided clip sharing or embedding routes under the published terms; do not frame the official site or extract dynamic manifests."
+            }
+        },
+        {
+            "id": "northern-ireland-assembly-tv",
+            "name": "Northern Ireland Assembly TV",
+            "jurisdiction_level": "subnational",
+            "country_or_region": "Northern Ireland",
+            "legislature": "Northern Ireland Assembly",
+            "language": "English / Irish",
+            "source_type": "official_page",
+            "playback_url": null,
+            "official_url": "https://niassembly.tv/",
+            "attribution_text": "Official Northern Ireland Assembly TV page with scheduled Assembly and committee streams, archives, and language/accessibility variants.",
+            "technical_status": "link_only",
+            "availability": "event_based",
+            "program": {
+                "current_event_title": "Northern Ireland Assembly and committee coverage",
+                "current_event_time": "Live around scheduled Assembly business",
+                "next_event_title": "Assembly TV live schedule",
+                "next_event_time": "See the official calendar",
+                "confidence": "high"
+            },
+            "epg_sources": [
+                {
+                    "scraper": "planned",
+                    "url": "https://niassembly.tv/calendar/",
+                    "method": "GET",
+                    "kind": "assembly_tv_live_schedule",
+                    "scraper_status": "planned"
+                }
+            ],
+            "permission": {
+                "status": "no_third_party_reuse",
+                "summary": "Northern Ireland Assembly copyright guidance states that live and archive broadcasts of Assembly and committee proceedings may not be directly linked to, reproduced, copied, or downloaded without formal agreement. Its site also places specific restrictions on reuse of recorded interpretation.",
+                "evidence": [
+                    "https://niassembly.tv/",
+                    "https://niassembly.tv/calendar/",
+                    "https://www.niassembly.gov.uk/about-the-assembly/corporate-information/copyright-guidelines/"
+                ],
+                "recommendation": "Link only to the Assembly TV home or calendar page. Do not embed, relay, directly link to a broadcast, or extract a player manifest without formal agreement."
+            }
+        },
+        {
             "id": "osce-live",
             "name": "OSCE Live",
             "jurisdiction_level": "supranational",
