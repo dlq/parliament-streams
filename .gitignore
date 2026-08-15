@@ -25,6 +25,7 @@ build/
 __pycache__/
 *.py[cod]
 *.egg-info/
+.coverage
 .pycache/
 .pytest_cache/
 .mypy_cache/

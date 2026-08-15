@@ -18,6 +18,10 @@ application. Earlier application work remains available in Git history.
 - A client-side locale selector and URL/local-storage locale support for the
   public catalogue interface.
 - Dated catalogue and review health reports.
+- Dependabot version updates for Python and GitHub Actions, plus CodeQL scans
+  for Python and JavaScript.
+- Parser and health-check tests with a 90% enforced Python branch-coverage
+  threshold.
 
 ### Changed
 

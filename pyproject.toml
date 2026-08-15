@@ -12,7 +12,19 @@ license = "BSD-3-Clause"
 license-files = ["LICENSE"]
 
 [project.optional-dependencies]
-dev = ["ruff==0.15.18"]
+dev = [
+    "coverage[toml]>=7.10,<8",
+    "ruff==0.15.18",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["parliament_streams"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+skip_covered = true
 
 [tool.ruff]
 line-length = 100

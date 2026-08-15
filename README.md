@@ -31,7 +31,8 @@ record.
 - `NOTES.md`: working research log for stream discovery and source notes.
 - `PLANS.md`: current roadmap for the documentation/data project.
 - `CHANGELOG.md`: project-focused change history.
-- `tests/`: data-contract and scraper-registry tests.
+- `tests/`: data-contract, parser, and health-check tests with enforced branch
+  coverage for the Python package.
 
 ## Catalogue Scope
 
@@ -211,7 +212,7 @@ environment and the pinned Ruff version from `uv.lock` instead of relying on a
 system Python.
 
 This runs JSON validation, Ruff linting, Python import/compile checks, and the
-unit tests.
+unit suite with a 90% minimum branch-coverage gate for `parliament_streams/`.
 
 Format Python sources with:
 
