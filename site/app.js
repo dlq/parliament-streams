@@ -1,7 +1,9 @@
-// Resolves to /data/channels.json both from /site/ locally and from the Pages artifact.
+// The deployed Pages artifact places its JSON beside this module; local source
+// previews serve the repository's data directory one level above site/.
 import { locales, localizedLabel, message, supportedLocale } from "./i18n.js";
 
-const catalogueUrl = new URL("../data/channels.json", import.meta.url);
+const catalogueUrl = new URL("./data/channels.json", import.meta.url);
+const localCatalogueUrl = new URL("../data/channels.json", import.meta.url);
 const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
@@ -390,7 +392,10 @@ async function init() {
     elements.locale.value = state.locale;
     applyStaticTranslations();
     elements.locale.addEventListener("change", () => setLocale(elements.locale.value));
-    const response = await fetch(catalogueUrl, { cache: "no-store" });
+    let response = await fetch(catalogueUrl, { cache: "no-store" });
+    if (!response.ok && catalogueUrl.href !== localCatalogueUrl.href) {
+      response = await fetch(localCatalogueUrl, { cache: "no-store" });
+    }
     if (!response.ok) throw new Error(`Catalogue request failed (${response.status})`);
     const catalogue = await response.json();
     state.channels = catalogue.channels;
