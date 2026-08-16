@@ -73,6 +73,9 @@ application. Earlier application work remains available in Git history.
 - Documented browser-side EPG enrichment as an optional future path: only the
   EU Audiovisual Service and European Parliament Multimedia Centre currently
   permit browser CORS reads among recorded EPG sources.
+- Clarified that Python and `uv` own catalogue management and verification,
+  while Node and npm provide HTML, browser, and accessibility development
+  checks and are not part of the deployed site's runtime.
 
 ### Fixed
 

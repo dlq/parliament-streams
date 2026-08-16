@@ -266,11 +266,25 @@ resources itself.
 
 ## Verify
 
-Install `uv`, Node.js 24 or newer, the locked JavaScript dependencies, and the
-Playwright Chromium runtime, then run the local verification pass:
+Development uses two deliberately separate toolchains:
+
+| Tooling | Responsibility |
+| --- | --- |
+| Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, site-data generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
+| Node.js 24+ and npm | Static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
+| Make | Stable command entry points that compose the Python and Node checks without hiding which toolchain runs them. |
+| Playwright Chromium | The downloaded browser used to test rendered desktop, intermediate-width, mobile, keyboard, and accessibility behavior. |
+
+Node does not build the catalogue, generate the site, run a backend, or serve
+production traffic. The deployed GitHub Page is static HTML, CSS, JavaScript,
+and JSON and requires neither Python nor Node at runtime.
+
+Install `uv`, Node.js 24 or newer, both locked development environments, and
+the Playwright Chromium runtime:
 
 ```sh
-npm install
+uv sync --locked --extra dev
+npm ci
 npx playwright install chromium
 ```
 
@@ -331,7 +345,7 @@ For a deeper browser/player pass against Tier 1 and Tier 2 official pages, run:
 
 ```sh
 node --version
-npm install
+npm ci
 npx playwright install chromium
 node tools/deep_validate_browser.mjs \
   --input reports/health/2026-08-14-tier1-democracy-hls.json \

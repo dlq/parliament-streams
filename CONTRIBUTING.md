@@ -62,13 +62,22 @@ Do not hand-edit `site/catalogue-data.js`; catalogue mutations regenerate it.
 See [docs/catalogue-maintenance.md](docs/catalogue-maintenance.md) for direct
 feeds, YouTube candidates, removals, reports, audits, and exports.
 
+## Development Tooling
+
+Python 3.11 and `uv` own catalogue management, schema and business-rule checks,
+site-data generation, scrapers, health checks, tests and coverage, Ruff, and
+mypy. Node.js 24 and npm own HTML validation, Playwright browser behavior, Axe
+accessibility checks, and the optional live deep-browser research tool. `make`
+provides the shared command entry points. Neither development runtime is
+required by the deployed static site.
+
 Before opening a pull request, install the locked Python and JavaScript tooling
 and the Playwright browser once, then run:
 
 ```sh
-npm install
-npx playwright install chromium
 uv sync --locked --extra dev
+npm ci
+npx playwright install chromium
 make verify
 ```
 
@@ -114,7 +123,7 @@ questions, so keep them separate:
 To rerun the browser validator locally:
 
 ```sh
-npm install
+npm ci
 npx playwright install chromium
 node tools/deep_validate_browser.mjs \
   --input reports/health/YYYY-MM-DD-seed-or-report.json \

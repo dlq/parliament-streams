@@ -139,9 +139,12 @@ uv run python -m parliament_streams.scrapers \
   quebec-webdiffusion live.json upcoming.json
 ```
 
-The browser validator remains JavaScript because it drives Chromium and inspects
-runtime player traffic. It requires explicit input and output report paths; see
-the README for the full invocation.
+The Node-based browser tools use the official Playwright and Axe integrations.
+`tools/check_accessibility.mjs` is part of `make verify` and tests the local
+catalogue UI; `tools/deep_validate_browser.mjs` is an explicit live research
+tool that inspects third-party player traffic. Neither tool builds or runs the
+deployed static site. The deep validator requires explicit input and output
+report paths; see the README for the full invocation.
 
 ## Complete Verification
 
