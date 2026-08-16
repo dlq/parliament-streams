@@ -19,7 +19,7 @@ parliament-streams = "parliament_streams.cli:main"
 dev = [
     "coverage[toml]>=7.10,<8",
     "mypy>=1.15,<2",
-    "ruff==0.16.2",
+    "ruff==0.16.3",
     "types-jsonschema>=4.23,<5",
 ]
 
