@@ -12,6 +12,8 @@ SOURCE_TYPES = {"direct_hls", "direct_dash", "official_page", "youtube"}
 TECHNICAL_STATUSES = {"validated", "needs_review", "link_only"}
 PROGRAM_CONFIDENCE = {"low", "medium", "high"}
 SCRAPER_STATUSES = {"implemented", "planned"}
+ACCESSIBILITY_STATUSES = {"available", "source_dependent", "unavailable", "unknown"}
+IDENTITY_SOURCES = {"wikidata", "ipu_parline"}
 PERMISSION_STATUSES = {
     "personal_use_pending_review",
     "noncommercial_pending_review",
@@ -28,7 +30,7 @@ class CatalogueContractTests(unittest.TestCase):
         cls.channels = cls.catalogue["channels"]
 
     def test_catalogue_has_expected_top_level_shape(self):
-        self.assertEqual(self.catalogue["schema_version"], 2)
+        self.assertEqual(self.catalogue["schema_version"], 5)
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
@@ -57,6 +59,8 @@ class CatalogueContractTests(unittest.TestCase):
             "jurisdiction_level",
             "country_or_region",
             "legislature",
+            "external_ids",
+            "identity_sources",
             "language",
             "source_type",
             "playback_url",
@@ -64,6 +68,7 @@ class CatalogueContractTests(unittest.TestCase):
             "attribution_text",
             "technical_status",
             "availability",
+            "accessibility",
             "program",
             "epg_sources",
             "permission",
@@ -76,19 +81,61 @@ class CatalogueContractTests(unittest.TestCase):
             "confidence",
         }
         required_permission_keys = {"status", "summary", "evidence", "recommendation"}
+        required_accessibility_keys = {
+            "captions",
+            "caption_languages",
+            "sign_language",
+            "audio_description",
+            "notes",
+        }
+        required_embed_keys = {"provider", "kind", "content_id", "url", "live_url", "notes"}
+        required_external_id_keys = {
+            "wikidata_qid",
+            "ipu_country_code",
+            "ipu_parliament_code",
+            "ipu_chamber_code",
+        }
+        required_identity_source_keys = {
+            "source",
+            "url",
+            "checked_on",
+            "confidence",
+            "notes",
+        }
 
         for channel in self.channels:
             with self.subTest(channel=channel["id"]):
-                self.assertEqual(set(channel), required_channel_keys)
+                self.assertEqual(set(channel) - {"embed"}, required_channel_keys)
                 self.assertNotIn(channel["id"], seen_ids)
                 seen_ids.add(channel["id"])
                 self.assertIn(channel["source_type"], SOURCE_TYPES)
                 self.assertIn(channel["technical_status"], TECHNICAL_STATUSES)
+                self.assertEqual(set(channel["external_ids"]), required_external_id_keys)
+                self.assertRegex(channel["external_ids"]["wikidata_qid"], r"^Q[1-9][0-9]*$")
+                self.assertTrue(channel["identity_sources"])
+                for identity_source in channel["identity_sources"]:
+                    self.assertEqual(set(identity_source), required_identity_source_keys)
+                    self.assertIn(identity_source["source"], IDENTITY_SOURCES)
+                    self.assertIn(identity_source["confidence"], PROGRAM_CONFIDENCE)
+                    self.assertTrue(urlparse(identity_source["url"]).scheme.startswith("http"))
+                self.assertEqual(set(channel["accessibility"]), required_accessibility_keys)
+                for status_key in ("captions", "sign_language", "audio_description"):
+                    self.assertIn(channel["accessibility"][status_key], ACCESSIBILITY_STATUSES)
+                self.assertIsInstance(channel["accessibility"]["caption_languages"], list)
                 self.assertTrue(urlparse(channel["official_url"]).scheme.startswith("http"))
                 if channel["source_type"].startswith("direct_"):
                     self.assertIsInstance(channel["playback_url"], str)
                 else:
                     self.assertIsNone(channel["playback_url"])
+
+                if channel["source_type"] == "youtube":
+                    self.assertEqual(set(channel["embed"]), required_embed_keys)
+                    self.assertEqual(channel["embed"]["provider"], "youtube")
+                    self.assertEqual(channel["embed"]["kind"], "uploads_playlist")
+                    self.assertTrue(channel["embed"]["content_id"].startswith("UU"))
+                    self.assertIn("youtube-nocookie.com/embed", channel["embed"]["url"])
+                else:
+                    self.assertNotIn("embed", channel)
 
                 self.assertEqual(set(channel["program"]), required_program_keys)
                 self.assertIn(channel["program"]["confidence"], PROGRAM_CONFIDENCE)
@@ -96,6 +143,34 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertIn(channel["permission"]["status"], PERMISSION_STATUSES)
                 for evidence_url in channel["permission"]["evidence"]:
                     self.assertTrue(urlparse(evidence_url).scheme.startswith("http"))
+
+    def test_external_identity_scope_and_links_are_coherent(self):
+        for channel in self.channels:
+            with self.subTest(channel=channel["id"]):
+                ids = channel["external_ids"]
+                sources = {source["source"]: source for source in channel["identity_sources"]}
+                self.assertEqual(
+                    sources["wikidata"]["url"],
+                    f"https://www.wikidata.org/wiki/{ids['wikidata_qid']}",
+                )
+
+                has_ipu = ids["ipu_parliament_code"] is not None
+                self.assertEqual("ipu_parline" in sources, has_ipu)
+                if has_ipu:
+                    self.assertEqual(ids["ipu_country_code"], ids["ipu_parliament_code"])
+                    self.assertIn(
+                        f"/parliament/{ids['ipu_country_code']}/",
+                        sources["ipu_parline"]["url"],
+                    )
+                else:
+                    self.assertIsNone(ids["ipu_country_code"])
+                    self.assertIsNone(ids["ipu_chamber_code"])
+
+                if (
+                    channel["jurisdiction_level"] != "national"
+                    or channel["country_or_region"] == "Taiwan"
+                ):
+                    self.assertFalse(has_ipu)
 
     def test_hls_and_youtube_endpoints_are_present(self):
         source_types = {channel["source_type"] for channel in self.channels}
@@ -111,6 +186,7 @@ class CatalogueContractTests(unittest.TestCase):
             self.assertTrue(urlparse(channel["playback_url"]).path.endswith(".m3u8"))
         for channel in youtube_channels:
             self.assertIn("youtube", channel["official_url"].lower())
+            self.assertIsInstance(channel["embed"], dict)
 
     def test_each_channel_records_permission_status(self):
         for channel in self.channels:
@@ -137,6 +213,45 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertIsNone(channel["playback_url"])
                 self.assertEqual(channel["permission"]["status"], permission_status)
                 self.assertTrue(channel["epg_sources"])
+
+    def test_2026_subnational_promotions_are_documented(self):
+        expected_link_out_ids = {
+            "british-columbia-legislature-webcasts",
+            "alberta-assembly-online",
+            "saskatchewan-legislative-proceedings",
+            "manitoba-house-broadcasts",
+            "prince-edward-island-assembly-live",
+            "northwest-territories-watch-session",
+            "newfoundland-labrador-house-webcast",
+            "new-south-wales-parliament-webcasts",
+            "victoria-parliament-watch",
+            "queensland-parliament-live",
+            "western-australia-parliament-live",
+            "north-rhine-westphalia-landtag-live",
+            "baden-wurttemberg-landtag-live",
+            "bavaria-landtag-plenum-online",
+            "catalonia-canal-parlament",
+            "valencia-canal-corts",
+            "andalusia-parliament-tv-live",
+            "navarre-parliament-live",
+        }
+        channels = {channel["id"]: channel for channel in self.channels}
+
+        self.assertTrue(expected_link_out_ids.issubset(channels))
+        for channel_id in expected_link_out_ids:
+            with self.subTest(channel=channel_id):
+                channel = channels[channel_id]
+                self.assertEqual(channel["jurisdiction_level"], "subnational")
+                self.assertEqual(channel["source_type"], "official_page")
+                self.assertEqual(channel["technical_status"], "link_only")
+                self.assertIsNone(channel["playback_url"])
+                self.assertTrue(channel["epg_sources"])
+
+        jalisco = channels["jalisco-canal-parlamento"]
+        self.assertEqual(jalisco["source_type"], "direct_hls")
+        self.assertEqual(jalisco["technical_status"], "validated")
+        self.assertEqual(jalisco["jurisdiction_level"], "subnational")
+        self.assertNotIn("colima-icrtv", channels)
 
     def test_epg_sources_are_declared_with_scraper_ids(self):
         epg_sources = [channel for channel in self.channels if channel.get("epg_sources")]

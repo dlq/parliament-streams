@@ -1,0 +1,528 @@
+{
+  "checked_at": "2026-08-16T17:55:04Z",
+  "scope": "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from static reports.",
+  "method": "Headless Chromium loads official/discovery pages, waits for scripts/player requests, captures .m3u8/.mpd network and DOM references, then validates discovered manifests. This does not solve authenticated, geo-blocked, DRM, or interaction-gated players.",
+  "inputs": [
+    "reports/health/2026-08-16-subnational-promotion-seed.json"
+  ],
+  "countries": [
+    {
+      "country": "British Columbia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Alberta",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Saskatchewan",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Manitoba",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Prince Edward Island",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Northwest Territories",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Newfoundland and Labrador",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "New South Wales",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Victoria",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Queensland",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Western Australia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "North Rhine-Westphalia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Baden-Wurttemberg",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Bavaria",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Catalonia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Valencia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Andalusia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Navarre",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Jalisco",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "country": "British Columbia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+      "final_url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Alberta",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "final_url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Saskatchewan",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+      "final_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Manitoba",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+      "final_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Prince Edward Island",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.assembly.pe.ca/watch-live",
+      "final_url": "https://validate.perfdrive.com/?ssa=55c87d74-4b66-4d52-8309-faf4c50f412a&ssb=43190228406&ssc=https%3A%2F%2Fwww.assembly.pe.ca%2Fwatch-live&ssi=e413ff13-djty-44ce-b1a8-a15e0ec757fd&ssk=botmanager_support@radware.com&ssm=34509229885465226105848702032391&ssn=83e4cb893fa07886ec53d8ce6df557c14e1595d62525-1bd8-44a7-aba59b&sso=bfaab029-313376d536237cb178bf4f0aa1ccd9f15450832b098f3f44&ssp=85470844781786986468178699095873413&ssq=73674350280381121963402803631089881879422&ssr=MjQuMjAyLjcyLjE0Mw==&sst=parliament-streams-deep-validation/0.1%20(+https://github.com/dlq/parliament-streams)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA5NWQ2MjUyNS0xYmQ4LTQ0YTctYTAyOS0zMTMzNzZkNTM2MjMxLTE3ODY5MDI4MDMzOTcwLTAwMzAwMGM2Zjg1NDQxMDkzZTQxMCIsInV6bXgiOiI3ZmMwMDAwZmNhMDU3Ny1hOGZiLTQzZWEtYjk5Ni1hYjUxMDM4ZjRkNTAxLTE3ODY5MDI4MDMzOTcwLTAwMGVkMGFkMGUxMDcwNjUyMGMxMCIsInJkIjoiYXNzZW1ibHkucGUuY2EifQ==",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Northwest Territories",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+      "final_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Newfoundland and Labrador",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
+      "final_url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "SyntaxError: Unexpected token '<'"
+      ]
+    },
+    {
+      "country": "New South Wales",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.parliament.nsw.gov.au/webcasts",
+      "final_url": "https://www.parliament.nsw.gov.au/webcasts",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Victoria",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.parliament.vic.gov.au/watch/",
+      "final_url": "https://www.parliament.vic.gov.au/watch/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Queensland",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
+      "final_url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Western Australia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+      "final_url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "North Rhine-Westphalia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "final_url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Baden-Wurttemberg",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+      "final_url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 1,
+      "validated_manifest_count": 0,
+      "responses": [
+        {
+          "url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8",
+          "status": 404,
+          "content_type": ""
+        },
+        {
+          "url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8",
+          "status": 404,
+          "content_type": ""
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://ltbw-live.landtag-bw.de/ltbw/plenarsaal_logo/playlist.m3u8",
+          "elapsed_ms": 448,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Bavaria",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+      "final_url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Catalonia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+      "final_url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "TypeError: Cannot read properties of null (reading 'addEventListener')"
+      ]
+    },
+    {
+      "country": "Valencia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://mediateca.cortsvalencianes.es/live",
+      "final_url": "https://mediateca.cortsvalencianes.es/live",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Andalusia",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+      "final_url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Navarre",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
+      "final_url": "https://parlamentodenavarra.es/es/pruebalive1.htm?__cf_chl_rt_tk=bM9M7aBVhuiDMqDtmL2eFFYUFjpolmynz6AgQwCnwZw-1786902890-1.0.1.1-sng3wW62Koj3EFeoCOtJxUUtQP87_4iPLaxzzRa2FJw",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Jalisco",
+      "tier_report": "reports/health/2026-08-16-subnational-promotion-seed.json",
+      "page_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+      "final_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 5,
+      "validated_manifest_count": 1,
+      "responses": [
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b1428000_sleng.m3u8",
+          "status": 404,
+          "content_type": ""
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b478000_sleng.m3u8",
+          "status": 404,
+          "content_type": ""
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b878000_sleng.m3u8",
+          "status": 404,
+          "content_type": ""
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b978000_sleng.m3u8",
+          "status": 404,
+          "content_type": ""
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "elapsed_ms": 292,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b1428000_sleng.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b1428000_sleng.m3u8",
+          "elapsed_ms": 89,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b978000_sleng.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b978000_sleng.m3u8",
+          "elapsed_ms": 326,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b478000_sleng.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b478000_sleng.m3u8",
+          "elapsed_ms": 91,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b878000_sleng.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/chunklist_w1013822015_b878000_sleng.m3u8",
+          "elapsed_ms": 89,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    }
+  ]
+}

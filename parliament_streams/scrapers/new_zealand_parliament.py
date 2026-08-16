@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
-from .common import checked_label, clean_html, first_match
+from .common import ParsedSchedule, ScraperSource, checked_label, clean_html, first_match
 
-SOURCE = {
+SOURCE: ScraperSource = {
     "id": "new-zealand-parliament",
     "channel_ids": ["new-zealand-parliament"],
     "url": "https://www3.parliament.nz/en/calendar/",
@@ -16,7 +16,7 @@ SOURCE = {
 }
 
 
-def parse(html: str, now: datetime | None = None) -> dict:
+def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     if "house next meets" not in html.lower():
         return {}
     body = clean_html(html)

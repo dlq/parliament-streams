@@ -16,7 +16,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
-          python-version: "3.12"
+          python-version: "3.11"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
 
       - name: Check whitespace
         run: git diff --check
@@ -24,11 +30,29 @@ jobs:
       - name: Install uv
         run: python -m pip install uv
 
+      - name: Sync locked Python dependencies
+        run: uv sync --locked --extra dev
+
+      - name: Install site test dependencies
+        run: npm ci
+
+      - name: Install accessibility test browser
+        run: npx playwright install --with-deps chromium
+
       - name: Check Python formatting
         run: make format-check
 
       - name: Lint Python
         run: make lint
 
-      - name: Verify catalogue, site data, compilation, tests, and coverage
+      - name: Type-check Python
+        run: make type-check
+
+      - name: Validate catalogue and candidate management rules
+        run: make catalogue-validate candidates-validate
+
+      - name: Validate site accessibility
+        run: make accessibility-check
+
+      - name: Verify JSON, site data, compilation, tests, and coverage
         run: make json-check site-data-check compile coverage

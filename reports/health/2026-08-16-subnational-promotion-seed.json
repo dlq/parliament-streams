@@ -1,0 +1,180 @@
+{
+  "scope": "2026-08-16 promotion validation for non-US sub-national catalogue candidates",
+  "countries": [
+    {
+      "country": "British Columbia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
+        }
+      ]
+    },
+    {
+      "country": "Alberta",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly"
+        }
+      ]
+    },
+    {
+      "country": "Saskatchewan",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/"
+        }
+      ]
+    },
+    {
+      "country": "Manitoba",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html"
+        }
+      ]
+    },
+    {
+      "country": "Prince Edward Island",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.pe.ca/watch-live"
+        }
+      ]
+    },
+    {
+      "country": "Northwest Territories",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
+        }
+      ]
+    },
+    {
+      "country": "Newfoundland and Labrador",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/"
+        }
+      ]
+    },
+    {
+      "country": "New South Wales",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.nsw.gov.au/webcasts"
+        }
+      ]
+    },
+    {
+      "country": "Victoria",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.vic.gov.au/watch/"
+        }
+      ]
+    },
+    {
+      "country": "Queensland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live"
+        }
+      ]
+    },
+    {
+      "country": "Western Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+        }
+      ]
+    },
+    {
+      "country": "North Rhine-Westphalia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html"
+        }
+      ]
+    },
+    {
+      "country": "Baden-Wurttemberg",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.landtag-bw.de/de/mediathek/landtag-live"
+        }
+      ]
+    },
+    {
+      "country": "Bavaria",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.bayern.landtag.de/aktuelles/plenum-online/"
+        }
+      ]
+    },
+    {
+      "country": "Catalonia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.cat/ext/f?p=700:1::::::"
+        }
+      ]
+    },
+    {
+      "country": "Valencia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://mediateca.cortsvalencianes.es/live"
+        }
+      ]
+    },
+    {
+      "country": "Andalusia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do"
+        }
+      ]
+    },
+    {
+      "country": "Navarre",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://parlamentodenavarra.es/es/pruebalive1.htm"
+        }
+      ]
+    },
+    {
+      "country": "Jalisco",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo"
+        },
+        {
+          "kind": "hls",
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8"
+        }
+      ]
+    }
+  ]
+}

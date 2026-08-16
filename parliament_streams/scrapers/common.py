@@ -5,10 +5,44 @@ from __future__ import annotations
 import re
 from datetime import UTC, datetime
 from html import unescape
+from typing import NotRequired, TypedDict
 from zoneinfo import ZoneInfo
 
 TAG_RE = re.compile(r"<[^>]+>")
 SPACE_RE = re.compile(r"\s+")
+
+
+class ScraperSource(TypedDict, total=False):
+    """Machine-readable description of an official schedule source."""
+
+    id: str
+    channel_ids: list[str]
+    url: str
+    urls: list[str]
+    method: str
+    headers: NotRequired[dict[str, str]]
+    body: NotRequired[dict[str, str]]
+    notes: str
+
+
+class ScheduleEvent(TypedDict):
+    """Normalized event used while selecting current and next programmes."""
+
+    start: datetime
+    title: str
+
+
+class ScheduleMetadata(TypedDict):
+    """Normalized schedule metadata returned by every scraper."""
+
+    current_event_title: str
+    current_event_time: str
+    next_event_title: str | None
+    next_event_time: str | None
+    confidence: str
+
+
+ParsedSchedule = dict[str, ScheduleMetadata]
 
 
 def clean_html(text: str) -> str:

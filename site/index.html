@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A public research catalogue of official parliamentary video sources, stream endpoints, schedule surfaces, and rights evidence.">
     <title>Parliament Streams</title>
-    <link rel="icon" href="assets/brand/parliaments-mark.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
+    <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
+    <link rel="stylesheet" href="styles.css?v=20260816-tablet-sheet">
   </head>
   <body>
     <a class="skip-link" href="#catalogue" id="skip-link">Skip to catalogue</a>
@@ -19,7 +20,7 @@
         <nav id="primary-navigation" aria-label="Primary navigation">
           <a href="#catalogue" id="nav-catalogue">Catalogue</a>
           <a href="https://github.com/dlq/parliament-streams" target="_blank" rel="noreferrer">GitHub</a>
-          <label class="locale-control" for="locale-select"><span class="visually-hidden" id="locale-label">Language</span><select id="locale-select" aria-label="Language"></select></label>
+          <label class="locale-control"><span class="visually-hidden" id="locale-label">Language</span><select id="locale-select"></select></label>
         </nav>
       </div>
     </header>
@@ -41,7 +42,7 @@
           <a class="text-link" id="source-json-link" href="data/channels.json" target="_blank" rel="noreferrer">View source JSON <span aria-hidden="true">↗</span></a>
         </div>
 
-        <form class="filters" id="filters" role="search">
+        <div class="filters" id="filters" role="search">
           <label class="search-field">
             <span class="visually-hidden" id="search-label">Search sources</span>
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
@@ -64,25 +65,26 @@
               </label>
             </div>
           </details>
-        </form>
+        </div>
 
         <p class="results-count" id="results-count" aria-live="polite"></p>
 
         <div class="catalogue-layout">
-          <div class="table-wrap" id="catalogue-results" role="region" aria-label="Catalogue results" tabindex="0">
-            <div class="channel-table" id="channel-table" role="table" aria-label="Parliament stream catalogue">
-              <div class="channel-header" role="row">
-                <span role="columnheader" data-sort-header="source"><button class="sort-button" id="sort-source" type="button" data-sort="source">Source</button></span>
-                <span role="columnheader" data-sort-header="jurisdiction"><button class="sort-button" id="sort-jurisdiction" type="button" data-sort="jurisdiction">Jurisdiction</button></span>
-                <span role="columnheader" data-sort-header="format"><button class="sort-button" id="sort-format" type="button" data-sort="format">Format</button></span>
-                <span role="columnheader" data-sort-header="language"><button class="sort-button" id="sort-language" type="button" data-sort="language">Language</button></span>
-                <span role="columnheader" data-sort-header="access"><button class="sort-button" id="sort-access" type="button" data-sort="access">Access</button></span>
-                <span role="columnheader" data-sort-header="use"><button class="sort-button" id="sort-use" type="button" data-sort="use">Use</button></span>
+          <section class="table-wrap" id="catalogue-results" aria-label="Catalogue results" tabindex="0">
+            <div class="channel-table" id="channel-table">
+              <div class="channel-header">
+                <span data-sort-header="source"><button class="sort-button" id="sort-source" type="button" data-sort="source">Source</button></span>
+                <span data-sort-header="jurisdiction"><button class="sort-button" id="sort-jurisdiction" type="button" data-sort="jurisdiction">Jurisdiction</button></span>
+                <span data-sort-header="format"><button class="sort-button" id="sort-format" type="button" data-sort="format">Format</button></span>
+                <span data-sort-header="language"><button class="sort-button" id="sort-language" type="button" data-sort="language">Language</button></span>
+                <span data-sort-header="access"><button class="sort-button" id="sort-access" type="button" data-sort="access">Access</button></span>
+                <span data-sort-header="use"><button class="sort-button" id="sort-use" type="button" data-sort="use">Use</button></span>
               </div>
-              <div id="channel-list" role="rowgroup"></div>
+              <span class="visually-hidden" id="sort-status" aria-live="polite" lang="en"></span>
+              <ul class="channel-list" id="channel-list"></ul>
             </div>
-          </div>
-          <aside class="detail-panel" id="detail-panel" aria-live="polite"></aside>
+          </section>
+          <aside class="detail-panel" id="detail-panel"></aside>
         </div>
       </section>
 
@@ -102,12 +104,12 @@
           <h2 id="open-streams-title">Open stream principles</h2>
         </div>
         <div class="open-streams-copy">
-          <div class="open-streams-links" aria-label="Open stream references">
+          <nav class="open-streams-links" aria-label="Open stream references" lang="en">
             <a class="text-link" id="open-streams-link" href="https://github.com/dlq/parliament-streams/blob/main/docs/open-stream-principles.md" target="_blank" rel="noreferrer">Open stream principles <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://opendefinition.org/" target="_blank" rel="noreferrer">Open Definition <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://www.rfc-editor.org/rfc/rfc8216" target="_blank" rel="noreferrer">HTTP Live Streaming (RFC 8216) <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://www.w3.org/WAI/media/av/" target="_blank" rel="noreferrer">Accessible audio and video <span aria-hidden="true">↗</span></a>
-          </div>
+          </nav>
         </div>
       </section>
     </main>
@@ -117,8 +119,8 @@
       <a id="about-link" href="https://github.com/dlq/parliament-streams/blob/main/README.md" target="_blank" rel="noreferrer">About the project</a>
     </footer>
 
-    <script defer src="catalogue-data.js"></script>
-    <script defer src="i18n.js"></script>
-    <script defer src="app.js?v=20260815-7"></script>
+    <script defer src="catalogue-data.js?v=20260816-identity"></script>
+    <script defer src="i18n.js?v=20260816-identity"></script>
+    <script defer src="app.js?v=20260816-tablet-sheet"></script>
   </body>
 </html>

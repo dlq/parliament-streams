@@ -1230,3 +1230,269 @@ claimed.
 - Northern Ireland Assembly TV is link-out with `no_third_party_reuse` because
   published copyright guidance requires formal agreement for direct linking,
   reproduction, copying, or downloading of live and archive proceedings.
+
+## 2026-08-16 sub-national candidate promotion pass
+
+Rechecked every strong candidate retained after the 2026-08-14 discovery
+pass. The promotion set is intentionally useful even where no permanent raw
+manifest is available: an official-player record must have an attributable
+institutional page, a schedule surface, identity metadata, and a
+source-specific rights note.
+
+Added 18 `official_page` records:
+
+- Canada: British Columbia, Alberta, Saskatchewan, Manitoba, Prince Edward
+  Island, Northwest Territories, and Newfoundland and Labrador.
+- Australia: New South Wales, Victoria, Queensland, and Western Australia.
+- Germany: North Rhine-Westphalia, Baden-Wurttemberg, and Bavaria.
+- Spain: Catalonia, Valencia, Andalusia, and Navarre.
+
+Added Jalisco Canal Parlamento as validated `direct_hls`. Its official
+Congreso de Jalisco live page loads the recorded vendor-hosted manifest, which
+establishes substantially stronger provenance than the earlier endpoint-only
+finding. Explicit third-party reuse terms were not found, so the entry remains
+`personal_use_pending_review` and follows the catalogue's opt-out playback
+posture.
+
+Did not add Colima. The technically working ICRTV feed is a regional public
+broadcaster, and this pass did not establish a sufficiently clear relationship
+to the state congress to describe it as a parliamentary channel.
+
+Validation artifacts:
+
+- `reports/health/2026-08-16-subnational-promotion-seed.json`
+- `reports/health/2026-08-16-subnational-promotion-static.json`
+- `reports/health/2026-08-16-subnational-promotion-deep-browser.json`
+
+The browser pass did not establish another stable direct feed. A documented
+Baden-Wurttemberg manifest pattern was visible but off-air during validation;
+it remains an official-page record rather than a permanent HLS claim.
+
+## 2026-08-16 external-source overlap and integration pass
+
+Goal: check whether another project already substantially overlaps this
+catalogue, beyond `iptv-org`, and identify external sources that could improve
+identity, discovery, schedule metadata, or provenance.
+
+Current local catalogue baseline during this pass:
+
+- 63 channel entries.
+- 33 national, 24 sub-national, and 6 supranational entries.
+- 48 direct HLS entries, 11 official-page entries, 3 YouTube entries, and 1
+  DASH research entry.
+- 39 validated technical entries, 13 link-only entries, and 11 `needs_review`
+  entries.
+- Implemented schedule parsers: CPAC, Quebec webdiffusion, Ontario calendar,
+  New Zealand Parliament, and Brazil TV Camara.
+
+### Closest overlap found
+
+No project found in this pass appears to be a direct equivalent of this repo's
+current scope: a parliamentary live-video catalogue with direct stream URLs,
+official fallbacks, validation history, schedule/EPG surfaces, source
+provenance, and rights posture.
+
+The closest overlaps are fragmented:
+
+- Generic M3U/IPTV playlists overlap on some raw URLs but lack source
+  provenance, rights evidence, EPG integration, validation history, and a
+  parliamentary-only scope.
+- Parliamentary open-data projects overlap on legislature identity, people,
+  proceedings, debates, events, and official websites, but generally do not
+  catalogue live stream endpoints.
+- Open Parliament TV overlaps conceptually on parliamentary video
+  accessibility and open standards, but for this catalogue it should be treated
+  as a Germany/Bundestag-specific archival/search API and reference project,
+  not as a broad cross-country live-stream catalogue peer.
+
+### Generic playlist overlap
+
+Sources checked:
+
+- Free-TV/IPTV: `https://github.com/Free-TV/IPTV`
+- EvilCult/iptv-m3u-maker:
+  `https://github.com/EvilCult/iptv-m3u-maker`
+
+Exact URL overlap found in Free-TV/IPTV:
+
+- Brazil TV Camara.
+- Denmark Folketinget.
+- Italy Senate.
+
+Additional name-level parliamentary hits in Free-TV/IPTV included Estonia
+Riigikogu, Greece Vouli TV, Oireachtas, Knesset, Luxembourg Chamber TV,
+Mongolia Parliament TV, and BBC Parliament.
+
+Name-level parliamentary hits in EvilCult/iptv-m3u-maker included Greece
+Vouli, Quebec Assembly, New Zealand Parliament TV, Stortinget, Spain Canal
+Parlamento, and Knesset Channel. Several of those examples appear stale or use
+older endpoint forms.
+
+Catalogue implication:
+
+- Treat generic playlist projects as discovery leads only.
+- Promotion path should remain:
+  `external_playlist_hit -> official provenance check -> endpoint validation -> terms review -> catalogue promotion`.
+- Do not inherit `tvg-id`, logo, or EPG claims from generic playlists without
+  separate official-source review.
+
+### Open Parliament TV / Germany Bundestag
+
+Sources checked:
+
+- Project home: `https://openparliament.tv/`
+- German instance/API docs: `https://de.openparliament.tv/api/?lang=en`
+- About page: `https://de.openparliament.tv/about?lang=en`
+- FAQ: `https://openparliament.tv/faq/`
+
+Relevant findings:
+
+- Open Parliament TV describes itself as an open-source, open-data project for
+  making parliamentary debate videos searchable, linkable, citable, and
+  shareable by synchronizing videos with proceedings.
+- The current prominent instance covers the German Bundestag. It has expansion
+  ambitions and open-source components, but no multi-country live-stream
+  catalogue comparable to this repo was found in this pass.
+- Its API exposes media, people, organisations, documents, terms, search, and
+  statistics around parliamentary debate video.
+- Its FAQ says it retrieves Bundestag video recordings via openly accessible
+  media-library RSS interfaces and works at the policy level where data is not
+  available as open data.
+
+Catalogue implication:
+
+- Group Open Parliament TV with country-specific parliamentary APIs and archive
+  systems, specifically as a German Bundestag search/citation source.
+- Possible future links: `openparliamenttv_id`, speech/video archive URLs,
+  transcript or media segment URLs, and entity mappings where an Open
+  Parliament TV instance covers the same legislature.
+- Good advocacy alignment: interoperable standards, interfaces, document
+  formats, and open parliamentary video access.
+
+### Identity and official-source discovery
+
+Sources checked:
+
+- IPU Parline API: `https://data.ipu.org/data-tools/api/`
+- Wikidata national parliaments list:
+  `https://www.wikidata.org/wiki/Wikidata:WikiProject_Parliaments/lists/national_parliaments`
+- GovDirectory: `https://www.govdirectory.org/`
+- GovDirectory source/project records:
+  `https://github.com/govdirectory/website`
+- Open Civic Data documentation:
+  `https://open-civic-data.readthedocs.io/`
+- EveryPolitician / OpenSanctions:
+  `https://github.com/opensanctions/everypolitician.org`
+
+Relevant findings:
+
+- IPU Parline provides read-only OpenAPI/JSON:API access to countries,
+  parliaments, chambers, elections, specialized bodies, people, and political
+  parties. It is a strong source for national parliament and chamber identity.
+- Wikidata and GovDirectory can help seed or verify official websites, social
+  accounts, YouTube channels, jurisdictions, and durable QIDs.
+- Open Civic Data has useful schema concepts for jurisdictions,
+  organizations, events, people, bills, votes, locations, agenda items, and
+  media links. It is more useful as a modeling reference than as a direct stream
+  source.
+- EveryPolitician/OpenSanctions is useful for political office-holder identity
+  and legislature coverage, but not for live-stream or EPG endpoint discovery.
+
+Catalogue implication:
+
+- Add links/IDs, not mirrored datasets.
+- Use IPU Parline as the national parliament/chamber identity backbone:
+  `external_ids.ipu_country_code`, `external_ids.ipu_parliament_code`, and
+  `external_ids.ipu_chamber_code`.
+- Use Wikidata/GovDirectory as entity discovery and dedupe aids:
+  `external_ids.wikidata_qid`, optional `govdirectory_url`, and an
+  `identity_sources[]` provenance list.
+- Do not copy broad external fields such as seat counts, member rosters,
+  elections, political-system classifications, biographies, or party data into
+  this catalogue unless directly needed for stream/source disambiguation.
+
+### Official parliamentary APIs and schedule sources
+
+Sources checked:
+
+- Open Parliament TV / Germany Bundestag:
+  `https://de.openparliament.tv/api/?lang=en`
+- UK Parliament Developer Hub: `https://developer.parliament.uk/home`
+- UK What's On API: `https://whatson-api.parliament.uk/swagger/ui/index`
+- Parliamentlive.tv Guide: `https://parliamentlive.tv/Guide`
+- Congress.gov API: `https://api.congress.gov/`
+- Congress.gov committee meeting endpoint documentation:
+  `https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/CommitteeMeetingEndpoint.md`
+- ParlVU Canada: `https://parlvu.parl.gc.ca/Harmony?lang=en`
+- Canada House of Commons Procedure and Practice broadcasting/webcasting
+  chapter:
+  `https://www.noscommunes.ca/procedure/procedure-and-practice-4/app17-e.html/ch24-3-e.html`
+- European Parliament Open Data API:
+  `https://data.europarl.europa.eu/en/developer-corner/opendata-api`
+
+Relevant findings:
+
+- Open Parliament TV is useful as a Germany/Bundestag archival media and
+  speech-search API; it is not a replacement for this catalogue's live endpoint,
+  schedule, and rights tracking.
+- UK Parliament has a rich API directory for members, interests, votes, oral
+  questions, statutory instruments, treaties, Erskine May, Parliament Now,
+  bills, written questions/statements, and committees. The What's On API exposes
+  calendar/event data and Parliament TV links in event metadata.
+- Congress.gov provides legislative data APIs; committee meeting metadata can
+  include video URLs.
+- ParlVU exposes live, upcoming, and on-demand House/committee video state, with
+  explicit terms and Speaker's permission context.
+- European Parliament has a formal open data API for parliamentary records, but
+  the live webstreaming schedule/player work remains separate from the general
+  open-data API.
+
+Catalogue implication:
+
+- These official APIs are high-value source-specific EPG/event metadata inputs.
+- They do not replace stream validation or rights review.
+- Add source-specific scraper/API adapters only where official endpoints are
+  stable enough and permission/provenance can be recorded.
+
+### Extractor/downloader ecosystem
+
+Sources checked:
+
+- yt-dlp supported sites:
+  `https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md`
+- youtube-dl Parliamentlive extractor reference:
+  `https://github.com/ytdl-org/youtube-dl/blob/master/youtube_dl/extractor/parliamentliveuk.py`
+
+Relevant findings:
+
+- yt-dlp supports `parliamentlive.tv` and `Parlview` extractors.
+- Older youtube-dl Parliamentlive code demonstrates how archive/event playback
+  was extracted through player configuration and Kaltura-style references.
+
+Catalogue implication:
+
+- Extractor projects are useful technical references for understanding player
+  stacks and archive/event behavior.
+- They are not a sufficient permission basis and should not be used as a
+  catalogue ingestion source for native playback without official-source terms
+  review.
+
+### Net conclusion
+
+This repo's useful niche remains distinct:
+
+- parliamentary live/source catalogue;
+- direct HLS plus official fallback model;
+- validation reports;
+- schedule/EPG source tracking;
+- rights and permission posture;
+- source provenance;
+- open stream standards advocacy.
+
+The best integration path is identity-first:
+
+1. Add Wikidata and IPU Parline external IDs/provenance to the schema.
+2. Use those IDs to improve deduplication, official-site discovery, and
+   national parliament/chamber mapping.
+3. Add official API/schedule adapters source by source.
+4. Keep generic playlists as discovery-only inputs.

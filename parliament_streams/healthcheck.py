@@ -7,6 +7,7 @@ import json
 import ssl
 import sys
 import time
+from collections.abc import Mapping
 from datetime import UTC, datetime
 from http.client import HTTPResponse
 from pathlib import Path
@@ -23,7 +24,7 @@ DEFAULT_RETRIES = 1
 MAX_RESPONSE_BYTES = 256 * 1024
 
 
-def _response_headers(response: HTTPResponse) -> dict[str, str]:
+def _response_headers(response: HTTPResponse | HTTPError) -> dict[str, str]:
     return {key.lower(): value for key, value in response.headers.items()}
 
 
@@ -122,7 +123,7 @@ def _check_hls(body: bytes, final_url: str | None, timeout: int, retries: int) -
     return result
 
 
-def check_channel(channel: dict[str, Any], timeout: int, retries: int) -> dict[str, Any]:
+def check_channel(channel: Mapping[str, Any], timeout: int, retries: int) -> dict[str, Any]:
     url = channel.get("playback_url") or channel.get("official_url")
     result: dict[str, Any] = {
         "id": channel["id"],

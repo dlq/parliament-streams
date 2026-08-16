@@ -1,7 +1,7 @@
 window.PARLIAMENT_STREAMS_CATALOGUE = {
-  "schema_version": 2,
+  "schema_version": 5,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-08-15",
+  "generated_on": "2026-08-16",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -10,6 +10,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Canada",
       "legislature": "Parliament of Canada",
+      "external_ids": {
+        "wikidata_qid": "Q475689",
+        "ipu_country_code": "CA",
+        "ipu_parliament_code": "CA",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q475689",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CA/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "English / French",
       "source_type": "direct_hls",
       "playback_url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
@@ -17,6 +39,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official CPAC stream endpoint discovered from CPAC metadata.",
       "technical_status": "validated",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en",
+          "fr"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "CPAC HLS variants have documented English and French audio groups and closed captions."
+      },
       "program": {
         "current_event_title": "Live public affairs feed",
         "current_event_time": "Schedule integration pending",
@@ -48,6 +80,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "New Zealand",
       "legislature": "New Zealand Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q1520966",
+        "ipu_country_code": "NZ",
+        "ipu_parliament_code": "NZ",
+        "ipu_chamber_code": "NZ-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1520966",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/NZ/NZ-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
@@ -55,6 +109,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "New Zealand Parliament TV. Attribute the source and link to the official Parliament TV terms.",
       "technical_status": "validated",
       "availability": "sitting_only",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Parliament TV",
         "current_event_time": "Live during House sittings",
@@ -88,6 +149,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Norway",
       "legislature": "Stortinget",
+      "external_ids": {
+        "wikidata_qid": "Q109016",
+        "ipu_country_code": "NO",
+        "ipu_parliament_code": "NO",
+        "ipu_chamber_code": "NO-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q109016",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/NO/NO-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Norwegian",
       "source_type": "direct_hls",
       "playback_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
@@ -95,6 +178,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Stortinget Nett-TV page exposed this HLS manifest during browser validation.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Stortinget chamber stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -127,6 +217,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Brazil",
       "legislature": "Camara dos Deputados",
+      "external_ids": {
+        "wikidata_qid": "Q1834804",
+        "ipu_country_code": "BR",
+        "ipu_parliament_code": "BR",
+        "ipu_chamber_code": "BR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1834804",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/BR/BR-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Portuguese",
       "source_type": "direct_hls",
       "playback_url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
@@ -134,6 +246,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official TV Camara stream; source attribution and watermark integrity matter.",
       "technical_status": "validated",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "TV Camara live",
         "current_event_time": "Official live channel",
@@ -166,6 +285,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Ireland",
       "legislature": "Houses of the Oireachtas",
+      "external_ids": {
+        "wikidata_qid": "Q129821",
+        "ipu_country_code": "IE",
+        "ipu_parliament_code": "IE",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q129821",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/IE/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "English / Irish",
       "source_type": "official_page",
       "playback_url": null,
@@ -173,6 +314,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Oireachtas TV page with live channel, Dail, Seanad, and committee-room embed codes.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Oireachtas TV live and chamber/committee streams",
         "current_event_time": "Live around scheduled proceedings",
@@ -213,6 +361,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Denmark",
       "legislature": "Folketinget",
+      "external_ids": {
+        "wikidata_qid": "Q209151",
+        "ipu_country_code": "DK",
+        "ipu_parliament_code": "DK",
+        "ipu_chamber_code": "DK-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q209151",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/DK/DK-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Danish",
       "source_type": "direct_hls",
       "playback_url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
@@ -220,6 +390,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Folketinget. Link to the Folketinget sharing and rights terms; do not use the Folketinget logo.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Folketinget live stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -243,6 +420,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Netherlands",
       "legislature": "Tweede Kamer",
+      "external_ids": {
+        "wikidata_qid": "Q233262",
+        "ipu_country_code": "NL",
+        "ipu_parliament_code": "NL",
+        "ipu_chamber_code": "NL-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q233262",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/NL/NL-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Dutch",
       "source_type": "direct_hls",
       "playback_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
@@ -250,6 +449,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Tweede Kamer live room stream.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "nl"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
+      },
       "program": {
         "current_event_title": "Plenary hall live stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -273,6 +481,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Spain",
       "legislature": "Congreso de los Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q539149",
+        "ipu_country_code": "ES",
+        "ipu_parliament_code": "ES",
+        "ipu_chamber_code": "ES-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q539149",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
@@ -280,6 +510,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Congreso/Canal Parlamento HLS candidate.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Canal Parlamento",
         "current_event_time": "Active around scheduled proceedings",
@@ -303,6 +540,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Spain",
       "legislature": "Congreso de los Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q539149",
+        "ipu_country_code": "ES",
+        "ipu_parliament_code": "ES",
+        "ipu_chamber_code": "ES-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q539149",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
@@ -310,6 +569,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Congreso en Directo signal 1",
         "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
@@ -350,6 +616,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Spain",
       "legislature": "Congreso de los Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q539149",
+        "ipu_country_code": "ES",
+        "ipu_parliament_code": "ES",
+        "ipu_chamber_code": "ES-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q539149",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
@@ -357,6 +645,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Congreso en Directo signal 2",
         "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
@@ -397,6 +692,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Spain",
       "legislature": "Congreso de los Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q539149",
+        "ipu_country_code": "ES",
+        "ipu_parliament_code": "ES",
+        "ipu_chamber_code": "ES-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q539149",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
@@ -404,6 +721,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Congreso en Directo signal 3",
         "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
@@ -444,6 +768,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Spain",
       "legislature": "Congreso de los Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q539149",
+        "ipu_country_code": "ES",
+        "ipu_parliament_code": "ES",
+        "ipu_chamber_code": "ES-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q539149",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
@@ -451,6 +797,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Congreso en Directo signal 4",
         "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
@@ -491,6 +844,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Spain",
       "legislature": "Congreso de los Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q539149",
+        "ipu_country_code": "ES",
+        "ipu_parliament_code": "ES",
+        "ipu_chamber_code": "ES-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q539149",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
@@ -498,6 +873,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Congreso en Directo signal 5",
         "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
@@ -538,6 +920,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "France",
       "legislature": "Assemblee nationale",
+      "external_ids": {
+        "wikidata_qid": "Q193582",
+        "ipu_country_code": "FR",
+        "ipu_parliament_code": "FR",
+        "ipu_chamber_code": "FR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q193582",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/FR/FR-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
@@ -545,6 +949,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official National Assembly HLS candidate; July 2026 health check reached the URL but received a malformed/minimal manifest.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "National Assembly live stream",
         "current_event_time": "Active around public sittings and meetings",
@@ -568,6 +979,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Chile",
       "legislature": "Camara de Diputadas y Diputados",
+      "external_ids": {
+        "wikidata_qid": "Q2119518",
+        "ipu_country_code": "CL",
+        "ipu_parliament_code": "CL",
+        "ipu_chamber_code": "CL-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2119518",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CL/CL-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
@@ -575,6 +1008,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Camara television page exposed this HLS manifest during browser validation.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Camara TV live stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -607,6 +1047,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Israel",
       "legislature": "Knesset",
+      "external_ids": {
+        "wikidata_qid": "Q133396",
+        "ipu_country_code": "IL",
+        "ipu_parliament_code": "IL",
+        "ipu_chamber_code": "IL-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q133396",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/IL/IL-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Hebrew",
       "source_type": "direct_hls",
       "playback_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
@@ -614,6 +1076,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Knesset Channel live page exposed this HLS manifest during browser validation.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Knesset Channel live stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -646,6 +1115,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Portugal",
       "legislature": "Assembleia da Republica",
+      "external_ids": {
+        "wikidata_qid": "Q740564",
+        "ipu_country_code": "PT",
+        "ipu_parliament_code": "PT",
+        "ipu_chamber_code": "PT-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q740564",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/PT/PT-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Portuguese",
       "source_type": "direct_hls",
       "playback_url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
@@ -653,6 +1144,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Canal Parlamento HLS candidate; pair with official agenda metadata.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "ARTV Canal Parlamento",
         "current_event_time": "Active around scheduled proceedings",
@@ -676,6 +1174,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Greece",
       "legislature": "Hellenic Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q477089",
+        "ipu_country_code": "GR",
+        "ipu_parliament_code": "GR",
+        "ipu_chamber_code": "GR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q477089",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/GR/GR-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Greek",
       "source_type": "direct_hls",
       "playback_url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8",
@@ -683,6 +1203,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Hellenic Parliament TV HLS candidate distributed through public broadcaster infrastructure.",
       "technical_status": "validated",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Hellenic Parliament TV",
         "current_event_time": "Official parliamentary TV feed",
@@ -706,6 +1233,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Luxembourg",
       "legislature": "Chambre des Deputes",
+      "external_ids": {
+        "wikidata_qid": "Q517449",
+        "ipu_country_code": "LU",
+        "ipu_parliament_code": "LU",
+        "ipu_chamber_code": "LU-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q517449",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/LU/LU-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "French / Luxembourgish",
       "source_type": "direct_hls",
       "playback_url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
@@ -713,6 +1262,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Chamber TV HLS candidate from official player infrastructure.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Chamber TV",
         "current_event_time": "Active around scheduled proceedings",
@@ -736,6 +1292,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Estonia",
       "legislature": "Riigikogu",
+      "external_ids": {
+        "wikidata_qid": "Q217799",
+        "ipu_country_code": "EE",
+        "ipu_parliament_code": "EE",
+        "ipu_chamber_code": "EE-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q217799",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/EE/EE-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Estonian",
       "source_type": "direct_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
@@ -743,6 +1321,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Riigikogu live page exposes this HLS manifest through its player.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Riigikogu live stream 1",
         "current_event_time": "Active around scheduled proceedings",
@@ -775,6 +1360,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Estonia",
       "legislature": "Riigikogu",
+      "external_ids": {
+        "wikidata_qid": "Q217799",
+        "ipu_country_code": "EE",
+        "ipu_parliament_code": "EE",
+        "ipu_chamber_code": "EE-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q217799",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/EE/EE-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Estonian",
       "source_type": "direct_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
@@ -782,6 +1389,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Riigikogu live page exposes this HLS manifest through its player.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Riigikogu live stream 2",
         "current_event_time": "Active around scheduled proceedings",
@@ -814,6 +1428,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Italy",
       "legislature": "Senato della Repubblica",
+      "external_ids": {
+        "wikidata_qid": "Q633872",
+        "ipu_country_code": "IT",
+        "ipu_parliament_code": "IT",
+        "ipu_chamber_code": "IT-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q633872",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/IT/IT-UC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Italian",
       "source_type": "direct_hls",
       "playback_url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
@@ -821,6 +1457,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Senate live HLS candidate; official source and terms need deeper review.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Senate live stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -844,6 +1487,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "India",
       "legislature": "Parliament of India",
+      "external_ids": {
+        "wikidata_qid": "Q695252",
+        "ipu_country_code": "IN",
+        "ipu_parliament_code": "IN",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q695252",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/IN/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Hindi / English",
       "source_type": "direct_hls",
       "playback_url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
@@ -851,6 +1516,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Sansad TV HLS candidate; terms and reliability require review.",
       "technical_status": "validated",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Sansad TV feed 1",
         "current_event_time": "Official parliamentary television feed",
@@ -874,6 +1546,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "India",
       "legislature": "Parliament of India",
+      "external_ids": {
+        "wikidata_qid": "Q695252",
+        "ipu_country_code": "IN",
+        "ipu_parliament_code": "IN",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q695252",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/IN/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Hindi / English",
       "source_type": "direct_hls",
       "playback_url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
@@ -881,6 +1575,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Sansad TV HLS candidate; terms and reliability require review.",
       "technical_status": "validated",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Sansad TV feed 2",
         "current_event_time": "Official parliamentary television feed",
@@ -904,6 +1605,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Thailand",
       "legislature": "National Assembly of Thailand",
+      "external_ids": {
+        "wikidata_qid": "Q1368318",
+        "ipu_country_code": "TH",
+        "ipu_parliament_code": "TH",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1368318",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/TH/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Thai",
       "source_type": "direct_hls",
       "playback_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
@@ -911,6 +1634,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Thai Parliament TV HLS candidate; terms and reliability require review.",
       "technical_status": "validated",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Thai Parliament TV",
         "current_event_time": "Official parliamentary television feed",
@@ -934,6 +1664,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Slovakia",
       "legislature": "National Council of the Slovak Republic",
+      "external_ids": {
+        "wikidata_qid": "Q1139204",
+        "ipu_country_code": "SK",
+        "ipu_parliament_code": "SK",
+        "ipu_chamber_code": "SK-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1139204",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/SK/SK-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Slovak",
       "source_type": "direct_hls",
       "playback_url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
@@ -941,6 +1693,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Parliamentary/public-broadcaster HLS candidate; source ownership needs review.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "TV NRSR",
         "current_event_time": "Active around scheduled proceedings",
@@ -964,6 +1723,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Mongolia",
       "legislature": "State Great Khural",
+      "external_ids": {
+        "wikidata_qid": "Q1544714",
+        "ipu_country_code": "MN",
+        "ipu_parliament_code": "MN",
+        "ipu_chamber_code": "MN-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1544714",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/MN/MN-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Mongolian",
       "source_type": "direct_dash",
       "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
@@ -971,6 +1752,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "SkyGo DASH distribution candidate for parliamentary television; ownership and terms need review.",
       "technical_status": "needs_review",
       "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Parliament TV DASH stream",
         "current_event_time": "macOS playback experiment",
@@ -994,6 +1782,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal01/playlist.m3u8",
@@ -1001,6 +1804,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1040,6 +1850,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal02/playlist.m3u8",
@@ -1047,6 +1872,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1086,6 +1918,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal03/playlist.m3u8",
@@ -1093,6 +1940,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1132,6 +1986,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal04/playlist.m3u8",
@@ -1139,6 +2008,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1178,6 +2054,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal05/playlist.m3u8",
@@ -1185,6 +2076,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Recently active Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1224,6 +2122,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal06/playlist.m3u8",
@@ -1231,6 +2144,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Recently active Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1270,6 +2190,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal07/playlist.m3u8",
@@ -1277,6 +2212,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1316,6 +2258,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal08/playlist.m3u8",
@@ -1323,6 +2280,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1362,6 +2326,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal09/playlist.m3u8",
@@ -1369,6 +2348,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1408,6 +2394,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal10/playlist.m3u8",
@@ -1415,6 +2416,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1454,6 +2462,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal11/playlist.m3u8",
@@ -1461,6 +2484,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1500,6 +2530,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal12/playlist.m3u8",
@@ -1507,6 +2552,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1546,6 +2598,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal13/playlist.m3u8",
@@ -1553,6 +2620,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1592,6 +2666,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
       "legislature": "Assemblee nationale du Quebec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "French",
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal14/playlist.m3u8",
@@ -1599,6 +2688,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Recently active Assembly webcast channel",
         "current_event_time": "Active when proceedings are scheduled",
@@ -1638,6 +2734,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Ontario",
       "legislature": "Legislative Assembly of Ontario",
+      "external_ids": {
+        "wikidata_qid": "Q1809086",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1809086",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en/playlist.m3u8",
@@ -1645,6 +2756,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "sitting_only",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "House proceedings",
         "current_event_time": "Live during sittings or scheduled events",
@@ -1677,6 +2795,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Ontario",
       "legislature": "Legislative Assembly of Ontario",
+      "external_ids": {
+        "wikidata_qid": "Q1809086",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1809086",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
@@ -1684,6 +2817,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "needs_review",
       "availability": "sitting_only",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The designated captioned House route is recorded, but its current direct endpoint needs review."
+      },
       "program": {
         "current_event_title": "House proceedings with captions",
         "current_event_time": "Live during sittings or scheduled events",
@@ -1716,6 +2858,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Ontario",
       "legislature": "Legislative Assembly of Ontario",
+      "external_ids": {
+        "wikidata_qid": "Q1809086",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1809086",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/rm151-en/playlist.m3u8",
@@ -1723,6 +2880,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Room 151 proceedings",
         "current_event_time": "Live during sittings or scheduled events",
@@ -1755,6 +2919,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Ontario",
       "legislature": "Legislative Assembly of Ontario",
+      "external_ids": {
+        "wikidata_qid": "Q1809086",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1809086",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/committee_1-en/playlist.m3u8",
@@ -1762,6 +2941,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Committee room 1",
         "current_event_time": "Live during sittings or scheduled events",
@@ -1794,6 +2980,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Ontario",
       "legislature": "Legislative Assembly of Ontario",
+      "external_ids": {
+        "wikidata_qid": "Q1809086",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1809086",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/committee_2-en/playlist.m3u8",
@@ -1801,6 +3002,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Committee room 2",
         "current_event_time": "Live during sittings or scheduled events",
@@ -1833,6 +3041,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Ontario",
       "legislature": "Legislative Assembly of Ontario",
+      "external_ids": {
+        "wikidata_qid": "Q1809086",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1809086",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English",
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/media-en/playlist.m3u8",
@@ -1840,6 +3063,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Media studio feed",
         "current_event_time": "Live during sittings or scheduled events",
@@ -1872,6 +3102,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Nunavut",
       "legislature": "Legislative Assembly of Nunavut",
+      "external_ids": {
+        "wikidata_qid": "Q2867082",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2867082",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English / Inuktitut",
       "source_type": "direct_hls",
       "playback_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
@@ -1879,6 +3124,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Nunavut Legislative Assembly webcast",
         "current_event_time": "Live during sittings",
@@ -1911,16 +3163,53 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "United Kingdom",
       "legislature": "UK Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q11010",
+        "ipu_country_code": "GB",
+        "ipu_parliament_code": "GB",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11010",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/GB/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "English",
       "source_type": "youtube",
       "playback_url": null,
-      "official_url": "https://www.youtube.com/UKParliament",
-      "attribution_text": "Selected live events and clips.",
-      "technical_status": "link_only",
+      "embed": {
+        "provider": "youtube",
+        "kind": "uploads_playlist",
+        "content_id": "UUMasyWuE1P2AaEKw_FkGq9g",
+        "url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUMasyWuE1P2AaEKw_FkGq9g",
+        "live_url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+        "notes": "Permanent official uploads playlist. It starts with the latest published video and may show an active broadcast when YouTube places it first; it is not a guaranteed live-only feed."
+      },
+      "official_url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+      "attribution_text": "Official UK Parliament YouTube uploads playlist with selected live events and recordings.",
+      "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
-        "current_event_title": "Channel page",
-        "current_event_time": "Open for selected live streams",
+        "current_event_title": "Latest channel upload or active broadcast",
+        "current_event_time": "Selected by YouTube from the official uploads playlist",
         "next_event_title": "Schedule metadata",
         "next_event_time": "Planned",
         "confidence": "high"
@@ -1928,11 +3217,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [],
       "permission": {
         "status": "embed_only",
-        "summary": "Official YouTube channel is link-out only; this catalogue does not extract YouTube manifests.",
+        "summary": "Playback uses YouTube's official privacy-enhanced playlist embed; this catalogue does not extract YouTube manifests.",
         "evidence": [
-          "https://www.youtube.com/UKParliament"
+          "https://www.youtube.com/UKParliament",
+          "https://support.google.com/youtube/answer/171780"
         ],
-        "recommendation": "Use official YouTube links or compliant embeds only."
+        "recommendation": "Use the official YouTube embed or channel link only. The permanent playlist is not guaranteed to select a live event."
       }
     },
     {
@@ -1941,16 +3231,53 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Australia",
       "legislature": "Parliament of Australia",
+      "external_ids": {
+        "wikidata_qid": "Q382118",
+        "ipu_country_code": "AU",
+        "ipu_parliament_code": "AU",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q382118",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/AU/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "English",
       "source_type": "youtube",
       "playback_url": null,
-      "official_url": "https://www.youtube.com/@AUSParliamentLive",
-      "attribution_text": "Live events hosted outside the native player.",
-      "technical_status": "link_only",
+      "embed": {
+        "provider": "youtube",
+        "kind": "uploads_playlist",
+        "content_id": "UUzx6ti0rql6Q2Dc2zSAPmuA",
+        "url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUzx6ti0rql6Q2Dc2zSAPmuA",
+        "live_url": "https://www.youtube.com/@AUSParliamentLive/live",
+        "notes": "Permanent official uploads playlist. It starts with the latest published video and may show an active broadcast when YouTube places it first; use the live-page link to check the current or next scheduled event."
+      },
+      "official_url": "https://www.youtube.com/@AUSParliamentLive/live",
+      "attribution_text": "Official Australian Parliament House Streaming Portal uploads playlist.",
+      "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
-        "current_event_title": "Channel page",
-        "current_event_time": "Open for active streams",
+        "current_event_title": "Latest channel upload or active broadcast",
+        "current_event_time": "Selected by YouTube from the official uploads playlist",
         "next_event_title": "Schedule metadata",
         "next_event_time": "Planned",
         "confidence": "medium"
@@ -1958,11 +3285,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [],
       "permission": {
         "status": "embed_only",
-        "summary": "Official YouTube channel is link-out only; this catalogue does not extract YouTube manifests.",
+        "summary": "Playback uses YouTube's official privacy-enhanced playlist embed; this catalogue does not extract YouTube manifests.",
         "evidence": [
-          "https://www.youtube.com/@AUSParliamentLive"
+          "https://www.youtube.com/@AUSParliamentLive",
+          "https://support.google.com/youtube/answer/171780"
         ],
-        "recommendation": "Use official YouTube links or compliant embeds only."
+        "recommendation": "Use the official YouTube embed or channel link only. Check the stable live page for the current or next scheduled event."
       }
     },
     {
@@ -1971,6 +3299,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Taiwan",
       "legislature": "Legislative Yuan",
+      "external_ids": {
+        "wikidata_qid": "Q715869",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q715869",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Mandarin",
       "source_type": "official_page",
       "playback_url": null,
@@ -1978,6 +3321,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Live portal with channels and meeting playlists.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Live portal",
         "current_event_time": "Open for active streams",
@@ -2001,6 +3351,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Germany",
       "legislature": "Deutscher Bundestag",
+      "external_ids": {
+        "wikidata_qid": "Q154797",
+        "ipu_country_code": "DE",
+        "ipu_parliament_code": "DE",
+        "ipu_chamber_code": "DE-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q154797",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/DE/DE-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "German",
       "source_type": "direct_hls",
       "playback_url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
@@ -2008,6 +3380,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Bundestag Parlamentsfernsehen channel 1 HLS candidate validated during democracy-tier refresh.",
       "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Bundestag Parlamentsfernsehen 1",
         "current_event_time": "Active around scheduled proceedings",
@@ -2040,16 +3419,53 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "Costa Rica",
       "legislature": "Asamblea Legislativa",
+      "external_ids": {
+        "wikidata_qid": "Q1386962",
+        "ipu_country_code": "CR",
+        "ipu_parliament_code": "CR",
+        "ipu_chamber_code": "CR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1386962",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CR/CR-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "youtube",
       "playback_url": null,
-      "official_url": "https://www.youtube.com/@AsambleaCRC",
-      "attribution_text": "Live and recorded Assembly proceedings.",
-      "technical_status": "link_only",
+      "embed": {
+        "provider": "youtube",
+        "kind": "uploads_playlist",
+        "content_id": "UUWN0rIWneMdqRmZ4yHs5GuA",
+        "url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUWN0rIWneMdqRmZ4yHs5GuA",
+        "live_url": "https://www.youtube.com/@AsambleaCRC/live",
+        "notes": "Permanent official uploads playlist. It starts with the latest published video and may show an active broadcast when YouTube places it first; use the live-page link to check the current or next scheduled event."
+      },
+      "official_url": "https://www.youtube.com/@AsambleaCRC/live",
+      "attribution_text": "Official Asamblea Legislativa uploads playlist with live and recorded proceedings.",
+      "technical_status": "validated",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
-        "current_event_title": "Channel page",
-        "current_event_time": "Open for active streams",
+        "current_event_title": "Latest channel upload or active broadcast",
+        "current_event_time": "Selected by YouTube from the official uploads playlist",
         "next_event_title": "Schedule metadata",
         "next_event_time": "Planned",
         "confidence": "medium"
@@ -2057,11 +3473,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [],
       "permission": {
         "status": "embed_only",
-        "summary": "Official YouTube channel is link-out only; this catalogue does not extract YouTube manifests.",
+        "summary": "Playback uses YouTube's official privacy-enhanced playlist embed; this catalogue does not extract YouTube manifests.",
         "evidence": [
-          "https://www.youtube.com/@AsambleaCRC"
+          "https://www.youtube.com/@AsambleaCRC",
+          "https://support.google.com/youtube/answer/171780"
         ],
-        "recommendation": "Use official YouTube links or compliant embeds only."
+        "recommendation": "Use the official YouTube embed or channel link only. Check the stable live page for the current or next scheduled event."
       }
     },
     {
@@ -2070,6 +3487,28 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "national",
       "country_or_region": "El Salvador",
       "legislature": "Asamblea Legislativa de El Salvador",
+      "external_ids": {
+        "wikidata_qid": "Q1812873",
+        "ipu_country_code": "SV",
+        "ipu_parliament_code": "SV",
+        "ipu_chamber_code": "SV-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1812873",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/SV/SV-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
       "language": "Spanish",
       "source_type": "direct_hls",
       "playback_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
@@ -2077,6 +3516,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Legislative Assembly plenary stream",
         "current_event_time": "Active around scheduled proceedings",
@@ -2109,6 +3555,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "supranational",
       "country_or_region": "European Union",
       "legislature": "European Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q8889",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q8889",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Multilingual",
       "source_type": "official_page",
       "playback_url": null,
@@ -2116,6 +3577,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official European Parliament Multimedia Centre webstreaming page.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "European Parliament plenary, committee, and institutional webstreams",
         "current_event_time": "Live around scheduled proceedings and events",
@@ -2149,6 +3617,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "supranational",
       "country_or_region": "European Union",
       "legislature": "Council of the European Union",
+      "external_ids": {
+        "wikidata_qid": "Q8896",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q8896",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Multilingual",
       "source_type": "official_page",
       "playback_url": null,
@@ -2156,6 +3639,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Council live page for public Council sessions and related events.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Council public sessions and events",
         "current_event_time": "Live around scheduled public sessions",
@@ -2189,6 +3679,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "supranational",
       "country_or_region": "European Union",
       "legislature": "European Union institutions",
+      "external_ids": {
+        "wikidata_qid": "Q458",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q458",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Multilingual",
       "source_type": "official_page",
       "playback_url": null,
@@ -2196,6 +3701,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official European Union Audiovisual Service / Europe by Satellite page.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "EU institutional live and audiovisual coverage",
         "current_event_time": "Live around scheduled EU events",
@@ -2228,6 +3740,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "supranational",
       "country_or_region": "United Nations",
       "legislature": "United Nations bodies",
+      "external_ids": {
+        "wikidata_qid": "Q1065",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1065",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Multilingual",
       "source_type": "official_page",
       "playback_url": null,
@@ -2235,6 +3762,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official United Nations Web TV live schedule page.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "UN meetings, events, and briefings",
         "current_event_time": "Live around scheduled UN coverage",
@@ -2268,6 +3802,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "supranational",
       "country_or_region": "Council of Europe",
       "legislature": "Parliamentary Assembly of the Council of Europe",
+      "external_ids": {
+        "wikidata_qid": "Q939743",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q939743",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Multilingual",
       "source_type": "official_page",
       "playback_url": null,
@@ -2275,6 +3824,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Council of Europe live webcast page carrying PACE and other Council of Europe sessions/events.",
       "technical_status": "needs_review",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "PACE and Council of Europe live sessions/events",
         "current_event_time": "Live around scheduled sessions",
@@ -2308,6 +3864,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Scotland",
       "legislature": "Scottish Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q206171",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q206171",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English / Gaelic",
       "source_type": "official_page",
       "playback_url": null,
@@ -2315,6 +3886,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Scottish Parliament TV page with live and archived chamber and committee coverage, including accessible variants where scheduled.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official service provides accessible variants for some scheduled proceedings."
+      },
       "program": {
         "current_event_title": "Scottish Parliament chamber and committee coverage",
         "current_event_time": "Live around scheduled parliamentary business",
@@ -2356,6 +3936,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Wales",
       "legislature": "Senedd Cymru / Welsh Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q493517",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q493517",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Welsh / English",
       "source_type": "official_page",
       "playback_url": null,
@@ -2363,6 +3958,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Senedd TV page with live and archived public Plenary and committee proceedings.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "Senedd Plenary and committee coverage",
         "current_event_time": "Live around scheduled public meetings",
@@ -2404,6 +4006,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "subnational",
       "country_or_region": "Northern Ireland",
       "legislature": "Northern Ireland Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q285714",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q285714",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "English / Irish",
       "source_type": "official_page",
       "playback_url": null,
@@ -2411,6 +4028,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official Northern Ireland Assembly TV page with scheduled Assembly and committee streams, archives, and language/accessibility variants.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official service provides language and accessibility variants for some scheduled proceedings."
+      },
       "program": {
         "current_event_title": "Northern Ireland Assembly and committee coverage",
         "current_event_time": "Live around scheduled Assembly business",
@@ -2444,6 +4070,21 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "jurisdiction_level": "supranational",
       "country_or_region": "OSCE",
       "legislature": "Organization for Security and Co-operation in Europe",
+      "external_ids": {
+        "wikidata_qid": "Q81299",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q81299",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
       "language": "Multilingual",
       "source_type": "official_page",
       "playback_url": null,
@@ -2451,6 +4092,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "attribution_text": "Official OSCE live page for streamed events.",
       "technical_status": "link_only",
       "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
       "program": {
         "current_event_title": "OSCE live events",
         "current_event_time": "Live around scheduled events",
@@ -2475,6 +4123,1173 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.oscepa.org/en/"
         ],
         "recommendation": "Use official link-out pending terms review; keep OSCE PA-specific coverage as a research target."
+      }
+    },
+    {
+      "id": "british-columbia-legislature-webcasts",
+      "name": "British Columbia Legislature Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "British Columbia",
+      "legislature": "Legislative Assembly of British Columbia",
+      "external_ids": {
+        "wikidata_qid": "Q1323479",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1323479",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+      "attribution_text": "Official Legislative Assembly of British Columbia live and archived webcast page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "The Assembly documents AI-generated closed captions and an ASL-focused webcast for Routine Business."
+      },
+      "program": {
+        "current_event_title": "Legislative Assembly of British Columbia proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.leg.bc.ca/index.php/parliamentary-business/parliamentary-calendar",
+          "method": "GET",
+          "kind": "parliamentary_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official page documents public House and committee webcasts, archives, and schedules, but this review did not locate terms expressly authorizing third-party playback or redistribution.",
+        "evidence": [
+          "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
+        ],
+        "recommendation": "Link to the official webcast page while direct playback and reuse terms remain unconfirmed."
+      }
+    },
+    {
+      "id": "alberta-assembly-online",
+      "name": "Alberta Assembly Online",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Alberta",
+      "legislature": "Legislative Assembly of Alberta",
+      "external_ids": {
+        "wikidata_qid": "Q1812866",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1812866",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "attribution_text": "Official Legislative Assembly of Alberta live and archived proceedings page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The Assembly states that closed captioning is available on all Assembly and committee broadcasts and video streams."
+      },
+      "program": {
+        "current_event_title": "Legislative Assembly of Alberta proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+          "method": "GET",
+          "kind": "watch_page_and_session_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Alberta permits personal and public non-commercial use of recorded excerpts if they are unaltered except for length, are not used in undignified, party-political, election, or advertising contexts, and preserve the distinction from official Hansard.",
+        "evidence": [
+          "https://www.assembly.ab.ca/terms-of-use-for-audio-and-video-recordings"
+        ],
+        "recommendation": "Link to Assembly Online. Reuse recordings only for non-commercial purposes under the published conditions."
+      }
+    },
+    {
+      "id": "saskatchewan-legislative-proceedings",
+      "name": "Saskatchewan Legislative Proceedings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Saskatchewan",
+      "legislature": "Legislative Assembly of Saskatchewan",
+      "external_ids": {
+        "wikidata_qid": "Q1537375",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1537375",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+      "attribution_text": "Official Legislative Assembly of Saskatchewan live and archived proceedings page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official proceedings page documents closed captions for live and archived video."
+      },
+      "program": {
+        "current_event_title": "Legislative Assembly of Saskatchewan proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.legassembly.sk.ca/parliamentary-calendar",
+          "method": "GET",
+          "kind": "parliamentary_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official service provides live Assembly and committee streams and archives, but explicit third-party playback or redistribution permission has not been recorded.",
+        "evidence": [
+          "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/"
+        ],
+        "recommendation": "Link to the official proceedings page pending a source-specific rights statement."
+      }
+    },
+    {
+      "id": "manitoba-house-broadcasts",
+      "name": "Manitoba House Broadcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Manitoba",
+      "legislature": "Legislative Assembly of Manitoba",
+      "external_ids": {
+        "wikidata_qid": "Q1517320",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1517320",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English / French",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+      "attribution_text": "Official Legislative Assembly of Manitoba House broadcast page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Legislative Assembly of Manitoba proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.gov.mb.ca/legislature/business/calendar.html",
+          "method": "GET",
+          "kind": "sessional_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Assembly supplies live and archived House and committee broadcasts for information, but this review did not locate clear third-party reuse terms.",
+        "evidence": [
+          "https://www.gov.mb.ca/legislature/business/house_broadcasts.html"
+        ],
+        "recommendation": "Link to the official broadcast page pending clarification of reuse and embedding permissions."
+      }
+    },
+    {
+      "id": "prince-edward-island-assembly-live",
+      "name": "Prince Edward Island Assembly Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Prince Edward Island",
+      "legislature": "Legislative Assembly of Prince Edward Island",
+      "external_ids": {
+        "wikidata_qid": "Q825815",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q825815",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.assembly.pe.ca/watch-live",
+      "attribution_text": "Official Legislative Assembly of Prince Edward Island live debates and committee page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Legislative Assembly of Prince Edward Island proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.assembly.pe.ca/calendar/202603",
+          "method": "GET",
+          "kind": "parliamentary_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The webcast page permits reproduction or rebroadcast only when the result is accurate, factual, complete, and does not editorialize, dramatize, or misrepresent the Assembly record. General copyright terms may add restrictions for commercial use.",
+        "evidence": [
+          "https://www.assembly.pe.ca/watch-live",
+          "https://www.assembly.pe.ca/copyright"
+        ],
+        "recommendation": "Link to the official live page and follow the Assembly's accuracy, completeness, attribution, and non-commercial conditions for any reuse."
+      }
+    },
+    {
+      "id": "northwest-territories-watch-session",
+      "name": "Northwest Territories Watch Session",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Northwest Territories",
+      "legislature": "Legislative Assembly of the Northwest Territories",
+      "external_ids": {
+        "wikidata_qid": "Q2867078",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2867078",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "Multiple official languages",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+      "attribution_text": "Official Northwest Territories Assembly live session and committee page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Separate official-language YouTube routes are listed, subject to interpreter availability; caption and sign-language support remains unverified."
+      },
+      "program": {
+        "current_event_title": "Legislative Assembly of the Northwest Territories proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.ntlegislativeassembly.ca/committees",
+          "method": "GET",
+          "kind": "assembly_and_committee_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Assembly publishes House and committee proceedings in multiple official languages, but this review did not locate explicit third-party playback or redistribution terms.",
+        "evidence": [
+          "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
+        ],
+        "recommendation": "Link to the official multilingual session page pending a source-specific rights statement."
+      }
+    },
+    {
+      "id": "newfoundland-labrador-house-webcast",
+      "name": "Newfoundland and Labrador House Webcast",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Newfoundland and Labrador",
+      "legislature": "Newfoundland and Labrador House of Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q258843",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q258843",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
+      "attribution_text": "Official Newfoundland and Labrador House of Assembly webcast page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official live page provides instructions for accessing closed captions."
+      },
+      "program": {
+        "current_event_title": "Newfoundland and Labrador House of Assembly proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.assembly.nl.ca/HouseBusiness/ParliamentaryCalendar.aspx",
+          "method": "GET",
+          "kind": "parliamentary_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Assembly terms permit attributed excerpts, citations, and rebroadcast for education, private study, research, criticism, review, and journalistic fair comment. Commercial use requires approval; political advertising, alteration beyond length, and undignified association are prohibited.",
+        "evidence": [
+          "https://www.assembly.nl.ca/CopyrightPrivacyStatement.aspx"
+        ],
+        "recommendation": "Link to the official webcast and follow the published attribution, purpose, editing, and non-commercial conditions for any reuse."
+      }
+    },
+    {
+      "id": "new-south-wales-parliament-webcasts",
+      "name": "New South Wales Parliament Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "New South Wales",
+      "legislature": "Parliament of New South Wales",
+      "external_ids": {
+        "wikidata_qid": "Q3365521",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3365521",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.parliament.nsw.gov.au/webcasts",
+      "attribution_text": "Official Parliament of New South Wales chamber and committee webcast hub.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The webcast hub documents English live captions for chamber and committee proceedings."
+      },
+      "program": {
+        "current_event_title": "Parliament of New South Wales proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parliament.nsw.gov.au/parliamentary-business/sitting-day-calendar",
+          "method": "GET",
+          "kind": "webcast_and_daily_program_page",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "NSW Parliament permits fair and accurate reporting of broadcast excerpts but prohibits use for political advertising, election campaigns, satire or ridicule, and commercial sponsorship or advertising.",
+        "evidence": [
+          "https://www.parliament.nsw.gov.au/copyright",
+          "https://www.parliament.nsw.gov.au/webcasts/lc-webcast"
+        ],
+        "recommendation": "Link to the official webcast hub and follow the Parliament's fair-reporting and prohibited-use conditions."
+      }
+    },
+    {
+      "id": "victoria-parliament-watch",
+      "name": "Victoria Parliament Watch",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Victoria",
+      "legislature": "Parliament of Victoria",
+      "external_ids": {
+        "wikidata_qid": "Q1848835",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1848835",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.parliament.vic.gov.au/watch/",
+      "attribution_text": "Official Parliament of Victoria live and archived proceedings page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The Parliament documents live captions for both chambers."
+      },
+      "program": {
+        "current_event_title": "Parliament of Victoria proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parliament.vic.gov.au/sittingcalendar",
+          "method": "GET",
+          "kind": "sitting_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Victorian parliamentary rules authorize fair, accurate, balanced broadcast use and prohibit satire, ridicule, commercial sponsorship or advertising, misleading context, and impermissible manipulation.",
+        "evidence": [
+          "https://www.parliament.vic.gov.au/watch/",
+          "https://www.parliament.vic.gov.au/49c19e/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf"
+        ],
+        "recommendation": "Link to the official watch page and follow the chamber-specific fair-reporting, context, editing, and non-commercial conditions."
+      }
+    },
+    {
+      "id": "queensland-parliament-live",
+      "name": "Queensland Parliament Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Queensland",
+      "legislature": "Parliament of Queensland",
+      "external_ids": {
+        "wikidata_qid": "Q3365548",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3365548",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
+      "attribution_text": "Official Queensland Parliament live chamber and committee broadcast page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official live broadcast page documents closed captions."
+      },
+      "program": {
+        "current_event_title": "Parliament of Queensland proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Sitting-Dates/Dates",
+          "method": "GET",
+          "kind": "sitting_dates",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Queensland authorizes further publication only as fair, accurate, balanced coverage and prohibits political advertising, election use, satire, ridicule, and commercial sponsorship or advertising.",
+        "evidence": [
+          "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live"
+        ],
+        "recommendation": "Link to the official live page and follow the Parliament's fair-reporting, balance, context, and prohibited-use conditions."
+      }
+    },
+    {
+      "id": "western-australia-parliament-live",
+      "name": "Western Australia Parliament Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Western Australia",
+      "legislature": "Parliament of Western Australia",
+      "external_ids": {
+        "wikidata_qid": "Q3365500",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3365500",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+      "attribution_text": "Official Parliament of Western Australia Legislative Assembly live broadcast page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official player provides closed-caption controls; captions are not the official record."
+      },
+      "program": {
+        "current_event_title": "Parliament of Western Australia proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parliament.wa.gov.au/parliament/sitting-dates",
+          "method": "GET",
+          "kind": "sitting_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "The page sets fair-reporting conditions for rebroadcasts but also expressly states that reproduction or distribution is prohibited. The explicit prohibition controls this catalogue's playback posture.",
+        "evidence": [
+          "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+        ],
+        "recommendation": "Link to the official live page only; do not relay, reproduce, or distribute the broadcast."
+      }
+    },
+    {
+      "id": "north-rhine-westphalia-landtag-live",
+      "name": "North Rhine-Westphalia Landtag Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "North Rhine-Westphalia",
+      "legislature": "Landtag of North Rhine-Westphalia",
+      "external_ids": {
+        "wikidata_qid": "Q571436",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q571436",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "attribution_text": "Official Landtag Nordrhein-Westfalen scheduled livestream page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "de"
+        ],
+        "sign_language": "available",
+        "audio_description": "unknown",
+        "notes": "Plenary listings provide an accessible stream with German Sign Language and subtitles."
+      },
+      "program": {
+        "current_event_title": "Landtag of North Rhine-Westphalia proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+          "method": "GET",
+          "kind": "scheduled_livestreams",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "Landtag NRW terms state that video and audio sequences may not be used, including excerpts and still frames, without prior written permission; permitted use must credit the Landtag and avoid misleading alteration.",
+        "evidence": [
+          "https://www.landtag.nrw.de/home/mediathek/anmeldung-zum-livestream.html?id=1116333"
+        ],
+        "recommendation": "Link to the official livestream schedule only unless written permission is obtained."
+      }
+    },
+    {
+      "id": "baden-wurttemberg-landtag-live",
+      "name": "Baden-Wurttemberg Landtag Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Baden-Wurttemberg",
+      "legislature": "Landtag of Baden-Württemberg",
+      "external_ids": {
+        "wikidata_qid": "Q455697",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q455697",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+      "attribution_text": "Official Landtag of Baden-Württemberg four-channel live page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "de"
+        ],
+        "sign_language": "available",
+        "audio_description": "unknown",
+        "notes": "The accessible player combines original video, German Sign Language, and subtitles."
+      },
+      "program": {
+        "current_event_title": "Landtag of Baden-Württemberg proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+          "method": "GET",
+          "kind": "livestream_and_sitting_schedule",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Landtag permits downloaded recordings for political reporting and private or civic-education non-commercial use with source credit, limited editing, no misleading context, and no commercial advertising use.",
+        "evidence": [
+          "https://www.landtag-bw.de/de/mediathek/nutzungsbedingungen-fuer-die-mediathek"
+        ],
+        "recommendation": "Link to the official live page. Apply the published non-commercial, attribution, editing, and context conditions to downloaded recordings."
+      }
+    },
+    {
+      "id": "bavaria-landtag-plenum-online",
+      "name": "Bavaria Landtag Plenum Online",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Bavaria",
+      "legislature": "Landtag of Bavaria",
+      "external_ids": {
+        "wikidata_qid": "Q641439",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q641439",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+      "attribution_text": "Official Bayerischer Landtag Plenum Online live and archive page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Landtag of Bavaria proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.bayern.landtag.de/aktuelles/sitzungen/",
+          "method": "GET",
+          "kind": "parliamentary_meetings",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Landtag provides live and archived parliamentary video and downloadable clips, but this review did not locate a clear general licence for third-party playback or redistribution.",
+        "evidence": [
+          "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+          "https://www.bayern.landtag.de/service/datenschutz/"
+        ],
+        "recommendation": "Link to Plenum Online and use only source-provided download or sharing routes pending a specific reuse statement."
+      }
+    },
+    {
+      "id": "catalonia-canal-parlament",
+      "name": "Catalonia Canal Parlament",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Catalonia",
+      "legislature": "Parliament of Catalonia",
+      "external_ids": {
+        "wikidata_qid": "Q135630",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q135630",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "Catalan / Spanish",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+      "attribution_text": "Official Parliament of Catalonia Canal Parlament live and on-demand service.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Parliament of Catalonia proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parlament.cat/web/index.html",
+          "method": "GET",
+          "kind": "parliamentary_agenda",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Parliament describes Canal Parlament as its institutional signal for citizens and media. Its rules permit lawful reuse of parliamentary information when meaning is preserved and the source and update date are cited.",
+        "evidence": [
+          "https://www.parlament.cat/web/index.html",
+          "https://www.parlament.cat/document/cataleg/165484.pdf"
+        ],
+        "recommendation": "Link to Canal Parlament and preserve source attribution, context, and the unaltered meaning of reused material."
+      }
+    },
+    {
+      "id": "valencia-canal-corts",
+      "name": "Valencia Canal Corts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Valencia",
+      "legislature": "Corts Valencianes",
+      "external_ids": {
+        "wikidata_qid": "Q2734573",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2734573",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "Valencian / Spanish",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://mediateca.cortsvalencianes.es/live",
+      "attribution_text": "Official Corts Valencianes Canal Corts live and audiovisual archive service.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Corts Valencianes proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.cortsvalencianes.es/es/actividad/actualidad/agenda",
+          "method": "GET",
+          "kind": "parliamentary_agenda",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Corts prominently provide Canal Corts, live event links, an audiovisual archive, and an agenda, but this review did not locate source-specific third-party playback or redistribution terms.",
+        "evidence": [
+          "https://www.cortsvalencianes.es/es",
+          "https://mediateca.cortsvalencianes.es/live"
+        ],
+        "recommendation": "Link to Canal Corts pending a source-specific rights statement."
+      }
+    },
+    {
+      "id": "andalusia-parliament-tv-live",
+      "name": "Andalusia Parliament TV Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Andalusia",
+      "legislature": "Parliament of Andalusia",
+      "external_ids": {
+        "wikidata_qid": "Q2743388",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2743388",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+      "attribution_text": "Official Parliament of Andalusia live TV programming page.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Parliament of Andalusia proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/agendasemanal.do",
+          "method": "GET",
+          "kind": "weekly_parliamentary_agenda",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Parliament provides a current live-programming page, weekly agenda, media archive, and official YouTube channel, but explicit third-party playback or redistribution terms have not been recorded.",
+        "evidence": [
+          "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do"
+        ],
+        "recommendation": "Link to the official live-programming page pending source-specific reuse terms."
+      }
+    },
+    {
+      "id": "navarre-parliament-live",
+      "name": "Navarre Parliament Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Navarre",
+      "legislature": "Parliament of Navarre",
+      "external_ids": {
+        "wikidata_qid": "Q2742602",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2742602",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
+      "attribution_text": "Official Parliament of Navarre live and video-library service.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Parliament of Navarre proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://parlamentodenavarra.es/es",
+          "method": "GET",
+          "kind": "parliamentary_calendar_and_live_page",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official documents describe a complete institutional signal supplied to media and the public for live streaming and on-demand consultation, but this review did not locate general third-party playback or redistribution terms.",
+        "evidence": [
+          "https://parlamentodenavarra.es/sites/default/files/contenido-estatico-archivos/Anexo%20III%20soporte%20web.pdf",
+          "https://parlamentodenavarra.es/es/pruebalive1.htm"
+        ],
+        "recommendation": "Link to the official live service pending a source-specific reuse statement."
+      }
+    },
+    {
+      "id": "jalisco-canal-parlamento",
+      "name": "Jalisco Canal Parlamento",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Jalisco",
+      "legislature": "Congress of Jalisco",
+      "external_ids": {
+        "wikidata_qid": "Q5160874",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5160874",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "direct_hls",
+      "playback_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+      "official_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+      "attribution_text": "Official Congress of Jalisco live-transmissions page embeds the vendor player serving this HLS endpoint.",
+      "technical_status": "validated",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
+      },
+      "program": {
+        "current_event_title": "Congress of Jalisco proceedings",
+        "current_event_time": "Live around scheduled parliamentary business",
+        "next_event_title": "Official parliamentary schedule",
+        "next_event_time": "See the official schedule source",
+        "confidence": "high"
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.congresojal.gob.mx/agenda-parlamentaria/mes",
+          "method": "GET",
+          "kind": "parliamentary_agenda",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official Congress live page embeds the vendor player associated with the validated Canal Parlamento HLS. No explicit third-party playback or redistribution terms were located.",
+        "evidence": [
+          "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo"
+        ],
+        "recommendation": "Allow client-side playback under the catalogue's opt-out policy with visible Congress attribution; remove or link out if the source requests it."
       }
     }
   ]

@@ -6,9 +6,9 @@ import json
 import re
 from datetime import UTC, datetime
 
-from .common import checked_label, clean_html
+from .common import ParsedSchedule, ScraperSource, checked_label, clean_html
 
-SOURCE = {
+SOURCE: ScraperSource = {
     "id": "quebec-webdiffusion",
     "channel_ids": [f"quebec-canal{i:02d}" for i in range(1, 15)],
     "urls": [
@@ -21,7 +21,9 @@ SOURCE = {
 }
 
 
-def parse(live_json: str, upcoming_json: str = '{"d":[]}', now: datetime | None = None) -> dict:
+def parse(
+    live_json: str, upcoming_json: str = '{"d":[]}', now: datetime | None = None
+) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     live_items = json.loads(live_json).get("d", [])
     upcoming_items = json.loads(upcoming_json).get("d", [])
@@ -33,7 +35,7 @@ def parse(live_json: str, upcoming_json: str = '{"d":[]}', now: datetime | None 
             f"{clean_html(next_item.get('Date', ''))}, {clean_html(next_item.get('Heure', ''))}"
         )
 
-    fallback = {
+    fallback: ParsedSchedule = {
         channel_id: {
             "current_event_title": "No live webcast listed",
             "current_event_time": checked_label(now),

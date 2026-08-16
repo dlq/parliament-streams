@@ -8,13 +8,19 @@ version = "0.1.0"
 description = "Documentation, data, and source scrapers for public parliamentary stream research."
 readme = "README.md"
 requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.23,<5"]
 license = "BSD-3-Clause"
 license-files = ["LICENSE"]
+
+[project.scripts]
+parliament-streams = "parliament_streams.cli:main"
 
 [project.optional-dependencies]
 dev = [
     "coverage[toml]>=7.10,<8",
+    "mypy>=1.15,<2",
     "ruff==0.16.2",
+    "types-jsonschema>=4.23,<5",
 ]
 
 [tool.coverage.run]
@@ -36,6 +42,10 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
 
 [tool.setuptools.packages.find]
 include = ["parliament_streams*"]

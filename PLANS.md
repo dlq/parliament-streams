@@ -25,8 +25,8 @@ Done:
 
 - `data/channels.json` is the canonical catalogue.
 - The catalogue records HLS, YouTube, official-page, and legacy DASH research
-  entries with jurisdiction, language, attribution, availability, metadata
-  level, EPG sources, and permission status.
+  entries with jurisdiction, language, attribution, availability, EPG sources,
+  permission status, and media-accessibility evidence.
 - Python scraper modules exist for CPAC, Quebec webdiffusion, Ontario calendar,
   New Zealand calendar, and Brazil TV Camara weekly schedule sources.
 - `docs/source-rights-and-permissions.md` records source-by-source rights evidence
@@ -50,11 +50,21 @@ Done:
 - Scottish Parliament TV, Senedd TV, and Northern Ireland Assembly TV are now
   represented as official-page and schedule entries; direct playback remains
   intentionally disabled without a documented supported route.
-- CI and `make verify` now validate JSON, compile Python modules, and run the
-  contract tests.
+- CI and `make verify` validate JSON plus catalogue/candidate rules, check
+  generated site data, enforce Ruff formatting and linting, run strict mypy and
+  branch coverage, validate HTML, and exercise desktop/mobile accessibility
+  with Axe and Playwright.
 - `site/` provides a build-free GitHub Pages catalogue driven by the canonical
-  JSON data, with client-side playback only for eligible validated endpoints.
+  JSON data, with client-side playback for eligible validated direct endpoints
+  and official provider embeds.
 - The 2026-08-15 catalogue/review reports record the latest validation pass.
+- Schema v5 records Wikidata QIDs for all catalogue institutions and IPU
+  Parline country, parliament, and chamber codes for applicable national bodies,
+  with dated identity-source provenance and public detail links.
+- A strictly typed Python management CLI now owns candidate intake, schema and
+  cross-record validation, atomic catalogue mutations, generated site-data
+  refreshes, validation seeds, identity audits, health-report comparison, and
+  CSV export.
 
 Retired from the active project:
 
@@ -84,31 +94,30 @@ Near-term:
    `institution_family` field, because they are not country-level legislatures.
 9. Define separate expansion criteria for sub-national institutions before
    adding official-page/link-out entries beyond the current curated set.
+10. Evaluate GovDirectory as a discovery and deduplication aid for official
+    websites and social channels. Keep it separate from stream, schedule, and
+    rights authority, as with the completed Wikidata integration.
 
-Strong candidates for the next sub-national pass:
+The 2026-08-16 sub-national promotion pass completed the previous strong-candidate
+list. It added 18 official-player and schedule records across Canada, Australia,
+Germany, and Spain, plus Jalisco's officially attributable direct HLS channel.
+The official-player records remain link-out entries unless a stable direct feed
+and suitable playback posture are both documented.
 
-1. Add official-page and schedule entries for British Columbia, Alberta,
-   Saskatchewan, Manitoba, Prince Edward Island, Northwest Territories, and
-   Newfoundland and Labrador. Treat obsolete direct endpoints separately from
-   otherwise useful official webcast and calendar pages.
-2. Add official-page and schedule entries for New South Wales, Victoria,
-   Queensland, and Western Australia after recording each parliament's
-   broadcast conditions and attribution requirements.
-3. Review North Rhine-Westphalia, Bavaria, and Catalonia as official-player and
-   schedule candidates with source-specific permission notes.
-4. Recheck Jalisco's validated HLS for first-party provenance and reuse terms;
-   promote it only if it can be tied clearly to the Congreso de Jalisco.
-5. Keep Colima separate as a legislature-adjacent regional broadcaster unless
+Remaining sub-national candidates:
+
+1. Keep Colima separate as a legislature-adjacent regional broadcaster unless
    stronger evidence establishes a parliamentary channel relationship.
-6. Revisit Baden-Wurttemberg, Valencia, Andalucia, and Navarre during active
-   sittings. Their previous direct-stream candidates were unavailable, timed
-   out, refused connections, or returned 404 and should not be promoted from
-   stale endpoint evidence.
+2. Revisit official-player records during active sittings for stable manifests,
+   especially Baden-Wurttemberg and the Spanish autonomous parliaments. Do not
+   promote event-specific or off-air endpoints as permanent feeds.
+3. Expand beyond the current Canadian, Australian, German, Spanish, Mexican,
+   and UK clusters only with an official live/archive page, a schedule surface,
+   a stable institutional identity, and a source-specific rights note.
 
 Later:
 
 1. Publish periodic validation reports without republishing external content.
-2. Add CSV exports for source, endpoint, permission, and EPG inventories.
 
 ## Scraper Work
 
@@ -118,11 +127,11 @@ the repo can record what was fetched and when.
 
 Near-term:
 
-1. Add fixture-based parser tests for each current scraper.
-2. Add a `scripts/fetch_epg.py` command that downloads official schedule pages
+1. Add a Python EPG collection command that downloads official schedule pages
    into timestamped local artifacts outside the tracked baseline.
-3. Add parser result examples under `examples/` once fixtures exist.
-4. Document required request headers and POST bodies beside each scraper.
+2. Add parser result examples under `examples/`.
+3. Expand fixture coverage as official source markup and response formats
+   change.
 
 Candidate future scrapers:
 
@@ -139,6 +148,20 @@ Candidate future scrapers:
 9. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
    catalogue starts expanding beyond national/supranational coverage.
+
+Future country-specific API integrations:
+
+- Keep a watchlist of country-specific parliamentary APIs and civic-tech
+  archive/search APIs that may enrich catalogue entries with event, archive,
+  speech, transcript, committee, or official-video links. Possible examples
+  include Open Parliament TV for Germany/Bundestag archive search, UK
+  Parliament APIs, Congress.gov committee/video metadata, Canadian ParlVU, and
+  comparable official APIs discovered later.
+- Treat these integrations as enrichment and provenance sources, not as
+  replacements for stream validation, schedule-source review, or rights review.
+- Add source-specific adapters only when the API has stable identifiers,
+  documented access rules, and a clear mapping to an existing catalogue entry or
+  future event/archive dataset.
 
 ### Browser-Side EPG Enrichment
 
@@ -180,8 +203,13 @@ Near-term:
 4. Record written permission requests and responses as summarized evidence, not
    raw private correspondence.
 5. Keep CPAC marked `no_third_party_reuse` unless written consent is obtained.
-6. Keep YouTube sources link-out or compliant-embed only; do not extract
-   YouTube manifests.
+6. Keep YouTube sources compliant-embed only; do not extract YouTube manifests.
+   The current permanent uploads playlists are useful fallbacks but are not
+   guaranteed live-only feeds. Consider a scheduled catalogue refresh that
+   records current or upcoming official video IDs without exposing an API key.
+7. Replace the current `unknown` accessibility states with cited evidence for
+   captions and caption languages, sign-language interpretation, and audio
+   description. Do not equate missing evidence with confirmed unavailability.
 
 ## Research And Advocacy
 

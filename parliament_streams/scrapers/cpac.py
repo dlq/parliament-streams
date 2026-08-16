@@ -5,9 +5,16 @@ from __future__ import annotations
 import re
 from datetime import UTC, datetime
 
-from .common import clean_html, local_time_label, parse_iso
+from .common import (
+    ParsedSchedule,
+    ScheduleEvent,
+    ScraperSource,
+    clean_html,
+    local_time_label,
+    parse_iso,
+)
 
-SOURCE = {
+SOURCE: ScraperSource = {
     "id": "cpac",
     "channel_ids": ["cpac-ca"],
     "url": "https://www.cpac.ca/schedule/",
@@ -16,9 +23,9 @@ SOURCE = {
 }
 
 
-def parse(html: str, now: datetime | None = None) -> dict[str, dict]:
+def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
-    entries = []
+    entries: list[ScheduleEvent] = []
     pattern = re.compile(
         r'data-airdate="([^"]+)"[\s\S]*?'
         r'<button[^>]*class="[^"]*schedule-item-btn[^"]*"[^>]*>([\s\S]*?)</button>',

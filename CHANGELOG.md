@@ -4,7 +4,7 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-08-15
+## Unreleased - 2026-08-16
 
 ### Added
 
@@ -12,7 +12,8 @@ application. Earlier application work remains available in Git history.
 - In-page native HLS playback for technically validated sources not expressly
   prohibited from third-party reuse.
 - Local rectangular SVG jurisdiction flags, including Quebec, Ontario, Nunavut,
-  EU, UN, and OSCE markers, with asset attribution and licence records.
+  the 2026 sub-national expansion jurisdictions, EU, UN, and OSCE markers,
+  with asset attribution and licence records.
 - The recovered historical parliamentary chamber/play icon as the local site
   header mark and favicon.
 - A client-side locale selector and URL/local-storage locale support for the
@@ -24,6 +25,27 @@ application. Earlier application work remains available in Git history.
   threshold.
 - Official-page, schedule, rights, and jurisdiction-flag records for the
   Scottish Parliament, Senedd Cymru, and Northern Ireland Assembly.
+- Schema v3 media-accessibility records for captions, caption languages,
+  sign-language interpretation, audio description, and evidence notes.
+- Locked HTML validation, Axe, and Playwright accessibility checks in local
+  verification and CI, including desktop and mobile interaction assertions.
+- Official privacy-enhanced YouTube uploads-playlist embeds for Australia, UK
+  Parliament, and Costa Rica, with stable live-page fallbacks.
+- Schema v5 external identity metadata: Wikidata QIDs for every catalogue
+  institution plus IPU Parline country, parliament, and chamber codes for
+  applicable national bodies, each backed by dated provenance records.
+- Eighteen official-player and schedule records for Canadian, Australian,
+  German, and Spanish sub-national legislatures, plus Jalisco's validated
+  direct HLS parliamentary channel.
+- A dated static and deep-browser validation set for the 2026-08-16
+  sub-national promotion pass.
+- A strict-typed Python catalogue manager with candidate scaffolding and
+  promotion, safe add/update/remove operations, JSON Schema plus cross-record
+  validation, validation-seed generation, identity audits, health checks and
+  report diffs, CSV export, and automatic site-snapshot regeneration.
+- Candidate review records under `candidates/` and a complete catalogue
+  maintenance guide.
+- Strict mypy and catalogue business-rule checks in local verification and CI.
 
 ### Changed
 
@@ -40,6 +62,13 @@ application. Earlier application work remains available in Git history.
   labels for supporting source evidence.
 - Recorded the opt-out playback posture and source-specific reuse evidence more
   clearly in the catalogue and documentation.
+- Replaced simulated table rows with a native list of buttons, preserved focus
+  during selection, and added keyboard focus management for the mobile detail
+  sheet.
+- Marked untranslated source and legal fields with their recorded language and
+  strengthened control borders, focus indicators, and reduced-motion behavior.
+- Advanced the catalogue to schema v4 with explicit provider, playlist,
+  live-page, and qualification metadata for official embeds.
 - Renamed the working roadmap to `PLANS.md` and the research log to `NOTES.md`.
 - Documented browser-side EPG enrichment as an optional future path: only the
   EU Audiovisual Service and European Parliament Multimedia Centre currently
@@ -62,6 +91,19 @@ application. Earlier application work remains available in Git history.
 - Standardized row alignment, outbound-link treatment, terminology tooltips,
   and source-evidence labels in the public catalogue.
 - Removed internal scraper implementation status from the public EPG display.
+- Removed invalid and unsupported ARIA attributes from catalogue controls and
+  restored focus to the selected source when the mobile detail sheet closes.
+- Replaced YouTube Error 153 in direct-file previews with an explicit HTTP
+  preview/public-catalogue fallback; hosted and local-server embeds are unchanged.
+- Added a favicon-specific crop with a full very-dark-green background that
+  fills the browser icon canvas while preserving the original recovered mark
+  for the site header.
+- Added compact Wikidata and IPU Parline identity links to each public stream
+  detail view without importing unrelated external political datasets.
+- Extended the resizable source-detail bottom sheet through tablet and narrow
+  desktop widths, eliminating the easy-to-miss detail card below the catalogue.
+- Raised Python catalogue-management coverage to 95% overall branch coverage
+  while retaining the enforced 90% CI floor.
 
 ## 2026-08-14
 

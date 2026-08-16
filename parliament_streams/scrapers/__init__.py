@@ -1,5 +1,7 @@
 """Schedule and EPG scraper registry."""
 
+from types import ModuleType
+
 from . import (
     brazil_tv_camara,
     cpac,
@@ -8,7 +10,7 @@ from . import (
     quebec_webdiffusion,
 )
 
-SCRAPERS = {
+SCRAPERS: dict[str, ModuleType] = {
     cpac.SOURCE["id"]: cpac,
     quebec_webdiffusion.SOURCE["id"]: quebec_webdiffusion,
     new_zealand_parliament.SOURCE["id"]: new_zealand_parliament,

@@ -6,9 +6,9 @@ import re
 from datetime import UTC, datetime
 from zoneinfo import ZoneInfo
 
-from .common import clean_html, local_time_label
+from .common import ParsedSchedule, ScheduleEvent, ScraperSource, clean_html, local_time_label
 
-SOURCE = {
+SOURCE: ScraperSource = {
     "id": "brazil-tv-camara",
     "channel_ids": ["brazil-tv-camara"],
     "url": "https://www.camara.leg.br/tv/programacao-semanal",
@@ -18,10 +18,10 @@ SOURCE = {
 }
 
 
-def parse(html: str, now: datetime | None = None) -> dict:
+def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     active = _active_tab_html(html) or html
-    events = []
+    events: list[ScheduleEvent] = []
     pattern = re.compile(
         r"<tr[^>]*>\s*<td[^>]*>\s*<span[^>]*>(\d{1,2}:\d{2})</span>\s*</td>\s*"
         r"<td[^>]*>\s*<span[^>]*>([\s\S]*?)</span>\s*</td>\s*</tr>",

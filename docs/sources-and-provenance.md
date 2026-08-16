@@ -28,6 +28,21 @@ entries, schedule/EPG scrape surfaces, and official YouTube/link-out sources.
 
 Each source should be treated as provisional unless its own official page and terms clearly support the intended use. Some direct URLs are discovered through official pages, official APIs, or official player infrastructure, but that does not automatically mean they are appropriate for all redistribution or embedding contexts.
 
+## External Institutional Identity
+
+Each catalogue entry records a Wikidata QID for the named legislature or
+institution. National entries covered by IPU Parline also record its country,
+parliament, and, where the source maps to one chamber, chamber code. The
+associated `identity_sources` records preserve the source URL, check date,
+confidence, and scope note.
+
+These links support stable identity, deduplication, and further research. They
+do not make Wikidata or IPU Parline authoritative sources for video endpoints,
+schedule data, technical health, or reuse rights. IPU identifiers are left null
+for devolved, sub-national, supranational, and other bodies outside its national
+parliament coverage. The catalogue does not mirror broad external facts such as
+seat counts, election results, party data, or biographies.
+
 ## Validation Reports
 
 `reports/health/` contains dated technical validation artifacts. They are
@@ -42,6 +57,8 @@ The current report families are:
   static official-page manifest references;
 - supranational and non-US sub-national discovery reports, which document
   bounded exploratory passes and should not be read as comprehensive coverage;
+- sub-national promotion reports, which revalidate the official pages and
+  direct candidates selected for addition to the catalogue;
 - deep browser validation reports, which load official pages in Chromium and
   capture manifests revealed by player scripts or network requests.
 

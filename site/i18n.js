@@ -20,7 +20,7 @@ const en = {
   rights: "Read rights and permission notes", footer: "Parliament Streams is an independent research catalogue.", about: "About the project",
   openStreams: "Open stream principles",
   sourceType: "Source type", accessStatus: "Access status", useGuidance: "Use guidance", availability: "Availability",
-  attribution: "Required attribution", programme: "Current programme record", schedule: "Schedule / EPG sources",
+  attribution: "Required attribution", programme: "Current programme record", identity: "External identity", schedule: "Schedule / EPG sources",
   reuse: "Reuse note.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Open official source",
   ready: "Ready to load the official feed", disabled: "Playback is not enabled for this source",
   noResults: "No catalogue entries match these filters.", noSchedule: "No schedule surface recorded.",
@@ -214,6 +214,16 @@ const mobileLabels = {
   mi: { filters: "Ngā tātari", close: "Katia ngā taipitopito puna" },
 };
 Object.entries(mobileLabels).forEach(([locale, labels]) => Object.assign(shared[locale], labels));
+
+const identityLabels = {
+  fr: "Identité externe", es: "Identidad externa", "pt-BR": "Identidade externa",
+  da: "Ekstern identitet", de: "Externe Identität", et: "Väline identiteet",
+  el: "Εξωτερική ταυτότητα", hi: "बाहरी पहचान", ga: "Aitheantas seachtrach",
+  it: "Identità esterna", lb: "Extern Identitéit", nl: "Externe identiteit",
+  nb: "Ekstern identitet", sk: "Externá identita", th: "ข้อมูลระบุตัวตนภายนอก",
+  "zh-Hans": "外部标识", "iu-Cans": "ᓯᓚᑖᓂ ᓇᓗᓇᐃᒃᑯᑕᖅ", mi: "Tuakiri ā-waho",
+};
+Object.entries(identityLabels).forEach(([locale, value]) => { shared[locale].identity = value; });
 
 function message(locale, key, values = {}) {
   const value = shared[locale]?.[key] ?? en[key] ?? key;

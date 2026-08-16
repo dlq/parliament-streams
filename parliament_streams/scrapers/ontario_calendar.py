@@ -5,7 +5,16 @@ from __future__ import annotations
 import re
 from datetime import UTC, datetime
 
-from .common import checked_label, clean_html, local_time_label, parse_iso
+from .common import (
+    ParsedSchedule,
+    ScheduleEvent,
+    ScheduleMetadata,
+    ScraperSource,
+    checked_label,
+    clean_html,
+    local_time_label,
+    parse_iso,
+)
 
 CHANNEL_IDS = [
     "ontario-house-en",
@@ -16,7 +25,7 @@ CHANNEL_IDS = [
     "ontario-media-en",
 ]
 
-SOURCE = {
+SOURCE: ScraperSource = {
     "id": "ontario-calendar",
     "channel_ids": CHANNEL_IDS,
     "url": "https://www.ola.org/en/legislative-business/calendar",
@@ -26,9 +35,9 @@ SOURCE = {
 }
 
 
-def parse(html: str, now: datetime | None = None) -> dict:
+def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
-    events = []
+    events: list[ScheduleEvent] = []
     pattern = re.compile(
         r'<time[^>]*datetime="([^"]+)"[^>]*>[\s\S]*?</time>[\s\S]*?'
         r"<h[1-6][^>]*>([\s\S]*?)</h[1-6]>",
@@ -44,7 +53,7 @@ def parse(html: str, now: datetime | None = None) -> dict:
     if not events:
         if "there are no events today" not in html.lower():
             return {}
-        metadata = {
+        metadata: ScheduleMetadata = {
             "current_event_title": "No calendar events listed today",
             "current_event_time": checked_label(now),
             "next_event_title": None,
@@ -61,11 +70,11 @@ def parse(html: str, now: datetime | None = None) -> dict:
             break
     current = events[current_index]
     next_event = events[current_index + 1] if current_index + 1 < len(events) else None
-    metadata = {
-        "current_event_title": current["title"],
-        "current_event_time": local_time_label(current["start"]),
-        "next_event_title": next_event["title"] if next_event else None,
-        "next_event_time": local_time_label(next_event["start"]) if next_event else None,
-        "confidence": "official_calendar",
-    }
+    metadata = ScheduleMetadata(
+        current_event_title=current["title"],
+        current_event_time=local_time_label(current["start"]),
+        next_event_title=next_event["title"] if next_event else None,
+        next_event_time=local_time_label(next_event["start"]) if next_event else None,
+        confidence="official_calendar",
+    )
     return {channel_id: metadata for channel_id in CHANNEL_IDS}
