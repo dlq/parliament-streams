@@ -181,12 +181,38 @@ Python inputs and generated catalogue data remain the canonical approach.
 
 ### Deferred Locale Work
 
-Before adding Mongolian or Hebrew as selectable site locales, review their
-catalogue scan order, label lengths, sorting, and the compact detail grid at
-desktop and mobile widths. Hebrew also requires a deliberate right-to-left
-layout pass, including column alignment, icon/flag placement, punctuation,
-external-link markers, and player controls. Do not expose either locale merely
-because the catalogue records content in that language.
+The explicitly named catalogue languages currently expose these interface
+locale gaps:
+
+1. Add Welsh (`cy`) for Senedd TV.
+2. Add Catalan (`ca`) for Catalonia Canal Parlament.
+3. Add Basque (`eu`) for Navarre Parliament Live.
+4. Add a Valencian locale (`ca-ES-valencia`) for Valencia Canal Corts, sharing
+   Catalan strings only where that is linguistically and institutionally
+   appropriate.
+5. Add Scottish Gaelic (`gd`) for Scottish Parliament TV. Do not reuse the
+   existing Irish (`ga`) locale; they are distinct languages.
+6. Add European Portuguese (`pt-PT`) for Portugal ARTV while retaining
+   Brazilian Portuguese (`pt-BR`) for Brazil TV Camara.
+7. Add Traditional Chinese (`zh-Hant`) for Taiwan Parliamentary TV while
+   retaining Simplified Chinese (`zh-Hans`).
+8. Confirm whether the Stortinget record should say Norwegian Bokmal (`nb`) or
+   whether Nynorsk (`nn`) also needs interface coverage.
+
+Before adding Mongolian (`mn`) or Hebrew (`he`) as selectable site locales,
+review their catalogue scan order, label lengths, sorting, and the compact
+detail grid at desktop and mobile widths. Hebrew requires a deliberate
+right-to-left layout pass, including column alignment, icon/flag placement,
+punctuation, external-link markers, and player controls. Mongolian requires an
+explicit decision about Cyrillic versus traditional Mongolian script and its
+layout implications. Do not expose either locale merely because the catalogue
+records content in that language.
+
+Replace the free-form channel `language` string with structured language codes
+and display labels so locale coverage can be checked automatically. Expand the
+six `Multilingual` supranational records and the Northwest Territories
+`Multiple official languages` record into evidence-backed language lists; the
+current generic labels prevent a complete coverage audit.
 
 ## Rights And Permission Work
 
