@@ -82,6 +82,9 @@ application. Earlier application work remains available in Git history.
   environment as local development and Dependabot checks.
 - Applied the current tested Ruff and GitHub Actions dependency updates in one
   consolidated maintenance change.
+- Switched Python dependency updates from Dependabot's `pip` integration to its
+  native `uv` integration so `pyproject.toml` and `uv.lock` remain synchronized.
+- Verified the catalogue manager and scrapers with mypy 2.3.1 and Ruff 0.16.3.
 - Restored the jurisdiction, format, and use-guidance filters at desktop widths
   while keeping them in a collapsible control on mobile.
 - Made `site/index.html` load the complete catalogue when opened directly as a
