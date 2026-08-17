@@ -452,7 +452,7 @@ GitHub Actions runs `.github/workflows/candidate-discovery.yml` on the first
 day of each month and on manual dispatch. It checks 25 maintained Tier 1 and 46
 Tier 2 targets statically, inspects official players in Chromium, validates
 discovered HLS/DASH manifests, and compares validated URLs with the catalogue.
-The workflow uploads 180-day evidence artifacts and writes uncatalogued results
+The workflow uploads 90-day evidence artifacts and writes uncatalogued results
 to the run summary. When review findings exist, it creates or updates the
 `Candidate discovery review queue` GitHub issue; it closes that issue when a
 later monthly run has no findings. It never adds or promotes catalogue records

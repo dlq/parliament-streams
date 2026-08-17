@@ -158,4 +158,4 @@ jobs:
           name: candidate-discovery-${{ github.run_id }}
           path: reports/discovery
           if-no-files-found: warn
-          retention-days: 180
+          retention-days: 90

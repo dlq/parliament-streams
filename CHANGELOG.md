@@ -10,7 +10,7 @@ application. Earlier application work remains available in Git history.
 
 - Canonical Tier 1 and Tier 2 discovery target data plus a monthly GitHub
   Actions audit that performs static and Chromium source discovery, compares
-  validated manifests with the catalogue, and retains review evidence for 180
+  validated manifests with the catalogue, and retains review evidence for 90
   days without automatically promoting sources. The workflow maintains a
   persistent candidate-review issue, while daily always-on regressions receive
   deduplicated issues that close on recovery. Deep browser validation uses four
