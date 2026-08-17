@@ -108,13 +108,14 @@ try {
 
   const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
   await europarlRow.click();
-  assert.equal(await page.getByText("Committee on the Environment", { exact: true }).count(), 1);
   assert.match(await page.locator(".programme-fetch-status").innerText(), /Schedule collected/);
-  assert.match(await page.locator(".programme-next").innerText(), /Plenary sitting/);
+  assert.match(await page.locator(".programme-line").first().innerText(), /^Now: Committee on the Environment/);
+  assert.match(await page.locator(".programme-line").nth(1).innerText(), /^Next: Plenary sitting/);
 
   await page.locator("#locale-select").selectOption("fr");
   assert.match(await page.locator(".programme-fetch-status").innerText(), /Horaire recueilli le/);
-  assert.match(await page.locator(".programme-next").innerText(), /À suivre :/);
+  assert.match(await page.locator(".programme-line").first().innerText(), /^Maintenant :/);
+  assert.match(await page.locator(".programme-line").nth(1).innerText(), /^À suivre :/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /horaires ouverts/);
 
   const search = page.locator("#search");

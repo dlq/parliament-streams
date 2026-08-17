@@ -436,15 +436,16 @@ function escapeHtml(value) {
 function programmeMarkup(channel) {
   const schedule = state.schedules[channel.id];
   const record = schedule ?? channel.program;
+  const programmeLine = (labelKey, title, time) => `<span class="programme-line"><strong>${t(labelKey)}</strong> ${escapeHtml(title)}${time ? ` <span class="programme-time">· ${escapeHtml(time)}</span>` : ""}</span>`;
+  const current = programmeLine("nowProgramme", record.current_event_title, record.current_event_time);
   const next = record.next_event_title
-    ? `<span class="programme-next"><strong>${t("nextProgramme")}</strong> ${escapeHtml(record.next_event_title)}<br><span class="detail-subtitle">${escapeHtml(record.next_event_time ?? "")}</span></span>`
+    ? programmeLine("nextProgramme", record.next_event_title, record.next_event_time)
     : "";
   const freshness = schedule
     ? `<span class="detail-subtitle programme-fetch-status">${t("scheduleCollected", { date: escapeHtml(new Date(schedule.fetched_at).toLocaleString(state.locale)) })}</span>`
     : "";
   return `<div class="programme-record" aria-live="polite">
-    <span>${escapeHtml(record.current_event_title)}</span>
-    <span class="detail-subtitle">${escapeHtml(record.current_event_time)}</span>
+    ${current}
     ${next}${freshness}
   </div>`;
 }
