@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-08-17",
+  "scope": "Catalogue entries marked needs_review, with validated event-based controls",
+  "reports": {
+    "static": "reports/health/2026-08-17-review-followup-static.json",
+    "browser_seed": "reports/health/2026-08-17-review-followup-browser-seed.json",
+    "deep_browser": "reports/health/2026-08-17-review-followup-deep-browser.json"
+  },
+  "media_child_probes": [
+    {
+      "id": "spain-canal-parlamento",
+      "protocol": "HLS",
+      "result": "HTTP 206 for a current transport-stream segment",
+      "decision": "Retain validated"
+    },
+    {
+      "id": "el-salvador-legislative-assembly",
+      "protocol": "HLS",
+      "result": "HTTP 206 for a current transport-stream segment only when TLS verification was disabled",
+      "decision": "Retain needs_review because the certificate chain fails normal validation"
+    },
+    {
+      "id": "mongolia-parliament-tv",
+      "protocol": "DASH",
+      "result": "HTTP 206 for current video initialization and media segments referenced by the live MPD",
+      "decision": "Promote to validated"
+    }
+  ],
+  "review_decisions": [
+    {
+      "ids": [
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "decision": "Retain needs_review",
+      "reason": "Each master playlist was reachable, but its only child playlist returned HTTP 404 while off air."
+    },
+    {
+      "ids": ["france-national-assembly"],
+      "decision": "Retain needs_review",
+      "reason": "The endpoint returned HTTP 200 but only an incomplete media-sequence line, not a valid HLS playlist."
+    },
+    {
+      "ids": ["ontario-house-en-cc"],
+      "decision": "Retain needs_review",
+      "reason": "The reviewed House endpoint returned HTTP 404; validated Ontario room controls closed the connection while the legislature was not sitting."
+    },
+    {
+      "ids": ["luxembourg-chamber-tv"],
+      "decision": "Retain needs_review",
+      "reason": "The direct endpoint was unreachable from the validation environment."
+    },
+    {
+      "ids": ["council-of-europe-pace-live"],
+      "decision": "Retain needs_review",
+      "reason": "The official page loaded in a browser, but no playable manifest was exposed during the check."
+    }
+  ]
+}

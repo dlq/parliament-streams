@@ -1,0 +1,174 @@
+{
+  "checked_at": "2026-08-17T10:34:40Z",
+  "scope": "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from static reports.",
+  "method": "Headless Chromium loads official/discovery pages, waits for scripts/player requests, captures .m3u8/.mpd network and DOM references, then validates discovered manifests. This does not solve authenticated, geo-blocked, DRM, or interaction-gated players.",
+  "inputs": [
+    "reports/health/2026-08-17-review-followup-browser-seed.json"
+  ],
+  "countries": [
+    {
+      "country": "Council of Europe",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "El Salvador",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "France",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Luxembourg",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Mongolia",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Ontario",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Spain",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    }
+  ],
+  "pages": [
+    {
+      "country": "Council of Europe",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.coe.int/en/web/portal/live",
+      "final_url": "https://www.coe.int/en/web/portal/live",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "TypeError: Liferay.SessionBase is not a constructor"
+      ]
+    },
+    {
+      "country": "El Salvador",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.asamblea.gob.sv/",
+      "final_url": "https://www.asamblea.gob.sv/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "France",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+      "final_url": "https://videos.assemblee-nationale.fr/direct.php",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Luxembourg",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.chd.lu/",
+      "final_url": "https://www.chd.lu/fr",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Mongolia",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.parliament.mn/",
+      "final_url": "https://www.parliament.mn/",
+      "page_status": null,
+      "load_note": "TimeoutError: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.parliament.mn/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Ontario",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.ola.org/en/legislative-business/video",
+      "final_url": "https://www.ola.org/en/legislative-business/video",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Spain",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.congreso.es/",
+      "final_url": "https://www.congreso.es/es/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Spain",
+      "tier_report": "reports/health/2026-08-17-review-followup-browser-seed.json",
+      "page_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+      "final_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    }
+  ]
+}

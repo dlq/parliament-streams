@@ -1,7 +1,7 @@
 {
     "schema_version": 5,
     "generated_from": "curated research and live endpoint validation",
-    "generated_on": "2026-08-16",
+    "generated_on": "2026-08-17",
     "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
     "channels": [
         {
@@ -1750,7 +1750,7 @@
             "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
             "official_url": "https://www.parliament.mn/",
             "attribution_text": "SkyGo DASH distribution candidate for parliamentary television; ownership and terms need review.",
-            "technical_status": "needs_review",
+            "technical_status": "validated",
             "availability": "always_on",
             "accessibility": {
                 "captions": "unknown",
@@ -1761,7 +1761,7 @@
             },
             "program": {
                 "current_event_title": "Parliament TV DASH stream",
-                "current_event_time": "macOS playback experiment",
+                "current_event_time": "DASH manifest and media children verified 2026-08-17",
                 "next_event_title": "Official source review",
                 "next_event_time": "Planned",
                 "confidence": "low"

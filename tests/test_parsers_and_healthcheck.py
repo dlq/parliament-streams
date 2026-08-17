@@ -3,6 +3,7 @@ import io
 import tempfile
 import unittest
 from datetime import UTC, datetime
+from http.client import RemoteDisconnected
 from pathlib import Path
 from unittest.mock import patch
 
@@ -130,6 +131,18 @@ class HealthcheckTests(unittest.TestCase):
         self.assertEqual(
             result, (200, {"content-type": "text/plain"}, b"ok", "https://example.test/final")
         )
+
+    def test_fetch_once_records_remote_disconnect(self):
+        with patch.object(
+            healthcheck,
+            "urlopen",
+            side_effect=RemoteDisconnected("Remote end closed connection without response"),
+        ):
+            result = healthcheck._fetch_once("https://example.test", timeout=1)
+        self.assertEqual(result[0], None)
+        self.assertEqual(result[1], {})
+        self.assertIn(b"Remote end closed connection", result[2])
+        self.assertEqual(result[3], None)
 
     def test_fetch_retries_server_errors(self):
         response = (200, {"content-type": "text/plain"}, b"ok", "https://example.test")

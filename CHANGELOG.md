@@ -4,7 +4,7 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-08-16
+## Unreleased - 2026-08-17
 
 ### Added
 
@@ -19,6 +19,8 @@ application. Earlier application work remains available in Git history.
 - A client-side locale selector and URL/local-storage locale support for the
   public catalogue interface.
 - Dated catalogue and review health reports.
+- A focused static, child-media, and browser validation report for Review
+  sources, including event-based Spain, France, and Ontario feeds.
 - Dependabot version updates for Python and GitHub Actions, plus CodeQL scans
   for Python and JavaScript.
 - Parser and health-check tests with a 90% enforced Python branch-coverage
@@ -76,6 +78,8 @@ application. Earlier application work remains available in Git history.
 - Clarified that Python and `uv` own catalogue management and verification,
   while Node and npm provide HTML, browser, and accessibility development
   checks and are not part of the deployed site's runtime.
+- Promoted Mongolia Parliament TV to technically validated after its live DASH
+  manifest, initialization object, and current media segment all responded.
 
 ### Fixed
 
@@ -110,6 +114,8 @@ application. Earlier application work remains available in Git history.
   desktop widths, eliminating the easy-to-miss detail card below the catalogue.
 - Raised Python catalogue-management coverage to 95% overall branch coverage
   while retaining the enforced 90% CI floor.
+- Made the Python health checker record remote HTTP disconnects as per-source
+  failures instead of aborting the complete validation run.
 
 ## 2026-08-14
 

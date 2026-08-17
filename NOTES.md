@@ -1496,3 +1496,37 @@ The best integration path is identity-first:
    national parliament/chamber mapping.
 3. Add official API/schedule adapters source by source.
 4. Keep generic playlists as discovery-only inputs.
+
+## 2026-08-17 Review-source validation follow-up
+
+Rechecked every catalogue entry marked `needs_review`, with validated
+event-based controls for Spain and Ontario. The static pass completed after the
+health checker was hardened to record abrupt HTTP disconnects per source.
+
+Mongolia Parliament TV is now `validated`: its dynamic DASH MPD, current video
+initialization object, and current video media segment were all retrievable.
+This is a technical finding only; the existing rights-review guidance remains
+unchanged.
+
+The other Review entries remain unchanged:
+
+- Spain's five event rooms returned valid master playlists while off air, but
+  each room's only child playlist returned HTTP 404. The main Canal Parlamento
+  control remained playable through a current HLS media segment.
+- France returned HTTP 200 with an incomplete media-sequence response rather
+  than a valid HLS playlist.
+- Ontario's reviewed House endpoint returned HTTP 404. The validated room
+  controls closed their connections while the legislature was not sitting, so
+  that observation is not sufficient to downgrade them.
+- El Salvador served a current HLS playlist and media segment only with TLS
+  verification disabled. The broken certificate chain prevents promotion.
+- Luxembourg's direct endpoint was unreachable from the validation environment.
+- The Council of Europe official page loaded in a browser but exposed no
+  playable manifest during this pass.
+
+Evidence is retained in:
+
+- `reports/health/2026-08-17-review-followup-static.json`
+- `reports/health/2026-08-17-review-followup-browser-seed.json`
+- `reports/health/2026-08-17-review-followup-deep-browser.json`
+- `reports/health/2026-08-17-review-followup-findings.json`

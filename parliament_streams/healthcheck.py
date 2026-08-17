@@ -9,7 +9,7 @@ import sys
 import time
 from collections.abc import Mapping
 from datetime import UTC, datetime
-from http.client import HTTPResponse
+from http.client import HTTPException, HTTPResponse
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -40,7 +40,7 @@ def _fetch_once(url: str, timeout: int) -> tuple[int | None, dict[str, str], byt
             )
     except HTTPError as error:
         return error.code, _response_headers(error), error.read(16 * 1024), error.geturl()
-    except (TimeoutError, URLError, ssl.SSLError) as error:
+    except (TimeoutError, URLError, ssl.SSLError, HTTPException) as error:
         return None, {}, str(error).encode("utf-8", errors="replace"), None
 
 
