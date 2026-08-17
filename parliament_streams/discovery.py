@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Iterable
 from datetime import UTC, datetime
 from typing import Any, Literal, TypedDict, cast
+from urllib.parse import urlsplit
 
 from .models import Catalogue
 
@@ -37,6 +38,33 @@ def _catalogue_playback_urls(catalogue: Catalogue) -> set[str]:
         if embed and embed.get("url"):
             urls.add(embed["url"])
     return urls
+
+
+def _is_plausible_live_manifest(url: str) -> bool:
+    lower = url.lower()
+    path = urlsplit(url).path.lower()
+    return not (
+        "\\u" in lower
+        or "&amp;" in lower
+        or lower.endswith(('"', "'"))
+        or "/vod" in path
+        or "_vod" in path
+        or "vod_" in path
+    )
+
+
+def _matches_catalogued_family(url: str, known_urls: set[str]) -> bool:
+    candidate = urlsplit(url)
+    for known_url in known_urls:
+        known = urlsplit(known_url)
+        if candidate.netloc.lower() != known.netloc.lower():
+            continue
+        if candidate.path == known.path:
+            return True
+        known_directory = known.path.rsplit("/", 1)[0] + "/"
+        if known_directory != "/" and candidate.path.startswith(known_directory):
+            return True
+    return False
 
 
 def _static_manifests(report: dict[str, Any], evidence: str) -> Iterable[ManifestCandidate]:
@@ -90,7 +118,7 @@ def build_discovery_findings(
     findings: list[DiscoveryFinding] = []
     seen: set[str] = set()
     for country, tier, kind, url, evidence in candidates:
-        if url in seen:
+        if url in seen or not _is_plausible_live_manifest(url):
             continue
         seen.add(url)
         findings.append(
@@ -100,7 +128,7 @@ def build_discovery_findings(
                 "kind": kind,
                 "url": url,
                 "evidence": evidence,
-                "status": "catalogued" if url in known_urls else "review",
+                "status": "catalogued" if _matches_catalogued_family(url, known_urls) else "review",
             }
         )
 

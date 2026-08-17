@@ -35,6 +35,10 @@ class DiscoveryFindingsTests(unittest.TestCase):
                             "url": "https://example.test/new.mpd",
                         },
                         {
+                            "status": "ok",
+                            "url": "https://example.test/vod/archive/playlist.m3u8",
+                        },
+                        {
                             "status": "warning",
                             "url": "https://example.test/not-valid.m3u8",
                         },
@@ -80,6 +84,44 @@ class DiscoveryFindingsTests(unittest.TestCase):
             checked_at="2026-08-17T00:00:00Z",
         )
         self.assertEqual(report["counts"]["validated"], 0)
+
+    def test_catalogue_master_covers_child_playlists(self) -> None:
+        catalogue = cast(
+            Catalogue,
+            {
+                "channels": [
+                    {
+                        "playback_url": "https://media.example/live/channel/master.m3u8",
+                        "embed": None,
+                    }
+                ]
+            },
+        )
+        report = build_discovery_findings(
+            catalogue,
+            [
+                (
+                    "static.json",
+                    {
+                        "tier": "tier1",
+                        "countries": [
+                            {
+                                "country": "Example",
+                                "results": [
+                                    {
+                                        "status": "ok",
+                                        "url": "https://media.example/live/channel/720p/chunklist.m3u8",
+                                    }
+                                ],
+                            }
+                        ],
+                    },
+                )
+            ],
+            [],
+            checked_at="2026-08-17T00:00:00Z",
+        )
+        self.assertEqual(report["findings"][0]["status"], "catalogued")
 
 
 if __name__ == "__main__":

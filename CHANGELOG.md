@@ -14,7 +14,9 @@ application. Earlier application work remains available in Git history.
   days without automatically promoting sources. The workflow maintains a
   persistent candidate-review issue, while daily always-on regressions receive
   deduplicated issues that close on recovery. Deep browser validation uses four
-  isolated concurrent page contexts to keep broad audits within job limits.
+  isolated concurrent page contexts to keep broad audits within job limits;
+  findings suppress child playlists of catalogued masters and malformed or VOD
+  URLs that are not new live-channel candidates.
 - A daily GitHub Actions catalogue audit covering schema and identity rules,
   primary stream/page health, schedule endpoints and parsers, and supporting
   official, rights, identity, and embed links, plus a weekly full-catalogue
