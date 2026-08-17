@@ -404,7 +404,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget",
+          "method": "GET",
+          "kind": "upcoming_broadcasts_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "explicit_reuse_with_conditions",
         "summary": "Folketinget grants a global, royalty-free, non-exclusive right to reproduce, disseminate, publicly show, and transmit its TV productions in all media and formats, including webcasts. Conditions include correct attribution, no modification except technically necessary changes, no endorsement, no use of parliamentary logos, and no access restrictions inconsistent with the source terms.",
@@ -465,7 +473,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+          "method": "GET",
+          "kind": "live_debates_and_agenda_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
@@ -524,7 +540,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.congreso.es/es/programacion",
+          "method": "GET",
+          "kind": "canal_parlamento_weekly_schedule",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official HLS candidate without recorded reuse permission.",
@@ -963,7 +987,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "low"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.assemblee-nationale.fr/dyn/seance-publique",
+          "method": "GET",
+          "kind": "public_sitting_agenda",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official video portal candidate without recorded reuse permission.",
@@ -1158,7 +1190,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "portugal-open-data-agenda",
+          "url": "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
+          "method": "GET",
+          "kind": "official_open_data_agenda_index",
+          "scraper_status": "implemented"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official HLS candidate without recorded reuse permission.",
@@ -1217,7 +1257,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/",
+          "method": "GET",
+          "kind": "television_programme_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Public-broadcaster/official parliamentary TV HLS candidate without recorded reuse permission.",
@@ -1276,7 +1324,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.chd.lu/fr/agenda",
+          "method": "GET",
+          "kind": "parliamentary_agenda",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official player HLS candidate without recorded reuse permission. The endpoint was not reachable from the 2026-08-14 validation environment.",
@@ -1471,7 +1527,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "italian-senate-palimpsest",
+          "url": "https://webtv.senato.it/api/palimpsest",
+          "method": "GET",
+          "kind": "webtv_schedule_api",
+          "scraper_status": "implemented"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official HLS candidate without recorded reuse permission.",
@@ -1530,7 +1594,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://sansadtv.nic.in/program-schedule",
+          "method": "GET",
+          "kind": "programme_schedule_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official-looking HLS candidate without recorded reuse permission.",
@@ -1589,7 +1661,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://sansadtv.nic.in/program-schedule",
+          "method": "GET",
+          "kind": "programme_schedule_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Official-looking HLS candidate without recorded reuse permission.",
@@ -1707,7 +1787,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "low"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://tv.nrsr.sk/",
+          "method": "GET",
+          "kind": "current_and_upcoming_broadcasts_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "Parliamentary/public-broadcaster HLS candidate without recorded reuse permission.",
@@ -3214,7 +3302,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "high"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://whatson.parliament.uk/",
+          "method": "GET",
+          "kind": "parliamentary_events_calendar",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "embed_only",
         "summary": "Playback uses YouTube's official privacy-enhanced playlist embed; this catalogue does not extract YouTube manifests.",
@@ -3282,7 +3378,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.aph.gov.au/News_and_Events/Watch_Parliament",
+          "method": "GET",
+          "kind": "broadcast_schedule_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "embed_only",
         "summary": "Playback uses YouTube's official privacy-enhanced playlist embed; this catalogue does not extract YouTube manifests.",
@@ -3470,7 +3574,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "next_event_time": "Planned",
         "confidence": "medium"
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx",
+          "method": "GET",
+          "kind": "live_transmission_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "embed_only",
         "summary": "Playback uses YouTube's official privacy-enhanced playlist embed; this catalogue does not extract YouTube manifests.",
@@ -3593,11 +3705,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "europarl-webstreaming",
           "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
           "method": "GET",
           "kind": "webstreaming_schedule_page",
-          "scraper_status": "planned"
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -3717,11 +3829,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "url": "https://audiovisual.ec.europa.eu/en",
+          "scraper": "ebs-grid",
+          "url": "https://audiovisual.ec.europa.eu/en/ebs/grid",
           "method": "GET",
-          "kind": "audiovisual_service_live_page",
-          "scraper_status": "planned"
+          "kind": "ebs_schedule_grid",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -4416,7 +4528,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.assembly.pe.ca/calendar/202603",
+          "url": "https://www.assembly.pe.ca/calendar",
           "method": "GET",
           "kind": "parliamentary_calendar",
           "scraper_status": "planned"

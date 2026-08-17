@@ -1,5 +1,6 @@
 import contextlib
 import io
+import json
 import tempfile
 import unittest
 from datetime import UTC, datetime
@@ -12,14 +13,90 @@ from parliament_streams.scrapers import __main__ as scraper_cli
 from parliament_streams.scrapers import (
     brazil_tv_camara,
     cpac,
+    ebs,
+    european_parliament,
+    italian_senate,
     new_zealand_parliament,
     ontario_calendar,
+    portugal_agenda,
     quebec_webdiffusion,
 )
 from parliament_streams.scrapers.common import clean_html, first_match, parse_iso
 
 
 class ParserTests(unittest.TestCase):
+    def test_italian_senate_json_schedule(self):
+        payload = json.dumps(
+            [
+                {"title": "Seduta di Assemblea n. 448", "field_date": "13:00"},
+                {"title": "Commissione Affari costituzionali", "field_date": "15.30"},
+            ]
+        )
+        parsed = italian_senate.parse(
+            payload,
+            "[]",
+            "[]",
+            now=datetime(2026, 8, 17, 10, tzinfo=UTC),
+        )
+        schedule = parsed["italy-senate"]
+        self.assertEqual(schedule["current_event_title"], "Seduta di Assemblea n. 448")
+        self.assertEqual(schedule["next_event_title"], "Commissione Affari costituzionali")
+
+    def test_italian_senate_requests_cover_three_days(self):
+        requests = italian_senate.request_specs(datetime(2026, 8, 17, 10, tzinfo=UTC))
+        self.assertEqual(len(requests), 3)
+        self.assertIn("field_date_value%5Bmin%5D=2026-08-17T00%3A00%3A00", requests[0]["url"])
+
+    def test_portugal_open_data_agenda(self):
+        payload = json.dumps(
+            [
+                {
+                    "EventStartDate": "18/08/2026",
+                    "EventStartTime": "10:00:00",
+                    "Section": "Plenário",
+                    "Title": "Reunião Plenária",
+                },
+                {
+                    "EventStartDate": "18/08/2026",
+                    "EventStartTime": "14:30:00",
+                    "Section": "Comissões Parlamentares",
+                    "Title": "Comissão de Assuntos Europeus",
+                },
+                {
+                    "EventStartDate": "18/08/2026",
+                    "EventStartTime": None,
+                    "Section": "Grupos Parlamentares",
+                    "Title": "Not a broadcast schedule",
+                },
+            ]
+        )
+        schedule = portugal_agenda.parse(payload, now=datetime(2026, 8, 17, 12, tzinfo=UTC))[
+            "portugal-artv"
+        ]
+        self.assertEqual(schedule["current_event_title"], "Reunião Plenária")
+        self.assertEqual(schedule["next_event_title"], "Comissão de Assuntos Europeus")
+
+    def test_portugal_resolves_current_open_data_download(self):
+        responses = {
+            portugal_agenda.INDEX_URL: (
+                '<a title="Pasta XVII Legislatura" href="/legislature?Path=current">XVII</a>'
+            ),
+            "https://www.parlamento.pt/legislature?Path=current": (
+                '<a href="https://app.parlamento.pt/AgendaParlamentar_json.txt?token=current">'
+                "JSON</a>"
+            ),
+            "https://app.parlamento.pt/AgendaParlamentar_json.txt?token=current": "[]",
+        }
+
+        def fetcher(spec, _timeout, _retries):
+            return responses[spec["url"]]
+
+        parsed, urls = portugal_agenda.collect(fetcher, datetime(2026, 8, 17, 12, tzinfo=UTC), 3, 0)
+        self.assertEqual(parsed, {})
+        self.assertEqual(
+            urls[-1], "https://app.parlamento.pt/AgendaParlamentar_json.txt?token=current"
+        )
+
     def test_common_helpers_handle_html_and_invalid_dates(self):
         self.assertEqual(
             clean_html("<strong>Hello</strong><br>world &amp; friends"), "Hello world & friends"
@@ -85,6 +162,34 @@ class ParserTests(unittest.TestCase):
             new_zealand["new-zealand-parliament"]["next_event_time"], "Tuesday at 2pm."
         )
         self.assertEqual(new_zealand_parliament.parse("No calendar listing"), {})
+
+    def test_european_parliament_parser_selects_current_and_next(self):
+        payload = """{
+          "pageProps": {"mediaItems": [
+            {"title": "Committee", "room": "Brussels", "statusName": "LIVE",
+             "EventDateStart": "2026-08-17T13:00:00Z",
+             "EventDateEnd": "2026-08-17T15:00:00Z"},
+            {"title": "Plenary", "room": "Strasbourg", "statusName": "UPCOMING",
+             "EventDateStart": "2026-08-17T16:00:00Z",
+             "EventDateEnd": "2026-08-17T18:00:00Z"}
+          ]}
+        }"""
+        result = european_parliament.parse(payload, datetime(2026, 8, 17, 14, tzinfo=UTC))[
+            "european-parliament-multimedia-centre"
+        ]
+        self.assertEqual(result["current_event_title"], "Committee - Brussels")
+        self.assertEqual(result["next_event_title"], "Plenary - Strasbourg")
+
+    def test_ebs_parser_selects_current_and_next(self):
+        payload = """[{"programs": [
+          {"startDatetime": "2026-08-17T13:00:00Z", "duration": 7200,
+           "titles": [{"language": "EN", "content": "<p>Live briefing</p>"}]},
+          {"startDatetime": "2026-08-17T16:00:00Z", "duration": 3600,
+           "titles": [{"language": "EN", "content": "Next briefing"}]}
+        ]}]"""
+        result = ebs.parse(payload, datetime(2026, 8, 17, 14, tzinfo=UTC))["eu-audiovisual-ebs"]
+        self.assertEqual(result["current_event_title"], "Live briefing")
+        self.assertEqual(result["next_event_title"], "Next briefing")
 
     def test_scraper_cli_writes_json_from_saved_input(self):
         with tempfile.TemporaryDirectory() as directory:

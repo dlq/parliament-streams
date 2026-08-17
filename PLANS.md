@@ -28,7 +28,10 @@ Done:
   entries with jurisdiction, language, attribution, availability, EPG sources,
   permission status, and media-accessibility evidence.
 - Python scraper modules exist for CPAC, Quebec webdiffusion, Ontario calendar,
-  New Zealand calendar, and Brazil TV Camara weekly schedule sources.
+  New Zealand calendar, Brazil TV Camara, European Parliament webstreaming, and
+  Europe by Satellite schedule sources.
+- A typed collector fetches implemented schedule sources and GitHub Actions
+  publishes normalized static schedule JSON every six hours.
 - `docs/source-rights-and-permissions.md` records source-by-source rights evidence
   and recommendations.
 - `docs/sources-and-provenance.md` explains repository license scope and
@@ -122,30 +125,29 @@ Later:
 ## Scraper Work
 
 The Python scrapers should stay narrow and auditable. They parse supplied
-HTML/JSON; network fetches should be explicit in future collection scripts so
-the repo can record what was fetched and when.
+HTML/JSON; the shared collector owns explicit network requests, retries,
+timestamps, failure records, and static JSON output.
 
 Near-term:
 
-1. Add a Python EPG collection command that downloads official schedule pages
-   into timestamped local artifacts outside the tracked baseline.
+1. Add Python catalogue commands for adding and replacing schedule endpoints
+   without hand-editing complete channel records. Endpoint checking is now
+   available through `parliament-streams epg-audit`.
 2. Add parser result examples under `examples/`.
 3. Expand fixture coverage as official source markup and response formats
    change.
 
 Candidate future scrapers:
 
-1. UK Parliamentlive guide/day/info surfaces.
-2. European Parliament Multimedia Centre REST calls.
-3. UN Web TV schedule/event pages.
-4. Council of the European Union live schedule.
-5. Council of Europe/PACE live and multimedia resources.
-6. Portugal ARTV agenda.
-7. Spain Congreso/Canal Parlamento programming.
-8. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
-   Israel, El Salvador, Mauritius, Italy, India, Thailand, Slovakia, Nunavut,
+1. UK Parliament live guide/day/info surfaces.
+2. UN Web TV schedule/event pages.
+3. Council of the European Union live schedule.
+4. Council of Europe/PACE live and multimedia resources.
+5. Spain Congreso/Canal Parlamento programming.
+6. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
+   Israel, El Salvador, Mauritius, India, Thailand, Slovakia, Nunavut,
    and other second-ring sources when structured official endpoints are found.
-9. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
+8. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
    catalogue starts expanding beyond national/supranational coverage.
 
@@ -163,21 +165,27 @@ Future country-specific API integrations:
   documented access rules, and a clear mapping to an existing catalogue entry or
   future event/archive dataset.
 
-### Browser-Side EPG Enrichment
+### Scheduled EPG Publication
 
-Browser-side schedule fetching is not a general replacement for the Python
-scrapers. A 2026-08-15 CORS check of the 23 unique recorded EPG URLs found only
-two sources that return `Access-Control-Allow-Origin: *`:
+GitHub Actions collects implemented schedule sources every six hours and
+publishes `data/schedules.json` inside the Pages artifact. This avoids browser
+CORS restrictions without adding a continuously running backend or committing
+transient schedule data to `main`. The page reads only the same-origin snapshot.
 
-- EU Audiovisual Service / EBS: `https://audiovisual.ec.europa.eu/en`
-- European Parliament Multimedia Centre:
-  `https://multimedia.europarl.europa.eu/en/webstreaming`
+The European Parliament Next.js endpoint contains a deployment-specific build
+ID and needs periodic maintenance. New Zealand currently returns Radware bot
+protection to the Python client in some environments; the collector records
+that as an error and the page falls back to the catalogue record. Future
+collectors should preserve this partial-success behavior and must not turn
+blocked responses into empty schedules.
 
-Neither surface has yet been validated as a stable, parseable browser-side EPG
-feed. The other 21 sources do not currently permit browser cross-origin reads,
-even where their pages are publicly reachable. Any future in-page enrichment
-must be optional and limited to sources that explicitly allow it; collected
-Python inputs and generated catalogue data remain the canonical approach.
+The 2026-08-17 EPG review added Italy's dated WebTV JSON API and Portugal's
+official open-data agenda resolver. It also recorded official schedule or
+agenda surfaces for Denmark, the Netherlands, Spain Canal Parlamento, France,
+Greece, Luxembourg, India, Slovakia, the UK, Australia, and Costa Rica. No
+current schedule source was confirmed for Thailand Parliament TV, Mongolia
+Parliament TV, or Taiwan Parliamentary TV; those three remain explicit research
+gaps rather than links to stale or generic pages.
 
 ### Deferred Locale Work
 

@@ -94,20 +94,25 @@ evidence establishes; `unknown` is preferable to inferring that captions,
 sign-language interpretation, or audio description are absent.
 
 Python scrapers should parse supplied HTML/JSON strings. Do not hide network
-fetches inside parser functions; fetch scripts should record where data came
-from and when it was retrieved.
+fetches inside parser functions; the shared schedule collector owns HTTP,
+timeouts, retries, timestamps, and normalized static output.
 
-For `epg_sources`, use `scraper_status: implemented` only when the named
-scraper module exists and is registered. Use `scraper: planned` and
-`scraper_status: planned` for documented schedule sources that still need
-parser work. This is maintainer metadata and is not presented as live schedule
-status on the public catalogue page.
+For `epg_sources`, use `scraper_status: implemented` only when the named Python
+parser exists, is registered, and has fixture coverage. Use
+`scraper: planned` and `scraper_status: planned` for documented schedule
+sources that still need parser work. This is maintainer metadata and is not
+presented as live schedule status on the public catalogue page.
 
 To test a parser manually, save the official response to disk and run:
 
 ```sh
 uv run --extra dev python -m parliament_streams.scrapers <scraper-id> <response-file>
 ```
+
+Run `make schedules` for an end-to-end live check. The resulting ignored
+`data/schedules.json` uses the same schema and path consumed by local HTTP
+previews and the generated Pages artifact. Never commit transient schedule
+output to the catalogue history.
 
 ## Validation Reports
 

@@ -6,10 +6,12 @@ const { locales, localizedLabel, message, supportedLocale } = window.ParliamentS
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
+const schedulesUrl = new URL("./data/schedules.json", appScriptUrl);
+const localSchedulesUrl = new URL("../data/schedules.json", appScriptUrl);
 const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
+const state = { channels: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
 const elements = {
   stats: document.querySelector("#catalogue-stats"),
   list: document.querySelector("#channel-list"),
@@ -235,6 +237,7 @@ function applyStaticTranslations() {
   setText("method-copy", t("methodCopy"));
   document.querySelector("#rights-link").firstChild.textContent = `${t("rights")} `;
   setText("open-streams-title", t("openStreams"));
+  setText("open-streams-copy", t("openStreamsCopy"));
   document.querySelector("#open-streams-link").firstChild.textContent = `${t("openStreams")} `;
   document.querySelector("#open-streams-link").setAttribute("lang", state.locale);
   setText("footer-copy", t("footer"));
@@ -427,6 +430,24 @@ function epgMarkup(channel) {
   if (!channel.epg_sources.length) return `<span>${t("noSchedule")}</span>`;
   return `<ul class="epg-list">${channel.epg_sources.map((source) => `<li><a href="${source.url}" target="_blank" rel="noreferrer" lang="en">${sentenceCase(source.kind)} ↗</a></li>`).join("")}</ul>`;
 }
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+}
+function programmeMarkup(channel) {
+  const schedule = state.schedules[channel.id];
+  const record = schedule ?? channel.program;
+  const next = record.next_event_title
+    ? `<span class="programme-next"><strong>${t("nextProgramme")}</strong> ${escapeHtml(record.next_event_title)}<br><span class="detail-subtitle">${escapeHtml(record.next_event_time ?? "")}</span></span>`
+    : "";
+  const freshness = schedule
+    ? `<span class="detail-subtitle programme-fetch-status">${t("scheduleCollected", { date: escapeHtml(new Date(schedule.fetched_at).toLocaleString(state.locale)) })}</span>`
+    : "";
+  return `<div class="programme-record" aria-live="polite">
+    <span>${escapeHtml(record.current_event_title)}</span>
+    <span class="detail-subtitle">${escapeHtml(record.current_event_time)}</span>
+    ${next}${freshness}
+  </div>`;
+}
 function evidenceLabel(channel, url) {
   const address = url.toLocaleLowerCase();
   if (url === channel.official_url) return "Official watch page";
@@ -521,7 +542,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       <div lang="en" title="${permissionDescription(channel.permission.status)}"><dt lang="${state.locale}">${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}" lang="${state.locale}">${label(channel.permission.status)}</span><span class="visually-hidden">. ${permissionDescription(channel.permission.status)}</span></dd></div>
       <div lang="en" title="The expected operating condition or time window for this source."><dt lang="${state.locale}">${t("availability")}</dt><dd><span lang="${state.locale}">${label(channel.availability)}</span><span class="visually-hidden">. The expected operating condition or time window for this source.</span></dd></div>
       <div class="full"><dt>${t("attribution")}</dt><dd lang="en">${channel.attribution_text}</dd></div>
-      <div class="full"><dt>${t("programme")}</dt><dd lang="en">${channel.program.current_event_title}<br><span class="detail-subtitle">${channel.program.current_event_time}</span></dd></div>
+      <div class="full"><dt>${t("programme")}</dt><dd lang="en">${programmeMarkup(channel)}</dd></div>
       ${accessibilityMarkup(channel)}
       ${identityMarkup(channel)}
       <div class="full"><dt>${t("schedule")}</dt><dd>${epgMarkup(channel)}</dd></div>
@@ -609,6 +630,20 @@ async function init() {
     }
     if (!catalogue) throw new Error("Catalogue data is unavailable.");
     state.channels = catalogue.channels;
+    if (window.location.protocol !== "file:") {
+      try {
+        let scheduleResponse = await fetch(schedulesUrl, { cache: "no-store" });
+        if (!scheduleResponse.ok && schedulesUrl.href !== localSchedulesUrl.href) {
+          scheduleResponse = await fetch(localSchedulesUrl, { cache: "no-store" });
+        }
+        if (scheduleResponse.ok) {
+          const scheduleSnapshot = await scheduleResponse.json();
+          state.schedules = scheduleSnapshot.channels ?? {};
+        }
+      } catch {
+        state.schedules = {};
+      }
+    }
     state.generatedOn = catalogue.generated_on;
     state.selectedId = state.channels.find(canPlay)?.id ?? state.channels[0]?.id ?? null;
     elements.stats.textContent = t("documented", { count: state.channels.length, date: catalogue.generated_on });

@@ -75,8 +75,23 @@ const browser = await chromium.launch();
 try {
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   const page = await context.newPage();
+  await page.route("**/data/schedules.json", (route) => route.fulfill({
+    contentType: "application/json",
+    body: JSON.stringify({
+      channels: {
+        "european-parliament-multimedia-centre": {
+          current_event_title: "Committee on the Environment",
+          current_event_time: "Live now",
+          next_event_title: "Plenary sitting",
+          next_event_time: "4:00 PM",
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
+      },
+    }),
+  }));
   await page.goto(baseUrl);
   await page.waitForSelector(".channel-button");
+  assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
   const rows = page.locator(".channel-button");
@@ -90,6 +105,17 @@ try {
   assert.equal(await youtubeFrame.count(), 1);
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed/);
   assert.match(await youtubeFrame.getAttribute("title"), /official YouTube player/);
+
+  const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
+  await europarlRow.click();
+  assert.equal(await page.getByText("Committee on the Environment", { exact: true }).count(), 1);
+  assert.match(await page.locator(".programme-fetch-status").innerText(), /Schedule collected/);
+  assert.match(await page.locator(".programme-next").innerText(), /Plenary sitting/);
+
+  await page.locator("#locale-select").selectOption("fr");
+  assert.match(await page.locator(".programme-fetch-status").innerText(), /Horaire recueilli le/);
+  assert.match(await page.locator(".programme-next").innerText(), /À suivre :/);
+  assert.match(await page.locator("#open-streams-copy").innerText(), /horaires ouverts/);
 
   const search = page.locator("#search");
   await search.focus();

@@ -19,8 +19,10 @@ const en = {
   methodCopy: "Technically validated public direct feeds play here unless recorded terms expressly prohibit third-party reuse. A play button is not a licence; source owners can request removal.",
   rights: "Read rights and permission notes", footer: "Parliament Streams is an independent research catalogue.", about: "About the project",
   openStreams: "Open stream principles",
+  openStreamsCopy: "Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.",
   sourceType: "Source type", accessStatus: "Access status", useGuidance: "Use guidance", availability: "Availability",
   attribution: "Required attribution", programme: "Current programme record", identity: "External identity", schedule: "Schedule / EPG sources",
+  nextProgramme: "Next:", scheduleCollected: "Schedule collected {date}",
   reuse: "Reuse note.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Open official source",
   ready: "Ready to load the official feed", disabled: "Playback is not enabled for this source",
   noResults: "No catalogue entries match these filters.", noSchedule: "No schedule surface recorded.",
@@ -224,6 +226,50 @@ const identityLabels = {
   "zh-Hans": "外部标识", "iu-Cans": "ᓯᓚᑖᓂ ᓇᓗᓇᐃᒃᑯᑕᖅ", mi: "Tuakiri ā-waho",
 };
 Object.entries(identityLabels).forEach(([locale, value]) => { shared[locale].identity = value; });
+
+const scheduleLabels = {
+  fr: { nextProgramme: "À suivre :", scheduleCollected: "Horaire recueilli le {date}" },
+  es: { nextProgramme: "A continuación:", scheduleCollected: "Programación recopilada el {date}" },
+  "pt-BR": { nextProgramme: "A seguir:", scheduleCollected: "Programação coletada em {date}" },
+  da: { nextProgramme: "Næste:", scheduleCollected: "Program indsamlet {date}" },
+  de: { nextProgramme: "Als Nächstes:", scheduleCollected: "Programm abgerufen am {date}" },
+  et: { nextProgramme: "Järgmine:", scheduleCollected: "Ajakava kogutud {date}" },
+  el: { nextProgramme: "Επόμενο:", scheduleCollected: "Το πρόγραμμα συλλέχθηκε στις {date}" },
+  hi: { nextProgramme: "अगला:", scheduleCollected: "कार्यक्रम {date} को प्राप्त किया गया" },
+  ga: { nextProgramme: "Ar aghaidh:", scheduleCollected: "Sceideal bailithe {date}" },
+  it: { nextProgramme: "A seguire:", scheduleCollected: "Programma raccolto il {date}" },
+  lb: { nextProgramme: "Als nächst:", scheduleCollected: "Zäitplang ofgeruff den {date}" },
+  nl: { nextProgramme: "Hierna:", scheduleCollected: "Programma opgehaald op {date}" },
+  nb: { nextProgramme: "Neste:", scheduleCollected: "Program hentet {date}" },
+  sk: { nextProgramme: "Nasleduje:", scheduleCollected: "Program získaný {date}" },
+  th: { nextProgramme: "ถัดไป:", scheduleCollected: "รวบรวมกำหนดการเมื่อ {date}" },
+  "zh-Hans": { nextProgramme: "接下来：", scheduleCollected: "节目表采集于 {date}" },
+  "iu-Cans": { nextProgramme: "ᑭᖑᓪᓕᖅ:", scheduleCollected: "ᐅᓪᓗᖅᓯᐅᑎ ᐱᔭᐅᔪᖅ {date}" },
+  mi: { nextProgramme: "Whai muri:", scheduleCollected: "I kohia te hōtaka i te {date}" },
+};
+Object.entries(scheduleLabels).forEach(([locale, labels]) => Object.assign(shared[locale], labels));
+
+const openScheduleCopy = {
+  fr: "La vidéo parlementaire ouverte exige aussi des horaires ouverts. Les parlements devraient publier rapidement des flux de programmes et d'événements lisibles par machine à des URL stables, avec des conditions de réutilisation claires, des identifiants persistants, les fuseaux horaires et des corrections rapides.",
+  es: "El vídeo parlamentario abierto también necesita datos de programación abiertos. Los parlamentos deberían publicar puntualmente fuentes de programas y eventos legibles por máquina en URL estables, con condiciones claras de reutilización, identificadores persistentes, zonas horarias y correcciones rápidas.",
+  "pt-BR": "Vídeo parlamentar aberto também exige dados abertos de programação. Os parlamentos devem publicar, em tempo hábil, feeds de programas e eventos legíveis por máquina em URLs estáveis, com termos claros de reutilização, identificadores persistentes, fusos horários e correções rápidas.",
+  da: "Åben parlamentarisk video kræver også åbne programdata. Parlamenter bør rettidigt offentliggøre maskinlæsbare program- og begivenhedsfeeds på stabile URL'er med klare vilkår for genbrug, vedvarende identifikatorer, tidszoner og hurtige rettelser.",
+  de: "Offene Parlamentsvideos brauchen auch offene Programmdaten. Parlamente sollten zeitnah maschinenlesbare Programm- und Veranstaltungsfeeds unter stabilen URLs veröffentlichen, mit klaren Nachnutzungsbedingungen, dauerhaften Kennungen, Zeitzonen und schnellen Korrekturen.",
+  et: "Avatud parlamendivideo vajab ka avatud ajakavaandmeid. Parlamendid peaksid avaldama õigeaegsed masinloetavad programmi- ja sündmustevood püsivatel URL-idel koos selgete taaskasutustingimuste, püsivate tunnuste, ajavööndite ja kiirete parandustega.",
+  el: "Το ανοικτό κοινοβουλευτικό βίντεο χρειάζεται και ανοικτά δεδομένα προγράμματος. Τα κοινοβούλια πρέπει να δημοσιεύουν έγκαιρα μηχαναγνώσιμες ροές προγραμμάτων και εκδηλώσεων σε σταθερές διευθύνσεις URL, με σαφείς όρους επαναχρησιμοποίησης, μόνιμα αναγνωριστικά, ζώνες ώρας και άμεσες διορθώσεις.",
+  hi: "खुले संसदीय वीडियो के लिए खुला कार्यक्रम डेटा भी आवश्यक है। विधानमंडलों को स्थायी URL पर समय पर, मशीन-पठनीय कार्यक्रम और आयोजन फ़ीड प्रकाशित करनी चाहिए, जिनमें स्पष्ट पुनः उपयोग शर्तें, स्थायी पहचानकर्ता, समय क्षेत्र और शीघ्र सुधार हों।",
+  ga: "Teastaíonn sonraí sceidil oscailte ó fhíseán parlaiminte oscailte freisin. Ba cheart do reachtais fothaí clár agus imeachtaí atá tráthúil agus inléite ag meaisín a fhoilsiú ag URLanna cobhsaí, le téarmaí soiléire athúsáide, aitheantóirí buana, criosanna ama agus ceartúcháin thapa.",
+  it: "Il video parlamentare aperto richiede anche dati di programmazione aperti. I parlamenti dovrebbero pubblicare tempestivamente feed di programmi ed eventi leggibili dalle macchine a URL stabili, con termini di riuso chiari, identificatori persistenti, fusi orari e correzioni rapide.",
+  lb: "Oppe parlamentaresch Videoe brauchen och oppe Programmdate. Parlamenter solle rechtzäiteg maschinneliesbar Programm- an Evenementsfeeds op stabile URLen publizéieren, mat kloere Konditioune fir d'Wiederverwendung, bestännegen Identifikateuren, Zäitzonen a séiere Korrekturen.",
+  nl: "Open parlementaire video vereist ook open programmagegevens. Parlementen moeten tijdig machineleesbare programma- en evenementfeeds op stabiele URL's publiceren, met duidelijke hergebruiksvoorwaarden, permanente identificatoren, tijdzones en snelle correcties.",
+  nb: "Åpen parlamentarisk video trenger også åpne programdata. Parlamenter bør publisere oppdaterte, maskinlesbare program- og hendelsesstrømmer på stabile URL-er, med tydelige vilkår for gjenbruk, varige identifikatorer, tidssoner og raske rettelser.",
+  sk: "Otvorené parlamentné video potrebuje aj otvorené údaje o programe. Parlamenty by mali včas zverejňovať strojovo čitateľné kanály programov a udalostí na stabilných adresách URL s jasnými podmienkami opätovného použitia, trvalými identifikátormi, časovými pásmami a rýchlymi opravami.",
+  th: "วิดีโอรัฐสภาแบบเปิดต้องมีข้อมูลกำหนดการแบบเปิดด้วย สภานิติบัญญัติควรเผยแพร่ฟีดรายการและกิจกรรมที่เป็นปัจจุบันและอ่านได้ด้วยเครื่องผ่าน URL ที่คงที่ พร้อมเงื่อนไขการใช้ซ้ำที่ชัดเจน ตัวระบุถาวร เขตเวลา และการแก้ไขอย่างรวดเร็ว",
+  "zh-Hans": "开放的议会视频也需要开放的节目表数据。立法机构应通过稳定的网址及时发布机器可读的节目和活动信息流，并提供明确的再利用条款、持久标识符、时区信息和及时更正。",
+  "iu-Cans": "ᒪᑐᐃᖓᔪᖅ ᒪᓕᒐᓕᐅᕐᕕᐅᑉ ᑕᕐᕆᔭᒐᒃᓴᖓ ᒪᑐᐃᖓᔪᓂᒃ ᐅᓪᓗᖅᓯᐅᑎᓂᒃ ᑭᙵᕆᐊᖃᕐᒥᔪᖅ. ᒪᓕᒐᓕᐅᕐᕖᑦ ᓴᖅᑭᑎᑦᑎᒋᐊᖃᖅᑐᑦ ᖃᕋᓴᐅᔭᕐᒧᑦ ᐅᖃᓕᒫᒐᒃᓴᓂᒃ ᐱᓕᕆᐊᓄᑦ ᐊᒻᒪ ᖃᓄᐃᓕᐅᕐᓂᕐᓄᑦ ᐅᓪᓗᖅᓯᐅᑎᓂᒃ ᐊᓯᔾᔨᖏᑦᑐᓂ URL-ᓂ, ᑐᑭᓯᓇᖅᑐᓂᒃ ᐊᑐᒃᑲᓐᓂᕐᓂᐅᑉ ᒪᓕᒐᖏᓐᓂᒃ, ᐊᓯᔾᔨᖏᑦᑐᓂᒃ ᓇᓗᓇᐃᒃᑯᑕᓂᒃ, ᓯᕿᙳᔭᖅ ᖃᓄᐃᓕᖓᓂᖓᓂᒃ, ᐊᒻᒪ ᓱᒃᑲᔪᒥᒃ ᐋᖅᑭᒋᐊᕐᓂᕐᓂᒃ.",
+  mi: "Me tuwhera hoki ngā raraunga hōtaka hei tautoko i te ataata pāremata tuwhera. Me whakaputa ngā pāremata i ngā whāngai hōtaka me ngā takahanga e taea ana e te mīhini te pānui, i ngā URL pūmau, me ngā tikanga whakamahi anō mārama, ngā tautohu pūmau, ngā rohe wā me ngā whakatikatika wawe.",
+};
+Object.entries(openScheduleCopy).forEach(([locale, value]) => { shared[locale].openStreamsCopy = value; });
 
 function message(locale, key, values = {}) {
   const value = shared[locale]?.[key] ?? en[key] ?? key;

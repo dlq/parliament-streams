@@ -21,6 +21,16 @@ application. Earlier application work remains available in Git history.
 - Dated catalogue and review health reports.
 - A focused static, child-media, and browser validation report for Review
   sources, including event-based Spain, France, and Ontario feeds.
+- A typed Python schedule collector, normalized schedule snapshot schema, and
+  six-hour GitHub Actions publication for current and next event data.
+- Python schedule adapters for European Parliament webstreaming and Europe by
+  Satellite, alongside the existing CPAC, Quebec, Ontario, New Zealand, and
+  Brazil parsers.
+- Schedule adapters for the Italian Senate's dated WebTV JSON API and
+  Portugal's official open-data agenda, including resolution of Portugal's
+  current opaque download URL from its stable resource index.
+- A reproducible `epg-audit` command and dated full-catalogue endpoint report
+  that distinguishes blocked, missing, and failed schedule sources.
 - Dependabot version updates for Python and GitHub Actions, plus CodeQL scans
   for Python and JavaScript.
 - Parser and health-check tests with a 90% enforced Python branch-coverage
@@ -72,14 +82,18 @@ application. Earlier application work remains available in Git history.
 - Advanced the catalogue to schema v4 with explicit provider, playlist,
   live-page, and qualification metadata for official embeds.
 - Renamed the working roadmap to `PLANS.md` and the research log to `NOTES.md`.
-- Documented browser-side EPG enrichment as an optional future path: only the
-  EU Audiovisual Service and European Parliament Multimedia Centre currently
-  permit browser CORS reads among recorded EPG sources.
+- Replaced browser-side EPG retrieval with same-origin static schedule JSON
+  generated during the Pages deployment.
 - Clarified that Python and `uv` own catalogue management and verification,
   while Node and npm provide HTML, browser, and accessibility development
   checks and are not part of the deployed site's runtime.
 - Promoted Mongolia Parliament TV to technically validated after its live DASH
   manifest, initialization object, and current media segment all responded.
+- Made schedule collection tolerant of individual source errors while blocking
+  deployment when no source succeeds.
+- Added official schedule and agenda surfaces to previously undocumented
+  national sources and replaced Prince Edward Island's stale month-specific
+  calendar URL with its stable calendar route.
 
 ### Fixed
 

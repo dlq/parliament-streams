@@ -5,8 +5,12 @@ from types import ModuleType
 from . import (
     brazil_tv_camara,
     cpac,
+    ebs,
+    european_parliament,
+    italian_senate,
     new_zealand_parliament,
     ontario_calendar,
+    portugal_agenda,
     quebec_webdiffusion,
 )
 
@@ -16,4 +20,8 @@ SCRAPERS: dict[str, ModuleType] = {
     new_zealand_parliament.SOURCE["id"]: new_zealand_parliament,
     ontario_calendar.SOURCE["id"]: ontario_calendar,
     brazil_tv_camara.SOURCE["id"]: brazil_tv_camara,
+    european_parliament.SOURCE["id"]: european_parliament,
+    ebs.SOURCE["id"]: ebs,
+    italian_senate.SOURCE["id"]: italian_senate,
+    portugal_agenda.SOURCE["id"]: portugal_agenda,
 }

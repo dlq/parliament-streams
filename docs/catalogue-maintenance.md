@@ -128,7 +128,47 @@ The identity audit verifies catalogue coherence; it does not claim that an
 external entity match is substantively correct. Live health checks establish
 technical reachability, not permission to reuse a source.
 
-## Schedule Parsers
+## Schedule And EPG Sources
+
+Add and update schedule-page metadata through the normal typed catalogue record
+workflow. An implemented source names a registered Python parser:
+
+```json
+{
+  "scraper": "europarl-webstreaming",
+  "scraper_status": "implemented",
+  "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+  "method": "GET",
+  "kind": "webstreaming_schedule_page"
+}
+```
+
+Use `parliament-streams update` to persist a reviewed endpoint change; it
+validates the complete record and regenerates the direct-file site snapshot.
+Then run `make schedules` to test retrieval, parsing, and normalized output.
+
+Check every unique recorded EPG URL and retain a dated report:
+
+```sh
+uv run parliament-streams epg-audit \
+  --output reports/epg-validation-YYYY-MM-DD.json
+```
+
+The endpoint audit checks reachability independently of parser output and
+deduplicates URLs shared by multiple channels. Access-blocked responses are
+kept distinct from missing endpoints. Discovery-based collectors may resolve a
+current machine-readable download from a stable official index, as the
+Portugal open-data adapter does; do not persist opaque download tokens in the
+catalogue.
+
+The shared collector writes `data/schedules.json` locally. GitHub Actions writes
+the same snapshot directly into the Pages artifact every six hours without
+committing transient events. The European Parliament's Next.js data URL
+contains a deployment-specific build ID and must be updated in its Python
+scraper when the official site deploys a new build. A source failure is recorded
+and the page falls back to the catalogue programme text.
+
+### Offline Research Parsers
 
 Schedule parsers consume saved official responses so the exact downloaded input
 can be retained beside a research run:

@@ -1,11 +1,16 @@
 name: Deploy GitHub Pages
 
 on:
+  schedule:
+    - cron: "17 */6 * * *"
   push:
     branches: [main]
     paths:
       - "site/**"
       - "data/channels.json"
+      - "parliament_streams/**"
+      - "pyproject.toml"
+      - "uv.lock"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -20,17 +25,30 @@ concurrency:
 
 jobs:
   deploy:
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Install uv
+        run: python -m pip install uv
+      - name: Sync Python dependencies
+        run: uv sync --locked
       - name: Assemble static site
         run: |
           mkdir -p _site/data
           cp -R site/. _site/
           cp data/channels.json _site/data/channels.json
+      - name: Collect current schedules
+        run: >-
+          uv run --locked parliament-streams schedules-collect
+          --output _site/data/schedules.json
+          --minimum-successful-sources 1
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

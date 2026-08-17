@@ -16,6 +16,10 @@ SOURCE: ScraperSource = {
         "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir",
     ],
     "method": "POST",
+    "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+    },
     "body": {"codeLangue": "fr"},
     "notes": "Official ASP.NET JSON endpoints used by the live webdiffusion page.",
 }

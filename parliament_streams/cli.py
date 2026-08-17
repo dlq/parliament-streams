@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import cast
 
 from .catalogue import DEFAULT_CATALOGUE_PATH, load_catalogue, load_channel, load_json_object
+from .epg_audit import audit_epg_sources
 from .healthcheck import DEFAULT_RETRIES, DEFAULT_TIMEOUT_SECONDS, run_healthcheck
 from .management import (
     CatalogueStore,
@@ -25,6 +26,16 @@ from .management import (
     write_json,
 )
 from .models import ChannelRecord
+from .schedule_collection import (
+    DEFAULT_RETRIES as DEFAULT_SCHEDULE_RETRIES,
+)
+from .schedule_collection import (
+    DEFAULT_TIMEOUT_SECONDS as DEFAULT_SCHEDULE_TIMEOUT_SECONDS,
+)
+from .schedule_collection import (
+    collect_schedules,
+    write_snapshot,
+)
 from .site_data import DEFAULT_SITE_DATA_PATH
 from .validation import (
     CatalogueValidationError,
@@ -255,6 +266,33 @@ def _cmd_export(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_schedules_collect(args: argparse.Namespace) -> int:
+    snapshot = collect_schedules(timeout=args.timeout, retries=args.retries)
+    successful = snapshot["counts"].get("ok", 0)
+    if successful < args.minimum_successful_sources:
+        raise ValueError(
+            f"Only {successful} schedule sources succeeded; "
+            f"minimum is {args.minimum_successful_sources}"
+        )
+    write_snapshot(args.output, snapshot)
+    print(
+        f"Wrote {len(snapshot['channels'])} channel schedules from {successful} sources "
+        f"to {args.output}"
+    )
+    return 0
+
+
+def _cmd_epg_audit(args: argparse.Namespace) -> int:
+    report = audit_epg_sources(
+        load_catalogue(args.catalogue), timeout=args.timeout, retries=args.retries
+    )
+    if args.output:
+        write_json(args.output, report)
+    else:
+        _write_json_stdout(report)
+    return 1 if args.fail_on_error and report["counts"]["error"] else 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="parliament-streams",
@@ -394,6 +432,24 @@ def build_parser() -> argparse.ArgumentParser:
     export_parser = commands.add_parser("export", help="Export a flattened CSV catalogue.")
     export_parser.add_argument("--output", type=Path)
     export_parser.set_defaults(handler=_cmd_export)
+
+    schedules_collect = commands.add_parser(
+        "schedules-collect", help="Fetch and normalize implemented schedule sources."
+    )
+    schedules_collect.add_argument("--output", type=Path, default=Path("data/schedules.json"))
+    schedules_collect.add_argument("--timeout", type=int, default=DEFAULT_SCHEDULE_TIMEOUT_SECONDS)
+    schedules_collect.add_argument("--retries", type=int, default=DEFAULT_SCHEDULE_RETRIES)
+    schedules_collect.add_argument("--minimum-successful-sources", type=int, default=1)
+    schedules_collect.set_defaults(handler=_cmd_schedules_collect)
+
+    epg_audit = commands.add_parser(
+        "epg-audit", help="Check every unique schedule/EPG endpoint in the catalogue."
+    )
+    epg_audit.add_argument("--timeout", type=int, default=DEFAULT_SCHEDULE_TIMEOUT_SECONDS)
+    epg_audit.add_argument("--retries", type=int, default=0)
+    epg_audit.add_argument("--output", type=Path)
+    epg_audit.add_argument("--fail-on-error", action="store_true")
+    epg_audit.set_defaults(handler=_cmd_epg_audit)
     return parser
 
 

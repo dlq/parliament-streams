@@ -19,9 +19,13 @@ equitable public access.
   open material can be accessed, used, modified, and shared by anyone, subject
   at most to conditions that preserve provenance and openness.
 - **Open discovery:** provide stable watch pages, machine-readable metadata,
-  direct endpoint information where appropriate, programme schedules, and
-  historical records so that proceedings can be found and independently
-  verified.
+  direct endpoint information where appropriate, and historical records so
+  that proceedings can be found and independently verified.
+- **Open schedules:** publish timely machine-readable programme and event feeds
+  at stable URLs, with persistent identifiers, explicit time zones, prompt
+  corrections, and clear terms permitting reuse. A human-readable calendar is
+  useful, but it should not be the only way to discover what is live or coming
+  next.
 - **Open accessibility:** publish captions, transcripts, sign-language
   interpretation where available, and accessible players and metadata. The
   W3C's [guidance on accessible audio and video](https://www.w3.org/WAI/media/av/)

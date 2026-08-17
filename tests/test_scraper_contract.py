@@ -21,10 +21,10 @@ class ScraperContractTests(unittest.TestCase):
         )
 
     def test_declared_scrapers_are_importable(self):
+        registry = importlib.import_module("parliament_streams.scrapers")
         for scraper_id in self.scraper_ids:
-            module_name = scraper_id.replace("-", "_")
             with self.subTest(scraper=scraper_id):
-                module = importlib.import_module(f"parliament_streams.scrapers.{module_name}")
+                module = registry.SCRAPERS[scraper_id]
                 self.assertTrue(hasattr(module, "SOURCE"))
                 self.assertEqual(module.SOURCE["id"], scraper_id)
                 self.assertTrue(hasattr(module, "parse"))

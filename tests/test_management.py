@@ -725,6 +725,60 @@ class CliTests(unittest.TestCase):
         self.assertEqual(load_json_object(output_path), report)
         check.assert_called_once_with(self.catalogue, timeout=3, retries=2, channel_ids={"cpac-ca"})
 
+    def test_schedules_collect_command(self):
+        snapshot = {
+            "schema_version": 1,
+            "generated_at": "2026-08-17T12:00:00Z",
+            "refresh_interval_hours": 6,
+            "counts": {"ok": 1, "empty": 0, "error": 0, "channels": 1},
+            "channels": {},
+            "sources": {},
+        }
+        output_path = self.root / "schedules.json"
+        with mock.patch("parliament_streams.cli.collect_schedules", return_value=snapshot):
+            result, output, _ = self.run_cli(
+                "schedules-collect", "--output", str(output_path), "--timeout", "3"
+            )
+        self.assertEqual(result, 0)
+        self.assertIn("from 1 sources", output)
+        self.assertEqual(load_json_object(output_path)["schema_version"], 1)
+
+        with mock.patch("parliament_streams.cli.collect_schedules", return_value=snapshot):
+            result, _, error = self.run_cli(
+                "schedules-collect", "--minimum-successful-sources", "2"
+            )
+        self.assertEqual(result, 2)
+        self.assertIn("minimum is 2", error)
+
+    def test_epg_audit_command_writes_report(self):
+        report = {
+            "generated_at": "2026-08-17T12:00:00Z",
+            "counts": {
+                "reachable": 1,
+                "access_blocked": 0,
+                "not_found": 0,
+                "error": 0,
+                "sources": 1,
+            },
+            "sources": [],
+        }
+        output_path = self.root / "epg-audit.json"
+        with mock.patch("parliament_streams.cli.audit_epg_sources", return_value=report) as audit:
+            result, _, _ = self.run_cli(
+                "epg-audit",
+                "--timeout",
+                "3",
+                "--retries",
+                "2",
+                "--output",
+                str(output_path),
+            )
+        self.assertEqual(result, 0)
+        self.assertEqual(load_json_object(output_path), report)
+        audit.assert_called_once()
+        self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2})
+        self.assertEqual(audit.call_args.args[0]["schema_version"], 5)
+
 
 if __name__ == "__main__":
     unittest.main()

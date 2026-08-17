@@ -25,6 +25,15 @@ class ScraperSource(TypedDict, total=False):
     notes: str
 
 
+class FetchRequest(TypedDict):
+    """One HTTP request needed to collect a scraper's current input."""
+
+    url: str
+    method: str
+    headers: dict[str, str]
+    body: NotRequired[dict[str, str]]
+
+
 class ScheduleEvent(TypedDict):
     """Normalized event used while selecting current and next programmes."""
 

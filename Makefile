@@ -1,4 +1,4 @@
-.PHONY: verify test coverage json-check catalogue-validate candidates-validate site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck site
+.PHONY: verify test coverage json-check catalogue-validate candidates-validate site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck epg-audit schedules site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --locked --extra dev
@@ -50,6 +50,12 @@ coverage:
 
 healthcheck:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m parliament_streams.healthcheck
+
+epg-audit:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) parliament-streams epg-audit
+
+schedules:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) parliament-streams schedules-collect
 
 site:
 	python3 -m http.server 8000
