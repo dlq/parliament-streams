@@ -20,6 +20,7 @@ const USER_AGENT =
 const PAGE_TIMEOUT_MS = 20_000;
 const SETTLE_MS = 5_000;
 const MAX_PAGES_PER_COUNTRY = 4;
+const MAX_CONCURRENT_PAGES = 4;
 
 function parseArgs(argv) {
   const args = { inputs: [], output: null };
@@ -200,14 +201,25 @@ async function main() {
   const { chromium } = loadPlaywright();
   const targets = await collectTargets(args.inputs);
   const browser = await chromium.launch({ headless: true });
-  const pageResults = [];
-
+  const pageTasks = [];
   for (const target of targets) {
     for (const pageUrl of target.official_pages) {
-      console.log(`INSPECT ${target.country} ${pageUrl}`);
-      pageResults.push(await inspectPage(browser, target, pageUrl));
+      pageTasks.push({ target, pageUrl });
     }
   }
+  const pageResults = new Array(pageTasks.length);
+  let nextTask = 0;
+  async function inspectNextPage() {
+    while (nextTask < pageTasks.length) {
+      const taskIndex = nextTask;
+      nextTask += 1;
+      const { target, pageUrl } = pageTasks[taskIndex];
+      console.log(`INSPECT ${target.country} ${pageUrl}`);
+      pageResults[taskIndex] = await inspectPage(browser, target, pageUrl);
+    }
+  }
+  const workerCount = Math.min(MAX_CONCURRENT_PAGES, pageTasks.length);
+  await Promise.all(Array.from({ length: workerCount }, () => inspectNextPage()));
 
   await browser.close();
 

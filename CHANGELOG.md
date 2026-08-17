@@ -13,7 +13,8 @@ application. Earlier application work remains available in Git history.
   validated manifests with the catalogue, and retains review evidence for 180
   days without automatically promoting sources. The workflow maintains a
   persistent candidate-review issue, while daily always-on regressions receive
-  deduplicated issues that close on recovery.
+  deduplicated issues that close on recovery. Deep browser validation uses four
+  isolated concurrent page contexts to keep broad audits within job limits.
 - A daily GitHub Actions catalogue audit covering schema and identity rules,
   primary stream/page health, schedule endpoints and parsers, and supporting
   official, rights, identity, and embed links, plus a weekly full-catalogue
