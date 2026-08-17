@@ -1,5 +1,6 @@
 import json
 import unittest
+from collections import defaultdict
 from pathlib import Path
 from unittest.mock import patch
 from urllib.parse import urlparse
@@ -30,7 +31,7 @@ class CatalogueContractTests(unittest.TestCase):
         cls.channels = cls.catalogue["channels"]
 
     def test_catalogue_has_expected_top_level_shape(self):
-        self.assertEqual(self.catalogue["schema_version"], 5)
+        self.assertEqual(self.catalogue["schema_version"], 6)
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
@@ -65,20 +66,12 @@ class CatalogueContractTests(unittest.TestCase):
             "source_type",
             "playback_url",
             "official_url",
-            "attribution_text",
+            "provenance_note",
             "technical_status",
             "availability",
             "accessibility",
-            "program",
             "epg_sources",
             "permission",
-        }
-        required_program_keys = {
-            "current_event_title",
-            "current_event_time",
-            "next_event_title",
-            "next_event_time",
-            "confidence",
         }
         required_permission_keys = {"status", "summary", "evidence", "recommendation"}
         required_accessibility_keys = {
@@ -122,6 +115,12 @@ class CatalogueContractTests(unittest.TestCase):
                 for status_key in ("captions", "sign_language", "audio_description"):
                     self.assertIn(channel["accessibility"][status_key], ACCESSIBILITY_STATUSES)
                 self.assertIsInstance(channel["accessibility"]["caption_languages"], list)
+                accessibility_note = channel["accessibility"]["notes"]
+                self.assertTrue(accessibility_note is None or accessibility_note.strip())
+                self.assertIsInstance(channel["provenance_note"], str)
+                self.assertTrue(channel["provenance_note"].strip())
+                self.assertNotIn("attribution_text", channel)
+                self.assertNotIn("program", channel)
                 self.assertTrue(urlparse(channel["official_url"]).scheme.startswith("http"))
                 if channel["source_type"].startswith("direct_"):
                     self.assertIsInstance(channel["playback_url"], str)
@@ -137,8 +136,6 @@ class CatalogueContractTests(unittest.TestCase):
                 else:
                     self.assertNotIn("embed", channel)
 
-                self.assertEqual(set(channel["program"]), required_program_keys)
-                self.assertIn(channel["program"]["confidence"], PROGRAM_CONFIDENCE)
                 self.assertEqual(set(channel["permission"]), required_permission_keys)
                 self.assertIn(channel["permission"]["status"], PERMISSION_STATUSES)
                 for evidence_url in channel["permission"]["evidence"]:
@@ -269,6 +266,57 @@ class CatalogueContractTests(unittest.TestCase):
                         self.assertNotEqual(source["scraper"], "planned")
                     else:
                         self.assertEqual(source["scraper"], "planned")
+
+    def test_channel_presentation_text_is_clean(self):
+        for channel in self.channels:
+            with self.subTest(channel=channel["id"]):
+                for key in ("name", "country_or_region", "legislature", "language"):
+                    value = channel[key]
+                    self.assertEqual(value, value.strip())
+                    self.assertNotIn("  ", value)
+                self.assertNotIn("_", channel["name"])
+                self.assertNotIn("_", channel["legislature"])
+
+    def test_repeated_official_service_families_share_identity(self):
+        families = defaultdict(list)
+        for channel in self.channels:
+            families[channel["official_url"]].append(channel)
+
+        for official_url, channels in families.items():
+            if len(channels) < 2:
+                continue
+            with self.subTest(official_url=official_url):
+                self.assertEqual(len({channel["country_or_region"] for channel in channels}), 1)
+                self.assertEqual(len({channel["legislature"] for channel in channels}), 1)
+                self.assertEqual(
+                    len(
+                        {
+                            json.dumps(channel["external_ids"], sort_keys=True)
+                            for channel in channels
+                        }
+                    ),
+                    1,
+                )
+
+    def test_source_type_and_technical_status_are_coherent(self):
+        for channel in self.channels:
+            with self.subTest(channel=channel["id"]):
+                if channel["source_type"] == "official_page":
+                    self.assertEqual(channel["technical_status"], "link_only")
+                if channel["technical_status"] == "link_only":
+                    self.assertEqual(channel["source_type"], "official_page")
+                if channel["source_type"] == "youtube":
+                    self.assertEqual(channel["technical_status"], "validated")
+
+    def test_quebec_family_uses_the_official_accented_institution_name(self):
+        quebec_channels = [
+            channel for channel in self.channels if channel["id"].startswith("quebec-canal")
+        ]
+        self.assertEqual(len(quebec_channels), 14)
+        self.assertEqual(
+            {channel["legislature"] for channel in quebec_channels},
+            {"Assemblée nationale du Québec"},
+        )
 
     def test_healthcheck_cli_is_importable(self):
         module = __import__("parliament_streams.healthcheck", fromlist=["main"])

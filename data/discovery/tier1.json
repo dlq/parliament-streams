@@ -1,0 +1,318 @@
+{
+  "target_version": 1,
+  "tier": "tier1",
+  "source_report": "reports/health/2026-08-14-tier1-democracy-hls.json",
+  "scope": "Democracy-priority tier1 parliamentary stream discovery targets",
+  "method": "Maintained official/discovery pages and previously researched manifest candidates. Scheduled audits may discover evidence but never modify the catalogue automatically.",
+  "countries": [
+    {
+      "country": "Norway",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.stortinget.no/nett-tv"
+        }
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Sweden",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.riksdagen.se/en/contact-and-visit/media/broadcasts/"
+        }
+      ]
+    },
+    {
+      "country": "Iceland",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://althingi-live.secure.footprint.net/althingi/live/index.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.althingi.is/"
+        }
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.ch/en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Finland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://verkkolahetys.eduskunta.fi/"
+        }
+      ]
+    },
+    {
+      "country": "Denmark",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Ireland",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://d33zah5htxvoxb.cloudfront.net/el/live/oirtv/hls.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://d33zah5htxvoxb.cloudfront.net/el/live/dail/hls.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://d33zah5htxvoxb.cloudfront.net/el/live/seanad/hls.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.oireachtas.ie/en/oireachtas-tv/"
+        }
+      ]
+    },
+    {
+      "country": "Netherlands",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live"
+        },
+        {
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live"
+        },
+        {
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live"
+        }
+      ]
+    },
+    {
+      "country": "Luxembourg",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.aph.gov.au/live?ps=10"
+        }
+      ]
+    },
+    {
+      "country": "Taiwan",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliamentarytv.org.tw/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://ivod.ly.gov.tw/Live"
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk2/_definst_/live/video/hk2_de.smil/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk3/_definst_/live/video/hk3_de.smil/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_de.smil/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Uruguay",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://parlamento.gub.uy/"
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.shugiintv.go.jp/en/"
+        },
+        {
+          "kind": "hls",
+          "url": "http://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliamentlive.tv/"
+        }
+      ]
+    },
+    {
+      "country": "Costa Rica",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.youtube.com/@AsambleaCRC"
+        }
+      ]
+    },
+    {
+      "country": "Austria",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.gv.at/aktuelles/mediathek"
+        }
+      ]
+    },
+    {
+      "country": "Mauritius",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://d3haas31wb246g.cloudfront.net/live/88d4336f-f9bb-4dae-a567-41608b05f529/live.isml/live.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://mauritiusassembly.govmu.org/"
+        }
+      ]
+    },
+    {
+      "country": "Estonia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/live/1/en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/live/2/en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005"
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Czech Republic",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://pspen.psp.cz/live-broadcast/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php"
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "Greece",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "target_version": 1,
+  "tier": "tier2",
+  "source_report": "reports/health/2026-08-14-tier2-democracy-hls.json",
+  "scope": "Democracy-priority tier2 parliamentary stream discovery targets",
+  "method": "Maintained official/discovery pages and previously researched manifest candidates. Scheduled audits may discover evidence but never modify the catalogue automatically.",
+  "countries": [
+    {
+      "country": "France",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://videos.assemblee-nationale.fr/direct.php"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://videos.senat.fr/video/seance_direct.html"
+        }
+      ]
+    },
+    {
+      "country": "Malta",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://stream.smashmalta.com:25463/live/webplayer/livestream/23.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.mt/en/live-streaming/"
+        }
+      ]
+    },
+    {
+      "country": "United States",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://live.house.gov/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.senate.gov/floor/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.c-span.org/"
+        }
+      ]
+    },
+    {
+      "country": "Chile",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.camara.cl/prensa/television.aspx"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://tv.senado.cl/"
+        }
+      ]
+    },
+    {
+      "country": "Slovenia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.dz-rs.si/wps/portal/en/Home/mediji/Broadcasts"
+        }
+      ]
+    },
+    {
+      "country": "Israel",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.knesset.tv/live/"
+        },
+        {
+          "kind": "hls",
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://watch.knesset.tv?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "country": "South Korea",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.natv.go.kr/"
+        }
+      ]
+    },
+    {
+      "country": "Latvia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.saeima.lv/en/about-saeima/information-about-the-saeima/live-broadcasts"
+        }
+      ]
+    },
+    {
+      "country": "Belgium",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.dekamer.be/kvvcr/showpage.cfm?section=/media&language=en&story=live.xml"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.senate.be/"
+        }
+      ]
+    },
+    {
+      "country": "Botswana",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.bw/"
+        }
+      ]
+    },
+    {
+      "country": "Lithuania",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=2"
+        }
+      ]
+    },
+    {
+      "country": "Cape Verde",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlamento.cv/"
+        }
+      ]
+    },
+    {
+      "country": "Italy",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://webtv.senato.it/"
+        },
+        {
+          "kind": "hls",
+          "url": "https://senato-vod.morescreens.com/vod_hls/20230509_0930_commissione09_1080p_,360p,480p,576p,720p,1080p,.mp4.urlset/playlist.m3u8?id=video_645a03f8adc897.45433871\\u0026amp;video_id=22946\\u0026amp;token=\\u0026amp;authority_instance_id=empty\\u0026amp;profile_id=empty\\u0026amp;application_installation_id=empty\\u0026amp;uuid=empty\\u0026amp;subscriber_id=empty\\u0026amp;application_id=empty\\u0026amp;detected_delivery_method=hls\\u0026amp;playlist_template=nginx\\u0022"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://webtv.camera.it/"
+        }
+      ]
+    },
+    {
+      "country": "Poland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.sejm.gov.pl/Sejm10.nsf/transmisje.xsp"
+        }
+      ]
+    },
+    {
+      "country": "Cyprus",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.cy/en/live-broadcast"
+        }
+      ]
+    },
+    {
+      "country": "India",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://sansadtv.nic.in/"
+        }
+      ]
+    },
+    {
+      "country": "Slovakia",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.nrsr.sk/web/?sid=tv"
+        }
+      ]
+    },
+    {
+      "country": "South Africa",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.za/live-streaming"
+        }
+      ]
+    },
+    {
+      "country": "Malaysia",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://parlimen.gov.my/"
+        }
+      ]
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.ttparliament.org/"
+        }
+      ]
+    },
+    {
+      "country": "Timor-Leste",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlamento.tl/"
+        }
+      ]
+    },
+    {
+      "country": "Panama",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.asamblea.gob.pa/"
+        }
+      ]
+    },
+    {
+      "country": "Suriname",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.dna.sr/"
+        }
+      ]
+    },
+    {
+      "country": "Jamaica",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://japarliament.gov.jm/"
+        }
+      ]
+    },
+    {
+      "country": "Montenegro",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://rtcgstream.me/tv2/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.skupstina.me/"
+        }
+      ]
+    },
+    {
+      "country": "Philippines",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.congress.gov.ph/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://web.senate.gov.ph/"
+        }
+      ]
+    },
+    {
+      "country": "Dominican Republic",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.camaradediputados.gob.do/"
+        }
+      ]
+    },
+    {
+      "country": "Mongolia",
+      "results": [
+        {
+          "kind": "dash",
+          "url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.mn/"
+        }
+      ]
+    },
+    {
+      "country": "Argentina",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.diputados.gov.ar/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.senado.gob.ar/"
+        }
+      ]
+    },
+    {
+      "country": "Hungary",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "http://plenaris.parlament.hu:1935/edgelive/smil:mkogyplen.smil/playlist.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "http://tab.parlament.hu:1935/edgelive/smil:mkogytab.smil/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.hu/web/guest/elo-kozvetites"
+        }
+      ]
+    },
+    {
+      "country": "Croatia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.sabor.hr/en/press/live-broadcast"
+        }
+      ]
+    },
+    {
+      "country": "Brazil",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8"
+        },
+        {
+          "kind": "hls",
+          "url": "https://canalgov-stream.ebc.com.br/index.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.camara.leg.br/tv/"
+        }
+      ]
+    },
+    {
+      "country": "Namibia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.na/"
+        }
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "http://103.18.181.69:1935/golive/livestream/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.dpr.go.id/"
+        }
+      ]
+    },
+    {
+      "country": "Colombia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.canalcongreso.gov.co/"
+        }
+      ]
+    },
+    {
+      "country": "Bulgaria",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.bg/en/"
+        }
+      ]
+    },
+    {
+      "country": "North Macedonia",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://vipottbpkstream.vip.hr/Content/onevip-hls/Live/Channel(Sobraniski_Kanal)/index.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.sobranie.mk/"
+        }
+      ]
+    },
+    {
+      "country": "Thailand",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://tpchannel.org/"
+        }
+      ]
+    },
+    {
+      "country": "Serbia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.rs/"
+        }
+      ]
+    },
+    {
+      "country": "Ghana",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.gh/"
+        }
+      ]
+    },
+    {
+      "country": "Albania",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.al/"
+        }
+      ]
+    },
+    {
+      "country": "Sri Lanka",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.lk/"
+        }
+      ]
+    },
+    {
+      "country": "Singapore",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.gov.sg/"
+        }
+      ]
+    },
+    {
+      "country": "Guyana",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://parliament.gov.gy/"
+        }
+      ]
+    },
+    {
+      "country": "Lesotho",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.ls/"
+        }
+      ]
+    },
+    {
+      "country": "Moldova",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.md/"
+        }
+      ]
+    }
+  ]
+}

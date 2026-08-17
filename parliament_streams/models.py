@@ -49,15 +49,7 @@ class Accessibility(TypedDict):
     caption_languages: list[str]
     sign_language: AccessibilityStatus
     audio_description: AccessibilityStatus
-    notes: str
-
-
-class Program(TypedDict):
-    current_event_title: str
-    current_event_time: str
-    next_event_title: str
-    next_event_time: str
-    confidence: Confidence
+    notes: str | None
 
 
 class EpgSource(TypedDict):
@@ -88,11 +80,10 @@ class ChannelRecord(TypedDict):
     playback_url: str | None
     embed: NotRequired[Embed]
     official_url: str
-    attribution_text: str
+    provenance_note: str
     technical_status: TechnicalStatus
     availability: Availability
     accessibility: Accessibility
-    program: Program
     epg_sources: list[EpgSource]
     permission: Permission
 

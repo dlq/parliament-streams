@@ -124,6 +124,9 @@ questions, so keep them separate:
 - tier refresh reports document country-level stream-discovery coverage;
 - browser validation reports document manifests discovered only after an
   official page loads scripts or player configuration.
+- automated daily reports cover primary source health, schedule endpoints and
+  parsers, identity coherence, and supporting-link reachability; weekly reports
+  add full official-page browser discovery.
 
 To rerun the browser validator locally:
 

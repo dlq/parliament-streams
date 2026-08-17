@@ -68,6 +68,9 @@ Done:
   cross-record validation, atomic catalogue mutations, generated site-data
   refreshes, validation seeds, identity audits, health-report comparison, and
   CSV export.
+- A schema-validated Tier 1/Tier 2 discovery watchlist now drives a monthly
+  static and Chromium audit. It reports uncatalogued validated manifests for
+  review without making automatic catalogue or rights decisions.
 
 Retired from the active project:
 
@@ -171,6 +174,16 @@ GitHub Actions collects implemented schedule sources every six hours and
 publishes `data/schedules.json` inside the Pages artifact. This avoids browser
 CORS restrictions without adding a continuously running backend or committing
 transient schedule data to `main`. The page reads only the same-origin snapshot.
+
+### Scheduled Catalogue Audits
+
+GitHub Actions audits the complete catalogue daily. The retained artifact
+contains structural and identity validation, every primary playback or official
+URL, every schedule endpoint and implemented parser, and all unique official,
+rights, identity, and embed links. A Sunday Chromium pass loads every official
+page and validates dynamically discovered HLS/DASH manifests. Only newly
+degraded `always_on` sources fail the routine audit; event-based results remain
+evidence for review without producing expected out-of-session failures.
 
 The European Parliament Next.js endpoint contains a deployment-specific build
 ID and needs periodic maintenance. New Zealand currently returns Radware bot

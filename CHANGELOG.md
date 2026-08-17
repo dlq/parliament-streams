@@ -8,6 +8,21 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- Canonical Tier 1 and Tier 2 discovery target data plus a monthly GitHub
+  Actions audit that performs static and Chromium source discovery, compares
+  validated manifests with the catalogue, and retains review evidence for 180
+  days without automatically promoting sources.
+- A daily GitHub Actions catalogue audit covering schema and identity rules,
+  primary stream/page health, schedule endpoints and parsers, and supporting
+  official, rights, identity, and embed links, plus a weekly full-catalogue
+  Chromium manifest-discovery pass and stable-stream regression tracking.
+- A typed, parallel `links-audit` Python command with deduplicated URL roles,
+  HTTP classifications, CLI output, and tests.
+- A public-domain 1890 House of Commons chamber photograph as the responsive
+  catalogue hero, with visible credit and repository attribution.
+- A data-derived catalogue coverage summary, an accessible catalogue key,
+  per-source evidence dates, and a five-part open-stream principles index.
+
 - A build-free GitHub Pages catalogue driven directly by `data/channels.json`.
 - In-page native HLS playback for technically validated sources not expressly
   prohibited from third-party reuse.
@@ -61,6 +76,44 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Migrated the catalogue to schema v6: renamed the misleading
+  `attribution_text` field to `provenance_note`, removed obsolete static
+  `program` placeholders now superseded by generated schedule snapshots, and
+  represented absent accessibility notes as null instead of repeated prose.
+- Made public-page playback reject insecure HTTP manifests when served over
+  HTTPS, count only implemented schedule collectors in the coverage summary,
+  and localize the newer sub-national jurisdiction names in major translated
+  interfaces.
+- Linked the selected catalogue row and evidence panel with a shared visual
+  marker, and localized the new research-interface labels in every supported
+  language.
+- Localized generated detail-card headings, accessibility states, schedule
+  link categories, and evidence-link labels while preserving catalogue notes
+  and source-authored text in their recorded language.
+- Removed the redundant attribution row and generic accessibility fallback
+  note, limited Now/Next display to collected schedule snapshots, and localized
+  the catalogue's generated playback-policy recommendations. Rights paragraphs
+  are now identified as catalogue summaries rather than implied quotations.
+- In non-English views, kept localized evidence links and generated guidance
+  visible while moving English catalogue-authored rights and recommendation
+  prose into a clearly labelled, collapsed research-notes disclosure. Also
+  suppressed source-dependent accessibility notes that repeated the statuses
+  immediately above them.
+- Replaced Quebec's two machine-only POST schedule API links in the public card
+  with one usable link to the Assembly's webcast page; both live and upcoming
+  API records remain available to the Python schedule collector.
+- Completed an interface-localization contract for every supported locale,
+  including filters, errors, sorting announcements, player failures, mobile
+  controls, and assistive descriptions; automated browser checks now reject
+  missing messages or status labels in any locale.
+- Kept source-authored and catalogue research prose in its recorded language
+  while moving useful English accessibility notes into the explicitly labelled
+  research disclosure on non-English pages. Corrected the accented official
+  name `Assemblée nationale du Québec` across all 14 Quebec channel records and
+  added consistency checks for repeated service families and source statuses.
+- Corrected the Council of Europe / PACE official-page record from the
+  misleading `needs_review` access status to `link_only`; no direct playback
+  endpoint is currently recorded for that source.
 - Reworked the mobile source details into a non-modal, resizable bottom sheet
   that keeps the catalogue available for switching streams.
 - Tightened mobile catalogue rows and reorganized sheet spacing, actions, and

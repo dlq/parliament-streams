@@ -1,0 +1,196 @@
+name: Catalogue Audit
+
+on:
+  schedule:
+    - cron: "41 6 * * 1-6"
+    - cron: "41 6 * * 0"
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: Run the weekly Chromium discovery pass
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalogue-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    name: Daily catalogue audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: python -m pip install uv
+
+      - name: Sync Python dependencies
+        run: uv sync --locked --extra dev
+
+      - name: Restore preceding stable-health report
+        uses: actions/cache/restore@v5
+        with:
+          path: .audit-baseline
+          key: catalogue-audit-${{ github.run_id }}
+          restore-keys: catalogue-audit-
+
+      - name: Validate catalogue structure and identity metadata
+        run: |
+          mkdir -p reports/automated
+          uv run --locked parliament-streams validate
+          uv run --locked parliament-streams identity-audit \
+            --output reports/automated/identity-audit.json
+
+      - name: Audit every primary playback or official URL
+        run: >-
+          uv run --locked parliament-streams health-check
+          --timeout 12
+          --retries 1
+          --workers 8
+          --output reports/automated/catalogue-health.json
+
+      - name: Audit stable streams for regressions
+        run: |
+          mapfile -t stable_ids < <(jq -r '.channels[] | select(.availability == "always_on") | .id' data/channels.json)
+          args=()
+          for channel_id in "${stable_ids[@]}"; do
+            args+=(--id "$channel_id")
+          done
+          uv run --locked parliament-streams health-check \
+            "${args[@]}" \
+            --timeout 12 \
+            --retries 1 \
+            --workers 8 \
+            --output reports/automated/stable-health.json
+
+      - name: Compare stable streams with the preceding run
+        id: health-diff
+        continue-on-error: true
+        run: |
+          if [[ -f .audit-baseline/stable-health.json ]]; then
+            uv run --locked parliament-streams health-diff \
+              .audit-baseline/stable-health.json \
+              reports/automated/stable-health.json \
+              --output reports/automated/stable-health-diff.json \
+              --fail-on-regression
+          else
+            echo '{"regressions":[],"recoveries":[],"changes":[]}' > reports/automated/stable-health-diff.json
+          fi
+
+      - name: Audit schedule endpoints and parsers
+        run: |
+          uv run --locked parliament-streams epg-audit \
+            --timeout 12 \
+            --retries 0 \
+            --workers 8 \
+            --output reports/automated/epg-audit.json
+          uv run --locked parliament-streams schedules-collect \
+            --timeout 15 \
+            --retries 1 \
+            --minimum-successful-sources 1 \
+            --output reports/automated/schedules.json
+
+      - name: Audit official, rights, identity, and embed links
+        run: >-
+          uv run --locked parliament-streams links-audit
+          --timeout 12
+          --retries 0
+          --workers 8
+          --output reports/automated/links-audit.json
+
+      - name: Write audit summary
+        if: always()
+        run: |
+          {
+            echo "## Catalogue audit"
+            echo
+            [[ -f reports/automated/catalogue-health.json ]] && jq -r '"Primary sources: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/catalogue-health.json
+            [[ -f reports/automated/epg-audit.json ]] && jq -r '"Schedule endpoints: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/epg-audit.json
+            [[ -f reports/automated/links-audit.json ]] && jq -r '"Supporting links: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/links-audit.json
+            [[ -f reports/automated/schedules.json ]] && jq -r '"Parsed schedules: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/schedules.json
+            [[ -f reports/automated/stable-health-diff.json ]] && jq -r '"Stable-stream regressions: \(.regressions | length); recoveries: \(.recoveries | length)"' reports/automated/stable-health-diff.json
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Preserve current stable-health baseline
+        if: always() && hashFiles('reports/automated/stable-health.json') != ''
+        run: |
+          mkdir -p .audit-baseline
+          cp reports/automated/stable-health.json .audit-baseline/stable-health.json
+
+      - name: Save stable-health baseline
+        if: always() && hashFiles('.audit-baseline/stable-health.json') != ''
+        uses: actions/cache/save@v5
+        with:
+          path: .audit-baseline
+          key: catalogue-audit-${{ github.run_id }}
+
+      - name: Upload daily audit reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: catalogue-audit-${{ github.run_id }}
+          path: reports/automated
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Fail on new stable-stream regressions
+        if: steps.health-diff.outcome == 'failure'
+        run: exit 1
+
+  deep-audit:
+    name: Weekly browser and manifest audit
+    needs: audit
+    if: >-
+      always() &&
+      (github.event.schedule == '41 6 * * 0' ||
+      (github.event_name == 'workflow_dispatch' && inputs.deep))
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          python -m pip install uv
+          uv sync --locked --extra dev
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Generate complete official-page seed
+        run: |
+          mkdir -p reports/automated
+          uv run --locked parliament-streams seed \
+            --output reports/automated/catalogue-seed.json
+
+      - name: Discover and validate browser-loaded manifests
+        run: >-
+          node tools/deep_validate_browser.mjs
+          --input reports/automated/catalogue-seed.json
+          --output reports/automated/deep-browser-validation.json
+
+      - name: Upload weekly deep-audit reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: catalogue-deep-audit-${{ github.run_id }}
+          path: reports/automated
+          if-no-files-found: warn
+          retention-days: 90

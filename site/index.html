@@ -7,7 +7,7 @@
     <title>Parliament Streams</title>
     <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
     <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
-    <link rel="stylesheet" href="styles.css?v=20260817-programme-layout">
+    <link rel="stylesheet" href="styles.css?v=20260817-research-ui">
   </head>
   <body>
     <a class="skip-link" href="#catalogue" id="skip-link">Skip to catalogue</a>
@@ -27,10 +27,13 @@
 
     <main>
       <section class="intro" aria-labelledby="page-title">
-        <p class="section-label" id="intro-label">Public research catalogue</p>
-        <h1 id="page-title">Parliamentary video, documented.</h1>
-        <p class="lede" id="intro-lede">Official stream endpoints, watch pages, schedule surfaces, and the evidence needed to judge how each source may be used.</p>
-        <p class="catalogue-stats" id="catalogue-stats" aria-live="polite">Loading catalogue...</p>
+        <div class="intro-inner">
+          <p class="section-label" id="intro-label">Public research catalogue</p>
+          <h1 id="page-title">Parliamentary video, documented.</h1>
+          <p class="lede" id="intro-lede">Official stream endpoints, watch pages, schedule surfaces, and the evidence needed to judge how each source may be used.</p>
+          <p class="catalogue-stats" id="catalogue-stats" aria-live="polite">Loading catalogue...</p>
+          <a class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Interior_of_House_of_Commons_(Parliament_House),_London,_England)_-_F.F._%26_Co_LCCN89713510.jpg" target="_blank" rel="noreferrer" lang="en">House of Commons chamber, 1890 · Library of Congress · Public domain <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
 
       <section class="catalogue-section" id="catalogue" aria-labelledby="catalogue-title">
@@ -41,6 +44,14 @@
           </div>
           <a class="text-link" id="source-json-link" href="data/channels.json" target="_blank" rel="noreferrer">View source JSON <span aria-hidden="true">↗</span></a>
         </div>
+
+        <p class="visually-hidden" id="catalogue-overview-title">Catalogue coverage</p>
+        <dl class="catalogue-overview" id="catalogue-overview">
+          <div><dt id="metric-sources-label">Sources</dt><dd id="metric-sources">—</dd></div>
+          <div><dt id="metric-playable-label">Playable here</dt><dd id="metric-playable">—</dd></div>
+          <div><dt id="metric-schedules-label">Schedule sources</dt><dd id="metric-schedules">—</dd></div>
+          <div><dt id="metric-updated-label">Updated</dt><dd id="metric-updated">—</dd></div>
+        </dl>
 
         <div class="filters" id="filters" role="search">
           <label class="search-field">
@@ -66,6 +77,15 @@
             </div>
           </details>
         </div>
+
+        <details class="catalogue-key">
+          <summary id="catalogue-key-title">How to read this catalogue</summary>
+          <dl>
+            <div><dt id="key-format-label">Format</dt><dd id="key-format-values"></dd></div>
+            <div><dt id="key-access-label">Access</dt><dd id="key-access-values"></dd></div>
+            <div><dt id="key-use-label">Use</dt><dd id="key-use-values"></dd></div>
+          </dl>
+        </details>
 
         <p class="results-count" id="results-count" aria-live="polite"></p>
 
@@ -104,6 +124,14 @@
           <h2 id="open-streams-title">Open stream principles</h2>
         </div>
         <div class="open-streams-copy">
+          <ul class="principles-index" aria-label="Open stream principles">
+            <li id="principle-delivery">Open delivery</li>
+            <li id="principle-access">Open access</li>
+            <li id="principle-reuse">Open reuse</li>
+            <li id="principle-schedules">Open schedules</li>
+            <li id="principle-accessibility">Open accessibility</li>
+          </ul>
+          <p id="open-video-copy">Open parliamentary video requires direct, interoperable streams such as HLS, with clear terms that permit embedding, rebroadcasting, preservation, and independent monitoring.</p>
           <p id="open-streams-copy">Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.</p>
           <nav class="open-streams-links" aria-label="Open stream references" lang="en">
             <a class="text-link" id="open-streams-link" href="https://github.com/dlq/parliament-streams/blob/main/docs/open-stream-principles.md" target="_blank" rel="noreferrer">Open stream principles <span aria-hidden="true">↗</span></a>
@@ -121,7 +149,7 @@
     </footer>
 
     <script defer src="catalogue-data.js?v=20260817-schedules"></script>
-    <script defer src="i18n.js?v=20260817-programme-layout"></script>
-    <script defer src="app.js?v=20260817-programme-layout"></script>
+    <script defer src="i18n.js?v=20260817-research-ui"></script>
+    <script defer src="app.js?v=20260817-research-ui"></script>
   </body>
 </html>

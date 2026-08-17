@@ -296,7 +296,7 @@ class ManagementTests(unittest.TestCase):
     def test_json_loaders_site_data_and_hash(self):
         catalogue = load_catalogue(self.catalogue_path)
         self.assertEqual(len(catalogue["channels"]), 82)
-        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 5)
+        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 6)
         self.assertIn("PARLIAMENT_STREAMS_CATALOGUE", render_site_data(self.catalogue_path))
         self.assertEqual(render_site_data_payload(catalogue), render_site_data(self.catalogue_path))
         write_site_data(self.catalogue_path, self.site_path)
@@ -717,13 +717,21 @@ class CliTests(unittest.TestCase):
                 "3",
                 "--retries",
                 "2",
+                "--workers",
+                "4",
                 "--output",
                 str(output_path),
                 "--fail-on-error",
             )
         self.assertEqual(result, 1)
         self.assertEqual(load_json_object(output_path), report)
-        check.assert_called_once_with(self.catalogue, timeout=3, retries=2, channel_ids={"cpac-ca"})
+        check.assert_called_once_with(
+            self.catalogue,
+            timeout=3,
+            retries=2,
+            channel_ids={"cpac-ca"},
+            workers=4,
+        )
 
     def test_schedules_collect_command(self):
         snapshot = {
@@ -770,14 +778,53 @@ class CliTests(unittest.TestCase):
                 "3",
                 "--retries",
                 "2",
+                "--workers",
+                "4",
                 "--output",
                 str(output_path),
             )
         self.assertEqual(result, 0)
         self.assertEqual(load_json_object(output_path), report)
         audit.assert_called_once()
-        self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2})
-        self.assertEqual(audit.call_args.args[0]["schema_version"], 5)
+        self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2, "workers": 4})
+        self.assertEqual(audit.call_args.args[0]["schema_version"], 6)
+
+    def test_links_audit_command_writes_report_and_can_fail(self):
+        report = {
+            "generated_at": "2026-08-17T12:00:00Z",
+            "counts": {
+                "reachable": 1,
+                "access_blocked": 0,
+                "not_found": 0,
+                "error": 0,
+                "links": 1,
+            },
+            "links": [],
+        }
+        output_path = self.root / "links-audit.json"
+        with mock.patch(
+            "parliament_streams.cli.audit_catalogue_links", return_value=report
+        ) as audit:
+            result, _, _ = self.run_cli(
+                "links-audit",
+                "--timeout",
+                "3",
+                "--retries",
+                "2",
+                "--workers",
+                "4",
+                "--output",
+                str(output_path),
+            )
+        self.assertEqual(result, 0)
+        self.assertEqual(load_json_object(output_path), report)
+        audit.assert_called_once()
+        self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2, "workers": 4})
+
+        report["counts"]["not_found"] = 1
+        with mock.patch("parliament_streams.cli.audit_catalogue_links", return_value=report):
+            result, _, _ = self.run_cli("links-audit", "--fail-on-error")
+        self.assertEqual(result, 1)
 
 
 if __name__ == "__main__":

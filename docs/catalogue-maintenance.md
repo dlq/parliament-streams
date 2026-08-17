@@ -128,6 +128,25 @@ The identity audit verifies catalogue coherence; it does not claim that an
 external entity match is substantively correct. Live health checks establish
 technical reachability, not permission to reuse a source.
 
+Audit all unique supporting links recorded across channel metadata:
+
+```sh
+uv run parliament-streams links-audit \
+  --output reports/links-validation-YYYY-MM-DD.json
+```
+
+The link audit checks official pages, permission evidence, identity references,
+and embed surfaces in parallel. It deliberately excludes playback and EPG URLs,
+which receive manifest-aware and request-aware checks from `health-check` and
+`epg-audit`. Reachable responses include a bounded byte count and SHA-256
+fingerprint so a later report can reveal that source evidence changed.
+
+`.github/workflows/catalogue-audit.yml` runs these checks daily and uploads the
+reports without committing transient results. Its Sunday job generates a full
+catalogue seed and runs Chromium against every official page. The workflow
+compares only `always_on` stream health with the preceding run so event-based
+feeds do not cause false regression failures outside sitting hours.
+
 ## Schedule And EPG Sources
 
 Add and update schedule-page metadata through the normal typed catalogue record
@@ -166,7 +185,8 @@ the same snapshot directly into the Pages artifact every six hours without
 committing transient events. The European Parliament's Next.js data URL
 contains a deployment-specific build ID and must be updated in its Python
 scraper when the official site deploys a new build. A source failure is recorded
-and the page falls back to the catalogue programme text.
+and the page retains the official schedule links without presenting stale
+Now/Next text.
 
 ### Offline Research Parsers
 
@@ -185,6 +205,25 @@ catalogue UI; `tools/deep_validate_browser.mjs` is an explicit live research
 tool that inspects third-party player traffic. Neither tool builds or runs the
 deployed static site. The deep validator requires explicit input and output
 report paths; see the README for the full invocation.
+
+## Scheduled Candidate Discovery
+
+The monthly `Candidate Discovery` workflow checks the canonical Tier 1 and
+Tier 2 watchlists in `data/discovery/`. Static checks revisit known manifests
+and inspect official-page HTML; Chromium checks capture player-loaded HLS/DASH
+requests. The findings report deduplicates validated URLs against catalogue
+playback and embed URLs.
+
+Treat every `review` finding as research intake, not as an approved source.
+Confirm that it represents the intended legislature and a stable channel,
+record its official provenance, schedule behavior, accessibility evidence, and
+rights posture, then create a candidate record. Scheduled discovery does not
+edit `data/channels.json` or `candidates/`.
+
+The watchlist itself requires maintenance. General web search, new official
+sites, renamed institutions, and entirely new player surfaces cannot be
+discovered reliably from a closed set of URLs. Update the target files when
+manual research identifies a better official page.
 
 ## Complete Verification
 

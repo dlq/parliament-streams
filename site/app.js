@@ -9,6 +9,10 @@ const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
 const schedulesUrl = new URL("./data/schedules.json", appScriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", appScriptUrl);
 const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
+const redundantAccessibilityNotes = new Set([
+  "The official service provides accessible variants for some scheduled proceedings.",
+  "The official service provides language and accessibility variants for some scheduled proceedings.",
+]);
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
 const state = { channels: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
@@ -56,6 +60,7 @@ const jurisdictionFlagAssets = {
   Luxembourg: "assets/flags/lu.svg",
   Manitoba: "assets/flags/manitoba.svg",
   Mongolia: "assets/flags/mn.svg",
+  Navarre: "assets/flags/navarre.svg",
   Netherlands: "assets/flags/nl.svg",
   "New Zealand": "assets/flags/nz.svg",
   "New South Wales": "assets/flags/new-south-wales.svg",
@@ -144,6 +149,77 @@ const devolvedJurisdictionNames = {
   "zh-Hans": { Scotland: "苏格兰", Wales: "威尔士", "Northern Ireland": "北爱尔兰" },
 };
 
+const subnationalJurisdictionNames = {
+  fr: {
+    Alberta: "Alberta", Andalusia: "Andalousie", "Baden-Wurttemberg": "Bade-Wurtemberg", Bavaria: "Bavière",
+    "British Columbia": "Colombie-Britannique", Catalonia: "Catalogne", Jalisco: "Jalisco", Manitoba: "Manitoba",
+    Navarre: "Navarre", "New South Wales": "Nouvelle-Galles du Sud", "Newfoundland and Labrador": "Terre-Neuve-et-Labrador",
+    "North Rhine-Westphalia": "Rhénanie-du-Nord-Westphalie", "Northwest Territories": "Territoires du Nord-Ouest",
+    "Prince Edward Island": "Île-du-Prince-Édouard", Queensland: "Queensland", Saskatchewan: "Saskatchewan",
+    Valencia: "Valence", Victoria: "Victoria", "Western Australia": "Australie-Occidentale",
+  },
+  es: {
+    Alberta: "Alberta", Andalusia: "Andalucía", "Baden-Wurttemberg": "Baden-Wurtemberg", Bavaria: "Baviera",
+    "British Columbia": "Columbia Británica", Catalonia: "Cataluña", Jalisco: "Jalisco", Manitoba: "Manitoba",
+    Navarre: "Navarra", "New South Wales": "Nueva Gales del Sur", "Newfoundland and Labrador": "Terranova y Labrador",
+    "North Rhine-Westphalia": "Renania del Norte-Westfalia", "Northwest Territories": "Territorios del Noroeste",
+    "Prince Edward Island": "Isla del Príncipe Eduardo", Queensland: "Queensland", Saskatchewan: "Saskatchewan",
+    Valencia: "Valencia", Victoria: "Victoria", "Western Australia": "Australia Occidental",
+  },
+  "pt-BR": {
+    Alberta: "Alberta", Andalusia: "Andaluzia", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Baviera",
+    "British Columbia": "Colúmbia Britânica", Catalonia: "Catalunha", Jalisco: "Jalisco", Manitoba: "Manitoba",
+    Navarre: "Navarra", "New South Wales": "Nova Gales do Sul", "Newfoundland and Labrador": "Terra Nova e Labrador",
+    "North Rhine-Westphalia": "Renânia do Norte-Vestfália", "Northwest Territories": "Territórios do Noroeste",
+    "Prince Edward Island": "Ilha do Príncipe Eduardo", Queensland: "Queensland", Saskatchewan: "Saskatchewan",
+    Valencia: "Valência", Victoria: "Vitória", "Western Australia": "Austrália Ocidental",
+  },
+  de: {
+    Alberta: "Alberta", Andalusia: "Andalusien", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Bayern",
+    "British Columbia": "Britisch-Kolumbien", Catalonia: "Katalonien", Jalisco: "Jalisco", Manitoba: "Manitoba",
+    Navarre: "Navarra", "New South Wales": "Neusüdwales", "Newfoundland and Labrador": "Neufundland und Labrador",
+    "North Rhine-Westphalia": "Nordrhein-Westfalen", "Northwest Territories": "Nordwest-Territorien",
+    "Prince Edward Island": "Prinz-Edward-Insel", Queensland: "Queensland", Saskatchewan: "Saskatchewan",
+    Valencia: "Valencia", Victoria: "Victoria", "Western Australia": "Westaustralien",
+  },
+  it: {
+    Alberta: "Alberta", Andalusia: "Andalusia", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Baviera",
+    "British Columbia": "Columbia Britannica", Catalonia: "Catalogna", Jalisco: "Jalisco", Manitoba: "Manitoba",
+    Navarre: "Navarra", "New South Wales": "Nuovo Galles del Sud", "Newfoundland and Labrador": "Terranova e Labrador",
+    "North Rhine-Westphalia": "Renania Settentrionale-Vestfalia", "Northwest Territories": "Territori del Nord-Ovest",
+    "Prince Edward Island": "Isola del Principe Edoardo", Queensland: "Queensland", Saskatchewan: "Saskatchewan",
+    Valencia: "Valencia", Victoria: "Victoria", "Western Australia": "Australia Occidentale",
+  },
+  nl: {
+    Alberta: "Alberta", Andalusia: "Andalusië", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Beieren",
+    "British Columbia": "Brits-Columbia", Catalonia: "Catalonië", Jalisco: "Jalisco", Manitoba: "Manitoba",
+    Navarre: "Navarra", "New South Wales": "Nieuw-Zuid-Wales", "Newfoundland and Labrador": "Newfoundland en Labrador",
+    "North Rhine-Westphalia": "Noordrijn-Westfalen", "Northwest Territories": "Northwest Territories",
+    "Prince Edward Island": "Prins Edwardeiland", Queensland: "Queensland", Saskatchewan: "Saskatchewan",
+    Valencia: "Valencia", Victoria: "Victoria", "Western Australia": "West-Australië",
+  },
+  da: {
+    Andalusia: "Andalusien", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Bayern", Catalonia: "Catalonien",
+    Navarre: "Navarra", "New South Wales": "New South Wales", "North Rhine-Westphalia": "Nordrhein-Westfalen",
+    "Northwest Territories": "Nordvestterritorierne", "Prince Edward Island": "Prince Edward Island",
+    "Western Australia": "Western Australia",
+  },
+  nb: {
+    Andalusia: "Andalusia", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Bayern", Catalonia: "Catalonia",
+    Navarre: "Navarra", "New South Wales": "New South Wales", "North Rhine-Westphalia": "Nordrhein-Westfalen",
+    "Northwest Territories": "Nordvestterritoriene", "Prince Edward Island": "Prince Edward Island",
+    "Western Australia": "Vest-Australia",
+  },
+  "zh-Hans": {
+    Alberta: "艾伯塔", Andalusia: "安达卢西亚", "Baden-Wurttemberg": "巴登-符腾堡", Bavaria: "巴伐利亚",
+    "British Columbia": "不列颠哥伦比亚", Catalonia: "加泰罗尼亚", Jalisco: "哈利斯科", Manitoba: "马尼托巴",
+    Navarre: "纳瓦拉", "New South Wales": "新南威尔士", "Newfoundland and Labrador": "纽芬兰与拉布拉多",
+    "North Rhine-Westphalia": "北莱茵-威斯特法伦", "Northwest Territories": "西北地区",
+    "Prince Edward Island": "爱德华王子岛", Queensland: "昆士兰", Saskatchewan: "萨斯喀彻温",
+    Valencia: "巴伦西亚", Victoria: "维多利亚", "Western Australia": "西澳大利亚",
+  },
+};
+
 const languageCodes = {
   Danish: "da", Dutch: "nl", English: "en", Estonian: "et", French: "fr", Gaelic: "gd", German: "de",
   Greek: "el", Hebrew: "he", Hindi: "hi", Inuktitut: "iu", Irish: "ga", Italian: "it",
@@ -174,7 +250,9 @@ function t(key, values) { return message(state.locale, key, values); }
 function label(value) { return localizedLabel(state.locale, value); }
 function slug(value) { return value.replaceAll("_", "-"); }
 function jurisdictionName(name) {
-  const specialName = specialJurisdictionNames[state.locale]?.[name] ?? devolvedJurisdictionNames[state.locale]?.[name];
+  const specialName = specialJurisdictionNames[state.locale]?.[name]
+    ?? devolvedJurisdictionNames[state.locale]?.[name]
+    ?? subnationalJurisdictionNames[state.locale]?.[name];
   if (specialName) return specialName;
   const code = jurisdictionCodes[name];
   if (!code) return name;
@@ -185,24 +263,9 @@ function jurisdictionMark(countryOrRegion) {
   const displayName = jurisdictionName(countryOrRegion);
   const asset = jurisdictionFlagAssets[countryOrRegion];
   if (asset) {
-    return `<img class="jurisdiction-flag" src="${asset}" alt="${displayName} flag" title="${displayName}" lang="${state.locale}">`;
+    return `<img class="jurisdiction-flag" src="${asset}" alt="${displayName}" title="${displayName}" lang="${state.locale}">`;
   }
   return `<span class="jurisdiction-mark" role="img" aria-label="${displayName}" title="${displayName}" lang="${state.locale}">🏛️</span>`;
-}
-function accessDescription(status) {
-  return {
-    validated: "An in-page playback route was successfully checked.",
-    needs_review: "A direct route is recorded but needs a fresh or successful check.",
-    link_only: "The catalogue records an official watch page, not a direct playback route.",
-  }[status];
-}
-function sourceTypeDescription(sourceType) {
-  return {
-    direct_hls: "A direct HTTP Live Streaming endpoint.",
-    direct_dash: "A direct MPEG-DASH streaming endpoint.",
-    official_page: "An official watch page; no direct stream endpoint is recorded.",
-    youtube: "An official YouTube watch surface.",
-  }[sourceType];
 }
 function setText(id, value) { document.querySelector(`#${id}`).textContent = value; }
 function setOptionLabel(element, key, values) {
@@ -213,6 +276,7 @@ function setOptionLabel(element, key, values) {
 function applyStaticTranslations() {
   document.documentElement.lang = state.locale;
   document.title = t("title");
+  document.querySelector('meta[name="description"]').setAttribute("content", t("lede"));
   document.querySelector("#skip-link").textContent = t("skipCatalogue");
   document.querySelector("#brand-home").setAttribute("aria-label", t("brandHome"));
   document.querySelector("#primary-navigation").setAttribute("aria-label", t("primaryNavigation"));
@@ -230,14 +294,32 @@ function applyStaticTranslations() {
   setText("source-type-label", t("sourceType"));
   setText("use-guidance-label", t("useGuidance"));
   setText("filters-label", t("filters"));
+  setText("catalogue-key-title", t("catalogueKey"));
+  setText("key-format-label", t("format"));
+  setText("key-access-label", t("access"));
+  setText("key-use-label", t("use"));
+  setText("metric-sources-label", t("metricSources"));
+  setText("metric-playable-label", t("metricPlayable"));
+  setText("metric-schedules-label", t("metricSchedules"));
+  setText("metric-updated-label", t("metricUpdated"));
+  setText("catalogue-overview-title", t("catalogueCoverage"));
   document.querySelector("#catalogue-results").setAttribute("aria-label", t("catalogueResults"));
+  elements.sortStatus.setAttribute("lang", state.locale);
   ["source", "jurisdiction", "format", "language", "access", "use"].forEach((key) => setText(`sort-${key}`, t(key === "language" ? "contentLanguage" : key)));
   setText("method-label", t("care"));
   setText("method-title", t("methodTitle"));
   setText("method-copy", t("methodCopy"));
   document.querySelector("#rights-link").firstChild.textContent = `${t("rights")} `;
   setText("open-streams-title", t("openStreams"));
+  setText("open-video-copy", t("openVideoCopy"));
   setText("open-streams-copy", t("openStreamsCopy"));
+  setText("principle-delivery", t("principleDelivery"));
+  setText("principle-access", t("principleAccess"));
+  setText("principle-reuse", t("principleReuse"));
+  setText("principle-schedules", t("principleSchedules"));
+  setText("principle-accessibility", t("principleAccessibility"));
+  document.querySelector(".principles-index").setAttribute("aria-label", t("principlesLabel"));
+  document.querySelector(".open-streams-links").setAttribute("aria-label", t("openStreams"));
   document.querySelector("#open-streams-link").firstChild.textContent = `${t("openStreams")} `;
   document.querySelector("#open-streams-link").setAttribute("lang", state.locale);
   setText("footer-copy", t("footer"));
@@ -256,23 +338,34 @@ function setLocale(locale) {
     setOptionLabel(elements.rights, "allUse", [...new Set(state.channels.map((channel) => channel.permission.status))].sort());
     renderList();
     renderDetail();
+    renderResearchSummary();
     elements.stats.textContent = t("documented", { count: state.channels.length, date: state.generatedOn });
   }
 }
-function permissionDescription(status) {
-  return {
-    personal_use_pending_review: "No affirmative third-party permission is recorded. Playback is available under the catalogue's opt-out policy unless terms expressly prohibit it.",
-    noncommercial_pending_review: "The source records some non-commercial reuse support but does not clearly cover this use. Playback is available under the catalogue's opt-out policy unless terms expressly prohibit it.",
-    explicit_reuse_with_conditions: "Reuse is documented, subject to the source's stated conditions and attribution requirements.",
-    embed_only: "Use the source platform's official embed or outbound link; do not extract its stream endpoint.",
-    no_third_party_reuse: "The source terms prohibit third-party reuse without separate written permission; use its official link only.",
-  }[status];
-}
 function canPlay(channel) {
   const supportedSource = Boolean(channel.playback_url) || channel.embed?.provider === "youtube";
+  const mixedContentBlocked = window.location.protocol === "https:"
+    && channel.playback_url?.startsWith("http:");
   return supportedSource
+    && !mixedContentBlocked
     && channel.technical_status === "validated"
     && !blockedPlaybackRights.has(channel.permission.status);
+}
+function formatDate(value) {
+  if (!value) return t("notAvailable");
+  const date = new Date(value.length === 10 ? `${value}T12:00:00` : value);
+  return new Intl.DateTimeFormat(state.locale, { dateStyle: "medium" }).format(date);
+}
+function renderResearchSummary() {
+  document.querySelector("#metric-sources").textContent = state.channels.length;
+  document.querySelector("#metric-playable").textContent = state.channels.filter(canPlay).length;
+  document.querySelector("#metric-schedules").textContent = state.channels.filter((channel) =>
+    channel.epg_sources.some((source) => source.scraper_status === "implemented")
+  ).length;
+  document.querySelector("#metric-updated").textContent = formatDate(state.generatedOn);
+  document.querySelector("#key-format-values").textContent = ["direct_hls", "direct_dash", "youtube", "official_page"].map(label).join(" · ");
+  document.querySelector("#key-access-values").textContent = ["validated", "needs_review", "link_only"].map(label).join(" · ");
+  document.querySelector("#key-use-values").textContent = ["explicit_reuse_with_conditions", "embed_only", "personal_use_pending_review", "no_third_party_reuse"].map(label).join(" · ");
 }
 function sourceNameMarkup(name) { return name.replaceAll(" - ", "<br>"); }
 function languageMarkup(language) {
@@ -311,7 +404,8 @@ function renderSortHeaders() {
     button.dataset.direction = active ? state.sort.direction : "none";
     button.setAttribute("aria-pressed", String(active));
     if (active) {
-      elements.sortStatus.textContent = `Sorted by ${button.textContent}, ${state.sort.direction}.`;
+      const direction = state.sort.direction === "ascending" ? t("sortAscending") : t("sortDescending");
+      elements.sortStatus.textContent = `${button.textContent}: ${direction}.`;
     }
   });
 }
@@ -325,7 +419,7 @@ function filteredChannels() {
       && (!elements.format.value || channel.source_type === elements.format.value)
       && (!elements.rights.value || channel.permission.status === elements.rights.value);
   }).sort((left, right) => {
-    const result = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" })
+    const result = new Intl.Collator(state.locale, { numeric: true, sensitivity: "base" })
       .compare(sortValue(left, state.sort.key), sortValue(right, state.sort.key));
     return state.sort.direction === "ascending" ? result : -result;
   });
@@ -340,18 +434,17 @@ function renderList() {
   }
   elements.list.innerHTML = channels.length ? channels.map((channel) => {
     const descriptionId = `${channel.id}-description`;
-    const playbackDescription = canPlay(channel) ? " Embedded playback is available." : "";
     return `
     <li>
       <button class="channel-button" type="button" data-channel-id="${channel.id}" aria-pressed="${channel.id === state.selectedId}" aria-describedby="${descriptionId}">
-        <span><span class="channel-name" lang="en">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-hidden="true">&#9654;</span>' : ""}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
+        <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-hidden="true">&#9654;</span>' : ""}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
         <span>${jurisdictionName(channel.country_or_region)}</span>
-        <span class="format" lang="en" title="${sourceTypeDescription(channel.source_type)}"><span lang="${state.locale}">${label(channel.source_type)}</span></span>
+        <span class="format" lang="${state.locale}" title="${t("format")}: ${label(channel.source_type)}">${label(channel.source_type)}</span>
         <span class="language-list">${languageMarkup(channel.language)}</span>
-        <span><span class="status status-${slug(channel.technical_status)}" lang="en" title="${accessDescription(channel.technical_status)}"><span lang="${state.locale}">${label(channel.technical_status)}</span></span></span>
-        <span><span class="status status-${slug(channel.permission.status)}" lang="en" title="${permissionDescription(channel.permission.status)}"><span lang="${state.locale}">${label(channel.permission.status)}</span></span></span>
+        <span><span class="status status-${slug(channel.technical_status)}" lang="${state.locale}" title="${t("access")}: ${label(channel.technical_status)}">${label(channel.technical_status)}</span></span>
+        <span><span class="status status-${slug(channel.permission.status)}" lang="${state.locale}" title="${t("use")}: ${label(channel.permission.status)}">${label(channel.permission.status)}</span></span>
       </button>
-      <span class="visually-hidden" id="${descriptionId}" lang="en">Format: ${sourceTypeDescription(channel.source_type)} Access: ${accessDescription(channel.technical_status)} Use: ${permissionDescription(channel.permission.status)}${playbackDescription}</span>
+      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${t("format")}: ${label(channel.source_type)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
     </li>`;
   }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
@@ -428,15 +521,35 @@ function setupDetailSheetControls() {
 }
 function epgMarkup(channel) {
   if (!channel.epg_sources.length) return `<span>${t("noSchedule")}</span>`;
-  return `<ul class="epg-list">${channel.epg_sources.map((source) => `<li><a href="${source.url}" target="_blank" rel="noreferrer" lang="en">${sentenceCase(source.kind)} ↗</a></li>`).join("")}</ul>`;
+  const occurrences = new Map();
+  const sourceLabel = (kind) => {
+    if (kind.includes("api")) return t("scheduleApi");
+    if (kind.includes("open_data")) return t("openScheduleData");
+    if (/calendar|agenda|sitting_dates|meetings/.test(kind)) return t("calendarAgenda");
+    if (/live|webcast|television|tv_|webstreaming|webtv|mediathek/.test(kind)) return t("liveSchedulePage");
+    return t("schedulePage");
+  };
+  const browserSources = channel.epg_sources.filter((source) => source.method === "GET");
+  const machineOnlySources = channel.epg_sources.filter((source) => source.method !== "GET");
+  const links = browserSources.map((source) => {
+    const sourceType = sourceLabel(source.kind);
+    const occurrence = (occurrences.get(sourceType) ?? 0) + 1;
+    occurrences.set(sourceType, occurrence);
+    return `<li><a href="${source.url}" target="_blank" rel="noreferrer" title="${sentenceCase(source.kind)}" lang="${state.locale}">${sourceType}${occurrence > 1 ? ` ${occurrence}` : ""} ↗</a></li>`;
+  });
+  if (machineOnlySources.length) {
+    links.push(`<li><a href="${channel.official_url}" target="_blank" rel="noreferrer" title="${t("liveSchedulePage")}" lang="${state.locale}">${t("liveSchedulePage")} ↗</a></li>`);
+  }
+  return `<ul class="epg-list">${links.join("")}</ul>`;
 }
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 }
 function programmeMarkup(channel) {
   const schedule = state.schedules[channel.id];
-  const record = schedule ?? channel.program;
-  const programmeLine = (labelKey, title, time) => `<span class="programme-line"><strong>${t(labelKey)}</strong> ${escapeHtml(title)}${time ? ` <span class="programme-time">· ${escapeHtml(time)}</span>` : ""}</span>`;
+  if (!schedule) return "";
+  const record = schedule;
+  const programmeLine = (labelKey, title, time) => `<span class="programme-line"><strong lang="${state.locale}">${t(labelKey)}</strong> <span${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)}${time ? ` <span class="programme-time">· ${escapeHtml(time)}</span>` : ""}</span></span>`;
   const current = programmeLine("nowProgramme", record.current_event_title, record.current_event_time);
   const next = record.next_event_title
     ? programmeLine("nextProgramme", record.next_event_title, record.next_event_time)
@@ -451,19 +564,13 @@ function programmeMarkup(channel) {
 }
 function evidenceLabel(channel, url) {
   const address = url.toLocaleLowerCase();
-  if (url === channel.official_url) return "Official watch page";
-  if (url === channel.playback_url) return "Recorded stream endpoint";
-  if (channel.epg_sources.some((source) => source.url === url)) return "Schedule source";
-  if (/terms|termo|condition/.test(address)) return "Terms and conditions";
-  if (/copyright|droits|property|licen[cs]e|reuse/.test(address)) return "Copyright / reuse terms";
-  if (/privacy|privacidade/.test(address)) return "Privacy policy";
-  if (/embed/.test(address)) return "Embed guidance";
+  if (url === channel.official_url) return t("officialEvidence");
+  if (url === channel.playback_url) return t("streamEvidence");
+  if (channel.epg_sources.some((source) => source.url === url)) return t("schedule");
+  if (/terms|termo|condition|copyright|droits|property|licen[cs]e|reuse|embed/.test(address)) return t("rightsEvidence");
+  if (/privacy|privacidade/.test(address)) return t("privacyEvidence");
   if (/faq/.test(address)) return "FAQ";
-  if (/transparen/.test(address)) return "Transparency policy";
-  if (/press/.test(address)) return "Press / media information";
-  if (/audiovisual|media|multimedia/.test(address)) return "Official media page";
-  if (/live|webcast|video|television|\.tv\//.test(address)) return "Official live page";
-  return "Supporting source";
+  return t("supportingEvidence");
 }
 function evidenceMarkup(channel) {
   const occurrences = new Map();
@@ -472,32 +579,71 @@ function evidenceMarkup(channel) {
     const occurrence = (occurrences.get(label) ?? 0) + 1;
     occurrences.set(label, occurrence);
     const suffix = occurrence > 1 ? ` ${occurrence}` : "";
-    return `<a href="${url}" target="_blank" rel="noreferrer" title="${url}" lang="en">${label}${suffix} ↗</a>`;
+    return `<a href="${url}" target="_blank" rel="noreferrer" title="${url}" lang="${state.locale}">${label}${suffix} ↗</a>`;
   }).join(" ");
 }
 function accessibilityStatusLabel(status) {
   return {
-    available: "Available",
-    source_dependent: "Varies by source or event",
-    unavailable: "Unavailable",
-    unknown: "Not yet verified",
-  }[status];
+    available: t("a11yAvailable"),
+    source_dependent: t("a11ySourceDependent"),
+    unavailable: t("a11yUnavailable"),
+    unknown: t("a11yUnknown"),
+  }[status] ?? status;
+}
+function meaningfulAccessibilityNote(channel) {
+  const note = channel.accessibility.notes;
+  return redundantAccessibilityNotes.has(note) ? "" : note;
 }
 function accessibilityMarkup(channel) {
   const accessibility = channel.accessibility;
-  const languageNames = new Intl.DisplayNames(["en"], { type: "language", fallback: "code" });
+  const languageNames = new Intl.DisplayNames([state.locale], { type: "language", fallback: "code" });
   const captionLanguages = accessibility.caption_languages.length
     ? ` (${accessibility.caption_languages.map((language) => languageNames.of(language)).join(", ")})`
     : "";
-  return `<div class="full accessibility-record" lang="en">
-    <dt>Media accessibility</dt>
+  const accessibilityNote = meaningfulAccessibilityNote(channel);
+  const note = state.locale === "en" && accessibilityNote
+    ? `<span class="detail-subtitle" lang="en">${accessibilityNote}</span>`
+    : "";
+  return `<div class="full accessibility-record">
+    <dt>${t("mediaAccessibility")}</dt>
     <dd>
-      <span><strong>Captions:</strong> ${accessibilityStatusLabel(accessibility.captions)}${captionLanguages}</span>
-      <span><strong>Sign language:</strong> ${accessibilityStatusLabel(accessibility.sign_language)}</span>
-      <span><strong>Audio description:</strong> ${accessibilityStatusLabel(accessibility.audio_description)}</span>
-      <span class="detail-subtitle">${accessibility.notes}</span>
+      <span><strong>${t("captions")}:</strong> ${accessibilityStatusLabel(accessibility.captions)}${captionLanguages}</span>
+      <span><strong>${t("signLanguage")}:</strong> ${accessibilityStatusLabel(accessibility.sign_language)}</span>
+      <span><strong>${t("audioDescription")}:</strong> ${accessibilityStatusLabel(accessibility.audio_description)}</span>
+      ${note}
     </dd>
   </div>`;
+}
+function researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy) {
+  if (state.locale === "en") {
+    return `<p class="detail-note"><strong>${t("reuse")}</strong> <span lang="en">${channel.permission.summary} ${evidenceMarkup(channel)}</span></p>
+      <p class="detail-note"><strong>${t("recommendation")}</strong> <span lang="en">${playbackMessage}</span></p>`;
+  }
+
+  const embedNote = channel.embed?.provider === "youtube" && channel.embed.notes
+    ? `<p><strong>Embed record.</strong> ${channel.embed.notes}</p>`
+    : "";
+  const accessibilityNote = meaningfulAccessibilityNote(channel)
+    ? `<p><strong>Accessibility note.</strong> ${meaningfulAccessibilityNote(channel)}</p>`
+    : "";
+  const recommendation = generatedPlaybackPolicy
+    ? ""
+    : `<p><strong>Catalogue recommendation.</strong> ${channel.permission.recommendation}</p>`;
+  const localizedPolicy = generatedPlaybackPolicy
+    ? `<p class="detail-note"><strong>${t("recommendation")}</strong> ${playbackMessage}</p>`
+    : "";
+
+  return `<p class="detail-note evidence-note"><strong>${t("evidenceSources")}</strong> ${evidenceMarkup(channel)}</p>
+    <details class="detail-note research-note-disclosure">
+      <summary>${t("englishResearchNotes")}</summary>
+      <div lang="en">
+        <p><strong>Catalogue rights summary.</strong> ${channel.permission.summary}</p>
+        ${accessibilityNote}
+        ${embedNote}
+        ${recommendation}
+      </div>
+    </details>
+    ${localizedPolicy}`;
 }
 function identityMarkup(channel) {
   const links = channel.identity_sources.map((source) => {
@@ -505,30 +651,52 @@ function identityMarkup(channel) {
       ? channel.external_ids.wikidata_qid
       : channel.external_ids.ipu_chamber_code ?? channel.external_ids.ipu_parliament_code;
     const sourceName = source.source === "wikidata" ? "Wikidata" : "IPU Parline";
-    const title = `${source.notes} Checked ${source.checked_on}; ${source.confidence} confidence.`;
-    return `<li><a href="${source.url}" target="_blank" rel="noreferrer" title="${title}" lang="en">${sourceName} <span class="identity-code">${code}</span> ↗</a></li>`;
+    return `<li><a href="${source.url}" target="_blank" rel="noreferrer">${sourceName} <span class="identity-code">${code}</span> ↗</a></li>`;
   }).join("");
   return `<div class="full identity-record">
     <dt>${t("identity")}</dt>
     <dd><ul class="identity-list">${links}</ul></dd>
   </div>`;
 }
+function freshnessMarkup(channel) {
+  const identityDate = channel.identity_sources
+    .map((source) => source.checked_on)
+    .filter(Boolean)
+    .sort()
+    .at(-1);
+  const scheduleDate = state.schedules[channel.id]?.fetched_at;
+  const scheduleFreshness = scheduleDate
+    ? `<span><strong>${t("programme")}</strong> ${formatDate(scheduleDate)}</span>`
+    : "";
+  return `<div class="full evidence-dates">
+    <dt>${t("evidenceDates")}</dt>
+    <dd>
+      <span><strong>${t("metricUpdated")}</strong> ${formatDate(state.generatedOn)}</span>
+      <span><strong>${t("identity")}</strong> ${formatDate(identityDate)}</span>
+      ${scheduleFreshness}
+    </dd>
+  </div>`;
+}
 function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   const channel = state.channels.find((item) => item.id === state.selectedId);
-  if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">Select a source to view its documentation.</p>`; closeDetailSheet(); return; }
+  if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">${t("selectSource")}</p>`; closeDetailSheet(); return; }
   const allowed = canPlay(channel);
+  const generatedPlaybackPolicy = channel.embed?.provider === "youtube" || allowed;
   const playbackMessage = channel.embed?.provider === "youtube"
-    ? `${channel.embed.notes} Playback uses YouTube's official privacy-enhanced iframe; no YouTube manifest is extracted.`
+    ? state.locale === "en"
+      ? `${channel.embed.notes} ${t("youtubePlaybackPolicy")}`
+      : t("youtubePlaybackPolicy")
     : allowed
-      ? "This technically validated public endpoint is available under the catalogue's opt-out playback policy. This is not a statement that the catalogue has received a licence; review the source notes and report any concern for prompt removal."
-    : channel.permission.recommendation;
+      ? t("optOutPlaybackPolicy")
+      : channel.permission.recommendation;
+  const programme = programmeMarkup(channel);
   elements.detail.setAttribute("aria-labelledby", "detail-title");
   elements.detail.innerHTML = `
     <div class="mobile-sheet-controls">
-      <button class="detail-grabber" data-resize-detail type="button" aria-label="Resize source details" lang="en"><span></span></button>
+      <button class="detail-grabber" data-resize-detail type="button" aria-label="${t("resizeDetails")}" lang="${state.locale}"><span></span></button>
     </div>
-    <h3 class="detail-title" id="detail-title" tabindex="-1" lang="en" aria-live="polite">${channel.name}</h3>
+    <h3 class="detail-title" id="detail-title" tabindex="-1" aria-live="polite">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · <span${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></p>
     <div class="media-frame" id="media-frame">
       <div class="player-placeholder">${allowed ? `<button class="placeholder-play-button" data-start-playback type="button" aria-label="${t("watch")}">▶</button>` : '<span aria-hidden="true">▶</span>'}<p>${allowed ? t("ready") : t("disabled")}</p></div>
@@ -538,18 +706,17 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       <a class="official-button" href="${channel.official_url}" target="_blank" rel="noreferrer">${t("official")} ↗</a>
     </div>
     <dl class="detail-grid">
-      <div lang="en" title="${sourceTypeDescription(channel.source_type)}"><dt lang="${state.locale}">${t("sourceType")}</dt><dd><span lang="${state.locale}">${label(channel.source_type)}</span><span class="visually-hidden">. ${sourceTypeDescription(channel.source_type)}</span></dd></div>
-      <div lang="en" title="${accessDescription(channel.technical_status)}"><dt lang="${state.locale}">${t("accessStatus")}</dt><dd><span class="status status-${slug(channel.technical_status)}" lang="${state.locale}">${label(channel.technical_status)}</span><span class="visually-hidden">. ${accessDescription(channel.technical_status)}</span></dd></div>
-      <div lang="en" title="${permissionDescription(channel.permission.status)}"><dt lang="${state.locale}">${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}" lang="${state.locale}">${label(channel.permission.status)}</span><span class="visually-hidden">. ${permissionDescription(channel.permission.status)}</span></dd></div>
-      <div lang="en" title="The expected operating condition or time window for this source."><dt lang="${state.locale}">${t("availability")}</dt><dd><span lang="${state.locale}">${label(channel.availability)}</span><span class="visually-hidden">. The expected operating condition or time window for this source.</span></dd></div>
-      <div class="full"><dt>${t("attribution")}</dt><dd lang="en">${channel.attribution_text}</dd></div>
-      <div class="full"><dt>${t("programme")}</dt><dd lang="en">${programmeMarkup(channel)}</dd></div>
+      <div title="${t("sourceType")}: ${label(channel.source_type)}"><dt>${t("sourceType")}</dt><dd>${label(channel.source_type)}</dd></div>
+      <div title="${t("accessStatus")}: ${label(channel.technical_status)}"><dt>${t("accessStatus")}</dt><dd><span class="status status-${slug(channel.technical_status)}">${label(channel.technical_status)}</span></dd></div>
+      <div title="${t("useGuidance")}: ${label(channel.permission.status)}"><dt>${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}">${label(channel.permission.status)}</span></dd></div>
+      <div title="${t("availability")}: ${label(channel.availability)}"><dt>${t("availability")}</dt><dd>${label(channel.availability)}</dd></div>
+      ${programme ? `<div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div>` : ""}
       ${accessibilityMarkup(channel)}
       ${identityMarkup(channel)}
       <div class="full"><dt>${t("schedule")}</dt><dd>${epgMarkup(channel)}</dd></div>
+      ${freshnessMarkup(channel)}
     </dl>
-    <p class="detail-note"><strong>${t("reuse")}</strong> <span lang="en">${channel.permission.summary} ${evidenceMarkup(channel)}</span></p>
-    <p class="detail-note"><strong>${t("recommendation")}</strong> <span lang="en">${playbackMessage}</span></p>`;
+    ${researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy)}`;
   elements.detail.classList.toggle("is-open", state.detailSheetOpen);
   document.querySelectorAll("[data-start-playback]").forEach((button) => button.addEventListener("click", () => startPlayback(channel)));
   setupDetailSheetControls();
@@ -571,15 +738,15 @@ async function startPlayback(channel) {
   frame.innerHTML = "";
   if (channel.embed?.provider === "youtube") {
     if (window.location.protocol === "file:") {
-      frame.innerHTML = `<div class="player-placeholder youtube-file-notice" lang="en">
-        <p>YouTube embeds require an HTTP page origin. <a href="https://dlq.github.io/parliament-streams/" target="_blank" rel="noreferrer">Open the public catalogue ↗</a> or preview this repository with <code>make site</code>.</p>
+      frame.innerHTML = `<div class="player-placeholder youtube-file-notice" lang="${state.locale}">
+        <p>${t("playbackError")} <a href="https://dlq.github.io/parliament-streams/" target="_blank" rel="noreferrer">${t("official")} ↗</a></p>
       </div>`;
       return;
     }
     const iframe = document.createElement("iframe");
     const separator = channel.embed.url.includes("?") ? "&" : "?";
     iframe.src = `${channel.embed.url}${separator}autoplay=1&playsinline=1&rel=0&hl=${encodeURIComponent(state.locale)}`;
-    iframe.title = `${channel.name} official YouTube player`;
+    iframe.title = `${channel.name} · YouTube`;
     iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
     iframe.allowFullscreen = true;
@@ -603,7 +770,7 @@ async function startPlayback(channel) {
     }
     await video.play();
   } catch (error) {
-    frame.innerHTML = `<div class="player-placeholder"><p>Playback could not start in this browser. <a href="${channel.official_url}" target="_blank" rel="noreferrer">Open the official source ↗</a></p></div>`;
+    frame.innerHTML = `<div class="player-placeholder"><p>${t("playbackError")} <a href="${channel.official_url}" target="_blank" rel="noreferrer">${t("official")} ↗</a></p></div>`;
   }
 }
 async function init() {
@@ -651,6 +818,7 @@ async function init() {
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
     setOptionLabel(elements.rights, "allUse", [...new Set(state.channels.map((channel) => channel.permission.status))].sort());
+    renderResearchSummary();
     [elements.search, elements.level, elements.format, elements.rights].forEach((input) => input.addEventListener("input", () => { renderList(); renderDetail(); }));
     elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
       const key = button.dataset.sort;

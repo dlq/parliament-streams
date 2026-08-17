@@ -8,6 +8,7 @@ import ssl
 import sys
 import time
 from collections.abc import Mapping
+from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 from http.client import HTTPException, HTTPResponse
 from pathlib import Path
@@ -44,7 +45,7 @@ def _fetch_once(url: str, timeout: int) -> tuple[int | None, dict[str, str], byt
         return None, {}, str(error).encode("utf-8", errors="replace"), None
 
 
-def _fetch(
+def fetch_url(
     url: str, timeout: int, retries: int
 ) -> tuple[int | None, dict[str, str], bytes, str | None, int]:
     attempts = max(1, retries + 1)
@@ -105,7 +106,7 @@ def _check_hls(body: bytes, final_url: str | None, timeout: int, retries: int) -
                 variant_url = urljoin(final_url, lines[index + 1].strip())
                 break
         if variant_url:
-            status_code, headers, variant_body, resolved_url, attempts = _fetch(
+            status_code, headers, variant_body, resolved_url, attempts = fetch_url(
                 variant_url, timeout, retries
             )
             result["sample_variant"] = {
@@ -136,7 +137,7 @@ def check_channel(channel: Mapping[str, Any], timeout: int, retries: int) -> dic
         result.update({"status": "skipped", "note": "No URL available for this entry."})
         return result
 
-    status_code, headers, body, final_url, attempts = _fetch(url, timeout, retries)
+    status_code, headers, body, final_url, attempts = fetch_url(url, timeout, retries)
     result.update(
         {
             "http_status": status_code,
@@ -172,6 +173,7 @@ def run_healthcheck(
     timeout: int,
     retries: int,
     channel_ids: set[str] | None = None,
+    workers: int = 1,
 ) -> dict[str, Any]:
     catalogue = load_catalogue(catalogue_path)
     channels = catalogue["channels"]
@@ -182,7 +184,10 @@ def run_healthcheck(
             raise ValueError(f"Unknown catalogue ids: {', '.join(unknown_ids)}")
         channels = [channel for channel in channels if channel["id"] in channel_ids]
 
-    results = [check_channel(channel, timeout, retries) for channel in channels]
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
+        results = list(
+            executor.map(lambda channel: check_channel(channel, timeout, retries), channels)
+        )
     counts: dict[str, int] = {}
     for result in results:
         counts[result["status"]] = counts.get(result["status"], 0) + 1
@@ -221,6 +226,12 @@ def main(argv: list[str] | None = None) -> int:
         help="Retries for transient network/server failures.",
     )
     parser.add_argument(
+        "--workers",
+        type=int,
+        default=8,
+        help="Maximum concurrent source checks.",
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         help="Optional JSON report output path.",
@@ -239,6 +250,7 @@ def main(argv: list[str] | None = None) -> int:
             args.timeout,
             args.retries,
             set(args.channel_ids) if args.channel_ids else None,
+            args.workers,
         )
     except ValueError as error:
         parser.error(str(error))

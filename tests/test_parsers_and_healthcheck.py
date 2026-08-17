@@ -259,7 +259,7 @@ class HealthcheckTests(unittest.TestCase):
             ),
             patch.object(healthcheck.time, "sleep") as sleep,
         ):
-            result = healthcheck._fetch("https://example.test", timeout=1, retries=1)
+            result = healthcheck.fetch_url("https://example.test", timeout=1, retries=1)
         self.assertEqual(result, (*response, 2))
         sleep.assert_called_once_with(0.5)
 
@@ -273,7 +273,7 @@ class HealthcheckTests(unittest.TestCase):
         variant = b"#EXTM3U\n#EXTINF:6,\nsegment.ts\n"
         with patch.object(
             healthcheck,
-            "_fetch",
+            "fetch_url",
             side_effect=[
                 (
                     200,
@@ -305,10 +305,10 @@ class HealthcheckTests(unittest.TestCase):
             "source_type": "official_page",
             "official_url": "https://example.test",
         }
-        with patch.object(healthcheck, "_fetch", return_value=(None, {}, b"timeout", None, 2)):
+        with patch.object(healthcheck, "fetch_url", return_value=(None, {}, b"timeout", None, 2)):
             self.assertEqual(healthcheck.check_channel(broken, 1, 1)["status"], "error")
 
-        with patch.object(healthcheck, "_fetch", return_value=(404, {}, b"missing", None, 1)):
+        with patch.object(healthcheck, "fetch_url", return_value=(404, {}, b"missing", None, 1)):
             self.assertEqual(healthcheck.check_channel(broken, 1, 0)["note"], "HTTP 404")
 
         hls = {
@@ -318,7 +318,7 @@ class HealthcheckTests(unittest.TestCase):
         }
         with patch.object(
             healthcheck,
-            "_fetch",
+            "fetch_url",
             return_value=(200, {}, b"not a manifest", hls["playback_url"], 1),
         ):
             self.assertEqual(healthcheck.check_channel(hls, 1, 0)["status"], "warning")
@@ -329,17 +329,23 @@ class HealthcheckTests(unittest.TestCase):
             "playback_url": "https://example.test/live.mpd",
         }
         with patch.object(
-            healthcheck, "_fetch", return_value=(200, {}, b"not an MPD", dash["playback_url"], 1)
+            healthcheck,
+            "fetch_url",
+            return_value=(200, {}, b"not an MPD", dash["playback_url"], 1),
         ):
             self.assertEqual(healthcheck.check_channel(dash, 1, 0)["status"], "warning")
 
         with patch.object(
-            healthcheck, "_fetch", return_value=(200, {}, b"<MPD></MPD>", dash["playback_url"], 1)
+            healthcheck,
+            "fetch_url",
+            return_value=(200, {}, b"<MPD></MPD>", dash["playback_url"], 1),
         ):
             self.assertEqual(healthcheck.check_channel(dash, 1, 0)["status"], "ok")
 
         with patch.object(
-            healthcheck, "_fetch", return_value=(200, {}, b"page", broken["official_url"], 1)
+            healthcheck,
+            "fetch_url",
+            return_value=(200, {}, b"page", broken["official_url"], 1),
         ):
             self.assertEqual(healthcheck.check_channel(broken, 1, 0)["status"], "ok")
 

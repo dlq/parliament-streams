@@ -176,6 +176,7 @@ def run(input_path: Path, output_path: Path, timeout: int, workers: int) -> dict
         countries = [future.result() for future in futures]
     report = {
         "checked_at": utc_timestamp(),
+        "tier": source.get("tier", "unknown"),
         "scope": source.get("scope", "Democracy-tier static HLS/DASH refresh"),
         "method": (
             "Refresh from prior report seeds: validate known direct HLS/DASH candidates, "

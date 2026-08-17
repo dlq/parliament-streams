@@ -31,11 +31,10 @@
         "source_type",
         "playback_url",
         "official_url",
-        "attribution_text",
+        "provenance_note",
         "technical_status",
         "availability",
         "accessibility",
-        "program",
         "epg_sources",
         "permission"
       ],
@@ -65,7 +64,7 @@
         },
         "embed": { "$ref": "#/$defs/embed" },
         "official_url": { "type": "string", "format": "uri" },
-        "attribution_text": { "type": "string", "minLength": 1 },
+        "provenance_note": { "type": "string", "minLength": 1 },
         "technical_status": {
           "type": "string",
           "enum": ["validated", "needs_review", "link_only"]
@@ -75,7 +74,6 @@
           "enum": ["always_on", "sitting_only", "event_based"]
         },
         "accessibility": { "$ref": "#/$defs/accessibility" },
-        "program": { "$ref": "#/$defs/program" },
         "epg_sources": {
           "type": "array",
           "items": { "$ref": "#/$defs/epg_source" }
@@ -171,27 +169,11 @@
           "type": "string",
           "enum": ["available", "source_dependent", "unavailable", "unknown"]
         },
-        "notes": { "type": "string", "minLength": 1 }
-      }
-    },
-    "program": {
-      "type": "object",
-      "required": [
-        "current_event_title",
-        "current_event_time",
-        "next_event_title",
-        "next_event_time",
-        "confidence"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "current_event_title": { "type": "string", "minLength": 1 },
-        "current_event_time": { "type": "string", "minLength": 1 },
-        "next_event_title": { "type": "string", "minLength": 1 },
-        "next_event_time": { "type": "string", "minLength": 1 },
-        "confidence": {
-          "type": "string",
-          "enum": ["low", "medium", "high"]
+        "notes": {
+          "anyOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "null" }
+          ]
         }
       }
     },

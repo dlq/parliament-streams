@@ -13,6 +13,7 @@ from typing import cast
 from .catalogue import DEFAULT_CATALOGUE_PATH, load_catalogue, load_channel, load_json_object
 from .epg_audit import audit_epg_sources
 from .healthcheck import DEFAULT_RETRIES, DEFAULT_TIMEOUT_SECONDS, run_healthcheck
+from .link_audit import audit_catalogue_links
 from .management import (
     CatalogueStore,
     audit_identities,
@@ -247,6 +248,7 @@ def _cmd_health_check(args: argparse.Namespace) -> int:
         timeout=args.timeout,
         retries=args.retries,
         channel_ids=set(args.channel_ids) if args.channel_ids else None,
+        workers=args.workers,
     )
     if args.output:
         write_json(args.output, report)
@@ -284,13 +286,31 @@ def _cmd_schedules_collect(args: argparse.Namespace) -> int:
 
 def _cmd_epg_audit(args: argparse.Namespace) -> int:
     report = audit_epg_sources(
-        load_catalogue(args.catalogue), timeout=args.timeout, retries=args.retries
+        load_catalogue(args.catalogue),
+        timeout=args.timeout,
+        retries=args.retries,
+        workers=args.workers,
     )
     if args.output:
         write_json(args.output, report)
     else:
         _write_json_stdout(report)
     return 1 if args.fail_on_error and report["counts"]["error"] else 0
+
+
+def _cmd_links_audit(args: argparse.Namespace) -> int:
+    report = audit_catalogue_links(
+        load_catalogue(args.catalogue),
+        timeout=args.timeout,
+        retries=args.retries,
+        workers=args.workers,
+    )
+    if args.output:
+        write_json(args.output, report)
+    else:
+        _write_json_stdout(report)
+    failures = report["counts"]["error"] + report["counts"]["not_found"]
+    return 1 if args.fail_on_error and failures else 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -425,6 +445,7 @@ def build_parser() -> argparse.ArgumentParser:
     health_check.add_argument("--id", dest="channel_ids", action="append")
     health_check.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_SECONDS)
     health_check.add_argument("--retries", type=int, default=DEFAULT_RETRIES)
+    health_check.add_argument("--workers", type=int, default=8)
     health_check.add_argument("--output", type=Path)
     health_check.add_argument("--fail-on-error", action="store_true")
     health_check.set_defaults(handler=_cmd_health_check)
@@ -447,9 +468,21 @@ def build_parser() -> argparse.ArgumentParser:
     )
     epg_audit.add_argument("--timeout", type=int, default=DEFAULT_SCHEDULE_TIMEOUT_SECONDS)
     epg_audit.add_argument("--retries", type=int, default=0)
+    epg_audit.add_argument("--workers", type=int, default=8)
     epg_audit.add_argument("--output", type=Path)
     epg_audit.add_argument("--fail-on-error", action="store_true")
     epg_audit.set_defaults(handler=_cmd_epg_audit)
+
+    links_audit = commands.add_parser(
+        "links-audit",
+        help="Check official, rights, identity, and embed links recorded in the catalogue.",
+    )
+    links_audit.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_SECONDS)
+    links_audit.add_argument("--retries", type=int, default=0)
+    links_audit.add_argument("--workers", type=int, default=8)
+    links_audit.add_argument("--output", type=Path)
+    links_audit.add_argument("--fail-on-error", action="store_true")
+    links_audit.set_defaults(handler=_cmd_links_audit)
     return parser
 
 

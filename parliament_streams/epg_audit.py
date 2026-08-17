@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 from typing import Literal, TypedDict, cast
 
@@ -55,6 +56,7 @@ def audit_epg_sources(
     now: datetime | None = None,
     timeout: int = 15,
     retries: int = 0,
+    workers: int = 1,
 ) -> EpgAuditReport:
     checked_at = now or datetime.now(UTC)
     grouped: dict[tuple[str, str, str], dict[str, set[str]]] = {}
@@ -65,8 +67,10 @@ def audit_epg_sources(
             item["channel_ids"].add(channel["id"])
             item["scraper_status"].add(source["scraper_status"])
 
-    results: list[EpgAuditResult] = []
-    for (scraper, method, url), metadata in sorted(grouped.items(), key=lambda item: item[0][2]):
+    def check(
+        item: tuple[tuple[str, str, str], dict[str, set[str]]],
+    ) -> EpgAuditResult:
+        (scraper, method, url), metadata = item
         request = _request_for_source(scraper, url, method, checked_at)
         try:
             payload = fetch_text(request, timeout, retries)
@@ -75,17 +79,19 @@ def audit_epg_sources(
         except RuntimeError as error:
             raw_status, detail = _classify_error(error)
             status = cast(Literal["reachable", "access_blocked", "not_found", "error"], raw_status)
-        results.append(
-            {
-                "url": url,
-                "method": method,
-                "status": status,
-                "checked_at": utc_timestamp(checked_at),
-                "channel_ids": sorted(metadata["channel_ids"]),
-                "scraper_status": sorted(metadata["scraper_status"]),
-                "detail": detail,
-            }
-        )
+        return {
+            "url": url,
+            "method": method,
+            "status": status,
+            "checked_at": utc_timestamp(checked_at),
+            "channel_ids": sorted(metadata["channel_ids"]),
+            "scraper_status": sorted(metadata["scraper_status"]),
+            "detail": detail,
+        }
+
+    items = sorted(grouped.items(), key=lambda item: item[0][2])
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
+        results = list(executor.map(check, items))
 
     counts = {status: 0 for status in ("reachable", "access_blocked", "not_found", "error")}
     for result in results:

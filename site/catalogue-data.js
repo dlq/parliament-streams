@@ -1,5 +1,5 @@
 window.PARLIAMENT_STREAMS_CATALOGUE = {
-  "schema_version": 5,
+  "schema_version": 6,
   "generated_from": "curated research and live endpoint validation",
   "generated_on": "2026-08-17",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
@@ -36,7 +36,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
       "official_url": "https://www.cpac.ca/en/",
-      "attribution_text": "Official CPAC stream endpoint discovered from CPAC metadata.",
+      "provenance_note": "Official CPAC stream endpoint discovered from CPAC metadata.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -48,13 +48,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "CPAC HLS variants have documented English and French audio groups and closed captions."
-      },
-      "program": {
-        "current_event_title": "Live public affairs feed",
-        "current_event_time": "Schedule integration pending",
-        "next_event_title": "Daily schedule metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
       },
       "epg_sources": [
         {
@@ -106,7 +99,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
       "official_url": "https://www.parliament.nz/en/watch-parliament/",
-      "attribution_text": "New Zealand Parliament TV. Attribute the source and link to the official Parliament TV terms.",
+      "provenance_note": "New Zealand Parliament TV. Attribute the source and link to the official Parliament TV terms.",
       "technical_status": "validated",
       "availability": "sitting_only",
       "accessibility": {
@@ -114,14 +107,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Parliament TV",
-        "current_event_time": "Live during House sittings",
-        "next_event_title": "Sitting calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -175,7 +161,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
       "official_url": "https://www.stortinget.no/nett-tv",
-      "attribution_text": "Official Stortinget Nett-TV page exposed this HLS manifest during browser validation.",
+      "provenance_note": "Official Stortinget Nett-TV page exposed this HLS manifest during browser validation.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -183,14 +169,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Stortinget chamber stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -243,7 +222,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
       "official_url": "https://www.camara.leg.br/tv/",
-      "attribution_text": "Official TV Camara stream; source attribution and watermark integrity matter.",
+      "provenance_note": "Official TV Camara stream; source attribution and watermark integrity matter.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -251,14 +230,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "TV Camara live",
-        "current_event_time": "Official live channel",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -311,7 +283,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.oireachtas.ie/en/oireachtas-tv/",
-      "attribution_text": "Official Oireachtas TV page with live channel, Dail, Seanad, and committee-room embed codes.",
+      "provenance_note": "Official Oireachtas TV page with live channel, Dail, Seanad, and committee-room embed codes.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -319,14 +291,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Oireachtas TV live and chamber/committee streams",
-        "current_event_time": "Live around scheduled proceedings",
-        "next_event_title": "Official TV guide and committee schedule",
-        "next_event_time": "Research target",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -387,7 +352,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
       "official_url": "https://www.ft.dk/",
-      "attribution_text": "Folketinget. Link to the Folketinget sharing and rights terms; do not use the Folketinget logo.",
+      "provenance_note": "Folketinget. Link to the Folketinget sharing and rights terms; do not use the Folketinget logo.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -395,14 +360,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Folketinget live stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -454,7 +412,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
       "official_url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebat",
-      "attribution_text": "Official Tweede Kamer live room stream.",
+      "provenance_note": "Official Tweede Kamer live room stream.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -465,13 +423,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
-      },
-      "program": {
-        "current_event_title": "Plenary hall live stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
       },
       "epg_sources": [
         {
@@ -523,7 +474,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
       "official_url": "https://www.congreso.es/",
-      "attribution_text": "Official Congreso/Canal Parlamento HLS candidate.",
+      "provenance_note": "Official Congreso/Canal Parlamento HLS candidate.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -531,14 +482,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Canal Parlamento",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -590,7 +534,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "attribution_text": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -598,14 +542,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Congreso en Directo signal 1",
-        "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
-        "next_event_title": "Official weekly programming integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -666,7 +603,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "attribution_text": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -674,14 +611,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Congreso en Directo signal 2",
-        "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
-        "next_event_title": "Official weekly programming integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -742,7 +672,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "attribution_text": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -750,14 +680,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Congreso en Directo signal 3",
-        "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
-        "next_event_title": "Official weekly programming integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -818,7 +741,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "attribution_text": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -826,14 +749,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Congreso en Directo signal 4",
-        "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
-        "next_event_title": "Official weekly programming integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -894,7 +810,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "attribution_text": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -902,14 +818,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Congreso en Directo signal 5",
-        "current_event_time": "Active around scheduled plenary, committee, or institutional proceedings",
-        "next_event_title": "Official weekly programming integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -970,7 +879,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
       "official_url": "https://videos.assemblee-nationale.fr/direct.php",
-      "attribution_text": "Official National Assembly HLS candidate; July 2026 health check reached the URL but received a malformed/minimal manifest.",
+      "provenance_note": "Official National Assembly HLS candidate; July 2026 health check reached the URL but received a malformed/minimal manifest.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -978,14 +887,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "National Assembly live stream",
-        "current_event_time": "Active around public sittings and meetings",
-        "next_event_title": "Official video portal schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1037,7 +939,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
       "official_url": "https://www.camara.cl/prensa/television.aspx",
-      "attribution_text": "Official Camara television page exposed this HLS manifest during browser validation.",
+      "provenance_note": "Official Camara television page exposed this HLS manifest during browser validation.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1045,14 +947,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Camara TV live stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1105,7 +1000,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
       "official_url": "https://www.knesset.tv/live/",
-      "attribution_text": "Official Knesset Channel live page exposed this HLS manifest during browser validation.",
+      "provenance_note": "Official Knesset Channel live page exposed this HLS manifest during browser validation.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1113,14 +1008,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Knesset Channel live stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1173,7 +1061,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
       "official_url": "https://www.parlamento.pt/",
-      "attribution_text": "Canal Parlamento HLS candidate; pair with official agenda metadata.",
+      "provenance_note": "Canal Parlamento HLS candidate; pair with official agenda metadata.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1181,14 +1069,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "ARTV Canal Parlamento",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official agenda integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1240,7 +1121,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8",
       "official_url": "https://www.hellenicparliament.gr/",
-      "attribution_text": "Hellenic Parliament TV HLS candidate distributed through public broadcaster infrastructure.",
+      "provenance_note": "Hellenic Parliament TV HLS candidate distributed through public broadcaster infrastructure.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -1248,14 +1129,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Hellenic Parliament TV",
-        "current_event_time": "Official parliamentary TV feed",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1307,7 +1181,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
       "official_url": "https://www.chd.lu/",
-      "attribution_text": "Chamber TV HLS candidate from official player infrastructure.",
+      "provenance_note": "Chamber TV HLS candidate from official player infrastructure.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -1315,14 +1189,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Chamber TV",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1374,7 +1241,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
       "official_url": "https://www.riigikogu.ee/live/1/en",
-      "attribution_text": "Official Riigikogu live page exposes this HLS manifest through its player.",
+      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1382,14 +1249,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Riigikogu live stream 1",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1442,7 +1302,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
       "official_url": "https://www.riigikogu.ee/live/2/en",
-      "attribution_text": "Official Riigikogu live page exposes this HLS manifest through its player.",
+      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1450,14 +1310,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Riigikogu live stream 2",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1510,7 +1363,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
       "official_url": "https://webtv.senato.it/",
-      "attribution_text": "Senate live HLS candidate; official source and terms need deeper review.",
+      "provenance_note": "Senate live HLS candidate; official source and terms need deeper review.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1518,14 +1371,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Senate live stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1577,7 +1423,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
       "official_url": "https://sansadtv.nic.in/",
-      "attribution_text": "Sansad TV HLS candidate; terms and reliability require review.",
+      "provenance_note": "Sansad TV HLS candidate; terms and reliability require review.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -1585,14 +1431,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Sansad TV feed 1",
-        "current_event_time": "Official parliamentary television feed",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1644,7 +1483,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
       "official_url": "https://sansadtv.nic.in/",
-      "attribution_text": "Sansad TV HLS candidate; terms and reliability require review.",
+      "provenance_note": "Sansad TV HLS candidate; terms and reliability require review.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -1652,14 +1491,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Sansad TV feed 2",
-        "current_event_time": "Official parliamentary television feed",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1711,7 +1543,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
       "official_url": "https://tpchannel.org/",
-      "attribution_text": "Thai Parliament TV HLS candidate; terms and reliability require review.",
+      "provenance_note": "Thai Parliament TV HLS candidate; terms and reliability require review.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -1719,14 +1551,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Thai Parliament TV",
-        "current_event_time": "Official parliamentary television feed",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [],
       "permission": {
@@ -1770,7 +1595,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
       "official_url": "https://www.nrsr.sk/",
-      "attribution_text": "Parliamentary/public-broadcaster HLS candidate; source ownership needs review.",
+      "provenance_note": "Parliamentary/public-broadcaster HLS candidate; source ownership needs review.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1778,14 +1603,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "TV NRSR",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1837,7 +1655,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_dash",
       "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
       "official_url": "https://www.parliament.mn/",
-      "attribution_text": "SkyGo DASH distribution candidate for parliamentary television; ownership and terms need review.",
+      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television; ownership and terms need review.",
       "technical_status": "validated",
       "availability": "always_on",
       "accessibility": {
@@ -1845,14 +1663,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Parliament TV DASH stream",
-        "current_event_time": "DASH manifest and media children verified 2026-08-17",
-        "next_event_title": "Official source review",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [],
       "permission": {
@@ -1869,7 +1680,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 01",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -1889,7 +1700,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal01/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1897,14 +1708,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1937,7 +1741,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 02",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -1957,7 +1761,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal02/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -1965,14 +1769,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2005,7 +1802,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 03",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2025,7 +1822,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal03/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2033,14 +1830,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2073,7 +1863,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 04",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2093,7 +1883,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal04/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2101,14 +1891,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2141,7 +1924,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 05",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2161,7 +1944,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal05/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2169,14 +1952,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Recently active Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2209,7 +1985,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 06",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2229,7 +2005,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal06/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2237,14 +2013,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Recently active Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2277,7 +2046,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 07",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2297,7 +2066,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal07/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2305,14 +2074,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2345,7 +2107,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 08",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2365,7 +2127,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal08/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2373,14 +2135,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2413,7 +2168,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 09",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2433,7 +2188,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal09/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2441,14 +2196,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2481,7 +2229,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 10",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2501,7 +2249,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal10/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2509,14 +2257,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2549,7 +2290,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 11",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2569,7 +2310,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal11/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2577,14 +2318,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2617,7 +2351,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 12",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2637,7 +2371,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal12/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2645,14 +2379,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2685,7 +2412,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 13",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2705,7 +2432,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal13/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2713,14 +2440,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2753,7 +2473,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Quebec National Assembly - Canal 14",
       "jurisdiction_level": "subnational",
       "country_or_region": "Quebec",
-      "legislature": "Assemblee nationale du Quebec",
+      "legislature": "Assemblée nationale du Québec",
       "external_ids": {
         "wikidata_qid": "Q1492249",
         "ipu_country_code": null,
@@ -2773,7 +2493,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal14/playlist.m3u8",
       "official_url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
-      "attribution_text": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
+      "provenance_note": "Assemblée nationale du Québec. Official-vendor HLS from the Assembly live-list flow.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2781,14 +2501,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Recently active Assembly webcast channel",
-        "current_event_time": "Active when proceedings are scheduled",
-        "next_event_title": "Live-list API metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2841,7 +2554,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "sitting_only",
       "accessibility": {
@@ -2849,14 +2562,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "House proceedings",
-        "current_event_time": "Live during sittings or scheduled events",
-        "next_event_title": "OLA calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -2902,7 +2608,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "needs_review",
       "availability": "sitting_only",
       "accessibility": {
@@ -2913,13 +2619,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The designated captioned House route is recorded, but its current direct endpoint needs review."
-      },
-      "program": {
-        "current_event_title": "House proceedings with captions",
-        "current_event_time": "Live during sittings or scheduled events",
-        "next_event_title": "OLA calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
       },
       "epg_sources": [
         {
@@ -2965,7 +2664,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/rm151-en/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -2973,14 +2672,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Room 151 proceedings",
-        "current_event_time": "Live during sittings or scheduled events",
-        "next_event_title": "OLA calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3026,7 +2718,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/committee_1-en/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3034,14 +2726,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Committee room 1",
-        "current_event_time": "Live during sittings or scheduled events",
-        "next_event_title": "OLA calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3087,7 +2772,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/committee_2-en/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3095,14 +2780,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Committee room 2",
-        "current_event_time": "Live during sittings or scheduled events",
-        "next_event_title": "OLA calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3148,7 +2826,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/media-en/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "attribution_text": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3156,14 +2834,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Media studio feed",
-        "current_event_time": "Live during sittings or scheduled events",
-        "next_event_title": "OLA calendar integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3209,7 +2880,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
       "official_url": "https://www.assembly.nu.ca/webcasts",
-      "attribution_text": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
+      "provenance_note": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3217,14 +2888,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Nunavut Legislative Assembly webcast",
-        "current_event_time": "Live during sittings",
-        "next_event_title": "Official webcast archive and sitting calendar",
-        "next_event_time": "Research target",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3285,7 +2949,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "notes": "Permanent official uploads playlist. It starts with the latest published video and may show an active broadcast when YouTube places it first; it is not a guaranteed live-only feed."
       },
       "official_url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
-      "attribution_text": "Official UK Parliament YouTube uploads playlist with selected live events and recordings.",
+      "provenance_note": "Official UK Parliament YouTube uploads playlist with selected live events and recordings.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3293,14 +2957,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Latest channel upload or active broadcast",
-        "current_event_time": "Selected by YouTube from the official uploads playlist",
-        "next_event_title": "Schedule metadata",
-        "next_event_time": "Planned",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3361,7 +3018,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "notes": "Permanent official uploads playlist. It starts with the latest published video and may show an active broadcast when YouTube places it first; use the live-page link to check the current or next scheduled event."
       },
       "official_url": "https://www.youtube.com/@AUSParliamentLive/live",
-      "attribution_text": "Official Australian Parliament House Streaming Portal uploads playlist.",
+      "provenance_note": "Official Australian Parliament House Streaming Portal uploads playlist.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3369,14 +3026,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Latest channel upload or active broadcast",
-        "current_event_time": "Selected by YouTube from the official uploads playlist",
-        "next_event_title": "Schedule metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3422,7 +3072,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parliamentarytv.org.tw/",
-      "attribution_text": "Live portal with channels and meeting playlists.",
+      "provenance_note": "Live portal with channels and meeting playlists.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -3430,14 +3080,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Live portal",
-        "current_event_time": "Open for active streams",
-        "next_event_title": "Schedule metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [],
       "permission": {
@@ -3481,7 +3124,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
       "official_url": "https://www.bundestag.de/mediathek",
-      "attribution_text": "Bundestag Parlamentsfernsehen channel 1 HLS candidate validated during democracy-tier refresh.",
+      "provenance_note": "Bundestag Parlamentsfernsehen channel 1 HLS candidate validated during democracy-tier refresh.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3489,14 +3132,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Bundestag Parlamentsfernsehen 1",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3557,7 +3193,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "notes": "Permanent official uploads playlist. It starts with the latest published video and may show an active broadcast when YouTube places it first; use the live-page link to check the current or next scheduled event."
       },
       "official_url": "https://www.youtube.com/@AsambleaCRC/live",
-      "attribution_text": "Official Asamblea Legislativa uploads playlist with live and recorded proceedings.",
+      "provenance_note": "Official Asamblea Legislativa uploads playlist with live and recorded proceedings.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -3565,14 +3201,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Latest channel upload or active broadcast",
-        "current_event_time": "Selected by YouTube from the official uploads playlist",
-        "next_event_title": "Schedule metadata",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3625,7 +3254,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
       "official_url": "https://www.asamblea.gob.sv/",
-      "attribution_text": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
+      "provenance_note": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
       "technical_status": "needs_review",
       "availability": "event_based",
       "accessibility": {
@@ -3633,14 +3262,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly plenary stream",
-        "current_event_time": "Active around scheduled proceedings",
-        "next_event_title": "Official schedule integration",
-        "next_event_time": "Planned",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3686,7 +3308,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://multimedia.europarl.europa.eu/en/webstreaming",
-      "attribution_text": "Official European Parliament Multimedia Centre webstreaming page.",
+      "provenance_note": "Official European Parliament Multimedia Centre webstreaming page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -3694,14 +3316,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "European Parliament plenary, committee, and institutional webstreams",
-        "current_event_time": "Live around scheduled proceedings and events",
-        "next_event_title": "Multimedia Centre schedule and event metadata",
-        "next_event_time": "Research target",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3748,7 +3363,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://video.consilium.europa.eu/home/en",
-      "attribution_text": "Official Council live page for public Council sessions and related events.",
+      "provenance_note": "Official Council live page for public Council sessions and related events.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -3756,14 +3371,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Council public sessions and events",
-        "current_event_time": "Live around scheduled public sessions",
-        "next_event_title": "Council live schedule and archive",
-        "next_event_time": "Research target",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3810,7 +3418,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://audiovisual.ec.europa.eu/en",
-      "attribution_text": "Official European Union Audiovisual Service / Europe by Satellite page.",
+      "provenance_note": "Official European Union Audiovisual Service / Europe by Satellite page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -3818,14 +3426,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "EU institutional live and audiovisual coverage",
-        "current_event_time": "Live around scheduled EU events",
-        "next_event_title": "EBS schedule and audiovisual metadata",
-        "next_event_time": "Research target",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3871,7 +3472,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://webtv.un.org/en/schedule",
-      "attribution_text": "Official United Nations Web TV live schedule page.",
+      "provenance_note": "Official United Nations Web TV live schedule page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -3879,14 +3480,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "UN meetings, events, and briefings",
-        "current_event_time": "Live around scheduled UN coverage",
-        "next_event_title": "UN Web TV live schedule",
-        "next_event_time": "Research target",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3933,22 +3527,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.coe.int/en/web/portal/live",
-      "attribution_text": "Official Council of Europe live webcast page carrying PACE and other Council of Europe sessions/events.",
-      "technical_status": "needs_review",
+      "provenance_note": "Official Council of Europe live webcast page carrying PACE and other Council of Europe sessions/events.",
+      "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
         "captions": "unknown",
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "PACE and Council of Europe live sessions/events",
-        "current_event_time": "Live around scheduled sessions",
-        "next_event_title": "PACE live and multimedia resources",
-        "next_event_time": "Research target",
-        "confidence": "low"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -3995,7 +3582,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.scottishparliament.tv/",
-      "attribution_text": "Official Scottish Parliament TV page with live and archived chamber and committee coverage, including accessible variants where scheduled.",
+      "provenance_note": "Official Scottish Parliament TV page with live and archived chamber and committee coverage, including accessible variants where scheduled.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4006,13 +3593,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official service provides accessible variants for some scheduled proceedings."
-      },
-      "program": {
-        "current_event_title": "Scottish Parliament chamber and committee coverage",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "What's On parliamentary schedule",
-        "next_event_time": "See the official schedule",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4067,7 +3647,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.senedd.tv/",
-      "attribution_text": "Official Senedd TV page with live and archived public Plenary and committee proceedings.",
+      "provenance_note": "Official Senedd TV page with live and archived public Plenary and committee proceedings.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4075,14 +3655,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Senedd Plenary and committee coverage",
-        "current_event_time": "Live around scheduled public meetings",
-        "next_event_title": "Senedd TV and parliamentary meeting schedules",
-        "next_event_time": "See the official schedules",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -4137,7 +3710,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://niassembly.tv/",
-      "attribution_text": "Official Northern Ireland Assembly TV page with scheduled Assembly and committee streams, archives, and language/accessibility variants.",
+      "provenance_note": "Official Northern Ireland Assembly TV page with scheduled Assembly and committee streams, archives, and language/accessibility variants.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4148,13 +3721,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official service provides language and accessibility variants for some scheduled proceedings."
-      },
-      "program": {
-        "current_event_title": "Northern Ireland Assembly and committee coverage",
-        "current_event_time": "Live around scheduled Assembly business",
-        "next_event_title": "Assembly TV live schedule",
-        "next_event_time": "See the official calendar",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4201,7 +3767,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.osce.org/live",
-      "attribution_text": "Official OSCE live page for streamed events.",
+      "provenance_note": "Official OSCE live page for streamed events.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4209,14 +3775,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "OSCE live events",
-        "current_event_time": "Live around scheduled events",
-        "next_event_title": "OSCE live schedule/event pages",
-        "next_event_time": "Research target",
-        "confidence": "medium"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -4262,7 +3821,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
-      "attribution_text": "Official Legislative Assembly of British Columbia live and archived webcast page.",
+      "provenance_note": "Official Legislative Assembly of British Columbia live and archived webcast page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4273,13 +3832,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "source_dependent",
         "audio_description": "unknown",
         "notes": "The Assembly documents AI-generated closed captions and an ASL-focused webcast for Routine Business."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly of British Columbia proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4324,7 +3876,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
-      "attribution_text": "Official Legislative Assembly of Alberta live and archived proceedings page.",
+      "provenance_note": "Official Legislative Assembly of Alberta live and archived proceedings page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4335,13 +3887,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The Assembly states that closed captioning is available on all Assembly and committee broadcasts and video streams."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly of Alberta proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4386,7 +3931,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
-      "attribution_text": "Official Legislative Assembly of Saskatchewan live and archived proceedings page.",
+      "provenance_note": "Official Legislative Assembly of Saskatchewan live and archived proceedings page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4397,13 +3942,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official proceedings page documents closed captions for live and archived video."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly of Saskatchewan proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4448,7 +3986,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
-      "attribution_text": "Official Legislative Assembly of Manitoba House broadcast page.",
+      "provenance_note": "Official Legislative Assembly of Manitoba House broadcast page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4456,14 +3994,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly of Manitoba proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -4508,7 +4039,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.assembly.pe.ca/watch-live",
-      "attribution_text": "Official Legislative Assembly of Prince Edward Island live debates and committee page.",
+      "provenance_note": "Official Legislative Assembly of Prince Edward Island live debates and committee page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4516,14 +4047,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly of Prince Edward Island proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -4569,7 +4093,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
-      "attribution_text": "Official Northwest Territories Assembly live session and committee page.",
+      "provenance_note": "Official Northwest Territories Assembly live session and committee page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4578,13 +4102,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "Separate official-language YouTube routes are listed, subject to interpreter availability; caption and sign-language support remains unverified."
-      },
-      "program": {
-        "current_event_title": "Legislative Assembly of the Northwest Territories proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4629,7 +4146,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
-      "attribution_text": "Official Newfoundland and Labrador House of Assembly webcast page.",
+      "provenance_note": "Official Newfoundland and Labrador House of Assembly webcast page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4640,13 +4157,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official live page provides instructions for accessing closed captions."
-      },
-      "program": {
-        "current_event_title": "Newfoundland and Labrador House of Assembly proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4691,7 +4201,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parliament.nsw.gov.au/webcasts",
-      "attribution_text": "Official Parliament of New South Wales chamber and committee webcast hub.",
+      "provenance_note": "Official Parliament of New South Wales chamber and committee webcast hub.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4702,13 +4212,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The webcast hub documents English live captions for chamber and committee proceedings."
-      },
-      "program": {
-        "current_event_title": "Parliament of New South Wales proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4754,7 +4257,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parliament.vic.gov.au/watch/",
-      "attribution_text": "Official Parliament of Victoria live and archived proceedings page.",
+      "provenance_note": "Official Parliament of Victoria live and archived proceedings page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4765,13 +4268,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The Parliament documents live captions for both chambers."
-      },
-      "program": {
-        "current_event_title": "Parliament of Victoria proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4817,7 +4313,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
-      "attribution_text": "Official Queensland Parliament live chamber and committee broadcast page.",
+      "provenance_note": "Official Queensland Parliament live chamber and committee broadcast page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4828,13 +4324,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official live broadcast page documents closed captions."
-      },
-      "program": {
-        "current_event_title": "Parliament of Queensland proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4879,7 +4368,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
-      "attribution_text": "Official Parliament of Western Australia Legislative Assembly live broadcast page.",
+      "provenance_note": "Official Parliament of Western Australia Legislative Assembly live broadcast page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4890,13 +4379,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "unknown",
         "audio_description": "unknown",
         "notes": "The official player provides closed-caption controls; captions are not the official record."
-      },
-      "program": {
-        "current_event_title": "Parliament of Western Australia proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -4941,7 +4423,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
-      "attribution_text": "Official Landtag Nordrhein-Westfalen scheduled livestream page.",
+      "provenance_note": "Official Landtag Nordrhein-Westfalen scheduled livestream page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -4952,13 +4434,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "available",
         "audio_description": "unknown",
         "notes": "Plenary listings provide an accessible stream with German Sign Language and subtitles."
-      },
-      "program": {
-        "current_event_title": "Landtag of North Rhine-Westphalia proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -5003,7 +4478,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
-      "attribution_text": "Official Landtag of Baden-Württemberg four-channel live page.",
+      "provenance_note": "Official Landtag of Baden-Württemberg four-channel live page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -5014,13 +4489,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "sign_language": "available",
         "audio_description": "unknown",
         "notes": "The accessible player combines original video, German Sign Language, and subtitles."
-      },
-      "program": {
-        "current_event_title": "Landtag of Baden-Württemberg proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
       },
       "epg_sources": [
         {
@@ -5065,7 +4533,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
-      "attribution_text": "Official Bayerischer Landtag Plenum Online live and archive page.",
+      "provenance_note": "Official Bayerischer Landtag Plenum Online live and archive page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -5073,14 +4541,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Landtag of Bavaria proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -5126,7 +4587,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parlament.cat/ext/f?p=700:1::::::",
-      "attribution_text": "Official Parliament of Catalonia Canal Parlament live and on-demand service.",
+      "provenance_note": "Official Parliament of Catalonia Canal Parlament live and on-demand service.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -5134,14 +4595,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Parliament of Catalonia proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -5187,7 +4641,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://mediateca.cortsvalencianes.es/live",
-      "attribution_text": "Official Corts Valencianes Canal Corts live and audiovisual archive service.",
+      "provenance_note": "Official Corts Valencianes Canal Corts live and audiovisual archive service.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -5195,14 +4649,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Corts Valencianes proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -5248,7 +4695,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
-      "attribution_text": "Official Parliament of Andalusia live TV programming page.",
+      "provenance_note": "Official Parliament of Andalusia live TV programming page.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -5256,14 +4703,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Parliament of Andalusia proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -5308,7 +4748,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "playback_url": null,
       "official_url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
-      "attribution_text": "Official Parliament of Navarre live and video-library service.",
+      "provenance_note": "Official Parliament of Navarre live and video-library service.",
       "technical_status": "link_only",
       "availability": "event_based",
       "accessibility": {
@@ -5316,14 +4756,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Parliament of Navarre proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {
@@ -5369,7 +4802,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "playback_url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
       "official_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
-      "attribution_text": "Official Congress of Jalisco live-transmissions page embeds the vendor player serving this HLS endpoint.",
+      "provenance_note": "Official Congress of Jalisco live-transmissions page embeds the vendor player serving this HLS endpoint.",
       "technical_status": "validated",
       "availability": "event_based",
       "accessibility": {
@@ -5377,14 +4810,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "Caption, sign-language, and audio-description availability has not yet been verified for this source."
-      },
-      "program": {
-        "current_event_title": "Congress of Jalisco proceedings",
-        "current_event_time": "Live around scheduled parliamentary business",
-        "next_event_title": "Official parliamentary schedule",
-        "next_event_time": "See the official schedule source",
-        "confidence": "high"
+        "notes": null
       },
       "epg_sources": [
         {

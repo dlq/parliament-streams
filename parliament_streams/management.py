@@ -187,7 +187,7 @@ def scaffold_candidate(
         "source_type": source_type,
         "playback_url": playback_url,
         "official_url": official_url,
-        "attribution_text": "Attribution review pending.",
+        "provenance_note": "Source provenance review pending.",
         "technical_status": "link_only" if source_type == "official_page" else "needs_review",
         "availability": "event_based",
         "accessibility": {
@@ -195,14 +195,7 @@ def scaffold_candidate(
             "caption_languages": [],
             "sign_language": "unknown",
             "audio_description": "unknown",
-            "notes": "Accessibility evidence has not yet been reviewed.",
-        },
-        "program": {
-            "current_event_title": "Programme research pending",
-            "current_event_time": "Not yet checked",
-            "next_event_title": "Schedule research pending",
-            "next_event_time": "Not yet checked",
-            "confidence": "low",
+            "notes": None,
         },
         "epg_sources": [],
         "permission": {

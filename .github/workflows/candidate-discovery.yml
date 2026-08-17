@@ -1,0 +1,104 @@
+name: Candidate Discovery
+
+on:
+  schedule:
+    # First day of each month. GitHub cron is UTC.
+    - cron: "19 7 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: candidate-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Tier 1 and Tier 2 candidate discovery
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install audit dependencies
+        run: |
+          python -m pip install uv
+          uv sync --locked --extra dev
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Validate maintained discovery targets
+        run: |
+          uv run --locked python tools/validate_discovery_targets.py \
+            data/discovery/tier1.json data/discovery/tier2.json
+          jq -e '.target_version == 1 and .tier == "tier1" and (.countries | length) == 25' data/discovery/tier1.json
+          jq -e '.target_version == 1 and .tier == "tier2" and (.countries | length) == 46' data/discovery/tier2.json
+
+      - name: Run static manifest discovery
+        run: |
+          mkdir -p reports/discovery
+          uv run --locked python tools/validate_democracy_tier_static.py \
+            --input data/discovery/tier1.json \
+            --output reports/discovery/tier1-static.json \
+            --timeout 12 \
+            --workers 8
+          uv run --locked python tools/validate_democracy_tier_static.py \
+            --input data/discovery/tier2.json \
+            --output reports/discovery/tier2-static.json \
+            --timeout 12 \
+            --workers 8
+
+      - name: Inspect official players in Chromium
+        run: >-
+          node tools/deep_validate_browser.mjs
+          --input data/discovery/tier1.json
+          --input data/discovery/tier2.json
+          --output reports/discovery/browser-validation.json
+
+      - name: Identify uncatalogued validated manifests
+        run: |
+          uv run --locked python tools/summarize_discovery_audit.py \
+            --static reports/discovery/tier1-static.json \
+            --static reports/discovery/tier2-static.json \
+            --browser reports/discovery/browser-validation.json \
+            --output reports/discovery/findings.json
+
+      - name: Write discovery summary
+        if: always()
+        run: |
+          {
+            echo "## Tier 1 and Tier 2 candidate discovery"
+            echo
+            echo "This is review evidence. No catalogue records were changed automatically."
+            echo
+            if [[ -f reports/discovery/findings.json ]]; then
+              jq -r '"Validated manifests: \(.counts.validated); already catalogued: \(.counts.catalogued); requiring review: \(.counts.review)"' reports/discovery/findings.json
+              echo
+              echo "### Review queue"
+              echo
+              echo "| Tier | Country | Type | URL |"
+              echo "| --- | --- | --- | --- |"
+              jq -r '[.findings[] | select(.status == "review")][0:20][] | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/discovery/findings.json
+            else
+              echo "The discovery run did not produce a findings report. Inspect the job log."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload discovery evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: candidate-discovery-${{ github.run_id }}
+          path: reports/discovery
+          if-no-files-found: warn
+          retention-days: 180

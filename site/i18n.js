@@ -9,22 +9,36 @@ const locales = [
 const en = {
   skipCatalogue: "Skip to catalogue", brandHome: "Parliament Streams home", primaryNavigation: "Primary navigation",
   catalogueResults: "Catalogue results", catalogueTable: "Parliament stream catalogue",
+  selectSource: "Select a source to view its documentation.", resizeDetails: "Resize source details",
+  sortAscending: "ascending", sortDescending: "descending", playbackError: "Playback could not start in this browser.",
   nav: "Catalogue", language: "Language", research: "Public research catalogue",
   title: "Parliamentary video, documented.",
   lede: "Official stream endpoints, watch pages, schedule surfaces, and the evidence needed to judge how each source may be used.",
   browse: "Browse sources", catalogue: "Catalogue", json: "View source JSON", search: "Search country, legislature, or channel", filters: "Filters", close: "Close source details",
+  catalogueCoverage: "Catalogue coverage", catalogueKey: "How to read this catalogue",
+  metricSources: "Sources", metricPlayable: "Playable here", metricSchedules: "Schedule sources", metricUpdated: "Catalogue updated",
+  evidenceDates: "Evidence dates", notAvailable: "Not available",
+  principlesLabel: "Open stream principles", principleDelivery: "Open delivery", principleAccess: "Open access", principleReuse: "Open reuse", principleSchedules: "Open schedules", principleAccessibility: "Open accessibility",
   allJur: "All jurisdictions", allTypes: "All source types", allUse: "All use guidance",
   source: "Source", jurisdiction: "Jurisdiction", format: "Format", contentLanguage: "Language", access: "Access", use: "Use",
   care: "Use with care", methodTitle: "Technical access and provider terms are different questions.",
   methodCopy: "Technically validated public direct feeds play here unless recorded terms expressly prohibit third-party reuse. A play button is not a licence; source owners can request removal.",
   rights: "Read rights and permission notes", footer: "Parliament Streams is an independent research catalogue.", about: "About the project",
   openStreams: "Open stream principles",
+  openVideoCopy: "Open parliamentary video requires direct, interoperable streams such as HLS, with clear terms that permit embedding, rebroadcasting, preservation, and independent monitoring.",
   openStreamsCopy: "Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.",
   sourceType: "Source type", accessStatus: "Access status", useGuidance: "Use guidance", availability: "Availability",
   attribution: "Required attribution", programme: "Current programme record", identity: "External identity", schedule: "Schedule / EPG sources",
+  mediaAccessibility: "Media accessibility", captions: "Captions", signLanguage: "Sign language", audioDescription: "Audio description",
+  a11yAvailable: "Available", a11ySourceDependent: "Varies by source or event", a11yUnavailable: "Unavailable", a11yUnknown: "Not yet verified",
+  scheduleApi: "Schedule API", openScheduleData: "Open schedule data", calendarAgenda: "Calendar / agenda", liveSchedulePage: "Live schedule page", schedulePage: "Schedule page",
+  officialEvidence: "Official watch page", streamEvidence: "Recorded stream endpoint", rightsEvidence: "Rights / source terms", privacyEvidence: "Privacy policy", supportingEvidence: "Supporting source",
+  evidenceSources: "Evidence sources.", englishResearchNotes: "Catalogue research notes",
   nowProgramme: "Now:", nextProgramme: "Next:", scheduleCollected: "Schedule collected {date}",
-  reuse: "Reuse note.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Open official source",
+  reuse: "Catalogue rights summary.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Open official source",
   ready: "Ready to load the official feed", disabled: "Playback is not enabled for this source",
+  optOutPlaybackPolicy: "This public endpoint is playable under the catalogue’s opt-out policy. This is not a licence; review the source notes and report concerns for prompt removal.",
+  youtubePlaybackPolicy: "Playback uses the provider’s official privacy-enhanced embed; no stream manifest is extracted.",
   noResults: "No catalogue entries match these filters.", noSchedule: "No schedule surface recorded.",
   sourceError: "The catalogue could not be loaded.", sourceErrorDetail: "The static site expects data/channels.json beside the page artifact.",
   results: "{shown} of {total} sources", documented: "{count} documented sources · catalogue generated {date}",
@@ -271,6 +285,273 @@ const openScheduleCopy = {
 };
 Object.entries(openScheduleCopy).forEach(([locale, value]) => { shared[locale].openStreamsCopy = value; });
 
+const openVideoCopy = {
+  fr: "La vidéo parlementaire ouverte exige des flux directs et interopérables comme le HLS, assortis de conditions claires autorisant l'intégration, la retransmission, la conservation et la surveillance indépendante.",
+  es: "El vídeo parlamentario abierto requiere transmisiones directas e interoperables como HLS, con condiciones claras que permitan su inserción, retransmisión, conservación y supervisión independiente.",
+  "pt-BR": "O vídeo parlamentar aberto exige transmissões diretas e interoperáveis, como HLS, com termos claros que permitam incorporação, retransmissão, preservação e monitoramento independente.",
+  da: "Åben parlamentarisk video kræver direkte, interoperable streams som HLS med klare vilkår, der tillader indlejring, genudsendelse, bevaring og uafhængig overvågning.",
+  de: "Offene Parlamentsvideos erfordern direkte, interoperable Streams wie HLS mit klaren Bedingungen, die Einbettung, Weiterverbreitung, Archivierung und unabhängige Überwachung erlauben.",
+  et: "Avatud parlamendivideo vajab otseseid ja koostalitlusvõimelisi vooge, nagu HLS, ning selgeid tingimusi, mis lubavad manustamist, taasedastamist, säilitamist ja sõltumatut seiret.",
+  el: "Το ανοικτό κοινοβουλευτικό βίντεο απαιτεί άμεσες, διαλειτουργικές ροές όπως HLS, με σαφείς όρους που επιτρέπουν την ενσωμάτωση, την αναμετάδοση, τη διατήρηση και την ανεξάρτητη παρακολούθηση.",
+  hi: "खुले संसदीय वीडियो के लिए HLS जैसी प्रत्यक्ष और परस्पर-संचालनीय स्ट्रीम तथा ऐसी स्पष्ट शर्तें आवश्यक हैं जो एम्बेडिंग, पुनर्प्रसारण, संरक्षण और स्वतंत्र निगरानी की अनुमति दें।",
+  ga: "Teastaíonn sruthanna díreacha idir-inoibritheacha ar nós HLS ó fhíseán parlaiminte oscailte, le téarmaí soiléire a cheadaíonn leabú, athchraoladh, caomhnú agus monatóireacht neamhspleách.",
+  it: "Il video parlamentare aperto richiede flussi diretti e interoperabili come HLS, con condizioni chiare che consentano incorporamento, ritrasmissione, conservazione e monitoraggio indipendente.",
+  lb: "Oppe parlamentaresch Videoe brauchen direkt, interoperabel Streams wéi HLS mat kloere Konditiounen, déi Abettung, Weideriwwerdroung, Erhalen an onofhängeg Iwwerwaachung erlaben.",
+  nl: "Open parlementaire video vereist directe, interoperabele streams zoals HLS, met duidelijke voorwaarden die insluiten, heruitzenden, bewaren en onafhankelijke monitoring toestaan.",
+  nb: "Åpen parlamentarisk video krever direkte, interoperable strømmer som HLS, med tydelige vilkår som tillater innbygging, videresending, bevaring og uavhengig overvåking.",
+  sk: "Otvorené parlamentné video vyžaduje priame, interoperabilné streamy, ako je HLS, s jasnými podmienkami umožňujúcimi vkladanie, ďalšie vysielanie, uchovávanie a nezávislé monitorovanie.",
+  th: "วิดีโอรัฐสภาแบบเปิดต้องใช้สตรีมโดยตรงที่ทำงานร่วมกันได้ เช่น HLS พร้อมเงื่อนไขที่ชัดเจนซึ่งอนุญาตให้ฝังวิดีโอ ถ่ายทอดซ้ำ เก็บรักษา และตรวจสอบอย่างอิสระ",
+  "zh-Hans": "开放的议会视频需要采用 HLS 等直接、可互操作的流媒体，并通过明确条款允许嵌入、转播、保存和独立监测。",
+  "iu-Cans": "ᒪᑐᐃᖓᔪᖅ ᒪᓕᒐᓕᐅᕐᕕᐅᑉ ᑕᕐᕆᔭᒐᒃᓴᖓ ᑐᕌᖓᔪᓂᒃ, ᐊᑐᖃᑎᒌᒍᓐᓇᖅᑐᓂᒃ HLS-ᑐᑦ ᑕᑯᒃᓴᐅᑎᑦᑎᔾᔪᑎᓂᒃ ᐱᔭᕆᐊᖃᖅᑐᖅ, ᑐᑭᓯᓇᖅᑐᓂᒃ ᐃᓕᓯᓂᕐᒧᑦ, ᑕᑯᒃᓴᐅᑎᑦᑎᒃᑲᓐᓂᕐᓂᕐᒧᑦ, ᑐᖅᑯᐃᓂᕐᒧᑦ ᐊᒻᒪ ᐃᒻᒥᒃᑰᖅᑐᒥᒃ ᖃᐅᔨᓴᕐᓂᕐᒧᑦ ᐱᔪᓐᓇᐅᑎᓂᒃ.",
+  mi: "Me whai te ataata pāremata tuwhera i ngā roma tika, hototahi hoki pēnei i te HLS, me ngā tikanga mārama e whakaae ana ki te tāmau, te pāho anō, te tiaki me te aroturuki motuhake.",
+};
+Object.entries(openVideoCopy).forEach(([locale, value]) => { shared[locale].openVideoCopy = value; });
+
+const researchUiLabels = {
+  fr: ["Couverture du catalogue", "Comment lire ce catalogue", "Sources", "Lisibles ici", "Sources d’horaire", "Catalogue mis à jour", "Dates des éléments", "Non disponible", "Principes des flux ouverts", "Diffusion ouverte", "Accès ouvert", "Réutilisation ouverte", "Horaires ouverts", "Accessibilité ouverte"],
+  es: ["Cobertura del catálogo", "Cómo leer este catálogo", "Fuentes", "Reproducibles aquí", "Fuentes de programación", "Catálogo actualizado", "Fechas de evidencia", "No disponible", "Principios de transmisión abierta", "Distribución abierta", "Acceso abierto", "Reutilización abierta", "Programación abierta", "Accesibilidad abierta"],
+  "pt-BR": ["Cobertura do catálogo", "Como ler este catálogo", "Fontes", "Reproduzíveis aqui", "Fontes de programação", "Catálogo atualizado", "Datas das evidências", "Não disponível", "Princípios de transmissão aberta", "Distribuição aberta", "Acesso aberto", "Reutilização aberta", "Programação aberta", "Acessibilidade aberta"],
+  da: ["Katalogdækning", "Sådan læses kataloget", "Kilder", "Kan afspilles her", "Programkilder", "Katalog opdateret", "Dokumentationsdatoer", "Ikke tilgængelig", "Principper for åbne streams", "Åben levering", "Åben adgang", "Åben genbrug", "Åbne programmer", "Åben tilgængelighed"],
+  de: ["Katalogabdeckung", "So liest man diesen Katalog", "Quellen", "Hier abspielbar", "Programmquellen", "Katalog aktualisiert", "Nachweisstand", "Nicht verfügbar", "Prinzipien für offene Streams", "Offene Bereitstellung", "Offener Zugang", "Offene Nachnutzung", "Offene Programme", "Offene Barrierefreiheit"],
+  et: ["Kataloogi katvus", "Kuidas kataloogi lugeda", "Allikad", "Siin esitatavad", "Ajakavaallikad", "Kataloog uuendatud", "Tõendite kuupäevad", "Pole saadaval", "Avatud voogude põhimõtted", "Avatud edastus", "Avatud juurdepääs", "Avatud taaskasutus", "Avatud ajakavad", "Avatud ligipääsetavus"],
+  el: ["Κάλυψη καταλόγου", "Πώς διαβάζεται ο κατάλογος", "Πηγές", "Αναπαράγονται εδώ", "Πηγές προγράμματος", "Ενημέρωση καταλόγου", "Ημερομηνίες τεκμηρίωσης", "Μη διαθέσιμο", "Αρχές ανοικτών ροών", "Ανοικτή διάθεση", "Ανοικτή πρόσβαση", "Ανοικτή επαναχρησιμοποίηση", "Ανοικτά προγράμματα", "Ανοικτή προσβασιμότητα"],
+  hi: ["कैटलॉग कवरेज", "इस कैटलॉग को कैसे पढ़ें", "स्रोत", "यहाँ चलने योग्य", "कार्यक्रम स्रोत", "कैटलॉग अपडेट", "साक्ष्य तिथियाँ", "उपलब्ध नहीं", "खुले स्ट्रीम के सिद्धांत", "खुला वितरण", "खुली पहुँच", "खुला पुनः उपयोग", "खुले कार्यक्रम", "खुली सुगम्यता"],
+  ga: ["Clúdach an chatalóige", "Conas an catalóg a léamh", "Foinsí", "Inseinnte anseo", "Foinsí sceidil", "Catalóg nuashonraithe", "Dátaí fianaise", "Níl ar fáil", "Prionsabail sruthanna oscailte", "Seachadadh oscailte", "Rochtain oscailte", "Athúsáid oscailte", "Sceidil oscailte", "Inrochtaineacht oscailte"],
+  it: ["Copertura del catalogo", "Come leggere il catalogo", "Fonti", "Riproducibili qui", "Fonti di programmazione", "Catalogo aggiornato", "Date delle evidenze", "Non disponibile", "Principi dei flussi aperti", "Distribuzione aperta", "Accesso aperto", "Riuso aperto", "Programmi aperti", "Accessibilità aperta"],
+  lb: ["Katalogofdeckung", "Wéi dëse Katalog ze liesen ass", "Quellen", "Hei ofspillbar", "Programmquellen", "Katalog aktualiséiert", "Noweisdatumen", "Net disponibel", "Prinzipie fir oppe Streams", "Oppen Zougang", "Oppen Accès", "Oppe Wiederverwendung", "Oppe Programmer", "Oppen Accessibilitéit"],
+  nl: ["Catalogusdekking", "Hoe deze catalogus te lezen", "Bronnen", "Hier afspeelbaar", "Programmabronnen", "Catalogus bijgewerkt", "Bewijsdatums", "Niet beschikbaar", "Beginselen voor open streams", "Open levering", "Open toegang", "Open hergebruik", "Open programma’s", "Open toegankelijkheid"],
+  nb: ["Katalogdekning", "Slik leser du katalogen", "Kilder", "Kan spilles her", "Programkilder", "Katalog oppdatert", "Dokumentasjonsdatoer", "Ikke tilgjengelig", "Prinsipper for åpne strømmer", "Åpen levering", "Åpen tilgang", "Åpen gjenbruk", "Åpne programmer", "Åpen tilgjengelighet"],
+  sk: ["Pokrytie katalógu", "Ako čítať tento katalóg", "Zdroje", "Prehrateľné tu", "Zdroje programu", "Katalóg aktualizovaný", "Dátumy dôkazov", "Nedostupné", "Zásady otvorených streamov", "Otvorené poskytovanie", "Otvorený prístup", "Otvorené opätovné použitie", "Otvorené programy", "Otvorená prístupnosť"],
+  th: ["ความครอบคลุมของแคตตาล็อก", "วิธีอ่านแคตตาล็อกนี้", "แหล่งข้อมูล", "เล่นได้ที่นี่", "แหล่งกำหนดการ", "อัปเดตแคตตาล็อก", "วันที่ของหลักฐาน", "ไม่มีข้อมูล", "หลักการสตรีมแบบเปิด", "การส่งแบบเปิด", "การเข้าถึงแบบเปิด", "การใช้ซ้ำแบบเปิด", "กำหนดการแบบเปิด", "การเข้าถึงสำหรับทุกคน"],
+  "zh-Hans": ["目录覆盖范围", "如何阅读本目录", "来源", "可在此播放", "节目表来源", "目录更新时间", "证据日期", "暂无", "开放流媒体原则", "开放传输", "开放访问", "开放再利用", "开放节目表", "开放无障碍"],
+  "iu-Cans": ["ᑎᑎᕋᖅᓯᒪᔪᑦ ᖃᓄᑎᒋ", "ᖃᓄᖅ ᐅᖃᓕᒫᕆᐊᖃᕐᒪᖔᖅ", "ᑐᑭᓯᒋᐊᕐᕖᑦ", "ᑕᕝᕙᓂ ᑕᑯᒃᓴᐅᔪᑦ", "ᐅᓪᓗᖅᓯᐅᑎᐅᑉ ᑐᑭᓯᒋᐊᕐᕕᖏᑦ", "ᓄᑖᙳᖅᑎᖅᑕᐅᔪᖅ", "ᓇᓗᓇᐃᒃᑯᑕᐃᑦ ᐅᓪᓗᖏᑦ", "ᐊᑐᐃᓐᓇᐅᙱᑦᑐᖅ", "ᒪᑐᐃᖓᑦᑎᐊᕐᓂᐅᑉ ᑐᙵᕕᖏᑦ", "ᒪᑐᐃᖓᔪᒥᒃ ᑐᓂᓯᓂᖅ", "ᒪᑐᐃᖓᔪᒥᒃ ᐊᑐᐃᓐᓇᖃᕐᓂᖅ", "ᒪᑐᐃᖓᔪᒥᒃ ᐊᑐᒃᑲᓐᓂᕐᓂᖅ", "ᒪᑐᐃᖓᔪᑦ ᐅᓪᓗᖅᓯᐅᑏᑦ", "ᒪᑐᐃᖓᔪᒥᒃ ᐊᑐᕈᓐᓇᕐᓂᖅ"],
+  mi: ["Whānuitanga putumōhio", "Me pēhea te pānui i tēnei putumōhio", "Ngā puna", "Ka taea te mātaki i konei", "Ngā puna hōtaka", "Kua whakahōutia te putumōhio", "Ngā rā taunakitanga", "Kāore i te wātea", "Ngā kaupapa o ngā roma tuwhera", "Tukunga tuwhera", "Urunga tuwhera", "Whakamahi anō tuwhera", "Hōtaka tuwhera", "Urutanga tuwhera"],
+};
+const researchUiKeys = ["catalogueCoverage", "catalogueKey", "metricSources", "metricPlayable", "metricSchedules", "metricUpdated", "evidenceDates", "notAvailable", "principlesLabel", "principleDelivery", "principleAccess", "principleReuse", "principleSchedules", "principleAccessibility"];
+Object.entries(researchUiLabels).forEach(([locale, values]) => {
+  researchUiKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+});
+
+const detailUiLabels = {
+  fr: ["État d’accès", "Disponibilité", "Attribution requise", "Programme en cours", "Sources d’horaire / EPG", "Note de réutilisation.", "Recommandation du catalogue.", "Accessibilité des médias", "Sous-titres", "Langue des signes", "Audiodescription", "Disponible", "Varie selon la source ou l’événement", "Indisponible", "Pas encore vérifié"],
+  es: ["Estado de acceso", "Disponibilidad", "Atribución requerida", "Programa actual", "Fuentes de programación / EPG", "Nota de reutilización.", "Recomendación del catálogo.", "Accesibilidad multimedia", "Subtítulos", "Lengua de signos", "Audiodescripción", "Disponible", "Varía según la fuente o el evento", "No disponible", "Aún no verificado"],
+  "pt-BR": ["Status de acesso", "Disponibilidade", "Atribuição obrigatória", "Programa atual", "Fontes de programação / EPG", "Nota de reutilização.", "Recomendação do catálogo.", "Acessibilidade da mídia", "Legendas", "Língua de sinais", "Audiodescrição", "Disponível", "Varia conforme a fonte ou o evento", "Indisponível", "Ainda não verificado"],
+  da: ["Adgangsstatus", "Tilgængelighed", "Påkrævet kreditering", "Aktuelt program", "Program- / EPG-kilder", "Note om genbrug.", "Katalogets anbefaling.", "Medietilgængelighed", "Undertekster", "Tegnsprog", "Synstolkning", "Tilgængelig", "Varierer efter kilde eller begivenhed", "Ikke tilgængelig", "Endnu ikke kontrolleret"],
+  de: ["Zugangsstatus", "Verfügbarkeit", "Erforderliche Namensnennung", "Aktuelles Programm", "Programmquellen / EPG", "Hinweis zur Wiederverwendung.", "Katalogempfehlung.", "Barrierefreiheit der Medien", "Untertitel", "Gebärdensprache", "Audiodeskription", "Verfügbar", "Je nach Quelle oder Veranstaltung unterschiedlich", "Nicht verfügbar", "Noch nicht überprüft"],
+  et: ["Juurdepääsu olek", "Kättesaadavus", "Nõutav viide", "Praegune programm", "Ajakava- / EPG-allikad", "Taaskasutuse märkus.", "Kataloogi soovitus.", "Meedia ligipääsetavus", "Subtiitrid", "Viipekeel", "Kirjeldustõlge", "Saadaval", "Sõltub allikast või sündmusest", "Pole saadaval", "Pole veel kontrollitud"],
+  el: ["Κατάσταση πρόσβασης", "Διαθεσιμότητα", "Απαιτούμενη αναφορά", "Τρέχον πρόγραμμα", "Πηγές προγράμματος / EPG", "Σημείωση επαναχρησιμοποίησης.", "Σύσταση καταλόγου.", "Προσβασιμότητα πολυμέσων", "Υπότιτλοι", "Νοηματική γλώσσα", "Ακουστική περιγραφή", "Διαθέσιμο", "Διαφέρει ανά πηγή ή εκδήλωση", "Μη διαθέσιμο", "Δεν έχει ακόμη επαληθευτεί"],
+  hi: ["पहुँच स्थिति", "उपलब्धता", "आवश्यक श्रेय", "वर्तमान कार्यक्रम", "कार्यक्रम / EPG स्रोत", "पुनः उपयोग टिप्पणी।", "कैटलॉग अनुशंसा।", "मीडिया सुगम्यता", "कैप्शन", "सांकेतिक भाषा", "ऑडियो विवरण", "उपलब्ध", "स्रोत या आयोजन के अनुसार बदलता है", "अनुपलब्ध", "अभी सत्यापित नहीं"],
+  ga: ["Stádas rochtana", "Infhaighteacht", "Lua riachtanach", "Taifead cláir reatha", "Foinsí sceidil / EPG", "Nóta athúsáide.", "Moladh an chatalóige.", "Inrochtaineacht na meán", "Fotheidil", "Teanga chomharthaíochta", "Clostuairisc", "Ar fáil", "Athraíonn de réir foinse nó imeachta", "Níl ar fáil", "Gan fíorú fós"],
+  it: ["Stato di accesso", "Disponibilità", "Attribuzione richiesta", "Programma attuale", "Fonti di programmazione / EPG", "Nota sul riuso.", "Raccomandazione del catalogo.", "Accessibilità dei media", "Sottotitoli", "Lingua dei segni", "Audiodescrizione", "Disponibile", "Varia in base alla fonte o all’evento", "Non disponibile", "Non ancora verificato"],
+  lb: ["Zougangsstatus", "Disponibilitéit", "Erfuerderlech Attributioun", "Aktuelle Programm", "Zäitplang- / EPG-Quellen", "Notiz zur Wiederverwendung.", "Katalogempfehlung.", "Medienaccessibilitéit", "Ënnertitelen", "Gebäerdesprooch", "Audiobeschreiwung", "Disponibel", "Variéiert no Quell oder Evenement", "Net disponibel", "Nach net iwwerpréift"],
+  nl: ["Toegangsstatus", "Beschikbaarheid", "Vereiste bronvermelding", "Huidig programma", "Programma- / EPG-bronnen", "Notitie over hergebruik.", "Catalogusadvies.", "Mediatoegankelijkheid", "Ondertiteling", "Gebarentaal", "Audiodescriptie", "Beschikbaar", "Verschilt per bron of evenement", "Niet beschikbaar", "Nog niet geverifieerd"],
+  nb: ["Tilgangsstatus", "Tilgjengelighet", "Påkrevd kreditering", "Gjeldende program", "Program- / EPG-kilder", "Merknad om gjenbruk.", "Kataloganbefaling.", "Medietilgjengelighet", "Teksting", "Tegnspråk", "Synstolking", "Tilgjengelig", "Varierer etter kilde eller arrangement", "Ikke tilgjengelig", "Ikke verifisert ennå"],
+  sk: ["Stav prístupu", "Dostupnosť", "Požadované uvedenie zdroja", "Aktuálny program", "Zdroje programu / EPG", "Poznámka k opätovnému použitiu.", "Odporúčanie katalógu.", "Prístupnosť médií", "Titulky", "Posunkový jazyk", "Zvukový opis", "Dostupné", "Líši sa podľa zdroja alebo udalosti", "Nedostupné", "Zatiaľ neoverené"],
+  th: ["สถานะการเข้าถึง", "ความพร้อมใช้งาน", "การระบุแหล่งที่มาที่จำเป็น", "รายการปัจจุบัน", "แหล่งกำหนดการ / EPG", "หมายเหตุการใช้ซ้ำ", "คำแนะนำของแคตตาล็อก", "การเข้าถึงสื่อ", "คำบรรยาย", "ภาษามือ", "คำบรรยายเสียง", "มี", "แตกต่างตามแหล่งข้อมูลหรือกิจกรรม", "ไม่มี", "ยังไม่ได้ตรวจสอบ"],
+  "zh-Hans": ["访问状态", "可用时间", "所需署名", "当前节目记录", "节目表 / EPG 来源", "再利用说明。", "目录建议。", "媒体无障碍", "字幕", "手语", "音频描述", "可用", "因来源或活动而异", "不可用", "尚未验证"],
+  "iu-Cans": ["ᐊᑐᐃᓐᓇᖃᕐᓂᕐᒧᑦ ᖃᓄᐃᓕᖓᓂᖓ", "ᐊᑐᐃᓐᓇᐅᓂᖓ", "ᑐᓂᔭᐅᔭᕆᐊᓕᒃ", "ᒫᓐᓇᐅᔪᖅ ᐱᓕᕆᐊᖑᔪᖅ", "ᐅᓪᓗᖅᓯᐅᑎ / EPG ᓇᑭᙶᕐᓂᖏᑦ", "ᐊᑐᒃᑲᓐᓂᕐᓂᕐᒧᑦ ᑎᑎᕋᖅᓯᒪᔪᖅ.", "ᑎᑎᕋᖅᓯᒪᔪᑦ ᐊᑐᓕᖁᔭᐅᔪᑦ.", "ᑕᕐᕆᔭᒐᒃᓴᐃᑦ ᐊᑐᕈᓐᓇᕐᓂᖏᑦ", "ᑎᑎᕋᖅᓯᒪᔪᑦ", "ᐅᖃᙱᖦᖢᓂ ᐅᖃᐅᓯᖅ", "ᓂᐱᒃᑯᑦ ᐅᓂᒃᑳᖅ", "ᐊᑐᐃᓐᓇᐅᔪᖅ", "ᓇᑭᙶᕐᓂᖓ ᒪᓕᒃᖢᒍ ᐊᔾᔨᒌᙱᑦᑐᖅ", "ᐊᑐᐃᓐᓇᐅᙱᑦᑐᖅ", "ᓱᓕ ᓇᓗᓇᐃᖅᑕᐅᙱᑦᑐᖅ"],
+  mi: ["Tūnga uru", "Wātea", "Tohutoro e hiahiatia ana", "Hōtaka o nāianei", "Ngā puna wātaka / EPG", "Kōrero whakamahi anō.", "Tohutohu putumōhio.", "Urutanga pāpāho", "Kupu hauraro", "Reo rotarota", "Whakaahuatanga oro", "Kei te wātea", "Ka rerekē i te puna, i te takahanga rānei", "Kāore i te wātea", "Kāore anō kia manatoko"],
+};
+const detailUiKeys = ["accessStatus", "availability", "attribution", "programme", "schedule", "reuse", "recommendation", "mediaAccessibility", "captions", "signLanguage", "audioDescription", "a11yAvailable", "a11ySourceDependent", "a11yUnavailable", "a11yUnknown"];
+Object.entries(detailUiLabels).forEach(([locale, values]) => {
+  detailUiKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+});
+
+const sourceLinkLabels = {
+  fr: ["API d’horaire", "Données d’horaire ouvertes", "Calendrier / ordre du jour", "Page d’horaire en direct", "Page d’horaire", "Page de visionnement officielle", "Point d’accès enregistré", "Droits / conditions de la source", "Politique de confidentialité", "Source à l’appui"],
+  es: ["API de programación", "Datos abiertos de programación", "Calendario / agenda", "Página de programación en directo", "Página de programación", "Página oficial de visualización", "Punto de emisión registrado", "Derechos / condiciones de la fuente", "Política de privacidad", "Fuente de apoyo"],
+  "pt-BR": ["API de programação", "Dados abertos de programação", "Calendário / agenda", "Página de programação ao vivo", "Página de programação", "Página oficial de transmissão", "Endpoint de transmissão registrado", "Direitos / termos da fonte", "Política de privacidade", "Fonte de apoio"],
+  da: ["Program-API", "Åbne programdata", "Kalender / dagsorden", "Side med liveprogram", "Programside", "Officiel visningsside", "Registreret streamendepunkt", "Rettigheder / kildevilkår", "Privatlivspolitik", "Understøttende kilde"],
+  de: ["Programm-API", "Offene Programmdaten", "Kalender / Tagesordnung", "Live-Programmseite", "Programmseite", "Offizielle Wiedergabeseite", "Erfasster Stream-Endpunkt", "Rechte / Quellenbedingungen", "Datenschutzrichtlinie", "Belegquelle"],
+  et: ["Ajakava API", "Avatud ajakavaandmed", "Kalender / päevakord", "Otseprogrammi leht", "Ajakava leht", "Ametlik vaatamisleht", "Salvestatud voo lõpp-punkt", "Õigused / allika tingimused", "Privaatsuspoliitika", "Toetav allikas"],
+  el: ["API προγράμματος", "Ανοικτά δεδομένα προγράμματος", "Ημερολόγιο / ημερήσια διάταξη", "Σελίδα ζωντανού προγράμματος", "Σελίδα προγράμματος", "Επίσημη σελίδα προβολής", "Καταγεγραμμένο σημείο ροής", "Δικαιώματα / όροι πηγής", "Πολιτική απορρήτου", "Υποστηρικτική πηγή"],
+  hi: ["कार्यक्रम API", "खुला कार्यक्रम डेटा", "कैलेंडर / कार्यसूची", "लाइव कार्यक्रम पृष्ठ", "कार्यक्रम पृष्ठ", "आधिकारिक देखने का पृष्ठ", "दर्ज स्ट्रीम एंडपॉइंट", "अधिकार / स्रोत शर्तें", "गोपनीयता नीति", "सहायक स्रोत"],
+  ga: ["API sceidil", "Sonraí sceidil oscailte", "Féilire / clár oibre", "Leathanach sceidil bheo", "Leathanach sceidil", "Leathanach oifigiúil féachana", "Críochphointe srutha taifeadta", "Cearta / téarmaí foinse", "Polasaí príobháideachais", "Foinse tacaíochta"],
+  it: ["API di programmazione", "Dati aperti di programmazione", "Calendario / ordine del giorno", "Pagina del programma in diretta", "Pagina di programmazione", "Pagina ufficiale di visione", "Endpoint registrato", "Diritti / condizioni della fonte", "Informativa sulla privacy", "Fonte di supporto"],
+  lb: ["Programm-API", "Oppe Programmdate", "Kalenner / Dagesuerdnung", "Live-Programmsäit", "Programmsäit", "Offiziell Ofspillsäit", "Registréierte Stream-Endpunkt", "Rechter / Quellkonditiounen", "Dateschutzrichtlinn", "Ënnerstëtzend Quell"],
+  nl: ["Programma-API", "Open programmagegevens", "Kalender / agenda", "Live programmapagina", "Programmapagina", "Officiële kijkpagina", "Vastgelegd streamendpoint", "Rechten / bronvoorwaarden", "Privacybeleid", "Ondersteunende bron"],
+  nb: ["Program-API", "Åpne programdata", "Kalender / dagsorden", "Side for direkteprogram", "Programside", "Offisiell visningsside", "Registrert strømendepunkt", "Rettigheter / kildevilkår", "Personvernregler", "Støttekilde"],
+  sk: ["API programu", "Otvorené údaje programu", "Kalendár / program", "Stránka živého programu", "Stránka programu", "Oficiálna stránka sledovania", "Zaznamenaný koncový bod streamu", "Práva / podmienky zdroja", "Zásady ochrany súkromia", "Podporný zdroj"],
+  th: ["API กำหนดการ", "ข้อมูลกำหนดการแบบเปิด", "ปฏิทิน / ระเบียบวาระ", "หน้ากำหนดการถ่ายทอดสด", "หน้ากำหนดการ", "หน้ารับชมอย่างเป็นทางการ", "จุดปลายทางสตรีมที่บันทึกไว้", "สิทธิ์ / เงื่อนไขของแหล่งข้อมูล", "นโยบายความเป็นส่วนตัว", "แหล่งข้อมูลสนับสนุน"],
+  "zh-Hans": ["节目表 API", "开放节目表数据", "日历 / 议程", "直播节目表页面", "节目表页面", "官方观看页面", "已记录的流端点", "权利 / 来源条款", "隐私政策", "支持来源"],
+  "iu-Cans": ["ᐅᓪᓗᖅᓯᐅᑎ API", "ᒪᑐᐃᖓᔪᑦ ᐅᓪᓗᖅᓯᐅᑎᐅᑉ ᑐᑭᓯᒋᐊᕈᑎᖏᑦ", "ᐅᓪᓗᖅᓯᐅᑎ / ᐱᓕᕆᐊᑦ", "ᐆᒪᔪᒥᒃ ᐅᓪᓗᖅᓯᐅᑎᐅᑉ ᒪᒃᐱᒐᖓ", "ᐅᓪᓗᖅᓯᐅᑎᐅᑉ ᒪᒃᐱᒐᖓ", "ᑕᑯᕝᕕᐅᑉ ᒪᒃᐱᒐᖓ", "ᑎᑎᕋᖅᑕᐅᓯᒪᔪᖅ ᑕᑯᒃᓴᐅᑎᑦᑎᔾᔪᑎ", "ᐱᔪᓐᓇᐅᑏᑦ / ᓇᑭᙶᕐᓂᖓᑕ ᒪᓕᒐᖏᑦ", "ᑲᙳᓇᖅᑐᓕᕆᓂᕐᒧᑦ ᒪᓕᒐᖅ", "ᐃᑲᔪᖅᑐᖅ ᑐᑭᓯᒋᐊᕐᕕᒃ"],
+  mi: ["API hōtaka", "Raraunga hōtaka tuwhera", "Maramataka / rārangi kaupapa", "Whārangi hōtaka mataora", "Whārangi hōtaka", "Whārangi mātakitaki mana", "Pito roma kua tuhia", "Motika / tikanga puna", "Kaupapahere tūmataiti", "Puna tautoko"],
+};
+const sourceLinkKeys = ["scheduleApi", "openScheduleData", "calendarAgenda", "liveSchedulePage", "schedulePage", "officialEvidence", "streamEvidence", "rightsEvidence", "privacyEvidence", "supportingEvidence"];
+Object.entries(sourceLinkLabels).forEach(([locale, values]) => {
+  sourceLinkKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+});
+
+const researchNoteLabels = {
+  fr: ["Sources documentaires.", "Notes de recherche du catalogue en anglais"],
+  es: ["Fuentes documentales.", "Notas de investigación del catálogo en inglés"],
+  "pt-BR": ["Fontes documentais.", "Notas de pesquisa do catálogo em inglês"],
+  da: ["Dokumentationskilder.", "Katalogets forskningsnoter på engelsk"],
+  de: ["Belegquellen.", "Forschungsnotizen des Katalogs auf Englisch"],
+  et: ["Tõendusallikad.", "Kataloogi ingliskeelsed uurimismärkmed"],
+  el: ["Πηγές τεκμηρίωσης.", "Ερευνητικές σημειώσεις του καταλόγου στα αγγλικά"],
+  hi: ["साक्ष्य स्रोत।", "कैटलॉग के अंग्रेज़ी शोध नोट"],
+  ga: ["Foinsí fianaise.", "Nótaí taighde an chatalóige i mBéarla"],
+  it: ["Fonti documentali.", "Note di ricerca del catalogo in inglese"],
+  lb: ["Noweisquellen.", "Fuerschungsnotize vum Katalog op Englesch"],
+  nl: ["Bewijsbronnen.", "Engelstalige onderzoeksnotities van de catalogus"],
+  nb: ["Dokumentasjonskilder.", "Katalogens forskningsnotater på engelsk"],
+  sk: ["Zdroje dôkazov.", "Výskumné poznámky katalógu v angličtine"],
+  th: ["แหล่งหลักฐาน", "บันทึกการวิจัยของแคตตาล็อกเป็นภาษาอังกฤษ"],
+  "zh-Hans": ["证据来源。", "目录的英文研究说明"],
+  "iu-Cans": ["ᓇᓗᓇᐃᒃᑯᑕᐃᑦ ᓇᑭᙶᕐᓂᖏᑦ.", "ᖃᓪᓗᓈᑎᑐᑦ ᑎᑎᕋᖅᓯᒪᔪᑦ ᖃᐅᔨᓴᕈᑏᑦ"],
+  mi: ["Ngā puna taunakitanga.", "Ngā kōrero rangahau putumōhio i te reo Ingarihi"],
+};
+Object.entries(researchNoteLabels).forEach(([locale, values]) => {
+  [shared[locale].evidenceSources, shared[locale].englishResearchNotes] = values;
+});
+
+const playerStateLabels = {
+  fr: ["Prêt à charger le flux officiel", "La lecture n’est pas activée pour cette source", "Aucune source d’horaire enregistrée."],
+  es: ["Listo para cargar la fuente oficial", "La reproducción no está activada para esta fuente", "No se registró ninguna fuente de programación."],
+  "pt-BR": ["Pronto para carregar o feed oficial", "A reprodução não está ativada para esta fonte", "Nenhuma fonte de programação registrada."],
+  da: ["Klar til at indlæse det officielle feed", "Afspilning er ikke aktiveret for denne kilde", "Ingen programkilde er registreret."],
+  de: ["Bereit zum Laden des offiziellen Feeds", "Die Wiedergabe ist für diese Quelle nicht aktiviert", "Keine Programmquelle erfasst."],
+  et: ["Ametliku voo laadimiseks valmis", "Selle allika esitamine pole lubatud", "Ajakavaallikat pole salvestatud."],
+  el: ["Έτοιμο για φόρτωση της επίσημης ροής", "Η αναπαραγωγή δεν είναι ενεργοποιημένη για αυτή την πηγή", "Δεν έχει καταγραφεί πηγή προγράμματος."],
+  hi: ["आधिकारिक फ़ीड लोड करने के लिए तैयार", "इस स्रोत के लिए प्लेबैक सक्षम नहीं है", "कोई कार्यक्रम स्रोत दर्ज नहीं है।"],
+  ga: ["Réidh leis an bhfotha oifigiúil a luchtú", "Níl athsheinm cumasaithe don fhoinse seo", "Níl aon fhoinse sceidil taifeadta."],
+  it: ["Pronto a caricare il flusso ufficiale", "La riproduzione non è attivata per questa fonte", "Nessuna fonte di programmazione registrata."],
+  lb: ["Bereet den offizielle Feed ze lueden", "Ofspille fir dës Quell ass net aktivéiert", "Keng Programmquell ass erfaasst."],
+  nl: ["Gereed om de officiële stream te laden", "Afspelen is niet ingeschakeld voor deze bron", "Geen programmabron vastgelegd."],
+  nb: ["Klar til å laste den offisielle strømmen", "Avspilling er ikke aktivert for denne kilden", "Ingen programkilde er registrert."],
+  sk: ["Pripravené na načítanie oficiálneho streamu", "Prehrávanie nie je pre tento zdroj povolené", "Nie je zaznamenaný žiadny zdroj programu."],
+  th: ["พร้อมโหลดฟีดอย่างเป็นทางการ", "ไม่ได้เปิดใช้การเล่นสำหรับแหล่งข้อมูลนี้", "ไม่มีแหล่งกำหนดการที่บันทึกไว้"],
+  "zh-Hans": ["准备加载官方流", "此来源未启用播放", "未记录节目表来源。"],
+  "iu-Cans": ["ᐊᑐᐃᓐᓇᐅᔪᖅ ᐱᔭᕆᐊᖃᖅᑐᒥᒃ ᑕᑯᒃᓴᐅᑎᑦᑎᔾᔪᑎᒥᒃ ᐱᔪᒪᓗᓂ", "ᑕᑯᒃᓴᐅᑎᑦᑎᓂᖅ ᐊᑐᐃᓐᓇᐅᙱᑦᑐᖅ", "ᐅᓪᓗᖅᓯᐅᑎᐅᑉ ᑐᑭᓯᒋᐊᕐᕕᖓ ᑎᑎᕋᖅᑕᐅᓯᒪᙱᑦᑐᖅ."],
+  mi: ["Kua reri ki te uta i te roma mana", "Kāore te purei e whakahohea mō tēnei puna", "Kāore he puna hōtaka kua tuhia."],
+};
+const playerStateKeys = ["ready", "disabled", "noSchedule"];
+Object.entries(playerStateLabels).forEach(([locale, values]) => {
+  playerStateKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+});
+
+const playbackPolicyLabels = {
+  fr: ["Ce point d’accès public peut être lu selon la politique de retrait du catalogue. Il ne s’agit pas d’une licence; consultez les notes de la source et signalez toute préoccupation afin qu’elle soit rapidement retirée.", "La lecture utilise l’intégration officielle du fournisseur avec protection renforcée de la vie privée; aucun manifeste de diffusion n’est extrait."],
+  es: ["Este punto de acceso público puede reproducirse conforme a la política de retirada del catálogo. Esto no constituye una licencia; consulte las notas de la fuente y comunique cualquier inquietud para su pronta retirada.", "La reproducción utiliza la inserción oficial del proveedor con privacidad mejorada; no se extrae ningún manifiesto de emisión."],
+  "pt-BR": ["Este endpoint público pode ser reproduzido segundo a política de retirada do catálogo. Isto não constitui uma licença; consulte as notas da fonte e comunique qualquer preocupação para remoção imediata.", "A reprodução usa a incorporação oficial do provedor com privacidade aprimorada; nenhum manifesto de transmissão é extraído."],
+  da: ["Dette offentlige endepunkt kan afspilles efter katalogets fjernelsespolitik. Det er ikke en licens; læs kildenoterne, og indberet bekymringer med henblik på hurtig fjernelse.", "Afspilning bruger udbyderens officielle privatlivsforbedrede indlejring; intet streammanifest udtrækkes."],
+  de: ["Dieser öffentliche Endpunkt kann gemäß der Entfernungspolitik des Katalogs wiedergegeben werden. Dies ist keine Lizenz; prüfen Sie die Quellenhinweise und melden Sie Bedenken zur umgehenden Entfernung.", "Die Wiedergabe nutzt die offizielle datenschutzfreundliche Einbettung des Anbieters; es wird kein Stream-Manifest extrahiert."],
+  et: ["Seda avalikku lõpp-punkti saab esitada kataloogi eemaldamispõhimõtte alusel. See ei ole litsents; vaadake allika märkusi ja teatage muredest kiireks eemaldamiseks.", "Esitamine kasutab teenusepakkuja ametlikku privaatsust suurendavat manust; voo manifesti ei eraldata."],
+  el: ["Αυτό το δημόσιο σημείο πρόσβασης μπορεί να αναπαραχθεί σύμφωνα με την πολιτική αφαίρεσης του καταλόγου. Δεν αποτελεί άδεια· ελέγξτε τις σημειώσεις της πηγής και αναφέρετε τυχόν ανησυχίες για άμεση αφαίρεση.", "Η αναπαραγωγή χρησιμοποιεί την επίσημη ενσωμάτωση του παρόχου με ενισχυμένη προστασία απορρήτου· δεν εξάγεται μανιφέστο ροής."],
+  hi: ["यह सार्वजनिक एंडपॉइंट कैटलॉग की अनुरोध-पर-हटाने की नीति के अंतर्गत चलाया जा सकता है। यह लाइसेंस नहीं है; स्रोत टिप्पणियाँ देखें और शीघ्र हटाने के लिए चिंताएँ दर्ज करें।", "प्लेबैक प्रदाता के आधिकारिक गोपनीयता-संवर्धित एम्बेड का उपयोग करता है; कोई स्ट्रीम मैनिफ़ेस्ट निकाला नहीं जाता।"],
+  ga: ["Is féidir an críochphointe poiblí seo a sheinm faoi bheartas bainte an chatalóige. Ní ceadúnas é seo; léigh na nótaí foinse agus tuairiscigh aon ábhar imní lena bhaint go pras.", "Úsáideann an athsheinm leabú oifigiúil feabhsaithe príobháideachais an tsoláthraí; ní bhaintear aon mhaineafacht srutha."],
+  it: ["Questo endpoint pubblico è riproducibile secondo la politica di rimozione del catalogo. Non costituisce una licenza; consultare le note della fonte e segnalare eventuali problemi per una rapida rimozione.", "La riproduzione usa l’incorporamento ufficiale del fornitore con protezione avanzata della privacy; non viene estratto alcun manifesto del flusso."],
+  lb: ["Dësen ëffentlechen Endpunkt kann no der Ewechhuelungspolitik vum Katalog ofgespillt ginn. Dat ass keng Lizenz; liest d’Quellnotizen a mellt Bedenken, fir datt en direkt ewechgeholl ka ginn.", "D’Ofspille benotzt dem Ubidder seng offiziell dateschutzfrëndlech Abettung; kee Stream-Manifest gëtt extrahéiert."],
+  nl: ["Dit openbare endpoint kan worden afgespeeld volgens het verwijderingsbeleid van de catalogus. Dit is geen licentie; raadpleeg de bronnotities en meld bezwaren voor snelle verwijdering.", "Het afspelen gebruikt de officiële privacyvriendelijke insluiting van de aanbieder; er wordt geen streammanifest uitgelezen."],
+  nb: ["Dette offentlige endepunktet kan spilles av etter katalogens fjerningspolicy. Dette er ikke en lisens; les kildenotatene og meld bekymringer for rask fjerning.", "Avspillingen bruker leverandørens offisielle personvernforbedrede innebygging; ingen strømmanifest hentes ut."],
+  sk: ["Tento verejný koncový bod možno prehrávať podľa zásad katalógu pre odstránenie. Nejde o licenciu; prečítajte si poznámky zdroja a nahláste obavy, aby mohol byť obsah rýchlo odstránený.", "Prehrávanie používa oficiálne vloženie poskytovateľa so zvýšenou ochranou súkromia; manifest streamu sa nezískava."],
+  th: ["สามารถเล่นจุดปลายทางสาธารณะนี้ได้ตามนโยบายการนำออกของแคตตาล็อก ข้อความนี้ไม่ใช่ใบอนุญาต โปรดอ่านหมายเหตุของแหล่งข้อมูลและแจ้งข้อกังวลเพื่อให้นำออกโดยเร็ว", "การเล่นใช้การฝังอย่างเป็นทางการของผู้ให้บริการที่เพิ่มการคุ้มครองความเป็นส่วนตัว และไม่มีการดึงรายการสตรีมออกมา"],
+  "zh-Hans": ["此公共端点可依据目录的应要求移除政策播放。这并非许可；请查阅来源说明，并报告疑虑以便及时移除。", "播放使用提供方官方的隐私增强型嵌入；不会提取任何流清单。"],
+  "iu-Cans": ["ᑖᓐᓇ ᑭᒃᑯᑐᐃᓐᓇᕐᓄᑦ ᑐᕌᖓᔪᖅ ᑕᑯᒃᓴᐅᑎᑦᑎᔾᔪᑎ ᐊᑐᖅᑕᐅᒍᓐᓇᖅᑐᖅ ᑎᑎᕋᖅᓯᒪᔪᑦ ᐲᖅᑕᐅᓂᕐᒧᑦ ᒪᓕᒐᖓ ᒪᓕᒃᖢᒍ. ᓚᐃᓴᓐᓯᐅᙱᑦᑐᖅ; ᓇᑭᙶᕐᓂᖓᑕ ᑎᑎᕋᖅᓯᒪᔪᖏᑦ ᐅᖃᓕᒫᕐᓗᒋᑦ ᐊᒻᒪ ᐃᓱᒫᓘᑎᑦ ᐅᓂᒃᑳᕐᓗᒋᑦ.", "ᑕᑯᒃᓴᐅᑎᑦᑎᓂᖅ ᐊᑐᖅᑐᖅ ᐱᔨᑦᑎᕋᖅᑎᐅᑉ ᑲᙳᓇᖅᑐᓕᕆᓂᕐᒧᑦ ᓴᐳᔾᔨᔪᒥᒃ ᐃᓕᓯᒪᔪᖓ; ᑕᑯᒃᓴᐅᑎᑦᑎᔾᔪᑎᐅᑉ ᑎᑎᕋᖅᓯᒪᔪᖓ ᐲᖅᑕᐅᙱᑦᑐᖅ."],
+  mi: ["Ka taea tēnei pito tūmatanui te purei i raro i te kaupapa here tango a te putumōhio. Ehara tēnei i te raihana; tirohia ngā kōrero puna, ā, pūrongotia ngā āwangawanga kia hohoro te tango.", "Ka whakamahi te purei i te tāmau mana a te kaiwhakarato e whakapiki ana i te tūmataiti; kāore he rārangi roma e tangohia."],
+};
+Object.entries(playbackPolicyLabels).forEach(([locale, values]) => {
+  shared[locale].optOutPlaybackPolicy = values[0];
+  shared[locale].youtubePlaybackPolicy = values[1];
+});
+
+const rightsSummaryLabels = {
+  fr: "Résumé des droits du catalogue.", es: "Resumen de derechos del catálogo.", "pt-BR": "Resumo de direitos do catálogo.",
+  da: "Katalogets rettighedsoversigt.", de: "Rechteübersicht des Katalogs.", et: "Kataloogi õiguste kokkuvõte.",
+  el: "Σύνοψη δικαιωμάτων του καταλόγου.", hi: "कैटलॉग अधिकार सारांश।", ga: "Achoimre cearta an chatalóige.",
+  it: "Sintesi dei diritti del catalogo.", lb: "Rechteresumé vum Katalog.", nl: "Rechtenoverzicht van de catalogus.",
+  nb: "Katalogets rettighetssammendrag.", sk: "Súhrn práv v katalógu.", th: "สรุปสิทธิ์ของแคตตาล็อก",
+  "zh-Hans": "目录权利摘要。", "iu-Cans": "ᑎᑎᕋᖅᓯᒪᔪᑦ ᐱᔪᓐᓇᐅᑎᖏᑕ ᓇᐃᓈᖅᓯᒪᔪᖓ.", mi: "Whakarāpopototanga motika a te putumōhio.",
+};
+Object.entries(rightsSummaryLabels).forEach(([locale, value]) => { shared[locale].reuse = value; });
+
+const operationalUiLabels = {
+  fr: ["Aller au catalogue", "Sélectionnez une source pour consulter sa documentation.", "Redimensionner les détails de la source", "croissant", "décroissant", "La lecture n’a pas pu démarrer dans ce navigateur."],
+  es: ["Ir al catálogo", "Seleccione una fuente para consultar su documentación.", "Cambiar el tamaño de los detalles de la fuente", "ascendente", "descendente", "La reproducción no pudo iniciarse en este navegador."],
+  "pt-BR": ["Ir para o catálogo", "Selecione uma fonte para ver sua documentação.", "Redimensionar detalhes da fonte", "crescente", "decrescente", "Não foi possível iniciar a reprodução neste navegador."],
+  da: ["Gå til kataloget", "Vælg en kilde for at se dokumentationen.", "Tilpas størrelsen på kildedetaljerne", "stigende", "faldende", "Afspilningen kunne ikke startes i denne browser."],
+  de: ["Zum Katalog springen", "Wählen Sie eine Quelle aus, um ihre Dokumentation anzuzeigen.", "Größe der Quelldetails ändern", "aufsteigend", "absteigend", "Die Wiedergabe konnte in diesem Browser nicht gestartet werden."],
+  et: ["Liigu kataloogi", "Dokumentatsiooni vaatamiseks valige allikas.", "Muuda allika üksikasjade suurust", "kasvav", "kahanev", "Selles brauseris ei saanud esitust alustada."],
+  el: ["Μετάβαση στον κατάλογο", "Επιλέξτε μια πηγή για να δείτε την τεκμηρίωσή της.", "Αλλαγή μεγέθους λεπτομερειών πηγής", "αύξουσα", "φθίνουσα", "Η αναπαραγωγή δεν μπόρεσε να ξεκινήσει σε αυτό το πρόγραμμα περιήγησης."],
+  hi: ["कैटलॉग पर जाएँ", "दस्तावेज़ देखने के लिए कोई स्रोत चुनें।", "स्रोत विवरण का आकार बदलें", "आरोही", "अवरोही", "इस ब्राउज़र में प्लेबैक शुरू नहीं हो सका।"],
+  ga: ["Téigh chuig an gcatalóg", "Roghnaigh foinse chun a doiciméadú a fheiceáil.", "Athraigh méid shonraí na foinse", "ardaitheach", "íslitheach", "Níorbh fhéidir athsheinm a thosú sa bhrabhsálaí seo."],
+  it: ["Vai al catalogo", "Seleziona una fonte per consultarne la documentazione.", "Ridimensiona i dettagli della fonte", "crescente", "decrescente", "Impossibile avviare la riproduzione in questo browser."],
+  lb: ["Bei de Katalog sprangen", "Wielt eng Quell, fir hir Dokumentatioun ze gesinn.", "Gréisst vun de Quelldetailer änneren", "opsteigend", "ofsteigend", "D’Ofspille konnt an dësem Browser net gestart ginn."],
+  nl: ["Ga naar de catalogus", "Selecteer een bron om de documentatie te bekijken.", "Formaat van brondetails wijzigen", "oplopend", "aflopend", "Afspelen kon niet worden gestart in deze browser."],
+  nb: ["Gå til katalogen", "Velg en kilde for å se dokumentasjonen.", "Endre størrelsen på kildedetaljene", "stigende", "synkende", "Avspillingen kunne ikke starte i denne nettleseren."],
+  sk: ["Prejsť na katalóg", "Vyberte zdroj a zobrazte jeho dokumentáciu.", "Zmeniť veľkosť podrobností zdroja", "vzostupne", "zostupne", "Prehrávanie sa v tomto prehliadači nepodarilo spustiť."],
+  th: ["ไปยังแคตตาล็อก", "เลือกแหล่งข้อมูลเพื่อดูเอกสารประกอบ", "ปรับขนาดรายละเอียดแหล่งข้อมูล", "จากน้อยไปมาก", "จากมากไปน้อย", "ไม่สามารถเริ่มเล่นในเบราว์เซอร์นี้ได้"],
+  "zh-Hans": ["跳转到目录", "选择一个来源以查看其文档。", "调整来源详情大小", "升序", "降序", "无法在此浏览器中开始播放。"],
+  "iu-Cans": ["ᑎᑎᕋᖅᓯᒪᔪᓄᐊᕐᓗᑎᑦ", "ᓇᑭᙶᕐᓂᖓ ᓂᕈᐊᕐᓗᒍ ᑎᑎᕋᖅᓯᒪᔪᖏᑦ ᑕᑯᓂᐊᕐᓗᒋᑦ.", "ᓇᑭᙶᕐᓂᖓᑕ ᓇᓗᓇᐃᖅᓯᓂᖏᑦ ᐊᖏᓂᖏᑦ ᐊᓯᔾᔨᕐᓗᒋᑦ", "ᒥᑭᓛᒥᑦ ᐊᖏᓛᒧᑦ", "ᐊᖏᓛᒥᑦ ᒥᑭᓛᒧᑦ", "ᑕᕝᕙᓂ ᕿᓂᕐᕕᖕᒥ ᑕᑯᒃᓴᐅᑎᑦᑎᓂᖅ ᐱᒋᐊᕈᓐᓇᓚᐅᙱᑦᑐᖅ."],
+  mi: ["Peke ki te putumōhio", "Tīpakohia he puna hei tiro i ōna tuhinga.", "Hurihia te rahi o ngā taipitopito puna", "ake", "heke", "Kāore i taea te tīmata te purei i tēnei pūtirotiro."],
+};
+const operationalUiKeys = ["skipCatalogue", "selectSource", "resizeDetails", "sortAscending", "sortDescending", "playbackError"];
+Object.entries(operationalUiLabels).forEach(([locale, values]) => {
+  operationalUiKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+});
+
+const catalogueResultLabels = {
+  fr: "Résultats du catalogue", es: "Resultados del catálogo", "pt-BR": "Resultados do catálogo",
+  da: "Katalogresultater", de: "Katalogergebnisse", et: "Kataloogi tulemused",
+  el: "Αποτελέσματα καταλόγου", hi: "कैटलॉग परिणाम", ga: "Torthaí an chatalóige",
+  it: "Risultati del catalogo", lb: "Katalogresultater", nl: "Catalogusresultaten",
+  nb: "Katalogresultater", sk: "Výsledky katalógu", th: "ผลลัพธ์แคตตาล็อก",
+  "zh-Hans": "目录结果", "iu-Cans": "ᑎᑎᕋᖅᓯᒪᔪᑦ ᖃᐅᔨᔭᐅᔪᑦ", mi: "Ngā hua putumōhio",
+};
+Object.entries(catalogueResultLabels).forEach(([locale, value]) => {
+  shared[locale].catalogueResults = value;
+  shared[locale].catalogueTable = value;
+});
+
+const missingFilterLabels = {
+  da: ["Alle jurisdiktioner", "Alle kildetyper", "Alle brugsvejledninger"],
+  et: ["Kõik jurisdiktsioonid", "Kõik allikatüübid", "Kõik kasutusjuhised"],
+  el: ["Όλες οι δικαιοδοσίες", "Όλοι οι τύποι πηγών", "Όλες οι οδηγίες χρήσης"],
+  hi: ["सभी अधिकार-क्षेत्र", "सभी स्रोत प्रकार", "सभी उपयोग मार्गदर्शन"],
+  nl: ["Alle rechtsgebieden", "Alle brontypen", "Alle gebruiksrichtlijnen"],
+  nb: ["Alle jurisdiksjoner", "Alle kildetyper", "All bruksveiledning"],
+  th: ["เขตอำนาจทั้งหมด", "ประเภทแหล่งข้อมูลทั้งหมด", "แนวทางการใช้ทั้งหมด"],
+  "zh-Hans": ["所有管辖区", "所有来源类型", "所有使用说明"],
+};
+Object.entries(missingFilterLabels).forEach(([locale, values]) => {
+  [shared[locale].allJur, shared[locale].allTypes, shared[locale].allUse] = values;
+});
+
+const missingLoadErrorLabels = {
+  da: ["Kataloget kunne ikke indlæses.", "Det statiske websted forventer data/channels.json ved siden af sideartefaktet."],
+  et: ["Kataloogi ei saanud laadida.", "Staatiline sait eeldab faili data/channels.json lehe artefakti kõrval."],
+  el: ["Δεν ήταν δυνατή η φόρτωση του καταλόγου.", "Ο στατικός ιστότοπος αναμένει το data/channels.json δίπλα στο τεχνούργημα της σελίδας."],
+  hi: ["कैटलॉग लोड नहीं हो सका।", "स्थिर साइट पृष्ठ आर्टिफ़ैक्ट के पास data/channels.json की अपेक्षा करती है।"],
+  ga: ["Níorbh fhéidir an chatalóg a luchtú.", "Tá an suíomh statach ag súil le data/channels.json in aice leis an déantán leathanaigh."],
+  lb: ["De Katalog konnt net geluede ginn.", "De statesche Site erwaart data/channels.json nieft dem Säitenartefakt."],
+  nl: ["De catalogus kon niet worden geladen.", "De statische site verwacht data/channels.json naast het pagina-artefact."],
+  nb: ["Katalogen kunne ikke lastes.", "Det statiske nettstedet forventer data/channels.json ved siden av sideartefaktet."],
+  th: ["ไม่สามารถโหลดแคตตาล็อกได้", "ไซต์แบบคงที่ต้องการ data/channels.json อยู่ข้างอาร์ติแฟกต์ของหน้า"],
+  "zh-Hans": ["无法加载目录。", "静态站点要求 data/channels.json 与页面构件位于同一位置。"],
+};
+Object.entries(missingLoadErrorLabels).forEach(([locale, values]) => {
+  [shared[locale].sourceError, shared[locale].sourceErrorDetail] = values;
+});
+
+for (const [locale] of locales) {
+  if (locale === "en") continue;
+  const messages = shared[locale];
+  messages.catalogue ??= messages.nav;
+  messages.brandHome ??= `Parliament Streams · ${messages.about}`;
+  messages.primaryNavigation ??= messages.nav;
+  for (const labelKey of ["direct_hls", "direct_dash", "youtube"]) {
+    messages.labels[labelKey] ??= en.labels[labelKey];
+  }
+}
+
+function translationCoverage(locale) {
+  const localeMessages = locale === "en" ? en : shared[locale];
+  const messages = Object.keys(en).filter((key) => key !== "labels" && !Object.hasOwn(localeMessages, key));
+  const labels = Object.keys(en.labels).filter((key) => !Object.hasOwn(localeMessages.labels, key));
+  return { messages, labels };
+}
+
 function message(locale, key, values = {}) {
   const value = shared[locale]?.[key] ?? en[key] ?? key;
   if (typeof value !== "string") return value;
@@ -289,5 +570,5 @@ function supportedLocale(candidate) {
   return locales.find(([code]) => code.split("-")[0] === language)?.[0] ?? "en";
 }
 
-window.ParliamentStreamsI18n = { locales, localizedLabel, message, supportedLocale };
+window.ParliamentStreamsI18n = { locales, localizedLabel, message, supportedLocale, translationCoverage };
 })();
