@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 concurrency:
   group: catalogue-audit
@@ -85,6 +86,62 @@ jobs:
           else
             echo '{"regressions":[],"recoveries":[],"changes":[]}' > reports/automated/stable-health-diff.json
           fi
+
+      - name: Update stable-stream regression issues
+        if: always() && hashFiles('reports/automated/stable-health-diff.json') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create stream-regression \
+            --color d73a4a \
+            --description "Automated regression in an always-on stream" \
+            --force
+          while IFS=$'\t' read -r channel_id before after; do
+            title="Stable stream regression: $channel_id"
+            number=$(gh issue list \
+              --state all \
+              --label stream-regression \
+              --limit 100 \
+              --json number,title | \
+              jq -r --arg title "$title" '.[] | select(.title == $title) | .number')
+            {
+              echo "The daily catalogue audit detected a regression in the always-on stream \`$channel_id\`."
+              echo
+              echo "- Previous status: \`$before\`"
+              echo "- Current status: \`$after\`"
+              echo "- Evidence: $RUN_URL"
+              echo
+              echo "Confirm the endpoint from another network and inspect the retained health report before changing catalogue metadata."
+            } > regression-issue.md
+            if [[ -n "$number" ]]; then
+              gh issue edit "$number" --body-file regression-issue.md
+              state=$(gh issue view "$number" --json state --jq '.state')
+              if [[ "$state" == "CLOSED" ]]; then
+                gh issue reopen "$number"
+              fi
+            else
+              gh issue create \
+                --title "$title" \
+                --label stream-regression \
+                --body-file regression-issue.md
+            fi
+          done < <(jq -r '.regressions[] | [.id, .before, .after] | @tsv' reports/automated/stable-health-diff.json)
+          while IFS= read -r channel_id; do
+            title="Stable stream regression: $channel_id"
+            number=$(gh issue list \
+              --state open \
+              --label stream-regression \
+              --limit 100 \
+              --json number,title | \
+              jq -r --arg title "$title" '.[] | select(.title == $title) | .number')
+            if [[ -n "$number" ]]; then
+              gh issue close "$number" \
+                --reason completed \
+                --comment "The daily audit recorded a recovery for \`$channel_id\`. Evidence: $RUN_URL"
+            fi
+          done < <(jq -r '.recoveries[].id' reports/automated/stable-health-diff.json)
 
       - name: Audit schedule endpoints and parsers
         run: |

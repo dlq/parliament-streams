@@ -11,7 +11,9 @@ application. Earlier application work remains available in Git history.
 - Canonical Tier 1 and Tier 2 discovery target data plus a monthly GitHub
   Actions audit that performs static and Chromium source discovery, compares
   validated manifests with the catalogue, and retains review evidence for 180
-  days without automatically promoting sources.
+  days without automatically promoting sources. The workflow maintains a
+  persistent candidate-review issue, while daily always-on regressions receive
+  deduplicated issues that close on recovery.
 - A daily GitHub Actions catalogue audit covering schema and identity rules,
   primary stream/page health, schedule endpoints and parsers, and supporting
   official, rights, identity, and embed links, plus a weekly full-catalogue

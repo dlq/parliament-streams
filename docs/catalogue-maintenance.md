@@ -220,6 +220,18 @@ record its official provenance, schedule behavior, accessibility evidence, and
 rights posture, then create a candidate record. Scheduled discovery does not
 edit `data/channels.json` or `candidates/`.
 
+The workflow mirrors the current findings into one persistent
+`candidate-discovery` issue so the queue remains visible after artifacts expire.
+Reruns update that issue rather than creating duplicates, and a clean monthly
+run closes it.
+
+The daily catalogue audit separately opens one `stream-regression` issue for
+each newly degraded `always_on` stream and closes it only when the health diff
+records a recovery. Event-based sources, isolated EPG failures, blocked
+supporting links, and browser-only noise stay in artifacts until the project
+has repeated-failure evidence strong enough to avoid notification churn.
+CodeQL and Dependabot continue to use their native alerts and pull requests.
+
 The watchlist itself requires maintenance. General web search, new official
 sites, renamed institutions, and entirely new player surfaces cannot be
 discovered reliably from a closed set of URLs. Update the target files when

@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 concurrency:
   group: candidate-discovery
@@ -72,6 +73,62 @@ jobs:
             --static reports/discovery/tier2-static.json \
             --browser reports/discovery/browser-validation.json \
             --output reports/discovery/findings.json
+
+      - name: Update candidate review issue
+        if: always() && hashFiles('reports/discovery/findings.json') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          TITLE: Candidate discovery review queue
+        run: |
+          gh label create candidate-discovery \
+            --color 1d76db \
+            --description "Automated Tier 1 and Tier 2 discovery evidence" \
+            --force
+          number=$(gh issue list \
+            --state all \
+            --label candidate-discovery \
+            --limit 100 \
+            --json number,title | \
+            jq -r --arg title "$TITLE" '.[] | select(.title == $title) | .number')
+          review_count=$(jq -r '.counts.review' reports/discovery/findings.json)
+          if [[ "$review_count" -eq 0 ]]; then
+            if [[ -n "$number" ]]; then
+              state=$(gh issue view "$number" --json state --jq '.state')
+              if [[ "$state" == "OPEN" ]]; then
+                gh issue close "$number" \
+                  --reason completed \
+                  --comment "The latest monthly discovery run found no uncatalogued validated manifests. Evidence: $RUN_URL"
+              fi
+            fi
+            exit 0
+          fi
+          {
+            echo "## Automated candidate discovery"
+            echo
+            echo "The latest monthly Tier 1 and Tier 2 audit found **$review_count** validated manifest(s) that are not represented by a catalogue playback or embed URL."
+            echo
+            echo "These are research leads, not approved catalogue records. Confirm institutional identity, official provenance, channel stability, schedule semantics, accessibility, and rights before promotion."
+            echo
+            echo "| Tier | Country | Type | URL |"
+            echo "| --- | --- | --- | --- |"
+            jq -r '.findings[] | select(.status == "review") | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/discovery/findings.json
+            echo
+            echo "[Workflow evidence and downloadable reports]($RUN_URL)"
+          } > candidate-discovery-issue.md
+          if [[ -n "$number" ]]; then
+            gh issue edit "$number" --body-file candidate-discovery-issue.md
+            state=$(gh issue view "$number" --json state --jq '.state')
+            if [[ "$state" == "CLOSED" ]]; then
+              gh issue reopen "$number"
+            fi
+          else
+            gh issue create \
+              --title "$TITLE" \
+              --label candidate-discovery \
+              --body-file candidate-discovery-issue.md
+          fi
 
       - name: Write discovery summary
         if: always()

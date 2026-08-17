@@ -70,7 +70,9 @@ Done:
   CSV export.
 - A schema-validated Tier 1/Tier 2 discovery watchlist now drives a monthly
   static and Chromium audit. It reports uncatalogued validated manifests for
-  review without making automatic catalogue or rights decisions.
+  review in a persistent GitHub issue without making automatic catalogue or
+  rights decisions. Daily always-on stream regressions use separate deduplicated
+  issues that close on recorded recovery.
 
 Retired from the active project:
 
