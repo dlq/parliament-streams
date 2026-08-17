@@ -4829,6 +4829,132 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         ],
         "recommendation": "Allow client-side playback under the catalogue's opt-out policy with visible Congress attribution; remove or link out if the source requests it."
       }
+    },
+    {
+      "id": "netherlands-tweede-kamer-aletta-jacobszaal",
+      "name": "Netherlands Tweede Kamer Aletta Jacobszaal",
+      "jurisdiction_level": "national",
+      "country_or_region": "Netherlands",
+      "legislature": "Tweede Kamer",
+      "external_ids": {
+        "wikidata_qid": "Q233262",
+        "ipu_country_code": "NL",
+        "ipu_parliament_code": "NL",
+        "ipu_chamber_code": "NL-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q233262",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/NL/NL-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "Dutch",
+      "source_type": "direct_hls",
+      "playback_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+      "provenance_note": "Official Tweede Kamer Aletta Jacobszaal live room stream.",
+      "technical_status": "validated",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "nl"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+          "method": "GET",
+          "kind": "live_debates_and_agenda_page",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
+        "evidence": [
+          "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen"
+        ],
+        "recommendation": "Link-out or pending until terms or permission are documented."
+      }
+    },
+    {
+      "id": "netherlands-tweede-kamer-actualiteitenkanaal",
+      "name": "Netherlands Tweede Kamer Actualiteitenkanaal",
+      "jurisdiction_level": "national",
+      "country_or_region": "Netherlands",
+      "legislature": "Tweede Kamer",
+      "external_ids": {
+        "wikidata_qid": "Q233262",
+        "ipu_country_code": "NL",
+        "ipu_parliament_code": "NL",
+        "ipu_chamber_code": "NL-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q233262",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/NL/NL-LC01/",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "Dutch",
+      "source_type": "direct_hls",
+      "playback_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+      "provenance_note": "Official Tweede Kamer Actualiteitenkanaal for occasional public broadcasts.",
+      "technical_status": "validated",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "nl"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+          "method": "GET",
+          "kind": "live_debates_and_agenda_page",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
+        "evidence": [
+          "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen"
+        ],
+        "recommendation": "Link-out or pending until terms or permission are documented."
+      }
     }
   ]
 };

@@ -91,17 +91,18 @@ try {
   }));
   await page.goto(baseUrl);
   await page.waitForSelector(".channel-button");
+  assert.equal(await page.locator('meta[property="og:image:width"]').getAttribute("content"), "1200");
+  assert.equal(await page.locator('meta[property="og:image:height"]').getAttribute("content"), "630");
+  assert.match(await page.locator('meta[property="og:image"]').getAttribute("content"), /parliament-streams-social\.png$/);
+  assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute("content"), "summary_large_image");
   assert.match(await page.locator(".intro").evaluate((element) => getComputedStyle(element).backgroundImage), /house-of-commons-1890\.jpg/);
   assert.match(await page.locator(".hero-credit").innerText(), /Library of Congress · Public domain/);
   assert.match(await page.locator("#open-video-copy").innerText(), /streams such as HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
-  assert.equal(await page.locator("#metric-sources").innerText(), "82");
-  assert.equal(await page.locator("#metric-playable").innerText(), "43");
+  assert.equal(await page.locator("#metric-sources").innerText(), "84");
+  assert.equal(await page.locator("#metric-playable").innerText(), "45");
   assert.equal(await page.locator("#metric-schedules").innerText(), "27");
   assert.match(await page.locator("#metric-updated").innerText(), /Aug 17, 2026/);
-  await page.locator(".catalogue-key summary").click();
-  assert.match(await page.locator("#key-format-values").innerText(), /HLS · DASH · YouTube · Official page/);
-  assert.match(await page.locator("#key-access-values").innerText(), /Verified · Review · Page only/);
   assert.equal(await page.locator(".principles-index li").count(), 5);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
@@ -125,7 +126,7 @@ try {
   await page.locator("#locale-select").selectOption("en");
 
   const rows = page.locator(".channel-button");
-  assert.equal(await rows.count(), 82);
+  assert.equal(await rows.count(), 84);
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
   assert.match(await navarreFlag.getAttribute("src"), /assets\/flags\/navarre\.svg$/);
@@ -156,7 +157,6 @@ try {
   assert.match(await page.locator(".programme-line").nth(1).innerText(), /^À suivre :/);
   assert.match(await page.locator("#open-video-copy").innerText(), /flux directs et interopérables comme le HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /horaires ouverts/);
-  assert.equal(await page.locator("#catalogue-key-title").innerText(), "Comment lire ce catalogue");
   assert.equal(await page.locator("#metric-playable-label").textContent(), "Lisibles ici");
   assert.equal(await page.locator("#metric-schedules").textContent(), "27");
   assert.equal(await page.locator("#principle-accessibility").textContent(), "Accessibilité ouverte");

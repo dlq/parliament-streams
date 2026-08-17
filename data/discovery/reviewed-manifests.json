@@ -1,0 +1,55 @@
+{
+  "decision_version": 1,
+  "updated_on": "2026-08-17",
+  "description": "Durable review outcomes for validated manifests that should not be promoted as parliamentary catalogue playback endpoints.",
+  "decisions": [
+    {
+      "country": "Brazil",
+      "url": "https://canalgov-stream.ebc.com.br/index.m3u8",
+      "disposition": "out_of_scope",
+      "reviewed_on": "2026-08-17",
+      "reason": "Canal Gov is the Brazilian federal executive branch broadcaster, not a parliamentary service.",
+      "evidence": ["https://canalgov.ebc.com.br/sobre"]
+    },
+    {
+      "country": "Indonesia",
+      "url": "http://103.18.181.69:1935/golive/livestream/playlist.m3u8",
+      "disposition": "insecure_legacy",
+      "reviewed_on": "2026-08-17",
+      "reason": "The endpoint uses cleartext HTTP and a bare IP address, so an HTTPS catalogue page cannot embed it safely. The official TVR Parlemen page is catalogued instead.",
+      "evidence": ["https://tvrparlemen.dpr.go.id/streaming/"]
+    },
+    {
+      "country": "Italy",
+      "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+      "disposition": "third_party",
+      "reviewed_on": "2026-08-17",
+      "reason": "Radio Radicale is a third-party relay. The official Camera dei Deputati WebTV page is catalogued instead.",
+      "evidence": ["https://webtv.camera.it/", "https://www.radioradicale.it/tv/camera-diretta"]
+    },
+    {
+      "country": "Moldova",
+      "url": "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8",
+      "disposition": "third_party",
+      "reviewed_on": "2026-08-17",
+      "reason": "Privesc.eu is a third-party relay. The Parliament of Moldova official live page and YouTube channel are catalogued instead.",
+      "evidence": ["https://parlament.md/live-md.nspx", "https://www.privesc.eu/"]
+    },
+    {
+      "country": "South Korea",
+      "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+      "disposition": "out_of_scope",
+      "reviewed_on": "2026-08-17",
+      "reason": "KTV is a national government policy broadcaster rather than the National Assembly's NATV parliamentary service.",
+      "evidence": ["https://www.natv.go.kr/", "https://www.ktv.go.kr/content/contentMain.do?content_id=602446"]
+    },
+    {
+      "country": "United States",
+      "url_prefix": "https://houseliveprod-",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-08-17",
+      "reason": "The manifest contains a timestamped HouseLive event identifier and is not a stable reusable floor-stream endpoint. Stable official House and Senate watch pages are catalogued instead.",
+      "evidence": ["https://live.house.gov/", "https://www.house.gov/watch-houselive"]
+    }
+  ]
+}

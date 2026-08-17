@@ -8,6 +8,14 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- A 1200 x 630 Open Graph and social-preview image, with explicit canonical,
+  Open Graph, and Twitter metadata for GitHub Pages shares.
+- Promoted official Tweede Kamer Aletta Jacobszaal and Actualiteitenkanaal HLS
+  records after fresh master and child-playlist validation.
+- Durable discovery-review decisions for third-party, out-of-scope, insecure,
+  and event-specific manifests so monthly audits do not reopen settled leads.
+- Tests for discovery-decision handling and bot-protection response detection.
+
 - Canonical Tier 1 and Tier 2 discovery target data plus a monthly GitHub
   Actions audit that performs static and Chromium source discovery, compares
   validated manifests with the catalogue, and retains review evidence for 90
@@ -25,8 +33,8 @@ application. Earlier application work remains available in Git history.
   HTTP classifications, CLI output, and tests.
 - A public-domain 1890 House of Commons chamber photograph as the responsive
   catalogue hero, with visible credit and repository attribution.
-- A data-derived catalogue coverage summary, an accessible catalogue key,
-  per-source evidence dates, and a five-part open-stream principles index.
+- A data-derived catalogue coverage summary, per-source evidence dates, and a
+  five-part open-stream principles index.
 
 - A build-free GitHub Pages catalogue driven directly by `data/channels.json`.
 - In-page native HLS playback for technically validated sources not expressly
@@ -80,6 +88,11 @@ application. Earlier application work remains available in Git history.
 - Strict mypy and catalogue business-rule checks in local verification and CI.
 
 ### Changed
+
+- Removed the redundant public "How to read this catalogue" section and its
+  obsolete localization and accessibility-test hooks.
+- Recorded Tier 3 expansion criteria as future planning only; no Tier 3
+  discovery targets or automation have been implemented.
 
 - Migrated the catalogue to schema v6: renamed the misleading
   `attribution_text` field to `provenance_note`, removed obsolete static
@@ -154,6 +167,10 @@ application. Earlier application work remains available in Git history.
   calendar URL with its stable calendar route.
 
 ### Fixed
+
+- Replaced an ambiguous bot-protection substring check with an explicit
+  response-body pattern, resolving the CodeQL URL-sanitization finding without
+  weakening the New Zealand schedule parser.
 
 - Aligned the repository description, website, topics, and README branding with
   the Parliament Streams public catalogue.

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from datetime import UTC, datetime
 
 from .common import ParsedSchedule, ScraperSource, checked_label, clean_html, first_match
@@ -15,9 +16,11 @@ SOURCE: ScraperSource = {
     "notes": "Extracts the House next meets text from the official calendar page.",
 }
 
+BOT_PROTECTION_PATTERN = re.compile(r"(?:captcha page|\bperfdrive\.com\b)", re.IGNORECASE)
+
 
 def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
-    if "captcha page" in html.lower() or "perfdrive.com" in html.lower():
+    if BOT_PROTECTION_PATTERN.search(html):
         raise ValueError("official calendar returned a bot-protection page")
     now = now or datetime.now(UTC)
     body = clean_html(html)

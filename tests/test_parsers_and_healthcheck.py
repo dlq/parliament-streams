@@ -162,6 +162,15 @@ class ParserTests(unittest.TestCase):
             new_zealand["new-zealand-parliament"]["next_event_time"], "Tuesday at 2pm."
         )
         self.assertEqual(new_zealand_parliament.parse("No calendar listing"), {})
+        for blocked_html in (
+            "<title>CAPTCHA page</title>",
+            '<script src="https://verify.perfdrive.com/challenge.js"></script>',
+        ):
+            with (
+                self.subTest(blocked_html=blocked_html),
+                self.assertRaisesRegex(ValueError, "bot-protection page"),
+            ):
+                new_zealand_parliament.parse(blocked_html)
 
     def test_european_parliament_parser_selects_current_and_next(self):
         payload = """{

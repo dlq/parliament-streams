@@ -123,6 +123,37 @@ Remaining sub-national candidates:
    and UK clusters only with an official live/archive page, a schedule surface,
    a stable institutional identity, and a source-specific rights note.
 
+### Tier 3 Expansion
+
+Prepare for hybrid-regime coverage now, but keep Tier 1 and Tier 2 as the
+active discovery priority. As of 2026-08-17, national-level catalogue coverage
+is 16 of 25 Tier 1 countries (64%) and 9 of 46 Tier 2 countries (19.6%). The
+previous lightweight pass across the 32 Tier 3 countries produced one strong
+official direct-HLS result, El Salvador, so a deep Tier 3 pass is currently
+likely to yield less than closing the remaining Tier 1 gaps and reviewing the
+Tier 1/Tier 2 candidate queue.
+
+Staged approach:
+
+1. Clear the current Tier 1/Tier 2 candidate issue and review the nine Tier 1
+   countries without a national-level catalogue entry.
+2. Improve official-player, event-based, and supported YouTube discovery before
+   relying on direct-manifest discovery in lower-yield countries.
+3. Add a canonical, schema-validated Tier 3 discovery watchlist without treating
+   its contents as approved catalogue records.
+4. Run Tier 3 discovery quarterly at first and maintain its findings in a
+   separate, deduplicated GitHub issue.
+5. Promote a Tier 3 source whenever official provenance, institutional identity,
+   technical behavior, schedule semantics, and source-specific rights evidence
+   are adequately documented; do not wait for a tier-wide review cycle.
+6. Consider moving Tier 3 discovery to the monthly workflow when Tier 1 national
+   coverage reaches about 80% and the Tier 1/Tier 2 candidate queue is routinely
+   small enough to review.
+
+Democracy tiers are a research-prioritization device, not an inclusion rule.
+Recording a legislature or stream documents public access and does not endorse
+the government or its democratic status.
+
 Later:
 
 1. Publish periodic validation reports without republishing external content.
@@ -259,6 +290,20 @@ Near-term:
 7. Replace the current `unknown` accessibility states with cited evidence for
    captions and caption languages, sign-language interpretation, and audio
    description. Do not equate missing evidence with confirmed unavailability.
+
+Current measurable review queues as of 2026-08-17:
+
+- 43 of 84 catalogue entries still use a permission status ending in
+  `pending_review`. Prioritize common service families once, then apply the
+  same evidence consistently to their related channel records.
+- All 84 entries retain at least one `unknown` media-accessibility field. Start
+  with sources that publish caption or interpretation documentation, and keep
+  unsupported fields `unknown` rather than inferring `unavailable`.
+- Track these as two persistent GitHub research issues rather than opening one
+  issue per stream. Update their counts after catalogue promotions and close
+  them only when the underlying evidence gaps are actually resolved.
+  Current queues: [rights evidence](https://github.com/dlq/parliament-streams/issues/13)
+  and [media accessibility evidence](https://github.com/dlq/parliament-streams/issues/14).
 
 ## Research And Advocacy
 

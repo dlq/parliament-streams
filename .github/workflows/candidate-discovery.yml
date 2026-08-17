@@ -42,6 +42,7 @@ jobs:
         run: |
           uv run --locked python tools/validate_discovery_targets.py \
             data/discovery/tier1.json data/discovery/tier2.json
+          uv run --locked python tools/validate_discovery_decisions.py
           jq -e '.target_version == 1 and .tier == "tier1" and (.countries | length) == 25' data/discovery/tier1.json
           jq -e '.target_version == 1 and .tier == "tier2" and (.countries | length) == 46' data/discovery/tier2.json
 
@@ -139,7 +140,7 @@ jobs:
             echo "This is review evidence. No catalogue records were changed automatically."
             echo
             if [[ -f reports/discovery/findings.json ]]; then
-              jq -r '"Validated manifests: \(.counts.validated); already catalogued: \(.counts.catalogued); requiring review: \(.counts.review)"' reports/discovery/findings.json
+              jq -r '"Validated manifests: \(.counts.validated); already catalogued: \(.counts.catalogued); previously reviewed: \(.counts.reviewed); requiring review: \(.counts.review)"' reports/discovery/findings.json
               echo
               echo "### Review queue"
               echo

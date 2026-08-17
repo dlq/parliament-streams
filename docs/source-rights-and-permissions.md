@@ -6,7 +6,7 @@ technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
 
-Last reviewed: 2026-08-16.
+Last reviewed: 2026-08-17.
 
 ## Catalogue Position
 
@@ -70,7 +70,7 @@ override the public site's technical playback gate.
 
 | Source | Catalogue ids | Current status | Official page | Recommendation |
 | --- | --- | --- | --- | --- |
-| Netherlands Tweede Kamer | `netherlands-tweede-kamer` | `personal_use_pending_review` | https://www.tweedekamer.nl/debat_en_vergadering/livedebat | The Kamer's [audiovisual material guidance](https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen) permits recognised media to use the official download/embed service for journalistic use. It does not document public use of the catalogued raw HLS endpoint. Use the official service or link out. |
+| Netherlands Tweede Kamer | `netherlands-tweede-kamer`, `netherlands-tweede-kamer-aletta-jacobszaal`, `netherlands-tweede-kamer-actualiteitenkanaal` | `personal_use_pending_review` | https://www.tweedekamer.nl/debat_en_vergadering/livedebatten | The Kamer's [audiovisual material guidance](https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen) permits recognised media to use the official download/embed service for journalistic use. It does not document general public use of the catalogued raw HLS endpoints. Use the official service or link out when stronger permission is required. |
 | Norway Stortinget | `norway-stortinget` | `personal_use_pending_review` | https://www.stortinget.no/nett-tv | The [retransmission terms](https://www.stortinget.no/no/Stottemeny/Hjelp/Nett-TV/Videreformidling-av-Stortingets-nett-TV/) require a formal arrangement and a dedicated publication point. Link out, or obtain that arrangement before enabling third-party playback. |
 | France National Assembly | `france-national-assembly` | `personal_use_pending_review` | https://videos.assemblee-nationale.fr/direct.php | Link-out/pending |
 | Chile Camara TV | `chile-camara-tv` | `personal_use_pending_review` | https://www.camara.cl/prensa/television.aspx | Link-out/pending until terms or permission are documented |

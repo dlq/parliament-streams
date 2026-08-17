@@ -49,6 +49,9 @@ def canonical_catalogue():
     return json.loads(CATALOGUE_PATH.read_text(encoding="utf-8"))
 
 
+CANONICAL_CHANNEL_COUNT = len(canonical_catalogue()["channels"])
+
+
 def cloned_channel(channel_id="test-assembly", qid="Q123456789"):
     channel = copy.deepcopy(canonical_catalogue()["channels"][-19])
     channel["id"] = channel_id
@@ -295,7 +298,7 @@ class ManagementTests(unittest.TestCase):
 
     def test_json_loaders_site_data_and_hash(self):
         catalogue = load_catalogue(self.catalogue_path)
-        self.assertEqual(len(catalogue["channels"]), 82)
+        self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
         self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 6)
         self.assertIn("PARLIAMENT_STREAMS_CATALOGUE", render_site_data(self.catalogue_path))
         self.assertEqual(render_site_data_payload(catalogue), render_site_data(self.catalogue_path))
@@ -319,7 +322,7 @@ class ManagementTests(unittest.TestCase):
 
     def test_store_add_replace_update_remove_and_dry_runs(self):
         added = self.store.add(cloned_channel())
-        self.assertEqual(len(added["channels"]), 83)
+        self.assertEqual(len(added["channels"]), CANONICAL_CHANNEL_COUNT + 1)
         self.assertTrue(self.site_path.exists())
         self.assertEqual(self.store.load()["channels"][-1]["id"], "test-assembly")
         with self.assertRaisesRegex(ValueError, "already exists"):
@@ -346,17 +349,17 @@ class ManagementTests(unittest.TestCase):
             self.store.update("missing", cloned_channel("missing"))
 
         preview_removed = self.store.remove("test-assembly", persist=False)
-        self.assertEqual(len(preview_removed["channels"]), 82)
-        self.assertEqual(len(self.store.load()["channels"]), 83)
+        self.assertEqual(len(preview_removed["channels"]), CANONICAL_CHANNEL_COUNT)
+        self.assertEqual(len(self.store.load()["channels"]), CANONICAL_CHANNEL_COUNT + 1)
         self.store.remove("test-assembly")
-        self.assertEqual(len(self.store.load()["channels"]), 82)
+        self.assertEqual(len(self.store.load()["channels"]), CANONICAL_CHANNEL_COUNT)
         with self.assertRaisesRegex(KeyError, "Unknown catalogue id"):
             self.store.remove("missing")
 
     def test_store_without_site_data_and_invalid_commit(self):
         store = CatalogueStore(self.catalogue_path, None)
         preview = store.add(cloned_channel(), persist=False)
-        self.assertEqual(len(preview["channels"]), 83)
+        self.assertEqual(len(preview["channels"]), CANONICAL_CHANNEL_COUNT + 1)
         invalid = canonical_catalogue()
         invalid["channels"][0]["id"] = "INVALID"
         with self.assertRaises(CatalogueValidationError):
@@ -470,7 +473,7 @@ class ManagementTests(unittest.TestCase):
             generate_validation_seed(catalogue, channel_ids={"missing"})
 
         audit = audit_identities(catalogue, checked_at="2026-08-16T00:00:00Z")
-        self.assertEqual(audit["counts"], {"ok": 82, "error": 0})
+        self.assertEqual(audit["counts"], {"ok": CANONICAL_CHANNEL_COUNT, "error": 0})
         broken = copy.deepcopy(catalogue)
         broken["channels"][0]["identity_sources"][0]["url"] = "https://example.test/Q1"
         broken_audit = audit_identities(broken)
@@ -532,7 +535,7 @@ class CliTests(unittest.TestCase):
     def test_validate_list_and_show_commands(self):
         result, output, _ = self.run_cli("validate")
         self.assertEqual(result, 0)
-        self.assertIn("82 channels", output)
+        self.assertIn(f"{CANONICAL_CHANNEL_COUNT} channels", output)
 
         result, output, _ = self.run_cli("list", "--level", "subnational")
         self.assertEqual(result, 0)
@@ -600,7 +603,7 @@ class CliTests(unittest.TestCase):
         )
         result, output, _ = self.run_cli("candidate-promote", str(candidate))
         self.assertEqual(result, 0)
-        self.assertIn("83 channels", output)
+        self.assertIn(f"{CANONICAL_CHANNEL_COUNT + 1} channels", output)
         self.assertEqual(load_candidate(candidate)["status"], "promoted")
         self.assertIn("Promoted to", load_candidate(candidate)["decision_notes"][-1])
 
@@ -626,8 +629,8 @@ class CliTests(unittest.TestCase):
         write_json(record, cloned_channel())
         result, output, _ = self.run_cli("add", str(record), "--dry-run")
         self.assertEqual(result, 0)
-        self.assertIn("Would write 83", output)
-        self.assertEqual(len(load_catalogue(self.catalogue)["channels"]), 82)
+        self.assertIn(f"Would write {CANONICAL_CHANNEL_COUNT + 1}", output)
+        self.assertEqual(len(load_catalogue(self.catalogue)["channels"]), CANONICAL_CHANNEL_COUNT)
         self.assertEqual(self.run_cli("add", str(record))[0], 0)
 
         changed = cloned_channel()
@@ -677,7 +680,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(load_json_object(identity)["counts"]["error"], 0)
         result, output, _ = self.run_cli("identity-audit")
         self.assertEqual(result, 0)
-        self.assertIn('"total": 82', output)
+        self.assertIn(f'"total": {CANONICAL_CHANNEL_COUNT}', output)
 
         before = self.root / "before.json"
         after = self.root / "after.json"

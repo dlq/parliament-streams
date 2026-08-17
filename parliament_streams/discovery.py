@@ -4,13 +4,29 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 from datetime import UTC, datetime
-from typing import Any, Literal, TypedDict, cast
+from typing import Any, Literal, NotRequired, TypedDict, cast
 from urllib.parse import urlsplit
 
 from .models import Catalogue
 
 ManifestKind = Literal["hls", "dash"]
 ManifestCandidate = tuple[str, str, ManifestKind, str, str]
+DecisionDisposition = Literal[
+    "event_specific",
+    "insecure_legacy",
+    "out_of_scope",
+    "third_party",
+]
+
+
+class DiscoveryDecision(TypedDict):
+    country: str
+    url: NotRequired[str]
+    url_prefix: NotRequired[str]
+    disposition: DecisionDisposition
+    reviewed_on: str
+    reason: str
+    evidence: list[str]
 
 
 class DiscoveryFinding(TypedDict):
@@ -19,13 +35,51 @@ class DiscoveryFinding(TypedDict):
     kind: ManifestKind
     url: str
     evidence: str
-    status: Literal["catalogued", "review"]
+    status: Literal["catalogued", "review", "reviewed"]
+    disposition: DecisionDisposition | None
 
 
 class DiscoveryFindingsReport(TypedDict):
     checked_at: str
     counts: dict[str, int]
     findings: list[DiscoveryFinding]
+
+
+def parse_discovery_decisions(document: dict[str, Any]) -> list[DiscoveryDecision]:
+    """Validate and return the maintained manifest-review decisions."""
+    if document.get("decision_version") != 1:
+        raise ValueError("Discovery decisions must use decision_version 1")
+    raw_decisions = document.get("decisions")
+    if not isinstance(raw_decisions, list):
+        raise ValueError("Discovery decisions must contain a decisions list")
+
+    allowed = {"event_specific", "insecure_legacy", "out_of_scope", "third_party"}
+    decisions: list[DiscoveryDecision] = []
+    seen: set[str] = set()
+    for index, raw in enumerate(raw_decisions):
+        if not isinstance(raw, dict):
+            raise ValueError(f"Discovery decision {index} must be an object")
+        required_strings = ("country", "disposition", "reviewed_on", "reason")
+        if any(not isinstance(raw.get(field), str) or not raw[field] for field in required_strings):
+            raise ValueError(f"Discovery decision {index} has missing string fields")
+        if raw["disposition"] not in allowed:
+            raise ValueError(f"Discovery decision {index} has an unknown disposition")
+        match_values = [raw.get("url"), raw.get("url_prefix")]
+        if sum(isinstance(value, str) and bool(value) for value in match_values) != 1:
+            raise ValueError(f"Discovery decision {index} needs exactly one URL or URL prefix")
+        evidence = raw.get("evidence")
+        if (
+            not isinstance(evidence, list)
+            or not evidence
+            or not all(isinstance(url, str) and url for url in evidence)
+        ):
+            raise ValueError(f"Discovery decision {index} needs evidence URLs")
+        match = cast(str, raw.get("url") or raw.get("url_prefix"))
+        if match in seen:
+            raise ValueError(f"Discovery decisions repeat URL match: {match}")
+        seen.add(match)
+        decisions.append(cast(DiscoveryDecision, raw))
+    return decisions
 
 
 def _catalogue_playback_urls(catalogue: Catalogue) -> set[str]:
@@ -38,6 +92,16 @@ def _catalogue_playback_urls(catalogue: Catalogue) -> set[str]:
         if embed and embed.get("url"):
             urls.add(embed["url"])
     return urls
+
+
+def _decision_for_url(url: str, decisions: list[DiscoveryDecision]) -> DiscoveryDecision | None:
+    for decision in decisions:
+        if decision.get("url") == url:
+            return decision
+        prefix = decision.get("url_prefix")
+        if prefix and url.startswith(prefix):
+            return decision
+    return None
 
 
 def _is_plausible_live_manifest(url: str) -> bool:
@@ -102,10 +166,12 @@ def build_discovery_findings(
     static_reports: list[tuple[str, dict[str, Any]]],
     browser_reports: list[tuple[str, dict[str, Any]]],
     *,
+    decisions: list[DiscoveryDecision] | None = None,
     checked_at: str | None = None,
 ) -> DiscoveryFindingsReport:
     """Return deduplicated validated manifests and whether each needs review."""
     known_urls = _catalogue_playback_urls(catalogue)
+    reviewed_decisions = decisions or []
     candidates = [
         item for evidence, report in static_reports for item in _static_manifests(report, evidence)
     ]
@@ -121,6 +187,7 @@ def build_discovery_findings(
         if url in seen or not _is_plausible_live_manifest(url):
             continue
         seen.add(url)
+        decision = _decision_for_url(url, reviewed_decisions)
         findings.append(
             {
                 "country": country,
@@ -128,7 +195,14 @@ def build_discovery_findings(
                 "kind": kind,
                 "url": url,
                 "evidence": evidence,
-                "status": "catalogued" if _matches_catalogued_family(url, known_urls) else "review",
+                "status": (
+                    "catalogued"
+                    if _matches_catalogued_family(url, known_urls)
+                    else "reviewed"
+                    if decision
+                    else "review"
+                ),
+                "disposition": decision["disposition"] if decision else None,
             }
         )
 
@@ -136,6 +210,7 @@ def build_discovery_findings(
     counts = {
         "validated": len(findings),
         "catalogued": sum(item["status"] == "catalogued" for item in findings),
+        "reviewed": sum(item["status"] == "reviewed" for item in findings),
         "review": sum(item["status"] == "review" for item in findings),
     }
     timestamp = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")

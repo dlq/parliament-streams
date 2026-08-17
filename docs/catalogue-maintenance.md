@@ -220,6 +220,13 @@ record its official provenance, schedule behavior, accessibility evidence, and
 rights posture, then create a candidate record. Scheduled discovery does not
 edit `data/channels.json` or `candidates/`.
 
+When a validated manifest is deliberately rejected, record the outcome in
+`data/discovery/reviewed-manifests.json`. The monthly workflow retains those
+findings in its report but does not reopen them as candidates. Use this only
+for evidence-backed dispositions such as a third-party relay, an executive
+broadcaster outside the catalogue scope, an insecure legacy endpoint, or a
+timestamped event manifest.
+
 The workflow mirrors the current findings into one persistent
 `candidate-discovery` issue so the queue remains visible after artifacts expire.
 Reruns update that issue rather than creating duplicates, and a clean monthly

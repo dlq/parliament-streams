@@ -294,10 +294,6 @@ function applyStaticTranslations() {
   setText("source-type-label", t("sourceType"));
   setText("use-guidance-label", t("useGuidance"));
   setText("filters-label", t("filters"));
-  setText("catalogue-key-title", t("catalogueKey"));
-  setText("key-format-label", t("format"));
-  setText("key-access-label", t("access"));
-  setText("key-use-label", t("use"));
   setText("metric-sources-label", t("metricSources"));
   setText("metric-playable-label", t("metricPlayable"));
   setText("metric-schedules-label", t("metricSchedules"));
@@ -363,9 +359,6 @@ function renderResearchSummary() {
     channel.epg_sources.some((source) => source.scraper_status === "implemented")
   ).length;
   document.querySelector("#metric-updated").textContent = formatDate(state.generatedOn);
-  document.querySelector("#key-format-values").textContent = ["direct_hls", "direct_dash", "youtube", "official_page"].map(label).join(" · ");
-  document.querySelector("#key-access-values").textContent = ["validated", "needs_review", "link_only"].map(label).join(" · ");
-  document.querySelector("#key-use-values").textContent = ["explicit_reuse_with_conditions", "embed_only", "personal_use_pending_review", "no_third_party_reuse"].map(label).join(" · ");
 }
 function sourceNameMarkup(name) { return name.replaceAll(" - ", "<br>"); }
 function languageMarkup(language) {

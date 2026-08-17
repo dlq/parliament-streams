@@ -10,3 +10,9 @@ Congress Prints and Photographs Division (LCCN 89713510).
 
 The site displays the photograph as a responsive background crop with a
 uniform colour overlay. The underlying image file is otherwise unchanged.
+
+`../brand/parliament-streams-social.png` is a 1200 x 630 social-preview
+composition made for this repository from the same public-domain photograph,
+the Parliament Streams name, and the repository's project mark. The source
+photograph remains public domain; the original project artwork and composition
+are distributed under the repository licence.
