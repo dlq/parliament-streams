@@ -258,13 +258,13 @@ class HealthcheckTests(unittest.TestCase):
         self.assertIn(b"Remote end closed connection", result[2])
         self.assertEqual(result[3], None)
 
-    def test_fetch_retries_server_errors(self):
+    def test_fetch_retries_http_errors(self):
         response = (200, {"content-type": "text/plain"}, b"ok", "https://example.test")
         with (
             patch.object(
                 healthcheck,
                 "_fetch_once",
-                side_effect=[(503, {}, b"unavailable", None), response],
+                side_effect=[(404, {}, b"transient redirect miss", None), response],
             ),
             patch.object(healthcheck.time, "sleep") as sleep,
         ):

@@ -171,6 +171,9 @@ application. Earlier application work remains available in Git history.
 - Replaced an ambiguous bot-protection substring check with an explicit
   response-body pattern, resolving the CodeQL URL-sanitization finding without
   weakening the New Zealand schedule parser.
+- Made health-check retries cover transient HTTP 4xx responses as well as
+  disconnects and server errors, avoiding false stable-stream regressions when
+  a CDN briefly redirects a valid manifest to an unavailable edge.
 
 - Aligned the repository description, website, topics, and README branding with
   the Parliament Streams public catalogue.

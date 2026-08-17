@@ -56,7 +56,7 @@ def fetch_url(
 
     for attempt in range(1, attempts + 1):
         last_status, last_headers, last_body, last_final_url = _fetch_once(url, timeout)
-        if last_status is not None and last_status < 500:
+        if last_status is not None and last_status < 400:
             return last_status, last_headers, last_body, last_final_url, attempt
         if attempt < attempts:
             time.sleep(0.5 * attempt)
