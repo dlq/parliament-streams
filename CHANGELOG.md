@@ -9,8 +9,8 @@ application. Earlier application work remains available in Git history.
 ### Added
 
 - Canada House of Commons ParlVU and Canada Senate SenVu as official
-  event-platform link-out catalogue records with planned Harmony schedule/API
-  follow-up, while deliberately avoiding unvalidated direct-HLS claims.
+  event-platform link-out catalogue records, while deliberately avoiding
+  unvalidated direct-HLS claims.
 - A Canada Harmony schedule scraper that extracts upcoming-event metadata from
   the public ParlVU and SenVu landing pages while leaving the unstable
   undocumented API as planned research.

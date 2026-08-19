@@ -338,12 +338,12 @@ Near-term:
    captions and caption languages, sign-language interpretation, and audio
    description. Do not equate missing evidence with confirmed unavailability.
 
-Current measurable review queues as of 2026-08-17:
+Current measurable review queues as of 2026-08-19:
 
-- 43 of 84 catalogue entries still use a permission status ending in
+- 43 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-- All 84 entries retain at least one `unknown` media-accessibility field. Start
+- All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
 - Track these as two persistent GitHub research issues rather than opening one
