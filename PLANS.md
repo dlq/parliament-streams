@@ -345,10 +345,10 @@ Near-term:
 
 1. Keep `docs/source-rights-and-permissions.md` as the evidence-backed matrix for
    source terms and permission status.
-2. Prioritize rights review for newly added official-page/player discoveries:
-   Norway, Estonia, Chile, Israel, El Salvador, Germany, European Parliament,
-   UN Web TV, Council of the European Union, Council of Europe/PACE, OSCE, and
-   Nunavut.
+2. Prioritize rights review for newly added official-page/player discoveries
+   that remain unresolved after the 2026-08-19 rights pass: Norway, Estonia,
+   Chile, Israel, El Salvador, Germany, Council of Europe/PACE, Nunavut, and the
+   remaining official-page/link-out sources without clear reuse terms.
 3. Add a short public-facing `docs/rights-summary.md` if the detailed matrix
    becomes too long for readers who only need the current posture.
 4. Record written permission requests and responses as summarized evidence, not
@@ -364,10 +364,10 @@ Near-term:
 
 Current measurable review queues as of 2026-08-19:
 
-- 42 of 86 catalogue entries still use a permission status ending in
+- 35 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 22 official-vendor HLS, 14 official pages, 5 first-party HLS, and
+  Breakdown: 21 official-vendor HLS, 8 official pages, 5 first-party HLS, and
   1 DASH research record.
 - All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep

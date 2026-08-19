@@ -1635,11 +1635,13 @@
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official HLS candidate without recorded reuse permission.",
+        "summary": "Assembly of the Republic ownership rules state that the Assembly owns material production resulting from its work and that public bodies, companies, and private entities may not edit or commercialize that production without prior assent of the President of the Assembly. This confirms source ownership but does not clearly authorize third-party live playback.",
         "evidence": [
-          "https://www.parlamento.pt/"
+          "https://www.parlamento.pt/",
+          "https://www.parlamento.pt/Paginas/propriedade.aspx",
+          "https://www.parlamento.pt/Paginas/2015/dezembro/ARTV-Canal-Parlamento-na-Web-TV.aspx"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Link to ARTV/Canal Parlamento pending written clarification for third-party live playback. Do not edit or commercialize Assembly video without prior assent."
       },
       "validation_history": [
         {
@@ -1720,11 +1722,13 @@
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Public-broadcaster/official parliamentary TV HLS candidate without recorded reuse permission.",
+        "summary": "Hellenic Parliament terms say portal content is freely available for public reading while available, and allow republication of parts of portal content if unaltered, explicitly credited to the Hellenic Parliament portal, dated, and linked where feasible. The terms do not clearly authorize full third-party live-stream playback or reuse of third-party content.",
         "evidence": [
-          "https://www.hellenicparliament.gr/"
+          "https://www.hellenicparliament.gr/",
+          "https://www.hellenicparliament.gr/termsOfUse",
+          "https://www.hellenicparliament.gr/Dioikitiki-Organosi/Ypiresies/Other-Services/Tileoptikos-Stathmos-tis-Voulis-ton-Ellinon/"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Link to the official Hellenic Parliament TV/player while direct HLS reuse remains pending. If excerpts are used, preserve context, attribution, date, and source link."
       },
       "validation_history": [
         {
@@ -2047,12 +2051,15 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official HLS candidate without recorded reuse permission.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Senate legal notice authorizes use, reproduction, copying, and distribution of textual and multimedia elements from the Senate site within the public interest in information and the indicated CC-BY-style conditions, preserving integrity and indicating the source. The Senate transmission rules also describe free informational reproduction/communication of parliamentary speeches within justified information purposes, with Senate logo visibility and no advertising or simultaneous commentary for retransmitted parliamentary signal use.",
         "evidence": [
-          "https://webtv.senato.it/"
+          "https://webtv.senato.it/",
+          "https://www.senato.it/guida-al-sito/avviso-legale",
+          "https://www.senato.it/istituzione/disciplinare-trasmissioni-radiotelevisive",
+          "https://www.senato.it/istituzione/senato-sintesi"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Native playback may remain enabled for informational, non-advertising use with clear Senate attribution, preserved logo/source context, and no distortion. Prefer official WebTV/YouTube links for events outside parliamentary proceedings or where item-specific rights are unclear."
       },
       "validation_history": [
         {
@@ -4917,14 +4924,13 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Council pages document live and recorded public sessions in all EU languages, but this project has not recorded sufficient native stream reuse permission.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Council copyright rules authorize reproduction of Council website content, including editorial broadcasts and webcasts, when the source is acknowledged, the original meaning is not distorted, changes are indicated, and third-party or specially restricted material is separately cleared.",
         "evidence": [
           "https://video.consilium.europa.eu/home/en",
-          "https://www.consilium.europa.eu/en/press/",
-          "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/"
+          "https://www.consilium.europa.eu/en/about-site/copyright/"
         ],
-        "recommendation": "Use official link-out pending terms review and avoid extracting dynamic player manifests."
+        "recommendation": "Use official Council links or embeds with European Union/Council attribution. Do not extract unsupported direct streams, distort context, or reuse third-party/specially restricted material without permission."
       },
       "validation_history": [
         {
@@ -4990,13 +4996,14 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official EU Audiovisual Service page is reachable and publishes EBS live/schedule surfaces, but this project has not recorded sufficient native stream reuse permission.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The EU Audiovisual Service/EBS FAQ says audiovisual material is offered free of charge for EU-related information and educational purposes, with item-specific copyright conditions and restrictions for some media.",
         "evidence": [
           "https://audiovisual.ec.europa.eu/en",
-          "https://www.europarl.europa.eu/website/multimedia-centre/en/europe-by-satellite.html"
+          "https://audiovisual.ec.europa.eu/en/ebs/grid",
+          "https://audiovisual.ec.europa.eu/en/faq"
         ],
-        "recommendation": "Use official link-out pending terms review; keep distinct from parliamentary chamber streams."
+        "recommendation": "Use official AV Portal pages, schedules, downloads, or supported embeds for EU-related information/educational purposes, and check item-specific conditions before reuse. Do not treat EBS as a parliament-only channel or extract unsupported live manifests."
       },
       "validation_history": [
         {
@@ -5062,14 +5069,14 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "UN Web TV provides official live and on-demand multilingual coverage and event links/embed codes, but this project has not recorded sufficient native stream reuse permission.",
+        "status": "no_third_party_reuse",
+        "summary": "UN Web TV copyright guidance says UN video/audio footage is not public domain and use requires UN authorization plus a licence agreement; UN website terms otherwise allow only personal, non-commercial copying without resale, redistribution, or derivative compilation, subject to specific restrictions.",
         "evidence": [
           "https://webtv.un.org/en/schedule",
-          "https://media.un.org/en",
-          "https://www.un.org/en/node/205121"
+          "https://webtv.un.org/en/copyright_use",
+          "https://www.un.org/en/about-us/terms-of-use"
         ],
-        "recommendation": "Use official schedule/event links or documented embeds; do not extract dynamic manifests without permission."
+        "recommendation": "Link to official UN Web TV event pages or use documented event embed links where supplied by UN Web TV. Do not relay, download, redistribute, or treat UN video/audio footage as reusable without UN authorization."
       },
       "validation_history": [
         {
@@ -5433,13 +5440,14 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official OSCE live page is reachable, but this project has not recorded sufficient stream reuse permission or a stable parliamentary-specific direct stream.",
+        "status": "no_third_party_reuse",
+        "summary": "OSCE copyright policy says written OSCE content may be used freely only for personal or educational purposes with notice and credit; for other purposes, content may not be reproduced, copied, distributed, transmitted, broadcast, sold, licensed, or otherwise exploited without prior written permission. Linking is also described as subject to OSCE consent.",
         "evidence": [
           "https://www.osce.org/live",
-          "https://www.oscepa.org/en/"
+          "https://www.osce.org/about/terms-of-use",
+          "https://comms.osce.org/resources/copyright-information"
         ],
-        "recommendation": "Use official link-out pending terms review; keep OSCE PA-specific coverage as a research target."
+        "recommendation": "Keep OSCE as an official link-out/watchlist entry. Do not embed, relay, or reuse OSCE live video without written permission."
       },
       "validation_history": [
         {
@@ -6360,13 +6368,13 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "The Landtag provides live and archived parliamentary video and downloadable clips, but this review did not locate a clear general licence for third-party playback or redistribution.",
+        "status": "no_third_party_reuse",
+        "summary": "Bavarian Landtag livestream/archive guidance states that its video files are copyrighted and reproduction or use of the files, or parts of them, in other electronic or printed publications and publication online is permitted only with prior approval.",
         "evidence": [
           "https://www.bayern.landtag.de/aktuelles/plenum-online/",
-          "https://www.bayern.landtag.de/service/datenschutz/"
+          "https://www.bayern.landtag.de/aktuelles/sitzungen/livestreams/"
         ],
-        "recommendation": "Link to Plenum Online and use only source-provided download or sharing routes pending a specific reuse statement."
+        "recommendation": "Link to the official Plenum Online/livestream pages only. Do not embed, republish, or relay Landtag video without prior approval."
       },
       "validation_history": [
         {
@@ -6490,13 +6498,13 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "The Corts prominently provide Canal Corts, live event links, an audiovisual archive, and an agenda, but this review did not locate source-specific third-party playback or redistribution terms.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Corts Valencianes legal notice authorizes reproduction of text and multimedia elements belonging to Les Corts only for non-commercial purposes, provided integrity is preserved and the source is mentioned, subject to different conditions attached to specific data.",
         "evidence": [
-          "https://www.cortsvalencianes.es/es",
-          "https://mediateca.cortsvalencianes.es/live"
+          "https://mediateca.cortsvalencianes.es/live",
+          "https://www.cortsvalencianes.es/es/aviso-legal"
         ],
-        "recommendation": "Link to Canal Corts pending a source-specific rights statement."
+        "recommendation": "Link to Canal Corts and allow only non-commercial, attributed, unmodified reuse where no item-specific restriction applies. Do not bypass technical protections or imply broader live-stream redistribution rights."
       },
       "validation_history": [
         {

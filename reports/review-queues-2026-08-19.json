@@ -38,11 +38,11 @@
     },
     {
       "status": "explicit_reuse_with_conditions",
-      "count": 34
+      "count": 38
     },
     {
       "status": "no_third_party_reuse",
-      "count": 6
+      "count": 9
     },
     {
       "status": "noncommercial_pending_review",
@@ -50,7 +50,7 @@
     },
     {
       "status": "personal_use_pending_review",
-      "count": 36
+      "count": 29
     }
   ],
   "pending_permission_by_source_kind": [
@@ -64,11 +64,11 @@
     },
     {
       "source_kind": "official_page",
-      "count": 14
+      "count": 8
     },
     {
       "source_kind": "official_vendor_hls",
-      "count": 22
+      "count": 21
     }
   ],
   "unknown_accessibility_by_level": [
@@ -130,6 +130,56 @@
       "id": "netherlands-tweede-kamer-accessibility",
       "outcome": "sign_language_evidence_improved",
       "reason": "Tweede Kamer live-debate and Debat Direct evidence now supports source-dependent Dutch Sign Language coverage across the three Tweede Kamer records while preserving caption availability and unknown audio-description status."
+    },
+    {
+      "id": "council-of-eu-live",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Council copyright rules cover audiovisual webcasts under attribution, no-distortion, change-disclosure, and third-party-material conditions."
+    },
+    {
+      "id": "eu-audiovisual-ebs",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "EU Audiovisual Service/EBS FAQ says material is free of charge for EU-related information and educational purposes, while item-specific restrictions still apply."
+    },
+    {
+      "id": "un-web-tv",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "UN Web TV copyright guidance says UN video/audio is not public domain and requires authorization plus a licence agreement for use."
+    },
+    {
+      "id": "osce-live",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "OSCE copyright policy requires prior written permission for reproducing, transmitting, broadcasting, or otherwise exploiting content beyond narrow personal/educational written-content use."
+    },
+    {
+      "id": "bavaria-landtag-plenum-online",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "Bavarian Landtag livestream/archive guidance requires prior approval for reproduction, use, or publication of video files or parts of them in other publications or online."
+    },
+    {
+      "id": "valencia-canal-corts",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Corts Valencianes legal notice authorizes non-commercial reproduction of text and multimedia elements when integrity is preserved and source is mentioned, subject to item-specific restrictions."
+    },
+    {
+      "id": "portugal-artv",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "Assembly ownership rules confirm source ownership and prohibit editing or commercialization without prior assent, but do not clearly authorize third-party live playback."
+    },
+    {
+      "id": "greece-hellenic-parliament-tv",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "Hellenic Parliament terms allow republication of parts of portal content under attribution/integrity conditions, but do not clearly authorize full third-party live-stream playback."
+    },
+    {
+      "id": "italy-senate",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Senate legal notice and broadcasting rules support informational use/reproduction of Senate multimedia and parliamentary speeches under attribution, integrity, no-advertising, logo/source-context, and justified-information-purpose conditions."
+    },
+    {
+      "id": "prototype-direct-hls-policy",
+      "outcome": "playback_policy_confirmed",
+      "reason": "For the current proof of concept, technically public HLS remains sufficient for native client-side playback unless recorded rights evidence requires link-out; pending direct streams stay visibly permission-pending rather than being silently demoted."
     }
   ],
   "recommended_order": [

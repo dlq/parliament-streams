@@ -179,6 +179,11 @@ browser's native support where available and loads pinned `hls.js` in the
 browser for compatible non-Safari browsers; this is client-side code only, not
 a backend or proxy.
 
+For the current proof of concept, technically public HLS is treated as
+sufficient for native client-side playback unless recorded rights evidence
+requires link-out. The catalogue should expose that uncertainty clearly rather
+than silently demoting all pending direct streams.
+
 YouTube catalogue entries use YouTube's official privacy-enhanced iframe and a
 permanent official uploads playlist. The playlist starts with the latest
 published item and may show an active broadcast when YouTube places it first;

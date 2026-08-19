@@ -1700,3 +1700,53 @@ statement:
 Review-queue outcome: sign-language unknowns fell from 77 to 71. Caption
 coverage remains 21 available, 4 source-dependent, and 61 unknown. Audio
 description remains unknown for all 86 entries.
+
+## 2026-08-19 rights evidence follow-up
+
+A source-family rights pass focused on pending official-page records and a few
+nearby official-vendor records with discoverable terms. The catalogue changed
+only where official terms clearly supported a status update:
+
+- Council of the European Union Live moved to
+  `explicit_reuse_with_conditions`: Council copyright rules cover audiovisual
+  webcasts under attribution, no-distortion, change-disclosure, and
+  third-party-material conditions.
+- EU Audiovisual Service / EBS moved to `explicit_reuse_with_conditions`: the
+  AV Service FAQ says material is free of charge for EU-related information and
+  educational purposes, while item-specific restrictions still apply.
+- Valencia Canal Corts moved to `explicit_reuse_with_conditions`: Corts
+  Valencianes authorizes non-commercial reproduction of its text and multimedia
+  elements when integrity is preserved and the source is mentioned, subject to
+  item-specific restrictions.
+- United Nations Web TV moved to `no_third_party_reuse`: UN Web TV says UN
+  video/audio is not public domain and requires UN authorization plus a licence
+  agreement for use.
+- OSCE Live moved to `no_third_party_reuse`: OSCE policy requires prior written
+  permission for reproducing, transmitting, broadcasting, or otherwise
+  exploiting content beyond narrow personal/educational written-content use.
+- Bavaria Landtag Plenum Online moved to `no_third_party_reuse`: Bavarian
+  Landtag guidance requires prior approval for reproduction, use, or online
+  publication of video files or parts of them.
+- Portugal ARTV and Greece Hellenic Parliament TV remain
+  `personal_use_pending_review`, but their catalogue summaries now cite stronger
+  source-ownership and partial-republication evidence.
+
+Review-queue outcome: pending rights fell from 42 to 36. The unresolved
+breakdown is now 22 official-vendor HLS, 8 official pages, 5 first-party HLS,
+and 1 DASH research record.
+
+Follow-up direct-playback decision:
+
+- For the current proof of concept, technically public HLS remains sufficient
+  for native client-side playback unless recorded rights evidence requires
+  link-out. Pending direct streams should stay visibly permission-pending rather
+  than being silently demoted.
+- Italy Senate moved to `explicit_reuse_with_conditions`: Senate legal notice
+  and broadcasting rules support informational use/reproduction of Senate
+  multimedia and parliamentary speeches under attribution, integrity,
+  no-advertising, logo/source-context, and justified-information-purpose
+  conditions.
+
+Updated review-queue outcome: pending rights fell from 36 to 35. The unresolved
+breakdown is now 21 official-vendor HLS, 8 official pages, 5 first-party HLS,
+and 1 DASH research record.
