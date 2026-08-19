@@ -21,6 +21,8 @@ The proof-of-concept catalogue uses an opt-out playback posture:
   extract YouTube manifests.
 - Official event platforms such as ParlVU/SenVu remain link-out/event-metadata
   surfaces unless stable playback rights and technical routes are documented.
+- The catalogue records playback presentation separately as `playback_policy`:
+  `native_playback`, `provider_embed`, `link_out`, or `research_only`.
 - Source owners can request correction or removal through the repository owner.
 
 This policy is practical for research, but it is not a legal conclusion that

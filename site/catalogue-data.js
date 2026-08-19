@@ -1,5 +1,5 @@
 window.PARLIAMENT_STREAMS_CATALOGUE = {
-  "schema_version": 8,
+  "schema_version": 9,
   "generated_from": "curated research and live endpoint validation",
   "generated_on": "2026-08-19",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
@@ -90,7 +90,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "canada-house-of-commons-parlvu",
@@ -173,7 +174,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "canada-senate-senvu",
@@ -256,7 +258,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "new-zealand-parliament",
@@ -343,7 +346,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "norway-stortinget",
@@ -422,7 +426,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "brazil-tv-camara",
@@ -509,7 +514,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "ireland-oireachtas-tv",
@@ -603,7 +609,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "denmark-folketinget",
@@ -688,7 +695,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "netherlands-tweede-kamer",
@@ -775,7 +783,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "spain-canal-parlamento",
@@ -863,7 +872,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "spain-congreso-directo-1",
@@ -957,7 +967,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "spain-congreso-directo-2",
@@ -1051,7 +1062,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "spain-congreso-directo-3",
@@ -1145,7 +1157,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "spain-congreso-directo-4",
@@ -1239,7 +1252,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "spain-congreso-directo-5",
@@ -1333,7 +1347,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "france-national-assembly",
@@ -1419,7 +1434,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "Response did not start with #EXTM3U."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "chile-camara-tv",
@@ -1500,7 +1516,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "israel-knesset-channel",
@@ -1581,7 +1598,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "portugal-artv",
@@ -1668,7 +1686,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "greece-hellenic-parliament-tv",
@@ -1755,7 +1774,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "luxembourg-chamber-tv",
@@ -1840,7 +1860,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "<urlopen error [Errno 51] Network is unreachable>"
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "estonia-riigikogu-live-1",
@@ -1919,7 +1940,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "estonia-riigikogu-live-2",
@@ -1998,7 +2020,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "italy-senate",
@@ -2086,7 +2109,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "india-sansad-tv-1",
@@ -2173,7 +2197,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "india-sansad-tv-2",
@@ -2260,7 +2285,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "thailand-parliament-tv",
@@ -2339,7 +2365,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "slovakia-tv-nrsr",
@@ -2424,7 +2451,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "mongolia-parliament-tv",
@@ -2501,7 +2529,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "DASH MPD detected."
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "quebec-canal01",
@@ -2587,7 +2616,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal02",
@@ -2673,7 +2703,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal03",
@@ -2759,7 +2790,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal04",
@@ -2845,7 +2877,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal05",
@@ -2931,7 +2964,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal06",
@@ -3017,7 +3051,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal07",
@@ -3103,7 +3138,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal08",
@@ -3189,7 +3225,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal09",
@@ -3275,7 +3312,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal10",
@@ -3361,7 +3399,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal11",
@@ -3447,7 +3486,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal12",
@@ -3533,7 +3573,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal13",
@@ -3619,7 +3660,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "quebec-canal14",
@@ -3705,7 +3747,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "ontario-house-en",
@@ -3789,7 +3832,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "ontario-house-en-cc",
@@ -3873,7 +3917,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "HTTP 404"
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "ontario-rm151-en",
@@ -3957,7 +4002,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "ontario-committee-1-en",
@@ -4041,7 +4087,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "ontario-committee-2-en",
@@ -4125,7 +4172,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "ontario-media-en",
@@ -4209,7 +4257,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "nunavut-legislative-assembly-tv",
@@ -4288,7 +4337,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "uk-parliament-youtube",
@@ -4389,7 +4439,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "provider_embed"
     },
     {
       "id": "australia-parliament-youtube",
@@ -4490,7 +4541,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "provider_embed"
     },
     {
       "id": "taiwan-parliamentary-tv",
@@ -4560,7 +4612,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "germany-bundestag-1",
@@ -4639,7 +4692,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "costa-rica-assembly-youtube",
@@ -4740,7 +4794,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "provider_embed"
     },
     {
       "id": "el-salvador-legislative-assembly",
@@ -4826,7 +4881,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
         }
-      ]
+      ],
+      "playback_policy": "research_only"
     },
     {
       "id": "european-parliament-multimedia-centre",
@@ -4899,7 +4955,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "council-of-eu-live",
@@ -4971,7 +5028,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "eu-audiovisual-ebs",
@@ -5044,7 +5102,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "un-web-tv",
@@ -5117,7 +5176,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "council-of-europe-pace-live",
@@ -5198,7 +5258,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "HTTP 403"
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "scottish-parliament-tv",
@@ -5274,7 +5335,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "senedd-tv",
@@ -5348,7 +5410,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "northern-ireland-assembly-tv",
@@ -5416,7 +5479,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "osce-live",
@@ -5489,7 +5553,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "british-columbia-legislature-webcasts",
@@ -5556,7 +5621,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "alberta-assembly-online",
@@ -5622,7 +5688,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "saskatchewan-legislative-proceedings",
@@ -5689,7 +5756,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "manitoba-house-broadcasts",
@@ -5754,7 +5822,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "prince-edward-island-assembly-live",
@@ -5819,7 +5888,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "northwest-territories-watch-session",
@@ -5883,7 +5953,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "newfoundland-labrador-house-webcast",
@@ -5949,7 +6020,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "new-south-wales-parliament-webcasts",
@@ -6016,7 +6088,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "victoria-parliament-watch",
@@ -6083,7 +6156,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "queensland-parliament-live",
@@ -6149,7 +6223,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "HTTP 403"
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "western-australia-parliament-live",
@@ -6215,7 +6290,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "HTTP 403"
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "north-rhine-westphalia-landtag-live",
@@ -6281,7 +6357,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "baden-wurttemberg-landtag-live",
@@ -6347,7 +6424,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "bavaria-landtag-plenum-online",
@@ -6412,7 +6490,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "catalonia-canal-parlament",
@@ -6477,7 +6556,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "valencia-canal-corts",
@@ -6542,7 +6622,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "andalusia-parliament-tv-live",
@@ -6607,7 +6688,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "Official page/link reachable."
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "navarre-parliament-live",
@@ -6672,7 +6754,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "error",
           "note": "HTTP 403"
         }
-      ]
+      ],
+      "playback_policy": "link_out"
     },
     {
       "id": "jalisco-canal-parlamento",
@@ -6736,7 +6819,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "netherlands-tweede-kamer-aletta-jacobszaal",
@@ -6810,7 +6894,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     },
     {
       "id": "netherlands-tweede-kamer-actualiteitenkanaal",
@@ -6884,7 +6969,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "status": "ok",
           "note": "HLS manifest detected."
         }
-      ]
+      ],
+      "playback_policy": "native_playback"
     }
   ]
 };

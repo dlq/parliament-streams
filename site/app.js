@@ -10,7 +10,6 @@ const fallbacksUrl = new URL("./data/fallbacks.json", appScriptUrl);
 const localFallbacksUrl = new URL("../data/fallbacks.json", appScriptUrl);
 const schedulesUrl = new URL("./data/schedules.json", appScriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", appScriptUrl);
-const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
 const redundantAccessibilityNotes = new Set([
   "The official service provides accessible variants for some scheduled proceedings.",
   "The official service provides language and accessibility variants for some scheduled proceedings.",
@@ -348,19 +347,18 @@ function setLocale(locale) {
   }
 }
 function canPlay(channel) {
-  const supportedSource = Boolean(channel.playback_url) || channel.embed?.provider === "youtube";
   const mixedContentBlocked = window.location.protocol === "https:"
     && channel.playback_url?.startsWith("http:");
-  return supportedSource
-    && !mixedContentBlocked
-    && channel.technical_status === "validated"
-    && !blockedPlaybackRights.has(channel.permission.status);
+  return ["native_playback", "provider_embed"].includes(channel.playback_policy)
+    && !mixedContentBlocked;
 }
 function sourceStatus(channel) {
-  if (canPlay(channel)) return "playable";
-  if (channel.source_type === "official_page" || channel.permission.status === "no_third_party_reuse") return "link_out";
-  if (channel.source_type === "youtube" || channel.embed) return "fallback";
-  return "research";
+  return {
+    native_playback: "playable",
+    provider_embed: "fallback",
+    link_out: "link_out",
+    research_only: "research",
+  }[channel.playback_policy] ?? "research";
 }
 function sourceStatusLabel(value) {
   return {

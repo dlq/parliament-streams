@@ -49,6 +49,8 @@ application. Earlier application work remains available in Git history.
 - Schema v8 validation-history references, a CLI refresh command, and public
   source-detail links to retained health reports for channels with dated
   validation evidence.
+- Schema v9 `playback_policy`, separating the catalogue's playback presentation
+  from rights/permission evidence.
 - Make targets and `--check` support for validation-history refreshes, so
   retained report-link drift is caught by `make verify`.
 - Source-row posture labels for playable, link-out, fallback, and research

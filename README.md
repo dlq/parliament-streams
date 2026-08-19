@@ -150,6 +150,8 @@ The catalogue includes:
   room labels when a scraper can collect them;
 - permission status, evidence links, and reuse recommendations for every
   channel entry;
+- explicit playback policy for how the catalogue presents each source:
+  `native_playback`, `provider_embed`, `link_out`, or `research_only`;
 - explicit caption, caption-language, sign-language, and audio-description
   status. `unknown` means the project has not yet recorded sufficient evidence,
   not that the feature is unavailable.
@@ -169,18 +171,16 @@ search and filters over the canonical catalogue, source/EPG/provenance details,
 external institutional identity links, and an official outbound link for every
 entry.
 
-The page enables in-page playback where a validated direct feed or official
-provider embed is recorded in `data/channels.json`. For direct feeds, all of
-the following conditions apply:
-
-1. the entry has a direct playback URL;
-2. its technical status is `validated`; and
-3. its recorded terms do not expressly prohibit third-party reuse.
+The page enables in-page playback where `data/channels.json` records
+`playback_policy` as `native_playback` for a direct feed or `provider_embed`
+for an official provider iframe. For direct feeds, that policy is only used
+when the entry has a direct playback URL, its technical status is `validated`,
+and its recorded terms do not expressly prohibit third-party reuse.
 
 This is an opt-out research posture: the absence of recorded affirmative
 permission is not represented as a licence or other grant of rights. Direct
-endpoints with `no_third_party_reuse` remain link-out only, and sources without
-a validated playback route remain link-out only. HLS playback uses the
+endpoints with `no_third_party_reuse` remain `link_out`, and direct endpoints
+kept for unresolved DASH or technical research remain `research_only`. HLS playback uses the
 browser's native support where available and loads pinned `hls.js` in the
 browser for compatible non-Safari browsers; this is client-side code only, not
 a backend or proxy.

@@ -30,6 +30,7 @@ from .models import (
     IdentityAuditItem,
     IdentitySource,
     JurisdictionLevel,
+    PlaybackPolicy,
     SeedGroup,
     SeedResult,
     SourceKind,
@@ -282,6 +283,7 @@ def scaffold_candidate(
         "source_type": source_type,
         "source_kind": source_kind_for_candidate(source_type),
         "playback_url": playback_url,
+        "playback_policy": playback_policy_for_candidate(source_type),
         "official_url": official_url,
         "provenance_note": "Source provenance review pending.",
         "technical_status": "link_only" if source_type == "official_page" else "needs_review",
@@ -502,6 +504,7 @@ CSV_FIELDS = [
     "source_type",
     "source_kind",
     "playback_url",
+    "playback_policy",
     "official_url",
     "technical_status",
     "stability_risk",
@@ -529,6 +532,16 @@ def stability_risk_for_candidate(source_type: SourceType) -> StabilityRisk:
     if source_type == "youtube":
         return "medium"
     return "high"
+
+
+def playback_policy_for_candidate(source_type: SourceType) -> PlaybackPolicy:
+    if source_type == "youtube":
+        return "provider_embed"
+    if source_type == "official_page":
+        return "link_out"
+    if source_type == "direct_dash":
+        return "research_only"
+    return "research_only"
 
 
 def export_csv(catalogue: Catalogue, output: TextIO) -> None:

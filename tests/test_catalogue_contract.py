@@ -32,6 +32,7 @@ PERMISSION_STATUSES = {
     "embed_only",
     "no_third_party_reuse",
 }
+PLAYBACK_POLICIES = {"native_playback", "provider_embed", "link_out", "research_only"}
 
 
 class CatalogueContractTests(unittest.TestCase):
@@ -41,7 +42,7 @@ class CatalogueContractTests(unittest.TestCase):
         cls.channels = cls.catalogue["channels"]
 
     def test_catalogue_has_expected_top_level_shape(self):
-        self.assertEqual(self.catalogue["schema_version"], 8)
+        self.assertEqual(self.catalogue["schema_version"], 9)
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
@@ -68,6 +69,7 @@ class CatalogueContractTests(unittest.TestCase):
             set(schema["$defs"]["permission"]["properties"]["status"]["enum"]),
             PERMISSION_STATUSES,
         )
+        self.assertEqual(set(schema["$defs"]["playback_policy"]["enum"]), PLAYBACK_POLICIES)
 
     def test_pages_workflow_publishes_fallback_data(self):
         workflow = PAGES_WORKFLOW_PATH.read_text(encoding="utf-8")
@@ -88,6 +90,7 @@ class CatalogueContractTests(unittest.TestCase):
             "source_type",
             "source_kind",
             "playback_url",
+            "playback_policy",
             "official_url",
             "provenance_note",
             "technical_status",
@@ -135,6 +138,7 @@ class CatalogueContractTests(unittest.TestCase):
                 seen_ids.add(channel["id"])
                 self.assertIn(channel["source_type"], SOURCE_TYPES)
                 self.assertIn(channel["source_kind"], SOURCE_KINDS)
+                self.assertIn(channel["playback_policy"], PLAYBACK_POLICIES)
                 self.assertIn(channel["technical_status"], TECHNICAL_STATUSES)
                 self.assertIn(channel["stability_risk"], STABILITY_RISKS)
                 self.assertEqual(set(channel["external_ids"]), required_external_id_keys)
@@ -231,6 +235,26 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertIn("status", channel["permission"])
                 self.assertIn("summary", channel["permission"])
                 self.assertIn("evidence", channel["permission"])
+
+    def test_each_channel_records_playback_policy(self):
+        policies = {channel["playback_policy"] for channel in self.channels}
+        self.assertIn("native_playback", policies)
+        self.assertIn("provider_embed", policies)
+        self.assertIn("link_out", policies)
+        self.assertIn("research_only", policies)
+        for channel in self.channels:
+            with self.subTest(channel=channel["id"]):
+                policy = channel["playback_policy"]
+                if policy == "native_playback":
+                    self.assertIsNotNone(channel["playback_url"])
+                    self.assertEqual(channel["technical_status"], "validated")
+                    self.assertNotEqual(channel["permission"]["status"], "no_third_party_reuse")
+                if channel["source_type"] == "youtube":
+                    self.assertEqual(policy, "provider_embed")
+                if channel["source_type"] == "official_page":
+                    self.assertEqual(policy, "link_out")
+                if channel["source_kind"] == "direct_dash_research":
+                    self.assertEqual(policy, "research_only")
 
     def test_uk_devolved_legislatures_are_documented_as_link_out_sources(self):
         expected_permissions = {

@@ -10,12 +10,8 @@ import { chromium } from "playwright";
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
 const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.json"), "utf8"));
-const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
-  const supportedSource = Boolean(channel.playback_url) || channel.embed?.provider === "youtube";
-  return supportedSource
-    && channel.technical_status === "validated"
-    && !blockedPlaybackRights.has(channel.permission.status);
+  return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }).length;
 const expectedScheduleCount = canonicalCatalogue.channels.filter((channel) =>
   channel.epg_sources.some((source) => source.scraper_status === "implemented")

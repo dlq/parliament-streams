@@ -249,9 +249,10 @@ Goal: make the data model easier to maintain before expanding coverage.
 
 Priority order:
 
-1. Separate source discovery state from permission status so "found", "publicly
-   reachable", "validated", "playable by project policy", and "licensed/allowed"
-   are not collapsed into one field.
+1. Continue the schema v9 playback-policy cleanup. The catalogue now records
+   `playback_policy` separately from `permission.status`, so "playable by
+   project policy" is no longer inferred from rights evidence. Next, decide
+   whether source discovery state needs a similarly explicit field.
 2. Replace free-form `language` values with structured language codes and
    display labels.
 3. Add schema coverage for generated reports beyond the existing channel,

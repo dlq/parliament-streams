@@ -19,6 +19,7 @@ TechnicalStatus = Literal["validated", "needs_review", "link_only"]
 StabilityRisk = Literal["low", "medium", "high", "unknown"]
 CandidateStatus = Literal["researching", "ready", "rejected", "promoted"]
 Availability = Literal["always_on", "sitting_only", "event_based"]
+PlaybackPolicy = Literal["native_playback", "provider_embed", "link_out", "research_only"]
 AccessibilityStatus = Literal["available", "source_dependent", "unavailable", "unknown"]
 PermissionStatus = Literal[
     "personal_use_pending_review",
@@ -112,6 +113,7 @@ class ChannelRecord(TypedDict):
     source_type: SourceType
     source_kind: SourceKind
     playback_url: str | None
+    playback_policy: PlaybackPolicy
     embed: NotRequired[Embed]
     official_url: str
     provenance_note: str

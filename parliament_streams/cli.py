@@ -118,6 +118,7 @@ def _cmd_list(args: argparse.Namespace) -> int:
                         channel["id"],
                         channel["country_or_region"],
                         channel["source_type"],
+                        channel["playback_policy"],
                         channel["technical_status"],
                         channel["permission"]["status"],
                     )

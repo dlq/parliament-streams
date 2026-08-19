@@ -31,6 +31,7 @@
         "source_type",
         "source_kind",
         "playback_url",
+        "playback_policy",
         "official_url",
         "provenance_note",
         "technical_status",
@@ -75,6 +76,7 @@
             { "type": "null" }
           ]
         },
+        "playback_policy": { "$ref": "#/$defs/playback_policy" },
         "embed": { "$ref": "#/$defs/embed" },
         "official_url": { "type": "string", "format": "uri" },
         "provenance_note": { "type": "string", "minLength": 1 },
@@ -101,6 +103,10 @@
         },
         "permission": { "$ref": "#/$defs/permission" }
       }
+    },
+    "playback_policy": {
+      "type": "string",
+      "enum": ["native_playback", "provider_embed", "link_out", "research_only"]
     },
     "validation_history_entry": {
       "type": "object",

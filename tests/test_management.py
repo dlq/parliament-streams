@@ -346,7 +346,7 @@ class ManagementTests(unittest.TestCase):
         catalogue = load_catalogue(self.catalogue_path)
         fallbacks = load_fallbacks(self.fallbacks_path)
         self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
-        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 8)
+        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 9)
         self.assertIn(
             "PARLIAMENT_STREAMS_FALLBACKS",
             render_site_data(self.catalogue_path, self.fallbacks_path),
@@ -612,6 +612,7 @@ class ManagementTests(unittest.TestCase):
         output = io.StringIO()
         export_csv(catalogue, output)
         self.assertIn("permission_status", output.getvalue().splitlines()[0])
+        self.assertIn("playback_policy", output.getvalue().splitlines()[0])
         self.assertIn("source_kind", output.getvalue().splitlines()[0])
         self.assertIn("stability_risk", output.getvalue().splitlines()[0])
         self.assertIn("cpac-ca", output.getvalue())
@@ -892,7 +893,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(load_json_object(output_path), report)
         audit.assert_called_once()
         self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2, "workers": 4})
-        self.assertEqual(audit.call_args.args[0]["schema_version"], 8)
+        self.assertEqual(audit.call_args.args[0]["schema_version"], 9)
 
     def test_links_audit_command_writes_report_and_can_fail(self):
         report = {

@@ -87,8 +87,11 @@ def _channel_issues(
     source_type = channel.get("source_type")
     source_kind = channel.get("source_kind")
     playback_url = channel.get("playback_url")
+    playback_policy = channel.get("playback_policy")
     technical_status = channel.get("technical_status")
     stability_risk = channel.get("stability_risk")
+    permission = channel.get("permission", {})
+    permission_status = permission.get("status") if isinstance(permission, dict) else None
 
     if source_type in {"direct_hls", "direct_dash"} and not playback_url:
         issues.append(
@@ -146,6 +149,74 @@ def _channel_issues(
                 f"{path}.stability_risk",
                 "stability-risk",
                 "Sources needing review cannot be low stability risk",
+            )
+        )
+    if playback_policy == "native_playback":
+        if not playback_url:
+            issues.append(
+                ValidationIssue(
+                    f"{path}.playback_policy",
+                    "playback-policy",
+                    "Native playback policy requires a playback URL",
+                )
+            )
+        if technical_status != "validated":
+            issues.append(
+                ValidationIssue(
+                    f"{path}.playback_policy",
+                    "playback-policy",
+                    "Native playback policy requires validated technical status",
+                )
+            )
+        if permission_status == "no_third_party_reuse":
+            issues.append(
+                ValidationIssue(
+                    f"{path}.playback_policy",
+                    "playback-policy",
+                    "Sources with no third-party reuse must not use native playback policy",
+                )
+            )
+    if playback_policy == "provider_embed" and source_type != "youtube":
+        issues.append(
+            ValidationIssue(
+                f"{path}.playback_policy",
+                "playback-policy",
+                "Provider embed policy is currently only supported for YouTube sources",
+            )
+        )
+    if source_type == "youtube" and playback_policy != "provider_embed":
+        issues.append(
+            ValidationIssue(
+                f"{path}.playback_policy",
+                "playback-policy",
+                "YouTube sources must use provider embed playback policy",
+            )
+        )
+    if source_type == "official_page" and playback_policy != "link_out":
+        issues.append(
+            ValidationIssue(
+                f"{path}.playback_policy",
+                "playback-policy",
+                "Official-page sources must use link-out playback policy",
+            )
+        )
+    if source_kind == "direct_dash_research" and playback_policy != "research_only":
+        issues.append(
+            ValidationIssue(
+                f"{path}.playback_policy",
+                "playback-policy",
+                "Direct DASH research sources must use research-only playback policy",
+            )
+        )
+    if permission_status == "no_third_party_reuse" and playback_policy not in {
+        "link_out",
+        "research_only",
+    }:
+        issues.append(
+            ValidationIssue(
+                f"{path}.playback_policy",
+                "playback-policy",
+                "No-third-party-reuse sources must be link-out or research-only",
             )
         )
     if source_type == "youtube" and "embed" not in channel:
@@ -224,7 +295,6 @@ def _channel_issues(
             )
         )
 
-    permission = channel.get("permission", {})
     if isinstance(permission, dict) and not permission.get("evidence"):
         issues.append(
             ValidationIssue(
