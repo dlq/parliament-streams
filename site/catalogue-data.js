@@ -2488,8 +2488,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_dash",
       "source_kind": "direct_dash_research",
       "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
-      "official_url": "https://www.parliament.mn/",
-      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television; ownership and terms need review.",
+      "official_url": "https://att.parliament.mn/live",
+      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television. The official Parliament live/session page is the safer user-facing route; SkyGo source ownership, terms, and app playback strategy need review.",
       "technical_status": "validated",
       "stability_risk": "high",
       "availability": "always_on",
@@ -2503,11 +2503,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "DASH experiment from public streaming infrastructure without recorded reuse permission.",
+        "summary": "DASH experiment from SkyGo/GO+ streaming infrastructure without recorded reuse permission. The official Parliament site publishes a live/session page with meeting video and YouTube references, and GO+ app-store evidence describes a commercial OTT service with official rights, but no source-specific permission was found for third-party use of the DASH manifest.",
         "evidence": [
-          "https://www.parliament.mn/"
+          "https://att.parliament.mn/live",
+          "https://www.parliament.mn/",
+          "https://play.google.com/store/apps/details?id=tv.mirada.iris.android.inspire.skygo"
         ],
-        "recommendation": "Keep as research-only until source ownership and rights are clear."
+        "recommendation": "Keep as research-only. Prefer the official Parliament live/session page for users. Do not enable DASH playback until source ownership, reuse permission, and Apple/web playback strategy are documented."
       },
       "validation_history": [
         {

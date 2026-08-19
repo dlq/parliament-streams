@@ -22,9 +22,19 @@ const expectedUpdatedDate = new Intl.DateTimeFormat("en", {
   year: "numeric",
   timeZone: "UTC",
 }).format(new Date(`${canonicalCatalogue.generated_on}T00:00:00Z`));
+const expectedHeroImages = [
+  "house-of-commons-1890.jpg",
+  "south-australia-parliament-1939.jpg",
+  "reichstag-berlin-1890s.jpg",
+  "hungary-parliament-interior.jpg",
+  "new-south-wales-assembly-1872.jpg",
+  "austrian-parliament-interior.jpg",
+];
 const contentTypes = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
   ".js": "text/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
   ".png": "image/png",
@@ -136,8 +146,9 @@ try {
   assert.equal(await page.locator('meta[property="og:image:height"]').getAttribute("content"), "630");
   assert.match(await page.locator('meta[property="og:image"]').getAttribute("content"), /parliament-streams-social\.png$/);
   assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute("content"), "summary_large_image");
-  assert.match(await page.locator(".intro").evaluate((element) => getComputedStyle(element).backgroundImage), /house-of-commons-1890\.jpg/);
-  assert.match(await page.locator(".hero-credit").innerText(), /Library of Congress · Public domain/);
+  const heroBackground = await page.locator(".intro").evaluate((element) => getComputedStyle(element).backgroundImage);
+  assert.ok(expectedHeroImages.some((image) => heroBackground.includes(image)), `Unexpected hero background: ${heroBackground}`);
+  assert.match(await page.locator(".hero-credit").innerText(), /(Public domain|CC0)/);
   assert.match(await page.locator("#open-video-copy").innerText(), /streams such as HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
   assert.equal(await page.locator("#metric-sources").innerText(), String(canonicalCatalogue.channels.length));

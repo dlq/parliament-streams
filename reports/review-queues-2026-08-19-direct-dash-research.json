@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-08-19",
+  "scope": "pending direct_dash_research permission records",
+  "catalogue_total": 86,
+  "reviewed_entries": 1,
+  "reviewed_families": 1,
+  "status_changes": 0,
+  "summary": {
+    "pending_total_after_review": 28,
+    "direct_dash_research_pending_after_review": 1,
+    "likely_needs_written_clarification": 16,
+    "keep_pending_after_dated_search": 12,
+    "outcome": "Mongolia Parliament TV remains research-only. The official Parliament live/session page is a better user-facing route, but the SkyGo DASH endpoint is provider infrastructure without source-specific reuse permission or an Apple/web playback strategy."
+  },
+  "prototype_policy": "DASH records remain research-only unless source ownership, rights, and platform playback strategy are all documented.",
+  "families": [
+    {
+      "family": "Mongolia Parliament TV",
+      "ids": [
+        "mongolia-parliament-tv"
+      ],
+      "source_kind": "direct_dash_research",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "personal_use_pending_review",
+      "playback_policy": "research_only",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The official Parliament site publishes a live/session page with meeting video and YouTube references, while the SkyGo/GO+ evidence identifies a commercial OTT service carrying channels with official rights. No source-specific permission was found for third-party use of the SkyGo DASH manifest, and DASH remains outside the HLS-native playback path."
+    }
+  ]
+}

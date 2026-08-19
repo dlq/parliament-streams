@@ -15,6 +15,44 @@ const redundantAccessibilityNotes = new Set([
   "The official service provides language and accessibility variants for some scheduled proceedings.",
 ]);
 const repositoryBaseUrl = "https://github.com/dlq/parliament-streams/blob/main/";
+const heroImages = [
+  {
+    file: "assets/hero/house-of-commons-1890.jpg",
+    position: "center 54%",
+    credit: "House of Commons chamber, 1890 · Library of Congress · Public domain",
+    source: "https://commons.wikimedia.org/wiki/File:Interior_of_House_of_Commons_(Parliament_House),_London,_England)_-_F.F._%26_Co_LCCN89713510.jpg",
+  },
+  {
+    file: "assets/hero/south-australia-parliament-1939.jpg",
+    position: "center 48%",
+    credit: "Parliament House, South Australia, 1939 · State Library of South Australia · CC0",
+    source: "https://commons.wikimedia.org/wiki/File:Interior_of_Parliament_House(GN07496).jpg",
+  },
+  {
+    file: "assets/hero/reichstag-berlin-1890s.jpg",
+    position: "center 50%",
+    credit: "Reichstag, Berlin, ca. 1890s · Library of Congress · Public domain",
+    source: "https://commons.wikimedia.org/wiki/File:No_Known_Restrictions_The_Reichstag,_Berlin,_ca._1890s_(LOC)_(461040598).jpg",
+  },
+  {
+    file: "assets/hero/hungary-parliament-interior.jpg",
+    position: "center 42%",
+    credit: "Hungarian Parliament interior, Budapest · Karelj · Public domain",
+    source: "https://commons.wikimedia.org/wiki/File:Budapest_parlament_interior_13.jpg",
+  },
+  {
+    file: "assets/hero/new-south-wales-assembly-1872.jpg",
+    position: "center 48%",
+    credit: "New South Wales Legislative Assembly chamber, 1872 · State Library of NSW · Public domain",
+    source: "https://commons.wikimedia.org/wiki/File:SLNSW_479505_2_Legislative_Assembly_Chamber_Interior_SH_552.jpg",
+  },
+  {
+    file: "assets/hero/austrian-parliament-interior.jpg",
+    position: "center 44%",
+    credit: "Austrian Parliament interior · Frederic Koberl · CC0",
+    source: "https://commons.wikimedia.org/wiki/File:Classical_parliament_interior_(Unsplash).jpg",
+  },
+];
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
 const state = { channels: [], fallbacks: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
@@ -34,7 +72,18 @@ const elements = {
   fallbackDirectoryLabel: document.querySelector("#fallback-directory-label"),
   fallbackDirectoryTitle: document.querySelector("#fallback-directory-title"),
   fallbackDirectoryList: document.querySelector("#fallback-directory-list"),
+  intro: document.querySelector(".intro"),
+  heroCredit: document.querySelector(".hero-credit"),
 };
+
+function renderDailyHero() {
+  const dayIndex = Math.floor(Date.now() / 86_400_000) % heroImages.length;
+  const hero = heroImages[dayIndex];
+  elements.intro.style.setProperty("--hero-image", `url("${hero.file}")`);
+  elements.intro.style.setProperty("--hero-position", hero.position);
+  elements.heroCredit.href = hero.source;
+  elements.heroCredit.innerHTML = `${escapeHtml(hero.credit)} <span aria-hidden="true">↗</span>`;
+}
 
 const jurisdictionFlagAssets = {
   Alberta: "assets/flags/alberta.svg",
@@ -492,7 +541,7 @@ function renderList() {
     return `
     <li>
       <button class="channel-button" type="button" data-channel-id="${channel.id}" aria-pressed="${channel.id === state.selectedId}" aria-describedby="${descriptionId}">
-        <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-hidden="true">&#9654;</span>' : ""}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
+        <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
         <span>${jurisdictionName(channel.country_or_region)}</span>
         <span class="language-list">${languageMarkup(channel.language)}</span>
         <span><span class="row-tag source-posture source-posture-${slug(status)}" lang="${state.locale}" title="${statusTitle(t("mode"), sourceStatusLabel(status), sourceStatusDescription(status))}">${sourceStatusLabel(status)}</span></span>
@@ -972,6 +1021,7 @@ async function startPlayback(channel) {
 }
 async function init() {
   try {
+    renderDailyHero();
     const mobileLayout = window.matchMedia("(max-width: 680px)");
     const detailSheetLayout = window.matchMedia("(max-width: 1100px)");
     syncFilterDisclosure(mobileLayout);

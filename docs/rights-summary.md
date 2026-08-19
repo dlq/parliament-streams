@@ -83,6 +83,13 @@ Camara and Manitoba House Broadcasts moved to
 Saskatchewan, Northwest Territories, and Navarre remain pending. The snapshot is
 [review-queues-2026-08-19-official-page.json](../reports/review-queues-2026-08-19-official-page.json).
 
+The single `direct_dash_research` record was reviewed on 2026-08-19. Mongolia
+Parliament TV remains research-only: the official Parliament live/session page
+is the safer user-facing route, and the SkyGo DASH manifest lacks
+source-specific reuse permission and a platform playback strategy. The snapshot
+is
+[review-queues-2026-08-19-direct-dash-research.json](../reports/review-queues-2026-08-19-direct-dash-research.json).
+
 ## Practical Rule For New Sources
 
 New sources should start as candidates or link-out records unless they have:

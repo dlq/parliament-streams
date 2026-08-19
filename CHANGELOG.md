@@ -84,6 +84,8 @@ application. Earlier application work remains available in Git history.
 - A dated official-page rights review snapshot, moving Brazil TV Camara and
   Manitoba House Broadcasts to conditional link-out reuse while keeping four
   official-page records permission-pending.
+- A direct-DASH research snapshot for Mongolia Parliament TV, keeping the SkyGo
+  DASH manifest research-only and preferring the official Parliament live page.
 - A conservative official YouTube live-page resolver for the UK, Australia, and
   Costa Rica records. It records a current provider watch video only when the
   official `/live` page exposes explicit watch metadata; otherwise it leaves the

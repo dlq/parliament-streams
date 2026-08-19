@@ -149,8 +149,11 @@ Priority order:
    Saskatchewan, Northwest Territories, and Navarre remain pending because
    public evidence does not clearly close video-specific third-party playback
    or redistribution.
-4. Keep the 1 pending `direct_dash_research` entry research-only unless source
-   ownership, rights, and Apple/web playback strategy are clarified.
+4. The 1 pending `direct_dash_research` entry was reviewed on 2026-08-19.
+   Mongolia Parliament TV remains research-only. The official Parliament
+   live/session page is the safer user-facing route, while the SkyGo DASH
+   manifest still lacks source-specific reuse permission and an Apple/web
+   playback strategy.
 
 Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-2026-08-19-rights-next.json)
 as the historical starting queue. After the HLS and official-page review
@@ -163,6 +166,8 @@ The first-party HLS review snapshot is
 [reports/review-queues-2026-08-19-first-party-hls.json](reports/review-queues-2026-08-19-first-party-hls.json).
 The official-page review snapshot is
 [reports/review-queues-2026-08-19-official-page.json](reports/review-queues-2026-08-19-official-page.json).
+The direct-DASH research snapshot is
+[reports/review-queues-2026-08-19-direct-dash-research.json](reports/review-queues-2026-08-19-direct-dash-research.json).
 Draft request templates and public response-tracking rules live in
 [docs/permission-requests.md](docs/permission-requests.md). A short
 reader-facing explanation of the current posture lives in
@@ -194,6 +199,9 @@ Specific unresolved direct-playback groups:
   Slovakia TV NRSR, Chile Camara TV, Jalisco Canal Parlamento, and El Salvador
   Legislative Assembly: keep each as a source-specific review rather than
   inferring permission from public HLS.
+- Mongolia Parliament TV: keep the SkyGo DASH manifest research-only and prefer
+  the official Parliament live/session page unless source ownership, reuse
+  permission, and platform playback strategy are all documented.
 
 Exit criteria:
 

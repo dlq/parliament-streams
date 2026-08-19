@@ -57,12 +57,18 @@ Saskatchewan, Northwest Territories, and Navarre remain pending because public
 evidence does not clearly close video-specific third-party playback or
 redistribution.
 
+The 2026-08-19 direct-DASH research pass reviewed `mongolia-parliament-tv`.
+No status changed. The official Parliament live/session page is the safer
+user-facing route; the SkyGo DASH manifest remains research-only until source
+ownership, reuse permission, and platform playback strategy are documented.
+
 Execution queue:
 
 - [reports/review-queues-2026-08-19-rights-next.json](../reports/review-queues-2026-08-19-rights-next.json)
 - [reports/review-queues-2026-08-19-official-vendor-hls.json](../reports/review-queues-2026-08-19-official-vendor-hls.json)
 - [reports/review-queues-2026-08-19-first-party-hls.json](../reports/review-queues-2026-08-19-first-party-hls.json)
 - [reports/review-queues-2026-08-19-official-page.json](../reports/review-queues-2026-08-19-official-page.json)
+- [reports/review-queues-2026-08-19-direct-dash-research.json](../reports/review-queues-2026-08-19-direct-dash-research.json)
 
 ## Request Principles
 
