@@ -548,6 +548,68 @@ Object.entries(missingLoadErrorLabels).forEach(([locale, values]) => {
   [shared[locale].sourceError, shared[locale].sourceErrorDetail] = values;
 });
 
+const sourceCueLabels = {
+  fr: ["Lisible", "Lien externe", "Solution de repli", "Recherche", "Dernière validation", "Aucun rapport de validation conservé pour l’instant.", "Vérifié le {date}", "Méthode", "Rapport", "HTTP statique", "Navigateur/lecteur", "Source de manifeste", "Suivi de revue"],
+  es: ["Reproducible", "Enlace externo", "Alternativa", "Investigación", "Última validación", "Aún no hay informe de validación conservado.", "Verificado el {date}", "Método", "Informe", "HTTP estático", "Navegador/reproductor", "Semilla de manifiesto", "Seguimiento de revisión"],
+  "pt-BR": ["Reproduzível", "Link externo", "Alternativa", "Pesquisa", "Validação mais recente", "Ainda não há relatório de validação retido.", "Verificado em {date}", "Método", "Relatório", "HTTP estático", "Navegador/player", "Semente de manifesto", "Acompanhamento da revisão"],
+  da: ["Kan afspilles", "Eksternt link", "Reserve", "Research", "Seneste validering", "Ingen gemt valideringsrapport endnu.", "Kontrolleret {date}", "Metode", "Rapport", "Statisk HTTP", "Browser/afspiller", "Manifestgrundlag", "Opfølgning på gennemgang"],
+  de: ["Abspielbar", "Externer Link", "Fallback", "Recherche", "Letzte Validierung", "Noch kein aufbewahrter Validierungsbericht.", "Geprüft am {date}", "Methode", "Bericht", "Statisches HTTP", "Browser/Player", "Manifest-Ausgangspunkt", "Review-Nachverfolgung"],
+  et: ["Esitatav", "Välislink", "Varuvariant", "Uurimisel", "Viimane valideerimine", "Säilitatud valideerimisaruannet veel ei ole.", "Kontrollitud {date}", "Meetod", "Aruanne", "Staatiline HTTP", "Brauser/mängija", "Manifesti algandmed", "Ülevaatuse järelkontroll"],
+  el: ["Αναπαραγωγή", "Εξωτερικός σύνδεσμος", "Εναλλακτική", "Έρευνα", "Τελευταία επικύρωση", "Δεν υπάρχει ακόμη διατηρημένη αναφορά επικύρωσης.", "Ελέγχθηκε {date}", "Μέθοδος", "Αναφορά", "Στατικό HTTP", "Πρόγραμμα περιήγησης/αναπαραγωγής", "Δείγμα manifest", "Παρακολούθηση ελέγχου"],
+  hi: ["चलाने योग्य", "बाहरी लिंक", "वैकल्पिक", "शोध", "नवीनतम सत्यापन", "अभी कोई संरक्षित सत्यापन रिपोर्ट नहीं है।", "{date} को जांचा गया", "विधि", "रिपोर्ट", "स्थिर HTTP", "ब्राउज़र/प्लेयर", "मैनिफेस्ट स्रोत", "समीक्षा अनुवर्ती"],
+  ga: ["Inseinnte", "Nasc amach", "Cúltaca", "Taighde", "Bailíochtú is déanaí", "Níl aon tuarascáil bhailíochtaithe coinnithe fós.", "Seiceáilte {date}", "Modh", "Tuarascáil", "HTTP statach", "Brabhsálaí/seinnteoir", "Síol manifest", "Obair leantach athbhreithnithe"],
+  it: ["Riproducibile", "Link esterno", "Alternativa", "Ricerca", "Ultima convalida", "Nessun rapporto di convalida conservato finora.", "Verificato il {date}", "Metodo", "Rapporto", "HTTP statico", "Browser/player", "Seed del manifesto", "Follow-up della revisione"],
+  lb: ["Ofspillbar", "Externe Link", "Auswee", "Fuerschung", "Lescht Validéierung", "Nach kee gespäicherte Validéierungsrapport.", "Gepréift den {date}", "Method", "Rapport", "Stateschen HTTP", "Browser/Player", "Manifest-Seed", "Nokontroll vun der Iwwerpréiwung"],
+  nl: ["Afspeelbaar", "Externe link", "Terugval", "Onderzoek", "Laatste validatie", "Nog geen bewaard validatierapport.", "Gecontroleerd op {date}", "Methode", "Rapport", "Statische HTTP", "Browser/speler", "Manifestbron", "Opvolging van beoordeling"],
+  nb: ["Kan spilles", "Ekstern lenke", "Reserve", "Research", "Siste validering", "Ingen lagret valideringsrapport ennå.", "Kontrollert {date}", "Metode", "Rapport", "Statisk HTTP", "Nettleser/avspiller", "Manifestgrunnlag", "Oppfølging av gjennomgang"],
+  sk: ["Prehrateľné", "Externý odkaz", "Záložné riešenie", "Výskum", "Najnovšie overenie", "Zatiaľ nie je uložená žiadna validačná správa.", "Skontrolované {date}", "Metóda", "Správa", "Statické HTTP", "Prehliadač/prehrávač", "Zdroj manifestu", "Následná kontrola"],
+  th: ["เล่นได้", "ลิงก์ออก", "ทางเลือกสำรอง", "วิจัย", "การตรวจสอบล่าสุด", "ยังไม่มีรายงานการตรวจสอบที่เก็บไว้", "ตรวจสอบเมื่อ {date}", "วิธี", "รายงาน", "HTTP แบบคงที่", "เบราว์เซอร์/เครื่องเล่น", "ชุดตั้งต้นของ manifest", "การติดตามผลการตรวจสอบ"],
+  "zh-Hans": ["可播放", "外部链接", "备用来源", "研究中", "最新验证", "尚无保留的验证报告。", "检查于 {date}", "方法", "报告", "静态 HTTP", "浏览器/播放器", "清单种子", "复核跟进"],
+  mi: ["Ka purei", "Hononga atu", "Kōwhiringa tāpiri", "Rangahau", "Whakamana hou rawa", "Kāore anō he pūrongo whakamana kua puritia.", "I tirohia {date}", "Tikanga", "Pūrongo", "HTTP pateko", "Pūtirotiro/pūwhakatangi", "Kākano manifest", "Arotake whai-muri"],
+  "iu-Cans": ["ᐱᙳᐊᕈᓐᓇᖅᑐᖅ", "ᐊᓯᐊᓄᑦ ᑲᑎᙵᔪᖅ", "ᐊᓯᐊᒍᑦ ᐊᑐᕈᓐᓇᖅᑐᖅ", "ᖃᐅᔨᓴᕐᓂᖅ", "ᓄᑖᖑᓛᖅ ᓇᓗᓇᐃᕐᓂᖅ", "ᓱᓕ ᓇᓗᓇᐃᕐᓂᕐᒧᑦ ᐅᓂᒃᑳᖅ ᐱᑕᖃᙱᑦᑐᖅ.", "ᓇᓗᓇᐃᖅᑕᐅᔪᖅ {date}", "ᐊᑐᕐᓂᐅᔪᖅ", "ᐅᓂᒃᑳᖅ", "HTTP ᐊᓯᔾᔨᙱᑦᑐᖅ", "ᕿᓂᕈᑎ/ᐱᙳᐊᕈᑎ", "manifest ᐱᒋᐊᕐᕕᒃ", "ᕿᒥᕐᕈᓂᐅᑉ ᑭᖑᓂᐊᒍᑦ"],
+};
+Object.entries(sourceCueLabels).forEach(([locale, values]) => {
+  [
+    shared[locale].sourcePlayable,
+    shared[locale].sourceLinkOut,
+    shared[locale].sourceFallback,
+    shared[locale].sourceResearch,
+    shared[locale].latestValidation,
+    shared[locale].validationNotRecorded,
+    shared[locale].validationChecked,
+    shared[locale].validationMethod,
+    shared[locale].validationReport,
+    shared[locale].staticHttpValidation,
+    shared[locale].browserPlayerValidation,
+    shared[locale].manifestSeedValidation,
+    shared[locale].reviewFollowupValidation,
+  ] = values;
+});
+
+const validationStatusLabels = {
+  fr: ["OK", "Avertissement", "Erreur", "Ignoré"],
+  es: ["Correcto", "Advertencia", "Error", "Omitido"],
+  "pt-BR": ["OK", "Aviso", "Erro", "Ignorado"],
+  da: ["OK", "Advarsel", "Fejl", "Sprunget over"],
+  de: ["OK", "Warnung", "Fehler", "Übersprungen"],
+  et: ["OK", "Hoiatus", "Viga", "Vahele jäetud"],
+  el: ["OK", "Προειδοποίηση", "Σφάλμα", "Παραλείφθηκε"],
+  hi: ["ठीक", "चेतावनी", "त्रुटि", "छोड़ा गया"],
+  ga: ["OK", "Rabhadh", "Earráid", "Scipeáilte"],
+  it: ["OK", "Avviso", "Errore", "Saltato"],
+  lb: ["OK", "Warnung", "Feeler", "Iwwersprongen"],
+  nl: ["OK", "Waarschuwing", "Fout", "Overgeslagen"],
+  nb: ["OK", "Advarsel", "Feil", "Hoppet over"],
+  sk: ["OK", "Upozornenie", "Chyba", "Preskočené"],
+  th: ["ตกลง", "คำเตือน", "ข้อผิดพลาด", "ข้ามแล้ว"],
+  "zh-Hans": ["正常", "警告", "错误", "已跳过"],
+  mi: ["OK", "Whakatūpato", "Hapa", "Kua pekehia"],
+  "iu-Cans": ["OK", "ᐅᔾᔨᖅᓱᖁᔨᓂᖅ", "ᑕᒻᒪᕐᓂᖅ", "ᐊᓪᓗᖅᑕᐅᔪᖅ"],
+};
+Object.entries(validationStatusLabels).forEach(([locale, values]) => {
+  [shared[locale].labels.ok, shared[locale].labels.warning, shared[locale].labels.error, shared[locale].labels.skipped] = values;
+});
+
 for (const [locale] of locales) {
   if (locale === "en") continue;
   const messages = shared[locale];
