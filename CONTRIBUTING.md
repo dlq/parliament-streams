@@ -7,6 +7,18 @@ Use the GitHub issue templates for source corrections, endpoint validation
 problems, and schedule metadata issues. If the report is sensitive, follow
 [SECURITY.md](SECURITY.md) instead of opening a public issue.
 
+If you are new to the repository, start with [README.md](README.md) and
+[docs/architecture.md](docs/architecture.md). The short version is: the
+catalogue is data, the Python package validates and maintains that data, and the
+site is a static reader for it.
+
+Treat these as separate review questions:
+
+- Is this the official legislature, broadcaster, player, or platform?
+- Is the source technically stable and reproducible?
+- Is there schedule, accessibility, and identity evidence?
+- Do the source terms allow native playback, embedding, reuse, or only link-out?
+
 ## Source Or Stream Corrections
 
 For channel/source changes, include:

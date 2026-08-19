@@ -1,4 +1,4 @@
-# Parliaments Plans
+# Parliament Streams Plans
 
 This is the live plan for Parliaments as a documentation and data project. The
 current repository should be optimized for public research, source provenance,
@@ -73,6 +73,9 @@ Done:
   review in a persistent GitHub issue without making automatic catalogue or
   rights decisions. Daily always-on stream regressions use separate deduplicated
   issues that close on recorded recovery.
+- Canada federal ParlVU and Senate SenVu are now represented as official
+  event-platform link-out records with planned Harmony schedule/API follow-up;
+  no stable direct HLS endpoint is recorded.
 
 Retired from the active project:
 

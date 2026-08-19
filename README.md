@@ -1,5 +1,9 @@
 # Parliament Streams
 
+[![CI](https://github.com/dlq/parliament-streams/actions/workflows/ci.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/ci.yml)
+[![Catalogue Audit](https://github.com/dlq/parliament-streams/actions/workflows/catalogue-audit.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/catalogue-audit.yml)
+[![GitHub Pages](https://github.com/dlq/parliament-streams/actions/workflows/pages.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/pages.yml)
+
 Parliament Streams is a documentation and data project for public parliamentary
 video sources. It records the stream endpoints, official pages, schedule/EPG
 surfaces, media-accessibility metadata, scraper notes, and rights/permission
@@ -9,6 +13,41 @@ The repository is intended to be a public, inspectable catalogue and research
 record.
 
 **[Browse the public catalogue](https://dlq.github.io/parliament-streams/)**
+
+## Start Here
+
+This project has three moving parts:
+
+- a canonical catalogue in `data/channels.json`;
+- Python tools that validate, update, audit, and enrich that catalogue; and
+- a build-free static site in `site/` that presents the catalogue on GitHub
+  Pages.
+
+There is no backend, stream proxy, user tracking, or rebroadcast service. The
+site plays only sources that the catalogue records as technically validated and
+not expressly blocked by source terms; otherwise it links to the official page.
+
+For a first local check:
+
+```sh
+uv sync --locked --extra dev
+npm ci
+npx playwright install chromium
+make verify
+```
+
+For a quicker orientation without installing everything:
+
+```sh
+python3 -m json.tool data/channels.json >/dev/null
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/site/`.
+
+New contributors should read [docs/architecture.md](docs/architecture.md) for
+the repo mental model and [docs/catalogue-maintenance.md](docs/catalogue-maintenance.md)
+before editing source records.
 
 ## What Is Here
 

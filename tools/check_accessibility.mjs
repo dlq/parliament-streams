@@ -8,6 +8,23 @@ import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "playwright";
 
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
+const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
+const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
+const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
+  const supportedSource = Boolean(channel.playback_url) || channel.embed?.provider === "youtube";
+  return supportedSource
+    && channel.technical_status === "validated"
+    && !blockedPlaybackRights.has(channel.permission.status);
+}).length;
+const expectedScheduleCount = canonicalCatalogue.channels.filter((channel) =>
+  channel.epg_sources.some((source) => source.scraper_status === "implemented")
+).length;
+const expectedUpdatedDate = new Intl.DateTimeFormat("en", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${canonicalCatalogue.generated_on}T00:00:00Z`));
 const contentTypes = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",
@@ -99,10 +116,10 @@ try {
   assert.match(await page.locator(".hero-credit").innerText(), /Library of Congress · Public domain/);
   assert.match(await page.locator("#open-video-copy").innerText(), /streams such as HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
-  assert.equal(await page.locator("#metric-sources").innerText(), "84");
-  assert.equal(await page.locator("#metric-playable").innerText(), "45");
-  assert.equal(await page.locator("#metric-schedules").innerText(), "27");
-  assert.match(await page.locator("#metric-updated").innerText(), /Aug 17, 2026/);
+  assert.equal(await page.locator("#metric-sources").innerText(), String(canonicalCatalogue.channels.length));
+  assert.equal(await page.locator("#metric-playable").innerText(), String(expectedPlayableCount));
+  assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));
+  assert.equal(await page.locator("#metric-updated").innerText(), expectedUpdatedDate);
   assert.equal(await page.locator(".principles-index li").count(), 5);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
@@ -126,7 +143,7 @@ try {
   await page.locator("#locale-select").selectOption("en");
 
   const rows = page.locator(".channel-button");
-  assert.equal(await rows.count(), 84);
+  assert.equal(await rows.count(), canonicalCatalogue.channels.length);
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
   assert.match(await navarreFlag.getAttribute("src"), /assets\/flags\/navarre\.svg$/);

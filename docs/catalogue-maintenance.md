@@ -5,6 +5,18 @@
 cross-record invariants, dates, and the generated direct-file site snapshot stay
 coherent.
 
+## Which File Should I Edit?
+
+| Task | Start here | Notes |
+| --- | --- | --- |
+| Add a new source | `parliament-streams candidate-new` | Prefer a candidate record under `candidates/` until evidence is complete. |
+| Fix an existing channel | `parliament-streams show <id>` | Export or prepare one full channel object, then use `update --dry-run`. |
+| Change generated site data | `make site-data` | Do not hand-edit `site/catalogue-data.js`. |
+| Add now/next metadata | `epg_sources` plus a scraper | Use `planned` until the parser is implemented, registered, and tested. |
+| Record research context | `NOTES.md` | Move stable guidance into `docs/` when it becomes reusable. |
+| Check source rights | `docs/source-rights-and-permissions.md` | Technical playback and permission are separate decisions. |
+| Change the public site UI | `site/` | Run `npm run check:site` or `make verify`. |
+
 ## Setup And Inspection
 
 Install Python 3.11 or newer, `uv`, and the locked development environment:

@@ -4,10 +4,21 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-08-17
+## Unreleased - 2026-08-19
 
 ### Added
 
+- Canada House of Commons ParlVU and Canada Senate SenVu as official
+  event-platform link-out catalogue records with planned Harmony schedule/API
+  follow-up, while deliberately avoiding unvalidated direct-HLS claims.
+- A public architecture guide explaining source-of-truth files, generated
+  artifacts, runtime shape, source types, maintenance flow, schedule scrapers,
+  and validation entry points.
+- A README start-here section and workflow badges so GitHub visitors can quickly
+  understand the project shape and current automation health.
+- A catalogue-maintenance "Which file should I edit?" guide and clearer
+  contribution review gates for official provenance, technical stability,
+  metadata/accessibility, and rights.
 - A 1200 x 630 Open Graph and social-preview image, with explicit canonical,
   Open Graph, and Twitter metadata for GitHub Pages shares.
 - Promoted official Tweede Kamer Aletta Jacobszaal and Actualiteitenkanaal HLS
@@ -168,6 +179,9 @@ application. Earlier application work remains available in Git history.
 
 ### Fixed
 
+- The accessibility/browser site check now derives expected catalogue metrics
+  from `data/channels.json` instead of hard-coding counts that drift when new
+  sources are added.
 - Replaced an ambiguous bot-protection substring check with an explicit
   response-body pattern, resolving the CodeQL URL-sanitization finding without
   weakening the New Zealand schedule parser.
