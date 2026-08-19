@@ -1750,3 +1750,36 @@ Follow-up direct-playback decision:
 Updated review-queue outcome: pending rights fell from 36 to 35. The unresolved
 breakdown is now 21 official-vendor HLS, 8 official pages, 5 first-party HLS,
 and 1 DASH research record.
+
+## 2026-08-19 rights queue successor
+
+Created `reports/review-queues-2026-08-19-rights-next.json` as the current
+execution queue for the remaining rights work. After the Spain follow-up, it
+groups the 32 pending entries into:
+
+- 19 likely written-clarification cases;
+- 13 keep-pending-after-dated-search cases;
+- 0 unclassified cases.
+
+Rights outcomes from this pass:
+
+- British Columbia Legislature webcasts moved to
+  `explicit_reuse_with_conditions`: the Speaker's Hansard video guidelines
+  grant conditional permission to replay webcast video for schools, private
+  study, research, criticism, review, newspaper summary, and fair/accurate
+  broadcaster excerpts, while prohibiting distortion, partisan uses, and
+  commercial use or rebroadcast without express approval.
+- Andalusia Parliament TV Live moved to `no_third_party_reuse`: Parliament
+  web-use rules prohibit reproduction or distribution of portal material without
+  prior express consent and require prior conformity for links.
+- Spain Congreso/Canal Parlamento moved to `explicit_reuse_with_conditions`:
+  Congress legal notice allows reuse with attribution/integrity conditions; its
+  FAQ says the institutional signal is distributed free to media and citizens
+  and archived videos may be downloaded and used freely after sessions.
+- Council of Europe/PACE, Manitoba, and Saskatchewan remain pending with
+  improved evidence: each has public access or general reuse signals, but not
+  enough video-specific permission for third-party playback or redistribution.
+
+Updated review-queue outcome: pending rights fell from 35 to 32. The unresolved
+breakdown is now 20 official-vendor HLS, 6 official pages, 5 first-party HLS,
+and 1 DASH research record.

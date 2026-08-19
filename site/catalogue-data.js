@@ -831,12 +831,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official HLS candidate without recorded reuse permission.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Congress legal notice allows reuse of information on congreso.es when content is not altered, meaning is not distorted, source is cited, last-update date is mentioned, and use is diligent and lawful. The Congress FAQ says the institutional signal for Plenary and committee proceedings is distributed free to media and citizens through the web and Canal Parlamento, and that archived videos may be downloaded by debate or intervention and used freely after the session. This supports the prototype playback posture, while raw live-HLS reuse should still preserve source context and avoid implying broader authorization than the official pages describe.",
         "evidence": [
-          "https://www.congreso.es/"
+          "https://www.congreso.es/es/web/guest/cem/aviso-legal",
+          "https://www.congreso.es/es/cem/faqs",
+          "https://www.congreso.es/es/cem/mas-informacion",
+          "https://www.congreso.es/es/actualidad/canal-parlamento"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Native playback may remain enabled under the prototype opt-out policy with clear Congreso/Canal Parlamento attribution, no alteration or distortion, and source/date links. Prefer official Congreso en Directo, Canal Parlamento, or Archivo Audiovisual links for uses requiring fully documented reuse routes."
       },
       "validation_history": [
         {
@@ -5143,13 +5146,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Council of Europe audiovisual pages state PACE sessions and other major events are live-streamed, but Council of Europe/PACE pages returned 403 from parts of the 2026-08-14 validation environment and native stream reuse permission is not documented.",
+        "summary": "Council of Europe website permissions authorize some non-commercial website-material reproduction for private, informational, or educational use with source attribution, but audiovisual-material rights questions are directed to the Council of Europe audiovisual contacts. The audiovisual services page says PACE sessions are live-streamed and video files can be downloaded on request, so native playback or reuse still needs source-specific permission.",
         "evidence": [
           "https://www.coe.int/en/web/portal/live",
           "https://www.coe.int/en/web/portal/audiovisual-services1",
+          "https://www.coe.int/en/web/portal/copyright-licensing-permissions",
           "https://pace.coe.int/en/sessions/livestream"
         ],
-        "recommendation": "Keep as watchlist/link-out pending source-specific terms and current page access review."
+        "recommendation": "Keep as official link-out/watchlist pending audiovisual-specific permission or a documented embed route. Do not infer live-video reuse rights from general website text permissions."
       },
       "validation_history": [
         {
@@ -5515,12 +5519,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "The official page documents public House and committee webcasts, archives, and schedules, but this review did not locate terms expressly authorizing third-party playback or redistribution.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Speaker grants permission to replay webcast video of Legislature proceedings for schools and purposes such as private study, research, criticism, review, or newspaper summary. Broadcasters may use excerpts for fair and accurate news or public-affairs reports. Material may not be distorted or used for party-political advertising, election campaigns, or other partisan activity; other commercial use or rebroadcast requires express written approval.",
         "evidence": [
-          "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
+          "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+          "https://www.leg.bc.ca/parliamentary-business/broadcasts-and-webcasts/guidelines-for-use-of-hansard-video"
         ],
-        "recommendation": "Link to the official webcast page while direct playback and reuse terms remain unconfirmed."
+        "recommendation": "Link to the official webcast page and preserve Assembly/Hansard attribution. Reuse only under the Speaker guidelines; avoid distortion, partisan use, commercial use, or rebroadcast without express approval."
       },
       "validation_history": [
         {
@@ -5648,11 +5653,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The official service provides live Assembly and committee streams and archives, but explicit third-party playback or redistribution permission has not been recorded.",
+        "summary": "The official page documents live and archived Assembly proceedings, captioning, mobile playback, television availability, and television guidelines in the Assembly rules, but this pass did not locate terms expressly authorizing third-party playback, rebroadcast, or redistribution.",
         "evidence": [
-          "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/"
+          "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+          "https://www.legassembly.sk.ca/about/rules/"
         ],
-        "recommendation": "Link to the official proceedings page pending a source-specific rights statement."
+        "recommendation": "Link to the official proceedings page while third-party playback or redistribution permission remains undocumented."
       },
       "validation_history": [
         {
@@ -5712,11 +5718,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The Assembly supplies live and archived House and committee broadcasts for information, but this review did not locate clear third-party reuse terms.",
+        "summary": "The official House Broadcasts page provides live audio/video for information purposes and states that printed versions are the official record. Manitoba OpenMB terms support reuse of government information and data, but this review did not confirm that the live legislative audio/video broadcast is covered by that licence.",
         "evidence": [
-          "https://www.gov.mb.ca/legislature/business/house_broadcasts.html"
+          "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+          "https://manitoba.ca/legal/copyright.html"
         ],
-        "recommendation": "Link to the official broadcast page pending clarification of reuse and embedding permissions."
+        "recommendation": "Link to the official House Broadcasts page. Keep reuse pending unless Manitoba confirms the legislative broadcast is covered by OpenMB or another explicit video-use permission."
       },
       "validation_history": [
         {
@@ -6563,12 +6570,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "The Parliament provides a current live-programming page, weekly agenda, media archive, and official YouTube channel, but explicit third-party playback or redistribution terms have not been recorded.",
+        "status": "no_third_party_reuse",
+        "summary": "Parliament of Andalusia web-use rules state that portal materials are protected by intellectual-property law; access does not grant a licence for reproduction or distribution, which is prohibited without prior express consent. The rules also require prior conformity for links to portal content and express authorization for use of information on other Internet sites.",
         "evidence": [
-          "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do"
+          "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+          "https://www.parlamentodeandalucia.es/normas-de-uso"
         ],
-        "recommendation": "Link to the official live-programming page pending source-specific reuse terms."
+        "recommendation": "Link to the official live-programming page only. Do not embed, relay, reproduce, distribute, or reuse the stream without prior express consent from the Parliament."
       },
       "validation_history": [
         {

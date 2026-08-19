@@ -1,0 +1,706 @@
+{
+  "checked_on": "2026-08-19",
+  "catalogue_total": 86,
+  "summary": {
+    "pending_total": 32,
+    "permission_status": {
+      "embed_only": 4,
+      "explicit_reuse_with_conditions": 40,
+      "no_third_party_reuse": 10,
+      "noncommercial_pending_review": 6,
+      "personal_use_pending_review": 26
+    },
+    "pending_by_source_kind": {
+      "direct_dash_research": 1,
+      "first_party_hls": 5,
+      "official_page": 6,
+      "official_vendor_hls": 20
+    },
+    "prototype_policy": "Technically public HLS remains sufficient for native client-side playback unless recorded rights evidence requires link-out; pending direct streams stay visibly permission-pending."
+  },
+  "groups": {
+    "likely_needs_written_clarification": [
+      {
+        "id": "norway-stortinget",
+        "name": "Norway Stortinget",
+        "jurisdiction_level": "national",
+        "country_or_region": "Norway",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "httpcache1.dna.contentdelivery.net",
+        "official_url": "https://www.stortinget.no/nett-tv",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "netherlands-tweede-kamer",
+        "name": "Netherlands Tweede Kamer",
+        "jurisdiction_level": "national",
+        "country_or_region": "Netherlands",
+        "source_kind": "first_party_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "livestreaming.b67buv2.tweedekamer.nl",
+        "official_url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebat",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "israel-knesset-channel",
+        "name": "Israel Knesset Channel",
+        "jurisdiction_level": "national",
+        "country_or_region": "Israel",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "kneset.gostreaming.tv",
+        "official_url": "https://www.knesset.tv/live/",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "portugal-artv",
+        "name": "Portugal ARTV Canal Parlamento",
+        "jurisdiction_level": "national",
+        "country_or_region": "Portugal",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "playout172.livextend.cloud",
+        "official_url": "https://www.parlamento.pt/",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "greece-hellenic-parliament-tv",
+        "name": "Greece Hellenic Parliament TV",
+        "jurisdiction_level": "national",
+        "country_or_region": "Greece",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "ert-ucdn.broadpeak-aas.com",
+        "official_url": "https://www.hellenicparliament.gr/",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "india-sansad-tv-1",
+        "name": "India Sansad TV 1",
+        "jurisdiction_level": "national",
+        "country_or_region": "India",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "d2lk5u59tns74c.cloudfront.net",
+        "official_url": "https://sansadtv.nic.in/",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "india-sansad-tv-2",
+        "name": "India Sansad TV 2",
+        "jurisdiction_level": "national",
+        "country_or_region": "India",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "d2lk5u59tns74c.cloudfront.net",
+        "official_url": "https://sansadtv.nic.in/",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "ontario-house-en",
+        "name": "Ontario Legislative Assembly - House EN",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Ontario",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "noncommercial_pending_review",
+        "host": "origin-http-delivery.isilive.ca",
+        "official_url": "https://www.ola.org/en/legislative-business/video",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "ontario-house-en-cc",
+        "name": "Ontario Legislative Assembly - House EN CC",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Ontario",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "noncommercial_pending_review",
+        "host": "origin-http-delivery.isilive.ca",
+        "official_url": "https://www.ola.org/en/legislative-business/video",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "ontario-rm151-en",
+        "name": "Ontario Legislative Assembly - Room 151",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Ontario",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "noncommercial_pending_review",
+        "host": "origin-http-delivery.isilive.ca",
+        "official_url": "https://www.ola.org/en/legislative-business/video",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "ontario-committee-1-en",
+        "name": "Ontario Legislative Assembly - Committee 1",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Ontario",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "noncommercial_pending_review",
+        "host": "origin-http-delivery.isilive.ca",
+        "official_url": "https://www.ola.org/en/legislative-business/video",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "ontario-committee-2-en",
+        "name": "Ontario Legislative Assembly - Committee 2",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Ontario",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "noncommercial_pending_review",
+        "host": "origin-http-delivery.isilive.ca",
+        "official_url": "https://www.ola.org/en/legislative-business/video",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "ontario-media-en",
+        "name": "Ontario Legislative Assembly - Media Studio",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Ontario",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "noncommercial_pending_review",
+        "host": "origin-http-delivery.isilive.ca",
+        "official_url": "https://www.ola.org/en/legislative-business/video",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "nunavut-legislative-assembly-tv",
+        "name": "Nunavut Legislative Assembly TV",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Nunavut",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "temp2.isilive.ca",
+        "official_url": "https://www.assembly.nu.ca/webcasts",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "germany-bundestag-1",
+        "name": "Germany Bundestag 1",
+        "jurisdiction_level": "national",
+        "country_or_region": "Germany",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "cldf-hlsgw.r53.cdn.tv1.eu",
+        "official_url": "https://www.bundestag.de/mediathek",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "council-of-europe-pace-live",
+        "name": "Council of Europe / PACE Live",
+        "jurisdiction_level": "supranational",
+        "country_or_region": "Council of Europe",
+        "source_kind": "official_page",
+        "permission_status": "personal_use_pending_review",
+        "host": "www.coe.int",
+        "official_url": "https://www.coe.int/en/web/portal/live",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "manitoba-house-broadcasts",
+        "name": "Manitoba House Broadcasts",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Manitoba",
+        "source_kind": "official_page",
+        "permission_status": "personal_use_pending_review",
+        "host": "www.gov.mb.ca",
+        "official_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "netherlands-tweede-kamer-aletta-jacobszaal",
+        "name": "Netherlands Tweede Kamer Aletta Jacobszaal",
+        "jurisdiction_level": "national",
+        "country_or_region": "Netherlands",
+        "source_kind": "first_party_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "livestreaming.b67buv2.tweedekamer.nl",
+        "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      },
+      {
+        "id": "netherlands-tweede-kamer-actualiteitenkanaal",
+        "name": "Netherlands Tweede Kamer Actualiteitenkanaal",
+        "jurisdiction_level": "national",
+        "country_or_region": "Netherlands",
+        "source_kind": "first_party_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "livestreaming.b67buv2.tweedekamer.nl",
+        "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+      }
+    ],
+    "can_continue_public_terms_review": [],
+    "keep_pending_after_dated_search": [
+      {
+        "id": "brazil-tv-camara",
+        "name": "Brazil TV Camara",
+        "jurisdiction_level": "national",
+        "country_or_region": "Brazil",
+        "source_kind": "official_page",
+        "permission_status": "personal_use_pending_review",
+        "host": "www.camara.leg.br",
+        "official_url": "https://www.camara.leg.br/tv/aovivo",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "chile-camara-tv",
+        "name": "Chile Camara TV",
+        "jurisdiction_level": "national",
+        "country_or_region": "Chile",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "tls-cl.cdnz.cl",
+        "official_url": "https://www.camara.cl/prensa/television.aspx",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "luxembourg-chamber-tv",
+        "name": "Luxembourg Chamber TV",
+        "jurisdiction_level": "national",
+        "country_or_region": "Luxembourg",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "media02.webtvlive.eu",
+        "official_url": "https://www.chd.lu/",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "estonia-riigikogu-live-1",
+        "name": "Estonia Riigikogu Live 1",
+        "jurisdiction_level": "national",
+        "country_or_region": "Estonia",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "router.euddn.net",
+        "official_url": "https://www.riigikogu.ee/live/1/en",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "estonia-riigikogu-live-2",
+        "name": "Estonia Riigikogu Live 2",
+        "jurisdiction_level": "national",
+        "country_or_region": "Estonia",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "router.euddn.net",
+        "official_url": "https://www.riigikogu.ee/live/2/en",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "thailand-parliament-tv",
+        "name": "Thailand Parliament TV",
+        "jurisdiction_level": "national",
+        "country_or_region": "Thailand",
+        "source_kind": "first_party_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "tv-live.tpchannel.org",
+        "official_url": "https://tpchannel.org/",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "slovakia-tv-nrsr",
+        "name": "Slovakia TV NRSR",
+        "jurisdiction_level": "national",
+        "country_or_region": "Slovakia",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "n11.stv.livebox.sk",
+        "official_url": "https://www.nrsr.sk/",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "mongolia-parliament-tv",
+        "name": "Mongolia Parliament TV",
+        "jurisdiction_level": "national",
+        "country_or_region": "Mongolia",
+        "source_kind": "direct_dash_research",
+        "permission_status": "personal_use_pending_review",
+        "host": "cdn4.skygo.mn",
+        "official_url": "https://www.parliament.mn/",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "el-salvador-legislative-assembly",
+        "name": "El Salvador Legislative Assembly",
+        "jurisdiction_level": "national",
+        "country_or_region": "El Salvador",
+        "source_kind": "first_party_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "streaming.asamblea.gob.sv",
+        "official_url": "https://www.asamblea.gob.sv/",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "saskatchewan-legislative-proceedings",
+        "name": "Saskatchewan Legislative Proceedings",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Saskatchewan",
+        "source_kind": "official_page",
+        "permission_status": "personal_use_pending_review",
+        "host": "www.legassembly.sk.ca",
+        "official_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "northwest-territories-watch-session",
+        "name": "Northwest Territories Watch Session",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Northwest Territories",
+        "source_kind": "official_page",
+        "permission_status": "personal_use_pending_review",
+        "host": "www.ntlegislativeassembly.ca",
+        "official_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "navarre-parliament-live",
+        "name": "Navarre Parliament Live",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Navarre",
+        "source_kind": "official_page",
+        "permission_status": "personal_use_pending_review",
+        "host": "parlamentodenavarra.es",
+        "official_url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      },
+      {
+        "id": "jalisco-canal-parlamento",
+        "name": "Jalisco Canal Parlamento",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Jalisco",
+        "source_kind": "official_vendor_hls",
+        "permission_status": "personal_use_pending_review",
+        "host": "60417ddeaf0d9.streamlock.net",
+        "official_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+        "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+      }
+    ],
+    "unclassified": []
+  },
+  "direct_playback_if_stricter_policy_adopted": [
+    {
+      "id": "norway-stortinget",
+      "name": "Norway Stortinget",
+      "jurisdiction_level": "national",
+      "country_or_region": "Norway",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "httpcache1.dna.contentdelivery.net",
+      "official_url": "https://www.stortinget.no/nett-tv",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "netherlands-tweede-kamer",
+      "name": "Netherlands Tweede Kamer",
+      "jurisdiction_level": "national",
+      "country_or_region": "Netherlands",
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "livestreaming.b67buv2.tweedekamer.nl",
+      "official_url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebat",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "chile-camara-tv",
+      "name": "Chile Camara TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Chile",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "tls-cl.cdnz.cl",
+      "official_url": "https://www.camara.cl/prensa/television.aspx",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "israel-knesset-channel",
+      "name": "Israel Knesset Channel",
+      "jurisdiction_level": "national",
+      "country_or_region": "Israel",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "kneset.gostreaming.tv",
+      "official_url": "https://www.knesset.tv/live/",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "portugal-artv",
+      "name": "Portugal ARTV Canal Parlamento",
+      "jurisdiction_level": "national",
+      "country_or_region": "Portugal",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "playout172.livextend.cloud",
+      "official_url": "https://www.parlamento.pt/",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "greece-hellenic-parliament-tv",
+      "name": "Greece Hellenic Parliament TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Greece",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "ert-ucdn.broadpeak-aas.com",
+      "official_url": "https://www.hellenicparliament.gr/",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "luxembourg-chamber-tv",
+      "name": "Luxembourg Chamber TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Luxembourg",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "media02.webtvlive.eu",
+      "official_url": "https://www.chd.lu/",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "estonia-riigikogu-live-1",
+      "name": "Estonia Riigikogu Live 1",
+      "jurisdiction_level": "national",
+      "country_or_region": "Estonia",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "router.euddn.net",
+      "official_url": "https://www.riigikogu.ee/live/1/en",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "estonia-riigikogu-live-2",
+      "name": "Estonia Riigikogu Live 2",
+      "jurisdiction_level": "national",
+      "country_or_region": "Estonia",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "router.euddn.net",
+      "official_url": "https://www.riigikogu.ee/live/2/en",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "india-sansad-tv-1",
+      "name": "India Sansad TV 1",
+      "jurisdiction_level": "national",
+      "country_or_region": "India",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "d2lk5u59tns74c.cloudfront.net",
+      "official_url": "https://sansadtv.nic.in/",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "india-sansad-tv-2",
+      "name": "India Sansad TV 2",
+      "jurisdiction_level": "national",
+      "country_or_region": "India",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "d2lk5u59tns74c.cloudfront.net",
+      "official_url": "https://sansadtv.nic.in/",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "thailand-parliament-tv",
+      "name": "Thailand Parliament TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Thailand",
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "tv-live.tpchannel.org",
+      "official_url": "https://tpchannel.org/",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "slovakia-tv-nrsr",
+      "name": "Slovakia TV NRSR",
+      "jurisdiction_level": "national",
+      "country_or_region": "Slovakia",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "n11.stv.livebox.sk",
+      "official_url": "https://www.nrsr.sk/",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "mongolia-parliament-tv",
+      "name": "Mongolia Parliament TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Mongolia",
+      "source_kind": "direct_dash_research",
+      "permission_status": "personal_use_pending_review",
+      "host": "cdn4.skygo.mn",
+      "official_url": "https://www.parliament.mn/",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "ontario-house-en",
+      "name": "Ontario Legislative Assembly - House EN",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ontario",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "host": "origin-http-delivery.isilive.ca",
+      "official_url": "https://www.ola.org/en/legislative-business/video",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "ontario-house-en-cc",
+      "name": "Ontario Legislative Assembly - House EN CC",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ontario",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "host": "origin-http-delivery.isilive.ca",
+      "official_url": "https://www.ola.org/en/legislative-business/video",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "ontario-rm151-en",
+      "name": "Ontario Legislative Assembly - Room 151",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ontario",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "host": "origin-http-delivery.isilive.ca",
+      "official_url": "https://www.ola.org/en/legislative-business/video",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "ontario-committee-1-en",
+      "name": "Ontario Legislative Assembly - Committee 1",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ontario",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "host": "origin-http-delivery.isilive.ca",
+      "official_url": "https://www.ola.org/en/legislative-business/video",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "ontario-committee-2-en",
+      "name": "Ontario Legislative Assembly - Committee 2",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ontario",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "host": "origin-http-delivery.isilive.ca",
+      "official_url": "https://www.ola.org/en/legislative-business/video",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "ontario-media-en",
+      "name": "Ontario Legislative Assembly - Media Studio",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ontario",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "host": "origin-http-delivery.isilive.ca",
+      "official_url": "https://www.ola.org/en/legislative-business/video",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "nunavut-legislative-assembly-tv",
+      "name": "Nunavut Legislative Assembly TV",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Nunavut",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "temp2.isilive.ca",
+      "official_url": "https://www.assembly.nu.ca/webcasts",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "germany-bundestag-1",
+      "name": "Germany Bundestag 1",
+      "jurisdiction_level": "national",
+      "country_or_region": "Germany",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "cldf-hlsgw.r53.cdn.tv1.eu",
+      "official_url": "https://www.bundestag.de/mediathek",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "el-salvador-legislative-assembly",
+      "name": "El Salvador Legislative Assembly",
+      "jurisdiction_level": "national",
+      "country_or_region": "El Salvador",
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "streaming.asamblea.gob.sv",
+      "official_url": "https://www.asamblea.gob.sv/",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "jalisco-canal-parlamento",
+      "name": "Jalisco Canal Parlamento",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Jalisco",
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "60417ddeaf0d9.streamlock.net",
+      "official_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+      "reason": "Dated public search did not find enough source-specific reuse terms; keep visible as pending under the prototype opt-out playback posture where applicable."
+    },
+    {
+      "id": "netherlands-tweede-kamer-aletta-jacobszaal",
+      "name": "Netherlands Tweede Kamer Aletta Jacobszaal",
+      "jurisdiction_level": "national",
+      "country_or_region": "Netherlands",
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "livestreaming.b67buv2.tweedekamer.nl",
+      "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    },
+    {
+      "id": "netherlands-tweede-kamer-actualiteitenkanaal",
+      "name": "Netherlands Tweede Kamer Actualiteitenkanaal",
+      "jurisdiction_level": "national",
+      "country_or_region": "Netherlands",
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "host": "livestreaming.b67buv2.tweedekamer.nl",
+      "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
+    }
+  ],
+  "resolved_in_this_pass": [
+    {
+      "id": "british-columbia-legislature-webcasts",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Speaker guidelines grant conditional permission to replay Hansard webcast video for education, private study, research, criticism, review, and newspaper summary; broadcasters may use excerpts for fair and accurate reports."
+    },
+    {
+      "id": "andalusia-parliament-tv-live",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "Parliament web-use rules prohibit reproduction or distribution of portal material without prior express consent and require prior conformity for links."
+    },
+    {
+      "id": "spain-canal-parlamento",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Congress legal notice allows reuse with attribution/integrity conditions; FAQ says the institutional signal is distributed free to media and citizens and archived videos may be downloaded and used freely after sessions."
+    },
+    {
+      "id": "council-of-europe-pace-live",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "General website permissions exist, but audiovisual-material rights questions are directed to Council of Europe audiovisual contacts."
+    },
+    {
+      "id": "manitoba-house-broadcasts",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "House Broadcasts page is information-purpose only; OpenMB reuse terms were not confirmed to cover legislative audio/video."
+    },
+    {
+      "id": "saskatchewan-legislative-proceedings",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "Official proceedings page and rules document broadcast access and captions, but not third-party playback or redistribution permission."
+    }
+  ],
+  "recommended_next_actions": [
+    "Send short written-clarification requests for likely_needs_written_clarification entries, starting with Ontario/Nunavut, Norway, Germany, Netherlands, India, Israel, and Council of Europe/PACE.",
+    "Keep keep_pending_after_dated_search entries pending under the prototype policy; revisit during scheduled rights reviews or if source owners publish clearer terms.",
+    "If a stricter post-POC policy is adopted, use direct_playback_if_stricter_policy_adopted as the demotion review list."
+  ]
+}

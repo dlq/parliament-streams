@@ -113,35 +113,171 @@ Retired from the active project:
 - Apple-platform build/test/release workflow.
 - App-release checklist.
 
+## Next Milestones
+
+This section is the short execution plan. The detailed backlog below remains
+the source of context and constraints, but new work should generally start here.
+
+### 1. Rights Closure Pass
+
+Goal: reduce the remaining pending-rights queue while preserving the current
+proof-of-concept rule that technically public HLS may remain playable unless
+recorded source terms require link-out.
+
+Current queue: 32 of 86 catalogue entries still use a permission status ending
+in `pending_review`.
+
+Priority order:
+
+1. Review the 20 pending `official_vendor_hls` entries first, because they are
+   native-playback records and therefore carry the highest product risk.
+2. Review the 5 pending `first_party_hls` entries next, because official-hosted
+   direct feeds are the most valuable if terms can be clarified.
+3. Review the 6 pending `official_page` entries after that, because most of
+   them are link-out or fallback records and do not immediately affect native
+   playback.
+4. Keep the 1 pending `direct_dash_research` entry research-only unless source
+   ownership, rights, and Apple/web playback strategy are clarified.
+
+Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-2026-08-19-rights-next.json)
+as the current execution queue. It classifies the remaining pending entries as
+19 likely written-clarification cases and 13
+keep-pending-after-dated-search cases. No public-terms follow-up entries remain.
+
+Specific unresolved direct-playback groups:
+
+- Ontario and Nunavut iSi LIVE feeds: determine whether written clarification is
+  needed for full live-stream reuse beyond non-commercial excerpts and official
+  page linking.
+- Estonia Riigikogu: look for source-specific reuse terms for the two official
+  live rooms, or record that no terms were found after a dated pass.
+- Netherlands Tweede Kamer: decide whether recognised-media download/embed
+  guidance is enough for the prototype, or whether the raw HLS entries should
+  stay pending while official pages remain the safest route.
+- India Sansad TV, Thailand TPchannel, Israel Knesset Channel, Germany
+  Bundestag, Norway Stortinget, Spain Congreso, Portugal ARTV, Greece Hellenic
+  Parliament TV, Luxembourg Chamber TV, Slovakia TV NRSR, Chile Camara TV,
+  Jalisco Canal Parlamento, and El Salvador Legislative Assembly: keep each as
+  a source-specific review rather than inferring permission from public HLS.
+
+Exit criteria:
+
+- `docs/source-rights-and-permissions.md` explains every reviewed family.
+- `data/channels.json` statuses change only when official evidence supports the
+  change.
+- `reports/review-queues-2026-08-19.json` or its successor records the updated
+  counts and decisions.
+- `make verify` passes.
+
+### 2. Accessibility Evidence Pass
+
+Goal: replace unknown accessibility fields with cited evidence where official
+sources document captions, caption languages, sign-language interpretation, or
+audio description.
+
+Priority order:
+
+1. Caption/sign-language evidence for national and high-priority sub-national
+   entries that already publish accessibility or broadcast-access pages.
+2. Caption-language evidence for multilingual supranational records and
+   bilingual Canadian sources.
+3. Audio-description review as its own long-tail queue; do not treat missing
+   evidence as confirmed unavailability.
+
+Exit criteria:
+
+- Each changed `accessibility` field has an official evidence URL and a concise
+  note.
+- The accessibility issue and review-queue report have updated counts.
+- `make verify` passes.
+
+### 3. Event Resolver V2
+
+Goal: make official fallback links more useful without pretending that
+event-based pages are stable channel streams.
+
+Priority order:
+
+1. ParlVU and SenVu active-event URLs, archive links, language state, and
+   committee/chamber labels from supported Harmony surfaces.
+2. Official YouTube live-page resolution for current/upcoming event IDs, without
+   extracting YouTube manifests or requiring a public API key.
+3. HouseLive, C-SPAN, Parliamentlive.tv, and similar official event pages with
+   stable identifiers and rights-aware display rules.
+
+Exit criteria:
+
+- Fallback records can show stable event identifiers or official active links
+  when available.
+- No event-specific or off-air manifest is promoted as a permanent channel.
+- The public site clearly distinguishes channel playback, official link-out,
+  fallback events, and research-only sources.
+
+### 4. Catalogue Schema Cleanup
+
+Goal: make the data model easier to maintain before expanding coverage.
+
+Priority order:
+
+1. Separate source discovery state from permission status so "found", "publicly
+   reachable", "validated", "playable by project policy", and "licensed/allowed"
+   are not collapsed into one field.
+2. Replace free-form `language` values with structured language codes and
+   display labels.
+3. Add schema coverage for generated reports beyond the existing channel,
+   fallback, validation-history, permission, and EPG definitions.
+4. Consider normalizing repeated permission summaries into
+   `data/permissions.json` only if inline review becomes noisy.
+
+Exit criteria:
+
+- Existing catalogue entries migrate through tooling, not broad hand edits.
+- Site labels continue to make playback, link-out, fallback, and research
+  posture obvious.
+- `make verify` and generated site-data drift checks pass.
+
+### 5. Coverage Expansion
+
+Goal: add sources deliberately rather than growing a weak directory.
+
+Priority order:
+
+1. Close the remaining Tier 1 national gaps before broad Tier 3 work.
+2. Add sub-national entries only when the institution has an official live or
+   archive page, a stable identity, a schedule surface or event semantics, and a
+   source-specific rights note.
+3. Treat supranational bodies as their own family if the country-level schema
+   starts to distort search, filters, or identity links.
+
+Exit criteria:
+
+- New sources start as candidates or fallbacks unless they have a stable channel
+  identity and a supportable playback/link-out posture.
+- Discovery reports and notes record unsuccessful searches, not only successes.
+
 ## Catalogue Work
 
 Near-term:
 
-1. Split repeated permission summaries into a normalized `data/permissions.json`
-   only if the inline channel entries become hard to review.
-2. Complete schema coverage for generated reports beyond the existing channel,
-   fallback, permission, validation-history, and EPG definitions.
-3. Revisit first-party versus official-vendor classifications during future
+1. Revisit first-party versus official-vendor classifications during future
    source reviews and tighten any conservative defaults.
-4. Use `stability_risk` in automated audit prioritization and in any future
+2. Use `stability_risk` in automated audit prioritization and in any future
    reviewer queues.
-5. Make the schema distinguish source discovery from permission status, because
-   a stream can be technically reachable but unsuitable for redistribution.
-6. Expand event resolver behavior for `data/fallbacks.json`: ParlVU and SenVu
+3. Expand event resolver behavior for `data/fallbacks.json`: ParlVU and SenVu
    can now surface collected Harmony now/next metadata beside fallback links,
    but active event URLs, archive enrichment, HouseLive, C-SPAN,
    Parliamentlive.tv, and official YouTube live pages still need stable event
    identifiers and rights-aware display rules. Promote a fallback into
    `data/channels.json` only when it has a stable channel identity and a
    supportable playback or link-out posture.
-7. Decide whether supranational institutions need a separate `entity_type` or
+4. Decide whether supranational institutions need a separate `entity_type` or
    `institution_family` field, because they are not country-level legislatures.
-8. Define separate expansion criteria for sub-national institutions before
+5. Define separate expansion criteria for sub-national institutions before
    adding official-page/link-out entries beyond the current curated set.
-9. Evaluate GovDirectory as a discovery and deduplication aid for official
+6. Evaluate GovDirectory as a discovery and deduplication aid for official
     websites and social channels. Keep it separate from stream, schedule, and
     rights authority, as with the completed Wikidata integration.
-10. Canada federal ParlVU/SenVu has been added to the catalogue as official
+7. Canada federal ParlVU/SenVu has been added to the catalogue as official
     event-platform link-out entries. Keep it separate from CPAC because CPAC is a
     broadcaster/channel partner, while Harmony is the closer official House and
     Senate proceedings surface. Landing-page upcoming-event scraping is
@@ -364,10 +500,10 @@ Near-term:
 
 Current measurable review queues as of 2026-08-19:
 
-- 35 of 86 catalogue entries still use a permission status ending in
+- 32 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 21 official-vendor HLS, 8 official pages, 5 first-party HLS, and
+  Breakdown: 20 official-vendor HLS, 6 official pages, 5 first-party HLS, and
   1 DASH research record.
 - All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep

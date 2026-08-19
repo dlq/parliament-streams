@@ -38,11 +38,11 @@
     },
     {
       "status": "explicit_reuse_with_conditions",
-      "count": 38
+      "count": 40
     },
     {
       "status": "no_third_party_reuse",
-      "count": 9
+      "count": 10
     },
     {
       "status": "noncommercial_pending_review",
@@ -50,7 +50,7 @@
     },
     {
       "status": "personal_use_pending_review",
-      "count": 29
+      "count": 26
     }
   ],
   "pending_permission_by_source_kind": [
@@ -64,11 +64,11 @@
     },
     {
       "source_kind": "official_page",
-      "count": 8
+      "count": 6
     },
     {
       "source_kind": "official_vendor_hls",
-      "count": 21
+      "count": 20
     }
   ],
   "unknown_accessibility_by_level": [
@@ -180,12 +180,47 @@
       "id": "prototype-direct-hls-policy",
       "outcome": "playback_policy_confirmed",
       "reason": "For the current proof of concept, technically public HLS remains sufficient for native client-side playback unless recorded rights evidence requires link-out; pending direct streams stay visibly permission-pending rather than being silently demoted."
+    },
+    {
+      "id": "british-columbia-legislature-webcasts",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Speaker guidelines grant conditional permission to replay Hansard webcast video for education, private study, research, criticism, review, and newspaper summary; broadcasters may use excerpts for fair and accurate reports."
+    },
+    {
+      "id": "andalusia-parliament-tv-live",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "Parliament web-use rules prohibit reproduction or distribution of portal material without prior express consent and require prior conformity for links."
+    },
+    {
+      "id": "council-of-europe-pace-live",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "General website permissions exist, but audiovisual-material rights questions are directed to Council of Europe audiovisual contacts."
+    },
+    {
+      "id": "manitoba-house-broadcasts",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "House Broadcasts page is information-purpose only; OpenMB reuse terms were not confirmed to cover legislative audio/video."
+    },
+    {
+      "id": "saskatchewan-legislative-proceedings",
+      "outcome": "kept_pending_review_rights_evidence_improved",
+      "reason": "Official proceedings page and rules document broadcast access and captions, but not third-party playback or redistribution permission."
+    },
+    {
+      "id": "rights-next-queue",
+      "outcome": "successor_queue_created",
+      "reason": "reports/review-queues-2026-08-19-rights-next.json groups the remaining 32 pending entries into likely written clarification, keep-pending-after-dated-search, and stricter-policy direct-playback review lists; there are no remaining public-terms follow-up entries."
+    },
+    {
+      "id": "spain-canal-parlamento",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Congress legal notice allows reuse with attribution/integrity conditions; FAQ says the institutional signal is distributed free to media and citizens and archived videos may be downloaded and used freely after sessions."
     }
   ],
   "recommended_order": [
-    "Review shared official-vendor rights families first, because 22 pending records use official-vendor HLS.",
-    "Review first-party HLS records next, because they are easiest to reason about technically and most valuable for playback confidence.",
-    "Review official-page fallback records after the fallback dataset stabilizes, because many should remain link-out regardless of direct playback evidence.",
+    "Use reports/review-queues-2026-08-19-rights-next.json as the rights execution queue.",
+    "Send written-clarification requests for likely_needs_written_clarification entries, starting with Ontario/Nunavut, Norway, Germany, Netherlands, India, Israel, and Council of Europe/PACE.",
+    "Keep dated-search pending entries visible under the prototype opt-out playback policy unless source owners publish clearer terms or a stricter post-POC policy is adopted.",
     "For accessibility, start with sources that already claim captions or interpretation in the catalogue, then replace unknown fields only with cited official evidence."
   ],
   "validation_history_coverage": {
