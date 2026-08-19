@@ -177,7 +177,8 @@ try {
   assert.match(await page.locator(".fallback-record").innerText(), /Now: House of Commons sitting/);
   assert.match(await page.locator(".fallback-record").innerText(), /Next: Finance committee/);
   assert.match(await page.locator(".fallback-record a").getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
-  assert.match(await page.locator(".validation-record").innerText(), /No retained validation report yet/);
+  assert.match(await page.locator(".validation-record").innerText(), /LATEST VALIDATION/);
+  assert.match(await page.locator(".validation-record").innerText(), /Access status OK/);
 
   const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
   await europarlRow.click();

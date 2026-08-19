@@ -1,0 +1,3724 @@
+{
+  "generated_at": "2026-08-19T17:49:57Z",
+  "counts": {
+    "reachable": 189,
+    "access_blocked": 17,
+    "not_found": 2,
+    "error": 14,
+    "links": 222
+  },
+  "links": [
+    {
+      "url": "https://audiovisual.ec.europa.eu/en",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "b7b6f8132a09359e6b0e897e50fe158245e05a7aaa6e958ee539d9ae087f9685",
+      "final_url": "https://audiovisual.ec.europa.eu/en",
+      "attempts": 1,
+      "channel_ids": [
+        "eu-audiovisual-ebs"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "application/x-mpegURL",
+      "response_bytes": 190,
+      "body_sha256": "bd7bc7960915927277bcb8c9e0650d13562f9bf54eacc6e45a191b684b137d4d",
+      "final_url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+      "attempts": 1,
+      "channel_ids": [
+        "germany-bundestag-1"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/AU/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "37c4a7e3fbb3a77885225bd2b2cd4234bd547e62e0dca1f6fa401543df7dfbde",
+      "final_url": "https://data.ipu.org/parliament/AU/AU-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/BR/BR-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "3a323e23324ff4966bbd533a7de93471fe2d525f928dd0fd8444b28c9f967b34",
+      "final_url": "https://data.ipu.org/parliament/BR/BR-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "brazil-tv-camara"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/CA/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "1396b220391aa306f0a394826ec3b48006e842378adce2d919907f9e5a84ba7c",
+      "final_url": "https://data.ipu.org/parliament/CA/CA-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "cpac-ca"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/CA/CA-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "5e3cd56c7fc934519d022822264cb026de22ad41aaee2b3984c01e995afeaca7",
+      "final_url": "https://data.ipu.org/parliament/CA/CA-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/CA/CA-UC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "473d3ac8b771711a4d19b60a2e6d84e180d4806932e1c24c5eb4ef860a6766b5",
+      "final_url": "https://data.ipu.org/parliament/CA/CA-UC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/CL/CL-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "ef76672ef634642e07667a657b454ab790b3504c9d3dd6837d39acdc3b8e0062",
+      "final_url": "https://data.ipu.org/parliament/CL/CL-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "chile-camara-tv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/CR/CR-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "c683941a1559bf0896fb0e10afe6785000a109d110273f1c267fa6cc155865d6",
+      "final_url": "https://data.ipu.org/parliament/CR/CR-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/DE/DE-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "b20cd0d6485f32fffd99b632cee690b628219890390c4fa7211bcff76a6f0339",
+      "final_url": "https://data.ipu.org/parliament/DE/DE-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "germany-bundestag-1"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/DK/DK-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "ccfb99ef9bb7efd48c5d690ebe6372e73da2da5715cc7267db6b3b7538cdf6ae",
+      "final_url": "https://data.ipu.org/parliament/DK/DK-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "denmark-folketinget"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/EE/EE-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "7441ab52893f8a2f2cb24998ccec48962a123d7bc86fe3dc3a1404e6eac8cd94",
+      "final_url": "https://data.ipu.org/parliament/EE/EE-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "06b9c5e721d4323ed85f075c9167871476f008d7071a9c67c61b347a9c97599d",
+      "final_url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "spain-canal-parlamento",
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/FR/FR-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "4f71787cf32ebe7a07e038fd61d9bb3fc2ec70952bd1b74821bc1e297ca5171f",
+      "final_url": "https://data.ipu.org/parliament/FR/FR-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "france-national-assembly"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/GB/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "9e83684aec2635cad44b8b8d1ff6e00c570eba1c24cffc08ace3f43af52070a0",
+      "final_url": "https://data.ipu.org/parliament/GB/GB-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/GR/GR-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "264916bf61d85b9f7f57345fbce7e27365006e2d083472061258aa23f66d4bef",
+      "final_url": "https://data.ipu.org/parliament/GR/GR-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/IE/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "4c7939e4188e3e317ed84f43d780320de67cfedb3d2952774f674e90adf51fcf",
+      "final_url": "https://data.ipu.org/parliament/IE/IE-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/IL/IL-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "471468f6b15918c7bb22776a09bd8bc47ed1e1958dc5555d40e5cf6296cf53c2",
+      "final_url": "https://data.ipu.org/parliament/IL/IL-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/IN/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "9e2e438fbf61d74e61a420cd0d5c18b5e67f6ff0180f8f90d3fff89cfd5d478b",
+      "final_url": "https://data.ipu.org/parliament/IN/IN-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/IT/IT-UC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "0172fa605b3513d6c8a045b97fbc5276956e9f6f26b48278ff9ef05a53cdbd81",
+      "final_url": "https://data.ipu.org/parliament/IT/IT-UC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "italy-senate"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/LU/LU-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "4c93b5494a918337aea5c00c5feae8cd51998cf657c16df6da0cb62c00dbaeca",
+      "final_url": "https://data.ipu.org/parliament/LU/LU-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "luxembourg-chamber-tv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/MN/MN-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "fc4f4607fef3f669eb790c813217277a3b7bc85dd726ab3e2202e20611a178ae",
+      "final_url": "https://data.ipu.org/parliament/MN/MN-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "mongolia-parliament-tv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/NL/NL-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "684955cb58203fed572ef592235a1ed3c75abef6dfe0a7921ec8e6595e7fd232",
+      "final_url": "https://data.ipu.org/parliament/NL/NL-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-actualiteitenkanaal",
+        "netherlands-tweede-kamer-aletta-jacobszaal"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/NO/NO-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "520ba0403b3191e9c4b43249545ffebab99d7d0952a5aa986f52d578110589f7",
+      "final_url": "https://data.ipu.org/parliament/NO/NO-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "norway-stortinget"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/NZ/NZ-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "56ae9b4da0791906e8296fc6fbc91cbb7ef0f64095bab6e60913b66f3a74a819",
+      "final_url": "https://data.ipu.org/parliament/NZ/NZ-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/PT/PT-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "0f878a173f747887086725a867a141ffc3a4fdd69ce66ab9ab810197d0a496df",
+      "final_url": "https://data.ipu.org/parliament/PT/PT-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "portugal-artv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/SK/SK-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "ff6772d532f9bc5fc97cf25c168d300f63170083f6aed9d07909e411efc4321a",
+      "final_url": "https://data.ipu.org/parliament/SK/SK-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/SV/SV-LC01/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "b10c27df5709e8f2e9686e4adeae9ab64ff1e89c0b63a7eaaffa428134eb086a",
+      "final_url": "https://data.ipu.org/parliament/SV/SV-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "el-salvador-legislative-assembly"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://data.ipu.org/parliament/TH/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "101af7647119ccb3694ab9b5a26cac5a9b42b0f2b0382a3d0e6f39a92452b0d3",
+      "final_url": "https://data.ipu.org/parliament/TH/TH-LC01/",
+      "attempts": 1,
+      "channel_ids": [
+        "thailand-parliament-tv"
+      ],
+      "roles": [
+        "identity_ipu_parline"
+      ]
+    },
+    {
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "application/vnd.apple.mpegurl",
+      "response_bytes": 1029,
+      "body_sha256": "b1736e3e76e9fd18eb023dddc9a281ee4910eab42432da2de5fc8066b77f2b4e",
+      "final_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+      "attempts": 1,
+      "channel_ids": [
+        "norway-stortinget"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "application/vnd.apple.mpegurl",
+      "response_bytes": 127,
+      "body_sha256": "ddb1c5fc521a0974d7d94254ced43552076b3a0d1df90d3f644bc3ff1ee1da88",
+      "final_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+      "attempts": 1,
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://media.un.org/en",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 73441,
+      "body_sha256": "16d578d6f1ba69c4ab6fa9ad679964cb9b0935d892f151a25cb7e701cd7a38ab",
+      "final_url": "https://media.un.org/en",
+      "attempts": 1,
+      "channel_ids": [
+        "un-web-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://mediateca.cortsvalencianes.es/live",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html",
+      "response_bytes": 26663,
+      "body_sha256": "6c101c86ecf2ff2039681ce22ca9b12646ce28b6518c20efec6847ec7ba3c804",
+      "final_url": "https://mediateca.cortsvalencianes.es/live",
+      "attempts": 1,
+      "channel_ids": [
+        "valencia-canal-corts"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+      "status": "reachable",
+      "http_status": 202,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+      "attempts": 1,
+      "channel_ids": [
+        "european-parliament-multimedia-centre"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://niassembly.tv/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 128252,
+      "body_sha256": "525860c64249bdc4715059c923ce823ebe29e886a15a7e246221206ba168198f",
+      "final_url": "https://niassembly.tv/",
+      "attempts": 1,
+      "channel_ids": [
+        "northern-ireland-assembly-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://niassembly.tv/calendar/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 108983,
+      "body_sha256": "ad7b3d7a2eafdff967eb72c7e994779d94c6ab47d2500b3477480f611397ea19",
+      "final_url": "https://niassembly.tv/calendar/",
+      "attempts": 1,
+      "channel_ids": [
+        "northern-ireland-assembly-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://pace.coe.int/en/sessions/livestream",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5618,
+      "body_sha256": null,
+      "final_url": "https://pace.coe.int/en/sessions/livestream",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-europe-pace-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5616,
+      "body_sha256": null,
+      "final_url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
+      "attempts": 1,
+      "channel_ids": [
+        "navarre-parliament-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://parlamentodenavarra.es/sites/default/files/contenido-estatico-archivos/Anexo%20III%20soporte%20web.pdf",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5863,
+      "body_sha256": null,
+      "final_url": "https://parlamentodenavarra.es/sites/default/files/contenido-estatico-archivos/Anexo%20III%20soporte%20web.pdf",
+      "attempts": 1,
+      "channel_ids": [
+        "navarre-parliament-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "12ef38915aceb74a5b85de1f0802cb84c5f7703238e3760eca3edc3656f34c6c",
+      "final_url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "ba5a2d1a75ce3ee14934bba83309f6cc5129ef520d111270f0f488839b8152fe",
+      "final_url": "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv",
+      "attempts": 1,
+      "channel_ids": [
+        "thailand-parliament-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://sansad.in/rs/privacyPolicy",
+      "status": "error",
+      "http_status": 500,
+      "content_type": "text/html",
+      "response_bytes": 19,
+      "body_sha256": null,
+      "final_url": "https://sansad.in/rs/privacyPolicy",
+      "attempts": 1,
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://sansadtv.nic.in/",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://sansadtv.nic.in/about-us",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://sencanada.ca/en/intellectual-property/#permission",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 54696,
+      "body_sha256": "762d20f5238435bfd7fe704d36e2dd07a8ddb57a5961c0577f63605c77c75607",
+      "final_url": "https://sencanada.ca/en/intellectual-property/#permission",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://sencanada.ca/en/newsroom/the-speaker-of-the-senate-senate-chamber-launches-video-broadcasting/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 58149,
+      "body_sha256": "4846a4e4894146b41e5437bcfde7c65d4194815aec47f835805dc80276c30d19",
+      "final_url": "https://sencanada.ca/en/newsroom/the-speaker-of-the-senate-senate-chamber-launches-video-broadcasting/",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://senedd.wales/calendar",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 103473,
+      "body_sha256": "f63caf3764e30413465299a519112d6bf834b7d62976e9b10f5dc45fc35cdc17",
+      "final_url": "https://senedd.wales/calendar",
+      "attempts": 1,
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://senedd.wales/commission/access-to-information/copyright/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 124635,
+      "body_sha256": "fc50a4f474085fd45552dd249929a805afe990092f477476743e1b89d68a84a6",
+      "final_url": "https://senedd.wales/commission/access-to-information/copyright/",
+      "attempts": 1,
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://senedd.wales/media/images-and-video/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 104247,
+      "body_sha256": "2e43e371189f20e483332b57b942396e7ff869e8af153b452a5fe3b09fd0537b",
+      "final_url": "https://senedd.wales/media/images-and-video/",
+      "attempts": 1,
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 230268,
+      "body_sha256": "3b97eb790bb5597cf9f8996ea66a841a4fb1257ef561b8710d7d90f6345803e7",
+      "final_url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "el-salvador-legislative-assembly"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://support.google.com/youtube/answer/171780",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "2ae399601a4918cfc0fdcd80060884332a2f56ce992176f4f6d84f7db23b1514",
+      "final_url": "https://support.google.com/youtube/answer/171780",
+      "attempts": 1,
+      "channel_ids": [
+        "australia-parliament-youtube",
+        "costa-rica-assembly-youtube",
+        "uk-parliament-youtube"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "application/vnd.apple.mpegurl",
+      "response_bytes": 140,
+      "body_sha256": "9395f9391e802cc13e42243c10eaa4e0820770408911a4a037c7f79f39ce6a6e",
+      "final_url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+      "attempts": 1,
+      "channel_ids": [
+        "chile-camara-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://tpchannel.org/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 4191,
+      "body_sha256": "f4ad0194af0421e6e9ca8367320e9eb2cac059600efea19d6f21a6d6cbdfcfa7",
+      "final_url": "https://tpchannel.org/",
+      "attempts": 1,
+      "channel_ids": [
+        "thailand-parliament-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://video.consilium.europa.eu/home/en",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 68522,
+      "body_sha256": "f0230f05fa024b43ff0b1071b0d22c15024536bd398fbf218e2044041cabc73b",
+      "final_url": "https://video.consilium.europa.eu/home/en",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-eu-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://video.isilive.ca/nunavut/live-eng.html",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html",
+      "response_bytes": 6970,
+      "body_sha256": "93f90d789c42c39e12d30d545241d59fd0c58095fb822efb6de46b8cfab3aadc",
+      "final_url": "https://video.isilive.ca/nunavut/live-eng.html",
+      "attempts": 1,
+      "channel_ids": [
+        "nunavut-legislative-assembly-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://videos.assemblee-nationale.fr/direct.php",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 7736,
+      "body_sha256": "cf751168d566de85398d2110fb15c2f16bd132f202050d2e19c30535233cd0b2",
+      "final_url": "https://videos.assemblee-nationale.fr/direct.php",
+      "attempts": 1,
+      "channel_ids": [
+        "france-national-assembly"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://videos.parliament.nz/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 4460,
+      "body_sha256": "7ba855c511d876908c98897633820956fa549d2e0b60df259afec191518682fb",
+      "final_url": "https://videos.parliament.nz/",
+      "attempts": 1,
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://webtv.senato.it/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 44529,
+      "body_sha256": "bc91c03b6f2dd827b26282ce66abd1914e8b2c8cc9c815dcabb070da5685c81e",
+      "final_url": "https://webtv.senato.it/webtv",
+      "attempts": 1,
+      "channel_ids": [
+        "italy-senate"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://webtv.un.org/en/schedule",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 157881,
+      "body_sha256": "75978be648ff5f0fab50c9e960e0731b97bf6e741b81376ed1d969adb200380d",
+      "final_url": "https://webtv.un.org/en/schedule",
+      "attempts": 1,
+      "channel_ids": [
+        "un-web-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.asamblea.gob.sv/",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "el-salvador-legislative-assembly"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assemblee-nationale.fr/dyn/info-site",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 73549,
+      "body_sha256": "a38b9be7cd21613f874c5de972a4e3466e41a219c5546d4d6569e5607d0afaaa",
+      "final_url": "https://www.assemblee-nationale.fr/dyn/info-site",
+      "attempts": 1,
+      "channel_ids": [
+        "france-national-assembly"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 97048,
+      "body_sha256": "e12b74a7c9574d56bb11bea279f295abecd34e41c84c6d7dc4fb08d65f7971d2",
+      "final_url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "attempts": 1,
+      "channel_ids": [
+        "alberta-assembly-online"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.assembly.ab.ca/terms-of-use-for-audio-and-video-recordings",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 73901,
+      "body_sha256": "2c31caaf48d1e044cbd845ea1a794c07860ffbcf196d21fde6237ac4ad6ca413",
+      "final_url": "https://www.assembly.ab.ca/terms-of-use-for-audio-and-video-recordings",
+      "attempts": 1,
+      "channel_ids": [
+        "alberta-assembly-online"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assembly.nl.ca/CopyrightPrivacyStatement.aspx",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 19713,
+      "body_sha256": "f7cae9b1840880a50f24a9731c5214ad9e8378acf62ecbc7b3d60f1199f4064f",
+      "final_url": "https://www.assembly.nl.ca/CopyrightPrivacyStatement.aspx",
+      "attempts": 1,
+      "channel_ids": [
+        "newfoundland-labrador-house-webcast"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 16007,
+      "body_sha256": "efd2fdbead7651030f53cd5b70bb888e12e89d5837993aece16a842a42fbb6b7",
+      "final_url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
+      "attempts": 1,
+      "channel_ids": [
+        "newfoundland-labrador-house-webcast"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.assembly.nu.ca/webcasts",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 63330,
+      "body_sha256": "13d1a36e3191a9d803d5738b0a44d7bbb79d5737b0c31d9dfcf3f9ed91bef627",
+      "final_url": "https://www.assembly.nu.ca/webcasts",
+      "attempts": 1,
+      "channel_ids": [
+        "nunavut-legislative-assembly-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assembly.pe.ca/copyright",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 15048,
+      "body_sha256": "979b01830861a22507bb11b78bf2b41d4fc8a0a062ffee7763995fefe9eefc44",
+      "final_url": "https://validate.perfdrive.com/?ssa=97145aef-7751-40a4-af9d-630bf1d1574c&ssb=97255215668&ssc=https%3A%2F%2Fwww.assembly.pe.ca%2Fcopyright&ssi=74ad4611-djty-4e68-8bee-4a1afc28acac&ssk=botmanager_support@radware.com&ssm=78034416875296781106981782371409&ssn=7b3cb8f7ba6df397add1e3202c88fbf1606c173e4bdc-ba2c-4fab-8c6b12&sso=075556fb-a5046b4230ea4453f1cf0a675954d4be37c467c2643205fc&ssp=41916631651787189698178719546843123&ssq=30636936178359189785461783144273625747147&ssr=MjQuMjAyLjcyLjE0Mw==&sst=parliament-streams-healthcheck/0.1%20(+https://github.com/dlq/parliament-streams)&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImFzc2VtYmx5LnBlLmNhIiwiX191em1mIjoiN2Y5MDAwMTczZTRiZGMtYmEyYy00ZmFiLTg2ZmItYTUwNDZiNDIzMGVhMS0xNzg3MTYxNzgzNzExMC0wMDNlZjVkMTVjYWQyZjkwYjY0MTAiLCJ1em14IjoiN2ZjMDAwNzRmOWRhMWMtMGFkZi00ZjIyLWIyYWItZGU5YzZhMTIwYjhkMS0xNzg3MTYxNzgzNzEwMC0wMDE0M2IyMzNmOTNmOTMxMzdhMTAifQ==",
+      "attempts": 1,
+      "channel_ids": [
+        "prince-edward-island-assembly-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assembly.pe.ca/watch-live",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 15049,
+      "body_sha256": "23d6c19ed0f7310e4e9d8529c0852bc8aea1047ef09147357cfc171e1ba0cbf8",
+      "final_url": "https://validate.perfdrive.com/?ssa=e675e9f5-8b51-45c1-b20d-923c894daf91&ssb=97255215668&ssc=https%3A%2F%2Fwww.assembly.pe.ca%2Fwatch-live&ssi=253bf4be-djty-4691-89c0-0dd6aa27b09d&ssk=botmanager_support@radware.com&ssm=78034416875296781106981782371409&ssn=7b3cb8f7cf8b7dccbf1c27b94b1efbf1606c3c3f7be6-7da7-460b-8c6b12&sso=07555e72-e4182561561d4453f1cf698301d62b47476e5f2e643205fc&ssp=41916631651787189698178719546843123&ssq=30636936178359189785461783144273625747147&ssr=MjQuMjAyLjcyLjE0Mw==&sst=parliament-streams-healthcheck/0.1%20(+https://github.com/dlq/parliament-streams)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzRiMGMwZjctYzViNC00OGE5LWI2NDUtNzg1NjAzYjFhZjc4MS0xNzg3MTYxNzgzODUzMC0wMDFlMTYwYjgwZjJlN2Y5YTgxMTAiLCJfX3V6bWYiOiI3ZjkwMDAzYzNmN2JlNi03ZGE3LTQ2MGItOGU3Mi1lNDE4MjU2MTU2MWQxLTE3ODcxNjE3ODM4NTQwLTAwMzUyNzUxNTJlZGY4ZTMyY2MxMCIsInJkIjoiYXNzZW1ibHkucGUuY2EifQ==",
+      "attempts": 1,
+      "channel_ids": [
+        "prince-edward-island-assembly-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "quebec-canal01",
+        "quebec-canal02",
+        "quebec-canal03",
+        "quebec-canal04",
+        "quebec-canal05",
+        "quebec-canal06",
+        "quebec-canal07",
+        "quebec-canal08",
+        "quebec-canal09",
+        "quebec-canal10",
+        "quebec-canal11",
+        "quebec-canal12",
+        "quebec-canal13",
+        "quebec-canal14"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "quebec-canal01",
+        "quebec-canal02",
+        "quebec-canal03",
+        "quebec-canal04",
+        "quebec-canal05",
+        "quebec-canal06",
+        "quebec-canal07",
+        "quebec-canal08",
+        "quebec-canal09",
+        "quebec-canal10",
+        "quebec-canal11",
+        "quebec-canal12",
+        "quebec-canal13",
+        "quebec-canal14"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 16697,
+      "body_sha256": "843104c5da5d83e0ea9ace11587b3f540052c130136a470ee8e968e4578a324e",
+      "final_url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+      "attempts": 1,
+      "channel_ids": [
+        "bavaria-landtag-plenum-online"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.bayern.landtag.de/service/datenschutz/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 44440,
+      "body_sha256": "a79ceadee99b5957978f26bf0848f7a8e98678e8c8f393d037e4a00930ce16b9",
+      "final_url": "https://www.bayern.landtag.de/service/datenschutz/",
+      "attempts": 1,
+      "channel_ids": [
+        "bavaria-landtag-plenum-online"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.bundestag.de/mediathek",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "germany-bundestag-1"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.camara.cl/prensa/television.aspx",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5835,
+      "body_sha256": null,
+      "final_url": "https://www.camara.cl/prensa/television.aspx",
+      "attempts": 1,
+      "channel_ids": [
+        "chile-camara-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.camara.leg.br/tv/aovivo",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 33892,
+      "body_sha256": "7ff7c548bf44a7ca2b78a3cecd8c883866bd83cf856d7ba92844e3d9e46af5fb",
+      "final_url": "https://www.camara.leg.br/tv/aovivo",
+      "attempts": 1,
+      "channel_ids": [
+        "brazil-tv-camara"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.camara.leg.br/tv/aovivo/embed",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 1239,
+      "body_sha256": "10e5f6737fd30eeb3001ded278bd763aa1e0596000151ee4113958502f1c8f96",
+      "final_url": "https://www.camara.leg.br/tv/aovivo/embed",
+      "attempts": 1,
+      "channel_ids": [
+        "brazil-tv-camara"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.chd.lu/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 121295,
+      "body_sha256": "c882ab151a69a1b283ee533e506652639d487ec45a194c306af02911c2169c07",
+      "final_url": "https://www.chd.lu/fr",
+      "attempts": 1,
+      "channel_ids": [
+        "luxembourg-chamber-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.coe.int/en/web/portal/audiovisual-services1",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5635,
+      "body_sha256": null,
+      "final_url": "https://www.coe.int/en/web/portal/audiovisual-services1",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-europe-pace-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.coe.int/en/web/portal/live",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5541,
+      "body_sha256": null,
+      "final_url": "https://www.coe.int/en/web/portal/live",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-europe-pace-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.congreso.es/",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 365,
+      "body_sha256": null,
+      "final_url": "https://www.congreso.es/",
+      "attempts": 1,
+      "channel_ids": [
+        "spain-canal-parlamento"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.congreso.es/es/cem/faqs",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 388,
+      "body_sha256": null,
+      "final_url": "https://www.congreso.es/es/cem/faqs",
+      "attempts": 1,
+      "channel_ids": [
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.congreso.es/es/cem/mas-informacion",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 403,
+      "body_sha256": null,
+      "final_url": "https://www.congreso.es/es/cem/mas-informacion",
+      "attempts": 1,
+      "channel_ids": [
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 417,
+      "body_sha256": null,
+      "final_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+      "attempts": 1,
+      "channel_ids": [
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 33699,
+      "body_sha256": "a7dff58929bc01661d30a3a77b50b016619a6bf22ec61e886ae56c61628b693a",
+      "final_url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+      "attempts": 1,
+      "channel_ids": [
+        "jalisco-canal-parlamento"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 13349,
+      "body_sha256": null,
+      "final_url": "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-eu-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/press/",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 13147,
+      "body_sha256": null,
+      "final_url": "https://www.consilium.europa.eu/en/press/",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-eu-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.cortsvalencianes.es/es",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 101148,
+      "body_sha256": "c0b3b522bf34d349a9eaf105b36c40008192ab91f10baf34ecd9a6a86d8ad6cf",
+      "final_url": "https://www.cortsvalencianes.es/es",
+      "attempts": 1,
+      "channel_ids": [
+        "valencia-canal-corts"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.cpac.ca/en/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 24973,
+      "body_sha256": "9b5356bddd1dfbc196c98c2427ae2355f650c4dc216aaca5b860981ae0e2dcd7",
+      "final_url": "https://www.cpac.ca/en/",
+      "attempts": 1,
+      "channel_ids": [
+        "cpac-ca"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.cpac.ca/terms-of-use",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 38125,
+      "body_sha256": "7dd69a23dc48a8bfcdc756748c74e01dde6aa1ff7f5767affa273c81c48835c9",
+      "final_url": "https://www.cpac.ca/terms-of-use",
+      "attempts": 1,
+      "channel_ids": [
+        "cpac-ca"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.europarl.europa.eu/news/en/media-services/multimedia-centre",
+      "status": "reachable",
+      "http_status": 202,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_url": "https://www.europarl.europa.eu/news/en/media-services/multimedia-centre",
+      "attempts": 1,
+      "channel_ids": [
+        "european-parliament-multimedia-centre"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.europarl.europa.eu/website/multimedia-centre/en/europe-by-satellite.html",
+      "status": "reachable",
+      "http_status": 202,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_url": "https://www.europarl.europa.eu/website/multimedia-centre/en/europe-by-satellite.html",
+      "attempts": 1,
+      "channel_ids": [
+        "eu-audiovisual-ebs"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+      "status": "reachable",
+      "http_status": 202,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_url": "https://www.europarl.europa.eu/website/multimedia-centre/en/webstreaming.html",
+      "attempts": 1,
+      "channel_ids": [
+        "european-parliament-multimedia-centre"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ft.dk/",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5378,
+      "body_sha256": null,
+      "final_url": "https://www.ft.dk/",
+      "attempts": 1,
+      "channel_ids": [
+        "denmark-folketinget"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget/deling-og-rettigheder",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 5595,
+      "body_sha256": null,
+      "final_url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget/deling-og-rettigheder",
+      "attempts": 1,
+      "channel_ids": [
+        "denmark-folketinget"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html",
+      "response_bytes": 13231,
+      "body_sha256": "37649a0b5bae38c8dc5c8f17c1eaba592fa30eff197e4c9a90169649dce281bc",
+      "final_url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+      "attempts": 1,
+      "channel_ids": [
+        "manitoba-house-broadcasts"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.hellenicparliament.gr/",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 377,
+      "body_sha256": null,
+      "final_url": "https://www.hellenicparliament.gr/",
+      "attempts": 1,
+      "channel_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.knesset.tv/committees/digitalknesset/35478/47690/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 35378,
+      "body_sha256": "4586a65916f01f8a5a0372fa81f4e03065da7c017b255278d9cb55c3db8525d1",
+      "final_url": "https://www.knesset.tv/committees/digitalknesset/35478/47690/",
+      "attempts": 1,
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.knesset.tv/documents/terms-and-privacy/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 76781,
+      "body_sha256": "4d3736dc3f415338198e595f9a9ff410dfd74a3ec8eff8a796749110148d480c",
+      "final_url": "https://www.knesset.tv/documents/terms-and-privacy/",
+      "attempts": 1,
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.knesset.tv/live/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 38824,
+      "body_sha256": "c05292840ff0e98305a4079afd8732250294e032d691bbece2fe1cad923aa302",
+      "final_url": "https://www.knesset.tv/live/",
+      "attempts": 1,
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "baden-wurttemberg-landtag-live"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.landtag-bw.de/de/mediathek/nutzungsbedingungen-fuer-die-mediathek",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "baden-wurttemberg-landtag-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 261494,
+      "body_sha256": "853ae28376c1986ba49c050eb72048385ca6ba0fff15b24ab69631b1d8ea278b",
+      "final_url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "attempts": 1,
+      "channel_ids": [
+        "north-rhine-westphalia-landtag-live"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.landtag.nrw.de/home/mediathek/anmeldung-zum-livestream.html?id=1116333",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 258984,
+      "body_sha256": "a5752973d769009e812aaec0797aab3c35686f1569e8c50b13aa701fd03dff49",
+      "final_url": "https://www.landtag.nrw.de/home/mediathek/anmeldung-zum-livestream.html?id=1116333",
+      "attempts": 1,
+      "channel_ids": [
+        "north-rhine-westphalia-landtag-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 98471,
+      "body_sha256": "74a8ed1eb2d4c158b93f03fc0589e15fa8d37158470a53b09e89648def5a997c",
+      "final_url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+      "attempts": 1,
+      "channel_ids": [
+        "british-columbia-legislature-webcasts"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 39467,
+      "body_sha256": "35c7e5264196b2d6794e5f534771ec3d79477f4ee1db01c1d4b86bf8bf7cc9b1",
+      "final_url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+      "attempts": 1,
+      "channel_ids": [
+        "saskatchewan-legislative-proceedings"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.niassembly.gov.uk/about-the-assembly/corporate-information/copyright-guidelines/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 42431,
+      "body_sha256": "d3fb39191df0242c4634669cb5ae9db40c17824dacd219616ba77a6c624962a4",
+      "final_url": "https://www.niassembly.gov.uk/about-the-assembly/corporate-information/copyright-guidelines/",
+      "attempts": 1,
+      "channel_ids": [
+        "northern-ireland-assembly-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.nrsr.sk/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 77698,
+      "body_sha256": "bcb60f2a7b54148e06f13c0ce9b98f0e577bd909e41503b7d3f28f1e0c584859",
+      "final_url": "http://www.nrsr.sk/web/",
+      "attempts": 1,
+      "channel_ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 94992,
+      "body_sha256": "4c0bae13f91cc0e36327c94ee20db6b9820505e6f2b981e81c101afde09cb58d",
+      "final_url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+      "attempts": 1,
+      "channel_ids": [
+        "northwest-territories-watch-session"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.oireachtas.ie/en/committees/schedule/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "6416b6ad0379f65a115170aafe19601ef88c425b03cb07a0f914920af50eedea",
+      "final_url": "https://www.oireachtas.ie/en/committees/schedule/",
+      "attempts": 1,
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 95714,
+      "body_sha256": "3cbb85818e85de416451fdad10ace924acbd8f252e9d7c88a75f46444623368f",
+      "final_url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+      "attempts": 1,
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.oireachtas.ie/en/oireachtas-tv/embed-codes/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 81703,
+      "body_sha256": "f39846df0a67ffb32117bf2155cc68f566a49808f819661e8f32c1a5e5fad5a0",
+      "final_url": "https://www.oireachtas.ie/en/oireachtas-tv/embed-codes/",
+      "attempts": 1,
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ola.org/en/get-involved/watch-legislature-action",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 105209,
+      "body_sha256": "7e8f1013f4ace8513e1236c2cdc5b569c6d927b97a852c712b70f357d0941fc5",
+      "final_url": "https://www.ola.org/en/get-involved/watch-legislature-action",
+      "attempts": 1,
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ola.org/en/legislative-business/video",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 140281,
+      "body_sha256": "062475618e19ce2a551a3e83e946affbe7afc90daf30d4ed1d5bdf7f330f0917",
+      "final_url": "https://www.ola.org/en/legislative-business/video",
+      "attempts": 1,
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 125019,
+      "body_sha256": "c42ab8f735d0a5059e5efa12884c526ab88663f54e0e0f2d8caf62eb2d9f0bec",
+      "final_url": "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+      "attempts": 1,
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ola.org/en/office-assembly/copyright-privacy",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 109489,
+      "body_sha256": "2122f08567b68b4fc7b4ac5ad8dcfde01a3602fd34022c09fccf833736cbbf4b",
+      "final_url": "https://www.ola.org/en/office-assembly/copyright-privacy",
+      "attempts": 1,
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 122441,
+      "body_sha256": "0717583bc43e63b708c376cb1fd182ed9dc9a00898167ed6ac5044477661b512",
+      "final_url": "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines",
+      "attempts": 1,
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.osce.org/live",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 62379,
+      "body_sha256": "56ddd8c5a06b4d70ad88417dc6fa4d9937d8c7ff777146067d5e2eb14f0ca032",
+      "final_url": "https://news.osce.org/live",
+      "attempts": 1,
+      "channel_ids": [
+        "osce-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.oscepa.org/en/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 40248,
+      "body_sha256": "e6b8ebf094f754c9530a0ffb4b9aa8eb2b42236cee141c7e70b24a90cad47d8c",
+      "final_url": "https://www.oscepa.org/en/",
+      "attempts": 1,
+      "channel_ids": [
+        "osce-live"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ourcommons.ca/en/important-notices#SpeakersPermission",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 221126,
+      "body_sha256": "d998c336c4c06a7a4a600f0101205233bf47921f75b5878e9274bdec8110ef5d",
+      "final_url": "https://www.ourcommons.ca/en/important-notices#SpeakersPermission",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.ourcommons.ca/procedure-and-practice-4/ch24-3-e.html",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "5acabcb23fb340026731b364c1019de4acede069e54f899ce88f6f6a190ca7e6",
+      "final_url": "https://www.ourcommons.ca/procedure-and-practice-4/ch24-3-e.html",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parlament.cat/document/cataleg/165484.pdf",
+      "status": "error",
+      "http_status": 503,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 936,
+      "body_sha256": null,
+      "final_url": "https://www.parlament.cat/document/cataleg/165484.pdf",
+      "attempts": 1,
+      "channel_ids": [
+        "catalonia-canal-parlament"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 68335,
+      "body_sha256": "f8f5e16f79f15877a1dd9e2f6e6707904c802556f0eec586cbf65ac29d09835d",
+      "final_url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+      "attempts": 1,
+      "channel_ids": [
+        "catalonia-canal-parlament"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.parlament.cat/web/index.html",
+      "status": "error",
+      "http_status": 503,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 936,
+      "body_sha256": null,
+      "final_url": "https://www.parlament.cat/web/index.html",
+      "attempts": 1,
+      "channel_ids": [
+        "catalonia-canal-parlament"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parlamento.pt/",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "portugal-artv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=ISO-8859-1",
+      "response_bytes": 50632,
+      "body_sha256": "348c12b2325c87fe16564a724496fed9dcd949738c3a424f0364b70cb8670273",
+      "final_url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+      "attempts": 1,
+      "channel_ids": [
+        "andalusia-parliament-tv-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.mn/",
+      "status": "error",
+      "http_status": null,
+      "content_type": null,
+      "response_bytes": 128,
+      "body_sha256": null,
+      "final_url": null,
+      "attempts": 1,
+      "channel_ids": [
+        "mongolia-parliament-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.nsw.gov.au/copyright",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 90741,
+      "body_sha256": "fc31c02971ca1f878952ab09a11595b7f43177286ec4bef68528bc89213f5928",
+      "final_url": "https://www.parliament.nsw.gov.au/copyright",
+      "attempts": 1,
+      "channel_ids": [
+        "new-south-wales-parliament-webcasts"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.nsw.gov.au/webcasts",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 93139,
+      "body_sha256": "8c4f4df21dfc1c6073f6c348930a5aed7952efd5d71ddc4187c38a8e53dc1c75",
+      "final_url": "https://www.parliament.nsw.gov.au/webcasts",
+      "attempts": 1,
+      "channel_ids": [
+        "new-south-wales-parliament-webcasts"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.parliament.nsw.gov.au/webcasts/lc-webcast",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 87441,
+      "body_sha256": "f81c68be429ddf2f05b04a80ff8a8c1184894b0d4326a9e1aafa126179d06f4f",
+      "final_url": "https://www.parliament.nsw.gov.au/webcasts/lc-webcast",
+      "attempts": 1,
+      "channel_ids": [
+        "new-south-wales-parliament-webcasts"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.nz/en/watch-parliament/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 118391,
+      "body_sha256": "96091ac61fda6c6c1635ed6f727af04cf13874a0dd823f4711a49dcf5991aeba",
+      "final_url": "https://www.parliament.nz/en/watch-parliament/",
+      "attempts": 1,
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "roles": [
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 7956,
+      "body_sha256": null,
+      "final_url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
+      "attempts": 1,
+      "channel_ids": [
+        "queensland-parliament-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.scot/about/copyright",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 169438,
+      "body_sha256": "6f7ad7a0c794b847afa8d534ec15cc87f3d85907f7e884b5f38f39e76b1f0ddc",
+      "final_url": "https://www.parliament.scot/about/copyright",
+      "attempts": 1,
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.scot/about/how-parliament-works/policies/social-media-use-of-parliament-tv-clips",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 162143,
+      "body_sha256": "a19a0c7ce9ddf40de39f1e43711f01d96d75bb849c4444123020197a952258d8",
+      "final_url": "https://www.parliament.scot/about/how-parliament-works/policies/social-media-use-of-parliament-tv-clips",
+      "attempts": 1,
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 186000,
+      "body_sha256": "4745d5f2baf9e7f1a5ba731bf0914e87addb262434b09e0a2428ed2fa20e6b23",
+      "final_url": "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/",
+      "attempts": 1,
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.vic.gov.au/49c19e/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "response_bytes": 122399,
+      "body_sha256": "d13c6d9569831cf66c63330b878b3ff65cb716ed847ac37ad5ef85d88887daf7",
+      "final_url": "https://www.parliament.vic.gov.au/49bf8d/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf",
+      "attempts": 1,
+      "channel_ids": [
+        "victoria-parliament-watch"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.vic.gov.au/watch/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 74484,
+      "body_sha256": "feea307bf31f5991eee5787940d067d97d94d27f559a875039c7a7ccee2584fd",
+      "final_url": "https://www.parliament.vic.gov.au/watch/",
+      "attempts": 1,
+      "channel_ids": [
+        "victoria-parliament-watch"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+      "status": "access_blocked",
+      "http_status": 403,
+      "content_type": "text/html",
+      "response_bytes": 7900,
+      "body_sha256": null,
+      "final_url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+      "attempts": 1,
+      "channel_ids": [
+        "western-australia-parliament-live"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.parliamentarytv.org.tw/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 72459,
+      "body_sha256": "3d73c910314c66b7537e8190701a31d204d6484815e92be21e8d9eb715cf7e06",
+      "final_url": "https://www.parliamentarytv.org.tw/",
+      "attempts": 1,
+      "channel_ids": [
+        "taiwan-parliamentary-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 162390,
+      "body_sha256": "f1f95d8beffc3df048653a0fa85df024b10f73b3cf70fc9bc7ed258e79e48252",
+      "final_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+      "attempts": 1,
+      "channel_ids": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.riigikogu.ee/live/1/en",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 14909,
+      "body_sha256": "8f4fe05814ba8007e08401cb1265791d5fe223bea43bca39338d5f5d0cd8944b",
+      "final_url": "https://www.riigikogu.ee/live/1/en",
+      "attempts": 1,
+      "channel_ids": [
+        "estonia-riigikogu-live-1"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.riigikogu.ee/live/2/en",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 14906,
+      "body_sha256": "4db36680f90fd299f0b54ea848737a36780671c0e509d53da9d052348fb1109a",
+      "final_url": "https://www.riigikogu.ee/live/2/en",
+      "attempts": 1,
+      "channel_ids": [
+        "estonia-riigikogu-live-2"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.scottishparliament.tv/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 101989,
+      "body_sha256": "23de72d05eed0005212e0ddc1b4679569d8d4aed81ff5a9aa182e68ab79aa080",
+      "final_url": "https://www.scottishparliament.tv/",
+      "attempts": 1,
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.senedd.tv/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 62836,
+      "body_sha256": "8af7319c823befa54d8a4deead1721f11b48a16575516b998c3836a2f9e9eb0b",
+      "final_url": "https://www.senedd.tv/",
+      "attempts": 1,
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.stortinget.no/nett-tv",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 72422,
+      "body_sha256": "2fd3999cd79cb5abc9eca8b44e910cea77302be60dc57b1adce865b75ca9d737",
+      "final_url": "https://www.stortinget.no/nett-tv",
+      "attempts": 1,
+      "channel_ids": [
+        "norway-stortinget"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.tpchannel.org/tv/live",
+      "status": "not_found",
+      "http_status": 404,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 4513,
+      "body_sha256": null,
+      "final_url": "https://www.tpchannel.org/tv/live",
+      "attempts": 1,
+      "channel_ids": [
+        "thailand-parliament-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 79313,
+      "body_sha256": "cf3acaffa5a8a201ec97ec6503f89f7a0ae0e2b2107d78f33e50a78c035360b9",
+      "final_url": "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen",
+      "attempts": 1,
+      "channel_ids": [
+        "netherlands-tweede-kamer-actualiteitenkanaal",
+        "netherlands-tweede-kamer-aletta-jacobszaal"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebat",
+      "status": "not_found",
+      "http_status": 404,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 16384,
+      "body_sha256": null,
+      "final_url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebat",
+      "attempts": 1,
+      "channel_ids": [
+        "netherlands-tweede-kamer"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 64584,
+      "body_sha256": "5be80705a96ab2bcea8cf02e7827ae9ae4eed6145eb1aee1d0b64a9d16bba53a",
+      "final_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+      "attempts": 1,
+      "channel_ids": [
+        "netherlands-tweede-kamer-actualiteitenkanaal"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 64554,
+      "body_sha256": "3c08a2eb8a724a72c55e7a0c7581c99728a0f265012955f2a6b34da11a812b7a",
+      "final_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+      "attempts": 1,
+      "channel_ids": [
+        "netherlands-tweede-kamer-aletta-jacobszaal"
+      ],
+      "roles": [
+        "official_page",
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.un.org/en/node/205121",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 77020,
+      "body_sha256": "76d388da64a1e7dfb76235b5c1e6afb265e10d1f59301d3cc7e8351b3c4fca7c",
+      "final_url": "https://www.un.org/en/node/205121",
+      "attempts": 1,
+      "channel_ids": [
+        "un-web-tv"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1065",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "0a58711ee2ec780f7293830f0ac5966f134c76753bdee98723fa6bbe1763b290",
+      "final_url": "https://www.wikidata.org/wiki/Q1065",
+      "attempts": 1,
+      "channel_ids": [
+        "un-web-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q109016",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "45be09c431edf2f391b0ac4b039c949bc72bc9e6a47b64e1df88bb1fe2be06eb",
+      "final_url": "https://www.wikidata.org/wiki/Q109016",
+      "attempts": 1,
+      "channel_ids": [
+        "norway-stortinget"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q11010",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "03336094ca444dff3c019b5d180109aaa7c549aadef9b7365c5711221e733a24",
+      "final_url": "https://www.wikidata.org/wiki/Q11010",
+      "attempts": 1,
+      "channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1139204",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 218673,
+      "body_sha256": "32602d3493cb66854bb1caa788162f7b6379281bde7e342fd01be0acb0c4cedb",
+      "final_url": "https://www.wikidata.org/wiki/Q1139204",
+      "attempts": 1,
+      "channel_ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q129821",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 188550,
+      "body_sha256": "4218bb7b3aca2a7dcb10d486be6ba4dd5597888da612b7378f043eb009e654cf",
+      "final_url": "https://www.wikidata.org/wiki/Q129821",
+      "attempts": 1,
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1323479",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 140670,
+      "body_sha256": "452920931a86f084294daa78e200384257768c2573d8c8e04e9f1d9464cc2c4a",
+      "final_url": "https://www.wikidata.org/wiki/Q1323479",
+      "attempts": 1,
+      "channel_ids": [
+        "british-columbia-legislature-webcasts"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q133396",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "5fa9160b4bba2504fc915e1b78605268ed92b2d340a8e7e4733ee49980ee1f04",
+      "final_url": "https://www.wikidata.org/wiki/Q133396",
+      "attempts": 1,
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q135630",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 202770,
+      "body_sha256": "e7d44ba233b943029f4b24bdd627d0a6fd8d66969b8dfdd8fe050818c4443c67",
+      "final_url": "https://www.wikidata.org/wiki/Q135630",
+      "attempts": 1,
+      "channel_ids": [
+        "catalonia-canal-parlament"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1368318",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 170491,
+      "body_sha256": "756cdd19e6f1707bc0e1056b3da3c3c833c85274c950c4dd741332791be80379",
+      "final_url": "https://www.wikidata.org/wiki/Q1368318",
+      "attempts": 1,
+      "channel_ids": [
+        "thailand-parliament-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1386962",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 127707,
+      "body_sha256": "b6814a611c51e334604d7f582e22683fa5c352b18ff904b0c699a9ca8a0677fd",
+      "final_url": "https://www.wikidata.org/wiki/Q1386962",
+      "attempts": 1,
+      "channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1492249",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 240382,
+      "body_sha256": "ba238fc769f4ae34ac3e6036c0432b10f450f02106e836a7a17de97117c7338a",
+      "final_url": "https://www.wikidata.org/wiki/Q1492249",
+      "attempts": 1,
+      "channel_ids": [
+        "quebec-canal01",
+        "quebec-canal02",
+        "quebec-canal03",
+        "quebec-canal04",
+        "quebec-canal05",
+        "quebec-canal06",
+        "quebec-canal07",
+        "quebec-canal08",
+        "quebec-canal09",
+        "quebec-canal10",
+        "quebec-canal11",
+        "quebec-canal12",
+        "quebec-canal13",
+        "quebec-canal14"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1517320",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 118008,
+      "body_sha256": "17e2c127cf5dc7e0a0b92ea38129b999912c25699ea42eed224e8a8d49638453",
+      "final_url": "https://www.wikidata.org/wiki/Q1517320",
+      "attempts": 1,
+      "channel_ids": [
+        "manitoba-house-broadcasts"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1520966",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 128983,
+      "body_sha256": "cd13bba69e795195f5df03249621e3e6af7e2219965d2a3e56ae555022ee44d4",
+      "final_url": "https://www.wikidata.org/wiki/Q1520966",
+      "attempts": 1,
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1537375",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 110208,
+      "body_sha256": "1e16b848bd31e93fcadf77387bf5f7ce609c5c8e22d6957215ea48bb597b834b",
+      "final_url": "https://www.wikidata.org/wiki/Q1537375",
+      "attempts": 1,
+      "channel_ids": [
+        "saskatchewan-legislative-proceedings"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1544714",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 163761,
+      "body_sha256": "455bbe371eaeaa6c0533562cbe1464d2ece8357410eb51ec781bf2421ee55c50",
+      "final_url": "https://www.wikidata.org/wiki/Q1544714",
+      "attempts": 1,
+      "channel_ids": [
+        "mongolia-parliament-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q154797",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "38868c1b8e7b784a91e8475800f841ddcb8668cf57f017c9dbbde89b4145f849",
+      "final_url": "https://www.wikidata.org/wiki/Q154797",
+      "attempts": 1,
+      "channel_ids": [
+        "germany-bundestag-1"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1809086",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 256592,
+      "body_sha256": "d61a0fb1f2006c05a85cf2294e59a6eab13d4f165b8b0a561e2d18df95ef4414",
+      "final_url": "https://www.wikidata.org/wiki/Q1809086",
+      "attempts": 1,
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1812866",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 155616,
+      "body_sha256": "899a517c7be47f92c32257f0edc3729c43abff358af0bc8b47ba33de6dffdb73",
+      "final_url": "https://www.wikidata.org/wiki/Q1812866",
+      "attempts": 1,
+      "channel_ids": [
+        "alberta-assembly-online"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1812873",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 130973,
+      "body_sha256": "b66bbfaea02fdc50740c67bfc7d3ea7de1ff049233786ec1a6bc8358b5ec0711",
+      "final_url": "https://www.wikidata.org/wiki/Q1812873",
+      "attempts": 1,
+      "channel_ids": [
+        "el-salvador-legislative-assembly"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1834804",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 216427,
+      "body_sha256": "5d440aac1fbe9695426796bbf660d9a759d08d35dd76dab193d3995f8a667cbc",
+      "final_url": "https://www.wikidata.org/wiki/Q1834804",
+      "attempts": 1,
+      "channel_ids": [
+        "brazil-tv-camara"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1848835",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 156206,
+      "body_sha256": "165e427b1f41ef6ca0946b8d3f8960eaf530fc2f5e08591d7a6098d0677f5bad",
+      "final_url": "https://www.wikidata.org/wiki/Q1848835",
+      "attempts": 1,
+      "channel_ids": [
+        "victoria-parliament-watch"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q193582",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "d21e5173bd5abb46a15c61732822650d2ce6032393cb9c00b06ff0ce3dc0080d",
+      "final_url": "https://www.wikidata.org/wiki/Q193582",
+      "attempts": 1,
+      "channel_ids": [
+        "france-national-assembly"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q206171",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 261207,
+      "body_sha256": "7325d9df84c4fa1ef669522e633b9449103031fdf832cf0c38db9869d2e4b08b",
+      "final_url": "https://www.wikidata.org/wiki/Q206171",
+      "attempts": 1,
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q209151",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "0efac6ecf26bcfb03a68d60733fae22591155566f6095e26cdcb594855017d1f",
+      "final_url": "https://www.wikidata.org/wiki/Q209151",
+      "attempts": 1,
+      "channel_ids": [
+        "denmark-folketinget"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q2119518",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 140392,
+      "body_sha256": "fca573234163d484ad7b1233b09738b380f99a40f72c940d175d5252f2875ae0",
+      "final_url": "https://www.wikidata.org/wiki/Q2119518",
+      "attempts": 1,
+      "channel_ids": [
+        "chile-camara-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q217799",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 195869,
+      "body_sha256": "76feab7e85ccb0c51d3dc3f81a94e15fab051108f4022da6a7e5ccd77494d1dd",
+      "final_url": "https://www.wikidata.org/wiki/Q217799",
+      "attempts": 1,
+      "channel_ids": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q233262",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "f044cd70a8338dc24b605b411466bbaa9814b49d3cfd6f9fc9fd74452b34cf40",
+      "final_url": "https://www.wikidata.org/wiki/Q233262",
+      "attempts": 1,
+      "channel_ids": [
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-actualiteitenkanaal",
+        "netherlands-tweede-kamer-aletta-jacobszaal"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q258843",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 121517,
+      "body_sha256": "e410a9617e1ff7ba556daed97da3841f0d595c3ff408ff0483b88c2492524cf0",
+      "final_url": "https://www.wikidata.org/wiki/Q258843",
+      "attempts": 1,
+      "channel_ids": [
+        "newfoundland-labrador-house-webcast"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q2734573",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 134182,
+      "body_sha256": "aba663149a1ba18efe543fca566ef5761c43b938c37595fa20bf71883194d12e",
+      "final_url": "https://www.wikidata.org/wiki/Q2734573",
+      "attempts": 1,
+      "channel_ids": [
+        "valencia-canal-corts"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q2742602",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 148288,
+      "body_sha256": "ede9d46057a97eddec7dd5c3ee4b1269241bb7685c8fbe0d7311a722d11ff6cd",
+      "final_url": "https://www.wikidata.org/wiki/Q2742602",
+      "attempts": 1,
+      "channel_ids": [
+        "navarre-parliament-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q2743388",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 122765,
+      "body_sha256": "814e99907829d7b1fb79ba34e741c7b4790e452d607d5ef0fe31da2f99b15148",
+      "final_url": "https://www.wikidata.org/wiki/Q2743388",
+      "attempts": 1,
+      "channel_ids": [
+        "andalusia-parliament-tv-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q285714",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 195888,
+      "body_sha256": "00e75045bb79ae1defd79bfaf0b0322724af2dc0519e8a38e5c9dbf98893630a",
+      "final_url": "https://www.wikidata.org/wiki/Q285714",
+      "attempts": 1,
+      "channel_ids": [
+        "northern-ireland-assembly-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q2867078",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 109336,
+      "body_sha256": "1585cbd55b5736c6b4816c7d5b0c64f11879933e230ca386bf1973948fc962d9",
+      "final_url": "https://www.wikidata.org/wiki/Q2867078",
+      "attempts": 1,
+      "channel_ids": [
+        "northwest-territories-watch-session"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q2867082",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 123949,
+      "body_sha256": "a3f39a3d1346c1735120209a4bce88fb82fbfdd8fe6474c173082fad6b5bfccb",
+      "final_url": "https://www.wikidata.org/wiki/Q2867082",
+      "attempts": 1,
+      "channel_ids": [
+        "nunavut-legislative-assembly-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q3365500",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 100845,
+      "body_sha256": "f582af706722b468d1dd67180df4e905759516d8f68dffe4a75a2a32aa65731a",
+      "final_url": "https://www.wikidata.org/wiki/Q3365500",
+      "attempts": 1,
+      "channel_ids": [
+        "western-australia-parliament-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q3365521",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 136992,
+      "body_sha256": "b7d14d67a9c1eff214c272ef7d1d3f32031f85c6dd95240e224f681c6457d4b6",
+      "final_url": "https://www.wikidata.org/wiki/Q3365521",
+      "attempts": 1,
+      "channel_ids": [
+        "new-south-wales-parliament-webcasts"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q3365548",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 102746,
+      "body_sha256": "0b31454b53b813b149bc13f73abd24a15fc0fe24aaf5b54f5a9289ae6d1c7286",
+      "final_url": "https://www.wikidata.org/wiki/Q3365548",
+      "attempts": 1,
+      "channel_ids": [
+        "queensland-parliament-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q382118",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 202892,
+      "body_sha256": "d96567f8c4099acedf6ce100c3e1307c88d2e6233a7ec7e1f6dd1a67e8a2212c",
+      "final_url": "https://www.wikidata.org/wiki/Q382118",
+      "attempts": 1,
+      "channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q383590",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "bf780a70a849b5708cea3c260d06e520059131d101087d5e714e36b1889e3ae7",
+      "final_url": "https://www.wikidata.org/wiki/Q383590",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q455697",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 181893,
+      "body_sha256": "749b41595fe5b0a0fd4452796cd31bd5f2ac3783f4220706664c5fa5227a0c03",
+      "final_url": "https://www.wikidata.org/wiki/Q455697",
+      "attempts": 1,
+      "channel_ids": [
+        "baden-wurttemberg-landtag-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q458",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "bc0befbd27b94ea8168d7bf9f6ea4950714853163c4ddbd2127a192b83e13bc6",
+      "final_url": "https://www.wikidata.org/wiki/Q458",
+      "attempts": 1,
+      "channel_ids": [
+        "eu-audiovisual-ebs"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q475689",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "d4d71a890b0b99847bb4d8de13b11898bb27214e58f75bf80b210dd27fed2a26",
+      "final_url": "https://www.wikidata.org/wiki/Q475689",
+      "attempts": 1,
+      "channel_ids": [
+        "cpac-ca"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q477089",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 180153,
+      "body_sha256": "7068f8aad5b2c45105512fb1c16d2db7a4b0d1b9532be256758a901adbddda7d",
+      "final_url": "https://www.wikidata.org/wiki/Q477089",
+      "attempts": 1,
+      "channel_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q493517",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "575b6d92021da91e395dc5dc872002588d31b7b3355244968acb46945c02ff35",
+      "final_url": "https://www.wikidata.org/wiki/Q493517",
+      "attempts": 1,
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q5160874",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 69503,
+      "body_sha256": "4c87c785ef2708afe32cf3e6f4d585f421f06bbe4b7ffdffcd90cc6540a216bd",
+      "final_url": "https://www.wikidata.org/wiki/Q5160874",
+      "attempts": 1,
+      "channel_ids": [
+        "jalisco-canal-parlamento"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q517449",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "6c2fda7eb5cef9dd72f17ed1ddc6b738ddaa922436ebcda9258969b8c8eee0f1",
+      "final_url": "https://www.wikidata.org/wiki/Q517449",
+      "attempts": 1,
+      "channel_ids": [
+        "luxembourg-chamber-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q539149",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "f48dd50947845983c221e4f2baba0508ddbf62c2840bdb091010e4a254d125fc",
+      "final_url": "https://www.wikidata.org/wiki/Q539149",
+      "attempts": 1,
+      "channel_ids": [
+        "spain-canal-parlamento",
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q571436",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 194418,
+      "body_sha256": "a0f371d911fb05642212399eca1fbb9faa5dd64ac553157d2a45fd7f74ba3ba0",
+      "final_url": "https://www.wikidata.org/wiki/Q571436",
+      "attempts": 1,
+      "channel_ids": [
+        "north-rhine-westphalia-landtag-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q633872",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 225653,
+      "body_sha256": "7fd1e69c146d18343bcac34c8c2cec854966cfff6667c6677e43baa5953a4637",
+      "final_url": "https://www.wikidata.org/wiki/Q633872",
+      "attempts": 1,
+      "channel_ids": [
+        "italy-senate"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q641439",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 236285,
+      "body_sha256": "e1cfb3143f933d8b5aa5461baba1af7bb10eec295b9eca3031826ce1ac0b0943",
+      "final_url": "https://www.wikidata.org/wiki/Q641439",
+      "attempts": 1,
+      "channel_ids": [
+        "bavaria-landtag-plenum-online"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q695252",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 158761,
+      "body_sha256": "42b77eb7a3006286149a967b417cb1820a0a31bda5de3e450da7b4df6c4408f6",
+      "final_url": "https://www.wikidata.org/wiki/Q695252",
+      "attempts": 1,
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q715869",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 201089,
+      "body_sha256": "0c1b8e0fecb0915e4f7fbdf18f3fd9232e6e01dfee8444bc10caea8691df8792",
+      "final_url": "https://www.wikidata.org/wiki/Q715869",
+      "attempts": 1,
+      "channel_ids": [
+        "taiwan-parliamentary-tv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q740564",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 249749,
+      "body_sha256": "4abe915c866cb3fd0a53f850acb242fee386dece24cf8881f6a93c4bd02efc7c",
+      "final_url": "https://www.wikidata.org/wiki/Q740564",
+      "attempts": 1,
+      "channel_ids": [
+        "portugal-artv"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q81299",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "2c8b5a16558fed65f06b60c59257cbf1302e8310e8ff30ceb3a92784cc77e6d9",
+      "final_url": "https://www.wikidata.org/wiki/Q81299",
+      "attempts": 1,
+      "channel_ids": [
+        "osce-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q825815",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 99097,
+      "body_sha256": "bf2cb2214b0bea3a07a3818494dcac68c8e4c5064251541313d9c8161599eeda",
+      "final_url": "https://www.wikidata.org/wiki/Q825815",
+      "attempts": 1,
+      "channel_ids": [
+        "prince-edward-island-assembly-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q841180",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 254114,
+      "body_sha256": "d902fcad2f902b3a3c38380c7eb56eb87462aff409ce529670d67dc21e96fa35",
+      "final_url": "https://www.wikidata.org/wiki/Q841180",
+      "attempts": 1,
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q8889",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "335703268afd66c90f24534fe8a8013df9b3cb994e6087aad3005fdc76bbc12b",
+      "final_url": "https://www.wikidata.org/wiki/Q8889",
+      "attempts": 1,
+      "channel_ids": [
+        "european-parliament-multimedia-centre"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q8896",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "8cbe247fc204867ef88a7ab376a18fb35c67cf9652df92c7cdf574101e918a46",
+      "final_url": "https://www.wikidata.org/wiki/Q8896",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-eu-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q939743",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "response_bytes": 262144,
+      "body_sha256": "4b97af394c873c0a66def58eb47781985e71c87e55de8894090001745aebf322",
+      "final_url": "https://www.wikidata.org/wiki/Q939743",
+      "attempts": 1,
+      "channel_ids": [
+        "council-of-europe-pace-live"
+      ],
+      "roles": [
+        "identity_wikidata"
+      ]
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUMasyWuE1P2AaEKw_FkGq9g",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 126729,
+      "body_sha256": "823ecc9be7a22964f03c59b07ae3c2d21378d0225ae48523954aa10f9b9bb92b",
+      "final_url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUMasyWuE1P2AaEKw_FkGq9g",
+      "attempts": 1,
+      "channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "roles": [
+        "embed"
+      ]
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUWN0rIWneMdqRmZ4yHs5GuA",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 126457,
+      "body_sha256": "f3ceb5885582569ac284245e97ddb912d456075a6a455bc45dc85b04cf70bc74",
+      "final_url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUWN0rIWneMdqRmZ4yHs5GuA",
+      "attempts": 1,
+      "channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "roles": [
+        "embed"
+      ]
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUzx6ti0rql6Q2Dc2zSAPmuA",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 126615,
+      "body_sha256": "759e101f394ce4897b34f143b3452deea913ea4ced7e7ca7f4c313ae9b6322a0",
+      "final_url": "https://www.youtube-nocookie.com/embed?listType=playlist&list=UUzx6ti0rql6Q2Dc2zSAPmuA",
+      "attempts": 1,
+      "channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "roles": [
+        "embed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@AUSParliamentLive",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "0c304a3568d6aaeae896b0485bce82b714d9f1b5522e88a82a603d9e07a6512c",
+      "final_url": "https://www.youtube.com/@AUSParliamentLive",
+      "attempts": 1,
+      "channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@AUSParliamentLive/live",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "9fef0a88495df3ada5c993b453013004759cbcd308db90dd0f7d6f522482ef9f",
+      "final_url": "https://www.youtube.com/@AUSParliamentLive/live",
+      "attempts": 1,
+      "channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "roles": [
+        "embed_live_page",
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@AsambleaCRC",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "26281278c77b5ae548ff88906cdb0849078d6e95c6d6c5387ef35430b98cb2c6",
+      "final_url": "https://www.youtube.com/@AsambleaCRC",
+      "attempts": 1,
+      "channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@AsambleaCRC/live",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "ef668c7cba3a659a863d17e9b1b3caa891d0f347cd150c65194d8731573c4b7a",
+      "final_url": "https://www.youtube.com/@AsambleaCRC/live",
+      "attempts": 1,
+      "channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "roles": [
+        "embed_live_page",
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/UKParliament",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "1695117e9d574c7ae95312116e018e3c3f1af01300953f20917d8b87d531a9f1",
+      "final_url": "https://www.youtube.com/UKParliament",
+      "attempts": 1,
+      "channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 262144,
+      "body_sha256": "023a7e16d372614c03ecfa43070f5a398c7a47018264043aceb9dc36a0324cdf",
+      "final_url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+      "attempts": 1,
+      "channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "roles": [
+        "embed_live_page",
+        "official_page"
+      ]
+    },
+    {
+      "url": "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "response_bytes": 52254,
+      "body_sha256": "e36dfd731634acff57c644d1751c8f2c37d0bb93bbefa37988df6d1f5f490bad",
+      "final_url": "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade",
+      "attempts": 1,
+      "channel_ids": [
+        "brazil-tv-camara"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www3.parliament.nz/en/footer/copyright/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 65369,
+      "body_sha256": "971702a347369b64c754d55c9a49e207c216230536e57ac0089eb80be834214e",
+      "final_url": "https://www3.parliament.nz/en/footer/copyright/",
+      "attempts": 1,
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    },
+    {
+      "url": "https://www3.parliament.nz/en/get-involved/information-for-the-press/parliament-tv-terms-and-conditions/",
+      "status": "reachable",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 64180,
+      "body_sha256": "4dec6f02cbad874a25acc05b9b43c36b345910bd3f6461e8a16d663c3f8471ea",
+      "final_url": "https://www3.parliament.nz/en/get-involved/information-for-the-press/parliament-tv-terms-and-conditions/",
+      "attempts": 1,
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "roles": [
+        "permission_evidence"
+      ]
+    }
+  ]
+}

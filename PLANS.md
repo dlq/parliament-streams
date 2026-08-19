@@ -94,9 +94,9 @@ Done:
   provider fallback surfaces separately from permanent channel records. The
   public site renders related fallbacks in source details and exposes a compact
   fallback directory for records that do not yet map to a channel.
-- Schema v8 adds compact per-entry validation history. Sixty catalogue entries
-  currently link to retained dated health reports, and the public site surfaces
-  the latest retained check in the source detail panel.
+- Schema v8 adds compact per-entry validation history. All 86 catalogue entries
+  now link to retained dated health reports, and the public site surfaces the
+  latest retained check in the source detail panel.
 - Validation-history refresh and drift checking are available through Make and
   the CLI; the drift check is part of `make verify`.
 - The public site now labels each source row as playable, link-out, fallback, or
@@ -374,8 +374,10 @@ Current measurable review queues as of 2026-08-19:
   unsupported fields `unknown` rather than inferring `unavailable`.
   Breakdown: 37 national, 43 sub-national, and 6 supranational entries.
   Ontario caption availability and source-dependent sign-language evidence is
-  now documented across its six feeds; audio-description evidence remains
-  unknown for every entry.
+  documented across its six feeds; Scottish Parliament TV, Senedd TV, Northern
+  Ireland Assembly TV, BC Legislature webcasts, and the three Tweede Kamer
+  records now also have cited source-dependent sign-language evidence. Audio
+  description evidence remains unknown for every entry.
 - Track these as two persistent GitHub research issues rather than opening one
   issue per stream. Update their counts after catalogue promotions and close
   them only when the underlying evidence gaps are actually resolved.

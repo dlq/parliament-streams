@@ -1648,3 +1648,55 @@ Evidence is retained in:
 - `reports/health/2026-08-17-review-followup-browser-seed.json`
 - `reports/health/2026-08-17-review-followup-deep-browser.json`
 - `reports/health/2026-08-17-review-followup-findings.json`
+
+## 2026-08-19 validation-history and accessibility follow-up
+
+A focused catalogue health report was generated for the 26 entries that lacked
+retained validation history. The pass recorded 21 reachable official pages, 2
+OK HLS manifests, 1 HLS warning, and 4 official-page errors from this
+environment. `validation-history-refresh` then attached retained report
+references to all 86 catalogue records.
+
+Evidence is retained in:
+
+- `reports/health/2026-08-19-validation-gap-health.json`
+- `reports/links-audit-2026-08-19.json`
+- `reports/epg-validation-2026-08-19.json`
+
+The same follow-up also retained lightweight link and schedule audits. The link
+audit recorded 189 reachable links, 17 access-blocked links, 2 not-found links,
+and 14 other errors across 222 checked links. The EPG audit recorded 47
+reachable schedule sources, 10 access-blocked sources, 2 not-found sources, and
+4 other errors across 63 schedule endpoints. Treat these as review evidence;
+blocked official sites should not be downgraded without browser/manual checks.
+
+Accessibility evidence was tightened where official sources made a clear
+statement:
+
+- Scottish Parliament TV documents caption controls on current meeting pages,
+  live captions for Meeting of the Parliament accessible videos, on-demand
+  captions for newer business video, and BSL-labelled accessible variants for
+  selected proceedings. Keep captions and sign language `source_dependent`;
+  keep audio description `unknown`.
+- Senedd Record evidence says BSL interpretation is provided for First
+  Minister's Questions and for selected Plenary or committee proceedings when
+  requested or content-dependent. Keep sign language `source_dependent`;
+  captions and audio description remain `unknown`.
+- Northern Ireland Assembly evidence says YouTube streams and recordings offer
+  auto-generated subtitles while niassembly.tv live subtitles are not yet
+  available, and that BSL/ISL interpretation is available for selected
+  proceedings including Sign Language Bill coverage and some Question Time
+  sessions. Keep captions and sign language `source_dependent`; keep audio
+  description `unknown`.
+- BC Legislature documents AI-generated closed captions for televised and
+  streamed proceedings and an ASL-focused webcast for Routine Business during
+  sitting days. Keep captions `available`, sign language `source_dependent`,
+  and audio description `unknown`.
+- Tweede Kamer documents automatic live captions for all debates, manual live
+  captions for Question Time and selected debates, and a linked Dutch Sign
+  Language interpreter stream for Question Time. Keep captions `available` and
+  mark sign language `source_dependent` across the three Tweede Kamer records.
+
+Review-queue outcome: sign-language unknowns fell from 77 to 71. Caption
+coverage remains 21 available, 4 source-dependent, and 61 unknown. Audio
+description remains unknown for all 86 entries.

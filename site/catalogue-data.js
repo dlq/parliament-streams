@@ -164,7 +164,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.ourcommons.ca/procedure-and-practice-4/ch24-3-e.html"
         ],
         "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the House confirms permission and stability."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "canada-senate-senvu",
@@ -238,7 +247,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://sencanada.ca/en/newsroom/the-speaker-of-the-senate-senate-chamber-launches-video-broadcasting/"
         ],
         "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the Senate confirms permission and stability."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "new-zealand-parliament",
@@ -714,9 +732,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [
           "nl"
         ],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
+        "notes": "Tweede Kamer documents automatic live captions for all debates, manual live captions for Question Time and selected debates, and a linked Dutch Sign Language interpreter stream for Question Time. Audio-description coverage is not confirmed."
       },
       "epg_sources": [
         {
@@ -5185,9 +5203,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [
           "en"
         ],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The official service provides accessible variants for some scheduled proceedings."
+        "notes": "Scottish Parliament TV documents caption controls on current meeting pages, live captions for Meeting of the Parliament accessible videos, on-demand captions for newer business video, and BSL-labelled accessible variants for selected proceedings. Audio-description coverage is not confirmed."
       },
       "epg_sources": [
         {
@@ -5215,7 +5233,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/"
         ],
         "recommendation": "Link to Scottish Parliament TV and preserve attribution. Do not frame the official site or treat dynamic player manifests as a licensed direct stream."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "senedd-tv",
@@ -5250,9 +5277,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "accessibility": {
         "captions": "unknown",
         "caption_languages": [],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "Official Record evidence says BSL interpretation is provided for First Minister's Questions and for selected Plenary or committee proceedings when requested or content-dependent. Caption and audio-description coverage remains unconfirmed."
       },
       "epg_sources": [
         {
@@ -5280,7 +5307,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://senedd.wales/calendar"
         ],
         "recommendation": "Link to the official live page. Use only Senedd-provided clip sharing or embedding routes under the published terms; do not frame the official site or extract dynamic manifests."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "northern-ireland-assembly-tv",
@@ -5317,9 +5353,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [
           "en"
         ],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The official service provides language and accessibility variants for some scheduled proceedings."
+        "notes": "Assembly evidence says YouTube streams and recordings offer auto-generated subtitles while niassembly.tv live subtitles are not yet available; BSL and ISL interpretation is provided for selected proceedings including Sign Language Bill coverage and some Question Time sessions. Audio-description coverage remains unconfirmed."
       },
       "epg_sources": [
         {
@@ -5339,7 +5375,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.niassembly.gov.uk/about-the-assembly/corporate-information/copyright-guidelines/"
         ],
         "recommendation": "Link only to the Assembly TV home or calendar page. Do not embed, relay, directly link to a broadcast, or extract a player manifest without formal agreement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "osce-live",
@@ -5450,7 +5495,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         ],
         "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The Assembly documents AI-generated closed captions and an ASL-focused webcast for Routine Business."
+        "notes": "The Assembly documents AI-generated closed captions for televised and streamed proceedings and an ASL-focused webcast for Routine Business during sitting days. Audio-description coverage is not confirmed."
       },
       "epg_sources": [
         {
@@ -5468,7 +5513,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
         ],
         "recommendation": "Link to the official webcast page while direct playback and reuse terms remain unconfirmed."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "alberta-assembly-online",
@@ -5525,7 +5579,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.assembly.ab.ca/terms-of-use-for-audio-and-video-recordings"
         ],
         "recommendation": "Link to Assembly Online. Reuse recordings only for non-commercial purposes under the published conditions."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "saskatchewan-legislative-proceedings",
@@ -5582,7 +5645,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/"
         ],
         "recommendation": "Link to the official proceedings page pending a source-specific rights statement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "manitoba-house-broadcasts",
@@ -5637,7 +5709,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.gov.mb.ca/legislature/business/house_broadcasts.html"
         ],
         "recommendation": "Link to the official broadcast page pending clarification of reuse and embedding permissions."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "prince-edward-island-assembly-live",
@@ -5693,7 +5774,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.assembly.pe.ca/copyright"
         ],
         "recommendation": "Link to the official live page and follow the Assembly's accuracy, completeness, attribution, and non-commercial conditions for any reuse."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "northwest-territories-watch-session",
@@ -5748,7 +5838,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
         ],
         "recommendation": "Link to the official multilingual session page pending a source-specific rights statement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "newfoundland-labrador-house-webcast",
@@ -5805,7 +5904,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.assembly.nl.ca/CopyrightPrivacyStatement.aspx"
         ],
         "recommendation": "Link to the official webcast and follow the published attribution, purpose, editing, and non-commercial conditions for any reuse."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:05Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "new-south-wales-parliament-webcasts",
@@ -5863,7 +5971,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parliament.nsw.gov.au/webcasts/lc-webcast"
         ],
         "recommendation": "Link to the official webcast hub and follow the Parliament's fair-reporting and prohibited-use conditions."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "victoria-parliament-watch",
@@ -5921,7 +6038,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parliament.vic.gov.au/49c19e/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf"
         ],
         "recommendation": "Link to the official watch page and follow the chamber-specific fair-reporting, context, editing, and non-commercial conditions."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "queensland-parliament-live",
@@ -5978,7 +6104,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live"
         ],
         "recommendation": "Link to the official live page and follow the Parliament's fair-reporting, balance, context, and prohibited-use conditions."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
     },
     {
       "id": "western-australia-parliament-live",
@@ -6035,7 +6170,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
         ],
         "recommendation": "Link to the official live page only; do not relay, reproduce, or distribute the broadcast."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
     },
     {
       "id": "north-rhine-westphalia-landtag-live",
@@ -6092,7 +6236,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.landtag.nrw.de/home/mediathek/anmeldung-zum-livestream.html?id=1116333"
         ],
         "recommendation": "Link to the official livestream schedule only unless written permission is obtained."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "baden-wurttemberg-landtag-live",
@@ -6149,7 +6302,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.landtag-bw.de/de/mediathek/nutzungsbedingungen-fuer-die-mediathek"
         ],
         "recommendation": "Link to the official live page. Apply the published non-commercial, attribution, editing, and context conditions to downloaded recordings."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+        }
+      ]
     },
     {
       "id": "bavaria-landtag-plenum-online",
@@ -6205,7 +6367,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.bayern.landtag.de/service/datenschutz/"
         ],
         "recommendation": "Link to Plenum Online and use only source-provided download or sharing routes pending a specific reuse statement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:06Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "catalonia-canal-parlament",
@@ -6261,7 +6432,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parlament.cat/document/cataleg/165484.pdf"
         ],
         "recommendation": "Link to Canal Parlament and preserve source attribution, context, and the unaltered meaning of reused material."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:07Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "valencia-canal-corts",
@@ -6317,7 +6497,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://mediateca.cortsvalencianes.es/live"
         ],
         "recommendation": "Link to Canal Corts pending a source-specific rights statement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:07Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "andalusia-parliament-tv-live",
@@ -6372,7 +6561,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do"
         ],
         "recommendation": "Link to the official live-programming page pending source-specific reuse terms."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:08Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "navarre-parliament-live",
@@ -6428,7 +6626,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://parlamentodenavarra.es/es/pruebalive1.htm"
         ],
         "recommendation": "Link to the official live service pending a source-specific reuse statement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:08Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
     },
     {
       "id": "jalisco-canal-parlamento",
@@ -6483,7 +6690,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo"
         ],
         "recommendation": "Allow client-side playback under the catalogue's opt-out policy with visible Congress attribution; remove or link out if the source requests it."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:08Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "netherlands-tweede-kamer-aletta-jacobszaal",
@@ -6527,9 +6743,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [
           "nl"
         ],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
+        "notes": "Tweede Kamer documents automatic live captions for all debates and manual live captions for Question Time and selected debates; Dutch Sign Language interpretation is available for Question Time through a separate linked stream, so sign-language coverage is source-dependent for committee-room feeds. Audio-description coverage is not confirmed."
       },
       "epg_sources": [
         {
@@ -6548,7 +6764,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:08Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "netherlands-tweede-kamer-actualiteitenkanaal",
@@ -6592,9 +6817,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "caption_languages": [
           "nl"
         ],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The official HLS route requests live subtitles; availability can vary with proceedings."
+        "notes": "Tweede Kamer documents automatic live captions for all debates and manual live captions for Question Time and selected debates; Dutch Sign Language interpretation is available for Question Time through a separate linked stream, so sign-language coverage is source-dependent for occasional-channel feeds. Audio-description coverage is not confirmed."
       },
       "epg_sources": [
         {
@@ -6613,7 +6838,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-19T17:47:08Z",
+          "report_path": "reports/health/2026-08-19-validation-gap-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     }
   ]
 };

@@ -1,0 +1,875 @@
+{
+  "generated_at": "2026-08-19T17:49:37Z",
+  "counts": {
+    "reachable": 47,
+    "access_blocked": 10,
+    "not_found": 2,
+    "error": 4,
+    "sources": 63
+  },
+  "sources": [
+    {
+      "url": "https://audiovisual.ec.europa.eu/en/ebs/grid",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "eu-audiovisual-ebs"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 87799 bytes"
+    },
+    {
+      "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "european-parliament-multimedia-centre"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 2011 bytes"
+    },
+    {
+      "url": "https://niassembly.tv/calendar/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "northern-ireland-assembly-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 108983 bytes"
+    },
+    {
+      "url": "https://parlamentodenavarra.es/es",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "navarre-parliament-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 464076 bytes"
+    },
+    {
+      "url": "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents",
+      "method": "GET",
+      "status": "not_found",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://sansadtv.nic.in/program-schedule",
+      "method": "GET",
+      "status": "error",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://senedd.wales/calendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 103480 bytes"
+    },
+    {
+      "url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 230268 bytes"
+    },
+    {
+      "url": "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents",
+      "method": "GET",
+      "status": "not_found",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://tv.nrsr.sk/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 28082 bytes"
+    },
+    {
+      "url": "https://video.consilium.europa.eu/home/en",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "council-of-eu-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 68522 bytes"
+    },
+    {
+      "url": "https://webtv.senato.it/api/palimpsest",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "italy-senate"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 2 bytes"
+    },
+    {
+      "url": "https://webtv.un.org/en/schedule",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "un-web-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 157881 bytes"
+    },
+    {
+      "url": "https://whatson-api.parliament.uk/calendar/events/list.json",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 166141 bytes"
+    },
+    {
+      "url": "https://www.aph.gov.au/News_and_Events/Watch_Parliament",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx",
+      "method": "GET",
+      "status": "error",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://www.asamblea.gob.sv/",
+      "method": "GET",
+      "status": "error",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "el-salvador-legislative-assembly"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://www.assemblee-nationale.fr/dyn/seance-publique",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "france-national-assembly"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 98483 bytes"
+    },
+    {
+      "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "alberta-assembly-online"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 97048 bytes"
+    },
+    {
+      "url": "https://www.assembly.nl.ca/HouseBusiness/ParliamentaryCalendar.aspx",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "newfoundland-labrador-house-webcast"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 16501 bytes"
+    },
+    {
+      "url": "https://www.assembly.nu.ca/webcasts?page=1",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "nunavut-legislative-assembly-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 64251 bytes"
+    },
+    {
+      "url": "https://www.assembly.pe.ca/calendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "prince-edward-island-assembly-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 15047 bytes"
+    },
+    {
+      "url": "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir",
+      "method": "POST",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "quebec-canal01",
+        "quebec-canal02",
+        "quebec-canal03",
+        "quebec-canal04",
+        "quebec-canal05",
+        "quebec-canal06",
+        "quebec-canal07",
+        "quebec-canal08",
+        "quebec-canal09",
+        "quebec-canal10",
+        "quebec-canal11",
+        "quebec-canal12",
+        "quebec-canal13",
+        "quebec-canal14"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 8 bytes"
+    },
+    {
+      "url": "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeEnDirect",
+      "method": "POST",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "quebec-canal01",
+        "quebec-canal02",
+        "quebec-canal03",
+        "quebec-canal04",
+        "quebec-canal05",
+        "quebec-canal06",
+        "quebec-canal07",
+        "quebec-canal08",
+        "quebec-canal09",
+        "quebec-canal10",
+        "quebec-canal11",
+        "quebec-canal12",
+        "quebec-canal13",
+        "quebec-canal14"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 8 bytes"
+    },
+    {
+      "url": "https://www.bayern.landtag.de/aktuelles/sitzungen/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "bavaria-landtag-plenum-online"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 23936 bytes"
+    },
+    {
+      "url": "https://www.bundestag.de/mediathek",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "germany-bundestag-1"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 286826 bytes"
+    },
+    {
+      "url": "https://www.camara.cl/prensa/television.aspx",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "chile-camara-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "brazil-tv-camara"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 66962 bytes"
+    },
+    {
+      "url": "https://www.chd.lu/fr/agenda",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "luxembourg-chamber-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 181627 bytes"
+    },
+    {
+      "url": "https://www.coe.int/en/web/portal/live",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "council-of-europe-pace-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.congreso.es/es/programacion",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "spain-canal-parlamento",
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.congresojal.gob.mx/agenda-parlamentaria/mes",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "jalisco-canal-parlamento"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 68609 bytes"
+    },
+    {
+      "url": "https://www.cortsvalencianes.es/es/actividad/actualidad/agenda",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "valencia-canal-corts"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 83941 bytes"
+    },
+    {
+      "url": "https://www.cpac.ca/schedule/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "cpac-ca"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 148368 bytes"
+    },
+    {
+      "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "denmark-folketinget"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/calendar.html",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "manitoba-house-broadcasts"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 10508 bytes"
+    },
+    {
+      "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.knesset.tv/live/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "israel-knesset-channel"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 38824 bytes"
+    },
+    {
+      "url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "baden-wurttemberg-landtag-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 399834 bytes"
+    },
+    {
+      "url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "north-rhine-westphalia-landtag-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 261494 bytes"
+    },
+    {
+      "url": "https://www.leg.bc.ca/index.php/parliamentary-business/parliamentary-calendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "british-columbia-legislature-webcasts"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 201703 bytes"
+    },
+    {
+      "url": "https://www.legassembly.sk.ca/parliamentary-calendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "saskatchewan-legislative-proceedings"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 27773 bytes"
+    },
+    {
+      "url": "https://www.ntlegislativeassembly.ca/committees",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "northwest-territories-watch-session"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 509718 bytes"
+    },
+    {
+      "url": "https://www.oireachtas.ie/en/committees/schedule/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 639426 bytes"
+    },
+    {
+      "url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 95714 bytes"
+    },
+    {
+      "url": "https://www.ola.org/en/legislative-business/calendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-media-en",
+        "ontario-rm151-en"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 104786 bytes"
+    },
+    {
+      "url": "https://www.osce.org/live",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "osce-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 62379 bytes"
+    },
+    {
+      "url": "https://www.parlament.cat/web/index.html",
+      "method": "GET",
+      "status": "error",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "catalonia-canal-parlament"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 503"
+    },
+    {
+      "url": "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "portugal-artv"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 346214 bytes"
+    },
+    {
+      "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/agendasemanal.do",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "andalusia-parliament-tv-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 59137 bytes"
+    },
+    {
+      "url": "https://www.parliament.nsw.gov.au/parliamentary-business/sitting-day-calendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "new-south-wales-parliament-webcasts"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 85955 bytes"
+    },
+    {
+      "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Sitting-Dates/Dates",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "queensland-parliament-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 186000 bytes"
+    },
+    {
+      "url": "https://www.parliament.vic.gov.au/sittingcalendar",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "victoria-parliament-watch"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 70340 bytes"
+    },
+    {
+      "url": "https://www.parliament.wa.gov.au/parliament/sitting-dates",
+      "method": "GET",
+      "status": "access_blocked",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "western-australia-parliament-live"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "HTTP 403"
+    },
+    {
+      "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 162390 bytes"
+    },
+    {
+      "url": "https://www.scottishparliament.tv/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "scottish-parliament-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 101996 bytes"
+    },
+    {
+      "url": "https://www.senedd.tv/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "senedd-tv"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 62836 bytes"
+    },
+    {
+      "url": "https://www.stortinget.no/nett-tv",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "norway-stortinget"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 72422 bytes"
+    },
+    {
+      "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-actualiteitenkanaal",
+        "netherlands-tweede-kamer-aletta-jacobszaal"
+      ],
+      "scraper_status": [
+        "planned"
+      ],
+      "detail": "Retrieved 81350 bytes"
+    },
+    {
+      "url": "https://www3.parliament.nz/en/calendar/",
+      "method": "GET",
+      "status": "reachable",
+      "checked_at": "2026-08-19T17:49:37Z",
+      "channel_ids": [
+        "new-zealand-parliament"
+      ],
+      "scraper_status": [
+        "implemented"
+      ],
+      "detail": "Retrieved 79844 bytes"
+    }
+  ]
+}

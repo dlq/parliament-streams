@@ -115,6 +115,21 @@
       "id": "ontario-legislative-assembly-streams",
       "outcome": "kept_noncommercial_pending_review_accessibility_improved",
       "reason": "Shared Ontario terms and accessibility evidence were applied to six direct-HLS records. Caption availability is now recorded as available in English, sign-language as source-dependent, and audio description remains unknown; full live-stream reuse still needs written clarification."
+    },
+    {
+      "id": "validation-history-gap-health",
+      "outcome": "retained_health_evidence_added",
+      "reason": "Focused health report covered the 26 entries without retained validation history. Validation history now covers all 86 catalogue records; four official pages returned errors from this environment and Jalisco returned an HLS sample-variant warning, which remain visible as review evidence."
+    },
+    {
+      "id": "uk-devolved-and-bc-accessibility",
+      "outcome": "sign_language_evidence_improved",
+      "reason": "Official evidence updated Scottish Parliament TV, Senedd TV, Northern Ireland Assembly TV, and BC Legislature accessibility notes. Captions remain unchanged in aggregate, sign-language unknowns fell from 77 to 71, and audio-description remains unknown for all records."
+    },
+    {
+      "id": "netherlands-tweede-kamer-accessibility",
+      "outcome": "sign_language_evidence_improved",
+      "reason": "Tweede Kamer live-debate and Debat Direct evidence now supports source-dependent Dutch Sign Language coverage across the three Tweede Kamer records while preserving caption availability and unknown audio-description status."
     }
   ],
   "recommended_order": [
@@ -124,9 +139,10 @@
     "For accessibility, start with sources that already claim captions or interpretation in the catalogue, then replace unknown fields only with cited official evidence."
   ],
   "validation_history_coverage": {
-    "channels_with_retained_history": 60,
-    "channels_without_retained_history": 26,
-    "history_limit_per_channel": 3
+    "channels_with_retained_history": 86,
+    "channels_without_retained_history": 0,
+    "history_limit_per_channel": 3,
+    "latest_gap_report": "reports/health/2026-08-19-validation-gap-health.json"
   },
   "captions_status": [
     {
@@ -149,11 +165,11 @@
     },
     {
       "status": "source_dependent",
-      "count": 7
+      "count": 13
     },
     {
       "status": "unknown",
-      "count": 77
+      "count": 71
     }
   ],
   "audio_description_status": [
