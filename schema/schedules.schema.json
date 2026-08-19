@@ -55,6 +55,22 @@
         "current_event_time": { "type": "string", "minLength": 1 },
         "next_event_title": { "type": ["string", "null"] },
         "next_event_time": { "type": ["string", "null"] },
+        "current_event_url": { "type": "string", "format": "uri" },
+        "current_event_id": { "type": "string", "minLength": 1 },
+        "current_event_status": { "type": "string", "minLength": 1 },
+        "current_event_location": { "type": "string", "minLength": 1 },
+        "current_event_language": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$"
+        },
+        "next_event_url": { "type": "string", "format": "uri" },
+        "next_event_id": { "type": "string", "minLength": 1 },
+        "next_event_status": { "type": "string", "minLength": 1 },
+        "next_event_location": { "type": "string", "minLength": 1 },
+        "next_event_language": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$"
+        },
         "confidence": { "type": "string", "minLength": 1 },
         "scraper": { "type": "string", "minLength": 1 },
         "source_url": { "type": "string", "format": "uri" },

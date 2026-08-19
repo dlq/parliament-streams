@@ -74,9 +74,11 @@ Done:
   rights decisions. Daily always-on stream regressions use separate deduplicated
   issues that close on recorded recovery.
 - Canada federal ParlVU and Senate SenVu are now represented as official
-  event-platform link-out records. The public Harmony landing pages have an
-  implemented upcoming-event scraper; the undocumented API and direct stream
-  manifests remain research items.
+  event-platform and official-archive link-out records. The public Harmony
+  landing pages have an implemented upcoming-event scraper that can expose
+  official event links, event IDs, language state, status labels, and
+  chamber/room labels when present. The undocumented API, archive-event
+  enrichment, and direct stream manifests remain research items.
 - Schema v7 separates coarse `source_type` from precise `source_kind`, and adds
   `stability_risk` so technical playback, provenance, drift risk, and rights
   posture are no longer collapsed into one field.
@@ -103,8 +105,9 @@ Done:
   research so users can distinguish technical playback from safer official
   routes more quickly.
 - Fallback records now reuse the static schedule snapshot for related entries
-  and can show current/next event titles beside official fallback links when
-  that metadata is available.
+  and can show linked current/next event titles, event IDs, status labels, and
+  chamber/room labels beside official fallback links when that metadata is
+  available.
 
 Retired from the active project:
 
@@ -203,10 +206,17 @@ event-based pages are stable channel streams.
 
 Priority order:
 
-1. ParlVU and SenVu active-event URLs, archive links, language state, and
-   committee/chamber labels from supported Harmony surfaces.
-2. Official YouTube live-page resolution for current/upcoming event IDs, without
-   extracting YouTube manifests or requiring a public API key.
+1. Finish ParlVU and SenVu archive-event enrichment. Harmony archive landing
+   pages are now represented as official link-out fallbacks, and the
+   upcoming-event scraper captures official event URLs, stable event IDs,
+   language state, status labels, and committee/chamber room labels when
+   present.
+2. Official YouTube live-page resolution has a first implementation for the UK,
+   Australia, and Costa Rica YouTube records. It checks official `/live` pages
+   for explicit watch metadata and records current video IDs when present,
+   without extracting YouTube manifests or requiring a public API key. Current
+   static checks show these pages often render as channel tabs with no clear
+   active event, so unresolved pages intentionally return empty.
 3. HouseLive, C-SPAN, Parliamentlive.tv, and similar official event pages with
    stable identifiers and rights-aware display rules.
 
@@ -269,10 +279,14 @@ Near-term:
 2. Use `stability_risk` in automated audit prioritization and in any future
    reviewer queues.
 3. Expand event resolver behavior for `data/fallbacks.json`: ParlVU and SenVu
-   can now surface collected Harmony now/next metadata beside fallback links,
-   but active event URLs, archive enrichment, HouseLive, C-SPAN,
-   Parliamentlive.tv, and official YouTube live pages still need stable event
-   identifiers and rights-aware display rules. Promote a fallback into
+   can now surface collected Harmony now/next metadata, official event links,
+   event IDs, language state, status labels, and chamber/room labels beside
+   fallback links, and House/Senate archive pages are present as official
+   link-out fallbacks. Official YouTube live pages can now provide current
+   video IDs when YouTube exposes explicit watch metadata, but they are not
+   guaranteed live-only feeds. Archive-event enrichment, HouseLive, C-SPAN, and
+   Parliamentlive.tv still need stable event identifiers and rights-aware
+   display rules. Promote a fallback into
    `data/channels.json` only when it has a stable channel identity and a
    supportable playback or link-out posture.
 4. Decide whether supranational institutions need a separate `entity_type` or
@@ -285,10 +299,12 @@ Near-term:
 7. Canada federal ParlVU/SenVu has been added to the catalogue as official
     event-platform link-out entries. Keep it separate from CPAC because CPAC is a
     broadcaster/channel partner, while Harmony is the closer official House and
-    Senate proceedings surface. Landing-page upcoming-event scraping is
-    implemented; next work is active-event playback validation, archive/event
-    enrichment, and confirming whether the undocumented API has a stable
-    supported access pattern.
+    Senate proceedings surface. Landing-page upcoming-event scraping now
+    captures official event links, event IDs, language state, status, and room
+    labels; archive landing pages are represented as official fallbacks. Next
+    work is archive-event enrichment, active-event playback validation, and
+    confirming whether the undocumented API has a stable supported access
+    pattern.
 
 The 2026-08-16 sub-national promotion pass completed the previous strong-candidate
 list. It added 18 official-player and schedule records across Canada, Australia,
@@ -499,8 +515,10 @@ Near-term:
 5. Keep CPAC marked `no_third_party_reuse` unless written consent is obtained.
 6. Keep YouTube sources compliant-embed only; do not extract YouTube manifests.
    The current permanent uploads playlists are useful fallbacks but are not
-   guaranteed live-only feeds. Consider a scheduled catalogue refresh that
-   records current or upcoming official video IDs without exposing an API key.
+   guaranteed live-only feeds. The metadata-only `youtube-live` resolver can
+   record current official video IDs when static live-page metadata is explicit;
+   future work is to decide whether YouTube Data API support is worth the
+   operational/API-key cost for better scheduled-event metadata.
 7. Replace the current `unknown` accessibility states with cited evidence for
    captions and caption languages, sign-language interpretation, and audio
    description. Do not equate missing evidence with confirmed unavailability.

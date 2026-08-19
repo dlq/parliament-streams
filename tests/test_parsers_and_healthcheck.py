@@ -22,11 +22,33 @@ from parliament_streams.scrapers import (
     portugal_agenda,
     quebec_webdiffusion,
     uk_parliament,
+    youtube_live,
 )
 from parliament_streams.scrapers.common import clean_html, first_match, parse_iso
 
 
 class ParserTests(unittest.TestCase):
+    def test_youtube_live_parser_ignores_unresolved_channel_page(self):
+        html = '<link rel="canonical" href="https://www.youtube.com/@AUSParliamentLive/live">'
+        self.assertEqual(youtube_live.parse(html, channel_id="australia-parliament-youtube"), {})
+
+    def test_youtube_live_parser_uses_explicit_watch_metadata(self):
+        html = """
+        <link rel="canonical" href="https://www.youtube.com/watch?v=abcDEF12345">
+        <meta property="og:title" content="Parliament live - YouTube">
+        <script>{"isLiveNow":true,"urlCanonical":"https://www.youtube.com/watch?v=abcDEF12345"}</script>
+        """
+        parsed = youtube_live.parse(
+            html,
+            now=datetime(2026, 8, 19, 12, tzinfo=UTC),
+            channel_id="australia-parliament-youtube",
+        )["australia-parliament-youtube"]
+        self.assertEqual(parsed["current_event_title"], "Parliament live")
+        self.assertEqual(parsed["current_event_time"], "Live now")
+        self.assertEqual(parsed["current_event_url"], "https://www.youtube.com/watch?v=abcDEF12345")
+        self.assertEqual(parsed["current_event_id"], "abcDEF12345")
+        self.assertEqual(parsed["current_event_status"], "Live now")
+
     def test_italian_senate_json_schedule(self):
         payload = json.dumps(
             [
@@ -236,6 +258,7 @@ class ParserTests(unittest.TestCase):
 
     def test_canada_harmony_parser_extracts_upcoming_cards(self):
         html = """
+        <html lang="en"><script>var language = "en";</script>
         <div class="divEvent" >
           <a href="/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441"
              title="DVSC meeting no. 1">
@@ -277,7 +300,18 @@ class ParserTests(unittest.TestCase):
             parsed["current_event_title"], "DVSC meeting no. 1 - Subcommittee on Diversity"
         )
         self.assertEqual(parsed["current_event_time"], "10:00 AM ET")
+        self.assertEqual(
+            parsed["current_event_url"],
+            "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441",
+        )
+        self.assertEqual(parsed["current_event_id"], "15441")
+        self.assertEqual(parsed["current_event_status"], "Not Started")
+        self.assertEqual(parsed["current_event_location"], "Room B45")
+        self.assertEqual(parsed["current_event_language"], "en")
         self.assertEqual(parsed["next_event_title"], "Senate sitting no. 87")
+        self.assertEqual(parsed["next_event_id"], "15434")
+        self.assertEqual(parsed["next_event_location"], "Senate Chamber")
+        self.assertEqual(parsed["next_event_language"], "en")
 
     def test_canada_harmony_collects_house_and_senate_pages(self):
         responses = {

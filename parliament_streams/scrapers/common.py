@@ -39,6 +39,11 @@ class ScheduleEvent(TypedDict):
 
     start: datetime
     title: str
+    url: NotRequired[str]
+    event_id: NotRequired[str]
+    status: NotRequired[str]
+    location: NotRequired[str]
+    language: NotRequired[str]
 
 
 class ScheduleMetadata(TypedDict):
@@ -48,6 +53,16 @@ class ScheduleMetadata(TypedDict):
     current_event_time: str
     next_event_title: str | None
     next_event_time: str | None
+    current_event_url: NotRequired[str]
+    current_event_id: NotRequired[str]
+    current_event_status: NotRequired[str]
+    current_event_location: NotRequired[str]
+    current_event_language: NotRequired[str]
+    next_event_url: NotRequired[str]
+    next_event_id: NotRequired[str]
+    next_event_status: NotRequired[str]
+    next_event_location: NotRequired[str]
+    next_event_language: NotRequired[str]
     confidence: str
 
 

@@ -4349,6 +4349,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "whatson_calendar_events_api",
           "scraper_status": "implemented"
+        },
+        {
+          "scraper": "youtube-live",
+          "url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+          "method": "GET",
+          "kind": "official_youtube_live_page",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -4437,6 +4444,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "notes": null
       },
       "epg_sources": [
+        {
+          "scraper": "youtube-live",
+          "url": "https://www.youtube.com/@AUSParliamentLive/live",
+          "method": "GET",
+          "kind": "official_youtube_live_page",
+          "scraper_status": "implemented"
+        },
         {
           "scraper": "planned",
           "url": "https://www.aph.gov.au/News_and_Events/Watch_Parliament",
@@ -4680,6 +4694,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "notes": null
       },
       "epg_sources": [
+        {
+          "scraper": "youtube-live",
+          "url": "https://www.youtube.com/@AsambleaCRC/live",
+          "method": "GET",
+          "kind": "official_youtube_live_page",
+          "scraper_status": "implemented"
+        },
         {
           "scraper": "planned",
           "url": "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx",
@@ -6917,6 +6938,50 @@ window.PARLIAMENT_STREAMS_FALLBACKS = {
       "notes": "Use the public Harmony landing-page scraper for upcoming metadata and link users to official event pages. Do not claim a stable Senate channel feed or reuse event media without separate permission."
     },
     {
+      "id": "canada-house-of-commons-parlvu-recordings",
+      "related_channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "label": "Canada House of Commons ParlVU recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "House of Commons of Canada",
+      "fallback_type": "official_archive",
+      "official_url": "https://parlvu.parl.gc.ca/Harmony/en/View/EventListView/",
+      "integration_mode": "link_out",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "none",
+      "stability_risk": "medium",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://parlvu.parl.gc.ca/Harmony/en/View/EventListView/",
+        "https://www.ourcommons.ca/en/important-notices"
+      ],
+      "notes": "Official Harmony recordings view for House and committee proceedings. Treat as archive link-out until archive event identifiers and reuse terms are documented well enough for metadata integration."
+    },
+    {
+      "id": "canada-senate-senvu-recordings",
+      "related_channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "label": "Canada Senate SenVu recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "Senate of Canada",
+      "fallback_type": "official_archive",
+      "official_url": "https://senparlvu.parl.gc.ca/Harmony/en/View/EventListView/",
+      "integration_mode": "link_out",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "none",
+      "stability_risk": "medium",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://senparlvu.parl.gc.ca/Harmony/en/View/EventListView/",
+        "https://sencanada.ca/en/intellectual-property/#permission"
+      ],
+      "notes": "Official Harmony recordings view for Senate proceedings and committee meetings. Treat as archive link-out until archive event identifiers and reuse terms are documented well enough for metadata integration."
+    },
+    {
       "id": "uk-parliament-youtube-live",
       "related_channel_ids": [
         "uk-parliament-youtube"
@@ -6959,6 +7024,50 @@ window.PARLIAMENT_STREAMS_FALLBACKS = {
         "https://whatson.parliament.uk/"
       ],
       "notes": "Keep as an official link-out fallback unless supported native playback or documented embedding terms are found. The separate What's on API is the better schedule source."
+    },
+    {
+      "id": "australia-parliament-youtube-live",
+      "related_channel_ids": [
+        "australia-parliament-youtube"
+      ],
+      "label": "Australia Parliament YouTube live page",
+      "jurisdiction_level": "national",
+      "country_or_region": "Australia",
+      "legislature": "Parliament of Australia",
+      "fallback_type": "official_youtube_live",
+      "official_url": "https://www.youtube.com/@AUSParliamentLive/live",
+      "integration_mode": "provider_embed",
+      "playback_claim": "provider_managed_embed",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "medium",
+      "rights_status": "embed_only",
+      "evidence_urls": [
+        "https://www.youtube.com/@AUSParliamentLive/live",
+        "https://www.aph.gov.au/News_and_Events/Watch_Parliament"
+      ],
+      "notes": "The catalogue can embed official YouTube surfaces through the provider. The live-page resolver may improve current-event selection when YouTube exposes explicit watch metadata, but it does not extract or relay manifests."
+    },
+    {
+      "id": "costa-rica-assembly-youtube-live",
+      "related_channel_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "label": "Costa Rica Assembly YouTube live page",
+      "jurisdiction_level": "national",
+      "country_or_region": "Costa Rica",
+      "legislature": "Asamblea Legislativa",
+      "fallback_type": "official_youtube_live",
+      "official_url": "https://www.youtube.com/@AsambleaCRC/live",
+      "integration_mode": "provider_embed",
+      "playback_claim": "provider_managed_embed",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "medium",
+      "rights_status": "embed_only",
+      "evidence_urls": [
+        "https://www.youtube.com/@AsambleaCRC/live",
+        "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx"
+      ],
+      "notes": "The catalogue can embed official YouTube surfaces through the provider. The live-page resolver may improve current-event selection when YouTube exposes explicit watch metadata, but it does not extract or relay manifests."
     },
     {
       "id": "us-cspan-congress",

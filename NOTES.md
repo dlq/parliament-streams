@@ -1796,3 +1796,37 @@ supranational or official-page cases. The tracker records public contact routes,
 draft templates, question focus, and response-handling rules. It should store
 only public contact details, dates, cited response summaries, and resulting
 catalogue decisions, not raw private correspondence.
+
+## 2026-08-19 Event Resolver V2 start
+
+Implemented the first Harmony event-resolver slice for ParlVU and SenVu
+fallbacks. The existing public landing-page scraper now preserves official
+`PowerBrowserV2` event links, event IDs, language state, status labels, and
+chamber/room labels when those fields appear in server-rendered upcoming-event
+cards. Schedule snapshots remain backward-compatible because the new fields are
+optional.
+
+The public catalogue renders schedule event titles as official links when an
+event URL is available, including within related fallback records. Separate
+official archive fallback records now point to the House and Senate Harmony
+recordings views. The catalogue still does not promote event-specific pages or
+off-air manifests into permanent channel streams. Remaining Harmony work:
+archive-event enrichment, active-event playback validation, and deciding whether
+the undocumented Harmony API is stable and supported enough to use.
+
+## 2026-08-19 Official YouTube live resolver
+
+Added a conservative metadata-only resolver for the official YouTube `/live`
+pages already in the catalogue: UK Parliament, Australia Parliament Live, and
+Costa Rica's Asamblea Legislativa. The resolver looks for explicit watch-page
+metadata such as canonical or Open Graph watch URLs and records the provider
+video ID, status, title, and official watch link when present. The public app
+then embeds that provider watch video through `youtube-nocookie.com`.
+
+Static checks of the three live pages on 2026-08-19 showed that they commonly
+render as channel-tab pages rather than resolved watch pages. They did not
+expose reliable `isLiveNow`, live-badge, or upcoming-event markers in the
+static payloads tested from this environment. For that reason the scraper
+returns empty unless the watch metadata is explicit. This keeps YouTube as a
+provider-managed embed fallback, not an HLS substitute, and avoids extracting
+YouTube manifests.

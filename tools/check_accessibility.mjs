@@ -107,8 +107,28 @@ try {
         "canada-house-of-commons-parlvu": {
           current_event_title: "House of Commons sitting",
           current_event_time: "Live now",
+          current_event_url: "https://parlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441",
+          current_event_id: "15441",
+          current_event_status: "In Progress",
+          current_event_location: "House of Commons",
+          current_event_language: "en",
           next_event_title: "Finance committee",
           next_event_time: "2:00 PM",
+          next_event_url: "https://parlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15442",
+          next_event_id: "15442",
+          next_event_status: "Not Started",
+          next_event_location: "Room 253-D",
+          next_event_language: "en",
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
+        "australia-parliament-youtube": {
+          current_event_title: "Australia Parliament live",
+          current_event_time: "Live now",
+          current_event_url: "https://www.youtube.com/watch?v=abcDEF12345",
+          current_event_id: "abcDEF12345",
+          current_event_status: "Live now",
+          next_event_title: null,
+          next_event_time: null,
           fetched_at: "2026-08-17T12:00:00Z",
         },
       },
@@ -167,7 +187,7 @@ try {
   assert.notEqual(await youtubeRow.evaluate((element) => getComputedStyle(element).boxShadow), "none");
   const youtubeFrame = page.locator("#media-frame iframe");
   assert.equal(await youtubeFrame.count(), 1);
-  assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed/);
+  assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed\/abcDEF12345/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
@@ -175,8 +195,11 @@ try {
   assert.match(await page.locator(".fallback-record").innerText(), /Canada House of Commons ParlVU events/);
   assert.match(await page.locator(".fallback-record").innerText(), /Event platform · Event resolver planned · Schedule source/);
   assert.match(await page.locator(".fallback-record").innerText(), /Now: House of Commons sitting/);
+  assert.match(await page.locator(".fallback-record").innerText(), /English · House of Commons · In Progress/);
   assert.match(await page.locator(".fallback-record").innerText(), /Next: Finance committee/);
-  assert.match(await page.locator(".fallback-record a").getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
+  assert.match(await page.locator(".fallback-record").innerText(), /English · Room 253-D · Not Started/);
+  assert.match(await page.locator(".fallback-record > dd > .fallback-list > li > a").first().getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
+  assert.match(await page.locator(".fallback-schedule a").first().getAttribute("href"), /PowerBrowserV2\/20260819\/-1\/15441/);
   assert.match(await page.locator(".validation-record").innerText(), /LATEST VALIDATION/);
   assert.match(await page.locator(".validation-record").innerText(), /Access status OK/);
 

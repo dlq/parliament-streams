@@ -52,6 +52,15 @@ application. Earlier application work remains available in Git history.
 - Source-row posture labels for playable, link-out, fallback, and research
   records, plus fallback now/next hints sourced from already-collected schedule
   metadata.
+- Optional schedule event URL, ID, language, status, and location fields, with
+  Harmony parsing and public fallback rendering for official ParlVU/SenVu event
+  links.
+- Official House ParlVU and Senate SenVu recordings fallbacks, kept link-out
+  while archive-event metadata and playback rights remain unresolved.
+- A conservative official YouTube live-page resolver for the UK, Australia, and
+  Costa Rica records. It records a current provider watch video only when the
+  official `/live` page exposes explicit watch metadata; otherwise it leaves the
+  source on the existing uploads-playlist embed.
 - Ontario source-family accessibility evidence across its six feeds, including
   documented English captions and source-dependent sign-language treatment while
   keeping full-stream reuse permission conservative.

@@ -143,7 +143,9 @@ The catalogue includes:
   Nunavut, plus supranational EU/UN/Council of Europe/OSCE targets;
 - fallback records for official event/player surfaces such as ParlVU, SenVu,
   Parliamentlive.tv, YouTube live pages, C-SPAN, and HouseLive where native
-  playback is not yet supported or appropriate;
+  playback is not yet supported or appropriate. Related schedule snapshots can
+  expose official event links, event IDs, language state, status labels, and
+  room labels when a scraper can collect them;
 - permission status, evidence links, and reuse recommendations for every
   channel entry;
 - explicit caption, caption-language, sign-language, and audio-description
@@ -191,7 +193,10 @@ permanent official uploads playlist. The playlist starts with the latest
 published item and may show an active broadcast when YouTube places it first;
 it is not represented as a guaranteed live-only feed. The official outbound
 link points to the channel's stable live page, which may redirect to an active
-or upcoming event. The catalogue does not extract YouTube manifests.
+or upcoming event. A conservative schedule resolver records a current YouTube
+watch video ID only when the official live page exposes explicit watch
+metadata; otherwise the app keeps the playlist embed. The catalogue does not
+extract YouTube manifests.
 
 Every native player includes the recorded source attribution and direct links
 to relevant supporting sources. Its detail view also presents the latest

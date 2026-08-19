@@ -393,6 +393,11 @@ function languageMarkup(language) {
     return displayName && displayName !== code ? displayName : name;
   }).join("<br>");
 }
+function languageDisplayName(language) {
+  if (!language) return "";
+  const displayNames = new Intl.DisplayNames([state.locale], { type: "language", fallback: "code" });
+  return localeLanguageNames[state.locale]?.[language] ?? displayNames.of(language) ?? language;
+}
 function contentLanguageTag(channel) {
   const firstLanguage = channel.language.split(" / ")[0];
   return firstLanguage === "Multilingual" ? "" : languageCodes[firstLanguage] ?? "";
@@ -566,10 +571,32 @@ function programmeMarkup(channel) {
   const schedule = state.schedules[channel.id];
   if (!schedule) return "";
   const record = schedule;
-  const programmeLine = (labelKey, title, time) => `<span class="programme-line"><strong lang="${state.locale}">${t(labelKey)}</strong> <span${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)}${time ? ` <span class="programme-time">· ${escapeHtml(time)}</span>` : ""}</span></span>`;
-  const current = programmeLine("nowProgramme", record.current_event_title, record.current_event_time);
+  const programmeLine = (labelKey, title, time, url, language, location, status) => {
+    const titleMarkup = url
+      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer"${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)} ↗</a>`
+      : `<span${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)}</span>`;
+    const metadata = [time, languageDisplayName(language), location, status].filter(Boolean).map(escapeHtml).join(" · ");
+    return `<span class="programme-line"><strong lang="${state.locale}">${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <span class="programme-time">· ${metadata}</span>` : ""}</span>`;
+  };
+  const current = programmeLine(
+    "nowProgramme",
+    record.current_event_title,
+    record.current_event_time,
+    record.current_event_url,
+    record.current_event_language,
+    record.current_event_location,
+    record.current_event_status,
+  );
   const next = record.next_event_title
-    ? programmeLine("nextProgramme", record.next_event_title, record.next_event_time)
+    ? programmeLine(
+      "nextProgramme",
+      record.next_event_title,
+      record.next_event_time,
+      record.next_event_url,
+      record.next_event_language,
+      record.next_event_location,
+      record.next_event_status,
+    )
     : "";
   const freshness = schedule
     ? `<span class="detail-subtitle programme-fetch-status">${t("scheduleCollected", { date: escapeHtml(new Date(schedule.fetched_at).toLocaleString(state.locale)) })}</span>`
@@ -584,11 +611,34 @@ function fallbackScheduleMarkup(fallback) {
     .map((channelId) => state.schedules[channelId])
     .find(Boolean);
   if (!relatedSchedule) return "";
+  const eventLine = (labelKey, title, url, time, language, location, status) => {
+    const titleMarkup = url
+      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(title)} ↗</a>`
+      : escapeHtml(title);
+    const metadata = [time, languageDisplayName(language), location, status].filter(Boolean).map(escapeHtml).join(" · ");
+    return `<span><strong>${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <em>${metadata}</em>` : ""}</span>`;
+  };
   const current = relatedSchedule.current_event_title
-    ? `<span><strong>${t("nowProgramme")}</strong> ${escapeHtml(relatedSchedule.current_event_title)}</span>`
+    ? eventLine(
+      "nowProgramme",
+      relatedSchedule.current_event_title,
+      relatedSchedule.current_event_url,
+      relatedSchedule.current_event_time,
+      relatedSchedule.current_event_language,
+      relatedSchedule.current_event_location,
+      relatedSchedule.current_event_status,
+    )
     : "";
   const next = relatedSchedule.next_event_title
-    ? `<span><strong>${t("nextProgramme")}</strong> ${escapeHtml(relatedSchedule.next_event_title)}</span>`
+    ? eventLine(
+      "nextProgramme",
+      relatedSchedule.next_event_title,
+      relatedSchedule.next_event_url,
+      relatedSchedule.next_event_time,
+      relatedSchedule.next_event_language,
+      relatedSchedule.next_event_location,
+      relatedSchedule.next_event_status,
+    )
     : "";
   return current || next ? `<small class="fallback-schedule">${current}${next}</small>` : "";
 }
@@ -778,6 +828,13 @@ function freshnessMarkup(channel) {
     </dd>
   </div>`;
 }
+function youtubeEmbedUrl(channel) {
+  const videoId = state.schedules[channel.id]?.current_event_id;
+  if (channel.embed?.provider === "youtube" && /^[A-Za-z0-9_-]{11}$/.test(videoId || "")) {
+    return `https://www.youtube-nocookie.com/embed/${videoId}`;
+  }
+  return channel.embed?.url || "";
+}
 function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   const channel = state.channels.find((item) => item.id === state.selectedId);
@@ -849,8 +906,9 @@ async function startPlayback(channel) {
       return;
     }
     const iframe = document.createElement("iframe");
-    const separator = channel.embed.url.includes("?") ? "&" : "?";
-    iframe.src = `${channel.embed.url}${separator}autoplay=1&playsinline=1&rel=0&hl=${encodeURIComponent(state.locale)}`;
+    const embedUrl = youtubeEmbedUrl(channel);
+    const separator = embedUrl.includes("?") ? "&" : "?";
+    iframe.src = `${embedUrl}${separator}autoplay=1&playsinline=1&rel=0&hl=${encodeURIComponent(state.locale)}`;
     iframe.title = `${channel.name} · YouTube`;
     iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
