@@ -38,7 +38,7 @@
     },
     {
       "status": "explicit_reuse_with_conditions",
-      "count": 33
+      "count": 34
     },
     {
       "status": "no_third_party_reuse",
@@ -50,7 +50,7 @@
     },
     {
       "status": "personal_use_pending_review",
-      "count": 37
+      "count": 36
     }
   ],
   "pending_permission_by_source_kind": [
@@ -68,7 +68,7 @@
     },
     {
       "source_kind": "official_vendor_hls",
-      "count": 23
+      "count": 22
     }
   ],
   "unknown_accessibility_by_level": [
@@ -85,8 +85,35 @@
       "count": 6
     }
   ],
+  "reviewed_during_followup": [
+    {
+      "id": "france-national-assembly",
+      "outcome": "moved_to_explicit_reuse_with_conditions",
+      "reason": "Official Assembly site terms cover public or official multimedia resources, debates, and parliamentary documents with non-commercial/no-ad, free-redistribution, integrity, attribution, source, and original-link conditions."
+    },
+    {
+      "id": "israel-knesset-channel",
+      "outcome": "kept_pending_review",
+      "reason": "Terms include permission for Knesset proceedings with required credit, but the site/app is personal by default and the channel also carries non-proceeding programming."
+    },
+    {
+      "id": "india-sansad-tv-1",
+      "outcome": "kept_pending_review",
+      "reason": "Sansad TV identity was confirmed, but no direct Sansad TV reuse terms were found; related Digital Sansad policy requires permission for reproduction."
+    },
+    {
+      "id": "india-sansad-tv-2",
+      "outcome": "kept_pending_review",
+      "reason": "Same evidence and recommendation as india-sansad-tv-1."
+    },
+    {
+      "id": "thailand-parliament-tv",
+      "outcome": "kept_pending_review",
+      "reason": "TPchannel official operation and live/OTT access were confirmed, but no source-specific reuse or embedding terms were found."
+    }
+  ],
   "recommended_order": [
-    "Review shared official-vendor rights families first, because 23 pending records use official-vendor HLS.",
+    "Review shared official-vendor rights families first, because 22 pending records use official-vendor HLS.",
     "Review first-party HLS records next, because they are easiest to reason about technically and most valuable for playback confidence.",
     "Review official-page fallback records after the fallback dataset stabilizes, because many should remain link-out regardless of direct playback evidence.",
     "For accessibility, start with sources that already claim captions or interpretation in the catalogue, then replace unknown fields only with cited official evidence."

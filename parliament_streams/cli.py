@@ -67,7 +67,7 @@ def _store(args: argparse.Namespace) -> CatalogueStore:
         site_data_path = DEFAULT_SITE_DATA_PATH
     else:
         site_data_path = None
-    return CatalogueStore(catalogue_path, site_data_path)
+    return CatalogueStore(catalogue_path=catalogue_path, site_data_path=site_data_path)
 
 
 def _cmd_validate(args: argparse.Namespace) -> int:

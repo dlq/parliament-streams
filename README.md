@@ -52,8 +52,9 @@ before editing source records.
 ## What Is Here
 
 - `site/`: a build-free static catalogue interface for GitHub Pages. It
-  loads the published `data/channels.json` artifact directly; no application
-  backend, user accounts, analytics, or server-side stream proxy is used.
+  loads the published `data/channels.json` and `data/fallbacks.json` artifacts
+  directly; no application backend, user accounts, analytics, or server-side
+  stream proxy is used.
 - `data/channels.json`: canonical source catalogue, including recorded caption,
   sign-language, audio-description, Wikidata identity, and applicable IPU
   Parline parliament/chamber identifiers.
@@ -193,6 +194,12 @@ opt-out policy, not that permission has been granted. `no_third_party_reuse`
 means the source terms expressly rule out a third-party player without separate
 permission. Source owners can request prompt removal through the repository
 owner on GitHub.
+
+Official fallback records from `data/fallbacks.json` appear in the catalogue as
+related source-detail links and as a compact fallback directory. These records
+cover event platforms, official player pages, broadcaster pages, and
+provider-managed embeds that are useful for users without claiming a stable
+direct channel stream.
 
 The deploy workflow in `.github/workflows/pages.yml` publishes the site files,
 the canonical `data/channels.json`, and a freshly collected schedule snapshot.

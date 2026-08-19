@@ -46,8 +46,8 @@ The public site is static:
 1. GitHub Pages serves files from `site/`.
 2. The page fetches `data/channels.json`.
 3. It optionally fetches `data/schedules.json`.
-4. It may use `data/fallbacks.json` for official fallback links and future
-   event-resolution UI.
+4. It fetches `data/fallbacks.json` for related fallback links and the fallback
+   directory.
 5. It renders catalogue rows, source details, rights notes, and official links.
 6. It enables native playback only when catalogue metadata permits it.
 
@@ -93,7 +93,8 @@ Fallback sources use a separate model. They can describe official event pages,
 official player pages, official broadcaster pages, and provider-managed embeds.
 Their `playback_claim` must stay conservative: a fallback can document link-out
 or provider-managed playback without asserting that a reusable direct stream
-exists.
+exists. The current site renders related fallbacks in the source detail panel
+and all recorded fallbacks in a compact directory below the catalogue.
 
 ## Maintenance Flow
 

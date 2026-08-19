@@ -37,6 +37,13 @@ application. Earlier application work remains available in Git history.
 - Durable discovery-review decisions for third-party, out-of-scope, insecure,
   and event-specific manifests so monthly audits do not reopen settled leads.
 - Tests for discovery-decision handling and bot-protection response detection.
+- A schema-validated `data/fallbacks.json` dataset, CLI validation command,
+  GitHub Pages publication, and public fallback directory for official
+  event/player/provider surfaces such as ParlVU, SenVu, Parliamentlive.tv,
+  C-SPAN, and HouseLive.
+- A focused rights/accessibility review pass that moved France National
+  Assembly to conditional-reuse status and added current Knesset, Sansad TV,
+  and TPchannel evidence without overclaiming reuse permission.
 
 - Canonical Tier 1 and Tier 2 discovery target data plus a monthly GitHub
   Actions audit that performs static and Chromium source discovery, compares

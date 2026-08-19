@@ -9,6 +9,7 @@ import { chromium } from "playwright";
 
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
+const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.json"), "utf8"));
 const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   const supportedSource = Boolean(channel.playback_url) || channel.embed?.provider === "youtube";
@@ -121,6 +122,10 @@ try {
   assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));
   assert.equal(await page.locator("#metric-updated").innerText(), expectedUpdatedDate);
   assert.equal(await page.locator(".principles-index li").count(), 5);
+  assert(canonicalFallbacks.fallbacks.length >= 6);
+  assert.equal(await page.locator("#fallback-directory-list li").count(), canonicalFallbacks.fallbacks.length);
+  assert.match(await page.locator(".fallback-directory").innerText(), /C-SPAN Congress coverage/);
+  assert.match(await page.locator(".fallback-directory").innerText(), /U\.S\. HouseLive official events/);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
   const localeCoverage = await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([locale]) => ({
@@ -157,6 +162,11 @@ try {
   assert.equal(await youtubeFrame.count(), 1);
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
+
+  await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
+  assert.match(await page.locator(".fallback-record").innerText(), /Canada House of Commons ParlVU events/);
+  assert.match(await page.locator(".fallback-record").innerText(), /Event platform · Event resolver planned · Schedule source/);
+  assert.match(await page.locator(".fallback-record a").getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
 
   const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
   await europarlRow.click();

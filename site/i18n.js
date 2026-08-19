@@ -29,6 +29,11 @@ const en = {
   openStreamsCopy: "Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.",
   sourceType: "Source type", sourceKind: "Source kind", accessStatus: "Access status", stabilityRisk: "Stability risk", useGuidance: "Use guidance", availability: "Availability",
   attribution: "Required attribution", programme: "Current programme record", identity: "External identity", schedule: "Schedule / EPG sources",
+  fallbackDirectoryLabel: "Fallback sources", fallbackDirectoryTitle: "Official pages for event-based coverage", noFallbacks: "No fallback sources recorded.",
+  fallbacks: "Official fallbacks",
+  fallbackEventPlatform: "Event platform", fallbackLivePage: "Official live page", fallbackYoutubeLive: "YouTube live", fallbackYoutubeUploads: "YouTube uploads",
+  fallbackArchive: "Archive", fallbackBroadcaster: "Broadcaster", fallbackLinkOut: "Link out", fallbackProviderEmbed: "Provider embed",
+  fallbackEventResolver: "Event resolver planned", fallbackScheduleSource: "Schedule source", fallbackNowNext: "Now/next possible", fallbackNoSchedule: "No schedule role",
   mediaAccessibility: "Media accessibility", captions: "Captions", signLanguage: "Sign language", audioDescription: "Audio description",
   a11yAvailable: "Available", a11ySourceDependent: "Varies by source or event", a11yUnavailable: "Unavailable", a11yUnknown: "Not yet verified",
   scheduleApi: "Schedule API", openScheduleData: "Open schedule data", calendarAgenda: "Calendar / agenda", liveSchedulePage: "Live schedule page", schedulePage: "Schedule page",
@@ -544,7 +549,26 @@ for (const [locale] of locales) {
   messages.catalogue ??= messages.nav;
   messages.brandHome ??= `Parliament Streams · ${messages.about}`;
   messages.primaryNavigation ??= messages.nav;
-  for (const messageKey of ["sourceKind", "stabilityRisk"]) {
+  for (const messageKey of [
+    "sourceKind",
+    "stabilityRisk",
+    "fallbacks",
+    "fallbackDirectoryLabel",
+    "fallbackDirectoryTitle",
+    "noFallbacks",
+    "fallbackEventPlatform",
+    "fallbackLivePage",
+    "fallbackYoutubeLive",
+    "fallbackYoutubeUploads",
+    "fallbackArchive",
+    "fallbackBroadcaster",
+    "fallbackLinkOut",
+    "fallbackProviderEmbed",
+    "fallbackEventResolver",
+    "fallbackScheduleSource",
+    "fallbackNowNext",
+    "fallbackNoSchedule",
+  ]) {
     messages[messageKey] ??= en[messageKey];
   }
   for (const labelKey of [

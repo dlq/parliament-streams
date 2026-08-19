@@ -13,7 +13,13 @@ from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any, Literal, TextIO, cast
 
-from .catalogue import DEFAULT_CATALOGUE_PATH, load_catalogue, load_json_object
+from .catalogue import (
+    DEFAULT_CATALOGUE_PATH,
+    DEFAULT_FALLBACKS_PATH,
+    load_catalogue,
+    load_fallbacks,
+    load_json_object,
+)
 from .models import (
     CandidateRecord,
     Catalogue,
@@ -72,6 +78,7 @@ class CatalogueStore:
     """Load, validate, and atomically persist a catalogue and site snapshot."""
 
     catalogue_path: Path = DEFAULT_CATALOGUE_PATH
+    fallbacks_path: Path = DEFAULT_FALLBACKS_PATH
     site_data_path: Path | None = DEFAULT_SITE_DATA_PATH
 
     def load(self) -> Catalogue:
@@ -83,7 +90,11 @@ class CatalogueStore:
         prepared = deepcopy(catalogue)
         prepared["generated_on"] = (generated_on or date.today()).isoformat()
         require_valid_catalogue(prepared)
-        site_data = render_site_data_payload(prepared) if self.site_data_path else None
+        site_data = (
+            render_site_data_payload(prepared, load_fallbacks(self.fallbacks_path))
+            if self.site_data_path
+            else None
+        )
         write_json(self.catalogue_path, prepared)
         if self.site_data_path and site_data is not None:
             _atomic_write_text(self.site_data_path, site_data)

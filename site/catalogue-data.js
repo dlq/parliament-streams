@@ -1076,12 +1076,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official video portal candidate without recorded reuse permission.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Assembly site states that public or official documents and multimedia resources, including debates and parliamentary documents, may be reproduced freely under conditions including no commercial/advertising use, free redistribution, document integrity, attribution, source citation, and a link to the original online document.",
         "evidence": [
-          "https://videos.assemblee-nationale.fr/direct.php"
+          "https://videos.assemblee-nationale.fr/direct.php",
+          "https://www.assemblee-nationale.fr/dyn/info-site"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Native playback may remain enabled only with clear Assembly attribution and source links, no advertising, no paywall, and no modification beyond technically necessary playback handling."
       }
     },
     {
@@ -1122,11 +1123,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
+        "captions": "available",
+        "caption_languages": [
+          "he"
+        ],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "The official Knesset Channel site publishes a live captioned broadcast page for Hebrew captions."
       },
       "epg_sources": [
         {
@@ -1202,12 +1205,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The official Knesset Channel live page exposed a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+        "summary": "Knesset Channel terms say the site/app service is personal by default, while also noting that Knesset broadcast law and regulations permit use of Knesset broadcasts, including committee and plenary broadcasts, with visible credit. The channel also carries non-proceeding programming that may require prior authorization.",
         "evidence": [
           "https://www.knesset.tv/live/",
-          "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+          "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "https://www.knesset.tv/documents/terms-and-privacy/",
+          "https://www.knesset.tv/committees/digitalknesset/35478/47690/"
         ],
-        "recommendation": "Link out or keep as pending until terms or permission are documented."
+        "recommendation": "Keep permission pending or link out unless the app can distinguish official Knesset proceedings from other Knesset Channel programming and display the required Hebrew credit."
       }
     },
     {
@@ -1639,11 +1644,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking HLS candidate without recorded reuse permission.",
+        "summary": "Sansad TV identifies itself as India's parliamentary channel, but no direct Sansad TV reuse terms were found in this pass. The Digital Sansad portal's copyright policy says portal content may not be reproduced partly or fully without permission, except source acknowledgement when referred to as part of another website.",
         "evidence": [
-          "https://sansadtv.nic.in/"
+          "https://sansadtv.nic.in/",
+          "https://sansadtv.nic.in/about-us",
+          "https://sansad.in/rs/privacyPolicy"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until direct Sansad TV playback or reuse terms are documented."
       }
     },
     {
@@ -1701,11 +1708,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking HLS candidate without recorded reuse permission.",
+        "summary": "Sansad TV identifies itself as India's parliamentary channel, but no direct Sansad TV reuse terms were found in this pass. The Digital Sansad portal's copyright policy says portal content may not be reproduced partly or fully without permission, except source acknowledgement when referred to as part of another website.",
         "evidence": [
-          "https://sansadtv.nic.in/"
+          "https://sansadtv.nic.in/",
+          "https://sansadtv.nic.in/about-us",
+          "https://sansad.in/rs/privacyPolicy"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until direct Sansad TV playback or reuse terms are documented."
       }
     },
     {
@@ -1755,11 +1764,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking HLS candidate without recorded reuse permission.",
+        "summary": "TPchannel is operated by the National Assembly Radio and Television Broadcasting Station and publishes live/OTT access, but no source-specific reuse or embedding terms were found in this pass.",
         "evidence": [
-          "https://tpchannel.org/"
+          "https://tpchannel.org/",
+          "https://www.tpchannel.org/tv/live",
+          "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until TPchannel publishes reuse terms or grants permission."
       }
     },
     {
@@ -5272,6 +5283,140 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
       }
+    }
+  ]
+};
+window.PARLIAMENT_STREAMS_FALLBACKS = {
+  "schema_version": 1,
+  "generated_on": "2026-08-19",
+  "description": "Official event, player, broadcaster, and provider surfaces that can support catalogue link-out or embed fallbacks without claiming a stable direct parliamentary channel stream.",
+  "fallbacks": [
+    {
+      "id": "canada-house-of-commons-parlvu-events",
+      "related_channel_ids": [
+        "canada-house-of-commons-parlvu"
+      ],
+      "label": "Canada House of Commons ParlVU events",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "House of Commons of Canada",
+      "fallback_type": "official_event_platform",
+      "official_url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "integration_mode": "planned_event_resolver",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "schedule_source",
+      "stability_risk": "high",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://parlvu.parl.gc.ca/Harmony/en",
+        "https://www.ourcommons.ca/en/important-notices"
+      ],
+      "notes": "Use the public Harmony landing-page scraper for upcoming metadata and link users to official event pages. Do not claim a stable channel feed or reuse event media without separate permission."
+    },
+    {
+      "id": "canada-senate-senvu-events",
+      "related_channel_ids": [
+        "canada-senate-senvu"
+      ],
+      "label": "Canada Senate SenVu events",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "Senate of Canada",
+      "fallback_type": "official_event_platform",
+      "official_url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "integration_mode": "planned_event_resolver",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "schedule_source",
+      "stability_risk": "high",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://senparlvu.parl.gc.ca/Harmony/",
+        "https://sencanada.ca/en/important-notices/"
+      ],
+      "notes": "Use the public Harmony landing-page scraper for upcoming metadata and link users to official event pages. Do not claim a stable Senate channel feed or reuse event media without separate permission."
+    },
+    {
+      "id": "uk-parliament-youtube-live",
+      "related_channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "label": "UK Parliament YouTube live page",
+      "jurisdiction_level": "national",
+      "country_or_region": "United Kingdom",
+      "legislature": "UK Parliament",
+      "fallback_type": "official_youtube_live",
+      "official_url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+      "integration_mode": "provider_embed",
+      "playback_claim": "provider_managed_embed",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "medium",
+      "rights_status": "embed_only",
+      "evidence_urls": [
+        "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+        "https://whatson.parliament.uk/"
+      ],
+      "notes": "The catalogue can embed official YouTube surfaces through the provider, but the live page is not a one-to-one replacement for Parliamentlive.tv chambers and should remain a fallback."
+    },
+    {
+      "id": "uk-parliamentlive-official-player",
+      "related_channel_ids": [
+        "uk-parliament-youtube"
+      ],
+      "label": "UK Parliamentlive.tv official player",
+      "jurisdiction_level": "national",
+      "country_or_region": "United Kingdom",
+      "legislature": "UK Parliament",
+      "fallback_type": "official_live_page",
+      "official_url": "https://www.parliamentlive.tv/",
+      "integration_mode": "link_out",
+      "playback_claim": "unsupported_native_playback",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "high",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://www.parliamentlive.tv/",
+        "https://whatson.parliament.uk/"
+      ],
+      "notes": "Keep as an official link-out fallback unless supported native playback or documented embedding terms are found. The separate What's on API is the better schedule source."
+    },
+    {
+      "id": "us-cspan-congress",
+      "related_channel_ids": [],
+      "label": "C-SPAN Congress coverage",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "United States Congress",
+      "fallback_type": "official_broadcaster",
+      "official_url": "https://www.c-span.org/congress/",
+      "integration_mode": "link_out",
+      "playback_claim": "no_direct_stream_claim",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "medium",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://www.c-span.org/congress/",
+        "https://www.c-span.org/about/copyrightsAndLicensing/"
+      ],
+      "notes": "Useful as a public official-broadcaster fallback and schedule/discovery surface, but not a direct open stream candidate without explicit reuse permission."
+    },
+    {
+      "id": "us-house-live",
+      "related_channel_ids": [],
+      "label": "U.S. HouseLive official events",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "U.S. House of Representatives",
+      "fallback_type": "official_event_platform",
+      "official_url": "https://live.house.gov/",
+      "integration_mode": "link_out",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "high",
+      "rights_status": "personal_use_pending_review",
+      "evidence_urls": [
+        "https://live.house.gov/"
+      ],
+      "notes": "Treat event pages as research and link-out fallbacks until stable event identifiers, schedule semantics, and reuse terms are documented."
     }
   ]
 };

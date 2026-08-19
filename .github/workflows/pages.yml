@@ -8,6 +8,7 @@ on:
     paths:
       - "site/**"
       - "data/channels.json"
+      - "data/fallbacks.json"
       - "parliament_streams/**"
       - "pyproject.toml"
       - "uv.lock"
@@ -44,6 +45,7 @@ jobs:
           mkdir -p _site/data
           cp -R site/. _site/
           cp data/channels.json _site/data/channels.json
+          cp data/fallbacks.json _site/data/fallbacks.json
       - name: Collect current schedules
         run: >-
           uv run --locked parliament-streams schedules-collect

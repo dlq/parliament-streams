@@ -6,6 +6,8 @@ const { locales, localizedLabel, message, supportedLocale } = window.ParliamentS
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
+const fallbacksUrl = new URL("./data/fallbacks.json", appScriptUrl);
+const localFallbacksUrl = new URL("../data/fallbacks.json", appScriptUrl);
 const schedulesUrl = new URL("./data/schedules.json", appScriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", appScriptUrl);
 const blockedPlaybackRights = new Set(["no_third_party_reuse"]);
@@ -15,7 +17,7 @@ const redundantAccessibilityNotes = new Set([
 ]);
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
+const state = { channels: [], fallbacks: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
 const elements = {
   stats: document.querySelector("#catalogue-stats"),
   list: document.querySelector("#channel-list"),
@@ -30,6 +32,9 @@ const elements = {
   sortButtons: document.querySelectorAll("[data-sort]"),
   sortHeaders: document.querySelectorAll("[data-sort-header]"),
   sortStatus: document.querySelector("#sort-status"),
+  fallbackDirectoryLabel: document.querySelector("#fallback-directory-label"),
+  fallbackDirectoryTitle: document.querySelector("#fallback-directory-title"),
+  fallbackDirectoryList: document.querySelector("#fallback-directory-list"),
 };
 
 const jurisdictionFlagAssets = {
@@ -300,6 +305,8 @@ function applyStaticTranslations() {
   setText("metric-updated-label", t("metricUpdated"));
   setText("catalogue-overview-title", t("catalogueCoverage"));
   document.querySelector("#catalogue-results").setAttribute("aria-label", t("catalogueResults"));
+  setText("fallback-directory-label", t("fallbackDirectoryLabel"));
+  setText("fallback-directory-title", t("fallbackDirectoryTitle"));
   elements.sortStatus.setAttribute("lang", state.locale);
   ["source", "jurisdiction", "format", "language", "access", "use"].forEach((key) => setText(`sort-${key}`, t(key === "language" ? "contentLanguage" : key)));
   setText("method-label", t("care"));
@@ -335,6 +342,7 @@ function setLocale(locale) {
     renderList();
     renderDetail();
     renderResearchSummary();
+    renderFallbackDirectory();
     elements.stats.textContent = t("documented", { count: state.channels.length, date: state.generatedOn });
   }
 }
@@ -607,6 +615,48 @@ function accessibilityMarkup(channel) {
     </dd>
   </div>`;
 }
+function fallbackLabel(value) {
+  return {
+    official_event_platform: t("fallbackEventPlatform"),
+    official_live_page: t("fallbackLivePage"),
+    official_youtube_live: t("fallbackYoutubeLive"),
+    official_youtube_uploads: t("fallbackYoutubeUploads"),
+    official_archive: t("fallbackArchive"),
+    official_broadcaster: t("fallbackBroadcaster"),
+    link_out: t("fallbackLinkOut"),
+    provider_embed: t("fallbackProviderEmbed"),
+    planned_event_resolver: t("fallbackEventResolver"),
+    schedule_source: t("fallbackScheduleSource"),
+    now_next_possible: t("fallbackNowNext"),
+    none: t("fallbackNoSchedule"),
+  }[value] ?? label(value);
+}
+function fallbackMarkup(channel) {
+  const related = state.fallbacks.filter((fallback) => fallback.related_channel_ids.includes(channel.id));
+  if (!related.length) return "";
+  return `<div class="full fallback-record">
+    <dt>${t("fallbacks")}</dt>
+    <dd>
+      <ul class="fallback-list">
+        ${related.map((fallback) => `
+          <li>
+            <a href="${fallback.official_url}" target="_blank" rel="noreferrer">${escapeHtml(fallback.label)} ↗</a>
+            <span>${fallbackLabel(fallback.fallback_type)} · ${fallbackLabel(fallback.integration_mode)} · ${fallbackLabel(fallback.schedule_role)}</span>
+            ${state.locale === "en" ? `<small lang="en">${escapeHtml(fallback.notes)}</small>` : ""}
+          </li>`).join("")}
+      </ul>
+    </dd>
+  </div>`;
+}
+function renderFallbackDirectory() {
+  elements.fallbackDirectoryList.innerHTML = state.fallbacks.length
+    ? state.fallbacks.map((fallback) => `
+      <li>
+        <a href="${fallback.official_url}" target="_blank" rel="noreferrer">${escapeHtml(fallback.label)} ↗</a>
+        <span>${jurisdictionName(fallback.country_or_region)} · ${fallbackLabel(fallback.fallback_type)} · ${fallbackLabel(fallback.integration_mode)}</span>
+      </li>`).join("")
+    : `<li>${t("noFallbacks")}</li>`;
+}
 function researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy) {
   if (state.locale === "en") {
     return `<p class="detail-note"><strong>${t("reuse")}</strong> <span lang="en">${channel.permission.summary} ${evidenceMarkup(channel)}</span></p>
@@ -709,6 +759,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       ${accessibilityMarkup(channel)}
       ${identityMarkup(channel)}
       <div class="full"><dt>${t("schedule")}</dt><dd>${epgMarkup(channel)}</dd></div>
+      ${fallbackMarkup(channel)}
       ${freshnessMarkup(channel)}
     </dl>
     ${researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy)}`;
@@ -793,6 +844,19 @@ async function init() {
     }
     if (!catalogue) throw new Error("Catalogue data is unavailable.");
     state.channels = catalogue.channels;
+    let fallbackCatalogue = window.PARLIAMENT_STREAMS_FALLBACKS;
+    if (window.location.protocol !== "file:") {
+      try {
+        let fallbackResponse = await fetch(fallbacksUrl, { cache: "no-store" });
+        if (!fallbackResponse.ok && fallbacksUrl.href !== localFallbacksUrl.href) {
+          fallbackResponse = await fetch(localFallbacksUrl, { cache: "no-store" });
+        }
+        if (fallbackResponse.ok) fallbackCatalogue = await fallbackResponse.json();
+      } catch {
+        fallbackCatalogue = null;
+      }
+    }
+    state.fallbacks = fallbackCatalogue?.fallbacks ?? [];
     if (window.location.protocol !== "file:") {
       try {
         let scheduleResponse = await fetch(schedulesUrl, { cache: "no-store" });
@@ -814,6 +878,7 @@ async function init() {
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
     setOptionLabel(elements.rights, "allUse", [...new Set(state.channels.map((channel) => channel.permission.status))].sort());
     renderResearchSummary();
+    renderFallbackDirectory();
     [elements.search, elements.level, elements.format, elements.rights].forEach((input) => input.addEventListener("input", () => { renderList(); renderDetail(); }));
     elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
       const key = button.dataset.sort;

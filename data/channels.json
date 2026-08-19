@@ -1076,12 +1076,13 @@
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official video portal candidate without recorded reuse permission.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Assembly site states that public or official documents and multimedia resources, including debates and parliamentary documents, may be reproduced freely under conditions including no commercial/advertising use, free redistribution, document integrity, attribution, source citation, and a link to the original online document.",
         "evidence": [
-          "https://videos.assemblee-nationale.fr/direct.php"
+          "https://videos.assemblee-nationale.fr/direct.php",
+          "https://www.assemblee-nationale.fr/dyn/info-site"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Native playback may remain enabled only with clear Assembly attribution and source links, no advertising, no paywall, and no modification beyond technically necessary playback handling."
       }
     },
     {
@@ -1122,11 +1123,13 @@
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
+        "captions": "available",
+        "caption_languages": [
+          "he"
+        ],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "The official Knesset Channel site publishes a live captioned broadcast page for Hebrew captions."
       },
       "epg_sources": [
         {
@@ -1202,12 +1205,14 @@
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The official Knesset Channel live page exposed a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+        "summary": "Knesset Channel terms say the site/app service is personal by default, while also noting that Knesset broadcast law and regulations permit use of Knesset broadcasts, including committee and plenary broadcasts, with visible credit. The channel also carries non-proceeding programming that may require prior authorization.",
         "evidence": [
           "https://www.knesset.tv/live/",
-          "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+          "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "https://www.knesset.tv/documents/terms-and-privacy/",
+          "https://www.knesset.tv/committees/digitalknesset/35478/47690/"
         ],
-        "recommendation": "Link out or keep as pending until terms or permission are documented."
+        "recommendation": "Keep permission pending or link out unless the app can distinguish official Knesset proceedings from other Knesset Channel programming and display the required Hebrew credit."
       }
     },
     {
@@ -1639,11 +1644,13 @@
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking HLS candidate without recorded reuse permission.",
+        "summary": "Sansad TV identifies itself as India's parliamentary channel, but no direct Sansad TV reuse terms were found in this pass. The Digital Sansad portal's copyright policy says portal content may not be reproduced partly or fully without permission, except source acknowledgement when referred to as part of another website.",
         "evidence": [
-          "https://sansadtv.nic.in/"
+          "https://sansadtv.nic.in/",
+          "https://sansadtv.nic.in/about-us",
+          "https://sansad.in/rs/privacyPolicy"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until direct Sansad TV playback or reuse terms are documented."
       }
     },
     {
@@ -1701,11 +1708,13 @@
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking HLS candidate without recorded reuse permission.",
+        "summary": "Sansad TV identifies itself as India's parliamentary channel, but no direct Sansad TV reuse terms were found in this pass. The Digital Sansad portal's copyright policy says portal content may not be reproduced partly or fully without permission, except source acknowledgement when referred to as part of another website.",
         "evidence": [
-          "https://sansadtv.nic.in/"
+          "https://sansadtv.nic.in/",
+          "https://sansadtv.nic.in/about-us",
+          "https://sansad.in/rs/privacyPolicy"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until direct Sansad TV playback or reuse terms are documented."
       }
     },
     {
@@ -1755,11 +1764,13 @@
       "epg_sources": [],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking HLS candidate without recorded reuse permission.",
+        "summary": "TPchannel is operated by the National Assembly Radio and Television Broadcasting Station and publishes live/OTT access, but no source-specific reuse or embedding terms were found in this pass.",
         "evidence": [
-          "https://tpchannel.org/"
+          "https://tpchannel.org/",
+          "https://www.tpchannel.org/tv/live",
+          "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until TPchannel publishes reuse terms or grants permission."
       }
     },
     {

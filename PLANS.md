@@ -91,7 +91,9 @@ Done:
   Brazil stable-stream regression issue was closed after Brazil was demoted to
   official link-out.
 - `data/fallbacks.json` now records official event, player, broadcaster, and
-  provider fallback surfaces separately from permanent channel records.
+  provider fallback surfaces separately from permanent channel records. The
+  public site renders related fallbacks in source details and exposes a compact
+  fallback directory for records that do not yet map to a channel.
 
 Retired from the active project:
 
@@ -116,11 +118,13 @@ Near-term:
    reviewer queues.
 6. Make the schema distinguish source discovery from permission status, because
    a stream can be technically reachable but unsuitable for redistribution.
-7. Expand `data/fallbacks.json` for event-specific findings such as
-   HouseLive/C-SPAN, official YouTube live pages, Harmony event pages, and
-   official player pages. Promote a fallback into `data/channels.json` only when
-   it has a stable channel identity and a supportable playback or link-out
-   posture.
+7. Expand event resolver behavior for `data/fallbacks.json`: ParlVU and SenVu
+   can already use collected Harmony schedule metadata, while HouseLive,
+   C-SPAN, Parliamentlive.tv, and official YouTube live pages still need stable
+   event identifiers, now/next semantics, and rights-aware display rules before
+   they can show resolved events instead of static fallback links. Promote a
+   fallback into `data/channels.json` only when it has a stable channel identity
+   and a supportable playback or link-out posture.
 8. Decide whether supranational institutions need a separate `entity_type` or
    `institution_family` field, because they are not country-level legislatures.
 9. Define separate expansion criteria for sub-national institutions before
@@ -351,10 +355,10 @@ Near-term:
 
 Current measurable review queues as of 2026-08-19:
 
-- 43 of 86 catalogue entries still use a permission status ending in
+- 42 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 23 official-vendor HLS, 14 official pages, 5 first-party HLS, and
+  Breakdown: 22 official-vendor HLS, 14 official pages, 5 first-party HLS, and
   1 DASH research record.
 - All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep

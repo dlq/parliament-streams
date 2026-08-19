@@ -327,23 +327,40 @@ class ManagementTests(unittest.TestCase):
         self.directory = tempfile.TemporaryDirectory()
         self.root = Path(self.directory.name)
         self.catalogue_path = self.root / "channels.json"
+        self.fallbacks_path = self.root / "fallbacks.json"
         self.site_path = self.root / "catalogue-data.js"
         write_json(self.catalogue_path, canonical_catalogue())
-        self.store = CatalogueStore(self.catalogue_path, self.site_path)
+        write_json(self.fallbacks_path, load_fallbacks(DEFAULT_FALLBACKS_PATH))
+        self.store = CatalogueStore(
+            catalogue_path=self.catalogue_path,
+            fallbacks_path=self.fallbacks_path,
+            site_data_path=self.site_path,
+        )
 
     def tearDown(self):
         self.directory.cleanup()
 
     def test_json_loaders_site_data_and_hash(self):
         catalogue = load_catalogue(self.catalogue_path)
+        fallbacks = load_fallbacks(self.fallbacks_path)
         self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
         self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 7)
-        self.assertIn("PARLIAMENT_STREAMS_CATALOGUE", render_site_data(self.catalogue_path))
-        self.assertEqual(render_site_data_payload(catalogue), render_site_data(self.catalogue_path))
-        write_site_data(self.catalogue_path, self.site_path)
-        self.assertTrue(site_data_is_current(self.catalogue_path, self.site_path))
+        self.assertIn(
+            "PARLIAMENT_STREAMS_FALLBACKS",
+            render_site_data(self.catalogue_path, self.fallbacks_path),
+        )
+        self.assertEqual(
+            render_site_data_payload(catalogue, fallbacks),
+            render_site_data(self.catalogue_path, self.fallbacks_path),
+        )
+        write_site_data(self.catalogue_path, self.fallbacks_path, self.site_path)
+        self.assertTrue(
+            site_data_is_current(self.catalogue_path, self.fallbacks_path, self.site_path)
+        )
         self.site_path.write_text("stale", encoding="utf-8")
-        self.assertFalse(site_data_is_current(self.catalogue_path, self.site_path))
+        self.assertFalse(
+            site_data_is_current(self.catalogue_path, self.fallbacks_path, self.site_path)
+        )
         self.assertEqual(len(file_sha256(self.catalogue_path)), 64)
 
         array_path = self.root / "array.json"
@@ -395,7 +412,7 @@ class ManagementTests(unittest.TestCase):
             self.store.remove("missing")
 
     def test_store_without_site_data_and_invalid_commit(self):
-        store = CatalogueStore(self.catalogue_path, None)
+        store = CatalogueStore(catalogue_path=self.catalogue_path, site_data_path=None)
         preview = store.add(cloned_channel(), persist=False)
         self.assertEqual(len(preview["channels"]), CANONICAL_CHANNEL_COUNT + 1)
         invalid = canonical_catalogue()

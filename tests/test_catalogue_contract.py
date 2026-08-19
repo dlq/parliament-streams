@@ -8,6 +8,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE_PATH = ROOT / "data" / "channels.json"
 SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
+PAGES_WORKFLOW_PATH = ROOT / ".github" / "workflows" / "pages.yml"
 
 SOURCE_TYPES = {"direct_hls", "direct_dash", "official_page", "youtube"}
 SOURCE_KINDS = {
@@ -67,6 +68,11 @@ class CatalogueContractTests(unittest.TestCase):
             set(schema["$defs"]["permission"]["properties"]["status"]["enum"]),
             PERMISSION_STATUSES,
         )
+
+    def test_pages_workflow_publishes_fallback_data(self):
+        workflow = PAGES_WORKFLOW_PATH.read_text(encoding="utf-8")
+        self.assertIn('"data/fallbacks.json"', workflow)
+        self.assertIn("cp data/fallbacks.json _site/data/fallbacks.json", workflow)
 
     def test_channel_records_follow_declared_schema_contract(self):
         seen_ids = set()
