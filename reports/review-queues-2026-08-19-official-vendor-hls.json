@@ -1,0 +1,157 @@
+{
+  "checked_on": "2026-08-19",
+  "scope": "pending official_vendor_hls permission records",
+  "catalogue_total": 86,
+  "reviewed_entries": 18,
+  "reviewed_families": 11,
+  "status_changes": 0,
+  "summary": {
+    "pending_total_after_review": 30,
+    "official_vendor_hls_pending_after_review": 18,
+    "likely_needs_written_clarification": 12,
+    "keep_pending_after_dated_search": 6,
+    "outcome": "No reviewed official-vendor HLS family had enough public source-specific evidence to close third-party native playback. Catalogue permission statuses remain unchanged."
+  },
+  "prototype_policy": "Technically public HLS remains sufficient for native client-side playback unless recorded rights evidence requires link-out; pending direct streams stay visibly permission-pending.",
+  "families": [
+    {
+      "family": "Ontario Legislative Assembly iSi LIVE",
+      "ids": [
+        "ontario-house-en",
+        "ontario-house-en-cc",
+        "ontario-rm151-en",
+        "ontario-committee-1-en",
+        "ontario-committee-2-en",
+        "ontario-media-en"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "noncommercial_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Ontario public terms support reasonable, fair, non-commercial use of excerpts with credit and media guidance expects accredited media to use the Assembly broadcast feed, but the public evidence still does not clearly authorize full live-stream relay by an independent public app."
+    },
+    {
+      "family": "Nunavut Legislative Assembly iSi LIVE",
+      "ids": [
+        "nunavut-legislative-assembly-tv"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "The official webcast page exposes live and downloadable archive video, but no explicit reuse terms were found for full third-party live playback."
+    },
+    {
+      "family": "India Sansad TV",
+      "ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Sansad TV is an official parliamentary channel, but no direct Sansad TV reuse terms were found; Digital Sansad policy language points to permission for reproduction beyond source acknowledgement."
+    },
+    {
+      "family": "Israel Knesset Channel",
+      "ids": [
+        "israel-knesset-channel"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Knesset broadcast law/guidance appears to support proceedings use with visible credit, but the permanent channel also carries non-proceeding programming that may need authorization and the catalogue cannot yet distinguish those states."
+    },
+    {
+      "family": "Portugal ARTV Canal Parlamento",
+      "ids": [
+        "portugal-artv"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Assembly ownership rules establish institutional source ownership and restrict editing/commercialization, but do not clearly authorize third-party native playback of the live ARTV stream."
+    },
+    {
+      "family": "Greece Hellenic Parliament TV",
+      "ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Portal terms support limited republication of parts of site content with attribution and no alteration, but do not clearly authorize full third-party live-stream playback of the parliamentary TV channel."
+    },
+    {
+      "family": "Chile Camara TV",
+      "ids": [
+        "chile-camara-tv"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The official television page confirms the source surface, but no source-specific terms were found that close third-party native playback."
+    },
+    {
+      "family": "Luxembourg Chamber TV",
+      "ids": [
+        "luxembourg-chamber-tv"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The endpoint remained permission-pending because the prior validation environment could not reach it and no source-specific third-party native playback terms were found."
+    },
+    {
+      "family": "Estonia Riigikogu live streams",
+      "ids": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The two official live-room streams remain pending because no source-specific terms were found for third-party native playback."
+    },
+    {
+      "family": "Slovakia TV NRSR",
+      "ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The official MediaPortal confirms the live/video surface, but no source-specific third-party native playback terms were found."
+    },
+    {
+      "family": "Jalisco Canal Parlamento",
+      "ids": [
+        "jalisco-canal-parlamento"
+      ],
+      "source_kind": "official_vendor_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The official page labels the embedded live surface as Canal Parlamento, but the page footer reserves rights and no explicit third-party native playback terms were found."
+    }
+  ]
+}

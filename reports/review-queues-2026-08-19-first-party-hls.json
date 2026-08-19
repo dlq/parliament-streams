@@ -1,0 +1,56 @@
+{
+  "checked_on": "2026-08-19",
+  "scope": "pending first_party_hls permission records",
+  "catalogue_total": 86,
+  "reviewed_entries": 5,
+  "reviewed_families": 3,
+  "status_changes": 0,
+  "summary": {
+    "pending_total_after_review": 30,
+    "first_party_hls_pending_after_review": 5,
+    "likely_needs_written_clarification": 3,
+    "keep_pending_after_dated_search": 2,
+    "outcome": "No reviewed first-party HLS family had enough public source-specific evidence to close third-party native playback. Catalogue permission statuses remain unchanged."
+  },
+  "prototype_policy": "Technically public HLS remains sufficient for native client-side playback unless recorded rights evidence requires link-out; pending direct streams stay visibly permission-pending.",
+  "families": [
+    {
+      "family": "Netherlands Tweede Kamer Debat Direct",
+      "ids": [
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-aletta-jacobszaal",
+        "netherlands-tweede-kamer-actualiteitenkanaal"
+      ],
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Tweede Kamer guidance documents Debat Direct, downloadable meeting fragments, and embeds for journalistic/media use under audiovisual-material licence terms, but it does not clearly authorize general public use of the catalogued raw HLS endpoints by a non-media catalogue."
+    },
+    {
+      "family": "Thailand Parliament TV / TPchannel",
+      "ids": [
+        "thailand-parliament-tv"
+      ],
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "native_playback",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "TPchannel appears to be an official public parliamentary live/on-demand service operated by the National Assembly Radio and Television Broadcasting Station, but no source-specific reuse, embedding, or native-playback terms were found for the first-party HLS stream."
+    },
+    {
+      "family": "El Salvador Legislative Assembly",
+      "ids": [
+        "el-salvador-legislative-assembly"
+      ],
+      "source_kind": "first_party_hls",
+      "permission_status": "personal_use_pending_review",
+      "playback_policy": "research_only",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The HLS URL is hosted on the official Assembly domain, but standard TLS verification failed in the 2026-08-14 healthcheck and no source-specific reuse terms were found. General broadcaster-rights law reinforces caution but does not resolve catalogue permission."
+    }
+  ]
+}

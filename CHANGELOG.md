@@ -78,6 +78,9 @@ application. Earlier application work remains available in Git history.
   links.
 - Official House ParlVU and Senate SenVu recordings fallbacks, kept link-out
   while archive-event metadata and playback rights remain unresolved.
+- Dated official-vendor and first-party HLS rights review snapshots, keeping
+  unresolved native-playback records permission-pending where public terms do
+  not clearly authorize third-party playback.
 - A conservative official YouTube live-page resolver for the UK, Australia, and
   Costa Rica records. It records a current provider watch video only when the
   official `/live` page exposes explicit watch metadata; otherwise it leaves the

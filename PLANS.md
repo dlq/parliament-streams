@@ -134,11 +134,16 @@ in `pending_review`.
 
 Priority order:
 
-1. Review the 18 pending `official_vendor_hls` entries first, because they are
-   native-playback records and therefore carry the highest product risk.
-2. Review the 5 pending `first_party_hls` entries next, because official-hosted
-   direct feeds are the most valuable if terms can be clarified.
-3. Review the 6 pending `official_page` entries after that, because most of
+1. The 18 pending `official_vendor_hls` entries were reviewed as source
+   families on 2026-08-19. No public terms closed third-party native playback,
+   so they remain pending and should move to the deferred communications /
+   written-clarification package rather than repeated public-terms searching.
+2. The 5 pending `first_party_hls` entries were reviewed as source families on
+   2026-08-19. No public terms closed third-party native playback. Netherlands
+   Tweede Kamer should move to written clarification; Thailand TPchannel and
+   El Salvador Legislative Assembly remain pending after dated public-terms
+   searches.
+3. Review the 6 pending `official_page` entries next, because most of
    them are link-out or fallback records and do not immediately affect native
    playback.
 4. Keep the 1 pending `direct_dash_research` entry research-only unless source
@@ -148,6 +153,10 @@ Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-20
 as the current execution queue. It classifies the remaining pending entries as
 17 likely written-clarification cases and 13
 keep-pending-after-dated-search cases. No public-terms follow-up entries remain.
+The official-vendor HLS review snapshot is
+[reports/review-queues-2026-08-19-official-vendor-hls.json](reports/review-queues-2026-08-19-official-vendor-hls.json).
+The first-party HLS review snapshot is
+[reports/review-queues-2026-08-19-first-party-hls.json](reports/review-queues-2026-08-19-first-party-hls.json).
 Draft request templates and public response-tracking rules live in
 [docs/permission-requests.md](docs/permission-requests.md). A short
 reader-facing explanation of the current posture lives in
@@ -171,9 +180,9 @@ Specific unresolved direct-playback groups:
   page linking.
 - Estonia Riigikogu: look for source-specific reuse terms for the two official
   live rooms, or record that no terms were found after a dated pass.
-- Netherlands Tweede Kamer: decide whether recognised-media download/embed
-  guidance is enough for the prototype, or whether the raw HLS entries should
-  stay pending while official pages remain the safest route.
+- Netherlands Tweede Kamer: public guidance supports Debat Direct fragments and
+  embeds for media/journalistic use, but not general public raw-HLS playback;
+  move this to written clarification.
 - India Sansad TV, Thailand TPchannel, Israel Knesset Channel, Spain Congreso,
   Portugal ARTV, Greece Hellenic Parliament TV, Luxembourg Chamber TV,
   Slovakia TV NRSR, Chile Camara TV, Jalisco Canal Parlamento, and El Salvador

@@ -27,16 +27,34 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 32 of 86 catalogue entries still use a permission status ending in
+- 30 of 86 catalogue entries still use a permission status ending in
   `pending_review`.
-- 19 entries likely need written clarification.
+- 17 entries likely need written clarification.
 - 13 entries should remain pending after a dated public-terms search unless
   source owners publish clearer terms or the post-proof-of-concept playback
   policy changes.
 
+The 2026-08-19 official-vendor HLS pass reviewed the 18 pending native-playback
+`official_vendor_hls` entries as source families. It found no public terms that
+cleanly close third-party native playback for the unresolved families, so no
+catalogue permission statuses changed. The pass kept Ontario, Nunavut, Sansad
+TV, Knesset Channel, ARTV, and Hellenic Parliament TV in the written-
+clarification bucket, and kept Chile, Luxembourg, Estonia, Slovakia, and
+Jalisco pending after dated public-terms searches.
+
+The 2026-08-19 first-party HLS pass reviewed the 5 pending `first_party_hls`
+entries as 3 source families. No catalogue permission statuses changed.
+Netherlands Tweede Kamer remains a written-clarification candidate because its
+public guidance covers media/journalistic use through Debat Direct rather than
+general public raw-HLS playback. Thailand TPchannel and El Salvador Legislative
+Assembly remain pending after dated searches because no source-specific
+third-party playback or embedding terms were found.
+
 Execution queue:
 
 - [reports/review-queues-2026-08-19-rights-next.json](../reports/review-queues-2026-08-19-rights-next.json)
+- [reports/review-queues-2026-08-19-official-vendor-hls.json](../reports/review-queues-2026-08-19-official-vendor-hls.json)
+- [reports/review-queues-2026-08-19-first-party-hls.json](../reports/review-queues-2026-08-19-first-party-hls.json)
 
 ## Request Principles
 

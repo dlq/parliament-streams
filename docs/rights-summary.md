@@ -64,6 +64,19 @@ The current execution queue is
 Draft outreach text is in
 [permission-requests.md](permission-requests.md).
 
+The pending `official_vendor_hls` native-playback records were reviewed as a
+family on 2026-08-19. The review did not find public terms that fully close
+third-party native playback for the unresolved vendor-stream families, so the
+catalogue statuses remain pending. Those records now have a separate review
+snapshot in
+[review-queues-2026-08-19-official-vendor-hls.json](../reports/review-queues-2026-08-19-official-vendor-hls.json).
+
+The pending `first_party_hls` records were also reviewed on 2026-08-19. The
+review kept Netherlands Tweede Kamer in the written-clarification bucket and
+kept Thailand TPchannel and El Salvador Legislative Assembly pending after
+dated public-terms searches. No catalogue statuses changed. The snapshot is
+[review-queues-2026-08-19-first-party-hls.json](../reports/review-queues-2026-08-19-first-party-hls.json).
+
 ## Practical Rule For New Sources
 
 New sources should start as candidates or link-out records unless they have:
