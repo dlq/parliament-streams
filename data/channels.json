@@ -363,11 +363,11 @@
         }
       ],
       "language": "Portuguese",
-      "source_type": "direct_hls",
-      "playback_url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
-      "official_url": "https://www.camara.leg.br/tv/",
-      "provenance_note": "Official TV Camara stream; source attribution and watermark integrity matter.",
-      "technical_status": "validated",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.camara.leg.br/tv/aovivo",
+      "provenance_note": "Official TV Camara live page. The page still embeds the previously catalogued HLS URL, but that manifest returned HTTP 404 on 2026-08-19, so native playback is disabled until a replacement first-party stream is validated.",
+      "technical_status": "link_only",
       "availability": "always_on",
       "accessibility": {
         "captions": "unknown",
@@ -387,12 +387,13 @@
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Camara portal terms allow reproduction of public portal information with source and author credit, but the terms do not clearly authorize third-party native playback of the catalogued TV Camara HLS endpoint. The same terms direct portal video use to YouTube terms where applicable.",
+        "summary": "Camara portal terms allow reproduction of public portal information with source and author credit, but the terms do not clearly authorize third-party native playback. The previously catalogued TV Camara HLS endpoint returned HTTP 404 on 2026-08-19, and the same terms direct portal video use to YouTube terms where applicable.",
         "evidence": [
-          "https://www.camara.leg.br/tv/",
+          "https://www.camara.leg.br/tv/aovivo",
+          "https://www.camara.leg.br/tv/aovivo/embed",
           "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade"
         ],
-        "recommendation": "Link to the official TV Camara page until TV Camara confirms that third-party native playback of this HLS endpoint is permitted."
+        "recommendation": "Link to the official TV Camara page until a replacement first-party playback route is validated and TV Camara confirms that third-party native playback is permitted."
       }
     },
     {

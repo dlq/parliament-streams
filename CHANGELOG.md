@@ -179,6 +179,9 @@ application. Earlier application work remains available in Git history.
 
 ### Fixed
 
+- Demoted Brazil TV Camara from native direct-HLS playback to official-page
+  link-out after the official page's embedded HLS manifest began returning HTTP
+  404, matching the scheduled stable-stream regression audit.
 - The accessibility/browser site check now derives expected catalogue metrics
   from `data/channels.json` instead of hard-coding counts that drift when new
   sources are added.

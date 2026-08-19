@@ -1559,6 +1559,25 @@ The best integration path is identity-first:
 3. Add official API/schedule adapters source by source.
 4. Keep generic playlists as discovery-only inputs.
 
+## 2026-08-19 TV Camara stable-stream regression
+
+The scheduled Catalogue Audit run
+`https://github.com/dlq/parliament-streams/actions/runs/32227566400` failed only
+at the final stable-stream regression gate. The retained log showed a reopened
+`stream-regression` issue for `brazil-tv-camara`.
+
+Follow-up checks from the local development environment:
+
+- `https://stream3.camara.gov.br/tv1/manifest.m3u8` returned HTTP 404.
+- The official live page `https://www.camara.leg.br/tv/aovivo` and embed page
+  `https://www.camara.leg.br/tv/aovivo/embed` still referenced the same HLS URL.
+- No replacement first-party manifest was found in the official live/embed HTML.
+
+Catalogue outcome: keep Brazil TV Camara as an official live-page and schedule
+source, but demote it from `direct_hls`/`validated` to `official_page`/`link_only`
+until a replacement first-party stream is validated and the rights posture is
+clear.
+
 ## 2026-08-17 Review-source validation follow-up
 
 Rechecked every catalogue entry marked `needs_review`, with validated
