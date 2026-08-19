@@ -251,8 +251,10 @@ Priority order:
 
 1. Continue the schema v9 playback-policy cleanup. The catalogue now records
    `playback_policy` separately from `permission.status`, so "playable by
-   project policy" is no longer inferred from rights evidence. Next, decide
-   whether source discovery state needs a similarly explicit field.
+   project policy" is no longer inferred from rights evidence. A
+   `playback-policy-audit` command now reports native-playback-with-pending-
+   rights and retained-playback-URL/link-out tensions. Next, decide whether
+   source discovery state needs a similarly explicit field.
 2. Replace free-form `language` values with structured language codes and
    display labels.
 3. Add schema coverage for generated reports beyond the existing channel,

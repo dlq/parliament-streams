@@ -36,6 +36,7 @@ from .management import (
     write_json,
 )
 from .models import ChannelRecord
+from .playback_policy_audit import audit_playback_policies
 from .schedule_collection import (
     DEFAULT_RETRIES as DEFAULT_SCHEDULE_RETRIES,
 )
@@ -334,6 +335,17 @@ def _cmd_links_audit(args: argparse.Namespace) -> int:
     return 1 if args.fail_on_error and failures else 0
 
 
+def _cmd_playback_policy_audit(args: argparse.Namespace) -> int:
+    report = audit_playback_policies(load_catalogue(args.catalogue))
+    if args.output:
+        write_json(args.output, report)
+    else:
+        _write_json_stdout(report)
+    if args.fail_on_error and report["counts"]["error"]:
+        return 1
+    return 1 if args.fail_on_review and report["counts"]["review"] else 0
+
+
 def _cmd_validation_history_refresh(args: argparse.Namespace) -> int:
     reports_root = args.reports_dir.parents[1] if len(args.reports_dir.parents) > 1 else Path(".")
     catalogue = load_catalogue(args.catalogue)
@@ -540,6 +552,15 @@ def build_parser() -> argparse.ArgumentParser:
     links_audit.add_argument("--output", type=Path)
     links_audit.add_argument("--fail-on-error", action="store_true")
     links_audit.set_defaults(handler=_cmd_links_audit)
+
+    playback_policy_audit = commands.add_parser(
+        "playback-policy-audit",
+        help="Report playback policy, rights, and technical-state review tensions.",
+    )
+    playback_policy_audit.add_argument("--output", type=Path)
+    playback_policy_audit.add_argument("--fail-on-review", action="store_true")
+    playback_policy_audit.add_argument("--fail-on-error", action="store_true")
+    playback_policy_audit.set_defaults(handler=_cmd_playback_policy_audit)
 
     validation_history = commands.add_parser(
         "validation-history-refresh",

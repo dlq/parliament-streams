@@ -32,6 +32,7 @@ from parliament_streams.management import (
     validation_history_is_current,
     write_json,
 )
+from parliament_streams.playback_policy_audit import audit_playback_policies
 from parliament_streams.site_data import (
     render_site_data,
     render_site_data_payload,
@@ -894,6 +895,45 @@ class CliTests(unittest.TestCase):
         audit.assert_called_once()
         self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2, "workers": 4})
         self.assertEqual(audit.call_args.args[0]["schema_version"], 9)
+
+    def test_playback_policy_audit_reports_review_tensions(self):
+        catalogue = canonical_catalogue()
+        report = audit_playback_policies(catalogue)
+        self.assertEqual(report["counts"]["channels"], CANONICAL_CHANNEL_COUNT)
+        self.assertGreater(report["counts"]["native_playback"], 0)
+        self.assertGreater(report["counts"]["link_out"], 0)
+        self.assertGreater(report["counts"]["review"], 0)
+        codes = {finding["code"] for finding in report["findings"]}
+        self.assertIn("native-playback-pending-rights", codes)
+
+    def test_playback_policy_audit_command_writes_report_and_can_fail_on_review(self):
+        report = {
+            "generated_at": "2026-08-19T12:00:00Z",
+            "counts": {
+                "native_playback": 1,
+                "provider_embed": 0,
+                "link_out": 0,
+                "research_only": 0,
+                "info": 0,
+                "review": 1,
+                "error": 0,
+                "findings": 1,
+                "channels": 1,
+            },
+            "findings": [],
+        }
+        output_path = self.root / "playback-policy-audit.json"
+        with mock.patch(
+            "parliament_streams.cli.audit_playback_policies", return_value=report
+        ) as audit:
+            result, _, _ = self.run_cli("playback-policy-audit", "--output", str(output_path))
+        self.assertEqual(result, 0)
+        self.assertEqual(load_json_object(output_path), report)
+        audit.assert_called_once()
+
+        with mock.patch("parliament_streams.cli.audit_playback_policies", return_value=report):
+            result, _, _ = self.run_cli("playback-policy-audit", "--fail-on-review")
+        self.assertEqual(result, 1)
 
     def test_links_audit_command_writes_report_and_can_fail(self):
         report = {

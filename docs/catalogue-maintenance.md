@@ -155,6 +155,19 @@ which receive manifest-aware and request-aware checks from `health-check` and
 `epg-audit`. Reachable responses include a bounded byte count and SHA-256
 fingerprint so a later report can reveal that source evidence changed.
 
+Audit playback presentation against rights and technical evidence:
+
+```sh
+uv run parliament-streams playback-policy-audit \
+  --output reports/playback-policy-audit-YYYY-MM-DD.json
+```
+
+The playback-policy audit is local and does not make network requests. It
+reports review tensions such as `native_playback` entries whose permission
+status is still pending, `link_out` entries that retain a validated playback
+URL as evidence, and `research_only` entries that keep a playback URL for
+future review.
+
 `.github/workflows/catalogue-audit.yml` runs these checks daily and uploads the
 reports without committing transient results. Its Sunday job generates a full
 catalogue seed and runs Chromium against every official page. The workflow

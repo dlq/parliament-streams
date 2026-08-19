@@ -51,6 +51,8 @@ application. Earlier application work remains available in Git history.
   validation evidence.
 - Schema v9 `playback_policy`, separating the catalogue's playback presentation
   from rights/permission evidence.
+- A `playback-policy-audit` command and Make target that report review tensions
+  between playback policy, permission status, and retained technical evidence.
 - Make targets and `--check` support for validation-history refreshes, so
   retained report-link drift is caught by `make verify`.
 - Source-row posture labels for playable, link-out, fallback, and research

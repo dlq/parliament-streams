@@ -1,4 +1,4 @@
-.PHONY: verify test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate discovery-decisions-validate validation-history validation-history-check site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit schedules site
+.PHONY: verify test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate discovery-decisions-validate validation-history validation-history-check site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --locked --extra dev
@@ -71,6 +71,9 @@ links-audit:
 
 epg-audit:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) parliament-streams epg-audit
+
+playback-policy-audit:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) parliament-streams playback-policy-audit
 
 schedules:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) parliament-streams schedules-collect
