@@ -208,8 +208,12 @@ try {
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed\/abcDEF12345/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
   assert.match(await page.locator(".detail-grid").innerText(), /PLAYBACK\s+Provider embed/);
-  assert.match(await youtubeRow.locator(".status").first().getAttribute("title"), /Latest retained validation succeeded/);
-  assert.match(await youtubeRow.locator(".status").last().getAttribute("title"), /official provider or institutional embed/);
+  assert.match(await youtubeRow.locator(".source-posture").getAttribute("title"), /official provider embed or fallback surface/);
+  assert.match(await youtubeRow.locator(".row-tag").nth(1).getAttribute("title"), /Latest retained validation succeeded/);
+  assert.match(await youtubeRow.locator(".row-tag").nth(2).getAttribute("title"), /official provider or institutional embed/);
+  assert.equal(await youtubeRow.locator(".row-tag").first().evaluate((element) => getComputedStyle(element).borderLeftStyle), "solid");
+  assert.equal(await youtubeRow.locator(".row-tag").nth(1).evaluate((element) => getComputedStyle(element).borderLeftStyle), "solid");
+  assert.equal(await youtubeRow.locator(".row-tag").nth(2).evaluate((element) => getComputedStyle(element).borderLeftStyle), "solid");
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
   assert.match(await page.locator('[data-channel-id="canada-house-of-commons-parlvu"] .source-posture').innerText(), /LINK-OUT/);
@@ -248,8 +252,9 @@ try {
   assert.equal(await page.locator("#metric-schedules").textContent(), String(expectedScheduleCount));
   assert.equal(await page.locator("#principle-accessibility").textContent(), "Accessibilité ouverte");
   await page.locator('[data-channel-id="australia-parliament-youtube"]').click();
-  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .status').first().getAttribute("title"), /dernière validation conservée a réussi/);
-  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .status').last().getAttribute("title"), /l'intégration officielle/);
+  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .source-posture').getAttribute("title"), /intégration officielle/);
+  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .row-tag').nth(1).getAttribute("title"), /dernière validation conservée a réussi/);
+  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .row-tag').nth(2).getAttribute("title"), /l'intégration officielle/);
   assert.equal(
     await page.locator('[data-channel-id="british-columbia-legislature-webcasts"] > span').nth(1).innerText(),
     "Colombie-Britannique",

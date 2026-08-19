@@ -63,6 +63,8 @@ application. Earlier application work remains available in Git history.
 - Playback and Use Guidance dropdown filters were removed now that Mode and Use
   are sortable, leaving search, Jurisdiction, and Source type as the active
   filtering controls.
+- Mode row markers now explain the playback posture on hover, and Access/Use
+  row markers share the same compact tag styling.
 - Norway Stortinget and Germany Bundestag moved from native playback to
   link-out/no-third-party-reuse because their documented terms point to formal
   requested retransmission/live-signal routes, not browser-discovered HLS.

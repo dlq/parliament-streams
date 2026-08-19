@@ -365,6 +365,14 @@ function sourceStatusLabel(value) {
     research: t("sourceResearch"),
   }[value] ?? value;
 }
+function sourceStatusDescription(value) {
+  return {
+    playable: t("sourcePlayableDescription"),
+    link_out: t("sourceLinkOutDescription"),
+    fallback: t("sourceFallbackDescription"),
+    research: t("sourceResearchDescription"),
+  }[value] ?? "";
+}
 function sourceStatusSortValue(channel) {
   const order = {
     playable: 0,
@@ -487,9 +495,9 @@ function renderList() {
         <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-hidden="true">&#9654;</span>' : ""}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
         <span>${jurisdictionName(channel.country_or_region)}</span>
         <span class="language-list">${languageMarkup(channel.language)}</span>
-        <span><span class="source-posture source-posture-${slug(status)}" lang="${state.locale}" title="${t("mode")}: ${sourceStatusLabel(status)}">${sourceStatusLabel(status)}</span></span>
-        <span><span class="status status-${slug(channel.technical_status)}" lang="${state.locale}" title="${statusTitle(t("access"), label(channel.technical_status), accessStatusDescription(channel.technical_status))}">${label(channel.technical_status)}</span></span>
-        <span><span class="status status-${slug(channel.permission.status)}" lang="${state.locale}" title="${statusTitle(t("use"), label(channel.permission.status), permissionStatusDescription(channel.permission.status))}">${label(channel.permission.status)}</span></span>
+        <span><span class="row-tag source-posture source-posture-${slug(status)}" lang="${state.locale}" title="${statusTitle(t("mode"), sourceStatusLabel(status), sourceStatusDescription(status))}">${sourceStatusLabel(status)}</span></span>
+        <span><span class="row-tag status-${slug(channel.technical_status)}" lang="${state.locale}" title="${statusTitle(t("access"), label(channel.technical_status), accessStatusDescription(channel.technical_status))}">${label(channel.technical_status)}</span></span>
+        <span><span class="row-tag status-${slug(channel.permission.status)}" lang="${state.locale}" title="${statusTitle(t("use"), label(channel.permission.status), permissionStatusDescription(channel.permission.status))}">${label(channel.permission.status)}</span></span>
       </button>
       <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusLabel(status)}. ${t("format")}: ${label(channel.source_type)}. ${t("playbackPolicy")}: ${label(channel.playback_policy)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
     </li>`;

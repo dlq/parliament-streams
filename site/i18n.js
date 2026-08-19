@@ -43,6 +43,10 @@ const en = {
   fallbackArchive: "Archive", fallbackBroadcaster: "Broadcaster", fallbackLinkOut: "Link out", fallbackProviderEmbed: "Provider embed",
   fallbackEventResolver: "Event resolver planned", fallbackScheduleSource: "Schedule source", fallbackNowNext: "Now/next possible", fallbackNoSchedule: "No schedule role",
   sourcePlayable: "Playable", sourceLinkOut: "Link-out", sourceFallback: "Fallback", sourceResearch: "Research",
+  sourcePlayableDescription: "The source can play directly in this catalogue.",
+  sourceLinkOutDescription: "Use the official site because playback is not embedded here.",
+  sourceFallbackDescription: "The catalogue can hand off to an official provider embed or fallback surface.",
+  sourceResearchDescription: "The source is documented for research but is not ready for playback or link-out use.",
   latestValidation: "Latest validation", validationNotRecorded: "No retained validation report yet.",
   validationChecked: "Checked {date}", validationMethod: "Method", validationReport: "Report",
   staticHttpValidation: "Static HTTP", browserPlayerValidation: "Browser/player", manifestSeedValidation: "Manifest seed", reviewFollowupValidation: "Review follow-up",
@@ -595,6 +599,35 @@ Object.entries(sourceCueLabels).forEach(([locale, values]) => {
   ] = values;
 });
 
+const sourceStatusDescriptionLabels = {
+  fr: ["La source peut être lue directement dans ce catalogue.", "Utilisez le site officiel, car la lecture n'est pas intégrée ici.", "Le catalogue peut passer à une intégration officielle du fournisseur ou à une surface de repli.", "La source est documentée pour la recherche, mais n'est pas prête pour la lecture ou le lien externe."],
+  es: ["La fuente puede reproducirse directamente en este catálogo.", "Usa el sitio oficial porque la reproducción no está integrada aquí.", "El catálogo puede pasar a una inserción oficial del proveedor o a una superficie alternativa.", "La fuente está documentada para investigación, pero no está lista para reproducción o enlace externo."],
+  "pt-BR": ["A fonte pode tocar diretamente neste catálogo.", "Use o site oficial porque a reprodução não está incorporada aqui.", "O catálogo pode passar para uma incorporação oficial do provedor ou uma superfície alternativa.", "A fonte está documentada para pesquisa, mas não está pronta para reprodução ou link externo."],
+  da: ["Kilden kan afspilles direkte i dette katalog.", "Brug det officielle websted, fordi afspilning ikke er indlejret her.", "Kataloget kan sende videre til en officiel udbyderindlejring eller reserveflade.", "Kilden er dokumenteret til research, men er ikke klar til afspilning eller eksternt link."],
+  de: ["Die Quelle kann direkt in diesem Katalog abgespielt werden.", "Verwenden Sie die offizielle Website, weil die Wiedergabe hier nicht eingebettet ist.", "Der Katalog kann an eine offizielle Anbieter-Einbettung oder eine Fallback-Oberfläche übergeben.", "Die Quelle ist für Recherchezwecke dokumentiert, aber nicht für Wiedergabe oder externen Link bereit."],
+  et: ["Allikat saab selles kataloogis otse esitada.", "Kasutage ametlikku saiti, sest esitus pole siin manustatud.", "Kataloog saab suunata ametlikule pakkuja manustusele või varupinnale.", "Allikas on uurimistööks dokumenteeritud, kuid pole esituseks ega välislingiks valmis."],
+  el: ["Η πηγή μπορεί να αναπαραχθεί απευθείας σε αυτόν τον κατάλογο.", "Χρησιμοποιήστε τον επίσημο ιστότοπο, επειδή η αναπαραγωγή δεν είναι ενσωματωμένη εδώ.", "Ο κατάλογος μπορεί να παραπέμψει σε επίσημη ενσωμάτωση παρόχου ή εναλλακτική επιφάνεια.", "Η πηγή είναι τεκμηριωμένη για έρευνα, αλλά δεν είναι έτοιμη για αναπαραγωγή ή εξωτερικό σύνδεσμο."],
+  hi: ["स्रोत इस कैटलॉग में सीधे चल सकता है।", "आधिकारिक साइट का उपयोग करें क्योंकि प्लेबैक यहां एम्बेड नहीं है।", "कैटलॉग आधिकारिक प्रदाता एम्बेड या वैकल्पिक सतह पर भेज सकता है।", "स्रोत शोध के लिए दर्ज है, लेकिन प्लेबैक या बाहरी लिंक उपयोग के लिए तैयार नहीं है।"],
+  ga: ["Is féidir an fhoinse a sheinm go díreach sa chatalóg seo.", "Bain úsáid as an suíomh oifigiúil mar níl athsheinm leabaithe anseo.", "Is féidir leis an gcatalóg aistriú chuig leabú oifigiúil soláthraí nó dromchla cúltaca.", "Tá an fhoinse doiciméadaithe le haghaidh taighde, ach níl sí réidh le haghaidh athsheinm nó nasc amach."],
+  it: ["La fonte può essere riprodotta direttamente in questo catalogo.", "Usa il sito ufficiale perché la riproduzione non è incorporata qui.", "Il catalogo può passare a un incorporamento ufficiale del fornitore o a una superficie alternativa.", "La fonte è documentata per la ricerca, ma non è pronta per la riproduzione o il link esterno."],
+  lb: ["D'Quell kann direkt an dësem Katalog ofgespillt ginn.", "Benotzt déi offiziell Säit, well d'Ofspillung hei net agebett ass.", "De Katalog kann un eng offiziell Ubidder-Abettung oder Auswee-Fläch weiderginn.", "D'Quell ass fir Fuerschung dokumentéiert, mee nach net prett fir Ofspillung oder externe Link."],
+  nl: ["De bron kan direct in deze catalogus worden afgespeeld.", "Gebruik de officiële site omdat afspelen hier niet is ingebed.", "De catalogus kan doorverwijzen naar een officiële provider-embed of terugvaloppervlak.", "De bron is gedocumenteerd voor onderzoek, maar is niet klaar voor afspelen of externe link."],
+  nb: ["Kilden kan spilles direkte i denne katalogen.", "Bruk det offisielle nettstedet fordi avspilling ikke er innebygd her.", "Katalogen kan sende videre til en offisiell leverandørinnbygging eller reserveflate.", "Kilden er dokumentert for research, men er ikke klar for avspilling eller ekstern lenke."],
+  sk: ["Zdroj sa dá prehrať priamo v tomto katalógu.", "Použite oficiálnu stránku, pretože prehrávanie tu nie je vložené.", "Katalóg môže odovzdať používateľa na oficiálne vloženie poskytovateľa alebo záložnú plochu.", "Zdroj je zdokumentovaný na výskum, ale nie je pripravený na prehrávanie ani externý odkaz."],
+  th: ["แหล่งข้อมูลนี้เล่นได้โดยตรงในแคตตาล็อกนี้", "ใช้เว็บไซต์ทางการเพราะไม่ได้ฝังการเล่นไว้ที่นี่", "แคตตาล็อกสามารถส่งต่อไปยังการฝังจากผู้ให้บริการทางการหรือหน้าสำรอง", "แหล่งข้อมูลนี้บันทึกไว้เพื่อการวิจัย แต่ยังไม่พร้อมสำหรับการเล่นหรือลิงก์ออก"],
+  "zh-Hans": ["该来源可直接在此目录中播放。", "请使用官方网站，因为这里未嵌入播放。", "目录可以转交到官方提供方嵌入或备用页面。", "该来源已作为研究资料记录，但尚未准备好播放或外链使用。"],
+  mi: ["Ka taea te purei tika i te pūtake ki tēnei putumōhio.", "Whakamahia te pae mana nā te mea kāore te purei i tāurua ki konei.", "Ka taea e te putumōhio te tuku ki te tāuru mana a te kaiwhakarato, ki tētahi mata tāpiri rānei.", "Kua tuhia te pūtake mō te rangahau, engari kāore anō kia rite mō te purei, mō te hono atu rānei."],
+  "iu-Cans": ["ᐱᒋᐊᕐᕕᒃ ᑕᒪᑐᒪᓂ ᑎᑎᖅᓯᒪᔪᓂ ᑐᓴᖅᑕᐅᔪᓐᓇᖅᑐᖅ.", "ᐊᑐᕐᓗᒍ ᐊᖏᖅᑕᐅᔪᖅ ᐃᑭᐊᖅᑭᕕᒃ, ᐱᙳᐊᕐᓂᖅ ᒫᓂ ᐃᓕᔭᐅᓯᒪᙱᒻᒪᑦ.", "ᑎᑎᖅᓯᒪᔪᑦ ᐊᖏᖅᑕᐅᔪᒧᑦ ᐃᓕᔭᐅᔪᒧᑦ ᐅᕝᕙᓘᓐᓃᑦ ᐊᓯᐊᒍᑦ ᒪᑉᐱᒐᕐᒧᑦ ᑐᕌᖓᑎᑦᑎᔪᓐᓇᖅᑐᑦ.", "ᐱᒋᐊᕐᕕᒃ ᖃᐅᔨᓴᕐᓂᕐᒧᑦ ᑎᑎᖅᑕᐅᓯᒪᔪᖅ, ᓱᓕ ᐱᙳᐊᕐᓂᕐᒧᑦ ᐅᕝᕙᓘᓐᓃᑦ ᐊᓯᐊᓄᑦ ᑲᑎᙵᔪᒧᑦ ᐊᑐᕐᓂᕐᒧᑦ ᐊᑐᐃᓐᓇᐅᙱᑦᑐᖅ."],
+};
+Object.entries(sourceStatusDescriptionLabels).forEach(([locale, values]) => {
+  [
+    shared[locale].sourcePlayableDescription,
+    shared[locale].sourceLinkOutDescription,
+    shared[locale].sourceFallbackDescription,
+    shared[locale].sourceResearchDescription,
+  ] = values;
+});
+
 const modeAndStatusDescriptionLabels = {
   fr: ["Mode", "La dernière validation conservée a réussi.", "L'accès technique doit être revu ou le dernier contrôle n'était pas net.", "Aucune URL de lecture native n'est enregistrée; utilisez la page officielle.", "La réutilisation semble permise selon les conditions enregistrées.", "Utilisez seulement l'intégration officielle du fournisseur ou de l'institution.", "Les conditions enregistrées exigent un lien externe ou une permission distincte.", "Les conditions publiques ne permettent pas encore clairement l'usage par un tiers.", "Un usage non commercial est documenté, mais la lecture complète du flux doit encore être clarifiée."],
   es: ["Modo", "La última validación conservada fue correcta.", "El acceso técnico necesita revisión o la última comprobación no fue limpia.", "No hay una URL de reproducción nativa registrada; usa la página oficial.", "La reutilización parece permitida según las condiciones registradas.", "Usa solo la inserción oficial del proveedor o de la institución.", "Las condiciones registradas exigen enlace externo o permiso separado.", "Las condiciones públicas aún no respaldan claramente el uso por terceros.", "Hay cierto uso no comercial documentado, pero la reproducción completa del flujo aún requiere aclaración."],
@@ -692,6 +725,10 @@ for (const [locale] of locales) {
     "sourceLinkOut",
     "sourceFallback",
     "sourceResearch",
+    "sourcePlayableDescription",
+    "sourceLinkOutDescription",
+    "sourceFallbackDescription",
+    "sourceResearchDescription",
     "latestValidation",
     "validationNotRecorded",
     "validationChecked",
