@@ -13,6 +13,9 @@ const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }).length;
+const expectedPlaybackPolicyCount = new Set(
+  canonicalCatalogue.channels.map((channel) => channel.playback_policy),
+).size;
 const expectedScheduleCount = canonicalCatalogue.channels.filter((channel) =>
   channel.epg_sources.some((source) => source.scraper_status === "implemented")
 ).length;
@@ -145,6 +148,7 @@ try {
   assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));
   assert.equal(await page.locator("#metric-updated").innerText(), expectedUpdatedDate);
   assert.equal(await page.locator(".principles-index li").count(), 5);
+  assert.equal(await page.locator("#playback-filter option").count(), expectedPlaybackPolicyCount + 1);
   assert(canonicalFallbacks.fallbacks.length >= 6);
   assert.equal(await page.locator("#fallback-directory-list li").count(), canonicalFallbacks.fallbacks.length);
   assert.match(await page.locator(".fallback-directory").innerText(), /C-SPAN Congress coverage/);
@@ -185,6 +189,12 @@ try {
   assert.equal(await youtubeFrame.count(), 1);
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed\/abcDEF12345/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
+  assert.match(await page.locator(".detail-grid").innerText(), /PLAYBACK\s+Provider embed/);
+
+  await page.locator("#playback-filter").selectOption("provider_embed");
+  assert.equal(await page.locator(".channel-button").count(), 3);
+  assert.match(await page.locator("#results-count").innerText(), /^3 of /);
+  await page.locator("#playback-filter").selectOption("");
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
   assert.match(await page.locator('[data-channel-id="canada-house-of-commons-parlvu"] .source-posture').innerText(), /LINK-OUT/);
@@ -265,7 +275,7 @@ try {
   assert.match(await page.locator(".evidence-note").innerText(), /^证据来源。/);
   assert.match(await page.locator(".evidence-note a").first().innerText(), /官方观看页面|支持来源/);
   assert.equal(await page.locator(".research-note-disclosure summary").innerText(), "目录的英文研究说明");
-  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /格式: HLS.*访问: 待审核.*使用: 附带条件/);
+  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /格式: HLS.*Playback: Research only.*访问: 待审核.*使用: 附带条件/);
 
   const search = page.locator("#search");
   await search.focus();

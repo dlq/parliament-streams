@@ -27,6 +27,7 @@ const elements = {
   search: document.querySelector("#search"),
   level: document.querySelector("#level-filter"),
   format: document.querySelector("#format-filter"),
+  playback: document.querySelector("#playback-filter"),
   rights: document.querySelector("#rights-filter"),
   locale: document.querySelector("#locale-select"),
   sortButtons: document.querySelectorAll("[data-sort]"),
@@ -297,6 +298,7 @@ function applyStaticTranslations() {
   elements.search.placeholder = t("search");
   setText("jurisdiction-label", t("jurisdiction"));
   setText("source-type-label", t("sourceType"));
+  setText("playback-policy-label", t("playbackPolicy"));
   setText("use-guidance-label", t("useGuidance"));
   setText("filters-label", t("filters"));
   setText("metric-sources-label", t("metricSources"));
@@ -338,6 +340,7 @@ function setLocale(locale) {
   if (state.channels.length) {
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
+    setOptionLabel(elements.playback, "allPlayback", optionValues("playback_policy"));
     setOptionLabel(elements.rights, "allUse", [...new Set(state.channels.map((channel) => channel.permission.status))].sort());
     renderList();
     renderDetail();
@@ -412,6 +415,7 @@ function sortValue(channel, key) {
     format: label(channel.source_type),
     language: channel.language,
     access: label(channel.technical_status),
+    playback: label(channel.playback_policy),
     use: label(channel.permission.status),
   }[key];
 }
@@ -436,6 +440,7 @@ function filteredChannels() {
     return (!search || searchable.includes(search))
       && (!elements.level.value || channel.jurisdiction_level === elements.level.value)
       && (!elements.format.value || channel.source_type === elements.format.value)
+      && (!elements.playback.value || channel.playback_policy === elements.playback.value)
       && (!elements.rights.value || channel.permission.status === elements.rights.value);
   }).sort((left, right) => {
     const result = new Intl.Collator(state.locale, { numeric: true, sensitivity: "base" })
@@ -464,7 +469,7 @@ function renderList() {
         <span><span class="status status-${slug(channel.technical_status)}" lang="${state.locale}" title="${t("access")}: ${label(channel.technical_status)}">${label(channel.technical_status)}</span></span>
         <span><span class="status status-${slug(channel.permission.status)}" lang="${state.locale}" title="${t("use")}: ${label(channel.permission.status)}">${label(channel.permission.status)}</span></span>
       </button>
-      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusLabel(status)}. ${t("format")}: ${label(channel.source_type)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
+      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusLabel(status)}. ${t("format")}: ${label(channel.source_type)}. ${t("playbackPolicy")}: ${label(channel.playback_policy)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
     </li>`;
   }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
@@ -864,6 +869,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     <dl class="detail-grid">
       <div title="${t("sourceType")}: ${label(channel.source_type)}"><dt>${t("sourceType")}</dt><dd>${label(channel.source_type)}</dd></div>
       <div title="${t("sourceKind")}: ${label(channel.source_kind)}"><dt>${t("sourceKind")}</dt><dd>${label(channel.source_kind)}</dd></div>
+      <div title="${t("playbackPolicy")}: ${label(channel.playback_policy)}"><dt>${t("playbackPolicy")}</dt><dd><span class="status status-${slug(channel.playback_policy)}">${label(channel.playback_policy)}</span></dd></div>
       <div title="${t("accessStatus")}: ${label(channel.technical_status)}"><dt>${t("accessStatus")}</dt><dd><span class="status status-${slug(channel.technical_status)}">${label(channel.technical_status)}</span></dd></div>
       <div title="${t("stabilityRisk")}: ${label(channel.stability_risk)}"><dt>${t("stabilityRisk")}</dt><dd><span class="status status-${slug(channel.stability_risk)}">${label(channel.stability_risk)}</span></dd></div>
       <div title="${t("useGuidance")}: ${label(channel.permission.status)}"><dt>${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}">${label(channel.permission.status)}</span></dd></div>
@@ -991,10 +997,11 @@ async function init() {
     elements.stats.textContent = t("documented", { count: state.channels.length, date: catalogue.generated_on });
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
+    setOptionLabel(elements.playback, "allPlayback", optionValues("playback_policy"));
     setOptionLabel(elements.rights, "allUse", [...new Set(state.channels.map((channel) => channel.permission.status))].sort());
     renderResearchSummary();
     renderFallbackDirectory();
-    [elements.search, elements.level, elements.format, elements.rights].forEach((input) => input.addEventListener("input", () => { renderList(); renderDetail(); }));
+    [elements.search, elements.level, elements.format, elements.playback, elements.rights].forEach((input) => input.addEventListener("input", () => { renderList(); renderDetail(); }));
     elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
       const key = button.dataset.sort;
       state.sort = key === state.sort.key

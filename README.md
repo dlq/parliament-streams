@@ -168,8 +168,8 @@ play a stream natively in another product.
 
 The repository includes a GitHub Pages interface in `site/`. It provides
 search and filters over the canonical catalogue, source/EPG/provenance details,
-external institutional identity links, and an official outbound link for every
-entry.
+external institutional identity links, playback mode, and an official outbound
+link for every entry.
 
 The page enables in-page playback where `data/channels.json` records
 `playback_policy` as `native_playback` for a direct feed or `provider_embed`

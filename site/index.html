@@ -21,7 +21,7 @@
     <title>Parliament Streams</title>
     <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
     <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
-    <link rel="stylesheet" href="styles.css?v=20260819-playback-policy">
+    <link rel="stylesheet" href="styles.css?v=20260819-playback-filter">
   </head>
   <body>
     <a class="skip-link" href="#catalogue" id="skip-link">Skip to catalogue</a>
@@ -83,6 +83,10 @@
               <label>
                 <span class="visually-hidden" id="source-type-label">Source type</span>
                 <select id="format-filter"><option value="">All source types</option></select>
+              </label>
+              <label>
+                <span class="visually-hidden" id="playback-policy-label">Playback</span>
+                <select id="playback-filter"><option value="">All playback modes</option></select>
               </label>
               <label>
                 <span class="visually-hidden" id="use-guidance-label">Use guidance</span>
@@ -161,8 +165,8 @@
       <a id="about-link" href="https://github.com/dlq/parliament-streams/blob/main/README.md" target="_blank" rel="noreferrer">About the project</a>
     </footer>
 
-    <script defer src="catalogue-data.js?v=20260819-playback-policy"></script>
-    <script defer src="i18n.js?v=20260817-research-ui"></script>
-    <script defer src="app.js?v=20260819-playback-policy"></script>
+    <script defer src="catalogue-data.js?v=20260819-playback-filter"></script>
+    <script defer src="i18n.js?v=20260819-playback-filter"></script>
+    <script defer src="app.js?v=20260819-playback-filter"></script>
   </body>
 </html>

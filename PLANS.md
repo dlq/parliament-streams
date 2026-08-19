@@ -104,6 +104,8 @@ Done:
 - The public site now labels each source row as playable, link-out, fallback, or
   research so users can distinguish technical playback from safer official
   routes more quickly.
+- The public site exposes playback policy as its own filter and source-detail
+  field, keeping technical presentation distinct from rights/use guidance.
 - Fallback records now reuse the static schedule snapshot for related entries
   and can show linked current/next event titles, event IDs, status labels, and
   chamber/room labels beside official fallback links when that metadata is
@@ -253,7 +255,8 @@ Priority order:
    `playback_policy` separately from `permission.status`, so "playable by
    project policy" is no longer inferred from rights evidence. A
    `playback-policy-audit` command now reports native-playback-with-pending-
-   rights and retained-playback-URL/link-out tensions. Next, decide whether
+   rights and retained-playback-URL/link-out tensions, and the public UI now
+   exposes playback policy separately from use guidance. Next, decide whether
    source discovery state needs a similarly explicit field.
 2. Replace free-form `language` values with structured language codes and
    display labels.

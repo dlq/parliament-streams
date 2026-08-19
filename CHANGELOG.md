@@ -53,6 +53,9 @@ application. Earlier application work remains available in Git history.
   from rights/permission evidence.
 - A `playback-policy-audit` command and Make target that report review tensions
   between playback policy, permission status, and retained technical evidence.
+- Public catalogue playback-mode filtering and source-detail display, so
+  provider embeds, native playback, link-outs, and research-only records are
+  visible independently from use guidance.
 - Make targets and `--check` support for validation-history refreshes, so
   retained report-link drift is caught by `make verify`.
 - Source-row posture labels for playable, link-out, fallback, and research
