@@ -105,6 +105,11 @@ Near-term:
 10. Evaluate GovDirectory as a discovery and deduplication aid for official
     websites and social channels. Keep it separate from stream, schedule, and
     rights authority, as with the completed Wikidata integration.
+11. Canada federal ParlVU/SenVu has been added to the catalogue as official
+    event-platform link-out entries. Keep it separate from CPAC because CPAC is a
+    broadcaster/channel partner, while Harmony is the closer official House and
+    Senate proceedings surface. Next work is metadata scraping and active-event
+    playback validation, not direct HLS playback.
 
 The 2026-08-16 sub-national promotion pass completed the previous strong-candidate
 list. It added 18 official-player and schedule records across Canada, Australia,
@@ -183,6 +188,9 @@ Candidate future scrapers:
 6. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
    Israel, El Salvador, Mauritius, India, Thailand, Slovakia, Nunavut,
    and other second-ring sources when structured official endpoints are found.
+7. Canada federal ParlVU/SenVu live/upcoming/on-demand metadata for House,
+   Senate, and committee proceedings, including audio-language, closed-caption,
+   archive, and `PowerBrowserV2` event links where available.
 8. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
    catalogue starts expanding beyond national/supranational coverage.
@@ -267,6 +275,30 @@ and display labels so locale coverage can be checked automatically. Expand the
 six `Multilingual` supranational records and the Northwest Territories
 `Multiple official languages` record into evidence-backed language lists; the
 current generic labels prevent a complete coverage audit.
+
+## Future Site/Product Review
+
+The current static site is intentionally a public research catalogue rather
+than a consumer streaming app. Keep the evidence-forward design, but revisit
+whether the product framing is missing a stronger organizing idea after the
+catalogue stabilizes further.
+
+Later review prompts:
+
+1. Strengthen the first impression if the current hero does not explain quickly
+   enough why open parliamentary video access matters.
+2. Make the distinction between playable sources, official-player/link-out
+   sources, and research-only sources more obvious without overstating rights.
+3. Clarify the trust and verification story: what was checked, when, by which
+   method, and what remains uncertain.
+4. Consider a coverage map or regional coverage view if the source list becomes
+   too abstract for readers.
+5. Add a stronger schedule or "now live / upcoming" surface if collected EPG
+   snapshots become reliable enough.
+6. Give the open-stream principles and advocacy angle a more prominent path if
+   the project becomes useful for outreach to legislatures or vendors.
+7. Explore browsing by legislature/institution rather than only by stream,
+   especially once external identity links and chamber mappings are stable.
 
 ## Rights And Permission Work
 

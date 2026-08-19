@@ -216,6 +216,68 @@ Assessment:
 
 CPAC is a validated direct-HLS candidate, but the catalogue should prefer CPAC's official content-store API evidence rather than the older `iptv-org` CloudFront URL.
 
+### Canada federal: ParlVU and Parliament of Canada webcasts
+
+Follow-up target added on 2026-08-19 after reviewing Parliament of Canada's
+"Keeping Canadians Informed" educational page and the House of Commons
+Procedure and Practice chapter on broadcasting and webcasting.
+
+Official evidence:
+
+- Parliament of Canada's education material frames informing Canadians as a
+  broader ecosystem that includes proceedings, committee work, records, and
+  public communication, not only CPAC's television channel.
+- House of Commons Procedure and Practice says CPAC, in partnership with the
+  House of Commons, broadcasts live House proceedings and some committee
+  meetings, and that these are also available online live and on-demand on
+  ParlVU and committee websites.
+- The same chapter says ParlVU offers English, French, and floor audio; high-
+  and low-resolution video; and audio-only options.
+- The broadcasting/webcasting chapter frames control of the proceedings'
+  broadcast and webcast under the House and Speaker, and discusses the
+  "electronic Hansard" principle of faithful recording.
+- Senate material says regular Senate Chamber video broadcasting began in 2019
+  and that Senate Chamber and committee broadcasts are available through ParlVU
+  and CPAC.
+
+Assessment:
+
+ParlVU should be modeled separately from CPAC. CPAC remains a useful
+TV-like/broadcaster channel source but has restrictive third-party reuse terms.
+ParlVU is closer to the first-party parliamentary proceedings surface for
+House, Senate, and committee live/upcoming/on-demand coverage. Start with
+official-page and schedule/API research entries; do not claim direct HLS until
+the playback route, stability, and terms are validated.
+
+Harmony platform check, 2026-08-19:
+
+- The House and Senate Harmony landing pages did not publish `.m3u8`, DASH
+  manifest, or other stable direct playback URLs in the static HTML.
+- Senate `PowerBrowserV2` event pages for future events exposed event metadata,
+  stream counts, and stable-looking Azure CDN base paths for room streams, but
+  not complete HLS manifests.
+- Treat Harmony as an official event platform: useful for link-out, live/upcoming
+  event metadata, archive discovery, and possible future active-event validation,
+  not as a stable channel-style HLS source.
+
+Candidate catalogue targets:
+
+- `canada-house-of-commons-parlvu`
+- `canada-house-committees-parlvu`
+- `canada-senate-senvu`
+- `parliament-of-canada-parlvu`
+
+Useful sources:
+
+- https://learn.parl.ca/understanding-comprendre/en/how-parliament-works/keeping-canadians-informed/
+- https://parlvu.parl.gc.ca/Harmony/en
+- https://senparlvu.parl.gc.ca/Harmony/
+- https://www.ourcommons.ca/procedure-and-practice-4/ch24-3-e.html
+- https://www.noscommunes.ca/procedure/procedure-and-practice-4/ch24-3-e.html
+- https://www.ourcommons.ca/en/important-notices#SpeakersPermission
+- https://sencanada.ca/en/intellectual-property/#permission
+- https://sencanada.ca/en/newsroom/the-speaker-of-the-senate-senate-chamber-launches-video-broadcasting/
+
 Useful sources:
 
 - https://www.cpac.ca/about-cpac/

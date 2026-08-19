@@ -1,7 +1,7 @@
 {
   "schema_version": 6,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-08-17",
+  "generated_on": "2026-08-19",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -65,6 +65,150 @@
           "https://www.cpac.ca/terms-of-use"
         ],
         "recommendation": "Link to CPAC.ca only. Do not use the catalogued HLS endpoint in a third-party player unless CPAC gives written consent."
+      }
+    },
+    {
+      "id": "canada-house-of-commons-parlvu",
+      "name": "Canada House of Commons ParlVU",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "House of Commons of Canada",
+      "external_ids": {
+        "wikidata_qid": "Q383590",
+        "ipu_country_code": "CA",
+        "ipu_parliament_code": "CA",
+        "ipu_chamber_code": "CA-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q383590",
+          "checked_on": "2026-08-19",
+          "confidence": "high",
+          "notes": "Matched to the House of Commons of Canada; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CA/CA-LC01/",
+          "checked_on": "2026-08-19",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline House of Commons chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "English / French / Floor audio",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "provenance_note": "Official House of Commons ParlVU Harmony event platform. Landing and event pages expose live, upcoming, and on-demand proceedings, but this review did not find a published stable first-party HLS endpoint.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en",
+          "fr"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "ParlVU documents English, French, and floor audio options; caption availability should be confirmed per event."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://parlvu.parl.gc.ca/Harmony/en",
+          "method": "GET",
+          "kind": "harmony_upcoming_events_and_powerbrowser_pages",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents",
+          "method": "GET",
+          "kind": "harmony_upcoming_events_api",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "ParlVU is an official House of Commons live and on-demand proceedings surface, but this review found no permission for third-party native playback or redistribution of any underlying stream URL.",
+        "evidence": [
+          "https://parlvu.parl.gc.ca/Harmony/en",
+          "https://www.ourcommons.ca/en/important-notices#SpeakersPermission",
+          "https://www.ourcommons.ca/procedure-and-practice-4/ch24-3-e.html"
+        ],
+        "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the House confirms permission and stability."
+      }
+    },
+    {
+      "id": "canada-senate-senvu",
+      "name": "Canada Senate SenVu",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "Senate of Canada",
+      "external_ids": {
+        "wikidata_qid": "Q841180",
+        "ipu_country_code": "CA",
+        "ipu_parliament_code": "CA",
+        "ipu_chamber_code": "CA-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q841180",
+          "checked_on": "2026-08-19",
+          "confidence": "high",
+          "notes": "Matched to the Senate of Canada; used for identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CA/CA-UC01/",
+          "checked_on": "2026-08-19",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline Senate chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "English / French / Floor audio",
+      "source_type": "official_page",
+      "playback_url": null,
+      "official_url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "provenance_note": "Official Senate SenVu Harmony event platform. Event pages expose scheduled proceedings and stable-looking Azure CDN base paths for room streams, but this review did not find complete published stable HLS manifest URLs.",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en",
+          "fr"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "SenVu documents audio, video, and closed-captioning features; only floor audio and official transcripts are identified as the official record."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://senparlvu.parl.gc.ca/Harmony/",
+          "method": "GET",
+          "kind": "harmony_upcoming_events_and_powerbrowser_pages",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents",
+          "method": "GET",
+          "kind": "harmony_upcoming_events_api",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "SenVu is an official Senate live and on-demand proceedings surface, but this review found no permission for third-party native playback or redistribution of any underlying stream URL.",
+        "evidence": [
+          "https://senparlvu.parl.gc.ca/Harmony/",
+          "https://sencanada.ca/en/intellectual-property/#permission",
+          "https://sencanada.ca/en/newsroom/the-speaker-of-the-senate-senate-chamber-launches-video-broadcasting/"
+        ],
+        "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the Senate confirms permission and stability."
       }
     },
     {
