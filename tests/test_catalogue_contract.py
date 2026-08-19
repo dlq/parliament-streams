@@ -41,7 +41,7 @@ class CatalogueContractTests(unittest.TestCase):
         cls.channels = cls.catalogue["channels"]
 
     def test_catalogue_has_expected_top_level_shape(self):
-        self.assertEqual(self.catalogue["schema_version"], 7)
+        self.assertEqual(self.catalogue["schema_version"], 8)
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
@@ -97,6 +97,7 @@ class CatalogueContractTests(unittest.TestCase):
             "epg_sources",
             "permission",
         }
+        optional_channel_keys = {"embed", "validation_history"}
         required_permission_keys = {"status", "summary", "evidence", "recommendation"}
         required_accessibility_keys = {
             "captions",
@@ -119,10 +120,17 @@ class CatalogueContractTests(unittest.TestCase):
             "confidence",
             "notes",
         }
+        required_validation_history_keys = {
+            "checked_at",
+            "report_path",
+            "method",
+            "status",
+            "note",
+        }
 
         for channel in self.channels:
             with self.subTest(channel=channel["id"]):
-                self.assertEqual(set(channel) - {"embed"}, required_channel_keys)
+                self.assertEqual(set(channel) - optional_channel_keys, required_channel_keys)
                 self.assertNotIn(channel["id"], seen_ids)
                 seen_ids.add(channel["id"])
                 self.assertIn(channel["source_type"], SOURCE_TYPES)
@@ -145,6 +153,11 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertTrue(accessibility_note is None or accessibility_note.strip())
                 self.assertIsInstance(channel["provenance_note"], str)
                 self.assertTrue(channel["provenance_note"].strip())
+                for history in channel.get("validation_history", []):
+                    self.assertEqual(set(history), required_validation_history_keys)
+                    self.assertTrue(history["report_path"].startswith("reports/health/"))
+                    self.assertTrue(urlparse(history["report_path"]).scheme == "")
+                    self.assertIn(history["status"], {"ok", "warning", "error", "skipped"})
                 self.assertNotIn("attribution_text", channel)
                 self.assertNotIn("program", channel)
                 self.assertTrue(urlparse(channel["official_url"]).scheme.startswith("http"))

@@ -15,6 +15,7 @@ const redundantAccessibilityNotes = new Set([
   "The official service provides accessible variants for some scheduled proceedings.",
   "The official service provides language and accessibility variants for some scheduled proceedings.",
 ]);
+const repositoryBaseUrl = "https://github.com/dlq/parliament-streams/blob/main/";
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
 const state = { channels: [], fallbacks: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
@@ -355,6 +356,20 @@ function canPlay(channel) {
     && channel.technical_status === "validated"
     && !blockedPlaybackRights.has(channel.permission.status);
 }
+function sourceStatus(channel) {
+  if (canPlay(channel)) return "playable";
+  if (channel.source_type === "official_page" || channel.permission.status === "no_third_party_reuse") return "link_out";
+  if (channel.source_type === "youtube" || channel.embed) return "fallback";
+  return "research";
+}
+function sourceStatusLabel(value) {
+  return {
+    playable: t("sourcePlayable"),
+    link_out: t("sourceLinkOut"),
+    fallback: t("sourceFallback"),
+    research: t("sourceResearch"),
+  }[value] ?? value;
+}
 function formatDate(value) {
   if (!value) return t("notAvailable");
   const date = new Date(value.length === 10 ? `${value}T12:00:00` : value);
@@ -435,17 +450,18 @@ function renderList() {
   }
   elements.list.innerHTML = channels.length ? channels.map((channel) => {
     const descriptionId = `${channel.id}-description`;
+    const status = sourceStatus(channel);
     return `
     <li>
       <button class="channel-button" type="button" data-channel-id="${channel.id}" aria-pressed="${channel.id === state.selectedId}" aria-describedby="${descriptionId}">
-        <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-hidden="true">&#9654;</span>' : ""}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
+        <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}${canPlay(channel) ? '<span class="play-marker" aria-hidden="true">&#9654;</span>' : ""}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span><span class="source-posture source-posture-${slug(status)}">${sourceStatusLabel(status)}</span></span>
         <span>${jurisdictionName(channel.country_or_region)}</span>
         <span class="format" lang="${state.locale}" title="${t("format")}: ${label(channel.source_type)}">${label(channel.source_type)}</span>
         <span class="language-list">${languageMarkup(channel.language)}</span>
         <span><span class="status status-${slug(channel.technical_status)}" lang="${state.locale}" title="${t("access")}: ${label(channel.technical_status)}">${label(channel.technical_status)}</span></span>
         <span><span class="status status-${slug(channel.permission.status)}" lang="${state.locale}" title="${t("use")}: ${label(channel.permission.status)}">${label(channel.permission.status)}</span></span>
       </button>
-      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${t("format")}: ${label(channel.source_type)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
+      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusLabel(status)}. ${t("format")}: ${label(channel.source_type)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
     </li>`;
   }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
@@ -563,6 +579,19 @@ function programmeMarkup(channel) {
     ${next}${freshness}
   </div>`;
 }
+function fallbackScheduleMarkup(fallback) {
+  const relatedSchedule = fallback.related_channel_ids
+    .map((channelId) => state.schedules[channelId])
+    .find(Boolean);
+  if (!relatedSchedule) return "";
+  const current = relatedSchedule.current_event_title
+    ? `<span><strong>${t("nowProgramme")}</strong> ${escapeHtml(relatedSchedule.current_event_title)}</span>`
+    : "";
+  const next = relatedSchedule.next_event_title
+    ? `<span><strong>${t("nextProgramme")}</strong> ${escapeHtml(relatedSchedule.next_event_title)}</span>`
+    : "";
+  return current || next ? `<small class="fallback-schedule">${current}${next}</small>` : "";
+}
 function evidenceLabel(channel, url) {
   const address = url.toLocaleLowerCase();
   if (url === channel.official_url) return t("officialEvidence");
@@ -642,6 +671,7 @@ function fallbackMarkup(channel) {
           <li>
             <a href="${fallback.official_url}" target="_blank" rel="noreferrer">${escapeHtml(fallback.label)} ↗</a>
             <span>${fallbackLabel(fallback.fallback_type)} · ${fallbackLabel(fallback.integration_mode)} · ${fallbackLabel(fallback.schedule_role)}</span>
+            ${fallbackScheduleMarkup(fallback)}
             ${state.locale === "en" ? `<small lang="en">${escapeHtml(fallback.notes)}</small>` : ""}
           </li>`).join("")}
       </ul>
@@ -654,6 +684,7 @@ function renderFallbackDirectory() {
       <li>
         <a href="${fallback.official_url}" target="_blank" rel="noreferrer">${escapeHtml(fallback.label)} ↗</a>
         <span>${jurisdictionName(fallback.country_or_region)} · ${fallbackLabel(fallback.fallback_type)} · ${fallbackLabel(fallback.integration_mode)}</span>
+        ${fallbackScheduleMarkup(fallback)}
       </li>`).join("")
     : `<li>${t("noFallbacks")}</li>`;
 }
@@ -699,6 +730,33 @@ function identityMarkup(channel) {
   return `<div class="full identity-record">
     <dt>${t("identity")}</dt>
     <dd><ul class="identity-list">${links}</ul></dd>
+  </div>`;
+}
+function validationMethodLabel(method) {
+  return {
+    static_http: t("staticHttpValidation"),
+    browser_player: t("browserPlayerValidation"),
+    manifest_seed: t("manifestSeedValidation"),
+    review_followup: t("reviewFollowupValidation"),
+  }[method] ?? label(method);
+}
+function validationMarkup(channel) {
+  const latest = channel.validation_history?.[0];
+  if (!latest) {
+    return `<div class="full validation-record">
+      <dt>${t("latestValidation")}</dt>
+      <dd><span class="detail-subtitle">${t("validationNotRecorded")}</span></dd>
+    </div>`;
+  }
+  const reportUrl = `${repositoryBaseUrl}${encodeURI(latest.report_path)}`;
+  return `<div class="full validation-record">
+    <dt>${t("latestValidation")}</dt>
+    <dd>
+      <span><strong>${t("validationChecked", { date: formatDate(latest.checked_at) })}</strong></span>
+      <span><strong>${t("validationMethod")}</strong> ${validationMethodLabel(latest.method)}</span>
+      <span><strong>${t("accessStatus")}</strong> <span class="status status-${slug(latest.status)}">${label(latest.status)}</span></span>
+      <a href="${reportUrl}" target="_blank" rel="noreferrer">${t("validationReport")} ↗</a>
+    </dd>
   </div>`;
 }
 function freshnessMarkup(channel) {
@@ -758,6 +816,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       ${programme ? `<div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div>` : ""}
       ${accessibilityMarkup(channel)}
       ${identityMarkup(channel)}
+      ${validationMarkup(channel)}
       <div class="full"><dt>${t("schedule")}</dt><dd>${epgMarkup(channel)}</dd></div>
       ${fallbackMarkup(channel)}
       ${freshnessMarkup(channel)}

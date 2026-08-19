@@ -35,6 +35,7 @@ from .models import (
     SourceKind,
     SourceType,
     StabilityRisk,
+    ValidationHistoryEntry,
     ValidationSeed,
 )
 from .site_data import DEFAULT_SITE_DATA_PATH, render_site_data_payload
@@ -71,6 +72,87 @@ def _atomic_write_text(path: Path, content: str) -> None:
 
 def write_json(path: Path, value: object) -> None:
     _atomic_write_text(path, f"{json.dumps(value, ensure_ascii=False, indent=2)}\n")
+
+
+def _validation_report_method(
+    path: Path,
+) -> Literal["static_http", "browser_player", "manifest_seed", "review_followup"]:
+    name = path.name
+    if "deep-browser" in name:
+        return "browser_player"
+    if "review-followup" in name:
+        return "review_followup"
+    if "seed" in name or "democracy-hls" in name:
+        return "manifest_seed"
+    return "static_http"
+
+
+def refresh_validation_history(
+    catalogue: Catalogue,
+    reports_dir: Path,
+    *,
+    root: Path = DEFAULT_CATALOGUE_PATH.parents[1],
+    limit: int = 3,
+) -> Catalogue:
+    """Attach compact validation-report references to catalogue entries."""
+    prepared = deepcopy(catalogue)
+    history_by_id: dict[str, list[ValidationHistoryEntry]] = {
+        channel["id"]: [] for channel in prepared["channels"]
+    }
+    known_ids = set(history_by_id)
+
+    for path in sorted(reports_dir.glob("*.json")):
+        report = load_json_object(path)
+        method = _validation_report_method(path)
+        report_path = path.resolve().relative_to(root.resolve()).as_posix()
+        for result in report.get("results", []):
+            if not isinstance(result, dict):
+                continue
+            channel_id = result.get("id")
+            checked_at = result.get("checked_at") or report.get("checked_at")
+            status = result.get("status")
+            if (
+                channel_id not in known_ids
+                or not isinstance(checked_at, str)
+                or status not in {"ok", "warning", "error", "skipped"}
+            ):
+                continue
+            history_entry: ValidationHistoryEntry = {
+                "checked_at": checked_at,
+                "report_path": report_path,
+                "method": method,
+                "status": cast(Literal["ok", "warning", "error", "skipped"], status),
+                "note": str(result.get("note") or report.get("scope") or "Validation recorded."),
+            }
+            history_by_id[channel_id].append(history_entry)
+
+    for channel in prepared["channels"]:
+        channel_history = sorted(
+            history_by_id[channel["id"]],
+            key=lambda item: (item["checked_at"], item["report_path"]),
+            reverse=True,
+        )[:limit]
+        if channel_history:
+            channel["validation_history"] = channel_history
+        else:
+            channel.pop("validation_history", None)
+    require_valid_catalogue(prepared)
+    return prepared
+
+
+def validation_history_is_current(
+    catalogue: Catalogue,
+    reports_dir: Path,
+    *,
+    root: Path = DEFAULT_CATALOGUE_PATH.parents[1],
+    limit: int = 3,
+) -> bool:
+    """Return whether catalogue validation-history fields match retained reports."""
+    refreshed = refresh_validation_history(catalogue, reports_dir, root=root, limit=limit)
+    for current, expected in zip(catalogue["channels"], refreshed["channels"], strict=True):
+        if current.get("validation_history") != expected.get("validation_history"):
+            return False
+    return True
 
 
 @dataclass(frozen=True)

@@ -44,6 +44,17 @@ application. Earlier application work remains available in Git history.
 - A focused rights/accessibility review pass that moved France National
   Assembly to conditional-reuse status and added current Knesset, Sansad TV,
   and TPchannel evidence without overclaiming reuse permission.
+- Schema v8 validation-history references, a CLI refresh command, and public
+  source-detail links to retained health reports for channels with dated
+  validation evidence.
+- Make targets and `--check` support for validation-history refreshes, so
+  retained report-link drift is caught by `make verify`.
+- Source-row posture labels for playable, link-out, fallback, and research
+  records, plus fallback now/next hints sourced from already-collected schedule
+  metadata.
+- Ontario source-family accessibility evidence across its six feeds, including
+  documented English captions and source-dependent sign-language treatment while
+  keeping full-stream reuse permission conservative.
 
 - Canonical Tier 1 and Tier 2 discovery target data plus a monthly GitHub
   Actions audit that performs static and Chromium source discovery, compares

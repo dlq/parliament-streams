@@ -110,6 +110,11 @@
       "id": "thailand-parliament-tv",
       "outcome": "kept_pending_review",
       "reason": "TPchannel official operation and live/OTT access were confirmed, but no source-specific reuse or embedding terms were found."
+    },
+    {
+      "id": "ontario-legislative-assembly-streams",
+      "outcome": "kept_noncommercial_pending_review_accessibility_improved",
+      "reason": "Shared Ontario terms and accessibility evidence were applied to six direct-HLS records. Caption availability is now recorded as available in English, sign-language as source-dependent, and audio description remains unknown; full live-stream reuse still needs written clarification."
     }
   ],
   "recommended_order": [
@@ -117,5 +122,44 @@
     "Review first-party HLS records next, because they are easiest to reason about technically and most valuable for playback confidence.",
     "Review official-page fallback records after the fallback dataset stabilizes, because many should remain link-out regardless of direct playback evidence.",
     "For accessibility, start with sources that already claim captions or interpretation in the catalogue, then replace unknown fields only with cited official evidence."
+  ],
+  "validation_history_coverage": {
+    "channels_with_retained_history": 60,
+    "channels_without_retained_history": 26,
+    "history_limit_per_channel": 3
+  },
+  "captions_status": [
+    {
+      "status": "available",
+      "count": 21
+    },
+    {
+      "status": "source_dependent",
+      "count": 4
+    },
+    {
+      "status": "unknown",
+      "count": 61
+    }
+  ],
+  "sign_language_status": [
+    {
+      "status": "available",
+      "count": 2
+    },
+    {
+      "status": "source_dependent",
+      "count": 7
+    },
+    {
+      "status": "unknown",
+      "count": 77
+    }
+  ],
+  "audio_description_status": [
+    {
+      "status": "unknown",
+      "count": 86
+    }
   ]
 }

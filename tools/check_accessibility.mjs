@@ -104,6 +104,13 @@ try {
           next_event_time: "4:00 PM",
           fetched_at: "2026-08-17T12:00:00Z",
         },
+        "canada-house-of-commons-parlvu": {
+          current_event_title: "House of Commons sitting",
+          current_event_time: "Live now",
+          next_event_title: "Finance committee",
+          next_event_time: "2:00 PM",
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
       },
     }),
   }));
@@ -164,12 +171,20 @@ try {
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
+  assert.match(await page.locator('[data-channel-id="canada-house-of-commons-parlvu"] .source-posture').innerText(), /LINK-OUT/);
   assert.match(await page.locator(".fallback-record").innerText(), /Canada House of Commons ParlVU events/);
   assert.match(await page.locator(".fallback-record").innerText(), /Event platform · Event resolver planned · Schedule source/);
+  assert.match(await page.locator(".fallback-record").innerText(), /Now: House of Commons sitting/);
+  assert.match(await page.locator(".fallback-record").innerText(), /Next: Finance committee/);
   assert.match(await page.locator(".fallback-record a").getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
+  assert.match(await page.locator(".validation-record").innerText(), /No retained validation report yet/);
 
   const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
   await europarlRow.click();
+  assert.match(await europarlRow.locator(".source-posture").innerText(), /LINK-OUT/);
+  assert.match(await page.locator(".validation-record").innerText(), /LATEST VALIDATION/);
+  assert.match(await page.locator(".validation-record").innerText(), /Report/);
+  assert.match(await page.locator(".validation-record a").getAttribute("href"), /github\.com\/dlq\/parliament-streams\/blob\/main\/reports\/health\//);
   assert.match(await page.locator(".programme-fetch-status").innerText(), /Schedule collected/);
   assert.match(await page.locator(".programme-line").first().innerText(), /^Now: Committee on the Environment/);
   assert.match(await page.locator(".programme-line").nth(1).innerText(), /^Next: Plenary sitting/);

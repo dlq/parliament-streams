@@ -26,8 +26,10 @@ from parliament_streams.management import (
     generate_validation_seed,
     load_candidate,
     promote_candidate,
+    refresh_validation_history,
     scaffold_candidate,
     validate_candidate_directory,
+    validation_history_is_current,
     write_json,
 )
 from parliament_streams.site_data import (
@@ -344,7 +346,7 @@ class ManagementTests(unittest.TestCase):
         catalogue = load_catalogue(self.catalogue_path)
         fallbacks = load_fallbacks(self.fallbacks_path)
         self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
-        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 7)
+        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 8)
         self.assertIn(
             "PARLIAMENT_STREAMS_FALLBACKS",
             render_site_data(self.catalogue_path, self.fallbacks_path),
@@ -419,6 +421,31 @@ class ManagementTests(unittest.TestCase):
         invalid["channels"][0]["id"] = "INVALID"
         with self.assertRaises(CatalogueValidationError):
             store.commit(invalid)
+
+    def test_validation_history_current_check(self):
+        reports_dir = self.root / "reports" / "health"
+        reports_dir.mkdir(parents=True)
+        write_json(
+            reports_dir / "2026-08-19-catalogue-health.json",
+            {
+                "checked_at": "2026-08-19T12:00:00Z",
+                "results": [
+                    {
+                        "id": "cpac-ca",
+                        "checked_at": "2026-08-19T12:00:00Z",
+                        "status": "ok",
+                        "note": "HLS manifest detected.",
+                    }
+                ],
+            },
+        )
+        catalogue = load_catalogue(self.catalogue_path)
+        for channel in catalogue["channels"]:
+            channel.pop("validation_history", None)
+
+        self.assertFalse(validation_history_is_current(catalogue, reports_dir, root=self.root))
+        refreshed = refresh_validation_history(catalogue, reports_dir, root=self.root)
+        self.assertTrue(validation_history_is_current(refreshed, reports_dir, root=self.root))
 
     def test_candidate_scaffolding_loading_and_promotion(self):
         candidate = scaffold_candidate(
@@ -865,7 +892,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(load_json_object(output_path), report)
         audit.assert_called_once()
         self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2, "workers": 4})
-        self.assertEqual(audit.call_args.args[0]["schema_version"], 7)
+        self.assertEqual(audit.call_args.args[0]["schema_version"], 8)
 
     def test_links_audit_command_writes_report_and_can_fail(self):
         report = {
@@ -903,6 +930,50 @@ class CliTests(unittest.TestCase):
         with mock.patch("parliament_streams.cli.audit_catalogue_links", return_value=report):
             result, _, _ = self.run_cli("links-audit", "--fail-on-error")
         self.assertEqual(result, 1)
+
+    def test_validation_history_refresh_command_can_check_drift(self):
+        reports_dir = self.root / "reports" / "health"
+        reports_dir.mkdir(parents=True)
+        write_json(
+            reports_dir / "2026-08-19-catalogue-health.json",
+            {
+                "checked_at": "2026-08-19T12:00:00Z",
+                "results": [
+                    {
+                        "id": "cpac-ca",
+                        "checked_at": "2026-08-19T12:00:00Z",
+                        "status": "ok",
+                        "note": "HLS manifest detected.",
+                    }
+                ],
+            },
+        )
+        catalogue = load_catalogue(self.catalogue)
+        for channel in catalogue["channels"]:
+            channel.pop("validation_history", None)
+        write_json(self.catalogue, catalogue)
+
+        result, _, error = self.run_cli(
+            "validation-history-refresh", "--reports-dir", str(reports_dir), "--check"
+        )
+        self.assertEqual(result, 1)
+        self.assertIn("stale", error)
+
+        result, output, _ = self.run_cli(
+            "validation-history-refresh", "--reports-dir", str(reports_dir)
+        )
+        self.assertEqual(result, 0)
+        self.assertIn("1 of", output)
+        self.assertEqual(
+            load_catalogue(self.catalogue)["channels"][0]["validation_history"][0]["report_path"],
+            "reports/health/2026-08-19-catalogue-health.json",
+        )
+
+        result, output, _ = self.run_cli(
+            "validation-history-refresh", "--reports-dir", str(reports_dir), "--check"
+        )
+        self.assertEqual(result, 0)
+        self.assertIn("current", output)
 
 
 if __name__ == "__main__":

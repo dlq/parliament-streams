@@ -94,6 +94,17 @@ Done:
   provider fallback surfaces separately from permanent channel records. The
   public site renders related fallbacks in source details and exposes a compact
   fallback directory for records that do not yet map to a channel.
+- Schema v8 adds compact per-entry validation history. Sixty catalogue entries
+  currently link to retained dated health reports, and the public site surfaces
+  the latest retained check in the source detail panel.
+- Validation-history refresh and drift checking are available through Make and
+  the CLI; the drift check is part of `make verify`.
+- The public site now labels each source row as playable, link-out, fallback, or
+  research so users can distinguish technical playback from safer official
+  routes more quickly.
+- Fallback records now reuse the static schedule snapshot for related entries
+  and can show current/next event titles beside official fallback links when
+  that metadata is available.
 
 Retired from the active project:
 
@@ -106,33 +117,31 @@ Retired from the active project:
 
 Near-term:
 
-1. Normalize validation history so dated health reports can be linked from
-   catalogue entries without copying transient HTTP details into every channel.
-2. Split repeated permission summaries into a normalized `data/permissions.json`
+1. Split repeated permission summaries into a normalized `data/permissions.json`
    only if the inline channel entries become hard to review.
-3. Complete schema coverage for validation history and generated reports beyond
-   the existing channel, permission, and EPG definitions.
-4. Revisit first-party versus official-vendor classifications during future
+2. Complete schema coverage for generated reports beyond the existing channel,
+   fallback, permission, validation-history, and EPG definitions.
+3. Revisit first-party versus official-vendor classifications during future
    source reviews and tighten any conservative defaults.
-5. Use `stability_risk` in automated audit prioritization and in any future
+4. Use `stability_risk` in automated audit prioritization and in any future
    reviewer queues.
-6. Make the schema distinguish source discovery from permission status, because
+5. Make the schema distinguish source discovery from permission status, because
    a stream can be technically reachable but unsuitable for redistribution.
-7. Expand event resolver behavior for `data/fallbacks.json`: ParlVU and SenVu
-   can already use collected Harmony schedule metadata, while HouseLive,
-   C-SPAN, Parliamentlive.tv, and official YouTube live pages still need stable
-   event identifiers, now/next semantics, and rights-aware display rules before
-   they can show resolved events instead of static fallback links. Promote a
-   fallback into `data/channels.json` only when it has a stable channel identity
-   and a supportable playback or link-out posture.
-8. Decide whether supranational institutions need a separate `entity_type` or
+6. Expand event resolver behavior for `data/fallbacks.json`: ParlVU and SenVu
+   can now surface collected Harmony now/next metadata beside fallback links,
+   but active event URLs, archive enrichment, HouseLive, C-SPAN,
+   Parliamentlive.tv, and official YouTube live pages still need stable event
+   identifiers and rights-aware display rules. Promote a fallback into
+   `data/channels.json` only when it has a stable channel identity and a
+   supportable playback or link-out posture.
+7. Decide whether supranational institutions need a separate `entity_type` or
    `institution_family` field, because they are not country-level legislatures.
-9. Define separate expansion criteria for sub-national institutions before
+8. Define separate expansion criteria for sub-national institutions before
    adding official-page/link-out entries beyond the current curated set.
-10. Evaluate GovDirectory as a discovery and deduplication aid for official
+9. Evaluate GovDirectory as a discovery and deduplication aid for official
     websites and social channels. Keep it separate from stream, schedule, and
     rights authority, as with the completed Wikidata integration.
-11. Canada federal ParlVU/SenVu has been added to the catalogue as official
+10. Canada federal ParlVU/SenVu has been added to the catalogue as official
     event-platform link-out entries. Keep it separate from CPAC because CPAC is a
     broadcaster/channel partner, while Harmony is the closer official House and
     Senate proceedings surface. Landing-page upcoming-event scraping is
@@ -364,6 +373,9 @@ Current measurable review queues as of 2026-08-19:
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
   Breakdown: 37 national, 43 sub-national, and 6 supranational entries.
+  Ontario caption availability and source-dependent sign-language evidence is
+  now documented across its six feeds; audio-description evidence remains
+  unknown for every entry.
 - Track these as two persistent GitHub research issues rather than opening one
   issue per stream. Update their counts after catalogue promotions and close
   them only when the underlying evidence gaps are actually resolved.

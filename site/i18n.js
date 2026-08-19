@@ -34,6 +34,10 @@ const en = {
   fallbackEventPlatform: "Event platform", fallbackLivePage: "Official live page", fallbackYoutubeLive: "YouTube live", fallbackYoutubeUploads: "YouTube uploads",
   fallbackArchive: "Archive", fallbackBroadcaster: "Broadcaster", fallbackLinkOut: "Link out", fallbackProviderEmbed: "Provider embed",
   fallbackEventResolver: "Event resolver planned", fallbackScheduleSource: "Schedule source", fallbackNowNext: "Now/next possible", fallbackNoSchedule: "No schedule role",
+  sourcePlayable: "Playable", sourceLinkOut: "Link-out", sourceFallback: "Fallback", sourceResearch: "Research",
+  latestValidation: "Latest validation", validationNotRecorded: "No retained validation report yet.",
+  validationChecked: "Checked {date}", validationMethod: "Method", validationReport: "Report",
+  staticHttpValidation: "Static HTTP", browserPlayerValidation: "Browser/player", manifestSeedValidation: "Manifest seed", reviewFollowupValidation: "Review follow-up",
   mediaAccessibility: "Media accessibility", captions: "Captions", signLanguage: "Sign language", audioDescription: "Audio description",
   a11yAvailable: "Available", a11ySourceDependent: "Varies by source or event", a11yUnavailable: "Unavailable", a11yUnknown: "Not yet verified",
   scheduleApi: "Schedule API", openScheduleData: "Open schedule data", calendarAgenda: "Calendar / agenda", liveSchedulePage: "Live schedule page", schedulePage: "Schedule page",
@@ -58,6 +62,7 @@ const en = {
     personal_use_pending_review: "Unclear", noncommercial_pending_review: "Limited",
     explicit_reuse_with_conditions: "With conditions", embed_only: "Official embed", no_third_party_reuse: "No reuse",
     always_on: "Always on", sitting_only: "Sitting only", event_based: "Event based",
+    ok: "OK", warning: "Warning", error: "Error", skipped: "Skipped",
   },
 };
 
@@ -568,6 +573,19 @@ for (const [locale] of locales) {
     "fallbackScheduleSource",
     "fallbackNowNext",
     "fallbackNoSchedule",
+    "sourcePlayable",
+    "sourceLinkOut",
+    "sourceFallback",
+    "sourceResearch",
+    "latestValidation",
+    "validationNotRecorded",
+    "validationChecked",
+    "validationMethod",
+    "validationReport",
+    "staticHttpValidation",
+    "browserPlayerValidation",
+    "manifestSeedValidation",
+    "reviewFollowupValidation",
   ]) {
     messages[messageKey] ??= en[messageKey];
   }
@@ -584,6 +602,10 @@ for (const [locale] of locales) {
     "medium",
     "high",
     "unknown",
+    "ok",
+    "warning",
+    "error",
+    "skipped",
   ]) {
     messages.labels[labelKey] ??= en.labels[labelKey];
   }

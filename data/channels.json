@@ -1,5 +1,5 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "generated_from": "curated research and live endpoint validation",
   "generated_on": "2026-08-19",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
@@ -67,7 +67,30 @@
           "https://www.cpac.ca/terms-of-use"
         ],
         "recommendation": "Link to CPAC.ca only. Do not use the catalogued HLS endpoint in a third-party player unless CPAC gives written consent."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:36Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:39Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:44Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "canada-house-of-commons-parlvu",
@@ -279,7 +302,30 @@
           "https://www3.parliament.nz/en/footer/copyright/"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with clear source attribution. Do not add sponsorship or advertising, misrepresent the proceedings, or continue use contrary to a Parliament direction."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:36Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:40Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:45Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "norway-stortinget",
@@ -342,7 +388,23 @@
           "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8"
         ],
         "recommendation": "Link to Stortinget Nett-TV. Request Stortinget's dedicated publishing point and retransmission agreement before enabling third-party playback."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:38Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:41Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "brazil-tv-camara",
@@ -406,7 +468,30 @@
           "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade"
         ],
         "recommendation": "Link to the official TV Camara page until a replacement first-party playback route is validated and TV Camara confirms that third-party native playback is permitted."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:39Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:42Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:46Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "ireland-oireachtas-tv",
@@ -477,7 +562,30 @@
           "https://www.oireachtas.ie/en/committees/schedule/"
         ],
         "recommendation": "Use official embed codes or link out; do not list raw HLS unless a source-supported direct playback path is confirmed."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:41Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:44Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:48Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "denmark-folketinget",
@@ -539,7 +647,30 @@
           "https://www.ft.dk/da/aktuelt/tv-fra-folketinget/deling-og-rettigheder"
         ],
         "recommendation": "Native playback is permitted where the source is attributed and the public is linked to the Folketinget sharing and rights terms. Preserve the unmodified feed, do not use the logo, and do not imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:42Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:45Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:49Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "netherlands-tweede-kamer",
@@ -603,7 +734,30 @@
           "https://www.tweedekamer.nl/debat_en_vergadering/livedebat"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:43Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:46Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:50Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "spain-canal-parlamento",
@@ -665,7 +819,30 @@
           "https://www.congreso.es/"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:22Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:44Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:47Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "spain-congreso-directo-1",
@@ -736,7 +913,30 @@
           "https://www.congreso.es/es/cem/faqs"
         ],
         "recommendation": "Strong technical and rights candidate; preserve source attribution and revisit terms before redistribution beyond research/catalogue use."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:23Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:48Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:46Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "spain-congreso-directo-2",
@@ -807,7 +1007,30 @@
           "https://www.congreso.es/es/cem/faqs"
         ],
         "recommendation": "Strong technical and rights candidate; preserve source attribution and revisit terms before redistribution beyond research/catalogue use."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:25Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:49Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:47Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "spain-congreso-directo-3",
@@ -878,7 +1101,30 @@
           "https://www.congreso.es/es/cem/faqs"
         ],
         "recommendation": "Strong technical and rights candidate; preserve source attribution and revisit terms before redistribution beyond research/catalogue use."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:26Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:51Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:49Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "spain-congreso-directo-4",
@@ -949,7 +1195,30 @@
           "https://www.congreso.es/es/cem/faqs"
         ],
         "recommendation": "Strong technical and rights candidate; preserve source attribution and revisit terms before redistribution beyond research/catalogue use."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:27Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:52Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:51Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "spain-congreso-directo-5",
@@ -1020,7 +1289,30 @@
           "https://www.congreso.es/es/cem/faqs"
         ],
         "recommendation": "Strong technical and rights candidate; preserve source attribution and revisit terms before redistribution beyond research/catalogue use."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:28Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:52Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:52Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "france-national-assembly",
@@ -1083,7 +1375,30 @@
           "https://www.assemblee-nationale.fr/dyn/info-site"
         ],
         "recommendation": "Native playback may remain enabled only with clear Assembly attribution and source links, no advertising, no paywall, and no modification beyond technically necessary playback handling."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:29Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Response did not start with #EXTM3U."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:54Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "Response did not start with #EXTM3U."
+        },
+        {
+          "checked_at": "2026-08-15T18:26:54Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "Response did not start with #EXTM3U."
+        }
+      ]
     },
     {
       "id": "chile-camara-tv",
@@ -1148,7 +1463,23 @@
           "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8"
         ],
         "recommendation": "Link out or keep as pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:55Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:57Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "israel-knesset-channel",
@@ -1213,7 +1544,23 @@
           "https://www.knesset.tv/committees/digitalknesset/35478/47690/"
         ],
         "recommendation": "Keep permission pending or link out unless the app can distinguish official Knesset proceedings from other Knesset Channel programming and display the required Hebrew credit."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:56Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:28:58Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "portugal-artv",
@@ -1275,7 +1622,30 @@
           "https://www.parlamento.pt/"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:57Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:00Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:28:59Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "greece-hellenic-parliament-tv",
@@ -1337,7 +1707,30 @@
           "https://www.hellenicparliament.gr/"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:26:59Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:01Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:00Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "luxembourg-chamber-tv",
@@ -1399,7 +1792,30 @@
           "https://www.chd.lu/"
         ],
         "recommendation": "Link-out or pending until current availability and terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:29Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "<urlopen error [Errno 51] Network is unreachable>"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:54Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [Errno 51] Network is unreachable>"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:01Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [Errno 51] Network is unreachable>"
+        }
+      ]
     },
     {
       "id": "estonia-riigikogu-live-1",
@@ -1462,7 +1878,23 @@
           "https://www.riigikogu.ee/live/1/en"
         ],
         "recommendation": "Link out or keep as pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:12Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:15Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "estonia-riigikogu-live-2",
@@ -1525,7 +1957,23 @@
           "https://www.riigikogu.ee/live/2/en"
         ],
         "recommendation": "Link out or keep as pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:13Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:17Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        }
+      ]
     },
     {
       "id": "italy-senate",
@@ -1587,7 +2035,30 @@
           "https://webtv.senato.it/"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:15Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:18Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:02Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "india-sansad-tv-1",
@@ -1651,7 +2122,30 @@
           "https://sansad.in/rs/privacyPolicy"
         ],
         "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until direct Sansad TV playback or reuse terms are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:16Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:19Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:03Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "india-sansad-tv-2",
@@ -1715,7 +2209,30 @@
           "https://sansad.in/rs/privacyPolicy"
         ],
         "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until direct Sansad TV playback or reuse terms are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:17Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:19Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:04Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "thailand-parliament-tv",
@@ -1771,7 +2288,30 @@
           "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv"
         ],
         "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until TPchannel publishes reuse terms or grants permission."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:17Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:20Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:04Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "slovakia-tv-nrsr",
@@ -1833,7 +2373,30 @@
           "https://www.nrsr.sk/"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:20Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:23Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:07Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "mongolia-parliament-tv",
@@ -1887,7 +2450,30 @@
           "https://www.parliament.mn/"
         ],
         "recommendation": "Keep as research-only until source ownership and rights are clear."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:46Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "DASH MPD detected."
+        },
+        {
+          "checked_at": "2026-08-15T18:28:07Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "DASH MPD detected."
+        },
+        {
+          "checked_at": "2026-08-15T18:27:21Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "DASH MPD detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal01",
@@ -1950,7 +2536,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:22Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:25Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:09Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal02",
@@ -2013,7 +2622,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:23Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:26Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:10Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal03",
@@ -2076,7 +2708,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:24Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:26Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:11Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal04",
@@ -2139,7 +2794,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:25Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:27Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:12Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal05",
@@ -2202,7 +2880,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:26Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:28Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:14Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal06",
@@ -2265,7 +2966,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:27Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:29Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:14Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal07",
@@ -2328,7 +3052,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:28Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:30Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:15Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal08",
@@ -2391,7 +3138,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:29Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:31Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:16Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal09",
@@ -2454,7 +3224,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:30Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:32Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:17Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal10",
@@ -2517,7 +3310,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:31Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:33Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:18Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal11",
@@ -2580,7 +3396,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:32Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:34Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:19Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal12",
@@ -2643,7 +3482,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:33Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:35Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:19Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal13",
@@ -2706,7 +3568,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:34Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:36Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:20Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "quebec-canal14",
@@ -2769,7 +3654,30 @@
           "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
         ],
         "recommendation": "Native playback is permitted for this non-commercial, unmodified catalogue with the visible source credit “Assemblée nationale du Québec”. Do not use the Assembly logo or imply endorsement."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:35Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:37Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:21Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "ontario-house-en",
@@ -2802,11 +3710,13 @@
       "stability_risk": "medium",
       "availability": "sitting_only",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
-        "sign_language": "unknown",
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
       },
       "epg_sources": [
         {
@@ -2819,13 +3729,39 @@
       ],
       "permission": {
         "status": "noncommercial_pending_review",
-        "summary": "Ontario terms permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, but full live-stream relay is less clearly covered.",
+        "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
         "evidence": [
           "https://www.ola.org/en/legislative-business/video",
-          "https://www.ola.org/en/office-assembly/copyright-privacy"
+          "https://www.ola.org/en/get-involved/watch-legislature-action",
+          "https://www.ola.org/en/office-assembly/copyright-privacy",
+          "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+          "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
         ],
-        "recommendation": "Use cautiously and seek written clarification for full live stream reuse."
-      }
+        "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:36Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:38Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:22Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "ontario-house-en-cc",
@@ -2858,13 +3794,13 @@
       "stability_risk": "high",
       "availability": "sitting_only",
       "accessibility": {
-        "captions": "source_dependent",
+        "captions": "available",
         "caption_languages": [
           "en"
         ],
-        "sign_language": "unknown",
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": "The designated captioned House route is recorded, but its current direct endpoint needs review."
+        "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
       },
       "epg_sources": [
         {
@@ -2877,13 +3813,39 @@
       ],
       "permission": {
         "status": "noncommercial_pending_review",
-        "summary": "The previous direct HLS endpoint returned HTTP 404 during 2026-08-14 validation; official source and current captioned playback route need review.",
+        "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
         "evidence": [
           "https://www.ola.org/en/legislative-business/video",
-          "https://www.ola.org/en/office-assembly/copyright-privacy"
+          "https://www.ola.org/en/get-involved/watch-legislature-action",
+          "https://www.ola.org/en/office-assembly/copyright-privacy",
+          "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+          "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
         ],
-        "recommendation": "Keep as pending/review until a current source-supported captioned House stream is documented."
-      }
+        "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:47Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "checked_at": "2026-08-15T18:28:08Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:36Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
     },
     {
       "id": "ontario-rm151-en",
@@ -2916,11 +3878,13 @@
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
-        "sign_language": "unknown",
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
       },
       "epg_sources": [
         {
@@ -2933,13 +3897,39 @@
       ],
       "permission": {
         "status": "noncommercial_pending_review",
-        "summary": "Ontario terms permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, but full live-stream relay is less clearly covered.",
+        "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
         "evidence": [
           "https://www.ola.org/en/legislative-business/video",
-          "https://www.ola.org/en/office-assembly/copyright-privacy"
+          "https://www.ola.org/en/get-involved/watch-legislature-action",
+          "https://www.ola.org/en/office-assembly/copyright-privacy",
+          "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+          "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
         ],
-        "recommendation": "Use cautiously and seek written clarification for full live stream reuse."
-      }
+        "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:47Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "Remote end closed connection without response"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:36Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:38Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "ontario-committee-1-en",
@@ -2972,11 +3962,13 @@
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
-        "sign_language": "unknown",
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
       },
       "epg_sources": [
         {
@@ -2989,13 +3981,39 @@
       ],
       "permission": {
         "status": "noncommercial_pending_review",
-        "summary": "Ontario terms permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, but full live-stream relay is less clearly covered.",
+        "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
         "evidence": [
           "https://www.ola.org/en/legislative-business/video",
-          "https://www.ola.org/en/office-assembly/copyright-privacy"
+          "https://www.ola.org/en/get-involved/watch-legislature-action",
+          "https://www.ola.org/en/office-assembly/copyright-privacy",
+          "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+          "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
         ],
-        "recommendation": "Use cautiously and seek written clarification for full live stream reuse."
-      }
+        "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:49Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "Remote end closed connection without response"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:37Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:38Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "ontario-committee-2-en",
@@ -3028,11 +4046,13 @@
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
-        "sign_language": "unknown",
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
       },
       "epg_sources": [
         {
@@ -3045,13 +4065,39 @@
       ],
       "permission": {
         "status": "noncommercial_pending_review",
-        "summary": "Ontario terms permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, but full live-stream relay is less clearly covered.",
+        "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
         "evidence": [
           "https://www.ola.org/en/legislative-business/video",
-          "https://www.ola.org/en/office-assembly/copyright-privacy"
+          "https://www.ola.org/en/get-involved/watch-legislature-action",
+          "https://www.ola.org/en/office-assembly/copyright-privacy",
+          "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+          "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
         ],
-        "recommendation": "Use cautiously and seek written clarification for full live stream reuse."
-      }
+        "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:51Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "Remote end closed connection without response"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:37Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "Response did not start with #EXTM3U."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:38Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "ontario-media-en",
@@ -3084,11 +4130,13 @@
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
-        "sign_language": "unknown",
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "source_dependent",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
       },
       "epg_sources": [
         {
@@ -3101,13 +4149,39 @@
       ],
       "permission": {
         "status": "noncommercial_pending_review",
-        "summary": "Ontario terms permit reasonable, fair, non-commercial display/reproduction/use of excerpts with Assembly credit, but full live-stream relay is less clearly covered.",
+        "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
         "evidence": [
           "https://www.ola.org/en/legislative-business/video",
-          "https://www.ola.org/en/office-assembly/copyright-privacy"
+          "https://www.ola.org/en/get-involved/watch-legislature-action",
+          "https://www.ola.org/en/office-assembly/copyright-privacy",
+          "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+          "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
         ],
-        "recommendation": "Use cautiously and seek written clarification for full live stream reuse."
-      }
+        "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:53Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "Remote end closed connection without response"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:37Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:38Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "nunavut-legislative-assembly-tv",
@@ -3163,7 +4237,30 @@
           "https://video.isilive.ca/nunavut/live-eng.html"
         ],
         "recommendation": "Keep native playback permission-pending and seek written clarification before treating the HLS endpoint as redistributable."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:38Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
+          "checked_at": "2026-08-14T21:29:39Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:23Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "uk-parliament-youtube",
@@ -3234,7 +4331,30 @@
           "https://support.google.com/youtube/answer/171780"
         ],
         "recommendation": "Use the official YouTube embed or channel link only. The permanent playlist is not guaranteed to select a live event."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:38Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:39Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:23Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "australia-parliament-youtube",
@@ -3305,7 +4425,30 @@
           "https://support.google.com/youtube/answer/171780"
         ],
         "recommendation": "Use the official YouTube embed or channel link only. Check the stable live page for the current or next scheduled event."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:38Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:39Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:23Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "taiwan-parliamentary-tv",
@@ -3352,7 +4495,30 @@
           "https://www.parliamentarytv.org.tw/"
         ],
         "recommendation": "Keep link-out only pending terms review."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:39Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:39Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:24Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "germany-bundestag-1",
@@ -3415,7 +4581,23 @@
           "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8"
         ],
         "recommendation": "Use an official Bundestag embed or link out. Request the documented live signal before enabling this raw HLS endpoint."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:40Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:40Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
     },
     {
       "id": "costa-rica-assembly-youtube",
@@ -3486,7 +4668,30 @@
           "https://support.google.com/youtube/answer/171780"
         ],
         "recommendation": "Use the official YouTube embed or channel link only. Check the stable live page for the current or next scheduled event."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:41Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:42Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-07-29T15:29:25Z",
+          "report_path": "reports/health/2026-07-29-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "el-salvador-legislative-assembly",
@@ -3549,7 +4754,30 @@
           "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8"
         ],
         "recommendation": "Link out or keep as pending until TLS behavior and terms or permission are documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:55Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+        },
+        {
+          "checked_at": "2026-08-15T18:28:08Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:42Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+        }
+      ]
     },
     {
       "id": "european-parliament-multimedia-centre",
@@ -3606,7 +4834,23 @@
           "https://multimedia.europarl.europa.eu/en/webstreaming"
         ],
         "recommendation": "Use official links/embeds and preserve required EU/EP attribution; do not treat dynamic player manifests as stable channels until documented."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:43Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:43Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "council-of-eu-live",
@@ -3663,7 +4907,23 @@
           "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/"
         ],
         "recommendation": "Use official link-out pending terms review and avoid extracting dynamic player manifests."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:43Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:43Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "eu-audiovisual-ebs",
@@ -3719,7 +4979,23 @@
           "https://www.europarl.europa.eu/website/multimedia-centre/en/europe-by-satellite.html"
         ],
         "recommendation": "Use official link-out pending terms review; keep distinct from parliamentary chamber streams."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:44Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:44Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "un-web-tv",
@@ -3776,7 +5052,23 @@
           "https://www.un.org/en/node/205121"
         ],
         "recommendation": "Use official schedule/event links or documented embeds; do not extract dynamic manifests without permission."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:45Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:44Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "council-of-europe-pace-live",
@@ -3833,7 +5125,30 @@
           "https://pace.coe.int/en/sessions/livestream"
         ],
         "recommendation": "Keep as watchlist/link-out pending source-specific terms and current page access review."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-17T10:32:57Z",
+          "report_path": "reports/health/2026-08-17-review-followup-static.json",
+          "method": "review_followup",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "checked_at": "2026-08-15T18:28:09Z",
+          "report_path": "reports/health/2026-08-15-review-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
+          "checked_at": "2026-08-15T18:27:45Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
     },
     {
       "id": "scottish-parliament-tv",
@@ -4080,7 +5395,23 @@
           "https://www.oscepa.org/en/"
         ],
         "recommendation": "Use official link-out pending terms review; keep OSCE PA-specific coverage as a research target."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-15T18:27:45Z",
+          "report_path": "reports/health/2026-08-15-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
+          "checked_at": "2026-08-14T21:29:44Z",
+          "report_path": "reports/health/2026-08-14-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     },
     {
       "id": "british-columbia-legislature-webcasts",

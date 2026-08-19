@@ -85,6 +85,14 @@ class EpgSource(TypedDict):
     kind: str
 
 
+class ValidationHistoryEntry(TypedDict):
+    checked_at: str
+    report_path: str
+    method: Literal["static_http", "browser_player", "manifest_seed", "review_followup"]
+    status: Literal["ok", "warning", "error", "skipped"]
+    note: str
+
+
 class Permission(TypedDict):
     status: PermissionStatus
     summary: str
@@ -107,6 +115,7 @@ class ChannelRecord(TypedDict):
     embed: NotRequired[Embed]
     official_url: str
     provenance_note: str
+    validation_history: NotRequired[list[ValidationHistoryEntry]]
     technical_status: TechnicalStatus
     stability_risk: StabilityRisk
     availability: Availability

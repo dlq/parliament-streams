@@ -57,7 +57,8 @@ before editing source records.
   stream proxy is used.
 - `data/channels.json`: canonical source catalogue, including recorded caption,
   sign-language, audio-description, Wikidata identity, and applicable IPU
-  Parline parliament/chamber identifiers.
+  Parline parliament/chamber identifiers. Entries may also include compact
+  `validation_history` links to retained health reports.
 - `data/fallbacks.json`: official event, player, broadcaster, and provider
   surfaces that can support link-out or embed fallbacks without claiming a
   stable direct stream.
@@ -186,9 +187,10 @@ link points to the channel's stable live page, which may redirect to an active
 or upcoming event. The catalogue does not extract YouTube manifests.
 
 Every native player includes the recorded source attribution and direct links
-to relevant supporting sources. Its detail view also presents the catalogue's
-recorded media-accessibility status. `explicit_reuse_with_conditions` means the
-project has recorded affirmative official terms. `personal_use_pending_review` and
+to relevant supporting sources. Its detail view also presents the latest
+retained validation evidence and the catalogue's recorded media-accessibility
+status. `explicit_reuse_with_conditions` means the project has recorded
+affirmative official terms. `personal_use_pending_review` and
 `noncommercial_pending_review` mean that the player is offered under this
 opt-out policy, not that permission has been granted. `no_third_party_reuse`
 means the source terms expressly rule out a third-party player without separate
@@ -199,7 +201,10 @@ Official fallback records from `data/fallbacks.json` appear in the catalogue as
 related source-detail links and as a compact fallback directory. These records
 cover event platforms, official player pages, broadcaster pages, and
 provider-managed embeds that are useful for users without claiming a stable
-direct channel stream.
+direct channel stream. When a fallback is related to a channel with collected
+schedule data, the site can show the current and next event titles beside the
+fallback link; it still links to the official platform rather than resolving or
+extracting an event-specific stream.
 
 The deploy workflow in `.github/workflows/pages.yml` publishes the site files,
 the canonical `data/channels.json`, and a freshly collected schedule snapshot.
@@ -392,6 +397,18 @@ surfaces. Playback manifests and schedule endpoints remain in their specialized
 health and EPG reports so each check can apply the right validation rules. For
 reachable supporting pages, the report records a bounded response size and
 SHA-256 fingerprint to support comparison with later audit artifacts.
+
+Refresh compact validation-history references from retained health reports:
+
+```sh
+make validation-history
+make validation-history-check
+```
+
+The refresh target writes dated report links into catalogue entries and
+regenerates the static site data snapshot. The check target fails if the
+catalogue's compact validation-history references no longer match retained
+`reports/health/` artifacts; it is included in `make verify`.
 
 ## Verify
 

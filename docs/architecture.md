@@ -13,6 +13,7 @@ contains:
   applicable;
 - source type and playback posture;
 - official URL and provenance notes;
+- compact links to retained validation reports when available;
 - accessibility evidence;
 - schedule/EPG source metadata; and
 - permission evidence and a reuse recommendation.
@@ -34,10 +35,14 @@ Git. GitHub Pages generates its own schedule snapshot during deployment.
 pages, and provider-managed embeds that can support link-out or fallback UI
 without claiming a stable direct stream. It is validated separately from the
 channel catalogue so event-specific sources do not become misleading permanent
-channel records.
+channel records. The site may display now/next text for a fallback when one of
+its related channel IDs has a collected schedule record, but this is metadata
+reuse rather than playback resolution.
 
 `reports/health/` contains dated research and validation reports. These are
-evidence artifacts, not runtime inputs.
+evidence artifacts, not runtime inputs. `make validation-history` summarizes
+the latest retained per-channel checks back into `data/channels.json`; `make
+validation-history-check` verifies those compact references have not drifted.
 
 ## Runtime Shape
 
@@ -48,7 +53,8 @@ The public site is static:
 3. It optionally fetches `data/schedules.json`.
 4. It fetches `data/fallbacks.json` for related fallback links and the fallback
    directory.
-5. It renders catalogue rows, source details, rights notes, and official links.
+5. It renders catalogue rows, source details, latest retained validation
+   evidence, rights notes, and official links.
 6. It enables native playback only when catalogue metadata permits it.
 
 There is no server-side proxy, transcoder, database, account system, analytics

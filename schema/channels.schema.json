@@ -78,6 +78,10 @@
         "embed": { "$ref": "#/$defs/embed" },
         "official_url": { "type": "string", "format": "uri" },
         "provenance_note": { "type": "string", "minLength": 1 },
+        "validation_history": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/validation_history_entry" }
+        },
         "technical_status": {
           "type": "string",
           "enum": ["validated", "needs_review", "link_only"]
@@ -96,6 +100,21 @@
           "items": { "$ref": "#/$defs/epg_source" }
         },
         "permission": { "$ref": "#/$defs/permission" }
+      }
+    },
+    "validation_history_entry": {
+      "type": "object",
+      "required": ["checked_at", "report_path", "method", "status", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "checked_at": { "type": "string", "format": "date-time" },
+        "report_path": { "type": "string", "pattern": "^reports/health/[^/]+\\.json$" },
+        "method": {
+          "type": "string",
+          "enum": ["static_http", "browser_player", "manifest_seed", "review_followup"]
+        },
+        "status": { "type": "string", "enum": ["ok", "warning", "error", "skipped"] },
+        "note": { "type": "string", "minLength": 1 }
       }
     },
     "external_ids": {

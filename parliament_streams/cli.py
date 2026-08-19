@@ -29,8 +29,10 @@ from .management import (
     generate_validation_seed,
     load_candidate,
     promote_candidate,
+    refresh_validation_history,
     scaffold_candidate,
     validate_candidate_directory,
+    validation_history_is_current,
     write_json,
 )
 from .models import ChannelRecord
@@ -331,6 +333,34 @@ def _cmd_links_audit(args: argparse.Namespace) -> int:
     return 1 if args.fail_on_error and failures else 0
 
 
+def _cmd_validation_history_refresh(args: argparse.Namespace) -> int:
+    reports_root = args.reports_dir.parents[1] if len(args.reports_dir.parents) > 1 else Path(".")
+    catalogue = load_catalogue(args.catalogue)
+    if args.check:
+        if validation_history_is_current(
+            catalogue,
+            args.reports_dir,
+            root=reports_root,
+            limit=args.limit,
+        ):
+            print("Validation history is current")
+            return 0
+        print("Validation history is stale; run validation-history-refresh", file=sys.stderr)
+        return 1
+    catalogue = refresh_validation_history(
+        catalogue,
+        args.reports_dir,
+        root=reports_root,
+        limit=args.limit,
+    )
+    populated = sum(1 for channel in catalogue["channels"] if channel.get("validation_history"))
+    if not args.dry_run:
+        _store(args).commit(catalogue)
+    action = "Would refresh" if args.dry_run else "Refreshed"
+    print(f"{action} validation history for {populated} of {len(catalogue['channels'])} channels")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="parliament-streams",
@@ -509,6 +539,30 @@ def build_parser() -> argparse.ArgumentParser:
     links_audit.add_argument("--output", type=Path)
     links_audit.add_argument("--fail-on-error", action="store_true")
     links_audit.set_defaults(handler=_cmd_links_audit)
+
+    validation_history = commands.add_parser(
+        "validation-history-refresh",
+        help="Attach compact validation-report references to catalogue entries.",
+    )
+    validation_history.add_argument(
+        "--reports-dir",
+        type=Path,
+        default=Path("reports/health"),
+        help="Directory containing retained health report JSON files.",
+    )
+    validation_history.add_argument(
+        "--limit",
+        type=int,
+        default=3,
+        help="Maximum validation-history entries to retain per channel.",
+    )
+    validation_history.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if catalogue validation-history references are stale.",
+    )
+    validation_history.add_argument("--dry-run", action="store_true")
+    validation_history.set_defaults(handler=_cmd_validation_history_refresh)
     return parser
 
 
