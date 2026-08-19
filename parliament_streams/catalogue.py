@@ -6,9 +6,10 @@ import json
 from pathlib import Path
 from typing import Any, cast
 
-from .models import Catalogue, ChannelRecord
+from .models import Catalogue, ChannelRecord, FallbackCatalogue
 
 DEFAULT_CATALOGUE_PATH = Path(__file__).resolve().parents[1] / "data" / "channels.json"
+DEFAULT_FALLBACKS_PATH = Path(__file__).resolve().parents[1] / "data" / "fallbacks.json"
 
 
 def load_json_object(path: Path) -> dict[str, Any]:
@@ -22,6 +23,11 @@ def load_json_object(path: Path) -> dict[str, Any]:
 def load_catalogue(path: Path = DEFAULT_CATALOGUE_PATH) -> Catalogue:
     """Load the JSON catalogue from disk."""
     return cast(Catalogue, load_json_object(path))
+
+
+def load_fallbacks(path: Path = DEFAULT_FALLBACKS_PATH) -> FallbackCatalogue:
+    """Load the fallback-source catalogue from disk."""
+    return cast(FallbackCatalogue, load_json_object(path))
 
 
 def load_channel(path: Path) -> ChannelRecord:

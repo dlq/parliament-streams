@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-08-19",
+  "description": "Official event, player, broadcaster, and provider surfaces that can support catalogue link-out or embed fallbacks without claiming a stable direct parliamentary channel stream.",
+  "fallbacks": [
+    {
+      "id": "canada-house-of-commons-parlvu-events",
+      "related_channel_ids": ["canada-house-of-commons-parlvu"],
+      "label": "Canada House of Commons ParlVU events",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "House of Commons of Canada",
+      "fallback_type": "official_event_platform",
+      "official_url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "integration_mode": "planned_event_resolver",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "schedule_source",
+      "stability_risk": "high",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://parlvu.parl.gc.ca/Harmony/en",
+        "https://www.ourcommons.ca/en/important-notices"
+      ],
+      "notes": "Use the public Harmony landing-page scraper for upcoming metadata and link users to official event pages. Do not claim a stable channel feed or reuse event media without separate permission."
+    },
+    {
+      "id": "canada-senate-senvu-events",
+      "related_channel_ids": ["canada-senate-senvu"],
+      "label": "Canada Senate SenVu events",
+      "jurisdiction_level": "national",
+      "country_or_region": "Canada",
+      "legislature": "Senate of Canada",
+      "fallback_type": "official_event_platform",
+      "official_url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "integration_mode": "planned_event_resolver",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "schedule_source",
+      "stability_risk": "high",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://senparlvu.parl.gc.ca/Harmony/",
+        "https://sencanada.ca/en/important-notices/"
+      ],
+      "notes": "Use the public Harmony landing-page scraper for upcoming metadata and link users to official event pages. Do not claim a stable Senate channel feed or reuse event media without separate permission."
+    },
+    {
+      "id": "uk-parliament-youtube-live",
+      "related_channel_ids": ["uk-parliament-youtube"],
+      "label": "UK Parliament YouTube live page",
+      "jurisdiction_level": "national",
+      "country_or_region": "United Kingdom",
+      "legislature": "UK Parliament",
+      "fallback_type": "official_youtube_live",
+      "official_url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+      "integration_mode": "provider_embed",
+      "playback_claim": "provider_managed_embed",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "medium",
+      "rights_status": "embed_only",
+      "evidence_urls": [
+        "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+        "https://whatson.parliament.uk/"
+      ],
+      "notes": "The catalogue can embed official YouTube surfaces through the provider, but the live page is not a one-to-one replacement for Parliamentlive.tv chambers and should remain a fallback."
+    },
+    {
+      "id": "uk-parliamentlive-official-player",
+      "related_channel_ids": ["uk-parliament-youtube"],
+      "label": "UK Parliamentlive.tv official player",
+      "jurisdiction_level": "national",
+      "country_or_region": "United Kingdom",
+      "legislature": "UK Parliament",
+      "fallback_type": "official_live_page",
+      "official_url": "https://www.parliamentlive.tv/",
+      "integration_mode": "link_out",
+      "playback_claim": "unsupported_native_playback",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "high",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://www.parliamentlive.tv/",
+        "https://whatson.parliament.uk/"
+      ],
+      "notes": "Keep as an official link-out fallback unless supported native playback or documented embedding terms are found. The separate What's on API is the better schedule source."
+    },
+    {
+      "id": "us-cspan-congress",
+      "related_channel_ids": [],
+      "label": "C-SPAN Congress coverage",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "United States Congress",
+      "fallback_type": "official_broadcaster",
+      "official_url": "https://www.c-span.org/congress/",
+      "integration_mode": "link_out",
+      "playback_claim": "no_direct_stream_claim",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "medium",
+      "rights_status": "no_third_party_reuse",
+      "evidence_urls": [
+        "https://www.c-span.org/congress/",
+        "https://www.c-span.org/about/copyrightsAndLicensing/"
+      ],
+      "notes": "Useful as a public official-broadcaster fallback and schedule/discovery surface, but not a direct open stream candidate without explicit reuse permission."
+    },
+    {
+      "id": "us-house-live",
+      "related_channel_ids": [],
+      "label": "U.S. HouseLive official events",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "U.S. House of Representatives",
+      "fallback_type": "official_event_platform",
+      "official_url": "https://live.house.gov/",
+      "integration_mode": "link_out",
+      "playback_claim": "event_specific_research",
+      "schedule_role": "now_next_possible",
+      "stability_risk": "high",
+      "rights_status": "personal_use_pending_review",
+      "evidence_urls": [
+        "https://live.house.gov/"
+      ],
+      "notes": "Treat event pages as research and link-out fallbacks until stable event identifiers, schedule semantics, and reuse terms are documented."
+    }
+  ]
+}

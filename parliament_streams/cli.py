@@ -10,7 +10,14 @@ from datetime import date
 from pathlib import Path
 from typing import cast
 
-from .catalogue import DEFAULT_CATALOGUE_PATH, load_catalogue, load_channel, load_json_object
+from .catalogue import (
+    DEFAULT_CATALOGUE_PATH,
+    DEFAULT_FALLBACKS_PATH,
+    load_catalogue,
+    load_channel,
+    load_fallbacks,
+    load_json_object,
+)
 from .epg_audit import audit_epg_sources
 from .healthcheck import DEFAULT_RETRIES, DEFAULT_TIMEOUT_SECONDS, run_healthcheck
 from .link_audit import audit_catalogue_links
@@ -43,6 +50,7 @@ from .validation import (
     require_valid_candidate,
     validate_candidate,
     validate_catalogue,
+    validate_fallbacks,
 )
 
 
@@ -70,6 +78,16 @@ def _cmd_validate(args: argparse.Namespace) -> int:
             print(issue.render(), file=sys.stderr)
         return 1
     print(f"Catalogue valid: {len(catalogue['channels'])} channels")
+    return 0
+
+
+def _cmd_fallbacks_validate(args: argparse.Namespace) -> int:
+    issues = validate_fallbacks(load_fallbacks(args.fallbacks), load_catalogue(args.catalogue))
+    if issues:
+        for issue in issues:
+            print(issue.render(), file=sys.stderr)
+        return 1
+    print(f"Fallbacks valid: {args.fallbacks}")
     return 0
 
 
@@ -335,6 +353,14 @@ def build_parser() -> argparse.ArgumentParser:
         "validate", help="Validate schema and cross-record rules."
     )
     validate_parser.set_defaults(handler=_cmd_validate)
+
+    fallbacks_validate = commands.add_parser(
+        "fallbacks-validate", help="Validate the event and provider fallback catalogue."
+    )
+    fallbacks_validate.add_argument(
+        "--fallbacks", type=Path, default=DEFAULT_FALLBACKS_PATH, help="Fallback JSON path."
+    )
+    fallbacks_validate.set_defaults(handler=_cmd_fallbacks_validate)
 
     list_parser = commands.add_parser("list", help="List catalogue entries.")
     list_parser.add_argument("--level", choices=["national", "subnational", "supranational"])

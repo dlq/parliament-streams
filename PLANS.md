@@ -86,6 +86,12 @@ Done:
 - UK Parliament schedule metadata is implemented through the official What's on
   Calendar API. Parliamentlive.tv playback and Red Bee stream access remain
   separate research questions.
+- The local candidate directory has no unresolved candidates as of 2026-08-19;
+  the two retained candidate files are promoted Netherlands records. The stale
+  Brazil stable-stream regression issue was closed after Brazil was demoted to
+  official link-out.
+- `data/fallbacks.json` now records official event, player, broadcaster, and
+  provider fallback surfaces separately from permanent channel records.
 
 Retired from the active project:
 
@@ -110,8 +116,11 @@ Near-term:
    reviewer queues.
 6. Make the schema distinguish source discovery from permission status, because
    a stream can be technically reachable but unsuitable for redistribution.
-7. Decide whether event-specific findings such as HouseLive/C-SPAN should live
-   in a separate events/fallback dataset instead of the channel catalogue.
+7. Expand `data/fallbacks.json` for event-specific findings such as
+   HouseLive/C-SPAN, official YouTube live pages, Harmony event pages, and
+   official player pages. Promote a fallback into `data/channels.json` only when
+   it has a stable channel identity and a supportable playback or link-out
+   posture.
 8. Decide whether supranational institutions need a separate `entity_type` or
    `institution_family` field, because they are not country-level legislatures.
 9. Define separate expansion criteria for sub-national institutions before
@@ -156,8 +165,10 @@ Tier 1/Tier 2 candidate queue.
 
 Staged approach:
 
-1. Clear the current Tier 1/Tier 2 candidate issue and review the nine Tier 1
-   countries without a national-level catalogue entry.
+1. Keep the Tier 1/Tier 2 candidate queue clear. As of 2026-08-19 there is no
+   open candidate-review GitHub issue and no unresolved local candidate file;
+   next discovery work should focus on the nine Tier 1 countries without a
+   national-level catalogue entry.
 2. Improve official-player, event-based, and supported YouTube discovery before
    relying on direct-manifest discovery in lower-yield countries.
 3. Add a canonical, schema-validated Tier 3 discovery watchlist without treating
@@ -343,14 +354,19 @@ Current measurable review queues as of 2026-08-19:
 - 43 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
+  Breakdown: 23 official-vendor HLS, 14 official pages, 5 first-party HLS, and
+  1 DASH research record.
 - All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
+  Breakdown: 37 national, 43 sub-national, and 6 supranational entries.
 - Track these as two persistent GitHub research issues rather than opening one
   issue per stream. Update their counts after catalogue promotions and close
   them only when the underlying evidence gaps are actually resolved.
   Current queues: [rights evidence](https://github.com/dlq/parliament-streams/issues/13)
   and [media accessibility evidence](https://github.com/dlq/parliament-streams/issues/14).
+  Current triage snapshot:
+  [reports/review-queues-2026-08-19.json](reports/review-queues-2026-08-19.json).
 
 ## Research And Advocacy
 

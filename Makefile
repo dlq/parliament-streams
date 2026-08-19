@@ -1,4 +1,4 @@
-.PHONY: verify test coverage json-check catalogue-validate candidates-validate discovery-targets-validate discovery-decisions-validate site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit schedules site
+.PHONY: verify test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate discovery-decisions-validate site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit schedules site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --locked --extra dev
@@ -6,13 +6,16 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: json-check catalogue-validate candidates-validate discovery-targets-validate discovery-decisions-validate site-data-check format-check lint type-check compile coverage accessibility-check
+verify: json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate discovery-decisions-validate site-data-check format-check lint type-check compile coverage accessibility-check
 
 json-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/channels.json >/dev/null
 
 catalogue-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) parliament-streams validate
+
+fallbacks-validate:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) parliament-streams fallbacks-validate
 
 candidates-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) parliament-streams candidates-validate candidates

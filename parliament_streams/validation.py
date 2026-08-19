@@ -11,11 +11,12 @@ from typing import Any, cast
 
 from jsonschema import Draft202012Validator, FormatChecker
 
-from .models import CandidateRecord, Catalogue, ChannelRecord
+from .models import CandidateRecord, Catalogue, ChannelRecord, FallbackCatalogue
 from .scrapers import SCRAPERS
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
+DEFAULT_FALLBACKS_SCHEMA_PATH = ROOT / "schema" / "fallbacks.schema.json"
 
 
 @dataclass(frozen=True)
@@ -39,6 +40,13 @@ class CatalogueValidationError(ValueError):
 
 
 def load_schema(path: Path = DEFAULT_SCHEMA_PATH) -> dict[str, Any]:
+    value = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(value, dict):
+        raise ValueError(f"{path} must contain a JSON object")
+    return cast(dict[str, Any], value)
+
+
+def load_fallbacks_schema(path: Path = DEFAULT_FALLBACKS_SCHEMA_PATH) -> dict[str, Any]:
     value = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(value, dict):
         raise ValueError(f"{path} must contain a JSON object")
@@ -406,6 +414,72 @@ def validate_candidate(
     return sorted(issues, key=lambda issue: (issue.path, issue.code, issue.message))
 
 
+def validate_fallbacks(
+    fallbacks: FallbackCatalogue | dict[str, Any],
+    catalogue: Catalogue | dict[str, Any],
+    schema: dict[str, Any] | None = None,
+) -> list[ValidationIssue]:
+    active_schema = schema or load_fallbacks_schema()
+    issues = _schema_issues(fallbacks, active_schema)
+    known_channel_ids = {
+        channel.get("id")
+        for channel in catalogue.get("channels", [])
+        if isinstance(channel, dict) and isinstance(channel.get("id"), str)
+    }
+    seen_ids: dict[str, int] = {}
+    raw_fallbacks = fallbacks.get("fallbacks")
+    if not isinstance(raw_fallbacks, list):
+        return sorted(issues, key=lambda issue: (issue.path, issue.code, issue.message))
+    for index, item in enumerate(raw_fallbacks):
+        if not isinstance(item, dict):
+            continue
+        path = f"$.fallbacks[{index}]"
+        fallback_id = item.get("id")
+        if isinstance(fallback_id, str):
+            if fallback_id in seen_ids:
+                issues.append(
+                    ValidationIssue(
+                        f"{path}.id",
+                        "duplicate-id",
+                        f"Duplicate id; first used at index {seen_ids[fallback_id]}",
+                    )
+                )
+            else:
+                seen_ids[fallback_id] = index
+        for related_index, channel_id in enumerate(item.get("related_channel_ids", [])):
+            if channel_id not in known_channel_ids:
+                issues.append(
+                    ValidationIssue(
+                        f"{path}.related_channel_ids[{related_index}]",
+                        "unknown-channel",
+                        f"Unknown related channel id: {channel_id}",
+                    )
+                )
+        if (
+            item.get("integration_mode") == "provider_embed"
+            and item.get("playback_claim") != "provider_managed_embed"
+        ):
+            issues.append(
+                ValidationIssue(
+                    f"{path}.playback_claim",
+                    "fallback-playback-claim",
+                    "Provider embeds must use provider_managed_embed playback claim",
+                )
+            )
+        if (
+            item.get("integration_mode") == "link_out"
+            and item.get("playback_claim") == "provider_managed_embed"
+        ):
+            issues.append(
+                ValidationIssue(
+                    f"{path}.playback_claim",
+                    "fallback-playback-claim",
+                    "Link-out fallbacks cannot claim provider-managed embed playback",
+                )
+            )
+    return sorted(issues, key=lambda issue: (issue.path, issue.code, issue.message))
+
+
 def require_valid_catalogue(catalogue: Catalogue | dict[str, Any]) -> None:
     issues = validate_catalogue(catalogue)
     if issues:
@@ -414,5 +488,13 @@ def require_valid_catalogue(catalogue: Catalogue | dict[str, Any]) -> None:
 
 def require_valid_candidate(candidate: CandidateRecord | dict[str, Any]) -> None:
     issues = validate_candidate(candidate)
+    if issues:
+        raise CatalogueValidationError(issues)
+
+
+def require_valid_fallbacks(
+    fallbacks: FallbackCatalogue | dict[str, Any], catalogue: Catalogue | dict[str, Any]
+) -> None:
+    issues = validate_fallbacks(fallbacks, catalogue)
     if issues:
         raise CatalogueValidationError(issues)

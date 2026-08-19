@@ -9,6 +9,12 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
+As of 2026-08-19, this directory has no unresolved local candidates; the
+remaining JSON files are promoted records retained for audit history. Event,
+official-player, and provider fallback ideas should normally start in
+`data/fallbacks.json` instead of becoming channel candidates unless they have a
+stable channel identity and a supportable playback or link-out posture.
+
 See [the catalogue maintenance guide](../docs/catalogue-maintenance.md) and
 [the contribution guide](../CONTRIBUTING.md) for the workflow and evidence
 requirements.

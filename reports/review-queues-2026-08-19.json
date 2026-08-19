@@ -1,0 +1,94 @@
+{
+  "checked_on": "2026-08-19",
+  "catalogue_total": 86,
+  "candidate_files": {
+    "total": 2,
+    "by_status": [
+      {
+        "status": "promoted",
+        "count": 2
+      }
+    ],
+    "open_github_candidate_review_issue": false,
+    "notes": "The remaining local candidate files are retained promoted records for Netherlands Tweede Kamer sources."
+  },
+  "github_issue_queue": {
+    "open_after_review": [
+      {
+        "issue": 13,
+        "title": "Rights evidence review queue"
+      },
+      {
+        "issue": 14,
+        "title": "Media accessibility evidence review queue"
+      }
+    ],
+    "closed_during_review": [
+      {
+        "issue": 16,
+        "title": "Stable stream regression: brazil-tv-camara",
+        "reason": "Brazil TV Camara had already been demoted to official link-out, so the old direct-HLS regression issue no longer described current catalogue state."
+      }
+    ]
+  },
+  "permission_status": [
+    {
+      "status": "embed_only",
+      "count": 4
+    },
+    {
+      "status": "explicit_reuse_with_conditions",
+      "count": 33
+    },
+    {
+      "status": "no_third_party_reuse",
+      "count": 6
+    },
+    {
+      "status": "noncommercial_pending_review",
+      "count": 6
+    },
+    {
+      "status": "personal_use_pending_review",
+      "count": 37
+    }
+  ],
+  "pending_permission_by_source_kind": [
+    {
+      "source_kind": "direct_dash_research",
+      "count": 1
+    },
+    {
+      "source_kind": "first_party_hls",
+      "count": 5
+    },
+    {
+      "source_kind": "official_page",
+      "count": 14
+    },
+    {
+      "source_kind": "official_vendor_hls",
+      "count": 23
+    }
+  ],
+  "unknown_accessibility_by_level": [
+    {
+      "jurisdiction_level": "national",
+      "count": 37
+    },
+    {
+      "jurisdiction_level": "subnational",
+      "count": 43
+    },
+    {
+      "jurisdiction_level": "supranational",
+      "count": 6
+    }
+  ],
+  "recommended_order": [
+    "Review shared official-vendor rights families first, because 23 pending records use official-vendor HLS.",
+    "Review first-party HLS records next, because they are easiest to reason about technically and most valuable for playback confidence.",
+    "Review official-page fallback records after the fallback dataset stabilizes, because many should remain link-out regardless of direct playback evidence.",
+    "For accessibility, start with sources that already claim captions or interpretation in the catalogue, then replace unknown fields only with cited official evidence."
+  ]
+}

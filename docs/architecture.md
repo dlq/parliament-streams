@@ -30,6 +30,12 @@ can be opened directly from disk. Do not edit it independently; run
 `data/schedules.json` is a local generated now/next snapshot and is ignored by
 Git. GitHub Pages generates its own schedule snapshot during deployment.
 
+`data/fallbacks.json` records official event platforms, live pages, broadcaster
+pages, and provider-managed embeds that can support link-out or fallback UI
+without claiming a stable direct stream. It is validated separately from the
+channel catalogue so event-specific sources do not become misleading permanent
+channel records.
+
 `reports/health/` contains dated research and validation reports. These are
 evidence artifacts, not runtime inputs.
 
@@ -40,8 +46,10 @@ The public site is static:
 1. GitHub Pages serves files from `site/`.
 2. The page fetches `data/channels.json`.
 3. It optionally fetches `data/schedules.json`.
-4. It renders catalogue rows, source details, rights notes, and official links.
-5. It enables native playback only when catalogue metadata permits it.
+4. It may use `data/fallbacks.json` for official fallback links and future
+   event-resolution UI.
+5. It renders catalogue rows, source details, rights notes, and official links.
+6. It enables native playback only when catalogue metadata permits it.
 
 There is no server-side proxy, transcoder, database, account system, analytics
 pipeline, or request-time scraper.
@@ -81,6 +89,12 @@ source.
 Browser-discovered playback URLs should not be promoted to direct playback until
 their stability, provenance, and reuse posture are documented.
 
+Fallback sources use a separate model. They can describe official event pages,
+official player pages, official broadcaster pages, and provider-managed embeds.
+Their `playback_claim` must stay conservative: a fallback can document link-out
+or provider-managed playback without asserting that a reusable direct stream
+exists.
+
 ## Maintenance Flow
 
 Prefer candidate records for new sources:
@@ -110,10 +124,11 @@ schedule surfaces that still need implementation.
 
 ## Validation Stack
 
-`make verify` is the high-confidence local check. It runs JSON parsing, catalogue
-validation, candidate and discovery validation, generated-site drift checks,
-Ruff formatting and linting, strict mypy, Python compilation, unit tests with
-coverage, HTML validation, and Playwright/Axe accessibility checks.
+`make verify` is the high-confidence local check. It runs JSON parsing,
+catalogue and fallback validation, candidate and discovery validation,
+generated-site drift checks, Ruff formatting and linting, strict mypy, Python
+compilation, unit tests with coverage, HTML validation, and Playwright/Axe
+accessibility checks.
 
 Daily and monthly GitHub Actions workflows repeat catalogue audits, link checks,
 health checks, schedule audits, and browser-based candidate discovery. Automated
@@ -125,7 +140,7 @@ drive the low-noise always-on regression issue workflow.
 ## Where To Start
 
 - To understand the data model: read `schema/channels.schema.json` and
-  `parliament_streams/models.py`.
+  `schema/fallbacks.schema.json`, then `parliament_streams/models.py`.
 - To add or change a source: read `docs/catalogue-maintenance.md`.
 - To understand source rights posture: read
   `docs/source-rights-and-permissions.md`.

@@ -10,7 +10,13 @@ from pathlib import Path
 from unittest import mock
 
 from parliament_streams import cli
-from parliament_streams.catalogue import load_catalogue, load_channel, load_json_object
+from parliament_streams.catalogue import (
+    DEFAULT_FALLBACKS_PATH,
+    load_catalogue,
+    load_channel,
+    load_fallbacks,
+    load_json_object,
+)
 from parliament_streams.management import (
     CatalogueStore,
     audit_identities,
@@ -36,9 +42,11 @@ from parliament_streams.validation import (
     load_schema,
     require_valid_candidate,
     require_valid_catalogue,
+    require_valid_fallbacks,
     validate_candidate,
     validate_catalogue,
     validate_channel,
+    validate_fallbacks,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -76,6 +84,24 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(validate_channel(catalogue["channels"][0]), [])
         self.assertEqual(load_schema()["title"], "Parliament Streams Catalogue")
         require_valid_catalogue(catalogue)
+
+    def test_fallback_catalogue_validates_against_channels(self):
+        catalogue = canonical_catalogue()
+        fallbacks = load_fallbacks(DEFAULT_FALLBACKS_PATH)
+        self.assertEqual(validate_fallbacks(fallbacks, catalogue), [])
+        require_valid_fallbacks(fallbacks, catalogue)
+
+    def test_fallback_validation_reports_cross_record_errors(self):
+        catalogue = canonical_catalogue()
+        fallbacks = load_fallbacks(DEFAULT_FALLBACKS_PATH)
+        fallbacks["fallbacks"][0]["related_channel_ids"] = ["missing-channel"]
+        fallbacks["fallbacks"][1]["id"] = fallbacks["fallbacks"][0]["id"]
+        fallbacks["fallbacks"][2]["integration_mode"] = "provider_embed"
+        fallbacks["fallbacks"][2]["playback_claim"] = "no_direct_stream_claim"
+        codes = {issue.code for issue in validate_fallbacks(fallbacks, catalogue)}
+        self.assertIn("unknown-channel", codes)
+        self.assertIn("duplicate-id", codes)
+        self.assertIn("fallback-playback-claim", codes)
 
     def test_schema_and_duplicate_errors_are_actionable(self):
         catalogue = canonical_catalogue()

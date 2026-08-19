@@ -27,6 +27,22 @@ PermissionStatus = Literal[
     "embed_only",
     "no_third_party_reuse",
 ]
+FallbackType = Literal[
+    "official_event_platform",
+    "official_live_page",
+    "official_youtube_live",
+    "official_youtube_uploads",
+    "official_archive",
+    "official_broadcaster",
+]
+FallbackIntegrationMode = Literal["link_out", "provider_embed", "planned_event_resolver"]
+FallbackPlaybackClaim = Literal[
+    "no_direct_stream_claim",
+    "provider_managed_embed",
+    "unsupported_native_playback",
+    "event_specific_research",
+]
+FallbackScheduleRole = Literal["schedule_source", "now_next_possible", "none"]
 
 
 class ExternalIds(TypedDict):
@@ -105,6 +121,31 @@ class Catalogue(TypedDict):
     generated_on: str
     description: str
     channels: list[ChannelRecord]
+
+
+class FallbackSource(TypedDict):
+    id: str
+    related_channel_ids: list[str]
+    label: str
+    jurisdiction_level: JurisdictionLevel
+    country_or_region: str
+    legislature: str
+    fallback_type: FallbackType
+    official_url: str
+    integration_mode: FallbackIntegrationMode
+    playback_claim: FallbackPlaybackClaim
+    schedule_role: FallbackScheduleRole
+    stability_risk: StabilityRisk
+    rights_status: PermissionStatus
+    evidence_urls: list[str]
+    notes: str
+
+
+class FallbackCatalogue(TypedDict):
+    schema_version: int
+    generated_on: str
+    description: str
+    fallbacks: list[FallbackSource]
 
 
 class CandidateRecord(TypedDict):
