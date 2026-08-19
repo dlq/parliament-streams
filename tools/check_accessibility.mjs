@@ -13,9 +13,6 @@ const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }).length;
-const expectedPlaybackPolicyCount = new Set(
-  canonicalCatalogue.channels.map((channel) => channel.playback_policy),
-).size;
 const expectedScheduleCount = canonicalCatalogue.channels.filter((channel) =>
   channel.epg_sources.some((source) => source.scraper_status === "implemented")
 ).length;
@@ -148,7 +145,10 @@ try {
   assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));
   assert.equal(await page.locator("#metric-updated").innerText(), expectedUpdatedDate);
   assert.equal(await page.locator(".principles-index li").count(), 5);
-  assert.equal(await page.locator("#playback-filter option").count(), expectedPlaybackPolicyCount + 1);
+  assert.equal(await page.locator("#level-filter").count(), 1);
+  assert.equal(await page.locator("#format-filter").count(), 1);
+  assert.equal(await page.locator("#playback-filter").count(), 0);
+  assert.equal(await page.locator("#rights-filter").count(), 0);
   assert(canonicalFallbacks.fallbacks.length >= 6);
   assert.equal(await page.locator("#fallback-directory-list li").count(), canonicalFallbacks.fallbacks.length);
   assert.match(await page.locator(".fallback-directory").innerText(), /C-SPAN Congress coverage/);
@@ -176,6 +176,24 @@ try {
 
   const rows = page.locator(".channel-button");
   assert.equal(await rows.count(), canonicalCatalogue.channels.length);
+  assert.deepEqual(await page.locator(".channel-header .sort-button").allInnerTexts(), [
+    "SOURCE",
+    "JURISDICTION",
+    "LANGUAGE",
+    "MODE",
+    "ACCESS",
+    "USE",
+  ]);
+  assert.equal(await page.locator("#sort-mode").innerText(), "MODE");
+  await page.locator("#sort-mode").click();
+  assert.match(await page.locator("#sort-status").innerText(), /Mode: ascending/);
+  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /PLAYABLE/);
+  await page.locator("#sort-mode").click();
+  assert.match(await page.locator("#sort-status").innerText(), /Mode: descending/);
+  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /RESEARCH/);
+  await page.locator("#sort-use").click();
+  assert.match(await page.locator("#sort-status").innerText(), /Use: ascending/);
+  await page.locator("#sort-source").click();
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
   assert.match(await navarreFlag.getAttribute("src"), /assets\/flags\/navarre\.svg$/);
@@ -190,11 +208,8 @@ try {
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed\/abcDEF12345/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
   assert.match(await page.locator(".detail-grid").innerText(), /PLAYBACK\s+Provider embed/);
-
-  await page.locator("#playback-filter").selectOption("provider_embed");
-  assert.equal(await page.locator(".channel-button").count(), 3);
-  assert.match(await page.locator("#results-count").innerText(), /^3 of /);
-  await page.locator("#playback-filter").selectOption("");
+  assert.match(await youtubeRow.locator(".status").first().getAttribute("title"), /Latest retained validation succeeded/);
+  assert.match(await youtubeRow.locator(".status").last().getAttribute("title"), /official provider or institutional embed/);
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
   assert.match(await page.locator('[data-channel-id="canada-house-of-commons-parlvu"] .source-posture').innerText(), /LINK-OUT/);
@@ -232,6 +247,9 @@ try {
   assert.equal(await page.locator("#metric-playable-label").textContent(), "Lisibles ici");
   assert.equal(await page.locator("#metric-schedules").textContent(), String(expectedScheduleCount));
   assert.equal(await page.locator("#principle-accessibility").textContent(), "Accessibilité ouverte");
+  await page.locator('[data-channel-id="australia-parliament-youtube"]').click();
+  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .status').first().getAttribute("title"), /dernière validation conservée a réussi/);
+  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .status').last().getAttribute("title"), /l'intégration officielle/);
   assert.equal(
     await page.locator('[data-channel-id="british-columbia-legislature-webcasts"] > span').nth(1).innerText(),
     "Colombie-Britannique",

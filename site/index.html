@@ -21,7 +21,7 @@
     <title>Parliament Streams</title>
     <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
     <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
-    <link rel="stylesheet" href="styles.css?v=20260819-playback-filter">
+    <link rel="stylesheet" href="styles.css?v=20260819-lean-filters">
   </head>
   <body>
     <a class="skip-link" href="#catalogue" id="skip-link">Skip to catalogue</a>
@@ -84,14 +84,6 @@
                 <span class="visually-hidden" id="source-type-label">Source type</span>
                 <select id="format-filter"><option value="">All source types</option></select>
               </label>
-              <label>
-                <span class="visually-hidden" id="playback-policy-label">Playback</span>
-                <select id="playback-filter"><option value="">All playback modes</option></select>
-              </label>
-              <label>
-                <span class="visually-hidden" id="use-guidance-label">Use guidance</span>
-                <select id="rights-filter"><option value="">All rights statuses</option></select>
-              </label>
             </div>
           </details>
         </div>
@@ -104,8 +96,8 @@
               <div class="channel-header">
                 <span data-sort-header="source"><button class="sort-button" id="sort-source" type="button" data-sort="source">Source</button></span>
                 <span data-sort-header="jurisdiction"><button class="sort-button" id="sort-jurisdiction" type="button" data-sort="jurisdiction">Jurisdiction</button></span>
-                <span data-sort-header="format"><button class="sort-button" id="sort-format" type="button" data-sort="format">Format</button></span>
                 <span data-sort-header="language"><button class="sort-button" id="sort-language" type="button" data-sort="language">Language</button></span>
+                <span data-sort-header="mode"><button class="sort-button" id="sort-mode" type="button" data-sort="mode">Mode</button></span>
                 <span data-sort-header="access"><button class="sort-button" id="sort-access" type="button" data-sort="access">Access</button></span>
                 <span data-sort-header="use"><button class="sort-button" id="sort-use" type="button" data-sort="use">Use</button></span>
               </div>
@@ -165,8 +157,8 @@
       <a id="about-link" href="https://github.com/dlq/parliament-streams/blob/main/README.md" target="_blank" rel="noreferrer">About the project</a>
     </footer>
 
-    <script defer src="catalogue-data.js?v=20260819-playback-filter"></script>
-    <script defer src="i18n.js?v=20260819-playback-filter"></script>
-    <script defer src="app.js?v=20260819-playback-filter"></script>
+    <script defer src="catalogue-data.js?v=20260819-lean-filters"></script>
+    <script defer src="i18n.js?v=20260819-lean-filters"></script>
+    <script defer src="app.js?v=20260819-lean-filters"></script>
   </body>
 </html>

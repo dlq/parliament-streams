@@ -56,6 +56,13 @@ application. Earlier application work remains available in Git history.
 - Public catalogue playback-mode filtering and source-detail display, so
   provider embeds, native playback, link-outs, and research-only records are
   visible independently from use guidance.
+- The catalogue table now orders columns as Source, Jurisdiction, Language,
+  Mode, Access, and Use; the former Format column is replaced by a sortable
+  Mode column for Playable, Fallback, Link-out, and Research row markers, while
+  format remains available through filters and source details.
+- Playback and Use Guidance dropdown filters were removed now that Mode and Use
+  are sortable, leaving search, Jurisdiction, and Source type as the active
+  filtering controls.
 - Norway Stortinget and Germany Bundestag moved from native playback to
   link-out/no-third-party-reuse because their documented terms point to formal
   requested retransmission/live-signal routes, not browser-discovered HLS.

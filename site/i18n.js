@@ -19,8 +19,8 @@ const en = {
   metricSources: "Sources", metricPlayable: "Playable here", metricSchedules: "Schedule sources", metricUpdated: "Catalogue updated",
   evidenceDates: "Evidence dates", notAvailable: "Not available",
   principlesLabel: "Open stream principles", principleDelivery: "Open delivery", principleAccess: "Open access", principleReuse: "Open reuse", principleSchedules: "Open schedules", principleAccessibility: "Open accessibility",
-  allJur: "All jurisdictions", allTypes: "All source types", allPlayback: "All playback modes", allUse: "All use guidance",
-  source: "Source", jurisdiction: "Jurisdiction", format: "Format", contentLanguage: "Language", access: "Access", use: "Use",
+  allJur: "All jurisdictions", allTypes: "All source types",
+  source: "Source", jurisdiction: "Jurisdiction", mode: "Mode", format: "Format", contentLanguage: "Language", access: "Access", use: "Use",
   care: "Use with care", methodTitle: "Technical access and provider terms are different questions.",
   methodCopy: "Technically validated public direct feeds play here unless recorded terms expressly prohibit third-party reuse. A play button is not a licence; source owners can request removal.",
   rights: "Read rights and permission notes", footer: "Parliament Streams is an independent research catalogue.", about: "About the project",
@@ -28,6 +28,14 @@ const en = {
   openVideoCopy: "Open parliamentary video requires direct, interoperable streams such as HLS, with clear terms that permit embedding, rebroadcasting, preservation, and independent monitoring.",
   openStreamsCopy: "Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.",
   sourceType: "Source type", sourceKind: "Source kind", accessStatus: "Access status", stabilityRisk: "Stability risk", playbackPolicy: "Playback", useGuidance: "Use guidance", availability: "Availability",
+  accessValidatedDescription: "Latest retained validation succeeded.",
+  accessNeedsReviewDescription: "Technical access needs review or the latest check was not clean.",
+  accessLinkOnlyDescription: "No native playback URL is recorded; use the official page.",
+  useExplicitDescription: "Reuse appears permitted under recorded source conditions.",
+  useEmbedOnlyDescription: "Use the official provider or institutional embed only.",
+  useNoThirdPartyDescription: "Recorded terms require link-out or separate permission.",
+  usePersonalPendingDescription: "Public terms do not yet clearly support third-party use.",
+  useNoncommercialPendingDescription: "Some non-commercial use is documented, but full-stream playback still needs clarification.",
   attribution: "Required attribution", programme: "Current programme record", identity: "External identity", schedule: "Schedule / EPG sources",
   fallbackDirectoryLabel: "Fallback sources", fallbackDirectoryTitle: "Official pages for event-based coverage", noFallbacks: "No fallback sources recorded.",
   fallbacks: "Official fallbacks",
@@ -520,17 +528,17 @@ Object.entries(catalogueResultLabels).forEach(([locale, value]) => {
 });
 
 const missingFilterLabels = {
-  da: ["Alle jurisdiktioner", "Alle kildetyper", "Alle brugsvejledninger"],
-  et: ["Kõik jurisdiktsioonid", "Kõik allikatüübid", "Kõik kasutusjuhised"],
-  el: ["Όλες οι δικαιοδοσίες", "Όλοι οι τύποι πηγών", "Όλες οι οδηγίες χρήσης"],
-  hi: ["सभी अधिकार-क्षेत्र", "सभी स्रोत प्रकार", "सभी उपयोग मार्गदर्शन"],
-  nl: ["Alle rechtsgebieden", "Alle brontypen", "Alle gebruiksrichtlijnen"],
-  nb: ["Alle jurisdiksjoner", "Alle kildetyper", "All bruksveiledning"],
-  th: ["เขตอำนาจทั้งหมด", "ประเภทแหล่งข้อมูลทั้งหมด", "แนวทางการใช้ทั้งหมด"],
-  "zh-Hans": ["所有管辖区", "所有来源类型", "所有使用说明"],
+  da: ["Alle jurisdiktioner", "Alle kildetyper"],
+  et: ["Kõik jurisdiktsioonid", "Kõik allikatüübid"],
+  el: ["Όλες οι δικαιοδοσίες", "Όλοι οι τύποι πηγών"],
+  hi: ["सभी अधिकार-क्षेत्र", "सभी स्रोत प्रकार"],
+  nl: ["Alle rechtsgebieden", "Alle brontypen"],
+  nb: ["Alle jurisdiksjoner", "Alle kildetyper"],
+  th: ["เขตอำนาจทั้งหมด", "ประเภทแหล่งข้อมูลทั้งหมด"],
+  "zh-Hans": ["所有管辖区", "所有来源类型"],
 };
 Object.entries(missingFilterLabels).forEach(([locale, values]) => {
-  [shared[locale].allJur, shared[locale].allTypes, shared[locale].allUse] = values;
+  [shared[locale].allJur, shared[locale].allTypes] = values;
 });
 
 const missingLoadErrorLabels = {
@@ -587,6 +595,40 @@ Object.entries(sourceCueLabels).forEach(([locale, values]) => {
   ] = values;
 });
 
+const modeAndStatusDescriptionLabels = {
+  fr: ["Mode", "La dernière validation conservée a réussi.", "L'accès technique doit être revu ou le dernier contrôle n'était pas net.", "Aucune URL de lecture native n'est enregistrée; utilisez la page officielle.", "La réutilisation semble permise selon les conditions enregistrées.", "Utilisez seulement l'intégration officielle du fournisseur ou de l'institution.", "Les conditions enregistrées exigent un lien externe ou une permission distincte.", "Les conditions publiques ne permettent pas encore clairement l'usage par un tiers.", "Un usage non commercial est documenté, mais la lecture complète du flux doit encore être clarifiée."],
+  es: ["Modo", "La última validación conservada fue correcta.", "El acceso técnico necesita revisión o la última comprobación no fue limpia.", "No hay una URL de reproducción nativa registrada; usa la página oficial.", "La reutilización parece permitida según las condiciones registradas.", "Usa solo la inserción oficial del proveedor o de la institución.", "Las condiciones registradas exigen enlace externo o permiso separado.", "Las condiciones públicas aún no respaldan claramente el uso por terceros.", "Hay cierto uso no comercial documentado, pero la reproducción completa del flujo aún requiere aclaración."],
+  "pt-BR": ["Modo", "A validação retida mais recente foi bem-sucedida.", "O acesso técnico precisa de revisão ou a última verificação não foi limpa.", "Nenhuma URL de reprodução nativa está registrada; use a página oficial.", "A reutilização parece permitida conforme as condições registradas.", "Use apenas a incorporação oficial do provedor ou da instituição.", "As condições registradas exigem link externo ou permissão separada.", "Os termos públicos ainda não apoiam claramente o uso por terceiros.", "Algum uso não comercial está documentado, mas a reprodução integral do fluxo ainda precisa de esclarecimento."],
+  da: ["Tilstand", "Den senest gemte validering lykkedes.", "Den tekniske adgang skal gennemgås, eller den seneste kontrol var ikke ren.", "Der er ikke registreret en URL til indbygget afspilning; brug den officielle side.", "Genbrug ser ud til at være tilladt efter de registrerede vilkår.", "Brug kun den officielle indlejring fra udbyderen eller institutionen.", "De registrerede vilkår kræver eksternt link eller særskilt tilladelse.", "De offentlige vilkår understøtter endnu ikke tydeligt tredjepartsbrug.", "Noget ikke-kommercielt brug er dokumenteret, men fuld afspilning af streamen kræver stadig afklaring."],
+  de: ["Modus", "Die letzte gespeicherte Validierung war erfolgreich.", "Der technische Zugang muss geprüft werden oder die letzte Prüfung war nicht sauber.", "Es ist keine native Wiedergabe-URL erfasst; verwenden Sie die offizielle Seite.", "Wiederverwendung scheint nach den erfassten Bedingungen erlaubt zu sein.", "Nur die offizielle Einbettung des Anbieters oder der Institution verwenden.", "Die erfassten Bedingungen verlangen einen externen Link oder eine gesonderte Erlaubnis.", "Die öffentlichen Bedingungen unterstützen Drittverwendung noch nicht eindeutig.", "Eine nicht-kommerzielle Nutzung ist teilweise dokumentiert, aber vollständige Stream-Wiedergabe muss noch geklärt werden."],
+  et: ["Režiim", "Viimane säilitatud valideerimine õnnestus.", "Tehniline juurdepääs vajab ülevaatust või viimane kontroll ei olnud puhas.", "Natiivse esituse URL-i pole salvestatud; kasutage ametlikku lehte.", "Taaskasutus näib olevat salvestatud tingimuste järgi lubatud.", "Kasutage ainult pakkuja või asutuse ametlikku manustust.", "Salvestatud tingimused nõuavad välislinki või eraldi luba.", "Avalikud tingimused ei toeta veel selgelt kolmanda osapoole kasutust.", "Mõningane mitteäriline kasutus on dokumenteeritud, kuid kogu voo esitamine vajab veel täpsustamist."],
+  el: ["Τρόπος", "Η τελευταία διατηρημένη επικύρωση ήταν επιτυχής.", "Η τεχνική πρόσβαση χρειάζεται έλεγχο ή ο τελευταίος έλεγχος δεν ήταν καθαρός.", "Δεν έχει καταγραφεί εγγενής URL αναπαραγωγής· χρησιμοποιήστε την επίσημη σελίδα.", "Η επαναχρησιμοποίηση φαίνεται να επιτρέπεται με βάση τους καταγεγραμμένους όρους.", "Χρησιμοποιήστε μόνο την επίσημη ενσωμάτωση του παρόχου ή του φορέα.", "Οι καταγεγραμμένοι όροι απαιτούν εξωτερικό σύνδεσμο ή ξεχωριστή άδεια.", "Οι δημόσιοι όροι δεν υποστηρίζουν ακόμη σαφώς χρήση από τρίτους.", "Κάποια μη εμπορική χρήση είναι τεκμηριωμένη, αλλά η πλήρης αναπαραγωγή της ροής χρειάζεται ακόμη διευκρίνιση."],
+  hi: ["मोड", "नवीनतम संरक्षित सत्यापन सफल रहा।", "तकनीकी पहुंच की समीक्षा चाहिए या नवीनतम जांच साफ नहीं थी।", "कोई मूल प्लेबैक URL दर्ज नहीं है; आधिकारिक पृष्ठ का उपयोग करें।", "दर्ज स्रोत शर्तों के तहत पुन: उपयोग अनुमत लगता है।", "केवल आधिकारिक प्रदाता या संस्थागत एम्बेड का उपयोग करें।", "दर्ज शर्तों में बाहरी लिंक या अलग अनुमति आवश्यक है।", "सार्वजनिक शर्तें अभी तृतीय-पक्ष उपयोग को स्पष्ट रूप से समर्थन नहीं देतीं।", "कुछ गैर-व्यावसायिक उपयोग दर्ज है, लेकिन पूरे स्ट्रीम प्लेबैक पर अभी स्पष्टीकरण चाहिए।"],
+  ga: ["Mód", "D'éirigh leis an mbailíochtú coinnithe is déanaí.", "Teastaíonn athbhreithniú ar an rochtain theicniúil nó ní raibh an tseiceáil is déanaí glan.", "Níl URL dúchasach athsheinm taifeadta; bain úsáid as an leathanach oifigiúil.", "Is cosúil go gceadaítear athúsáid faoi na coinníollacha taifeadta.", "Ná húsáid ach leabú oifigiúil an tsoláthraí nó na hinstitiúide.", "Éilíonn na coinníollacha taifeadta nasc amach nó cead ar leith.", "Ní thacaíonn na téarmaí poiblí go soiléir fós le húsáid tríú páirtí.", "Tá roinnt úsáide neamhthráchtála doiciméadaithe, ach tá soiléiriú fós de dhíth ar athsheinm iomlán an tsrutha."],
+  it: ["Modalità", "L'ultima convalida conservata è riuscita.", "L'accesso tecnico richiede revisione oppure l'ultimo controllo non è stato pulito.", "Non è registrato alcun URL di riproduzione nativa; usa la pagina ufficiale.", "Il riuso sembra consentito secondo le condizioni registrate.", "Usa solo l'incorporamento ufficiale del fornitore o dell'istituzione.", "Le condizioni registrate richiedono un link esterno o un'autorizzazione separata.", "I termini pubblici non supportano ancora chiaramente l'uso da parte di terzi.", "È documentato qualche uso non commerciale, ma la riproduzione completa del flusso richiede ancora chiarimenti."],
+  lb: ["Modus", "Déi lescht gespäichert Validéierung war erfollegräich.", "Den techneschen Zougang muss nogekuckt ginn oder déi lescht Kontroll war net propper.", "Et ass keng nativ Ofspill-URL registréiert; benotzt déi offiziell Säit.", "Wiederverwendung schéngt no de registréierte Konditiounen erlaabt ze sinn.", "Benotzt nëmmen déi offiziell Abettung vum Ubidder oder der Institutioun.", "Déi registréiert Konditioune verlaangen en externe Link oder eng getrennte Erlaabnis.", "Déi ëffentlech Konditioune ënnerstëtzen Drëttbenotzung nach net kloer.", "E puer net-kommerziell Benotzung ass dokumentéiert, mee voll Stream-Ofspillung muss nach gekläert ginn."],
+  nl: ["Modus", "De laatst bewaarde validatie is geslaagd.", "Technische toegang moet worden beoordeeld of de laatste controle was niet schoon.", "Er is geen native afspeel-URL geregistreerd; gebruik de officiële pagina.", "Hergebruik lijkt toegestaan volgens de vastgelegde bronvoorwaarden.", "Gebruik alleen de officiële embed van de aanbieder of instelling.", "De vastgelegde voorwaarden vereisen een externe link of afzonderlijke toestemming.", "De openbare voorwaarden ondersteunen gebruik door derden nog niet duidelijk.", "Enig niet-commercieel gebruik is gedocumenteerd, maar volledige streamweergave vraagt nog om verduidelijking."],
+  nb: ["Modus", "Siste lagrede validering lyktes.", "Teknisk tilgang må gjennomgås, eller siste kontroll var ikke ren.", "Ingen URL for innebygd avspilling er registrert; bruk den offisielle siden.", "Gjenbruk ser ut til å være tillatt etter registrerte kildevilkår.", "Bruk bare den offisielle innbyggingen fra leverandøren eller institusjonen.", "Registrerte vilkår krever ekstern lenke eller separat tillatelse.", "Offentlige vilkår støtter ennå ikke tydelig tredjepartsbruk.", "Noe ikke-kommersiell bruk er dokumentert, men full avspilling av strømmen må fortsatt avklares."],
+  sk: ["Režim", "Najnovšie uložené overenie bolo úspešné.", "Technický prístup potrebuje kontrolu alebo posledná kontrola nebola čistá.", "Nie je zaznamenaná žiadna natívna URL na prehrávanie; použite oficiálnu stránku.", "Opätovné použitie sa podľa zaznamenaných podmienok javí ako povolené.", "Použite iba oficiálne vloženie poskytovateľa alebo inštitúcie.", "Zaznamenané podmienky vyžadujú externý odkaz alebo samostatné povolenie.", "Verejné podmienky ešte jasne nepodporujú použitie treťou stranou.", "Niektoré nekomerčné použitie je zdokumentované, ale úplné prehrávanie streamu stále vyžaduje objasnenie."],
+  th: ["โหมด", "การตรวจสอบล่าสุดที่เก็บไว้สำเร็จแล้ว", "การเข้าถึงทางเทคนิคต้องตรวจสอบอีกครั้ง หรือการตรวจสอบล่าสุดยังไม่เรียบร้อย", "ยังไม่มี URL สำหรับเล่นแบบเนทีฟที่บันทึกไว้ โปรดใช้หน้าทางการ", "การใช้ซ้ำน่าจะได้รับอนุญาตตามเงื่อนไขแหล่งข้อมูลที่บันทึกไว้", "ใช้เฉพาะการฝังอย่างเป็นทางการจากผู้ให้บริการหรือหน่วยงาน", "เงื่อนไขที่บันทึกไว้กำหนดให้ลิงก์ออกหรือขออนุญาตแยกต่างหาก", "เงื่อนไขสาธารณะยังไม่รองรับการใช้โดยบุคคลที่สามอย่างชัดเจน", "มีการบันทึกการใช้แบบไม่เชิงพาณิชย์บางส่วน แต่การเล่นสตรีมเต็มยังต้องขอความชัดเจน"],
+  "zh-Hans": ["模式", "最近保留的验证已成功。", "技术访问需要复核，或最近一次检查并不完全正常。", "未记录原生播放 URL；请使用官方页面。", "根据已记录的来源条件，似乎允许再利用。", "只能使用提供方或机构的官方嵌入。", "已记录的条件要求外链或单独许可。", "公开条款尚未明确支持第三方使用。", "已记录部分非商业使用，但完整流播放仍需进一步澄清。"],
+  mi: ["Aratau", "I angitu te whakamana hou kua puritia.", "Me arotake te urunga hangarau, kāore rānei te tirohanga hou i tino pai.", "Kāore he URL purei taketake kua tuhia; whakamahia te whārangi mana.", "E ai ki ngā tikanga kua tuhia, ka āhei pea te whakamahi anō.", "Whakamahia anake te tāuru mana a te kaiwhakarato, a te rōpū rānei.", "E tono ana ngā tikanga kua tuhia kia hono atu, kia whiwhi whakaaetanga motuhake rānei.", "Kāore anō ngā tikanga tūmatanui kia tautoko mārama i te whakamahi a te hunga tuatoru.", "Kua tuhia ētahi whakamahi kore-arumoni, engari me whakamārama tonu te purei katoa o te roma."],
+  "iu-Cans": ["ᐊᑐᕐᓂᐅᔪᖅ", "ᓄᑖᖑᓛᖅ ᓇᓗᓇᐃᖅᑕᐅᓯᒪᔪᖅ ᐊᔪᙱᓚᖅ.", "ᐱᓕᕆᐊᖑᔪᖅ ᐱᔭᐅᔪᓐᓇᕐᓂᖅ ᕿᒥᕐᕈᔭᐅᒋᐊᓕᒃ, ᓄᑖᖑᓛᕐᓘᓐᓃᑦ ᓇᓗᓇᐃᕐᓂᖅ ᓴᓗᒪᓚᐅᙱᑦᑐᖅ.", "ᐱᙳᐊᕈᑎᒧᑦ URL ᑎᑎᖅᑕᐅᓯᒪᙱᑦᑐᖅ; ᐊᑐᕐᓗᒍ ᑲᔪᓯᔪᖅ ᐅᑯᐊ ᒪᑉᐱᒐᖅ.", "ᐊᑐᕐᓂᖅ ᐊᒻᒪ ᐊᑐᕐᓂᖅ ᐊᔪᙱᔮᖅᑐᖅ ᑎᑎᖅᑕᐅᓯᒪᔪᑦ ᐊᑐᖅᑕᐅᓂᐊᖅᑐᑦ ᒪᓕᒃᖢᒋᑦ.", "ᐊᑐᕐᓗᒍ ᐱᓕᕆᕕᐅᑉ ᐅᕝᕙᓘᓐᓃᑦ ᑎᒥᐅᔫᑉ ᐊᖏᖅᑕᖓ ᐃᓕᔭᐅᔪᖅ ᑭᓯᐊᓂ.", "ᑎᑎᖅᑕᐅᓯᒪᔪᑦ ᒪᓕᒐᐃᑦ ᐊᓯᐊᓄᑦ ᑲᑎᙵᔪᒥᒃ ᐅᕝᕙᓘᓐᓃᑦ ᐊᔪᙱᑎᑕᐅᓂᕐᒥᒃ ᐱᔭᕆᐊᖃᖅᑐᑦ.", "ᑭᒃᑯᑐᐃᓐᓇᐃᑦ ᒪᓕᒐᖏᑦ ᐊᓯᐊᓂᑦ ᐊᑐᕐᓂᕐᒥᒃ ᓱᓕ ᑐᑭᓯᓇᖅᑐᒥᒃ ᐃᑲᔪᖅᓯᙱᑦᑐᑦ.", "ᐃᓚᖓ ᑮᓇᐅᔭᓕᐅᕐᓂᐅᙱᑦᑐᖅ ᐊᑐᕐᓂᖅ ᑎᑎᖅᑕᐅᓯᒪᔪᖅ, ᑭᓯᐊᓂ ᑕᒪᐅᓇ ᑰᒃᑐᖅ ᐱᙳᐊᕐᓂᖅ ᓱᓕ ᑐᑭᓯᓇᖅᑎᑕᐅᒋᐊᓕᒃ."],
+};
+Object.entries(modeAndStatusDescriptionLabels).forEach(([locale, values]) => {
+  [
+    shared[locale].mode,
+    shared[locale].accessValidatedDescription,
+    shared[locale].accessNeedsReviewDescription,
+    shared[locale].accessLinkOnlyDescription,
+    shared[locale].useExplicitDescription,
+    shared[locale].useEmbedOnlyDescription,
+    shared[locale].useNoThirdPartyDescription,
+    shared[locale].usePersonalPendingDescription,
+    shared[locale].useNoncommercialPendingDescription,
+  ] = values;
+});
+
 const validationStatusLabels = {
   fr: ["OK", "Avertissement", "Erreur", "Ignoré"],
   es: ["Correcto", "Advertencia", "Error", "Omitido"],
@@ -621,7 +663,15 @@ for (const [locale] of locales) {
     "sourceKind",
     "stabilityRisk",
     "playbackPolicy",
-    "allPlayback",
+    "mode",
+    "accessValidatedDescription",
+    "accessNeedsReviewDescription",
+    "accessLinkOnlyDescription",
+    "useExplicitDescription",
+    "useEmbedOnlyDescription",
+    "useNoThirdPartyDescription",
+    "usePersonalPendingDescription",
+    "useNoncommercialPendingDescription",
     "fallbacks",
     "fallbackDirectoryLabel",
     "fallbackDirectoryTitle",
