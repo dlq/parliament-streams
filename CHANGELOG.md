@@ -44,6 +44,8 @@ application. Earlier application work remains available in Git history.
 - A focused rights/accessibility review pass that moved France National
   Assembly to conditional-reuse status and added current Knesset, Sansad TV,
   and TPchannel evidence without overclaiming reuse permission.
+- A short public rights summary plus ready-to-send written-clarification batches
+  for the remaining ambiguous native-playback and official-page sources.
 - Schema v8 validation-history references, a CLI refresh command, and public
   source-detail links to retained health reports for channels with dated
   validation evidence.

@@ -220,6 +220,99 @@ Status:
 | Council of Europe / PACE | Council audiovisual / PACE communications routes | draft | 2026-08-19 | Use the official permission form/contact route; do not email a guessed address. |
 | Manitoba Legislative Assembly | `Web@mbassembly.ca` / `clerkla@mbassembly.ca` | draft | 2026-08-19 | Ask whether OpenMB covers House/committee broadcast video. |
 
+## Ready-To-Send Batches
+
+Send these in small batches so replies can be processed without mixing
+conditions across institutions.
+
+### Batch 1: Canadian iSi LIVE
+
+Targets:
+
+- Ontario Legislative Assembly BRS
+- Nunavut Legislative Assembly
+
+Purpose:
+
+- Clarify whether the existing public iSi LIVE HLS feeds may be played
+  client-side by a non-commercial public-interest catalogue.
+- Ask whether the legislatures prefer official page link-out, official embeds,
+  archive downloads, or another route.
+
+Catalogue impact:
+
+- A positive Ontario reply could move six Ontario entries from
+  `noncommercial_pending_review` to `explicit_reuse_with_conditions`.
+- A negative or link-out-only reply should move those entries to link-out
+  playback posture while preserving schedule/accessibility metadata.
+- A positive Nunavut reply could resolve `nunavut-legislative-assembly-tv`;
+  otherwise it should remain pending or link-out.
+
+### Batch 2: Dedicated Or Recognised-Media Signal Routes
+
+Targets:
+
+- Norway Stortinget
+- Germany Bundestag
+- Netherlands Tweede Kamer
+
+Purpose:
+
+- These institutions publish or imply controlled official signal routes,
+  recognised-media workflows, or requested access procedures.
+- Ask whether Parliament Streams should apply for that route or keep the
+  catalogue link-out only.
+
+Catalogue impact:
+
+- Do not treat a browser-discovered HLS endpoint as equivalent to a requested
+  official signal unless the institution explicitly confirms that route.
+- If a supported embed/download/current-event route exists, prefer that over raw
+  direct playback.
+
+### Batch 3: Parliamentary Channel Terms
+
+Targets:
+
+- India Sansad TV
+- Israel Knesset Channel
+- Portugal ARTV / Canal Parlamento
+- Hellenic Parliament TV
+
+Purpose:
+
+- Clarify whether public parliamentary-channel HLS/native playback is allowed,
+  and whether proceedings must be distinguished from non-proceeding or
+  broadcaster-produced programming.
+- Ask for required credit language and any restrictions on editing,
+  advertising, commentary, or commercial contexts.
+
+Catalogue impact:
+
+- Positive replies should still be converted into narrow conditions rather than
+  broad reuse claims.
+- If the reply only supports official pages or embeds, keep native playback
+  disabled or permission-pending.
+
+### Batch 4: Official-Page / Supranational Clarification
+
+Targets:
+
+- Council of Europe / PACE
+- Manitoba Legislative Assembly
+
+Purpose:
+
+- Council of Europe/PACE: clarify audiovisual-specific permission because
+  general website permissions do not settle live video reuse.
+- Manitoba: clarify whether House/committee broadcast video is covered by OpenMB
+  or another legislative broadcast permission.
+
+Catalogue impact:
+
+- A positive reply can resolve link-out/event metadata conditions.
+- A negative or ambiguous reply keeps both entries link-out/pending.
+
 ## Source-Specific Drafts
 
 ### Ontario
@@ -251,6 +344,188 @@ official Assembly video page?
 
 If playback is permitted, are there required credits, wording, technical routes,
 or restrictions beyond those already published?
+
+Thank you.
+```
+
+### Nunavut
+
+```text
+Subject: Clarification request: Nunavut Legislative Assembly webcast video
+
+Hello,
+
+I maintain Parliament Streams, an unofficial public-interest research catalogue
+of public parliamentary video sources, official pages, and schedule metadata:
+
+https://github.com/dlq/parliament-streams
+
+The catalogue records the Nunavut Legislative Assembly's official webcast page
+and the public Assembly TV stream. The project does not download, save, edit,
+record, proxy, cache, or monetize video. It links back to the official Assembly
+page and displays source attribution and rights notes.
+
+Could you confirm the recommended route for public-interest access to Assembly
+webcast video?
+
+1. May the project list the official webcast page and archive links?
+2. Is there an official embed or player route that third parties should use?
+3. Is client-side playback of the public live stream permitted for a
+   non-commercial catalogue with Assembly attribution and links?
+4. Are there required credits, wording, restrictions, or uses to avoid?
+
+If native playback is not permitted, I will keep the catalogue as link-out only
+for this source.
+
+Thank you.
+```
+
+### Norway / Germany / Netherlands Signal-Route Request
+
+Use this for Stortinget, Bundestag, and Tweede Kamer after replacing the
+bracketed fields.
+
+```text
+Subject: Clarification request: [institution] official live video route
+
+Hello,
+
+I maintain Parliament Streams, an unofficial public-interest research catalogue
+of public parliamentary video sources, official pages, and schedule metadata:
+
+https://github.com/dlq/parliament-streams
+
+The catalogue records [institution/source] at:
+
+[official URL]
+
+The project does not download, save, edit, record, proxy, cache, or monetize
+video. It links back to the official page and displays source attribution and
+rights notes.
+
+Your public information appears to describe an official live-signal,
+recognised-media, embed, or requested-access route for parliamentary video. I
+would like to avoid relying on a browser-discovered HLS URL if that is not the
+supported third-party route.
+
+Could you confirm the recommended route for a non-commercial public-interest
+catalogue?
+
+1. Should third-party projects use only the official page or embedded player?
+2. Is there an application or permission process for a supported live signal?
+3. Is client-side playback of the public HLS stream permitted with source
+   attribution and links, or should that be avoided?
+4. Are there required credits, wording, restrictions, or uses to avoid?
+
+If native playback is not permitted, I will keep this source as link-out only.
+
+Thank you.
+```
+
+### Parliamentary Channels
+
+Use this for Sansad TV, Knesset Channel, ARTV / Canal Parlamento, and Hellenic
+Parliament TV after replacing the bracketed fields.
+
+```text
+Subject: Clarification request: [channel] public parliamentary video
+
+Hello,
+
+I maintain Parliament Streams, an unofficial public-interest research catalogue
+of public parliamentary video sources, official pages, and schedule metadata:
+
+https://github.com/dlq/parliament-streams
+
+The catalogue records [channel/source] at:
+
+[official URL]
+
+The project does not download, save, edit, record, proxy, cache, or monetize
+video. It links back to the official page and displays source attribution and
+rights notes.
+
+Could you confirm the recommended route for third-party public-interest access
+to this parliamentary video?
+
+1. May the project list the official live page and schedule/event links?
+2. Is there an official embed/player route you prefer?
+3. Is client-side playback of the public live stream permitted for a
+   non-commercial catalogue with source attribution and links?
+4. Does permission differ between live parliamentary proceedings and other
+   channel programming?
+5. Are there required credits, wording, restrictions, or uses to avoid?
+
+If native playback is not permitted, I will keep this source as link-out only.
+
+Thank you.
+```
+
+### Council of Europe / PACE
+
+```text
+Subject: Clarification request: PACE live audiovisual access
+
+Hello,
+
+I maintain Parliament Streams, an unofficial public-interest research catalogue
+of public parliamentary and supranational assembly video sources, official
+pages, and schedule metadata:
+
+https://github.com/dlq/parliament-streams
+
+The catalogue records the Council of Europe / PACE live page and related public
+event-video surfaces. The project does not download, save, edit, record, proxy,
+cache, or monetize video. It links back to the official page and displays
+source attribution and rights notes.
+
+The Council of Europe website permissions describe some website-material reuse,
+but audiovisual permissions appear to be handled separately. Could you confirm
+the recommended route for PACE live or recorded video in a non-commercial
+public-interest catalogue?
+
+1. May the project list the official live page and event links?
+2. Is there an official embed/player route that third parties should use?
+3. Is client-side playback of a public live stream permitted with Council/PACE
+   attribution and links?
+4. Are downloadable or archived PACE videos subject to different conditions?
+5. Are there required credits, wording, restrictions, or uses to avoid?
+
+If native playback is not permitted, I will keep the catalogue as link-out only
+for this source.
+
+Thank you.
+```
+
+### Manitoba
+
+```text
+Subject: Clarification request: Manitoba Legislative Assembly broadcast video
+
+Hello,
+
+I maintain Parliament Streams, an unofficial public-interest research catalogue
+of public parliamentary video sources, official pages, and schedule metadata:
+
+https://github.com/dlq/parliament-streams
+
+The catalogue records the Manitoba Legislative Assembly's official House
+Broadcasts page. The project does not download, save, edit, record, proxy,
+cache, or monetize video. It links back to the official Assembly page and
+displays source attribution and rights notes.
+
+Could you confirm the recommended route for public-interest access to House or
+committee broadcast video?
+
+1. May the project list the official House Broadcasts page and schedule links?
+2. Is there an official embed/player route that third parties should use?
+3. Is Assembly broadcast video covered by OpenMB or another reuse permission?
+4. Is client-side playback of any public stream permitted for a non-commercial
+   catalogue with Assembly attribution and links?
+5. Are there required credits, wording, restrictions, or uses to avoid?
+
+If native playback is not permitted, I will keep the catalogue as link-out only
+for this source.
 
 Thank you.
 ```

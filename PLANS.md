@@ -147,7 +147,9 @@ as the current execution queue. It classifies the remaining pending entries as
 19 likely written-clarification cases and 13
 keep-pending-after-dated-search cases. No public-terms follow-up entries remain.
 Draft request templates and public response-tracking rules live in
-[docs/permission-requests.md](docs/permission-requests.md).
+[docs/permission-requests.md](docs/permission-requests.md). A short
+reader-facing explanation of the current posture lives in
+[docs/rights-summary.md](docs/rights-summary.md).
 
 Specific unresolved direct-playback groups:
 
@@ -171,6 +173,8 @@ Exit criteria:
 - `docs/permission-requests.md` records any written-clarification outreach and
   public response summaries for source owners whose public terms remain
   ambiguous.
+- `docs/rights-summary.md` stays short enough for contributors who need the
+  current posture without reading the full evidence matrix.
 - `data/channels.json` statuses change only when official evidence supports the
   change.
 - `reports/review-queues-2026-08-19.json` or its successor records the updated

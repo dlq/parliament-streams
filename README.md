@@ -89,6 +89,8 @@ before editing source records.
   boundaries.
 - `docs/source-rights-and-permissions.md`: source-by-source permission and
   rights evidence.
+- `docs/rights-summary.md`: short reader-facing explanation of the current
+  rights posture and open permission queue.
 - `docs/permission-requests.md`: draft written-clarification requests, contact
   routes, and response-tracking rules for ambiguous source-owner terms.
 - `docs/open-stream-principles.md`: the project position on open protocols,
