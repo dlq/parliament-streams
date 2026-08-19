@@ -498,23 +498,37 @@ class ManagementTests(unittest.TestCase):
         before = {
             "checked_at": "before",
             "results": [
-                {"id": "a", "status": "ok"},
+                {
+                    "id": "a",
+                    "status": "ok",
+                    "source_kind": "official_vendor_hls",
+                    "stability_risk": "low",
+                },
                 {"id": "b", "status": "error"},
-                {"id": "removed", "status": "warning"},
+                {"id": "removed", "status": "warning", "availability": "always_on"},
             ],
         }
         after = {
             "checked_at": "after",
             "results": [
-                {"id": "a", "status": "error"},
+                {
+                    "id": "a",
+                    "status": "error",
+                    "source_kind": "official_vendor_hls",
+                    "availability": "always_on",
+                    "stability_risk": "low",
+                },
                 {"id": "b", "status": "ok"},
-                {"id": "added", "status": "ok"},
+                {"id": "added", "status": "ok", "stability_risk": "medium"},
             ],
         }
         diff = compare_health_reports(before, after)
         self.assertEqual([item["id"] for item in diff["regressions"]], ["a"])
+        self.assertEqual(diff["regressions"][0]["stability_risk"], "low")
+        self.assertEqual(diff["regressions"][0]["source_kind"], "official_vendor_hls")
         self.assertEqual([item["id"] for item in diff["recoveries"]], ["b"])
         self.assertEqual(diff["added"][0]["id"], "added")
+        self.assertEqual(diff["added"][0]["stability_risk"], "medium")
         self.assertEqual(diff["removed"][0]["id"], "removed")
 
         with self.assertRaisesRegex(ValueError, "repeats id"):

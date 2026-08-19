@@ -129,6 +129,10 @@ def check_channel(channel: Mapping[str, Any], timeout: int, retries: int) -> dic
     result: dict[str, Any] = {
         "id": channel["id"],
         "source_type": channel["source_type"],
+        "source_kind": channel.get("source_kind"),
+        "technical_status": channel.get("technical_status"),
+        "availability": channel.get("availability"),
+        "stability_risk": channel.get("stability_risk"),
         "url": url,
         "checked_at": _utc_timestamp(),
     }

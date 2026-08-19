@@ -3208,11 +3208,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "url": "https://whatson.parliament.uk/",
+          "scraper": "uk-parliament",
+          "url": "https://whatson-api.parliament.uk/calendar/events/list.json",
           "method": "GET",
-          "kind": "parliamentary_events_calendar",
-          "scraper_status": "planned"
+          "kind": "whatson_calendar_events_api",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {

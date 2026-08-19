@@ -13,6 +13,7 @@ from . import (
     ontario_calendar,
     portugal_agenda,
     quebec_webdiffusion,
+    uk_parliament,
 )
 
 SCRAPERS: dict[str, ModuleType] = {
@@ -26,4 +27,5 @@ SCRAPERS: dict[str, ModuleType] = {
     ebs.SOURCE["id"]: ebs,
     italian_senate.SOURCE["id"]: italian_senate,
     portugal_agenda.SOURCE["id"]: portugal_agenda,
+    uk_parliament.SOURCE["id"]: uk_parliament,
 }

@@ -1598,6 +1598,23 @@ the observed `lastModified` timestamps returned HTTP 500. Keep those API URLs
 recorded as planned research, not as implemented schedule sources, until a
 stable supported request shape is validated.
 
+## 2026-08-19 Audit risk and UK schedule follow-up
+
+Automation now carries `source_kind`, `availability`, and `stability_risk` in
+health reports. The daily stable-stream regression gate checks always-on entries
+except those marked `stability_risk: high`; high-risk entries remain visible in
+the full catalogue health report and summary, but they do not create noisy
+stable-stream regression failures.
+
+UK Parliament schedule metadata now uses the official What's on Calendar API:
+
+- `https://whatson-api.parliament.uk/calendar/events/list.json`
+
+The parser filters out private meetings and keeps public chamber, Westminster
+Hall, Grand Committee, and oral-evidence committee events. This improves the
+UK catalogue entry as a schedule-aware official YouTube/link-out fallback while
+leaving Parliamentlive.tv/Red Bee playback extraction unresolved.
+
 ## 2026-08-17 Review-source validation follow-up
 
 Rechecked every catalogue entry marked `needs_review`, with validated

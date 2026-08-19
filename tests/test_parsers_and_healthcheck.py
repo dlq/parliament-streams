@@ -21,6 +21,7 @@ from parliament_streams.scrapers import (
     ontario_calendar,
     portugal_agenda,
     quebec_webdiffusion,
+    uk_parliament,
 )
 from parliament_streams.scrapers.common import clean_html, first_match, parse_iso
 
@@ -47,6 +48,66 @@ class ParserTests(unittest.TestCase):
         requests = italian_senate.request_specs(datetime(2026, 8, 17, 10, tzinfo=UTC))
         self.assertEqual(len(requests), 3)
         self.assertIn("field_date_value%5Bmin%5D=2026-08-17T00%3A00%3A00", requests[0]["url"])
+
+    def test_uk_parliament_whatson_calendar(self):
+        requests = uk_parliament.request_specs(datetime(2026, 8, 19, 12, tzinfo=UTC))
+        self.assertEqual(len(requests), 1)
+        self.assertIn("startDate=2026-08-19", requests[0]["url"])
+        self.assertIn("endDate=2026-09-19", requests[0]["url"])
+
+        payload = json.dumps(
+            [
+                {
+                    "StartDate": "2026-09-01T00:00:00",
+                    "StartTime": "14:30",
+                    "Description": "Foreign, Commonwealth and Development",
+                    "Type": "Main Chamber",
+                    "House": "Commons",
+                    "Category": "Oral questions",
+                    "CancelledDate": None,
+                },
+                {
+                    "StartDate": "2026-09-01T00:00:00",
+                    "StartTime": "15:45",
+                    "Description": None,
+                    "Type": "Select & Joint Committees",
+                    "House": "Lords",
+                    "Category": "Private Meeting",
+                    "Committee": {"Description": "Private committee"},
+                    "CancelledDate": None,
+                },
+                {
+                    "StartDate": "2026-09-02T00:00:00",
+                    "StartTime": "",
+                    "Description": "Untimed chamber item",
+                    "Type": "Main Chamber",
+                    "House": "Commons",
+                    "Category": "Legislation",
+                    "CancelledDate": None,
+                },
+                {
+                    "StartDate": "2026-09-02T00:00:00",
+                    "StartTime": "10:30",
+                    "Description": None,
+                    "Type": "Select & Joint Committees",
+                    "House": "Lords",
+                    "Category": "Oral evidence",
+                    "Committee": {"Description": "Domestic Abuse Act 2021 Committee"},
+                    "CancelledDate": None,
+                },
+            ]
+        )
+        parsed = uk_parliament.parse(payload, now=datetime(2026, 8, 31, 12, tzinfo=UTC))[
+            "uk-parliament-youtube"
+        ]
+        self.assertEqual(
+            parsed["current_event_title"],
+            "Commons - Main Chamber: Foreign, Commonwealth and Development",
+        )
+        self.assertEqual(
+            parsed["next_event_title"],
+            "Lords - Select & Joint Committees: Domestic Abuse Act 2021 Committee",
+        )
 
     def test_portugal_open_data_agenda(self):
         payload = json.dumps(
@@ -347,6 +408,9 @@ class HealthcheckTests(unittest.TestCase):
         channel = {
             "id": "sample",
             "source_type": "direct_hls",
+            "source_kind": "official_vendor_hls",
+            "availability": "always_on",
+            "stability_risk": "low",
             "playback_url": "https://example.test/master.m3u8",
         }
         master = b"#EXTM3U\n#EXT-X-STREAM-INF:BANDWIDTH=1\nvariant.m3u8\n"
@@ -373,6 +437,9 @@ class HealthcheckTests(unittest.TestCase):
         ):
             result = healthcheck.check_channel(channel, timeout=1, retries=0)
         self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["source_kind"], "official_vendor_hls")
+        self.assertEqual(result["availability"], "always_on")
+        self.assertEqual(result["stability_risk"], "low")
         self.assertEqual(result["hls_variant_count"], 1)
         self.assertTrue(result["sample_variant"]["looks_like_hls"])
 

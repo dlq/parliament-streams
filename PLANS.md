@@ -80,6 +80,12 @@ Done:
 - Schema v7 separates coarse `source_type` from precise `source_kind`, and adds
   `stability_risk` so technical playback, provenance, drift risk, and rights
   posture are no longer collapsed into one field.
+- Stability risk is now included in health reports and used by the daily
+  stable-stream regression gate; high-risk always-on sources are still audited
+  but do not drive the low-noise regression issue workflow.
+- UK Parliament schedule metadata is implemented through the official What's on
+  Calendar API. Parliamentlive.tv playback and Red Bee stream access remain
+  separate research questions.
 
 Retired from the active project:
 
@@ -190,18 +196,17 @@ Near-term:
 
 Candidate future scrapers:
 
-1. UK Parliament live guide/day/info surfaces.
-2. UN Web TV schedule/event pages.
-3. Council of the European Union live schedule.
-4. Council of Europe/PACE live and multimedia resources.
-5. Spain Congreso/Canal Parlamento programming.
-6. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
+1. UN Web TV schedule/event pages.
+2. Council of the European Union live schedule.
+3. Council of Europe/PACE live and multimedia resources.
+4. Spain Congreso/Canal Parlamento programming.
+5. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
    Israel, El Salvador, Mauritius, India, Thailand, Slovakia, Nunavut,
    and other second-ring sources when structured official endpoints are found.
-7. Canada federal ParlVU/SenVu deeper metadata for House, Senate, and committee
+6. Canada federal ParlVU/SenVu deeper metadata for House, Senate, and committee
    proceedings, including active-event state, audio-language, closed-caption,
    archive, and `PowerBrowserV2` event links where available.
-8. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
+7. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
    catalogue starts expanding beyond national/supranational coverage.
 

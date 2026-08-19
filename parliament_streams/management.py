@@ -333,11 +333,11 @@ def audit_identities(catalogue: Catalogue, *, checked_at: str | None = None) -> 
 STATUS_RANK: dict[str, int] = {"ok": 0, "skipped": 1, "warning": 1, "error": 2}
 
 
-def _health_statuses(report: dict[str, Any], label: str) -> dict[str, str]:
+def _health_results(report: dict[str, Any], label: str) -> dict[str, dict[str, Any]]:
     raw_results = report.get("results")
     if not isinstance(raw_results, list):
         raise ValueError(f"{label} health report needs a results array")
-    statuses: dict[str, str] = {}
+    results: dict[str, dict[str, Any]] = {}
     for index, item in enumerate(raw_results):
         if not isinstance(item, dict):
             raise ValueError(f"{label} health result {index} must be an object")
@@ -349,29 +349,36 @@ def _health_statuses(report: dict[str, Any], label: str) -> dict[str, str]:
             raise ValueError(f"{label} health result {channel_id} needs a non-empty status")
         if status not in STATUS_RANK:
             raise ValueError(f"{label} health result {channel_id} has unknown status: {status}")
-        if channel_id in statuses:
+        if channel_id in results:
             raise ValueError(f"{label} health report repeats id: {channel_id}")
-        statuses[channel_id] = status
-    return statuses
+        results[channel_id] = item
+    return results
 
 
 def compare_health_reports(before: dict[str, Any], after: dict[str, Any]) -> HealthDiff:
-    before_results = _health_statuses(before, "Before")
-    after_results = _health_statuses(after, "After")
+    before_results = _health_results(before, "Before")
+    after_results = _health_results(after, "After")
     before_ids = set(before_results)
     after_ids = set(after_results)
 
     def change(channel_id: str) -> HealthChange:
+        before_item = before_results.get(channel_id, {})
+        after_item = after_results.get(channel_id, {})
+        metadata = after_item or before_item
         return {
             "id": channel_id,
-            "before": before_results.get(channel_id),
-            "after": after_results.get(channel_id),
+            "before": before_item.get("status"),
+            "after": after_item.get("status"),
+            "source_type": metadata.get("source_type"),
+            "source_kind": metadata.get("source_kind"),
+            "availability": metadata.get("availability"),
+            "stability_risk": metadata.get("stability_risk"),
         }
 
     changed = [
         change(channel_id)
         for channel_id in sorted(before_ids & after_ids)
-        if before_results[channel_id] != after_results[channel_id]
+        if before_results[channel_id]["status"] != after_results[channel_id]["status"]
     ]
     return {
         "before_checked_at": before.get("checked_at"),

@@ -17,6 +17,11 @@ application. Earlier application work remains available in Git history.
 - Schema v7 source classification fields: precise `source_kind` values for
   first-party HLS, official-vendor HLS, DASH research, YouTube embeds, and
   official pages, plus `stability_risk` for drift/review risk.
+- Stability-risk-aware health reports and stable-stream regression automation,
+  so high-risk always-on sources remain audited without driving noisy regression
+  issues.
+- A UK Parliament What's on Calendar API schedule scraper for public chamber,
+  Westminster Hall, Grand Committee, and oral-evidence events.
 - A public architecture guide explaining source-of-truth files, generated
   artifacts, runtime shape, source types, maintenance flow, schedule scrapers,
   and validation entry points.

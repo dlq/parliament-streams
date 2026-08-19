@@ -61,7 +61,7 @@ jobs:
 
       - name: Audit stable streams for regressions
         run: |
-          mapfile -t stable_ids < <(jq -r '.channels[] | select(.availability == "always_on") | .id' data/channels.json)
+          mapfile -t stable_ids < <(jq -r '.channels[] | select(.availability == "always_on" and .stability_risk != "high") | .id' data/channels.json)
           args=()
           for channel_id in "${stable_ids[@]}"; do
             args+=(--id "$channel_id")
@@ -98,7 +98,7 @@ jobs:
             --color d73a4a \
             --description "Automated regression in an always-on stream" \
             --force
-          while IFS=$'\t' read -r channel_id before after; do
+          while IFS=$'\t' read -r channel_id before after source_kind stability_risk; do
             title="Stable stream regression: $channel_id"
             number=$(gh issue list \
               --state all \
@@ -111,6 +111,8 @@ jobs:
               echo
               echo "- Previous status: \`$before\`"
               echo "- Current status: \`$after\`"
+              echo "- Source kind: \`$source_kind\`"
+              echo "- Stability risk: \`$stability_risk\`"
               echo "- Evidence: $RUN_URL"
               echo
               echo "Confirm the endpoint from another network and inspect the retained health report before changing catalogue metadata."
@@ -127,7 +129,7 @@ jobs:
                 --label stream-regression \
                 --body-file regression-issue.md
             fi
-          done < <(jq -r '.regressions[] | [.id, .before, .after] | @tsv' reports/automated/stable-health-diff.json)
+          done < <(jq -r '.regressions[] | [.id, .before, .after, .source_kind, .stability_risk] | @tsv' reports/automated/stable-health-diff.json)
           while IFS= read -r channel_id; do
             title="Stable stream regression: $channel_id"
             number=$(gh issue list \
@@ -175,6 +177,7 @@ jobs:
             [[ -f reports/automated/links-audit.json ]] && jq -r '"Supporting links: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/links-audit.json
             [[ -f reports/automated/schedules.json ]] && jq -r '"Parsed schedules: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/schedules.json
             [[ -f reports/automated/stable-health-diff.json ]] && jq -r '"Stable-stream regressions: \(.regressions | length); recoveries: \(.recoveries | length)"' reports/automated/stable-health-diff.json
+            [[ -f reports/automated/catalogue-health.json ]] && jq -r '"High-risk source results: " + ([.results[] | select(.stability_risk == "high") | .status] | group_by(.) | map("\(.[0])=\(length)") | join(", "))' reports/automated/catalogue-health.json
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Preserve current stable-health baseline

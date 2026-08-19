@@ -151,6 +151,10 @@ class HealthChange(TypedDict):
     id: str
     before: str | None
     after: str | None
+    source_type: str | None
+    source_kind: str | None
+    availability: str | None
+    stability_risk: str | None
 
 
 class HealthDiff(TypedDict):

@@ -118,6 +118,9 @@ coverage, HTML validation, and Playwright/Axe accessibility checks.
 Daily and monthly GitHub Actions workflows repeat catalogue audits, link checks,
 health checks, schedule audits, and browser-based candidate discovery. Automated
 reports help identify issues; they do not grant permission to reuse a stream.
+Stable-stream regression checks use `availability` and `stability_risk` to keep
+alerts focused: high-risk sources remain in the full health report, but do not
+drive the low-noise always-on regression issue workflow.
 
 ## Where To Start
 
