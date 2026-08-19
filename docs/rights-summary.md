@@ -53,10 +53,10 @@ These entries need either written clarification or a future dated terms review.
 
 As of 2026-08-19:
 
-- 30 of 86 catalogue entries remain permission-pending.
-- 17 entries likely need written clarification from the source owner or
+- 28 of 86 catalogue entries remain permission-pending.
+- 16 entries likely need written clarification from the source owner or
   institution.
-- 13 entries should stay pending after dated public-terms searches unless
+- 12 entries should stay pending after dated public-terms searches unless
   clearer terms are published.
 
 The current execution queue is
@@ -76,6 +76,12 @@ review kept Netherlands Tweede Kamer in the written-clarification bucket and
 kept Thailand TPchannel and El Salvador Legislative Assembly pending after
 dated public-terms searches. No catalogue statuses changed. The snapshot is
 [review-queues-2026-08-19-first-party-hls.json](../reports/review-queues-2026-08-19-first-party-hls.json).
+
+The pending `official_page` records were reviewed on 2026-08-19. Brazil TV
+Camara and Manitoba House Broadcasts moved to
+`explicit_reuse_with_conditions` for link-out use. Council of Europe/PACE,
+Saskatchewan, Northwest Territories, and Navarre remain pending. The snapshot is
+[review-queues-2026-08-19-official-page.json](../reports/review-queues-2026-08-19-official-page.json).
 
 ## Practical Rule For New Sources
 

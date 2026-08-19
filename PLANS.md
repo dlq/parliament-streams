@@ -129,7 +129,7 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 30 of 86 catalogue entries still use a permission status ending
+Current queue: 28 of 86 catalogue entries still use a permission status ending
 in `pending_review`.
 
 Priority order:
@@ -143,20 +143,26 @@ Priority order:
    Tweede Kamer should move to written clarification; Thailand TPchannel and
    El Salvador Legislative Assembly remain pending after dated public-terms
    searches.
-3. Review the 6 pending `official_page` entries next, because most of
-   them are link-out or fallback records and do not immediately affect native
-   playback.
+3. The 6 pending `official_page` entries were reviewed on 2026-08-19. Brazil
+   TV Camara and Manitoba House Broadcasts moved to
+   `explicit_reuse_with_conditions` for link-out use. Council of Europe/PACE,
+   Saskatchewan, Northwest Territories, and Navarre remain pending because
+   public evidence does not clearly close video-specific third-party playback
+   or redistribution.
 4. Keep the 1 pending `direct_dash_research` entry research-only unless source
    ownership, rights, and Apple/web playback strategy are clarified.
 
 Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-2026-08-19-rights-next.json)
-as the current execution queue. It classifies the remaining pending entries as
-17 likely written-clarification cases and 13
-keep-pending-after-dated-search cases. No public-terms follow-up entries remain.
+as the historical starting queue. After the HLS and official-page review
+snapshots, the remaining pending entries are 16 likely written-clarification
+cases and 12 keep-pending-after-dated-search cases. No public-terms follow-up
+entries remain.
 The official-vendor HLS review snapshot is
 [reports/review-queues-2026-08-19-official-vendor-hls.json](reports/review-queues-2026-08-19-official-vendor-hls.json).
 The first-party HLS review snapshot is
 [reports/review-queues-2026-08-19-first-party-hls.json](reports/review-queues-2026-08-19-first-party-hls.json).
+The official-page review snapshot is
+[reports/review-queues-2026-08-19-official-page.json](reports/review-queues-2026-08-19-official-page.json).
 Draft request templates and public response-tracking rules live in
 [docs/permission-requests.md](docs/permission-requests.md). A short
 reader-facing explanation of the current posture lives in

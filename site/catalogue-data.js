@@ -484,14 +484,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Camara portal terms allow reproduction of public portal information with source and author credit, but the terms do not clearly authorize third-party native playback. The previously catalogued TV Camara HLS endpoint returned HTTP 404 on 2026-08-19, and the same terms direct portal video use to YouTube terms where applicable.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Camara portal terms say public portal information is public-domain, free, and reproducible with source and author credit where applicable. A 2022 Camara order says direct plenary and committee transmissions are under CC BY 4.0 for broad and unrestricted use when the production depicts reality and preserves the original speaking context. The previously catalogued TV Camara HLS endpoint returned HTTP 404 on 2026-08-19, so this remains link-out until a supported playback route is validated.",
         "evidence": [
           "https://www.camara.leg.br/tv/aovivo",
           "https://www.camara.leg.br/tv/aovivo/embed",
-          "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade"
+          "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade/termos-gerais",
+          "https://www2.camara.leg.br/legin/int/ordser/2022/ordemdeservico-2-30-maio-2022-792759-publicacaooriginal-165427-direx.html"
         ],
-        "recommendation": "Link to the official TV Camara page until a replacement first-party playback route is validated and TV Camara confirms that third-party native playback is permitted."
+        "recommendation": "Link to the official TV Camara page and preserve Camara dos Deputados attribution, CC BY 4.0 conditions for plenary/committee transmissions, reality/context requirements, and YouTube terms where portal video uses YouTube. Do not restore native playback until a replacement first-party route is validated."
       },
       "validation_history": [
         {
@@ -5808,13 +5809,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "The official House Broadcasts page provides live audio/video for information purposes and states that printed versions are the official record. Manitoba OpenMB terms support reuse of government information and data, but this review did not confirm that the live legislative audio/video broadcast is covered by that licence.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Legislative Assembly of Manitoba website copyright statement supports dissemination of website information and permits downloading, reproduction, display, or distribution of website material for non-commercial use only, with source acknowledgement, no alteration except for length, no undignified association, no implied Assembly endorsement, and no extension of parliamentary privilege to reproductions.",
         "evidence": [
           "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
-          "https://manitoba.ca/legal/copyright.html"
+          "https://www.gov.mb.ca/legislature/copyright.html"
         ],
-        "recommendation": "Link to the official House Broadcasts page. Keep reuse pending unless Manitoba confirms the legislative broadcast is covered by OpenMB or another explicit video-use permission."
+        "recommendation": "Keep as official link-out and reuse only under the Assembly website copyright conditions: non-commercial use, Assembly source acknowledgement, no alteration except length, no undignified association, no implied endorsement, and no claim of parliamentary privilege for reproductions."
       },
       "validation_history": [
         {
@@ -5941,9 +5942,10 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The Assembly publishes House and committee proceedings in multiple official languages, but this review did not locate explicit third-party playback or redistribution terms.",
+        "summary": "The Assembly publishes House and committee proceedings in multiple official languages. Generic Government of the Northwest Territories terms allow non-commercial reproduction or redistribution with acknowledgement, but this review did not locate an Assembly-specific video reuse statement or explicit third-party playback terms.",
         "evidence": [
-          "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
+          "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+          "https://www.justice.gov.nt.ca/en/terms-of-use/page/2/"
         ],
         "recommendation": "Link to the official multilingual session page pending a source-specific rights statement."
       },
@@ -6741,10 +6743,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official documents describe a complete institutional signal supplied to media and the public for live streaming and on-demand consultation, but this review did not locate general third-party playback or redistribution terms.",
+        "summary": "Official documents describe a complete institutional signal supplied to media and the public for live streaming and on-demand consultation. Navarre parliamentary transparency rules support reuse of transparency-portal information with source/date and no distortion, but this review did not locate video-specific third-party playback or redistribution terms for the live service.",
         "evidence": [
           "https://parlamentodenavarra.es/sites/default/files/contenido-estatico-archivos/Anexo%20III%20soporte%20web.pdf",
-          "https://parlamentodenavarra.es/es/pruebalive1.htm"
+          "https://parlamentodenavarra.es/es/pruebalive1.htm",
+          "https://www.lexnavarra.navarra.es/detalle.asp?r=54698"
         ],
         "recommendation": "Link to the official live service pending a source-specific reuse statement."
       },

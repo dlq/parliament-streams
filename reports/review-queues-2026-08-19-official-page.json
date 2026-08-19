@@ -1,0 +1,96 @@
+{
+  "checked_on": "2026-08-19",
+  "scope": "pending official_page permission records",
+  "catalogue_total": 86,
+  "reviewed_entries": 6,
+  "reviewed_families": 6,
+  "status_changes": 2,
+  "summary": {
+    "pending_total_after_review": 28,
+    "official_page_pending_after_review": 4,
+    "likely_needs_written_clarification": 16,
+    "keep_pending_after_dated_search": 12,
+    "outcome": "Brazil TV Camara and Manitoba House Broadcasts moved to explicit_reuse_with_conditions for link-out use. Council of Europe / PACE, Saskatchewan, Northwest Territories, and Navarre remain permission-pending because public evidence did not clearly close video-specific third-party playback or redistribution."
+  },
+  "prototype_policy": "Official-page records remain link-out unless a supported embed or direct playback route is documented; permission status records reuse evidence separately from playback implementation.",
+  "families": [
+    {
+      "family": "Council of Europe / PACE Live",
+      "ids": [
+        "council-of-europe-pace-live"
+      ],
+      "source_kind": "official_page",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "personal_use_pending_review",
+      "playback_policy": "link_out",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "keep_pending",
+      "reason": "Council of Europe website permissions authorize some non-commercial website-material reuse, but audiovisual-material rights questions are directed to audiovisual contacts and Hemicycle video files are described as downloadable on request."
+    },
+    {
+      "family": "Manitoba House Broadcasts",
+      "ids": [
+        "manitoba-house-broadcasts"
+      ],
+      "source_kind": "official_page",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "explicit_reuse_with_conditions",
+      "playback_policy": "link_out",
+      "review_bucket": "likely_needs_written_clarification",
+      "decision": "close_pending",
+      "reason": "The Legislative Assembly of Manitoba website copyright statement permits non-commercial download, reproduction, display, or distribution of website material with source acknowledgement, no alteration except length, no undignified association, no implied endorsement, and no extension of parliamentary privilege to reproductions."
+    },
+    {
+      "family": "Brazil TV Camara",
+      "ids": [
+        "brazil-tv-camara"
+      ],
+      "source_kind": "official_page",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "explicit_reuse_with_conditions",
+      "playback_policy": "link_out",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "close_pending",
+      "reason": "Camara portal terms allow public portal information to be reproduced with source credit, and a 2022 Camara order applies CC BY 4.0 to direct plenary and committee transmissions when productions depict reality and preserve the original speaking context. Native playback remains disabled because the former HLS route was not validated."
+    },
+    {
+      "family": "Saskatchewan Legislative Proceedings",
+      "ids": [
+        "saskatchewan-legislative-proceedings"
+      ],
+      "source_kind": "official_page",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "personal_use_pending_review",
+      "playback_policy": "link_out",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The official proceedings page documents live and archived video, mobile playback, captioning, and broadcast availability, but no source-specific third-party playback, rebroadcast, or redistribution terms were found."
+    },
+    {
+      "family": "Northwest Territories Watch Session",
+      "ids": [
+        "northwest-territories-watch-session"
+      ],
+      "source_kind": "official_page",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "personal_use_pending_review",
+      "playback_policy": "link_out",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "The official Assembly page documents multilingual House and committee routes. Generic Government of the Northwest Territories non-commercial reuse terms were found on a Justice site, but no Assembly-specific video reuse statement was found."
+    },
+    {
+      "family": "Navarre Parliament Live",
+      "ids": [
+        "navarre-parliament-live"
+      ],
+      "source_kind": "official_page",
+      "permission_status_before": "personal_use_pending_review",
+      "permission_status_after": "personal_use_pending_review",
+      "playback_policy": "link_out",
+      "review_bucket": "keep_pending_after_dated_search",
+      "decision": "keep_pending",
+      "reason": "Navarre parliamentary transparency rules support reuse of transparency-portal information with source/date and no distortion, but no video-specific third-party playback or redistribution terms were found for the live service."
+    }
+  ]
+}

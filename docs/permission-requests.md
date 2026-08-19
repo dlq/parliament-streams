@@ -27,10 +27,10 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 30 of 86 catalogue entries still use a permission status ending in
+- 28 of 86 catalogue entries still use a permission status ending in
   `pending_review`.
-- 17 entries likely need written clarification.
-- 13 entries should remain pending after a dated public-terms search unless
+- 16 entries likely need written clarification.
+- 12 entries should remain pending after a dated public-terms search unless
   source owners publish clearer terms or the post-proof-of-concept playback
   policy changes.
 
@@ -50,11 +50,19 @@ general public raw-HLS playback. Thailand TPchannel and El Salvador Legislative
 Assembly remain pending after dated searches because no source-specific
 third-party playback or embedding terms were found.
 
+The 2026-08-19 official-page pass reviewed the 6 pending `official_page`
+entries. Brazil TV Camara and Manitoba House Broadcasts moved to
+`explicit_reuse_with_conditions` for link-out use. Council of Europe/PACE,
+Saskatchewan, Northwest Territories, and Navarre remain pending because public
+evidence does not clearly close video-specific third-party playback or
+redistribution.
+
 Execution queue:
 
 - [reports/review-queues-2026-08-19-rights-next.json](../reports/review-queues-2026-08-19-rights-next.json)
 - [reports/review-queues-2026-08-19-official-vendor-hls.json](../reports/review-queues-2026-08-19-official-vendor-hls.json)
 - [reports/review-queues-2026-08-19-first-party-hls.json](../reports/review-queues-2026-08-19-first-party-hls.json)
+- [reports/review-queues-2026-08-19-official-page.json](../reports/review-queues-2026-08-19-official-page.json)
 
 ## Request Principles
 
@@ -222,7 +230,6 @@ Status:
 Catalogue IDs:
 
 - `council-of-europe-pace-live`
-- `manitoba-house-broadcasts`
 
 Contact routes:
 
@@ -232,24 +239,25 @@ Contact routes:
   contacts; [audiovisual services](https://www.coe.int/en/web/portal/audiovisual-services1)
   and [PACE contacts](https://pace.coe.int/en/pages/contacts) list the relevant
   communications and technical routes.
-- Manitoba Legislative Assembly:
-  [contact page](https://manitoba.ca/legislature/about/contact.html) lists
-  the Clerk, Digital Media Branch, and website contacts.
 
 Question focus:
 
 - Council of Europe/PACE: ask whether PACE livestream and downloadable video
   may be listed, embedded, or played natively in a public-interest catalogue,
   and whether the public YouTube/live resources are the preferred route.
-- Manitoba: ask whether House and committee broadcast video is covered by
-  OpenMB or another licence, and whether the Assembly prefers link-out only.
 
 Status:
 
 | Target | Contact route | Status | Last action | Notes |
 | --- | --- | --- | --- | --- |
 | Council of Europe / PACE | Council audiovisual / PACE communications routes | draft | 2026-08-19 | Use the official permission form/contact route; do not email a guessed address. |
-| Manitoba Legislative Assembly | `Web@mbassembly.ca` / `clerkla@mbassembly.ca` | draft | 2026-08-19 | Ask whether OpenMB covers House/committee broadcast video. |
+
+Resolved official-page notes:
+
+- Manitoba Legislative Assembly moved to `explicit_reuse_with_conditions` on
+  2026-08-19 for link-out/non-commercial use under the Assembly website
+  copyright statement. Keep native playback disabled unless a supported stream
+  route and permission are separately documented.
 
 ## Ready-To-Send Batches
 
@@ -335,19 +343,16 @@ Catalogue impact:
 Targets:
 
 - Council of Europe / PACE
-- Manitoba Legislative Assembly
 
 Purpose:
 
 - Council of Europe/PACE: clarify audiovisual-specific permission because
   general website permissions do not settle live video reuse.
-- Manitoba: clarify whether House/committee broadcast video is covered by OpenMB
-  or another legislative broadcast permission.
 
 Catalogue impact:
 
 - A positive reply can resolve link-out/event metadata conditions.
-- A negative or ambiguous reply keeps both entries link-out/pending.
+- A negative or ambiguous reply keeps the entry link-out/pending.
 
 ## Source-Specific Drafts
 
@@ -525,39 +530,6 @@ public-interest catalogue?
 3. Is client-side playback of a public live stream permitted with Council/PACE
    attribution and links?
 4. Are downloadable or archived PACE videos subject to different conditions?
-5. Are there required credits, wording, restrictions, or uses to avoid?
-
-If native playback is not permitted, I will keep the catalogue as link-out only
-for this source.
-
-Thank you.
-```
-
-### Manitoba
-
-```text
-Subject: Clarification request: Manitoba Legislative Assembly broadcast video
-
-Hello,
-
-I maintain Parliament Streams, an unofficial public-interest research catalogue
-of public parliamentary video sources, official pages, and schedule metadata:
-
-https://github.com/dlq/parliament-streams
-
-The catalogue records the Manitoba Legislative Assembly's official House
-Broadcasts page. The project does not download, save, edit, record, proxy,
-cache, or monetize video. It links back to the official Assembly page and
-displays source attribution and rights notes.
-
-Could you confirm the recommended route for public-interest access to House or
-committee broadcast video?
-
-1. May the project list the official House Broadcasts page and schedule links?
-2. Is there an official embed/player route that third parties should use?
-3. Is Assembly broadcast video covered by OpenMB or another reuse permission?
-4. Is client-side playback of any public stream permitted for a non-commercial
-   catalogue with Assembly attribution and links?
 5. Are there required credits, wording, restrictions, or uses to avoid?
 
 If native playback is not permitted, I will keep the catalogue as link-out only
