@@ -1338,14 +1338,16 @@ identity, discovery, schedule metadata, or provenance.
 
 Current local catalogue baseline during this pass:
 
-- 63 channel entries.
-- 33 national, 24 sub-national, and 6 supranational entries.
-- 48 direct HLS entries, 11 official-page entries, 3 YouTube entries, and 1
+- 86 channel entries.
+- 37 national, 43 sub-national, and 6 supranational entries.
+- 50 direct HLS entries, 32 official-page entries, 3 YouTube entries, and 1
   DASH research entry.
-- 39 validated technical entries, 13 link-only entries, and 11 `needs_review`
+- 45 validated technical entries, 32 link-only entries, and 9 `needs_review`
   entries.
 - Implemented schedule parsers: CPAC, Quebec webdiffusion, Ontario calendar,
-  New Zealand Parliament, and Brazil TV Camara.
+  New Zealand Parliament, Brazil TV Camara, European Parliament, Europe by
+  Satellite, Italian Senate, Portugal open-data agenda, and Canada
+  ParlVU/SenVu Harmony landing pages.
 
 ### Closest overlap found
 
@@ -1577,6 +1579,20 @@ Catalogue outcome: keep Brazil TV Camara as an official live-page and schedule
 source, but demote it from `direct_hls`/`validated` to `official_page`/`link_only`
 until a replacement first-party stream is validated and the rights posture is
 clear.
+
+## 2026-08-19 Canada Harmony schedule integration
+
+ParlVU and SenVu were integrated as schedule metadata sources through the public
+server-rendered Harmony landing pages. The implemented `canada-harmony` parser
+extracts upcoming event cards from:
+
+- `https://parlvu.parl.gc.ca/Harmony/en`
+- `https://senparlvu.parl.gc.ca/Harmony/`
+
+The bare `GetUpcomingEvents` API URLs returned HTTP 404, and direct probes with
+the observed `lastModified` timestamps returned HTTP 500. Keep those API URLs
+recorded as planned research, not as implemented schedule sources, until a
+stable supported request shape is validated.
 
 ## 2026-08-17 Review-source validation follow-up
 

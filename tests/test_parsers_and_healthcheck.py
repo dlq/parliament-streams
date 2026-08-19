@@ -12,6 +12,7 @@ from parliament_streams import healthcheck
 from parliament_streams.scrapers import __main__ as scraper_cli
 from parliament_streams.scrapers import (
     brazil_tv_camara,
+    canada_harmony,
     cpac,
     ebs,
     european_parliament,
@@ -171,6 +172,76 @@ class ParserTests(unittest.TestCase):
                 self.assertRaisesRegex(ValueError, "bot-protection page"),
             ):
                 new_zealand_parliament.parse(blocked_html)
+
+    def test_canada_harmony_parser_extracts_upcoming_cards(self):
+        html = """
+        <div class="divEvent" >
+          <a href="/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441"
+             title="DVSC meeting no. 1">
+            <table class="eventTable eventTableNotStarted">
+              <tr><td colspan="2" class="tdEventTitle">
+                <span>DVSC meeting no. 1 (Room B45)</span>
+                <div class="eventStatus eventTableNotStarted">Not Started</div>
+              </td></tr>
+              <tr><td class="tdEventText"><div class="eventText">
+                <div class="eventDesc">Subcommittee on Diversity</div>
+                <div class="eventTime">10:00 AM-11:30 AM</div>
+                <div class="eventDate">Thu, Aug 27, 2026</div>
+              </div></td></tr>
+            </table>
+          </a>
+        </div>
+        <div class="divEvent" >
+          <a href="/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15434"
+             title="Senate sitting no. 87">
+            <table class="eventTable eventTableNotStarted">
+              <tr><td colspan="2" class="tdEventTitle">
+                <span>Senate sitting no. 87 (Senate Chamber)</span>
+              </td></tr>
+              <tr><td class="tdEventText"><div class="eventText">
+                <div class="eventDesc">Senate sitting no. 87</div>
+                <div class="eventTime">6:00 PM-10:00 PM</div>
+                <div class="eventDate">Mon, Sep 28, 2026</div>
+              </div></td></tr>
+            </table>
+          </a>
+        </div>
+        """
+        parsed = canada_harmony.parse(
+            html,
+            now=datetime(2026, 8, 19, 12, tzinfo=UTC),
+            channel_id="canada-senate-senvu",
+        )["canada-senate-senvu"]
+        self.assertEqual(
+            parsed["current_event_title"], "DVSC meeting no. 1 - Subcommittee on Diversity"
+        )
+        self.assertEqual(parsed["current_event_time"], "10:00 AM ET")
+        self.assertEqual(parsed["next_event_title"], "Senate sitting no. 87")
+
+    def test_canada_harmony_collects_house_and_senate_pages(self):
+        responses = {
+            canada_harmony.HOUSE_URL: "Sorry there are no upcoming events",
+            canada_harmony.SENATE_URL: (
+                '<div class="divEvent"><a href="/event" title="Senate sitting no. 87">'
+                '<table><tr><td colspan="2" class="tdEventTitle">'
+                "<span>Senate sitting no. 87 (Senate Chamber)</span></td></tr>"
+                '<tr><td><div class="eventDesc">Senate sitting no. 87</div>'
+                '<div class="eventTime">6:00 PM-10:00 PM</div>'
+                '<div class="eventDate">Mon, Sep 28, 2026</div></td></tr></table></a></div>'
+            ),
+        }
+
+        def fetcher(spec, _timeout, _retries):
+            return responses[spec["url"]]
+
+        parsed, urls = canada_harmony.collect(
+            fetcher,
+            now=datetime(2026, 8, 19, 12, tzinfo=UTC),
+            timeout=3,
+            retries=0,
+        )
+        self.assertEqual(urls, [canada_harmony.HOUSE_URL, canada_harmony.SENATE_URL])
+        self.assertEqual(list(parsed), ["canada-senate-senvu"])
 
     def test_european_parliament_parser_selects_current_and_next(self):
         payload = """{

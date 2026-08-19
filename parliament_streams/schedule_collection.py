@@ -55,6 +55,7 @@ Fetcher = Callable[[FetchRequest, int, int], str]
 Parser = Callable[..., ParsedSchedule]
 RequestFactory = Callable[[datetime], list[FetchRequest]]
 SourceCollector = Callable[[Fetcher, datetime, int, int], tuple[ParsedSchedule, list[str]]]
+SourceUrlResolver = Callable[[str, list[str]], str]
 
 
 def utc_timestamp(now: datetime | None = None) -> str:
@@ -138,10 +139,16 @@ def collect_schedules(
                 parser = cast(Parser, module.parse)
                 parsed = parser(*payloads, now=collected_at)
             for channel_id, schedule in parsed.items():
+                source_url_resolver = cast(
+                    SourceUrlResolver | None, getattr(module, "source_url_for_channel", None)
+                )
+                source_url = (
+                    source_url_resolver(channel_id, urls) if source_url_resolver else urls[0]
+                )
                 channels[channel_id] = {
                     **schedule,
                     "scraper": scraper_id,
-                    "source_url": urls[0],
+                    "source_url": source_url,
                     "fetched_at": timestamp,
                 }
             sources[scraper_id] = {

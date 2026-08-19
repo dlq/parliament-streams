@@ -74,8 +74,9 @@ Done:
   rights decisions. Daily always-on stream regressions use separate deduplicated
   issues that close on recorded recovery.
 - Canada federal ParlVU and Senate SenVu are now represented as official
-  event-platform link-out records with planned Harmony schedule/API follow-up;
-  no stable direct HLS endpoint is recorded.
+  event-platform link-out records. The public Harmony landing pages have an
+  implemented upcoming-event scraper; the undocumented API and direct stream
+  manifests remain research items.
 
 Retired from the active project:
 
@@ -111,8 +112,10 @@ Near-term:
 11. Canada federal ParlVU/SenVu has been added to the catalogue as official
     event-platform link-out entries. Keep it separate from CPAC because CPAC is a
     broadcaster/channel partner, while Harmony is the closer official House and
-    Senate proceedings surface. Next work is metadata scraping and active-event
-    playback validation, not direct HLS playback.
+    Senate proceedings surface. Landing-page upcoming-event scraping is
+    implemented; next work is active-event playback validation, archive/event
+    enrichment, and confirming whether the undocumented API has a stable
+    supported access pattern.
 
 The 2026-08-16 sub-national promotion pass completed the previous strong-candidate
 list. It added 18 official-player and schedule records across Canada, Australia,
@@ -191,8 +194,8 @@ Candidate future scrapers:
 6. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
    Israel, El Salvador, Mauritius, India, Thailand, Slovakia, Nunavut,
    and other second-ring sources when structured official endpoints are found.
-7. Canada federal ParlVU/SenVu live/upcoming/on-demand metadata for House,
-   Senate, and committee proceedings, including audio-language, closed-caption,
+7. Canada federal ParlVU/SenVu deeper metadata for House, Senate, and committee
+   proceedings, including active-event state, audio-language, closed-caption,
    archive, and `PowerBrowserV2` event links where available.
 8. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the

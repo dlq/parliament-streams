@@ -175,7 +175,7 @@ try {
   assert.match(await page.locator("#open-video-copy").innerText(), /flux directs et interopérables comme le HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /horaires ouverts/);
   assert.equal(await page.locator("#metric-playable-label").textContent(), "Lisibles ici");
-  assert.equal(await page.locator("#metric-schedules").textContent(), "27");
+  assert.equal(await page.locator("#metric-schedules").textContent(), String(expectedScheduleCount));
   assert.equal(await page.locator("#principle-accessibility").textContent(), "Accessibilité ouverte");
   assert.equal(
     await page.locator('[data-channel-id="british-columbia-legislature-webcasts"] > span').nth(1).innerText(),

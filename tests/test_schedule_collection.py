@@ -136,11 +136,16 @@ class ScheduleCollectionTests(unittest.TestCase):
             },
             ["https://example.test/index", "https://example.test/data.json"],
         )
+        discovered.source_url_for_channel = lambda _channel_id, urls: urls[-1]
         with patch.object(schedule_collection, "SCRAPERS", {"discovered": discovered}):
             snapshot = schedule_collection.collect_schedules(
                 now=datetime(2026, 8, 17, 12, tzinfo=UTC)
             )
         self.assertEqual(snapshot["counts"]["ok"], 1)
+        self.assertEqual(
+            snapshot["channels"]["channel"]["source_url"],
+            "https://example.test/data.json",
+        )
         self.assertEqual(
             snapshot["sources"]["discovered"]["urls"][-1],
             "https://example.test/data.json",
