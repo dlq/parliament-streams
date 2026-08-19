@@ -2,35 +2,24 @@
   "checked_on": "2026-08-19",
   "catalogue_total": 86,
   "summary": {
-    "pending_total": 32,
+    "pending_total": 30,
     "permission_status": {
       "embed_only": 4,
       "explicit_reuse_with_conditions": 40,
-      "no_third_party_reuse": 10,
+      "no_third_party_reuse": 12,
       "noncommercial_pending_review": 6,
-      "personal_use_pending_review": 26
+      "personal_use_pending_review": 24
     },
     "pending_by_source_kind": {
       "direct_dash_research": 1,
       "first_party_hls": 5,
       "official_page": 6,
-      "official_vendor_hls": 20
+      "official_vendor_hls": 18
     },
     "prototype_policy": "Technically public HLS remains sufficient for native client-side playback unless recorded rights evidence requires link-out; pending direct streams stay visibly permission-pending."
   },
   "groups": {
     "likely_needs_written_clarification": [
-      {
-        "id": "norway-stortinget",
-        "name": "Norway Stortinget",
-        "jurisdiction_level": "national",
-        "country_or_region": "Norway",
-        "source_kind": "official_vendor_hls",
-        "permission_status": "personal_use_pending_review",
-        "host": "httpcache1.dna.contentdelivery.net",
-        "official_url": "https://www.stortinget.no/nett-tv",
-        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
-      },
       {
         "id": "netherlands-tweede-kamer",
         "name": "Netherlands Tweede Kamer",
@@ -172,17 +161,6 @@
         "permission_status": "personal_use_pending_review",
         "host": "temp2.isilive.ca",
         "official_url": "https://www.assembly.nu.ca/webcasts",
-        "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
-      },
-      {
-        "id": "germany-bundestag-1",
-        "name": "Germany Bundestag 1",
-        "jurisdiction_level": "national",
-        "country_or_region": "Germany",
-        "source_kind": "official_vendor_hls",
-        "permission_status": "personal_use_pending_review",
-        "host": "cldf-hlsgw.r53.cdn.tv1.eu",
-        "official_url": "https://www.bundestag.de/mediathek",
         "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
       },
       {
@@ -379,17 +357,6 @@
     "unclassified": []
   },
   "direct_playback_if_stricter_policy_adopted": [
-    {
-      "id": "norway-stortinget",
-      "name": "Norway Stortinget",
-      "jurisdiction_level": "national",
-      "country_or_region": "Norway",
-      "source_kind": "official_vendor_hls",
-      "permission_status": "personal_use_pending_review",
-      "host": "httpcache1.dna.contentdelivery.net",
-      "official_url": "https://www.stortinget.no/nett-tv",
-      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
-    },
     {
       "id": "netherlands-tweede-kamer",
       "name": "Netherlands Tweede Kamer",
@@ -611,17 +578,6 @@
       "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
     },
     {
-      "id": "germany-bundestag-1",
-      "name": "Germany Bundestag 1",
-      "jurisdiction_level": "national",
-      "country_or_region": "Germany",
-      "source_kind": "official_vendor_hls",
-      "permission_status": "personal_use_pending_review",
-      "host": "cldf-hlsgw.r53.cdn.tv1.eu",
-      "official_url": "https://www.bundestag.de/mediathek",
-      "reason": "Public evidence is partial, contradictory, procedure-specific, or points to a requested/permissioned route; written clarification is the realistic next step."
-    },
-    {
       "id": "el-salvador-legislative-assembly",
       "name": "El Salvador Legislative Assembly",
       "jurisdiction_level": "national",
@@ -696,10 +652,20 @@
       "id": "saskatchewan-legislative-proceedings",
       "outcome": "kept_pending_review_rights_evidence_improved",
       "reason": "Official proceedings page and rules document broadcast access and captions, but not third-party playback or redistribution permission."
+    },
+    {
+      "id": "norway-stortinget",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "Stortinget retransmission terms require a formal arrangement and dedicated publication point; the browser-discovered HLS endpoint is now retained only as evidence and presented as link-out."
+    },
+    {
+      "id": "germany-bundestag-1",
+      "outcome": "moved_to_no_third_party_reuse",
+      "reason": "Bundestag terms offer a live signal to third parties on request; the browser-discovered HLS endpoint is not that documented route and is now retained only as evidence and presented as link-out."
     }
   ],
   "recommended_next_actions": [
-    "Send short written-clarification requests for likely_needs_written_clarification entries, starting with Ontario/Nunavut, Norway, Germany, Netherlands, India, Israel, and Council of Europe/PACE.",
+    "Send short written-clarification requests for likely_needs_written_clarification entries, starting with Ontario/Nunavut, Netherlands, India, Israel, and Council of Europe/PACE.",
     "Keep keep_pending_after_dated_search entries pending under the prototype policy; revisit during scheduled rights reviews or if source owners publish clearer terms.",
     "If a stricter post-POC policy is adopted, use direct_playback_if_stricter_policy_adopted as the demotion review list."
   ]

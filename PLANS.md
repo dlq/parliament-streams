@@ -129,12 +129,12 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 32 of 86 catalogue entries still use a permission status ending
+Current queue: 30 of 86 catalogue entries still use a permission status ending
 in `pending_review`.
 
 Priority order:
 
-1. Review the 20 pending `official_vendor_hls` entries first, because they are
+1. Review the 18 pending `official_vendor_hls` entries first, because they are
    native-playback records and therefore carry the highest product risk.
 2. Review the 5 pending `first_party_hls` entries next, because official-hosted
    direct feeds are the most valuable if terms can be clarified.
@@ -146,7 +146,7 @@ Priority order:
 
 Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-2026-08-19-rights-next.json)
 as the current execution queue. It classifies the remaining pending entries as
-19 likely written-clarification cases and 13
+17 likely written-clarification cases and 13
 keep-pending-after-dated-search cases. No public-terms follow-up entries remain.
 Draft request templates and public response-tracking rules live in
 [docs/permission-requests.md](docs/permission-requests.md). A short
@@ -174,11 +174,11 @@ Specific unresolved direct-playback groups:
 - Netherlands Tweede Kamer: decide whether recognised-media download/embed
   guidance is enough for the prototype, or whether the raw HLS entries should
   stay pending while official pages remain the safest route.
-- India Sansad TV, Thailand TPchannel, Israel Knesset Channel, Germany
-  Bundestag, Norway Stortinget, Spain Congreso, Portugal ARTV, Greece Hellenic
-  Parliament TV, Luxembourg Chamber TV, Slovakia TV NRSR, Chile Camara TV,
-  Jalisco Canal Parlamento, and El Salvador Legislative Assembly: keep each as
-  a source-specific review rather than inferring permission from public HLS.
+- India Sansad TV, Thailand TPchannel, Israel Knesset Channel, Spain Congreso,
+  Portugal ARTV, Greece Hellenic Parliament TV, Luxembourg Chamber TV,
+  Slovakia TV NRSR, Chile Camara TV, Jalisco Canal Parlamento, and El Salvador
+  Legislative Assembly: keep each as a source-specific review rather than
+  inferring permission from public HLS.
 
 Exit criteria:
 
@@ -549,10 +549,10 @@ Near-term:
 
 Current measurable review queues as of 2026-08-19:
 
-- 32 of 86 catalogue entries still use a permission status ending in
+- 30 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 20 official-vendor HLS, 6 official pages, 5 first-party HLS, and
+  Breakdown: 18 official-vendor HLS, 6 official pages, 5 first-party HLS, and
   1 DASH research record.
 - All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep

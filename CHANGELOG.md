@@ -56,6 +56,9 @@ application. Earlier application work remains available in Git history.
 - Public catalogue playback-mode filtering and source-detail display, so
   provider embeds, native playback, link-outs, and research-only records are
   visible independently from use guidance.
+- Norway Stortinget and Germany Bundestag moved from native playback to
+  link-out/no-third-party-reuse because their documented terms point to formal
+  requested retransmission/live-signal routes, not browser-discovered HLS.
 - Make targets and `--check` support for validation-history refreshes, so
   retained report-link drift is caught by `make verify`.
 - Source-row posture labels for playable, link-out, fallback, and research

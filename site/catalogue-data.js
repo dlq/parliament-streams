@@ -403,13 +403,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Stortinget documents a formal retransmission arrangement for Nett-TV that supplies a dedicated publication point and requires an agreement, attribution, non-commercial use, and reporting. That does not authorize use of the catalogued browser-discovered HLS manifest.",
+        "status": "no_third_party_reuse",
+        "summary": "Stortinget documents a formal retransmission arrangement for Nett-TV that supplies a dedicated publication point and requires an agreement, attribution, non-commercial use, and reporting. That documented route does not authorize use of the catalogued browser-discovered HLS manifest.",
         "evidence": [
           "https://www.stortinget.no/nett-tv",
+          "https://www.stortinget.no/no/Stottemeny/Hjelp/Nett-TV/Videreformidling-av-Stortingets-nett-TV/",
           "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8"
         ],
-        "recommendation": "Link to Stortinget Nett-TV. Request Stortinget's dedicated publishing point and retransmission agreement before enabling third-party playback."
+        "recommendation": "Link to Stortinget Nett-TV. Do not enable third-party playback of the browser-discovered HLS endpoint unless Stortinget supplies the dedicated publishing point and retransmission agreement."
       },
       "validation_history": [
         {
@@ -427,7 +428,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "note": "HLS manifest detected."
         }
       ],
-      "playback_policy": "native_playback"
+      "playback_policy": "link_out"
     },
     {
       "id": "brazil-tv-camara",
@@ -4669,13 +4670,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
+        "status": "no_third_party_reuse",
         "summary": "Bundestag terms permit archive downloads and embeds subject to conditions, and offer a live signal to third parties on request. The catalogued browser-discovered HLS endpoint is not documented as that requested live-signal route.",
         "evidence": [
           "https://www.bundestag.de/mediathek",
+          "https://www.bundestag.de/resource/blob/296016/nutzungsbedingungen_de.pdf",
           "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8"
         ],
-        "recommendation": "Use an official Bundestag embed or link out. Request the documented live signal before enabling this raw HLS endpoint."
+        "recommendation": "Use an official Bundestag embed or link out. Do not enable third-party playback of this raw HLS endpoint unless the Bundestag supplies or approves the documented live-signal route."
       },
       "validation_history": [
         {
@@ -4693,7 +4695,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "note": "HLS manifest detected."
         }
       ],
-      "playback_policy": "native_playback"
+      "playback_policy": "link_out"
     },
     {
       "id": "costa-rica-assembly-youtube",

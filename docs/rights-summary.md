@@ -53,8 +53,8 @@ These entries need either written clarification or a future dated terms review.
 
 As of 2026-08-19:
 
-- 32 of 86 catalogue entries remain permission-pending.
-- 19 entries likely need written clarification from the source owner or
+- 30 of 86 catalogue entries remain permission-pending.
+- 17 entries likely need written clarification from the source owner or
   institution.
 - 13 entries should stay pending after dated public-terms searches unless
   clearer terms are published.
