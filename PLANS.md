@@ -143,6 +143,8 @@ Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-20
 as the current execution queue. It classifies the remaining pending entries as
 19 likely written-clarification cases and 13
 keep-pending-after-dated-search cases. No public-terms follow-up entries remain.
+Draft request templates and public response-tracking rules live in
+[docs/permission-requests.md](docs/permission-requests.md).
 
 Specific unresolved direct-playback groups:
 
@@ -163,6 +165,9 @@ Specific unresolved direct-playback groups:
 Exit criteria:
 
 - `docs/source-rights-and-permissions.md` explains every reviewed family.
+- `docs/permission-requests.md` records any written-clarification outreach and
+  public response summaries for source owners whose public terms remain
+  ambiguous.
 - `data/channels.json` statuses change only when official evidence supports the
   change.
 - `reports/review-queues-2026-08-19.json` or its successor records the updated
@@ -488,7 +493,9 @@ Near-term:
 3. Add a short public-facing `docs/rights-summary.md` if the detailed matrix
    becomes too long for readers who only need the current posture.
 4. Record written permission requests and responses as summarized evidence, not
-   raw private correspondence.
+   raw private correspondence. Use `docs/permission-requests.md` as the working
+   tracker for request templates, contact routes, dates sent, and public
+   response summaries.
 5. Keep CPAC marked `no_third_party_reuse` unless written consent is obtained.
 6. Keep YouTube sources compliant-embed only; do not extract YouTube manifests.
    The current permanent uploads playlists are useful fallbacks but are not

@@ -1783,3 +1783,16 @@ Rights outcomes from this pass:
 Updated review-queue outcome: pending rights fell from 35 to 32. The unresolved
 breakdown is now 20 official-vendor HLS, 6 official pages, 5 first-party HLS,
 and 1 DASH research record.
+
+## 2026-08-19 permission request prep
+
+Created `docs/permission-requests.md` as the working tracker for written
+clarification. No requests have been sent.
+
+The first request set covers the 19 likely written-clarification cases from
+`reports/review-queues-2026-08-19-rights-next.json`, grouped into Canadian
+iSi LIVE legislatures, national direct-HLS/official-vendor stream owners, and
+supranational or official-page cases. The tracker records public contact routes,
+draft templates, question focus, and response-handling rules. It should store
+only public contact details, dates, cited response summaries, and resulting
+catalogue decisions, not raw private correspondence.
