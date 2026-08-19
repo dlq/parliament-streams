@@ -12,6 +12,19 @@ public catalogue.
 
 Last prepared: 2026-08-19.
 
+Communication status: deferred. Do not send piecemeal permission requests yet.
+Reserve outreach for a more substantive communications push after the catalogue,
+rights posture, app direction, and source-owner asks are complete enough to
+present coherently.
+
+The eventual communications push should do two jobs:
+
+- resolve concrete uncertainties about permission, preferred technical routes,
+  attribution, schedules, embeds, event identifiers, and native playback; and
+- advocate for more genuinely open parliamentary video services by explaining
+  what is public but not open, technically reachable but not documented,
+  embeddable but not reusable, or reusable but not standardized.
+
 Current rights queue:
 
 - 32 of 86 catalogue entries still use a permission status ending in
@@ -221,6 +234,11 @@ Status:
 | Manitoba Legislative Assembly | `Web@mbassembly.ca` / `clerkla@mbassembly.ca` | draft | 2026-08-19 | Ask whether OpenMB covers House/committee broadcast video. |
 
 ## Ready-To-Send Batches
+
+These drafts are preparation, not an active send queue. Keep them on hand for a
+future coordinated outreach pass that can explain the project, its public
+benefits, its safeguards, its technical asks, and its open-stream advocacy in
+one package.
 
 Send these in small batches so replies can be processed without mixing
 conditions across institutions.

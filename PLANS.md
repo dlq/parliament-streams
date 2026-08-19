@@ -151,6 +151,17 @@ Draft request templates and public response-tracking rules live in
 reader-facing explanation of the current posture lives in
 [docs/rights-summary.md](docs/rights-summary.md).
 
+Outreach is intentionally deferred for now. Keep permission-request drafts as
+preparation, but do not send piecemeal messages until the project has a more
+substantive communications package covering the app, open-stream goals,
+catalogue safeguards, attribution, rights handling, and specific source-owner
+asks. That package should both ask questions that resolve catalogue
+uncertainty and make an advocacy case for genuinely open parliamentary video:
+documented streams, stable event identifiers, machine-readable schedules,
+clear embed/reuse terms, accessibility metadata, and explicit distinctions
+between "public", "technically reachable", "embeddable", "reusable", and
+"open".
+
 Specific unresolved direct-playback groups:
 
 - Ontario and Nunavut iSi LIVE feeds: determine whether written clarification is
@@ -512,18 +523,21 @@ Near-term:
    remaining official-page/link-out sources without clear reuse terms.
 3. Add a short public-facing `docs/rights-summary.md` if the detailed matrix
    becomes too long for readers who only need the current posture.
-4. Record written permission requests and responses as summarized evidence, not
-   raw private correspondence. Use `docs/permission-requests.md` as the working
-   tracker for request templates, contact routes, dates sent, and public
-   response summaries.
-5. Keep CPAC marked `no_third_party_reuse` unless written consent is obtained.
-6. Keep YouTube sources compliant-embed only; do not extract YouTube manifests.
+4. Keep written permission-request drafts in `docs/permission-requests.md`, but
+   defer sending them until a coordinated communications push is ready. When
+   replies eventually arrive, record only summarized public evidence, not raw
+   private correspondence.
+5. Shape the future communications push as both clarification and advocacy:
+   ask for missing permission/technical facts, and explain what would make each
+   service more open, standardized, accessible, and reusable.
+6. Keep CPAC marked `no_third_party_reuse` unless written consent is obtained.
+7. Keep YouTube sources compliant-embed only; do not extract YouTube manifests.
    The current permanent uploads playlists are useful fallbacks but are not
    guaranteed live-only feeds. The metadata-only `youtube-live` resolver can
    record current official video IDs when static live-page metadata is explicit;
    future work is to decide whether YouTube Data API support is worth the
    operational/API-key cost for better scheduled-event metadata.
-7. Replace the current `unknown` accessibility states with cited evidence for
+8. Replace the current `unknown` accessibility states with cited evidence for
    captions and caption languages, sign-language interpretation, and audio
    description. Do not equate missing evidence with confirmed unavailability.
 
