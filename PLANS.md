@@ -77,6 +77,9 @@ Done:
   event-platform link-out records. The public Harmony landing pages have an
   implemented upcoming-event scraper; the undocumented API and direct stream
   manifests remain research items.
+- Schema v7 separates coarse `source_type` from precise `source_kind`, and adds
+  `stability_risk` so technical playback, provenance, drift risk, and rights
+  posture are no longer collapsed into one field.
 
 Retired from the active project:
 
@@ -95,9 +98,10 @@ Near-term:
    only if the inline channel entries become hard to review.
 3. Complete schema coverage for validation history and generated reports beyond
    the existing channel, permission, and EPG definitions.
-4. Distinguish first-party, official-vendor, platform, and third-party relay
-   endpoints explicitly.
-5. Add a source freshness field for URLs that are likely to drift.
+4. Revisit first-party versus official-vendor classifications during future
+   source reviews and tighten any conservative defaults.
+5. Use `stability_risk` in automated audit prioritization and in any future
+   reviewer queues.
 6. Make the schema distinguish source discovery from permission status, because
    a stream can be technically reachable but unsuitable for redistribution.
 7. Decide whether event-specific findings such as HouseLive/C-SPAN should live

@@ -27,7 +27,7 @@ const en = {
   openStreams: "Open stream principles",
   openVideoCopy: "Open parliamentary video requires direct, interoperable streams such as HLS, with clear terms that permit embedding, rebroadcasting, preservation, and independent monitoring.",
   openStreamsCopy: "Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.",
-  sourceType: "Source type", accessStatus: "Access status", useGuidance: "Use guidance", availability: "Availability",
+  sourceType: "Source type", sourceKind: "Source kind", accessStatus: "Access status", stabilityRisk: "Stability risk", useGuidance: "Use guidance", availability: "Availability",
   attribution: "Required attribution", programme: "Current programme record", identity: "External identity", schedule: "Schedule / EPG sources",
   mediaAccessibility: "Media accessibility", captions: "Captions", signLanguage: "Sign language", audioDescription: "Audio description",
   a11yAvailable: "Available", a11ySourceDependent: "Varies by source or event", a11yUnavailable: "Unavailable", a11yUnknown: "Not yet verified",
@@ -44,7 +44,11 @@ const en = {
   results: "{shown} of {total} sources", documented: "{count} documented sources · catalogue generated {date}",
   labels: {
     direct_hls: "HLS", direct_dash: "DASH", official_page: "Official page", youtube: "YouTube",
+    first_party_hls: "First-party HLS", official_vendor_hls: "Official vendor HLS",
+    third_party_relay_hls: "Third-party relay HLS", direct_dash_research: "DASH research",
+    official_youtube_embed: "Official YouTube embed",
     validated: "Verified", needs_review: "Review", link_only: "Page only",
+    low: "Low", medium: "Medium", high: "High", unknown: "Unknown",
     national: "National", subnational: "Subnational", supranational: "Supranational",
     personal_use_pending_review: "Unclear", noncommercial_pending_review: "Limited",
     explicit_reuse_with_conditions: "With conditions", embed_only: "Official embed", no_third_party_reuse: "No reuse",
@@ -540,7 +544,23 @@ for (const [locale] of locales) {
   messages.catalogue ??= messages.nav;
   messages.brandHome ??= `Parliament Streams · ${messages.about}`;
   messages.primaryNavigation ??= messages.nav;
-  for (const labelKey of ["direct_hls", "direct_dash", "youtube"]) {
+  for (const messageKey of ["sourceKind", "stabilityRisk"]) {
+    messages[messageKey] ??= en[messageKey];
+  }
+  for (const labelKey of [
+    "direct_hls",
+    "direct_dash",
+    "youtube",
+    "first_party_hls",
+    "official_vendor_hls",
+    "third_party_relay_hls",
+    "direct_dash_research",
+    "official_youtube_embed",
+    "low",
+    "medium",
+    "high",
+    "unknown",
+  ]) {
     messages.labels[labelKey] ??= en.labels[labelKey];
   }
 }

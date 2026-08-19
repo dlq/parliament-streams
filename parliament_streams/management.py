@@ -26,7 +26,9 @@ from .models import (
     JurisdictionLevel,
     SeedGroup,
     SeedResult,
+    SourceKind,
     SourceType,
+    StabilityRisk,
     ValidationSeed,
 )
 from .site_data import DEFAULT_SITE_DATA_PATH, render_site_data_payload
@@ -185,10 +187,12 @@ def scaffold_candidate(
         "identity_sources": identity_sources,
         "language": language,
         "source_type": source_type,
+        "source_kind": source_kind_for_candidate(source_type),
         "playback_url": playback_url,
         "official_url": official_url,
         "provenance_note": "Source provenance review pending.",
         "technical_status": "link_only" if source_type == "official_page" else "needs_review",
+        "stability_risk": stability_risk_for_candidate(source_type),
         "availability": "event_based",
         "accessibility": {
             "captions": "unknown",
@@ -396,15 +400,35 @@ CSV_FIELDS = [
     "legislature",
     "language",
     "source_type",
+    "source_kind",
     "playback_url",
     "official_url",
     "technical_status",
+    "stability_risk",
     "availability",
     "permission_status",
     "wikidata_qid",
     "ipu_parliament_code",
     "epg_urls",
 ]
+
+
+def source_kind_for_candidate(source_type: SourceType) -> SourceKind:
+    if source_type == "direct_hls":
+        return "official_vendor_hls"
+    if source_type == "direct_dash":
+        return "direct_dash_research"
+    if source_type == "youtube":
+        return "official_youtube_embed"
+    return "official_page"
+
+
+def stability_risk_for_candidate(source_type: SourceType) -> StabilityRisk:
+    if source_type == "official_page":
+        return "unknown"
+    if source_type == "youtube":
+        return "medium"
+    return "high"
 
 
 def export_csv(catalogue: Catalogue, output: TextIO) -> None:

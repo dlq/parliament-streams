@@ -48,6 +48,8 @@ pipeline, or request-time scraper.
 
 ## Source Types
 
+`source_type` is a coarse UI and compatibility category:
+
 - `direct_hls`: a recorded HLS URL discovered from an official or official-vendor
   surface.
 - `direct_dash`: a recorded DASH URL kept for provenance or review.
@@ -55,6 +57,25 @@ pipeline, or request-time scraper.
   privacy-enhanced embed path.
 - `official_page`: a link-out source where native playback is not appropriate,
   not validated, or not permitted.
+
+`source_kind` is the more precise provenance and delivery classification:
+
+- `first_party_hls`: HLS served from the legislature, parliament, or closely
+  controlled institutional domain.
+- `official_vendor_hls`: HLS served by a CDN, streaming contractor, or platform
+  clearly used by the official source.
+- `third_party_relay_hls`: HLS served by a relay that is not clearly operated or
+  authorized by the source. These should normally stay out of playback.
+- `direct_dash_research`: DASH endpoint retained as research evidence, not as
+  Apple-native playback.
+- `official_youtube_embed`: official YouTube presence rendered through the
+  provider's embed path without extracting manifests.
+- `official_page`: official link-out/player page with no native playback claim.
+
+`stability_risk` is operational rather than legal. It records whether a URL or
+player route appears low, medium, high, or unknown risk for drift, event-only
+failure, or needing manual review. It does not grant permission to replay a
+source.
 
 `technical_status: link_only` must pair with `source_type: official_page`.
 Browser-discovered playback URLs should not be promoted to direct playback until

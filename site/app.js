@@ -700,7 +700,9 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     </div>
     <dl class="detail-grid">
       <div title="${t("sourceType")}: ${label(channel.source_type)}"><dt>${t("sourceType")}</dt><dd>${label(channel.source_type)}</dd></div>
+      <div title="${t("sourceKind")}: ${label(channel.source_kind)}"><dt>${t("sourceKind")}</dt><dd>${label(channel.source_kind)}</dd></div>
       <div title="${t("accessStatus")}: ${label(channel.technical_status)}"><dt>${t("accessStatus")}</dt><dd><span class="status status-${slug(channel.technical_status)}">${label(channel.technical_status)}</span></dd></div>
+      <div title="${t("stabilityRisk")}: ${label(channel.stability_risk)}"><dt>${t("stabilityRisk")}</dt><dd><span class="status status-${slug(channel.stability_risk)}">${label(channel.stability_risk)}</span></dd></div>
       <div title="${t("useGuidance")}: ${label(channel.permission.status)}"><dt>${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}">${label(channel.permission.status)}</span></dd></div>
       <div title="${t("availability")}: ${label(channel.availability)}"><dt>${t("availability")}</dt><dd>${label(channel.availability)}</dd></div>
       ${programme ? `<div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div>` : ""}

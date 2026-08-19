@@ -10,7 +10,16 @@ CATALOGUE_PATH = ROOT / "data" / "channels.json"
 SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
 
 SOURCE_TYPES = {"direct_hls", "direct_dash", "official_page", "youtube"}
+SOURCE_KINDS = {
+    "first_party_hls",
+    "official_vendor_hls",
+    "third_party_relay_hls",
+    "direct_dash_research",
+    "official_youtube_embed",
+    "official_page",
+}
 TECHNICAL_STATUSES = {"validated", "needs_review", "link_only"}
+STABILITY_RISKS = {"low", "medium", "high", "unknown"}
 PROGRAM_CONFIDENCE = {"low", "medium", "high"}
 SCRAPER_STATUSES = {"implemented", "planned"}
 ACCESSIBILITY_STATUSES = {"available", "source_dependent", "unavailable", "unknown"}
@@ -31,7 +40,7 @@ class CatalogueContractTests(unittest.TestCase):
         cls.channels = cls.catalogue["channels"]
 
     def test_catalogue_has_expected_top_level_shape(self):
-        self.assertEqual(self.catalogue["schema_version"], 6)
+        self.assertEqual(self.catalogue["schema_version"], 7)
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
@@ -44,8 +53,15 @@ class CatalogueContractTests(unittest.TestCase):
             set(schema["$defs"]["channel"]["properties"]["source_type"]["enum"]), SOURCE_TYPES
         )
         self.assertEqual(
+            set(schema["$defs"]["channel"]["properties"]["source_kind"]["enum"]), SOURCE_KINDS
+        )
+        self.assertEqual(
             set(schema["$defs"]["channel"]["properties"]["technical_status"]["enum"]),
             TECHNICAL_STATUSES,
+        )
+        self.assertEqual(
+            set(schema["$defs"]["channel"]["properties"]["stability_risk"]["enum"]),
+            STABILITY_RISKS,
         )
         self.assertEqual(
             set(schema["$defs"]["permission"]["properties"]["status"]["enum"]),
@@ -64,10 +80,12 @@ class CatalogueContractTests(unittest.TestCase):
             "identity_sources",
             "language",
             "source_type",
+            "source_kind",
             "playback_url",
             "official_url",
             "provenance_note",
             "technical_status",
+            "stability_risk",
             "availability",
             "accessibility",
             "epg_sources",
@@ -102,7 +120,9 @@ class CatalogueContractTests(unittest.TestCase):
                 self.assertNotIn(channel["id"], seen_ids)
                 seen_ids.add(channel["id"])
                 self.assertIn(channel["source_type"], SOURCE_TYPES)
+                self.assertIn(channel["source_kind"], SOURCE_KINDS)
                 self.assertIn(channel["technical_status"], TECHNICAL_STATUSES)
+                self.assertIn(channel["stability_risk"], STABILITY_RISKS)
                 self.assertEqual(set(channel["external_ids"]), required_external_id_keys)
                 self.assertRegex(channel["external_ids"]["wikidata_qid"], r"^Q[1-9][0-9]*$")
                 self.assertTrue(channel["identity_sources"])
@@ -303,10 +323,21 @@ class CatalogueContractTests(unittest.TestCase):
             with self.subTest(channel=channel["id"]):
                 if channel["source_type"] == "official_page":
                     self.assertEqual(channel["technical_status"], "link_only")
+                    self.assertEqual(channel["source_kind"], "official_page")
                 if channel["technical_status"] == "link_only":
                     self.assertEqual(channel["source_type"], "official_page")
                 if channel["source_type"] == "youtube":
                     self.assertEqual(channel["technical_status"], "validated")
+                    self.assertEqual(channel["source_kind"], "official_youtube_embed")
+                if channel["source_type"] == "direct_dash":
+                    self.assertEqual(channel["source_kind"], "direct_dash_research")
+                if channel["source_type"] == "direct_hls":
+                    self.assertIn(
+                        channel["source_kind"],
+                        {"first_party_hls", "official_vendor_hls", "third_party_relay_hls"},
+                    )
+                if channel["technical_status"] == "needs_review":
+                    self.assertNotEqual(channel["stability_risk"], "low")
 
     def test_quebec_family_uses_the_official_accented_institution_name(self):
         quebec_channels = [

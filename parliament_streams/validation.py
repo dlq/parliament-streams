@@ -77,7 +77,10 @@ def _channel_issues(
     issues: list[ValidationIssue] = []
     channel_id = channel.get("id", "<missing>")
     source_type = channel.get("source_type")
+    source_kind = channel.get("source_kind")
     playback_url = channel.get("playback_url")
+    technical_status = channel.get("technical_status")
+    stability_risk = channel.get("stability_risk")
 
     if source_type in {"direct_hls", "direct_dash"} and not playback_url:
         issues.append(
@@ -91,6 +94,50 @@ def _channel_issues(
                 f"{path}.playback_url",
                 "platform-playback",
                 "Page and YouTube sources must not store a playback URL",
+            )
+        )
+    if source_type == "direct_hls" and source_kind not in {
+        "first_party_hls",
+        "official_vendor_hls",
+        "third_party_relay_hls",
+    }:
+        issues.append(
+            ValidationIssue(
+                f"{path}.source_kind",
+                "source-kind",
+                "Direct HLS sources need an HLS source kind",
+            )
+        )
+    if source_type == "direct_dash" and source_kind != "direct_dash_research":
+        issues.append(
+            ValidationIssue(
+                f"{path}.source_kind",
+                "source-kind",
+                "Direct DASH sources must use direct_dash_research",
+            )
+        )
+    if source_type == "youtube" and source_kind != "official_youtube_embed":
+        issues.append(
+            ValidationIssue(
+                f"{path}.source_kind",
+                "source-kind",
+                "YouTube sources must use official_youtube_embed",
+            )
+        )
+    if source_type == "official_page" and source_kind != "official_page":
+        issues.append(
+            ValidationIssue(
+                f"{path}.source_kind",
+                "source-kind",
+                "Official-page sources must use official_page",
+            )
+        )
+    if technical_status == "needs_review" and stability_risk == "low":
+        issues.append(
+            ValidationIssue(
+                f"{path}.stability_risk",
+                "stability-risk",
+                "Sources needing review cannot be low stability risk",
             )
         )
     if source_type == "youtube" and "embed" not in channel:

@@ -7,7 +7,16 @@ from typing import Literal, NotRequired, TypedDict
 Confidence = Literal["low", "medium", "high"]
 JurisdictionLevel = Literal["national", "subnational", "supranational"]
 SourceType = Literal["direct_hls", "direct_dash", "official_page", "youtube"]
+SourceKind = Literal[
+    "first_party_hls",
+    "official_vendor_hls",
+    "third_party_relay_hls",
+    "direct_dash_research",
+    "official_youtube_embed",
+    "official_page",
+]
 TechnicalStatus = Literal["validated", "needs_review", "link_only"]
+StabilityRisk = Literal["low", "medium", "high", "unknown"]
 CandidateStatus = Literal["researching", "ready", "rejected", "promoted"]
 Availability = Literal["always_on", "sitting_only", "event_based"]
 AccessibilityStatus = Literal["available", "source_dependent", "unavailable", "unknown"]
@@ -77,11 +86,13 @@ class ChannelRecord(TypedDict):
     identity_sources: list[IdentitySource]
     language: str
     source_type: SourceType
+    source_kind: SourceKind
     playback_url: str | None
     embed: NotRequired[Embed]
     official_url: str
     provenance_note: str
     technical_status: TechnicalStatus
+    stability_risk: StabilityRisk
     availability: Availability
     accessibility: Accessibility
     epg_sources: list[EpgSource]

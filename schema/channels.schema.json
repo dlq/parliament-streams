@@ -29,10 +29,12 @@
         "identity_sources",
         "language",
         "source_type",
+        "source_kind",
         "playback_url",
         "official_url",
         "provenance_note",
         "technical_status",
+        "stability_risk",
         "availability",
         "accessibility",
         "epg_sources",
@@ -56,6 +58,17 @@
           "type": "string",
           "enum": ["direct_hls", "direct_dash", "official_page", "youtube"]
         },
+        "source_kind": {
+          "type": "string",
+          "enum": [
+            "first_party_hls",
+            "official_vendor_hls",
+            "third_party_relay_hls",
+            "direct_dash_research",
+            "official_youtube_embed",
+            "official_page"
+          ]
+        },
         "playback_url": {
           "anyOf": [
             { "type": "string", "format": "uri" },
@@ -68,6 +81,10 @@
         "technical_status": {
           "type": "string",
           "enum": ["validated", "needs_review", "link_only"]
+        },
+        "stability_risk": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "unknown"]
         },
         "availability": {
           "type": "string",

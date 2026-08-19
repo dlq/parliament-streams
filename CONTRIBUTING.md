@@ -25,7 +25,11 @@ For channel/source changes, include:
 
 - official legislature or broadcaster page URL;
 - stream URL, official embed URL, official YouTube URL, or official player URL;
-- source type: `direct_hls`, `direct_dash`, `youtube`, or `official_page`;
+- coarse source type: `direct_hls`, `direct_dash`, `youtube`, or
+  `official_page`;
+- precise `source_kind`, such as `first_party_hls`, `official_vendor_hls`,
+  `official_youtube_embed`, or `official_page`;
+- `stability_risk`: `low`, `medium`, `high`, or `unknown`;
 - validation date and region;
 - status code, content type, and observed player behavior if tested;
 - whether the URL came from a static HTTP response, official API, browser

@@ -1344,6 +1344,10 @@ Current local catalogue baseline during this pass:
   DASH research entry.
 - 45 validated technical entries, 32 link-only entries, and 9 `needs_review`
   entries.
+- Schema v7 precise source kinds: 5 first-party HLS, 45 official-vendor HLS, 1
+  DASH research entry, 3 official YouTube embeds, and 32 official-page/link-out
+  entries.
+- Stability risk distribution: 5 low, 39 medium, 11 high, and 31 unknown.
 - Implemented schedule parsers: CPAC, Quebec webdiffusion, Ontario calendar,
   New Zealand Parliament, Brazil TV Camara, European Parliament, Europe by
   Satellite, Italian Senate, Portugal open-data agenda, and Canada

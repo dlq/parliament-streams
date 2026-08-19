@@ -109,6 +109,16 @@ class ValidationTests(unittest.TestCase):
         direct["playback_url"] = None
         self.assertIn("direct-playback", {issue.code for issue in validate_channel(direct)})
 
+        wrong_kind = cloned_channel()
+        wrong_kind["source_type"] = "youtube"
+        wrong_kind["source_kind"] = "official_page"
+        self.assertIn("source-kind", {issue.code for issue in validate_channel(wrong_kind)})
+
+        wrong_stability = cloned_channel()
+        wrong_stability["technical_status"] = "needs_review"
+        wrong_stability["stability_risk"] = "low"
+        self.assertIn("stability-risk", {issue.code for issue in validate_channel(wrong_stability)})
+
         page = cloned_channel()
         page["playback_url"] = "https://example.test/live.m3u8"
         self.assertIn("platform-playback", {issue.code for issue in validate_channel(page)})
@@ -217,6 +227,8 @@ class ValidationTests(unittest.TestCase):
             today=date(2026, 8, 16),
         )
         self.assertEqual(validate_candidate(candidate), [])
+        self.assertEqual(candidate["channel"]["source_kind"], "official_page")
+        self.assertEqual(candidate["channel"]["stability_risk"], "unknown")
         candidate["status"] = "ready"
         self.assertIn("wikidata-required", {issue.code for issue in validate_candidate(candidate)})
 
@@ -299,7 +311,7 @@ class ManagementTests(unittest.TestCase):
     def test_json_loaders_site_data_and_hash(self):
         catalogue = load_catalogue(self.catalogue_path)
         self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
-        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 6)
+        self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 7)
         self.assertIn("PARLIAMENT_STREAMS_CATALOGUE", render_site_data(self.catalogue_path))
         self.assertEqual(render_site_data_payload(catalogue), render_site_data(self.catalogue_path))
         write_site_data(self.catalogue_path, self.site_path)
@@ -399,6 +411,8 @@ class ManagementTests(unittest.TestCase):
             wikidata_qid="Q987654322",
         )
         self.assertEqual(direct["channel"]["technical_status"], "needs_review")
+        self.assertEqual(direct["channel"]["source_kind"], "official_vendor_hls")
+        self.assertEqual(direct["channel"]["stability_risk"], "high")
         with self.assertRaisesRegex(ValueError, "require --playback-url"):
             scaffold_candidate(
                 channel_id="direct",
@@ -444,6 +458,8 @@ class ManagementTests(unittest.TestCase):
             youtube_playlist_id="UUexample123",
         )
         self.assertEqual(youtube["channel"]["embed"]["content_id"], "UUexample123")
+        self.assertEqual(youtube["channel"]["source_kind"], "official_youtube_embed")
+        self.assertEqual(youtube["channel"]["stability_risk"], "medium")
         with self.assertRaisesRegex(ValueError, "only valid"):
             scaffold_candidate(
                 channel_id="page-with-playlist",
@@ -512,6 +528,8 @@ class ManagementTests(unittest.TestCase):
         output = io.StringIO()
         export_csv(catalogue, output)
         self.assertIn("permission_status", output.getvalue().splitlines()[0])
+        self.assertIn("source_kind", output.getvalue().splitlines()[0])
+        self.assertIn("stability_risk", output.getvalue().splitlines()[0])
         self.assertIn("cpac-ca", output.getvalue())
 
 
@@ -790,7 +808,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(load_json_object(output_path), report)
         audit.assert_called_once()
         self.assertEqual(audit.call_args.kwargs, {"timeout": 3, "retries": 2, "workers": 4})
-        self.assertEqual(audit.call_args.args[0]["schema_version"], 6)
+        self.assertEqual(audit.call_args.args[0]["schema_version"], 7)
 
     def test_links_audit_command_writes_report_and_can_fail(self):
         report = {

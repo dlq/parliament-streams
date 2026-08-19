@@ -14,6 +14,9 @@ application. Earlier application work remains available in Git history.
 - A Canada Harmony schedule scraper that extracts upcoming-event metadata from
   the public ParlVU and SenVu landing pages while leaving the unstable
   undocumented API as planned research.
+- Schema v7 source classification fields: precise `source_kind` values for
+  first-party HLS, official-vendor HLS, DASH research, YouTube embeds, and
+  official pages, plus `stability_risk` for drift/review risk.
 - A public architecture guide explaining source-of-truth files, generated
   artifacts, runtime shape, source types, maintenance flow, schedule scrapers,
   and validation entry points.

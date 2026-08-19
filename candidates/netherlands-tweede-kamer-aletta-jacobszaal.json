@@ -38,10 +38,12 @@
     ],
     "language": "Dutch",
     "source_type": "direct_hls",
+    "source_kind": "first_party_hls",
     "playback_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
     "official_url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
     "provenance_note": "Official Tweede Kamer Aletta Jacobszaal live room stream.",
     "technical_status": "validated",
+    "stability_risk": "medium",
     "availability": "event_based",
     "accessibility": {
       "captions": "available",
