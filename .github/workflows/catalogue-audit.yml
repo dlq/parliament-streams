@@ -38,7 +38,7 @@ jobs:
         run: uv sync --locked --extra dev
 
       - name: Restore preceding stable-health report
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: .audit-baseline
           key: catalogue-audit-${{ github.run_id }}
@@ -188,7 +188,7 @@ jobs:
 
       - name: Save stable-health baseline
         if: always() && hashFiles('.audit-baseline/stable-health.json') != ''
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: .audit-baseline
           key: catalogue-audit-${{ github.run_id }}
