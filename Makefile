@@ -10,6 +10,8 @@ verify: json-check catalogue-validate fallbacks-validate candidates-validate dis
 
 json-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/channels.json >/dev/null
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/schedules.json >/dev/null
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/supranational.json >/dev/null
 
 catalogue-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) parliament-streams validate

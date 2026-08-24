@@ -9,6 +9,7 @@ on:
       - "site/**"
       - "data/channels.json"
       - "data/fallbacks.json"
+      - "data/schedules.json"
       - "parliament_streams/**"
       - "pyproject.toml"
       - "uv.lock"
@@ -40,17 +41,35 @@ jobs:
         run: python -m pip install uv
       - name: Sync Python dependencies
         run: uv sync --locked
+      - name: Restore the preceding schedule snapshot
+        uses: actions/cache/restore@v5
+        with:
+          path: .schedule-baseline
+          key: schedule-snapshot-${{ github.run_id }}
+          restore-keys: schedule-snapshot-
       - name: Assemble static site
         run: |
           mkdir -p _site/data
           cp -R site/. _site/
           cp data/channels.json _site/data/channels.json
           cp data/fallbacks.json _site/data/fallbacks.json
+          cp data/supranational.json _site/data/supranational.json
       - name: Collect current schedules
         run: >-
           uv run --locked parliament-streams schedules-collect
           --output _site/data/schedules.json
+          --previous .schedule-baseline/schedules.json
+          --stale-ttl-hours 24
           --minimum-successful-sources 1
+      - name: Preserve the schedule snapshot
+        run: |
+          mkdir -p .schedule-baseline
+          cp _site/data/schedules.json .schedule-baseline/schedules.json
+      - name: Save the schedule snapshot
+        uses: actions/cache/save@v5
+        with:
+          path: .schedule-baseline
+          key: schedule-snapshot-${{ github.run_id }}
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

@@ -382,9 +382,9 @@
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.stortinget.no/nett-tv",
+          "url": "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Moteprogram/?w=0&yw=all",
           "method": "GET",
-          "kind": "nett_tv_page",
+          "kind": "meeting_programme_page",
           "scraper_status": "planned"
         }
       ],
@@ -467,6 +467,13 @@
           "method": "GET",
           "kind": "weekly_schedule_page",
           "scraper_status": "implemented"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/eventos",
+          "method": "GET",
+          "kind": "open_data_events_api",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -650,6 +657,13 @@
           "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget",
           "method": "GET",
           "kind": "upcoming_broadcasts_page",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://www.ft.dk/da/aktuelt/kalender/",
+          "method": "GET",
+          "kind": "parliamentary_calendar_page",
           "scraper_status": "planned"
         }
       ],
@@ -1389,6 +1403,20 @@
           "method": "GET",
           "kind": "public_sitting_agenda",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip",
+          "method": "GET",
+          "kind": "open_data_agenda_json_zip",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://event2.assemblee-nationale.fr/programme.php",
+          "method": "GET",
+          "kind": "broadcast_programme_page",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -1558,6 +1586,13 @@
           "method": "GET",
           "kind": "live_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://m.knesset.gov.il/EN/activity/committees",
+          "method": "GET",
+          "kind": "upcoming_committee_meetings_page",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -1724,7 +1759,7 @@
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/",
+          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/program",
           "method": "GET",
           "kind": "television_programme_page",
           "scraper_status": "planned"
@@ -2320,7 +2355,15 @@
         "audio_description": "unknown",
         "notes": null
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parliament.go.th/view/457/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1/TH-TH",
+          "method": "GET",
+          "kind": "meeting_schedule_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "TPchannel is operated by the National Assembly Radio and Television Broadcasting Station and publishes live/OTT access, but no source-specific reuse or embedding terms were found in this pass.",
@@ -2406,6 +2449,13 @@
           "method": "GET",
           "kind": "current_and_upcoming_broadcasts_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://www.nrsr.sk/web/default.aspx?sid=schodze%2Fzoznam",
+          "method": "GET",
+          "kind": "meeting_programme_page",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -2485,7 +2535,15 @@
         "audio_description": "unknown",
         "notes": null
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://tov.parliament.mn/",
+          "method": "GET",
+          "kind": "meeting_timetable_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "DASH experiment from SkyGo/GO+ streaming infrastructure without recorded reuse permission. The official Parliament site publishes a live/session page with meeting video and YouTube references, and GO+ app-store evidence describes a commercial OTT service with official rights, but no source-specific permission was found for third-party use of the DASH manifest.",
@@ -4570,7 +4628,15 @@
         "audio_description": "unknown",
         "notes": null
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://ivod.ly.gov.tw/index.php/Forecast",
+          "method": "GET",
+          "kind": "meeting_forecast_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "embed_only",
         "summary": "Current catalogue treats this as an official-page/link-out source; terms are not yet reviewed.",
@@ -4918,6 +4984,13 @@
           "method": "GET",
           "kind": "webstreaming_schedule_page",
           "scraper_status": "implemented"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://data.europarl.europa.eu/api/v2/meetings",
+          "method": "GET",
+          "kind": "open_data_meetings_api",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -4991,6 +5064,13 @@
           "url": "https://video.consilium.europa.eu/home/en",
           "method": "GET",
           "kind": "council_live_schedule_page",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://skribi.consilium.europa.eu/en/meetings/calendar/",
+          "method": "GET",
+          "kind": "meeting_calendar_page",
           "scraper_status": "planned"
         }
       ],
@@ -5134,11 +5214,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "un-webtv-schedule",
           "url": "https://webtv.un.org/en/schedule",
           "method": "GET",
           "kind": "live_schedule_page",
-          "scraper_status": "planned"
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -6056,7 +6136,7 @@
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.parliament.nsw.gov.au/parliamentary-business/sitting-day-calendar",
+          "url": "https://www.parliament.nsw.gov.au/webcasts",
           "method": "GET",
           "kind": "webcast_and_daily_program_page",
           "scraper_status": "planned"
@@ -6192,9 +6272,9 @@
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Sitting-Dates/Dates",
+          "url": "https://www.parliament.qld.gov.au/en/work-of-committees/Upcoming-Committee-Business",
           "method": "GET",
-          "kind": "sitting_dates",
+          "kind": "upcoming_broadcast_committee_business",
           "scraper_status": "planned"
         }
       ],

@@ -14,6 +14,7 @@ from . import (
     portugal_agenda,
     quebec_webdiffusion,
     uk_parliament,
+    un_webtv,
     youtube_live,
 )
 
@@ -29,5 +30,6 @@ SCRAPERS: dict[str, ModuleType] = {
     italian_senate.SOURCE["id"]: italian_senate,
     portugal_agenda.SOURCE["id"]: portugal_agenda,
     uk_parliament.SOURCE["id"]: uk_parliament,
+    un_webtv.SOURCE["id"]: un_webtv,
     youtube_live.SOURCE["id"]: youtube_live,
 }

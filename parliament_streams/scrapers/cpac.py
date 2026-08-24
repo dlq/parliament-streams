@@ -8,10 +8,13 @@ from datetime import UTC, datetime
 from .common import (
     ParsedSchedule,
     ScheduleEvent,
+    ScheduleMetadata,
     ScraperSource,
     clean_html,
     local_time_label,
+    normalized_events,
     parse_iso,
+    utc_event_start,
 )
 
 SOURCE: ScraperSource = {
@@ -40,22 +43,23 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     entries.sort(key=lambda item: item["start"])
     if not entries:
         return {}
+    for entry, following in zip(entries, entries[1:], strict=False):
+        entry["end"] = following["start"]
 
-    current_index = 0
-    for index, entry in enumerate(entries):
-        if entry["start"] <= now:
-            current_index = index
-        else:
-            break
-
-    current = entries[current_index]
-    next_entry = entries[current_index + 1] if current_index + 1 < len(entries) else None
-    return {
-        "cpac-ca": {
-            "current_event_title": current["title"],
-            "current_event_time": local_time_label(current["start"]),
-            "next_event_title": next_entry["title"] if next_entry else None,
-            "next_event_time": local_time_label(next_entry["start"]) if next_entry else None,
-            "confidence": "official_schedule",
-        }
+    current = next((entry for entry in reversed(entries) if entry["start"] <= now), None)
+    next_entry = next((entry for entry in entries if entry["start"] > now), None)
+    schedule: ScheduleMetadata = {
+        "current_event_title": current["title"] if current else None,
+        "current_event_time": local_time_label(current["start"]) if current else None,
+        "next_event_title": next_entry["title"] if next_entry else None,
+        "next_event_time": local_time_label(next_entry["start"]) if next_entry else None,
+        "confidence": "official_schedule",
     }
+    if current:
+        schedule["current_event_start"] = utc_event_start(current["start"])
+    if next_entry:
+        schedule["next_event_start"] = utc_event_start(next_entry["start"])
+    schedule["events"] = normalized_events(
+        "cpac-ca", entries, now, source_timezone="America/Toronto"
+    )
+    return {"cpac-ca": schedule}

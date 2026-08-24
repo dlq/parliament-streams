@@ -16,6 +16,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ScheduleCollectionTests(unittest.TestCase):
+    def test_published_snapshot_matches_schema(self):
+        schema = json.loads((ROOT / "schema/schedules.schema.json").read_text(encoding="utf-8"))
+        snapshot = json.loads((ROOT / "data/schedules.json").read_text(encoding="utf-8"))
+        Draft202012Validator(schema, format_checker=FormatChecker()).validate(snapshot)
+
     def test_epg_audit_deduplicates_and_classifies_sources(self):
         catalogue = {
             "schema_version": 1,
@@ -109,8 +114,31 @@ class ScheduleCollectionTests(unittest.TestCase):
                 now=datetime(2026, 8, 17, 12, tzinfo=UTC), fetcher=fetcher
             )
 
-        self.assertEqual(snapshot["counts"], {"ok": 1, "empty": 0, "error": 1, "channels": 1})
+        self.assertEqual(
+            snapshot["counts"],
+            {
+                "ok": 1,
+                "empty": 0,
+                "error": 1,
+                "channels": 1,
+                "current": 1,
+                "upcoming": 0,
+                "complete": 0,
+                "events": 1,
+                "events_with_official_id": 0,
+                "events_with_url": 0,
+                "events_with_end": 0,
+                "fresh_channels": 1,
+                "stale_channels": 0,
+            },
+        )
         self.assertEqual(snapshot["channels"]["channel"]["scraper"], "good")
+        self.assertEqual(
+            snapshot["channels"]["channel"]["events"][0]["identifier_kind"],
+            "generated",
+        )
+        self.assertEqual(snapshot["sources"]["good"]["event_count"], 1)
+        self.assertEqual(snapshot["sources"]["good"]["channels_expected"], 1)
         self.assertEqual(snapshot["sources"]["broken"]["status"], "error")
 
         schema = json.loads((ROOT / "schema/schedules.schema.json").read_text(encoding="utf-8"))
@@ -192,7 +220,79 @@ class ScheduleCollectionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "nested" / "schedules.json"
             schedule_collection.write_snapshot(output, snapshot)
-            self.assertEqual(json.loads(output.read_text())["schema_version"], 1)
+            self.assertEqual(json.loads(output.read_text())["schema_version"], 3)
+
+    def test_error_can_retain_unexpired_future_events_from_previous_snapshot(self):
+        source = ModuleType("source")
+        source.SOURCE = {
+            "id": "source",
+            "channel_ids": ["channel"],
+            "url": "https://example.test/schedule",
+            "method": "GET",
+        }
+        source.parse = lambda _payload, now=None: {
+            "channel": {
+                "current_event_title": None,
+                "current_event_time": None,
+                "next_event_title": "Committee meeting",
+                "next_event_time": "6:00 PM",
+                "next_event_start": "2026-08-17T18:00:00Z",
+                "confidence": "fixture",
+            }
+        }
+        with patch.object(schedule_collection, "SCRAPERS", {"source": source}):
+            previous = schedule_collection.collect_schedules(
+                now=datetime(2026, 8, 17, 12, tzinfo=UTC),
+                fetcher=lambda *_args: "fixture",
+            )
+
+            def broken_fetcher(*_args):
+                raise RuntimeError("temporary failure")
+
+            current = schedule_collection.collect_schedules(
+                now=datetime(2026, 8, 17, 13, tzinfo=UTC),
+                fetcher=broken_fetcher,
+                previous=previous,
+            )
+
+        self.assertTrue(current["channels"]["channel"]["stale"])
+        self.assertEqual(current["channels"]["channel"]["current_event_title"], None)
+        self.assertEqual(current["channels"]["channel"]["next_event_title"], "Committee meeting")
+        self.assertTrue(current["sources"]["source"]["used_last_good"])
+        self.assertEqual(current["sources"]["source"]["consecutive_failures"], 1)
+        self.assertEqual(current["counts"]["stale_channels"], 1)
+
+    def test_error_drops_expired_last_good_snapshot(self):
+        source = ModuleType("source")
+        source.SOURCE = {
+            "id": "source",
+            "channel_ids": ["channel"],
+            "url": "https://example.test/schedule",
+            "method": "GET",
+        }
+        source.parse = lambda _payload, now=None: {
+            "channel": {
+                "current_event_title": None,
+                "current_event_time": None,
+                "next_event_title": "Future sitting",
+                "next_event_time": "Later",
+                "next_event_start": "2026-08-20T18:00:00Z",
+                "confidence": "fixture",
+            }
+        }
+        with patch.object(schedule_collection, "SCRAPERS", {"source": source}):
+            previous = schedule_collection.collect_schedules(
+                now=datetime(2026, 8, 17, 12, tzinfo=UTC),
+                fetcher=lambda *_args: "fixture",
+            )
+            current = schedule_collection.collect_schedules(
+                now=datetime(2026, 8, 19, 13, tzinfo=UTC),
+                fetcher=lambda *_args: (_ for _ in ()).throw(RuntimeError("failure")),
+                previous=previous,
+            )
+
+        self.assertEqual(current["channels"], {})
+        self.assertFalse(current["sources"]["source"]["used_last_good"])
 
 
 if __name__ == "__main__":

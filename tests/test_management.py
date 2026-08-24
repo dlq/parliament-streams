@@ -34,6 +34,8 @@ from parliament_streams.management import (
 )
 from parliament_streams.playback_policy_audit import audit_playback_policies
 from parliament_streams.site_data import (
+    load_schedules,
+    load_supranational,
     render_site_data,
     render_site_data_payload,
     site_data_is_current,
@@ -392,7 +394,7 @@ class ManagementTests(unittest.TestCase):
             render_site_data(self.catalogue_path, self.fallbacks_path),
         )
         self.assertEqual(
-            render_site_data_payload(catalogue, fallbacks),
+            render_site_data_payload(catalogue, fallbacks, load_supranational(), load_schedules()),
             render_site_data(self.catalogue_path, self.fallbacks_path),
         )
         write_site_data(self.catalogue_path, self.fallbacks_path, self.site_path)
@@ -881,10 +883,24 @@ class CliTests(unittest.TestCase):
 
     def test_schedules_collect_command(self):
         snapshot = {
-            "schema_version": 1,
+            "schema_version": 3,
             "generated_at": "2026-08-17T12:00:00Z",
             "refresh_interval_hours": 6,
-            "counts": {"ok": 1, "empty": 0, "error": 0, "channels": 1},
+            "counts": {
+                "ok": 1,
+                "empty": 0,
+                "error": 0,
+                "channels": 1,
+                "current": 0,
+                "upcoming": 0,
+                "complete": 0,
+                "events": 0,
+                "events_with_official_id": 0,
+                "events_with_url": 0,
+                "events_with_end": 0,
+                "fresh_channels": 0,
+                "stale_channels": 0,
+            },
             "channels": {},
             "sources": {},
         }
@@ -895,7 +911,7 @@ class CliTests(unittest.TestCase):
             )
         self.assertEqual(result, 0)
         self.assertIn("from 1 sources", output)
-        self.assertEqual(load_json_object(output_path)["schema_version"], 1)
+        self.assertEqual(load_json_object(output_path)["schema_version"], 3)
 
         with mock.patch("parliament_streams.cli.collect_schedules", return_value=snapshot):
             result, _, error = self.run_cli(

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the geographic coverage of the Parliament Streams research catalogue.">
+    <title>Coverage map · Parliament Streams</title>
+    <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
+    <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
+    <link rel="stylesheet" href="styles.css?v=20260824-map">
+    <link rel="stylesheet" href="map.css?v=20260824-selection4">
+  </head>
+  <body class="map-page">
+    <a class="skip-link" id="map-skip-link" href="#coverage-map">Skip to coverage map</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" id="map-brand-home" href="./" aria-label="Parliament Streams home">
+          <img class="brand-mark" src="assets/brand/parliaments-mark.png" alt="">
+          <span>Parliament Streams</span>
+        </a>
+        <nav id="map-primary-navigation" aria-label="Primary navigation">
+          <a id="map-nav-catalogue" href="./">Catalogue</a>
+          <a id="map-nav-map" href="map.html" aria-current="page">Map</a>
+          <a id="map-nav-schedule" href="schedule.html">Schedule</a>
+          <a href="https://github.com/dlq/parliament-streams" target="_blank" rel="noreferrer">GitHub</a>
+          <label class="locale-control"><span class="visually-hidden" id="map-locale-label">Language</span><select id="locale-select"></select></label>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="map-intro" aria-labelledby="map-title">
+        <div>
+          <p class="section-label" id="map-section-label">Catalogue geography</p>
+          <h1 id="map-title">Coverage map</h1>
+          <p class="lede" id="map-lede">Explore where official parliamentary video sources have been documented.</p>
+        </div>
+        <dl class="map-summary">
+          <div><dd id="jurisdiction-count">—</dd><dt id="map-jurisdictions-metric">Jurisdictions</dt></div>
+          <div><dd id="source-count">—</dd><dt id="map-sources-metric">Sources</dt></div>
+          <div><dd id="playable-count">—</dd><dt id="map-playable-metric">Playable here</dt></div>
+        </dl>
+      </section>
+
+      <section class="map-workspace" id="coverage-map" aria-label="Catalogue coverage map">
+        <div class="map-toolbar">
+          <div class="coverage-modes" role="group" aria-label="Coverage level">
+            <button type="button" class="is-active" data-mode="all" aria-pressed="true">All coverage</button>
+            <button type="button" data-mode="national" aria-pressed="false">National</button>
+            <button type="button" data-mode="subnational" aria-pressed="false">Subnational</button>
+            <button type="button" data-mode="supranational" aria-pressed="false">International</button>
+          </div>
+          <label class="map-search">
+            <span class="visually-hidden" id="map-search-label">Find a jurisdiction</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+            <input id="map-search" type="search" autocomplete="off" placeholder="Find a jurisdiction">
+          </label>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-stage">
+            <div class="map-legend">
+              <span><i class="legend-documented"></i><span id="legend-documented-label">Documented</span></span>
+              <span><i class="legend-selected"></i><span id="legend-selected-label">Selected</span></span>
+              <span><i class="legend-undocumented"></i><span id="legend-undocumented-label">Not yet documented</span></span>
+            </div>
+            <svg id="world-map" role="group" aria-labelledby="world-map-title world-map-description">
+              <title id="world-map-title">World map of Parliament Streams catalogue coverage</title>
+              <desc id="world-map-description">Countries and first-order divisions with documented parliamentary video sources are highlighted. Select a documented area for details.</desc>
+            </svg>
+            <div class="map-zoom" role="group" aria-label="Map zoom controls">
+              <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+              <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+              <button type="button" id="zoom-reset" aria-label="Reset map">↺</button>
+            </div>
+            <p class="map-boundary-note" id="map-boundary-note">Boundaries are shown for catalogue navigation and do not express a position on territorial status.</p>
+          </div>
+          <aside class="map-detail" id="map-detail" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section class="jurisdiction-index" aria-labelledby="jurisdiction-index-title">
+        <div class="jurisdiction-index-heading">
+          <h2 id="jurisdiction-index-title">Jurisdictions</h2>
+          <span id="jurisdiction-visible-count"></span>
+        </div>
+        <ul id="jurisdiction-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="map-footer-copy">Parliament Streams is an independent research catalogue.</span>
+      <span><a id="map-data-link" href="assets/maps/ATTRIBUTION.md">Map data</a> · <a href="https://github.com/dlq/parliament-streams" target="_blank" rel="noreferrer">GitHub</a></span>
+    </footer>
+
+    <script defer src="catalogue-data.js?v=20260824-map"></script>
+    <script defer src="i18n.js?v=20260824-map"></script>
+    <script defer src="map-i18n.js?v=20260824-map1"></script>
+    <script defer src="schedule-i18n.js?v=20260824-schedule"></script>
+    <script defer src="assets/vendor/d3.min.js?v=7.9.0"></script>
+    <script defer src="map.js?v=20260824-selection4"></script>
+  </body>
+</html>

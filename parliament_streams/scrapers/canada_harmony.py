@@ -16,6 +16,8 @@ from .common import (
     ScraperSource,
     clean_html,
     local_time_label,
+    normalized_events,
+    utc_event_start,
 )
 
 HOUSE_URL = "https://parlvu.parl.gc.ca/Harmony/en"
@@ -168,29 +170,38 @@ def parse(
             events.append(event)
 
     events.sort(key=lambda event: event["start"])
-    upcoming = [event for event in events if event["start"] >= now]
-    if not upcoming:
+    current = next(
+        (
+            event
+            for event in events
+            if re.search(r"\b(in progress|live now)\b", event.get("status", ""), re.IGNORECASE)
+        ),
+        None,
+    )
+    upcoming = [event for event in events if event is not current and event["start"] >= now]
+    next_event = upcoming[0] if upcoming else None
+    if not current and not next_event:
         return {}
 
-    current = upcoming[0]
-    next_event = upcoming[1] if len(upcoming) > 1 else None
     schedule: ScheduleMetadata = {
-        "current_event_title": current["title"],
-        "current_event_time": local_time_label(current["start"]),
+        "current_event_title": current["title"] if current else None,
+        "current_event_time": local_time_label(current["start"]) if current else None,
         "next_event_title": next_event["title"] if next_event else None,
         "next_event_time": local_time_label(next_event["start"]) if next_event else None,
         "confidence": "official_harmony_upcoming_events_page",
     }
-    if current.get("url"):
+    if current and current.get("url"):
         schedule["current_event_url"] = current["url"]
-    if current.get("event_id"):
+    if current and current.get("event_id"):
         schedule["current_event_id"] = current["event_id"]
-    if current.get("status"):
+    if current and current.get("status"):
         schedule["current_event_status"] = current["status"]
-    if current.get("location"):
+    if current and current.get("location"):
         schedule["current_event_location"] = current["location"]
-    if current.get("language"):
+    if current and current.get("language"):
         schedule["current_event_language"] = current["language"]
+    if current:
+        schedule["current_event_start"] = utc_event_start(current["start"])
     if next_event:
         if next_event.get("url"):
             schedule["next_event_url"] = next_event["url"]
@@ -202,4 +213,8 @@ def parse(
             schedule["next_event_location"] = next_event["location"]
         if next_event.get("language"):
             schedule["next_event_language"] = next_event["language"]
+        schedule["next_event_start"] = utc_event_start(next_event["start"])
+    schedule["events"] = normalized_events(
+        channel_id, events, now, source_timezone="America/Toronto"
+    )
     return {channel_id: schedule}

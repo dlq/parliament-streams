@@ -12,7 +12,8 @@ evidence found while researching open parliamentary video access.
 The repository is intended to be a public, inspectable catalogue and research
 record.
 
-**[Browse the public catalogue](https://dlq.github.io/parliament-streams/)**
+**[Browse the public catalogue](https://dlq.github.io/parliament-streams/)** ·
+**[View the programme guide](https://dlq.github.io/parliament-streams/schedule.html)**
 
 ## Start Here
 
@@ -51,8 +52,9 @@ before editing source records.
 
 ## What Is Here
 
-- `site/`: a build-free static catalogue interface for GitHub Pages. It
-  loads the published `data/channels.json` and `data/fallbacks.json` artifacts
+- `site/`: build-free catalogue, coverage-map, and programme-guide interfaces
+  for GitHub Pages. They load the published `data/channels.json` and
+  `data/fallbacks.json` artifacts
   directly; no application backend, user accounts, analytics, or server-side
   stream proxy is used.
 - `data/channels.json`: canonical source catalogue, including recorded caption,
@@ -169,7 +171,17 @@ play a stream natively in another product.
 The repository includes a GitHub Pages interface in `site/`. It provides
 search and filters over the canonical catalogue, source/EPG/provenance details,
 external institutional identity links, playback mode, and an official outbound
-link for every entry.
+link for every entry. Its dedicated programme guide presents the latest
+six-hourly schedule snapshot as compact Now/Next channel listings, with
+jurisdiction and listing-status filters, source-published times, explicit
+freshness warnings, and playback handoff for eligible channels.
+
+The number of catalogue entries with an `epg_sources` link is deliberately
+larger than the number shown in the programme guide. A linked sitting calendar,
+agenda, or programme page is useful provenance, but the guide includes a
+channel only when an implemented parser returns at least one real dated event
+inside the current collection window. It does not publish generic placeholders
+as programmes.
 
 The page enables in-page playback where `data/channels.json` records
 `playback_policy` as `native_playback` for a direct feed or `provider_embed`
@@ -329,11 +341,19 @@ writes a versioned `schedules.json` snapshot. GitHub Actions runs that collector
 every six hours and includes the result in the Pages artifact. The page reads
 only that same-origin static JSON; it never scrapes third-party sites.
 
-Each run records its generation time plus per-source `ok`, `empty`, or `error`
-status. A failed source does not prevent successful schedules from being
-published, while a run with no successful sources fails before deployment.
-Channels without current collected data fall back to their catalogue programme
-description and official schedule link.
+Schedule snapshot schema v3 stores a normalized rolling event list for each
+channel. Every event can record a stable or deterministic identifier, canonical
+UTC start/end timestamps, source timezone, status, official event URL, location,
+and language. The legacy Now/Next fields remain as a derived compatibility view
+for the static catalogue and programme guide.
+
+Each run records generation time, coverage range, event completeness, expected
+and populated channel counts, and per-source `ok`, `empty`, or `error` status.
+An empty source is distinguished from a fetch/parser error. A failed source does
+not prevent successful schedules from being published, while a run with no
+successful sources fails before deployment. The scheduled workflow may retain
+only still-future events from the preceding successful snapshot for up to 24
+hours; those channels are marked stale and never retain a stale Now listing.
 
 Current scraper ids:
 
@@ -346,6 +366,10 @@ Current scraper ids:
 - `ebs-grid`
 - `italian-senate-palimpsest`
 - `portugal-open-data-agenda`
+- `canada-harmony`
+- `uk-parliament`
+- `un-webtv-schedule`
+- `youtube-live`
 
 They parse supplied HTML/JSON strings. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
@@ -354,6 +378,12 @@ requested, when it ran, and whether each source succeeded.
 Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
+
+As of the 2026-08-24 discovery pass, all 86 channel records have at least one
+official schedule, agenda, meeting, or programme surface recorded. This is
+source coverage, not programme-guide coverage: 17 unique URLs have implemented
+parsers, while 58 are parser candidates or link-only research sources. See
+`reports/epg-discovery-2026-08-24.md` for the latest source-by-source findings.
 
 Collect all implemented sources locally:
 
@@ -367,9 +397,15 @@ options are available through the CLI:
 ```sh
 uv run parliament-streams schedules-collect \
   --output data/schedules.json \
+  --previous data/schedules.json \
+  --stale-ttl-hours 24 \
   --timeout 15 \
   --retries 1
 ```
+
+Omit `--previous` when testing a clean collection. The option is intended for
+scheduled publication, where it provides a bounded last-good fallback during a
+temporary source failure.
 
 Parse a saved response with the scraper CLI:
 

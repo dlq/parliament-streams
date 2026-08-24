@@ -44,6 +44,7 @@ from .schedule_collection import (
     DEFAULT_TIMEOUT_SECONDS as DEFAULT_SCHEDULE_TIMEOUT_SECONDS,
 )
 from .schedule_collection import (
+    ScheduleSnapshot,
     collect_schedules,
     write_snapshot,
 )
@@ -291,7 +292,18 @@ def _cmd_export(args: argparse.Namespace) -> int:
 
 
 def _cmd_schedules_collect(args: argparse.Namespace) -> int:
-    snapshot = collect_schedules(timeout=args.timeout, retries=args.retries)
+    previous = None
+    if args.previous and args.previous.exists():
+        previous = cast(
+            ScheduleSnapshot,
+            json.loads(args.previous.read_text(encoding="utf-8")),
+        )
+    snapshot = collect_schedules(
+        timeout=args.timeout,
+        retries=args.retries,
+        previous=previous,
+        stale_ttl_hours=args.stale_ttl_hours,
+    )
     successful = snapshot["counts"].get("ok", 0)
     if successful < args.minimum_successful_sources:
         raise ValueError(
@@ -530,6 +542,12 @@ def build_parser() -> argparse.ArgumentParser:
     schedules_collect.add_argument("--timeout", type=int, default=DEFAULT_SCHEDULE_TIMEOUT_SECONDS)
     schedules_collect.add_argument("--retries", type=int, default=DEFAULT_SCHEDULE_RETRIES)
     schedules_collect.add_argument("--minimum-successful-sources", type=int, default=1)
+    schedules_collect.add_argument(
+        "--previous",
+        type=Path,
+        help="Previous version 3 snapshot used for short-lived last-good recovery.",
+    )
+    schedules_collect.add_argument("--stale-ttl-hours", type=int, default=24)
     schedules_collect.set_defaults(handler=_cmd_schedules_collect)
 
     epg_audit = commands.add_parser(

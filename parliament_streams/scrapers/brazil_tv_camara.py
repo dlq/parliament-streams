@@ -6,7 +6,16 @@ import re
 from datetime import UTC, datetime
 from zoneinfo import ZoneInfo
 
-from .common import ParsedSchedule, ScheduleEvent, ScraperSource, clean_html, local_time_label
+from .common import (
+    ParsedSchedule,
+    ScheduleEvent,
+    ScheduleMetadata,
+    ScraperSource,
+    clean_html,
+    local_time_label,
+    normalized_events,
+    utc_event_start,
+)
 
 SOURCE: ScraperSource = {
     "id": "brazil-tv-camara",
@@ -38,24 +47,30 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     events.sort(key=lambda item: item["start"])
     if not events:
         return {}
+    for event, following in zip(events, events[1:], strict=False):
+        event["end"] = following["start"]
 
-    current_index = 0
-    for index, event in enumerate(events):
-        if event["start"] <= now:
-            current_index = index
-        else:
-            break
-    current = events[current_index]
-    next_event = events[current_index + 1] if current_index + 1 < len(events) else None
-    return {
-        "brazil-tv-camara": {
-            "current_event_title": current["title"],
-            "current_event_time": local_time_label(current["start"]),
-            "next_event_title": next_event["title"] if next_event else None,
-            "next_event_time": local_time_label(next_event["start"]) if next_event else None,
-            "confidence": "official_weekly_schedule",
-        }
+    current = next((event for event in reversed(events) if event["start"] <= now), None)
+    next_event = next((event for event in events if event["start"] > now), None)
+    schedule: ScheduleMetadata = {
+        "current_event_title": current["title"] if current else None,
+        "current_event_time": local_time_label(current["start"], "America/Sao_Paulo")
+        if current
+        else None,
+        "next_event_title": next_event["title"] if next_event else None,
+        "next_event_time": local_time_label(next_event["start"], "America/Sao_Paulo")
+        if next_event
+        else None,
+        "confidence": "official_weekly_schedule",
     }
+    if current:
+        schedule["current_event_start"] = utc_event_start(current["start"])
+    if next_event:
+        schedule["next_event_start"] = utc_event_start(next_event["start"])
+    schedule["events"] = normalized_events(
+        "brazil-tv-camara", events, now, source_timezone="America/Sao_Paulo"
+    )
+    return {"brazil-tv-camara": schedule}
 
 
 def _active_tab_html(html: str) -> str | None:

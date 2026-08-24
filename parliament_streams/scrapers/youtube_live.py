@@ -116,16 +116,20 @@ def parse(
         return {}
 
     status = _status(html)
+    if status == "Provider current video":
+        return {}
+    is_live = status == "Live now"
     schedule: ScheduleMetadata = {
-        "current_event_title": _title(html),
-        "current_event_time": status if status == "Live now" else checked_label(now),
-        "next_event_title": None,
-        "next_event_time": None,
-        "current_event_url": f"https://www.youtube.com/watch?v={video_id}",
-        "current_event_id": video_id,
-        "current_event_status": status,
+        "current_event_title": _title(html) if is_live else None,
+        "current_event_time": status if is_live else None,
+        "next_event_title": None if is_live else _title(html),
+        "next_event_time": None if is_live else checked_label(now),
         "confidence": "official_youtube_live_page_static_metadata",
     }
+    prefix = "current" if is_live else "next"
+    schedule[f"{prefix}_event_url"] = f"https://www.youtube.com/watch?v={video_id}"  # type: ignore[literal-required]
+    schedule[f"{prefix}_event_id"] = video_id  # type: ignore[literal-required]
+    schedule[f"{prefix}_event_status"] = status  # type: ignore[literal-required]
     return {channel_id: schedule}
 
 

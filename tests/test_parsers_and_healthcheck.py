@@ -22,12 +22,72 @@ from parliament_streams.scrapers import (
     portugal_agenda,
     quebec_webdiffusion,
     uk_parliament,
+    un_webtv,
     youtube_live,
 )
-from parliament_streams.scrapers.common import clean_html, first_match, parse_iso
+from parliament_streams.scrapers.common import clean_html, first_match, normalized_events, parse_iso
 
 
 class ParserTests(unittest.TestCase):
+    def test_normalized_events_deduplicate_and_classify_status(self):
+        now = datetime(2026, 8, 24, 12, tzinfo=UTC)
+        events = normalized_events(
+            "channel",
+            [
+                {
+                    "start": datetime(2026, 8, 24, 11, tzinfo=UTC),
+                    "end": datetime(2026, 8, 24, 13, tzinfo=UTC),
+                    "title": "Plenary",
+                    "event_id": "official-1",
+                },
+                {
+                    "start": datetime(2026, 8, 24, 11, tzinfo=UTC),
+                    "end": datetime(2026, 8, 24, 13, tzinfo=UTC),
+                    "title": "Plenary",
+                    "event_id": "official-1",
+                },
+                {
+                    "start": datetime(2026, 8, 25, 11, tzinfo=UTC),
+                    "title": "Committee",
+                    "status": "Cancelled",
+                },
+            ],
+            now,
+            source_timezone="Europe/London",
+        )
+
+        self.assertEqual(len(events), 2)
+        self.assertEqual(events[0]["identifier_kind"], "official")
+        self.assertEqual(events[0]["status"], "live")
+        self.assertEqual(events[0]["end"], "2026-08-24T13:00:00Z")
+        self.assertEqual(events[1]["identifier_kind"], "generated")
+        self.assertEqual(events[1]["status"], "cancelled")
+        self.assertEqual(events[1]["source_timezone"], "Europe/London")
+
+    def test_un_webtv_parser_uses_live_and_coming_up_sections(self):
+        html = """
+        <h6>Live Now</h6>
+        <div class="d-none mediaun-timezone" data-nid="live-1">2026-08-24T13:00:00-04:00</div>
+        <h4><a href="/en/asset/live/one"><div class="media-asset__title">
+        <div class="field__item">Security Council meeting</div></div></a></h4>
+        <div class="view-display--attachment-coming-up">
+        <h6>Coming Up</h6>
+        <div class="d-none mediaun-timezone" data-nid="next-1">2026-08-24T14:30:00-04:00</div>
+        <h4><a href="/en/asset/next/one"><div class="media-asset__title">
+        <div class="field__item">General Assembly briefing</div></div></a></h4>
+        """
+        parsed = un_webtv.parse(html, now=datetime(2026, 8, 24, 17, 30, tzinfo=UTC))["un-web-tv"]
+        self.assertEqual(parsed["current_event_title"], "Security Council meeting")
+        self.assertEqual(parsed["current_event_status"], "Live now")
+        self.assertEqual(parsed["current_event_id"], "live-1")
+        self.assertEqual(parsed["current_event_start"], "2026-08-24T17:00:00Z")
+        self.assertEqual(parsed["next_event_title"], "General Assembly briefing")
+        self.assertEqual(parsed["next_event_start"], "2026-08-24T18:30:00Z")
+        self.assertEqual(parsed["next_event_url"], "https://webtv.un.org/en/asset/next/one")
+
+        request = un_webtv.request_specs(datetime(2026, 8, 25, 2, tzinfo=UTC))[0]
+        self.assertTrue(request["url"].endswith("/2026-08-24"))
+
     def test_youtube_live_parser_ignores_unresolved_channel_page(self):
         html = '<link rel="canonical" href="https://www.youtube.com/@AUSParliamentLive/live">'
         self.assertEqual(youtube_live.parse(html, channel_id="australia-parliament-youtube"), {})
@@ -63,8 +123,11 @@ class ParserTests(unittest.TestCase):
             now=datetime(2026, 8, 17, 10, tzinfo=UTC),
         )
         schedule = parsed["italy-senate"]
-        self.assertEqual(schedule["current_event_title"], "Seduta di Assemblea n. 448")
-        self.assertEqual(schedule["next_event_title"], "Commissione Affari costituzionali")
+        self.assertIsNone(schedule["current_event_title"])
+        self.assertEqual(schedule["next_event_title"], "Seduta di Assemblea n. 448")
+        self.assertEqual(schedule["next_event_start"], "2026-08-17T11:00:00Z")
+        self.assertEqual(len(schedule["events"]), 2)
+        self.assertTrue(schedule["events"][0]["id"].startswith("generated-"))
 
     def test_italian_senate_requests_cover_three_days(self):
         requests = italian_senate.request_specs(datetime(2026, 8, 17, 10, tzinfo=UTC))
@@ -122,14 +185,12 @@ class ParserTests(unittest.TestCase):
         parsed = uk_parliament.parse(payload, now=datetime(2026, 8, 31, 12, tzinfo=UTC))[
             "uk-parliament-youtube"
         ]
-        self.assertEqual(
-            parsed["current_event_title"],
-            "Commons - Main Chamber: Foreign, Commonwealth and Development",
-        )
+        self.assertIsNone(parsed["current_event_title"])
         self.assertEqual(
             parsed["next_event_title"],
-            "Lords - Select & Joint Committees: Domestic Abuse Act 2021 Committee",
+            "Commons - Main Chamber: Foreign, Commonwealth and Development",
         )
+        self.assertEqual(parsed["next_event_start"], "2026-09-01T13:30:00Z")
 
     def test_portugal_open_data_agenda(self):
         payload = json.dumps(
@@ -157,8 +218,9 @@ class ParserTests(unittest.TestCase):
         schedule = portugal_agenda.parse(payload, now=datetime(2026, 8, 17, 12, tzinfo=UTC))[
             "portugal-artv"
         ]
-        self.assertEqual(schedule["current_event_title"], "Reunião Plenária")
-        self.assertEqual(schedule["next_event_title"], "Comissão de Assuntos Europeus")
+        self.assertIsNone(schedule["current_event_title"])
+        self.assertEqual(schedule["next_event_title"], "Reunião Plenária")
+        self.assertEqual(schedule["next_event_start"], "2026-08-18T09:00:00Z")
 
     def test_portugal_resolves_current_open_data_download(self):
         responses = {
@@ -210,8 +272,8 @@ class ParserTests(unittest.TestCase):
         upcoming = '{"d":[{"Titre":"Question <b>Period</b>","Date":"16 August","Heure":"10:00"}]}'
         result = quebec_webdiffusion.parse(live, upcoming, datetime(2026, 8, 15, tzinfo=UTC))
         self.assertEqual(result["quebec-canal01"]["current_event_title"], "Commission & finances")
-        self.assertEqual(result["quebec-canal01"]["next_event_time"], "16 August, 10:00")
-        self.assertEqual(result["quebec-canal02"]["current_event_title"], "No live webcast listed")
+        self.assertIsNone(result["quebec-canal01"]["next_event_time"])
+        self.assertNotIn("quebec-canal02", result)
 
     def test_ontario_parser_handles_event_and_empty_calendar_states(self):
         events = """
@@ -219,16 +281,14 @@ class ParserTests(unittest.TestCase):
         <time datetime="2026-01-15T16:00:00Z">ignored</time><h2>Question Period</h2>
         """
         scheduled = ontario_calendar.parse(events, datetime(2026, 1, 15, 15, tzinfo=UTC))
-        self.assertEqual(scheduled["ontario-house-en"]["current_event_title"], "Morning sitting")
+        self.assertEqual(list(scheduled), ["ontario-house-en"])
+        self.assertIsNone(scheduled["ontario-house-en"]["current_event_title"])
         self.assertEqual(scheduled["ontario-house-en"]["next_event_title"], "Question Period")
 
         empty = ontario_calendar.parse(
             "There are no events today", datetime(2026, 1, 15, tzinfo=UTC)
         )
-        self.assertEqual(len(empty), len(ontario_calendar.CHANNEL_IDS))
-        self.assertEqual(
-            empty["ontario-house-en"]["current_event_title"], "No calendar events listed today"
-        )
+        self.assertEqual(empty, {})
 
     def test_brazil_and_new_zealand_parsers(self):
         brazil_html = """<tr><td><span>09:00</span></td><td><span>News</span></td></tr>
@@ -238,6 +298,8 @@ class ParserTests(unittest.TestCase):
         ]
         self.assertEqual(brazil["current_event_title"], "News")
         self.assertEqual(brazil["next_event_title"], "Chamber session")
+        self.assertEqual(brazil["current_event_start"], "2026-01-15T12:00:00Z")
+        self.assertEqual(brazil["next_event_start"], "2026-01-15T15:00:00Z")
         self.assertEqual(brazil_tv_camara.parse("<p>No programme</p>"), {})
 
         calendar = "<p>The House next meets on Tuesday at 2pm.</p>"
@@ -296,21 +358,18 @@ class ParserTests(unittest.TestCase):
             now=datetime(2026, 8, 19, 12, tzinfo=UTC),
             channel_id="canada-senate-senvu",
         )["canada-senate-senvu"]
+        self.assertIsNone(parsed["current_event_title"])
+        self.assertIsNone(parsed["current_event_time"])
         self.assertEqual(
-            parsed["current_event_title"], "DVSC meeting no. 1 - Subcommittee on Diversity"
-        )
-        self.assertEqual(parsed["current_event_time"], "10:00 AM ET")
-        self.assertEqual(
-            parsed["current_event_url"],
+            parsed["next_event_url"],
             "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441",
         )
-        self.assertEqual(parsed["current_event_id"], "15441")
-        self.assertEqual(parsed["current_event_status"], "Not Started")
-        self.assertEqual(parsed["current_event_location"], "Room B45")
-        self.assertEqual(parsed["current_event_language"], "en")
-        self.assertEqual(parsed["next_event_title"], "Senate sitting no. 87")
-        self.assertEqual(parsed["next_event_id"], "15434")
-        self.assertEqual(parsed["next_event_location"], "Senate Chamber")
+        self.assertEqual(
+            parsed["next_event_title"], "DVSC meeting no. 1 - Subcommittee on Diversity"
+        )
+        self.assertEqual(parsed["next_event_id"], "15441")
+        self.assertEqual(parsed["next_event_status"], "Not Started")
+        self.assertEqual(parsed["next_event_location"], "Room B45")
         self.assertEqual(parsed["next_event_language"], "en")
 
     def test_canada_harmony_collects_house_and_senate_pages(self):

@@ -155,8 +155,58 @@ jobs:
           uv run --locked parliament-streams schedules-collect \
             --timeout 15 \
             --retries 1 \
+            --previous .audit-baseline/schedules.json \
+            --stale-ttl-hours 24 \
             --minimum-successful-sources 1 \
             --output reports/automated/schedules.json
+
+      - name: Update repeated schedule-source failure issues
+        if: always() && hashFiles('reports/automated/schedules.json') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create schedule-regression \
+            --color d97706 \
+            --description "Repeated failure in a schedule source" \
+            --force
+          while IFS=$'\t' read -r source_id status failures error; do
+            title="Schedule source regression: $source_id"
+            number=$(gh issue list \
+              --state all \
+              --label schedule-regression \
+              --limit 100 \
+              --json number,title | \
+              jq -r --arg title "$title" '.[] | select(.title == $title) | .number')
+            if [[ "$status" == "error" && "$failures" -ge 3 ]]; then
+              {
+                echo "The schedule collector has failed for \`$source_id\` in $failures consecutive runs."
+                echo
+                echo "- Latest error: \`$error\`"
+                echo "- Evidence: $RUN_URL"
+                echo
+                echo "Check whether the endpoint, request requirements, or parser contract changed before editing catalogue metadata."
+              } > schedule-regression-issue.md
+              if [[ -n "$number" ]]; then
+                gh issue edit "$number" --body-file schedule-regression-issue.md
+                state=$(gh issue view "$number" --json state --jq '.state')
+                [[ "$state" == "CLOSED" ]] && gh issue reopen "$number"
+              else
+                gh issue create \
+                  --title "$title" \
+                  --label schedule-regression \
+                  --body-file schedule-regression-issue.md
+              fi
+            elif [[ -n "$number" ]]; then
+              state=$(gh issue view "$number" --json state --jq '.state')
+              if [[ "$state" == "OPEN" ]]; then
+                gh issue close "$number" \
+                  --reason completed \
+                  --comment "The schedule source recovered or no longer meets the repeated-failure threshold. Evidence: $RUN_URL"
+              fi
+            fi
+          done < <(jq -r '.sources | to_entries[] | [.key, .value.status, .value.consecutive_failures, (.value.error // "none")] | @tsv' reports/automated/schedules.json)
 
       - name: Audit official, rights, identity, and embed links
         run: >-
@@ -180,11 +230,19 @@ jobs:
             [[ -f reports/automated/catalogue-health.json ]] && jq -r '"High-risk source results: " + ([.results[] | select(.stability_risk == "high") | .status] | group_by(.) | map("\(.[0])=\(length)") | join(", "))' reports/automated/catalogue-health.json
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Preserve current stable-health baseline
-        if: always() && hashFiles('reports/automated/stable-health.json') != ''
+      - name: Preserve current audit baselines
+        if: >-
+          always() &&
+          (hashFiles('reports/automated/stable-health.json') != '' ||
+          hashFiles('reports/automated/schedules.json') != '')
         run: |
           mkdir -p .audit-baseline
-          cp reports/automated/stable-health.json .audit-baseline/stable-health.json
+          if [[ -f reports/automated/stable-health.json ]]; then
+            cp reports/automated/stable-health.json .audit-baseline/stable-health.json
+          fi
+          if [[ -f reports/automated/schedules.json ]]; then
+            cp reports/automated/schedules.json .audit-baseline/schedules.json
+          fi
 
       - name: Save stable-health baseline
         if: always() && hashFiles('.audit-baseline/stable-health.json') != ''

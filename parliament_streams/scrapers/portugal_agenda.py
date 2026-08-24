@@ -11,7 +11,16 @@ from typing import Any, cast
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
-from .common import FetchRequest, ParsedSchedule, ScheduleEvent, ScraperSource, local_time_label
+from .common import (
+    FetchRequest,
+    ParsedSchedule,
+    ScheduleEvent,
+    ScheduleMetadata,
+    ScraperSource,
+    local_time_label,
+    normalized_events,
+    utc_event_start,
+)
 
 INDEX_URL = "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx"
 SOURCE: ScraperSource = {
@@ -79,14 +88,16 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     upcoming = [event for event in events if event["start"] >= now]
     if not upcoming:
         return {}
-    current = upcoming[0]
-    next_event = upcoming[1] if len(upcoming) > 1 else None
-    return {
-        "portugal-artv": {
-            "current_event_title": current["title"],
-            "current_event_time": local_time_label(current["start"]),
-            "next_event_title": next_event["title"] if next_event else None,
-            "next_event_time": local_time_label(next_event["start"]) if next_event else None,
-            "confidence": "official_open_data_agenda",
-        }
+    next_event = upcoming[0]
+    schedule: ScheduleMetadata = {
+        "current_event_title": None,
+        "current_event_time": None,
+        "next_event_title": next_event["title"],
+        "next_event_time": local_time_label(next_event["start"], "Europe/Lisbon"),
+        "next_event_start": utc_event_start(next_event["start"]),
+        "confidence": "official_open_data_agenda",
     }
+    schedule["events"] = normalized_events(
+        "portugal-artv", events, now, source_timezone="Europe/Lisbon"
+    )
+    return {"portugal-artv": schedule}

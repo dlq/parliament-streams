@@ -2,6 +2,8 @@
 // The deployed Pages artifact places its JSON beside this script; local server
 // previews serve the repository's data directory one level above site/.
 const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
+const { message: mapMessage } = window.ParliamentStreamsMapI18n;
+const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
@@ -331,6 +333,8 @@ function applyStaticTranslations() {
   document.querySelector("#brand-home").setAttribute("aria-label", t("brandHome"));
   document.querySelector("#primary-navigation").setAttribute("aria-label", t("primaryNavigation"));
   setText("nav-catalogue", t("nav"));
+  setText("nav-map", mapMessage(state.locale, "title"));
+  setText("nav-schedule", scheduleMessage(state.locale, "title"));
   setText("locale-label", t("language"));
   setText("intro-label", t("research"));
   setText("page-title", t("title"));
@@ -643,35 +647,49 @@ function epgMarkup(channel) {
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 }
+function localEventTime(start, fallback) {
+  if (!start) return fallback;
+  const date = new Date(start);
+  if (Number.isNaN(date.valueOf())) return fallback;
+  const today = new Date();
+  const sameDay = date.getFullYear() === today.getFullYear()
+    && date.getMonth() === today.getMonth()
+    && date.getDate() === today.getDate();
+  const options = { hour: "numeric", minute: "2-digit", timeZoneName: "short" };
+  if (!sameDay) Object.assign(options, { weekday: "short", month: "short", day: "numeric" });
+  return new Intl.DateTimeFormat(state.locale, options).format(date);
+}
 function programmeMarkup(channel) {
   const schedule = state.schedules[channel.id];
   if (!schedule) return "";
   const record = schedule;
-  const programmeLine = (labelKey, title, time, url, language, location, status) => {
+  const programmeLine = (labelKey, title, time, start, url, language, location) => {
     const titleMarkup = url
       ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer"${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)} ↗</a>`
       : `<span${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)}</span>`;
-    const metadata = [time, languageDisplayName(language), location, status].filter(Boolean).map(escapeHtml).join(" · ");
+    const metadata = [localEventTime(start, time), languageDisplayName(language), location].filter(Boolean).map(escapeHtml).join(" · ");
     return `<span class="programme-line"><strong lang="${state.locale}">${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <span class="programme-time">· ${metadata}</span>` : ""}</span>`;
   };
-  const current = programmeLine(
-    "nowProgramme",
-    record.current_event_title,
-    record.current_event_time,
-    record.current_event_url,
-    record.current_event_language,
-    record.current_event_location,
-    record.current_event_status,
-  );
+  const current = record.current_event_title
+    ? programmeLine(
+      "nowProgramme",
+      record.current_event_title,
+      record.current_event_time,
+      record.current_event_start,
+      record.current_event_url,
+      record.current_event_language,
+      record.current_event_location,
+    )
+    : "";
   const next = record.next_event_title
     ? programmeLine(
       "nextProgramme",
       record.next_event_title,
       record.next_event_time,
+      record.next_event_start,
       record.next_event_url,
       record.next_event_language,
       record.next_event_location,
-      record.next_event_status,
     )
     : "";
   const freshness = schedule
@@ -687,11 +705,11 @@ function fallbackScheduleMarkup(fallback) {
     .map((channelId) => state.schedules[channelId])
     .find(Boolean);
   if (!relatedSchedule) return "";
-  const eventLine = (labelKey, title, url, time, language, location, status) => {
+  const eventLine = (labelKey, title, url, time, start, language, location) => {
     const titleMarkup = url
       ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(title)} ↗</a>`
       : escapeHtml(title);
-    const metadata = [time, languageDisplayName(language), location, status].filter(Boolean).map(escapeHtml).join(" · ");
+    const metadata = [localEventTime(start, time), languageDisplayName(language), location].filter(Boolean).map(escapeHtml).join(" · ");
     return `<span><strong>${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <em>${metadata}</em>` : ""}</span>`;
   };
   const current = relatedSchedule.current_event_title
@@ -700,9 +718,9 @@ function fallbackScheduleMarkup(fallback) {
       relatedSchedule.current_event_title,
       relatedSchedule.current_event_url,
       relatedSchedule.current_event_time,
+      relatedSchedule.current_event_start,
       relatedSchedule.current_event_language,
       relatedSchedule.current_event_location,
-      relatedSchedule.current_event_status,
     )
     : "";
   const next = relatedSchedule.next_event_title
@@ -711,9 +729,9 @@ function fallbackScheduleMarkup(fallback) {
       relatedSchedule.next_event_title,
       relatedSchedule.next_event_url,
       relatedSchedule.next_event_time,
+      relatedSchedule.next_event_start,
       relatedSchedule.next_event_language,
       relatedSchedule.next_event_location,
-      relatedSchedule.next_event_status,
     )
     : "";
   return current || next ? `<small class="fallback-schedule">${current}${next}</small>` : "";
@@ -1057,7 +1075,12 @@ async function init() {
       }
     }
     state.generatedOn = catalogue.generated_on;
-    state.selectedId = state.channels.find(canPlay)?.id ?? state.channels[0]?.id ?? null;
+    const pageParameters = new URLSearchParams(window.location.search);
+    const requestedSourceId = pageParameters.get("source");
+    state.selectedId = state.channels.some((channel) => channel.id === requestedSourceId)
+      ? requestedSourceId
+      : state.channels.find(canPlay)?.id ?? state.channels[0]?.id ?? null;
+    state.detailSheetOpen = Boolean(requestedSourceId);
     elements.stats.textContent = t("documented", { count: state.channels.length, date: catalogue.generated_on });
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
@@ -1072,7 +1095,7 @@ async function init() {
       renderDetail();
     }));
     renderList();
-    renderDetail();
+    renderDetail({ startPlayer: pageParameters.get("play") === "1" });
   } catch (error) {
     elements.stats.textContent = t("sourceError");
     elements.detail.innerHTML = `<p class="detail-empty">${t("sourceErrorDetail")}</p>`;

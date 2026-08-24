@@ -39,7 +39,12 @@ from .models import (
     ValidationHistoryEntry,
     ValidationSeed,
 )
-from .site_data import DEFAULT_SITE_DATA_PATH, render_site_data_payload
+from .site_data import (
+    DEFAULT_SITE_DATA_PATH,
+    load_schedules,
+    load_supranational,
+    render_site_data_payload,
+)
 from .validation import (
     CatalogueValidationError,
     ValidationIssue,
@@ -174,7 +179,12 @@ class CatalogueStore:
         prepared["generated_on"] = (generated_on or date.today()).isoformat()
         require_valid_catalogue(prepared)
         site_data = (
-            render_site_data_payload(prepared, load_fallbacks(self.fallbacks_path))
+            render_site_data_payload(
+                prepared,
+                load_fallbacks(self.fallbacks_path),
+                load_supranational(),
+                load_schedules(),
+            )
             if self.site_data_path
             else None
         )

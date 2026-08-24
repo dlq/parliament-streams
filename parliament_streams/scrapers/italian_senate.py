@@ -8,7 +8,16 @@ from typing import Any, cast
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
 
-from .common import FetchRequest, ParsedSchedule, ScheduleEvent, ScraperSource, local_time_label
+from .common import (
+    FetchRequest,
+    ParsedSchedule,
+    ScheduleEvent,
+    ScheduleMetadata,
+    ScraperSource,
+    local_time_label,
+    normalized_events,
+    utc_event_start,
+)
 
 API_URL = "https://webtv.senato.it/api/palimpsest"
 SOURCE: ScraperSource = {
@@ -73,15 +82,18 @@ def parse(*payloads: str, now: datetime | None = None) -> ParsedSchedule:
         return {}
 
     upcoming = [event for event in events if event["start"] >= now]
-    current = upcoming[0] if upcoming else events[-1]
-    current_index = events.index(current)
-    next_event = events[current_index + 1] if current_index + 1 < len(events) else None
-    return {
-        "italy-senate": {
-            "current_event_title": current["title"],
-            "current_event_time": local_time_label(current["start"]),
-            "next_event_title": next_event["title"] if next_event else None,
-            "next_event_time": local_time_label(next_event["start"]) if next_event else None,
-            "confidence": "official_schedule_api",
-        }
+    if not upcoming:
+        return {}
+    next_event = upcoming[0]
+    schedule: ScheduleMetadata = {
+        "current_event_title": None,
+        "current_event_time": None,
+        "next_event_title": next_event["title"],
+        "next_event_time": local_time_label(next_event["start"], "Europe/Rome"),
+        "next_event_start": utc_event_start(next_event["start"]),
+        "confidence": "official_schedule_api",
     }
+    schedule["events"] = normalized_events(
+        "italy-senate", events, now, source_timezone="Europe/Rome"
+    )
+    return {"italy-senate": schedule}

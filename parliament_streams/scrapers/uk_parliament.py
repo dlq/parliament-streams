@@ -12,9 +12,12 @@ from .common import (
     FetchRequest,
     ParsedSchedule,
     ScheduleEvent,
+    ScheduleMetadata,
     ScraperSource,
     clean_html,
     local_time_label,
+    normalized_events,
+    utc_event_start,
 )
 
 API_URL = "https://whatson-api.parliament.uk/calendar/events/list.json"
@@ -95,16 +98,14 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     upcoming = [event for event in events if event["start"] >= now]
     if not upcoming:
         return {}
-    current = upcoming[0]
-    next_event = upcoming[1] if len(upcoming) > 1 else None
-    return {
-        CHANNEL_ID: {
-            "current_event_title": current["title"],
-            "current_event_time": local_time_label(current["start"], "Europe/London"),
-            "next_event_title": next_event["title"] if next_event else None,
-            "next_event_time": local_time_label(next_event["start"], "Europe/London")
-            if next_event
-            else None,
-            "confidence": "official_whatson_calendar_api",
-        }
+    next_event = upcoming[0]
+    schedule: ScheduleMetadata = {
+        "current_event_title": None,
+        "current_event_time": None,
+        "next_event_title": next_event["title"],
+        "next_event_time": local_time_label(next_event["start"], "Europe/London"),
+        "next_event_start": utc_event_start(next_event["start"]),
+        "confidence": "official_whatson_calendar_api",
     }
+    schedule["events"] = normalized_events(CHANNEL_ID, events, now, source_timezone="Europe/London")
+    return {CHANNEL_ID: schedule}

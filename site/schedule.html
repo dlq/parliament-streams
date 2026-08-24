@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Current and upcoming programmes from documented parliamentary video services.">
+    <title>Schedule · Parliament Streams</title>
+    <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
+    <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
+    <link rel="stylesheet" href="styles.css?v=20260824-schedule">
+    <link rel="stylesheet" href="schedule.css?v=20260824-event-quality">
+  </head>
+  <body class="schedule-page">
+    <a class="skip-link" id="schedule-skip-link" href="#programme-guide">Skip to programme guide</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" id="schedule-brand-home" href="./" aria-label="Parliament Streams home">
+          <img class="brand-mark" src="assets/brand/parliaments-mark.png" alt="">
+          <span>Parliament Streams</span>
+        </a>
+        <nav id="schedule-primary-navigation" aria-label="Primary navigation">
+          <a id="schedule-nav-catalogue" href="./">Catalogue</a>
+          <a id="schedule-nav-map" href="map.html">Coverage map</a>
+          <a id="schedule-nav-schedule" href="schedule.html" aria-current="page">Schedule</a>
+          <a href="https://github.com/dlq/parliament-streams" target="_blank" rel="noreferrer">GitHub</a>
+          <label class="locale-control"><span class="visually-hidden" id="schedule-locale-label">Language</span><select id="locale-select"></select></label>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="schedule-intro" aria-labelledby="schedule-title">
+        <div>
+          <h1 id="schedule-title">Schedule</h1>
+          <p class="lede" id="schedule-lede">Current and upcoming programmes published by documented parliamentary video services.</p>
+        </div>
+        <div class="schedule-freshness">
+          <p id="schedule-time-note">Times are shown as published by each source.</p>
+          <p id="schedule-updated" aria-live="polite">Loading schedule data…</p>
+        </div>
+      </section>
+
+      <section class="programme-guide" id="programme-guide" aria-labelledby="guide-title">
+        <div class="guide-heading">
+          <h2 id="guide-title">Programme guide</h2>
+          <a class="text-link" id="schedule-data-link" href="data/schedules.json" target="_blank" rel="noreferrer">View schedule JSON <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="schedule-filters" role="search" aria-label="Schedule filters">
+          <label>
+            <span class="visually-hidden" id="schedule-jurisdiction-label">Jurisdiction</span>
+            <select id="schedule-jurisdiction"><option value="">All jurisdictions</option></select>
+          </label>
+          <label>
+            <span class="visually-hidden" id="schedule-status-label">Listings</span>
+            <select id="schedule-status">
+              <option value="">All channels</option>
+              <option value="current">Current programme listed</option>
+              <option value="next">Next programme listed</option>
+              <option value="playable">Playable here</option>
+            </select>
+          </label>
+        </div>
+        <p class="schedule-results" id="schedule-results" aria-live="polite"></p>
+
+        <div class="schedule-table-wrap" tabindex="0" aria-labelledby="guide-title">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th scope="col" id="schedule-channel-heading">Channel</th>
+                <th scope="col" id="schedule-now-heading">Now</th>
+                <th scope="col" id="schedule-next-heading">Next</th>
+                <th scope="col"><span class="visually-hidden" id="schedule-actions-heading">Actions</span></th>
+              </tr>
+            </thead>
+            <tbody id="schedule-list"></tbody>
+          </table>
+        </div>
+        <p class="schedule-empty" id="schedule-empty" hidden>No programme listings match these filters.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="schedule-footer-copy">Parliament Streams is an independent research catalogue.</span>
+      <span><a id="schedule-data-footer-link" href="data/schedules.json">Schedule data</a> · <a href="https://github.com/dlq/parliament-streams" target="_blank" rel="noreferrer">GitHub</a></span>
+    </footer>
+
+    <script defer src="catalogue-data.js?v=20260824-schedule"></script>
+    <script defer src="i18n.js?v=20260824-schedule"></script>
+    <script defer src="map-i18n.js?v=20260824-schedule"></script>
+    <script defer src="schedule-i18n.js?v=20260824-schedule"></script>
+    <script defer src="schedule.js?v=20260824-event-quality-2"></script>
+  </body>
+</html>

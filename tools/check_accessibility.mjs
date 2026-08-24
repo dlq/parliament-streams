@@ -10,6 +10,9 @@ import { chromium } from "playwright";
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
 const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.json"), "utf8"));
+const documentedAdmin1 = JSON.parse(await readFile(join(root, "site/assets/maps/documented-admin1.geojson"), "utf8"));
+assert.equal(documentedAdmin1.features.length, 25);
+assert(documentedAdmin1.features.every((feature) => feature.geometry.type === "MultiPolygon"));
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }).length;
@@ -106,8 +109,10 @@ try {
         "european-parliament-multimedia-centre": {
           current_event_title: "Committee on the Environment",
           current_event_time: "Live now",
+          current_event_start: "2026-08-17T12:00:00Z",
           next_event_title: "Plenary sitting",
           next_event_time: "4:00 PM",
+          next_event_start: "2026-08-17T16:00:00Z",
           fetched_at: "2026-08-17T12:00:00Z",
         },
         "canada-house-of-commons-parlvu": {
@@ -156,6 +161,8 @@ try {
   assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));
   assert.equal(await page.locator("#metric-updated").innerText(), expectedUpdatedDate);
   assert.equal(await page.locator(".principles-index li").count(), 5);
+  assert.equal(await page.locator("#nav-map").innerText(), "Coverage map");
+  assert.equal(await page.locator("#nav-schedule").innerText(), "Schedule");
   assert.equal(await page.locator("#level-filter").count(), 1);
   assert.equal(await page.locator("#format-filter").count(), 1);
   assert.equal(await page.locator("#playback-filter").count(), 0);
@@ -228,9 +235,9 @@ try {
   assert.match(await page.locator(".fallback-record").innerText(), /Canada House of Commons ParlVU events/);
   assert.match(await page.locator(".fallback-record").innerText(), /Event platform · Event resolver planned · Schedule source/);
   assert.match(await page.locator(".fallback-record").innerText(), /Now: House of Commons sitting/);
-  assert.match(await page.locator(".fallback-record").innerText(), /English · House of Commons · In Progress/);
+  assert.match(await page.locator(".fallback-record").innerText(), /Live now · English · House of Commons/);
   assert.match(await page.locator(".fallback-record").innerText(), /Next: Finance committee/);
-  assert.match(await page.locator(".fallback-record").innerText(), /English · Room 253-D · Not Started/);
+  assert.match(await page.locator(".fallback-record").innerText(), /2:00 PM · English · Room 253-D/);
   assert.match(await page.locator(".fallback-record > dd > .fallback-list > li > a").first().getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
   assert.match(await page.locator(".fallback-schedule a").first().getAttribute("href"), /PowerBrowserV2\/20260819\/-1\/15441/);
   assert.match(await page.locator(".validation-record").innerText(), /LATEST VALIDATION/);
@@ -250,6 +257,8 @@ try {
   assert.match(await page.locator(".evidence-dates").innerText(), /Aug 16, 2026/);
 
   await page.locator("#locale-select").selectOption("fr");
+  assert.equal(await page.locator("#nav-map").innerText(), "Carte de couverture");
+  assert.equal(await page.locator("#nav-schedule").innerText(), "Horaire");
   assert.match(await page.locator('meta[name="description"]').getAttribute("content"), /Points d'accès officiels/);
   assert.match(await page.locator(".programme-fetch-status").innerText(), /Horaire recueilli le/);
   assert.match(await page.locator(".programme-line").first().innerText(), /^Maintenant :/);
@@ -352,6 +361,162 @@ try {
     (element) => Number.parseFloat(getComputedStyle(element).transitionDuration),
   );
   assert(transitionDuration <= 0.001);
+
+  const schedulePage = await context.newPage();
+  await schedulePage.route("**/data/schedules.json", (route) => route.fulfill({
+    contentType: "application/json",
+    body: JSON.stringify({
+      generated_at: "2026-08-17T12:00:00Z",
+      channels: {
+        "european-parliament-multimedia-centre": {
+          current_event_title: "Committee on the Environment",
+          current_event_time: "Live now",
+          current_event_start: "2026-08-17T12:00:00Z",
+          next_event_title: "Plenary sitting",
+          next_event_time: "4:00 PM",
+          next_event_start: "2026-08-17T16:00:00Z",
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
+        "canada-house-of-commons-parlvu": {
+          current_event_title: "House of Commons sitting",
+          current_event_time: "Live now",
+          current_event_status: "In Progress",
+          next_event_title: "Finance committee",
+          next_event_time: "2:00 PM",
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
+        "australia-parliament-youtube": {
+          current_event_title: "Australia Parliament live",
+          current_event_time: "Live now",
+          current_event_status: "Live now",
+          next_event_title: null,
+          next_event_time: null,
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
+      },
+    }),
+  }));
+  await schedulePage.goto(`${baseUrl}schedule.html?lang=en`);
+  await schedulePage.waitForSelector("#schedule-list tr");
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 3);
+  assert.match(await schedulePage.locator("#schedule-updated").innerText(), /Schedule updated/);
+  assert.equal(await schedulePage.locator(".programme-live").count(), 3);
+  assert.match(await schedulePage.locator("#schedule-list").innerText(), /Committee on the Environment/);
+  const expectedLocalTime = await schedulePage.evaluate(() => new Intl.DateTimeFormat("en", {
+    hour: "numeric",
+    minute: "2-digit",
+    timeZoneName: "short",
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  }).format(new Date("2026-08-17T12:00:00Z")));
+  const europeanRow = schedulePage.locator("#schedule-list tr").filter({ hasText: "Committee on the Environment" });
+  assert.equal(await europeanRow.locator(".programme-time").first().innerText(), expectedLocalTime);
+  await schedulePage.locator("#schedule-status").selectOption("next");
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 2);
+  await schedulePage.locator("#schedule-status").selectOption("playable");
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 1);
+  assert.match(await schedulePage.locator(".schedule-watch").getAttribute("href"), /play=1/);
+  await assertNoAxeViolations(schedulePage, "Desktop programme guide");
+  await schedulePage.goto(`${baseUrl}schedule.html?lang=fr`);
+  await schedulePage.waitForSelector("#schedule-list tr");
+  assert.equal(await schedulePage.locator("#schedule-title").innerText(), "Horaire");
+  assert.equal(await schedulePage.locator("#schedule-now-heading").textContent(), "Maintenant");
+  assert.deepEqual(
+    await schedulePage.evaluate(() => window.ParliamentStreamsI18n.locales.flatMap(([code]) => window.ParliamentStreamsScheduleI18n.coverage(code).map((key) => `${code}:${key}`))),
+    [],
+  );
+  await schedulePage.setViewportSize({ width: 320, height: 800 });
+  assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  await assertNoAxeViolations(schedulePage, "Mobile programme guide");
+  await schedulePage.close();
+
+  const mapPage = await context.newPage();
+  await mapPage.goto(`${baseUrl}map.html?lang=en`);
+  await mapPage.waitForSelector(".map-country.is-documented");
+  assert.equal(await mapPage.locator("#jurisdiction-count").innerText(), "55");
+  assert.equal(await mapPage.locator("#source-count").innerText(), String(canonicalCatalogue.channels.length));
+  assert.equal(await mapPage.locator("#playable-count").innerText(), String(expectedPlayableCount));
+  assert.equal(await mapPage.locator("#jurisdiction-list button").count(), 55);
+  assert.equal(await mapPage.locator(".map-country.is-documented").count(), 27);
+  assert.equal(await mapPage.locator(".map-region").count(), 25);
+  assert.match(await mapPage.locator("#map-detail").innerText(), /Canada.*31 sources/s);
+  assert.equal(
+    await mapPage
+      .getByRole("button", { name: "Alberta, Documented, Subnational", exact: true })
+      .evaluate((element) => getComputedStyle(element).fill),
+    "rgb(182, 41, 58)",
+  );
+  await mapPage.getByRole("button", { name: "National", exact: true }).click();
+  await mapPage.getByRole("button", { name: "Brazil, Documented", exact: true }).click();
+  assert.equal(
+    await mapPage
+      .getByRole("button", { name: "Brazil, Documented", exact: true })
+      .evaluate((element) => getComputedStyle(element).fill),
+    "rgb(182, 41, 58)",
+  );
+  assert.equal(
+    await mapPage.getByRole("button", { name: /Brazil National · 1 source/ }).getAttribute("aria-pressed"),
+    "true",
+  );
+  await mapPage.getByRole("button", { name: "International", exact: true }).click();
+  assert.equal(await mapPage.locator("#supranational-picker").count(), 0);
+  assert.equal(await mapPage.locator("#jurisdiction-list button").count(), 4);
+  assert.equal(
+    await mapPage.getByRole("button", { name: /European Union International/ }).getAttribute("aria-pressed"),
+    "true",
+  );
+  assert.match(await mapPage.locator("#map-detail").innerText(), /European Union.*27.*Member States/si);
+  assert.equal(await mapPage.locator(".map-country.is-member").count(), 26);
+  await mapPage.getByRole("button", { name: "Germany, Member State", exact: true }).click();
+  assert.match(await mapPage.locator("#map-detail").innerText(), /EU · Member State.*Germany.*4 sources/s);
+  await mapPage.getByRole("button", { name: "Zoom in", exact: true }).click();
+  await mapPage.waitForTimeout(300);
+  const transformBeforeSubnational = await mapPage.locator(".map-viewport").getAttribute("transform");
+  await mapPage.getByRole("button", { name: "Subnational", exact: true }).click();
+  assert.equal(
+    await mapPage.locator(".map-viewport").getAttribute("transform"),
+    transformBeforeSubnational,
+  );
+  await mapPage.locator("#map-search").fill("Scotland");
+  await mapPage.locator("#map-search").press("Enter");
+  await mapPage.waitForTimeout(300);
+  assert.match(await mapPage.locator("#map-detail").innerText(), /United Kingdom.*Scotland/s);
+  assert.equal(await mapPage.locator("#jurisdiction-visible-count").innerText(), "1 / 55");
+  assert.equal(await mapPage.locator(".map-region.is-selected").count(), 1);
+  assert.notEqual(await mapPage.locator(".map-viewport").getAttribute("transform"), null);
+  assert.match(await mapPage.locator("#map-detail .map-source-list a").first().getAttribute("href"), /source=scottish-parliament-tv/);
+  await assertNoAxeViolations(mapPage, "Desktop coverage map");
+  const mapLocales = await mapPage.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
+  for (const locale of mapLocales) {
+    assert.deepEqual(
+      await mapPage.evaluate((code) => window.ParliamentStreamsMapI18n.coverage(code), locale),
+      [],
+      `Missing map translations for ${locale}`,
+    );
+  }
+  await mapPage.goto(`${baseUrl}map.html?lang=fr`);
+  await mapPage.waitForSelector(".map-country.is-documented");
+  assert.equal(await mapPage.locator("html").getAttribute("lang"), "fr");
+  assert.equal(await mapPage.locator("#map-title").innerText(), "Carte de couverture");
+  assert.equal(await mapPage.getByRole("button", { name: "International", exact: true }).count(), 1);
+  await mapPage.getByRole("button", { name: "Infranational", exact: true }).click();
+  await mapPage.locator("#map-search").fill("Écosse");
+  await mapPage.locator("#map-search").press("Enter");
+  assert.match(await mapPage.locator("#map-detail").innerText(), /Royaume-Uni.*Écosse/s);
+  assert.equal(await mapPage.getByRole("button", { name: "Zoom avant", exact: true }).count(), 1);
+  await assertNoAxeViolations(mapPage, "Localized coverage map");
+  const mapDeepLinkPage = await context.newPage();
+  await mapDeepLinkPage.goto(`${baseUrl}index.html?source=scottish-parliament-tv#catalogue`);
+  await mapDeepLinkPage.waitForSelector('[data-channel-id="scottish-parliament-tv"][aria-pressed="true"]');
+  assert.match(await mapDeepLinkPage.locator("#detail-title").innerText(), /Scottish Parliament TV/);
+  await mapDeepLinkPage.close();
+  await mapPage.setViewportSize({ width: 320, height: 800 });
+  await mapPage.reload();
+  await mapPage.waitForSelector(".map-country.is-documented");
+  assert.equal(await mapPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  await assertNoAxeViolations(mapPage, "Mobile coverage map");
+  await mapPage.close();
 
   const filePage = await context.newPage();
   const fileUrl = new URL("../site/index.html", import.meta.url);

@@ -32,11 +32,11 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     next_text = next_text or first_match(body, r"House next meets\s+(?:on\s+)?([^\.]+\.?)")
     if not status and not next_text:
         return {}
-    status = clean_html(status or "House not currently listed live")
+    current_title = clean_html(status) if status else None
     return {
         "new-zealand-parliament": {
-            "current_event_title": status,
-            "current_event_time": checked_label(now, "Pacific/Auckland"),
+            "current_event_title": current_title,
+            "current_event_time": checked_label(now, "Pacific/Auckland") if current_title else None,
             "next_event_title": "House next meets" if next_text else None,
             "next_event_time": next_text,
             "confidence": "official_calendar",

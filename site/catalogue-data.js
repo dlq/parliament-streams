@@ -382,9 +382,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.stortinget.no/nett-tv",
+          "url": "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Moteprogram/?w=0&yw=all",
           "method": "GET",
-          "kind": "nett_tv_page",
+          "kind": "meeting_programme_page",
           "scraper_status": "planned"
         }
       ],
@@ -467,6 +467,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "weekly_schedule_page",
           "scraper_status": "implemented"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/eventos",
+          "method": "GET",
+          "kind": "open_data_events_api",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -650,6 +657,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget",
           "method": "GET",
           "kind": "upcoming_broadcasts_page",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://www.ft.dk/da/aktuelt/kalender/",
+          "method": "GET",
+          "kind": "parliamentary_calendar_page",
           "scraper_status": "planned"
         }
       ],
@@ -1389,6 +1403,20 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "public_sitting_agenda",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip",
+          "method": "GET",
+          "kind": "open_data_agenda_json_zip",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://event2.assemblee-nationale.fr/programme.php",
+          "method": "GET",
+          "kind": "broadcast_programme_page",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -1558,6 +1586,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "live_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://m.knesset.gov.il/EN/activity/committees",
+          "method": "GET",
+          "kind": "upcoming_committee_meetings_page",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -1724,7 +1759,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/",
+          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/program",
           "method": "GET",
           "kind": "television_programme_page",
           "scraper_status": "planned"
@@ -2320,7 +2355,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "audio_description": "unknown",
         "notes": null
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.parliament.go.th/view/457/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1/TH-TH",
+          "method": "GET",
+          "kind": "meeting_schedule_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "TPchannel is operated by the National Assembly Radio and Television Broadcasting Station and publishes live/OTT access, but no source-specific reuse or embedding terms were found in this pass.",
@@ -2406,6 +2449,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "current_and_upcoming_broadcasts_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://www.nrsr.sk/web/default.aspx?sid=schodze%2Fzoznam",
+          "method": "GET",
+          "kind": "meeting_programme_page",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -2485,7 +2535,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "audio_description": "unknown",
         "notes": null
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://tov.parliament.mn/",
+          "method": "GET",
+          "kind": "meeting_timetable_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "personal_use_pending_review",
         "summary": "DASH experiment from SkyGo/GO+ streaming infrastructure without recorded reuse permission. The official Parliament site publishes a live/session page with meeting video and YouTube references, and GO+ app-store evidence describes a commercial OTT service with official rights, but no source-specific permission was found for third-party use of the DASH manifest.",
@@ -4570,7 +4628,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "audio_description": "unknown",
         "notes": null
       },
-      "epg_sources": [],
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://ivod.ly.gov.tw/index.php/Forecast",
+          "method": "GET",
+          "kind": "meeting_forecast_page",
+          "scraper_status": "planned"
+        }
+      ],
       "permission": {
         "status": "embed_only",
         "summary": "Current catalogue treats this as an official-page/link-out source; terms are not yet reviewed.",
@@ -4918,6 +4984,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "webstreaming_schedule_page",
           "scraper_status": "implemented"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://data.europarl.europa.eu/api/v2/meetings",
+          "method": "GET",
+          "kind": "open_data_meetings_api",
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -4991,6 +5064,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "url": "https://video.consilium.europa.eu/home/en",
           "method": "GET",
           "kind": "council_live_schedule_page",
+          "scraper_status": "planned"
+        },
+        {
+          "scraper": "planned",
+          "url": "https://skribi.consilium.europa.eu/en/meetings/calendar/",
+          "method": "GET",
+          "kind": "meeting_calendar_page",
           "scraper_status": "planned"
         }
       ],
@@ -5134,11 +5214,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "un-webtv-schedule",
           "url": "https://webtv.un.org/en/schedule",
           "method": "GET",
           "kind": "live_schedule_page",
-          "scraper_status": "planned"
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -6056,7 +6136,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.parliament.nsw.gov.au/parliamentary-business/sitting-day-calendar",
+          "url": "https://www.parliament.nsw.gov.au/webcasts",
           "method": "GET",
           "kind": "webcast_and_daily_program_page",
           "scraper_status": "planned"
@@ -6192,9 +6272,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Sitting-Dates/Dates",
+          "url": "https://www.parliament.qld.gov.au/en/work-of-committees/Upcoming-Committee-Business",
           "method": "GET",
-          "kind": "sitting_dates",
+          "kind": "upcoming_broadcast_committee_business",
           "scraper_status": "planned"
         }
       ],
@@ -7187,4 +7267,2139 @@ window.PARLIAMENT_STREAMS_FALLBACKS = {
       "notes": "Treat event pages as research and link-out fallbacks until stable event identifiers, schedule semantics, and reuse terms are documented."
     }
   ]
+};
+window.PARLIAMENT_STREAMS_SUPRANATIONAL = {
+  "schema_version": 1,
+  "generated_on": "2026-08-24",
+  "description": "Membership and participation data used to contextualize supranational parliamentary video sources on the catalogue map.",
+  "organizations": [
+    {
+      "id": "eu",
+      "catalogue_jurisdiction": "European Union",
+      "name": "European Union",
+      "short_name": "EU",
+      "relationship_label": "Member State",
+      "relationship_label_plural": "Member States",
+      "flag": "assets/flags/eu.svg",
+      "member_country_codes": [
+        "AT",
+        "BE",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "DE",
+        "GR",
+        "HU",
+        "IE",
+        "IT",
+        "LV",
+        "LT",
+        "LU",
+        "MT",
+        "NL",
+        "PL",
+        "PT",
+        "RO",
+        "SK",
+        "SI",
+        "ES",
+        "SE"
+      ],
+      "source_url": "https://european-union.europa.eu/principles-countries-history/country-profiles_en",
+      "checked_on": "2026-08-24"
+    },
+    {
+      "id": "coe",
+      "catalogue_jurisdiction": "Council of Europe",
+      "name": "Council of Europe",
+      "short_name": "CoE",
+      "relationship_label": "Member State",
+      "relationship_label_plural": "Member States",
+      "flag": "assets/flags/eu.svg",
+      "member_country_codes": [
+        "AL",
+        "AD",
+        "AM",
+        "AT",
+        "AZ",
+        "BE",
+        "BA",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "GE",
+        "DE",
+        "GR",
+        "HU",
+        "IS",
+        "IE",
+        "IT",
+        "LV",
+        "LI",
+        "LT",
+        "LU",
+        "MT",
+        "MD",
+        "MC",
+        "ME",
+        "NL",
+        "MK",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "SM",
+        "RS",
+        "SK",
+        "SI",
+        "ES",
+        "SE",
+        "CH",
+        "TR",
+        "UA",
+        "GB"
+      ],
+      "source_url": "https://www.coe.int/en/web/portal/46-members-states",
+      "checked_on": "2026-08-24"
+    },
+    {
+      "id": "osce",
+      "catalogue_jurisdiction": "OSCE",
+      "name": "Organization for Security and Co-operation in Europe",
+      "short_name": "OSCE",
+      "relationship_label": "Participating State",
+      "relationship_label_plural": "Participating States",
+      "flag": "assets/flags/osce.svg",
+      "member_country_codes": [
+        "AL",
+        "AD",
+        "AM",
+        "AT",
+        "AZ",
+        "BY",
+        "BE",
+        "BA",
+        "BG",
+        "CA",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "GE",
+        "DE",
+        "GR",
+        "VA",
+        "HU",
+        "IS",
+        "IE",
+        "IT",
+        "KZ",
+        "KG",
+        "LV",
+        "LI",
+        "LT",
+        "LU",
+        "MT",
+        "MD",
+        "MC",
+        "MN",
+        "ME",
+        "NL",
+        "MK",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "RU",
+        "SM",
+        "RS",
+        "SK",
+        "SI",
+        "ES",
+        "SE",
+        "CH",
+        "TJ",
+        "TR",
+        "TM",
+        "UA",
+        "GB",
+        "US",
+        "UZ"
+      ],
+      "source_url": "https://www.osce.org/participating-states",
+      "checked_on": "2026-08-24"
+    },
+    {
+      "id": "un",
+      "catalogue_jurisdiction": "United Nations",
+      "name": "United Nations",
+      "short_name": "UN",
+      "relationship_label": "Member State",
+      "relationship_label_plural": "Member States",
+      "flag": "assets/flags/un.svg",
+      "member_country_codes": [
+        "AF",
+        "AL",
+        "DZ",
+        "AD",
+        "AO",
+        "AG",
+        "AR",
+        "AM",
+        "AU",
+        "AT",
+        "AZ",
+        "BS",
+        "BH",
+        "BD",
+        "BB",
+        "BY",
+        "BE",
+        "BZ",
+        "BJ",
+        "BT",
+        "BO",
+        "BA",
+        "BW",
+        "BR",
+        "BN",
+        "BG",
+        "BF",
+        "BI",
+        "CV",
+        "KH",
+        "CM",
+        "CA",
+        "CF",
+        "TD",
+        "CL",
+        "CN",
+        "CO",
+        "KM",
+        "CG",
+        "CR",
+        "CI",
+        "HR",
+        "CU",
+        "CY",
+        "CZ",
+        "KP",
+        "CD",
+        "DK",
+        "DJ",
+        "DM",
+        "DO",
+        "EC",
+        "EG",
+        "SV",
+        "GQ",
+        "ER",
+        "EE",
+        "SZ",
+        "ET",
+        "FJ",
+        "FI",
+        "FR",
+        "GA",
+        "GM",
+        "GE",
+        "DE",
+        "GH",
+        "GR",
+        "GD",
+        "GT",
+        "GN",
+        "GW",
+        "GY",
+        "HT",
+        "HN",
+        "HU",
+        "IS",
+        "IN",
+        "ID",
+        "IR",
+        "IQ",
+        "IE",
+        "IL",
+        "IT",
+        "JM",
+        "JP",
+        "JO",
+        "KZ",
+        "KE",
+        "KI",
+        "KW",
+        "KG",
+        "LA",
+        "LV",
+        "LB",
+        "LS",
+        "LR",
+        "LY",
+        "LI",
+        "LT",
+        "LU",
+        "MG",
+        "MW",
+        "MY",
+        "MV",
+        "ML",
+        "MT",
+        "MH",
+        "MR",
+        "MU",
+        "MX",
+        "FM",
+        "MC",
+        "MN",
+        "ME",
+        "MA",
+        "MZ",
+        "MM",
+        "NA",
+        "NR",
+        "NP",
+        "NL",
+        "NZ",
+        "NI",
+        "NE",
+        "NG",
+        "MK",
+        "NO",
+        "OM",
+        "PK",
+        "PW",
+        "PA",
+        "PG",
+        "PY",
+        "PE",
+        "PH",
+        "PL",
+        "PT",
+        "QA",
+        "KR",
+        "MD",
+        "RO",
+        "RU",
+        "RW",
+        "KN",
+        "LC",
+        "VC",
+        "WS",
+        "SM",
+        "ST",
+        "SA",
+        "SN",
+        "RS",
+        "SC",
+        "SL",
+        "SG",
+        "SK",
+        "SI",
+        "SB",
+        "SO",
+        "ZA",
+        "SS",
+        "ES",
+        "LK",
+        "SD",
+        "SR",
+        "SE",
+        "CH",
+        "SY",
+        "TJ",
+        "TZ",
+        "TH",
+        "TL",
+        "TG",
+        "TO",
+        "TT",
+        "TN",
+        "TR",
+        "TM",
+        "TV",
+        "UG",
+        "UA",
+        "AE",
+        "GB",
+        "US",
+        "UY",
+        "UZ",
+        "VU",
+        "VE",
+        "VN",
+        "YE",
+        "ZM",
+        "ZW"
+      ],
+      "source_url": "https://www.un.org/en/about-us/member-states",
+      "checked_on": "2026-08-24"
+    }
+  ]
+};
+window.PARLIAMENT_STREAMS_SCHEDULES = {
+  "channels": {
+    "brazil-tv-camara": {
+      "confidence": "official_weekly_schedule",
+      "current_event_id": "generated-f53cb05fa199edad1d34",
+      "current_event_start": "2026-08-24T20:30:00Z",
+      "current_event_status": "live",
+      "current_event_time": "Live now",
+      "current_event_title": "Câmara Debate: Os impactos da pirataria no Brasil - Dep. Júlio Lopes (PP-RJ) e Dep. Luiz Carlos Hauly (PODE-PR)",
+      "events": [
+        {
+          "end": "2026-08-24T03:30:00Z",
+          "id": "generated-b61872fd288f9e7bb188",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T03:00:00Z",
+          "status": "completed",
+          "title": "Documentário 100 Anos de Cultura e Conflitos: A Guerra do Paraguai"
+        },
+        {
+          "end": "2026-08-24T04:00:00Z",
+          "id": "generated-53f2058cd06166d4daef",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T03:30:00Z",
+          "status": "completed",
+          "title": "Documentário Deu Bola: Games"
+        },
+        {
+          "end": "2026-08-24T06:30:00Z",
+          "id": "generated-1ae7a03f595426e6d938",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T04:00:00Z",
+          "status": "completed",
+          "title": "Comissão de Educação: Audiência pública: Proibição de licenciaturas 100% EaD e novas diretrizes do CNE (Gravado: 12/08/2026 - Duração: 2h13) com Libras"
+        },
+        {
+          "end": "2026-08-24T08:30:00Z",
+          "id": "generated-35df82d61e8631343f03",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T06:30:00Z",
+          "status": "completed",
+          "title": "Comissão de Desenvolvimento Econômico - Audiência pública: Marco de Fomento à Economia Digital no Brasil (Gravado: 12/08/26 - Duração: 2h03) com Libras"
+        },
+        {
+          "end": "2026-08-24T09:00:00Z",
+          "id": "generated-55ceb99cb32572bf8ae4",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T08:30:00Z",
+          "status": "completed",
+          "title": "Documentário TV Câmara: Memórias: Tarcísio Delgado"
+        },
+        {
+          "end": "2026-08-24T09:30:00Z",
+          "id": "generated-185a473871d6f933e00f",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T09:00:00Z",
+          "status": "completed",
+          "title": "Câmara Debate: Os impactos da pirataria no Brasil - Dep. Júlio Lopes (PP-RJ) e Dep. Luiz Carlos Hauly (PODE-PR)"
+        },
+        {
+          "end": "2026-08-24T09:45:00Z",
+          "id": "generated-ada116286d38b3344204",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T09:30:00Z",
+          "status": "completed",
+          "title": "Palavra Aberta: Direitos das pessoas com TDAH - Dep. Alex Manente (Cidadania-SP)"
+        },
+        {
+          "end": "2026-08-24T10:00:00Z",
+          "id": "generated-2819abf1797a543d3498",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T09:45:00Z",
+          "status": "completed",
+          "title": "Palavra Aberta: Comissão aprova criação do Fundo Nacional de Combate ao Câncer - Dep. Pedro Lucas Fernandes (União-MA)"
+        },
+        {
+          "end": "2026-08-24T10:30:00Z",
+          "id": "generated-46209e716056059fdfcf",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T10:00:00Z",
+          "status": "completed",
+          "title": "Entenda as Eleições: Urna eletrônica - Tecnologia e segurança"
+        },
+        {
+          "end": "2026-08-24T10:45:00Z",
+          "id": "generated-2599f55c65314f1781d1",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T10:30:00Z",
+          "status": "completed",
+          "title": "Palavra Aberta: Reaproveitamento de painéis solares e baterias descartados - Dep. Clodoaldo Magalhães (PV-PE)"
+        },
+        {
+          "end": "2026-08-24T11:00:00Z",
+          "id": "generated-1ca4bf6622e1fee74fbc",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T10:45:00Z",
+          "status": "completed",
+          "title": "Palavra Aberta: Proposta reduz área de proteção ambiental da Baleia Franca - Dep. Geovania de Sá (Republicanos-SC)"
+        },
+        {
+          "end": "2026-08-24T12:00:00Z",
+          "id": "generated-6ebce3652f8c0f80ec37",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T11:00:00Z",
+          "status": "completed",
+          "title": "Painel Eletrônico (AO VIVO)"
+        },
+        {
+          "end": "2026-08-24T13:03:00Z",
+          "id": "generated-125b7eb7eedd6c6dd317",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T12:00:00Z",
+          "status": "completed",
+          "title": "Participação Popular: Saúde mental dos jovens"
+        },
+        {
+          "end": "2026-08-24T14:15:00Z",
+          "id": "generated-439f994e43f6e318367d",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T13:03:00Z",
+          "status": "completed",
+          "title": "Câmara Agora (AO VIVO)"
+        },
+        {
+          "end": "2026-08-24T14:40:00Z",
+          "id": "generated-8b703f305301c37a7b23",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T14:15:00Z",
+          "status": "completed",
+          "title": "Qual a Questão? Quebra de patentes de medicamentos"
+        },
+        {
+          "end": "2026-08-24T15:00:00Z",
+          "id": "generated-a03dcf25ab1f7ce0cece",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T14:40:00Z",
+          "status": "completed",
+          "title": "Interprogramas TV Câmara"
+        },
+        {
+          "end": "2026-08-24T16:00:00Z",
+          "id": "generated-b3f8e37fc1fbec804bfd",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T15:00:00Z",
+          "status": "completed",
+          "title": "Bora Entender: Assessoramento legislativo (AO VIVO)"
+        },
+        {
+          "end": "2026-08-24T16:30:00Z",
+          "id": "generated-5309444fbfa4c1a75f19",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T16:00:00Z",
+          "status": "completed",
+          "title": "Ponto de Vista: A cidade contra as pessoas"
+        },
+        {
+          "end": "2026-08-24T17:00:00Z",
+          "id": "generated-3b0f5be706f0984cc04e",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T16:30:00Z",
+          "status": "completed",
+          "title": "Direto da Câmara (AO VIVO)"
+        },
+        {
+          "end": "2026-08-24T17:15:00Z",
+          "id": "generated-7ac87bc71741d32f498a",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T17:00:00Z",
+          "status": "completed",
+          "title": "Entenda as Eleições: Urna eletrônica - Tecnologia e segurança"
+        },
+        {
+          "end": "2026-08-24T20:30:00Z",
+          "id": "generated-aa458652e6bf3d663951",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T17:15:00Z",
+          "status": "completed",
+          "title": "Secretaria da Mulher - Seminário: 5 Anos do Observatório Nacional da Mulher na Política (Gravado 19/08/26 - Duração: 3h40) com Libras"
+        },
+        {
+          "end": "2026-08-24T21:00:00Z",
+          "id": "generated-f53cb05fa199edad1d34",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T20:30:00Z",
+          "status": "live",
+          "title": "Câmara Debate: Os impactos da pirataria no Brasil - Dep. Júlio Lopes (PP-RJ) e Dep. Luiz Carlos Hauly (PODE-PR)"
+        },
+        {
+          "end": "2026-08-24T21:30:00Z",
+          "id": "generated-c11d9fd56371e3ad6ffd",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T21:00:00Z",
+          "status": "scheduled",
+          "title": "Documentário: Meia Lua Falciforme"
+        },
+        {
+          "end": "2026-08-24T22:00:00Z",
+          "id": "generated-bbd756ad6cb30f646813",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T21:30:00Z",
+          "status": "scheduled",
+          "title": "Elas Pautam: Saúde e dignidade menstrual"
+        },
+        {
+          "end": "2026-08-24T23:00:00Z",
+          "id": "generated-77700da07e9f5a55f2e1",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T22:00:00Z",
+          "status": "scheduled",
+          "title": "Bora Entender: Assessoramento legislativo"
+        },
+        {
+          "end": "2026-08-24T23:30:00Z",
+          "id": "generated-9ebca9828d74cbc1e330",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T23:00:00Z",
+          "status": "scheduled",
+          "title": "Parlamento Brasil: Edição nº 487"
+        },
+        {
+          "end": "2026-08-25T00:00:00Z",
+          "id": "generated-ef9bfc1d168b83c579da",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-24T23:30:00Z",
+          "status": "scheduled",
+          "title": "Documentário: Comunicação violada - Jornalismo sob ataque nas redes"
+        },
+        {
+          "end": "2026-08-25T01:00:00Z",
+          "id": "generated-4d3ccdbecdb455eee200",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-25T00:00:00Z",
+          "status": "scheduled",
+          "title": "Participação Popular: Controle populacional de cães e gatos"
+        },
+        {
+          "end": "2026-08-25T02:00:00Z",
+          "id": "generated-25c83cd44d6e6675a8b7",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-25T01:00:00Z",
+          "status": "scheduled",
+          "title": "Encontro com a Autora: Mary Del Priore"
+        },
+        {
+          "end": "2026-08-25T02:30:00Z",
+          "id": "generated-a36b824d34c4d7c5b2e2",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-25T02:00:00Z",
+          "status": "scheduled",
+          "title": "Ponto de Vista: A cidade contra as pessoas"
+        },
+        {
+          "end": "2026-08-25T02:45:00Z",
+          "id": "generated-70afce49868d29a2f842",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-25T02:30:00Z",
+          "status": "scheduled",
+          "title": "Entenda as Eleições: Urna eletrônica - Tecnologia e segurança"
+        },
+        {
+          "id": "generated-40a6993d90e6594f7613",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Sao_Paulo",
+          "start": "2026-08-25T02:45:00Z",
+          "status": "scheduled",
+          "title": "Palavra Aberta: Reaproveitamento de painéis solares e baterias descartados - Dep. Clodoaldo Magalhães (PV-PE)"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "generated-c11d9fd56371e3ad6ffd",
+      "next_event_start": "2026-08-24T21:00:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-08-24T21:00:00Z",
+      "next_event_title": "Documentário: Meia Lua Falciforme",
+      "scraper": "brazil-tv-camara",
+      "source_url": "https://www.camara.leg.br/tv/programacao-semanal"
+    },
+    "canada-senate-senvu": {
+      "confidence": "official_harmony_upcoming_events_page",
+      "current_event_time": null,
+      "current_event_title": null,
+      "events": [
+        {
+          "id": "15441",
+          "identifier_kind": "official",
+          "language": "en",
+          "location": "Room B45, Senate of Canada Building, 2 Rideau Street, Ottawa ON",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-27T14:00:00Z",
+          "status": "scheduled",
+          "title": "DVSC meeting no. 1 - Subcommittee on Diversity",
+          "url": "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260824/-1/15441"
+        },
+        {
+          "id": "15434",
+          "identifier_kind": "official",
+          "language": "en",
+          "location": "Senate Chamber, Senate of Canada Building, 2 Rideau Street, Ottawa ON",
+          "source_timezone": "America/Toronto",
+          "start": "2026-09-28T22:00:00Z",
+          "status": "scheduled",
+          "title": "Senate sitting no. 87",
+          "url": "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260824/-1/15434"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "15441",
+      "next_event_language": "en",
+      "next_event_location": "Room B45, Senate of Canada Building, 2 Rideau Street, Ottawa ON",
+      "next_event_start": "2026-08-27T14:00:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-08-27T14:00:00Z",
+      "next_event_title": "DVSC meeting no. 1 - Subcommittee on Diversity",
+      "next_event_url": "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260824/-1/15441",
+      "scraper": "canada-harmony",
+      "source_url": "https://senparlvu.parl.gc.ca/Harmony/"
+    },
+    "cpac-ca": {
+      "confidence": "official_schedule",
+      "current_event_id": "generated-52633dc69c31ff6a0f02",
+      "current_event_start": "2026-08-24T20:20:30Z",
+      "current_event_status": "live",
+      "current_event_time": "Live now",
+      "current_event_title": "Public Record",
+      "events": [
+        {
+          "end": "2026-08-24T14:00:00Z",
+          "id": "generated-1bff554b58eaa4d3093b",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T12:46:15Z",
+          "status": "completed",
+          "title": "In Committee from the Senate of Canada"
+        },
+        {
+          "end": "2026-08-24T15:00:00Z",
+          "id": "generated-7ed48754928145b981e7",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T14:00:00Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T15:23:15Z",
+          "id": "generated-a01d7cdaa6e425fda427",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T15:00:00Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T15:59:45Z",
+          "id": "generated-c1a91adb3d5033863c5a",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T15:23:15Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T16:00:00Z",
+          "id": "generated-fa4f6f0bf6fd40930f07",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T15:59:45Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T18:32:45Z",
+          "id": "generated-b520aed4c4ce94f951e9",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T16:00:00Z",
+          "status": "completed",
+          "title": "Headline Politics"
+        },
+        {
+          "end": "2026-08-24T19:20:15Z",
+          "id": "generated-dfd3c893936b9c4fdf03",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T18:32:45Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T19:58:15Z",
+          "id": "generated-c2789c5ac29eaa6597e9",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T19:20:15Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T20:20:30Z",
+          "id": "generated-a9cd617d69643cf361f5",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T19:58:15Z",
+          "status": "completed",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T21:00:00Z",
+          "id": "generated-52633dc69c31ff6a0f02",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T20:20:30Z",
+          "status": "live",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-24T23:00:00Z",
+          "id": "generated-f5096e2eca987516e027",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T21:00:00Z",
+          "status": "scheduled",
+          "title": "Headline Politics"
+        },
+        {
+          "end": "2026-08-25T00:00:00Z",
+          "id": "generated-15ecd7f9f8234274b5b8",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-24T23:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T02:00:00Z",
+          "id": "generated-17a184a97465b9ff4ad4",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T00:00:00Z",
+          "status": "scheduled",
+          "title": "Headline Politics"
+        },
+        {
+          "end": "2026-08-25T04:00:00Z",
+          "id": "generated-d060ebf7587b6f68a0c7",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T02:00:00Z",
+          "status": "scheduled",
+          "title": "Headline Politics"
+        },
+        {
+          "end": "2026-08-25T04:43:15Z",
+          "id": "generated-1edb8d6362910ec757ef",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T04:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T05:26:30Z",
+          "id": "generated-0639ee4610e8ae1fd1b9",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T04:43:15Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T06:27:30Z",
+          "id": "generated-d83b6961ba385ddfccfd",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T05:26:30Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T07:27:30Z",
+          "id": "generated-e7aaa037eee4029c9539",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T06:27:30Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T08:12:30Z",
+          "id": "generated-3bb84072715d90632942",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T07:27:30Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T09:00:00Z",
+          "id": "generated-859c3c6397a547f70792",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T08:12:30Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T10:57:00Z",
+          "id": "generated-c2a953eb0f1bf840460d",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T09:00:00Z",
+          "status": "scheduled",
+          "title": "In Committee from the Senate of Canada"
+        },
+        {
+          "end": "2026-08-25T12:46:20Z",
+          "id": "generated-22b64bce9056be5cf891",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T10:57:00Z",
+          "status": "scheduled",
+          "title": "In Committee from the Senate of Canada"
+        },
+        {
+          "end": "2026-08-25T14:00:00Z",
+          "id": "generated-e538b382b62b57259033",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T12:46:20Z",
+          "status": "scheduled",
+          "title": "In Committee from the Senate of Canada"
+        },
+        {
+          "end": "2026-08-25T14:28:45Z",
+          "id": "generated-31e9ca5cacc2ae345c54",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T14:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T15:00:00Z",
+          "id": "generated-3764625817d25fc8bae3",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T14:28:45Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T15:17:00Z",
+          "id": "generated-99ba9619484137991ae1",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T15:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T16:00:00Z",
+          "id": "generated-fbd99977042c5d8073bf",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T15:17:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T16:17:15Z",
+          "id": "generated-49e5cceb559c45e0dd96",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T16:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T17:00:00Z",
+          "id": "generated-08d33b3d77f3574df9cf",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T16:17:15Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T17:47:15Z",
+          "id": "generated-e2911195eef892d01bb1",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T17:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T18:00:00Z",
+          "id": "generated-2df9e289d39cd26cb43b",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T17:47:15Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T18:26:30Z",
+          "id": "generated-1f34d989f78a67bed889",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T18:00:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T19:04:00Z",
+          "id": "generated-0d71a89385e6d9e51b41",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T18:26:30Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "end": "2026-08-25T20:04:00Z",
+          "id": "generated-4d2c36f124ed9c7836bd",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T19:04:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        },
+        {
+          "id": "generated-0d83974d0e352f06a09c",
+          "identifier_kind": "generated",
+          "source_timezone": "America/Toronto",
+          "start": "2026-08-25T20:04:00Z",
+          "status": "scheduled",
+          "title": "Public Record"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "generated-f5096e2eca987516e027",
+      "next_event_start": "2026-08-24T21:00:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-08-24T21:00:00Z",
+      "next_event_title": "Headline Politics",
+      "scraper": "cpac",
+      "source_url": "https://www.cpac.ca/schedule/"
+    },
+    "eu-audiovisual-ebs": {
+      "confidence": "official_schedule",
+      "current_event_time": null,
+      "current_event_title": null,
+      "events": [
+        {
+          "end": "2026-08-24T10:19:31Z",
+          "id": "generated-b6fc6a3f2f5afc14c48f",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Brussels",
+          "start": "2026-08-24T10:15:10Z",
+          "status": "completed",
+          "title": "Message by President of the European Commission Ursula von der LEYEN at the ONS Conference"
+        },
+        {
+          "end": "2026-08-24T11:23:16Z",
+          "id": "generated-a342c342f351d0cc3306",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Brussels",
+          "start": "2026-08-24T11:15:10Z",
+          "status": "completed",
+          "title": "President of the European Council António COSTA in Kyiv, Ukraine"
+        },
+        {
+          "end": "2026-08-24T14:38:04Z",
+          "id": "generated-17c60ee59255d7826586",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Brussels",
+          "start": "2026-08-24T14:30:10Z",
+          "status": "completed",
+          "title": "EC ARCHIVES"
+        },
+        {
+          "end": "2026-08-24T16:32:14Z",
+          "id": "generated-f2c740674a39a64b5e88",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Brussels",
+          "start": "2026-08-24T16:00:10Z",
+          "status": "completed",
+          "title": "President of the European Council António COSTA in Kyiv, Ukraine"
+        },
+        {
+          "end": "2026-08-24T16:59:41Z",
+          "id": "generated-58f8b50c8356f144b8e8",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Brussels",
+          "start": "2026-08-24T16:45:10Z",
+          "status": "completed",
+          "title": "President of the European Council António COSTA visit to Ukraine"
+        },
+        {
+          "end": "2026-08-25T10:00:00Z",
+          "id": "generated-1aabd72c3110cb244d2d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Brussels",
+          "start": "2026-08-25T10:00:00Z",
+          "status": "scheduled",
+          "title": "EC Midday press briefing of 25/08/2026"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "generated-1aabd72c3110cb244d2d",
+      "next_event_start": "2026-08-25T10:00:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-08-25T10:00:00Z",
+      "next_event_title": "EC Midday press briefing of 25/08/2026",
+      "scraper": "ebs-grid",
+      "source_url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20260824&dateTo=20260825&withCompleteThesaurusData=true"
+    },
+    "portugal-artv": {
+      "confidence": "official_open_data_agenda",
+      "current_event_time": null,
+      "current_event_title": null,
+      "events": [
+        {
+          "id": "generated-29096e54ab4c22a1475f",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Lisbon",
+          "start": "2026-09-08T14:30:00Z",
+          "status": "scheduled",
+          "title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias"
+        },
+        {
+          "id": "generated-6b8b5d79529dabb9ef2c",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Lisbon",
+          "start": "2026-09-09T08:30:00Z",
+          "status": "scheduled",
+          "title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias"
+        },
+        {
+          "id": "generated-5f4d99c9fcb653c13949",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Lisbon",
+          "start": "2026-09-09T10:00:00Z",
+          "status": "scheduled",
+          "title": "Comissão Eventual para a Resiliência Nacional, Prevenção de Catástrofes Naturais e Acompanhamento do Portugal Transformação, Recuperação e Resiliência (PTRR)"
+        },
+        {
+          "id": "generated-92bf85a42c9c09b8f0b7",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Lisbon",
+          "start": "2026-09-09T13:00:00Z",
+          "status": "scheduled",
+          "title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias"
+        },
+        {
+          "id": "generated-c04cdba165dc99b97323",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Lisbon",
+          "start": "2026-09-10T13:00:00Z",
+          "status": "scheduled",
+          "title": "Comissão Eventual para a Resiliência Nacional, Prevenção de Catástrofes Naturais e Acompanhamento do Portugal Transformação, Recuperação e Resiliência (PTRR)"
+        },
+        {
+          "id": "generated-be2447ee869cc6945a1c",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/Lisbon",
+          "start": "2026-09-10T14:00:00Z",
+          "status": "scheduled",
+          "title": "Comissão Eventual para a Resiliência Nacional, Prevenção de Catástrofes Naturais e Acompanhamento do Portugal Transformação, Recuperação e Resiliência (PTRR)"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "generated-29096e54ab4c22a1475f",
+      "next_event_start": "2026-09-08T14:30:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-09-08T14:30:00Z",
+      "next_event_title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+      "scraper": "portugal-open-data-agenda",
+      "source_url": "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx"
+    },
+    "uk-parliament-youtube": {
+      "confidence": "official_whatson_calendar_api",
+      "current_event_time": null,
+      "current_event_title": null,
+      "events": [
+        {
+          "id": "generated-8e8a6564b0a8e8b0ccd8",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T10:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Industry and Regulators Committee"
+        },
+        {
+          "id": "generated-2f68d21c4f20ab07e0ec",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T10:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Provision of face-to-face banking services in rural areas"
+        },
+        {
+          "id": "generated-daf3a8248c4995c0076d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T12:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Future of science facilities and laboratories"
+        },
+        {
+          "id": "generated-43cf08045fc24e671fd9",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T13:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Communications and Digital Committee"
+        },
+        {
+          "id": "generated-6a2556daa4eaeb761b41",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T13:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Built Environment Committee"
+        },
+        {
+          "id": "generated-9719622f2a484f78fa4b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T13:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Select & Joint Committees: Education Committee"
+        },
+        {
+          "id": "generated-a2a40b652d33f32b7b5d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T13:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Foreign, Commonwealth and Development (including Topical Questions)"
+        },
+        {
+          "id": "generated-8396e1be93b770e8a51a",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T13:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Baroness Lowe of Armley and Lord Macintosh of Eastwood"
+        },
+        {
+          "id": "generated-8d4fcfeda151f865f3da",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T14:45:00Z",
+          "status": "scheduled",
+          "title": "Lords - Grand Committee: Cyber Security and Resilience (Network and Information Systems) Bill – committee stage (day 1 )"
+        },
+        {
+          "id": "generated-a50a694ace3ed5c76646",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T15:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Future of UK financial services"
+        },
+        {
+          "id": "generated-69c3ed0fbd9685e2cc81",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T16:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Select & Joint Committees: Backbench Business Committee"
+        },
+        {
+          "id": "generated-4710a187781851be641a",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T17:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Impact of local government reorganisation on Cambridgeshire"
+        },
+        {
+          "id": "generated-0bf182be958ee75e22ae",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-01T17:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Aluminium recycling and local authorities"
+        },
+        {
+          "id": "generated-24bd874c4c5e8d8b5260",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Impact of the 2016 EU membership referendum on the UK"
+        },
+        {
+          "id": "generated-eb571133d96e1af7c805",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T09:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Financial Services Regulation Committee"
+        },
+        {
+          "id": "generated-f7c3c7fcbbcaa8332fa7",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T09:15:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Constitution Committee"
+        },
+        {
+          "id": "generated-ff6c333bb01009d1e94c",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T09:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Northern Ireland Scrutiny Committee"
+        },
+        {
+          "id": "generated-db033a596bdcb8da5545",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T09:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: International Relations and Defence Committee"
+        },
+        {
+          "id": "generated-a4708d2eddb5ac964189",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T10:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Potential merits of removing the qualifying period for Disability Living Allowance for children"
+        },
+        {
+          "id": "generated-c68594e15c08d200d43b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T10:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Wales"
+        },
+        {
+          "id": "generated-3785f4f7c0634b1e746d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T11:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Prime Minister's Question Time"
+        },
+        {
+          "id": "generated-e5da9ccb83fa3d097ed0",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T13:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Select & Joint Committees: Women and Equalities Committee"
+        },
+        {
+          "id": "generated-6502b278334f8bdb073f",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T13:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Government support for rural upper tier local authorities"
+        },
+        {
+          "id": "generated-adb98d4c7a26bbebc2de",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T14:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Police and Electoral Commission and investigations in suspected breaches of electoral finance law"
+        },
+        {
+          "id": "generated-a283b02593694249ea03",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T15:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Impact of changes to employer National Insurance contributions on small businesses in Hampshire"
+        },
+        {
+          "id": "generated-18e0c766ffb0553b999f",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T15:15:00Z",
+          "status": "scheduled",
+          "title": "Lords - Grand Committee: Building Safety Levy (Amendment) (England) Regulations 2026"
+        },
+        {
+          "id": "generated-77ba17eeb34e535e8bfd",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-02T15:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Impact of levels of global tin availability on the economy"
+        },
+        {
+          "id": "generated-80785e7ad5cae17337e0",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Digital, Culture, Media and Sport (including Topical Questions)"
+        },
+        {
+          "id": "generated-97b391ecaf8c50d41fec",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T09:10:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Church Commissioners and House of Commons Commission and Public Accounts Commission and Restoration and Renewal Client Board and Speaker’s Committee on the Electoral Commission"
+        },
+        {
+          "id": "generated-ae82a18c3f825830de7d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T09:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Domestic Abuse Act 2021 Committee"
+        },
+        {
+          "id": "generated-d327d37fd6c710931292",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T10:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Opt-out collective court actions and connected litigation funding"
+        },
+        {
+          "id": "generated-55bdb497dd89316076fb",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T11:15:00Z",
+          "status": "scheduled",
+          "title": "Lords - Grand Committee: Cyber Security and Resilience (Network and Information Systems) Bill - committee stage (day 2)"
+        },
+        {
+          "id": "generated-c156e9bc4a7472a68ee4",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T12:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Vaccination rates in England"
+        },
+        {
+          "id": "generated-e280f619b844ee6c401d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-03T14:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Security assessment on global biodiversity loss, ecosystem collapse and national security, published in January 2026"
+        },
+        {
+          "id": "generated-8bfabd5b4c1098703da1",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-04T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Infants, Parents and Carers Bill: Second Reading"
+        },
+        {
+          "id": "generated-64151f05843562fb5303",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-04T09:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Report from the Economic Affairs Committee: 'Preparing for an ageing society '"
+        },
+        {
+          "id": "generated-cca7ce23f24f948c8a0b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-07T13:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: National Resilience Committee"
+        },
+        {
+          "id": "generated-9acb189654d4a7d33743",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-07T13:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Housing, Communities and Local Government (including Topical Questions)"
+        },
+        {
+          "id": "generated-5b36bcf55410daa1d150",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-07T13:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Success of neighbourhood health services in reducing demand for hospital care and accessing primary care"
+        },
+        {
+          "id": "generated-f6b020b9f9384a88a16b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-07T14:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Select & Joint Committees: Public Accounts Committee"
+        },
+        {
+          "id": "generated-e9724dabb50b49e25456",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-07T15:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: e-petition 763161 relating to surrogacy law and legal parenthood"
+        },
+        {
+          "id": "generated-3c839fea1e6a0de526b4",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-07T17:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: e-petition 746640 relating to crimes motivated by misogyny and hate crime law"
+        },
+        {
+          "id": "generated-6b30f6e8325e0a1f5de7",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-08T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Safety of the Jewish community"
+        },
+        {
+          "id": "generated-4abbc144f5ba9ba57d37",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-08T09:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Science and Technology Committee"
+        },
+        {
+          "id": "generated-c7089fb352ad52df379b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-08T10:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Treasury (including Topical Questions)"
+        },
+        {
+          "id": "generated-8a9d56cb113d0575e0e8",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-08T13:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Review of the Data Protection (Adequacy) (United States of America) Regulations 2023"
+        },
+        {
+          "id": "generated-11831a27c6935cab2f3b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-08T14:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Economic Affairs Committee"
+        },
+        {
+          "id": "generated-0fc86d92edd879e2d556",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-08T14:45:00Z",
+          "status": "scheduled",
+          "title": "Lords - Grand Committee: Railways Bill - committee stage (day 1)"
+        },
+        {
+          "id": "generated-92628c8e9eae6fd742f7",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-09T10:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Women and Equalities (including Topical Questions)"
+        },
+        {
+          "id": "generated-41c88f2c7f857624ca6a",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-09T11:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Prime Minister's Question Time"
+        },
+        {
+          "id": "generated-289bf918314c2aec9a95",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-09T14:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Establishment of a regulatory regime for funeral directors"
+        },
+        {
+          "id": "generated-065bd00bb0954f39967a",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-09T15:15:00Z",
+          "status": "scheduled",
+          "title": "Lords - Grand Committee: Cyber Security and Resilience (Network and Information Systems) Bill - committee stage (day 4)"
+        },
+        {
+          "id": "generated-a8d5bfce26ec82e7fbaa",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-10T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Select & Joint Committees: Public Accounts Committee"
+        },
+        {
+          "id": "generated-ba948b24da319921b0ee",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-10T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Cabinet Office (including Topical Questions)"
+        },
+        {
+          "id": "generated-d436deeb7c2fc3f9f8ef",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-10T10:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Lord Jabbar"
+        },
+        {
+          "id": "generated-360d085ad6b4ab177dc7",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-10T11:15:00Z",
+          "status": "scheduled",
+          "title": "Lords - Grand Committee: Railways Bill - committee stage (day 2)"
+        },
+        {
+          "id": "generated-702cfe763fa9045fe9c3",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-10T12:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Potential merits of reform of the vascular sector"
+        },
+        {
+          "id": "generated-3fc55a18e0fba3797f62",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-10T14:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Contribution of fathers and positive male role models to families and society"
+        },
+        {
+          "id": "generated-2fca4653d79c05abf689",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-11T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Terminally Ill Adults (End of Life) Bill: Second Reading"
+        },
+        {
+          "id": "generated-186224f03292ab5c3440",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-11T09:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Leaseholder Remediation (Building Safety) Bill - second reading"
+        },
+        {
+          "id": "generated-f56821d1d013face3abe",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-14T13:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Education (including Topical Questions)"
+        },
+        {
+          "id": "generated-a6fc74c7cef53260b6d8",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-14T13:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Combatting international fraud during the UK's two-year presidency of the Financial Action Task Force"
+        },
+        {
+          "id": "generated-77666a801e6d0658bab5",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-14T14:00:00Z",
+          "status": "scheduled",
+          "title": "Commons - Select & Joint Committees: Public Accounts Committee"
+        },
+        {
+          "id": "generated-2501bc18c3772729aa9d",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-14T15:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: e-petition 762640 relating to a referendum on public ownership of the water sector"
+        },
+        {
+          "id": "generated-c6f8a8315982738a841b",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-15T08:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Westminster Hall: Building safety remediation of residential buildings"
+        },
+        {
+          "id": "generated-235414992fecca98e4dc",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-15T10:30:00Z",
+          "status": "scheduled",
+          "title": "Commons - Main Chamber: Justice (including Topical Questions)"
+        },
+        {
+          "id": "generated-8156f0de8eddf842f972",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-15T13:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Target of 1.5 million new homes in this Parliament"
+        },
+        {
+          "id": "generated-1f1fcca4b0a2b1b27f4c",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-15T14:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: Economic Affairs Committee"
+        },
+        {
+          "id": "generated-c900437ad84cfba2e8b0",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-16T09:30:00Z",
+          "status": "scheduled",
+          "title": "Lords - Select & Joint Committees: International Relations and Defence Committee"
+        },
+        {
+          "id": "generated-274d54080ed8fc0a4754",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-16T14:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Prisoners released on licence serving indeterminate sentences for public protection"
+        },
+        {
+          "id": "generated-86e546c9222573c0df00",
+          "identifier_kind": "generated",
+          "source_timezone": "Europe/London",
+          "start": "2026-09-17T10:00:00Z",
+          "status": "scheduled",
+          "title": "Lords - Main Chamber: Objectives for the G20 summit in 2027"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "generated-8e8a6564b0a8e8b0ccd8",
+      "next_event_start": "2026-09-01T10:00:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-09-01T10:00:00Z",
+      "next_event_title": "Lords - Select & Joint Committees: Industry and Regulators Committee",
+      "scraper": "uk-parliament",
+      "source_url": "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-08-24&endDate=2026-09-24"
+    },
+    "un-web-tv": {
+      "confidence": "official_live_schedule",
+      "current_event_id": "143760",
+      "current_event_language": "en",
+      "current_event_start": "2026-08-24T22:30:00Z",
+      "current_event_status": "live",
+      "current_event_time": "Live now",
+      "current_event_title": "Security Council Media Stakeout",
+      "current_event_url": "https://webtv.un.org/en/asset/k1c/k1cyolgn7e",
+      "events": [
+        {
+          "id": "143760",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-24T22:30:00Z",
+          "status": "live",
+          "title": "Security Council Media Stakeout",
+          "url": "https://webtv.un.org/en/asset/k1c/k1cyolgn7e"
+        },
+        {
+          "id": "143029",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-24T23:00:00Z",
+          "status": "live",
+          "title": "(2nd meeting) Executive Board of UNDP, UNFPA and UNOPS (Second regular session 2026)",
+          "url": "https://webtv.un.org/en/asset/k17/k17fex6nlu"
+        },
+        {
+          "id": "143762",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-24T23:00:00Z",
+          "status": "live",
+          "title": "Maintenance of peace and security of Ukraine - Security Council, 10212th meeting",
+          "url": "https://webtv.un.org/en/asset/k1t/k1tdvfo3eo"
+        },
+        {
+          "id": "143789",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-25T05:45:00Z",
+          "status": "scheduled",
+          "title": "Joint Press Conference for the Indigenous Peoples Caucus, Gender Caucus, Youth Caucus, and Civil Society Organizations - Press Conference, UNCCD COP17",
+          "url": "https://webtv.un.org/en/asset/k12/k12the4mnc"
+        },
+        {
+          "id": "143484",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-25T06:00:00Z",
+          "status": "scheduled",
+          "title": "Ministerial dialogue on Drought Resilience - UNCCD COP17",
+          "url": "https://webtv.un.org/en/asset/k15/k15h2110vk"
+        },
+        {
+          "id": "143631",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-25T06:30:00Z",
+          "status": "scheduled",
+          "title": "WWF: Landscapes of Life – a nature-positive global agenda to protect, manage and restore grasslands, savannahs and rangelands - Press Conference, UNCCD COP17",
+          "url": "https://webtv.un.org/en/asset/k14/k14fqqjsmz"
+        },
+        {
+          "id": "143546",
+          "identifier_kind": "official",
+          "language": "en",
+          "source_timezone": "America/New_York",
+          "start": "2026-08-25T07:30:00Z",
+          "status": "scheduled",
+          "title": "Official Launch of the Drought Resilience Investment Facility (DRIF): Accelerating Finance for Drought Resilience, Water Security and Land Restoration - Action Dome, UNCCD COP17",
+          "url": "https://webtv.un.org/en/asset/k1s/k1s4uvyoet"
+        }
+      ],
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "next_event_id": "143789",
+      "next_event_language": "en",
+      "next_event_start": "2026-08-25T05:45:00Z",
+      "next_event_status": "scheduled",
+      "next_event_time": "2026-08-25T05:45:00Z",
+      "next_event_title": "Joint Press Conference for the Indigenous Peoples Caucus, Gender Caucus, Youth Caucus, and Civil Society Organizations - Press Conference, UNCCD COP17",
+      "next_event_url": "https://webtv.un.org/en/asset/k12/k12the4mnc",
+      "scraper": "un-webtv-schedule",
+      "source_url": "https://webtv.un.org/en/schedule/2026-08-24"
+    }
+  },
+  "counts": {
+    "channels": 7,
+    "complete": 3,
+    "current": 3,
+    "empty": 5,
+    "error": 1,
+    "events": 159,
+    "events_with_end": 71,
+    "events_with_official_id": 9,
+    "events_with_url": 9,
+    "fresh_channels": 7,
+    "ok": 7,
+    "stale_channels": 0,
+    "upcoming": 7
+  },
+  "generated_at": "2026-08-24T20:38:04Z",
+  "refresh_interval_hours": 6,
+  "schema_version": 3,
+  "sources": {
+    "brazil-tv-camara": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-08-25T02:45:00Z",
+      "coverage_start": "2026-08-24T03:00:00Z",
+      "event_count": 32,
+      "events_with_end": 31,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.camara.leg.br/tv/programacao-semanal"
+      ],
+      "used_last_good": false
+    },
+    "canada-harmony": {
+      "channel_count": 1,
+      "channels_expected": 2,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-09-28T22:00:00Z",
+      "coverage_start": "2026-08-27T14:00:00Z",
+      "event_count": 2,
+      "events_with_end": 0,
+      "events_with_official_id": 2,
+      "events_with_url": 2,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://parlvu.parl.gc.ca/Harmony/en",
+        "https://senparlvu.parl.gc.ca/Harmony/"
+      ],
+      "used_last_good": false
+    },
+    "cpac": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-08-25T20:04:00Z",
+      "coverage_start": "2026-08-24T12:46:15Z",
+      "event_count": 35,
+      "events_with_end": 34,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.cpac.ca/schedule/"
+      ],
+      "used_last_good": false
+    },
+    "ebs-grid": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-08-25T10:00:00Z",
+      "coverage_start": "2026-08-24T10:15:10Z",
+      "event_count": 6,
+      "events_with_end": 6,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20260824&dateTo=20260825&withCompleteThesaurusData=true"
+      ],
+      "used_last_good": false
+    },
+    "europarl-webstreaming": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://multimedia.europarl.europa.eu/_next/data/mn1XdpefUAeUcPpwTz-7w/en/webstreaming.json?view=month&d=2026-08-24"
+      ],
+      "used_last_good": false
+    },
+    "italian-senate-palimpsest": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-08-24T00%3A00%3A00&field_date_value%5Bmax%5D=2026-08-25T00%3A00%3A00",
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-08-25T00%3A00%3A00&field_date_value%5Bmax%5D=2026-08-26T00%3A00%3A00",
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-08-26T00%3A00%3A00&field_date_value%5Bmax%5D=2026-08-27T00%3A00%3A00"
+      ],
+      "used_last_good": false
+    },
+    "new-zealand-parliament": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 1,
+      "error": "official calendar returned a bot-protection page",
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "fetch_or_parse_error",
+      "status": "error",
+      "urls": [
+        "https://www3.parliament.nz/en/calendar/"
+      ],
+      "used_last_good": false
+    },
+    "ontario-calendar": {
+      "channel_count": 0,
+      "channels_expected": 6,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.ola.org/en/legislative-business/calendar"
+      ],
+      "used_last_good": false
+    },
+    "portugal-open-data-agenda": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-09-10T14:00:00Z",
+      "coverage_start": "2026-09-08T14:30:00Z",
+      "event_count": 6,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
+        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=I7d%2ffCscv6ZloBxMJvgMNbi60buAX%2bz9SwVX2nsCiAD7K0KdQsuj30FcVYgusTHJEOELh2cnmjYst8aZi7al9zXZscY%2feiIqgWwrUj7uqHJV2YkuMiTgVzlrLql%2b3FHb9jMUAoV4oQ%2b9EVWFhD9Ns9pSyZ%2bgmLZoxYHz0UVKupHX1Tu6lr74VloufwLdiHHmxlukPyVH0HvyRMbfNBemY%2b6laWCmx7vZwoeNJaSR7ybDBVgj8HXZX9fz3NVDl2mM88acbiin%2bUz2ZO9aSlDu471n8cYiWlqf1i7Gg0pulkmP0x1N1dy%2bjXvtmJO4f2Bh",
+        "https://app.parlamento.pt/webutils/docs/doc.txt?path=19rykiJLyzvGLQ0DGf2MqQG0Rwu56FAvl1w6NnvpjPCuZp%2bQQmb4KKXH0v4%2bIiyp5lldTW%2b8eL0KwbL67edis73QIAipTIIXU%2bcmTCpSY3MfdqQekT%2bpkKC7qISiaBwrv1FEglE3Jyye7ECkexScEUP6fWkV7zy9Il263IeiUeD4IGobX56mWM3EAGxGN%2f9lNfxx9jaN%2bvV4t0i6250qKdyIuP0RErnlSEWnU%2bICr0hk6ytS%2bwKggbYPGTd5norCtBUJUJTbHpv0WlGOVkuJHbdQLqxKBuK%2fpTkd4RiOFQH4%2bk1zA50YrzlQsHJ2LjHTG1hB1D17radtJInhVN7BuW8QRx96DQt89NG1SNjhJ%2bqQTYhZgDuWkfGXqVvU%2fTPHAdMN0CMZKp971MWe31XyZw%3d%3d&fich=AgendaParlamentar_json.txt&Inline=true"
+      ],
+      "used_last_good": false
+    },
+    "quebec-webdiffusion": {
+      "channel_count": 0,
+      "channels_expected": 14,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeEnDirect",
+        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir"
+      ],
+      "used_last_good": false
+    },
+    "uk-parliament": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-09-17T10:00:00Z",
+      "coverage_start": "2026-09-01T10:00:00Z",
+      "event_count": 71,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-08-24&endDate=2026-09-24"
+      ],
+      "used_last_good": false
+    },
+    "un-webtv-schedule": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-08-25T07:30:00Z",
+      "coverage_start": "2026-08-24T22:30:00Z",
+      "event_count": 7,
+      "events_with_end": 0,
+      "events_with_official_id": 7,
+      "events_with_url": 7,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "last_success_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://webtv.un.org/en/schedule/2026-08-24"
+      ],
+      "used_last_good": false
+    },
+    "youtube-live": {
+      "channel_count": 0,
+      "channels_expected": 3,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-08-24T20:38:04Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+        "https://www.youtube.com/@AUSParliamentLive/live",
+        "https://www.youtube.com/@AsambleaCRC/live"
+      ],
+      "used_last_good": false
+    }
+  }
 };

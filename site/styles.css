@@ -31,6 +31,7 @@ a { color: inherit; }
 nav { display: flex; align-items: center; gap: 1.25rem; font-size: .9rem; }.locale-control select { height: 32px; max-width: 170px; border: 1px solid var(--control-border); border-radius: 2px; background: var(--white); color: var(--ink); font-size: .78rem; }
 nav a, .site-footer a { color: var(--muted); text-decoration: none; }
 nav a:hover, .site-footer a:hover, .text-link:hover { color: var(--red); }
+nav a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: underline; text-decoration-color: var(--green); text-decoration-thickness: 3px; text-underline-offset: 1.28rem; }
 
 .intro { display: flex; position: relative; width: 100vw; max-width: none; min-height: 510px; margin-left: calc(50% - 50vw); overflow: hidden; background: #142d25 var(--hero-image, url("assets/hero/house-of-commons-1890.jpg")) var(--hero-position, center 54%) / cover no-repeat; color: var(--white); }
 .intro::before { content: ""; position: absolute; inset: 0; background: rgba(7, 31, 24, .72); }

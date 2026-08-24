@@ -10,10 +10,11 @@ from .common import (
     ScheduleEvent,
     ScheduleMetadata,
     ScraperSource,
-    checked_label,
     clean_html,
     local_time_label,
+    normalized_events,
     parse_iso,
+    utc_event_start,
 )
 
 CHANNEL_IDS = [
@@ -50,31 +51,24 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
             events.append({"start": start, "title": title})
     events.sort(key=lambda item: item["start"])
 
-    if not events:
-        if "there are no events today" not in html.lower():
-            return {}
-        metadata: ScheduleMetadata = {
-            "current_event_title": "No calendar events listed today",
-            "current_event_time": checked_label(now),
-            "next_event_title": None,
-            "next_event_time": None,
-            "confidence": "official_calendar",
-        }
-        return {channel_id: metadata for channel_id in CHANNEL_IDS}
-
-    current_index = 0
-    for index, event in enumerate(events):
-        if event["start"] <= now:
-            current_index = index
-        else:
-            break
-    current = events[current_index]
-    next_event = events[current_index + 1] if current_index + 1 < len(events) else None
-    metadata = ScheduleMetadata(
-        current_event_title=current["title"],
-        current_event_time=local_time_label(current["start"]),
-        next_event_title=next_event["title"] if next_event else None,
-        next_event_time=local_time_label(next_event["start"]) if next_event else None,
-        confidence="official_calendar",
+    relevant_events = [
+        event
+        for event in events
+        if re.search(r"\b(house|sitting|question period)\b", event["title"], re.IGNORECASE)
+    ]
+    house_events = [event for event in relevant_events if event["start"] >= now]
+    if not house_events:
+        return {}
+    next_event = house_events[0]
+    schedule: ScheduleMetadata = {
+        "current_event_title": None,
+        "current_event_time": None,
+        "next_event_title": next_event["title"],
+        "next_event_time": local_time_label(next_event["start"]),
+        "next_event_start": utc_event_start(next_event["start"]),
+        "confidence": "official_legislature_calendar_house_event",
+    }
+    schedule["events"] = normalized_events(
+        "ontario-house-en", relevant_events, now, source_timezone="America/Toronto"
     )
-    return {channel_id: metadata for channel_id in CHANNEL_IDS}
+    return {"ontario-house-en": schedule}

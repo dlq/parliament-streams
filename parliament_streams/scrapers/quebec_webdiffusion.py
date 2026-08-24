@@ -6,7 +6,7 @@ import json
 import re
 from datetime import UTC, datetime
 
-from .common import ParsedSchedule, ScraperSource, checked_label, clean_html
+from .common import ParsedSchedule, ScraperSource, clean_html
 
 SOURCE: ScraperSource = {
     "id": "quebec-webdiffusion",
@@ -30,25 +30,8 @@ def parse(
 ) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     live_items = json.loads(live_json).get("d", [])
-    upcoming_items = json.loads(upcoming_json).get("d", [])
-    next_item = upcoming_items[0] if upcoming_items else None
-    next_title = clean_html(next_item.get("Titre", "")) if next_item else None
-    next_time = None
-    if next_item:
-        next_time = (
-            f"{clean_html(next_item.get('Date', ''))}, {clean_html(next_item.get('Heure', ''))}"
-        )
-
-    fallback: ParsedSchedule = {
-        channel_id: {
-            "current_event_title": "No live webcast listed",
-            "current_event_time": checked_label(now),
-            "next_event_title": "Next listed Quebec webcast" if next_title else None,
-            "next_event_time": next_time,
-            "confidence": "official_live_list",
-        }
-        for channel_id in SOURCE["channel_ids"]
-    }
+    json.loads(upcoming_json)  # Validate the companion endpoint response.
+    schedules: ParsedSchedule = {}
 
     for item in live_items:
         if item.get("DiffusionDisponible") is False:
@@ -57,12 +40,12 @@ def parse(
         if not match:
             continue
         channel_id = f"quebec-canal{match.group(1)}"
-        fallback[channel_id] = {
+        schedules[channel_id] = {
             "current_event_title": clean_html(item.get("Titre", "")),
             "current_event_time": "Live now",
-            "next_event_title": next_title,
-            "next_event_time": next_time,
+            "next_event_title": None,
+            "next_event_time": None,
             "confidence": "official_live_list",
         }
 
-    return fallback
+    return schedules

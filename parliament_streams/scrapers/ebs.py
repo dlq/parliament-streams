@@ -10,11 +10,14 @@ from urllib.parse import urlencode
 from .common import (
     FetchRequest,
     ParsedSchedule,
+    ScheduleEvent,
+    ScheduleMetadata,
     ScraperSource,
-    checked_label,
     clean_html,
     local_time_label,
+    normalized_events,
     parse_iso,
+    utc_event_start,
 )
 
 CHANNEL_ID = "eu-audiovisual-ebs"
@@ -52,7 +55,7 @@ def _title(program: dict[str, Any]) -> str:
 def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     days = json.loads(payload)
-    events: list[tuple[datetime, datetime, str]] = []
+    events: list[ScheduleEvent] = []
     for day in days:
         for program in day.get("programs", []):
             start = parse_iso(str(program.get("startDatetime", "")))
@@ -61,19 +64,27 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
                 continue
             duration = max(0, int(program.get("duration", 0)))
             end = start + timedelta(seconds=duration)
-            events.append((start, end, title))
-    events.sort(key=lambda event: event[0])
+            events.append({"start": start, "end": end, "title": title})
+    events.sort(key=lambda event: event["start"])
 
-    current = next((event for event in events if event[0] <= now <= event[1]), None)
-    upcoming = next((event for event in events if event[0] > now), None)
-    return {
-        CHANNEL_ID: {
-            "current_event_title": current[2] if current else "No EBS event is live now",
-            "current_event_time": "Live now" if current else checked_label(now, "Europe/Brussels"),
-            "next_event_title": upcoming[2] if upcoming else None,
-            "next_event_time": local_time_label(upcoming[0], "Europe/Brussels")
-            if upcoming
-            else None,
-            "confidence": "official_schedule",
-        }
+    current = next((event for event in events if event["start"] <= now <= event["end"]), None)
+    upcoming = next((event for event in events if event["start"] > now), None)
+    if not current and not upcoming:
+        return {}
+    schedule: ScheduleMetadata = {
+        "current_event_title": current["title"] if current else None,
+        "current_event_time": "Live now" if current else None,
+        "next_event_title": upcoming["title"] if upcoming else None,
+        "next_event_time": local_time_label(upcoming["start"], "Europe/Brussels")
+        if upcoming
+        else None,
+        "confidence": "official_schedule",
     }
+    if current:
+        schedule["current_event_start"] = utc_event_start(current["start"])
+    if upcoming:
+        schedule["next_event_start"] = utc_event_start(upcoming["start"])
+    schedule["events"] = normalized_events(
+        CHANNEL_ID, events, now, source_timezone="Europe/Brussels"
+    )
+    return {CHANNEL_ID: schedule}

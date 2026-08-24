@@ -26,11 +26,19 @@ schedule sources, and supporting official, rights, and identity links.
 ## Live Audit Summary
 
 - Primary endpoints: 71 healthy, 7 warnings, and 8 errors before corrections.
-- Schedule sources: 50 reachable, 11 access-blocked, 2 not found, and 3 errors.
+- The initial schedule-source audit found 50 reachable, 11 access-blocked, 2
+  not found, and 3 errors. After the full discovery pass and URL corrections,
+  a fresh audit of 75 sources found 57 reachable, 12 access-blocked, no
+  not-found responses, and 6 environment, timeout, TLS, or size-limit errors.
 - Supporting links: 207 reachable, 19 access-blocked, 2 not found, and 16
   environment or network errors.
-- Schedule collection produced current normalized records for 29 channels from
-  10 successful sources.
+- The earlier compatibility collector associated records with 29 channels from
+  10 successful sources, including generic and placeholder projections. That
+  number did not mean that 29 channels had actionable programme listings.
+- Schedule schema v3 publishes only real dated events in the active collection
+  window. The 2026-08-24 snapshot contains 159 events for 7 channels from 7
+  successful sources; 5 additional sources were reachable but empty and 1
+  source failed.
 
 Most remaining warnings and failures concern already documented event-based,
 link-only, access-blocked, or high-risk sources. Estonia Live 2 remains an

@@ -31,7 +31,10 @@ Done:
   New Zealand calendar, Brazil TV Camara, European Parliament webstreaming, and
   Europe by Satellite schedule sources.
 - A typed collector fetches implemented schedule sources and GitHub Actions
-  publishes normalized static schedule JSON every six hours.
+  publishes normalized static schedule JSON every six hours. Schedule schema v3
+  retains rolling event lists, canonical UTC timestamps, generated or official
+  event IDs, event completeness metrics, source coverage windows, and a bounded
+  stale fallback for still-future events.
 - `docs/source-rights-and-permissions.md` records source-by-source rights evidence
   and recommendations.
 - `docs/sources-and-provenance.md` explains repository license scope and
@@ -421,17 +424,26 @@ Near-term:
 
 Candidate future scrapers:
 
-1. UN Web TV schedule/event pages.
-2. Council of the European Union live schedule.
-3. Council of Europe/PACE live and multimedia resources.
-4. Spain Congreso/Canal Parlamento programming.
-5. Netherlands, France, Denmark, Greece, Luxembourg, Norway, Estonia, Chile,
-   Israel, El Salvador, Mauritius, India, Thailand, Slovakia, Nunavut,
-   and other second-ring sources when structured official endpoints are found.
-6. Canada federal ParlVU/SenVu deeper metadata for House, Senate, and committee
+1. Convert the newly recorded Taiwan IVOD forecast, Mongolian Parliament
+   timetable, and Thai Parliament meeting schedule into normalized parsers.
+2. Prefer structured official sources where available: France's open-data
+   agenda ZIP, Brazil's Open Data events API, and the European Parliament Open
+   Data meetings API.
+3. Council of the European Union live schedule and meeting calendar.
+4. Council of Europe/PACE live and multimedia resources.
+5. Spain Congreso/Canal Parlamento programming, ideally mapping its shared
+   schedule to all six recorded signals.
+6. Netherlands room schedules, including the Aletta Jacobszaal and
+   Actualiteitenkanaal records.
+7. Scotland, Wales, and Northern Ireland schedule surfaces.
+8. Denmark, Greece, Luxembourg, Norway, Estonia, Chile, Israel, El Salvador,
+   Mauritius, India, Slovakia, Nunavut, and other second-ring sources. The
+   2026-08-24 discovery report records direct programme/calendar candidates for
+   several of these.
+9. Canada federal ParlVU/SenVu deeper metadata for House, Senate, and committee
    proceedings, including active-event state, audio-language, closed-caption,
    archive, and `PowerBrowserV2` event links where available.
-7. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
+10. Canadian provincial/territorial schedule surfaces for Nunavut, BC, Alberta,
    Saskatchewan, Manitoba, PEI, NWT, and Newfoundland and Labrador if the
    catalogue starts expanding beyond national/supranational coverage.
 
@@ -455,6 +467,10 @@ GitHub Actions collects implemented schedule sources every six hours and
 publishes `data/schedules.json` inside the Pages artifact. This avoids browser
 CORS restrictions without adding a continuously running backend or committing
 transient schedule data to `main`. The page reads only the same-origin snapshot.
+The workflow caches the preceding version 3 snapshot and may retain still-future
+events for at most 24 hours when a source fails. Per-source consecutive failure
+counts are also consumed by the daily audit, which opens a deduplicated issue
+after three failed runs and closes it after recovery.
 
 ### Scheduled Catalogue Audits
 
@@ -541,9 +557,8 @@ Later review prompts:
    source list becomes too abstract for readers. Evaluate whether map browsing
    helps people understand jurisdiction coverage, sub-national clusters, and
    gaps, or whether it adds weight without improving discovery.
-5. Add a stronger schedule or "now live / upcoming" surface if collected EPG
-   snapshots become reliable enough, including whether this should be a compact
-   catalogue hint, a timeline, or a channel-guide-style view.
+5. Extend the new Now / Next programme guide toward dated agenda browsing only
+   when collectors provide normalized event timestamps and stable event IDs.
 6. Give the open-stream principles and advocacy angle a more prominent path if
    the project becomes useful for outreach to legislatures or vendors.
 7. Explore browsing by legislature/institution rather than only by stream,
@@ -551,34 +566,32 @@ Later review prompts:
 
 ### Schedule Page
 
-Consider a dedicated schedule page as a peer to the catalogue and any future
-coverage map. It should use the same static `data/schedules.json` snapshot that
-GitHub Actions refreshes every six hours; it must not require a backend or make
-live cross-origin requests from the browser.
+The dedicated schedule page is now a peer to the catalogue and coverage map.
+It uses the same static `data/schedules.json` snapshot that GitHub Actions
+refreshes every six hours, with no backend or live cross-origin browser requests.
 
-The first useful version should:
+The first version now:
 
-1. Present a chronological Now / Next / Later view, grouped by the viewer's
-   local date while retaining each event's source timezone and exact timestamp.
-2. Link each event to its catalogue channel detail and, when recorded, its
+1. Presents a Now / Next television-listing view derived from canonical event
+   records while retaining source-published time strings as fallbacks. The data
+   now supports dated browsing; the multi-day interface remains planned.
+2. Links each event to its catalogue channel detail and, when recorded, its
    official event or schedule page. Playable events may offer the existing
    catalogue player without implying that every scheduled event is live.
-3. Support compact filtering by jurisdiction, legislature, language, and event
-   status without reproducing the full catalogue table.
-4. Show collection time, source freshness, and stale or failed schedule state
+3. Supports compact filtering by jurisdiction and listing/playback status.
+   Legislature, language, and shareable URL filters remain possible follow-ups.
+4. Shows collection time, source freshness, and stale schedule state
    explicitly. Missing schedule coverage must remain visibly different from
    "nothing scheduled."
-5. Work as a dense agenda on desktop and a simple day-by-day list on mobile;
-   avoid a television-grid layout until event timing and channel coverage are
-   complete enough to support it.
-6. Preserve partial results when individual scrapers fail and explain the
+5. Works as dense listings on desktop and a compact two-column Now/Next list on
+   mobile without pretending the snapshot is a complete multi-day TV grid.
+6. Preserves partial results when individual scrapers fail and explains the
    catalogue's current schedule coverage rather than presenting the page as a
    comprehensive parliamentary calendar.
 
-Before implementation, measure how many channels regularly produce usable
-current or upcoming events, verify timezone normalization and stable event IDs,
-and decide whether the URL should preserve date, jurisdiction, and language
-filters for sharing.
+Next, add dated browsing over the rolling event lists, preserve date and filter
+state in shareable URLs, and prioritize official IDs, event links, and end times
+for sources whose current events still rely on generated identities.
 
 ## Rights And Permission Work
 

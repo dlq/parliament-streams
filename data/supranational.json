@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-08-24",
+  "description": "Membership and participation data used to contextualize supranational parliamentary video sources on the catalogue map.",
+  "organizations": [
+    {
+      "id": "eu",
+      "catalogue_jurisdiction": "European Union",
+      "name": "European Union",
+      "short_name": "EU",
+      "relationship_label": "Member State",
+      "relationship_label_plural": "Member States",
+      "flag": "assets/flags/eu.svg",
+      "member_country_codes": [
+        "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"
+      ],
+      "source_url": "https://european-union.europa.eu/principles-countries-history/country-profiles_en",
+      "checked_on": "2026-08-24"
+    },
+    {
+      "id": "coe",
+      "catalogue_jurisdiction": "Council of Europe",
+      "name": "Council of Europe",
+      "short_name": "CoE",
+      "relationship_label": "Member State",
+      "relationship_label_plural": "Member States",
+      "flag": "assets/flags/eu.svg",
+      "member_country_codes": [
+        "AL", "AD", "AM", "AT", "AZ", "BE", "BA", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "GE", "DE", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "MD", "MC", "ME", "NL", "MK", "NO", "PL", "PT", "RO", "SM", "RS", "SK", "SI", "ES", "SE", "CH", "TR", "UA", "GB"
+      ],
+      "source_url": "https://www.coe.int/en/web/portal/46-members-states",
+      "checked_on": "2026-08-24"
+    },
+    {
+      "id": "osce",
+      "catalogue_jurisdiction": "OSCE",
+      "name": "Organization for Security and Co-operation in Europe",
+      "short_name": "OSCE",
+      "relationship_label": "Participating State",
+      "relationship_label_plural": "Participating States",
+      "flag": "assets/flags/osce.svg",
+      "member_country_codes": [
+        "AL", "AD", "AM", "AT", "AZ", "BY", "BE", "BA", "BG", "CA", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "GE", "DE", "GR", "VA", "HU", "IS", "IE", "IT", "KZ", "KG", "LV", "LI", "LT", "LU", "MT", "MD", "MC", "MN", "ME", "NL", "MK", "NO", "PL", "PT", "RO", "RU", "SM", "RS", "SK", "SI", "ES", "SE", "CH", "TJ", "TR", "TM", "UA", "GB", "US", "UZ"
+      ],
+      "source_url": "https://www.osce.org/participating-states",
+      "checked_on": "2026-08-24"
+    },
+    {
+      "id": "un",
+      "catalogue_jurisdiction": "United Nations",
+      "name": "United Nations",
+      "short_name": "UN",
+      "relationship_label": "Member State",
+      "relationship_label_plural": "Member States",
+      "flag": "assets/flags/un.svg",
+      "member_country_codes": [
+        "AF", "AL", "DZ", "AD", "AO", "AG", "AR", "AM", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", "BZ", "BJ", "BT", "BO", "BA", "BW", "BR", "BN", "BG", "BF", "BI", "CV", "KH", "CM", "CA", "CF", "TD", "CL", "CN", "CO", "KM", "CG", "CR", "CI", "HR", "CU", "CY", "CZ", "KP", "CD", "DK", "DJ", "DM", "DO", "EC", "EG", "SV", "GQ", "ER", "EE", "SZ", "ET", "FJ", "FI", "FR", "GA", "GM", "GE", "DE", "GH", "GR", "GD", "GT", "GN", "GW", "GY", "HT", "HN", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IL", "IT", "JM", "JP", "JO", "KZ", "KE", "KI", "KW", "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MR", "MU", "MX", "FM", "MC", "MN", "ME", "MA", "MZ", "MM", "NA", "NR", "NP", "NL", "NZ", "NI", "NE", "NG", "MK", "NO", "OM", "PK", "PW", "PA", "PG", "PY", "PE", "PH", "PL", "PT", "QA", "KR", "MD", "RO", "RU", "RW", "KN", "LC", "VC", "WS", "SM", "ST", "SA", "SN", "RS", "SC", "SL", "SG", "SK", "SI", "SB", "SO", "ZA", "SS", "ES", "LK", "SD", "SR", "SE", "CH", "SY", "TJ", "TZ", "TH", "TL", "TG", "TO", "TT", "TN", "TR", "TM", "TV", "UG", "UA", "AE", "GB", "US", "UY", "UZ", "VU", "VE", "VN", "YE", "ZM", "ZW"
+      ],
+      "source_url": "https://www.un.org/en/about-us/member-states",
+      "checked_on": "2026-08-24"
+    }
+  ]
+}

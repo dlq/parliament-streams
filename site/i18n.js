@@ -6,6 +6,14 @@ const locales = [
   ["th", "ไทย"], ["zh-Hans", "中文（简体）"], ["iu-Cans", "ᐃᓄᒃᑎᑐᑦ"], ["mi", "te reo Māori"],
 ];
 
+const internationalLevelLabels = {
+  en: "International", fr: "International", es: "Internacional", "pt-BR": "Internacional",
+  da: "International", de: "International", et: "Rahvusvaheline", el: "Διεθνές",
+  hi: "अंतरराष्ट्रीय", ga: "Idirnáisiúnta", it: "Internazionale", lb: "International",
+  nl: "Internationaal", nb: "Internasjonalt", sk: "Medzinárodné", th: "ระหว่างประเทศ",
+  "zh-Hans": "国际", "iu-Cans": "ᓄᓇᕐᔪᐊᒥ", mi: "Ā-ao",
+};
+
 const en = {
   skipCatalogue: "Skip to catalogue", brandHome: "Parliament Streams home", primaryNavigation: "Primary navigation",
   catalogueResults: "Catalogue results", catalogueTable: "Parliament stream catalogue",
@@ -777,6 +785,7 @@ function message(locale, key, values = {}) {
 }
 
 function localizedLabel(locale, value) {
+  if (value === "supranational") return internationalLevelLabels[locale] ?? internationalLevelLabels.en;
   return shared[locale]?.labels?.[value] ?? en.labels[value] ?? value.replaceAll("_", " ");
 }
 

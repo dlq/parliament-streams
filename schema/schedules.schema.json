@@ -13,18 +13,27 @@
     "sources"
   ],
   "properties": {
-    "schema_version": { "const": 1 },
+    "schema_version": { "const": 3 },
     "generated_at": { "type": "string", "format": "date-time" },
     "refresh_interval_hours": { "const": 6 },
     "counts": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ok", "empty", "error", "channels"],
+      "required": ["ok", "empty", "error", "channels", "current", "upcoming", "complete", "events", "events_with_official_id", "events_with_url", "events_with_end", "fresh_channels", "stale_channels"],
       "properties": {
         "ok": { "type": "integer", "minimum": 0 },
         "empty": { "type": "integer", "minimum": 0 },
         "error": { "type": "integer", "minimum": 0 },
-        "channels": { "type": "integer", "minimum": 0 }
+        "channels": { "type": "integer", "minimum": 0 },
+        "current": { "type": "integer", "minimum": 0 },
+        "upcoming": { "type": "integer", "minimum": 0 },
+        "complete": { "type": "integer", "minimum": 0 },
+        "events": { "type": "integer", "minimum": 0 },
+        "events_with_official_id": { "type": "integer", "minimum": 0 },
+        "events_with_url": { "type": "integer", "minimum": 0 },
+        "events_with_end": { "type": "integer", "minimum": 0 },
+        "fresh_channels": { "type": "integer", "minimum": 0 },
+        "stale_channels": { "type": "integer", "minimum": 0 }
       }
     },
     "channels": {
@@ -48,13 +57,16 @@
         "confidence",
         "scraper",
         "source_url",
-        "fetched_at"
+        "fetched_at",
+        "last_success_at",
+        "events"
       ],
       "properties": {
-        "current_event_title": { "type": "string", "minLength": 1 },
-        "current_event_time": { "type": "string", "minLength": 1 },
+        "current_event_title": { "type": ["string", "null"], "minLength": 1 },
+        "current_event_time": { "type": ["string", "null"], "minLength": 1 },
         "next_event_title": { "type": ["string", "null"] },
         "next_event_time": { "type": ["string", "null"] },
+        "current_event_start": { "type": "string", "format": "date-time" },
         "current_event_url": { "type": "string", "format": "uri" },
         "current_event_id": { "type": "string", "minLength": 1 },
         "current_event_status": { "type": "string", "minLength": 1 },
@@ -64,6 +76,7 @@
           "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$"
         },
         "next_event_url": { "type": "string", "format": "uri" },
+        "next_event_start": { "type": "string", "format": "date-time" },
         "next_event_id": { "type": "string", "minLength": 1 },
         "next_event_status": { "type": "string", "minLength": 1 },
         "next_event_location": { "type": "string", "minLength": 1 },
@@ -74,13 +87,36 @@
         "confidence": { "type": "string", "minLength": 1 },
         "scraper": { "type": "string", "minLength": 1 },
         "source_url": { "type": "string", "format": "uri" },
-        "fetched_at": { "type": "string", "format": "date-time" }
+        "fetched_at": { "type": "string", "format": "date-time" },
+        "last_success_at": { "type": "string", "format": "date-time" },
+        "stale": { "type": "boolean" },
+        "events": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/event" }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "identifier_kind", "title", "status"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "identifier_kind": { "enum": ["official", "generated"] },
+        "title": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["scheduled", "live", "cancelled", "completed"] },
+        "start": { "type": "string", "format": "date-time" },
+        "end": { "type": "string", "format": "date-time" },
+        "url": { "type": "string", "format": "uri" },
+        "location": { "type": "string", "minLength": 1 },
+        "language": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$" },
+        "source_timezone": { "type": "string", "minLength": 1 }
       }
     },
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "fetched_at", "urls", "channel_count"],
+      "required": ["status", "fetched_at", "urls", "channel_count", "channels_expected", "event_count", "events_with_official_id", "events_with_url", "events_with_end", "outcome_detail", "used_last_good", "consecutive_failures"],
       "properties": {
         "status": { "enum": ["ok", "empty", "error"] },
         "fetched_at": { "type": "string", "format": "date-time" },
@@ -90,6 +126,17 @@
           "items": { "type": "string", "format": "uri" }
         },
         "channel_count": { "type": "integer", "minimum": 0 },
+        "channels_expected": { "type": "integer", "minimum": 0 },
+        "event_count": { "type": "integer", "minimum": 0 },
+        "events_with_official_id": { "type": "integer", "minimum": 0 },
+        "events_with_url": { "type": "integer", "minimum": 0 },
+        "events_with_end": { "type": "integer", "minimum": 0 },
+        "outcome_detail": { "enum": ["events", "no_events_in_window", "fetch_or_parse_error"] },
+        "used_last_good": { "type": "boolean" },
+        "consecutive_failures": { "type": "integer", "minimum": 0 },
+        "last_success_at": { "type": "string", "format": "date-time" },
+        "coverage_start": { "type": "string", "format": "date-time" },
+        "coverage_end": { "type": "string", "format": "date-time" },
         "error": { "type": "string", "minLength": 1 }
       }
     }

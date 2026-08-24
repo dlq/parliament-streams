@@ -4,9 +4,60 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-08-19
+## Unreleased - 2026-08-24
 
 ### Added
+
+- A full official-source schedule discovery pass covering all catalogue
+  institutions, with newly recorded meeting or programme sources for Thailand,
+  Mongolia, Taiwan, France, Brazil, Denmark, Norway, Greece, Israel, Slovakia,
+  the EU Council, the European Parliament, New South Wales, and Queensland.
+- Complete schedule-source coverage across all 86 catalogue entries, while
+  retaining `planned` status for sources that do not yet have reliable parsers.
+- Schedule snapshot schema v3 with normalized rolling event lists, canonical
+  start/end timestamps, source timezones, status values, official or
+  deterministic event IDs, links, locations, and languages.
+- Per-source schedule diagnostics covering expected/populated channels, event
+  counts, field completeness, coverage windows, consecutive failures, and
+  bounded last-good usage.
+- Twenty-four-hour last-good recovery for still-future events, with stale Now
+  records explicitly removed and stale listings labelled on the public page.
+- Repeated schedule-source regression issues after three failed audit runs,
+  automatically closed when the source recovers.
+
+- An official UN Web TV schedule scraper using the server-rendered Live Now and
+  Coming Up sections, including event URLs, identifiers, status, and language.
+- Schedule snapshot counts for concrete current listings, upcoming listings,
+  and channels with both, plus schema validation of the published snapshot.
+- Canonical RFC 3339 event start timestamps and browser-local timezone display
+  across the programme guide and catalogue details.
+- A localized static Now/Next programme-guide page, styled as compact TV
+  listings and backed by the six-hourly schedule snapshot, with jurisdiction
+  and listing-status filters, freshness warnings, responsive mobile rows, and
+  playback handoff to eligible catalogue channels.
+- Retained schedule data in the classic-script site snapshot so direct local
+  file previews can render the programme guide without a server.
+
+### Changed
+
+- Schedule documentation now distinguishes records with an official schedule
+  link from channels with real dated events in the published programme guide;
+  the current v3 snapshot contains 159 events for seven channels.
+- Existing multi-event parsers now retain their complete collected horizon
+  instead of discarding all but Now and Next. The 2026-08-24 live run expanded
+  seven producing channels from ten displayed slots to 159 normalized events,
+  71 with known end times.
+- Now/Next fields are compatibility projections derived from canonical events;
+  the six-hourly Pages workflow persists a versioned schedule baseline for
+  bounded transient-failure recovery.
+
+- Schedule schema v2 makes current programmes nullable and no longer reports a
+  future calendar event as Now.
+- Source-published time labels now use the source's actual timezone and remain
+  only as fallbacks when an event has no canonical timestamp.
+- Québec and Ontario schedule collectors no longer duplicate service-wide
+  empty or generic results across every channel; only channel-mappable events
+  are published.
 
 - Canada House of Commons ParlVU and Canada Senate SenVu as official
   event-platform link-out catalogue records, while deliberately avoiding

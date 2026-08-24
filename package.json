@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check:html": "html-validate site/index.html",
+    "check:html": "html-validate site/index.html site/map.html site/schedule.html",
     "check:a11y": "node tools/check_accessibility.mjs",
     "check:site": "npm run check:html && npm run check:a11y"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",
+    "d3": "^7.9.0",
     "html-validate": "11.6.2",
     "playwright": "1.62.1"
   }

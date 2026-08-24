@@ -9,11 +9,14 @@ from typing import Any
 from .common import (
     FetchRequest,
     ParsedSchedule,
+    ScheduleEvent,
+    ScheduleMetadata,
     ScraperSource,
-    checked_label,
     clean_html,
     local_time_label,
+    normalized_events,
     parse_iso,
+    utc_event_start,
 )
 
 CHANNEL_ID = "european-parliament-multimedia-centre"
@@ -53,41 +56,47 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     data = json.loads(payload)
     events = data.get("pageProps", {}).get("mediaItems", [])
-    parsed: list[tuple[datetime, datetime | None, str, str]] = []
+    parsed: list[ScheduleEvent] = []
     for event in events:
         start = parse_iso(str(event.get("EventDateStart", "")))
         end = parse_iso(str(event.get("EventDateEnd", "")))
         title = _event_title(event)
         if start and title:
-            parsed.append((start, end, title, str(event.get("statusName", "")).upper()))
-    parsed.sort(key=lambda event: event[0])
+            parsed_event: ScheduleEvent = {"start": start, "title": title}
+            if end:
+                parsed_event["end"] = end
+            status = str(event.get("statusName", "")).strip()
+            if status:
+                parsed_event["status"] = status
+            parsed.append(parsed_event)
+    parsed.sort(key=lambda event: event["start"])
 
     current = next(
-        (event for event in parsed if event[0] <= now and (event[1] is None or now <= event[1])),
+        (
+            event
+            for event in parsed
+            if event["start"] <= now and (event.get("end") is None or now <= event["end"])
+        ),
         None,
     )
-    upcoming = next((event for event in parsed if event[0] > now), None)
+    upcoming = next((event for event in parsed if event["start"] > now), None)
     if not current and not upcoming:
-        return {
-            CHANNEL_ID: {
-                "current_event_title": "No European Parliament event is live now",
-                "current_event_time": checked_label(now, "Europe/Brussels"),
-                "next_event_title": None,
-                "next_event_time": None,
-                "confidence": "official_schedule",
-            }
-        }
+        return {}
 
-    return {
-        CHANNEL_ID: {
-            "current_event_title": current[2]
-            if current
-            else "No European Parliament event is live now",
-            "current_event_time": "Live now" if current else checked_label(now, "Europe/Brussels"),
-            "next_event_title": upcoming[2] if upcoming else None,
-            "next_event_time": local_time_label(upcoming[0], "Europe/Brussels")
-            if upcoming
-            else None,
-            "confidence": "official_schedule",
-        }
+    schedule: ScheduleMetadata = {
+        "current_event_title": current["title"] if current else None,
+        "current_event_time": "Live now" if current else None,
+        "next_event_title": upcoming["title"] if upcoming else None,
+        "next_event_time": local_time_label(upcoming["start"], "Europe/Brussels")
+        if upcoming
+        else None,
+        "confidence": "official_schedule",
     }
+    if current:
+        schedule["current_event_start"] = utc_event_start(current["start"])
+    if upcoming:
+        schedule["next_event_start"] = utc_event_start(upcoming["start"])
+    schedule["events"] = normalized_events(
+        CHANNEL_ID, parsed, now, source_timezone="Europe/Brussels"
+    )
+    return {CHANNEL_ID: schedule}
