@@ -516,12 +516,18 @@ six `Multilingual` supranational records and the Northwest Territories
 `Multiple official languages` record into evidence-backed language lists; the
 current generic labels prevent a complete coverage audit.
 
-## Future Site/Product Review
+## Future UI/UX Review
 
 The current static site is intentionally a public research catalogue rather
 than a consumer streaming app. Keep the evidence-forward design, but revisit
 whether the product framing is missing a stronger organizing idea after the
 catalogue stabilizes further.
+
+Defer a deliberate UI/UX review until after the next catalogue/data stability
+round, rather than making piecemeal visual changes. Use that review to look at
+the whole product shape: catalogue discovery, visual hierarchy, schedule
+surfacing, global/regional navigation, and whether the site should start to feel
+more like a channel guide without losing its evidence and rights posture.
 
 Later review prompts:
 
@@ -531,10 +537,13 @@ Later review prompts:
    sources, and research-only sources more obvious without overstating rights.
 3. Clarify the trust and verification story: what was checked, when, by which
    method, and what remains uncertain.
-4. Consider a coverage map or regional coverage view if the source list becomes
-   too abstract for readers.
+4. Consider a coverage map, regional coverage view, or map/list hybrid if the
+   source list becomes too abstract for readers. Evaluate whether map browsing
+   helps people understand jurisdiction coverage, sub-national clusters, and
+   gaps, or whether it adds weight without improving discovery.
 5. Add a stronger schedule or "now live / upcoming" surface if collected EPG
-   snapshots become reliable enough.
+   snapshots become reliable enough, including whether this should be a compact
+   catalogue hint, a timeline, or a channel-guide-style view.
 6. Give the open-stream principles and advocacy angle a more prominent path if
    the project becomes useful for outreach to legislatures or vendors.
 7. Explore browsing by legislature/institution rather than only by stream,

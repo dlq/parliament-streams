@@ -243,6 +243,45 @@ class ValidationTests(unittest.TestCase):
         self.assertIn("unknown-scraper", codes)
         self.assertIn("planned-scraper", codes)
 
+    def test_caption_languages_agree_with_accessibility_and_channel_language(self):
+        mismatch = cloned_channel()
+        mismatch["language"] = "Spanish"
+        mismatch["accessibility"] = {
+            "captions": "available",
+            "caption_languages": ["he"],
+            "sign_language": "unknown",
+            "audio_description": "unknown",
+            "notes": "Copied accessibility metadata.",
+        }
+        self.assertIn(
+            "caption-language-mismatch", {issue.code for issue in validate_channel(mismatch)}
+        )
+
+        unknown = copy.deepcopy(mismatch)
+        unknown["accessibility"]["captions"] = "unknown"
+        self.assertIn(
+            "caption-language-status", {issue.code for issue in validate_channel(unknown)}
+        )
+
+        duplicate = copy.deepcopy(mismatch)
+        duplicate["language"] = "Hebrew"
+        duplicate["accessibility"]["caption_languages"] = ["he", "he"]
+        self.assertIn(
+            "duplicate-caption-language", {issue.code for issue in validate_channel(duplicate)}
+        )
+
+        unsupported = copy.deepcopy(mismatch)
+        unsupported["language"] = "Example"
+        unsupported["accessibility"]["caption_languages"] = ["xx"]
+        self.assertIn(
+            "caption-language-code", {issue.code for issue in validate_channel(unsupported)}
+        )
+
+        mismatch["language"] = "Hebrew"
+        self.assertNotIn(
+            "caption-language-mismatch", {issue.code for issue in validate_channel(mismatch)}
+        )
+
     def test_candidate_metadata_and_promotion_requirements(self):
         candidate = scaffold_candidate(
             channel_id="candidate",

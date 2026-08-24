@@ -1,7 +1,7 @@
 window.PARLIAMENT_STREAMS_CATALOGUE = {
   "schema_version": 9,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-08-19",
+  "generated_on": "2026-08-24",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -147,13 +147,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "harmony_upcoming_events_and_powerbrowser_pages",
           "scraper_status": "implemented"
-        },
-        {
-          "scraper": "planned",
-          "url": "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents",
-          "method": "GET",
-          "kind": "harmony_upcoming_events_api",
-          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -231,13 +224,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "harmony_upcoming_events_and_powerbrowser_pages",
           "scraper_status": "implemented"
-        },
-        {
-          "scraper": "planned",
-          "url": "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents",
-          "method": "GET",
-          "kind": "harmony_upcoming_events_api",
-          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -732,7 +718,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "direct_hls",
       "source_kind": "first_party_hls",
       "playback_url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
-      "official_url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebat",
+      "official_url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
       "provenance_note": "Official Tweede Kamer live room stream.",
       "technical_status": "validated",
       "stability_risk": "medium",
@@ -759,7 +745,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "status": "personal_use_pending_review",
         "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
         "evidence": [
-          "https://www.tweedekamer.nl/debat_en_vergadering/livedebat"
+          "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten"
         ],
         "recommendation": "Link-out or pending until terms or permission are documented."
       },
@@ -1477,13 +1463,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "available",
-        "caption_languages": [
-          "he"
-        ],
+        "captions": "unknown",
+        "caption_languages": [],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": "The official Knesset Channel site publishes a live captioned broadcast page for Hebrew captions."
+        "notes": null
       },
       "epg_sources": [
         {
@@ -1559,11 +1543,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
-        "captions": "unknown",
-        "caption_languages": [],
+        "captions": "source_dependent",
+        "caption_languages": [
+          "he"
+        ],
         "sign_language": "unknown",
         "audio_description": "unknown",
-        "notes": null
+        "notes": "The official Knesset Channel site links to a separate live accessibility HLS stream with Hebrew captions; the catalogued primary channel stream does not itself declare captions."
       },
       "epg_sources": [
         {
@@ -2340,7 +2326,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "summary": "TPchannel is operated by the National Assembly Radio and Television Broadcasting Station and publishes live/OTT access, but no source-specific reuse or embedding terms were found in this pass.",
         "evidence": [
           "https://tpchannel.org/",
-          "https://www.tpchannel.org/tv/live",
           "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv"
         ],
         "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until TPchannel publishes reuse terms or grants permission."
@@ -4291,8 +4276,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "playback_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
       "official_url": "https://www.assembly.nu.ca/webcasts",
       "provenance_note": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
-      "technical_status": "validated",
-      "stability_risk": "medium",
+      "technical_status": "needs_review",
+      "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
         "captions": "unknown",
@@ -4312,12 +4297,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The direct iSi LIVE HLS URL returned HTTP 200 with an HLS manifest and permissive CORS on 2026-08-14. Official Assembly pages document live and archived webcasts, but explicit third-party native playback or redistribution permission has not been recorded.",
+        "summary": "The direct iSi LIVE HLS URL returned HTTP 200 with an HLS manifest and permissive CORS on 2026-08-14, but its host no longer resolved during the 2026-08-24 audit. Official Assembly pages still document live and archived webcasts, but explicit third-party native playback or redistribution permission has not been recorded.",
         "evidence": [
           "https://www.assembly.nu.ca/webcasts",
           "https://video.isilive.ca/nunavut/live-eng.html"
         ],
-        "recommendation": "Keep native playback permission-pending and seek written clarification before treating the HLS endpoint as redistributable."
+        "recommendation": "Keep the stale HLS endpoint for research evidence only, link to the official webcast page, and seek a current official endpoint plus written clarification before restoring native playback."
       },
       "validation_history": [
         {
@@ -4342,7 +4327,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "note": "Official page/link reachable."
         }
       ],
-      "playback_policy": "native_playback"
+      "playback_policy": "research_only"
     },
     {
       "id": "uk-parliament-youtube",

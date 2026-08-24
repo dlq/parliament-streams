@@ -18,6 +18,31 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
 DEFAULT_FALLBACKS_SCHEMA_PATH = ROOT / "schema" / "fallbacks.schema.json"
 
+CAPTION_LANGUAGE_NAMES: dict[str, tuple[str, ...]] = {
+    "cy": ("welsh",),
+    "da": ("danish",),
+    "de": ("german",),
+    "el": ("greek",),
+    "en": ("english",),
+    "es": ("spanish",),
+    "et": ("estonian",),
+    "fr": ("french",),
+    "ga": ("irish",),
+    "gd": ("gaelic", "scottish gaelic"),
+    "he": ("hebrew",),
+    "hi": ("hindi",),
+    "it": ("italian",),
+    "iu": ("inuktitut",),
+    "mi": ("maori", "māori"),
+    "mn": ("mongolian",),
+    "nl": ("dutch",),
+    "no": ("norwegian",),
+    "pt": ("portuguese",),
+    "sk": ("slovak",),
+    "th": ("thai",),
+    "zh": ("chinese", "mandarin"),
+}
+
 
 @dataclass(frozen=True)
 class ValidationIssue:
@@ -92,6 +117,55 @@ def _channel_issues(
     stability_risk = channel.get("stability_risk")
     permission = channel.get("permission", {})
     permission_status = permission.get("status") if isinstance(permission, dict) else None
+    raw_accessibility = channel.get("accessibility")
+    accessibility = raw_accessibility if isinstance(raw_accessibility, dict) else {}
+    caption_status = accessibility.get("captions")
+    raw_caption_languages = accessibility.get("caption_languages")
+    caption_languages = raw_caption_languages if isinstance(raw_caption_languages, list) else []
+    declared_language = str(channel.get("language", "")).casefold()
+
+    if caption_status in {"unknown", "unavailable"} and caption_languages:
+        issues.append(
+            ValidationIssue(
+                f"{path}.accessibility.caption_languages",
+                "caption-language-status",
+                "Unknown or unavailable captions cannot declare caption languages",
+            )
+        )
+    string_caption_languages = [
+        language for language in caption_languages if isinstance(language, str)
+    ]
+    if len(string_caption_languages) != len(set(string_caption_languages)):
+        issues.append(
+            ValidationIssue(
+                f"{path}.accessibility.caption_languages",
+                "duplicate-caption-language",
+                "Caption language codes must be unique",
+            )
+        )
+    generic_language = "multiple" in declared_language or "multilingual" in declared_language
+    for caption_language in caption_languages:
+        if not isinstance(caption_language, str):
+            continue
+        base_language = caption_language.casefold().split("-", 1)[0]
+        names = CAPTION_LANGUAGE_NAMES.get(base_language)
+        if names is None:
+            issues.append(
+                ValidationIssue(
+                    f"{path}.accessibility.caption_languages",
+                    "caption-language-code",
+                    f"Unsupported caption language code {caption_language!r}",
+                )
+            )
+        elif not generic_language and not any(name in declared_language for name in names):
+            issues.append(
+                ValidationIssue(
+                    f"{path}.accessibility.caption_languages",
+                    "caption-language-mismatch",
+                    f"Caption language {caption_language!r} is not represented "
+                    "in the channel language metadata",
+                )
+            )
 
     if source_type in {"direct_hls", "direct_dash"} and not playback_url:
         issues.append(

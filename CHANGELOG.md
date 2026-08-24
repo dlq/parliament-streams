@@ -246,6 +246,14 @@ application. Earlier application work remains available in Git history.
 
 ### Fixed
 
+- Corrected copied Knesset accessibility metadata that had been attached to
+  Chile Camara TV, recorded the separate official Hebrew-captioned Knesset
+  stream as source-dependent accessibility, and added validation to reject
+  caption-language metadata that conflicts with a channel's declared language.
+- Removed two non-existent Harmony API guesses while retaining the working
+  ParlVU and SenVu HTML schedule collector, replaced stale Netherlands and
+  Thailand supporting links, and moved Nunavut's non-resolving historical HLS
+  endpoint to research-only review status.
 - Demoted Brazil TV Camara from native direct-HLS playback to official-page
   link-out after the official page's embedded HLS manifest began returning HTTP
   404, matching the scheduled stable-stream regression audit.
