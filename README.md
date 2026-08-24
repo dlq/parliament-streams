@@ -211,9 +211,9 @@ means the source terms expressly rule out a third-party player without separate
 permission. Source owners can request prompt removal through the repository
 owner on GitHub.
 
-Official fallback records from `data/fallbacks.json` appear in the catalogue as
-related source-detail links and as a compact fallback directory. These records
-cover event platforms, official player pages, broadcaster pages, and
+Official fallback records from `data/fallbacks.json` appear as related links in
+the selected channel's source details. These records cover event platforms,
+official player pages, broadcaster pages, and
 provider-managed embeds that are useful for users without claiming a stable
 direct channel stream. When a fallback is related to a channel with collected
 schedule data, the site can show the current and next event titles beside the

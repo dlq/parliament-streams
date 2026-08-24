@@ -100,7 +100,7 @@ official player pages, official broadcaster pages, and provider-managed embeds.
 Their `playback_claim` must stay conservative: a fallback can document link-out
 or provider-managed playback without asserting that a reusable direct stream
 exists. The current site renders related fallbacks in the source detail panel
-and all recorded fallbacks in a compact directory below the catalogue.
+while standalone records remain available only in the published JSON dataset.
 
 ## Maintenance Flow
 

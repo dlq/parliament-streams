@@ -69,9 +69,6 @@ const elements = {
   sortButtons: document.querySelectorAll("[data-sort]"),
   sortHeaders: document.querySelectorAll("[data-sort-header]"),
   sortStatus: document.querySelector("#sort-status"),
-  fallbackDirectoryLabel: document.querySelector("#fallback-directory-label"),
-  fallbackDirectoryTitle: document.querySelector("#fallback-directory-title"),
-  fallbackDirectoryList: document.querySelector("#fallback-directory-list"),
   intro: document.querySelector(".intro"),
   heroCredit: document.querySelector(".hero-credit"),
 };
@@ -352,8 +349,6 @@ function applyStaticTranslations() {
   setText("metric-updated-label", t("metricUpdated"));
   setText("catalogue-overview-title", t("catalogueCoverage"));
   document.querySelector("#catalogue-results").setAttribute("aria-label", t("catalogueResults"));
-  setText("fallback-directory-label", t("fallbackDirectoryLabel"));
-  setText("fallback-directory-title", t("fallbackDirectoryTitle"));
   elements.sortStatus.setAttribute("lang", state.locale);
   ["source", "jurisdiction", "language", "mode", "access", "use"].forEach((key) => setText(`sort-${key}`, t(key === "language" ? "contentLanguage" : key)));
   setText("method-label", t("care"));
@@ -388,7 +383,6 @@ function setLocale(locale) {
     renderList();
     renderDetail();
     renderResearchSummary();
-    renderFallbackDirectory();
     elements.stats.textContent = t("documented", { count: state.channels.length, date: state.generatedOn });
   }
 }
@@ -810,16 +804,6 @@ function fallbackMarkup(channel) {
     </dd>
   </div>`;
 }
-function renderFallbackDirectory() {
-  elements.fallbackDirectoryList.innerHTML = state.fallbacks.length
-    ? state.fallbacks.map((fallback) => `
-      <li>
-        <a href="${fallback.official_url}" target="_blank" rel="noreferrer">${escapeHtml(fallback.label)} ↗</a>
-        <span>${jurisdictionName(fallback.country_or_region)} · ${fallbackLabel(fallback.fallback_type)} · ${fallbackLabel(fallback.integration_mode)}</span>
-        ${fallbackScheduleMarkup(fallback)}
-      </li>`).join("")
-    : `<li>${t("noFallbacks")}</li>`;
-}
 function researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy) {
   if (state.locale === "en") {
     return `<p class="detail-note"><strong>${t("reuse")}</strong> <span lang="en">${channel.permission.summary} ${evidenceMarkup(channel)}</span></p>
@@ -1078,7 +1062,6 @@ async function init() {
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
     renderResearchSummary();
-    renderFallbackDirectory();
     [elements.search, elements.level, elements.format].forEach((input) => input.addEventListener("input", () => { renderList(); renderDetail(); }));
     elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
       const key = button.dataset.sort;

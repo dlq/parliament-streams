@@ -94,8 +94,8 @@ Done:
   official link-out.
 - `data/fallbacks.json` now records official event, player, broadcaster, and
   provider fallback surfaces separately from permanent channel records. The
-  public site renders related fallbacks in source details and exposes a compact
-  fallback directory for records that do not yet map to a channel.
+  public site renders related fallbacks in source details; standalone records
+  remain available in the machine-readable dataset until they map to channels.
 - Schema v8 adds compact per-entry validation history. All 86 catalogue entries
   now link to retained dated health reports, and the public site surfaces the
   latest retained check in the source detail panel.
@@ -548,6 +548,37 @@ Later review prompts:
    the project becomes useful for outreach to legislatures or vendors.
 7. Explore browsing by legislature/institution rather than only by stream,
    especially once external identity links and chamber mappings are stable.
+
+### Schedule Page
+
+Consider a dedicated schedule page as a peer to the catalogue and any future
+coverage map. It should use the same static `data/schedules.json` snapshot that
+GitHub Actions refreshes every six hours; it must not require a backend or make
+live cross-origin requests from the browser.
+
+The first useful version should:
+
+1. Present a chronological Now / Next / Later view, grouped by the viewer's
+   local date while retaining each event's source timezone and exact timestamp.
+2. Link each event to its catalogue channel detail and, when recorded, its
+   official event or schedule page. Playable events may offer the existing
+   catalogue player without implying that every scheduled event is live.
+3. Support compact filtering by jurisdiction, legislature, language, and event
+   status without reproducing the full catalogue table.
+4. Show collection time, source freshness, and stale or failed schedule state
+   explicitly. Missing schedule coverage must remain visibly different from
+   "nothing scheduled."
+5. Work as a dense agenda on desktop and a simple day-by-day list on mobile;
+   avoid a television-grid layout until event timing and channel coverage are
+   complete enough to support it.
+6. Preserve partial results when individual scrapers fail and explain the
+   catalogue's current schedule coverage rather than presenting the page as a
+   comprehensive parliamentary calendar.
+
+Before implementation, measure how many channels regularly produce usable
+current or upcoming events, verify timezone normalization and stable event IDs,
+and decide whether the URL should preserve date, jurisdiction, and language
+filters for sharing.
 
 ## Rights And Permission Work
 

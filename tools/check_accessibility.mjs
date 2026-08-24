@@ -161,9 +161,6 @@ try {
   assert.equal(await page.locator("#playback-filter").count(), 0);
   assert.equal(await page.locator("#rights-filter").count(), 0);
   assert(canonicalFallbacks.fallbacks.length >= 6);
-  assert.equal(await page.locator("#fallback-directory-list li").count(), canonicalFallbacks.fallbacks.length);
-  assert.match(await page.locator(".fallback-directory").innerText(), /C-SPAN Congress coverage/);
-  assert.match(await page.locator(".fallback-directory").innerText(), /U\.S\. HouseLive official events/);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
   const localeCoverage = await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([locale]) => ({

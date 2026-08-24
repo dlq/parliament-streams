@@ -38,9 +38,8 @@ application. Earlier application work remains available in Git history.
   and event-specific manifests so monthly audits do not reopen settled leads.
 - Tests for discovery-decision handling and bot-protection response detection.
 - A schema-validated `data/fallbacks.json` dataset, CLI validation command,
-  GitHub Pages publication, and public fallback directory for official
-  event/player/provider surfaces such as ParlVU, SenVu, Parliamentlive.tv,
-  C-SPAN, and HouseLive.
+  GitHub Pages publication, and channel-detail links for official event,
+  player, and provider surfaces such as ParlVU, SenVu, and Parliamentlive.tv.
 - A focused rights/accessibility review pass that moved France National
   Assembly to conditional-reuse status and added current Knesset, Sansad TV,
   and TPchannel evidence without overclaiming reuse permission.
@@ -245,6 +244,10 @@ application. Earlier application work remains available in Git history.
   calendar URL with its stable calendar route.
 
 ### Fixed
+
+- Removed the redundant standalone fallback-source directory from the public
+  catalogue while retaining related official fallbacks in channel details and
+  the complete machine-readable fallback dataset.
 
 - Corrected copied Knesset accessibility metadata that had been attached to
   Chile Camara TV, recorded the separate official Hebrew-captioned Knesset
