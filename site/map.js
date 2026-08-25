@@ -7,7 +7,7 @@ const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
 const geometryUrl = new URL("./assets/maps/countries-110m.geojson", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20260824-dissolved", appScriptUrl);
+const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20260824-us", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 
@@ -20,6 +20,8 @@ const subnationalParents = {
   Andalusia: "ES", Catalonia: "ES", Navarre: "ES", Valencia: "ES",
   "Northern Ireland": "GB", Scotland: "GB", Wales: "GB",
   Jalisco: "MX",
+  California: "US", Florida: "US", Minnesota: "US", "New York": "US", Oregon: "US",
+  "Rhode Island": "US", Texas: "US", Utah: "US", Washington: "US",
 };
 
 const fallbackCountryNames = {
@@ -27,7 +29,7 @@ const fallbackCountryNames = {
   DK: "Denmark", EE: "Estonia", ES: "Spain", FR: "France", GB: "United Kingdom", GR: "Greece",
   IE: "Ireland", IL: "Israel", IN: "India", IT: "Italy", LU: "Luxembourg", MN: "Mongolia",
   MX: "Mexico", NL: "Netherlands", NO: "Norway", NZ: "New Zealand", PT: "Portugal", SK: "Slovakia",
-  SV: "El Salvador", TH: "Thailand", TW: "Taiwan",
+  SV: "El Salvador", TH: "Thailand", TW: "Taiwan", US: "United States",
 };
 
 const query = new URLSearchParams(window.location.search);

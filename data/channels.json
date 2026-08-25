@@ -7043,6 +7043,990 @@
         }
       ],
       "playback_policy": "native_playback"
+    },
+    {
+      "id": "us-house-floorcast",
+      "name": "U.S. House FloorCast",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "United States House of Representatives",
+      "external_ids": {
+        "wikidata_qid": "Q11701",
+        "ipu_country_code": "US",
+        "ipu_parliament_code": "US",
+        "ipu_chamber_code": "US-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11701",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the United States House of Representatives; used for institutional identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/US/US-LC01/",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline House of Representatives chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://live.house.gov/",
+      "provenance_note": "Official House FloorCast service for live House floor proceedings. The service is event- and sitting-aware; no stable reusable first-party media endpoint is asserted by this record.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "sitting_only",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official FloorCast interface provides searchable closed-caption text during supported proceedings."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://live.house.gov/",
+          "method": "GET",
+          "kind": "house_floor_live_status_and_schedule",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "FloorCast is an official public House service, but no permission for independent native playback or redistribution of an extracted media endpoint has been recorded.",
+        "evidence": [
+          "https://www.house.gov/watch-houselive",
+          "https://live.house.gov/",
+          "https://ethics.house.gov/manual/general-prohibition-against-using-official-resources-for-campaign-or-political-purposes/"
+        ],
+        "recommendation": "Use the official link-out and schedule status. Do not extract or relay event media without House permission and source-specific validation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-senate-floor-webcast",
+      "name": "U.S. Senate Floor Webcast",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "United States Senate",
+      "external_ids": {
+        "wikidata_qid": "Q66096",
+        "ipu_country_code": "US",
+        "ipu_parliament_code": "US",
+        "ipu_chamber_code": "US-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q66096",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the United States Senate; used for institutional identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/US/US-UC01/",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline Senate chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.senate.gov/legislative/floor_activity_pail.htm",
+      "provenance_note": "Official Senate floor webcast and floor-activity surface. It presents the live chamber feed when the Senate is in session and links the current floor schedule.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "sitting_only",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": null
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.senate.gov/legislative/schedule/floor_schedule.htm",
+          "method": "GET",
+          "kind": "senate_floor_schedule",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Senate provides an official public floor webcast, but this review did not locate terms authorizing independent replay or redistribution of an underlying stream.",
+        "evidence": [
+          "https://www.senate.gov/legislative/floor_activity_pail.htm",
+          "https://www.senate.gov/visiting/common/generic/new/watching_congress.htm"
+        ],
+        "recommendation": "Link to the official webcast and schedule. Treat any media endpoint as event-specific research until reuse permission and stability are documented."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "us-house-committee-video",
+      "name": "U.S. House Committee Video",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "United States House of Representatives",
+      "external_ids": {
+        "wikidata_qid": "Q11701",
+        "ipu_country_code": "US",
+        "ipu_parliament_code": "US",
+        "ipu_chamber_code": "US-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11701",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the United States House of Representatives; used for institutional identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/US/US-LC01/",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline House of Representatives chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.congress.gov/committees/video",
+      "provenance_note": "Official Congress.gov index of live and archived House committee video. Individual hearings and meetings are event records rather than permanent channels.",
+      "technical_status": "link_only",
+      "stability_risk": "low",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption availability varies by committee and event."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://api.congress.gov/",
+          "method": "GET",
+          "kind": "congress_api_committee_meetings",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "Congress.gov is an official event and video index, but no permission for independent playback or redistribution of committee media has been recorded.",
+        "evidence": [
+          "https://www.congress.gov/committees/video",
+          "https://www.congress.gov/committees",
+          "https://api.congress.gov/"
+        ],
+        "recommendation": "Use Congress.gov links and committee-meeting metadata. Keep event media on the official service unless source-specific terms authorize reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "us-senate-committee-webcasts",
+      "name": "U.S. Senate Committee Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "United States",
+      "legislature": "United States Senate",
+      "external_ids": {
+        "wikidata_qid": "Q66096",
+        "ipu_country_code": "US",
+        "ipu_parliament_code": "US",
+        "ipu_chamber_code": "US-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q66096",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the United States Senate; used for institutional identity and discovery only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/US/US-UC01/",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the IPU Parline Senate chamber identifier; used for institutional identity only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.senate.gov/committees/hearings_meetings.htm",
+      "provenance_note": "Official Senate hearing and meeting directory. Live webcasts are published by individual committees and therefore remain event- and committee-specific.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility varies across committee webcast systems."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.senate.gov/committees/hearings_meetings.htm",
+          "method": "GET",
+          "kind": "senate_hearings_and_meetings",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Senate committees publish public webcasts, but this review did not identify uniform Senate-wide terms authorizing independent replay or redistribution.",
+        "evidence": [
+          "https://www.senate.gov/committees/hearings_meetings.htm",
+          "https://www.senate.gov/committees/how_to_committee_hearings.htm"
+        ],
+        "recommendation": "Link to each official hearing or committee webcast. Review committee-specific terms before using event media elsewhere."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "us-ca-assembly-live",
+      "name": "California Assembly Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "California",
+      "legislature": "California State Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q1026858",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1026858",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the California State Assembly; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.assembly.ca.gov/todaysevents",
+      "provenance_note": "Official California State Assembly live-events page with room feeds, scheduled proceedings, and links to archived events.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility should be confirmed per event and room feed."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.assembly.ca.gov/events",
+          "method": "GET",
+          "kind": "assembly_events_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Assembly publishes official public live and archived event video, but no broad media-redistribution permission has been recorded.",
+        "evidence": [
+          "https://www.assembly.ca.gov/todaysevents",
+          "https://www.assembly.ca.gov/events",
+          "https://www.assembly.ca.gov/events/past"
+        ],
+        "recommendation": "Use official event links while researching Assembly audiovisual terms and stable event metadata."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+        }
+      ]
+    },
+    {
+      "id": "us-fl-legislature-video",
+      "name": "Florida Legislature Video",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Florida",
+      "legislature": "Florida Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q3556484",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3556484",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Florida Legislature; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.flsenate.gov/Media/Videos",
+      "provenance_note": "Official Florida Senate media service carrying Senate, House, and joint legislative events, with live schedules and archives.",
+      "technical_status": "link_only",
+      "stability_risk": "low",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official player exposes closed-caption controls; caption availability may vary by event."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.flsenate.gov/Media/VideoSchedule/Active",
+          "method": "GET",
+          "kind": "legislative_video_schedule",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "The official player states that use of Florida legislative video for political, campaign, or commercial purposes is strictly prohibited.",
+        "evidence": [
+          "https://www.flsenate.gov/Media/Videos",
+          "https://www.flsenate.gov/Media/VideoSchedule/Active",
+          "https://www.flsenate.gov/Media/VideoPlayer/6225"
+        ],
+        "recommendation": "Use official link-out only and preserve the service's restrictions. Seek written permission before redistribution or reuse beyond personal viewing."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-mn-legislature-multimedia",
+      "name": "Minnesota Legislature Multimedia",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Minnesota",
+      "legislature": "Minnesota Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q1117432",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1117432",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Minnesota Legislature; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.leg.mn.gov/leg/multimedia",
+      "provenance_note": "Official joint Minnesota Legislature multimedia directory linking House and Senate live video, webcast schedules, and archives.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Captioning and accommodations vary across chamber and event services."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.leg.mn.gov/cal",
+          "method": "GET",
+          "kind": "joint_legislative_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The joint Legislature site provides official video discovery and schedules, but broad audiovisual redistribution terms have not been recorded.",
+        "evidence": [
+          "https://www.leg.mn.gov/",
+          "https://www.leg.mn.gov/leg/multimedia",
+          "https://www.leg.mn.gov/cal"
+        ],
+        "recommendation": "Use official chamber and event links while researching source-specific rights and stable player identities."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-ny-assembly-live",
+      "name": "New York Assembly Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "New York",
+      "legislature": "New York State Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q1470702",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1470702",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the New York State Assembly; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://nyassembly.gov/av/live/",
+      "provenance_note": "Official New York State Assembly live-video page for chamber and committee proceedings.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility should be confirmed for each live or archived proceeding."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://nyassembly.gov/av/live/",
+          "method": "GET",
+          "kind": "assembly_live_event_listing",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Assembly publishes an official public live-video service, but source-specific audiovisual reuse terms have not been recorded.",
+        "evidence": [
+          "https://nyassembly.gov/av/live/"
+        ],
+        "recommendation": "Use official link-out while researching Assembly video terms and event metadata."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-ny-senate-live",
+      "name": "New York Senate Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "New York",
+      "legislature": "New York State Senate",
+      "external_ids": {
+        "wikidata_qid": "Q1722258",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1722258",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the New York State Senate; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.nysenate.gov/events",
+      "provenance_note": "Official New York State Senate event calendar; live and archived video is attached to Senate session and committee event pages.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility varies by event and recording."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.nysenate.gov/events",
+          "method": "GET",
+          "kind": "senate_events_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "The Senate publishes official live and archived proceedings, while its adopted rules restrict use of Senate broadcasts in paid political advertising and commercial advertising.",
+        "evidence": [
+          "https://www.nysenate.gov/about-new-york-state-senate",
+          "https://www.nysenate.gov/events",
+          "https://www.nysenate.gov/sites/default/files/admin/structure/media/manage/filefile/a/2025-02/rules-of-the-senate-2025-26.pdf"
+        ],
+        "recommendation": "Use official link-out and preserve Senate restrictions. Seek clarification before redistributing event media."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "us-or-legislature-video",
+      "name": "Oregon Legislature Video",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Oregon",
+      "legislature": "Oregon Legislative Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q7101257",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7101257",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Oregon Legislative Assembly; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.oregonlegislature.gov/",
+      "provenance_note": "Official Oregon Legislature site links daily floor and committee events to live room video; OLIS supplies event records and archived committee material.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility should be checked per event and recording."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://olis.oregonlegislature.gov/",
+          "method": "GET",
+          "kind": "olis_legislative_events",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official event video and archives are public, but this review did not identify broad permission to redistribute legislative video.",
+        "evidence": [
+          "https://www.oregonlegislature.gov/",
+          "https://olis.oregonlegislature.gov/"
+        ],
+        "recommendation": "Use official event links while documenting OLIS identifiers, player routes, and audiovisual reuse terms."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-ri-capitol-tv",
+      "name": "Rhode Island Capitol TV",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Rhode Island",
+      "legislature": "Rhode Island General Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q7320919",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7320919",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Rhode Island General Assembly; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://capitoltvri.cablecast.tv/",
+      "provenance_note": "Capitol TV is the Rhode Island General Assembly's broadcast arm and publishes eight live channels, schedules, and archives through Cablecast.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "available",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The General Assembly states that Capitol TV's eight live channels are closed captioned."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://capitoltvri.cablecast.tv/",
+          "method": "GET",
+          "kind": "cablecast_schedule_and_archives",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Capitol TV is the Assembly's official broadcast service, but broad third-party redistribution terms have not been recorded.",
+        "evidence": [
+          "https://www.rilegislature.gov/Pages/GettingStd.aspx",
+          "https://capitoltvri.cablecast.tv/"
+        ],
+        "recommendation": "Use the authorized Capitol TV link-out while researching Cablecast endpoints and Assembly reuse terms."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-tx-legislature-broadcasts",
+      "name": "Texas Legislature Broadcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Texas",
+      "legislature": "Texas Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q2653964",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2653964",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Texas Legislature; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://capitol.texas.gov/",
+      "provenance_note": "Official Texas Legislature portal linking House and Senate broadcasts and legislative meeting calendars; House video and audio is published on a separate official chamber surface.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility varies by chamber, room, and event."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://capitol.texas.gov/",
+          "method": "GET",
+          "kind": "legislative_meetings_calendar",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Legislature publishes official public broadcast links and calendars, but this review did not identify uniform audiovisual redistribution terms across both chambers.",
+        "evidence": [
+          "https://capitol.texas.gov/",
+          "https://house.texas.gov/video-audio/"
+        ],
+        "recommendation": "Use official chamber and event links while documenting each chamber's player, schedule identifiers, and reuse terms."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "us-ut-legislature-live",
+      "name": "Utah Legislature Live",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Utah",
+      "legislature": "Utah State Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q2384499",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2384499",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Utah State Legislature; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://le.utah.gov/",
+      "provenance_note": "Official Utah Legislature site with Now Playing links, floor and committee audio/video, calendars, and archives.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Accessibility varies by event and media route."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://le.utah.gov/~2026/2026.htm",
+          "method": "GET",
+          "kind": "session_calendar_and_now_playing",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Legislature provides official public event media and archives, but broad audiovisual redistribution permission has not been recorded.",
+        "evidence": [
+          "https://le.utah.gov/",
+          "https://le.utah.gov/~2026/2026.htm"
+        ],
+        "recommendation": "Use official event links while researching stable media identifiers and legislative video terms."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:47Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+        }
+      ]
+    },
+    {
+      "id": "us-wa-legislature-tvw",
+      "name": "Washington Legislature on TVW",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Washington",
+      "legislature": "Washington State Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q7972258",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7972258",
+          "checked_on": "2026-08-24",
+          "confidence": "high",
+          "notes": "Matched to the Washington State Legislature; used for institutional identity and discovery only."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://tvw.org/",
+      "provenance_note": "The Washington State Legislature identifies TVW as the provider of live and archived legislative meeting video and links recordings from official calendars and committee pages.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "en"
+        ],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Captioning and transcripts are source- and event-dependent on TVW."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://leg.wa.gov/",
+          "method": "GET",
+          "kind": "legislative_calendar_with_tvw_links",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "TVW is an authorized legislative video provider, but the catalogue has not recorded terms permitting independent redistribution of TVW media.",
+        "evidence": [
+          "https://leg.wa.gov/",
+          "https://leg.wa.gov/about-the-legislature/committees",
+          "https://tvw.org/"
+        ],
+        "recommendation": "Use TVW and official Legislature link-outs while reviewing provider terms and event metadata."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-08-25T02:13:48Z",
+          "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     }
   ]
 }

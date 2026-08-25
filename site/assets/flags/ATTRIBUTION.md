@@ -30,6 +30,11 @@
   [Andalusia](https://commons.wikimedia.org/wiki/File:Flag_of_Andalusia.svg),
   [Navarre](https://commons.wikimedia.org/wiki/File:Flag_of_Navarre.svg), and
   [Jalisco](https://commons.wikimedia.org/wiki/File:Flag_of_Jalisco.svg).
+- The United States state flag files are public-domain assets obtained from the
+  [US state flags SVG collection](https://github.com/nibsbin/us-state-flags-svg),
+  which records Wikimedia/Wikipedia public-domain provenance: California,
+  Florida, Minnesota, New York, Oregon, Rhode Island, Texas, Utah, and
+  Washington.
 - The remaining national, devolved-jurisdiction, European Union, and United
   Nations flag SVGs are from
   [flag-icons v7.3.2](https://github.com/lipis/flag-icons/tree/v7.3.2), under

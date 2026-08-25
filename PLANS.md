@@ -100,7 +100,7 @@ Done:
   provider fallback surfaces separately from permanent channel records. The
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
-- Schema v8 adds compact per-entry validation history. All 86 catalogue entries
+- Schema v8 adds compact per-entry validation history. All 100 catalogue entries
   now link to retained dated health reports, and the public site surfaces the
   latest retained check in the source detail panel.
 - Validation-history refresh and drift checking are available through Make and
@@ -137,8 +137,10 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 28 of 86 catalogue entries still use a permission status ending
-in `pending_review`.
+Current queue: 38 of 100 catalogue entries use a permission status ending in
+`pending_review`. Ten are newly added U.S. official-page records awaiting a
+source-specific terms review; the previous 28-entry queue retains its dated
+classification.
 
 Priority order:
 
@@ -382,14 +384,17 @@ The schema-validated
 inventory records six federal candidates and all 50 state legislatures. The
 dated review in
 [`reports/us-federal-state-candidates-2026-08-24.md`](reports/us-federal-state-candidates-2026-08-24.md)
-prioritizes federal floor and committee services plus California, Florida,
-Minnesota, New York, Oregon, Rhode Island, Texas, Utah, and Washington for deep
-player, schedule, accessibility, and rights validation.
+prioritized federal floor and committee services plus California, Florida,
+Minnesota, New York, Oregon, Rhode Island, Texas, Utah, and Washington. Four
+federal services and ten state/chamber services are now published as honest
+official-page link-outs with identity, schedule, accessibility, rights, and
+validation metadata.
 
-Keep this as a candidate inventory until each record has a stable institutional
-identity, source-specific rights note, and either a supported playback route or
-an honest official-page link-out. Research the District of Columbia and U.S.
-territorial legislatures in separate passes rather than treating them as states.
+Keep the unpromoted state roots as a candidate inventory until each has a
+distinct current legislative video surface, stable institutional identity,
+source-specific rights note, and either a supported playback route or an honest
+official-page link-out. Research the District of Columbia and U.S. territorial
+legislatures in separate passes rather than treating them as states.
 
 ### Tier 3 Expansion
 
@@ -647,12 +652,12 @@ Near-term:
 Current measurable review queues, last reconciled with the catalogue on
 2026-08-24:
 
-- 28 of 86 catalogue entries still use a permission status ending in
+- 38 of 100 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
   Breakdown: 18 official-vendor HLS, 4 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 86 entries retain at least one `unknown` media-accessibility field. Start
+- All 100 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
   Breakdown: 37 national, 43 sub-national, and 6 supranational entries.

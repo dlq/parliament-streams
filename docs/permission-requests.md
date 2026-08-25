@@ -10,7 +10,7 @@ public catalogue.
 
 ## Current Status
 
-Last prepared: 2026-08-19.
+Last prepared: 2026-08-24.
 
 Communication status: deferred. Do not send piecemeal permission requests yet.
 Reserve outreach for a more substantive communications push after the catalogue,
@@ -27,10 +27,11 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 28 of 86 catalogue entries still use a permission status ending in
-  `pending_review`.
-- 16 entries likely need written clarification.
-- 12 entries should remain pending after a dated public-terms search unless
+- 38 of 100 catalogue entries use a permission status ending in
+  `pending_review`; ten are newly published U.S. official-page records that
+  have not yet been triaged into the dated 2026-08-19 outreach buckets.
+- 16 entries in the previous queue likely need written clarification.
+- 12 entries in the previous queue should remain pending after a dated public-terms search unless
   source owners publish clearer terms or the post-proof-of-concept playback
   policy changes.
 

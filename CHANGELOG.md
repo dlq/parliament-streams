@@ -8,6 +8,16 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- Four official U.S. federal catalogue records covering House and Senate floor
+  and committee video services, with Wikidata/IPU identities and schedule
+  surfaces but no unsupported direct-playback claim.
+- Ten official U.S. state service records covering California, Florida,
+  Minnesota, both New York chambers, Oregon, Rhode Island, Texas, Utah, and
+  Washington, including state flags, Wikidata identities, schedule links,
+  accessibility evidence, and source-specific rights posture.
+- A retained health report for all fourteen promoted U.S. records, explicitly
+  distinguishing reachable pages from bot-blocked and certificate-chain
+  responses.
 - A schema-validated United States discovery inventory covering six federal
   floor, committee, API, and broadcaster candidates plus official research
   roots for all 50 state legislatures, with nine state video surfaces
@@ -19,7 +29,7 @@ application. Earlier application work remains available in Git history.
   institutions, with newly recorded meeting or programme sources for Thailand,
   Mongolia, Taiwan, France, Brazil, Denmark, Norway, Greece, Israel, Slovakia,
   the EU Council, the European Parliament, New South Wales, and Queensland.
-- Complete schedule-source coverage across all 86 catalogue entries, while
+- Complete schedule-source coverage across all 100 catalogue entries, while
   retaining `planned` status for sources that do not yet have reliable parsers.
 - Schedule snapshot schema v3 with normalized rolling event lists, canonical
   start/end timestamps, source timezones, status values, official or

@@ -4,6 +4,17 @@ This is a working research log, not an endorsed stream directory or legal assess
 
 Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `PLANS.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
 
+## 2026-08-24 U.S. catalogue promotion
+
+Promoted fourteen verified official video surfaces from the U.S. discovery
+inventory: four federal House/Senate floor and committee services, plus ten
+state service records covering California, Florida, Minnesota, both New York
+chambers, Oregon, Rhode Island, Texas, Utah, and Washington. All are link-out
+records. Congress.gov's API is recorded as planned committee schedule
+enrichment rather than as a video channel, and C-SPAN remains a separate
+broadcaster fallback. The remaining state roots stay in the discovery queue
+until a distinct current legislative video service is verified.
+
 ## Historical Scope
 
 These notes retain earlier exploratory work, including observations from the

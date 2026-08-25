@@ -165,7 +165,12 @@
     },
     {
       "id": "us-cspan-congress",
-      "related_channel_ids": [],
+      "related_channel_ids": [
+        "us-house-floorcast",
+        "us-senate-floor-webcast",
+        "us-house-committee-video",
+        "us-senate-committee-webcasts"
+      ],
       "label": "C-SPAN Congress coverage",
       "jurisdiction_level": "national",
       "country_or_region": "United States",
@@ -185,7 +190,9 @@
     },
     {
       "id": "us-house-live",
-      "related_channel_ids": [],
+      "related_channel_ids": [
+        "us-house-floorcast"
+      ],
       "label": "U.S. HouseLive official events",
       "jurisdiction_level": "national",
       "country_or_region": "United States",

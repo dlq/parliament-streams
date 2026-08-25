@@ -11,7 +11,7 @@ const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
 const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.json"), "utf8"));
 const documentedAdmin1 = JSON.parse(await readFile(join(root, "site/assets/maps/documented-admin1.geojson"), "utf8"));
-assert.equal(documentedAdmin1.features.length, 25);
+assert.equal(documentedAdmin1.features.length, 34);
 assert(documentedAdmin1.features.every((feature) => feature.geometry.type === "MultiPolygon"));
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
@@ -19,6 +19,9 @@ const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
 const expectedScheduleCount = canonicalCatalogue.channels.filter((channel) =>
   channel.epg_sources.some((source) => source.scraper_status === "implemented")
 ).length;
+const expectedJurisdictionCount = new Set(canonicalCatalogue.channels.map(
+  (channel) => `${channel.jurisdiction_level}:${channel.country_or_region}`,
+)).size;
 const expectedUpdatedDate = new Intl.DateTimeFormat("en", {
   month: "short",
   day: "numeric",
@@ -434,12 +437,15 @@ try {
   const mapPage = await context.newPage();
   await mapPage.goto(`${baseUrl}map.html?lang=en`);
   await mapPage.waitForSelector(".map-country.is-documented");
-  assert.equal(await mapPage.locator("#jurisdiction-count").innerText(), "55");
+  assert.equal(
+    await mapPage.locator("#jurisdiction-count").innerText(),
+    String(expectedJurisdictionCount),
+  );
   assert.equal(await mapPage.locator("#source-count").innerText(), String(canonicalCatalogue.channels.length));
   assert.equal(await mapPage.locator("#playable-count").innerText(), String(expectedPlayableCount));
-  assert.equal(await mapPage.locator("#jurisdiction-list button").count(), 55);
-  assert.equal(await mapPage.locator(".map-country.is-documented").count(), 27);
-  assert.equal(await mapPage.locator(".map-region").count(), 25);
+  assert.equal(await mapPage.locator("#jurisdiction-list button").count(), expectedJurisdictionCount);
+  assert.equal(await mapPage.locator(".map-country.is-documented").count(), 28);
+  assert.equal(await mapPage.locator(".map-region").count(), 34);
   assert.match(await mapPage.locator("#map-detail").innerText(), /Canada.*31 sources/s);
   assert.equal(
     await mapPage
@@ -482,7 +488,10 @@ try {
   await mapPage.locator("#map-search").press("Enter");
   await mapPage.waitForTimeout(300);
   assert.match(await mapPage.locator("#map-detail").innerText(), /United Kingdom.*Scotland/s);
-  assert.equal(await mapPage.locator("#jurisdiction-visible-count").innerText(), "1 / 55");
+  assert.equal(
+    await mapPage.locator("#jurisdiction-visible-count").innerText(),
+    `1 / ${expectedJurisdictionCount}`,
+  );
   assert.equal(await mapPage.locator(".map-region.is-selected").count(), 1);
   assert.notEqual(await mapPage.locator(".map-viewport").getAttribute("transform"), null);
   assert.match(await mapPage.locator("#map-detail .map-source-list a").first().getAttribute("href"), /source=scottish-parliament-tv/);

@@ -51,13 +51,12 @@ These entries need either written clarification or a future dated terms review.
 
 ## Current Open Queue
 
-As of 2026-08-19:
+As of 2026-08-24:
 
-- 28 of 86 catalogue entries remain permission-pending.
-- 16 entries likely need written clarification from the source owner or
-  institution.
-- 12 entries should stay pending after dated public-terms searches unless
-  clearer terms are published.
+- 38 of 100 catalogue entries remain permission-pending.
+- The previous 28-entry review queue remains classified in the dated report.
+- Ten newly published U.S. official-page records need source-specific terms
+  review or written clarification before any playback posture is reconsidered.
 
 The current execution queue is
 [review-queues-2026-08-19-rights-next.json](../reports/review-queues-2026-08-19-rights-next.json).

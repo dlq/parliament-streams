@@ -386,7 +386,7 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of the 2026-08-24 discovery pass, all 86 channel records have at least one
+As of the 2026-08-24 discovery pass, all 100 channel records have at least one
 official schedule, agenda, meeting, or programme surface recorded. This is
 source coverage, not programme-guide coverage: 17 unique URLs have implemented
 parsers, while 58 are parser candidates or link-only research sources. See

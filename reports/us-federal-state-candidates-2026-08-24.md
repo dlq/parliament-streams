@@ -6,25 +6,28 @@ The canonical inventory is
 [`data/discovery/us-legislatures.json`](../data/discovery/us-legislatures.json).
 It records six federal candidates and one official research starting point for
 each of the 50 state legislatures. A verified video surface is evidence for
-further research, not yet evidence of a stable channel, embeddability, or
-permission to redistribute.
+further research, not by itself evidence of a stable stream, embeddability, or
+permission to redistribute. Four federal service records and ten state/chamber
+service records were subsequently added to the catalogue as official
+link-outs; the inventory remains the exhaustive research queue.
 
 ## Federal Candidates
 
 | Priority | Candidate | Role | Current disposition |
 | --- | --- | --- | --- |
-| High | U.S. House FloorCast / HouseLive | Floor and event video | Existing fallback; separate the stable floor service from rotating events and review House reuse restrictions. |
-| High | U.S. Senate Floor Webcast | Floor video and daily schedule | Verified official video surface; discover the supported player route and terms. |
-| High | House committee video on Congress.gov | Live and archived committee events | Model as event records rather than permanent channels. |
+| High | U.S. House FloorCast / HouseLive | Floor and event video | Published as an official floor-service link-out; HouseLive remains a related fallback. |
+| High | U.S. Senate Floor Webcast | Floor video and daily schedule | Published as an official link-out with a planned floor-schedule source. |
+| High | House committee video on Congress.gov | Live and archived committee events | Published as an event-platform link-out rather than as a permanent playable channel. |
 | High | Congress.gov committee-meeting API | Schedule and event metadata | API-key-backed enrichment candidate, not a video transport. |
-| Medium | Senate committee webcasts | Distributed committee event video | Inventory committee sites, vendors, archives, and schedules. |
+| Medium | Senate committee webcasts | Distributed committee event video | Published as a Senate-wide event-directory link-out; committee-specific player research remains. |
 | Medium | C-SPAN Congress | Broadcaster fallback | Keep separate from first-party Congress sources and preserve C-SPAN-specific licensing. |
 
 ## Strong State Candidates
 
 These states have current official evidence of legislative live video, archives,
-or both. They should receive the first deep player, schedule, accessibility, and
-rights pass.
+or both. They are now represented by official-page catalogue records; New York
+is split by chamber. Deep player, schedule-parser, accessibility, and rights
+work remains.
 
 | State | Confirmed surface | Main research question |
 | --- | --- | --- |
