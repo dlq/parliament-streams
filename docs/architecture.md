@@ -22,6 +22,17 @@ contains:
 adds cross-record rules that JSON Schema cannot express, such as source-type and
 technical-status coherence.
 
+Discovery data is maintained separately from published channels:
+
+- `data/discovery/tier1.json` and `tier2.json` drive the monthly democracy-tier
+  static and browser audit;
+- `data/discovery/reviewed-manifests.json` retains evidence-backed dispositions
+  so rejected findings do not repeatedly reopen review work; and
+- `data/discovery/us-legislatures.json` records six federal candidates and all
+  50 state legislatures for manual U.S. expansion research. Its
+  `verified_official_video_surface` status confirms an official video surface,
+  not a stable channel, playback permission, or catalogue readiness.
+
 ## Generated And Local Files
 
 `site/catalogue-data.js` is generated from `data/channels.json` so `site/index.html`
@@ -81,7 +92,7 @@ pipeline, or request-time scraper.
 - `third_party_relay_hls`: HLS served by a relay that is not clearly operated or
   authorized by the source. These should normally stay out of playback.
 - `direct_dash_research`: DASH endpoint retained as research evidence, not as
-  Apple-native playback.
+  a playback route supported by the current browser player.
 - `official_youtube_embed`: official YouTube presence rendered through the
   provider's embed path without extracting manifests.
 - `official_page`: official link-out/player page with no native playback claim.
@@ -132,8 +143,9 @@ schedule surfaces that still need implementation.
 ## Validation Stack
 
 `make verify` is the high-confidence local check. It runs JSON parsing,
-catalogue and fallback validation, candidate and discovery validation,
-generated-site drift checks, Ruff formatting and linting, strict mypy, Python
+catalogue and fallback validation, candidate, democracy-discovery, and U.S.
+inventory validation, generated-site drift checks, Ruff formatting and
+linting, strict mypy, Python
 compilation, unit tests with coverage, HTML validation, and Playwright/Axe
 accessibility checks.
 
@@ -146,8 +158,11 @@ drive the low-noise always-on regression issue workflow.
 
 ## Where To Start
 
-- To understand the data model: read `schema/channels.schema.json` and
-  `schema/fallbacks.schema.json`, then `parliament_streams/models.py`.
+- To understand the published data model: read `schema/channels.schema.json`
+  and `schema/fallbacks.schema.json`, then `parliament_streams/models.py`.
+- To understand discovery watchlists: read
+  `schema/discovery-targets.schema.json` and
+  `schema/us-legislature-candidates.schema.json`.
 - To add or change a source: read `docs/catalogue-maintenance.md`.
 - To understand source rights posture: read
   `docs/source-rights-and-permissions.md`.

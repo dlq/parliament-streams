@@ -62,6 +62,14 @@ The current report families are:
 - deep browser validation reports, which load official pages in Chromium and
   capture manifests revealed by player scripts or network requests.
 
+The U.S. federal/state inventory in `data/discovery/us-legislatures.json` is a
+research watchlist rather than a published channel catalogue. Its official
+roots come from the Congress.gov state-legislature directory, while stronger
+candidate labels require recorded official video evidence. The inventory does
+not by itself establish stream stability, technical openness, or reuse rights.
+The initial review is retained in
+`reports/us-federal-state-candidates-2026-08-24.md`.
+
 Deep browser findings need extra caution. A manifest can be technically public
 but still be event-specific, session-conditioned, geofenced, DRM-protected, or
 unsuitable for native playback or redistribution. Preserve the discovery page,

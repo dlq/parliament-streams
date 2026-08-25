@@ -1,4 +1,4 @@
-.PHONY: verify test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate discovery-decisions-validate validation-history validation-history-check site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
+.PHONY: verify test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate validation-history validation-history-check site-data site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --locked --extra dev
@@ -6,7 +6,7 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate discovery-decisions-validate validation-history-check site-data-check format-check lint type-check compile coverage accessibility-check
+verify: json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate validation-history-check site-data-check format-check lint type-check compile coverage accessibility-check
 
 json-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/channels.json >/dev/null
@@ -24,6 +24,9 @@ candidates-validate:
 
 discovery-targets-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_discovery_targets.py data/discovery/tier1.json data/discovery/tier2.json
+
+us-candidates-validate:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_us_candidates.py
 
 discovery-decisions-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_discovery_decisions.py

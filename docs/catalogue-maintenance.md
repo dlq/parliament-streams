@@ -271,6 +271,34 @@ sites, renamed institutions, and entirely new player surfaces cannot be
 discovered reliably from a closed set of URLs. Update the target files when
 manual research identifies a better official page.
 
+### United States Candidate Inventory
+
+`data/discovery/us-legislatures.json` is the canonical research inventory for
+U.S. expansion. It contains six federal floor, committee, API, and broadcaster
+candidates plus exactly one record for each of the 50 state legislatures. The
+inventory is not a set of catalogue-ready channel records and is not currently
+fed into the monthly Tier 1/Tier 2 browser workflow.
+
+Validate it directly or through `make verify`:
+
+```sh
+uv run python tools/validate_us_candidates.py
+```
+
+The validator enforces unique candidate IDs, complete and unique 50-state
+postal-code coverage, schema-valid official URLs, and stronger evidence for
+records labelled `verified_official_video_surface`. That label means an
+official legislature or authorized provider documents legislative video. It
+does not establish a permanent channel identity, an open HLS/DASH endpoint,
+embeddability, or permission to redistribute.
+
+When researching a state, update its official, video, schedule, evidence, and
+notes fields. Promote work into `candidates/` only after a distinct stable
+channel or supportable official-page record has emerged and the normal
+identity, technical, accessibility, schedule, and rights review can begin. The
+initial priorities and scope boundaries are recorded in
+`reports/us-federal-state-candidates-2026-08-24.md`.
+
 ## Complete Verification
 
 ```sh

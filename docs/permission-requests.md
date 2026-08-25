@@ -14,7 +14,7 @@ Last prepared: 2026-08-19.
 
 Communication status: deferred. Do not send piecemeal permission requests yet.
 Reserve outreach for a more substantive communications push after the catalogue,
-rights posture, app direction, and source-owner asks are complete enough to
+rights posture, public-site direction, and source-owner asks are complete enough to
 present coherently.
 
 The eventual communications push should do two jobs:

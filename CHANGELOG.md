@@ -8,6 +8,13 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- A schema-validated United States discovery inventory covering six federal
+  floor, committee, API, and broadcaster candidates plus official research
+  roots for all 50 state legislatures, with nine state video surfaces
+  prioritized for deeper validation.
+- Validation and tests that enforce complete, unique 50-state coverage and
+  require stronger evidence for candidates labelled as verified video surfaces.
+
 - A full official-source schedule discovery pass covering all catalogue
   institutions, with newly recorded meeting or programme sources for Thailand,
   Mongolia, Taiwan, France, Brazil, Denmark, Norway, Greece, Israel, Slovakia,
@@ -39,6 +46,11 @@ application. Earlier application work remains available in Git history.
   file previews can render the programme guide without a server.
 
 ### Changed
+
+- Current-state documentation now reflects the 2026-08-24 catalogue and report
+  set, the 28-entry pending-rights queue, the static-site project terminology,
+  and the manual validation workflow and evidence boundaries for the U.S.
+  candidate inventory.
 
 - Schedule documentation now distinguishes records with an official schedule
   link from channels with real dated events in the published programme guide;

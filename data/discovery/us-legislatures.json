@@ -1,0 +1,233 @@
+{
+  "candidate_version": 1,
+  "generated_on": "2026-08-24",
+  "scope": "United States federal and state legislative video, webcast, and schedule candidates for possible catalogue inclusion.",
+  "method": "Record every federal legislative surface and all 50 official state legislature roots. Mark a candidate verified only when an official legislature or legislature-authorized provider currently documents live or archived legislative video. This inventory does not assert a stable direct stream or redistribution permission.",
+  "authoritative_directory_url": "https://www.congress.gov/state-legislature-websites",
+  "federal_candidates": [
+    {
+      "id": "us-house-floorcast",
+      "institution": "U.S. House of Representatives",
+      "candidate_type": "floor_channel",
+      "official_url": "https://www.house.gov/watch-houselive",
+      "video_url": "https://live.house.gov/",
+      "schedule_url": "https://live.house.gov/",
+      "research_status": "existing_fallback",
+      "priority": "high",
+      "evidence_urls": ["https://www.house.gov/watch-houselive", "https://live.house.gov/"],
+      "notes": "Existing fallback. Separate the stable floor service, event pages, schedule semantics, and House-specific reuse restrictions before catalogue promotion."
+    },
+    {
+      "id": "us-senate-floor-webcast",
+      "institution": "U.S. Senate",
+      "candidate_type": "floor_channel",
+      "official_url": "https://www.senate.gov/legislative/floor_activity_pail.htm",
+      "video_url": "https://www.senate.gov/legislative/floor_activity_pail.htm",
+      "schedule_url": "https://www.senate.gov/legislative/schedule/floor_schedule.htm",
+      "research_status": "verified_official_video_surface",
+      "priority": "high",
+      "evidence_urls": ["https://www.senate.gov/legislative/floor_activity_pail.htm", "https://www.senate.gov/visiting/common/generic/new/watching_congress.htm"],
+      "notes": "Official floor webcast and schedule. Discover the supported player route and document Senate-specific reuse terms before promotion."
+    },
+    {
+      "id": "us-house-committee-video",
+      "institution": "U.S. House of Representatives",
+      "candidate_type": "committee_platform",
+      "official_url": "https://www.congress.gov/committees/video",
+      "video_url": "https://www.congress.gov/committees/video",
+      "schedule_url": "https://www.congress.gov/committee-schedule/weekly/2026/08/24",
+      "research_status": "verified_official_video_surface",
+      "priority": "high",
+      "evidence_urls": ["https://www.congress.gov/committees/video", "https://www.congress.gov/committees"],
+      "notes": "Official live and archived House committee video index. Treat individual meetings as event records rather than permanent channels."
+    },
+    {
+      "id": "us-congress-committee-meetings-api",
+      "institution": "United States Congress",
+      "candidate_type": "committee_platform",
+      "official_url": "https://api.congress.gov/",
+      "video_url": "https://www.congress.gov/video",
+      "schedule_url": "https://api.congress.gov/",
+      "research_status": "verified_official_video_surface",
+      "priority": "high",
+      "evidence_urls": ["https://api.congress.gov/", "https://www.congress.gov/video"],
+      "notes": "The official API exposes committee-meeting metadata and requires an API key. Evaluate it as schedule enrichment, not as a video transport."
+    },
+    {
+      "id": "us-senate-committee-webcasts",
+      "institution": "U.S. Senate",
+      "candidate_type": "committee_platform",
+      "official_url": "https://www.senate.gov/committees/hearings_meetings.htm",
+      "video_url": "https://www.senate.gov/committees/hearings_meetings.htm",
+      "schedule_url": "https://www.senate.gov/committees/hearings_meetings.htm",
+      "research_status": "verified_official_video_surface",
+      "priority": "medium",
+      "evidence_urls": ["https://www.senate.gov/committees/hearings_meetings.htm", "https://www.senate.gov/committees/how_to_committee_hearings.htm"],
+      "notes": "Senate committee webcasts are distributed across committee sites. Inventory event identity, player vendors, schedules, and archives by committee."
+    },
+    {
+      "id": "us-cspan-congress",
+      "institution": "United States Congress",
+      "candidate_type": "broadcaster_fallback",
+      "official_url": "https://www.c-span.org/congress/",
+      "video_url": "https://www.c-span.org/congress/",
+      "schedule_url": "https://www.c-span.org/schedule/",
+      "research_status": "existing_fallback",
+      "priority": "medium",
+      "evidence_urls": ["https://www.c-span.org/congress/", "https://www.c-span.org/about/copyrightsAndLicensing/"],
+      "notes": "Existing broadcaster fallback. Keep separate from first-party congressional services and preserve C-SPAN's source-specific licensing posture."
+    }
+  ],
+  "state_candidates": [
+    {
+      "id": "us-al-legislature", "state": "Alabama", "postal_code": "AL", "institution": "Alabama Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.legislature.state.al.us/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legislature.state.al.us/"], "notes": "Locate current House, Senate, and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ak-legislature", "state": "Alaska", "postal_code": "AK", "institution": "Alaska State Legislature", "candidate_type": "legislature_platform", "official_url": "https://akleg.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://akleg.gov/"], "notes": "Research the legislature's current relationship with Gavel Alaska and identify official event metadata."
+    },
+    {
+      "id": "us-az-legislature", "state": "Arizona", "postal_code": "AZ", "institution": "Arizona State Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.azleg.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.azleg.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ar-legislature", "state": "Arkansas", "postal_code": "AR", "institution": "Arkansas General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.arkleg.state.ar.us/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.arkleg.state.ar.us/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ca-legislature", "state": "California", "postal_code": "CA", "institution": "California State Legislature", "candidate_type": "legislature_platform", "official_url": "https://leginfo.legislature.ca.gov/", "video_url": "https://www.assembly.ca.gov/todaysevents", "schedule_url": "https://www.assembly.ca.gov/events", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://www.assembly.ca.gov/todaysevents", "https://www.assembly.ca.gov/events/past"], "notes": "Assembly live room feeds and event archives are verified. Research Senate coverage separately and identify stable event/player metadata."
+    },
+    {
+      "id": "us-co-legislature", "state": "Colorado", "postal_code": "CO", "institution": "Colorado General Assembly", "candidate_type": "legislature_platform", "official_url": "https://leg.colorado.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://leg.colorado.gov/"], "notes": "Official materials reference Colorado Channel floor video and legislative audio; verify current public surfaces and rights."
+    },
+    {
+      "id": "us-ct-legislature", "state": "Connecticut", "postal_code": "CT", "institution": "Connecticut General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.cga.ct.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.cga.ct.gov/"], "notes": "Research first-party feeds and the legislature's current relationship with CT-N."
+    },
+    {
+      "id": "us-de-legislature", "state": "Delaware", "postal_code": "DE", "institution": "Delaware General Assembly", "candidate_type": "legislature_platform", "official_url": "https://legis.delaware.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://legis.delaware.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-fl-legislature", "state": "Florida", "postal_code": "FL", "institution": "Florida Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.leg.state.fl.us/", "video_url": "https://www.flsenate.gov/Media/Videos", "schedule_url": "https://www.flsenate.gov/Media/VideoSchedule/Active", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://www.flsenate.gov/Media/Videos", "https://www.flsenate.gov/Media/VideoSchedule/Active"], "notes": "The official Senate site exposes live schedules and archives, including House and joint events. Record the explicit nonpolitical and noncommercial use restriction."
+    },
+    {
+      "id": "us-ga-legislature", "state": "Georgia", "postal_code": "GA", "institution": "Georgia General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.legis.ga.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legis.ga.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-hi-legislature", "state": "Hawaii", "postal_code": "HI", "institution": "Hawaii State Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.capitol.hawaii.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.capitol.hawaii.gov/"], "notes": "Research chamber streams, committee videoconferences, archives, and event schedules."
+    },
+    {
+      "id": "us-id-legislature", "state": "Idaho", "postal_code": "ID", "institution": "Idaho Legislature", "candidate_type": "legislature_platform", "official_url": "https://legislature.idaho.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://legislature.idaho.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-il-legislature", "state": "Illinois", "postal_code": "IL", "institution": "Illinois General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.ilga.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.ilga.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-in-legislature", "state": "Indiana", "postal_code": "IN", "institution": "Indiana General Assembly", "candidate_type": "legislature_platform", "official_url": "https://iga.in.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://iga.in.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ia-legislature", "state": "Iowa", "postal_code": "IA", "institution": "Iowa General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.legis.iowa.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legis.iowa.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ks-legislature", "state": "Kansas", "postal_code": "KS", "institution": "Kansas Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.kslegislature.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.kslegislature.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ky-legislature", "state": "Kentucky", "postal_code": "KY", "institution": "Kentucky General Assembly", "candidate_type": "legislature_platform", "official_url": "https://legislature.ky.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://legislature.ky.gov/"], "notes": "Research official KET-supported live and archived legislative coverage and schedule metadata."
+    },
+    {
+      "id": "us-la-legislature", "state": "Louisiana", "postal_code": "LA", "institution": "Louisiana State Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.legis.la.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legis.la.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-me-legislature", "state": "Maine", "postal_code": "ME", "institution": "Maine Legislature", "candidate_type": "legislature_platform", "official_url": "https://legislature.maine.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://legislature.maine.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-md-legislature", "state": "Maryland", "postal_code": "MD", "institution": "Maryland General Assembly", "candidate_type": "legislature_platform", "official_url": "https://mgaleg.maryland.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://mgaleg.maryland.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ma-legislature", "state": "Massachusetts", "postal_code": "MA", "institution": "Massachusetts General Court", "candidate_type": "legislature_platform", "official_url": "https://malegislature.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://malegislature.gov/"], "notes": "Verify the General Court's current event livestream and archive routes and document schedule identifiers."
+    },
+    {
+      "id": "us-mi-legislature", "state": "Michigan", "postal_code": "MI", "institution": "Michigan Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.legislature.mi.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legislature.mi.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-mn-legislature", "state": "Minnesota", "postal_code": "MN", "institution": "Minnesota Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.leg.mn.gov/", "video_url": "https://www.leg.mn.gov/leg/multimedia", "schedule_url": "https://www.leg.mn.gov/cal", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://www.leg.mn.gov/leg/multimedia", "https://www.leg.mn.gov/cal"], "notes": "The joint site links House and Senate live video, webcast schedules, and archives. Determine permanent versus event-specific player identities."
+    },
+    {
+      "id": "us-ms-legislature", "state": "Mississippi", "postal_code": "MS", "institution": "Mississippi Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.legislature.ms.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legislature.ms.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-mo-legislature", "state": "Missouri", "postal_code": "MO", "institution": "Missouri General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.mo.gov/government/legislative-branch/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.mo.gov/government/legislative-branch/"], "notes": "Resolve separate House and Senate official roots, then locate video and schedule surfaces."
+    },
+    {
+      "id": "us-mt-legislature", "state": "Montana", "postal_code": "MT", "institution": "Montana Legislature", "candidate_type": "legislature_platform", "official_url": "https://leg.mt.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://leg.mt.gov/"], "notes": "Research official legislative streaming, archives, and event schedules."
+    },
+    {
+      "id": "us-ne-legislature", "state": "Nebraska", "postal_code": "NE", "institution": "Nebraska Legislature", "candidate_type": "legislature_platform", "official_url": "https://nebraskalegislature.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://nebraskalegislature.gov/"], "notes": "Research the unicameral Legislature's official live video, archives, and agenda data."
+    },
+    {
+      "id": "us-nv-legislature", "state": "Nevada", "postal_code": "NV", "institution": "Nevada Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.leg.state.nv.us/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.leg.state.nv.us/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-nh-legislature", "state": "New Hampshire", "postal_code": "NH", "institution": "New Hampshire General Court", "candidate_type": "legislature_platform", "official_url": "https://www.gencourt.state.nh.us/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.gencourt.state.nh.us/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-nj-legislature", "state": "New Jersey", "postal_code": "NJ", "institution": "New Jersey Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.njleg.state.nj.us/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.njleg.state.nj.us/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-nm-legislature", "state": "New Mexico", "postal_code": "NM", "institution": "New Mexico Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.nmlegis.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.nmlegis.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ny-legislature", "state": "New York", "postal_code": "NY", "institution": "New York State Legislature", "candidate_type": "legislature_platform", "official_url": "https://nyassembly.gov/", "video_url": "https://nyassembly.gov/av/live/", "schedule_url": "https://www.nysenate.gov/calendar/events", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://nyassembly.gov/av/live/", "https://www.nysenate.gov/about-new-york-state-senate"], "notes": "Both chambers publish live and archived proceedings. Model Assembly and Senate surfaces separately and record their different reuse rules."
+    },
+    {
+      "id": "us-nc-legislature", "state": "North Carolina", "postal_code": "NC", "institution": "North Carolina General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.ncleg.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.ncleg.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-nd-legislature", "state": "North Dakota", "postal_code": "ND", "institution": "North Dakota Legislative Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.legis.nd.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legis.nd.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-oh-legislature", "state": "Ohio", "postal_code": "OH", "institution": "Ohio General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.legislature.ohio.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legislature.ohio.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-ok-legislature", "state": "Oklahoma", "postal_code": "OK", "institution": "Oklahoma Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.oklegislature.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.oklegislature.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-or-legislature", "state": "Oregon", "postal_code": "OR", "institution": "Oregon Legislative Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.oregonlegislature.gov/", "video_url": "https://www.oregonlegislature.gov/", "schedule_url": "https://olis.oregonlegislature.gov/", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://www.oregonlegislature.gov/", "https://olis.oregonlegislature.gov/"], "notes": "Official daily events link to live room and floor video, with archived committee recordings in OLIS. Identify stable event and player URLs."
+    },
+    {
+      "id": "us-pa-legislature", "state": "Pennsylvania", "postal_code": "PA", "institution": "Pennsylvania General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.legis.state.pa.us/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.legis.state.pa.us/"], "notes": "Locate current House and Senate video, archives, and schedule surfaces."
+    },
+    {
+      "id": "us-ri-legislature", "state": "Rhode Island", "postal_code": "RI", "institution": "Rhode Island General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.rilegislature.gov/", "video_url": "https://capitoltvri.cablecast.tv/", "schedule_url": "https://capitoltvri.cablecast.tv/", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://www.rilegislature.gov/Pages/GettingStd.aspx", "https://capitoltvri.cablecast.tv/"], "notes": "Capitol TV is the Assembly's broadcast arm and provides eight live channels plus schedules and archives. Investigate Cablecast APIs and source-specific reuse."
+    },
+    {
+      "id": "us-sc-legislature", "state": "South Carolina", "postal_code": "SC", "institution": "South Carolina General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.scstatehouse.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.scstatehouse.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-sd-legislature", "state": "South Dakota", "postal_code": "SD", "institution": "South Dakota Legislature", "candidate_type": "legislature_platform", "official_url": "https://sdlegislature.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://sdlegislature.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-tn-legislature", "state": "Tennessee", "postal_code": "TN", "institution": "Tennessee General Assembly", "candidate_type": "legislature_platform", "official_url": "https://www.capitol.tn.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.capitol.tn.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-tx-legislature", "state": "Texas", "postal_code": "TX", "institution": "Texas Legislature", "candidate_type": "legislature_platform", "official_url": "https://capitol.texas.gov/", "video_url": "https://house.texas.gov/video-audio/", "schedule_url": "https://capitol.texas.gov/", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://capitol.texas.gov/", "https://house.texas.gov/video-audio/"], "notes": "The official portal exposes House and Senate broadcasts and meeting calendars. Inventory each chamber and committee room independently."
+    },
+    {
+      "id": "us-ut-legislature", "state": "Utah", "postal_code": "UT", "institution": "Utah State Legislature", "candidate_type": "legislature_platform", "official_url": "https://le.utah.gov/", "video_url": "https://le.utah.gov/", "schedule_url": "https://le.utah.gov/", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://le.utah.gov/", "https://le.utah.gov/~2026/2026.htm"], "notes": "The official site exposes Now Playing streams, floor video, committee audio/video, calendars, and archives. Discover stable stream and event identifiers."
+    },
+    {
+      "id": "us-vt-legislature", "state": "Vermont", "postal_code": "VT", "institution": "Vermont General Assembly", "candidate_type": "legislature_platform", "official_url": "https://legislature.vermont.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://legislature.vermont.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-va-legislature", "state": "Virginia", "postal_code": "VA", "institution": "Virginia General Assembly", "candidate_type": "legislature_platform", "official_url": "https://virginiageneralassembly.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://virginiageneralassembly.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-wa-legislature", "state": "Washington", "postal_code": "WA", "institution": "Washington State Legislature", "candidate_type": "legislature_platform", "official_url": "https://leg.wa.gov/", "video_url": "https://tvw.org/", "schedule_url": "https://leg.wa.gov/", "research_status": "verified_official_video_surface", "priority": "high", "evidence_urls": ["https://leg.wa.gov/", "https://leg.wa.gov/about-the-legislature/committees"], "notes": "The Legislature delegates live and archived meeting video to TVW and links videos from calendars. Treat TVW as an authorized provider and assess its terms separately."
+    },
+    {
+      "id": "us-wv-legislature", "state": "West Virginia", "postal_code": "WV", "institution": "West Virginia Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.wvlegislature.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.wvlegislature.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    },
+    {
+      "id": "us-wi-legislature", "state": "Wisconsin", "postal_code": "WI", "institution": "Wisconsin Legislature", "candidate_type": "legislature_platform", "official_url": "https://legis.wisconsin.gov/", "video_url": null, "schedule_url": null, "research_status": "blocked_or_changed", "priority": "research", "evidence_urls": ["https://legis.wisconsin.gov/"], "notes": "The former WisconsinEye service reportedly ended in 2025. Reassess first-party coverage and any successor before recording a video candidate."
+    },
+    {
+      "id": "us-wy-legislature", "state": "Wyoming", "postal_code": "WY", "institution": "Wyoming Legislature", "candidate_type": "legislature_platform", "official_url": "https://www.wyoleg.gov/", "video_url": null, "schedule_url": null, "research_status": "official_root_recorded", "priority": "research", "evidence_urls": ["https://www.wyoleg.gov/"], "notes": "Locate current chamber and committee video and schedule surfaces."
+    }
+  ]
+}

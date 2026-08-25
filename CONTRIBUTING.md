@@ -143,6 +143,9 @@ questions, so keep them separate:
 - automated daily reports cover primary source health, schedule endpoints and
   parsers, identity coherence, and supporting-link reachability; weekly reports
   add full official-page browser discovery.
+- the monthly democracy-tier workflow uses `data/discovery/tier1.json` and
+  `tier2.json`; the U.S. federal/state inventory is a separate manually
+  researched watchlist validated by `tools/validate_us_candidates.py`.
 
 To rerun the browser validator locally:
 

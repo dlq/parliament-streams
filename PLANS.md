@@ -63,7 +63,8 @@ Done:
 - `site/` provides a build-free GitHub Pages catalogue driven by the canonical
   JSON data, with client-side playback for eligible validated direct endpoints
   and official provider embeds.
-- The 2026-08-15 catalogue/review reports record the latest validation pass.
+- The 2026-08-24 channel-information and EPG reports record the latest complete
+  catalogue metadata and schedule-source audits.
 - Schema v5 records Wikidata QIDs for all catalogue institutions and IPU
   Parline country, parliament, and chamber codes for applicable national bodies,
   with dated identity-source provenance and public detail links.
@@ -113,6 +114,10 @@ Done:
   and can show linked current/next event titles, event IDs, status labels, and
   chamber/room labels beside official fallback links when that metadata is
   available.
+- A schema-validated U.S. discovery inventory now records six federal
+  candidates and official research roots for all 50 state legislatures. Nine
+  states have verified official video surfaces and are prioritized for deep
+  player, schedule, accessibility, and rights research.
 
 Retired from the active project:
 
@@ -155,7 +160,7 @@ Priority order:
 4. The 1 pending `direct_dash_research` entry was reviewed on 2026-08-19.
    Mongolia Parliament TV remains research-only. The official Parliament
    live/session page is the safer user-facing route, while the SkyGo DASH
-   manifest still lacks source-specific reuse permission and an Apple/web
+   manifest still lacks source-specific reuse permission and a supported web
    playback strategy.
 
 Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-2026-08-19-rights-next.json)
@@ -178,7 +183,7 @@ reader-facing explanation of the current posture lives in
 
 Outreach is intentionally deferred for now. Keep permission-request drafts as
 preparation, but do not send piecemeal messages until the project has a more
-substantive communications package covering the app, open-stream goals,
+substantive communications package covering the public site, open-stream goals,
 catalogue safeguards, attribution, rights handling, and specific source-owner
 asks. That package should both ask questions that resolve catalogue
 uncertainty and make an advocacy case for genuinely open parliamentary video:
@@ -369,6 +374,22 @@ Remaining sub-national candidates:
 3. Expand beyond the current Canadian, Australian, German, Spanish, Mexican,
    and UK clusters only with an official live/archive page, a schedule surface,
    a stable institutional identity, and a source-specific rights note.
+
+### United States Expansion
+
+The schema-validated
+[`data/discovery/us-legislatures.json`](data/discovery/us-legislatures.json)
+inventory records six federal candidates and all 50 state legislatures. The
+dated review in
+[`reports/us-federal-state-candidates-2026-08-24.md`](reports/us-federal-state-candidates-2026-08-24.md)
+prioritizes federal floor and committee services plus California, Florida,
+Minnesota, New York, Oregon, Rhode Island, Texas, Utah, and Washington for deep
+player, schedule, accessibility, and rights validation.
+
+Keep this as a candidate inventory until each record has a stable institutional
+identity, source-specific rights note, and either a supported playback route or
+an honest official-page link-out. Research the District of Columbia and U.S.
+territorial legislatures in separate passes rather than treating them as states.
 
 ### Tier 3 Expansion
 
@@ -623,12 +644,13 @@ Near-term:
    captions and caption languages, sign-language interpretation, and audio
    description. Do not equate missing evidence with confirmed unavailability.
 
-Current measurable review queues as of 2026-08-19:
+Current measurable review queues, last reconciled with the catalogue on
+2026-08-24:
 
-- 30 of 86 catalogue entries still use a permission status ending in
+- 28 of 86 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 18 official-vendor HLS, 6 official pages, 5 first-party HLS, and
+  Breakdown: 18 official-vendor HLS, 4 official pages, 5 first-party HLS, and
   1 DASH research record.
 - All 86 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
