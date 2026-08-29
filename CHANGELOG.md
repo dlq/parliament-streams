@@ -4,7 +4,7 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-08-24
+## Unreleased - 2026-08-29
 
 ### Added
 
@@ -57,6 +57,10 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Clean-checkout verification now treats the ignored, generated
+  `data/schedules.json` snapshot as optional while still validating it whenever
+  it is present. This keeps pull-request CI consistent with documented clone
+  and development behavior.
 - Current-state documentation now reflects the 2026-08-24 catalogue and report
   set, the 28-entry pending-rights queue, the static-site project terminology,
   and the manual validation workflow and evidence boundaries for the U.S.
