@@ -57,10 +57,10 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
-- Clean-checkout verification now treats the ignored, generated
-  `data/schedules.json` snapshot as optional while still validating it whenever
-  it is present. This keeps pull-request CI consistent with documented clone
-  and development behavior.
+- Clean-checkout verification and site-data freshness checks now treat the
+  ignored, generated `data/schedules.json` snapshot as optional while still
+  validating it exactly whenever it is present. Static catalogue, fallback,
+  and map metadata remain checked in every checkout.
 - Current-state documentation now reflects the 2026-08-24 catalogue and report
   set, the 28-entry pending-rights queue, the static-site project terminology,
   and the manual validation workflow and evidence boundaries for the U.S.

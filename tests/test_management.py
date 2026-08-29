@@ -34,7 +34,7 @@ from parliament_streams.management import (
 )
 from parliament_streams.playback_policy_audit import audit_playback_policies
 from parliament_streams.site_data import (
-    load_schedules,
+    load_optional_schedules,
     load_supranational,
     render_site_data,
     render_site_data_payload,
@@ -394,12 +394,35 @@ class ManagementTests(unittest.TestCase):
             render_site_data(self.catalogue_path, self.fallbacks_path),
         )
         self.assertEqual(
-            render_site_data_payload(catalogue, fallbacks, load_supranational(), load_schedules()),
+            render_site_data_payload(
+                catalogue,
+                fallbacks,
+                load_supranational(),
+                load_optional_schedules(),
+            ),
             render_site_data(self.catalogue_path, self.fallbacks_path),
         )
         write_site_data(self.catalogue_path, self.fallbacks_path, self.site_path)
         self.assertTrue(
             site_data_is_current(self.catalogue_path, self.fallbacks_path, self.site_path)
+        )
+        missing_schedules_path = self.root / "missing-schedules.json"
+        self.assertIsNone(load_optional_schedules(missing_schedules_path))
+        self.assertNotIn(
+            "PARLIAMENT_STREAMS_SCHEDULES",
+            render_site_data(
+                self.catalogue_path,
+                self.fallbacks_path,
+                schedules_path=missing_schedules_path,
+            ),
+        )
+        self.assertTrue(
+            site_data_is_current(
+                self.catalogue_path,
+                self.fallbacks_path,
+                self.site_path,
+                schedules_path=missing_schedules_path,
+            )
         )
         self.site_path.write_text("stale", encoding="utf-8")
         self.assertFalse(

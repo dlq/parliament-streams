@@ -17,6 +17,7 @@ from .models import Catalogue, FallbackCatalogue
 DEFAULT_SITE_DATA_PATH = Path(__file__).resolve().parents[1] / "site" / "catalogue-data.js"
 DEFAULT_SUPRANATIONAL_PATH = Path(__file__).resolve().parents[1] / "data" / "supranational.json"
 DEFAULT_SCHEDULES_PATH = Path(__file__).resolve().parents[1] / "data" / "schedules.json"
+SCHEDULE_ASSIGNMENT = "window.PARLIAMENT_STREAMS_SCHEDULES = "
 
 
 def load_supranational(path: Path = DEFAULT_SUPRANATIONAL_PATH) -> dict[str, Any]:
@@ -33,6 +34,13 @@ def load_schedules(path: Path = DEFAULT_SCHEDULES_PATH) -> dict[str, Any]:
     if not isinstance(value, dict):
         raise ValueError(f"Expected a JSON object in {path}")
     return value
+
+
+def load_optional_schedules(
+    path: Path = DEFAULT_SCHEDULES_PATH,
+) -> dict[str, Any] | None:
+    """Load a generated schedule snapshot when the current checkout has one."""
+    return load_schedules(path) if path.exists() else None
 
 
 def render_site_data_payload(
@@ -66,7 +74,7 @@ def render_site_data(
         load_catalogue(catalogue_path),
         load_fallbacks(fallbacks_path),
         supranational,
-        load_schedules(schedules_path),
+        load_optional_schedules(schedules_path),
     )
 
 
@@ -91,6 +99,15 @@ def site_data_is_current(
     supranational_path: Path = DEFAULT_SUPRANATIONAL_PATH,
     schedules_path: Path = DEFAULT_SCHEDULES_PATH,
 ) -> bool:
-    return target_path.exists() and target_path.read_text(encoding="utf-8") == render_site_data(
-        catalogue_path, fallbacks_path, supranational_path, schedules_path
-    )
+    if not target_path.exists():
+        return False
+
+    actual = target_path.read_text(encoding="utf-8")
+    expected = render_site_data(catalogue_path, fallbacks_path, supranational_path, schedules_path)
+    if schedules_path.exists():
+        return actual == expected
+
+    if actual == expected:
+        return True
+    static_content, marker, _ = actual.partition(SCHEDULE_ASSIGNMENT)
+    return bool(marker) and static_content == expected

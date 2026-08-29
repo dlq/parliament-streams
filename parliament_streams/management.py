@@ -41,7 +41,7 @@ from .models import (
 )
 from .site_data import (
     DEFAULT_SITE_DATA_PATH,
-    load_schedules,
+    load_optional_schedules,
     load_supranational,
     render_site_data_payload,
 )
@@ -183,7 +183,7 @@ class CatalogueStore:
                 prepared,
                 load_fallbacks(self.fallbacks_path),
                 load_supranational(),
-                load_schedules(),
+                load_optional_schedules(),
             )
             if self.site_data_path
             else None

@@ -18,7 +18,10 @@ ROOT = Path(__file__).resolve().parents[1]
 class ScheduleCollectionTests(unittest.TestCase):
     def test_published_snapshot_matches_schema(self):
         schema = json.loads((ROOT / "schema/schedules.schema.json").read_text(encoding="utf-8"))
-        snapshot = json.loads((ROOT / "data/schedules.json").read_text(encoding="utf-8"))
+        snapshot_path = ROOT / "data/schedules.json"
+        if not snapshot_path.exists():
+            self.skipTest("generated data/schedules.json is not present")
+        snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
         Draft202012Validator(schema, format_checker=FormatChecker()).validate(snapshot)
 
     def test_epg_audit_deduplicates_and_classifies_sources(self):
