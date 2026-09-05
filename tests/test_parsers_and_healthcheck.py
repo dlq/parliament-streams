@@ -307,9 +307,25 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(
             new_zealand["new-zealand-parliament"]["next_event_time"], "Tuesday at 2pm."
         )
+        self.assertIsNone(new_zealand["new-zealand-parliament"]["current_event_title"])
+
+        protected_script_on_calendar = """
+        <title>Parliament Calendar</title>
+        <script src="https://validate.perfdrive.com/stormcaster.js"></script>
+        <span class="house-session__text">
+          The House next meets on Tuesday, 15 September 2026
+        </span>
+        """
+        parsed_calendar = new_zealand_parliament.parse(protected_script_on_calendar)
+        self.assertIsNone(parsed_calendar["new-zealand-parliament"]["current_event_title"])
+        self.assertEqual(
+            parsed_calendar["new-zealand-parliament"]["next_event_time"],
+            "Tuesday, 15 September 2026",
+        )
         self.assertEqual(new_zealand_parliament.parse("No calendar listing"), {})
         for blocked_html in (
             "<title>CAPTCHA page</title>",
+            "Verifying your browser before proceeding...",
             '<script src="https://verify.perfdrive.com/challenge.js"></script>',
         ):
             with (
@@ -317,6 +333,17 @@ class ParserTests(unittest.TestCase):
                 self.assertRaisesRegex(ValueError, "bot-protection page"),
             ):
                 new_zealand_parliament.parse(blocked_html)
+
+    def test_schedule_sources_use_current_reachable_calendar_urls(self):
+        self.assertEqual(
+            ontario_calendar.SOURCE["url"],
+            "https://www.ola.org/en/legislative-business/calendar/",
+        )
+        self.assertEqual(ontario_calendar.SOURCE["headers"], {})
+        self.assertEqual(
+            new_zealand_parliament.SOURCE["url"],
+            "https://www3.parliament.nz/en/calendar/week",
+        )
 
     def test_canada_harmony_parser_extracts_upcoming_cards(self):
         html = """

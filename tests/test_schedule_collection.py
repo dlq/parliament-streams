@@ -182,6 +182,34 @@ class ScheduleCollectionTests(unittest.TestCase):
             "https://example.test/data.json",
         )
 
+    def test_collector_preserves_human_time_when_event_has_no_timestamp(self):
+        source = ModuleType("source")
+        source.SOURCE = {
+            "id": "source",
+            "channel_ids": ["channel"],
+            "url": "https://example.test/schedule",
+            "method": "GET",
+        }
+        source.parse = lambda _payload, now=None: {
+            "channel": {
+                "current_event_title": None,
+                "current_event_time": None,
+                "next_event_title": "House next meets",
+                "next_event_time": "Tuesday, 15 September 2026",
+                "confidence": "fixture",
+            }
+        }
+        with patch.object(schedule_collection, "SCRAPERS", {"source": source}):
+            snapshot = schedule_collection.collect_schedules(
+                now=datetime(2026, 9, 5, 12, tzinfo=UTC),
+                fetcher=lambda *_args: "fixture",
+            )
+
+        self.assertEqual(
+            snapshot["channels"]["channel"]["next_event_time"],
+            "Tuesday, 15 September 2026",
+        )
+
     def test_fetch_text_encodes_json_post(self):
         headers = Message()
         headers["Content-Type"] = "application/json; charset=utf-8"

@@ -4,7 +4,7 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-08-29
+## Unreleased - 2026-09-05
 
 ### Added
 
@@ -57,6 +57,12 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Repaired the Ontario calendar collector by using the CDN-compatible canonical
+  URL and the project's transparent user agent, and moved New Zealand schedule
+  collection to the working official weekly calendar endpoint.
+- New Zealand bot-protection detection now accepts complete calendar responses,
+  treats “The House next meets” as an upcoming event rather than a current
+  programme, and preserves its source-provided date when no timestamp exists.
 - Clean-checkout verification and site-data freshness checks now treat the
   ignored, generated `data/schedules.json` snapshot as optional while still
   validating it exactly whenever it is present. Static catalogue, fallback,

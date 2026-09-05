@@ -186,10 +186,14 @@ def _derive_legacy_fields(
     ]
     next_event = min(upcoming, key=lambda event: event.get("start", ""), default=None)
     for position, event in (("current", current), ("next", next_event)):
+        existing_time = schedule_dict.get(f"{position}_event_time")
         schedule_dict[f"{position}_event_title"] = event["title"] if event else None
-        schedule_dict[f"{position}_event_time"] = (
-            "Live now" if position == "current" and event else event.get("start") if event else None
-        )
+        if not event:
+            schedule_dict[f"{position}_event_time"] = None
+        elif position == "current":
+            schedule_dict[f"{position}_event_time"] = "Live now"
+        else:
+            schedule_dict[f"{position}_event_time"] = event.get("start") or existing_time
         event_dict = cast(dict[str, object], event) if event else {}
         for field in ("start", "url", "location", "language"):
             key = f"{position}_event_{field}"

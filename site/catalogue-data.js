@@ -294,7 +294,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "new-zealand-parliament",
-          "url": "https://www3.parliament.nz/en/calendar/",
+          "url": "https://www3.parliament.nz/en/calendar/week",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -3839,7 +3839,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "ontario-calendar",
-          "url": "https://www.ola.org/en/legislative-business/calendar",
+          "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -3924,7 +3924,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "ontario-calendar",
-          "url": "https://www.ola.org/en/legislative-business/calendar",
+          "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -4009,7 +4009,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "ontario-calendar",
-          "url": "https://www.ola.org/en/legislative-business/calendar",
+          "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -4094,7 +4094,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "ontario-calendar",
-          "url": "https://www.ola.org/en/legislative-business/calendar",
+          "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -4179,7 +4179,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "ontario-calendar",
-          "url": "https://www.ola.org/en/legislative-business/calendar",
+          "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -4264,7 +4264,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "ontario-calendar",
-          "url": "https://www.ola.org/en/legislative-business/calendar",
+          "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"

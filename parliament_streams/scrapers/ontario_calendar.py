@@ -29,9 +29,9 @@ CHANNEL_IDS = [
 SOURCE: ScraperSource = {
     "id": "ontario-calendar",
     "channel_ids": CHANNEL_IDS,
-    "url": "https://www.ola.org/en/legislative-business/calendar",
+    "url": "https://www.ola.org/en/legislative-business/calendar/",
     "method": "GET",
-    "headers": {"User-Agent": "Mozilla/5.0"},
+    "headers": {},
     "notes": "Extracts dated event headings from the official OLA calendar.",
 }
 

@@ -10,17 +10,22 @@ from .common import ParsedSchedule, ScraperSource, checked_label, clean_html, fi
 SOURCE: ScraperSource = {
     "id": "new-zealand-parliament",
     "channel_ids": ["new-zealand-parliament"],
-    "url": "https://www3.parliament.nz/en/calendar/",
+    "url": "https://www3.parliament.nz/en/calendar/week",
     "method": "GET",
-    "headers": {"User-Agent": "Mozilla/5.0"},
-    "notes": "Extracts the House next meets text from the official calendar page.",
+    "headers": {},
+    "notes": "Extracts the House next meets text from the official weekly calendar.",
 }
 
-BOT_PROTECTION_PATTERN = re.compile(r"(?:captcha page|\bperfdrive\.com\b)", re.IGNORECASE)
+BOT_PROTECTION_PATTERN = re.compile(
+    r"(?:captcha page|verifying your browser before proceeding)", re.IGNORECASE
+)
 
 
 def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
-    if BOT_PROTECTION_PATTERN.search(html):
+    has_calendar_content = "house-session__text" in html or "Parliament Calendar" in html
+    if BOT_PROTECTION_PATTERN.search(html) or (
+        "perfdrive.com" in html.casefold() and not has_calendar_content
+    ):
         raise ValueError("official calendar returned a bot-protection page")
     now = now or datetime.now(UTC)
     body = clean_html(html)
@@ -28,11 +33,19 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         html,
         r'<span[^>]*class="[^"]*house-session__text[^"]*"[^>]*>([\s\S]*?)</span>',
     )
-    next_text = first_match(body, r"The\s+House next meets\s+(?:on\s+)?([^\.]+\.?)")
+    status_text = clean_html(status) if status else None
+    next_text = (
+        first_match(status_text, r"The\s+House next meets\s+(?:on\s+)?(.+)")
+        if status_text
+        else None
+    )
+    next_text = next_text or first_match(body, r"The\s+House next meets\s+(?:on\s+)?([^\.]+\.?)")
     next_text = next_text or first_match(body, r"House next meets\s+(?:on\s+)?([^\.]+\.?)")
     if not status and not next_text:
         return {}
-    current_title = clean_html(status) if status else None
+    current_title = status_text
+    if current_title and re.match(r"The\s+House next meets\b", current_title, re.IGNORECASE):
+        current_title = None
     return {
         "new-zealand-parliament": {
             "current_event_title": current_title,
