@@ -294,7 +294,7 @@
       "epg_sources": [
         {
           "scraper": "new-zealand-parliament",
-          "url": "https://www3.parliament.nz/en/calendar/week",
+          "url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"

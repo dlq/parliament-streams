@@ -63,6 +63,8 @@ application. Earlier application work remains available in Git history.
 - New Zealand bot-protection detection now accepts complete calendar responses,
   treats “The House next meets” as an upcoming event rather than a current
   programme, and preserves its source-provided date when no timestamp exists.
+- New Zealand schedule collection now reads the official calendar's public
+  Azure host, avoiding the protection challenge that blocked GitHub runners.
 - Clean-checkout verification and site-data freshness checks now treat the
   ignored, generated `data/schedules.json` snapshot as optional while still
   validating it exactly whenever it is present. Static catalogue, fallback,

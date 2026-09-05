@@ -309,6 +309,32 @@ class ParserTests(unittest.TestCase):
         )
         self.assertIsNone(new_zealand["new-zealand-parliament"]["current_event_title"])
 
+        new_calendar = """
+        <span class="calendar-date">September 2026</span>
+        <div class="calendar-grid">
+          <button class="day-button day-not-in-month house-sitting-day">
+            <span class="date-number">31</span>
+          </button>
+          <button class="day-button house-sitting-day">
+            <span class="date-number">3</span>
+          </button>
+          <button class="day-button house-sitting-day">
+            <span class="date-number">15</span>
+          </button>
+        </div>
+        """
+        parsed_new_calendar = new_zealand_parliament.parse(
+            new_calendar, datetime(2026, 9, 5, tzinfo=UTC)
+        )["new-zealand-parliament"]
+        self.assertIsNone(parsed_new_calendar["current_event_title"])
+        self.assertEqual(parsed_new_calendar["next_event_title"], "House next meets")
+        self.assertEqual(parsed_new_calendar["next_event_time"], "Tuesday, 15 September 2026")
+
+        current_calendar = new_zealand_parliament.parse(
+            new_calendar, datetime(2026, 9, 3, 2, tzinfo=UTC)
+        )["new-zealand-parliament"]
+        self.assertEqual(current_calendar["current_event_title"], "House sitting day")
+
         protected_script_on_calendar = """
         <title>Parliament Calendar</title>
         <script src="https://validate.perfdrive.com/stormcaster.js"></script>
@@ -342,7 +368,7 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(ontario_calendar.SOURCE["headers"], {})
         self.assertEqual(
             new_zealand_parliament.SOURCE["url"],
-            "https://www3.parliament.nz/en/calendar/week",
+            "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
         )
 
     def test_canada_harmony_parser_extracts_upcoming_cards(self):
