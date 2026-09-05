@@ -42,7 +42,7 @@ jobs:
       - name: Sync Python dependencies
         run: uv sync --locked
       - name: Restore the preceding schedule snapshot
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: .schedule-baseline
           key: schedule-snapshot-${{ github.run_id }}
@@ -66,7 +66,7 @@ jobs:
           mkdir -p .schedule-baseline
           cp _site/data/schedules.json .schedule-baseline/schedules.json
       - name: Save the schedule snapshot
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: .schedule-baseline
           key: schedule-snapshot-${{ github.run_id }}
