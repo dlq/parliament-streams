@@ -61,6 +61,19 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Reworked the phone and tablet layouts after a responsive UX and WCAG audit:
+  primary navigation now remains available on small screens, the catalogue hero
+  and rows are denser, programme listings stack into readable Now/Next blocks,
+  the mobile map uses its available space more effectively, and intermediate
+  source details expose metadata sooner.
+- Localized source-kind, playback-policy, and stability-risk terminology across
+  every supported interface language instead of filling missing values from
+  English at runtime.
+- Expanded frontend regression coverage for small-screen navigation, first-
+  viewport catalogue access, intermediate detail-sheet density, mobile schedule
+  order, and mobile map sizing. CI now runs on pushes to `main`, and non-scheduled
+  Pages deployments run catalogue, site-data, and accessibility checks before
+  publishing.
 - Restored native playback for Brazil TV Camara after its first-party HLS
   endpoint recovered and passed both static and browser validation.
 - Re-ran the complete 25-country Tier 1 and 46-country Tier 2 discovery audit;

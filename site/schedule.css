@@ -51,12 +51,12 @@
   .schedule-table { min-width: 0; table-layout: auto; }
   .schedule-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
   .schedule-table, .schedule-table tbody, .schedule-table tr, .schedule-table td { display: block; width: 100%; }
-  .schedule-table tr { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--faint); }
+  .schedule-table tr { display: grid; grid-template-columns: 1fr; padding: .35rem 0 .6rem; border-top: 1px solid var(--faint); }
   .schedule-table td { min-width: 0; padding: .62rem 0; border: 0; }
-  .schedule-table td:first-child { grid-column: 1 / -1; padding-bottom: .5rem; }
-  .schedule-table td:nth-child(2) { padding-right: .75rem; border-right: 1px solid var(--faint); }
-  .schedule-table td:nth-child(3) { padding-left: .75rem; }
-  .schedule-table td:last-child { grid-column: 1 / -1; padding-top: .35rem; }
+  .schedule-table td:first-child { padding-bottom: .5rem; }
+  .schedule-table td:nth-child(2), .schedule-table td:nth-child(3) { padding: .5rem 0; border-top: 1px dotted var(--faint); }
+  .schedule-table td[data-label]::before { display: block; margin-bottom: .25rem; color: var(--muted); content: attr(data-label); font-size: .6rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+  .schedule-table td:last-child { padding-top: .35rem; }
   .schedule-channel { grid-template-columns: 26px minmax(0, 1fr); gap: .5rem; }
   .schedule-flag { width: 26px; height: 18px; }
   .schedule-channel strong, .programme-title { font-size: .78rem; }

@@ -349,9 +349,13 @@ function groupIsSelected(group) {
   return state.mode === "supranational" && organization?.catalogue_jurisdiction === group.name;
 }
 
-function renderMap() {
+function mapDimensions() {
   const width = Math.max(elements.map.clientWidth, 320);
-  const height = width < 680 ? 330 : 520;
+  return { width, height: width < 680 ? Math.max(210, Math.round(width * .58)) : 520 };
+}
+
+function renderMap() {
+  const { width, height } = mapDimensions();
   const projection = d3.geoNaturalEarth1().fitExtent([[10, 14], [width - 10, height - 14]], state.geometry);
   const path = d3.geoPath(projection);
   state.mapPath = path;
@@ -441,8 +445,7 @@ function selectRegion(feature) {
 function zoomToFeature(feature, maximumScale) {
   if (!state.zoom || !state.mapPath) return;
   const [[x0, y0], [x1, y1]] = state.mapPath.bounds(feature);
-  const width = Math.max(elements.map.clientWidth, 320);
-  const height = width < 680 ? 330 : 520;
+  const { width, height } = mapDimensions();
   const scale = Math.min(maximumScale, .82 / Math.max((x1 - x0) / width, (y1 - y0) / height));
   const x = width / 2 - scale * (x0 + x1) / 2;
   const y = height / 2 - scale * (y0 + y1) / 2;

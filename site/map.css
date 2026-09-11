@@ -103,7 +103,6 @@
 
 @media (max-width: 680px) {
   .map-page main { width: min(100% - 2rem, 1240px); padding-top: 1.5rem; }
-  .map-page nav > a { display: none; }
   .map-intro h1 { font-size: 2.5rem; }
   .map-intro .lede { font-size: .9rem; }
   .map-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -112,10 +111,10 @@
   .map-summary dt { font-size: .58rem; }
   .coverage-modes { display: grid; grid-template-columns: 1fr 1fr; }
   .coverage-modes button { width: 100%; }
-  .map-stage { min-height: 350px; padding-top: 3.4rem; }
+  .map-stage { min-height: 295px; padding-top: 3.4rem; }
   .map-legend { right: 0; left: 0; justify-content: start; gap: .55rem; }
-  #world-map { min-height: 290px; }
-  .map-zoom { bottom: 2.8rem; }
+  #world-map { min-height: 0; }
+  .map-zoom { bottom: 2.5rem; }
   .map-boundary-note { max-width: calc(100% - 48px); font-size: .56rem; }
   .map-detail h2 { font-size: 1.65rem; }
   .jurisdiction-index { padding-bottom: 3rem; }

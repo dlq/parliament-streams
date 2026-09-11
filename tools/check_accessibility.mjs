@@ -325,7 +325,7 @@ try {
   assert.match(await page.locator(".evidence-note").innerText(), /^证据来源。/);
   assert.match(await page.locator(".evidence-note a").first().innerText(), /官方观看页面|支持来源/);
   assert.equal(await page.locator(".research-note-disclosure summary").innerText(), "目录的英文研究说明");
-  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /格式: HLS.*Playback: Research only.*访问: 待审核.*使用: 附带条件/);
+  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /格式: HLS.*播放方式: 仅供研究.*访问: 待审核.*使用: 附带条件/);
 
   const search = page.locator("#search");
   await search.focus();
@@ -346,6 +346,10 @@ try {
   assert.equal(await page.locator("#detail-panel").evaluate((element) => getComputedStyle(element).position), "fixed");
   assert.equal(await page.locator(".detail-grabber").isVisible(), true);
   assert.equal(await page.locator("#detail-title").evaluate((element) => document.activeElement === element), true);
+  assert((await page.locator(".media-frame").boundingBox()).height <= 300);
+  const intermediatePanel = await page.locator("#detail-panel").boundingBox();
+  const intermediateGrid = await page.locator(".detail-grid").boundingBox();
+  assert(intermediateGrid.y < intermediatePanel.y + intermediatePanel.height);
   await assertNoAxeViolations(page, "Open intermediate-width source details");
   await page.locator("#detail-title").press("Escape");
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
@@ -354,6 +358,10 @@ try {
   await page.reload();
   await page.waitForSelector(".channel-button");
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  assert.equal(await page.locator("#primary-navigation > a:visible").count(), 3);
+  assert.equal(await page.locator("#primary-navigation .github-link").isVisible(), false);
+  assert((await page.locator("#primary-navigation > a:visible").first().boundingBox()).height >= 40);
+  assert((await page.locator("#search").boundingBox()).y < 800);
   await page.locator(".channel-button").first().click();
   assert.equal(await page.locator("#detail-title").evaluate((element) => document.activeElement === element), true);
   assert.equal(await page.locator("#detail-panel").getAttribute("aria-labelledby"), "detail-title");
@@ -438,6 +446,13 @@ try {
   );
   await schedulePage.setViewportSize({ width: 320, height: 800 });
   assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  assert.equal(await schedulePage.locator("#schedule-primary-navigation > a:visible").count(), 3);
+  const firstScheduleRow = schedulePage.locator("#schedule-list tr").first();
+  const nowCell = await firstScheduleRow.locator("td").nth(1).boundingBox();
+  const nextCell = await firstScheduleRow.locator("td").nth(2).boundingBox();
+  assert(nextCell.y > nowCell.y + nowCell.height - 1);
+  assert.equal(await firstScheduleRow.locator("td").nth(1).getAttribute("data-label"), "Maintenant");
+  assert.equal(await firstScheduleRow.locator("td").nth(2).getAttribute("data-label"), "À suivre");
   await assertNoAxeViolations(schedulePage, "Mobile programme guide");
   await schedulePage.close();
 
@@ -534,6 +549,8 @@ try {
   await mapPage.reload();
   await mapPage.waitForSelector(".map-country.is-documented");
   assert.equal(await mapPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  assert.equal(await mapPage.locator("#map-primary-navigation > a:visible").count(), 3);
+  assert((await mapPage.locator("#world-map").boundingBox()).height <= 220);
   await assertNoAxeViolations(mapPage, "Mobile coverage map");
   await mapPage.close();
 

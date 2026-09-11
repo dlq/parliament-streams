@@ -391,6 +391,33 @@ Object.entries(detailUiLabels).forEach(([locale, values]) => {
   detailUiKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
 });
 
+const technicalDetailLabels = {
+  fr: ["Nature de la source", "Lecture", "Risque de stabilité", "HLS propriétaire", "HLS d’un fournisseur officiel", "Relais HLS tiers", "DASH direct de recherche", "Intégration YouTube officielle", "Lecture native", "Intégration du fournisseur", "Lien externe", "Recherche seulement", "Faible", "Moyen", "Élevé", "Inconnu"],
+  es: ["Clase de fuente", "Reproducción", "Riesgo de estabilidad", "HLS propio", "HLS de proveedor oficial", "Retransmisión HLS de terceros", "DASH directo de investigación", "Inserción oficial de YouTube", "Reproducción nativa", "Inserción del proveedor", "Enlace externo", "Solo investigación", "Bajo", "Medio", "Alto", "Desconocido"],
+  "pt-BR": ["Categoria da fonte", "Reprodução", "Risco de estabilidade", "HLS próprio", "HLS de fornecedor oficial", "Retransmissão HLS de terceiros", "DASH direto para pesquisa", "Incorporação oficial do YouTube", "Reprodução nativa", "Incorporação do fornecedor", "Link externo", "Somente pesquisa", "Baixo", "Médio", "Alto", "Desconhecido"],
+  da: ["Kildeart", "Afspilning", "Stabilitetsrisiko", "Egen HLS", "HLS fra officiel leverandør", "Tredjeparts HLS-relæ", "Direkte DASH til forskning", "Officiel YouTube-indlejring", "Indbygget afspilning", "Udbyderindlejring", "Eksternt link", "Kun forskning", "Lav", "Mellem", "Høj", "Ukendt"],
+  de: ["Quellenart", "Wiedergabe", "Stabilitätsrisiko", "Eigenes HLS", "HLS eines offiziellen Anbieters", "HLS-Relay eines Drittanbieters", "Direktes DASH für Forschung", "Offizielle YouTube-Einbettung", "Native Wiedergabe", "Anbieter-Einbettung", "Externer Link", "Nur Forschung", "Niedrig", "Mittel", "Hoch", "Unbekannt"],
+  et: ["Allika liik", "Esitamine", "Stabiilsusrisk", "Oma HLS", "Ametliku teenusepakkuja HLS", "Kolmanda osapoole HLS-relee", "Otsene DASH uuringuks", "Ametlik YouTube’i manus", "Omaesitus", "Teenusepakkuja manus", "Välislink", "Ainult uuringuks", "Madal", "Keskmine", "Kõrge", "Teadmata"],
+  el: ["Είδος πηγής", "Αναπαραγωγή", "Κίνδυνος σταθερότητας", "Ιδιόκτητο HLS", "HLS επίσημου παρόχου", "Αναμετάδοση HLS τρίτου", "Άμεσο DASH για έρευνα", "Επίσημη ενσωμάτωση YouTube", "Εγγενής αναπαραγωγή", "Ενσωμάτωση παρόχου", "Εξωτερικός σύνδεσμος", "Μόνο για έρευνα", "Χαμηλός", "Μέτριος", "Υψηλός", "Άγνωστος"],
+  hi: ["स्रोत श्रेणी", "प्लेबैक", "स्थिरता जोखिम", "प्रथम-पक्ष HLS", "आधिकारिक प्रदाता HLS", "तृतीय-पक्ष HLS रिले", "अनुसंधान के लिए प्रत्यक्ष DASH", "आधिकारिक YouTube एम्बेड", "मूल प्लेबैक", "प्रदाता एम्बेड", "बाहरी लिंक", "केवल अनुसंधान", "कम", "मध्यम", "उच्च", "अज्ञात"],
+  ga: ["Cineál foinse", "Athsheinm", "Riosca cobhsaíochta", "HLS céadpháirtí", "HLS ó sholáthraí oifigiúil", "Leaschraoladh HLS tríú páirtí", "DASH díreach le haghaidh taighde", "Leabú oifigiúil YouTube", "Athsheinm dúchasach", "Leabú soláthraí", "Nasc seachtrach", "Taighde amháin", "Íseal", "Meánach", "Ard", "Anaithnid"],
+  it: ["Categoria della fonte", "Riproduzione", "Rischio di stabilità", "HLS proprietario", "HLS del fornitore ufficiale", "Relay HLS di terzi", "DASH diretto per ricerca", "Incorporamento YouTube ufficiale", "Riproduzione nativa", "Incorporamento del fornitore", "Collegamento esterno", "Solo ricerca", "Basso", "Medio", "Alto", "Sconosciuto"],
+  lb: ["Aart vun der Quell", "Ofspillen", "Stabilitéitsrisiko", "Eegen HLS", "HLS vum offiziellen Ubidder", "HLS-Relais vun Drëtten", "Direkten DASH fir Fuerschung", "Offiziell YouTube-Abettung", "Natiivt Ofspillen", "Ubidder-Abettung", "Externen Link", "Nëmme Fuerschung", "Niddreg", "Mëttel", "Héich", "Onbekannt"],
+  nl: ["Broncategorie", "Afspelen", "Stabiliteitsrisico", "Eigen HLS", "HLS van officiële aanbieder", "HLS-relay van derden", "Directe DASH voor onderzoek", "Officiële YouTube-insluiting", "Systeemeigen afspelen", "Insluiting van aanbieder", "Externe link", "Alleen onderzoek", "Laag", "Gemiddeld", "Hoog", "Onbekend"],
+  nb: ["Kildekategori", "Avspilling", "Stabilitetsrisiko", "Egen HLS", "HLS fra offisiell leverandør", "Tredjeparts HLS-relé", "Direkte DASH for forskning", "Offisiell YouTube-innbygging", "Innebygd avspilling", "Leverandørinnbygging", "Ekstern lenke", "Kun forskning", "Lav", "Middels", "Høy", "Ukjent"],
+  sk: ["Druh zdroja", "Prehrávanie", "Riziko stability", "Vlastné HLS", "HLS oficiálneho poskytovateľa", "HLS prenos tretej strany", "Priamy DASH na výskum", "Oficiálne vloženie YouTube", "Natívne prehrávanie", "Vloženie poskytovateľa", "Externý odkaz", "Len na výskum", "Nízke", "Stredné", "Vysoké", "Neznáme"],
+  th: ["ประเภทแหล่งข้อมูล", "การเล่น", "ความเสี่ยงด้านความเสถียร", "HLS ของหน่วยงานเอง", "HLS จากผู้ให้บริการทางการ", "รีเลย์ HLS ของบุคคลที่สาม", "DASH โดยตรงเพื่อการวิจัย", "การฝัง YouTube อย่างเป็นทางการ", "การเล่นโดยตรง", "การฝังจากผู้ให้บริการ", "ลิงก์ภายนอก", "เพื่อการวิจัยเท่านั้น", "ต่ำ", "ปานกลาง", "สูง", "ไม่ทราบ"],
+  "zh-Hans": ["来源类别", "播放方式", "稳定性风险", "第一方 HLS", "官方提供商 HLS", "第三方 HLS 中继", "研究用直接 DASH", "YouTube 官方嵌入", "原生播放", "提供商嵌入", "外部链接", "仅供研究", "低", "中", "高", "未知"],
+  "iu-Cans": ["ᓇᑭᙶᕐᓂᖓᑕ ᖃᓄᐃᑦᑑᓂᖓ", "ᑕᑯᒃᓴᐅᑎᑦᑎᓂᖅ", "ᐊᓯᔾᔨᖅᑕᕐᓂᐅᑉ ᓇᓗᓇᕐᓂᖓ", "ᓇᖕᒥᓂᖅ HLS", "ᐱᔨᑦᑎᕋᖅᑎᐅᑉ HLS-ᖓ", "ᐊᓯᐊᑕ HLS-ᖓ", "ᖃᐅᔨᓴᕐᓂᕐᒧᑦ DASH", "YouTube-ᒥ ᐃᓕᓯᒪᔪᖅ", "ᑐᕌᖓᔪᒥᒃ ᑕᑯᒃᓴᐅᑎᑦᑎᓂᖅ", "ᐱᔨᑦᑎᕋᖅᑎᐅᑉ ᐃᓕᓯᒪᔭᖓ", "ᓯᓚᑖᓄᑦ ᑲᓱᕈᑎ", "ᖃᐅᔨᓴᕐᓂᕐᒧᑐᐃᓐᓇᖅ", "ᐊᑦᑎᒃᑐᖅ", "ᕿᑎᐊᓂ", "ᖁᑦᑎᒃᑐᖅ", "ᖃᐅᔨᒪᓇᙱᑦᑐᖅ"],
+  mi: ["Momo puna", "Purei", "Mōrea pūmautanga", "HLS nā te puna ake", "HLS a te kaiwhakarato mana", "Tānga HLS a tētahi atu", "DASH tika mō te rangahau", "Tāmau YouTube mana", "Purei taketake", "Tāmau kaiwhakarato", "Hononga waho", "Rangahau anake", "Iti", "Waenga", "Teitei", "Kāore e mōhiotia"],
+};
+const technicalDetailKeys = ["sourceKind", "playbackPolicy", "stabilityRisk"];
+const technicalValueKeys = ["first_party_hls", "official_vendor_hls", "third_party_relay_hls", "direct_dash_research", "official_youtube_embed", "native_playback", "provider_embed", "link_out", "research_only", "low", "medium", "high", "unknown"];
+Object.entries(technicalDetailLabels).forEach(([locale, values]) => {
+  technicalDetailKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+  technicalValueKeys.forEach((key, index) => { shared[locale].labels[key] = values[index + technicalDetailKeys.length]; });
+});
+
 const sourceLinkLabels = {
   fr: ["API d’horaire", "Données d’horaire ouvertes", "Calendrier / ordre du jour", "Page d’horaire en direct", "Page d’horaire", "Page de visionnement officielle", "Point d’accès enregistré", "Droits / conditions de la source", "Politique de confidentialité", "Source à l’appui"],
   es: ["API de programación", "Datos abiertos de programación", "Calendario / agenda", "Página de programación en directo", "Página de programación", "Página oficial de visualización", "Punto de emisión registrado", "Derechos / condiciones de la fuente", "Política de privacidad", "Fuente de apoyo"],
@@ -700,9 +727,6 @@ for (const [locale] of locales) {
   messages.brandHome ??= `Parliament Streams · ${messages.about}`;
   messages.primaryNavigation ??= messages.nav;
   for (const messageKey of [
-    "sourceKind",
-    "stabilityRisk",
-    "playbackPolicy",
     "mode",
     "accessValidatedDescription",
     "accessNeedsReviewDescription",
@@ -749,19 +773,6 @@ for (const [locale] of locales) {
     "direct_hls",
     "direct_dash",
     "youtube",
-    "first_party_hls",
-    "official_vendor_hls",
-    "third_party_relay_hls",
-    "direct_dash_research",
-    "official_youtube_embed",
-    "native_playback",
-    "provider_embed",
-    "link_out",
-    "research_only",
-    "low",
-    "medium",
-    "high",
-    "unknown",
     "ok",
     "warning",
     "error",
