@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-11T15:04:12Z",
+  "catalogue": "data/channels.json",
+  "timeout_seconds": 20,
+  "retries": 3,
+  "total": 1,
+  "counts": {
+    "error": 1
+  },
+  "results": [
+    {
+      "id": "thailand-parliament-tv",
+      "source_type": "direct_hls",
+      "source_kind": "first_party_hls",
+      "technical_status": "validated",
+      "availability": "always_on",
+      "stability_risk": "low",
+      "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "checked_at": "2026-09-11T15:03:53Z",
+      "http_status": 404,
+      "content_type": "text/html",
+      "final_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "attempts": 4,
+      "status": "error",
+      "note": "HTTP 404"
+    }
+  ],
+  "follow_up": {
+    "official_page": "https://tpchannel.org/broadcasts/tv",
+    "official_api": "https://ott-apis.tpchannel.org/v1.0/live",
+    "api_status": "success",
+    "api_play_status": 0,
+    "advertised_hls_urls": [
+      "https://ch1-live.tpchannel.org/live/channel1.m3u8",
+      "https://ch2-live.tpchannel.org/live/channel2.m3u8"
+    ],
+    "advertised_hls_status": "Both returned HTTP 404 while the channels were reported off-air."
+  }
+}

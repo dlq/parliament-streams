@@ -1,7 +1,7 @@
 window.PARLIAMENT_STREAMS_CATALOGUE = {
   "schema_version": 9,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-08-24",
+  "generated_on": "2026-09-11",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -2342,12 +2342,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "language": "Thai",
       "source_type": "direct_hls",
       "source_kind": "first_party_hls",
-      "playback_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
-      "official_url": "https://tpchannel.org/",
-      "provenance_note": "Thai Parliament TV HLS candidate; terms and reliability require review.",
-      "technical_status": "validated",
-      "stability_risk": "low",
-      "availability": "always_on",
+      "playback_url": "https://ch1-live.tpchannel.org/live/channel1.m3u8",
+      "official_url": "https://tpchannel.org/broadcasts/tv",
+      "provenance_note": "The official TPchannel OTT API advertised Channel 1 and Channel 2 HLS URLs on 2026-09-11, but reported both off-air and both manifests returned HTTP 404. The former permanent tv.m3u8 URL also returned HTTP 404.",
+      "technical_status": "needs_review",
+      "stability_risk": "high",
+      "availability": "event_based",
       "accessibility": {
         "captions": "unknown",
         "caption_languages": [],
@@ -2371,9 +2371,16 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "https://tpchannel.org/",
           "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv"
         ],
-        "recommendation": "Keep native playback under the catalogue's pending-review posture, and prefer link-out until TPchannel publishes reuse terms or grants permission."
+        "recommendation": "Keep the replacement manifests research-only until one is validated during an active broadcast, and prefer the official live page until TPchannel publishes reuse terms or grants permission."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-09-11T15:03:53Z",
+          "report_path": "reports/health/2026-09-11-thailand-stream-regression.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 404"
+        },
         {
           "checked_at": "2026-08-15T18:27:17Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -2387,16 +2394,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:04Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
         }
       ],
-      "playback_policy": "native_playback"
+      "playback_policy": "research_only"
     },
     {
       "id": "slovakia-tv-nrsr",

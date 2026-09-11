@@ -57,6 +57,10 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Reclassified Thailand Parliament TV as an event-based, high-risk research
+  source after the former permanent HLS endpoint regressed to HTTP 404. The
+  catalogue now records the Channel 1 URL advertised by the official OTT API,
+  while discovery data also retains Channel 2 for an active-broadcast check.
 - Repaired the Ontario calendar collector by using the CDN-compatible canonical
   URL and the project's transparent user agent, and moved New Zealand schedule
   collection to the working official weekly calendar endpoint.

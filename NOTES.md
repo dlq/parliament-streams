@@ -774,7 +774,7 @@ Summary:
 | Colombia | Not validated. | Official Canal Congreso / Senate / Chamber video pages. | No raw manifest validated. Official Canal Congreso or legislature pages are the fallback. |
 | Bulgaria | Not validated. | Official National Assembly live/video pages. | No direct manifest validated. Treat as official-player fallback. |
 | North Macedonia | Candidate timed out. | Official Assembly / Sobraniski kanal fallback. | `https://vipottbpkstream.vip.hr/Content/onevip-hls/Live/Channel(Sobraniski_Kanal)/index.m3u8` timed out. The seed labels it geo-blocked; official fallback needs browser validation. |
-| Thailand | Validated HLS 200. | Official Thai Parliament TV page. | `https://tv-live.tpchannel.org/live/tv.m3u8` returned HTTP 200. Strong direct candidate, pending CORS/terms checks. |
+| Thailand | Event-based HLS needs review. | Official Thai Parliament TV page and OTT live API. | The former permanent `tv.m3u8` endpoint regressed to HTTP 404 on 2026-09-11. The official OTT API now advertises Channel 1 and Channel 2 HLS URLs, but reported both off-air and both manifests returned HTTP 404 during the follow-up check. Retain them as event-based research candidates pending an active-broadcast validation. |
 | Serbia | Not validated. | Official National Assembly live/video pages. | No direct manifest validated. Official-player fallback only. |
 | Ghana | Not validated. | Official Parliament live/YouTube fallback. | No direct manifest validated. Official fallback needs browser confirmation. |
 | Albania | Not validated. | Official Kuvendi live/video page fallback. | No direct manifest validated. Treat as official-player fallback. |
