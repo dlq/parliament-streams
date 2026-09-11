@@ -53,7 +53,8 @@ third-party playback or embedding terms were found.
 
 The 2026-08-19 official-page pass reviewed the 6 pending `official_page`
 entries. Brazil TV Camara and Manitoba House Broadcasts moved to
-`explicit_reuse_with_conditions` for link-out use. Council of Europe/PACE,
+`explicit_reuse_with_conditions`; Brazil's first-party HLS playback was later
+restored after renewed validation on 2026-09-11. Council of Europe/PACE,
 Saskatchewan, Northwest Territories, and Navarre remain pending because public
 evidence does not clearly close video-specific third-party playback or
 redistribution.

@@ -53,6 +53,10 @@
           "url": "https://www.parlament.ch/en"
         },
         {
+          "kind": "official_page",
+          "url": "https://live.parlament.ch/content?externalid=-1&themeColor=AA9E72"
+        },
+        {
           "kind": "hls",
           "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8"
         }

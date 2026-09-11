@@ -4,9 +4,13 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-09-05
+## Unreleased - 2026-09-11
 
 ### Added
+
+- Swiss National Council live video, backed by a validated official-vendor HLS
+  endpoint, official third-party embed instructions, IPU/Wikidata identity, and
+  the published parliamentary session schedule.
 
 - Four official U.S. federal catalogue records covering House and Senate floor
   and committee video services, with Wikidata/IPU identities and schedule
@@ -56,6 +60,12 @@ application. Earlier application work remains available in Git history.
   file previews can render the programme guide without a server.
 
 ### Changed
+
+- Restored native playback for Brazil TV Camara after its first-party HLS
+  endpoint recovered and passed both static and browser validation.
+- Re-ran the complete 25-country Tier 1 and 46-country Tier 2 discovery audit;
+  improved rotating EUDDN edge-manifest matching so child renditions no longer
+  appear as uncatalogued channels.
 
 - Reclassified Thailand Parliament TV as an event-based, high-risk research
   source after the former permanent HLS endpoint regressed to HTTP 404. The

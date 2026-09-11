@@ -121,6 +121,15 @@ def _matches_catalogued_family(url: str, known_urls: set[str]) -> bool:
     candidate = urlsplit(url)
     for known_url in known_urls:
         known = urlsplit(known_url)
+        # EUDDN redirects stable router URLs to rotating edge hosts while retaining
+        # the stream identity from the SMIL path onward.
+        if "smil:" in candidate.path and "smil:" in known.path:
+            candidate_stream = candidate.path.split("smil:", 1)[1]
+            known_stream = known.path.split("smil:", 1)[1]
+            candidate_parent = candidate_stream.rsplit("/", 1)[0]
+            known_parent = known_stream.rsplit("/", 1)[0]
+            if candidate_stream == known_stream or candidate_parent == known_parent:
+                return True
         if candidate.netloc.lower() != known.netloc.lower():
             continue
         if candidate.path == known.path:

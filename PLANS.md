@@ -100,7 +100,7 @@ Done:
   provider fallback surfaces separately from permanent channel records. The
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
-- Schema v8 adds compact per-entry validation history. All 100 catalogue entries
+- Schema v8 adds compact per-entry validation history. All 101 catalogue entries
   now link to retained dated health reports, and the public site surfaces the
   latest retained check in the source detail panel.
 - Validation-history refresh and drift checking are available through Make and
@@ -137,7 +137,7 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 38 of 100 catalogue entries use a permission status ending in
+Current queue: 38 of 101 catalogue entries use a permission status ending in
 `pending_review`. Ten are newly added U.S. official-page records awaiting a
 source-specific terms review; the previous 28-entry queue retains its dated
 classification.
@@ -652,12 +652,12 @@ Near-term:
 Current measurable review queues, last reconciled with the catalogue on
 2026-08-24:
 
-- 38 of 100 catalogue entries still use a permission status ending in
+- 38 of 101 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
   Breakdown: 18 official-vendor HLS, 4 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 100 entries retain at least one `unknown` media-accessibility field. Start
+- All 101 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
   Breakdown: 37 national, 43 sub-national, and 6 supranational entries.

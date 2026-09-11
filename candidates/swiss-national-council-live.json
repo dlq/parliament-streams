@@ -1,0 +1,82 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-09-11",
+  "updated_on": "2026-09-11",
+  "decision_notes": [
+    "Candidate scaffold created; evidence review pending.",
+    "Validated the official-vendor HLS manifest and its CORS headers on 2026-09-11.",
+    "Swiss Parliamentary Services explicitly publish responsive iframe code for third-party websites.",
+    "Official identity, live source, accessibility, schedule, and third-party embed evidence reviewed on 2026-09-11.",
+    "Promoted to the canonical catalogue on 2026-09-11."
+  ],
+  "channel": {
+    "id": "swiss-national-council-live",
+    "name": "Swiss National Council Live",
+    "jurisdiction_level": "national",
+    "country_or_region": "Switzerland",
+    "legislature": "National Council",
+    "external_ids": {
+      "wikidata_qid": "Q676078",
+      "ipu_country_code": "CH",
+      "ipu_parliament_code": "CH",
+      "ipu_chamber_code": "CH-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q676078",
+        "checked_on": "2026-09-11",
+        "confidence": "high",
+        "notes": "Matched to the National Council of Switzerland; used for institutional identity only."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/CH/CH-LC01/",
+        "checked_on": "2026-09-11",
+        "confidence": "high",
+        "notes": "Matched to the IPU Parline National Council chamber identifier; used for institutional identity only."
+      }
+    ],
+    "language": "German / French / Italian",
+    "source_type": "direct_hls",
+    "source_kind": "official_vendor_hls",
+    "playback_url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+    "playback_policy": "native_playback",
+    "official_url": "https://www.parlament.ch/en/nr/livestream",
+    "provenance_note": "The official Swiss Parliament live player exposes this Akamai HLS manifest. Parliamentary Services also publish third-party iframe instructions for the National Council stream.",
+    "technical_status": "validated",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "available",
+      "caption_languages": [
+        "de",
+        "fr",
+        "it"
+      ],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The official National Council live page provides automatically generated subtitles and warns that they may contain errors."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "url": "https://www.parlament.ch/en/ratsbetrieb/sessions",
+        "method": "GET",
+        "kind": "session_schedule_page",
+        "scraper_status": "planned"
+      }
+    ],
+    "permission": {
+      "status": "explicit_reuse_with_conditions",
+      "summary": "Swiss Parliamentary Services explicitly allow third parties to embed the National Council and Council of States live streams and publish responsive iframe code and language parameters. This documents third-party embedding; it does not by itself grant broader rights to alter or redistribute recordings.",
+      "evidence": [
+        "https://www.parlament.ch/en/nr/livestream",
+        "https://www.parlament.ch/de/services/Seiten/live-stream-einbetten.aspx",
+        "https://live.parlament.ch/content?externalid=-1&themeColor=AA9E72"
+      ],
+      "recommendation": "Embed or play the unaltered official National Council stream with clear Swiss Parliament attribution. Review separate terms before modifying, archiving, or redistributing recordings beyond the documented live-embed use."
+    }
+  }
+}

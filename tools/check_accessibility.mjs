@@ -22,6 +22,13 @@ const expectedScheduleCount = canonicalCatalogue.channels.filter((channel) =>
 const expectedJurisdictionCount = new Set(canonicalCatalogue.channels.map(
   (channel) => `${channel.jurisdiction_level}:${channel.country_or_region}`,
 )).size;
+const expectedDocumentedCountryCodes = new Set(canonicalCatalogue.channels
+  .filter((channel) => channel.jurisdiction_level === "national")
+  .map((channel) => channel.country_or_region === "Taiwan" ? "TW" : channel.external_ids?.ipu_country_code)
+  .filter(Boolean));
+documentedAdmin1.features.forEach((feature) => {
+  expectedDocumentedCountryCodes.add(feature.properties.parent_code);
+});
 const expectedUpdatedDate = new Intl.DateTimeFormat("en", {
   month: "short",
   day: "numeric",
@@ -444,7 +451,10 @@ try {
   assert.equal(await mapPage.locator("#source-count").innerText(), String(canonicalCatalogue.channels.length));
   assert.equal(await mapPage.locator("#playable-count").innerText(), String(expectedPlayableCount));
   assert.equal(await mapPage.locator("#jurisdiction-list button").count(), expectedJurisdictionCount);
-  assert.equal(await mapPage.locator(".map-country.is-documented").count(), 28);
+  assert.equal(
+    await mapPage.locator(".map-country.is-documented").count(),
+    expectedDocumentedCountryCodes.size,
+  );
   assert.equal(await mapPage.locator(".map-region").count(), 34);
   assert.match(await mapPage.locator("#map-detail").innerText(), /Canada.*31 sources/s);
   assert.equal(

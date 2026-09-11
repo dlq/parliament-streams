@@ -126,6 +126,43 @@ class DiscoveryFindingsTests(unittest.TestCase):
         )
         self.assertEqual(report["findings"][0]["status"], "catalogued")
 
+    def test_catalogue_router_url_covers_rotating_euddn_edge_playlist(self) -> None:
+        catalogue = cast(
+            Catalogue,
+            {
+                "channels": [
+                    {
+                        "playback_url": (
+                            "https://router.euddn.net/stable/"
+                            "smil:room_1.smil/playlist.m3u8?customer=1"
+                        ),
+                        "embed": None,
+                    }
+                ]
+            },
+        )
+        edge_url = "https://le302.euddn.net/rotating-token/smil:room_1.smil/chunklist_b1667072.m3u8"
+        report = build_discovery_findings(
+            catalogue,
+            [],
+            [
+                (
+                    "browser.json",
+                    {
+                        "countries": [
+                            {
+                                "country": "Example",
+                                "tier_report": "data/discovery/tier1.json",
+                                "validated_manifests": [{"kind": "hls", "url": edge_url}],
+                            }
+                        ]
+                    },
+                )
+            ],
+            checked_at="2026-09-11T00:00:00Z",
+        )
+        self.assertEqual(report["findings"][0]["status"], "catalogued")
+
     def test_retains_reviewed_manifest_decisions_without_reopening_them(self) -> None:
         catalogue = cast(Catalogue, {"channels": []})
         url = "https://government.example/live/playlist.m3u8"

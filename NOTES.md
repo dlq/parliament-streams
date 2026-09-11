@@ -4,6 +4,18 @@ This is a working research log, not an endorsed stream directory or legal assess
 
 Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `PLANS.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
 
+## 2026-09-11 Tier 1 And Tier 2 Rescan
+
+The complete maintained discovery inventory rechecked 25 Tier 1 and 46 Tier 2
+countries using static extraction and Chromium player inspection. Of 44
+validated manifest URLs, 39 now resolve to catalogue source families and five
+retain documented exclusion decisions; none remain unreviewed. The pass added
+the Swiss National Council live service after its official-vendor HLS recovered
+and the Swiss Parliament's explicit third-party embed instructions were
+confirmed. Brazil TV Camara native playback was restored after its first-party
+manifest recovered. Rotating Estonia edge URLs and Brazil child renditions were
+confirmed as variants of existing channel families rather than new channels.
+
 ## 2026-08-24 U.S. catalogue promotion
 
 Promoted fourteen verified official video surfaces from the U.S. discovery
@@ -1594,6 +1606,10 @@ Catalogue outcome: keep Brazil TV Camara as an official live-page and schedule
 source, but demote it from `direct_hls`/`validated` to `official_page`/`link_only`
 until a replacement first-party stream is validated and the rights posture is
 clear.
+
+Resolution on 2026-09-11: the same first-party manifest recovered and passed
+both static and browser validation. Native HLS playback was restored with the
+existing Camara attribution and CC BY 4.0 conditions.
 
 ## 2026-08-19 Canada Harmony schedule integration
 
