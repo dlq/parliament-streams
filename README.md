@@ -12,8 +12,8 @@ evidence found while researching open parliamentary video access.
 The repository is intended to be a public, inspectable catalogue and research
 record.
 
-**[Browse the public catalogue](https://dlq.github.io/parliament-streams/)** ·
-**[View the programme guide](https://dlq.github.io/parliament-streams/schedule.html)**
+**[Browse the public catalogue](https://dlq.ca/parliament-streams/)** ·
+**[View the programme guide](https://dlq.ca/parliament-streams/schedule.html)**
 
 ## Start Here
 
@@ -304,6 +304,10 @@ repository-wide research summaries are:
 - `reports/epg-discovery-2026-08-24.md`
 - `reports/us-federal-state-candidates-2026-08-24.md`
 
+The latest targeted scheduled-audit follow-up is recorded in
+[October candidate triage](reports/discovery/2026-10-01-candidate-triage.md)
+and the [CodeQL review](reports/codeql-review-2026-10-01.md).
+
 Earlier retained health and discovery evidence includes:
 
 - `reports/health/2026-08-16-subnational-promotion-static.json`
@@ -395,8 +399,10 @@ official outlinks.
 As of the 2026-09-11 discovery pass, all 101 channel records have at least one
 official schedule, agenda, meeting, or programme surface recorded. This is
 source coverage, not programme-guide coverage: 17 unique URLs have implemented
-parsers, while 58 are parser candidates or link-only research sources. See
-`reports/epg-discovery-2026-08-24.md` for the latest source-by-source findings.
+parsers. As of 2026-10-01, there are 90 unique recorded schedule URLs: 17
+implemented and 73 planned or link-only research sources. See
+`reports/epg-discovery-2026-08-24.md` for the dated source-by-source discovery
+baseline.
 
 Collect all implemented sources locally:
 
@@ -480,12 +486,12 @@ Development uses two deliberately separate toolchains:
 | Tooling | Responsibility |
 | --- | --- |
 | Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, site-data generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
-| Node.js 24+ and npm | Static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
+| Node.js 24+ and npm | Locked HLS.js/D3 browser-asset assembly, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
 | Make | Stable command entry points that compose the Python and Node checks without hiding which toolchain runs them. |
 | Playwright Chromium | The downloaded browser used to test rendered desktop, intermediate-width, mobile, keyboard, and accessibility behavior. |
 
-Node does not build the catalogue, generate the site, run a backend, or serve
-production traffic. The deployed GitHub Page is static HTML, CSS, JavaScript,
+Node assembles the browser libraries during installation. Python generates the
+catalogue snapshots; neither toolchain serves production traffic. The deployed GitHub Page is static HTML, CSS, JavaScript,
 and JSON and requires neither Python nor Node at runtime.
 
 Install `uv`, Node.js 24 or newer, both locked development environments, and
@@ -508,8 +514,8 @@ relying on a system Python.
 This runs JSON syntax plus schema/business-rule validation, checks that the
 direct-file site snapshot is current, checks Ruff formatting and linting, runs
 strict mypy over production Python and Python tools, compiles Python modules,
-and runs the unit suite with a 90% minimum branch-coverage gate for
-`parliament_streams/`. It also validates the HTML and runs Axe plus browser
+and runs the unit suite with a 90% minimum coverage gate for
+`parliament_streams/`, with branch measurement enabled. It also validates the HTML and runs Axe plus browser
 assertions for desktop and mobile semantics, keyboard focus, reflow, control
 contrast, and reduced-motion support.
 
@@ -600,6 +606,9 @@ uv run python tools/validate_discovery_decisions.py
 uv run python tools/validate_democracy_tier_static.py \
   --input data/discovery/tier1.json \
   --output reports/discovery/tier1-static.json
+uv run python tools/validate_democracy_tier_static.py \
+  --input data/discovery/tier2.json \
+  --output reports/discovery/tier2-static.json
 node tools/deep_validate_browser.mjs \
   --input data/discovery/tier1.json \
   --input data/discovery/tier2.json \

@@ -51,14 +51,16 @@ These entries need either written clarification or a future dated terms review.
 
 ## Current Open Queue
 
-As of 2026-08-24:
+As of 2026-10-01:
 
-- 38 of 100 catalogue entries remain permission-pending.
+- 38 of 101 catalogue entries remain permission-pending.
 - The previous 28-entry review queue remains classified in the dated report.
 - Ten newly published U.S. official-page records need source-specific terms
   review or written clarification before any playback posture is reconsidered.
 
-The current execution queue is
+The current queue is tracked in the
+[rights evidence issue](https://github.com/dlq/parliament-streams/issues/13)
+and `data/channels.json`. The dated August classification baseline is
 [review-queues-2026-08-19-rights-next.json](../reports/review-queues-2026-08-19-rights-next.json).
 Draft outreach text is in
 [permission-requests.md](permission-requests.md).

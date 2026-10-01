@@ -4,7 +4,35 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-09-11
+## Unreleased - 2026-10-01
+
+### Added
+
+- A researching Czech Chamber of Deputies candidate with official HLS/embed
+  evidence; promotion awaits successful active-sitting media validation.
+- Retained October scheduled-audit triage and a documented false-positive
+  dismissal of CodeQL alert #2; no open CodeQL alerts remain at this review.
+
+### Changed
+
+- Generate same-origin HLS.js 1.7.3 and D3.js 7.9.0 browser libraries, content
+  hashes, and upstream license notices from locked npm dependencies. Every
+  Pages deployment regenerates these assets.
+- Update Ruff, html-validate, and Playwright through reviewed Dependabot PRs,
+  and update the transitive fast-uri dependency to resolve the npm audit finding.
+- Refresh current Markdown guidance against the October catalogue, candidate
+  queue, tooling, and review counts while retaining dated research evidence.
+
+### Fixed
+
+- Restore Thailand native playback using the channel-level HLS endpoint
+  advertised by the official player, retaining event-based availability and
+  pending reuse rights.
+- Replace obsolete New Zealand and U.S. Senate official-page links.
+- Record six exact France/Senate event-manifest decisions so they do not reopen
+  the stable-channel discovery queue.
+
+## Earlier unreleased work through 2026-09-11
 
 ### Added
 
@@ -82,7 +110,7 @@ application. Earlier application work remains available in Git history.
 
 - Reclassified Thailand Parliament TV as an event-based, high-risk research
   source after the former permanent HLS endpoint regressed to HTTP 404. The
-  catalogue now records the Channel 1 URL advertised by the official OTT API,
+  September catalogue recorded the Channel 1 URL advertised by the official OTT API,
   while discovery data also retains Channel 2 for an active-broadcast check.
 - Repaired the Ontario calendar collector by using the CDN-compatible canonical
   URL and the project's transparent user agent, and moved New Zealand schedule
@@ -97,13 +125,13 @@ application. Earlier application work remains available in Git history.
   validating it exactly whenever it is present. Static catalogue, fallback,
   and map metadata remain checked in every checkout.
 - Current-state documentation now reflects the 2026-08-24 catalogue and report
-  set, the 28-entry pending-rights queue, the static-site project terminology,
+  set, the dated 28-entry rights-classification baseline, the static-site project terminology,
   and the manual validation workflow and evidence boundaries for the U.S.
   candidate inventory.
 
 - Schedule documentation now distinguishes records with an official schedule
   link from channels with real dated events in the published programme guide;
-  the current v3 snapshot contains 159 events for seven channels.
+  the 2026-08-24 v3 snapshot contained 159 events for seven channels.
 - Existing multi-event parsers now retain their complete collected horizon
   instead of discarding all but Now and Next. The 2026-08-24 live run expanded
   seven producing channels from ten displayed slots to 159 normalized events,

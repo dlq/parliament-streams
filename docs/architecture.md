@@ -43,7 +43,9 @@ The browser loads same-origin libraries using generated content hashes for
 cache keys. See `site/assets/vendor/README.md` for the maintenance workflow.
 
 `site/catalogue-data.js` is generated from `data/channels.json` so `site/index.html`
-can be opened directly from disk. Do not edit it independently; run
+can be opened directly from disk. Its retained schedule suffix is a dated local
+preview, not a current live snapshot; Pages publishes newly collected schedules.
+Do not edit it independently; run
 `make site-data` or use the catalogue manager.
 
 `data/schedules.json` is a local generated now/next snapshot and is ignored by

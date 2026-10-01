@@ -8,7 +8,9 @@ legislature, broadcaster, streaming vendor, or video platform.
 
 The repository licence covers the project code and documentation written for
 this repository. Local third-party visual assets have their own recorded terms:
-see `site/assets/flags/ATTRIBUTION.md` and its accompanying licence file.
+see the attribution files under `site/assets/flags/`, `site/assets/hero/`, and
+`site/assets/maps/`. Browser-library notices are generated under
+`site/assets/vendor/`; its README documents their separate licences.
 
 It does not grant rights to:
 

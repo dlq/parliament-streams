@@ -10,7 +10,9 @@ public catalogue.
 
 ## Current Status
 
-Last prepared: 2026-08-24.
+Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-01.
+The dated review buckets below are retained preparation evidence; contact
+routes and source terms need rechecking before eventual outreach.
 
 Communication status: deferred. Do not send piecemeal permission requests yet.
 Reserve outreach for a more substantive communications push after the catalogue,
@@ -27,7 +29,7 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 38 of 100 catalogue entries use a permission status ending in
+- 38 of 101 catalogue entries use a permission status ending in
   `pending_review`; ten are newly published U.S. official-page records that
   have not yet been triaged into the dated 2026-08-19 outreach buckets.
 - 16 entries in the previous queue likely need written clarification.
@@ -64,7 +66,9 @@ No status changed. The official Parliament live/session page is the safer
 user-facing route; the SkyGo DASH manifest remains research-only until source
 ownership, reuse permission, and platform playback strategy are documented.
 
-Execution queue:
+Dated August classification snapshots (the current queue is in
+`data/channels.json` and the
+[rights evidence issue](https://github.com/dlq/parliament-streams/issues/13)):
 
 - [reports/review-queues-2026-08-19-rights-next.json](../reports/review-queues-2026-08-19-rights-next.json)
 - [reports/review-queues-2026-08-19-official-vendor-hls.json](../reports/review-queues-2026-08-19-official-vendor-hls.json)

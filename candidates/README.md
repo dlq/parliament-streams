@@ -9,8 +9,12 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-08-24, this directory has no unresolved local candidates; the
-remaining JSON files are promoted records retained for audit history. Event,
+As of 2026-10-01, the Czech Chamber of Deputies candidate remains `researching`: its
+officially documented HLS master is reachable, but active-sitting child-playlist
+and media validation is still needed. See the
+[October triage report](../reports/discovery/2026-10-01-candidate-triage.md).
+The other three JSON files are promoted records retained for audit history;
+`data/channels.json` governs their current published status. Event,
 official-player, and provider fallback ideas should normally start in
 `data/fallbacks.json` instead of becoming channel candidates unless they have a
 stable channel identity and a supportable playback or link-out posture.
