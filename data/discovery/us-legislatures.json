@@ -1,6 +1,6 @@
 {
   "candidate_version": 1,
-  "generated_on": "2026-08-24",
+  "generated_on": "2026-10-01",
   "scope": "United States federal and state legislative video, webcast, and schedule candidates for possible catalogue inclusion.",
   "method": "Record every federal legislative surface and all 50 official state legislature roots. Mark a candidate verified only when an official legislature or legislature-authorized provider currently documents live or archived legislative video. This inventory does not assert a stable direct stream or redistribution permission.",
   "authoritative_directory_url": "https://www.congress.gov/state-legislature-websites",
@@ -21,12 +21,12 @@
       "id": "us-senate-floor-webcast",
       "institution": "U.S. Senate",
       "candidate_type": "floor_channel",
-      "official_url": "https://www.senate.gov/legislative/floor_activity_pail.htm",
-      "video_url": "https://www.senate.gov/legislative/floor_activity_pail.htm",
+      "official_url": "https://www.senate.gov/floor/",
+      "video_url": "https://www.senate.gov/floor/",
       "schedule_url": "https://www.senate.gov/legislative/schedule/floor_schedule.htm",
       "research_status": "verified_official_video_surface",
       "priority": "high",
-      "evidence_urls": ["https://www.senate.gov/legislative/floor_activity_pail.htm", "https://www.senate.gov/visiting/common/generic/new/watching_congress.htm"],
+      "evidence_urls": ["https://www.senate.gov/floor/", "https://www.senate.gov/visiting/common/generic/new/watching_congress.htm"],
       "notes": "Official floor webcast and schedule. Discover the supported player route and document Senate-specific reuse terms before promotion."
     },
     {

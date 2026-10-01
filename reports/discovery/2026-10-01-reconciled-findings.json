@@ -1,0 +1,497 @@
+{
+  "checked_at": "2026-10-01T18:05:52Z",
+  "counts": {
+    "validated": 54,
+    "catalogued": 42,
+    "reviewed": 10,
+    "review": 2
+  },
+  "findings": [
+    {
+      "country": "Canada",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Denmark",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le301.euddn.net/6834265725540476a8a21aef5fdae770c379f8f2e4311101bb267bbd19d46216a8d2708a42479d6cdfe1d3e58d3a69b6fcd4dfcc3b19e9109c522be02258f84465efff4b90df58877f223acf530170ca62dce109f7a4bc4c04710f6410f05c293fa3cf1e1dacffb1cbb4f8c255102c658814fedec01d7abf76c52d7f5a29d6219915537f154995f1d38921f155acf178ddae75454719e05e54d686c66565db9b3b028d0e19d61589554bee7a29b46704/smil:rk_live_1.smil/chunklist_b1667072_slen.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le301.euddn.net/6834265725540476a8a21aef5fdae770c379f8f2e4311101bb267bbd19d46216a8d2708a42479d6cdfe1d3e58d3a69b6fcd4dfcc3b19e9109c522be02258f84465efff4b90df58877f223acf530170ca62dce109f7a4bc4c04710f6410f05c293fa3cf1e1dacffb1cbb4f8c255102c658814fedec01d7abf76c52d7f5a29d6219915537f154995f1d38921f155acf178ddae75454719e05e54d686c66565db9b3b028d0e19d61589554bee7a29b46704/smil:rk_live_1.smil/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le303.euddn.net/b36ce29bc13ced0894749ffd371f88580663fa0663472ee615bb7ebfbe9a52087bb46cf5ca2b6a075bc6bdb60853bd8cbb5463d88920d47a127dbc1a7c8b0e06268f314cdd3f7cce538d15c4be26dc554be12803df151296e6e7998362ba30c4a408bc067dec398fe802fa4bd1c9c7ef25c4ee5d63ffff4f8b8f9917188904729cedacca6c3c4fd64ba82c80a70d462d3a6a2ebb61a14512d11786a66b22e6d1fc42cb0999c76b18fe935a8c9d98bec4/smil:rk_live_2.smil/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le304.euddn.net/c31e1252163495ee88e0b775eb2f606546bb58e7f38170587df2a78e711208e8a7fd68302bd6d5fad982b914fe67c74b1126657b0c68e3415a9933095bd31609d56d5ba5634d3d940992e461dcbfc13005a9db96c5fe610fb17a99adada550f4d526fbcec4959b73faba879242b112352a47c662cc315420f15b473dda815bc5494b31170c130bc948764254caeba28ab32109a8ce69991ed0b8f9b79bf0900722f6c09a21e778b471589726e191a729/smil:rk_live_1.smil/chunklist_b2691072_slen.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le304.euddn.net/c31e1252163495ee88e0b775eb2f606546bb58e7f38170587df2a78e711208e8a7fd68302bd6d5fad982b914fe67c74b1126657b0c68e3415a9933095bd31609d56d5ba5634d3d940992e461dcbfc13005a9db96c5fe610fb17a99adada550f4d526fbcec4959b73faba879242b112352a47c662cc315420f15b473dda815bc5494b31170c130bc948764254caeba28ab32109a8ce69991ed0b8f9b79bf0900722f6c09a21e778b471589726e191a729/smil:rk_live_1.smil/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "dash",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Germany",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Greece",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "New Zealand",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5500/chunks_dvr_timeshift-0-43200.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5505/chunks_dvr_timeshift-0-43200.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Portugal",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Switzerland",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/chunklist_w674661489.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Switzerland",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://stream3.camara.gov.br/tv1/audio2_stream.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://stream3.camara.gov.br/tv1/video1_stream.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "http://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "India",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "India",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Israel",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Israel",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/288p/chunklist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/576p/chunklist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Mongolia",
+      "tier": "tier2",
+      "kind": "dash",
+      "url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Slovakia",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Thailand",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Thailand",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://canalgov-stream.ebc.com.br/index.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "out_of_scope"
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://anorigin.vodalys.com/live/live36/index36_19478557.m3u8?DVR",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19478557.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19478557.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19478557.m3u8?DVR",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "third_party"
+    },
+    {
+      "country": "Moldova",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "third_party"
+    },
+    {
+      "country": "South Korea",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "out_of_scope"
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+      "evidence": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    }
+  ]
+}

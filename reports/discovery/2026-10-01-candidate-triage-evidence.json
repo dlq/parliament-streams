@@ -1,0 +1,454 @@
+{
+  "checked_at": "2026-10-01T18:00:34+00:00",
+  "source_run": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+  "browser_checked_at": "2026-10-01T14:38:19Z",
+  "scope": "The ten October 1 monthly review URLs, grouped by official source; no automatic promotion.",
+  "discovery_pages": [
+    {
+      "country": "Czech Republic",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://pspen.psp.cz/live-broadcast/",
+      "final_url": "https://pspen.psp.cz/live-broadcast/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "elapsed_ms": 935,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "elapsed_ms": 164,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Czech Republic",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+      "final_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "elapsed_ms": 166,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "elapsed_ms": 165,
+          "note": "Manifest validated",
+          "discovery_source": "request"
+        },
+        {
+          "url": "https://utils.ssl.cdn.cra.cz/cze.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://utils.ssl.cdn.cra.cz/cze.m3u8",
+          "elapsed_ms": 952,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "dom"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "France",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+      "final_url": "https://videos.assemblee-nationale.fr/direct.19478557_6abe55d3d75f4",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 4,
+      "validated_manifest_count": 4,
+      "responses": [
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/index36_19478557.m3u8?DVR",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19478557.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19478557.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/index36_19478557.m3u8?DVR",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://anorigin.vodalys.com/live/live36/index36_19478557.m3u8?DVR",
+          "elapsed_ms": 531,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19478557.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://anorigin.vodalys.com/live/live36/stream36_1_19478557.m3u8",
+          "elapsed_ms": 756,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19478557.m3u8?DVR",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://videos.assemblee-nationale.fr/live/live36/index36_19478557.m3u8?DVR",
+          "elapsed_ms": 536,
+          "note": "Manifest validated",
+          "discovery_source": "dom"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19478557.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://anorigin.vodalys.com/live/live36/stream36_2_19478557.m3u8",
+          "elapsed_ms": 295,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "France",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://videos.senat.fr/video/seance_direct.html",
+      "final_url": "https://videos.senat.fr/video.5954760_6abe4a6d0aa66.seance-publique-du-1-octobre-2026-apres-midi",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://live.house.gov/",
+      "final_url": "https://live.house.gov/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.senate.gov/floor/",
+      "final_url": "https://www.senate.gov/floor/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+          "status": 200,
+          "content_type": "application/x-mpegURL"
+        },
+        {
+          "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+          "status": 200,
+          "content_type": "application/x-mpegURL"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+          "elapsed_ms": 71,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+          "elapsed_ms": 28,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.c-span.org/",
+      "final_url": "https://www.c-span.org/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.447779.clean.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://m3u8-l.c-spanvideo.org/event/event.447779.clean.m3u8",
+          "elapsed_ms": 77,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "request"
+        },
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.447777.tsc.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://m3u8-l.c-spanvideo.org/event/event.447777.tsc.m3u8",
+          "elapsed_ms": 215,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "request"
+        },
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.447743.tsc.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 403,
+          "content_type": "text/html",
+          "final_url": "https://m3u8-l.c-spanvideo.org/event/event.447743.tsc.m3u8",
+          "elapsed_ms": 14,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "request"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Thailand",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://tpchannel.org/broadcasts/tv",
+      "final_url": "https://tpchannel.org/broadcasts/tv",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "elapsed_ms": 851,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "elapsed_ms": 921,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    }
+  ],
+  "followup_http_checks": [
+    {
+      "name": "czech-page",
+      "url": "https://www.psp.cz/stream/1",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "name": "czech-master",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "checked_at": "2026-10-01T17:57:57+00:00",
+      "status": 200,
+      "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+      "access_control_allow_origin": "*",
+      "bytes": 503,
+      "sha256": "892ffe574d6ee545937258a5716b8b8f4c6e153966f3d2d92ee95dd1b6beef9c",
+      "manifest_preview": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:PROGRAM-ID=215,BANDWIDTH=1628000,RESOLUTION=720x400,CLOSED-CAPTIONS=NONE\ncze/live_mq.m3u8?offsetSeconds=0&url=0\n#EXT-X-STREAM-INF:PROGRAM-ID=215,BANDWIDTH=928000,RESOLUTION=640x360,CLOSED-CAPTIONS=NONE\ncze/live_lq.m3u8?offsetSeconds=0&url=0\n#EXT-X-STREAM-INF:PROGRAM-ID=215,BANDWIDTH=3628000,RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE\ncze/live_hd.m3u8?offsetSeconds=0&url=0\n#EXT-X-STREAM-INF:PROGRAM-ID=215,BANDWIDTH=40000\ncze/live_ao.m3u8?offsetSeconds=0&url=0\n"
+    },
+    {
+      "name": "czech-hd",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "france-page",
+      "url": "https://videos.assemblee-nationale.fr/direct.php",
+      "checked_at": "2026-10-01T17:57:57+00:00",
+      "status": 200,
+      "final_url": "https://videos.assemblee-nationale.fr/direct.php",
+      "content_type": "text/html; charset=UTF-8",
+      "access_control_allow_origin": null,
+      "bytes": 7736,
+      "sha256": "cf751168d566de85398d2110fb15c2f16bd132f202050d2e19c30535233cd0b2"
+    },
+    {
+      "name": "france-master",
+      "url": "https://anorigin.vodalys.com/live/live36/index36_19478557.m3u8?DVR",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "senate-page",
+      "url": "https://www.senate.gov/floor/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "senate-master",
+      "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+      "checked_at": "2026-10-01T17:57:57+00:00",
+      "status": 200,
+      "final_url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+      "content_type": "application/x-mpegURL",
+      "access_control_allow_origin": "*",
+      "bytes": 355,
+      "sha256": "28920a47d3c419769724e1e5bf7cf1688364464793446dc77f1dd1e318f97587",
+      "manifest_preview": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-INDEPENDENT-SEGMENTS\n#EXT-X-STREAM-INF:BANDWIDTH=712800,AVERAGE-BANDWIDTH=712800,CODECS=\"avc1.4d401f,mp4a.40.2\",RESOLUTION=1280x720,FRAME-RATE=30.000,SUBTITLES=\"subs\"\nmaster/index_1.m3u8\n#EXT-X-MEDIA:TYPE=SUBTITLES,NAME=\"English\",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,LANGUAGE=\"eng\",GROUP-ID=\"subs\",URI=\"master/text_1.m3u8\"\n"
+    },
+    {
+      "name": "senate-child",
+      "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "czech-mq",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+      "checked_at": "2026-10-01T18:00:34+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "czech-lq",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_lq.m3u8?offsetSeconds=0&url=0",
+      "checked_at": "2026-10-01T18:00:34+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "czech-ao",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_ao.m3u8?offsetSeconds=0&url=0",
+      "checked_at": "2026-10-01T18:00:34+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "czech-hd",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+      "checked_at": "2026-10-01T18:00:34+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

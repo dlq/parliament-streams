@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-10-01T17:59:12Z",
+  "catalogue": "data/channels.json",
+  "timeout_seconds": 20,
+  "retries": 2,
+  "total": 1,
+  "counts": {
+    "ok": 1
+  },
+  "results": [
+    {
+      "id": "new-zealand-parliament",
+      "source_type": "direct_hls",
+      "source_kind": "official_vendor_hls",
+      "technical_status": "validated",
+      "availability": "sitting_only",
+      "stability_risk": "medium",
+      "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+      "checked_at": "2026-10-01T17:58:36Z",
+      "http_status": 200,
+      "content_type": "application/x-mpegURL",
+      "final_url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+      "attempts": 1,
+      "status": "ok",
+      "note": "HLS manifest detected.",
+      "hls_variant_count": 6,
+      "hls_media_playlist_count": 0,
+      "sample_variant": {
+        "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index_1.m3u8",
+        "http_status": 200,
+        "content_type": "application/x-mpegURL",
+        "final_url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index_1.m3u8",
+        "attempts": 1,
+        "looks_like_hls": true
+      }
+    }
+  ],
+  "follow_up": {
+    "old_official_page": {
+      "url": "https://www.parliament.nz/en/watch-parliament/",
+      "checked_at": "2026-10-01T17:56:32+00:00",
+      "http_status": 404,
+      "final_url": "https://www.parliament.nz/en/watch-parliament/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "replacement_official_page": {
+      "url": "https://videos.parliament.nz/",
+      "checked_at": "2026-10-01T17:56:32+00:00",
+      "http_status": 200,
+      "final_url": "https://videos.parliament.nz/",
+      "content_type": "text/html; charset=utf-8",
+      "cors": null,
+      "response_bytes": 4460,
+      "body_sha256": "3034e0cfc917480845b4db55b3bef317aa41cdaf59def130933f00da4783e238"
+    },
+    "official_announcement": {
+      "url": "https://www3.parliament.nz/en/get-involved/features/a-whole-new-way-to-watch-parliament-video/",
+      "published_on": "2024-03-21",
+      "updated_on": "2024-03-22",
+      "checked_on": "2026-10-01",
+      "verification_method": "web source inspection",
+      "finding": "Parliament directs viewers to videos.parliament.nz for live sittings and on-demand video, and its Watch navigation links there."
+    },
+    "www3_watch_probe": {
+      "url": "https://www3.parliament.nz/en/watch-parliament/",
+      "checked_at": "2026-10-01T17:56:32+00:00",
+      "http_status": 200,
+      "final_url": "https://www3.parliament.nz/en/watch-parliament/",
+      "content_type": "text/html; charset=UTF-8",
+      "cors": null,
+      "response_bytes": 118391,
+      "body_sha256": "3805eabf9215149d0c075f5e1e505545165f771868b8f88906f3cad34a8110dc",
+      "note": "HTTP 200 was a Radware bot-protection page, so this is not selected as the replacement."
+    },
+    "decision": {
+      "official_url": "https://videos.parliament.nz/",
+      "playback_url_changed": false,
+      "permission_status_changed": false,
+      "reason": "The previous official URL is 404. The replacement is the Parliament Video application on the institution domain, explicitly designated by Parliament. Existing stream and permission evidence remain valid."
+    },
+    "limits": "The replacement application rendered its official live/on-demand interface in the browser. The House was not sitting, so this check does not assert live proceeding playback.",
+    "replacement_browser_check": {
+      "checked_at": "2026-10-01T18:09:12Z",
+      "method": "Codex in-app browser accessibility-tree inspection",
+      "title": "Live Video | New Zealand Parliament",
+      "observed_content": [
+        "Parliament Video",
+        "Live and On Demand navigation",
+        "The House is not currently sitting.",
+        "House Sitting Calendar",
+        "Terms and Conditions"
+      ]
+    }
+  }
+}

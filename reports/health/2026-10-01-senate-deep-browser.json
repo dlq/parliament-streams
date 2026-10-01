@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-01T14:38:19Z",
+  "source_run": "https://github.com/dlq/parliament-streams/actions/runs/36877188739",
+  "scope": "Official Senate floor link verification from the scheduled Chromium audit; not a permanent media endpoint validation.",
+  "total": 1,
+  "counts": {
+    "ok": 1
+  },
+  "results": [
+    {
+      "id": "us-senate-floor-webcast",
+      "checked_at": "2026-10-01T14:38:19Z",
+      "url": "https://www.senate.gov/floor/",
+      "final_url": "https://www.senate.gov/floor/",
+      "http_status": 200,
+      "status": "ok",
+      "note": "Official floor page loaded in Chromium and exposed session-specific media; direct HTTP clients may receive access-blocked responses."
+    }
+  ],
+  "evidence": {
+    "country": "United States",
+    "tier_report": "data/discovery/tier2.json",
+    "page_url": "https://www.senate.gov/floor/",
+    "final_url": "https://www.senate.gov/floor/",
+    "page_status": 200,
+    "load_note": null,
+    "discovered_manifest_count": 2,
+    "validated_manifest_count": 2,
+    "responses": [
+      {
+        "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+        "status": 200,
+        "content_type": "application/x-mpegURL"
+      },
+      {
+        "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+        "status": 200,
+        "content_type": "application/x-mpegURL"
+      }
+    ],
+    "validations": [
+      {
+        "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+        "kind": "hls",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "application/x-mpegURL",
+        "final_url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+        "elapsed_ms": 71,
+        "note": "Manifest validated",
+        "discovery_source": "response"
+      },
+      {
+        "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+        "kind": "hls",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "application/x-mpegURL",
+        "final_url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+        "elapsed_ms": 28,
+        "note": "Manifest validated",
+        "discovery_source": "response"
+      }
+    ],
+    "page_errors": []
+  }
+}
