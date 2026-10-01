@@ -500,6 +500,7 @@ function escapeHtml(value) {
 }
 
 async function init() {
+  await window.ParliamentStreamsVendor.load("d3");
   applyStaticTranslations();
   elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
   elements.locale.value = state.locale;

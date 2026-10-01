@@ -35,6 +35,13 @@ Discovery data is maintained separately from published channels:
 
 ## Generated And Local Files
 
+`npm ci` prepares the ignored browser libraries and license notices in
+`site/assets/vendor/` from `package-lock.json`. HLS.js uses its full upstream
+distribution; D3 is bundled from the installed modules so transitive dependency
+updates affect the browser asset. CI and every Pages deployment run this step.
+The browser loads same-origin libraries using generated content hashes for
+cache keys. See `site/assets/vendor/README.md` for the maintenance workflow.
+
 `site/catalogue-data.js` is generated from `data/channels.json` so `site/index.html`
 can be opened directly from disk. Do not edit it independently; run
 `make site-data` or use the catalogue manager.

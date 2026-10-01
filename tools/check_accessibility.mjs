@@ -10,6 +10,9 @@ import { chromium } from "playwright";
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
 const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.json"), "utf8"));
+const [hlsPackage, d3Package] = await Promise.all(["hls.js", "d3"].map(async (name) =>
+  JSON.parse(await readFile(join(root, "node_modules", name, "package.json"), "utf8"))
+));
 const documentedAdmin1 = JSON.parse(await readFile(join(root, "site/assets/maps/documented-admin1.geojson"), "utf8"));
 assert.equal(documentedAdmin1.features.length, 34);
 assert(documentedAdmin1.features.every((feature) => feature.geometry.type === "MultiPolygon"));
@@ -111,6 +114,97 @@ const browser = await chromium.launch();
 
 try {
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  // Exercise the actual local HLS library without depending on a live broadcaster.
+  const hlsPage = await context.newPage();
+  const hlsChannel = canonicalCatalogue.channels.find((channel) =>
+    channel.playback_policy === "native_playback" && channel.playback_url?.includes(".m3u8")
+  );
+  assert(hlsChannel, "The catalogue must contain a direct HLS source");
+  const hlsPlaylistUrl = new URL("test-fixtures/vendor-smoke.m3u8", baseUrl).href;
+  const hlsLibraryRequests = [];
+  const externalHlsRequests = [];
+  hlsPage.on("request", (request) => {
+    if (new URL(request.url()).pathname.endsWith("/assets/vendor/hls.min.js")) {
+      hlsLibraryRequests.push(request.url());
+    }
+  });
+  await hlsPage.route("**/*", (route) => {
+    const requestUrl = new URL(route.request().url());
+    if (requestUrl.origin !== new URL(baseUrl).origin) {
+      externalHlsRequests.push(requestUrl.href);
+      return route.abort();
+    }
+    if (requestUrl.pathname.endsWith("/data/channels.json")) {
+      return route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          ...canonicalCatalogue,
+          channels: canonicalCatalogue.channels.map((channel) => channel.id === hlsChannel.id
+            ? { ...channel, playback_url: hlsPlaylistUrl } : channel),
+        }),
+      });
+    }
+    if (requestUrl.href === hlsPlaylistUrl) {
+      return route.fulfill({
+        contentType: "application/vnd.apple.mpegurl",
+        body: "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.0,\nsegment.ts\n#EXT-X-ENDLIST\n",
+      });
+    }
+    if (requestUrl.pathname.endsWith("/test-fixtures/segment.ts")) return route.abort();
+    return route.continue();
+  });
+  await hlsPage.addInitScript(() => {
+    const observation = window.__hlsSmoke = {};
+    const canPlayType = HTMLMediaElement.prototype.canPlayType;
+    HTMLMediaElement.prototype.canPlayType = function (type) {
+      return /mpegurl/i.test(type) ? "" : canPlayType.call(this, type);
+    };
+    // The finite fixture deliberately has no video bytes, so autoplay cannot complete.
+    HTMLMediaElement.prototype.play = function () {
+      observation.playedVideo = this === document.querySelector("#media-frame video");
+      return Promise.resolve();
+    };
+    let library;
+    Object.defineProperty(window, "Hls", {
+      configurable: true,
+      get: () => library,
+      set: (value) => {
+        library = value;
+        const loadSource = value.prototype.loadSource;
+        value.prototype.loadSource = function (url) {
+          observation.source = url;
+          return loadSource.call(this, url);
+        };
+        const attachMedia = value.prototype.attachMedia;
+        value.prototype.attachMedia = function (media) {
+          observation.attachedVideo = media === document.querySelector("#media-frame video");
+          this.on(value.Events.MEDIA_ATTACHED, () => { observation.mediaAttached = true; });
+          this.on(value.Events.MANIFEST_PARSED, () => { observation.manifestParsed = true; });
+          return attachMedia.call(this, media);
+        };
+      },
+    });
+  });
+  await hlsPage.goto(`${baseUrl}index.html?lang=en&source=${hlsChannel.id}`);
+  await hlsPage.waitForSelector("[data-start-playback]");
+  assert.equal(await hlsPage.evaluate(() => Boolean(window.Hls)), false, "HLS must load lazily");
+  await hlsPage.locator(".play-button[data-start-playback]").click();
+  await hlsPage.waitForFunction(() => window.__hlsSmoke.mediaAttached && window.__hlsSmoke.manifestParsed);
+  const hlsRuntime = await hlsPage.evaluate(() => ({
+    ...window.__hlsSmoke,
+    version: window.Hls.version,
+    vendor: window.PARLIAMENT_STREAMS_VENDOR.hls,
+  }));
+  assert.equal(hlsRuntime.version, hlsPackage.version);
+  assert.equal(hlsRuntime.vendor.version, hlsPackage.version);
+  assert.equal(hlsRuntime.source, hlsPlaylistUrl);
+  assert.equal(hlsRuntime.attachedVideo, true);
+  assert.equal(hlsRuntime.playedVideo, true);
+  assert.equal(hlsLibraryRequests.length, 1, "Playback must use the local HLS asset");
+  assert.equal(new URL(hlsLibraryRequests[0]).origin, new URL(baseUrl).origin);
+  assert.equal(new URL(hlsLibraryRequests[0]).searchParams.get("v"), hlsRuntime.vendor.sha256);
+  assert.deepEqual(externalHlsRequests, [], "HLS playback must not request a CDN or live broadcaster");
+  await hlsPage.close();
   const page = await context.newPage();
   await page.route("**/data/schedules.json", (route) => route.fulfill({
     contentType: "application/json",
@@ -459,6 +553,12 @@ try {
   const mapPage = await context.newPage();
   await mapPage.goto(`${baseUrl}map.html?lang=en`);
   await mapPage.waitForSelector(".map-country.is-documented");
+  const d3Runtime = await mapPage.evaluate(() => ({
+    version: window.d3.version,
+    vendor: window.PARLIAMENT_STREAMS_VENDOR.d3.version,
+  }));
+  assert.equal(d3Runtime.version, d3Package.version);
+  assert.equal(d3Runtime.vendor, d3Package.version);
   assert.equal(
     await mapPage.locator("#jurisdiction-count").innerText(),
     String(expectedJurisdictionCount),
