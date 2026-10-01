@@ -8,6 +8,8 @@ The static page is served by GitHub Pages. It loads the catalogue JSON from the
 same published repository. HLS.js and D3 are served from that same origin.
 When a visitor chooses playback, the page may request a selected source's
 public stream or official provider embed directly.
+The page stores the selected interface language in browser local storage; it
+does not store viewing history.
 GitHub and the selected source may apply their own logging, cookies,
 geolocation rules, and terms; they are not controlled by this project.
 

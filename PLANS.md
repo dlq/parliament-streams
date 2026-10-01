@@ -93,24 +93,25 @@ Done:
 - UK Parliament schedule metadata is implemented through the official What's on
   Calendar API. Parliamentlive.tv playback and Red Bee stream access remain
   separate research questions.
-- The local candidate directory has no unresolved candidates as of 2026-08-19;
-  the two retained candidate files are promoted Netherlands records. The stale
-  Brazil stable-stream regression issue was closed after Brazil was demoted to
-  official link-out.
+- As of 2026-10-01, the local candidate directory contains one researching
+  Czech record and three promoted records (two Netherlands and one Swiss).
+  Brazil native playback was restored after renewed validation on 2026-09-11;
+  its later stable-stream regression issue closed after recovery.
 - `data/fallbacks.json` now records official event, player, broadcaster, and
   provider fallback surfaces separately from permanent channel records. The
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
-- Schema v8 adds compact per-entry validation history. All 101 catalogue entries
-  now link to retained dated health reports, and the public site surfaces the
-  latest retained check in the source detail panel.
+- Schema v8 adds compact per-entry validation history. As of 2026-10-01, 100 of
+  101 catalogue entries link to retained dated health reports, and the public
+  site surfaces the latest retained check in source details. The Swiss National
+  Council still needs a retained report incorporated into that history.
 - Validation-history refresh and drift checking are available through Make and
   the CLI; the drift check is part of `make verify`.
 - The public site now labels each source row as playable, link-out, fallback, or
   research so users can distinguish technical playback from safer official
   routes more quickly.
-- The public site exposes playback policy as its own filter and source-detail
-  field, keeping technical presentation distinct from rights/use guidance.
+- The public site exposes playback policy in source details and sortable Mode
+  markers, separately from rights/use guidance in the Use column.
 - Fallback records now reuse the static schedule snapshot for related entries
   and can show linked current/next event titles, event IDs, status labels, and
   chamber/room labels beside official fallback links when that metadata is
@@ -516,19 +517,19 @@ degraded `always_on` sources fail the routine audit; event-based results remain
 evidence for review without producing expected out-of-session failures.
 
 The European Parliament Next.js endpoint contains a deployment-specific build
-ID and needs periodic maintenance. New Zealand currently returns Radware bot
-protection to the Python client in some environments; the collector records
-that as an error and the page falls back to the catalogue record. Future
-collectors should preserve this partial-success behavior and must not turn
-blocked responses into empty schedules.
+ID and needs periodic maintenance. New Zealand collection now uses the
+working official calendar Azure host after the primary site blocked automated
+clients. The collector still detects bot-protection responses as errors. Future
+collectors should preserve partial-success behavior and must not turn blocked
+responses into empty schedules.
 
 The 2026-08-17 EPG review added Italy's dated WebTV JSON API and Portugal's
 official open-data agenda resolver. It also recorded official schedule or
 agenda surfaces for Denmark, the Netherlands, Spain Canal Parlamento, France,
-Greece, Luxembourg, India, Slovakia, the UK, Australia, and Costa Rica. No
-current schedule source was confirmed for Thailand Parliament TV, Mongolia
-Parliament TV, or Taiwan Parliamentary TV; those three remain explicit research
-gaps rather than links to stale or generic pages.
+Greece, Luxembourg, India, Slovakia, the UK, Australia, and Costa Rica. The
+2026-08-24 follow-up recorded official meeting, timetable, or forecast surfaces
+for Thailand, Mongolia, and Taiwan. Their source-specific parsers remain
+planned; these recorded links do not yet supply collected programme listings.
 
 ### Deferred Locale Work
 
@@ -572,8 +573,9 @@ than a consumer streaming app. Keep the evidence-forward design, but revisit
 whether the product framing is missing a stronger organizing idea after the
 catalogue stabilizes further.
 
-Defer a deliberate UI/UX review until after the next catalogue/data stability
-round, rather than making piecemeal visual changes. Use that review to look at
+A focused responsive-layout and WCAG pass is complete. Defer a broader
+product-direction review until after the next catalogue/data stability round.
+Use that review to look at
 the whole product shape: catalogue discovery, visual hierarchy, schedule
 surfacing, global/regional navigation, and whether the site should start to feel
 more like a channel guide without losing its evidence and rights posture.
@@ -586,8 +588,9 @@ Later review prompts:
    sources, and research-only sources more obvious without overstating rights.
 3. Clarify the trust and verification story: what was checked, when, by which
    method, and what remains uncertain.
-4. Consider a coverage map, regional coverage view, or map/list hybrid if the
-   source list becomes too abstract for readers. Evaluate whether map browsing
+4. Evaluate the existing coverage map and its connection to catalogue browsing.
+   Consider a regional view or map/list hybrid if it improves navigation. Assess
+   whether map browsing
    helps people understand jurisdiction coverage, sub-national clusters, and
    gaps, or whether it adds weight without improving discovery.
 5. Extend the new Now / Next programme guide toward dated agenda browsing only
@@ -657,17 +660,17 @@ Near-term:
    description. Do not equate missing evidence with confirmed unavailability.
 
 Current measurable review queues, last reconciled with the catalogue on
-2026-08-24:
+2026-10-01:
 
 - 38 of 101 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 18 official-vendor HLS, 4 official pages, 5 first-party HLS, and
+  Breakdown: 18 official-vendor HLS, 14 official pages, 5 first-party HLS, and
   1 DASH research record.
 - All 101 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
-  Breakdown: 37 national, 43 sub-national, and 6 supranational entries.
+  Breakdown: 42 national, 53 sub-national, and 6 supranational entries.
   Ontario caption availability and source-dependent sign-language evidence is
   documented across its six feeds; Scottish Parliament TV, Senedd TV, Northern
   Ireland Assembly TV, BC Legislature webcasts, and the three Tweede Kamer
@@ -678,7 +681,7 @@ Current measurable review queues, last reconciled with the catalogue on
   them only when the underlying evidence gaps are actually resolved.
   Current queues: [rights evidence](https://github.com/dlq/parliament-streams/issues/13)
   and [media accessibility evidence](https://github.com/dlq/parliament-streams/issues/14).
-  Current triage snapshot:
+  Dated August triage baseline (predating later promotions):
   [reports/review-queues-2026-08-19.json](reports/review-queues-2026-08-19.json).
 
 ## Research And Advocacy

@@ -17,7 +17,7 @@ Please do not open a public issue for sensitive reports involving:
 
 For now, report sensitive issues privately to the repository owner through
 GitHub. Public broken links, source corrections, schedule metadata issues, and
-endpoint validation notes can use normal GitHub issues once issues are enabled.
+endpoint validation notes can use normal GitHub issues.
 
 Do not test against parliamentary, broadcaster, video-platform, or
 streaming-vendor systems beyond ordinary public access checks. Do not bypass

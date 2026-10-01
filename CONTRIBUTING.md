@@ -82,8 +82,9 @@ feeds, YouTube candidates, removals, reports, audits, and exports.
 
 Python 3.11 and `uv` own catalogue management, schema and business-rule checks,
 site-data generation, scrapers, health checks, tests and coverage, Ruff, and
-mypy. Node.js 24 and npm own HTML validation, Playwright browser behavior, Axe
-accessibility checks, and the optional live deep-browser research tool. `make`
+mypy. Node.js 24 and npm assemble the locked browser libraries and own HTML
+validation, Playwright browser behavior, Axe accessibility checks, and the
+optional live deep-browser research tool. `make`
 provides the shared command entry points. Neither development runtime is
 required by the deployed static site.
 
@@ -101,9 +102,14 @@ The Makefile uses `uv run --locked --extra dev`, so install `uv` first if it is
 not already available. `make verify` validates the JSON catalogue and generated
 site snapshot, checks schema and cross-record contracts, checks Ruff formatting
 and linting, runs strict mypy, compiles Python modules, enforces at least 90%
-branch coverage, validates the HTML, and checks desktop/mobile accessibility
-with Axe and Playwright. After an exceptional manual change to
+coverage with branch measurement enabled, validates the HTML, and checks
+desktop/mobile accessibility with Axe and Playwright. After an exceptional manual change to
 `data/channels.json`, run `make site-data` to refresh the direct-file snapshot.
+
+`npm ci` also generates the ignored local HLS.js/D3 browser assets and their
+license notices from the lockfile. See
+[the vendor asset guide](site/assets/vendor/README.md) before updating those
+dependencies.
 
 Every channel requires an `accessibility` record. Record only what supporting
 evidence establishes; `unknown` is preferable to inferring that captions,
