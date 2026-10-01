@@ -1,7 +1,7 @@
 {
   "schema_version": 9,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-09-11",
+  "generated_on": "2026-10-01",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -279,7 +279,7 @@
       "source_type": "direct_hls",
       "source_kind": "official_vendor_hls",
       "playback_url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
-      "official_url": "https://www.parliament.nz/en/watch-parliament/",
+      "official_url": "https://videos.parliament.nz/",
       "provenance_note": "New Zealand Parliament TV. Attribute the source and link to the official Parliament TV terms.",
       "technical_status": "validated",
       "stability_risk": "medium",
@@ -312,6 +312,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-01T17:58:36Z",
+          "report_path": "reports/health/2026-10-01-new-zealand-official-link.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:36Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -321,13 +328,6 @@
         {
           "checked_at": "2026-08-14T21:28:40Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:45Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2342,11 +2342,11 @@
       "language": "Thai",
       "source_type": "direct_hls",
       "source_kind": "first_party_hls",
-      "playback_url": "https://ch1-live.tpchannel.org/live/channel1.m3u8",
+      "playback_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
       "official_url": "https://tpchannel.org/broadcasts/tv",
-      "provenance_note": "The official TPchannel OTT API advertised Channel 1 and Channel 2 HLS URLs on 2026-09-11, but reported both off-air and both manifests returned HTTP 404. The former permanent tv.m3u8 URL also returned HTTP 404.",
-      "technical_status": "needs_review",
-      "stability_risk": "high",
+      "provenance_note": "On 2026-10-01 the current official TPchannel live player advertised the channel-level tv.m3u8 endpoint again. Its six-variant HLS master, sample variant, advancing live playlist, and MPEG-TS segment validated with normal TLS and permissive CORS. The interim Channel 1 manifest still returned HTTP 404.",
+      "technical_status": "validated",
+      "stability_risk": "medium",
       "availability": "event_based",
       "accessibility": {
         "captions": "unknown",
@@ -2371,9 +2371,16 @@
           "https://tpchannel.org/",
           "https://play.google.com/store/apps/details?id=org.tpchannel.tpchanneltv"
         ],
-        "recommendation": "Keep the replacement manifests research-only until one is validated during an active broadcast, and prefer the official live page until TPchannel publishes reuse terms or grants permission."
+        "recommendation": "Retain visible TPchannel attribution and non-commercial playback under the existing project policy while permission remains pending. The current official player HLS is technically validated, but no source-specific embedding or redistribution terms have been recorded; obtain those terms or permission before broader reuse."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-01T17:58:36Z",
+          "report_path": "reports/health/2026-10-01-thailand-recovery.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
         {
           "checked_at": "2026-09-11T15:03:53Z",
           "report_path": "reports/health/2026-09-11-thailand-stream-regression.json",
@@ -2387,16 +2394,9 @@
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:20Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "native_playback"
     },
     {
       "id": "slovakia-tv-nrsr",
@@ -7153,8 +7153,8 @@
       "source_kind": "official_page",
       "playback_url": null,
       "playback_policy": "link_out",
-      "official_url": "https://www.senate.gov/legislative/floor_activity_pail.htm",
-      "provenance_note": "Official Senate floor webcast and floor-activity surface. It presents the live chamber feed when the Senate is in session and links the current floor schedule.",
+      "official_url": "https://www.senate.gov/floor/",
+      "provenance_note": "The current official Senate Floor Webcast page presents the sitting-aware chamber player and published floor schedule. The October 1 browser audit loaded this page and its date-scoped session media. Direct automated HTTP clients may still receive access-blocked responses; no permanent extracted media endpoint is asserted.",
       "technical_status": "link_only",
       "stability_risk": "medium",
       "availability": "sitting_only",
@@ -7178,12 +7178,19 @@
         "status": "personal_use_pending_review",
         "summary": "The Senate provides an official public floor webcast, but this review did not locate terms authorizing independent replay or redistribution of an underlying stream.",
         "evidence": [
-          "https://www.senate.gov/legislative/floor_activity_pail.htm",
+          "https://www.senate.gov/floor/",
           "https://www.senate.gov/visiting/common/generic/new/watching_congress.htm"
         ],
         "recommendation": "Link to the official webcast and schedule. Treat any media endpoint as event-specific research until reuse permission and stability are documented."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-01T14:38:19Z",
+          "report_path": "reports/health/2026-10-01-senate-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official floor page loaded in Chromium and exposed session-specific media; direct HTTP clients may receive access-blocked responses."
+        },
         {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",

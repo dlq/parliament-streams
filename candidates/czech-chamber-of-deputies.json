@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-01",
+  "updated_on": "2026-10-01",
+  "decision_notes": [
+    "Candidate scaffold created from the October 1 monthly discovery evidence.",
+    "Official Stream 1 page documents direct external-player and third-party iframe use; institutional identity and weekly schedule surface verified on 2026-10-01.",
+    "The discovery browser validated the master and HD rendition earlier on October 1. Later checks reached the master with HTTP 200 and Access-Control-Allow-Origin: *, but all four advertised media/audio renditions (MQ, LQ, HD, audio-only) returned HTTP 404.",
+    "Keep researching and research-only until an active-sitting check verifies playable media; live accessibility remains unknown. The dated follow-up report records this limitation."
+  ],
+  "channel": {
+    "id": "czech-chamber-of-deputies",
+    "name": "Czech Chamber of Deputies Live",
+    "jurisdiction_level": "national",
+    "country_or_region": "Czech Republic",
+    "legislature": "Chamber of Deputies of the Parliament of the Czech Republic",
+    "external_ids": {
+      "wikidata_qid": "Q320265",
+      "ipu_country_code": "CZ",
+      "ipu_parliament_code": "CZ",
+      "ipu_chamber_code": "CZ-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q320265",
+        "checked_on": "2026-10-01",
+        "confidence": "high",
+        "notes": "Matched to the Czech Chamber of Deputies; used for institutional identity only."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/CZ/CZ-LC01/parliamentary-mandate/parliamentary-mandate/",
+        "checked_on": "2026-10-01",
+        "confidence": "high",
+        "notes": "IPU identifies Czechia Chamber of Deputies under CZ-LC01; used for institutional identity only."
+      }
+    ],
+    "language": "Czech",
+    "source_type": "direct_hls",
+    "source_kind": "official_vendor_hls",
+    "playback_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+    "playback_policy": "research_only",
+    "official_url": "https://www.psp.cz/stream/1",
+    "provenance_note": "The official Stream 1 page names Chamber sittings, embeds the CRA player, and explicitly publishes this HTTPS master for use in external applications and online players. The October 1 discovery browser loaded the master and HD rendition. A later same-day check reached the master with CORS enabled but all four advertised media/audio renditions returned HTTP 404; playback still needs an active-sitting recheck.",
+    "technical_status": "needs_review",
+    "stability_risk": "medium",
+    "availability": "sitting_only",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The official accessibility statement says some site recordings lack captions or an audio alternative; the sign-language page describes separate information videos. Neither establishes accessibility of the live chamber feed. Live captions, sign-language interpretation, and audio description remain unknown. Evidence reviewed 2026-10-01: https://www.psp.cz/sqw/hp.sqw?k=32 and https://www.psp.cz/informace-v-ceskem-znakovem-jazyce ."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
+        "method": "GET",
+        "kind": "weekly_parliamentary_programme",
+        "scraper_status": "planned"
+      }
+    ],
+    "permission": {
+      "status": "explicit_reuse_with_conditions",
+      "summary": "The official Stream 1 page explicitly publishes the raw HLS URL for external applications and alternative online players and supplies iframe HTML for embedding on other websites. This supports documented live playback and embedding; it does not establish broader recording, modification, or redistribution rights.",
+      "evidence": [
+        "https://www.psp.cz/stream/1",
+        "https://www.psp.cz/sqw/hp.sqw?k=32"
+      ],
+      "recommendation": "Use the documented HTTPS stream or iframe with clear Chamber attribution and an official source link after playback validation. Review separate terms before recording, modifying, or redistributing proceedings; the website disclaimer retains Office ownership and restricts bulk automated document copying."
+    }
+  }
+}

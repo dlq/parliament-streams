@@ -4,6 +4,36 @@ This is a working research log, not an endorsed stream directory or legal assess
 
 Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `PLANS.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
 
+## 2026-10-01 Scheduled Audit Follow-up
+
+The October 1 daily and monthly reports were reviewed together with live
+follow-up checks. New Zealand's obsolete official viewing URL returned 404;
+the catalogue now links to the Parliament Video service explicitly designated
+by Parliament. The Senate floor link now uses its current official floor page,
+which loaded in the scheduled browser audit despite direct-client access blocks.
+
+Thailand's current official player again selects the recovered `tv.m3u8`
+channel route. Its master and sample child playlist validated, the media
+sequence advanced, and a current MPEG-TS segment was reachable with CORS enabled.
+Native playback is restored under the existing project policy while reuse
+permission remains pending. Retain event-based availability and medium risk
+until a longer observation supports a stronger stability classification.
+
+The ten discovery URLs represented four source groups. Six exact French and
+Senate event URLs now have documented event-specific review decisions; the two
+Thai URLs belong to the repaired catalogue family. The remaining two URLs are
+one Czech Chamber of Deputies candidate. Its official page documents external
+players and embedding, and identity, schedule, and accessibility evidence is
+recorded. All four child playlists returned 404 during the later follow-up, so
+the candidate remains researching and research-only pending an active sitting.
+See [the triage report](reports/discovery/2026-10-01-candidate-triage.md).
+
+CodeQL alert #2 was dismissed as a false positive after independent review:
+the New Zealand parser checks fetched HTML for a bot challenge, not a URL
+allowlist. It neither authorizes requests nor redirects. The existing 29 parser
+and health-check tests passed; the rationale is retained in
+[the CodeQL review](reports/codeql-review-2026-10-01.md).
+
 ## 2026-09-11 Tier 1 And Tier 2 Rescan
 
 The complete maintained discovery inventory rechecked 25 Tier 1 and 46 Tier 2

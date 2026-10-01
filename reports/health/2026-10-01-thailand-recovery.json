@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-01T18:00:06Z",
+  "catalogue": "data/channels.json (recovered endpoint verified before catalogue update)",
+  "timeout_seconds": 20,
+  "retries": 2,
+  "total": 1,
+  "counts": {
+    "ok": 1
+  },
+  "results": [
+    {
+      "id": "thailand-parliament-tv",
+      "source_type": "direct_hls",
+      "source_kind": "first_party_hls",
+      "technical_status": "validated",
+      "availability": "event_based",
+      "stability_risk": "medium",
+      "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "checked_at": "2026-10-01T17:58:36Z",
+      "http_status": 200,
+      "content_type": "application/vnd.apple.mpegurl",
+      "final_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "attempts": 1,
+      "status": "ok",
+      "note": "HLS manifest detected.",
+      "hls_variant_count": 6,
+      "hls_media_playlist_count": 0,
+      "sample_variant": {
+        "url": "https://tv-live.tpchannel.org/live/tv_144p.m3u8?vhost=tv-live.tpchannel.org",
+        "http_status": 200,
+        "content_type": "application/vnd.apple.mpegurl",
+        "final_url": "https://tv-live.tpchannel.org/live/tv_144p.m3u8?vhost=tv-live.tpchannel.org",
+        "attempts": 1,
+        "looks_like_hls": true
+      }
+    }
+  ],
+  "follow_up": {
+    "official_page": {
+      "url": "https://tpchannel.org/broadcasts/tv",
+      "checked_at": "2026-10-01T17:56:32+00:00",
+      "http_status": 200,
+      "final_url": "https://tpchannel.org/broadcasts/tv",
+      "content_type": "text/html; charset=utf-8",
+      "cors": null,
+      "response_bytes": 23093,
+      "body_sha256": "76062df1bbc33cc8635a01a8ceb3bef1c984c063e1265a1ce1fe2387af87b7e8"
+    },
+    "official_player": {
+      "url": "https://tpchannel.org/_next/static/chunks/app/broadcasts/%5Bchannel%5D/page-09c9a75fa06a9905.js",
+      "linked_from": "https://tpchannel.org/broadcasts/tv",
+      "body_sha256": "a7a1c4c86b4a84f3eaa3b04632d0ce71df479e4a84d6edd565607899a7ad133c",
+      "source_configuration": "rc:\"https://tv-live.tpchannel.org/live/tv.m3u8\""
+    },
+    "superseded_endpoint": {
+      "url": "https://ch1-live.tpchannel.org/live/channel1.m3u8",
+      "checked_at": "2026-10-01T17:56:32+00:00",
+      "http_status": 404,
+      "final_url": "https://ch1-live.tpchannel.org/live/channel1.m3u8",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "legacy_ott_api": {
+      "url": "https://ott-apis.tpchannel.org/v1.0/live",
+      "checked_at": "2026-10-01T17:56:32+00:00",
+      "http_status": 200,
+      "final_url": "https://ott-apis.tpchannel.org/v1.0/live",
+      "content_type": "application/json; charset=utf-8",
+      "cors": "*",
+      "response_bytes": 46,
+      "body_sha256": "ca2e44f52cdfb3e032ef02b6c3800a34adbabfe63b29cea3e67889377dab5fe7",
+      "json": {
+        "StatusCode": "0001",
+        "Message": "Unauthorized"
+      }
+    },
+    "media_probe": {
+      "samples": [
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_144p.m3u8?vhost=tv-live.tpchannel.org",
+          "checked_at": "2026-10-01T17:59:56+00:00",
+          "http_status": 200,
+          "cors": "*",
+          "response_bytes": 692,
+          "body_sha256": "51ec79ed53cf5cc8bfcb9546bbfaae9e5afc9a894880c829b6e7184dda75bb3e",
+          "media_sequence": 23558,
+          "segment_count": 3,
+          "is_live": true,
+          "playlist": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-MEDIA-SEQUENCE:23558\n#EXT-X-TARGETDURATION:2\n#EXT-X-PROGRAM-DATE-TIME:2026-10-02T01:59:48.931+08:00\n#EXTINF:2.000,\ntv_144p_1790877588931_2785548554_23558.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org\n#EXT-X-PROGRAM-DATE-TIME:2026-10-02T01:59:50.951+08:00\n#EXTINF:2.000,\ntv_144p_1790877590951_2785548554_23559.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org\n#EXT-X-PROGRAM-DATE-TIME:2026-10-02T01:59:52.930+08:00\n#EXTINF:2.000,\ntv_144p_1790877592930_2785548554_23560.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org\n"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_144p.m3u8?vhost=tv-live.tpchannel.org",
+          "checked_at": "2026-10-01T18:00:06+00:00",
+          "http_status": 200,
+          "cors": "*",
+          "response_bytes": 692,
+          "body_sha256": "5e53936aca6efc44aae8c75d39ff870265640fb3b70ec8bdb6bcc518d458f881",
+          "media_sequence": 23563,
+          "segment_count": 3,
+          "is_live": true,
+          "playlist": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-MEDIA-SEQUENCE:23563\n#EXT-X-TARGETDURATION:2\n#EXT-X-PROGRAM-DATE-TIME:2026-10-02T01:59:58.966+08:00\n#EXTINF:2.000,\ntv_144p_1790877598966_2785548554_23563.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org\n#EXT-X-PROGRAM-DATE-TIME:2026-10-02T02:00:00.963+08:00\n#EXTINF:2.000,\ntv_144p_1790877600963_2785548554_23564.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org\n#EXT-X-PROGRAM-DATE-TIME:2026-10-02T02:00:02.971+08:00\n#EXTINF:2.000,\ntv_144p_1790877602971_2785548554_23565.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org\n"
+        }
+      ],
+      "media_sequence_advanced": true,
+      "segment_probe": {
+        "url": "https://tv-live.tpchannel.org/live/tv_144p_1790877590951_2785548554_23559.ts?ps=1&app=live&stream=tv_144p&vhost=tv-live.tpchannel.org&x_push_domain=tv-push.tpchannel.org",
+        "checked_at": "2026-10-01T17:59:57+00:00",
+        "http_status": 206,
+        "content_type": "video/mp2t",
+        "content_range": "bytes 0-4095/65800",
+        "cors": "*",
+        "sample_bytes": 4096,
+        "sample_sha256": "7b0a06f516b37607e0c44d27cfc6d950be9955c960e743b7367fc853c33b7f0f",
+        "mpeg_ts_sync_detected": true
+      }
+    },
+    "decision": {
+      "playback_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "technical_status": "validated",
+      "playback_policy": "native_playback",
+      "availability": "event_based",
+      "stability_risk": "medium",
+      "permission_status": "personal_use_pending_review",
+      "reason": "The current official player uses this endpoint and the live master, variant, advancing playlist, and MPEG-TS segment all validated with normal TLS and permissive CORS. Restore technically validated native playback under the existing project policy; retain pending rights. A short recovery check does not establish uninterrupted always-on availability or low regression risk."
+    }
+  }
+}

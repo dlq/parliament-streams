@@ -1,6 +1,6 @@
 {
   "decision_version": 1,
-  "updated_on": "2026-08-17",
+  "updated_on": "2026-10-01",
   "description": "Durable review outcomes for validated manifests that should not be promoted as parliamentary catalogue playback endpoints.",
   "decisions": [
     {
@@ -50,6 +50,76 @@
       "reviewed_on": "2026-08-17",
       "reason": "The manifest contains a timestamped HouseLive event identifier and is not a stable reusable floor-stream endpoint. Stable official House and Senate watch pages are catalogued instead.",
       "evidence": ["https://live.house.gov/", "https://www.house.gov/watch-houselive"]
+    },
+    {
+      "country": "France",
+      "url": "https://anorigin.vodalys.com/live/live36/index36_19478557.m3u8?DVR",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-01",
+      "reason": "The official live page redirected to event 19478557 on October 1, 2026; this master, mirror, or rendition shares that event identifier. It is event playback evidence for the existing France record, not a permanent channel endpoint. The vendor master returned HTTP 404 later the same day.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.19478557_6abe55d3d75f4",
+        "https://videos.assemblee-nationale.fr/direct.php",
+        "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19478557.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-01",
+      "reason": "The official live page redirected to event 19478557 on October 1, 2026; this master, mirror, or rendition shares that event identifier. It is event playback evidence for the existing France record, not a permanent channel endpoint. The vendor master returned HTTP 404 later the same day.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.19478557_6abe55d3d75f4",
+        "https://videos.assemblee-nationale.fr/direct.php",
+        "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19478557.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-01",
+      "reason": "The official live page redirected to event 19478557 on October 1, 2026; this master, mirror, or rendition shares that event identifier. It is event playback evidence for the existing France record, not a permanent channel endpoint. The vendor master returned HTTP 404 later the same day.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.19478557_6abe55d3d75f4",
+        "https://videos.assemblee-nationale.fr/direct.php",
+        "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19478557.m3u8?DVR",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-01",
+      "reason": "The official live page redirected to event 19478557 on October 1, 2026; this master, mirror, or rendition shares that event identifier. It is event playback evidence for the existing France record, not a permanent channel endpoint. The vendor master returned HTTP 404 later the same day.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.19478557_6abe55d3d75f4",
+        "https://videos.assemblee-nationale.fr/direct.php",
+        "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
+    },
+    {
+      "country": "United States",
+      "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-01",
+      "reason": "The official Senate floor player loaded this master or rendition under the date-scoped stv100126 session path on October 1, 2026. Its master advertised the child playlist, but that child returned HTTP 404 later the same day. Keep the stable official floor page as the catalogue link-out instead of treating this session URL as a permanent channel.",
+      "evidence": [
+        "https://www.senate.gov/floor/",
+        "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
+    },
+    {
+      "country": "United States",
+      "url": "https://www-senate-gov-media-srs.akamaized.net/hls/live/2096634/stv/stv100126/master/index_1.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-01",
+      "reason": "The official Senate floor player loaded this master or rendition under the date-scoped stv100126 session path on October 1, 2026. Its master advertised the child playlist, but that child returned HTTP 404 later the same day. Keep the stable official floor page as the catalogue link-out instead of treating this session URL as a permanent channel.",
+      "evidence": [
+        "https://www.senate.gov/floor/",
+        "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
     }
   ]
 }

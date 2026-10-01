@@ -60,9 +60,10 @@ Done:
   generated site data, enforce Ruff formatting and linting, run strict mypy and
   branch coverage, validate HTML, and exercise desktop/mobile accessibility
   with Axe and Playwright.
-- `site/` provides a build-free GitHub Pages catalogue driven by the canonical
+- `site/` provides a static GitHub Pages catalogue driven by the canonical
   JSON data, with client-side playback for eligible validated direct endpoints
-  and official provider embeds.
+  and official provider embeds. Locked npm dependencies generate the local
+  HLS.js and D3 browser assets during installation.
 - The 2026-08-24 channel-information and EPG reports record the latest complete
   catalogue metadata and schedule-source audits.
 - Schema v5 records Wikidata QIDs for all catalogue institutions and IPU
@@ -118,6 +119,11 @@ Done:
   candidates and official research roots for all 50 state legislatures. Nine
   states have verified official video surfaces and are prioritized for deep
   player, schedule, accessibility, and rights research.
+- The 2026-10-01 scheduled-audit follow-up repaired the New Zealand and U.S.
+  Senate official links, restored technically validated Thailand playback,
+  and recorded six exact France/Senate event-manifest decisions. One Czech
+  Chamber of Deputies candidate remains researching because the documented
+  master is reachable but its child playlists returned 404 during follow-up.
 
 Retired from the active project:
 
@@ -408,10 +414,11 @@ Tier 1/Tier 2 candidate queue.
 
 Staged approach:
 
-1. Keep the Tier 1/Tier 2 candidate queue clear. As of 2026-08-19 there is no
-   open candidate-review GitHub issue and no unresolved local candidate file;
-   next discovery work should focus on the nine Tier 1 countries without a
-   national-level catalogue entry.
+1. Review the Czech Chamber of Deputies candidate from the 2026-10-01 discovery
+   pass during an active sitting. Official player and embedding instructions,
+   identity, and schedule evidence are documented, but playable media still
+   needs confirmation. Keep the remaining Tier 1 national gaps as the next
+   discovery priority.
 2. Improve official-player, event-based, and supported YouTube discovery before
    relying on direct-manifest discovery in lower-yield countries.
 3. Add a canonical, schema-validated Tier 3 discovery watchlist without treating
