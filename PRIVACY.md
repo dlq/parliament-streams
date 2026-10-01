@@ -5,9 +5,10 @@ catalogue. It does not operate user accounts, analytics, telemetry, push
 notifications, a server-side stream proxy, or a sync backend.
 
 The static page is served by GitHub Pages. It loads the catalogue JSON from the
-same published repository and, when a visitor chooses playback, may load
-`hls.js` from jsDelivr and request a selected source's public stream directly.
-GitHub, jsDelivr, and the selected source may apply their own logging, cookies,
+same published repository. HLS.js and D3 are served from that same origin.
+When a visitor chooses playback, the page may request a selected source's
+public stream or official provider embed directly.
+GitHub and the selected source may apply their own logging, cookies,
 geolocation rules, and terms; they are not controlled by this project.
 
 The tracked repository contains public source URLs, official page URLs,

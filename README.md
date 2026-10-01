@@ -21,7 +21,7 @@ This project has three moving parts:
 
 - a canonical catalogue in `data/channels.json`;
 - Python tools that validate, update, audit, and enrich that catalogue; and
-- a build-free static site in `site/` that presents the catalogue on GitHub
+- a static site in `site/` that presents the catalogue on GitHub
   Pages.
 
 There is no backend, stream proxy, user tracking, or rebroadcast service. The
@@ -40,6 +40,7 @@ make verify
 For a quicker orientation without installing everything:
 
 ```sh
+npm ci
 python3 -m json.tool data/channels.json >/dev/null
 python3 -m http.server 8000
 ```
@@ -52,7 +53,7 @@ before editing source records.
 
 ## What Is Here
 
-- `site/`: build-free catalogue, coverage-map, and programme-guide interfaces
+- `site/`: static catalogue, coverage-map, and programme-guide interfaces
   for GitHub Pages. They load the published `data/channels.json` and
   `data/fallbacks.json` artifacts
   directly; no application backend, user accounts, analytics, or server-side
@@ -194,9 +195,13 @@ This is an opt-out research posture: the absence of recorded affirmative
 permission is not represented as a licence or other grant of rights. Direct
 endpoints with `no_third_party_reuse` remain `link_out`, and direct endpoints
 kept for unresolved DASH or technical research remain `research_only`. HLS playback uses the
-browser's native support where available and loads pinned `hls.js` in the
-browser for compatible non-Safari browsers; this is client-side code only, not
-a backend or proxy.
+browser's native support where available and lazily loads the local `hls.js`
+asset for compatible non-Safari browsers. `npm ci` prepares HLS.js and D3 from
+the locked npm dependencies, including D3's installed submodules. Dependabot
+updates therefore reach the published assets without manual file copies or CDN
+pins. This is client-side code only, not a backend or proxy. See
+[the vendor asset workflow](site/assets/vendor/README.md) for regeneration and
+license details.
 
 For the current proof of concept, technically public HLS is treated as
 sufficient for native client-side playback unless recorded rights evidence
@@ -253,7 +258,8 @@ manifests, and retain that report for 90 days. Only newly degraded `always_on`
 streams fail the workflow; event-based feeds remain recorded without generating
 routine failures when a legislature is not sitting.
 
-For a quick local preview, open `site/index.html` directly. The checked-in
+For a quick local preview, run `npm ci` once to prepare the browser libraries,
+then open `site/index.html` directly. The checked-in
 `site/catalogue-data.js` snapshot allows the page to work without a local
 server. It is generated from the canonical JSON and checked for drift by CI.
 YouTube does not permit iframe playback from a `file://` page because it has no

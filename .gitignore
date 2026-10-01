@@ -33,6 +33,10 @@ __pycache__/
 .uv-cache/
 .venv/
 node_modules/
+site/assets/vendor/d3.min.js
+site/assets/vendor/hls.min.js
+site/assets/vendor/vendor-assets.js
+site/assets/vendor/LICENSES.txt
 playwright-report/
 test-results/
 data/schedules.json

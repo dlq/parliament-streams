@@ -982,14 +982,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   if (startPlayer && allowed) startPlayback(channel);
 }
 function loadHlsLibrary() {
-  if (window.Hls) return Promise.resolve();
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js";
-    script.onload = resolve;
-    script.onerror = () => reject(new Error("Unable to load the HLS playback library."));
-    document.head.append(script);
-  });
+  return window.ParliamentStreamsVendor.load("hls");
 }
 async function startPlayback(channel) {
   const frame = document.querySelector("#media-frame");
