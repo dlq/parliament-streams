@@ -10,6 +10,8 @@ from datetime import date
 from pathlib import Path
 from typing import cast
 
+from jsonschema import Draft202012Validator, FormatChecker
+
 from .catalogue import (
     DEFAULT_CATALOGUE_PATH,
     DEFAULT_FALLBACKS_PATH,
@@ -20,6 +22,7 @@ from .catalogue import (
 )
 from .epg_audit import audit_epg_sources
 from .healthcheck import DEFAULT_RETRIES, DEFAULT_TIMEOUT_SECONDS, run_healthcheck
+from .iptv import write_iptv_exports
 from .link_audit import audit_catalogue_links
 from .management import (
     CatalogueStore,
@@ -50,7 +53,9 @@ from .schedule_collection import (
 )
 from .site_data import DEFAULT_SITE_DATA_PATH
 from .validation import (
+    DEFAULT_SCHEMA_PATH,
     CatalogueValidationError,
+    load_schema,
     require_valid_candidate,
     validate_candidate,
     validate_catalogue,
@@ -288,6 +293,24 @@ def _cmd_export(args: argparse.Namespace) -> int:
             export_csv(catalogue, handle)
     else:
         export_csv(catalogue, sys.stdout)
+    return 0
+
+
+def _cmd_iptv_export(args: argparse.Namespace) -> int:
+    catalogue = load_catalogue(args.catalogue)
+    issues = validate_catalogue(catalogue)
+    if issues:
+        raise ValueError("Invalid catalogue: " + "; ".join(issue.render() for issue in issues))
+    snapshot = cast(ScheduleSnapshot, load_json_object(args.schedules))
+    errors = list(
+        Draft202012Validator(
+            load_schema(DEFAULT_SCHEMA_PATH.with_name("schedules.schema.json")),
+            format_checker=FormatChecker(),
+        ).iter_errors(snapshot)
+    )
+    if errors:
+        raise ValueError("Invalid schedule snapshot: " + errors[0].message)
+    _write_json_stdout(write_iptv_exports(catalogue, snapshot, args.output_dir, args.epg_url))
     return 0
 
 
@@ -534,6 +557,12 @@ def build_parser() -> argparse.ArgumentParser:
     export_parser = commands.add_parser("export", help="Export a flattened CSV catalogue.")
     export_parser.add_argument("--output", type=Path)
     export_parser.set_defaults(handler=_cmd_export)
+
+    iptv_parser = commands.add_parser("iptv-export", help="Export HLS playlists and XMLTV EPG.")
+    iptv_parser.add_argument("--schedules", type=Path, default=Path("data/schedules.json"))
+    iptv_parser.add_argument("--output-dir", type=Path, default=Path("_site/data"))
+    iptv_parser.add_argument("--epg-url", default="https://dlq.ca/parliament-streams/data/epg.xml")
+    iptv_parser.set_defaults(handler=_cmd_iptv_export)
 
     schedules_collect = commands.add_parser(
         "schedules-collect", help="Fetch and normalize implemented schedule sources."

@@ -479,6 +479,49 @@ regenerates the static site data snapshot. The check target fails if the
 catalogue's compact validation-history references no longer match retained
 `reports/health/` artifacts; it is included in `make verify`.
 
+## IPTV playlists and XMLTV
+
+Pages generates IPTV exports after each six-hourly schedule collection:
+
+- `data/stable-hls.m3u8`: validated, native-playback HLS with low/medium risk
+  and `always_on` availability. Currently four channels: Brazil TV Camara,
+  Hellenic Parliament TV, and both Sansad TV channels.
+- `data/validated-hls.m3u8`: the same eligibility rules with sitting-only and
+  event-based sources included. These feeds may be off-air outside proceedings;
+  catalogue validation is retained evidence, not a fresh playback guarantee.
+- `data/epg.xml`: XMLTV guide data with catalogue IDs matching playlist `tvg-id`
+  values. Set this separately as the EPG URL if an app ignores `url-tvg`.
+
+Use the published site root `https://dlq.ca/parliament-streams/` followed by
+the paths above. `.m3u8` here is a UTF-8 channel list, not an HLS media manifest.
+These exports link directly to the original streams under the same playback
+policy as the site; CPAC, prohibited/embed-only sources, DASH, YouTube, and
+research-only records are excluded from the playlists. Pending rights remain
+pending, and no recording or catch-up permission is asserted.
+
+The guide exports only events with valid timezone-aware start and end times.
+It does not invent end times, fill gaps with placeholder programmes, or turn
+meeting agendas into guaranteed broadcast schedules. Cancelled, incomplete,
+or invalid events are omitted. Bounded retained schedules are labelled in the
+programme description. Channel metadata covers the full catalogue, including
+official link-out services; guide availability does not imply IPTV playback.
+Official HTML/JSON/calendar URLs in `epg_sources` are research inputs, not
+generally importable IPTV guide URLs.
+
+Generate local files from a collected schedule snapshot:
+
+```sh
+uv run parliament-streams iptv-export \
+  --schedules data/schedules.json \
+  --output-dir /tmp/parliament-iptv \
+  --epg-url https://dlq.ca/parliament-streams/data/epg.xml
+```
+
+The command reports playlist counts, exported programmes, and omitted events.
+The file formats follow the
+[Kodi IPTV playlist conventions](https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md)
+and [XMLTV format](https://github.com/XMLTV/xmltv/blob/master/xmltv.dtd).
+
 ## Verify
 
 Development uses two deliberately separate toolchains:

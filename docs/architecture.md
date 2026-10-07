@@ -51,6 +51,12 @@ Do not edit it independently; run
 `data/schedules.json` is a local generated now/next snapshot and is ignored by
 Git. GitHub Pages generates its own schedule snapshot during deployment.
 
+After collection, `iptv-export` generates two extended-M3U HLS channel lists
+and an XMLTV guide in the Pages artifact. The strict list selects lower-risk,
+validated, native-playback, always-on HLS; the broader list also includes
+sitting-dependent feeds. XMLTV exports complete start/end timestamps without
+inferring durations, with channel IDs shared by catalogue and playlists.
+
 `data/fallbacks.json` records official event platforms, live pages, broadcaster
 pages, and provider-managed embeds that can support link-out or fallback UI
 without claiming a stable direct stream. It is validated separately from the
