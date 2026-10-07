@@ -506,6 +506,67 @@ events for at most 24 hours when a source fails. Per-source consecutive failure
 counts are also consumed by the daily audit, which opens a deduplicated issue
 after three failed runs and closes it after recovery.
 
+Since 2026-10-07, Pages also generates `data/stable-hls.m3u8`,
+`data/validated-hls.m3u8`, and `data/epg.xml` after schedule collection. The
+playlists respect catalogue playback eligibility; XMLTV currently exports only
+positive start/end ranges. Format validation does not establish that a listing
+accurately describes the programme on a particular stream.
+
+### Deferred Schedule Quality And IPTV Guide Work
+
+Recorded on 2026-10-07 for later implementation. Prioritize this work before
+expanding scraper coverage; no new collection or monitoring is scheduled by
+this plan.
+
+The 2026-10-07 15:59:12 UTC published snapshot contained 373 events across ten
+catalogue entries. Only 156 had positive start/end ranges. Eight EBS entries
+had identical start and end times; the European Parliament directory contained
+298 overlapping event pairs under one catalogue entry. Parallel institutional
+events can legitimately overlap, but they do not constitute one linear TV
+channel's programme guide. Brazil and CPAC currently infer programme ends from
+the next listing's start. These are dated diagnostic findings, not permanent
+source-quality counts or independently confirmed broadcast inaccuracies.
+
+Implement in this order:
+
+1. Separate broadcast schedules, event-specific stream schedules, and
+   institutional meeting agendas. Record each source's intended scope and map
+   events to a confirmed feed, chamber, or room. Keep aggregated event
+   directories out of a single IPTV channel's guide until that mapping is
+   established. Review European Parliament aggregation first; do not infer
+   broadcast coverage merely from an official meeting calendar.
+2. Preserve time provenance: official start/end timestamps, source dates and
+   timezones, inferred dates, and ends inferred from the next listing. Make
+   inference visible and give XMLTV an explicit eligibility policy. Test source
+   date selection, midnight rollover, daylight-saving transitions, and unknown
+   durations without manufacturing programme times.
+3. Add a schedule-quality audit before publication. Check positive durations,
+   unexpected overlaps for linear feeds, duplicate identities, channel mapping,
+   timestamp/status consistency, stale events, field completeness, and abrupt
+   changes in coverage. Treat missing EBS durations as unknown rather than
+   zero-length programmes. Distinguish a confirmed empty schedule from parser
+   markup drift or an unrecognized response, using source-specific checks that
+   account for recesses and off-session periods. Quarantine invalid records,
+   preserve valid partial results, and report omission reasons.
+4. Retain bounded public response samples, response metadata, retrieval times,
+   content hashes, and parser versions in Actions artifacts. Avoid credentials
+   or private browser state. Compare successive runs by source for event count,
+   usable time ranges, upcoming coverage, and silent drops; alert on meaningful
+   quality regressions as well as fetch failures. Retain the existing bounded
+   stale fallback and identify it explicitly in guide data.
+5. Expand parser fixtures and source reconciliation checks. Cover cancellations,
+   postponements, rescheduling, overnight programmes, parallel rooms, empty
+   off-session pages, missing durations, and changed markup. Periodically compare
+   sampled output with official programme pages and players, including whether
+   a scheduled meeting actually maps to the recorded broadcast feed. Validate
+   M3U/XMLTV identifiers and try the exports in an IPTV client.
+
+The first implementation milestone is the quality audit plus EBS duration and
+European Parliament channel-mapping corrections. Then improve complete guide
+data for playable feeds, starting with Brazil's date/inferred-end handling and
+official schedules for Greece and the Sansad TV channels. More programme rows
+or a successful HTTP response alone must not count as improved guide quality.
+
 ### Scheduled Catalogue Audits
 
 GitHub Actions audits the complete catalogue daily. The retained artifact
