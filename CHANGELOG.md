@@ -4,7 +4,16 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-10-01
+## Unreleased - 2026-10-07
+
+### Added
+
+- Automated extended-M3U exports for always-on and broader validated HLS
+  sources, plus XMLTV guide conversion with matching catalogue IDs. Pages
+  regenerates them after schedule collection; incomplete programme times are
+  omitted rather than inferred, and playlist selection respects playback policy.
+
+## Earlier unreleased work through 2026-10-01
 
 ### Added
 

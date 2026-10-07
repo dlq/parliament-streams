@@ -77,6 +77,12 @@ jobs:
           --previous .schedule-baseline/schedules.json
           --stale-ttl-hours 24
           --minimum-successful-sources 1
+      - name: Export IPTV playlists and XMLTV guide
+        run: >-
+          uv run --locked parliament-streams iptv-export
+          --schedules _site/data/schedules.json
+          --output-dir _site/data
+          --epg-url https://dlq.ca/parliament-streams/data/epg.xml
       - name: Preserve the schedule snapshot
         run: |
           mkdir -p .schedule-baseline
