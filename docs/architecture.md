@@ -52,10 +52,17 @@ Do not edit it independently; run
 Git. GitHub Pages generates its own schedule snapshot during deployment.
 
 After collection, `iptv-export` generates two extended-M3U HLS channel lists
-and an XMLTV guide in the Pages artifact. The strict list selects lower-risk,
+and an XMLTV guide in the Pages artifact. `schedule_quality.py` applies an
+explicit source-to-feed allowlist, rejects conflicting or invalid time ranges,
+and supplies the same decisions to the XMLTV writer and `epg-quality.json`.
+Parallel event directories, including European Parliament, remain website
+metadata rather than one fictional linear channel. The strict list selects lower-risk,
 validated, native-playback, always-on HLS; the broader list also includes
 sitting-dependent feeds. XMLTV exports complete start/end timestamps without
-inferring durations, with channel IDs shared by catalogue and playlists.
+adding durations in the exporter, with channel IDs shared by catalogue and
+playlists. Parser-level inferred ends and assumed dates carry explicit
+provenance and are disclosed in XMLTV descriptions. Daily audits also retain
+the quality report without failing the entire collection for partial coverage.
 
 `data/fallbacks.json` records official event platforms, live pages, broadcaster
 pages, and provider-managed embeds that can support link-out or fallback UI

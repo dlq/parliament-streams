@@ -83,6 +83,12 @@ jobs:
           --schedules _site/data/schedules.json
           --output-dir _site/data
           --epg-url https://dlq.ca/parliament-streams/data/epg.xml
+      - name: Summarize guide quality
+        run: |
+          {
+            echo "## IPTV guide quality"
+            jq -r '.counts | to_entries[] | "- \(.key): \(.value)"' _site/data/epg-quality.json
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve the schedule snapshot
         run: |
           mkdir -p .schedule-baseline

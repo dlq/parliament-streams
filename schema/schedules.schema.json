@@ -110,7 +110,9 @@
         "url": { "type": "string", "format": "uri" },
         "location": { "type": "string", "minLength": 1 },
         "language": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$" },
-        "source_timezone": { "type": "string", "minLength": 1 }
+        "source_timezone": { "type": "string", "minLength": 1 },
+        "start_basis": { "enum": ["source", "collection_date"] },
+        "end_basis": { "enum": ["source", "next_listing_start"] }
       }
     },
     "source": {

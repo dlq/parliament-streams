@@ -62,12 +62,20 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
             title = _title(program)
             if not start or not title:
                 continue
-            duration = max(0, int(program.get("duration", 0)))
-            end = start + timedelta(seconds=duration)
-            events.append({"start": start, "end": end, "title": title})
+            try:
+                duration = int(program.get("duration") or 0)
+            except (ValueError, TypeError):
+                duration = 0
+            event: ScheduleEvent = {"start": start, "title": title}
+            if duration > 0:
+                event["end"] = start + timedelta(seconds=duration)
+            events.append(event)
     events.sort(key=lambda event: event["start"])
 
-    current = next((event for event in events if event["start"] <= now <= event["end"]), None)
+    current = next(
+        (event for event in events if event.get("end") and event["start"] <= now < event["end"]),
+        None,
+    )
     upcoming = next((event for event in events if event["start"] > now), None)
     if not current and not upcoming:
         return {}

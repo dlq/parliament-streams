@@ -2,12 +2,19 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+import json
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
 from .models import Catalogue, ChannelRecord
 from .schedule_collection import ScheduleSnapshot
+from .schedule_quality import (
+    LINEAR_CHANNELS,
+    ScheduleAssessment,
+    assess_schedules,
+    parsed_time,
+    time_provenance,
+)
 
 
 def _line(value: str) -> str:
@@ -51,18 +58,20 @@ def render_playlist(channels: list[ChannelRecord], epg_url: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _timestamp(value: str) -> datetime:
-    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    if parsed.tzinfo is None:
-        raise ValueError("XMLTV requires timezone-aware schedule timestamps")
-    return parsed.astimezone(UTC)
-
-
-def render_xmltv(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> tuple[bytes, int, int]:
-    """Export complete event times; never invent durations for parliamentary agendas."""
+def render_xmltv(
+    catalogue: Catalogue, snapshot: ScheduleSnapshot, assessment: ScheduleAssessment | None = None
+) -> tuple[bytes, int, int]:
+    """Export reviewed feed schedules with positive, non-conflicting time ranges."""
+    assessment = assessment or assess_schedules(catalogue, snapshot)
     root = ET.Element("tv", {"generator-info-name": "Parliament Streams"})
-    exported = skipped = 0
-    channels = sorted(catalogue["channels"], key=lambda channel: channel["id"])
+    exported = 0
+    skipped = assessment.report["counts"]["excluded"]
+    ids = {channel["id"] for channel in hls_channels(catalogue, include_event_based=True)}
+    ids.update(channel_id for mapped in LINEAR_CHANNELS.values() for channel_id in mapped)
+    channels = sorted(
+        (channel for channel in catalogue["channels"] if channel["id"] in ids),
+        key=lambda channel: channel["id"],
+    )
     for channel in channels:
         node = ET.SubElement(root, "channel", {"id": channel["id"]})
         ET.SubElement(node, "display-name").text = channel["name"]
@@ -71,21 +80,9 @@ def render_xmltv(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> tuple[byte
         schedule = snapshot["channels"].get(channel["id"])
         if not schedule:
             continue
-        seen: set[tuple[str, str, str]] = set()
-        for event in schedule.get("events", []):
-            try:
-                start = _timestamp(event["start"])
-                end = _timestamp(event["end"])
-                title = event["title"].strip()
-                if end <= start or not title or event["status"] == "cancelled":
-                    raise ValueError("Incomplete or cancelled event")
-            except (KeyError, ValueError):
-                skipped += 1
-                continue
-            key = (start.isoformat(), end.isoformat(), title)
-            if key in seen:
-                continue
-            seen.add(key)
+        for event in assessment.approved.get(channel["id"], []):
+            start, end = parsed_time(event["start"]), parsed_time(event["end"])
+            title = event["title"].strip()
             node = ET.SubElement(
                 root,
                 "programme",
@@ -96,8 +93,16 @@ def render_xmltv(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> tuple[byte
                 },
             )
             ET.SubElement(node, "title").text = title
+            notes = []
+            start_basis, end_basis = time_provenance(event, schedule["scraper"])
             if schedule.get("stale"):
-                ET.SubElement(node, "desc").text = "Retained schedule; source refresh failed."
+                notes.append("Retained schedule; source refresh failed.")
+            if start_basis == "collection_date":
+                notes.append("Programme date assumed from collection date.")
+            if end_basis == "next_listing_start":
+                notes.append("End time inferred from the next programme listing.")
+            if notes:
+                ET.SubElement(node, "desc").text = " ".join(notes)
             if event.get("url"):
                 ET.SubElement(node, "url").text = event["url"]
             exported += 1
@@ -111,13 +116,17 @@ def write_iptv_exports(
     """Write static outputs beside the deployed schedule snapshot."""
     stable = hls_channels(catalogue)
     validated = hls_channels(catalogue, include_event_based=True)
-    xml, programmes, skipped = render_xmltv(catalogue, snapshot)
+    assessment = assess_schedules(catalogue, snapshot)
+    xml, programmes, skipped = render_xmltv(catalogue, snapshot, assessment)
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "stable-hls.m3u8").write_text(render_playlist(stable, epg_url), encoding="utf-8")
     (output_dir / "validated-hls.m3u8").write_text(
         render_playlist(validated, epg_url), encoding="utf-8"
     )
     (output_dir / "epg.xml").write_bytes(xml)
+    (output_dir / "epg-quality.json").write_text(
+        json.dumps(assessment.report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     return {
         "stable_channels": len(stable),
         "validated_channels": len(validated),

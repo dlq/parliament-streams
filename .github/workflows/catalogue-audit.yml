@@ -160,6 +160,12 @@ jobs:
             --minimum-successful-sources 1 \
             --output reports/automated/schedules.json
 
+      - name: Audit schedule quality and linear guide eligibility
+        run: >-
+          uv run --locked parliament-streams schedules-audit
+          --schedules reports/automated/schedules.json
+          --output reports/automated/schedule-quality.json
+
       - name: Update repeated schedule-source failure issues
         if: always() && hashFiles('reports/automated/schedules.json') != ''
         env:
@@ -226,6 +232,7 @@ jobs:
             [[ -f reports/automated/epg-audit.json ]] && jq -r '"Schedule endpoints: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/epg-audit.json
             [[ -f reports/automated/links-audit.json ]] && jq -r '"Supporting links: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/links-audit.json
             [[ -f reports/automated/schedules.json ]] && jq -r '"Parsed schedules: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/schedules.json
+            [[ -f reports/automated/schedule-quality.json ]] && jq -r '"Schedule quality: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/schedule-quality.json
             [[ -f reports/automated/stable-health-diff.json ]] && jq -r '"Stable-stream regressions: \(.regressions | length); recoveries: \(.recoveries | length)"' reports/automated/stable-health-diff.json
             [[ -f reports/automated/catalogue-health.json ]] && jq -r '"High-risk source results: " + ([.results[] | select(.stability_risk == "high") | .status] | group_by(.) | map("\(.[0])=\(length)") | join(", "))' reports/automated/catalogue-health.json
           } >> "$GITHUB_STEP_SUMMARY"
