@@ -491,6 +491,8 @@ Pages generates IPTV exports after each six-hourly schedule collection:
   catalogue validation is retained evidence, not a fresh playback guarantee.
 - `data/epg.xml`: XMLTV guide data with catalogue IDs matching playlist `tvg-id`
   values. Set this separately as the EPG URL if an app ignores `url-tvg`.
+- `data/epg-quality.json`: per-channel source scope, guide eligibility, overlap
+  counts, time-provenance counts, and event-level XMLTV exclusion reasons.
 
 Use the published site root `https://dlq.ca/parliament-streams/` followed by
 the paths above. `.m3u8` here is a UTF-8 channel list, not an HLS media manifest.
@@ -499,12 +501,26 @@ policy as the site; CPAC, prohibited/embed-only sources, DASH, YouTube, and
 research-only records are excluded from the playlists. Pending rights remain
 pending, and no recording or catch-up permission is asserted.
 
-The guide exports only events with valid timezone-aware start and end times.
-It does not invent end times, fill gaps with placeholder programmes, or turn
-meeting agendas into guaranteed broadcast schedules. Cancelled, incomplete,
-or invalid events are omitted. Bounded retained schedules are labelled in the
-programme description. Channel metadata covers the full catalogue, including
-official link-out services; guide availability does not imply IPTV playback.
+The guide requires a reviewed mapping from the schedule source to a particular
+broadcast feed, plus valid timezone-aware start/end times. The reviewed sources
+are Brazil TV Camara, CPAC, EBS, and the Italian Senate palimpsest. Other sources
+default to excluded until their feed mapping is reviewed. European Parliament's
+parallel event directory remains in the website schedule JSON, with room labels,
+but is not exported as a single XMLTV channel. Institutional agendas and other
+event directories likewise remain available to the website.
+
+Cancelled, incomplete, duplicate, invalid, and conflicting linear-feed events
+are omitted. Every programme involved in an overlap is excluded; no programme
+is arbitrarily chosen to represent that timeslot. Channel definitions cover
+playlist entries and reviewed broadcast feeds, including CPAC/EBS metadata;
+guide availability does not imply IPTV playback rights.
+
+Brazil and CPAC infer end times from the next listing; Brazil currently assumes
+the programme date from the collection date. These assumptions are recorded as
+`end_basis`/`start_basis` in schedule JSON and disclosed in XMLTV descriptions.
+Legacy cached records from those parsers receive the same disclosures. Missing
+or nonpositive EBS durations remain unknown instead of creating zero-length
+programmes. Bounded retained schedules are also labelled in descriptions.
 Official HTML/JSON/calendar URLs in `epg_sources` are research inputs, not
 generally importable IPTV guide URLs.
 
@@ -518,6 +534,19 @@ uv run parliament-streams iptv-export \
 ```
 
 The command reports playlist counts, exported programmes, and omitted events.
+The quality report's exclusion counts may overlap when one event has multiple
+problems. Audit a snapshot independently with:
+
+```sh
+uv run parliament-streams schedules-audit \
+  --schedules data/schedules.json \
+  --output /tmp/parliament-schedule-quality.json
+```
+
+Daily catalogue audits retain this report as an Actions artifact. Pages writes
+the report alongside XMLTV and summarizes its counts in the deployment run.
+Publication preserves valid partial results; a green workflow is not a claim
+that all sources have complete or independently verified guide data.
 The file formats follow the
 [Kodi IPTV playlist conventions](https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md)
 and [XMLTV format](https://github.com/XMLTV/xmltv/blob/master/xmltv.dtd).

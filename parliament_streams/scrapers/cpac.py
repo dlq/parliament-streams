@@ -45,6 +45,7 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         return {}
     for entry, following in zip(entries, entries[1:], strict=False):
         entry["end"] = following["start"]
+        entry["end_basis"] = "next_listing_start"
 
     current = next((entry for entry in reversed(entries) if entry["start"] <= now), None)
     next_entry = next((entry for entry in entries if entry["start"] > now), None)

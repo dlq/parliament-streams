@@ -512,11 +512,30 @@ playlists respect catalogue playback eligibility; XMLTV currently exports only
 positive start/end ranges. Format validation does not establish that a listing
 accurately describes the programme on a particular stream.
 
-### Deferred Schedule Quality And IPTV Guide Work
+### Schedule Quality And IPTV Guide Work
 
-Recorded on 2026-10-07 for later implementation. Prioritize this work before
-expanding scraper coverage; no new collection or monitoring is scheduled by
-this plan.
+Recorded on 2026-10-07; implementation started on 2026-10-14. Prioritize this
+work before expanding scraper coverage.
+
+First milestone implemented on 2026-10-14:
+
+- Explicit broadcast-feed mappings now gate XMLTV. European Parliament's
+  parallel events stay in website data, with structured room labels, and no
+  longer appear as one XMLTV channel. Other institutional agendas and
+  unreviewed mappings are excluded from linear guide publication.
+- A shared quality audit and exporter quarantine invalid/nonpositive ranges,
+  cancellations, duplicates, and all conflicting linear-feed events. The
+  published `epg-quality.json` includes scope, counts, and exclusion reasons;
+  daily Actions retain the same assessment and Pages summarizes it.
+- Missing or nonpositive EBS durations now remain unknown rather than becoming
+  zero-length programmes. Brazil/CPAC inferred end times and Brazil assumed
+  programme dates carry provenance and explicit XMLTV disclosures, including
+  legacy cached records. Parser and export regression tests cover this work.
+
+Still pending: verified feed/room mappings for event platforms, source-date
+validation for Brazil, stronger empty-response recognition, freshness and
+coverage-change alerts, bounded raw-response evidence, and manual source/client
+reconciliation. The existing failure alerts and bounded stale fallback remain.
 
 The 2026-10-07 15:59:12 UTC published snapshot contained 373 events across ten
 catalogue entries. Only 156 had positive start/end ranges. Eight EBS entries
@@ -561,8 +580,8 @@ Implement in this order:
    a scheduled meeting actually maps to the recorded broadcast feed. Validate
    M3U/XMLTV identifiers and try the exports in an IPTV client.
 
-The first implementation milestone is the quality audit plus EBS duration and
-European Parliament channel-mapping corrections. Then improve complete guide
+The first implementation milestone above establishes the quality audit and
+conservative EBS/European Parliament publication corrections. Next improve complete guide
 data for playable feeds, starting with Brazil's date/inferred-end handling and
 official schedules for Greece and the Sansad TV channels. More programme rows
 or a successful HTTP response alone must not count as improved guide quality.

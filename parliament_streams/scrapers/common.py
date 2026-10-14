@@ -6,11 +6,13 @@ import re
 from datetime import UTC, datetime
 from hashlib import sha256
 from html import unescape
-from typing import NotRequired, TypedDict
+from typing import Literal, NotRequired, TypedDict
 from zoneinfo import ZoneInfo
 
 TAG_RE = re.compile(r"<[^>]+>")
 SPACE_RE = re.compile(r"\s+")
+StartBasis = Literal["source", "collection_date"]
+EndBasis = Literal["source", "next_listing_start"]
 
 
 class ScraperSource(TypedDict, total=False):
@@ -46,6 +48,8 @@ class ScheduleEvent(TypedDict):
     status: NotRequired[str]
     location: NotRequired[str]
     language: NotRequired[str]
+    start_basis: NotRequired[StartBasis]
+    end_basis: NotRequired[EndBasis]
 
 
 class NormalizedScheduleEvent(TypedDict):
@@ -61,6 +65,8 @@ class NormalizedScheduleEvent(TypedDict):
     location: NotRequired[str]
     language: NotRequired[str]
     source_timezone: NotRequired[str]
+    start_basis: NotRequired[StartBasis]
+    end_basis: NotRequired[EndBasis]
 
 
 class ScheduleMetadata(TypedDict):
@@ -165,6 +171,7 @@ def normalized_events(
             "title": title,
             "status": _event_status(event, now),
             "start": utc_event_start(event["start"]),
+            "start_basis": event.get("start_basis", "source"),
         }
         if event.get("url"):
             record["url"] = event["url"]
@@ -174,6 +181,7 @@ def normalized_events(
             record["language"] = event["language"]
         if event.get("end"):
             record["end"] = utc_event_start(event["end"])
+            record["end_basis"] = event.get("end_basis", "source")
         if source_timezone:
             record["source_timezone"] = source_timezone
         normalized[event_id] = record

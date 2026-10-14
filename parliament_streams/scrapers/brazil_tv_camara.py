@@ -43,12 +43,13 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         start = source_now.replace(hour=hour, minute=minute, second=0, microsecond=0)
         title = clean_html(title_html)
         if title:
-            events.append({"start": start, "title": title})
+            events.append({"start": start, "title": title, "start_basis": "collection_date"})
     events.sort(key=lambda item: item["start"])
     if not events:
         return {}
     for event, following in zip(events, events[1:], strict=False):
         event["end"] = following["start"]
+        event["end_basis"] = "next_listing_start"
 
     current = next((event for event in reversed(events) if event["start"] <= now), None)
     next_event = next((event for event in events if event["start"] > now), None)

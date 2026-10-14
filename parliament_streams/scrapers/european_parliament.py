@@ -63,6 +63,9 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
         title = _event_title(event)
         if start and title:
             parsed_event: ScheduleEvent = {"start": start, "title": title}
+            room = clean_html(str(event.get("room", "")))
+            if room:
+                parsed_event["location"] = room
             if end:
                 parsed_event["end"] = end
             status = str(event.get("statusName", "")).strip()

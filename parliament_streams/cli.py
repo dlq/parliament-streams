@@ -51,6 +51,7 @@ from .schedule_collection import (
     collect_schedules,
     write_snapshot,
 )
+from .schedule_quality import assess_schedules
 from .site_data import DEFAULT_SITE_DATA_PATH
 from .validation import (
     DEFAULT_SCHEMA_PATH,
@@ -301,7 +302,13 @@ def _cmd_iptv_export(args: argparse.Namespace) -> int:
     issues = validate_catalogue(catalogue)
     if issues:
         raise ValueError("Invalid catalogue: " + "; ".join(issue.render() for issue in issues))
-    snapshot = cast(ScheduleSnapshot, load_json_object(args.schedules))
+    snapshot = _load_schedule_snapshot(args.schedules)
+    _write_json_stdout(write_iptv_exports(catalogue, snapshot, args.output_dir, args.epg_url))
+    return 0
+
+
+def _load_schedule_snapshot(path: Path) -> ScheduleSnapshot:
+    snapshot = cast(ScheduleSnapshot, load_json_object(path))
     errors = list(
         Draft202012Validator(
             load_schema(DEFAULT_SCHEMA_PATH.with_name("schedules.schema.json")),
@@ -310,7 +317,15 @@ def _cmd_iptv_export(args: argparse.Namespace) -> int:
     )
     if errors:
         raise ValueError("Invalid schedule snapshot: " + errors[0].message)
-    _write_json_stdout(write_iptv_exports(catalogue, snapshot, args.output_dir, args.epg_url))
+    return snapshot
+
+
+def _cmd_schedules_audit(args: argparse.Namespace) -> int:
+    report = assess_schedules(
+        load_catalogue(args.catalogue), _load_schedule_snapshot(args.schedules)
+    ).report
+    write_json(args.output, report)
+    _write_json_stdout(report["counts"])
     return 0
 
 
@@ -563,6 +578,13 @@ def build_parser() -> argparse.ArgumentParser:
     iptv_parser.add_argument("--output-dir", type=Path, default=Path("_site/data"))
     iptv_parser.add_argument("--epg-url", default="https://dlq.ca/parliament-streams/data/epg.xml")
     iptv_parser.set_defaults(handler=_cmd_iptv_export)
+
+    quality_parser = commands.add_parser(
+        "schedules-audit", help="Audit schedule semantics, time ranges, and XMLTV eligibility."
+    )
+    quality_parser.add_argument("--schedules", type=Path, default=Path("data/schedules.json"))
+    quality_parser.add_argument("--output", type=Path, required=True)
+    quality_parser.set_defaults(handler=_cmd_schedules_audit)
 
     schedules_collect = commands.add_parser(
         "schedules-collect", help="Fetch and normalize implemented schedule sources."

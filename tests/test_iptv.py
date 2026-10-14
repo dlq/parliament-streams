@@ -25,7 +25,11 @@ class IPTVTests(unittest.TestCase):
     def snapshot(self, events, **fields):
         return cast(
             ScheduleSnapshot,
-            {"channels": {self.channel["id"]: {"events": events, **fields}}},
+            {
+                "channels": {
+                    self.channel["id"]: {"events": events, "scraper": "brazil-tv-camara", **fields}
+                }
+            },
         )
 
     def test_selection_respects_playback_rights_and_stability(self):
@@ -58,22 +62,26 @@ class IPTVTests(unittest.TestCase):
 
     def test_xmltv_timezone_escaping_and_incomplete_times(self):
         event = {
+            "id": "valid",
             "title": "Budget & <debate>",
             "start": "2026-10-07T09:00:00-03:00",
             "end": "2026-10-07T10:00:00-03:00",
             "status": "scheduled",
             "url": "https://example.org/?a=1&b=2",
         }
-        missing_end = {k: v for k, v in event.items() if k != "end"}
-        invalid = {**event, "end": event["start"]}
-        naive = {**event, "start": "2026-10-07T09:00:00"}
-        cancelled = {**event, "status": "cancelled"}
+        missing_end = {**{k: v for k, v in event.items() if k != "end"}, "id": "missing"}
+        invalid = {**event, "id": "invalid", "end": event["start"]}
+        naive = {**event, "id": "naive", "start": "2026-10-07T09:00:00"}
+        cancelled = {**event, "id": "cancelled", "status": "cancelled"}
         xml, count, skipped = render_xmltv(
             self.catalogue,
-            self.snapshot([event, event, missing_end, invalid, naive, cancelled], stale=True),
+            self.snapshot(
+                [event, {**event, "id": "repeat"}, missing_end, invalid, naive, cancelled],
+                stale=True,
+            ),
         )
         root = ET.fromstring(xml)
-        self.assertEqual((count, skipped), (1, 4))
+        self.assertEqual((count, skipped), (1, 5))
         programme = root.find("programme")
         self.assertEqual(programme.attrib["start"], "20261007120000 +0000")
         self.assertEqual(programme.attrib["stop"], "20261007130000 +0000")

@@ -4,7 +4,25 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-10-07
+## Unreleased - 2026-10-14
+
+### Fixed
+
+- Stop mapping the European Parliament's parallel event directory to one
+  XMLTV channel. Keep its events and structured room labels in website data;
+  only reviewed broadcast-feed mappings can export guide programmes.
+- Preserve unknown EBS durations without manufacturing zero-length events.
+- Quarantine conflicting linear-feed programmes, duplicates, invalid time
+  ranges, and cancellations while preserving valid partial guide output.
+
+### Added
+
+- Published `epg-quality.json`, a `schedules-audit` command, and quality
+  summaries/artifacts in Pages and daily catalogue audit workflows.
+- Explicit parser time provenance and XMLTV disclosures for inferred Brazil
+  and CPAC end times and Brazil's assumed collection date.
+
+## Earlier unreleased work through 2026-10-07
 
 ### Added
 
