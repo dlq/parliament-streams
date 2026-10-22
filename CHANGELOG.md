@@ -4,7 +4,14 @@ All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-10-14
+## Unreleased - 2026-10-22
+
+### Security
+
+- Require and lock certifi 2026.10.19 or newer to address
+  GHSA-6q48-6c7w-9gw2, removing compromised emSign CA trust material.
+
+## Earlier unreleased work through 2026-10-14
 
 ### Fixed
 
