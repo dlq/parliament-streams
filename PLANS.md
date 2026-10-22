@@ -648,6 +648,23 @@ six `Multilingual` supranational records and the Northwest Territories
 `Multiple official languages` record into evidence-backed language lists; the
 current generic labels prevent a complete coverage audit.
 
+## Deferred Search Visibility Follow-up
+
+Revisit Google Search Console and sitemap submission when ready; no account
+setup or submission is part of the current work.
+
+- [ ] Verify a Search Console property covering
+  `https://dlq.ca/parliament-streams/` (project URL prefix or `dlq.ca` domain).
+- [ ] Confirm the published sitemap is reachable, then submit
+  `https://dlq.ca/parliament-streams/sitemap.xml` in Search Console.
+- [ ] Inspect the catalogue, map, and schedule URLs for indexing status and
+  Google's selected canonical; request indexing after the metadata changes.
+- [ ] Review impressions and clicks for project-name and legislature searches
+  once enough data is available.
+
+Setup details and evidence limits are in
+[search visibility](docs/search-visibility.md).
+
 ## Future UI/UX Review
 
 The current static site is intentionally a public research catalogue rather
@@ -770,6 +787,37 @@ Current measurable review queues, last reconciled with the catalogue on
 
 The project should help show what makes parliamentary video reusable and
 discoverable without overclaiming rights.
+
+### Project Discovery And Outreach
+
+Build on the technical SEO work with useful, citable material and focused
+advocacy. This is a future backlog; recording it does not initiate outreach or
+publication. Coordinate measurement with the
+[deferred Search Console follow-up](#deferred-search-visibility-follow-up).
+
+- [ ] Prepare a concise project introduction explaining who the catalogue helps,
+  the documented sources, portable playlists, schedules, and source evidence.
+  Refresh all counts before publication and distinguish catalogue coverage
+  from playable streams and XMLTV guide coverage.
+- [ ] Publish a readable summary of the in-depth stream audit: stable delivery,
+  usable schedules, captions, reuse terms, and remaining gaps. Include dates,
+  methods, limitations, and links to retained evidence so others can cite it.
+- [ ] Create useful, crawlable country or legislature pages for specific needs
+  such as finding a parliament's live stream. Generate them from the canonical
+  catalogue, include substantive source/schedule/evidence information, and
+  connect them through internal links and the sitemap. Avoid thin pages that
+  merely repeat keywords.
+- [ ] Plan focused sharing with parliamentary-monitoring groups, civic-tech
+  communities, researchers, and journalists who could use the catalogue.
+  Prioritise relevant audiences and useful references; prepare messages for
+  review before any outreach is sent.
+- [ ] Add an on-site About/methodology page covering authorship, maintenance,
+  verification methods, evidence dates, independence, and limitations. Make
+  the project and its findings straightforward to reference and link to.
+
+Suggested starting package: one concise project announcement and one readable
+stream-audit summary. Measure subsequent discovery and use without promising
+first-page search rankings.
 
 Useful advocacy asks:
 
