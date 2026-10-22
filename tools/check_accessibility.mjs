@@ -106,6 +106,30 @@ async function assertNoAxeViolations(page, context) {
   );
 }
 
+async function assertPlaybackAlignment(page) {
+  const offsets = await page.locator('.channel-row').evaluateAll((rows) => {
+    const headerX = document.querySelector('#sort-mode').getBoundingClientRect().x;
+    const textTop = (element) => {
+      const range = document.createRange();
+      range.selectNodeContents(element.firstChild);
+      return range.getBoundingClientRect().y;
+    };
+    return rows.map((row) => {
+      const placeholder = row.querySelector('.watch-action');
+      const action = row.querySelector('.row-direct-watch') ?? placeholder;
+      return {
+        name: row.querySelector('.channel-name').textContent,
+        horizontal: Math.abs(action.getBoundingClientRect().x - headerX),
+        vertical: Math.abs(textTop(action) - textTop(placeholder)),
+      };
+    });
+  });
+  for (const { name, horizontal, vertical } of offsets) {
+    assert(horizontal < 1, `${name}: playback is ${horizontal}px away from its header`);
+    assert(vertical < 1, `${name}: playback text is ${vertical}px away from the row baseline`);
+  }
+}
+
 async function assertSearchMetadata(page, path = '') {
   const canonical = `https://dlq.ca/parliament-streams/${path}`;
   assert.match(await page.title(), /Parliament Streams/);
@@ -335,6 +359,7 @@ try {
   assert.equal(await page.locator("#playback-filter").count(), 0);
   assert.equal(await page.locator("#rights-filter").count(), 0);
   assert(canonicalFallbacks.fallbacks.length >= 6);
+  await assertPlaybackAlignment(page);
   await assertSearchMetadata(page);
   await assertIptvDisclosure(page);
   await assertNoAxeViolations(page, "Desktop catalogue");
@@ -382,6 +407,7 @@ try {
   await youtubeRow.click();
   assert.equal(await youtubeRow.evaluate((element) => document.activeElement === element), true);
   assert.equal(await youtubeRow.getAttribute("role"), null);
+  await assertPlaybackAlignment(page);
   assert.equal(await youtubeRow.getAttribute("aria-pressed"), "true");
   assert.notEqual(await youtubeRow.evaluate((element) => getComputedStyle(element).boxShadow), "none");
   const youtubeFrame = page.locator("#media-frame iframe");

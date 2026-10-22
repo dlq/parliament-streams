@@ -219,3 +219,10 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .iptv-copy-row button { min-width: 90px; }
 }
 .iptv-resource label > a { display: inline-flex; align-items: center; min-height: 28px; }
+
+@media (min-width: 681px) {
+  /* Give separate watch links the same inset and tracks as the header/button. */
+  .channel-list > .channel-row { padding-inline: .65rem; }
+  .channel-row > .channel-button { width: calc(100% + 1.3rem); margin-inline: -.65rem; }
+  .row-direct-watch { display: block; margin: calc(.7rem + 1px) 0 .25rem; }
+}

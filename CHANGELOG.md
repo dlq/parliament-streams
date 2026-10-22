@@ -33,6 +33,11 @@ application. Earlier application work remains available in Git history.
 - Refresh compact validation history for every published entry and keep current
   roadmap/rights/candidate summaries aligned with the 104-entry catalogue.
 
+### Fixed
+
+- Align external watch links and native playback labels with the catalogue
+  playback header in full-width and selected-source desktop layouts.
+
 ### Security
 
 - Require and lock certifi 2026.10.19 or newer to address
