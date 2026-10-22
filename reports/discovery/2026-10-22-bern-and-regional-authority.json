@@ -1,0 +1,117 @@
+{
+  "research_date": "2026-10-22",
+  "scope_rule": "docs/catalogue-scope.md",
+  "supersedes": "The unresolved Nagasaki and Dutch provincial authority questions, and Bern production-archive question in reports/discovery/2026-10-22-authority-followup.json. Earlier reports remain dated evidence.",
+  "interpretation": "A first-level representative assembly with autonomous power to enact generally binding regional norms affecting rights or obligations, together with budget and executive-scrutiny powers, can qualify. Sovereignty, a federal constitution and the English label Act are not required. Municipalities remain outside the geographic scope, even where national law gives them similar ordinance powers. This does not make every regional council eligible.",
+  "authority_decisions": [
+    {
+      "id": "japan--nagasaki",
+      "institution": "Nagasaki Prefectural Assembly",
+      "decision": "eligible_legislature",
+      "relationship": "First-level prefecture of Japan; not a sovereign or federal state.",
+      "reason": "The prefectural assembly exercises substantive autonomous ordinance-making, budget and executive-scrutiny powers. Its ordinances can impose obligations and restrict rights and can provide penalties within statutory limits. This goes beyond meeting administration or a specific delegated service rule. The same statutory framework also covers municipalities; those remain outside the agreed geographic scope.",
+      "sources": [
+        {
+          "url": "https://laws.e-gov.go.jp/law/322AC0000000067",
+          "version": "Currently-in-force revision displayed: 322AC0000000067_20260924_506AC0000000065 (24 September 2026). Future amendments listed separately were not treated as enacted current text.",
+          "method": "Normal Chromium navigation; rendered full current statutory text read.",
+          "articles": [
+            "2: prefectural/municipal functions and autonomous versus statutory entrusted functions",
+            "14: ordinances, rights/obligations and penalties",
+            "15: executive regulations distinguished from assembly ordinances",
+            "96: assembly approval of ordinances, budget and accounts",
+            "100: investigation powers",
+            "178: no-confidence and dissolution mechanism"
+          ]
+        },
+        {
+          "url": "https://www.pref.nagasaki.jp/gikai/4020.html",
+          "method": "Opened official assembly explanation.",
+          "finding": "Institution-specific confirmation of ordinance enactment, budget approval, important appointments and executive investigation."
+        },
+        {
+          "url": "https://www.clair.or.jp/j/forum/pub/docs/jichi2023-en.pdf",
+          "method": "Opened explanatory publication of Japan's Council of Local Authorities for International Relations; background, not current consolidation.",
+          "finding": "Pages 2–3 and 17–18 explain the regional/municipal tiers and autonomous legislative ordinances, distinct from executive regulations."
+        }
+      ],
+      "action": "Resolve Nagasaki eligibility positively and retain its published official committee links. Other prefectures can use the shared statutory analysis, but their individual source ownership, institutional identity and broadcast validation remain separate."
+    },
+    {
+      "id": "netherlands--provinciale-staten",
+      "institution": "Twelve Dutch provincial councils",
+      "decision": "eligible_legislature",
+      "relationship": "Provinces of the European Netherlands; separate from the Kingdom's constituent countries and Caribbean public bodies.",
+      "reason": "The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.",
+      "sources": [
+        {
+          "url": "https://wetten.overheid.nl/BWBR0005645/2026-07-01",
+          "version": "Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.",
+          "method": "Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.",
+          "articles": [
+            "105: autonomous provincial internal affairs and separate co-administration",
+            "143: council ordinance and residual autonomous powers",
+            "143a and 143b: initiative and amendment",
+            "145: ordinances considered necessary in the provincial interest",
+            "146: required municipal/water-board cooperation under provincial ordinances",
+            "150: penalties within statutory limits",
+            "151 and 151a: questions/interpellation and inquiries",
+            "167: executive accountability and information",
+            "193: annual budget authority"
+          ]
+        },
+        {
+          "url": "https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten",
+          "method": "Opened current national-government institutional explanation.",
+          "finding": "Confirms policy, oversight, initiative, amendment and inquiry roles."
+        },
+        {
+          "url": "https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/",
+          "method": "Opened current province explanation.",
+          "finding": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        }
+      ],
+      "applies_to": [
+        "Drenthe",
+        "Flevoland",
+        "Fryslân",
+        "Gelderland",
+        "Groningen",
+        "Limburg",
+        "Noord-Brabant",
+        "Noord-Holland",
+        "Overijssel",
+        "Utrecht",
+        "Zeeland",
+        "Zuid-Holland"
+      ],
+      "action": "Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+    }
+  ],
+  "bern": {
+    "institution": "Grosser Rat des Kantons Bern",
+    "decision": "official_archive_playback_validated",
+    "official_landing_url": "https://www.tagblatt.gr.be.ch/shareparl/",
+    "official_crosslinks": [
+      "https://www.gr.be.ch/de/start.html",
+      "https://www.gr.be.ch/de/start/sessionen/herbstsession-2026.html"
+    ],
+    "production_recording_url": "https://www.tagblatt.gr.be.ch/shareparl?agendaItemUid=fcc086d7328b4922870f80980d9367b1&scroll=true&autoplay=false",
+    "event": "31 August 2026, autumn-session opening / Ordnungsanträge Herbstsession 2026, agenda 2026.GRPARL.414.",
+    "validation": "Official archive and session crosslink HTTP 200. Visible session and agenda selection opens the recording. User-facing Play control starts MP4 playback; currentTime and decoded frames advance, with 960×540 video and no media error. Transcribed proceedings are visible alongside the recording.",
+    "live_limit": "No on-air live broadcast was validated. The official session calendar lists the next ordinary session as 23 November–3 December 2026. A working archive does not certify a live route or all committee feeds.",
+    "schedule_url": "https://www.gr.be.ch/de/start/sessionen/daten-der-kommenden-sessionen.html",
+    "rights_url": "https://www.gr.be.ch/de/tools/rechtliches.html",
+    "rights_assessment": "The canton's notice generally restricts off-site use of audiovisual elements and offers case-by-case permission. Recommend the official archive link; do not infer permission for independent playback, extraction, embedding or redistribution.",
+    "accessibility": "A transcript was visible for the sampled proceeding. No text tracks appeared on the sampled video element; captions, sign language and audio description remain unverified across the service.",
+    "recommendation": "Suitable official archive lead for catalogue preparation; record archival availability accurately. Institutional ID and full publication/surface reconciliation are separate from this requested playback validation. No direct player, IPTV or XMLTV promotion.",
+    "evidence_report": "reports/health/2026-10-22-bern-archive-deep-browser.json"
+  },
+  "outcome": {
+    "authority_questions_resolved": 13,
+    "catalogue_sources": 117,
+    "catalogue_changed": false,
+    "bern_live_validated": false,
+    "bern_archive_validated": true
+  }
+}

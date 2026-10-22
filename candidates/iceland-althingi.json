@@ -5,7 +5,9 @@
   "updated_on": "2026-10-22",
   "decision_notes": [
     "The official broadcast guide documents plenary and open-committee coverage and permits distribution of the Althingi channel. Chromium received a 403 challenge. Keep researching until a current normal-browser player and supported stream route can be checked; do not restore a historical watchlist HLS URL solely because it existed.",
-    "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json."
+    "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json.",
+    "Follow-up 2026-10-22: Homepage, held broadcast URL and official mobile live page all returned 403 security challenges in Chromium. Official broadcast guide indexed by search explicitly permits distribution of Althingi channel on other networks.",
+    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json."
   ],
   "channel": {
     "id": "iceland-althingi",
@@ -48,11 +50,12 @@
     "epg_sources": [],
     "permission": {
       "status": "personal_use_pending_review",
-      "summary": "Rights and third-party playback terms have not yet been reviewed.",
+      "summary": "Official broadcast guidance expressly permits distribution of the Althingi channel on other networks. This source-specific statement was reviewed through the search index; the current player remains inaccessible in this check.",
       "evidence": [
-        "https://www.althingi.is/utsendingar/netvarp/"
+        "https://www.althingi.is/utsendingar/netvarp/",
+        "https://www.althingi.is/utsendingar"
       ],
-      "recommendation": "Keep link-out only until source conditions are reviewed."
+      "recommendation": "Retain the conservative pending status until a current supported player and its relationship to the permitted parliamentary channel are verified. Do not infer blanket reuse rights for website assets or recordings."
     }
   }
 }

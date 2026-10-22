@@ -30,6 +30,13 @@ Man's Legislative Council can qualify despite the word “council”. Conversely
 an institution called an “assembly” is not automatically a parliament.
 Territorial legislatures need not have sovereign or unlimited powers.
 
+Autonomous regional legislation can be called an **ordinance** rather than an
+Act. For a first-level assembly, a general power to enact binding regional
+norms affecting rights or obligations, backed by budget and executive-scrutiny
+powers, can satisfy this rule. Check the extent and legal basis of that power;
+a narrow delegated service regulation alone remains insufficient. The ordinary
+municipal exclusion still applies where municipalities have similar powers.
+
 ## Borderline and special cases
 
 Keep a documented authority review before promoting regional assemblies whose
@@ -38,6 +45,16 @@ Japanese prefectural assemblies, Dutch provincial bodies and comparable
 county/departmental assemblies. Do not infer a common answer from an English
 translation of their names. Existing entries are reviewed individually rather
 than silently removed.
+
+The [22 October authority resolution](../reports/discovery/2026-10-22-bern-and-regional-authority.md)
+confirms Nagasaki Prefectural Assembly and the twelve Dutch provincial councils
+as eligible on this basis. Nagasaki's autonomous ordinances and Dutch provincial
+ordinances are substantive regional law-making despite national-law limits.
+This settles their authority gate; each broadcast service still needs its own
+identity, access and source-conditions review. It does not decide eligibility
+for Dutch Caribbean island councils or automatically publish other Japanese
+prefectures. Skåne remains outside scope under its separately documented
+regional service/local-government assessment.
 
 Indigenous traditional congresses, special-territory councils and capital
 district bodies need individual legal-authority assessment. An exception is

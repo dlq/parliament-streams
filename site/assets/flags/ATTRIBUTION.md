@@ -1,5 +1,10 @@
 # Flag Asset Attribution
 
+- `bern.svg` is the [canton of Bern flag](https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Bern.svg),
+  Paul Boesch's official design, marked public domain as a Swiss public-law
+  body's coat of arms. The original SVG is unchanged; copyright status does
+  not remove the separate rules governing official insignia.
+
 - `je.svg`, `im.svg`, `pf.svg`, `nc.svg`, and `sx.svg` use flag-icons v7.3.2
   under its MIT license, like the national flags below. The New Caledonia file
   is the Kanak flag used by that library; its display does not decide status.

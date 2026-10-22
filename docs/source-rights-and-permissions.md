@@ -8,6 +8,14 @@ downstream projects.
 
 Last reviewed: 2026-10-22 (expansion batch; earlier source reviews retain their dated evidence).
 
+Bern's Grand Council archive was subsequently reviewed and added as an official
+link-out. The [cantonal notice](https://www.gr.be.ch/de/tools/rechtliches.html)
+generally restricts off-site use of audiovisual elements and permits requests
+for case-specific authorization. Its `no_third_party_reuse` status keeps viewing
+on Online-Tagblatt; successful recorded-video playback and visible transcripts
+do not establish independent playback, embedding or redistribution permission.
+See the [identity and promotion evidence](../reports/discovery/2026-10-22-bern-promotion.json).
+
 ## Catalogue Position
 
 Public availability is not the same thing as permission to redistribute,

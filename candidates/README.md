@@ -9,23 +9,27 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-10-22, four candidates remain `researching`:
+As of 2026-10-22, three candidates remain `researching`:
 
 - Chile Chamber Sala IV: room identity, schedule mapping and rights scope need
   review despite official-page discovery and sample media checks.
-- Iceland Althingi: official broadcasts are documented, but the browser player
-  returned an access challenge.
-- Skåne: official regional WebTV was found, but browser access was denied;
-  eligibility also needs the legislative-authority review.
+- Iceland Althingi: official guidance permits redistribution of its parliamentary
+  channel, but current desktop and mobile player routes returned access challenges.
 - France's Senate: the live service opened, but published hyperlink conditions
   include prior webmaster notification. No notification has been sent.
+
+Skåne is retained as `rejected`: official authority evidence places it outside
+the current regional-legislature scope. Its browser access failure is a separate
+finding. See the [held-candidate and authority follow-up](../reports/discovery/2026-10-22-authority-followup.md).
 
 The Czech chamber feed
 passed active live-media and browser-decode checks and was promoted; Sweden
 and Finland were added as official-page link-outs. See the
 [in-depth audit](../reports/discovery/2026-10-22-in-depth-audit.md).
-Nineteen promoted records are retained for audit history, including the eight
-first-expansion links and five later territorial services. See the
+Twenty promoted records are retained for audit history, including the eight
+first-expansion links, five later territorial services and Bern's official
+Online-Tagblatt archive. Bern's cantonal-parliament identity is Q664547; the
+archive promotion does not assert validated live coverage. See the
 [current research status](../docs/research-status.md);
 `data/channels.json` governs their current published status. Event,
 official-player, and provider fallback ideas should normally start in

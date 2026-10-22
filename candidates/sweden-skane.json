@@ -1,11 +1,13 @@
 {
   "candidate_version": 1,
-  "status": "researching",
+  "status": "rejected",
   "created_on": "2026-10-22",
   "updated_on": "2026-10-22",
   "decision_notes": [
     "The official regional assembly web-TV page was identified, but Chromium received HTTP 403 Access Denied. Retain the source for a current player, event/schedule and reuse-terms check before promotion.",
-    "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json."
+    "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json.",
+    "Follow-up 2026-10-22: Outside default catalogue scope after authority review; HTTP 403 is a separate access outcome.",
+    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json."
   ],
   "channel": {
     "id": "sweden-skane",
@@ -24,8 +26,8 @@
         "source": "wikidata",
         "url": "https://www.wikidata.org/wiki/Q3232565",
         "checked_on": "2026-10-22",
-        "confidence": "high",
-        "notes": "Institutional name and jurisdiction matched; promotion remains blocked by the documented source/player review, not by a playback assumption."
+        "confidence": "medium",
+        "notes": "Q3232565 identifies Region Skåne, the regional council organisation, rather than proving a distinct parliamentary chamber identity. Rejected on project scope after official authority review."
       }
     ],
     "language": "Swedish",

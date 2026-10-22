@@ -1,0 +1,148 @@
+{
+  "research_date": "2026-10-22",
+  "scope_rule": "docs/catalogue-scope.md",
+  "scope": "Follow-up to the completed initial national discovery pass and the 1,121 recorded regional searches. This is not another discovery sweep or a claim of an exhaustive regional inventory.",
+  "method": "Official legal and institutional evidence; normal Chromium page navigation for the four held candidates. Search-index access is distinguished from direct page access. Eligibility is an editorial application of project scope, not a claim that excluded bodies have no public powers.",
+  "authority_reviews": [
+    {
+      "id": "sweden--region-skane",
+      "institution": "Region Skåne regionfullmäktige",
+      "decision": "outside_default_scope",
+      "candidate_action": "Reject sweden-skane for catalogue scope; retain the evidence, independently of HTTP 403.",
+      "evidence": [
+        {
+          "url": "https://www.skane.se/en/politics-and-democracy/how-region-skane-is-governed/",
+          "method": "opened official institutional page",
+          "finding": "Elected regional council controls healthcare, transport, regional development, culture, budgets and regional tax."
+        },
+        {
+          "url": "https://www.riksdagen.se/globalassets/03.-dokument-och-lagar/bestall-och-ladda-ner/other-languages/grundlagar-2023-engelsk-web.pdf",
+          "method": "opened official constitutional text",
+          "finding": "Instrument of Government chapters 8 and 14 distinguish Acts of the Riksdag, delegated provisions and elected local-authority decision making."
+        },
+        {
+          "url": "https://data.riksdagen.se/dokument/sfs-2017-725.html",
+          "method": "opened consolidated official statute (through SFS 2026:836)",
+          "finding": "Local Government Act chapter 5 section 1 governs council goals, budget, tax, organisation and accountability; future commencement clauses must be considered separately."
+        }
+      ],
+      "assessment": "The documented role fits the project's regional service/local-government exclusion. Taxation, elections and executive scrutiny do not alone establish the required legislative status. This is a catalogue decision, not a denial of local self-government or delegated regulation.",
+      "remaining": "Reconsider only if specific legislative-status evidence or the project's scope changes."
+    },
+    {
+      "id": "switzerland--bern",
+      "institution": "Grosser Rat des Kantons Bern",
+      "decision": "eligible_legislature",
+      "candidate_action": "Authority gate passes; broadcast-service promotion remains separate.",
+      "evidence": [
+        {
+          "url": "https://www.gr.be.ch/de/start/wissen/gr-aufgaben.html",
+          "method": "opened official parliamentary page",
+          "finding": "Parliament makes cantonal laws and decrees, approves the budget and supervises government, administration and the management of higher courts."
+        }
+      ],
+      "assessment": "Cantonal legislature with substantive law-making, finance and oversight powers. The name Grand Council is not a reason to exclude it.",
+      "remaining": "Resolve a current public session/archive landing page, identity, source conditions and accessibility. The indexed video test page is a lead, not a production-service validation.",
+      "broadcast_lead": "https://www.gr.be.ch/de/start/test/videouebertragung-testseite.html"
+    },
+    {
+      "id": "japan--nagasaki",
+      "institution": "Nagasaki Prefectural Assembly",
+      "decision": "authority_review_required",
+      "candidate_action": "Retain existing catalogue records; do not expand all 47 prefectures on the basis of the assembly name.",
+      "evidence": [
+        {
+          "url": "https://www.pref.nagasaki.jp/gikai/4020.html",
+          "method": "opened official assembly explanation",
+          "finding": "Assembly adopts, amends and repeals prefectural ordinances, decides budgets, consents to important appointments and investigates executive administration."
+        },
+        {
+          "url": "https://www.pref.nagasaki.jp/gikai/3001.html",
+          "method": "opened official assembly basic ordinance",
+          "finding": "Articles 2 and 3 describe the assembly's independent representative, decision-making, scrutiny and policy roles."
+        },
+        {
+          "url": "https://www.japaneselawtranslation.go.jp/en/laws/download/174/09/s21Ak000010101en3.0.pdf",
+          "method": "official constitutional translation surfaced in search",
+          "finding": "Constitution article 94 protects local entities' administration and enactment of regulations within law."
+        }
+      ],
+      "assessment": "There are real ordinance-making and executive-scrutiny powers. Calling these merely a service board would be inaccurate. The unresolved catalogue question is whether this constitutionally protected local legislative model qualifies under the agreed distinction from ordinary local councils; neither first-level status nor the English word assembly settles it.",
+      "remaining": "Compare the scope of autonomous prefectural ordinances and sanctions with municipal powers under the current Local Autonomy Act, then record a consistent scope decision. No removal or eligibility assertion is made in this pass."
+    },
+    {
+      "id": "netherlands--provinciale-staten",
+      "institution": "Twelve Dutch provincial councils",
+      "decision": "authority_review_required",
+      "candidate_action": "Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
+      "evidence": [
+        {
+          "url": "https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf",
+          "method": "opened official English constitutional translation, 2018 edition",
+          "finding": "Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check."
+        },
+        {
+          "url": "https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members",
+          "method": "official government guidance surfaced in search",
+          "finding": "Provincial councils hold a separate provincial executive accountable."
+        },
+        {
+          "url": "https://wetten.overheid.nl/BWBR0005645/",
+          "method": "direct access failed (429/robots); official search-index excerpts available",
+          "finding": "Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law."
+        }
+      ],
+      "assessment": "Provincial ordinance authority includes an autonomous component; it must not be described as exclusively delegated national administration. A title-based exclusion is as unsupported as automatic inclusion.",
+      "remaining": "Read a current accessible official consolidation and compare autonomous rule-making with the local-government exclusion. The twelve province rows remain held; constituent-country parliaments retain separate decisions."
+    }
+  ],
+  "candidate_reviews": [
+    {
+      "id": "sweden-skane",
+      "decision": "rejected",
+      "reason": "Outside default catalogue scope after authority review; HTTP 403 is a separate access outcome."
+    },
+    {
+      "id": "france-senate",
+      "decision": "researching",
+      "reason": "Live service HTTP 200 and explicitly off-air. Official hyperlink conditions still include prior webmaster notification and attribution/noncommercial conditions. No outreach sent.",
+      "evidence": [
+        "https://videos.senat.fr/direct",
+        "https://www.senat.fr/mentions-legales.html"
+      ],
+      "next_action": "Before promotion, resolve the published hyperlink conditions through an explicitly authorized notification or documented clarification; no further blind player polling is needed."
+    },
+    {
+      "id": "iceland-althingi",
+      "decision": "researching",
+      "reason": "Homepage, held broadcast URL and official mobile live page all returned 403 security challenges in Chromium. Official broadcast guide indexed by search explicitly permits distribution of Althingi channel on other networks.",
+      "evidence": [
+        "https://www.althingi.is/utsendingar",
+        "https://www.althingi.is/",
+        "https://m.althingi.is/beinutsending/"
+      ],
+      "evidence_limit": "The guide was available through the search index; direct web open failed. It does not validate a current manifest or grant a blanket licence over every website asset.",
+      "next_action": "Verify the supported current player through ordinary accessible institutional/provider routes or a human browser during a sitting. Do not resurrect historical HLS or bypass the challenge."
+    },
+    {
+      "id": "chile-camara-sala-iv",
+      "decision": "researching",
+      "reason": "Official television page now returned 403 in Chromium and web access. Earlier bounded HLS sample remains dated evidence, not a fresh playback certification. Exact room/event, schedule and rights remain unresolved.",
+      "evidence": [
+        "https://www.camara.cl/prensa/television.aspx",
+        "reports/health/2026-10-22-targeted-media-followup.json"
+      ],
+      "next_action": "Match the endpoint to an identified official room/event and calendar when accessible; retain research-only status. Endpoint naming and playable bytes alone are insufficient."
+    }
+  ],
+  "outcome": {
+    "new_catalogue_records": 0,
+    "removed_catalogue_records": 0,
+    "candidates_promoted": 19,
+    "candidates_researching": 3,
+    "candidates_rejected": 1,
+    "catalogue_sources": 117,
+    "regional_reviews_not_globally_complete": true
+  },
+  "later_resolution_report": "reports/discovery/2026-10-22-bern-and-regional-authority.json"
+}

@@ -8,6 +8,11 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- Bern Grand Council's official Online-Tagblatt archive, with institutional
+  identity evidence, cantonal flag, localized jurisdiction names, Switzerland
+  search association and current swisstopo canton geometry. Recorded video is
+  validated; live coverage, IPTV and XMLTV parsing remain separate.
+
 - Collapsed IPTV setup on catalogue and schedule pages, with public playlist
   and XMLTV links, copy buttons with manual fallback, partial-guide guidance,
   and official VLC desktop instructions.

@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-22T20:52:38.114Z",
+  "scope": "Bern production archive recording playback, not on-air live validation or a rights grant.",
+  "method": "Normal Chromium navigation from the official archive; select 2026 autumn session and agenda item, then use the visible Play button. No credentials or access-challenge bypass.",
+  "results": [
+    {
+      "id": "switzerland-bern-grand-council-archive",
+      "status": "ok",
+      "note": "Sampled archival MP4 decodes at 960x540, with advancing time and decoded frames; no native/live/IPTV promotion.",
+      "official_landing_url": "https://www.tagblatt.gr.be.ch/shareparl/",
+      "recording_url": "https://www.tagblatt.gr.be.ch/shareparl?agendaItemUid=fcc086d7328b4922870f80980d9367b1&scroll=true&autoplay=false",
+      "event": "31 August 2026, autumn-session opening / Ordnungsanträge Herbstsession 2026, agenda 2026.GRPARL.414.",
+      "media_responses": [
+        {
+          "url": "https://recapp-prod-be-viewer.s3.ewstorage.ch/mediaDash/6a951ac1b84449bb1d504053_converted_media_file_1788186957973.mp4",
+          "status": 206
+        },
+        {
+          "url": "https://recapp-prod-be-viewer.s3.ewstorage.ch/mediaDash/6a951ac1b84449bb1d504053_converted_media_file_1788186957973.mp4",
+          "status": 206
+        },
+        {
+          "url": "https://recapp-prod-be-viewer.s3.ewstorage.ch/mediaDash/6a951ac1b84449bb1d504053_converted_media_file_1788186957973.mp4",
+          "status": 206
+        },
+        {
+          "url": "https://recapp-prod-be-viewer.s3.ewstorage.ch/mediaDash/6a951ac1b84449bb1d504053_converted_media_file_1788186957973.mp4",
+          "status": 206
+        },
+        {
+          "url": "https://recapp-prod-be-viewer.s3.ewstorage.ch/mediaDash/6a951ac1b84449bb1d504053_converted_media_file_1788186957973.mp4",
+          "status": 206
+        }
+      ],
+      "playback_before": {
+        "time": 450.901,
+        "paused": false,
+        "readyState": 1,
+        "videoWidth": 960,
+        "videoHeight": 540,
+        "frames": 46
+      },
+      "playback_after": {
+        "time": 453.568764,
+        "paused": false,
+        "readyState": 4,
+        "videoWidth": 960,
+        "videoHeight": 540,
+        "frames": 139,
+        "tracks": []
+      },
+      "accessibility": "A transcript was visible for the sampled proceeding. No text tracks appeared on the sampled video element; captions, sign language and audio description remain unverified across the service.",
+      "live_validated": false,
+      "rights_url": "https://www.gr.be.ch/de/tools/rechtliches.html"
+    }
+  ],
+  "legal_source_observations": [
+    {
+      "url": "https://laws.e-gov.go.jp/law/322AC0000000067",
+      "displayed_version": "322AC0000000067_20260924_506AC0000000065",
+      "currently_in_force_label": true,
+      "source_text_sha256": "70c6f4fde4876ebbe3a9ec193a9c3d5bbc4f760cfbcdc1010666d571e081d8ff",
+      "read_articles": [
+        "2",
+        "14",
+        "15",
+        "96",
+        "100",
+        "178"
+      ]
+    },
+    {
+      "url": "https://wetten.overheid.nl/BWBR0005645/2026-07-01",
+      "displayed_consulted_on": "2026-10-22",
+      "displayed_valid_from": "2026-07-01",
+      "displayed_valid_until": "present",
+      "source_text_sha256": "61d65877b123f8f46c7ca80fac0728a17c19fba0f50d90ae9521b94d2b18a9f8",
+      "read_articles": [
+        "105",
+        "143",
+        "143a",
+        "143b",
+        "145",
+        "146",
+        "150",
+        "151",
+        "151a",
+        "167",
+        "193"
+      ]
+    }
+  ]
+}

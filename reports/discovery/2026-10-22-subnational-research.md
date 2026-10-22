@@ -4994,9 +4994,11 @@ Unresolved:
 
 Status: **searched**. Inventory source: https://www.bayern.landtag.de/parlament/kooperationen/parlamente-in-der-schweiz/.
 
-Catalogue eligibility: **core_legislature_candidate**. State/provincial/devolved legislative institution in the discovery inventory. Record institution-specific authority evidence as well as webcast readiness before any new promotion.
+Catalogue eligibility: **eligible_legislature**. Cantonal legislature with substantive law-making, finance and oversight powers. The name Grand Council is not a reason to exclude it.
 
-Institutional website: http://www.be.ch/gr
+Published official viewing links: `switzerland-bern-grand-council-archive`. Production archive link; decoded recording verified, current live coverage and committee feeds unvalidated. No IPTV or XMLTV parser addition.
+
+Institutional website: https://www.gr.be.ch/de/start.html
 
 Searches:
 - site:be.ch Kanton Bern (live OR livestream OR webcast OR video OR streaming OR direct)
@@ -5007,12 +5009,17 @@ Sources:
 - [Transmission vidéo](https://www.gr.be.ch/fr/start/sessionen/herbstsession-2025/videouebertragung.html) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Videoübertragung-Testseite](https://www.gr.be.ch/de/start/test/videouebertragung-testseite.html) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Actualités – Médias](https://www.gr.be.ch/fr/start/grosser-rat/aktuell.html) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.gr.be.ch/de/start/wissen/gr-aufgaben.html) — opened official parliamentary page. Parliament makes cantonal laws and decrees, approves the budget and supervises government, administration and the management of higher courts.
+- [Online-Tagblatt: production archive](https://www.tagblatt.gr.be.ch/shareparl/) — Chromium recording playback: advancing time and decoded frames. 31 August 2026 session opening; suitable archive lead, not a current live feed, permission grant or XMLTV parser.
 
 Findings:
 - Official media-page leads are recorded; they may include archives and are not validated live streams.
+- Authority follow-up: Authority gate passes; broadcast-service promotion remains separate.
+- Production Online-Tagblatt archive validated: official crosslink, dated 2026 autumn proceedings, advancing decoded video and visible transcript. Live broadcasts remain unvalidated. See reports/discovery/2026-10-22-bern-and-regional-authority.json
+- Institutional identity Q664547 verified and official archive promoted; 2026 swisstopo canton geometry, flag and country-search association reconciled.
 
 Unresolved:
-- [ ] Resolve chamber and committee broadcast services for Kanton Bern Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.be.ch/de/start/dienstleistungen/medien/medienkonferenzen.html, https://www.gr.be.ch/fr/start/sessionen/herbstsession-2025/videouebertragung.html, https://www.gr.be.ch/de/start/test/videouebertragung-testseite.html, https://www.gr.be.ch/fr/start/grosser-rat/aktuell.html
+- [ ] Validate Bern current live and committee coverage separately Next: Use the official session calendar to inspect on-air coverage during a sitting; review committee services and event-specific accessibility. The archive link is already published locally, with independent media reuse restricted. https://www.gr.be.ch/de/start/sessionen/daten-der-kommenden-sessionen.html, https://www.gr.be.ch/de/tools/rechtliches.html
 
 ## Basel-Stadt — Switzerland
 
@@ -6496,7 +6503,7 @@ Unresolved:
 
 Status: **searched**. Inventory source: https://www.gichokai.gr.jp/b15.asp.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The prefectural assembly exercises substantive autonomous ordinance-making, budget and executive-scrutiny powers. Its ordinances can impose obligations and restrict rights and can provide penalties within statutory limits. This goes beyond meeting administration or a specific delegated service rule. The same statutory framework also covers municipalities; those remain outside the agreed geographic scope.
 
 Published official viewing links: `japan-nagasaki-assembly-committees`. Added as an official-page link-out only. No validated native playback or implemented XMLTV parser. See reports/discovery/2026-10-22-expansion-decisions.json.
 
@@ -6513,10 +6520,18 @@ Sources:
 - [委員会中継｜長崎県議会｜長崎県議会](https://www.pref.nagasaki.jp/gikai/youtube/live.html) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [特別委員会の行動予定について - 長崎県ホームページ](https://www.pref.nagasaki.jp/press-contents/45226.html) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [議会事務局 - 長崎県ホームページ](https://www.pref.nagasaki.jp/organization/gikai/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.pref.nagasaki.jp/gikai/4020.html) — opened official assembly explanation. Assembly adopts, amends and repeals prefectural ordinances, decides budgets, consents to important appointments and investigates executive administration.
+- [Legislative-authority evidence](https://www.pref.nagasaki.jp/gikai/3001.html) — opened official assembly basic ordinance. Articles 2 and 3 describe the assembly's independent representative, decision-making, scrutiny and policy roles.
+- [Legislative-authority evidence](https://www.japaneselawtranslation.go.jp/en/laws/download/174/09/s21Ak000010101en3.0.pdf) — official constitutional translation surfaced in search. Constitution article 94 protects local entities' administration and enactment of regulations within law.
+- [Resolved legislative-authority evidence](https://laws.e-gov.go.jp/law/322AC0000000067) — Normal Chromium navigation; rendered full current statutory text read.. Currently-in-force revision displayed: 322AC0000000067_20260924_506AC0000000065 (24 September 2026). Future amendments listed separately were not treated as enacted current text.
+- [Resolved legislative-authority evidence](https://www.pref.nagasaki.jp/gikai/4020.html) — Opened official assembly explanation.. Institution-specific confirmation of ordinance enactment, budget approval, important appointments and executive investigation.
+- [Resolved legislative-authority evidence](https://www.clair.or.jp/j/forum/pub/docs/jichi2023-en.pdf) — Opened explanatory publication of Japan's Council of Local Authorities for International Relations; background, not current consolidation.. Pages 2–3 and 17–18 explain the regional/municipal tiers and autonomous legislative ordinances, distinct from executive regulations.
 
 Findings:
 - Official media-page leads are recorded; they may include archives and are not validated live streams.
 - Added as an official-page link-out only. No validated native playback or implemented XMLTV parser. See reports/discovery/2026-10-22-expansion-decisions.json.
+- Authority follow-up: Retain existing catalogue records; do not expand all 47 prefectures on the basis of the assembly name.
+- Resolved authority review: Resolve Nagasaki eligibility positively and retain its published official committee links. Other prefectures can use the shared statutory analysis, but their individual source ownership, institutional identity and broadcast validation remain separate.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for 長崎県議会 Next: Eight current and three historical committee YouTube channels are mapped in the retained committee report. Inspect current events, provider playback/accessibility and calendars without extracting YouTube manifests; do not equate committees with permanent physical rooms. https://www.pref.nagasaki.jp/gikai/youtube/, https://www.pref.nagasaki.jp/gikai/youtube/live.html, https://www.pref.nagasaki.jp/press-contents/45226.html, https://www.pref.nagasaki.jp/organization/gikai/
@@ -8010,7 +8025,7 @@ Status: **searched**. Inventory source: https://skr.se/kommunerochregioner/regio
 
 Body class: `regional_deliberative_council`. Relationship: `first_level`.
 
-Catalogue eligibility: **outside_default_scope**. Local/regional administration, planning or service-delivery council. Deliberation, elected membership and delegated by-law powers alone do not establish an eligible legislature. Reconsider only with specific constitutional legislative-authority evidence.
+Catalogue eligibility: **outside_default_scope**. The documented role fits the project's regional service/local-government exclusion. Taxation, elections and executive scrutiny do not alone establish the required legislative status. This is a catalogue decision, not a denial of local self-government or delegated regulation.
 
 Institutional website: http://www.skane.se/
 
@@ -8023,12 +8038,14 @@ Sources:
 - [Start - Region Skåne](https://www.skane.se/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Regionfullmäktige - Region Skåne](https://www.skane.se/politik-och-demokrati/politik/politiska-organ/regionfullmaktige/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Regionfullmäktige](https://www.skane.se/namndshandlingar/83198180/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.skane.se/en/politics-and-democracy/how-region-skane-is-governed/) — opened official institutional page. Elected regional council controls healthcare, transport, regional development, culture, budgets and regional tax.
+- [Legislative-authority evidence](https://www.riksdagen.se/globalassets/03.-dokument-och-lagar/bestall-och-ladda-ner/other-languages/grundlagar-2023-engelsk-web.pdf) — opened official constitutional text. Instrument of Government chapters 8 and 14 distinguish Acts of the Riksdag, delegated provisions and elected local-authority decision making.
+- [Legislative-authority evidence](https://data.riksdagen.se/dokument/sfs-2017-725.html) — opened consolidated official statute (through SFS 2026:836). Local Government Act chapter 5 section 1 governs council goals, budget, tax, organisation and accountability; future commencement clauses must be considered separately.
 
 Findings:
 - Official media-page leads are recorded; they may include archives and are not validated live streams.
-
-Unresolved:
-- [ ] Resolve chamber and committee broadcast services for Region Skåne regionfullmäktige Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.skane.se/politik-och-demokrati/politik/webb-tv-fran-regionfullmaktige/, https://www.skane.se/, https://www.skane.se/politik-och-demokrati/politik/politiska-organ/regionfullmaktige/, https://www.skane.se/namndshandlingar/83198180/
+- Authority follow-up: Reject sweden-skane for catalogue scope; retain the evidence, independently of HTTP 403.
+- Broadcast investigation closed for current catalogue scope; source retained for possible future scope changes. Access failure is not evidence of a closed public service.
 
 ## Region Halland — Sweden
 
@@ -9313,7 +9330,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/14557/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: http://www.provincie.drenthe.nl
 
@@ -9323,9 +9340,17 @@ Searches:
 
 Sources:
 - [Vergadering Provinciale Staten | Provincie Drenthe](https://www.provincie.drenthe.nl/%40144980/vergadering-provinciale-staten/) — web_page_open_blocked. Access blocked or fetch failed; normal browser inspection is needed.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Drenthe Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.provincie.drenthe.nl/%40144980/vergadering-provinciale-staten/
@@ -9336,7 +9361,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/14866/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.flevoland.nl
 
@@ -9349,9 +9374,17 @@ Sources:
 - [Website van Provinciale Staten Flevoland tijdelijk niet beschikbaar - Provincie Flevoland](https://flevoland.nl/actueel/website-van-provinciale-staten-flevoland-tijdelijk) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Gedeputeerde Staten - Provincie Flevoland](https://www.flevoland.nl/Content/Pages/Wie-zijn-we/Gedeputeerde-Staten) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Bijeenkomsten - Provincie Flevoland](https://flevoland.nl/dossiers/stikstof/bijeenkomsten) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Flevoland Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://flevoland.nl/agenda/ps-oktober-2026, https://flevoland.nl/actueel/website-van-provinciale-staten-flevoland-tijdelijk, https://www.flevoland.nl/Content/Pages/Wie-zijn-we/Gedeputeerde-Staten, https://flevoland.nl/dossiers/stikstof/bijeenkomsten
@@ -9362,7 +9395,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/15184/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.fryslan.frl
 
@@ -9372,9 +9405,17 @@ Searches:
 
 Sources:
 - [Persgesprek Gedeputeerde Staten | Provincie Fryslân](https://www.fryslan.frl/persgesprek) — web_page_open. Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Fryslân Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.fryslan.frl/persgesprek
@@ -9385,7 +9426,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/15185/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.gelderland.nl
 
@@ -9398,9 +9439,17 @@ Sources:
 - [Provinciale Staten (PS)](https://www.gelderland.nl/themas/politiek/ps?menu=false) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Kennismaken met Provinciale Staten](https://www.gelderland.nl/themas/politiek/ps/kennismaken-met-provinciale-staten) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Provinciale Staten houden hoorzitting over Gelders luchtvaartbeleid](https://www.gelderland.nl/persberichten/provinciale-staten-houden-hoorzitting-over-gelders-luchtvaartbeleid) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Gelderland Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.gelderland.nl/themas/politiek/ps/volg-provinciale-staten, https://www.gelderland.nl/themas/politiek/ps?menu=false, https://www.gelderland.nl/themas/politiek/ps/kennismaken-met-provinciale-staten, https://www.gelderland.nl/persberichten/provinciale-staten-houden-hoorzitting-over-gelders-luchtvaartbeleid
@@ -9411,7 +9460,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/15632/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: http://www.provinciegroningen.nl
 
@@ -9422,9 +9471,17 @@ Searches:
 Sources:
 - [Werken in commissies - Provincie Groningen](https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/werken-in-commissies/) — web_page_open. Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights.
 - [Invloed uitoefenen - Provincie Groningen](https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/invloed-uitoefenen/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Groningen Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/werken-in-commissies/, https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/invloed-uitoefenen/
@@ -9435,7 +9492,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/16071/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.limburg.nl/
 
@@ -9448,9 +9505,17 @@ Sources:
 - [Marie Geijs Rappange lezing ook via livestream te volgen | Provincie Limburg](https://www.limburg.nl/%4011430/marie-geijs-rappange-lezing/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Provinciale Staten | Provincie Limburg](https://www.limburg.nl/bestuur/provinciale-staten/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Commissies en overlegorganen | Provincie Limburg](https://www.limburg.nl/bestuur/provinciale-staten/commissies/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - Official media-page leads are recorded; they may include archives and are not validated live streams.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Limburg Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.limburg.nl/actueel/nieuws/vergaderingen-ps/2026/volg-live-openbaar-deel/, https://www.limburg.nl/%4011430/marie-geijs-rappange-lezing/, https://www.limburg.nl/bestuur/provinciale-staten/, https://www.limburg.nl/bestuur/provinciale-staten/commissies/
@@ -9461,7 +9526,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/16317/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: http://www.brabant.nl
 
@@ -9474,9 +9539,17 @@ Sources:
 - [Notulen & audio- en videoverslagen | BrainPS](https://brainps.brabant.nl/handboek-ps/vergaderingen/notulen-audio-videoverslagen/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Provinciale Staten | Brabant](https://www.brabant.nl/bestuur/provinciale-staten/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Overige openbare documenten - Provincie Noord-Brabant](https://open.brabant.nl/overige-openbare-documenten) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - Official media-page leads are recorded; they may include archives and are not validated live streams.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Noord-Brabant Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.brabant.nl/live-vergaderingen/, https://brainps.brabant.nl/handboek-ps/vergaderingen/notulen-audio-videoverslagen/, https://www.brabant.nl/bestuur/provinciale-staten/, https://open.brabant.nl/overige-openbare-documenten
@@ -9487,7 +9560,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/16412/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: http://www.noord-holland.nl
 
@@ -9500,9 +9573,17 @@ Sources:
 - [Statenleden en inspreken](https://www.noord-holland.nl/Bestuur/Inspraak_en_meedenken_nieuw/Statenleden_en_inspreken) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Vergaderingen Provinciale Staten](https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Vergaderingen_Provinciale_Staten) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Gast van de Staten](https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Gast_van_de_Staten) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Noord-Holland Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Statencommissies, https://www.noord-holland.nl/Bestuur/Inspraak_en_meedenken_nieuw/Statenleden_en_inspreken, https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Vergaderingen_Provinciale_Staten, https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Gast_van_de_Staten
@@ -9513,7 +9594,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/16771/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.overijssel.nl
 
@@ -9526,9 +9607,17 @@ Sources:
 - [Statencommissiedag - Provincie Overijssel](https://www.overijssel.nl/agenda/statencommissiedag-28-oktober-2026/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Contact Statenleden Provincie Overijssel - Provincie Overijssel](https://www.overijssel.nl/bestuur/provinciale-staten/hoe-kom-ik-in-contact-met-statenleden/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Woordenlijst Provinciale Staten - Provincie Overijssel](https://www.overijssel.nl/bestuur/provinciale-staten/woordenlijst-provinciale-staten/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Overijssel Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.overijssel.nl/bestuur/provinciale-staten/commissies-en-woordvoerders-provinciale-staten/, https://www.overijssel.nl/agenda/statencommissiedag-28-oktober-2026/, https://www.overijssel.nl/bestuur/provinciale-staten/hoe-kom-ik-in-contact-met-statenleden/, https://www.overijssel.nl/bestuur/provinciale-staten/woordenlijst-provinciale-staten/
@@ -9539,7 +9628,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/17166/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.provincie-utrecht.nl
 
@@ -9549,9 +9638,17 @@ Searches:
 
 Sources:
 - [Provinciale Staten Utrecht | provincie Utrecht](https://www.provincie-utrecht.nl/politiek-bestuur/provinciale-staten) — web_page_open_blocked. Access blocked or fetch failed; normal browser inspection is needed.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Utrecht Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.provincie-utrecht.nl/politiek-bestuur/provinciale-staten
@@ -9562,7 +9659,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/18166/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: https://www.zeeland.nl
 
@@ -9575,9 +9672,17 @@ Sources:
 - [Vergaderoverzicht GS & PS | Provincie Zeeland](https://www.zeeland.nl/bestuur/vergaderoverzicht-gs-ps?page=%2C1%2C3) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [De volksvertegenwoordiging van Zeeland is zichtbaar en benaderbaar voor de Zeeuwse kiezer. | Begroting 2026 | Zeeland](https://pcportal.zeeland.nl/begroting-2026/project/de-volksvertegenwoordiging-van-zeeland-is-zichtbaar-en-benaderbaar-voor-de-zeeuwse-kiezer) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Commissies | Provincie Zeeland](https://www.zeeland.nl/provinciale-staten/commissies) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Zeeland Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.zeeland.nl/provinciale-staten/statenvergaderingen, https://www.zeeland.nl/bestuur/vergaderoverzicht-gs-ps?page=%2C1%2C3, https://pcportal.zeeland.nl/begroting-2026/project/de-volksvertegenwoordiging-van-zeeland-is-zichtbaar-en-benaderbaar-voor-de-zeeuwse-kiezer, https://www.zeeland.nl/provinciale-staten/commissies
@@ -9588,7 +9693,7 @@ Status: **searched**. Inventory source: https://organisaties.overheid.nl/17466/P
 
 Body class: `regional_legislative_assembly`. Relationship: `first_level`.
 
-Catalogue eligibility: **authority_review_required**. Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility.
+Catalogue eligibility: **eligible_legislature**. The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.
 
 Institutional website: http://www.zuid-holland.nl
 
@@ -9601,9 +9706,17 @@ Sources:
 - [Meer over Provinciale Staten | Provincie Zuid-Holland](https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Besluitvorming beïnvloeden | Provincie Zuid-Holland](https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/besluitvorming-beinvloeden/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
 - [Commissies | Provincie Zuid-Holland](https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/commissies/) — web_search_result_only. Search-index evidence only; the current player, event type and individual room coverage remain unverified.
+- [Legislative-authority evidence](https://www.government.nl/site/binaries/site-content/collections/documents/2019/02/28/the-constitution-of-the-kingdom-of-the-netherlands/WEB_119406_Grondwet_Koninkrijk_ENG.pdf) — opened official English constitutional translation, 2018 edition. Articles 124 and 127 establish provincial internal-affairs regulation and council enactment of ordinances, alongside municipal provisions; this is not a current consolidated statute check.
+- [Legislative-authority evidence](https://www.government.nl/themes/government-and-democracy/provinces/provincial-executive-members/the-tasks-of-provincial-executive-members) — official government guidance surfaced in search. Provincial councils hold a separate provincial executive accountable.
+- [Legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/) — direct access failed (429/robots); official search-index excerpts available. Indexed Provinciewet articles 143 and 145 describe council ordinances, including those judged necessary in provincial interests. Do not treat a dated indexed consolidation as verified current law.
+- [Resolved legislative-authority evidence](https://wetten.overheid.nl/BWBR0005645/2026-07-01) — Normal Chromium navigation, then visible Alles openklappen control. Current full text read; web fetcher's 429 was not treated as absence of law.. Official page redirected from the undated root; displayed consulted 22 October 2026, valid 1 July 2026 to present.
+- [Resolved legislative-authority evidence](https://www.rijksoverheid.nl/themas/overheid-en-democratie/provincies/provinciale-staten) — Opened current national-government institutional explanation.. Confirms policy, oversight, initiative, amendment and inquiry roles.
+- [Resolved legislative-authority evidence](https://www.limburg.nl/onderwerpen/omgeving/omgevingsverordening-limburg/) — Opened current province explanation.. Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement.
 
 Findings:
 - This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.
+- Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.
+- Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.
 
 Unresolved:
 - [ ] Resolve chamber and committee broadcast services for Provinciale Staten Zuid-Holland Next: Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms. https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/, https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/, https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/besluitvorming-beinvloeden/, https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/commissies/

@@ -4,7 +4,9 @@
   "created_on": "2026-10-22",
   "updated_on": "2026-10-22",
   "decision_notes": [
-    "Official-page browser discovery and sample media validated. Keep researching until room identity, schedule mapping, and rights scope are established. Evidence: reports/health/2026-10-22-targeted-media-followup.json."
+    "Official-page browser discovery and sample media validated. Keep researching until room identity, schedule mapping, and rights scope are established. Evidence: reports/health/2026-10-22-targeted-media-followup.json.",
+    "Follow-up 2026-10-22: Official television page now returned 403 in Chromium and web access. Earlier bounded HLS sample remains dated evidence, not a fresh playback certification. Exact room/event, schedule and rights remain unresolved.",
+    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json."
   ],
   "channel": {
     "id": "chile-camara-sala-iv",

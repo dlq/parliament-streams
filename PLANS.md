@@ -97,8 +97,9 @@ Done:
 - UK Parliament schedule metadata is implemented through the official What's on
   Calendar API. Parliamentlive.tv playback and Red Bee stream access remain
   separate research questions.
-- As of 2026-10-22, the local candidate directory contains four researching
-  records (Chile Sala IV, Iceland, Skåne and France's Senate) and 19 promoted
+- As of 2026-10-22, the local candidate directory contains three researching
+  records (Chile Sala IV, Iceland and France's Senate), one rejected record
+  (Skåne, outside catalogue scope after authority review) and 20 promoted
   records. The latest five official viewing links are Jersey, Tynwald,
   French Polynesia, New Caledonia and Sint Maarten. See
   [current research status](docs/research-status.md) for reconciled totals.
@@ -109,7 +110,7 @@ Done:
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
 - Schema v8 adds compact per-entry validation history. As of 2026-10-22, all
-  117 catalogue entries link to retained dated health reports, including the
+  118 catalogue entries link to retained dated health reports, including the
   Swiss National Council. The public site surfaces the latest retained check
   in source details.
 - Validation-history refresh and drift checking are available through Make and
@@ -149,7 +150,7 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 50 of 117 catalogue entries use a permission status ending in
+Current queue: 50 of 118 catalogue entries use a permission status ending in
 `pending_review`: 18 official-vendor HLS, five first-party HLS, 26 official
 pages and one DASH research record. Later official-link additions retain dated
 source-condition notes; the previous 28-entry queue is a historical subset.
@@ -762,12 +763,12 @@ Near-term:
 Current measurable review queues, last reconciled with the catalogue on
 2026-10-22:
 
-- 50 of 117 catalogue entries still use a permission status ending in
+- 50 of 118 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
   Breakdown: 18 official-vendor HLS, 26 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 117 entries retain at least one `unknown` media-accessibility field. Start
+- All 118 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
   Breakdown: 50 national, 61 sub-national/territorial, and 6 supranational entries.
@@ -812,6 +813,25 @@ Current measurable review queues, last reconciled with the catalogue on
 - [ ] Complete individual authority reviews for borderline regional assemblies
   and special-status bodies. Reconcile previously published entries with the
   rule using official legal/institutional evidence; do not remove by name alone.
+  The [first follow-up](reports/discovery/2026-10-22-authority-followup.md)
+  excludes Skåne and confirms Bern's legislative authority. The
+  [later resolution](reports/discovery/2026-10-22-bern-and-regional-authority.md)
+  confirms Nagasaki and the twelve Dutch provincial councils as eligible on
+  autonomous ordinance, budget and scrutiny powers. Their authority questions
+  are closed; wider institutional reviews remain open.
+- [x] Validate Bern's production Online-Tagblatt archive through a dated recording,
+  advancing playback and decoded frames. Record its transcript and cantonal
+  off-site audiovisual-use restrictions; do not treat the old test page as the
+  publication target or the recording as proof of a live stream.
+- [x] Add Bern's official archive with cantonal-parliament ID Q664547, cantonal
+  flag, Switzerland search association, localized jurisdiction names, planned
+  session-calendar link and current swisstopo boundary (Moutier is in Jura).
+- [ ] Validate Bern's current official live route
+  during a sitting; the next ordinary session starts 23 November 2026.
+- [x] Recheck the four held candidates and record distinct next actions:
+  Skåne rejected on scope; Iceland current-player access blocked; Chile Sala IV
+  room/event and rights unresolved; French Senate hyperlink conditions unresolved.
+  No outreach was sent and no new streams were promoted in this follow-up.
 - [ ] Complete the special-status/related-territory scope notes, including
   Francophone Brussels, Ceuta/Melilla, London, U.S. DC/territories, Kingdom of
   the Netherlands constituent countries, New Zealand relationships, Finnish

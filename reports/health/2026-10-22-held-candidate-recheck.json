@@ -1,0 +1,470 @@
+{
+  "checked_at": "2026-10-22T20:45:03.412Z",
+  "method": "Normal Chromium navigation; no access-challenge bypass. No active live-media certification.",
+  "results": [
+    {
+      "id": "iceland-current",
+      "url": "https://www.althingi.is/",
+      "errors": [],
+      "media_requests": [],
+      "status": 403,
+      "final_url": "https://www.althingi.is/",
+      "title": "Just a moment...",
+      "links": [
+        {
+          "title": "Privacy",
+          "url": "https://www.cloudflare.com/privacypolicy/"
+        }
+      ],
+      "frames": []
+    },
+    {
+      "id": "iceland-held",
+      "url": "https://www.althingi.is/utsendingar/netvarp/",
+      "errors": [],
+      "media_requests": [],
+      "status": 403,
+      "final_url": "https://www.althingi.is/utsendingar/netvarp/",
+      "title": "Just a moment...",
+      "links": [
+        {
+          "title": "Privacy",
+          "url": "https://www.cloudflare.com/privacypolicy/"
+        }
+      ],
+      "frames": []
+    },
+    {
+      "id": "iceland-mobile",
+      "url": "https://m.althingi.is/beinutsending/",
+      "errors": [],
+      "media_requests": [],
+      "status": 403,
+      "final_url": "https://m.althingi.is/beinutsending/",
+      "title": "Attention Required! | Cloudflare",
+      "links": [],
+      "frames": [
+        {
+          "title": "",
+          "src": ""
+        }
+      ]
+    },
+    {
+      "id": "france-senate",
+      "url": "https://videos.senat.fr/direct",
+      "errors": [],
+      "media_requests": [],
+      "status": 200,
+      "final_url": "https://videos.senat.fr/direct",
+      "title": "Sénat français - Vidéothèque - En direct",
+      "links": [
+        {
+          "title": "Aller au contenu",
+          "url": "https://videos.senat.fr/direct#contenu"
+        },
+        {
+          "title": "YouTube",
+          "url": "https://www.youtube.com/c/senat"
+        },
+        {
+          "title": "",
+          "url": "https://videos.senat.fr/"
+        },
+        {
+          "title": "Accueil",
+          "url": "https://videos.senat.fr/index"
+        },
+        {
+          "title": "En direct",
+          "url": "https://videos.senat.fr/direct"
+        },
+        {
+          "title": "Voir toutes les vidéos",
+          "url": "https://videos.senat.fr/videos"
+        },
+        {
+          "title": "Par ordre chronologique",
+          "url": "https://videos.senat.fr/videos"
+        },
+        {
+          "title": "Par nombre de vues",
+          "url": "https://videos.senat.fr/videos.vues"
+        },
+        {
+          "title": "Collectivités territoriales",
+          "url": "https://videos.senat.fr/theme.1"
+        },
+        {
+          "title": "Agriculture et pêche",
+          "url": "https://videos.senat.fr/theme.2"
+        },
+        {
+          "title": "Société",
+          "url": "https://videos.senat.fr/theme.3"
+        },
+        {
+          "title": "Affaires étrangères et coopération",
+          "url": "https://videos.senat.fr/theme.4"
+        },
+        {
+          "title": "Police et sécurité",
+          "url": "https://videos.senat.fr/theme.5"
+        },
+        {
+          "title": "Environnement",
+          "url": "https://videos.senat.fr/theme.7"
+        },
+        {
+          "title": "Union européenne",
+          "url": "https://videos.senat.fr/theme.8"
+        },
+        {
+          "title": "Pouvoirs publics et Constitution",
+          "url": "https://videos.senat.fr/theme.9"
+        },
+        {
+          "title": "Budget",
+          "url": "https://videos.senat.fr/theme.10"
+        },
+        {
+          "title": "Traités et conventions",
+          "url": "https://videos.senat.fr/theme.11"
+        },
+        {
+          "title": "Culture",
+          "url": "https://videos.senat.fr/theme.12"
+        },
+        {
+          "title": "Famille",
+          "url": "https://videos.senat.fr/theme.13"
+        },
+        {
+          "title": "Justice",
+          "url": "https://videos.senat.fr/theme.14"
+        },
+        {
+          "title": "Recherche, sciences et techniques",
+          "url": "https://videos.senat.fr/theme.15"
+        },
+        {
+          "title": "Logement et urbanisme",
+          "url": "https://videos.senat.fr/theme.16"
+        },
+        {
+          "title": "Économie et finances, fiscalité",
+          "url": "https://videos.senat.fr/theme.17"
+        },
+        {
+          "title": "Outre-mer",
+          "url": "https://videos.senat.fr/theme.18"
+        },
+        {
+          "title": "Fonction publique",
+          "url": "https://videos.senat.fr/theme.19"
+        },
+        {
+          "title": "Questions sociales et santé",
+          "url": "https://videos.senat.fr/theme.20"
+        },
+        {
+          "title": "Transports",
+          "url": "https://videos.senat.fr/theme.21"
+        },
+        {
+          "title": "Travail",
+          "url": "https://videos.senat.fr/theme.22"
+        },
+        {
+          "title": "Anciens combattants",
+          "url": "https://videos.senat.fr/theme.23"
+        },
+        {
+          "title": "Éducation",
+          "url": "https://videos.senat.fr/theme.24"
+        },
+        {
+          "title": "Sécurité sociale",
+          "url": "https://videos.senat.fr/theme.25"
+        },
+        {
+          "title": "PME, commerce et artisanat",
+          "url": "https://videos.senat.fr/theme.28"
+        },
+        {
+          "title": "Défense",
+          "url": "https://videos.senat.fr/theme.29"
+        },
+        {
+          "title": "Aménagement du territoire",
+          "url": "https://videos.senat.fr/theme.30"
+        },
+        {
+          "title": "Sports",
+          "url": "https://videos.senat.fr/theme.31"
+        },
+        {
+          "title": "Énergie",
+          "url": "https://videos.senat.fr/theme.32"
+        },
+        {
+          "title": "Entreprises",
+          "url": "https://videos.senat.fr/theme.33"
+        },
+        {
+          "title": "Toutes les séances",
+          "url": "https://videos.senat.fr/chaine.seance-publique"
+        },
+        {
+          "title": "Questions au Gouvernement",
+          "url": "https://videos.senat.fr/chaine.questions-au-gouvernement"
+        },
+        {
+          "title": "Présidence du Sénat",
+          "url": "https://videos.senat.fr/commission.PRES"
+        },
+        {
+          "title": "Toutes les vidéos des commissions",
+          "url": "https://videos.senat.fr/chaine.commissions"
+        },
+        {
+          "title": "Commission des affaires économiques",
+          "url": "https://videos.senat.fr/commission.ECON"
+        },
+        {
+          "title": "Commission des affaires étrangères, de la défense et des forces armées",
+          "url": "https://videos.senat.fr/commission.ETRD"
+        },
+        {
+          "title": "Commission des affaires sociales",
+          "url": "https://videos.senat.fr/commission.SOCI"
+        },
+        {
+          "title": "Commission de l'aménagement du territoire et du développement durable",
+          "url": "https://videos.senat.fr/commission.DEVE"
+        },
+        {
+          "title": "Commission de la culture, de l’éducation, de la communication et du sport",
+          "url": "https://videos.senat.fr/commission.AFCL"
+        },
+        {
+          "title": "Commission des finances",
+          "url": "https://videos.senat.fr/commission.FINC"
+        },
+        {
+          "title": "Commission des lois",
+          "url": "https://videos.senat.fr/commission.LOIS"
+        },
+        {
+          "title": "Commission des affaires européennes",
+          "url": "https://videos.senat.fr/commission.AFEU"
+        },
+        {
+          "title": "Toutes les vidéos de l’office et des délégations",
+          "url": "https://videos.senat.fr/chaine.delegations-et-office"
+        },
+        {
+          "title": "Délégation aux collectivités territoriales et à la décentralisation",
+          "url": "https://videos.senat.fr/commission.coll"
+        },
+        {
+          "title": "Délégation aux droits des femmes et à l’égalité des chances entre les hommes et les femmes",
+          "url": "https://videos.senat.fr/commission.DDRO"
+        },
+        {
+          "title": "Délégation aux entreprises",
+          "url": "https://videos.senat.fr/commission.ENTR"
+        },
+        {
+          "title": "Délégation sénatoriale aux outre-mer",
+          "url": "https://videos.senat.fr/commission.OUTR"
+        },
+        {
+          "title": "Délégation à la prospective",
+          "url": "https://videos.senat.fr/commission.pros"
+        },
+        {
+          "title": "Office parlementaire d’évaluation des choix scientifiques et technologiques (OPECST)",
+          "url": "https://videos.senat.fr/commission.OPES"
+        },
+        {
+          "title": "Toutes les vidéos des instances temporaires",
+          "url": "https://videos.senat.fr/chaine.instances-temporaires"
+        },
+        {
+          "title": "MI Financiarisation du football",
+          "url": "https://videos.senat.fr/commission.FOOT"
+        },
+        {
+          "title": "CE Emeutes juin 2023",
+          "url": "https://videos.senat.fr/commission.EMEU"
+        },
+        {
+          "title": "MCC Agressions enseignants",
+          "url": "https://videos.senat.fr/commission.ENSE"
+        },
+        {
+          "title": "CE Fonds Marianne",
+          "url": "https://videos.senat.fr/commission.FOMA"
+        },
+        {
+          "title": "CS Agencification",
+          "url": "https://videos.senat.fr/commission.AGCF"
+        },
+        {
+          "title": "MCC Prévention de la récidive en matière d'agressions sexuelles",
+          "url": "https://videos.senat.fr/commission.RECI"
+        },
+        {
+          "title": "CS Cybersécurité",
+          "url": "https://videos.senat.fr/commission.CYBE"
+        },
+        {
+          "title": "CS Simplification",
+          "url": "https://videos.senat.fr/commission.SIMP"
+        },
+        {
+          "title": "MCC Inondations",
+          "url": "https://videos.senat.fr/commission.NOND"
+        },
+        {
+          "title": "Groupe de travail sur la décentralisation",
+          "url": "https://videos.senat.fr/commission.GTDE"
+        },
+        {
+          "title": "CS transformation entreprises",
+          "url": "https://videos.senat.fr/commission.PACT"
+        },
+        {
+          "title": "Groupe de suivi sur la nouvelle relation euro-britannique",
+          "url": "https://videos.senat.fr/commission.BREX"
+        },
+        {
+          "title": "Mission d'évaluation et de contrôle de la sécurité sociale",
+          "url": "https://videos.senat.fr/commission.MESS"
+        },
+        {
+          "title": "Connaître le Sénat",
+          "url": "https://videos.senat.fr/chaine.connaitre-le-senat"
+        },
+        {
+          "title": "Pourquoi ça nous concerne ?",
+          "url": "https://videos.senat.fr/chaine.pourquoi-ca-nous-concerne--"
+        },
+        {
+          "title": "Paroles de sénateurs et sénatrices",
+          "url": "https://videos.senat.fr/chaine.paroles-de-senateurs-et-senatrices"
+        },
+        {
+          "title": "Sénateurs tout-terrain",
+          "url": "https://videos.senat.fr/chaine.senateurs-tout-terrain"
+        },
+        {
+          "title": "Relations internationales",
+          "url": "https://videos.senat.fr/chaine.relations-internationales"
+        },
+        {
+          "title": "Colloques",
+          "url": "https://videos.senat.fr/chaine.colloques"
+        },
+        {
+          "title": "Le Sénat autrement",
+          "url": "https://videos.senat.fr/chaine.le-senat-autrement"
+        },
+        {
+          "title": "Les métiers du Sénat",
+          "url": "https://videos.senat.fr/chaine.les-metiers-du-senat"
+        },
+        {
+          "title": "Jardin du Luxembourg",
+          "url": "https://videos.senat.fr/chaine.jardin-du-luxembourg"
+        },
+        {
+          "title": "Vidéos",
+          "url": "https://videos.senat.fr/index"
+        },
+        {
+          "title": "Agenda",
+          "url": "https://www.senat.fr/aglae/Global/index.html"
+        },
+        {
+          "title": "Direct Sénat - Accueil",
+          "url": "https://videos.senat.fr/index"
+        },
+        {
+          "title": "YouTube",
+          "url": "https://www.youtube.com/c/senat"
+        },
+        {
+          "title": "Tous les directs",
+          "url": "https://videos.senat.fr/direct"
+        },
+        {
+          "title": "Les dernières vidéos",
+          "url": "https://videos.senat.fr/videos"
+        },
+        {
+          "title": "Toutes les séances",
+          "url": "https://videos.senat.fr/chaine.seance-publique"
+        },
+        {
+          "title": "Commissions et délégations",
+          "url": "https://videos.senat.fr/chaine.travaux-de-commission"
+        },
+        {
+          "title": "Instances temporaires",
+          "url": "https://videos.senat.fr/chaine.instances-temporaires"
+        },
+        {
+          "title": "Présidence du Sénat",
+          "url": "https://videos.senat.fr/commission.PRES"
+        },
+        {
+          "title": "Questions d'actualité au Gouvernement",
+          "url": "https://videos.senat.fr/chaine.questions-au-gouvernement"
+        },
+        {
+          "title": "Connaître le Sénat",
+          "url": "https://videos.senat.fr/chaine.connaitre-le-senat"
+        },
+        {
+          "title": "Le Sénat autrement",
+          "url": "https://videos.senat.fr/chaine.le-senat-autrement"
+        },
+        {
+          "title": "Les métiers du Sénat",
+          "url": "https://videos.senat.fr/chaine.les-metiers-du-senat"
+        },
+        {
+          "title": "Mentions légales",
+          "url": "https://www.senat.fr/mentions-legales.html"
+        }
+      ],
+      "frames": [],
+      "observation": "Official service reports no broadcast currently in progress."
+    },
+    {
+      "id": "sweden-skane",
+      "url": "https://www.skane.se/politik-och-demokrati/politik/webb-tv-fran-regionfullmaktige/",
+      "errors": [],
+      "media_requests": [],
+      "status": 403,
+      "final_url": "https://www.skane.se/politik-och-demokrati/politik/webb-tv-fran-regionfullmaktige/",
+      "title": "Access Denied",
+      "links": [],
+      "frames": []
+    },
+    {
+      "id": "chile-camara-sala-iv",
+      "url": "https://www.camara.cl/prensa/television.aspx",
+      "errors": [],
+      "media_requests": [],
+      "status": 403,
+      "final_url": "https://www.camara.cl/prensa/television.aspx",
+      "title": "Attention Required! | Cloudflare",
+      "links": [],
+      "frames": []
+    }
+  ],
+  "scope": "Four held candidates; page access checks only. Not active-media validation."
+}

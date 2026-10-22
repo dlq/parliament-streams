@@ -96,6 +96,7 @@ function coverage(locale) {
 }
 const territorialCodes = { Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "PF", "New Caledonia": "NC", "Sint Maarten": "SX" };
 function jurisdictionName(locale, name) {
+  if (name === "Bern") return ({ fr: "Berne", es: "Berna", "pt-BR": "Berna", it: "Berna", "zh-Hans": "伯尔尼", "zh-Hant": "伯恩" })[locale] ?? name;
   if (jurisdictionNames[locale]?.[name]) return jurisdictionNames[locale][name];
   const code = territorialCodes[name];
   return code ? new Intl.DisplayNames([locale], { type: "region" }).of(code) ?? name : name;
@@ -111,6 +112,7 @@ function sourceCount(locale, count) {
   return forms[index].replace("{count}", new Intl.NumberFormat(locale).format(count));
 }
 const subnationalParents = {
+  Bern: "CH",
   Alberta: "CA", "British Columbia": "CA", Manitoba: "CA", "Newfoundland and Labrador": "CA",
   "Northwest Territories": "CA", Nunavut: "CA", Ontario: "CA", "Prince Edward Island": "CA",
   Quebec: "CA", Saskatchewan: "CA",

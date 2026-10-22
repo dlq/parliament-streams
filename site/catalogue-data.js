@@ -9572,6 +9572,71 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "note": "Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified. Official-page check only; active media was not validated."
         }
       ]
+    },
+    {
+      "id": "switzerland-bern-grand-council-archive",
+      "name": "Bern Grand Council Archive",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Bern",
+      "legislature": "Grosser Rat des Kantons Bern / Grand Conseil du canton de Berne",
+      "external_ids": {
+        "wikidata_qid": "Q664547",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q664547",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Q664547 identifies the cantonal Grand Council. Entity revision 2555716667 gives official website http://www.gr.be.ch/; current HTTPS official site confirms the institution and crosslinks Online-Tagblatt. Not the municipality, executive or parliament building."
+        }
+      ],
+      "language": "German, French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.tagblatt.gr.be.ch/shareparl/",
+      "provenance_note": "Official archive of the legislature of the Swiss canton of Bern. The parliamentary site links Online-Tagblatt for recorded proceedings, votes and transcripts. A dated autumn-session recording passed video decode and advancing-playback checks; this does not validate a current live stream or committee-room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "A transcript is visible beside the sampled 31 August 2026 recording. No text tracks were exposed by that video element; caption, sign-language and audio-description coverage across the service remains unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.gr.be.ch/de/start/sessionen/daten-der-kommenden-sessionen.html",
+          "method": "GET",
+          "kind": "official_session_calendar"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "The cantonal notice generally restricts off-site use of audiovisual elements, which may belong to third parties; case-by-case permission may be requested. No independent media-reuse permission is established.",
+        "evidence": [
+          "https://www.gr.be.ch/de/tools/rechtliches.html"
+        ],
+        "recommendation": "Open the official archive for viewing and transcripts. Keep this source link-out only; obtain applicable permission before independent playback, embedding, extraction or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T20:52:38.114Z",
+          "report_path": "reports/health/2026-10-22-bern-archive-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Sampled archival MP4 decodes at 960x540, with advancing time and decoded frames; no native/live/IPTV promotion."
+        }
+      ]
     }
   ]
 };

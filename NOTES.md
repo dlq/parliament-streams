@@ -6,6 +6,48 @@ Use this file as evidence and background. The current catalogue lives in `data/c
 
 ## 2026-10-22 In-depth Audit
 
+Bern publication follow-up: verified Q664547 as the cantonal Grand Council,
+matching the official German/French names and gr.be.ch website. Added the
+production archive as an official link-out, with flag, country-search association,
+localized names and planned session-calendar outlink. The map uses ©swisstopo's
+1 January 2026 canton geometry, excluding Moutier after its transfer to Jura.
+Catalogue now totals 118 sources and 43 regional jurisdictions; candidates are
+20 promoted, three researching and one rejected. No HLS/IPTV or XMLTV parser
+was added. [Promotion evidence](reports/discovery/2026-10-22-bern-promotion.json).
+
+The following notes retain the preceding research stages and their counts.
+
+Latest authority resolution and Bern validation: Bern's official Online-Tagblatt
+production archive plays a 31 August 2026 parliamentary recording with advancing
+time, decoded frames and 960×540 video. A transcript is visible. On-air live
+coverage remains unvalidated; the next ordinary session starts 23 November.
+Cantonal conditions restrict off-site audiovisual use, so an official archive
+link is the appropriate publication route after identity/surface reconciliation.
+
+Current official statutory texts resolve Nagasaki and the twelve Dutch provincial
+councils positively: autonomous binding ordinances, budget and executive scrutiny
+meet the first-level legislative-authority rule. Municipalities remain excluded
+by geographic scope even where they share ordinance powers. These decisions
+supersede the unresolved authority questions in the earlier follow-up below.
+See [the resolution and playback evidence](reports/discovery/2026-10-22-bern-and-regional-authority.md).
+Catalogue remains 117; no media, IPTV or XMLTV policy changed.
+
+Later held-candidate follow-up: normal Chromium checks again encountered access
+challenges for Iceland and Skåne; Chile's official television page was also
+blocked. The French Senate service loaded and reported no broadcast in progress;
+its published prior-notification hyperlink condition remains unresolved. Iceland's
+official indexed broadcast guide explicitly permits distribution of its channel,
+but no current player or manifest was verified.
+
+Official authority evidence supports rejecting Skåne under the current catalogue
+scope and confirms Bern's Grand Council as a cantonal legislature. Nagasaki and
+the twelve Dutch provincial councils retain specific autonomous-ordinance scope
+questions; existing Nagasaki catalogue entries were not removed. Candidates now
+total 19 promoted, three researching and one rejected; catalogue remains 117.
+See the [follow-up report](reports/discovery/2026-10-22-authority-followup.md).
+
+The following paragraphs retain the earlier audit's historical counts.
+
 Audited all 101 previously published entries, 78 catalogue and 76 discovery
 browser pages, and the 25/46-country discovery watchlists. Existing HTTP results
 were 82 OK, five warnings, and 14 errors. Media sampling passed for 41 existing

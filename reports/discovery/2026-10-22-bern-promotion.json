@@ -1,0 +1,48 @@
+{
+  "research_date": "2026-10-22",
+  "id": "switzerland-bern-grand-council-archive",
+  "decision": "promoted_official_archive_link",
+  "institutional_identity": {
+    "qid": "Q664547",
+    "lastrevid": 2555716667,
+    "labels": {
+      "de": "Grosser Rat des Kantons Bern",
+      "fr": "Grand Conseil du canton de Berne",
+      "en": "Grand Council of the Canton of Bern"
+    },
+    "description": {
+      "language": "en",
+      "value": "parliament of the canton of Bern, Switzerland"
+    },
+    "official_websites": [
+      "http://www.gr.be.ch/"
+    ],
+    "located_in": [
+      {
+        "entity-type": "item",
+        "numeric-id": 70,
+        "id": "Q70"
+      }
+    ]
+  },
+  "authority_report": "reports/discovery/2026-10-22-bern-and-regional-authority.json",
+  "playback_evidence": "reports/health/2026-10-22-bern-archive-deep-browser.json",
+  "live_validated": false,
+  "geometry": {
+    "source": "Federal Office of Topography swisstopo",
+    "layer": "ch.swisstopo.swissboundaries3d-kanton-flaeche.fill",
+    "feature_id": 2,
+    "source_date": "2026-01-01",
+    "crs": "EPSG:4326",
+    "retrieval_url": "https://api3.geo.admin.ch/rest/services/api/MapServer/find?layer=ch.swisstopo.swissboundaries3d-kanton-flaeche.fill&searchText=Bern&searchField=name&returnGeometry=true&geometryFormat=geojson&sr=4326",
+    "note": "Current canton outline accounts for the transfer of Moutier to Jura. Coordinates rounded to six decimals; no external runtime geoservice dependency."
+  },
+  "catalogue_sources": 118,
+  "regional_jurisdictions": 43,
+  "candidates": {
+    "promoted": 20,
+    "researching": 3,
+    "rejected": 1
+  },
+  "iptv_or_xmltv_added": false
+}

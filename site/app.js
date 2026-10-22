@@ -85,6 +85,7 @@ function renderDailyHero() {
 }
 
 const jurisdictionFlagAssets = {
+  Bern: "assets/flags/bern.svg",
   Jersey: "assets/flags/je.svg",
   "Isle of Man": "assets/flags/im.svg",
   "French Polynesia": "assets/flags/pf.svg",
@@ -230,7 +231,9 @@ const devolvedJurisdictionNames = {
 };
 
 const subnationalJurisdictionNames = {
+  "zh-Hant": { Bern: "伯恩" },
   fr: {
+    Bern: "Berne",
     Alberta: "Alberta", Andalusia: "Andalousie", "Baden-Wurttemberg": "Bade-Wurtemberg", Bavaria: "Bavière",
     "British Columbia": "Colombie-Britannique", Catalonia: "Catalogne", Jalisco: "Jalisco", Manitoba: "Manitoba",
     Navarre: "Navarre", "New South Wales": "Nouvelle-Galles du Sud", "Newfoundland and Labrador": "Terre-Neuve-et-Labrador",
@@ -239,6 +242,7 @@ const subnationalJurisdictionNames = {
     Valencia: "Valence", Victoria: "Victoria", "Western Australia": "Australie-Occidentale",
   },
   es: {
+    Bern: "Berna",
     Alberta: "Alberta", Andalusia: "Andalucía", "Baden-Wurttemberg": "Baden-Wurtemberg", Bavaria: "Baviera",
     "British Columbia": "Columbia Británica", Catalonia: "Cataluña", Jalisco: "Jalisco", Manitoba: "Manitoba",
     Navarre: "Navarra", "New South Wales": "Nueva Gales del Sur", "Newfoundland and Labrador": "Terranova y Labrador",
@@ -247,6 +251,7 @@ const subnationalJurisdictionNames = {
     Valencia: "Valencia", Victoria: "Victoria", "Western Australia": "Australia Occidental",
   },
   "pt-BR": {
+    Bern: "Berna",
     Alberta: "Alberta", Andalusia: "Andaluzia", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Baviera",
     "British Columbia": "Colúmbia Britânica", Catalonia: "Catalunha", Jalisco: "Jalisco", Manitoba: "Manitoba",
     Navarre: "Navarra", "New South Wales": "Nova Gales do Sul", "Newfoundland and Labrador": "Terra Nova e Labrador",
@@ -263,6 +268,7 @@ const subnationalJurisdictionNames = {
     Valencia: "Valencia", Victoria: "Victoria", "Western Australia": "Westaustralien",
   },
   it: {
+    Bern: "Berna",
     Alberta: "Alberta", Andalusia: "Andalusia", "Baden-Wurttemberg": "Baden-Württemberg", Bavaria: "Baviera",
     "British Columbia": "Columbia Britannica", Catalonia: "Catalogna", Jalisco: "Jalisco", Manitoba: "Manitoba",
     Navarre: "Navarra", "New South Wales": "Nuovo Galles del Sud", "Newfoundland and Labrador": "Terranova e Labrador",
@@ -291,6 +297,7 @@ const subnationalJurisdictionNames = {
     "Western Australia": "Vest-Australia",
   },
   "zh-Hans": {
+    Bern: "伯尔尼",
     Alberta: "艾伯塔", Andalusia: "安达卢西亚", "Baden-Wurttemberg": "巴登-符腾堡", Bavaria: "巴伐利亚",
     "British Columbia": "不列颠哥伦比亚", Catalonia: "加泰罗尼亚", Jalisco: "哈利斯科", Manitoba: "马尼托巴",
     Navarre: "纳瓦拉", "New South Wales": "新南威尔士", "Newfoundland and Labrador": "纽芬兰与拉布拉多",
