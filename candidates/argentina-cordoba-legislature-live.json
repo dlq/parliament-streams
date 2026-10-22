@@ -1,0 +1,66 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official service, institutional identity, event/schedule surface, accessibility unknowns and rights posture reviewed on 2026-10-22. Ready only as an official-page link-out. Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json. No active-media, HLS or XMLTV claim.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "argentina-cordoba-legislature-live",
+    "name": "Córdoba Legislature Video",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Córdoba",
+    "legislature": "Legislatura de la Provincia de Córdoba",
+    "external_ids": {
+      "wikidata_qid": "Q5972573",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q5972573",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://legislaturacba.gob.ar/vivo/",
+    "provenance_note": "Official provincial Legislature VIVO portal, distinct from the Córdoba city council. Chromium returned HTTP 200 and loaded an institutional YouTube event embed with dated 2026 legislative sittings. A recording was present during review; active live playback and simultaneous committee coverage were not established.",
+    "technical_status": "link_only",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://legislaturacba.gob.ar/agenda/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The Legislature provides an institutional YouTube player and official social links, but broad third-party audiovisual reuse or raw-media playback permission was not established. Retain official viewing links.",
+      "evidence": [
+        "https://legislaturacba.gob.ar/vivo/"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+    }
+  }
+}

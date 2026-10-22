@@ -82,20 +82,53 @@ for (const [locale, values] of Object.entries(rows)) {
   if (extras?.length !== extraKeys.length) throw new Error(`Map accessibility translations incomplete for ${locale}`);
   translations[locale] = { ...Object.fromEntries(keys.map((key, index) => [key, values[index]])), ...Object.fromEntries(extraKeys.map((key, index) => [key, extras[index]])) };
 }
+for (const [locale, pack] of Object.entries(window.ParliamentStreamsExtraLocales ?? {})) {
+  translations[locale] = pack.map;
+}
 function message(locale, key, values = {}) {
   const value = translations[locale]?.[key] ?? translations.en[key] ?? key;
   return value.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");
 }
 function coverage(locale) {
   const missing = [...keys, ...extraKeys].filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
-  if (!sourceCountForms[locale]) missing.push("sourceCount");
+  if (!sourceCountForms[locale] && !window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount) missing.push("sourceCount");
   return missing;
 }
 function jurisdictionName(locale, name) { return jurisdictionNames[locale]?.[name] ?? name; }
 function sourceCount(locale, count) {
+  const extra = window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount;
+  if (extra) {
+    const category = new Intl.PluralRules(locale).select(count);
+    return (extra[category] ?? extra.other).replace("{count}", new Intl.NumberFormat(locale).format(count));
+  }
   const forms = sourceCountForms[locale] ?? sourceCountForms.en;
   const index = new Intl.PluralRules(locale).select(count) === "one" ? 0 : 1;
   return forms[index].replace("{count}", new Intl.NumberFormat(locale).format(count));
 }
-window.ParliamentStreamsMapI18n = { coverage, jurisdictionName, message, sourceCount };
+const subnationalParents = {
+  Alberta: "CA", "British Columbia": "CA", Manitoba: "CA", "Newfoundland and Labrador": "CA",
+  "Northwest Territories": "CA", Nunavut: "CA", Ontario: "CA", "Prince Edward Island": "CA",
+  Quebec: "CA", Saskatchewan: "CA",
+  "New South Wales": "AU", Queensland: "AU", Victoria: "AU", "Western Australia": "AU",
+  "Baden-Wurttemberg": "DE", Bavaria: "DE", "North Rhine-Westphalia": "DE",
+  Andalusia: "ES", Catalonia: "ES", Navarre: "ES", Valencia: "ES",
+  "Northern Ireland": "GB", Scotland: "GB", Wales: "GB",
+  Jalisco: "MX",
+  Córdoba: "AR", Nagasaki: "JP", "Santa Catarina": "BR",
+  California: "US", Florida: "US", Minnesota: "US", "New York": "US", Oregon: "US",
+  "Rhode Island": "US", Texas: "US", Utah: "US", Washington: "US",
+};
+function countrySearchTerms(locale, channel) {
+  const code = channel.jurisdiction_level === "subnational"
+    ? subnationalParents[channel.country_or_region]
+    : channel.jurisdiction_level === "national"
+      ? (channel.country_or_region === "Taiwan" ? "TW" : channel.external_ids?.ipu_country_code)
+      : null;
+  if (!code) return "";
+  return [...new Set(["en", locale])].map((language) => {
+    try { return new Intl.DisplayNames([language], { type: "region" }).of(code) ?? ""; }
+    catch { return ""; }
+  }).join(" ");
+}
+window.ParliamentStreamsMapI18n = { coverage, jurisdictionName, message, sourceCount, subnationalParents, countrySearchTerms };
 })();

@@ -8690,6 +8690,563 @@
           "note": "Official page/link reachable."
         }
       ]
+    },
+    {
+      "id": "japan-house-of-representatives-webtv",
+      "name": "Japan House of Representatives WebTV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Japan",
+      "legislature": "House of Representatives of Japan",
+      "external_ids": {
+        "wikidata_qid": "Q659587",
+        "ipu_country_code": "JP",
+        "ipu_parliament_code": "JP",
+        "ipu_chamber_code": "JP-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q659587",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/JP/JP-LC01/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.shugiintv.go.jp/jp/",
+      "provenance_note": "Official House proceedings portal linked to the House website and the upper-house service. Chromium returned HTTP 200 and displayed the current Diet term, a dated concurrent committee-broadcast schedule and searchable recordings. This is one portal covering chamber and committee events, not a separate permanent feed for each committee.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.shugiintv.go.jp/jp/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official broadcast copyright page says website links are generally free, while text, photographs and video remain subject to copyright. No broad independent live-media playback permission was established.",
+        "evidence": [
+          "https://www.shugiintv.go.jp/jp/index.php?ex=CR"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Official House proceedings portal linked to the House website and the upper-house service. Chromium returned HTTP 200 and displayed the current Diet term, a dated concurrent committee-broadcast schedule and searchable recordings. This is one portal covering chamber and committee events, not a separate permanent feed for each committee. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "japan-sangiin-webtv",
+      "name": "Japan Senate (Sangiin) WebTV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Japan",
+      "legislature": "Senate of Japan (Sangiin)",
+      "external_ids": {
+        "wikidata_qid": "Q548911",
+        "ipu_country_code": "JP",
+        "ipu_parliament_code": "JP",
+        "ipu_chamber_code": "JP-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q548911",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/JP/JP-UC01/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.webtv.sangiin.go.jp/webtv/index.php",
+      "provenance_note": "Official Sangiin proceedings service cross-linked from the House of Representatives WebTV. Chromium returned HTTP 200 and displayed a meeting calendar, plenary and committee selection and archived meetings. IPU Parline records the English upper-house name as Senate from 23 July 2026; constitutional quotations may retain House of Councillors. No persistent HLS channel or active live media was validated.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.webtv.sangiin.go.jp/webtv/index.php",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "An official public proceedings service was established, but source-specific permission for extraction, redistribution or independent full-stream playback remains unverified. An attempted copyright-page URL was not valid and is not retained as evidence.",
+        "evidence": [
+          "https://www.webtv.sangiin.go.jp/webtv/index.php"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Official Sangiin proceedings service cross-linked from the House of Representatives WebTV. Chromium returned HTTP 200 and displayed a meeting calendar, plenary and committee selection and archived meetings. IPU Parline records the English upper-house name as Senate from 23 July 2026; constitutional quotations may retain House of Councillors. No persistent HLS channel or active live media was validated. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "austria-parliament-mediathek",
+      "name": "Austria Parliament Mediathek",
+      "jurisdiction_level": "national",
+      "country_or_region": "Austria",
+      "legislature": "Austrian Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q4817650",
+        "ipu_country_code": "AT",
+        "ipu_parliament_code": "AT",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4817650",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/AT/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parlament.gv.at/aktuelles/mediathek",
+      "provenance_note": "Official Parliament Mediathek. The institutional sitting guide documents live Nationalrat, Bundesrat and Bundesversammlung coverage. Chromium returned HTTP 200 and displayed dated sittings of both chambers. Keep one shared portal record until distinct recurring chamber or room player identities are validated.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parlament.gv.at/aktuelles/mediathek",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "noncommercial_pending_review",
+        "summary": "Parliament terms allow specified political reporting, political education and private non-commercial uses. Audiovisual material must carry the Parlamentsdirektion copyright marking; attribution and third-party rights also apply. Individual ORF/live-media ownership and full-stream reuse were not established, so this record remains an official viewing link.",
+        "evidence": [
+          "https://www.parlament.gv.at/services/hilfe/nutzungsbedingungen",
+          "https://www.parlament.gv.at/erleben/sitzungen"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Official Parliament Mediathek. The institutional sitting guide documents live Nationalrat, Bundesrat and Bundesversammlung coverage. Chromium returned HTTP 200 and displayed dated sittings of both chambers. Keep one shared portal record until distinct recurring chamber or room player identities are validated. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "mauritius-national-assembly-parliament-tv",
+      "name": "Mauritius National Assembly Parliament TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Mauritius",
+      "legislature": "National Assembly of Mauritius",
+      "external_ids": {
+        "wikidata_qid": "Q1854129",
+        "ipu_country_code": "MU",
+        "ipu_parliament_code": "MU",
+        "ipu_chamber_code": "MU-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1854129",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/MU/MU-LC01/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+        }
+      ],
+      "language": "English / French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://parliamenttv.govmu.org/",
+      "provenance_note": "Official National Assembly broadcast portal. Chromium returned HTTP 200 and displayed dated chamber proceedings, including the 20 October 2026 sitting. Institutional notice pages cross-link Parliament TV; its help documents live main-chamber and archived coverage. The event guide may be empty between sittings; no always-on channel is inferred.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://parliamenttv.govmu.org/Guide",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "noncommercial_pending_review",
+        "summary": "The service help documents event sharing and embeds after accepting event terms, and notes restrictions on commercial use and editing. Those terms have not been accepted or generalized into independent media playback permission.",
+        "evidence": [
+          "https://parliamenttv.govmu.org/Home/Help"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Official National Assembly broadcast portal. Chromium returned HTTP 200 and displayed dated chamber proceedings, including the 20 October 2026 sitting. Institutional notice pages cross-link Parliament TV; its help documents live main-chamber and archived coverage. The event guide may be empty between sittings; no always-on channel is inferred. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "italy-camera-webtv",
+      "name": "Italy Chamber of Deputies WebTV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Italy",
+      "legislature": "Camera dei deputati",
+      "external_ids": {
+        "wikidata_qid": "Q841424",
+        "ipu_country_code": "IT",
+        "ipu_parliament_code": "IT",
+        "ipu_chamber_code": "IT-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q841424",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/IT/IT-LC01/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+        }
+      ],
+      "language": "Italian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://webtv.camera.it/",
+      "provenance_note": "Official lower-house WebTV linked to camera.it, distinct from the existing Senate record. Chromium returned HTTP 200 and displayed the current dated plenary, multiple committee events and a live-event section. The portal covers event players; no recurring raw HLS room identity has been validated.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://webtv.camera.it/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The Camera legal notice covers text and multimedia and permits public-information, non-commercial use with integrity and source credit, while preserving third-party/personality rights and excluding logo reuse and unauthorized derivatives. This review did not establish a supported permanent raw live endpoint.",
+        "evidence": [
+          "https://comunicazione.camera.it/policy/avvisolegale"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Official lower-house WebTV linked to camera.it, distinct from the existing Senate record. Chromium returned HTTP 200 and displayed the current dated plenary, multiple committee events and a live-event section. The portal covers event players; no recurring raw HLS room identity has been validated. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "japan-nagasaki-assembly-committees",
+      "name": "Nagasaki Prefectural Assembly Committees",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Nagasaki",
+      "legislature": "Nagasaki Prefectural Assembly",
+      "external_ids": {
+        "wikidata_qid": "Q11652776",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11652776",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.pref.nagasaki.jp/gikai/youtube/live.html",
+      "provenance_note": "The official Assembly committee-broadcast introduction returned HTTP 200 in Chromium and links this current committee directory. The directory separately maps four standing and four current special committees to official YouTube channels and labels past special committees separately. Live and recorded coverage is explicitly documented. Catalogue the directory as one official viewing source; do not pretend committee channels are HLS or stable physical-room feeds.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.pref.nagasaki.jp/gikai/5000.html",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Assembly says committee live and recorded broadcasts use YouTube, remain subject to copyright, and may be corrected or edited. No permission for independent media extraction was established; use the institutional directory and provider viewing pages.",
+        "evidence": [
+          "https://www.pref.nagasaki.jp/gikai/youtube/"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "The official Assembly committee-broadcast introduction returned HTTP 200 in Chromium and links this current committee directory. The directory separately maps four standing and four current special committees to official YouTube channels and labels past special committees separately. Live and recorded coverage is explicitly documented. Catalogue the directory as one official viewing source; do not pretend committee channels are HLS or stable physical-room feeds. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "argentina-cordoba-legislature-live",
+      "name": "Córdoba Legislature Video",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Córdoba",
+      "legislature": "Legislatura de la Provincia de Córdoba",
+      "external_ids": {
+        "wikidata_qid": "Q5972573",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5972573",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://legislaturacba.gob.ar/vivo/",
+      "provenance_note": "Official provincial Legislature VIVO portal, distinct from the Córdoba city council. Chromium returned HTTP 200 and loaded an institutional YouTube event embed with dated 2026 legislative sittings. A recording was present during review; active live playback and simultaneous committee coverage were not established.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://legislaturacba.gob.ar/agenda/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Legislature provides an institutional YouTube player and official social links, but broad third-party audiovisual reuse or raw-media playback permission was not established. Retain official viewing links.",
+        "evidence": [
+          "https://legislaturacba.gob.ar/vivo/"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Official provincial Legislature VIVO portal, distinct from the Córdoba city council. Chromium returned HTTP 200 and loaded an institutional YouTube event embed with dated 2026 legislative sittings. A recording was present during review; active live playback and simultaneous committee coverage were not established. Official-page source check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "brazil-santa-catarina-tv-alesc",
+      "name": "Santa Catarina TV Alesc",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Santa Catarina",
+      "legislature": "Assembleia Legislativa do Estado de Santa Catarina",
+      "external_ids": {
+        "wikidata_qid": "Q9633207",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9633207",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.alesc.sc.gov.br/tv/",
+      "provenance_note": "Official Assembly TV Alesc page and its institutional About page were opened through web retrieval; the live section and legislative broadcaster identity are explicit. Direct HTTP and Chromium retrieval timed out from the Toronto research environment. This is an official-page viewing record with that access limitation, not validated direct playback or an always-on uptime claim.",
+      "technical_status": "link_only",
+      "stability_risk": "medium",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.alesc.sc.gov.br/tv/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official Assembly ownership and public viewing are documented, but no broad independent audiovisual redistribution or native-playback permission was found in this pass.",
+        "evidence": [
+          "https://www.alesc.sc.gov.br/tv/",
+          "https://www.alesc.sc.gov.br/tv/sobre/"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T17:03:41.513Z",
+          "report_path": "reports/health/2026-10-22-expansion-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Official Assembly TV Alesc page and its institutional About page were opened through web retrieval; the live section and legislative broadcaster identity are explicit. Direct HTTP and Chromium retrieval timed out from the Toronto research environment. This is an official-page viewing record with that access limitation, not validated direct playback or an always-on uptime claim. Official-page source check only; active media was not validated."
+        }
+      ]
     }
   ]
 }

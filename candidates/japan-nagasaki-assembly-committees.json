@@ -1,0 +1,66 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official service, institutional identity, event/schedule surface, accessibility unknowns and rights posture reviewed on 2026-10-22. Ready only as an official-page link-out. Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json. No active-media, HLS or XMLTV claim.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "japan-nagasaki-assembly-committees",
+    "name": "Nagasaki Prefectural Assembly Committees",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Nagasaki",
+    "legislature": "Nagasaki Prefectural Assembly",
+    "external_ids": {
+      "wikidata_qid": "Q11652776",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q11652776",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+      }
+    ],
+    "language": "Japanese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.pref.nagasaki.jp/gikai/youtube/live.html",
+    "provenance_note": "The official Assembly committee-broadcast introduction returned HTTP 200 in Chromium and links this current committee directory. The directory separately maps four standing and four current special committees to official YouTube channels and labels past special committees separately. Live and recorded coverage is explicitly documented. Catalogue the directory as one official viewing source; do not pretend committee channels are HLS or stable physical-room feeds.",
+    "technical_status": "link_only",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.pref.nagasaki.jp/gikai/5000.html",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The Assembly says committee live and recorded broadcasts use YouTube, remain subject to copyright, and may be corrected or edited. No permission for independent media extraction was established; use the institutional directory and provider viewing pages.",
+      "evidence": [
+        "https://www.pref.nagasaki.jp/gikai/youtube/"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+    }
+  }
+}

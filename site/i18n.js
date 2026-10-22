@@ -4,6 +4,7 @@ const locales = [
   ["da", "Dansk"], ["de", "Deutsch"], ["et", "Eesti"], ["el", "Ελληνικά"],
   ["hi", "हिन्दी"], ["ga", "Gaeilge"], ["it", "Italiano"], ["lb", "Lëtzebuergesch"], ["nl", "Nederlands"], ["nb", "Norsk bokmål"], ["sk", "Slovenčina"],
   ["th", "ไทย"], ["zh-Hans", "中文（简体）"], ["iu-Cans", "ᐃᓄᒃᑎᑐᑦ"], ["mi", "te reo Māori"],
+  ...Object.entries(window.ParliamentStreamsExtraLocales ?? {}).map(([code, pack]) => [code, pack.name]),
 ];
 
 const internationalLevelLabels = {
@@ -720,6 +721,11 @@ Object.entries(validationStatusLabels).forEach(([locale, values]) => {
   [shared[locale].labels.ok, shared[locale].labels.warning, shared[locale].labels.error, shared[locale].labels.skipped] = values;
 });
 
+for (const [locale, pack] of Object.entries(window.ParliamentStreamsExtraLocales ?? {})) {
+  shared[locale] = pack.catalogue;
+  internationalLevelLabels[locale] = pack.map.international;
+}
+
 for (const [locale] of locales) {
   if (locale === "en") continue;
   const messages = shared[locale];
@@ -826,6 +832,14 @@ function supportedLocale(candidate) {
   if (!candidate) return "en";
   const exact = locales.find(([code]) => code.toLocaleLowerCase() === candidate.toLocaleLowerCase());
   if (exact) return exact[0];
+  // Explicit script wins over region; Taiwan, Hong Kong and Macao default to Traditional Chinese.
+  try {
+    const parsed = new Intl.Locale(candidate);
+    if (parsed.language === "zh") {
+      if (parsed.script === "Hant" || (!parsed.script && ["TW", "HK", "MO"].includes(parsed.region))) return "zh-Hant";
+      return "zh-Hans";
+    }
+  } catch { return "en"; }
   const language = candidate.split("-")[0].toLocaleLowerCase();
   return locales.find(([code]) => code.split("-")[0] === language)?.[0] ?? "en";
 }

@@ -2,7 +2,7 @@
 // The deployed Pages artifact places its JSON beside this script; local server
 // previews serve the repository's data directory one level above site/.
 const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
-const { message: mapMessage } = window.ParliamentStreamsMapI18n;
+const { message: mapMessage, countrySearchTerms } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
@@ -513,7 +513,7 @@ function optionValues(key) { return [...new Set(state.channels.map((channel) => 
 function filteredChannels() {
   const search = elements.search.value.trim().toLocaleLowerCase();
   return state.channels.filter((channel) => {
-    const searchable = [channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), channel.language].join(" ").toLocaleLowerCase();
+    const searchable = [channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), countrySearchTerms(state.locale, channel), channel.language].join(" ").toLocaleLowerCase();
     return (!search || searchable.includes(search))
       && (!elements.level.value || channel.jurisdiction_level === elements.level.value)
       && (!elements.format.value || channel.source_type === elements.format.value);

@@ -1,0 +1,73 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official service, institutional identity, event/schedule surface, accessibility unknowns and rights posture reviewed on 2026-10-22. Ready only as an official-page link-out. Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json. No active-media, HLS or XMLTV claim.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "italy-camera-webtv",
+    "name": "Italy Chamber of Deputies WebTV",
+    "jurisdiction_level": "national",
+    "country_or_region": "Italy",
+    "legislature": "Camera dei deputati",
+    "external_ids": {
+      "wikidata_qid": "Q841424",
+      "ipu_country_code": "IT",
+      "ipu_parliament_code": "IT",
+      "ipu_chamber_code": "IT-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q841424",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/IT/IT-LC01/",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+      }
+    ],
+    "language": "Italian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://webtv.camera.it/",
+    "provenance_note": "Official lower-house WebTV linked to camera.it, distinct from the existing Senate record. Chromium returned HTTP 200 and displayed the current dated plenary, multiple committee events and a live-event section. The portal covers event players; no recurring raw HLS room identity has been validated.",
+    "technical_status": "link_only",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://webtv.camera.it/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "explicit_reuse_with_conditions",
+      "summary": "The Camera legal notice covers text and multimedia and permits public-information, non-commercial use with integrity and source credit, while preserving third-party/personality rights and excluding logo reuse and unauthorized derivatives. This review did not establish a supported permanent raw live endpoint.",
+      "evidence": [
+        "https://comunicazione.camera.it/policy/avvisolegale"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+    }
+  }
+}

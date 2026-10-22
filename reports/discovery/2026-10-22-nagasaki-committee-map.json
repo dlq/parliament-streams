@@ -1,0 +1,76 @@
+{
+  "checked_on": "2026-10-22",
+  "official_directory": "https://www.pref.nagasaki.jp/gikai/youtube/live.html",
+  "method": "HTML links read from official Assembly directory. Current and historical sections preserved; no YouTube manifests extracted and no active playback inferred.",
+  "sha256": "c2497b279739aa7fa9aa7002723c35a7d21faf32a594122f6413491de3741d7a",
+  "committees": [
+    {
+      "committee": "総務委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=EjEuq-r9bU4",
+      "official_youtube_channel": "https://www.youtube.com/channel/UC1thoGXEVW-0lWlOa-5jayw"
+    },
+    {
+      "committee": "文教厚生委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=_5Nh1gO6PkM",
+      "official_youtube_channel": "https://www.youtube.com/channel/UC7p4x95RevqSmRKxdiRiteQ"
+    },
+    {
+      "committee": "観光生活建設委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=p6_aRPbBzHg",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCGA36O2VtN427kXGJe2L-Ig"
+    },
+    {
+      "committee": "農水経済委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=qfhaqSvmq60",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCyJTOEpZAbJNk0158okFC5w"
+    },
+    {
+      "committee": "離島・半島地域振興特別委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=WfuThdHEJfw",
+      "official_youtube_channel": "https://www.youtube.com/channel/UChGYdn4BNdRD5gX6xNuU8gg"
+    },
+    {
+      "committee": "観光・新幹線対策特別委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=Ihy2IgOobCQ",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCrSRYMGZvDA2EKOp8yLP81w"
+    },
+    {
+      "committee": "成長産業戦略特別委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=2iWB8aP1LjE",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCuCwuV_sQgE3eCiXsZOhiew"
+    },
+    {
+      "committee": "県議会議員定数等調査特別委員会",
+      "status": "current",
+      "event_url": "https://www.youtube.com/watch?v=LlIb0Toepfg",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCdxD5z6qGo_oB2HSokKYIeQ"
+    },
+    {
+      "committee": "成長産業・県土強靭化対策特別委員会",
+      "status": "historical",
+      "event_url": "https://www.youtube.com/watch?v=xV0J1Q6lQnI",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCrKswGFxfJCJ07b5Zqz3fjQ"
+    },
+    {
+      "committee": "観光・ＩＲ・新幹線対策特別委員会",
+      "status": "historical",
+      "event_url": "https://www.youtube.com/watch?v=zVrzLb-l0qs",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCG1UuPIUGyeGAQ1AwlCmpJQ"
+    },
+    {
+      "committee": "子ども子育て・若者支援対策特別委員会",
+      "status": "historical",
+      "event_url": "https://www.youtube.com/watch?v=XcY10UrCl_k",
+      "official_youtube_channel": "https://www.youtube.com/channel/UCounjCXODbDQREKP1VXdo2g"
+    }
+  ],
+  "current_committee_count": 8,
+  "historical_committee_count": 3
+}

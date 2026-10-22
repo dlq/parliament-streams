@@ -190,6 +190,40 @@ async function assertIptvDisclosure(page) {
   await disclosure.locator(':scope > summary').click();
 }
 
+async function assertIptvLocales(page, localeSelect) {
+  const locales = await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
+  const disclosure = page.locator('.iptv-disclosure');
+  await page.evaluate(() => { window.__localeNavigationSentinel = true; });
+  if (!(await disclosure.evaluate((element) => element.open))) await disclosure.locator(':scope > summary').click();
+  if (!(await disclosure.locator('.iptv-vlc').evaluate((element) => element.open))) await disclosure.locator('.iptv-vlc > summary').click();
+  for (const locale of locales) {
+    await page.locator(localeSelect).selectOption(locale);
+    assert.equal(await page.evaluate(() => window.__localeNavigationSentinel), true, 'Changing language updates the page without reloading');
+    assert.deepEqual(await page.evaluate((code) => window.ParliamentStreamsIptvI18n.coverage(code), locale), [], `Missing IPTV/VLC translations for ${locale}`);
+    assert.equal(await disclosure.getAttribute('lang'), locale);
+    assert.equal(await disclosure.locator('.iptv-vlc').getAttribute('lang'), locale);
+    assert.equal(await disclosure.locator('.iptv-vlc').evaluate((element) => element.open), true, 'Language changes preserve expanded VLC help');
+    assert.equal(await disclosure.locator('.iptv-vlc li').count(), 3);
+    assert.equal(await disclosure.locator('.iptv-vlc a').getAttribute('hreflang'), 'en');
+    if (locale !== 'en') assert.doesNotMatch(await disclosure.locator('.iptv-vlc > summary').innerText(), /VLC desktop instructions/);
+    await page.evaluate(() => {
+      Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (url) => { window.__iptvCopied = url; } } });
+    });
+    await disclosure.locator('[data-copy]').first().click();
+    assert.equal(await page.evaluate(() => window.__iptvCopied), 'https://dlq.ca/parliament-streams/data/stable-hls.m3u8');
+    assert((await disclosure.locator('[role="status"]').innerText()).trim());
+    if (locale !== 'en') assert.doesNotMatch(await disclosure.locator('[role="status"]').innerText(), /URL copied/);
+    await page.evaluate(() => { navigator.clipboard.writeText = async () => { throw new Error('Clipboard denied'); }; });
+    await disclosure.locator('[data-copy]').first().click();
+    assert.equal(await disclosure.locator('input').first().evaluate((element) => document.activeElement === element && element.selectionStart === 0 && element.selectionEnd === element.value.length), true);
+    if (locale !== 'en') assert.doesNotMatch(await disclosure.locator('[role="status"]').innerText(), /copy manually/);
+    const overflow = await disclosure.evaluate((element) => element.scrollWidth > element.clientWidth + 1);
+    assert.equal(overflow, false, `IPTV help overflows in ${locale}`);
+  }
+  await page.locator(localeSelect).selectOption('en');
+  await disclosure.locator(':scope > summary').click();
+}
+
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const address = server.address();
 assert(address && typeof address === "object");
@@ -362,6 +396,10 @@ try {
   await assertPlaybackAlignment(page);
   await assertSearchMetadata(page);
   await assertIptvDisclosure(page);
+  await assertIptvLocales(page, '#locale-select');
+  await page.setViewportSize({ width: 320, height: 740 });
+  await assertIptvLocales(page, '#locale-select');
+  await page.setViewportSize({ width: 1280, height: 900 });
   await assertNoAxeViolations(page, "Desktop catalogue");
 
   const localeCoverage = await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([locale]) => ({
@@ -383,6 +421,30 @@ try {
     assert.equal(await page.locator("#sort-status").getAttribute("lang"), locale);
   }
   await page.locator("#locale-select").selectOption("en");
+
+  assert.deepEqual(await page.evaluate(() => ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant-TW', 'zh-Hans-TW', 'cs-CZ', 'fi-FI', 'sv-FI'].map(window.ParliamentStreamsI18n.supportedLocale)), ['zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hans', 'cs', 'fi', 'sv']);
+  assert.deepEqual(await page.evaluate(() => [1, 2, 5].map((count) => window.ParliamentStreamsMapI18n.sourceCount('cs', count))), ['1 zdroj', '2 zdroje', '5 zdrojů']);
+
+  for (const width of [1280, 320]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.locator("#search").fill("Canada");
+    for (const region of ["Alberta", "Ontario", "Quebec"]) {
+      const expected = canonicalCatalogue.channels.filter((channel) => channel.country_or_region === region);
+      assert(expected.length > 0);
+      for (const channel of expected) {
+        assert.equal(await page.locator(`[data-channel-id="${channel.id}"]`).count(), 1, `Canada search must include ${region}`);
+      }
+    }
+    assert.equal(await page.locator('[data-channel-id="cpac-ca"]').count(), 1);
+    assert.equal(await page.locator('[data-channel-id="scottish-parliament-tv"]').count(), 0);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  }
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.locator("#locale-select").selectOption("fr");
+  await page.locator("#search").fill("Allemagne");
+  assert.equal(await page.locator('[data-channel-id="bavaria-landtag-plenum-online"]').count(), 1);
+  await page.locator("#locale-select").selectOption("en");
+  await page.locator("#search").fill("");
 
   const rows = page.locator(".channel-button");
   assert.equal(await rows.count(), canonicalCatalogue.channels.length);
@@ -637,6 +699,7 @@ try {
   assert.match(await schedulePage.locator(".schedule-watch").getAttribute("href"), /play=1/);
   await assertSearchMetadata(schedulePage, "schedule.html");
   await assertIptvDisclosure(schedulePage);
+  await assertIptvLocales(schedulePage, '#locale-select');
   await assertNoAxeViolations(schedulePage, "Desktop programme guide");
   await schedulePage.goto(`${baseUrl}schedule.html?lang=fr`);
   await schedulePage.waitForSelector("#schedule-list tr");
@@ -656,6 +719,8 @@ try {
   assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
   await assertNoAxeViolations(schedulePage, 'Mobile IPTV disclosure');
   await schedulePage.locator('.iptv-disclosure > summary').click();
+  await assertIptvLocales(schedulePage, '#locale-select');
+  await schedulePage.locator('#locale-select').selectOption('fr');
   const firstScheduleRow = schedulePage.locator("#schedule-list tr").first();
   const nowCell = await firstScheduleRow.locator("td").nth(1).boundingBox();
   const nextCell = await firstScheduleRow.locator("td").nth(2).boundingBox();
@@ -737,6 +802,20 @@ try {
   assert.notEqual(await mapPage.locator(".map-viewport").getAttribute("transform"), null);
   assert.match(await mapPage.locator("#map-detail .map-source-list a").first().getAttribute("href"), /source=scottish-parliament-tv/);
   await assertNoAxeViolations(mapPage, "Desktop coverage map");
+  for (const [country, region, sourceId, code] of [
+    ["Canada", "Alberta", "alberta-assembly-online", "CA"],
+    ["Argentina", "Córdoba", "argentina-cordoba-legislature-live", "AR"],
+    ["Japan", "Nagasaki", "japan-nagasaki-assembly-committees", "JP"],
+    ["Brazil", "Santa Catarina", "brazil-santa-catarina-tv-alesc", "BR"],
+  ]) {
+    await mapPage.locator("#map-search").fill(country);
+    const regionalResult = mapPage.locator("#jurisdiction-list button").filter({ hasText: region });
+    assert.equal(await regionalResult.count(), 1, `${country} search must find ${region}`);
+    await regionalResult.click();
+    assert.equal(await mapPage.locator(`#map-detail [data-parent-code="${code}"]`).count(), 1);
+    await mapPage.locator(`#map-detail [data-parent-code="${code}"]`).click();
+    assert.equal(await mapPage.locator(`#map-detail a[href*="${sourceId}"]`).count(), 1);
+  }
   const mapLocales = await mapPage.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
   for (const locale of mapLocales) {
     assert.deepEqual(

@@ -1,6 +1,6 @@
 (() => {
 const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
-const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount } = window.ParliamentStreamsMapI18n;
+const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount, subnationalParents, countrySearchTerms } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
@@ -11,24 +11,13 @@ const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=202
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 
-const subnationalParents = {
-  Alberta: "CA", "British Columbia": "CA", Manitoba: "CA", "Newfoundland and Labrador": "CA",
-  "Northwest Territories": "CA", Nunavut: "CA", Ontario: "CA", "Prince Edward Island": "CA",
-  Quebec: "CA", Saskatchewan: "CA",
-  "New South Wales": "AU", Queensland: "AU", Victoria: "AU", "Western Australia": "AU",
-  "Baden-Wurttemberg": "DE", Bavaria: "DE", "North Rhine-Westphalia": "DE",
-  Andalusia: "ES", Catalonia: "ES", Navarre: "ES", Valencia: "ES",
-  "Northern Ireland": "GB", Scotland: "GB", Wales: "GB",
-  Jalisco: "MX",
-  California: "US", Florida: "US", Minnesota: "US", "New York": "US", Oregon: "US",
-  "Rhode Island": "US", Texas: "US", Utah: "US", Washington: "US",
-};
+
 
 const fallbackCountryNames = {
-  AU: "Australia", BR: "Brazil", CA: "Canada", CL: "Chile", CR: "Costa Rica", DE: "Germany",
+  AR: "Argentina", AT: "Austria", AU: "Australia", BR: "Brazil", CA: "Canada", CL: "Chile", CR: "Costa Rica", DE: "Germany",
   CZ: "Czech Republic", FI: "Finland", SE: "Sweden", DK: "Denmark", EE: "Estonia", ES: "Spain", FR: "France", GB: "United Kingdom", GR: "Greece",
   IE: "Ireland", IL: "Israel", IN: "India", IT: "Italy", LU: "Luxembourg", MN: "Mongolia",
-  MX: "Mexico", NL: "Netherlands", NO: "Norway", NZ: "New Zealand", PT: "Portugal", SK: "Slovakia",
+  JP: "Japan", MU: "Mauritius", MX: "Mexico", NL: "Netherlands", NO: "Norway", NZ: "New Zealand", PT: "Portugal", SK: "Slovakia",
   SV: "El Salvador", TH: "Thailand", TW: "Taiwan", US: "United States",
 };
 
@@ -301,7 +290,8 @@ function visibleJurisdictions() {
     .filter((group) => {
       const organization = group.level === "supranational" ? state.supranational.find((candidate) => candidate.catalogue_jurisdiction === group.name) : null;
       const displayName = organization ? organizationName(organization) : group.level === "national" ? countryName(nationalCode(group.channels[0])) : jurisdictionName(group.name);
-      return !needle || `${displayName} ${group.name} ${group.channels.map((channel) => `${channel.name} ${channel.legislature}`).join(" ")}`.toLocaleLowerCase().includes(needle);
+      const countryNames = group.channels.map((channel) => countrySearchTerms(state.locale, channel)).join(" ");
+      return !needle || `${displayName} ${countryNames} ${group.name} ${group.channels.map((channel) => `${channel.name} ${channel.legislature}`).join(" ")}`.toLocaleLowerCase().includes(needle);
     })
     .sort((a, b) => jurisdictionName(a.name).localeCompare(jurisdictionName(b.name), state.locale));
 }

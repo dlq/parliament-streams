@@ -1,0 +1,3172 @@
+{
+  "research_version": 1,
+  "research_date": "2026-10-22",
+  "scope": "Fresh country-by-country official-source research for every maintained Tier 1/Tier 2 country: national chambers, committee webcasts, and parliamentary/public-broadcaster services. Regional services are recorded as leads, not an exhaustive subnational census.",
+  "method": "Run native-language/institutional and supplementary English/broadcaster discovery queries. Open relevant primary pages; distinguish opened pages, search-only evidence, access failures, existing catalogue families, distinct candidates, and unresolved leads. Technical playback and rights readiness are separate gates. A reviewed country means the stated research pass was performed, not that every possible stream is known.",
+  "countries": [
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Stortinget nett tv direkte komite høringer offisiell",
+        "Norway parliament live television public broadcaster Storting official committee webcasts"
+      ],
+      "existing_catalogue_ids": [
+        "norway-stortinget"
+      ],
+      "checked_sources": [
+        {
+          "title": "Stortinget Nett-TV",
+          "url": "https://www.stortinget.no/Nett-TV/",
+          "surface": "plenary and committee portal",
+          "note": "Official national portal re-opened; parliamentary and hearing coverage belongs to the existing catalogue family.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Nett-TV help",
+          "url": "https://www.stortinget.no/no/Stottemeny/Hjelp/Nett-TV/?epslanguage=no",
+          "surface": "broadcast documentation",
+          "note": "Official help result describes plenary meetings and most public hearings; the previously recorded retransmission restriction is unchanged by this discovery pass.",
+          "review_method": "web_page_open"
+        }
+      ],
+      "findings": [
+        "No distinct new standing national video service established. Unofficial aggregators and historic radio references were not promoted."
+      ],
+      "unresolved_leads": [],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "norway-stortinget"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "New Zealand",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "New Zealand Parliament TV live select committees Parliament official broadcasts",
+        "New Zealand parliament select committee livestream official Radio New Zealand Parliament TV"
+      ],
+      "existing_catalogue_ids": [
+        "new-zealand-parliament"
+      ],
+      "checked_sources": [
+        {
+          "title": "Select committee live streams",
+          "url": "https://www3.parliament.nz/en/pb/sc/watch-select-committee-live-streams",
+          "surface": "committee directory",
+          "note": "Opened directory explicitly links each committee/subcommittee live page and separate Vimeo archives.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Parliament TV help",
+          "url": "https://www3.parliament.nz/en/footer/website-help/the-parliament-tv-help-page/",
+          "surface": "House and public broadcasting",
+          "note": "Official PTV help opened; House service is already catalogued. Committee directory is additional to that linear feed.",
+          "review_method": "web_page_open"
+        }
+      ],
+      "findings": [
+        "Distinct official committee-player directory found beyond the existing House HLS channel. Archive Vimeo pages must not be mistaken for standing live feeds."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "New Zealand committee live-player family",
+          "next_action": "Follow individual committee links, resolve current player/vendor provenance and event schedules, and review committee-specific reuse before enabling playback.",
+          "urls": [
+            "https://www3.parliament.nz/en/pb/sc/watch-select-committee-live-streams"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www3.parliament.nz/en/pb/sc/watch-select-committee-live-streams"
+      ],
+      "catalogue_ids_after_review": [
+        "new-zealand-parliament"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Sweden",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Riksdagen webb-tv direkt utskott riksdag sändningar",
+        "Sweden parliament official broadcast SVT Forum Riksdag web tv committees"
+      ],
+      "existing_catalogue_ids": [
+        "sweden-riksdag-webb-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Riksdag broadcast delivery",
+          "url": "https://www.riksdagen.se/sv/kontakt-och-besok/press/sandningar/",
+          "surface": "chamber, committee and HLS distribution",
+          "note": "Official guidance publishes event HLS links while live, beginning shortly before meetings; up to four simultaneous broadcasts are described, with embed/reuse guidance.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "SVT Forum help",
+          "url": "https://www.svt.se/kontakt/svt-forum",
+          "surface": "public broadcaster",
+          "note": "Current official help says regular Tuesday-Friday Forum scheduling has ended and coverage is now part of national news. Do not create an always-on Forum channel from historic schedules.",
+          "review_method": "web_page_open"
+        }
+      ],
+      "findings": [
+        "Existing Riksdag portal remains correct. Newly identified official HLS-distribution page is a stronger event-resolution lead than scraping the general portal."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Riksdag live HLS links exposed during meetings",
+          "next_action": "Inspect the broadcast page during an active meeting, retain official event identity and expiry/stability evidence, and test media delivery before revising native-playback policy.",
+          "urls": [
+            "https://www.riksdagen.se/sv/kontakt-och-besok/press/sandningar/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.riksdagen.se/sv/kontakt-och-besok/press/sandningar/"
+      ],
+      "catalogue_ids_after_review": [
+        "sweden-riksdag-webb-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Iceland",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Alþingi beint útsending nefndir vefsjónvarp",
+        "Iceland parliament live stream Althingi committee RUV official"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Althingi broadcast options",
+          "url": "https://www.althingi.is/utsendingar/",
+          "surface": "plenary, open committees, broadcaster and official social channels",
+          "note": "Official page identifies main-site live plenary/open-committee video, a longer rewind player, official YouTube/Facebook alternatives, RUV coverage, and separate archives.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Althingi web player",
+          "url": "https://www.althingi.is/utsendingar/netvarp/",
+          "surface": "official player",
+          "note": "Official player page opened; no raw HLS was established from the parsed page.",
+          "review_method": "web_page_open"
+        }
+      ],
+      "findings": [
+        "New national official-video portal candidate; not currently represented in the catalogue. Public broadcaster coverage is selective, not evidence for a distinct always-on parliamentary feed."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Iceland Althingi official video portal and player",
+          "next_action": "Validate current player in a browser, institutional identity, source terms and active-sitting media; add an official-page record if the catalogue contract is satisfied.",
+          "urls": [
+            "https://www.althingi.is/utsendingar/",
+            "https://www.althingi.is/utsendingar/netvarp/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.althingi.is/utsendingar/",
+        "https://www.althingi.is/utsendingar/netvarp/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": [],
+      "held_candidates": [
+        "iceland-althingi"
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Schweizer Parlament live Nationalrat Ständerat Parlamentsfernsehen Kommissionen",
+        "Suisse parlement direct Conseil national Conseil des Etats RTS SRF diffusion officielle"
+      ],
+      "existing_catalogue_ids": [
+        "swiss-national-council-live"
+      ],
+      "checked_sources": [
+        {
+          "title": "Council of States live player",
+          "url": "https://www.parlament.ch/de/Seiten/LivestreamSr.aspx",
+          "surface": "upper chamber",
+          "note": "Official upper-chamber player opened, including an automatically generated subtitle surface; dynamic player placeholders do not establish a working raw manifest.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Official live embed instructions",
+          "url": "https://www.parlament.ch/fr/services/integration-live-stream",
+          "surface": "both chambers",
+          "note": "Official embed-instruction page opened. Search result explicitly covers both chambers; a separate upper-chamber route is distinct from the catalogued National Council.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "SRG political coverage",
+          "url": "https://www.srgssr.ch/fr/ce-que-nous-faisons/information/information-politique",
+          "surface": "public broadcaster",
+          "note": "Official broadcaster search result identifies SRG as production partner for both chambers; not opened in this batch.",
+          "review_method": "web_search_result_only"
+        }
+      ],
+      "findings": [
+        "Council of States is an uncovered official player lead. Do not restore the failing National Council HLS route or assume the two chambers share an endpoint."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Swiss Council of States separate live player",
+          "next_action": "Capture its supported embed/player configuration during a sitting, verify chamber-specific stream identity and media, and review applicable embed terms.",
+          "urls": [
+            "https://www.parlament.ch/de/Seiten/LivestreamSr.aspx",
+            "https://www.parlament.ch/fr/services/integration-live-stream"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.parlament.ch/de/Seiten/LivestreamSr.aspx"
+      ],
+      "catalogue_ids_after_review": [
+        "swiss-national-council-live"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Finland",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Eduskunta verkkolähetys täysistunto valiokunta suora lähetys",
+        "Finland parliament Yle eduskunta live plenary committees official webcast"
+      ],
+      "existing_catalogue_ids": [
+        "finland-eduskunta-webcasts"
+      ],
+      "checked_sources": [
+        {
+          "title": "Eduskunta webcast portal",
+          "url": "https://verkkolahetys.eduskunta.fi/",
+          "surface": "plenary, committee events and press conferences",
+          "note": "Portal opened and links separate plenary and committee-event sections; it is the existing catalogue family.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "New parliament plenary/events page",
+          "url": "https://www.parliament.fi/en/plenary-sessions-and-events",
+          "surface": "institutional cross-link",
+          "note": "Search describes plenary/public-committee webcasts, but the open returned no parsed content.",
+          "review_method": "web_page_open_empty"
+        },
+        {
+          "title": "Eduskunta participation page",
+          "url": "https://www.eduskunta.fi/fi/vieraile-ja-osallistu/seuraa-verkkolahetyksia",
+          "surface": "institutional cross-link",
+          "note": "Search identified an official route; the open returned no parsed content.",
+          "review_method": "web_page_open_empty"
+        },
+        {
+          "title": "European Parliament broadcaster directory",
+          "url": "https://www.europarl.europa.eu/at-your-service/fi/stay-informed/channels-covering-parliaments",
+          "surface": "public broadcaster discovery",
+          "note": "Institutional directory search identifies selected Yle TV1/Areena broadcasts; this is not a standing separate parliamentary channel.",
+          "review_method": "web_search_result_only"
+        }
+      ],
+      "findings": [
+        "No additional permanent channel established beyond the newly catalogued official portal; committee events are part of the same service."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Finnish committee-event player resolution",
+          "next_action": "Review current committee-event detail players and official broadcaster cross-links in a browser; avoid treating event archives or general Yle TV1 as a new parliamentary channel.",
+          "urls": [
+            "https://verkkolahetys.eduskunta.fi/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "finland-eduskunta-webcasts"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Denmark",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Folketinget tv direkte udvalg samråd kanaler",
+        "Denmark parliament Folketinget TV official committee live broadcasts DR"
+      ],
+      "existing_catalogue_ids": [
+        "denmark-folketinget"
+      ],
+      "checked_sources": [
+        {
+          "title": "Folketing handbook broadcast section",
+          "url": "https://www.ft.dk/da/haandbog-i-folketingsarbejdet/indholdsfortegnelse/kapitel-10/afsnit-10-2",
+          "surface": "linear TV, plenary and committees",
+          "note": "Official handbook describes the year-round TV channel and six simultaneous web-TV channels covering plenary and public committee proceedings.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "TV fra Folketinget help",
+          "url": "https://mobiltv.ft.dk/info",
+          "surface": "official mobile/video service",
+          "note": "Official service identifies live meetings and recordings.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Folketing live TV page",
+          "url": "https://www.ft.dk/Aktuelt/webtv/TV_kanalen_folketinget",
+          "surface": "linear player",
+          "note": "Open attempt timed out; do not count it as a successful player check.",
+          "review_method": "web_page_open_blocked"
+        }
+      ],
+      "findings": [
+        "Existing main Folketing channel does not exhaust the official six-channel committee/plenary web-TV family."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Additional Folketing web-TV channels",
+          "next_action": "Resolve the six official channel identifiers and room/event mapping from the supported player, then test media and applicable reuse before adding routes.",
+          "urls": [
+            "https://mobiltv.ft.dk/info",
+            "https://www.ft.dk/da/haandbog-i-folketingsarbejdet/indholdsfortegnelse/kapitel-10/afsnit-10-2"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://mobiltv.ft.dk/info"
+      ],
+      "catalogue_ids_after_review": [
+        "denmark-folketinget"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Ireland",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Oireachtas TV live Dáil Seanad committees official watch",
+        "Ireland Oireachtas TV channels committee rooms RTE parliamentary live official"
+      ],
+      "existing_catalogue_ids": [
+        "ireland-oireachtas-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "HEAnet parliamentary players",
+          "url": "https://oireachtas.heanet.ie/players/",
+          "surface": "National parliamentary video",
+          "note": "Lists TV, Dáil, Seanad and committee-room cr1–cr4 player embeds.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Oireachtas TV",
+          "url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+          "surface": "National parliamentary video",
+          "note": "Page fetch failed.",
+          "review_method": "web_page_open_blocked"
+        },
+        {
+          "title": "Broadcasting and streaming",
+          "url": "https://www.oireachtas.ie/en/working-in-parliament/engaging-citizens/broadcasting-and-streaming/",
+          "surface": "National parliamentary video",
+          "note": "403 response.",
+          "review_method": "web_page_open_blocked"
+        }
+      ],
+      "findings": [
+        "Official vendor player directory exposes separate chamber and committee-room candidates beyond the catalogue portal."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "HEAnet chamber/committee player family",
+          "next_action": "Confirm institutional cross-links, current live player identities, language and reuse scope before catalogue additions.",
+          "urls": [
+            "https://oireachtas.heanet.ie/players/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://oireachtas.heanet.ie/players/"
+      ],
+      "catalogue_ids_after_review": [
+        "ireland-oireachtas-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Tweede Kamer Eerste Kamer live debat commissies officiële livestream",
+        "Nederland parlement Debat Direct Eerste Kamer vergadering live omroep politiek"
+      ],
+      "existing_catalogue_ids": [
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-aletta-jacobszaal",
+        "netherlands-tweede-kamer-actualiteitenkanaal"
+      ],
+      "checked_sources": [
+        {
+          "title": "Live debates",
+          "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+          "surface": "National parliamentary video",
+          "note": "Eleven room slots: plenary plus Thorbecke, Groen van Prinsterer, Troelstra, Aletta Jacobs, Klompé, Suze Groeneweg, Wttewaall van Stoetwegen, Max van der Stoel, Actualiteiten and Enquête.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "First Chamber public meetings FAQ",
+          "url": "https://www.eerstekamer.nl/faq/zijn_vergaderingen_openbaar",
+          "surface": "National parliamentary video",
+          "note": "429 response; search result describes live plenary viewing.",
+          "review_method": "web_page_open_blocked"
+        }
+      ],
+      "findings": [
+        "Eight lower-house room slots are additional leads beyond the three existing room records; no new CDN endpoints inferred."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Additional Tweede Kamer rooms and Eerste Kamer player",
+          "next_action": "Follow room pages during an active sitting, map each player to the room and check terms; retry upper-house live-page discovery.",
+          "urls": [
+            "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+            "https://www.eerstekamer.nl/faq/zijn_vergaderingen_openbaar"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+        "https://www.eerstekamer.nl/faq/zijn_vergaderingen_openbaar"
+      ],
+      "catalogue_ids_after_review": [
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-aletta-jacobszaal",
+        "netherlands-tweede-kamer-actualiteitenkanaal"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Luxembourg",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Chambre députés Luxembourg Chamber TV direct commissions officiel",
+        "Luxembourg parlement Chamber TV RTL direct séances commissions",
+        "site:chd.lu commissions direct live Chamber TV"
+      ],
+      "existing_catalogue_ids": [
+        "luxembourg-chamber-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Chamber TV",
+          "url": "https://www.chd.lu/fr/live",
+          "surface": "National parliamentary video",
+          "note": "502 response.",
+          "review_method": "web_page_open_blocked"
+        },
+        {
+          "title": "Chamber Live rooms",
+          "url": "https://www.chd.lu/de/direct",
+          "surface": "National parliamentary video",
+          "note": "Open failed; indexed official page lists plenary and Maison Printz et Richard rooms 1/2, 4/5 and Maison Wiltheim room 6.",
+          "review_method": "web_page_open_blocked"
+        },
+        {
+          "title": "Press area",
+          "url": "https://www.chd.lu/en/press-area",
+          "surface": "National parliamentary video",
+          "note": "Indexed official text describes Chamber TV and notes not all committees are broadcast.",
+          "review_method": "web_search_result_only"
+        }
+      ],
+      "findings": [
+        "Committee-room page is a distinct lead beyond the existing main channel. An old pilot announcement alone does not establish current coverage."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Current committee-room players and main feed recovery",
+          "next_action": "Inspect live-room page in a browser; verify event/room identities and media accessibility. Main catalogue feed remains research-only.",
+          "urls": [
+            "https://www.chd.lu/de/direct",
+            "https://www.chd.lu/fr/live"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.chd.lu/de/direct",
+        "https://www.chd.lu/fr/live"
+      ],
+      "catalogue_ids_after_review": [
+        "luxembourg-chamber-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Australia",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Australian Parliament live House Senate committees Parliament video official",
+        "Australia parliament ParlView committee live streams APH official ABC parliament"
+      ],
+      "existing_catalogue_ids": [
+        "australia-parliament-youtube"
+      ],
+      "checked_sources": [
+        {
+          "title": "ParlView sessions",
+          "url": "https://www.aph.gov.au/News_and_Events/Watch_Read_Listen/ParlView/sessions",
+          "surface": "National parliamentary video",
+          "note": "403 response.",
+          "review_method": "web_page_open_blocked"
+        },
+        {
+          "title": "Watch Parliament",
+          "url": "https://www.aph.gov.au/news_and_events/watch_parliament?ps=100",
+          "surface": "National parliamentary video",
+          "note": "Fetch failed; search result points to House and Senate official YouTube streaming portal.",
+          "review_method": "web_page_open_blocked"
+        }
+      ],
+      "findings": [
+        "ParlView committee events merit resolution alongside the existing parliamentary YouTube family; no additional stable national channel established by accessible pages."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "ParlView committee events",
+          "next_action": "Inspect browser player during a public hearing and identify stable event-directory/official-provider mapping and terms.",
+          "urls": [
+            "https://www.aph.gov.au/News_and_Events/Watch_Read_Listen/ParlView/sessions"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.aph.gov.au/News_and_Events/Watch_Read_Listen/ParlView/sessions"
+      ],
+      "catalogue_ids_after_review": [
+        "australia-parliament-youtube"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Taiwan",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "立法院 直播 委員會 國會頻道 官方",
+        "Taiwan Legislative Yuan parliamentary TV official live committee streams"
+      ],
+      "existing_catalogue_ids": [
+        "taiwan-parliamentary-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Legislative Yuan IVOD notices",
+          "url": "https://ivod.ly.gov.tw/News",
+          "surface": "National parliamentary video",
+          "note": "Official IVOD links current-live and meeting forecast pages, recommends parliamentarytv.org.tw as fallback and explicitly restricts commercial, advertising, political, election and litigation uses.",
+          "review_method": "web_page_open"
+        }
+      ],
+      "findings": [
+        "IVOD is an additional official committee/event discovery surface; existing parliamentary-TV family is cross-linked. Viewing availability does not imply unrestricted reuse."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "IVOD live committee mapping",
+          "next_action": "Inspect current-live pages during meetings, compare with existing TV slots and preserve published usage restrictions.",
+          "urls": [
+            "https://ivod.ly.gov.tw/News"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://ivod.ly.gov.tw/News"
+      ],
+      "catalogue_ids_after_review": [
+        "taiwan-parliamentary-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Germany",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Bundestag Bundesrat Mediathek live Ausschüsse Parlamentsfernsehen",
+        "Germany parliament official Bundestag Bundesrat live phoenix committee channels"
+      ],
+      "existing_catalogue_ids": [
+        "germany-bundestag-1"
+      ],
+      "checked_sources": [
+        {
+          "title": "Bundestag web TV FAQ",
+          "url": "https://www.bundestag.de/services/faq/webtv-244898",
+          "surface": "National parliamentary video",
+          "note": "Official FAQ links live-broadcast and reuse guidance.",
+          "review_method": "web_page_open"
+        },
+        {
+          "title": "Bundesrat media centre",
+          "url": "https://www.bundesrat.de/DE/service/mediathek/mediathek-node.html",
+          "surface": "National parliamentary video",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked"
+        }
+      ],
+      "findings": [
+        "Bundesrat is an upper-chamber lead beyond the existing Bundestag record. Phoenix/ARD programme results are mixed editorial coverage, not proof of an additional parliament-only feed."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Bundesrat live portal and parallel Bundestag coverage",
+          "next_action": "Resolve current upper-house official live URL and inspect public committee/parallel broadcasts; existing Bundestag reuse restriction remains.",
+          "urls": [
+            "https://www.bundesrat.de/",
+            "https://www.bundestag.de/services/faq/webtv-244898"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.bundesrat.de/",
+        "https://www.bundestag.de/services/faq/webtv-244898"
+      ],
+      "catalogue_ids_after_review": [
+        "germany-bundestag-1"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Canada",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Canada Parliament House Commons Senate ParlVU SenVu CPAC committee live official",
+        "Canada parliamentary proceedings official live Senate committees provincial legislatures streaming"
+      ],
+      "existing_catalogue_ids": [
+        "cpac-ca",
+        "canada-house-of-commons-parlvu",
+        "canada-senate-senvu"
+      ],
+      "checked_sources": [
+        {
+          "title": "Senate media centre",
+          "url": "https://sencanada.ca/en/media-centre/",
+          "surface": "National parliamentary video",
+          "note": "Explicitly links Senate ParlVU (senparlvu.parl.gc.ca), live/on-demand chamber and committee proceedings, and reproduction terms.",
+          "review_method": "web_page_open"
+        }
+      ],
+      "findings": [
+        "Current official Senate service name is Senate ParlVU. House, Senate and CPAC are existing catalogue families; committee events should not be duplicated as permanent channels."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Senate service naming/routing and BC room leads",
+          "next_action": "Compare catalogue Senate target with current official ParlVU link; carry forward BC room-player identity and reuse checks from the earlier audit.",
+          "urls": [
+            "https://sencanada.ca/en/media-centre/",
+            "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://sencanada.ca/en/media-centre/",
+        "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts"
+      ],
+      "catalogue_ids_after_review": [
+        "cpac-ca",
+        "canada-house-of-commons-parlvu",
+        "canada-senate-senvu"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Uruguay",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Parlamento Uruguay transmisión en vivo diputados senadores comisiones oficial",
+        "Uruguay Parlamento TV canal oficial transmisión cámaras comisiones",
+        "site:parlamento.gub.uy transmisión en vivo",
+        "site:diputados.gub.uy transmisión Youtube"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://www.parlamento.gub.uy/",
+          "surface": "National parliamentary video",
+          "note": "Not accessible through research tool.",
+          "review_method": "web_page_open_blocked"
+        },
+        {
+          "title": "Chamber of Representatives",
+          "url": "https://www.diputados.gub.uy/",
+          "surface": "National parliamentary video",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked"
+        }
+      ],
+      "findings": [
+        "Broad and targeted official-domain searches did not resolve a current national live-player page; official parliamentary records mention House YouTube transmissions. No third-party Parlamento TV listing promoted."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "House/Senate official YouTube provenance and current live entry points",
+          "next_action": "Retry national sites in browser, follow institutional social/video links, distinguish House/Senate and committees from Mercosur and Montevideo services.",
+          "urls": [
+            "https://www.parlamento.gub.uy/",
+            "https://www.diputados.gub.uy/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.parlamento.gub.uy/",
+        "https://www.diputados.gub.uy/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Japan",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "国会 インターネット 審議中継 衆議院 参議院 委員会",
+        "Japan parliament official live Diet committee NHK streams"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "House internet proceedings",
+          "url": "https://www.shugiintv.go.jp/jp/index.php?ex=IF",
+          "note": "Official meeting list covers numerous committees and links House of Councillors web TV.",
+          "review_method": "web_page_open",
+          "surface": "Parliamentary live and committee coverage"
+        },
+        {
+          "title": "House of Councillors",
+          "url": "https://www.sangiin.go.jp/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "Parliamentary live and committee coverage"
+        }
+      ],
+      "findings": [
+        "House of Representatives and House of Councillors official live/committee portals are new catalogue candidates; neither chamber currently has a national catalogue record."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Upper-house current live and room mapping",
+          "next_action": "Follow official shugiintv cross-link to webtv.sangiin.go.jp; distinguish event recordings from recurring live rooms.",
+          "urls": [
+            "https://www.shugiintv.go.jp/jp/index.php?ex=IF",
+            "https://www.sangiin.go.jp/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "japan-house-of-representatives-webtv",
+        "japan-sangiin-webtv"
+      ],
+      "promoted_catalogue_ids": [
+        "japan-house-of-representatives-webtv",
+        "japan-sangiin-webtv"
+      ],
+      "promotion_note": "Promoted as official-page link-outs only. Active media, direct HLS and implemented XMLTV readiness are not implied. Decision evidence: reports/discovery/2026-10-22-expansion-decisions.json."
+    },
+    {
+      "country": "United Kingdom",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "UK Parliament official live committees chambers Parliamentlive BBC Parliament",
+        "UK Parliament Scottish Senedd Northern Ireland official live streams"
+      ],
+      "existing_catalogue_ids": [
+        "uk-parliament-youtube"
+      ],
+      "checked_sources": [
+        {
+          "title": "Parliamentary Broadcasting Unit",
+          "url": "https://www.parliament.uk/mps-lords-and-offices/offices/bicameral/parliamentary-broadcasting-unit/",
+          "note": "Official institutional entry point links Parliamentlive.",
+          "review_method": "web_page_open",
+          "surface": "Parliamentary live and committee coverage"
+        },
+        {
+          "title": "Committee events",
+          "url": "https://parliamentlive.tv/Committees",
+          "note": "Current dated public committee events and recordings listed.",
+          "review_method": "web_page_open",
+          "surface": "Parliamentary live and committee coverage"
+        }
+      ],
+      "findings": [
+        "Parliamentlive chamber/committee event portal is distinct from the existing official YouTube record; committee event pages are not permanent channels."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Committee event coverage",
+          "next_action": "Compare event directory with existing chamber/room records and schedule ingestion; devolved parliamentary services remain separate catalogue families.",
+          "urls": [
+            "https://www.parliament.uk/mps-lords-and-offices/offices/bicameral/parliamentary-broadcasting-unit/",
+            "https://parliamentlive.tv/Committees"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "uk-parliament-youtube"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Costa Rica",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Asamblea Legislativa Costa Rica transmisión en vivo comisiones canal oficial",
+        "Costa Rica Asamblea Legislativa televisión radio canal oficial directo"
+      ],
+      "existing_catalogue_ids": [
+        "costa-rica-assembly-youtube"
+      ],
+      "checked_sources": [
+        {
+          "title": "Assembly live transmission",
+          "url": "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx",
+          "note": "Timeout; indexed official heading describes plenary and committee transmissions.",
+          "review_method": "web_page_open_blocked",
+          "surface": "Parliamentary live and committee coverage"
+        }
+      ],
+      "findings": [
+        "Official assembly page is a plenary/committee candidate; current YouTube search results alone do not establish a new stable provider identity."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Assembly plenary/committee player provenance",
+          "next_action": "Open official portal in browser and follow broadcaster/YouTube links; check current player, event identity and terms.",
+          "urls": [
+            "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "costa-rica-assembly-youtube"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Austria",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Parlament Österreich Livestream Nationalrat Bundesrat Ausschüsse",
+        "Austria parliament official live ORF III committees Mediathek"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament sittings",
+          "url": "https://www.parlament.gv.at/erleben/sitzungen/index.html",
+          "note": "Nationalrat, Bundesrat and Bundesversammlung ORF broadcasts are offered through Mediathek.",
+          "review_method": "web_page_open",
+          "surface": "Parliamentary live and committee coverage"
+        },
+        {
+          "title": "Mediathek",
+          "url": "https://www.parlament.gv.at/aktuelles/mediathek",
+          "note": "Official media index includes plenary transmissions and archive filters.",
+          "review_method": "web_page_open",
+          "surface": "Parliamentary live and committee coverage"
+        }
+      ],
+      "findings": [
+        "Nationalrat, Bundesrat and Bundesversammlung are covered by the official Mediathek family, which is a new catalogue candidate. ORF III is mixed/commentated coverage."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Chamber and public-committee event mapping",
+          "next_action": "Inspect current Mediathek event players and establish recurring chamber/room identities, applicable live-media ownership and reuse, then validate active media before any native-playback promotion.",
+          "urls": [
+            "https://www.parlament.gv.at/erleben/sitzungen/index.html",
+            "https://www.parlament.gv.at/aktuelles/mediathek"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "austria-parliament-mediathek"
+      ],
+      "promoted_catalogue_ids": [
+        "austria-parliament-mediathek"
+      ],
+      "promotion_note": "Promoted as official-page link-outs only. Active media, direct HLS and implemented XMLTV readiness are not implied. Decision evidence: reports/discovery/2026-10-22-expansion-decisions.json."
+    },
+    {
+      "country": "Mauritius",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Mauritius National Assembly official live parliamentary proceedings MBC committees",
+        "site:mauritiusassembly.govmu.org live broadcast"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament TV",
+          "url": "https://parliamenttv.govmu.org/",
+          "note": "Official live/on-demand event portal lists parliamentary sittings and links National Assembly resources.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        },
+        {
+          "title": "Assembly notice",
+          "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/notice/",
+          "note": "Fetch failed; indexed notice links parliamenttv.govmu.org.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Official national event-video portal is a new catalogue candidate."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official national event-video portal is a new catalogue candidate.",
+          "next_action": "Validate event player and institutional cross-link in browser, reuse terms, live-versus-recording behavior.",
+          "urls": [
+            "https://parliamenttv.govmu.org/",
+            "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/notice/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://parliamenttv.govmu.org/",
+        "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/notice/"
+      ],
+      "catalogue_ids_after_review": [
+        "mauritius-national-assembly-parliament-tv"
+      ],
+      "promoted_catalogue_ids": [
+        "mauritius-national-assembly-parliament-tv"
+      ],
+      "promotion_note": "Promoted as official-page link-outs only. Active media, direct HLS and implemented XMLTV readiness are not implied. Decision evidence: reports/discovery/2026-10-22-expansion-decisions.json."
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Riigikogu otseülekanded komisjonid video ametlik",
+        "Estonia parliament live official committee ERR Riigikogu"
+      ],
+      "existing_catalogue_ids": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "checked_sources": [
+        {
+          "title": "Public committee sessions",
+          "url": "https://www.riigikogu.ee/info-ja-meedia/otseulekanded/komisjonide-avalikud-istungid-ja-uritused/",
+          "note": "Official committee/conference live page links recordings and institution YouTube channel.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Existing stream family has an official committee-video fallback; previously failed second HLS remains unverified."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Existing stream family has an official committee-video fallback; previously failed second HLS remains unverified.",
+          "next_action": "Compare active committee player with existing live-2 record, check replacement route and event scheduling before restoring playback.",
+          "urls": [
+            "https://www.riigikogu.ee/info-ja-meedia/otseulekanded/komisjonide-avalikud-istungid-ja-uritused/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.riigikogu.ee/info-ja-meedia/otseulekanded/komisjonide-avalikud-istungid-ja-uritused/"
+      ],
+      "catalogue_ids_after_review": [
+        "estonia-riigikogu-live-1",
+        "estonia-riigikogu-live-2"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Congreso Senado España directo comisiones televisión oficial",
+        "Cortes España canal parlamento RTVE en directo comisiones",
+        "site:senado.es senado directo emisiones"
+      ],
+      "existing_catalogue_ids": [
+        "spain-canal-parlamento",
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "checked_sources": [
+        {
+          "title": "Congress live",
+          "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+          "note": "403; indexed page lists public committee events.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National chamber and committee video"
+        },
+        {
+          "title": "Senate",
+          "url": "https://www.senado.es/",
+          "note": "Official upper-house site opens.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        },
+        {
+          "title": "Senate live",
+          "url": "https://www.senado.es/web/actividadparlamentaria/actualidad/senadoendirecto/index.html",
+          "note": "Indexed official live page separates plenary, permanent deputation and committees.",
+          "review_method": "web_search_result_only",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Senate is a distinct upper-chamber lead absent from catalogue; five failed Congress supplementary feeds are not restored."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Senate is a distinct upper-chamber lead absent from catalogue; five failed Congress supplementary feeds are not restored.",
+          "next_action": "Inspect Senate live/programme player and Congress committee media during sittings; map room/event and reuse scope.",
+          "urls": [
+            "https://www.congreso.es/es/web/guest/congreso-en-directo",
+            "https://www.senado.es/",
+            "https://www.senado.es/web/actividadparlamentaria/actualidad/senadoendirecto/index.html"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.congreso.es/es/web/guest/congreso-en-directo",
+        "https://www.senado.es/",
+        "https://www.senado.es/web/actividadparlamentaria/actualidad/senadoendirecto/index.html"
+      ],
+      "catalogue_ids_after_review": [
+        "spain-canal-parlamento",
+        "spain-congreso-directo-1",
+        "spain-congreso-directo-2",
+        "spain-congreso-directo-3",
+        "spain-congreso-directo-4",
+        "spain-congreso-directo-5"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Poslanecká sněmovna Senát přímý přenos výbory oficiální",
+        "Czech parliament official live committees CT24 streams",
+        "site:senat.cz přímé přenosy živě výbory"
+      ],
+      "existing_catalogue_ids": [
+        "czech-chamber-of-deputies"
+      ],
+      "checked_sources": [
+        {
+          "title": "Watch debates and committees",
+          "url": "https://pspen.psp.cz/public-media/visitor-centre/watch-debates-and-committees/",
+          "note": "Official lower-house guidance confirms online committee broadcasts and links YouTube.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        },
+        {
+          "title": "Senate live/video gallery",
+          "url": "https://www.senat.cz/informace/galerie/videogalerie/index.php",
+          "note": "Indexed official gallery includes live and recorded events; search returned press briefings too.",
+          "review_method": "web_search_result_only",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Existing lower-house HLS covers one source; Senate and lower-house committee players are separate leads requiring event-type filtering."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Existing lower-house HLS covers one source; Senate and lower-house committee players are separate leads requiring event-type filtering.",
+          "next_action": "Open Senate gallery and distinguish plenary/committee sessions from press conferences; resolve lower-house committee rooms.",
+          "urls": [
+            "https://pspen.psp.cz/public-media/visitor-centre/watch-debates-and-committees/",
+            "https://www.senat.cz/informace/galerie/videogalerie/index.php"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://pspen.psp.cz/public-media/visitor-centre/watch-debates-and-committees/",
+        "https://www.senat.cz/informace/galerie/videogalerie/index.php"
+      ],
+      "catalogue_ids_after_review": [
+        "czech-chamber-of-deputies"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Portugal",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Assembleia República ARTV canal parlamento direto comissões oficial",
+        "Portugal parlamento canal vídeo direto reuniões comissões"
+      ],
+      "existing_catalogue_ids": [
+        "portugal-artv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Committee rooms",
+          "url": "https://www.parlamento.pt/Parlamento/Paginas/Comissao.aspx",
+          "note": "Official description says rooms 1–6 support video recording and live/deferred committee transmissions; links ARTV.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Six video-equipped committee rooms are leads beyond the existing ARTV channel; equipment count does not prove six permanent live URLs."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Six video-equipped committee rooms are leads beyond the existing ARTV channel; equipment count does not prove six permanent live URLs.",
+          "next_action": "Inspect ARTV live event directory, establish room/channel mapping and event availability.",
+          "urls": [
+            "https://www.parlamento.pt/Parlamento/Paginas/Comissao.aspx"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.parlamento.pt/Parlamento/Paginas/Comissao.aspx"
+      ],
+      "catalogue_ids_after_review": [
+        "portugal-artv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Greece",
+      "tier": "tier1",
+      "status": "reviewed",
+      "queries": [
+        "Βουλή τηλεόραση ζωντανά επιτροπές κανάλι επίσημο",
+        "Greece Hellenic Parliament official live committees web TV"
+      ],
+      "existing_catalogue_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Parliament TV live",
+          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/Live",
+          "note": "Official page directly links GRNET WebTV-1, WebTV-2 and WebTV-3.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "WebTV-2 and WebTV-3 are additional official slots beyond the single existing TV record."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "WebTV-2 and WebTV-3 are additional official slots beyond the single existing TV record.",
+          "next_action": "Resolve linked media and distinguish parallel committee/plenary slots from mirrors, check rights and event schedules.",
+          "urls": [
+            "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/Live"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/Live"
+      ],
+      "catalogue_ids_after_review": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Assemblée nationale Sénat vidéo direct commissions officiel canaux",
+        "France parlement LCP Public Sénat direct commissions vidéos officielles"
+      ],
+      "existing_catalogue_ids": [
+        "france-national-assembly"
+      ],
+      "checked_sources": [
+        {
+          "title": "Assembly video portal",
+          "url": "https://www.assemblee-nationale.fr/dyn/portail-video",
+          "note": "Official portal describes all public sittings and broadcast committee meetings, plus official social-video links.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        },
+        {
+          "title": "Senate direct",
+          "url": "https://videos.senat.fr/direct",
+          "note": "Robots denial; indexed official page describes plenary and committee/delegation coverage.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Senate live service is a distinct new catalogue candidate; Assembly committee event family extends beyond the current single Assembly record."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Senate live service is a distinct new catalogue candidate; Assembly committee event family extends beyond the current single Assembly record.",
+          "next_action": "Inspect Senate portal in browser and Assembly concurrent events; separately validate LCP/Public Sénat official live services and terms.",
+          "urls": [
+            "https://www.assemblee-nationale.fr/dyn/portail-video",
+            "https://videos.senat.fr/direct"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.assemblee-nationale.fr/dyn/portail-video",
+        "https://videos.senat.fr/direct"
+      ],
+      "catalogue_ids_after_review": [
+        "france-national-assembly"
+      ],
+      "promoted_catalogue_ids": [],
+      "held_candidates": [
+        "france-senate"
+      ]
+    },
+    {
+      "country": "Malta",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Parlament Malta TV live committees official stream",
+        "Malta parliament committee rooms live TVM parliament official"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament home/live",
+          "url": "https://parlament.mt/en/home/",
+          "note": "Official page exposes live/video, Parliament TV schedule and committee-meeting slots; schedule data is dynamically templated.",
+          "review_method": "web_page_open",
+          "surface": "National chamber and committee video"
+        }
+      ],
+      "findings": [
+        "Official Parliament TV/event portal is a new catalogue candidate; no scheduled event in parsed fallback is not proof of no broadcast."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Parliament TV/event portal is a new catalogue candidate; no scheduled event in parsed fallback is not proof of no broadcast.",
+          "next_action": "Resolve TV and committee players in browser, dynamic schedule API and rights; distinguish audio-only committee links from video.",
+          "urls": [
+            "https://parlament.mt/en/home/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://parlament.mt/en/home/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "US House Senate official floor committee live video webcast directory",
+        "US Congress official committee webcast House Senate C SPAN live"
+      ],
+      "existing_catalogue_ids": [
+        "us-house-floorcast",
+        "us-senate-floor-webcast",
+        "us-house-committee-video",
+        "us-senate-committee-webcasts"
+      ],
+      "checked_sources": [
+        {
+          "title": "Senate hearing guidance",
+          "url": "https://www.senate.gov/committees/how_to_committee_hearings.htm",
+          "note": "Official guidance links committee live webcasts and Congress.gov meeting detail pages.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary broadcasts"
+        },
+        {
+          "title": "House live",
+          "url": "https://www.house.gov/watch-houselive",
+          "note": "Institution cross-links live.house.gov.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary broadcasts"
+        }
+      ],
+      "findings": [
+        "Four existing national records cover House/Senate floor and committee families. Congress.gov meeting detail is an additional event/EPG discovery path."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Four existing national records cover House/Senate floor and committee families. Congress.gov meeting detail is an additional event/EPG discovery path.",
+          "next_action": "Compare individual committee players with the existing directories; keep recurring room streams separate from event video.",
+          "urls": [
+            "https://www.senate.gov/committees/how_to_committee_hearings.htm",
+            "https://www.house.gov/watch-houselive"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "us-house-floorcast",
+        "us-senate-floor-webcast",
+        "us-house-committee-video",
+        "us-senate-committee-webcasts"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Cámara Diputadas Diputados Chile Senado TV en vivo comisiones oficial salas",
+        "Chile Senado TV señal 2 comisiones cámara salas transmisión"
+      ],
+      "existing_catalogue_ids": [
+        "chile-camara-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Chamber television",
+          "url": "https://www.camara.cl/prensa/television.aspx",
+          "note": "Fetch failed; official indexed page covers committees and plenary.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary broadcasts"
+        },
+        {
+          "title": "Senate committees",
+          "url": "https://tramitacion.senado.cl/senado/site/edic/base/port/comisiones.html",
+          "note": "Fetch failed; indexed official page exposes live committee events.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary broadcasts"
+        }
+      ],
+      "findings": [
+        "Senate TV/committees are distinct leads beyond Chamber TV. Existing Sala IV candidate remains unresolved, not a fresh promotion."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Senate TV/committees are distinct leads beyond Chamber TV. Existing Sala IV candidate remains unresolved, not a fresh promotion.",
+          "next_action": "Resolve Senate official live portal and committee player identities; carry forward Sala IV room/schedule/reuse validation.",
+          "urls": [
+            "https://www.camara.cl/prensa/television.aspx",
+            "https://tramitacion.senado.cl/senado/site/edic/base/port/comisiones.html"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "chile-camara-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Slovenia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Državni zbor Državni svet neposredni prenosi seje odbori RTV",
+        "Slovenia parliament official live TV SLO 3 committee streams"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "National Council",
+          "url": "https://www.ds-rs.si/",
+          "note": "Official council site links its YouTube presence and committee activity.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary broadcasts"
+        },
+        {
+          "title": "RTV SLO 3 live",
+          "url": "https://365.rtvslo.si/vzivo/tvs3",
+          "note": "Not accessible through tool.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary broadcasts"
+        },
+        {
+          "title": "European Parliament broadcaster directory",
+          "url": "https://www.europarl.europa.eu/at-your-service/sl/stay-informed/channels-covering-parliaments",
+          "note": "Official directory identifies TV Slovenija 3 as Assembly/Council and committee coverage.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary broadcasts"
+        }
+      ],
+      "findings": [
+        "National Assembly/Council and TV SLO 3 are new source families for catalogue research."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "National Assembly/Council and TV SLO 3 are new source families for catalogue research.",
+          "next_action": "Open dz-rs.si and broadcaster live directory in browser, verify national chamber and committee feeds, geography and reuse constraints.",
+          "urls": [
+            "https://www.ds-rs.si/",
+            "https://365.rtvslo.si/vzivo/tvs3",
+            "https://www.europarl.europa.eu/at-your-service/sl/stay-informed/channels-covering-parliaments"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Israel",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Knesset official live committees video channel broadcasts",
+        "כנסת שידורים ישירים ועדות ערוץ הכנסת"
+      ],
+      "existing_catalogue_ids": [
+        "israel-knesset-channel"
+      ],
+      "checked_sources": [
+        {
+          "title": "Knesset broadcasts",
+          "url": "https://main.knesset.gov.il/EN/News/Pages/Broadcasts.aspx",
+          "note": "Redirected to institutional geographic maintenance page.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary broadcasts"
+        },
+        {
+          "title": "Knesset Channel FAQ",
+          "url": "https://www.knesset.tv/faq/",
+          "note": "Indexed broadcaster FAQ describes plenary and committee live coverage.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary broadcasts"
+        }
+      ],
+      "findings": [
+        "Dedicated institutional committee broadcasts are a lead beyond the existing Knesset TV channel; access failure prevents player verification."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Dedicated institutional committee broadcasts are a lead beyond the existing Knesset TV channel; access failure prevents player verification.",
+          "next_action": "Inspect official committee directory from permitted browser session without bypassing geographic restrictions; map concurrent feeds and terms.",
+          "urls": [
+            "https://main.knesset.gov.il/EN/News/Pages/Broadcasts.aspx",
+            "https://www.knesset.tv/faq/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "israel-knesset-channel"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "South Korea",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "국회방송 국회 의사중계 인터넷 생중계 위원회",
+        "Korea National Assembly official live committees NATV webcast"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Assembly internet proceedings",
+          "url": "https://assembly.webcast.go.kr/",
+          "note": "Empty parsed page; indexed official result lists concurrent committee live/VOD and plenary options.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliament and committee broadcasts"
+        }
+      ],
+      "findings": [
+        "Official internet proceedings and NATV are national candidates not yet catalogued."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official internet proceedings and NATV are national candidates not yet catalogued.",
+          "next_action": "Resolve dynamic live committee cards, NATV official cross-link and player identities; distinguish quick VOD from live.",
+          "urls": [
+            "https://assembly.webcast.go.kr/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://assembly.webcast.go.kr/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Latvia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Saeima tiešraides komisijas oficiāli video",
+        "Latvia parliament official live committee streams LTV"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Saeima video/audio streams",
+          "url": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+          "note": "Official live/archive directory and explicit provider-embed conditions: use official Facebook/YouTube stream and unchanged platform embed code.",
+          "review_method": "web_page_open",
+          "surface": "National parliament and committee broadcasts"
+        }
+      ],
+      "findings": [
+        "Official Saeima portal/provider embeds are new candidates; published policy does not support substituting raw media for its required player."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Saeima portal/provider embeds are new candidates; published policy does not support substituting raw media for its required player.",
+          "next_action": "Follow institution-linked YouTube account, validate live embedding and committee event coverage within stated terms.",
+          "urls": [
+            "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Belgium",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Belgique Chambre Sénat direct commissions officiel video",
+        "België Kamer Senaat livestream commissies federaal parlement"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Senate video",
+          "url": "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+          "note": "Official page offers live plenary and selected delayed event video.",
+          "review_method": "web_page_open",
+          "surface": "National parliament and committee broadcasts"
+        },
+        {
+          "title": "Chamber",
+          "url": "https://www.dekamer.be/",
+          "note": "Official chamber home opens; player not yet resolved.",
+          "review_method": "web_page_open",
+          "surface": "National parliament and committee broadcasts"
+        }
+      ],
+      "findings": [
+        "Federal Chamber and Senate video services are new candidates; Flemish committee live portal is also a subnational lead."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Federal Chamber and Senate video services are new candidates; Flemish committee live portal is also a subnational lead.",
+          "next_action": "Resolve Chamber/Senate current live links and distinguish archives; map languages, rooms and reuse terms.",
+          "urls": [
+            "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+            "https://www.dekamer.be/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+        "https://www.dekamer.be/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Botswana",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Botswana Parliament official live proceedings committees television",
+        "site:parliament.gov.bw live broadcast"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Botswana Speaks events",
+          "url": "https://www.botswanaspeaks.gov.bw/category/2/events",
+          "note": "Institutional events page links Watch-Live and says National Assembly proceedings are on its official YouTube channel.",
+          "review_method": "web_page_open",
+          "surface": "National parliament and committee broadcasts"
+        },
+        {
+          "title": "Government DailyNews committee broadcasting",
+          "url": "https://dailynews.gov.bw/news-detail/91995",
+          "note": "Indexed government report describes BTV2 committee broadcasting.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliament and committee broadcasts"
+        }
+      ],
+      "findings": [
+        "Official Assembly YouTube and BTV2 committee coverage are candidates; Ntlo ya Dikgosi coverage needs separate confirmation."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Assembly YouTube and BTV2 committee coverage are candidates; Ntlo ya Dikgosi coverage needs separate confirmation.",
+          "next_action": "Follow Watch-Live institutional link, verify channel identity and live event behavior; check BTV2 official player and advisory-chamber video.",
+          "urls": [
+            "https://www.botswanaspeaks.gov.bw/category/2/events",
+            "https://dailynews.gov.bw/news-detail/91995"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.botswanaspeaks.gov.bw/category/2/events",
+        "https://dailynews.gov.bw/news-detail/91995"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Lithuania",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Seimas tiesiogiai komitetai transliacijos oficialus LRT Seimas",
+        "Lithuania parliament official live committee webcasts"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Seimas",
+          "url": "https://www.lrs.lt/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Atviras Seimas institutional channel",
+          "url": "https://www.youtube.com/channel/UCN6ZSYI-7pxml6bE_zrTgow",
+          "note": "Channel description lists plenary and committee live/recordings and overflow Atviras Seimas 2; institutional backlink still needed.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Seimas video and overflow committee channel are new candidates."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Seimas video and overflow committee channel are new candidates.",
+          "next_action": "Follow institutional live/video links in browser; verify both provider identities, concurrent coverage and terms.",
+          "urls": [
+            "https://www.lrs.lt/",
+            "https://www.youtube.com/channel/UCN6ZSYI-7pxml6bE_zrTgow"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.lrs.lt/",
+        "https://www.youtube.com/channel/UCN6ZSYI-7pxml6bE_zrTgow"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Cape Verde",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Assembleia Nacional Cabo Verde televisão direto comissões oficial",
+        "Cabo Verde parlamento canal transmissão ao vivo RTC"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "ANTV Canal Parlamento",
+          "url": "https://www.parlamento.cv/antv/",
+          "note": "Official portal embeds dated YouTube plenary sessions and has ao vivo option.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official ANTV live/event portal is a new catalogue candidate."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official ANTV live/event portal is a new catalogue candidate.",
+          "next_action": "Inspect live option/provider identity, distinguish ended plenary embeds from current live, check committee coverage and terms.",
+          "urls": [
+            "https://www.parlamento.cv/antv/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.parlamento.cv/antv/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Camera deputati Senato webtv diretta commissioni ufficiale",
+        "Italy parliament official live committee channels Rai Parlamento"
+      ],
+      "existing_catalogue_ids": [
+        "italy-senate"
+      ],
+      "checked_sources": [
+        {
+          "title": "Camera WebTV",
+          "url": "https://webtv.camera.it/",
+          "note": "Official lower-house WebTV opens with current live-event section.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Senato WebTV",
+          "url": "https://webtv.senato.it/",
+          "note": "Official upper-house WebTV opens with live/event and institution YouTube links.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Camera WebTV is a distinct lower-house candidate beyond the existing Senate record; concurrent committee events on both portals are additional leads."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Camera WebTV is a distinct lower-house candidate beyond the existing Senate record; concurrent committee events on both portals are additional leads.",
+          "next_action": "Resolve Camera and parallel committee players by room/event; validate rights and compare Senate mappings.",
+          "urls": [
+            "https://webtv.camera.it/",
+            "https://webtv.senato.it/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://webtv.camera.it/",
+        "https://webtv.senato.it/"
+      ],
+      "catalogue_ids_after_review": [
+        "italy-senate",
+        "italy-camera-webtv"
+      ],
+      "promoted_catalogue_ids": [
+        "italy-camera-webtv"
+      ],
+      "promotion_note": "Promoted as official-page link-outs only. Active media, direct HLS and implemented XMLTV readiness are not implied. Decision evidence: reports/discovery/2026-10-22-expansion-decisions.json."
+    },
+    {
+      "country": "Poland",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Sejm Senat transmisje na żywo komisje oficjalne",
+        "Poland parliament official live committee streams TVP Parlament"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Sejm",
+          "url": "https://www.sejm.gov.pl/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Senate TVP transmission",
+          "url": "https://www.senat.gov.pl/transmisje/transmisja-tvp/",
+          "note": "Official upper-house broadcast page opens; embedded player needs browser.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "TVP Parlament",
+          "url": "https://www.tvpparlament.pl/",
+          "note": "Indexed public-broadcaster portal lists current Sejm retransmissions.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Sejm, Senate and public-broadcaster parliamentary services are new catalogue candidates."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Sejm, Senate and public-broadcaster parliamentary services are new catalogue candidates.",
+          "next_action": "Resolve institutional Sejm transmission directory and Senate/TVP player, including committee concurrency and terms.",
+          "urls": [
+            "https://www.sejm.gov.pl/",
+            "https://www.senat.gov.pl/transmisje/transmisja-tvp/",
+            "https://www.tvpparlament.pl/"
+          ]
+        }
+      ],
+      "watchlist_additions": [
+        "https://www.sejm.gov.pl/",
+        "https://www.senat.gov.pl/transmisje/transmisja-tvp/",
+        "https://www.tvpparlament.pl/"
+      ],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Cyprus",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Βουλή Αντιπροσώπων ζωντανή μετάδοση επιτροπές Κύπρος",
+        "Cyprus House Representatives official live parliament committees RIK"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "House of Representatives",
+          "url": "https://www.parliament.cy/",
+          "note": "Official institutional site opens; current live-player route not yet resolved.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "National House portal is a source lead. Secondary reports about committee livestream rules do not establish actual player availability."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "National House portal is a source lead. Secondary reports about committee livestream rules do not establish actual player availability.",
+          "next_action": "Follow institutional multimedia/live navigation and verify plenary and public committee video rather than relying on policy proposals.",
+          "urls": [
+            "https://www.parliament.cy/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "India",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Sansad TV live Lok Sabha Rajya Sabha committees official webcast",
+        "site:sansad.in committees webcast live Sansad TV"
+      ],
+      "existing_catalogue_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "checked_sources": [
+        {
+          "title": "Sansad TV live",
+          "url": "https://sansadtv.nic.in/live-tv",
+          "note": "Timeout; indexed official page exposes Sansad TV1 YouTube player.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Government webcast",
+          "url": "https://webcast.gov.in/rstvlive/?lang=en",
+          "note": "Indexed government live-webcast page identifies Sansad TV.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Two existing Sansad TV records cover the standing national family; public committee video beyond these is not established by this search."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Two existing Sansad TV records cover the standing national family; public committee video beyond these is not established by this search.",
+          "next_action": "Inspect current official player/provider cross-links and public committee-event availability; do not infer public webcasts for closed committee meetings.",
+          "urls": [
+            "https://sansadtv.nic.in/live-tv",
+            "https://webcast.gov.in/rstvlive/?lang=en"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Slovakia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Národná rada priamy prenos výbory TV NR SR",
+        "Slovakia parliament official live committees streams"
+      ],
+      "existing_catalogue_ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "checked_sources": [
+        {
+          "title": "TV NR SR",
+          "url": "https://tv.nrsr.sk/",
+          "note": "403 response.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "STVR National Council live",
+          "url": "https://www.stvr.sk/televizia/live-nr-sr",
+          "note": "Indexed public broadcaster live player page.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Existing TV NR SR has a public-broadcaster viewing alternative; no distinct stable committee feed established."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Existing TV NR SR has a public-broadcaster viewing alternative; no distinct stable committee feed established.",
+          "next_action": "Inspect current TV NR SR event/room directory and STVR geography/terms; distinguish press-centre events from committee proceedings.",
+          "urls": [
+            "https://tv.nrsr.sk/",
+            "https://www.stvr.sk/televizia/live-nr-sr"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "slovakia-tv-nrsr"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "South Africa",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Parliament South Africa live committees National Assembly NCOP official",
+        "South Africa Parliament TV YouTube committee meetings live official"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament TV and YouTube",
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "note": "Official page links live section and institution YouTube; dated Assembly and committee videos appear separately.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Assembly/NCOP and committee video family is a new catalogue candidate."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Assembly/NCOP and committee video family is a new catalogue candidate.",
+          "next_action": "Follow institution-linked provider and live-event detail pages, map simultaneous committees and identify media/reuse conditions.",
+          "urls": [
+            "https://www.parliament.gov.za/parliament-tv"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Malaysia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Parlimen Malaysia siaran langsung Dewan Rakyat Negara jawatankuasa rasmi",
+        "Malaysia parliament official committee live webcast"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://www.parlimen.gov.my/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "RTM parliamentary broadcast report",
+          "url": "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/ahli-parlimen-boleh-tonton-sidang-dewan-rakyat-di-rtm/",
+          "note": "Indexed public-broadcaster report confirms official Parliament YouTube and RTM live coverage.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Dewan Rakyat/Negara official video and RTM Parliament are new candidates; old webcast URLs are not assumed current."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Dewan Rakyat/Negara official video and RTM Parliament are new candidates; old webcast URLs are not assumed current.",
+          "next_action": "Resolve institutional live/both-chamber provider links and any public committee coverage; validate current RTM player.",
+          "urls": [
+            "https://www.parlimen.gov.my/",
+            "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/ahli-parlimen-boleh-tonton-sidang-dewan-rakyat-di-rtm/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Trinidad Tobago parliament official live Senate House committees channel",
+        "site:ttparliament.org live webcast committees"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament Channel",
+          "url": "https://www.ttparliament.org/parliament-channel/",
+          "note": "Official page links TV schedule, ParlView and YouTube.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "ParlView event portal",
+          "url": "https://parlview.ttparliament.org/xrender",
+          "note": "Fetch failed; indexed portal lists dated House sitting.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Parliament Channel/provider family and event portal are new candidates, including House/Senate and public committees."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Parliament Channel/provider family and event portal are new candidates, including House/Senate and public committees.",
+          "next_action": "Follow official provider links; identify current channel/event players, concurrent committee coverage and rights.",
+          "urls": [
+            "https://www.ttparliament.org/parliament-channel/",
+            "https://parlview.ttparliament.org/xrender"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Timor-Leste",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Parlamento Nacional Timor Leste direto transmissão comissões oficial",
+        "Timor Leste parliament official live TV parliamentary channel"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "National Parliament",
+          "url": "https://www.parlamento.tl/",
+          "note": "Official EM DIRETO section links parliamentary YouTube videos and Canal Parlamento; some linked committee items are field reports, not hearings.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Canal Parlamento/YouTube family is a new candidate; committee reports are not counted as live committee-room feeds."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Canal Parlamento/YouTube family is a new candidate; committee reports are not counted as live committee-room feeds.",
+          "next_action": "Follow Canal Parlamento and institution-linked channel; verify live plenary and actual committee hearing coverage, terms.",
+          "urls": [
+            "https://www.parlamento.tl/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Panama",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Asamblea Nacional Panamá en vivo comisiones ANTV oficial",
+        "Panama parlamento canal televisión oficial directo"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "National Assembly",
+          "url": "https://www.asamblea.gob.pa/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Assembly TV status statement",
+          "url": "https://www.asamblea.gob.pa/Noticias/Noticias/Vicepresidenta-Cano-aclara-situaci%C3%B3n-de-la-TV-y-Web-de-la-Asamblea-Nacional",
+          "note": "Indexed 2024 statement described administrative reactivation; not proof of current live availability.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Assembly TVL and official plenary/committee channels remain candidates; third-party news simulcasts excluded."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Assembly TVL and official plenary/committee channels remain candidates; third-party news simulcasts excluded.",
+          "next_action": "Inspect current institutional video/social links, verify whether TVL is currently live and map committee sources.",
+          "urls": [
+            "https://www.asamblea.gob.pa/",
+            "https://www.asamblea.gob.pa/Noticias/Noticias/Vicepresidenta-Cano-aclara-situaci%C3%B3n-de-la-TV-y-Web-de-la-Asamblea-Nacional"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Suriname",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "De Nationale Assemblee Suriname live uitzending commissies officieel",
+        "Suriname parliament official live DNA TV"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "National Assembly",
+          "url": "https://www.dna.sr/?level=1",
+          "note": "Official Live Streaming & Video Producties section links institution videos and DNA TV productions.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "DNA TV and institutional live-video portal are new candidates; linked news clips are not proof of a standing live feed."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "DNA TV and institutional live-video portal are new candidates; linked news clips are not proof of a standing live feed.",
+          "next_action": "Follow institutional live-feed/mobile and provider links; verify current plenary/committee coverage and rights.",
+          "urls": [
+            "https://www.dna.sr/?level=1"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Jamaica",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Jamaica parliament official live House Senate committees PBCJ",
+        "site:japarliament.gov.jm live broadcast"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Houses of Parliament",
+          "url": "https://japarliament.gov.jm/",
+          "note": "Official site says meetings can be viewed through PBCJ and links youtube.com/user/pbcjamaica; lists committee meetings.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "PBCJ Parliament/Senate",
+          "url": "https://pbcjamaica.org/show/parliamentsenate/",
+          "note": "Public broadcaster describes Parliament Live programme.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Institution-to-PBCJ provenance is established for House, Senate and public committee video; new catalogue family."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Institution-to-PBCJ provenance is established for House, Senate and public committee video; new catalogue family.",
+          "next_action": "Inspect current PBCJ live/player and parliamentary event embeds, separate general channel schedule from parliamentary sessions.",
+          "urls": [
+            "https://japarliament.gov.jm/",
+            "https://pbcjamaica.org/show/parliamentsenate/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Montenegro",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Skupština Crne Gore uživo odbori zvanično parlamentarni kanal",
+        "Montenegro parliament official live committees RTV CG"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Assembly",
+          "url": "https://www.skupstina.me/",
+          "note": "One-line parsed shell; video content unavailable to parser.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Assembly parliamentary lexicon",
+          "url": "https://api.skupstina.me/media/files/1644227926-parlamentarni-leksikon.pdf",
+          "note": "Indexed institutional document describes official YouTube live/recorded sittings.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Assembly video and RTCG parliamentary channel are new candidates; current player unresolved."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Assembly video and RTCG parliamentary channel are new candidates; current player unresolved.",
+          "next_action": "Inspect dynamic Assembly portal and institution-linked YouTube/RTCG; map plenary and committee services, terms.",
+          "urls": [
+            "https://www.skupstina.me/",
+            "https://api.skupstina.me/media/files/1644227926-parlamentarni-leksikon.pdf"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Philippines",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Philippines House Senate official live committee hearings channels",
+        "site:congress.gov.ph livestream site:senate.gov.ph live"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Senate",
+          "url": "https://www.senate.gov.ph/",
+          "note": "Empty parsed page.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "House",
+          "url": "https://www.congress.gov.ph/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "PTV Congress TV launch",
+          "url": "https://ptvnews.ph/congresstv-launched-on-ptvs-free-to-air-digital-channel-14-in-metro-manila/",
+          "note": "Timeout; indexed public-broadcaster announcement establishes Congress TV launch, not current web player.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "House/Senate institutional webcasts and Congress TV are candidates. October 2026 Senate TV launch appeared in secondary reporting and requires primary confirmation; UAT budget portal excluded as production evidence."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "House/Senate institutional webcasts and Congress TV are candidates. October 2026 Senate TV launch appeared in secondary reporting and requires primary confirmation; UAT budget portal excluded as production evidence.",
+          "next_action": "Verify current institutional channel links and primary IBC/PTV Senate TV announcement/player; include concurrent committee hearings.",
+          "urls": [
+            "https://www.senate.gov.ph/",
+            "https://www.congress.gov.ph/",
+            "https://ptvnews.ph/congresstv-launched-on-ptvs-free-to-air-digital-channel-14-in-metro-manila/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Dominican Republic",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Cámara Diputados Senado República Dominicana en vivo comisiones oficial televisión",
+        "República Dominicana TV Cámara Senado canal oficial directo"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Chamber of Deputies",
+          "url": "https://camaradediputados.gob.do/",
+          "note": "Official site opens; indexed current live section.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Senate",
+          "url": "https://www.senadord.gob.do/",
+          "note": "Official page has Transmisión en Vivo section.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Both national chambers have official video-service candidates absent from catalogue."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Both national chambers have official video-service candidates absent from catalogue.",
+          "next_action": "Inspect each live player and institutional provider cross-link; map public committee events and rights.",
+          "urls": [
+            "https://camaradediputados.gob.do/",
+            "https://www.senadord.gob.do/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Mongolia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "УИХ шууд парламент телевиз байнгын хороо албан ёсны",
+        "Mongolia parliament official live standing committees TV"
+      ],
+      "existing_catalogue_ids": [
+        "mongolia-parliament-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "Parliament meeting table",
+          "url": "https://parliament.mn/meetings/table",
+          "note": "Empty parsed page; indexed official table lists committee rooms/times.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Existing Parliament TV family has an institutional committee schedule lead; programme listings alone do not establish additional room video."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Existing Parliament TV family has an institutional committee schedule lead; programme listings alone do not establish additional room video.",
+          "next_action": "Resolve dynamic official meeting/video detail, match committee rooms to current live players and avoid treating third-party TV listings as provenance.",
+          "urls": [
+            "https://parliament.mn/meetings/table"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "mongolia-parliament-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Argentina",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Diputados Senado Argentina en vivo comisiones DTV Senado TV oficial",
+        "Congreso Argentina canales oficiales vivo comisiones"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Chamber of Deputies",
+          "url": "https://www.hcdn.gob.ar/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Senate",
+          "url": "https://www.senado.gob.ar/",
+          "note": "Official upper-house site opens.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "DTV and Senado TV are distinct national candidates; committee event players may be separate from standing TV channels."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "DTV and Senado TV are distinct national candidates; committee event players may be separate from standing TV channels.",
+          "next_action": "Follow institutional TV links, verify current provider identities and concurrent committee broadcasts with terms.",
+          "urls": [
+            "https://www.hcdn.gob.ar/",
+            "https://www.senado.gob.ar/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Hungary",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Országgyűlés élő közvetítés bizottság hivatalos parlament",
+        "Hungary parliament official live committee broadcasts"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament live transmissions",
+          "url": "https://www.parlament.hu/elo-kozvetitesek",
+          "note": "CAPTCHA page rather than programme content.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Public broadcaster parliamentary coverage update",
+          "url": "https://mediaklikk.hu/cikk/2026/09/08/ujraindult-a-parlamenti-kozvetites-a-kozteven",
+          "note": "Indexed September 2026 broadcaster announcement describes resumed parliamentary coverage.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Parliament live page and public broadcaster coverage are candidates; independent parlamenti.tv not assumed institutional."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Parliament live page and public broadcaster coverage are candidates; independent parlamenti.tv not assumed institutional.",
+          "next_action": "Inspect official live page in normal browser, confirm plenary/legislation-committee players and usage terms.",
+          "urls": [
+            "https://www.parlament.hu/elo-kozvetitesek",
+            "https://mediaklikk.hu/cikk/2026/09/08/ujraindult-a-parlamenti-kozvetites-a-kozteven"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Croatia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Hrvatski sabor sjednice odbori uživo saborska televizija službeno",
+        "Croatia parliament official live committees HRT Sabor"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Sabor public committee webcast notice",
+          "url": "https://sabor.hr/index.php/hr/press/kratke-obavijesti/informacija-o-internetskom-prijenosu-uzivo-25-sjednice-odbora-za-0",
+          "note": "Fetch failed; indexed September 2026 institutional notice links Sabor YouTube for a committee meeting.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Sabor FAQ",
+          "url": "https://www.sabor.hr/index.php/hr/cesta-pitanja",
+          "note": "Indexed FAQ describes chamber live and archived proceedings.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official chamber webcast and public committee YouTube are new candidates."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official chamber webcast and public committee YouTube are new candidates.",
+          "next_action": "Inspect current institutional video portal/YouTube backlink; establish public committee player identity and reuse terms.",
+          "urls": [
+            "https://sabor.hr/index.php/hr/press/kratke-obavijesti/informacija-o-internetskom-prijenosu-uzivo-25-sjednice-odbora-za-0",
+            "https://www.sabor.hr/index.php/hr/cesta-pitanja"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Câmara Senado Brasil TV ao vivo comissões canais oficiais",
+        "Brasil congresso TV Senado TV Câmara múltiplos canais comissões"
+      ],
+      "existing_catalogue_ids": [
+        "brazil-tv-camara"
+      ],
+      "checked_sources": [
+        {
+          "title": "TV Câmara reception/embed",
+          "url": "https://www.camara.leg.br/tv/como-sintonizar",
+          "note": "Official page publishes camara.leg.br/tv/aovivo/embed iframe.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "TV Senado live",
+          "url": "https://www12.senado.leg.br/tv/ao-vivo",
+          "note": "Not accessible through tool.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Senate communication services",
+          "url": "https://www12.senado.leg.br/assessoria-de-imprensa/lista-dos-servicos-da-secom",
+          "note": "Indexed institution description says TV Senado offers eight live channels for plenary/committees.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "TV Senado and eight-channel family are leads beyond existing TV Câmara; official lower-house embed is explicitly documented."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "TV Senado and eight-channel family are leads beyond existing TV Câmara; official lower-house embed is explicitly documented.",
+          "next_action": "Resolve Senate eight-slot player directory and Câmara simultaneous committee streams; verify identities/terms without guessing CDN routes.",
+          "urls": [
+            "https://www.camara.leg.br/tv/como-sintonizar",
+            "https://www12.senado.leg.br/tv/ao-vivo",
+            "https://www12.senado.leg.br/assessoria-de-imprensa/lista-dos-servicos-da-secom"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "brazil-tv-camara"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Namibia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Namibia Parliament official live National Assembly National Council committees NBC",
+        "site:parliament.na live stream"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://www.parliament.na/",
+          "note": "Official home links Watch Live/Facebook and Parliament YouTube; dated current Assembly video appears.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Institution-linked live video is a new candidate; Assembly, Council and committees need separate event mapping."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Institution-linked live video is a new candidate; Assembly, Council and committees need separate event mapping.",
+          "next_action": "Follow institution provider links; verify Council/public committee availability and distinguish outreach clips from hearings.",
+          "urls": [
+            "https://www.parliament.na/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Indonesia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "DPR DPD MPR TV Parlemen siaran langsung komisi resmi",
+        "Indonesia parliament official live committee streams TVR Parlemen"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "TVR Parlemen live",
+          "url": "https://tvrparlemen.dpr.go.id/live",
+          "note": "Official DPR live service states live parliamentary meetings; links AKD live and channel list.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Regional Representative Council",
+          "url": "https://www.dpd.go.id/",
+          "note": "Empty parsed page.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "DPR TVR Parlemen and AKD committee channels are new candidates; DPD/MPR require their own official mapping."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "DPR TVR Parlemen and AKD committee channels are new candidates; DPD/MPR require their own official mapping.",
+          "next_action": "Follow official channel list and AKD live slots, confirm committee room/event identities; inspect DPD/MPR institutional provider links.",
+          "urls": [
+            "https://tvrparlemen.dpr.go.id/live",
+            "https://www.dpd.go.id/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Colombia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Senado Cámara Colombia Canal Congreso en vivo comisiones oficial",
+        "Colombia Congreso televisión directo comisiones canales oficiales"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Senate",
+          "url": "https://www.senado.gov.co/",
+          "note": "Official site includes YouTube iframe.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "House of Representatives",
+          "url": "https://www.camara.gov.co/",
+          "note": "Official institutional home opens.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "RTVC Canal Congreso relay",
+          "url": "https://parrilla.rtvc.gov.co/node/38829",
+          "note": "Indexed public-broadcaster programme describes Senate/House plenary and committee live/delayed coverage.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Canal Congreso and chamber/committee provider families are new candidates."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Canal Congreso and chamber/committee provider families are new candidates.",
+          "next_action": "Follow current institutional TV/provider links, map simultaneous commission streams and check reuse terms.",
+          "urls": [
+            "https://www.senado.gov.co/",
+            "https://www.camara.gov.co/",
+            "https://parrilla.rtvc.gov.co/node/38829"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Bulgaria",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Народно събрание на живо комисии видео официално",
+        "Bulgaria parliament official live committees BNT"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "National Assembly video",
+          "url": "https://www.parliament.bg/tv/video",
+          "note": "Empty parsed page; indexed official description explicitly covers live plenary and committees.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official national plenary/committee video directory is a new candidate."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official national plenary/committee video directory is a new candidate.",
+          "next_action": "Inspect dynamic live slots in browser, map room/event feeds and verify terms; party rebroadcasts excluded.",
+          "urls": [
+            "https://www.parliament.bg/tv/video"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "North Macedonia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Собрание директен пренос комисии собраниски канал",
+        "North Macedonia parliament official live committee streams MRT"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Assembly television service",
+          "url": "https://www.sobranie.mk/parliament-channel-tv-studio.nspx",
+          "note": "Official service page opens.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Assembly home",
+          "url": "https://www.sobranie.mk/home.nspx",
+          "note": "Official home opens; indexed navigation has Live broadcast.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Assembly TV/live family is a new candidate. Multi-room coverage reported by implementation partner needs confirmation at the institution player."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Assembly TV/live family is a new candidate. Multi-room coverage reported by implementation partner needs confirmation at the institution player.",
+          "next_action": "Resolve current live/committee-room directory and MRT parliamentary service; verify each room rather than relying on partner description.",
+          "urls": [
+            "https://www.sobranie.mk/parliament-channel-tv-studio.nspx",
+            "https://www.sobranie.mk/home.nspx"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Thailand",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "รัฐสภา ถ่ายทอดสด กรรมาธิการ โทรทัศน์รัฐสภา ทางการ",
+        "Thailand parliament official live House Senate committee streams"
+      ],
+      "existing_catalogue_ids": [
+        "thailand-parliament-tv"
+      ],
+      "checked_sources": [
+        {
+          "title": "TPchannel live",
+          "url": "https://www.tpchannel.org/live",
+          "note": "Official parliamentary radio/TV service opens.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "House live portal",
+          "url": "https://live.parliament.go.th/en",
+          "note": "Official live portal opens with minimal parsed content.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Existing parliamentary TV family has a separate institutional event-discovery portal; committee and Senate coverage need event-level mapping."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Existing parliamentary TV family has a separate institutional event-discovery portal; committee and Senate coverage need event-level mapping.",
+          "next_action": "Inspect live House/Senate committee cards, identify additional concurrent streams and terms without duplicating the existing TV feed.",
+          "urls": [
+            "https://www.tpchannel.org/live",
+            "https://live.parliament.go.th/en"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [
+        "thailand-parliament-tv"
+      ],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Serbia",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Народна скупштина пренос уживо одбори званично",
+        "Serbia parliament official live committee streams RTS"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "National Assembly broadcasts",
+          "url": "https://www.parlament.gov.rs/преноси.2091.html",
+          "note": "Official broadcasts page opens; navigation includes committee and working-body proceedings.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Assembly plenary/committee broadcasts are new candidates. Republika Srpska search result belongs to Bosnia and Herzegovina and is excluded from Serbia coverage."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Assembly plenary/committee broadcasts are new candidates. Republika Srpska search result belongs to Bosnia and Herzegovina and is excluded from Serbia coverage.",
+          "next_action": "Inspect live event/player links and committee rooms on Serbia institutional portal; verify provider and terms.",
+          "urls": [
+            "https://www.parlament.gov.rs/преноси.2091.html"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Ghana",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Ghana parliament official live committees Parliament TV",
+        "site:parliament.gh live broadcast"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://www.parliament.gh/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Institutional committees",
+          "url": "https://parliament.gh/committees",
+          "note": "Indexed official committee directory; no current player established.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Parliament YouTube appeared in discovery but institutional backlink and committee livestream availability remain unresolved; GhanaWeb rebroadcast excluded."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Parliament YouTube appeared in discovery but institutional backlink and committee livestream availability remain unresolved; GhanaWeb rebroadcast excluded.",
+          "next_action": "Retry institutional site in browser, establish official channel provenance and inspect plenary/public committee feeds.",
+          "urls": [
+            "https://www.parliament.gh/",
+            "https://parliament.gh/committees"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Albania",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Kuvendi Shqipërisë transmetim drejtpërdrejt komisionet zyrtare",
+        "Albania parliament official live committees RTSH Kuvend"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Assembly",
+          "url": "https://www.parlament.al/",
+          "note": "One-line dynamic shell; no parsed player.",
+          "review_method": "web_page_open_empty",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "RTSH current parliamentary coverage notice",
+          "url": "https://rtsh.al/rti/en/albanian-parliament-postpones-plenary-session-to-october-22/",
+          "note": "Indexed public-broadcaster October 2026 notice confirms RTSH Kuvend and institutional Facebook coverage.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "RTSH Kuvend and official committee provider channels are new candidates; parliamentary manual describes RTSH exclusive broadcast role, requiring terms review."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "RTSH Kuvend and official committee provider channels are new candidates; parliamentary manual describes RTSH exclusive broadcast role, requiring terms review.",
+          "next_action": "Inspect current RTSH Kuvend and institutional committee links/provider identity; retain distinction between broadcaster rights and public viewing.",
+          "urls": [
+            "https://www.parlament.al/",
+            "https://rtsh.al/rti/en/albanian-parliament-postpones-plenary-session-to-october-22/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Sri Lanka",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Sri Lanka parliament official live committees Parliament TV",
+        "site:parliament.lk live broadcast committees"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Committee video archive",
+          "url": "https://www.parliament.lk/en/parliament-live/committee-on-demand",
+          "note": "Official page lists dated Public Finance, Public Enterprises and Public Accounts committee videos and links Committee Live.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Chamber archive",
+          "url": "https://www.parliament.lk/en/parliament-live/chamber-on-demand",
+          "note": "Official page links WATCH LIVE and dated chamber videos.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Institutional chamber and committee live services are new candidates; archives are separately labelled."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Institutional chamber and committee live services are new candidates; archives are separately labelled.",
+          "next_action": "Follow current Chamber Live and Committee Live links, verify provider identities, concurrent committee slots and published usage conditions.",
+          "urls": [
+            "https://www.parliament.lk/en/parliament-live/committee-on-demand",
+            "https://www.parliament.lk/en/parliament-live/chamber-on-demand"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Singapore",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Singapore parliament official live sittings committee hearings CNA",
+        "site:parliament.gov.sg live webcast committees"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "MDDI Parliament livestream and terms",
+          "url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+          "note": "Government explicitly links MDDI YouTube; terms restrict restreaming to qualifying local accredited media under conditions.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official MDDI viewing link is a national candidate; raw-restream/IPTV eligibility is not established by public availability."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official MDDI viewing link is a national candidate; raw-restream/IPTV eligibility is not established by public availability.",
+          "next_action": "Use official viewing-link path for any initial candidate; review exact embedding/restream terms before enabling playback. Public select-committee video not established.",
+          "urls": [
+            "https://www.mddi.gov.sg/resources/parliament-livestream/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Guyana",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Guyana Parliament official live National Assembly committees",
+        "site:parliament.gov.gy live video"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://www.parliament.gov.gy/",
+          "note": "Fetch failed; indexed official home lists Live Stream and video recordings.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Committee business",
+          "url": "https://parliament.gov.gy/committee-business",
+          "note": "Indexed institution page describes committee activity; no public live player resolved.",
+          "review_method": "web_search_result_only",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official National Assembly live portal is a new candidate; committee video availability unresolved."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official National Assembly live portal is a new candidate; committee video availability unresolved.",
+          "next_action": "Inspect official live embed and institutional provider cross-links; confirm any public committee broadcasts and terms.",
+          "urls": [
+            "https://www.parliament.gov.gy/",
+            "https://parliament.gov.gy/committee-business"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Lesotho",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Lesotho Parliament National Assembly Senate official live committees",
+        "Lesotho parliament TV livestream official"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://parliament.ls/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "National Assembly videos",
+          "url": "https://nationalassembly.parliament.ls/videos/",
+          "note": "Official page links National Assembly YouTube; visible examples are virtual tour and glossary.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        },
+        {
+          "title": "Senate",
+          "url": "https://senate.parliament.ls/",
+          "note": "Fetch failed.",
+          "review_method": "web_page_open_blocked",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Institutional Assembly YouTube provenance exists, but current live plenary/committee availability is not established; tour videos are not live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Institutional Assembly YouTube provenance exists, but current live plenary/committee availability is not established; tour videos are not live streams.",
+          "next_action": "Inspect institution-linked channel live tab and Senate media navigation; record unavailable if only archives/outreach content is present.",
+          "urls": [
+            "https://parliament.ls/",
+            "https://nationalassembly.parliament.ls/videos/",
+            "https://senate.parliament.ls/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    },
+    {
+      "country": "Moldova",
+      "tier": "tier2",
+      "status": "reviewed",
+      "queries": [
+        "Parlament Moldova live comisii transmisiuni oficial",
+        "Moldova parliament official live committee streams"
+      ],
+      "existing_catalogue_ids": [],
+      "checked_sources": [
+        {
+          "title": "Parliament",
+          "url": "https://parlament.md/Portals/",
+          "note": "Official home/video-gallery navigation opens; indexed home has Live.",
+          "review_method": "web_page_open",
+          "surface": "National parliamentary live/video"
+        }
+      ],
+      "findings": [
+        "Official Parliament live/video family is a new candidate. Reported upgraded broadcasting infrastructure does not prove every committee has a live player."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Official Parliament live/video family is a new candidate. Reported upgraded broadcasting infrastructure does not prove every committee has a live player.",
+          "next_action": "Resolve current Live and committee event links, verify provider identities and room coverage, review reuse terms.",
+          "urls": [
+            "https://parlament.md/Portals/"
+          ]
+        }
+      ],
+      "watchlist_additions": [],
+      "catalogue_ids_after_review": [],
+      "promoted_catalogue_ids": []
+    }
+  ],
+  "subnational_scope": "User expanded the task to all first-level legislative parliaments and committee-room feeds. National research is recorded below; subnational research must be tracked separately and is not implied complete by the 71-country count.",
+  "expansion_decisions": "reports/discovery/2026-10-22-expansion-decisions.json"
+}

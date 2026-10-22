@@ -48,6 +48,9 @@ for (const [locale, values] of Object.entries(rows)) {
   translations[locale] = Object.fromEntries(keys.map((key, index) => [key, values[index]]));
   translations[locale].timeNote = localTimeNotes[locale];
 }
+for (const [locale, pack] of Object.entries(window.ParliamentStreamsExtraLocales ?? {})) {
+  translations[locale] = pack.schedule;
+}
 function message(locale, key, values = {}) {
   const value = translations[locale]?.[key] ?? translations.en[key] ?? key;
   return value.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");

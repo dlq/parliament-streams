@@ -1,0 +1,73 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official service, institutional identity, event/schedule surface, accessibility unknowns and rights posture reviewed on 2026-10-22. Ready only as an official-page link-out. Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json. No active-media, HLS or XMLTV claim.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "japan-house-of-representatives-webtv",
+    "name": "Japan House of Representatives WebTV",
+    "jurisdiction_level": "national",
+    "country_or_region": "Japan",
+    "legislature": "House of Representatives of Japan",
+    "external_ids": {
+      "wikidata_qid": "Q659587",
+      "ipu_country_code": "JP",
+      "ipu_parliament_code": "JP",
+      "ipu_chamber_code": "JP-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q659587",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/JP/JP-LC01/",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+      }
+    ],
+    "language": "Japanese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.shugiintv.go.jp/jp/",
+    "provenance_note": "Official House proceedings portal linked to the House website and the upper-house service. Chromium returned HTTP 200 and displayed the current Diet term, a dated concurrent committee-broadcast schedule and searchable recordings. This is one portal covering chamber and committee events, not a separate permanent feed for each committee.",
+    "technical_status": "link_only",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.shugiintv.go.jp/jp/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The official broadcast copyright page says website links are generally free, while text, photographs and video remain subject to copyright. No broad independent live-media playback permission was established.",
+      "evidence": [
+        "https://www.shugiintv.go.jp/jp/index.php?ex=CR"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+    }
+  }
+}

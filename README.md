@@ -281,10 +281,21 @@ back to the generated snapshot if that request is unavailable.
 
 The static interface supports English, French, Spanish, Brazilian Portuguese,
 Danish, German, Estonian, Greek, Hindi, Irish, Italian, Luxembourgish, Dutch,
-Norwegian Bokmal, Slovak, Thai, Simplified Chinese, Inuktitut syllabics, and
-te reo Maori. Select a
+Norwegian Bokmal, Slovak, Thai, Simplified Chinese, Inuktitut syllabics,
+te reo Maori, Czech, Finnish, Swedish, and Traditional Chinese (23 locales).
+Select a
 language in the site header or use `?lang=fr` (substituting a supported locale
 code) in a shared URL; the selection is also stored locally in the browser.
+Chinese browser locales for Taiwan, Hong Kong, and Macao select Traditional
+Chinese unless an explicit Simplified Chinese script is requested. The four
+additional packs live in `site/extra-locales.js`; catalogue, map, schedule, and
+IPTV/VLC messages are checked for complete key coverage. Czech source counts
+use the locale's plural categories. Dates, numbers, and sorting use `Intl`.
+
+IPTV setup, copy feedback, and VLC desktop instructions follow the selected
+language on both the catalogue and schedule pages. The external VideoLAN
+documentation link is labelled as English. Exact VLC menu wording can vary
+with the installed VLC version and interface language.
 
 The locale setting translates interface chrome and project-authored explanatory
 copy. Official source names, programme records, attribution text, permission
@@ -296,6 +307,9 @@ assistive technology does not pronounce them as translated interface text.
 The Inuktitut syllabics interface is a best-effort machine-generated draft,
 using terminology sources from Nunavut and awaiting review by an Inuktitut
 speaker. It must not be treated as an authoritative translation.
+The Czech, Finnish, Swedish, and Traditional Chinese additions also need native
+speaker review. Automated coverage and accessibility checks verify interface
+behavior, not linguistic accuracy or the completeness of source-language video.
 
 Current and historical validation work is recorded in dated reports. The latest
 repository-wide research summaries are:
@@ -399,10 +413,10 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-22, all 104 channel records have at least one official schedule,
+As of 2026-10-22, all 112 channel records have at least one official schedule,
 agenda, meeting, or dated video-event surface recorded. This is source coverage,
 not programme-guide coverage: 17 unique URLs have implemented parsers, while
-76 of the 93 recorded URLs remain planned or link-only research sources. See
+84 of the 101 recorded URLs remain planned or link-only research sources. See
 `reports/epg-discovery-2026-08-24.md` for the dated source-by-source discovery
 baseline.
 
@@ -754,3 +768,28 @@ where openness could improve: stable HLS or documented embeds, JSON schedules,
 event IDs, now/next signals, timezone data, chamber labels, captions/audio
 metadata, plain-language terms, browser compatibility, and clear off-air
 signals.
+
+
+### Country And First-Level Legislature Audit (2026-10-22)
+
+The [national research ledger](reports/discovery/2026-10-22-country-research.md)
+records an initial official-source discovery pass for all 71 maintained Tier 1
+and Tier 2 countries. This is not an exhaustive or playback-validated census.
+The [subnational ledger](reports/discovery/2026-10-22-subnational-research.md)
+tracks the separate, expanding inventory of first-level legislatures and
+regional deliberative councils, their targeted searches and unresolved leads.
+Special-status and overseas bodies require explicit scope review; a country
+with no listed rows has not been established to have no relevant bodies.
+
+The [first expansion decisions](reports/discovery/2026-10-22-expansion-decisions.json)
+add eight official viewing links: Japan's two chamber services, Austria,
+Mauritius, Italy's lower house, Nagasaki committees, Córdoba's provincial
+Legislature and Santa Catarina TV Alesc. They add no direct HLS feeds or
+implemented XMLTV parsers. Iceland, Skåne and France's Senate remain tracked
+research candidates with specific access or source-condition follow-ups.
+
+Country-name searches in the catalogue and coverage map include documented
+subnational sources as well as national ones. For example, Canada finds Alberta,
+Ontario and Québec. Searches recognize both the current interface's localized
+country name and its English name; jurisdiction-level and source-type filters
+still apply. These country relationships are shared in `site/map-i18n.js`.

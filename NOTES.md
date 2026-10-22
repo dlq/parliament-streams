@@ -1904,3 +1904,45 @@ static payloads tested from this environment. For that reason the scraper
 returns empty unless the watch metadata is explicit. This keeps YouTube as a
 provider-managed embed fallback, not an HLS substitute, and avoids extracting
 YouTube manifests.
+
+
+## 2026-10-22 — First Country-Audit Promotion Batch
+
+Added eight official-page link-outs: Japan House of Representatives and Sangiin,
+Austria Parliament Mediathek, Mauritius Parliament TV, Italy Camera WebTV,
+Nagasaki's committee directory, Córdoba provincial Legislature video and Santa
+Catarina TV Alesc. Catalogue total: 112 (50 national, 56 subnational, six
+supranational). No new native HLS streams or implemented XMLTV scrapers.
+
+Retained three researching candidates: Iceland and Skåne have browser access
+failures; France's Senate hyperlink terms require prior webmaster notification,
+which has not been sent. Nagasaki's official directory maps eight current and
+three historical committee channels, retained separately from active playback.
+
+The subnational ledger now records initial searches for 522 jurisdictions across
+31 countries, including 88 new Czech, Slovak, Polish, French, Greek and Uruguayan
+bodies. Forty countries still need first-level scope/inventory review; several
+already represented countries have explicit special-status/territorial gaps.
+Research counts are not counts of validated streams. Corrected Buenos Aires
+province versus city identity and removed unrelated executive/tourist media
+leads from targeted regional searches.
+
+New regional records are mapped to their parent countries. A targeted browser
+check exposed country-name searches missing regions; map searches now include
+the localized parent country, with regression checks for Argentina/Córdoba,
+Japan/Nagasaki and Brazil/Santa Catarina. The compact visual design is unchanged.
+
+Evidence and decisions: `reports/discovery/2026-10-22-expansion-summary.md`,
+`reports/discovery/2026-10-22-expansion-decisions.json`,
+`reports/health/2026-10-22-expansion-browser.json`, and
+`reports/health/2026-10-22-expansion-site-check.json`.
+
+Validation: `make verify` passed (109 tests, one skip, 91% coverage), followed by
+passing HTML/Playwright/Axe checks after the map-search fix. Targeted source
+checks passed at 1280px and 320px, plus all three new parent-country links.
+
+Country-search follow-up: shared parent-country relationships now serve both the
+catalogue and map. Canada searches include Alberta, Ontario and Québec alongside
+national sources; localized country names are recognized too. Desktop/mobile
+regression checks cover Canada and French Allemagne/Bavaria. This is a search
+behaviour change; the planned grouped-list presentation remains deferred.

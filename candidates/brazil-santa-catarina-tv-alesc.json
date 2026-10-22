@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official service, institutional identity, event/schedule surface, accessibility unknowns and rights posture reviewed on 2026-10-22. Ready only as an official-page link-out. Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json. No active-media, HLS or XMLTV claim.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "brazil-santa-catarina-tv-alesc",
+    "name": "Santa Catarina TV Alesc",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Santa Catarina",
+    "legislature": "Assembleia Legislativa do Estado de Santa Catarina",
+    "external_ids": {
+      "wikidata_qid": "Q9633207",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q9633207",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+      }
+    ],
+    "language": "Portuguese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.alesc.sc.gov.br/tv/",
+    "provenance_note": "Official Assembly TV Alesc page and its institutional About page were opened through web retrieval; the live section and legislative broadcaster identity are explicit. Direct HTTP and Chromium retrieval timed out from the Toronto research environment. This is an official-page viewing record with that access limitation, not validated direct playback or an always-on uptime claim.",
+    "technical_status": "link_only",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.alesc.sc.gov.br/tv/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official Assembly ownership and public viewing are documented, but no broad independent audiovisual redistribution or native-playback permission was found in this pass.",
+      "evidence": [
+        "https://www.alesc.sc.gov.br/tv/",
+        "https://www.alesc.sc.gov.br/tv/sobre/"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+    }
+  }
+}

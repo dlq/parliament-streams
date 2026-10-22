@@ -1,0 +1,58 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "The official regional assembly web-TV page was identified, but Chromium received HTTP 403 Access Denied. Retain the source for a current player, event/schedule and reuse-terms check before promotion.",
+    "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json."
+  ],
+  "channel": {
+    "id": "sweden-skane",
+    "name": "Skåne Regional Assembly WebTV",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Skåne",
+    "legislature": "Region Skåne regionfullmäktige",
+    "external_ids": {
+      "wikidata_qid": "Q3232565",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q3232565",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional name and jurisdiction matched; promotion remains blocked by the documented source/player review, not by a playback assumption."
+      }
+    ],
+    "language": "Swedish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.skane.se/politik-och-demokrati/politik/webb-tv-fran-regionfullmaktige/",
+    "provenance_note": "The official regional assembly web-TV page was identified, but Chromium received HTTP 403 Access Denied. Retain the source for a current player, event/schedule and reuse-terms check before promotion.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": null
+    },
+    "epg_sources": [],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Rights and third-party playback terms have not yet been reviewed.",
+      "evidence": [
+        "https://www.skane.se/politik-och-demokrati/politik/webb-tv-fran-regionfullmaktige/"
+      ],
+      "recommendation": "Keep link-out only until source conditions are reviewed."
+    }
+  }
+}

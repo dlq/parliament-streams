@@ -191,10 +191,17 @@ async function init() {
   elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
   elements.locale.value = state.locale;
   elements.locale.addEventListener("change", () => {
-    localStorage.setItem("parliament-streams-locale", elements.locale.value);
-    const params = new URLSearchParams(window.location.search);
-    params.set("lang", elements.locale.value);
-    window.location.search = params.toString();
+    state.locale = supportedLocale(elements.locale.value);
+    localStorage.setItem("parliament-streams-locale", state.locale);
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", state.locale);
+    history.replaceState({}, "", url);
+    applyTranslations();
+    renderFilters();
+    elements.jurisdiction.value = state.jurisdiction;
+    elements.status.value = state.status;
+    renderFreshness();
+    render();
   });
 
   let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;

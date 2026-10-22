@@ -1,0 +1,144 @@
+{
+  "research_date": "2026-10-22",
+  "scope": "First promotion batch from the country-by-country and first-level subnational audit.",
+  "method": "Official institutional source and Wikidata identity checks, Chromium/HTTP retrieval, dated-event/schedule surfaces and source conditions. Link-only readiness is distinct from media playback and HLS/EPG readiness.",
+  "added_as_official_links": [
+    {
+      "id": "japan-house-of-representatives-webtv",
+      "official_url": "https://www.shugiintv.go.jp/jp/",
+      "wikidata_qid": "Q659587",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official House proceedings portal linked to the House website and the upper-house service. Chromium returned HTTP 200 and displayed the current Diet term, a dated concurrent committee-broadcast schedule and searchable recordings. This is one portal covering chamber and committee events, not a separate permanent feed for each committee.",
+      "rights_posture": "The official broadcast copyright page says website links are generally free, while text, photographs and video remain subject to copyright. No broad independent live-media playback permission was established.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "japan-sangiin-webtv",
+      "official_url": "https://www.webtv.sangiin.go.jp/webtv/index.php",
+      "wikidata_qid": "Q548911",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official Sangiin proceedings service cross-linked from the House of Representatives WebTV. Chromium returned HTTP 200 and displayed a meeting calendar, plenary and committee selection and archived meetings. IPU Parline records the English upper-house name as Senate from 23 July 2026; constitutional quotations may retain House of Councillors. No persistent HLS channel or active live media was validated.",
+      "rights_posture": "An official public proceedings service was established, but source-specific permission for extraction, redistribution or independent full-stream playback remains unverified. An attempted copyright-page URL was not valid and is not retained as evidence.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "austria-parliament-mediathek",
+      "official_url": "https://www.parlament.gv.at/aktuelles/mediathek",
+      "wikidata_qid": "Q4817650",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official Parliament Mediathek. The institutional sitting guide documents live Nationalrat, Bundesrat and Bundesversammlung coverage. Chromium returned HTTP 200 and displayed dated sittings of both chambers. Keep one shared portal record until distinct recurring chamber or room player identities are validated.",
+      "rights_posture": "Parliament terms allow specified political reporting, political education and private non-commercial uses. Audiovisual material must carry the Parlamentsdirektion copyright marking; attribution and third-party rights also apply. Individual ORF/live-media ownership and full-stream reuse were not established, so this record remains an official viewing link.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "mauritius-national-assembly-parliament-tv",
+      "official_url": "https://parliamenttv.govmu.org/",
+      "wikidata_qid": "Q1854129",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official National Assembly broadcast portal. Chromium returned HTTP 200 and displayed dated chamber proceedings, including the 20 October 2026 sitting. Institutional notice pages cross-link Parliament TV; its help documents live main-chamber and archived coverage. The event guide may be empty between sittings; no always-on channel is inferred.",
+      "rights_posture": "The service help documents event sharing and embeds after accepting event terms, and notes restrictions on commercial use and editing. Those terms have not been accepted or generalized into independent media playback permission.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "italy-camera-webtv",
+      "official_url": "https://webtv.camera.it/",
+      "wikidata_qid": "Q841424",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official lower-house WebTV linked to camera.it, distinct from the existing Senate record. Chromium returned HTTP 200 and displayed the current dated plenary, multiple committee events and a live-event section. The portal covers event players; no recurring raw HLS room identity has been validated.",
+      "rights_posture": "The Camera legal notice covers text and multimedia and permits public-information, non-commercial use with integrity and source credit, while preserving third-party/personality rights and excluding logo reuse and unauthorized derivatives. This review did not establish a supported permanent raw live endpoint.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "japan-nagasaki-assembly-committees",
+      "official_url": "https://www.pref.nagasaki.jp/gikai/youtube/live.html",
+      "wikidata_qid": "Q11652776",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "The official Assembly committee-broadcast introduction returned HTTP 200 in Chromium and links this current committee directory. The directory separately maps four standing and four current special committees to official YouTube channels and labels past special committees separately. Live and recorded coverage is explicitly documented. Catalogue the directory as one official viewing source; do not pretend committee channels are HLS or stable physical-room feeds.",
+      "rights_posture": "The Assembly says committee live and recorded broadcasts use YouTube, remain subject to copyright, and may be corrected or edited. No permission for independent media extraction was established; use the institutional directory and provider viewing pages.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "argentina-cordoba-legislature-live",
+      "official_url": "https://legislaturacba.gob.ar/vivo/",
+      "wikidata_qid": "Q5972573",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official provincial Legislature VIVO portal, distinct from the Córdoba city council. Chromium returned HTTP 200 and loaded an institutional YouTube event embed with dated 2026 legislative sittings. A recording was present during review; active live playback and simultaneous committee coverage were not established.",
+      "rights_posture": "The Legislature provides an institutional YouTube player and official social links, but broad third-party audiovisual reuse or raw-media playback permission was not established. Retain official viewing links.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    },
+    {
+      "id": "brazil-santa-catarina-tv-alesc",
+      "official_url": "https://www.alesc.sc.gov.br/tv/",
+      "wikidata_qid": "Q9633207",
+      "playback_policy": "link_out",
+      "technical_status": "link_only",
+      "evidence": "Official Assembly TV Alesc page and its institutional About page were opened through web retrieval; the live section and legislative broadcaster identity are explicit. Direct HTTP and Chromium retrieval timed out from the Toronto research environment. This is an official-page viewing record with that access limitation, not validated direct playback or an always-on uptime claim.",
+      "rights_posture": "Official Assembly ownership and public viewing are documented, but no broad independent audiovisual redistribution or native-playback permission was found in this pass.",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active-sitting player/media validation",
+        "Source-specific live reuse and caption review",
+        "Event/room identity and machine-readable EPG mapping"
+      ]
+    }
+  ],
+  "held_candidates": [
+    {
+      "id": "iceland-althingi",
+      "official_url": "https://www.althingi.is/utsendingar/netvarp/",
+      "decision": "The official broadcast guide documents plenary and open-committee coverage and permits distribution of the Althingi channel. Chromium received a 403 challenge. Keep researching until a current normal-browser player and supported stream route can be checked; do not restore a historical watchlist HLS URL solely because it existed."
+    },
+    {
+      "id": "sweden-skane",
+      "official_url": "https://www.skane.se/politik-och-demokrati/politik/webb-tv-fran-regionfullmaktige/",
+      "decision": "The official regional assembly web-TV page was identified, but Chromium received HTTP 403 Access Denied. Retain the source for a current player, event/schedule and reuse-terms check before promotion."
+    },
+    {
+      "id": "france-senate",
+      "official_url": "https://videos.senat.fr/direct",
+      "decision": "Chromium returned HTTP 200 and displayed a live service for plenary, committee and delegation proceedings, currently with no broadcast. Senate legal notices require prior webmaster notification for hyperlinks as well as attribution and noncommercial context. No notification was sent; promotion remains pending that condition and confirmation of its applicable scope."
+    }
+  ]
+}

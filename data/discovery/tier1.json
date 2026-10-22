@@ -46,6 +46,10 @@
         {
           "kind": "official_page",
           "url": "https://www.althingi.is/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.althingi.is/utsendingar/netvarp/"
         }
       ]
     },
@@ -210,6 +214,14 @@
         {
           "kind": "hls",
           "url": "https://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.shugiintv.go.jp/jp/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.webtv.sangiin.go.jp/webtv/index.php"
         }
       ]
     },
@@ -250,6 +262,10 @@
         {
           "kind": "official_page",
           "url": "https://mauritiusassembly.govmu.org/"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://parliamenttv.govmu.org/"
         }
       ]
     },

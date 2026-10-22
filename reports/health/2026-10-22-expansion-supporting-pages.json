@@ -1,0 +1,39 @@
+{
+  "method": "Bounded HTTP retrieval with standard TLS verification; access evidence only, not media playback or licence verification.",
+  "checked_on": "2026-10-22",
+  "results": [
+    {
+      "id": "brazil-santa-catarina",
+      "url": "https://alesc.sc.gov.br/tv/",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "id": "italy-terms",
+      "url": "https://www.camera.it/avvisolegale",
+      "status": 200,
+      "final_url": "https://comunicazione.camera.it/policy/avvisolegale",
+      "bytes": 20137,
+      "sha256": "3879ebf43b50781513d4976e82b3e22fe57a8a5d416306c5064e18323c459c2c",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "mauritius-official",
+      "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/notice/",
+      "status": 200,
+      "final_url": "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/notice/",
+      "bytes": 193764,
+      "sha256": "9a06a333d79ad6faa88fc0c3449a90e387757b0cad0e8664b07b7807f89f4034",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "austria-terms",
+      "url": "https://www.parlament.gv.at/services/hilfe/nutzungsbedingungen/",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "id": "japan-upper-terms",
+      "url": "https://www.sangiin.go.jp/japanese/chosakuken.html",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

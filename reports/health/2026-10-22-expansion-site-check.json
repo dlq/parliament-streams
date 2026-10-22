@@ -1,0 +1,133 @@
+{
+  "checked_at": "2026-10-22T17:21:09.340Z",
+  "method": "Local HTTP Playwright check of eight source deep links at 1280 and 320 pixels and three new regional parent-country links. External media was not played.",
+  "results": [
+    {
+      "id": "japan-house-of-representatives-webtv",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "japan-sangiin-webtv",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "austria-parliament-mediathek",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "mauritius-national-assembly-parliament-tv",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "italy-camera-webtv",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "japan-nagasaki-assembly-committees",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "argentina-cordoba-legislature-live",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "brazil-santa-catarina-tv-alesc",
+      "width": 1280,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "japan-house-of-representatives-webtv",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "japan-sangiin-webtv",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "austria-parliament-mediathek",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "mauritius-national-assembly-parliament-tv",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "italy-camera-webtv",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "japan-nagasaki-assembly-committees",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "argentina-cordoba-legislature-live",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "id": "brazil-santa-catarina-tv-alesc",
+      "width": 320,
+      "official_link": true,
+      "native_player": false,
+      "horizontal_overflow": false
+    },
+    {
+      "country": "Argentina",
+      "id": "argentina-cordoba-legislature-live",
+      "parent_country_link": true
+    },
+    {
+      "country": "Japan",
+      "id": "japan-nagasaki-assembly-committees",
+      "parent_country_link": true
+    },
+    {
+      "country": "Brazil",
+      "id": "brazil-santa-catarina-tv-alesc",
+      "parent_country_link": true
+    }
+  ]
+}

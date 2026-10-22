@@ -1,0 +1,59 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Chromium returned HTTP 200 and displayed a live service for plenary, committee and delegation proceedings, currently with no broadcast. Senate legal notices require prior webmaster notification for hyperlinks as well as attribution and noncommercial context. No notification was sent; promotion remains pending that condition and confirmation of its applicable scope.",
+    "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json."
+  ],
+  "channel": {
+    "id": "france-senate",
+    "name": "France Senate Live",
+    "jurisdiction_level": "national",
+    "country_or_region": "France",
+    "legislature": "Sénat",
+    "external_ids": {
+      "wikidata_qid": "Q215987",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q215987",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional name and jurisdiction matched; promotion remains blocked by the documented source/player review, not by a playback assumption."
+      }
+    ],
+    "language": "French",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://videos.senat.fr/direct",
+    "provenance_note": "Chromium returned HTTP 200 and displayed a live service for plenary, committee and delegation proceedings, currently with no broadcast. Senate legal notices require prior webmaster notification for hyperlinks as well as attribution and noncommercial context. No notification was sent; promotion remains pending that condition and confirmation of its applicable scope.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": null
+    },
+    "epg_sources": [],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Published Senate hyperlink conditions include prior webmaster notification; the project has not sent that notification. Video conditions separately require retained logo/credit and no image alteration.",
+      "evidence": [
+        "https://videos.senat.fr/direct",
+        "https://www.senat.fr/mentions-legales.html"
+      ],
+      "recommendation": "Keep link-out only until source conditions are reviewed."
+    }
+  }
+}

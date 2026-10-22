@@ -6,7 +6,7 @@ technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
 
-Last reviewed: 2026-08-24.
+Last reviewed: 2026-10-22 (expansion batch; earlier source reviews retain their dated evidence).
 
 ## Catalogue Position
 
@@ -156,3 +156,29 @@ confirmation of the allowed use and required conditions would be sufficient.
 
 Thank you.
 ```
+
+## 2026-10-22 Country And Regional Expansion
+
+The first expansion batch adds eight **official-page link-outs**, with no new
+native playback, provider embeds, HLS playlist entries or implemented XMLTV
+parsers. Page availability and institutional ownership do not establish active
+media playback. Candidate decisions and remaining checks are retained in
+`reports/discovery/2026-10-22-expansion-decisions.json`.
+
+| Source | Conditions reviewed | Current decision |
+| --- | --- | --- |
+| Japan House of Representatives WebTV | [Broadcast copyright and links](https://www.shugiintv.go.jp/jp/index.php?ex=CR) allows website links in principle and retains copyright over video and other content. | Official link-out covering plenary and concurrent committee events. |
+| Japan Sangiin WebTV | Official upper-house service is cross-linked by lower-house WebTV. A reliable source-specific media reuse grant was not established. | Official link-out; do not extract manifests. |
+| Austria Parliament Mediathek | [Terms](https://www.parlament.gv.at/services/hilfe/nutzungsbedingungen) specify permitted purposes, Parlamentsdirektion audiovisual marking, attribution and third-party rights. ORF/live-signal scope needs individual review. | Official link-out; conditional noncommercial review remains open. |
+| Mauritius Parliament TV | [Help](https://parliamenttv.govmu.org/Home/Help) documents official event sharing/embeds after acceptance of event terms, and restrictions on commercial use and editing. | Official link-out. No event terms were accepted on the project's behalf. |
+| Italy Camera WebTV | [Legal notice](https://comunicazione.camera.it/policy/avvisolegale) permits public-information, noncommercial reuse with integrity and source credit, subject to third-party/personality rights; logos and derivatives have separate restrictions. | Official link-out; no stable raw live route validated. |
+| Nagasaki Assembly committees | [Broadcast conditions](https://www.pref.nagasaki.jp/gikai/youtube/) document YouTube live/recorded committee coverage and copyright. Current and past committees have separate directory sections. | Official directory link-out; no YouTube media extraction. |
+| Córdoba provincial Legislature | Official VIVO page loaded an institutional YouTube recording. Independent audiovisual redistribution permission was not established. | Official link-out, explicitly event-based. |
+| Santa Catarina TV Alesc | [Institutional service](https://www.alesc.sc.gov.br/tv/) and [About page](https://www.alesc.sc.gov.br/tv/sobre/) establish Assembly ownership. Local HTTP/Chromium attempts timed out; web retrieval opened the official live page. No broad reuse grant established. | Official link-out with access caveat; no direct playback claim. |
+
+Three further candidates remain researching. Iceland's player returned a browser
+challenge despite documented official broadcasts; Skåne's player page returned
+Access Denied. The French Senate live service opened, but its
+[hyperlink conditions](https://www.senat.fr/mentions-legales.html) include prior
+webmaster notification. No notification was sent, and that candidate remains
+unpromoted. Its video reuse conditions must also be respected independently.

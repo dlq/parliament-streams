@@ -785,6 +785,61 @@ Current measurable review queues, last reconciled with the catalogue on
 
 ## Research And Advocacy
 
+### Country And First-Level Legislature Audit — In Progress
+
+- [x] Record an initial official-source national discovery pass for all 71
+  maintained Tier 1/Tier 2 countries, distinguishing blocked pages and search
+  evidence from player/media validation.
+- [x] Validate and promote the first eight official viewing links (five national,
+  three subnational); retain Iceland, Skåne and France's Senate as research
+  candidates with explicit outstanding conditions.
+- [x] Extend the subnational search ledger to 522 jurisdictions in 31 countries,
+  including the new Czech, Slovak, Polish, French, Greek and Uruguayan core
+  inventories. This remains an incomplete global inventory.
+- [ ] Complete first-level scope and inventories in the remaining 40 countries;
+  the exact country queue and next actions are in
+  `reports/discovery/2026-10-22-subnational-research.json`.
+- [ ] Complete the special-status/related-territory scope notes, including
+  Francophone Brussels, Ceuta/Melilla, London, U.S. DC/territories, Kingdom of
+  the Netherlands constituent countries, New Zealand relationships, Finnish
+  regional-body distinctions and other French overseas assemblies.
+- [ ] Validate active-sitting media, source conditions, captions, recurring
+  chamber/committee identity and schedule mappings for subsequent additions.
+  Official viewing links alone do not qualify a source for the HLS playlist or
+  an implemented XMLTV programme guide.
+
+See `reports/discovery/2026-10-22-expansion-summary.md` for the first batch,
+retained evidence and the remaining work.
+
+### Group Subnational Sources In The Catalogue
+
+- [ ] Group subnational legislatures under their parent country, then group
+  chamber and committee-room feeds within each legislature. Keep national
+  sources easy to find and preserve the compact list and current visual identity.
+- [ ] Design desktop and mobile expansion controls with keyboard operation,
+  clear accessible names and source counts. Search and filters should reveal
+  matching sources within their groups; direct links should open the relevant
+  country, legislature and room without losing context.
+- [ ] Establish explicit parent-country and legislature/room relationships in
+  the data before relying on display names to group entries. Keep disputed or
+  special-status jurisdictions accurately labelled using the existing map
+  policy. This is a later presentation task, not part of the current research
+  or localization pass.
+
+### Language Coverage And Review
+
+- Complete interface packs now cover 23 locales, including Czech, Finnish,
+  Swedish, and Traditional Chinese. IPTV/VLC help follows every supported
+  locale. Arrange native-speaker review of the new packs and retain the
+  existing Inuktitut draft qualification.
+- Reassess language additions against documented, currently usable video and
+  schedule coverage. Catalogue language labels alone do not establish broadcast
+  frequency, a complete translated guide, or translation quality.
+- Keep Hebrew as a separate right-to-left layout and bidirectional-text task.
+  Track Cyrillic Mongolian, Catalan/Valencian, Basque, Welsh, and Scottish Gaelic
+  for a later expansion when source coverage and translation review justify it.
+  Traditional vertical Mongolian requires its own layout evaluation.
+
 The project should help show what makes parliamentary video reusable and
 discoverable without overclaiming rights.
 

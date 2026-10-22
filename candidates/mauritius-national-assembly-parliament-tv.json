@@ -1,0 +1,73 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official service, institutional identity, event/schedule surface, accessibility unknowns and rights posture reviewed on 2026-10-22. Ready only as an official-page link-out. Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json. No active-media, HLS or XMLTV claim.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "mauritius-national-assembly-parliament-tv",
+    "name": "Mauritius National Assembly Parliament TV",
+    "jurisdiction_level": "national",
+    "country_or_region": "Mauritius",
+    "legislature": "National Assembly of Mauritius",
+    "external_ids": {
+      "wikidata_qid": "Q1854129",
+      "ipu_country_code": "MU",
+      "ipu_parliament_code": "MU",
+      "ipu_chamber_code": "MU-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1854129",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institutional identity and official website cross-checked against Wikidata entity data and the official broadcast service. This is identity evidence, not media or rights validation."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/MU/MU-LC01/",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched national parliament/chamber identity; not a media or reuse-permission source."
+      }
+    ],
+    "language": "English / French",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://parliamenttv.govmu.org/",
+    "provenance_note": "Official National Assembly broadcast portal. Chromium returned HTTP 200 and displayed dated chamber proceedings, including the 20 October 2026 sitting. Institutional notice pages cross-link Parliament TV; its help documents live main-chamber and archived coverage. The event guide may be empty between sittings; no always-on channel is inferred.",
+    "technical_status": "link_only",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live caption, sign-language and audio-description availability has not been established for individual events; no absence is inferred from the player page."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://parliamenttv.govmu.org/Guide",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "noncommercial_pending_review",
+      "summary": "The service help documents event sharing and embeds after accepting event terms, and notes restrictions on commercial use and editing. Those terms have not been accepted or generalized into independent media playback permission.",
+      "evidence": [
+        "https://parliamenttv.govmu.org/Home/Help"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract provider manifests or enable independent playback until source-specific media stability and applicable reuse conditions are established."
+    }
+  }
+}
