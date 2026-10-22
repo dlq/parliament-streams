@@ -796,7 +796,11 @@ Current measurable review queues, last reconciled with the catalogue on
 - [x] Extend the subnational search ledger to 522 jurisdictions in 31 countries,
   including the new Czech, Slovak, Polish, French, Greek and Uruguayan core
   inventories. This remains an incomplete global inventory.
-- [ ] Complete first-level scope and inventories in the remaining 40 countries;
+- [x] Expand to 557 initial jurisdiction searches across 35 country audit groups,
+  adding Ireland, Malta, Rodrigues, Tobago and 24 special-status/associated or
+  capital bodies. Record primary scope-source attempts for all original 40
+  remaining countries without treating them as completed inventories.
+- [ ] Complete first-level scope and inventories in the remaining 36 countries;
   the exact country queue and next actions are in
   `reports/discovery/2026-10-22-subnational-research.json`.
 - [ ] Complete the special-status/related-territory scope notes, including

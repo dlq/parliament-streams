@@ -781,6 +781,13 @@ regional deliberative councils, their targeted searches and unresolved leads.
 Special-status and overseas bodies require explicit scope review; a country
 with no listed rows has not been established to have no relevant bodies.
 
+The follow-up ledger now contains initial searches for 557 bodies across 35
+country audit groups, including special-status and associated territories.
+Primary scope sources were attempted for all 40 previously uninventoried
+countries; 36 still have no jurisdiction inventory. Access failures and
+preliminary scope leads are retained separately. These are research counts,
+not validated-stream counts.
+
 The [first expansion decisions](reports/discovery/2026-10-22-expansion-decisions.json)
 add eight official viewing links: Japan's two chamber services, Austria,
 Mauritius, Italy's lower house, Nagasaki committees, Córdoba's provincial

@@ -1946,3 +1946,43 @@ catalogue and map. Canada searches include Alberta, Ontario and Québec alongsid
 national sources; localized country names are recognized too. Desktop/mobile
 regression checks cover Canada and French Allemagne/Bavaria. This is a search
 behaviour change; the planned grouped-list presentation remains deferred.
+
+
+### Country-scope and territory follow-up (2026-10-22)
+
+Expanded the research ledger from 522 to 557 initial jurisdiction searches
+across 35 country audit groups. New core inventories cover Ireland's three
+regional planning assemblies, Malta's six regional councils, Rodrigues and
+Tobago. Added 24 special-status/associated or capital bodies: Jersey, Guernsey,
+Isle of Man, Alderney, Sark, London, six Caribbean Kingdom/public-body entries,
+five inhabited US territorial legislatures plus DC, Cook Islands, Niue,
+Tokelau, Ceuta, Melilla and Francophone Brussels. Country is an audit grouping
+for related territories; explicit constitutional relationships prevent treating
+Crown Dependencies or freely associated states as ordinary parent-country
+regions. The wider overseas/de facto inventory remains incomplete.
+
+Attempted one primary scope source for each of the original 40 remaining
+countries. Source access evidence and unresolved discovery leads are saved in
+`reports/discovery/2026-10-22-remaining-country-primary-checks.json` and
+`reports/discovery/2026-10-22-remaining-country-scope-leads.json`. Thirty-six
+countries still lack individual jurisdiction inventories; a source fetch or
+search pass alone does not complete that work. Regional coordinating/planning
+councils are labelled separately from primary law-making parliaments.
+
+Strong follow-up services include Jersey's chamber/scrutiny webcast portal,
+Tynwald's chamber audio and committee video, Sint Maarten's live-meeting page,
+Guam's legislative/hearing service, Puerto Rico Senate live events, DC hearings
+and Cook Islands Parliament TV. These remain research leads; no new catalogue,
+HLS playlist or XMLTV parser promotions were made. Removed misleading lead
+classifications for promotional videos, standing orders and mayoral/executive
+material. Active playback, provider/room identities and source conditions still
+need validation.
+
+Catalogue presentation: moved Catalogue coverage above the filters into an
+always-visible section with a localized heading. Added the seven missing flag
+assets/mappings (Austria, Japan, Mauritius, Switzerland, Córdoba province,
+Nagasaki Prefecture and Santa Catarina state), with source attribution. Flag
+images now preserve the entire design with object-fit: contain. HTML,
+Playwright/Axe checks passed; targeted 1280px/320px checks confirmed coverage
+visibility, flag decoding, working searches and no horizontal overflow or page
+errors. Screenshots remain in /tmp.

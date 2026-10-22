@@ -50,3 +50,16 @@ passed.
 Country-name search was subsequently extended consistently to the catalogue and
 map using shared parent-country relationships. Canada includes Alberta, Ontario
 and Québec alongside national entries; localized country names are also tested.
+
+
+## Subsequent inventory follow-up
+
+The subnational ledger now records 557 initial jurisdiction searches across 35
+country audit groups, up from the 522/31 baseline above. This includes 11 core
+bodies in Ireland, Malta, Rodrigues and Tobago, and 24 special-status/associated
+or capital bodies. Grouping related territories with a country is for research
+navigation; each record carries its constitutional relationship and scope note.
+All original 40 remaining countries received a primary scope-source access
+attempt; 36 still lack individual jurisdiction inventories. Overseas, disputed
+and other special-status coverage remains incomplete. These research additions
+have not been promoted to catalogue entries or validated HLS streams.

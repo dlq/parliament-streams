@@ -54,9 +54,22 @@
     {
       "country": "Iceland",
       "tier": "tier1",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Iceland",
+          "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/oecd-regional-outlook-2023-country-notes_48701f02/iceland_330e5205/dc08a105-en.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Iceland official government local government regions statistical municipalities regional councils"
+      ]
     },
     {
       "country": "Switzerland",
@@ -108,9 +121,23 @@
     {
       "country": "Ireland",
       "tier": "tier1",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "core_inventory_recorded",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Initial chamber/committee searches recorded for every core regional body. Resolve broadcast leads, access failures, provider ownership and room identities before promotion; ordinary municipalities remain outside this pass.",
+      "scope_checked_sources": [
+        {
+          "country": "Ireland",
+          "url": "https://www.localgov.ie/about-local-government/regional-assemblies",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Ireland three regional assemblies Eastern Midland Northern Western Southern official"
+      ],
+      "core_inventory_complete": true
     },
     {
       "country": "Netherlands",
@@ -142,9 +169,22 @@
     {
       "country": "Luxembourg",
       "tier": "tier1",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Luxembourg",
+          "url": "https://luxembourg.public.lu/content/luxembourg/fr/societe-et-culture/territoire-et-climat/territoire.html",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Luxembourg government cantons territorial divisions communes no regional government"
+      ]
     },
     {
       "country": "Australia",
@@ -277,9 +317,23 @@
     {
       "country": "Costa Rica",
       "tier": "tier1",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Costa Rica",
+          "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/oecd-regional-outlook-2023-country-notes_48701f02/costa-rica_35880d95/32b2b306-en.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Costa Rica gobierno provincias sin gobierno provincial municipalidades división territorial",
+        "Costa Rica subnational government provinces no government municipalities OECD"
+      ]
     },
     {
       "country": "Austria",
@@ -299,16 +353,44 @@
     {
       "country": "Mauritius",
       "tier": "tier1",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "core_inventory_recorded",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Initial chamber/committee searches recorded for every core regional body. Resolve broadcast leads, access failures, provider ownership and room identities before promotion; ordinary municipalities remain outside this pass.",
+      "scope_checked_sources": [
+        {
+          "country": "Mauritius",
+          "url": "https://assembly-rra.govmu.org/Pages/About-Us/The-Parliament.aspx",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Rodrigues Regional Assembly official website legislative assembly live",
+        "\"Rodrigues\" \"Regional Assembly\""
+      ],
+      "core_inventory_complete": true
     },
     {
       "country": "Estonia",
       "tier": "tier1",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Estonia",
+          "url": "https://www.riigikogu.ee/en/pressiteated/riigikogu-passed-two-acts-concerning-termination-activities-county-governments-local-government-organisation/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Estonia government county governments abolished 2018 municipalities regional government"
+      ]
     },
     {
       "country": "Spain",
@@ -391,9 +473,23 @@
     {
       "country": "Malta",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "core_inventory_recorded",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Initial chamber/committee searches recorded for every core regional body. Resolve broadcast leads, access failures, provider ownership and room identities before promotion; ordinary municipalities remain outside this pass.",
+      "scope_checked_sources": [
+        {
+          "country": "Malta",
+          "url": "https://regjunpunent.gov.mt/?lang=mt",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Malta regional councils six regions official local government"
+      ],
+      "core_inventory_complete": true
     },
     {
       "country": "United States",
@@ -414,23 +510,63 @@
     {
       "country": "Chile",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Chile",
+          "url": "https://www.chile.gob.cl/chile/sobre-chile/asi-es-chile/organizacion-territorial/organizacion-territorial",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Chile 16 consejos regionales gobiernos regionales directorio oficial"
+      ]
     },
     {
       "country": "Slovenia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Slovenia",
+          "url": "https://www.gov.si/en/policies/state-and-society/local-self-government-and-regional-development/local-self-government/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Slovenia government regions not established municipalities regional self government official"
+      ]
     },
     {
       "country": "Israel",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Israel",
+          "url": "https://www.oecd.org/en/publications/a-review-of-local-government-finance-in-israel_a5bc4d25-en/full-report/the-israeli-system-of-local-government-finance_11b9d33d.html",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Israel government administrative districts appointed district commissioners local authorities regional government",
+        "Israel local government districts no elected regional tier OECD"
+      ]
     },
     {
       "country": "South Korea",
@@ -450,9 +586,22 @@
     {
       "country": "Latvia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Latvia",
+          "url": "https://www.varam.gov.lv/lv/planosanas-regioni",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Latvia planning regions regional development councils five planning regions official"
+      ]
     },
     {
       "country": "Belgium",
@@ -473,23 +622,63 @@
     {
       "country": "Botswana",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Botswana",
+          "url": "https://gov.bw/ministries/ministry-local-government-and-traditional-affairs",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Botswana local government 31 councils 2026 district sub district councils official"
+      ]
     },
     {
       "country": "Lithuania",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Lithuania",
+          "url": "https://www.oecd.org/en/publications/social-economy-in-europe_12970cca-en/lithuania_a5151a40-en.html",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Lithuania regional development councils ten regions no regional government official"
+      ]
     },
     {
       "country": "Cape Verde",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Cape Verde",
+          "url": "https://www.governo.cv/wp-content/uploads/2019/04/cr.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Cabo Verde governo organização territorial municípios ilhas regiões autárquicas",
+        "Cabo Verde organização administrativa municípios não existem regiões autónomas governo"
+      ]
     },
     {
       "country": "Italy",
@@ -524,9 +713,22 @@
     {
       "country": "Cyprus",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Cyprus",
+          "url": "https://www.gov.cy/moi/en/about/directorate-of-local-government/section-of-district-self-government-organizations/",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Cyprus government districts district local government organisations 2024 regional councils"
+      ]
     },
     {
       "country": "India",
@@ -641,65 +843,184 @@
     {
       "country": "Trinidad and Tobago",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "core_inventory_recorded",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Initial chamber/committee searches recorded for every core regional body. Resolve broadcast leads, access failures, provider ownership and room identities before promotion; ordinary municipalities remain outside this pass.",
+      "scope_checked_sources": [
+        {
+          "country": "Trinidad and Tobago",
+          "url": "https://tobagolegislature.org/",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "\"Tobago\" \"Assembly Legislature\" official website"
+      ],
+      "core_inventory_complete": true
     },
     {
       "country": "Timor-Leste",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Timor-Leste",
+          "url": "https://raeoa.tl/governance/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Timor Leste Oecusse RAEOA authority regional assembly legislature Atauro official"
+      ]
     },
     {
       "country": "Panama",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Panama",
+          "url": "https://spcommreports.ohchr.org/TMResultsBase/DownLoadFile?gId=39510",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Panamá comarcas indígenas seis Naso Tjer Di congresos generales gobierno oficial"
+      ]
     },
     {
       "country": "Suriname",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Suriname",
+          "url": "https://verkiezingen.gov.sr/storage/pdf/Grondwet.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Suriname districtsraden 10 districten regionaal bestuur overheid"
+      ]
     },
     {
       "country": "Jamaica",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Jamaica",
+          "url": "https://www.localgovjamaica.gov.jm/about-us/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Jamaica local government municipal corporations 14 parish councils official"
+      ]
     },
     {
       "country": "Montenegro",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Montenegro",
+          "url": "https://rm.coe.int/0900001680b4cb27",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Montenegro government local self government municipalities no regions",
+        "Montenegro local regional democracy single tier municipalities 2024"
+      ]
     },
     {
       "country": "Philippines",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Philippines",
+          "url": "https://psa.gov.ph/classification/psgc",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "site:psa.gov.ph PSGC 82 provinces September 2026 Bangsamoro parliament"
+      ]
     },
     {
       "country": "Dominican Republic",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Dominican Republic",
+          "url": "https://www.dgcp.gob.do/transparencia/documentos/marco_legal_de_transparencia/leyes/6_ley_498_06_de_planificacion_e_inversion_publica.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "República Dominicana consejos provinciales desarrollo gobernadores ley 498 06 gobierno"
+      ]
     },
     {
       "country": "Mongolia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Mongolia",
+          "url": "https://legalinfo.mn/mn/detail?lawId=16106891904801&type=2",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Mongolia 21 aimags capital citizens representative khurals local government official"
+      ]
     },
     {
       "country": "Argentina",
@@ -719,16 +1040,42 @@
     {
       "country": "Hungary",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Hungary",
+          "url": "https://www.ksh.hu/regionalatlas_counties?lang=en",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Hungary official 19 county assemblies Budapest general assembly local government counties"
+      ]
     },
     {
       "country": "Croatia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Croatia",
+          "url": "https://mpudt.gov.hr/korisne-informacije/iz-djelokruga/lokalna-i-podrucna-regionalna-samouprava-24398/popis-zupanija-gradova-i-opcina-24402/24402?big=1&lang=sk",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Croatia official 20 counties City Zagreb county assemblies directory"
+      ]
     },
     {
       "country": "Brazil",
@@ -748,100 +1095,284 @@
     {
       "country": "Namibia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Namibia",
+          "url": "https://murd.gov.na/en/sub-national-governments",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Namibia government regional councils 14 regions directory"
+      ]
     },
     {
       "country": "Indonesia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Indonesia",
+          "url": "https://kab-lannyjaya.kpu.go.id/blog/read/8555_daftar-38-provinsi-di-indonesia-beserta-ibu-kotanya",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "site:go.id daftar 38 provinsi DPRD Papua Aceh DPRP"
+      ]
     },
     {
       "country": "Colombia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Colombia",
+          "url": "https://bogotajuridica.gov.co/sisjur/normas/Norma1.jsp?dt=S&i=120817",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Colombia 32 departamentos asambleas departamentales Bogotá concejo directorio oficial"
+      ]
     },
     {
       "country": "Bulgaria",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Bulgaria",
+          "url": "https://www.mrrb.bg/static/media/ups/articles/attachments/CEGGPAD%282023%298_22BG07_Technical%20Report_fiscal%20decentralisation_FINALd56a91fd01ee99ab560581f6ced1c293.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Bulgaria government 28 districts district governors municipalities regional councils appointed"
+      ]
     },
     {
       "country": "North Macedonia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "North Macedonia",
+          "url": "https://rm.coe.int/report-north-macedonia-en/488029b23d",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "North Macedonia government 8 planning regions 80 municipalities regional government councils",
+        "North Macedonia local democracy planning regions municipalities regional level"
+      ]
     },
     {
       "country": "Thailand",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Thailand",
+          "url": "https://www.nso.go.th/public/e-book/Statistical-Yearbook/SYB-2026/14/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Thailand official 76 provincial administrative organizations Bangkok Metropolitan Council 77 provinces"
+      ]
     },
     {
       "country": "Serbia",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Serbia",
+          "url": "https://www.refworld.org/sites/default/files/2025-07/constitution_of_the_republic_of_serbia.pdf",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Serbia autonomous provinces Vojvodina Assembly Kosovo Metohija constitution official"
+      ]
     },
     {
       "country": "Ghana",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Ghana",
+          "url": "https://www.judicial.gov.gh/index.php/decentralization-and-local-government",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Ghana 16 regional coordinating councils not legislative assemblies official local governance"
+      ]
     },
     {
       "country": "Albania",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Albania",
+          "url": "https://www.instat.gov.al/en/themes/general-and-regional-statistics/regions/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Albania 12 regional councils qark councils local self government official directory"
+      ]
     },
     {
       "country": "Sri Lanka",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Sri Lanka",
+          "url": "https://elections.gov.lk/en/elections/faq_elections_E.html",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Sri Lanka provincial councils 9 councils dissolved 2026 elections official ministry"
+      ]
     },
     {
       "country": "Singapore",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Singapore",
+          "url": "https://www.cdc.gov.sg/about-us/office-of-the-mayors/our-mayors/",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Singapore five community development councils appointed mayors official"
+      ]
     },
     {
       "country": "Guyana",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Guyana",
+          "url": "https://gecom.org.gy/public/assets/docs/laws/Cap_28.09_Local_Democratic_Organs.pdf",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Guyana ten regional democratic councils regions official ministry"
+      ]
     },
     {
       "country": "Lesotho",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Lesotho",
+          "url": "https://www.gov.ls/wp-content/uploads/2022/03/Third-National-Communication.pdf",
+          "review_method": "web_open_failed_or_empty",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Lesotho ten district councils local government official municipalities regional legislature",
+        "Lesotho district councils ten regional local government 2025"
+      ]
     },
     {
       "country": "Moldova",
       "tier": "tier2",
-      "status": "pending",
-      "notes": [],
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
+      "status": "scope_review_in_progress",
+      "notes": [
+        "Primary scope source attempted; access outcomes retained in remaining-country-primary-checks.json. This does not establish a complete institutional inventory."
+      ],
+      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body.",
+      "scope_checked_sources": [
+        {
+          "country": "Moldova",
+          "url": "https://statistica.gov.md/en/statistic_indicator_details/29",
+          "review_method": "web_page_open",
+          "note": "Opened for territorial scope evidence. A source retrieval alone does not complete the country inventory or validate broadcasts."
+        }
+      ],
+      "scope_queries": [
+        "Moldova 32 districts Gagauzia People's Assembly Transnistria territorial administration official"
+      ]
     }
   ],
   "jurisdictions": [
@@ -30476,216 +31007,1955 @@
         }
       ],
       "committee_room_status": "searched_player_mapping_pending"
+    },
+    {
+      "id": "ireland--eastern-and-midland",
+      "country": "Ireland",
+      "jurisdiction": "Eastern and Midland",
+      "institution": "Eastern and Midland Regional Assembly",
+      "official_url": "https://emra.ie/",
+      "inventory_source": "https://www.localgov.ie/about-local-government/regional-assemblies",
+      "body_class": "regional_planning_assembly",
+      "constitutional_relationship": "first_level",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:emra.ie regional assembly (webcast OR livestream OR recording)",
+        "Eastern and Midland Ireland regional assembly (webcast OR livestream OR recording)"
+      ],
+      "checked_sources": [
+        {
+          "title": "Eastern & Midland Regional Assembly - The EMRA comprises of 38 elected Members nominated by the 12 constituent local authorities within the region.",
+          "url": "https://www.emra.ie/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "About EMRA - Eastern & Midland Regional Assembly",
+          "url": "https://www.emra.ie/about/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Category: Events - Eastern & Midland Regional Assembly",
+          "url": "https://www.emra.ie/category/events/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "News - Eastern & Midland Regional Assembly",
+          "url": "https://www.emra.ie/news/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Eastern and Midland Regional Assembly",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.emra.ie/",
+            "https://www.emra.ie/about/",
+            "https://www.emra.ie/category/events/",
+            "https://www.emra.ie/news/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "ireland--northern-and-western",
+      "country": "Ireland",
+      "jurisdiction": "Northern and Western",
+      "institution": "Northern and Western Regional Assembly",
+      "official_url": "https://www.nwra.ie/",
+      "inventory_source": "https://www.localgov.ie/about-local-government/regional-assemblies",
+      "body_class": "regional_planning_assembly",
+      "constitutional_relationship": "first_level",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:nwra.ie regional assembly (webcast OR livestream OR recording)",
+        "Northern and Western Ireland regional assembly (webcast OR livestream OR recording)"
+      ],
+      "checked_sources": [
+        {
+          "title": "Northern and Western Regional Assembly institutional website",
+          "url": "https://www.nwra.ie/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open_blocked",
+          "note": "Access blocked or fetch failed; normal browser inspection is needed."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Northern and Western Regional Assembly",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.nwra.ie/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "ireland--southern",
+      "country": "Ireland",
+      "jurisdiction": "Southern",
+      "institution": "Southern Regional Assembly",
+      "official_url": "https://www.southernassembly.ie/",
+      "inventory_source": "https://www.localgov.ie/about-local-government/regional-assemblies",
+      "body_class": "regional_planning_assembly",
+      "constitutional_relationship": "first_level",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:southernassembly.ie regional assembly (webcast OR livestream OR recording)",
+        "Southern Ireland regional assembly (webcast OR livestream OR recording)"
+      ],
+      "checked_sources": [
+        {
+          "title": "Assembly meetings",
+          "url": "https://southernassembly.ie/meetings/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Assembly meeting page, distinct from a promotional introduction video."
+        },
+        {
+          "title": "Southern Regional Assembly New Video | Southern Regional Assembly",
+          "url": "https://southernassembly.ie/southern-regional-assembly-new-video/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Context or promotional/executive material; does not establish a recurring legislative broadcast service."
+        },
+        {
+          "title": "THRIVE Scheme - FAQ",
+          "url": "https://southernassembly.ie/resource-publication/thrive-faq-v4/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official meeting page allows public attendance subject to capacity and excludes attendance during committee-mode business; no live webcast was established. Promotional video is not a proceedings feed.",
+        "Assembly meeting page, distinct from a promotional introduction video.",
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Southern Regional Assembly",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://southernassembly.ie/meetings/",
+            "https://southernassembly.ie/southern-regional-assembly-new-video/",
+            "https://southernassembly.ie/meetings/",
+            "https://southernassembly.ie/resource-publication/thrive-faq-v4/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "malta--gozo",
+      "country": "Malta",
+      "jurisdiction": "Gozo",
+      "institution": "Gozo Regional Council",
+      "official_url": "https://localgovernment.gov.mt/public-bodies/gozo-region-ghawdex/",
+      "inventory_source": "https://localgovernment.gov.mt/public-bodies/",
+      "body_class": "regional_deliberative_council",
+      "constitutional_relationship": "first_level",
+      "scope_note": "Regional coordinating council; not a primary law-making parliament. Ministry directory resolves inconsistent Southern/Western wording on the Punent regional homepage.",
+      "status": "searched",
+      "queries": [
+        "site:localgovernment.gov.mt Gozo Regional Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Gozo Regional Council Malta official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Gozo Regional Council institutional website",
+          "url": "https://localgovernment.gov.mt/public-bodies/gozo-region-ghawdex/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Gozo Regional Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://localgovernment.gov.mt/public-bodies/gozo-region-ghawdex/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "malta--southern",
+      "country": "Malta",
+      "jurisdiction": "Southern",
+      "institution": "Southern Regional Council",
+      "official_url": "https://localgovernment.gov.mt/public-bodies/southern-region-nofsinhar/",
+      "inventory_source": "https://localgovernment.gov.mt/public-bodies/",
+      "body_class": "regional_deliberative_council",
+      "constitutional_relationship": "first_level",
+      "scope_note": "Regional coordinating council; not a primary law-making parliament. Ministry directory resolves inconsistent Southern/Western wording on the Punent regional homepage.",
+      "status": "searched",
+      "queries": [
+        "site:localgovernment.gov.mt Southern Regional Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Southern Regional Council Malta official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Southern Regional Council institutional website",
+          "url": "https://localgovernment.gov.mt/public-bodies/southern-region-nofsinhar/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Southern Regional Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://localgovernment.gov.mt/public-bodies/southern-region-nofsinhar/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "malta--port",
+      "country": "Malta",
+      "jurisdiction": "Port",
+      "institution": "Port Regional Council",
+      "official_url": "https://localgovernment.gov.mt/public-bodies/port-region-port/",
+      "inventory_source": "https://localgovernment.gov.mt/public-bodies/",
+      "body_class": "regional_deliberative_council",
+      "constitutional_relationship": "first_level",
+      "scope_note": "Regional coordinating council; not a primary law-making parliament. Ministry directory resolves inconsistent Southern/Western wording on the Punent regional homepage.",
+      "status": "searched",
+      "queries": [
+        "site:localgovernment.gov.mt Port Regional Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Port Regional Council Malta official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Port Regional Council institutional website",
+          "url": "https://localgovernment.gov.mt/public-bodies/port-region-port/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Port Regional Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://localgovernment.gov.mt/public-bodies/port-region-port/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "malta--western",
+      "country": "Malta",
+      "jurisdiction": "Western",
+      "institution": "Western Regional Council",
+      "official_url": "https://localgovernment.gov.mt/public-bodies/western-region-punent/",
+      "inventory_source": "https://localgovernment.gov.mt/public-bodies/",
+      "body_class": "regional_deliberative_council",
+      "constitutional_relationship": "first_level",
+      "scope_note": "Regional coordinating council; not a primary law-making parliament. Ministry directory resolves inconsistent Southern/Western wording on the Punent regional homepage.",
+      "status": "searched",
+      "queries": [
+        "site:localgovernment.gov.mt Western Regional Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Western Regional Council Malta official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Regional live streaming",
+          "url": "https://regjunpunent.gov.mt/",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open",
+          "note": "Regional website has a Live Streaming navigation item. Check its content and distinguish region from constituent municipal councils."
+        },
+        {
+          "title": "Western Regional Council institutional website",
+          "url": "https://localgovernment.gov.mt/public-bodies/western-region-punent/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "Regional website has a Live Streaming navigation item. Check its content and distinguish region from constituent municipal councils.",
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Western Regional Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://regjunpunent.gov.mt/",
+            "https://localgovernment.gov.mt/public-bodies/western-region-punent/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "malta--eastern",
+      "country": "Malta",
+      "jurisdiction": "Eastern",
+      "institution": "Eastern Regional Council",
+      "official_url": "https://localgovernment.gov.mt/public-bodies/eastern-region-lvant/",
+      "inventory_source": "https://localgovernment.gov.mt/public-bodies/",
+      "body_class": "regional_deliberative_council",
+      "constitutional_relationship": "first_level",
+      "scope_note": "Regional coordinating council; not a primary law-making parliament. Ministry directory resolves inconsistent Southern/Western wording on the Punent regional homepage.",
+      "status": "searched",
+      "queries": [
+        "site:localgovernment.gov.mt Eastern Regional Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Eastern Regional Council Malta official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Eastern Regional Council institutional website",
+          "url": "https://localgovernment.gov.mt/public-bodies/eastern-region-lvant/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Eastern Regional Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://localgovernment.gov.mt/public-bodies/eastern-region-lvant/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "malta--northern",
+      "country": "Malta",
+      "jurisdiction": "Northern",
+      "institution": "Northern Regional Council",
+      "official_url": "https://localgovernment.gov.mt/public-bodies/northern-region-tramuntana/",
+      "inventory_source": "https://localgovernment.gov.mt/public-bodies/",
+      "body_class": "regional_deliberative_council",
+      "constitutional_relationship": "first_level",
+      "scope_note": "Regional coordinating council; not a primary law-making parliament. Ministry directory resolves inconsistent Southern/Western wording on the Punent regional homepage.",
+      "status": "searched",
+      "queries": [
+        "site:localgovernment.gov.mt Northern Regional Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Northern Regional Council Malta official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Northern Regional Council institutional website",
+          "url": "https://localgovernment.gov.mt/public-bodies/northern-region-tramuntana/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Northern Regional Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://localgovernment.gov.mt/public-bodies/northern-region-tramuntana/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "mauritius--rodrigues",
+      "country": "Mauritius",
+      "jurisdiction": "Rodrigues",
+      "institution": "Rodrigues Regional Assembly",
+      "official_url": "https://assembly-rra.govmu.org/",
+      "inventory_source": "https://assembly-rra.govmu.org/Pages/About-Us/The-Parliament.aspx",
+      "body_class": "autonomous_regional_assembly",
+      "constitutional_relationship": "autonomous_region",
+      "scope_note": "Verify the Assembly Act for the boundary between devolved regulations and legislation requiring national adoption; the institutional introduction uses broad law-making terminology.",
+      "status": "searched",
+      "queries": [
+        "site:assembly-rra.govmu.org Rodrigues Regional Assembly (live OR video OR committee)",
+        "Rodrigues Mauritius Rodrigues Regional Assembly (live OR video OR committee)"
+      ],
+      "checked_sources": [
+        {
+          "title": "FAQs",
+          "url": "https://assembly-rra.govmu.org/Pages/FAQ/FAQs0624-2538.aspx",
+          "source_kind": "context_page",
+          "review_method": "web_page_open_blocked",
+          "note": "Access blocked or fetch failed; normal browser inspection is needed."
+        },
+        {
+          "title": "The Parliament",
+          "url": "https://assembly-rra.govmu.org/Pages/About-Us/The-Parliament.aspx",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Administration and the Office of the Clerk",
+          "url": "https://assembly-rra.govmu.org/Pages/Office-Of-The-Clerk/Administration-and-the-Office-of-the-Clerk.aspx",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "The Clerk",
+          "url": "https://assembly-rra.govmu.org/Pages/Office-Of-The-Clerk/The-Clerk0624-5117.aspx",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Rodrigues Regional Assembly",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://assembly-rra.govmu.org/Pages/FAQ/FAQs0624-2538.aspx",
+            "https://assembly-rra.govmu.org/Pages/About-Us/The-Parliament.aspx",
+            "https://assembly-rra.govmu.org/Pages/Office-Of-The-Clerk/Administration-and-the-Office-of-the-Clerk.aspx",
+            "https://assembly-rra.govmu.org/Pages/Office-Of-The-Clerk/The-Clerk0624-5117.aspx"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "trinidad-and-tobago--tobago",
+      "country": "Trinidad and Tobago",
+      "jurisdiction": "Tobago",
+      "institution": "Tobago House of Assembly Legislature",
+      "official_url": "https://tobagolegislature.org/",
+      "inventory_source": "https://www.tha.gov.tt/about-the-assembly/",
+      "body_class": "devolved_assembly",
+      "constitutional_relationship": "autonomous_island",
+      "scope_note": "Separate legislative proceedings from THA executive announcements.",
+      "status": "searched",
+      "queries": [
+        "site:tobagolegislature.org Tobago legislature (live OR video OR committee)",
+        "Tobago Trinidad and Tobago Tobago legislature (live OR video OR committee)"
+      ],
+      "checked_sources": [
+        {
+          "title": "Broadcasting and the Opportunity to Respond - Assembly Legislature",
+          "url": "https://tobagolegislature.org/standing-order/broadcasting-and-the-opportunity-to-respond/3/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open_blocked",
+          "note": "Context or promotional/executive material; does not establish a recurring legislative broadcast service."
+        },
+        {
+          "title": "Assembly Legislature - Assembly Legislature",
+          "url": "https://tobagolegislature.org/page/2/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Sittings of the Assembly - Assembly Legislature",
+          "url": "https://tobagolegislature.org/standing-order/sittings-of-the-assembly/4/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Context or promotional/executive material; does not establish a recurring legislative broadcast service."
+        },
+        {
+          "title": "Responsibility for Rules of Order in the Assembly and in Committee - Assembly Legislature",
+          "url": "https://tobagolegislature.org/standing-order/responsibility-for-rules-of-order-in-the-assembly-and-in-committee/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Context or promotional/executive material; does not establish a recurring legislative broadcast service."
+        }
+      ],
+      "findings": [
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Tobago House of Assembly Legislature",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://tobagolegislature.org/standing-order/broadcasting-and-the-opportunity-to-respond/3/",
+            "https://tobagolegislature.org/page/2/",
+            "https://tobagolegislature.org/standing-order/sittings-of-the-assembly/4/",
+            "https://tobagolegislature.org/standing-order/responsibility-for-rules-of-order-in-the-assembly-and-in-committee/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "united-kingdom--jersey",
+      "country": "United Kingdom",
+      "jurisdiction": "Jersey",
+      "institution": "States Assembly of Jersey",
+      "official_url": "https://www.statesassembly.je/",
+      "inventory_source": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "crown_dependency_not_part_of_uk",
+      "scope_note": "United Kingdom is an audit association only, not a claim that this jurisdiction forms part of the UK. Alderney and Sark require their own legislative records within the Bailiwick of Guernsey.",
+      "status": "searched",
+      "queries": [
+        "site:statesassembly.je States Assembly of Jersey (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "States Assembly of Jersey United Kingdom official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "States of Jersey Webcasting",
+          "url": "https://statesassembly.public-i.tv/core/portal/home",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open",
+          "note": "Official assembly homepage cross-links the provider portal; provider describes chamber and scrutiny hearing rooms."
+        },
+        {
+          "title": "States Assembly | Visit the States Chamber | Tours and Visitor Information",
+          "url": "https://www.statesassembly.je/visit-the-states-chamber",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "States Assembly | {News Title} | States Assembly News",
+          "url": "https://www.statesassembly.je/news/next-week-s-states-meeting-84a3afd595f35d9e571a00c7de88247d",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "States Assembly | Scrutiny | Review Government and Share Your Views",
+          "url": "https://www.statesassembly.je/scrutiny/environment-housing-and-infrastructure-panel",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "States Assembly | What Is Scrutiny? | Reviewing Government in Jersey",
+          "url": "https://www.statesassembly.je/the-role-of-scrutiny/public-hearings",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official assembly homepage cross-links the provider portal; provider describes chamber and scrutiny hearing rooms.",
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for States Assembly of Jersey",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://statesassembly.public-i.tv/core/portal/home",
+            "https://www.statesassembly.je/visit-the-states-chamber",
+            "https://www.statesassembly.je/news/next-week-s-states-meeting-84a3afd595f35d9e571a00c7de88247d",
+            "https://www.statesassembly.je/scrutiny/environment-housing-and-infrastructure-panel",
+            "https://www.statesassembly.je/the-role-of-scrutiny/public-hearings"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "united-kingdom--guernsey",
+      "country": "United Kingdom",
+      "jurisdiction": "Guernsey",
+      "institution": "States of Deliberation",
+      "official_url": "https://parliament.gg/",
+      "inventory_source": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "crown_dependency_not_part_of_uk",
+      "scope_note": "United Kingdom is an audit association only, not a claim that this jurisdiction forms part of the UK. Alderney and Sark require their own legislative records within the Bailiwick of Guernsey.",
+      "status": "searched",
+      "queries": [
+        "site:parliament.gg States of Deliberation (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "States of Deliberation United Kingdom official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Watch Debates | Guernsey Parliament",
+          "url": "https://parliament.gg/visit-and-learn/watch-debates",
+          "source_kind": "media_page_lead",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Meetings | Guernsey Parliament",
+          "url": "https://parliament.gg/parliamentary-business/meetings",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "IN THE STATES OF THE ISLAND OF GUERNSEY",
+          "url": "https://parliament.gg/parliamentary-business/assets/resolutions/resolution-xvi-2014-07-29",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Frequently asked questions | Guernsey Parliament",
+          "url": "https://parliament.gg/about/faqs",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for States of Deliberation",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://parliament.gg/visit-and-learn/watch-debates",
+            "https://parliament.gg/parliamentary-business/meetings",
+            "https://parliament.gg/parliamentary-business/assets/resolutions/resolution-xvi-2014-07-29",
+            "https://parliament.gg/about/faqs"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "united-kingdom--isle-of-man",
+      "country": "United Kingdom",
+      "jurisdiction": "Isle of Man",
+      "institution": "Tynwald",
+      "official_url": "https://tynwald.im/",
+      "inventory_source": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "crown_dependency_not_part_of_uk",
+      "scope_note": "United Kingdom is an audit association only, not a claim that this jurisdiction forms part of the UK. Alderney and Sark require their own legislative records within the Bailiwick of Guernsey.",
+      "status": "searched",
+      "queries": [
+        "site:tynwald.im Tynwald (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Tynwald United Kingdom official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Tynwald business and procedures",
+          "url": "https://tynwald.im/TC/business-and-procedures",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open",
+          "note": "Institution documents audio webcasts of Tynwald Court, House of Keys, Legislative Council and public committee evidence; committee video is separate."
+        },
+        {
+          "title": "Tynwald - Listen and Follow",
+          "url": "https://tynwald.im/business/listen",
+          "source_kind": "media_page_lead",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Tynwald - Listen and Follow",
+          "url": "https://www.tynwald.im/business/listen",
+          "source_kind": "media_page_lead",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Access Guide to Legislative Buildings and the Office of the Clerk of Tynwald",
+          "url": "https://sitemaps.tynwald.im/visit/access-guide",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Tynwald - Committees",
+          "url": "https://www.tynwald.im/business/committee",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Institution documents audio webcasts of Tynwald Court, House of Keys, Legislative Council and public committee evidence; committee video is separate.",
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Tynwald",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://tynwald.im/TC/business-and-procedures",
+            "https://tynwald.im/business/listen",
+            "https://www.tynwald.im/business/listen",
+            "https://sitemaps.tynwald.im/visit/access-guide",
+            "https://www.tynwald.im/business/committee"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "united-kingdom--alderney",
+      "country": "United Kingdom",
+      "jurisdiction": "Alderney",
+      "institution": "States of Alderney",
+      "official_url": "https://alderney.gov.gg/",
+      "inventory_source": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "bailiwick_of_guernsey_legislature_not_part_of_uk",
+      "scope_note": "United Kingdom is an audit association only, not a claim that this jurisdiction forms part of the UK. Alderney and Sark require their own legislative records within the Bailiwick of Guernsey.",
+      "status": "searched",
+      "queries": [
+        "site:alderney.gov.gg States of Alderney (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "States of Alderney United Kingdom official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "About Alderney | ACRE",
+          "url": "https://www.acre.gov.gg/about-alderney",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for States of Alderney",
+          "next_action": "Resolve the States' own current meeting/audio service from alderney.gov.gg; ACRE's institutional description confirms context but not a broadcaster. Then check committees and dates.",
+          "urls": [
+            "https://www.acre.gov.gg/about-alderney"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "united-kingdom--sark",
+      "country": "United Kingdom",
+      "jurisdiction": "Sark",
+      "institution": "Chief Pleas of Sark",
+      "official_url": "https://sarkgov.co.uk/",
+      "inventory_source": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "bailiwick_of_guernsey_legislature_not_part_of_uk",
+      "scope_note": "United Kingdom is an audit association only, not a claim that this jurisdiction forms part of the UK. Alderney and Sark require their own legislative records within the Bailiwick of Guernsey.",
+      "status": "searched",
+      "queries": [
+        "site:sarkgov.co.uk Chief Pleas of Sark (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Chief Pleas of Sark United Kingdom official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Chief Pleas",
+          "url": "https://sarkgov.co.uk/chief-pleas",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Chief Pleas of Sark",
+          "url": "https://sarkgov.co.uk/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Contacts",
+          "url": "https://sarkgov.co.uk/contacts",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Information",
+          "url": "https://sarkgov.co.uk/information",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Chief Pleas of Sark",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://sarkgov.co.uk/chief-pleas",
+            "https://sarkgov.co.uk/",
+            "https://sarkgov.co.uk/contacts",
+            "https://sarkgov.co.uk/information"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "united-kingdom--london",
+      "country": "United Kingdom",
+      "jurisdiction": "London",
+      "institution": "London Assembly",
+      "official_url": "https://www.london.gov.uk/who-we-are/what-london-assembly-does",
+      "inventory_source": "https://www.london.gov.uk/who-we-are/what-london-assembly-does",
+      "body_class": "capital_regional_assembly",
+      "constitutional_relationship": "first_level_capital",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:london.gov.uk London Assembly (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "London Assembly United Kingdom official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Search Assembly webcasts | London City Hall",
+          "url": "https://webcasts.london.gov.uk/Assembly/Search",
+          "source_kind": "media_page_lead",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Monthly meetings calendar - October 2026 | London City Hall",
+          "url": "https://www.london.gov.uk/about-us/londonassembly/meetings/mgCalendarMonthView.aspx?GL=1",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for London Assembly",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://webcasts.london.gov.uk/Assembly/Search",
+            "https://webcasts.london.gov.uk/Mayoral/Search",
+            "https://www.london.gov.uk/who-we-are/what-mayor-does/mayoral-webcasts",
+            "https://www.london.gov.uk/about-us/londonassembly/meetings/mgCalendarMonthView.aspx?GL=1"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "netherlands--aruba",
+      "country": "Netherlands",
+      "jurisdiction": "Aruba",
+      "institution": "Parlamento di Aruba",
+      "official_url": "https://www.parlamento.aw/",
+      "inventory_source": "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+      "body_class": "constituent_country_parliament",
+      "constitutional_relationship": "kingdom_constituent_country_not_netherlands_province",
+      "scope_note": "Netherlands is an audit association; this is a separate constituent country of the Kingdom.",
+      "status": "searched",
+      "queries": [
+        "site:parlamento.aw Parlamento di Aruba (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Parlamento di Aruba Netherlands Provinciale Staten live commissies webcast"
+      ],
+      "checked_sources": [
+        {
+          "title": "Home | Parlamento di Aruba",
+          "url": "https://www.parlamento.aw/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Commissies | Parlamento di Aruba",
+          "url": "https://www.parlamento.aw/commissies",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Soorten vergaderingen | Parlamento di Aruba",
+          "url": "https://www.parlamento.aw/soorten-vergaderingen",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Interparlementair Koninkrijksoverleg (IPKO) in Den Haag | Parlamento di Aruba",
+          "url": "https://www.parlamento.aw/interparlementair-koninkrijksoverleg-ipko-in-den-haag",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Parlamento di Aruba",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.parlamento.aw/",
+            "https://www.parlamento.aw/commissies",
+            "https://www.parlamento.aw/soorten-vergaderingen",
+            "https://www.parlamento.aw/interparlementair-koninkrijksoverleg-ipko-in-den-haag"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "netherlands--curacao",
+      "country": "Netherlands",
+      "jurisdiction": "Curaçao",
+      "institution": "Parlamento di Kòrsou",
+      "official_url": "https://www.parlamento.cw/",
+      "inventory_source": "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+      "body_class": "constituent_country_parliament",
+      "constitutional_relationship": "kingdom_constituent_country_not_netherlands_province",
+      "scope_note": "Netherlands is an audit association; this is a separate constituent country of the Kingdom.",
+      "status": "searched",
+      "queries": [
+        "site:parlamento.cw Parlamento di Kòrsou (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Parlamento di Kòrsou Netherlands Provinciale Staten live commissies webcast"
+      ],
+      "checked_sources": [
+        {
+          "title": "Home | Parlamento di Kòrsou",
+          "url": "https://www.parlamento.cw/home",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Dokumentonan | Parlamento di Kòrsou",
+          "url": "https://ris.parlamento.cw/risopenbaardocs/default.aspx",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Parlamento | Parlamento di Kòrsou",
+          "url": "https://www.parlamento.cw/parlamento",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Parlamento di Kòrsou",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.parlamento.cw/home",
+            "https://ris.parlamento.cw/risopenbaardocs/default.aspx",
+            "https://www.parlamento.cw/parlamento"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "netherlands--sint-maarten",
+      "country": "Netherlands",
+      "jurisdiction": "Sint Maarten",
+      "institution": "Parliament of Sint Maarten",
+      "official_url": "https://www.sxmparliament.org/",
+      "inventory_source": "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+      "body_class": "constituent_country_parliament",
+      "constitutional_relationship": "kingdom_constituent_country_not_netherlands_province",
+      "scope_note": "Netherlands is an audit association; this is a separate constituent country of the Kingdom.",
+      "status": "searched",
+      "queries": [
+        "site:sxmparliament.org Parliament of Sint Maarten (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Parliament of Sint Maarten Netherlands Provinciale Staten live commissies webcast"
+      ],
+      "checked_sources": [
+        {
+          "title": "Live Meeting – Sint Maarten Parliament",
+          "url": "https://sxmparliament.org/live-meeting/",
+          "source_kind": "media_page_lead",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Meetings – Sint Maarten Parliament",
+          "url": "https://sxmparliament.org/meetings/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Public meeting of Parliament no. 02 PY/2025-2026 – Sint Maarten Parliament",
+          "url": "https://sxmparliament.org/public-meeting-of-parliament-no-02-py-2025-2026/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Sint Maarten Parliament",
+          "url": "https://sxmparliament.org/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Parliament of Sint Maarten",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://sxmparliament.org/live-meeting/",
+            "https://sxmparliament.org/meetings/",
+            "https://sxmparliament.org/public-meeting-of-parliament-no-02-py-2025-2026/",
+            "https://sxmparliament.org/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "netherlands--bonaire",
+      "country": "Netherlands",
+      "jurisdiction": "Bonaire",
+      "institution": "Bonaire Island Council",
+      "official_url": "https://bonairegov.com/",
+      "inventory_source": "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+      "body_class": "territorial_island_council",
+      "constitutional_relationship": "caribbean_public_body_special_municipality",
+      "scope_note": "Included as an explicit special-status territorial exception; ordinary European municipal councils remain outside this pass.",
+      "status": "searched",
+      "queries": [
+        "site:bonairegov.com Bonaire Island Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Bonaire Island Council Netherlands Provinciale Staten live commissies webcast"
+      ],
+      "checked_sources": [
+        {
+          "title": "Vergaderingen Eilandsraad weer in Passangrahan",
+          "url": "https://bonairegov.com/nieuwsoverzicht/artikel/vergaderingen-eilandsraad-weer-in-passangrahan",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Bonaire Island Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://bonairegov.com/nieuwsoverzicht/artikel/vergaderingen-eilandsraad-weer-in-passangrahan"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "netherlands--saba",
+      "country": "Netherlands",
+      "jurisdiction": "Saba",
+      "institution": "Saba Island Council",
+      "official_url": "https://www.sabagov.com/",
+      "inventory_source": "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+      "body_class": "territorial_island_council",
+      "constitutional_relationship": "caribbean_public_body_special_municipality",
+      "scope_note": "Included as an explicit special-status territorial exception; ordinary European municipal councils remain outside this pass.",
+      "status": "searched",
+      "queries": [
+        "site:sabagov.com Saba Island Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Saba Island Council Netherlands Provinciale Staten live commissies webcast"
+      ],
+      "checked_sources": [
+        {
+          "title": "Saba Island Council institutional website",
+          "url": "https://www.sabagov.com/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open_blocked",
+          "note": "Access blocked or fetch failed; normal browser inspection is needed."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Saba Island Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.sabagov.com/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "netherlands--sint-eustatius",
+      "country": "Netherlands",
+      "jurisdiction": "Sint Eustatius",
+      "institution": "Sint Eustatius Island Council",
+      "official_url": "https://www.statiagovernment.com/",
+      "inventory_source": "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+      "body_class": "territorial_island_council",
+      "constitutional_relationship": "caribbean_public_body_special_municipality",
+      "scope_note": "Included as an explicit special-status territorial exception; ordinary European municipal councils remain outside this pass.",
+      "status": "searched",
+      "queries": [
+        "site:statiagovernment.com Sint Eustatius Island Council (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Sint Eustatius Island Council Netherlands Provinciale Staten live commissies webcast"
+      ],
+      "checked_sources": [
+        {
+          "title": "Openbaar Lichaam Sint Eustatius: Central Committee Meetings – Public Participation & Island Council Preparation",
+          "url": "https://www.statiagovernment.com/governance/about-the-government/central-committee",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Openbaar Lichaam Sint Eustatius: Island Council of Sint Eustatius – Members, Roles & Public Meetings",
+          "url": "https://www.statiagovernment.com/nl/governance/island-council",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Openbaar Lichaam Sint Eustatius: Island Commissioners of Sint Eustatius – Leadership & Portfolios",
+          "url": "https://www.statiagovernment.com/governance/executive-council/members-of-executive-council",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Sint Eustatius Island Council",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.statiagovernment.com/governance/about-the-government/central-committee",
+            "https://www.statiagovernment.com/nl/governance/island-council",
+            "https://www.statiagovernment.com/governance/executive-council/members-of-executive-council"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "united-states--american-samoa",
+      "country": "United States",
+      "jurisdiction": "American Samoa",
+      "institution": "American Samoa Fono",
+      "official_url": "https://www.asfono.gov/",
+      "inventory_source": "https://www.congress.gov/crs_external_products/R/PDF/R48522/R48522.1.pdf",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "us_unincorporated_territory",
+      "scope_note": "Check both chambers where applicable. Freely associated sovereign Pacific states are not US territories.",
+      "status": "searched",
+      "queries": [
+        "site:asfono.gov American Samoa Fono (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "American Samoa Fono United States official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "FONO | AMERICAN SAMOA",
+          "url": "https://www.americansamoa.gov/fono",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Legislative - Guide to Law Online: U.S. American Samoa - Research Guides at Library of Congress",
+          "url": "https://guides.loc.gov/law-us-american-samoa/legislative",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Home | The Legislature of American Samoa",
+          "url": "https://www.asfono.gov/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "senate | AS Legislature",
+          "url": "https://www.asfono.gov/senate/ascasearch",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for American Samoa Fono",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.americansamoa.gov/fono",
+            "https://guides.loc.gov/law-us-american-samoa/legislative",
+            "https://www.asfono.gov/",
+            "https://www.asfono.gov/senate/ascasearch"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "united-states--guam",
+      "country": "United States",
+      "jurisdiction": "Guam",
+      "institution": "Guam Legislature",
+      "official_url": "https://guamlegislature.gov/",
+      "inventory_source": "https://www.congress.gov/crs_external_products/R/PDF/R48522/R48522.1.pdf",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "us_unincorporated_territory",
+      "scope_note": "Check both chambers where applicable. Freely associated sovereign Pacific states are not US territories.",
+      "status": "searched",
+      "queries": [
+        "site:guamlegislature.gov Guam Legislature (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Guam Legislature United States official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Guam Legislature media and hearing notices",
+          "url": "https://guamlegislature.gov/",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open",
+          "note": "Homepage lists chamber and public hearing-room events, with an off-air state; not an always-on feed."
+        },
+        {
+          "title": "Session Agendas and Votes » Guam Legislature",
+          "url": "https://guamlegislature.gov/agendas-and-votes/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Special Event » Guam Legislature",
+          "url": "https://guamlegislature.gov/special-event/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Legislative Committees » Guam Legislature",
+          "url": "https://guamlegislature.gov/legislative-committees/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Homepage lists chamber and public hearing-room events, with an off-air state; not an always-on feed.",
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Guam Legislature",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://guamlegislature.gov/",
+            "https://guamlegislature.gov/",
+            "https://guamlegislature.gov/agendas-and-votes/",
+            "https://guamlegislature.gov/special-event/",
+            "https://guamlegislature.gov/legislative-committees/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "united-states--northern-mariana-islands",
+      "country": "United States",
+      "jurisdiction": "Northern Mariana Islands",
+      "institution": "Northern Mariana Islands Commonwealth Legislature",
+      "official_url": "https://cnmileg.net/",
+      "inventory_source": "https://www.congress.gov/crs_external_products/R/PDF/R48522/R48522.1.pdf",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "us_unincorporated_territory",
+      "scope_note": "Check both chambers where applicable. Freely associated sovereign Pacific states are not US territories.",
+      "status": "searched",
+      "queries": [
+        "site:cnmileg.net Northern Mariana Islands Commonwealth Legislature (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Northern Mariana Islands Commonwealth Legislature United States official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Northern Marianas Commonwealth Legislature",
+          "url": "https://cnmileg.net/section_dtl.asp?secID=15",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Legislative - Guide to Law Online: U.S. Northern Mariana Islands - Research Guides at Library of Congress",
+          "url": "https://guides.loc.gov/law-us-northern-mariana-islands/legislative",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Northern Marianas Commonwealth Legislature",
+          "url": "https://cnmileg.net/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Guide to Law Online: U.S. Northern Mariana Islands | Law Library of Congress",
+          "url": "https://wwws.loc.gov/law/help/guide/states/us-mp.php",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Northern Mariana Islands Commonwealth Legislature",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://cnmileg.net/section_dtl.asp?secID=15",
+            "https://guides.loc.gov/law-us-northern-mariana-islands/legislative",
+            "https://cnmileg.net/",
+            "https://wwws.loc.gov/law/help/guide/states/us-mp.php"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "united-states--puerto-rico",
+      "country": "United States",
+      "jurisdiction": "Puerto Rico",
+      "institution": "Asamblea Legislativa de Puerto Rico",
+      "official_url": "https://www.oslpr.org/",
+      "inventory_source": "https://www.congress.gov/crs_external_products/R/PDF/R48522/R48522.1.pdf",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "us_unincorporated_territory",
+      "scope_note": "Check both chambers where applicable. Freely associated sovereign Pacific states are not US territories.",
+      "status": "searched",
+      "queries": [
+        "site:oslpr.org Asamblea Legislativa de Puerto Rico (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Asamblea Legislativa de Puerto Rico United States official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Eventos en Vivo - Senado de Puerto Rico",
+          "url": "https://senado.pr.gov/envivo",
+          "source_kind": "media_page_lead",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Leyes de Puerto Rico | Oficina de Servicios Legislativos | Legislatura",
+          "url": "https://www.oslpr.org/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "El Proceso Legislativo en Puerto Rico (VIRTUAL) | Oslpr",
+          "url": "https://www.oslpr.org/events/el-proceso-legislativo-en-puerto-rico-virtual/form",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Legislative - Guide to Law Online: U.S. Puerto Rico - Research Guides at Library of Congress",
+          "url": "https://guides.loc.gov/law-us-puerto-rico/legislative",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Asamblea Legislativa de Puerto Rico",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://senado.pr.gov/envivo",
+            "https://www.oslpr.org/",
+            "https://www.oslpr.org/events/el-proceso-legislativo-en-puerto-rico-virtual/form",
+            "https://guides.loc.gov/law-us-puerto-rico/legislative"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "united-states--united-states-virgin-islands",
+      "country": "United States",
+      "jurisdiction": "United States Virgin Islands",
+      "institution": "Legislature of the Virgin Islands",
+      "official_url": "https://legvi.org/",
+      "inventory_source": "https://www.congress.gov/crs_external_products/R/PDF/R48522/R48522.1.pdf",
+      "body_class": "territorial_legislature",
+      "constitutional_relationship": "us_unincorporated_territory",
+      "scope_note": "Check both chambers where applicable. Freely associated sovereign Pacific states are not US territories.",
+      "status": "searched",
+      "queries": [
+        "site:legvi.org Legislature of the Virgin Islands (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Legislature of the Virgin Islands United States official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Legislature media",
+          "url": "https://legvi.org/media/",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open_blocked",
+          "note": "Prefer legislative media to a governor's state-of-territory event as evidence of recurring assembly coverage."
+        },
+        {
+          "title": "Governor Bryan to Deliver 2026 State of the Territory Address on Jan. 26 - Government of the United States Virgin Islands",
+          "url": "https://www.vi.gov/governor-bryan-to-deliver-2026-state-of-the-territory-address-on-jan-26/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Context or promotional/executive material; does not establish a recurring legislative broadcast service."
+        },
+        {
+          "title": "Home - Legislature of the United States Virgin Islands",
+          "url": "https://legvi.org/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Legislature of the United States Virgin Islands -Contact",
+          "url": "https://legvi.org/contact/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Prefer legislative media to a governor's state-of-territory event as evidence of recurring assembly coverage.",
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Legislature of the Virgin Islands",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://legvi.org/media/",
+            "https://www.vi.gov/governor-bryan-to-deliver-2026-state-of-the-territory-address-on-jan-26/",
+            "https://legvi.org/media/",
+            "https://legvi.org/",
+            "https://legvi.org/contact/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "united-states--district-of-columbia",
+      "country": "United States",
+      "jurisdiction": "District of Columbia",
+      "institution": "Council of the District of Columbia",
+      "official_url": "https://dccouncil.gov/",
+      "inventory_source": "https://dccouncil.gov/",
+      "body_class": "capital_district_council",
+      "constitutional_relationship": "federal_district",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:dccouncil.gov Council of the District of Columbia (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Council of the District of Columbia United States official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Council live hearings",
+          "url": "https://dccouncil.gov/hearings/",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open",
+          "note": "Institution cross-links a live hearings/meetings provider and alternative DC stream/archive."
+        },
+        {
+          "title": "About the Council • Council of the District of Columbia",
+          "url": "https://dccouncil.gov/about-the-council/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Press Center • Council of the District of Columbia",
+          "url": "https://dccouncil.gov/press-center/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Home • Council of the District of Columbia",
+          "url": "https://dccouncil.gov/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Institution cross-links a live hearings/meetings provider and alternative DC stream/archive.",
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Council of the District of Columbia",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://dccouncil.gov/hearings/",
+            "https://dccouncil.gov/hearings/",
+            "https://dccouncil.gov/about-the-council/",
+            "https://dccouncil.gov/press-center/",
+            "https://dccouncil.gov/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
+    },
+    {
+      "id": "new-zealand--cook-islands",
+      "country": "New Zealand",
+      "jurisdiction": "Cook Islands",
+      "institution": "Parliament of the Cook Islands",
+      "official_url": "https://parliament.gov.ck/",
+      "inventory_source": "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific",
+      "body_class": "territorial_or_associated_state_legislature",
+      "constitutional_relationship": "self_governing_state_free_association",
+      "scope_note": "New Zealand is an audit association only; Cook Islands and Niue are self-governing in free association, distinct from Tokelau and ordinary NZ regions. Confirm current law rather than treating Tokelau's 2005 draft constitutional package as enacted.",
+      "status": "searched",
+      "queries": [
+        "site:parliament.gov.ck Parliament of the Cook Islands (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Parliament of the Cook Islands New Zealand official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "Live - Parliament of the Cook Islands",
+          "url": "https://parliament.gov.ck/live/",
+          "source_kind": "media_page_lead",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Parliament TV - Parliament of the Cook Islands",
+          "url": "https://parliament.gov.ck/parliamenttv/",
+          "source_kind": "media_page_lead",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Parliament Sittings - Parliament of the Cook Islands",
+          "url": "https://parliament.gov.ck/parliament-sittings/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Parliament of the Cook Islands",
+          "url": "https://parliament.gov.ck/",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Parliament of the Cook Islands",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://parliament.gov.ck/live/",
+            "https://parliament.gov.ck/parliamenttv/",
+            "https://parliament.gov.ck/parliament-sittings/",
+            "https://parliament.gov.ck/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "new-zealand--niue",
+      "country": "New Zealand",
+      "jurisdiction": "Niue",
+      "institution": "Niue Assembly",
+      "official_url": "https://www.gov.nu/",
+      "inventory_source": "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific",
+      "body_class": "territorial_or_associated_state_legislature",
+      "constitutional_relationship": "self_governing_state_free_association",
+      "scope_note": "New Zealand is an audit association only; Cook Islands and Niue are self-governing in free association, distinct from Tokelau and ordinary NZ regions. Confirm current law rather than treating Tokelau's 2005 draft constitutional package as enacted.",
+      "status": "searched",
+      "queries": [
+        "site:gov.nu Niue Assembly (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Niue Assembly New Zealand official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "The Government of Niue | Gazette Notices",
+          "url": "https://www.gov.nu/gazette",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "The Government of Niue | Notice Board",
+          "url": "https://www.gov.nu/notice-board",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Niue Assembly",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.gov.nu/gazette",
+            "https://www.gov.nu/notice-board"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "new-zealand--tokelau",
+      "country": "New Zealand",
+      "jurisdiction": "Tokelau",
+      "institution": "General Fono",
+      "official_url": "https://www.tokelau.org.nz/",
+      "inventory_source": "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific",
+      "body_class": "territorial_or_associated_state_legislature",
+      "constitutional_relationship": "non_self_governing_territory",
+      "scope_note": "New Zealand is an audit association only; Cook Islands and Niue are self-governing in free association, distinct from Tokelau and ordinary NZ regions. Confirm current law rather than treating Tokelau's 2005 draft constitutional package as enacted.",
+      "status": "searched",
+      "queries": [
+        "site:tokelau.org.nz General Fono (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "General Fono New Zealand official legislature live video chamber committees"
+      ],
+      "checked_sources": [
+        {
+          "title": "General Fono institutional website",
+          "url": "https://www.tokelau.org.nz/",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for General Fono",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.tokelau.org.nz/"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "spain--ceuta",
+      "country": "Spain",
+      "jurisdiction": "Ceuta",
+      "institution": "Asamblea de Ceuta",
+      "official_url": "https://www.ceuta.es/",
+      "inventory_source": "https://www.ceuta.es/",
+      "body_class": "autonomous_city_assembly",
+      "constitutional_relationship": "autonomous_city",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:ceuta.es Asamblea de Ceuta (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Asamblea de Ceuta Spain directo comisiones televisión"
+      ],
+      "checked_sources": [
+        {
+          "title": "La nueva Asamblea se constituye el día 13",
+          "url": "https://www.ceuta.es/gobiernodeceuta/index.php/noticia/42-presidencia/7545-la-nueva-asamblea-se-constituye-el-dia-13",
+          "source_kind": "context_page",
+          "review_method": "web_page_open_blocked",
+          "note": "Access blocked or fetch failed; normal browser inspection is needed."
+        },
+        {
+          "title": "La Asamblea",
+          "url": "https://www.ceuta.es/gobiernodeceuta/index.php/el-gobierno/la-asamblea",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Asamblea de Ceuta",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.ceuta.es/gobiernodeceuta/index.php/noticia/42-presidencia/7545-la-nueva-asamblea-se-constituye-el-dia-13",
+            "https://www.ceuta.es/gobiernodeceuta/index.php/el-gobierno/la-asamblea"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "spain--melilla",
+      "country": "Spain",
+      "jurisdiction": "Melilla",
+      "institution": "Asamblea de Melilla",
+      "official_url": "https://www.melilla.es/",
+      "inventory_source": "https://www.melilla.es/",
+      "body_class": "autonomous_city_assembly",
+      "constitutional_relationship": "autonomous_city",
+      "scope_note": "",
+      "status": "searched",
+      "queries": [
+        "site:melilla.es Asamblea de Melilla (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Asamblea de Melilla Spain directo comisiones televisión"
+      ],
+      "checked_sources": [
+        {
+          "title": "Ciudad AutÃ³noma de Melilla - Acuerdo de la Excma. Asamblea de Melilla, de fecha 21 de julio de 2023, relativo a la creaciÃ³n y composiciÃ³n de las Comisiones Asamblearias",
+          "url": "https://www.melilla.es/melillaportal/contenedor.jsp?anuncio=1&codMenu=778&codMenuPN=601&contenido=34811&nivel=1400&seccion=s_fdoc_d4_v1.jsp&tipo=5",
+          "source_kind": "context_page",
+          "review_method": "web_page_open_blocked",
+          "note": "Access blocked or fetch failed; normal browser inspection is needed."
+        },
+        {
+          "title": "Portal de Transparencia - Información institucional y organizativa",
+          "url": "https://sede.melilla.es/melillaPortal/transparencia/se_contenedor2.jsp?codMenu=44&codMenuPN=21&codResi=1&language=es&layout=se_contenedor2.jsp&seccion=se_seccion_menus.jsp",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Asamblea de Melilla",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.melilla.es/melillaportal/contenedor.jsp?anuncio=1&codMenu=778&codMenuPN=601&contenido=34811&nivel=1400&seccion=s_fdoc_d4_v1.jsp&tipo=5",
+            "https://sede.melilla.es/melillaPortal/transparencia/se_contenedor2.jsp?codMenu=44&codMenuPN=21&codResi=1&language=es&layout=se_contenedor2.jsp&seccion=se_seccion_menus.jsp"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier1"
+    },
+    {
+      "id": "belgium--french-community-commission-of-brussels",
+      "country": "Belgium",
+      "jurisdiction": "French Community Commission of Brussels",
+      "institution": "Parlement francophone bruxellois",
+      "official_url": "https://www.parlementfrancophone.brussels/",
+      "inventory_source": "https://www.parlementfrancophone.brussels/",
+      "body_class": "community_commission_assembly",
+      "constitutional_relationship": "brussels_community_commission",
+      "scope_note": "COCOF legislative functions and membership are distinct from treating all community commissions as additional separate parliaments. Check COCOM assembly overlap separately.",
+      "status": "searched",
+      "queries": [
+        "site:parlementfrancophone.brussels Parlement francophone bruxellois (live OR livestream OR webcast OR video OR streaming OR direct)",
+        "Parlement francophone bruxellois Belgium live direct commissies commissions"
+      ],
+      "checked_sources": [
+        {
+          "title": "Diffusion des débats en ligne",
+          "url": "https://www.parlementfrancophone.brussels/accueil/acces-restreint-au-parlement-diffusion-des-debats-en-ligne",
+          "source_kind": "broadcast_service_lead",
+          "review_method": "web_page_open_blocked",
+          "note": "Historical broadcast notice is a lead; verify the current plenary and committee directory."
+        },
+        {
+          "title": "Le travail en commission — Parlement Francophone Bruxellois",
+          "url": "https://www.parlementfrancophone.brussels/le-parlement/les-commissions",
+          "source_kind": "context_page",
+          "review_method": "web_page_open",
+          "note": "Institutional page opened. A page fetch does not validate active media, committee-room identity or reuse rights."
+        },
+        {
+          "title": "Les commissions permanentes — Parlement Francophone Bruxellois",
+          "url": "https://www.parlementfrancophone.brussels/le-parlement/les-commissions/les-commissions-permanentes",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "title": "Séance plénière du 22 octobre 2026 — Parlement Francophone Bruxellois",
+          "url": "https://www.parlementfrancophone.brussels/pfbweb/agenda/seance-pleniere-du-22-octobre-2026",
+          "source_kind": "context_page",
+          "review_method": "web_search_result_only",
+          "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        }
+      ],
+      "findings": [
+        "Historical broadcast notice is a lead; verify the current plenary and committee directory.",
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+      ],
+      "unresolved_leads": [
+        {
+          "summary": "Resolve chamber and committee broadcast services for Parlement francophone bruxellois",
+          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "urls": [
+            "https://www.parlementfrancophone.brussels/accueil/acces-restreint-au-parlement-diffusion-des-debats-en-ligne",
+            "https://www.parlementfrancophone.brussels/le-parlement/les-commissions",
+            "https://www.parlementfrancophone.brussels/le-parlement/les-commissions/les-commissions-permanentes",
+            "https://www.parlementfrancophone.brussels/accueil/acces-restreint-au-parlement-diffusion-des-debats-en-ligne",
+            "https://www.parlementfrancophone.brussels/pfbweb/agenda/seance-pleniere-du-22-octobre-2026"
+          ]
+        }
+      ],
+      "committee_room_status": "searched_player_mapping_pending",
+      "tier": "tier2"
     }
   ],
   "scope_definition": "Include first-level state/provincial/devolved legislatures and first-level regional deliberative councils, labelled by body_class. Ordinary municipal councils are excluded unless they perform the first-level regional/capital role. Special-status territories and related constituent countries require explicit constitutional_relationship labels.",
   "remaining_country_inventory": [
-    {
-      "country": "Iceland",
-      "tier": "tier1",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Ireland",
-      "tier": "tier1",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Luxembourg",
-      "tier": "tier1",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Costa Rica",
-      "tier": "tier1",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Mauritius",
-      "tier": "tier1",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Estonia",
-      "tier": "tier1",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Malta",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Chile",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Slovenia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Israel",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Latvia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Botswana",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Lithuania",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Cape Verde",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Cyprus",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Trinidad and Tobago",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Timor-Leste",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Panama",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Suriname",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Jamaica",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Montenegro",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Philippines",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Dominican Republic",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Mongolia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Hungary",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Croatia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Namibia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Indonesia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Colombia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Bulgaria",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "North Macedonia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Thailand",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Serbia",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Ghana",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Albania",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Sri Lanka",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Singapore",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Guyana",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Lesotho",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    },
-    {
-      "country": "Moldova",
-      "tier": "tier2",
-      "next_action": "Establish first-level legislative/regional deliberative scope from primary institutional or constitutional sources. Inventory every qualifying body; distinguish appointed administrative regions and ordinary municipalities before excluding a country. Then run a targeted chamber/committee broadcast search for every body."
-    }
+    "Iceland",
+    "Luxembourg",
+    "Costa Rica",
+    "Estonia",
+    "Chile",
+    "Slovenia",
+    "Israel",
+    "Latvia",
+    "Botswana",
+    "Lithuania",
+    "Cape Verde",
+    "Cyprus",
+    "Timor-Leste",
+    "Panama",
+    "Suriname",
+    "Jamaica",
+    "Montenegro",
+    "Philippines",
+    "Dominican Republic",
+    "Mongolia",
+    "Hungary",
+    "Croatia",
+    "Namibia",
+    "Indonesia",
+    "Colombia",
+    "Bulgaria",
+    "North Macedonia",
+    "Thailand",
+    "Serbia",
+    "Ghana",
+    "Albania",
+    "Sri Lanka",
+    "Singapore",
+    "Guyana",
+    "Lesotho",
+    "Moldova"
   ],
   "inventory_progress": {
-    "inventoried_jurisdictions": 522,
-    "searched_jurisdictions": 522,
-    "countries_with_rows": 31,
-    "countries_without_inventory": 40,
+    "inventoried_jurisdictions": 557,
+    "searched_jurisdictions": 557,
+    "countries_with_rows": 35,
+    "countries_without_inventory": 36,
     "global_inventory_complete": false
-  }
+  },
+  "special_status_method": "For related territories and free-associated or constituent countries, country is an audit grouping, not a sovereignty assertion. constitutional_relationship and scope_note qualify every special-status entry. This inventory remains incomplete.",
+  "special_status_remaining_work": [
+    "UK Overseas Territories and current Chagos/BIOT transition; distinguish legislatures from councils and uninhabited territories.",
+    "French overseas collectivities, New Caledonia Congress and province assemblies; avoid duplicating existing overseas regional bodies.",
+    "Australian external territories and current Norfolk governance; Finnish wellbeing counties and regional planning councils.",
+    "Cyprus northern de facto institutions, Kosovo and Transnistria require neutral status evidence and separate institutional relationships.",
+    "Panamanian indigenous comarca congresses and councils; Philippine BARMM/provinces/current Sulu relationship; Indonesian special-region and Papuan bodies.",
+    "Mount Athos; Timor-Leste Oecusse/Atauro institutional roles; Canadian Indigenous self-government boundary.",
+    "Verify Alderney and Sark institutional websites and broadcasts separately within the Bailiwick of Guernsey; no inference that Crown Dependencies are part of the UK."
+  ]
 }

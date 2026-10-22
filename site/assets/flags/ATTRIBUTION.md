@@ -1,5 +1,16 @@
 # Flag Asset Attribution
 
+- `cordoba.svg` is the [2014 flag of Córdoba Province, Argentina](https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_C%C3%B3rdoba_2014.svg),
+  designed by Cristian Baquero Lazcano, with SVG revisions by RapiarteBanderas,
+  Hurfer and HapHaxion; licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  The downloaded SVG is unchanged.
+- `nagasaki.svg` is the [Nagasaki Prefecture flag](https://commons.wikimedia.org/wiki/File:Flag_of_Nagasaki_Prefecture.svg),
+  vector by Alex Tora, public domain under Article 13 of Japan's Copyright Act.
+- `santa-catarina.svg` is the [Santa Catarina state flag](https://commons.wikimedia.org/wiki/File:Bandeira_de_Santa_Catarina.svg),
+  vector by OAlexander, recorded as public domain in Brazil on its source page.
+- `at.svg`, `jp.svg`, `mu.svg`, and `ch.svg` use the same flag-icons v7.3.2
+  MIT-licensed source as the other national flags below.
+
 - `quebec.svg`, `ontario.svg`, and `nunavut.svg` are public-domain flag files
   downloaded from Wikimedia Commons:
   [Quebec](https://commons.wikimedia.org/wiki/File:Flag_of_Quebec.svg),

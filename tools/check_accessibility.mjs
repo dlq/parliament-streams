@@ -380,7 +380,8 @@ try {
   assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
   assert((await page.locator(".channel-button").first().boundingBox()).y < 720);
-  await page.locator(".catalogue-information > summary").click();
+  assert.equal(await page.locator(".catalogue-information summary").count(), 0);
+  assert.equal(await page.locator("#catalogue-overview").isVisible(), true);
   assert.equal(await page.locator("#metric-sources").innerText(), String(canonicalCatalogue.channels.length));
   assert.equal(await page.locator("#metric-playable").innerText(), String(expectedPlayableCount));
   assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));

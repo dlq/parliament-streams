@@ -85,6 +85,14 @@ function renderDailyHero() {
 }
 
 const jurisdictionFlagAssets = {
+  "Austria": "assets/flags/at.svg",
+  "Japan": "assets/flags/jp.svg",
+  "Mauritius": "assets/flags/mu.svg",
+  "Switzerland": "assets/flags/ch.svg",
+  "Córdoba": "assets/flags/cordoba.svg",
+  "Nagasaki": "assets/flags/nagasaki.svg",
+  "Santa Catarina": "assets/flags/santa-catarina.svg",
+
   Alberta: "assets/flags/alberta.svg",
   Andalusia: "assets/flags/andalusia.svg",
   Australia: "assets/flags/au.svg",
@@ -367,7 +375,6 @@ function applyStaticTranslations() {
   setText("metric-playable-label", t("metricPlayable"));
   setText("metric-schedules-label", t("metricSchedules"));
   setText("metric-updated-label", t("metricUpdated"));
-  setText("catalogue-overview-title", t("catalogueCoverage"));
   setText("catalogue-information-label", t("catalogueCoverage"));
   document.querySelector("#catalogue-results").setAttribute("aria-label", t("catalogueResults"));
   elements.sortStatus.setAttribute("lang", state.locale);
