@@ -85,6 +85,9 @@ function renderDailyHero() {
 }
 
 const jurisdictionFlagAssets = {
+  Drenthe: "assets/flags/drenthe.svg",
+  Limburg: "assets/flags/limburg.svg",
+  "Noord-Brabant": "assets/flags/noord-brabant.svg",
   Bern: "assets/flags/bern.svg",
   Jersey: "assets/flags/je.svg",
   "Isle of Man": "assets/flags/im.svg",

@@ -1,0 +1,481 @@
+{
+  "research_date": "2026-10-22",
+  "scope": "All twelve Dutch first-level provincial legislatures; authority already resolved in the linked statutory review. Not municipalities, executives or constituent countries.",
+  "authority_report": "reports/discovery/2026-10-22-bern-and-regional-authority.json",
+  "method": "Normal public institutional and provider navigation in Chromium; no challenge bypass. Dated public recording playback, decoded frames and institutional Wikidata identities reviewed. Access blocks are environment-specific, not proof of public unavailability.",
+  "iptv_added": false,
+  "xmltv_parser_added": false,
+  "results": [
+    {
+      "province": "Drenthe",
+      "ledger_id": "netherlands--drenthe",
+      "identity": {
+        "query": "Provincial Council of Drenthe",
+        "qid": "Q17052373",
+        "revision": 2462400884,
+        "labels": {
+          "en": "States-Provincial of Drenthe",
+          "nl": "Provinciale Staten van Drenthe"
+        },
+        "description": "provincial council in Drenthe, Netherlands",
+        "official_websites": [
+          "http://www.provincialestaten.drenthe.nl/"
+        ]
+      },
+      "institutional_page": "https://www.provincie.drenthe.nl/%40144980/vergadering-provinciale-staten/",
+      "institutional_status": 200,
+      "provider_url": "https://www.drentsparlement.nl/",
+      "provider_status": 200,
+      "authority": "eligible_legislature",
+      "recording_checks": [
+        {
+          "name": "Drenthe",
+          "url": "https://www.drentsparlement.nl/Vergaderingen/Provinciale-Staten-PS/2026/30-september/10:00",
+          "status": 200,
+          "players": [],
+          "later": []
+        }
+      ],
+      "media_probe": {
+        "name": "Drenthe",
+        "media_url": "https://go-va-web.gemeenteoplossingen.nl/drenthe_1/2026-09-30-09-44-04-Provinciale-Staten-PS_1.mp4?start=1149&end=1187",
+        "first": {
+          "time": 4.971076,
+          "width": 1920,
+          "height": 1080,
+          "ready": 4,
+          "frames": 129
+        },
+        "later": {
+          "time": 7.482056,
+          "frames": 191
+        }
+      },
+      "decision": "promoted_official_viewing_link",
+      "catalogue_id": "netherlands-drenthe-provincial-council",
+      "official_url": "https://www.drentsparlement.nl/vergaderingen/",
+      "permission_status": "noncommercial_pending_review",
+      "conditions": [
+        "https://www.drentsparlement.nl/over_deze_site/proclaimer"
+      ],
+      "source_conditions": "The parliamentary proclaimer permits inbound hyperlinks. Commercial copying or distribution requires written permission; this does not establish independent audiovisual playback or redistribution rights.",
+      "accessibility": "Earlier meeting transcripts are linked among the sampled agenda documents; they are not a transcript of the sampled recording. Captions, sign language and audio description remain unverified.",
+      "live_validated": false,
+      "map_iso": "NL-DR"
+    },
+    {
+      "province": "Flevoland",
+      "ledger_id": "netherlands--flevoland",
+      "identity": {
+        "query": "Provincial Council of Flevoland",
+        "qid": "Q17511162",
+        "revision": 2539487868,
+        "labels": {
+          "en": "States-Provincial of Flevoland",
+          "nl": "Provinciale Staten van Flevoland"
+        },
+        "description": "States Provincial of Flevoland",
+        "official_websites": [
+          "http://stateninformatie.flevoland.nl/",
+          "https://stateninformatie.flevoland.nl/"
+        ]
+      },
+      "institutional_page": "https://flevoland.nl/agenda/ps-oktober-2026",
+      "institutional_status": 200,
+      "provider_url": "https://stateninformatie.flevoland.nl/vergaderingen",
+      "provider_status": 200,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Provider returned an access-denied page despite HTTP 200. Official notice describes a precautionary service shutdown following a vulnerability report; recheck restoration.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Fryslân",
+      "ledger_id": "netherlands--fryslan",
+      "identity": {
+        "query": "Provincial Council of Friesland",
+        "qid": "Q117252794",
+        "revision": 2462214932,
+        "labels": {
+          "en": "Provincial Council of Friesland"
+        },
+        "description": "provincial council in Friesland, Netherlands",
+        "official_websites": []
+      },
+      "institutional_page": "https://www.fryslan.frl/",
+      "institutional_status": 200,
+      "provider_url": "https://fryslan.notubiz.nl/dashboard",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Security/access-denial response prevented public player validation.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Gelderland",
+      "ledger_id": "netherlands--gelderland",
+      "identity": {
+        "query": "Provincial Council of Gelderland",
+        "qid": "Q17511167",
+        "revision": 2462215706,
+        "labels": {
+          "en": "States-Provincial of Gelderland",
+          "nl": "Provinciale Staten van Gelderland"
+        },
+        "description": "provincial council in Gelderland, Netherlands",
+        "official_websites": [
+          "http://www.gelderland.nl/4/Bestuur-en-politiek/Bestuur-en-politiek-Provinciale-Staten.html"
+        ]
+      },
+      "institutional_page": "https://www.gelderland.nl/themas/politiek/ps/volg-provinciale-staten",
+      "institutional_status": 200,
+      "provider_url": "https://www.gelderland.nl/Statenlive",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Security/access-denial response prevented public player validation.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Groningen",
+      "ledger_id": "netherlands--groningen",
+      "identity": {
+        "query": "Provincial Council of Groningen",
+        "qid": "Q17052387",
+        "revision": 2462431565,
+        "labels": {
+          "en": "States-Provincial of Groningen",
+          "nl": "Provinciale Staten van Groningen",
+          "fy": "Provinsjale Steaten fan Grinslân"
+        },
+        "description": "provincial council in Groningen, Netherlands",
+        "official_websites": [
+          "http://www.provinciegroningen.nl/ps/home/"
+        ]
+      },
+      "institutional_page": "https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/werken-in-commissies/",
+      "institutional_status": 200,
+      "provider_url": "https://groningen.stateninformatie.nl/",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Limburg",
+      "ledger_id": "netherlands--limburg",
+      "identity": {
+        "query": "Provincial Council of Limburg",
+        "qid": "Q17511170",
+        "revision": 2459962276,
+        "labels": {
+          "en": "States-Provincial of Limburg",
+          "nl": "Provinciale Staten van Limburg"
+        },
+        "description": "provincial council in Limburg, Netherlands",
+        "official_websites": [
+          "http://www.limburg.nl/Bestuur/Provinciale_Staten"
+        ]
+      },
+      "institutional_page": "https://www.limburg.nl/actueel/nieuws/vergaderingen-ps/2026/volg-live-openbaar-deel/",
+      "institutional_status": 200,
+      "provider_url": "https://limburg.bestuurlijkeinformatie.nl/Agenda/Index/c5a9db2c-5f80-4c52-907c-ff259578b2df",
+      "provider_status": 200,
+      "authority": "eligible_legislature",
+      "recording_checks": [
+        {
+          "name": "Limburg",
+          "url": "https://limburg.bestuurlijkeinformatie.nl/Agenda/Index/c5a9db2c-5f80-4c52-907c-ff259578b2df",
+          "status": 200,
+          "players": [
+            {
+              "frame": "https://player.babscast.com/48be5da2-3a69-46cb-8309-ea7316c2284a",
+              "v": [
+                {
+                  "src": "blob:https://player.babscast.com/aea5600a-625b-416f-aa3d-f981482194cc",
+                  "time": 0,
+                  "duration": 4796.433,
+                  "ready": 4,
+                  "width": 1280,
+                  "frames": 4,
+                  "tracks": []
+                }
+              ]
+            }
+          ],
+          "later": [
+            {
+              "time": 0,
+              "frames": 4
+            }
+          ]
+        }
+      ],
+      "media_probe": {
+        "name": "Limburg",
+        "first": {
+          "time": 4.963638,
+          "width": 1280,
+          "height": 720,
+          "ready": 4,
+          "frames": 154
+        },
+        "later": {
+          "time": 7.469706,
+          "frames": 229
+        }
+      },
+      "decision": "promoted_official_viewing_link",
+      "catalogue_id": "netherlands-limburg-provincial-council",
+      "official_url": "https://limburg.bestuurlijkeinformatie.nl/",
+      "permission_status": "personal_use_pending_review",
+      "conditions": [
+        "https://www.limburg.nl/algemeen/privacy/"
+      ],
+      "source_conditions": "The official province designates its public iBabs viewing service. The proclaimer refers visitors to external-service conditions; no independent audiovisual reuse grant was established.",
+      "accessibility": "No text tracks were exposed in the sampled public committee video. Accessibility coverage across plenary and committee recordings remains unverified.",
+      "live_validated": false,
+      "map_iso": "NL-LI"
+    },
+    {
+      "province": "Noord-Brabant",
+      "ledger_id": "netherlands--noord-brabant",
+      "identity": {
+        "query": "Provincial Council of North Brabant",
+        "qid": "Q17511173",
+        "revision": 2342697414,
+        "labels": {
+          "en": "States of North Brabant"
+        },
+        "description": null,
+        "official_websites": [
+          "http://www.brabant.nl/politiek-en-bestuur/provinciale-staten.aspx"
+        ]
+      },
+      "institutional_page": "https://www.brabant.nl/live-vergaderingen/",
+      "institutional_status": 200,
+      "provider_url": "https://vimeo.com/event/6231749/255e65abe1",
+      "provider_status": 200,
+      "authority": "eligible_legislature",
+      "recording_checks": [
+        {
+          "name": "Brabant",
+          "url": "https://vimeo.com/event/6231749/255e65abe1",
+          "status": 200,
+          "players": [
+            {
+              "frame": "https://vimeo.com/event/6231749/255e65abe1",
+              "v": [
+                {
+                  "src": "blob:https://vimeo.com/9be5229c-bc31-4f9c-89bf-c07626dc3718",
+                  "time": 3.361474,
+                  "duration": 33379.733333,
+                  "ready": 4,
+                  "width": 1280,
+                  "frames": 106,
+                  "tracks": []
+                }
+              ]
+            }
+          ],
+          "later": [
+            {
+              "time": 5.891269,
+              "frames": 181
+            }
+          ]
+        },
+        {
+          "name": "Brabant2",
+          "url": "https://vimeo.com/event/6231754/bd0ad01d14",
+          "status": 200,
+          "players": [
+            {
+              "frame": "https://vimeo.com/event/6231754/bd0ad01d14",
+              "v": [
+                {
+                  "src": "blob:https://vimeo.com/d989ffb2-fc03-432a-b5d5-31ddc9ea63ce",
+                  "time": 3.516468,
+                  "duration": 23929.2,
+                  "ready": 4,
+                  "width": 1280,
+                  "frames": 110,
+                  "tracks": [
+                    {
+                      "kind": "subtitles",
+                      "language": "en-x-autogen"
+                    },
+                    {
+                      "kind": "captions",
+                      "language": "en-x-autogen"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "later": [
+            {
+              "time": 6.047566,
+              "frames": 186
+            }
+          ]
+        }
+      ],
+      "decision": "promoted_official_viewing_link",
+      "catalogue_id": "netherlands-noord-brabant-provincial-council",
+      "official_url": "https://www.brabant.nl/live-vergaderingen/",
+      "permission_status": "personal_use_pending_review",
+      "conditions": [
+        "https://www.brabant.nl/live-vergaderingen/",
+        "https://brainps.brabant.nl/handboek-ps/vergaderingen/notulen-audio-videoverslagen/",
+        "https://brainps.brabant.nl/handboek-ps/vergaderingen/beeldgebruik-vergaderingen/"
+      ],
+      "source_conditions": "Official pages designate public Vimeo viewing for council and thematic meetings. No independent audiovisual reuse grant was established. The handbook page about image use concerns members showing material during meetings, not a licence to redistribute recordings.",
+      "accessibility": "The sampled Hart der Provincie 2 recording exposes CC and Transcript controls, with tracks labelled en-x-autogen. Accuracy and language suitability were not assessed; the sampled Statenzaal video exposed no tracks. Do not infer consistent caption coverage across rooms.",
+      "live_validated": false,
+      "map_iso": "NL-NB",
+      "current_event_check": {
+        "url": "https://vimeo.com/event/6273724/c83178ecd4",
+        "status": 200,
+        "text": "Join Vimeo\nPlaying in picture-in-picture\nLIVE\nNaN:NaN\nNaN:NaN\nSpeed\nPicture-in-Picture\nFullscreen\nThis event is not currently live\nOct 16\n9:00 AM GMT+2\nStatenvergadering 16-10-2026\nTerms & Privacy",
+        "first": {
+          "time": 0,
+          "width": 0,
+          "frames": 0
+        },
+        "later": {
+          "time": 0,
+          "frames": 0
+        }
+      },
+      "current_event_note": "The current 16 October 2026 Statenzaal event reports not currently live and decoded no video during this check; validated playback is from the earlier 2 October recordings."
+    },
+    {
+      "province": "Noord-Holland",
+      "ledger_id": "netherlands--noord-holland",
+      "identity": {
+        "query": "Provincial Council of North Holland",
+        "qid": "Q18167052",
+        "revision": 2462476825,
+        "labels": {
+          "en": "States-Provincial of North Holland",
+          "nl": "Provinciale Staten van Noord-Holland"
+        },
+        "description": "provincial council in North Holland, Netherlands",
+        "official_websites": [
+          "https://www.noord-holland.nl/Bestuur/Provinciale_Staten"
+        ]
+      },
+      "institutional_page": "https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Vergaderingen_Provinciale_Staten",
+      "institutional_status": 200,
+      "provider_url": "https://noord-holland.stateninformatie.nl/",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Overijssel",
+      "ledger_id": "netherlands--overijssel",
+      "identity": {
+        "query": "Provincial Council of Overijssel",
+        "qid": "Q27647950",
+        "revision": 2342713781,
+        "labels": {
+          "nl": "Provinciale Staten van Overijssel",
+          "en": "States-Provincial of Overijssel"
+        },
+        "description": "Dutch parliament",
+        "official_websites": [
+          "http://www.overijssel.nl/bestuur/provinciale-staten/"
+        ]
+      },
+      "institutional_page": "https://www.overijssel.nl/bestuur/provinciale-staten/commissies-en-woordvoerders-provinciale-staten/",
+      "institutional_status": 200,
+      "provider_url": "https://overijssel.notubiz.nl/live",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Security/access-denial response prevented public player validation.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Utrecht",
+      "ledger_id": "netherlands--utrecht",
+      "identity": {
+        "query": "Provincial Council of Utrecht",
+        "qid": "Q27647191",
+        "revision": 2503382478,
+        "labels": {
+          "nl": "Provinciale Staten van Utrecht",
+          "en": "States-Provincial of Utrecht"
+        },
+        "description": "provincial council in Utrecht, Netherlands",
+        "official_websites": [
+          "https://www.stateninformatie.provincie-utrecht.nl"
+        ]
+      },
+      "institutional_page": "https://www.provincie-utrecht.nl/politiek-bestuur/provinciale-staten",
+      "institutional_status": 200,
+      "provider_url": "https://www.provincialestatenutrecht.nl/",
+      "provider_status": 200,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Both provincial parliamentary hostnames returned access-denied content despite HTTP 200.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Zeeland",
+      "ledger_id": "netherlands--zeeland",
+      "identity": {
+        "query": "Provincial Council of Zeeland",
+        "qid": "Q27648047",
+        "revision": 2506143127,
+        "labels": {
+          "nl": "Provinciale Staten van Zeeland",
+          "en": "States-Provincial of Zeeland"
+        },
+        "description": "provincial council in Zeeland, Netherlands",
+        "official_websites": [
+          "http://ps.zeeland.nl/"
+        ]
+      },
+      "institutional_page": "https://www.zeeland.nl/provinciale-staten/statenvergaderingen",
+      "institutional_status": 403,
+      "provider_url": "https://channel.royalcast.com/provinciezeeland/",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Officially designated Royalcast service returned HTTP 403 / CloudFront request blocked.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    },
+    {
+      "province": "Zuid-Holland",
+      "ledger_id": "netherlands--zuid-holland",
+      "identity": {
+        "query": "Provincial Council of South Holland",
+        "qid": "Q17511179",
+        "revision": 2462476889,
+        "labels": {
+          "en": "States-Provincial of South Holland",
+          "nl": "Provinciale Staten van Zuid-Holland"
+        },
+        "description": "provincial council in South Holland, Netherlands",
+        "official_websites": [
+          "https://staten.zuid-holland.nl"
+        ]
+      },
+      "institutional_page": "https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/",
+      "institutional_status": 200,
+      "provider_url": "https://pzh.notubiz.nl/live",
+      "provider_status": 403,
+      "authority": "eligible_legislature",
+      "decision": "held_player_access_unvalidated",
+      "blocker": "Security/access-denial response prevented public player validation.",
+      "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls."
+    }
+  ]
+}

@@ -25630,19 +25630,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://www.drentsparlement.nl/",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Promoted official viewing service after dated recording decode and playback checks. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Drenthe",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Recheck on-air coverage and room-specific accessibility and permissions",
+          "next_action": "Validate during a public sitting. Keep official link-out policy until independent media rights and stable endpoints are established.",
           "urls": [
-            "https://www.provincie.drenthe.nl/%40144980/vergadering-provinciale-staten/"
+            "https://www.drentsparlement.nl/vergaderingen/",
+            "https://www.drentsparlement.nl/over_deze_site/proclaimer"
           ]
         }
       ],
@@ -25659,7 +25667,11 @@
         "reason": "The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.",
         "review_report": "reports/discovery/2026-10-22-bern-and-regional-authority.json",
         "checked_on": "2026-10-22"
-      }
+      },
+      "promoted_catalogue_ids": [
+        "netherlands-drenthe-provincial-council"
+      ],
+      "promotion_note": "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested."
     },
     {
       "id": "netherlands--flevoland",
@@ -25740,22 +25752,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://stateninformatie.flevoland.nl/vergaderingen",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Provider returned an access-denied page despite HTTP 200. Official notice describes a precautionary service shutdown following a vulnerability report; recheck restoration."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Provider returned an access-denied page despite HTTP 200. Official notice describes a precautionary service shutdown following a vulnerability report; recheck restoration. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Flevoland",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Provider returned an access-denied page despite HTTP 200. Official notice describes a precautionary service shutdown following a vulnerability report; recheck restoration.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
             "https://flevoland.nl/agenda/ps-oktober-2026",
-            "https://flevoland.nl/actueel/website-van-provinciale-staten-flevoland-tijdelijk",
-            "https://www.flevoland.nl/Content/Pages/Wie-zijn-we/Gedeputeerde-Staten",
-            "https://flevoland.nl/dossiers/stikstof/bijeenkomsten"
+            "https://stateninformatie.flevoland.nl/vergaderingen"
           ]
         }
       ],
@@ -25832,19 +25849,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://fryslan.notubiz.nl/dashboard",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Security/access-denial response prevented public player validation."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Security/access-denial response prevented public player validation. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Fryslân",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Security/access-denial response prevented public player validation.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
-            "https://www.fryslan.frl/persgesprek"
+            "https://www.fryslan.frl/",
+            "https://fryslan.notubiz.nl/dashboard"
           ]
         }
       ],
@@ -25942,22 +25967,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://www.gelderland.nl/Statenlive",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Security/access-denial response prevented public player validation."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Security/access-denial response prevented public player validation. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Gelderland",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Security/access-denial response prevented public player validation.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
             "https://www.gelderland.nl/themas/politiek/ps/volg-provinciale-staten",
-            "https://www.gelderland.nl/themas/politiek/ps?menu=false",
-            "https://www.gelderland.nl/themas/politiek/ps/kennismaken-met-provinciale-staten",
-            "https://www.gelderland.nl/persberichten/provinciale-staten-houden-hoorzitting-over-gelders-luchtvaartbeleid"
+            "https://www.gelderland.nl/Statenlive"
           ]
         }
       ],
@@ -26041,20 +26071,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://groningen.stateninformatie.nl/",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Groningen",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
             "https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/werken-in-commissies/",
-            "https://www.provinciegroningen.nl/bestuur-en-organisatie/provinciale-staten/invloed-uitoefenen/"
+            "https://groningen.stateninformatie.nl/"
           ]
         }
       ],
@@ -26152,22 +26189,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://limburg.bestuurlijkeinformatie.nl/Agenda/Index/c5a9db2c-5f80-4c52-907c-ff259578b2df",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Official Dutch provincial parliament meeting portal for plenary and public committee proceedings, linked by limburg.nl. The explicitly public opening of the 16 October 2026 Controlecommissie recording passed 1280x720 decode and advancing-playback checks. Closed proceedings were not accessed; current on-air live coverage was not tested."
         }
       ],
       "findings": [
         "Official media-page leads are recorded; they may include archives and are not validated live streams.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Promoted official viewing service after dated recording decode and playback checks. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Limburg",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Recheck on-air coverage and room-specific accessibility and permissions",
+          "next_action": "Validate during a public sitting. Keep official link-out policy until independent media rights and stable endpoints are established.",
           "urls": [
-            "https://www.limburg.nl/actueel/nieuws/vergaderingen-ps/2026/volg-live-openbaar-deel/",
-            "https://www.limburg.nl/%4011430/marie-geijs-rappange-lezing/",
-            "https://www.limburg.nl/bestuur/provinciale-staten/",
-            "https://www.limburg.nl/bestuur/provinciale-staten/commissies/"
+            "https://limburg.bestuurlijkeinformatie.nl/",
+            "https://www.limburg.nl/algemeen/privacy/"
           ]
         }
       ],
@@ -26184,7 +26226,11 @@
         "reason": "The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.",
         "review_report": "reports/discovery/2026-10-22-bern-and-regional-authority.json",
         "checked_on": "2026-10-22"
-      }
+      },
+      "promoted_catalogue_ids": [
+        "netherlands-limburg-provincial-council"
+      ],
+      "promotion_note": "Official Dutch provincial parliament meeting portal for plenary and public committee proceedings, linked by limburg.nl. The explicitly public opening of the 16 October 2026 Controlecommissie recording passed 1280x720 decode and advancing-playback checks. Closed proceedings were not accessed; current on-air live coverage was not tested."
     },
     {
       "id": "netherlands--noord-brabant",
@@ -26265,22 +26311,29 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://vimeo.com/event/6231749/255e65abe1",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested."
         }
       ],
       "findings": [
         "Official media-page leads are recorded; they may include archives and are not validated live streams.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Promoted official viewing service after dated recording decode and playback checks. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Noord-Brabant",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Recheck on-air coverage and room-specific accessibility and permissions",
+          "next_action": "Validate during a public sitting. Keep official link-out policy until independent media rights and stable endpoints are established.",
           "urls": [
             "https://www.brabant.nl/live-vergaderingen/",
+            "https://www.brabant.nl/live-vergaderingen/",
             "https://brainps.brabant.nl/handboek-ps/vergaderingen/notulen-audio-videoverslagen/",
-            "https://www.brabant.nl/bestuur/provinciale-staten/",
-            "https://open.brabant.nl/overige-openbare-documenten"
+            "https://brainps.brabant.nl/handboek-ps/vergaderingen/beeldgebruik-vergaderingen/"
           ]
         }
       ],
@@ -26297,7 +26350,11 @@
         "reason": "The councils have autonomous provincial ordinance-making powers, initiative and amendment rights, budget authority and executive accountability/inquiry powers. Binding rules can apply directly to residents and businesses. National-law limits and the term verordening do not negate legislative authority. Municipal councils also have ordinance powers but remain outside the geographic scope.",
         "review_report": "reports/discovery/2026-10-22-bern-and-regional-authority.json",
         "checked_on": "2026-10-22"
-      }
+      },
+      "promoted_catalogue_ids": [
+        "netherlands-noord-brabant-provincial-council"
+      ],
+      "promotion_note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested."
     },
     {
       "id": "netherlands--noord-holland",
@@ -26378,22 +26435,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://noord-holland.stateninformatie.nl/",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Noord-Holland",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Security/access-denial response prevented public player validation. Official iBabs alternatives and a dated past meeting opened, but exposed documents rather than a playable recording; the video route remains the blocked service.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
-            "https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Statencommissies",
-            "https://www.noord-holland.nl/Bestuur/Inspraak_en_meedenken_nieuw/Statenleden_en_inspreken",
             "https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Vergaderingen_Provinciale_Staten",
-            "https://www.noord-holland.nl/Bestuur/Provinciale_Staten/Gast_van_de_Staten"
+            "https://noord-holland.stateninformatie.nl/"
           ]
         }
       ],
@@ -26491,22 +26553,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://overijssel.notubiz.nl/live",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Security/access-denial response prevented public player validation."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Security/access-denial response prevented public player validation. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Overijssel",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Security/access-denial response prevented public player validation.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
             "https://www.overijssel.nl/bestuur/provinciale-staten/commissies-en-woordvoerders-provinciale-staten/",
-            "https://www.overijssel.nl/agenda/statencommissiedag-28-oktober-2026/",
-            "https://www.overijssel.nl/bestuur/provinciale-staten/hoe-kom-ik-in-contact-met-statenleden/",
-            "https://www.overijssel.nl/bestuur/provinciale-staten/woordenlijst-provinciale-staten/"
+            "https://overijssel.notubiz.nl/live"
           ]
         }
       ],
@@ -26583,19 +26650,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://www.provincialestatenutrecht.nl/",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Both provincial parliamentary hostnames returned access-denied content despite HTTP 200."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Both provincial parliamentary hostnames returned access-denied content despite HTTP 200. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Utrecht",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Both provincial parliamentary hostnames returned access-denied content despite HTTP 200.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
-            "https://www.provincie-utrecht.nl/politiek-bestuur/provinciale-staten"
+            "https://www.provincie-utrecht.nl/politiek-bestuur/provinciale-staten",
+            "https://www.provincialestatenutrecht.nl/"
           ]
         }
       ],
@@ -26693,22 +26768,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://channel.royalcast.com/provinciezeeland/",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Officially designated Royalcast service returned HTTP 403 / CloudFront request blocked."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Officially designated Royalcast service returned HTTP 403 / CloudFront request blocked. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Zeeland",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Officially designated Royalcast service returned HTTP 403 / CloudFront request blocked.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
             "https://www.zeeland.nl/provinciale-staten/statenvergaderingen",
-            "https://www.zeeland.nl/bestuur/vergaderoverzicht-gs-ps?page=%2C1%2C3",
-            "https://pcportal.zeeland.nl/begroting-2026/project/de-volksvertegenwoordiging-van-zeeland-is-zichtbaar-en-benaderbaar-voor-de-zeeuwse-kiezer",
-            "https://www.zeeland.nl/provinciale-staten/commissies"
+            "https://channel.royalcast.com/provinciezeeland/"
           ]
         }
       ],
@@ -26806,22 +26886,27 @@
           "title": "Resolved legislative-authority evidence",
           "review_method": "Opened current province explanation.",
           "note": "Explains instruction rules for lower authorities and rules directly binding residents/businesses. September 2026 amendment adoption is distinguished from later publication/commencement."
+        },
+        {
+          "url": "https://pzh.notubiz.nl/live",
+          "title": "Designated provincial viewing service",
+          "review_method": "normal_chromium_navigation",
+          "note": "Security/access-denial response prevented public player validation."
         }
       ],
       "findings": [
         "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
         "Authority follow-up: Retain all twelve as held; do not apply this assessment to Aruba, Curaçao, Sint Maarten or Caribbean island councils.",
-        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility."
+        "Resolved authority review: Resolve the twelve province ledger rows positively on the shared legal framework. This is not validation or promotion of twelve broadcast services and does not decide island-council eligibility.",
+        "Twelve-province validation pass: Security/access-denial response prevented public player validation. Evidence: reports/discovery/2026-10-22-dutch-province-decisions.json"
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Provinciale Staten Zuid-Holland",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Security/access-denial response prevented public player validation.",
+          "next_action": "Recheck the normal public player from a different public network or during a sitting; validate recording playback and source conditions before promotion. Do not bypass access controls.",
           "urls": [
             "https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/",
-            "https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/provinciale-staten/",
-            "https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/besluitvorming-beinvloeden/",
-            "https://www.zuid-holland.nl/politiek-bestuur/provinciale-staten/commissies/"
+            "https://pzh.notubiz.nl/live"
           ]
         }
       ],

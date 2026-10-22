@@ -4,19 +4,19 @@
 
 ## Current Local State — 2026-10-22
 
-These counts describe the working tree, including Bern's official archive
-addition; they do not assert that uncommitted work is already deployed.
+These counts describe the working tree, including the three Dutch provincial viewing
+additions; they do not assert that uncommitted work is already deployed.
 `data/channels.json` remains the canonical published-data source.
 
-- 118 sources: 50 national, 62 subnational/territorial, six supranational.
-- 43 distinct published regional/territorial jurisdictions, all with map geometry.
-- 38 native-player sources and three provider embeds; 64 official link-outs and
+- 121 sources: 50 national, 65 subnational/territorial, six supranational.
+- 46 distinct published regional/territorial jurisdictions, all with map geometry.
+- 38 native-player sources and three provider embeds; 67 official link-outs and
   13 research-only records.
 - 33 catalogue records have implemented schedule metadata, covering 17 unique
-  source URLs. Another 90 unique schedule/event URLs remain planned.
-- 50 records have a pending rights status. All 118 retain at least one unknown
+  source URLs. Another 93 unique schedule/event URLs remain planned.
+- 53 records have a pending rights status. All 121 retain at least one unknown
   media-accessibility field; unknown does not mean unavailable.
-- 24 tracked candidate records: 20 promoted, three researching and one rejected.
+- 27 tracked candidate records: 23 promoted, three researching and one rejected.
   The held records are Chile Sala IV, Iceland Althingi and France's Senate;
   Skåne was rejected after the legislative-authority review. Other discovery
   leads remain in research reports before becoming formal candidates.
@@ -54,6 +54,7 @@ provider embeds or implemented XMLTV parsers.
 | [Nagasaki committee mapping](../reports/discovery/2026-10-22-nagasaki-committee-map.json) | Current and historical committee channels |
 | [Held candidates and authority follow-up](../reports/discovery/2026-10-22-authority-followup.md) | Four candidate rechecks; Skåne excluded, Bern eligible, Nagasaki and Dutch provincial authority questions retained |
 | [Bern and regional authority resolution](../reports/discovery/2026-10-22-bern-and-regional-authority.md) | Bern archive playback verified; Nagasaki and twelve Dutch provincial councils confirmed eligible |
+| [Dutch province decisions](../reports/discovery/2026-10-22-dutch-province-decisions.md) | All twelve checked; three official viewing additions, nine held with explicit blockers |
 | [Bern promotion](../reports/discovery/2026-10-22-bern-promotion.json) | Cantonal-parliament identity Q664547; official archive, Switzerland search, flag and current swisstopo boundary |
 
 The follow-up closes Skåne's current publication investigation on scope grounds.
@@ -62,8 +63,10 @@ advancing playback and decoded frames, with a visible transcript. Its on-air
 live route remains unvalidated; the next ordinary session starts 23 November.
 Nagasaki and the twelve Dutch provincial councils now pass the authority gate:
 their autonomous binding ordinances, budget and scrutiny powers meet the scope
-rule. Nagasaki's existing links remain published. Dutch broadcast services still
-need individual validation; the authority decision alone does not add sources.
+rule. Nagasaki's existing links remain published. A twelve-province broadcast pass adds Drenthe, Limburg and Noord-Brabant after
+dated recording playback checks. Nine other services remain held because their
+public players could not be validated from this environment; accessible document
+portals did not establish working alternative video. See the [province decisions](../reports/discovery/2026-10-22-dutch-province-decisions.md).
 Bern's identity and publication surfaces are now reconciled: its official archive
 is a catalogue link-out, with Switzerland search association, localized names,
 cantonal flag and the 2026 canton boundary. Its official session calendar appears

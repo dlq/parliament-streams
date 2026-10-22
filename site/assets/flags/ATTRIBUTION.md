@@ -59,3 +59,12 @@
   Nations flag SVGs are from
   [flag-icons v7.3.2](https://github.com/lipis/flag-icons/tree/v7.3.2), under
   the MIT licence reproduced in `LICENSE-flag-icons.txt`.
+
+## Dutch provincial flags
+
+Bundled from Wikimedia Commons on 22 October 2026; the file pages identify these
+Dutch provincial flag depictions as public domain.
+
+- `drenthe.svg`: [Flag of Drenthe.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Drenthe.svg), GeeKaa, later SVG optimization by HapHaxion; public-domain release.
+- `limburg.svg`: [Flag of Limburg (Netherlands).svg](https://commons.wikimedia.org/wiki/File:Flag_of_Limburg_(Netherlands).svg), Louis Maris design, SVG by GeeKaa and D’Arch; public-domain Dutch provincial flag.
+- `noord-brabant.svg`: [North Brabant-Flag.svg](https://commons.wikimedia.org/wiki/File:North_Brabant-Flag.svg), GeeKaa and later optimizations; public-domain release.

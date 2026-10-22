@@ -41,3 +41,7 @@ Source: **©swisstopo**. The [OGD terms](https://www.swisstopo.admin.ch/en/terms
 permit use, processing and redistribution with source attribution, also shown
 in the map footer. Retrieval metadata is retained in
 `reports/discovery/2026-10-22-bern-promotion.json`.
+
+The Dutch provincial additions are Drenthe (NL-DR), Limburg (NL-LI, Netherlands,
+not Belgium), and Noord-Brabant (NL-NB), from the same public-domain Natural
+Earth Admin 1 dataset. Coordinates are rounded to six decimals.

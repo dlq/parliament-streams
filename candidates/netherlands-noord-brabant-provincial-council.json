@@ -1,0 +1,71 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Current Provinciewet authority review establishes eligibility; this is the provincial legislature, not a city council or executive.",
+    "Direct Wikidata entity Q17511173, revision 2342697414, checked against official institutional names and the province-to-provider link chain.",
+    "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested.",
+    "Detailed evidence: reports/discovery/2026-10-22-dutch-province-decisions.json",
+    "Added with Netherlands search association, local flag, map geometry and planned calendar outlink. No direct HLS or implemented XMLTV parser added."
+  ],
+  "channel": {
+    "id": "netherlands-noord-brabant-provincial-council",
+    "name": "Noord-Brabant Provincial Council",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Noord-Brabant",
+    "legislature": "Provinciale Staten van Noord-Brabant",
+    "external_ids": {
+      "wikidata_qid": "Q17511173",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q17511173",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Provincial legislature, not the province, executive or building; entity revision 2342697414. Official institutional page and designated viewing service independently corroborate the name."
+      }
+    ],
+    "language": "Dutch",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.brabant.nl/live-vergaderingen/",
+    "provenance_note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested. The current 16 October 2026 Statenzaal event reports not currently live and decoded no video during this check; validated playback is from the earlier 2 October recordings.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The sampled Hart der Provincie 2 recording exposes CC and Transcript controls, with tracks labelled en-x-autogen. Accuracy and language suitability were not assessed; the sampled Statenzaal video exposed no tracks. Do not infer consistent caption coverage across rooms."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://brainps.brabant.nl/handboek-ps/vergaderingen/vergaderkalender-provinciale-staten/",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official pages designate public Vimeo viewing for council and thematic meetings. No independent audiovisual reuse grant was established. The handbook page about image use concerns members showing material during meetings, not a licence to redistribute recordings.",
+      "evidence": [
+        "https://www.brabant.nl/live-vergaderingen/",
+        "https://brainps.brabant.nl/handboek-ps/vergaderingen/notulen-audio-videoverslagen/",
+        "https://brainps.brabant.nl/handboek-ps/vergaderingen/beeldgebruik-vergaderingen/"
+      ],
+      "recommendation": "Open the official viewing service. Keep link-out only; obtain applicable permission before independent media playback, embedding or redistribution."
+    }
+  }
+}

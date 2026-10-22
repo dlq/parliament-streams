@@ -9637,6 +9637,203 @@
           "note": "Sampled archival MP4 decodes at 960x540, with advancing time and decoded frames; no native/live/IPTV promotion."
         }
       ]
+    },
+    {
+      "id": "netherlands-drenthe-provincial-council",
+      "name": "Drenthe Provincial Council",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Drenthe",
+      "legislature": "Provinciale Staten van Drenthe",
+      "external_ids": {
+        "wikidata_qid": "Q17052373",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17052373",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Provincial legislature, not the province, executive or building; entity revision 2462400884. Official institutional page and designated viewing service independently corroborate the name."
+        }
+      ],
+      "language": "Dutch",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.drentsparlement.nl/vergaderingen/",
+      "provenance_note": "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Earlier meeting transcripts are linked among the sampled agenda documents; they are not a transcript of the sampled recording. Captions, sign language and audio description remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.drentsparlement.nl/vergaderingen/vergaderschema/",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "noncommercial_pending_review",
+        "summary": "The parliamentary proclaimer permits inbound hyperlinks. Commercial copying or distribution requires written permission; this does not establish independent audiovisual playback or redistribution rights.",
+        "evidence": [
+          "https://www.drentsparlement.nl/over_deze_site/proclaimer"
+        ],
+        "recommendation": "Open the official viewing service. Keep link-out only; obtain applicable permission before independent media playback, embedding or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T21:20:35.768Z",
+          "report_path": "reports/health/2026-10-22-dutch-provinces-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested."
+        }
+      ]
+    },
+    {
+      "id": "netherlands-limburg-provincial-council",
+      "name": "Limburg Provincial Council",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Limburg",
+      "legislature": "Provinciale Staten van Limburg",
+      "external_ids": {
+        "wikidata_qid": "Q17511170",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17511170",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Provincial legislature, not the province, executive or building; entity revision 2459962276. Official institutional page and designated viewing service independently corroborate the name."
+        }
+      ],
+      "language": "Dutch",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://limburg.bestuurlijkeinformatie.nl/",
+      "provenance_note": "Official Dutch provincial parliament meeting portal for plenary and public committee proceedings, linked by limburg.nl. The explicitly public opening of the 16 October 2026 Controlecommissie recording passed 1280x720 decode and advancing-playback checks. Closed proceedings were not accessed; current on-air live coverage was not tested.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No text tracks were exposed in the sampled public committee video. Accessibility coverage across plenary and committee recordings remains unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://limburg.bestuurlijkeinformatie.nl/",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official province designates its public iBabs viewing service. The proclaimer refers visitors to external-service conditions; no independent audiovisual reuse grant was established.",
+        "evidence": [
+          "https://www.limburg.nl/algemeen/privacy/"
+        ],
+        "recommendation": "Open the official viewing service. Keep link-out only; obtain applicable permission before independent media playback, embedding or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T21:20:35.768Z",
+          "report_path": "reports/health/2026-10-22-dutch-provinces-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official Dutch provincial parliament meeting portal for plenary and public committee proceedings, linked by limburg.nl. The explicitly public opening of the 16 October 2026 Controlecommissie recording passed 1280x720 decode and advancing-playback checks. Closed proceedings were not accessed; current on-air live coverage was not tested."
+        }
+      ]
+    },
+    {
+      "id": "netherlands-noord-brabant-provincial-council",
+      "name": "Noord-Brabant Provincial Council",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Noord-Brabant",
+      "legislature": "Provinciale Staten van Noord-Brabant",
+      "external_ids": {
+        "wikidata_qid": "Q17511173",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17511173",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Provincial legislature, not the province, executive or building; entity revision 2342697414. Official institutional page and designated viewing service independently corroborate the name."
+        }
+      ],
+      "language": "Dutch",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.brabant.nl/live-vergaderingen/",
+      "provenance_note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested. The current 16 October 2026 Statenzaal event reports not currently live and decoded no video during this check; validated playback is from the earlier 2 October recordings.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The sampled Hart der Provincie 2 recording exposes CC and Transcript controls, with tracks labelled en-x-autogen. Accuracy and language suitability were not assessed; the sampled Statenzaal video exposed no tracks. Do not infer consistent caption coverage across rooms."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://brainps.brabant.nl/handboek-ps/vergaderingen/vergaderkalender-provinciale-staten/",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official pages designate public Vimeo viewing for council and thematic meetings. No independent audiovisual reuse grant was established. The handbook page about image use concerns members showing material during meetings, not a licence to redistribute recordings.",
+        "evidence": [
+          "https://www.brabant.nl/live-vergaderingen/",
+          "https://brainps.brabant.nl/handboek-ps/vergaderingen/notulen-audio-videoverslagen/",
+          "https://brainps.brabant.nl/handboek-ps/vergaderingen/beeldgebruik-vergaderingen/"
+        ],
+        "recommendation": "Open the official viewing service. Keep link-out only; obtain applicable permission before independent media playback, embedding or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T21:20:35.768Z",
+          "report_path": "reports/health/2026-10-22-dutch-provinces-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested."
+        }
+      ]
     }
   ]
 }

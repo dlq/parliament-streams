@@ -16,6 +16,17 @@ on Online-Tagblatt; successful recorded-video playback and visible transcripts
 do not establish independent playback, embedding or redistribution permission.
 See the [identity and promotion evidence](../reports/discovery/2026-10-22-bern-promotion.json).
 
+## Dutch Provincial Viewing Links
+
+Drenthe, Limburg and Noord-Brabant are official link-outs. Drenthe’s parliamentary
+proclaimer allows inbound links but requires permission for commercial copying or
+distribution (`noncommercial_pending_review`). Limburg and Noord-Brabant remain
+`personal_use_pending_review`: their designation of public players establishes a
+viewing route, not an independent audiovisual reuse grant. Noord-Brabant’s image-use
+handbook concerns members presenting material inside meetings, not redistribution
+of recordings. None of these additions authorizes native playback, IPTV extraction
+or a new XMLTV parser. [Source-specific evidence](../reports/discovery/2026-10-22-dutch-province-decisions.json).
+
 ## Catalogue Position
 
 Public availability is not the same thing as permission to redistribute,

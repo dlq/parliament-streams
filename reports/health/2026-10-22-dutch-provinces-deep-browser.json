@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-22T21:20:35.768Z",
+  "method": "browser_player",
+  "results": [
+    {
+      "id": "netherlands-drenthe-provincial-council",
+      "status": "ok",
+      "note": "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested."
+    },
+    {
+      "id": "netherlands-limburg-provincial-council",
+      "status": "ok",
+      "note": "Official Dutch provincial parliament meeting portal for plenary and public committee proceedings, linked by limburg.nl. The explicitly public opening of the 16 October 2026 Controlecommissie recording passed 1280x720 decode and advancing-playback checks. Closed proceedings were not accessed; current on-air live coverage was not tested."
+    },
+    {
+      "id": "netherlands-noord-brabant-provincial-council",
+      "status": "ok",
+      "note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested."
+    }
+  ]
+}

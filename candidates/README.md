@@ -9,7 +9,7 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-10-22, three candidates remain `researching`:
+As of 2026-10-22, 23 candidates are promoted and three candidates remain `researching`:
 
 - Chile Chamber Sala IV: room identity, schedule mapping and rights scope need
   review despite official-page discovery and sample media checks.
@@ -26,8 +26,9 @@ The Czech chamber feed
 passed active live-media and browser-decode checks and was promoted; Sweden
 and Finland were added as official-page link-outs. See the
 [in-depth audit](../reports/discovery/2026-10-22-in-depth-audit.md).
-Twenty promoted records are retained for audit history, including the eight
-first-expansion links, five later territorial services and Bern's official
+Twenty-three promoted records are retained for audit history, including the eight
+first-expansion links, five later territorial services, three Dutch provincial
+viewing services and Bern's official
 Online-Tagblatt archive. Bern's cantonal-parliament identity is Q664547; the
 archive promotion does not assert validated live coverage. See the
 [current research status](../docs/research-status.md);
@@ -47,3 +48,7 @@ pass the normal catalogue evidence review.
 See [the catalogue maintenance guide](../docs/catalogue-maintenance.md) and
 [the contribution guide](../CONTRIBUTING.md) for the workflow and evidence
 requirements.
+
+Drenthe, Limburg and Noord-Brabant were promoted after recording playback checks.
+Nine other Dutch provincial services remain discovery leads with access blockers,
+not formal candidates. See [the twelve-province review](../reports/discovery/2026-10-22-dutch-province-decisions.md).

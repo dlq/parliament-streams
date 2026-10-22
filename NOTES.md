@@ -6,6 +6,18 @@ Use this file as evidence and background. The current catalogue lives in `data/c
 
 ## 2026-10-22 In-depth Audit
 
+Dutch province validation: all twelve eligible legislatures checked against their
+official viewing services and institutional identities. Added Drenthe, Limburg
+and Noord-Brabant after dated video decode and advancing-playback checks.
+The other nine are held on provider access failures; Groningen and Noord-Holland
+have accessible document portals but no validated alternative recording.
+Catalogue now totals 121 sources and 46 regional jurisdictions, with 23 promoted
+candidates, three researching and one rejected. Official viewing links, flags,
+Netherlands search, map outlines and planned calendars are reconciled. No HLS
+or implemented XMLTV parser was added. [Province evidence](reports/discovery/2026-10-22-dutch-province-decisions.md).
+
+The following paragraphs retain earlier stages and historical counts.
+
 Bern publication follow-up: verified Q664547 as the cantonal Grand Council,
 matching the official German/French names and gr.be.ch website. Added the
 production archive as an official link-out, with flag, country-search association,

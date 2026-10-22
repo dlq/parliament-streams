@@ -7,7 +7,7 @@ const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
 const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261022-territories", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261022-bern", appScriptUrl);
+const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261022-dutch-provinces", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 

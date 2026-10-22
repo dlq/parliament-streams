@@ -8,6 +8,11 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- Drenthe, Limburg and Noord-Brabant provincial council official viewing links,
+  with dated recording playback evidence, flags, map outlines, Netherlands search
+  and planned calendar links. All twelve Dutch provincial services were checked;
+  nine retain explicit validation blockers in the research ledger.
+
 - Bern Grand Council's official Online-Tagblatt archive, with institutional
   identity evidence, cantonal flag, localized jurisdiction names, Switzerland
   search association and current swisstopo canton geometry. Recorded video is

@@ -112,6 +112,7 @@ function sourceCount(locale, count) {
   return forms[index].replace("{count}", new Intl.NumberFormat(locale).format(count));
 }
 const subnationalParents = {
+  Drenthe: "NL", Limburg: "NL", "Noord-Brabant": "NL",
   Bern: "CH",
   Alberta: "CA", "British Columbia": "CA", Manitoba: "CA", "Newfoundland and Labrador": "CA",
   "Northwest Territories": "CA", Nunavut: "CA", Ontario: "CA", "Prince Edward Island": "CA",

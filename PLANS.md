@@ -110,7 +110,7 @@ Done:
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
 - Schema v8 adds compact per-entry validation history. As of 2026-10-22, all
-  118 catalogue entries link to retained dated health reports, including the
+  121 catalogue entries link to retained dated health reports, including the
   Swiss National Council. The public site surfaces the latest retained check
   in source details.
 - Validation-history refresh and drift checking are available through Make and
@@ -150,8 +150,8 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 50 of 118 catalogue entries use a permission status ending in
-`pending_review`: 18 official-vendor HLS, five first-party HLS, 26 official
+Current queue: 53 of 121 catalogue entries use a permission status ending in
+`pending_review`: 18 official-vendor HLS, five first-party HLS, 29 official
 pages and one DASH research record. Later official-link additions retain dated
 source-condition notes; the previous 28-entry queue is a historical subset.
 
@@ -763,15 +763,15 @@ Near-term:
 Current measurable review queues, last reconciled with the catalogue on
 2026-10-22:
 
-- 50 of 118 catalogue entries still use a permission status ending in
+- 53 of 121 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 18 official-vendor HLS, 26 official pages, 5 first-party HLS, and
+  Breakdown: 18 official-vendor HLS, 29 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 118 entries retain at least one `unknown` media-accessibility field. Start
+- All 121 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
-  Breakdown: 50 national, 61 sub-national/territorial, and 6 supranational entries.
+  Breakdown: 50 national, 65 sub-national/territorial, and 6 supranational entries.
   Ontario caption availability and source-dependent sign-language evidence is
   documented across its six feeds; Scottish Parliament TV, Senedd TV, Northern
   Ireland Assembly TV, BC Legislature webcasts, and the three Tweede Kamer
@@ -826,6 +826,12 @@ Current measurable review queues, last reconciled with the catalogue on
 - [x] Add Bern's official archive with cantonal-parliament ID Q664547, cantonal
   flag, Switzerland search association, localized jurisdiction names, planned
   session-calendar link and current swisstopo boundary (Moutier is in Jura).
+- [x] Check official viewing services for all twelve Dutch provinces; add Drenthe,
+  Limburg and Noord-Brabant with recorded playback evidence, flags, map,
+  Netherlands search and planned calendar links.
+- [ ] Recheck the nine held Dutch players through normal public access; current
+  provider blocks are not proof of public unavailability. Review source conditions
+  and dated playback before promotion. [Province decisions](reports/discovery/2026-10-22-dutch-province-decisions.md).
 - [ ] Validate Bern's current official live route
   during a sitting; the next ordinary session starts 23 November 2026.
 - [x] Recheck the four held candidates and record distinct next actions:

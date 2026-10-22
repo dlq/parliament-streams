@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Current Provinciewet authority review establishes eligibility; this is the provincial legislature, not a city council or executive.",
+    "Direct Wikidata entity Q17052373, revision 2462400884, checked against official institutional names and the province-to-provider link chain.",
+    "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested.",
+    "Detailed evidence: reports/discovery/2026-10-22-dutch-province-decisions.json",
+    "Added with Netherlands search association, local flag, map geometry and planned calendar outlink. No direct HLS or implemented XMLTV parser added."
+  ],
+  "channel": {
+    "id": "netherlands-drenthe-provincial-council",
+    "name": "Drenthe Provincial Council",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Drenthe",
+    "legislature": "Provinciale Staten van Drenthe",
+    "external_ids": {
+      "wikidata_qid": "Q17052373",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q17052373",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Provincial legislature, not the province, executive or building; entity revision 2462400884. Official institutional page and designated viewing service independently corroborate the name."
+      }
+    ],
+    "language": "Dutch",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.drentsparlement.nl/vergaderingen/",
+    "provenance_note": "Official provincial parliament meeting archive, with plenary and Statencommissie agendas and public recordings. The 30 September 2026 plenary page offers dated video excerpts; a public excerpt decoded at 1920x1080 with advancing playback. Current on-air live coverage was not tested.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Earlier meeting transcripts are linked among the sampled agenda documents; they are not a transcript of the sampled recording. Captions, sign language and audio description remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.drentsparlement.nl/vergaderingen/vergaderschema/",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "noncommercial_pending_review",
+      "summary": "The parliamentary proclaimer permits inbound hyperlinks. Commercial copying or distribution requires written permission; this does not establish independent audiovisual playback or redistribution rights.",
+      "evidence": [
+        "https://www.drentsparlement.nl/over_deze_site/proclaimer"
+      ],
+      "recommendation": "Open the official viewing service. Keep link-out only; obtain applicable permission before independent media playback, embedding or redistribution."
+    }
+  }
+}
