@@ -1,5 +1,9 @@
 # Flag Asset Attribution
 
+- `je.svg`, `im.svg`, `pf.svg`, `nc.svg`, and `sx.svg` use flag-icons v7.3.2
+  under its MIT license, like the national flags below. The New Caledonia file
+  is the Kanak flag used by that library; its display does not decide status.
+
 - `cordoba.svg` is the [2014 flag of Córdoba Province, Argentina](https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_C%C3%B3rdoba_2014.svg),
   designed by Cristian Baquero Lazcano, with SVG revisions by RapiarteBanderas,
   Hurfer and HapHaxion; licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

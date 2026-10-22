@@ -6,8 +6,8 @@ const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
-const geometryUrl = new URL("./assets/maps/countries-110m.geojson", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20260824-us", appScriptUrl);
+const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261022-territories", appScriptUrl);
+const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261022-territories", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 
@@ -386,6 +386,11 @@ function renderMap() {
   let regionLayer = viewport.select("g.map-regions");
   if (regionLayer.empty()) regionLayer = viewport.append("g").attr("class", "map-regions");
   const showRegions = state.mode === "all" || state.mode === "subnational";
+  const needsMarker = (feature) => {
+    const [[x0, y0], [x1, y1]] = path.bounds(feature);
+    return Math.max(x1 - x0, y1 - y0) < 4;
+  };
+  const regionLabel = (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("documented")}, ${levelLabel("subnational")}`;
   const regions = regionLayer.selectAll("path").data(showRegions ? state.admin1Geometry.features : [], (feature) => feature.properties.name);
   regions.exit().remove();
   regions.enter().append("path").merge(regions)
@@ -395,9 +400,29 @@ function renderMap() {
       feature.properties.name === state.selectedRegion && "is-selected",
     ].filter(Boolean).join(" "))
     .attr("d", path)
+    .attr("role", (feature) => needsMarker(feature) ? null : "button")
+    .attr("tabindex", (feature) => needsMarker(feature) ? null : 0)
+    .attr("aria-label", (feature) => needsMarker(feature) ? null : regionLabel(feature))
+    .on("click", (_, feature) => selectRegion(feature))
+    .on("keydown", (event, feature) => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
+    });
+
+  // Tiny island outlines need a visible location dot at world scale. Their
+  // actual boundaries remain in the geometry; the dot is not a larger border.
+  const markerFeatures = showRegions ? state.admin1Geometry.features.filter(needsMarker) : [];
+  const markers = regionLayer.selectAll("circle.map-region-marker").data(markerFeatures, (feature) => feature.properties.name);
+  markers.join("circle")
+    .attr("class", (feature) => ["map-region-marker",
+      feature.properties.name === state.selectedRegion && "is-selected",
+      state.mode === "all" && !state.selectedRegion && feature.properties.parent_code === state.selectedCode && "is-parent-selected",
+    ].filter(Boolean).join(" "))
+    .attr("cx", (feature) => projection(d3.geoCentroid(feature))[0])
+    .attr("cy", (feature) => projection(d3.geoCentroid(feature))[1])
+    .attr("r", 3.5 / d3.zoomTransform(elements.map).k)
     .attr("role", "button")
     .attr("tabindex", 0)
-    .attr("aria-label", (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("documented")}, ${levelLabel("subnational")}`)
+    .attr("aria-label", regionLabel)
     .on("click", (_, feature) => selectRegion(feature))
     .on("keydown", (event, feature) => {
       if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
@@ -476,7 +501,10 @@ function render() {
 
 function setupZoom() {
   const svg = d3.select(elements.map);
-  const zoom = d3.zoom().scaleExtent([1, 8]).on("zoom", (event) => svg.select("g.map-viewport").attr("transform", event.transform));
+  const zoom = d3.zoom().scaleExtent([1, 8]).on("zoom", (event) => {
+    svg.select("g.map-viewport").attr("transform", event.transform);
+    svg.selectAll(".map-region-marker").attr("r", 3.5 / event.transform.k);
+  });
   state.zoom = zoom;
   svg.call(zoom);
   document.querySelector("#zoom-in").addEventListener("click", () => svg.transition().call(zoom.scaleBy, 1.5));

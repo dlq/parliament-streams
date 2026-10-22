@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-10-22T19:29:39.076616Z",
+  "scope": "Official-page and institutional-authority review; not live-media validation.",
+  "results": [
+    {
+      "id": "jersey-states-assembly-webcasts",
+      "checked_at": "2026-10-22T19:29:39.076616Z",
+      "status": "ok",
+      "note": "Chromium returned HTTP 200. The official Public-i service documents States Chamber and Scrutiny public-hearing coverage, lists dated upcoming/recent events and retains a six-month archive. Individual committee/room player identities and active media remain unverified. Official-page check only; active media was not validated.",
+      "official_url": "https://statesassembly.public-i.tv/core/portal/home",
+      "playback_policy": "link_out",
+      "browser_http_status": 200,
+      "title": "Home - States of Jersey Webcasting",
+      "institutional_authority_url": "https://statesassembly.je/getmedia/a1450efa-edc5-4560-b276-c41336e920f8/R-91-2025.pdf?ext=.pdf",
+      "scope_evidence": "Official annual report identifies Jersey's elected parliament and its law-making, tax, expenditure and government-accountability powers.",
+      "relationship": "Crown Dependency; not part of the United Kingdom.",
+      "source_conditions": "The service help explicitly supports sharing page and agenda links, and offers downloads for some meetings. This does not establish permission for independent retransmission or extraction.",
+      "provider_frames": []
+    },
+    {
+      "id": "french-polynesia-assembly-webcasts",
+      "checked_at": "2026-10-22T19:29:39.076616Z",
+      "status": "ok",
+      "note": "Chromium returned HTTP 200 and rendered the institutional Séance en direct section with two YouTube embeds and dated October 2026 plenary agendas. The page cross-links the Assembly's own YouTube account. Plenary coverage is documented; committee video coverage and active live playback remain unverified. Official-page check only; active media was not validated.",
+      "official_url": "https://www.assemblee.pf/travaux/seance",
+      "playback_policy": "link_out",
+      "browser_http_status": 200,
+      "title": "La séance publique - Assemblée de la Polynésie française",
+      "institutional_authority_url": "https://www.assemblee.pf/travaux/downloadTexte/1310949",
+      "scope_evidence": "Assembly adopts territorial laws (lois du pays) under its organic statute; it is not an ordinary municipal or planning council.",
+      "relationship": "Autonomous overseas collectivity of France.",
+      "source_conditions": "The official page reserves Assembly copyright and provides its own provider viewing links. No broader media-reuse permission was established; retain link-out viewing only.",
+      "provider_frames": [
+        {
+          "title": "",
+          "src": "https://www.youtube.com/embed/FEidsGCMQjM"
+        },
+        {
+          "title": "",
+          "src": "https://www.youtube.com/embed/xxmzImWPwqk"
+        }
+      ]
+    },
+    {
+      "id": "new-caledonia-congress-webtv",
+      "checked_at": "2026-10-22T19:29:39.076616Z",
+      "status": "ok",
+      "note": "Chromium returned HTTP 200. The institutional portal cross-links its WebTV YouTube channel (UC8EZmJGsQHhhXQxB4gtxtiQ), public-session information and agenda. An August 2026 official sitting notice separately confirms public video and audio viewing routes. No distinct permanent committee-room or HLS identity was established. Official-page check only; active media was not validated.",
+      "official_url": "https://www.congres.nc/",
+      "playback_policy": "link_out",
+      "browser_http_status": 200,
+      "title": "Portail - Congrès",
+      "institutional_authority_url": "https://www.congres.nc/lassemblee/attributions/focus-sur-la-loi-du-pays/",
+      "scope_evidence": "Congress adopts lois du pays, elects the government and oversees its work; official institutional pages distinguish its powers from a local-government assembly.",
+      "relationship": "Sui generis collectivity of France; current institutions are recorded without assuming pending constitutional reforms are enacted.",
+      "source_conditions": "Congress legal notices reserve intellectual-property rights and permit personal viewing of website pages. No independent extraction, embedding or redistribution permission is inferred.",
+      "provider_frames": [
+        {
+          "title": "reCAPTCHA",
+          "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcYan4UAAAAANqpfxCLuM3Q8pXNtCD4p5GICpUL&co=aHR0cHM6Ly93d3cuY29uZ3Jlcy5uYzo0NDM.&hl=en&v=4EDjxXf4knsx6UBM1L2V6cv8&size=invisible&anchor-ms=20000&execute-ms=30000&cb=86w83mwmop6p"
+        },
+        {
+          "title": "",
+          "src": ""
+        }
+      ]
+    },
+    {
+      "id": "isle-of-man-tynwald-listen-watch",
+      "checked_at": "2026-10-22T19:29:39.076616Z",
+      "status": "ok",
+      "note": "Chromium returned HTTP 200. The official service separately lists Tynwald, House of Keys, Legislative Council and committee audio; all were labelled offline at inspection. Its Watch Committees section links tynwald.live for public oral hearings and the institution's YouTube recordings. This entry does not claim plenary video or continuous broadcasting. Official-page check only; active media was not validated.",
+      "official_url": "https://tynwald.im/business/listen",
+      "playback_policy": "link_out",
+      "browser_http_status": 200,
+      "title": "Tynwald - Listen and Follow",
+      "institutional_authority_url": "https://www.tynwald.im/about/legislative-council",
+      "scope_evidence": "Tynwald is the island legislature; its Legislative Council is a legislative/revising chamber, illustrating why the word council alone does not determine eligibility.",
+      "relationship": "Crown Dependency; not part of the United Kingdom.",
+      "source_conditions": "The institution provides public listening and committee-viewing links and reserves copyright in the site. Source-specific media reuse was not established; preserve official-page viewing only.",
+      "provider_frames": []
+    },
+    {
+      "id": "sint-maarten-parliament-live",
+      "checked_at": "2026-10-22T19:29:39.076616Z",
+      "status": "ok",
+      "note": "Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified. Official-page check only; active media was not validated.",
+      "official_url": "https://sxmparliament.org/live-meeting/",
+      "playback_policy": "link_out",
+      "browser_http_status": 200,
+      "title": "Live Meeting – Sint Maarten Parliament",
+      "institutional_authority_url": "https://sxmparliament.org/members/",
+      "scope_evidence": "Official parliament describes its constitutional co-legislator and government-oversight roles (articles 82 and 44).",
+      "relationship": "Constituent country of the Kingdom of the Netherlands; not a province of the Netherlands.",
+      "source_conditions": "The institutional service provides its own viewing page and reserves all rights. No independent media extraction or retransmission permission was established.",
+      "provider_frames": [
+        {
+          "title": "PY 2026-2027 Cont. Central Committee Meeting #09 (PY 25-26)",
+          "src": "https://www.youtube.com/embed/WFKZNZcA9KE?enablejsapi=1&playsinline=1&rel=0&modestbranding=1"
+        }
+      ]
+    }
+  ]
+}

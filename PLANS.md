@@ -1,6 +1,6 @@
 # Parliament Streams Plans
 
-This is the live plan for Parliaments as a documentation and data project. The
+This is the live plan for Parliament Streams as a documentation and data project. The
 current repository should be optimized for public research, source provenance,
 machine-readable catalogue data, and reproducible schedule-scraper notes.
 
@@ -97,9 +97,11 @@ Done:
 - UK Parliament schedule metadata is implemented through the official What's on
   Calendar API. Parliamentlive.tv playback and Red Bee stream access remain
   separate research questions.
-- As of 2026-10-22, the local candidate directory contains one researching
-  Chile Sala IV record and six promoted records. Czech live HLS, Sweden
-  Webb-TV, and Finland webcasts are the latest published additions.
+- As of 2026-10-22, the local candidate directory contains four researching
+  records (Chile Sala IV, Iceland, Skåne and France's Senate) and 19 promoted
+  records. The latest five official viewing links are Jersey, Tynwald,
+  French Polynesia, New Caledonia and Sint Maarten. See
+  [current research status](docs/research-status.md) for reconciled totals.
   Brazil native playback was restored after renewed validation on 2026-09-11;
   its later stable-stream regression issue closed after recovery.
 - `data/fallbacks.json` now records official event, player, broadcaster, and
@@ -107,7 +109,7 @@ Done:
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
 - Schema v8 adds compact per-entry validation history. As of 2026-10-22, all
-  104 catalogue entries link to retained dated health reports, including the
+  117 catalogue entries link to retained dated health reports, including the
   Swiss National Council. The public site surfaces the latest retained check
   in source details.
 - Validation-history refresh and drift checking are available through Make and
@@ -147,10 +149,10 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 38 of 104 catalogue entries use a permission status ending in
-`pending_review`. Ten are newly added U.S. official-page records awaiting a
-source-specific terms review; the previous 28-entry queue retains its dated
-classification.
+Current queue: 50 of 117 catalogue entries use a permission status ending in
+`pending_review`: 18 official-vendor HLS, five first-party HLS, 26 official
+pages and one DASH research record. Later official-link additions retain dated
+source-condition notes; the previous 28-entry queue is a historical subset.
 
 Priority order:
 
@@ -176,10 +178,9 @@ Priority order:
    playback strategy.
 
 Use [reports/review-queues-2026-08-19-rights-next.json](reports/review-queues-2026-08-19-rights-next.json)
-as the historical starting queue. After the HLS and official-page review
-snapshots, the remaining pending entries are 16 likely written-clarification
-cases and 12 keep-pending-after-dated-search cases. No public-terms follow-up
-entries remain.
+as the historical starting queue. Within that historical 28-entry subset, the remaining entries are 16 likely
+written-clarification cases and 12 keep-pending-after-dated-search cases. That
+dated classification does not close the review work for later additions.
 The official-vendor HLS review snapshot is
 [reports/review-queues-2026-08-19-official-vendor-hls.json](reports/review-queues-2026-08-19-official-vendor-hls.json).
 The first-party HLS review snapshot is
@@ -761,15 +762,15 @@ Near-term:
 Current measurable review queues, last reconciled with the catalogue on
 2026-10-22:
 
-- 38 of 104 catalogue entries still use a permission status ending in
+- 50 of 117 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 18 official-vendor HLS, 14 official pages, 5 first-party HLS, and
+  Breakdown: 18 official-vendor HLS, 26 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 104 entries retain at least one `unknown` media-accessibility field. Start
+- All 117 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
-  Breakdown: 45 national, 53 sub-national, and 6 supranational entries.
+  Breakdown: 50 national, 61 sub-national/territorial, and 6 supranational entries.
   Ontario caption availability and source-dependent sign-language evidence is
   documented across its six feeds; Scottish Parliament TV, Senedd TV, Northern
   Ireland Assembly TV, BC Legislature webcasts, and the three Tweede Kamer
@@ -800,9 +801,17 @@ Current measurable review queues, last reconciled with the catalogue on
   adding Ireland, Malta, Rodrigues, Tobago and 24 special-status/associated or
   capital bodies. Record primary scope-source attempts for all original 40
   remaining countries without treating them as completed inventories.
-- [ ] Complete first-level scope and inventories in the remaining 36 countries;
-  the exact country queue and next actions are in
-  `reports/discovery/2026-10-22-subnational-research.json`.
+- [x] Extend this initial run to 1,121 jurisdiction searches across 58 country
+  audit groups; retain 13 evidence-based scope dispositions where no core
+  regional legislature was established. These broad discovery counts include
+  councils outside the public catalogue scope, and do not claim an exhaustive
+  global inventory or completed player validation.
+- [x] Adopt legislative authority as the catalogue eligibility rule in
+  `docs/catalogue-scope.md`. Retain ordinary councils and planning/service
+  bodies as discovery evidence, not automatic publication candidates.
+- [ ] Complete individual authority reviews for borderline regional assemblies
+  and special-status bodies. Reconcile previously published entries with the
+  rule using official legal/institutional evidence; do not remove by name alone.
 - [ ] Complete the special-status/related-territory scope notes, including
   Francophone Brussels, Ceuta/Melilla, London, U.S. DC/territories, Kingdom of
   the Netherlands constituent countries, New Zealand relationships, Finnish
@@ -836,6 +845,10 @@ retained evidence and the remaining work.
   Swedish, and Traditional Chinese. IPTV/VLC help follows every supported
   locale. Arrange native-speaker review of the new packs and retain the
   existing Inuktitut draft qualification.
+- [ ] Revisit language-picker ordering as the locale list grows. Compare a
+  predictable order based on native language names with placing the selected
+  or browser language first; account for different writing systems and keep
+  the catalogue, map and schedule consistent. Retain the current order for now.
 - Reassess language additions against documented, currently usable video and
   schedule coverage. Catalogue language labels alone do not establish broadcast
   frequency, a complete translated guide, or translation quality.
@@ -891,5 +904,32 @@ Useful advocacy asks:
 - CORS/browser compatibility;
 - explicit off-air and no-signal status.
 
-Detailed discovery history belongs in `NOTES.md`; action-oriented next steps
-belong here.
+
+### Discovery surface reconciliation
+
+- [ ] After the wider country/territory audit, reconcile useful validated
+  additions across catalogue, map, search, schedule and IPTV/EPG surfaces.
+  Check each later promotion for equivalent geometry, country relationships,
+  locale labels and flag treatment. Preserve evidence-based playback/guide gates.
+- [x] Reconcile the five territorial services validated in this run across
+  catalogue/search, map geometry, flags/localized jurisdiction names and
+  official calendar links. Close the earlier Nagasaki/Córdoba/Santa Catarina
+  map gaps and the missing Mauritius overview outline. Keep later promotions
+  subject to the same check; none of these links adds HLS or XMLTV coverage.
+
+
+### Contributor Welcome And Documentation
+
+- [x] Keep the root README short and route detailed reference material through
+  `docs/README.md`, including site/languages, development, schedule/IPTV and
+  current research evidence.
+- [x] Offer contribution paths for source discovery/corrections, translations,
+  accessibility, schedules, local institutional knowledge, usability,
+  documentation, code, source evidence and advocacy ideas.
+- [x] Add plain-language issue forms for translation review and other ideas;
+  simplify source/problem reports and provide a lightweight PR template.
+- [x] Invite fluent-speaker review of all locales, especially the four recent
+  additions and the provisional Inuktitut syllabics interface.
+- [ ] Triage incoming contributions and identify small, well-defined tasks for
+  new contributors as suitable issues arise. Keep native-language review needs
+  visible; automated message coverage alone is not linguistic review.

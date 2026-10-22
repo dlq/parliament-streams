@@ -14,8 +14,10 @@ The detailed evidence lives in
 
 The proof-of-concept catalogue uses an opt-out playback posture:
 
-- Direct, technically public HLS/DASH may remain playable when no recorded
+- Direct, technically validated public HLS may remain playable when no recorded
   source terms prohibit it.
+- The retained DASH record is research-only; technical discovery alone does
+  not enable its playback.
 - Sources with explicit third-party restrictions are link-out only.
 - YouTube sources use official provider embeds only; the project does not
   extract YouTube manifests.
@@ -53,10 +55,13 @@ These entries need either written clarification or a future dated terms review.
 
 As of 2026-10-22:
 
-- 38 of 104 catalogue entries remain permission-pending.
-- The previous 28-entry review queue remains classified in the dated report.
-- Ten newly published U.S. official-page records need source-specific terms
-  review or written clarification before any playback posture is reconsidered.
+- 50 of 117 catalogue entries remain permission-pending: 18 official-vendor
+  HLS, five first-party HLS, 26 official pages and one DASH research record.
+- The previous 28-entry review queue remains classified in the dated report;
+  it is a historical subset, not the current total.
+- Later official-page additions retain source-specific terms notes in the
+  catalogue and expansion reports. Their link-out readiness does not resolve
+  independent playback or redistribution permission.
 
 The current queue is tracked in the
 [rights evidence issue](https://github.com/dlq/parliament-streams/issues/13)

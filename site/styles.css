@@ -199,12 +199,13 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .channel-button { min-height: 70px; }
 }
 
-.iptv-disclosure { margin-top: .45rem; border-bottom: 1px solid var(--faint); font-size: .84rem; }
-.iptv-disclosure > summary, .iptv-vlc > summary { width: fit-content; min-height: 44px; padding: .8rem 0; color: var(--red); cursor: pointer; }
+.iptv-disclosure, .schedule-sources { margin-top: .45rem; border-bottom: 1px solid var(--faint); font-size: .84rem; }
+.iptv-disclosure > summary, .iptv-vlc > summary, .schedule-sources > summary { width: fit-content; min-height: 44px; padding: .8rem 0; color: var(--red); cursor: pointer; }
 .iptv-content { max-width: 780px; padding: 0 0 .7rem; }
 .iptv-content p { color: var(--muted); line-height: 1.5; }
 .iptv-content a { color: var(--red); text-decoration: none; }
 .iptv-content a:hover { text-decoration: underline; }
+.schedule-sources li { margin: .55rem 0; line-height: 1.4; }
 .iptv-links { display: grid; gap: .9rem; margin: 1rem 0; }
 .iptv-resource label { display: block; margin-bottom: .3rem; font-weight: 650; }
 .iptv-copy-row { display: flex; gap: .5rem; }

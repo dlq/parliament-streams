@@ -1,7 +1,7 @@
 # Source Rights And Permissions
 
 This file records source-by-source rights, permission, and provenance notes for
-the Parliaments public catalogue. It is not legal advice. Its job is to keep
+the Parliament Streams public catalogue. It is not legal advice. Its job is to keep
 technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
@@ -20,7 +20,7 @@ The catalogue uses an opt-out playback posture:
 - keep CPAC as link-out only: its terms expressly prohibit third-party
   embedding, retransmission, hotlinking, inline linking, and related uses
   without written consent;
-- allow client-side playback for technically validated public direct HLS/DASH
+- allow client-side playback for technically validated public direct HLS
   endpoints unless a source's recorded terms expressly prohibit third-party
   reuse; this is a project policy, not a conclusion that permission exists;
 - preserve visible attribution, source-condition links, and all known
@@ -141,7 +141,7 @@ public catalogue and for downstream projects that may need documentary evidence.
 ```text
 Hello,
 
-I maintain Parliaments, an unofficial public-interest research catalogue of
+I maintain Parliament Streams, an unofficial public-interest research catalogue of
 public parliamentary video sources, official pages, and schedule metadata. I
 would like to document your live public parliamentary video stream and the
 recommended way to link to, embed, or otherwise reuse it, with source
@@ -176,9 +176,26 @@ media playback. Candidate decisions and remaining checks are retained in
 | Córdoba provincial Legislature | Official VIVO page loaded an institutional YouTube recording. Independent audiovisual redistribution permission was not established. | Official link-out, explicitly event-based. |
 | Santa Catarina TV Alesc | [Institutional service](https://www.alesc.sc.gov.br/tv/) and [About page](https://www.alesc.sc.gov.br/tv/sobre/) establish Assembly ownership. Local HTTP/Chromium attempts timed out; web retrieval opened the official live page. No broad reuse grant established. | Official link-out with access caveat; no direct playback claim. |
 
-Three further candidates remain researching. Iceland's player returned a browser
+Three further candidates from that first expansion remain researching. Iceland's player returned a browser
 challenge despite documented official broadcasts; Skåne's player page returned
 Access Denied. The French Senate live service opened, but its
 [hyperlink conditions](https://www.senat.fr/mentions-legales.html) include prior
 webmaster notification. No notification was sent, and that candidate remains
 unpromoted. Its video reuse conditions must also be respected independently.
+
+
+## Territorial Official-Link Follow-up — 2026-10-22
+
+These five institutions passed official-page/identity and legislative-authority
+review for link-out presentation. The conditions below remain pending for
+independent media reuse; official viewing access is a separate conclusion.
+See [territorial decisions](../reports/discovery/2026-10-22-territorial-decisions.json)
+and [page checks](../reports/health/2026-10-22-territorial-webcasts.json).
+
+| Source | Current presentation | Recorded source conditions |
+| --- | --- | --- |
+| [Jersey States Assembly Webcasts](https://statesassembly.public-i.tv/core/portal/home) | `link_out`; `personal_use_pending_review` | The service help explicitly supports sharing page and agenda links, and offers downloads for some meetings. This does not establish permission for independent retransmission or extraction. [Evidence 1](https://statesassembly.public-i.tv/core/portal/faq) |
+| [Tynwald Audio and Committee Video](https://tynwald.im/business/listen) | `link_out`; `personal_use_pending_review` | The institution provides public listening and committee-viewing links and reserves copyright in the site. Source-specific media reuse was not established; preserve official-page viewing only. [Evidence 1](https://tynwald.im/business/listen) |
+| [French Polynesia Assembly Webcasts](https://www.assemblee.pf/travaux/seance) | `link_out`; `personal_use_pending_review` | The official page reserves Assembly copyright and provides its own provider viewing links. No broader media-reuse permission was established; retain link-out viewing only. [Evidence 1](https://www.assemblee.pf/travaux/seance) |
+| [New Caledonia Congress WebTV](https://www.congres.nc/) | `link_out`; `personal_use_pending_review` | Congress legal notices reserve intellectual-property rights and permit personal viewing of website pages. No independent extraction, embedding or redistribution permission is inferred. [Evidence 1](https://www.congres.nc/mentions-legales/) |
+| [Sint Maarten Parliament Meetings](https://sxmparliament.org/live-meeting/) | `link_out`; `personal_use_pending_review` | The institutional service provides its own viewing page and reserves all rights. No independent media extraction or retransmission permission was established. [Evidence 1](https://sxmparliament.org/live-meeting/) |

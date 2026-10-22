@@ -1,8 +1,11 @@
-name: Source or stream correction
-description: Suggest a new official source, stream URL correction, or source-quality update.
+name: Suggest or correct an official source
+description: Share an official parliamentary viewing page or a correction. A raw stream URL is optional.
 title: "[Source]: "
 labels: ["source"]
 body:
+  - type: markdown
+    attributes:
+      value: Thanks for sharing local knowledge! The legislature name and an official viewing page are enough to start. Chamber, committee, audio and archive services are all useful leads.
   - type: input
     id: source_name
     attributes:
@@ -27,19 +30,17 @@ body:
     attributes:
       label: Source type
       options:
+        - Unknown
         - Direct HLS
         - Direct DASH
         - Official web player
         - Official YouTube
         - Official page/link-out
-        - Unknown
-    validations:
-      required: true
   - type: textarea
     id: validation
     attributes:
       label: Validation notes
-      description: Include status code, content type, player tested, platform tested, date, and region.
+      description: Describe what you tried, if anything. Date, country, browser/device and technical checks are useful when available.
   - type: textarea
     id: terms
     attributes:

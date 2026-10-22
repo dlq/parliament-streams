@@ -1,0 +1,134 @@
+{
+  "research_date": "2026-10-22",
+  "scope_rule": "docs/catalogue-scope.md",
+  "method": "Official authority and webcast pages, Chromium rendering and institutional identity cross-checks. Broader council research is not catalogue eligibility.",
+  "added_as_official_links": [
+    {
+      "id": "jersey-states-assembly-webcasts",
+      "jurisdiction": "Jersey",
+      "authority_url": "https://statesassembly.je/getmedia/a1450efa-edc5-4560-b276-c41336e920f8/R-91-2025.pdf?ext=.pdf",
+      "authority_assessment": "Official annual report identifies Jersey's elected parliament and its law-making, tax, expenditure and government-accountability powers.",
+      "relationship": "Crown Dependency; not part of the United Kingdom.",
+      "playback_policy": "link_out",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active event/player and room mapping",
+        "Source-specific caption and reuse review",
+        "Stable HLS and machine-readable EPG validation"
+      ]
+    },
+    {
+      "id": "french-polynesia-assembly-webcasts",
+      "jurisdiction": "French Polynesia",
+      "authority_url": "https://www.assemblee.pf/travaux/downloadTexte/1310949",
+      "authority_assessment": "Assembly adopts territorial laws (lois du pays) under its organic statute; it is not an ordinary municipal or planning council.",
+      "relationship": "Autonomous overseas collectivity of France.",
+      "playback_policy": "link_out",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active event/player and room mapping",
+        "Source-specific caption and reuse review",
+        "Stable HLS and machine-readable EPG validation"
+      ]
+    },
+    {
+      "id": "new-caledonia-congress-webtv",
+      "jurisdiction": "New Caledonia",
+      "authority_url": "https://www.congres.nc/lassemblee/attributions/focus-sur-la-loi-du-pays/",
+      "authority_assessment": "Congress adopts lois du pays, elects the government and oversees its work; official institutional pages distinguish its powers from a local-government assembly.",
+      "relationship": "Sui generis collectivity of France; current institutions are recorded without assuming pending constitutional reforms are enacted.",
+      "playback_policy": "link_out",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active event/player and room mapping",
+        "Source-specific caption and reuse review",
+        "Stable HLS and machine-readable EPG validation"
+      ]
+    },
+    {
+      "id": "isle-of-man-tynwald-listen-watch",
+      "jurisdiction": "Isle of Man",
+      "authority_url": "https://www.tynwald.im/about/legislative-council",
+      "authority_assessment": "Tynwald is the island legislature; its Legislative Council is a legislative/revising chamber, illustrating why the word council alone does not determine eligibility.",
+      "relationship": "Crown Dependency; not part of the United Kingdom.",
+      "playback_policy": "link_out",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active event/player and room mapping",
+        "Source-specific caption and reuse review",
+        "Stable HLS and machine-readable EPG validation"
+      ]
+    },
+    {
+      "id": "sint-maarten-parliament-live",
+      "jurisdiction": "Sint Maarten",
+      "authority_url": "https://sxmparliament.org/members/",
+      "authority_assessment": "Official parliament describes its constitutional co-legislator and government-oversight roles (articles 82 and 44).",
+      "relationship": "Constituent country of the Kingdom of the Netherlands; not a province of the Netherlands.",
+      "playback_policy": "link_out",
+      "epg_parser_status": "planned",
+      "remaining": [
+        "Active event/player and room mapping",
+        "Source-specific caption and reuse review",
+        "Stable HLS and machine-readable EPG validation"
+      ]
+    }
+  ],
+  "remaining_candidates": [
+    {
+      "key": "cook",
+      "url": "https://parliament.gov.ck/live/",
+      "status": "researching",
+      "reason": "Live page rendered no usable player in Chromium; follow institutional YouTube and ParliamentTV archives before promotion."
+    },
+    {
+      "key": "guam",
+      "url": "https://guamlegislature.gov/",
+      "status": "researching",
+      "reason": "Official site rendered legislative off-air state and calendar; complete identity and media/source-conditions review."
+    },
+    {
+      "key": "puertorico",
+      "url": "https://senado.pr.gov/envivo",
+      "status": "researching",
+      "reason": "Official current live-event index found; complete identity, event-player and source-conditions review."
+    },
+    {
+      "key": "gibraltar",
+      "url": "https://www.parliament.gi/",
+      "status": "researching",
+      "reason": "Official live-viewing link and recent sittings found; complete live page/player, identity and source-conditions review."
+    },
+    {
+      "key": "bangsamoro",
+      "url": "https://parliament.bangsamoro.gov.ph/",
+      "status": "researching",
+      "reason": "Official plenary player and committee calendar found; verify current transitional/electoral status, institution identity, source conditions and precise territory representation."
+    },
+    {
+      "key": "voivodina",
+      "url": "https://www.skupstinavojvodine.gov.rs/",
+      "status": "researching",
+      "reason": "Official parliamentary authority established; dedicated proceedings player mapping remains unresolved."
+    },
+    {
+      "key": "bermuda",
+      "url": "https://parliament.bm/",
+      "status": "researching",
+      "reason": "Official Listen Live provider found; audio coverage, provider, identity and source-conditions review remains open."
+    }
+  ],
+  "surface_validation": {
+    "catalogue_sources": 117,
+    "regional_jurisdictions_with_geometry": 42,
+    "method": "Local HTTP Chromium and WebKit at 1280px and 320px: source deep links, flags, no native player on link-only records, map selection, calendar links, horizontal overflow and page errors. Project HTML/Axe/desktop/mobile suite also passed.",
+    "small_island_representation": "Actual outlines retained, with constant-size location dots where projected boundaries are too small at world scale.",
+    "iptv_export_check": {
+      "stable_channels": 4,
+      "validated_hls_channels": 38,
+      "programmes_from_retained_snapshot": 70,
+      "new_link_only_records_in_playlists": 0
+    },
+    "limits": "Official viewing pages were checked in Chromium; active event media, independent reuse, captions and new automated programme parsing were not established."
+  }
+}

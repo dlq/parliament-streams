@@ -18,6 +18,19 @@ application. Earlier application work remains available in Git history.
   one Chile Sala IV research candidate and exact event/VOD review decisions.
 - Flags and country labels for Czech Republic, Sweden, and Finland, plus
   validation support for recorded Swedish caption evidence.
+- Thirteen official viewing links across the first expansion and territorial
+  follow-up: Japan's two chambers, Austria, Mauritius, Italy's lower house,
+  Nagasaki committees, Córdoba, Santa Catarina, Jersey, Tynwald, French
+  Polynesia, New Caledonia and Sint Maarten. These add no direct HLS or XMLTV
+  parser coverage.
+- Country/territory research ledger with 1,121 initial searches, per-body
+  eligibility assessments and explicit unresolved leads.
+- Czech, Finnish, Swedish and Traditional Chinese interface packs; localized
+  IPTV/VLC instructions across all 23 supported locales.
+- Official calendar/event links on the schedule page, separate from automated
+  programme listings.
+- Newcomer contribution paths, translation-review guidance and issue form,
+  general contribution form and a lightweight pull-request template.
 
 ### Changed
 
@@ -31,12 +44,25 @@ application. Earlier application work remains available in Git history.
 - Withhold Swiss National Council and Estonia feed 2 native playback after
   repeated failing media checks; preserve their provenance and rights evidence.
 - Refresh compact validation history for every published entry and keep current
-  roadmap/rights/candidate summaries aligned with the 104-entry catalogue.
+  roadmap/rights/candidate summaries aligned with the 117-entry working catalogue.
+- Adopt legislative authority as the catalogue scope rule, preserving broader
+  council research without treating it as publication eligibility.
+- Reduce the root README to a welcoming overview and move detailed site,
+  development, schedule/IPTV and research guidance into indexed documents.
+- Simplify the GitHub About description and reduce sidebar topics to five.
+- Add geometry for all 42 published regional/territorial jurisdictions and
+  location dots for tiny outlines; preserve special-status relationships in
+  country searches and map grouping.
 
 ### Fixed
 
 - Align external watch links and native playback labels with the catalogue
   playback header in full-width and selected-source desktop layouts.
+- Fingerprint assembled JavaScript/CSS URLs by content and retain compatibility
+  for cached catalogue scripts, fixing Safari loading failures after the
+  coverage-disclosure change.
+- Correct mobile Schedule Sources alignment and add missing flags for Austria,
+  Japan, Mauritius, Switzerland, Nagasaki, Córdoba and Santa Catarina.
 
 ### Security
 

@@ -1,0 +1,78 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Congress adopts lois du pays, elects the government and oversees its work; official institutional pages distinguish its powers from a local-government assembly. Evidence: https://www.congres.nc/lassemblee/attributions/focus-sur-la-loi-du-pays/",
+    "Sui generis collectivity of France; current institutions are recorded without assuming pending constitutional reforms are enacted.",
+    "Chromium returned HTTP 200. The institutional portal cross-links its WebTV YouTube channel (UC8EZmJGsQHhhXQxB4gtxtiQ), public-session information and agenda. An August 2026 official sitting notice separately confirms public video and audio viewing routes. No distinct permanent committee-room or HLS identity was established.",
+    "Official-page link readiness only; active media and independent reuse remain unverified.",
+    "Promoted to the canonical catalogue as an official viewing link on 2026-10-22."
+  ],
+  "channel": {
+    "id": "new-caledonia-congress-webtv",
+    "name": "New Caledonia Congress WebTV",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "New Caledonia",
+    "legislature": "Congrès de la Nouvelle-Calédonie",
+    "external_ids": {
+      "wikidata_qid": "Q2993118",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2993118",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+      }
+    ],
+    "language": "French",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.congres.nc/",
+    "provenance_note": "Sui generis collectivity of France; current institutions are recorded without assuming pending constitutional reforms are enacted. Chromium returned HTTP 200. The institutional portal cross-links its WebTV YouTube channel (UC8EZmJGsQHhhXQxB4gtxtiQ), public-session information and agenda. An August 2026 official sitting notice separately confirms public video and audio viewing routes. No distinct permanent committee-room or HLS identity was established.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.congres.nc/agenda/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Congress legal notices reserve intellectual-property rights and permit personal viewing of website pages. No independent extraction, embedding or redistribution permission is inferred.",
+      "evidence": [
+        "https://www.congres.nc/mentions-legales/"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-22T19:29:39.076616Z",
+        "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Chromium returned HTTP 200. The institutional portal cross-links its WebTV YouTube channel (UC8EZmJGsQHhhXQxB4gtxtiQ), public-session information and agenda. An August 2026 official sitting notice separately confirms public video and audio viewing routes. No distinct permanent committee-room or HLS identity was established. Official-page check only; active media was not validated."
+      }
+    ]
+  }
+}

@@ -14,7 +14,11 @@ const [hlsPackage, d3Package] = await Promise.all(["hls.js", "d3"].map(async (na
   JSON.parse(await readFile(join(root, "node_modules", name, "package.json"), "utf8"))
 ));
 const documentedAdmin1 = JSON.parse(await readFile(join(root, "site/assets/maps/documented-admin1.geojson"), "utf8"));
-assert.equal(documentedAdmin1.features.length, 34);
+const expectedRegionalNames = new Set(canonicalCatalogue.channels
+  .filter((channel) => channel.jurisdiction_level === "subnational")
+  .map((channel) => channel.country_or_region));
+assert.equal(documentedAdmin1.features.length, expectedRegionalNames.size);
+assert.deepEqual(new Set(documentedAdmin1.features.map((feature) => feature.properties.name)), expectedRegionalNames);
 assert(documentedAdmin1.features.every((feature) => feature.geometry.type === "MultiPolygon"));
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
@@ -752,7 +756,7 @@ try {
     await mapPage.locator(".map-country.is-documented").count(),
     expectedDocumentedCountryCodes.size,
   );
-  assert.equal(await mapPage.locator(".map-region").count(), 34);
+  assert.equal(await mapPage.locator(".map-region").count(), expectedRegionalNames.size);
   assert.match(await mapPage.locator("#map-detail").innerText(), /Canada.*31 sources/s);
   assert.equal(
     await mapPage
@@ -808,6 +812,10 @@ try {
     ["Argentina", "Córdoba", "argentina-cordoba-legislature-live", "AR"],
     ["Japan", "Nagasaki", "japan-nagasaki-assembly-committees", "JP"],
     ["Brazil", "Santa Catarina", "brazil-santa-catarina-tv-alesc", "BR"],
+    ["France", "French Polynesia", "french-polynesia-assembly-webcasts", "FR"],
+    ["France", "New Caledonia", "new-caledonia-congress-webtv", "FR"],
+    ["Jersey", "Jersey", "jersey-states-assembly-webcasts", "JE"],
+    ["Netherlands", "Sint Maarten", "sint-maarten-parliament-live", "SX"],
   ]) {
     await mapPage.locator("#map-search").fill(country);
     const regionalResult = mapPage.locator("#jurisdiction-list button").filter({ hasText: region });

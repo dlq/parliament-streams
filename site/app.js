@@ -85,6 +85,11 @@ function renderDailyHero() {
 }
 
 const jurisdictionFlagAssets = {
+  Jersey: "assets/flags/je.svg",
+  "Isle of Man": "assets/flags/im.svg",
+  "French Polynesia": "assets/flags/pf.svg",
+  "New Caledonia": "assets/flags/nc.svg",
+  "Sint Maarten": "assets/flags/sx.svg",
   "Austria": "assets/flags/at.svg",
   "Japan": "assets/flags/jp.svg",
   "Mauritius": "assets/flags/mu.svg",
@@ -164,6 +169,7 @@ const jurisdictionFlagAssets = {
 };
 
 const jurisdictionCodes = {
+  Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "PF", "New Caledonia": "NC", "Sint Maarten": "SX",
   Australia: "AU", Brazil: "BR", Canada: "CA", Chile: "CL", "Costa Rica": "CR",
   "Czech Republic": "CZ", Finland: "FI", Sweden: "SE", Denmark: "DK", "El Salvador": "SV", Estonia: "EE", France: "FR", Germany: "DE",
   Greece: "GR", India: "IN", Ireland: "IE", Israel: "IL", Italy: "IT", Luxembourg: "LU",

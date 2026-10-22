@@ -9247,6 +9247,331 @@
           "note": "Official Assembly TV Alesc page and its institutional About page were opened through web retrieval; the live section and legislative broadcaster identity are explicit. Direct HTTP and Chromium retrieval timed out from the Toronto research environment. This is an official-page viewing record with that access limitation, not validated direct playback or an always-on uptime claim. Official-page source check only; active media was not validated."
         }
       ]
+    },
+    {
+      "id": "jersey-states-assembly-webcasts",
+      "name": "Jersey States Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Jersey",
+      "legislature": "States Assembly of Jersey",
+      "external_ids": {
+        "wikidata_qid": "Q946944",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q946944",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://statesassembly.public-i.tv/core/portal/home",
+      "provenance_note": "Crown Dependency; not part of the United Kingdom. Chromium returned HTTP 200. The official Public-i service documents States Chamber and Scrutiny public-hearing coverage, lists dated upcoming/recent events and retains a six-month archive. Individual committee/room player identities and active media remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://statesassembly.public-i.tv/core/portal/home",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The service help explicitly supports sharing page and agenda links, and offers downloads for some meetings. This does not establish permission for independent retransmission or extraction.",
+        "evidence": [
+          "https://statesassembly.public-i.tv/core/portal/faq"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T19:29:39.076616Z",
+          "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Chromium returned HTTP 200. The official Public-i service documents States Chamber and Scrutiny public-hearing coverage, lists dated upcoming/recent events and retains a six-month archive. Individual committee/room player identities and active media remain unverified. Official-page check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "french-polynesia-assembly-webcasts",
+      "name": "French Polynesia Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "French Polynesia",
+      "legislature": "Assemblée de la Polynésie française",
+      "external_ids": {
+        "wikidata_qid": "Q2729213",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2729213",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+        }
+      ],
+      "language": "French / Tahitian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.assemblee.pf/travaux/seance",
+      "provenance_note": "Autonomous overseas collectivity of France. Chromium returned HTTP 200 and rendered the institutional Séance en direct section with two YouTube embeds and dated October 2026 plenary agendas. The page cross-links the Assembly's own YouTube account. Plenary coverage is documented; committee video coverage and active live playback remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.assemblee.pf/agenda",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official page reserves Assembly copyright and provides its own provider viewing links. No broader media-reuse permission was established; retain link-out viewing only.",
+        "evidence": [
+          "https://www.assemblee.pf/travaux/seance"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T19:29:39.076616Z",
+          "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Chromium returned HTTP 200 and rendered the institutional Séance en direct section with two YouTube embeds and dated October 2026 plenary agendas. The page cross-links the Assembly's own YouTube account. Plenary coverage is documented; committee video coverage and active live playback remain unverified. Official-page check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "new-caledonia-congress-webtv",
+      "name": "New Caledonia Congress WebTV",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "New Caledonia",
+      "legislature": "Congrès de la Nouvelle-Calédonie",
+      "external_ids": {
+        "wikidata_qid": "Q2993118",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2993118",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.congres.nc/",
+      "provenance_note": "Sui generis collectivity of France; current institutions are recorded without assuming pending constitutional reforms are enacted. Chromium returned HTTP 200. The institutional portal cross-links its WebTV YouTube channel (UC8EZmJGsQHhhXQxB4gtxtiQ), public-session information and agenda. An August 2026 official sitting notice separately confirms public video and audio viewing routes. No distinct permanent committee-room or HLS identity was established.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.congres.nc/agenda/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Congress legal notices reserve intellectual-property rights and permit personal viewing of website pages. No independent extraction, embedding or redistribution permission is inferred.",
+        "evidence": [
+          "https://www.congres.nc/mentions-legales/"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T19:29:39.076616Z",
+          "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Chromium returned HTTP 200. The institutional portal cross-links its WebTV YouTube channel (UC8EZmJGsQHhhXQxB4gtxtiQ), public-session information and agenda. An August 2026 official sitting notice separately confirms public video and audio viewing routes. No distinct permanent committee-room or HLS identity was established. Official-page check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "isle-of-man-tynwald-listen-watch",
+      "name": "Tynwald Audio and Committee Video",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Isle of Man",
+      "legislature": "Tynwald",
+      "external_ids": {
+        "wikidata_qid": "Q827704",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q827704",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://tynwald.im/business/listen",
+      "provenance_note": "Crown Dependency; not part of the United Kingdom. Chromium returned HTTP 200. The official service separately lists Tynwald, House of Keys, Legislative Council and committee audio; all were labelled offline at inspection. Its Watch Committees section links tynwald.live for public oral hearings and the institution's YouTube recordings. This entry does not claim plenary video or continuous broadcasting.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language and audio-description availability remains unverified for individual events. Tynwald plenary coverage is audio; its committee section provides video viewing links."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://tynwald.im/business/sittings",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The institution provides public listening and committee-viewing links and reserves copyright in the site. Source-specific media reuse was not established; preserve official-page viewing only.",
+        "evidence": [
+          "https://tynwald.im/business/listen"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T19:29:39.076616Z",
+          "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Chromium returned HTTP 200. The official service separately lists Tynwald, House of Keys, Legislative Council and committee audio; all were labelled offline at inspection. Its Watch Committees section links tynwald.live for public oral hearings and the institution's YouTube recordings. This entry does not claim plenary video or continuous broadcasting. Official-page check only; active media was not validated."
+        }
+      ]
+    },
+    {
+      "id": "sint-maarten-parliament-live",
+      "name": "Sint Maarten Parliament Meetings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Sint Maarten",
+      "legislature": "Parliament of Sint Maarten",
+      "external_ids": {
+        "wikidata_qid": "Q388526",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q388526",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://sxmparliament.org/live-meeting/",
+      "provenance_note": "Constituent country of the Kingdom of the Netherlands; not a province of the Netherlands. Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://sxmparliament.org/live-meeting/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The institutional service provides its own viewing page and reserves all rights. No independent media extraction or retransmission permission was established.",
+        "evidence": [
+          "https://sxmparliament.org/live-meeting/"
+        ],
+        "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T19:29:39.076616Z",
+          "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified. Official-page check only; active media was not validated."
+        }
+      ]
     }
   ]
 }

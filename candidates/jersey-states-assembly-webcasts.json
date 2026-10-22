@@ -1,0 +1,78 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official annual report identifies Jersey's elected parliament and its law-making, tax, expenditure and government-accountability powers. Evidence: https://statesassembly.je/getmedia/a1450efa-edc5-4560-b276-c41336e920f8/R-91-2025.pdf?ext=.pdf",
+    "Crown Dependency; not part of the United Kingdom.",
+    "Chromium returned HTTP 200. The official Public-i service documents States Chamber and Scrutiny public-hearing coverage, lists dated upcoming/recent events and retains a six-month archive. Individual committee/room player identities and active media remain unverified.",
+    "Official-page link readiness only; active media and independent reuse remain unverified.",
+    "Promoted to the canonical catalogue as an official viewing link on 2026-10-22."
+  ],
+  "channel": {
+    "id": "jersey-states-assembly-webcasts",
+    "name": "Jersey States Assembly Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Jersey",
+    "legislature": "States Assembly of Jersey",
+    "external_ids": {
+      "wikidata_qid": "Q946944",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q946944",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://statesassembly.public-i.tv/core/portal/home",
+    "provenance_note": "Crown Dependency; not part of the United Kingdom. Chromium returned HTTP 200. The official Public-i service documents States Chamber and Scrutiny public-hearing coverage, lists dated upcoming/recent events and retains a six-month archive. Individual committee/room player identities and active media remain unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://statesassembly.public-i.tv/core/portal/home",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The service help explicitly supports sharing page and agenda links, and offers downloads for some meetings. This does not establish permission for independent retransmission or extraction.",
+      "evidence": [
+        "https://statesassembly.public-i.tv/core/portal/faq"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-22T19:29:39.076616Z",
+        "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Chromium returned HTTP 200. The official Public-i service documents States Chamber and Scrutiny public-hearing coverage, lists dated upcoming/recent events and retains a six-month archive. Individual committee/room player identities and active media remain unverified. Official-page check only; active media was not validated."
+      }
+    ]
+  }
+}

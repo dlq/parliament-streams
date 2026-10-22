@@ -94,7 +94,12 @@ function coverage(locale) {
   if (!sourceCountForms[locale] && !window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount) missing.push("sourceCount");
   return missing;
 }
-function jurisdictionName(locale, name) { return jurisdictionNames[locale]?.[name] ?? name; }
+const territorialCodes = { Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "PF", "New Caledonia": "NC", "Sint Maarten": "SX" };
+function jurisdictionName(locale, name) {
+  if (jurisdictionNames[locale]?.[name]) return jurisdictionNames[locale][name];
+  const code = territorialCodes[name];
+  return code ? new Intl.DisplayNames([locale], { type: "region" }).of(code) ?? name : name;
+}
 function sourceCount(locale, count) {
   const extra = window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount;
   if (extra) {
@@ -115,6 +120,7 @@ const subnationalParents = {
   "Northern Ireland": "GB", Scotland: "GB", Wales: "GB",
   Jalisco: "MX",
   Córdoba: "AR", Nagasaki: "JP", "Santa Catarina": "BR",
+  Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "FR", "New Caledonia": "FR", "Sint Maarten": "SX",
   California: "US", Florida: "US", Minnesota: "US", "New York": "US", Oregon: "US",
   "Rhode Island": "US", Texas: "US", Utah: "US", Washington: "US",
 };
@@ -125,10 +131,14 @@ function countrySearchTerms(locale, channel) {
       ? (channel.country_or_region === "Taiwan" ? "TW" : channel.external_ids?.ipu_country_code)
       : null;
   if (!code) return "";
-  return [...new Set(["en", locale])].map((language) => {
-    try { return new Intl.DisplayNames([language], { type: "region" }).of(code) ?? ""; }
+  // Search associations are separate from geographical map parents: Crown
+  // Dependencies are not part of the UK, and Sint Maarten is a constituent
+  // country of the Kingdom, not a province of the Netherlands.
+  const associations = { Jersey: ["GB"], "Isle of Man": ["GB"], "Sint Maarten": ["NL"], "French Polynesia": ["PF"], "New Caledonia": ["NC"] };
+  return [...new Set([code, ...(associations[channel.country_or_region] ?? [])])].flatMap((regionCode) => [...new Set(["en", locale])].map((language) => {
+    try { return new Intl.DisplayNames([language], { type: "region" }).of(regionCode) ?? ""; }
     catch { return ""; }
-  }).join(" ");
+  })).join(" ");
 }
 window.ParliamentStreamsMapI18n = { coverage, jurisdictionName, message, sourceCount, subnationalParents, countrySearchTerms };
 })();

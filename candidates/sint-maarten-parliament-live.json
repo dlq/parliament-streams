@@ -1,0 +1,78 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official parliament describes its constitutional co-legislator and government-oversight roles (articles 82 and 44). Evidence: https://sxmparliament.org/members/",
+    "Constituent country of the Kingdom of the Netherlands; not a province of the Netherlands.",
+    "Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified.",
+    "Official-page link readiness only; active media and independent reuse remain unverified.",
+    "Promoted to the canonical catalogue as an official viewing link on 2026-10-22."
+  ],
+  "channel": {
+    "id": "sint-maarten-parliament-live",
+    "name": "Sint Maarten Parliament Meetings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Sint Maarten",
+    "legislature": "Parliament of Sint Maarten",
+    "external_ids": {
+      "wikidata_qid": "Q388526",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q388526",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://sxmparliament.org/live-meeting/",
+    "provenance_note": "Constituent country of the Kingdom of the Netherlands; not a province of the Netherlands. Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://sxmparliament.org/live-meeting/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The institutional service provides its own viewing page and reserves all rights. No independent media extraction or retransmission permission was established.",
+      "evidence": [
+        "https://sxmparliament.org/live-meeting/"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-22T19:29:39.076616Z",
+        "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Chromium returned HTTP 200 and rendered an institutional YouTube player with a 2026–2027 Central Committee meeting, alongside public-meeting and committee recordings. Public and committee coverage are evidenced, but permanent physical-room feeds and current live playback remain unverified. Official-page check only; active media was not validated."
+      }
+    ]
+  }
+}

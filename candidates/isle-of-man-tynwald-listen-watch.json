@@ -1,0 +1,78 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Tynwald is the island legislature; its Legislative Council is a legislative/revising chamber, illustrating why the word council alone does not determine eligibility. Evidence: https://www.tynwald.im/about/legislative-council",
+    "Crown Dependency; not part of the United Kingdom.",
+    "Chromium returned HTTP 200. The official service separately lists Tynwald, House of Keys, Legislative Council and committee audio; all were labelled offline at inspection. Its Watch Committees section links tynwald.live for public oral hearings and the institution's YouTube recordings. This entry does not claim plenary video or continuous broadcasting.",
+    "Official-page link readiness only; active media and independent reuse remain unverified.",
+    "Promoted to the canonical catalogue as an official viewing link on 2026-10-22."
+  ],
+  "channel": {
+    "id": "isle-of-man-tynwald-listen-watch",
+    "name": "Tynwald Audio and Committee Video",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Isle of Man",
+    "legislature": "Tynwald",
+    "external_ids": {
+      "wikidata_qid": "Q827704",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q827704",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://tynwald.im/business/listen",
+    "provenance_note": "Crown Dependency; not part of the United Kingdom. Chromium returned HTTP 200. The official service separately lists Tynwald, House of Keys, Legislative Council and committee audio; all were labelled offline at inspection. Its Watch Committees section links tynwald.live for public oral hearings and the institution's YouTube recordings. This entry does not claim plenary video or continuous broadcasting.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Caption, sign-language and audio-description availability remains unverified for individual events. Tynwald plenary coverage is audio; its committee section provides video viewing links."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://tynwald.im/business/sittings",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The institution provides public listening and committee-viewing links and reserves copyright in the site. Source-specific media reuse was not established; preserve official-page viewing only.",
+      "evidence": [
+        "https://tynwald.im/business/listen"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-22T19:29:39.076616Z",
+        "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Chromium returned HTTP 200. The official service separately lists Tynwald, House of Keys, Legislative Council and committee audio; all were labelled offline at inspection. Its Watch Committees section links tynwald.live for public oral hearings and the institution's YouTube recordings. This entry does not claim plenary video or continuous broadcasting. Official-page check only; active media was not validated."
+      }
+    ]
+  }
+}

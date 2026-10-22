@@ -29,11 +29,13 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 38 of 104 catalogue entries use a permission status ending in
-  `pending_review`; ten are newly published U.S. official-page records that
-  have not yet been triaged into the dated 2026-08-19 outreach buckets.
-- 16 entries in the previous queue likely need written clarification.
-- 12 entries in the previous queue should remain pending after a dated public-terms search unless
+- 50 of 117 catalogue entries use a permission status ending in
+  `pending_review`: 18 official-vendor HLS, five first-party HLS,
+  26 official pages and one DASH research record. Later official-link
+  promotions have dated source-condition notes but are not all assigned to
+  the older outreach buckets. See [research status](research-status.md).
+- 16 entries in the historical August queue likely need written clarification.
+- 12 entries in that historical queue should remain pending after a dated public-terms search unless
   source owners publish clearer terms or the post-proof-of-concept playback
   policy changes.
 

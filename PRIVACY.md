@@ -1,6 +1,6 @@
 # Privacy
 
-Parliaments is a documentation and data repository with a static GitHub Pages
+Parliament Streams is a documentation and data repository with a static GitHub Pages
 catalogue. It does not operate user accounts, analytics, telemetry, push
 notifications, a server-side stream proxy, or a sync backend.
 

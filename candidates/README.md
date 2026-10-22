@@ -9,17 +9,31 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-10-22, one Chile Chamber Sala IV candidate remains `researching`.
-Its official-page discovery and sample media passed, but room identity,
-schedule mapping, and rights scope still need review. The Czech chamber feed
+As of 2026-10-22, four candidates remain `researching`:
+
+- Chile Chamber Sala IV: room identity, schedule mapping and rights scope need
+  review despite official-page discovery and sample media checks.
+- Iceland Althingi: official broadcasts are documented, but the browser player
+  returned an access challenge.
+- Skåne: official regional WebTV was found, but browser access was denied;
+  eligibility also needs the legislative-authority review.
+- France's Senate: the live service opened, but published hyperlink conditions
+  include prior webmaster notification. No notification has been sent.
+
+The Czech chamber feed
 passed active live-media and browser-decode checks and was promoted; Sweden
 and Finland were added as official-page link-outs. See the
 [in-depth audit](../reports/discovery/2026-10-22-in-depth-audit.md).
-Six promoted records are retained for audit history;
+Nineteen promoted records are retained for audit history, including the eight
+first-expansion links and five later territorial services. See the
+[current research status](../docs/research-status.md);
 `data/channels.json` governs their current published status. Event,
 official-player, and provider fallback ideas should normally start in
 `data/fallbacks.json` instead of becoming channel candidates unless they have a
 stable channel identity and a supportable playback or link-out posture.
+
+Apply the [catalogue scope rule](../docs/catalogue-scope.md) before promotion.
+Ordinary councils are not eligible merely because they broadcast meetings.
 
 Broad discovery watchlists are not candidate records. The U.S. federal and
 50-state research inventory remains in `data/discovery/us-legislatures.json`;

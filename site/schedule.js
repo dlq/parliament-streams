@@ -1,6 +1,6 @@
 (() => {
 const { locales, message, supportedLocale } = window.ParliamentStreamsI18n;
-const { jurisdictionName: localizedJurisdictionName, message: mapMessage } = window.ParliamentStreamsMapI18n;
+const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const scriptUrl = document.currentScript?.src ?? window.location.href;
@@ -133,6 +133,27 @@ function render() {
       <td><div class="schedule-actions">${canPlay(channel) ? `<a class="schedule-watch" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : ""}<a class="schedule-details" href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></div></td>
     </tr>`;
   }).join("");
+  renderOfficialSchedules();
+}
+
+function renderOfficialSchedules() {
+  // Calendars and dated-event indexes remain useful before an automated guide
+  // parser exists. Keep these links separate from programme/now-next rows.
+  const links = new Map();
+  for (const channel of state.channels) {
+    if (state.jurisdiction && channel.country_or_region !== state.jurisdiction) continue;
+    for (const source of channel.epg_sources) {
+      if (source.method !== "GET" || source.scraper_status !== "planned" || /api|json|zip/i.test(source.kind)) continue;
+      if (!links.has(source.url)) links.set(source.url, { channel, url: source.url });
+    }
+  }
+  const entries = [...links.values()].sort((a, b) => jurisdictionName(a.channel).localeCompare(jurisdictionName(b.channel), state.locale)
+    || a.channel.name.localeCompare(b.channel.name, state.locale));
+  document.querySelector("#official-schedules").hidden = !entries.length;
+  setText("official-schedules-label", `${t("calendarAgenda")} · ${sourceCount(state.locale, entries.length)}`);
+  document.querySelector("#official-schedules-list").innerHTML = entries.map(({ channel, url }) =>
+    `<li><a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(channel.name)} ↗</a> · <a href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></li>`
+  ).join("");
 }
 
 function renderFilters() {

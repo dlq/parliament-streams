@@ -2014,3 +2014,84 @@ errors. Verified generated URL hashes against every referenced JS/CSS file and
 checked that a second versioning pass is unchanged. HTML/Playwright/Axe checks
 also passed. This engine coverage does not include Safari extensions or a
 user's existing browser cache profile.
+
+
+## 2026-10-22 Wider research and legislative-authority scope
+
+Expanded the broad subnational/territorial discovery ledger from 557 to 1,121
+initial searches across 58 country audit groups. The other 13 country reviews
+record no core regional legislature established by the reviewed evidence,
+with caveats and auxiliary leads retained. Special-status completeness,
+blocked pages and player/room/source-condition validation remain unresolved.
+Inventory counts include bodies that do not qualify for publication.
+
+The user clarified that ordinary councils are not the intended meaning of
+parliaments and endorsed legislative authority as the dividing criterion.
+`docs/catalogue-scope.md` records the working rule. Research rows now carry
+eligibility assessments: deliberation, a webcast or parliamentary-style
+procedure alone is insufficient. Names alone cannot exclude a legislative
+council. Borderline regional bodies require legal-authority evidence; this pass
+does not silently remove previously published sources.
+
+Promoted five official viewing services after Chromium HTTP/render checks,
+identity matching, authority evidence and link-only conditions review:
+Jersey, Tynwald, French Polynesia, New Caledonia and Sint Maarten. Tynwald
+plenary coverage is audio, with a separate committee-video route. No extracted
+YouTube manifests, new direct HLS channels or implemented EPG parsers were added.
+The catalogue total is 117 (50 national, 61 subnational/territorial, six
+supranational). Seven further parliamentary services remain in the territorial
+decisions report with explicit readiness gaps.
+
+Reconciled catalogue/search, local flag assets and runtime localized territory
+names; all 42 public regional/territorial jurisdictions now have map geometry.
+Added the earlier missing Nagasaki, Argentine Córdoba and Brazilian Santa
+Catarina outlines, plus the new territories. Supplemented the coarse overview
+for Jersey, Isle of Man, Sint Maarten and Mauritius. Research associations do
+not assert sovereignty: Crown Dependencies are not UK subdivisions and Sint
+Maarten is a constituent country of the Kingdom of the Netherlands.
+
+The schedule page has a compact official calendar/event-source disclosure,
+separate from automated now/next rows. It uses existing localized labels and
+source-count forms. Local IPTV export verification still produces four strict
+stable channels, 38 validated HLS channels and 70 programmes from the retained
+snapshot; programme counts are not fresh schedule evidence.
+
+Evidence and remaining leads: `reports/discovery/2026-10-22-territorial-decisions.json`,
+`reports/health/2026-10-22-territorial-webcasts.json`, and the subnational ledger.
+
+
+Final checks: `make verify` passed (109 Python tests, one skipped, 91% coverage;
+HTML, desktop/mobile Playwright and Axe). Additional local Chromium and WebKit
+checks passed at 1280px and 320px for all five source deep links, flags, map
+selections and official calendar outlinks, with no page errors or horizontal
+overflow. The retained programme snapshot contains seven guide rows; 33 is the
+separate catalogue-record count with implemented schedule metadata.
+Small-island location dots make otherwise tiny outlines visible while retaining
+real boundaries and keyboard selection. Browser plugin was unavailable; the
+project's regular Playwright runtime was used.
+
+
+## 2026-10-22 Documentation and contributor welcome
+
+Reduced the root README from 815 to 109 lines while adding clear contribution
+paths near the top. Detailed site/language, development, schedule/IPTV and
+research guidance now lives in focused guides linked from `docs/README.md`.
+Historical evidence stays dated in NOTES/reports rather than masquerading as
+current status. Current summaries reconcile with 117 catalogue records,
+50 pending-rights entries and 23 formal candidates (19 promoted, four still
+researching). The rights matrix includes the five new territorial services.
+
+Expanded the contribution guide to welcome official-source suggestions,
+stream checks, translation review, accessibility, IPTV testing, schedules,
+local institutional knowledge, documentation, usability, code, source evidence,
+advocacy ideas and other proposals. Added a translation guide and issue form,
+a general contribution form and a lightweight PR template. Source suggestions
+require only a name and official page; problem reports accept plain-language
+observations without technical diagnostics.
+
+GitHub About metadata was updated directly: a friendlier project description
+and five topics (parliament, civic-tech, open-data, livestream, epg), reduced
+from 16. README, guide and issue-template changes remain local until pushed.
+Validation covers local Markdown destinations, locale/code coverage, documented
+catalogue/candidate counts, issue-form YAML structure and whitespace. No new
+stream or source-terms research was performed in this documentation pass.

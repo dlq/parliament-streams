@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Ways to contribute
+    url: https://github.com/dlq/parliament-streams/blob/main/CONTRIBUTING.md
+    about: Find contribution paths for sources, translations, accessibility, documentation, research and code.
   - name: Sensitive security or privacy report
     url: https://github.com/dlq/parliament-streams/security/policy
     about: Please use the security guidance instead of a public issue for sensitive reports.

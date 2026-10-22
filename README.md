@@ -4,799 +4,106 @@
 [![Catalogue Audit](https://github.com/dlq/parliament-streams/actions/workflows/catalogue-audit.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/catalogue-audit.yml)
 [![GitHub Pages](https://github.com/dlq/parliament-streams/actions/workflows/pages.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/pages.yml)
 
-Parliament Streams is a documentation and data project for public parliamentary
-video sources. It records the stream endpoints, official pages, schedule/EPG
-surfaces, media-accessibility metadata, scraper notes, and rights/permission
-evidence found while researching open parliamentary video access.
+Find official parliamentary video from around the world. Parliament Streams
+is an independent catalogue of official viewing pages, documented streams,
+schedules and evidence about source access, accessibility and reuse.
 
-The repository is intended to be a public, inspectable catalogue and research
-record.
+**[Catalogue](https://dlq.ca/parliament-streams/)** ·
+**[Coverage map](https://dlq.ca/parliament-streams/map.html)** ·
+**[Programme guide](https://dlq.ca/parliament-streams/schedule.html)**
 
-**[Browse the public catalogue](https://dlq.ca/parliament-streams/)** ·
-**[View the programme guide](https://dlq.ca/parliament-streams/schedule.html)**
+## Help Improve The Catalogue
 
-## Start Here
+Contributions of any size are welcome. Share an official source, check a
+translation, report something confusing, or help improve the code. Local
+knowledge, language skills and experience using the site are all useful.
 
-This project has three moving parts:
+| You can help with… | Start here |
+| --- | --- |
+| An official parliamentary source or a better viewing link | [Suggest or correct a source](https://github.com/dlq/parliament-streams/issues/new?template=source_correction.yml) |
+| A broken stream, player or page | [Report what happened](https://github.com/dlq/parliament-streams/issues/new?template=endpoint_validation.yml) |
+| Translations and more natural wording in any supported language | [Suggest a translation](https://github.com/dlq/parliament-streams/issues/new?template=translation_review.yml) · [Translation guide](docs/translating.md) |
+| Incorrect schedules, times, room names or language labels | [Report a schedule issue](https://github.com/dlq/parliament-streams/issues/new?template=schedule_metadata.yml) |
+| Accessibility, mobile usability, documentation, research, code or another idea | [Share an idea or finding](https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml) |
 
-- a canonical catalogue in `data/channels.json`;
-- Python tools that validate, update, audit, and enrich that catalogue; and
-- a static site in `site/` that presents the catalogue on GitHub
-  Pages.
+For a small first contribution, try one link, one sentence, one translation or
+one source you know well. A plain-language issue is enough to get started;
+pull requests are welcome too. See [all contribution paths](CONTRIBUTING.md)
+or [browse open issues](https://github.com/dlq/parliament-streams/issues).
 
-There is no backend, stream proxy, user tracking, or rebroadcast service. The
-site plays only sources that the catalogue records as technically validated and
-not expressly blocked by source terms; otherwise it links to the official page.
+## What It Covers
 
-For a first local check:
+National parliaments and state, provincial, territorial, autonomous or devolved
+legislatures with substantive **legislative authority**, including their public
+committee proceedings. Ordinary local councils and planning/service bodies are
+outside default scope. See [catalogue eligibility](docs/catalogue-scope.md) for
+borderline and special-status cases; international sources are labelled
+separately.
+
+The site plays documented sources when the catalogue's technical and playback
+policy permits it, and otherwise links to the official service. It is a static
+site with no accounts, analytics, stream proxy or rebroadcast backend.
+Public availability is not a reuse licence; each source retains its evidence
+and conditions. See the [rights summary](docs/rights-summary.md).
+
+## IPTV And Programme Data
+
+The catalogue and schedule pages offer playlist/guide links, copy buttons and
+localized VLC desktop instructions:
+
+- [Stable HLS playlist](https://dlq.ca/parliament-streams/data/stable-hls.m3u8)
+- [Broader validated HLS playlist](https://dlq.ca/parliament-streams/data/validated-hls.m3u8) — some feeds are available only during proceedings
+- [XMLTV guide](https://dlq.ca/parliament-streams/data/epg.xml) — partial coverage
+
+These UTF-8 channel lists link to the original streams. Official viewing links
+and calendar pages do not automatically qualify for IPTV or XMLTV. Pages
+regenerates exports every six hours; details and local commands are in
+[schedules, IPTV and XMLTV](docs/schedules-and-iptv.md).
+
+## Run Locally
+
+For an HTTP preview, install Node.js 24+ and run:
 
 ```sh
-uv sync --locked --extra dev
 npm ci
-npx playwright install chromium
-make verify
-```
-
-For a quicker orientation without installing everything:
-
-```sh
-npm ci
-python3 -m json.tool data/channels.json >/dev/null
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000/site/`.
-
-New contributors should read [docs/architecture.md](docs/architecture.md) for
-the repo mental model and [docs/catalogue-maintenance.md](docs/catalogue-maintenance.md)
-before editing source records.
-
-## What Is Here
-
-- `site/`: static catalogue, coverage-map, and programme-guide interfaces
-  for GitHub Pages. They load the published `data/channels.json` and
-  `data/fallbacks.json` artifacts
-  directly; no application backend, user accounts, analytics, or server-side
-  stream proxy is used.
-- `data/channels.json`: canonical source catalogue, including recorded caption,
-  sign-language, audio-description, Wikidata identity, and applicable IPU
-  Parline parliament/chamber identifiers. Entries may also include compact
-  `validation_history` links to retained health reports.
-- `data/fallbacks.json`: official event, player, broadcaster, and provider
-  surfaces that can support link-out or embed fallbacks without claiming a
-  stable direct stream.
-- `data/discovery/`: maintained Tier 1 and Tier 2 official-page and manifest
-  targets, a complete U.S. federal/state legislature candidate inventory, and
-  durable review decisions for reproducible candidate discovery.
-- `data/schedules.json`: ignored local schedule snapshot generated by the
-  collector; the equivalent file is generated into each Pages deployment.
-- `schema/`: machine-readable catalogue, fallback-source, schedule snapshot,
-  democracy-discovery, and U.S. legislature-candidate schemas.
-- `parliament_streams/cli.py`: typed Python catalogue manager for validation,
-  candidate intake, safe mutations, health reports, identity audits, and exports.
-- `parliament_streams/scrapers/`: Python parsers for schedule/EPG sources with
-  documented, reproducible parsing logic.
-- `parliament_streams/schedule_collection.py`: shared HTTP, retry, normalization,
-  and static schedule publication pipeline.
-- `parliament_streams/healthcheck.py`: repeatable live endpoint/page health
-  checker for catalogue entries.
-- `parliament_streams/link_audit.py`: parallel reachability audit for recorded
-  official, rights, identity, and embed links.
-- `tools/deep_validate_browser.mjs`: optional Playwright/Chromium validator
-  for official player pages that only expose manifests after JavaScript runs.
-- `tools/check_accessibility.mjs`: local and CI browser accessibility checks for
-  the static catalogue.
-- `reports/health/`: dated JSON health reports from live validation passes.
-- `candidates/`: reviewable source-research records and their rejected or
-  promoted outcomes.
-- `docs/sources-and-provenance.md`: source ownership, reuse, and provenance
-  boundaries.
-- `docs/source-rights-and-permissions.md`: source-by-source permission and
-  rights evidence.
-- `docs/rights-summary.md`: short reader-facing explanation of the current
-  rights posture and open permission queue.
-- `docs/permission-requests.md`: draft written-clarification requests, contact
-  routes, and response-tracking rules for ambiguous source-owner terms.
-- `docs/open-stream-principles.md`: the project position on open protocols,
-  access, terms, metadata, and accessibility for public legislative streams.
-- `NOTES.md`: working research log for stream discovery and source notes.
-- `PLANS.md`: current roadmap for the documentation/data project.
-- `CHANGELOG.md`: project-focused change history.
-- `tests/`: catalogue-manager, data-contract, parser, and health-check tests
-  with enforced branch coverage for the Python package; frontend checks live in
-  `tools/`.
-
-## Manage The Catalogue
-
-Python 3.11 or newer and `uv` are required. Install the locked development
-environment, validate the current catalogue, and inspect the available
-commands:
-
-```sh
-uv sync --locked --extra dev
-uv run parliament-streams validate
-uv run parliament-streams --help
-```
-
-New sources should normally begin as tracked candidate records rather than as
-hand-edits to `data/channels.json`. The manager scaffolds and validates those
-records, promotes only candidates marked `ready`, validates every catalogue
-mutation against both JSON Schema and cross-record rules, updates the catalogue
-date, and regenerates the direct-file site snapshot. It also supports dry-run
-add/update/remove operations, validation-seed generation, live health reports,
-health-report diffs, Wikidata/IPU coherence audits, and CSV export.
-
-See [docs/catalogue-maintenance.md](docs/catalogue-maintenance.md) for the
-complete workflow and command examples. Contribution evidence requirements are
-in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Catalogue Scope
-
-The catalogue includes:
-
-- direct HLS endpoints discovered from official pages, official APIs, or
-  official-vendor player infrastructure;
-- official YouTube sources using compliant privacy-enhanced playlist embeds,
-  plus link-out sources where in-page playback is not appropriate;
-- supranational official-page/schedule targets for EU, UN, Council of Europe,
-  and OSCE coverage where direct stream reuse is not documented;
-- selected non-US sub-national legislatures where an official source or
-  validated official-vendor stream has been documented;
-- one legacy DASH research candidate kept for provenance;
-- official pages used for source attribution and validation;
-- schedule/EPG scrape surfaces for CPAC, Quebec, Ontario, New Zealand, Brazil,
-  Spain, Ireland, Estonia, Norway, Chile, Israel, Germany, El Salvador, and
-  Nunavut, plus supranational EU/UN/Council of Europe/OSCE targets;
-- fallback records for official event/player surfaces such as ParlVU, SenVu,
-  Parliamentlive.tv, YouTube live pages, C-SPAN, and HouseLive where native
-  playback is not yet supported or appropriate. Related schedule snapshots can
-  expose official event links, event IDs, language state, status labels, and
-  room labels when a scraper can collect them;
-- permission status, evidence links, and reuse recommendations for every
-  channel entry;
-- explicit playback policy for how the catalogue presents each source:
-  `native_playback`, `provider_embed`, `link_out`, or `research_only`;
-- explicit caption, caption-language, sign-language, and audio-description
-  status. `unknown` means the project has not yet recorded sufficient evidence,
-  not that the feature is unavailable.
-- durable Wikidata QIDs for every recorded legislature or institution and IPU
-  Parline country, parliament, and chamber codes where IPU covers the national
-  body. These are identity and discovery links, not sources for stream health,
-  schedule data, or permission decisions.
-
-This is not an endorsed global directory and not a rebroadcast service. Public
-availability does not automatically mean permission to redistribute, embed, or
-play a stream natively in another product.
-
-## Public Catalogue Site
-
-The repository includes a GitHub Pages interface in `site/`. It provides
-search and filters over the canonical catalogue, source/EPG/provenance details,
-external institutional identity links, playback mode, and an official outbound
-link for every entry. Its dedicated programme guide presents the latest
-six-hourly schedule snapshot as compact Now/Next channel listings, with
-jurisdiction and listing-status filters, source-published times, explicit
-freshness warnings, and playback handoff for eligible channels.
-
-The number of catalogue entries with an `epg_sources` link is deliberately
-larger than the number shown in the programme guide. A linked sitting calendar,
-agenda, or programme page is useful provenance, but the guide includes a
-channel only when an implemented parser returns at least one real dated event
-inside the current collection window. It does not publish generic placeholders
-as programmes.
-
-The page enables in-page playback where `data/channels.json` records
-`playback_policy` as `native_playback` for a direct feed or `provider_embed`
-for an official provider iframe. For direct feeds, that policy is only used
-when the entry has a direct playback URL, its technical status is `validated`,
-and its recorded terms do not expressly prohibit third-party reuse.
-
-This is an opt-out research posture: the absence of recorded affirmative
-permission is not represented as a licence or other grant of rights. Direct
-endpoints with `no_third_party_reuse` remain `link_out`, and direct endpoints
-kept for unresolved DASH or technical research remain `research_only`. HLS playback uses the
-browser's native support where available and lazily loads the local `hls.js`
-asset for compatible non-Safari browsers. `npm ci` prepares HLS.js and D3 from
-the locked npm dependencies, including D3's installed submodules. Dependabot
-updates therefore reach the published assets without manual file copies or CDN
-pins. This is client-side code only, not a backend or proxy. See
-[the vendor asset workflow](site/assets/vendor/README.md) for regeneration and
-license details.
-
-For the current proof of concept, technically public HLS is treated as
-sufficient for native client-side playback unless recorded rights evidence
-requires link-out. The catalogue should expose that uncertainty clearly rather
-than silently demoting all pending direct streams.
-
-YouTube catalogue entries use YouTube's official privacy-enhanced iframe and a
-permanent official uploads playlist. The playlist starts with the latest
-published item and may show an active broadcast when YouTube places it first;
-it is not represented as a guaranteed live-only feed. The official outbound
-link points to the channel's stable live page, which may redirect to an active
-or upcoming event. A conservative schedule resolver records a current YouTube
-  watch video ID only when the official live page exposes explicit watch
-  metadata; otherwise the site keeps the playlist embed. The catalogue does not
-extract YouTube manifests.
-
-Every native player includes the recorded source attribution and direct links
-to relevant supporting sources. Its detail view also presents the latest
-retained validation evidence and the catalogue's recorded media-accessibility
-status. `explicit_reuse_with_conditions` means the project has recorded
-affirmative official terms. `personal_use_pending_review` and
-`noncommercial_pending_review` mean that the player is offered under this
-opt-out policy, not that permission has been granted. `no_third_party_reuse`
-means the source terms expressly rule out a third-party player without separate
-permission. Source owners can request prompt removal through the repository
-owner on GitHub.
-
-Official fallback records from `data/fallbacks.json` appear as related links in
-the selected channel's source details. These records cover event platforms,
-official player pages, broadcaster pages, and
-provider-managed embeds that are useful for users without claiming a stable
-direct channel stream. When a fallback is related to a channel with collected
-schedule data, the site can show the current and next event titles beside the
-fallback link; it still links to the official platform rather than resolving or
-extracting an event-specific stream.
-
-The deploy workflow in `.github/workflows/pages.yml` publishes the site files,
-the canonical `data/channels.json`, and a freshly collected schedule snapshot.
-It runs after relevant pushes, on demand, and every six hours at 17 minutes
-past the hour. To enable it once
-on GitHub, set **Settings → Pages → Build and deployment → Source** to
-**GitHub Actions**. Thereafter pushes affecting `site/` or `data/channels.json`
-publish the updated page. The scheduled collection is a batch build; the
-deployed site remains static and has no request-time backend.
-
-The separate `.github/workflows/catalogue-audit.yml` runs a complete catalogue
-audit every day at 06:41 UTC. It validates the schema and identity contract,
-checks all primary playback or official URLs, audits every unique schedule
-endpoint, exercises implemented schedule parsers, and checks deduplicated
-official, rights, Wikidata/IPU, and embed links. Reports are retained as GitHub
-Actions artifacts for 30 days. On Sundays the workflow also uses Chromium to
-load every recorded official page, discover dynamically exposed HLS/DASH
-manifests, and retain that report for 90 days. Only newly degraded `always_on`
-streams fail the workflow; event-based feeds remain recorded without generating
-routine failures when a legislature is not sitting.
-
-For a quick local preview, run `npm ci` once to prepare the browser libraries,
-then open `site/index.html` directly. The checked-in
-`site/catalogue-data.js` snapshot allows the page to work without a local
-server. It is generated from the canonical JSON and checked for drift by CI.
-YouTube does not permit iframe playback from a `file://` page because it has no
-HTTP origin/referrer; the direct-file preview therefore shows a link to the
-public catalogue instead of a broken player.
-
-To preview the hosted data-loading path instead, serve the repository root:
-
-```sh
 make site
 ```
 
-Then visit `http://localhost:8000/site/`. This HTTP preview also enables the
-official YouTube embeds. The served page requests the same
-canonical `data/channels.json` file used by the deployment workflow and falls
-back to the generated snapshot if that request is unavailable.
+Open [localhost:8000/site/](http://localhost:8000/site/). Python 3 supplies the
+preview server. `npm ci` prepares the locked HLS.js and D3 browser assets.
+The interface supports 23 locales; source records retain their recorded
+languages. See [site and language behaviour](docs/public-site.md).
 
-## Languages
-
-The static interface supports English, French, Spanish, Brazilian Portuguese,
-Danish, German, Estonian, Greek, Hindi, Irish, Italian, Luxembourgish, Dutch,
-Norwegian Bokmal, Slovak, Thai, Simplified Chinese, Inuktitut syllabics,
-te reo Maori, Czech, Finnish, Swedish, and Traditional Chinese (23 locales).
-Select a
-language in the site header or use `?lang=fr` (substituting a supported locale
-code) in a shared URL; the selection is also stored locally in the browser.
-Chinese browser locales for Taiwan, Hong Kong, and Macao select Traditional
-Chinese unless an explicit Simplified Chinese script is requested. The four
-additional packs live in `site/extra-locales.js`; catalogue, map, schedule, and
-IPTV/VLC messages are checked for complete key coverage. Czech source counts
-use the locale's plural categories. Dates, numbers, and sorting use `Intl`.
-
-IPTV setup, copy feedback, and VLC desktop instructions follow the selected
-language on both the catalogue and schedule pages. The external VideoLAN
-documentation link is labelled as English. Exact VLC menu wording can vary
-with the installed VLC version and interface language.
-
-The locale setting translates interface chrome and project-authored explanatory
-copy. Official source names, programme records, attribution text, permission
-summaries, and evidence links remain as recorded in the canonical catalogue.
-This avoids presenting unreviewed translations as authoritative source or legal
-material. The page marks those English-language catalogue fields separately so
-assistive technology does not pronounce them as translated interface text.
-
-The Inuktitut syllabics interface is a best-effort machine-generated draft,
-using terminology sources from Nunavut and awaiting review by an Inuktitut
-speaker. It must not be treated as an authoritative translation.
-The Czech, Finnish, Swedish, and Traditional Chinese additions also need native
-speaker review. Automated coverage and accessibility checks verify interface
-behavior, not linguistic accuracy or the completeness of source-language video.
-
-Current and historical validation work is recorded in dated reports. The latest
-repository-wide research summaries are:
-
-- `reports/channel-information-audit-2026-08-24.md`
-- `reports/epg-discovery-2026-08-24.md`
-- `reports/us-federal-state-candidates-2026-08-24.md`
-
-The latest stream and official-source expansion review is the
-[October 22 in-depth audit](reports/discovery/2026-10-22-in-depth-audit.md).
-
-The earlier targeted scheduled-audit follow-up is recorded in
-[October candidate triage](reports/discovery/2026-10-01-candidate-triage.md)
-and the [CodeQL review](reports/codeql-review-2026-10-01.md).
-
-Earlier retained health and discovery evidence includes:
-
-- `reports/health/2026-08-16-subnational-promotion-static.json`
-- `reports/health/2026-08-16-subnational-promotion-deep-browser.json`
-- `reports/health/2026-08-16-subnational-promotion-seed.json`
-- `reports/health/2026-08-15-catalogue-health.json`
-- `reports/health/2026-08-15-review-health.json`
-- `reports/health/2026-08-14-catalogue-health.json`
-- `reports/health/2026-08-14-tier1-democracy-hls.json`
-- `reports/health/2026-08-14-tier2-democracy-hls.json`
-- `reports/health/2026-08-14-tier1-tier2-deep-browser-validation.json`
-- `reports/health/2026-08-14-supranational-static.json`
-- `reports/health/2026-08-14-supranational-deep-browser-validation.json`
-- `reports/health/2026-08-14-non-us-subnational-static.json`
-- `reports/health/2026-08-14-non-us-subnational-deep-browser-validation.json`
-- `reports/health/2026-07-29-tier1-democracy-hls.json`
-- `reports/health/2026-07-29-tier2-democracy-hls.json`
-- `reports/health/2026-07-29-tier3-democracy-hls.json`
-- `reports/health/2026-07-29-tier1-tier2-deep-browser-validation.json`
-
-The August 14 national refresh added Germany's Bundestag channel 1 as a validated but
-permission-pending national HLS source, reconfirmed several existing national
-sources, and downgraded endpoints that did not validate cleanly.
-
-The supranational pass added official-page entries for European Parliament
-Multimedia Centre, Council of the European Union Live, EU Audiovisual Service /
-EBS, United Nations Web TV, Council of Europe / PACE Live, and OSCE Live. These
-are link-out/schedule targets; no stable raw HLS/DASH manifest was validated
-for them in the static or browser pass.
-
-The non-US sub-national work records Nunavut and Jalisco as validated,
-permission-pending direct HLS sources. Scottish Parliament TV, Senedd TV, and
-Northern Ireland Assembly TV are documented as official-page and schedule
-entries with source-specific rights guidance. The 2026-08-16 promotion pass
-added 18 more official-player and schedule records covering Canadian
-provinces and territories, Australian states, German Landtage, and Spanish
-autonomous parliaments. These remain link-out sources unless a stable direct
-feed and suitable playback posture are both documented. Colima remains
-excluded because the validated regional broadcaster has not been established
-as a parliamentary channel.
-
-## Schedule And EPG Data
-
-The canonical catalogue records official schedule pages in `epg_sources`.
-Typed Python parsers consume their HTML or JSON, while
-`parliament-streams schedules-collect` performs explicit network retrieval and
-writes a versioned `schedules.json` snapshot. GitHub Actions runs that collector
-every six hours and includes the result in the Pages artifact. The page reads
-only that same-origin static JSON; it never scrapes third-party sites.
-
-Schedule snapshot schema v3 stores a normalized rolling event list for each
-channel. Every event can record a stable or deterministic identifier, canonical
-UTC start/end timestamps, source timezone, status, official event URL, location,
-and language. The legacy Now/Next fields remain as a derived compatibility view
-for the static catalogue and programme guide.
-
-Each run records generation time, coverage range, event completeness, expected
-and populated channel counts, and per-source `ok`, `empty`, or `error` status.
-An empty source is distinguished from a fetch/parser error. A failed source does
-not prevent successful schedules from being published, while a run with no
-successful sources fails before deployment. The scheduled workflow may retain
-only still-future events from the preceding successful snapshot for up to 24
-hours; those channels are marked stale and never retain a stale Now listing.
-
-Current scraper ids:
-
-- `cpac`
-- `quebec-webdiffusion`
-- `new-zealand-parliament`
-- `ontario-calendar`
-- `brazil-tv-camara`
-- `europarl-webstreaming`
-- `ebs-grid`
-- `italian-senate-palimpsest`
-- `portugal-open-data-agenda`
-- `canada-harmony`
-- `uk-parliament`
-- `un-webtv-schedule`
-- `youtube-live`
-
-They parse supplied HTML/JSON strings. Network fetching remains in the shared
-collector rather than inside parser functions, so every run records what was
-requested, when it ran, and whether each source succeeded.
-
-Schedule sources use `scraper_status: implemented` when a registered Python
-parser exists. Sources without a usable parser remain `planned` and appear as
-official outlinks.
-
-As of 2026-10-22, all 112 channel records have at least one official schedule,
-agenda, meeting, or dated video-event surface recorded. This is source coverage,
-not programme-guide coverage: 17 unique URLs have implemented parsers, while
-84 of the 101 recorded URLs remain planned or link-only research sources. See
-`reports/epg-discovery-2026-08-24.md` for the dated source-by-source discovery
-baseline.
-
-Collect all implemented sources locally:
-
-```sh
-make schedules
-```
-
-This writes the ignored development artifact `data/schedules.json`. Equivalent
-options are available through the CLI:
-
-```sh
-uv run parliament-streams schedules-collect \
-  --output data/schedules.json \
-  --previous data/schedules.json \
-  --stale-ttl-hours 24 \
-  --timeout 15 \
-  --retries 1
-```
-
-Omit `--previous` when testing a clean collection. The option is intended for
-scheduled publication, where it provides a bounded last-good fallback during a
-temporary source failure.
-
-Parse a saved response with the scraper CLI:
-
-```sh
-uv run --extra dev python -m parliament_streams.scrapers cpac /path/to/cpac-schedule.html
-```
-
-Quebec uses two official JSON endpoints, so pass the live response first and
-the upcoming response second:
-
-```sh
-uv run --extra dev python -m parliament_streams.scrapers quebec-webdiffusion live.json upcoming.json
-```
-
-The parser command prints metadata from saved inputs and does not fetch the
-network. The collector command performs live retrieval and writes the normalized
-snapshot consumed by the page.
-
-Audit every unique recorded schedule endpoint without running its parser:
-
-```sh
-uv run parliament-streams epg-audit \
-  --output reports/epg-validation-YYYY-MM-DD.json
-```
-
-The audit reports `reachable`, `access_blocked`, `not_found`, and `error`
-separately. A `403` is therefore preserved as runner access evidence, not
-misreported as a dead official source.
-
-Audit every recorded non-media supporting link:
-
-```sh
-uv run parliament-streams links-audit \
-  --output reports/links-validation-YYYY-MM-DD.json
-```
-
-This covers official pages, permission evidence, identity sources, and embed
-surfaces. Playback manifests and schedule endpoints remain in their specialized
-health and EPG reports so each check can apply the right validation rules. For
-reachable supporting pages, the report records a bounded response size and
-SHA-256 fingerprint to support comparison with later audit artifacts.
-
-Refresh compact validation-history references from retained health reports:
-
-```sh
-make validation-history
-make validation-history-check
-```
-
-The refresh target writes dated report links into catalogue entries and
-regenerates the static site data snapshot. The check target fails if the
-catalogue's compact validation-history references no longer match retained
-`reports/health/` artifacts; it is included in `make verify`.
-
-## IPTV playlists and XMLTV
-
-The catalogue and schedule pages include a collapsed **Use in an IPTV app**
-section with public playlist/guide URLs, copy buttons, and VLC desktop setup
-instructions. XMLTV guide coverage is partial and is separate from playlist
-playback. The VLC instructions link to VideoLAN’s official documentation.
-
-Pages generates IPTV exports after each six-hourly schedule collection:
-
-- `data/stable-hls.m3u8`: validated, native-playback HLS with low/medium risk
-  and `always_on` availability. Currently four channels: Brazil TV Camara,
-  Hellenic Parliament TV, and both Sansad TV channels.
-- `data/validated-hls.m3u8`: the same eligibility rules with sitting-only and
-  event-based sources included. These feeds may be off-air outside proceedings;
-  catalogue validation is retained evidence, not a fresh playback guarantee.
-- `data/epg.xml`: XMLTV guide data with catalogue IDs matching playlist `tvg-id`
-  values. Set this separately as the EPG URL if an app ignores `url-tvg`.
-- `data/epg-quality.json`: per-channel source scope, guide eligibility, overlap
-  counts, time-provenance counts, and event-level XMLTV exclusion reasons.
-
-Use the published site root `https://dlq.ca/parliament-streams/` followed by
-the paths above. `.m3u8` here is a UTF-8 channel list, not an HLS media manifest.
-These exports link directly to the original streams under the same playback
-policy as the site; CPAC, prohibited/embed-only sources, DASH, YouTube, and
-research-only records are excluded from the playlists. Pending rights remain
-pending, and no recording or catch-up permission is asserted.
-
-The guide requires a reviewed mapping from the schedule source to a particular
-broadcast feed, plus valid timezone-aware start/end times. The reviewed sources
-are Brazil TV Camara, CPAC, EBS, and the Italian Senate palimpsest. Other sources
-default to excluded until their feed mapping is reviewed. European Parliament's
-parallel event directory remains in the website schedule JSON, with room labels,
-but is not exported as a single XMLTV channel. Institutional agendas and other
-event directories likewise remain available to the website.
-
-Cancelled, incomplete, duplicate, invalid, and conflicting linear-feed events
-are omitted. Every programme involved in an overlap is excluded; no programme
-is arbitrarily chosen to represent that timeslot. Channel definitions cover
-playlist entries and reviewed broadcast feeds, including CPAC/EBS metadata;
-guide availability does not imply IPTV playback rights.
-
-Brazil and CPAC infer end times from the next listing; Brazil currently assumes
-the programme date from the collection date. These assumptions are recorded as
-`end_basis`/`start_basis` in schedule JSON and disclosed in XMLTV descriptions.
-Legacy cached records from those parsers receive the same disclosures. Missing
-or nonpositive EBS durations remain unknown instead of creating zero-length
-programmes. Bounded retained schedules are also labelled in descriptions.
-Official HTML/JSON/calendar URLs in `epg_sources` are research inputs, not
-generally importable IPTV guide URLs.
-
-Generate local files from a collected schedule snapshot:
-
-```sh
-uv run parliament-streams iptv-export \
-  --schedules data/schedules.json \
-  --output-dir /tmp/parliament-iptv \
-  --epg-url https://dlq.ca/parliament-streams/data/epg.xml
-```
-
-The command reports playlist counts, exported programmes, and omitted events.
-The quality report's exclusion counts may overlap when one event has multiple
-problems. Audit a snapshot independently with:
-
-```sh
-uv run parliament-streams schedules-audit \
-  --schedules data/schedules.json \
-  --output /tmp/parliament-schedule-quality.json
-```
-
-Daily catalogue audits retain this report as an Actions artifact. Pages writes
-the report alongside XMLTV and summarizes its counts in the deployment run.
-Publication preserves valid partial results; a green workflow is not a claim
-that all sources have complete or independently verified guide data.
-The file formats follow the
-[Kodi IPTV playlist conventions](https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md)
-and [XMLTV format](https://github.com/XMLTV/xmltv/blob/master/xmltv.dtd).
-
-## Verify
-
-Development uses two deliberately separate toolchains:
-
-| Tooling | Responsibility |
-| --- | --- |
-| Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, site-data generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
-| Node.js 24+ and npm | Locked HLS.js/D3 browser-asset assembly, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
-| Make | Stable command entry points that compose the Python and Node checks without hiding which toolchain runs them. |
-| Playwright Chromium | The downloaded browser used to test rendered desktop, intermediate-width, mobile, keyboard, and accessibility behavior. |
-
-Node assembles the browser libraries during installation. Python generates the
-catalogue snapshots; neither toolchain serves production traffic. The deployed GitHub Page is static HTML, CSS, JavaScript,
-and JSON and requires neither Python nor Node at runtime.
-
-Install `uv`, Node.js 24 or newer, both locked development environments, and
-the Playwright Chromium runtime:
+For the complete development checks, install Python 3.11+, `uv` and Node.js 24+:
 
 ```sh
 uv sync --locked --extra dev
 npm ci
 npx playwright install chromium
-```
-
-```sh
 make verify
 ```
 
-The Makefile uses `uv run --locked --extra dev`, so contributors get a Python
-3.11+ environment and pinned development tools from `uv.lock` instead of
-relying on a system Python.
+See [development and validation](docs/development.md) for individual checks and
+live audits. [CONTRIBUTING.md](CONTRIBUTING.md) explains evidence requirements.
 
-This runs JSON syntax plus schema/business-rule validation, checks that the
-direct-file site snapshot is current, checks Ruff formatting and linting, runs
-strict mypy over production Python and Python tools, compiles Python modules,
-and runs the unit suite with a 90% minimum coverage gate for
-`parliament_streams/`, with branch measurement enabled. It also validates the HTML and runs Axe plus browser
-assertions for desktop and mobile semantics, keyboard focus, reflow, control
-contrast, and reduced-motion support.
+## Maintain And Explore
 
-After changing `data/channels.json`, refresh the direct-file snapshot with:
+`data/channels.json` is the canonical catalogue. New sources normally start as
+reviewable records in `candidates/`; the catalogue manager validates changes
+and regenerates `site/catalogue-data.js`. Do not edit that generated snapshot
+independently. Start with [catalogue maintenance](docs/catalogue-maintenance.md).
 
-```sh
-make site-data
-```
+| Topic | Guide |
+| --- | --- |
+| Documentation index | [All guides](docs/README.md) |
+| Data model, files and runtime | [Architecture](docs/architecture.md) |
+| Scope and eligibility | [What counts as a parliament](docs/catalogue-scope.md) |
+| Current coverage and research leads | [Research status and evidence](docs/research-status.md) |
+| Rights and attribution evidence | [Source rights](docs/source-rights-and-permissions.md) |
+| Roadmap | [Plans](PLANS.md) |
+| Change history | [Changelog](CHANGELOG.md) |
+| Research history | [Working notes](NOTES.md) |
 
-Format Python sources with:
-
-```sh
-make format
-```
-
-Run a live health check against playback URLs and official link-out pages:
-
-```sh
-make healthcheck
-```
-
-To save a dated report:
-
-```sh
-uv run parliament-streams health-check \
-  --output reports/health/YYYY-MM-DD-catalogue-health.json
-```
-
-To check selected entries only, repeat `--id`:
-
-```sh
-uv run parliament-streams health-check \
-  --id france-national-assembly \
-  --id mongolia-parliament-tv
-```
-
-The health checker records HTTP status, content type, final URL, and whether
-direct HLS/DASH entries look like manifests. It is a technical availability
-check only; it does not determine redistribution permission.
-
-For a deeper browser/player pass against Tier 1 and Tier 2 official pages, run:
-
-```sh
-node --version
-npm ci
-npx playwright install chromium
-node tools/deep_validate_browser.mjs \
-  --input data/discovery/tier1.json \
-  --input data/discovery/tier2.json \
-  --output reports/health/YYYY-MM-DD-tier1-tier2-deep-browser-validation.json
-```
-
-If Playwright is installed outside the repository, point `NODE_PATH` at the
-directory containing `playwright`:
-
-```sh
-NODE_PATH=/path/to/node_modules node tools/deep_validate_browser.mjs \
-  --input data/discovery/tier1.json \
-  --input data/discovery/tier2.json \
-  --output reports/health/YYYY-MM-DD-tier1-tier2-deep-browser-validation.json
-```
-
-The browser validator uses Playwright's Chromium automation to load official
-pages, wait for player scripts, capture `.m3u8` and `.mpd` network/DOM
-references, and validate discovered manifests. It is intentionally separate
-from `make verify` because it performs live network checks against third-party
-sites and can be affected by geofencing, cookies, JavaScript changes, sitting
-hours, authentication prompts, and player behavior.
-
-### Candidate discovery audit
-
-GitHub Actions runs `.github/workflows/candidate-discovery.yml` on the first
-day of each month and on manual dispatch. It checks 25 maintained Tier 1 and 46
-Tier 2 targets statically, inspects official players in Chromium, validates
-discovered HLS/DASH manifests, and compares validated URLs with the catalogue.
-The workflow uploads 90-day evidence artifacts and writes uncatalogued results
-to the run summary. When review findings exist, it creates or updates the
-`Candidate discovery review queue` GitHub issue; it closes that issue when a
-later monthly run has no findings. It never adds or promotes catalogue records
-automatically.
-
-Run the same stages locally:
-
-```sh
-uv run python tools/validate_discovery_targets.py \
-  data/discovery/tier1.json data/discovery/tier2.json
-uv run python tools/validate_discovery_decisions.py
-uv run python tools/validate_democracy_tier_static.py \
-  --input data/discovery/tier1.json \
-  --output reports/discovery/tier1-static.json
-uv run python tools/validate_democracy_tier_static.py \
-  --input data/discovery/tier2.json \
-  --output reports/discovery/tier2-static.json
-node tools/deep_validate_browser.mjs \
-  --input data/discovery/tier1.json \
-  --input data/discovery/tier2.json \
-  --output reports/discovery/browser-validation.json
-uv run python tools/summarize_discovery_audit.py \
-  --static reports/discovery/tier1-static.json \
-  --static reports/discovery/tier2-static.json \
-  --browser reports/discovery/browser-validation.json \
-  --output reports/discovery/findings.json
-```
-
-This is repeatable discovery against a maintained institutional watchlist, not
-an internet-wide search. Add newly confirmed official legislature/player pages
-to the appropriate target file so subsequent runs cover them. Evidence-backed
-rejections belong in `data/discovery/reviewed-manifests.json`; they remain in
-the report but do not reopen the candidate issue on every monthly run.
-
-The separate U.S. inventory covers six federal candidates and all 50 state
-legislatures. It is schema-validated but is not yet part of the monthly browser
-discovery workflow:
-
-```sh
-uv run python tools/validate_us_candidates.py
-```
-
-Update `data/discovery/us-legislatures.json` when official research confirms a
-better video or schedule surface. Use
-`reports/us-federal-state-candidates-2026-08-24.md` for the initial priority
-order. A `verified_official_video_surface` label means an official video page
-was confirmed; it does not claim a stable direct stream, embeddability, or
-redistribution permission.
-
-## Search Visibility
-
-The public pages include branded titles, canonical URLs, social-card metadata,
-structured data, and a [sitemap](https://dlq.ca/parliament-streams/sitemap.xml).
-See [search visibility](docs/search-visibility.md) for Search Console setup,
-indexing checks, and further discovery work.
-
-## Rights And Reuse
-
-The repository code and original documentation are covered by the repository
-license. External stream URLs, official pages, schedule data, video content,
-marks, watermarks, screenshots, and YouTube metadata belong to their respective
-sources and may be governed by separate terms.
-
-Before using a source outside research or advocacy:
-
-1. Review its official page.
-2. Review its terms and attribution requirements.
-3. Prefer documented official embeds or APIs.
-4. Preserve visible attribution.
-5. Avoid implying endorsement.
-6. Seek written permission where the status is pending or ambiguous.
-
-See `docs/sources-and-provenance.md` and
-`docs/source-rights-and-permissions.md` for the current evidence.
-
-## Why This Exists
-
-Public parliamentary video is often available, but not always in predictable,
-machine-readable, app-friendly forms. This project documents what was found and
-where openness could improve: stable HLS or documented embeds, JSON schedules,
-event IDs, now/next signals, timezone data, chamber labels, captions/audio
-metadata, plain-language terms, browser compatibility, and clear off-air
-signals.
-
-
-### Country And First-Level Legislature Audit (2026-10-22)
-
-The [national research ledger](reports/discovery/2026-10-22-country-research.md)
-records an initial official-source discovery pass for all 71 maintained Tier 1
-and Tier 2 countries. This is not an exhaustive or playback-validated census.
-The [subnational ledger](reports/discovery/2026-10-22-subnational-research.md)
-tracks the separate, expanding inventory of first-level legislatures and
-regional deliberative councils, their targeted searches and unresolved leads.
-Special-status and overseas bodies require explicit scope review; a country
-with no listed rows has not been established to have no relevant bodies.
-
-The follow-up ledger now contains initial searches for 557 bodies across 35
-country audit groups, including special-status and associated territories.
-Primary scope sources were attempted for all 40 previously uninventoried
-countries; 36 still have no jurisdiction inventory. Access failures and
-preliminary scope leads are retained separately. These are research counts,
-not validated-stream counts.
-
-The [first expansion decisions](reports/discovery/2026-10-22-expansion-decisions.json)
-add eight official viewing links: Japan's two chamber services, Austria,
-Mauritius, Italy's lower house, Nagasaki committees, Córdoba's provincial
-Legislature and Santa Catarina TV Alesc. They add no direct HLS feeds or
-implemented XMLTV parsers. Iceland, Skåne and France's Senate remain tracked
-research candidates with specific access or source-condition follow-ups.
-
-Country-name searches in the catalogue and coverage map include documented
-subnational sources as well as national ones. For example, Canada finds Alberta,
-Ontario and Québec. Searches recognize both the current interface's localized
-country name and its English name; jurisdiction-level and source-type filters
-still apply. These country relationships are shared in `site/map-i18n.js`.
+The project also documents how public parliamentary video could become easier
+to find and use: stable protocols, clear terms, machine-readable schedules and
+accessible media. Read the [open-stream principles](docs/open-stream-principles.md).

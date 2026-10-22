@@ -5,6 +5,10 @@
 cross-record invariants, dates, and the generated direct-file site snapshot stay
 coherent.
 
+Apply the [catalogue scope rule](catalogue-scope.md) before promoting a new
+institution: legislative authority matters; a council's public meetings alone
+do not make it eligible.
+
 ## Which File Should I Edit?
 
 | Task | Start here | Notes |
@@ -231,7 +235,8 @@ The Node-based browser tools use the official Playwright and Axe integrations.
 catalogue UI; `tools/deep_validate_browser.mjs` is an explicit live research
 tool that inspects third-party player traffic. Neither tool builds or runs the
 deployed static site. The deep validator requires explicit input and output
-report paths; see the README for the full invocation.
+report paths; see [development and validation](development.md) for the full
+invocation.
 
 ## Scheduled Candidate Discovery
 

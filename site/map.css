@@ -41,6 +41,9 @@
 .map-region:hover, .map-region:focus { fill: #2b9877; outline: none; }
 .map-region.is-parent-selected { fill: var(--red); }
 .map-region.is-selected { fill: var(--red); stroke: #fff; stroke-width: .8; }
+.map-region-marker { fill: #218064; stroke: #fff; stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+.map-region-marker:hover, .map-region-marker:focus { fill: #2b9877; stroke: var(--ink); outline: none; }
+.map-region-marker.is-selected, .map-region-marker.is-parent-selected { fill: var(--red); }
 .map-zoom { display: grid; position: absolute; bottom: 3.5rem; left: 0; border: 1px solid var(--control-border); background: var(--white); }
 .map-zoom button { display: grid; width: 34px; height: 34px; place-items: center; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
 .map-zoom button + button { border-top: 1px solid var(--faint); }

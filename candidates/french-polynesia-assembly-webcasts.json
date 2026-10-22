@@ -1,0 +1,78 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Assembly adopts territorial laws (lois du pays) under its organic statute; it is not an ordinary municipal or planning council. Evidence: https://www.assemblee.pf/travaux/downloadTexte/1310949",
+    "Autonomous overseas collectivity of France.",
+    "Chromium returned HTTP 200 and rendered the institutional Séance en direct section with two YouTube embeds and dated October 2026 plenary agendas. The page cross-links the Assembly's own YouTube account. Plenary coverage is documented; committee video coverage and active live playback remain unverified.",
+    "Official-page link readiness only; active media and independent reuse remain unverified.",
+    "Promoted to the canonical catalogue as an official viewing link on 2026-10-22."
+  ],
+  "channel": {
+    "id": "french-polynesia-assembly-webcasts",
+    "name": "French Polynesia Assembly Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "French Polynesia",
+    "legislature": "Assemblée de la Polynésie française",
+    "external_ids": {
+      "wikidata_qid": "Q2729213",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2729213",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Institution name and jurisdiction matched against Wikidata entity data and official parliamentary pages; identity is not evidence of media reuse permission."
+      }
+    ],
+    "language": "French / Tahitian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.assemblee.pf/travaux/seance",
+    "provenance_note": "Autonomous overseas collectivity of France. Chromium returned HTTP 200 and rendered the institutional Séance en direct section with two YouTube embeds and dated October 2026 plenary agendas. The page cross-links the Assembly's own YouTube account. Plenary coverage is documented; committee video coverage and active live playback remain unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Caption, sign-language and audio-description availability remains unverified for individual events; no absence is inferred from the portal."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.assemblee.pf/agenda",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The official page reserves Assembly copyright and provides its own provider viewing links. No broader media-reuse permission was established; retain link-out viewing only.",
+      "evidence": [
+        "https://www.assemblee.pf/travaux/seance"
+      ],
+      "recommendation": "Open the official service for viewing. Do not extract media or enable independent playback until stable media and applicable reuse conditions are established."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-22T19:29:39.076616Z",
+        "report_path": "reports/health/2026-10-22-territorial-webcasts.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Chromium returned HTTP 200 and rendered the institutional Séance en direct section with two YouTube embeds and dated October 2026 plenary agendas. The page cross-links the Assembly's own YouTube account. Plenary coverage is documented; committee video coverage and active live playback remain unverified. Official-page check only; active media was not validated."
+      }
+    ]
+  }
+}

@@ -22,6 +22,11 @@ contains:
 adds cross-record rules that JSON Schema cannot express, such as source-type and
 technical-status coherence.
 
+Eligibility follows [catalogue scope](catalogue-scope.md): substantive
+legislative authority, not the presence of a council webcast. The wider
+country/territory ledgers under `reports/discovery/` retain excluded and
+unresolved bodies; their discovery totals are not public-catalogue totals.
+
 Discovery data is maintained separately from published channels:
 
 - `data/discovery/tier1.json` and `tier2.json` drive the monthly democracy-tier
@@ -41,6 +46,11 @@ distribution; D3 is bundled from the installed modules so transitive dependency
 updates affect the browser asset. CI and every Pages deployment run this step.
 The browser loads same-origin libraries using generated content hashes for
 cache keys. See `site/assets/vendor/README.md` for the maintenance workflow.
+
+Pages assembly also runs `tools/version_site_assets.mjs` to fingerprint HTML
+references to site JavaScript and CSS. Dynamically fetched map geometry has
+explicit URL versions. [Public-site behaviour](public-site.md) covers caching,
+map/search relationships, deployment and localization.
 
 `site/catalogue-data.js` is generated from `data/channels.json` so `site/index.html`
 can be opened directly from disk. Its retained schedule suffix is a dated local
@@ -161,6 +171,11 @@ owns HTTP, retries, timestamps, errors, and output shape.
 Use `scraper_status: implemented` only when the parser is registered and tested.
 Use `scraper: planned` with `scraper_status: planned` for useful official
 schedule surfaces that still need implementation.
+
+The programme guide renders collected events. A separate compact disclosure
+links to planned human-readable calendar/event sources without adding fictional
+guide rows. [Schedules and IPTV](schedules-and-iptv.md) documents collection,
+staleness, XMLTV exclusions and playlist eligibility.
 
 ## Validation Stack
 

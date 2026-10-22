@@ -63,3 +63,56 @@ All original 40 remaining countries received a primary scope-source access
 attempt; 36 still lack individual jurisdiction inventories. Overseas, disputed
 and other special-status coverage remains incomplete. These research additions
 have not been promoted to catalogue entries or validated HLS streams.
+
+
+## Wider run and territorial follow-up
+
+The latest ledger supersedes the intermediate progress counts above: **1,121
+initial jurisdiction searches in 58 country audit groups**, plus **13 country
+scope dispositions** where the reviewed evidence did not establish a core
+regional legislature. Special-status completeness and source validation remain
+open. All 71 national audit groups have now received a national discovery pass
+and an initial regional inventory or recorded scope disposition.
+
+The discovery net included councils that are outside the public catalogue.
+The agreed [scope rule](../../docs/catalogue-scope.md) is substantive legislative
+authority, not deliberation, an elected membership or the name “assembly”.
+Per-row eligibility assessments now separate excluded planning/service/local
+bodies, core legislature candidates and authorities needing individual review.
+These 1,121 rows are not 1,121 eligible parliaments or usable streams.
+
+Five clear parliamentary services were added as official viewing links:
+Jersey States Assembly, Tynwald (audio and committee video), French Polynesia
+Assembly, New Caledonia Congress and Sint Maarten Parliament. The catalogue
+now contains **117 sources: 50 national, 61 subnational/territorial, six
+supranational**. See [decisions](2026-10-22-territorial-decisions.json) and
+[official-page evidence](../health/2026-10-22-territorial-webcasts.json).
+Seven further parliamentary services retain explicit readiness gaps; no new
+live-media, direct HLS or XMLTV-parser validation is implied.
+
+All 42 published subnational/territorial jurisdictions now have map geometry.
+The earlier Nagasaki, Córdoba (Argentina), Santa Catarina (Brazil) gaps are
+closed. Tiny Jersey, Isle of Man and Sint Maarten outlines supplement the
+coarse overview; Mauritius also needed a missing national outline. Territorial
+search associations are separate from map parents, so Crown Dependencies are
+not presented as UK provinces and Sint Maarten is not a Dutch province.
+Official planned calendar/event links are available in a compact disclosure on
+the schedule page, separately from programme-guide rows. Existing localized
+strings and runtime territory names cover the interface; source names and
+research notes remain in their recorded languages.
+
+IPTV export verification with the retained schedule produced the same four
+strict stable channels and 38 validated HLS channels; the five link-only
+additions are excluded. The retained snapshot produces 70 XMLTV programmes;
+that is a local compatibility check, not fresh guide-quality evidence.
+
+
+Final checks: `make verify` passed (109 Python tests, one skipped, 91% coverage;
+HTML, desktop/mobile Playwright and Axe). Additional local Chromium and WebKit
+checks passed at 1280px and 320px for all five source deep links, flags, map
+selections and official calendar outlinks, with no page errors or horizontal
+overflow. The retained programme snapshot contains seven guide rows; 33 is the
+separate catalogue-record count with implemented schedule metadata.
+Small-island location dots make otherwise tiny outlines visible while retaining
+real boundaries and keyboard selection. Browser plugin was unavailable; the
+project's regular Playwright runtime was used.

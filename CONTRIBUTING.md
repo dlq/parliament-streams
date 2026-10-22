@@ -1,7 +1,47 @@
 # Contributing
 
-This project is early and curated. Small, evidence-backed changes are easiest to
-review.
+Thanks for helping make parliamentary proceedings easier to find and use.
+Contributions of any size are welcome: an official link, local knowledge, a
+translation correction, a usability observation, a documentation improvement
+or code. A plain-language issue is a useful contribution on its own.
+
+## Find A Way To Help
+
+| Contribution | Useful details to share |
+| --- | --- |
+| Find an official source | Legislature name, country/region and its official viewing page. Committee feeds and archives are useful too. |
+| Check an existing source | Which source you tried, what worked or failed, and the date, country and browser/device if known. A failed check outside sitting hours may simply mean off-air. |
+| Review translations | Language, page, current wording and your suggested wording. See the [translation guide](docs/translating.md). |
+| Try an IPTV app | Which playlist/guide URL and app you used, what played or failed, and any channel/guide mismatch. VLC setup feedback is welcome. |
+| Review accessibility | Keyboard, screen-reader, zoom, contrast, captions, sign-language or audio-description observations; include the page/source and device if useful. |
+| Check schedules | Official calendar/event link, programme title, date/time/timezone, chamber or committee, cancellation or other correction. |
+| Bring local or institutional knowledge | Official names, legislative powers, territorial relationships, renamed services and authoritative links. |
+| Improve documentation | A typo, unclear explanation, broken link, missing example or setup step that did not work. GitHub's file editor works for small edits. |
+| Improve the interface | A search/filter problem, mobile layout issue, confusing wording or a concrete suggestion that keeps the catalogue simple and compact. |
+| Improve the code or data tooling | Reproducible bugs, parser fixes, validation, performance, tests, dependency maintenance or developer experience. |
+| Improve source evidence | Official terms, attribution requirements, caption/language information, stable identifiers or supported playback routes. |
+| Help people discover the project | Suggest a relevant civic, research, accessibility or open-data community, or link to the catalogue from a useful resource. |
+| Offer another idea | Describe what would help and who would benefit. Early questions and observations are welcome. |
+
+Start with the [issue chooser](https://github.com/dlq/parliament-streams/issues/new/choose),
+[translation form](https://github.com/dlq/parliament-streams/issues/new?template=translation_review.yml)
+or [open issues](https://github.com/dlq/parliament-streams/issues). For a small
+first change, one source, one sentence or one translated phrase is enough.
+Describe observations as specifically as you can; technical diagnostics are
+optional when reporting a problem. Please keep feedback considerate and focused
+on the work.
+
+## Making A Pull Request
+
+Fork the repository, make a focused change and explain what it improves.
+Small documentation and translation edits can use GitHub's web editor. The
+development setup below is for changes that need local validation.
+
+For a larger feature, a new language or a change to catalogue scope, an issue
+is a useful place to discuss the approach. Follow the evidence requirements
+below for published source records; a suggestion can start with just an
+official link. Describe how you checked a change and any uncertainty that
+remains. UI changes benefit from a screenshot and desktop/mobile checks.
 
 Use the GitHub issue templates for source corrections, endpoint validation
 problems, and schedule metadata issues. If the report is sensitive, follow
@@ -14,6 +54,7 @@ site is a static reader for it.
 
 Treat these as separate review questions:
 
+- Does the institution meet the [legislative-authority scope rule](docs/catalogue-scope.md)?
 - Is this the official legislature, broadcaster, player, or platform?
 - Is the source technically stable and reproducible?
 - Is there schedule, accessibility, and identity evidence?
@@ -48,7 +89,10 @@ official page, official API, official embed, or official streaming vendor path.
 
 Use the typed catalogue manager for normal maintenance. New sources should be
 created under `candidates/` and promoted only after their technical, identity,
-accessibility, schedule, and rights evidence is complete:
+accessibility, schedule, rights and institutional-authority evidence supports
+the proposed presentation. Unknown accessibility or unresolved media-reuse
+permission can remain explicitly recorded on an official-page link-out;
+promotion does not make those uncertainties disappear:
 
 ```sh
 uv run parliament-streams candidate-new example-assembly \
