@@ -16,6 +16,7 @@ on:
       - "package.json"
       - "package-lock.json"
       - "tools/build_vendor_assets.mjs"
+      - "tools/version_site_assets.mjs"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -70,6 +71,7 @@ jobs:
           cp data/channels.json _site/data/channels.json
           cp data/fallbacks.json _site/data/fallbacks.json
           cp data/supranational.json _site/data/supranational.json
+          node tools/version_site_assets.mjs _site
       - name: Collect current schedules
         run: >-
           uv run --locked parliament-streams schedules-collect

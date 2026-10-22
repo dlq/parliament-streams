@@ -1986,3 +1986,31 @@ images now preserve the entire design with object-fit: contain. HTML,
 Playwright/Axe checks passed; targeted 1280px/320px checks confirmed coverage
 visibility, flag decoding, working searches and no horizontal overflow or page
 errors. Screenshots remain in /tmp.
+
+### Safari cached-asset recovery (2026-10-22)
+
+A production Safari screenshot showed blank coverage values and an empty list
+with the generic missing-data message. Reproduced the exact state by serving
+cc56f25's app.js against f9799f9's HTML: the cached script still translated the
+removed catalogue-overview-title node, throwing before catalogue loading. The
+script and stylesheet cache URLs had not changed with the preceding edit.
+
+Restored the legacy translation target as a hidden compatibility node and
+updated source asset versions. Pages assembly now runs
+`tools/version_site_assets.mjs`, deriving script/stylesheet URL versions from
+the deployed file contents, including generated vendor manifests. This avoids
+manual cache-version omissions on future deployments. The four-metric coverage
+presentation remains as deployed; the speculative compact-row edit was set
+aside after the Safari screenshot clarified the problem.
+
+Fixed mobile Schedule Sources padding: the first item in the second metric row
+now aligns with the first item above it. The earlier sibling rule had retained
+padding on that edge despite removing the dividing border.
+
+Validation: the old-script reproduction now loads 112 sources and populated
+metrics. Assembled-site checks passed in Playwright WebKit and Chromium at
+1280px, 480px and 320px, including search, metrics, alignment, overflow and page
+errors. Verified generated URL hashes against every referenced JS/CSS file and
+checked that a second versioning pass is unchanged. HTML/Playwright/Axe checks
+also passed. This engine coverage does not include Safari extensions or a
+user's existing browser cache profile.
