@@ -23,6 +23,10 @@ This is not a rebroadcast service and not an endorsed source directory.
 
 Done:
 
+- Branded/localized titles, custom-domain canonicals, Open Graph/Twitter cards,
+  conservative structured data, and a three-page sitemap are implemented.
+  [Search visibility follow-up](docs/search-visibility.md) covers property
+  verification, sitemap submission, useful source pages, and later outreach.
 - `data/channels.json` is the canonical catalogue.
 - The catalogue records HLS, YouTube, official-page, and legacy DASH research
   entries with jurisdiction, language, attribution, availability, EPG sources,

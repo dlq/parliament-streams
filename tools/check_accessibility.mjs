@@ -106,6 +106,31 @@ async function assertNoAxeViolations(page, context) {
   );
 }
 
+async function assertSearchMetadata(page, path = '') {
+  const canonical = `https://dlq.ca/parliament-streams/${path}`;
+  assert.match(await page.title(), /Parliament Streams/);
+  assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), canonical);
+  assert.equal(await page.locator('meta[property="og:url"]').getAttribute('content'), canonical);
+  assert.equal(await page.locator('meta[property="og:site_name"]').getAttribute('content'), 'Parliament Streams');
+  for (const selector of ['meta[property="og:title"]', 'meta[name="twitter:title"]']) {
+    assert.equal(await page.locator(selector).getAttribute('content'), await page.title());
+  }
+  const description = await page.locator('meta[name="description"]').getAttribute('content');
+  for (const selector of ['meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+    assert.equal(await page.locator(selector).getAttribute('content'), description);
+  }
+  for (const selector of ['meta[property="og:image"]', 'meta[name="twitter:image"]']) {
+    assert.equal(await page.locator(selector).getAttribute('content'), 'https://dlq.ca/parliament-streams/assets/brand/parliament-streams-social.png');
+  }
+  const graph = JSON.parse(await page.locator('#page-structured-data').textContent());
+  assert.equal(graph['@context'], 'https://schema.org');
+  const pageNode = graph['@graph'].find((node) => node['@type'] !== 'WebSite');
+  assert.equal(pageNode.url, canonical);
+  assert.equal(pageNode.name, await page.title());
+  assert.equal(pageNode.description, description);
+  assert.equal(pageNode.inLanguage, await page.locator('html').getAttribute('lang'));
+}
+
 async function assertIptvDisclosure(page) {
   const disclosure = page.locator('.iptv-disclosure');
   assert.equal(await disclosure.getAttribute('open'), null);
@@ -310,6 +335,7 @@ try {
   assert.equal(await page.locator("#playback-filter").count(), 0);
   assert.equal(await page.locator("#rights-filter").count(), 0);
   assert(canonicalFallbacks.fallbacks.length >= 6);
+  await assertSearchMetadata(page);
   await assertIptvDisclosure(page);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
@@ -325,6 +351,7 @@ try {
   for (const { locale } of localeCoverage) {
     await page.locator("#locale-select").selectOption(locale);
     assert.equal(await page.locator("html").getAttribute("lang"), locale);
+    await assertSearchMetadata(page);
     assert((await page.locator("#catalogue-title").innerText()).trim());
     assert((await page.locator("#level-filter option").first().innerText()).trim());
     assert.equal(await page.locator("#detail-panel").isVisible(), false);
@@ -582,11 +609,13 @@ try {
   await schedulePage.locator("#schedule-status").selectOption("playable");
   assert.equal(await schedulePage.locator("#schedule-list tr").count(), 1);
   assert.match(await schedulePage.locator(".schedule-watch").getAttribute("href"), /play=1/);
+  await assertSearchMetadata(schedulePage, "schedule.html");
   await assertIptvDisclosure(schedulePage);
   await assertNoAxeViolations(schedulePage, "Desktop programme guide");
   await schedulePage.goto(`${baseUrl}schedule.html?lang=fr`);
   await schedulePage.waitForSelector("#schedule-list tr");
   assert.equal(await schedulePage.locator("#schedule-title").innerText(), "Horaire");
+  await assertSearchMetadata(schedulePage, "schedule.html");
   assert.equal(await schedulePage.locator("#schedule-now-heading").textContent(), "Maintenant");
   assert.deepEqual(
     await schedulePage.evaluate(() => window.ParliamentStreamsI18n.locales.flatMap(([code]) => window.ParliamentStreamsScheduleI18n.coverage(code).map((key) => `${code}:${key}`))),
@@ -613,6 +642,7 @@ try {
   const mapPage = await context.newPage();
   await mapPage.goto(`${baseUrl}map.html?lang=en`);
   await mapPage.waitForSelector(".map-country.is-documented");
+  await assertSearchMetadata(mapPage, "map.html");
   const d3Runtime = await mapPage.evaluate(() => ({
     version: window.d3.version,
     vendor: window.PARLIAMENT_STREAMS_VENDOR.d3.version,

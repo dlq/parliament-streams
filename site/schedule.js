@@ -147,8 +147,7 @@ function renderFilters() {
 
 function applyTranslations() {
   document.documentElement.lang = state.locale;
-  document.title = `${st("title")} · Parliament Streams`;
-  document.querySelector('meta[name="description"]').setAttribute("content", st("lede"));
+  window.ParliamentStreamsSeo.update(`${st("title")} · Parliament Streams`, st("lede"), state.locale);
   setText("schedule-skip-link", st("skip"));
   document.querySelector("#schedule-brand-home").setAttribute("aria-label", t("brandHome"));
   document.querySelector("#schedule-primary-navigation").setAttribute("aria-label", t("primaryNavigation"));

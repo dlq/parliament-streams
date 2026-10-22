@@ -720,6 +720,13 @@ order. A `verified_official_video_surface` label means an official video page
 was confirmed; it does not claim a stable direct stream, embeddability, or
 redistribution permission.
 
+## Search Visibility
+
+The public pages include branded titles, canonical URLs, social-card metadata,
+structured data, and a [sitemap](https://dlq.ca/parliament-streams/sitemap.xml).
+See [search visibility](docs/search-visibility.md) for Search Console setup,
+indexing checks, and further discovery work.
+
 ## Rights And Reuse
 
 The repository code and original documentation are covered by the repository

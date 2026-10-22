@@ -21,6 +21,9 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Keep Parliament Streams in rendered page titles, correct canonical/social URLs
+  to the custom domain, and add page-specific Open Graph/Twitter cards, truthful
+  website/page structured data, and a sitemap for the three public pages.
 - Simplify desktop/mobile browsing with a shorter introduction, a full-width
   compact list, direct official-site watch links, and expandable source and use
   details. Remove inactive players for link-only sources and add explicit detail

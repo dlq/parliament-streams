@@ -341,8 +341,10 @@ function setOptionLabel(element, key, values) {
 }
 function applyStaticTranslations() {
   document.documentElement.lang = state.locale;
-  document.title = t("title");
-  document.querySelector('meta[name="description"]').setAttribute("content", t("lede"));
+  window.ParliamentStreamsSeo.update(`Parliament Streams · ${t("title")}`,
+    state.locale === "en"
+      ? "Explore official parliamentary video worldwide. Watch supported streams, browse schedules, and use HLS playlists and a partial XMLTV programme guide."
+      : t("lede"), state.locale);
   document.querySelector("#skip-link").textContent = t("skipCatalogue");
   document.querySelector("#brand-home").setAttribute("aria-label", t("brandHome"));
   document.querySelector("#primary-navigation").setAttribute("aria-label", t("primaryNavigation"));
@@ -997,7 +999,7 @@ async function startPlayback(channel) {
   if (channel.embed?.provider === "youtube") {
     if (window.location.protocol === "file:") {
       frame.innerHTML = `<div class="player-placeholder youtube-file-notice" lang="${state.locale}">
-        <p>${t("playbackError")} <a href="https://dlq.github.io/parliament-streams/" target="_blank" rel="noreferrer">${t("official")} ↗</a></p>
+        <p>${t("playbackError")} <a href="https://dlq.ca/parliament-streams/" target="_blank" rel="noreferrer">${t("official")} ↗</a></p>
       </div>`;
       return;
     }

@@ -89,8 +89,7 @@ function relationshipLabel(organization, plural = false) {
 
 function applyStaticTranslations() {
   document.documentElement.lang = state.locale;
-  document.title = `${mt("title")} · Parliament Streams`;
-  document.querySelector('meta[name="description"]').setAttribute("content", mt("lede"));
+  window.ParliamentStreamsSeo.update(`${mt("title")} · Parliament Streams`, mt("lede"), state.locale);
   document.querySelector("#map-skip-link").textContent = mt("skip");
   document.querySelector("#map-brand-home").setAttribute("aria-label", t("brandHome"));
   document.querySelector("#map-primary-navigation").setAttribute("aria-label", t("primaryNavigation"));
