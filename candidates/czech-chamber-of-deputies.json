@@ -1,13 +1,16 @@
 {
   "candidate_version": 1,
-  "status": "researching",
+  "status": "promoted",
   "created_on": "2026-10-01",
-  "updated_on": "2026-10-01",
+  "updated_on": "2026-10-22",
   "decision_notes": [
     "Candidate scaffold created from the October 1 monthly discovery evidence.",
     "Official Stream 1 page documents direct external-player and third-party iframe use; institutional identity and weekly schedule surface verified on 2026-10-01.",
     "The discovery browser validated the master and HD rendition earlier on October 1. Later checks reached the master with HTTP 200 and Access-Control-Allow-Origin: *, but all four advertised media/audio renditions (MQ, LQ, HD, audio-only) returned HTTP 404.",
-    "Keep researching and research-only until an active-sitting check verifies playable media; live accessibility remains unknown. The dated follow-up report records this limitation."
+    "Keep researching and research-only until an active-sitting check verifies playable media; live accessibility remains unknown. The dated follow-up report records this limitation.",
+    "2026-10-22: active-sitting master, child playlist, bounded MPEG-TS sample, advancing live sequence, and HLS.js browser decode passed. The official external-player/embed instructions remain published; promote under that narrow playback scope. Reports: reports/health/2026-10-22-hls-media.json, 2026-10-22-czech-live-progression.json, and 2026-10-22-czech-hls-browser-decode.json.",
+    "Official external-player route, advancing live playlist, MPEG-TS sample, and browser decode verified on 2026-10-22.",
+    "Promoted to the canonical catalogue on 2026-10-22."
   ],
   "channel": {
     "id": "czech-chamber-of-deputies",
@@ -41,10 +44,10 @@
     "source_type": "direct_hls",
     "source_kind": "official_vendor_hls",
     "playback_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
-    "playback_policy": "research_only",
+    "playback_policy": "native_playback",
     "official_url": "https://www.psp.cz/stream/1",
-    "provenance_note": "The official Stream 1 page names Chamber sittings, embeds the CRA player, and explicitly publishes this HTTPS master for use in external applications and online players. The October 1 discovery browser loaded the master and HD rendition. A later same-day check reached the master with CORS enabled but all four advertised media/audio renditions returned HTTP 404; playback still needs an active-sitting recheck.",
-    "technical_status": "needs_review",
+    "provenance_note": "The official Stream 1 page explicitly publishes this permanent CRA HLS master for external players and third-party embedding. On 2026-10-22 TLS-verified master, media playlist and MPEG-TS sample requests passed with CORS enabled; the live media sequence advanced and a fresh HLS.js browser player decoded 720x405 video without player errors. Availability remains sitting-only, not always-on.",
+    "technical_status": "validated",
     "stability_risk": "medium",
     "availability": "sitting_only",
     "accessibility": {

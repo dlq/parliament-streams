@@ -1,7 +1,7 @@
 {
   "schema_version": 9,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-10-01",
+  "generated_on": "2026-10-22",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -70,6 +70,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:36Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -79,13 +86,6 @@
         {
           "checked_at": "2026-08-14T21:28:39Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:44Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -160,6 +160,13 @@
         "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the House confirms permission and stability."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -238,6 +245,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -312,6 +326,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-10-01T17:58:36Z",
           "report_path": "reports/health/2026-10-01-new-zealand-official-link.json",
           "method": "static_http",
@@ -321,13 +342,6 @@
         {
           "checked_at": "2026-08-15T18:26:36Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-08-14T21:28:40Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -399,6 +413,13 @@
         "recommendation": "Link to Stortinget Nett-TV. Do not enable third-party playback of the browser-discovered HLS endpoint unless Stortinget supplies the dedicated publishing point and retransmission agreement."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
         {
           "checked_at": "2026-08-15T18:26:38Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -489,6 +510,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:39Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -498,13 +526,6 @@
         {
           "checked_at": "2026-08-14T21:28:42Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:46Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -584,6 +605,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:26:41Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -593,13 +621,6 @@
         {
           "checked_at": "2026-08-14T21:28:44Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "Official page/link reachable."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:48Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "Official page/link reachable."
@@ -677,6 +698,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:42Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -686,13 +714,6 @@
         {
           "checked_at": "2026-08-14T21:28:45Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:49Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -765,6 +786,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:43Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -774,13 +802,6 @@
         {
           "checked_at": "2026-08-14T21:28:46Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:50Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -854,6 +875,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:22Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -863,13 +891,6 @@
         {
           "checked_at": "2026-08-15T18:26:44Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-08-14T21:28:47Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -949,6 +970,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
           "checked_at": "2026-08-17T10:32:23Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -958,13 +986,6 @@
         {
           "checked_at": "2026-08-15T18:27:48Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:26:46Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -1044,6 +1065,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:31Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
           "checked_at": "2026-08-17T10:32:25Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -1053,13 +1081,6 @@
         {
           "checked_at": "2026-08-15T18:27:49Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:26:47Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -1139,6 +1160,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:32Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
           "checked_at": "2026-08-17T10:32:26Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -1148,13 +1176,6 @@
         {
           "checked_at": "2026-08-15T18:27:51Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:26:49Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -1234,6 +1255,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:32Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
           "checked_at": "2026-08-17T10:32:27Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -1243,13 +1271,6 @@
         {
           "checked_at": "2026-08-15T18:27:52Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:26:51Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -1329,6 +1350,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:32Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "warning",
+          "note": "HLS master detected, but sample variant check failed."
+        },
+        {
           "checked_at": "2026-08-17T10:32:28Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -1338,13 +1366,6 @@
         {
           "checked_at": "2026-08-15T18:27:52Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:26:52Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -1430,6 +1451,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:32Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:29Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -1439,13 +1467,6 @@
         {
           "checked_at": "2026-08-15T18:27:54Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "Response did not start with #EXTM3U."
-        },
-        {
-          "checked_at": "2026-08-15T18:26:54Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "Response did not start with #EXTM3U."
@@ -1516,6 +1537,13 @@
         "recommendation": "Link out or keep as pending until terms or permission are documented."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:33Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
         {
           "checked_at": "2026-08-15T18:26:55Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -1608,6 +1636,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:33Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:56Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -1689,6 +1724,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:33Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:57Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -1698,13 +1740,6 @@
         {
           "checked_at": "2026-08-14T21:29:00Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:28:59Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -1777,6 +1812,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:26:59Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -1786,13 +1828,6 @@
         {
           "checked_at": "2026-08-14T21:29:01Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:00Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -1863,6 +1898,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [Errno 51] Network is unreachable>"
+        },
+        {
           "checked_at": "2026-08-17T10:32:29Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -1872,13 +1914,6 @@
         {
           "checked_at": "2026-08-15T18:27:54Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "error",
-          "note": "<urlopen error [Errno 51] Network is unreachable>"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:01Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "error",
           "note": "<urlopen error [Errno 51] Network is unreachable>"
@@ -1950,6 +1985,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:12Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -1999,9 +2041,9 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
       "official_url": "https://www.riigikogu.ee/live/2/en",
-      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player.",
-      "technical_status": "validated",
-      "stability_risk": "medium",
+      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player. Rechecked 2026-10-22: direct and repeated follow-up checks reached a master intermittently but its media rendition returned HTTP 404; retain for research pending successful media validation during an active broadcast.",
+      "technical_status": "needs_review",
+      "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
         "captions": "unknown",
@@ -2030,6 +2072,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 500"
+        },
+        {
           "checked_at": "2026-08-15T18:27:13Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2044,7 +2093,7 @@
           "note": "HLS master detected, but sample variant check failed."
         }
       ],
-      "playback_policy": "native_playback"
+      "playback_policy": "research_only"
     },
     {
       "id": "italy-senate",
@@ -2112,6 +2161,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:15Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2121,13 +2177,6 @@
         {
           "checked_at": "2026-08-14T21:29:18Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:02Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2200,6 +2249,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:16Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2209,13 +2265,6 @@
         {
           "checked_at": "2026-08-14T21:29:19Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:03Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2288,6 +2337,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:34Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:17Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2297,13 +2353,6 @@
         {
           "checked_at": "2026-08-14T21:29:19Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:04Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2375,6 +2424,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:35Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-10-01T17:58:36Z",
           "report_path": "reports/health/2026-10-01-thailand-recovery.json",
           "method": "static_http",
@@ -2387,13 +2443,6 @@
           "method": "static_http",
           "status": "error",
           "note": "HTTP 404"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:17Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
         }
       ],
       "playback_policy": "native_playback"
@@ -2468,6 +2517,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:35Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:20Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2477,13 +2533,6 @@
         {
           "checked_at": "2026-08-14T21:29:23Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:07Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2556,6 +2605,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:35Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "DASH MPD detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:46Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -2565,13 +2621,6 @@
         {
           "checked_at": "2026-08-15T18:28:07Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "DASH MPD detected."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:21Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "DASH MPD detected."
@@ -2643,6 +2692,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:35Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:22Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2652,13 +2708,6 @@
         {
           "checked_at": "2026-08-14T21:29:25Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:09Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2730,6 +2779,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:35Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:23Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2739,13 +2795,6 @@
         {
           "checked_at": "2026-08-14T21:29:26Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:10Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2817,6 +2866,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:36Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:24Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2826,13 +2882,6 @@
         {
           "checked_at": "2026-08-14T21:29:26Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:11Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2904,6 +2953,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:36Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:25Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -2913,13 +2969,6 @@
         {
           "checked_at": "2026-08-14T21:29:27Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:12Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -2991,6 +3040,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:36Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:26Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3000,13 +3056,6 @@
         {
           "checked_at": "2026-08-14T21:29:28Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:14Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3078,6 +3127,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:36Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:27Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3087,13 +3143,6 @@
         {
           "checked_at": "2026-08-14T21:29:29Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:14Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3165,6 +3214,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:36Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:28Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3174,13 +3230,6 @@
         {
           "checked_at": "2026-08-14T21:29:30Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:15Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3252,6 +3301,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:37Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:29Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3261,13 +3317,6 @@
         {
           "checked_at": "2026-08-14T21:29:31Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:16Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3339,6 +3388,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:37Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:30Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3348,13 +3404,6 @@
         {
           "checked_at": "2026-08-14T21:29:32Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:17Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3426,6 +3475,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:37Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:31Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3435,13 +3491,6 @@
         {
           "checked_at": "2026-08-14T21:29:33Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:18Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3513,6 +3562,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:37Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:32Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3522,13 +3578,6 @@
         {
           "checked_at": "2026-08-14T21:29:34Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:19Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3600,6 +3649,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:37Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:33Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3609,13 +3665,6 @@
         {
           "checked_at": "2026-08-14T21:29:35Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:19Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3687,6 +3736,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:37Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:34Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3696,13 +3752,6 @@
         {
           "checked_at": "2026-08-14T21:29:36Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:20Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3774,6 +3823,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:35Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3783,13 +3839,6 @@
         {
           "checked_at": "2026-08-14T21:29:37Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:21Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3859,6 +3908,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-15T18:27:36Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -3868,13 +3924,6 @@
         {
           "checked_at": "2026-08-14T21:29:38Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:22Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -3944,6 +3993,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 404"
+        },
+        {
           "checked_at": "2026-08-17T10:32:47Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -3953,13 +4009,6 @@
         {
           "checked_at": "2026-08-15T18:28:08Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "error",
-          "note": "HTTP 404"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:36Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "error",
           "note": "HTTP 404"
@@ -4029,6 +4078,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:47Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -4038,13 +4094,6 @@
         {
           "checked_at": "2026-08-15T18:27:36Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:38Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -4114,6 +4163,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:49Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -4123,13 +4179,6 @@
         {
           "checked_at": "2026-08-15T18:27:37Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:38Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -4199,6 +4248,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:51Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -4211,13 +4267,6 @@
           "method": "static_http",
           "status": "warning",
           "note": "Response did not start with #EXTM3U."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:38Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
         }
       ],
       "playback_policy": "native_playback"
@@ -4284,6 +4333,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-17T10:32:53Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -4293,13 +4349,6 @@
         {
           "checked_at": "2026-08-15T18:27:37Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:38Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
@@ -4364,6 +4413,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        },
+        {
           "checked_at": "2026-08-15T18:27:38Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -4376,13 +4432,6 @@
           "method": "static_http",
           "status": "ok",
           "note": "HLS manifest detected."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:23Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "Official page/link reachable."
         }
       ],
       "playback_policy": "research_only"
@@ -4466,6 +4515,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:27:38Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -4475,13 +4531,6 @@
         {
           "checked_at": "2026-08-14T21:29:39Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "Official page/link reachable."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:23Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "Official page/link reachable."
@@ -4568,6 +4617,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:38Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:27:38Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -4577,13 +4633,6 @@
         {
           "checked_at": "2026-08-14T21:29:39Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "Official page/link reachable."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:23Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "Official page/link reachable."
@@ -4647,6 +4696,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:27:39Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -4656,13 +4712,6 @@
         {
           "checked_at": "2026-08-14T21:29:39Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "Official page/link reachable."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:24Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "Official page/link reachable."
@@ -4734,6 +4783,13 @@
         "recommendation": "Use an official Bundestag embed or link out. Do not enable third-party playback of this raw HLS endpoint unless the Bundestag supplies or approves the documented live-signal route."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
         {
           "checked_at": "2026-08-15T18:27:40Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -4830,6 +4886,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:27:41Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -4839,13 +4902,6 @@
         {
           "checked_at": "2026-08-14T21:29:42Z",
           "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "Official page/link reachable."
-        },
-        {
-          "checked_at": "2026-07-29T15:29:25Z",
-          "report_path": "reports/health/2026-07-29-catalogue-health.json",
           "method": "static_http",
           "status": "ok",
           "note": "Official page/link reachable."
@@ -4917,6 +4973,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1127)>"
+        },
+        {
           "checked_at": "2026-08-17T10:32:55Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -4926,13 +4989,6 @@
         {
           "checked_at": "2026-08-15T18:28:08Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "error",
-          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:42Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "error",
           "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
@@ -5004,6 +5060,13 @@
         "recommendation": "Use official links/embeds and preserve required EU/EP attribution; do not treat dynamic player manifests as stable channels until documented."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-15T18:27:43Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -5085,6 +5148,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:27:43Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -5159,6 +5229,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-15T18:27:44Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
@@ -5232,6 +5309,13 @@
         "recommendation": "Link to official UN Web TV event pages or use documented event embed links where supplied by UN Web TV. Do not relay, download, redistribute, or treat UN video/audio footage as reusable without UN authorization."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-15T18:27:45Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -5308,6 +5392,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
           "checked_at": "2026-08-17T10:32:57Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
@@ -5317,13 +5408,6 @@
         {
           "checked_at": "2026-08-15T18:28:09Z",
           "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "error",
-          "note": "HTTP 403"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:45Z",
-          "report_path": "reports/health/2026-08-15-catalogue-health.json",
           "method": "static_http",
           "status": "error",
           "note": "HTTP 403"
@@ -5398,6 +5482,13 @@
         "recommendation": "Link to Scottish Parliament TV and preserve attribution. Do not frame the official site or treat dynamic player manifests as a licensed direct stream."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -5474,6 +5565,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -5543,6 +5641,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:39Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -5609,6 +5714,13 @@
         "recommendation": "Keep OSCE as an official link-out/watchlist entry. Do not embed, relay, or reuse OSCE live video without written permission."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-15T18:27:45Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
@@ -5685,6 +5797,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -5751,6 +5870,13 @@
         "recommendation": "Link to Assembly Online. Reuse recordings only for non-commercial purposes under the published conditions."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -5820,6 +5946,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -5885,6 +6018,13 @@
         "recommendation": "Keep as official link-out and reuse only under the Assembly website copyright conditions: non-commercial use, Assembly source acknowledgement, no alteration except length, no undignified association, no implied endorsement, and no claim of parliamentary privilege for reproductions."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -5952,6 +6092,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6017,6 +6164,13 @@
         "recommendation": "Link to the official multilingual session page pending a source-specific rights statement."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6084,6 +6238,13 @@
         "recommendation": "Link to the official webcast and follow the published attribution, purpose, editing, and non-commercial conditions for any reuse."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:40Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:05Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6153,6 +6314,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6221,6 +6389,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6287,6 +6462,13 @@
         "recommendation": "Link to the official live page and follow the Parliament's fair-reporting, balance, context, and prohibited-use conditions."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
         {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6355,6 +6537,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6421,6 +6610,13 @@
         "recommendation": "Link to the official livestream schedule only unless written permission is obtained."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6489,6 +6685,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6554,6 +6757,13 @@
         "recommendation": "Link to the official Plenum Online/livestream pages only. Do not embed, republish, or relay Landtag video without prior approval."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:06Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6621,6 +6831,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:41Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:07Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6687,6 +6904,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:42Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-19T17:47:07Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6752,6 +6976,13 @@
         "recommendation": "Link to the official live-programming page only. Do not embed, relay, reproduce, distribute, or reuse the stream without prior express consent from the Parliament."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:42Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-19T17:47:08Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6820,6 +7051,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
           "checked_at": "2026-08-19T17:47:08Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -6884,6 +7122,13 @@
         "recommendation": "Allow client-side playback under the catalogue's opt-out policy with visible Congress attribution; remove or link out if the source requests it."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
         {
           "checked_at": "2026-08-19T17:47:08Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -6960,6 +7205,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
+        {
           "checked_at": "2026-08-19T17:47:08Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
           "method": "static_http",
@@ -7034,6 +7286,13 @@
         "recommendation": "Link-out or pending until terms or permission are documented."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        },
         {
           "checked_at": "2026-08-19T17:47:08Z",
           "report_path": "reports/health/2026-08-19-validation-gap-health.json",
@@ -7112,6 +7371,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7184,6 +7450,13 @@
         "recommendation": "Link to the official webcast and schedule. Treat any media endpoint as event-specific research until reuse permission and stability are documented."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
         {
           "checked_at": "2026-10-01T14:38:19Z",
           "report_path": "reports/health/2026-10-01-senate-deep-browser.json",
@@ -7268,6 +7541,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:43Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7343,6 +7623,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7411,6 +7698,13 @@
         "recommendation": "Use official event links while researching Assembly audiovisual terms and stable event metadata."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
@@ -7481,6 +7775,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7550,6 +7851,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7616,6 +7924,13 @@
         "recommendation": "Use official link-out while researching Assembly video terms and event metadata."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
@@ -7686,6 +8001,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 403"
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7753,6 +8075,13 @@
         "recommendation": "Use official event links while documenting OLIS identifiers, player routes, and audiovisual reuse terms."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
@@ -7822,6 +8151,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7890,6 +8226,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:44Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -7957,6 +8300,13 @@
         "recommendation": "Use official event links while researching stable media identifiers and legislative video terms."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:45Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
         {
           "checked_at": "2026-08-25T02:13:47Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
@@ -8027,6 +8377,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-22T13:49:45Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        },
+        {
           "checked_at": "2026-08-25T02:13:48Z",
           "report_path": "reports/health/2026-08-24-us-catalogue-additions.json",
           "method": "static_http",
@@ -8067,11 +8424,11 @@
       "source_type": "direct_hls",
       "source_kind": "official_vendor_hls",
       "playback_url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
-      "playback_policy": "native_playback",
+      "playback_policy": "research_only",
       "official_url": "https://www.parlament.ch/en/nr/livestream",
-      "provenance_note": "The official Swiss Parliament live player exposes this Akamai HLS manifest. Parliamentary Services also publish third-party iframe instructions for the National Council stream.",
-      "technical_status": "validated",
-      "stability_risk": "medium",
+      "provenance_note": "The official Swiss Parliament live player exposes this Akamai HLS manifest. Parliamentary Services also publish third-party iframe instructions for the National Council stream. Rechecked 2026-10-22: the master returned HTTP 404 in TLS-verified direct requests and the official browser player; a supported active-sitting route must be revalidated before native playback resumes.",
+      "technical_status": "needs_review",
+      "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
         "captions": "available",
@@ -8102,7 +8459,237 @@
           "https://live.parlament.ch/content?externalid=-1&themeColor=AA9E72"
         ],
         "recommendation": "Embed or play the unaltered official National Council stream with clear Swiss Parliament attribution. Review separate terms before modifying, archiving, or redistributing recordings beyond the documented live-embed use."
-      }
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:49:45Z",
+          "report_path": "reports/health/2026-10-22-catalogue-health.json",
+          "method": "static_http",
+          "status": "error",
+          "note": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "id": "czech-chamber-of-deputies",
+      "name": "Czech Chamber of Deputies Live",
+      "jurisdiction_level": "national",
+      "country_or_region": "Czech Republic",
+      "legislature": "Chamber of Deputies of the Parliament of the Czech Republic",
+      "external_ids": {
+        "wikidata_qid": "Q320265",
+        "ipu_country_code": "CZ",
+        "ipu_parliament_code": "CZ",
+        "ipu_chamber_code": "CZ-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q320265",
+          "checked_on": "2026-10-01",
+          "confidence": "high",
+          "notes": "Matched to the Czech Chamber of Deputies; used for institutional identity only."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CZ/CZ-LC01/parliamentary-mandate/parliamentary-mandate/",
+          "checked_on": "2026-10-01",
+          "confidence": "high",
+          "notes": "IPU identifies Czechia Chamber of Deputies under CZ-LC01; used for institutional identity only."
+        }
+      ],
+      "language": "Czech",
+      "source_type": "direct_hls",
+      "source_kind": "official_vendor_hls",
+      "playback_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "playback_policy": "native_playback",
+      "official_url": "https://www.psp.cz/stream/1",
+      "provenance_note": "The official Stream 1 page explicitly publishes this permanent CRA HLS master for external players and third-party embedding. On 2026-10-22 TLS-verified master, media playlist and MPEG-TS sample requests passed with CORS enabled; the live media sequence advanced and a fresh HLS.js browser player decoded 720x405 video without player errors. Availability remains sitting-only, not always-on.",
+      "technical_status": "validated",
+      "stability_risk": "medium",
+      "availability": "sitting_only",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The official accessibility statement says some site recordings lack captions or an audio alternative; the sign-language page describes separate information videos. Neither establishes accessibility of the live chamber feed. Live captions, sign-language interpretation, and audio description remain unknown. Evidence reviewed 2026-10-01: https://www.psp.cz/sqw/hp.sqw?k=32 and https://www.psp.cz/informace-v-ceskem-znakovem-jazyce ."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
+          "method": "GET",
+          "kind": "weekly_parliamentary_programme",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The official Stream 1 page explicitly publishes the raw HLS URL for external applications and alternative online players and supplies iframe HTML for embedding on other websites. This supports documented live playback and embedding; it does not establish broader recording, modification, or redistribution rights.",
+        "evidence": [
+          "https://www.psp.cz/stream/1",
+          "https://www.psp.cz/sqw/hp.sqw?k=32"
+        ],
+        "recommendation": "Use the documented HTTPS stream or iframe with clear Chamber attribution and an official source link after playback validation. Review separate terms before recording, modifying, or redistributing proceedings; the website disclaimer retains Office ownership and restricts bulk automated document copying."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:59:38Z",
+          "report_path": "reports/health/2026-10-22-promoted-sources-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "HLS manifest detected."
+        }
+      ]
+    },
+    {
+      "id": "finland-eduskunta-webcasts",
+      "name": "Finland Eduskunta Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Finland",
+      "legislature": "Parliament of Finland",
+      "external_ids": {
+        "wikidata_qid": "Q643412",
+        "ipu_country_code": "FI",
+        "ipu_parliament_code": "FI",
+        "ipu_chamber_code": "FI-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q643412",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/FI/FI-LC01/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+        }
+      ],
+      "language": "Finnish / Swedish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://verkkolahetys.eduskunta.fi/",
+      "provenance_note": "Official parliamentary live/archived video portal checked on 2026-10-22. Kept as an official-page link-out because the audit did not establish a permanent channel-level HLS route; individual event and recording manifests must not be substituted for a live channel.",
+      "technical_status": "link_only",
+      "stability_risk": "low",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Live-feed caption, sign-language, and audio-description coverage was not established during this audit; unknown does not mean unavailable."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot",
+          "method": "GET",
+          "kind": "official_event_video_directory",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Official webcast terms allow free links and unaltered use subject to source credit and context restrictions. Credit YLE when it produces the live image, otherwise Parliament; do not reuse Parliament marks or imply endorsement. This record uses official-page link-out only.",
+        "evidence": [
+          "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot",
+          "https://verkkolahetys.eduskunta.fi/"
+        ],
+        "recommendation": "Use the official webcast portal with clear institutional attribution. Respect source-specific conditions; do not infer a permanent HLS channel from event or archive manifests."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:59:38Z",
+          "report_path": "reports/health/2026-10-22-promoted-sources-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
+    },
+    {
+      "id": "sweden-riksdag-webb-tv",
+      "name": "Sweden Riksdag Webb-TV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Sweden",
+      "legislature": "Parliament of Sweden",
+      "external_ids": {
+        "wikidata_qid": "Q272930",
+        "ipu_country_code": "SE",
+        "ipu_parliament_code": "SE",
+        "ipu_chamber_code": "SE-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q272930",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/SE/SE-LC01/",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+        }
+      ],
+      "language": "Swedish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.riksdagen.se/sv/webb-tv/",
+      "provenance_note": "Official parliamentary live/archived video portal checked on 2026-10-22. Kept as an official-page link-out because the audit did not establish a permanent channel-level HLS route; individual event and recording manifests must not be substituted for a live channel.",
+      "technical_status": "link_only",
+      "stability_risk": "low",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "sv"
+        ],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Official Webb-TV help says selected archived videos receive AI captions but live broadcasts currently do not. The official portal identifies a sign-language-interpreted party-leaders debate; interpretation is event-dependent, not universal. Audio description remains unknown. Evidence checked 2026-10-22: https://www.riksdagen.se/sv/om-webbplatsen/hjalp-och-support/sa-fungerar-webb-tv/ and https://www.riksdagen.se/sv/webb-tv/ ."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "url": "https://www.riksdagen.se/sv/webb-tv/",
+          "method": "GET",
+          "kind": "official_event_video_directory",
+          "scraper_status": "planned"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Official Riksdag guidance permits sharing/embedding webcasts and requires source credit: Sveriges riksdag. This record links to the official event portal and does not assert a permanent raw-stream route or an unrestricted recording licence.",
+        "evidence": [
+          "https://www.riksdagen.se/sv/om-webbplatsen/rattigheter-for-bild-film-och-webb-tv/",
+          "https://www.riksdagen.se/sv/webb-tv/"
+        ],
+        "recommendation": "Use the official webcast portal with clear institutional attribution. Respect source-specific conditions; do not infer a permanent HLS channel from event or archive manifests."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-22T13:59:38Z",
+          "report_path": "reports/health/2026-10-22-promoted-sources-health.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "Official page/link reachable."
+        }
+      ]
     }
   ]
 }

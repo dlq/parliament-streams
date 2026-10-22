@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-22T13:55:09.599Z",
+  "method": "Fresh local HLS.js player loads the HTTPS master explicitly published by the official Stream 1 page; muted browser decode, no recording.",
+  "official_page": "https://www.psp.cz/stream/1",
+  "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+  "result": {
+    "readyState": 4,
+    "currentTime": 11.076555,
+    "width": 720,
+    "height": 405,
+    "frames": 78,
+    "errors": []
+  }
+}

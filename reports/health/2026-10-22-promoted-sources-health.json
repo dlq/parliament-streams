@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-22T13:59:39Z",
+  "catalogue": "/Users/dlq/Developer/parliament-streams/data/channels.json",
+  "timeout_seconds": 15,
+  "retries": 1,
+  "total": 3,
+  "counts": {
+    "ok": 3
+  },
+  "results": [
+    {
+      "id": "czech-chamber-of-deputies",
+      "source_type": "direct_hls",
+      "source_kind": "official_vendor_hls",
+      "technical_status": "validated",
+      "availability": "sitting_only",
+      "stability_risk": "medium",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "checked_at": "2026-10-22T13:59:38Z",
+      "http_status": 200,
+      "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+      "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "attempts": 1,
+      "status": "ok",
+      "note": "HLS manifest detected.",
+      "hls_variant_count": 4,
+      "hls_media_playlist_count": 0,
+      "sample_variant": {
+        "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+        "http_status": 200,
+        "content_type": "application/vnd.apple.mpegurl",
+        "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+        "attempts": 1,
+        "looks_like_hls": true
+      }
+    },
+    {
+      "id": "finland-eduskunta-webcasts",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "stability_risk": "low",
+      "url": "https://verkkolahetys.eduskunta.fi/",
+      "checked_at": "2026-10-22T13:59:38Z",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://verkkolahetys.eduskunta.fi/fi",
+      "attempts": 1,
+      "status": "ok",
+      "note": "Official page/link reachable."
+    },
+    {
+      "id": "sweden-riksdag-webb-tv",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "technical_status": "link_only",
+      "availability": "event_based",
+      "stability_risk": "low",
+      "url": "https://www.riksdagen.se/sv/webb-tv/",
+      "checked_at": "2026-10-22T13:59:38Z",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.riksdagen.se/sv/webb-tv/",
+      "attempts": 1,
+      "status": "ok",
+      "note": "Official page/link reachable."
+    }
+  ]
+}

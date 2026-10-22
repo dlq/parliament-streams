@@ -10,7 +10,7 @@ public catalogue.
 
 ## Current Status
 
-Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-01.
+Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-22.
 The dated review buckets below are retained preparation evidence; contact
 routes and source terms need rechecking before eventual outreach.
 
@@ -29,7 +29,7 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 38 of 101 catalogue entries use a permission status ending in
+- 38 of 104 catalogue entries use a permission status ending in
   `pending_review`; ten are newly published U.S. official-page records that
   have not yet been triaged into the dated 2026-08-19 outreach buckets.
 - 16 entries in the previous queue likely need written clarification.

@@ -1,0 +1,65 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official-page browser discovery and sample media validated. Keep researching until room identity, schedule mapping, and rights scope are established. Evidence: reports/health/2026-10-22-targeted-media-followup.json."
+  ],
+  "channel": {
+    "id": "chile-camara-sala-iv",
+    "name": "Chile Chamber of Deputies Sala IV",
+    "jurisdiction_level": "national",
+    "country_or_region": "Chile",
+    "legislature": "Camara de Diputadas y Diputados",
+    "external_ids": {
+      "wikidata_qid": "Q2119518",
+      "ipu_country_code": "CL",
+      "ipu_parliament_code": "CL",
+      "ipu_chamber_code": "CL-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2119518",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/CL/CL-LC01/",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "direct_hls",
+    "source_kind": "official_vendor_hls",
+    "playback_url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+    "official_url": "https://www.camara.cl/prensa/television.aspx",
+    "provenance_note": "The official Chamber television page loaded this separate salaiv HLS master and rendition on 2026-10-22. A bounded MPEG-TS media sample passed. Specific room/event identity, room-level schedule mapping, and reuse scope still need review; do not treat it as a second always-on TV channel.",
+    "technical_status": "needs_review",
+    "stability_risk": "medium",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Room-specific live accessibility has not been established; do not inherit the main channel claims."
+    },
+    "epg_sources": [],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The official Camara television page exposed a public HLS manifest, but no sufficient documentary reuse evidence has been recorded.",
+      "evidence": [
+        "https://www.camara.cl/prensa/television.aspx",
+        "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8"
+      ],
+      "recommendation": "Link out or keep as pending until terms or permission are documented."
+    },
+    "playback_policy": "research_only"
+  }
+}

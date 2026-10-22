@@ -26,7 +26,7 @@ const subnationalParents = {
 
 const fallbackCountryNames = {
   AU: "Australia", BR: "Brazil", CA: "Canada", CL: "Chile", CR: "Costa Rica", DE: "Germany",
-  DK: "Denmark", EE: "Estonia", ES: "Spain", FR: "France", GB: "United Kingdom", GR: "Greece",
+  CZ: "Czech Republic", FI: "Finland", SE: "Sweden", DK: "Denmark", EE: "Estonia", ES: "Spain", FR: "France", GB: "United Kingdom", GR: "Greece",
   IE: "Ireland", IL: "Israel", IN: "India", IT: "Italy", LU: "Luxembourg", MN: "Mongolia",
   MX: "Mexico", NL: "Netherlands", NO: "Norway", NZ: "New Zealand", PT: "Portugal", SK: "Slovakia",
   SV: "El Salvador", TH: "Thailand", TW: "Taiwan", US: "United States",

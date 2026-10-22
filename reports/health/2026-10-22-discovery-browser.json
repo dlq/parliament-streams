@@ -1,0 +1,2736 @@
+{
+  "checked_at": "2026-10-22T13:53:16Z",
+  "scope": "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from static reports.",
+  "method": "Headless Chromium loads official/discovery pages, waits for scripts/player requests, captures .m3u8/.mpd network and DOM references, then validates discovered manifests. This does not solve authenticated, geo-blocked, DRM, or interaction-gated players.",
+  "inputs": [
+    "data/discovery/tier1.json",
+    "data/discovery/tier2.json"
+  ],
+  "countries": [
+    {
+      "country": "Norway",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 3,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.stortinget.no/nett-tv",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5500/chunks_dvr_timeshift-0-43200.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.stortinget.no/nett-tv",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5505/chunks_dvr_timeshift-0-43200.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.stortinget.no/nett-tv",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Sweden",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Iceland",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Switzerland",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Finland",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Denmark",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Ireland",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Netherlands",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Luxembourg",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Australia",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Taiwan",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Germany",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Canada",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Uruguay",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Japan",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "United Kingdom",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Costa Rica",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Austria",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Mauritius",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Estonia",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 3,
+      "open_hls_count": 6,
+      "open_dash_count": 4,
+      "validated_manifests": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "kind": "hls",
+          "page_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://le305.euddn.net/bdbfc9a94342ed62cdfcc40c734a9708bea63acf489c9091ff27064e37dd90b63f3f8210e4352fffaf3dcbe2b2a99eb02aab6e2bf604cd94ef6eada69b6409a92815443f32949455a876a24bf6a518fb08bca8625afb6294bc18d73a879030a78734365d6587b9ac9bad8fc2bfb6bb6ae13a23811f42cc8fa27cf7e8c2f2c1c96646ce7df341373e7372769ba7730f21d6c7f47bd40f7af9df21213df9db1b343acf78b8ee1383ba0b65fc4ca121422c/smil:rk_live_1.smil/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+          "kind": "dash",
+          "page_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+          "discovery_source": "response",
+          "content_type": "application/dash+xml"
+        },
+        {
+          "url": "https://le304.euddn.net/47b5b40127df65dc285d7d23f4725feba9c0d8e8d3739239c6285c990d5bb99600790b687e6094dfd1dd947c14ed907bf3ed4bab9445829de5efc16cc95b8354eb7759df6c85e4bef2bcef04a5d7568477f8f319af5f1464a9765ad1ce491490d44ea6f951e6d9cfa334032ae642218e86720ef23a4e4604b7bb9ecbfa61bb8569d24b5dc04b56d2f48f1bf48ec6b5c5faccc4fc06f25ae91c4baddb7f89d88d438d791b2765e3faeb72f0994327137a/smil:rk_live_1.smil/manifest.mpd",
+          "kind": "dash",
+          "page_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+          "discovery_source": "response",
+          "content_type": "application/dash+xml"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "kind": "hls",
+          "page_url": "https://www.riigikogu.ee/live/1/en",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://le306.euddn.net/65f8795cdd73cda504b305448f2c83a7e2171a058fab6dd1b0bc80d7b958c5059a9987f0213535300c270ab0f9f22425a8975a0aae72eac5179c9cf274fc22d9f2d3d670fe2db89a618a32bbddf9841e84247a3629c582faf291791996bef34e45be7abc7a44ef7e5baa8d76fca7d9fd6173909290e5aa0f0ea9cc90ad668db9d5ebd9f51ddf7a7c364da191bcc2c8fb418676242fabce952e3b11c4023fd6e78bb2e187a7a7e56ae8c19bd0e23f3756/smil:rk_live_1.smil/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.riigikogu.ee/live/1/en",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+          "kind": "dash",
+          "page_url": "https://www.riigikogu.ee/live/1/en",
+          "discovery_source": "response",
+          "content_type": "application/dash+xml"
+        },
+        {
+          "url": "https://le303.euddn.net/dbfe4bf1b4396c8b88e0e54674fa0ae67db4fd0846dd7e8ecbc05fbbd450088538884aa0999d402053a3ee72b194da1d1fcfafa91c07118e377038aa89a42e3653408d0b1e6579d47be484eddb486ce4e64ab46584cd1577e2ff1518186c16944204a3c235954d70180547e7902f6edd4e809212545f0ee8a9a1038c7aa57adb644e119baf74129c114b6fd936dbf53956c61b13b3ede9a3bb804f387191ae99c45e3c6bbeadc488313d6c4c4f098d35/smil:rk_live_1.smil/manifest.mpd",
+          "kind": "dash",
+          "page_url": "https://www.riigikogu.ee/live/1/en",
+          "discovery_source": "response",
+          "content_type": "application/dash+xml"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+          "kind": "hls",
+          "page_url": "https://www.riigikogu.ee/live/2/en",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.riigikogu.ee/live/2/en",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Czech Republic",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 3,
+      "open_hls_count": 7,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.psp.cz/stream/1",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "page_url": "https://www.psp.cz/stream/1",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "page_url": "https://pspen.psp.cz/live-broadcast/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "page_url": "https://pspen.psp.cz/live-broadcast/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "page_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "page_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "page_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Greece",
+      "tier_report": "data/discovery/tier1.json",
+      "pages_checked": 0,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "France",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 2,
+      "open_hls_count": 4,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/index36_19612474.m3u8?DVR",
+          "kind": "hls",
+          "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19612474.m3u8",
+          "kind": "hls",
+          "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19612474.m3u8",
+          "kind": "hls",
+          "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19612474.m3u8?DVR",
+          "kind": "hls",
+          "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+          "discovery_source": "dom",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Malta",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 3,
+      "open_hls_count": 2,
+      "open_dash_count": 1,
+      "validated_manifests": [
+        {
+          "url": "https://houseliveprod-f9h4cpb9dyb8gegg.a01.azurefd.net/east/2026-10-19T09-51-50/manifest.mpd",
+          "kind": "dash",
+          "page_url": "https://live.house.gov/",
+          "discovery_source": "response",
+          "content_type": "application/octet-stream"
+        },
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.tsc.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.c-span.org/",
+          "discovery_source": "response",
+          "content_type": "application/x-mpegURL"
+        },
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.270.tsc.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.c-span.org/",
+          "discovery_source": "response",
+          "content_type": "application/x-mpegURL"
+        }
+      ]
+    },
+    {
+      "country": "Chile",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 2,
+      "open_hls_count": 4,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.camara.cl/prensa/television.aspx",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/chunklist_w1718348482.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.camara.cl/prensa/television.aspx",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.camara.cl/prensa/television.aspx",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1420006312.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.camara.cl/prensa/television.aspx",
+          "discovery_source": "request",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Slovenia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Israel",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 2,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.knesset.tv/live/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.knesset.tv/live/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "South Korea",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Latvia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Belgium",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Botswana",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Lithuania",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Cape Verde",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Italy",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 2,
+      "open_hls_count": 5,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+          "kind": "hls",
+          "page_url": "https://webtv.senato.it/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/288p/chunklist.m3u8",
+          "kind": "hls",
+          "page_url": "https://webtv.senato.it/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/576p/chunklist.m3u8",
+          "kind": "hls",
+          "page_url": "https://webtv.senato.it/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/playlist.m3u8",
+          "kind": "hls",
+          "page_url": "https://webtv.camera.it/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/chunklist_w182557972.m3u8",
+          "kind": "hls",
+          "page_url": "https://webtv.camera.it/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Poland",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Cyprus",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "India",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Slovakia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "South Africa",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Malaysia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Timor-Leste",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Panama",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Suriname",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Jamaica",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Montenegro",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Philippines",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Dominican Republic",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Mongolia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Argentina",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 2,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Hungary",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Croatia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Brazil",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 2,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.camara.leg.br/tv/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://stream3.camara.gov.br/tv1/video1_stream.m3u8",
+          "kind": "hls",
+          "page_url": "https://www.camara.leg.br/tv/",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Namibia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Indonesia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Colombia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Bulgaria",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "North Macedonia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Thailand",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 2,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "kind": "hls",
+          "page_url": "https://tpchannel.org/broadcasts/tv",
+          "discovery_source": "response",
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "kind": "hls",
+          "page_url": "https://tpchannel.org/broadcasts/tv",
+          "discovery_source": "request",
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ]
+    },
+    {
+      "country": "Serbia",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Ghana",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Albania",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Sri Lanka",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Singapore",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Guyana",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 1,
+      "open_dash_count": 0,
+      "validated_manifests": [
+        {
+          "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1792727845~acl=%2Fa2d4574e-af34-4d76-933b-4bfb31dea34f%2Fpsid%3D7782b916e6be53f476b329433666dc2a83c6d7811792677185%2F%2A~hmac=5fbbaaa72a9ca130d8c77ac7a747e092f142aef5c203ec7680bcc729745244b2/a2d4574e-af34-4d76-933b-4bfb31dea34f/psid=7782b916e6be53f476b329433666dc2a83c6d7811792677185/v2/playlist/av/primary/sub/315579622-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&omit=av1-hevc-opus&pathsig=8c953e4f~Y9JdWaTfqlDNdizvVvJS6w0H-XEz7_E_iJMbjXRxAf8&qsr=1&r=dXM%3D&rh=3uD0Is&sf=fmp4",
+          "kind": "hls",
+          "page_url": "https://parliament.gov.gy/",
+          "discovery_source": "response",
+          "content_type": "application/x-mpegURL"
+        }
+      ]
+    },
+    {
+      "country": "Lesotho",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    },
+    {
+      "country": "Moldova",
+      "tier_report": "data/discovery/tier2.json",
+      "pages_checked": 1,
+      "open_hls_count": 0,
+      "open_dash_count": 0,
+      "validated_manifests": []
+    }
+  ],
+  "pages": [
+    {
+      "country": "Norway",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.stortinget.no/nett-tv",
+      "final_url": "https://www.stortinget.no/nett-tv",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 3,
+      "responses": [
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5500/chunks_dvr_timeshift-0-43200.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5505/chunks_dvr_timeshift-0-43200.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+          "elapsed_ms": 581,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5500/chunks_dvr_timeshift-0-43200.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5500/chunks_dvr_timeshift-0-43200.m3u8",
+          "elapsed_ms": 904,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5505/chunks_dvr_timeshift-0-43200.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5505/chunks_dvr_timeshift-0-43200.m3u8",
+          "elapsed_ms": 634,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Sweden",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.riksdagen.se/en/contact-and-visit/media/broadcasts/",
+      "final_url": "https://www.riksdagen.se/en/contact-and-visit/media/broadcasts/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ]
+    },
+    {
+      "country": "Iceland",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.althingi.is/",
+      "final_url": "https://www.althingi.is/?__cf_chl_rt_tk=yfdyKZtTyRO3uckRxr2g6CJ3ktkCTr9finllPUyC7FY-1792677017-1.0.1.1-CCBYVLJj3mdjvcX4VzMyYaSaReJlWiMomLmMGAqu2iA",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Switzerland",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.parlament.ch/en",
+      "final_url": "https://www.parlament.ch/en",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Switzerland",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://live.parlament.ch/content?externalid=-1&themeColor=AA9E72",
+      "final_url": "https://live.parlament.ch/content?externalid=-1&themeColor=AA9E72",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 0,
+      "responses": [
+        {
+          "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "status": 302,
+          "content_type": ""
+        },
+        {
+          "url": "https://sc-par-lb-02.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "status": 404,
+          "content_type": ""
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://sc-par-lb-02.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "elapsed_ms": 475,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://sc-par-lb-02.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://sc-par-lb-02.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "elapsed_ms": 62,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Finland",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://verkkolahetys.eduskunta.fi/",
+      "final_url": "https://verkkolahetys.eduskunta.fi/fi",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Ireland",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+      "final_url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Australia",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.aph.gov.au/live?ps=10",
+      "final_url": "https://www.aph.gov.au/live?ps=10",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Taiwan",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.parliamentarytv.org.tw/",
+      "final_url": "https://www.parliamentarytv.org.tw/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Taiwan",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://ivod.ly.gov.tw/Live",
+      "final_url": "https://ivod.ly.gov.tw/Live",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Uruguay",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://parlamento.gub.uy/",
+      "final_url": "https://parlamento.gub.uy/",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Japan",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.shugiintv.go.jp/en/",
+      "final_url": "https://www.shugiintv.go.jp/en/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United Kingdom",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.parliamentlive.tv/",
+      "final_url": "https://www.parliamentlive.tv/Commons",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Costa Rica",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.youtube.com/@AsambleaCRC",
+      "final_url": "https://www.youtube.com/@AsambleaCRC",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Austria",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.parlament.gv.at/aktuelles/mediathek",
+      "final_url": "https://www.parlament.gv.at/aktuelles/mediathek",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Mauritius",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://mauritiusassembly.govmu.org/",
+      "final_url": "https://mauritiusassembly.govmu.org/mauritiusassembly/",
+      "page_status": null,
+      "load_note": "TimeoutError: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://mauritiusassembly.govmu.org/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Estonia",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+      "final_url": "https://www.riigikogu.ee/en/news-and-publications/live-broadcast/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 4,
+      "validated_manifest_count": 4,
+      "responses": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "status": 307,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://le305.euddn.net/bdbfc9a94342ed62cdfcc40c734a9708bea63acf489c9091ff27064e37dd90b63f3f8210e4352fffaf3dcbe2b2a99eb02aab6e2bf604cd94ef6eada69b6409a92815443f32949455a876a24bf6a518fb08bca8625afb6294bc18d73a879030a78734365d6587b9ac9bad8fc2bfb6bb6ae13a23811f42cc8fa27cf7e8c2f2c1c96646ce7df341373e7372769ba7730f21d6c7f47bd40f7af9df21213df9db1b343acf78b8ee1383ba0b65fc4ca121422c/smil:rk_live_1.smil/playlist.m3u8",
+          "status": 500,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+          "status": 307,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://le304.euddn.net/47b5b40127df65dc285d7d23f4725feba9c0d8e8d3739239c6285c990d5bb99600790b687e6094dfd1dd947c14ed907bf3ed4bab9445829de5efc16cc95b8354eb7759df6c85e4bef2bcef04a5d7568477f8f319af5f1464a9765ad1ce491490d44ea6f951e6d9cfa334032ae642218e86720ef23a4e4604b7bb9ecbfa61bb8569d24b5dc04b56d2f48f1bf48ec6b5c5faccc4fc06f25ae91c4baddb7f89d88d438d791b2765e3faeb72f0994327137a/smil:rk_live_1.smil/manifest.mpd",
+          "status": 200,
+          "content_type": "application/dash+xml"
+        },
+        {
+          "url": "https://le304.euddn.net/47b5b40127df65dc285d7d23f4725feba9c0d8e8d3739239c6285c990d5bb99600790b687e6094dfd1dd947c14ed907bf3ed4bab9445829de5efc16cc95b8354eb7759df6c85e4bef2bcef04a5d7568477f8f319af5f1464a9765ad1ce491490d44ea6f951e6d9cfa334032ae642218e86720ef23a4e4604b7bb9ecbfa61bb8569d24b5dc04b56d2f48f1bf48ec6b5c5faccc4fc06f25ae91c4baddb7f89d88d438d791b2765e3faeb72f0994327137a/smil:rk_live_1.smil/manifest.mpd",
+          "status": 200,
+          "content_type": "application/dash+xml"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le304.euddn.net/33c5da1280244835e8627633717b9e3076e6b13f7abe1f0409c5f9a166bdc597026f104de74f716a3418105fdc27fb9af502853bce755a5af90563bb8493cd73f66d2ff22ad45e5d851d2a1e1165412cff93dd10c69a4c249b6b86220a06c32823890be804802a9073a4af39da53ad1bfb1b092b5f1b67b70a16016243d990080a25549788977156911902093ffa203b0463ecab59601e82030e4cc4e9882ff3aa8c449dd4ceb442708a1dab6c15fc00/smil:rk_live_1.smil/playlist.m3u8",
+          "elapsed_ms": 1306,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://le305.euddn.net/bdbfc9a94342ed62cdfcc40c734a9708bea63acf489c9091ff27064e37dd90b63f3f8210e4352fffaf3dcbe2b2a99eb02aab6e2bf604cd94ef6eada69b6409a92815443f32949455a876a24bf6a518fb08bca8625afb6294bc18d73a879030a78734365d6587b9ac9bad8fc2bfb6bb6ae13a23811f42cc8fa27cf7e8c2f2c1c96646ce7df341373e7372769ba7730f21d6c7f47bd40f7af9df21213df9db1b343acf78b8ee1383ba0b65fc4ca121422c/smil:rk_live_1.smil/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le305.euddn.net/bdbfc9a94342ed62cdfcc40c734a9708bea63acf489c9091ff27064e37dd90b63f3f8210e4352fffaf3dcbe2b2a99eb02aab6e2bf604cd94ef6eada69b6409a92815443f32949455a876a24bf6a518fb08bca8625afb6294bc18d73a879030a78734365d6587b9ac9bad8fc2bfb6bb6ae13a23811f42cc8fa27cf7e8c2f2c1c96646ce7df341373e7372769ba7730f21d6c7f47bd40f7af9df21213df9db1b343acf78b8ee1383ba0b65fc4ca121422c/smil:rk_live_1.smil/playlist.m3u8",
+          "elapsed_ms": 553,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+          "kind": "dash",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/dash+xml",
+          "final_url": "https://le302.euddn.net/1cead5d12ca8e74fa41ace85510234a7a9d60180e6b2431afb010f32b0e5874933837f39df1c8cdc9b566485cceaf96ff6ea1933279ce7781bec7f0b1f9584230360709ed53d6f96e1b294b43fbd58a50485a97f243466da3678276f6f14c2c769ed9f38dd33995cea82173bea45ef80e2ed22c909cc8778807202ce6dddfa7563c3eb5db8cced1654a66a278cbfb5a7fdf94b55196c9058a0391994b8c3a85893af0be115d46347f69729fa4a93f4bb/smil:rk_live_1.smil/manifest.mpd",
+          "elapsed_ms": 677,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://le304.euddn.net/47b5b40127df65dc285d7d23f4725feba9c0d8e8d3739239c6285c990d5bb99600790b687e6094dfd1dd947c14ed907bf3ed4bab9445829de5efc16cc95b8354eb7759df6c85e4bef2bcef04a5d7568477f8f319af5f1464a9765ad1ce491490d44ea6f951e6d9cfa334032ae642218e86720ef23a4e4604b7bb9ecbfa61bb8569d24b5dc04b56d2f48f1bf48ec6b5c5faccc4fc06f25ae91c4baddb7f89d88d438d791b2765e3faeb72f0994327137a/smil:rk_live_1.smil/manifest.mpd",
+          "kind": "dash",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/dash+xml",
+          "final_url": "https://le304.euddn.net/47b5b40127df65dc285d7d23f4725feba9c0d8e8d3739239c6285c990d5bb99600790b687e6094dfd1dd947c14ed907bf3ed4bab9445829de5efc16cc95b8354eb7759df6c85e4bef2bcef04a5d7568477f8f319af5f1464a9765ad1ce491490d44ea6f951e6d9cfa334032ae642218e86720ef23a4e4604b7bb9ecbfa61bb8569d24b5dc04b56d2f48f1bf48ec6b5c5faccc4fc06f25ae91c4baddb7f89d88d438d791b2765e3faeb72f0994327137a/smil:rk_live_1.smil/manifest.mpd",
+          "elapsed_ms": 222,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Estonia",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.riigikogu.ee/live/1/en",
+      "final_url": "https://www.riigikogu.ee/live/1/en/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 4,
+      "validated_manifest_count": 4,
+      "responses": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "status": 307,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://le306.euddn.net/65f8795cdd73cda504b305448f2c83a7e2171a058fab6dd1b0bc80d7b958c5059a9987f0213535300c270ab0f9f22425a8975a0aae72eac5179c9cf274fc22d9f2d3d670fe2db89a618a32bbddf9841e84247a3629c582faf291791996bef34e45be7abc7a44ef7e5baa8d76fca7d9fd6173909290e5aa0f0ea9cc90ad668db9d5ebd9f51ddf7a7c364da191bcc2c8fb418676242fabce952e3b11c4023fd6e78bb2e187a7a7e56ae8c19bd0e23f3756/smil:rk_live_1.smil/playlist.m3u8",
+          "status": 500,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+          "status": 307,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://le303.euddn.net/dbfe4bf1b4396c8b88e0e54674fa0ae67db4fd0846dd7e8ecbc05fbbd450088538884aa0999d402053a3ee72b194da1d1fcfafa91c07118e377038aa89a42e3653408d0b1e6579d47be484eddb486ce4e64ab46584cd1577e2ff1518186c16944204a3c235954d70180547e7902f6edd4e809212545f0ee8a9a1038c7aa57adb644e119baf74129c114b6fd936dbf53956c61b13b3ede9a3bb804f387191ae99c45e3c6bbeadc488313d6c4c4f098d35/smil:rk_live_1.smil/manifest.mpd",
+          "status": 200,
+          "content_type": "application/dash+xml"
+        },
+        {
+          "url": "https://le303.euddn.net/dbfe4bf1b4396c8b88e0e54674fa0ae67db4fd0846dd7e8ecbc05fbbd450088538884aa0999d402053a3ee72b194da1d1fcfafa91c07118e377038aa89a42e3653408d0b1e6579d47be484eddb486ce4e64ab46584cd1577e2ff1518186c16944204a3c235954d70180547e7902f6edd4e809212545f0ee8a9a1038c7aa57adb644e119baf74129c114b6fd936dbf53956c61b13b3ede9a3bb804f387191ae99c45e3c6bbeadc488313d6c4c4f098d35/smil:rk_live_1.smil/manifest.mpd",
+          "status": 200,
+          "content_type": "application/dash+xml"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le304.euddn.net/33c5da1280244835e8627633717b9e3076e6b13f7abe1f0409c5f9a166bdc597026f104de74f716a3418105fdc27fb9af502853bce755a5af90563bb8493cd73f66d2ff22ad45e5d851d2a1e1165412cff93dd10c69a4c249b6b86220a06c32823890be804802a9073a4af39da53ad1bfb1b092b5f1b67b70a16016243d990080a25549788977156911902093ffa203b0463ecab59601e82030e4cc4e9882ff3aa8c449dd4ceb442708a1dab6c15fc00/smil:rk_live_1.smil/playlist.m3u8",
+          "elapsed_ms": 1077,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://le306.euddn.net/65f8795cdd73cda504b305448f2c83a7e2171a058fab6dd1b0bc80d7b958c5059a9987f0213535300c270ab0f9f22425a8975a0aae72eac5179c9cf274fc22d9f2d3d670fe2db89a618a32bbddf9841e84247a3629c582faf291791996bef34e45be7abc7a44ef7e5baa8d76fca7d9fd6173909290e5aa0f0ea9cc90ad668db9d5ebd9f51ddf7a7c364da191bcc2c8fb418676242fabce952e3b11c4023fd6e78bb2e187a7a7e56ae8c19bd0e23f3756/smil:rk_live_1.smil/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le306.euddn.net/65f8795cdd73cda504b305448f2c83a7e2171a058fab6dd1b0bc80d7b958c5059a9987f0213535300c270ab0f9f22425a8975a0aae72eac5179c9cf274fc22d9f2d3d670fe2db89a618a32bbddf9841e84247a3629c582faf291791996bef34e45be7abc7a44ef7e5baa8d76fca7d9fd6173909290e5aa0f0ea9cc90ad668db9d5ebd9f51ddf7a7c364da191bcc2c8fb418676242fabce952e3b11c4023fd6e78bb2e187a7a7e56ae8c19bd0e23f3756/smil:rk_live_1.smil/playlist.m3u8",
+          "elapsed_ms": 555,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+          "kind": "dash",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/dash+xml",
+          "final_url": "https://le302.euddn.net/1cead5d12ca8e74fa41ace85510234a7a9d60180e6b2431afb010f32b0e5874933837f39df1c8cdc9b566485cceaf96ff6ea1933279ce7781bec7f0b1f9584230360709ed53d6f96e1b294b43fbd58a50485a97f243466da3678276f6f14c2c769ed9f38dd33995cea82173bea45ef80e2ed22c909cc8778807202ce6dddfa7563c3eb5db8cced1654a66a278cbfb5a7fdf94b55196c9058a0391994b8c3a85893af0be115d46347f69729fa4a93f4bb/smil:rk_live_1.smil/manifest.mpd",
+          "elapsed_ms": 693,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://le303.euddn.net/dbfe4bf1b4396c8b88e0e54674fa0ae67db4fd0846dd7e8ecbc05fbbd450088538884aa0999d402053a3ee72b194da1d1fcfafa91c07118e377038aa89a42e3653408d0b1e6579d47be484eddb486ce4e64ab46584cd1577e2ff1518186c16944204a3c235954d70180547e7902f6edd4e809212545f0ee8a9a1038c7aa57adb644e119baf74129c114b6fd936dbf53956c61b13b3ede9a3bb804f387191ae99c45e3c6bbeadc488313d6c4c4f098d35/smil:rk_live_1.smil/manifest.mpd",
+          "kind": "dash",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/dash+xml",
+          "final_url": "https://le303.euddn.net/dbfe4bf1b4396c8b88e0e54674fa0ae67db4fd0846dd7e8ecbc05fbbd450088538884aa0999d402053a3ee72b194da1d1fcfafa91c07118e377038aa89a42e3653408d0b1e6579d47be484eddb486ce4e64ab46584cd1577e2ff1518186c16944204a3c235954d70180547e7902f6edd4e809212545f0ee8a9a1038c7aa57adb644e119baf74129c114b6fd936dbf53956c61b13b3ede9a3bb804f387191ae99c45e3c6bbeadc488313d6c4c4f098d35/smil:rk_live_1.smil/manifest.mpd",
+          "elapsed_ms": 448,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Estonia",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.riigikogu.ee/live/2/en",
+      "final_url": "https://www.riigikogu.ee/live/2/en/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+          "status": 307,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/chunklist_b2691072_slen.m3u8",
+          "status": 404,
+          "content_type": ""
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le301.euddn.net/5b06ed8d7a0bfdfc3de13201d00fd8d8b29624d688adb69d877d93bc39f0439f8972f7d2606429e3589cc26124168135bb3d3dea5cba97142218efad9e62568e384f5d97c3a156afe75ae3da0a09150d32cb29cadedcdbbc9393af274916e42874d669c2d90ab8da208d4d586ec3504c4330d3757a0a1651b463bea685d26579fe517968939de7ae54eaa3a098a204bea4d0641c9827a8c2ebd367d40fc98298b058a9b32b77d252d7c79db104a7274a/smil:rk_live_2.smil/playlist.m3u8",
+          "elapsed_ms": 776,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/playlist.m3u8",
+          "elapsed_ms": 120,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/chunklist_b2691072_slen.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": null,
+          "final_url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/chunklist_b2691072_slen.m3u8",
+          "elapsed_ms": 552,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Czech Republic",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://www.psp.cz/stream/1",
+      "final_url": "https://www.psp.cz/stream/1",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "elapsed_ms": 130,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "elapsed_ms": 128,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://www.psp.cz/cze.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 404,
+          "content_type": "text/html",
+          "final_url": "https://www.psp.cz/cze.m3u8",
+          "elapsed_ms": 743,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "dom"
+        }
+      ],
+      "page_errors": [
+        "ReferenceError: Hash is not defined",
+        "TypeError: Cannot read properties of undefined (reading 'ios')"
+      ]
+    },
+    {
+      "country": "Czech Republic",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://pspen.psp.cz/live-broadcast/",
+      "final_url": "https://pspen.psp.cz/live-broadcast/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "elapsed_ms": 638,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "elapsed_ms": 140,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Czech Republic",
+      "tier_report": "data/discovery/tier1.json",
+      "page_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+      "final_url": "https://utils.ssl.cdn.cra.cz/live-streaming/clients/pspcr/player-cra.php",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 4,
+      "validated_manifest_count": 3,
+      "responses": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl;charset=ISO-8859-1",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+          "elapsed_ms": 157,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+          "elapsed_ms": 143,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+          "elapsed_ms": 251,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://utils.ssl.cdn.cra.cz/cze.m3u8",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://utils.ssl.cdn.cra.cz/cze.m3u8",
+          "elapsed_ms": 517,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "dom"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "France",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://videos.assemblee-nationale.fr/direct.php",
+      "final_url": "https://videos.assemblee-nationale.fr/direct.19612474_6ada0554f12b8",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 4,
+      "validated_manifest_count": 4,
+      "responses": [
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/index36_19612474.m3u8?DVR",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19612474.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19612474.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/index36_19612474.m3u8?DVR",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://anorigin.vodalys.com/live/live36/index36_19612474.m3u8?DVR",
+          "elapsed_ms": 680,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19612474.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://anorigin.vodalys.com/live/live36/stream36_1_19612474.m3u8",
+          "elapsed_ms": 581,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19612474.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://anorigin.vodalys.com/live/live36/stream36_2_19612474.m3u8",
+          "elapsed_ms": 487,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19612474.m3u8?DVR",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://videos.assemblee-nationale.fr/live/live36/index36_19612474.m3u8?DVR",
+          "elapsed_ms": 170,
+          "note": "Manifest validated",
+          "discovery_source": "dom"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "France",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://videos.senat.fr/video/seance_direct.html",
+      "final_url": "https://videos.senat.fr/video.5971571_6ad9f2fd06ba1.seance-publique-du-22-octobre-2026-apres-midi",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Malta",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlament.mt/en/live-streaming/",
+      "final_url": "https://www.parlament.mt/en/live-streaming/",
+      "page_status": 404,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://live.house.gov/",
+      "final_url": "https://live.house.gov/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 1,
+      "validated_manifest_count": 1,
+      "responses": [
+        {
+          "url": "https://houseliveprod-f9h4cpb9dyb8gegg.a01.azurefd.net/east/2026-10-19T09-51-50/manifest.mpd",
+          "status": 200,
+          "content_type": "application/octet-stream"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://houseliveprod-f9h4cpb9dyb8gegg.a01.azurefd.net/east/2026-10-19T09-51-50/manifest.mpd",
+          "kind": "dash",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/octet-stream",
+          "final_url": "https://houseliveprod-f9h4cpb9dyb8gegg.a01.azurefd.net/east/2026-10-19T09-51-50/manifest.mpd",
+          "elapsed_ms": 395,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.senate.gov/floor/",
+      "final_url": "https://www.senate.gov/floor/",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "United States",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.c-span.org/",
+      "final_url": "https://www.c-span.org/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.tsc.m3u8",
+          "status": 200,
+          "content_type": "application/x-mpegURL"
+        },
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.270.tsc.m3u8",
+          "status": 200,
+          "content_type": "application/x-mpegURL"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.tsc.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://m3u8-l.c-spanvideo.org/event/event.448413.tsc.m3u8",
+          "elapsed_ms": 437,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.270.tsc.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://m3u8-l.c-spanvideo.org/event/event.448413.270.tsc.m3u8",
+          "elapsed_ms": 195,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Chile",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.camara.cl/prensa/television.aspx",
+      "final_url": "https://www.camara.cl/prensa/television.aspx",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 4,
+      "validated_manifest_count": 4,
+      "responses": [
+        {
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/chunklist_w1718348482.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+          "status": 206,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+          "status": 206,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+          "elapsed_ms": 842,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/chunklist_w1718348482.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/chunklist_w1718348482.m3u8",
+          "elapsed_ms": 204,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+          "elapsed_ms": 164,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1420006312.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1420006312.m3u8",
+          "elapsed_ms": 154,
+          "note": "Manifest validated",
+          "discovery_source": "request"
+        }
+      ],
+      "page_errors": [
+        "TypeError: Cannot read properties of undefined (reading 'PageRequestManager')",
+        "TypeError: Cannot read properties of undefined (reading 'PageRequestManager')"
+      ]
+    },
+    {
+      "country": "Chile",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://tv.senado.cl/",
+      "final_url": "https://tv.senado.cl/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Slovenia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.dz-rs.si/wps/portal/en/Home/mediji/Broadcasts",
+      "final_url": "about:blank",
+      "page_status": null,
+      "load_note": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.dz-rs.si/wps/portal/en/Home/mediji/Broadcasts\nCall log:\n\u001b[2m  - navigating to \"https://www.dz-rs.si/wps/portal/en/Home/mediji/Broadcasts\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Israel",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.knesset.tv/live/",
+      "final_url": "https://www.knesset.tv/live/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://watch.knesset.tv/?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8&live=true&poster=https://www.knesset.tv%2fmedia%2f3939%2fknesset-default.jpg&referrer=https://www.knesset.tv/live/&disableAds=true&autoplay=true&mute=true&muted=true",
+          "status": 200,
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://watch.knesset.tv/?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8&live=true&poster=https://www.knesset.tv%2fmedia%2f3939%2fknesset-default.jpg&referrer=https://www.knesset.tv/live/&disableAds=true&autoplay=true&mute=true&muted=true",
+          "kind": "hls",
+          "ok": false,
+          "http_status": 200,
+          "content_type": "text/html",
+          "final_url": "https://watch.knesset.tv/?src=https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8&live=true&poster=https://www.knesset.tv%2fmedia%2f3939%2fknesset-default.jpg&referrer=https://www.knesset.tv/live/&disableAds=true&autoplay=true&mute=true&muted=true",
+          "elapsed_ms": 744,
+          "note": "Fetched but body did not validate as manifest",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "elapsed_ms": 695,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+          "elapsed_ms": 446,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "South Korea",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.natv.go.kr/",
+      "final_url": "https://www.natv.go.kr/natv/main.do?extendedParam=natv",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Latvia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.saeima.lv/en/about-saeima/information-about-the-saeima/live-broadcasts",
+      "final_url": "about:blank",
+      "page_status": null,
+      "load_note": "TimeoutError: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.saeima.lv/en/about-saeima/information-about-the-saeima/live-broadcasts\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Belgium",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.dekamer.be/kvvcr/showpage.cfm?section=/media&language=en&story=live.xml",
+      "final_url": "https://www.dekamer.be/kvvcr/showpage.cfm?section=/media&language=en&story=live.xml",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Belgium",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.senate.be/",
+      "final_url": "https://www.senate.be/?__cf_chl_rt_tk=J4ZkmhZf.jBbP8HdEYMO7vqfPfZ8.794N1YTQUxJqQo-1792677090-1.0.1.1-UWuqF_n65YnzRZA_dt7K4sWxcDKxrs.9NVRmT6IZw3o",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Botswana",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.gov.bw/",
+      "final_url": "https://www.parliament.gov.bw/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Lithuania",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=2",
+      "final_url": "https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=2",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Cape Verde",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlamento.cv/",
+      "final_url": "https://www.parlamento.cv/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "ReferenceError: jQuery is not defined",
+        "TypeError: Cannot read properties of undefined (reading 'msie')",
+        "TypeError: Cannot read properties of undefined (reading 'setDefaults')"
+      ]
+    },
+    {
+      "country": "Italy",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://webtv.senato.it/",
+      "final_url": "https://webtv.senato.it/webtv",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 3,
+      "validated_manifest_count": 3,
+      "responses": [
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/288p/chunklist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/576p/chunklist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+          "elapsed_ms": 402,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/288p/chunklist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://senato-live.morescreens.com/SENATO_1_001/288p/chunklist.m3u8",
+          "elapsed_ms": 330,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/576p/chunklist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://senato-live.morescreens.com/SENATO_1_001/576p/chunklist.m3u8",
+          "elapsed_ms": 198,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Italy",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://webtv.camera.it/",
+      "final_url": "https://webtv.camera.it/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/playlist.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/chunklist_w182557972.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/playlist.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/playlist.m3u8",
+          "elapsed_ms": 1776,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/chunklist_w182557972.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://rmc2.camera.it/vodedge/_definst_/mp4:mediacache/flash/assemblea19/L19_S0731_20261022090023.mp4/chunklist_w182557972.m3u8",
+          "elapsed_ms": 288,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Poland",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.sejm.gov.pl/Sejm10.nsf/transmisje.xsp",
+      "final_url": "https://www.sejm.gov.pl/Sejm10.nsf/transmisje.xsp",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Cyprus",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.cy/en/live-broadcast",
+      "final_url": "https://www.parliament.cy/en/live-broadcast",
+      "page_status": 404,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "India",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://sansadtv.nic.in/",
+      "final_url": "about:blank",
+      "page_status": null,
+      "load_note": "TimeoutError: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://sansadtv.nic.in/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Slovakia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.nrsr.sk/web/?sid=tv",
+      "final_url": "https://www.nrsr.sk/challenge?next=%2Fweb%2F",
+      "page_status": 200,
+      "load_note": "Error: page.content: Unable to retrieve content because the page is navigating and changing the content.",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "South Africa",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.gov.za/live-streaming",
+      "final_url": "https://www.parliament.gov.za/live-streaming",
+      "page_status": 404,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Malaysia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://parlimen.gov.my/",
+      "final_url": "https://parlimen.gov.my/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.ttparliament.org/",
+      "final_url": "https://www.ttparliament.org/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Timor-Leste",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlamento.tl/",
+      "final_url": "https://www.parlamento.tl/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Panama",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.asamblea.gob.pa/",
+      "final_url": "https://www.asamblea.gob.pa/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Suriname",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.dna.sr/",
+      "final_url": "https://www.dna.sr/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "Uncaught (in promise) p: OneSignal: This web push config can only be used on http://dev.dna.sr. Your current origin is https://www.dna.sr."
+      ]
+    },
+    {
+      "country": "Jamaica",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://japarliament.gov.jm/",
+      "final_url": "https://japarliament.gov.jm/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Montenegro",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.skupstina.me/",
+      "final_url": "https://www.skupstina.me/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Philippines",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.congress.gov.ph/",
+      "final_url": "https://www.congress.gov.ph/?__cf_chl_rt_tk=LGwP1m_yAvM8KNbZfRCjR_Kx0k5WXDyTEyTZNviWPh4-1792677140-1.0.1.1-WfBrSdqgsFx3EEI2ZB5uPF5hFocOwmi0afC95tzNV48",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Philippines",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://web.senate.gov.ph/",
+      "final_url": "https://web.senate.gov.ph/",
+      "page_status": 523,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Dominican Republic",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.camaradediputados.gob.do/",
+      "final_url": "https://camaradediputados.gob.do/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Mongolia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.mn/",
+      "final_url": "https://parliament.mn/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Argentina",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.diputados.gov.ar/",
+      "final_url": "https://www.hcdn.gob.ar/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": [
+        "ReferenceError: videojs is not defined"
+      ]
+    },
+    {
+      "country": "Argentina",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.senado.gob.ar/",
+      "final_url": "https://www.senado.gob.ar/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Hungary",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlament.hu/web/guest/elo-kozvetites",
+      "final_url": "https://www.parlament.hu/web/guest/elo-kozvetites",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Croatia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.sabor.hr/en/press/live-broadcast",
+      "final_url": "https://www.sabor.hr/en/press/live-broadcast",
+      "page_status": 404,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Brazil",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.camara.leg.br/tv/",
+      "final_url": "https://www.camara.leg.br/tv/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://stream3.camara.gov.br/tv1/video1_stream.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "elapsed_ms": 659,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://stream3.camara.gov.br/tv1/video1_stream.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://stream3.camara.gov.br/tv1/video1_stream.m3u8",
+          "elapsed_ms": 546,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Namibia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.na/",
+      "final_url": "https://www.parliament.na/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Indonesia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.dpr.go.id/",
+      "final_url": "https://www.dpr.go.id/",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Colombia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.canalcongreso.gov.co/",
+      "final_url": "about:blank",
+      "page_status": null,
+      "load_note": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.canalcongreso.gov.co/\nCall log:\n\u001b[2m  - navigating to \"https://www.canalcongreso.gov.co/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Bulgaria",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.bg/en/",
+      "final_url": "about:blank",
+      "page_status": null,
+      "load_note": "TimeoutError: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.parliament.bg/en/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "North Macedonia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.sobranie.mk/",
+      "final_url": "https://www.sobranie.mk/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Thailand",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://tpchannel.org/broadcasts/tv",
+      "final_url": "https://tpchannel.org/broadcasts/tv",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 2,
+      "validated_manifest_count": 2,
+      "responses": [
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "elapsed_ms": 446,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        },
+        {
+          "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "final_url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+          "elapsed_ms": 523,
+          "note": "Manifest validated",
+          "discovery_source": "request"
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "country": "Serbia",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlament.rs/",
+      "final_url": "https://www.parlament.gov.rs/%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0-%D1%81%D0%BA%D1%83%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D0%B0.1.html",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Ghana",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.gh/",
+      "final_url": "https://www.parliament.gh/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Albania",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlament.al/",
+      "final_url": "https://www.parlament.al/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Sri Lanka",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.lk/",
+      "final_url": "https://www.parliament.lk/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Singapore",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.gov.sg/",
+      "final_url": "https://www.parliament.gov.sg/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Guyana",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://parliament.gov.gy/",
+      "final_url": "https://parliament.gov.gy/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 1,
+      "validated_manifest_count": 1,
+      "responses": [
+        {
+          "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1792727845~acl=%2Fa2d4574e-af34-4d76-933b-4bfb31dea34f%2Fpsid%3D7782b916e6be53f476b329433666dc2a83c6d7811792677185%2F%2A~hmac=5fbbaaa72a9ca130d8c77ac7a747e092f142aef5c203ec7680bcc729745244b2/a2d4574e-af34-4d76-933b-4bfb31dea34f/psid=7782b916e6be53f476b329433666dc2a83c6d7811792677185/v2/playlist/av/primary/sub/315579622-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&omit=av1-hevc-opus&pathsig=8c953e4f~Y9JdWaTfqlDNdizvVvJS6w0H-XEz7_E_iJMbjXRxAf8&qsr=1&r=dXM%3D&rh=3uD0Is&sf=fmp4",
+          "status": 200,
+          "content_type": "application/x-mpegURL"
+        }
+      ],
+      "validations": [
+        {
+          "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1792727845~acl=%2Fa2d4574e-af34-4d76-933b-4bfb31dea34f%2Fpsid%3D7782b916e6be53f476b329433666dc2a83c6d7811792677185%2F%2A~hmac=5fbbaaa72a9ca130d8c77ac7a747e092f142aef5c203ec7680bcc729745244b2/a2d4574e-af34-4d76-933b-4bfb31dea34f/psid=7782b916e6be53f476b329433666dc2a83c6d7811792677185/v2/playlist/av/primary/sub/315579622-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&omit=av1-hevc-opus&pathsig=8c953e4f~Y9JdWaTfqlDNdizvVvJS6w0H-XEz7_E_iJMbjXRxAf8&qsr=1&r=dXM%3D&rh=3uD0Is&sf=fmp4",
+          "kind": "hls",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/x-mpegURL",
+          "final_url": "https://vod-adaptive-ak.vimeocdn.com/exp=1792727845~acl=%2Fa2d4574e-af34-4d76-933b-4bfb31dea34f%2Fpsid%3D7782b916e6be53f476b329433666dc2a83c6d7811792677185%2F%2A~hmac=5fbbaaa72a9ca130d8c77ac7a747e092f142aef5c203ec7680bcc729745244b2/a2d4574e-af34-4d76-933b-4bfb31dea34f/psid=7782b916e6be53f476b329433666dc2a83c6d7811792677185/v2/playlist/av/primary/sub/315579622-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&omit=av1-hevc-opus&pathsig=8c953e4f~Y9JdWaTfqlDNdizvVvJS6w0H-XEz7_E_iJMbjXRxAf8&qsr=1&r=dXM%3D&rh=3uD0Is&sf=fmp4",
+          "elapsed_ms": 130,
+          "note": "Manifest validated",
+          "discovery_source": "response"
+        }
+      ],
+      "page_errors": [
+        "TypeError: $(...).owlCarousel is not a function",
+        "TypeError: $(...).owlCarousel is not a function",
+        "TypeError: $(...).easyResponsiveTabs is not a function"
+      ]
+    },
+    {
+      "country": "Lesotho",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parliament.ls/",
+      "final_url": "https://parliament.ls/",
+      "page_status": 200,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    },
+    {
+      "country": "Moldova",
+      "tier_report": "data/discovery/tier2.json",
+      "page_url": "https://www.parlament.md/",
+      "final_url": "https://www.parlament.md/?__cf_chl_rt_tk=Wj5resYkbrxH67i0mkH7a4N3Rc8n8EDgBI9jjcbM_B4-1792677188-1.0.1.1-T_nHoy2I5YllJR6screodGE2Ebf9e2TxfBRGGGikcYk",
+      "page_status": 403,
+      "load_note": null,
+      "discovered_manifest_count": 0,
+      "validated_manifest_count": 0,
+      "responses": [],
+      "validations": [],
+      "page_errors": []
+    }
+  ]
+}

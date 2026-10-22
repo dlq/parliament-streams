@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-22T13:56:39.156126+00:00",
+  "results": [
+    {
+      "id": "chile-camara-sala-iv",
+      "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+      "master": {
+        "status": 200,
+        "final_url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+        "content_type": "application/vnd.apple.mpegurl",
+        "cors": "*",
+        "bytes_sampled": 139
+      },
+      "variants": [
+        {
+          "url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1092267413.m3u8",
+          "status": 200,
+          "final_url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1092267413.m3u8",
+          "content_type": "application/vnd.apple.mpegurl",
+          "cors": "*",
+          "bytes_sampled": 225
+        }
+      ],
+      "media_playlist_url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1092267413.m3u8",
+      "media_sequence": "749",
+      "endlist": false,
+      "encrypted": false,
+      "segment": {
+        "url": "https://tls-cl.cdnz.cl/salaiv/live/media_w1092267413_749.ts",
+        "status": 206,
+        "final_url": "https://tls-cl.cdnz.cl/salaiv/live/media_w1092267413_749.ts",
+        "content_type": "video/MP2T",
+        "cors": "*",
+        "bytes_sampled": 8192,
+        "recognized_media_signature": "mpeg_ts"
+      },
+      "result": "sample_media_validated"
+    },
+    {
+      "id": "estonia-live-2-recheck",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+      "master": {
+        "status": 200,
+        "final_url": "https://le303.euddn.net/af146dd364d3b61801345e01c900888405adc1419de1ac243f9084b77def400fc0cf434fa186134cb1ed93e2db55ca7ca51dc17e59c11d7170b11fc31c1a8c2728e5d1eab6f1ddf52a3d2947f05102bb47a47cee9581e053185eae5d009fc2531794eaad60c3ed74e967f19bacbe95ea05aa8e40f9bed29169f97b776575ddee4aa7a3d938de68ad04ee9b42349ebe2d518add6cdf5bd2e9e60e92c3023b02d1f1ef1d06415097a96a55677901573f7c/smil:rk_live_2.smil/playlist.m3u8",
+        "content_type": "application/vnd.apple.mpegurl",
+        "cors": "*",
+        "bytes_sampled": 361
+      },
+      "variants": [
+        {
+          "url": "https://le303.euddn.net/af146dd364d3b61801345e01c900888405adc1419de1ac243f9084b77def400fc0cf434fa186134cb1ed93e2db55ca7ca51dc17e59c11d7170b11fc31c1a8c2728e5d1eab6f1ddf52a3d2947f05102bb47a47cee9581e053185eae5d009fc2531794eaad60c3ed74e967f19bacbe95ea05aa8e40f9bed29169f97b776575ddee4aa7a3d938de68ad04ee9b42349ebe2d518add6cdf5bd2e9e60e92c3023b02d1f1ef1d06415097a96a55677901573f7c/smil:rk_live_2.smil/chunklist_b2691072_slen.m3u8",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "result": "playlist_unavailable"
+    }
+  ]
+}

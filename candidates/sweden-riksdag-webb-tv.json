@@ -1,0 +1,77 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official parliamentary video portal, identity, terms, and programme/event surface reviewed on 2026-10-22. Add as link-out; no stable direct stream asserted.",
+    "Official portal, Swedish caption evidence, identity, rights and event-directory evidence verified; link-out only.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "sweden-riksdag-webb-tv",
+    "name": "Sweden Riksdag Webb-TV",
+    "jurisdiction_level": "national",
+    "country_or_region": "Sweden",
+    "legislature": "Parliament of Sweden",
+    "external_ids": {
+      "wikidata_qid": "Q272930",
+      "ipu_country_code": "SE",
+      "ipu_parliament_code": "SE",
+      "ipu_chamber_code": "SE-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q272930",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/SE/SE-LC01/",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+      }
+    ],
+    "language": "Swedish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.riksdagen.se/sv/webb-tv/",
+    "provenance_note": "Official parliamentary live/archived video portal checked on 2026-10-22. Kept as an official-page link-out because the audit did not establish a permanent channel-level HLS route; individual event and recording manifests must not be substituted for a live channel.",
+    "technical_status": "link_only",
+    "stability_risk": "low",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "source_dependent",
+      "caption_languages": [
+        "sv"
+      ],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "Official Webb-TV help says selected archived videos receive AI captions but live broadcasts currently do not. The official portal identifies a sign-language-interpreted party-leaders debate; interpretation is event-dependent, not universal. Audio description remains unknown. Evidence checked 2026-10-22: https://www.riksdagen.se/sv/om-webbplatsen/hjalp-och-support/sa-fungerar-webb-tv/ and https://www.riksdagen.se/sv/webb-tv/ ."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "url": "https://www.riksdagen.se/sv/webb-tv/",
+        "method": "GET",
+        "kind": "official_event_video_directory",
+        "scraper_status": "planned"
+      }
+    ],
+    "permission": {
+      "status": "explicit_reuse_with_conditions",
+      "summary": "Official Riksdag guidance permits sharing/embedding webcasts and requires source credit: Sveriges riksdag. This record links to the official event portal and does not assert a permanent raw-stream route or an unrestricted recording licence.",
+      "evidence": [
+        "https://www.riksdagen.se/sv/om-webbplatsen/rattigheter-for-bild-film-och-webb-tv/",
+        "https://www.riksdagen.se/sv/webb-tv/"
+      ],
+      "recommendation": "Use the official webcast portal with clear institutional attribution. Respect source-specific conditions; do not infer a permanent HLS channel from event or archive manifests."
+    }
+  }
+}

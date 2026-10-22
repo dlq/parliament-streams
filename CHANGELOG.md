@@ -6,6 +6,23 @@ application. Earlier application work remains available in Git history.
 
 ## Unreleased - 2026-10-22
 
+### Added
+
+- Czech Chamber of Deputies native HLS after progressing live-media and browser
+  decode validation; Sweden and Finland official video-portal link-outs with
+  identity, rights, accessibility, and event-source evidence.
+- Dated whole-catalogue, official-player, discovery, and media audit evidence;
+  one Chile Sala IV research candidate and exact event/VOD review decisions.
+- Flags and country labels for Czech Republic, Sweden, and Finland, plus
+  validation support for recorded Swedish caption evidence.
+
+### Changed
+
+- Withhold Swiss National Council and Estonia feed 2 native playback after
+  repeated failing media checks; preserve their provenance and rights evidence.
+- Refresh compact validation history for every published entry and keep current
+  roadmap/rights/candidate summaries aligned with the 104-entry catalogue.
+
 ### Security
 
 - Require and lock certifi 2026.10.19 or newer to address

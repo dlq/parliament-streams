@@ -1,0 +1,1107 @@
+{
+  "checked_at": "2026-10-22T13:49:49Z",
+  "scope": "Catalogue-generated static and browser validation seed",
+  "method": "Generated from canonical playback and official URLs; no network requests performed.",
+  "countries": [
+    {
+      "country": "Alberta",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+          "channel_id": "alberta-assembly-online"
+        }
+      ]
+    },
+    {
+      "country": "Andalusia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/parlamentoabierto/sesionesendirecto/programacion.do",
+          "channel_id": "andalusia-parliament-tv-live"
+        }
+      ]
+    },
+    {
+      "country": "Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.youtube.com/@AUSParliamentLive/live",
+          "channel_id": "australia-parliament-youtube"
+        }
+      ]
+    },
+    {
+      "country": "Baden-Wurttemberg",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+          "channel_id": "baden-wurttemberg-landtag-live"
+        }
+      ]
+    },
+    {
+      "country": "Bavaria",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.bayern.landtag.de/aktuelles/plenum-online/",
+          "channel_id": "bavaria-landtag-plenum-online"
+        }
+      ]
+    },
+    {
+      "country": "Brazil",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+          "channel_id": "brazil-tv-camara"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.camara.leg.br/tv/aovivo",
+          "channel_id": "brazil-tv-camara"
+        }
+      ]
+    },
+    {
+      "country": "British Columbia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.leg.bc.ca/index.php/parliamentary-business/broadcasts-and-webcasts",
+          "channel_id": "british-columbia-legislature-webcasts"
+        }
+      ]
+    },
+    {
+      "country": "California",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.ca.gov/todaysevents",
+          "channel_id": "us-ca-assembly-live"
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
+          "channel_id": "cpac-ca"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.cpac.ca/en/",
+          "channel_id": "cpac-ca"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://parlvu.parl.gc.ca/Harmony/en",
+          "channel_id": "canada-house-of-commons-parlvu"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://senparlvu.parl.gc.ca/Harmony/",
+          "channel_id": "canada-senate-senvu"
+        }
+      ]
+    },
+    {
+      "country": "Catalonia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.cat/ext/f?p=700:1::::::",
+          "channel_id": "catalonia-canal-parlament"
+        }
+      ]
+    },
+    {
+      "country": "Chile",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+          "channel_id": "chile-camara-tv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.camara.cl/prensa/television.aspx",
+          "channel_id": "chile-camara-tv"
+        }
+      ]
+    },
+    {
+      "country": "Costa Rica",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.youtube.com/@AsambleaCRC/live",
+          "channel_id": "costa-rica-assembly-youtube"
+        }
+      ]
+    },
+    {
+      "country": "Council of Europe",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.coe.int/en/web/portal/live",
+          "channel_id": "council-of-europe-pace-live"
+        }
+      ]
+    },
+    {
+      "country": "Denmark",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
+          "channel_id": "denmark-folketinget"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ft.dk/",
+          "channel_id": "denmark-folketinget"
+        }
+      ]
+    },
+    {
+      "country": "El Salvador",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
+          "channel_id": "el-salvador-legislative-assembly"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.asamblea.gob.sv/",
+          "channel_id": "el-salvador-legislative-assembly"
+        }
+      ]
+    },
+    {
+      "country": "Estonia",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+          "channel_id": "estonia-riigikogu-live-1"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/live/1/en",
+          "channel_id": "estonia-riigikogu-live-1"
+        },
+        {
+          "kind": "hls",
+          "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+          "channel_id": "estonia-riigikogu-live-2"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.riigikogu.ee/live/2/en",
+          "channel_id": "estonia-riigikogu-live-2"
+        }
+      ]
+    },
+    {
+      "country": "European Union",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://multimedia.europarl.europa.eu/en/webstreaming",
+          "channel_id": "european-parliament-multimedia-centre"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://video.consilium.europa.eu/home/en",
+          "channel_id": "council-of-eu-live"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://audiovisual.ec.europa.eu/en",
+          "channel_id": "eu-audiovisual-ebs"
+        }
+      ]
+    },
+    {
+      "country": "Florida",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.flsenate.gov/Media/Videos",
+          "channel_id": "us-fl-legislature-video"
+        }
+      ]
+    },
+    {
+      "country": "France",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+          "channel_id": "france-national-assembly"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://videos.assemblee-nationale.fr/direct.php",
+          "channel_id": "france-national-assembly"
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+          "channel_id": "germany-bundestag-1"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.bundestag.de/mediathek",
+          "channel_id": "germany-bundestag-1"
+        }
+      ]
+    },
+    {
+      "country": "Greece",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8",
+          "channel_id": "greece-hellenic-parliament-tv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.hellenicparliament.gr/",
+          "channel_id": "greece-hellenic-parliament-tv"
+        }
+      ]
+    },
+    {
+      "country": "India",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
+          "channel_id": "india-sansad-tv-1"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://sansadtv.nic.in/",
+          "channel_id": "india-sansad-tv-1"
+        },
+        {
+          "kind": "hls",
+          "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
+          "channel_id": "india-sansad-tv-2"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://sansadtv.nic.in/",
+          "channel_id": "india-sansad-tv-2"
+        }
+      ]
+    },
+    {
+      "country": "Ireland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+          "channel_id": "ireland-oireachtas-tv"
+        }
+      ]
+    },
+    {
+      "country": "Israel",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+          "channel_id": "israel-knesset-channel"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.knesset.tv/live/",
+          "channel_id": "israel-knesset-channel"
+        }
+      ]
+    },
+    {
+      "country": "Italy",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+          "channel_id": "italy-senate"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://webtv.senato.it/",
+          "channel_id": "italy-senate"
+        }
+      ]
+    },
+    {
+      "country": "Jalisco",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+          "channel_id": "jalisco-canal-parlamento"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+          "channel_id": "jalisco-canal-parlamento"
+        }
+      ]
+    },
+    {
+      "country": "Luxembourg",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
+          "channel_id": "luxembourg-chamber-tv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.chd.lu/",
+          "channel_id": "luxembourg-chamber-tv"
+        }
+      ]
+    },
+    {
+      "country": "Manitoba",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.gov.mb.ca/legislature/business/house_broadcasts.html",
+          "channel_id": "manitoba-house-broadcasts"
+        }
+      ]
+    },
+    {
+      "country": "Minnesota",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.leg.mn.gov/leg/multimedia",
+          "channel_id": "us-mn-legislature-multimedia"
+        }
+      ]
+    },
+    {
+      "country": "Mongolia",
+      "results": [
+        {
+          "kind": "dash",
+          "url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+          "channel_id": "mongolia-parliament-tv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://att.parliament.mn/live",
+          "channel_id": "mongolia-parliament-tv"
+        }
+      ]
+    },
+    {
+      "country": "Navarre",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://parlamentodenavarra.es/es/pruebalive1.htm",
+          "channel_id": "navarre-parliament-live"
+        }
+      ]
+    },
+    {
+      "country": "Netherlands",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "channel_id": "netherlands-tweede-kamer"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+          "channel_id": "netherlands-tweede-kamer"
+        },
+        {
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "channel_id": "netherlands-tweede-kamer-aletta-jacobszaal"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
+          "channel_id": "netherlands-tweede-kamer-aletta-jacobszaal"
+        },
+        {
+          "kind": "hls",
+          "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+          "channel_id": "netherlands-tweede-kamer-actualiteitenkanaal"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
+          "channel_id": "netherlands-tweede-kamer-actualiteitenkanaal"
+        }
+      ]
+    },
+    {
+      "country": "New South Wales",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.nsw.gov.au/webcasts",
+          "channel_id": "new-south-wales-parliament-webcasts"
+        }
+      ]
+    },
+    {
+      "country": "New York",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://nyassembly.gov/av/live/",
+          "channel_id": "us-ny-assembly-live"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.nysenate.gov/events",
+          "channel_id": "us-ny-senate-live"
+        }
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+          "channel_id": "new-zealand-parliament"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://videos.parliament.nz/",
+          "channel_id": "new-zealand-parliament"
+        }
+      ]
+    },
+    {
+      "country": "Newfoundland and Labrador",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.nl.ca/HouseBusiness/Webcast/",
+          "channel_id": "newfoundland-labrador-house-webcast"
+        }
+      ]
+    },
+    {
+      "country": "North Rhine-Westphalia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+          "channel_id": "north-rhine-westphalia-landtag-live"
+        }
+      ]
+    },
+    {
+      "country": "Northern Ireland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://niassembly.tv/",
+          "channel_id": "northern-ireland-assembly-tv"
+        }
+      ]
+    },
+    {
+      "country": "Northwest Territories",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+          "channel_id": "northwest-territories-watch-session"
+        }
+      ]
+    },
+    {
+      "country": "Norway",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+          "channel_id": "norway-stortinget"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.stortinget.no/nett-tv",
+          "channel_id": "norway-stortinget"
+        }
+      ]
+    },
+    {
+      "country": "Nunavut",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
+          "channel_id": "nunavut-legislative-assembly-tv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.nu.ca/webcasts",
+          "channel_id": "nunavut-legislative-assembly-tv"
+        }
+      ]
+    },
+    {
+      "country": "OSCE",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.osce.org/live",
+          "channel_id": "osce-live"
+        }
+      ]
+    },
+    {
+      "country": "Ontario",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en/playlist.m3u8",
+          "channel_id": "ontario-house-en"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ola.org/en/legislative-business/video",
+          "channel_id": "ontario-house-en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
+          "channel_id": "ontario-house-en-cc"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ola.org/en/legislative-business/video",
+          "channel_id": "ontario-house-en-cc"
+        },
+        {
+          "kind": "hls",
+          "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/rm151-en/playlist.m3u8",
+          "channel_id": "ontario-rm151-en"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ola.org/en/legislative-business/video",
+          "channel_id": "ontario-rm151-en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/committee_1-en/playlist.m3u8",
+          "channel_id": "ontario-committee-1-en"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ola.org/en/legislative-business/video",
+          "channel_id": "ontario-committee-1-en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/committee_2-en/playlist.m3u8",
+          "channel_id": "ontario-committee-2-en"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ola.org/en/legislative-business/video",
+          "channel_id": "ontario-committee-2-en"
+        },
+        {
+          "kind": "hls",
+          "url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/media-en/playlist.m3u8",
+          "channel_id": "ontario-media-en"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.ola.org/en/legislative-business/video",
+          "channel_id": "ontario-media-en"
+        }
+      ]
+    },
+    {
+      "country": "Oregon",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.oregonlegislature.gov/",
+          "channel_id": "us-or-legislature-video"
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
+          "channel_id": "portugal-artv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parlamento.pt/",
+          "channel_id": "portugal-artv"
+        }
+      ]
+    },
+    {
+      "country": "Prince Edward Island",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.assembly.pe.ca/watch-live",
+          "channel_id": "prince-edward-island-assembly-live"
+        }
+      ]
+    },
+    {
+      "country": "Quebec",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal01/playlist.m3u8",
+          "channel_id": "quebec-canal01"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal01"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal02/playlist.m3u8",
+          "channel_id": "quebec-canal02"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal02"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal03/playlist.m3u8",
+          "channel_id": "quebec-canal03"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal03"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal04/playlist.m3u8",
+          "channel_id": "quebec-canal04"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal04"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal05/playlist.m3u8",
+          "channel_id": "quebec-canal05"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal05"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal06/playlist.m3u8",
+          "channel_id": "quebec-canal06"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal06"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal07/playlist.m3u8",
+          "channel_id": "quebec-canal07"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal07"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal08/playlist.m3u8",
+          "channel_id": "quebec-canal08"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal08"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal09/playlist.m3u8",
+          "channel_id": "quebec-canal09"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal09"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal10/playlist.m3u8",
+          "channel_id": "quebec-canal10"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal10"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal11/playlist.m3u8",
+          "channel_id": "quebec-canal11"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal11"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal12/playlist.m3u8",
+          "channel_id": "quebec-canal12"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal12"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal13/playlist.m3u8",
+          "channel_id": "quebec-canal13"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal13"
+        },
+        {
+          "kind": "hls",
+          "url": "https://cdn3.wowza.com/5/SVEySlNEQ0FOWXlS/diffusion/canal14/playlist.m3u8",
+          "channel_id": "quebec-canal14"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/en-direct-webdiffusion.html",
+          "channel_id": "quebec-canal14"
+        }
+      ]
+    },
+    {
+      "country": "Queensland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.qld.gov.au/Work-of-the-Assembly/Live-and-Archived-Broadcasts/live",
+          "channel_id": "queensland-parliament-live"
+        }
+      ]
+    },
+    {
+      "country": "Rhode Island",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://capitoltvri.cablecast.tv/",
+          "channel_id": "us-ri-capitol-tv"
+        }
+      ]
+    },
+    {
+      "country": "Saskatchewan",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.legassembly.sk.ca/legislative-business/watch-legislative-proceedings/",
+          "channel_id": "saskatchewan-legislative-proceedings"
+        }
+      ]
+    },
+    {
+      "country": "Scotland",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.scottishparliament.tv/",
+          "channel_id": "scottish-parliament-tv"
+        }
+      ]
+    },
+    {
+      "country": "Slovakia",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
+          "channel_id": "slovakia-tv-nrsr"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.nrsr.sk/",
+          "channel_id": "slovakia-tv-nrsr"
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
+          "channel_id": "spain-canal-parlamento"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congreso.es/",
+          "channel_id": "spain-canal-parlamento"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
+          "channel_id": "spain-congreso-directo-1"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+          "channel_id": "spain-congreso-directo-1"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+          "channel_id": "spain-congreso-directo-2"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+          "channel_id": "spain-congreso-directo-2"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
+          "channel_id": "spain-congreso-directo-3"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+          "channel_id": "spain-congreso-directo-3"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
+          "channel_id": "spain-congreso-directo-4"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+          "channel_id": "spain-congreso-directo-4"
+        },
+        {
+          "kind": "hls",
+          "url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
+          "channel_id": "spain-congreso-directo-5"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+          "channel_id": "spain-congreso-directo-5"
+        }
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
+          "channel_id": "swiss-national-council-live"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.parlament.ch/en/nr/livestream",
+          "channel_id": "swiss-national-council-live"
+        }
+      ]
+    },
+    {
+      "country": "Taiwan",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliamentarytv.org.tw/",
+          "channel_id": "taiwan-parliamentary-tv"
+        }
+      ]
+    },
+    {
+      "country": "Texas",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://capitol.texas.gov/",
+          "channel_id": "us-tx-legislature-broadcasts"
+        }
+      ]
+    },
+    {
+      "country": "Thailand",
+      "results": [
+        {
+          "kind": "hls",
+          "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+          "channel_id": "thailand-parliament-tv"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://tpchannel.org/broadcasts/tv",
+          "channel_id": "thailand-parliament-tv"
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+          "channel_id": "uk-parliament-youtube"
+        }
+      ]
+    },
+    {
+      "country": "United Nations",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://webtv.un.org/en/schedule",
+          "channel_id": "un-web-tv"
+        }
+      ]
+    },
+    {
+      "country": "United States",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://live.house.gov/",
+          "channel_id": "us-house-floorcast"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.senate.gov/floor/",
+          "channel_id": "us-senate-floor-webcast"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.congress.gov/committees/video",
+          "channel_id": "us-house-committee-video"
+        },
+        {
+          "kind": "official_page",
+          "url": "https://www.senate.gov/committees/hearings_meetings.htm",
+          "channel_id": "us-senate-committee-webcasts"
+        }
+      ]
+    },
+    {
+      "country": "Utah",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://le.utah.gov/",
+          "channel_id": "us-ut-legislature-live"
+        }
+      ]
+    },
+    {
+      "country": "Valencia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://mediateca.cortsvalencianes.es/live",
+          "channel_id": "valencia-canal-corts"
+        }
+      ]
+    },
+    {
+      "country": "Victoria",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.vic.gov.au/watch/",
+          "channel_id": "victoria-parliament-watch"
+        }
+      ]
+    },
+    {
+      "country": "Wales",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.senedd.tv/",
+          "channel_id": "senedd-tv"
+        }
+      ]
+    },
+    {
+      "country": "Washington",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://tvw.org/",
+          "channel_id": "us-wa-legislature-tvw"
+        }
+      ]
+    },
+    {
+      "country": "Western Australia",
+      "results": [
+        {
+          "kind": "official_page",
+          "url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+          "channel_id": "western-australia-parliament-live"
+        }
+      ]
+    }
+  ]
+}

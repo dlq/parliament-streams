@@ -93,18 +93,19 @@ Done:
 - UK Parliament schedule metadata is implemented through the official What's on
   Calendar API. Parliamentlive.tv playback and Red Bee stream access remain
   separate research questions.
-- As of 2026-10-01, the local candidate directory contains one researching
-  Czech record and three promoted records (two Netherlands and one Swiss).
+- As of 2026-10-22, the local candidate directory contains one researching
+  Chile Sala IV record and six promoted records. Czech live HLS, Sweden
+  Webb-TV, and Finland webcasts are the latest published additions.
   Brazil native playback was restored after renewed validation on 2026-09-11;
   its later stable-stream regression issue closed after recovery.
 - `data/fallbacks.json` now records official event, player, broadcaster, and
   provider fallback surfaces separately from permanent channel records. The
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
-- Schema v8 adds compact per-entry validation history. As of 2026-10-01, 100 of
-  101 catalogue entries link to retained dated health reports, and the public
-  site surfaces the latest retained check in source details. The Swiss National
-  Council still needs a retained report incorporated into that history.
+- Schema v8 adds compact per-entry validation history. As of 2026-10-22, all
+  104 catalogue entries link to retained dated health reports, including the
+  Swiss National Council. The public site surfaces the latest retained check
+  in source details.
 - Validation-history refresh and drift checking are available through Make and
   the CLI; the drift check is part of `make verify`.
 - The public site now labels each source row as playable, link-out, fallback, or
@@ -123,8 +124,8 @@ Done:
 - The 2026-10-01 scheduled-audit follow-up repaired the New Zealand and U.S.
   Senate official links, restored technically validated Thailand playback,
   and recorded six exact France/Senate event-manifest decisions. One Czech
-  Chamber of Deputies candidate remains researching because the documented
-  master is reachable but its child playlists returned 404 during follow-up.
+  Chamber of Deputies candidate remained researching after that follow-up;
+  active media and browser decode later passed and it was promoted on October 22.
 
 Retired from the active project:
 
@@ -144,7 +145,7 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 38 of 101 catalogue entries use a permission status ending in
+Current queue: 38 of 104 catalogue entries use a permission status ending in
 `pending_review`. Ten are newly added U.S. official-page records awaiting a
 source-specific terms review; the previous 28-entry queue retains its dated
 classification.
@@ -415,11 +416,10 @@ Tier 1/Tier 2 candidate queue.
 
 Staged approach:
 
-1. Review the Czech Chamber of Deputies candidate from the 2026-10-01 discovery
-   pass during an active sitting. Official player and embedding instructions,
-   identity, and schedule evidence are documented, but playable media still
-   needs confirmation. Keep the remaining Tier 1 national gaps as the next
-   discovery priority.
+1. The Czech Chamber candidate passed active media and browser decode checks
+   and was promoted on 2026-10-22. Sweden and Finland now have official-page
+   records. Prioritize the remaining Tier 1 gaps, the Chile Sala IV candidate,
+   and active-sitting revalidation of Swiss/Estonian research routes.
 2. Improve official-player, event-based, and supported YouTube discovery before
    relying on direct-manifest discovery in lower-yield countries.
 3. Add a canonical, schema-validated Tier 3 discovery watchlist without treating
@@ -740,17 +740,17 @@ Near-term:
    description. Do not equate missing evidence with confirmed unavailability.
 
 Current measurable review queues, last reconciled with the catalogue on
-2026-10-01:
+2026-10-22:
 
-- 38 of 101 catalogue entries still use a permission status ending in
+- 38 of 104 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
   Breakdown: 18 official-vendor HLS, 14 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 101 entries retain at least one `unknown` media-accessibility field. Start
+- All 104 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
-  Breakdown: 42 national, 53 sub-national, and 6 supranational entries.
+  Breakdown: 45 national, 53 sub-national, and 6 supranational entries.
   Ontario caption availability and source-dependent sign-language evidence is
   documented across its six feeds; Scottish Parliament TV, Senedd TV, Northern
   Ireland Assembly TV, BC Legislature webcasts, and the three Tweede Kamer

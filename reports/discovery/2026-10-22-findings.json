@@ -1,0 +1,560 @@
+{
+  "checked_at": "2026-10-22T13:53:54Z",
+  "counts": {
+    "validated": 61,
+    "catalogued": 41,
+    "reviewed": 5,
+    "review": 15
+  },
+  "findings": [
+    {
+      "country": "Canada",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Denmark",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le303.euddn.net/0f576c1cba758fce02c02eab04cc177fd3eff7154af13f6154085925ab4cd55724b87985801796edd6bb6d223fdc2fba3869ff9e2576db0a56e0f5a9d0912f1afd0025994870666d138979023add32316870a7eedb71ad4030d97fde48c0463f572ea27f530511d84c3fda27a4ee31ba171d3ff09b6c94f00328dcb30eee58bd235e26a5a04f1768c4bde455494de00425fdab55d2a8eccb109bff96b44e4d1c40017cb3a74a3f5e724d40745abfba48/smil:rk_live_2.smil/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "dash",
+      "url": "https://le303.euddn.net/dbfe4bf1b4396c8b88e0e54674fa0ae67db4fd0846dd7e8ecbc05fbbd450088538884aa0999d402053a3ee72b194da1d1fcfafa91c07118e377038aa89a42e3653408d0b1e6579d47be484eddb486ce4e64ab46584cd1577e2ff1518186c16944204a3c235954d70180547e7902f6edd4e809212545f0ee8a9a1038c7aa57adb644e119baf74129c114b6fd936dbf53956c61b13b3ede9a3bb804f387191ae99c45e3c6bbeadc488313d6c4c4f098d35/smil:rk_live_1.smil/manifest.mpd",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "dash",
+      "url": "https://le304.euddn.net/47b5b40127df65dc285d7d23f4725feba9c0d8e8d3739239c6285c990d5bb99600790b687e6094dfd1dd947c14ed907bf3ed4bab9445829de5efc16cc95b8354eb7759df6c85e4bef2bcef04a5d7568477f8f319af5f1464a9765ad1ce491490d44ea6f951e6d9cfa334032ae642218e86720ef23a4e4604b7bb9ecbfa61bb8569d24b5dc04b56d2f48f1bf48ec6b5c5faccc4fc06f25ae91c4baddb7f89d88d438d791b2765e3faeb72f0994327137a/smil:rk_live_1.smil/manifest.mpd",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le305.euddn.net/bdbfc9a94342ed62cdfcc40c734a9708bea63acf489c9091ff27064e37dd90b63f3f8210e4352fffaf3dcbe2b2a99eb02aab6e2bf604cd94ef6eada69b6409a92815443f32949455a876a24bf6a518fb08bca8625afb6294bc18d73a879030a78734365d6587b9ac9bad8fc2bfb6bb6ae13a23811f42cc8fa27cf7e8c2f2c1c96646ce7df341373e7372769ba7730f21d6c7f47bd40f7af9df21213df9db1b343acf78b8ee1383ba0b65fc4ca121422c/smil:rk_live_1.smil/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://le306.euddn.net/65f8795cdd73cda504b305448f2c83a7e2171a058fab6dd1b0bc80d7b958c5059a9987f0213535300c270ab0f9f22425a8975a0aae72eac5179c9cf274fc22d9f2d3d670fe2db89a618a32bbddf9841e84247a3629c582faf291791996bef34e45be7abc7a44ef7e5baa8d76fca7d9fd6173909290e5aa0f0ea9cc90ad668db9d5ebd9f51ddf7a7c364da191bcc2c8fb418676242fabce952e3b11c4023fd6e78bb2e187a7a7e56ae8c19bd0e23f3756/smil:rk_live_1.smil/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "dash",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/manifest.mpd?c=8005",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_1.smil/playlist.m3u8?c=8005",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Germany",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Greece",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://ert-ucdn.broadpeak-aas.com/bpk-tv/VOULITV/default/index.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/evenementenkanaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://livestreaming.b67buv2.tweedekamer.nl/live/plenairezaal/index.m3u8?hd=1&keyframes=1&subtitles=live",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "New Zealand",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/playlist_dvr_timeshift-0-43200.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5500/chunks_dvr_timeshift-0-43200.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://httpcache1.dna.contentdelivery.net/90415-cachemn1/stortinget_n/stortingssalen_web/stortinget_n/stortingssalen_5505/chunks_dvr_timeshift-0-43200.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Portugal",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://stream3.camara.gov.br/tv1/video1_stream.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/chunklist_w1718348482.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tls-cl.cdnz.cl/streamdiptudadosa/live/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "http://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "India",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/e4182054dce340da9e0ff38b6b3658a4/index.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "India",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/fff8f20221d5456e8922e689d71dedc3/index.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Israel",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Israel",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/288p/chunklist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/576p/chunklist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?id=SENATO_1_001&video_id=13440&token=empty&authority_instance_id=empty&profile_id=empty&application_installation_id=empty&uuid=empty&subscriber_id=empty&application_id=empty&detected_delivery_method=hls&playlist_template=nginx",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Mongolia",
+      "tier": "tier2",
+      "kind": "dash",
+      "url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Slovakia",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Thailand",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tv-live.tpchannel.org/live/tv.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Thailand",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "catalogued",
+      "disposition": null
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "http://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze.m3u8",
+      "evidence": "reports/health/2026-10-22-tier1-static.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_hd.m3u8?offsetSeconds=0&url=0",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "kind": "hls",
+      "url": "https://pspcr-ott-live.ssl.cdn.cra.cz/channels/ps-stream1/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tls-cl.cdnz.cl/salaiv/live/chunklist_w1420006312.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://tls-cl.cdnz.cl/salaiv/live/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://anorigin.vodalys.com/live/live36/index36_19612474.m3u8?DVR",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19612474.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19612474.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19612474.m3u8?DVR",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Guyana",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1792727845~acl=%2Fa2d4574e-af34-4d76-933b-4bfb31dea34f%2Fpsid%3D7782b916e6be53f476b329433666dc2a83c6d7811792677185%2F%2A~hmac=5fbbaaa72a9ca130d8c77ac7a747e092f142aef5c203ec7680bcc729745244b2/a2d4574e-af34-4d76-933b-4bfb31dea34f/psid=7782b916e6be53f476b329433666dc2a83c6d7811792677185/v2/playlist/av/primary/sub/315579622-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&omit=av1-hevc-opus&pathsig=8c953e4f~Y9JdWaTfqlDNdizvVvJS6w0H-XEz7_E_iJMbjXRxAf8&qsr=1&r=dXM%3D&rh=3uD0Is&sf=fmp4",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Malaysia",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Malaysia",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.270.tsc.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.tsc.m3u8",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "review",
+      "disposition": null
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://canalgov-stream.ebc.com.br/index.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "reviewed",
+      "disposition": "out_of_scope"
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "reviewed",
+      "disposition": "third_party"
+    },
+    {
+      "country": "Moldova",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "reviewed",
+      "disposition": "third_party"
+    },
+    {
+      "country": "South Korea",
+      "tier": "tier2",
+      "kind": "hls",
+      "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+      "evidence": "reports/health/2026-10-22-tier2-static.json",
+      "status": "reviewed",
+      "disposition": "out_of_scope"
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "kind": "dash",
+      "url": "https://houseliveprod-f9h4cpb9dyb8gegg.a01.azurefd.net/east/2026-10-19T09-51-50/manifest.mpd",
+      "evidence": "reports/health/2026-10-22-discovery-browser.json",
+      "status": "reviewed",
+      "disposition": "event_specific"
+    }
+  ]
+}

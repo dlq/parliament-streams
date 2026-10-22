@@ -66,7 +66,9 @@ CANONICAL_CHANNEL_COUNT = len(canonical_catalogue()["channels"])
 
 
 def cloned_channel(channel_id="test-assembly", qid="Q123456789"):
-    channel = copy.deepcopy(canonical_catalogue()["channels"][-19])
+    channel = copy.deepcopy(
+        next(c for c in canonical_catalogue()["channels"] if c["id"] == "navarre-parliament-live")
+    )
     channel["id"] = channel_id
     channel["name"] = "Test Assembly Live"
     channel["external_ids"]["wikidata_qid"] = qid

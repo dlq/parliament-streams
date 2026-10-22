@@ -4,6 +4,23 @@ This is a working research log, not an endorsed stream directory or legal assess
 
 Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `PLANS.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
 
+## 2026-10-22 In-depth Audit
+
+Audited all 101 previously published entries, 78 catalogue and 76 discovery
+browser pages, and the 25/46-country discovery watchlists. Existing HTTP results
+were 82 OK, five warnings, and 14 errors. Media sampling passed for 41 existing
+HLS feeds; failures and access blocks remain distinct from permanent closures.
+
+Czech Chamber Stream 1 now has advancing live media and successful HLS.js decode
+and is promoted. Sweden and Finland are added as official video portal link-outs.
+Switzerland and Estonia feed 2 are withheld from native playback pending media
+revalidation; their source and rights evidence remains recorded. Chile Sala IV
+is retained as a researching room-feed candidate. Fourteen exact event/VOD URLs
+were triaged without broadly suppressing future discoveries. Catalogue: 104;
+pending rights: 38; strict/broader HLS playlists: four/38.
+
+See the [full audit and retained evidence](reports/discovery/2026-10-22-in-depth-audit.md).
+
 ## 2026-10-01 Scheduled Audit Follow-up
 
 The October 1 daily and monthly reports were reviewed together with live

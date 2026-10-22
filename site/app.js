@@ -98,7 +98,10 @@ const jurisdictionFlagAssets = {
   Chile: "assets/flags/cl.svg",
   "Costa Rica": "assets/flags/cr.svg",
   "Council of Europe": "assets/flags/eu.svg",
+  "Czech Republic": "assets/flags/cz.svg",
   Denmark: "assets/flags/dk.svg",
+  Finland: "assets/flags/fi.svg",
+  Sweden: "assets/flags/se.svg",
   "El Salvador": "assets/flags/sv.svg",
   Estonia: "assets/flags/ee.svg",
   "European Union": "assets/flags/eu.svg",
@@ -154,7 +157,7 @@ const jurisdictionFlagAssets = {
 
 const jurisdictionCodes = {
   Australia: "AU", Brazil: "BR", Canada: "CA", Chile: "CL", "Costa Rica": "CR",
-  Denmark: "DK", "El Salvador": "SV", Estonia: "EE", France: "FR", Germany: "DE",
+  "Czech Republic": "CZ", Finland: "FI", Sweden: "SE", Denmark: "DK", "El Salvador": "SV", Estonia: "EE", France: "FR", Germany: "DE",
   Greece: "GR", India: "IN", Ireland: "IE", Israel: "IL", Italy: "IT", Luxembourg: "LU",
   Mongolia: "MN", Netherlands: "NL", "New Zealand": "NZ", Norway: "NO", Portugal: "PT",
   Slovakia: "SK", Spain: "ES", Taiwan: "TW", Thailand: "TH", "United Kingdom": "GB",

@@ -51,9 +51,9 @@ These entries need either written clarification or a future dated terms review.
 
 ## Current Open Queue
 
-As of 2026-10-01:
+As of 2026-10-22:
 
-- 38 of 101 catalogue entries remain permission-pending.
+- 38 of 104 catalogue entries remain permission-pending.
 - The previous 28-entry review queue remains classified in the dated report.
 - Ten newly published U.S. official-page records need source-specific terms
   review or written clarification before any playback posture is reconsidered.

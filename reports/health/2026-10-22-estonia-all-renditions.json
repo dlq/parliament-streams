@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-22T14:08:23.091016+00:00",
+  "master": {
+    "status": 200,
+    "final_url": "https://le303.euddn.net/33625823dfd22f6395c57ff0f86529acf80d5d29459a53707c3c65b9d59f0433e0b5345e12adae7a29c022a748e9961d9952c2f0126460751f480f72221d286b9c727fc6e4b1049987f3a3402656b966969d913f2e45deaae58d9b4aee2228f230ba010baeb01ee58ad07219486e19b88992729334c901f150a28617fa348821d3e29f0d0ef673c811f4e209cacc222c5723a8ff3fac86579bcc63aed992d250899e2a217506ab978ef974c6daca2f00/smil:rk_live_2.smil/playlist.m3u8",
+    "content_type": "application/vnd.apple.mpegurl",
+    "cors": "*",
+    "bytes_sampled": 361
+  },
+  "advertised_variants": 4,
+  "results": [
+    {
+      "id": "estonia-2-rendition-0",
+      "url": "https://le303.euddn.net/33625823dfd22f6395c57ff0f86529acf80d5d29459a53707c3c65b9d59f0433e0b5345e12adae7a29c022a748e9961d9952c2f0126460751f480f72221d286b9c727fc6e4b1049987f3a3402656b966969d913f2e45deaae58d9b4aee2228f230ba010baeb01ee58ad07219486e19b88992729334c901f150a28617fa348821d3e29f0d0ef673c811f4e209cacc222c5723a8ff3fac86579bcc63aed992d250899e2a217506ab978ef974c6daca2f00/smil:rk_live_2.smil/chunklist_b2691072_slen.m3u8",
+      "master": {
+        "status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      "result": "playlist_unavailable"
+    },
+    {
+      "id": "estonia-2-rendition-1",
+      "url": "https://le303.euddn.net/33625823dfd22f6395c57ff0f86529acf80d5d29459a53707c3c65b9d59f0433e0b5345e12adae7a29c022a748e9961d9952c2f0126460751f480f72221d286b9c727fc6e4b1049987f3a3402656b966969d913f2e45deaae58d9b4aee2228f230ba010baeb01ee58ad07219486e19b88992729334c901f150a28617fa348821d3e29f0d0ef673c811f4e209cacc222c5723a8ff3fac86579bcc63aed992d250899e2a217506ab978ef974c6daca2f00/smil:rk_live_2.smil/chunklist_b1667072_slen.m3u8",
+      "master": {
+        "status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      "result": "playlist_unavailable"
+    },
+    {
+      "id": "estonia-2-rendition-2",
+      "url": "https://le303.euddn.net/33625823dfd22f6395c57ff0f86529acf80d5d29459a53707c3c65b9d59f0433e0b5345e12adae7a29c022a748e9961d9952c2f0126460751f480f72221d286b9c727fc6e4b1049987f3a3402656b966969d913f2e45deaae58d9b4aee2228f230ba010baeb01ee58ad07219486e19b88992729334c901f150a28617fa348821d3e29f0d0ef673c811f4e209cacc222c5723a8ff3fac86579bcc63aed992d250899e2a217506ab978ef974c6daca2f00/smil:rk_live_2.smil/chunklist_b1001472_slen.m3u8",
+      "master": {
+        "status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      "result": "playlist_unavailable"
+    },
+    {
+      "id": "estonia-2-rendition-3",
+      "url": "https://le303.euddn.net/33625823dfd22f6395c57ff0f86529acf80d5d29459a53707c3c65b9d59f0433e0b5345e12adae7a29c022a748e9961d9952c2f0126460751f480f72221d286b9c727fc6e4b1049987f3a3402656b966969d913f2e45deaae58d9b4aee2228f230ba010baeb01ee58ad07219486e19b88992729334c901f150a28617fa348821d3e29f0d0ef673c811f4e209cacc222c5723a8ff3fac86579bcc63aed992d250899e2a217506ab978ef974c6daca2f00/smil:rk_live_2.smil/chunklist_b540672_slen.m3u8",
+      "master": {
+        "status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      "result": "playlist_unavailable"
+    }
+  ]
+}

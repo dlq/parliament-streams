@@ -9,11 +9,13 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-10-01, the Czech Chamber of Deputies candidate remains `researching`: its
-officially documented HLS master is reachable, but active-sitting child-playlist
-and media validation is still needed. See the
-[October triage report](../reports/discovery/2026-10-01-candidate-triage.md).
-The other three JSON files are promoted records retained for audit history;
+As of 2026-10-22, one Chile Chamber Sala IV candidate remains `researching`.
+Its official-page discovery and sample media passed, but room identity,
+schedule mapping, and rights scope still need review. The Czech chamber feed
+passed active live-media and browser-decode checks and was promoted; Sweden
+and Finland were added as official-page link-outs. See the
+[in-depth audit](../reports/discovery/2026-10-22-in-depth-audit.md).
+Six promoted records are retained for audit history;
 `data/channels.json` governs their current published status. Event,
 official-player, and provider fallback ideas should normally start in
 `data/fallbacks.json` instead of becoming channel candidates unless they have a

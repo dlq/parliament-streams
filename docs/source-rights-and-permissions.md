@@ -72,17 +72,28 @@ GitHub. The project will promptly disable playback while the report is reviewed.
 | Taiwan Parliamentary TV | Link-out, `embed_only` | [Parliamentary TV](https://www.parliamentarytv.org.tw/) | Link-out only in the current catalogue. Terms not yet reviewed. | Keep link-out only pending terms review. |
 | Costa Rica Assembly YouTube | Official playlist embed, `embed_only` | [Asamblea CRC YouTube](https://www.youtube.com/@AsambleaCRC), [YouTube embed guidance](https://support.google.com/youtube/answer/171780) | The catalogue uses YouTube's privacy-enhanced official uploads-playlist iframe and does not extract manifests. The stable live page can identify a current or upcoming event, but the embedded playlist is not live-only. | Use the official YouTube embed or channel live-page link only. |
 
-## Czech discovery candidate
+## Czech and Nordic additions
 
 The [Chamber of Deputies Stream 1 page](https://www.psp.cz/stream/1) explicitly
 publishes its HTTPS HLS endpoint for external applications and alternative
 online players, and provides third-party iframe instructions. This documents
 live playback and embedding; it does not establish unrestricted recording,
 modification, or redistribution. The [site statement](https://www.psp.cz/sqw/hp.sqw?k=32)
-retains Office ownership and restricts bulk document copying. Keep the
-[candidate](../candidates/czech-chamber-of-deputies.json) in research until an
-active-sitting check confirms playable media. All four child playlists returned
-404 during the October 1 follow-up despite a reachable master.
+retains Office ownership and restricts bulk document copying. The
+[candidate](../candidates/czech-chamber-of-deputies.json) passed active-sitting
+media and browser decode checks on 2026-10-22 and was promoted with sitting-only
+availability. October 1 rendition failures remain dated evidence, not the
+current playback conclusion.
+
+Sweden Riksdag and Finland Eduskunta were added as official-page link-outs on
+2026-10-22. Sweden's [rights guidance](https://www.riksdagen.se/sv/om-webbplatsen/rattigheter-for-bild-film-och-webb-tv/)
+requires source credit for webcast use. Finland's
+[webcast terms](https://verkkolahetys.eduskunta.fi/fi/kayttoehdot) allow linking
+and unaltered use with source attribution, preserved context, no reused marks,
+and no implied endorsement; credit YLE when it produces the signal, otherwise
+Parliament. No permanent direct feed or unrestricted recording licence is
+asserted for these link-out records. See the
+[October 22 audit](../reports/discovery/2026-10-22-in-depth-audit.md).
 
 ## Pending Rights Review
 

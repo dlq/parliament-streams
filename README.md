@@ -304,7 +304,10 @@ repository-wide research summaries are:
 - `reports/epg-discovery-2026-08-24.md`
 - `reports/us-federal-state-candidates-2026-08-24.md`
 
-The latest targeted scheduled-audit follow-up is recorded in
+The latest stream and official-source expansion review is the
+[October 22 in-depth audit](reports/discovery/2026-10-22-in-depth-audit.md).
+
+The earlier targeted scheduled-audit follow-up is recorded in
 [October candidate triage](reports/discovery/2026-10-01-candidate-triage.md)
 and the [CodeQL review](reports/codeql-review-2026-10-01.md).
 
@@ -396,11 +399,10 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of the 2026-09-11 discovery pass, all 101 channel records have at least one
-official schedule, agenda, meeting, or programme surface recorded. This is
-source coverage, not programme-guide coverage: 17 unique URLs have implemented
-parsers. As of 2026-10-01, there are 90 unique recorded schedule URLs: 17
-implemented and 73 planned or link-only research sources. See
+As of 2026-10-22, all 104 channel records have at least one official schedule,
+agenda, meeting, or dated video-event surface recorded. This is source coverage,
+not programme-guide coverage: 17 unique URLs have implemented parsers, while
+76 of the 93 recorded URLs remain planned or link-only research sources. See
 `reports/epg-discovery-2026-08-24.md` for the dated source-by-source discovery
 baseline.
 

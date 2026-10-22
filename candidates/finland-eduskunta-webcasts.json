@@ -1,0 +1,75 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Official parliamentary video portal, identity, terms, and programme/event surface reviewed on 2026-10-22. Add as link-out; no stable direct stream asserted.",
+    "Official portal, identity, rights and event-directory evidence verified; link-out only.",
+    "Promoted to the canonical catalogue on 2026-10-22."
+  ],
+  "channel": {
+    "id": "finland-eduskunta-webcasts",
+    "name": "Finland Eduskunta Webcasts",
+    "jurisdiction_level": "national",
+    "country_or_region": "Finland",
+    "legislature": "Parliament of Finland",
+    "external_ids": {
+      "wikidata_qid": "Q643412",
+      "ipu_country_code": "FI",
+      "ipu_parliament_code": "FI",
+      "ipu_chamber_code": "FI-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q643412",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/FI/FI-LC01/",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+      }
+    ],
+    "language": "Finnish / Swedish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://verkkolahetys.eduskunta.fi/",
+    "provenance_note": "Official parliamentary live/archived video portal checked on 2026-10-22. Kept as an official-page link-out because the audit did not establish a permanent channel-level HLS route; individual event and recording manifests must not be substituted for a live channel.",
+    "technical_status": "link_only",
+    "stability_risk": "low",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Live-feed caption, sign-language, and audio-description coverage was not established during this audit; unknown does not mean unavailable."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot",
+        "method": "GET",
+        "kind": "official_event_video_directory",
+        "scraper_status": "planned"
+      }
+    ],
+    "permission": {
+      "status": "explicit_reuse_with_conditions",
+      "summary": "Official webcast terms allow free links and unaltered use subject to source credit and context restrictions. Credit YLE when it produces the live image, otherwise Parliament; do not reuse Parliament marks or imply endorsement. This record uses official-page link-out only.",
+      "evidence": [
+        "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot",
+        "https://verkkolahetys.eduskunta.fi/"
+      ],
+      "recommendation": "Use the official webcast portal with clear institutional attribution. Respect source-specific conditions; do not infer a permanent HLS channel from event or archive manifests."
+    }
+  }
+}

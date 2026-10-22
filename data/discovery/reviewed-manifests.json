@@ -1,6 +1,6 @@
 {
   "decision_version": 1,
-  "updated_on": "2026-10-01",
+  "updated_on": "2026-10-22",
   "description": "Durable review outcomes for validated manifests that should not be promoted as parliamentary catalogue playback endpoints.",
   "decisions": [
     {
@@ -9,7 +9,9 @@
       "disposition": "out_of_scope",
       "reviewed_on": "2026-08-17",
       "reason": "Canal Gov is the Brazilian federal executive branch broadcaster, not a parliamentary service.",
-      "evidence": ["https://canalgov.ebc.com.br/sobre"]
+      "evidence": [
+        "https://canalgov.ebc.com.br/sobre"
+      ]
     },
     {
       "country": "Indonesia",
@@ -17,7 +19,9 @@
       "disposition": "insecure_legacy",
       "reviewed_on": "2026-08-17",
       "reason": "The endpoint uses cleartext HTTP and a bare IP address, so an HTTPS catalogue page cannot embed it safely. The official TVR Parlemen page is catalogued instead.",
-      "evidence": ["https://tvrparlemen.dpr.go.id/streaming/"]
+      "evidence": [
+        "https://tvrparlemen.dpr.go.id/streaming/"
+      ]
     },
     {
       "country": "Italy",
@@ -25,7 +29,10 @@
       "disposition": "third_party",
       "reviewed_on": "2026-08-17",
       "reason": "Radio Radicale is a third-party relay. The official Camera dei Deputati WebTV page is catalogued instead.",
-      "evidence": ["https://webtv.camera.it/", "https://www.radioradicale.it/tv/camera-diretta"]
+      "evidence": [
+        "https://webtv.camera.it/",
+        "https://www.radioradicale.it/tv/camera-diretta"
+      ]
     },
     {
       "country": "Moldova",
@@ -33,7 +40,10 @@
       "disposition": "third_party",
       "reviewed_on": "2026-08-17",
       "reason": "Privesc.eu is a third-party relay. The Parliament of Moldova official live page and YouTube channel are catalogued instead.",
-      "evidence": ["https://parlament.md/live-md.nspx", "https://www.privesc.eu/"]
+      "evidence": [
+        "https://parlament.md/live-md.nspx",
+        "https://www.privesc.eu/"
+      ]
     },
     {
       "country": "South Korea",
@@ -41,7 +51,10 @@
       "disposition": "out_of_scope",
       "reviewed_on": "2026-08-17",
       "reason": "KTV is a national government policy broadcaster rather than the National Assembly's NATV parliamentary service.",
-      "evidence": ["https://www.natv.go.kr/", "https://www.ktv.go.kr/content/contentMain.do?content_id=602446"]
+      "evidence": [
+        "https://www.natv.go.kr/",
+        "https://www.ktv.go.kr/content/contentMain.do?content_id=602446"
+      ]
     },
     {
       "country": "United States",
@@ -49,7 +62,10 @@
       "disposition": "event_specific",
       "reviewed_on": "2026-08-17",
       "reason": "The manifest contains a timestamped HouseLive event identifier and is not a stable reusable floor-stream endpoint. Stable official House and Senate watch pages are catalogued instead.",
-      "evidence": ["https://live.house.gov/", "https://www.house.gov/watch-houselive"]
+      "evidence": [
+        "https://live.house.gov/",
+        "https://www.house.gov/watch-houselive"
+      ]
     },
     {
       "country": "France",
@@ -119,6 +135,146 @@
       "evidence": [
         "https://www.senate.gov/floor/",
         "https://github.com/dlq/parliament-streams/actions/runs/36877188739"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://anorigin.vodalys.com/live/live36/index36_19612474.m3u8?DVR",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Date/session-specific live36 media for event 19612474, discovered on the official Assembly live page. Keep event resolution separate from a permanent channel endpoint.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.php"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_1_19612474.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Date/session-specific live36 media for event 19612474, discovered on the official Assembly live page. Keep event resolution separate from a permanent channel endpoint.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.php"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://anorigin.vodalys.com/live/live36/stream36_2_19612474.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Date/session-specific live36 media for event 19612474, discovered on the official Assembly live page. Keep event resolution separate from a permanent channel endpoint.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.php"
+      ]
+    },
+    {
+      "country": "France",
+      "url": "https://videos.assemblee-nationale.fr/live/live36/index36_19612474.m3u8?DVR",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Date/session-specific live36 media for event 19612474, discovered on the official Assembly live page. Keep event resolution separate from a permanent channel endpoint.",
+      "evidence": [
+        "https://videos.assemblee-nationale.fr/direct.php"
+      ]
+    },
+    {
+      "country": "Guyana",
+      "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1792727845~acl=%2Fa2d4574e-af34-4d76-933b-4bfb31dea34f%2Fpsid%3D7782b916e6be53f476b329433666dc2a83c6d7811792677185%2F%2A~hmac=5fbbaaa72a9ca130d8c77ac7a747e092f142aef5c203ec7680bcc729745244b2/a2d4574e-af34-4d76-933b-4bfb31dea34f/psid=7782b916e6be53f476b329433666dc2a83c6d7811792677185/v2/playlist/av/primary/sub/315579622-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&omit=av1-hevc-opus&pathsig=8c953e4f~Y9JdWaTfqlDNdizvVvJS6w0H-XEz7_E_iJMbjXRxAf8&qsr=1&r=dXM%3D&rh=3uD0Is&sf=fmp4",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "The official Parliament homepage loaded an expiring, signed Vimeo VOD playlist. Retain the official-page provenance; an archive/signed-session URL is not a permanent live channel.",
+      "evidence": [
+        "https://www.parliament.gov.gy/"
+      ]
+    },
+    {
+      "country": "United States",
+      "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.270.tsc.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "C-SPAN event.448413 session manifests, not a permanent House or Senate channel. Do not promote event-specific broadcaster media as a standing official legislature feed.",
+      "evidence": [
+        "https://www.c-span.org/"
+      ]
+    },
+    {
+      "country": "United States",
+      "url": "https://m3u8-l.c-spanvideo.org/event/event.448413.tsc.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "C-SPAN event.448413 session manifests, not a permanent House or Senate channel. Do not promote event-specific broadcaster media as a standing official legislature feed.",
+      "evidence": [
+        "https://www.c-span.org/"
+      ]
+    },
+    {
+      "country": "Northern Ireland",
+      "url": "https://live-ak.vimeocdn.com/exp=1792680702~acl=%2F6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4%2F%2A~hmac=f49217d3a96ee3145860f14518685cc974b9dd22d83f1c8141fce47df4ec05d1/6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4/aac/256000/en/chunklist.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Vimeo event/rendition URL observed on the official Assembly TV surface. The existing catalogue records formal-agreement restrictions; do not substitute an ephemeral raw URL for the official link-out.",
+      "evidence": [
+        "https://niassembly.tv/"
+      ]
+    },
+    {
+      "country": "Northern Ireland",
+      "url": "https://live-ak.vimeocdn.com/exp=1792680702~acl=%2F6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4%2F%2A~hmac=f49217d3a96ee3145860f14518685cc974b9dd22d83f1c8141fce47df4ec05d1/6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4/aac/256000/en/chunklist.m3u8?_HLS_skip=YES",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Vimeo event/rendition URL observed on the official Assembly TV surface. The existing catalogue records formal-agreement restrictions; do not substitute an ephemeral raw URL for the official link-out.",
+      "evidence": [
+        "https://niassembly.tv/"
+      ]
+    },
+    {
+      "country": "Northern Ireland",
+      "url": "https://live-ak.vimeocdn.com/exp=1792680702~acl=%2F6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4%2F%2A~hmac=f49217d3a96ee3145860f14518685cc974b9dd22d83f1c8141fce47df4ec05d1/6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4/avc/540p/chunklist.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Vimeo event/rendition URL observed on the official Assembly TV surface. The existing catalogue records formal-agreement restrictions; do not substitute an ephemeral raw URL for the official link-out.",
+      "evidence": [
+        "https://niassembly.tv/"
+      ]
+    },
+    {
+      "country": "Northern Ireland",
+      "url": "https://live-ak.vimeocdn.com/exp=1792680702~acl=%2F6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4%2F%2A~hmac=f49217d3a96ee3145860f14518685cc974b9dd22d83f1c8141fce47df4ec05d1/6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4/avc/540p/chunklist.m3u8?_HLS_skip=YES",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Vimeo event/rendition URL observed on the official Assembly TV surface. The existing catalogue records formal-agreement restrictions; do not substitute an ephemeral raw URL for the official link-out.",
+      "evidence": [
+        "https://niassembly.tv/"
+      ]
+    },
+    {
+      "country": "Northern Ireland",
+      "url": "https://live-ak.vimeocdn.com/exp=1792680702~acl=%2F6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4%2F%2A~hmac=f49217d3a96ee3145860f14518685cc974b9dd22d83f1c8141fce47df4ec05d1/6c3ef39b-a7cb-4823-81de-02d831b55f5a_fmp4/avc/hls.m3u8",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Vimeo event/rendition URL observed on the official Assembly TV surface. The existing catalogue records formal-agreement restrictions; do not substitute an ephemeral raw URL for the official link-out.",
+      "evidence": [
+        "https://niassembly.tv/"
+      ]
+    },
+    {
+      "country": "Northwest Territories",
+      "url": "https://mythos-athanatos.boxcast.com/zeus/vpvzblmeqm4i95tj9nmr/240p-byteranges-ext.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9teXRob3MtYXRoYW5hdG9zLmJveGNhc3QuY29tL3pldXMvdnB2emJsbWVxbTRpOTV0ajlubXIvMjQwcC1ieXRlcmFuZ2VzLWV4dC5tM3U4IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzkyNzg2Mzc4fX19XX0_&Signature=uO2cVh~KYwVgV3g314zsEU5GkLCbMd1CLnhpq8VtCS86S0uR4ogvUZHjCPnnFusqVrl6GVnEm9Tl37Kzkf5Z0pmFZLUtSQFNcvqKnQIxv8YMGDAM4wAyToG30febIa~jrL4K9BYiDrL9UtTOlD9EAA~0xrma4jTy6BDVI69dI3f3CKm7ExFC0gCfDwr54HdWNWkbKGuDNjO1iGDxdeEf8uey8XRGoQm2DXmVkNepQTFTsT1zAhZ9rOnIdmlL5HgaiX78qENtYBeRW5hEPuzkVGDo5L6zR4HJNmr~gudqim5dmwJ8bOjgeJC3Nr~a2VycGVSRzmgV8-LPON7PiIEvCQ__&Key-Pair-Id=APKAJ7GUCBQUK6NTWZCA",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Boxcast event/rendition URL observed from the official Assembly watch page. Preserve official link-out and pending video rights; this is not evidence of a permanent reusable channel.",
+      "evidence": [
+        "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
+      ]
+    },
+    {
+      "country": "Northwest Territories",
+      "url": "https://play.boxcast.com/p/vpvzblmeqm4i95tj9nmr/v/all-byteranges-ext.m3u8?Expires=1792802816&Signature=nlGWlgnYVIf8r-oGuNMhCCst4gw55LycNeWJbRmgs8kbW2WRyevH8cWJEifOhwwdxWMcLYitizQuBhhjKOKiciZoRchEB1fCJ3tw9QnkB2bdiEuDpO6diYnxHMgAPyOCu~13vjF5PwB2kHIrn7wOHpY-25AG8KDq9a97Wd0~g3cEUv3vdtwXXx8tdPYfupmrCMCzNPYWfcJozqjEdqRknqTgY8aBePvZgXaDVqphqhNKKiPZ77FCRe-KZjVZDti2SA7BM3eChrrJZ40RIlmyE3Hr3iHlkt8RHSYNjcoc6-P7fFz2Gp9uoPoUPZJqsKW9iJbaQAKLLS-j~3Hb7IUexA__&Key-Pair-Id=APKAJ7GUCBQUK6NTWZCA",
+      "disposition": "event_specific",
+      "reviewed_on": "2026-10-22",
+      "reason": "Signed, expiring Boxcast event/rendition URL observed from the official Assembly watch page. Preserve official link-out and pending video rights; this is not evidence of a permanent reusable channel.",
+      "evidence": [
+        "https://www.ntlegislativeassembly.ca/legislative-business/watch-session"
       ]
     }
   ]
