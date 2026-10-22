@@ -483,6 +483,11 @@ catalogue's compact validation-history references no longer match retained
 
 ## IPTV playlists and XMLTV
 
+The catalogue and schedule pages include a collapsed **Use in an IPTV app**
+section with public playlist/guide URLs, copy buttons, and VLC desktop setup
+instructions. XMLTV guide coverage is partial and is separate from playlist
+playback. The VLC instructions link to VideoLAN’s official documentation.
+
 Pages generates IPTV exports after each six-hourly schedule collection:
 
 - `data/stable-hls.m3u8`: validated, native-playback HLS with low/medium risk

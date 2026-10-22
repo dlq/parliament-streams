@@ -366,9 +366,10 @@ function applyStaticTranslations() {
   setText("metric-schedules-label", t("metricSchedules"));
   setText("metric-updated-label", t("metricUpdated"));
   setText("catalogue-overview-title", t("catalogueCoverage"));
+  setText("catalogue-information-label", t("catalogueCoverage"));
   document.querySelector("#catalogue-results").setAttribute("aria-label", t("catalogueResults"));
   elements.sortStatus.setAttribute("lang", state.locale);
-  ["source", "jurisdiction", "language", "mode", "access", "use"].forEach((key) => setText(`sort-${key}`, t(key === "language" ? "contentLanguage" : key)));
+  ["source", "jurisdiction", "language", "mode"].forEach((key) => setText(`sort-${key}`, t(key === "language" ? "contentLanguage" : key === "mode" ? "playbackPolicy" : key)));
   setText("method-label", t("care"));
   setText("method-title", t("methodTitle"));
   setText("method-copy", t("methodCopy"));
@@ -443,25 +444,6 @@ function sourceStatusSortValue(channel) {
   };
   const status = sourceStatus(channel);
   return `${order[status] ?? 9}-${sourceStatusLabel(status)}`;
-}
-function accessStatusDescription(value) {
-  return {
-    validated: t("accessValidatedDescription"),
-    needs_review: t("accessNeedsReviewDescription"),
-    link_only: t("accessLinkOnlyDescription"),
-  }[value] ?? "";
-}
-function permissionStatusDescription(value) {
-  return {
-    explicit_reuse_with_conditions: t("useExplicitDescription"),
-    embed_only: t("useEmbedOnlyDescription"),
-    no_third_party_reuse: t("useNoThirdPartyDescription"),
-    personal_use_pending_review: t("usePersonalPendingDescription"),
-    noncommercial_pending_review: t("useNoncommercialPendingDescription"),
-  }[value] ?? "";
-}
-function statusTitle(category, value, description) {
-  return description ? `${category}: ${value} - ${description}` : `${category}: ${value}`;
 }
 function formatDate(value) {
   if (!value) return t("notAvailable");
@@ -544,23 +526,25 @@ function renderList() {
   renderSortHeaders();
   elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
   if (!channels.some((channel) => channel.id === state.selectedId)) {
-    state.selectedId = channels[0]?.id ?? null;
+    state.selectedId = null;
     state.detailSheetOpen = false;
   }
   elements.list.innerHTML = channels.length ? channels.map((channel) => {
     const descriptionId = `${channel.id}-description`;
     const status = sourceStatus(channel);
+    const playable = canPlay(channel);
+    const external = !playable && status !== "research";
+    const actionLabel = playable ? t("watch") : external ? t("official") : sourceStatusLabel(status);
     return `
-    <li>
+    <li class="channel-row">
       <button class="channel-button" type="button" data-channel-id="${channel.id}" aria-pressed="${channel.id === state.selectedId}" aria-describedby="${descriptionId}">
         <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
         <span>${jurisdictionName(channel.country_or_region)}</span>
         <span class="language-list">${languageMarkup(channel.language)}</span>
-        <span><span class="row-tag source-posture source-posture-${slug(status)}" lang="${state.locale}" title="${statusTitle(t("mode"), sourceStatusLabel(status), sourceStatusDescription(status))}">${sourceStatusLabel(status)}</span></span>
-        <span><span class="row-tag status-${slug(channel.technical_status)}" lang="${state.locale}" title="${statusTitle(t("access"), label(channel.technical_status), accessStatusDescription(channel.technical_status))}">${label(channel.technical_status)}</span></span>
-        <span><span class="row-tag status-${slug(channel.permission.status)}" lang="${state.locale}" title="${statusTitle(t("use"), label(channel.permission.status), permissionStatusDescription(channel.permission.status))}">${label(channel.permission.status)}</span></span>
+        <span class="watch-action source-posture source-posture-${slug(status)}${external ? " row-link-placeholder" : ""}"${external ? ' aria-hidden="true"' : ""} lang="${state.locale}" title="${sourceStatusDescription(status)}">${actionLabel} <span aria-hidden="true">${playable ? "→" : external ? "↗" : ""}</span></span>
       </button>
-      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusLabel(status)}. ${t("format")}: ${label(channel.source_type)}. ${t("playbackPolicy")}: ${label(channel.playback_policy)}. ${t("access")}: ${label(channel.technical_status)}. ${t("use")}: ${label(channel.permission.status)}.</span>
+      ${external ? `<a class="row-direct-watch" href="${channel.official_url}" target="_blank" rel="noreferrer" aria-label="${t("official")}: ${escapeHtml(channel.name)}">${t("official")} <span aria-hidden="true">↗</span></a>` : ""}
+      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusDescription(status)}</span>
     </li>`;
   }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
@@ -575,9 +559,19 @@ function renderList() {
 function closeDetailSheet() {
   state.detailSheetOpen = false;
   elements.detail.querySelector("video")?.pause();
+  elements.detail.querySelector("iframe")?.remove();
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   elements.detail.classList.remove("is-open");
+  elements.detail.hidden = true;
+  document.querySelector(".catalogue-layout").classList.remove("has-selection");
   elements.detail.style.removeProperty("--mobile-sheet-height");
+}
+function dismissDetail() {
+  const selectedId = state.selectedId;
+  state.selectedId = null;
+  closeDetailSheet();
+  renderList();
+  elements.list.querySelector(`[data-channel-id="${selectedId}"]`)?.focus();
 }
 function syncFilterDisclosure(mediaQuery) {
   elements.filterDisclosure.open = !mediaQuery.matches;
@@ -629,10 +623,9 @@ function setupDetailSheetControls() {
     setDetailSheetHeight(heights[(currentIndex + 1) % heights.length]);
   });
   elements.detail.onkeydown = (event) => {
-    if (event.key !== "Escape" || !state.detailSheetOpen) return;
+    if (event.key !== "Escape") return;
     event.preventDefault();
-    closeDetailSheet();
-    elements.list.querySelector(`[data-channel-id="${state.selectedId}"]`)?.focus();
+    dismissDetail();
   };
 }
 function epgMarkup(channel) {
@@ -936,8 +929,11 @@ function youtubeEmbedUrl(channel) {
 function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   const channel = state.channels.find((item) => item.id === state.selectedId);
+  elements.detail.hidden = !channel;
+  document.querySelector(".catalogue-layout").classList.toggle("has-selection", Boolean(channel));
   if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">${t("selectSource")}</p>`; closeDetailSheet(); return; }
   const allowed = canPlay(channel);
+  elements.detail.classList.toggle("is-link-only", !allowed);
   const generatedPlaybackPolicy = channel.embed?.provider === "youtube" || allowed;
   const playbackMessage = channel.embed?.provider === "youtube"
     ? state.locale === "en"
@@ -951,16 +947,20 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   elements.detail.innerHTML = `
     <div class="mobile-sheet-controls">
       <button class="detail-grabber" data-resize-detail type="button" aria-label="${t("resizeDetails")}" lang="${state.locale}"><span></span></button>
+      <button class="detail-close" data-close-detail type="button">${t("close")}</button>
     </div>
     <h3 class="detail-title" id="detail-title" tabindex="-1" aria-live="polite">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · <span${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></p>
-    <div class="media-frame" id="media-frame">
-      <div class="player-placeholder">${allowed ? `<button class="placeholder-play-button" data-start-playback type="button" aria-label="${t("watch")}">▶</button>` : '<span aria-hidden="true">▶</span>'}<p>${allowed ? t("ready") : t("disabled")}</p></div>
-    </div>
+    ${allowed ? `<div class="media-frame" id="media-frame">
+      <div class="player-placeholder"><button class="placeholder-play-button" data-start-playback type="button" aria-label="${t("watch")}">▶</button><p>${t("ready")}</p></div>
+    </div>` : ""}
     <div class="detail-actions">
       ${allowed ? `<button class="play-button" data-start-playback type="button">${t("watch")}</button>` : ""}
       <a class="official-button" href="${channel.official_url}" target="_blank" rel="noreferrer">${t("official")} ↗</a>
     </div>
+    ${programme ? `<dl class="detail-grid"><div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div></dl>` : ""}
+    <details class="source-documentation">
+    <summary>${t("sourceDetails")}</summary>
     <dl class="detail-grid">
       <div title="${t("sourceType")}: ${label(channel.source_type)}"><dt>${t("sourceType")}</dt><dd>${label(channel.source_type)}</dd></div>
       <div title="${t("sourceKind")}: ${label(channel.source_kind)}"><dt>${t("sourceKind")}</dt><dd>${label(channel.source_kind)}</dd></div>
@@ -969,7 +969,6 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       <div title="${t("stabilityRisk")}: ${label(channel.stability_risk)}"><dt>${t("stabilityRisk")}</dt><dd><span class="status status-${slug(channel.stability_risk)}">${label(channel.stability_risk)}</span></dd></div>
       <div title="${t("useGuidance")}: ${label(channel.permission.status)}"><dt>${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}">${label(channel.permission.status)}</span></dd></div>
       <div title="${t("availability")}: ${label(channel.availability)}"><dt>${t("availability")}</dt><dd>${label(channel.availability)}</dd></div>
-      ${programme ? `<div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div>` : ""}
       ${accessibilityMarkup(channel)}
       ${identityMarkup(channel)}
       ${validationMarkup(channel)}
@@ -977,9 +976,14 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       ${fallbackMarkup(channel)}
       ${freshnessMarkup(channel)}
     </dl>
-    ${researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy)}`;
+    </details>
+    <details class="source-documentation">
+      <summary>${t("useGuidance")}</summary>
+      ${researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy)}
+    </details>`;
   elements.detail.classList.toggle("is-open", state.detailSheetOpen);
   document.querySelectorAll("[data-start-playback]").forEach((button) => button.addEventListener("click", () => startPlayback(channel)));
+  elements.detail.querySelector("[data-close-detail]").addEventListener("click", dismissDetail);
   setupDetailSheetControls();
   if (focusDetail) elements.detail.querySelector("#detail-title").focus();
   if (startPlayer && allowed) startPlayback(channel);
@@ -1086,7 +1090,7 @@ async function init() {
     const requestedSourceId = pageParameters.get("source");
     state.selectedId = state.channels.some((channel) => channel.id === requestedSourceId)
       ? requestedSourceId
-      : state.channels.find(canPlay)?.id ?? state.channels[0]?.id ?? null;
+      : null;
     state.detailSheetOpen = Boolean(requestedSourceId);
     elements.stats.textContent = t("documented", { count: state.channels.length, date: catalogue.generated_on });
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));

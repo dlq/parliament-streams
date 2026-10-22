@@ -106,6 +106,41 @@ async function assertNoAxeViolations(page, context) {
   );
 }
 
+async function assertIptvDisclosure(page) {
+  const disclosure = page.locator('.iptv-disclosure');
+  assert.equal(await disclosure.getAttribute('open'), null);
+  await disclosure.locator(':scope > summary').click();
+  const paths = ['stable-hls.m3u8', 'validated-hls.m3u8', 'epg.xml'];
+  await page.evaluate(() => {
+    Object.defineProperty(navigator, 'clipboard', {
+      configurable: true,
+      value: { writeText: async (text) => { window.__iptvCopied = text; } },
+    });
+  });
+  for (const [index, path] of paths.entries()) {
+    const url = `https://dlq.ca/parliament-streams/data/${path}`;
+    assert.equal(await disclosure.locator('.iptv-resource a').nth(index).getAttribute('href'), url);
+    assert.equal(await disclosure.locator('input').nth(index).inputValue(), url);
+    await disclosure.locator('[data-copy]').nth(index).click();
+    assert.equal(await page.evaluate(() => window.__iptvCopied), url);
+    assert.match(await disclosure.locator('[role="status"]').innerText(), /URL copied/);
+  }
+  await page.evaluate(() => {
+    navigator.clipboard.writeText = async () => { throw new Error('Clipboard denied'); };
+  });
+  await disclosure.locator('[data-copy]').first().click();
+  const input = disclosure.locator('input').first();
+  assert.equal(await input.evaluate((element) => document.activeElement === element
+    && element.selectionStart === 0 && element.selectionEnd === element.value.length), true);
+  assert.match(await disclosure.locator('[role="status"]').innerText(), /copy manually/);
+  await disclosure.locator('.iptv-vlc > summary').click();
+  assert.match(await disclosure.locator('.iptv-vlc').innerText(), /Media → Open Network Stream/);
+  assert.match(await disclosure.locator('.iptv-vlc').innerText(), /File → Open Network/);
+  assert.equal(await disclosure.locator('.iptv-vlc a').getAttribute('href'), 'https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/media.html');
+  await assertNoAxeViolations(page, 'Expanded IPTV and VLC instructions');
+  await disclosure.locator(':scope > summary').click();
+}
+
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const address = server.address();
 assert(address && typeof address === "object");
@@ -260,6 +295,9 @@ try {
   assert.match(await page.locator(".hero-credit").innerText(), /(Public domain|CC0)/);
   assert.match(await page.locator("#open-video-copy").innerText(), /streams such as HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
+  assert.equal(await page.locator("#detail-panel").isVisible(), false);
+  assert((await page.locator(".channel-button").first().boundingBox()).y < 720);
+  await page.locator(".catalogue-information > summary").click();
   assert.equal(await page.locator("#metric-sources").innerText(), String(canonicalCatalogue.channels.length));
   assert.equal(await page.locator("#metric-playable").innerText(), String(expectedPlayableCount));
   assert.equal(await page.locator("#metric-schedules").innerText(), String(expectedScheduleCount));
@@ -272,6 +310,7 @@ try {
   assert.equal(await page.locator("#playback-filter").count(), 0);
   assert.equal(await page.locator("#rights-filter").count(), 0);
   assert(canonicalFallbacks.fallbacks.length >= 6);
+  await assertIptvDisclosure(page);
   await assertNoAxeViolations(page, "Desktop catalogue");
 
   const localeCoverage = await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([locale]) => ({
@@ -288,7 +327,7 @@ try {
     assert.equal(await page.locator("html").getAttribute("lang"), locale);
     assert((await page.locator("#catalogue-title").innerText()).trim());
     assert((await page.locator("#level-filter option").first().innerText()).trim());
-    assert((await page.locator("#detail-panel").innerText()).trim());
+    assert.equal(await page.locator("#detail-panel").isVisible(), false);
     assert.equal(await page.locator("#sort-status").getAttribute("lang"), locale);
   }
   await page.locator("#locale-select").selectOption("en");
@@ -299,19 +338,15 @@ try {
     "SOURCE",
     "JURISDICTION",
     "LANGUAGE",
-    "MODE",
-    "ACCESS",
-    "USE",
+    "PLAYBACK",
   ]);
-  assert.equal(await page.locator("#sort-mode").innerText(), "MODE");
+  assert.equal(await page.locator("#sort-mode").innerText(), "PLAYBACK");
   await page.locator("#sort-mode").click();
-  assert.match(await page.locator("#sort-status").innerText(), /Mode: ascending/);
-  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /PLAYABLE/);
+  assert.match(await page.locator("#sort-status").innerText(), /Playback: ascending/);
+  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch here/);
   await page.locator("#sort-mode").click();
-  assert.match(await page.locator("#sort-status").innerText(), /Mode: descending/);
-  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /RESEARCH/);
-  await page.locator("#sort-use").click();
-  assert.match(await page.locator("#sort-status").innerText(), /Use: ascending/);
+  assert.match(await page.locator("#sort-status").innerText(), /Playback: descending/);
+  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Needs review/);
   await page.locator("#sort-source").click();
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
@@ -326,16 +361,20 @@ try {
   assert.equal(await youtubeFrame.count(), 1);
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed\/abcDEF12345/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
-  assert.match(await page.locator(".detail-grid").innerText(), /PLAYBACK\s+Provider embed/);
   assert.match(await youtubeRow.locator(".source-posture").getAttribute("title"), /official provider embed or fallback surface/);
-  assert.match(await youtubeRow.locator(".row-tag").nth(1).getAttribute("title"), /Latest retained validation succeeded/);
-  assert.match(await youtubeRow.locator(".row-tag").nth(2).getAttribute("title"), /official provider or institutional embed/);
-  assert.equal(await youtubeRow.locator(".row-tag").first().evaluate((element) => getComputedStyle(element).borderLeftStyle), "solid");
-  assert.equal(await youtubeRow.locator(".row-tag").nth(1).evaluate((element) => getComputedStyle(element).borderLeftStyle), "solid");
-  assert.equal(await youtubeRow.locator(".row-tag").nth(2).evaluate((element) => getComputedStyle(element).borderLeftStyle), "solid");
+  const albertaWatch = page.locator('[data-channel-id="alberta-assembly-online"]').locator('..').locator('.row-direct-watch');
+  assert.equal(await albertaWatch.count(), 1);
+  assert.match(await albertaWatch.getAttribute('href'), /assembly\.ab\.ca/);
+  assert.equal(await albertaWatch.getAttribute('target'), '_blank');
+  assert.equal(await youtubeRow.locator(".row-tag").count(), 0);
+  assert.equal(await page.locator(".source-documentation[open]").count(), 0);
+  await page.locator(".source-documentation").first().locator("summary").click();
+  assert.match(await page.locator(".source-documentation .detail-grid").innerText(), /PLAYBACK\s+Provider embed/);
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
-  assert.match(await page.locator('[data-channel-id="canada-house-of-commons-parlvu"] .source-posture').innerText(), /LINK-OUT/);
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
+  assert.match(await page.locator('[data-channel-id="canada-house-of-commons-parlvu"] .source-posture').innerText(), /Watch on official site/);
   assert.match(await page.locator(".fallback-record").innerText(), /Canada House of Commons ParlVU events/);
   assert.match(await page.locator(".fallback-record").innerText(), /Event platform · Event resolver planned · Schedule source/);
   assert.match(await page.locator(".fallback-record").innerText(), /Now: House of Commons sitting/);
@@ -349,7 +388,9 @@ try {
 
   const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
   await europarlRow.click();
-  assert.match(await europarlRow.locator(".source-posture").innerText(), /LINK-OUT/);
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
+  assert.match(await europarlRow.locator(".source-posture").innerText(), /Watch on official site/);
   assert.match(await page.locator(".validation-record").innerText(), /LATEST VALIDATION/);
   assert.match(await page.locator(".validation-record").innerText(), /Report/);
   assert.match(await page.locator(".validation-record a").getAttribute("href"), /github\.com\/dlq\/parliament-streams\/blob\/main\/reports\/health\//);
@@ -361,6 +402,7 @@ try {
   assert.match(await page.locator(".evidence-dates").innerText(), /Aug 16, 2026/);
 
   await page.locator("#locale-select").selectOption("fr");
+  await page.locator(".source-documentation > summary").first().click();
   assert.equal(await page.locator("#nav-map").innerText(), "Carte de couverture");
   assert.equal(await page.locator("#nav-schedule").innerText(), "Horaire");
   assert.match(await page.locator('meta[name="description"]').getAttribute("content"), /Points d'accès officiels/);
@@ -373,15 +415,17 @@ try {
   assert.equal(await page.locator("#metric-schedules").textContent(), String(expectedScheduleCount));
   assert.equal(await page.locator("#principle-accessibility").textContent(), "Accessibilité ouverte");
   await page.locator('[data-channel-id="australia-parliament-youtube"]').click();
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
   assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .source-posture').getAttribute("title"), /intégration officielle/);
-  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .row-tag').nth(1).getAttribute("title"), /dernière validation conservée a réussi/);
-  assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .row-tag').nth(2).getAttribute("title"), /l'intégration officielle/);
   assert.equal(
     await page.locator('[data-channel-id="british-columbia-legislature-webcasts"] > span').nth(1).innerText(),
     "Colombie-Britannique",
   );
 
   await page.locator('[data-channel-id="new-zealand-parliament"]').click();
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
   const newZealandTerms = await page.locator(".detail-grid dt").allTextContents();
   assert.equal(newZealandTerms.includes("Attribution requise"), false);
   assert.equal(newZealandTerms.includes("Programme en cours"), false);
@@ -390,6 +434,8 @@ try {
   assert.equal(await page.locator(".research-note-disclosure").getAttribute("open"), null);
 
   await page.locator('[data-channel-id="quebec-canal01"]').click();
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
   const quebecSummary = page.getByText(/Quebec National Assembly terms authorize free reproduction/);
   assert.equal(await page.locator(".evidence-note a").count(), 2);
   assert.equal(await page.locator(".research-note-disclosure summary").innerText(), "Notes de recherche du catalogue en anglais");
@@ -401,17 +447,22 @@ try {
   assert.equal(await quebecSummary.isVisible(), true);
 
   await page.locator('[data-channel-id="scottish-parliament-tv"]').click();
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
   assert.match(await page.locator(".accessibility-record").innerText(), /Varie selon la source ou l’événement/);
   assert.equal(await page.locator(".accessibility-record .detail-subtitle").count(), 0);
 
   await page.locator("#locale-select").selectOption("zh-Hans");
   await page.locator('[data-channel-id="spain-congreso-directo-3"]').click();
+  await page.locator(".source-documentation > summary").first().click();
+  await page.locator(".source-documentation > summary").nth(1).click();
   const detailTerms = await page.locator(".detail-grid dt").allTextContents();
   assert(detailTerms.includes("访问状态"));
   assert.equal(detailTerms.includes("所需署名"), false);
   assert.equal(detailTerms.includes("当前节目记录"), false);
   assert(detailTerms.includes("媒体无障碍"));
-  assert.equal(await page.locator(".player-placeholder p").innerText(), "此来源未启用播放");
+  assert.equal(await page.locator("#media-frame").count(), 0);
+  assert.equal(await page.locator(".official-button").isVisible(), true);
   assert.match(await page.locator(".accessibility-record").innerText(), /字幕: 尚未验证/);
   assert.match(await page.locator(".accessibility-record").innerText(), /手语: 尚未验证/);
   assert.equal(await page.locator(".accessibility-record .detail-subtitle").count(), 0);
@@ -419,7 +470,7 @@ try {
   assert.match(await page.locator(".evidence-note").innerText(), /^证据来源。/);
   assert.match(await page.locator(".evidence-note a").first().innerText(), /官方观看页面|支持来源/);
   assert.equal(await page.locator(".research-note-disclosure summary").innerText(), "目录的英文研究说明");
-  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /格式: HLS.*播放方式: 仅供研究.*访问: 待审核.*使用: 附带条件/);
+  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /研究资料/);
 
   const search = page.locator("#search");
   await search.focus();
@@ -440,10 +491,12 @@ try {
   assert.equal(await page.locator("#detail-panel").evaluate((element) => getComputedStyle(element).position), "fixed");
   assert.equal(await page.locator(".detail-grabber").isVisible(), true);
   assert.equal(await page.locator("#detail-title").evaluate((element) => document.activeElement === element), true);
-  assert((await page.locator(".media-frame").boundingBox()).height <= 300);
+  assert.equal(await page.locator(".media-frame").count(), 0);
+  assert.equal(await page.locator(".official-button").isVisible(), true);
+  await page.locator(".source-documentation > summary").first().click();
   const intermediatePanel = await page.locator("#detail-panel").boundingBox();
   const intermediateGrid = await page.locator(".detail-grid").boundingBox();
-  assert(intermediateGrid.y < intermediatePanel.y + intermediatePanel.height);
+  assert(intermediateGrid.width <= intermediatePanel.width);
   await assertNoAxeViolations(page, "Open intermediate-width source details");
   await page.locator("#detail-title").press("Escape");
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
@@ -460,13 +513,13 @@ try {
   assert.equal(await page.locator("#detail-title").evaluate((element) => document.activeElement === element), true);
   assert.equal(await page.locator("#detail-panel").getAttribute("aria-labelledby"), "detail-title");
   await assertNoAxeViolations(page, "Open mobile source details");
-  await page.locator("#detail-title").press("Escape");
+  await page.locator("[data-close-detail]").click();
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
   assert.equal(await page.locator(".channel-button").first().evaluate((element) => document.activeElement === element), true);
 
   await page.locator("#locale-select").selectOption("fr");
   assert.equal(await page.locator("html").getAttribute("lang"), "fr");
-  assert.equal(await page.locator(".research-note-disclosure div[lang='en']").count(), 1);
+  assert.equal(await page.locator("#detail-panel").isVisible(), false);
 
   await page.emulateMedia({ reducedMotion: "reduce" });
   const transitionDuration = await page.locator("#detail-panel").evaluate(
@@ -529,6 +582,7 @@ try {
   await schedulePage.locator("#schedule-status").selectOption("playable");
   assert.equal(await schedulePage.locator("#schedule-list tr").count(), 1);
   assert.match(await schedulePage.locator(".schedule-watch").getAttribute("href"), /play=1/);
+  await assertIptvDisclosure(schedulePage);
   await assertNoAxeViolations(schedulePage, "Desktop programme guide");
   await schedulePage.goto(`${baseUrl}schedule.html?lang=fr`);
   await schedulePage.waitForSelector("#schedule-list tr");
@@ -541,6 +595,12 @@ try {
   await schedulePage.setViewportSize({ width: 320, height: 800 });
   assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
   assert.equal(await schedulePage.locator("#schedule-primary-navigation > a:visible").count(), 3);
+  await schedulePage.locator('.iptv-disclosure > summary').click();
+  assert.equal(await schedulePage.locator('.iptv-disclosure').getAttribute('lang'), 'fr');
+  assert.equal(await schedulePage.locator('.iptv-disclosure > summary').innerText(), 'Utiliser dans une application IPTV');
+  assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  await assertNoAxeViolations(schedulePage, 'Mobile IPTV disclosure');
+  await schedulePage.locator('.iptv-disclosure > summary').click();
   const firstScheduleRow = schedulePage.locator("#schedule-list tr").first();
   const nowCell = await firstScheduleRow.locator("td").nth(1).boundingBox();
   const nextCell = await firstScheduleRow.locator("td").nth(2).boundingBox();

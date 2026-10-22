@@ -108,11 +108,9 @@ Done:
   in source details.
 - Validation-history refresh and drift checking are available through Make and
   the CLI; the drift check is part of `make verify`.
-- The public site now labels each source row as playable, link-out, fallback, or
-  research so users can distinguish technical playback from safer official
-  routes more quickly.
-- The public site exposes playback policy in source details and sortable Mode
-  markers, separately from rights/use guidance in the Use column.
+- The public site shows a single watch action per source in a compact list.
+  Playback/access evidence and rights guidance remain available in expandable
+  source details; official-site watch links open directly from the list.
 - Fallback records now reuse the static schedule snapshot for related entries
   and can show linked current/next event titles, event IDs, status labels, and
   chamber/room labels beside official fallback links when that metadata is

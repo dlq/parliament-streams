@@ -8,6 +8,9 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- Collapsed IPTV setup on catalogue and schedule pages, with public playlist
+  and XMLTV links, copy buttons with manual fallback, partial-guide guidance,
+  and official VLC desktop instructions.
 - Czech Chamber of Deputies native HLS after progressing live-media and browser
   decode validation; Sweden and Finland official video-portal link-outs with
   identity, rights, accessibility, and event-source evidence.
@@ -18,6 +21,10 @@ application. Earlier application work remains available in Git history.
 
 ### Changed
 
+- Simplify desktop/mobile browsing with a shorter introduction, a full-width
+  compact list, direct official-site watch links, and expandable source and use
+  details. Remove inactive players for link-only sources and add explicit detail
+  dismissal with keyboard focus restoration.
 - Withhold Swiss National Council and Estonia feed 2 native playback after
   repeated failing media checks; preserve their provenance and rights evidence.
 - Refresh compact validation history for every published entry and keep current

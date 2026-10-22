@@ -21,7 +21,7 @@ const en = {
   sortAscending: "ascending", sortDescending: "descending", playbackError: "Playback could not start in this browser.",
   nav: "Catalogue", language: "Language", research: "Public research catalogue",
   title: "Parliamentary video, documented.",
-  lede: "Official stream endpoints, watch pages, schedule surfaces, and the evidence needed to judge how each source may be used.",
+  lede: "Find official parliamentary video from around the world.",
   browse: "Browse sources", catalogue: "Catalogue", json: "View source JSON", search: "Search country, legislature, or channel", filters: "Filters", close: "Close source details",
   catalogueCoverage: "Catalogue coverage",
   metricSources: "Sources", metricPlayable: "Playable here", metricSchedules: "Schedule sources", metricUpdated: "Catalogue updated",
@@ -49,7 +49,7 @@ const en = {
   fallbackEventPlatform: "Event platform", fallbackLivePage: "Official live page", fallbackYoutubeLive: "YouTube live", fallbackYoutubeUploads: "YouTube uploads",
   fallbackArchive: "Archive", fallbackBroadcaster: "Broadcaster", fallbackLinkOut: "Link out", fallbackProviderEmbed: "Provider embed",
   fallbackEventResolver: "Event resolver planned", fallbackScheduleSource: "Schedule source", fallbackNowNext: "Now/next possible", fallbackNoSchedule: "No schedule role",
-  sourcePlayable: "Playable", sourceLinkOut: "Link-out", sourceFallback: "Fallback", sourceResearch: "Research",
+  sourcePlayable: "Playable", sourceLinkOut: "Link-out", sourceFallback: "Fallback", sourceResearch: "Needs review",
   sourcePlayableDescription: "The source can play directly in this catalogue.",
   sourceLinkOutDescription: "Use the official site because playback is not embedded here.",
   sourceFallbackDescription: "The catalogue can hand off to an official provider embed or fallback surface.",
@@ -61,9 +61,9 @@ const en = {
   a11yAvailable: "Available", a11ySourceDependent: "Varies by source or event", a11yUnavailable: "Unavailable", a11yUnknown: "Not yet verified",
   scheduleApi: "Schedule API", openScheduleData: "Open schedule data", calendarAgenda: "Calendar / agenda", liveSchedulePage: "Live schedule page", schedulePage: "Schedule page",
   officialEvidence: "Official watch page", streamEvidence: "Recorded stream endpoint", rightsEvidence: "Rights / source terms", privacyEvidence: "Privacy policy", supportingEvidence: "Supporting source",
-  evidenceSources: "Evidence sources.", englishResearchNotes: "Catalogue research notes",
+  sourceDetails: "Source details", evidenceSources: "Evidence sources.", englishResearchNotes: "Catalogue research notes",
   nowProgramme: "Now:", nextProgramme: "Next:", scheduleCollected: "Schedule collected {date}",
-  reuse: "Catalogue rights summary.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Open official source",
+  reuse: "Catalogue rights summary.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Watch on official site",
   ready: "Ready to load the official feed", disabled: "Playback is not enabled for this source",
   optOutPlaybackPolicy: "This public endpoint is playable under the catalogue’s opt-out policy. This is not a licence; review the source notes and report concerns for prompt removal.",
   youtubePlaybackPolicy: "Playback uses the provider’s official privacy-enhanced embed; no stream manifest is extracted.",
@@ -781,6 +781,28 @@ for (const [locale] of locales) {
     messages.labels[labelKey] ??= en.labels[labelKey];
   }
 }
+
+const sourceDetailLabels = {
+  "fr": "Détails de la source",
+  "es": "Detalles de la fuente",
+  "pt-BR": "Detalhes da fonte",
+  "da": "Kildeoplysninger",
+  "de": "Quelldetails",
+  "et": "Allika üksikasjad",
+  "el": "Στοιχεία πηγής",
+  "hi": "स्रोत का विवरण",
+  "ga": "Sonraí na foinse",
+  "it": "Dettagli della fonte",
+  "lb": "Detailer zur Quell",
+  "nl": "Brongegevens",
+  "nb": "Kildedetaljer",
+  "sk": "Podrobnosti zdroja",
+  "th": "รายละเอียดแหล่งข้อมูล",
+  "zh-Hans": "来源详情",
+  "iu-Cans": "ᐱᒋᐊᕐᕕᐅᑉ ᐅᓂᒃᑳᖏᑦ",
+  "mi": "Ngā taipitopito pūtake"
+};
+Object.entries(sourceDetailLabels).forEach(([locale, text]) => { shared[locale].sourceDetails = text; });
 
 function translationCoverage(locale) {
   const localeMessages = locale === "en" ? en : shared[locale];
