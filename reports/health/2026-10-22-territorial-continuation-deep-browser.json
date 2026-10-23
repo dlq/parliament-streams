@@ -1,0 +1,149 @@
+{
+  "checked_at": "2026-10-23T02:15:15.678Z",
+  "scope": "Normal public provider playback with advancing time and decoded frames; no native HLS extraction or independent reuse grant.",
+  "results": [
+    {
+      "id": "cayman-islands-parliament-webcasts",
+      "status": "ok",
+      "note": "Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established.",
+      "samples": [
+        {
+          "key": "cayman-plenary",
+          "url": "https://www.youtube.com/watch?v=KL-VgLMrtr0",
+          "title": "Fourth Sitting of the Second Meeting of the 2026-2027 Session | 5 October 2026 | Part 2 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.036292,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 13466.366666666667,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.042273,
+            "frames": 187
+          }
+        },
+        {
+          "key": "cayman-finance",
+          "url": "https://www.youtube.com/watch?v=BXNY8j7ndhs",
+          "title": "Finance Committee | 8 October 2026 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.040331,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 14671.241,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.077342,
+            "frames": 186
+          }
+        }
+      ]
+    },
+    {
+      "id": "turks-and-caicos-parliament-webcasts",
+      "status": "ok",
+      "note": "The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified.",
+      "samples": [
+        {
+          "key": "turks-archive",
+          "url": "https://www.youtube.com/watch?v=-xMcOXIjp0w",
+          "title": "2nd Sitting - 5th Meeting - 2nd Session - 13th Legislature of the TCI - 16 Oct 2026 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.039674,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 21434.381,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.087737,
+            "frames": 187
+          }
+        },
+        {
+          "key": "turks-live",
+          "url": "https://www.youtube.com/watch?v=SoF6j5RH4j0",
+          "title": "1st Sitting - 6th Meeting - 2nd Session - 13th Legislature of the TCI - 22 Oct 2026 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 44310.556804,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 47906.562,
+            "frames": 127,
+            "tracks": []
+          },
+          "later": {
+            "time": 44312.599007,
+            "frames": 188
+          }
+        }
+      ]
+    },
+    {
+      "id": "bermuda-parliament-audio-archive",
+      "status": "ok",
+      "note": "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated.",
+      "samples": [
+        {
+          "engine": "webkit",
+          "first": [
+            {
+              "time": 3.442752249,
+              "ready": 4,
+              "duration": 11411.988
+            }
+          ],
+          "later": [
+            {
+              "time": 5.449175499,
+              "ready": 4
+            }
+          ],
+          "text": "Senate Meeting AM Adjourned\n\n10\n10\n10:00:05 AM\nAudio\nInfo\nDescription\nScheduled\nWednesday, Oct 7, 2026\n10:00 AM - 2:00 PM\n4 Hours\nActual\nWednesday, Oct 7, 2026\n10:00 AM - 1:10 PM\n3 Hours 10 Minutes\n \n \nAuto Scroll\nSync\nSearch\nSearch Text\nResult:\nX",
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "9:6.297 error type:mediaError details :bufferSeekOverHole"
+          ]
+        },
+        {
+          "engine": "webkit-house",
+          "first": [
+            {
+              "time": 3.441231042,
+              "ready": 4,
+              "duration": 18973.002
+            }
+          ],
+          "later": [
+            {
+              "time": 5.447650376,
+              "ready": 4
+            }
+          ],
+          "text": "House Meeting Adjourned\n\n10\n10\n2:00:05 PM\nAudio\nInfo\nDescriptionMeeting in Chamber\nScheduled\nFriday, Oct 2, 2026\n2:00 PM - 3:00 AM\n13 Hours\nActual\nFriday, Oct 2, 2026\n2:00 PM - 7:16 PM\n5 Hours 16 Minutes\nContact\nInformation\n dlamb@parliament.bm\n 441-292-7408\n Information website\nSupport\n dplamb@gov.bm\n 441-292-7408\n Support website\n \n \nAuto Scroll\nSync\nSearch\nSearch Text\nResult:\nX",
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "9:6.572 error type:mediaError details :bufferSeekOverHole"
+          ]
+        }
+      ]
+    }
+  ]
+}

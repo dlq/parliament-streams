@@ -9834,6 +9834,398 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "note": "Current official viewing page links Statenzaal on Vimeo; an indexed version also supplies thematic room links. Recordings of 2 October 2026 in Statenzaal and Hart der Provincie 2 passed 1280-wide decode and advancing-playback checks. Hart der Provincie 3 also opened with a dated recording. These event links are evidence, not permanent native room feeds; current on-air coverage was not tested."
         }
       ]
+    },
+    {
+      "id": "guam-legislature-webcasts",
+      "name": "Guam Legislature Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Guam",
+      "legislature": "I Liheslaturan Guåhan / Legislature of Guam",
+      "external_ids": {
+        "wikidata_qid": "Q1563896",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1563896",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Direct Wikidata entity revision 2424880483 and official institution/provider link chain checked; this is the legislature, not an executive or building. Guam is Q1563896, not the Congress Building Q15222224."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@GuamLegislatureMedia/streams",
+      "provenance_note": "Unincorporated territory of the United States; the map uses Guam itself as the territorial parent, with a separate United States search association. Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No text tracks were exposed in the two sampled recordings. English is verified from the sampled proceedings; Chamorro coverage across the service remains unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://guamlegislature.gov/calendar/",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+        "evidence": [
+          "https://guamlegislature.gov/"
+        ],
+        "recommendation": "Open the official viewing service; retain link-out only until any independent media reuse is expressly established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T01:46:40.820Z",
+          "report_path": "reports/health/2026-10-22-territorial-followup-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested."
+        }
+      ]
+    },
+    {
+      "id": "puerto-rico-senate-webcasts",
+      "name": "Puerto Rico Senate Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Puerto Rico",
+      "legislature": "Senado de Puerto Rico",
+      "external_ids": {
+        "wikidata_qid": "Q3955193",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3955193",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Direct Wikidata entity revision 2555357961 matches official institution name and website."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://senado.pr.gov/envivo",
+      "provenance_note": "United States territory with its own constitutional bicameral legislature. This record covers the Senate, including its linked public joint-committee event; the House viewing service is not claimed validated. The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The plenary player exposes automatic tracks labelled es-x-autogen. The committee player exposes en-x-autogen despite the Spanish proceedings. Caption accuracy and language suitability are unassessed; service-wide captions remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://senado.pr.gov/envivo",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+        "evidence": [
+          "https://senado.pr.gov/envivo"
+        ],
+        "recommendation": "Open the official viewing service; retain link-out only until any independent media reuse is expressly established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T01:46:40.820Z",
+          "report_path": "reports/health/2026-10-22-territorial-followup-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity."
+        }
+      ]
+    },
+    {
+      "id": "gibraltar-parliament-video-archive",
+      "name": "Gibraltar Parliament Video Archive",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Gibraltar",
+      "legislature": "Gibraltar Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q128852",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q128852",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Direct Wikidata entity revision 2553222403 matches official institution name and website."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parliament.gi/video-archive",
+      "provenance_note": "British Overseas Territory; its separate map parent and United Kingdom search association do not make it a UK administrative subdivision or decide territorial claims. The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No text tracks were exposed in the sampled video. Site font and contrast controls are website accessibility tools, not evidence of media captions, sign language or audio description."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parliament.gi/proceedings-of-parliament/parliamentary-business-timetable",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+        "evidence": [
+          "https://www.parliament.gi/video-archive",
+          "https://www.parliament.gi/privacy-policy"
+        ],
+        "recommendation": "Open the official viewing service; retain link-out only until any independent media reuse is expressly established."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T01:46:40.820Z",
+          "report_path": "reports/health/2026-10-22-territorial-followup-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link."
+        }
+      ]
+    },
+    {
+      "id": "cayman-islands-parliament-webcasts",
+      "name": "Cayman Islands Parliament Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Cayman Islands",
+      "legislature": "Parliament of the Cayman Islands",
+      "external_ids": {
+        "wikidata_qid": "Q3625554",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3625554",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Direct Wikidata entity revision 2452738736 matches the legislative institution; current official website independently confirms its name and designated media route. Not the executive, building or Youth Parliament."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/playlist?list=PLw4BrYufwdD29YaBzcA6P-LZMlLS6GS7N",
+      "provenance_note": "British Overseas Territory. Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No text tracks were exposed in the sampled players. Service-wide caption, sign-language and audio-description availability remains unknown; website accessibility controls are not media-accessibility evidence."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://parliament.ky/events-calender/",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The Parliament website designates the Cayman Islands Government Parliament playlist. The reviewed privacy notice and copyright footer do not establish independent audiovisual reuse permission.",
+        "evidence": [
+          "https://parliament.ky/",
+          "https://parliament.ky/privacy-policy/"
+        ],
+        "recommendation": "Open the official provider service. Keep link-out only; confirm applicable rights before independent embedding, media extraction or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T02:15:15.678Z",
+          "report_path": "reports/health/2026-10-22-territorial-continuation-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established."
+        }
+      ]
+    },
+    {
+      "id": "turks-and-caicos-parliament-webcasts",
+      "name": "Turks and Caicos Parliament Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Turks and Caicos Islands",
+      "legislature": "Parliament of the Turks and Caicos Islands",
+      "external_ids": {
+        "wikidata_qid": "Q7855481",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7855481",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Direct Wikidata entity revision 2451559961 matches the legislative institution; current official website independently confirms its name and designated media route. Not the executive, building or Youth Parliament."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@TCIParliament/streams",
+      "provenance_note": "British Overseas Territory. The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No text tracks were exposed in the sampled players. Service-wide caption, sign-language and audio-description availability remains unknown; website accessibility controls are not media-accessibility evidence."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parliament.gov.tc/events",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "noncommercial_pending_review",
+        "summary": "The website terms explicitly permit sharing public-page links and personal, educational or non-commercial viewing, downloads and printing. Commercial reproduction or distribution requires written permission. This website-content clause does not establish a separate licence to extract, embed or retransmit provider video.",
+        "evidence": [
+          "https://www.parliament.gov.tc/terms-of-use"
+        ],
+        "recommendation": "Open the official provider service. Keep link-out only; confirm applicable rights before independent embedding, media extraction or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T02:15:15.678Z",
+          "report_path": "reports/health/2026-10-22-territorial-continuation-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified."
+        }
+      ]
+    },
+    {
+      "id": "bermuda-parliament-audio-archive",
+      "name": "Bermuda Parliament Audio Archive",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Bermuda",
+      "legislature": "Parliament of Bermuda",
+      "external_ids": {
+        "wikidata_qid": "Q7138929",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7138929",
+          "checked_on": "2026-10-22",
+          "confidence": "high",
+          "notes": "Direct Wikidata entity revision 2555342410 identifies the bicameral Parliament, corroborated by its official website and House/Senate archive labels."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://sg001-harmony.sliq.net/00290/Harmony",
+      "provenance_note": "British Overseas Territory. The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The sampled archive is explicitly labelled Audio. No captions or video were established. The presence of transcript/search controls does not establish event transcript availability; sign-language and audio-description coverage remains unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "Parliament claims copyright in site material and requires the Clerk’s written consent for reproduction for financial gain or beyond personal use. No independent audio reuse, embedding or redistribution permission is established.",
+        "evidence": [
+          "https://parliament.bm/about/view/25"
+        ],
+        "recommendation": "Audio playback was verified in WebKit. Chrome/Chromium failed in the current check; try Safari for this archive. Open the official service and obtain applicable written permission before independent audio playback, embedding or redistribution."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T02:15:15.678Z",
+          "report_path": "reports/health/2026-10-22-territorial-continuation-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated."
+        }
+      ]
     }
   ]
 };

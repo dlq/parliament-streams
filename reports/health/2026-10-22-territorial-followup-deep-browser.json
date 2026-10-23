@@ -1,0 +1,145 @@
+{
+  "checked_at": "2026-10-23T01:46:40.820Z",
+  "scope": "Public recording playback only; no stable HLS, on-air live coverage or independent media permission established.",
+  "results": [
+    {
+      "id": "guam-legislature-webcasts",
+      "status": "ok",
+      "note": "Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested.",
+      "samples": [
+        {
+          "key": "guam-plenary",
+          "url": "https://www.youtube.com/watch?v=nwP2M2RUMTU",
+          "title": "The 38th Guam Legislature Eleventh Special Session - October 6, 2026 8:30am - YouTube",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.031938,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 1073.561,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.133451,
+            "frames": 188
+          }
+        },
+        {
+          "key": "guam-committee",
+          "url": "https://www.youtube.com/watch?v=MaY3dyfoOh8",
+          "title": "Public Hearing - Senator Vincent A.V. Borja - October 21, 2026 2pm - YouTube",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.035265,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 3202.961,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.071038,
+            "frames": 186
+          }
+        }
+      ]
+    },
+    {
+      "id": "puerto-rico-senate-webcasts",
+      "status": "ok",
+      "note": "The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity.",
+      "samples": [
+        {
+          "key": "pr-plenary",
+          "url": "https://vimeo.com/event/5710543",
+          "title": "20ma Asamblea Legislativa - 4ta Sesión Ordinaria - lunes, 26 de octubre de 2026",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 1.342324,
+            "width": 1280,
+            "height": 720,
+            "ready": 4,
+            "duration": 28212.949333,
+            "frames": 46,
+            "tracks": [
+              {
+                "language": "es-x-autogen",
+                "kind": "subtitles"
+              },
+              {
+                "language": "es-x-autogen",
+                "kind": "captions"
+              }
+            ]
+          },
+          "later": {
+            "time": 3.377924,
+            "frames": 106
+          }
+        },
+        {
+          "key": "pr-committee",
+          "url": "https://vimeo.com/event/4721165",
+          "title": "Vista Pública - Comisión Conjunta para la Revisión del Código Penal de Puerto Rico - miércoles, 21 de octubre de 2026",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 2.259451,
+            "width": 1280,
+            "height": 720,
+            "ready": 4,
+            "duration": 11992.900400999644,
+            "frames": 73,
+            "tracks": [
+              {
+                "language": "en-x-autogen",
+                "kind": "subtitles"
+              },
+              {
+                "language": "en-x-autogen",
+                "kind": "captions"
+              }
+            ]
+          },
+          "later": {
+            "time": 4.277953,
+            "frames": 133
+          }
+        }
+      ]
+    },
+    {
+      "id": "gibraltar-parliament-video-archive",
+      "status": "ok",
+      "note": "The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link.",
+      "samples": [
+        {
+          "key": "gibraltar",
+          "url": "https://www.youtube.com/watch?v=Bg5NQvAEtdo",
+          "title": "Meeting - Friday 2nd October 2026 (am) - YouTube",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.055224,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 16144.121,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.149856,
+            "frames": 188
+          }
+        }
+      ]
+    }
+  ]
+}

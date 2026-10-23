@@ -1,0 +1,70 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Constitution sections 32-33 provide general lawmaking through Parliament bills and assent; the constitution also establishes the budget and ministerial government framework. This is the territorial parliament, not a municipal council. Evidence: https://www.parliament.gi/uploads/contents/parliament_legislation/constitution2006.pdf",
+    "British Overseas Territory; its separate map parent and United Kingdom search association do not make it a UK administrative subdivision or decide territorial claims.",
+    "The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link.",
+    "Identity, playback, rights and surface reconciliation: reports/discovery/2026-10-22-territorial-followup-decisions.json",
+    "Added to catalogue, localized territorial names, flags, country search, coverage map and planned calendar source links."
+  ],
+  "channel": {
+    "id": "gibraltar-parliament-video-archive",
+    "name": "Gibraltar Parliament Video Archive",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Gibraltar",
+    "legislature": "Gibraltar Parliament",
+    "external_ids": {
+      "wikidata_qid": "Q128852",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q128852",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Direct Wikidata entity revision 2553222403 matches official institution name and website."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.parliament.gi/video-archive",
+    "provenance_note": "British Overseas Territory; its separate map parent and United Kingdom search association do not make it a UK administrative subdivision or decide territorial claims. The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No text tracks were exposed in the sampled video. Site font and contrast controls are website accessibility tools, not evidence of media captions, sign language or audio description."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.parliament.gi/proceedings-of-parliament/parliamentary-business-timetable",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+      "evidence": [
+        "https://www.parliament.gi/video-archive",
+        "https://www.parliament.gi/privacy-policy"
+      ],
+      "recommendation": "Open the official viewing service; retain link-out only until any independent media reuse is expressly established."
+    }
+  }
+}

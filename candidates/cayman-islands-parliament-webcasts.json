@@ -1,0 +1,70 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "The official site identifies the unicameral legislature under Constitution Part IV. Section 59 of the 2009 Constitution establishes general territorial lawmaking; the financial provisions and current House and Finance Committee records establish budget scrutiny. The institution is now styled Parliament, confirmed by the current official site; the original constitutional text uses Legislative Assembly. Evidence: https://www.legislation.gov.uk/uksi/2009/1379/pdfs/uksi_20091379_en.pdf",
+    "British Overseas Territory; a separate map parent and UK search association do not classify it as a UK administrative subdivision.",
+    "Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established.",
+    "Identity and source conditions: reports/discovery/2026-10-22-territorial-continuation.json",
+    "Added with flag, localized territorial name, UK search association, map outline and planned calendar link."
+  ],
+  "channel": {
+    "id": "cayman-islands-parliament-webcasts",
+    "name": "Cayman Islands Parliament Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Cayman Islands",
+    "legislature": "Parliament of the Cayman Islands",
+    "external_ids": {
+      "wikidata_qid": "Q3625554",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q3625554",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Direct Wikidata entity revision 2452738736 matches the legislative institution; current official website independently confirms its name and designated media route. Not the executive, building or Youth Parliament."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/playlist?list=PLw4BrYufwdD29YaBzcA6P-LZMlLS6GS7N",
+    "provenance_note": "British Overseas Territory. Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No text tracks were exposed in the sampled players. Service-wide caption, sign-language and audio-description availability remains unknown; website accessibility controls are not media-accessibility evidence."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://parliament.ky/events-calender/",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The Parliament website designates the Cayman Islands Government Parliament playlist. The reviewed privacy notice and copyright footer do not establish independent audiovisual reuse permission.",
+      "evidence": [
+        "https://parliament.ky/",
+        "https://parliament.ky/privacy-policy/"
+      ],
+      "recommendation": "Open the official provider service. Keep link-out only; confirm applicable rights before independent embedding, media extraction or redistribution."
+    }
+  }
+}

@@ -8,6 +8,21 @@ application. Earlier application work remains available in Git history.
 
 ### Added
 
+- Bermuda Parliament’s official audio archive after advancing House and Senate
+  playback in WebKit, with the Chromium CORS limitation and reproduction
+  restrictions documented alongside its flag, map, search and calendar links.
+
+- Cayman Islands and Turks and Caicos parliamentary viewing services, with
+  recorded/provider-live-event playback evidence, flags, localized names, country
+  search, map outlines and planned calendars. Further evidence resolves Cook
+  Islands legislative authority and narrows the remaining territorial blockers.
+
+- Guam Legislature and Puerto Rico Senate official viewing services and Gibraltar
+  Parliament’s video archive, with playback evidence, territorial flags, localized
+  names, country search associations, map outlines and planned calendar links.
+  Four other territorial leads retain specific blockers; Vojvodina’s provincial
+  legislative authority is resolved positively.
+
 - Drenthe, Limburg and Noord-Brabant provincial council official viewing links,
   with dated recording playback evidence, flags, map outlines, Netherlands search
   and planned calendar links. All twelve Dutch provincial services were checked;

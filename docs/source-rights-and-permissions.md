@@ -27,6 +27,33 @@ handbook concerns members presenting material inside meetings, not redistributio
 of recordings. None of these additions authorizes native playback, IPTV extraction
 or a new XMLTV parser. [Source-specific evidence](../reports/discovery/2026-10-22-dutch-province-decisions.json).
 
+## Later Territorial Viewing Links
+
+Guam Legislature’s designated YouTube channel, Puerto Rico Senate’s official
+Vimeo event index and Gibraltar Parliament’s archive remain
+`personal_use_pending_review` official link-outs. Institutional ownership and
+working provider recordings establish viewing routes; the reviewed notices do
+not establish independent audiovisual redistribution rights. Gibraltar’s privacy
+policy is not a media licence, and Puerto Rico’s caption labels are not a grant
+of reuse permission. Bermuda’s initial Chromium failure was later narrowed to a browser/CORS
+limitation after WebKit played both chambers. Its official audio archive is now
+a link-out with `no_third_party_reuse`: the copyright notice requires consent
+for reproduction beyond personal use.
+[Source, identity and playback evidence](../reports/discovery/2026-10-22-territorial-followup-decisions.json).
+
+## Cayman Islands and Turks and Caicos
+
+Cayman’s institutional homepage designates the government Parliament playlist;
+its privacy notice and copyright footer do not establish audiovisual reuse
+permission (`personal_use_pending_review`). Turks and Caicos’ published terms
+permit sharing public-page links and personal, educational or non-commercial
+viewing, downloads and printing, while commercial reproduction requires consent
+(`noncommercial_pending_review`). That website clause does not establish a
+separate licence to extract or retransmit YouTube media. Both remain official
+link-outs. Successful provider-live/DVR playback does not establish live-edge
+chamber activity, a stable HLS feed or implemented XMLTV parsing.
+[Decision evidence](../reports/discovery/2026-10-22-territorial-continuation.json).
+
 ## Catalogue Position
 
 Public availability is not the same thing as permission to redistribute,

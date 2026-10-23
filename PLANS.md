@@ -110,7 +110,7 @@ Done:
   public site renders related fallbacks in source details; standalone records
   remain available in the machine-readable dataset until they map to channels.
 - Schema v8 adds compact per-entry validation history. As of 2026-10-22, all
-  121 catalogue entries link to retained dated health reports, including the
+  127 catalogue entries link to retained dated health reports, including the
   Swiss National Council. The public site surfaces the latest retained check
   in source details.
 - Validation-history refresh and drift checking are available through Make and
@@ -150,8 +150,8 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 53 of 121 catalogue entries use a permission status ending in
-`pending_review`: 18 official-vendor HLS, five first-party HLS, 29 official
+Current queue: 58 of 127 catalogue entries use a permission status ending in
+`pending_review`: 18 official-vendor HLS, five first-party HLS, 34 official
 pages and one DASH research record. Later official-link additions retain dated
 source-condition notes; the previous 28-entry queue is a historical subset.
 
@@ -763,15 +763,15 @@ Near-term:
 Current measurable review queues, last reconciled with the catalogue on
 2026-10-22:
 
-- 53 of 121 catalogue entries still use a permission status ending in
+- 58 of 127 catalogue entries still use a permission status ending in
   `pending_review`. Prioritize common service families once, then apply the
   same evidence consistently to their related channel records.
-  Breakdown: 18 official-vendor HLS, 29 official pages, 5 first-party HLS, and
+  Breakdown: 18 official-vendor HLS, 34 official pages, 5 first-party HLS, and
   1 DASH research record.
-- All 121 entries retain at least one `unknown` media-accessibility field. Start
+- All 127 entries retain at least one `unknown` media-accessibility field. Start
   with sources that publish caption or interpretation documentation, and keep
   unsupported fields `unknown` rather than inferring `unavailable`.
-  Breakdown: 50 national, 65 sub-national/territorial, and 6 supranational entries.
+  Breakdown: 50 national, 71 sub-national/territorial, and 6 supranational entries.
   Ontario caption availability and source-dependent sign-language evidence is
   documented across its six feeds; Scottish Parliament TV, Senedd TV, Northern
   Ireland Assembly TV, BC Legislature webcasts, and the three Tweede Kamer
@@ -838,6 +838,24 @@ Current measurable review queues, last reconciled with the catalogue on
   Skåne rejected on scope; Iceland current-player access blocked; Chile Sala IV
   room/event and rights unresolved; French Senate hyperlink conditions unresolved.
   No outreach was sent and no new streams were promoted in this follow-up.
+- [x] Recheck the seven retained territorial service leads; add Guam, Puerto Rico
+  Senate and Gibraltar archive after public recording playback and identity
+  checks, with flags, localized names, search, map and calendar links.
+- [ ] Resolve three held services: current Cook Islands playback (authority is
+  resolved from parliamentary constitutional texts); Bangsamoro geographic
+  representation and source conditions (signed RA12317 and Sulu exclusion clarified); Vojvodina proceedings
+  playback on RTV1 (broadcaster identified; authority positively resolved).
+  [Current continuation decisions](reports/discovery/2026-10-22-territorial-continuation.md).
+- [x] Validate Cayman Islands plenary/Finance Committee recordings and Turks and
+  Caicos archived and provider-live/DVR playback; add official viewing links with
+  flags, localized names, country search, map and planned calendars.
+  [Continuation evidence](reports/discovery/2026-10-22-territorial-continuation.md).
+- [x] Resolve Bermuda playback with a second browser: House and Senate archive
+  audio advances in WebKit. Add the official archive with Chromium CORS and
+  personal-use/reproduction caveats, flag, map, localized name, UK search and
+  planned calendar link.
+- [ ] Recheck Bermuda’s provider CORS response in Chromium and validate on-air
+  audio during a public sitting; keep independent reuse disabled.
 - [ ] Complete the special-status/related-territory scope notes, including
   Francophone Brussels, Ceuta/Melilla, London, U.S. DC/territories, Kingdom of
   the Netherlands constituent countries, New Zealand relationships, Finnish

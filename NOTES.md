@@ -6,6 +6,37 @@ Use this file as evidence and background. The current catalogue lives in `data/c
 
 ## 2026-10-22 In-depth Audit
 
+Bermuda follow-up: original HTTP and HTTPS archive routes both fail in Chromium
+with manifest CORS errors, while the same Senate and House recordings play in
+WebKit with advancing audio. Added the official audio archive with this browser
+limitation, personal-use reproduction restriction, flag, map, country search and
+planned calendar link. Catalogue: 127 sources and 52 regional jurisdictions;
+29 promoted candidates, three researching and one rejected. The following
+paragraphs retain the preceding stages and intermediate counts.
+
+Further territorial validation: added Cayman Islands Parliament’s official
+playlist after plenary and Finance Committee playback checks, and Turks and
+Caicos Parliament’s official channel after archive and provider-live/DVR checks.
+Its live-edge chamber activity is not asserted. All public surfaces are reconciled.
+Cook Islands authority is resolved from parliamentary constitutional texts; its
+Facebook replay is unavailable. Two further Bermuda recordings fail across House
+and Senate. Bangsamoro’s signed election law clarifies holdover/30 October
+assumption; final Sulu exclusion makes the old ARMM map unsuitable. RTV1 is
+identified as Vojvodina’s sitting broadcaster, but public playback is still
+unvalidated. Catalogue: 126 sources, 51 regional jurisdictions; candidates:
+28 promoted, three researching, one rejected. [Continuation evidence](reports/discovery/2026-10-22-territorial-continuation.md).
+
+Territorial service follow-up: revisited the seven retained leads. Added Guam’s
+official media channel (plenary and public hearings), Puerto Rico Senate’s Vimeo
+event index and Gibraltar Parliament’s video archive after decoded recording and
+advancing-playback checks. Reconciled flags, localized names, country search,
+map outlines and planned calendars. Four leads remain held with specific blockers:
+Cook Islands current service; Bermuda failed audio; Bangsamoro transition and
+boundaries; Vojvodina missing video page. Vojvodina’s legislative authority is now
+resolved positively. Catalogue: 124 sources, 49 regional jurisdictions; 26 promoted,
+three researching and one rejected candidate. No HLS or XMLTV parser additions.
+[Follow-up evidence](reports/discovery/2026-10-22-territorial-followup-decisions.md).
+
 Dutch province validation: all twelve eligible legislatures checked against their
 official viewing services and institutional identities. Added Drenthe, Limburg
 and Noord-Brabant after dated video decode and advancing-playback checks.

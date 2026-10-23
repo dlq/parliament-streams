@@ -45,3 +45,19 @@ in the map footer. Retrieval metadata is retained in
 The Dutch provincial additions are Drenthe (NL-DR), Limburg (NL-LI, Netherlands,
 not Belgium), and Noord-Brabant (NL-NB), from the same public-domain Natural
 Earth Admin 1 dataset. Coordinates are rounded to six decimals.
+
+Guam, Puerto Rico and Gibraltar also use public-domain Natural Earth Admin 1
+outlines (GUM, PRI and GIB source groups), rounded to six decimals. Guam and
+Gibraltar supplement the coarser overview, which omits them. Their separate
+GU/PR/GI map parents and US/GB search associations are navigation choices, not
+changes to territorial or constitutional status.
+
+Cayman Islands and Turks and Caicos Islands use the Natural Earth Admin 1 CYM
+and TCA groups, respectively. All TCA island components are combined into one
+territorial outline. They also supplement the coarse overview where absent.
+Separate KY/TC map parents and UK search associations preserve their territorial
+identity; coordinates are rounded to six decimals.
+
+Bermuda combines all eleven Natural Earth Admin 1 BMU components, with its
+separate BM map parent and UK search association. It supplements the overview
+where absent; coordinates are rounded to six decimals.

@@ -1,0 +1,398 @@
+{
+  "research_date": "2026-10-22",
+  "scope_rule": "docs/catalogue-scope.md",
+  "previous_report": "reports/discovery/2026-10-22-territorial-decisions.json",
+  "method": "Normal Chromium navigation of official institutional pages and their provider links, direct Wikidata entity checks, decoded frames and advancing playback. YouTube embed Error 153 was distinguished from playback on normal provider watch pages. No access controls bypassed.",
+  "added": [
+    {
+      "id": "guam-legislature-webcasts",
+      "jurisdiction": "Guam",
+      "identity": {
+        "name": "Legislature of Guam",
+        "qid": "Q1563896",
+        "revision": 2424880483,
+        "label": {
+          "language": "en",
+          "value": "Legislature of Guam"
+        },
+        "description": {
+          "language": "en",
+          "value": "unicameralism"
+        },
+        "official_websites": []
+      },
+      "authority_url": "https://www.govinfo.gov/content/pkg/COMPS-1142/pdf/COMPS-1142.pdf",
+      "authority_assessment": "Organic Act sections 10-11 establish the unicameral territorial legislature and broad local legislation and taxation powers; section 20 supplies appropriations authority. Statutory limits do not turn it into a municipal body.",
+      "relationship": "Unincorporated territory of the United States; the map uses Guam itself as the territorial parent, with a separate United States search association.",
+      "official_url": "https://www.youtube.com/@GuamLegislatureMedia/streams",
+      "source_conditions": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+      "conditions_evidence": [
+        "https://guamlegislature.gov/"
+      ],
+      "accessibility": "No text tracks were exposed in the two sampled recordings. English is verified from the sampled proceedings; Chamorro coverage across the service remains unverified.",
+      "playback_evidence": [
+        {
+          "key": "guam-plenary",
+          "url": "https://www.youtube.com/watch?v=nwP2M2RUMTU",
+          "title": "The 38th Guam Legislature Eleventh Special Session - October 6, 2026 8:30am - YouTube",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.031938,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 1073.561,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.133451,
+            "frames": 188
+          }
+        },
+        {
+          "key": "guam-committee",
+          "url": "https://www.youtube.com/watch?v=MaY3dyfoOh8",
+          "title": "Public Hearing - Senator Vincent A.V. Borja - October 21, 2026 2pm - YouTube",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.035265,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 3202.961,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.071038,
+            "frames": 186
+          }
+        }
+      ],
+      "limits": "Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested.",
+      "calendar_url": "https://guamlegislature.gov/calendar/",
+      "live_validated": false,
+      "geometry_source": "Natural Earth 1:10m Admin 1",
+      "geometry_adm0_a3": "GUM",
+      "map_parent": "GU"
+    },
+    {
+      "id": "puerto-rico-senate-webcasts",
+      "jurisdiction": "Puerto Rico",
+      "identity": {
+        "name": "Senate of Puerto Rico",
+        "qid": "Q3955193",
+        "revision": 2555357961,
+        "label": {
+          "language": "en",
+          "value": "Senate of Puerto Rico"
+        },
+        "description": {
+          "language": "en",
+          "value": "subnational legislature"
+        },
+        "official_websites": [
+          "https://senado.pr.gov/"
+        ]
+      },
+      "authority_url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/CONST/CONST.pdf",
+      "authority_assessment": "Constitution Article III establishes the Senate and House as the legislature; sections 16-19 address executive organisation, bills, budget measures and enactment. The Senate is a legislative chamber, not a local council.",
+      "relationship": "United States territory with its own constitutional bicameral legislature. This record covers the Senate, including its linked public joint-committee event; the House viewing service is not claimed validated.",
+      "official_url": "https://senado.pr.gov/envivo",
+      "source_conditions": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+      "conditions_evidence": [
+        "https://senado.pr.gov/envivo"
+      ],
+      "accessibility": "The plenary player exposes automatic tracks labelled es-x-autogen. The committee player exposes en-x-autogen despite the Spanish proceedings. Caption accuracy and language suitability are unassessed; service-wide captions remain unknown.",
+      "playback_evidence": [
+        {
+          "key": "pr-plenary",
+          "url": "https://vimeo.com/event/5710543",
+          "title": "20ma Asamblea Legislativa - 4ta Sesión Ordinaria - lunes, 26 de octubre de 2026",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 1.342324,
+            "width": 1280,
+            "height": 720,
+            "ready": 4,
+            "duration": 28212.949333,
+            "frames": 46,
+            "tracks": [
+              {
+                "language": "es-x-autogen",
+                "kind": "subtitles"
+              },
+              {
+                "language": "es-x-autogen",
+                "kind": "captions"
+              }
+            ]
+          },
+          "later": {
+            "time": 3.377924,
+            "frames": 106
+          }
+        },
+        {
+          "key": "pr-committee",
+          "url": "https://vimeo.com/event/4721165",
+          "title": "Vista Pública - Comisión Conjunta para la Revisión del Código Penal de Puerto Rico - miércoles, 21 de octubre de 2026",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 2.259451,
+            "width": 1280,
+            "height": 720,
+            "ready": 4,
+            "duration": 11992.900400999644,
+            "frames": 73,
+            "tracks": [
+              {
+                "language": "en-x-autogen",
+                "kind": "subtitles"
+              },
+              {
+                "language": "en-x-autogen",
+                "kind": "captions"
+              }
+            ]
+          },
+          "later": {
+            "time": 4.277953,
+            "frames": 133
+          }
+        }
+      ],
+      "limits": "The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity.",
+      "calendar_url": "https://senado.pr.gov/envivo",
+      "live_validated": false,
+      "geometry_source": "Natural Earth 1:10m Admin 1",
+      "geometry_adm0_a3": "PRI",
+      "map_parent": "PR"
+    },
+    {
+      "id": "gibraltar-parliament-video-archive",
+      "jurisdiction": "Gibraltar",
+      "identity": {
+        "name": "Gibraltar Parliament",
+        "qid": "Q128852",
+        "revision": 2553222403,
+        "label": {
+          "language": "en",
+          "value": "Parliament of Gibraltar"
+        },
+        "description": {
+          "language": "en",
+          "value": "legislature of the British overseas territory of Gibraltar"
+        },
+        "official_websites": [
+          "http://www.parliament.gi"
+        ]
+      },
+      "authority_url": "https://www.parliament.gi/uploads/contents/parliament_legislation/constitution2006.pdf",
+      "authority_assessment": "Constitution sections 32-33 provide general lawmaking through Parliament bills and assent; the constitution also establishes the budget and ministerial government framework. This is the territorial parliament, not a municipal council.",
+      "relationship": "British Overseas Territory; its separate map parent and United Kingdom search association do not make it a UK administrative subdivision or decide territorial claims.",
+      "official_url": "https://www.parliament.gi/video-archive",
+      "source_conditions": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+      "conditions_evidence": [
+        "https://www.parliament.gi/video-archive",
+        "https://www.parliament.gi/privacy-policy"
+      ],
+      "accessibility": "No text tracks were exposed in the sampled video. Site font and contrast controls are website accessibility tools, not evidence of media captions, sign language or audio description.",
+      "playback_evidence": [
+        {
+          "key": "gibraltar",
+          "url": "https://www.youtube.com/watch?v=Bg5NQvAEtdo",
+          "title": "Meeting - Friday 2nd October 2026 (am) - YouTube",
+          "status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.055224,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 16144.121,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.149856,
+            "frames": 188
+          }
+        }
+      ],
+      "limits": "The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link.",
+      "calendar_url": "https://www.parliament.gi/proceedings-of-parliament/parliamentary-business-timetable",
+      "live_validated": false,
+      "geometry_source": "Natural Earth 1:10m Admin 1",
+      "geometry_adm0_a3": "GIB",
+      "map_parent": "GI"
+    }
+  ],
+  "held": [
+    {
+      "key": "cook",
+      "jurisdiction": "Cook Islands",
+      "identity": {
+        "name": "Parliament of the Cook Islands",
+        "qid": "Q7138950",
+        "revision": 2527249210,
+        "label": {
+          "language": "en",
+          "value": "Parliament of the Cook Islands"
+        },
+        "description": {
+          "language": "en",
+          "value": "unicameral legislature of the Cook Islands"
+        },
+        "official_websites": [
+          "http://www.parliament.gov.ck/"
+        ]
+      },
+      "official_url": "https://parliament.gov.ck/live/",
+      "decision": "held",
+      "authority_status": "authority_review_required",
+      "authority_url": "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific/cook-islands?l=en_NZ",
+      "authority_assessment": "Self-governing state in free association with New Zealand, not a New Zealand province. Official MFAT guidance and the joint declaration recognise its own lawmaking; the current full constitutional text and scrutiny provisions need a fuller retained review before publication.",
+      "blocker": "Official live page still has no player. Its linked YouTube archive lists September 2020 streams; current playback and the current viewing service remain unverified. The persistent dissolution/election banner is not proof of current parliamentary status.",
+      "next_action": "Trace the current official ParliamentTV or successor channel and validate a recent recording before promotion."
+    },
+    {
+      "key": "bermuda",
+      "jurisdiction": "Bermuda",
+      "identity": {
+        "name": "Parliament of Bermuda",
+        "qid": "Q7138929",
+        "revision": 2555342410,
+        "label": {
+          "language": "en",
+          "value": "Parliament of Bermuda"
+        },
+        "description": {
+          "language": "en",
+          "value": "legislature of the British Overseas Territory of Bermuda"
+        },
+        "official_websites": [
+          "http://parliament.bm/",
+          "https://www.parliament.bm/"
+        ]
+      },
+      "official_url": "https://sg001-harmony.sliq.net/00290/Harmony",
+      "decision": "held",
+      "authority_status": "eligible_legislature",
+      "authority_url": "https://parliament.bm/about/view/15",
+      "authority_assessment": "Official institutional explanation establishes lawmaking, public finance and executive accountability. British Overseas Territory with separate House and Senate. Copyright notice restricts reproduction beyond personal use without written consent: https://parliament.bm/about/view/25",
+      "blocker": "Normal Recordings navigation lists House and Senate events. The 25 September 2026 House AM recording reports playback failed, could not connect to server; no advancing audio was validated. The homepage sitting indicator conflicts with the player showing no upcoming events.",
+      "next_action": "Test a second House and Senate recording and current audio coverage during a sitting; retain personal-use restriction.",
+      "failed_sample_url": "https://sg001-harmony.sliq.net/00290/Harmony/en/PowerBrowser/PowerBrowserV3/20261023/-1/22466"
+    },
+    {
+      "key": "bangsamoro",
+      "jurisdiction": "Bangsamoro",
+      "identity": {
+        "name": "Bangsamoro Parliament",
+        "qid": "Q77907529",
+        "revision": 2550375470,
+        "label": {
+          "language": "en",
+          "value": "Bangsamoro Parliament"
+        },
+        "description": {
+          "language": "en",
+          "value": "Regional legislature of the Bangsamoro region"
+        },
+        "official_websites": [
+          "https://parliament.bangsamoro.gov.ph/"
+        ]
+      },
+      "official_url": "https://parliament.bangsamoro.gov.ph/",
+      "decision": "held",
+      "authority_status": "eligible_legislature",
+      "authority_url": "https://parliament.bangsamoro.gov.ph/about-us/",
+      "authority_assessment": "Official parliamentary description and legislative-process guidance identify substantive autonomous lawmaking under RA11054. Autonomous regional parliament within the Philippines; do not describe its present membership as elected or transitional solely from a stale page.",
+      "blocker": "The embedded session is a July 14 recording despite WATCH LIVE wording. It plays on the normal YouTube watch page. Current homepage announces the BTA final sitting on 21 October and a transition to elected members; precise current representation and territorial geometry are not reconciled.",
+      "next_action": "Confirm the successor institution and new membership from current primary notices, settle the Sulu and Special Geographic Area mapping, and review source conditions before promotion.",
+      "recording_check": {
+        "url": "https://www.youtube.com/watch?v=cmDrLOIl0iU",
+        "title": "WATCH LIVE: Second BTA Parliament resumes Session No. 125 of its fourth regular session. - YouTube",
+        "players": [
+          {
+            "tag": "VIDEO",
+            "src": "blob:https://www.youtube.com/04108044-5f4f-417a-854d-ec62e0cccabc",
+            "time": 4.056755,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 12805.321,
+            "frames": 126,
+            "tracks": []
+          }
+        ],
+        "later": [
+          {
+            "time": 6.090565,
+            "frames": 187
+          }
+        ]
+      },
+      "transition_notice": "https://parliament.bangsamoro.gov.ph/2026/10/22/bta-parliament-ends-7-year-run-with-94-laws-as-elected-lawmakers-prepare-to-take-over/"
+    },
+    {
+      "key": "vojvodina",
+      "jurisdiction": "Vojvodina",
+      "identity": {
+        "name": "Assembly of Vojvodina",
+        "qid": "Q3365531",
+        "revision": 2557276595,
+        "label": {
+          "language": "en",
+          "value": "Assembly of Vojvodina"
+        },
+        "description": {
+          "language": "en",
+          "value": "provincial legislature in Serbia"
+        },
+        "official_websites": [
+          "https://www.skupstinavojvodine.gov.rs/"
+        ]
+      },
+      "official_url": "https://www.skupstinavojvodine.gov.rs/",
+      "decision": "held",
+      "authority_status": "eligible_legislature",
+      "authority_url": "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=statut&j=EN",
+      "authority_assessment": "Official Statute articles 30-31 establish provincial normative decisions, budget, election and scrutiny of the provincial government, and offences for breach of provincial regulations. Autonomous province within Serbia; national-law limits do not negate this regional legislative authority.",
+      "blocker": "Official photo/video gallery has a Video link, but its destination renders Page not found with HTTP 200. No dedicated current proceedings player was established.",
+      "next_action": "Find an institution-designated proceedings broadcaster or archive, distinguish parliamentary sittings from ceremonies and press clips, then validate playback."
+    }
+  ],
+  "catalogue_sources": 124,
+  "regional_jurisdictions": 49,
+  "iptv_added": false,
+  "xmltv_parser_added": false,
+  "surface_validation": {
+    "catalogue_sources": 124,
+    "regional_jurisdictions_with_geometry": 49,
+    "browsers": [
+      "Chromium",
+      "WebKit"
+    ],
+    "viewport_widths": [
+      1280,
+      320
+    ],
+    "checks": [
+      "English country association and Dutch localized United States search",
+      "Local flags load",
+      "Official link-out details without native player",
+      "All three map selections and small-territory keyboard markers",
+      "Planned calendar outlinks",
+      "No horizontal overflow or page/console errors"
+    ],
+    "repository_checks": "make verify passed: 109 tests, one skipped; HTML/Axe, schema/candidate validation, history/snapshot drift, lint and type checks passed.",
+    "browser_plugin": "not available; project Playwright used"
+  }
+}

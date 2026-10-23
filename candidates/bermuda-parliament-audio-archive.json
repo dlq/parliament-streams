@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "The official institutional explanation establishes lawmaking, public finance and executive accountability. British Overseas Territory; separate BM map parent and UK search association.",
+    "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated.",
+    "Audio/browser compatibility and rights evidence: reports/discovery/2026-10-22-territorial-continuation.json",
+    "Added after WebKit playback resolved the earlier Chromium-only failure assessment, with local flag, localized name, map, UK search and planned calendar link."
+  ],
+  "channel": {
+    "id": "bermuda-parliament-audio-archive",
+    "name": "Bermuda Parliament Audio Archive",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Bermuda",
+    "legislature": "Parliament of Bermuda",
+    "external_ids": {
+      "wikidata_qid": "Q7138929",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q7138929",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Direct Wikidata entity revision 2555342410 identifies the bicameral Parliament, corroborated by its official website and House/Senate archive labels."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://sg001-harmony.sliq.net/00290/Harmony",
+    "provenance_note": "British Overseas Territory. The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The sampled archive is explicitly labelled Audio. No captions or video were established. The presence of transcript/search controls does not establish event transcript availability; sign-language and audio-description coverage remains unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "no_third_party_reuse",
+      "summary": "Parliament claims copyright in site material and requires the Clerk’s written consent for reproduction for financial gain or beyond personal use. No independent audio reuse, embedding or redistribution permission is established.",
+      "evidence": [
+        "https://parliament.bm/about/view/25"
+      ],
+      "recommendation": "Audio playback was verified in WebKit. Chrome/Chromium failed in the current check; try Safari for this archive. Open the official service and obtain applicable written permission before independent audio playback, embedding or redistribution."
+    }
+  }
+}

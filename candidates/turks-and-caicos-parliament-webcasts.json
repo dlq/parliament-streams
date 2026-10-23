@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "The current institutional constitutional overview identifies substantive legislation through the House and Governor assent, approval of public expenditure, government scrutiny and committees. This is the territorial Parliament, not a municipal council. The official site uses Parliament while retaining House of Assembly terminology in its constitutional explanation. Evidence: https://www.parliament.gov.tc/constitutional-overview",
+    "British Overseas Territory; a separate map parent and UK search association do not classify it as a UK administrative subdivision.",
+    "The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified.",
+    "Identity and source conditions: reports/discovery/2026-10-22-territorial-continuation.json",
+    "Added with flag, localized territorial name, UK search association, map outline and planned calendar link."
+  ],
+  "channel": {
+    "id": "turks-and-caicos-parliament-webcasts",
+    "name": "Turks and Caicos Parliament Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Turks and Caicos Islands",
+    "legislature": "Parliament of the Turks and Caicos Islands",
+    "external_ids": {
+      "wikidata_qid": "Q7855481",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q7855481",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Direct Wikidata entity revision 2451559961 matches the legislative institution; current official website independently confirms its name and designated media route. Not the executive, building or Youth Parliament."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@TCIParliament/streams",
+    "provenance_note": "British Overseas Territory. The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No text tracks were exposed in the sampled players. Service-wide caption, sign-language and audio-description availability remains unknown; website accessibility controls are not media-accessibility evidence."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.parliament.gov.tc/events",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "noncommercial_pending_review",
+      "summary": "The website terms explicitly permit sharing public-page links and personal, educational or non-commercial viewing, downloads and printing. Commercial reproduction or distribution requires written permission. This website-content clause does not establish a separate licence to extract, embed or retransmit provider video.",
+      "evidence": [
+        "https://www.parliament.gov.tc/terms-of-use"
+      ],
+      "recommendation": "Open the official provider service. Keep link-out only; confirm applicable rights before independent embedding, media extraction or redistribution."
+    }
+  }
+}

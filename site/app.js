@@ -85,6 +85,9 @@ function renderDailyHero() {
 }
 
 const jurisdictionFlagAssets = {
+  Bermuda: "assets/flags/bm.svg",
+  "Cayman Islands": "assets/flags/ky.svg", "Turks and Caicos Islands": "assets/flags/tc.svg",
+  Guam: "assets/flags/gu.svg", "Puerto Rico": "assets/flags/pr.svg", Gibraltar: "assets/flags/gi.svg",
   Drenthe: "assets/flags/drenthe.svg",
   Limburg: "assets/flags/limburg.svg",
   "Noord-Brabant": "assets/flags/noord-brabant.svg",
@@ -173,6 +176,9 @@ const jurisdictionFlagAssets = {
 };
 
 const jurisdictionCodes = {
+  Bermuda: "BM",
+  "Cayman Islands": "KY", "Turks and Caicos Islands": "TC",
+  Guam: "GU", "Puerto Rico": "PR", Gibraltar: "GI",
   Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "PF", "New Caledonia": "NC", "Sint Maarten": "SX",
   Australia: "AU", Brazil: "BR", Canada: "CA", Chile: "CL", "Costa Rica": "CR",
   "Czech Republic": "CZ", Finland: "FI", Sweden: "SE", Denmark: "DK", "El Salvador": "SV", Estonia: "EE", France: "FR", Germany: "DE",

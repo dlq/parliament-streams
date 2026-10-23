@@ -9,7 +9,7 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-10-22, 23 candidates are promoted and three candidates remain `researching`:
+As of 2026-10-22, 29 candidates are promoted and three candidates remain `researching`:
 
 - Chile Chamber Sala IV: room identity, schedule mapping and rights scope need
   review despite official-page discovery and sample media checks.
@@ -26,7 +26,7 @@ The Czech chamber feed
 passed active live-media and browser-decode checks and was promoted; Sweden
 and Finland were added as official-page link-outs. See the
 [in-depth audit](../reports/discovery/2026-10-22-in-depth-audit.md).
-Twenty-three promoted records are retained for audit history, including the eight
+Twenty-nine promoted records are retained for audit history, including the eight
 first-expansion links, five later territorial services, three Dutch provincial
 viewing services and Bern's official
 Online-Tagblatt archive. Bern's cantonal-parliament identity is Q664547; the
@@ -52,3 +52,17 @@ requirements.
 Drenthe, Limburg and Noord-Brabant were promoted after recording playback checks.
 Nine other Dutch provincial services remain discovery leads with access blockers,
 not formal candidates. See [the twelve-province review](../reports/discovery/2026-10-22-dutch-province-decisions.md).
+
+The [territorial follow-up](../reports/discovery/2026-10-22-territorial-followup-decisions.md)
+adds Guam, Puerto Rico Senate and Gibraltar archive. Cook Islands,
+Bangsamoro and Vojvodina remain discovery leads with specific blockers, rather
+than formal candidates or published sources.
+
+The [further territorial pass](../reports/discovery/2026-10-22-territorial-continuation.md)
+adds Cayman Islands and Turks and Caicos after public playback checks, and
+retains narrower next actions for the remaining held discovery leads.
+
+Bermuda was subsequently promoted as an official audio archive after House and
+Senate playback succeeded in WebKit. Chromium fails with provider CORS errors;
+that browser limitation and the personal-use reproduction restriction remain
+explicit in its candidate and catalogue evidence.

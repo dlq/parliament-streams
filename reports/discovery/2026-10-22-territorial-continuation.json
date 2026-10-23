@@ -1,0 +1,389 @@
+{
+  "research_date": "2026-10-22",
+  "scope": "Continuation of regional and special-status research: four held leads investigated further, then two additional territorial services validated. This is a bounded batch, not completion of the wider inventory.",
+  "previous_report": "reports/discovery/2026-10-22-territorial-followup-decisions.json",
+  "added": [
+    {
+      "region": "Cayman Islands",
+      "cid": "cayman-islands-parliament-webcasts",
+      "name": "Cayman Islands Parliament Webcasts",
+      "qid": "Q3625554",
+      "url": "https://www.youtube.com/playlist?list=PLw4BrYufwdD29YaBzcA6P-LZMlLS6GS7N",
+      "calendar": "https://parliament.ky/events-calender/",
+      "parent": "KY",
+      "geo": "CYM",
+      "ledger": "united-kingdom--cayman-islands",
+      "institution": "https://parliament.ky/",
+      "authority": "https://www.legislation.gov.uk/uksi/2009/1379/pdfs/uksi_20091379_en.pdf",
+      "scope": "The official site identifies the unicameral legislature under Constitution Part IV. Section 59 of the 2009 Constitution establishes general territorial lawmaking; the financial provisions and current House and Finance Committee records establish budget scrutiny. The institution is now styled Parliament, confirmed by the current official site; the original constitutional text uses Legislative Assembly.",
+      "leg": "Parliament of the Cayman Islands",
+      "permission": "personal_use_pending_review",
+      "conditions": [
+        "https://parliament.ky/",
+        "https://parliament.ky/privacy-policy/"
+      ],
+      "terms": "The Parliament website designates the Cayman Islands Government Parliament playlist. The reviewed privacy notice and copyright footer do not establish independent audiovisual reuse permission.",
+      "note": "Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established.",
+      "samples": [
+        "cayman-plenary",
+        "cayman-finance"
+      ],
+      "identity": {
+        "name": "Parliament of the Cayman Islands",
+        "qid": "Q3625554",
+        "revision": 2452738736,
+        "label": {
+          "language": "en",
+          "value": "Parliament of the Cayman Islands"
+        },
+        "description": {
+          "language": "en",
+          "value": "Unicameral legislature of the British Overseas Territory of the Cayman Islands"
+        },
+        "official_websites": [
+          "http://www.gov.ky"
+        ]
+      },
+      "playback_checks": [
+        {
+          "key": "cayman-plenary",
+          "url": "https://www.youtube.com/watch?v=KL-VgLMrtr0",
+          "title": "Fourth Sitting of the Second Meeting of the 2026-2027 Session | 5 October 2026 | Part 2 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.036292,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 13466.366666666667,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.042273,
+            "frames": 187
+          }
+        },
+        {
+          "key": "cayman-finance",
+          "url": "https://www.youtube.com/watch?v=BXNY8j7ndhs",
+          "title": "Finance Committee | 8 October 2026 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.040331,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 14671.241,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.077342,
+            "frames": 186
+          }
+        }
+      ],
+      "live_edge_validated": false
+    },
+    {
+      "region": "Turks and Caicos Islands",
+      "cid": "turks-and-caicos-parliament-webcasts",
+      "name": "Turks and Caicos Parliament Webcasts",
+      "qid": "Q7855481",
+      "url": "https://www.youtube.com/@TCIParliament/streams",
+      "calendar": "https://www.parliament.gov.tc/events",
+      "parent": "TC",
+      "geo": "TCA",
+      "ledger": "united-kingdom--turks-and-caicos-islands",
+      "institution": "https://www.parliament.gov.tc/",
+      "authority": "https://www.parliament.gov.tc/constitutional-overview",
+      "scope": "The current institutional constitutional overview identifies substantive legislation through the House and Governor assent, approval of public expenditure, government scrutiny and committees. This is the territorial Parliament, not a municipal council. The official site uses Parliament while retaining House of Assembly terminology in its constitutional explanation.",
+      "leg": "Parliament of the Turks and Caicos Islands",
+      "permission": "noncommercial_pending_review",
+      "conditions": [
+        "https://www.parliament.gov.tc/terms-of-use"
+      ],
+      "terms": "The website terms explicitly permit sharing public-page links and personal, educational or non-commercial viewing, downloads and printing. Commercial reproduction or distribution requires written permission. This website-content clause does not establish a separate licence to extract, embed or retransmit provider video.",
+      "note": "The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified.",
+      "samples": [
+        "turks-archive",
+        "turks-live"
+      ],
+      "identity": {
+        "name": "House of Assembly of the Turks and Caicos Islands",
+        "qid": "Q7855481",
+        "revision": 2451559961,
+        "label": {
+          "language": "en",
+          "value": "Parliament of the Turks and Caicos Islands"
+        },
+        "description": null,
+        "official_websites": []
+      },
+      "playback_checks": [
+        {
+          "key": "turks-archive",
+          "url": "https://www.youtube.com/watch?v=-xMcOXIjp0w",
+          "title": "2nd Sitting - 5th Meeting - 2nd Session - 13th Legislature of the TCI - 16 Oct 2026 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.039674,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 21434.381,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.087737,
+            "frames": 187
+          }
+        },
+        {
+          "key": "turks-live",
+          "url": "https://www.youtube.com/watch?v=SoF6j5RH4j0",
+          "title": "1st Sitting - 6th Meeting - 2nd Session - 13th Legislature of the TCI - 22 Oct 2026 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 44310.556804,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 47906.562,
+            "frames": 127,
+            "tracks": []
+          },
+          "later": {
+            "time": 44312.599007,
+            "frames": 188
+          }
+        }
+      ],
+      "live_edge_validated": false
+    },
+    {
+      "region": "Bermuda",
+      "cid": "bermuda-parliament-audio-archive",
+      "name": "Bermuda Parliament Audio Archive",
+      "identity": {
+        "name": "Parliament of Bermuda",
+        "qid": "Q7138929",
+        "revision": 2555342410,
+        "label": {
+          "language": "en",
+          "value": "Parliament of Bermuda"
+        },
+        "description": {
+          "language": "en",
+          "value": "legislature of the British Overseas Territory of Bermuda"
+        },
+        "official_websites": [
+          "http://parliament.bm/",
+          "https://www.parliament.bm/"
+        ]
+      },
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+      "institution": "https://parliament.bm/",
+      "authority": "https://parliament.bm/about/view/15",
+      "source_conditions": "Parliament claims copyright in site material and requires the Clerk’s written consent for reproduction for financial gain or beyond personal use. No independent audio reuse, embedding or redistribution permission is established.",
+      "conditions": [
+        "https://parliament.bm/about/view/25"
+      ],
+      "permission": "no_third_party_reuse",
+      "scope": "Territorial bicameral legislature with lawmaking, public-finance and executive-accountability powers, as documented by its official institutional explanation.",
+      "note": "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated.",
+      "browser_compatibility": {
+        "chromium": "manifest request blocked by browser CORS policy; no advancing audio",
+        "webkit": "House and Senate audio both advance",
+        "bounded_manifest_request": {
+          "url": "https://sg001-vod.sliq.net/00290-vod/_definst_/2026/10/07/Senate%20Meeting%20AM_10.00.00_22471_1020.mp4/playlist.m3u8",
+          "method": "bounded normal public manifest request, default TLS verification",
+          "status": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "cors": "*",
+          "hls_header": true
+        }
+      },
+      "samples": [
+        {
+          "engine": "webkit",
+          "first": [
+            {
+              "time": 3.442752249,
+              "ready": 4,
+              "duration": 11411.988
+            }
+          ],
+          "later": [
+            {
+              "time": 5.449175499,
+              "ready": 4
+            }
+          ],
+          "text": "Senate Meeting AM Adjourned\n\n10\n10\n10:00:05 AM\nAudio\nInfo\nDescription\nScheduled\nWednesday, Oct 7, 2026\n10:00 AM - 2:00 PM\n4 Hours\nActual\nWednesday, Oct 7, 2026\n10:00 AM - 1:10 PM\n3 Hours 10 Minutes\n \n \nAuto Scroll\nSync\nSearch\nSearch Text\nResult:\nX",
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "9:6.297 error type:mediaError details :bufferSeekOverHole"
+          ]
+        },
+        {
+          "engine": "webkit-house",
+          "first": [
+            {
+              "time": 3.441231042,
+              "ready": 4,
+              "duration": 18973.002
+            }
+          ],
+          "later": [
+            {
+              "time": 5.447650376,
+              "ready": 4
+            }
+          ],
+          "text": "House Meeting Adjourned\n\n10\n10\n2:00:05 PM\nAudio\nInfo\nDescriptionMeeting in Chamber\nScheduled\nFriday, Oct 2, 2026\n2:00 PM - 3:00 AM\n13 Hours\nActual\nFriday, Oct 2, 2026\n2:00 PM - 7:16 PM\n5 Hours 16 Minutes\nContact\nInformation\n dlamb@parliament.bm\n 441-292-7408\n Information website\nSupport\n dplamb@gov.bm\n 441-292-7408\n Support website\n \n \nAuto Scroll\nSync\nSearch\nSearch Text\nResult:\nX",
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "9:6.572 error type:mediaError details :bufferSeekOverHole"
+          ]
+        }
+      ],
+      "map_parent": "BM",
+      "geometry_source": "Natural Earth Admin 1; BMU group, all eleven components combined",
+      "live_validated": false
+    }
+  ],
+  "held_followup": [
+    {
+      "key": "cook",
+      "ledger": "new-zealand--cook-islands",
+      "status": "eligible_legislature",
+      "authority": "https://parliament.gov.ck/wp-content/uploads/2022/07/CONSTITUTION-OF-THE-COOK-ISLANDS-JUNE-2022.pdf",
+      "authority_note": "Official reprint dated 13 June 2022: Article 39 gives Parliament general Act-making powers; Article 13 provides parliamentary confidence/accountability; Articles 70-71 establish appropriation and public expenditure audit scrutiny. Read with the Parliament-hosted text consolidation and current MFAT free-association guidance. The dated reprint is not represented as a verified 2026 consolidation. This is the national Parliament of a self-governing associated state, not a New Zealand province or the House of Ariki.",
+      "finding": "Parliament TV explicitly designates Facebook broadcasts and replays. Its sampled 26 May 2022 replay link reports video unavailable. The public Facebook Videos listing opens but offers old interviews and promotional material; that is not validated current parliamentary proceedings. The empty /live page and old YouTube archive remain unresolved.",
+      "next_action": "Locate a recent official sitting replay or current broadcast route; validate public playback without login. Authority review is resolved positively; do not substitute youth parliament or promotional interviews for proceedings.",
+      "urls": [
+        "https://parliament.gov.ck/parliamenttv/",
+        "https://www.facebook.com/cookislands.parliament/videos",
+        "https://fb.watch/cXZm-AbZVA/",
+        "https://parliament.gov.ck/wp-content/uploads/2022/07/Cook-Islands-Constitution-1965_consolidated-version.pdf"
+      ]
+    },
+    {
+      "key": "bangsamoro",
+      "ledger": "philippines--bangsamoro",
+      "status": "eligible_legislature",
+      "authority": "https://www.comelec.gov.ph/php-tpls-attachments/References/RelatedLaws/ElectionLaws/ARMM/RA12317.pdf",
+      "authority_note": "Signed RA12317, approved 25 March 2026, was read visually: section 2 provides BTA holdover until elected successors qualify; section 6 sets assumption at noon on 30 October 2026. The last sitting on 21 October does not by itself establish expiry of office. The Supreme Court finality notice of 26 November 2024 excludes Sulu from BARMM.",
+      "finding": "Institutional transition timing is now clearer from the signed election law, rather than conflicting indexed article summaries. The detailed 22 October Parliament news page returned a human-verification challenge and was not bypassed. Natural Earth still labels its provinces ARMM, includes Sulu and lacks the Special Geographic Area boundary, so it cannot be used unmodified for a current BARMM outline.",
+      "next_action": "Obtain a current licensed boundary covering the correct constituent provinces, Cotabato City and Special Geographic Area while excluding Sulu. Verify current post-transition official viewing ownership and published source conditions before promotion.",
+      "urls": [
+        "https://www.comelec.gov.ph/?r=References/RelatedLaws/ElectionLaws/ARMM/ra12317",
+        "https://sc.judiciary.gov.ph/press-briefer-no-17/",
+        "https://parliament.bangsamoro.gov.ph/"
+      ]
+    },
+    {
+      "key": "vojvodina",
+      "ledger": "serbia--vojvodina",
+      "status": "eligible_legislature",
+      "authority": "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=statut&j=EN",
+      "authority_note": "The earlier positive Statute articles 30-31 authority assessment stands.",
+      "finding": "Official RTV reporting identifies live sittings on RTV1, and its public annual report describes broadcast coverage of provincial assembly sittings. This resolves the likely broadcaster. Both normal hostnames fail with an HTTP/2 protocol error here; an HTTP/1.1 retry was refused. The assembly Video destination still does not establish a dedicated proceedings service. News clips alone do not validate a recurring parliamentary archive.",
+      "next_action": "Open RTV1 during an announced sitting or locate the broadcaster full-sitting archive and validate playback and its public source conditions. Do not promote the general entertainment/news channel as a dedicated always-on parliament feed.",
+      "urls": [
+        "https://rtv.rs/sr_lat/uzivo",
+        "https://rtv.rs/sr_lat/vojvodina/novi-sad/u-toku-sednica-skupstine-ap-vojvodine-poslanici-o-budzetu-%28rtv1%29_1738834.html",
+        "https://static.rtv.rs/pdf/2025/11/19/-2024.pdf"
+      ]
+    }
+  ],
+  "catalogue_sources": 127,
+  "regional_jurisdictions": 52,
+  "iptv_added": false,
+  "xmltv_parser_added": false,
+  "bermuda_samples": [
+    {
+      "key": "senate",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/en/PowerBrowser/PowerBrowserV3/20261023/-1/22471",
+      "title": "Bermuda Parliament - Senate Meeting AM",
+      "media": [
+        {
+          "time": 0,
+          "ready": 0,
+          "src": "blob:https://sg001-harmony.sliq.net/a0bfa33c-6757-4827-8be9-00bcf9812bc1"
+        }
+      ],
+      "later": [
+        {
+          "time": 0,
+          "ready": 0
+        }
+      ]
+    },
+    {
+      "key": "house",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/en/PowerBrowser/PowerBrowserV3/20261023/-1/22470",
+      "title": "Bermuda Parliament - House Meeting",
+      "media": [
+        {
+          "time": 0,
+          "ready": 0,
+          "src": "blob:https://sg001-harmony.sliq.net/e623f27f-f978-4374-9a8f-ac72e2fdc7a8"
+        }
+      ],
+      "later": [
+        {
+          "time": 0,
+          "ready": 0
+        }
+      ]
+    }
+  ],
+  "surface_validation": {
+    "browsers": [
+      "Chromium",
+      "WebKit"
+    ],
+    "viewport_widths": [
+      1280,
+      320
+    ],
+    "catalogue_sources": 127,
+    "regional_jurisdictions": 52,
+    "checks": [
+      "All six uncommitted territorial additions retain official viewing links and local flags",
+      "English and Dutch country search associations",
+      "All six map selections, keyboard markers and planned calendar links",
+      "Bermuda browser-compatibility guidance appears in public source details",
+      "No horizontal overflow or page/console errors in the catalogue/map/schedule app"
+    ],
+    "repository_checks": "make verify passed: 109 tests, one skipped; HTML/Axe, schema/candidate validation, history/snapshot drift, lint, type checking and coverage passed.",
+    "browser_plugin": "Not available; project Playwright used.",
+    "additional_checks": [
+      "Cayman, Turks and Caicos and Bermuda outline location and polygon winding passed"
+    ]
+  },
+  "resolved_followup": [
+    {
+      "key": "bermuda",
+      "ledger": "united-kingdom--bermuda",
+      "status": "eligible_legislature",
+      "authority": "https://parliament.bm/about/view/15",
+      "authority_note": "Earlier official lawmaking, public finance and executive accountability review stands; copyright restriction beyond personal use remains unchanged.",
+      "finding": "Two additional normal archive selections fail: Senate AM 7 October 2026 and House PM 2 October 2026 both report could not connect to server and remain at time zero/readyState zero. Combined with the earlier 25 September House AM sample, three dated recordings across both chambers now fail in this environment.",
+      "next_action": "Investigate provider media connectivity or a current institution-designated alternative. Keep unpublished until actual public audio advances; these checks do not prove global unavailability.",
+      "urls": [
+        "https://sg001-harmony.sliq.net/00290/Harmony"
+      ],
+      "outcome": "promoted_after_webkit_validation",
+      "resolution": "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated."
+    }
+  ]
+}

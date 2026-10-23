@@ -68,3 +68,11 @@ Dutch provincial flag depictions as public domain.
 - `drenthe.svg`: [Flag of Drenthe.svg](https://commons.wikimedia.org/wiki/File:Flag_of_Drenthe.svg), GeeKaa, later SVG optimization by HapHaxion; public-domain release.
 - `limburg.svg`: [Flag of Limburg (Netherlands).svg](https://commons.wikimedia.org/wiki/File:Flag_of_Limburg_(Netherlands).svg), Louis Maris design, SVG by GeeKaa and D’Arch; public-domain Dutch provincial flag.
 - `noord-brabant.svg`: [North Brabant-Flag.svg](https://commons.wikimedia.org/wiki/File:North_Brabant-Flag.svg), GeeKaa and later optimizations; public-domain release.
+
+`gu.svg`, `pr.svg` and `gi.svg` use the same MIT-licensed flag-icons v7.3.2
+source and bundled licence as the other territorial flags.
+
+`ky.svg` and `tc.svg` also use the MIT-licensed flag-icons v7.3.2 source and
+bundled licence.
+
+`bm.svg` uses the same MIT-licensed flag-icons v7.3.2 source and bundled licence.

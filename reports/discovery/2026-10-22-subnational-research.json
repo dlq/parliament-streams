@@ -35808,32 +35808,42 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/COMPS-1142/pdf/COMPS-1142.pdf",
+          "title": "Legislative authority",
+          "review_method": "official_statutory_or_constitutional_text_review",
+          "note": "Organic Act sections 10-11 establish the unicameral territorial legislature and broad local legislation and taxation powers; section 20 supplies appropriations authority. Statutory limits do not turn it into a municipal body."
         }
       ],
       "findings": [
         "Homepage lists chamber and public hearing-room events, with an off-air state; not an always-on feed.",
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial follow-up: promoted as official link-out after dated recording playback, identity and authority review."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Guam Legislature",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "On-air, committee identity, media accessibility and reuse follow-up",
+          "next_action": "Recheck during a public sitting; do not infer HLS or an XMLTV parser from these official links. Resolve changing player labels before using them as programme identifiers.",
           "urls": [
-            "https://guamlegislature.gov/",
-            "https://guamlegislature.gov/",
-            "https://guamlegislature.gov/agendas-and-votes/",
-            "https://guamlegislature.gov/special-event/",
-            "https://guamlegislature.gov/legislative-committees/"
+            "https://www.youtube.com/@GuamLegislatureMedia/streams",
+            "https://guamlegislature.gov/calendar/"
           ]
         }
       ],
       "committee_room_status": "searched_player_mapping_pending",
       "tier": "tier2",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
-      }
+        "reason": "Organic Act sections 10-11 establish the unicameral territorial legislature and broad local legislation and taxation powers; section 20 supplies appropriations authority. Statutory limits do not turn it into a municipal body.",
+        "review_report": "reports/discovery/2026-10-22-territorial-followup-decisions.json",
+        "checked_on": "2026-10-22"
+      },
+      "promoted_catalogue_ids": [
+        "guam-legislature-webcasts"
+      ],
+      "promotion_note": "Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested."
     },
     {
       "id": "united-states--northern-mariana-islands",
@@ -35946,30 +35956,41 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/CONST/CONST.pdf",
+          "title": "Legislative authority",
+          "review_method": "official_statutory_or_constitutional_text_review",
+          "note": "Constitution Article III establishes the Senate and House as the legislature; sections 16-19 address executive organisation, bills, budget measures and enactment. The Senate is a legislative chamber, not a local council."
         }
       ],
       "findings": [
-        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+        "Official media-page leads are recorded; they may include archives and are not validated live streams.",
+        "Territorial follow-up: promoted as official link-out after dated recording playback, identity and authority review."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Asamblea Legislativa de Puerto Rico",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "On-air, committee identity, media accessibility and reuse follow-up",
+          "next_action": "Recheck during a public sitting; do not infer HLS or an XMLTV parser from these official links. Resolve changing player labels before using them as programme identifiers.",
           "urls": [
             "https://senado.pr.gov/envivo",
-            "https://www.oslpr.org/",
-            "https://www.oslpr.org/events/el-proceso-legislativo-en-puerto-rico-virtual/form",
-            "https://guides.loc.gov/law-us-puerto-rico/legislative"
+            "https://senado.pr.gov/envivo"
           ]
         }
       ],
       "committee_room_status": "searched_player_mapping_pending",
       "tier": "tier2",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
-      }
+        "reason": "Constitution Article III establishes the Senate and House as the legislature; sections 16-19 address executive organisation, bills, budget measures and enactment. The Senate is a legislative chamber, not a local council.",
+        "review_report": "reports/discovery/2026-10-22-territorial-followup-decisions.json",
+        "checked_on": "2026-10-22"
+      },
+      "promoted_catalogue_ids": [
+        "puerto-rico-senate-webcasts"
+      ],
+      "promotion_note": "The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity."
     },
     {
       "id": "united-states--united-states-virgin-islands",
@@ -36154,29 +36175,45 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://parliament.gov.ck/live/",
+          "title": "Territorial service follow-up",
+          "review_method": "normal_chromium_navigation_and_public_archive_review",
+          "note": "Official live page still has no player. Its linked YouTube archive lists September 2020 streams; current playback and the current viewing service remain unverified. The persistent dissolution/election banner is not proof of current parliamentary status."
+        },
+        {
+          "url": "https://parliament.gov.ck/wp-content/uploads/2022/07/CONSTITUTION-OF-THE-COOK-ISLANDS-JUNE-2022.pdf",
+          "title": "Further authority / status review",
+          "review_method": "primary_official_text_or_rendered_document_review",
+          "note": "Official reprint dated 13 June 2022: Article 39 gives Parliament general Act-making powers; Article 13 provides parliamentary confidence/accountability; Articles 70-71 establish appropriation and public expenditure audit scrutiny. Read with the Parliament-hosted text consolidation and current MFAT free-association guidance. The dated reprint is not represented as a verified 2026 consolidation. This is the national Parliament of a self-governing associated state, not a New Zealand province or the House of Ariki."
         }
       ],
       "findings": [
-        "Official media-page leads are recorded; they may include archives and are not validated live streams."
+        "Official media-page leads are recorded; they may include archives and are not validated live streams.",
+        "Territorial follow-up: Official live page still has no player. Its linked YouTube archive lists September 2020 streams; current playback and the current viewing service remain unverified. The persistent dissolution/election banner is not proof of current parliamentary status.",
+        "Further territorial follow-up: Parliament TV explicitly designates Facebook broadcasts and replays. Its sampled 26 May 2022 replay link reports video unavailable. The public Facebook Videos listing opens but offers old interviews and promotional material; that is not validated current parliamentary proceedings. The empty /live page and old YouTube archive remain unresolved."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Parliament of the Cook Islands",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Parliament TV explicitly designates Facebook broadcasts and replays. Its sampled 26 May 2022 replay link reports video unavailable. The public Facebook Videos listing opens but offers old interviews and promotional material; that is not validated current parliamentary proceedings. The empty /live page and old YouTube archive remain unresolved.",
+          "next_action": "Locate a recent official sitting replay or current broadcast route; validate public playback without login. Authority review is resolved positively; do not substitute youth parliament or promotional interviews for proceedings.",
           "urls": [
-            "https://parliament.gov.ck/live/",
             "https://parliament.gov.ck/parliamenttv/",
-            "https://parliament.gov.ck/parliament-sittings/",
-            "https://parliament.gov.ck/"
+            "https://www.facebook.com/cookislands.parliament/videos",
+            "https://fb.watch/cXZm-AbZVA/",
+            "https://parliament.gov.ck/wp-content/uploads/2022/07/Cook-Islands-Constitution-1965_consolidated-version.pdf"
           ]
         }
       ],
       "committee_room_status": "searched_player_mapping_pending",
       "tier": "tier1",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
+        "reason": "Official reprint dated 13 June 2022: Article 39 gives Parliament general Act-making powers; Article 13 provides parliamentary confidence/accountability; Articles 70-71 establish appropriation and public expenditure audit scrutiny. Read with the Parliament-hosted text consolidation and current MFAT free-association guidance. The dated reprint is not represented as a verified 2026 consolidation. This is the national Parliament of a self-governing associated state, not a New Zealand province or the House of Ariki.",
+        "checked_on": "2026-10-22",
+        "review_report": "reports/discovery/2026-10-22-territorial-continuation.json"
       }
     },
     {
@@ -43427,20 +43464,33 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://parliament.bangsamoro.gov.ph/",
+          "title": "Territorial service follow-up",
+          "review_method": "normal_chromium_navigation_and_public_archive_review",
+          "note": "The embedded session is a July 14 recording despite WATCH LIVE wording. It plays on the normal YouTube watch page. Current homepage announces the BTA final sitting on 21 October and a transition to elected members; precise current representation and territorial geometry are not reconciled."
+        },
+        {
+          "url": "https://www.comelec.gov.ph/php-tpls-attachments/References/RelatedLaws/ElectionLaws/ARMM/RA12317.pdf",
+          "title": "Further authority / status review",
+          "review_method": "primary_official_text_or_rendered_document_review",
+          "note": "Signed RA12317, approved 25 March 2026, was read visually: section 2 provides BTA holdover until elected successors qualify; section 6 sets assumption at noon on 30 October 2026. The last sitting on 21 October does not by itself establish expiry of office. The Supreme Court finality notice of 26 November 2024 excludes Sulu from BARMM."
         }
       ],
       "findings": [
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial follow-up: The embedded session is a July 14 recording despite WATCH LIVE wording. It plays on the normal YouTube watch page. Current homepage announces the BTA final sitting on 21 October and a transition to elected members; precise current representation and territorial geometry are not reconciled.",
+        "Further territorial follow-up: Institutional transition timing is now clearer from the signed election law, rather than conflicting indexed article summaries. The detailed 22 October Parliament news page returned a human-verification challenge and was not bypassed. Natural Earth still labels its provinces ARMM, includes Sulu and lacks the Special Geographic Area boundary, so it cannot be used unmodified for a current BARMM outline."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Bangsamoro Parliament",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Institutional transition timing is now clearer from the signed election law, rather than conflicting indexed article summaries. The detailed 22 October Parliament news page returned a human-verification challenge and was not bypassed. Natural Earth still labels its provinces ARMM, includes Sulu and lacks the Special Geographic Area boundary, so it cannot be used unmodified for a current BARMM outline.",
+          "next_action": "Obtain a current licensed boundary covering the correct constituent provinces, Cotabato City and Special Geographic Area while excluding Sulu. Verify current post-transition official viewing ownership and published source conditions before promotion.",
           "urls": [
-            "https://parliament.bangsamoro.gov.ph/",
-            "https://parliament.bangsamoro.gov.ph/site-map/",
-            "https://officialgazette.bangsamoro.gov.ph/2022/07/14/resolution-no-73-teleconference/",
-            "https://parliament.bangsamoro.gov.ph/frequently-asked-questions-faqs/"
+            "https://www.comelec.gov.ph/?r=References/RelatedLaws/ElectionLaws/ARMM/ra12317",
+            "https://sc.judiciary.gov.ph/press-briefer-no-17/",
+            "https://parliament.bangsamoro.gov.ph/"
           ]
         }
       ],
@@ -43448,9 +43498,11 @@
       "scope_note": "Verify current transitional/elected membership status and election changes. PSA lists Sulu outside BARMM; do not retain an obsolete parent-region assignment.",
       "tier": "tier2",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
+        "reason": "Signed RA12317, approved 25 March 2026, was read visually: section 2 provides BTA holdover until elected successors qualify; section 6 sets assumption at noon on 30 October 2026. The last sitting on 21 October does not by itself establish expiry of office. The Supreme Court finality notice of 26 November 2024 excludes Sulu from BARMM.",
+        "checked_on": "2026-10-22",
+        "review_report": "reports/discovery/2026-10-22-territorial-continuation.json"
       }
     },
     {
@@ -51328,20 +51380,33 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://www.skupstinavojvodine.gov.rs/",
+          "title": "Territorial service follow-up",
+          "review_method": "normal_chromium_navigation_and_public_archive_review",
+          "note": "Official photo/video gallery has a Video link, but its destination renders Page not found with HTTP 200. No dedicated current proceedings player was established."
+        },
+        {
+          "url": "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=statut&j=EN",
+          "title": "Further authority / status review",
+          "review_method": "primary_official_text_or_rendered_document_review",
+          "note": "The earlier positive Statute articles 30-31 authority assessment stands."
         }
       ],
       "findings": [
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial follow-up: Official photo/video gallery has a Video link, but its destination renders Page not found with HTTP 200. No dedicated current proceedings player was established.",
+        "Further territorial follow-up: Official RTV reporting identifies live sittings on RTV1, and its public annual report describes broadcast coverage of provincial assembly sittings. This resolves the likely broadcaster. Both normal hostnames fail with an HTTP/2 protocol error here; an HTTP/1.1 retry was refused. The assembly Video destination still does not establish a dedicated proceedings service. News clips alone do not validate a recurring parliamentary archive."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Assembly of the Autonomous Province of Vojvodina",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Official RTV reporting identifies live sittings on RTV1, and its public annual report describes broadcast coverage of provincial assembly sittings. This resolves the likely broadcaster. Both normal hostnames fail with an HTTP/2 protocol error here; an HTTP/1.1 retry was refused. The assembly Video destination still does not establish a dedicated proceedings service. News clips alone do not validate a recurring parliamentary archive.",
+          "next_action": "Open RTV1 during an announced sitting or locate the broadcaster full-sitting archive and validate playback and its public source conditions. Do not promote the general entertainment/news channel as a dedicated always-on parliament feed.",
           "urls": [
-            "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=odbori",
-            "https://www.skupstinavojvodine.gov.rs/",
-            "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=oskupstini",
-            "https://skupstinavojvodine.gov.rs/Strana.aspx?s=aktapv12"
+            "https://rtv.rs/sr_lat/uzivo",
+            "https://rtv.rs/sr_lat/vojvodina/novi-sad/u-toku-sednica-skupstine-ap-vojvodine-poslanici-o-budzetu-%28rtv1%29_1738834.html",
+            "https://static.rtv.rs/pdf/2025/11/19/-2024.pdf"
           ]
         }
       ],
@@ -51349,9 +51414,11 @@
       "scope_note": "Kosovo's separate institutions and disputed status must be reviewed neutrally in a separate record, not silently encoded as an ordinary Serbian province.",
       "tier": "tier2",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
+        "reason": "The earlier positive Statute articles 30-31 authority assessment stands.",
+        "checked_on": "2026-10-22",
+        "review_report": "reports/discovery/2026-10-22-territorial-continuation.json"
       }
     },
     {
@@ -64533,30 +64600,49 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+          "title": "Territorial service follow-up",
+          "review_method": "normal_chromium_navigation_and_public_archive_review",
+          "note": "Normal Recordings navigation lists House and Senate events. The 25 September 2026 House AM recording reports playback failed, could not connect to server; no advancing audio was validated. The homepage sitting indicator conflicts with the player showing no upcoming events."
+        },
+        {
+          "url": "https://parliament.bm/about/view/15",
+          "title": "Further authority / status review",
+          "review_method": "primary_official_text_or_rendered_document_review",
+          "note": "Earlier official lawmaking, public finance and executive accountability review stands; copyright restriction beyond personal use remains unchanged."
         }
       ],
       "findings": [
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial follow-up: Normal Recordings navigation lists House and Senate events. The 25 September 2026 House AM recording reports playback failed, could not connect to server; no advancing audio was validated. The homepage sitting indicator conflicts with the player showing no upcoming events.",
+        "Further territorial follow-up: Two additional normal archive selections fail: Senate AM 7 October 2026 and House PM 2 October 2026 both report could not connect to server and remain at time zero/readyState zero. Combined with the earlier 25 September House AM sample, three dated recordings across both chambers now fail in this environment.",
+        "WebKit follow-up resolves the earlier Chromium-only playback blocker: public House and Senate audio both advance. Promoted audio archive with a Chromium CORS caveat."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Parliament of Bermuda",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Chromium CORS, current on-air audio and source permissions",
+          "next_action": "Keep official link-out policy and browser limitation visible; recheck the provider’s Chromium manifest/CORS response and on-air coverage during a sitting. Do not infer video or independent reuse permission.",
           "urls": [
-            "https://www.parliament.bm/",
-            "https://parliament.bm/",
-            "https://www.parliament.bm/hansard",
-            "https://www2.gov.bm/news/convening-legislature-advisory-0"
+            "https://sg001-harmony.sliq.net/00290/Harmony",
+            "https://parliament.bm/about/view/25"
           ]
         }
       ],
       "tier": "tier1",
       "committee_room_status": "searched_player_mapping_pending",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
-      }
+        "reason": "Earlier official lawmaking, public finance and executive accountability review stands; copyright restriction beyond personal use remains unchanged.",
+        "checked_on": "2026-10-22",
+        "review_report": "reports/discovery/2026-10-22-territorial-continuation.json"
+      },
+      "promoted_catalogue_ids": [
+        "bermuda-parliament-audio-archive"
+      ],
+      "promotion_note": "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated."
     },
     {
       "id": "united-kingdom--british-virgin-islands",
@@ -64645,30 +64731,41 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://parliament.ky/",
+          "title": "Current official institution and media ownership",
+          "review_method": "normal_chromium_navigation",
+          "note": "The official site identifies the unicameral legislature under Constitution Part IV. Section 59 of the 2009 Constitution establishes general territorial lawmaking; the financial provisions and current House and Finance Committee records establish budget scrutiny. The institution is now styled Parliament, confirmed by the current official site; the original constitutional text uses Legislative Assembly."
         }
       ],
       "findings": [
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial continuation: promoted official viewing service after institution, public playback and source-condition review."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Parliament of the Cayman Islands",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Independent playback, accessibility and room mapping",
+          "next_action": "Keep link-out only; review stable endpoints and reuse separately, verify caption and committee coverage, and reconcile current event timestamps before any XMLTV implementation.",
           "urls": [
-            "https://parliament.ky/news/state-opening-of-the-2026-2027-session-of-parliament-set-for-19th-june-2026/",
-            "https://parliament.ky/media/faqs/",
-            "https://parliament.ky/about-the-parliament/",
-            "https://cigarchives.gov.ky/governmentinparliament"
+            "https://www.youtube.com/playlist?list=PLw4BrYufwdD29YaBzcA6P-LZMlLS6GS7N",
+            "https://parliament.ky/events-calender/"
           ]
         }
       ],
       "tier": "tier1",
       "committee_room_status": "searched_player_mapping_pending",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
-      }
+        "reason": "The official site identifies the unicameral legislature under Constitution Part IV. Section 59 of the 2009 Constitution establishes general territorial lawmaking; the financial provisions and current House and Finance Committee records establish budget scrutiny. The institution is now styled Parliament, confirmed by the current official site; the original constitutional text uses Legislative Assembly.",
+        "review_report": "reports/discovery/2026-10-22-territorial-continuation.json",
+        "checked_on": "2026-10-22"
+      },
+      "promoted_catalogue_ids": [
+        "cayman-islands-parliament-webcasts"
+      ],
+      "promotion_note": "Official parliament.ky homepage links the government Parliament playlist separately from the broader government channel. A 5 October 2026 plenary sitting and 8 October Finance Committee recording both passed advancing-playback and 854x480 decoded-frame checks. These are recordings; current on-air live coverage was not established."
     },
     {
       "id": "united-kingdom--falkland-islands",
@@ -64743,28 +64840,41 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://www.parliament.gi/uploads/contents/parliament_legislation/constitution2006.pdf",
+          "title": "Legislative authority",
+          "review_method": "official_statutory_or_constitutional_text_review",
+          "note": "Constitution sections 32-33 provide general lawmaking through Parliament bills and assent; the constitution also establishes the budget and ministerial government framework. This is the territorial parliament, not a municipal council."
         }
       ],
       "findings": [
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial follow-up: promoted as official link-out after dated recording playback, identity and authority review."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for Gibraltar Parliament",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "On-air, committee identity, media accessibility and reuse follow-up",
+          "next_action": "Recheck during a public sitting; do not infer HLS or an XMLTV parser from these official links. Resolve changing player labels before using them as programme identifiers.",
           "urls": [
-            "https://www.parliament.gi/",
-            "https://www.parliament.gi/proceedings-of-parliament"
+            "https://www.parliament.gi/video-archive",
+            "https://www.parliament.gi/proceedings-of-parliament/parliamentary-business-timetable"
           ]
         }
       ],
       "tier": "tier1",
       "committee_room_status": "searched_player_mapping_pending",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
-      }
+        "reason": "Constitution sections 32-33 provide general lawmaking through Parliament bills and assent; the constitution also establishes the budget and ministerial government framework. This is the territorial parliament, not a municipal council.",
+        "review_report": "reports/discovery/2026-10-22-territorial-followup-decisions.json",
+        "checked_on": "2026-10-22"
+      },
+      "promoted_catalogue_ids": [
+        "gibraltar-parliament-video-archive"
+      ],
+      "promotion_note": "The official Parliament archive embeds proceedings on its YouTube channel. The linked recording is titled Meeting - Friday 2nd October 2026 (am) and decoded at 640x360 with advancing time on the normal watch page. The archive group heading is stale relative to that video date. A separate official Vimeo live page opened but did not produce playable media; this addition is an archive link."
     },
     {
       "id": "united-kingdom--montserrat",
@@ -64838,7 +64948,7 @@
       "id": "united-kingdom--turks-and-caicos-islands",
       "country": "United Kingdom",
       "jurisdiction": "Turks and Caicos Islands",
-      "institution": "House of Assembly of the Turks and Caicos Islands",
+      "institution": "Parliament of the Turks and Caicos Islands",
       "official_url": "https://www.gov.tc/hoa/",
       "inventory_source": "https://www.gov.tc/hoa/",
       "body_class": "territorial_legislature",
@@ -64877,30 +64987,41 @@
           "source_kind": "context_page",
           "review_method": "web_search_result_only",
           "note": "Search-index evidence only; the current player, event type and individual room coverage remain unverified."
+        },
+        {
+          "url": "https://www.parliament.gov.tc/",
+          "title": "Current official institution and media ownership",
+          "review_method": "normal_chromium_navigation",
+          "note": "The current institutional constitutional overview identifies substantive legislation through the House and Governor assent, approval of public expenditure, government scrutiny and committees. This is the territorial Parliament, not a municipal council. The official site uses Parliament while retaining House of Assembly terminology in its constitutional explanation."
         }
       ],
       "findings": [
-        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts."
+        "This search did not establish a dedicated current broadcast page. Context pages and access failures are retained; absence of a search hit does not establish absence of broadcasts.",
+        "Territorial continuation: promoted official viewing service after institution, public playback and source-condition review."
       ],
       "unresolved_leads": [
         {
-          "summary": "Resolve chamber and committee broadcast services for House of Assembly of the Turks and Caicos Islands",
-          "next_action": "Follow institutional video/provider links during a sitting. Inventory both chambers where applicable and public committee rooms; distinguish live, audio-only and archive services, then record room/event identities, schedules and published reuse terms.",
+          "summary": "Independent playback, accessibility and room mapping",
+          "next_action": "Keep link-out only; review stable endpoints and reuse separately, verify caption and committee coverage, and reconcile current event timestamps before any XMLTV implementation.",
           "urls": [
-            "https://www.gov.tc/hoa/videos",
-            "https://agc.gov.tc/",
-            "https://decr.gov.tc/hoa/index.php",
-            "https://www.parliament.gov.tc/hansard/accessibility"
+            "https://www.youtube.com/@TCIParliament/streams",
+            "https://www.parliament.gov.tc/events"
           ]
         }
       ],
       "tier": "tier1",
       "committee_room_status": "searched_player_mapping_pending",
       "catalogue_eligibility": {
-        "status": "authority_review_required",
+        "status": "eligible_legislature",
         "rule": "docs/catalogue-scope.md",
-        "reason": "Assess substantive legislative authority and constitutional position individually; the name assembly/council and a broadcast alone do not establish eligibility."
-      }
+        "reason": "The current institutional constitutional overview identifies substantive legislation through the House and Governor assent, approval of public expenditure, government scrutiny and committees. This is the territorial Parliament, not a municipal council. The official site uses Parliament while retaining House of Assembly terminology in its constitutional explanation.",
+        "review_report": "reports/discovery/2026-10-22-territorial-continuation.json",
+        "checked_on": "2026-10-22"
+      },
+      "promoted_catalogue_ids": [
+        "turks-and-caicos-parliament-webcasts"
+      ],
+      "promotion_note": "The current official Parliament site and the legacy gov.tc/hoa/videos route both designate @TCIParliament. A 16 October 2026 sitting decoded at 640x360. The 22 October event was labelled Live and decoded at 854x480 with advancing playback, but the sampled position was behind the live edge; treat this as provider-live-event/DVR validation, not proof of real-time chamber activity. Committee-room coverage remains unverified."
     },
     {
       "id": "united-kingdom--pitcairn-islands",

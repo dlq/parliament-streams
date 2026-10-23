@@ -4,19 +4,19 @@
 
 ## Current Local State — 2026-10-22
 
-These counts describe the working tree, including the three Dutch provincial viewing
+These counts describe the working tree, including the later territorial viewing
 additions; they do not assert that uncommitted work is already deployed.
 `data/channels.json` remains the canonical published-data source.
 
-- 121 sources: 50 national, 65 subnational/territorial, six supranational.
-- 46 distinct published regional/territorial jurisdictions, all with map geometry.
-- 38 native-player sources and three provider embeds; 67 official link-outs and
+- 127 sources: 50 national, 71 subnational/territorial, six supranational.
+- 52 distinct published regional/territorial jurisdictions, all with map geometry.
+- 38 native-player sources and three provider embeds; 73 official link-outs and
   13 research-only records.
 - 33 catalogue records have implemented schedule metadata, covering 17 unique
-  source URLs. Another 93 unique schedule/event URLs remain planned.
-- 53 records have a pending rights status. All 121 retain at least one unknown
+  source URLs. Another 99 unique schedule/event URLs remain planned.
+- 58 records have a pending rights status. All 127 retain at least one unknown
   media-accessibility field; unknown does not mean unavailable.
-- 27 tracked candidate records: 23 promoted, three researching and one rejected.
+- 33 tracked candidate records: 29 promoted, three researching and one rejected.
   The held records are Chile Sala IV, Iceland Althingi and France's Senate;
   Skåne was rejected after the legislative-authority review. Other discovery
   leads remain in research reports before becoming formal candidates.
@@ -54,6 +54,8 @@ provider embeds or implemented XMLTV parsers.
 | [Nagasaki committee mapping](../reports/discovery/2026-10-22-nagasaki-committee-map.json) | Current and historical committee channels |
 | [Held candidates and authority follow-up](../reports/discovery/2026-10-22-authority-followup.md) | Four candidate rechecks; Skåne excluded, Bern eligible, Nagasaki and Dutch provincial authority questions retained |
 | [Bern and regional authority resolution](../reports/discovery/2026-10-22-bern-and-regional-authority.md) | Bern archive playback verified; Nagasaki and twelve Dutch provincial councils confirmed eligible |
+| [Further territorial validation](../reports/discovery/2026-10-22-territorial-continuation.md) | Cayman and Turks and Caicos added; four held leads investigated further, Cook Islands authority resolved |
+| [Territorial follow-up](../reports/discovery/2026-10-22-territorial-followup-decisions.md) | Seven retained leads revisited; Guam, Puerto Rico Senate and Gibraltar archive added; four remain held |
 | [Dutch province decisions](../reports/discovery/2026-10-22-dutch-province-decisions.md) | All twelve checked; three official viewing additions, nine held with explicit blockers |
 | [Bern promotion](../reports/discovery/2026-10-22-bern-promotion.json) | Cantonal-parliament identity Q664547; official archive, Switzerland search, flag and current swisstopo boundary |
 
@@ -71,8 +73,19 @@ Bern's identity and publication surfaces are now reconciled: its official archiv
 is a catalogue link-out, with Switzerland search association, localized names,
 cantonal flag and the 2026 canton boundary. Its official session calendar appears
 among planned calendar sources; it has no implemented XMLTV parser or IPTV feed.
-Seven territorial service leads remain queued
-in the territorial decisions report; they were not revalidated in this follow-up.
+The later territorial pass rechecks all seven retained leads. Guam, Puerto Rico
+Senate and Gibraltar archive are now published locally. Cayman Islands and
+Turks and Caicos viewing services were added next, with
+plenary/committee recording checks and a provider-live/DVR sample. Cook Islands
+authority is now resolved; its current public playback remains unverified.
+Bermuda’s initially failing Chromium samples were retested in WebKit: House and
+Senate audio both advance. Its audio archive is now published locally with a
+Chromium CORS limitation and restrictions on reproduction beyond personal use.
+Bangsamoro’s signed election law clarifies holdover and 30 October assumption,
+but current geometry and source conditions remain unresolved. Vojvodina has
+legislative authority and an identified sitting broadcaster (RTV1), but no
+validated proceedings playback. Their specific next actions
+are retained in the follow-up report and regional ledger.
 
 Use [PLANS.md](../PLANS.md) for next actions, [NOTES.md](../NOTES.md) for the
 dated working log, and [CHANGELOG.md](../CHANGELOG.md) for project changes.

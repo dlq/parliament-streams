@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Constitution Article III establishes the Senate and House as the legislature; sections 16-19 address executive organisation, bills, budget measures and enactment. The Senate is a legislative chamber, not a local council. Evidence: https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/CONST/CONST.pdf",
+    "United States territory with its own constitutional bicameral legislature. This record covers the Senate, including its linked public joint-committee event; the House viewing service is not claimed validated.",
+    "The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity.",
+    "Identity, playback, rights and surface reconciliation: reports/discovery/2026-10-22-territorial-followup-decisions.json",
+    "Added to catalogue, localized territorial names, flags, country search, coverage map and planned calendar source links."
+  ],
+  "channel": {
+    "id": "puerto-rico-senate-webcasts",
+    "name": "Puerto Rico Senate Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Puerto Rico",
+    "legislature": "Senado de Puerto Rico",
+    "external_ids": {
+      "wikidata_qid": "Q3955193",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q3955193",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Direct Wikidata entity revision 2555357961 matches official institution name and website."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://senado.pr.gov/envivo",
+    "provenance_note": "United States territory with its own constitutional bicameral legislature. This record covers the Senate, including its linked public joint-committee event; the House viewing service is not claimed validated. The Senate official Eventos en Vivo index designates Vimeo plenary and public hearing services. Both sampled players decoded at 1280x720 with advancing time. The committee event is labelled 21 October 2026. The reusable plenary event changes title and date between the official index and player; do not treat the current title as a reliable programme timestamp or new-event identity.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The plenary player exposes automatic tracks labelled es-x-autogen. The committee player exposes en-x-autogen despite the Spanish proceedings. Caption accuracy and language suitability are unassessed; service-wide captions remain unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://senado.pr.gov/envivo",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+      "evidence": [
+        "https://senado.pr.gov/envivo"
+      ],
+      "recommendation": "Open the official viewing service; retain link-out only until any independent media reuse is expressly established."
+    }
+  }
+}

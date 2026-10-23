@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-22",
+  "updated_on": "2026-10-22",
+  "decision_notes": [
+    "Organic Act sections 10-11 establish the unicameral territorial legislature and broad local legislation and taxation powers; section 20 supplies appropriations authority. Statutory limits do not turn it into a municipal body. Evidence: https://www.govinfo.gov/content/pkg/COMPS-1142/pdf/COMPS-1142.pdf",
+    "Unincorporated territory of the United States; the map uses Guam itself as the territorial parent, with a separate United States search association.",
+    "Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested.",
+    "Identity, playback, rights and surface reconciliation: reports/discovery/2026-10-22-territorial-followup-decisions.json",
+    "Added to catalogue, localized territorial names, flags, country search, coverage map and planned calendar source links."
+  ],
+  "channel": {
+    "id": "guam-legislature-webcasts",
+    "name": "Guam Legislature Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Guam",
+    "legislature": "I Liheslaturan Guåhan / Legislature of Guam",
+    "external_ids": {
+      "wikidata_qid": "Q1563896",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1563896",
+        "checked_on": "2026-10-22",
+        "confidence": "high",
+        "notes": "Direct Wikidata entity revision 2424880483 and official institution/provider link chain checked; this is the legislature, not an executive or building. Guam is Q1563896, not the Congress Building Q15222224."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@GuamLegislatureMedia/streams",
+    "provenance_note": "Unincorporated territory of the United States; the map uses Guam itself as the territorial parent, with a separate United States search association. Official guamlegislature.gov footer designates Guam Legislature Media. A 6 October 2026 special session and 21 October public hearing played with advancing time and decoded 854x480 video on normal YouTube watch pages. The institutional homepage reports no live legislative broadcast; on-air coverage is untested.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No text tracks were exposed in the two sampled recordings. English is verified from the sampled proceedings; Chamorro coverage across the service remains unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://guamlegislature.gov/calendar/",
+        "method": "GET",
+        "kind": "official_meeting_or_dated_video_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed official page designates the public viewing service; no independent audiovisual reuse grant was established. Public access and platform playback do not authorize extraction, embedding or retransmission.",
+      "evidence": [
+        "https://guamlegislature.gov/"
+      ],
+      "recommendation": "Open the official viewing service; retain link-out only until any independent media reuse is expressly established."
+    }
+  }
+}

@@ -94,7 +94,7 @@ function coverage(locale) {
   if (!sourceCountForms[locale] && !window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount) missing.push("sourceCount");
   return missing;
 }
-const territorialCodes = { Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "PF", "New Caledonia": "NC", "Sint Maarten": "SX" };
+const territorialCodes = { Bermuda: "BM", "Cayman Islands": "KY", "Turks and Caicos Islands": "TC", Guam: "GU", "Puerto Rico": "PR", Gibraltar: "GI", Jersey: "JE", "Isle of Man": "IM", "French Polynesia": "PF", "New Caledonia": "NC", "Sint Maarten": "SX" };
 function jurisdictionName(locale, name) {
   if (name === "Bern") return ({ fr: "Berne", es: "Berna", "pt-BR": "Berna", it: "Berna", "zh-Hans": "伯尔尼", "zh-Hant": "伯恩" })[locale] ?? name;
   if (jurisdictionNames[locale]?.[name]) return jurisdictionNames[locale][name];
@@ -112,6 +112,9 @@ function sourceCount(locale, count) {
   return forms[index].replace("{count}", new Intl.NumberFormat(locale).format(count));
 }
 const subnationalParents = {
+  Bermuda: "BM",
+  "Cayman Islands": "KY", "Turks and Caicos Islands": "TC",
+  Guam: "GU", "Puerto Rico": "PR", Gibraltar: "GI",
   Drenthe: "NL", Limburg: "NL", "Noord-Brabant": "NL",
   Bern: "CH",
   Alberta: "CA", "British Columbia": "CA", Manitoba: "CA", "Newfoundland and Labrador": "CA",
@@ -137,7 +140,7 @@ function countrySearchTerms(locale, channel) {
   // Search associations are separate from geographical map parents: Crown
   // Dependencies are not part of the UK, and Sint Maarten is a constituent
   // country of the Kingdom, not a province of the Netherlands.
-  const associations = { Jersey: ["GB"], "Isle of Man": ["GB"], "Sint Maarten": ["NL"], "French Polynesia": ["PF"], "New Caledonia": ["NC"] };
+  const associations = { Bermuda: ["GB"], "Cayman Islands": ["GB"], "Turks and Caicos Islands": ["GB"], Guam: ["US"], "Puerto Rico": ["US"], Gibraltar: ["GB"], Jersey: ["GB"], "Isle of Man": ["GB"], "Sint Maarten": ["NL"], "French Polynesia": ["PF"], "New Caledonia": ["NC"] };
   return [...new Set([code, ...(associations[channel.country_or_region] ?? [])])].flatMap((regionCode) => [...new Set(["en", locale])].map((language) => {
     try { return new Intl.DisplayNames([language], { type: "region" }).of(regionCode) ?? ""; }
     catch { return ""; }
