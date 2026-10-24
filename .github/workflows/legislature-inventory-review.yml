@@ -1,0 +1,153 @@
+name: Legislature Inventory Review
+
+on:
+  schedule:
+    # Fifth day of each month. GitHub cron is UTC.
+    - cron: "23 8 5 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  # Read earlier reports: a monthly comparison must survive cache eviction.
+  actions: read
+  issues: write
+
+concurrency:
+  group: legislature-inventory-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    name: Review legislature inventory changes
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: python -m pip install uv
+
+      - name: Sync locked Python dependencies
+        run: uv sync --locked --extra dev
+
+      - name: Validate reviewed institution inventory and review inputs
+        run: |
+          uv run --locked python tools/validate_institution_inventory.py
+          uv run --locked python tools/check_legislature_inventory.py --validate-inputs
+
+      - name: Restore preceding inventory observations
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          BASELINE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          # Reports are retained for 90 days. Actions caches normally expire
+          # before the next monthly run, so they are not the baseline store.
+          runs_file="$RUNNER_TEMP/inventory-baseline-runs.txt"
+          if ! gh run list \
+            --workflow legislature-inventory-review.yml \
+            --branch "$BASELINE_BRANCH" \
+            --status success \
+            --limit 12 \
+            --json databaseId \
+            --jq '.[].databaseId' > "$runs_file"; then
+            echo "::warning::Earlier reports could not be listed; the report will identify its missing baseline."
+            exit 0
+          fi
+          while IFS= read -r prior_run; do
+            prior_dir="$RUNNER_TEMP/inventory-baseline-$prior_run"
+            if ! gh run download "$prior_run" \
+              --name "legislature-inventory-review-$prior_run" \
+              --dir "$prior_dir" > "$RUNNER_TEMP/inventory-baseline-download.log" 2>&1; then
+              continue
+            fi
+            if [[ -s "$prior_dir/snapshot.json" ]] && \
+              jq -e '.schema_version == 1 and has("sources") and has("inventory_records")' \
+                "$prior_dir/snapshot.json" > /dev/null && \
+              uv run --locked python tools/check_legislature_inventory.py \
+                --validate-baseline "$prior_dir/snapshot.json"; then
+              mkdir -p .inventory-review-baseline
+              cp "$prior_dir/snapshot.json" .inventory-review-baseline/snapshot.json
+              echo "Restored observations from run $prior_run."
+              exit 0
+            fi
+          done < "$runs_file"
+          echo "No retained successful baseline found; this run will establish one."
+
+      - name: Collect inventory changes for human review
+        run: >-
+          uv run --locked python tools/check_legislature_inventory.py
+          --output-dir reports/automated/legislature-inventory
+          --baseline .inventory-review-baseline/snapshot.json
+          --timeout 15
+          --workers 6
+          --stale-days 365
+          --max-bytes 2097152
+          --budget-seconds 2400
+
+      - name: Update maintained inventory review issue
+        if: always() && hashFiles('reports/automated/legislature-inventory/report.json') != '' && hashFiles('reports/automated/legislature-inventory/issue.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          TITLE: Legislature inventory review queue
+          MARKER: "<!-- legislature-inventory-review -->"
+        run: |
+          report_dir=reports/automated/legislature-inventory
+          review_count=$(jq -er '.counts.review | select(type == "number" and . >= 0 and floor == .)' "$report_dir/report.json")
+          gh label create inventory-review \
+            --color 0e8a16 \
+            --description "Proposed institution changes and evidence requiring review" \
+            --force
+          number=$(gh issue list \
+            --state all \
+            --label inventory-review \
+            --limit 100 \
+            --json number,body,state | \
+            jq -r --arg marker "$MARKER" \
+              '[.[] | select((.body // "") | contains($marker))] | sort_by(.number) | (map(select(.state == "OPEN")) + map(select(.state == "CLOSED"))) | .[0].number // empty')
+          {
+            printf '%s\n\n' "$MARKER"
+            cat "$report_dir/issue.md"
+            printf '\n\n[Workflow evidence and downloadable reports](%s)\n' "$RUN_URL"
+            printf '\nThis issue remains open until a person has reviewed its findings. A later clean observation does not resolve earlier institutional questions.\n'
+          } > "$RUNNER_TEMP/inventory-review-issue.md"
+          if [[ -n "$number" ]]; then
+            state=$(gh issue view "$number" --json state --jq '.state')
+            if [[ "$review_count" -gt 0 ]]; then
+              gh issue edit "$number" --body-file "$RUNNER_TEMP/inventory-review-issue.md"
+            fi
+            if [[ "$state" == "CLOSED" && "$review_count" -gt 0 ]]; then
+              gh issue reopen "$number"
+            fi
+          elif [[ "$review_count" -gt 0 ]]; then
+            gh issue create \
+              --title "$TITLE" \
+              --label inventory-review \
+              --body-file "$RUNNER_TEMP/inventory-review-issue.md"
+          fi
+
+      - name: Write inventory review summary
+        if: always()
+        run: |
+          summary=reports/automated/legislature-inventory/issue.md
+          if [[ -f "$summary" ]]; then
+            cat "$summary" >> "$GITHUB_STEP_SUMMARY"
+            printf '\n\nThis summary shows at most 30 findings. Download the workflow artifact for the complete report, source observations and next comparison baseline.\n' >> "$GITHUB_STEP_SUMMARY"
+          else
+            printf '## Legislature inventory review\n\nNo report was produced. Inspect the job log; no inventory records were changed.\n' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload inventory review evidence and next baseline
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: legislature-inventory-review-${{ github.run_id }}
+          path: reports/automated/legislature-inventory
+          if-no-files-found: warn
+          retention-days: 90

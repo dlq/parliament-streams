@@ -45,6 +45,13 @@ independent direct playback, rebroadcasting, recording/copying, other audiovisua
 reuse and programme-data licensing are distinct claims with dated sources and
 conditions. Public stream visibility is not permission for those uses.
 
+The [monthly inventory review](catalogue-maintenance.md#monthly-legislature-inventory-review)
+now revisits maintained official evidence and the IPU national directory, retaining
+proposed additions, possible removals, other changes and source-access gaps for
+human review. These observations do not clear legal holds or certify that the
+inventory is exhaustive. The public list changes only after a reviewed inventory
+update and regeneration.
+
 ## Current Local State — 2026-10-24
 
 These counts describe the working tree. They do not assert that local changes

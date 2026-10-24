@@ -1,5 +1,19 @@
 # Changelog
 
+## 24 October — Monthly Legislature Inventory Monitoring
+
+Added a monthly GitHub Actions review of the maintained legislature inventory,
+national chamber directory, country sources and institutional references. It
+reports proposed additions, possible retirements, names, links, metadata and
+evidence changes for human review. Access failures and partial responses remain
+explicit gaps. The job never edits institutions or their authority status.
+
+Retained report artifacts supply the next baseline. Pending proposals survive
+unchanged observations and source outages until reviewed canonical changes or
+an explicit decision resolve them. Reports include a persistent review issue,
+bounded Actions summary and complete JSON/Markdown artifacts. Offline validation
+and regression tests cover the source adapters, fetcher and comparison rules.
+
 ## 24 October — Public Legislature Inventory And Contribution Paths
 
 Added a searchable Legislatures page for the working inventory across all 71

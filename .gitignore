@@ -52,3 +52,7 @@ data/schedules.json
 
 # Persistent local research responses and shared service cooldown
 .cache/wikidata/
+
+# Monthly inventory observations live in retained Actions artifacts.
+.inventory-review-baseline/
+reports/automated/legislature-inventory/

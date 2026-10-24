@@ -118,6 +118,10 @@ The Legislatures page similarly reads `site/institutions-data.js`, generated
 from the operational institution register with `make institution-site-data`.
 `make institution-site-data-check` checks that snapshot for drift, and
 `make institution-inventory-validate` checks the underlying register.
+The monthly [legislature inventory review](catalogue-maintenance.md#monthly-legislature-inventory-review)
+reports proposed institutional changes and source-access gaps for human review.
+It does not automatically add or remove bodies on the public page; reviewed
+inventory changes still require regeneration, commit and deployment.
 YouTube does not permit iframe playback from a `file://` page because it has no
 HTTP origin/referrer; the direct-file preview therefore shows a link to the
 public catalogue instead of a broken player.

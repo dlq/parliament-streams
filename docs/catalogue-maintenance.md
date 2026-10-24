@@ -16,6 +16,7 @@ do not make it eligible.
 | Add a new source | `parliament-streams candidate-new` | Prefer a candidate record under `candidates/` until evidence is complete. |
 | Fix an existing channel | `parliament-streams show <id>` | Export or prepare one full channel object, then use `update --dry-run`. |
 | Change generated site data | `make site-data` | Do not hand-edit `site/catalogue-data.js`. |
+| Check for institution-inventory changes | `make inventory-review` | Live research signals and a report for review; no automatic membership changes. |
 | Refresh validation-history links | `make validation-history` | Run after adding retained `reports/health/` artifacts. |
 | Check validation-history drift | `make validation-history-check` | Included in `make verify`. |
 | Add now/next metadata | `epg_sources` plus a scraper | Use `planned` until the parser is implemented, registered, and tested. |
@@ -252,6 +253,96 @@ tool that inspects third-party player traffic. Neither tool builds or runs the
 deployed static site. The deep validator requires explicit input and output
 report paths; see [development and validation](development.md) for the full
 invocation.
+
+## Monthly Legislature Inventory Review
+
+`.github/workflows/legislature-inventory-review.yml` runs on the fifth day of
+each month at **08:23 UTC**, or on demand from Actions. It checks the national
+IPU directory against the current canonical institution records and revisits
+evidence pages recorded in `data/discovery/institutions.json`. The retained
+reviewed chamber directory supplies fallback exact identity crosswalks, rather
+than overriding current reviewed names, aliases or institution URLs. Country
+reconciliation sources and institution pages provide change signals for regional
+and special-status bodies as well as national ones. Watched sources also include
+legal texts and directories; a reachable reference does not establish that it is
+the institution's own official website or complete metadata coverage.
+
+The result separates proposed additions, possible removals and other changes
+from access failures and review gaps. A disappeared directory entry is a proposed
+review, not a dissolution decision. A changed page, redirect or broken link does
+not establish that an institution has changed its name or ceased to exist.
+Generic directory-link changes are research leads; confirming legislative
+authority and the agreed territorial scope still requires a person. This is a
+maintained-source check, not a new exhaustive search of all possible bodies.
+Reviews older than 365 days are flagged independently of HTTP freshness; a page
+loading today is not a fresh authority review. HTTP responses are bounded to
+2 MiB each, and truncated responses cannot establish removals.
+Use an evidence-backed `institution_reviewed_on` date for an individual institution
+review; updating one record must not freshen every other record's review date.
+Without that field, the latest recorded legal-hold review or the inventory-wide
+review date provides the fallback.
+Collection has a 2,400-second budget within the one-hour workflow. Sources left
+unchecked when that budget is exhausted remain explicit access gaps in the
+partial report; the action does not treat them as unchanged or disappeared.
+
+Each run writes `report.json`, readable `report.md`, a comparison `snapshot.json`
+and a bounded `issue.md` in `reports/automated/legislature-inventory/`. A summary
+of at most 30 findings appears in the Actions step summary; the complete report
+and evidence are retained as an artifact for 90 days. One persistent `inventory-review` issue exposes
+findings requiring attention, including inaccessible evidence. The workflow
+does not automatically close human review when a later run observes no changes.
+
+The next run restores a snapshot from the preceding successful default-branch
+run's artifact. This avoids depending on an Actions cache that could expire
+between monthly checks. Failed, partial or unparseable sources retain their last
+successful observations; they cannot produce a false disappearance. Without a
+retained baseline, the report explicitly identifies the first-run limitation:
+page observations establish a new baseline, while the current national directory
+can still be compared with the canonical inventory and retained identity crosswalk.
+
+Run the same live check locally:
+
+```sh
+make inventory-review
+```
+
+The target uses an existing local `snapshot.json` as its previous baseline when
+available. To compare with a downloaded Actions artifact instead:
+
+```sh
+uv run --locked python tools/check_legislature_inventory.py \
+  --baseline /path/to/downloaded/snapshot.json \
+  --output-dir reports/automated/legislature-inventory \
+  --timeout 15 --workers 6 --budget-seconds 2400
+```
+
+Transient reports are review evidence rather than canonical data. After deciding
+a proposal, update the inventory with dated official evidence, preserve historical
+identities and exclusions. Record the finding's ID, `accepted` or `dismissed`
+decision, review date and evidence note in
+`data/discovery/inventory-review-decisions.json`. Pending proposals are retained
+in subsequent snapshots until they are resolved by a reviewed canonical update
+or an explicit decision; simply observing an unchanged page does not dismiss
+them. Current access gaps clear when a source recovers. Then run:
+
+```sh
+make institution-inventory-validate institution-site-data
+```
+
+Review and commit the resulting change through the normal process. The monthly
+workflow has read access to contents and earlier Actions artifacts plus permission
+to maintain its review issue. It cannot push inventory or public-page changes.
+Its live network check is deliberately separate from `make verify`.
+`make inventory-review-validate` checks source planning and the decision journal
+offline; it runs in `make verify`, CI and before the monthly collection.
+
+For a newly reviewed national chamber, record the explicit
+`external_ids.ipu_chamber_code` and `external_ids.ipu_country_code` so later checks
+can match it without rewriting a dated research report. Where verified, current
+`ipu_suspended`, `ipu_structure` and `ipu_parliament_name` values record changes
+from the retained crosswalk. These fields, names, aliases and
+`source_published_institution_urls` require reviewed evidence; a reported IPU
+difference does not update them automatically.
 
 ## Scheduled Candidate Discovery
 

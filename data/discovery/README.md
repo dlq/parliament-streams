@@ -26,6 +26,24 @@ also runs this check. The validator checks identities, country coverage, chamber
 crosswalks, authority overrides and counts; it does not revalidate legal texts or
 network services.
 
+The monthly `Legislature Inventory Review` GitHub Action checks the current IPU
+directory and retained institutional/country evidence for proposed additions,
+possible removals, other changes and access gaps. It produces review reports and
+maintains one `inventory-review` issue; it does not alter this register. Successful
+source observations survive a later fetch or parser failure, and a missing
+previous snapshot is identified as a baseline gap. See the
+[maintenance process](../../docs/catalogue-maintenance.md#monthly-legislature-inventory-review)
+for evidence, retention, limitations and `make inventory-review`.
+`make inventory-review-validate` checks review inputs, source planning and the
+decision journal offline, and is included in CI and `make verify`.
+
+`inventory-review-decisions.json` records human dispositions of automated findings:
+each entry names its `finding_id`, `accepted` or `dismissed` decision, ISO
+`reviewed_on` date and an evidence `note`. Additions, removals and authority changes
+still require a source-backed edit to `institutions.json`; an accepted finding
+does not apply that edit automatically. Undecided proposals remain in later
+comparison snapshots, while resolved access failures clear after recovery.
+
 `tier1.json` and `tier2.json` maintain the agreed EIU 2024 baseline, published in
 2025. `us-legislatures.json` retains the earlier US discovery targets.
 `reviewed-manifests.json` records source-specific manifest decisions. These files
