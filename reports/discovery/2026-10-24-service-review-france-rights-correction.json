@@ -1,0 +1,30 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Correct an unsupported aggregate audiovisual permission claim after current own-site and linked video-portal conditions were inspected.",
+  "records": [
+    {
+      "id": "national--fr-lc01",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {"institution": "Assemblée nationale", "catalogue_id": "france-national-assembly", "scope": "Exact lower chamber; no Senate coverage or rights inferred."},
+      "official_media": {"official_url": "https://videos.assemblee-nationale.fr/direct.php", "finding": "Video portal footer's info-site link redirects to the same current general notice. Download/clip help describes delivery mechanisms but establishes no superseding audiovisual republication licence.", "fresh_decoded_playback_checked": false},
+      "epg": {"finding": "Existing official public-sitting, open-data agenda ZIP and broadcast programme routes remain recorded in the catalogue. This rights review does not newly validate their freshness, mapping or parser coverage.", "new_parser_added": false},
+      "rights": {
+        "linking": {"status": "explicit_conditional_permission", "finding": "The current notice permits hyperlinks subject to its source-context restrictions."},
+        "embedding": {"status": "prior_agreement_or_specific_grant_required", "finding": "No separate applicable embed grant found in the directly linked video resources; do not extend document reproduction terms to multimedia."},
+        "direct_playback": {"status": "not_cleared", "finding": "Research-only HLS remains disabled; no extracted playback grant or current technical certification established."},
+        "rebroadcast": {"status": "prior_agreement_or_specific_grant_required", "finding": "Multimedia reproduction requires prior agreement under the notice; no project agreement or superseding retransmission grant recorded."},
+        "copying_recording": {"status": "download_workflow_available_republication_not_cleared", "finding": "Offering full-debate or selected MP4 delivery does not settle independent copying/republication rights."},
+        "audiovisual_reuse": {"status": "prior_agreement_or_specific_grant_required", "finding": "The official-document conditional grant and the multimedia prior-agreement clause are distinct."},
+        "programme_data": {"status": "document_conditions_recorded_data_specific_terms_unresolved", "finding": "Official documents have integrity, source/author/link, free-distribution and noncommercial/nonadvertising conditions; exact agenda-dataset licensing still needs review."}
+      },
+      "catalogue_correction": {"id": "france-national-assembly", "previous_permission_status": "explicit_reuse_with_conditions", "corrected_permission_status": "no_third_party_reuse", "basis": "This catalogue bucket includes materially restricted uses requiring separate permission. It does not prohibit the expressly permitted official hyperlinks.", "playback_policy_retained": "research_only"},
+      "unresolved": ["A source-specific applicable multimedia agreement or grant remains unconfirmed.", "Current-live, full room inventory, audible tracks and EPG coverage remain separate checks.", "No outreach was sent."],
+      "sources": [
+        {"id": "fr-info-site", "url": "https://www.assemblee-nationale.fr/dyn/info-site", "title": "Info site - Assemblée nationale", "checked_on": "2026-10-24", "access_result": "current official page read independently; document, multimedia and hyperlink clauses inspected", "excerpt": "Les graphismes, photographies et ressources multimédias ne peuvent être reproduits sans accord préalable"},
+        {"id": "fr-video-direct", "url": "https://videos.assemblee-nationale.fr/direct.php", "title": "Vidéos de l'Assemblée nationale - direct", "checked_on": "2026-10-24", "access_result": "own portal/footer link inspected; faq.asp info link redirects to current notice"},
+        {"id": "fr-clip-help", "url": "https://videos.assemblee-nationale.fr/Aide_a_la_decoupe_de_videos.pdf", "title": "Aide à la découpe de vidéos", "checked_on": "2026-10-24", "access_result": "linked official help inspected for delivery/reuse scope; no superseding republication grant found"}
+      ]
+    }
+  ]
+}

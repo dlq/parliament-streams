@@ -1,12 +1,79 @@
 # Source Rights And Permissions
 
+## Renewed institution-level review — 24 October 2026
+
+The [940-record service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md)
+retains the catalogue's aggregate permission labels but does not treat them as
+clearance for every use. New individual reviews separately assess linking,
+embedding, direct playback, rebroadcast, copying/recording, audiovisual reuse
+and programme-data licensing, with dated official sources and unresolved scope.
+
+The [Basque review](../reports/discovery/2026-10-24-service-review-basque-foral.json)
+distinguishes Bizkaia's public-download statement, Gipuzkoa's conditional general
+reproduction notice and Álava's reserved IP rights. The
+[Canadian review](../reports/discovery/2026-10-24-service-review-canada-treaty.json)
+keeps Cree Nation's terms-page integrity issue provisional and its generic
+calendar/media statements separate from confirmed broadcasts. The
+[India review](../reports/discovery/2026-10-24-service-review-india-autonomous.json)
+retains unconfirmed per-use permissions. The
+[capital-assembly review](../reports/discovery/2026-10-24-service-review-capital-assemblies.json)
+distinguishes Budapest's provider embed/download controls and Zagreb's onsite
+media/source-credit conditions from independent full-signal retransmission.
+
+The renewed national and regional findings retain materially different terms:
+Iceland expressly permits distribution of Alþingisrásin on other networks,
+Singapore restricts livestream re-streaming to authorized accredited media, and
+KTOO's Alaska coverage permits some linking/embedding and excerpts while restricting
+simultaneous relay. These statements apply to their named services and conditions;
+they are not interchangeable licences for every parliamentary recording.
+[National gap findings](../reports/discovery/2026-10-24-service-review-national-gaps.json)
+· [US chamber findings](../reports/discovery/2026-10-24-service-review-us-chambers-a.json).
+
+The current Appenzell Innerrhoden media leaflet has now been read in full. It
+expressly restricts reproduction/replay, recording and saving of the official
+Landsgemeinde livestream; onsite press access is a separate matter.
+[Current conditions and remaining gaps](../reports/discovery/2026-10-24-service-review-appenzell-current-conditions.json).
+France's National Assembly classification is corrected below: its document
+reproduction terms do not override the separate prior-agreement requirement for
+multimedia. [Dated correction](../reports/discovery/2026-10-24-service-review-france-rights-correction.json).
+
+Canada's national House and Senate now have `explicit_reuse_with_conditions`
+for their accurate, unofficial proceedings reproductions without financial gain.
+Third-party materials and parliamentary privilege remain separate; Senate terms
+also preserve integrity and dignity. Both retain `link_out`: this content grant
+does not certify an independent live relay or extracted Harmony endpoint.
+[Current notices and separate chamber findings](../reports/discovery/2026-10-24-service-review-national-americas.json).
+
+Colombia's House moves from pending to `no_third_party_reuse` after its current
+linked terms confirm prior written authorization for reproduction/transmission,
+with an attributed personal-download exception and a homepage-only institutional
+link condition. Its official YouTube viewing link remains. The same
+[Americas report](../reports/discovery/2026-10-24-service-review-national-americas.json)
+also records TV Senado's viewing-route repair from the obsolete `/tv/ao-vivo`
+address to `/tv/`; neither change asserts a fresh playback test.
+
+The remaining chamber pass separately records Illinois/Massachusetts consent
+requirements, KET's supplied-player conditions, NSW Assembly's caption reuse
+restriction, New York Senate's proceedings exception, and TVW/WisconsinEye signal
+limits. TVW's catalogue record now has `no_third_party_reuse` because its current
+terms expressly make the audiovisual signal subject to licensure; its official
+viewing link remains. Texas House's condition is recorded without extending it
+to the Senate or treating the umbrella as a uniform grant.
+[US B](../reports/discovery/2026-10-24-service-review-us-chambers-b.json) ·
+[US C](../reports/discovery/2026-10-24-service-review-us-chambers-c.json) ·
+[Other regional/territorial chambers](../reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json).
+
+No outreach was sent. Source visibility and technically decoded recordings do
+not themselves establish the requested reuse rights.
+
 This file records source-by-source rights, permission, and provenance notes for
 the Parliament Streams public catalogue. It is not legal advice. Its job is to keep
 technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
 
-Last reviewed: 2026-10-23 (Corrientes follow-up; earlier source reviews retain their dated evidence).
+Last reviewed: 2026-10-24 (renewed institution-level review and France correction;
+earlier source reviews retain their dated evidence).
 
 Bern's Grand Council archive was subsequently reviewed and added as an official
 link-out. The [cantonal notice](https://www.gr.be.ch/de/tools/rechtliches.html)
@@ -85,7 +152,8 @@ GitHub. The project will promptly disable playback while the report is reviewed.
 | --- | --- | --- | --- | --- |
 | U.S. House FloorCast and committee video | Official pages, `no_third_party_reuse` | [FloorCast](https://live.house.gov/), [House live page](https://www.house.gov/watch-houselive), [Congress.gov committee video](https://www.congress.gov/committees/video), [House ethics guidance](https://ethics.house.gov/manual/general-prohibition-against-using-official-resources-for-campaign-or-political-purposes/) | These are official public House services, but this review did not find permission for an independent catalogue to extract, replay, or redistribute event media. House rules also impose context-specific limits on use of official resources. | Link to the official floor and committee services. Use Congress.gov meeting metadata for discovery; do not relay event media without source-specific permission. |
 | U.S. Senate floor and committee webcasts | Official pages, `personal_use_pending_review` | [floor webcast](https://www.senate.gov/floor/), [floor schedule](https://www.senate.gov/legislative/schedule/floor_schedule.htm), [hearings and meetings](https://www.senate.gov/committees/hearings_meetings.htm), [hearing guidance](https://www.senate.gov/committees/how_to_committee_hearings.htm) | The Senate publishes official public floor and committee webcasts, but no uniform permission for independent replay or redistribution was identified. Committee webcast systems and terms vary. | Link to the official Senate surfaces and seek source-specific permission before replaying media. |
-| California Assembly, Minnesota Legislature, New York Assembly, Oregon Legislature, Rhode Island Capitol TV, Texas Legislature, Utah Legislature, and Washington Legislature/TVW | Official pages, `personal_use_pending_review` | Official video and schedule links recorded in each catalogue entry | Each institution or authorized provider publishes public legislative video, but this pass did not establish broad third-party audiovisual redistribution permission. Rhode Island explicitly documents closed captioning; other accessibility evidence remains event-dependent. | Keep these records as official link-outs. Continue rights, player, schedule-identifier, and accessibility research per institution. |
+| Washington Legislature on TVW | Official link-out, `no_third_party_reuse` | [TVW terms](https://tvw.org/terms-of-use/), [TVW viewing](https://tvw.org/) | Current terms reserve content rights and expressly make the audiovisual signal subject to licensure. Legislature designation does not license the provider signal. | Retain the official viewing link; obtain an applicable TVW licence before independent playback, recording or relay. |
+| California Assembly, Minnesota Legislature, New York Assembly, Oregon Legislature, Rhode Island Capitol TV, Texas Legislature, and Utah Legislature | Official pages, `personal_use_pending_review` | Official video and schedule links recorded in each catalogue entry | Each institution or authorized provider publishes public legislative video, but this pass did not establish broad third-party audiovisual redistribution permission. Rhode Island explicitly documents closed captioning; other accessibility evidence remains event-dependent. | Keep these records as official link-outs. Continue rights, player, schedule-identifier, and accessibility research per institution. |
 | Florida Legislature Video | Official page, `no_third_party_reuse` | [video service](https://www.flsenate.gov/Media/Videos), [active schedule](https://www.flsenate.gov/Media/VideoSchedule/Active), [official player notice](https://www.flsenate.gov/Media/VideoPlayer/6225) | The player states that political, campaign, and commercial use is strictly prohibited. | Link to the official service only and seek written permission before reuse beyond personal viewing. |
 | New York Senate Live | Official page, `no_third_party_reuse` | [event calendar](https://www.nysenate.gov/events), [2025-26 Senate rules](https://www.nysenate.gov/sites/default/files/admin/structure/media/manage/filefile/a/2025-02/rules-of-the-senate-2025-26.pdf) | Senate rules make televised proceedings Senate property and prohibit specified political and commercial advertising uses. | Link to official event pages and do not redistribute Senate video without clarification or permission. |
 | CPAC Canada | Direct HLS discovered, `no_third_party_reuse` | [CPAC terms of use](https://www.cpac.ca/terms-of-use) | CPAC grants only personal, non-commercial viewing on CPAC.ca and prohibits retransmission, embedding, hotlinking, inline linking, scraping, caching, and other uses without prior written consent. | Link to CPAC.ca only. Use the recorded HLS in a third-party player only with written consent. |
@@ -97,7 +165,7 @@ GitHub. The project will promptly disable playback while the report is reviewed.
 | Brazil TV Camara | Direct HLS, `explicit_reuse_with_conditions` | [TV Camara live page](https://www.camara.leg.br/tv/aovivo), [embed page](https://www.camara.leg.br/tv/aovivo/embed), [terms of use](https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade/termos-gerais), [2022 video/audio order](https://www2.camara.leg.br/legin/int/ordser/2022/ordemdeservico-2-30-maio-2022-792759-publicacaooriginal-165427-direx.html) | Camara portal terms say public portal information is public-domain, free, and reproducible with source/author credit where applicable. The 2022 order says direct transmissions of plenary and committee proceedings are under CC BY 4.0 for broad, unrestricted use when the production depicts reality and preserves the original speaking context. The first-party HLS endpoint recovered from its August outage and passed static and browser validation on 2026-09-11. | Native playback may be used with Camara dos Deputados attribution while preserving the CC BY 4.0 reality and speaking-context conditions. Keep the official live page and terms linked. |
 | Swiss National Council Live | Direct HLS, `explicit_reuse_with_conditions` | [National Council live page](https://www.parlament.ch/en/nr/livestream), [official embed instructions](https://www.parlament.ch/de/services/Seiten/live-stream-einbetten.aspx), [official player](https://live.parlament.ch/content?externalid=-1&themeColor=AA9E72) | Swiss Parliamentary Services explicitly allow third parties to embed National Council and Council of States live streams and publish responsive iframe code and language parameters. The National Council page also documents automatically generated subtitles. This establishes supported live embedding, not unrestricted rights to alter or redistribute recordings. | Play or embed the unaltered official stream with clear Swiss Parliament attribution. Review separate terms before modifying, archiving, or redistributing recordings beyond the documented live-embed use. |
 | Spain Congreso en Directo / Canal Parlamento | Direct HLS discovered, `explicit_reuse_with_conditions` | [legal notice](https://www.congreso.es/es/web/guest/cem/aviso-legal), [FAQs](https://www.congreso.es/es/cem/faqs), [Canal Parlamento information](https://www.congreso.es/es/cem/mas-informacion), [Canal Parlamento](https://www.congreso.es/es/actualidad/canal-parlamento) | Congress legal notice allows reuse of information on congreso.es when content is not altered, meaning is not distorted, source is cited, last-update date is mentioned, and use is diligent and lawful. The FAQ says the institutional signal for Plenary and committee proceedings is distributed free to media and citizens through the web and Canal Parlamento, and that archived videos may be downloaded by debate or intervention and used freely after the session. | Native playback may remain enabled under the prototype opt-out policy with clear Congreso/Canal Parlamento attribution, no alteration or distortion, and source/date links. Prefer official Congreso en Directo, Canal Parlamento, or Archivo Audiovisual links for uses requiring fully documented reuse routes. |
-| France National Assembly | Direct HLS discovered, `explicit_reuse_with_conditions` | [Video direct](https://videos.assemblee-nationale.fr/direct.php), [info site](https://www.assemblee-nationale.fr/dyn/info-site) | The Assembly site says public or official documents and multimedia resources, including debates and parliamentary documents, may be reproduced freely under conditions: no commercial or advertising use, free redistribution, document integrity, attribution, source citation, and a link to the original online document. | Native playback may remain enabled only with clear Assembly attribution and source links, no advertising, no paywall, and no modification beyond technically necessary playback handling. |
+| France National Assembly | Research-only HLS, `no_third_party_reuse` | [Video direct](https://videos.assemblee-nationale.fr/direct.php), [info site](https://www.assemblee-nationale.fr/dyn/info-site), [clip help](https://videos.assemblee-nationale.fr/Aide_a_la_decoupe_de_videos.pdf) | Current notice re-read on 24 October 2026: official documents have conditional reproduction terms, while graphics, photographs and multimedia require prior agreement. Hyperlinks have an express conditional permission. The video portal refers to the same notice; download/clip tools establish delivery, not a superseding audiovisual licence. | Keep the official viewing link and research-only policy. Do not enable extracted HLS playback, external multimedia reproduction or rebroadcast without an applicable source-specific grant or agreement. |
 | Ireland Oireachtas TV | Official embed/link-out, `explicit_reuse_with_conditions` | [Oireachtas TV](https://www.oireachtas.ie/en/oireachtas-tv/), [embed codes](https://www.oireachtas.ie/en/oireachtas-tv/embed-codes/), [committee schedule](https://www.oireachtas.ie/en/committees/schedule/) | Official page provides live streams and embed codes for Oireachtas TV, Dail, Seanad, and committee rooms. Use is subject to rules of coverage and required credit to the Houses of the Oireachtas Service. Raw HLS URLs returned 403 from this validation environment. | Use official embed codes or link out; do not list raw HLS unless a source-supported direct playback path is confirmed. |
 | Scottish Parliament TV | Official page, `explicit_reuse_with_conditions` | [Parliament TV](https://www.scottishparliament.tv/), [copyright licence](https://www.parliament.scot/about/copyright), [clip guidance](https://www.parliament.scot/about/how-parliament-works/policies/social-media-use-of-parliament-tv-clips) | The Scottish Parliament licence permits reuse with attribution, no implied endorsement, and restrictions on party-political and advertising use. Parliament TV clip guidance adds fair-reporting and editing conditions. Official pages must not be framed by third-party sites. | Link to Parliament TV. Preserve attribution and use clips only under the published conditions; do not frame the site or extract dynamic manifests. |
 | Senedd TV | Official page, `explicit_reuse_with_conditions` | [Senedd TV](https://www.senedd.tv/), [copyright terms](https://senedd.wales/commission/access-to-information/copyright/), [video guidance](https://senedd.wales/media/images-and-video/) | Commission material may be reproduced with acknowledgement and restrictions against misleading, prohibited, and commercial-promotional uses. Senedd-provided clips may be shared or embedded, but official web pages may not be framed. | Link to Senedd TV and use only its documented clip-sharing or embedding routes under the published terms. |
@@ -158,7 +226,7 @@ override the public site's technical playback gate.
 
 | Source | Catalogue ids | Current status | Official page | Recommendation |
 | --- | --- | --- | --- | --- |
-| Netherlands Tweede Kamer | `netherlands-tweede-kamer`, `netherlands-tweede-kamer-aletta-jacobszaal`, `netherlands-tweede-kamer-actualiteitenkanaal` | `personal_use_pending_review` | https://www.tweedekamer.nl/debat_en_vergadering/livedebatten | The Kamer's [audiovisual material guidance](https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen) and 2019 announcement say public meeting video is available through Debat Direct and that media may download or embed fragments for journalistic purposes under the audiovisual-material licence. The English press page still describes AV-content distribution to third parties for journalistic purposes. This is useful but still does not document general public use of the catalogued raw HLS endpoints by a non-media catalogue. Use the official Debat Direct service or link out when stronger permission is required. |
+| Netherlands Tweede Kamer | `netherlands-tweede-kamer`, `netherlands-tweede-kamer-aletta-jacobszaal`; occasional `netherlands-tweede-kamer-actualiteitenkanaal` | Meeting feeds: `explicit_reuse_with_conditions`; occasional events: `personal_use_pending_review` | [Current Dutch disclaimer](https://www.tweedekamer.nl/applicaties/disclaimer) · [AV supply and licence](https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen) | Re-read on 24 October: the specific licence covers plenary/committee material for journalism, expression, education and research, subject to source/copyright/licence credit, disclosed edits, faithful context, third-party rights and a one-month raw-material retention limit. The grant includes media and other users; the English generic notice alone is not the complete rule. Occasional non-meeting events remain unclassified. [Full conditions and remaining endpoint/compliance gates](../reports/discovery/2026-10-24-service-review-netherlands-av-licence.json). |
 | Chile Camara TV | `chile-camara-tv` | `personal_use_pending_review` | https://www.camara.cl/prensa/television.aspx | Link-out/pending until terms or permission are documented |
 | Israel Knesset Channel | `israel-knesset-channel` | `personal_use_pending_review` | https://www.knesset.tv/live/ | The Knesset Channel [terms and privacy page](https://www.knesset.tv/documents/terms-and-privacy/) says the site/app service is personal by default, while also noting that Knesset broadcast law and regulations permit use of Knesset broadcasts, including committee and plenary broadcasts, with visible credit. The channel also carries non-proceeding programming that may require prior authorization. The official-vendor HLS pass did not identify a machine-readable way to distinguish proceeding content from other channel programming in the permanent stream. Keep permission pending or link out unless the catalogue can distinguish official Knesset proceedings from other channel programming and display the required Hebrew credit. |
 | Portugal ARTV Canal Parlamento | `portugal-artv` | `personal_use_pending_review` | https://www.parlamento.pt/ | Assembly ownership rules confirm that the Assembly owns production resulting from its work and prohibit editing or commercialization by public bodies, companies, or private entities without prior assent. This confirms source ownership but does not clearly authorize third-party live playback of the ARTV stream; link out pending clarification. |
@@ -293,7 +361,7 @@ viewing routes, without an independent audiovisual reuse grant. Both entries use
 is enabled. No specific prior-linking condition was found in the reviewed pages;
 this is not an exhaustive legal certification. Source evidence: [Deputies](https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/),
 [Senate](https://www.senadoctes.gov.ar/) and [full follow-up](../reports/discovery/2026-10-23-metadata-followup.md).
-Current pending-rights queue: 172 of 243 entries. Historical Senate samples and
+At this earlier stage the pending-rights queue was 172 of 243 entries. Historical Senate samples and
 visible interpretation in Deputies samples do not certify current live coverage
 or service-wide accessibility.
 

@@ -1,5 +1,19 @@
 # Parliament Streams Plans
 
+## 24 October — Metadata, Media, EPG And Rights Review Resumed
+
+The service queue now uses all **940 eligible identity records**, with the eight
+legal holds kept separate. The [current baseline and individual findings](reports/discovery/2026-10-24-institution-service-baseline.md)
+reconcile exact catalogue matches, the historical 652-body cohort and renewed
+source reviews. Continue institution by institution, retaining what each source
+confirms and the remaining metadata, playback, schedule and per-use rights gates.
+An umbrella's service or permission must not automatically become a chamber's.
+
+The missing-flag pass reviews all 63 neutral catalogue entries, adding 50 sourced
+flags and documenting 13 unresolved identity/design/use-condition cases. No flag
+is invented from an executive logo or another jurisdiction's symbol.
+[Flag coverage](reports/discovery/2026-10-24-catalogue-flag-coverage.json).
+
 ## 24 October — Eleven Legal Holds Reviewed
 
 All 11 starting cases have further primary-source findings. Three French cases
@@ -7,7 +21,8 @@ are reclassified as current default-scope exclusions with dated reopening tests;
 **eight specific holds remain**: seven Panamanian cases and FNTA. The new evidence
 confirms traditional legal/justice authority and FNTA amended-Bill passage without
 inventing the missing allocation, assent or commencement. The operational register
-is updated. Later metadata, streams, EPG and rights work remains deferred.
+is updated. These eight holds remain outside the eligible service queue; metadata,
+streams, EPG and rights review has resumed for authority-cleared institutions.
 [Case findings](reports/discovery/2026-10-24-legal-holds-review.md) ·
 [Document-request drafts](reports/discovery/2026-10-24-legal-document-requests.md)
 (saved locally; nothing sent).
@@ -57,7 +72,7 @@ Indigenous/tribal/village government.
 The next inventory gate is the **eight specific legal-instrument holds** listed in
 the [current findings](reports/discovery/2026-10-24-legal-holds-review.md).
 Keep these separate from authority-cleared institutions. Metadata, current owned
-services, schedules and distinct rights claims form the next validation phase;
+services, schedules and distinct rights claims are now being reviewed;
 the older 652-body evidence register is not coverage of the expanded identities.
 No exhaustive census or complete current legal consolidation is certified.
 
@@ -258,8 +273,8 @@ Goal: reduce the remaining pending-rights queue while preserving the current
 proof-of-concept rule that technically public HLS may remain playable unless
 recorded source terms require link-out.
 
-Current queue: 97 of 168 catalogue entries use a permission status ending in
-`pending_review`: 18 official-vendor HLS, five first-party HLS, 36 official
+Current queue: 168 of 243 catalogue entries use a permission status ending in
+`pending_review`: 18 official-vendor HLS, three first-party HLS, 146 official
 pages and one DASH research record. Later official-link additions retain dated
 source-condition notes; the previous 28-entry queue is a historical subset.
 
@@ -269,11 +284,11 @@ Priority order:
    families on 2026-08-19. No public terms closed third-party native playback,
    so they remain pending and should move to the deferred communications /
    written-clarification package rather than repeated public-terms searching.
-2. The 5 pending `first_party_hls` entries were reviewed as source families on
-   2026-08-19. No public terms closed third-party native playback. Netherlands
-   Tweede Kamer should move to written clarification; Thailand TPchannel and
-   El Salvador Legislative Assembly remain pending after dated public-terms
-   searches.
+2. Three `first_party_hls` entries remain pending. The 24 October Dutch licence
+   review supersedes the August conclusion for the plenary and Aletta Jacobszaal
+   meeting feeds. Keep the occasional-events channel's scope/compliance questions
+   separate; Thailand TPchannel and El Salvador Legislative Assembly also remain
+   pending after dated public-terms searches.
 3. The 6 pending `official_page` entries were reviewed on 2026-08-19. Brazil
    TV Camara and Manitoba House Broadcasts moved to
    `explicit_reuse_with_conditions` for link-out use. Council of Europe/PACE,
@@ -321,9 +336,9 @@ Specific unresolved direct-playback groups:
   page linking.
 - Estonia Riigikogu: look for source-specific reuse terms for the two official
   live rooms, or record that no terms were found after a dated pass.
-- Netherlands Tweede Kamer: public guidance supports Debat Direct fragments and
-  embeds for media/journalistic use, but not general public raw-HLS playback;
-  move this to written clarification.
+- Netherlands Tweede Kamer: the current linked licence supports conditional use
+  of meeting material by media and other users. Check endpoint/compliance and
+  occasional-event scope separately before deciding whether clarification is needed.
 - India Sansad TV, Thailand TPchannel, Israel Knesset Channel, Spain Congreso,
   Portugal ARTV, Greece Hellenic Parliament TV, Luxembourg Chamber TV,
   Slovakia TV NRSR, Chile Camara TV, Jalisco Canal Parlamento, and El Salvador

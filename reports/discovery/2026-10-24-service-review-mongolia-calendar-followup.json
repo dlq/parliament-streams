@@ -1,0 +1,74 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Payload follow-up to the Asia-Pacific report's then-unfetched official Mongolian weekly calendar. This resolves format/content inspection, not broadcast-guide or playback validation.",
+  "records": [
+    {
+      "id": "national--mn-lc01",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "prior_review": "reports/discovery/2026-10-24-service-review-national-asia-pacific.json",
+      "metadata": {
+        "institution_name": "State Great Hural of Mongolia",
+        "institutional_route": "https://tov.parliament.mn/",
+        "scope": "Institutional timetable; does not identify the SkyGo/GO+ research manifest as an official reusable delivery route."
+      },
+      "epg": {
+        "calendar_url": "https://tov.parliament.mn/feed/week/TOV-20261026.ics",
+        "public_get_status": 200,
+        "content_type": "text/calendar; charset=utf-8",
+        "format": "iCalendar 2.0",
+        "calendar_method": "PUBLISH",
+        "payload_bytes": 39277,
+        "week_dates": ["2026-10-26", "2026-10-30"],
+        "event_count": 31,
+        "timed_events": 29,
+        "all_day_events": 2,
+        "source_timezone": "Asia/Ulaanbaatar",
+        "unique_event_uids": 31,
+        "uid_check": "The UID sequence is identical across two bounded public reads. This does not establish long-term stability across edits or weekly rollovers.",
+        "populated_locations": 30,
+        "populated_urls": 31,
+        "event_url_scope": "All 31 URLs point to the same weekly timetable rather than distinct event or media resources.",
+        "timed_durations_minutes": {"60": 29},
+        "status_field": "Absent on all 31 events.",
+        "first_timed_start_example": "2026-10-26T10:00:00+08:00",
+        "first_event_type": "Party group meeting, not an automatically public televised plenary.",
+        "xmltv_ready": false,
+        "new_parser_added": false
+      },
+      "confirmed": [
+        "The public own-domain calendar link supplies an actual parseable calendar, not HTML or merely an export label.",
+        "Events include source-local starts/ends, a named timezone, distinct UIDs, subjects and mostly room labels.",
+        "Two date-only events are separate from the 29 timed events; overlapping same-time meetings occupy different rooms."
+      ],
+      "rights": {
+        "linking": {"status": "unresolved", "finding": "A public calendar link is not a separate permission statement."},
+        "embedding": {"status": "unresolved", "finding": "No player/embed licence established by this calendar response."},
+        "direct_playback": {"status": "unresolved", "finding": "The calendar supplies no certified media endpoint."},
+        "rebroadcast": {"status": "unresolved", "finding": "No audiovisual relay permission established by timetable access."},
+        "copying_recording": {"status": "unresolved", "finding": "No audiovisual copying grant established by this response."},
+        "audiovisual_reuse": {"status": "unresolved", "finding": "Programme visibility does not license footage."},
+        "programme_data": {"status": "publication_confirmed_licensing_unresolved", "finding": "Public machine-readable delivery confirmed; no explicit applicable redistribution/database licence inspected in this response."}
+      },
+      "unresolved": [
+        "Determine which meetings are public and actually broadcast, then map exact chamber/committee/room to its official player.",
+        "All timed events have exactly one-hour durations. Verify whether these are estimates/defaults before emitting them as actual broadcast end times.",
+        "Do not fabricate times for the two all-day events or treat party-group meetings as confirmed transmissions.",
+        "Check updates, cancellations, event-ID stability through edits/rollovers and source-to-media date alignment.",
+        "Current video, audio/accessibility, programme-data licensing and distinct media-use rights remain open."
+      ],
+      "sources": [
+        {
+          "url": "https://tov.parliament.mn/",
+          "reviewed_on": "2026-10-24",
+          "observation": "Own timetable page and ICS link independently retrieved in the preceding Asia-Pacific review."
+        },
+        {
+          "url": "https://tov.parliament.mn/feed/week/TOV-20261026.ics",
+          "reviewed_on": "2026-10-24",
+          "observation": "Two ordinary public HTTP 200 GETs. Payload unfolded and inspected as calendar/event fields; response type and repeated UID sequence checked. No media fetched."
+        }
+      ]
+    }
+  ]
+}

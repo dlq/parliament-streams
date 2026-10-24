@@ -1,0 +1,1084 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "First service-evidence follow-up for ten newly eligible Indian Sixth Schedule autonomous legislatures. Inventory eligibility was decided separately; this report does not recertify current members or authorize catalogue promotion.",
+  "method": "Official primary sources only for findings. Direct public retrieval and indexed official-page text are distinguished. Page titles, navigational links, provider designations, sitting notices and decoded playback are distinct evidence levels. Empty searches never establish absence of streams.",
+  "summary": {
+    "records_reviewed": 10,
+    "partial_source_followups": 10,
+    "complete_metadata_stream_epg_rights_validations": 0,
+    "substantive_council_home_pages_read": 5,
+    "indexed_legislative_page_with_direct_timeout": 1,
+    "council_home_title_only": 1,
+    "council_roots_failing_retrieval": 3,
+    "official_media_provider_designations": 2,
+    "legislative_playback_validated": 0,
+    "stable_direct_streams_validated": 0,
+    "historical_timed_sitting_notices": 3,
+    "current_timed_broadcast_guides_validated": 0,
+    "affirmative_embed_or_rebroadcast_permissions_confirmed": 0
+  },
+  "interpretation_limits": [
+    "Retrieval status belongs to this research tool and review date, not to the institution or all browsers.",
+    "Official media designation does not prove legislative content, stream stability or any reuse right.",
+    "Sitting time is not necessarily broadcast time; do not synthesize a broadcast duration or timezone from location.",
+    "A public URL, copyright footer or own-site player does not by itself settle linking, third-party embedding, direct playback, recording, redistribution or programme-data licensing.",
+    "No outreach, access-control bypass, playback decoding, credential retention or raw HTML archiving was performed."
+  ],
+  "sources": {
+    "bodoland_root": {
+      "url": "https://bodoland.gov.in/",
+      "title": "Bodoland government portal",
+      "access": "web_fetch_404",
+      "accessed_on": "2026-10-24",
+      "note": "The www variant also returned 404 through the web research tool. This is one access observation, not institutional closure evidence."
+    },
+    "bodoland_department": {
+      "url": "https://dsyw.bodoland.gov.in/",
+      "title": "Department of Sports & Youth Welfare | Bodoland Territorial Council (BTC)",
+      "access": "web_search_index_content",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Bodoland Territorial Council (BTC) • Kokrajhar, BTC, Assam",
+      "note": "A council departmental route with October 2026 notices; sports content does not establish a legislative media provider."
+    },
+    "bodoland_library": {
+      "url": "https://www.library.bodoland.gov.in/",
+      "title": "Directorate of Library Services Department, BTC, Kokrajhar",
+      "access": "web_search_index_content_direct_fetch_inaccessible",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Welcome to the official website of the Library Service Department, Bodoland Territorial Council.",
+      "note": "Search-index content exposes copyright and hyperlinking policy labels. Their actual policy text and applicability to legislative video remain unverified."
+    },
+    "kaac_home": {
+      "url": "https://karbianglong.co.in/index.php",
+      "title": "KAAC",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "© Copyright 2026 All Rights Reserved by KAAC",
+      "note": "Council identity, Diphu address and current October 2026 notices are readable. Footer last-updated 31.10.2024 conflicts with newer item dates; do not use the footer as a universal freshness timestamp."
+    },
+    "kaac_about": {
+      "url": "https://www.karbianglong.co.in/Pages/About-Us.php",
+      "title": "KAAC — About Us",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Karbi Anglong Autonomous Council,",
+      "note": "Official council-facing page identifies its jurisdiction across Karbi Anglong and West Karbi Anglong; do not substitute district administration as the legislature."
+    },
+    "nchac_home": {
+      "url": "https://nchac.in/",
+      "title": "Dima Hasao Autonomous Council",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Created and maintained by IT Department, DHAC.",
+      "note": "Page uses North Cachar Hills and Dima Hasao names for one body, identifies Haflong headquarters, and lists a bill uploaded 1 October 2026. Footer reserves rights."
+    },
+    "nchac_minutes": {
+      "url": "https://nchac.in/minutes",
+      "title": "Minutes",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Minutes of CDC Meeting",
+      "note": "Dated CDC/CRM minutes from 2024–2025 are administrative meeting records. They are not verified legislative sitting or broadcast schedules."
+    },
+    "khadc_legislative": {
+      "url": "https://www.khadc.nic.in/legislative_sectt.html",
+      "title": "Legislative Secretariat: Khasi Hills Autonomous District Council",
+      "access": "web_search_index_content_direct_fetch_timeout",
+      "accessed_on": "2026-10-24",
+      "excerpt": "The members of the Council hold regular session once every four months.",
+      "note": "A general cadence is not a current timed programme guide. Repeated direct page fetches and home fetch timed out."
+    },
+    "jhadc_home": {
+      "url": "https://jhadc.nic.in/",
+      "title": "OFFICE OF THE JAINTIA HILLS AUTONOMOUS DISTRICT COUNCIL,JOWAI",
+      "access": "web_page_title_only",
+      "accessed_on": "2026-10-24",
+      "note": "The research tool returned the title but zero body lines. Site ownership is corroborated by the Meghalaya department link; media and policies remain unread."
+    },
+    "ghadc_home": {
+      "url": "https://www.ghadc.nic.in/index.html",
+      "title": "Welcome to GHADC Website | GHADC",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "© 2023 by Garo Hills Autonomous District Council.",
+      "note": "Council identity, Tura address and August 2026 notices readable. A general website copyright footer is not a video reuse licence."
+    },
+    "ghadc_terms": {
+      "url": "https://www.ghadc.nic.in/support/terms_and_condition.pdf",
+      "title": "GHADC — Terms & Conditions (linked target)",
+      "access": "web_fetch_cache_miss",
+      "accessed_on": "2026-10-24",
+      "note": "Terms target was obtained from the official home link, but its text could not be inspected."
+    },
+    "meghalaya_department": {
+      "url": "https://megdca.gov.in/",
+      "title": "Homepage: District Council Affairs Department",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Contents owned, maintained and updated by District Council Affairs Department",
+      "note": "State department explicitly links Khasi Hills and Jaintia Hills council sites and publishes notices covering all three Meghalaya councils."
+    },
+    "meghalaya_budget_2026": {
+      "url": "https://megdca.gov.in/docs/document-4.pdf",
+      "title": "Notification: Autonomous District Councils meet for discussion of District Budget 2026–2027",
+      "access": "web_pdf_text_read_screenshot_fetch_cache_miss",
+      "accessed_on": "2026-10-24",
+      "excerpt": "for discussion of the District Budget 2026-2027.",
+      "note": "Notification summons Khasi, Garo and Jaintia Hills councils at 11 A.M. on 13 February 2026 in Shillong, Tura and Jowai respectively. Time is published without an explicit zone or end. This documents a scheduled sitting date in the past, not proof that it occurred or an accompanying broadcast.",
+      "document_date": "2026-02-10"
+    },
+    "tripura_directory": {
+      "url": "https://igod.gov.in/sg/TR/E051/organizations",
+      "title": "Integrated Government Online Directory — Tripura statutory/autonomous bodies",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Tripura Tribal Areas Autonomous District Council (TTAADC), Tripura",
+      "note": "National government directory directly designates https://ttaadc.gov.in/ as the council site."
+    },
+    "tripura_root": {
+      "url": "https://ttaadc.gov.in/",
+      "title": "TTAADC institutional route",
+      "access": "web_fetch_timeout",
+      "accessed_on": "2026-10-24",
+      "note": "The www variant also timed out. No bypass or alternative non-public route attempted."
+    },
+    "tripura_oath": {
+      "url": "https://newsonair.gov.in/ttaadc-oath-taking-ceremony-to-be-held-on-april-27-at-khumulwng-council-bhavan/",
+      "title": "TTAADC oath-taking ceremony to be held on April 27 at Khumulwng Council Bhavan",
+      "access": "web_search_index_content",
+      "accessed_on": "2026-10-24",
+      "excerpt": "April 27, 2026, at 11:00 a.m.",
+      "note": "Official public broadcaster reports a dated council ceremony from an official notification. It supplies neither a broadcast URL nor broadcast end time.",
+      "document_date": "2026-04-24"
+    },
+    "mizoram_department": {
+      "url": "https://dcma.mizoram.gov.in/",
+      "title": "District Council & Minority Affairs Department, Government of Mizoram, India",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "MADC Website",
+      "note": "State department explicitly designates the Lai, Mara and Chakma council websites; old governor-rule headlines on this separate page should not override dated current council notices without checking the underlying orders."
+    },
+    "cadc_home": {
+      "url": "https://www.cadc.gov.in/",
+      "title": "Chakma Autonomous District Council — official website",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "The official website of the Chakma Autonomous District Council, Mizoram, India",
+      "note": "Current notices dated October 2026; identifies Kamalanagar headquarters. Leadership paragraph mixes a 2023 appointment with a 2026 oath; current officeholders require independent dated confirmation. Embedded documentary is cultural, not legislative proceedings."
+    },
+    "cadc_legislature": {
+      "url": "https://www.cadc.gov.in/releases/governance/legislature/",
+      "title": "Legislature — Chakma Autonomous District Council",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "The House will reconvene on Monday, 24 August 2026.",
+      "note": "Reports dated 20–21 August 2026 provide sitting subjects and planned reconvening. No start/end broadcast timings, XMLTV or timed feed inspected."
+    },
+    "cadc_ipr_handbook": {
+      "url": "https://www.cadc.gov.in/wp-content/uploads/rti-2022-2023/RTI%20Handbook%20Information%20%26%20Public%20Relations%202022-2023.pdf",
+      "title": "Right to Information Handbook — Information & Public Relations",
+      "access": "web_search_index_pdf_content",
+      "accessed_on": "2026-10-24",
+      "excerpt": "CADC Official YouTube Channel: https://www.youtube.com/@CADCOfficial",
+      "note": "Council-owned handbook explicitly designates the channel. This proves provider designation, not that a particular legislature session exists or plays."
+    },
+    "cadc_channel": {
+      "url": "https://www.youtube.com/@CADCOfficial",
+      "title": "CADCOfficial — official channel target",
+      "access": "web_fetch_cache_miss",
+      "accessed_on": "2026-10-24",
+      "note": "Direct web-tool channel retrieval failed; no current session inventory or decoded playback was validated."
+    },
+    "cadc_documentary": {
+      "url": "https://www.youtube-nocookie.com/embed/5t00fMbvbQs",
+      "title": "Chakma Zinghani Gonganir Hideiph — official-site documentary player target",
+      "access": "web_fetch_cache_miss",
+      "accessed_on": "2026-10-24",
+      "note": "Target linked by the council home; observed own-site embedding does not license third-party embedding or rebroadcast of this documentary or future sessions."
+    },
+    "ladc_home": {
+      "url": "https://ladc.mizoram.gov.in/",
+      "title": "LAI AUTONOMOUS DISTRICT COUNCIL (LADC), Government of Mizoram, India",
+      "access": "web_page_read",
+      "accessed_on": "2026-10-24",
+      "excerpt": "Official website for : LAI AUTONOMOUS DISTRICT COUNCIL (LADC)",
+      "note": "Council-owned government page provides Legislative Secretariat navigation, English/Lai/Mizo press sections and an I&PR YouTube link. Calendar label is not proof of a current legislative schedule."
+    },
+    "ladc_channel": {
+      "url": "https://www.youtube.com/@IPRLADC",
+      "title": "I&PR YouTube — official-site channel target",
+      "access": "web_fetch_cache_miss",
+      "accessed_on": "2026-10-24",
+      "note": "Lai official home footer designates this target. Channel contents, current legislative sessions and decoded playback remain unvalidated."
+    },
+    "ladc_secretariat": {
+      "url": "https://ladc.mizoram.gov.in/page/district-council-secretariat-lai-autonomous-district-council",
+      "title": "District Council Secretariat, Lai Autonomous District Council",
+      "access": "web_fetch_403",
+      "accessed_on": "2026-10-24",
+      "note": "Official home navigation designates the page, but direct access returned forbidden."
+    },
+    "ladc_terms": {
+      "url": "https://ladc.mizoram.gov.in/page/terms-and-conditions-of-use-of-this-website",
+      "title": "Terms and conditions of use of this website — official linked target",
+      "access": "web_fetch_cache_miss",
+      "accessed_on": "2026-10-24",
+      "note": "Linked terms exist; actual grant, restrictions, third-party exceptions and media scope not inspected."
+    },
+    "madc_home": {
+      "url": "https://madc.mizoram.gov.in/",
+      "title": "Mara Autonomous District Council — designated website",
+      "access": "web_fetch_403",
+      "accessed_on": "2026-10-24",
+      "note": "Ownership designation comes from the readable Mizoram District Council & Minority Affairs Department site. Both home and a public About Us target returned forbidden; no access-control bypass attempted."
+    }
+  },
+  "records": [
+    {
+      "id": "india--bodoland-territorial-council",
+      "name": "Bodoland Territorial Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://bodoland.gov.in/",
+        "route_access": "web_fetch_404",
+        "departmental_fallback": "https://dsyw.bodoland.gov.in/"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "BTC identity and Kokrajhar location supported by the council departmental site; BTR is the territory, not a separate legislature."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Central portal returned 404; recover a current legislative-secretariat route and verify provider designation.",
+        "Library-site copyright/hyperlink labels were indexed, but policy text and legislative-media scope were not read."
+      ],
+      "source_refs": [
+        "bodoland_root",
+        "bodoland_department",
+        "bodoland_library"
+      ]
+    },
+    {
+      "id": "india--chakma-autonomous-district-council",
+      "name": "Chakma Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://www.cadc.gov.in/",
+        "route_access": "web_page_read",
+        "seat": "Kamalanagar",
+        "ownership_corroboration": "Mizoram department link and own-site identification"
+      },
+      "official_streams": {
+        "status": "official_media_provider_designated_session_playback_pending",
+        "official_provider_designated": true,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located.",
+        "provider_url": "https://www.youtube.com/@CADCOfficial",
+        "provider_evidence_source": "cadc_ipr_handbook"
+      },
+      "epg": {
+        "status": "retrospective_sitting_subjects_confirmed_current_timed_broadcast_guide_unresolved",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "note": "20–21 August 2026 sitting reports supply subjects and planned 24 August reconvening, without video timings."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "Own-site documentary embedding observed. This is not a third-party embed licence for that work or any council proceedings."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "Council-owned RTI handbook explicitly designates @CADCOfficial; the homepage embeds a cultural documentary. Neither observation confirms a legislative stream.",
+        "Legislature section provides dated sitting/business reports suitable for a future source adapter after programme identity, timing and reuse checks."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Homepage leadership dates combine a 2023 appointment with a 2026 oath; do not publish uncorroborated current-officeholder metadata.",
+        "Retrieve the officially designated channel and find a council sitting before technical playback or archive claims."
+      ],
+      "source_refs": [
+        "mizoram_department",
+        "cadc_home",
+        "cadc_ipr_handbook",
+        "cadc_legislature",
+        "cadc_channel",
+        "cadc_documentary"
+      ]
+    },
+    {
+      "id": "india--dima-hasao-north-cachar-hills-autonomous-council",
+      "name": "North Cachar Hills Autonomous Council (Dima Hasao)",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://nchac.in/",
+        "route_access": "web_page_read",
+        "seat": "Haflong",
+        "aliases_confirmed": [
+          "Dima Hasao Autonomous Council",
+          "North Cachar Hills Autonomous Council"
+        ]
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "note": "CDC/CRM minutes are administrative records; do not promote them to legislative EPG."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "Council footer states all rights reserved; no audiovisual grant found in inspected pages."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "Council footer states all rights reserved; no audiovisual grant found in inspected pages."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "Council footer states all rights reserved; no audiovisual grant found in inspected pages."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "Own site reconciles NCHAC/DHAC names and identifies Haflong seat and IT Department maintenance. Legislative bill listing is current to October 2026."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission."
+      ],
+      "source_refs": [
+        "nchac_home",
+        "nchac_minutes"
+      ]
+    },
+    {
+      "id": "india--garo-hills-autonomous-district-council",
+      "name": "Garo Hills Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://www.ghadc.nic.in/index.html",
+        "route_access": "web_page_read",
+        "seat": "Tura"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "historical_sitting": {
+          "date": "2026-02-13",
+          "published_start": "11 A.M.",
+          "subject": "District Budget 2026–2027",
+          "source_ref": "meghalaya_budget_2026",
+          "broadcast_confirmed": false,
+          "explicit_timezone_published": false,
+          "end": null
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "Copyright footer observed; linked terms inaccessible. Neither is an affirmative audiovisual reuse licence."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "NIC-hosted council home identifies GHADC and its Tura address; August 2026 notifications are readable.",
+        "State department summons documents a scheduled budget sitting on 13 February 2026 at 11 A.M.; occurrence, broadcast existence and timing remain separate unresolved questions."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Council terms link was observed, but PDF retrieval failed; rights scope remains unread."
+      ],
+      "source_refs": [
+        "ghadc_home",
+        "ghadc_terms",
+        "meghalaya_budget_2026"
+      ]
+    },
+    {
+      "id": "india--jaintia-hills-autonomous-district-council",
+      "name": "Jaintia Hills Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://jhadc.nic.in/",
+        "route_access": "web_page_title_only",
+        "ownership_corroboration": "Meghalaya District Council Affairs Department links the site",
+        "seat": "Jowai"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "historical_sitting": {
+          "date": "2026-02-13",
+          "published_start": "11 A.M.",
+          "subject": "District Budget 2026–2027",
+          "source_ref": "meghalaya_budget_2026",
+          "broadcast_confirmed": false,
+          "explicit_timezone_published": false,
+          "end": null
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "Council title returned, with state departmental designation of the same route; body content was not readable in this research tool.",
+        "State department summons documents a scheduled budget sitting on 13 February 2026 at 11 A.M.; occurrence, broadcast existence and timing remain separate unresolved questions."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Obtain readable council navigation before claiming a media, schedule or terms page has been checked."
+      ],
+      "source_refs": [
+        "jhadc_home",
+        "meghalaya_department",
+        "meghalaya_budget_2026"
+      ]
+    },
+    {
+      "id": "india--karbi-anglong-autonomous-council",
+      "name": "Karbi Anglong Autonomous Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://karbianglong.co.in/index.php",
+        "route_access": "web_page_read",
+        "jurisdiction": "Karbi Anglong and West Karbi Anglong, Assam",
+        "seat": "Diphu"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "KAAC footer reserves rights; no media-specific permission or exception located in inspected pages."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "KAAC footer reserves rights; no media-specific permission or exception located in inspected pages."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "note": "KAAC footer reserves rights; no media-specific permission or exception located in inspected pages."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "Owned council-facing home/About pages identify KAAC in Diphu and jurisdiction across both districts. October 2026 notices show continuing publication."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission."
+      ],
+      "source_refs": [
+        "kaac_home",
+        "kaac_about"
+      ]
+    },
+    {
+      "id": "india--khasi-hills-autonomous-district-council",
+      "name": "Khasi Hills Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://khadc.nic.in/",
+        "route_access": "web_fetch_timeout",
+        "ownership_corroboration": "Meghalaya District Council Affairs Department links the site",
+        "seat": "Shillong"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "historical_sitting": {
+          "date": "2026-02-13",
+          "published_start": "11 A.M.",
+          "subject": "District Budget 2026–2027",
+          "source_ref": "meghalaya_budget_2026",
+          "broadcast_confirmed": false,
+          "explicit_timezone_published": false,
+          "end": null
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "Government-designated council site and indexed Legislative Secretariat page establish a named institutional route; cadence text is not a dated programme schedule.",
+        "State department summons documents a scheduled budget sitting on 13 February 2026 at 11 A.M.; occurrence, broadcast existence and timing remain separate unresolved questions."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission."
+      ],
+      "source_refs": [
+        "khadc_legislative",
+        "meghalaya_department",
+        "meghalaya_budget_2026"
+      ]
+    },
+    {
+      "id": "india--lai-autonomous-district-council",
+      "name": "Lai Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://ladc.mizoram.gov.in/",
+        "route_access": "web_page_read",
+        "ownership_corroboration": "Mizoram department link and own-site identification"
+      },
+      "official_streams": {
+        "status": "official_media_provider_designated_session_playback_pending",
+        "official_provider_designated": true,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located.",
+        "provider_url": "https://www.youtube.com/@IPRLADC",
+        "provider_evidence_source": "ladc_home"
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "Council home directly links its I&PR YouTube target @IPRLADC; state department corroborates the institutional website.",
+        "Owned site exposes legislative-secretariat, press-release and calendar navigation; English/Lai/Mizo press categories are page-language evidence, not broadcast-language evidence."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Secretariat target returned 403; channel and terms targets could not be retrieved. Current session videos, calendar freshness and permission text remain pending."
+      ],
+      "source_refs": [
+        "mizoram_department",
+        "ladc_home",
+        "ladc_channel",
+        "ladc_secretariat",
+        "ladc_terms"
+      ]
+    },
+    {
+      "id": "india--mara-autonomous-district-council",
+      "name": "Mara Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://madc.mizoram.gov.in/",
+        "route_access": "web_fetch_403",
+        "ownership_corroboration": "Mizoram District Council & Minority Affairs Department designation"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "State department directly designates madc.mizoram.gov.in as the Mara council website."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Council home/About access returned forbidden; use a later public recheck or the department’s published council material, without bypassing access controls.",
+        "No council media provider, current agenda or rights text was retrieved."
+      ],
+      "source_refs": [
+        "mizoram_department",
+        "madc_home"
+      ]
+    },
+    {
+      "id": "india--tripura-tribal-areas-autonomous-district-council",
+      "name": "Tripura Tribal Areas Autonomous District Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata_stream_epg_rights_validation_complete": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "institutional_route_evidence_found_current_metadata_incomplete",
+        "broadcast_languages": {
+          "status": "unresolved",
+          "value": null
+        },
+        "current_officeholders": {
+          "status": "not_certified"
+        },
+        "institutional_url": "https://ttaadc.gov.in/",
+        "route_access": "web_fetch_timeout",
+        "ownership_corroboration": "Integrated Government Online Directory designation",
+        "seat": "Khumulwng"
+      },
+      "official_streams": {
+        "status": "unresolved_no_legislative_playback_validated",
+        "official_provider_designated": false,
+        "confirmed_decoded_playback": false,
+        "direct_hls_or_dash": null,
+        "no_stream_exists_claim": false,
+        "next_check": "Inspect current council-designated media, preserving institutional identity and session context; validate actual public playback if a legislative recording or live feed is located."
+      },
+      "epg": {
+        "status": "unresolved_no_current_timed_broadcast_guide_validated",
+        "machine_readable_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "historical_event_lead": {
+          "date": "2026-04-27",
+          "published_start": "11:00 a.m.",
+          "event": "Oath-taking ceremony and council nomination session",
+          "source_ref": "tripura_oath",
+          "broadcast_confirmed": false,
+          "explicit_timezone_published": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "confirmations": [
+        "National government directory designates the council site. Public broadcaster announces a council ceremony scheduled for 27 April 2026 at Khumulwng; occurrence is not established by the announcement."
+      ],
+      "unresolved": [
+        "Current member/term metadata and institutional branding must be checked against dated notices.",
+        "No legislative video playback, current broadcast languages or stable direct stream has been validated in this pass.",
+        "Public page accessibility or a provider link does not establish embed, recording, redistribution or programme-data permission.",
+        "Site timeouts prevent verification of current own-site media, agenda and policies. The public broadcaster story is not a designated council webcast."
+      ],
+      "source_refs": [
+        "tripura_directory",
+        "tripura_root",
+        "tripura_oath"
+      ]
+    }
+  ]
+}

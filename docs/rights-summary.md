@@ -55,8 +55,30 @@ These entries need either written clarification or a future dated terms review.
 
 As of 2026-10-24 (local working tree):
 
-- 172 of 243 catalogue entries remain permission-pending: 18 official-vendor
-  HLS, five first-party HLS, 148 official pages and one DASH research record.
+- France's National Assembly now has `no_third_party_reuse`: its current notice
+  distinguishes conditionally reusable official documents from multimedia that
+  requires prior agreement. Hyperlinks remain conditionally permitted. The
+  source was already research-only; no active player is disabled by this correction.
+  [Dated correction and sources](../reports/discovery/2026-10-24-service-review-france-rights-correction.json).
+- Two Tweede Kamer meeting feeds now have conditional reuse evidence from the
+  current Dutch disclaimer and its linked audiovisual licence. The occasional
+  events channel remains pending because its content may fall outside that
+  licence's plenary/committee scope.
+  [Licence review and conditions](../reports/discovery/2026-10-24-service-review-netherlands-av-licence.json).
+- Canada's House and Senate notices expressly permit accurate, unofficial
+  proceedings reproductions without financial gain and with source-specific
+  safeguards. Their labels now record that conditional grant; both remain
+  official link-outs, with independent live-delivery questions still open.
+  [Chamber findings](../reports/discovery/2026-10-24-service-review-national-americas.json).
+- Colombia's House now records the restrictive current linked terms as
+  `no_third_party_reuse`, retaining its official provider viewing link.
+  [Dated terms review](../reports/discovery/2026-10-24-service-review-national-americas.json).
+- TVW's provider signal is expressly subject to licensure and now records
+  `no_third_party_reuse`, while retaining its official viewing link. A legislature's
+  provider designation is separate from the provider's audiovisual rights.
+  [Current provider conditions](../reports/discovery/2026-10-24-service-review-us-chambers-c.json).
+- 168 of 243 catalogue entries remain permission-pending: 18 official-vendor
+  HLS, three first-party HLS, 146 official pages and one DASH research record.
 - The previous 28-entry review queue remains classified in the dated report;
   it is a historical subset, not the current total.
 - Later official-page additions retain source-specific terms notes in the
@@ -82,6 +104,8 @@ review kept Netherlands Tweede Kamer in the written-clarification bucket and
 kept Thailand TPchannel and El Salvador Legislative Assembly pending after
 dated public-terms searches. No catalogue statuses changed. The snapshot is
 [review-queues-2026-08-19-first-party-hls.json](../reports/review-queues-2026-08-19-first-party-hls.json).
+The 24 October Dutch licence follow-up above supersedes that older conclusion
+for the two identified meeting feeds; it does not recertify their current playback.
 
 The pending `official_page` records were reviewed on 2026-08-19. Brazil TV
 Camara and Manitoba House Broadcasts moved to

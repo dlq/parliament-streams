@@ -1,0 +1,456 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Every one of the 63 catalogue jurisdictions using a neutral mark at the start of this pass; all45 additions since the198-source baseline included.",
+  "summary": {
+    "catalogue_sources": 243,
+    "initial_flagged": 180,
+    "initial_neutral": 63,
+    "flags_added": 50,
+    "current_flagged": 230,
+    "current_neutral": 13,
+    "all_missing_jurisdictions_have_recorded_dispositions": true
+  },
+  "records": [
+    {
+      "catalogue_id": "south-korea-jeonnam-gwangju-council-recordings",
+      "jurisdiction": "Jeonnam–Gwangju Integrated Special City",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "argentina-mendoza-deputies-recordings",
+      "jurisdiction": "Mendoza",
+      "outcome": "asset_added",
+      "asset": "mendoza.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "argentina-rio-negro-legislature-recordings",
+      "jurisdiction": "Río Negro",
+      "outcome": "asset_added",
+      "asset": "rio-negro.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "argentina-salta-deputies-recordings",
+      "jurisdiction": "Salta",
+      "outcome": "asset_added",
+      "asset": "salta.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "argentina-san-juan-deputies-recordings",
+      "jurisdiction": "San Juan",
+      "outcome": "asset_added",
+      "asset": "san-juan.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "argentina-santa-cruz-deputies-webcasts",
+      "jurisdiction": "Santa Cruz, Argentina",
+      "outcome": "asset_added",
+      "asset": "santa-cruz-argentina.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "argentina-tierra-del-fuego-legislature-webcasts",
+      "jurisdiction": "Tierra del Fuego",
+      "outcome": "asset_added",
+      "asset": "tierra-del-fuego.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "argentina-tucuman-legislature-recordings",
+      "jurisdiction": "Tucumán",
+      "outcome": "asset_added",
+      "asset": "tucuman.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-mato-grosso-do-sul-assembly-recordings",
+      "jurisdiction": "Mato Grosso do Sul",
+      "outcome": "asset_added",
+      "asset": "mato-grosso-do-sul.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-paraiba-assembly-recordings",
+      "jurisdiction": "Paraíba",
+      "outcome": "asset_added",
+      "asset": "paraiba.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-goias-assembly-recordings",
+      "jurisdiction": "Goiás",
+      "outcome": "asset_added",
+      "asset": "goias.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-mato-grosso-assembly-recordings",
+      "jurisdiction": "Mato Grosso",
+      "outcome": "asset_added",
+      "asset": "mato-grosso.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-pernambuco-assembly-recordings",
+      "jurisdiction": "Pernambuco",
+      "outcome": "asset_added",
+      "asset": "pernambuco.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-rondonia-assembly-recordings",
+      "jurisdiction": "Rondônia",
+      "outcome": "asset_added",
+      "asset": "rondonia.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-ceara-assembly-recordings",
+      "jurisdiction": "Ceará",
+      "outcome": "asset_added",
+      "asset": "ceara.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-parana-assembly-recordings",
+      "jurisdiction": "Paraná",
+      "outcome": "asset_added",
+      "asset": "parana.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "brazil-rio-de-janeiro-assembly-recordings",
+      "jurisdiction": "Rio de Janeiro",
+      "outcome": "asset_added",
+      "asset": "rio-de-janeiro-state.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-caldas-assembly-recordings",
+      "jurisdiction": "Caldas",
+      "outcome": "asset_added",
+      "asset": "caldas.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "canada-new-brunswick-committee-recordings",
+      "jurisdiction": "New Brunswick",
+      "outcome": "installed",
+      "asset": "new-brunswick.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-north-america.json"
+    },
+    {
+      "catalogue_id": "finland-aland-lagting-recordings",
+      "jurisdiction": "Åland",
+      "outcome": "asset_added",
+      "asset": "ax.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "montenegro-parliament-recordings",
+      "jurisdiction": "Montenegro",
+      "outcome": "asset_added",
+      "asset": "me.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "germany-hesse-recordings",
+      "jurisdiction": "Hesse",
+      "outcome": "asset_added",
+      "asset": "hesse.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "germany-sachsischer-landtag-recordings",
+      "jurisdiction": "Saxony",
+      "outcome": "asset_added",
+      "asset": "saxony.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "indonesia-aceh-recordings",
+      "jurisdiction": "Aceh",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "japan-hyogo-recordings",
+      "jurisdiction": "Hyogo",
+      "outcome": "asset_added",
+      "asset": "hyogo.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "japan-tokushima-recordings",
+      "jurisdiction": "Tokushima",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "south-africa-northern-cape-recordings",
+      "jurisdiction": "Northern Cape",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "south-africa-western-cape-recordings",
+      "jurisdiction": "Western Cape",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "spain-parlamento-de-cantabria-recordings",
+      "jurisdiction": "Cantabria",
+      "outcome": "asset_added",
+      "asset": "cantabria.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "spain-parlamento-de-la-rioja-recordings",
+      "jurisdiction": "La Rioja, Spain",
+      "outcome": "asset_added",
+      "asset": "la-rioja-spain.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "taiwan-penghu-recordings",
+      "jurisdiction": "Penghu",
+      "outcome": "asset_added",
+      "asset": "penghu.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "taiwan-tainan-recordings",
+      "jurisdiction": "Tainan",
+      "outcome": "asset_added",
+      "asset": "tainan.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "united-states-district-of-columbia-recordings",
+      "jurisdiction": "District of Columbia",
+      "outcome": "installed",
+      "asset": "district-of-columbia.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-north-america.json"
+    },
+    {
+      "catalogue_id": "united-states-kansas-recordings",
+      "jurisdiction": "Kansas",
+      "outcome": "installed",
+      "asset": "kansas.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-north-america.json"
+    },
+    {
+      "catalogue_id": "united-states-mississippi-recordings",
+      "jurisdiction": "Mississippi",
+      "outcome": "installed",
+      "asset": "mississippi.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-north-america.json"
+    },
+    {
+      "catalogue_id": "united-states-wyoming-recordings",
+      "jurisdiction": "Wyoming",
+      "outcome": "installed",
+      "asset": "wyoming.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-north-america.json"
+    },
+    {
+      "catalogue_id": "uruguay-canelones-recordings",
+      "jurisdiction": "Canelones",
+      "outcome": "asset_added",
+      "asset": "canelones.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "uruguay-montevideo-recordings",
+      "jurisdiction": "Montevideo",
+      "outcome": "neutral_no_current_adopted_flag_confirmed",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-bolivar-recordings",
+      "jurisdiction": "Bolívar",
+      "outcome": "asset_added",
+      "asset": "bolivar-department.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-cesar-recordings",
+      "jurisdiction": "Cesar",
+      "outcome": "asset_added",
+      "asset": "cesar.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-guaviare-recordings",
+      "jurisdiction": "Guaviare",
+      "outcome": "asset_added",
+      "asset": "guaviare.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-magdalena-recordings",
+      "jurisdiction": "Magdalena",
+      "outcome": "neutral_flag_asset_identity_unresolved",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-quindio-recordings",
+      "jurisdiction": "Quindío",
+      "outcome": "asset_added",
+      "asset": "quindio.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "colombia-tolima-recordings",
+      "jurisdiction": "Tolima",
+      "outcome": "asset_added",
+      "asset": "tolima.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+    },
+    {
+      "catalogue_id": "spain-cortes-de-castilla-y-leon-recordings",
+      "jurisdiction": "Castile and León",
+      "outcome": "asset_added",
+      "asset": "castile-and-leon.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "spain-parlamento-de-canarias-recordings",
+      "jurisdiction": "Canary Islands",
+      "outcome": "asset_added",
+      "asset": "canary-islands.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "us-virgin-islands-legislature-recordings",
+      "jurisdiction": "United States Virgin Islands",
+      "outcome": "installed",
+      "asset": "vi.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-north-america.json"
+    },
+    {
+      "catalogue_id": "serbia-national-assembly-recordings",
+      "jurisdiction": "Serbia",
+      "outcome": "asset_added",
+      "asset": "rs.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "switzerland-glarus-recordings",
+      "jurisdiction": "Glarus",
+      "outcome": "asset_added",
+      "asset": "glarus.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "switzerland-jura-recordings",
+      "jurisdiction": "Jura",
+      "outcome": "asset_added",
+      "asset": "jura.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "switzerland-thurgau-recordings",
+      "jurisdiction": "Thurgau",
+      "outcome": "asset_added",
+      "asset": "thurgau.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "switzerland-zurich-recordings",
+      "jurisdiction": "Zurich",
+      "outcome": "asset_added",
+      "asset": "zurich.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "switzerland-vaud-waadt-recordings",
+      "jurisdiction": "Vaud",
+      "outcome": "asset_added",
+      "asset": "vaud.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "germany-thuringer-landtag-recordings",
+      "jurisdiction": "Thuringia",
+      "outcome": "asset_added",
+      "asset": "thuringia.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-europe.json"
+    },
+    {
+      "catalogue_id": "japan-fukui-recordings",
+      "jurisdiction": "Fukui",
+      "outcome": "asset_added",
+      "asset": "fukui.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "japan-fukushima-recordings",
+      "jurisdiction": "Fukushima",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "japan-iwate-recordings",
+      "jurisdiction": "Iwate",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "taiwan-hsinchu-city-recordings",
+      "jurisdiction": "Hsinchu City",
+      "outcome": "asset_added",
+      "asset": "hsinchu-city.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "indonesia-kalimantan-tengah-recordings",
+      "jurisdiction": "Central Kalimantan",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "indonesia-jawa-tengah-recordings",
+      "jurisdiction": "Central Java",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "indonesia-di-yogyakarta-recordings",
+      "jurisdiction": "Yogyakarta",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "south-africa-free-state-recordings",
+      "jurisdiction": "Free State",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "taiwan-lienchiang-recordings",
+      "jurisdiction": "Lienchiang",
+      "outcome": "asset_added",
+      "asset": "lienchiang.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    }
+  ]
+}

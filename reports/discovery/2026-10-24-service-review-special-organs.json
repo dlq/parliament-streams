@@ -1,0 +1,1046 @@
+{
+  "report_version": 1,
+  "reviewed_on": "2026-10-24",
+  "scope": "Source-level follow-up for six newly reconciled eligible special formations/organs outside the historical 652-body service cohort. No authority recertification, catalogue promotion, playback-policy change or permission outreach.",
+  "method": "Official primary browsing, linked documents and normal bounded public HTTP reads. Search-index evidence and retrieval limits are explicit. No media decoded, hidden stream API used, access-control bypass, raw HTML retained or credential parameters copied.",
+  "summary": {
+    "records_reviewed": 6,
+    "partial_source_followups": 6,
+    "fully_validated_records": 0,
+    "decoded_playback_checks": 0,
+    "catalogue_promotions": 0,
+    "per_assembly_public_JSON_confirmed": 1
+  },
+  "counting_limits": [
+    "Brussels shared membership does not merge distinct statutory formations.",
+    "DPD, DPR and MPR are different bodies; joint broadcasts require exact segment mapping.",
+    "The two Landsgemeinden are annual popular organs, not permanent channels or extra territories.",
+    "Glarus item clips belong to the same annual sitting; Landrat preparatory footage remains distinct.",
+    "Athos ordinary Holy Community is not the qualifying extraordinary twenty-member organ."
+  ],
+  "records": [
+    {
+      "id": "belgium--commission-communautaire-commune",
+      "country": "Belgium",
+      "name": "Assemblée réunie de la Commission communautaire commune / Verenigde Vergadering van de Gemeenschappelijke Gemeenschapscommissie",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Assemblée réunie de la Commission communautaire commune / Verenigde Vergadering van de Gemeenschappelijke Gemeenschapscommissie",
+        "institutional_route": "https://www.parlement.brussels/",
+        "name_status": "exact_formation_supported_by_official_summons_and_transcript",
+        "identity_limits": "Distinct statutory legislative formation sharing Brussels Parliament membership; not the executive Collège réuni, COCOF or a second jurisdiction."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "general_shared_parliament_provider_designation_exact_formation_media_unresolved",
+        "shared_provider_url": "https://www.youtube.com/c/parlementbrusselslive",
+        "exact_formation_provider_designation_confirmed": false,
+        "proceedings_leads": [
+          {
+            "date": "2025-10-17",
+            "kind": "exact_formation_transcript_cover",
+            "source_ids": [
+              "br-plenary"
+            ]
+          },
+          {
+            "scheduled_date": "2026-04-23",
+            "kind": "exact_formation_committee_summons",
+            "source_ids": [
+              "br-committee"
+            ]
+          }
+        ]
+      },
+      "programme_guide": {
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "status": "official_PDF_summons_and_shared_HTML_agenda_surface",
+        "formats_confirmed": [
+          "PDF_committee_summons",
+          "PDF_plenary_transcript_cover",
+          "shared_HTML_agenda_navigation"
+        ],
+        "source_time_evidence": "April 23 summons specifies 15:30–17:30 without a confirmed explicit timezone or broadcast mapping.",
+        "machine_readable_feed_confirmed": false,
+        "freshness_limits": "The confirmed summons is historical and replaces an earlier version; no current full ARCCC calendar coverage certified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "General media links, institutional copyright presentation and the inspected formation documents do not establish this particular third-party use. No exact-formation media licence was retrieved.",
+          "source_ids": [
+            "br-home",
+            "br-films"
+          ]
+        }
+      },
+      "confirmed": [
+        "Exact bilingual Joint Assembly identity appears in official parliamentary documents.",
+        "A dated committee summons supplies room, proposed times, subjects and replacement/update caveats.",
+        "Shared institutional navigation designates a general parliamentary YouTube channel; no inheritance of a constituent or shared service into this formation is made."
+      ],
+      "unresolved_dimensions": [
+        "exact_ARCCC_recording_or_live_event_provider_match",
+        "decoded_substantive_proceedings",
+        "current_owned_formation_page_and_exact_identifiers",
+        "all_chamber_committee_rooms_and_languages",
+        "current_timed_calendar_feed_and_broadcast_mapping",
+        "audio_and_source_wide_accessibility",
+        "each_separate_rights_use"
+      ],
+      "sources": [
+        {
+          "id": "br-home",
+          "url": "https://www.parlement.brussels/",
+          "title": "Parlement bruxellois",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_page_navigation_inspected; web_reader_403",
+          "source_date": null,
+          "excerpt": "L’Assemblée réunie (ARCCC)",
+          "notes": "Own navigation distinguishes the joint assembly and links general parliamentary media, agenda and the Parlement Brussels Live YouTube channel. General channel designation is not an exact ARCCC recording match."
+        },
+        {
+          "id": "br-region",
+          "url": "https://be.brussels/fr/propos-de-la-region/services-en-ligne-pour-les-citoyens/participation-la-vie-publique",
+          "title": "Participation à la vie publique - Région de Bruxelles-Capitale",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_page_text_inspected",
+          "source_date": null,
+          "excerpt": "Ordres du jour - comptes rendus des institutions bruxelloises",
+          "notes": "Regional government explicitly designates parliamentary databases/publications for both Brussels Parliament and the Joint Assembly; their identities remain distinct."
+        },
+        {
+          "id": "br-committee",
+          "url": "https://weblex.brussels/display_pdf.php?info=convoc_fr&key=34085",
+          "title": "Assemblée réunie - Commission de la santé et de l’aide aux personnes: convocation",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_pdf_text_inspected",
+          "source_date": "2026-04-21",
+          "excerpt": "Jeudi 23 avril 2026 de 15h30 à 17h30",
+          "notes": "Summons for April 23 in room 206 replaces an earlier summons and says agenda may change. This confirms a proposed meeting schedule, not broadcast or occurrence."
+        },
+        {
+          "id": "br-plenary",
+          "url": "https://weblex.brussels/data/arccc/cri/2025-26/00004/images.pdf",
+          "title": "Assemblée réunie: Compte rendu intégral, séance plénière du vendredi 17 octobre 2025",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_pdf_title_and_cover_inspected; direct_web_reader_502",
+          "source_date": "2025-10-17",
+          "excerpt": "ASSEMBLÉE RÉUNIE DE LA COMMISSION COMMUNAUTAIRE COMMUNE",
+          "notes": "Bilingual exact-formation transcript cover; documentary identity evidence, not decoded media. Retain the failed direct access separately."
+        },
+        {
+          "id": "br-films",
+          "url": "https://www.parlement.brussels/films-et-videos/",
+          "title": "Films et vidéos - Parlement bruxellois",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_page_text_and_iframe_designations_inspected",
+          "source_date": null,
+          "excerpt": "Diffusions sur YouTube",
+          "notes": "Page contains institutional films and general YouTube navigation. No specific video was established as ARCCC legislative proceedings; films or highlights are not accepted as substitutes."
+        },
+        {
+          "id": "br-agenda",
+          "url": "https://www.parlement.brussels/agenda/",
+          "title": "Agenda - Parlement bruxellois",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_navigation_inspected",
+          "source_date": null,
+          "excerpt": "",
+          "notes": "Agenda surface exists, but dated current ARCCC event rows, machine-readable feed and broadcast mapping were not established in extracted page content."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--indonesia-dpd",
+      "country": "Indonesia",
+      "name": "Dewan Perwakilan Daerah Republik Indonesia (DPD RI)",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Dewan Perwakilan Daerah Republik Indonesia (DPD RI)",
+        "institutional_route": "https://orchard.dpd.go.id/",
+        "name_status": "own_national_body_portal_supported",
+        "identity_limits": "DPD is the regional co-legislative body; do not equate it with DPR, their joint sitting or the MPR constitutional organ."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_YouTube_channel_designation_confirmed_session_validation_pending",
+        "provider_url": "https://www.youtube.com/@DPDRIChannel",
+        "provider_designation_confirmed": true,
+        "proceedings_leads": [
+          {
+            "publication_label": "2026-07-16",
+            "title": "Komite IV working meeting with finance/planning/statistics officials",
+            "url": "https://orchard.dpd.go.id/daftar-video-kegiatan/komite-iv-dpd-ri-gelar-raker-dengan-menkeu-menteri-ppin-kepala-bappenas-dan-waka-bps",
+            "source_ids": [
+              "dpd-videos"
+            ]
+          },
+          {
+            "meeting_date_reported": "2026-10-06",
+            "kind": "Komite_III_own_news_report_no_matching_video_confirmed",
+            "source_ids": [
+              "dpd-oct-business"
+            ]
+          }
+        ],
+        "live_route_limit": "The inspected live route points to a civil-service launch, not established current DPD legislative proceedings."
+      },
+      "programme_guide": {
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "status": "official_HTML_calendar_surface_exists_current_event_data_unverified",
+        "formats_confirmed": [
+          "HTML_calendar_route",
+          "HTML_video_list_with_publication_labels"
+        ],
+        "machine_readable_feed_confirmed": false,
+        "freshness_limits": "A current news report does not validate the calendar or establish continuous live coverage."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "dpd-terms",
+            "dpd-home"
+          ]
+        }
+      },
+      "confirmed": [
+        "Own portal names DPD RI and directly designates @DPDRIChannel.",
+        "Own media list supplies concrete Komite IV and other committee meeting leads.",
+        "An October 2026 own report establishes documented committee activity separately from media validation."
+      ],
+      "unresolved_dimensions": [
+        "preferred_name_exact_identifier_and_current_full_metadata",
+        "decode_and_identify_legislative_recording",
+        "publication_date_vs_sitting_date",
+        "current_live_route_identity",
+        "committee_room_inventory_audio_languages_accessibility",
+        "current_calendar_rows_and_machine_format",
+        "broadcast_feed_mapping",
+        "each_separate_rights_use"
+      ],
+      "sources": [
+        {
+          "id": "dpd-home",
+          "url": "https://orchard.dpd.go.id/",
+          "title": "Portal DPD | Dewan Perwakilan Daerah Republik Indonesia",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_navigation_inspected; official_search_index_text_inspected; initial_web_reader_timeout",
+          "source_date": null,
+          "excerpt": "Dewan Perwakilan Daerah Republik Indonesia",
+          "notes": "Own portal directly links @DPDRIChannel, live and kalender routes. Home video labels bear July 16, 2026; dates may be publication metadata rather than meeting dates."
+        },
+        {
+          "id": "dpd-live",
+          "url": "https://orchard.dpd.go.id/live",
+          "title": "Live Streaming DPD RI",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_iframe_inspected; official_search_index_text_inspected",
+          "source_date": null,
+          "excerpt": "Launching Core Values & Employer Branding ASN",
+          "notes": "Own page embeds YouTube video GaOqwLUmO0Y; indexed description refers to a civil-service branding launch under an earlier administration, rather than identified current DPD proceedings. A live-route label is insufficient."
+        },
+        {
+          "id": "dpd-videos",
+          "url": "https://orchard.dpd.go.id/publikasi/video",
+          "title": "Video Kegiatan DPD RI",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_page_text_links_and_iframes_inspected",
+          "source_date": null,
+          "excerpt": "KOMITE IV DPD RI GELAR RAKER DENGAN MENKEU, MENTERI PPIN/KEPALA BAPPENAS DAN WAKA BPS",
+          "notes": "Institutional media list supplies specific committee-working-meeting leads dated July 16, 2026. No full sitting, duration, date crosscheck or playback decoded."
+        },
+        {
+          "id": "dpd-kalender",
+          "url": "https://orchard.dpd.go.id/kalender",
+          "title": "Kalender - DPD RI",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_page_navigation_inspected",
+          "source_date": null,
+          "excerpt": "",
+          "notes": "Calendar page retrieved but dated event rows were not established in extracted text. Do not infer no meetings or a usable feed."
+        },
+        {
+          "id": "dpd-terms",
+          "url": "https://orchard.dpd.go.id/syarat-ketentuan",
+          "title": "Syarat & Ketentuan - DPD RI",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_page_text_inspected",
+          "source_date": null,
+          "excerpt": "Kebijakan Privasi ini bertujuan untuk membantu Anda memahami informasi yang kami kumpulkan",
+          "notes": "Read page includes privacy/account responsibilities and trademark/licensor wording that does not grant use of site or third-party marks. No specific legislative-video or programme-data licence was established; do not generalize trademark wording into an audiovisual prohibition."
+        },
+        {
+          "id": "dpd-oct-business",
+          "url": "https://orchard.dpd.go.id/daftar-berita/komite-iii-dpd-ri-bahas-sinkronisasi-data-dtsen-untuk-pip-dan-kip-kuliah",
+          "title": "Komite III DPD RI Bahas Sinkronisasi Data DTSEN untuk PIP dan KIP Kuliah",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_article_text_inspected",
+          "source_date": "2026-10-07",
+          "excerpt": "07 Oktober 2026 oleh admin",
+          "notes": "Own article describes an October 6, 2026 Komite III working meeting; current activity and substantive subject are documentary evidence, not a matching recording."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--indonesia-mpr",
+      "country": "Indonesia",
+      "name": "Majelis Permusyawaratan Rakyat Republik Indonesia (MPR RI)",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Majelis Permusyawaratan Rakyat Republik Indonesia (MPR RI)",
+        "institutional_route": "https://www.mpr.go.id/",
+        "name_status": "official_secretariat_sources_support_exact_organ",
+        "identity_limits": "MPR constitutional organ combines DPR/DPD membership; the annual MPR session and subsequent joint DPR/DPD session must be identified separately. An educational competition or a member’s personal channel is not substituted."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "official_institutional_YouTube_name_and_annual_broadcast_notice_confirmed_exact_item_pending",
+        "provider_designation": "Own 2023 guide identifies YouTube MPRGOID; own 2026 Secretariat notice designates official MPR RI YouTube coverage. Exact current channel target and specific recording still need direct verification.",
+        "proceedings_leads": [
+          {
+            "scheduled_date": "2026-08-14",
+            "kind": "annual_MPR_and_separate_joint_DPR_DPD_session_publicity_notice",
+            "source_ids": [
+              "mpr-annual-notice"
+            ]
+          },
+          {
+            "date_reported": "2026-08-14",
+            "kind": "own_gallery_attendance_report_not_proceedings_video",
+            "source_ids": [
+              "mpr-annual-report"
+            ]
+          }
+        ]
+      },
+      "programme_guide": {
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "status": "event_specific_official_notice_with_explicit_WIB_time",
+        "formats_confirmed": [
+          "indexed_official_HTML_publicity_notice"
+        ],
+        "machine_readable_feed_confirmed": false,
+        "published_time_scope": "August 14 combined coverage is announced approximately 08:30–11:00 WIB; not an exact end for each organ or a standing schedule.",
+        "freshness_limits": "Historical one-event notice; no current complete guide certified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "mpr-annual-notice",
+            "mpr-brand"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "mpr-annual-notice",
+            "mpr-brand"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "mpr-annual-notice",
+            "mpr-brand"
+          ]
+        },
+        "rebroadcast": {
+          "status": "audience_and_event_limited_invitation_our_use_unresolved",
+          "finding": "August 2026 notice invites Indonesian ministries/agencies to re-stream the official annual-session coverage. No general grant to Parliament Streams, other institutions, other dates or extracted media is established.",
+          "source_ids": [
+            "mpr-annual-notice"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "mpr-annual-notice",
+            "mpr-brand"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "mpr-annual-notice",
+            "mpr-brand"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "mpr-annual-notice",
+            "mpr-brand"
+          ]
+        }
+      },
+      "confirmed": [
+        "Official sources name the MPR organ and describe planned institutional YouTube coverage of the 2026 annual event.",
+        "Notice supplies explicit WIB timing and distinguishes MPR from the joint DPR/DPD session.",
+        "Re-streaming invitation has a named governmental audience and event; it is retained with that scope."
+      ],
+      "unresolved_dimensions": [
+        "current_own_site_and_precise_channel_target",
+        "exact_annual_MPR_recording_separate_from_joint_DPR_DPD",
+        "decoded_media_and_dates",
+        "all_rooms_languages_audio_accessibility",
+        "current_calendar_machine_feed_and_end_times",
+        "link_embed_direct_copy_reuse_programme_data_rights",
+        "rebroadcast_rights_for_this_project",
+        "exact_identifiers"
+      ],
+      "sources": [
+        {
+          "id": "mpr-root",
+          "url": "https://www.mpr.go.id/",
+          "title": "Majelis Permusyawaratan Rakyat Republik Indonesia",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_403; web_reader_403",
+          "source_date": null,
+          "excerpt": "",
+          "notes": "Access limit preserved without workaround."
+        },
+        {
+          "id": "mpr-brand",
+          "url": "https://www.mpr.go.id/halaman/Panduan-Sederhana-Penggunaan-Brand-MPR-RI-Pada-Konten-Digital?lang=id",
+          "title": "Panduan Sederhana Penggunaan Brand MPR RI Pada Konten Digital",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_article_text_inspected",
+          "source_date": "2023-07-25",
+          "excerpt": "youtube (MPRGOID)",
+          "notes": "Historical own branding guide identifies institutional social-media branding; it does not validate a current video URL or licence legislative footage."
+        },
+        {
+          "id": "mpr-annual-notice",
+          "url": "https://setjen.mpr.go.id/detailBerita/474/sidang-tahunan-mpr-2026-sinergi-humas-pemerintah",
+          "title": "Sidang Tahunan MPR 2026: Sinergi Humas Pemerintah",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_article_text_inspected; direct_web_reader_403",
+          "source_date": "2026-08-11",
+          "excerpt": "tautan siaran langsung (live streaming) YouTube MPR RI",
+          "notes": "Announces August 14 annual MPR session and separate joint DPR/DPD session, approximately 08:30–11:00 WIB. Invitation to re-stream specifically addresses Indonesian ministries/agencies (K/L), not every external catalogue."
+        },
+        {
+          "id": "mpr-annual-report",
+          "url": "https://setjen.mpr.go.id/galeri?page=4",
+          "title": "Setjen MPR RI galeri - August/September 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_gallery_text_inspected",
+          "source_date": "2026-08-14",
+          "excerpt": "Siti Fauziah Hadiri Sidang Tahunan MPR RI 2026",
+          "notes": "Gallery reports attendance at the annual MPR event; photo/time labels do not identify a complete proceedings recording."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "switzerland--appenzell-innerrhoden--organ--landsgemeinde-des-kantons-appenzell-innerrhoden",
+      "country": "Switzerland",
+      "name": "Landsgemeinde des Kantons Appenzell Innerrhoden",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Landsgemeinde des Kantons Appenzell Innerrhoden",
+        "institutional_route": "https://ai.ch/politik/landsgemeinde/landsgemeinden/26-april-2026",
+        "name_status": "own_cantonal_annual_organ_and_documents_supported",
+        "identity_limits": "Annual popular legislative organ, distinct from Grosser Rat and cantonal executive; no additional jurisdiction or permanent channel inferred."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_designated_Vimeo_event_and_yearly_proceeding_documents",
+        "provider_url": "https://vimeo.com/event/5007431/embed",
+        "provider_designation_confirmed": true,
+        "provider_event_date_unresolved": true,
+        "proceedings_leads": [
+          {
+            "date": "2026-04-26",
+            "kind": "own_annual_assembly_document_page_and_protocol",
+            "source_ids": [
+              "ai-year",
+              "ai-protocol"
+            ]
+          },
+          {
+            "date": "2025-04-27",
+            "kind": "own_livestream_announcement_with_recording_restriction",
+            "source_ids": [
+              "ai-2025-stream"
+            ]
+          }
+        ]
+      },
+      "programme_guide": {
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "status": "annual_HTML_pages_PDF_mandate_protocol_and_future_date",
+        "formats_confirmed": [
+          "HTML_annual_event_and_media_page",
+          "PDF_mandate",
+          "PDF_protocol"
+        ],
+        "machine_readable_feed_confirmed": false,
+        "next_annual_date_announced": "2027-04-25",
+        "freshness_limits": "No start/end times, explicit timezone or future broadcast commitment confirmed; annual date is not a linear guide."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "ai-impressum",
+            "ai-current-leaflet"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "ai-impressum",
+            "ai-current-leaflet"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "ai-impressum",
+            "ai-current-leaflet"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved_with_prior_stream_recording_restriction",
+          "finding": "No independent relay/rebroadcast grant established; the documented 2025 recording prohibition must be retained without converting it into an unsupported universal linking/embedding ban.",
+          "source_ids": [
+            "ai-2025-stream",
+            "ai-impressum"
+          ]
+        },
+        "copying_recording": {
+          "status": "explicit_recording_prohibition_in_2025_stream_notice_current_event_policy_unread",
+          "finding": "The March 2025 own notice expressly prohibits recording the announced April 2025 livestream. Preserve that prohibition; do not generalize a permission for 2026/2027 from current public visibility. The 2026 media leaflet text still needs inspection.",
+          "source_ids": [
+            "ai-2025-stream",
+            "ai-current-leaflet"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "ai-impressum",
+            "ai-current-leaflet"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "ai-impressum",
+            "ai-current-leaflet"
+          ]
+        }
+      },
+      "confirmed": [
+        "Own annual page identifies April 26, 2026 Landsgemeinde and dated official documents.",
+        "Current own media page directly designates a Vimeo event and announces April 25, 2027 as next assembly.",
+        "A dated 2025 own notice explicitly restricts livestream recording; current event conditions are not silently assumed."
+      ],
+      "unresolved_dimensions": [
+        "date_and_content_of_designated_Vimeo_event",
+        "decode_annual_legislative_business",
+        "2026_media_leaflet_text_and_current_per_use_rights",
+        "future_live_commitment_and_event_start_end_timezone",
+        "audible_tracks_sign_variants_and_accessibility",
+        "exact_identifiers",
+        "programme_data_licensing"
+      ],
+      "sources": [
+        {
+          "id": "ai-year",
+          "url": "https://ai.ch/politik/landsgemeinde/landsgemeinden/26-april-2026",
+          "title": "Landsgemeinde 26. April 2026 - Appenzell Innerrhoden",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_page_text_inspected",
+          "source_date": "2026-04-26",
+          "excerpt": "Protokoll Landsgemeinde 2026",
+          "notes": "Own yearly page links mandate, explanatory material and protocol dated July 31, 2026; not a current permanent-stream page."
+        },
+        {
+          "id": "ai-media",
+          "url": "https://ai.ch/medien/akkreditierung-landsgemeinde",
+          "title": "Akkreditierung Landsgemeinde - Appenzell Innerrhoden",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_and_ordinary_http_200_navigation_inspected",
+          "source_date": null,
+          "excerpt": "Die nächste Landsgemeinde findet am 25. April 2027 statt.",
+          "notes": "Own media page directly designates Vimeo event 5007431/embed. Future annual meeting date does not date the Vimeo event or guarantee a future stream."
+        },
+        {
+          "id": "ai-current-leaflet",
+          "url": "https://ai.ch/medien/akkreditierung-landsgemeinde/dokumente-landsgemeinde/merkblatt-landsgemeinde-medienschaffende.pdf/download",
+          "title": "Merkblatt Landsgemeinde Medienschaffende",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_PDF_retrieved_text_unread; web_reader_cache_miss",
+          "source_date": "2026-03-23",
+          "excerpt": "",
+          "notes": "PDF route and date are confirmed by the own media page; text extraction was not available in this bounded pass, so no 2026 policy wording is asserted."
+        },
+        {
+          "id": "ai-protocol",
+          "url": "https://ai.ch/politik/landsgemeinde/landsgemeinden/26-april-2026/dokumente/protokoll-landsgemeinde-2026.pdf/download",
+          "title": "Protokoll der Landsgemeinde 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_22_page_PDF_text_available",
+          "source_date": "2026-07-31",
+          "excerpt": "Protokoll Landsgemeinde 2026",
+          "notes": "Official 2026 proceeding record; no media decode or complete transcript fact-check claimed."
+        },
+        {
+          "id": "ai-2025-stream",
+          "url": "https://www.ai.ch/politik/standeskommission/mitteilungen/medienmitteilungen-2025/mitteilungen-2025/mitteilungen-4-maerz-2025-teil-1",
+          "title": "Mitteilungen der Standeskommission 4. März 2025: Liveübertragung Landsgemeinde",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_government_notice_text_inspected",
+          "source_date": "2025-03-04",
+          "excerpt": "Das Mitschneiden des Livestreams ist ausdrücklich verboten.",
+          "notes": "Notice announces April 27, 2025 official livestream and sign-language interpretation. Recording prohibition applies to that described stream; current 2026/2027 conditions require separate confirmation."
+        },
+        {
+          "id": "ai-impressum",
+          "url": "https://ai.ch/impressum",
+          "title": "Impressum - Appenzell Innerrhoden",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_page_text_inspected",
+          "source_date": null,
+          "excerpt": "Gesamtverantwortung für die Website",
+          "notes": "Names Ratskanzlei and content offices; no general audiovisual/programme-data grant established here."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "switzerland--glarus--organ--landsgemeinde-des-kantons-glarus",
+      "country": "Switzerland",
+      "name": "Landsgemeinde des Kantons Glarus",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Landsgemeinde des Kantons Glarus",
+        "institutional_route": "https://www.landsgemeinde.gl.ch/assembly/2026-05-03",
+        "name_status": "own_annual_organ_portal_designated_by_cantonal_government",
+        "identity_limits": "Annual popular legislative assembly; distinct from Landrat whose preparatory debate links also appear on the portal. Those Landrat recordings must not be counted as Landsgemeinde media."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_designated_YouTube_annual_recording_and_substantive_item_metadata",
+        "provider_url": "https://www.youtube.com/watch?v=YJOwa-M9Ytc",
+        "provider_designation_confirmed": true,
+        "proceedings_leads": [
+          {
+            "date": "2026-05-03",
+            "kind": "completed_annual_assembly_with_item_specific_lawmaking_and_speech_offsets",
+            "source_ids": [
+              "gl-assembly",
+              "gl-json",
+              "gl-item7"
+            ]
+          }
+        ],
+        "archive_scope": "Same May 3 annual recording under multiple agenda items; not multiple independently dated sittings or a permanent stream."
+      },
+      "programme_guide": {
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "status": "public_machine_readable_historical_assembly_JSON_confirmed",
+        "formats_confirmed": [
+          "HTML_annual_assembly_and_agenda_items",
+          "public_application_JSON",
+          "PDF_mandate_and_protocol",
+          "audio_download"
+        ],
+        "machine_readable_feed_confirmed": true,
+        "machine_format_scope": "Per-assembly historical structured data; not established as a future schedule feed.",
+        "freshness_observed": "JSON last_modified 2026-07-07T09:28:17.421199+00:00; completed assembly date May 3, 2026.",
+        "time_limits": "9:30 is announced entry/procession start. No confirmed broadcast end, explicit source timezone or linear-channel mapping."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "gl-impressum",
+            "gl-assembly"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "gl-impressum",
+            "gl-assembly"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "gl-impressum",
+            "gl-assembly"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "gl-impressum",
+            "gl-assembly"
+          ]
+        },
+        "copying_recording": {
+          "status": "on_site_capture_conditions_published_official_stream_copying_unresolved",
+          "finding": "Annual page allows on-site filming/photography without disturbing proceedings, with accreditation/access rules and a drone ban. This is not a grant to download or record the designated official YouTube stream.",
+          "source_ids": [
+            "gl-assembly"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No source-specific grant or prohibition for this use was established by the inspected evidence. Public availability and own-site provider designation do not establish permission.",
+          "source_ids": [
+            "gl-impressum",
+            "gl-assembly"
+          ]
+        },
+        "programme_data": {
+          "status": "public_JSON_explicitly_offered_specific_republication_licence_unresolved",
+          "finding": "Own Open Data page publicly offers raw JSON, but inspected JSON/imprint do not establish a specific licence for downstream transformed XMLTV or systematic extraction. Verify conditions before treating the label as clearance.",
+          "source_ids": [
+            "gl-data-index",
+            "gl-json",
+            "gl-impressum"
+          ]
+        }
+      },
+      "confirmed": [
+        "Cantonal government designates the separate annual Landsgemeinde portal.",
+        "Own portal designates a particular annual YouTube recording and substantive legislation/motions with named-speaker offsets.",
+        "Public Open Data JSON supplies dated completed-assembly and agenda metadata."
+      ],
+      "unresolved_dimensions": [
+        "decode_recording_and_observe_named_speech_offset",
+        "actual_audio_languages_and_accessibility",
+        "future_event_feed_and_schedule_end_timezone",
+        "exact_identifiers",
+        "specific_link_embed_direct_rebroadcast_media_rights",
+        "data_republication_licence_and_transformation_scope"
+      ],
+      "sources": [
+        {
+          "id": "gl-news",
+          "url": "https://www.gl.ch/public-newsroom.html/31/newsroomnews/14779/title/landsgemeinde-portal-landsgemeinde-ist-mit-noch-mehr-informationen-online",
+          "title": "Landsgemeinde-Portal: Landsgemeinde 2026 ist mit noch mehr Informationen online",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_news_text_inspected",
+          "source_date": "2026-03-24",
+          "excerpt": "Die Landsgemeinde 2026 umfasst 13 Traktanden",
+          "notes": "Cantonal government designates landsgemeinde.gl.ch and describes live coverage plus speech-linked archives; no blanket reuse licence stated."
+        },
+        {
+          "id": "gl-assembly",
+          "url": "https://www.landsgemeinde.gl.ch/assembly/2026-05-03",
+          "title": "Landsgemeinde vom 03. Mai 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_page_text_and_designated_iframe_inspected",
+          "source_date": "2026-05-03",
+          "excerpt": "Sie beginnt um 9.30 Uhr mit dem Einzug.",
+          "notes": "Own annual page supplies proceedings, mandate/protocol/audio and YouTube recording designation. It allows non-disruptive on-site photographing/filming and prohibits drones; that is distinct from copying the official stream."
+        },
+        {
+          "id": "gl-data-index",
+          "url": "https://www.landsgemeinde.gl.ch/assembly/2026-05-03/open-data",
+          "title": "Open Data - Landsgemeinde vom 03. Mai 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_page_and_public_JSON_link_inspected",
+          "source_date": null,
+          "excerpt": "Rohdaten",
+          "notes": "Own interface directly offers JSON. The label is not treated by itself as a specific reuse licence."
+        },
+        {
+          "id": "gl-json",
+          "url": "https://www.landsgemeinde.gl.ch/assembly/2026-05-03/json",
+          "title": "Public JSON - Landsgemeinde 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_and_ordinary_http_200_application_json_selected_fields_inspected",
+          "source_date": "2026-07-07",
+          "excerpt": "",
+          "notes": "Payload date=2026-05-03, state=completed, last_modified=2026-07-07T09:28:17.421199+00:00, 13 agenda_items, video_url and files. Item states, titles, resolutions and named speakers are available. No top-level licence field located; no raw HTML-valued fields copied."
+        },
+        {
+          "id": "gl-item7",
+          "url": "https://www.landsgemeinde.gl.ch/traktandum/2026-05-03/7",
+          "title": "Traktandum 7: Gesetz über die Strassenverkehrsabgaben",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_page_text_and_iframe_inspected",
+          "source_date": "2026-05-03",
+          "excerpt": "Gesetz über die Strassenverkehrsabgaben",
+          "notes": "Own page supplies named motions/speeches, including Remo Reithebuch at 3h13m15s; same designated YouTube recording YJOwa-M9Ytc. Page metadata does not certify actual decoded video at that offset."
+        },
+        {
+          "id": "gl-impressum",
+          "url": "https://www.landsgemeinde.gl.ch/topics/impressum",
+          "title": "Impressum - Landsgemeinde Glarus",
+          "checked_on": "2026-10-24",
+          "access_result": "official_web_reader_page_text_inspected",
+          "source_date": null,
+          "excerpt": "© 2024 Kanton Glarus",
+          "notes": "Names cantonal ownership and Seantis technical supplier; does not establish a blanket media/data licence."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "greece--mount-athos--extraordinary-twenty-member-synaxis",
+      "country": "Greece",
+      "name": "Extraordinary Twenty-Member Synaxis of Mount Athos / Έκτακτη Εικοσαμελής Σύναξη",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Extraordinary Twenty-Member Synaxis of Mount Athos / Έκτακτη Εικοσαμελής Σύναξη",
+        "institutional_route": null,
+        "name_status": "charter_organ_identity_supported_current_owned_route_unresolved",
+        "supporting_reference": "https://www.esphigmenou.gr/p/kxao.html",
+        "identity_limits": "Qualifying extraordinary twenty-member organ, distinct from the excluded ordinary Holy Community, ordinary monastery administration, religious services and double/triple synaxes."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "exact_organ_official_media_route_unresolved",
+        "provider_designation_confirmed": false,
+        "proceedings_leads": [],
+        "no_stream_exists_claim": false
+      },
+      "programme_guide": {
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "status": "charter_cadence_only_current_calendar_unresolved",
+        "formats_confirmed": [
+          "HTML_reproduction_of_charter"
+        ],
+        "machine_readable_feed_confirmed": false,
+        "cadence_scope": "Charter describes twice-yearly convening by formal Holy Community invitation; no conversion into current Gregorian broadcast dates is made.",
+        "freshness_limits": "No dated current agenda, actual sitting, programme times or own organ notice found in this bounded source search."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No exact-organ public viewing, schedule or rights policy was established; a constituent monastery’s charter reproduction is not a media or programme-data permission grant.",
+          "source_ids": [
+            "athos-charter"
+          ]
+        }
+      },
+      "confirmed": [
+        "The inspected charter explicitly identifies the extraordinary twenty-member legislative organ separately from ordinary representatives.",
+        "Exact current organ website, programme/calendar and media-provider designation remain unresolved; unrelated religious or Holy Community coverage was not substituted."
+      ],
+      "unresolved_dimensions": [
+        "current_owned_organ_route_and_preferred_current_name",
+        "current_activity_and_exact_identifiers",
+        "current_dated_sittings_and_official_provider",
+        "decoded_legislative_recordings_or_live",
+        "languages_audio_accessibility",
+        "agenda_machine_feed_and_timezone",
+        "each_separate_rights_use"
+      ],
+      "sources": [
+        {
+          "id": "athos-charter",
+          "url": "https://www.esphigmenou.gr/p/kxao.html",
+          "title": "Καταστατικός Χάρτης Αγίου Όρους - Ιερά Μονή Εσφιγμένου",
+          "checked_on": "2026-10-24",
+          "access_result": "monastery_primary_site_charter_text_inspected",
+          "source_date": null,
+          "excerpt": "Ἀνώτατον νομοθετικὸν καὶ δικαστικὸν σῶμα ἐν Ἁγίῳ Ὄρει εἶναι ἡ ἔκτακτος εἰκοσαμελὴς Σύναξις",
+          "notes": "Article 43 distinguishes the extraordinary twenty-member legislative organ from ordinary Holy Community representatives. A constituent monastery reproducing the charter is not an independently verified own organ website or current webcast."
+        },
+        {
+          "id": "athos-constitution",
+          "url": "https://www.hellenicparliament.gr/Vouli-ton-Ellinon/To-Politevma/Syntagma/article-109/",
+          "title": "Hellenic Parliament - constitutional status of Mount Athos",
+          "checked_on": "2026-10-24",
+          "access_result": "retained_inventory_primary_constitutional_reference_not_freshly_retrieved",
+          "source_date": null,
+          "excerpt": "",
+          "notes": "Retained institutional legal context only. No media designation or current meeting inferred from it."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    }
+  ]
+}

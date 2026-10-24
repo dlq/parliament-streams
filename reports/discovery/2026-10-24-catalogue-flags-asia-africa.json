@@ -1,0 +1,429 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "16 missing Asia/Africa catalogue flags plus the intentionally unresolved Jeonnam–Gwangju successor symbol. Source files and dispositions only; root integrates lookup and attribution.",
+  "method": "Cached current Commons metadata plus current official design/use sources. Bounded helper downloads with shared pacing/cooldown; no AI images or emblem-on-field flags fabricated. Copyright and separate official-symbol use conditions are distinct. Neutral holds are source/identity/use-scope gaps, not assertions that flags do not exist or are universally forbidden.",
+  "summary": {
+    "jurisdictions_reviewed": 17,
+    "assets_added": 6,
+    "neutral_retained": 11,
+    "svg_safety_passed": 6,
+    "doctype_only_sanitization": 0,
+    "xml_whitespace_normalized": 3,
+    "doctype_removal": 1
+  },
+  "records": [
+    {
+      "jurisdiction": "Hyogo",
+      "catalogue_id": "japan-hyogo-recordings",
+      "asset_filename": "hyogo.svg",
+      "outcome": "asset_added",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Hyogo_Prefecture.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Hyogo_Prefecture.svg",
+      "creator": "Guilherme Paula and Maanshen",
+      "licence": "Public domain",
+      "licence_url": null,
+      "licence_basis": "Official/simple prefectural-symbol depiction, Commons public-domain classification.",
+      "reviewed_on": "2026-10-24",
+      "jurisdiction_confirmation": "Own prefectural source distinguishes the 1964 blue/white prefectural flag from the separate 1921 emblem.",
+      "sources": [
+        {
+          "url": "https://web.pref.hyogo.lg.jp/ac02/kids_si.html",
+          "finding": "Own prefectural source distinguishes the 1964 blue/white prefectural flag from the separate 1921 emblem."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Hyogo_Prefecture.svg",
+          "finding": "Flag of Hyogo Prefecture, Japan"
+        }
+      ],
+      "modified_from_download": false,
+      "modifications": "none",
+      "bytes": 1592,
+      "sha256": "6a78a77b21e77f5873cc99e34401881eafe245c9211e91b1529e6947f3c71b91",
+      "source_download_sha256": "6a78a77b21e77f5873cc99e34401881eafe245c9211e91b1529e6947f3c71b91",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed; no DTD/entities, script/event handlers, foreign content, animation or external active href/source resources. Passive metadata URIs are not active resources."
+      }
+    },
+    {
+      "jurisdiction": "Fukui",
+      "catalogue_id": "japan-fukui-recordings",
+      "asset_filename": "fukui.svg",
+      "outcome": "asset_added",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Fukui_Prefecture.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Fukui_Prefecture.svg",
+      "creator": "Fukui Prefecture design; vector author not reliably identified in the metadata",
+      "licence": "Public domain",
+      "licence_url": null,
+      "licence_basis": "Official/simple prefectural-symbol depiction, Commons public-domain classification.",
+      "reviewed_on": "2026-10-24",
+      "jurisdiction_confirmation": "Current official regulation specifies an indigo field and white emblem when used as the prefectural flag. Commons marks this depiction public domain.",
+      "sources": [
+        {
+          "url": "https://www.pref.fukui.lg.jp/jyoureikisoku/testa/reiki_honbun/i201RG00000018.html",
+          "finding": "Current official regulation specifies an indigo field and white emblem when used as the prefectural flag. Commons marks this depiction public domain."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Fukui_Prefecture.svg",
+          "finding": "Flag of Fukui prefecture, Japan"
+        }
+      ],
+      "modified_from_download": true,
+      "modifications": "Normalized XML line endings and trailing line whitespace; artwork unchanged.",
+      "bytes": 700,
+      "sha256": "b5dce2a29e75ff5874f41bfade1a4fee82be56e15deb8f3208ee7b9476a66783",
+      "source_download_sha256": "c94815599a74e6dfc3123a45e1d6de0066bfbb32fecf362ece0317eef747778d",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed; no DTD/entities, script/event handlers, foreign content, animation or external active href/source resources. Passive metadata URIs are not active resources."
+      },
+      "source_sha256": "c94815599a74e6dfc3123a45e1d6de0066bfbb32fecf362ece0317eef747778d",
+      "whitespace_normalization": {
+        "before_sha256": "c94815599a74e6dfc3123a45e1d6de0066bfbb32fecf362ece0317eef747778d",
+        "after_sha256": "b5dce2a29e75ff5874f41bfade1a4fee82be56e15deb8f3208ee7b9476a66783",
+        "crlf_normalized": true,
+        "trailing_line_whitespace_normalized": true
+      }
+    },
+    {
+      "jurisdiction": "Penghu",
+      "catalogue_id": "taiwan-penghu-recordings",
+      "asset_filename": "penghu.svg",
+      "outcome": "asset_added",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Penghu_County.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Penghu_County.svg",
+      "creator": "Penghu County Government",
+      "licence": "Public domain",
+      "licence_url": null,
+      "licence_basis": "Official government document/symbol, Commons PD-ROC-exempt Article9 classification.",
+      "reviewed_on": "2026-10-24",
+      "jurisdiction_confirmation": "Own flag page has a yellow field, county emblem and red county name; indexed source text was readable but a subsequent direct web-reader open timed out.",
+      "sources": [
+        {
+          "url": "https://www.penghu.gov.tw/ch/home.jsp?id=10032",
+          "finding": "Own flag page has a yellow field, county emblem and red county name; indexed source text was readable but a subsequent direct web-reader open timed out."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Penghu_County.svg",
+          "finding": "Flag of Penghu County"
+        }
+      ],
+      "modified_from_download": false,
+      "modifications": "none",
+      "bytes": 26153,
+      "sha256": "48f460bd955ffc95c2e4281254b772ffa763f4f641a4f3196bbc42e58cb6594f",
+      "source_download_sha256": "48f460bd955ffc95c2e4281254b772ffa763f4f641a4f3196bbc42e58cb6594f",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed; no DTD/entities, script/event handlers, foreign content, animation or external active href/source resources. Passive metadata URIs are not active resources."
+      }
+    },
+    {
+      "jurisdiction": "Tainan",
+      "catalogue_id": "taiwan-tainan-recordings",
+      "asset_filename": "tainan.svg",
+      "outcome": "asset_added",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Tainan_City.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Tainan_City.svg",
+      "creator": "Tainan City Government",
+      "licence": "Public domain",
+      "licence_url": null,
+      "licence_basis": "Official government document/symbol, Commons PD-ROC-exempt Article9 classification.",
+      "reviewed_on": "2026-10-24",
+      "jurisdiction_confirmation": "Own current-linked standards specify white field, emblem/name right and roof motif left, respectful use and proportional scaling. The source SVG canvas has its published original dimensions; no artwork reconstruction or cropping.",
+      "sources": [
+        {
+          "url": "https://bca.tainan.gov.tw/News_Content.aspx?n=1048&s=6011",
+          "finding": "Own current-linked standards specify white field, emblem/name right and roof motif left, respectful use and proportional scaling. The source SVG canvas has its published original dimensions; no artwork reconstruction or cropping."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tainan_City.svg",
+          "finding": "Tainan City Flag"
+        }
+      ],
+      "modified_from_download": true,
+      "modifications": "Removed only legacy external SVG1.1 DTD declaration; artwork unchanged. Normalized XML line endings and trailing line whitespace; artwork unchanged.",
+      "bytes": 20681,
+      "sha256": "4d6ac2b3973c9e6a90237ef4092feeb9111a7959f94cd7310a3db9f795f151ff",
+      "source_download_sha256": "d7f78259cc1bbe5700292af5a140c5ac262d56a3bd6fc839da9155c88edcd884",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed; no DTD/entities, script/event handlers, foreign content, animation or external active href/source resources. Passive metadata URIs are not active resources."
+      },
+      "source_sha256": "d7f78259cc1bbe5700292af5a140c5ac262d56a3bd6fc839da9155c88edcd884",
+      "whitespace_normalization": {
+        "before_sha256": "597b43ea040c36c8dfe61314fc81f18abac36d59bdf51240fcd67829d7bfae38",
+        "after_sha256": "4d6ac2b3973c9e6a90237ef4092feeb9111a7959f94cd7310a3db9f795f151ff",
+        "crlf_normalized": true,
+        "trailing_line_whitespace_normalized": true
+      }
+    },
+    {
+      "jurisdiction": "Hsinchu City",
+      "catalogue_id": "taiwan-hsinchu-city-recordings",
+      "asset_filename": "hsinchu-city.svg",
+      "outcome": "asset_added",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Hsinchu_City.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Hsinchu_City.svg",
+      "creator": "Hsinchu City Government",
+      "licence": "Public domain",
+      "licence_url": null,
+      "licence_basis": "Official government document/symbol, Commons PD-ROC-exempt Article9 classification.",
+      "reviewed_on": "2026-10-24",
+      "jurisdiction_confirmation": "Commons identifies the city flag and attributes both source and author to Hsinchu City Government, not the separate Hsinchu County. No fresh independent legal-adoption or blanket noncopyright-use certification is claimed.",
+      "sources": [
+        {
+          "url": "https://www.hccg.gov.tw/ch/index.jsp",
+          "finding": "Commons identifies the city flag and attributes both source and author to Hsinchu City Government, not the separate Hsinchu County. No fresh independent legal-adoption or blanket noncopyright-use certification is claimed."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Hsinchu_City.svg",
+          "finding": "Flag of Hsinchu City"
+        }
+      ],
+      "modified_from_download": false,
+      "modifications": "none",
+      "bytes": 64161,
+      "sha256": "050443ed866920ee5333af1f9cbe198f85ad6db746084d1a0363280683433ce9",
+      "source_download_sha256": "050443ed866920ee5333af1f9cbe198f85ad6db746084d1a0363280683433ce9",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed; no DTD/entities, script/event handlers, foreign content, animation or external active href/source resources. Passive metadata URIs are not active resources."
+      }
+    },
+    {
+      "jurisdiction": "Lienchiang",
+      "catalogue_id": "taiwan-lienchiang-recordings",
+      "asset_filename": "lienchiang.svg",
+      "outcome": "asset_added",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Lienchiang_County.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Lienchiang_County.svg",
+      "creator": "Lienchiang County Government",
+      "licence": "Public domain",
+      "licence_url": null,
+      "licence_basis": "Official government document/symbol, Commons PD-ROC-exempt Article9 classification.",
+      "reviewed_on": "2026-10-24",
+      "jurisdiction_confirmation": "Commons identifies the ROC-administered county flag and government source/author; not mainland Lianjiang County or the separate county sports-meet flag. Current government redesign/adoption history is not certified.",
+      "sources": [
+        {
+          "url": "https://www.matsu.gov.tw/",
+          "finding": "Commons identifies the ROC-administered county flag and government source/author; not mainland Lianjiang County or the separate county sports-meet flag. Current government redesign/adoption history is not certified."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Lienchiang_County.svg",
+          "finding": "Flag of Lienchiang County, ROC in which 連江 (Lienchiang) is written right to left (traditional direction) inside the symbol and 連江縣 (Lienchiang County) is written left to right (modern direction) below the symbol."
+        }
+      ],
+      "modified_from_download": true,
+      "modifications": "Normalized XML line endings and trailing line whitespace; artwork unchanged.",
+      "bytes": 18057,
+      "sha256": "c22be054a6632673c728979381be845aacb41d66a7827c17b84c1448a8e31a26",
+      "source_download_sha256": "f9c5760ab9d502586c0225e97da5ba5dd878de7cdf4a0917427f326f0ba46c3e",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed; no DTD/entities, script/event handlers, foreign content, animation or external active href/source resources. Passive metadata URIs are not active resources."
+      },
+      "source_sha256": "f9c5760ab9d502586c0225e97da5ba5dd878de7cdf4a0917427f326f0ba46c3e",
+      "whitespace_normalization": {
+        "before_sha256": "f9c5760ab9d502586c0225e97da5ba5dd878de7cdf4a0917427f326f0ba46c3e",
+        "after_sha256": "c22be054a6632673c728979381be845aacb41d66a7827c17b84c1448a8e31a26",
+        "crlf_normalized": false,
+        "trailing_line_whitespace_normalized": true
+      }
+    },
+    {
+      "jurisdiction": "Aceh",
+      "catalogue_id": "indonesia-aceh-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "unresolved_current_flag_status",
+      "finding": "Official 19 August2026 report places the Aceh flag issue among matters still seeking central-government attention/solution. The Free Aceh Movement SVG is not installed as settled territorial identification.",
+      "source_page": "https://humas.acehprov.go.id/wagub-bersama-wamendagri-hadiri-pengukuhan-dpp-fkka-aceh/amp/",
+      "sources": [
+        {
+          "url": "https://humas.acehprov.go.id/wagub-bersama-wamendagri-hadiri-pengukuhan-dpp-fkka-aceh/amp/",
+          "finding": "Official 19 August2026 report places the Aceh flag issue among matters still seeking central-government attention/solution. The Free Aceh Movement SVG is not installed as settled territorial identification."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Central Kalimantan",
+      "catalogue_id": "indonesia-kalimantan-tengah-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "exact_flag_drawing_unresolved",
+      "finding": "Current government article explicitly mentions a provincial emblem/logo flag in use, but this bounded check did not match its actual field/construction to the Commons own-work drawing. This is not a finding of no provincial flag.",
+      "source_page": "https://setda.kalteng.go.id/index.php/publikasi/detail/gubernur-agustiar-sabran-saksikan-atraksi-terjun-payung-hut-ke-81-ri-di-kalteng",
+      "sources": [
+        {
+          "url": "https://setda.kalteng.go.id/index.php/publikasi/detail/gubernur-agustiar-sabran-saksikan-atraksi-terjun-payung-hut-ke-81-ri-di-kalteng",
+          "finding": "Current government article explicitly mentions a provincial emblem/logo flag in use, but this bounded check did not match its actual field/construction to the Commons own-work drawing. This is not a finding of no provincial flag."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Central Java",
+      "catalogue_id": "indonesia-jawa-tengah-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "emblem_background_not_flag_adoption",
+      "finding": "The specific law cited by Commons was read: Article13(2) specifies ivory backgrounds for enumerated emblem uses, rather than adopting the depicted rectangular flag; Article16 requires permission for other unlisted uses. Flag identity/use scope remains unresolved, not a blanket statement that informational flag depiction is illegal.",
+      "source_page": "https://jdih.jatengprov.go.id/downloads/produk_hukum/perda/perda_tahun_1984/perda_9_th_1984.pdf",
+      "sources": [
+        {
+          "url": "https://jdih.jatengprov.go.id/downloads/produk_hukum/perda/perda_tahun_1984/perda_9_th_1984.pdf",
+          "finding": "The specific law cited by Commons was read: Article13(2) specifies ivory backgrounds for enumerated emblem uses, rather than adopting the depicted rectangular flag; Article16 requires permission for other unlisted uses. Flag identity/use scope remains unresolved, not a blanket statement that informational flag depiction is illegal."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Yogyakarta",
+      "catalogue_id": "indonesia-di-yogyakarta-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "specific_flag_adoption_unresolved",
+      "finding": "The file links generic PP77/2007 on regional symbols rather than a specific provincial adoption/design instrument. Do not silently convert a licensed emblem on a field into a verified current territorial flag.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Yogyakarta.svg",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Yogyakarta.svg",
+          "finding": "The file links generic PP77/2007 on regional symbols rather than a specific provincial adoption/design instrument. Do not silently convert a licensed emblem on a field into a verified current territorial flag."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Tokushima",
+      "catalogue_id": "japan-tokushima-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "flag_vs_emblem_use_scope_unresolved",
+      "finding": "Official 26 January2026 answer to a flag/emblem question expressly limits its answer to the emblem: outside users need advance approval regardless of purpose. The FAQ includes website/textbook identification. Whether that separate rule covers this flag depiction remains unresolved; no blanket flag ban is asserted.",
+      "source_page": "https://www.pref.tokushima.lg.jp/opinion/7309986/",
+      "sources": [
+        {
+          "url": "https://www.pref.tokushima.lg.jp/opinion/7309986/",
+          "finding": "Official 26 January2026 answer to a flag/emblem question expressly limits its answer to the emblem: outside users need advance approval regardless of purpose. The FAQ includes website/textbook identification. Whether that separate rule covers this flag depiction remains unresolved; no blanket flag ban is asserted."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Iwate",
+      "catalogue_id": "japan-iwate-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "flag_vs_emblem_use_scope_unresolved",
+      "finding": "The own prefectural-symbol page requires external users to obtain approval for emblem use. Its application to informational depiction of the full flag remains unresolved; Commons public-domain status alone does not answer the separate use-scope question.",
+      "source_page": "https://www.pref.iwate.jp/kensei/profile/1000650.html",
+      "sources": [
+        {
+          "url": "https://www.pref.iwate.jp/kensei/profile/1000650.html",
+          "finding": "The own prefectural-symbol page requires external users to obtain approval for emblem use. Its application to informational depiction of the full flag remains unresolved; Commons public-domain status alone does not answer the separate use-scope question."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Fukushima",
+      "catalogue_id": "japan-fukushima-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "published_contact_request_unresolved",
+      "finding": "Own page confirms the prefectural flag design and asks outside bodies to contact the prefecture when using emblem/flag. It does not expressly state a blanket informational-use prohibition. Retained as a project clarification hold, not a legal ban; no outreach sent.",
+      "source_page": "https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kensyo-hata.html",
+      "sources": [
+        {
+          "url": "https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kensyo-hata.html",
+          "finding": "Own page confirms the prefectural flag design and asks outside bodies to contact the prefecture when using emblem/flag. It does not expressly state a blanket informational-use prohibition. Retained as a project clarification hold, not a legal ban; no outreach sent."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Northern Cape",
+      "catalogue_id": "south-africa-northern-cape-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "territorial_flag_not_verified",
+      "finding": "Government province material confirms the coat of arms. No adopted territorial flag construction was verified in this bounded check; a derivative coat-of-arms banner is not installed. No claim of universal flag absence.",
+      "source_page": "https://www.gcis.gov.za/sites/default/files/docs/Land-and-its-people.pdf",
+      "sources": [
+        {
+          "url": "https://www.gcis.gov.za/sites/default/files/docs/Land-and-its-people.pdf",
+          "finding": "Government province material confirms the coat of arms. No adopted territorial flag construction was verified in this bounded check; a derivative coat-of-arms banner is not installed. No claim of universal flag absence."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Western Cape",
+      "catalogue_id": "south-africa-western-cape-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "territorial_flag_not_verified",
+      "finding": "The current official constitutional source permits provincial symbols by legislation but does not itself adopt a flag drawing. General government branding/coat of arms is not sufficient to manufacture a territorial flag.",
+      "source_page": "https://www.wcpp.gov.za/sites/default/files/2023-09-10%20Constitution%20Booklet%20A6%20for%20Web.pdf",
+      "sources": [
+        {
+          "url": "https://www.wcpp.gov.za/sites/default/files/2023-09-10%20Constitution%20Booklet%20A6%20for%20Web.pdf",
+          "finding": "The current official constitutional source permits provincial symbols by legislation but does not itself adopt a flag drawing. General government branding/coat of arms is not sufficient to manufacture a territorial flag."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Free State",
+      "catalogue_id": "south-africa-free-state-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "territorial_flag_not_verified",
+      "finding": "Government material enumerates provincial coats of arms, including Free State. No current adopted flag drawing was verified in this bounded check; older homeland/Orange Free State flags are not substitutes.",
+      "source_page": "https://www.gov.za/sites/default/files/gcis_document/201501/artsandcultureannualreport.pdf",
+      "sources": [
+        {
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201501/artsandcultureannualreport.pdf",
+          "finding": "Government material enumerates provincial coats of arms, including Free State. No current adopted flag drawing was verified in this bounded check; older homeland/Orange Free State flags are not substitutes."
+        }
+      ],
+      "no_outreach_sent": true
+    },
+    {
+      "jurisdiction": "Jeonnam–Gwangju Integrated Special City",
+      "catalogue_id": "south-korea-jeonnam-gwangju-council-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "successor_flag_unverified",
+      "finding": "The existing catalogue and prior review identify the successor council at this route but leave its new territorial flag unverified. This flag pass retains that explicit gap and does not reuse predecessor flags; no new flag/design source is claimed.",
+      "source_page": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+      "sources": [
+        {
+          "url": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+          "finding": "The existing catalogue and prior review identify the successor council at this route but leave its new territorial flag unverified. This flag pass retains that explicit gap and does not reuse predecessor flags; no new flag/design source is claimed."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/health/2026-10-23-korean-merged-review-followup.json"
+    }
+  ]
+}

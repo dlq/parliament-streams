@@ -55,7 +55,7 @@
   const coverage = (locale) => allKeys.filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
   window.ParliamentStreamsIptvI18n = { coverage };
   const { supportedLocale } = window.ParliamentStreamsI18n;
-  const urls = ['stable-hls.m3u8', 'validated-hls.m3u8', 'epg.xml'].map((name) => `https://dlq.ca/parliament-streams/data/${name}`);
+  const urls = ['stable-hls.m3u', 'validated-hls.m3u', 'epg.xml'].map((name) => `https://dlq.ca/parliament-streams/data/${name}`);
   const escape = (text) => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
   function render() {
     const locale = supportedLocale(document.querySelector('#locale-select').value || new URLSearchParams(location.search).get('lang') || localStorage.getItem('parliament-streams-locale') || navigator.language);

@@ -1,0 +1,1780 @@
+{
+  "reviewed_on": "2026-10-24",
+  "title": "Czech regional assembly service review – all fourteen regional assemblies",
+  "scope": {
+    "country": "Czech Republic",
+    "records": 14,
+    "includes_prague": true,
+    "excludes": [
+      "national--cz-lc01",
+      "national--cz-uc01"
+    ],
+    "source_of_ids": "data/discovery/institutions.json",
+    "authority": "Eligibility inherited only from current inventory; this is a service-source review, not legal re-adjudication."
+  },
+  "methodology": [
+    "Historical eligible validation register used only as route pointers; every row has new 24 October source observations and explicit limits.",
+    "Official owned institutional pages and documents are distinguished from search-index text, provider self-designation, player shells, failed requests and actual decoded video.",
+    "Web reader can serve cached content; a fresh read attempt does not guarantee current origin content. Source differences and direct-HTTP conflicts are retained.",
+    "No result or access failure is not evidence of no stream. No access-control bypass, outreach, credential use or media download performed.",
+    "One bounded browser test of Moravia-Silesia archive decoded video; other samples are page evidence only.",
+    "Seven per-use rights remain separate; no model licence, institutional publication policy, public URL, website footer or embedded iframe is converted into a blanket AV grant.",
+    "Schedules are locally published clock/date strings. Future notices are planned; recording offsets/durations are not broadcast EPG timings. No timezone or stop time invented."
+  ],
+  "summary": {
+    "records_individually_reviewed": 14,
+    "fully_validated": 0,
+    "decoded_archive_samples": 1,
+    "rights_dimensions_per_record": 7,
+    "retained_source_observations": 68,
+    "all_current_live_services_certified": false,
+    "machine_readable_timed_epg_verified": false
+  },
+  "records": [
+    {
+      "id": "czech-republic--jihocesky-kraj",
+      "name": "Zastupitelstvo Jihočeského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.kraj-jihocesky.cz/cs/samosprava/zastupitelstvo-kraje",
+      "metadata": {
+        "status": "owned_assembly_page_read",
+        "confirmed": [
+          "Owned assembly page provides representatives, current 2024–2028 term, powers, 2026 meeting entries and planned late-2026 dates."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "limits": [
+          "Member-by-member metadata and broadcast languages not verified."
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "designated_live_provider_and_dated_meeting_page",
+        "provider": "Publicwire",
+        "official_entry": "https://www.kraj-jihocesky.cz/ku_usneseni/0?akce=zive_vysilani&id=116",
+        "provider_page": "https://www.publicwire.eu/stream-jihocesky/stream.php",
+        "sample": {
+          "meeting": "JEDN-Z-14/2026",
+          "meeting_date": "2026-09-17",
+          "published_start_local": "10:00",
+          "occurrence_evidence": "Meeting record has invitation, resolutions, minutes and voting sections; this pass read navigation, not the minutes content.",
+          "playback": "not_decoded"
+        },
+        "finding": "The regional announcement points to the meeting page, which embeds Publicwire. Provider fetch returned cache miss. The site chatbot MP4 is unrelated and excluded."
+      },
+      "epg": {
+        "status": "html_meeting_metadata_pdf_agenda_and_rss_lead",
+        "formats_observed": [
+          "HTML meeting lists",
+          "PDF invitation link",
+          "assembly-topic RSS link"
+        ],
+        "dates": [
+          "2026-09-17",
+          "2026-11-05",
+          "2026-12-17"
+        ],
+        "finding": "September announcement supplies 10:00 local start. November/December dates are planned, without verified broadcast times. RSS link was exposed but could not be fetched; no timed IPTV EPG feed verified.",
+        "unresolved": [
+          "RSS content/freshness",
+          "ICS/API/XMLTV availability",
+          "Timezone, end times and cancellations"
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Owned meeting page embeds Publicwire; that is source designation, not a third-party embedding grant."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. The selected owned pages visibly carry a CC0 1.0 footer; its applicability to externally served broadcasts and third-party material is not established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. The selected owned pages visibly carry a CC0 1.0 footer; its applicability to externally served broadcasts and third-party material is not established."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. The selected owned pages visibly carry a CC0 1.0 footer; its applicability to externally served broadcasts and third-party material is not established."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "CC0 footer is a promising website-content lead, but specific agenda/feed scope and third-party exceptions require review before automated republication."
+        }
+      },
+      "sources": [
+        {
+          "id": "jc-assembly",
+          "url": "https://www.kraj-jihocesky.cz/cs/samosprava/zastupitelstvo-kraje",
+          "title": "Zastupitelstvo kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read assembly page: current-year meeting records, representatives, powers and planned second-half 2026 dates."
+        },
+        {
+          "id": "jc-announcement",
+          "url": "https://www.kraj-jihocesky.cz/cs/zive-vysilani-zasedani-zastupitelstva-jihoceskeho-kraje-21",
+          "title": "Živé vysílání zasedání Zastupitelstva Jihočeského kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "17 September 2026 announcement gives 14th sitting at 10:00 and an official live link; CC0 footer observed."
+        },
+        {
+          "id": "jc-live",
+          "url": "https://www.kraj-jihocesky.cz/ku_usneseni/0?akce=zive_vysilani&id=116",
+          "title": "Usnesení – JEDN-Z-14/2026 – Živé audiovizuální vysílání",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read dated meeting page with two Publicwire iframes and agenda/minutes/audio navigation."
+        },
+        {
+          "id": "jc-provider",
+          "url": "https://www.publicwire.eu/stream-jihocesky/stream.php",
+          "title": "Publicwire live player linked by Jihočeský kraj",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_fetch_attempt",
+          "access": "cache_miss",
+          "observation": "Provider link followed; web reader returned cache miss; no playback result."
+        },
+        {
+          "id": "jc-agenda",
+          "url": "https://www.kraj-jihocesky.cz/ku_usneseni/0?akce=pozvanka&id=116",
+          "title": "Pozvánka včetně programu jednání",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Dated meeting page exposes invitation PDF; PDF content was not inspected."
+        },
+        {
+          "id": "jc-topic",
+          "url": "https://www.kraj-jihocesky.cz/cs/taxonomy/term/6644",
+          "title": "Zastupitelstvo Jihočeského kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Assembly-topic HTML lists dated live announcements and RSS subscription; RSS follow returned internal error."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "CC0 audiovisual scope and applicable provider terms unresolved."
+      ]
+    },
+    {
+      "id": "czech-republic--jihomoravsky-kraj",
+      "name": "Zastupitelstvo Jihomoravského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.jmk.cz/content/30017",
+      "metadata": {
+        "status": "official_index_corroborated_page_access_limited",
+        "confirmed": [
+          "Indexed official regional page identifies a 65-member assembly for 2024–2028 and links summons, minutes, resolutions, voting and recordings."
+        ],
+        "limits": [
+          "Direct page requests redirected to F5 session error; current page content not independently rendered."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_index_recording_live_links_provider_unresolved",
+        "provider": null,
+        "finding": "Official indexed assembly page exposes a recording section; indexed 10th sitting event advertises a direct chamber stream. Actual provider link and player could not be resolved through the session-error response.",
+        "sample": {
+          "meeting": "10. zasedání",
+          "scheduled_date": "2026-04-27",
+          "published_time_range_local": "8:30–14:00",
+          "evidence": "event announcement only; scheduled window is not actual broadcast duration",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "indexed_html_event_materials_lead",
+        "formats_observed": [
+          "indexed HTML event with date/time",
+          "summons/material links indexed"
+        ],
+        "finding": "Official event page lists April date and 8:30–14:00 window, summons, materials and live link; actual document/feed inspection remains blocked by F5 response. No XMLTV/ICS verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Domain-scoped licence/website-terms searches yielded unrelated geographical-data rules, not applicable assembly-media terms; session-error response prevents completing the owned-site review."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Domain-scoped licence/website-terms searches yielded unrelated geographical-data rules, not applicable assembly-media terms; session-error response prevents completing the owned-site review."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Domain-scoped licence/website-terms searches yielded unrelated geographical-data rules, not applicable assembly-media terms; session-error response prevents completing the owned-site review."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "jm-assembly",
+          "url": "https://www.jmk.cz/content/30017",
+          "title": "Zastupitelstvo Jihomoravského kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content_and_fetch",
+          "access": "index_content_then_f5_session_error",
+          "observation": "Official indexed content identifies assembly, term and recording/summons/minutes links; fetch redirects to my.logout.php3?errorcode=19."
+        },
+        {
+          "id": "jm-event",
+          "url": "https://www.jmk.cz/content/31372",
+          "title": "10. zasedání Zastupitelstva Jihomoravského kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content_and_fetch",
+          "access": "index_content_then_f5_session_error",
+          "observation": "Indexed event: 27 April 2026 8:30–14:00, Žerotínovo nám. 3, summons, materials and direct chamber-stream links. Fetch returns F5 session error."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Resolve public F5 session issue through ordinary navigation, then follow current recording/live and applicable terms links. No access-control bypass attempted.",
+        "Current provider and a substantive recording sample unresolved."
+      ]
+    },
+    {
+      "id": "czech-republic--karlovarsky-kraj",
+      "name": "Zastupitelstvo Karlovarského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.kr-karlovarsky.cz/karlovarsky-kraj/zastupitelstvo",
+      "metadata": {
+        "status": "owned_assembly_page_read",
+        "confirmed": [
+          "Assembly page supplies 2026 meeting dates, member list, resolutions, committees and rules links.",
+          "Page shows update 19 October 2026."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_designation_of_dated_recording_archive",
+        "provider": "bitest.videostream.sk (current links); Publicwire/YouTube (older links)",
+        "finding": "Owned recording archive updated 20 October 2026 designates 2026 recording links to bitest.videostream.sk. The latest linked session is 12th sitting on 19 October 2026. Following that provider link returned internal error; no decoded playback.",
+        "sample": {
+          "meeting": "12. jednání",
+          "meeting_date": "2026-10-19",
+          "evidence": "official archive recording label",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "html_dates_and_document_navigation",
+        "formats_observed": [
+          "HTML annual date list",
+          "resolutions and procedural PDF links"
+        ],
+        "finding": "2026 list includes 9 February, 20 April, 15 June, 14 September, 19 October, 7 December. December is planned; no start/end times, broadcast EPG, machine calendar or XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned mandatory-information page offers a model licence and says no licence agreements have yet been concluded; that is not a blanket recording grant."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned mandatory-information page offers a model licence and says no licence agreements have yet been concluded; that is not a blanket recording grant."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned mandatory-information page offers a model licence and says no licence agreements have yet been concluded; that is not a blanket recording grant."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "kv-assembly",
+          "url": "https://www.kr-karlovarsky.cz/karlovarsky-kraj/zastupitelstvo",
+          "title": "Zastupitelstvo",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read current annual meeting list and owned member/rules/archive navigation; update 19 October 2026."
+        },
+        {
+          "id": "kv-archive",
+          "url": "https://www.kr-karlovarsky.cz/karlovarsky-kraj/zastupitelstvo/archiv-zaznamu-zkk",
+          "title": "Archiv záznamů ZKK",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read latest 12th sitting 19 October 2026 recording link to bitest.videostream.sk, older provider transitions and update 20 October 2026; provider-follow failed."
+        },
+        {
+          "id": "kv-rights",
+          "url": "https://www.kr-karlovarsky.cz/krajsky-urad/povinne-informace/povinne-zverejnovane-informace",
+          "title": "Povinně zveřejňované informace",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Section 13 links model licence and states no licence agreements concluded. No applicable audiovisual/public rebroadcast grant observed."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Current live URL and latest provider playback remain unverified."
+      ]
+    },
+    {
+      "id": "czech-republic--kralovehradecky-kraj",
+      "name": "Zastupitelstvo Královéhradeckého kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.khk.cz/kraj/zastupitelstvo/videozaznamy-z-jednani-zastupitelstva",
+      "metadata": {
+        "status": "owned_current_assembly_service_page_read",
+        "confirmed": [
+          "Owned 2026 recording index and session page provide assembly identity and resolution crosslinks."
+        ],
+        "limits": [
+          "Member roster not individually checked."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_youtube_embed_with_agenda_index",
+        "provider": "YouTube",
+        "finding": "14th session page embeds YouTube and links each agenda item to a video offset; substantive topics include 2026 budget and transport. Exact underlying video ID was not retained from failed provider follow; decoded playback pending.",
+        "sample": {
+          "meeting": "14. zasedání",
+          "meeting_date": "2026-09-14",
+          "date_source": "official news announcement indexed",
+          "published_start_local": "13:00",
+          "published_end_local": "15:26",
+          "end_scope": "announcement says meeting ended; not independently measured playback duration",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "html_agenda_timestamps_pdf_programme",
+        "formats_observed": [
+          "HTML item/offset table",
+          "PDF proposed programme link",
+          "resolutions crosslink"
+        ],
+        "finding": "Archive has agenda titles and offsets through discussion at 2:08:21. September announcement publishes 13:00 start and end 15:26; direct news-page fetch timed out. Duplicate offsets are visible for some different items; do not assume each timestamp is a distinct verified segment. No XMLTV/ICS/API verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Owned session page embeds YouTube; permission for this project to embed and provider conditions still require review."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned section 13 describes model licences and says no exclusive licence granted; it does not clear the YouTube recording."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned section 13 describes model licences and says no exclusive licence granted; it does not clear the YouTube recording."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned section 13 describes model licences and says no exclusive licence granted; it does not clear the YouTube recording."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "kh-index",
+          "url": "https://www.khk.cz/kraj/zastupitelstvo/videozaznamy-z-jednani-zastupitelstva",
+          "title": "Videozáznamy z jednání zastupitelstva",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read current assembly recording listing, including 2026 sessions."
+        },
+        {
+          "id": "kh-recording",
+          "url": "https://www.khk.cz/kraj/zastupitelstvo/videozaznamy-z-jednani-zastupitelstva/videozaznam-z-14-zasedani-zastupitelstva-kralovehradeckeho-kraje",
+          "title": "VIDEOZÁZNAM z 14. zasedání Zastupitelstva Královéhradeckého kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read official YouTube embed, resolution crosslink and extensive item/offset table; provider follow returned internal error."
+        },
+        {
+          "id": "kh-announcement",
+          "url": "https://www.khk.cz/aktuality/sledujte-zasedani-zastupitelstva-kralovehradeckeho-kraje-v-zivem-prenosu-0",
+          "title": "Sledujte zasedání Zastupitelstva Královéhradeckého kraje v živém přenosu",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content_and_fetch",
+          "access": "index_content_then_timeout",
+          "observation": "Official index says 14 September 2026, 13:00 start, meeting ended 15:26, proposed programme PDF. Direct fetch timed out."
+        },
+        {
+          "id": "kh-rights",
+          "url": "https://www.khk.cz/urad/povinne-zverejnovane-informace/povinne-zverejnovane-informace-dle-vyhlasky/13-licencni-smlouvy",
+          "title": "13. LICENČNÍ SMLOUVY",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read section 13 on model information licences and absence of exclusive grants; no per-use recording grant."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Confirm exact YouTube ID, playback and licence scope; audit item-offset anomalies before parsing chapters."
+      ]
+    },
+    {
+      "id": "czech-republic--liberecky-kraj",
+      "name": "Zastupitelstvo Libereckého kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo",
+      "metadata": {
+        "status": "owned_assembly_page_read",
+        "confirmed": [
+          "Current owned assembly route has 2024–2028 representatives and links to proceedings and online broadcasts."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_dated_youtube_recording_archive",
+        "provider": "YouTube",
+        "finding": "Owned online-transmission page explicitly describes YouTube HTML5 playback and links dated recordings for 2026 through 29 September. Its message that no transmission is presently running is a point-in-time page statement, not a finding of no live service.",
+        "sample": {
+          "meeting_date": "2026-09-29",
+          "evidence": "owned archive label",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "dated_html_recordings_agenda_route_unresolved",
+        "formats_observed": [
+          "HTML dated recording list"
+        ],
+        "finding": "Eight 2026 archive dates read, including 29 September and 25 August; assembly hub is verified. A current proposed-agenda/calendar feed, precise broadcast times and XMLTV/ICS/API were not verified. Recording dates alone cannot supply a timed guide."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned section 13 exposes a model licence and says no exclusive licence granted. Pro média page is a press contact, not a media-reuse grant."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned section 13 exposes a model licence and says no exclusive licence granted. Pro média page is a press contact, not a media-reuse grant."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned section 13 exposes a model licence and says no exclusive licence granted. Pro média page is a press contact, not a media-reuse grant."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "lb-assembly",
+          "url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo",
+          "title": "Zastupitelstvo",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read owned assembly navigation and 2024–2028 member-list entry."
+        },
+        {
+          "id": "lb-recordings",
+          "url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva",
+          "title": "Online přenos zasedání zastupitelstva",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read dated YouTube recording archive through 29 September 2026; latest provider follow failed in web reader."
+        },
+        {
+          "id": "lb-rights",
+          "url": "https://www.kraj-lbc.cz/urad/informace-zverejnovane-podle-zakona-c-106-1999-sb/13-licencni-smlouvy",
+          "title": "13. Licenční smlouvy",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read model-licence link and no-exclusive-licence statement."
+        },
+        {
+          "id": "lb-media",
+          "url": "https://www.kraj-lbc.cz/urad/odbory/odbor-kancelare-hejtmana/oddeleni/oddeleni-tiskove-a-vnejsich-vztahu/pro-media",
+          "title": "Pro média",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read press contact information; no reuse conditions are supplied on this page."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Current agenda/calendar formats, exact latest YouTube ID and playback unresolved."
+      ]
+    },
+    {
+      "id": "czech-republic--moravskoslezsky-kraj",
+      "name": "Zastupitelstvo Moravskoslezského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+      "metadata": {
+        "status": "owned_current_assembly_proceedings_read",
+        "confirmed": [
+          "Current 2024–2028 archive identifies nine sessions with programmes, public materials, resolutions, minutes and video links."
+        ],
+        "limits": [
+          "Own regional domain msk.cz supersedes the historical domain pointer for this service observation."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "one_official_archive_sample_decoded",
+        "provider": "owned msk.cz video archive",
+        "finding": "Official 16 September 2026 page contains a native video source and links to the corresponding 9th-session minutes. Bounded headless Chromium playback actually decoded video. Text-reader fallback about unsupported browser is HTML fallback, not a playback failure.",
+        "sample": {
+          "meeting": "9. zasedání",
+          "meeting_date": "2026-09-16",
+          "page_url": "https://www.msk.cz/kraj/zastupitelstvo/zaznam.html?datum=2026-09-16",
+          "direct_source_url": "https://www.msk.cz/videoarchiv/zastupitelstvo_20260916.mp4",
+          "http_status": 200,
+          "decoded_playback_observed": true,
+          "after_seconds": 4.965323,
+          "width": 1280,
+          "height": 720,
+          "decoded_frames": 127,
+          "scope": "One archive sample on review date; no live reliability, full recording integrity, language or rights certification."
+        }
+      },
+      "epg": {
+        "status": "html_and_document_programmes_with_freshness_conflict",
+        "formats_observed": [
+          "HTML session index",
+          "programme/public-materials/minutes links",
+          "PDF next-meeting notice lead"
+        ],
+        "finding": "Archive and occurrence report give 16 September 2026, whereas an earlier official forthcoming-session announcement gives 15 September 2026 at 9:00. Preserve announcement versus actual-session distinction; use the newer occurrence record for archive identity. No XMLTV/ICS API or broadcast end verified.",
+        "conflicts": [
+          "Earlier official planned date 2026-09-15 versus recorded session 2026-09-16."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "One owned MP4 successfully decoded in browser. Public technical access does not establish this project’s direct-playback/rehosting licence."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned information page supplies a model licence; assembly rules provide for online broadcast and anonymized archive publication, not a third-party AV grant."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned information page supplies a model licence; assembly rules provide for online broadcast and anonymized archive publication, not a third-party AV grant."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned information page supplies a model licence; assembly rules provide for online broadcast and anonymized archive publication, not a third-party AV grant."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "ms-archive",
+          "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+          "title": "Výstupy z jednání zastupitelstva – volební období 2024–2028",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read dated 9th session and programme/materials/minutes/video crosslinks; privacy editing noted."
+        },
+        {
+          "id": "ms-video",
+          "url": "https://www.msk.cz/kraj/zastupitelstvo/zaznam.html?datum=2026-09-16",
+          "title": "Záznam zasedání zastupitelstva kraje konaného dne 16. září 2026",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read_and_browser_decoded_playback",
+          "access": "decoded_archive_sample",
+          "observation": "Official page read; public HTML source contains /videoarchiv/zastupitelstvo_20260916.mp4. Bounded browser: HTTP200, play resolved, 4.965323 seconds, 1280×720, 127 frames."
+        },
+        {
+          "id": "ms-occurred",
+          "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/zastupitelstvo-kraje-projednalo-na-svem-zasedani-dne-15--12--2025-predlozene-materialy-7082/",
+          "title": "Zastupitelstvo kraje projednalo na svém zasedání dne 16. 9. 2026 předložené materiály",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content",
+          "access": "indexed_content_read",
+          "observation": "Official indexed occurrence report updated 16 September 2026 identifies the sitting and says video is published after technical/privacy processing. URL slug retains an older date."
+        },
+        {
+          "id": "ms-planned",
+          "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/zastupitelstvo-kraje-projednalo-na-svem-zasedani-dne-17--3--2025-predlozene-materialy-7082/",
+          "title": "Nejbližší zasedání zastupitelstva kraje se uskuteční dne 15. 9. 2026",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content",
+          "access": "indexed_content_read",
+          "observation": "Official indexed announcement updated 26 June 2026 instead advertises 15 September at 9:00; agenda 10 days and materials three days before sitting."
+        },
+        {
+          "id": "ms-rules",
+          "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/jednaci-rad-zastupitelstva-kraje-a-vyboru-zastupitelstva-kraje-873/",
+          "title": "Jednací řád zastupitelstva kraje a výborů zastupitelstva kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content",
+          "access": "indexed_content_read",
+          "observation": "Official index quotes article 16: online audiovisual broadcast and anonymized publication within 15 days; no reuse licence inferred."
+        },
+        {
+          "id": "ms-rights",
+          "url": "https://www.msk.cz/urad/povinne_informace/povinne_informace.html",
+          "title": "Povinně zveřejňované informace",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read section 16 model-licence link; no audiovisual use-specific grant observed."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Resolve date mismatch before deriving a calendar; current live endpoint not tested."
+      ]
+    },
+    {
+      "id": "czech-republic--olomoucky-kraj",
+      "name": "Zastupitelstvo Olomouckého kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.olkraj.cz/zastupitelstvo",
+      "metadata": {
+        "status": "owned_current_assembly_page_read",
+        "confirmed": [
+          "Owned page identifies 55-member assembly, staff contacts, public-materials application and current September 2026 resolutions.",
+          "Current route is olkraj.cz rather than historical kr-olomoucky.cz pointer."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_designation_of_publicwire_recordings",
+        "provider": "Publicwire (cdn.publicwire.eu)",
+        "provider_page": "https://cdn.publicwire.eu/olomoucky/zok-2026-09-e90baa05.html",
+        "finding": "Owned 2024–2028 archive links eleven session recordings. Latest 21 September 2026 link opens a Publicwire player shell with no extracted content; live-link fetch returned cache miss. No decoded playback.",
+        "sample": {
+          "meeting": "11. zasedání",
+          "meeting_date": "2026-09-21",
+          "evidence": "owned archive and current resolutions",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "html_upcoming_date_public_materials_application",
+        "formats_observed": [
+          "HTML dates",
+          "PDF resolutions",
+          "public Předlohy application link"
+        ],
+        "finding": "Assembly page schedules 14 December 2026 and says agenda/materials will be released 1 December. Those are planned dates, not currently released guide entries. Public materials are designated at verejne-predlohy.olkraj.cz but application contents/API were not inspected. No XMLTV/ICS verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned licence page publishes exclusive/nonexclusive model contracts and states no exclusive licence has been provided. That does not establish a licence to these Publicwire recordings."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned licence page publishes exclusive/nonexclusive model contracts and states no exclusive licence has been provided. That does not establish a licence to these Publicwire recordings."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned licence page publishes exclusive/nonexclusive model contracts and states no exclusive licence has been provided. That does not establish a licence to these Publicwire recordings."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "ol-assembly",
+          "url": "https://www.olkraj.cz/zastupitelstvo",
+          "title": "Zastupitelstvo",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read 55-member assembly description, public Předlohy designation, September resolutions and upcoming 14 December date/materials release date."
+        },
+        {
+          "id": "ol-archive",
+          "url": "https://www.olkraj.cz/zastupitelstvo/archiv-online-prenosu-zasedani-zok-2024-2028",
+          "title": "Archiv online přenosů zasedání ZOK 2024–2028",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read eleven dated Publicwire archive links through 21 September 2026."
+        },
+        {
+          "id": "ol-player",
+          "url": "https://cdn.publicwire.eu/olomoucky/zok-2026-09-e90baa05.html",
+          "title": "Publicwire – Video archiv",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_player_shell_read",
+          "access": "player_shell_only",
+          "observation": "Officially linked September recording resolves to short player-shell text; video not decoded."
+        },
+        {
+          "id": "ol-live",
+          "url": "https://www.olkraj.cz/zastupitelstvo/online-prenos-zasedani-zok",
+          "title": "Online přenos zasedání ZOK",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_fetch_attempt",
+          "access": "cache_miss",
+          "observation": "Live navigation link followed; web reader returned cache miss."
+        },
+        {
+          "id": "ol-rights",
+          "url": "https://www.olkraj.cz/zakladni-informace-informace-podle-zakona-c-106-1999-sb/16-licencni-smlouvy",
+          "title": "16. Licenční smlouvy",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read model exclusive/nonexclusive licence links and no-exclusive-grant statement."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Předlohy application parsing and latest Publicwire playback remain open."
+      ]
+    },
+    {
+      "id": "czech-republic--pardubicky-kraj",
+      "name": "Zastupitelstvo Pardubického kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.pardubickykraj.cz/zastupitelstvo",
+      "metadata": {
+        "status": "owned_current_assembly_page_and_minutes_read",
+        "confirmed": [
+          "Owned assembly roster route and 2026 proceedings index read.",
+          "11th session record has public summons, minutes, votes and resolutions."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_minutes_confirm_stream_provider_unresolved",
+        "provider": null,
+        "finding": "Minutes of 22 September 2026 explicitly say the public sitting was simultaneously streamed on the regional website. Reviewed session page exposes documents, not a provider URL; homepage generic video section and null iframe do not identify this sitting. The city-of-Pardubice Publicwire service is a different institution and is excluded.",
+        "sample": {
+          "meeting": "11. řádné jednání",
+          "meeting_date": "2026-09-22",
+          "published_actual_meeting_start_local": "13:03",
+          "scope": "Minutes’ meeting start, not measured broadcast start.",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "html_meeting_records_pdf_schedule_agenda_minutes",
+        "formats_observed": [
+          "HTML meeting index",
+          "PDF annual timetable",
+          "PDF summons, minutes, votes, resolutions"
+        ],
+        "finding": "2026 timetable page and document read; September summons sets 22 September at 13:00, while minutes say meeting began 13:03. Timetable index also announces 2027 publication on 19 October 2026, but its target fetch failed. No machine-readable timed broadcast guide verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned mandatory-information section 13 links a model licence; no applicable audiovisual or programme-data reuse grant was established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned mandatory-information section 13 links a model licence; no applicable audiovisual or programme-data reuse grant was established."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned mandatory-information section 13 links a model licence; no applicable audiovisual or programme-data reuse grant was established."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "pa-assembly",
+          "url": "https://www.pardubickykraj.cz/zastupitelstvo",
+          "title": "Zastupitelstvo Pardubického kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read owned roster route with assembly and proceedings navigation; page includes broken anti-bot label text, not audit instructions."
+        },
+        {
+          "id": "pa-proceedings",
+          "url": "https://www.pardubickykraj.cz/jednani-zpk",
+          "title": "Jednání Zastupitelstva Pardubického kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read 2026 session index, annual timetable and 2027 timetable publication listing."
+        },
+        {
+          "id": "pa-session",
+          "url": "https://www.pardubickykraj.cz/jednani-zpk/133780/11-radne-jednani-zastupitelstva-pardubickeho-kraje",
+          "title": "11. řádné jednání Zastupitelstva Pardubického kraje (22.9.2026)",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read session page linking summons/programme, minutes, votes and resolutions PDFs."
+        },
+        {
+          "id": "pa-summons",
+          "url": "https://www.pardubickykraj.cz/viewDocument.aspx?document=83834",
+          "title": "Pozvánka na 11. řádné jednání Zastupitelstva Pardubického kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_pdf_read",
+          "access": "content_read",
+          "observation": "Read two-page official summons dated 7 September: meeting 22 September 2026 at 13:00; 21 proposed items."
+        },
+        {
+          "id": "pa-minutes",
+          "url": "https://www.pardubickykraj.cz/viewDocument.aspx?document=84026",
+          "title": "Zápis – 11. řádné jednání Zastupitelstva Pardubického kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_pdf_read",
+          "access": "content_read",
+          "observation": "Read minutes first page: 22 September 2026, actual opening 13:03 and simultaneous internet streaming on regional website.",
+          "excerpt": "současně probíhá i streamové internetové vysílání na stránkách Pardubického kraje"
+        },
+        {
+          "id": "pa-timetable",
+          "url": "https://www.pardubickykraj.cz/viewDocument.aspx?document=82043",
+          "title": "Harmonogram řádných jednání RPk a ZPk na rok 2026",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_pdf_read",
+          "access": "content_read",
+          "observation": "One-page official timetable PDF read; separate assembly and executive schedules must not be conflated."
+        },
+        {
+          "id": "pa-rights",
+          "url": "https://www.pardubickykraj.cz/povinne-informace",
+          "title": "Povinné informace",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read licence-template section 13; no specific licence issued to this project or blanket AV reuse grant observed."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Resolve regional designated player/archive and provider terms; do not substitute the municipal Pardubice feed."
+      ]
+    },
+    {
+      "id": "czech-republic--plzensky-kraj",
+      "name": "Zastupitelstvo Plzeňského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.plzensky-kraj.cz/zastupitele",
+      "metadata": {
+        "status": "owned_roster_and_service_page_read_with_access_discrepancy",
+        "confirmed": [
+          "Historical kr-plzensky.cz homepage redirects to current plzensky-kraj.cz.",
+          "Owned roster and chamber broadcast/archive landing pages read."
+        ],
+        "limits": [
+          "A separate direct HTTP inspection of the canonical archive landing URL returned 404 although web-reader content was available; recheck ordinary-browser routing before publication."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "designated_owned_live_archive_pages_sample_not_decoded",
+        "provider": "media2.plzensky-kraj.cz live; media.plzensky-kraj.cz recordings; api-old.plzensky-kraj.cz HTML indexes",
+        "finding": "Owned landing page updated 23 February 2026 embeds planned-transmission and archive indexes. Read general public archive includes 10th assembly on 15 June 2026. Dedicated assembly-filtered iframe timed out. Latest linked player fetch returned cache miss.",
+        "sample": {
+          "meeting": "10. jednání",
+          "meeting_date": "2026-06-15",
+          "player_page": "https://media.plzensky-kraj.cz/player.php?recording=579b746b-ab62-4f90-974e-f9b3fa2bafbb&rendition=9facf876-591e-426c-8f65-600ac39b98b8",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "html_export_schedule_lead_and_agenda_portal",
+        "formats_observed": [
+          "HTML archive export table",
+          "planned-transmission iframe",
+          "official resolutions/programme portal link"
+        ],
+        "finding": "Despite its api-old hostname, the inspected archive endpoint is an HTML table, not a verified JSON/XML API. Planned-transmission fetch missed cache; current event times and usneseni.kr-plzensky.cz programme parsing remain unverified. No XMLTV/ICS verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Owned site embeds its own media2/API pages; no third-party embedding grant verified."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned footer refers to information-access law, and procedural rules describe publication for informing the public; neither is an express third-party audiovisual licence."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned footer refers to information-access law, and procedural rules describe publication for informing the public; neither is an express third-party audiovisual licence."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned footer refers to information-access law, and procedural rules describe publication for informing the public; neither is an express third-party audiovisual licence."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "pl-home",
+          "url": "https://www.kr-plzensky.cz/",
+          "title": "Plzeňský kraj",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Observed redirect to plzensky-kraj.cz and official Online přenosy link."
+        },
+        {
+          "id": "pl-roster",
+          "url": "https://www.plzensky-kraj.cz/zastupitele",
+          "title": "Zastupitelé",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read owned representatives page; no member-by-member validation."
+        },
+        {
+          "id": "pl-media",
+          "url": "https://www.plzensky-kraj.cz/clanek/on-line-prenos-a-videoarchiv",
+          "title": "On-line přenos a videoarchiv",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read_and_direct_http_attempt",
+          "access": "reader_content_direct_http_404",
+          "observation": "Web-reader page updated 23 February 2026 designates media2 live, api-old planned/archive iframe indexes and resolutions/programme portal. Separate direct HTTP fetch returned 404."
+        },
+        {
+          "id": "pl-index",
+          "url": "https://api-old.plzensky-kraj.cz/export/videoarchiv.php?verejne=1&zpk=0",
+          "title": "Public video archive export",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read HTML dated archive with 15 June 2026 10th assembly and 13 April/9 February sessions; also contains non-assembly events."
+        },
+        {
+          "id": "pl-player",
+          "url": "https://media.plzensky-kraj.cz/player.php?recording=579b746b-ab62-4f90-974e-f9b3fa2bafbb&rendition=9facf876-591e-426c-8f65-600ac39b98b8",
+          "title": "10. jednání Zastupitelstva Plzeňského kraje – linked player",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_fetch_attempt",
+          "access": "cache_miss",
+          "observation": "Provider follow returned cache miss; player not decoded."
+        },
+        {
+          "id": "pl-rules",
+          "url": "https://www.plzensky-kraj.cz/jednaci-rad-zpk-a-vyboru-zpk",
+          "title": "Jednací řád ZPK a výborů ZPK",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content",
+          "access": "indexed_content_read",
+          "observation": "Official index describes sound/possible video recording published on regional portal for public information. This is publication policy, not a reuse grant."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Resolve reader/direct-HTTP route discrepancy and assembly-only index; check applicable published media terms."
+      ]
+    },
+    {
+      "id": "czech-republic--praha",
+      "name": "Zastupitelstvo hlavního města Prahy",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://zastupitelstvo.praha.eu/",
+      "metadata": {
+        "status": "owned_assembly_document_portal_read_main_site_access_limited",
+        "confirmed": [
+          "Owned Magistrát portal identifies public assembly/committee materials and approved-resolution archives.",
+          "Official indexed main assembly page identifies body and 65 seats, but its displayed 2022–2026 term is historical."
+        ],
+        "limits": [
+          "Main www.praha.eu assembly page returned 502; non-www variant timed out. Post-October-2026 roster/term freshness not confirmed. Historical praha-mesto.cz pointer was not reused as current ownership evidence."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_index_live_navigation_provider_unresolved",
+        "provider": null,
+        "finding": "Official indexed main assembly page and sitemap advertise online proceedings/direct broadcast. Actual player/provider and a current recording sample could not be reached through the failing main site. Document portal is accessible and separately confirmed; no media claim is inferred from documents alone.",
+        "sample": {
+          "meeting": "36. zasedání",
+          "meeting_date": "2026-09-10",
+          "evidence": "official indexed public agenda marks session completed; no recording inspected",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "owned_public_document_portal_indexed_completed_agenda",
+        "formats_observed": [
+          "HTML ISM OBIS portal",
+          "indexed DOC agenda",
+          "indexed PDF materials"
+        ],
+        "finding": "Official index lists 36th assembly on 10 September 2026, completed status and DOC public agenda/PDF materials. Direct deep-link fetch loops, while portal homepage reads successfully. Assembly and executive/committee lists are separate and must be filtered. No usable timed feed/API/ICS/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Official HMP licence template is a blank, selectable contract under information-access law; it sets no licence for a particular recording or this project."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Official HMP licence template is a blank, selectable contract under information-access law; it sets no licence for a particular recording or this project."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Official HMP licence template is a blank, selectable contract under information-access law; it sets no licence for a particular recording or this project."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "pr-portal",
+          "url": "https://zastupitelstvo.praha.eu/",
+          "title": "INA Internetový portál ISM OBIS – rozcestník",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read owned Magistrát portal designating public assembly/committee materials and approved resolutions."
+        },
+        {
+          "id": "pr-main",
+          "url": "https://www.praha.eu/web/praha/zastupitelstvo",
+          "title": "Zastupitelstvo hlavního města Prahy",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content_and_fetch",
+          "access": "historical_index_content_main_page_502",
+          "observation": "Official indexed main page advertises online assembly and identifies body; extracted term/sample are 2022–2026/June 2025. Direct main fetch returned 502 and non-www timed out."
+        },
+        {
+          "id": "pr-sitemap",
+          "url": "https://praha.eu/sitemap?p_l_back_url=%2Fweb%2Fpraha%2Fvyhledavani%3Fq%3Dtsk%26delta%3D8%26start%3D2292",
+          "title": "Sitemap – Praha – MHMP",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content",
+          "access": "indexed_navigation_only",
+          "observation": "Official index has direct-broadcast navigation. Current direct sitemap fetch also failed; provider remains unresolved."
+        },
+        {
+          "id": "pr-agenda",
+          "url": "https://zastupitelstvo.praha.eu/ina/tedprgjed.aspx?par=126164223231226187177164241231226187182174164238231226187175164235231226187182175164231226187178183177174177",
+          "title": "TED – Podklady a programy jednání /ISM OBIS/",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content_and_fetch",
+          "access": "indexed_content_then_redirect_loop",
+          "observation": "Official indexed detail gives 36th assembly, 10 September 2026, completed status, DOC public agenda and PDF materials; direct fetch encountered redirect loop."
+        },
+        {
+          "id": "pr-rights",
+          "url": "https://bezpecnapraha.praha.eu/documents/d/praha/vzor-licencni-smlouva-106-1999-pdf",
+          "title": "LICENČNÍ (PODLICENČNÍ) SMLOUVA – vzor pro HMP/MHMP",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_pdf_read",
+          "access": "content_read",
+          "observation": "Read official five-page blank template with selectable use, scope and fees; sublicensing requires prior written consent under the model. No completed licence inferred."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Resolve current main-site player/provider and post-election membership metadata through ordinary public access."
+      ]
+    },
+    {
+      "id": "czech-republic--stredocesky-kraj",
+      "name": "Zastupitelstvo Středočeského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://stredoceskykraj.cz/web/urad/zastupitelstvo",
+      "metadata": {
+        "status": "owned_current_assembly_page_read",
+        "confirmed": [
+          "Owned assembly page identifies 65 members, 2024–2028 term, committees, programme/materials/minutes and live/archive headings.",
+          "Mandatory-information page independently designates stredoceskykraj.cz as regional website."
+        ],
+        "limits": [
+          "Member roster not individually checked. Public source’s election-date wording should be checked before copying into catalogue metadata."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "owned_service_headings_provider_linkage_unresolved",
+        "provider": null,
+        "provider_candidate": "Publicwire",
+        "candidate_page": "https://www.publicwire.eu/regions/stredocesky/stream/stream-full.php",
+        "finding": "Owned page advertises direct broadcast and recordings, but these headings did not expose URLs in the text extraction. Publicwire’s own indexed page identifies a Central Bohemia stream, but an actual current owned outgoing link to it remains unverified. Do not promote it to confirmed official provider on that evidence alone.",
+        "sample": {
+          "meeting_date": null,
+          "playback": "not_decoded",
+          "finding": "No dated archive sample established in this pass."
+        }
+      },
+      "epg": {
+        "status": "owned_html_planned_meeting",
+        "formats_observed": [
+          "HTML planned date and start",
+          "programme/materials navigation headings"
+        ],
+        "finding": "Official timetable page lists 30 November 2026 from 10:00 in the large assembly hall. This is a future meeting notice, not an observed broadcast. No verified end, timezone field, downloadable calendar, API or XMLTV."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned mandatory-information page links model licences/exclusive-licence sections. Both follow-up links failed in the web reader; applicable media conditions remain unresolved."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned mandatory-information page links model licences/exclusive-licence sections. Both follow-up links failed in the web reader; applicable media conditions remain unresolved."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned mandatory-information page links model licences/exclusive-licence sections. Both follow-up links failed in the web reader; applicable media conditions remain unresolved."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "st-assembly",
+          "url": "https://stredoceskykraj.cz/web/urad/zastupitelstvo",
+          "title": "Zastupitelstvo – Webový portál Středočeského kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read body/term/65-seat description and service headings; text extraction omits live/archive URLs."
+        },
+        {
+          "id": "st-calendar",
+          "url": "https://stredoceskykraj.cz/web/urad/terminy-zasedani-zastupitelstva",
+          "title": "Termíny zasedání",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read planned 30 November 2026 meeting from 10:00 in large assembly hall."
+        },
+        {
+          "id": "st-provider-lead",
+          "url": "https://www.publicwire.eu/regions/stredocesky/stream/stream-full.php",
+          "title": "Středočeský kraj – Přímý přenos z jednání Zastupitelstva Středočeského kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_search_index_content",
+          "access": "provider_index_lead_only",
+          "observation": "Provider-owned indexed page names Central Bohemia; not corroborated by a resolved current institutional outgoing link."
+        },
+        {
+          "id": "st-rights",
+          "url": "https://stredoceskykraj.cz/web/urad/povinne-informace",
+          "title": "Povinné informace",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read current regional website designation and model/exclusive-licence navigation. Licence child-link follows returned internal errors."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Resolve rendered live/archive URLs, current dated sample and source-specific terms; provider lead remains a lead."
+      ]
+    },
+    {
+      "id": "czech-republic--ustecky-kraj",
+      "name": "Zastupitelstvo Ústeckého kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.kr-ustecky.cz/zastupitelstvo-kraje",
+      "metadata": {
+        "status": "owned_current_assembly_page_read",
+        "confirmed": [
+          "Current redesigned regional site identifies 55-member 2024 assembly and links public materials, schedules and owned video archive.",
+          "Historical /os-7895 route now 404; current /zastupitelstvo-kraje resolves."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "owned_dated_recording_page_iframe_not_decoded",
+        "provider": "videoarchiv.kr-ustecky.cz (owned archive; iframe implementation not further validated)",
+        "finding": "Official assembly page designates owned video archive. Read 14th-session page describes a recording of the 22 June 2026 sitting and exposes an iframe. Search index has a newer 15th-session entry for 7 September, while reader returned an older 14-entry snapshot. Neither playback nor completeness of latest archive view is certified.",
+        "sample": {
+          "meeting": "14. Zastupitelstvo ÚK",
+          "meeting_date": "2026-06-22",
+          "page_url": "https://videoarchiv.kr-ustecky.cz/vvvz/video/65-14-zastupitelstvo-uk-22-6-2026",
+          "published_duration": "03:42:39 (archive label only)",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "owned_schedule_materials_navigation_freshness_limits",
+        "formats_observed": [
+          "HTML archive dates/durations",
+          "public materials link",
+          "HTML upcoming-session announcement lead"
+        ],
+        "finding": "Main owned homepage advertises 16th assembly on 2 November 2026; its notice fetch timed out. Schedule/resolutions link follow failed. Public materials are separately designated from a password-protected route; only public route is a candidate and neither restricted access nor credentials were used. No XMLTV/ICS verified.",
+        "conflicts": [
+          "Reader archive snapshot ends June 2026; official search index contains September 2026 entry. Do not label June as latest available recording."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Owned recording page has iframe; external embed permission and actual iframe/provider conditions remain unverified."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Current mandatory-information page links model licences and says exclusive licences were not provided. Copyright footer alone and own archive iframe do not establish external AV rights."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Current mandatory-information page links model licences and says exclusive licences were not provided. Copyright footer alone and own archive iframe do not establish external AV rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Current mandatory-information page links model licences and says exclusive licences were not provided. Copyright footer alone and own archive iframe do not establish external AV rights."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "us-assembly",
+          "url": "https://www.kr-ustecky.cz/zastupitelstvo-kraje",
+          "title": "Zastupitelstvo kraje",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read current owned 55-member assembly page, public/restricted materials distinction and owned videoarchive link."
+        },
+        {
+          "id": "us-index",
+          "url": "https://videoarchiv.kr-ustecky.cz/videoarchiv/vii-volebni-obdobi",
+          "title": "ZUK – VII. volební období 2024–2028",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read_and_search_index",
+          "access": "reader_index_freshness_difference",
+          "observation": "Reader returned 14-entry June snapshot; official search index separately shows 15th sitting on 7 September 2026 (02:00:59 label)."
+        },
+        {
+          "id": "us-recording",
+          "url": "https://videoarchiv.kr-ustecky.cz/vvvz/video/65-14-zastupitelstvo-uk-22-6-2026",
+          "title": "14. Zastupitelstvo ÚK 22.6.2026",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read dated recording description and iframe. Duration 03:42:39 comes from archive label; playback untested."
+        },
+        {
+          "id": "us-next",
+          "url": "https://www.kr-ustecky.cz/",
+          "title": "KÚ Ústecký kraj – Oficiální stránky",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Owned homepage read and advertises 16th sitting on 2 November 2026; linked notice fetch timed out."
+        },
+        {
+          "id": "us-rights",
+          "url": "https://www.kr-ustecky.cz/povinne-zverejnovane-informace",
+          "title": "Povinně zveřejňované informace",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read current section 13 model licence link and no-exclusive-licences statement; no per-use audiovisual grant observed."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Reconcile cached/indexed archive freshness, inspect latest recording iframe/provider and fetch public agenda/notice."
+      ]
+    },
+    {
+      "id": "czech-republic--vysocina",
+      "name": "Zastupitelstvo Kraje Vysočina",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.kr-vysocina.cz/",
+      "metadata": {
+        "status": "owned_region_and_assembly_service_route_read",
+        "confirmed": [
+          "Owned homepage and Media section designate assembly recordings and regional contacts.",
+          "Owned mandatory-information page explains current legal name Kraj Vysočina, replacing inventory shorthand Vysočina."
+        ],
+        "limits": [
+          "Assembly-specific Samospráva navigation failed in reader; current roster and 2026 agenda metadata not verified."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_youtube_playlist_and_older_dated_recording_links",
+        "provider": "YouTube plus extranet.kr-vysocina.cz item-indexed recordings",
+        "provider_page": "https://www.youtube.com/playlist?list=PLm5hkyDPkAtAWIyXhfL0ydDgJyZ9ltmIT",
+        "finding": "Owned homepage links assembly playlist; owned recording page provides uncut item-indexed extranet recordings and YouTube versions. Returned recording-page snapshot lists six 2025 sittings; selected sixth sitting occurred 10 November 2025 and entry publication is 3 December 2025. Playlist loads as short shell; current 2026 archive contents and decoded playback unresolved.",
+        "sample": {
+          "meeting": "6/2025",
+          "meeting_date": "2025-11-10",
+          "entry_publication_date": "2025-12-03",
+          "scope": "Publication date is not sitting date.",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "historical_dated_archive_current_agenda_gap",
+        "formats_observed": [
+          "HTML recording dates and descriptions",
+          "extranet per-item indexed recording links",
+          "generic calendar navigation"
+        ],
+        "finding": "2025 archive distinguishes meeting and upload dates. Generic homepage events calendar is not an assembly programme feed; no current 2026 assembly timetable or timed EPG was established by the selected navigation/search. No absence claim follows from that gap. No ICS/API/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No express third-party embedding permission established in the reviewed sources."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned mandatory-information page section 13 links a model licence. A failed newer navigation route and the available model index provide no blanket AV or programme-data licence."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned mandatory-information page section 13 links a model licence. A failed newer navigation route and the available model index provide no blanket AV or programme-data licence."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned mandatory-information page section 13 links a model licence. A failed newer navigation route and the available model index provide no blanket AV or programme-data licence."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "vy-home",
+          "url": "https://www.kr-vysocina.cz/",
+          "title": "Kraj Vysočina – Titulní stránka",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read regional contacts/current news and designated assembly YouTube playlist category."
+        },
+        {
+          "id": "vy-media",
+          "url": "https://www.kr-vysocina.cz/media/ms-122603/p1=122603",
+          "title": "Média",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read owned Media page designating assembly recording archive and regional videochannel."
+        },
+        {
+          "id": "vy-archive",
+          "url": "https://www.kr-vysocina.cz/audio-a-video-zaznamy-ze-zasedani-zastupitelstva/ds-305142/zanorit=1&p1=122608",
+          "title": "Audio a video záznamy ze zasedání zastupitelstva",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read YouTube and uncut item-indexed extranet links; sixth 2025 sitting 10 November, entry dated 3 December. Separate direct HTTP inspection reset connection."
+        },
+        {
+          "id": "vy-playlist",
+          "url": "https://www.youtube.com/playlist?list=PLm5hkyDPkAtAWIyXhfL0ydDgJyZ9ltmIT",
+          "title": "Zasedání Zastupitelstva Kraje Vysočina – YouTube",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_player_shell_read",
+          "access": "playlist_shell_only",
+          "observation": "Institutionally designated playlist fetch yielded short shell; its current video inventory/playback not verified."
+        },
+        {
+          "id": "vy-rights",
+          "url": "https://www.kr-vysocina.cz/povinne-zverejnovane-informace/ms-11",
+          "title": "Povinně zveřejňované informace",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read current legal-name history and section 13 model-licence DOC link. No applicable specific audiovisual licence established."
+        },
+        {
+          "id": "vy-route-limit",
+          "url": "https://www.kr-vysocina.cz/samosprava/ms-122549/p1=122549",
+          "title": "Samospráva – linked route",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_fetch_attempt",
+          "access": "cache_miss",
+          "observation": "Owned KRAJ navigation route followed; web reader returned cache miss."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Refresh the designated playlist and current assembly timetable/roster; 2025 sample is explicitly historical."
+      ]
+    },
+    {
+      "id": "czech-republic--zlinsky-kraj",
+      "name": "Zastupitelstvo Zlínského kraje",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://zlinskykraj.cz/zastupitelstvo",
+      "metadata": {
+        "status": "owned_assembly_and_current_recordings_read",
+        "confirmed": [
+          "Owned assembly route identifies 45-member body, committee/materials/programme links and live/archive services.",
+          "Archive updated 15 October 2026 lists 12th sitting on 12 October 2026."
+        ],
+        "limits": [
+          "Assembly overview update is June 2023; current individual membership not revalidated from this page."
+        ],
+        "observed_ui_languages": [
+          "cs"
+        ],
+        "broadcast_languages": "not_comprehensively_verified"
+      },
+      "official_media": {
+        "status": "official_youtube_archives_and_publicwire_live_designation",
+        "provider": "YouTube archives; Publicwire live",
+        "finding": "Owned assembly page designates Publicwire live and presentation links, expressly active only during sittings. Recording page embeds twelve numbered sittings through 12 October 2026; selected latest embed ID extracted from public page is LN6mFAg-Juo. No decoded playback here.",
+        "sample": {
+          "meeting": "12. zasedání",
+          "meeting_date": "2026-10-12",
+          "player_page": "https://www.youtube.com/embed/LN6mFAg-Juo",
+          "evidence": "owned dated archive and iframe markup",
+          "playback": "not_decoded"
+        }
+      },
+      "epg": {
+        "status": "pdf_timetable_and_programme_navigation",
+        "formats_observed": [
+          "HTML agenda/programme links",
+          "PDF proposed annual dates/material deadlines",
+          "HTML archive dates"
+        ],
+        "finding": "Read proposed 2026 timetable valid from 12 October 2026: 12th sitting 12 October, 13th planned 7 December; material deadlines and dispatch columns are administrative dates, not broadcasts. No start/end times, machine calendar/API/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "public_reference_identified_permission_not_expressly_reviewed",
+          "finding": "An official institutional reference can be retained for catalogue review; this is not an express hyperlink licence."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Owned pages embed YouTube and link Publicwire; third-party embedding conditions remain unresolved."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No direct-player permission or decoded playback established in this pass."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable express third-party rebroadcast grant established. Owned recording policy describes privacy anonymization by deleting audio/image portions. This authorizes the institution’s publication workflow, not external editing or redistribution; licence-section child fetch failed."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing/publication does not establish permission to copy or record the audiovisual material. Owned recording policy describes privacy anonymization by deleting audio/image portions. This authorizes the institution’s publication workflow, not external editing or redistribution; licence-section child fetch failed."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing, redistribution or commercial-use grant established. Owned recording policy describes privacy anonymization by deleting audio/image portions. This authorizes the institution’s publication workflow, not external editing or redistribution; licence-section child fetch failed."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Publication of agenda facts is confirmed where described; no applicable programme-data licence established."
+        }
+      },
+      "sources": [
+        {
+          "id": "zl-assembly",
+          "url": "https://zlinskykraj.cz/zastupitelstvo",
+          "title": "Zastupitelstvo",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read 45-member body description and Publicwire live/presentation designation, active only at sitting times. Overview update June 2023."
+        },
+        {
+          "id": "zl-recordings",
+          "url": "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva",
+          "title": "Záznam jednání zastupitelstva",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read privacy/anonymization policy and dated recordings through 12 October 2026, update 15 October. Public iframe markup includes latest LN6mFAg-Juo."
+        },
+        {
+          "id": "zl-dates",
+          "url": "https://zlinskykraj.cz/terminy-zasedani",
+          "title": "Termíny zasedání",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read owned annual timetable download links."
+        },
+        {
+          "id": "zl-timetable",
+          "url": "https://zlinskykraj.cz/file/6accbfdebc21083590081db8",
+          "title": "Návrh termínů zasedání Zastupitelstva Zlínského kraje na rok 2026",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_pdf_read",
+          "access": "content_read",
+          "observation": "Read PDF valid from 12 October 2026, with sitting dates, material deadline and dispatch columns; December 13th sitting planned 7 December."
+        },
+        {
+          "id": "zl-rights",
+          "url": "https://zlinskykraj.cz/povinne-informace",
+          "title": "Povinné informace dle zákona č. 106/1999 sb.",
+          "accessed_on": "2026-10-24",
+          "evidence_level": "web_page_read",
+          "access": "content_read",
+          "observation": "Read section 13 licence navigation; child-page follow returned internal error. No specific audiovisual grant identified."
+        }
+      ],
+      "unresolved": [
+        "Full metadata, broadcast-language and caption/accessibility coverage remain unverified.",
+        "Committee-room coverage is not comprehensively reviewed.",
+        "A schedule or recording page does not certify reliable current live service or all per-use rights.",
+        "Verify exact Publicwire target, selected YouTube playback and applicable provider/assembly per-use terms."
+      ]
+    }
+  ]
+}

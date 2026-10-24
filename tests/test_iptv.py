@@ -120,7 +120,7 @@ class IPTVTests(unittest.TestCase):
                 ),
                 0,
             )
-            stable = (path / "stable-hls.m3u8").read_text()
+            stable = (path / "stable-hls.m3u").read_text()
             self.assertIn('url-tvg="https://example.org/epg.xml"', stable)
             all_ids = {c.attrib["id"] for c in ET.parse(path / "epg.xml").findall("channel")}
             self.assertTrue(
@@ -129,7 +129,10 @@ class IPTVTests(unittest.TestCase):
                     for c in hls_channels(load_catalogue(ROOT / "data/channels.json"))
                 )
             )
-            self.assertTrue((path / "validated-hls.m3u8").exists())
+            for name in ("stable-hls", "validated-hls"):
+                preferred = (path / f"{name}.m3u").read_bytes()
+                self.assertTrue(preferred.startswith(b"#EXTM3U "))
+                self.assertEqual(preferred, (path / f"{name}.m3u8").read_bytes())
             schedules.write_text('{"channels": {}}')
             self.assertEqual(
                 cli.main(

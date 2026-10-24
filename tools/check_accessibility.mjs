@@ -169,7 +169,7 @@ async function assertIptvDisclosure(page) {
   const disclosure = page.locator('.iptv-disclosure');
   assert.equal(await disclosure.getAttribute('open'), null);
   await disclosure.locator(':scope > summary').click();
-  const paths = ['stable-hls.m3u8', 'validated-hls.m3u8', 'epg.xml'];
+  const paths = ['stable-hls.m3u', 'validated-hls.m3u', 'epg.xml'];
   await page.evaluate(() => {
     Object.defineProperty(navigator, 'clipboard', {
       configurable: true,
@@ -220,7 +220,7 @@ async function assertIptvLocales(page, localeSelect) {
       Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (url) => { window.__iptvCopied = url; } } });
     });
     await disclosure.locator('[data-copy]').first().click();
-    assert.equal(await page.evaluate(() => window.__iptvCopied), 'https://dlq.ca/parliament-streams/data/stable-hls.m3u8');
+    assert.equal(await page.evaluate(() => window.__iptvCopied), 'https://dlq.ca/parliament-streams/data/stable-hls.m3u');
     assert((await disclosure.locator('[role="status"]').innerText()).trim());
     if (locale !== 'en') assert.doesNotMatch(await disclosure.locator('[role="status"]').innerText(), /URL copied/);
     await page.evaluate(() => { navigator.clipboard.writeText = async () => { throw new Error('Clipboard denied'); }; });

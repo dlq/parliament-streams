@@ -135,3 +135,69 @@ Downloaded unchanged from Wikimedia Commons; exact file metadata is retained in 
 - `la-rioja-argentina.svg`: [source file](https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_La_Rioja.svg), Goverment of La Rioja Province (vector graphics by: Lu1g1-ktupq ).. Public domain; downloaded unchanged.
 
 Seven further Argentine flag sources/licences were reviewed, but asset downloads stopped after a Commons HTTP429 response. Those entries use the neutral legislature mark; see `reports/discovery/2026-10-23-argentina-flag-source-review.json`.
+
+## Catalogue flag completion — 24 October 2026
+
+Fifty source-reviewed SVGs fill missing jurisdiction flags. Source/licence and
+exact-identity findings for all 63 initially neutral entries are retained in the
+[coverage report](../../../reports/discovery/2026-10-24-catalogue-flag-coverage.json).
+Thirteen entries retain a neutral legislature mark because a current adopted
+flag, source identity or applicable use conditions remain unresolved.
+
+Official insignia rules are separate from copyright. These depictions identify
+jurisdictions and do not imply affiliation or endorsement. MIT files use the
+existing bundled flag-icons licence; CC licences below apply to their named
+vector files. Artwork is preserved; any XML declaration cleanup is stated.
+
+| Jurisdiction / asset source | Creator / credit | Licence | File changes |
+| --- | --- | --- | --- |
+| [Bolívar — `bolivar-department.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Bol%C3%ADvar_%28Colombia%29.svg>) | Madden | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Caldas — `caldas.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Caldas.svg>) | Fibonacci | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Canary Islands — `canary-islands.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canary_Islands_(official).svg>) | No machine-readable author provided. Zirland assumed (based on copyright claims). | Public domain | None |
+| [Canelones — `canelones.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canelones_Department.svg>) | Edgardo Taranco | Public domain | none |
+| [Cantabria — `cantabria.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Cantabria.svg>) | HansenBCN | [CC BY-SA 2.5](<https://creativecommons.org/licenses/by-sa/2.5>) | None |
+| [Castile and León — `castile-and-leon.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Castile_and_Le%C3%B3n.svg>) | Rastrojo ( D • ES ) | [CC BY 3.0](<https://creativecommons.org/licenses/by/3.0>) | None |
+| [Ceará — `ceara.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_do_Cear%C3%A1.svg>) | Srfortes | Public domain | none |
+| [Cesar — `cesar.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Cesar.svg>) | Fibonacci | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [District of Columbia — `district-of-columbia.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_the_District_of_Columbia.svg>) | (of code) cs:User:-xfi- | Public domain | none |
+| [Fukui — `fukui.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Fukui_Prefecture.svg>) | Fukui Prefecture design; vector author not reliably identified in the metadata | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Glarus — `glarus.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Glarus.svg>) | Unknown author (source metadata); current SVG revision by HapHaxion | Public domain | None |
+| [Goiás — `goias.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Goi%C3%A1s.svg>) | Not identified in current file metadata | Public domain | none |
+| [Guaviare — `guaviare.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Guaviare.svg>) | Milenioscuro | [CC BY-SA 4.0](<https://creativecommons.org/licenses/by-sa/4.0>) | none |
+| [Hesse — `hesse.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Hesse.svg>) | Madden; SVG revision Ms2ger (file history); no machine-readable author field | Public domain | Removed only the external SVG 1.1 DOCTYPE declaration. Parsed SVG element tree/artwork is identical before and after sanitization. Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Hsinchu City — `hsinchu-city.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Hsinchu_City.svg>) | Hsinchu City Government | Public domain | none |
+| [Hyogo — `hyogo.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Hyogo_Prefecture.svg>) | Guilherme Paula and Maanshen | Public domain | none |
+| [Jura — `jura.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Jura.svg>) | Unknown author (source metadata); current SVG revision by HapHaxion | Public domain | None |
+| [Kansas — `kansas.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Kansas.svg>) | Xrmap | Public domain | none |
+| [La Rioja, Spain — `la-rioja-spain.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_La_Rioja_(with_coat_of_arms).svg>) | jynus | [CC BY 2.5](<https://creativecommons.org/licenses/by/2.5>) | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Lienchiang — `lienchiang.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Lienchiang_County.svg>) | Lienchiang County Government | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Mato Grosso — `mato-grosso.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_de_Mato_Grosso.svg>) | SVG implementation by E2m | Public domain | none |
+| [Mato Grosso do Sul — `mato-grosso-do-sul.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_de_Mato_Grosso_do_Sul.svg>) | E2m | Public domain | none |
+| [Mendoza — `mendoza.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Mendoza.svg>) | Bernardo O'Higgins (1778–1842) (Vector graphics images by B1mbo, Tonyjeff, James2813 and SamsonBVB) | Public domain | none |
+| [Mississippi — `mississippi.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Mississippi.svg>) | Rocky Vaughn, Sue Anna Joe, Dominique Pugh, Clay Moss, Kara Giles, Micah Whitson and the Mississippi Department of Archives and History | Copyrighted free use | none |
+| [Montenegro — `me.svg`](<https://github.com/lipis/flag-icons/blob/v7.3.2/flags/4x3/me.svg>) | Panayiotis Lipiridis and flag-icons contributors | [MIT](<https://github.com/lipis/flag-icons/blob/v7.3.2/LICENSE>) | None |
+| [New Brunswick — `new-brunswick.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_New_Brunswick.svg>) | Dbenbenn (original) E Pluribus Anthony (current) | Public domain | none |
+| [Paraná — `parana.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_do_Paran%C3%A1.svg>) | FXXX | Public domain | Removed external SVG DOCTYPE declaration only; artwork unchanged. |
+| [Paraíba — `paraiba.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_da_Para%C3%ADba.svg>) | SVG implementation by E2m | Public domain | Removed UTF-8 byte-order marker only; artwork unchanged. Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Penghu — `penghu.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Penghu_County.svg>) | Penghu County Government | Public domain | none |
+| [Pernambuco — `pernambuco.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_de_Pernambuco.svg>) | Original: Revolução Pernambucana Vector: SpinnerLaserzthe2nd, E2m, Pedro Alb Xavier | Public domain | none |
+| [Quindío — `quindio.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Quind%C3%ADo.svg>) | Fibonacci | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Rio de Janeiro — `rio-de-janeiro-state.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_do_estado_do_Rio_de_Janeiro.svg>) | FORTES | Public domain | Removed external SVG DOCTYPE declaration only; artwork unchanged. Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Rondônia — `rondonia.svg`](<https://commons.wikimedia.org/wiki/File:Bandeira_de_Rond%C3%B4nia.svg>) | E2m | Public domain | Removed external SVG DOCTYPE declaration only; artwork unchanged. |
+| [Río Negro — `rio-negro.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_del_R%C3%ADo_Negro.svg>) | Original: Daniel Cuomo Vector: Hellerick | [CC BY 4.0](<https://creativecommons.org/licenses/by/4.0>) | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Salta — `salta.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Salta.svg>) | Students of Nicolás Avellaneda School of Salta (Vector graphics by Gorivero) This W3C-unspecified vector image was created with Inkscape . | [CC BY 4.0](<https://creativecommons.org/licenses/by/4.0>) | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [San Juan — `san-juan.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_the_San_Juan_Province.svg>) | Borja Toranzo de Zavalla, Jacinta Angulo de Rojo, and Félix de la Roza de Junco | Public domain | none |
+| [Santa Cruz, Argentina — `santa-cruz-argentina.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Santa_Cruz.svg>) | Unknown (Vector graphics image by Gorivero) | [CC BY 4.0](<https://creativecommons.org/licenses/by/4.0>) | none |
+| [Saxony — `saxony.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Saxony.svg>) | Madden | Public domain | None |
+| [Serbia — `rs.svg`](<https://github.com/lipis/flag-icons/blob/v7.3.2/flags/4x3/rs.svg>) | Panayiotis Lipiridis and flag-icons contributors | [MIT](<https://github.com/lipis/flag-icons/blob/v7.3.2/LICENSE>) | None |
+| [Tainan — `tainan.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Tainan_City.svg>) | Tainan City Government | Public domain | Removed only legacy external SVG1.1 DTD declaration; artwork unchanged. Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Thurgau — `thurgau.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Thurgau.svg>) | Unknown author (source metadata); current SVG revision by HapHaxion | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Thuringia — `thuringia.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Thuringia.svg>) | Madden; format revision Ludger1961 (file history); no machine-readable author field | Public domain | Removed only the external SVG 1.1 DOCTYPE declaration. Parsed SVG element tree/artwork is identical before and after sanitization. Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Tierra del Fuego — `tierra-del-fuego.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Tierra_del_Fuego.svg>) | Teresa Beatriz Martínez [1] (Vector graphics image by Urmas) | Public domain | none |
+| [Tolima — `tolima.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Tolima.svg>) | Fibonacci | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Tucumán — `tucuman.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Tucum%C3%A1n.svg>) | Manuel Belgrano | Public domain | none |
+| [United States Virgin Islands — `vi.svg`](<https://github.com/lipis/flag-icons/tree/v7.3.2>) | flag-icons contributors | [MIT](<https://github.com/lipis/flag-icons/blob/v7.3.2/LICENSE>) | none |
+| [Vaud — `vaud.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Vaud.svg>) | Unknown author (source metadata); current SVG revision by SpinnerLaserzthe2nd | Public domain | Normalized XML line endings and trailing line whitespace; artwork unchanged. |
+| [Wyoming — `wyoming.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Wyoming.svg>) | User:Dbenbenn | Public domain | none |
+| [Zurich — `zurich.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Z%C3%BCrich.svg>) | Unknown author (source metadata); current SVG revision by Sarang | Public domain | None |
+| [Åland — `ax.svg`](<https://github.com/lipis/flag-icons/blob/v7.3.2/flags/4x3/ax.svg>) | Panayiotis Lipiridis and flag-icons contributors | [MIT](<https://github.com/lipis/flag-icons/blob/v7.3.2/LICENSE>) | None |

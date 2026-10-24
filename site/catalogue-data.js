@@ -150,14 +150,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "no_third_party_reuse",
-        "summary": "ParlVU is an official House of Commons live and on-demand proceedings surface, but this review found no permission for third-party native playback or redistribution of any underlying stream URL.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "House notice re-read on 2026-10-24: proceedings of the House and committees may be reproduced wholly or partly in any medium if accurate and not presented as official. The grant excludes commercial financial-gain use, retains parliamentary privilege/copyright and may require separate authorization for third-party committee submissions. This is a content-reproduction grant, not a certification of an independent live-relay route or underlying Harmony endpoint.",
         "evidence": [
-          "https://parlvu.parl.gc.ca/Harmony/en",
           "https://www.ourcommons.ca/en/important-notices#SpeakersPermission",
-          "https://www.ourcommons.ca/procedure-and-practice-4/ch24-3-e.html"
+          "https://parlvu.parl.gc.ca/Harmony/en"
         ],
-        "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the House confirms permission and stability."
+        "recommendation": "Keep official ParlVU viewing and event metadata. Apply the stated reproduction conditions to covered material; do not enable extracted manifests or independent live relay without documenting the applicable technical route, use and conditions."
       },
       "validation_history": [
         {
@@ -234,14 +233,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "no_third_party_reuse",
-        "summary": "SenVu is an official Senate live and on-demand proceedings surface, but this review found no permission for third-party native playback or redistribution of any underlying stream URL.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Senate notice re-read on 2026-10-24: proceedings of the Senate and committees may be reproduced wholly or partly in any medium if accurate, unofficial and without financial gain. Preserve integrity and dignity; parliamentary privilege/copyright and third-party rights remain separate. Other site, social-media and emblem material has distinct conditions. This content-reproduction grant does not certify an independent live-relay route or underlying Harmony endpoint.",
         "evidence": [
-          "https://senparlvu.parl.gc.ca/Harmony/",
           "https://sencanada.ca/en/intellectual-property/#permission",
-          "https://sencanada.ca/en/newsroom/the-speaker-of-the-senate-senate-chamber-launches-video-broadcasting/"
+          "https://senparlvu.parl.gc.ca/Harmony/"
         ],
-        "recommendation": "Use official link-out and event metadata only. Do not extract or replay Harmony media manifests unless the Senate confirms permission and stability."
+        "recommendation": "Keep official SenVu viewing and event metadata. Apply the stated reproduction conditions only to covered proceedings; do not enable extracted manifests or independent live relay without documenting the applicable technical route, use and conditions."
       },
       "validation_history": [
         {
@@ -777,12 +775,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Current Dutch disclaimer and linked audiovisual licence re-read on 2026-10-24. Plenary/committee material has conditional permission for journalism, expression, education and research on TV, internet or other media. Required conditions include visible source credit, copyright and licence reference, disclosure of edits, faithful context and respect for third-party rights. Commercial/advertising, entertainment and sponsor/member-recruitment uses are excluded. Raw acquired material must not be archived and must be destroyed within one month, except qualifying incorporated works; the licence is nontransferable and supports withdrawal/removal. This is not a fresh test of the catalogued HLS endpoint.",
         "evidence": [
-          "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten"
+          "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+          "https://www.tweedekamer.nl/applicaties/disclaimer",
+          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen",
+          "https://www.tweedekamer.nl/sites/default/files/atoms/files/licentievoorwaarden_audiovisueel_materiaal_tweede_kamer.pdf"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Use only covered parliamentary meeting material for the permitted purposes and satisfy all credit, licence, context and retention conditions. Prefer the official service for uses whose compliance is not established; do not treat the conditional licence as an unrestricted relay or archive grant."
       },
       "validation_history": [
         {
@@ -1441,13 +1442,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "explicit_reuse_with_conditions",
-        "summary": "The Assembly site states that public or official documents and multimedia resources, including debates and parliamentary documents, may be reproduced freely under conditions including no commercial/advertising use, free redistribution, document integrity, attribution, source citation, and a link to the original online document.",
+        "status": "no_third_party_reuse",
+        "summary": "Official notice rechecked on 2026-10-24: public or official documents, including parliamentary debates/documents, have conditional reproduction permission, but graphics, photographs and multimedia resources require prior agreement. Hyperlinks are expressly permitted subject to the notice's context restrictions. The video portal links to this same notice; offered downloads or clip-request tools do not establish an independent audiovisual embed, playback or rebroadcast licence.",
         "evidence": [
+          "https://www.assemblee-nationale.fr/dyn/info-site",
           "https://videos.assemblee-nationale.fr/direct.php",
-          "https://www.assemblee-nationale.fr/dyn/info-site"
+          "https://videos.assemblee-nationale.fr/Aide_a_la_decoupe_de_videos.pdf"
         ],
-        "recommendation": "Native playback may remain enabled only with clear Assembly attribution and source links, no advertising, no paywall, and no modification beyond technically necessary playback handling."
+        "recommendation": "Keep the official viewing link and research-only playback policy. Do not enable extracted HLS playback, third-party multimedia reproduction or rebroadcast without source-specific prior agreement or a documented applicable grant."
       },
       "validation_history": [
         {
@@ -7195,13 +7197,15 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Current Dutch disclaimer and linked audiovisual licence re-read on 2026-10-24. Plenary/committee material has conditional permission for journalism, expression, education and research on TV, internet or other media. Required conditions include visible source credit, copyright and licence reference, disclosure of edits, faithful context and respect for third-party rights. Commercial/advertising, entertainment and sponsor/member-recruitment uses are excluded. Raw acquired material must not be archived and must be destroyed within one month, except qualifying incorporated works; the licence is nontransferable and supports withdrawal/removal. This is not a fresh test of the catalogued HLS endpoint.",
         "evidence": [
           "https://www.tweedekamer.nl/vergaderingen/livedebat/aletta-jacobszaal",
-          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen"
+          "https://www.tweedekamer.nl/applicaties/disclaimer",
+          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen",
+          "https://www.tweedekamer.nl/sites/default/files/atoms/files/licentievoorwaarden_audiovisueel_materiaal_tweede_kamer.pdf"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Use only covered parliamentary meeting material for the permitted purposes and satisfy all credit, licence, context and retention conditions. Prefer the official service for uses whose compliance is not established; do not treat the conditional licence as an unrestricted relay or archive grant."
       },
       "validation_history": [
         {
@@ -7278,12 +7282,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "Official-looking public HLS source, but no sufficient documentary reuse evidence has been recorded.",
+        "summary": "Current Dutch disclaimer and linked audiovisual licence re-read on 2026-10-24. Plenary/committee material has conditional permission for journalism, expression, education and research on TV, internet or other media. Required conditions include visible source credit, copyright and licence reference, disclosure of edits, faithful context and respect for third-party rights. Commercial/advertising, entertainment and sponsor/member-recruitment uses are excluded. Raw acquired material must not be archived and must be destroyed within one month, except qualifying incorporated works; the licence is nontransferable and supports withdrawal/removal. This is not a fresh test of the catalogued HLS endpoint. The occasional-events channel may contain material outside the plenary/committee scope, so its aggregate status remains pending. Existing native playback follows the project opt-out policy while this content-scope question remains pending; it is not permission clearance.",
         "evidence": [
           "https://www.tweedekamer.nl/vergaderingen/livedebat/actualiteitenkanaal",
-          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen"
+          "https://www.tweedekamer.nl/applicaties/disclaimer",
+          "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen",
+          "https://www.tweedekamer.nl/sites/default/files/atoms/files/licentievoorwaarden_audiovisueel_materiaal_tweede_kamer.pdf"
         ],
-        "recommendation": "Link-out or pending until terms or permission are documented."
+        "recommendation": "Use the official viewing route; resolve whether each occasional event is covered before asserting reuse permission."
       },
       "validation_history": [
         {
@@ -8217,10 +8223,10 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The Legislature publishes official public broadcast links and calendars, but this review did not identify uniform audiovisual redistribution terms across both chambers.",
+        "summary": "The Legislature designates public chamber broadcasts. Current House video-services guidance reserves copyright and requires written permission for commercial or other uses outside federal-law allowances; that House condition is not a Senate grant or restriction. Uniform audiovisual reuse across the two chambers remains unresolved.",
         "evidence": [
           "https://capitol.texas.gov/",
-          "https://house.texas.gov/video-audio/"
+          "https://house.texas.gov/help/video-services"
         ],
         "recommendation": "Use official chamber and event links while documenting each chamber's player, schedule identifiers, and reuse terms."
       },
@@ -8366,14 +8372,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "TVW is an authorized legislative video provider, but the catalogue has not recorded terms permitting independent redistribution of TVW media.",
+        "status": "no_third_party_reuse",
+        "summary": "Current TVW terms re-read on 2026-10-24 reserve rights and expressly make its audiovisual signal subject to licensure. Official House/Senate designation establishes a viewing route, while legislative-site notices do not grant reuse of the separately owned TVW signal. No blanket independent playback, recording or redistribution licence is established.",
         "evidence": [
-          "https://leg.wa.gov/",
-          "https://leg.wa.gov/about-the-legislature/committees",
-          "https://tvw.org/"
+          "https://tvw.org/terms-of-use/",
+          "https://tvw.org/",
+          "https://leg.wa.gov/"
         ],
-        "recommendation": "Use TVW and official Legislature link-outs while reviewing provider terms and event metadata."
+        "recommendation": "Keep the official TVW link_out route and preserve source notices. Use an applicable TVW signal licence before independent audiovisual playback, recording or relay; do not infer that legislature designation licenses the provider signal."
       },
       "validation_history": [
         {
@@ -11137,12 +11143,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "permission": {
-        "status": "personal_use_pending_review",
-        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "status": "no_third_party_reuse",
+        "summary": "Current homepage-linked terms re-read on 2026-10-24: page 3 requires prior written authorization for reproduction, inclusion, transmission and storage, while allowing attributed personal noncommercial downloads. A published homepage-only link condition is also recorded for the institutional site. The designated YouTube channel remains a viewing route; no independent audiovisual embed, extraction or rebroadcast licence is established.",
         "evidence": [
-          "https://www.camara.gov.co/"
+          "https://www.camara.gov.co/",
+          "https://www.camara.gov.co/wp-content/uploads/2025/07/Politicas-de-Privacidad-y-Condiciones-de-Uso-1.pdf"
         ],
-        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+        "recommendation": "Keep the official provider viewing link and link_out policy. Use the institutional homepage for general institution navigation; obtain applicable written authorization before independent content reproduction or transmission. Provider controls do not establish a blanket institutional reuse grant."
       },
       "validation_history": [
         {
@@ -11331,8 +11338,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_page",
       "playback_url": null,
       "playback_policy": "link_out",
-      "official_url": "https://www12.senado.leg.br/tv/ao-vivo",
-      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.",
+      "official_url": "https://www12.senado.leg.br/tv/",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots. Official viewing route updated on 2026-10-24 after /tv/ao-vivo returned 404; the /tv/ homepage designates the official YouTube player. This route repair is not a fresh decoded playback test.",
       "technical_status": "link_only",
       "stability_risk": "unknown",
       "availability": "always_on",
@@ -11347,7 +11354,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         {
           "scraper": "planned",
           "scraper_status": "planned",
-          "url": "https://www12.senado.leg.br/tv/ao-vivo",
+          "url": "https://www12.senado.leg.br/tv/",
           "method": "GET",
           "kind": "official_event_or_recording_index"
         }

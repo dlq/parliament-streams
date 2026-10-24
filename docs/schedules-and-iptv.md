@@ -51,12 +51,45 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-22, all 117 channel records have at least one official schedule,
-agenda, meeting, or dated video-event surface recorded. This is source coverage,
-not programme-guide coverage: 17 unique URLs have implemented parsers, while
-89 of the 106 recorded URLs remain planned or link-only research sources. See
-`reports/epg-discovery-2026-08-24.md` for the dated source-by-source discovery
-baseline.
+As of 2026-10-24, all 243 catalogue source records have at least one official
+schedule, agenda, meeting or dated video-event surface recorded. Thirty-three
+records use implemented parsers across 17 unique URLs; 215 other unique URLs
+remain planned. These are source-discovery counts, not populated programme-guide
+coverage or proof that every surface describes a broadcast. The earlier
+117-record/106-URL snapshot and the source-by-source discovery baseline in
+`reports/epg-discovery-2026-08-24.md` remain historical evidence.
+
+The [renewed institution review](../reports/discovery/2026-10-24-institution-service-baseline.md)
+tracks source freshness, timezone/event mapping and programme-data rights
+separately. Gipuzkoa's officially linked RSS still contains February 2016 events;
+it is not a current guide source. Its sampled committee recording also retains a
+camera-clock/session-time discrepancy. Cree Nation's public iCalendar needs date
+reconciliation. Bizkaia's timeline discrepancy is now reproduced as a viewer-timezone
+display conversion: the same marker reads 03:30 in Toronto, 07:30 in UTC and 09:30
+in Madrid. A parser must retain the publisher's event timezone rather than scrape
+that browser-formatted clock. [Playback and timing follow-up](../reports/discovery/2026-10-24-service-review-basque-playback-followup.json).
+
+Other renewed leads include Glarus's annual-assembly JSON, Bulgaria's documented
+calendar API and California's PDF television schedule. A successful format read
+does not establish a current broadcast guide: Bulgaria's sampled upcoming replies
+are empty, while California's proposed television programmes lack end times and
+can change. Its latest page/PDF update labels both read 21 October, resolving the
+earlier observed label discrepancy. No parser or XMLTV coverage is added solely from a feed label, download
+control, calendar event or retrospective sitting record.
+
+Mongolia's [official weekly iCalendar](https://tov.parliament.mn/feed/week/TOV-20261026.ics)
+now has a confirmed payload: 31 events for 26–30 October, with 29 timed events,
+two all-day items, named `Asia/Ulaanbaatar` timezone and distinct UIDs. Every timed
+event has a one-hour end interval; all URLs lead to the same weekly page. Confirm
+whether those durations are estimates and which meetings actually broadcast before
+using them as EPG programmes. [Payload checks and remaining gates](../reports/discovery/2026-10-24-service-review-mongolia-calendar-followup.json).
+
+South Dakota's chamber follow-up also reproduces viewer-local conversion and an
+incorrect summer abbreviation on a winter event. Use a named source timezone and
+verified timestamp rather than scraping that label. Proposed reconvenings,
+cancelled committees, deadline calendars and occasional addresses must be mapped
+to an actual broadcast before guide export.
+[US chamber timing findings](../reports/discovery/2026-10-24-service-review-us-chambers-c.json).
 
 Collect all implemented sources locally:
 
@@ -142,10 +175,10 @@ playback. The VLC instructions link to VideoLAN’s official documentation.
 
 Pages generates IPTV exports after each six-hourly schedule collection:
 
-- `data/stable-hls.m3u8`: validated, native-playback HLS with low/medium risk
+- `data/stable-hls.m3u`: validated, native-playback HLS with low/medium risk
   and `always_on` availability. Currently four channels: Brazil TV Camara,
   Hellenic Parliament TV, and both Sansad TV channels.
-- `data/validated-hls.m3u8`: the same eligibility rules with sitting-only and
+- `data/validated-hls.m3u`: the same eligibility rules with sitting-only and
   event-based sources included. These feeds may be off-air outside proceedings;
   catalogue validation is retained evidence, not a fresh playback guarantee.
 - `data/epg.xml`: XMLTV guide data with catalogue IDs matching playlist `tvg-id`
@@ -154,7 +187,16 @@ Pages generates IPTV exports after each six-hourly schedule collection:
   counts, time-provenance counts, and event-level XMLTV exclusion reasons.
 
 Use the published site root `https://dlq.ca/parliament-streams/` followed by
-the paths above. `.m3u8` here is a UTF-8 channel list, not an HLS media manifest.
+the paths above. These are UTF-8 extended M3U channel lists. Individual entries
+still point to their original HLS `.m3u8` media/master manifests.
+
+Use the `.m3u` URLs for VLC and other channel-list readers. The earlier
+`stable-hls.m3u8` and `validated-hls.m3u8` filenames remain byte-identical
+compatibility exports, but GitHub Pages serves that extension with the HLS MIME
+type. VLC 3.0.24 was verified to skip remote channel-list import with that type;
+the same content imports with `audio/x-mpegurl`, including all IPTV attributes.
+This is a delivery/import distinction, separate from whether each source is
+currently on air or playable.
 These exports link directly to the original streams under the same playback
 policy as the site; CPAC, prohibited/embed-only sources, DASH, YouTube, and
 research-only records are excluded from the playlists. Pending rights remain

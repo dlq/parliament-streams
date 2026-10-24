@@ -10,7 +10,7 @@ public catalogue.
 
 ## Current Status
 
-Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-22.
+Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-24.
 The dated review buckets below are retained preparation evidence; contact
 routes and source terms need rechecking before eventual outreach.
 
@@ -29,9 +29,9 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 50 of 117 catalogue entries use a permission status ending in
-  `pending_review`: 18 official-vendor HLS, five first-party HLS,
-  26 official pages and one DASH research record. Later official-link
+- 168 of 243 catalogue entries use a permission status ending in
+  `pending_review`: 18 official-vendor HLS, three first-party HLS,
+  146 official pages and one DASH research record. Later official-link
   promotions have dated source-condition notes but are not all assigned to
   the older outreach buckets. See [research status](research-status.md).
 - 16 entries in the historical August queue likely need written clarification.
@@ -54,6 +54,10 @@ public guidance covers media/journalistic use through Debat Direct rather than
 general public raw-HLS playback. Thailand TPchannel and El Salvador Legislative
 Assembly remain pending after dated searches because no source-specific
 third-party playback or embedding terms were found.
+The [24 October Dutch licence review](../reports/discovery/2026-10-24-service-review-netherlands-av-licence.json)
+supersedes the older pending conclusion for the plenary and Aletta Jacobszaal
+meeting feeds. The occasional-events feed and fresh endpoint/compliance checks
+remain separate questions; no request was sent.
 
 The 2026-08-19 official-page pass reviewed the 6 pending `official_page`
 entries. Brazil TV Camara and Manitoba House Broadcasts moved to
@@ -220,9 +224,9 @@ Question focus:
 - Norway and Germany document requested or dedicated official live-signal
   routes. Ask whether Parliament Streams should use only that route, and how to
   request it.
-- Netherlands provides recognised-media AV guidance. Ask whether public
-  catalogue playback of Debat Direct HLS is acceptable, or whether only the
-  official page/download/embed service is appropriate.
+- Netherlands now has a source-specific conditional meeting-material licence.
+  Any eventual question should target remaining delivery/compliance and
+  occasional-event scope, rather than repeat whether non-media users are covered.
 - India, Portugal, Greece, and Israel have official/public parliamentary
   channels but incomplete native-playback reuse terms. Ask for the recommended
   route and required attribution.

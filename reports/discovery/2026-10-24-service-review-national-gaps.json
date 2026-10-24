@@ -1,0 +1,3218 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Source-specific service follow-up for every eligible national chamber in the 16 current national-gap countries; 23 exact records. This is a documented partial pass, not completion of metadata/streams/EPG/rights validation.",
+  "method": {
+    "sources": "Official own institutions, institution-designated media pages and government rights notices; web retrieval/indexed content plus ordinary HTTP GET and selected Chromium/WebKit rendering.",
+    "distinctions": "An indexed/source-text reading is not current endpoint access or decoded playback. An access error is not proof of no stream. House/Senate coverage is never inferred from another chamber.",
+    "browser_flow": "Own institution designation -> dated source-player record -> normal muted native playback -> 1200-second later seek -> advancing decoded video; carried out only for the Belgian House recording.",
+    "browser_environment": "Browser plugin not available; installed Playwright 1.64.0 Chromium and WebKit, 1440 x 1000.",
+    "safety": "No outreach, CAPTCHA interaction, TLS bypass, authentication workaround, hidden/private API access, media downloads or YouTube manifest extraction. Only public page URLs and compact findings saved; no raw HTML or session tokens.",
+    "permissions": "Per-use rights conclusions are scoped to published terms/workflows. Content visibility or download controls do not imply blanket embedding, re-streaming, direct-player or programme-data permission."
+  },
+  "summary": {
+    "countries": 16,
+    "exact_chamber_records": 23,
+    "records_with_fresh_sampled_decoded_video": 1,
+    "records_with_complete_metadata_stream_epg_rights_validation": 0,
+    "automatic_catalogue_promotions": 0,
+    "strong_followups": [
+      "Belgian House dated archive decoded in Chromium and WebKit; source offers embed/share/download workflows.",
+      "Bulgaria institution-owned portal content CC BY 4.0 and explicitly documented public agenda/archive/calendar REST API.",
+      "Iceland expressly permits channel distribution and offers dated-player embed/download workflows, but direct browser access remains held.",
+      "Latvia publishes conditional official-platform embed permission.",
+      "Singapore restricts live re-streaming; Malta and Trinidad and Tobago have limited-use terms.",
+      "Trinidad TV default retrieved schedule is dated July, and SA house programme PDFs carry different update dates."
+    ]
+  },
+  "records": [
+    {
+      "id": "national--al-lc01",
+      "country": "Albania",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.parlament.al/"
+      ],
+      "name_review": "Own rendered site identifies Kuvendi i Shqipërisë.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:19.538Z",
+        "prior_route": "https://www.parlament.al/",
+        "prior_finding": "Own site live control is marked no-live. The linked current plenary-news article is an official legislative report, but selected navigation did not expose decoded proceedings. No hidden API or consent route was used.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parlament.al/",
+          "http_status": 200,
+          "final_url": "https://www.parlament.al/",
+          "title": "Kuvendi i Shqipërisë",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Kuvendi i Shqipërisë",
+        "current_surface": "Chromium rendered the official site with LIVE control, OPEN DATA entry, work programme and work-calendar controls.",
+        "dated_activity": "Official homepage lists a plenary report dated 22 October 2026 and a committee report dated 14 October. These are activity/news evidence, not decoded media.",
+        "agenda": "Activity calendar showed 24–28 October and a no-meetings message. Calendar/programme controls need source-specific interaction; no fresh feed or EPG verified.",
+        "media": "No video was present on the initial rendered page. The LIVE control was not re-tested; prior no-live outcome remains historical.",
+        "language": "Albanian rendered interface; actual broadcast tracks unverified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parlament.al/",
+          "title": "Kuvendi i Shqipërisë",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "rendered-home",
+          "url": "https://www.parlament.al/",
+          "title": "Kuvendi i Shqipërisë",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200; meaningful institution content rendered",
+          "finding": "No source-player decoding performed; browser screenshot inspected only if explicitly noted in playback evidence."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own rendered site identifies Kuvendi i Shqipërisë.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--be-lc01",
+      "country": "Belgium",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "House of Representatives",
+      "institution_urls": [
+        "https://www.dekamer.be/kvvcr/index.cfm",
+        "https://www.lachambre.be/kvvcr/index.cfm"
+      ],
+      "name_review": "Own site identifies De Belgische Kamer van volksvertegenwoordigers; designated portal is branded De Kamer / La Chambre.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:14.275Z",
+        "prior_route": "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.dekamer.be/kvvcr/index.cfm",
+          "http_status": 200,
+          "final_url": "https://www.dekamer.be/kvvcr/index.cfm",
+          "title": "De Belgische Kamer van volksvertegenwoordigers",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "De Kamer van volksvertegenwoordigers / La Chambre des représentants",
+        "provider_designation": "Official dekamer.be home directly links media.dekamer.be, including a dated 22 October 2026 link. This is House-specific provenance, not Senate coverage.",
+        "media_route": "https://media.dekamer.be/",
+        "dated_archive": "https://media.dekamer.be/meeting/56-020396-P146",
+        "dated_proceedings": {
+          "date": "2026-10-22",
+          "title": "Plenum - Vragen, wetsontwerpen en voorstel van resolutie, stemmingen",
+          "displayed_start": "14:16",
+          "displayed_end": "22:06",
+          "id": "56-020396-P146"
+        },
+        "committee_evidence": "Portal index lists separately dated Foreign Affairs, Justice, Economy and Internal Affairs committee recordings on 21 October 2026; their media were not decoded.",
+        "programme_information": "Archive page has 69 agenda topics and time-coded speaker markers. Portal agenda states no new meetings currently planned; this is an off-air/scheduling observation, not a finding of no future activity.",
+        "languages": "Source player exposes Original, Francais and Nederlands buttons. Muted playback does not establish audible track identity. Later frames visibly include VGT and LSFB interpreter insets; language/interpretation accuracy is untested.",
+        "sharing_surface": "Visible Delen modal offers page-link copying, Insluiten (embedding), video download and fragment selection. No download performed and no raw media URL extracted.",
+        "sampled_playback": {
+          "method": "Installed Playwright 1.64.0; Browser plugin unavailable; source page loaded normally, native HTML video muted and played, then sought to 1200 seconds. No media download or manifest extraction.",
+          "viewport": "1440 x 1000",
+          "engines": [
+            {
+              "engine": "Chromium",
+              "after_play_seconds": 7.104619,
+              "after_seek_seconds": 1204.105584,
+              "duration_seconds": 28232.32,
+              "dimensions": "1280 x 720",
+              "ready_state": 4,
+              "paused": false,
+              "page_errors": []
+            },
+            {
+              "engine": "WebKit",
+              "after_play_seconds": 7.247635834013515,
+              "after_seek_seconds": 1203.9657117082888,
+              "duration_seconds": 28232.32,
+              "dimensions": "1280 x 720",
+              "ready_state": 4,
+              "paused": false,
+              "text_tracks": [
+                {
+                  "kind": "captions",
+                  "language": "",
+                  "label": ""
+                },
+                {
+                  "kind": "metadata",
+                  "language": "",
+                  "label": ""
+                }
+              ]
+            }
+          ],
+          "visual_observation": "Inspected screenshots show chamber activity initially and a substantive later speech with a speaker marker naming Natalie EGGERMONT; VGT and LSFB signing insets are visible. No identity claim is based solely on a face.",
+          "screenshots_inspected": [
+            "/tmp/parliament-national-followup/be-lc-archive-played.png",
+            "/tmp/parliament-national-followup/be-lc-archive-later.png",
+            "/tmp/parliament-national-followup/be-lc-webkit-later.png",
+            "/tmp/parliament-national-followup/be-lc-webkit-share.png"
+          ],
+          "limits": "Two short samples of one House plenary only; no committee/live continuity, audible languages, caption quality, general external rights or full-recording integrity certified."
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "source_sharing_workflow_offered",
+          "scope": "Links to source pages",
+          "conditions": "Source share modal offers copied page links; no broader linking policy established.",
+          "source_ids": [
+            "house-recording"
+          ]
+        },
+        "embedding": {
+          "status": "source_embed_workflow_offered_terms_unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "Source modal explicitly offers Insluiten; embed code and any conditions still need inspection before publication.",
+          "source_ids": [
+            "house-recording"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "source_download_workflow_offered_terms_unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Download-video and fragment controls are offered; independent live recording and redistribution conditions unconfirmed.",
+          "source_ids": [
+            "house-recording"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Observe live House service and decode committee archives; validate actual audio/caption tracks and inspect offered embed/download conditions. Do not apply this result to the Belgian Senate.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.dekamer.be/kvvcr/index.cfm",
+          "title": "De Belgische Kamer van volksvertegenwoordigers",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "house-designation",
+          "url": "https://www.dekamer.be/kvvcr/index.cfm",
+          "title": "De Belgische Kamer van volksvertegenwoordigers",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Direct institutional links to media.dekamer.be and 22 October 2026 media."
+        },
+        {
+          "id": "house-media",
+          "url": "https://media.dekamer.be/",
+          "title": "Videoverslagen | De Kamer",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200",
+          "finding": "Plenary and separate committee entries with dates and times."
+        },
+        {
+          "id": "house-recording",
+          "url": "https://media.dekamer.be/meeting/56-020396-P146",
+          "title": "Plenum, 22 October 2026",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium and WebKit HTTP 200; source-player video decoded at initial and later positions",
+          "finding": "Normal muted native play and seek, substantive chamber footage; visible share options inspected."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own site identifies De Belgische Kamer van volksvertegenwoordigers; designated portal is branded De Kamer / La Chambre.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "One dated House plenary sampled successfully in Chromium and WebKit; live/committee/full-recording/audio quality unresolved."
+    },
+    {
+      "id": "national--be-uc01",
+      "country": "Belgium",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Senate",
+      "institution_urls": [
+        "http://www.fed-parl.be/",
+        "https://www.senate.be/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:14.275Z",
+        "prior_route": "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.senate.be/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "access": "Senate own route returned HTTP 403. No challenge interaction, playback, new programme-data extraction or media rights confirmation.",
+        "scope": "The functioning House portal cannot establish Senate coverage."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.senate.be/",
+          "title": "Senate institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--bg-lc01",
+      "country": "Bulgaria",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "http://www.parliament.bg/"
+      ],
+      "name_review": "Rendered own page identifies Народно събрание на Република България.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:54.638Z",
+        "prior_route": "https://www.parliament.bg/tv/video",
+        "prior_finding": "Exact institutionQ639704 and own parliament.bg correspondence supported. The actual role=tab archive control was located and clicked:16October2026 shows a source-player No compatible source error inChromium/WebKit;15October shows the same error inChromium. The15OctoberWebKit run exposed a primary MP4 URL but remained atreadyState0 without decoded content. This is a specific source-player/accessibility-of-media finding, not proof no other archive or service exists.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.bg/tv/video",
+          "http_status": 200,
+          "final_url": "https://www.parliament.bg/tv/video",
+          "title": "Parliament.bg",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Народно събрание на Република България",
+        "media_route": "https://www.parliament.bg/tv/video",
+        "current_surface": "Chromium HTTP 200; own page identifies live plenary and parliamentary-committee coverage and separate archive tabs. It states ordinary plenaries Wednesday–Friday 09:00–14:00, extendable by decision; do not turn this generic pattern into dated EPG events.",
+        "language": "Bulgarian/English interface options; actual audio languages untested.",
+        "programme_information": "Copyright page explicitly advertises public REST API access and links documentation covering plenary programmes, committee meetings, video archives and live-event calendar.",
+        "documented_api": "https://www.parliament.bg/pub/api.html",
+        "playback": "No fresh decoded playback. Prior 15/16 October source-player failures remain historical, not fresh tests.",
+        "rights_notice": "Institution-owned portal content is CC BY 4.0, with attribution and exceptions for explicitly protected material. Software/design ownership is distinguished from content reuse.",
+        "documented_api_probe": {
+          "method": "Ordinary public GET of the exact calendar/upcoming routes advertised in the explicitly linked API documentation.",
+          "calendar_url": "https://www.parliament.bg/api/v1/calendar-live/bg",
+          "calendar_http_status": 200,
+          "calendar_content_type": "application/json",
+          "calendar_count": 0,
+          "calendar_plenary_items": 0,
+          "calendar_committee_items": 0,
+          "calendar_inc_items": 0,
+          "upcoming_url": "https://www.parliament.bg/api/v1/upcoming-sittings/bg",
+          "upcoming_http_status": 200,
+          "upcoming_content_type": "application/json",
+          "upcoming_items": 0,
+          "week_items": 0,
+          "finding": "Schema/public accessibility confirmed; no dated event supplied in these responses, so freshness and actual coverage are unresolved. Empty weekend responses do not prove the service has no programmes."
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "content_licence_confirmed_embed_workflow_unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "CC BY 4.0 covers owned content; no approved external player workflow established.",
+          "source_ids": [
+            "bg-rights"
+          ]
+        },
+        "direct_playback": {
+          "status": "content_licence_confirmed_endpoint_unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "Content licence does not validate a stable external endpoint; earlier archive decoder errors remain unresolved.",
+          "source_ids": [
+            "bg-rights"
+          ]
+        },
+        "rebroadcast": {
+          "status": "portal_content_licence_confirmed_live_signal_scope_unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Owned portal video is CC BY 4.0; separate whole-live-signal rights and third-party material need confirmation.",
+          "source_ids": [
+            "bg-rights"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_content_licence_confirmed",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Institution-owned portal content: CC BY 4.0 attribution; check item-specific protected-content exceptions.",
+          "source_ids": [
+            "bg-rights"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_content_licence_confirmed",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Institution-owned portal content: CC BY 4.0 attribution; check item-specific protected-content exceptions.",
+          "source_ids": [
+            "bg-rights"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_content_licence_confirmed",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Institution-owned portal content: CC BY 4.0 attribution; check item-specific protected-content exceptions.",
+          "source_ids": [
+            "bg-rights"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Retest documented agenda/calendar API during a scheduled sitting and confirm date/time semantics, completeness and updates. Current probes were valid JSON with zero live/upcoming/week items; dated EPG freshness remains unresolved.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parliament.bg/tv/video",
+          "title": "Parliament.bg",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "bg-rendered-media",
+          "url": "https://www.parliament.bg/tv/video",
+          "title": "Народно събрание - live and archives",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200",
+          "finding": "Rendered chamber/committee coverage and archive tabs confirmed; no decoding."
+        },
+        {
+          "id": "bg-rights",
+          "url": "https://www.parliament.bg/bg/terms-of-use",
+          "title": "Авторско право",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200; substantive copyright notice read",
+          "finding": "Institution-owned portal content licensed CC BY 4.0; protected-material exceptions; public REST API advertised."
+        },
+        {
+          "id": "bg-api",
+          "url": "https://www.parliament.bg/pub/api.html",
+          "title": "Public REST API documentation",
+          "accessed_on": "2026-10-24",
+          "access": "official web documentation read",
+          "finding": "Plenary programme, committee agenda, audiovisual archive and live-event calendar resources documented; API freshness not tested."
+        },
+        {
+          "id": "bg-api-calendar-probe",
+          "url": "https://www.parliament.bg/api/v1/calendar-live/bg",
+          "title": "Public live-event calendar API",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200 application/json",
+          "finding": "Count zero; plenary/com/inc arrays empty; no dated event available for freshness testing."
+        },
+        {
+          "id": "bg-api-upcoming-probe",
+          "url": "https://www.parliament.bg/api/v1/upcoming-sittings/bg",
+          "title": "Public upcoming-sittings API",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200 application/json",
+          "finding": "upcoming and week arrays empty; schema access confirmed, dated freshness not confirmed."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Rendered own page identifies Народно събрание на Република България.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--cy-lc01",
+      "country": "Cyprus",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "House of Representatives",
+      "institution_urls": [
+        "https://www.parliament.cy/"
+      ],
+      "name_review": "Official web-indexed site identifies Βουλή των Αντιπροσώπων / House of Representatives; ordinary GET still 403.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:16.626Z",
+        "prior_route": "https://www.parliament.cy/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.cy/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Βουλή των Αντιπροσώπων",
+        "provider_designation": "Official /el/live-streaming page embeds a YouTube player under a 22 October 2026 16:00 transmission heading; actual provider video ID and playback were not verified.",
+        "media_route": "https://www.parliament.cy/el/live-streaming",
+        "programme_information": "Official homepage/calendar exposes dated committee agenda entries for 26–27 October 2026, times and committee names, with separate plenary/weekly-committee agenda routes.",
+        "language": "Official navigation shows Greek, English and Turkish; no inference about broadcast languages.",
+        "rights": "Reviewed Disclaimer page concerns personal-data processing; copyright footer does not grant audiovisual or programme-data reuse.",
+        "access_limit": "Official page text was readable through web retrieval/indexing, while the direct source GET returned 403; do not call this fresh browser playback."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parliament.cy/",
+          "title": "House of Representatives institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "cy-media",
+          "url": "https://www.parliament.cy/el/live-streaming",
+          "title": "Ζωντανή μετάδοση 22/10/2026 16.00",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; direct homepage GET 403",
+          "finding": "Institution-designated YouTube embed and dated transmission heading."
+        },
+        {
+          "id": "cy-calendar",
+          "url": "https://www.parliament.cy/",
+          "title": "House of Representatives",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; ordinary GET 403",
+          "finding": "Dated 26–27 October 2026 committee agenda entries."
+        },
+        {
+          "id": "cy-disclaimer",
+          "url": "https://www.parliament.cy/el/contact/disclaimer",
+          "title": "Disclaimer",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Privacy/GDPR statement, not a content licence."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Official web-indexed site identifies Βουλή των Αντιπροσώπων / House of Representatives; ordinary GET still 403.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--hu-lc01",
+      "country": "Hungary",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "https://www.parlament.hu:443/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:11.867Z",
+        "prior_route": "https://www.parlament.hu/elo-kozvetitesek",
+        "prior_finding": "HTTP 200 page is a CAPTCHA, not a successful institutional content validation. No challenge interaction.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parlament.hu/elo-kozvetitesek",
+          "http_status": 200,
+          "final_url": "https://www.parlament.hu/elo-kozvetitesek",
+          "title": "CAPTCHA Ellen",
+          "challenge": true,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "media_route": "https://www.parlament.hu/elo-kozvetitesek",
+        "access": "HTTP 200 is a CAPTCHA page requiring user authentication, not institutional-content validation. No challenge interaction or workaround.",
+        "rights_and_programmes": "Service designation, dated proceedings, calendar freshness and applicable per-use rights remain unresolved behind this access hold."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parlament.hu/elo-kozvetitesek",
+          "title": "CAPTCHA Ellen",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Access challenge, no interaction."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--is-lc01",
+      "country": "Iceland",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.althingi.is/"
+      ],
+      "name_review": "Official source pages identify Alþingi; direct-browser access hold prevents fresh service playback.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:06.000Z",
+        "prior_route": "https://www.althingi.is/utsendingar/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.althingi.is/utsendingar/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Alþingi",
+        "media_route": "https://www.althingi.is/utsendingar/",
+        "provider_designation": "Official broadcasting guide identifies own-site plenary/open-committee service, a 48-hour replay player, Spilarinn audio and official YouTube/Facebook offerings.",
+        "dated_proceedings": "Current official archive index lists two plenaries dated 22 October 2026 and an open committee dated 20 October. Source pages, not freshly decoded content.",
+        "archive_route": "https://www.althingi.is/altext/upptokur",
+        "programme_information": "Official plenary agenda states 23rd meeting on 22 October 2026, actual meeting 14:56–15:53, with ordered ministerial questions. Separate committee agenda route exists; no feed freshness validated.",
+        "agenda_route": "https://www.althingi.is/thingstorf/thingfundir-og-raedur/dagskra/",
+        "rights": "Official broadcast guide expressly allows anyone to distribute Alþingisrásin on their own distribution networks. A dated speech page offers iframe embed code and save-audio/video links.",
+        "rights_scope": "Channel distribution permission and the offered dated-player embed are specific grants/workflows; no blanket archive editing, programme-data or third-party rights claim.",
+        "access_limit": "Ordinary GET returned 403; Chromium archive route showed a Cloudflare security-verification page. No interaction or workaround; official web-indexed evidence is not fresh decoded playback."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "specific_archive_embed_workflow_offered",
+          "scope": "External iframe/player embedding",
+          "conditions": "Cited speech page explicitly supplies an iframe for use on one's own website; source-player accessibility still held.",
+          "source_ids": [
+            "is-embed"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "channel_distribution_permission_published",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Guide explicitly permits everyone to distribute Alþingisrásin on their own networks; technical route and full intended-use scope still require validation.",
+          "source_ids": [
+            "is-broadcast"
+          ]
+        },
+        "copying_recording": {
+          "status": "specific_archive_download_offered",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Cited page explicitly offers saved speech-audio and meeting-video files; independent live-recording scope unresolved.",
+          "source_ids": [
+            "is-embed"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.althingi.is/utsendingar/",
+          "title": "Parliament institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "is-broadcast",
+          "url": "https://www.althingi.is/utsendingar/",
+          "title": "Útsendingar | Alþingi",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; ordinary GET 403",
+          "finding": "Express channel-distribution permission and designated source services."
+        },
+        {
+          "id": "is-archive",
+          "url": "https://www.althingi.is/altext/upptokur",
+          "title": "Upptökur | Alþingi",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; Chromium 403 security verification",
+          "finding": "22 October plenaries and 20 October open-committee archive links; no media decoding."
+        },
+        {
+          "id": "is-embed",
+          "url": "https://www.althingi.is/altext/upptokur/raeda/?raeda=rad20260427T154429",
+          "title": "Markaðssetningarlög | Upptökur",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "27 April 2026 speech page explicitly supplies iframe embed code and save-audio/video links."
+        },
+        {
+          "id": "is-agenda",
+          "url": "https://www.althingi.is/thingstorf/thingfundir-og-raedur/dagskra/",
+          "title": "Dagskrá þingfundar | Alþingi",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "22 October 2026 plenary agenda and actual meeting times."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Official source pages identify Alþingi; direct-browser access hold prevents fresh service playback.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--lv-lc01",
+      "country": "Latvia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.saeima.lv/"
+      ],
+      "name_review": "Official source page identifies Saeima; direct access still held.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:26.780Z",
+        "prior_route": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+        "prior_finding": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Saeima",
+        "media_route": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+        "provider_designation": "Own video page explicitly identifies its official Facebook and YouTube accounts and links plenary archives by parliamentary term.",
+        "coverage": "Page describes plenary sittings, Parliamentary Group Opinions and other events; committee agendas are separately linked, but no dated committee stream was validated.",
+        "programme_information": "Separate plenary and committee agenda links point to titania.saeima.lv; exact current events/feed freshness not inspected.",
+        "rights": "Official video page publishes specific third-party embedding rules, including permitted platform code, attribution and content-use limits.",
+        "access_limit": "Official source text readable through web retrieval; ordinary GET returned 403 and a current-term archive link timed out. No decoded playback."
+      },
+      "rights": {
+        "linking": {
+          "status": "source_link_invitation_published",
+          "scope": "Links to source pages",
+          "conditions": "Video page invites linking to saeima.lv where a stream is embedded.",
+          "source_ids": [
+            "lv-video"
+          ]
+        },
+        "embedding": {
+          "status": "conditional_platform_embed_permission",
+          "scope": "External iframe/player embedding",
+          "conditions": "Use official Facebook/YouTube stream and unchanged platform embed code/content; credit Saeima Administration. No misleading/discrediting context or commercial advertising.",
+          "source_ids": [
+            "lv-video"
+          ]
+        },
+        "direct_playback": {
+          "status": "not_authorized_by_published_embedding_workflow",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "Published workflow requires the official platforms and their embed code; no direct-manifest reuse grant confirmed.",
+          "source_ids": [
+            "lv-video"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved_separate_from_platform_embedding",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Published permission covers platform embedding; independent restream permission not established.",
+          "source_ids": [
+            "lv-video"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "published_content_restrictions_not_blanket_licence",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Archive/live material must not mislead or discredit people/institution or serve commercial advertising; further reuse permission unresolved.",
+          "source_ids": [
+            "lv-video"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+          "title": "Parliament institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "lv-video",
+          "url": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+          "title": "Live streams of Saeima sittings and events",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; ordinary GET 403",
+          "finding": "Official platform embedding conditions and separate agenda/archive designation."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Official source page identifies Saeima; direct access still held.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--ls-lc01",
+      "country": "Lesotho",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "http://www.parliament.ls/",
+        "https://nationalassembly.parliament.ls/"
+      ],
+      "name_review": "Own chamber site identifies National Assembly of Lesotho.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:53.200Z",
+        "prior_route": "https://parliament.ls/",
+        "prior_finding": "Own parliament links both chamber sites; designated video pages inspected are virtual tours, not legislative business. Embedded tour titles or channel links are not counted as proceedings.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://nationalassembly.parliament.ls/",
+          "http_status": 200,
+          "final_url": "https://nationalassembly.parliament.ls/",
+          "title": "The National Assembly of Lesotho",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "National Assembly of Lesotho",
+        "current_surface": "Own chamber website returned HTTP 200 and rendered independently in Chromium.",
+        "media": "The navigation labels its video section as a virtual tour. No current legislative player/provider was established; a tour is not counted as proceedings.",
+        "programme_information": "Own homepage links an order paper for 21 October 2026, sitting schedule and calendar.",
+        "language": "English navigation; Senate news also contains Sesotho text. Broadcast languages not verified.",
+        "rights": "Copyright footer found; no applicable per-use licence or current programme-data feed established."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://nationalassembly.parliament.ls/",
+          "title": "The National Assembly of Lesotho",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "ls-own-home",
+          "url": "https://nationalassembly.parliament.ls/",
+          "title": "National Assembly of Lesotho",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET and Chromium HTTP 200",
+          "finding": "Chamber-specific documents/media navigation confirmed; no legislative media decoded."
+        },
+        {
+          "id": "ls-current-document",
+          "url": "https://nationalassembly.parliament.ls/2026/10/21/order-paper-for-wednesday-21st-october-2026/",
+          "title": "Order Paper for Wednesday 21st October, 2026",
+          "accessed_on": "2026-10-24",
+          "access": "link observed on current own homepage",
+          "finding": "Dated document route; contents/feed not separately parsed."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own chamber site identifies National Assembly of Lesotho.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--ls-uc01",
+      "country": "Lesotho",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Senate",
+      "institution_urls": [
+        "http://www.parliament.ls/",
+        "https://senate.parliament.ls/"
+      ],
+      "name_review": "Own chamber site identifies Senate of Lesotho.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:53.200Z",
+        "prior_route": "https://parliament.ls/",
+        "prior_finding": "Own parliament links both chamber sites; designated video pages inspected are virtual tours, not legislative business. Embedded tour titles or channel links are not counted as proceedings.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://senate.parliament.ls/",
+          "http_status": 200,
+          "final_url": "https://senate.parliament.ls/",
+          "title": "Lesotho Senate",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Senate of Lesotho",
+        "current_surface": "Own chamber website returned HTTP 200 and rendered independently in Chromium.",
+        "media": "The navigation labels its video section as a virtual tour. No current legislative player/provider was established; a tour is not counted as proceedings.",
+        "programme_information": "Own homepage links Hansard for 20 and 15 October 2026, order papers for 20/21 October and its own calendar. Older Senate proceedings news from May/June 2025 are not fresh video validation.",
+        "language": "English navigation; Senate news also contains Sesotho text. Broadcast languages not verified.",
+        "rights": "Copyright footer found; no applicable per-use licence or current programme-data feed established."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://senate.parliament.ls/",
+          "title": "Lesotho Senate",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "ls-own-home",
+          "url": "https://senate.parliament.ls/",
+          "title": "Senate of Lesotho",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET and Chromium HTTP 200",
+          "finding": "Chamber-specific documents/media navigation confirmed; no legislative media decoded."
+        },
+        {
+          "id": "ls-current-document",
+          "url": "https://senate.parliament.ls/2026/10/22/hansard-for-tuesday-20th-october-2026/",
+          "title": "Hansard for Tuesday 20th October 2026",
+          "accessed_on": "2026-10-24",
+          "access": "link observed on current own homepage",
+          "finding": "Dated chamber document; not audiovisual proof."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own chamber site identifies Senate of Lesotho.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--mt-lc01",
+      "country": "Malta",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "House of Representatives",
+      "institution_urls": [
+        "http://www.parlament.mt/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:12.010Z",
+        "prior_route": "https://parlament.mt/en/home/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://parlament.mt/en/home/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "House of Representatives / Parliament of Malta",
+        "current_surface": "Official web content advertises live streaming, recent media and Parliament TV schedule, but displays application errors and unresolved templates alongside empty-state messages. Direct GET returned 403.",
+        "programme_information": "Template date/number placeholders are not dated agenda or EPG evidence. Free-to-air UHF43, GO108 and Melita109 are distribution leads, not validated internet endpoints.",
+        "rights": "Official copyright page permits unaltered material with notice for personal noncommercial use or internal organizational circulation; wider reproduction requires permission.",
+        "playback": "No fresh decoded media, dated session identity or schedule feed confirmed."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "public_use_not_cleared",
+          "scope": "External iframe/player embedding",
+          "conditions": "Limited personal/internal reproduction grant does not establish the proposed public use; seek a source-specific grant before reuse.",
+          "source_ids": [
+            "mt-rights"
+          ]
+        },
+        "direct_playback": {
+          "status": "public_use_not_cleared",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "Limited personal/internal reproduction grant does not establish the proposed public use; seek a source-specific grant before reuse.",
+          "source_ids": [
+            "mt-rights"
+          ]
+        },
+        "rebroadcast": {
+          "status": "public_use_not_cleared",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Limited personal/internal reproduction grant does not establish the proposed public use; seek a source-specific grant before reuse.",
+          "source_ids": [
+            "mt-rights"
+          ]
+        },
+        "copying_recording": {
+          "status": "limited_personal_internal_grant",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Unaltered site material with copyright notice: personal noncommercial or internal organizational use. Public republication not cleared.",
+          "source_ids": [
+            "mt-rights"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "limited_personal_internal_grant",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Unaltered site material with copyright notice: personal noncommercial or internal organizational use. Public republication not cleared.",
+          "source_ids": [
+            "mt-rights"
+          ]
+        },
+        "programme_data": {
+          "status": "public_use_not_cleared",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Limited personal/internal reproduction grant does not establish the proposed public use; seek a source-specific grant before reuse.",
+          "source_ids": [
+            "mt-rights"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://parlament.mt/en/home/",
+          "title": "House of Representatives institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "mt-home",
+          "url": "https://parlament.mt/en/home/",
+          "title": "Parliament of Malta",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; ordinary GET 403",
+          "finding": "Application errors/template placeholders in live, latest-media and TV schedule sections."
+        },
+        {
+          "id": "mt-rights",
+          "url": "https://parlament.mt/en/menues/copyright/",
+          "title": "Copyright",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Personal noncommercial/internal unaltered reproduction with notice; wider permission not established."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--md-lc01",
+      "country": "Moldova",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.parlament.md/"
+      ],
+      "name_review": "Official current web page identifies Parlamentul Republicii Moldova; direct GET 403.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:23.385Z",
+        "prior_route": "https://parlament.md/Portals/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parlament.md/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Parlamentul Republicii Moldova",
+        "provider_designation": "Official Galerie video route redirects to the institution-named YouTube channel UCRfMRKU9POyEX5GYapAZJUw.",
+        "media_route": "https://www.parlament.md/galerie-video.nspx",
+        "designated_channel": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw",
+        "dated_activity": "Homepage has a plenary-sitting synopsis dated 22 October 2026. A synopsis is not proof of a full recording.",
+        "programme_information": "Official navigation distinguishes plenary sittings, bureau sittings and committee sittings. Plenary route content read as a shell; no dated programme feed or current video verified.",
+        "language": "Romanian website text confirmed; broadcast language tracks unverified.",
+        "access_limit": "Official web retrieval exposed institutional content, but ordinary GET was 403; no browser decoding claimed."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parlament.md/",
+          "title": "Parliament institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "md-home",
+          "url": "https://www.parlament.md/",
+          "title": "Parlamentul Republicii Moldova - Acasă",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; ordinary GET 403",
+          "finding": "22 October plenary synopsis and chamber/committee navigation."
+        },
+        {
+          "id": "md-channel",
+          "url": "https://www.parlament.md/galerie-video.nspx",
+          "title": "Galerie video",
+          "accessed_on": "2026-10-24",
+          "access": "official web link followed; redirects to named YouTube channel",
+          "finding": "Institutional designation of channel, not dated media playback."
+        },
+        {
+          "id": "md-plenary",
+          "url": "https://www.parlament.md/sedintele-plenare.nspx",
+          "title": "Ședințele plenare",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "No dated session entries in retrieved body."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Official current web page identifies Parlamentul Republicii Moldova; direct GET 403.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--ph-lc01",
+      "country": "Philippines",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "House of Representatives",
+      "institution_urls": [
+        "https://www.congress.gov.ph/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:51.845Z",
+        "prior_route": "https://www.senate.gov.ph/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.congress.gov.ph/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "media_lead": "Official House video-streaming page is indexed with separate plenary/committee tabs and YouTube entries, but ordinary current homepage and media-route requests returned 403.",
+        "dated_evidence": "Indexed House page lists Committee on Justice on 25 March 2026; this is archived page metadata, not fresh playback. Mixed impeachment/special-event labels are not attributed to Senate.",
+        "media_route": "https://www.congress.gov.ph/media/video-streamings",
+        "programme_and_rights": "Current agenda freshness, specific channel/recording designation and seven per-use terms remain unresolved behind source-access limits."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.congress.gov.ph/",
+          "title": "House of Representatives institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "ph-house-video",
+          "url": "https://www.congress.gov.ph/index.php/media/video-streamings?committee_page=5&plenary_page=16&pressrelease_page=2&section=committee&special_page=6",
+          "title": "Video Streamings | House of Representatives Philippines",
+          "accessed_on": "2026-10-24",
+          "access": "official indexed source text; direct simple media route 403",
+          "finding": "Committee on Justice 25 March 2026 entry; separate coverage categories; no decoding."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--ph-uc01",
+      "country": "Philippines",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Senate",
+      "institution_urls": [
+        "http://www.senate.gov.ph/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:51.845Z",
+        "prior_route": "https://www.senate.gov.ph/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.senate.gov.ph/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "access": "Own current Senate route returned 403 to ordinary GET; web retrieval yielded an empty body. No current Senate media player, calendar feed or terms confirmed.",
+        "historical_media_lead": "A 7 May 2022 official Senate announcement designated its YouTube channel for election-return reception. That historical special event is not a fresh plenary, committee or continuous-service validation.",
+        "scope": "House video metadata is not Senate coverage."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.senate.gov.ph/",
+          "title": "Senate institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "ph-senate-history",
+          "url": "https://legacy.senate.gov.ph/press_release/2022/0507_prib1.asp",
+          "title": "PRIB: Senate ready to receive COCs, ERs Monday",
+          "accessed_on": "2026-10-24",
+          "access": "official indexed source text",
+          "finding": "Historical 2022 special-event channel designation only.",
+          "published_on": "2022-05-07"
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--pl-lc01",
+      "country": "Poland",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Sejm",
+      "institution_urls": [
+        "http://www.sejm.gov.pl"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:16.276Z",
+        "prior_route": "https://www.sejm.gov.pl/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.sejm.gov.pl/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "access": "Sejm ordinary GET returned 403; official web retrieval rendered Request Rejected. No challenge interaction or endpoint workaround.",
+        "service": "Current source designation, dated recordings, programmes and per-use rights unresolved. A functioning Polish Senate source is not Sejm coverage."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.sejm.gov.pl/",
+          "title": "Sejm institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--pl-uc01",
+      "country": "Poland",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Senate",
+      "institution_urls": [
+        "https://www.senat.gov.pl/"
+      ],
+      "name_review": "Official web content identifies Senat Rzeczypospolitej Polskiej; direct GET 403.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:16.276Z",
+        "prior_route": "https://www.sejm.gov.pl/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.senat.gov.pl/transmisje/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Senat Rzeczypospolitej Polskiej",
+        "provider_designation": "Official Transmisje page separately designates its own current/recent broadcasts and TVP Parlament. It explains that Senate and committee agenda pages carry archived videos; recent archive page embeds av8.senat.pl.",
+        "media_route": "https://www.senat.gov.pl/transmisje/",
+        "programme_information": "Official homepage announces 67th Senate sitting on 27 October 2026 and committee meetings on 26 October, with a calendar/order-of-business route. These are Senate-specific agenda leads, not current decoded sessions.",
+        "rights": "Published public-sector-information reuse policy allows free reuse with source/process disclosure and author credit where provided; item-specific rights limitations apply. PAP-marked photographs are expressly restricted.",
+        "access_limit": "Web-retrieved source pages readable; ordinary GET 403. No media decoded or dated av8 recording selected."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_general_reuse_policy_scope_check",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Attribute source and processing, credit named creators; respect item-specific rights limits. Confirm audiovisual/service applicability; PAP images excluded.",
+          "source_ids": [
+            "pl-senate-reuse"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_general_reuse_policy_scope_check",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Attribute source and processing, credit named creators; respect item-specific rights limits. Confirm audiovisual/service applicability; PAP images excluded.",
+          "source_ids": [
+            "pl-senate-reuse"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_general_reuse_policy_scope_check",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Attribute source and processing, credit named creators; respect item-specific rights limits. Confirm audiovisual/service applicability; PAP images excluded.",
+          "source_ids": [
+            "pl-senate-reuse"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.senat.gov.pl/transmisje/",
+          "title": "Senate institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "pl-senate-home",
+          "url": "https://www.senat.gov.pl/",
+          "title": "Senat Rzeczypospolitej Polskiej",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "27 October 2026 Senate sitting and 26 October committee agenda leads."
+        },
+        {
+          "id": "pl-senate-media",
+          "url": "https://www.senat.gov.pl/transmisje/",
+          "title": "Transmisje",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read; ordinary GET 403",
+          "finding": "Own/TVP streams and archived Senate/committee video designation."
+        },
+        {
+          "id": "pl-senate-archive",
+          "url": "https://www.senat.gov.pl/transmisje/podreczne-archiwum-ostatnich-transmisji/",
+          "title": "Podręczne archiwum ostatnich transmisji",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Designated av8.senat.pl iframe; no decoded content."
+        },
+        {
+          "id": "pl-senate-reuse",
+          "url": "https://www.senat.gov.pl/ponowne-wykorzystywanie-informacji-sektora-publicznego/",
+          "title": "Ponowne wykorzystywanie informacji sektora publicznego",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Free reuse with source/process and creator attribution; item-specific limitations and PAP-image exclusion."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Official web content identifies Senat Rzeczypospolitej Polskiej; direct GET 403.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--sg-lc01",
+      "country": "Singapore",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.parliament.gov.sg/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:25.701Z",
+        "prior_route": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+        "prior_finding": "CloudFront returned an access error. No workaround attempted.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+          "http_status": 200,
+          "final_url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+          "title": "Parliament livestream | Ministry of Digital Development and Information",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "provider_designation": "Official MDDI Parliament livestream page explicitly designates MDDI Singapore YouTube for parliamentary proceedings.",
+        "media_route": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+        "designated_channel": "https://www.youtube.com/@SingaporeMDDI",
+        "rights_notice_date": "2026-02-23",
+        "access": "MDDI source returned HTTP 200 and substantive terms. Parliament homepage web retrieval requested robot verification; no interaction.",
+        "programme_and_playback": "No dated sitting, fresh decoded playback, language track or EPG feed validated.",
+        "rights_summary": "Conditional limited-purpose, noncommercial licence; government attribution and third-party exclusions. Hyperlinks count as use. Livestream restreaming restricted to accredited local media."
+      },
+      "rights": {
+        "linking": {
+          "status": "conditional_use_terms_include_hyperlinks",
+          "scope": "Links to source pages",
+          "conditions": "MDDI expressly includes hyperlinks in use; purpose, attribution and other published conditions apply.",
+          "source_ids": [
+            "sg-mddi"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved_with_use_terms",
+          "scope": "External iframe/player embedding",
+          "conditions": "No distinct blanket embed grant identified; content-use terms and restream restriction apply.",
+          "source_ids": [
+            "sg-mddi"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved_with_use_terms",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No direct endpoint grant or stable endpoint validated.",
+          "source_ids": [
+            "sg-mddi"
+          ]
+        },
+        "rebroadcast": {
+          "status": "livestream_restream_restricted",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Only Local Accredited Media Organisations may restream; comments disabled and resulting video removed within six months.",
+          "source_ids": [
+            "sg-mddi"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_limited_purpose_licence",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Permitted purposes only; noncommercial, government credit, preserve dignity/context, third-party exclusions and editing limits.",
+          "source_ids": [
+            "sg-mddi"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_limited_purpose_licence",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Permitted purposes only; noncommercial, government credit, preserve dignity/context, third-party exclusions and editing limits.",
+          "source_ids": [
+            "sg-mddi"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+          "title": "Parliament livestream | Ministry of Digital Development and Information",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "sg-mddi",
+          "url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+          "title": "Parliament livestream | MDDI",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200 and official web content read",
+          "finding": "23 February 2026 terms and official media designation."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--za-lc01",
+      "country": "South Africa",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "http://www.parliament.gov.za"
+      ],
+      "name_review": "Own parliamentary programme explicitly names National Assembly.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:19.235Z",
+        "prior_route": "https://www.parliament.gov.za/parliament-tv",
+        "prior_finding": "HTTP 500 explicitly says the URL was blocked. No further interaction.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "http_status": 200,
+          "final_url": "https://www.parliament.gov.za/parliament-tv",
+          "title": "Parliament TV & YouTube Channel - Parliament of South Africa",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "National Assembly",
+        "provider_designation": "Own Parliamentary Programme explicitly names livestreamed plenaries of both National Assembly and National Council of Provinces on its official YouTube/Parliament TV; this is explicit chamber coverage designation, not country inference.",
+        "media_route": "https://www.parliament.gov.za/parliament-tv",
+        "designated_channel": "https://www.youtube.com/ParliamentofRSA",
+        "current_surface": "Official TV page returned HTTP 200, reports no current live streams and directs users to recent videos; actual media not decoded.",
+        "programme_information": "NA term-4 programme PDF is labelled updated 23 October 2026; current committee-schedule PDF dated 26 October 2026.",
+        "programme_route": "https://www.parliament.gov.za/parliament-programme",
+        "rights": "Website reuse permitted for noncommercial informational/reference purposes; audiovisual/broadcast scope unresolved.",
+        "language": "English source metadata; actual plenary/committee audio languages and captions unverified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_website_reuse_grant_scope_check",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Noncommercial informational/reference website reuse; external-video and reserved-rights scope unresolved.",
+          "source_ids": [
+            "za-rights"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_website_reuse_grant_scope_check",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Noncommercial informational/reference website reuse; external-video and reserved-rights scope unresolved.",
+          "source_ids": [
+            "za-rights"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_website_reuse_grant_scope_check",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Noncommercial informational/reference website reuse; external-video and reserved-rights scope unresolved.",
+          "source_ids": [
+            "za-rights"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "title": "Parliament TV & YouTube Channel - Parliament of South Africa",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "za-media",
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "title": "Parliament TV & YouTube Channel",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200 and official web content read",
+          "finding": "Official channel designation, off-air page and archive availability guidance."
+        },
+        {
+          "id": "za-programme",
+          "url": "https://www.parliament.gov.za/parliament-programme",
+          "title": "Parliamentary Programme",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Explicit both-house livestream designation and separately dated programme PDFs."
+        },
+        {
+          "id": "za-rights",
+          "url": "https://www.parliament.gov.za/disclaimer",
+          "title": "Disclaimer - Usage and copyright",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Noncommercial informational/reference reuse; other rights reserved."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own parliamentary programme explicitly names National Assembly.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--za-uc01",
+      "country": "South Africa",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Council of Provinces",
+      "institution_urls": [
+        "https://www.parliament.gov.za"
+      ],
+      "name_review": "Own parliamentary programme explicitly names National Council of Provinces.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:19.235Z",
+        "prior_route": "https://www.parliament.gov.za/parliament-tv",
+        "prior_finding": "HTTP 500 explicitly says the URL was blocked. No further interaction.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "http_status": 200,
+          "final_url": "https://www.parliament.gov.za/parliament-tv",
+          "title": "Parliament TV & YouTube Channel - Parliament of South Africa",
+          "challenge": false,
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "National Council of Provinces",
+        "provider_designation": "Own Parliamentary Programme explicitly names livestreamed plenaries of both National Assembly and National Council of Provinces on its official YouTube/Parliament TV; this is explicit chamber coverage designation, not country inference.",
+        "media_route": "https://www.parliament.gov.za/parliament-tv",
+        "designated_channel": "https://www.youtube.com/ParliamentofRSA",
+        "current_surface": "Official TV page returned HTTP 200, reports no current live streams and directs users to recent videos; actual media not decoded.",
+        "programme_information": "Separate NCOP term-4 programme PDF is labelled updated 27 August 2026; current shared committee schedule dated 26 October. Do not assume its freshness equals the NA PDF.",
+        "programme_route": "https://www.parliament.gov.za/parliament-programme",
+        "rights": "Website reuse permitted for noncommercial informational/reference purposes; audiovisual/broadcast scope unresolved.",
+        "language": "English source metadata; actual plenary/committee audio languages and captions unverified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_website_reuse_grant_scope_check",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Noncommercial informational/reference website reuse; external-video and reserved-rights scope unresolved.",
+          "source_ids": [
+            "za-rights"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_website_reuse_grant_scope_check",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Noncommercial informational/reference website reuse; external-video and reserved-rights scope unresolved.",
+          "source_ids": [
+            "za-rights"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_website_reuse_grant_scope_check",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Noncommercial informational/reference website reuse; external-video and reserved-rights scope unresolved.",
+          "source_ids": [
+            "za-rights"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "title": "Parliament TV & YouTube Channel - Parliament of South Africa",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200",
+          "finding": "Response read; service-specific findings below."
+        },
+        {
+          "id": "za-media",
+          "url": "https://www.parliament.gov.za/parliament-tv",
+          "title": "Parliament TV & YouTube Channel",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 200 and official web content read",
+          "finding": "Official channel designation, off-air page and archive availability guidance."
+        },
+        {
+          "id": "za-programme",
+          "url": "https://www.parliament.gov.za/parliament-programme",
+          "title": "Parliamentary Programme",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Explicit both-house livestream designation and separately dated programme PDFs."
+        },
+        {
+          "id": "za-rights",
+          "url": "https://www.parliament.gov.za/disclaimer",
+          "title": "Disclaimer - Usage and copyright",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Noncommercial informational/reference reuse; other rights reserved."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own parliamentary programme explicitly names National Council of Provinces.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--tt-lc01",
+      "country": "Trinidad and Tobago",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "House of Representatives",
+      "institution_urls": [
+        "https://www.ttparliament.org/"
+      ],
+      "name_review": "Own dated sitting record explicitly names House of Representatives.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:28.137Z",
+        "prior_route": "https://www.ttparliament.org/parliament-channel/",
+        "prior_finding": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.ttparliament.org/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "House of Representatives",
+        "provider_designation": "Chamber-specific 12th-sitting record provides Watch on YouTube, Order Paper and Hansard links; shared official site separately designates ParlView.",
+        "dated_proceedings": {
+          "date": "2026-10-12",
+          "title": "12th Sitting of the House of Representatives",
+          "displayed_start": "13:30",
+          "url": "https://www.ttparliament.org/sittings/12th-sitting-of-the-house-of-representatives-2nd-session-13th-republican-parliament/"
+        },
+        "programme_information": "Sitting page supplies actual business, documents and adjournment details. A shared TV-schedule page was retrieved showing 23 July 2026, not the current day; do not ingest its default response as current EPG.",
+        "schedule_route": "https://www.ttparliament.org/television-schedule/",
+        "media_route": "https://www.ttparliament.org/parliament-channel/",
+        "rights": "Personal noncommercial downloads allowed with notices. Public or other-site reuse requires written permission.",
+        "access_limit": "Dated sitting metadata readable in official search retrieval, but direct web open timed out and homepage GET returned 403; no fresh playback."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "public_reuse_requires_permission",
+          "scope": "External iframe/player embedding",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "direct_playback": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "rebroadcast": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "copying_recording": {
+          "status": "personal_download_grant_only",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Personal noncommercial downloads with notices; live-recording scope unresolved.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "programme_data": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.ttparliament.org/",
+          "title": "House of Representatives institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "tt-sitting",
+          "url": "https://www.ttparliament.org/sittings/12th-sitting-of-the-house-of-representatives-2nd-session-13th-republican-parliament/",
+          "title": "12th Sitting of the House of Representatives",
+          "accessed_on": "2026-10-24",
+          "access": "official indexed source text; subsequent web open timed out",
+          "finding": "Chamber-specific date, start, business and designated watch link."
+        },
+        {
+          "id": "tt-channel",
+          "url": "https://www.ttparliament.org/parliament-channel/",
+          "title": "Parliament Channel",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Official ParlView/YouTube designation."
+        },
+        {
+          "id": "tt-schedule",
+          "url": "https://www.ttparliament.org/television-schedule/",
+          "title": "Television Schedule",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Default retrieved schedule dated 23 July 2026; current-date freshness not established."
+        },
+        {
+          "id": "tt-rights",
+          "url": "https://www.ttparliament.org/terms-of-use/",
+          "title": "Terms of Use",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Personal downloads permitted; public/other-site reuse requires permission."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own dated sitting record explicitly names House of Representatives.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--tt-uc01",
+      "country": "Trinidad and Tobago",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Senate",
+      "institution_urls": [
+        "https://www.ttparliament.org/"
+      ],
+      "name_review": "Own dated sitting record explicitly names Senate.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:52:28.137Z",
+        "prior_route": "https://www.ttparliament.org/parliament-channel/",
+        "prior_finding": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.ttparliament.org/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution_name": "Senate",
+        "provider_designation": "Chamber-specific 12th-sitting record provides Watch on YouTube, Order Paper and Hansard links; shared official site separately designates ParlView.",
+        "dated_proceedings": {
+          "date": "2026-10-13",
+          "title": "12th Sitting of the Senate",
+          "displayed_start": "13:30",
+          "url": "https://www.ttparliament.org/sittings/12th-sitting-of-the-senate-2nd-session-13th-republican-parliament/"
+        },
+        "programme_information": "Sitting page supplies actual business, documents and adjournment details. A shared TV-schedule page was retrieved showing 23 July 2026, not the current day; do not ingest its default response as current EPG.",
+        "schedule_route": "https://www.ttparliament.org/television-schedule/",
+        "media_route": "https://www.ttparliament.org/parliament-channel/",
+        "rights": "Personal noncommercial downloads allowed with notices. Public or other-site reuse requires written permission.",
+        "access_limit": "Official web-retrieved source metadata is not fresh decoded playback; direct homepage GET returned 403."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "public_reuse_requires_permission",
+          "scope": "External iframe/player embedding",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "direct_playback": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "rebroadcast": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "copying_recording": {
+          "status": "personal_download_grant_only",
+          "scope": "Downloading, copying or recording",
+          "conditions": "Personal noncommercial downloads with notices; live-recording scope unresolved.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        },
+        "programme_data": {
+          "status": "public_reuse_requires_permission",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "Written permission required for public or other-site use.",
+          "source_ids": [
+            "tt-rights"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.ttparliament.org/",
+          "title": "Senate institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "tt-sitting",
+          "url": "https://www.ttparliament.org/sittings/12th-sitting-of-the-senate-2nd-session-13th-republican-parliament/",
+          "title": "12th Sitting of the Senate",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Chamber-specific date, start, business and designated watch link."
+        },
+        {
+          "id": "tt-channel",
+          "url": "https://www.ttparliament.org/parliament-channel/",
+          "title": "Parliament Channel",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Official ParlView/YouTube designation."
+        },
+        {
+          "id": "tt-schedule",
+          "url": "https://www.ttparliament.org/television-schedule/",
+          "title": "Television Schedule",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Default retrieved schedule dated 23 July 2026; current-date freshness not established."
+        },
+        {
+          "id": "tt-rights",
+          "url": "https://www.ttparliament.org/terms-of-use/",
+          "title": "Terms of Use",
+          "accessed_on": "2026-10-24",
+          "access": "official web content read",
+          "finding": "Personal downloads permitted; public/other-site reuse requires permission."
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Own dated sitting record explicitly names Senate.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--uy-lc01",
+      "country": "Uruguay",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "House of Representatives",
+      "institution_urls": [
+        "https://parlamento.gub.uy/",
+        "http://www.diputados.gub.uy/"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:08.413Z",
+        "prior_route": "https://www.parlamento.gub.uy/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.diputados.gub.uy/",
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.diputados.gub.uy'. (_ssl.c:1129)>",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "access": "Own www.diputados.gub.uy HTTPS route failed certificate hostname verification; no TLS bypass. Shared parliament route had web access failure. This is an access hold, not absence of broadcasts.",
+        "scope": "Current House media/provider, dated proceedings, programme feed and rights unresolved; Senate route failures do not settle House service."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://www.diputados.gub.uy/",
+          "title": "House of Representatives institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET transport failure",
+          "finding": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.diputados.gub.uy'. (_ssl.c:1129)>"
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    },
+    {
+      "id": "national--uy-uc01",
+      "country": "Uruguay",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Senate",
+      "institution_urls": [
+        "https://parlamento.gub.uy/camarasycomisiones/senadores"
+      ],
+      "name_review": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+      "historical_context": {
+        "report": "reports/discovery/2026-10-24-national-gap-current-dispositions.json",
+        "country_level_scope_only": true,
+        "prior_checked_at": "2026-10-24T02:51:08.413Z",
+        "prior_route": "https://www.parlamento.gub.uy/",
+        "prior_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+        "warning": "This is historical country-level evidence, not fresh playback or proof of this chamber's service."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://parlamento.gub.uy/camarasycomisiones/senadores",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "access": "Own Senate institutional route returned 403 to ordinary GET and 502 to web retrieval. No workaround or challenge interaction.",
+        "scope": "Current Senate media/provider, dated proceedings, programme feed and rights unresolved; House findings are not inherited."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Links to source pages",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "External iframe/player embedding",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media use in an external player/IPTV playlist",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying or redistributing live audiovisual material",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading, copying or recording",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing video/audio/clips",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme/agenda metadata",
+          "conditions": "No applicable permission established in the inspected sources; selected-route access or content limits remain.",
+          "source_ids": [
+            "own-route-check"
+          ]
+        }
+      },
+      "unresolved": [
+        "Confirm source-specific live/archived playback for this chamber and its committees, language tracks and accessibility.",
+        "Find and freshness-test a programme feed/parser with timezone, duration and cancellation/update handling; no XMLTV feed validated.",
+        "Complete the seven per-use rights determinations before any use requiring permission."
+      ],
+      "sources": [
+        {
+          "id": "own-route-check",
+          "url": "https://parlamento.gub.uy/camarasycomisiones/senadores",
+          "title": "Senate institutional/service route",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary HTTP GET 403",
+          "finding": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "metadata_review": {
+        "identity": "eligible exact national chamber ID retained",
+        "own_name_finding": "Directory identity retained; preferred local naming not certified by inaccessible or insufficient own-site evidence.",
+        "institution_route": "See current_access_checks and inline sources.",
+        "broadcast_language_and_timezone": "Not certified unless a specific observation above states otherwise.",
+        "epg_status": "No XMLTV or current machine-readable programme feed validated in this follow-up."
+      },
+      "playback_status": "No fresh decoded playback in this follow-up; prior tests remain historical."
+    }
+  ]
+}

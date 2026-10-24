@@ -1,0 +1,248 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Two newly eligible capital assemblies; source and policy review only, without a fresh authority decision or decoded media check.",
+  "records": [
+    {
+      "id": "hungary--budapest",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "institution_name": "Fővárosi Közgyűlés",
+      "metadata": {
+        "institutional_route": "https://budapest.hu/varoshaza/fovarosi-onkormanyzat/kozgyules",
+        "confirmed": "The capital's own site identifies the Assembly and separately links plenary and committee information in its public-information portal. Preferred institution identity is supported; complete membership, exact external identifiers and current service coverage remain open."
+      },
+      "official_media": {
+        "designation": "The capital's 24 September 2026 sitting announcement links Önkormányzati TV for the 25 September Assembly broadcast.",
+        "live_route": "https://onkormanyzati.tv/elok/budapest1/",
+        "recording_lead": "https://onkormanyzati.tv/videoanyagok/kozgyules-2026-09-25/",
+        "recording_observation": "The designated provider labels the exact Assembly and date and exposes 79 agenda items with speaker and vote navigation. These are page observations, not decoded playback or confirmation of all actual agenda business.",
+        "embed_observation": "Live and recording pages expose an iframe/embed interface. Embed route, conditions and operation remain unverified; a control is not a general redistribution licence.",
+        "decoded_playback_checked": false
+      },
+      "epg": {
+        "agenda_route": "https://einfoszab.budapest.hu/session?key=fovarosi-kozgyules-nyilvanos-ulesei&type=1",
+        "confirmed": "Official announcement schedules the 25 September 2026 sitting for 09:00. Public-information tables separate dates, invitations, minutes and recordings; the list also includes mayoral decisions between meetings, which must not become broadcast events.",
+        "machine_readable_broadcast_guide_confirmed": false,
+        "xmltv_ready": false,
+        "unresolved": "Confirm timezone, end times, cancellation/update semantics and an exact event-to-media join; inspected data-reuse terms table contains no published entries."
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_policy_not_located",
+          "source_ids": [
+            "budapest-home"
+          ]
+        },
+        "embedding": {
+          "status": "provider_control_documented_conditions_unresolved",
+          "source_ids": [
+            "budapest-live",
+            "budapest-recording"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "source_ids": [
+            "budapest-live"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "source_ids": [
+            "budapest-live",
+            "budapest-home"
+          ]
+        },
+        "copying_recording": {
+          "status": "provider_request_workflow_documented_conditions_unresolved",
+          "finding": "Recording page has an email-based download request form. It was not submitted; this is not permission for independent copying or signal relay.",
+          "source_ids": [
+            "budapest-recording"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "source_ids": [
+            "budapest-recording",
+            "budapest-home"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "The official public-data general-terms table is empty in the inspected response. No programme-data licence is inferred.",
+          "source_ids": [
+            "budapest-reuse"
+          ]
+        }
+      },
+      "unresolved": [
+        "Validate independently dated recordings and actual legislative content in normal browsers.",
+        "Enumerate committee broadcasts, audio/language/caption routes and current live operation.",
+        "Inspect actual provider embed output and applicable media-specific conditions.",
+        "Confirm separately all reuse dimensions; the capital and provider copyright footers do not resolve them."
+      ],
+      "sources": [
+        {
+          "id": "budapest-home",
+          "url": "https://budapest.hu/varoshaza/fovarosi-onkormanyzat/kozgyules",
+          "title": "Fővárosi Közgyűlés",
+          "accessed_on": "2026-10-24",
+          "access": "official web-reader content inspected; includes Assembly, committees and public-information designation"
+        },
+        {
+          "id": "budapest-announcement",
+          "url": "https://budapest.hu/hirek/2026/09/24/ezekkel-az-eloterjesztesekkel-es-temakkal-foglalkozik-a-2026-szeptemberi-kozgyules",
+          "title": "Ezekkel az előterjesztésekkel és témákkal foglalkozik a 2026 szeptemberi közgyűlés",
+          "published_on": "2026-09-24",
+          "accessed_on": "2026-10-24",
+          "access": "official web-reader content and exact provider link inspected"
+        },
+        {
+          "id": "budapest-live",
+          "url": "https://onkormanyzati.tv/elok/budapest1/",
+          "title": "Budapest Főváros Közgyűlése - OTV",
+          "accessed_on": "2026-10-24",
+          "access": "provider page text inspected; embed interface visible, 0:00 player text without decoded playback"
+        },
+        {
+          "id": "budapest-recording",
+          "url": "https://onkormanyzati.tv/videoanyagok/kozgyules-2026-09-25/",
+          "title": "Közgyűlés 2026.09.25. - OTV",
+          "accessed_on": "2026-10-24",
+          "access": "provider archive title, agenda and request/embed interface inspected"
+        },
+        {
+          "id": "budapest-sessions",
+          "url": "https://einfoszab.budapest.hu/session?key=fovarosi-kozgyules-nyilvanos-ulesei&type=1",
+          "title": "A Fővárosi Közgyűlés ülései",
+          "accessed_on": "2026-10-24",
+          "access": "official date/invitation/minutes table inspected"
+        },
+        {
+          "id": "budapest-reuse",
+          "url": "https://einfoszab.budapest.hu/documentLibrary?key=a-kozfeladatot-ellato-szerv-kezeleseben-levo-kozerdeku-adatok&type=8",
+          "title": "Public-data use/reuse general terms",
+          "accessed_on": "2026-10-24",
+          "access": "official public-data terms table read; no entries in inspected response"
+        }
+      ]
+    },
+    {
+      "id": "croatia--city-of-zagreb",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "institution_name": "Gradska skupština Grada Zagreba",
+      "metadata": {
+        "institutional_route": "https://skupstina.zagreb.hr/",
+        "confirmed": "The Assembly's own route identifies the exact City of Zagreb body; it is separate from Zagreb County's assembly. Current institution and media designation are supported, without certifying every member or external identifier."
+      },
+      "official_media": {
+        "designated_provider": "https://www.youtube.com/channel/UCRMm4Xt9ruoQ8FG7NpIHCsA",
+        "designation": "The current institutional navigation links this exact channel for sitting broadcasts. The Assembly's 8 January 2024 media instructions independently give the same channel and own-site route.",
+        "access_observation": "YouTube page title identifies the Assembly, but web-reader output contains no dated proceedings. Do not treat this as no archives or a playback failure.",
+        "decoded_playback_checked": false
+      },
+      "epg": {
+        "calendar_route": "https://skupstina.zagreb.hr/rokovnik-sjednica/76",
+        "confirmed": "Own-site calendar exposes a 30 October 2026 human-rights coordination meeting. This is not automatically an Assembly plenary or broadcast. The institutional openness page describes published plenary/working-body agendas and materials.",
+        "machine_readable_broadcast_guide_confirmed": false,
+        "xmltv_ready": false,
+        "unresolved": "Match actual legislature/committee events to channel broadcasts, verify start/end/timezone and inspect the plenary-session route that failed in the web reader."
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_policy_not_located",
+          "source_ids": [
+            "zagreb-home"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "source_ids": [
+            "zagreb-media-instructions"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved_not_applicable_to_manifest_extraction",
+          "finding": "Use the designated provider page. No YouTube manifest extraction is proposed or performed.",
+          "source_ids": [
+            "zagreb-home",
+            "zagreb-media-instructions"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "The media instructions describe on-site reporting/filming and source credit. They do not expressly clear independent full-signal retransmission.",
+          "source_ids": [
+            "zagreb-media-instructions"
+          ]
+        },
+        "copying_recording": {
+          "status": "on_site_media_conditions_documented_digital_reuse_unresolved",
+          "finding": "The instructions allow specified on-site camera/audio work under access and location conditions. Digital copying of provider recordings is a separate unresolved use.",
+          "source_ids": [
+            "zagreb-media-instructions"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "source_credit_condition_confirmed_grant_scope_unresolved",
+          "finding": "Section XVI requires source credit when official video, audio and photographs are used. This condition is not treated as a blanket licence for every use.",
+          "source_ids": [
+            "zagreb-media-instructions"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "source_ids": [
+            "zagreb-calendar",
+            "zagreb-openness"
+          ]
+        }
+      },
+      "unresolved": [
+        "Find and decode dated ordinary-business samples on the designated channel.",
+        "Confirm plenary and committee recording/live coverage and audible language/accessibility tracks.",
+        "Resolve applicable per-use permissions separately from on-site press access and source-credit conditions.",
+        "Do not promote general public calendar items into XMLTV without an exact broadcast association."
+      ],
+      "sources": [
+        {
+          "id": "zagreb-home",
+          "url": "https://skupstina.zagreb.hr/",
+          "title": "Početna - Skupština Grada Zagreba",
+          "accessed_on": "2026-10-24",
+          "access": "official page and channel designation inspected"
+        },
+        {
+          "id": "zagreb-channel",
+          "url": "https://www.youtube.com/channel/UCRMm4Xt9ruoQ8FG7NpIHCsA",
+          "title": "Gradska skupština Grada Zagreba - YouTube",
+          "accessed_on": "2026-10-24",
+          "access": "title only in web reader; dated recordings/playback not confirmed"
+        },
+        {
+          "id": "zagreb-media-instructions",
+          "url": "https://skupstina.zagreb.hr/UserDocsImages/dokumenti/javnost_rada/Upute%20za%20pra%C4%87enje%20rada%20GS.pdf",
+          "title": "Upute za praćenje rada Gradske skupštine Grada Zagreba i njezinih radnih tijela od strane medija",
+          "published_on": "2024-01-08",
+          "accessed_on": "2026-10-24",
+          "access": "five-page official PDF text inspected, including sections III–VI, XIV and XVI"
+        },
+        {
+          "id": "zagreb-calendar",
+          "url": "https://skupstina.zagreb.hr/rokovnik-sjednica/76",
+          "title": "Rokovnik sjednica",
+          "accessed_on": "2026-10-24",
+          "access": "official web-reader calendar content inspected"
+        },
+        {
+          "id": "zagreb-openness",
+          "url": "https://skupstina.zagreb.hr/javnost-rada-21/21",
+          "title": "Javnost rada",
+          "accessed_on": "2026-10-24",
+          "access": "official search-index content inspected; plenary-session route linked by home returned web-reader internal error"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1847 @@
+{
+  "reviewed_on": "2026-10-24",
+  "title": "Asia-Pacific national chamber service follow-up – 18 exact chamber identities",
+  "scope": {
+    "records": 18,
+    "countries": 13,
+    "identities": "Exact current national-- inventory IDs; Indonesia DPR only, excluding separately assigned DPD/MPR. Shared parliamentary services require chamber-specific corroboration.",
+    "authority": "Eligibility inherited from inventory only; no legal re-adjudication."
+  },
+  "methodology": [
+    "Existing catalogue was read as historical route pointers only; no historic technical_status or permission label is treated as a new validation.",
+    "All rows have current primary-source read/search/fetch observations and explicit dimensions still unresolved. Access failures and shells are recorded as failed/partial checks, not successful validation or no-stream findings.",
+    "Web reader may return cached/indexed snapshots; date mismatches and fresh origin-fetch failures are retained.",
+    "No decoded playback was performed in this batch. Dated recording titles, previews and metadata are page evidence only.",
+    "Rights remain seven separate per-use dimensions. A shared broadcaster mandate is not a blanket licence; terms apply only to their specified work/service/chamber.",
+    "Future meeting notices, published timestamps, actual meeting dates, clip windows and broadcast EPG slots are distinct. Local clock strings are retained without invented timezones/end times.",
+    "Only public primary pages/indexed official sources used; no outreach, geo bypass, restricted access, media downloading, raw manifests or credentials."
+  ],
+  "summary": {
+    "exact_chamber_rows_reviewed": 18,
+    "fully_validated": 0,
+    "decoded_playback_samples": 0,
+    "unique_source_observations": 69,
+    "current_source_followup_includes_failed_access": true,
+    "all_metadata_media_epg_and_rights_certified": false
+  },
+  "sources": {
+    "au-watch": {
+      "id": "au-watch",
+      "url": "https://www.aph.gov.au/news_and_events/watch_parliament?page=1",
+      "title": "Watch, Read, Listen – Parliament of Australia",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_main_route_403",
+      "observation": "Official index designates Australian Parliament House Streaming Portal on YouTube for chamber broadcasts. Main Watch_Parliament URL direct fetch returned 403."
+    },
+    "au-calendar": {
+      "id": "au-calendar",
+      "url": "https://www.aph.gov.au/news_and_events/events_calendar/events_search_result?CalendarWidgetTarget=17-08-2012&drvh=1&expand=true&f=28%2F06%2F2012&pnuh=1&st=0&tab=tab2a&targetMonth=01-03-2012&to=28%2F06%2F2012",
+      "title": "2026 Parliamentary sittings",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed page says House agreed 2026 sitting dates on 26 November 2025 and Senate on 27 November 2025; exposes iCal plus PDF/Word links. URL has old widget parameters; do not derive dates from them."
+    },
+    "au-conditions": {
+      "id": "au-conditions",
+      "url": "https://www.aph.gov.au/News_and_Events/Watch_Read_Listen/Conditions_of_Access",
+      "title": "Conditions of Access",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Published shared AV conditions require official feed, fair/accurate balanced reports, no party/election or commercial advertising, no digital manipulation, withdrawals reported and chamber directions followed. Current origin fetch blocked; current chamber resolution precedence still needs confirmation."
+    },
+    "au-house-practice": {
+      "id": "au-house-practice",
+      "url": "https://www.aph.gov.au/About_Parliament/House_of_Representatives/Powers_practice_and_procedure/Practice7/HTML/Chapter4/Access_to_proceedings",
+      "title": "Access to proceedings – House of Representatives Practice",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official House-specific practice reproduces 9 December 2013 broadcast/rebroadcast resolution and separate committee authorization conditions. No technical player inspected."
+    },
+    "au-house-home": {
+      "id": "au-house-home",
+      "url": "https://www.aph.gov.au/About_Parliament/House_of_Representatives",
+      "title": "House of Representatives",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Fresh institutional page request returned 403; owned indexed House practice and House Review supply chamber-specific corroboration."
+    },
+    "au-senate-home": {
+      "id": "au-senate-home",
+      "url": "https://www.aph.gov.au/About_Parliament/Senate",
+      "title": "Senate",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Fresh institutional page request returned 403; separate owned indexed Senate Daily Summary corroborates current chamber activity."
+    },
+    "au-house-dated": {
+      "id": "au-house-dated",
+      "url": "https://www.aph.gov.au/-/media/05_About_Parliament/53_HoR/532_PPP/House_review/House_Review_2_to_12_March_2026.pdf",
+      "title": "House Review – 2 to 12 March 2026",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed procedural review records substantive 2026 House business. This is a document, not a decoded recording."
+    },
+    "au-senate-dated": {
+      "id": "au-senate-dated",
+      "url": "https://www.aph.gov.au/Parliamentary_Business/Chamber_documents/Senate_chamber_documents/sds",
+      "title": "Senate Daily Summary",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed 2026 chamber summary records substantive debates/orders; current exact recording sample not reached."
+    },
+    "in-ls": {
+      "id": "in-ls",
+      "url": "https://sansad.in/ls",
+      "title": "Digital Sansad – Lok Sabha",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned lower-chamber identity, members/business/committee navigation, October 2026 calendar shell and Sansad TV outgoing link."
+    },
+    "in-rs": {
+      "id": "in-rs",
+      "url": "https://sansad.in/rs",
+      "title": "Digital Sansad – Rajya Sabha",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned upper-chamber identity, members/business/committee navigation and October 2026 calendar shell."
+    },
+    "in-tv-about": {
+      "id": "in-tv-about",
+      "url": "https://sansadtv.nic.in/about-us",
+      "title": "About SANSAD TV",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official broadcaster mandate identifies parliamentary channel formed from Lok Sabha and Rajya Sabha TV; Hindi, English and other Indian languages. Direct about-page fetch timed out."
+    },
+    "in-tv-home": {
+      "id": "in-tv-home",
+      "url": "https://sansadtv.nic.in/",
+      "title": "Sansad TV",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Owned Lok Sabha footer link followed to broadcaster; fetch timed out. No current live player certified."
+    },
+    "in-tv-schedule": {
+      "id": "in-tv-schedule",
+      "url": "https://sansadtv.nic.in/program-schedule",
+      "title": "Sansad TV programme schedule",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Schedule fetch timed out; no content/feed/timings inspected."
+    },
+    "in-rs-policy": {
+      "id": "in-rs-policy",
+      "url": "https://sansad.in/rs/privacyPolicy",
+      "title": "Digital Sansad Rajya Sabha policy",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Previously retained policy route now returns 500. Historical policy wording not relabelled current."
+    },
+    "in-policies": {
+      "id": "in-policies",
+      "url": "https://sansad.in/websitePolicies",
+      "title": "Digital Sansad Website Policies",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Actual Rajya Sabha footer link returns 404; its termsAndConditions link also 404."
+    },
+    "in-ls-policy": {
+      "id": "in-ls-policy",
+      "url": "https://sansad.in/privacyPolicy",
+      "title": "Digital Sansad privacy policy",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Actual Lok Sabha footer link returns 404; no current per-use grant read."
+    },
+    "in-ls-sample": {
+      "id": "in-ls-sample",
+      "url": "https://sansadtv.nic.in/loksabha/ls-question-hour-budget-session-2026-2027-1100-am-1200-pm-29-january-2026",
+      "title": "LS – Question Hour – Budget Session 2026–2027 – 29 January 2026",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed page has YouTube player, 11:00–12:00 content window, 29 January 2026 sitting and upload 12:28 that day. No decoded player; content window is not a present live EPG."
+    },
+    "in-rs-sample": {
+      "id": "in-rs-sample",
+      "url": "https://sansadtv.nic.in/rajyasabha/rs-priyanka-chaturvedis-remarks-general-discussion-on-the-union-budget-for-2026-27-12-feb-2026",
+      "title": "RS – General Discussion on Union Budget 2026–27 – 12 February 2026",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed debate clip names 12 February sitting and 16 February 2026 upload, with YouTube player. Clip is not full sitting or decoded playback."
+    },
+    "id-akd": {
+      "id": "id-akd",
+      "url": "https://tvrparlemen.dpr.go.id/video_akd",
+      "title": "Video AKD — TVR PARLEMEN",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned DPR committee/plenary archive, broadcaster bureau identity and named commissions; list upload labels 22 October 2026. Actual sitting dates not established from these import labels."
+    },
+    "id-monitor": {
+      "id": "id-monitor",
+      "url": "https://tvrparlemen.dpr.go.id/streaming",
+      "title": "Monitoring Streaming — TVR PARLEMEN",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read named TVR, thirteen commissions and other bodies. Static response contains checking/no-agenda placeholders, not proof streams are unavailable."
+    },
+    "id-epg": {
+      "id": "id-epg",
+      "url": "https://tvrparlemen.dpr.go.id/epg",
+      "title": "Jadwal Siaran (EPG) — TVR PARLEMEN",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read current 24–30 October day tabs, each showing schedule not available in returned content; no timed entries or XMLTV feed verified."
+    },
+    "id-sample": {
+      "id": "id-sample",
+      "url": "https://tvrparlemen.dpr.go.id/video-akd/banggar-dpr-ri-raker-dengan-para-menko-kabinet-merah-putih",
+      "title": "BANGGAR DPR RI Raker dengan para Menko Kabinet Merah Putih",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Named substantive budget-committee archive entry followed; player page returned cache miss. 22 October label remains publication/import date, not confirmed proceeding date."
+    },
+    "il-channel-designation": {
+      "id": "il-channel-designation",
+      "url": "https://m.knesset.gov.il/en/news/pages/channel99.aspx",
+      "title": "The Knesset Channel",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official Knesset page identifies channel99, live plenary/committee broadcasting and Hebrew output; fresh index read. Main agenda access is location-restricted."
+    },
+    "il-live": {
+      "id": "il-live",
+      "url": "https://www.knesset.tv/live/",
+      "title": "ערוץ כנסת – שידורים חיים",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read current watch.knesset.tv iframe, plenum-agenda and policy links; adjacent programme description is a documentary, not necessarily parliamentary proceedings."
+    },
+    "il-terms": {
+      "id": "il-terms",
+      "url": "https://www.knesset.tv/documents/terms-and-privacy/",
+      "title": "תנאי שימוש ומדיניות פרטיות אתר ואפליקציית ערוץ כנסת 99",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read terms updated 2 March 2026. Personal use default; clause 3 distinguishes credited plenary/committee broadcasts from other channel programmes requiring prior authorization.",
+      "excerpt": "באדיבות ערוץ כנסת 99"
+    },
+    "il-geo": {
+      "id": "il-geo",
+      "url": "https://m.knesset.gov.il/Apps/plenum/agenda/",
+      "title": "Knesset plenum agenda",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "location_access_restriction",
+      "observation": "Actual channel footer agenda link redirects to maintenance-page-geo stating temporary inaccessibility from this location. No bypass attempted."
+    },
+    "jp-lower-home": {
+      "id": "jp-lower-home",
+      "url": "https://www.shugiin.go.jp/",
+      "title": "衆議院トップページ",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read current owned House homepage with 23 October 2026 updates and 26 October opening information; redirects to /internet/index.nsf/html/index.htm."
+    },
+    "jp-lower-tv": {
+      "id": "jp-lower-tv",
+      "url": "https://www.shugiintv.go.jp/jp/",
+      "title": "衆議院インターネット審議中継",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read official chamber TV portal: current 222nd Diet session 5 October–12 December 2026, no broadcast listed today, 26 October 15:00 political-reform special committee planned, searchable archive since 2010."
+    },
+    "jp-lower-rights": {
+      "id": "jp-lower-rights",
+      "url": "https://www.shugiintv.go.jp/jp/index.php?ex=CR",
+      "title": "著作権・リンク・登録商標について",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read service-specific copyright policy: links generally free; text, photos and video are copyright protected, use within copyright-law scope. No blanket independent player/rebroadcast grant."
+    },
+    "jp-upper-home": {
+      "id": "jp-upper-home",
+      "url": "https://www.sangiin.go.jp/",
+      "title": "House of Councillors",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Owned chamber homepage returned UnexpectedStatusCode; Japanese index alternative inaccessible."
+    },
+    "jp-upper-tv": {
+      "id": "jp-upper-tv",
+      "url": "https://www.webtv.sangiin.go.jp/webtv/index.php",
+      "title": "参議院インターネット審議中継",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Current TV index fetch timed out; domain root returned empty body."
+    },
+    "jp-upper-sample": {
+      "id": "jp-upper-sample",
+      "url": "https://www.webtv.sangiin.go.jp/webtv/detail.php?sid=8898",
+      "title": "総務委員会 – 2026年3月24日",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read official substantive committee archive detail: 24 March 2026, approximately 6h6m label, topics/speakers and player-start image. Caption text is automatic, may err; formal minutes are official record. No decoded playback."
+    },
+    "kr-home": {
+      "id": "kr-home",
+      "url": "https://www.assembly.go.kr/portal/main/main.do",
+      "title": "대한민국 국회",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Owned Assembly route and domain root returned Bad Request. Current institution metadata not refreshed beyond retained inventory identity."
+    },
+    "kr-onair": {
+      "id": "kr-onair",
+      "url": "https://www.natv.go.kr/natv/onair.do",
+      "title": "NATV on-air",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Current official on-air route and NATV root returned Bad Request; no programme/player content inspected."
+    },
+    "kr-copyright": {
+      "id": "kr-copyright",
+      "url": "https://www.natv.go.kr/natv/info/natvCopyright.do",
+      "title": "NATV copyright policy",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Current www route inaccessible and non-www route returned Bad Request. Historical catalogue’s work-specific KOGL guidance remains a pointer, not a fresh rights finding."
+    },
+    "mn-timetable": {
+      "id": "mn-timetable",
+      "url": "https://tov.parliament.mn/",
+      "title": "Хуралдааны тов · 2026-10-26 — 2026-10-30",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned State Great Khural timetable with dated 26–30 October 2026 plenary, standing/subcommittee, working-group and party-group filters, local times, rooms and ICS download control. A separate bounded public HTTP 200 HTML fetch extracted /feed/week/TOV-20261026.ics; calendar payload not requested."
+    },
+    "mn-live": {
+      "id": "mn-live",
+      "url": "https://att.parliament.mn/live",
+      "title": "State Great Khural live/session route",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Owned live route returned 403; no current media source, YouTube ID or decoded playback verified."
+    },
+    "mn-home": {
+      "id": "mn-home",
+      "url": "https://www.parliament.mn/",
+      "title": "Монгол Улсын Их Хурал",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "empty_redirected_body",
+      "observation": "Redirect to parliament.mn returned empty body; institution identity and linked member/authority routes are visible on own timetable service."
+    },
+    "nz-home": {
+      "id": "nz-home",
+      "url": "https://www.parliament.nz/",
+      "title": "New Zealand Parliament",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read current owned homepage with House seating/order-paper links and explicit live/recorded designation of videos.parliament.nz. Homepage discusses dissolution/election transition, so continuous live sitting must not be assumed."
+    },
+    "nz-video": {
+      "id": "nz-video",
+      "url": "https://videos.parliament.nz/",
+      "title": "Parliament in action",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_player_shell_read",
+      "access": "unhandled_error_shell",
+      "observation": "Owned videos service returned an unhandled-error shell in text reader. No decoded recording or current live feed checked."
+    },
+    "nz-calendar": {
+      "id": "nz-calendar",
+      "url": "https://www.parliament.nz/calendar?lang=en",
+      "title": "Parliament Calendar",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read new owned calendar with House/committee filters, October 2026 grid, PDF sitting programme link and ICS-export label. Returned day label was 23 October despite review on 24 October; note cache/render freshness."
+    },
+    "nz-terms": {
+      "id": "nz-terms",
+      "url": "https://www3.parliament.nz/en/get-involved/information-for-the-press/parliament-tv-terms-and-conditions/",
+      "title": "Parliament TV terms and conditions",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read published terms updated 19 November 2019: live House coverage available for television/webcast/recording, legal obligations, no commercial sponsorship/advertising, no misleading use, Parliament may direct cessation/alteration."
+    },
+    "nz-old-calendar": {
+      "id": "nz-old-calendar",
+      "url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+      "title": "Historical calendar host",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Old catalogue calendar host is inaccessible to reader; new official /calendar route is readable."
+    },
+    "nz-old-copyright": {
+      "id": "nz-old-copyright",
+      "url": "https://www.parliament.nz/en/footer/copyright/",
+      "title": "Historical copyright route",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Old copyright route returns 404; no general programme-data licence inferred from TV coverage terms."
+    },
+    "my-home": {
+      "id": "my-home",
+      "url": "https://www.parlimen.gov.my/",
+      "title": "Portal Rasmi Parlimen Malaysia",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Fresh owned homepage request timed out; non-www root also timed out."
+    },
+    "my-rakyat-calendar": {
+      "id": "my-rakyat-calendar",
+      "url": "https://parlimen.gov.my/takwim-dewan-rakyat.html?uweb=dr",
+      "title": "Takwim Dewan Rakyat – 2026",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed fifth-session 15th Parliament calendar: third meeting 5 October–8 December 2026; published sitting hours Mon–Thu 10:00–13:00 and 14:30–17:30. Updated 12 September. Direct fetch timed out/502."
+    },
+    "my-negara-calendar": {
+      "id": "my-negara-calendar",
+      "url": "https://www.parlimen.gov.my/m/takwim-dewan-negara.html?uweb=dn",
+      "title": "Takwim Dewan Negara – 2026",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed calendar: second meeting 20 July–4 August and third planned 30 November–22 December 2026; published Mon–Thu hours 10:00–13:00 and 14:30–17:30. Updated 10 September. Direct fetch 502."
+    },
+    "my-youtube": {
+      "id": "my-youtube",
+      "url": "https://www.youtube.com/channel/UCu2I5HXcZudP59E5Ld10K_g/streams",
+      "title": "PARLIMEN MALAYSIA – YouTube",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_player_shell_read",
+      "access": "historical_pointer_current_shell_only",
+      "observation": "Retained catalogue channel pointer fetched afresh; title is PARLIMEN MALAYSIA but only YouTube footer shell returned (cached footer 2025). No current chamber recording list, decoded sample or new owned-site designation established."
+    },
+    "th-house-home": {
+      "id": "th-house-home",
+      "url": "https://www.parliament.go.th/",
+      "title": "House of Representatives / National Assembly portal",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Current main portal request timed out. Current House broadcaster route resolves separately as SPA shell."
+    },
+    "th-house-live": {
+      "id": "th-house-live",
+      "url": "https://live.parliament.go.th/Home/View/1",
+      "title": "สํานักงานเลขาธิการสภาผู้แทนราษฎร",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "spa_identity_shell",
+      "observation": "Actual House service redirects to /th?callbackUrl=/Home/View/1 and returns Secretariat identity/contact shell, without returned event/player data."
+    },
+    "th-house-live-index": {
+      "id": "th-house-live-index",
+      "url": "https://live.parliament.go.th/Home/View/1",
+      "title": "House of Representatives broadcasting service",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed page mentions 27th House first-year 9 September 2569 sitting/budget business; current reader redirect is a short SPA shell, so indexed programme does not prove current video availability."
+    },
+    "th-tp": {
+      "id": "th-tp",
+      "url": "https://tpchannel.org/broadcasts/tv",
+      "title": "สถานีวิทยุกระจายเสียงและวิทยุโทรทัศน์รัฐสภา",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read National Assembly Radio and Television Broadcasting Station live TV landing/navigation. Text has no decoded player or current programme; TV schedule follow failed, organization page redirected to landing shell."
+    },
+    "th-senate-home": {
+      "id": "th-senate-home",
+      "url": "https://www.senate.go.th/",
+      "title": "วุฒิสภา",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Current owned Senate root timed out; index.html alternative 404. No bypass attempted."
+    },
+    "th-senate-index": {
+      "id": "th-senate-index",
+      "url": "https://www.senate.go.th/",
+      "title": "วุฒิสภา",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_search_index_content",
+      "access": "indexed_content_read",
+      "observation": "Official indexed Senate page has live-broadcast, dated 2569 activity and meeting/minutes/voting navigation. Actual player/current programme not reached."
+    },
+    "th-senate-motion": {
+      "id": "th-senate-motion",
+      "url": "https://lis.senate.go.th/motion_detail.php?i=466",
+      "title": "Senate motion – Rama II road construction",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Owned Senate legislative information page read: motion considered 18 March 2568 (2025), recommendations sent onward. Search index additionally displays 1 October 2569 pending follow-up, absent from returned page; freshness conflict retained."
+    },
+    "lk-home": {
+      "id": "lk-home",
+      "url": "https://www.parliament.lk/en",
+      "title": "Parliament of Sri Lanka",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read current English owned home, member/business/committee navigation, chamber/committee live and recorded links, official YouTube designation, recording labels 21–23 October 2026 and November business announcement."
+    },
+    "lk-live": {
+      "id": "lk-live",
+      "url": "https://www.parliament.lk/en/parliament-live/chamber-live",
+      "title": "Parliament Live",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned live page: no proceedings to webcast at this moment. This is a point-in-time page status, not a finding that no live service exists."
+    },
+    "lk-recordings": {
+      "id": "lk-recordings",
+      "url": "https://www.parliament.lk/en/parliament-live/chamber-on-demand",
+      "title": "Parliament Live – Recorded",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Current archive navigation fetch timed out; latest 23 October recording card follow also failed. No decoded recording."
+    },
+    "lk-business": {
+      "id": "lk-business",
+      "url": "https://www.parliament.lk/en/home/forthcoming-business-of-the-house/view/5493",
+      "title": "Business for November First Sitting Week",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Current owned business page links official PDF; home labels announcement 23 October 2026."
+    },
+    "lk-pdf": {
+      "id": "lk-pdf",
+      "url": "https://www.parliament.lk/uploaded/news/nov-1st-bus.pdf",
+      "title": "Programme of Business – November First Sitting Week",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_pdf_read",
+      "access": "content_read",
+      "observation": "Read two-page PDF dated 23 October 2026 with timed agenda blocks. Intro says October and malformed Tuesday-6th to Friday-6th November range; do not auto-correct into a guide."
+    },
+    "lk-privacy": {
+      "id": "lk-privacy",
+      "url": "https://www.parliament.lk/en/privacy-policy",
+      "title": "Privacy Policy",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read data collection/use/privacy policy and all-rights-reserved footer; policy supplies no audiovisual reuse licence."
+    },
+    "tl-videos": {
+      "id": "tl-videos",
+      "url": "https://www.parlamento.tl/videos",
+      "title": "Parlamento Nacional – Vídeos",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned National Parliament identity, PT/TET selector, committee and plenary YouTube links. 15 July 2026 plenary title has 4 August 2026 publication timestamp; 13 July plenary has same-day publication."
+    },
+    "tl-events": {
+      "id": "tl-events",
+      "url": "https://www.parlamento.tl/eventos",
+      "title": "Parlamento Nacional – Arquivo de Eventos",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned event archive: opening of fourth session of VI legislature on 15 September 2026. Events archive is not a timed broadcast schedule."
+    },
+    "tl-terms": {
+      "id": "tl-terms",
+      "url": "https://www.parlamento.tl/videos",
+      "title": "Termos de Uso / Política de Privacidade – footer links",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_link_follow",
+      "access": "placeholder_terms_links",
+      "observation": "Actual Terms of Use, Privacy and Sitemap footer links resolve back to current video page; no standalone terms text found. All-rights-reserved footer is visible."
+    },
+    "tw-forecast": {
+      "id": "tw-forecast",
+      "url": "https://ivod.ly.gov.tw/index.php/Forecast",
+      "title": "會議預報 – 立法院議事轉播 iVOD",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned forecast with 27 October 2026 09:00 plenary, committee dates/times/rooms/topics and public meeting-document links. Some entries explicitly include secret meetings and repeats across sections; no all-meetings-live assumption."
+    },
+    "tw-live": {
+      "id": "tw-live",
+      "url": "https://ivod.ly.gov.tw/index.php/Live",
+      "title": "最新實況 – 立法院議事轉播 iVOD",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned live-service navigation and Legislative Yuan address; returned current content has no player items. Not a no-broadcast finding."
+    },
+    "tw-demand": {
+      "id": "tw-demand",
+      "url": "https://ivod.ly.gov.tw/index.php/Demand",
+      "title": "會議隨選 – 立法院議事轉播 iVOD",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read owned on-demand member/search navigation and former-member distinction; actual dated video result/player not selected."
+    },
+    "tw-copyright": {
+      "id": "tw-copyright",
+      "url": "https://ivod.ly.gov.tw/index.php/Copyright",
+      "title": "著作權聲明 – 立法院議事轉播 iVOD",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_page_read",
+      "access": "content_read",
+      "observation": "Read iVOD-specific terms: download/copy for personal noncommercial use; copyright-law compliance, no profit-oriented change/distribution/broadcast/resale/reproduction/adaptation/etc.; notices cannot be removed or altered."
+    },
+    "tw-ptv": {
+      "id": "tw-ptv",
+      "url": "https://www.parliamentarytv.org.tw/",
+      "title": "Taiwan Parliamentary TV",
+      "accessed_on": "2026-10-24",
+      "evidence_level": "web_fetch_attempt",
+      "access": "access_failed",
+      "observation": "Historical viewing route returned 403. Owned iVOD service is independently readable and reviewed; no rights inherited from Parliamentary TV."
+    }
+  },
+  "records": [
+    {
+      "id": "national--au-lc01",
+      "name": "House of Representatives",
+      "country": "Australia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.aph.gov.au/About_Parliament/House_of_Representatives",
+      "metadata": {
+        "status": "owned_index_corroborated_current_access_403",
+        "finding": "Exact chamber corroborated by its own current indexed proceedings source; fresh main route is 403, not a successful metadata refresh."
+      },
+      "official_media": {
+        "status": "shared_official_youtube_designation_indexed",
+        "provider": "Australian Parliament House Streaming Portal / YouTube",
+        "finding": "Official shared viewing index names chamber broadcasts; no current per-chamber live link or decoded sample verified."
+      },
+      "epg": {
+        "status": "indexed_2026_sitting_calendar_ical_lead",
+        "formats": [
+          "indexed iCal link",
+          "PDF/Word calendar links"
+        ],
+        "finding": "Both chambers’ agreement dates recorded; iCal content/timezone and actual broadcast schedule not fetched."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "published_conditional_official_feed_access",
+          "finding": "Indexed shared conditions describe rebroadcast subject to official-feed and reporting restrictions; not unrestricted redistribution."
+        },
+        "copying_recording": {
+          "status": "published_conditional_official_feed_access",
+          "finding": "Recording from official feeds is addressed by published conditions; undertaking and current scope need confirmation."
+        },
+        "audiovisual_reuse": {
+          "status": "restricted_conditional_use",
+          "finding": "Use only within the shared conditions; editing/general entertainment reuse is not cleared."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "au-house-home",
+        "au-watch",
+        "au-calendar",
+        "au-conditions",
+        "au-house-practice",
+        "au-house-dated"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Origin access/robots restrictions prevented deeper current page/player inspection; no bypass attempted."
+      ]
+    },
+    {
+      "id": "national--au-uc01",
+      "name": "Senate",
+      "country": "Australia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.aph.gov.au/About_Parliament/Senate",
+      "metadata": {
+        "status": "owned_index_corroborated_current_access_403",
+        "finding": "Exact chamber corroborated by its own current indexed proceedings source; fresh main route is 403, not a successful metadata refresh."
+      },
+      "official_media": {
+        "status": "shared_official_youtube_designation_indexed",
+        "provider": "Australian Parliament House Streaming Portal / YouTube",
+        "finding": "Official shared viewing index names chamber broadcasts; no current per-chamber live link or decoded sample verified."
+      },
+      "epg": {
+        "status": "indexed_2026_sitting_calendar_ical_lead",
+        "formats": [
+          "indexed iCal link",
+          "PDF/Word calendar links"
+        ],
+        "finding": "Both chambers’ agreement dates recorded; iCal content/timezone and actual broadcast schedule not fetched."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "published_conditional_official_feed_access",
+          "finding": "Indexed shared conditions describe rebroadcast subject to official-feed and reporting restrictions; not unrestricted redistribution."
+        },
+        "copying_recording": {
+          "status": "published_conditional_official_feed_access",
+          "finding": "Recording from official feeds is addressed by published conditions; undertaking and current scope need confirmation."
+        },
+        "audiovisual_reuse": {
+          "status": "restricted_conditional_use",
+          "finding": "Use only within the shared conditions; editing/general entertainment reuse is not cleared."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "au-senate-home",
+        "au-watch",
+        "au-calendar",
+        "au-conditions",
+        "au-senate-dated"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Origin access/robots restrictions prevented deeper current page/player inspection; no bypass attempted."
+      ]
+    },
+    {
+      "id": "national--id-lc01",
+      "name": "House of Representatives (DPR RI)",
+      "country": "Indonesia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://tvrparlemen.dpr.go.id/",
+      "metadata": {
+        "status": "owned_dpr_broadcaster_page_read",
+        "finding": "DPR bureau identity and separate committee/plenary archive confirmed; no DPD or MPR service inherited."
+      },
+      "official_media": {
+        "status": "owned_multichannel_archive_monitoring_service",
+        "provider": "TVR Parlemen; exact media provider unresolved",
+        "finding": "Official archive and multichannel monitoring page read, selected budget-committee page could not be fetched; no decoded sample."
+      },
+      "epg": {
+        "status": "owned_epg_page_without_returned_entries",
+        "finding": "Current dated EPG exists but returned no schedules for 24–30 October. This is a content/SPA gap, not no-meetings evidence."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Reviewed owned pages carry copyright footer; domain-scoped rights searches/information-link follow did not establish applicable AV terms."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "id-akd",
+        "id-monitor",
+        "id-epg",
+        "id-sample"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Resolve actual proceeding dates, public player, EPG data loading and published reuse policy."
+      ]
+    },
+    {
+      "id": "national--il-lc01",
+      "name": "Knesset",
+      "country": "Israel",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://m.knesset.gov.il/",
+      "metadata": {
+        "status": "official_chamber_channel_designation_indexed",
+        "finding": "Official Knesset channel designation corroborated; main agenda has explicit location restriction."
+      },
+      "official_media": {
+        "status": "current_channel_iframe_page_read_not_decoded",
+        "provider": "Knesset Channel / watch.knesset.tv",
+        "finding": "Live page read; current adjacent documentary description demonstrates why channel output cannot be treated as all plenary/committee coverage."
+      },
+      "epg": {
+        "status": "official_agenda_route_location_restricted",
+        "finding": "Plenary agenda link verified but inaccessible from this location; current programme slots, committees feed and XMLTV not established."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "conditional_proceedings_only",
+          "finding": "Terms describe use of plenary/committee broadcasts with prominent language-appropriate credit; exact legal/technical implementation and non-proceeding exclusion require confirmation."
+        },
+        "copying_recording": {
+          "status": "personal_use_and_proceedings_exception_scoped",
+          "finding": "Default viewing service is private/personal; a broader recording right cannot be inferred for all channel programmes."
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_proceedings_other_programmes_permission_required",
+          "finding": "Only scoped proceeding use described in terms; other channel programmes require prior authorization and credit."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "il-channel-designation",
+        "il-live",
+        "il-terms",
+        "il-geo"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Separate proceeding content from other programmes; confirm credit and per-use implementation before broader playback/reuse."
+      ]
+    },
+    {
+      "id": "national--in-lc01",
+      "name": "House of the People (Lok Sabha)",
+      "country": "India",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://sansad.in/ls",
+      "metadata": {
+        "status": "owned_exact_chamber_home_read",
+        "finding": "Exact chamber identity and current calendar/navigation read; member roster not individually verified."
+      },
+      "official_media": {
+        "status": "designated_shared_broadcaster_indexed_chamber_sample",
+        "provider": "Sansad TV / YouTube",
+        "sample_date": "2026-01-29",
+        "finding": "Each chamber has its own indexed proceeding sample; shared broadcaster mandate explicitly names both houses. Live channel-to-chamber assignment and playback remain unverified."
+      },
+      "epg": {
+        "status": "chamber_calendar_shell_schedule_access_failure",
+        "formats": [
+          "HTML calendar shell",
+          "indexed dated recording/clip metadata"
+        ],
+        "finding": "October calendar body did not expose meeting entries. Broadcaster programme schedule timed out; no XMLTV/ICS/API verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Direct broadcaster rights not established; actual portal policy links failed. Historical portal policy must not be applied automatically to Sansad TV."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "in-ls",
+        "in-tv-about",
+        "in-tv-home",
+        "in-tv-schedule",
+        "in-ls-sample",
+        "in-rs-policy",
+        "in-policies",
+        "in-ls-policy"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Current applicable portal/broadcaster licence and exact live chamber mapping remain open."
+      ]
+    },
+    {
+      "id": "national--in-uc01",
+      "name": "Council of States (Rajya Sabha)",
+      "country": "India",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://sansad.in/rs",
+      "metadata": {
+        "status": "owned_exact_chamber_home_read",
+        "finding": "Exact chamber identity and current calendar/navigation read; member roster not individually verified."
+      },
+      "official_media": {
+        "status": "designated_shared_broadcaster_indexed_chamber_sample",
+        "provider": "Sansad TV / YouTube",
+        "sample_date": "2026-02-12",
+        "finding": "Each chamber has its own indexed proceeding sample; shared broadcaster mandate explicitly names both houses. Live channel-to-chamber assignment and playback remain unverified."
+      },
+      "epg": {
+        "status": "chamber_calendar_shell_schedule_access_failure",
+        "formats": [
+          "HTML calendar shell",
+          "indexed dated recording/clip metadata"
+        ],
+        "finding": "October calendar body did not expose meeting entries. Broadcaster programme schedule timed out; no XMLTV/ICS/API verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Direct broadcaster rights not established; actual portal policy links failed. Historical portal policy must not be applied automatically to Sansad TV."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "in-rs",
+        "in-tv-about",
+        "in-tv-home",
+        "in-tv-schedule",
+        "in-rs-sample",
+        "in-rs-policy",
+        "in-policies",
+        "in-ls-policy"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Current applicable portal/broadcaster licence and exact live chamber mapping remain open."
+      ]
+    },
+    {
+      "id": "national--jp-lc01",
+      "name": "House of Representatives",
+      "country": "Japan",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.shugiin.go.jp/",
+      "metadata": {
+        "status": "owned_exact_chamber_home_read",
+        "finding": "Current House homepage and its separate owned broadcast portal read."
+      },
+      "official_media": {
+        "status": "current_owned_broadcast_archive_portal",
+        "provider": "Shugiin Internet TV",
+        "finding": "Owned current session/next committee schedule and searchable archive confirmed; no dated substantive recording selected/decoded in this initial pass."
+      },
+      "epg": {
+        "status": "owned_html_next_meeting_and_searchable_archive",
+        "finding": "26 October 2026 at 15:00 political-reform committee is planned; next-meeting notices ordinarily appear after 15:00 preceding day. No broadcast end/timezone/ICS/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "generally_permitted",
+          "finding": "House TV service explicitly states links to its homepage are generally free."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. House-specific copyright page preserves text/photo/video copyright; statutory exceptions are not assessed here."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "jp-lower-home",
+        "jp-lower-tv",
+        "jp-lower-rights"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Select and decode substantive archive sample; independent playback and reuse permission remain open."
+      ]
+    },
+    {
+      "id": "national--jp-uc01",
+      "name": "House of Councillors (Sangiin)",
+      "country": "Japan",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.sangiin.go.jp/",
+      "metadata": {
+        "status": "owned_chamber_service_detail_read_index_access_limited",
+        "finding": "Own upper-chamber archive detail is readable despite home/index failures. Inventory label Senate is represented here by official House of Councillors name."
+      },
+      "official_media": {
+        "status": "substantive_dated_own_archive_page_read",
+        "provider": "Sangiin WebTV",
+        "sample_date": "2026-03-24",
+        "finding": "General Affairs Committee detail has approximate duration 6h6m and speaker/topic data; automatic captions are not official minutes. Player was not decoded."
+      },
+      "epg": {
+        "status": "archive_metadata_current_index_unavailable",
+        "finding": "Specific historical committee date/duration verified as page metadata; current schedule index timed out, so no next-live EPG or machine feed verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Selected upper-chamber archive warns against republication to mock automatically captioned footage and notes copyright risk; this is not a general reuse grant."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "jp-upper-home",
+        "jp-upper-tv",
+        "jp-upper-sample"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Resolve current TV index and general copyright/link policy; dated recording metadata is not live validation."
+      ]
+    },
+    {
+      "id": "national--kr-lc01",
+      "name": "National Assembly",
+      "country": "South Korea",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.assembly.go.kr/",
+      "metadata": {
+        "status": "current_institution_route_access_failure",
+        "finding": "Fresh public Assembly/NATV checks failed; no successful current metadata/body page read."
+      },
+      "official_media": {
+        "status": "retained_official_service_route_current_fetch_failed",
+        "provider": "NATV (historical pointer; current content unavailable)",
+        "finding": "Actual on-air page not inspected; historical catalogue technical/media observations are not revalidated."
+      },
+      "epg": {
+        "status": "current_schedule_unresolved_due_access",
+        "finding": "On-air/schedule content unavailable to this reader; no current programme times, API, ICS or XMLTV established."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Current copyright policy could not be read. Do not promote historical work-specific KOGL labels into blanket on-air permission."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "kr-home",
+        "kr-onair",
+        "kr-copyright"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Revisit through ordinary public browser access; exact programme ownership/KOGL mark and applicable rights remain unresolved."
+      ]
+    },
+    {
+      "id": "national--lk-lc01",
+      "name": "Parliament",
+      "country": "Sri Lanka",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.parliament.lk/en",
+      "metadata": {
+        "status": "owned_current_institution_home_read",
+        "finding": "Current home and member/business/committee navigation confirmed; Sinhala/Tamil/English language selector exists, broadcast coverage by language not fully verified."
+      },
+      "official_media": {
+        "status": "owned_live_page_and_current_recording_cards",
+        "provider": "official Parliament service / designated YouTube",
+        "finding": "Home lists 21–23 October 2026 recordings; live page says no current webcast. Archive and selected record fetches failed; no decoded sample."
+      },
+      "epg": {
+        "status": "current_pdf_timed_business_with_date_conflict",
+        "formats": [
+          "HTML calendar/navigation",
+          "PDF timed business"
+        ],
+        "finding": "Official November business PDF contains time blocks but internally contradictory month/date prose. Resolve against order paper/current announcement before parsing; no reliable machine EPG certified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Current privacy policy concerns personal data, not AV reuse; copyright footer reserves rights and no applicable grant was established."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "lk-home",
+        "lk-live",
+        "lk-recordings",
+        "lk-business",
+        "lk-pdf",
+        "lk-privacy"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Reconcile malformed PDF dates; inspect latest recording/provider and source-specific AV/programme-data terms."
+      ]
+    },
+    {
+      "id": "national--mn-lc01",
+      "name": "State Great Khural",
+      "country": "Mongolia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://parliament.mn/",
+      "metadata": {
+        "status": "owned_institutional_timetable_read_home_shell",
+        "finding": "Timetable independently identifies State Great Khural and member/authority navigation; homepage response is empty."
+      },
+      "official_media": {
+        "status": "official_live_route_403",
+        "provider": null,
+        "finding": "No fresh playback/media designation established. Historical commercial GO+/DASH experiment is not confirmed, promoted or copied into this report."
+      },
+      "epg": {
+        "status": "current_owned_html_timetable_ics_download_lead",
+        "formats": [
+          "HTML weekly timetable",
+          "ICS download control"
+        ],
+        "finding": "Upcoming 26–30 October 2026 schedule includes room/type/time data. Reader follow failed, but one public HTTP 200 fetch of the timetable HTML confirmed the ICS anchor /feed/week/TOV-20261026.ics. The calendar payload, timezone and refresh mechanics remain unverified. Party/working-group meetings are not assumed to be broadcast plenary sessions.",
+        "calendar_url": "https://tov.parliament.mn/feed/week/TOV-20261026.ics"
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Owned timetable lacks a reviewed reuse grant; domain-scoped rights search yielded unrelated material, not an AV/programme-data licence."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "mn-timetable",
+        "mn-live",
+        "mn-home"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Inspect actual ICS payload and exact public proceeding player; no live/AV rights certification."
+      ]
+    },
+    {
+      "id": "national--my-lc01",
+      "name": "House of Representatives (Dewan Rakyat)",
+      "country": "Malaysia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://parlimen.gov.my/takwim-dewan-rakyat.html?uweb=dr",
+      "metadata": {
+        "status": "owned_chamber_specific_calendar_indexed_access_limited",
+        "finding": "Separate current official chamber calendar corroborates exact identity; homepage and calendar origin fetches failed, so roster/current metadata not fully refreshed."
+      },
+      "official_media": {
+        "status": "retained_shared_channel_pointer_shell_only",
+        "provider": "PARLIMEN MALAYSIA / YouTube (historical designation pointer)",
+        "finding": "Fresh channel request returned title/footer only. Neither chamber inherits verified current live/archive coverage from the other; current chamber-specific sample not reached."
+      },
+      "epg": {
+        "status": "official_indexed_2026_chamber_calendar",
+        "finding": "Own chamber has different meeting windows. Published general sitting hours are a schedule template, not guaranteed continuous broadcast slots; no ICS/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Fresh official-site access failed and domain-scoped copyright searches did not establish applicable audiovisual or programme-data terms."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "my-home",
+        "my-rakyat-calendar",
+        "my-youtube"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Resolve current owned outgoing channel link, dated chamber-specific sample and licence policy."
+      ]
+    },
+    {
+      "id": "national--my-uc01",
+      "name": "Senate (Dewan Negara)",
+      "country": "Malaysia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.parlimen.gov.my/m/takwim-dewan-negara.html?uweb=dn",
+      "metadata": {
+        "status": "owned_chamber_specific_calendar_indexed_access_limited",
+        "finding": "Separate current official chamber calendar corroborates exact identity; homepage and calendar origin fetches failed, so roster/current metadata not fully refreshed."
+      },
+      "official_media": {
+        "status": "retained_shared_channel_pointer_shell_only",
+        "provider": "PARLIMEN MALAYSIA / YouTube (historical designation pointer)",
+        "finding": "Fresh channel request returned title/footer only. Neither chamber inherits verified current live/archive coverage from the other; current chamber-specific sample not reached."
+      },
+      "epg": {
+        "status": "official_indexed_2026_chamber_calendar",
+        "finding": "Own chamber has different meeting windows. Published general sitting hours are a schedule template, not guaranteed continuous broadcast slots; no ICS/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Fresh official-site access failed and domain-scoped copyright searches did not establish applicable audiovisual or programme-data terms."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "my-home",
+        "my-negara-calendar",
+        "my-youtube"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Resolve current owned outgoing channel link, dated chamber-specific sample and licence policy."
+      ]
+    },
+    {
+      "id": "national--nz-lc01",
+      "name": "House of Representatives",
+      "country": "New Zealand",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.parliament.nz/",
+      "metadata": {
+        "status": "owned_current_house_portal_read",
+        "finding": "Current House service and election/dissolution transition read; individual roster not revalidated."
+      },
+      "official_media": {
+        "status": "owned_video_designation_service_error_shell",
+        "provider": "videos.parliament.nz",
+        "finding": "Official homepage designates live/recorded service; service fetch has application error, so playback unresolved."
+      },
+      "epg": {
+        "status": "owned_new_calendar_pdf_ics_export_lead",
+        "finding": "New /calendar route reads; old catalogue calendar host fails. ICS-export label exposed but payload not verified; House versus committee and sitting/election gaps require filtering."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "implementation_unresolved",
+          "finding": "Webcast availability is explicit, but this specific player’s embed implementation/provider conditions were not inspected."
+        },
+        "direct_playback": {
+          "status": "conditional_house_coverage_use",
+          "finding": "Published TV terms make live House coverage available for webcast/broadcast/recording, subject to the conditions in nz-terms; technical player and full content scope remain unverified."
+        },
+        "rebroadcast": {
+          "status": "conditional_house_coverage_use",
+          "finding": "Published TV terms make live House coverage available for webcast/broadcast/recording, subject to the conditions in nz-terms; technical player and full content scope remain unverified."
+        },
+        "copying_recording": {
+          "status": "conditional_house_coverage_use",
+          "finding": "Published TV terms make live House coverage available for webcast/broadcast/recording, subject to the conditions in nz-terms; technical player and full content scope remain unverified."
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_coverage_not_blanket_editing_grant",
+          "finding": "Do not mislead, add commercial sponsorship/advertising or disregard a Parliament direction; other footage/programmes need separate scope review."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "nz-home",
+        "nz-video",
+        "nz-calendar",
+        "nz-terms",
+        "nz-old-calendar",
+        "nz-old-copyright"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Test current application in ordinary browser; reconcile calendar cache/date and inspect actual ICS export."
+      ]
+    },
+    {
+      "id": "national--th-lc01",
+      "name": "House of Representatives",
+      "country": "Thailand",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.parliament.go.th/",
+      "metadata": {
+        "status": "owned_house_secretariat_service_shell_read",
+        "finding": "Exact House Secretariat identity available on owned live service; main portal fetch failed."
+      },
+      "official_media": {
+        "status": "owned_house_spa_service_shared_tv_landing",
+        "provider": "House live.parliament.go.th and TPchannel",
+        "finding": "House route supplies only identity shell; indexed budget-session lead is not decoded. TPchannel is a shared parliamentary station, not proof this chamber is currently on air."
+      },
+      "epg": {
+        "status": "current_schedule_access_gap",
+        "finding": "Owned TV schedule follow failed; indexed House 9 September 2569 proceeding is only a lead. No current chamber schedule/parser/ICS/XMLTV verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Reviewed TPchannel/House pages and domain-scoped searches did not establish an applicable third-party licence."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "th-house-home",
+        "th-house-live",
+        "th-house-live-index",
+        "th-tp"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Resolve rendered House programme/player and chamber-specific rights; do not infer all parliamentary TV output is House proceedings."
+      ]
+    },
+    {
+      "id": "national--th-uc01",
+      "name": "Senate",
+      "country": "Thailand",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.senate.go.th/",
+      "metadata": {
+        "status": "owned_senate_legislative_detail_read_home_access_limited",
+        "finding": "Own Senate motion record confirms exact body; indexed homepage offers live/minutes navigation, current root inaccessible."
+      },
+      "official_media": {
+        "status": "senate_owned_index_live_lead_player_unresolved",
+        "provider": null,
+        "finding": "Senate-owned indexed page advertises broadcasts, but actual Senate player/recording not reached. House live route is not substituted for Senate coverage."
+      },
+      "epg": {
+        "status": "dated_legislative_record_not_broadcast_guide",
+        "finding": "Motion record dated 18 March 2568 is a legislative-document sample, not media. Indexed 1 October 2569 follow-up differs from returned page and cannot be treated as confirmed event/EPG. No current feed verified."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Senate copyright searches returned unrelated legal publications; no applicable AV use conditions established from those."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "th-senate-home",
+        "th-senate-index",
+        "th-senate-motion",
+        "th-tp"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Reconcile indexed/current record freshness and inspect Senate-specific public media/schedule/terms."
+      ]
+    },
+    {
+      "id": "national--tl-lc01",
+      "name": "National Parliament",
+      "country": "Timor-Leste",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://www.parlamento.tl/",
+      "metadata": {
+        "status": "owned_institutional_video_and_events_pages_read",
+        "finding": "Owned pages identify National Parliament, chamber/committee navigation and Portuguese/Tetum choices."
+      },
+      "official_media": {
+        "status": "official_youtube_dated_plenary_links",
+        "provider": "YouTube designated by owned archive",
+        "sample_date": "2026-07-15",
+        "finding": "Own archive explicitly links a July plenary and committee coverage; selected YouTube follow failed, no decoded sample. Publication date differs from actual sitting title."
+      },
+      "epg": {
+        "status": "archive_agenda_labels_and_events_only",
+        "finding": "Plenary entries include agenda numbers and actual-date titles; events page supplies 15 September opening. Neither constitutes a verified current timed guide or machine feed."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Public viewing does not establish this project’s copying/recording rights."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable audiovisual editing/redistribution grant established. Actual legal footer links are placeholders pointing to video page; no independent third-party AV or programme-data grant established."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "tl-videos",
+        "tl-events",
+        "tl-terms"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Confirm latest substantive sitting/live provider, exact broadcast languages and actual legal policy."
+      ]
+    },
+    {
+      "id": "national--tw-legislative-yuan",
+      "name": "Legislative Yuan",
+      "country": "Taiwan",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "all_dimensions_validated": false,
+      "institutional_url": "https://ivod.ly.gov.tw/",
+      "metadata": {
+        "status": "owned_chamber_service_pages_read",
+        "finding": "Owned Legislative Yuan iVOD identity/address, current forecast and member/search navigation confirmed."
+      },
+      "official_media": {
+        "status": "owned_live_on_demand_routes_current_player_unresolved",
+        "provider": "Legislative Yuan iVOD",
+        "finding": "Live/on-demand service routes read; no decoded or dated substantive video sample selected. Historical separate Parliamentary TV route is 403."
+      },
+      "epg": {
+        "status": "current_structured_html_meeting_forecast",
+        "formats": [
+          "HTML meeting/date/time/room/topic list",
+          "linked ppg.ly.gov.tw documents"
+        ],
+        "finding": "27 October 2026 09:00 plenary and committees are useful structured leads. Filter duplicate sections, separate future from occurred, and exclude confidential segments. No API/ICS/XMLTV payload validated."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Official route or route lead retained; express hyperlink conditions not established."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable third-party embedding grant established."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No independent-player grant or decoded playback established."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable third-party rebroadcast grant established."
+        },
+        "copying_recording": {
+          "status": "personal_noncommercial_download_copy_only",
+          "finding": "Terms permit personal non-commercial downloading/copying subject to law and intact notices; public archival redistribution is not cleared."
+        },
+        "audiovisual_reuse": {
+          "status": "restricted_no_profit_or_blanket_reuse",
+          "finding": "Terms restrict listed profit-oriented reuse, require notices preserved; broader public rebroadcast/embedding needs separate authority."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No source-specific licence for programme-data republication established."
+        }
+      },
+      "source_refs": [
+        "tw-forecast",
+        "tw-live",
+        "tw-demand",
+        "tw-copyright",
+        "tw-ptv"
+      ],
+      "unresolved": [
+        "Complete member metadata, broadcast languages, captions and accessibility not comprehensively verified.",
+        "Committee coverage and reliable current live operation are not comprehensively certified.",
+        "No raw manifests, signed playback URLs or credentials retained; no outreach or access-control bypass.",
+        "Inspect selected public proceeding playback and programme-data licence independently of personal-copy AV terms."
+      ]
+    }
+  ]
+}

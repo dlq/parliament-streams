@@ -1,0 +1,2367 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "All 20 eligible Croatian county assembly inventory IDs; City of Zagreb and the national Parliament excluded because they have separate review scopes.",
+  "method": "Individually inspected owned assembly/current notice routes and county-specific media/agenda/rights leads. Primary official sources only. Indexed content, page reads, linked providers, inaccessible targets and decoded playback remain distinct. All dispositions are partial source follow-ups, never full service validation.",
+  "summary": {
+    "records_reviewed": 20,
+    "complete_metadata_stream_epg_rights_validations": 0,
+    "decoded_playback_confirmed": 0,
+    "current_timed_broadcast_guides_validated": 0,
+    "affirmative_external_embed_or_rebroadcast_clearances": 0,
+    "owned_policy_pages_with_substantive_reuse_text_read": 8,
+    "source_observations": 74,
+    "media_dispositions": {
+      "current_official_live_notice_target_extraction_pending": 1,
+      "general_video_navigation_and_member_audio_rules_public_session_unresolved": 1,
+      "historical_county_news_media_only_current_assembly_provider_unresolved": 1,
+      "historical_named_media_lead_current_service_unresolved": 1,
+      "historical_official_broadcast_notice_current_provider_unresolved": 1,
+      "historical_official_player_page_current_service_unresolved": 1,
+      "historical_official_youtube_designation_current_continuity_pending": 1,
+      "official_agenda_links_partial_prior_session_video_playback_pending": 1,
+      "official_assembly_youtube_channel_designated_playback_pending": 1,
+      "official_current_mp3_archive_indexed_retrieval_pending": 1,
+      "official_current_video_archive_observed_player_pending": 1,
+      "official_current_youtube_archive_indexed_player_pending": 1,
+      "official_dated_live_and_embed_targets_designated_playback_pending": 1,
+      "official_dated_transmission_article_indexed_player_pending": 1,
+      "official_dated_youtube_session_link_player_pending": 1,
+      "official_public_audio_archive_linked_playback_pending": 1,
+      "provider_unresolved_after_individual_search_and_page_inspection": 3,
+      "recording_statement_and_general_county_channel_session_unresolved": 1
+    }
+  },
+  "interpretation_limits": [
+    "No empty or unsuccessful search establishes that a stream does not exist.",
+    "A current county home or current session index does not validate every member, identifier, language, room, recording or rights use.",
+    "A general county video channel is not automatically a legislative video service; audio archives are labelled separately.",
+    "Invitation/summons text proves a scheduled event. Occurrence is asserted only where a separate official report/archive explicitly says held. Neither observation alone establishes broadcast start/end.",
+    "All displayed times are retained as published local-clock strings. No explicit timezone or broadcast end was verified; no invented duration is supplied.",
+    "No ICS/XMLTV/RSS broadcast programme feed was validated. HTML agenda text and linked documents can support future adapters after event mapping and reuse review.",
+    "Copyright footers, data-reuse frameworks, personal-copying clauses and actual video-provider terms have different scopes. No national/parent licence is inherited.",
+    "Browser plugin was unavailable; one temporary Playwright Chromium attempt was inconclusive and stopped. No playback claim is based on it.",
+    "No outreach, sign-in, access-control bypass, raw HTML archiving or copied credential retention."
+  ],
+  "records": [
+    {
+      "id": "croatia--bjelovar-bilogora",
+      "name": "Županijska skupština – Bjelovar-Bilogora",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://bbz.hr/%C5%BEupanijska-skup%C5%A1tina",
+        "finding": "Owned assembly page identifies the county institution, Bjelovar contact and current session notices; its news module also retains 2021–2022 items.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "historical_official_broadcast_notice_current_provider_unresolved",
+        "finding": "The owned assembly page links historical live-video notices, including April 2022 and December 2021. The sampled December notice could not be retrieved. A current provider/session player is unresolved.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:bbz.hr skupština prijenos youtube; then inspected assembly live-notice links."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Current notices list sessions 5–8 in 2026; the September notice target returned request verification, so its exact sitting time and document contents were not confirmed.",
+        "formats_observed": [
+          "HTML session index; linked notice body inaccessible"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected assembly footer and targeted site:bbz.hr \"uvjeti korištenja\" search; results concerned planning material, not a general media licence.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://bbz.hr/%C5%BEupanijska-skup%C5%A1tina",
+          "title": "ŽUPANIJSKA SKUPŠTINA | BBŽ",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "September 2026 session notice and older live-broadcast notices are linked on the same owned page.",
+          "excerpt": "ŽUPANIJSKA SKUPŠTINA"
+        },
+        {
+          "url": "https://bbz.hr/skupstina/8-sjednica-%C5%BEupanijske-skup%C5%A1tine-bjelovarsko-bilogorske-%C5%BEupanije-2",
+          "title": "8. sjednica — linked target",
+          "access": "web_request_verification_page",
+          "accessed_on": "2026-10-24",
+          "observation": "Only a request-verification message returned."
+        },
+        {
+          "url": "https://bbz.hr/vijesti/uzivo-4-sjednica-zupanijske-skupstine-bjelovarsko-bilogorske-zupanije",
+          "title": "Historical live notice — 4th sitting",
+          "access": "web_fetch_cache_miss",
+          "accessed_on": "2026-10-24"
+        }
+      ],
+      "unresolved": [
+        "Current session target verification prevents a full agenda check; do not treat older broadcast notices as a validated current service.",
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--brod-posavina",
+      "name": "Županijska skupština – Brod-Posavina",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://bpz.hr/%C5%BEupanijska-skup%C5%A1tina/sjednice-%C5%BEupanijske-skup%C5%A1tine",
+        "finding": "Owned current assembly session route identifies Slavonski Brod and distinguishes earlier terms; September 2026 notice supplies an exact named sitting.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_public_audio_archive_linked_playback_pending",
+        "finding": "Official Audio zapisi archive links recordings numbered through the ninth sitting in the current term. Following the ninth audio link failed in the research tool; no audio decode or video service validated.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:bpz.hr županijska skupština sjednice video prijenos 2026; followed owned Audio zapisi archive."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Ninth sitting invitation supplies scheduled 5 October 2026 09:00 at the county chamber, full HTML agenda and ZIP material download. This is scheduled sitting evidence, not a broadcast timetable.",
+        "formats_observed": [
+          "HTML agenda",
+          "ZIP materials archive",
+          "audio recording links"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-05",
+          "published_start": "9,00 sati",
+          "state": "scheduled",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected session/audio navigation and site:bpz.hr \"uvjeti korištenja\" search; no applicable audiovisual reuse statement established.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://bpz.hr/%C5%BEupanijska-skup%C5%A1tina/sjednice-%C5%BEupanijske-skup%C5%A1tine",
+          "title": "Sjednice Županijske skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current assembly notice index."
+        },
+        {
+          "url": "https://bpz.hr/%C5%BEupanijska-skup%C5%A1tina/audio-zapisi",
+          "title": "Audio zapisi",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Public archive names current-term recordings through sitting 9, followed by a separately labelled 2021–2025 term.",
+          "excerpt": "Audio zapisi"
+        },
+        {
+          "url": "https://bpz.hr/%C5%BEupanijska-skup%C5%A1tina/sjednice-%C5%BEupanijske-skup%C5%A1tine/9-sjednica-%C5%BEupanijske-skup%C5%A1tine-202609291313",
+          "title": "9. sjednica Županijske skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Published 29 September 2026; invitation dated 28 September schedules 5 October at 09:00 with agenda/ZIP."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--dubrovnik-neretva",
+      "name": "Županijska skupština – Dubrovnik-Neretva",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.dnz.hr/zupanijska-skupstina/",
+        "finding": "Owned assembly page names the institution and Dubrovnik contact; current notices and official gazettes extend to October 2026.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_dated_youtube_session_link_player_pending",
+        "finding": "Owned eighth-sitting agenda directly links a YouTube item titled as that county assembly sitting. The linked player could not be fetched, so designation is confirmed but playback and channel identity remain pending.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:dnz.hr županijska skupština prijenos sjednice; followed current assembly notice media link."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Eighth sitting notice supplies scheduled 24 September 2026 12:00 in Dubrovnik, agenda items, minutes and supporting documents. Exact document publication dates must remain separate from sitting/broadcast dates.",
+        "formats_observed": [
+          "HTML notice/agenda",
+          "linked minutes and document files"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-09-24",
+          "published_start": "12.00 sati",
+          "state": "scheduled",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "published_open_data_framework_exact_programme_and_media_scope_unresolved",
+        "search_or_navigation_checked": "Read assembly footer and Pravo na pristup informacijama open-data section; searched site:dnz.hr autorska prava mediji.",
+        "finding": "Open-data language is scoped to published datasets and attribution. Do not extend it to assembly audiovisual material or an unlisted programme-data product.",
+        "policy_url": "https://www.dnz.hr/pravo-na-pristup-informacijama/"
+      },
+      "sources": [
+        {
+          "url": "https://www.dnz.hr/zupanijska-skupstina/",
+          "title": "Županijska skupština — Dubrovačko-neretvanska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Assembly identity/contact, recent notices and copyright-reserved footer."
+        },
+        {
+          "url": "https://www.dnz.hr/8-sjednica-zupanijske-skupstine-odrzati-ce-se-24-rujna-2026-u-velikoj-vijecnici-pred-dvorom-1-u-dubrovniku-s-pocetkom-u-12-00-sati/",
+          "title": "8. sjednica — notice, agenda and official YouTube link",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Published 16 September 2026; direct YouTube session link and HTML agenda with supporting files."
+        },
+        {
+          "url": "https://www.dnz.hr/pravo-na-pristup-informacijama/",
+          "title": "Pravo na pristup informacijama",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Open-data section discusses free use of published machine-readable datasets with attribution; it links an asset list and a reuse-request form. It does not explicitly grant reuse of assembly video.",
+          "excerpt": "OTVORENI PODACI"
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--istria",
+      "name": "Županijska skupština – Istria",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.istra-istria.hr/hr/zupanijski-ustroj/skupstina/",
+        "finding": "Owned assembly page explicitly links the 2025–2029 membership and describes the representative institution; Croatian and Italian site context is confirmed without inferring broadcast languages.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_assembly_youtube_channel_designated_playback_pending",
+        "finding": "Owned session index explicitly designates https://www.youtube.com/@istarskazupanija-regioneis6307 for live assembly coverage. Direct channel retrieval failed; no specific video or decoded session tested.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:istra-istria.hr \"sjednice\" \"YouTube\"; followed official channel designation."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Session index and October fourteenth-sitting notice provide HTML date/start, location and an invitation/agenda/material link. Index entries for sittings 11 and 12 both show 21 September 2026 at 10:00: reconcile underlying documents before ingestion.",
+        "formats_observed": [
+          "HTML timed notices",
+          "linked invitation/agenda/materials"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-15",
+          "published_start": "12:00 sati",
+          "state": "scheduled_joint_meeting",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Read owned assembly/session footers (copyright); targeted site:istra-istria.hr \"autorska prava\" \"stranice\" and \"uvjeti\" \"sadržaj\" searches did not establish a media reuse policy.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.istra-istria.hr/hr/zupanijski-ustroj/skupstina/",
+          "title": "Skupština — Istarska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current-term member navigation and county assembly identity."
+        },
+        {
+          "url": "https://www.istra-istria.hr/hr/novosti/sjednice-skupstine/",
+          "title": "Sjednice Skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Explicit official YouTube designation and current session-notice index.",
+          "excerpt": "Sjednice Skupštine moguće je pratiti uživo putem YouTube kanala Istarske županije."
+        },
+        {
+          "url": "https://www.istra-istria.hr/hr/clanci/istarska-zupanija-novosti/18236/14-sjednica-skupstine-istarske-zupanije/",
+          "title": "14. sjednica Skupštine Istarske županije",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Published 9 October 2026; scheduled 15 October at 12:00, Pazin; notice describes a joint meeting with Pula council."
+        },
+        {
+          "url": "https://www.youtube.com/@istarskazupanija-regioneis6307",
+          "title": "Official-site designated Istria YouTube channel",
+          "access": "web_fetch_cache_miss",
+          "accessed_on": "2026-10-24"
+        }
+      ],
+      "unresolved": [
+        "Resolve repeated dates/session-number inconsistencies and the joint-meeting identity before EPG/channel mapping.",
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--karlovac",
+      "name": "Županijska skupština – Karlovac",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.kazup.hr/ustrojstvo/zupanijska-skupstina",
+        "finding": "Owned assembly page expressly identifies the 2025–2029 term and 37 members, with Karlovac contact; current-term session archive is linked.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "current_official_live_notice_target_extraction_pending",
+        "finding": "September 2026 official article invites viewers to a live assembly picture link, which the text extractor omits. An older April 2024 official live article supplies a concrete YouTube target. Current provider continuity and player identity remain pending.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:kazup.hr županijska skupština sjednice video prijenos 2026; compared current and historical live notices."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Current-term archive enumerates sessions through number 12, with individual notices and minutes. The index itself supplies no times; inspect the selected notice before constructing a programme.",
+        "formats_observed": [
+          "HTML current-term session index",
+          "linked notices and minutes"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected current owned assembly/live-page footer and targeted site:kazup.hr \"uvjeti korištenja\"; planning-use results do not supply a media licence.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.kazup.hr/ustrojstvo/zupanijska-skupstina",
+          "title": "Skupština — Karlovačka županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current term, institutional identity and archive navigation."
+        },
+        {
+          "url": "https://www.kazup.hr/sjednice-skupstine/saziv-2025-2029",
+          "title": "Saziv 2025–2029 — sjednice skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned session/record archive; index entries through sitting 12."
+        },
+        {
+          "url": "https://www.kazup.hr/aktualno/sjednica-zupanijske-skupstine-karlovacke-zupanije",
+          "title": "SJEDNICA ŽUPANIJSKE SKUPŠTINE KARLOVAČKE ŽUPANIJE",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "18 September 2026 notice invites live viewing via image link; extractor did not expose the target."
+        },
+        {
+          "url": "https://kazup.hr/aktualno/prijenos-zupaniske-skupstine-live",
+          "title": "Prijenos Županiske skupštine Live",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "19 April 2024 article explicitly links https://youtube.com/live/-qyufrMzxBk."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--koprivnica-krizevci",
+      "name": "Županijska skupština – Koprivnica-Križevci",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://kckzz.hr/hr/uprava/zupanijska-skupstina/sjednice-zupanijske-skupstine-kckzz",
+        "finding": "Owned assembly navigation separates current proceedings from the 2021–2025 archive; current reporting extends to September 2026.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_current_video_archive_observed_player_pending",
+        "finding": "Official Video snimke sjednica archives identify current-term sitting recordings; indexed September material names the eighth sitting of 24 September 2026. Sampled video link failed; Croatian and English archive fetches expose different cached vintages.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:kckzz.hr županijska skupština sjednice video prijenos 2026 and exact eighth-sitting recording searches."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Owned current notices/materials and minutes are available. The eighth-sitting announcement index has a title/body number mismatch (8 versus 7); reconcile notice, agenda and recording before EPG mapping. The e-Sjednice system is described for members, not presumed public video.",
+        "formats_observed": [
+          "HTML notices/video index",
+          "linked material folders and minutes"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected archive/assembly navigation and targeted site:kckzz.hr \"uvjeti korištenja\"; unrelated hospitality/planning terms do not grant recording reuse.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://kckzz.hr/hr/uprava/zupanijska-skupstina/sjednice-zupanijske-skupstine-kckzz",
+          "title": "Sjednice Županijske skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Current September 2026 notice/report titles; eighth-sitting announcement has inconsistent numbering."
+        },
+        {
+          "url": "https://kckzz.hr/en/uprava/zupanijska-skupstina/sjednice-zupanijske-skupstine-kckzz/video-snimke-sjednica",
+          "title": "Video snimke sjednica",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current-term archive with dated recordings through June 2026 in fetched English-path body; sampled link failed."
+        },
+        {
+          "url": "https://kckzz.hr/hr/novosti/covid-19-vijesti/itemlist/date/%7Byear%7D/%7Bmonth%7D/%7Bday%7D?start=110",
+          "title": "Official indexed September recording entry",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Names the eighth sitting recording from 24 September 2026, published 25 September; generic CMS date path itself is not the event date."
+        },
+        {
+          "url": "https://kckzz.hr/hr/80-eusluge/32-sustav-e-sjednice",
+          "title": "Sustav e-Sjednice",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Page says the system serves assembly members; no login attempted."
+        }
+      ],
+      "unresolved": [
+        "Archive/cache vintages and sitting-number mismatch require direct player/notice reconciliation.",
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--krapina-zagorje",
+      "name": "Županijska skupština – Krapina-Zagorje",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://kzz.hr/zupanijska-skupstina-opcenito/",
+        "finding": "Owned assembly page identifies the body and current 2025–2029 member/party-group routes.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "recording_statement_and_general_county_channel_session_unresolved",
+        "finding": "Assembly page says proceedings are recorded and links the general county YouTube channel https://www.youtube.com/zagorjehr. A legislative session on that channel has not been confirmed.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:kzz.hr županijska skupština sjednice video 2026; inspected recording statement and general county YouTube designation."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Owned session and minutes indexes provide dates, agenda topics and documents. General quarterly cadence is not EPG; September coordination story merely plans a 9 September session.",
+        "formats_observed": [
+          "HTML agendas/minutes index",
+          "linked minutes documents"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        },
+        "copying_recording": {
+          "status": "limited_personal_copying_statement_not_public_republication_clearance",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Website content except official marks; personal and noncommercial copying, respecting copyright. Other publication/transmission/public display requires written permission. Does not certify recording a third-party player."
+        },
+        "audiovisual_reuse": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        },
+        "programme_data": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        }
+      },
+      "rights_review": {
+        "status": "personal_noncommercial_copying_only",
+        "search_or_navigation_checked": "Followed official assembly footer Uvjeti korištenja and read its copying/publication clauses.",
+        "finding": "Generic website terms distinguish limited personal copying from other publication, transmission and public display. They do not clear a public rebroadcast or playlist player.",
+        "policy_url": "https://kzz.hr/uvjeti-koristenja/"
+      },
+      "sources": [
+        {
+          "url": "https://kzz.hr/zupanijska-skupstina-opcenito/",
+          "title": "Županijska skupština — Krapinsko-zagorska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Assembly identity/current term; recording statement and general county YouTube navigation."
+        },
+        {
+          "url": "https://kzz.hr/novosti/zapisnici/",
+          "title": "Zapisnici",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Current-term minutes dated through 11 June 2026; describes minute contents including start/end and votes."
+        },
+        {
+          "url": "https://kzz.hr/sjednice-skupstine/",
+          "title": "Sjednice i skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Agenda topics are readable in indexed official text."
+        },
+        {
+          "url": "https://kzz.hr/uvjeti-koristenja/",
+          "title": "Uvjeti korištenja",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Personal/noncommercial copying only, excluding official marks and respecting copyright; other publication/transmission/public display needs written permission.",
+          "excerpt": "smiju se kopirati samo za osobnu uporabu i nekomercijalne svrhe"
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--lika-senj",
+      "name": "Županijska skupština – Lika-Senj",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://licko-senjska.hr/sjednice-zupanijske-skupstine/pregled/sjednice-zupanijske-skupstine-2026",
+        "finding": "Owned 2026 assembly document route and October current sitting report establish the institution and Gospić chamber location.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "historical_named_media_lead_current_service_unresolved",
+        "finding": "A 2023 county-hosted minute records TV LOKI as a place where full assembly coverage was available. This is a historical provider lead, not certification of a current officially designated public stream.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:licko-senjska.hr skupština prijenos video sjednice; inspected the county-hosted TV LOKI reference."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "October invitation supplies 14 October 2026 11:00 and an HTML agenda; a separate dated post reports the seventh sitting occurred and began at 11:00. Programme/broadcast start and end remain unverified.",
+        "formats_observed": [
+          "HTML timed invitation/report",
+          "PDF minutes/materials"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-14",
+          "published_start": "11.00 sati",
+          "state": "occurrence_reported_by_institution",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected owned footer and site:licko-senjska.hr \"autorska\" \"stranice\" search; no affirmative legislative media reuse grant established.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://licko-senjska.hr/sjednice-zupanijske-skupstine/pregled/sjednice-zupanijske-skupstine-2026",
+          "title": "Sjednice županijske skupštine — 2026",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Current assembly material index."
+        },
+        {
+          "url": "https://licko-senjska.hr/novosti/detaljnije/sazvana-vii.-sjednica-zupanijske-skupstine-licko-senjske-zupanije-koja-ce-s",
+          "title": "Sazvana VII. sjednica — 14 October 2026",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Notice posted 8 October; dated document schedules 14 October at 11:00 with HTML business list."
+        },
+        {
+          "url": "https://licko-senjska.hr/novosti/detaljnije/odrzana-vii.-sjednica-zupanijske-skupstine-licko-senjske-zupanije-26",
+          "title": "ODRŽANA VII. SJEDNICA",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "14 October 2026 report says seventh sitting occurred at Gospić, starting 11:00; not broadcast evidence."
+        },
+        {
+          "url": "https://licko-senjska.hr/images/stories/XIV_2023/Tocka_1_XIV.pdf",
+          "title": "County assembly minutes — TV LOKI reference",
+          "access": "web_search_index_pdf_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Historic minute records discussion of full session coverage at TV LOKI."
+        },
+        {
+          "url": "https://licko-senjska.hr/",
+          "title": "Ličko-senjska županija — Službene stranice",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned current navigation/footer states all rights reserved."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--me-imurje",
+      "name": "Županijska skupština – Međimurje",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://medjimurska-zupanija.hr/skupstina/",
+        "finding": "Owned assembly route and current eighth-sitting notice identify Međimurje assembly in Čakovec; preserve the existing inventory ID spelling.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_current_mp3_archive_indexed_retrieval_pending",
+        "finding": "Official audio archive indexes downloadable .mp3 recordings, including eighth sitting dated 1 October 2026. Its legacy /category/audio-2/ link and canonical /audio-2/ direct fetch failed, although official indexed content is readable. No audio decode or video assumed.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "Inspected assembly Audio snimke navigation and exact site:medjimurska-zupanija.hr \"audio\" \"sjednice\" \"2026\" search."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Current eighth-sitting notice schedules 1 October 2026 at 09:00; HTML archive exposes current notices and linked supporting materials. Matching audio title/date is a useful lead, still requiring exact file and event reconciliation.",
+        "formats_observed": [
+          "HTML timed notices",
+          "indexed .mp3 downloads",
+          "linked documents"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-01",
+          "published_start": "9:00 sati",
+          "state": "scheduled_notice_and_matching_audio_index",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "separate_audiovisual_rights_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Terms separately flag possible county/third-party rights in photographs, video, logos and graphics. Do not apply the text/data statement to recordings."
+        },
+        "programme_data": {
+          "status": "conditional_county_text_data_reuse_statement",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "County-owned text, data and documents may be reused with source attribution and without changing meaning, subject to access-to-information rules. Exact EPG feed scope and media rights remain unresolved."
+        }
+      },
+      "rights_review": {
+        "status": "attributed_text_data_reuse_media_exceptions",
+        "search_or_navigation_checked": "Followed official Pravne napomene and read text/data reuse and separate audiovisual clauses.",
+        "finding": "Attributed reuse of county texts/data/documents is expressly discussed; photos/video/logos/graphics may have separate county or third-party copyright. An offered MP3 download does not itself clear redistribution.",
+        "policy_url": "https://medjimurska-zupanija.hr/pravne-napomene/"
+      },
+      "sources": [
+        {
+          "url": "https://medjimurska-zupanija.hr/skupstina/",
+          "title": "Skupština — Međimurska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current notices and official audio/legal navigation."
+        },
+        {
+          "url": "https://medjimurska-zupanija.hr/2026/09/25/8-sjednica-zupanijske-skupstine-medimurske-zupanije-1-listopada-2026-godine-cetvrtak-u-900-sati/",
+          "title": "8. sjednica — 1 October 2026 09:00",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned dated invitation and materials."
+        },
+        {
+          "url": "https://medjimurska-zupanija.hr/audio-2/",
+          "title": "Audio — official recording archive",
+          "access": "web_search_index_content_direct_fetch_cache_miss",
+          "accessed_on": "2026-10-24",
+          "observation": "Current recordings through 1 October 2026; explicitly offers .mp3 download using save-link-as.",
+          "excerpt": "Preuzmite snimku (.mp3)"
+        },
+        {
+          "url": "https://medjimurska-zupanija.hr/pravne-napomene/",
+          "title": "Pravne napomene",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "County text/data/documents may be reused with attribution and preserved meaning; separate audiovisual/third-party exceptions are stated.",
+          "excerpt": "Tekstovi, podaci i dokumenti Županije smiju se preuzimati, umnožavati i ponovno upotrebljavati uz navođenje izvora"
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--osijek-baranja",
+      "name": "Županijska skupština – Osijek-Baranja",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.obz.hr/index.php/sjednica-skupstine-mandat-2017-2021/sjednice-skupstine-mandat-2025-2029",
+        "finding": "Owned assembly archive explicitly labels current term 2025–2029 and lists sittings through 7 October 2026. The legacy URL parent does not determine the current term.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_agenda_links_partial_prior_session_video_playback_pending",
+        "finding": "Fourteenth-sitting agenda links a Vimeo question/proposal recording under adoption of the thirteenth-sitting minutes. Target https://vimeo.com/1225856907 could not be fetched. Do not label this as a full fourteenth-sitting broadcast.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:obz.hr županijska skupština sjednice video 2026; followed the current agenda Vimeo link."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "HTML current-term agenda/material index and individual business lists are available. The linked video belongs to prior-meeting questions in the minutes item; reliable EPG needs item-level session mapping.",
+        "formats_observed": [
+          "HTML agenda/index",
+          "linked PDF/materials",
+          "Vimeo link"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-07",
+          "state": "agenda_heading",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected current assembly footer and site:obz.hr autorska prava korištenje sadržaja search; unrelated contract restrictions do not settle assembly media reuse.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.obz.hr/index.php/sjednica-skupstine-mandat-2017-2021/sjednice-skupstine-mandat-2025-2029",
+          "title": "Sjednice Skupštine — mandat 2025–2029",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current archive list through 14th sitting, 7 October 2026."
+        },
+        {
+          "url": "https://www.obz.hr/index.php/sjednica-skupstine-mandat-2017-2021/sjednice-skupstine-mandat-2025-2029/8505-14-sjednica-skupstine-7-10-2026",
+          "title": "14. sjednica Skupštine 7.10.2026.",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "HTML agenda and files; Vimeo video link appears under previous-session minutes adoption."
+        },
+        {
+          "url": "https://vimeo.com/1225856907",
+          "title": "Official-agenda linked question-time video",
+          "access": "web_fetch_cache_miss",
+          "accessed_on": "2026-10-24"
+        }
+      ],
+      "unresolved": [
+        "Map the footage to the thirteenth meeting/question time rather than infer full fourteenth-sitting coverage from page date.",
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--pozega-slavonia",
+      "name": "Županijska skupština – Požega-Slavonia",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.pszupanija.hr/o-zupaniji/zupanijska-skupstina",
+        "finding": "Owned county page names the assembly, lists officeholders/members and indexes current 2026 sitting documents. Current roster has not been independently reconciled to election/mandate changes.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "provider_unresolved_after_individual_search_and_page_inspection",
+        "finding": "Owned page exposes an iframe label, but the extracted target resolves to the same page and does not establish a video player. Targeted county YouTube/session searches found no verifiable provider designation in this pass; absence is not asserted.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:pszupanija.hr županijska skupština sjednice video 2026; site:pszupanija.hr \"skupštin\" \"YouTube\"; inspected iframe labels without inferring playback."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Seventh-sitting document page supplies a material download created 8 September 2026. That is a document creation date; sitting date/start/end and file format still need inspection.",
+        "formats_observed": [
+          "HTML current material index",
+          "linked material download; format unverified"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "document_created": "2026-09-08",
+          "state": "material_publication_only",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Inspected assembly/footer and targeted site:pszupanija.hr autorska prava korištenje sadržaja search. Youth-competition IP clauses were rejected as outside assembly-media scope.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.pszupanija.hr/o-zupaniji/zupanijska-skupstina",
+          "title": "Županijska skupština — Požeško-slavonska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Institution/members/current material index and generic iframe labels."
+        },
+        {
+          "url": "https://www.pszupanija.hr/dokumenti/zupanijska-skupstina/218-2026/234-7-sjednica-zupanijske-skupstine",
+          "title": "7. sjednica Županijske skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Material download page created 8 September 2026; not a confirmed sitting or broadcast timestamp."
+        },
+        {
+          "url": "https://pszupanija.hr/zastita-privatnosti",
+          "title": "Zaštita privatnosti",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Privacy text is not an audiovisual reuse licence."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--primorje-gorski-kotar",
+      "name": "Županijska skupština – Primorje-Gorski Kotar",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.pgz.hr/ustroj/skupstina/materijali-sjednica-zupanijske-skupstine/",
+        "finding": "Owned PGŽ assembly/material navigation and dated proceedings pages identify the institution in Rijeka; older mandate archive is separately linked.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_dated_live_and_embed_targets_designated_playback_pending",
+        "finding": "Owned September 2026 session notice directly designates https://youtube.com/live/3xip_Liun70 and its own embedded player. Publicity policy also names YouTube/Facebook live and KanalRi delayed coverage. Web-tool target fetch failed; bounded browser attempt remained inconclusive, so no decoded playback is claimed.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:pgz.hr županijska skupština video sjednice; followed dated official live and embed targets.",
+        "browser_observation": {
+          "engine": "Chromium",
+          "owned_page_http_status": 200,
+          "owned_page_title": "12. sjednica Županijske skupštine PGŽ (uživo) | Primorsko-goranska županija",
+          "iframe_target": "https://www.youtube.com/embed/3xip_Liun70",
+          "video_element_seen": true,
+          "initial_video_width": 0,
+          "initial_video_height": 0,
+          "initial_ready_state": 0,
+          "decoded_playback_confirmed": false,
+          "result": "The play evaluation did not complete within the bounded check; temporary browser was stopped. This does not establish stream failure."
+        }
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Twelfth-sitting notice schedules 10 September 2026 at 10:00 and links agenda/materials. Material index initially exposes a JavaScript loading state in extracted text; later October report records a resumed thirteenth sitting after a prior quorum interruption.",
+        "formats_observed": [
+          "HTML timed notice",
+          "agenda link",
+          "JavaScript material list"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-09-10",
+          "published_start": "10.00 sati",
+          "state": "scheduled",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "commercial_reuse_requires_explicit_permission_other_uses_unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Commercial reuse requires explicit PGŽ approval; noncommercial clearance remains unresolved."
+        },
+        "copying_recording": {
+          "status": "commercial_reuse_requires_explicit_permission_other_uses_unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Commercial reuse requires explicit PGŽ approval; noncommercial clearance remains unresolved."
+        },
+        "audiovisual_reuse": {
+          "status": "commercial_reuse_requires_explicit_permission_other_uses_unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Commercial reuse requires explicit PGŽ approval; noncommercial clearance remains unresolved."
+        },
+        "programme_data": {
+          "status": "commercial_reuse_requires_explicit_permission_other_uses_unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Commercial reuse requires explicit PGŽ approval; noncommercial clearance remains unresolved."
+        }
+      },
+      "rights_review": {
+        "status": "pgz_explicit_youtube_scope_commercial_reuse_restricted",
+        "search_or_navigation_checked": "Followed owned current-session footer and read Uvjeti korištenja, expressly including YouTube.",
+        "finding": "Terms explicitly cover website, county social accounts and YouTube. Commercial reproduction/distribution/use requires express PGŽ approval; unauthorized use is restricted. No third-party embed, direct-player or rebroadcast clearance inferred.",
+        "policy_url": "https://www.pgz.hr/uvjeti-koristenja/"
+      },
+      "sources": [
+        {
+          "url": "https://www.pgz.hr/objave/12-sjednica-zupanijske-skupstine-pgz-2/",
+          "title": "12. sjednica Županijske skupštine PGŽ (uživo)",
+          "access": "web_page_read_and_chromium_http_200_iframe_inspection",
+          "accessed_on": "2026-10-24",
+          "observation": "9 September notice schedules 10 September 10:00 with agenda and YouTube target. Chromium returned HTTP 200 and confirmed embedded target; video readiness stayed unconfirmed when check was stopped."
+        },
+        {
+          "url": "https://www.pgz.hr/ustroj/skupstina/javnost-rada-zs-pgz/",
+          "title": "Javnost rada ŽS PGŽ",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Explicit recording/live YouTube-Facebook coverage and delayed KanalRi broadcast; these arrangements do not grant our rebroadcast rights."
+        },
+        {
+          "url": "https://www.pgz.hr/ustroj/skupstina/materijali-sjednica-zupanijske-skupstine/",
+          "title": "Materijali sjednica ŽS PGŽ",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current material listing is JavaScript-loaded; prior-term archive is linked."
+        },
+        {
+          "url": "https://www.pgz.hr/uvjeti-koristenja/",
+          "title": "Uvjeti korištenja",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Terms explicitly include web/social/YouTube PGŽ; unauthorized use and commercial reproduction/distribution/use without explicit approval are restricted.",
+          "excerpt": "Pojam WEB PGŽ obuhvaća web stranicu, društvene mreže i youtube kanal pod nazivom PGŽ."
+        },
+        {
+          "url": "https://www.pgz.hr/objave/nastavljena-13-sjednica-zupanijske-skupstine-vijecnici-prihvatili-deklaraciju-o-hrvatskom-prostoru-i-preostale-odluke/",
+          "title": "Nastavljena 13. sjednica Županijske skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "13 October 2026 institutional report records resumed proceedings after an earlier lack of quorum."
+        }
+      ],
+      "unresolved": [
+        "A scheduled sitting can be interrupted/resumed; carry amendments and actual continuation identity in any future EPG adapter.",
+        "Temporary Chromium check required sandbox exception to launch, then exceeded the bounded check and was stopped. This is local test failure, not stream unavailability.",
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--sibenik-knin",
+      "name": "Županijska skupština – Šibenik-Knin",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.sibensko-kninska-zupanija.hr/ustrojstvo/zupanijska-skupstina",
+        "finding": "Owned assembly page identifies current members and Šibenik seat; its Sjednice link goes through skz.hr then redirects back to the current owned portal.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "historical_official_youtube_designation_current_continuity_pending",
+        "finding": "An official February 2023 notice explicitly designates @sibenskokninskazupanija and https://www.youtube.com/watch?v=uBowuLPId4o for a session. The individual current search did not establish 2026 provider continuity or playable recording.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:sibensko-kninska-zupanija.hr županijska skupština video prijenos; separate current-2026 search did not establish continuity."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Current ninth-sitting page, posted 19 August 2026, provides an HTML proposed business list and per-item PDFs. A precise sitting start/date cannot be inferred from its publication date alone.",
+        "formats_observed": [
+          "HTML business list",
+          "PDF item materials/minutes"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "document_published": "2026-08-19",
+          "state": "proposed_agenda_publication",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Read assembly/session footers (all rights reserved), searched site:sibensko-kninska-zupanija.hr \"korištenja\" \"autorska\"; no applicable video reuse statement established.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.sibensko-kninska-zupanija.hr/ustrojstvo/zupanijska-skupstina",
+          "title": "Županijska skupština | Ustrojstvo",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current assembly identity, members, seat, owned session link and reserved-rights footer."
+        },
+        {
+          "url": "https://www.sibensko-kninska-zupanija.hr/novosti/novosti-detalj/video-prijenos-zasjedanja-sesnaeste-zupanijske-skupstine-sibensko-kninske-zupanije",
+          "title": "Video prijenos — 16th sitting",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "15 February 2023 official notice designates county YouTube channel and specific session target for 16 February 10:00."
+        },
+        {
+          "url": "https://www.sibensko-kninska-zupanija.hr/obavijesti/detalj/9-sjednica-zupanijske-skupstine-sibensko-kninske-zupanije-2",
+          "title": "9. Sjednica Županijske skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "19 August 2026 proposed agenda with item PDFs and previous-sitting minutes; no start time extracted."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--sisak-moslavina",
+      "name": "Županijska skupština – Sisak-Moslavina",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.smz.hr/ustroj/upskup/sjednice/saziv-2025-2029/12176-11-sjednica-zupanijske-skupstine-sisacko-moslavacke-zupanije",
+        "finding": "Owned current-term sitting route identifies the county assembly and Sisak chamber location; invitation published in September 2026.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "historical_official_player_page_current_service_unresolved",
+        "finding": "An owned /prijenos page advertises a player/direct link for a March 2019 sitting. It is a historical lead; neither current service continuation nor video decoding was established.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:smz.hr skupština sjednice video prijenos 2026; inspected historical /prijenos lead and current invitation."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Eleventh-sitting invitation schedules 22 September 2026 10:00, with HTML agenda, prior minutes and all-material download. Any recording mapping requires a current provider and exact event evidence.",
+        "formats_observed": [
+          "HTML timed agenda",
+          "linked minutes and all-material download"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-09-22",
+          "published_start": "10,00 sati",
+          "state": "scheduled",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "information_reuse_framework_exact_programme_and_media_scope_unresolved",
+        "search_or_navigation_checked": "Read Pristup informacijama reuse framework, rather than extrapolating unrelated county media-financing terms.",
+        "finding": "County page describes an open-information licence framework with attribution and commercial/noncommercial reuse. It does not by itself confirm that an external audiovisual recording or the desired EPG source falls within that licence.",
+        "policy_url": "https://www.smz.hr/zupanija-2/transparentnost-rada/pristup-informacijama"
+      },
+      "sources": [
+        {
+          "url": "https://www.smz.hr/ustroj/upskup/sjednice/saziv-2025-2029/12176-11-sjednica-zupanijske-skupstine-sisacko-moslavacke-zupanije",
+          "title": "11. sjednica Županijske skupštine Sisačko-moslavačke županije",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "17 September 2026 publication; timed invitation, HTML business and linked documents."
+        },
+        {
+          "url": "https://www.smz.hr/prijenos",
+          "title": "Prijenos 12. sjednice Županijske skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "13 March 2019 dated broadcast page; old ordinal 12 must not be joined to the 2025–2029 term."
+        },
+        {
+          "url": "https://www.smz.hr/zupanija-2/transparentnost-rada/pristup-informacijama",
+          "title": "Pristup informacijama",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Describes information-reuse/open-licence framework with attribution, including commercial use; exact programme-data eligibility, exclusions and third-party audiovisual rights require review."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--split-dalmatia",
+      "name": "Županijska skupština – Split-Dalmatia",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.dalmacija.hr/ustroj/skupstina/zupanijska-skupstina",
+        "finding": "Owned assembly route provides institution, membership/current-mandate navigation and rules; county assembly news distinguishes scheduled and occurred sittings.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_dated_transmission_article_indexed_player_pending",
+        "finding": "Official assembly index lists 2026 live-transmission articles; an indexed 18 May eighth thematic-sitting article exposes a YouTube player label. Direct article retrieval failed, so player target, complete recording and decoding remain pending.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:dalmacija.hr županijska skupština video prijenos; inspected owned transmission/current sitting index."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "County notice/report index pairs scheduled and held meetings through September 2026. A February invitation specifies scheduled 23 February 09:00 and agenda PDF/materials; a following-day report says the meeting occurred. No RSS/ICS/XMLTV endpoint verified.",
+        "formats_observed": [
+          "HTML notices/reports",
+          "PDF agenda/materials"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-02-23",
+          "published_start": "9,00",
+          "state": "scheduled_invitation",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "published_copyright_law_only_no_affirmative_media_grant",
+        "search_or_navigation_checked": "Followed current assembly footer Uvjeti korištenja and read Opći uvjeti korištenja.",
+        "finding": "Published terms reserve copyright and refer use to law; they do not supply an affirmative embedding/direct playback/rebroadcast licence and explicitly do not settle linked external-content terms.",
+        "policy_url": "https://www.dalmacija.hr/opci-uvjeti-koristenja"
+      },
+      "sources": [
+        {
+          "url": "https://www.dalmacija.hr/ustroj/skupstina/zupanijska-skupstina",
+          "title": "Županijska skupština — Splitsko-dalmatinska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned institution/current-mandate/document navigation."
+        },
+        {
+          "url": "https://www.dalmacija.hr/obavijesti/kategorija/skupstina",
+          "title": "Skupština — official notice/report index",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Lists scheduled/held meetings and transmission entries in 2026."
+        },
+        {
+          "url": "https://www.dalmacija.hr/aktualno/rss-lista/prijenos-8-tematske-sjednica-zupanijske-skupstine",
+          "title": "Prijenos 8. (tematske) sjednica Županijske skupštine",
+          "access": "web_search_index_content_direct_fetch_cache_miss",
+          "accessed_on": "2026-10-24",
+          "observation": "18 May 2026 broadcast article has a YouTube player label; path name rss-lista is not proof of an RSS programme feed."
+        },
+        {
+          "url": "https://www.dalmacija.hr/ustroj/povjerenstva-i-savjeti/savjet-mladih/novosti/zakazana-6-sjednica-zupanijske-skupstine-splitsko-dalmatinske-zupanije-2",
+          "title": "Zakazana 6. sjednica Županijske skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "16 February 2026 notice schedules 23 February 09:00, Split, with agenda PDF and materials; legacy CMS path does not change assembly identity."
+        },
+        {
+          "url": "https://www.dalmacija.hr/opci-uvjeti-koristenja",
+          "title": "Opći uvjeti korištenja",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "States copyright protection/use only under law and declines to specify terms for linked external sources. Footer reserves rights.",
+          "excerpt": "Svi sadržaji objavljeni na ovim internetskim stranicama zaštićeni su autorskim pravom"
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--varazdin",
+      "name": "Županijska skupština – Varaždin",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://vzz.hr/",
+        "finding": "Owned current county home designates Skupština, assembly acts and video-channel routes; current October 2026 institutional report concerns the assembly. Sampled assembly target fetch timed out, so detailed current member identifiers remain pending.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "general_video_navigation_and_member_audio_rules_public_session_unresolved",
+        "finding": "Owned home links a general Video kanal, but its sampled target could not be fetched. Assembly rules describe retained audio and member access on request; this does not prove a public recording service.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:vzz.hr skupština sjednice video prijenos 2026; followed general video-channel navigation; no current session video confirmed."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "October ninth-sitting announcement schedules 14 October 2026 08:30 at the county palace; a separate institutional report describes its decisions. Current agenda-file and broadcast mapping remain unresolved.",
+        "formats_observed": [
+          "HTML current report/notice",
+          "PDF rules; agenda files pending"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-14",
+          "published_start": "08:30 sati",
+          "state": "scheduled_notice_with_separate_occurrence_report",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        },
+        "copying_recording": {
+          "status": "limited_personal_copying_statement_not_public_republication_clearance",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Website content except official marks; personal and noncommercial copying, respecting copyright. Other publication/transmission/public display requires written permission. Does not certify recording a third-party player."
+        },
+        "audiovisual_reuse": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        },
+        "programme_data": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        }
+      },
+      "rights_review": {
+        "status": "personal_noncommercial_copying_only",
+        "search_or_navigation_checked": "Read owned Uvjeti korištenja copying/publication clauses.",
+        "finding": "Generic website terms permit limited personal/noncommercial copying and require written permission for other publication/transmission/public display; no public player/rebroadcast clearance.",
+        "policy_url": "https://vzz.hr/uvjeti-koristenja.html"
+      },
+      "sources": [
+        {
+          "url": "https://vzz.hr/",
+          "title": "Službeni internetski portal — Varaždinska županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current owned assembly/acts/video-channel navigation."
+        },
+        {
+          "url": "https://vzz.hr/vijesti/najavljena-9-sjednica-zupanijske-skupstine-varazdinska-zupanija-povecava-proracun-za-11-posto.html",
+          "title": "Najavljena 9. sjednica Županijske Skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Schedules 14 October 2026 08:30; published notice timing is not a broadcast clock."
+        },
+        {
+          "url": "https://www.vzz.hr/vijesti/sjednica-zupanijske-skupstine-proracun-zupanije-povecan-na-305-milijuna-eura-osnovana-javna-ustanova-za-priustivo-stanovanje.html",
+          "title": "Sjednica Županijske skupštine — institutional decisions report",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "October 2026 occurrence report."
+        },
+        {
+          "url": "https://vzz.hr/media/k2/attachments/Poslovnik-procisceni-tekst-2021.pdf",
+          "title": "Poslovnik — consolidated 2021 rules",
+          "access": "web_search_index_pdf_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Audio recording retained as official documentation; councillors may request listening/transcript. This is not public web/audio licence evidence."
+        },
+        {
+          "url": "https://vzz.hr/uvjeti-koristenja.html",
+          "title": "Uvjeti korištenja",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Personal/noncommercial website copying only, except official marks; other publication/transmission/display requires written permission."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--virovitica-podravina",
+      "name": "Županijska skupština – Virovitica-Podravina",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.vpz.hr/materijali-za-skupstinu/",
+        "finding": "Owned assembly-material page supplies current named meeting and Virovitica assembly contact; council member/rules routes are visible on the same portal.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "historical_county_news_media_only_current_assembly_provider_unresolved",
+        "finding": "Historical county report describes short news clips on its YouTube/Facebook accounts. Individual current assembly/YouTube search did not locate a designated complete-session player; no conclusion about nonexistence is made.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:vpz.hr skupština sjednice video prijenos 2026 and site:vpz.hr \"skupštin\" \"youtube.com\"; current full-session provider unresolved."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Ninth-sitting material page schedules 9 October 2026 11:00 and exposes an HTML agenda with individual documents and previous sixth/seventh/eighth electronic-sitting minutes. An electronic sitting is not assumed to have a video stream.",
+        "formats_observed": [
+          "HTML agenda",
+          "individual linked documents/minutes"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-09",
+          "published_start": "11,00 sati",
+          "state": "scheduled",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Read material-page footer (all rights reserved) and targeted site:vpz.hr \"autorska prava\" stranice; no applicable session-media grant found.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.vpz.hr/materijali-za-skupstinu/",
+          "title": "Materijali za skupštinu",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current timed invitation, HTML agenda, linked materials/minutes and reserved-rights footer."
+        },
+        {
+          "url": "https://www.vpz.hr/",
+          "title": "Virovitičko-podravska županija — official portal",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned assembly/member/department/rules navigation."
+        },
+        {
+          "url": "https://www.vpz.hr/wp-content/uploads/2020/11/06-Izvjesce-o-radu-zupana.pdf",
+          "title": "County work report — historical media activity",
+          "access": "web_search_index_pdf_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Describes short video news on county website/YouTube/Facebook, not necessarily complete legislative proceedings."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--vukovar-srijem",
+      "name": "Županijska skupština – Vukovar-Srijem",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://vusz.hr/najava-11-sjednice-zupanijske-skupstine-3/",
+        "finding": "Owned dated assembly invitation identifies current 2025–2029 navigation and Vinkovci county chamber.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "provider_unresolved_after_individual_search_and_page_inspection",
+        "finding": "Individual county assembly/YouTube and transmission searches did not establish an officially designated public complete-session player. A county media-funding call covers reporting but does not designate a webcast or grant us rights.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:vusz.hr skupština sjednice video prijenos 2026; site:vusz.hr \"skupštin\" \"youtube\"; site:vusz.hr \"skupštin\" \"prijenos\"."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Eleventh-sitting invitation, published 9 October, schedules 19 October 2026 09:00 and supplies a complete HTML agenda plus document download. Broadcast timing/format remains unresolved.",
+        "formats_observed": [
+          "HTML timed agenda",
+          "linked downloadable document"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-19",
+          "published_start": "09:00 sati",
+          "state": "scheduled",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        },
+        "copying_recording": {
+          "status": "limited_personal_copying_statement_not_public_republication_clearance",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Website content except official marks; personal and noncommercial copying, respecting copyright. Other publication/transmission/public display requires written permission. Does not certify recording a third-party player."
+        },
+        "audiovisual_reuse": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        },
+        "programme_data": {
+          "status": "public_republication_not_cleared",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported.",
+          "scope": "Personal-use clause does not authorize a public catalogue, programme feed or rebroadcast."
+        }
+      },
+      "rights_review": {
+        "status": "personal_noncommercial_copying_only",
+        "search_or_navigation_checked": "Read official Uvjeti korištenja, including personal-copy and written-permission clauses.",
+        "finding": "Limited personal/noncommercial website copying does not authorize public catalogue reuse, programme feeds or rebroadcast. Other publication/transmission/display requires written permission.",
+        "policy_url": "https://vusz.hr/uvjeti-koristenja/"
+      },
+      "sources": [
+        {
+          "url": "https://vusz.hr/najava-11-sjednice-zupanijske-skupstine-3/",
+          "title": "Najava 11. Sjednice Županijske skupštine",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Current institution/term navigation and exact scheduled date/time/business."
+        },
+        {
+          "url": "https://vusz.hr/javni-poziv-za-financiranje-programskih-sadrzaja-elektronickih-medija-u-2026-godini/",
+          "title": "2026 media-programme funding call",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Scope includes reporting on assembly and its working bodies; a grant call does not identify a specific provider/player or convey third-party reuse rights."
+        },
+        {
+          "url": "https://vusz.hr/uvjeti-koristenja/",
+          "title": "Uvjeti korištenja",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Personal/noncommercial copying only except official marks; other publication/transmission/public display requires written permission."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--zadar",
+      "name": "Županijska skupština – Zadar",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.zadarska-zupanija.hr/skup%C5%A1tina/video-snimke-sjednica",
+        "finding": "Owned county assembly video archive is identified in official indexed content, with exact dated sessions. Direct fetch returns request verification, limiting independent page inspection.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "official_current_youtube_archive_indexed_player_pending",
+        "finding": "Official video archive text names YouTube players and recordings through ninth sitting held 15 October 2026, published 16 October. It states a minimum 30-day official-page availability rule. That retention rule is not a third-party embedding/rebroadcast grant.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:zadarska-zupanija.hr skupština prijenos sjednice video; inspected indexed current Video snimke sjednica archive."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Official indexed text designates https://sjednice.zadarska-zupanija.hr/ for agenda-item and combined PDF materials. Video archive labels sitting 8 with the same 15 June date as sitting 7 despite September publication: reconcile before programme mapping.",
+        "formats_observed": [
+          "indexed HTML video archive",
+          "designated per-item/combined PDF material route"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false,
+        "sample": {
+          "event_date": "2026-10-15",
+          "recording_published": "2026-10-16",
+          "state": "occurrence_asserted_by_official_archive",
+          "broadcast_confirmed": false
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Archive availability/attendance language inspected in indexed official text. Targeted site:zadarska-zupanija.hr \"uvjeti korištenja\" and \"Sadržaj\" searches returned planning/other terms, not an applicable media licence; direct page verification blocked footer inspection.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.zadarska-zupanija.hr/skup%C5%A1tina/video-snimke-sjednica",
+          "title": "Video snimke sjednica",
+          "access": "web_search_index_content_direct_request_verification",
+          "accessed_on": "2026-10-24",
+          "observation": "Archive names dated YouTube recordings, October ninth sitting and procedural minimum 30-day retention; eighth/seventh dates conflict."
+        },
+        {
+          "url": "https://zadarska-zupanija.hr/skup%C5%A1tina/prisustovanje-sjednici-%C5%BEupanijske-skup%C5%A1tine",
+          "title": "Prisustvovanje sjednici Županijske skupštine",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Official public-attendance/material policy; public attendance is distinct from media reuse."
+        },
+        {
+          "url": "https://zadarska-zupanija.hr/upravni-odjeli/slu%C5%BEba-ureda-%C5%BEupana/itemlist/user/628-super-user?start=70",
+          "title": "Official indexed material-route designation",
+          "access": "web_search_index_content",
+          "accessed_on": "2026-10-24",
+          "observation": "Explicitly directs users to sjednice.zadarska-zupanija.hr for per-item and combined PDF materials."
+        }
+      ],
+      "unresolved": [
+        "Archive date conflict and direct request-verification barrier prevent full current metadata/player validation.",
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    },
+    {
+      "id": "croatia--zagreb-county",
+      "name": "Županijska skupština – Zagreb County",
+      "country": "Croatia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "individual_disposition_recorded": true,
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false,
+      "metadata": {
+        "status": "owned_assembly_or_dated_institutional_route_confirmed_details_partial",
+        "institutional_url": "https://www.zagrebacka-zupanija.hr/sjednice-skupstine/",
+        "finding": "Owned county assembly route is distinct from City of Zagreb and provides member/contact/publicity navigation. Search-index current session list extends to September 2026, while direct extracted body omits the dynamic list.",
+        "current_members_and_identifiers": "not_fully_crosschecked"
+      },
+      "official_media": {
+        "status": "provider_unresolved_after_individual_search_and_page_inspection",
+        "finding": "Individual county-assembly/video search and current assembly/publicity navigation did not establish a public player or designated complete-session provider. The rules index permits audio recording; that is not proof of a published service.",
+        "decoded_playback_confirmed": false,
+        "stable_direct_hls_dash_validated": false,
+        "no_stream_exists_claim": false,
+        "search_or_navigation_checked": "site:zagrebacka-zupanija.hr skupština video sjednice 2026; inspected current county assembly and publicity routes, keeping City of Zagreb separate."
+      },
+      "epg": {
+        "status": "official_agenda_or_material_route_found_broadcast_mapping_unresolved",
+        "finding": "Official session/material and assembly-act indexes exist, including DOC/DOCX minutes and PDF notices. Indexed session-list dates and dated adopted acts can differ; extract the underlying invitation before treating either as broadcast time.",
+        "formats_observed": [
+          "HTML session/material indexes",
+          "indexed PDF notices/rules",
+          "DOC/DOCX minutes"
+        ],
+        "machine_readable_timed_broadcast_feed_confirmed": false,
+        "broadcast_start_end_confirmed": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "project_use_cleared": false,
+          "evidence_scope": "See this record rights_review; no county-wide or parent licence is imported."
+        }
+      },
+      "rights_review": {
+        "status": "unresolved",
+        "search_or_navigation_checked": "Read assembly/publicity/impressum footer and targeted site:zagrebacka-zupanija.hr \"korištenja\" \"autorska\"; unrelated municipal music terms were not applied.",
+        "finding": "No applicable affirmative media reuse grant established in the inspected owned pages and targeted search. Public availability is not a licence."
+      },
+      "sources": [
+        {
+          "url": "https://www.zagrebacka-zupanija.hr/sjednice-skupstine/",
+          "title": "Sjednice skupštine — Zagrebačka županija",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned assembly/current navigation; direct body omits list that official index exposes through September 2026."
+        },
+        {
+          "url": "https://www.zagrebacka-zupanija.hr/ustrojstvo/zupanijska-skupstina/javnost-rada/",
+          "title": "Javnost rada — Županijska skupština",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Describes public attendance, application and capacity constraints; does not designate a webcast."
+        },
+        {
+          "url": "https://www.zagrebacka-zupanija.hr/impressum/",
+          "title": "Impressum",
+          "access": "web_page_read",
+          "accessed_on": "2026-10-24",
+          "observation": "Owned editorial identity; footer reserves rights, no affirmative video reuse grant."
+        },
+        {
+          "url": "https://www.zagrebacka-zupanija.hr/media/filer_public/7d/dd/7ddd9220-36e7-4cf4-976f-c7b3fbbe2207/poslovnik_zupanijske_skupstine_zagrebacke_zupanije_-_procisceni_tekst.pdf",
+          "title": "Poslovnik — consolidated rules",
+          "access": "web_search_index_pdf_content",
+          "accessed_on": "2026-10-24",
+          "observation": "February 2026 official text says sittings may also be audio recorded; this does not show public audio availability."
+        }
+      ],
+      "unresolved": [
+        "Validate the exact public recording/player, chamber identity, completeness, sound/languages/captions and access behavior before a catalogue playback claim.",
+        "Map agenda to actual broadcast identity and timing; do not turn publication timestamps, scheduled sittings or recording length into a live EPG.",
+        "Resolve the seven rights uses separately, including third-party provider/material exceptions; no outreach was made."
+      ]
+    }
+  ]
+}

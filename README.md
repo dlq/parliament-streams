@@ -61,8 +61,8 @@ and conditions. See the [rights summary](docs/rights-summary.md).
 The catalogue and schedule pages offer playlist/guide links, copy buttons and
 localized VLC desktop instructions:
 
-- [Stable HLS playlist](https://dlq.ca/parliament-streams/data/stable-hls.m3u8)
-- [Broader validated HLS playlist](https://dlq.ca/parliament-streams/data/validated-hls.m3u8) — some feeds are available only during proceedings
+- [Stable HLS playlist](https://dlq.ca/parliament-streams/data/stable-hls.m3u)
+- [Broader validated HLS playlist](https://dlq.ca/parliament-streams/data/validated-hls.m3u) — some feeds are available only during proceedings
 - [XMLTV guide](https://dlq.ca/parliament-streams/data/epg.xml) — partial coverage
 
 These UTF-8 channel lists link to the original streams. Official viewing links

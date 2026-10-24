@@ -1,0 +1,1395 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Renewed current source follow-up for the remaining nine exact eligible national chamber identities in eight Africa/Balkans country groups. This is first follow-up coverage, not complete service/rights validation.",
+  "method": {
+    "sources": "Published official institutional routes, own institutional designated media, direct ordinary GET, official web text and normal Chromium rendering. Historical catalogue notes supply leads only.",
+    "distinctions": "House/Council coverage is separate. Source designation, dated document/media labels, loaded player frames and decoded playback are distinct. Access errors do not imply absence; no rights inferred from visibility.",
+    "browser_environment": "Browser plugin unavailable; installed Playwright 1.64.0 Chromium, 1440 x 1000. No fresh native media found on selected loaded wrappers. Only explicitly listed screenshot inspected for visual finding.",
+    "safety": "No outreach, CAPTCHA interaction, TLS/authentication bypass, private API, media download or provider manifest extraction. Published public Atom feed and document text only; no raw HTML or credentials saved in repo."
+  },
+  "summary": {
+    "countries": 8,
+    "exact_chamber_records": 9,
+    "records_with_fresh_sampled_decoded_video": 0,
+    "complete_metadata_stream_epg_rights_validations": 0,
+    "automatic_catalogue_promotions": 0,
+    "strong_findings": [
+      "Mauritius published recent-event feed is live Atom, 25 entries; first event matches own dated 20 October archive and carries +04:00. Future 27 October guide is separate; player rendered blank and event type is ambiguous.",
+      "Ghana current resumption banner versus stale Agenda index, Namibia Assembly current Order Paper versus old Schedule nav, and Council calendar through February are documented independently.",
+      "Official source designation renewed for Botswana, Cabo Verde, Ghana, Montenegro, North Macedonia and Namibia; no provider visibility converted to reuse permission."
+    ]
+  },
+  "records": [
+    {
+      "id": "national--bw-lc01",
+      "country": "Botswana",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "https://www.parliament.gov.bw/"
+      ],
+      "metadata_review": {
+        "identity": "National Assembly of Botswana identified by Parliament-powered Botswana Speaks. Published parliament.gov.bw timed out; secondary own institutional service reached 200.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.gov.bw/",
+          "error": "URLError: <urlopen error timed out>",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.botswanaspeaks.gov.bw/article/373/watch-live",
+          "http_status": 200,
+          "final_url": "https://www.botswanaspeaks.gov.bw/article/373/watch-live",
+          "title": "Watch-Live | Botswana Speaks",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.botswanaspeaks.gov.bw/disclaimer",
+          "http_status": 200,
+          "final_url": "https://www.botswanaspeaks.gov.bw/disclaimer",
+          "title": "Disclaimer | Botswana Speaks",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "National Assembly of Botswana identified by Parliament-powered Botswana Speaks. Published parliament.gov.bw timed out; secondary own institutional service reached 200.",
+        "media": "Own Watch-Live article dated 6 July 2026 explicitly designates @BWPARLIAMENT for National Assembly proceedings. This is current-read designation, not fresh decoded proceedings or all-room proof.",
+        "programme": "Events index newest July 2026; 6 July opening/19 March budget leads are historical meeting notices, not fresh October EPG. No public feed/stream-to-agenda mapping validated."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_website_information_only",
+          "scope": "Downloading/copying/recording",
+          "conditions": "Website content may be copied/distributed for noncommercial informational/reference purposes; reserved moral/other rights and third-party exclusions remain. This does not independently cover external YouTube media or a systematic programme-data service.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "General website reproduction clause does not establish external platform audiovisual coverage, full-channel relay or editing rights.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_website_information_only",
+          "scope": "Republishing programme metadata",
+          "conditions": "Website content may be copied/distributed for noncommercial informational/reference purposes; reserved moral/other rights and third-party exclusions remain. This does not independently cover external YouTube media or a systematic programme-data service.",
+          "source_ids": [
+            "route-3"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.parliament.gov.bw/",
+          "title": "https://www.parliament.gov.bw/",
+          "accessed_on": "2026-10-24",
+          "access": "URLError: <urlopen error timed out>",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-2",
+          "url": "https://www.botswanaspeaks.gov.bw/article/373/watch-live",
+          "title": "Watch-Live | Botswana Speaks",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://www.botswanaspeaks.gov.bw/disclaimer",
+          "title": "Disclaimer | Botswana Speaks",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.botswanaspeaks.gov.bw/category/2/events",
+          "title": "Events",
+          "accessed_on": "2026-10-24",
+          "access": "Official web text readable",
+          "finding": "Newest dated entries July 2026, not current October agenda/EPG."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--cv-lc01",
+      "country": "Cape Verde",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "https://www.parlamento.cv/"
+      ],
+      "metadata_review": {
+        "identity": "Own site identifies Assembleia Nacional in Cabo Verde; institution, ANTV and separate plenary/committee pages reached 200.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parlamento.cv/",
+          "http_status": 200,
+          "final_url": "https://www.parlamento.cv/",
+          "title": "Assembleia Nacional",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parlamento.cv/antv/",
+          "http_status": 200,
+          "final_url": "https://www.parlamento.cv/antv/",
+          "title": "ANTV - CANAL PARLAMENTO",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parlamento.cv/antv/plenario.php",
+          "http_status": 200,
+          "final_url": "https://www.parlamento.cv/antv/plenario.php",
+          "title": "ANTV - CANAL PARLAMENTO",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parlamento.cv/antv/comissoes.php",
+          "http_status": 200,
+          "final_url": "https://www.parlamento.cv/antv/comissoes.php",
+          "title": "ANTV - CANAL PARLAMENTO",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own site identifies Assembleia Nacional in Cabo Verde; institution, ANTV and separate plenary/committee pages reached 200.",
+        "media": "ANTV directly designates own YouTube channel UC5ACfRTTXZPcxtPyWQ6idGA. Plenary index lists 7–9 October 2026 recordings and currently says no live. Committee page has a justice-hearing lead; no decoded playback.",
+        "programme": "Dated plenary records are useful archive metadata. Older committee video-category page newest visible item 4 September 2016; do not treat that as current committee EPG. Titles/date labels differ for a July morning record."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading/copying/recording",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.parlamento.cv/",
+          "title": "Assembleia Nacional",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-2",
+          "url": "https://www.parlamento.cv/antv/",
+          "title": "ANTV - CANAL PARLAMENTO",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://www.parlamento.cv/antv/plenario.php",
+          "title": "ANTV - CANAL PARLAMENTO",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-4",
+          "url": "https://www.parlamento.cv/antv/comissoes.php",
+          "title": "ANTV - CANAL PARLAMENTO",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.parlamento.cv/antv/Video_eventos.php?estatus=Comissao",
+          "title": "ANTV committee video category",
+          "accessed_on": "2026-10-24",
+          "access": "Official web text readable",
+          "finding": "Visible category record dated 4 September 2016; separate current committee live page exists."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--gh-lc01",
+      "country": "Ghana",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.parliament.gh/"
+      ],
+      "metadata_review": {
+        "identity": "Own site identifies Parliament of Ghana; homepage and disclaimer ordinary GET 200.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.gh/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.gh/",
+          "title": "Parliament of Ghana",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://parliament.gh/disclaimer",
+          "http_status": 200,
+          "final_url": "https://parliament.gh/disclaimer",
+          "title": "Parliament of Ghana",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parliament.gh/disclaimer",
+          "http_status": 200,
+          "final_url": "https://www.parliament.gh/disclaimer",
+          "title": "Parliament of Ghana",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own site identifies Parliament of Ghana; homepage and disclaimer ordinary GET 200.",
+        "media": "Own homepage explicitly designates @parliamentofghana816 and Parliament.of.Ghana/videos for debates and committees. Featured homepage recordings are January 2025/2024, not a fresh proceeding sample.",
+        "programme": "Homepage announces 3 November 2026 10:00 resumption; Agenda index latest item is 21 October 2025. The current banner and stale agenda index must remain separate; no implemented feed/parser validated."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-2"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-2"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-2"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-2"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_website_information_only",
+          "scope": "Downloading/copying/recording",
+          "conditions": "Website content may be copied/distributed for noncommercial informational/reference purposes; reserved moral/other rights and third-party exclusions remain. This does not independently cover external YouTube media or a systematic programme-data service.",
+          "source_ids": [
+            "route-2"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "General website reproduction clause does not establish external platform audiovisual coverage, full-channel relay or editing rights.",
+          "source_ids": [
+            "route-2"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_website_information_only",
+          "scope": "Republishing programme metadata",
+          "conditions": "Website content may be copied/distributed for noncommercial informational/reference purposes; reserved moral/other rights and third-party exclusions remain. This does not independently cover external YouTube media or a systematic programme-data service.",
+          "source_ids": [
+            "route-2"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.parliament.gh/",
+          "title": "Parliament of Ghana",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-2",
+          "url": "https://parliament.gh/disclaimer",
+          "title": "Parliament of Ghana",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://www.parliament.gh/disclaimer",
+          "title": "Parliament of Ghana",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.parliament.gh/docs?type=AG",
+          "title": "Agenda",
+          "accessed_on": "2026-10-24",
+          "access": "Ordinary GET 200 and official web text readable",
+          "finding": "Latest visible agenda dated 21 October 2025; homepage resumption banner is current 2026."
+        },
+        {
+          "id": "followup-2",
+          "url": "https://www.youtube.com/@parliamentofghana816",
+          "title": "Parliament of Ghana official designated channel",
+          "accessed_on": "2026-10-24",
+          "access": "Own homepage hyperlink followed through web reader; provider returns shell only",
+          "finding": "Institutional designation confirmed; no provider video decoded."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--me-lc01",
+      "country": "Montenegro",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Parliament",
+      "institution_urls": [
+        "https://www.skupstina.me/"
+      ],
+      "metadata_review": {
+        "identity": "Own Skupština Crne Gore GET returned 403 but normal Chromium rendered 200 meaningful institutional content.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.skupstina.me/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own Skupština Crne Gore GET returned 403 but normal Chromium rendered 200 meaningful institutional content.",
+        "media": "Rendered official footer independently designates @SkupstinaCrneGore/streams and user/SkupstinaCrneGore/feed. Current homepage has 24 October special-sitting and 20 October plenary reports; no fresh video decoding.",
+        "programme": "Official indexed committee event gives 15 October 16:30–18:30 in Crveni salon, with agenda. Reopening through web yielded JS-only content; own homepage calendar lists 26–29 October committee leads. No feed schema/freshness certification."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading/copying/recording",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.skupstina.me/",
+          "title": "https://www.skupstina.me/",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 403",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.skupstina.me/",
+          "title": "Početna stranica - Skupština Crne Gore",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200; ordinary GET 403 preserved",
+          "finding": "Meaningful current content and own designated YouTube routes rendered; footer legal control later produced blank application, no policy permission read."
+        },
+        {
+          "id": "followup-2",
+          "url": "https://www.skupstina.me/me/dogadjaji/nastavak-31-sjednice-komisije-za-sprovodenje-izbora-predsjednika-i-clanova-cik-a",
+          "title": "Nastavak 31. sjednice Komisije za sprovođenje izbora predsjednika i članova CIK-a",
+          "accessed_on": "2026-10-24",
+          "access": "Official indexed text read; subsequent open JS-only",
+          "finding": "15 October 2026 16:30–18:30, Crveni salon, agenda and iframe marker; not playback."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--mk-lc01",
+      "country": "North Macedonia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "Assembly of the Republic",
+      "institution_urls": [
+        "https://www.sobranie.mk/"
+      ],
+      "metadata_review": {
+        "identity": "Own title identifies Собрание на Република Северна Македонија; ordinary GET 403, normal Chromium 200.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.sobranie.mk/",
+          "http_status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own title identifies Собрание на Република Северна Македонија; ordinary GET 403, normal Chromium 200.",
+        "media": "Rendered official footer explicitly links YouTube channel UCD5qpVe9-yNv4Xu4b3EuKFw. Own current news through 23 October is activity evidence, not decoded legislative media or all-room coverage.",
+        "programme": "Normal rendered calendar shows October 2026 and no plenary/committee meetings today. Server/web text has only calendar placeholders; no machine-readable feed or future event/media mapping validated."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading/copying/recording",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.sobranie.mk/",
+          "title": "https://www.sobranie.mk/",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 403",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.sobranie.mk/",
+          "title": "Собрание на Република Северна Македонија - Почетна",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200; ordinary GET 403 preserved",
+          "finding": "Own rendered footer designates official YouTube channel; current activity/news dates read."
+        },
+        {
+          "id": "followup-2",
+          "url": "https://www.sobranie.mk/kalendar.nspx",
+          "title": "Календар",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200; web text only placeholders",
+          "finding": "October calendar and no plenary/committee today; no feed/programme mapping validated."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--mu-lc01",
+      "country": "Mauritius",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "http://mauritiusassembly.govmu.org/English/Pages/default.aspx"
+      ],
+      "metadata_review": {
+        "identity": "Published main Assembly route timed out in HTTP and HTTPS forms; own parliamenttv.govmu.org media service identifies Mauritius National Assembly.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "http://mauritiusassembly.govmu.org/English/Pages/default.aspx",
+          "error": "timeout: The read operation timed out",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://parliamenttv.govmu.org/",
+          "http_status": 200,
+          "final_url": "https://parliamenttv.govmu.org/",
+          "title": "Mauritius National Assembly - Home",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://parliamenttv.govmu.org/Home/Help",
+          "http_status": 200,
+          "final_url": "https://parliamenttv.govmu.org/Home/Help",
+          "title": "Mauritius National Assembly - Help",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://parliamenttv.govmu.org/Guide",
+          "http_status": 200,
+          "final_url": "https://parliamenttv.govmu.org/Guide",
+          "title": "Mauritius National Assembly - Guide",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://mauritiusassembly.govmu.org/",
+          "error": "timeout: The read operation timed out",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Published main Assembly route timed out in HTTP and HTTPS forms; own parliamenttv.govmu.org media service identifies Mauritius National Assembly.",
+        "media": "Official help describes main-chamber live/archive service, audio-only control, event links and conditional embeds. Own dated 20 October 2026 event page has legislative agenda/index and designated player.parliamenttv.govmu.org frame, but loaded blank/no native video in Chromium; no decode confirmed.",
+        "programme": "Guide independently lists 27 October 2026 11:00; homepage end label 4:30AM needs verification. Source-published RSS URL actually returns Atom with 25 recent archived entries, including 20 October and youth events, not future schedule. Source type labels the 20 October chamber/questions event Committee, requiring mapping review."
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_offered_event_link_workflow",
+          "scope": "Source-page linking",
+          "conditions": "Official help offers whole-event or selected-time source links; preserve source context.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "embedding": {
+          "status": "offered_after_event_terms_acceptance",
+          "scope": "Third-party player embedding",
+          "conditions": "Help offers iframe generation only after reading/accepting event terms; no terms accepted, generated code or blanket permission obtained here.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved_specific_restrictions_published",
+          "scope": "Live relaying/redistribution",
+          "conditions": "Official help expressly notes commercial-use and editing restrictions; full event conditions/current authorized use remain unverified.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved_specific_restrictions_published",
+          "scope": "Downloading/copying/recording",
+          "conditions": "Official help expressly notes commercial-use and editing restrictions; full event conditions/current authorized use remain unverified.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved_specific_restrictions_published",
+          "scope": "Reusing audiovisual material",
+          "conditions": "Official help expressly notes commercial-use and editing restrictions; full event conditions/current authorized use remain unverified.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "http://mauritiusassembly.govmu.org/English/Pages/default.aspx",
+          "title": "http://mauritiusassembly.govmu.org/English/Pages/default.aspx",
+          "accessed_on": "2026-10-24",
+          "access": "timeout: The read operation timed out",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-2",
+          "url": "https://parliamenttv.govmu.org/",
+          "title": "Mauritius National Assembly - Home",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://parliamenttv.govmu.org/Home/Help",
+          "title": "Mauritius National Assembly - Help",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-4",
+          "url": "https://parliamenttv.govmu.org/Guide",
+          "title": "Mauritius National Assembly - Guide",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-5",
+          "url": "https://mauritiusassembly.govmu.org/",
+          "title": "https://mauritiusassembly.govmu.org/",
+          "accessed_on": "2026-10-24",
+          "access": "timeout: The read operation timed out",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://parliamenttv.govmu.org/Event/Index/6288ff45-c0bd-45ad-8048-75d104f9ff70",
+          "title": "Mauritius National Assembly Chamber, 20 October 2026",
+          "accessed_on": "2026-10-24",
+          "access": "Chromium HTTP 200; dated event/agenda rendered, player frame blank",
+          "finding": "Source times 11:00–19:04; event-type Committee conflicts with apparent chamber/questions agenda. No decoded video."
+        },
+        {
+          "id": "followup-2",
+          "url": "https://information.parliamenttv.govmu.org/api/event/feed",
+          "title": "Mauritius Parliament TV recent event feed",
+          "accessed_on": "2026-10-24",
+          "access": "Ordinary GET 200 application/atom+xml parsed",
+          "finding": "25 Atom entries; first exact ID matches 20 October event. updated carries +04:00, while feed-level updated reflects retrieval-day generation. Recent archive feed, not future linear EPG."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false,
+      "programme_feed_sample": {
+        "url": "https://information.parliamenttv.govmu.org/api/event/feed",
+        "http_status": 200,
+        "format": "Atom",
+        "entry_count": 25,
+        "feed_updated": "2026-10-24T20:16:22Z",
+        "entries": [
+          {
+            "id": "6288ff45-c0bd-45ad-8048-75d104f9ff70",
+            "title": "Mauritius National Assembly Chamber",
+            "updated": "2026-10-20T11:00:00+04:00",
+            "published": null,
+            "links": []
+          },
+          {
+            "id": "062974d6-277b-4d52-bb7d-a7064d6719cd",
+            "title": "Mauritius National Assembly Chamber",
+            "updated": "2026-09-01T11:00:00+04:00",
+            "published": null,
+            "links": []
+          },
+          {
+            "id": "df7a260f-c4ef-4fb7-a6f2-ba2970a13177",
+            "title": "National Youth Parliament (Fifth Edition)",
+            "updated": "2026-08-29T09:00:00+04:00",
+            "published": null,
+            "links": []
+          },
+          {
+            "id": "bd88ee18-d9c5-4bde-a11f-bbb6f54177e1",
+            "title": "National Youth Parliament (Fifth Edition)",
+            "updated": "2026-08-28T09:00:00+04:00",
+            "published": null,
+            "links": []
+          }
+        ],
+        "limits": "Entries include Youth Parliament and recent recordings; do not assume every entry belongs to the eligible legislature or interpret updated as broadcast start without source corroboration. No future event/end-times/linear mapping validated."
+      },
+      "browser_observation": {
+        "engine": "Chromium",
+        "event_url": "https://parliamenttv.govmu.org/Event/Index/6288ff45-c0bd-45ad-8048-75d104f9ff70",
+        "http_status": 200,
+        "provider_frame_origin": "https://player.parliamenttv.govmu.org",
+        "native_video_found": false,
+        "screenshots_inspected": [
+          "/tmp/parliament-africa-balkans-followup/mu-archive-final.png"
+        ],
+        "finding": "Actual screenshot inspected: event date/times, agenda/index and controls render, media region blank. No decoded image/audio claim."
+      }
+    },
+    {
+      "id": "national--na-lc01",
+      "country": "Namibia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "https://www.parliament.na/"
+      ],
+      "metadata_review": {
+        "identity": "Own National Assembly page independently reached 200 and describes the lower House.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.na/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.na/",
+          "title": "Namibian Parliament – Namibian Parliament",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parliament.na/disclaimer/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.na/disclaimer/",
+          "title": "Disclaimer – Namibian Parliament",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parliament.na/national-assembly/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.na/national-assembly/",
+          "title": "National Assembly – Namibian Parliament",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own National Assembly page independently reached 200 and describes the lower House.",
+        "media": "Shared official homepage explicitly labels latest stream 22 October 2026 National Assembly, and own pages designate UCueeiEi-sE0Ru0WDMk6dC3w plus fb.watch. This dated Assembly designation does not prove Council proceedings. No fresh playback.",
+        "programme": "Own Assembly Order Paper 83 PDF explicitly gives Thursday 22 October 2026 14:30–17:45 and substantive orders. Shared Schedule nav currently exposes 2015/2016/2021 lists; no fresh machine-readable broadcast feed validated."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading/copying/recording",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.parliament.na/",
+          "title": "Namibian Parliament – Namibian Parliament",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://www.parliament.na/disclaimer/",
+          "title": "Disclaimer – Namibian Parliament",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-4",
+          "url": "https://www.parliament.na/national-assembly/",
+          "title": "National Assembly – Namibian Parliament",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.parliament.na/schedule/",
+          "title": "Schedule",
+          "accessed_on": "2026-10-24",
+          "access": "Official web text readable",
+          "finding": "Visible notices/schedules categories 2021, 2016, 2015; not current EPG."
+        },
+        {
+          "id": "assembly-order-paper",
+          "url": "https://www.parliament.na/wp-content/uploads/2026/10/Order-Paper-Thursday-22-October-2026.pdf",
+          "title": "National Assembly Order Paper 83, Thursday 22 October 2026",
+          "accessed_on": "2026-10-24",
+          "access": "Official linked PDF text read, first page of 113-page file",
+          "finding": "Chamber-specific sitting date and planned 14:30–17:45 interval, not actual broadcast start/end."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--na-uc01",
+      "country": "Namibia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Council",
+      "institution_urls": [
+        "https://www.parliament.na/",
+        "https://www.parliament.na/national-council/"
+      ],
+      "metadata_review": {
+        "identity": "Own National Council page independently identifies the Upper House and reached 200.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "https://www.parliament.na/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.na/",
+          "title": "Namibian Parliament – Namibian Parliament",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parliament.na/national-council/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.na/national-council/",
+          "title": "National Council – Namibian Parliament",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parliament.na/disclaimer/",
+          "http_status": 200,
+          "final_url": "https://www.parliament.na/disclaimer/",
+          "title": "Disclaimer – Namibian Parliament",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own National Council page independently identifies the Upper House and reached 200.",
+        "media": "Own Council page has shared institutional YouTube/Watch Live links, but no fresh Council-specific dated proceeding decoded or independently identified in this pass. Assembly-labelled 22 October media is not inherited.",
+        "programme": "Own Council calendar page links a 2025/26 PDF whose dated programme ends February 2026. It is not a current October Council EPG. Shared Schedule lists are old; current Council event/media mapping remains unresolved."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading/copying/recording",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-3"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "https://www.parliament.na/",
+          "title": "Namibian Parliament – Namibian Parliament",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-2",
+          "url": "https://www.parliament.na/national-council/",
+          "title": "National Council – Namibian Parliament",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://www.parliament.na/disclaimer/",
+          "title": "Disclaimer – Namibian Parliament",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.parliament.na/schedule/",
+          "title": "Schedule",
+          "accessed_on": "2026-10-24",
+          "access": "Official web text readable",
+          "finding": "Visible notices/schedules categories 2021, 2016, 2015; not current EPG."
+        },
+        {
+          "id": "council-calendar",
+          "url": "https://www.parliament.na/wp-content/uploads/2025/03/DOC-20250307-WA0000_250307_130413.pdf",
+          "title": "National Council Calendar 2025/2026",
+          "accessed_on": "2026-10-24",
+          "access": "Official linked two-page PDF text read",
+          "finding": "Source dated activity through February 2026; stale for an October 2026 EPG despite 2025/26 title."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    },
+    {
+      "id": "national--rs-lc01",
+      "country": "Serbia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_specific_followup",
+      "directory_chamber_name": "National Assembly",
+      "institution_urls": [
+        "http://www.parlament.gov.rs"
+      ],
+      "metadata_review": {
+        "identity": "Own route identifies Народна скупштина Републике Србије and reached 200, as did its broadcast/archive wrappers.",
+        "directory_name_limit": "Directory translation retained; not a blanket preferred-local-name certification.",
+        "language_timezone": "Rendered interface names/languages are not actual audio-track validation; timezone certified only for explicitly parsed feed fields."
+      },
+      "current_access_checks": [
+        {
+          "url": "http://www.parlament.gov.rs",
+          "http_status": 200,
+          "final_url": "https://www.parlament.gov.rs/%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0-%D1%81%D0%BA%D1%83%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D0%B0.1.html",
+          "title": "Народна скупштина Републике Србије | Насловна страна",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+          "http_status": 200,
+          "final_url": "https://www.parlament.gov.rs/%D0%BF%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B8/%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B0.2082.html",
+          "title": "Народна скупштина Републике Србије | Архива",
+          "method": "ordinary public HTTP GET"
+        },
+        {
+          "url": "https://www.parlament.gov.rs/преноси.2091.html",
+          "http_status": 200,
+          "final_url": "https://www.parlament.gov.rs/%D0%BF%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B8.2091.html",
+          "title": "Народна скупштина Републике Србије | Преноси",
+          "method": "ordinary public HTTP GET"
+        }
+      ],
+      "confirmed": {
+        "institution": "Own route identifies Народна скупштина Републике Србије and reached 200, as did its broadcast/archive wrappers.",
+        "media": "Official homepage designates user/ParlamentSrbija. Own archive navigation distinguishes plenary, committees and hearings; normal browser following the 2022-convocation archive loads a videonet.co.rs frame but no native video/date entries decoded. Provider designation is not playback.",
+        "programme": "Own calendar route is linked; archive wrappers alone supply no fresh timed programme. Current event dates/durations, room and language mapping and any programme-data licence remain unresolved."
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "scope": "Source-page linking",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party player embedding",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External-player/IPTV direct media",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Live relaying/redistribution",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "scope": "Downloading/copying/recording",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "scope": "Reusing audiovisual material",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing programme metadata",
+          "conditions": "No separate applicable permission established by current bounded sources; visibility, institutional designation and provider controls do not imply permission.",
+          "source_ids": [
+            "route-1"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "route-1",
+          "url": "http://www.parlament.gov.rs",
+          "title": "Народна скупштина Републике Србије | Насловна страна",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-2",
+          "url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+          "title": "Народна скупштина Републике Србије | Архива",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "route-3",
+          "url": "https://www.parlament.gov.rs/преноси.2091.html",
+          "title": "Народна скупштина Републике Србије | Преноси",
+          "accessed_on": "2026-10-24",
+          "access": "ordinary public HTTP GET 200",
+          "finding": "Current page/provenance read or access result; see confirmed findings. HTTP access is not decoded media."
+        },
+        {
+          "id": "followup-1",
+          "url": "https://www.parlament.gov.rs/преноси/архива/сазив-од-1-августа-2022.4976.html",
+          "title": "Сазив од 1. августа 2022.",
+          "accessed_on": "2026-10-24",
+          "access": "Own archive link followed in Chromium, HTTP 200",
+          "finding": "Wrapper designates videonet.co.rs frame; native video not found, no dated current recording decoded."
+        }
+      ],
+      "playback_status": "No fresh decoded playback in this bounded follow-up; dated events and loaded player wrappers are separate.",
+      "unresolved": [
+        "Current native live and substantive archived playback for this exact chamber and public committee/room coverage.",
+        "Audible broadcast languages, alternate tracks, captions/signing and complete continuity.",
+        "Fresh programme extraction, event/channel mapping, timezone, end-times, cancellations/updates and XMLTV readiness.",
+        "All outstanding per-use rights and specific third-party/item exceptions."
+      ],
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_validation_complete": false
+    }
+  ]
+}

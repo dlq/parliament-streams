@@ -1,0 +1,110 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Current linked audiovisual licence follow-up for the exact Dutch House identity; no fresh playback or programme-guide certification.",
+  "method": "Read the current Dutch disclaimer, official audiovisual-supply page and all four pages of the linked licence in text and rendered form. The English generic notice differs; the Dutch disclaimer expressly refers audiovisual users to the specific licence. No login, acceptance control, media download or outreach was performed.",
+  "records": [
+    {
+      "id": "national--nl-lc01",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "institution_name": "Tweede Kamer der Staten-Generaal",
+        "institutional_route": "https://www.tweedekamer.nl/",
+        "exact_scope": "House of Representatives; does not apply to the separate Eerste Kamer."
+      },
+      "confirmed": [
+        "The current Dutch disclaimer directs audiovisual use to a specific four-page licence dated 1 May 2019, also linked by the official media-supply page.",
+        "The supply page identifies Debat Direct for public plenary and committee proceedings and describes media download/embed access. High-quality media accounts have a separate eligibility route; no account was requested."
+      ],
+      "rights": {
+        "linking": {
+          "status": "no_specific_inbound_link_clause_confirmed",
+          "finding": "Do not convert provisions about linked external sites into an inbound-link prohibition or licence."
+        },
+        "embedding": {
+          "status": "conditional_official_route",
+          "finding": "The supply page expressly offers journalistic fragment embedding; arbitrary whole-site framing is not established."
+        },
+        "direct_playback": {
+          "status": "conditional_av_use_not_endpoint_certification",
+          "finding": "The licence permits qualifying audiovisual use on internet/TV/other media; it does not verify the current catalogued HLS routes."
+        },
+        "rebroadcast": {
+          "status": "conditional_av_use",
+          "finding": "The media-use grant is subject to the common conditions below; no unrestricted relay licence is claimed."
+        },
+        "copying_recording": {
+          "status": "conditional_with_retention_limit",
+          "finding": "Raw acquired material may not be archived and must be destroyed within one month, except qualifying works incorporating it."
+        },
+        "audiovisual_reuse": {
+          "status": "conditional",
+          "finding": "Covered plenary/committee material may be excerpted or incorporated with context intact; the licence is nontransferable."
+        },
+        "programme_data": {
+          "status": "text_reuse_with_credit_separate_mapping_gap",
+          "finding": "The Dutch disclaimer permits text reuse with source credit unless otherwise specified; no timed guide or separate database licence is validated."
+        }
+      },
+      "common_av_conditions": {
+        "source_sections": [
+          "1.1–1.10",
+          "2.1–2.2",
+          "3.1–3.3",
+          "4.1–4.7",
+          "5.1–5.3"
+        ],
+        "summary": "Media and other users receive conditional permission; use itself counts as acceptance. Purposes are journalism, expression, education or research. Commercial/advertising, entertainment, sponsor/member recruitment, sale/rental and prohibited contexts are excluded. Visible source credit, copyright, licence reference and disclosure of edits are required; context must remain faithful. Third-party rights remain separate. Terms may change or permission be reasonably withdrawn; users must support prompt removal."
+      },
+      "catalogue_updates": [
+        {
+          "id": "netherlands-tweede-kamer",
+          "permission_status": "explicit_reuse_with_conditions",
+          "scope": "Plenary meeting material only; retain the recorded technical history rather than claiming a new playback test."
+        },
+        {
+          "id": "netherlands-tweede-kamer-aletta-jacobszaal",
+          "permission_status": "explicit_reuse_with_conditions",
+          "scope": "Committee meeting material only; application to other event types is not presumed."
+        },
+        {
+          "id": "netherlands-tweede-kamer-actualiteitenkanaal",
+          "permission_status": "personal_use_pending_review",
+          "scope": "Occasional-event content needs a match to the licence's plenary/committee scope.",
+          "playback_policy_note": "Existing native playback remains under the project opt-out policy with pending permission; no claim is made that non-meeting events are covered by this licence."
+        }
+      ],
+      "unresolved": [
+        "Current decoded playback, audio, captions and every room remain untested in this follow-up.",
+        "A scheduled event, a permitted purpose and compliance with every required notice must be assessed individually; the aggregate permission label is not blanket clearance.",
+        "Non-meeting events, programme-to-room mapping, freshness, timezone conversion and XMLTV parser coverage remain open."
+      ],
+      "sources": [
+        {
+          "id": "dutch-disclaimer",
+          "url": "https://www.tweedekamer.nl/applicaties/disclaimer",
+          "reviewed_on": "2026-10-24",
+          "observation": "Current Dutch copyright sections distinguish text, photographs and audiovisual material; the latter links the specific licence."
+        },
+        {
+          "id": "official-av-supply",
+          "url": "https://www.tweedekamer.nl/contact-en-bezoek/persinformatie/audiovisuele-vergaderbeelden-afnemen",
+          "reviewed_on": "2026-10-24",
+          "observation": "Designates Debat Direct, plenary and committee material, journalistic fragment download/embed tools, high-quality account eligibility and the licence."
+        },
+        {
+          "id": "current-linked-av-licence",
+          "url": "https://www.tweedekamer.nl/sites/default/files/atoms/files/licentievoorwaarden_audiovisueel_materiaal_tweede_kamer.pdf",
+          "reviewed_on": "2026-10-24",
+          "observation": "All four pages text-read and visually inspected. Current linked version bears 1 May 2019; no later version was inferred from retrieval date."
+        },
+        {
+          "id": "english-generic-notice",
+          "url": "https://www.houseofrepresentatives.nl/legal-notice",
+          "reviewed_on": "2026-10-24",
+          "observation": "Generic multimedia prior-consent wording differs from the Dutch disclaimer's audiovisual licence referral. The English notice itself says Dutch controls in case of doubt."
+        }
+      ]
+    }
+  ]
+}

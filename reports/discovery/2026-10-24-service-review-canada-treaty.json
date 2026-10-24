@@ -1,0 +1,786 @@
+{
+  "report_version": 1,
+  "reviewed_on": "2026-10-24",
+  "scope": "Source-specific follow-up for four newly reconciled Canadian treaty legislatures. This report does not change legislative eligibility, catalogue membership, playback policy or rights permissions.",
+  "method": "Official primary pages, linked PDFs, search-indexed official text and normal bounded HTTP reads. Where pages return 403/503, preserve the access limit; indexed text and provider self-labels remain lower-depth evidence. Only public linked calendar exports were followed; no hidden media API, access-control bypass, outreach or playback certification.",
+  "summary": {
+    "records_reviewed": 4,
+    "partial_source_followups": 4,
+    "current_provider_designation_confirmed": 1,
+    "public_machine_readable_calendar_confirmed": 1,
+    "decoded_playback_checks": 0,
+    "catalogue_promotions": 0,
+    "all_four_metadata_stream_epg_rights_validated": false
+  },
+  "records": [
+    {
+      "id": "canada--nunatsiavut",
+      "country": "Canada",
+      "name": "Nunatsiavut Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Nunatsiavut Assembly",
+        "name_status": "supported_by_current_official_domain_and_dated_parliamentary_reports",
+        "official_institutional_url": "https://nunatsiavut.com/nunatsiavut-assembly/",
+        "current_activity_scope": "Official 2025 proceedings and 2026 audiovisual procurement evidence; complete current membership and institutional metadata not certified."
+      },
+      "official_media": {
+        "status": "official_audio_surface_identified_access_unresolved",
+        "provider_designation": "Own Assembly page indexed as providing an audio feed; no external provider designation confirmed.",
+        "proceedings_leads": [
+          {
+            "date": "2025-11-19",
+            "type": "official_hansard",
+            "source_ids": [
+              "nun-hansard-2025-11"
+            ]
+          },
+          {
+            "date": "2025-09-23",
+            "type": "official_hansard_with_online_listening_reference",
+            "source_ids": [
+              "nun-hansard-2025-09"
+            ]
+          }
+        ],
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false
+      },
+      "programme_guide": {
+        "status": "historical_sitting_documents_only",
+        "formats_confirmed": [
+          "official_PDF_Hansard_with_sitting_date_and_actual_commencement"
+        ],
+        "upcoming_machine_readable_calendar_confirmed": false,
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "limitations": [
+          "Historical actual start times are not future programme listings.",
+          "No source timezone or end-time convention was certified.",
+          "Current agenda/calendar route remains unresolved while the own Assembly page is inaccessible."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable public linking/media/programme-data licence was established from the inspected official evidence. The Assembly route was inaccessible and a transcript or public audio label does not grant reuse.",
+          "source_ids": [
+            "nun-assembly",
+            "nun-hansard-2025-11"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "nun-assembly",
+          "url": "https://nunatsiavut.com/nunatsiavut-assembly/",
+          "title": "Nunatsiavut Assembly - Nunatsiavut Government",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_excerpt; web_reader_503; ordinary_http_403",
+          "source_date": null,
+          "excerpt": "Nunatsiavut Assembly Audio Feed",
+          "notes": "The indexed own-site page labels an audio feed and links legislation/Hansards. Current page/player content was inaccessible; no bypass attempted."
+        },
+        {
+          "id": "nun-hansard-2025-11",
+          "url": "https://nunatsiavut.com/wp-content/uploads/2026/04/November-2025.pdf",
+          "title": "Nunatsiavut Government parliamentary report: November 19, 2025",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_pdf_text_inspected",
+          "source_date": "2025-11-19",
+          "excerpt": "The Nunatsiavut Assembly proceedings were recorded in Inuktitut and English.",
+          "notes": "116-page official transcript; text records opening and parliamentary business. This is documentary evidence, not decoded media or confirmation of every audio track."
+        },
+        {
+          "id": "nun-hansard-2025-09",
+          "url": "https://nunatsiavut.com/wp-content/uploads/2026/03/September-2025-.pdf",
+          "title": "Nunatsiavut Government parliamentary report: September 23, 2025",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_pdf_text_inspected",
+          "source_date": "2025-09-23",
+          "excerpt": "I'd like to thank everyone for tuning in, if anyone is listening online",
+          "notes": "113-page transcript gives sitting date and 8:55 AM commencement. Cover says Spring Session while the body says Fall Session; preserve this inconsistency."
+        },
+        {
+          "id": "nun-av-rfp",
+          "url": "https://nunatsiavut.com/request-for-proposals-design-of-audio-visual-systems-for-the-nunatsiavut-assembly-building/",
+          "title": "Request for Proposals: Design of Audio-Visual Systems for the Nunatsiavut Assembly Building",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_text_inspected",
+          "source_date": null,
+          "excerpt": "The goal is to enhance the functionality, reliability, and clarity of the audio-visual experience",
+          "notes": "Notice gives closing date March 16, 2026. Procurement intent does not establish installation, completion, current video availability or a provider grant."
+        }
+      ],
+      "confirmed": [
+        "Own institutional title and route are supported by official-domain records.",
+        "Dated 2025 transcripts document substantive Assembly proceedings and references to an online listening audience.",
+        "An audio-feed label is indexed on the own Assembly page."
+      ],
+      "unresolved_dimensions": [
+        "current_audio_playback_and_feed_endpoint",
+        "current_video_service_and_provider_ownership",
+        "independently_dated_decoded_media_samples",
+        "upcoming_calendar_and_timezone",
+        "all_chambers_and_committee_coverage",
+        "audible_tracks_and_source_wide_accessibility",
+        "each_separate_rights_use",
+        "exact_identifier_crosscheck"
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "canada--nisgaa-lisims",
+      "country": "Canada",
+      "name": "Wilp Si’ayuukhl Nisg̱a’a",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Wilp Si’ayuukhl Nisg̱a’a",
+        "abbreviation": "WSN",
+        "name_status": "own_government_explicitly_identifies_legislative_body",
+        "official_institutional_url": "https://www.nisgaanation.ca/government/nisgaa-lisims-government/government-structure/",
+        "name_limits": "Own structure page uses Nisg̱a’a with combining mark; agenda uses Nisga’a. This records official variants without treating the executive or Special Assembly as an interchangeable institution."
+      },
+      "official_media": {
+        "status": "exact_wsn_media_route_unresolved",
+        "provider_designation": null,
+        "related_service_statement": "Own structure page states Special Assemblies are webcast; this does not establish WSN sittings or identify a current WSN player.",
+        "proceedings_leads": [
+          {
+            "scheduled_dates": [
+              "2026-10-26",
+              "2026-10-27",
+              "2026-10-28"
+            ],
+            "type": "proposed_WSN_legislative_agenda_not_media",
+            "source_ids": [
+              "nis-oct-notice",
+              "nis-oct-agenda"
+            ]
+          }
+        ],
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false
+      },
+      "programme_guide": {
+        "status": "official_future_pdf_agenda_confirmed",
+        "formats_confirmed": [
+          "HTML_public_notice",
+          "PDF_order_of_business_and_proposed_agenda"
+        ],
+        "upcoming_machine_readable_calendar_confirmed": false,
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "limitations": [
+          "Three sitting dates are confirmed as proposals; start/end times and source timezone are not confirmed from the inspected agenda.",
+          "No machine-readable EPG endpoint or implemented parser was established.",
+          "In-camera items cannot be assumed to be publicly broadcast."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Inspected Legal Terms and Media Policy do not establish this specific use. Warranty/privacy/contact wording and public agenda visibility are not media or programme-data licences.",
+          "source_ids": [
+            "nis-legal",
+            "nis-media-policy"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "nis-structure",
+          "url": "https://www.nisgaanation.ca/government/nisgaa-lisims-government/government-structure/",
+          "title": "Government Structure - Nisg̱a’a Lisims Government",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": "Wilp Si’ayuukhl Nisg̱a’a (WSN) is the 36-member legislative body",
+          "notes": "The webcast statement elsewhere on this page concerns biennial Special Assemblies, which are distinct from WSN legislative sittings."
+        },
+        {
+          "id": "nis-oct-notice",
+          "url": "https://www.nisgaanation.ca/wsn-october-2026/",
+          "title": "WSN October 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_inspected",
+          "source_date": "2026-10-09",
+          "excerpt": "Agenda for October 2026 Sitting of WSN"
+        },
+        {
+          "id": "nis-oct-agenda",
+          "url": "https://www.nisgaanation.ca/wp-content/uploads/2026/10/Agenda-for-October-2026-Sitting-of-WSN.pdf",
+          "title": "Order of Business and Proposed Agenda: October 26, 27, 28, 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_three_page_pdf_text_inspected",
+          "source_date": "2026-10-26/2026-10-28",
+          "excerpt": "OCTOBER 26, 27, 28, 2026",
+          "notes": "Agenda identifies first/second/final readings of named laws, questions and an in-camera section. The dates are scheduled future sittings as at review date, not proof they occurred."
+        },
+        {
+          "id": "nis-legal",
+          "url": "https://www.nisgaanation.ca/legal-terms/",
+          "title": "Legal Terms - Nisg̱a’a Lisims Government",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": "This information is provided as a public service by the Nisga’a Lisims Government",
+          "notes": "Inspected terms provide warranty/liability/privacy and outbound-link disclaimers; no explicit audiovisual or programme-data reuse grant established."
+        },
+        {
+          "id": "nis-media-policy",
+          "url": "https://www.nisgaanation.ca/news-events/media/media-policy/",
+          "title": "Media Policy - Nisg̱a’a Lisims Government",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": "All official contact between the Nisg̱a’a Lisims Government contact and external media originates from the Directorate of Communications & Intergovernmental Relations.",
+          "notes": "Media-contact routing is not a linking, embedding or retransmission licence. No contact was made."
+        }
+      ],
+      "confirmed": [
+        "Exact legislative institution name and own current institutional route.",
+        "October 9 notice links the proposed legislative agenda for October 26–28, 2026.",
+        "The agenda contains substantive legislative business and separately marks in-camera reports."
+      ],
+      "unresolved_dimensions": [
+        "exact_WSN_public_player_and_provider_designation",
+        "decoded_WSN_proceedings",
+        "current_live_and_archive_continuity",
+        "complete_room_and_committee_inventory",
+        "broadcast_languages_and_accessibility",
+        "calendar_times_timezone_and_feed_mapping",
+        "each_separate_rights_use",
+        "exact_identifier_crosscheck"
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "canada--tlicho",
+      "country": "Canada",
+      "name": "Tłı̨chǫ Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Tłı̨chǫ Assembly",
+        "name_status": "supported_by_indexed_official_annual_report_current_route_access_unresolved",
+        "official_institutional_url": "https://www.tlicho.ca/",
+        "assembly_route_lead": "https://www.tlicho.ca/government/tlicho-assembly",
+        "institution_limits": "The Tłı̨chǫ Government legislature is distinct from the Northwest Territories legislature’s Tłı̨chǫ-language feed and from individual community governments."
+      },
+      "official_media": {
+        "status": "historical_official_livestream_statement_provider_lead_unconfirmed",
+        "provider_designation": null,
+        "proceedings_leads": [
+          {
+            "dates": [
+              "2024-02-14",
+              "2024-02-15",
+              "2024-02-16"
+            ],
+            "type": "official_annual_report_historical_session_and_livestream_statement",
+            "source_ids": [
+              "tli-annual-2024"
+            ]
+          },
+          {
+            "dates": [
+              "2025-11-18",
+              "2025-11-19",
+              "2025-11-20"
+            ],
+            "type": "Vimeo_title_and_description_lead_not_decoded_or_own_site_designated",
+            "url": "https://vimeo.com/1139032189",
+            "source_ids": [
+              "tli-vimeo-lead"
+            ]
+          }
+        ],
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false
+      },
+      "programme_guide": {
+        "status": "historical_document_and_provider_event_date_leads",
+        "formats_confirmed": [
+          "indexed_official_annual_report_text"
+        ],
+        "upcoming_machine_readable_calendar_confirmed": false,
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "limitations": [
+          "No current official calendar, event feed, times or timezone were verified.",
+          "Multi-day provider description does not map separate recordings to individual meeting dates."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "Current own institutional and policy surfaces were inaccessible; historical livestream statements and a provider self-label do not establish permission for this use.",
+          "source_ids": [
+            "tli-home",
+            "tli-assembly",
+            "tli-annual-2024",
+            "tli-vimeo-lead"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "tli-home",
+          "url": "https://www.tlicho.ca/",
+          "title": "Tłı̨chǫ Government institutional homepage",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_403; ordinary_http_403",
+          "source_date": null,
+          "excerpt": "",
+          "notes": "Access failure is not absence of a public service. No challenge interaction, alternate endpoint or header workaround was used."
+        },
+        {
+          "id": "tli-assembly",
+          "url": "https://www.tlicho.ca/government/tlicho-assembly",
+          "title": "Tłı̨chǫ Assembly institutional route",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_403",
+          "source_date": null,
+          "excerpt": "",
+          "notes": "Historical route found in documentary references; current route content/redirect/ownership designation could not be inspected."
+        },
+        {
+          "id": "tli-annual-2024",
+          "url": "https://www.tlicho.ca/sites/default/files/documents/government/Annual%20Report%202024.pdf",
+          "title": "Tłı̨chǫ Government Annual Report 2023–2024",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_text_inspected; direct_web_reader_403",
+          "source_date": "2023-04-01/2024-03-31",
+          "excerpt": "Sessions were live-streamed so that Tłı̨chǫ citizens could view them remotely.",
+          "notes": "Indexed official annual report enumerates May/July/October/November 2023 and February 14–16, 2024 Assembly sessions. Full PDF access and current provider linkage remain unresolved."
+        },
+        {
+          "id": "tli-vimeo-lead",
+          "url": "https://vimeo.com/1139032189",
+          "title": "3rd Session of the 6th Tłı̨chǫ Assembly",
+          "checked_on": "2026-10-24",
+          "access_result": "provider_search_index_text_inspected; direct_web_reader_cache_miss",
+          "source_date": "2025-11-18/2025-11-20",
+          "excerpt": "Date: November. 18-20, 2025",
+          "notes": "Search index attributes uploader to Tlicho Government and location to Whatì. Provider self-label is a lead; current designation by the own site is not confirmed."
+        }
+      ],
+      "confirmed": [
+        "Official indexed annual report names the Assembly and says the historical sessions were livestreamed.",
+        "A specifically titled November 2025 Vimeo Assembly recording is a concrete follow-up lead."
+      ],
+      "unresolved_dimensions": [
+        "current_owned_assembly_route",
+        "preferred_name_current_primary_page_confirmation",
+        "provider_designation",
+        "decoded_and_visually_identified_legislative_business",
+        "dated_recording_continuity",
+        "complete_room_and_committee_inventory",
+        "broadcast_languages_and_accessibility",
+        "current_calendar_times_timezone_and_feed_mapping",
+        "each_separate_rights_use",
+        "exact_identifier_crosscheck"
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "canada--cree-nation-eeyou-istchee",
+      "country": "Canada",
+      "name": "Council of the Cree Nation Government / Conseil du Gouvernement de la nation crie",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Council of the Cree Nation Government",
+        "public_meeting_label": "Board/Council",
+        "name_status": "own_government_source_distinguishes_Council_and_joint_Grand_Council_board",
+        "official_institutional_url": "https://www.cngov.ca/",
+        "institution_limits": "Council shares membership and often meets jointly with the Board of Directors of the Grand Council of the Crees (Eeyou Istchee); retain exact constitutional institution and joint meeting scope."
+      },
+      "official_media": {
+        "status": "own_site_provider_designation_and_dated_agendas_confirmed_playback_unchecked",
+        "provider_designation": "Vimeo players directly embedded by official homepage and dated event pages.",
+        "proceedings_leads": [
+          {
+            "dates": [
+              "2025-12-02",
+              "2025-12-03",
+              "2025-12-04"
+            ],
+            "date_basis": "own_agenda_conflicts_with_event_wrapper",
+            "type": "designated_Vimeo_recording_title_and_agenda",
+            "provider_url_without_query": "https://player.vimeo.com/video/1141442362",
+            "source_ids": [
+              "cree-home",
+              "cree-december-2025"
+            ]
+          },
+          {
+            "dates": [
+              "2025-10-28",
+              "2025-10-29"
+            ],
+            "type": "designated_Vimeo_event_and_substantive_own_agenda",
+            "provider_url": "https://vimeo.com/event/5470814/embed/interaction",
+            "source_ids": [
+              "cree-october-2025"
+            ]
+          }
+        ],
+        "provider_url_note": "Public embed query hashes/parameters omitted from retained player URLs; these are identity references and not asserted to be directly playable.",
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false
+      },
+      "programme_guide": {
+        "status": "official_HTML_event_agenda_and_public_iCalendar_confirmed_quality_gates_open",
+        "formats_confirmed": [
+          "HTML_event_directory",
+          "HTML_meeting_agendas",
+          "public_iCalendar_2.0_download"
+        ],
+        "upcoming_machine_readable_calendar_confirmed": true,
+        "source_timezone_evidence": "Public December 2026 export includes TZID America/Montreal and UTC start/end fields.",
+        "linear_feed_mapping_confirmed": false,
+        "xmltv_ready": false,
+        "limitations": [
+          "Calendar describes multi-day meetings rather than an identified linear feed.",
+          "December 2025 event-wrapper dates/times conflict with the embedded agenda.",
+          "December 2026 precise start/end at the same minute across days require corroboration before treating them as programme times.",
+          "No implemented parser, completeness/freshness guarantee or programme-data redistribution licence established."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved_no_explicit_inbound_link_policy_established",
+          "finding": "The reviewed terms discuss outbound external links; that does not establish an inbound linking licence or prohibition.",
+          "source_ids": [
+            "cree-terms"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No separate source-specific permission for this use was established by the inspected pages. Public institutional Vimeo designation is not a third-party reuse grant.",
+          "source_ids": [
+            "cree-december-2025",
+            "cree-october-2025",
+            "cree-terms"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No separate source-specific permission for this use was established by the inspected pages. Public institutional Vimeo designation is not a third-party reuse grant.",
+          "source_ids": [
+            "cree-december-2025",
+            "cree-october-2025",
+            "cree-terms"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No separate source-specific permission for this use was established by the inspected pages. Public institutional Vimeo designation is not a third-party reuse grant.",
+          "source_ids": [
+            "cree-december-2025",
+            "cree-october-2025",
+            "cree-terms"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_website_reproduction_wording_with_integrity_and_media_scope_holds",
+          "finding": "Terms describe noncommercial website reproduction subject to accuracy/title-author attribution, and commercial use by consent. Applicability to recording externally hosted proceedings is unresolved; unrelated gambling text makes the current policy source require integrity review.",
+          "source_ids": [
+            "cree-terms"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved_external_platform_and_policy_integrity",
+          "finding": "The own website’s noncommercial reproduction clause is not accepted as a blanket licence for designated Vimeo proceedings. The policy itself requires an integrity review.",
+          "source_ids": [
+            "cree-terms",
+            "cree-december-2025"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_website_wording_not_programme_data_licence_confirmed",
+          "finding": "The terms have conditional noncommercial website reproduction wording, with integrity concerns; no specific licence for systematic calendar extraction or downstream XMLTV redistribution was established.",
+          "source_ids": [
+            "cree-terms",
+            "cree-ical"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "cree-home",
+          "url": "https://www.cngov.ca/",
+          "title": "The Grand Council of the Crees (Eeyou Istchee) official homepage",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_and_designated_iframe_inspected",
+          "source_date": null,
+          "excerpt": "Board Council December 2025",
+          "notes": "Own homepage embeds a Vimeo player subsequently matched to the own December meeting page. No media manifest extracted or playback asserted."
+        },
+        {
+          "id": "cree-events",
+          "url": "https://www.cngov.ca/gcc-events/",
+          "title": "Events - Grand Council of the Crees / Cree Nation Government",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": "Certain events are available on Livestream",
+          "notes": "Calendar offers Board/Council and Assembly categories. Availability is event-specific."
+        },
+        {
+          "id": "cree-december-2025",
+          "url": "https://www.cngov.ca/events/board-council-december-4/",
+          "title": "Board Council December 2025",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_and_normal_http_200_iframe_inspected",
+          "source_date": "2025-12-02/2025-12-04",
+          "excerpt": "Meeting of the Board of Directors and Council",
+          "notes": "Own page designates Vimeo item 1141442362. Agenda says December 2, 3 and 4, 2025, 9:30 AM; event wrapper says December 3–5, 19:35. These conflicts are unresolved."
+        },
+        {
+          "id": "cree-october-2025",
+          "url": "https://www.cngov.ca/events/october-board-council/",
+          "title": "October Board Council 2025",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_and_normal_http_200_iframe_inspected",
+          "source_date": "2025-10-28/2025-10-29",
+          "excerpt": "2026 Proposed Calendar of Meetings",
+          "notes": "Own page designates Vimeo event 5470814, dates October 28–29, 2025 and a substantive governance/finance/laws agenda. Video content was not decoded."
+        },
+        {
+          "id": "cree-december-2026",
+          "url": "https://www.cngov.ca/events/board-council-4/",
+          "title": "Board Council 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_text_and_normal_http_200_page_inspected",
+          "source_date": "2026-12-01/2026-12-03",
+          "excerpt": "Government Relations, Funding Allocation & Budget",
+          "notes": "Public event page gives December 1–3, 2026, Gatineau, and 2:35 PM start/end. Treat precise times as unverified scheduling metadata."
+        },
+        {
+          "id": "cree-ical",
+          "url": "https://www.cngov.ca/wp-admin/admin-ajax.php?action=eventon_ics_download&event_id=16601&ri=0",
+          "title": "Public Add to Calendar export for Board Council December 2026",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_http_200_text_calendar_selected_fields_inspected",
+          "source_date": "2026-12-01/2026-12-03",
+          "excerpt": "BEGIN:VCALENDAR",
+          "notes": "Publicly linked iCalendar 2.0 response: DTSTART 20261201T193500Z; DTEND 20261203T193500Z; TZID America/Montreal; SUMMARY Board Council. No current linear broadcast-feed mapping established."
+        },
+        {
+          "id": "cree-identity",
+          "url": "https://www.cngov.ca/signing-of-landmark-impact-benefit-agreement-for-the-windfall-project/",
+          "title": "Signing of Landmark Impact Benefit Agreement for the Windfall Project",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_text_inspected",
+          "source_date": "2026-06-02",
+          "excerpt": "These two bodies often act jointly and are commonly referred to as the “Board/Council”.",
+          "notes": "Official source distinguishes the Council of Cree Nation Government from the same-membership Grand Council Board; joint media does not make the two institutions interchangeable."
+        },
+        {
+          "id": "cree-terms",
+          "url": "https://www.cngov.ca/terms-of-use/",
+          "title": "Terms of Use - Cree Nation Government",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_and_independent_ordinary_http_200_text_inspected_with_integrity_concern",
+          "source_date": null,
+          "excerpt": "Non-Commercial Reproduction: Unless otherwise indicated, you may reproduce any part of this website in part or in whole",
+          "notes": "Website content terms condition noncommercial reproduction on accuracy, full title/author attribution and informational responsibility; commercial replication and marks require consent. HOWEVER unrelated multilingual gambling-promotion paragraphs also occur in the response. Integrity requires review; no claim of who inserted them. The terms separately disclaim governance of external platforms, so website wording is not treated as a Vimeo audiovisual grant."
+        }
+      ],
+      "source_integrity": {
+        "status": "policy_page_requires_integrity_review",
+        "url": "https://www.cngov.ca/terms-of-use/",
+        "finding": "Unrelated multilingual gambling-promotion paragraphs appear above the normal reproduction section in both web-reader text and an independent ordinary HTTP 200 response.",
+        "scope": "Do not infer compromise attribution, contamination of all pages or settled legal effect; do not rely on the page as an unqualified media grant."
+      },
+      "confirmed": [
+        "Exact Council/joint Board-Council distinction supported by an official source.",
+        "Own institutional pages designate specific Vimeo recording/event embeds and substantive dated agendas.",
+        "A public Add to Calendar link returns iCalendar with UTC timestamps and an America/Montreal timezone declaration."
+      ],
+      "unresolved_dimensions": [
+        "decoded_legislative_business_and_independently_dated_samples",
+        "exact_date_conflict_between_2025_agenda_and_event_wrapper",
+        "reliability_of_precise_future_calendar_times",
+        "current_live_complete_rooms_audio_languages_and_accessibility",
+        "specific_broadcast_feed_mapping",
+        "terms_page_integrity",
+        "each_separate_audiovisual_and_programme_data_right",
+        "exact_identifier_crosscheck"
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    }
+  ],
+  "publication_guardrails": [
+    "Every quoted source excerpt is at most 25 words.",
+    "No raw HTML is retained.",
+    "Player query parameters and public-link hashes are omitted; no credential values are copied.",
+    "No permission inferred from visibility or from the institution itself embedding a player.",
+    "No absence-of-service claim inferred from access blocks or an empty search."
+  ]
+}

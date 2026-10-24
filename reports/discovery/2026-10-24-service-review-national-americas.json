@@ -1,0 +1,2803 @@
+{
+  "report_version": 1,
+  "reviewed_on": "2026-10-24",
+  "scope": "Current official-source partial follow-up for 18 exact NATIONAL chamber identities in 11 Americas countries. Upper/lower chambers are separate; no regional or umbrella source clearance is inherited.",
+  "method": "Own chamber/provider primary pages, linked official policy/PDF texts, normal bounded public HTTP and official web-reader/indexed content. Lower-depth indexed content and inaccessible routes explicitly labelled. No raw HTML, media manifests, audiovisual downloads, outreach, login or access-control bypass; no decoded playback. Existing catalogue evidence/configuration is historical unless an independent current source observation is supplied.",
+  "summary": {
+    "exact_national_chambers_reviewed": 18,
+    "countries": 11,
+    "partial_source_followups": 18,
+    "fresh_decoded_playback_checks": 0,
+    "new_direct_endpoints_certified": 0,
+    "new_EPG_parsers": 0,
+    "all_dimensions_validated": 0,
+    "catalogue_promotions": 0
+  },
+  "integration_notes": [
+    "Canada national House/Senate current content grants were independently confirmed by root, which plans explicit_reuse_with_conditions while retaining link_out. This report does not certify the eventual canonical edit.",
+    "Content reproduction permission, third-party work rights, independent whole-live-signal relay and stable delivery/endpoint are distinct. No endpoint is called technically restricted merely because permission is unresolved.",
+    "Catalogue correction flags are proposals/evidence for root integration; this subagent edits no canonical catalogue, inventory or documentation.",
+    "Read date is Saturday 24 October 2026; recess/no-live or empty schedules do not establish service failure. Indexed pages with July/February/2021 content do not establish current October freshness."
+  ],
+  "records": [
+    {
+      "id": "national--ar-lc01",
+      "country": "Argentina",
+      "name": "Honorable Cámara de Diputados de la Nación",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Honorable Cámara de Diputados de la Nación",
+        "official_institutional_url": "https://www.hcdn.gob.ar/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "official_House_DTV_and_YouTube_designation_confirmed",
+        "provider_designation": "House itself links DTV and its own YouTube channel.",
+        "official_media_urls": [
+          "https://dtv.hcdn.gob.ar/",
+          "https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/featured"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "current_future_HTML_committee_agenda",
+        "formats_confirmed": [
+          "HTML_meeting_date_start_and_room",
+          "linked_PDF_summons"
+        ],
+        "limitations": [
+          "October27 agenda is future scheduled business, not decoded media or guaranteed transmission.",
+          "No explicit end-time, source timezone or feed export certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-house"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "ar-house",
+          "url": "https://www.hcdn.gob.ar/",
+          "title": "H. Cámara de Diputados de la Nación",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own House heading and current official YouTube channel UC5KfW9_wv4tqbIPgY8tMG-w plus dtv.hcdn.gob.ar cross-links inspected. Distinct from Senate."
+        },
+        {
+          "id": "ar-dtv",
+          "url": "https://dtv.hcdn.gob.ar/",
+          "title": "dtv",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Ordinary HTTP200 DTV wrapper embeds own hcdn.gob.ar/dtv/video.html. Web reader returned403; no player decoding or direct-media endpoint extraction."
+        },
+        {
+          "id": "ar-house-agenda",
+          "url": "https://www.hcdn.gob.ar/comisiones/agenda/",
+          "title": "Agenda Parlamentaria",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2026-10-27",
+          "excerpt": null,
+          "notes": "Current HTML agenda includes Oct27 public bicameral hearing10:00SalónAzul and Budget/Finance informative meeting11:00AnnexC; linked summons PDFs. A shared bicameral item is not a separate floor session. No broadcast binding or machine feed certified."
+        }
+      ],
+      "confirmed": [
+        "House-owned media routes and separate chamber identity confirmed.",
+        "Dated upcoming committee agenda and summons links inspected."
+      ],
+      "unresolved_dimensions": [
+        "exact_dated_House_archive_player_and_caption_quality",
+        "applicable_published_audiovisual_and_linking_licence",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--ar-uc01",
+      "country": "Argentina",
+      "name": "Honorable Senado de la Nación Argentina",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Honorable Senado de la Nación Argentina",
+        "official_institutional_url": "https://www.senado.gob.ar/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_Senado_TV_live_and_YouTube_designation_confirmed",
+        "provider_designation": "SenadoTV emitted by own institutional communications directorate.",
+        "official_media_urls": [
+          "https://www.senado.gob.ar/parlamentario/sesiones/enVivo",
+          "https://www.youtube.com/senadotvargentina"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "current_future_HTML_committee_agenda_separate_from_public_activity_calendar",
+        "formats_confirmed": [
+          "HTML_future_meeting_dates_starts_rooms",
+          "committee_list_JSON_Excel_links_not_event_feed"
+        ],
+        "limitations": [
+          "Tours, adviser meetings and shared bicameral business require separate classification.",
+          "No live-player binding or actual future duration verified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ar-senate"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "ar-senate",
+          "url": "https://www.senado.gob.ar/",
+          "title": "Honorable Senado de la Naci&oacute;n Argentina",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own Senate identity, SenadoTV live route and youtube.com/senadotvargentina cross-link confirmed. Home activity calendar includes October24/25 tours and commemorative lighting; these are not parliamentary programmes."
+        },
+        {
+          "id": "ar-senate-live",
+          "url": "https://www.senado.gob.ar/parlamentario/sesiones/enVivo",
+          "title": "Honorable Senado de la Naci&oacute;n Argentina",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": "SENADO TV EN VIVO",
+          "notes": "Explicitly identifies SenadoTV signal as emitted by Dirección General de Comunicación Institucional. No actual current video, dated archive or language track decoded."
+        },
+        {
+          "id": "ar-senate-agenda",
+          "url": "https://www.senado.gob.ar/parlamentario/comisiones/?active=agenda",
+          "title": "Honorable Senado de la Naci&oacute;n Argentina",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2026-10-27/2026-10-28",
+          "excerpt": null,
+          "notes": "Current committee agenda: Oct27BancaMujer15:00ArturoIllia; Oct28ForeignRelations12:30ArturoIllia. Separately labels adviser meetings and bicameral public hearings. JSON/Excel links export committee lists, not a validated event guide."
+        },
+        {
+          "id": "ar-senate-media-info",
+          "url": "https://www.senado.gob.ar/prensa/medios",
+          "title": "Información para Medios - Senado de la Nación",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Media-information route inspected; no general embedding/direct-feed/rebroadcast/programme-data licence established."
+        }
+      ],
+      "confirmed": [
+        "Exact Senate live route has an explicit institutional signal designation.",
+        "Future committee meetings have named rooms/start times."
+      ],
+      "unresolved_dimensions": [
+        "dated_archive_item_and_current_player_playback",
+        "rights_policy_for_specific_uses",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--br-lc01",
+      "country": "Brazil",
+      "name": "Câmara dos Deputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Câmara dos Deputados",
+        "official_institutional_url": "https://www.camara.leg.br/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_TV_and_proceedings_surfaces_confirmed_no_fresh_playback",
+        "provider_designation": "Own Câmara live/embedded TV and official event categories.",
+        "official_media_urls": [
+          "https://www.camara.leg.br/tv/aovivo",
+          "https://www.camara.leg.br/transmissoes"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "HTML_weekday_TV_grid_and_dated_legislative_event_surface",
+        "formats_confirmed": [
+          "HTML_weekday_broadcast_grid",
+          "HTML_date_filtered_events"
+        ],
+        "existing_catalogue_parser": "brazil-tv-camara implementation is historical configuration, not freshly exercised by this follow-up.",
+        "limitations": [
+          "Need week/date anchoring, broadcast-vs-event mapping and dynamic live/replay handling.",
+          "Guided tours are not EPG proceedings."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "br-camara-av-order",
+            "br-camara-general-terms"
+          ]
+        },
+        "embedding": {
+          "status": "official_embed_workflow_offered_specific_content_conditions",
+          "finding": "Own TV page offers incorporation; content scope and Article16 conditions remain separate.",
+          "source_ids": [
+            "br-camara-live",
+            "br-camara-av-order"
+          ]
+        },
+        "direct_playback": {
+          "status": "content_grant_confirmed_stable_endpoint_unvalidated",
+          "finding": "No fresh endpoint validation; content licence does not certify a delivery contract.",
+          "source_ids": [
+            "br-camara-av-order"
+          ]
+        },
+        "rebroadcast": {
+          "status": "conditional_proceedings_content_grant_whole_TV_signal_unresolved",
+          "finding": "Article16 covers direct proceedings; independent whole mixed-TV signal and third-party programmes need separate scope review.",
+          "source_ids": [
+            "br-camara-av-order"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_CC_BY_4_0_direct_proceedings_grant",
+          "finding": "Direct plenary/committee transmissions: CC BY4.0; preserve reality, speech context, credit and applicable logo conditions.",
+          "source_ids": [
+            "br-camara-av-order"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_CC_BY_4_0_direct_proceedings_grant",
+          "finding": "Direct plenary/committee transmissions: CC BY4.0; preserve reality, speech context, credit and applicable logo conditions.",
+          "source_ids": [
+            "br-camara-av-order"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_general_portal_wording_dataset_scope_unresolved",
+          "finding": "Source/author-credit wording exists; exact guide/API dataset and third-party rights remain unresolved.",
+          "source_ids": [
+            "br-camara-general-terms"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "br-camara-live",
+          "url": "https://www.camara.leg.br/tv/aovivo",
+          "title": "Portal da Câmara dos Deputados - Portal da Câmara dos Deputados",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own live TV page and incorporation control confirmed. No stream manifest was fetched or saved in this report; no video decoded. Linear TV can include programmes other than chamber proceedings."
+        },
+        {
+          "id": "br-camara-week",
+          "url": "https://www.camara.leg.br/tv/programacao-semanal",
+          "title": "Programação Semanal - TV Câmara - Portal da Câmara dos Deputados",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current served HTML has weekday grids, mixed programmes and replays with source-recording dates. Some live/replay alternatives and an unavailable-programming column are present. Calendar week anchoring not explicit in inspected body; do not assign dates solely from day labels."
+        },
+        {
+          "id": "br-camara-events",
+          "url": "https://www.camara.leg.br/transmissoes",
+          "title": "As Transmissões da Câmara dos Deputados - Portal da Câmara dos Deputados",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2026-10-24",
+          "excerpt": null,
+          "notes": "Current date-filtered event surface shows October24 guided visits09:00–13:00, not a floor/committee sitting. Separates floor,Congress,committee and other-event categories."
+        },
+        {
+          "id": "br-camara-av-order",
+          "url": "https://www2.camara.leg.br/legin/int/ordser/2022/ordemdeservico-2-30-maio-2022-792759-publicacaooriginal-165427-direx.html",
+          "title": "Ordem de Serviço nº2,30May2022",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2022-05-30",
+          "excerpt": "Creative Commons CC BY 4.0",
+          "notes": "Current served official order Article16 puts direct plenary/committee transmissions under CC BY4.0 with reality/original-speech-context conditions. Other audiovisual copying rules exclude third-party restricted content and image-bank material; supplied copies retain Chamber logo. This does not clear every mixed linear-TV programme."
+        },
+        {
+          "id": "br-camara-general-terms",
+          "url": "https://www2.camara.leg.br/termo-de-uso-e-politica-de-privacidade/termos-gerais",
+          "title": "Termos gerais — Portal da Câmara dos Deputados",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Portal information has source/author-credit reproduction wording. Specific audiovisual order and third-party/material exceptions take precedence over a blanket interpretation."
+        }
+      ],
+      "confirmed": [
+        "Specific direct-proceedings CC BY4.0 order re-read on the official site.",
+        "Current TV and transmission-calendar surfaces inspected separately."
+      ],
+      "unresolved_dimensions": [
+        "fresh_substantive_media_samples",
+        "weekly_grid_date_anchor_and_parser_retest",
+        "whole_linear_signal_and_third_party_programme_rights",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--br-uc01",
+      "country": "Brazil",
+      "name": "Senado Federal",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Senado Federal",
+        "official_institutional_url": "https://www.senado.leg.br/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "current_own_TV_and_dated_multimedia_routes_confirmed_electoral_hold",
+        "provider_designation": "Own TV Senado page designates TVSenadoOficial YouTube; own Multimídia supplies separately identified Senate events.",
+        "official_media_urls": [
+          "https://www12.senado.leg.br/tv/",
+          "https://www12.senado.leg.br/multimidia"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "date": "2026-10-15",
+            "title": "135ª Sessão Deliberativa Ordinária",
+            "source_ids": [
+              "br-senate-floor-159133"
+            ],
+            "status": "official_item_text_only_temporary_electoral_availability_notice"
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "HTML_TV_grid_and_dated_archive_index",
+        "formats_confirmed": [
+          "HTML_start_programme_episode_synopsis_grid",
+          "HTML_legislative_event_dates"
+        ],
+        "limitations": [
+          "TV grid date anchoring/end-time convention and exact room/multichannel mapping unconfirmed.",
+          "Current archive notice limits availability during electoral period; no access workaround attempted."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "br-senate-policy",
+            "br-senate-player-terms"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "br-senate-policy",
+            "br-senate-player-terms"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "br-senate-policy",
+            "br-senate-player-terms"
+          ]
+        },
+        "rebroadcast": {
+          "status": "specific_TV_authorization_and_use_conditions",
+          "finding": "TV terms require applicable authorization; noncommercial/no propaganda or advertising, retain logos/credits/context; third-party footage excluded.",
+          "source_ids": [
+            "br-senate-policy"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_download_wording_TV_scope_limited",
+          "finding": "General download grant is narrowed by specific TV use/authorization and third-party conditions; live recording scope unresolved.",
+          "source_ids": [
+            "br-senate-policy"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "specific_TV_authorization_and_use_conditions",
+          "finding": "TV terms require applicable authorization; noncommercial/no propaganda or advertising, retain logos/credits/context; third-party footage excluded.",
+          "source_ids": [
+            "br-senate-policy"
+          ]
+        },
+        "programme_data": {
+          "status": "general_credited_material_wording_exact_guide_scope_unresolved",
+          "finding": "No specific licence for republishing the full programme grid established.",
+          "source_ids": [
+            "br-senate-policy"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "br-senate-old-live",
+          "url": "https://www12.senado.leg.br/tv/ao-vivo",
+          "title": "Former TV Senado Ao Vivo route",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_access_failed",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current ordinary HTTP returned404; keep as broken-route finding, not absence of service.",
+          "ordinary_http_access_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "id": "br-senate-tv",
+          "url": "https://www12.senado.leg.br/tv/",
+          "title": "TV Senado",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current own TV page embeds official YouTube player and links TVSenadoOficial plus Plenário/Comissões, programme grid and archive. No current on-air content decoded."
+        },
+        {
+          "id": "br-senate-multimedia",
+          "url": "https://www12.senado.leg.br/multimidia",
+          "title": "Portal Multimídia",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2026-10-22",
+          "excerpt": null,
+          "notes": "Own index lists Oct22EnvironmentCommittee, Oct21/20special Senate sessions and Oct15ordinary floor session; separate joint Congress rows. Election-period notice says some content temporarily unavailable."
+        },
+        {
+          "id": "br-senate-floor-159133",
+          "url": "https://www12.senado.leg.br/multimidia/evento/159133",
+          "title": "Senate Plenary135th Ordinary Deliberative Session",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_exact_event_text_inspected",
+          "source_date": "2026-10-15",
+          "excerpt": null,
+          "notes": "Dated exact Senate floor item carries electoral-period temporary-unavailability notice. No actual media was decoded."
+        },
+        {
+          "id": "br-senate-grade",
+          "url": "https://www12.senado.leg.br/tv/programacao",
+          "title": "Programação / Como sintonizar - TV Senado",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own TV grid exposes start/programme/episode/synopsis columns and mixed non-proceedings programmes. Internet description says up to eight simultaneous events; generic scope is not room-by-room validation."
+        },
+        {
+          "id": "br-senate-policy",
+          "url": "https://www12.senado.leg.br/assessoria-de-imprensa/politica-de-uso",
+          "title": "Política de Uso — Assessoria Senado",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Broad credited-reproduction wording is narrowed by TV-specific terms: noncommercial/no advertising or political/ideological promotion; preserve logo,credits,context; third-party transfers/other uses require authorization and supplied third-party footage may not be reusable."
+        },
+        {
+          "id": "br-senate-player-terms",
+          "url": "https://www12.senado.leg.br/tv/termos-de-uso",
+          "title": "TV Senado Termos de Uso",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current player terms expressly incorporate YouTube terms. Platform playback permission is not a direct-endpoint or independent signal-relay grant."
+        }
+      ],
+      "confirmed": [
+        "Current /tv/ works while catalogued /tv/ao-vivo returns404.",
+        "Specific TV-use conditions and temporary electoral archive availability notice confirmed."
+      ],
+      "unresolved_dimensions": [
+        "date_anchored_grid_and_complete_rooms",
+        "fresh_decoded_media_after_published_availability_hold",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [
+        {
+          "catalogue_id": "brazil-tv-senado-official",
+          "field": "official_url and epg_sources.url",
+          "finding": "Recorded /tv/ao-vivo now returns404; current /tv/ owns the live player and /tv/programacao the grid.",
+          "recommended_reconciliation": "Replace broken entry routes after root review; do not infer new playback or unrestricted redistribution."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--ca-lc01",
+      "country": "Canada",
+      "name": "House of Commons",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "House of Commons",
+        "official_institutional_url": "https://www.ourcommons.ca/en",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "current_separate_chamber_Harmony_designation_and_event_metadata",
+        "provider_designation": "ParlVU for House and House committees.",
+        "official_media_urls": [
+          "https://parlvu.parl.gc.ca/Harmony/en"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "scheduled_date": "2026-10-26",
+            "scheduled_start": "11:00",
+            "source_timezone": "EDT_explicit_on_House_homepage",
+            "title": "House next sitting",
+            "source_ids": [
+              "ca-house-institution"
+            ],
+            "status": "future_notice_not_decoded"
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "current_future_HTML_Harmony_events_with_rooms_and_statuses",
+        "formats_confirmed": [
+          "HTML_Harmony_event_date_start_end_room_status",
+          "HTML_sitting_calendar"
+        ],
+        "existing_catalogue_parser": "canada-harmony implementation remains recorded; no complete parser/freshness replay performed by this follow-up.",
+        "limitations": [
+          "Upcoming start/end are scheduled, not actual duration.",
+          "Joint/committee/room binding, stale outstanding statuses and source timezone need source-level reconciliation.",
+          "No new machine-readable feed certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        },
+        "embedding": {
+          "status": "no_specific_external_embed_workflow_confirmed",
+          "finding": "No approved current external iframe/player workflow established by these reads.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        },
+        "direct_playback": {
+          "status": "content_permission_confirmed_endpoint_and_method_unresolved",
+          "finding": "Grant concerns proceedings content; no stable direct endpoint or external technical method certified.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        },
+        "rebroadcast": {
+          "status": "recording_reproduction_grant_independent_whole_live_relay_unresolved",
+          "finding": "Do not turn reproduction permission into automatic whole-signal relay or delivery authorization; broadcast privilege remains reserved.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        },
+        "copying_recording": {
+          "status": "explicit_conditional_proceedings_reproduction_permission",
+          "finding": "Accurate, unofficial proceedings reproductions without financial gain; third-party rights retained. No independent live-capture method certified.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "explicit_conditional_proceedings_reproduction_permission",
+          "finding": "Proceedings content grant confirmed; avoid misleading/official presentation and financial gain; third-party material remains separate.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        },
+        "programme_data": {
+          "status": "specific_guide_data_scope_unresolved",
+          "finding": "Proceedings grant does not by itself settle every agenda/guide dataset; source conditions need item mapping.",
+          "source_ids": [
+            "ca-house-permission"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "ca-house-institution",
+          "url": "https://www.ourcommons.ca/en",
+          "title": "Welcome to the House of Commons of Canada - House of Commons of Canada",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own chamber route explicitly links its separate official Harmony service. House homepage gives next sitting October26 at11:00EDT; unrelated template/live-vote text is not a verified live vote."
+        },
+        {
+          "id": "ca-house-portal",
+          "url": "https://parlvu.parl.gc.ca/Harmony/en",
+          "title": "ParlVu",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current HTML lists upcoming Oct26ETHI54WestBlock035B11:00–13:00 and other named committee events; older outstanding item/status also appears. Do not treat all statuses as contemporaneous playback."
+        },
+        {
+          "id": "ca-house-permission",
+          "url": "https://www.ourcommons.ca/en/important-notices",
+          "title": "Privacy, copyrights, disclaimers and important notices - House of Commons of Canada",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current Speaker permission expressly allows accurate, unofficial reproductions of House/committee proceedings in whole/part in any medium, excluding commercial financial-gain use; third-party briefs may need consent. Broadcast/publication privilege remains reserved."
+        },
+        {
+          "id": "ca-house-calendar",
+          "url": "https://www.ourcommons.ca/en/sitting-calendar",
+          "title": "Sitting Calendar - House of Commons of Canada",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current House2026 sitting-day calendar subject to special orders; day classification alone is not transmission start/end data."
+        },
+        {
+          "id": "ca-parlvu-faq",
+          "url": "https://www.ourcommons.ca/Content/Misc/parlvu-faq-e.pdf",
+          "title": "ParlVU Frequently Asked Questions",
+          "checked_on": "2026-10-24",
+          "access_result": "official_PDF_primary_search_index_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Legacy FAQ explicitly covers ParlVU audiovisual reproductions under the Speaker permission and describes desktop MP4 clip downloads after adjournment. Legacy technical specifications are not a current endpoint certification."
+        }
+      ],
+      "confirmed": [
+        "Separate own-chamber media designation and upcoming event metadata inspected.",
+        "Current published proceedings reproduction grant positively confirmed under conditions."
+      ],
+      "unresolved_dimensions": [
+        "current_Harmony_item_playback_and_accessibility",
+        "programme_specific_data_rights",
+        "independent_whole_live_signal_and_delivery_scope",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [
+        {
+          "catalogue_id": "canada-house-of-commons-parlvu",
+          "field": "permission.status, summary and recommendation",
+          "historical_status": "no_third_party_reuse",
+          "integration_decision": "Parent independently reread current policy and plans explicit_reuse_with_conditions; retain link_out.",
+          "finding": "Broad no-reuse wording omits an express conditional proceedings reproduction grant. This report does not certify direct endpoints, live relay, whole mixed signals or third-party works.",
+          "recommended_reconciliation": "State content grant and limits accurately; keep link_out and technical/live-relay gaps separate."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--ca-uc01",
+      "country": "Canada",
+      "name": "Senate of Canada",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Senate of Canada",
+        "official_institutional_url": "https://sencanada.ca/en/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "current_separate_chamber_Harmony_designation_and_event_metadata",
+        "provider_designation": "SenVu for Senate and public Senate committees; joint committees explicitly distinguished.",
+        "official_media_urls": [
+          "https://senparlvu.parl.gc.ca/Harmony/"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "scheduled_date": "2026-10-27",
+            "scheduled_start": "14:00",
+            "scheduled_end": "18:00",
+            "title": "Senate sitting96",
+            "room": "Senate Chamber,2RideauStreet",
+            "source_ids": [
+              "ca-senate-portal"
+            ],
+            "status": "future_listing_not_decoded"
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "current_future_HTML_Harmony_events_with_rooms_and_statuses",
+        "formats_confirmed": [
+          "HTML_Harmony_event_date_start_end_room_status",
+          "HTML_sitting_calendar",
+          "linked_sitting_calendar_PDFs"
+        ],
+        "existing_catalogue_parser": "canada-harmony implementation remains recorded; no complete parser/freshness replay performed by this follow-up.",
+        "limitations": [
+          "Upcoming start/end are scheduled, not actual duration.",
+          "Joint/committee/room binding, stale outstanding statuses and source timezone need source-level reconciliation.",
+          "No new machine-readable feed certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "source_hyperlink_sharing_workflow_offered",
+          "finding": "SenVu expressly offers sharing hyperlinks; inspect applicable context/content conditions.",
+          "source_ids": [
+            "ca-senate-portal"
+          ]
+        },
+        "embedding": {
+          "status": "no_specific_external_embed_workflow_confirmed",
+          "finding": "No approved current external iframe/player workflow established by these reads.",
+          "source_ids": [
+            "ca-senate-permission"
+          ]
+        },
+        "direct_playback": {
+          "status": "content_permission_confirmed_endpoint_and_method_unresolved",
+          "finding": "Grant concerns proceedings content; no stable direct endpoint or external technical method certified.",
+          "source_ids": [
+            "ca-senate-permission"
+          ]
+        },
+        "rebroadcast": {
+          "status": "recording_reproduction_grant_independent_whole_live_relay_unresolved",
+          "finding": "Do not turn reproduction permission into automatic whole-signal relay or delivery authorization; broadcast privilege remains reserved.",
+          "source_ids": [
+            "ca-senate-permission"
+          ]
+        },
+        "copying_recording": {
+          "status": "explicit_conditional_proceedings_reproduction_permission",
+          "finding": "Accurate, unofficial proceedings reproductions without financial gain; third-party rights retained. Integrity/dignity conditions apply.",
+          "source_ids": [
+            "ca-senate-permission"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "explicit_conditional_proceedings_reproduction_permission",
+          "finding": "Proceedings content grant confirmed; avoid misleading/official presentation and financial gain; third-party material remains separate.",
+          "source_ids": [
+            "ca-senate-permission"
+          ]
+        },
+        "programme_data": {
+          "status": "specific_guide_data_scope_unresolved",
+          "finding": "Proceedings grant does not by itself settle every agenda/guide dataset; source conditions need item mapping.",
+          "source_ids": [
+            "ca-senate-permission"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "ca-senate-institution",
+          "url": "https://sencanada.ca/en/",
+          "title": "Home - SenCanada.ca",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own Senate route separately links SenVu for Senate/committee proceedings, calendar and committees."
+        },
+        {
+          "id": "ca-senate-portal",
+          "url": "https://senparlvu.parl.gc.ca/Harmony/",
+          "title": "SenVu",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current SenVu explicitly allows sharing hyperlinks and creating downloaded clips subject to linked permission. Lists canceled Oct23DVSC and upcoming Oct27SenateSitting96,14:00–18:00SenateChamber, plus separate committee rooms. Options are not audible track validation."
+        },
+        {
+          "id": "ca-senate-permission",
+          "url": "https://sencanada.ca/en/intellectual-property/",
+          "title": "Intellectual Property",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current Senate permission expressly allows accurate unofficial reproductions in any medium, preserving accuracy/integrity/dignity and excluding financial gain; third-party supplied material may need consent. Other noncommercial documents have author/title/source-URL conditions; broadcast privilege retained."
+        },
+        {
+          "id": "ca-senate-calendar",
+          "url": "https://sencanada.ca/en/calendar/",
+          "title": "Calendar",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own calendar page links current2026 and2027 sitting-calendar PDFs; these are broad sitting days, separate from SenVu event/room listings."
+        }
+      ],
+      "confirmed": [
+        "Separate own-chamber media designation and upcoming event metadata inspected.",
+        "Current published proceedings reproduction grant positively confirmed under conditions."
+      ],
+      "unresolved_dimensions": [
+        "current_Harmony_item_playback_and_accessibility",
+        "programme_specific_data_rights",
+        "independent_whole_live_signal_and_delivery_scope",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [
+        {
+          "catalogue_id": "canada-senate-senvu",
+          "field": "permission.status, summary and recommendation",
+          "historical_status": "no_third_party_reuse",
+          "integration_decision": "Parent independently reread current policy and plans explicit_reuse_with_conditions; retain link_out.",
+          "finding": "Broad no-reuse wording omits an express conditional proceedings reproduction grant. This report does not certify direct endpoints, live relay, whole mixed signals or third-party works.",
+          "recommended_reconciliation": "State content grant and limits accurately; keep link_out and technical/live-relay gaps separate."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--cl-lc01",
+      "country": "Chile",
+      "name": "Cámara de Diputadas y Diputados de Chile",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Cámara de Diputadas y Diputados de Chile",
+        "official_institutional_url": "https://www.camara.cl/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_television_designation_indexed_current_access_blocked",
+        "provider_designation": "Own Chamber Television page, separately labelled committee/floor/programme sections.",
+        "official_media_urls": [
+          "https://www.camara.cl/prensa/television.aspx"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "date": "2026-07-22",
+            "title": "Constitución committee",
+            "status": "indexed_recorded_label_not_decoded",
+            "source_ids": [
+              "cl-house-tv"
+            ]
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "indexed_HTML_television_grid_not_current_EPG",
+        "formats_confirmed": [
+          "indexed_HTML_recording_date_and_rebroadcast_time_grid"
+        ],
+        "limitations": [
+          "Displayed July/August dates are not current October schedule validation.",
+          "Underlying current route is403; no feed, timezone or exact player certification."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-house-tv"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "cl-house-tv",
+          "url": "https://www.camara.cl/prensa/television.aspx",
+          "title": "Cámara de Diputadas y Diputados - Televisión",
+          "checked_on": "2026-10-24",
+          "access_result": "official_search_index_text_inspected; ordinary_HTTP_and_web_reader_403",
+          "source_date": "2026-07-22",
+          "excerpt": null,
+          "notes": "Indexed own television surface separately has recorded Constitution/Finance/Education committees July22 and floor/broadcast programmingJuly31–August2. This is stale indexed content, not a fresh October player or guide. Includes recorded/live distinctions, date/committee filters.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "confirmed": [
+        "Own indexed television page explicitly separates House proceedings from other programmes."
+      ],
+      "unresolved_dimensions": [
+        "current_route_and_player_access",
+        "fresh_October_schedule",
+        "published_source_specific_rights",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--cl-uc01",
+      "country": "Chile",
+      "name": "Senado de la República de Chile",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Senado de la República de Chile",
+        "official_institutional_url": "https://www.senado.cl/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_floor_and_dated_committee_media_designations",
+        "provider_designation": "Senate-owned TVSenado and separate floor-session service; dated committee pages have own download controls.",
+        "official_media_urls": [
+          "https://tv.senado.cl/",
+          "https://sesiones.senado.cl/"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "date": "2026-10-21",
+            "title": "Transportes y Telecomunicaciones",
+            "room": "Sala5Valparaíso",
+            "scheduled_start": "09:30",
+            "scheduled_end": "11:00",
+            "source_ids": [
+              "cl-senate-transport"
+            ],
+            "status": "official_player_page_not_decoded"
+          },
+          {
+            "date": "2026-10-20",
+            "title": "Vivienda y Urbanismo",
+            "room": "Sala9Valparaíso",
+            "scheduled_start": "10:00",
+            "scheduled_end": "12:00",
+            "source_ids": [
+              "cl-senate-housing"
+            ],
+            "status": "official_player_page_not_decoded"
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "dated_HTML_item_programmes_and_room_times",
+        "formats_confirmed": [
+          "HTML_meeting_date_room_start_end_subject",
+          "floor_speaker_programme_navigation"
+        ],
+        "limitations": [
+          "Publication path date differs from visible sitting date; EnVivo and legacy2021 nav are not reliable current status.",
+          "No machine feed or full room inventory certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        },
+        "embedding": {
+          "status": "conditional_website_incorporation_permission",
+          "finding": "Website incorporation allowed under full licence; control/takedown/advertising conditions and third-party-platform written commitment apply.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        },
+        "direct_playback": {
+          "status": "content_licence_method_and_endpoint_unresolved",
+          "finding": "Website incorporation wording does not certify an external direct endpoint or delivery contract.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        },
+        "rebroadcast": {
+          "status": "conditional_recording_dissemination_whole_signal_scope_unresolved",
+          "finding": "Licence discusses dissemination/live-stream context; whole mixed-channel relay scope remains unconfirmed.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_downloaded_record_use_grant_live_capture_unresolved",
+          "finding": "Downloaded records covered under full conditions; independent live recording method remains unresolved.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_parliamentary_recordings_licence",
+          "finding": "Truthful impartial reporting; restrictions on editing, advertising, political/commercial uses, endorsement and context apply.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cl-senate-licence"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "cl-senate-institution",
+          "url": "https://www.senado.cl/comunicaciones",
+          "title": "Comunicaciones - Senado República de Chile",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_page_text_inspected; ordinary_HTTP_403",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own Senate communications route designates TV Senado for floor and committee sessions.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "cl-senate-tv",
+          "url": "https://tv.senado.cl/",
+          "title": "TV Senado",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_media_index_text_inspected; ordinary_HTTP_403",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current index has recent October committee titles, some retaining EnVivo labels. Navigation also contains explicitly2021 schedule items; do not use every indexed label as today’s guide.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "cl-senate-floor",
+          "url": "https://sesiones.senado.cl/",
+          "title": "Sala de Sesiones - Senado de la República de Chile",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_own_floor_service_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own floor service describes previous sessions, speaker markers and Programme navigation plus keyboard controls; no playback decoded."
+        },
+        {
+          "id": "cl-senate-transport",
+          "url": "https://tv.senado.cl/tvsenado/comisiones/permanentes/transportes-y-telecomunicaciones/comision-de-transportes-y-telecomunicaciones/2026-10-20/143519.html",
+          "title": "Comisión de Transportes y Telecomunicaciones",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_exact_dated_official_media_item_inspected",
+          "source_date": "2026-10-21",
+          "excerpt": null,
+          "notes": "Visible meeting dateOctober21,2026,Room5Valparaíso09:30–11:00; download control present. URL containsOctober20 publication path; use visible sitting date, not URL date. No media downloaded."
+        },
+        {
+          "id": "cl-senate-housing",
+          "url": "https://tv.senado.cl/tvsenado/comisiones/permanentes/vivienda/comision-de-vivienda-y-urbanismo/2026-10-19/104737.html",
+          "title": "Comisión de Vivienda y Urbanismo",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_exact_dated_official_media_item_inspected",
+          "source_date": "2026-10-20",
+          "excerpt": null,
+          "notes": "Visible meeting dateOctober20,2026,CommitteeRoom9Valparaíso10:00–12:00; download control. URL publication dateOctober19 differs; no playback decoded."
+        },
+        {
+          "id": "cl-senate-licence",
+          "url": "https://tv.senado.cl/tvsenado/terminos-y-condiciones-de-uso/2019-04-23/164402.html",
+          "title": "TV Senado Términos y Condiciones de Uso",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_currently_linked_full_audiovisual_licence_text_inspected",
+          "source_date": "2019-04-23",
+          "excerpt": null,
+          "notes": "Licence covers downloaded/disseminated parliamentary audiovisual records from Senate/TV/YouTube: truthful impartial reporting; no ridicule, entertainment, advertising, false endorsement or out-of-context manipulation. Conditional website incorporation is allowed; external platforms require written takedown commitment. Commercial/professional use, transfers and political uses have further consent conditions; licence revocable."
+        }
+      ],
+      "confirmed": [
+        "Two distinct October committee items have explicit sitting dates, rooms and planned hours.",
+        "Detailed source-specific audiovisual incorporation/reuse licence read."
+      ],
+      "unresolved_dimensions": [
+        "decoded_two_dated_samples",
+        "current_live_and_complete_room_mapping",
+        "licence_application_to_project_and_programme_data",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--co-lc01",
+      "country": "Colombia",
+      "name": "Cámara de Representantes",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Cámara de Representantes",
+        "official_institutional_url": "https://www.camara.gov.co/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_House_YouTube_designation_confirmed",
+        "provider_designation": "Own House directly labels @CamaraColombia and separately CanalCongreso.",
+        "official_media_urls": [
+          "https://www.youtube.com/@CamaraColombia/streams",
+          "https://www.youtube.com/channel/UCJfKMFp7dtO8mpHT56X0kJQ"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "HTML_chamber_committee_and_room_calendar_surface",
+        "formats_confirmed": [
+          "HTML_calendar_category_and_room_links"
+        ],
+        "limitations": [
+          "No dated event/feed payload was visible in extracted body.",
+          "Room names do not establish stream mapping or EPG completeness."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "published_homepage_only_link_condition",
+          "finding": "Notice prescribes homepage-only inbound links and truthful lawful context; separate YouTube links need platform-specific scope.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        },
+        "embedding": {
+          "status": "published_prior_written_authorization_requirement",
+          "finding": "Website content inclusion/transmission/reproduction requires prior written authorization; no project permission recorded.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        },
+        "rebroadcast": {
+          "status": "published_prior_written_authorization_requirement",
+          "finding": "Website content inclusion/transmission/reproduction requires prior written authorization; no project permission recorded.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        },
+        "copying_recording": {
+          "status": "attributed_personal_noncommercial_download_exception",
+          "finding": "Personal noncommercial credited downloads allowed; public rehosting/live recording not established.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "published_prior_written_authorization_requirement",
+          "finding": "Website content inclusion/transmission/reproduction requires prior written authorization; no project permission recorded.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        },
+        "programme_data": {
+          "status": "general_website_reproduction_restriction_specific_data_scope_unresolved",
+          "finding": "General content restriction recorded; no specific agenda dataset licence established.",
+          "source_ids": [
+            "co-house-terms"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "co-house",
+          "url": "https://www.camara.gov.co/",
+          "title": "Inicio - Cámara de representantes",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current own House route explicitly designates @CamaraColombia live/featured YouTube and CanalCongreso channel. Distinct from Senate; no actual media decoded."
+        },
+        {
+          "id": "co-house-agenda",
+          "url": "https://www.camara.gov.co/agenda-consolidada/",
+          "title": "Agenda Consolidada - Cámara de Representantes",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_page_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current body exposes general/consolidated/committee agendas and named Elíptico,Boyacá,LuisCarlosGalán room calendars. Extracted body did not expose dated events; no hidden calendar API followed."
+        },
+        {
+          "id": "co-house-terms",
+          "url": "https://www.camara.gov.co/wp-content/uploads/2025/07/Politicas-de-Privacidad-y-Condiciones-de-Uso-1.pdf",
+          "title": "Cámara de Representantes Políticas de Privacidad y Condiciones de Uso",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_home_linked_six_page_PDF_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Terms restrict reproduction,translation,inclusion,transmission/storage without prior written permission; exception for attributed personal noncommercial downloads. Inbound-link clause says only access to homepage and no misleading/illegal context. Definitions cover broad website contents; platform-specific applicability remains separate."
+        }
+      ],
+      "confirmed": [
+        "Exact House-owned provider cross-links and room-calendar categories confirmed.",
+        "Published copyright, personal-download and linking conditions inspected."
+      ],
+      "unresolved_dimensions": [
+        "current_dated_archive_item_and_room_binding",
+        "scope_of_terms_for_external_platform_content",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [
+        {
+          "catalogue_id": "colombia-house-representatives-webcasts",
+          "field": "permission.evidence, summary and recommendation",
+          "finding": "Current linked terms provide actual restrictive conditions and a narrow personal-download exception; old summary only says no independent grant established.",
+          "recommended_reconciliation": "Record current PDF and source-specific conditions, including homepage-link clause; do not automatically apply site terms to every independent YouTube item or certify playback."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--co-uc01",
+      "country": "Colombia",
+      "name": "Senado de la República de Colombia",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Senado de la República de Colombia",
+        "official_institutional_url": "https://www.senado.gov.co/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_separate_floor_and_committee_player_designation",
+        "provider_designation": "Senate own homepage labels floor and CommissionsI–VII players, with own CanalCongresoYouTube designation.",
+        "official_media_urls": [
+          "https://www.senado.gov.co/"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "current_weekly_PDF_agenda_index_HTML",
+        "formats_confirmed": [
+          "HTML_weekly_agenda_PDF_index"
+        ],
+        "limitations": [
+          "Current weekOctober19–23 is labelled; timing/room/feed payload unparsed.",
+          "Exact player mappings and app feed portability unconfirmed."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "co-senate"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "co-senate",
+          "url": "https://www.senado.gov.co/",
+          "title": "Senado de la República de Colombia",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_home_text_and_designations_inspected; ordinary_HTTP_TLS_protocol_failure",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own current homepage explicitly labels Plenaria and CommissionsI–VII with designated static.u-pro.fr player links, and CanalCongresoYouTube. CommissionVII link appears to share the Plenaria reference in extracted text; exact endpoint/room pairing remains unresolved.",
+          "ordinary_http_access_error": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+        },
+        {
+          "id": "co-senate-agenda",
+          "url": "https://www.senado.gov.co/index.php/component/sppagebuilder/?id=155&view=page",
+          "title": "Agenda Legislativa",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_agenda_index_inspected",
+          "source_date": "2026-10-19/2026-10-23",
+          "excerpt": null,
+          "notes": "Current index labels weekly agendaOctober19–23,2026 plus earlier weeks, as PDFs. Individual PDF timings and feed export were not parsed."
+        },
+        {
+          "id": "co-senate-broadcast-notice",
+          "url": "https://www.senado.gov.co/index.php/el-senado/noticias/7217-senado-inicia-maraton-legislativo-para-agilizar-tramite-de-proyectos",
+          "title": "Senado inicia maratón legislativo",
+          "checked_on": "2026-10-24",
+          "access_result": "official_primary_news_text_inspected",
+          "source_date": "2026-03-23",
+          "excerpt": null,
+          "notes": "Official notice designates Senate/CanalCongresoYouTube for March24–26 floor and committee coverage. A published schedule intention is not proof every transmission occurred."
+        },
+        {
+          "id": "co-senate-app-terms",
+          "url": "https://www.senado.gov.co/index.php/component/content/article/10-anuncios/5663-app-mi-senado",
+          "title": "App Mi Senado - terms and current service description",
+          "checked_on": "2026-10-24",
+          "access_result": "official_primary_page_and_app_terms_text_inspected",
+          "source_date": "2026-08-18",
+          "excerpt": null,
+          "notes": "Terms specifically govern MiSenado app/content: prior authorization for reproduction/transmission/storage, attributed personal noncommercial download exception. Do not silently apply app-only wording as a licence/prohibition for every website or CanalCongreso video."
+        }
+      ],
+      "confirmed": [
+        "Exact Senate floor/committee service labels and current weekly agenda index inspected.",
+        "App-specific restrictions are kept separate from general source rights."
+      ],
+      "unresolved_dimensions": [
+        "website_and_broadcaster_specific_licence",
+        "actual_dated_player_identity_and_decode",
+        "CommissionVII_mapping_review",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--cr-lc01",
+      "country": "Costa Rica",
+      "name": "Asamblea Legislativa de la República de Costa Rica",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Asamblea Legislativa de la República de Costa Rica",
+        "official_institutional_url": "https://www.asamblea.go.cr/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "official_multi_channel_designation_indexed_current_access_held",
+        "provider_designation": "Own indexed live page names Asambleacrc and seven numbered channel choices; no channel-to-room assumption.",
+        "official_media_urls": [
+          "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "own_live_channel_selector_only_no_fresh_guide",
+        "formats_confirmed": [
+          "indexed_HTML_live_channel_selection"
+        ],
+        "limitations": [
+          "No current dated agenda, transmission window or public feed certified in this pass.",
+          "Historical configured youtube-live parser was not rerun."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "cr-own"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "cr-own",
+          "url": "https://www.asamblea.go.cr/",
+          "title": "Asamblea Legislativa",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_access_failed",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current ordinary public request timed out; no authenticated route or workaround attempted.",
+          "ordinary_http_access_error": "<urlopen error timed out>"
+        },
+        {
+          "id": "cr-live",
+          "url": "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx",
+          "title": "Noticias - Transmisión en vivo",
+          "checked_on": "2026-10-24",
+          "access_result": "current_official_search_index_text_inspected; direct_web_fetch_timeout",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Indexed own live page explicitly covers Plenario and Comisiones and names Asambleacrc plus AsambleaCR01–07 channel selections. Indexed content was crawled three months earlier; exact current channel IDs/events/rooms not certified."
+        }
+      ],
+      "confirmed": [
+        "Official indexed live page distinguishes plenary and multiple committee channel surfaces."
+      ],
+      "unresolved_dimensions": [
+        "current_own_route_access",
+        "exact_provider_channel_room_mapping",
+        "current_dated_agenda_and_licence",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--do-lc01",
+      "country": "Dominican Republic",
+      "name": "Cámara de Diputados de la República Dominicana",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Cámara de Diputados de la República Dominicana",
+        "official_institutional_url": "https://camaradediputados.gob.do/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_YouTube_and_playlist_designation_confirmed",
+        "provider_designation": "Own House links youtube.com/user/CamaraDiputadosRD and labelled embedded playlists.",
+        "official_media_urls": [
+          "https://www.youtube.com/user/CamaraDiputadosRD"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "date": "2026-10-21",
+            "scheduled_start": "10:00",
+            "title": "Sesión Ordinaria16",
+            "source_ids": [
+              "do-house"
+            ],
+            "status": "official_PDF_link_label_not_media_decoded"
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "fresh_HTML_links_to_dated_PDF_sessions_and_committee_agendas",
+        "formats_confirmed": [
+          "HTML_dated_agenda_labels",
+          "linked_PDF_agendas"
+        ],
+        "limitations": [
+          "FutureOctober26 agenda link identified but PDF contents could not be read via web tool.",
+          "No exact media/room binding, source timezone or machine export certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-house"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "do-house",
+          "url": "https://camaradediputados.gob.do/",
+          "title": "Inicio - Cámara de Diputados de la República Dominicana",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2026-10-26",
+          "excerpt": null,
+          "notes": "Current own page directly labels CamaraDiputadosRD YouTube and embeds playlists. Lists ordinary sessionsOct20at11:00 andOct21at10:00, plusOct23/26committee agendas as PDFs. Labels/documents, not decoded sessions."
+        },
+        {
+          "id": "do-house-terms",
+          "url": "https://camaradediputados.gob.do/terminos-de-uso",
+          "title": "Linked Terms of Use route",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_access_failed",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Currently linked footer route returns404. This is a dead policy route, not evidence of permission or prohibition.",
+          "ordinary_http_access_error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "confirmed": [
+        "Exact House provider cross-link and dated session/committee document labels inspected.",
+        "Linked Terms of Use is currently404."
+      ],
+      "unresolved_dimensions": [
+        "working_applicable_policy",
+        "dated_player_mapping_and_programme_PDF_parse",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [
+        {
+          "catalogue_id": "dominican-republic-deputies-webcasts",
+          "field": "permission.evidence",
+          "finding": "Recorded /terminos-de-uso route is still linked by institution but currently404.",
+          "recommended_reconciliation": "Retain historical check context and current access failure; do not present missing policy as read/current applicable terms."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--do-uc01",
+      "country": "Dominican Republic",
+      "name": "Senado de la República Dominicana",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Senado de la República Dominicana",
+        "official_institutional_url": "https://www.senadord.gob.do/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_live_label_indexed_exact_provider_current_access_unresolved",
+        "provider_designation": null,
+        "official_media_urls": [
+          "https://www.senadord.gob.do/"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "stale_indexed_PDF_agenda_lists",
+        "formats_confirmed": [
+          "indexed_HTML_weekly_and_floor_agenda_PDF_links"
+        ],
+        "limitations": [
+          "Own GET403 and search robot limitation; no bypass attempted.",
+          "July content cannot certify October freshness or current stream availability."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "do-senate"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "do-senate",
+          "url": "https://www.senadord.gob.do/",
+          "title": "Sitio oficial del Senado de la República Dominicana",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_indexed_page_text_inspected; ordinary_HTTP_403; search_robot_limit_reported",
+          "source_date": "2026-07-22",
+          "excerpt": null,
+          "notes": "Reader content identifies Senate and TransmisiónenVivo label, but latest displayed newsJuly22. No actual current provider link/player certified. Footer Terms/Privacy labels did not expose readable policy targets.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "do-senate-agenda",
+          "url": "https://www.senadord.gob.do/comisiones/agenda-semanal-de-comisiones/",
+          "title": "Agenda Semanal de Comisiones",
+          "checked_on": "2026-10-24",
+          "access_result": "official_reader_indexed_text_inspected_before_robot_limit",
+          "source_date": "2026-07-20/2026-07-24",
+          "excerpt": null,
+          "notes": "Latest displayed weeklyPDFJuly20–24,addedJuly17. Reader/index stale byOctober review; not a fresh EPG."
+        },
+        {
+          "id": "do-senate-order",
+          "url": "https://www.senadord.gob.do/secretaria-general-legislativa/orden-del-dia-pleno/",
+          "title": "Orden del día Pleno",
+          "checked_on": "2026-10-24",
+          "access_result": "official_reader_indexed_text_inspected_before_robot_limit",
+          "source_date": "2026-07-21",
+          "excerpt": null,
+          "notes": "Latest listed extraordinary agenda125forJuly20,addedJuly21. Publication timestamp differs from meeting date. No current player/agenda binding confirmed."
+        }
+      ],
+      "confirmed": [
+        "Exact Senate identity and its separate committee/floor agenda surfaces documented."
+      ],
+      "unresolved_dimensions": [
+        "current_access_and_actual_live_provider_identity",
+        "October_agenda_freshness",
+        "seven_applicable_rights_uses",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--gy-lc01",
+      "country": "Guyana",
+      "name": "National Assembly of the Parliament of Guyana",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "National Assembly of the Parliament of Guyana",
+        "official_institutional_url": "https://parliament.gov.gy/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_provider_designation_but_sitting_player_identity_mismatch",
+        "provider_designation": "Own site designates YouTube,Livestream and Vimeo, but the inspected fourth/fifth sitting page embeds are not confirmed as their proceedings.",
+        "official_media_urls": [
+          "https://www.youtube.com/channel/UCFcGxVIBPlx_l5eXfEl7jgw",
+          "https://livestream.com/theparliamentofguyana"
+        ],
+        "dated_proceedings_leads": [
+          {
+            "date": "2026-06-05",
+            "title": "4th sitting",
+            "source_ids": [
+              "gy-fourth"
+            ],
+            "status": "unresolved_own_sitting_title_vs_youth_debate_player_label_mismatch"
+          }
+        ]
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "stale_PDF_DOCX_agenda_index_and_incomplete_sitting_dates",
+        "formats_confirmed": [
+          "HTML_sitting_date_and_document_links",
+          "PDF_and_DOCX_agenda_links"
+        ],
+        "limitations": [
+          "Do not emit EPG from missing/mismatched sitting-player metadata.",
+          "No current date/room/timezone/end-time convention certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "gy-own"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "gy-own",
+          "url": "https://parliament.gov.gy/",
+          "title": "National Assembly of the Parliament of Guyana | Parliament of Guyana",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own institutional home links official YouTube channel UCFcGxVIBPlx_l5eXfEl7jgw, Livestream account theparliamentofguyana, and a Vimeo live widget. Footer Copyright/Disclaimer controls resolve to home, not an inspected substantive policy."
+        },
+        {
+          "id": "gy-fourth",
+          "url": "https://parliament.gov.gy/sittings/detail/4th-sitting-thirteenth-parliament-budget-presentation-2026",
+          "title": "4th Sitting - Thirteenth Parliament | Budget Presentation2026",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_exact_own_sitting_page_text_and_embedded_player_label_inspected",
+          "source_date": "2026-06-05",
+          "excerpt": null,
+          "notes": "Own page says sitting dateJune5,2026 but embedded recording link is titled Speaker’s National Youth Debating Competition2026Round1Match5. This is a documentary identity mismatch, not decoded content or proof of what the separate YouTube channel plays."
+        },
+        {
+          "id": "gy-fifth",
+          "url": "https://parliament.gov.gy/sittings/detail/5th-sitting-thirteenth-parliament",
+          "title": "5th Sitting - Thirteenth Parliament",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_exact_own_sitting_page_text_and_embedded_player_label_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Fifth sitting05/13 has date n/a and same youth-debate player label. Missing date and shared widget need reconciliation before archive mapping."
+        },
+        {
+          "id": "gy-agendas",
+          "url": "https://parliament.gov.gy/publications/parliamentary-agendas/",
+          "title": "Parliamentary Agendas | Parliament of Guyana",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2025-05-19",
+          "excerpt": null,
+          "notes": "Latest displayed parliamentary agendaMay19–23,2025, with older2022DOCX documents and PDF download. Stale index is not an October2026 guide."
+        }
+      ],
+      "confirmed": [
+        "Official institution independently designates provider accounts.",
+        "Exact fourth/fifth sitting pages contain a shared youth-debate player-label mismatch."
+      ],
+      "unresolved_dimensions": [
+        "actual_dated_Assembly_recordings_on_each_provider",
+        "current_parliamentary_agenda",
+        "substantive_rights_policy",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [
+        {
+          "catalogue_id": "guyana-national-assembly-webcasts",
+          "field": "validation evidence and programme-to-media identity",
+          "finding": "Own fourth/fifth sitting pages have youth-debate player labels, one missing sitting date. Separate catalogued YouTube channel was not freshly decoded here.",
+          "recommended_reconciliation": "Keep source-specific mismatch unresolved; validate exact dated Assembly recordings before using own page metadata as media/EPG confirmation."
+        }
+      ],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--jm-lc01",
+      "country": "Jamaica",
+      "name": "House of Representatives",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "House of Representatives",
+        "official_institutional_url": "https://japarliament.gov.jm/index.php?Itemid=34&id=3&option=com_content&view=category",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "chamber_specific_document_surface_and_dated_PBCJ_designation",
+        "provider_designation": "Own shared schedule explicitly identifies this chamber’s committee meetings and directs viewers to PBCJ; no fresh exact plenary item certified.",
+        "official_media_urls": [
+          "https://pbcjamaica.org/show/parliamentsenate/",
+          "https://www.youtube.com/user/pbcjamaica"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "stale_own_HTML_meeting_schedule_and_chamber_document_category",
+        "formats_confirmed": [
+          "HTML_dated_meeting_schedule",
+          "chamber_order_paper_category"
+        ],
+        "limitations": [
+          "February2026 schedule and House2021documents/Senateempty category are not fresh October EPG.",
+          "Shared PBCJ programme title does not alone validate both chambers’ actual recordings."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_Houses_website_grant_PBCJ_media_unresolved",
+          "finding": "Own-site noncommercial reproduction permitted with accuracy/credit/unofficial conditions; PBCJ or third-party recordings not automatically covered.",
+          "source_ids": [
+            "jm-houses-notices"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_Houses_website_grant_PBCJ_media_unresolved",
+          "finding": "Own-site noncommercial reproduction permitted with accuracy/credit/unofficial conditions; PBCJ or third-party recordings not automatically covered.",
+          "source_ids": [
+            "jm-houses-notices"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_own_site_information_grant_freshness_unresolved",
+          "finding": "Own-site information grant recorded; current accurate programme mapping and separate provider schedule rights remain unresolved.",
+          "source_ids": [
+            "jm-houses-notices"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "jm-house-category",
+          "url": "https://japarliament.gov.jm/index.php?Itemid=34&id=3&option=com_content&view=category",
+          "title": "House of Representatives order-paper category",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_own_exact_chamber_category_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Exact House category currently listsFebruary2021order papers."
+        },
+        {
+          "id": "jm-meetings",
+          "url": "https://japarliament.gov.jm/index.php?Itemid=29&id=262&option=com_content&view=article",
+          "title": "Houses of Parliament Schedule of Meetings",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_currently_served_schedule_text_inspected",
+          "source_date": "2026-02-23",
+          "excerpt": null,
+          "notes": "Still displays weekFebruary23,2026: HouseRegulationsFeb24at12:30; SenateRegulationsFeb26at14:00; joint/PAAC separately listed. Explicitly directs viewers to PBCJ cable/Facebook/YouTube. Stale February schedule is not current October guide."
+        },
+        {
+          "id": "jm-pbcj-programme",
+          "url": "https://pbcjamaica.org/show/parliamentsenate/",
+          "title": "Parliament/Senate - PBCJ",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_provider_primary_page_text_inspected; ordinary_HTTP_403",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Provider programme explicitly describes parliamentary coverage. Duration/Airtime fields empty and sidebar includes unrelated shows; not a dated House/Senate programme guide or decoded archive.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "jm-houses-notices",
+          "url": "https://japarliament.gov.jm/index.php?option=com_content&view=article&id=51&Itemid=13",
+          "title": "Houses of Parliament Important Notices",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_policy_text_inspected; ordinary_HTTP_403",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own-site materials have accurate,attributed,unofficial noncommercial reproduction permission; commercial redistribution needs written consent and third-party works are separate. This does not grant PBCJ audiovisual reuse.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "confirmed": [
+        "Exact House of Representatives category read separately.",
+        "Official dated schedule explicitly designates PBCJ for named chamber committee meetings; own-site rights kept separate from broadcaster."
+      ],
+      "unresolved_dimensions": [
+        "current_dated_exact_chamber_provider_archive",
+        "PBCJ_specific_content_rights",
+        "fresh_agenda_and_broadcast_mapping",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--jm-uc01",
+      "country": "Jamaica",
+      "name": "Senate",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Senate",
+        "official_institutional_url": "https://japarliament.gov.jm/index.php?Itemid=35&id=4&option=com_content&view=category",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "chamber_specific_document_surface_and_dated_PBCJ_designation",
+        "provider_designation": "Own shared schedule explicitly identifies this chamber’s committee meetings and directs viewers to PBCJ; no fresh exact plenary item certified.",
+        "official_media_urls": [
+          "https://pbcjamaica.org/show/parliamentsenate/",
+          "https://www.youtube.com/user/pbcjamaica"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "stale_own_HTML_meeting_schedule_and_chamber_document_category",
+        "formats_confirmed": [
+          "HTML_dated_meeting_schedule",
+          "chamber_order_paper_category"
+        ],
+        "limitations": [
+          "February2026 schedule and House2021documents/Senateempty category are not fresh October EPG.",
+          "Shared PBCJ programme title does not alone validate both chambers’ actual recordings."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "jm-houses-notices",
+            "jm-pbcj-programme"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_Houses_website_grant_PBCJ_media_unresolved",
+          "finding": "Own-site noncommercial reproduction permitted with accuracy/credit/unofficial conditions; PBCJ or third-party recordings not automatically covered.",
+          "source_ids": [
+            "jm-houses-notices"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_Houses_website_grant_PBCJ_media_unresolved",
+          "finding": "Own-site noncommercial reproduction permitted with accuracy/credit/unofficial conditions; PBCJ or third-party recordings not automatically covered.",
+          "source_ids": [
+            "jm-houses-notices"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_own_site_information_grant_freshness_unresolved",
+          "finding": "Own-site information grant recorded; current accurate programme mapping and separate provider schedule rights remain unresolved.",
+          "source_ids": [
+            "jm-houses-notices"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "jm-senate-category",
+          "url": "https://japarliament.gov.jm/index.php?Itemid=35&id=4&option=com_content&view=category",
+          "title": "Senate order-paper category",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_own_exact_chamber_category_text_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Exact Senate category currently says no articles. This does not mean Senate has no proceedings or service."
+        },
+        {
+          "id": "jm-meetings",
+          "url": "https://japarliament.gov.jm/index.php?Itemid=29&id=262&option=com_content&view=article",
+          "title": "Houses of Parliament Schedule of Meetings",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_official_currently_served_schedule_text_inspected",
+          "source_date": "2026-02-23",
+          "excerpt": null,
+          "notes": "Still displays weekFebruary23,2026: HouseRegulationsFeb24at12:30; SenateRegulationsFeb26at14:00; joint/PAAC separately listed. Explicitly directs viewers to PBCJ cable/Facebook/YouTube. Stale February schedule is not current October guide."
+        },
+        {
+          "id": "jm-pbcj-programme",
+          "url": "https://pbcjamaica.org/show/parliamentsenate/",
+          "title": "Parliament/Senate - PBCJ",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_provider_primary_page_text_inspected; ordinary_HTTP_403",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Provider programme explicitly describes parliamentary coverage. Duration/Airtime fields empty and sidebar includes unrelated shows; not a dated House/Senate programme guide or decoded archive.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "id": "jm-houses-notices",
+          "url": "https://japarliament.gov.jm/index.php?option=com_content&view=article&id=51&Itemid=13",
+          "title": "Houses of Parliament Important Notices",
+          "checked_on": "2026-10-24",
+          "access_result": "web_reader_current_official_policy_text_inspected; ordinary_HTTP_403",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Same source-specific policy observation retained above; no PBCJ-content permission inferred.",
+          "ordinary_http_access_error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "confirmed": [
+        "Exact Senate category read separately.",
+        "Official dated schedule explicitly designates PBCJ for named chamber committee meetings; own-site rights kept separate from broadcaster."
+      ],
+      "unresolved_dimensions": [
+        "current_dated_exact_chamber_provider_archive",
+        "PBCJ_specific_content_rights",
+        "fresh_agenda_and_broadcast_mapping",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--pa-lc01",
+      "country": "Panama",
+      "name": "Asamblea Nacional de Panamá",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "Asamblea Nacional de Panamá",
+        "official_institutional_url": "https://www.asamblea.gob.pa/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_live_and_media_designation_confirmed_proceedings_scope_unresolved",
+        "provider_designation": "Own Assembly media gallery uses official-page-designated YouTube embeds; inspected labelled items are TVL news.",
+        "official_media_urls": [
+          "https://www.asamblea.gob.pa/Page/Media"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "HTML_committee_agenda_surface_without_observed_dated_rows",
+        "formats_confirmed": [
+          "HTML_agenda_table_headings",
+          "HTML_dated_TVL_news_gallery"
+        ],
+        "limitations": [
+          "News timestamps are not proceedings EPG.",
+          "No complete plenary,committee,room or future transmission guide certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "pa-home"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "pa-home",
+          "url": "https://www.asamblea.gob.pa/",
+          "title": "Home Page - Asamblea de Panamá",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current own Assembly page with October23news and AssemblyEnVivo control. No live content decoded."
+        },
+        {
+          "id": "pa-media",
+          "url": "https://www.asamblea.gob.pa/Page/Media",
+          "title": "Media - Asamblea de Panamá",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own media gallery embeds YouTube and labels displayed Oct2/5/6/7items TVLNOTICIAS. These are news programmes, not verified substantive plenary/committee recordings."
+        },
+        {
+          "id": "pa-committees",
+          "url": "https://www.asamblea.gob.pa/Page/LABORLEGISLATIVA/AgendaComisiones",
+          "title": "AGENDA DE COMISIONES - Asamblea de Panamá",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Current committee agenda table headings include location,commission,organizer,date, but extracted body contains no populated dated rows. All-rights-reserved footer is not a full applicable audiovisual policy."
+        }
+      ],
+      "confirmed": [
+        "Current own Assembly live/media/committee agenda surfaces inspected.",
+        "News programmes kept separate from legislative proceedings."
+      ],
+      "unresolved_dimensions": [
+        "exact_dated_substantive_proceedings_recordings",
+        "populated_current_agenda_and_player_mapping",
+        "published_audiovisual_and_programme_data_policy",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    },
+    {
+      "id": "national--sr-lc01",
+      "country": "Suriname",
+      "name": "De Nationale Assemblee",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "preferred_name": "De Nationale Assemblee",
+        "official_institutional_url": "https://www.dna.sr/",
+        "finding": "Exact eligible national chamber identity retained; own institutional naming and current-route access are assessed in the sources. Membership, every identifier and all metadata are not certified."
+      },
+      "official_media": {
+        "decoded_playback_checked": false,
+        "stable_direct_stream_confirmed": false,
+        "status": "own_YouTube_designation_confirmed_no_media_decode",
+        "provider_designation": "Own media and agenda pages directly link dnasuriname YouTube.",
+        "official_media_urls": [
+          "https://www.youtube.com/user/dnasuriname"
+        ],
+        "dated_proceedings_leads": []
+      },
+      "programme_guide": {
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_feed_freshness_validated": false,
+        "status": "HTML_dated_agenda_including_nonbroadcast_visits",
+        "formats_confirmed": [
+          "HTML_dated_agenda_items"
+        ],
+        "limitations": [
+          "Delegation visitOctober26 is not a broadcast sitting.",
+          "No machine guide, stream-room binding, source timezone or end-time rule certified."
+        ]
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "sr-disclaimer",
+            "sr-copyright"
+          ]
+        },
+        "embedding": {
+          "status": "multimedia_reproduction_prior_written_permission",
+          "finding": "Specific disclaimer requires express written permission for multimedia reproduction or site parts on another site.",
+          "source_ids": [
+            "sr-disclaimer"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded pass; no prohibition inferred.",
+          "source_ids": [
+            "sr-disclaimer",
+            "sr-copyright"
+          ]
+        },
+        "rebroadcast": {
+          "status": "multimedia_reproduction_prior_written_permission",
+          "finding": "Specific disclaimer requires express written permission for multimedia reproduction or site parts on another site.",
+          "source_ids": [
+            "sr-disclaimer"
+          ]
+        },
+        "copying_recording": {
+          "status": "own_use_information_copying_multimedia_separate",
+          "finding": "Credited own-use information copies permitted; multimedia copying/live recording remains under specific permission requirement.",
+          "source_ids": [
+            "sr-disclaimer"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "multimedia_reproduction_prior_written_permission",
+          "finding": "Specific disclaimer requires express written permission for multimedia reproduction or site parts on another site.",
+          "source_ids": [
+            "sr-disclaimer"
+          ]
+        },
+        "programme_data": {
+          "status": "own_use_information_grant_public_republication_unresolved",
+          "finding": "Generic credit wording and stricter other-site clause need dataset-specific reconciliation before public EPG reuse.",
+          "source_ids": [
+            "sr-disclaimer",
+            "sr-copyright"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "sr-own",
+          "url": "https://www.dna.sr/",
+          "title": "De Nationale Assemblee",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own Assembly names live/video production surface and links dated agendas, recent legislation/news. Own Media/Agenda navigation links dnasurinameYouTube."
+        },
+        {
+          "id": "sr-media",
+          "url": "https://www.dna.sr/media-en-documentatie/",
+          "title": "Media en documentatie",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own media/documentation route directly links youtube.com/user/dnasuriname and separates documentary/minutes sections. No actual video decoded."
+        },
+        {
+          "id": "sr-agenda-visit",
+          "url": "https://www.dna.sr/agenda/?date=2026-10-26&id=15626",
+          "title": "Agenda",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": "2026-10-26",
+          "excerpt": null,
+          "notes": "Future agenda item is a GermanBundestag delegation visit, not automatically a public parliamentary sitting or stream. Event type classification required."
+        },
+        {
+          "id": "sr-disclaimer",
+          "url": "https://www.dna.sr/copyright/disclaimer/",
+          "title": "Disclaimer",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Own-site information may be copied/printed/saved for own use with source credit. Multimedia reproduction,commercial use or use of site parts on another site requires express written permission; no misleading origin/endorsement. This specific clause limits generic credited-content wording."
+        },
+        {
+          "id": "sr-copyright",
+          "url": "https://www.dna.sr/copyright/auteursrechten/",
+          "title": "Auteursrechten",
+          "checked_on": "2026-10-24",
+          "access_result": "ordinary_public_HTTP_200_page_text_and_links_inspected",
+          "source_date": null,
+          "excerpt": null,
+          "notes": "Generic credited-content copying wording and reserved photography rights. Photography ownership differs from disclaimer’s photographer wording; no resolution or audiovisual grant inferred from that inconsistency."
+        }
+      ],
+      "confirmed": [
+        "Exact institution-owned YouTube designation confirmed.",
+        "Specific multimedia written-permission condition re-read; factual agendas are not all broadcast."
+      ],
+      "unresolved_dimensions": [
+        "dated_substantive_recording_identity",
+        "programme_event_classification_and_data_licence",
+        "decoded_substantive_samples_and_audible_language_tracks",
+        "complete_committee_room_and_archive_inventory",
+        "live_whole_signal_scope_separate_from_recording_reuse",
+        "stable_endpoint_and_delivery_contract",
+        "timezone_end_times_updates_and_machine_format",
+        "each_specific_rights_use_and_third_party_material"
+      ],
+      "catalogue_reconciliation_flags": [],
+      "catalogue_promotion_recommended": false,
+      "all_metadata_stream_epg_rights_validated": false
+    }
+  ],
+  "root_integration_outcome": {
+    "reviewed_on": "2026-10-24",
+    "canadian_national_entries": "Both content grants independently re-read; corrected to explicit_reuse_with_conditions, retaining link_out and unresolved delivery/individual-use questions.",
+    "colombia_house": "Current linked PDF independently re-read, with page 3 visually checked; corrected to no_third_party_reuse, retaining official YouTube viewing link.",
+    "brazil_tv_senado": "Official viewing URL corrected from obsolete /tv/ao-vivo to /tv/ after independent source read; no fresh decoded playback claimed."
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Initial service follow-up for the three newly eligible Basque foral legislatures; this is partial validation, not a catalogue promotion or a completed rights clearance.",
+  "method": {
+    "sources": "Official institutional pages and institution-designated media services, read with web browsing and ordinary public HTTP GET. No outreach or access-control bypass.",
+    "playback": "Bizkaia 6 October 2026 plenary was sampled through its institution-designated source player in Chromium and WebKit with normal muted native playback and a seek to 20 minutes. Other findings are page/provenance observations. No continuous live service, permanent direct endpoint or permission was approved.",
+    "rights": "Each use is assessed separately. Public availability, a provider copyright credit, player controls and a download offer do not establish a blanket embed or rebroadcast licence.",
+    "url_safety": "Only public page identifiers and ordinary route parameters are retained; no session credentials or raw HTML are saved.",
+    "time": "Displayed session times are transcribed as local times without assuming a published timezone or a guaranteed broadcast end. Spain/Europe-Madrid is a parser lead requiring confirmation."
+  },
+  "records": [
+    {
+      "id": "spain--basque-country--araba-juntas-generales",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "institution_name": "Juntas Generales de Álava / Arabako Batzar Nagusiak",
+      "institution_url": "https://www.jjggalava.eus/es",
+      "confirmed": {
+        "institution_and_media_provenance": "The official institutional site links its Mediateca; the media portal identifies Juntas Generales de Álava and credits Spica S.L./Seneca software.",
+        "live_route": "https://mediateca.jjggalava.eus/live",
+        "live_observation": "HTTP 200; page reported no live broadcast at inspection. This is an off-air observation, not evidence of a broken stream.",
+        "archive_route": "https://mediateca.jjggalava.eus/search",
+        "dated_proceedings": [
+          {
+            "title": "Sesión plenaria nº 112",
+            "date": "2026-10-21",
+            "displayed_start": "09:01",
+            "displayed_end": "14:02",
+            "displayed_duration": "5h. 1m.",
+            "url": "https://mediateca.jjggalava.eus/watch?id=M2VlOGVmYWItZGI4Yi00MDc2LWIyYmItYWRmYTI1ZmZmY2Ux"
+          },
+          {
+            "title": "Comisión de Cultura y Deporte",
+            "date": "2026-10-23",
+            "displayed_start": "09:01",
+            "displayed_end": "14:11",
+            "displayed_duration": "4h. 39m. (2 archivos)",
+            "url": "https://mediateca.jjggalava.eus/watch?id=Mjg5OTU0ODEtZGM5My00Y2EyLWE3N2UtYzcyZWU2YmUzYjI5"
+          }
+        ],
+        "coverage": "Separate dated plenary and committee archive pages are confirmed. The official 21 October news item links the matching plenary recording.",
+        "languages": "Institutional and media navigation offer Castellano/Euskara. Plenary and committee players display SALA/TRAD and subtitle controls; the actual audio languages, interpretation direction and subtitle accuracy remain untested.",
+        "programme_information": "Archive pages expose organ, session date/time, duration, ordered agenda items, speakers, a transcript tab and PDF documents. The 21 October record includes agenda and voting-summary PDFs.",
+        "schedule_route": "https://www.jjggalava.eus/agenda",
+        "schedule_observation": "Official agenda route returned HTTP 200, but its server-rendered text did not expose dated agenda entries. A browser-rendered or documented public data route still needs inspection.",
+        "epg_quality_caution": "The two-file committee archive's duration differs from the start/end span. Do not assume archive runtime describes an uninterrupted scheduled broadcast."
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_policy_not_located",
+          "scope": "External hyperlinks to official pages",
+          "conditions": "No inbound-link policy was located in the reviewed official notice; no permission claim is made.",
+          "source_ids": [
+            "araba-legal"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party iframe or player embedding",
+          "conditions": "No explicit embed grant located; the general notice withholds an IP licence. A visible player is insufficient evidence.",
+          "source_ids": [
+            "araba-legal",
+            "araba-plenary"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct manifests or media URLs in our player/IPTV playlist",
+          "conditions": "No explicit direct-use grant located and no endpoint was validated.",
+          "source_ids": [
+            "araba-legal"
+          ]
+        },
+        "rebroadcast": {
+          "status": "not_cleared",
+          "scope": "Redistributing or relaying the audiovisual signal",
+          "conditions": "The general notice does not grant IP rights; commercial copying/reproduction/distribution requires institutional authorization. No separate rebroadcast terms located.",
+          "source_ids": [
+            "araba-legal"
+          ]
+        },
+        "copying_recording": {
+          "status": "not_cleared",
+          "scope": "Downloading, copying or recording proceedings",
+          "conditions": "Notice limits obtaining content to permitted methods, reserves IP rights and requires authorization for copying/reproduction/distribution for profit. This is not interpreted as a blanket noncommercial licence.",
+          "source_ids": [
+            "araba-legal"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "not_cleared",
+          "scope": "Reusing clips, audio, transcripts or other audiovisual content",
+          "conditions": "No content-specific reuse licence was located; any statutory exceptions or requested permissions are outside this source check.",
+          "source_ids": [
+            "araba-legal"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing schedule/agenda metadata in XMLTV or another programme guide",
+          "conditions": "No programme-data licence or approved extraction endpoint located; factual visibility does not establish a general content licence.",
+          "source_ids": [
+            "araba-legal",
+            "araba-agenda"
+          ]
+        }
+      },
+      "unresolved": [
+        "Decode a dated plenary and committee recording, confirming identity, languages, captions and player behavior.",
+        "Observe a scheduled live session; distinguish room, translation and caption variants without inferring a permanent stream.",
+        "Inspect the rendered agenda and find any documented feed/API; no XMLTV, iCalendar or current RSS feed was confirmed.",
+        "Confirm all per-use permissions and whether any media-service-specific terms supersede the institutional notice."
+      ],
+      "sources": [
+        {
+          "id": "araba-home",
+          "url": "https://www.jjggalava.eus/es",
+          "title": "JJGG - JJGG-BBNN",
+          "accessed_on": "2026-10-24",
+          "access": "web content read",
+          "excerpt": "Mediateca"
+        },
+        {
+          "id": "araba-live",
+          "url": "https://mediateca.jjggalava.eus/live",
+          "title": "Mediateca Juntas Generales de Álava | Emisión en directo",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "No hay ninguna emisión en directo en este momento"
+        },
+        {
+          "id": "araba-plenary",
+          "url": "https://mediateca.jjggalava.eus/watch?id=M2VlOGVmYWItZGI4Yi00MDc2LWIyYmItYWRmYTI1ZmZmY2Ux",
+          "title": "Sesión plenaria nº 112, 21 de Octubre de 2026",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "Sesión plenaria nº 112"
+        },
+        {
+          "id": "araba-committee",
+          "url": "https://mediateca.jjggalava.eus/watch?id=Mjg5OTU0ODEtZGM5My00Y2EyLWE3N2UtYzcyZWU2YmUzYjI5",
+          "title": "Cultura y Deporte, 23 de Octubre de 2026",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "4h. 39m. (2 archivos)"
+        },
+        {
+          "id": "araba-news",
+          "url": "https://www.jjggalava.eus/es/-/posicionamientos-del-pleno",
+          "title": "Posicionamientos del pleno",
+          "published_on": "2026-10-21",
+          "accessed_on": "2026-10-24",
+          "access": "web content read and public HTTP GET 200; official link resolves to the cited plenary",
+          "excerpt": "Video con las intervenciones"
+        },
+        {
+          "id": "araba-agenda",
+          "url": "https://www.jjggalava.eus/agenda",
+          "title": "Agenda - JJGG-BBNN",
+          "accessed_on": "2026-10-24",
+          "access": "web content read and public HTTP GET 200; no dated entries in extracted server text",
+          "excerpt": "Agenda"
+        },
+        {
+          "id": "araba-legal",
+          "url": "https://www.jjggalava.eus/aviso-legal",
+          "title": "Aviso legal - JJGG-BBNN",
+          "accessed_on": "2026-10-24",
+          "access": "web content read",
+          "excerpt": "No licencia"
+        },
+        {
+          "id": "araba-provider",
+          "url": "https://mediateca.jjggalava.eus/legal/credits",
+          "title": "Mediateca Juntas Generales de Álava - Créditos",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "Copyright © 2016 Spica S.L. - Todos los derechos reservados"
+        }
+      ]
+    },
+    {
+      "id": "spain--basque-country--bizkaia-juntas-generales",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "institution_name": "Juntas Generales de Bizkaia / Bizkaiko Batzar Nagusiak",
+      "institution_url": "https://jjggbizkaia.eus/es/inicio",
+      "confirmed": {
+        "institution_and_media_provenance": "The official institutional homepage links mediateca.jjggbizkaia.eus; the 2 October launch notice designates the new media service and describes public access without subscription. Its prose spells the hostname mediateka; use the functioning mediateca host linked from institutional navigation.",
+        "provider": "The media-service credits identify Spica S.L./Seneca software; this software credit does not license the institution's recordings.",
+        "live_route": "https://mediateca.jjggbizkaia.eus/live",
+        "live_observation": "HTTP 200. Page advertises room-original, room-subtitled, translated-original and translated-subtitled channel labels with Emitiendo markers. No frames/audio were decoded; those markers alone do not verify active proceedings.",
+        "archive_route": "https://mediateca.jjggbizkaia.eus/activity",
+        "dated_proceedings": [
+          {
+            "title": "Pleno",
+            "date": "2026-10-06",
+            "displayed_start": "09:30",
+            "displayed_duration": "2h. 51m.",
+            "url": "https://mediateca.jjggbizkaia.eus/watch?id=Y2IzMzBlZTMtY2I1OS00ZjE2LWFjNjUtNGI2ZmIxMDFlMDUw"
+          },
+          {
+            "title": "Comisión de Infraestructuras y Desarrollo Territorial",
+            "date": "2026-10-13",
+            "displayed_duration": "2h. 11m.",
+            "url": "https://mediateca.jjggbizkaia.eus/activity",
+            "scope": "Archive-list entry only; individual committee record not decoded."
+          }
+        ],
+        "coverage": "Institutional launch notice explicitly covers plenaries and committees, live and historical sessions. Recent media list contains both.",
+        "languages": "Media navigation offers Euskara/Castellano. Institutional live page offers original sound and simultaneous translation, and the media live page separates room/translated/caption variants. Exact audio languages and subtitle accuracy are untested.",
+        "programme_information": "Dated archive page exposes organ, date/time, duration, agenda, transcript tab and a PDF convocation. The launch notice explicitly describes video/audio downloads, AI-generated transcripts and supplementary agenda/convocation PDFs.",
+        "schedule_route": "https://jjggbizkaia.eus/es/emisiones-directo-historico-sesiones",
+        "schedule_observation": "Official HTML lists Comisión de Transportes, Movilidad y Turismo on 27 October 2026 at 09:30 and Pleno de Control on 28 October at 09:30. The same extraction also includes a no-upcoming-emissions placeholder; a parser must distinguish visible entries from templates.",
+        "additional_agenda_route": "https://jjggbizkaia.eus/es/agenda-parlamentaria",
+        "sampled_archive_playback": {
+          "reviewed_on": "2026-10-24",
+          "source_url": "https://mediateca.jjggbizkaia.eus/watch?id=Y2IzMzBlZTMtY2I1OS00ZjE2LWFjNjUtNGI2ZmIxMDFlMDUw",
+          "provenance": "The official institutional homepage links the Mediateca, whose dated archive list links this recording.",
+          "browser_path": "Browser plugin not available; used installed Playwright 1.64.0 Chromium and WebKit with a 1440 x 1000 viewport.",
+          "flow": "Official institutional designation -> dated source-player page -> native muted play -> seek to 1200 seconds -> advancing decoded parliamentary footage.",
+          "interactions": "The source page was loaded normally. The native HTML video was muted, play() was invoked, and its currentTime was set to 1200 seconds for a later sample. No media URL was extracted and no download button was used.",
+          "engines": [
+            {
+              "engine": "Chromium",
+              "http_status": 200,
+              "initial_time_seconds": 0,
+              "after_play_time_seconds": 7.963394,
+              "after_seek_time_seconds": 1202.480861,
+              "duration_seconds": 10263.983,
+              "decoded_width": 1280,
+              "decoded_height": 720,
+              "ready_state": 4,
+              "paused_after_samples": false,
+              "console_warning_or_error_count": 0,
+              "page_error_count": 0,
+              "screenshots_inspected": [
+                "/tmp/parliament-basque-playback/chromium-played.png",
+                "/tmp/parliament-basque-playback/chromium-later.png"
+              ]
+            },
+            {
+              "engine": "WebKit",
+              "http_status": 200,
+              "initial_time_seconds": 0,
+              "after_play_time_seconds": 7.635868432,
+              "after_seek_time_seconds": 1202.410856363,
+              "duration_seconds": 10263.983,
+              "decoded_width": 1280,
+              "decoded_height": 720,
+              "ready_state": 4,
+              "paused_after_samples": false,
+              "console_warning_or_error_count": 0,
+              "page_error_count": 0,
+              "screenshots_inspected": [
+                "/tmp/parliament-basque-playback/webkit-played.png",
+                "/tmp/parliament-basque-playback/webkit-later.png"
+              ]
+            }
+          ],
+          "visual_observation": "Inspected decoded frames show a presiding speaker at the chamber dais initially and a later speaker addressing the chamber from the lectern. The official page names the plenary and date, and its highlighted later speaker marker reads Gómez-Guadalupe García-Tejedor, Pablo. These are substantive proceedings, not a placeholder or holding slate.",
+          "limits": [
+            "Muted playback confirms sampled video decoding/time advancement; sound intelligibility, actual spoken language, interpretation and lip sync were not evaluated.",
+            "No HTML text tracks were exposed in this sample; this does not prove the service lacks captions. Caption availability/accuracy is unresolved.",
+            "The source player rendered speaker-marker clock times beginning 03:30 while the session metadata states 09:30; timezone/display conversion needs verification before programme ingestion.",
+            "WebKit displayed a source-player banner describing an audio stream while decoded video frames and dimensions were present; that label does not establish audio verification.",
+            "Only two short positions of this one archive recording were sampled; committee decoding, full-recording continuity, live performance and external embed/direct-playback/rebroadcast rights remain unresolved."
+          ],
+          "local_debug_results": [
+            "/tmp/parliament-basque-playback/chromium.json",
+            "/tmp/parliament-basque-playback/webkit.json"
+          ]
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_policy_not_located",
+          "scope": "External hyperlinks to institutional and media pages",
+          "conditions": "Institution itself publicly links the media portal; no third-party inbound-link policy located.",
+          "source_ids": [
+            "bizkaia-home",
+            "bizkaia-launch"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party iframe or embedded player",
+          "conditions": "No explicit external embed grant or approved embed workflow confirmed.",
+          "source_ids": [
+            "bizkaia-launch",
+            "bizkaia-live"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "External player or IPTV playlist using direct media endpoints",
+          "conditions": "Official viewing/download availability does not explicitly grant direct endpoint reuse; no media endpoint was validated.",
+          "source_ids": [
+            "bizkaia-launch"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying the live signal or redistributing recordings",
+          "conditions": "Launch notice offers material to newsrooms and citizens, but does not specify a general rebroadcast licence, attribution terms or permitted redistribution scope.",
+          "source_ids": [
+            "bizkaia-launch"
+          ]
+        },
+        "copying_recording": {
+          "status": "download_explicitly_offered_recording_scope_unresolved",
+          "scope": "Official post-session video/audio downloads and transcripts",
+          "conditions": "Official 2 October notice explicitly offers these downloads without subscription. It does not settle independent live recording or all redistribution uses.",
+          "source_ids": [
+            "bizkaia-launch"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "newsroom_use_intent_confirmed_licence_scope_unresolved",
+          "scope": "Using downloaded video/audio resources for reporting or other republication",
+          "conditions": "Notice explains that downloads support television, digital media, radio and podcasts; exact licence, editing, attribution and commercial-use conditions still need confirmation.",
+          "source_ids": [
+            "bizkaia-launch"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "scope": "Republishing agenda, transcript or schedule information as XMLTV/programme data",
+          "conditions": "Downloadable documents/transcripts are expressly offered; no specific data-republication licence or current machine-readable EPG feed confirmed. AI transcripts require editorial quality checks.",
+          "source_ids": [
+            "bizkaia-launch",
+            "bizkaia-upcoming",
+            "bizkaia-plenary"
+          ]
+        }
+      },
+      "unresolved": [
+        "Decode a recent committee recording and observe actual scheduled live identity across the four advertised variants; only one plenary archive has now been sampled in Chromium/WebKit.",
+        "Confirm language/interpretation mapping, caption quality and whether channel identifiers are stable and authorized for external use.",
+        "Find and validate an official machine-readable agenda route; no XMLTV, iCalendar or current RSS feed was confirmed.",
+        "Resolve download/reuse licence details and independent linking, embed, direct-playback, live-recording, rebroadcast and programme-data terms."
+      ],
+      "sources": [
+        {
+          "id": "bizkaia-home",
+          "url": "https://jjggbizkaia.eus/es/inicio",
+          "title": "Inicio - Juntas Generales de Bizkaia",
+          "accessed_on": "2026-10-24",
+          "access": "web content read; media link followed",
+          "excerpt": "Mediateca"
+        },
+        {
+          "id": "bizkaia-launch",
+          "url": "https://jjggbizkaia.eus/es/-/las-juntas-generales-de-bizkaia-ponen-en-marcha-la-nueva-mediateca",
+          "title": "Las Juntas Generales de Bizkaia ponen en marcha la nueva Mediateca",
+          "published_on": "2026-10-02",
+          "accessed_on": "2026-10-24",
+          "access": "web content read and public HTTP GET 200",
+          "excerpt": "el acceso es libre y no requiere de suscripción previa"
+        },
+        {
+          "id": "bizkaia-live",
+          "url": "https://mediateca.jjggbizkaia.eus/live",
+          "title": "Juntas Generales de Bizkaia | Emisión en directo",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "Canal Sala Original"
+        },
+        {
+          "id": "bizkaia-archive",
+          "url": "https://mediateca.jjggbizkaia.eus/activity",
+          "title": "Juntas Generales de Bizkaia | Activity",
+          "accessed_on": "2026-10-24",
+          "access": "web content read after following institutional link",
+          "excerpt": "Comisión de Infraestructuras y Desarrollo Territorial"
+        },
+        {
+          "id": "bizkaia-plenary",
+          "url": "https://mediateca.jjggbizkaia.eus/watch?id=Y2IzMzBlZTMtY2I1OS00ZjE2LWFjNjUtNGI2ZmIxMDFlMDUw",
+          "title": "Pleno, 6 de Octubre de 2026",
+          "accessed_on": "2026-10-24",
+          "access": "web content read",
+          "excerpt": "Sesión plenaria en la casa de Juntas de Gernika"
+        },
+        {
+          "id": "bizkaia-upcoming",
+          "url": "https://jjggbizkaia.eus/es/emisiones-directo-historico-sesiones",
+          "title": "Emisiones en directo e histórico de sesiones",
+          "accessed_on": "2026-10-24",
+          "access": "web content read",
+          "excerpt": "Fecha de emisión:27/10/2026 09:30"
+        },
+        {
+          "id": "bizkaia-agenda",
+          "url": "https://jjggbizkaia.eus/es/agenda-parlamentaria",
+          "title": "Agenda Parlamentaria - Juntas Generales de Bizkaia",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200; no structured feed validated",
+          "excerpt": "Agenda Parlamentaria"
+        },
+        {
+          "id": "bizkaia-provider",
+          "url": "https://mediateca.jjggbizkaia.eus/legal/credits",
+          "title": "Juntas Generales de Bizkaia - Créditos",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "Copyright © 2016 Spica S.L. - Todos los derechos reservados"
+        },
+        {
+          "id": "bizkaia-playback-observation",
+          "url": "https://mediateca.jjggbizkaia.eus/watch?id=Y2IzMzBlZTMtY2I1OS00ZjE2LWFjNjUtNGI2ZmIxMDFlMDUw",
+          "title": "Bizkaia source-player playback observation: Pleno, 6 October 2026",
+          "accessed_on": "2026-10-24",
+          "access": "Normal source-player playback sampled in Chromium and WebKit; advancing 1280 x 720 decoded video at start and 20 minutes; screenshots inspected",
+          "excerpt": "Pleno"
+        }
+      ]
+    },
+    {
+      "id": "spain--basque-country--gipuzkoa-juntas-generales",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "institution_name": "Juntas Generales de Gipuzkoa / Gipuzkoako Batzar Nagusiak",
+      "institution_url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/index.jsp?idioma=es",
+      "confirmed": {
+        "institution_and_media_provenance": "The current official institutional homepage links jggipuzkoa.seneca.tv/live?locale=es and /recents?locale=es. The designated media portal identifies Juntas Generales de Gipuzkoa and links back to its institutional website.",
+        "provider": "Designated media-service credits identify Spica S.L./Seneca software; the provider copyright is separate from institutional content terms.",
+        "live_route": "https://jggipuzkoa.seneca.tv/live?locale=es",
+        "live_observation": "HTTP 200; page reported no live broadcast at inspection. This does not establish a broken service.",
+        "archive_route": "https://jggipuzkoa.seneca.tv/activity",
+        "dated_proceedings": [
+          {
+            "title": "Comisión de Cuidados y Políticas Sociales",
+            "date": "2026-10-22",
+            "displayed_start": "13:34",
+            "displayed_end": "15:34",
+            "displayed_duration": "2h. 0m.",
+            "url": "https://jggipuzkoa.seneca.tv/watch?id=ZGNhOTIwNWMtMmUyYS00NTRmLTg5OTQtNzg3MmI3NDYyMmVk"
+          },
+          {
+            "title": "Pleno",
+            "date": "2026-10-14",
+            "displayed_duration": "1h. 49m.",
+            "url": "https://jggipuzkoa.seneca.tv/watch?id=MTQwZTZkYTAtNzhjMy00ZmQ1LTg5NzQtYzEwMzNiNDI1MGU4",
+            "scope": "Dated archive-list entry; individual plenary record not decoded."
+          }
+        ],
+        "coverage": "Recent archive list contains plenary and multiple committee records; a dated committee page provides organ, start/end, duration and agenda text.",
+        "languages": "Institutional and media navigation offer Euskara/Castellano. No language-specific audio track or interpretation identity was verified.",
+        "schedule_route": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/agenda_parlamentaria.jsp?idioma=es",
+        "schedule_observation": "Current official HTML agenda returned HTTP 200 and contains forthcoming committee entries for 26–29 October 2026 with local start times, ordered subjects, proposers, dossier identifiers and dossier types.",
+        "programme_information": "HTML agenda and dated archive pages are useful programme-data/parser candidates. No XMLTV or iCalendar route was confirmed.",
+        "stale_feed": {
+          "linked_url": "http://www.gipuzkoa.net/rss/djg.agenda_es.xml",
+          "final_url": "https://www.gipuzkoa.eus/rss/djg.agenda_es.xml",
+          "format": "RSS XML",
+          "http_status": 200,
+          "channel_pub_date": "Thu, 18 Feb 2016 08:30:05 +0100",
+          "channel_last_build_date": "Thu, 18 Feb 2016 08:30:05 +0100",
+          "item_dates": [
+            "2016-02-22 09:30",
+            "2016-02-22 13:00"
+          ],
+          "decision": "Exclude from current EPG ingestion. A successful HTTP response and an official homepage link do not establish freshness. Prefer the current HTML agenda pending parser validation."
+        }
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_policy_not_located",
+          "scope": "External hyperlinks to institutional/designated-media pages",
+          "conditions": "Institution publicly designates the media portal; no specific inbound-link conditions located in its general legal notice.",
+          "source_ids": [
+            "gipuzkoa-home",
+            "gipuzkoa-legal"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "scope": "Third-party iframe or embedded media player",
+          "conditions": "General notice addresses reproduction/copying, without expressly authorizing embedding; applicability to the separate Seneca host and any media exceptions remain unresolved.",
+          "source_ids": [
+            "gipuzkoa-legal",
+            "gipuzkoa-provider"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "scope": "Direct media endpoints in external player/IPTV playlist",
+          "conditions": "No explicit direct-endpoint grant located, no endpoint decoded and no off-site service terms cleared.",
+          "source_ids": [
+            "gipuzkoa-legal"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "scope": "Relaying live audiovisual signals or redistributing recordings",
+          "conditions": "The general reproduction notice does not explicitly settle broadcasting/communication or the designated media host's terms; do not treat it as blanket rebroadcast permission.",
+          "source_ids": [
+            "gipuzkoa-legal"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_general_reproduction_grant_media_scope_unresolved",
+          "scope": "Elements on www.bngipuzkoa.eus",
+          "conditions": "Notice allows reproduction/copying/storage with attribution unless stated otherwise, preserving original context and without alteration. Text/multimedia requiring prior authorization is excepted. Application to live recording or the separate media host needs confirmation.",
+          "source_ids": [
+            "gipuzkoa-legal"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_general_reproduction_grant_media_scope_unresolved",
+          "scope": "Institutional website content, subject to exceptions",
+          "conditions": "Attribution, original context and unaltered content are required; specific text/multimedia authorization can supersede the general grant. No content-specific licence for Seneca recordings was confirmed.",
+          "source_ids": [
+            "gipuzkoa-legal"
+          ]
+        },
+        "programme_data": {
+          "status": "conditional_general_reproduction_grant_transformation_scope_unresolved",
+          "scope": "Official website agenda text and related programme data",
+          "conditions": "General notice permits attributed, context-preserving, unaltered reproduction except where otherwise specified. Whether transformed XMLTV metadata and extraction at scale fit these conditions remains unresolved. The old RSS feed is unusable for freshness regardless of rights.",
+          "source_ids": [
+            "gipuzkoa-legal",
+            "gipuzkoa-agenda",
+            "gipuzkoa-stale-rss"
+          ]
+        }
+      },
+      "unresolved": [
+        "Decode recent plenary and committee recordings, verify identity/languages and observe an actual scheduled live session.",
+        "Confirm language/interpretation routes and direct playback stability/authorization.",
+        "Build and test an agenda parser with timezone, cancellation/update handling and last-verified timestamps; do not ingest the stale RSS feed.",
+        "Determine whether the institutional general reproduction terms extend to the Seneca service and which audiovisual items carry exceptions; separately clear embedding, direct use and rebroadcast."
+      ],
+      "sources": [
+        {
+          "id": "gipuzkoa-home",
+          "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/index.jsp?idioma=es",
+          "title": "Juntas Generales de Gipuzkoa",
+          "accessed_on": "2026-10-24",
+          "access": "web content read and public HTTP GET 200; institutional media links inspected",
+          "excerpt": "Agenda"
+        },
+        {
+          "id": "gipuzkoa-live",
+          "url": "https://jggipuzkoa.seneca.tv/live?locale=es",
+          "title": "Juntas Generales de Gipuzkoa | Emisión en directo",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "No hay ninguna emisión en directo en este momento"
+        },
+        {
+          "id": "gipuzkoa-archive",
+          "url": "https://jggipuzkoa.seneca.tv/activity",
+          "title": "Juntas Generales de Gipuzkoa | Activity",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200 after root redirect",
+          "excerpt": "Pleno 14 de Octubre de 2026 - 1h. 49m."
+        },
+        {
+          "id": "gipuzkoa-committee",
+          "url": "https://jggipuzkoa.seneca.tv/watch?id=ZGNhOTIwNWMtMmUyYS00NTRmLTg5OTQtNzg3MmI3NDYyMmVk",
+          "title": "Comisión de Cuidados y Políticas Sociales, 22 de Octubre de 2026",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "22 de Octubre de 2026, 13:34"
+        },
+        {
+          "id": "gipuzkoa-agenda",
+          "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/agenda_parlamentaria.jsp?idioma=es",
+          "title": "Juntas Generales de Gipuzkoa - Agenda parlamentaria",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "Jueves, 29-10-2026"
+        },
+        {
+          "id": "gipuzkoa-stale-rss",
+          "url": "https://www.gipuzkoa.eus/rss/djg.agenda_es.xml",
+          "title": "JJ.GG. Gipuzkoa - Agenda",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200 after redirect from institutional RSS link; parsed text/XML dates inspected",
+          "excerpt": "Thu, 18 Feb 2016 08:30:05 +0100"
+        },
+        {
+          "id": "gipuzkoa-legal",
+          "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/aviso_legal.jsp?idioma=es",
+          "title": "Juntas Generales de Gipuzkoa - Aviso legal",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200 in Spanish; web-read Basque counterpart cross-checked",
+          "excerpt": "Se autoriza la reproducción siempre que se cite la fuente, salvo que se indique lo contrario."
+        },
+        {
+          "id": "gipuzkoa-provider",
+          "url": "https://jggipuzkoa.seneca.tv/legal/credits",
+          "title": "Juntas Generales de Gipuzkoa - Créditos",
+          "accessed_on": "2026-10-24",
+          "access": "public HTTP GET 200",
+          "excerpt": "Copyright © 2016 Spica S.L. - Todos los derechos reservados"
+        }
+      ]
+    }
+  ]
+}

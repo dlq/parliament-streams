@@ -1,0 +1,112 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "50 added sourced flag assets and all63 initial neutral catalogue entries. No map geometry or stream playback validation is implied.",
+  "method": "Installed Playwright Chromium/WebKit; Browser plugin unavailable. Static local site and current canonical catalogue. All230 flag images complete with nonzero natural width; all13 neutral exceptions retained.",
+  "checks": [
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "width": 1280,
+      "height": 900,
+      "flags": 230,
+      "neutral": 13,
+      "broken_images": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "flags": 230,
+      "neutral": 13,
+      "broken_images": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "width": 1280,
+      "height": 900,
+      "flags": 230,
+      "neutral": 13,
+      "broken_images": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "flags": 230,
+      "neutral": 13,
+      "broken_images": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false
+    }
+  ],
+  "source_artwork_inspection": {
+    "contact_sheets": [
+      "/tmp/parliament-flag-qa/contact-sheet-1.png",
+      "/tmp/parliament-flag-qa/contact-sheet-2.png"
+    ],
+    "all_50_visually_inspected": true,
+    "mobile_webkit_capture": "/tmp/parliament-flag-qa/webkit-mobile-canada.png",
+    "scope": "Rendering and identity/provenance comparison; does not remove separate official-insignia use conditions."
+  },
+  "provenance": "reports/discovery/2026-10-24-catalogue-flag-coverage.json",
+  "xml_whitespace_normalization_check": {
+    "assets_normalized": 17,
+    "method": "Normalize CRLF/trailing line whitespace, update provenance hashes, rerender both contact sheets.",
+    "all_50_flag_contact_sheet_pngs_byte_identical": true,
+    "checks": [
+      {
+        "engine": "chromium",
+        "viewport": "desktop",
+        "width": 1280,
+        "height": 900,
+        "flags": 230,
+        "neutral": 13,
+        "broken_images": 0,
+        "page_errors": 0,
+        "horizontal_overflow": false
+      },
+      {
+        "engine": "chromium",
+        "viewport": "mobile",
+        "width": 390,
+        "height": 844,
+        "flags": 230,
+        "neutral": 13,
+        "broken_images": 0,
+        "page_errors": 0,
+        "horizontal_overflow": false
+      },
+      {
+        "engine": "webkit",
+        "viewport": "desktop",
+        "width": 1280,
+        "height": 900,
+        "flags": 230,
+        "neutral": 13,
+        "broken_images": 0,
+        "page_errors": 0,
+        "horizontal_overflow": false
+      },
+      {
+        "engine": "webkit",
+        "viewport": "mobile",
+        "width": 390,
+        "height": 844,
+        "flags": 230,
+        "neutral": 13,
+        "broken_images": 0,
+        "page_errors": 0,
+        "horizontal_overflow": false
+      }
+    ]
+  }
+}

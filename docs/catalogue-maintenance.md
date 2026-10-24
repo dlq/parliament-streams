@@ -9,6 +9,26 @@ Apply the [catalogue scope rule](catalogue-scope.md) before promoting a new
 institution: legislative authority matters; a council's public meetings alone
 do not make it eligible.
 
+## Protecting The Default Branch
+
+The 24 October 2026 API check confirms that `main` is the public repository's
+default branch and has no branch protection or rulesets. The recommended initial
+setup is an **active branch ruleset targeting the default branch**, with
+**Restrict deletions** and **Block force pushes** enabled. Leave ordinary updates
+available so the current direct-push maintenance workflow continues.
+
+Create it under repository **Settings → Rulesets → New ruleset → New branch
+ruleset**; select the default branch as the target and set enforcement to Active.
+These are independent controls; see GitHub's
+[ruleset creation guide](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository).
+The scheduled workflows read repository contents and produce deployment/report
+artifacts or issues; they do not commit or push to `main`.
+
+A later stricter mode can require a pull request and the
+`Verify catalogue and scrapers` check, with zero required approvals for solo
+maintenance. Do not require the Pages deployment as a pre-merge check: it runs
+after changes reach `main`. The inspection made no settings changes.
+
 ## Which File Should I Edit?
 
 | Task | Start here | Notes |

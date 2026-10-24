@@ -1,0 +1,3877 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Remaining36 non-US expanded eligible chamber identities outside the historical652-body service cohort:16 Argentine provincial chambers,10 Australian state chambers,6 Indian Legislative Councils and4 Bermuda/Manx chambers.",
+  "method": "Current bounded normal HTTPS GETs plus explicitly identified official web-reader/index observations and adaptive follows of public chamber navigation. No login, CAPTCHA/TLS bypass, hidden API, audiovisual download, manifest extraction, outreach or canonical catalogue edit. Existing catalogue findings are leads only; source visibility, HTTP success and dated documents do not certify decoded playback.",
+  "summary": {
+    "records_reviewed": 36,
+    "country_groups": {
+      "Argentina": 16,
+      "Australia": 10,
+      "India": 6,
+      "United Kingdom": 4
+    },
+    "partial_source_followups": 36,
+    "fresh_decoded_playback_checks": 0,
+    "current_guide_or_endpoint_certifications": 0,
+    "automatic_catalogue_promotions": 0,
+    "all_dimensions_validated": 0
+  },
+  "counting_limits": [
+    "Each exact chamber is reviewed separately; common pages are reused only when their text explicitly distinguishes or names both Houses.",
+    "An access failure or failed candidate route is a checked source gap, not evidence of no media service.",
+    "All per-use rights remain scoped; no parent/sibling grant or historical recording clearance is silently inherited."
+  ],
+  "records": [
+    {
+      "id": "argentina--buenos-aires--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.hcdiputados-ba.gov.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own exact House site designates youtube.com/user/DiputadosBA for live transmission.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own Agenda page embeds Google Calendar with America/Argentina/Buenos_Aires timezone; calendar event payload/freshness/broadcast mapping not checked.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdiputados-ba.gov.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.hcdiputados-ba.gov.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.hcdiputados-ba.gov.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 84951,
+          "size_truncated": false,
+          "title": "Honorable Cámara de Diputados de la Provincia de Buenos Aires"
+        },
+        {
+          "url": "https://www.hcdiputados-ba.gov.ar/index.php?page=agenda",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.hcdiputados-ba.gov.ar/index.php?page=agenda",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 17523,
+          "size_truncated": false,
+          "title": "Honorable Cámara de Diputados de la Provincia de Buenos Aires"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--buenos-aires--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.senado-ba.gov.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own exact Senate homepage/current news and video-gallery navigation confirmed; gallery follow-up timeout leaves exact proceedings provider unresolved.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Current news includes November training10:00; training is not a chamber-broadcast guide. Legislative Secretariat document navigation remains a separate source lead.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senado-ba.gov.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.senado-ba.gov.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.senado-ba.gov.ar/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 105039,
+          "size_truncated": false,
+          "title": "Ley Micaela: nueva instancia de capacitación en el Senado bonaerense | Senado BA"
+        },
+        {
+          "url": "https://www.senado-ba.gov.ar/GaleriaVideos.aspx",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own homepage video-gallery link followed; web-reader timeout, exact current plenary archive/provider remains unresolved.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--catamarca--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://diputadoscatamarca.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own House site designates @canaloficialdiputadoscat. Its own TV Recinto/VIVO page and2026 ordinary-session archive categories are visible; no decoded sample.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Dated/category archive navigation is confirmed, not an upcoming programme feed; sitting/upload dates, times and room mapping remain open.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadoscatamarca.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputadoscatamarca.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://diputadoscatamarca.gob.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 360919,
+          "size_truncated": false,
+          "title": "DIPUTADOS CATAMARCA – PODER LEGISLATIVO"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/vivo/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/vivo/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 89209,
+          "size_truncated": false,
+          "title": "VIVO – Canal Parlamentario"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--catamarca--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://senadodecatamarca.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Senate homepage designates YouTube UC2HnM2bfuyDnqg1BTeBd8Eg and a live-session link. The specifically linked sesiones-en-vivo route returns404; a working channel link does not clear every session.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own Sesiones/streaming navigation present; no current timed broadcast guide validated.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadodecatamarca.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senadodecatamarca.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://senadodecatamarca.gob.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 130391,
+          "size_truncated": false,
+          "title": "inicio - Cámara de Senadores de la Provincia de Catamarca"
+        },
+        {
+          "url": "https://senadodecatamarca.gob.ar/sesiones-en-vivo/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--corrientes--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own exact House viewing page and designated YouTube UCaKzoDdrgujAXRX83vAukqw reconfirmed; historical catalogue playback is not rerun.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own Order of Day/taquigraphic-document navigation confirmed; no current source-to-live timing/feed validation.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 222108,
+          "size_truncated": false,
+          "title": "Sesiones en vivo – Honorable Cámara de Diputados de la Provincia de Corrientes"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--corrientes--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.senadoctes.gov.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Senate live and audio pages reconfirmed, with YouTube UCG53mcv5LYAOzJrLGnGTy-A. Audio index visibly includes2024 PDF/MP3 pairs; none fetched or decoded.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Retrospective audio/document pairs are not a current guide; future sitting and video/audio date mapping remain open.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoctes.gov.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.senadoctes.gov.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.senadoctes.gov.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 22722,
+          "size_truncated": false,
+          "title": "Cámara de Senadores de la Provincia de Corrientes"
+        },
+        {
+          "url": "https://www.senadoctes.gov.ar/sesionesenvivo.php",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.senadoctes.gov.ar/sesionesenvivo.php",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 13822,
+          "size_truncated": false,
+          "title": "Cámara de Senadores de la Provincia de Corrientes"
+        },
+        {
+          "url": "https://www.senadoctes.gov.ar/sesionesenaudio.php",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.senadoctes.gov.ar/sesionesenaudio.php",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 26902,
+          "size_truncated": false,
+          "title": "Cámara de Senadores de la Provincia de Corrientes"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--entre-rios--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.hcder.gov.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Specific House route confirmed by own indexed proceedings documents, but current home GET and web-reader time out. The invented-looking hcdiputadoser DNS lead is rejected, not a confirmed institutional route.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Historical own proceedings/commission references exist; current timed public guide/service remains unresolved after access gap.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcder.gov.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.hcder.gov.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error timed out>"
+        },
+        {
+          "url": "https://www.hcder.gov.ar/comisionesDetalles.php?id=76",
+          "reviewed_on": "2026-10-24",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--entre-rios--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.senadoer.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Senate designates UCj0dNRrNFOyz5g-LoUEG8Mg and specific15th ordinary-session video; explicit2026 official transmission notices confirm the intended Senate service.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own June summons has dated proposed start times and committee rooms, but is historical. Current October homepage/video labels need independent sitting-date/end-time/feed mapping.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadoer.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.senadoer.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.senadoer.gob.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 187987,
+          "size_truncated": false,
+          "title": "SENADO ENTRE RÍOS – Vicegobernación de la provincia de Entre Ríos"
+        },
+        {
+          "url": "https://www.senadoer.gob.ar/2026/06/convocatoria-a-sesion-y-reuniones-de-comision-4/",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own19June2026 summons gives23/24/25June18:00/13:00/11:00 and explicit official Senate YouTube transmission. Historical scheduled business, not a current October guide.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--mendoza--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.hcdmza.gob.ar/site/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own House page current through22–23October2026 designates @prensadiputadosmza/live and its official channel. No fresh provider decoding.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own chamber/committee agenda pages exist; current page read returns agenda navigation but no certified timed feed/end times.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.hcdmza.gob.ar/site/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.hcdmza.gob.ar/site/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.hcdmza.gob.ar/site/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 94954,
+          "size_truncated": false,
+          "title": "Home"
+        },
+        {
+          "url": "https://www.hcdmza.gob.ar/site/institucional/comisiones/agenda-de-comisiones",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.hcdmza.gob.ar/site/institucional/comisiones/agenda-de-comisiones",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 26657,
+          "size_truncated": false,
+          "title": "Agenda de comisiones"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--mendoza--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://senadomendoza.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Exact Senate indexed route/name and institutional FAQ confirmed;403 blocks direct current service inspection. Do not inherit Deputies coverage.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own indexed Sesiones/Diario describes document families; no current timed broadcast guide validated.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadomendoza.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senadomendoza.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Official indexed site title and FAQ identify Senate as upper chamber and own session/documents navigation; normal GET and web-reader both403, so current direct content/provider continuity unresolved."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.diputadosalta.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own House homepage designates youtube.com/user/DiputadoSalta and embedded video items. Provider visibility is not a new playback or rights certification.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own current news/navigation present; no public timed feed or room coverage certified.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.diputadosalta.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.diputadosalta.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.diputadosalta.gob.ar/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 22227,
+          "size_truncated": false,
+          "title": "Cámara de Diputados de la Provincia de Salta"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://senadosalta.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Senate page designates video channel UCtAVTuWAKFw8tUrcjHz57Yw; a separate UCpL9j3XX6_G1Xk_g-Dugd7w link is under Constituent Convention, not automatically the ordinary Senate.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own15October27th ordinary-session report, orders and2026 diaries are retrospective records. Current broadcasts/calendar require exact date and organ matching.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senadosalta.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senadosalta.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://senadosalta.gob.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 175146,
+          "size_truncated": false,
+          "title": "Cámara de Senadores - Bienvenidos al sitio oficial de la Cámara de Senadores de la Provincia de Salta"
+        },
+        {
+          "url": "https://senadosalta.gob.ar/diario-de-sesiones/diario-de-sesiones-2026/diario-de-sesiones-2026/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://senadosalta.gob.ar/diario-de-sesiones/diario-de-sesiones-2026/diario-de-sesiones-2026/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 156900,
+          "size_truncated": false,
+          "title": "Diario de sesiones 2026 - Cámara de Senadores"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--san-luis--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://diputados.sanluis.gov.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own House homepage separately designates @dipusanluis and a session-live video. Article/current archive labels remain individual leads, not source-wide playback certification.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own Diario de Sesiones and current ordinary-session news present; timed machine-readable guide not validated.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputados.sanluis.gov.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputados.sanluis.gov.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://diputados.sanluis.gov.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 187677,
+          "size_truncated": false,
+          "title": "Cámara de Diputados de la provincia de San Luis"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--san-luis--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://senado.sanluis.gov.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Senate normal GET200/title and official authorities indexed page establish route. No specific current Senate provider extracted in this bounded pass; Deputies video not inherited.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Current exact Senate timed guide remains unresolved; authority directory is not a broadcast programme.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://senado.sanluis.gov.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senado.sanluis.gov.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://senado.sanluis.gov.ar/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 30597,
+          "size_truncated": false,
+          "title": "Cámara de Senadores de la Provincia de San Luis"
+        },
+        {
+          "url": "https://senado.sanluis.gov.ar/autoridades/",
+          "reviewed_on": "2026-10-24",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--santa-fe--organ--camara-de-diputados",
+      "country": "Argentina",
+      "name": "Cámara de Diputados",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://diputadossantafe.gov.ar/web/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false,
+        "preferred_name_observation": "Own source uses Cámara de Diputadas y Diputados de la Provincia de Santa Fe."
+      },
+      "official_media": {
+        "finding": "Own site names Cámara de Diputadas y Diputados and supplies designated YouTube session items. No copied Senate or national provider.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own session summaries/diaries confirmed; some relative links contain malformed spaces, requiring canonical link handling before scraping. No future timed broadcast guide certified.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://diputadossantafe.gov.ar/web/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputadossantafe.gov.ar/web/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://diputadossantafe.gov.ar/web/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 65379,
+          "size_truncated": false,
+          "title": "Diputados de Santa Fe:\n        Pages"
+        },
+        {
+          "url": "https://diputadossantafe.gov.ar/web/sesiones/index",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://diputadossantafe.gov.ar/web/sesiones/index",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 37253,
+          "size_truncated": false,
+          "title": "Diputados de Santa Fe:\n        Sesiones"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "argentina--santa-fe--organ--camara-de-senadores",
+      "country": "Argentina",
+      "name": "Cámara de Senadores",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.senadosantafe.gob.ar/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Exact retained Senate route currently times out in both ordinary GET and web-reader. No current owned provider designation certified; a third-party @SenadoSantaFe lead is not promoted.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Current official agenda/media mapping and source freshness remain unresolved after access failure.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.senadosantafe.gob.ar/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.senadosantafe.gob.ar/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error timed out>"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--new-south-wales--organ--legislative-assembly",
+      "country": "Australia",
+      "name": "Legislative Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.nsw.gov.au/webcasts",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own webcast source explicitly separates Legislative Assembly/Council and committee streams, names archived YouTube, and reports no active webcast on24October. Ordinary GET403 differs from readable official web text.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Both named Houses next sit10November2026 in source header; daily programme/running-record links govern start times. No exact broadcast end-time/UTC-feed mapping certified.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_excerpts",
+          "finding": "Fair, accurate, attributed excerpts have published conditions; preserve context and observe advertising/satire/political-use and third-party-material limits. The source expressly withholds copying/republication of audio captions in Assembly footage.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/copyright"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_excerpts",
+          "finding": "Fair, accurate, attributed excerpts have published conditions; preserve context and observe advertising/satire/political-use and third-party-material limits. The source expressly withholds copying/republication of audio captions in Assembly footage.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/copyright"
+          ]
+        },
+        "programme_data": {
+          "status": "general_material_conditions_not_complete_feed_licence",
+          "finding": "General owned site materials have conditional copying/display terms and copyright notice requirements; third-party and particular webcast terms differ.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/copyright"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.nsw.gov.au/webcasts",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Official web-reader supplies both named Houses, next sitting10November2026, no active webcast on Saturday24October, and a designated Parliament YouTube archive; separate plain GET403 retained."
+        },
+        {
+          "url": "https://www.parliament.nsw.gov.au/copyright",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Full current text read via official web-reader; general reuse and separate House/committee webcast terms, third-party limits, excerpt conditions and Assembly audio-caption restriction confirmed. Plain GET403 retained."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--new-south-wales--organ--legislative-council",
+      "country": "Australia",
+      "name": "Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.nsw.gov.au/webcasts",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own webcast source explicitly separates Legislative Assembly/Council and committee streams, names archived YouTube, and reports no active webcast on24October. Ordinary GET403 differs from readable official web text.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Both named Houses next sit10November2026 in source header; daily programme/running-record links govern start times. No exact broadcast end-time/UTC-feed mapping certified.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/webcasts"
+          ]
+        },
+        "copying_recording": {
+          "status": "conditional_excerpts",
+          "finding": "Fair, accurate, attributed excerpts have published conditions; preserve context and observe advertising/satire/political-use and third-party-material limits. Assembly audio-caption restriction is not automatically extended to Council footage.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/copyright"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_excerpts",
+          "finding": "Fair, accurate, attributed excerpts have published conditions; preserve context and observe advertising/satire/political-use and third-party-material limits. Assembly audio-caption restriction is not automatically extended to Council footage.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/copyright"
+          ]
+        },
+        "programme_data": {
+          "status": "general_material_conditions_not_complete_feed_licence",
+          "finding": "General owned site materials have conditional copying/display terms and copyright notice requirements; third-party and particular webcast terms differ.",
+          "source_urls": [
+            "https://www.parliament.nsw.gov.au/copyright"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.nsw.gov.au/webcasts",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Official web-reader supplies both named Houses, next sitting10November2026, no active webcast on Saturday24October, and a designated Parliament YouTube archive; separate plain GET403 retained."
+        },
+        {
+          "url": "https://www.parliament.nsw.gov.au/copyright",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Full current text read via official web-reader; general reuse and separate House/committee webcast terms, third-party limits, excerpt conditions and Assembly audio-caption restriction confirmed. Plain GET403 retained."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--south-australia--organ--house-of-assembly",
+      "country": "Australia",
+      "name": "House of Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own live page expressly provides separate House of Assembly and Legislative Council choices, audio-only options and named committee rooms. Video on Demand requires a limited licence application; no media decoded.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Sitting calendar and each House Notice Papers designated; proposed sitting business is distinct from guaranteed live coverage, especially committees at discretion.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        },
+        "rebroadcast": {
+          "status": "private_noncommercial_and_fair_report_conditions",
+          "finding": "The notice explicitly names both Houses, limits general use to private/noncommercial purposes and conditions recording/copying/republication/redistribution. Fair/accurate-report exception and prohibited advertising/campaign/satire contexts do not establish unrestricted full-signal relay.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc"
+          ]
+        },
+        "copying_recording": {
+          "status": "private_noncommercial_and_fair_report_conditions",
+          "finding": "The notice explicitly names both Houses, limits general use to private/noncommercial purposes and conditions recording/copying/republication/redistribution. Fair/accurate-report exception and prohibited advertising/campaign/satire contexts do not establish unrestricted full-signal relay.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "private_noncommercial_and_fair_report_conditions",
+          "finding": "The notice explicitly names both Houses, limits general use to private/noncommercial purposes and conditions recording/copying/republication/redistribution. Fair/accurate-report exception and prohibited advertising/campaign/satire contexts do not establish unrestricted full-signal relay.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 50946,
+          "size_truncated": false,
+          "title": ""
+        },
+        {
+          "url": "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 4866,
+          "size_truncated": false,
+          "title": ""
+        },
+        {
+          "url": "https://www.parliament.sa.gov.au/en/Sitting-Program/Sitting-Program",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.sa.gov.au/en/Sitting-Program/Sitting-Program",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 46356,
+          "size_truncated": false,
+          "title": ""
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--south-australia--organ--legislative-council",
+      "country": "Australia",
+      "name": "Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own live page expressly provides separate House of Assembly and Legislative Council choices, audio-only options and named committee rooms. Video on Demand requires a limited licence application; no media decoded.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Sitting calendar and each House Notice Papers designated; proposed sitting business is distinct from guaranteed live coverage, especially committees at discretion.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        },
+        "rebroadcast": {
+          "status": "private_noncommercial_and_fair_report_conditions",
+          "finding": "The notice explicitly names both Houses, limits general use to private/noncommercial purposes and conditions recording/copying/republication/redistribution. Fair/accurate-report exception and prohibited advertising/campaign/satire contexts do not establish unrestricted full-signal relay.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc"
+          ]
+        },
+        "copying_recording": {
+          "status": "private_noncommercial_and_fair_report_conditions",
+          "finding": "The notice explicitly names both Houses, limits general use to private/noncommercial purposes and conditions recording/copying/republication/redistribution. Fair/accurate-report exception and prohibited advertising/campaign/satire contexts do not establish unrestricted full-signal relay.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "private_noncommercial_and_fair_report_conditions",
+          "finding": "The notice explicitly names both Houses, limits general use to private/noncommercial purposes and conditions recording/copying/republication/redistribution. Fair/accurate-report exception and prohibited advertising/campaign/satire contexts do not establish unrestricted full-signal relay.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.sa.gov.au/About-Parliament/Live-Broadcast",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 50946,
+          "size_truncated": false,
+          "title": ""
+        },
+        {
+          "url": "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.sa.gov.au/about-parliament/broadcast-pages/lc",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 4866,
+          "size_truncated": false,
+          "title": ""
+        },
+        {
+          "url": "https://www.parliament.sa.gov.au/en/Sitting-Program/Sitting-Program",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.sa.gov.au/en/Sitting-Program/Sitting-Program",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 46356,
+          "size_truncated": false,
+          "title": ""
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--tasmania--organ--house-of-assembly",
+      "country": "Australia",
+      "name": "House of Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.tas.gov.au/broadcast",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own broadcast page separately names each House and committee rooms; plain GET403 but official web-reader content available. No decoded sample.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "House wrapper says27October2026 10:00; Council wrapper says11September2026 09:30. Preserve chamber-specific freshness differences; use own sitting calendars/notice papers rather than assuming both wrappers current.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.tas.gov.au/broadcast",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Official web-reader names House of Assembly27October2026 10:00 and Legislative Council11September2026 09:30. These differing dated wrappers are not a current simultaneous-live certification; ordinary GET403 retained."
+        },
+        {
+          "url": "https://www.parliament.tas.gov.au/copyright",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--tasmania--organ--legislative-council",
+      "country": "Australia",
+      "name": "Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.tas.gov.au/broadcast",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own broadcast page separately names each House and committee rooms; plain GET403 but official web-reader content available. No decoded sample.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "House wrapper says27October2026 10:00; Council wrapper says11September2026 09:30. Preserve chamber-specific freshness differences; use own sitting calendars/notice papers rather than assuming both wrappers current.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        },
+        "copying_recording": {
+          "status": "historical_dated_item_conditions_current_scope_open",
+          "finding": "The1June2022 Council archive describes public-domain proceedings with fair/accurate meaning preserved and contempt caveats; this is recorded as historical item evidence, not a blanket current2026 service grant.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/resources/tbs/larchive/01062022"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "historical_dated_item_conditions_current_scope_open",
+          "finding": "The1June2022 Council archive describes public-domain proceedings with fair/accurate meaning preserved and contempt caveats; this is recorded as historical item evidence, not a blanket current2026 service grant.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/resources/tbs/larchive/01062022"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.tas.gov.au/broadcast"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.tas.gov.au/broadcast",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Official web-reader names House of Assembly27October2026 10:00 and Legislative Council11September2026 09:30. These differing dated wrappers are not a current simultaneous-live certification; ordinary GET403 retained."
+        },
+        {
+          "url": "https://www.parliament.tas.gov.au/copyright",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.parliament.tas.gov.au/resources/tbs/larchive/01062022",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "web_reader_observation": "Official2022 Council archive lists timed segments and describes fair/accurate reporting of public-domain proceedings with meaning preserved. Historical declaration; not automatically a source-wide2026 licence."
+        },
+        {
+          "url": "https://www.parliament.tas.gov.au/legislative-council/chamber-proceedings/sitting-calendar-2026",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own Council2026 sitting-calendar page read; dates remain distinct from a broadcast wrapper and do not guarantee transmission.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--victoria--organ--legislative-assembly",
+      "country": "Australia",
+      "name": "Legislative Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.vic.gov.au/watch/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Watch page200 designates Parliament YouTube, but extracted content does not expose a certified current exact-chamber player; House/Council item selection still required.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "No current exact-chamber timed broadcast feed validated from the fetched Watch shell; calendar/sitting/end-time mapping open.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "copying_recording": {
+          "status": "general_download_display_purposes_only",
+          "finding": "Current website notice allows personal noncommercial download/display, research/study and organizational use; further use requires permission. These general purposes do not certify independent whole-video relay.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/copyright/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.vic.gov.au/watch/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.vic.gov.au/watch/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 70416,
+          "size_truncated": false,
+          "title": "Watch - Parliament of Victoria"
+        },
+        {
+          "url": "https://www.parliament.vic.gov.au/copyright/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.vic.gov.au/copyright/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 66127,
+          "size_truncated": false,
+          "title": "Copyright - Parliament of Victoria"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--victoria--organ--legislative-council",
+      "country": "Australia",
+      "name": "Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.vic.gov.au/watch/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Watch page200 designates Parliament YouTube, but extracted content does not expose a certified current exact-chamber player; House/Council item selection still required.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "No current exact-chamber timed broadcast feed validated from the fetched Watch shell; calendar/sitting/end-time mapping open.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        },
+        "copying_recording": {
+          "status": "general_download_display_purposes_only",
+          "finding": "Current website notice allows personal noncommercial download/display, research/study and organizational use; further use requires permission. These general purposes do not certify independent whole-video relay.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/copyright/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "council_specific_coverage_and_accreditation_rules",
+          "finding": "Available29April2024 Council terms distinguish authorized Hansard coverage and accredited media, exclude private/break sessions and direct members not to publish IPTV feeds. These are not a general independent raw-stream licence and are not inherited by Assembly.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/49c19e/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.vic.gov.au/watch/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.vic.gov.au/watch/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.vic.gov.au/watch/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 70416,
+          "size_truncated": false,
+          "title": "Watch - Parliament of Victoria"
+        },
+        {
+          "url": "https://www.parliament.vic.gov.au/copyright/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.vic.gov.au/copyright/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 66127,
+          "size_truncated": false,
+          "title": "Copyright - Parliament of Victoria"
+        },
+        {
+          "url": "https://www.parliament.vic.gov.au/49c19e/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.parliament.vic.gov.au/49bf8d/contentassets/e8f90d0357454466a6cb966defccdca7/legislative-council-broadcasting-terms-and-conditions-29-april-2024-dated.pdf",
+          "content_type": "application/pdf",
+          "bytes": 122399,
+          "size_truncated": false,
+          "title": "",
+          "web_reader_observation": "Current available2page Council terms text read, issued29April2024. Official Hansard coverage, media accreditation/private-session exclusions and member IPTV restriction are not a general independent raw-stream licence."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--western-australia--organ--legislative-assembly",
+      "country": "Australia",
+      "name": "Legislative Assembly",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false,
+        "route_limit": "A published/retained route or matching URL selector is not independent current ownership/service verification."
+      },
+      "official_media": {
+        "finding": "Exact-chamber watch-route lead receives403; lower-house route is retained catalogue evidence, upper-house selector remains unverified in this pass. No challenge bypass or current decoded claim.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Current exact House/Council programme and agenda-to-player mapping unresolved after access failure.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/lh"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.wa.gov.au/watch/live/chamber/lh",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "australia--western-australia--organ--legislative-council",
+      "country": "Australia",
+      "name": "Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.parliament.wa.gov.au/watch/live/chamber/uh",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false,
+        "route_limit": "A published/retained route or matching URL selector is not independent current ownership/service verification."
+      },
+      "official_media": {
+        "finding": "Exact-chamber watch-route lead receives403; lower-house route is retained catalogue evidence, upper-house selector remains unverified in this pass. No challenge bypass or current decoded claim.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Current exact House/Council programme and agenda-to-player mapping unresolved after access failure.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.parliament.wa.gov.au/watch/live/chamber/uh"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parliament.wa.gov.au/watch/live/chamber/uh",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "india--andhra-pradesh--organ--andhra-pradesh-legislative-council",
+      "country": "India",
+      "name": "Andhra Pradesh Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.apc.neva.gov.in/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own NeVA exact Council/Session51 source readable through official index/web reader, while normal www-host GET fails hostname validation. No current media provider verified.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "August2026 Lists of Business/Questions and October House Not In Session label confirmed; dates are not a broadcast guide.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.apc.neva.gov.in/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.apc.neva.gov.in/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.apc.neva.gov.in'. (_ssl.c:1129)>",
+          "web_reader_observation": "Official web-reader gives exact Andhra Pradesh Legislative Council/Session51 heading, August20 business documents and October2026 House Not In Session status. Direct www-host TLS hostname mismatch retained without bypass."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "india--bihar--organ--bihar-legislative-council",
+      "country": "India",
+      "name": "Bihar Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://vidhanparishad.bihar.gov.in/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Official Council own route/NeVA designation indexed; direct root reset and NeVA www-host hostname mismatch retained. NIC government service explicitly identifies Bihar Legislative Council and dated213thSession20–24July2026 archives; actual playback untested.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "NIC archive session ranges and NeVA document/calendar leads are retrospective/format evidence, not a fresh October timed guide. Plain NIC GET shows a continue gate while web-reader exposes dated archive labels.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://vidhanparishad.bihar.gov.in/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://vidhanparishad.bihar.gov.in/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error [Errno 54] Connection reset by peer>",
+          "web_reader_observation": "Official indexed source names Bihar Legislative Council and links its NeVA portal; direct reset and later web-reader timeout retained."
+        },
+        {
+          "url": "https://www.blc.neva.gov.in/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.blc.neva.gov.in'. (_ssl.c:1129)>",
+          "web_reader_observation": "Official search-index text identifies Bihar Legislative Council NeVA; direct www-host TLS hostname mismatch and web-reader timeout retained."
+        },
+        {
+          "url": "https://webcast.gov.in/biharvidhanparishad/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://webcast.gov.in/biharvidhanparishad/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 59399,
+          "size_truncated": false,
+          "title": "Bihar Legislative Council | Webcast Services of National Informatics Centre, Government of India",
+          "web_reader_observation": "NIC own web-reader identifies exact Council and archived213thSession20–24July2026, plus prior dated sessions. Plain GET returns title and a continue gate; no archive payload or decoded media verified."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "india--karnataka--organ--karnataka-legislative-council",
+      "country": "India",
+      "name": "Karnataka Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.klc.neva.gov.in/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Exact Council NeVA source fails normal www-host hostname verification; official Council Notifications source times out but indexed Council159thSession notice readable. Assembly NIC service is explicitly excluded as a sibling mismatch.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Council notifications are documentary leads; no current timed Council broadcast guide verified.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.klc.neva.gov.in/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.klc.neva.gov.in/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.klc.neva.gov.in'. (_ssl.c:1129)>"
+        },
+        {
+          "url": "https://kla.kar.nic.in/council/lcinfrms.htm",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error timed out>",
+          "web_reader_observation": "Official indexed Notifications page names Council and159thSession sine-die notice; direct GET timeout. No current feed inherited from the separate Assembly service."
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "india--maharashtra--organ--maharashtra-legislative-council",
+      "country": "India",
+      "name": "Maharashtra Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://mls.org.in/Council.aspx",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own MLS portal and Council-specific page independently read; exact Council documents/navigation confirmed. No present provider or decoded Council proceedings certified.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Current parent page explicitly separates Council/Assembly calendars and announces7December2026 winter session in Nagpur; Council page has2026 document families. Future session announcement is not a timed broadcast guarantee.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://mls.org.in/Council.aspx"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://mls.org.in/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://mls.org.in/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 56959,
+          "size_truncated": false,
+          "title": "Maharashtra Legislature",
+          "web_reader_observation": "Own current page separates Council and Assembly, announces7December2026 Nagpur winter session and gives separate calendar/order-paper navigation; no public live service verified."
+        },
+        {
+          "url": "https://mls.org.in/Council.aspx",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own current Council page read; Council-specific2026 summons/notifications/calendar document families confirmed, separately from Assembly.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "india--telangana--organ--telangana-legislative-council",
+      "country": "India",
+      "name": "Telangana Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.telangana.gov.in/departments/legislative-affairs/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own state portal names Council and links legislature.telangana.gov.in/main; linked legislature route403. Media providers from commercial TV/news are not accepted without official designation.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "No current Council timed public guide verified. State profile includes unrelated AYUSH/medical text and last-modified placeholder, so generic institutional prose is not accepted as fresh programme metadata.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.telangana.gov.in/departments/legislative-affairs/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.telangana.gov.in/departments/legislative-affairs/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.telangana.gov.in/departments/legislative-affairs/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.telangana.gov.in/departments/legislative-affairs/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.telangana.gov.in/departments/legislative-affairs/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "linked_service_grant_unresolved",
+          "finding": "State-portal terms explicitly cannot authorize copyrighted works on linked sites. This is not a Council audiovisual grant.",
+          "source_urls": [
+            "https://www.telangana.gov.in/terms-and-conditions/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.telangana.gov.in/departments/legislative-affairs/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.telangana.gov.in/departments/legislative-affairs/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+          "web_reader_observation": "Own state portal names Council and links legislature.telangana.gov.in/main. Body also contains an unrelated AYUSH/medical-department sentence and last-modified placeholder; do not treat all contacts/profile prose as current. Plain GET TLS-handshake failure retained."
+        },
+        {
+          "url": "https://www.telangana.gov.in/legislature/members-of-legislative-council/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+          "web_reader_observation": "Own state portal indexed member page identifies exact Council, not Assembly; direct GET TLS handshake failure retained."
+        },
+        {
+          "url": "https://legislature.telangana.gov.in/main",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Explicitly linked by own state portal; web-reader403, no access bypass.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        },
+        {
+          "url": "https://www.telangana.gov.in/terms-and-conditions/",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own state terms disclaimer read; it expressly cannot authorize copyrighted materials on linked websites. No Council audiovisual reuse grant follows from this general portal.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "india--uttar-pradesh--organ--uttar-pradesh-legislative-council",
+      "country": "India",
+      "name": "Uttar Pradesh Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://www.vidhanparishad.up.gov.in/",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own exact Council root and designated digital-proceedings portal200; current institutional notices visible. Textual proceedings portal does not by itself establish audiovisual service.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own agenda/search endpoint200 and scheduled-session notices confirmed; no current timed broadcast feed, media mapping or event freshness certified.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://www.vidhanparishad.up.gov.in/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.vidhanparishad.up.gov.in/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.vidhanparishad.up.gov.in/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 244617,
+          "size_truncated": false,
+          "title": "उत्तर प्रदेश विधान परिषद | Uttar Pradesh Legislative Council"
+        },
+        {
+          "url": "https://www.vidhanparishadproceedings.up.gov.in/agenda/search",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://www.vidhanparishadproceedings.up.gov.in/agenda/search",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 72952,
+          "size_truncated": false,
+          "title": "U P Vidhan Parishad"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "united-kingdom--bermuda--organ--house-of-assembly-of-bermuda",
+      "country": "United Kingdom",
+      "name": "House of Assembly of Bermuda",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://parliament.bm/house/view/25",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own chamber Business page and common institutional Listen Live designation confirmed; linked SLIQ Harmony wrapper returns200 as Bermuda Parliament. This pass does not verify exact House/Senate archive selection or decode either signal.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Separate2026 House/Senate business-paper routes and common calendar visible. Shared live-link branding alone does not establish all-room timing, current sitting or a broadcast guide.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/house/view/25"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/house/view/25"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/house/view/25"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/house/view/25"
+          ]
+        },
+        "copying_recording": {
+          "status": "personal_use_exception_other_reproduction_requires_written_consent",
+          "finding": "Current institutional notice restricts reproduction beyond personal use or for financial gain without Clerk written consent. Printed papers remain official; this notice is not a full independent relay/EPG redistribution grant.",
+          "source_urls": [
+            "https://parliament.bm/about/view/25"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "personal_use_exception_other_reproduction_requires_written_consent",
+          "finding": "Current institutional notice restricts reproduction beyond personal use or for financial gain without Clerk written consent. Printed papers remain official; this notice is not a full independent relay/EPG redistribution grant.",
+          "source_urls": [
+            "https://parliament.bm/about/view/25"
+          ]
+        },
+        "programme_data": {
+          "status": "personal_use_exception_other_reproduction_requires_written_consent",
+          "finding": "Current institutional notice restricts reproduction beyond personal use or for financial gain without Clerk written consent. Printed papers remain official; this notice is not a full independent relay/EPG redistribution grant.",
+          "source_urls": [
+            "https://parliament.bm/about/view/25"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://parliament.bm/house/view/25",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://parliament.bm/house/view/25",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 27531,
+          "size_truncated": false,
+          "title": "Bermuda Parliament"
+        },
+        {
+          "url": "https://parliament.bm/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://parliament.bm/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 265562,
+          "size_truncated": false,
+          "title": "Bermuda Parliament"
+        },
+        {
+          "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://sg001-harmony.sliq.net/00290/Harmony",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 50699,
+          "size_truncated": false,
+          "title": "Bermuda Parliament - Now Playing"
+        },
+        {
+          "url": "https://parliament.bm/about/view/25",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://parliament.bm/about/view/25",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 30622,
+          "size_truncated": false,
+          "title": "Bermuda Parliament"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "united-kingdom--bermuda--organ--senate-of-bermuda",
+      "country": "United Kingdom",
+      "name": "Senate of Bermuda",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://parliament.bm/senate/view/24",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own chamber Business page and common institutional Listen Live designation confirmed; linked SLIQ Harmony wrapper returns200 as Bermuda Parliament. This pass does not verify exact House/Senate archive selection or decode either signal.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Separate2026 House/Senate business-paper routes and common calendar visible. Shared live-link branding alone does not establish all-room timing, current sitting or a broadcast guide.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/senate/view/24"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/senate/view/24"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/senate/view/24"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://parliament.bm/senate/view/24"
+          ]
+        },
+        "copying_recording": {
+          "status": "personal_use_exception_other_reproduction_requires_written_consent",
+          "finding": "Current institutional notice restricts reproduction beyond personal use or for financial gain without Clerk written consent. Printed papers remain official; this notice is not a full independent relay/EPG redistribution grant.",
+          "source_urls": [
+            "https://parliament.bm/about/view/25"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "personal_use_exception_other_reproduction_requires_written_consent",
+          "finding": "Current institutional notice restricts reproduction beyond personal use or for financial gain without Clerk written consent. Printed papers remain official; this notice is not a full independent relay/EPG redistribution grant.",
+          "source_urls": [
+            "https://parliament.bm/about/view/25"
+          ]
+        },
+        "programme_data": {
+          "status": "personal_use_exception_other_reproduction_requires_written_consent",
+          "finding": "Current institutional notice restricts reproduction beyond personal use or for financial gain without Clerk written consent. Printed papers remain official; this notice is not a full independent relay/EPG redistribution grant.",
+          "source_urls": [
+            "https://parliament.bm/about/view/25"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://parliament.bm/senate/view/24",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://parliament.bm/senate/view/24",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 26722,
+          "size_truncated": false,
+          "title": "Bermuda Parliament"
+        },
+        {
+          "url": "https://parliament.bm/",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://parliament.bm/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 265562,
+          "size_truncated": false,
+          "title": "Bermuda Parliament"
+        },
+        {
+          "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://sg001-harmony.sliq.net/00290/Harmony",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 50699,
+          "size_truncated": false,
+          "title": "Bermuda Parliament - Now Playing"
+        },
+        {
+          "url": "https://parliament.bm/about/view/25",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://parliament.bm/about/view/25",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 30622,
+          "size_truncated": false,
+          "title": "Bermuda Parliament"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "united-kingdom--isle-of-man--organ--house-of-keys",
+      "country": "United Kingdom",
+      "name": "House of Keys",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://tynwald.im/business/listen",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Listen and Follow page explicitly separates House of Keys, Legislative Council, Tynwald Court and Committees; both exact chambers labelled offline at retrieval. Listen Again supports date/keyword/chamber selection. No audio decoded.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own sitting, order/question-paper and RSS navigation confirmed. Relative Today posts lack an independently anchored date and are not converted into current programmes; the joint Court is not substituted for either chamber.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://tynwald.im/business/listen",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tynwald.im/business/listen",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 59877,
+          "size_truncated": false,
+          "title": "Tynwald - Listen and Follow"
+        },
+        {
+          "url": "https://tynwald.im/business/sittings",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tynwald.im/business/sittings",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 62485,
+          "size_truncated": false,
+          "title": "Tynwald - Sittings Sitting Dates Calculator for Bills"
+        },
+        {
+          "url": "https://tynwald.im/business/order-and-question-papers",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tynwald.im/business/order-and-question-papers",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 34736,
+          "size_truncated": false,
+          "title": "Tynwald - Order and Question Papers"
+        },
+        {
+          "url": "https://tynwald.im/links/RSS",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own RSS page read; feed navigation alone is not payload/freshness or timed-broadcast validation.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        },
+        {
+          "url": "https://tynwald.im/about/house-of-keys",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own House of Keys page read; exact chamber remains separate from joint Tynwald Court and Legislative Council.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "united-kingdom--isle-of-man--organ--legislative-council",
+      "country": "United Kingdom",
+      "name": "Legislative Council",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "inventory_grain": "chamber",
+        "institutional_route_or_reference": "https://tynwald.im/business/listen",
+        "identity_scope": "Exact named chamber/organ, separate from the legislature umbrella, sibling chamber and broadcasters.",
+        "preferred_name_current_membership_identifiers_fully_certified": false
+      },
+      "official_media": {
+        "finding": "Own Listen and Follow page explicitly separates House of Keys, Legislative Council, Tynwald Court and Committees; both exact chambers labelled offline at retrieval. Listen Again supports date/keyword/chamber selection. No audio decoded.",
+        "decoded_playback_checked": false,
+        "stable_direct_endpoint_confirmed": false,
+        "complete_room_language_accessibility_inventory_certified": false
+      },
+      "epg": {
+        "finding": "Own sitting, order/question-paper and RSS navigation confirmed. Relative Today posts lack an independently anchored date and are not converted into current programmes; the joint Court is not substituted for either chamber.",
+        "xmltv_ready": false,
+        "new_parser_added": false,
+        "source_wide_freshness_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "embedding": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "finding": "No applicable source-specific grant established in this bounded follow-up; no prohibition inferred from silence or a public player.",
+          "source_urls": [
+            "https://tynwald.im/business/listen"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://tynwald.im/business/listen",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tynwald.im/business/listen",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 59877,
+          "size_truncated": false,
+          "title": "Tynwald - Listen and Follow"
+        },
+        {
+          "url": "https://tynwald.im/business/sittings",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tynwald.im/business/sittings",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 62485,
+          "size_truncated": false,
+          "title": "Tynwald - Sittings Sitting Dates Calculator for Bills"
+        },
+        {
+          "url": "https://tynwald.im/business/order-and-question-papers",
+          "reviewed_on": "2026-10-24",
+          "method": "ordinary_bounded_public_HTTPS_GET",
+          "status": 200,
+          "final_url": "https://tynwald.im/business/order-and-question-papers",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 34736,
+          "size_truncated": false,
+          "title": "Tynwald - Order and Question Papers"
+        },
+        {
+          "url": "https://tynwald.im/links/RSS",
+          "reviewed_on": "2026-10-24",
+          "web_reader_observation": "Own RSS page read; feed navigation alone is not payload/freshness or timed-broadcast validation.",
+          "method": "official_web_reader_or_primary_index_as_explicitly_described"
+        }
+      ],
+      "unresolved": [
+        "Current decoded substantive proceedings, audible tracks, captions and every chamber/committee room.",
+        "Exact event-to-provider/room mapping, dates/timezones/end times, update/cancellation semantics and programme-data reuse.",
+        "Applicable conditions for linking, embedding, independent direct playback, rebroadcast, recording/copying and other audiovisual reuse.",
+        "Preferred local metadata, full identifier crosswalk and current institutional activity beyond the specific source observations."
+      ],
+      "all_dimensions_validated": false,
+      "automatic_catalogue_promotion": false
+    }
+  ]
+}

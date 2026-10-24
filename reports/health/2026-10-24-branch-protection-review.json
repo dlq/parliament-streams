@@ -1,0 +1,35 @@
+{
+  "reviewed_on": "2026-10-24",
+  "repository": "dlq/parliament-streams",
+  "method": "Read-only GitHub REST API plus local workflow review; no settings changed.",
+  "current": {
+    "visibility": "public",
+    "default_branch": "main",
+    "main_protected": false,
+    "repository_rulesets_including_parent_rulesets": []
+  },
+  "recommended_initial_rules": {
+    "target": "default branch (currently main)",
+    "enforcement": "active",
+    "restrict_deletions": true,
+    "block_force_pushes": true,
+    "ordinary_updates_allowed": true,
+    "require_pull_requests": false,
+    "require_status_checks": false,
+    "bypass_list": []
+  },
+  "optional_later_mode": "Require pull requests and Verify catalogue and scrapers, zero approvals for solo maintenance; do not require Pages deployment before merging.",
+  "automation_review": {
+    "workflow_files_reviewed": 6,
+    "scheduled_git_commits_or_pushes_found": false,
+    "scheduled_outputs": "Deployment/report artifacts and review issues; repository contents permission read-only.",
+    "git_revision": "0e05b9cd8040cb2b77aa53978426ebfed8d20925"
+  },
+  "primary_sources": [
+    "https://api.github.com/repos/dlq/parliament-streams",
+    "https://api.github.com/repos/dlq/parliament-streams/branches/main",
+    "https://api.github.com/repos/dlq/parliament-streams/rulesets?includes_parents=true",
+    "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository",
+    "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets"
+  ]
+}

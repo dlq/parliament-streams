@@ -2,6 +2,63 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Resumed Metadata, Media, EPG And Rights Review — 24 October 2026
+
+The service phase now starts from **all 940 eligible identity records** in the
+reconciled inventory. The default public list's other eight entries are specific
+legal holds. Umbrellas, chambers and organs remain separate record grains.
+
+The [current service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md)
+and [per-record queue](../reports/discovery/2026-10-24-institution-service-baseline.json)
+document **190 exact catalogue matches and 750 without a documented match**.
+The renewed pass now has **302 individual partial source follow-ups**, including
+all **103 main national chamber identities** across the 71 country groups. It
+also covers Canadian treaty legislatures, Basque foral assemblies, ten Indian
+autonomous councils, Budapest/Zagreb, six special formations/organs, all 20 Croatian
+counties, all 104 newly separated US regional/territorial chamber identities,
+the 36 remaining Argentine/Australian/Indian/Bermuda/Manx organs and all 14 Czech
+regional assemblies. Exact
+institutional/provider names, programme surfaces and seven distinct rights claims
+have dated confirmations and unresolved dimensions in the linked reports.
+
+Of the historical 652-body cohort, 14 records have renewed follow-ups and 638
+retain earlier evidence. All **288 identities outside that cohort now have an
+individual renewed follow-up**. Together, the two stages account for every one
+of the 940 eligible records; no expanded identity remains without an individual
+service disposition. The 638 earlier-only cases were not all freshly replayed or
+page-inspected in this renewed batch. None of these partial checks closes every
+dimension, so zero unreviewed expanded identities does not mean zero remaining
+validation work.
+
+Selected fresh recordings decode for the Belgian House, Czech Senate,
+Moravia-Silesia and the three Basque assemblies. Finland's initial sample decodes
+but its seek stalls; Álava's initial WebKit playback succeeds but later seeking
+does not advance. These are scoped, muted samples rather than source-wide current
+live, audio, languages, captions or room-inventory certification. Bizkaia's clock
+difference is resolved as viewer-timezone formatting; Gipuzkoa's committee camera
+clock mismatch remains separate. [Basque technical follow-up](../reports/discovery/2026-10-24-service-review-basque-playback-followup.json).
+
+EPG gates remain explicit: Gipuzkoa's linked RSS has February 2016 entries;
+Bulgaria's documented API returns empty sampled upcoming lists; California's
+proposed television programmes lack end times and can change; Taiwan includes secret-session agenda
+items. Current notices beside old agenda indexes, upload versus sitting dates,
+contradictory date text and Cree Nation's calendar/terms integrity issues are not
+silently converted into programme entries. No implemented XMLTV parser is added.
+
+The rights pass corrects France's Assembly multimedia classification, records
+the Dutch meeting-material licence separately from occasional events and replaces
+overbroad Canadian House/Senate no-reuse labels with their conditional proceedings
+grants. Existing research-only/link-out policies are retained for France/Canada.
+The current Appenzell leaflet's official-signal restrictions are now fully read.
+[Rights findings and conditions](source-rights-and-permissions.md).
+
+New evidence separates linking, embedding, direct playback, rebroadcast,
+copying/recording, audiovisual reuse and programme-data rights. No record is
+marked complete across every requested dimension. Catalogue sources remain 243;
+authority clearance, source checks and catalogue matches are distinct progress
+measures. The baseline builder performs offline reconciliation, not fresh media
+or rights validation.
+
 ## Legal Hold Follow-up — 24 October 2026
 
 All 11 starting legal holds received a further source review. **Three French cases
@@ -10,7 +67,8 @@ Panamanian bodies and FNTA. Customary recognition/binding justice and FNTA Bill
 passage are confirmed separately from the missing operative powers/instruments.
 [Case findings and exact missing documents](../reports/discovery/2026-10-24-legal-holds-review.md)
 · [Prepared document requests](../reports/discovery/2026-10-24-legal-document-requests.md).
-No requests have been sent. Metadata, streams, EPG and rights remain deferred.
+No requests have been sent. These eight held bodies remain outside the eligible
+service queue; the authority-cleared inventory's next phase is now active above.
 
 ## Inventory Completeness
 
@@ -59,11 +117,15 @@ are committed or deployed. `data/channels.json` is the canonical catalogue.
 
 - **243 sources**: 74 national, 163 regional/territorial and six supranational.
 - **143 mapped regional jurisdictions**; every published regional entry has geometry.
+- 230 catalogue records have sourced jurisdiction flags. The 63 initially neutral
+  entries now have 50 added assets and 13 explicit neutral dispositions; this
+  includes every addition since the 198-source baseline.
+  [Flag coverage and source reports](../reports/discovery/2026-10-24-catalogue-flag-coverage.json).
 - 38 native-player sources, three provider embeds, 189 official link-outs and
   13 research-only records. Strict IPTV exports remain unchanged.
 - 33 records have implemented schedule metadata, covering 17 unique source URLs.
   Another 215 unique schedule/event URLs remain planned.
-- 172 records remain permission-pending. Selected muted playback does not certify
+- 168 records remain permission-pending. Selected muted playback does not certify
   audible tracks or source-wide media accessibility.
 - 150 formal candidates: 145 promoted, four researching and one rejected.
   The four holds are France Senate, Iceland Althingi, Chile Sala IV and Rivera;

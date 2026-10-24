@@ -119,10 +119,14 @@ def write_iptv_exports(
     assessment = assess_schedules(catalogue, snapshot)
     xml, programmes, skipped = render_xmltv(catalogue, snapshot, assessment)
     output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "stable-hls.m3u8").write_text(render_playlist(stable, epg_url), encoding="utf-8")
-    (output_dir / "validated-hls.m3u8").write_text(
-        render_playlist(validated, epg_url), encoding="utf-8"
-    )
+    # A channel list is extended M3U, not an HLS media/master manifest. GitHub
+    # Pages serves .m3u8 as application/vnd.apple.mpegurl, which VLC does not
+    # import as a channel list over HTTP. Prefer .m3u; retain the old filenames
+    # for clients that already handle them or force a playlist importer.
+    for name, channels in (("stable-hls", stable), ("validated-hls", validated)):
+        playlist = render_playlist(channels, epg_url)
+        for extension in ("m3u", "m3u8"):
+            (output_dir / f"{name}.{extension}").write_text(playlist, encoding="utf-8")
     (output_dir / "epg.xml").write_bytes(xml)
     (output_dir / "epg-quality.json").write_text(
         json.dumps(assessment.report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

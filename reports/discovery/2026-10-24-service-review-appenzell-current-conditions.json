@@ -1,0 +1,38 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Current linked media-leaflet follow-up for the exact annual legislative organ, superseding the earlier text-inspection gap while retaining event and playback limits.",
+  "records": [
+    {
+      "id": "switzerland--appenzell-innerrhoden--organ--landsgemeinde-des-kantons-appenzell-innerrhoden",
+      "reviewed_on": "2026-10-24",
+      "review_status": "partial_source_followup",
+      "prior_review": "reports/discovery/2026-10-24-service-review-special-organs.json",
+      "metadata": {"institution": "Landsgemeinde des Kantons Appenzell Innerrhoden", "finding": "Current own media page designates this annual organ and links the inspected media leaflet; distinguish it from the cantonal council."},
+      "confirmed": [
+        "The currently linked media leaflet was text-extracted and visually inspected in full; the earlier unread-text gap is resolved.",
+        "The leaflet prohibits reproducing/replaying, recording or saving the livestream played on ai.ch. This is stronger than a general copyright footer.",
+        "On-site press filming has separate access, location and voting-privacy conditions; it is not permission to reuse the official livestream."
+      ],
+      "epg": {"finding": "The leaflet gives a 12:30 assembly start and an approximate 14:30 finish dependent on proceedings; ceremony/procession times are separate. It contains no event date on the page, so these times must be joined to a verified annual notice, not emitted alone as a guide event.", "xmltv_ready": false},
+      "rights": {
+        "linking": {"status": "explicit_inbound_policy_not_located", "finding": "The inspected leaflet does not prohibit ordinary hyperlinks; it does not establish an inbound-link policy either."},
+        "embedding": {"status": "not_cleared", "finding": "No express external embed grant was established. The own-site Vimeo designation does not override the leaflet's livestream replay restriction."},
+        "direct_playback": {"status": "not_cleared", "finding": "No independent direct-playback grant; retain the official viewing route under the stated replay restriction."},
+        "rebroadcast": {"status": "express_replay_reproduction_restriction", "finding": "The currently linked leaflet prohibits reproducing/replaying the ai.ch livestream; no exception or separate agreement for this project is recorded."},
+        "copying_recording": {"status": "express_recording_and_storage_prohibition", "finding": "The leaflet expressly bars recording and saving the described official livestream."},
+        "audiovisual_reuse": {"status": "not_cleared", "finding": "On-site press permissions and the official signal are separate; no general clip or audiovisual reuse licence was established."},
+        "programme_data": {"status": "unresolved", "finding": "A factual programme is published, but an applicable data-reuse licence and exact annual-event mapping remain unconfirmed."}
+      },
+      "unresolved": [
+        "Exact current or archived Vimeo event/year mapping and decoded playback remain unverified.",
+        "No full live, audible-language, caption or sign-language validation is asserted.",
+        "The own page dates its current leaflet link 23 March 2026, while embedded PDF title metadata is inherited from 1995; use visible/current source context rather than that stale title.",
+        "Confirm source-specific permission before any third-party stream reproduction; no outreach was sent."
+      ],
+      "sources": [
+        {"id": "ai-media", "url": "https://ai.ch/medien/akkreditierung-landsgemeinde", "title": "Akkreditierung Landsgemeinde", "checked_on": "2026-10-24", "access_result": "own page/link provenance retained from individual special-organ review"},
+        {"id": "ai-current-leaflet", "url": "https://ai.ch/medien/akkreditierung-landsgemeinde/dokumente-landsgemeinde/merkblatt-landsgemeinde-medienschaffende.pdf/download", "title": "Landsgemeinde in Appenzell - Information für Medienschaffende", "checked_on": "2026-10-24", "source_date_from_own_page": "2026-03-23", "access_result": "ordinary HTTPS retrieval, one-page PDF text extraction and complete visual review", "excerpt": "Es ist nicht erlaubt, den auf www.ai.ch abgespielten Livestream wiederzugeben, mitzuschneiden oder zu speichern."}
+      ]
+    }
+  ]
+}

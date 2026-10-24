@@ -1,0 +1,131 @@
+{
+  "reviewed_on": "2026-10-24",
+  "issue": "Remote .m3u8 channel playlists did not expand into channels in VLC.",
+  "live_observation": {
+    "stable_url": "https://dlq.ca/parliament-streams/data/stable-hls.m3u8",
+    "broader_url": "https://dlq.ca/parliament-streams/data/validated-hls.m3u8",
+    "http_status": 200,
+    "content_type": "application/vnd.apple.mpegurl",
+    "stable_bytes": 815,
+    "broader_bytes": 8197,
+    "utf8_bom": false
+  },
+  "test_reader": "Installed VLC 3.0.24 Vetinari (3.0.24-rc1-0-g6de05adcba), isolated CLI interfaces, ignored config, no media library, muted/no video; no media recorded.",
+  "reproduction": "Live URL skipped M3U channel import; same saved bytes imported locally. Controlled HTTP fixtures isolate the response type from header attributes and filename extension.",
+  "header_fixture_results": [
+    {
+      "fixture": "extended.m3u8",
+      "header": "EPG attribute",
+      "content_type": "application/vnd.apple.mpegurl",
+      "valid_m3u_found": false,
+      "first_channel_selected": false,
+      "exit_code": 0,
+      "timed_out": false,
+      "unknown_option": false
+    },
+    {
+      "fixture": "plain.m3u8",
+      "header": "bare",
+      "content_type": "application/vnd.apple.mpegurl",
+      "valid_m3u_found": false,
+      "first_channel_selected": false,
+      "exit_code": 0,
+      "timed_out": false,
+      "unknown_option": false
+    },
+    {
+      "fixture": "extended.m3u",
+      "header": "EPG attribute",
+      "content_type": "audio/x-mpegurl",
+      "valid_m3u_found": true,
+      "first_channel_selected": true,
+      "exit_code": -15,
+      "timed_out": true,
+      "unknown_option": false
+    },
+    {
+      "fixture": "plain.m3u",
+      "header": "bare",
+      "content_type": "audio/x-mpegurl",
+      "valid_m3u_found": true,
+      "first_channel_selected": true,
+      "exit_code": -15,
+      "timed_out": true,
+      "unknown_option": false
+    }
+  ],
+  "mime_isolation_results": [
+    {
+      "fixture": "mime-audio.m3u8",
+      "header": "EPG attribute",
+      "content_type": "audio/x-mpegurl",
+      "valid_m3u_found": true,
+      "first_channel_selected": true,
+      "exit_code": -15,
+      "timed_out": true,
+      "unknown_option": false
+    },
+    {
+      "fixture": "mime-apple.m3u",
+      "header": "EPG attribute",
+      "content_type": "application/vnd.apple.mpegurl",
+      "valid_m3u_found": false,
+      "first_channel_selected": false,
+      "exit_code": 0,
+      "timed_out": false,
+      "unknown_option": false
+    }
+  ],
+  "fixed_export_imports": [
+    {
+      "file": "stable-hls.m3u",
+      "served_content_type": "audio/x-mpegurl",
+      "exported_entries": 4,
+      "vlc_imported_entries": 4,
+      "missing_channels": [],
+      "legacy_alias_identical": true,
+      "sha256": "119a80b44e0aaf05fca769fc09747d484b971509f76e69547dbca4baa64b7b55",
+      "validation": "Actual VLC RC playlist transcript, normalized only for CRLF and VLC artist/title display splitting.",
+      "transcript_path": "/tmp/parliament-vlc-import-stable-hls.m3u.txt"
+    },
+    {
+      "file": "validated-hls.m3u",
+      "served_content_type": "audio/x-mpegurl",
+      "exported_entries": 38,
+      "vlc_imported_entries": 38,
+      "missing_channels": [],
+      "legacy_alias_identical": true,
+      "sha256": "6a5be35499765b25f0fa2f5bd139b06dd810498ed014b7d3881c75f092c6c7a5",
+      "validation": "Actual VLC RC playlist transcript, normalized only for CRLF and VLC artist/title display splitting.",
+      "transcript_path": "/tmp/parliament-vlc-import-validated-hls.m3u.txt"
+    }
+  ],
+  "implementation": {
+    "preferred_files": [
+      "stable-hls.m3u",
+      "validated-hls.m3u"
+    ],
+    "legacy_files": [
+      "stable-hls.m3u8",
+      "validated-hls.m3u8"
+    ],
+    "aliases_byte_identical": true,
+    "web_copy_links": "Preferred .m3u files for all shared localized disclosures and README.",
+    "deployment": "Existing Pages workflow exports all files into the uploaded artifact; no workflow change needed."
+  },
+  "limitations": [
+    "Importing all entries is not validation that every source is currently on air or playable.",
+    "EPG IDs/filtering are unchanged; retained local schedules were used only as an export fixture, not fresh guide evidence.",
+    "VLC displays some Ontario/Quebec names using its normal Artist - Title split; count checks normalize that display and CRLF.",
+    "The existing .m3u8 URLs keep their old server MIME. Clients should use the .m3u URLs after deployment.",
+    "New filenames and public disclosure changes are local until committed and deployed."
+  ],
+  "public_host_crosscheck": {
+    "method": "HEAD only; no third-party playlist downloaded",
+    "url": "https://iptv-org.github.io/iptv/index.m3u",
+    "host": "GitHub Pages",
+    "status": 200,
+    "content_type": "audio/x-mpegurl",
+    "scope": "Confirms the hosting default for the preferred extension; our new live URLs still require a post-deployment check."
+  }
+}
