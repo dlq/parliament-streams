@@ -35,6 +35,9 @@ jobs:
       - name: Sync locked Python dependencies
         run: uv sync --locked --extra dev
 
+      - name: Check tracked research for embedded credentials
+        run: make research-secrets-check
+
       - name: Install site test dependencies
         run: npm ci
 

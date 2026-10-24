@@ -1,4 +1,4 @@
-.PHONY: verify test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate inventory-review validation-history validation-history-check site-data site-data-check institution-site-data institution-site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
+.PHONY: verify research-secrets-check test coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate inventory-review validation-history validation-history-check site-data site-data-check institution-site-data institution-site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --locked --extra dev
@@ -6,7 +6,10 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate validation-history-check site-data-check institution-site-data-check format-check lint type-check compile coverage accessibility-check
+verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate validation-history-check site-data-check institution-site-data-check format-check lint type-check compile coverage accessibility-check
+
+research-secrets-check:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/sanitize_research_evidence.py --check-tracked
 
 json-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python -m json.tool data/channels.json >/dev/null

@@ -22,6 +22,7 @@ from tools.check_legislature_inventory import (
     validate_baseline,
 )
 from tools.institution_inventory_sources import ipu_api_url
+from tools.sanitize_research_evidence import secret_matches
 
 TODAY = date(2026, 11, 1)
 CHECKED_AT = "2026-11-01T07:00:00+00:00"
@@ -656,6 +657,35 @@ class LegislatureInventoryReviewTests(unittest.TestCase):
         for value in invalid:
             with self.subTest(value=value), self.assertRaises(ValueError):
                 decision_ids(value)
+
+    def test_report_and_snapshot_redact_scraped_query_credentials(self) -> None:
+        source = source_fixture()
+        key = "AIza" + "A" * 35
+        body = (
+            "<main>Institution evidence "
+            f"<a href='https://maps.example.org/embed?key={key}&amp;q=Assembly'>Map</a>"
+            "</main>"
+        )
+        report, snapshot = report_for(source, fetched_fixture(source, body))
+        encoded = json.dumps([report, snapshot])
+        self.assertEqual(secret_matches(encoded), [])
+        self.assertNotIn(key, encoded)
+        self.assertIn("key=REDACTED", snapshot["sources"][source["id"]]["links"][0]["url"])
+        changed_key = body.replace(key, "AIza" + "B" * 35)
+        repeated, _ = report_for(source, fetched_fixture(source, changed_key), snapshot)
+        self.assertEqual(repeated["findings"], [])
+
+    def test_report_redacts_credentials_inside_fetch_errors(self) -> None:
+        source = source_fixture()
+        response = {
+            "source_id": source["id"],
+            "checked_at": CHECKED_AT,
+            "ok": False,
+            "error": "Failed https://maps.example.org/?key=" + "AIza" + "A" * 35,
+        }
+        report, snapshot = report_for(source, response)
+        self.assertEqual(secret_matches(json.dumps([report, snapshot])), [])
+        self.assertIn("key=REDACTED", report["checks"][0]["error"])
 
     def test_source_plan_deduplicates_references_and_never_reuses_dated_ipu_request(self) -> None:
         inventory = inventory_fixture()

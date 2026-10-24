@@ -32,6 +32,7 @@ from tools.institution_inventory_sources import (  # noqa: E402
     safe_public_url,
     source_fingerprint,
 )
+from tools.sanitize_research_evidence import sanitize_value  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "data/discovery/institutions.json"
@@ -163,6 +164,7 @@ def observation(
     body: bytes = fetched["body"]
     content_type = fetched.get("content_type", "")
     text = body.decode("utf-8", errors="replace")
+    clean_text: str = sanitize_value(text)
     row = {
         "source_id": source["id"],
         "url": source["url"],
@@ -172,7 +174,10 @@ def observation(
         "content_type": content_type,
         "etag": fetched.get("etag"),
         "last_modified": fetched.get("last_modified"),
-        "fingerprint": source_fingerprint(body, content_type),
+        "fingerprint": source_fingerprint(
+            clean_text if any(kind in content_type for kind in ("html", "json", "text/")) else body,
+            content_type,
+        ),
         "links": [],
         "chambers": [],
     }
@@ -211,17 +216,18 @@ def observation(
             r"verify you are human|checking your browser", visible, re.IGNORECASE
         ):
             raise ValueError("Access/challenge page; institutional content not confirmed")
-        row["links"] = extract_directory_links(text, fetched["final_url"])
+        row["links"] = extract_directory_links(clean_text, fetched["final_url"])
         if not visible.strip() and not row["links"]:
             raise ValueError("Empty JavaScript shell; institutional content not confirmed")
     elif "pdf" in content_type and not body.lstrip().startswith(b"%PDF-"):
         raise ValueError("PDF response lacks a PDF header; incomplete evidence")
     elif not ("pdf" in content_type or "json" in content_type or "text/" in content_type):
         raise ValueError("Unsupported evidence content type; baseline retained")
-    return row
+    return dict(sanitize_value(row))
 
 
 def finding(kind: str, title: str, source_id: str, **details: Any) -> dict[str, Any]:
+    details = sanitize_value(details)
     identity = {
         "kind": kind,
         "source_id": source_id,
@@ -821,7 +827,7 @@ def build_report(
             row for identifier, row in sorted(pending.items()) if identifier not in acknowledged
         ],
     }
-    return report, snapshot
+    return dict(sanitize_value(report)), dict(sanitize_value(snapshot))
 
 
 def markdown_text(value: Any, limit: int = 300) -> str:

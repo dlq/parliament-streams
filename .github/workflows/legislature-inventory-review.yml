@@ -36,6 +36,7 @@ jobs:
 
       - name: Validate reviewed institution inventory and review inputs
         run: |
+          uv run --locked python tools/sanitize_research_evidence.py --check-tracked
           uv run --locked python tools/validate_institution_inventory.py
           uv run --locked python tools/check_legislature_inventory.py --validate-inputs
 
@@ -79,6 +80,7 @@ jobs:
           echo "No retained successful baseline found; this run will establish one."
 
       - name: Collect inventory changes for human review
+        id: collect
         run: >-
           uv run --locked python tools/check_legislature_inventory.py
           --output-dir reports/automated/legislature-inventory
@@ -89,8 +91,15 @@ jobs:
           --max-bytes 2097152
           --budget-seconds 2400
 
+      - name: Check generated evidence before publication
+        id: evidence_safety
+        if: always() && (steps.collect.outcome == 'success' || steps.collect.outcome == 'failure') && hashFiles('reports/automated/legislature-inventory/report.json') != ''
+        run: >-
+          uv run --locked python tools/sanitize_research_evidence.py
+          --check reports/automated/legislature-inventory
+
       - name: Update maintained inventory review issue
-        if: always() && hashFiles('reports/automated/legislature-inventory/report.json') != '' && hashFiles('reports/automated/legislature-inventory/issue.md') != ''
+        if: always() && steps.evidence_safety.outcome == 'success' && hashFiles('reports/automated/legislature-inventory/report.json') != '' && hashFiles('reports/automated/legislature-inventory/issue.md') != ''
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -134,9 +143,14 @@ jobs:
 
       - name: Write inventory review summary
         if: always()
+        env:
+          EVIDENCE_SCAN_OUTCOME: ${{ steps.evidence_safety.outcome }}
         run: |
           summary=reports/automated/legislature-inventory/issue.md
-          if [[ -f "$summary" ]]; then
+          if [[ "$EVIDENCE_SCAN_OUTCOME" != "success" ]]; then
+            echo "::warning::Evidence publication withheld: no successful generated-evidence safety check."
+            printf '## Legislature inventory review\n\n**Evidence publication withheld.** The generated-evidence safety check did not pass or could not run. No report contents, issue update or artifact baseline were published. Inspect the job log for the failed step; scanner findings identify file names, lines and credential types without values.\n' >> "$GITHUB_STEP_SUMMARY"
+          elif [[ -f "$summary" ]]; then
             cat "$summary" >> "$GITHUB_STEP_SUMMARY"
             printf '\n\nThis summary shows at most 30 findings. Download the workflow artifact for the complete report, source observations and next comparison baseline.\n' >> "$GITHUB_STEP_SUMMARY"
           else
@@ -144,7 +158,7 @@ jobs:
           fi
 
       - name: Upload inventory review evidence and next baseline
-        if: always()
+        if: always() && steps.evidence_safety.outcome == 'success'
         uses: actions/upload-artifact@v7
         with:
           name: legislature-inventory-review-${{ github.run_id }}

@@ -336,6 +336,15 @@ Its live network check is deliberately separate from `make verify`.
 `make inventory-review-validate` checks source planning and the decision journal
 offline; it runs in `make verify`, CI and before the monthly collection.
 
+Research pages can contain third-party credentials in embedded URLs, including
+map-provider keys. Retained evidence redacts these values while preserving the
+public page URL and useful institutional references. `make research-secrets-check`
+scans tracked text offline and reports only credential types, file names and line
+numbers. It runs in `make verify`, CI and the monthly preflight. The monthly
+workflow also scans every generated report before publishing an issue, summary
+contents or artifact. A failed or unavailable scan withholds those outputs and
+the next comparison baseline, and records an explicit warning in the step summary.
+
 For a newly reviewed national chamber, record the explicit
 `external_ids.ipu_chamber_code` and `external_ids.ipu_country_code` so later checks
 can match it without rewriting a dated research report. Where verified, current

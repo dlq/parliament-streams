@@ -1,5 +1,14 @@
 # Changelog
 
+## 24 October — Redact Copied Research Credentials
+
+Redacted Google Maps API key values accidentally retained in third-party embed
+URLs in an older route-audit report. The official source-page references remain.
+New research evidence sanitizes credential-bearing URL parameters and recognized
+secret patterns before saving. CI scans tracked files, and monthly review reports
+must pass a credential scan before issue, summary or artifact publication.
+This cleanup does not rewrite existing Git history or revoke third-party keys.
+
 ## 24 October — Monthly Legislature Inventory Monitoring
 
 Added a monthly GitHub Actions review of the maintained legislature inventory,
