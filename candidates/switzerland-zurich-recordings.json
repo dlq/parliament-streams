@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official parliamentary archive, with selected recorded proceedings confirmed. 19 October2026 sitting173: chair Romaine Rogenmoser handling proceedings with youth-protection film/media repeal item6047 selected. Initial frames contain a crossfade and prior-item graphics; a later Chromium sample in the same speaker segment clearly shows the chair. 28 September2026 afternoon sitting172: chair Romaine Rogenmoser reading/speaking at the lit microphone on the accumulating shore-path fund item61b/2021. Do not attribute the initial October crossfade or prior graphics to an exact new-item vote. Later settled Chromium playback confirmed the chair; the later WebKit repeat did not advance, while the original selected-segment test did.",
+    "The current own parliamentary website explicitly designates this Recapp archive. Source-wide audiovisual redistribution permission has not been established; the provider legal/privacy link is not treated as a media licence. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+    "Evidence: reports/discovery/2026-10-24-three-further-swiss-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "switzerland-zurich-recordings",
+    "name": "Zurich Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Zurich",
+    "legislature": "Kantonsrat des Kantons Zürich",
+    "external_ids": {
+      "wikidata_qid": "Q2110002",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2110002",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific named parliament, Switzerland Q39 and matching canton jurisdiction claims reviewed against the current primary parliamentary name/designation. Wikidata revision 2549971659; claims are identifier evidence, not media/rights certification."
+      }
+    ],
+    "language": "German",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://zh.recapp.ch/shareparl/",
+    "provenance_note": "Official parliamentary archive, with selected recorded proceedings confirmed. 19 October2026 sitting173: chair Romaine Rogenmoser handling proceedings with youth-protection film/media repeal item6047 selected. Initial frames contain a crossfade and prior-item graphics; a later Chromium sample in the same speaker segment clearly shows the chair. 28 September2026 afternoon sitting172: chair Romaine Rogenmoser reading/speaking at the lit microphone on the accumulating shore-path fund item61b/2021. Do not attribute the initial October crossfade or prior graphics to an exact new-item vote. Later settled Chromium playback confirmed the chair; the later WebKit repeat did not advance, while the original selected-segment test did.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted video checks do not certify audible quality, all spoken languages, captions, signing or audio description. Unknown fields remain unknown; source-specific archive limitations are retained in provenance."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://zh.recapp.ch/shareparl/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The current own parliamentary website explicitly designates this Recapp archive. Source-wide audiovisual redistribution permission has not been established; the provider legal/privacy link is not treated as a media licence. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+      "evidence": [
+        "https://www.kantonsrat.zh.ch/",
+        "https://zh.recapp.ch/shareparl/"
+      ],
+      "recommendation": "Use the source-designated viewing service; independently confirm reuse, current live, full room inventory, audible tracks and accessibility."
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "sejong-1",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=pRsTZWyDxr8&t=5400s",
+      "video": true,
+      "offset": 5400,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:53:09.618Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 교안위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 5403.942623,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26496.661,
+        "frames": 526,
+        "tracks": []
+      },
+      "later": {
+        "time": 5406.147601,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26496.661,
+        "frames": 592,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_committee_business_confirmed",
+      "screenshot": "/tmp/continue-sejong-1-chromium.png",
+      "visual_review": "Education/Safety committee chair conducting business at5400seconds."
+    },
+    {
+      "key": "sejong-2",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=SyhazEqap4g&t=9000s",
+      "video": true,
+      "offset": 9000,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:53:22.850Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 도환위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 9003.957823,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 204,
+        "tracks": []
+      },
+      "later": {
+        "time": 9006.164055,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 269,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "recess_not_a_substantive_sample",
+      "screenshot": "/tmp/continue-sejong-2-chromium.png",
+      "visual_review": "Urban/Environment committee recess card at9000seconds; not substantive business."
+    },
+    {
+      "key": "sejong-1",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=pRsTZWyDxr8&t=5400s",
+      "video": true,
+      "offset": 5400,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:53:36.050Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 교안위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 5403.517924755,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26496.661,
+        "frames": 492,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 5405.729792005,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26496.661,
+        "frames": 552,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_committee_business_confirmed",
+      "screenshot": "/tmp/continue-sejong-1-webkit.png",
+      "visual_review": "Education/Safety committee chair conducting business at5400seconds."
+    },
+    {
+      "key": "sejong-2",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=SyhazEqap4g&t=9000s",
+      "video": true,
+      "offset": 9000,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:53:48.853Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 도환위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 9003.524090945,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 165,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 9005.73555432,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 225,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "recess_not_a_substantive_sample",
+      "screenshot": "/tmp/continue-sejong-2-webkit.png",
+      "visual_review": "Urban/Environment committee recess card at9000seconds; not substantive business."
+    }
+  ]
+}

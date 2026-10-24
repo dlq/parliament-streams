@@ -1,0 +1,197 @@
+{
+  "research_date": "2026-10-23",
+  "body_id": "poland--odzkie",
+  "catalogue_id": "poland-lodz-sejmik-recordings",
+  "decision": "publish_official_archive_link",
+  "confirmed": {
+    "authority_profile": "https://bip.lodzkie.pl/informacje-ogolne-3",
+    "exact_identity": {
+      "id": "Q8081138",
+      "lastrevid": 2555604310,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Łódź Regional Assembly"
+        },
+        "pl": {
+          "language": "pl",
+          "value": "Sejmik Województwa Łódzkiego"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Сеймик Лодзинского воеводства"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "80a5ad700a55e9e49060c3efd768ee2725435b4e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 675911,
+                  "id": "Q675911"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q8081138$60ad62eb-4477-0d63-5e2e-66fa2963741e",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q8081138$c968a787-4c40-28d6-682b-3dfe6ed41e7c",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "88bdf0debebfba0d0f20c85ee32a18fb3e6c71a6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 36,
+                  "id": "Q36"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q8081138$4b0a2002-44bf-cd43-1a97-247f9da3c537",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "15b68d620b359548dcc9054324e0174693cb50db",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 54158,
+                  "id": "Q54158"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q8081138$418127da-45d0-ebdf-c3df-402363af8aad",
+            "rank": "normal"
+          }
+        ],
+        "P856": null,
+        "P2397": null
+      }
+    },
+    "provider_designation": "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+    "recorded_samples": [
+      {
+        "key": "lodz-official-july",
+        "engine": "chromium",
+        "url": "https://www.youtube.com/watch?v=7cECiPc1GMU&t=1200s",
+        "time_seconds": 1203.9504,
+        "decision": "identified_substantive_proceedings",
+        "note": "2 July 2026, XXIX sitting: named member Beata Dróżdż speaks from a chamber microphone; burned-in Polish text and an interpreter are visible.",
+        "screenshot": "/tmp/continue-lodz-official-july-chromium.png"
+      },
+      {
+        "key": "lodz-official-july",
+        "engine": "webkit",
+        "url": "https://www.youtube.com/watch?v=7cECiPc1GMU&t=1200s",
+        "time_seconds": 1203.531878174,
+        "decision": "identified_substantive_proceedings",
+        "note": "2 July 2026, XXIX sitting: named member Beata Dróżdż speaks from a chamber microphone; burned-in Polish text and an interpreter are visible.",
+        "screenshot": "/tmp/continue-lodz-official-july-webkit.png"
+      },
+      {
+        "key": "lodz-june",
+        "engine": "chromium",
+        "url": "https://www.youtube.com/watch?v=hZEh_xGtHWA&t=2400s",
+        "time_seconds": 2403.95802,
+        "decision": "identified_substantive_proceedings",
+        "note": "16 June 2026, XXVIII sitting: regional-state report debate, presentation on volunteer fire brigade support, speaker at microphone and interpreter; Polish text burned into the picture.",
+        "screenshot": "/tmp/continue-lodz-june-chromium.png"
+      },
+      {
+        "key": "lodz-september-business",
+        "engine": "chromium",
+        "url": "https://www.youtube.com/watch?v=4Fb73zIz-c4&t=9000s",
+        "time_seconds": 9003.954219,
+        "decision": "identified_substantive_proceedings",
+        "note": "22 September 2026, XXXI sitting: debate on adoption of a regional assembly position, speaker at the podium, institutional date and interpreter. The 1200-second sample was a flag introduction; the 6000-second sample was explicitly a recess. Substantive business was observed at 9000 seconds.",
+        "screenshot": "/tmp/continue-lodz-september-business-chromium.png"
+      },
+      {
+        "key": "lodz-june",
+        "engine": "webkit",
+        "url": "https://www.youtube.com/watch?v=hZEh_xGtHWA&t=2400s",
+        "time_seconds": 2403.601827444,
+        "decision": "identified_substantive_proceedings",
+        "note": "16 June 2026, XXVIII sitting: regional-state report debate, presentation on volunteer fire brigade support, speaker at microphone and interpreter; Polish text burned into the picture.",
+        "screenshot": "/tmp/continue-lodz-june-webkit.png"
+      },
+      {
+        "key": "lodz-september-business",
+        "engine": "webkit",
+        "url": "https://www.youtube.com/watch?v=4Fb73zIz-c4&t=9000s",
+        "time_seconds": 9003.6116337,
+        "decision": "identified_substantive_proceedings",
+        "note": "22 September 2026, XXXI sitting: debate on adoption of a regional assembly position, speaker at the podium, institutional date and interpreter. The 1200-second sample was a flag introduction; the 6000-second sample was explicitly a recess. Substantive business was observed at 9000 seconds.",
+        "screenshot": "/tmp/continue-lodz-september-business-webkit.png"
+      }
+    ]
+  },
+  "source_conditions_review": {
+    "page": "https://bip.lodzkie.pl/ponowne-wykorzystywanie",
+    "pdf": "https://bip.lodzkie.pl/files/21-25.pdf",
+    "method": "20-page scanned PDF rendered with PDFKit and OCR using macOS Vision; relevant chapter 3 physical pages 8-9 visually inspected against OCR.",
+    "finding": "Official government bulletin viewing link. Reviewed the bulletin reuse page and its scanned Marshal Order 21/25 of 25 March 2025, especially chapter 3, physical PDF pages 8-9: it sets procedures for reuse requests/offers and possible preparation costs. No specific prior-linking consent condition was identified in the reviewed material; no independent audiovisual redistribution licence was established. Retain personal-use permission pending, link out to the bulletin, and exclude from direct playback/IPTV."
+  },
+  "unresolved": [
+    "current_live_not_observed",
+    "complete_committee_and_room_inventory_not_verified",
+    "all_spoken_tracks_not_audibly_verified",
+    "source_wide_captions_sign_variant_audio_description_unknown",
+    "independent_audiovisual_reuse_not_established"
+  ],
+  "all_metadata_and_streams_certified": false,
+  "earlier_sample_reconciliation": "Earlier fKEddcPTQSQ sample is a provider captioned version, separately retained; current publication evidence uses exact videos directly linked by official bulletin, not an assumed video/date equivalence.",
+  "flag": {
+    "source": "https://commons.wikimedia.org/wiki/File:POL_wojew%C3%B3dztwo_%C5%82%C3%B3dzkie_1_flag.svg",
+    "authors": "Bastianow; HapHaxion; Colohisto",
+    "license": "CC BY-SA 4.0; source also marks official Polish symbol public domain",
+    "modified": false
+  },
+  "map": {
+    "source": "Natural Earth Admin1 public domain",
+    "source_feature": "PL-LD",
+    "current_iso": "PL-10",
+    "jurisdiction": "Łódź Voivodeship"
+  }
+}

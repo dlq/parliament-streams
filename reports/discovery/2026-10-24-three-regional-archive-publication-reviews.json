@@ -1,0 +1,179 @@
+{
+  "research_date": "2026-10-24",
+  "decision": "publish_three_scoped_official_recording_links",
+  "records": [
+    {
+      "body_id": "spain--cortes-de-castilla-y-leon",
+      "catalogue_id": "spain-cortes-de-castilla-y-leon-recordings",
+      "institution": "Cortes de Castilla y León",
+      "region": "Castile and León",
+      "primary_reference": "https://www.ccyl.es/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UC8Y182dy_zQY27rE56l3rRw"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q3755695",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. PL11M, woman speaking at chamber lectern with assembly identity. Number is retained as session code, not converted into calendar date. PL10T, chair reading from dais microphone with assembly identity. Calendar date not shown in selected frame. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-spain-cortes-de-castilla-y-leon-1",
+          "url": "https://www.youtube.com/watch?v=mZZutlZZSNw&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "PL11M, woman speaking at chamber lectern with assembly identity. Number is retained as session code, not converted into calendar date.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-spain-cortes-de-castilla-y-leon-2",
+          "url": "https://www.youtube.com/watch?v=_WnZ6jmsmu4&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "PL10T, chair reading from dais microphone with assembly identity. Calendar date not shown in selected frame.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": {
+        "navigation_name": "Castile and León",
+        "source": "Natural Earth Admin1 public domain",
+        "source_features": [
+          "ES-AV",
+          "ES-BU",
+          "ES-LE",
+          "ES-P",
+          "ES-SA",
+          "ES-SG",
+          "ES-SO",
+          "ES-VA",
+          "ES-ZA"
+        ],
+        "operation": "Geometric union for navigation; not a cadastral boundary claim"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "spain--parlamento-de-canarias",
+      "catalogue_id": "spain-parlamento-de-canarias-recordings",
+      "institution": "Parlamento de Canarias",
+      "region": "Canary Islands",
+      "primary_reference": "https://www.parcan.es/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/c/ParcanEs/"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q4843653",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. DS137, woman speaking at parliament lectern; exact calendar date absent from captured frame. DS136 afternoon, separate split-screen member/chair exchange at parliament lectern. Session code retained without inventing date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-spain-parlamento-de-canarias-1",
+          "url": "https://www.youtube.com/watch?v=Zdyth9OSRR0&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "DS137, woman speaking at parliament lectern; exact calendar date absent from captured frame.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-spain-parlamento-de-canarias-2",
+          "url": "https://www.youtube.com/watch?v=pxjaq9md4K0&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "DS136 afternoon, separate split-screen member/chair exchange at parliament lectern. Session code retained without inventing date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "General reproduction permission with source attribution unless otherwise indicated; specifically restricted textual/multimedia material may require prior authorization overriding the general notice. Recording-specific applicability remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": {
+        "navigation_name": "Canary Islands",
+        "source": "Natural Earth Admin1 public domain",
+        "source_features": [
+          "ES-GC",
+          "ES-TF"
+        ],
+        "operation": "Geometric union for navigation; not a cadastral boundary claim"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "united-states--united-states-virgin-islands",
+      "catalogue_id": "us-virgin-islands-legislature-recordings",
+      "institution": "Legislature of the Virgin Islands",
+      "region": "United States Virgin Islands",
+      "primary_reference": "https://legvi.org/",
+      "primary_provider_designation": [
+        {
+          "text": "Follow",
+          "url": "https://www.youtube.com/channel/UCyXCXXn1yQlsBtckDFkalYA"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q6518465",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 22October2026 Rules/Judiciary, member at microphone under Bill36-0277 comprehensive probate-code caption and LegITTV logo; selected point is bill discussion, not nominee block from beginning of description. 20October2026 Budget/Appropriations/Finance, senator MarvinA.Blyden at handheld microphone under named vice-chair/36thLegislature caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-united-states-united-states-virgin-islands-1",
+          "url": "https://www.youtube.com/watch?v=tJ2782liUB4&t=22175s",
+          "offset": 22175,
+          "decision": "identified_committee_bill_business",
+          "observation": "22October2026 Rules/Judiciary, member at microphone under Bill36-0277 comprehensive probate-code caption and LegITTV logo; selected point is bill discussion, not nominee block from beginning of description.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-united-states-united-states-virgin-islands-2",
+          "url": "https://www.youtube.com/watch?v=VVvroSTqp7w&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_business",
+          "observation": "20October2026 Budget/Appropriations/Finance, senator MarvinA.Blyden at handheld microphone under named vice-chair/36thLegislature caption.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": {
+        "navigation_name": "United States Virgin Islands",
+        "source": "Natural Earth Admin1 public domain",
+        "source_features": [
+          "VI-X01~",
+          "VI-X03~",
+          "VI-X02~"
+        ],
+        "operation": "Geometric union for navigation; not a cadastral boundary claim"
+      },
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "not_claimed": [
+    "all_eligible_bodies_fully_validated",
+    "current_live_or_every_room",
+    "audible_track_or_accessibility_certification",
+    "independent_video_reuse_grant"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-23T21:16:54.228492+00:00",
+  "method": "Scoped primary identity, source-condition and browser playback review",
+  "results": [
+    {
+      "id": "poland-silesian-sejmik-recordings",
+      "status": "warning",
+      "note": "The Silesian regional-government bulletin publishes dated ordinary Sejmik session recordings. Sessions VII/30/2026 (21 September) and VII/31/2026 (19 October) were visually reviewed beyond the opening at 1200 seconds in WebKit, with advancing decoded 1920x1080 video, speakers at the chamber lectern and officials on the dais. Normal visible cookie acknowledgement and player controls were used. The official page uses native HLS: Chromium did not decode either selected recording in these checks, while WebKit played both after a normal resume following seek. Use the official viewing page; browser compatibility is source-dependent. Current live, every committee and all audio/language tracks remain unverified.",
+      "confirmed_scope": "exact_identity_and_two_webkit_recorded_sittings",
+      "unresolved": [
+        "chromium_playback_not_confirmed",
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_not_verified",
+        "all_spoken_tracks_not_audibly_verified",
+        "source_wide_captions_sign_variant_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established"
+      ]
+    }
+  ]
+}

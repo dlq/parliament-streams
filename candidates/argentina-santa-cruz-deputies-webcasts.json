@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Own legislature website explicitly designates the video provider. 14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+    "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added. The reviewed terms set general lawful-use and access/security conditions; they do not establish independent session-video reuse permission. No prior consent condition for an ordinary external link was identified in that reviewed page.",
+    "Evidence: reports/discovery/2026-10-23-argentina-eleven-publication-review.json"
+  ],
+  "channel": {
+    "id": "argentina-santa-cruz-deputies-webcasts",
+    "name": "Santa Cruz Deputies And Committee Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Santa Cruz, Argentina",
+    "legislature": "Cámara de Diputados de la Provincia de Santa Cruz",
+    "external_ids": {
+      "wikidata_qid": "Q5795778",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q5795778",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact institution Q5795778, revision2247312171, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://diputadosdesantacruz.gob.ar/",
+    "provenance_note": "Own legislature website explicitly designates the video provider. 14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://diputadosdesantacruz.gob.ar/",
+        "method": "GET",
+        "kind": "official_institution_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added. The reviewed terms set general lawful-use and access/security conditions; they do not establish independent session-video reuse permission. No prior consent condition for an ordinary external link was identified in that reviewed page.",
+      "evidence": [
+        "https://diputadosdesantacruz.gob.ar/",
+        "https://diputadosdesantacruz.gob.ar/?page_id=280"
+      ],
+      "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+    }
+  }
+}

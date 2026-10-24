@@ -1,0 +1,85 @@
+{
+  "method": "Exact indexed primary government document URLs, ordinary TLS, one bounded request per URL, no access bypass. A historical address or statutory reference is not an owned/current legislature website or viewing service.",
+  "results": [
+    {
+      "body_id": "philippines--ifugao",
+      "url": "https://ifugao.gov.ph/wp-content/uploads/2025/07/PROVINCIAL-STRUCTURE.pdf",
+      "scope": "Own province organizational chart",
+      "checked_at_utc": "2026-10-24T05:27:15.453065+00:00",
+      "owned_media_service_confirmed": false,
+      "outcome": "access_transport_or_document_hold",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "body_id": "philippines--basilan",
+      "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/2025NLEListOfCanvassers/BASILAN.pdf",
+      "scope": "2025 COMELEC canvassing venue address",
+      "checked_at_utc": "2026-10-24T05:27:17.542630+00:00",
+      "owned_media_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/2025NLEListOfCanvassers/BASILAN.pdf",
+      "advertised_length": "45788",
+      "pages": 1,
+      "sha256": "70a965b11773afa8a5ba6c7d38c7db45bf3ab245b75fbe0b2dacb50f8f098317",
+      "text_cache": "/tmp/remaining-reference-philippines--basilan.txt",
+      "outcome": "pdf_text_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--capiz",
+      "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/2025NLEListOfCanvassers/CAPIZ.pdf",
+      "scope": "2025 COMELEC canvassing venue address",
+      "checked_at_utc": "2026-10-24T05:27:19.534776+00:00",
+      "owned_media_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/2025NLEListOfCanvassers/CAPIZ.pdf",
+      "advertised_length": "58115",
+      "pages": 1,
+      "sha256": "b70fe1200af68ecd914254c0236dc662301160f487544f20c47a5a91e5c7e61d",
+      "text_cache": "/tmp/remaining-reference-philippines--capiz.txt",
+      "outcome": "pdf_text_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--abra",
+      "url": "https://beta2022.pasigcity.gov.ph/storage/city_resolution/2022/07/20/6333e3a3b59d71664344995Reso27-11.PDF",
+      "scope": "Government-hosted copy of2022 Abra provincial-board resolution",
+      "checked_at_utc": "2026-10-24T05:27:21.127670+00:00",
+      "owned_media_service_confirmed": false,
+      "outcome": "access_transport_or_document_hold",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'beta2022.pasigcity.gov.ph'. (_ssl.c:1010)>"
+    },
+    {
+      "body_id": "philippines--romblon",
+      "url": "https://rssomimaropa.psa.gov.ph/system/files/attachment-dir/PR%2020226%20-%20057%202nd%20Quarter%20RPSC%20meeting.pdf",
+      "scope": "2026 government statistics report with board session-hall address",
+      "checked_at_utc": "2026-10-24T05:27:23.265126+00:00",
+      "owned_media_service_confirmed": false,
+      "outcome": "access_transport_or_document_hold",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "body_id": "sri-lanka--north-central",
+      "url": "https://mpclg.gov.lk/web/images/divisions/Contact_Details_of_Provincial_Councils_compressed-compressed.pdf",
+      "scope": "Dated Ministry directory of provincial-council secretariats; not current members",
+      "checked_at_utc": "2026-10-24T05:27:23.922704+00:00",
+      "owned_media_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://mpclg.gov.lk/web/images/divisions/Contact_Details_of_Provincial_Councils_compressed-compressed.pdf",
+      "advertised_length": "303697",
+      "pages": 12,
+      "sha256": "e1fdcd0d0af4b55e5fba98ffb9869fe4dc0b3f7bbf2a8ca35ab9e6c58f1c5e64",
+      "text_cache": "/tmp/remaining-reference-sri-lanka--north-central.txt",
+      "outcome": "pdf_text_requires_individual_review"
+    },
+    {
+      "body_id": "panama--ngabe-bugle-comarca",
+      "url": "https://www.minsa.gob.pa/sites/default/files/publicacion-general/asis_ngabe_bugle_2024-final_2_1_2.pdf",
+      "scope": "Health ministry2024 territorial assessment describes Congress; not an owned service",
+      "checked_at_utc": "2026-10-24T05:27:27.282848+00:00",
+      "owned_media_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://www.minsa.gob.pa/sites/default/files/publicacion-general/asis_ngabe_bugle_2024-final_2_1_2.pdf",
+      "advertised_length": "49913887",
+      "outcome": "bounded_document_size_limit_not_reviewed"
+    }
+  ]
+}

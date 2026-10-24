@@ -1,0 +1,227 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "gyeongsangnam-1",
+      "body_id": "south-korea--gyeongsangnam",
+      "url": "https://www.youtube.com/watch?v=E3qkvVm8aOs&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:56:45.296Z",
+      "status": 200,
+      "title": "[🔴LIVE] 437th Extraordinary Session of the Gyeongsangnam-do Provincial Council, 2nd Plenary Meeti... - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.957562,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 6608.121,
+        "frames": 204,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.169772,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 6608.121,
+        "frames": 270,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_plenary_proceedings_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangnam-1-chromium.png",
+      "visual_review": "437th second plenary, member Lee Sang-joo delivering five-minute speech at lectern; interpreter inset."
+    },
+    {
+      "key": "gyeongsangnam-2",
+      "body_id": "south-korea--gyeongsangnam",
+      "url": "https://www.youtube.com/watch?v=2Kz_hIHNa-A&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:57:00.336Z",
+      "status": 200,
+      "title": "[🔴LIVE] 437th Extraordinary Session of the Gyeongsangnam-do Provincial Council, 1st Plenary Meeti... - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.919001,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 3866.561,
+        "frames": 524,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.129811,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 3866.561,
+        "frames": 590,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_plenary_proceedings_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangnam-2-chromium.png",
+      "visual_review": "437th first plenary, member approaching lectern during ordinary chamber proceedings; interpreter inset. Do not describe this particular captured moment as a member speaking."
+    },
+    {
+      "key": "seoul-operation-1",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=86981ceff73e4733ab4057d4cb8857f0afba8aacf2bd76ca31b81cafd232da83f647be764543a764&pos=244&code=C010&th=12&session=339&order=1",
+      "video": true,
+      "offset": 244,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:57:13.058Z",
+      "status": 200,
+      "title": "영상보기 팝업창",
+      "advertisement": false,
+      "first": {
+        "time": 247.949158,
+        "width": 960,
+        "height": 540,
+        "ready": 4,
+        "duration": 497.34733,
+        "frames": 239,
+        "tracks": []
+      },
+      "later": {
+        "time": 250.157624,
+        "width": 960,
+        "height": 540,
+        "ready": 4,
+        "duration": 497.34733,
+        "frames": 305,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_ordinance_committee_proceedings_confirmed_chromium",
+      "screenshot": "/tmp/continue-seoul-operation-1-chromium.png",
+      "visual_review": "Lee So-ra presenting the council basic ordinance amendment in the identified Operations Committee; speaker/transcript/agenda align."
+    },
+    {
+      "key": "gyeongsangnam-1",
+      "body_id": "south-korea--gyeongsangnam",
+      "url": "https://www.youtube.com/watch?v=E3qkvVm8aOs&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:57:30.369Z",
+      "status": 200,
+      "title": "[🔴LIVE] 437th Extraordinary Session of the Gyeongsangnam-do Provincial Council, 2nd Plenary Meeti... - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.596779443,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 6608.121,
+        "frames": 171,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.809802568,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 6608.121,
+        "frames": 231,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_plenary_proceedings_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangnam-1-webkit.png",
+      "visual_review": "437th second plenary, member Lee Sang-joo delivering five-minute speech at lectern; interpreter inset."
+    },
+    {
+      "key": "gyeongsangnam-2",
+      "body_id": "south-korea--gyeongsangnam",
+      "url": "https://www.youtube.com/watch?v=2Kz_hIHNa-A&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:57:43.259Z",
+      "status": 200,
+      "title": "[🔴LIVE] 437th Extraordinary Session of the Gyeongsangnam-do Provincial Council, 1st Plenary Meeti... - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.45814817,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 3866.561,
+        "frames": 477,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.664887128,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 3866.561,
+        "frames": 552,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_plenary_proceedings_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangnam-2-webkit.png",
+      "visual_review": "437th first plenary, member approaching lectern during ordinary chamber proceedings; interpreter inset. Do not describe this particular captured moment as a member speaking."
+    },
+    {
+      "key": "seoul-operation-1",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=86981ceff73e4733ab4057d4cb8857f0afba8aacf2bd76ca31b81cafd232da83f647be764543a764&pos=244&code=C010&th=12&session=339&order=1",
+      "video": true,
+      "offset": 244,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:57:55.476Z",
+      "error": "TimeoutError: page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://ms.smc.seoul.kr/cast/viewer/record.do?key=86981ceff73e4733ab4057d4cb8857f0afba8aacf2bd76ca31b81cafd232da83f647be764543a764&pos=244&code=C010&th=12&session=339&order=1\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "outcome": "inspection_error"
+    }
+  ]
+}

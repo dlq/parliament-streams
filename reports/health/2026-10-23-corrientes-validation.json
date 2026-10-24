@@ -1,0 +1,498 @@
+{
+  "checked_at": "2026-10-23T18:17:24.358242+00:00",
+  "method": "Exact primary institution-to-provider links, separately identified chambers, visually reviewed recordings beyond opening graphics, decoded time/frame progression in Chromium and WebKit. Historical Senate recordings do not establish current live coverage.",
+  "results": [
+    {
+      "id": "argentina-corrientes-deputies-webcasts",
+      "status": "ok",
+      "note": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+      "samples": [
+        {
+          "key": "eligible-corrientes-sep23",
+          "country": "Argentina",
+          "url": "https://www.youtube.com/watch?v=kZeKcl8u5wQ&t=1800s",
+          "status": 200,
+          "title": "16th Ordinary Session - YouTube",
+          "text": "CA\nSkip navigation\nSign in\n30:02 / 48:15\n16th Ordinary Session\nAuto-dubbed\nC. Diputados de Corrientes \n730 subscribers\nSubscribe\n4\n290 views  Streamed 1 mo ago\n📹 LIVE \nmore\n\nComments\n \n \n \n \n4:17:29\nNew\n60° Plenario del Parlamento del Norte Grande\nC. Diputados de Corrientes\n192\nStreamed 1 hr ago\n1:53:49\nNew\nLive Morning Press Conference. Thursday, October 22, 2026 | President Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n393k\nStreamed 1 day ago\n1:09:10\nTraining Cycle: Module 7 Historical Evolution of Correntine Constitutionalism\nC. Diputados de Corrientes\n265\nStreamed 1 mo ago\nAuto-dubbed\n1:27:22\nNew\nDiscussion | Experiences that Accompany and Transform Teaching Practice\nCONALEP\n4.2k\nStreamed 2 days ago\nAuto-dubbed\n3:58:34\nExcel for Finance and Accounting Full Course Tutorial (3+ Hours)\nLearn Skills Daily\n1.7m\n2 yr ago\n2:16:31\n11ma. SESION ORDINARIA 2025 - HCD TRENQUE LAUQUEN - 04/08/25\nHonorable Concejo Deliberante de Trenque Lauquen\n377\nStreamed 1 yr ago\n30:51\nNew\nThe Historical Kuyumcu Han has opened as the Center for Urban Studies\nT24\n4.8k\nStreamed 1 day ago\nAuto-dubbed\n20:02\nNew\nHow to Read AMLO. By Fabrizio Mejía Madrid\nSinEmbargo Al Aire\n37k\n11 hr ago\nAuto-dubbed\n1:15:05\nNew\nLoret en Latinus: 22 de octubre\nLatinus_us\n395k\nStreamed 13 hr ago\n1:02:47\nNew\nTomás Mosciatti's Commentary: The Fall of the AFPs\nBio Bio\n229k\n6 days ago\nAuto-dubbed\n50:09\nNew\nMarion Maréchal faces Dominique de Villepin: the full debate on BFM TV\nMarion Maréchal\n23k\n3 hr ago\nAuto-dubbed\n2:12:07\n13ra SESION ORDINARIA - HCD de Saladillo\nHcd Saladillo\n135\nStreamed 2 wk ago\n1:24:37\n15a. Sesión del Honorable Concejo Deliberante de Tres Arroyos\nHonorable Concejo Deliberante de Tres Arroyos\n285\nStreamed 2 wk ago\n1:22:08\n🏛️ SESIÓN ORDINARIA NRO 6 | PERÍODO 144\nSenadoSantaFe\n269\nStreamed 5 mo ago\n1:50:46\nNew\nyourVOTE Oakville Mayoral Debate 2026\nYourTV Halton\n520\n2 days ago\n30:05\nNew\n🔴LIVE! NBTC press conference regarding the recurring collapse of board meetings\nเรื่องเล่าเช้านี้\n13k\nStreamed 1 day ago\nAuto-dubbed\n1:06:53\nNew\nVitaly Portnikov: How Ukraine can defeat the \"Russian World\" and find its place in the world\nМедіа-хаб ТВОЄ МІСТО\n186k\n6 days ago\nAuto-dubbed\n57:02\nXXXVII Jornadas Argentinas de Taquigrafía Parlamentaria\nC. Diputados de Corrientes\n205\nStreamed 1 mo ago\n3:14:08\nSesión Ordinaria nº 018/2025\nConcejo Deliberante de Neuquén\n219\nStreamed 1 yr ago\n2:06:16\n13° SESION ORDINARIA 2026 - HCD TRENQUE LAUQUEN\nHonorable Concejo Deliberante de Trenque Lauquen\n135\nStreamed 9 days ago",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.497341,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 2895.121,
+              "frames": 109,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.730197,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 2895.121,
+              "frames": 176,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "eligible-corrientes-oct14",
+          "country": "Argentina",
+          "url": "https://www.youtube.com/watch?v=yqp13Se4dvA&t=1800s",
+          "status": 200,
+          "title": "17ª Sesión Ordinaria - YouTube",
+          "text": "CA\nSkip navigation\nSign in\n30:02 / 2:24:10\nIn this video\n17ª Sesión Ordinaria\nC. Diputados de Corrientes \n730 subscribers\nSubscribe\n5\n432 views  Streamed 9 days ago\n📹 EN VIVO \nmore\n\nComments\n \n \n \n \n4:17:29\nNew\n60° Plenario del Parlamento del Norte Grande\nC. Diputados de Corrientes\n192\nStreamed 1 hr ago\n30:53\nNew\n'He's That Guy' Watch Barack Obama Rip Trump Apart With Just Three Words | US Midterms 2026 | N18G\nCNN-News18\n732k\n2 days ago\n1:09:10\nTraining Cycle: Module 7 Historical Evolution of Correntine Constitutionalism\nC. Diputados de Corrientes\n265\nStreamed 1 mo ago\nAuto-dubbed\n57:02\nXXXVII Jornadas Argentinas de Taquigrafía Parlamentaria\nC. Diputados de Corrientes\n205\nStreamed 1 mo ago\n6:36\nINTERVENCION DIPUTADA AMALIA GRANATA - SESIÓN ORDINARIA Nº17 -PERIODO ORDINARIO 144º- 15/10/26\nIntervenciones de Diputadas y Diputados de Santa Fe\n202\n7 days ago\n7:53\nNew\nTrump Nixes Hegseth's Livestream Execution & JD Vance Unleashes New Laugh | The Daily Show\nThe Daily Show\nand Ronny Chieng\n2.2m\n1 day ago\nLIVE\n🔴 DIRECTO | Ceremonia de entrega de los Premios Princesa de Asturias 2026 (23/10/2026)\nCadena SER\n129 watching\n2:29:55\nNew\nCity Commission - Oct 21 2026\nDaytona Beach TV\n514\nStreamed 1 day ago\n1:24:37\n15a. Sesión del Honorable Concejo Deliberante de Tres Arroyos\nHonorable Concejo Deliberante de Tres Arroyos\n284\nStreamed 2 wk ago\n2:05:45\n14ª Sesión Ordinaria\nC. Diputados de Corrientes\n486\nStreamed 1 mo ago\n57:45\nNew\nAl Pan Pan: quiebre de pacto en el Senado abre nuevo frente entre oficialismo y oposición\nEl Mostrador\n2.5k\nStreamed 1 day ago\n47:58\nNew\nCaso Luisa González, crisis carcelaria y resultados de los operativos | John Reimberg\nRadio Centro 101.3 FM\n6.1k\n3 hr ago\n16:08\nNew\nTrump's Brain Glitches at SC Rally, Vance & Ramaswamy Spark Fury Over \"Disgusting\" Ad: A Closer Look\nLate Night with Seth Meyers\n1.4m\n16 hr ago\n24:29\nNew\nAt Issue | Can Alberta Premier Danielle Smith control UCP separatists?\nCBC News: The National\n123k\n17 hr ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n78k\n8 hr ago\n57:52\nNew\nMichigan U.S. Senate Final Debate: Mike Rogers vs Abdul El-Sayed\nWXYZ-TV Detroit | Channel 7\n794k\n1 day ago\n29:21\nNew\nLet those who have to fall, fall! With evidence… not with narratives.\nPrimera Plana ECU\n1.6k\n2 hr ago\nAuto-dubbed\n1:56:50\nNew\n8th Ordinary Public Session - 111th Period - October 22, 2026\nHonorable Concejo Deliberante del Partido de General Pueyrredon\n315\nStreamed 1 day ago\n5:39\nINTERV",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.556054,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8650.041,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.791152,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8650.041,
+              "frames": 178,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "argentina-corrientes-senate-recordings",
+      "status": "ok",
+      "note": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+      "samples": [
+        {
+          "key": "corrientes-senate-second",
+          "country": "Argentina",
+          "url": "https://www.youtube.com/watch?v=kjnjzDJPigk&t=1800s",
+          "status": 200,
+          "title": "2° Sesion Ordinaria de Senadores de la Provincia de Corrientes - YouTube",
+          "text": "CA\nSkip navigation\nSign in\n30:02 / 2:04:25\nDr. Jose Omar Caseré\n2° Sesion Ordinaria de Senadores de la Provincia de Corrientes\nSenado Corrientes \n748 subscribers\nSubscribe\n3\n706 views  Streamed 2 yr ago\nCapítulos:\n00:00 Cuorum\n02:22 Audiencia Publica …\nmore\n\nComments\n \n \n \n \n4:07:15\nNew\n60° Plenario del Parlamento del Norte Grande\nSenado Corrientes\n195\nStreamed 1 hr ago\n1:12:42\n13th Ordinary Session 2026 Period\nSenado Corrientes\n252\n8 days ago\nAuto-dubbed\n57:45\nNew\nAl Pan Pan: quiebre de pacto en el Senado abre nuevo frente entre oficialismo y oposición\nEl Mostrador\n2.5k\nStreamed 1 day ago\n2:32:42\nNew\nCONTRALÍNEA EN VIVO | Presidencia del INE no tiene favoritismo por algunas empresas: Taddei #news\nContralínea\n16k\nStreamed 23 hr ago\n16:08\nNew\nTrump's Brain Glitches at SC Rally, Vance & Ramaswamy Spark Fury Over \"Disgusting\" Ad: A Closer Look\nLate Night with Seth Meyers\n1.4m\n17 hr ago\n1:37:25\nReading Comprehension: Cognitive Processes and Current Challenges - 1/16\nSomos Futuro\n15k\nStreamed 7 days ago\nAuto-dubbed\n1:33:51\n12th Ordinary Session 2026 Period\nSenado Corrientes\n245\n3 wk ago\nAuto-dubbed\n23:58\nNew\nAsí Escapó el Juez Renán Andrade Minutos Antes del Allanamiento\nDESPACHO 593\n42k\n2 days ago\n1:24:49\nTribute to Correntino Veterans in the Malvinas\nSenado Corrientes\n312\n8 days ago\n1:00:40\n#EnVivoAhora | Masiosare: Reforma por la jornada de 40 horas (12/02/2026)\nCanal22\n10k\nStreamed 8 mo ago\n1:50:00\nNew\nConferencia de prensa matutina en vivo. Viernes 23 de octubre 2026 | Presidenta Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n260k\nStreamed 2 hr ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n81k\n8 hr ago\n11:21\nJack Smith Teaches Another Republican Real US Law In 30 Seconds At Hearing: 'I'm Disgusted…'| Trump\nProject America | News\n2.4m\n12 days ago\n1:53:49\nNew\nLive Morning Press Conference. Thursday, October 22, 2026 | President Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n393k\nStreamed 1 day ago\n3:17:11\nNew\n#EnVivo ¬ #LosPeriodistas ¬ Los 6 meses que llevaron a Maru de la cumbre al precipicio\nSinEmbargo Al Aire\n248k\nStreamed 15 hr ago\n1:03:39\nNew\nWhy Amanpour Just QUIT CNN, CBS Reporter’s DELETED El-Sayed Tweet,  Alex Gibney on ‘Musk’\nStatus\n62k\n6 hr ago\n19:40\nNew\nMark Carney on Musk's Starlink, Ukraine War, NATO, Erdogan and Türkiye's Defence Deal | AC1G\nDRM News\n76k\n9 hr ago\n58:48\n#LiveNow | Masiosare: The '68 Movement and Democracy (10/02/2026)\nCanal22\n24k\nStreamed 2 wk ago\nAuto-dubbed\n12:15\nNew\nTrump Is",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.606097,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 7465.021,
+              "frames": 113,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.853544,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 7465.021,
+              "frames": 180,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "corrientes-senate-sixteenth",
+          "country": "Argentina",
+          "url": "https://www.youtube.com/watch?v=Pb9-dySgIyo&t=1800s",
+          "status": 200,
+          "title": "16° Sesión Ordinaria de la Honorable Cámara de Senadores de la Provincia de Corrientes. - YouTube",
+          "text": "CA\nSkip navigation\nSign in\n30:02 / 1:53:05\n16° Sesión Ordinaria de la Honorable Cámara de Senadores de la Provincia de Corrientes.\nSenado Corrientes \n748 subscribers\nSubscribe\n4\n260 views  Streamed 2 yr ago\nPresupuesto de general de gastos y calculo de recursos de la administración publica provincial \nmore\n\nComments\n \n \n \n \n4:07:15\nNew\n60° Plenario del Parlamento del Norte Grande\nSenado Corrientes\n203\nStreamed 1 hr ago\n1:12:42\n13th Ordinary Session 2026 Period\nSenado Corrientes\n252\n8 days ago\nAuto-dubbed\n3:57:48\nNew\n50 ECUACIONES LOGARÍTMICAS DESDE CERO\nMatemáticas con Juan\n23k\nStreamed 2 days ago\n9:05:45\nNew\n14° Sesión Ordinaria | 53° Periodo Legislativo\nLegislatura de Santa Cruz\n2.6k\nStreamed 19 hr ago\n2:32:42\nNew\nCONTRALÍNEA EN VIVO | Presidencia del INE no tiene favoritismo por algunas empresas: Taddei #news\nContralínea\n16k\nStreamed 23 hr ago\n1:33:51\n12th Ordinary Session 2026 Period\nSenado Corrientes\n245\n3 wk ago\nAuto-dubbed\n1:50:00\nNew\nConferencia de prensa matutina en vivo. Viernes 23 de octubre 2026 | Presidenta Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n260k\nStreamed 2 hr ago\n2:14:54\nNew\nAssermentation du Conseil des ministres\nPaul St-Pierre Plamondon\nand Parti Québécois\n4.7k\n1 day ago\n48:40\nNew\nInternal War at La Moneda | NO CRYING\nThe Clinic\n26k\n1 day ago\nAuto-dubbed\n58:48\n#LiveNow | Masiosare: The '68 Movement and Democracy (10/02/2026)\nCanal22\n24k\nStreamed 2 wk ago\nAuto-dubbed\n1:49:46\nNew\nMañanera del Pueblo. 23/Octubre/2026\nCanal Catorce\n5.4k\nStreamed 2 hr ago\n2:02:10\nConferencia de prensa matutina. Jueves 06 de agosto 2026 | Presidenta Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n394k\nStreamed 2 mo ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n82k\n8 hr ago\n1:24:49\nTribute to Correntino Veterans in the Malvinas\nSenado Corrientes\n312\n8 days ago\n30:53\nNew\n'He's That Guy' Watch Barack Obama Rip Trump Apart With Just Three Words | US Midterms 2026 | N18G\nCNN-News18\n736k\n2 days ago\n47:13\nHonesty and Results in Querétaro\nClaudia Sheinbaum Pardo\n93k\nStreamed 1 mo ago\nAuto-dubbed\n17:20\nNew\nMarco Kremerman explains the losses in Fund E: what happened and who is responsible?\nRadio Universidad de Chile\n21k\n2 days ago\nAuto-dubbed\n55:51\nNew\n🔵 Duhaime presents his conservative caucus at the National Assembly\nActualité Politique Du Québec\n1.9k\n19 hr ago\nAuto-dubbed\n59:33\nNew\nAfD co-leader Alice Weidel on Ukraine, migration and Germany’s future | The Economist\nThe Economist\n733k\n2 days ago\n1:15:05\nNew\n",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.561015,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 6785.033333333334,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.810248,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 6785.021,
+              "frames": 179,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "senate_webkit_samples": [
+    {
+      "key": "corrientes-senate-second",
+      "country": "Argentina",
+      "url": "https://www.youtube.com/watch?v=kjnjzDJPigk&t=1800s",
+      "status": 200,
+      "title": "2° Sesion Ordinaria de Senadores de la Provincia de Corrientes - YouTube",
+      "text": " CA\nSkip navigation\nSign in\n\n30:02 / 2:04:25\nDr. Jose Omar Caseré\n2° Sesion Ordinaria de Senadores de la Provincia de Corrientes\nSenado Corrientes \n748 subscribers\nSubscribe\n3\nShare\nSave\n706 views  Streamed 2 years ago\nCapítulos:\n00:00 Cuorum\n02:22 Audiencia Publica …\n...more\nComments\n    \n4:07:15\nNew\n60° Plenario del Parlamento del Norte Grande\nSenado Corrientes\n203\nStreamed 1h ago\n\n58:59\n#LiveNow | Masiosare: Start of the Independence (09/12/2025)\nCanal22\n7.1K\nStreamed 1y ago\nAuto-dubbed\n\n57:45\nNew\nAl Pan Pan: quiebre de pacto en el Senado abre nuevo frente entre oficialismo y oposición\nEl Mostrador\n2.5K\nStreamed 1d ago\n\n1:50:00\nNew\nConferencia de prensa matutina en vivo. Viernes 23 de octubre 2026 | Presidenta Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n260K\nStreamed 2h ago\n\n2:33:13\nJuicio por la causa Cuadernos\nInfobae\n7.3K\nStreamed 5mo ago\n\n1:38:36\nReunión de la ⁠Comisión de Régimen Municipal, recibe a áreas metropolitanas y foros de intendentes\nConvención Reformadora Santa Fe\n613\nStreamed 1y ago\n1:31:38\nNew\nSituación actual de Afinia\nEPM estamos ahí\n1.1K\nStreamed 4h ago\n58:48\n#LiveNow | Masiosare: The '68 Movement and Democracy (10/02/2026)\nCanal22\n24K\nStreamed 2w ago\nAuto-dubbed\n1:12:42\n13th Ordinary Session 2026 Period\nSenado Corrientes\n252\n8d ago\nAuto-dubbed\n59:10\nNew\n#LiveNow | Masiosare: U.S. was training drone use in Chihuahua (10/21/2026)\nCanal22\n10K\nStreamed 1d ago\n49:20\n🚨MEGACAUSA POR CORRUPCIÓN: LEYERON NUEVAS ACUSACIONES CONTRA CRISTINA KIRCHNER\nA24com\n193K\n11mo ago\n1:49:29\nMorning press conference live. Wednesday, September 02, 2026 | President Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n541K\nStreamed 1mo ago\nAuto-dubbed\n3:17:51\nNew\n🔴En Vivo | Sesión Extraordinaria N°72 del Concejo Municipal de Limón del 22/10/2026\nMunicipalidad de Limón\n649\nStreamed 16h ago\n1:41:30\nNew\nConferencia mañanera de Claudia Sheinbaum hoy viernes 23 de octubre de 2026\nNMás\n7.9K\nStreamed 2h ago\n34:21\nNew\nFernando Pereira contradice a Orsi y reclama que Mónica Ferrero dé un paso al costado\nEn Perspectiva + VIDEO\n3.1K\n23h ago\n3:37:40\nEN VIVO | Sesión en el senado 16/07/26\nPerfil\n23K\nStreamed 3mo ago\n26:35\nNew\nBRODA ALERTA SOBRE EL AJUSTE: \"EL COSTO DE LA TRANSICIÓN ES DESESPERANTE\" | Maxi Montenegro\nAHORA PLAY\n35K\n21h ago\n54:56\nNew\nVerónica Alcocer came off worse after the interview: Jorge Vélez questions #Opinion\nNos Cogió La Noche Noticias\n274K\nStreamed 3d ago\nAuto-dubbed\n1:24:37\n15a. Sesión del Honorable Concejo Deliberante de Tres Arroyos\nHonorable Concejo Delibe",
+      "first": [
+        {
+          "tag": "VIDEO",
+          "time": 1803.309885749,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 7465.021,
+          "frames": 95,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "later": [
+        {
+          "tag": "VIDEO",
+          "time": 1805.563347124,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 7465.021,
+          "frames": 165,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "key": "corrientes-senate-sixteenth",
+      "country": "Argentina",
+      "url": "https://www.youtube.com/watch?v=Pb9-dySgIyo&t=1800s",
+      "status": 200,
+      "title": "16° Sesión Ordinaria de la Honorable Cámara de Senadores de la Provincia de Corrientes. - YouTube",
+      "text": " CA\nSkip navigation\nSign in\n\n30:02 / 1:53:05\n16° Sesión Ordinaria de la Honorable Cámara de Senadores de la Provincia de Corrientes.\nSenado Corrientes \n748 subscribers\nSubscribe\n4\nShare\nSave\n260 views  Streamed 2 years ago\nPresupuesto de general de gastos y calculo de recursos de la administración publica provincial \n...more\nComments\n    \n4:07:15\nNew\n60° Plenario del Parlamento del Norte Grande\nSenado Corrientes\n203\nStreamed 1h ago\n\n1:32:58\n\"Rock Nacional, Una Noche Diferente en la Legislatura\" COMPLETO\nSenado Corrientes\n243\n3w ago\n\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n82K\n8h ago\n\n2:06:16\n13° SESION ORDINARIA 2026 - HCD TRENQUE LAUQUEN\nHonorable Concejo Deliberante de Trenque Lauquen\n135\nStreamed 9d ago\n\n57:52\nNew\nMichigan U.S. Senate Final Debate: Mike Rogers vs Abdul El-Sayed\nWXYZ-TV Detroit | Channel 7\n800K\n1d ago\n\n1:24:49\nTribute to Correntino Veterans in the Malvinas\nSenado Corrientes\n312\n8d ago\n1:06:31\nAprende a leer a la gente en 3 minutos | Bárbara Tijerina, experta en comunicación no verbal\nAprendemos juntos Mex\n4.8M\n1y ago\n12:10\nWhy one of the US's reddest counties is losing faith in Trump | Anywhere but Washington\nThe Guardian\n2.3M\n8d ago\n1:39:24\nNew\n#112 - ¿VIDA DESPUÉS DE LA MUERTE? Las ECM y la Dra. Luján en Roca Project\nROCA PROJECT\n864K\n2d ago\nLIVE\nHappy October Morning Jazz 🍂Cozy Autumn Coffee Shop Ambience & Jazz Relaxing Music for Stress Relief\nSweet Jazz Cafe\n275 watching\n1:00:40\n#EnVivoAhora | Masiosare: Reforma por la jornada de 40 horas (12/02/2026)\nCanal22\n10K\nStreamed 8mo ago\n30:53\nNew\n'He's That Guy' Watch Barack Obama Rip Trump Apart With Just Three Words | US Midterms 2026 | N18G\nCNN-News18\n736K\n2d ago\n2:32:42\nNew\nCONTRALÍNEA EN VIVO | Presidencia del INE no tiene favoritismo por algunas empresas: Taddei #news\nContralínea\n16K\nStreamed 23h ago\n24:29\nNew\nAt Issue | Can Alberta Premier Danielle Smith control UCP separatists?\nCBC News: The National\n125K\n17h ago\n57:14\nNew\nPolitics Chat, October 22, 2026\nHeather Cox Richardson\n441K\nStreamed 19h ago\n54:11\nNew\nGood Talk -- Playing Hardball and Pointing Fingers.\nThe Bridge with Peter Mansbridge\n4.9K\n1h ago\n1:43:04\nNew\n#EncuentroTV: Leonel Herrera, periodista, Francisco Valencia, director del Diario Co Latino\nEncuentro con Julio Villagrán\n6.7K\nStreamed 2d ago\n2:12:07\n13ra SESION ORDINARIA - HCD de Saladillo\nHcd Saladillo\n136\nStreamed 2w ago\nLIVE\nPeaceful October Morning Jazz for a Good Day 🍂  Autumn Porch Ambience with Rel",
+      "first": [
+        {
+          "tag": "VIDEO",
+          "time": 1803.293095875,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 6785.033333333334,
+          "frames": 105,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "later": [
+        {
+          "tag": "VIDEO",
+          "time": 1805.546648334,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 6785.033333333334,
+          "frames": 172,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "deputies_webkit_samples": [
+    {
+      "key": "eligible-corrientes-oct14",
+      "country": "Argentina",
+      "url": "https://www.youtube.com/watch?v=yqp13Se4dvA&t=1800s",
+      "status": 200,
+      "title": "17ª Sesión Ordinaria - YouTube",
+      "text": " CA\nSkip navigation\nSign in\n\n30:02 / 2:24:10\nIn this video\n17ª Sesión Ordinaria\nC. Diputados de Corrientes \n730 subscribers\nSubscribe\n5\n432 views  Streamed 9d ago\n📹 EN VIVO \nmore\nComments\n    \nLIVE\n🔴 DIRECTO | Ceremonia de entrega de los Premios Princesa de Asturias 2026 (23/10/2026)\nCadena SER\n125 watching\n\n4:17:29\nNew\n60° Plenario del Parlamento del Norte Grande\nC. Diputados de Corrientes\n192\nStreamed 1h ago\n\n9:05:45\nNew\n14° Sesión Ordinaria | 53° Periodo Legislativo\nLegislatura de Santa Cruz\n2.6K\nStreamed 19h ago\n\n59:01\nNew\nFULL | 2026 Wisconsin Gubernatorial Debate\nWISN 12 News\n55K\n1d ago\n\n2:05:45\n14ª Sesión Ordinaria\nC. Diputados de Corrientes\n486\nStreamed 1mo ago\n\n1:22:33\n15th Ordinary Session\nC. Diputados de Corrientes\n305\nStreamed 1mo ago\nAuto-dubbed\n1:41:30\nNew\nConferencia mañanera de Claudia Sheinbaum hoy viernes 23 de octubre de 2026\nNMás\n7.4K\nStreamed 2h ago\n5:38\nNew\nThis Week in Washington: Ramaswamy slammed for controversial attack ad\nGlobal News\n781\n1h ago\n1:17:54\n13th Ordinary Session\nC. Diputados de Corrientes\n233\nStreamed 2mo ago\nAuto-dubbed\nLIVE\nHappy October Morning Jazz 🍂Cozy Autumn Coffee Shop Ambience & Jazz Relaxing Music for Stress Relief\nSweet Jazz Cafe\n289 watching\n1:50:00\nNew\nConferencia de prensa matutina en vivo. Viernes 23 de octubre 2026 | Presidenta Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n250K\nStreamed 2h ago\n1:09:10\nTraining Cycle: Module 7 Historical Evolution of Correntine Constitutionalism\nC. Diputados de Corrientes\n265\nStreamed 1mo ago\nAuto-dubbed\n46:14\nNew\nDiesel dilemma and Crime Stoppers data breach| CTV News at 5 for Thursday, Oct. 22, 2026\nCTV News\n10K\n17h ago\n25:00\nNew\nQuestions after Elections Alberta misses deadline | CTV News Edmonton at 11:30 for Oct. 22, 2026\nCTV News\n277\n1h ago\n23:09\nNew\nBallot counting continues after Alta. referendum | CTV News Calgary at 11:30 for Oct. 22, 2026\nCTV News\n2.2K\n7h ago\n25:00\nNew\nTip lines halted and diesel costs soar | CTV News Kitchener at 11:30 for Oct. 22, 2026\nCTV News\n1.5K\n3h ago\n1:24\nNew\nOttawa shifts tone as prospects for a snap trade deal with the U.S. emerge\nCTV News\n72K\n14h ago\n5:20\nNew\nMississauga ‘needs an experienced hand’ | Crombie on mayoral race\nCP24\n340\n5h ago\n    ",
+      "first": [
+        {
+          "tag": "VIDEO",
+          "time": 1802.861045667,
+          "width": 854,
+          "height": 480,
+          "ready": 4,
+          "duration": 8650.041,
+          "frames": 87,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "later": [
+        {
+          "tag": "VIDEO",
+          "time": 1805.115654209,
+          "width": 854,
+          "height": 480,
+          "ready": 4,
+          "duration": 8650.041,
+          "frames": 156,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "key": "eligible-corrientes-sep23",
+      "country": "Argentina",
+      "url": "https://www.youtube.com/watch?v=kZeKcl8u5wQ&t=1800s",
+      "status": 200,
+      "title": "16th Ordinary Session - YouTube",
+      "text": " CA\nSkip navigation\nSign in\n\n30:02 / 48:15\n16th Ordinary Session\nAuto-dubbed\nC. Diputados de Corrientes \n730 subscribers\nSubscribe\n4\n290 views  Streamed 1mo ago\n📹 LIVE \nmore\nComments\n    \n4:17:29\nNew\n60° Plenario del Parlamento del Norte Grande\nC. Diputados de Corrientes\n192\nStreamed 1h ago\n\n2:24:10\n17ª Sesión Ordinaria\nC. Diputados de Corrientes\n432\nStreamed 9d ago\n\n57:02\nXXXVII Jornadas Argentinas de Taquigrafía Parlamentaria\nC. Diputados de Corrientes\n205\nStreamed 1mo ago\n\n2:05:45\n14ª Sesión Ordinaria\nC. Diputados de Corrientes\n485\nStreamed 1mo ago\n\n58:05\n7th Ordinary Session 2026 Period\nSenado Corrientes\n124\n4mo ago\nAuto-dubbed\n\n2:16:31\n11ma. SESION ORDINARIA 2025 - HCD TRENQUE LAUQUEN - 04/08/25\nHonorable Concejo Deliberante de Trenque Lauquen\n377\nStreamed 1y ago\n1:12:35\nTrump, Revolutionary or Insignificant? Analysis by Rafael Jacob | Off the Record with Patrice Roy\nRadio-Canada Info\n491K\n12d ago\n1:50:53\nAcademic Conference \"PHILOSOPHY OF HEALTH\"\nC. Diputados de Corrientes\n107\nStreamed 1mo ago\nAuto-dubbed\n34:00\nNew\nWatch the full first head-to-head confrontation between Lula and Flávio Bolsonaro at the Band Debate\nRádio BandNews FM\n2.6M\n4d ago\nAuto-dubbed\n4:13\nNew\nThe Northern Parliament convened its Executive Board and Committees\nC. Diputados de Corrientes\n44\n19h ago\n2:51:51\nSEXTA SESIÓN EXTRAORDINARIA  29/12/2025\nHCD General La Madrid\n698\nStreamed 9mo ago\n2:16:11\nSesión Ordinaria N18 | 05AGO2026\nConcejo Municipal Villa Constitución\n30\n2mo ago\n1:44:43\nMiércoles 11 de Mayo de 2022\nC. Diputados de Corrientes\n20\nStreamed 4y ago\n3:14:08\nSesión Ordinaria nº 018/2025\nConcejo Deliberante de Neuquén\n219\nStreamed 1y ago\n30:53\nNew\n'He's That Guy' Watch Barack Obama Rip Trump Apart With Just Three Words | US Midterms 2026 | N18G\nCNN-News18\n732K\n2d ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n78K\n8h ago\n1:05:55\n25/03/2026 Sesión Ordinaria\nHonorable Concejo Deliberante de Quilmes\n234\nStreamed 6mo ago\n1:02:47\nNew\nTomás Mosciatti's Commentary: The Fall of the AFPs\nBio Bio\n229K\n6d ago\nAuto-dubbed\n1:17:54\n13th Ordinary Session\nC. Diputados de Corrientes\n233\nStreamed 2mo ago\nAuto-dubbed\n8:51\nNew\nCarney Drops A Warning Trump Won’t Like: Canada Can Wait Until He’s Gone | Trade War | Global News\nThe Financial Express\n44K\n5h ago\n    ",
+      "first": [
+        {
+          "tag": "VIDEO",
+          "time": 1803.333945413,
+          "width": 854,
+          "height": 480,
+          "ready": 4,
+          "duration": 2895.121,
+          "frames": 100,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "later": [
+        {
+          "tag": "VIDEO",
+          "time": 1805.581558956,
+          "width": 854,
+          "height": 480,
+          "ready": 4,
+          "duration": 2895.121,
+          "frames": 169,
+          "tracks": [
+            {
+              "language": "",
+              "kind": "forced"
+            },
+            {
+              "language": "",
+              "kind": "forced"
+            }
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "provider_publication_dates": [
+    {
+      "video_id": "kjnjzDJPigk",
+      "url": "https://www.youtube.com/watch?v=kjnjzDJPigk",
+      "title": "2° Sesion Ordinaria de Senadores de la Provincia de Corrientes - YouTube",
+      "meta": [
+        {
+          "property": "description",
+          "content": "Capítulos:00:00 Cuorum02:22 Audiencia Publica04:34 Dr. Jose Omar Caseré32:00 Dra Maria Mercedes Obregón56:53 Dra Julieta Victoria Lértora1:30:23 Dra Carolina..."
+        },
+        {
+          "property": "og:site_name",
+          "content": "YouTube"
+        },
+        {
+          "property": "og:description",
+          "content": "Capítulos:00:00 Cuorum02:22 Audiencia Publica04:34 Dr. Jose Omar Caseré32:00 Dra Maria Mercedes Obregón56:53 Dra Julieta Victoria Lértora1:30:23 Dra Carolina..."
+        },
+        {
+          "property": "al:ios:app_name",
+          "content": "YouTube"
+        },
+        {
+          "property": "al:android:app_name",
+          "content": "YouTube"
+        },
+        {
+          "property": "twitter:description",
+          "content": "Capítulos:00:00 Cuorum02:22 Audiencia Publica04:34 Dr. Jose Omar Caseré32:00 Dra Maria Mercedes Obregón56:53 Dra Julieta Victoria Lértora1:30:23 Dra Carolina..."
+        },
+        {
+          "property": "twitter:app:name:iphone",
+          "content": "YouTube"
+        },
+        {
+          "property": "twitter:app:name:ipad",
+          "content": "YouTube"
+        },
+        {
+          "property": "twitter:app:name:googleplay",
+          "content": "YouTube"
+        },
+        {
+          "property": "name",
+          "content": "2° Sesion Ordinaria de Senadores de la Provincia de Corrientes"
+        },
+        {
+          "property": "description",
+          "content": "Capítulos:00:00 Cuorum02:22 Audiencia Publica04:34 Dr. Jose Omar Caseré32:00 Dra Maria Mercedes Obregón56:53 Dra Julieta Victoria Lértora1:30:23 Dra Carolina..."
+        },
+        {
+          "property": "name",
+          "content": "Senado Corrientes"
+        },
+        {
+          "property": "isFamilyFriendly",
+          "content": "true"
+        },
+        {
+          "property": "datePublished",
+          "content": "2024-03-21T22:30:48-07:00"
+        },
+        {
+          "property": "uploadDate",
+          "content": "2024-03-21T22:30:48-07:00"
+        }
+      ],
+      "error": "locator.innerText: Error: strict mode violation: locator('#description') resolved to 2 elements:\n    1) <g id=\"description\">…</g> aka locator('head #description')\n    2) <div id=\"description\" class=\"item style-scope ytd-watch-metadata\">…</div> aka locator('#bottom-row #description')\n\nCall log:\n\u001b[2m  - waiting for locator('#description')\u001b[22m\n"
+    },
+    {
+      "video_id": "Pb9-dySgIyo",
+      "url": "https://www.youtube.com/watch?v=Pb9-dySgIyo",
+      "title": "16° Sesión Ordinaria de la Honorable Cámara de Senadores de la Provincia de Corrientes. - YouTube",
+      "meta": [
+        {
+          "property": "description",
+          "content": "Presupuesto de general de gastos y calculo de recursos de la administración publica provincial"
+        },
+        {
+          "property": "og:site_name",
+          "content": "YouTube"
+        },
+        {
+          "property": "og:description",
+          "content": "Presupuesto de general de gastos y calculo de recursos de la administración publica provincial"
+        },
+        {
+          "property": "al:ios:app_name",
+          "content": "YouTube"
+        },
+        {
+          "property": "al:android:app_name",
+          "content": "YouTube"
+        },
+        {
+          "property": "twitter:description",
+          "content": "Presupuesto de general de gastos y calculo de recursos de la administración publica provincial"
+        },
+        {
+          "property": "twitter:app:name:iphone",
+          "content": "YouTube"
+        },
+        {
+          "property": "twitter:app:name:ipad",
+          "content": "YouTube"
+        },
+        {
+          "property": "twitter:app:name:googleplay",
+          "content": "YouTube"
+        },
+        {
+          "property": "name",
+          "content": "16° Sesión Ordinaria de la Honorable Cámara de Senadores de la Provincia de Corrientes."
+        },
+        {
+          "property": "description",
+          "content": "Presupuesto de general de gastos y calculo de recursos de la administración publica provincial"
+        },
+        {
+          "property": "name",
+          "content": "Senado Corrientes"
+        },
+        {
+          "property": "isFamilyFriendly",
+          "content": "true"
+        },
+        {
+          "property": "datePublished",
+          "content": "2023-11-30T04:02:59-08:00"
+        },
+        {
+          "property": "uploadDate",
+          "content": "2023-11-30T04:02:59-08:00"
+        }
+      ],
+      "error": "locator.innerText: Error: strict mode violation: locator('#description') resolved to 2 elements:\n    1) <g id=\"description\">…</g> aka locator('head #description')\n    2) <div id=\"description\" class=\"item style-scope ytd-watch-metadata\">…</div> aka locator('#bottom-row #description')\n\nCall log:\n\u001b[2m  - waiting for locator('#description')\u001b[22m\n"
+    }
+  ]
+}

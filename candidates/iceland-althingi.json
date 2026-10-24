@@ -2,12 +2,13 @@
   "candidate_version": 1,
   "status": "researching",
   "created_on": "2026-10-22",
-  "updated_on": "2026-10-22",
+  "updated_on": "2026-10-23",
   "decision_notes": [
     "The official broadcast guide documents plenary and open-committee coverage and permits distribution of the Althingi channel. Chromium received a 403 challenge. Keep researching until a current normal-browser player and supported stream route can be checked; do not restore a historical watchlist HLS URL solely because it existed.",
     "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json.",
     "Follow-up 2026-10-22: Homepage, held broadcast URL and official mobile live page all returned 403 security challenges in Chromium. Official broadcast guide indexed by search explicitly permits distribution of Althingi channel on other networks.",
-    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json."
+    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json.",
+    "23 October local / 24 October UTC recheck: HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved. Evidence: reports/health/2026-10-24-national-formal-browser.json"
   ],
   "channel": {
     "id": "iceland-althingi",

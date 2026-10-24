@@ -1,0 +1,4907 @@
+{
+  "checked_at": "2026-10-24T05:51:40.508904+00:00",
+  "request_url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&maxlag=5&props=info%7Clabels%7Cdescriptions%7Cclaims&sites=enwiki&titles=Free+State+Provincial+Legislature%7CYogyakarta+Regional+House+of+Representatives%7CSpecial+Region+of+Yogyakarta+Regional+House+of+Representatives%7CLandtag+of+South+Tyrol%7CSouth+Tyrol+Landtag%7CAbgeordnetenhaus+of+Berlin%7CLandtag+of+Saxony-Anhalt%7CSupreme+Council+%28Transnistria%29%7CSupreme+Council+of+Transnistria%7CUva+Provincial+Council",
+  "method": "Exact-title hypotheses through the same shared cached API with persisted cooldown; returned items require full claim/primary scope review, missing titles are not item absence.",
+  "outcome": "candidate_entities_returned",
+  "cache_hit": false,
+  "source_fetched_at": 1792821100.804398,
+  "entities": {
+    "-1": {
+      "site": "enwiki",
+      "title": "Yogyakarta Regional House of Representatives",
+      "missing": ""
+    },
+    "-2": {
+      "site": "enwiki",
+      "title": "South Tyrol Landtag",
+      "missing": ""
+    },
+    "-3": {
+      "site": "enwiki",
+      "title": "Abgeordnetenhaus of Berlin",
+      "missing": ""
+    },
+    "-4": {
+      "site": "enwiki",
+      "title": "Supreme Council of Transnistria",
+      "missing": ""
+    },
+    "-5": {
+      "site": "enwiki",
+      "title": "Uva Provincial Council",
+      "missing": ""
+    },
+    "Q17053115": {
+      "pageid": 18659468,
+      "ns": 0,
+      "title": "Q17053115",
+      "lastrevid": 2472350002,
+      "modified": "2026-03-16T02:34:48Z",
+      "type": "item",
+      "id": "Q17053115",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Free State Legislature"
+        },
+        "af": {
+          "language": "af",
+          "value": "Wetgewer van die Provinsie Vrystaat"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "自由邦省立法機關"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "parlamento de Liberŝtato"
+        },
+        "zh-hant": {
+          "language": "zh-hant",
+          "value": "自由邦省議會"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "自由邦省议会"
+        },
+        "hy": {
+          "language": "hy",
+          "value": "Ֆրի Սթեյթի օրենսդիր ժողով"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Parlament Provincial de l'Estat Lliure"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Provinciale Wetgevende Macht van Vrijstaat"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "Free State Legislature"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Zakonodajna skupščina province Free State"
+        },
+        "es": {
+          "language": "es",
+          "value": "Legislatura Provincial del Estado Libre"
+        }
+      },
+      "descriptions": {
+        "af": {
+          "language": "af",
+          "value": "wetgewende gesag van die Vrystaat Provinsie"
+        },
+        "en": {
+          "language": "en",
+          "value": "legislature of the Free State Province"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "zakonodajno telo province Free State v Južni Afriki"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "9c6f5c08d9146d0345cd074b3154f3e12b4d873a",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 7252701,
+                  "id": "Q7252701"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q17053115$476BD5B4-9790-417D-9594-445C1684F2C1",
+            "rank": "normal"
+          }
+        ],
+        "P214": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P214",
+              "hash": "b818ec56c412fc248396d42ecb9ed504c116b65e",
+              "datavalue": {
+                "value": "156298363",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q17053115$2E6DD585-8364-425A-914D-1136D14D7C10",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "ad3713df772ae88af6a7458d084a40ad20b226d6",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "6b7d4330c4aac4caec4ede9de0311ce273f88ecd",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 54919,
+                          "id": "Q54919"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "a00cc299e508357647636e29593b8ca3e534077d",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2015-08-06T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248",
+                  "P813"
+                ]
+              }
+            ]
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "10885211025f7eed75a9d05dfa3113acdf746bf2",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 258,
+                  "id": "Q258"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q17053115$1BAB39F9-C444-4B30-811E-22F246EA68D5",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "638f1c60c415eeec339d8e227ebd4cb7c36c72b0",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 160284,
+                  "id": "Q160284"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q17053115$4DB5058F-2D96-4520-A97F-795F6638F173",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "9ad0a4fc84bf82e33f9d98dad89b4c9d9db67de7",
+              "datavalue": {
+                "value": "http://www.fsl.gov.za/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q17053115$69572D13-030A-4D8E-A163-606CB6B13861",
+            "rank": "normal"
+          }
+        ],
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "7a63d26f1fdd91ccadef6e9575e0ebf62dacbf03",
+              "datavalue": {
+                "value": {
+                  "amount": "+30",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q17053115$AC9CF4FA-D9FF-401D-8CC0-5BFD453BE120",
+            "rank": "normal"
+          }
+        ],
+        "P527": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P527",
+              "hash": "cf8ad13140ee75def33da1efe09adfced05dfaad",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 57313163,
+                  "id": "Q57313163"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q17053115$5C4E0B7F-CC54-46BB-A8E0-56216AC2E0CA",
+            "rank": "normal"
+          }
+        ],
+        "P5555": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5555",
+              "hash": "c1f8517dfb36eea3c622570be7f6c28ea1793e4e",
+              "datavalue": {
+                "value": "Free State Provincial Legislature 2019.svg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q17053115$3A2A5C6C-ABD5-4561-ADB6-DDB56A6536DC",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "cdcd0efb072dbdd4e8c44757d86871a154bff511",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "125d9b4b6a329b5b615cdd36e69b0bab8417d952",
+                      "datavalue": {
+                        "value": "https://en.wikipedia.org/w/index.php?title=Free_State_Provincial_Legislature&oldid=949426167",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P159": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P159",
+              "hash": "d0b7888b236fa99115e3e901b9a1bcd6616ec4e9",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 56611842,
+                  "id": "Q56611842"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q17053115$41db78f5-4a4f-0e97-a9ff-49e718e730bf",
+            "rank": "normal"
+          }
+        ],
+        "P646": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P646",
+              "hash": "5f2a6de3702013d62333b36617ec9985ee8651a9",
+              "datavalue": {
+                "value": "/m/010lvmwd",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q17053115$E0459CD9-592B-4734-9340-3A7F8FDD3CA5",
+            "rank": "normal"
+          }
+        ],
+        "P18": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P18",
+              "hash": "851d5c9168c8191bd41d789e62402b8291c1da64",
+              "datavalue": {
+                "value": "Die Vierde Raadsaal, President Brand Street, Bloemfontein, Free State, South-Africa..jpg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q17053115$653E2903-6ED8-4D11-A178-0792711C2036",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P18",
+              "hash": "5e4855ce06554bc5814ed1b243c395b12ba40680",
+              "datavalue": {
+                "value": "Legislative chamber, Free State parliament (6461110525).jpg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q17053115$83E0B1DF-1215-4805-9757-EC18BE3677B7",
+            "rank": "normal"
+          }
+        ],
+        "P244": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P244",
+              "hash": "61882792f1452b1cd56f10dea1e7553e3aa5c766",
+              "datavalue": {
+                "value": "no2005078229",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q17053115$F2790692-B09E-4967-AA28-9D90A94803B5",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "2ea7d9cf6569a6790a1abd706c97a06fdef003c3",
+                "snaks": {
+                  "P11797": [
+                    {
+                      "snaktype": "value",
+                      "property": "P11797",
+                      "hash": "395c2c5dc64a74fb596f0b959e9ac6c9307e2068",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 76630151,
+                          "id": "Q76630151"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P11797"
+                ]
+              }
+            ]
+          }
+        ],
+        "P13591": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P13591",
+              "hash": "1496611306daaf605fd132d479d6d17f40b80032",
+              "datavalue": {
+                "value": "group/76376e6d-3963-4a59-8a6c-439443492df5",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q17053115$304DC414-2BDF-4149-AC58-BA1EDB1BCB0B",
+            "rank": "normal"
+          }
+        ]
+      }
+    },
+    "Q25463081": {
+      "pageid": 27415861,
+      "ns": 0,
+      "title": "Q25463081",
+      "lastrevid": 2507461254,
+      "modified": "2026-06-18T12:57:32Z",
+      "type": "item",
+      "id": "Q25463081",
+      "labels": {
+        "id": {
+          "language": "id",
+          "value": "Dewan Perwakilan Rakyat Daerah Provinsi Daerah Istimewa Yogyakarta"
+        },
+        "en": {
+          "language": "en",
+          "value": "Special Region of Yogyakarta Regional House of Representatives"
+        },
+        "su": {
+          "language": "su",
+          "value": "Déwan Pangwakil Rahayat Daérah Propinsi Daérah Istiméwa Yogyakarta"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "unicameral legislature of Yogyakarta, Indonesia"
+        },
+        "id": {
+          "language": "id",
+          "value": "lembaga legislatif satu kamar di Daerah Istimewa Yogyakarta, Indonesia"
+        }
+      },
+      "claims": {
+        "P2671": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2671",
+              "hash": "edad5e1cd98dd6b072bd9456a7a87ca985e1d63f",
+              "datavalue": {
+                "value": "/g/11bw1_dvx6",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q25463081$3CC44F70-B26C-4C17-91DD-5810EE5CE61E",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "5f062030d01c9793ff079b414e7a6dc647ce03ca",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 252,
+                  "id": "Q252"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q25463081$4C634776-2065-41F9-A80A-B9D44D502943",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "c980b96779f24b119f2e752500f0ccca71237543",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3741,
+                  "id": "Q3741"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q25463081$34F9E251-3CDA-403E-8286-772894094502",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "45b0879b64942768f07a03c8d6659ef05ee06e38",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 19751617,
+                  "id": "Q19751617"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q25463081$D6250872-52D5-4D14-BD90-C0DE80ACAE76",
+            "rank": "normal"
+          }
+        ],
+        "P2388": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2388",
+              "hash": "dece792b294812e9cc090234d2960ab63bc64692",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 139438685,
+                  "id": "Q139438685"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2098": [
+                {
+                  "snaktype": "value",
+                  "property": "P2098",
+                  "hash": "1f7b78e151b7e0d64d6da00c974023cd0eb1433c",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 139438686,
+                      "id": "Q139438686"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2098"
+            ],
+            "id": "Q25463081$05F6A186-CDC9-4CC8-9DCA-49D7C9BC5A73",
+            "rank": "normal"
+          }
+        ],
+        "P527": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P527",
+              "hash": "b94fcd2665aaeb639012c0a9315aaa6fa1db4f76",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 139438687,
+                  "id": "Q139438687"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q25463081$A8B42D4F-6B05-4C7D-902A-243A2C3E945B",
+            "rank": "normal"
+          }
+        ],
+        "P6365": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6365",
+              "hash": "b7207b0adf378a294ccc54d537336b88c0bddc0d",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 139438694,
+                  "id": "Q139438694"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q25463081$D2322DE4-4060-433C-B4B4-15B9DA2BAC71",
+            "rank": "normal"
+          }
+        ]
+      }
+    },
+    "Q458185": {
+      "pageid": 432211,
+      "ns": 0,
+      "title": "Q458185",
+      "lastrevid": 2533685446,
+      "modified": "2026-08-20T11:45:00Z",
+      "type": "item",
+      "id": "Q458185",
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Südtiroler Landtag"
+        },
+        "en": {
+          "language": "en",
+          "value": "Landtag of South Tyrol"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Consell Autònom del Tirol del Sud"
+        },
+        "it": {
+          "language": "it",
+          "value": "Consiglio della Provincia autonoma di Bolzano"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Landdag van Zuid-Tirol"
+        },
+        "es": {
+          "language": "es",
+          "value": "Consejo de la provincia autónoma de Bolzano"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Conseil de la province autonome de Bolzano"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "Sør-Tyrols landdag"
+        },
+        "he": {
+          "language": "he",
+          "value": "הלנדטאג של דרום טירול"
+        },
+        "id": {
+          "language": "id",
+          "value": "Landtag Tirol Selatan"
+        },
+        "zh-hant": {
+          "language": "zh-hant",
+          "value": "南蒂羅爾議會"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "南蒂罗尔议会"
+        },
+        "fi": {
+          "language": "fi",
+          "value": "Etelä-Tirolin parlamentti"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "南蒂罗尔议会"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "Zemský sněm Jižního Tyrolska"
+        },
+        "vec": {
+          "language": "vec",
+          "value": "Consejo de ła provincia autónoma de Bolsan"
+        },
+        "lld": {
+          "language": "lld",
+          "value": "Cunsëi dla Provinzia autonoma de Bulsan"
+        },
+        "cy": {
+          "language": "cy",
+          "value": "Cyngor Talaith Bolzano"
+        },
+        "oc": {
+          "language": "oc",
+          "value": "Conselh de la Província Autonòma de Bolzano"
+        },
+        "ga": {
+          "language": "ga",
+          "value": "Landtag na Tioróile Theas"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "Parliament of the autonomous province of South Tyrol in northern Italy"
+        },
+        "de": {
+          "language": "de",
+          "value": "gesetzgebende Volksvertretung der Autonomen Provinz Bozen – Südtirol"
+        },
+        "it": {
+          "language": "it",
+          "value": "organo legislativo della Provincia autonoma di Bolzano"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "parlament Jižního Tyrolska"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement de la province autonome dans le nord de l'Italie"
+        },
+        "oc": {
+          "language": "oc",
+          "value": "organ legislatiu de la província omonima"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "9bb8ecc48122f0365c8721a031603dad8ada26b8",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3687385,
+                  "id": "Q3687385"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$d7022d68-481a-9b4d-f15d-7a96096fdf8f",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "5bc2178523d8c63914febc1570024609c3a9f8ce",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 2266479,
+                  "id": "Q2266479"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$06bd67ef-42af-b4dc-bea6-f4ef511a375b",
+            "rank": "normal"
+          }
+        ],
+        "P361": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P361",
+              "hash": "8973571224a28acc37eb8acdb932cfed749ade28",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3687389,
+                  "id": "Q3687389"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$6d6bc1d9-4f96-29fd-a587-e73a51bc702f",
+            "rank": "normal"
+          }
+        ],
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "1ab065c4a7ee15d6a8ed025a42d3f19fd4bf7a2c",
+              "datavalue": {
+                "value": {
+                  "amount": "+35",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q458185$4dd1abdd-4d6e-1961-79a9-94cc9c4ee31f",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "a0e2794f3c85fe6391e87f9c106204f0207f990d",
+                "snaks": {
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "272635f2d1a3a64b916708184bb50ac6b983b77e",
+                      "datavalue": {
+                        "value": "https://en.wikipedia.org/wiki/List_of_legislatures_by_country",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "3397fae446c7e9eaed3f6c05695bffdc575da642",
+              "datavalue": {
+                "value": "https://www.consiglio-bz.org/it/home",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "2ab2e485ce235a18142330fa1873a5bba7115d23",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 652,
+                      "id": "Q652"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$b4e3c82d-4b8a-d669-72bb-5c811797acfc",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "f1970b46d1f60be248e69c741882d4d5d16a7678",
+              "datavalue": {
+                "value": "https://www.landtag-bz.org/de/home",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$febd4883-43d4-3414-bd64-147f541222e9",
+            "rank": "preferred"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "87dc3ea47686855852d9be22d7b983b96bcb6aa5",
+              "datavalue": {
+                "value": "https://www.landtag-bz.org/lld/home",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "28f9c43154c35c2045da1c5969854c9d27abc526",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 36202,
+                      "id": "Q36202"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$219e7496-40a1-04b5-5a15-a84bd05b7120",
+            "rank": "normal"
+          }
+        ],
+        "P646": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P646",
+              "hash": "0e92a9d0f37bb2dd64ce275e415517671cf504dd",
+              "datavalue": {
+                "value": "/m/0glt40d",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q458185$468A6376-9F6B-49B3-BF51-BC028F3E99BE",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 15241312,
+                          "id": "Q15241312"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P577": [
+                    {
+                      "snaktype": "value",
+                      "property": "P577",
+                      "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2013-10-28T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248",
+                  "P577"
+                ]
+              }
+            ]
+          }
+        ],
+        "P227": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P227",
+              "hash": "f5f2fc1f29563fa2df2e97c18c8743cc263f172b",
+              "datavalue": {
+                "value": "4388171-3",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q458185$98F9EE21-231A-4341-A116-6C087D282775",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "b48529e9f7e0898ab1ddaefe8547cdb863e0167c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 38,
+                  "id": "Q38"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$3ac2aaeb-472b-02f2-9881-1ea41de1ed8b",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "8c3ee39f4c87199a10a2b50344c4829b93227605",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 15124,
+                  "id": "Q15124"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$170383a6-4598-263f-9c25-ce72725e4c17",
+            "rank": "normal"
+          }
+        ],
+        "P571": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P571",
+              "hash": "3c66e2cd8ec91b98b1fcbf87363539b4cd0eaf3a",
+              "datavalue": {
+                "value": {
+                  "time": "+1948-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 9,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q458185$7C528BD9-D3C6-4FE9-A258-5D06DF3FB566",
+            "rank": "normal"
+          }
+        ],
+        "P159": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P159",
+              "hash": "348acc2bb6ec8d07e6aab71fa37cafdaa6ecfb31",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 22692757,
+                  "id": "Q22692757"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$28695379-0321-43DE-B202-D9EEEB2F3CCA",
+            "rank": "normal"
+          }
+        ],
+        "P4253": [
+          {
+            "mainsnak": {
+              "snaktype": "novalue",
+              "property": "P4253",
+              "hash": "a2089ed53fe9bf5ca8b7ce46627bfe6252e5c3bf",
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q458185$d64be138-4933-5b68-3b1b-3d5b639cfe90",
+            "rank": "normal"
+          }
+        ],
+        "P527": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P527",
+              "hash": "9756dbaed29b8d5c6a850e9cc019c2636c9308ac",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 48011080,
+                  "id": "Q48011080"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$695f524a-4324-23c1-f642-f9a151cd4ebb",
+            "rank": "normal"
+          }
+        ],
+        "P18": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P18",
+              "hash": "73061303aa4cb9fccebaa5a8879b25e63c082d0e",
+              "datavalue": {
+                "value": "Bozen - Südtiroler Landtag (004533).png",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q458185$547F9839-A58E-46B2-9D73-2DF490BA809B",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "a27c88688f5f6dcb8f107c4cc15f2303823c8f86",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "e8c54fd1a50466b86c2af846ecf0d8fd6093994b",
+                      "datavalue": {
+                        "value": "https://it.wikipedia.org/w/index.php?title=Consiglio_della_Provincia_autonoma_di_Bolzano&oldid=102762621",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P5555": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5555",
+              "hash": "1776a7307d08ce5fb791ffa1661715b01fa70bbf",
+              "datavalue": {
+                "value": "Landtag of South Tyrol 2018.svg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q458185$0BEAC782-83E6-4D16-B00E-72E7C4987C55",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "07168e855ed1498a2577e19f71b72ec21d50a01e",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "3b0fc97f007f81ce8c88a3fa6fd1fe9206f59576",
+                      "datavalue": {
+                        "value": "https://en.wikipedia.org/w/index.php?title=Landtag_of_South_Tyrol&oldid=900432027",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2013": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2013",
+              "hash": "b4c08c04d89cbe30c76f81eff88a5952ad820230",
+              "datavalue": {
+                "value": "landtagconsigliocunsei",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q458185$fba0fd91-42d1-d49a-5ba1-0b5bae8b08ea",
+            "rank": "normal"
+          }
+        ],
+        "P2002": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2002",
+              "hash": "48b763f72a1480f8f52723f8edfc37d2b34ed898",
+              "datavalue": {
+                "value": "ParliamentBz",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P6552": [
+                {
+                  "snaktype": "value",
+                  "property": "P6552",
+                  "hash": "60bdb35462eded88e61530bb1826011dbfd57482",
+                  "datavalue": {
+                    "value": "1303319380638527501",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P580": [
+                {
+                  "snaktype": "value",
+                  "property": "P580",
+                  "hash": "81c68a9c3822b5f91561898460bd9b6103be82c2",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2020-09-08T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "857296513db29aa9517eadc5b689e55b2da32fde",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2020-12-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P6552",
+              "P580",
+              "P585"
+            ],
+            "id": "Q458185$1bc9cf65-4dc3-012d-dd0d-2d4a2fb7ee8f",
+            "rank": "normal"
+          }
+        ],
+        "P2003": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2003",
+              "hash": "7d2e2b559927d035d31442bb74fa6f45e2a0d1f5",
+              "datavalue": {
+                "value": "landtagconsigliocunsei",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q458185$82f690be-49b0-53f1-841d-327e41a54878",
+            "rank": "normal"
+          }
+        ],
+        "P3267": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3267",
+              "hash": "09ef5c5ea9bdf719045ff12a71a3b35ea1a00369",
+              "datavalue": {
+                "value": "190091852@N05",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q458185$73618d1e-44b7-3c27-20d6-0dce32512593",
+            "rank": "normal"
+          }
+        ],
+        "P488": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P488",
+              "hash": "6d3053dd2ed6b23772b29a903f803bf64ec61317",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 58093808,
+                  "id": "Q58093808"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P580": [
+                {
+                  "snaktype": "value",
+                  "property": "P580",
+                  "hash": "440de5a2087605046e1b09ef83f1d12f4cf8f28c",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2021-05-14T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P580"
+            ],
+            "id": "Q458185$4004ca83-4539-fa1b-532b-9fa4cb3e4fb3",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P488",
+              "hash": "8c3b631f74697c4da233adca1ff547aaaa3ac9f6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 696154,
+                  "id": "Q696154"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q458185$a0201ed6-4042-dee5-2eb1-74144385856e",
+            "rank": "normal"
+          }
+        ],
+        "P11245": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11245",
+              "hash": "83d72c8b7fddf351c73bd96c253ebbe022860b39",
+              "datavalue": {
+                "value": "landtagconsigliocunsei",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2397": [
+                {
+                  "snaktype": "value",
+                  "property": "P2397",
+                  "hash": "3b8bf9a9eb4fe8e50a8f39bbde1a10e9f646eb94",
+                  "datavalue": {
+                    "value": "UC5bOVQNvQJklEksWtmpYByg",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2397"
+            ],
+            "id": "Q458185$b7f0dfda-4dd6-f2cc-ad97-d9202be34202",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2397",
+              "hash": "3b8bf9a9eb4fe8e50a8f39bbde1a10e9f646eb94",
+              "datavalue": {
+                "value": "UC5bOVQNvQJklEksWtmpYByg",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "22684cbcb0972923ea711b037795e49ff05b56d9",
+                  "datavalue": {
+                    "value": "Südtiroler Landtag | Consiglio della Provincia autonoma di Bolzano",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ],
+              "P3744": [
+                {
+                  "snaktype": "value",
+                  "property": "P3744",
+                  "hash": "af81d7627575d55f3e52850498898012b4f19b2f",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+1050",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P3740": [
+                {
+                  "snaktype": "value",
+                  "property": "P3740",
+                  "hash": "8a03026af4865fdcf4af207bb2482f1a41cf36fb",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+386",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P5436": [
+                {
+                  "snaktype": "value",
+                  "property": "P5436",
+                  "hash": "55f7c4fa9139c189a76891a50a6f776cc64e2b9c",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+148002",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P580": [
+                {
+                  "snaktype": "value",
+                  "property": "P580",
+                  "hash": "8233fa63b01edb1cbcb4b7e86f0d93642e7bafab",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2015-09-14T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "8b0882ff0b3317fb5a56cc890deac701806b7ea6",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2024-02-04T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1810",
+              "P3744",
+              "P3740",
+              "P5436",
+              "P580",
+              "P585"
+            ],
+            "id": "Q458185$80c31308-47c2-1e23-0b3e-e08b82ae5085",
+            "rank": "normal"
+          }
+        ],
+        "P1705": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1705",
+              "hash": "3aa825a77456415559e3019ddadafe871e83e795",
+              "datavalue": {
+                "value": {
+                  "text": "Südtiroler Landtag",
+                  "language": "de"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q458185$8479f875-491f-43b0-194e-3972d38dffbb",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1705",
+              "hash": "47aa44c0893276005ead31911a66f9fb48e786d1",
+              "datavalue": {
+                "value": {
+                  "text": "Consiglio della Provincia autonoma di Bolzano",
+                  "language": "it"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q458185$7fec2b5b-4745-d553-3a28-2be62c7eb415",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1705",
+              "hash": "8a4503feca4b8b1a41364589f029a3baf70590fe",
+              "datavalue": {
+                "value": {
+                  "text": "Cunsëi dla Provinzia autonoma de Bulsan",
+                  "language": "lld"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q458185$bfdd2090-4815-4f36-fd1d-870b4df58b5e",
+            "rank": "normal"
+          }
+        ],
+        "P1448": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1448",
+              "hash": "bc9954647f404cab7d4ed3884efa518fe695ce9a",
+              "datavalue": {
+                "value": {
+                  "text": "Südtiroler Landtag",
+                  "language": "de"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q458185$28097e6c-421e-7dd4-0e00-44a63634a949",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9c8c0bb1a78182ff5f3ac1c1a135d08c7598be56",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "1f0d454aa85bb44f0afa063dfa7a3866b4f90fc9",
+                      "datavalue": {
+                        "value": "https://www.landtag-bz.org/de/home",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P407": [
+                    {
+                      "snaktype": "value",
+                      "property": "P407",
+                      "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 188,
+                          "id": "Q188"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854",
+                  "P407"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1448",
+              "hash": "e5184c1bf486b4de3548ace211be03477cdf7678",
+              "datavalue": {
+                "value": {
+                  "text": "Consiglio della Provincia autonoma di Bolzano",
+                  "language": "it"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q458185$552725e9-4e4f-40f6-74ee-f7927981b185",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "ffc5b6d1966a507fba52744925479a8f575a713e",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "d18168f95ebc7687deb38ad4ea1fdec2ae3d406e",
+                      "datavalue": {
+                        "value": "https://www.consiglio-bz.org/it/home",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P407": [
+                    {
+                      "snaktype": "value",
+                      "property": "P407",
+                      "hash": "2ab2e485ce235a18142330fa1873a5bba7115d23",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 652,
+                          "id": "Q652"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854",
+                  "P407"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1448",
+              "hash": "8faa413d997eece9b392a9a17639848e6d56243c",
+              "datavalue": {
+                "value": {
+                  "text": "Cunsëi dla Provinzia autonoma de Bulsan",
+                  "language": "lld"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q458185$528b1c5e-4be3-947d-abfa-fece102c71a2",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "5ad00c39f3d4f1371f1141cd337b6554c5e2c82c",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "272e9be3a1afb41ab4c77a2ba135d3f72fca7c53",
+                      "datavalue": {
+                        "value": "https://www.landtag-bz.org/lld/home",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P407": [
+                    {
+                      "snaktype": "value",
+                      "property": "P407",
+                      "hash": "28f9c43154c35c2045da1c5969854c9d27abc526",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 36202,
+                          "id": "Q36202"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854",
+                  "P407"
+                ]
+              }
+            ]
+          }
+        ],
+        "P11326": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11326",
+              "hash": "891f683821fdee689c7fb69a83d6079aa01cebd1",
+              "datavalue": {
+                "value": "https://www.landtag-bz.org/de/impressum",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$cf36927c-457a-bd04-f1de-216be1bdd01d",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11326",
+              "hash": "e3e3d8ebee49854e3f26992e8fb4141cc99d3baa",
+              "datavalue": {
+                "value": "https://www.consiglio-bz.org/it/note-legali",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "2ab2e485ce235a18142330fa1873a5bba7115d23",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 652,
+                      "id": "Q652"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$ab8d2ea6-4777-8936-d592-e620f428213d",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11326",
+              "hash": "98cc2c1a2f375e53c35c1c9a3caceca615045e18",
+              "datavalue": {
+                "value": "https://www.landtag-bz.org/lld/impressum",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "28f9c43154c35c2045da1c5969854c9d27abc526",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 36202,
+                      "id": "Q36202"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$dbc4bbfa-4f51-349d-96ec-a6d77f791a54",
+            "rank": "normal"
+          }
+        ],
+        "P7101": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P7101",
+              "hash": "d23bb7620a0a3d126f8d5453173d383932cd95ec",
+              "datavalue": {
+                "value": "https://www.landtag-bz.org/de/privacy",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$85c6b2ed-4190-96b2-8009-843ad7eff222",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P7101",
+              "hash": "f40e7a39abc9b6b5144d09475b787b1c0a610d9d",
+              "datavalue": {
+                "value": "https://www.consiglio-bz.org/it/privacy",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "2ab2e485ce235a18142330fa1873a5bba7115d23",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 652,
+                      "id": "Q652"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q458185$db7324d3-481e-767e-261a-f2345f2b59c3",
+            "rank": "normal"
+          }
+        ],
+        "P968": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P968",
+              "hash": "4654a1545f7cae1e7c06883925bbcf25288b4b8d",
+              "datavalue": {
+                "value": "mailto:info@landtag-bz.org",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q458185$a0c76dfd-4cff-50ce-17db-7c71c986f55a",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "fa1cda50bc42acb47a7bb3ff603f758ac75d561a",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "a840a5229c7a19307eb8278ec4c1f25441eea323",
+                      "datavalue": {
+                        "value": "https://www.landtag-bz.org/",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854"
+                ]
+              }
+            ]
+          }
+        ],
+        "P1329": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1329",
+              "hash": "c86bcf7ed91f53afbea9b5d7e942d79e1b2463de",
+              "datavalue": {
+                "value": "+39-0471-946-111",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q458185$845ab1ab-4f52-0301-f4f8-665c0c3a8b91",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "fa1cda50bc42acb47a7bb3ff603f758ac75d561a",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "a840a5229c7a19307eb8278ec4c1f25441eea323",
+                      "datavalue": {
+                        "value": "https://www.landtag-bz.org/",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854"
+                ]
+              }
+            ]
+          }
+        ],
+        "P5436": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5436",
+              "hash": "3645e4225ce7e484dce18a47fa27c38c664e8596",
+              "datavalue": {
+                "value": {
+                  "amount": "+258364",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2397": [
+                {
+                  "snaktype": "value",
+                  "property": "P2397",
+                  "hash": "3b8bf9a9eb4fe8e50a8f39bbde1a10e9f646eb94",
+                  "datavalue": {
+                    "value": "UC5bOVQNvQJklEksWtmpYByg",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P11245": [
+                {
+                  "snaktype": "value",
+                  "property": "P11245",
+                  "hash": "83d72c8b7fddf351c73bd96c253ebbe022860b39",
+                  "datavalue": {
+                    "value": "landtagconsigliocunsei",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "0496632b7f3ab808e86755b70774e37784896197",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2025-11-26T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P459": [
+                {
+                  "snaktype": "value",
+                  "property": "P459",
+                  "hash": "959bc28be5ab30062f780f9f030e7519a2b3e5bd",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 63185508,
+                      "id": "Q63185508"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2397",
+              "P11245",
+              "P585",
+              "P459"
+            ],
+            "id": "Q458185$3e68ffb2-7577-42e6-a29d-231391d0f2bb",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "55abafe3d59e06a79556f1a5be81be2c9852123a",
+                "snaks": {
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "ee770ec28878bc121c4aea927bea93179a61552e",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2025-11-26T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ],
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "e6e6374525f7d680f01ff599745f367fb1369b87",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8056784,
+                          "id": "Q8056784"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P813",
+                  "P248"
+                ]
+              }
+            ]
+          }
+        ],
+        "P13337": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P13337",
+              "hash": "24fbd0c17b3d7565c440e4de55a70f7496bfb450",
+              "datavalue": {
+                "value": "landtag-bz.org",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q458185$d761a0b8-4ec0-7a07-61ea-fadb537db5e5",
+            "rank": "normal"
+          }
+        ]
+      }
+    },
+    "Q884829": {
+      "pageid": 835871,
+      "ns": 0,
+      "title": "Q884829",
+      "lastrevid": 2554989104,
+      "modified": "2026-10-08T10:40:15Z",
+      "type": "item",
+      "id": "Q884829",
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Landtag von Sachsen-Anhalt"
+        },
+        "en": {
+          "language": "en",
+          "value": "Landtag of Saxony-Anhalt"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "Sachsen-Anhalts landdag"
+        },
+        "it": {
+          "language": "it",
+          "value": "Landtag della Sassonia-Anhalt"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Landtag de Saxe-Anhalt"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Landdag van Saksen-Anhalt"
+        },
+        "es": {
+          "language": "es",
+          "value": "Landtag de Sajonia-Anhalt"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "ландтаг Саксонии-Анхальта"
+        },
+        "zh-hant": {
+          "language": "zh-hant",
+          "value": "薩克森－安哈爾特"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "萨克森－安哈尔特"
+        },
+        "he": {
+          "language": "he",
+          "value": "הלנדטאג של סקסוניה-אנהלט"
+        },
+        "ast": {
+          "language": "ast",
+          "value": "Parllamentu Rexonal de Saxonia-Anhalt"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "Sachsen-Anhalts lantdag"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "ザクセン＝アンハルト州議会"
+        },
+        "fi": {
+          "language": "fi",
+          "value": "Saksi-Anhaltin maapäivät"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Landtag de Saxònia-Anhalt"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "Landtagul Saxoniei-Anhalt"
+        },
+        "fa": {
+          "language": "fa",
+          "value": "مجلس ایالتی زاکسن-آنهالت"
+        },
+        "vec": {
+          "language": "vec",
+          "value": "Landtag de Sasònia-Anhalt"
+        },
+        "ga": {
+          "language": "ga",
+          "value": "Landtag na Sacsaine-Anhalt"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "szász-anhalti tartományi parlament"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Deželni zbor Saške - Anhalta"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "Landtag de Saksio-Anhalto"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "Landtag da Saxônia-Anhalt"
+        },
+        "pt-br": {
+          "language": "pt-br",
+          "value": "Landtag da Saxônia-Anhalt"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "legislature of the state of Saxony-Anhalt, Germany"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement régional de Saxe-Anhalt"
+        },
+        "de": {
+          "language": "de",
+          "value": "Landesparlament des Landes Sachsen-Anhalt"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Duits nationaal monument in Saksen-Anhalt"
+        },
+        "fi": {
+          "language": "fi",
+          "value": "osavaltioparlamentti Saksassa"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "zakonodajno telo nemške zvezne dežele Saške - Anhalta"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "regiona parlamento \"Landtag\" de la federacia lando Saksio-Anhalto"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "delstatsparlament i tyska förbundslandet Sachsen-Anhalt"
+        }
+      },
+      "claims": {
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "ef7247b704f4ec0a7df39e83306bb388fea17d5f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 183,
+                  "id": "Q183"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$0b38f3b0-4949-c328-f837-c248c5271edf",
+            "rank": "normal"
+          }
+        ],
+        "P488": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P488",
+              "hash": "7fbd47f6595544cdad6e37f0635978d83664c04e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1201253,
+                  "id": "Q1201253"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$8552f445-4a13-05c3-d4c5-c3f02c8b078d",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "4dabb0959ab955d2c850bf3b577c17c8c3f623ac",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 320501,
+                  "id": "Q320501"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$5cb88055-4034-953f-7ebd-80a4d72dfd5c",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "c9afd605b0ce70c4f7343bac8ba9e8d5e682733b",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1206,
+                  "id": "Q1206"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$cb3e565c-424a-4e9e-4fa1-75baa43b1a79",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "7cead8a56ed664e62cad53a0286344f9289a488e",
+              "datavalue": {
+                "value": "https://www.landtag.sachsen-anhalt.de/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q884829$3b1083b7-49bf-9c3b-4cf3-4ba6652b8651",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P646": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P646",
+              "hash": "ca23b2442339e8cf03c52b8557ea49c5ce3191a5",
+              "datavalue": {
+                "value": "/m/047p7_9",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$0D742C03-A85D-4138-B33E-5A389F308D45",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 15241312,
+                          "id": "Q15241312"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P577": [
+                    {
+                      "snaktype": "value",
+                      "property": "P577",
+                      "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2013-10-28T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248",
+                  "P577"
+                ]
+              }
+            ]
+          }
+        ],
+        "P527": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P527",
+              "hash": "ede1644e17c7afe2fb3d89d9a06f39fb7de91090",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 18559580,
+                  "id": "Q18559580"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$f9658152-4943-34b6-633a-ae138d0fe4bd",
+            "rank": "normal"
+          }
+        ],
+        "P910": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P910",
+              "hash": "35c976ba7f125fd826e67a05206dbb6168acc9de",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 8999447,
+                  "id": "Q8999447"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$D094260C-AD91-4C2D-A0CC-6AA360E3E683",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P227": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P227",
+              "hash": "0bf92ad5c9726a80d0ed7713fbbd64e1d7b77ad5",
+              "datavalue": {
+                "value": "2047374-6",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$5047EB7D-4F66-49EE-BBC3-2EBBB677A11B",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P214": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P214",
+              "hash": "fd33fe1485291cd192aee6bed490ab3ae3329b0f",
+              "datavalue": {
+                "value": "127334425",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$EC97BFAC-B9E7-43BD-8EB6-651F644E99F0",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P244": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P244",
+              "hash": "f43ca5b156cc2e754a46f8b26258a74dea9c6f5e",
+              "datavalue": {
+                "value": "n93122724",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$BE22A7B3-4304-4A01-A60C-DF32DB5C2F69",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "a747c12dd7041626ae15bfa71a60c7bc94cd1d36",
+              "datavalue": {
+                "value": "Landtag Sachsen-Anhalt",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q884829$421FCC60-421E-4D44-8BD0-688E4B7A5D58",
+            "rank": "normal"
+          }
+        ],
+        "P155": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P155",
+              "hash": "f59c13ac0fae0ee99ff602142b36072677a8ee5b",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 27916637,
+                  "id": "Q27916637"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$5383dc73-4bd6-677b-78a7-d4dc3c8d5f58",
+            "rank": "normal"
+          }
+        ],
+        "P18": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P18",
+              "hash": "48a89072acbcf5fa971fad63c3153d0b406694da",
+              "datavalue": {
+                "value": "Landtagsprojekt Sachsen-Anhalt by-RaBoe 2012 009.jpg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q884829$40e692ba-4227-01b9-4cec-d476cdda3a3f",
+            "rank": "normal"
+          }
+        ],
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "3dc9b55adc01ed7eb5626168cc9f491c06559b9c",
+              "datavalue": {
+                "value": {
+                  "amount": "+87",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q884829$3F18CA3E-25EC-47FE-B1E7-53BCC6E22251",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "e701f60e0954fa5ed5a7d59b46a6b0aa0561685f",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "95e6f86bda9683051b9c755cc822a41cdf39288d",
+                      "datavalue": {
+                        "value": "https://de.wikipedia.org/w/index.php?title=Landtag_von_Sachsen-Anhalt&oldid=175461297",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "de8ae260c9512d152c0a7d898791f18dcc2c7a94",
+              "datavalue": {
+                "value": {
+                  "amount": "+97",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2937": [
+                {
+                  "snaktype": "value",
+                  "property": "P2937",
+                  "hash": "9b919f5e09c731d651d68ffe93159e7835b7a757",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 124329423,
+                      "id": "Q124329423"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2937"
+            ],
+            "id": "Q884829$005a649f-440c-b944-da28-d19a224594ac",
+            "rank": "normal"
+          }
+        ],
+        "P691": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P691",
+              "hash": "8e93b46c8dd973efd9fed85c3431fbf5b294f8a1",
+              "datavalue": {
+                "value": "ko2016899467",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "1319650222a50af90281d91c786b8b68a1c720a6",
+                  "datavalue": {
+                    "value": "Sasko-Anhaltsko (Německo). Landtag",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1810"
+            ],
+            "id": "Q884829$BE38AF87-5536-42BF-8B73-D3CCFCF459A5",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "41818697ef7700d222ca3ddcceb600a16270809a",
+                "snaks": {
+                  "P214": [
+                    {
+                      "snaktype": "value",
+                      "property": "P214",
+                      "hash": "fd33fe1485291cd192aee6bed490ab3ae3329b0f",
+                      "datavalue": {
+                        "value": "127334425",
+                        "type": "string"
+                      },
+                      "datatype": "external-id"
+                    }
+                  ],
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "6b7d4330c4aac4caec4ede9de0311ce273f88ecd",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 54919,
+                          "id": "Q54919"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "a099a68f22714ff32f5314e180a00bda873d18fc",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2018-11-30T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P214",
+                  "P248",
+                  "P813"
+                ]
+              }
+            ]
+          }
+        ],
+        "P6744": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6744",
+              "hash": "7e50efc336233a2004d8d47bdf1732565a2049b3",
+              "datavalue": {
+                "value": "7807",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$E59E311D-AFC1-4748-ABDD-FF5CC11B737A",
+            "rank": "normal"
+          }
+        ],
+        "P5555": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5555",
+              "hash": "5765eba697ddea0943fbc189206e579785f529ae",
+              "datavalue": {
+                "value": "Saxony-Anhalt state parliament (current composition).svg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q884829$92193B19-E1E2-4D70-9354-FF65EB964708",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5555",
+              "hash": "57c5b21ef10a9b3cbd4fec89d604b4e582c5f30b",
+              "datavalue": {
+                "value": "ST Landtagswahl 2026.svg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q884829$17761e39-42a9-b2f0-093e-9d55e26a2e21",
+            "rank": "preferred"
+          }
+        ],
+        "P159": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P159",
+              "hash": "91ab37f9fccf6c37fb8e97e049b63ede723ba5a3",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 26869698,
+                  "id": "Q26869698"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$10a0e69c-4ba7-4817-9b63-e6f121b85a9b",
+            "rank": "normal"
+          }
+        ],
+        "P1705": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1705",
+              "hash": "929979ffa607b8d18a19f14305c6565f3b450391",
+              "datavalue": {
+                "value": {
+                  "text": "Landtag von Sachsen-Anhalt",
+                  "language": "de"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q884829$de89a957-40a4-ddbd-a6d0-2cf564285687",
+            "rank": "normal"
+          }
+        ],
+        "P154": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P154",
+              "hash": "41452e58356feb251368d430a680f4ee721a42b0",
+              "datavalue": {
+                "value": "Landtag von Sachsen-Anhalt Logo.svg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q884829$27580ecb-4997-3c8c-2075-b8b9236a95d0",
+            "rank": "normal"
+          }
+        ],
+        "P8189": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8189",
+              "hash": "6144a992e7d0688e4414b778cc8f5ae8d3abd94c",
+              "datavalue": {
+                "value": "987007454109105171",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$C66E79F8-182D-4503-B7A8-E3B3ECB1DF65",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "ecb7a39cf436eb1fba419853af168ef9f2ba1dab",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "a03bb6ffe37be9554492f4eea5bd18afcb57df19",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 106509962,
+                          "id": "Q106509962"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2002": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2002",
+              "hash": "b572188ed0620503553c7d06b6e7a208977a4364",
+              "datavalue": {
+                "value": "Landtag_LSA",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$75a380d5-48be-5da5-0d4b-845c96ed1a17",
+            "rank": "normal"
+          }
+        ],
+        "P2003": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2003",
+              "hash": "91a37b56e3b38173fda8faa46d6bfacd317241be",
+              "datavalue": {
+                "value": "landtag_lsa",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$661b97c4-4725-e3ee-d5c3-ed26beaaff0c",
+            "rank": "normal"
+          }
+        ],
+        "P2013": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2013",
+              "hash": "fb8ebaf5ab99c81817a05df6821eaa6b64c6c718",
+              "datavalue": {
+                "value": "Landtag-von-Sachsen-Anhalt-105128368764869",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$9c7e336a-415c-49ec-a2fe-1a30e3ed7e98",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2397",
+              "hash": "ca7d7eccb958933b2815744f0d6569e070082903",
+              "datavalue": {
+                "value": "UCPYktLfR89uP-D1zF2pmo3g",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "35baa738ec42c0e42e8ec39be57d9d71fb7a6886",
+                  "datavalue": {
+                    "value": "LSALandtag",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ],
+              "P3744": [
+                {
+                  "snaktype": "value",
+                  "property": "P3744",
+                  "hash": "7eb446aae7d2ccd0776e9a0f59a02d18e87bfd65",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+551",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P3740": [
+                {
+                  "snaktype": "value",
+                  "property": "P3740",
+                  "hash": "e3e7335b03f70c715bbacfd87b55bcb781e70d49",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+128",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P5436": [
+                {
+                  "snaktype": "value",
+                  "property": "P5436",
+                  "hash": "362b5af97c9bc9493c98c672a10f11c74cfd352c",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+82189",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P580": [
+                {
+                  "snaktype": "value",
+                  "property": "P580",
+                  "hash": "dbb1706cc4e0bf75a2366929ad42f1bf998534cc",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2012-02-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "33a80ea0ed1846cbcd3fb20778d479b28ebe5d46",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2024-09-29T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1810",
+              "P3744",
+              "P3740",
+              "P5436",
+              "P580",
+              "P585"
+            ],
+            "id": "Q884829$5cda0aba-44e0-dbc8-57b4-8d517a8dfafd",
+            "rank": "normal"
+          }
+        ],
+        "P9964": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P9964",
+              "hash": "ceac546f27416eeb0e35eb24260c614c223e9489",
+              "datavalue": {
+                "value": "2047374-6",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$A1BBA075-6BAA-4BCA-8E87-94F5DCFC0B64",
+            "rank": "normal"
+          }
+        ],
+        "P13591": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P13591",
+              "hash": "5adb0514035eec27b670424b721183e4b5e5894f",
+              "datavalue": {
+                "value": "group/d5a48f8c-4091-481f-b852-a2de2ee83b24",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q884829$38678D10-B224-4D92-B259-93219D1FF075",
+            "rank": "normal"
+          }
+        ],
+        "P11245": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11245",
+              "hash": "48ae7872bb7f5707a83cf1e4bae4c90cb17165c8",
+              "datavalue": {
+                "value": "lsalandtag",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2397": [
+                {
+                  "snaktype": "value",
+                  "property": "P2397",
+                  "hash": "ca7d7eccb958933b2815744f0d6569e070082903",
+                  "datavalue": {
+                    "value": "UCPYktLfR89uP-D1zF2pmo3g",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "2f758429988ac3dcd18fc001c902e331eecb6081",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2025-10-20T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2397",
+              "P585"
+            ],
+            "id": "Q884829$af8e33a9-4896-4cfa-bcaf-279b98afcc58",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "8a95c9f2161210d4218cbb2c35c247d1f3c9a32c",
+                "snaks": {
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "2edc918b012f00c1e8f5ab41c3bcabb32052ab48",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2025-10-20T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ],
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "e6e6374525f7d680f01ff599745f367fb1369b87",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8056784,
+                          "id": "Q8056784"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P813",
+                  "P248"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2388": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2388",
+              "hash": "9893e68d3b05cb7be36ae6782db7f79b34333a46",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 131323248,
+                  "id": "Q131323248"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q884829$dbe6e680-4357-0d4f-3ad5-89992253ff64",
+            "rank": "normal"
+          }
+        ]
+      }
+    },
+    "Q2656777": {
+      "pageid": 2560503,
+      "ns": 0,
+      "title": "Q2656777",
+      "lastrevid": 2545779002,
+      "modified": "2026-09-14T19:25:36Z",
+      "type": "item",
+      "id": "Q2656777",
+      "labels": {
+        "cs": {
+          "language": "cs",
+          "value": "Nejvyšší sovět Podněsterské moldavské republiky"
+        },
+        "pl": {
+          "language": "pl",
+          "value": "Rada Najwyższa Naddniestrza"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Верховный Совет Приднестровской Молдавской Республики"
+        },
+        "en": {
+          "language": "en",
+          "value": "Parliament of Transnistria"
+        },
+        "es": {
+          "language": "es",
+          "value": "Consejo Supremo de Transnistria"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Opperste Sovjet van Transnistrië"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "沿ドニエストル共和国の議会"
+        },
+        "ko": {
+          "language": "ko",
+          "value": "트란스니스트리아 의회"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Parlement de Transnistrie"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "Transnistriens högsta sovjet"
+        },
+        "uk": {
+          "language": "uk",
+          "value": "Верховна Рада Придністровської Молдавської Республіки"
+        },
+        "mk": {
+          "language": "mk",
+          "value": "Врховен совет на Приднестровие"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "最高会议"
+        },
+        "de": {
+          "language": "de",
+          "value": "Oberster Sowjet von Transnistrien"
+        },
+        "id": {
+          "language": "id",
+          "value": "Parlemen Transnistria"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "Parlamentul Transnistriei"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Parlament de Transnístria"
+        },
+        "el": {
+          "language": "el",
+          "value": "κοινοβούλιο της Υπερδνειστερίας"
+        },
+        "ar": {
+          "language": "ar",
+          "value": "برلمان ترانسنيستريا"
+        },
+        "vec": {
+          "language": "vec",
+          "value": "Consejo Supremo de Transnìstria"
+        },
+        "it": {
+          "language": "it",
+          "value": "Consiglio Supremo della Repubblica di Transnistria"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "Parlamento de Ĉednestrio"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "Conselho Supremo (Transnístria)"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Vrhovni sovjet Pridnestrske republike"
+        },
+        "he": {
+          "language": "he",
+          "value": "פרלמנט טרנסניסטריה"
+        },
+        "tt-latn": {
+          "language": "tt-latn",
+          "value": "Dnestr buyı Moldovan Respublikası yuğarı sovetı"
+        },
+        "tt": {
+          "language": "tt",
+          "value": "Днестр буе Молдован Республикасы югары советы"
+        },
+        "cy": {
+          "language": "cy",
+          "value": "Senedd Transnistria"
+        },
+        "lv": {
+          "language": "lv",
+          "value": "Piedņestras Augstākā Padome"
+        },
+        "eu": {
+          "language": "eu",
+          "value": "Transnistriako Kontseilu Gorena"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "Legfelsőbb Tanács"
+        }
+      },
+      "descriptions": {
+        "ja": {
+          "language": "ja",
+          "value": "沿ドニエストル共和国の立法府"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "парламент ПМР"
+        },
+        "es": {
+          "language": "es",
+          "value": "parlamento de Transnistria"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislature of Transnistria"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement monocaméral de la Transnistrie"
+        },
+        "el": {
+          "language": "el",
+          "value": "Κοινοβούλιο της Υπερδνειστερίας"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento dello Stato non riconosciuto"
+        },
+        "tt": {
+          "language": "tt",
+          "value": "Днестр буе Молдован Республикасы парламенты"
+        },
+        "cy": {
+          "language": "cy",
+          "value": "deddfwrfa Transnistria"
+        },
+        "lv": {
+          "language": "lv",
+          "value": "Piedņestras Moldāvu Republikas parlaments"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "parlament unicameral al Transnistriei"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "Transznisztria törvényhozó testülete"
+        }
+      },
+      "claims": {
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "09b5aa313de59250d3c2d59c5d936d7dd41a7f8e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 907112,
+                  "id": "Q907112"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2656777$157647c5-47a3-f1dd-f990-34d844d1e256",
+            "rank": "normal"
+          }
+        ],
+        "P646": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P646",
+              "hash": "bf72f6e4249e9877a9c601ed262c56967da6efa2",
+              "datavalue": {
+                "value": "/m/09qnbc",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$9A65DB96-E988-42EF-9308-F5FF786A9DD5",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 15241312,
+                          "id": "Q15241312"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P577": [
+                    {
+                      "snaktype": "value",
+                      "property": "P577",
+                      "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2013-10-28T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248",
+                  "P577"
+                ]
+              }
+            ]
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "8ad4a85422d5d618b8d6ef5b03101e68c016348d",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 907112,
+                  "id": "Q907112"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2656777$b9b9d162-49a2-f3ac-c1f5-857eee6f5bfa",
+            "rank": "normal"
+          }
+        ],
+        "P527": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P527",
+              "hash": "f73d4eb3d2c99465fb5a48f52fc4a6ec2baff026",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 34925040,
+                  "id": "Q34925040"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2656777$71BBFCAF-F9A7-4642-BE31-AA6603884322",
+            "rank": "normal"
+          }
+        ],
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "e159d45b68ebca7c421297e9548ba325cbaec026",
+              "datavalue": {
+                "value": {
+                  "amount": "+33",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q2656777$54b198fe-4bb0-fd34-7ab7-0ed7cdbe6f12",
+            "rank": "normal"
+          }
+        ],
+        "P18": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P18",
+              "hash": "5ff80d3719d5a9b63c60c90a12526979e132d7b2",
+              "datavalue": {
+                "value": "Верховный совет и правительство ПМР.jpg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q2656777$C55CBAC5-DB4C-4317-A2EC-3E8DBF11D0BB",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "f7d5143ec3b9470a2f2ed6739068f924bfb592ff",
+              "datavalue": {
+                "value": "http://vspmr.org/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q2656777$B659A06C-F853-4940-AE9B-0F383DA060DF",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "b077851076ecc63d416e4f438bee1a2393624bfb",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 206855,
+                          "id": "Q206855"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "9ec6bb187da83c6a5138eea36334525b3360f4b5",
+                      "datavalue": {
+                        "value": "https://ru.wikipedia.org/w/index.php?title=Верховный_совет_Приднестровской_Молдавской_Республики&oldid=97344308",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P244": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P244",
+              "hash": "26d7473c2273f070ed14f96e521a446bb952e4dc",
+              "datavalue": {
+                "value": "n93106135",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$4C007EAE-8C15-43D3-8EE5-2E7D87AEC36C",
+            "rank": "normal"
+          }
+        ],
+        "P214": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P214",
+              "hash": "50de05d0681c49319f2637f3fe85411214c2925f",
+              "datavalue": {
+                "value": "152594902",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$1E6CDA58-23D8-447D-B54E-83005E6B3CF1",
+            "rank": "normal"
+          }
+        ],
+        "P5555": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5555",
+              "hash": "3d770011172ce211bc51d2b979f1569b3b66ab48",
+              "datavalue": {
+                "value": "Transnistria Supreme Council diagram.svg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q2656777$3E30A278-AB6D-4566-936D-06EB96CC1B83",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9278f3dd9b1414cc48e73432c8b9ec1918f84851",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "84a399d773ea9e227291a25d76f23447615096aa",
+                      "datavalue": {
+                        "value": "https://en.wikipedia.org/w/index.php?title=Supreme_Council_(Transnistria)&oldid=951464844",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "95b87324bd4a50a9bf1eec5233dafc2f89a9be0e",
+              "datavalue": {
+                "value": "Supreme Council of Transnistria",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q2656777$57c8854d-4896-d365-6a64-5adb9b7c9cef",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2656777$E1E53C8A-5DE2-447B-8755-25284A553007",
+            "rank": "normal"
+          }
+        ],
+        "P8189": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8189",
+              "hash": "9a3ee8b2962f950d979d1f76db46c541a37a64c7",
+              "datavalue": {
+                "value": "987007531062505171",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$D207FB78-3CA7-464B-83F3-CF3D167EA3AE",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "ecb7a39cf436eb1fba419853af168ef9f2ba1dab",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "a03bb6ffe37be9554492f4eea5bd18afcb57df19",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 106509962,
+                          "id": "Q106509962"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248"
+                ]
+              }
+            ]
+          }
+        ],
+        "P571": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P571",
+              "hash": "4f50e9965bf8746b7e4ab5ac7fa9d5d93b3c456d",
+              "datavalue": {
+                "value": {
+                  "time": "+1990-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 9,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q2656777$d2e1d94c-4a49-7cbe-2e64-98e53819097a",
+            "rank": "normal"
+          }
+        ],
+        "P159": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P159",
+              "hash": "c1af83caba297e7cb7cbfea0a29a4adf9cd759ff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 132572,
+                  "id": "Q132572"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2656777$0cbdf187-4db8-fdb7-5d3f-27f2acfa9f9e",
+            "rank": "normal"
+          }
+        ],
+        "P10832": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P10832",
+              "hash": "788e6a34cdf12d559c4d17517cfed4d3a126a38d",
+              "datavalue": {
+                "value": "E39PCjtJyRfxVYXFRH9wBfbXtX",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$F09065B7-544F-4AC8-AAF8-FF8DCAC754D2",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "c8cf0fe44da3b6b5cee86490f494479fa4fce3c2",
+                "snaks": {
+                  "P11797": [
+                    {
+                      "snaktype": "value",
+                      "property": "P11797",
+                      "hash": "ebc61ebee105944aa63ee48264c820fab36c5571",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 13219454,
+                          "id": "Q13219454"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P244": [
+                    {
+                      "snaktype": "value",
+                      "property": "P244",
+                      "hash": "26d7473c2273f070ed14f96e521a446bb952e4dc",
+                      "datavalue": {
+                        "value": "n93106135",
+                        "type": "string"
+                      },
+                      "datatype": "external-id"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "ebf241d60981e2c354ab224adbb84b1f56fce44e",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2024-04-24T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P11797",
+                  "P244",
+                  "P813"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2013": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2013",
+              "hash": "f0ef09ab502f2cf1d23ce964c16d530efbcd8f57",
+              "datavalue": {
+                "value": "vspmr.org",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$d767fdcc-41c9-a6ef-3410-8c6ce42d040f",
+            "rank": "normal"
+          }
+        ],
+        "P2003": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2003",
+              "hash": "430ec834a28f598d73b6b17e8873898515985723",
+              "datavalue": {
+                "value": "vspmr",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$88c661aa-4972-1f99-f9e9-fadc4d586c98",
+            "rank": "normal"
+          }
+        ],
+        "P3789": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3789",
+              "hash": "9eac521f3b0925cb8dea25c68f74bd0445afbc61",
+              "datavalue": {
+                "value": "vs_pmr",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$f53a1aa8-4c92-c66a-1af5-7535b9c64e73",
+            "rank": "normal"
+          }
+        ],
+        "P5163": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5163",
+              "hash": "3852ce850db53cfe05de961da1fd14c88521fb66",
+              "datavalue": {
+                "value": "vspmr",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$8115e68b-4461-db51-0349-1477c0b5435c",
+            "rank": "normal"
+          }
+        ],
+        "P2002": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2002",
+              "hash": "f7cd03ffdf3ee7b0a2b22ae532855e002fd53f5c",
+              "datavalue": {
+                "value": "VSPMR_ORG",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$83589b37-443a-af1d-a49f-8ac56393cd45",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2397",
+              "hash": "6ce23e43ccf86d7d120232cc540a35a101858562",
+              "datavalue": {
+                "value": "UCW4MYYb3y5gUVXRjT65j3TA",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "5c2b2c71af651e7b76e6644e8eb53193090eef8e",
+                  "datavalue": {
+                    "value": "НОВОСТИ ВЕРХОВНОГО СОВЕТА ПМР",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ],
+              "P3744": [
+                {
+                  "snaktype": "value",
+                  "property": "P3744",
+                  "hash": "fb0f39d478d1106812566c601c17f95b461e8c18",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+2180",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P3740": [
+                {
+                  "snaktype": "value",
+                  "property": "P3740",
+                  "hash": "4290dc96f5c72696f9743ebd16817f5feee06619",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+4777",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P5436": [
+                {
+                  "snaktype": "value",
+                  "property": "P5436",
+                  "hash": "61f80590ea37f3ecf33046caabcdaf4382484291",
+                  "datavalue": {
+                    "value": {
+                      "amount": "+681540",
+                      "unit": "1"
+                    },
+                    "type": "quantity"
+                  },
+                  "datatype": "quantity"
+                }
+              ],
+              "P580": [
+                {
+                  "snaktype": "value",
+                  "property": "P580",
+                  "hash": "99f44b680ebfb868884d9c9e7a96fa5b8a77cc81",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2012-11-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "10c864b536c05a94aa2d15260aa1f627ce04685e",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2024-09-08T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1810",
+              "P3744",
+              "P3740",
+              "P5436",
+              "P580",
+              "P585"
+            ],
+            "id": "Q2656777$cfad863a-4b43-6a23-452a-2cca1fdf83b2",
+            "rank": "normal"
+          }
+        ],
+        "P1705": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1705",
+              "hash": "1ba43e27c7b1a4de69f51f8ea2fa077e2fa4b132",
+              "datavalue": {
+                "value": {
+                  "text": "Советул Супрем ал Републичий Молдовенешть Нистрене",
+                  "language": "ro"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q2656777$3fc241a9-4b40-e141-6143-a95a2c3e1945",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "02d6cd36f4f28cbf630542307b749702688cdee3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 206855,
+                          "id": "Q206855"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "a668893c3ea403d4632e2fcef4b219cb796992d4",
+                      "datavalue": {
+                        "value": "https://ru.wikipedia.org/?oldid=140580792",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1705",
+              "hash": "900d615535ec08135b6e28818ee2964d89d00c5c",
+              "datavalue": {
+                "value": {
+                  "text": "Верховна Рада Придністровської Молдавської Республіки",
+                  "language": "uk"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            },
+            "type": "statement",
+            "id": "Q2656777$37f30ed1-4e1e-46f6-4ca9-74049ca54138",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "02d6cd36f4f28cbf630542307b749702688cdee3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 206855,
+                          "id": "Q206855"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "a668893c3ea403d4632e2fcef4b219cb796992d4",
+                      "datavalue": {
+                        "value": "https://ru.wikipedia.org/?oldid=140580792",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P13591": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P13591",
+              "hash": "c6cb2db2cf8895aae7ff96c952d58d530eb0dfc7",
+              "datavalue": {
+                "value": "place/4daeba84-62da-4b60-9faf-403118efa08d",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2656777$4E0712CF-C398-44AB-820F-CA784CDC1A28",
+            "rank": "normal"
+          }
+        ],
+        "P11245": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11245",
+              "hash": "4eb817b68eab69eb5912e4c4dc97a6ff624332c7",
+              "datavalue": {
+                "value": "vspmr",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2397": [
+                {
+                  "snaktype": "value",
+                  "property": "P2397",
+                  "hash": "6ce23e43ccf86d7d120232cc540a35a101858562",
+                  "datavalue": {
+                    "value": "UCW4MYYb3y5gUVXRjT65j3TA",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "2f758429988ac3dcd18fc001c902e331eecb6081",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2025-10-20T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2397",
+              "P585"
+            ],
+            "id": "Q2656777$7343f6ab-26c7-47ec-8de8-106e5e79c53c",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "8a95c9f2161210d4218cbb2c35c247d1f3c9a32c",
+                "snaks": {
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "2edc918b012f00c1e8f5ab41c3bcabb32052ab48",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2025-10-20T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ],
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "e6e6374525f7d680f01ff599745f367fb1369b87",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8056784,
+                          "id": "Q8056784"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P813",
+                  "P248"
+                ]
+              }
+            ]
+          }
+        ],
+        "P5436": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5436",
+              "hash": "c43dd5bc02659176682537aa7739a663ac0ff4ef",
+              "datavalue": {
+                "value": {
+                  "amount": "+896976",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P2397": [
+                {
+                  "snaktype": "value",
+                  "property": "P2397",
+                  "hash": "6ce23e43ccf86d7d120232cc540a35a101858562",
+                  "datavalue": {
+                    "value": "UCW4MYYb3y5gUVXRjT65j3TA",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P11245": [
+                {
+                  "snaktype": "value",
+                  "property": "P11245",
+                  "hash": "4eb817b68eab69eb5912e4c4dc97a6ff624332c7",
+                  "datavalue": {
+                    "value": "vspmr",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "c55bb22b4b7f48077a25b955226a362751c1fee2",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2025-11-27T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P459": [
+                {
+                  "snaktype": "value",
+                  "property": "P459",
+                  "hash": "959bc28be5ab30062f780f9f030e7519a2b3e5bd",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 63185508,
+                      "id": "Q63185508"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P2397",
+              "P11245",
+              "P585",
+              "P459"
+            ],
+            "id": "Q2656777$1e39ec1c-c2df-4522-aff5-e9d35d5b162d",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "bb73137a99ccf481d41997ddc1f53a6344b0cd15",
+                "snaks": {
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "2d958445d0197a1e6c585a11c59dd6fd15ed19fb",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2025-11-27T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ],
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "e6e6374525f7d680f01ff599745f367fb1369b87",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8056784,
+                          "id": "Q8056784"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P813",
+                  "P248"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

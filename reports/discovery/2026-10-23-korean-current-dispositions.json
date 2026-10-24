@@ -1,0 +1,76 @@
+{
+  "research_date": "2026-10-23",
+  "scope": "Sixteen current first-level Korean regional councils, including the integrated successor; two predecessors retained separately.",
+  "status": "individual_identifier_and_selected_service_followup_recorded_not_full_country_service_certification",
+  "current_councils": 16,
+  "published_now": 9,
+  "remaining": [
+    {
+      "id": "south-korea--chungcheongbuk",
+      "confirmed": "Exact council Q16100304, country/jurisdiction claims and institutional route crosswalk.",
+      "unresolved": "Own root returned HTTP502 in Chromium and timed out in web retrieval. No current full-recording playback established in this follow-up.",
+      "disposition": "source_access_and_playback_unresolved"
+    },
+    {
+      "id": "south-korea--daejeon",
+      "confirmed": "Exact council Q16095510; own dated 299th plenary index and public agenda/transcript pages; designated YouTube channel.",
+      "unresolved": "Exact native1September MP4 player decoded zero frames in Chromium/WebKit; normal diagnostic remained unready. Direct HEAD to exact observed MP4 returns403. Provider index showed edited clips; full playable recording still unconfirmed.",
+      "disposition": "recorded_playback_unresolved"
+    },
+    {
+      "id": "south-korea--gangwon",
+      "confirmed": "Exact council Q16093243; primary web reader identifies current council and designates @gwstatecouncil and livecouncil.gwd.go.kr.",
+      "unresolved": "Primary browser root and designated full-broadcast host timed out. Designated YouTube index shows five-minute speeches/promotional material; no full ordinary sitting validated in this pass.",
+      "disposition": "full_recorded_service_unresolved"
+    },
+    {
+      "id": "south-korea--gyeonggi",
+      "confirmed": "Exact council Q20779829; own primary web page designates live.ggc.go.kr, which renders current session/calendar navigation in Chromium.",
+      "unresolved": "Two dated official native plenary viewers (12October,18September2026) load agenda/transcript but no decoded video in either engine. Date/navigation is confirmed separately from playback.",
+      "disposition": "recorded_playback_unresolved"
+    },
+    {
+      "id": "south-korea--jeju",
+      "confirmed": "Exact council Q16100817, country/jurisdiction claims and own institutional route.",
+      "unresolved": "Own root returns a visible web-firewall block with HTTP200; not an empty page or a successful service check. No bypass attempted.",
+      "disposition": "source_access_unresolved"
+    },
+    {
+      "id": "south-korea--seoul",
+      "confirmed": "Exact council Q12601388; own YouTube function designates UC7ncBppTSon0LEU_kcgz7eg, distinct from executive channel;25August Operations Committee ordinance proposal by Lee So-ra decoded and visually confirmed in Chromium. Own archive explicitly prohibits commercial use of meeting video under council meeting rule49-3.",
+      "unresolved": "Second7September committee item and selected plenary have no decoded media in Chromium; WebKit viewer did not complete ordinary page loading, with committed document halted at an external jQuery include. Do not describe this as proven codec incompatibility. One successful selected recording is not full archive confirmation; further cross-date service evidence retained as a publication gate.",
+      "disposition": "partial_recording_confirmation_publication_held"
+    },
+    {
+      "id": "south-korea--ulsan",
+      "confirmed": "Exact council Q16099049, current council identity and institutional route crosswalk.",
+      "unresolved": "Own root times out in browser and web retrieval. Other publishers mentioning council proceedings do not by themselves establish an own designated full-recording service.",
+      "disposition": "source_access_and_provider_unresolved"
+    }
+  ],
+  "exact_identifier_items_located": 16,
+  "sparse_item_limitation": "Successor Q140198355 only has its exact Korean label; current identity/succession independently corroborated from the own council and enacted special Act. No type/country/website claims invented.",
+  "confirmed_publications": [
+    "south-korea-busan-council-recordings",
+    "south-korea-chungcheongnam-council-recordings",
+    "south-korea-daegu-council-recordings",
+    "south-korea-gyeongsangbuk-council-recordings",
+    "south-korea-gyeongsangnam-council-recordings",
+    "south-korea-incheon-council-recordings",
+    "south-korea-jeonbuk-council-recordings",
+    "south-korea-jeonnam-gwangju-council-recordings",
+    "south-korea-sejong-council-recordings"
+  ],
+  "all_metadata_and_streams_certified": false,
+  "not_no_service_findings": true,
+  "evidence_reports": [
+    "reports/discovery/2026-10-23-korean-remaining-identities.json",
+    "reports/health/2026-10-23-korean-remaining-primary.json",
+    "reports/health/2026-10-23-korean-native-diagnostics.json",
+    "reports/health/2026-10-23-daejeon-media-headers.json",
+    "reports/health/2026-10-23-gyeonggi-recordings.json",
+    "reports/health/2026-10-23-gangwon-broadcast-navigation.json",
+    "reports/health/2026-10-23-seoul-native-final.json",
+    "reports/health/2026-10-23-seoul-plenary-business.json"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "method": "Bounded normal native load/readiness wait, seek to3600 inside source full recording, then muted play. No media-source substitutions or access/consent bypass. This investigates earlier buffering/AbortError and a later Zug business sample, not full audio or coverage certification.",
+  "results": [
+    {
+      "id": "geneva-oct1",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:25:03.482Z",
+      "muted": true,
+      "title": "Grand Conseil de Genève",
+      "duration": 6987.766,
+      "first": {
+        "time": 3602.472393,
+        "width": 1280,
+        "height": 720,
+        "frames": 123,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 3603.981196,
+        "width": 1280,
+        "height": 720,
+        "frames": 168,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_later_sample_requires_visual_review",
+      "screenshot": "/tmp/geneva-zug-followup-geneva-oct1-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "1October2026: Stéphane Florey speaking/gesturing at a lit parliamentary microphone during PL13730-A; source date, speaker and bill labels visible."
+    },
+    {
+      "id": "geneva-jan22",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030308/42/",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:25:14.511Z",
+      "muted": true,
+      "title": "Grand Conseil de Genève",
+      "duration": 6767.92,
+      "first": {
+        "time": 3602.469479,
+        "width": 1280,
+        "height": 720,
+        "frames": 81,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 3603.982176,
+        "width": 1280,
+        "height": 720,
+        "frames": 127,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_later_sample_requires_visual_review",
+      "screenshot": "/tmp/geneva-zug-followup-geneva-jan22-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "22January2026: Alia Chaker Mangeat reading/speaking at the lit parliamentary microphone during PL13578-B. WebKit also displays the supplied political-rights committee-report text; caption coverage/accuracy is not source-wide certification."
+    },
+    {
+      "id": "zug-aug27",
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2ab6124a8ba4677535eaac",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:25:25.171Z",
+      "muted": true,
+      "outcome": "playback_followup_unresolved",
+      "error": "TimeoutError: page.waitForFunction: Timeout 16000ms exceeded.",
+      "method_limitation": "This follow-up called native load() on the provider-managed HLS player and did not establish playback readiness. It does not negate the successful initial source-player playback in both engines."
+    },
+    {
+      "id": "geneva-oct1",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:25:46.535Z",
+      "muted": true,
+      "title": "Grand Conseil de Genève",
+      "duration": 6987.8,
+      "first": {
+        "time": 3600,
+        "width": 1280,
+        "height": 720,
+        "frames": 6,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 3600,
+        "width": 1280,
+        "height": 720,
+        "frames": 63,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": false,
+      "outcome": "later_sample_not_advancing",
+      "screenshot": "/tmp/geneva-zug-followup-geneva-oct1-webkit.png"
+    },
+    {
+      "id": "geneva-jan22",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030308/42/",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:26:02.874Z",
+      "muted": true,
+      "title": "Grand Conseil de Genève",
+      "duration": 6767.921,
+      "first": {
+        "time": 3601.522829458675,
+        "width": 1280,
+        "height": 720,
+        "frames": 39,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 3603.033376833577,
+        "width": 1280,
+        "height": 720,
+        "frames": 102,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_later_sample_requires_visual_review",
+      "screenshot": "/tmp/geneva-zug-followup-geneva-jan22-webkit.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "22January2026: Alia Chaker Mangeat reading/speaking at the lit parliamentary microphone during PL13578-B. WebKit also displays the supplied political-rights committee-report text; caption coverage/accuracy is not source-wide certification."
+    },
+    {
+      "id": "zug-aug27",
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2ab6124a8ba4677535eaac",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:26:17.294Z",
+      "muted": true,
+      "outcome": "playback_followup_unresolved",
+      "error": "TimeoutError: page.waitForFunction: Timeout 16000ms exceeded.",
+      "method_limitation": "This follow-up called native load() on the provider-managed HLS player and did not establish playback readiness. It does not negate the successful initial source-player playback in both engines."
+    }
+  ]
+}

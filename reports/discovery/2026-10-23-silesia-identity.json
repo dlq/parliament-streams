@@ -1,0 +1,145 @@
+{
+  "id": "Q7514834",
+  "lastrevid": 2555604304,
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "Silesian Regional Assembly"
+    },
+    "pl": {
+      "language": "pl",
+      "value": "Sejmik Województwa Śląskiego"
+    },
+    "ru": {
+      "language": "ru",
+      "value": "Сеймик Силезского воеводства"
+    },
+    "de": {
+      "language": "de",
+      "value": "Regionalversammlung Schlesien"
+    }
+  },
+  "claims": {
+    "P31": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 11204,
+              "id": "Q11204"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q7514834$65AAAC23-2499-427E-9DAE-343582F4DE19",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "hash": "80a5ad700a55e9e49060c3efd768ee2725435b4e",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 675911,
+              "id": "Q675911"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q7514834$fc7f3e78-45f3-a838-83ab-77602e939895",
+        "rank": "normal"
+      }
+    ],
+    "P17": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P17",
+          "hash": "88bdf0debebfba0d0f20c85ee32a18fb3e6c71a6",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 36,
+              "id": "Q36"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q7514834$0541e3f7-42e7-d322-aad9-80a8085db4c5",
+        "rank": "normal"
+      }
+    ],
+    "P1001": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1001",
+          "hash": "1a9c312c7cac3fe8cf55404adeb94f6b99f2c416",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 54181,
+              "id": "Q54181"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q7514834$fb42a044-4798-2d32-60b8-cb98aef667a5",
+        "rank": "normal"
+      }
+    ],
+    "P856": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P856",
+          "hash": "f167c802341cb58ceb4963dc61715acce9202b94",
+          "datavalue": {
+            "value": "http://sejmik.slaskie.pl/",
+            "type": "string"
+          },
+          "datatype": "url"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P407": [
+            {
+              "snaktype": "value",
+              "property": "P407",
+              "hash": "b9b821e8a9140ec208fb522e0aa113d5742f6fba",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 809,
+                  "id": "Q809"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P407"
+        ],
+        "id": "Q7514834$82002b58-4ce3-3793-059e-1e68b38043b3",
+        "rank": "normal"
+      }
+    ],
+    "P2397": null
+  }
+}

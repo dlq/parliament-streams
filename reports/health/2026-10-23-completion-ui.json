@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-23T18:51:09.074Z",
+  "allPassed": true,
+  "checks": [
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> four regional polygons and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 1280,
+      "catalogue": 165,
+      "regions": 67,
+      "validatedNewEntries": 4,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> four regional polygons and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 320,
+      "catalogue": 165,
+      "regions": 67,
+      "validatedNewEntries": 4,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> four regional polygons and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 1280,
+      "catalogue": 165,
+      "regions": 67,
+      "validatedNewEntries": 4,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> four regional polygons and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 320,
+      "catalogue": 165,
+      "regions": 67,
+      "validatedNewEntries": 4,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

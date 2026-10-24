@@ -56,5 +56,8 @@ jobs:
       - name: Validate site accessibility
         run: make accessibility-check
 
-      - name: Verify JSON, site data, compilation, tests, and coverage
-        run: make json-check site-data-check compile coverage
+      - name: Verify JSON, research rules, history, site data, tests, and coverage
+        run: >-
+          make json-check fallbacks-validate discovery-targets-validate
+          us-candidates-validate discovery-decisions-validate institution-inventory-validate
+          validation-history-check site-data-check institution-site-data-check compile coverage

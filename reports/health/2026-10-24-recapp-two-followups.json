@@ -1,0 +1,105 @@
+{
+  "method": "Only the two outstanding checks: exact source-generated public deep links, normal redirect completion and bounded readiness wait. No programmatic seeking or media-source modification; samples remain inside the selected speech segment.",
+  "results": [
+    {
+      "body_id": "switzerland--glarus",
+      "engine": "chromium",
+      "date": "26. August 2026",
+      "url": "https://gl.recapp.ch/shareparl?agendaItemUid=2192f1f0-3869-452e-b3a2-35f4a2927b56&scroll=true&autoplay=false",
+      "checked_at": "2026-10-24T04:43:31.834Z",
+      "muted": true,
+      "status": 200,
+      "final_url": "https://gl.recapp.ch/shareparl?agendaItemUid=2192f1f0-3869-452e-b3a2-35f4a2927b56&scroll=true&autoplay=false",
+      "title": "Zingg Samuel • Präsident | 2025-73 Motion Mathias Zopfi, Engi, und Unterzeichnende «Verankerung des Vogelschutzes im Raumentwicklungs- und Baugesetz» - Audiovisuelles Archiv des Landrates",
+      "breadcrumb": [
+        "Audiovisuelles Archiv des Landrates",
+        "SUCHEN",
+        "2026",
+        "/",
+        "26. August",
+        "21. Oktober",
+        "26. August",
+        "2026-29 Feststellung der Präsenz"
+      ],
+      "segment_bounds": {
+        "start": 739.939,
+        "end": 775.338
+      },
+      "media_src": "https://recapp-prod-gl-viewer.s3.ewstorage.ch/mediaDash/6a8c5b0bf661afa82c72fa64_converted_media_file_1787739760477.mp4#t=739.939,775.338",
+      "first": {
+        "time": 740.362635,
+        "width": 1280,
+        "height": 720,
+        "frames": 216,
+        "ready": 4,
+        "paused": false,
+        "error": null
+      },
+      "later": {
+        "time": 741.875143,
+        "width": 1280,
+        "height": 720,
+        "frames": 239,
+        "ready": 4,
+        "paused": false,
+        "error": null
+      },
+      "decoded": true,
+      "inside_selected_segment": true,
+      "outcome": "decoded_visually_identified_scoped_legislative_proceedings",
+      "screenshot": "/tmp/recapp-final-switzerland--glarus-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Chair Samuel Zingg reading and speaking at a lit microphone during the 26 August 2026 sitting, with the bird-protection motion selected. Motion identifier2025-73 is not the meeting year."
+    },
+    {
+      "body_id": "switzerland--jura",
+      "engine": "webkit",
+      "date": "2 septembre 2026",
+      "url": "https://ju.recapp.ch/shareparl/?agendaItemUid=9ba4ecc3-4f33-4a79-9be1-6bd7c7ca3439&scroll=true&autoplay=false",
+      "checked_at": "2026-10-24T04:43:41.693Z",
+      "muted": true,
+      "status": 200,
+      "final_url": "https://ju.recapp.ch/shareparl?agendaItemUid=9ba4ecc3-4f33-4a79-9be1-6bd7c7ca3439&scroll=true&autoplay=false",
+      "title": "Macquat Fabrice • député | Modification de la loi concernant la Chambre cantonale de conciliation (première lecture) - Archives audiovisuelles du Parlement du canton du Jura",
+      "breadcrumb": [
+        "Archives audiovisuelles du Parlement du canton du Jura",
+        "RECHERCHE",
+        "2026",
+        "/",
+        "2 septembre",
+        "2 septembre",
+        "1 ",
+        "Communications"
+      ],
+      "segment_bounds": {
+        "start": 4714.706,
+        "end": 4725.337
+      },
+      "media_src": "https://recapp-prod-ju-viewer.s3.ewstorage.ch/mediaDash/6a8d3deda806c92b608299cf_converted_media_file_1788346689284.mp4#t=4714.706,4725.337",
+      "first": {
+        "time": 4715.122532958047,
+        "width": 1280,
+        "height": 720,
+        "frames": 57,
+        "ready": 4,
+        "paused": false,
+        "error": null
+      },
+      "later": {
+        "time": 4716.636211874425,
+        "width": 1280,
+        "height": 720,
+        "frames": 114,
+        "ready": 4,
+        "paused": false,
+        "error": null
+      },
+      "decoded": true,
+      "inside_selected_segment": true,
+      "outcome": "decoded_visually_identified_scoped_legislative_proceedings",
+      "screenshot": "/tmp/recapp-final-switzerland--jura-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Fabrice Macquat presiding at a lit table microphone under the Jura identity during first-reading conciliation legislation; the supplied speech text introduces the commission rapporteur. Text is not independently verified audio or a full caption track."
+    }
+  ]
+}

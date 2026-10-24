@@ -1,0 +1,66 @@
+{
+  "reviewed_on": "2026-10-24",
+  "method": "Individual reconciliation of exact primary-designated navigation, decoded checks, visually read captures and preserved failures. Tool selection/readiness failures are not no-service findings. No outreach or consent acceptance.",
+  "records": [
+    {
+      "body_id": "switzerland--geneve-genf",
+      "confirmed": "Exact parliamentQ509892, Switzerland/Geneva and own website correspond. Official archive contains1October and22January2026 business: Chromium shows StéphaneFlorey onPL13730-A and AliaChakerMangeat onPL13578-B. January also decodes inWebKit; October later samples stall/timeout there. Source conditions explicitly allow third-party dissemination of public-session videos, with all alterations forbidden absent prior written bureau authorization.",
+      "unresolved": [
+        "OctoberWebKitplayback_unconfirmed",
+        "current_live_complete_rooms_all_audio_accessibility_and_conditions_implementation_unverified"
+      ],
+      "published_this_pass": false,
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--zug",
+      "confirmed": "Own site designates dated24September and27August2026 recordings; both source-player samples decode inChromium/WebKit and show chamber/chair proceedings. First current link is the future29October sitting, not an observed live feed.",
+      "unresolved": [
+        "Q1948527_vs_Q113162956_institution_scope_unresolved",
+        "full_rooms_live_audio_accessibility_and_independent_reuse_unverified"
+      ],
+      "published_this_pass": false,
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--st-gallen",
+      "confirmed": "Exact parliamentQ2082614 and primary provider designation match. Selected2March2026court-law agenda has an actual Schulthess-Grabs speaker clip decoded inChromium. Default Unterlagen entries have zero-duration document markers, not proof of broken media.3March disability-law Warzinek-Mels and other-engine checks did not complete decoded-frame verification.",
+      "unresolved": [
+        "second_selected_sitting_and_two_engine_speaker_playback_unresolved",
+        "current_live_full_rooms_audio_accessibility_and_reuse_unverified"
+      ],
+      "published_this_pass": false,
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--basel-stadt",
+      "confirmed": "Exact parliamentQ670958 and primary archive designation match; source has dated session/video index and conditionally licensed audiovisual material. Current default chair/agenda player exists, but selected ordinary-business session navigation did not produce an independently confirmed new clip.",
+      "unresolved": [
+        "selected_substantive_recordings_and_session_identity_unresolved",
+        "licence_conditions_full_coverage_audio_accessibility_unverified"
+      ],
+      "published_this_pass": false,
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--valais-wallis",
+      "confirmed": "Exact parliamentQ2275463 and primary designation ofvs.recapp.chmatch.8September2026dog-law agenda deep link decodes inChromium; initial visual sample shows the parliamentary dais with prior judicial-fees graphics, so it is a boundary transition.",
+      "unresolved": [
+        "selected_substantive_speech_and_second_date_unresolved",
+        "WebKit_segment_check_unconfirmed",
+        "current_live_all_rooms_audio_accessibility_reuse_unverified"
+      ],
+      "published_this_pass": false,
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "source_reports": [
+    "reports/health/2026-10-24-swiss-next-player-navigation.json",
+    "reports/health/2026-10-24-stgallen-speaker-segments.json",
+    "reports/health/2026-10-24-five-swiss-recapp-selected-segments.json",
+    "reports/health/2026-10-24-swiss-native-selected-recordings.json",
+    "reports/health/2026-10-24-geneva-zug-later-recordings.json",
+    "reports/health/2026-10-24-geneva-october-other-segment.json",
+    "reports/health/2026-10-24-archive-link-followup.json"
+  ]
+}

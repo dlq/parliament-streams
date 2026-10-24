@@ -1,0 +1,188 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "korea-000-0",
+      "body_ids": [
+        "south-korea--busan"
+      ],
+      "url": "https://www.youtube.com/watch?v=-W1i_jFr0rw&t=1200s",
+      "title": "\ubd80\uc0b0\uad11\uc5ed\uc2dc\uc758\ud68c \uc81c339\ud68c \uc784\uc2dc\ud68c \uc81c4\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Busan 339th session plenary 4/3 stand-by graphics at20min.",
+      "sample_time_seconds": 1205.315974,
+      "screenshot": "/tmp/provider-sample-korea-000-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-000-1",
+      "body_ids": [
+        "south-korea--busan"
+      ],
+      "url": "https://www.youtube.com/watch?v=TYK2OGINRw0&t=1200s",
+      "title": "\ubd80\uc0b0\uad11\uc5ed\uc2dc\uc758\ud68c \uc81c339\ud68c \uc784\uc2dc\ud68c \uc81c3\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Busan 339th session plenary 4/3 stand-by graphics at20min.",
+      "sample_time_seconds": 1205.316278,
+      "screenshot": "/tmp/provider-sample-korea-000-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-003-0",
+      "body_ids": [
+        "south-korea--chungcheongnam"
+      ],
+      "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=1200s",
+      "title": "\uc81c371\ud68c \uc784\uc2dc\ud68c \uc81c4\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Chungnam meeting-preparation stand-by graphic.",
+      "sample_time_seconds": 1205.242583,
+      "screenshot": "/tmp/provider-sample-korea-003-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-003-1",
+      "body_ids": [
+        "south-korea--chungcheongnam"
+      ],
+      "url": "https://www.youtube.com/watch?v=ggqR49FOH7M&t=1200s",
+      "title": "\uc81c371\ud68c \uc784\uc2dc\ud68c \uc81c3\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Chungnam meeting-preparation stand-by graphic.",
+      "sample_time_seconds": 1205.247007,
+      "screenshot": "/tmp/provider-sample-korea-003-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-004-0",
+      "body_ids": [
+        "south-korea--daegu"
+      ],
+      "url": "https://www.youtube.com/watch?v=AwSD2kvqCvk&t=1200s",
+      "title": "\uc81c329\ud68c \uc784\uc2dc\ud68c \uc81c2\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Daegu 329th extraordinary session plenary2/1 preparation graphic.",
+      "sample_time_seconds": 1205.250717,
+      "screenshot": "/tmp/provider-sample-korea-004-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-004-1",
+      "body_ids": [
+        "south-korea--daegu"
+      ],
+      "url": "https://www.youtube.com/watch?v=SECviLhZ2VY&t=1200s",
+      "title": "\uc81c329\ud68c \uc784\uc2dc\ud68c \uac1c\ud68c\uc2dd \ubc0f \uc81c1\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Daegu 329th extraordinary session plenary2/1 preparation graphic.",
+      "sample_time_seconds": 1205.251405,
+      "screenshot": "/tmp/provider-sample-korea-004-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-005-0",
+      "body_ids": [
+        "south-korea--gyeongsangbuk"
+      ],
+      "url": "https://www.youtube.com/watch?v=rIJlg4rAGpU&t=1053s",
+      "title": "1st Plenary Session of the 362nd Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Gyeongsangbuk plenary chair at lectern and separate chamber voting/agenda view with interpreter; sessions362/361.",
+      "sample_time_seconds": 1058.253774,
+      "screenshot": "/tmp/provider-sample-korea-005-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-005-1",
+      "body_ids": [
+        "south-korea--gyeongsangbuk"
+      ],
+      "url": "https://www.youtube.com/watch?v=hRpgTe8QZgI&t=1200s",
+      "title": "2nd Plenary Session of the 361st Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Gyeongsangbuk plenary chair at lectern and separate chamber voting/agenda view with interpreter; sessions362/361.",
+      "sample_time_seconds": 1205.273835,
+      "screenshot": "/tmp/provider-sample-korea-005-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-006-0",
+      "body_ids": [
+        "south-korea--incheon"
+      ],
+      "url": "https://www.youtube.com/watch?v=wwSSXfjA9KY&t=1200s",
+      "title": "\uc81c313\ud68c \uc778\ucc9c\uad11\uc5ed\uc2dc\uc758\ud68c \uc784\uc2dc\ud68c_\uc81c5\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Incheon session313 plenary5/4 chair and separate member at microphones with interpreters.",
+      "sample_time_seconds": 1205.275129,
+      "screenshot": "/tmp/provider-sample-korea-006-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-006-1",
+      "body_ids": [
+        "south-korea--incheon"
+      ],
+      "url": "https://www.youtube.com/watch?v=R00uf_ymFHY&t=1200s",
+      "title": "313th Incheon Metropolitan Council Extraordinary Session_4th Plenary Meeting - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Incheon session313 plenary5/4 chair and separate member at microphones with interpreters.",
+      "sample_time_seconds": 1205.249128,
+      "screenshot": "/tmp/provider-sample-korea-006-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-007-0",
+      "body_ids": [
+        "south-korea--jeonbuk"
+      ],
+      "url": "https://www.youtube.com/watch?v=wsDN0Dtwxmw&t=1200s",
+      "title": "[LIVE] \ud83d\udcfa \uc81c432\ud68c \uc784\uc2dc\ud68c \uc81c4\ucc28 \ubcf8\ud68c\uc758(2026.10.23.) \ud83d\udce2 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Jeonbuk session432 plenary4 member Park Suhyeong on AI talent-management policy and plenary3 governor Lee Won-taek at lectern, interpreter.",
+      "sample_time_seconds": 1205.292809,
+      "screenshot": "/tmp/provider-sample-korea-007-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-007-1",
+      "body_ids": [
+        "south-korea--jeonbuk"
+      ],
+      "url": "https://www.youtube.com/watch?v=KIki5X0QgMw&t=1200s",
+      "title": "[LIVE] \ud83d\udcfa \uc81c432\ud68c \uc784\uc2dc\ud68c \uc81c3\ucc28 \ubcf8\ud68c\uc758(2026.10.14.) \ud83d\udce2 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Jeonbuk session432 plenary4 member Park Suhyeong on AI talent-management policy and plenary3 governor Lee Won-taek at lectern, interpreter.",
+      "sample_time_seconds": 1205.311587,
+      "screenshot": "/tmp/provider-sample-korea-007-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-008-0",
+      "body_ids": [
+        "south-korea--sejong"
+      ],
+      "url": "https://www.youtube.com/watch?v=pRsTZWyDxr8&t=1200s",
+      "title": "[\uc138\uc885\uc2dc\uc758\ud68c] \uc81c109\ud68c \uc815\ub840\ud68c \uad50\uc548\uc704 \uc81c3\ucc28 \ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Sejong education-safety and urban-environment committee 23 October2026 starting-soon graphics.",
+      "sample_time_seconds": 1205.269772,
+      "screenshot": "/tmp/provider-sample-korea-008-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "korea-008-1",
+      "body_ids": [
+        "south-korea--sejong"
+      ],
+      "url": "https://www.youtube.com/watch?v=SyhazEqap4g&t=1200s",
+      "title": "[\uc138\uc885\uc2dc\uc758\ud68c] \uc81c109\ud68c \uc815\ub840\ud68c \ub3c4\ud658\uc704 \uc81c3\ucc28 \ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Sejong education-safety and urban-environment committee 23 October2026 starting-soon graphics.",
+      "sample_time_seconds": 1205.244313,
+      "screenshot": "/tmp/provider-sample-korea-008-1.png",
+      "full_service_certified": false
+    }
+  ]
+}

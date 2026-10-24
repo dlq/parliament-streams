@@ -1,0 +1,519 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Province-item website assertions are discovery leads only, not legislative websites or ownership verification.",
+  "results": [
+    {
+      "id": "philippines--abra",
+      "province": "Abra",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q295105",
+      "revision": 2538431590,
+      "label": {
+        "language": "en",
+        "value": "Abra"
+      },
+      "websites": []
+    },
+    {
+      "id": "philippines--albay",
+      "province": "Albay",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13726",
+      "revision": 2545168168,
+      "label": null,
+      "websites": [
+        "http://albay.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--antique",
+      "province": "Antique",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q472760",
+      "revision": 2535579479,
+      "label": {
+        "language": "en",
+        "value": "antique"
+      },
+      "websites": []
+    },
+    {
+      "id": "philippines--apayao",
+      "province": "Apayao",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13728",
+      "revision": 2552386918,
+      "label": {
+        "language": "en",
+        "value": "Apayao"
+      },
+      "websites": [
+        "http://www.apayao.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--basilan",
+      "province": "Basilan",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13737",
+      "revision": 2554805732,
+      "label": null,
+      "websites": [
+        "https://www.basilan.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--batanes",
+      "province": "Batanes",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13740",
+      "revision": 2545168373,
+      "label": null,
+      "websites": []
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "province": "Camarines Sur",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13767",
+      "revision": 2549937570,
+      "label": {
+        "language": "en",
+        "value": "Camarines Sur"
+      },
+      "websites": [
+        "http://camarinessur.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--capiz",
+      "province": "Capiz",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13772",
+      "revision": 2545168112,
+      "label": {
+        "language": "en",
+        "value": "Capiz"
+      },
+      "websites": [
+        "http://capiz.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--catanduanes",
+      "province": "Catanduanes",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13778",
+      "revision": 2559700910,
+      "label": {
+        "language": "en",
+        "value": "Catanduanes"
+      },
+      "websites": [
+        "http://catanduanes.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--davao-oriental",
+      "province": "Davao Oriental",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13806",
+      "revision": 2553735963,
+      "label": null,
+      "websites": [
+        "http://www.davaooriental.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--davao-de-oro",
+      "province": "Davao de Oro",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13789",
+      "revision": 2548085117,
+      "label": null,
+      "websites": [
+        "http://www.davaodeoro.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--davao-del-norte",
+      "province": "Davao del Norte",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13792",
+      "revision": 2559458258,
+      "label": {
+        "language": "en",
+        "value": "Davao del Norte"
+      },
+      "websites": [
+        "http://www.davaodelnorte.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--guimaras",
+      "province": "Guimaras",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13810",
+      "revision": 2548075761,
+      "label": {
+        "language": "en",
+        "value": "Guimaras"
+      },
+      "websites": [
+        "http://guimaras.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--ifugao",
+      "province": "Ifugao",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13812",
+      "revision": 2548075154,
+      "label": {
+        "language": "en",
+        "value": "Ifugao"
+      },
+      "websites": [
+        "http://www.ifugao.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--ilocos-norte",
+      "province": "Ilocos Norte",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13813",
+      "revision": 2548074721,
+      "label": {
+        "language": "en",
+        "value": "Ilocos Norte"
+      },
+      "websites": [
+        "https://www.ilocosnorte.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--kalinga",
+      "province": "Kalinga",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13827",
+      "revision": 2546729790,
+      "label": null,
+      "websites": [
+        "http://www.kalinga.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--laguna",
+      "province": "Laguna",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q228869",
+      "revision": 2538299463,
+      "label": {
+        "language": "en",
+        "value": "Laguna"
+      },
+      "websites": []
+    },
+    {
+      "id": "philippines--lanao-del-norte",
+      "province": "Lanao del Norte",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13841",
+      "revision": 2548070976,
+      "label": {
+        "language": "en",
+        "value": "Lanao del Norte"
+      },
+      "websites": [
+        "http://www.lanaodelnorte.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--lanao-del-sur",
+      "province": "Lanao del Sur",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13843",
+      "revision": 2548070409,
+      "label": {
+        "language": "en",
+        "value": "Lanao del Sur"
+      },
+      "websites": [
+        "http://www.lanaodelsur.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--leyte",
+      "province": "Leyte",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q211377",
+      "revision": 2521620841,
+      "label": {
+        "language": "en",
+        "value": "Leyte"
+      },
+      "websites": []
+    },
+    {
+      "id": "philippines--maguindanao-del-norte",
+      "province": "Maguindanao del Norte",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q114019739",
+      "revision": 2548776849,
+      "label": {
+        "language": "en",
+        "value": "Maguindanao del Norte"
+      },
+      "websites": []
+    },
+    {
+      "id": "philippines--maguindanao-del-sur",
+      "province": "Maguindanao del Sur",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q114019748",
+      "revision": 2548776868,
+      "label": {
+        "language": "en",
+        "value": "Maguindanao del Sur"
+      },
+      "websites": []
+    },
+    {
+      "id": "philippines--marinduque",
+      "province": "Marinduque",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13846",
+      "revision": 2548069424,
+      "label": null,
+      "websites": [
+        "http://www.marinduque.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--masbate",
+      "province": "Masbate",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13847",
+      "revision": 2548069119,
+      "label": {
+        "language": "en",
+        "value": "Masbate"
+      },
+      "websites": [
+        "http://masbate.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--misamis-occidental",
+      "province": "Misamis Occidental",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13857",
+      "revision": 2548066310,
+      "label": {
+        "language": "en",
+        "value": "Misamis Occidental"
+      },
+      "websites": [
+        "http://misocc.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--misamis-oriental",
+      "province": "Misamis Oriental",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13860",
+      "revision": 2548066130,
+      "label": null,
+      "websites": [
+        "http://www.misamisoriental.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--negros-oriental",
+      "province": "Negros Oriental",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13863",
+      "revision": 2548065135,
+      "label": {
+        "language": "en",
+        "value": "Negros Oriental"
+      },
+      "websites": [
+        "http://www.negor.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--northern-samar",
+      "province": "Northern Samar",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13864",
+      "revision": 2548064946,
+      "label": {
+        "language": "en",
+        "value": "Northern Samar"
+      },
+      "websites": [
+        "https://northernsamar.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--palawan",
+      "province": "Palawan",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13869",
+      "revision": 2548063538,
+      "label": {
+        "language": "en",
+        "value": "Palawan"
+      },
+      "websites": [
+        "http://www.palawan.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--quirino",
+      "province": "Quirino",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13873",
+      "revision": 2552386954,
+      "label": null,
+      "websites": [
+        "http://www.quirinoprovince.org"
+      ]
+    },
+    {
+      "id": "philippines--romblon",
+      "province": "Romblon",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13875",
+      "revision": 2548062485,
+      "label": {
+        "language": "en",
+        "value": "Romblon"
+      },
+      "websites": [
+        "https://romblonparadise.com/"
+      ]
+    },
+    {
+      "id": "philippines--samar",
+      "province": "Samar",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13876",
+      "revision": 2547905993,
+      "label": {
+        "language": "en",
+        "value": "Samar"
+      },
+      "websites": [
+        "https://samar.lgu-ph.com/"
+      ]
+    },
+    {
+      "id": "philippines--sarangani",
+      "province": "Sarangani",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13877",
+      "revision": 2547316546,
+      "label": {
+        "language": "en",
+        "value": "Sarangani"
+      },
+      "websites": [
+        "http://www.sarangani.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--siquijor",
+      "province": "Siquijor",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13879",
+      "revision": 2547905511,
+      "label": null,
+      "websites": [
+        "https://siquijorprovince.com/"
+      ]
+    },
+    {
+      "id": "philippines--sultan-kudarat",
+      "province": "Sultan Kudarat",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13885",
+      "revision": 2547903904,
+      "label": {
+        "language": "en",
+        "value": "Sultan Kudarat"
+      },
+      "websites": [
+        "http://sultankudaratprovince.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--sulu",
+      "province": "Sulu",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13887",
+      "revision": 2559700919,
+      "label": null,
+      "websites": [
+        "http://www.sulu.gov.ph"
+      ]
+    },
+    {
+      "id": "philippines--tarlac",
+      "province": "Tarlac",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13892",
+      "revision": 2547890595,
+      "label": null,
+      "websites": [
+        "http://www.tarlac.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--zambales",
+      "province": "Zambales",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13895",
+      "revision": 2547889942,
+      "label": null,
+      "websites": [
+        "http://www.zambalesnow.com"
+      ]
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "province": "Zamboanga Sibugay",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13902",
+      "revision": 2552386970,
+      "label": null,
+      "websites": [
+        "http://www.sibugayprovince.com/",
+        "https://sibugay.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--zamboanga-del-norte",
+      "province": "Zamboanga del Norte",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13899",
+      "revision": 2547894696,
+      "label": null,
+      "websites": [
+        "http://www.zanorte.gov.ph/"
+      ]
+    },
+    {
+      "id": "philippines--zamboanga-del-sur",
+      "province": "Zamboanga del Sur",
+      "source_kind": "discovery_only_not_verified_ownership",
+      "province_qid": "Q13900",
+      "revision": 2547894660,
+      "label": null,
+      "websites": [
+        "http://www.zamboangadelsur.gov.ph"
+      ]
+    }
+  ]
+}

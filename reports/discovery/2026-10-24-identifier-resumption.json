@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-24T02:40:54.275820+00:00",
+  "method": "One normal search request after more than an hour of cooling off from the previous rate limit. No alternate host, proxy, credentials or access bypass. Stop on a renewed limit.",
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta%20Departamental%20de%20Rivera&language=es&uselang=es&format=json&limit=5&maxlag=5",
+  "status": 200,
+  "retry_after": null,
+  "body": {
+    "searchinfo": {
+      "search": "Junta Departamental de Rivera"
+    },
+    "search": [],
+    "success": 1
+  }
+}

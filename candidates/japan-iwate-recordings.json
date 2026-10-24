@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 Saito Shin general-question segment, prefectural Health/Welfare department official answering from chamber desk; September regular-session period. Same5October2026 sitting, Hagino Yukihiro at plenary lectern with named party/member caption. Separate member segment, not another sitting date. Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "japan-iwate-recordings",
+    "name": "Iwate Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Iwate",
+    "legislature": "岩手県議会",
+    "external_ids": {
+      "wikidata_qid": "Q11474798",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q11474798",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Wikidata revision 2491304466; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "Japanese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.pref.iwate.jp/gikai/index.html",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 Saito Shin general-question segment, prefectural Health/Welfare department official answering from chamber desk; September regular-session period. Same5October2026 sitting, Hagino Yukihiro at plenary lectern with named party/member caption. Separate member segment, not another sitting date. Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.pref.iwate.jp/gikai/index.html",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://www.pref.iwate.jp/gikai/index.html",
+        "https://www.youtube.com/channel/UC7llJipxaCPCBoAMz055g5Q"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "States of Deliberation: primary laws, ordinances, annual budget and scrutiny of legislation, policy, services and expenditure are documented by Parliament. Guernsey is a Crown Dependency jurisdiction, not part of the United Kingdom. Alderney and Sark have separate legislatures; publication does not claim their proceedings or an ordinary UK subdivision.",
+    "The official 21 October 2026 meeting page links to morning and afternoon recordings on the States of Guernsey channel. Both decoded at 640x360 with advancing time and frames; the afternoon recording is unlisted but explicitly linked by Parliament. The index also designates BBC live coverage, which was not tested on air. A 22 October row has an obvious year typo (0026); raw labels are not reliable XMLTV dates.",
+    "Identity, legal authority, source conditions, playback and surfaces: reports/discovery/2026-10-23-territorial-validation.json",
+    "Catalogue, localized names, flag, constitutional/search association, coverage map and planned calendar reconciled."
+  ],
+  "channel": {
+    "id": "guernsey-states-meeting-recordings",
+    "name": "Guernsey States Meeting Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Guernsey",
+    "legislature": "States of Deliberation of Guernsey",
+    "external_ids": {
+      "wikidata_qid": "Q1368324",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1368324",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q1368324 revision 2553243221 checked against the official institutional identity. Wikidata retains the older gov.gg/parliament URL, which returned a security block; current parliament.gg identifies the States and links its dated proceedings."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://parliament.gg/parliamentary-business/meetings",
+    "provenance_note": "States of Deliberation: primary laws, ordinances, annual budget and scrutiny of legislation, policy, services and expenditure are documented by Parliament. Guernsey is a Crown Dependency jurisdiction, not part of the United Kingdom. Alderney and Sark have separate legislatures; publication does not claim their proceedings or an ordinary UK subdivision. The official 21 October 2026 meeting page links to morning and afternoon recordings on the States of Guernsey channel. Both decoded at 640x360 with advancing time and frames; the afternoon recording is unlisted but explicitly linked by Parliament. The index also designates BBC live coverage, which was not tested on air. A 22 October row has an obvious year typo (0026); raw labels are not reliable XMLTV dates.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The source and recording metadata are in English; full audio-language coverage was not assessed. No text tracks were exposed. Service-wide captions, sign language and audio description remain unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://parliament.gg/parliamentary-business/meetings",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Parliament encourages links without permission. Site-owned material has a limited research/private-study/internal-circulation reproduction allowance with accuracy and attribution conditions; third-party material is excluded. This does not establish unrestricted audiovisual extraction, embedding or retransmission of linked YouTube or BBC media.",
+      "evidence": [
+        "https://parliament.gg/information/terms-and-conditions"
+      ],
+      "recommendation": "Open the official meeting index for recordings and the designated live route. Retain link-out only; reviewed site-content permissions do not establish unrestricted reuse of provider media."
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "brazil-tocantins-second",
+      "body_id": "brazil--assembleia-legislativa-do-tocantins",
+      "url": "https://www.youtube.com/watch?v=yKc5xwJyLL0&t=600s",
+      "video": true,
+      "offset": 600,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T22:57:51.362Z",
+      "status": 200,
+      "title": "254ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n2:22 / 2:22\n254ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026\nTV Aleto\n5.58k subscribers\nSubscribe\n0\nShare\nSave\n76 views  Streamed 3 weeks ago\n254ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 \n...more\n\n",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 142.341,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 142.341,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-brazil-tocantins-second-chromium.png"
+    },
+    {
+      "key": "brazil-tocantins-second",
+      "body_id": "brazil--assembleia-legislativa-do-tocantins",
+      "url": "https://www.youtube.com/watch?v=yKc5xwJyLL0&t=600s",
+      "video": true,
+      "offset": 600,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T22:58:07.359Z",
+      "status": 200,
+      "title": "254ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 - YouTube",
+      "excerpt": " CA\nSkip navigation\nSign in\n\n2:22 / 2:22\n254ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026\nTV Aleto\n5.58K subscribers\nSubscribe\n0\nShare\nSave\n76 views  Streamed 3 weeks ago\n254ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 \n...more\n",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 142.341,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 142.341,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-brazil-tocantins-second-webkit.png"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ technical source discovery separate from the question of whether a stream,
 schedule, page, or platform source can be reused by this project or by
 downstream projects.
 
-Last reviewed: 2026-10-22 (expansion batch; earlier source reviews retain their dated evidence).
+Last reviewed: 2026-10-23 (Corrientes follow-up; earlier source reviews retain their dated evidence).
 
 Bern's Grand Council archive was subsequently reviewed and added as an official
 link-out. The [cantonal notice](https://www.gr.be.ch/de/tools/rechtliches.html)
@@ -245,3 +245,113 @@ and [page checks](../reports/health/2026-10-22-territorial-webcasts.json).
 | [French Polynesia Assembly Webcasts](https://www.assemblee.pf/travaux/seance) | `link_out`; `personal_use_pending_review` | The official page reserves Assembly copyright and provides its own provider viewing links. No broader media-reuse permission was established; retain link-out viewing only. [Evidence 1](https://www.assemblee.pf/travaux/seance) |
 | [New Caledonia Congress WebTV](https://www.congres.nc/) | `link_out`; `personal_use_pending_review` | Congress legal notices reserve intellectual-property rights and permit personal viewing of website pages. No independent extraction, embedding or redistribution permission is inferred. [Evidence 1](https://www.congres.nc/mentions-legales/) |
 | [Sint Maarten Parliament Meetings](https://sxmparliament.org/live-meeting/) | `link_out`; `personal_use_pending_review` | The institutional service provides its own viewing page and reserves all rights. No independent media extraction or retransmission permission was established. [Evidence 1](https://sxmparliament.org/live-meeting/) |
+
+## 23 October Territorial Follow-up
+
+Cook Islands’ officially linked historical archive and Guernsey’s official
+meeting index are `personal_use_pending_review` link-outs. Cook Islands’ pages
+carry copyright notices without an established independent audiovisual grant.
+Guernsey explicitly encourages links; its limited permission for site-owned
+content does not automatically cover third-party YouTube/BBC media or general
+redistribution. No independent player or export is added.
+
+Bangsamoro remains unpublished. The [detailed terms](https://parliament.bangsamoro.gov.ph/terms-of-use/)
+require written notice for homepage links (clause 13) and prior permission for
+internal links/framing (clause 14), and restrict copying/dissemination (clauses
+5–6). The generic public-domain footer conflicts with those terms and is not a
+sufficient audiovisual reuse grant. No notification, request or other outreach
+has been sent; prepare any proposed outreach for user review first.
+
+[Identity, authority, playback and conditions evidence](../reports/discovery/2026-10-23-territorial-validation.json).
+
+
+## 23 October full-queue additions
+
+The [source-specific decisions](../reports/discovery/2026-10-23-full-queue-decisions.md)
+record 27 additional official viewing links, with each source’s conditions retained
+in its catalogue permission notes. All are link-outs. Wallonia permits attributed,
+context-preserving debate/recording reproduction but treats website framing
+separately. TV Senado’s specific commercial/political-use restrictions qualify
+its general reproduction wording. NATV requires checking the particular work’s
+KOGL marking; none was established for the sampled on-air output. Suriname’s
+multimedia reproduction requires written permission. Jamaica’s parliamentary-site
+noncommercial allowance does not automatically license PBCJ media. Montserrat’s
+footer links to unrelated template terms do not establish parliamentary rights.
+
+Bangsamoro and France’s Senate retain their hyperlink-condition holds; no
+notification or permission request has been sent. Full-language and accessibility
+coverage remains unverified. Current pending-rights count after the follow-up: 88 of 159 records.
+
+The second legislative validation pass adds official link-outs for Neuquén, Sicily and West Virginia. No independent audiovisual reuse grant was established. West Virginia’s actual linked Terms of Use contains public-information and external-link disclaimers, without a blanket media licence. Sicily’s privacy policy does not itself license parliamentary recordings. Full evidence: [second validation decisions](../reports/discovery/2026-10-23-validation-second-pass.md).
+
+## Corrientes Chamber Viewing Links — 23 October 2026
+
+Deputies and Senate have separate institutional IDs, official sites and designated
+provider channels. Reviewed public primary pages/copyright notices establish
+viewing routes, without an independent audiovisual reuse grant. Both entries use
+`personal_use_pending_review` and `link_out`; no embedded or extracted playback
+is enabled. No specific prior-linking condition was found in the reviewed pages;
+this is not an exhaustive legal certification. Source evidence: [Deputies](https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/),
+[Senate](https://www.senadoctes.gov.ar/) and [full follow-up](../reports/discovery/2026-10-23-metadata-followup.md).
+Current pending-rights queue: 172 of 243 entries. Historical Senate samples and
+visible interpretation in Deputies samples do not certify current live coverage
+or service-wide accessibility.
+
+## Arauca, Caquetá, Risaralda And North Kalimantan — 23 October 2026
+
+All four designate public viewing providers from their own institution pages. Independent media reuse remains unresolved, so they retain permission-pending link-outs. Colombian assembly policy pages link to Mi Colombia Digital’s platform/operator terms; those do not grant this project a media licence. [Primary evidence, scope and checks](../reports/discovery/2026-10-23-completion-review.md).
+
+## Chubut — 23 October 2026
+
+A current provincial-government announcement explicitly designates its legislature’s provider channel. Two ordinary sittings and one committee recording passed selected Chromium/WebKit playback and visual review. No independent audiovisual reuse licence was established; publication is a permission-pending official link-out. The older legislature host remains held for unexpected content, so its detailed conditions were not treated as reviewed or resolved. Current live, every room and full accessibility remain open. [Evidence and limitations](../reports/discovery/2026-10-23-chubut-review.json).
+
+## Polish Recorded-Session Archives And TV ESO Hold — 23 October 2026
+
+Łódź and Silesia are permission-pending official bulletin links. Published reuse procedures/conditions were reviewed independently of browser playback; no standalone audiovisual licence was established. Łódź’s scanned Order21/25 specifies reuse-request procedures and offers; Silesia’s default conditions require source/time attribution and disclosure of processing, with separate protected-work conditions. Current live and source-wide accessibility remain open. [Łódź evidence](../reports/discovery/2026-10-23-lodz-publication-review.json) · [Silesia evidence](../reports/discovery/2026-10-23-silesia-publication-review.json).
+
+Banská Bystrica’s designated TV ESO/BBonline archive has an explicit condition in section2.4 requiring consent for links to parts of the portal. Keep publication held; do not substitute the underlying provider video to evade the condition. No outreach is authorized or sent. [Hold and retained proceedings evidence](../reports/discovery/2026-10-23-bbsk-publication-hold.json).
+
+### Korean regional recordings — 23 October 2026
+
+Daegu, Gyeongsangbuk-do, Incheon, Busan, Chungcheongnam-do and Jeonbuk are official website link-outs with exact council IDs and two selected plenary recordings per council checked in both browsers. Busan, Daegu and Gyeongsangbuk apply KOGL conditions to individually marked works; no blanket session-video licence is established. Incheon’s CCTV/privacy policy is not a session-recording licence, and a separate current audiovisual policy remains unresolved. Chungcheongnam-do and Jeonbuk also have no separately established video reuse grant. All six retain personal-use permission pending, with no provider embed, extracted media or IPTV export. See the [publication review](../reports/discovery/2026-10-23-korean-three-publication-review.json).
+
+Jeonnam–Gwangju’s current council is likewise a permission-pending official institutional link, supported by a selected plenary and committee recording. Its successor identity is checked separately from the predecessor councils. No independent audiovisual reuse grant is established; no provider embed or IPTV export is added.
+
+Sejong and Gyeongsangnam are also permission-pending official website links, with selected committee/plenary recordings confirmed separately from source-wide access or reuse. No blanket audiovisual permission was established from the reviewed own navigation; Sejong’s CCTV/privacy link is not treated as a session-video licence. Seoul remains outside the catalogue in this pass: its own archive explicitly prohibits commercial use under meeting rule49-3, and its mixed playback results remain unresolved.
+
+### Eleven Argentine regional services — 23 October 2026
+
+Buenos Aires Province Deputies, Catamarca Senate, Buenos Aires City Legislature committees, La Rioja, Mendoza Deputies, Río Negro, Salta Deputies, San Juan Deputies, Santa Cruz Deputies/committees, Tierra del Fuego and Tucumán are permission-pending official website links. Their own sites designate the provider; selected recorded video is confirmed separately from permission. The reviewed Buenos Aires City terms assert ownership and access/security conditions; Santa Cruz’s terms set general lawful-use conditions. Neither establishes a blanket independent session-video reuse grant. No prior ordinary-link consent condition was identified in those two reviewed pages. The other reviewed institutional navigation supplies no independently established audiovisual grant. Flag asset licences are separate from video rights; seven downloads remain held after Commons429. [Exact evidence and scope](../reports/discovery/2026-10-23-argentina-eleven-publication-review.json).
+
+### Nine Brazilian state assemblies — 23 October 2026
+
+Mato Grosso do Sul, Paraíba, Goiás, Mato Grosso, Pernambuco, Rondônia, Ceará, Paraná and Rio de Janeiro are permission-pending official institutional links. Their own sites designate the recording provider; selected decoded proceedings establish recorded-viewing scope only. Alepe's reviewed terms address lawful use, intellectual-property responsibilities and personal-data protection, without a blanket audiovisual grant; no prior ordinary-link consent condition was identified there. Other reviewed institutional navigation supplies no independent blanket session-video permission. Optional flag assets are separate from media rights and remain pending after the earlier Commons429. [Exact evidence and limitations](../reports/discovery/2026-10-23-brazil-nine-publication-review.json).
+
+### Caldas — 23 October2026
+
+Caldas is a permission-pending official institutional link. Its own site designates the recording provider; exact institutional identity and selected speech/fiscal-presentation archives are confirmed separately from reuse rights. Reviewed navigation supplies no blanket audiovisual grant. Muted recordings establish no source-wide audio/accessibility or live coverage. [Evidence and remaining gates](../reports/discovery/2026-10-23-caldas-publication-review.json).
+
+### Remaining47-lead source-condition follow-up — 23October2026
+
+Fourteen linked copyright/legal pages and two specific video policies have scoped findings. Brandenburg permits political reporting, political/educational and noncommercial private use subject to attribution/watermark, integrity/editing and other-rights conditions. Lower Saxony's specificPlenarTV notice describes speakers' own-contribution rights, without a general third-party redistribution grant. Mecklenburg-Vorpommern, Saxony and Thuringia retain written-permission requirements for broader uses. Hesse's two sampled2022 uploads showCCAttribution; the current linked help points toCCBY4.0, which does not alone establish the original historical licence version or a source-wide grant. Campania's general websiteCCBY4.0 and Canarias' attributed-reproduction notice need recording-specific scope checks. Fukushima reserves copyright outside statutory exceptions; Cantabria's reviewed page mainly concerns privacy. Kinmen permits labelled nonmisleading links without consent while its sampled recordings expressly reserve reproduction/editing/public transmission. Mississippi's terms page is placeholder text, Bolzano's legal page loads only a shell, and LaRioja's legal page remains an access/review gap. No permission status for an existing catalogue entry was loosened. [Per-source assessment and primaryURLs](../reports/health/2026-10-23-remaining-source-conditions.json) · [Hesse work-specific evidence](../reports/discovery/2026-10-23-hesse-recording-licences.json).
+
+## New Brunswick, Åland And Montenegro — 23 October 2026
+
+All three are official viewing links with selected recorded business confirmed in both browser engines. New Brunswick permits specified educational, study, research and reporting reproduction subject to accuracy and unofficial-version conditions; applicability to independent webcast redistribution is still unresolved. Åland and Montenegro public navigation does not establish a blanket media reuse grant. All three remain permission-pending link-outs; no provider embed, extracted stream or IPTV export is added. [Primary conditions review](../reports/health/2026-10-24-three-publication-conditions.json).
+
+## 24 October — Continued Swiss Recording Review
+
+Thurgau, Zurich and Vaud are official viewing links with personal-use permission
+pending. Thurgau's usage notice reserves protected-content reproduction; its
+archive's incomplete opening warning remains. Zurich's provider privacy link is
+not treated as a media licence. Vaud's provider reserves rights. No extracted
+stream, independent embed or IPTV export is added.
+
+Geneva's source conditions explicitly allow third-party dissemination of public
+session videos while forbidding alterations without prior written bureau
+authorization; the viewing-service publication review remains held for a
+specific WebKit recording check. Basel-Stadt permits information-media and
+noncommercial uses subject to attribution, context and editing limits; it is
+not public domain or an unrestricted licence. These source findings do not
+settle every implementation or source-wide accessibility/coverage question.
+[Individual service findings](../reports/discovery/2026-10-24-swiss-held-service-dispositions.json).

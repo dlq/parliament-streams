@@ -1,0 +1,821 @@
+{
+  "research_date": "2026-10-23",
+  "decision": "publish_seventeen_scoped_official_recording_links",
+  "records": [
+    {
+      "body_id": "germany--hesse",
+      "catalogue_id": "germany-hesse-recordings",
+      "institution": "Hessischer Landtag",
+      "region": "Hesse",
+      "primary_reference": "https://hessischer-landtag.de/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCXSXIdD3uUFCfU3Eb1ZxLQA"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q510511",
+      "identity_finding": "Select current Landtag Q510511; library and dissolution headline items are not institutional identities.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 108th plenary7June2022, Boris Rhein at lectern under TOP1 caption. Visible provider licence row says Creative Commons Attribution; work-specific label, not blanket current-service permission. 107th plenary2June2022, Frank Grobe at lectern under TOP58 caption. Visible provider CCAttribution row; exact linked instrument and scope require review. Current2026 coverage unconfirmed. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-germany-hesse-1",
+          "url": "https://www.youtube.com/watch?v=-DN8BOxzd2E&t=1200s",
+          "offset": 1200,
+          "decision": "historical_plenary_business",
+          "observation": "108th plenary7June2022, Boris Rhein at lectern under TOP1 caption. Visible provider licence row says Creative Commons Attribution; work-specific label, not blanket current-service permission.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-germany-hesse-2",
+          "url": "https://www.youtube.com/watch?v=5dWDv1VL-P8&t=1200s",
+          "offset": 1200,
+          "decision": "historical_plenary_business",
+          "observation": "107th plenary2June2022, Frank Grobe at lectern under TOP58 caption. Visible provider CCAttribution row; exact linked instrument and scope require review. Current2026 coverage unconfirmed.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Impressum identifies publisher but supplies no blanket audiovisual grant. Two specific2022 uploads display CreativeCommonsAttribution and link to YouTube’s licence help; this does not license every recording or settle the historical licence version. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "DE-HE",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "germany--sachsischer-landtag",
+      "catalogue_id": "germany-sachsischer-landtag-recordings",
+      "institution": "Sächsischer Landtag",
+      "region": "Saxony",
+      "primary_reference": "https://www.landtag.sachsen.de/de",
+      "primary_provider_designation": [
+        {
+          "text": "Video: Deine Ausbildung im Sächsischen Landtag",
+          "url": "https://www.youtube.com/shorts/TLd9TCt9HLc"
+        },
+        {
+          "text": "Video anschauen: Feierstunde im Parlament mit allen Reden",
+          "url": "https://www.youtube.com/watch?v=QkmqpISpTCU"
+        },
+        {
+          "text": "Auf Youtube folgen",
+          "url": "https://www.youtube.com/c/S%C3%A4chsischerLandtag01/videos"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q884824",
+      "identity_finding": "Select current legislature Q884824. Reject historical Kingdom/GDR chambers and Q1618988, which is the parliamentary building despite an ambiguous search label.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. Land budget2027/2028 debate clip, finance official at plenary lectern; description dates introduction26August2026. A debate segment is not full-session archive validation. 18December2024 minister-president election, member at plenary lectern under official assembly identity. Historical sitting separate from2026 budget segment. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-germany-sachsischer-landtag-1",
+          "url": "https://www.youtube.com/watch?v=nZhDNFxvxUg&t=1200s",
+          "offset": 1200,
+          "decision": "identified_budget_business",
+          "observation": "Land budget2027/2028 debate clip, finance official at plenary lectern; description dates introduction26August2026. A debate segment is not full-session archive validation.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-germany-sachsischer-landtag-2",
+          "url": "https://www.youtube.com/watch?v=ijh1pKGqqZc&t=1200s",
+          "offset": 1200,
+          "decision": "historical_election_sitting",
+          "observation": "18December2024 minister-president election, member at plenary lectern under official assembly identity. Historical sitting separate from2026 budget segment.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Protected site content; personal downloads/printing only unless specific conditions apply; broader distribution/commercial use requires written permission. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "DE-SN",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--aceh",
+      "catalogue_id": "indonesia-aceh-recordings",
+      "institution": "Dewan Perwakilan Rakyat Aceh",
+      "region": "Aceh",
+      "primary_reference": "https://dpra.acehprov.go.id/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/c/DPRACEH"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q12481397",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption. DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-indonesia-aceh-1",
+          "url": "https://www.youtube.com/watch?v=Fl_FghQxZ9k&t=954s",
+          "offset": 954,
+          "decision": "identified_plenary_business",
+          "observation": "DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-indonesia-aceh-2",
+          "url": "https://www.youtube.com/watch?v=U7QJUFqPXow&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_budget_business",
+          "observation": "DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "ID-AC",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "japan--hyogo",
+      "catalogue_id": "japan-hyogo-recordings",
+      "institution": "兵庫県議会",
+      "region": "Hyogo",
+      "primary_reference": "https://web.pref.hyogo.lg.jp/gikai/index.html",
+      "primary_provider_designation": [
+        {
+          "text": "兵庫県議会YouTube",
+          "url": "https://www.youtube.com/channel/UCtgjGPju4Xo-25FLvL3pELQ"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q11393166",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. September2026 regular-session closing sitting: member at plenary lectern with inset interpreter. Recent upload, exact calendar date not read in selected frame. September2026 regular-session general questions day3, separate member reading at plenary lectern with inset interpreter. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-japan-hyogo-1",
+          "url": "https://www.youtube.com/watch?v=zdScTC6wPHw&t=1200s",
+          "offset": 1200,
+          "decision": "identified_closing_sitting_business",
+          "observation": "September2026 regular-session closing sitting: member at plenary lectern with inset interpreter. Recent upload, exact calendar date not read in selected frame.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-japan-hyogo-2",
+          "url": "https://www.youtube.com/watch?v=ixbExq4JS34&t=1200s",
+          "offset": 1200,
+          "decision": "identified_general_questions_business",
+          "observation": "September2026 regular-session general questions day3, separate member reading at plenary lectern with inset interpreter.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "JP-28",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "japan--tokushima",
+      "catalogue_id": "japan-tokushima-recordings",
+      "institution": "徳島県議会",
+      "region": "Tokushima",
+      "primary_reference": "https://www.pref.tokushima.lg.jp/gikai/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UC-amhi66qG0Cfr60guqo84Q"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q11490001",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 7October2026 closing sitting of September regular session, member reading at chamber lectern. 18September2026 general questions, named member Atsushi Fusukawa at chamber lectern, agenda description on external organizations/newhall/schools. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-japan-tokushima-1",
+          "url": "https://www.youtube.com/watch?v=kJkgCaFx0gc&t=1200s",
+          "offset": 1200,
+          "decision": "identified_closing_sitting_business",
+          "observation": "7October2026 closing sitting of September regular session, member reading at chamber lectern.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-japan-tokushima-2",
+          "url": "https://www.youtube.com/watch?v=E2xeZROut8w&t=1200s",
+          "offset": 1200,
+          "decision": "identified_general_questions_business",
+          "observation": "18September2026 general questions, named member Atsushi Fusukawa at chamber lectern, agenda description on external organizations/newhall/schools.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "JP-36",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "south-africa--northern-cape",
+      "catalogue_id": "south-africa-northern-cape-recordings",
+      "institution": "Northern Cape Provincial Legislature",
+      "region": "Northern Cape",
+      "primary_reference": "https://www.ncpleg.gov.za/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UC81PpPZXD0I2kxKpilaJ1gQ"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/embed/Y170PM4lgk4?autohide=1&autoplay=1&hd=1"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q15262569",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 4March2026 premier Zamani Saul replying to State of Province debate at chamber lectern, matching named/date/assembly overlay. 3March2026 State of Province debate, crossfade between speaker and chamber with matching assembly/date overlay; selected moment is a camera transition. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-south-africa-northern-cape-1",
+          "url": "https://www.youtube.com/watch?v=43NJzAEzcsY&t=1078s",
+          "offset": 1078,
+          "decision": "identified_plenary_business",
+          "observation": "4March2026 premier Zamani Saul replying to State of Province debate at chamber lectern, matching named/date/assembly overlay.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-south-africa-northern-cape-2",
+          "url": "https://www.youtube.com/watch?v=Dsxcc0VX4Rc&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "3March2026 State of Province debate, crossfade between speaker and chamber with matching assembly/date overlay; selected moment is a camera transition.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "ZA-NC",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "south-africa--western-cape",
+      "catalogue_id": "south-africa-western-cape-recordings",
+      "institution": "Western Cape Provincial Parliament",
+      "region": "Western Cape",
+      "primary_reference": "https://www.wcpp.gov.za/",
+      "primary_provider_designation": [
+        {
+          "text": "LIVE(link is external)",
+          "url": "https://www.youtube.com/channel/UCRtjEU4TYg1QY2N9iPyYH-A/live"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCRtjEU4TYg1QY2N9iPyYH-A"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q17081929",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 10September2026 13:00 Budget committee, socio-economic/infrastructure/basic-services slides with remote participant tiles and parliamentary banner. 10September2026 09:00 Budget committee,2026/27 safety outcome indicators with remote participant tiles. Same date separate morning/afternoon meetings, not two plenary dates. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-south-africa-western-cape-1",
+          "url": "https://www.youtube.com/watch?v=xbBKRvOJmDU&t=1200s",
+          "offset": 1200,
+          "decision": "identified_budget_committee_presentation",
+          "observation": "10September2026 13:00 Budget committee, socio-economic/infrastructure/basic-services slides with remote participant tiles and parliamentary banner.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-south-africa-western-cape-2",
+          "url": "https://www.youtube.com/watch?v=2upx1VQurQA&t=1200s",
+          "offset": 1200,
+          "decision": "identified_budget_committee_presentation",
+          "observation": "10September2026 09:00 Budget committee,2026/27 safety outcome indicators with remote participant tiles. Same date separate morning/afternoon meetings, not two plenary dates.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "ZA-WC",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "spain--parlamento-de-cantabria",
+      "catalogue_id": "spain-parlamento-de-cantabria-recordings",
+      "institution": "Parlamento de Cantabria",
+      "region": "Cantabria",
+      "primary_reference": "https://parlamento-cantabria.es/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCn3GTIMs_v8p2s4vVBG_8PA"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q3082759",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. Health committee22October2026, man speaking at table microphone, institutional identity and provider description. Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-spain-parlamento-de-cantabria-1",
+          "url": "https://www.youtube.com/watch?v=ZiyRdt-bvHo&t=925s",
+          "offset": 925,
+          "decision": "identified_committee_business",
+          "observation": "Health committee22October2026, man speaking at table microphone, institutional identity and provider description.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-spain-parlamento-de-cantabria-2",
+          "url": "https://www.youtube.com/watch?v=3ZJYR2lbeZQ&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_business",
+          "observation": "Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Reviewed page is primarily personal-data/cookie/privacy provisions; no independent audiovisual grant established from it. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "ES-S",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "spain--parlamento-de-la-rioja",
+      "catalogue_id": "spain-parlamento-de-la-rioja-recordings",
+      "institution": "Parlamento de La Rioja",
+      "region": "La Rioja, Spain",
+      "primary_reference": "https://www.parlamento-larioja.org/",
+      "primary_provider_designation": [
+        {
+          "text": "youtube",
+          "url": "https://www.youtube.com/channel/UCpAY_YgIajM3YH4Bx3SdXSw"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q4589988",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 63rd plenary1October2026, Cristina Maiso speaking at chamber lectern under named deputy caption. Spain, distinct from Argentine LaRioja. 62nd plenary17September2026, Gonzalo Capellán speaking at lectern under regional-government-president caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-spain-parlamento-de-la-rioja-1",
+          "url": "https://www.youtube.com/watch?v=vYFaASzY2XA&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "63rd plenary1October2026, Cristina Maiso speaking at chamber lectern under named deputy caption. Spain, distinct from Argentine LaRioja.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-spain-parlamento-de-la-rioja-2",
+          "url": "https://www.youtube.com/watch?v=hHfzx13X2qM&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "62nd plenary17September2026, Gonzalo Capellán speaking at lectern under regional-government-president caption.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Linked legal page inspection timed out. Retain access/review gap; no inference that terms or a licence are absent. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "ES-LO",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "taiwan--penghu",
+      "catalogue_id": "taiwan-penghu-recordings",
+      "institution": "澎湖縣議會",
+      "region": "Penghu",
+      "primary_reference": "https://www.phcouncil.gov.tw/",
+      "primary_provider_designation": [
+        {
+          "text": "議會線上直播",
+          "url": "https://www.youtube.com/@penghucc/streams"
+        },
+        {
+          "text": "議會影音隨選",
+          "url": "https://www.youtube.com/@penghucc/playlists"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q15915051",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 6October2026/ROC115, fifth review committee county-government questions, member and official exchanging at microphones, matching western-clock date. 5October2026/ROC115, third/fourth review committees questions, Xu Guozheng and official exchanging at microphones, matching western-clock date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-taiwan-penghu-1",
+          "url": "https://www.youtube.com/watch?v=liIUFGNfLvs&t=1200s",
+          "offset": 1200,
+          "decision": "identified_question_business",
+          "observation": "6October2026/ROC115, fifth review committee county-government questions, member and official exchanging at microphones, matching western-clock date.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-taiwan-penghu-2",
+          "url": "https://www.youtube.com/watch?v=0BNdyjZhQwk&t=1200s",
+          "offset": 1200,
+          "decision": "identified_question_business",
+          "observation": "5October2026/ROC115, third/fourth review committees questions, Xu Guozheng and official exchanging at microphones, matching western-clock date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "TW-PEN",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "taiwan--tainan",
+      "catalogue_id": "taiwan-tainan-recordings",
+      "institution": "臺南市議會",
+      "region": "Tainan",
+      "primary_reference": "https://www.tncc.gov.tw/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCdA-WnlDKDfJol0SJhsf63g"
+        },
+        {
+          "text": "",
+          "url": "https://youtu.be/OFD7Sk7Bd0E"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/CHbLb05_VIA"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/tnW32i9s3_k"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/KgBJ-xOG5hM"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/rL6ylTHzyY0"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q7676191",
+      "identity_finding": "Select current council Q7676191, whose 2010 inception and predecessor statements distinguish Q113493742 (1950–2010), the former prefecture council and a meeting hall. Current primary provider belongs to the post-merger council.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive. Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-taiwan-tainan-1",
+          "url": "https://www.youtube.com/watch?v=5s5jqQKE_hA&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_business",
+          "observation": "Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-taiwan-tainan-2",
+          "url": "https://www.youtube.com/watch?v=HxDUf9LC_N8&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_business",
+          "observation": "Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "TW-TNN",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "united-states--district-of-columbia",
+      "catalogue_id": "united-states-district-of-columbia-recordings",
+      "institution": "Council of the District of Columbia",
+      "region": "District of Columbia",
+      "primary_reference": "https://dccouncil.gov/",
+      "primary_provider_designation": [
+        {
+          "text": "youtube",
+          "url": "https://www.youtube.com/channel/UCXTTGvPOwbn3QSov4FaQU-w/videos"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q6527389",
+      "identity_finding": "Select enduring council Q6527389, not numbered legislative periods. Its legislative eligibility is the documented District Home Rule authority, not the word council.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 14July2026 Committee of Whole, chair Mendelson at lit desk microphone, date/source ticker and visible spoken-caption overlay. Selected point is committee, not independently confirmed subsequent legislative-meeting segment. 30June2026 Committee of Whole, woman speaking at lit desk microphone with dated source ticker and spoken-caption overlay. Caption accuracy/all-source availability untested. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-united-states-district-of-columbia-1",
+          "url": "https://www.youtube.com/watch?v=x0fTWlqCCq0&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_of_whole_business",
+          "observation": "14July2026 Committee of Whole, chair Mendelson at lit desk microphone, date/source ticker and visible spoken-caption overlay. Selected point is committee, not independently confirmed subsequent legislative-meeting segment.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-united-states-district-of-columbia-2",
+          "url": "https://www.youtube.com/watch?v=8xdC7t26qts&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_of_whole_business",
+          "observation": "30June2026 Committee of Whole, woman speaking at lit desk microphone with dated source ticker and spoken-caption overlay. Caption accuracy/all-source availability untested.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "US-DC",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "united-states--kansas",
+      "catalogue_id": "united-states-kansas-recordings",
+      "institution": "Kansas Legislature",
+      "region": "Kansas",
+      "primary_reference": "https://www.kslegislature.gov/b2025_26/",
+      "primary_provider_designation": [
+        {
+          "text": "smart_displayYouTube Channel",
+          "url": "https://www.youtube.com/channel/UC_0NO-Pb96CFABvxDwXAq8A"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q3270271",
+      "identity_finding": "Select bicameral institution Q3270271 for the shared service; chamber items are distinct rather than substitute identifiers.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 21October2026 Joint Administrative Rules/Regulations committee, senators/representatives discussing at table with nameplates. Not plenary. 20October2026 Special Committee on340BProgram, witness reading at committee lectern; separate committee. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-united-states-kansas-1",
+          "url": "https://www.youtube.com/watch?v=BBGuDlcya5s&t=1200s",
+          "offset": 1200,
+          "decision": "identified_joint_committee_business",
+          "observation": "21October2026 Joint Administrative Rules/Regulations committee, senators/representatives discussing at table with nameplates. Not plenary.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-united-states-kansas-2",
+          "url": "https://www.youtube.com/watch?v=MdQQBOJGrk8&t=1200s",
+          "offset": 1200,
+          "decision": "identified_special_committee_business",
+          "observation": "20October2026 Special Committee on340BProgram, witness reading at committee lectern; separate committee.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "US-KS",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "united-states--mississippi",
+      "catalogue_id": "united-states-mississippi-recordings",
+      "institution": "Mississippi Legislature",
+      "region": "Mississippi",
+      "primary_reference": "https://www.legislature.ms.gov/",
+      "primary_provider_designation": [
+        {
+          "text": "Click Here",
+          "url": "https://www.youtube.com/c/mississippilegislature"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q6879217",
+      "identity_finding": "Select legislature Q6879217, not a COVID outbreak item. The reviewed generic legal template remains inadequate media permission evidence.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide. 1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-united-states-mississippi-1",
+          "url": "https://www.youtube.com/watch?v=LMZXG5kL1cM&t=1200s",
+          "offset": 1200,
+          "decision": "identified_committee_presentation",
+          "observation": "13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-united-states-mississippi-2",
+          "url": "https://www.youtube.com/watch?v=cBl6OS-gY2k&t=1200s",
+          "offset": 1200,
+          "decision": "identified_joint_hearing",
+          "observation": "1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Terms page renders example-page/LoremIpsum template content. It does not establish substantive audiovisual permission; document as a source-policy gap. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "US-MS",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "united-states--wyoming",
+      "catalogue_id": "united-states-wyoming-recordings",
+      "institution": "Wyoming Legislature",
+      "region": "Wyoming",
+      "primary_reference": "https://www.wyoleg.gov/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/wyominglegislature"
+        },
+        {
+          "text": "Watch Live Video",
+          "url": "https://www.youtube.com/channel/UCZNA0zn1VU1ATv3XugYmFGw"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q3270276",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 21October2026 SchoolFinanceRecalibration AMpart2, witness at table microphone and visible spoken-caption line; caption accuracy/source-wide availability untested. 20October2026 SchoolFacilities PM, witnesses discussing at table microphones with spoken-caption line. Different committee/day, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-united-states-wyoming-1",
+          "url": "https://www.youtube.com/watch?v=Q4Jj3igjPZI&t=1200s",
+          "offset": 1200,
+          "decision": "identified_select_committee_business",
+          "observation": "21October2026 SchoolFinanceRecalibration AMpart2, witness at table microphone and visible spoken-caption line; caption accuracy/source-wide availability untested.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-united-states-wyoming-2",
+          "url": "https://www.youtube.com/watch?v=5KSwfFtoH_o&t=1200s",
+          "offset": 1200,
+          "decision": "identified_select_committee_business",
+          "observation": "20October2026 SchoolFacilities PM, witnesses discussing at table microphones with spoken-caption line. Different committee/day, not plenary.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "US-WY",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "uruguay--canelones",
+      "catalogue_id": "uruguay-canelones-recordings",
+      "institution": "Junta Departamental de Canelones",
+      "region": "Canelones",
+      "primary_reference": "https://www.juntadecanelones.gub.uy/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/c/JuntaCanelones"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q65553492",
+      "identity_finding": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 20October2026 ordinary sitting/citation20, César Lista reading at lit desk microphone under named placard and department parliament branding. 6October2026 ordinary sitting/citation19, Daniel Paris reading at lit desk microphone with institutional branding. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-uruguay-canelones-1",
+          "url": "https://www.youtube.com/watch?v=rpEsJ39VZcE&t=1200s",
+          "offset": 1200,
+          "decision": "identified_ordinary_business",
+          "observation": "20October2026 ordinary sitting/citation20, César Lista reading at lit desk microphone under named placard and department parliament branding.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-uruguay-canelones-2",
+          "url": "https://www.youtube.com/watch?v=S6kN4KgH-Zk&t=1200s",
+          "offset": 1200,
+          "decision": "identified_ordinary_business",
+          "observation": "6October2026 ordinary sitting/citation19, Daniel Paris reading at lit desk microphone with institutional branding.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "UY-CA",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "uruguay--montevideo",
+      "catalogue_id": "uruguay-montevideo-recordings",
+      "institution": "Junta Departamental de Montevideo",
+      "region": "Montevideo",
+      "primary_reference": "https://www.juntamvd.gub.uy/public/",
+      "primary_provider_designation": [
+        {
+          "text": "Streaming en vivo",
+          "url": "https://www.youtube.com/@juntadepartamentaldemontev2072/streams"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-deferred-identity-dispositions.json",
+      "wikidata_qid": "Q5956468",
+      "identity_finding": "Select legislative board Q5956468 with Montevideo jurisdiction and Uruguay country claims; Palacio Gómez is a building despite sharing an institutional site.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 22October2026 ordinary sitting, legislative secretary reading at lit microphone under JDM logo and desk label. 15October2026 ordinary sitting, member Rodríguez speaking at lit desk microphone with department chamber identity. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "key": "remaining-uruguay-montevideo-1",
+          "url": "https://www.youtube.com/watch?v=nYKI3veD4po&t=7694s",
+          "offset": 7694,
+          "decision": "identified_ordinary_business",
+          "observation": "22October2026 ordinary sitting, legislative secretary reading at lit microphone under JDM logo and desk label.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-uruguay-montevideo-2",
+          "url": "https://www.youtube.com/watch?v=ujQ6ayMNV1Y&t=7943s",
+          "offset": 7943,
+          "decision": "identified_ordinary_business",
+          "observation": "15October2026 ordinary sitting, member Rodríguez speaking at lit desk microphone with department chamber identity.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "UY-MO",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "not_claimed": [
+    "all_eligible_bodies_fully_validated",
+    "current_live_or_every_room",
+    "audible_track_or_accessibility_certification",
+    "independent_video_reuse_grant"
+  ]
+}

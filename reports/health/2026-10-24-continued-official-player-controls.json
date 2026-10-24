@@ -1,0 +1,903 @@
+{
+  "method": "Primary-designated public pages and visible controls only; no consent or login accepted, no access bypass. Navigation is not decoded business confirmation.",
+  "results": [
+    {
+      "id": "zug-past",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2abc884a8ba46775365211",
+      "checked_at": "2026-10-24T05:14:15.056Z",
+      "status": 200,
+      "final_url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2abc884a8ba46775365211",
+      "title": "Kantonsratssitzung vom 24. September 2026 - Vormittag – Archive",
+      "links": [],
+      "controls": [
+        "",
+        "  ",
+        "",
+        "  ",
+        "",
+        "   "
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://kantonzug.euvideocdn.com/videos/6ab4fa55e3698bed97ef56f0/1/video.m3u8?v=1790248510262"
+        },
+        {
+          "tag": "SOURCE",
+          "src": "https://kantonzug.euvideocdn.com/videos/6ab4fa55e3698bed97ef56f0/1/video.m3u8?v=1790248510262"
+        }
+      ],
+      "labels": [],
+      "body_text_cache": "/tmp/continued-control-zug-past.txt",
+      "outcome": "visible_control_followup_requires_review",
+      "screenshot": "/tmp/continued-control-zug-past.png"
+    },
+    {
+      "id": "vaud",
+      "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10",
+      "action": "vaud",
+      "checked_at": "2026-10-24T05:14:15.057Z",
+      "status": 200,
+      "visible_control_count": 0,
+      "final_url": "https://www.sonomix.ch/live/gcvd/?date=2026-10",
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "links": [
+        {
+          "text": "",
+          "url": "https://www.sonomix.ch/live/gcvd"
+        },
+        {
+          "text": "En direct",
+          "url": "https://www.sonomix.ch/live/gcvd/"
+        },
+        {
+          "text": "Séances en 2026",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-1"
+        },
+        {
+          "text": "Séances en 2025",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2025-1"
+        },
+        {
+          "text": "Séances en 2024",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2024-1"
+        },
+        {
+          "text": "Séances en 2023",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2023-1"
+        },
+        {
+          "text": "Séances en 2022",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2022-1"
+        },
+        {
+          "text": "Séances en 2021",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2021-1"
+        },
+        {
+          "text": "Séances en 2020",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-9"
+        },
+        {
+          "text": "Juillet",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-7"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-5"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2020-1"
+        },
+        {
+          "text": "Séances en 2019",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Décembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2019-12"
+        },
+        {
+          "text": "Novembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2019-11"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2019-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2019-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2019-8"
+        },
+        {
+          "text": "Juillet",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2019-7"
+        }
+      ],
+      "controls": [
+        ""
+      ],
+      "media": [],
+      "labels": [],
+      "body_text_cache": "/tmp/continued-control-vaud.txt",
+      "outcome": "visible_control_followup_requires_review",
+      "screenshot": "/tmp/continued-control-vaud.png"
+    },
+    {
+      "id": "geneva-october",
+      "url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "checked_at": "2026-10-24T05:14:18.571Z",
+      "status": 200,
+      "final_url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "title": "Grand Conseil de Genève",
+      "links": [
+        {
+          "text": "Conditions d'utilisation",
+          "url": "https://ge.ch/grandconseil/divers/conditions/"
+        },
+        {
+          "text": "Calendrier",
+          "url": "https://ge.ch/grandconseil/sessions/calendrier/2026/"
+        },
+        {
+          "text": "Diffusion en différé",
+          "url": "https://ge.ch/grandconseil/sessions/videos/2026/"
+        },
+        {
+          "text": "Archives procès-verbaux",
+          "url": "https://ge.ch/grandconseil/sessions/archives/"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Points initiaux16h59:32",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n16h59:32",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Stéphane Florey (UDC)\n17h07:23",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h07:39",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Ana Roch (MCG)\n17h08:18",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h08:31",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n17h10:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h10:35",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Murat-Julian Alder (PLR)\n17h12:11",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h12:29",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Laurent Seydoux (LJS)\n17h13:04",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h13:15",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Stéphane Florey (UDC)\n17h13:55",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h14:12",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n17h16:07",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h16:23",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "E 3234 ...17h21:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h21:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "E 325417h21:19",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h21:19",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M 303217h35:42",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h35:42",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Lionel Dugerdil (UDC)\n17h36:17",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h36:21",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "PL 13728-A17h36:51",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h36:51",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Natacha Buffet-Desfayes (PLR)\n17h37:29",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. François Baertschi (MCG)\n17h40:28",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Laurent Seydoux (LJS)\n17h43:15",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Jacques Blondin (LC)\n17h45:03",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Thomas Wenger (S)\n17h46:22",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Ana Roch (MCG)\n17h49:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Vincent Subilia (PLR)\n17h49:39",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h50:19",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "PL 13730-A17h51:53",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n17h51:53",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Arber Jahija (MCG)\n17h52:40",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Stéphane Florey (UDC)\n17h53:52",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Marc Saudan (LJS)\n17h58:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Clarisse Di Rosa (Ve)\n18h00:24",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Natacha Buffet-Desfayes (PLR)\n18h03:31",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Léna Strasser (S)\n18h06:05",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Patricia Bidaux (LC)\n18h08:21",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Stéphane Florey (UDC)\n18h10:12",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Arber Jahija (MCG)\n18h12:12",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Thierry Apothéloz\n18h12:44",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h14:14",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/search/?search=M%202688"
+        },
+        {
+          "text": "M 268818h14:46",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h14:46",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Yves de Matteis (Ve)\n18h15:06",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h15:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M 3060-A18h16:05",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h16:05",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Julien Nicolet-dit-Félix (Ve)\n18h16:36",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Pierre Conne (PLR)\n18h21:05",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Julien Nicolet-dit-Félix (Ve)\n18h24:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h24:59",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "P 2260-A18h25:44",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h25:44",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Christina Meissner (LC)\n18h26:41",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Sylvain Thévoz (S)\n18h30:27",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Céline Bartolomucci (Ve)\n18h33:28",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Joëlle Fiss (PLR)\n18h36:12",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Marc Falquet (UDC)\n18h38:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Vincent Subilia (PLR)\n18h39:38",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Jacques Jeannerat (LJS)\n18h41:06",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Sylvain Thévoz (S)\n18h42:02",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Céline Bartolomucci (Ve)\n18h44:44",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Mme Christina Meissner (LC)\n18h45:33",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "M. Thierry Apothéloz\n18h47:53",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h49:26",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Fin de séance18h50:33",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "La présidente\n18h50:33",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/sessions/video/030405/23/#"
+        },
+        {
+          "text": "Retour à la liste des vidéos",
+          "url": "https://ge.ch/grandconseil/sessions/videos/2026/"
+        }
+      ],
+      "controls": [],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "http://www.grandconseil-ge.ch/video/030405_23.m4v"
+        },
+        {
+          "tag": "SOURCE",
+          "src": "http://www.grandconseil-ge.ch/video/030405_23.m4v"
+        }
+      ],
+      "labels": [],
+      "body_text_cache": "/tmp/continued-control-geneva-october.txt",
+      "outcome": "visible_control_followup_requires_review",
+      "screenshot": "/tmp/continued-control-geneva-october.png"
+    },
+    {
+      "id": "thurgau",
+      "url": "https://parlament.tg.ch/de/parlament/sitzungen/livestreams/",
+      "checked_at": "2026-10-24T05:14:19.041Z",
+      "status": 200,
+      "final_url": "https://parlament.tg.ch/de/parlament/sitzungen/livestreams/",
+      "title": "Livestream und Aufzeichnungen - Parlament Kantons Thurgau",
+      "links": [
+        {
+          "text": "Neuigkeiten",
+          "url": "https://www.tg.ch/news/news-archiv.html/585"
+        },
+        {
+          "text": "Zu GRvisio",
+          "url": "https://grvisio.tg.ch/"
+        },
+        {
+          "text": "Nutzungshinweise",
+          "url": "https://parlament.tg.ch/de/datenschutz/"
+        }
+      ],
+      "controls": [
+        "\n    Menü  ",
+        "",
+        "",
+        "Zurück",
+        "",
+        "Zurück",
+        "",
+        "Zurück",
+        "Weitere Themen",
+        "Suchen",
+        ""
+      ],
+      "media": [],
+      "labels": [],
+      "body_text_cache": "/tmp/continued-control-thurgau.txt",
+      "outcome": "visible_control_followup_requires_review",
+      "screenshot": "/tmp/continued-control-thurgau.png"
+    },
+    {
+      "id": "valais",
+      "url": "https://vs.recapp.ch/",
+      "checked_at": "2026-10-24T05:14:23.444Z",
+      "status": 200,
+      "final_url": "https://vs.recapp.ch/shareparl/?agendaItemUid=cffd6f7f-b1e9-46a6-bb80-0ae4814dd409&startPage=true",
+      "title": "Salutations et communications - Grand Conseil Canton du Valais",
+      "links": [
+        {
+          "text": "",
+          "url": "https://vs.recapp.ch/shareparl?startPage=true&unitName=default"
+        },
+        {
+          "text": "Mentions légales",
+          "url": "https://vs.recapp.ch/shareparl/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "controls": [
+        "FR",
+        "Recherche",
+        "",
+        "",
+        "Skip Ad",
+        "",
+        "",
+        "Mute",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-vs-viewer.s3.ewstorage.ch/mediaDash/6a7ed437ac54b075e5dc62a2_converted_media_file_1788863443128.mp4#t=592.299,902.752"
+        }
+      ],
+      "labels": [],
+      "body_text_cache": "/tmp/continued-control-valais.txt",
+      "outcome": "visible_control_followup_requires_review",
+      "screenshot": "/tmp/continued-control-valais.png"
+    },
+    {
+      "id": "bulgaria",
+      "url": "https://www.parliament.bg/bg/plenaryst/ns/57/ID/2035",
+      "action": "bulgaria",
+      "checked_at": "2026-10-24T05:14:24.885Z",
+      "status": 200,
+      "archive_tabs": [],
+      "final_url": "https://www.parliament.bg/bg/plenaryst/ns/57/ID/2035",
+      "title": "Стенограми от пленарни заседания - Народно събрание на Република България",
+      "links": [
+        {
+          "text": "Архив 51-о Народно събрание",
+          "url": "https://www.parliament.bg/bg/archive/61"
+        },
+        {
+          "text": "Аудиовизуален архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "Видео архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "Консолидирана версия на Договора за Европейския съюз и Договора за функционирането на Европейския съюз",
+          "url": "http://eur-lex.europa.eu/legal-content/BG/TXT/?qid=1490951984391&uri=CELEX:12016ME/TXT"
+        },
+        {
+          "text": "Органиграма на Народното събрание",
+          "url": "https://www.parliament.bg/pub/Org_adm_05.2026.pdf"
+        },
+        {
+          "text": "Архив Народно събрание",
+          "url": "https://www.parliament.bg/bg/archive"
+        }
+      ],
+      "controls": [
+        "",
+        " \n            Меню\n        "
+      ],
+      "media": [],
+      "labels": [],
+      "body_text_cache": "/tmp/continued-control-bulgaria.txt",
+      "outcome": "visible_control_followup_requires_review",
+      "screenshot": "/tmp/continued-control-bulgaria.png"
+    }
+  ]
+}

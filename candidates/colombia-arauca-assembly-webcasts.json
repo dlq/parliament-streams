@@ -1,0 +1,71 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Qualifying provincial legislature; exact institutional Wikidata item corroborated by its country, legislative type and jurisdiction claims plus primary institutional pages.",
+    "Proceedings: The departmental assembly homepage explicitly designates channel UCqTycM15CbUe1zv5Xo0n1zw. Ordinary sittings labelled 22 and 21 October 2026 were visually reviewed at ten minutes with speakers, chamber flags and institutional room setting. Current live and every committee room remain separate checks.",
+    "Publication posture: Public institutional pages explicitly designate the viewing service. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. Reviewed institution/footer notices and, for the Colombian assemblies, their policy page and linked Mi Colombia Digital operator terms. Those platform terms govern government site provision and do not grant this project media reuse rights. No source-specific prior-linking condition was found in the reviewed material; this is not a complete legal certification.",
+    "Evidence: reports/discovery/2026-10-23-completion-review.json",
+    "Promoted as an official link-out; parent-country search, regional flag and map geometry reconciled. Recording index is planned schedule metadata, not an implemented XMLTV parser."
+  ],
+  "channel": {
+    "id": "colombia-arauca-assembly-webcasts",
+    "name": "Arauca Assembly Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Arauca",
+    "legislature": "Asamblea Departamental de Arauca",
+    "external_ids": {
+      "wikidata_qid": "Q51092556",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q51092556",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact legislative institution Q51092556, revision 2329956527; legislative type, country and P1001 jurisdiction match the primary institution. P856 and P2397 are absent from this item; official URL and provider ownership were corroborated independently from primary links, not invented as Wikidata claims."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+    "provenance_note": "The departmental assembly homepage explicitly designates channel UCqTycM15CbUe1zv5Xo0n1zw. Ordinary sittings labelled 22 and 21 October 2026 were visually reviewed at ten minutes with speakers, chamber flags and institutional room setting. Current live and every committee room remain separate checks. Selected decoded media time and frames advanced in Chromium and WebKit.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Spanish institutional and provider metadata. Muted playback does not independently verify every spoken language; captions, sign-language and audio-description coverage remain unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Public institutional pages explicitly designate the viewing service. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. Reviewed institution/footer notices and, for the Colombian assemblies, their policy page and linked Mi Colombia Digital operator terms. Those platform terms govern government site provision and do not grant this project media reuse rights. No source-specific prior-linking condition was found in the reviewed material; this is not a complete legal certification.",
+      "evidence": [
+        "https://www.asambleadepartamentodearauca.gov.co/",
+        "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+        "https://www.asambleadepartamentodearauca.gov.co/politicas"
+      ],
+      "recommendation": "Open the officially designated viewing service. Independent reuse rights and complete live/room coverage remain unresolved."
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "The official National Assembly archive explicitly designates Videonet, whose plenary index links the selected MP4 archives. Two samples decode in Chromium and WebKit: the 31 August 2026 voting-day recording shows the presiding officer at the branded parliamentary dais with a lit microphone; a part of the 28 August recording shows Marina Mijatović speaking at a lit seat microphone with her source caption. Chairing context is not described as a separately identified speech. These are selected archived proceedings, not a validated current-live channel or complete sitting inventory.",
+    "The reviewed primary parliamentary/provider navigation establishes public viewing, not a blanket independent audiovisual reuse grant. Personal-use permission remains pending; link to the official archive rather than rehosting, extracting a live channel or exporting these large event recordings to IPTV.",
+    "Evidence: reports/discovery/2026-10-24-serbia-recording-publication-review.json"
+  ],
+  "channel": {
+    "id": "serbia-national-assembly-recordings",
+    "name": "Serbia National Assembly Recordings",
+    "jurisdiction_level": "national",
+    "country_or_region": "Serbia",
+    "legislature": "National Assembly of the Republic of Serbia",
+    "external_ids": {
+      "wikidata_qid": "Q920222",
+      "ipu_country_code": "RS",
+      "ipu_parliament_code": "RS",
+      "ipu_chamber_code": "RS-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q920222",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Exact current institution Q920222, Serbia country/jurisdiction Q403 and own parliamentary website claims corroborated against the primary site; revision 2551326415."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/RS/RS-LC01/",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Primary IPU page names Serbia National Assembly and confirms its unicameral parliamentary structure. Identity/authority evidence only, not a media reuse grant."
+      }
+    ],
+    "language": "Serbian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+    "provenance_note": "The official National Assembly archive explicitly designates Videonet, whose plenary index links the selected MP4 archives. Two samples decode in Chromium and WebKit: the 31 August 2026 voting-day recording shows the presiding officer at the branded parliamentary dais with a lit microphone; a part of the 28 August recording shows Marina Mijatović speaking at a lit seat microphone with her source caption. Chairing context is not described as a separately identified speech. These are selected archived proceedings, not a validated current-live channel or complete sitting inventory.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language or audio-description coverage established. Named speaker captions identify the speaker; they are not full subtitles. Muted samples do not certify audible Serbian, interpretation or sound quality."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+        "method": "GET",
+        "kind": "official_recording_and_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed primary parliamentary/provider navigation establishes public viewing, not a blanket independent audiovisual reuse grant. Personal-use permission remains pending; link to the official archive rather than rehosting, extracting a live channel or exporting these large event recordings to IPTV.",
+      "evidence": [
+        "https://www.parlament.gov.rs/преноси/архива.2082.html",
+        "https://www.parlament.gov.rs/преноси.2091.html"
+      ],
+      "recommendation": "Use the official archive and source-designated files; independently establish reuse, live/all-room coverage and media accessibility."
+    }
+  }
+}

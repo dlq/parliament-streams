@@ -1,0 +1,693 @@
+{
+  "reviewed_on": "2026-10-24",
+  "method": "Individual review of all nonempty alternate-name matches, including item names, retained types, country, jurisdiction and website claims. Compatible claims are not automatic publication or complete primary verification. Empty-query outcomes remain in the source search report.",
+  "records": [
+    {
+      "body_id": "argentina--formosa",
+      "query": "Cámara de Diputados de Formosa",
+      "candidate_qids": [
+        "Q5795771"
+      ],
+      "supported_claim_candidates": [
+        "Q5795771"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "australia--tasmania",
+      "query": "Parliament of Tasmania",
+      "candidate_qids": [
+        "Q3365524",
+        "Q114530224"
+      ],
+      "supported_claim_candidates": [
+        "Q3365524"
+      ],
+      "rejected_candidates": [
+        "Q114530224"
+      ],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Q3365524 is the bicameral Parliament of Tasmania; Q114530224 is a biographical database, not the parliament item.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "canada--nova-scotia",
+      "query": "Nova Scotia House of Assembly",
+      "candidate_qids": [
+        "Q320273",
+        "Q127287966"
+      ],
+      "supported_claim_candidates": [
+        "Q320273"
+      ],
+      "rejected_candidates": [
+        "Q127287966"
+      ],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Q320273 identifies the House of Assembly; Q127287966 is its tartan and is rejected as an institution. Historic jurisdiction claims are retained rather than assumed current-only.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--atlantico",
+      "query": "Asamblea Departamental del Atlántico",
+      "candidate_qids": [
+        "Q51092565",
+        "Q109311398"
+      ],
+      "supported_claim_candidates": [],
+      "rejected_candidates": [],
+      "outcome": "duplicate_or_sparse_identifier_requires_resolution",
+      "individual_finding": "Q51092565 has the matching Colombia/Atlántico legislature claims; Q109311398 has only the matching name and no retained identifying properties. Do not silently choose or merge the apparent duplicate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--jihocesky-kraj",
+      "query": "Zastupitelstvo Jihočeského kraje",
+      "candidate_qids": [
+        "Q27974731"
+      ],
+      "supported_claim_candidates": [
+        "Q27974731"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--jihomoravsky-kraj",
+      "query": "Zastupitelstvo Jihomoravského kraje",
+      "candidate_qids": [
+        "Q20982295",
+        "Q21012554",
+        "Q21041045"
+      ],
+      "supported_claim_candidates": [
+        "Q20982295"
+      ],
+      "rejected_candidates": [
+        "Q21012554",
+        "Q21041045"
+      ],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Q20982295 is the standing South Moravian Region Assembly; Q21012554 (2000–2004) and Q21041045 (2008–2012) are legislative terms and are not substituted for the institution.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--karlovarsky-kraj",
+      "query": "Zastupitelstvo Karlovarského kraje",
+      "candidate_qids": [
+        "Q27974662"
+      ],
+      "supported_claim_candidates": [
+        "Q27974662"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--kralovehradecky-kraj",
+      "query": "Zastupitelstvo Královéhradeckého kraje",
+      "candidate_qids": [
+        "Q10857284"
+      ],
+      "supported_claim_candidates": [
+        "Q10857284"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--liberecky-kraj",
+      "query": "Zastupitelstvo Libereckého kraje",
+      "candidate_qids": [
+        "Q10857285"
+      ],
+      "supported_claim_candidates": [
+        "Q10857285"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--moravskoslezsky-kraj",
+      "query": "Zastupitelstvo Moravskoslezského kraje",
+      "candidate_qids": [
+        "Q27974730"
+      ],
+      "supported_claim_candidates": [
+        "Q27974730"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--olomoucky-kraj",
+      "query": "Zastupitelstvo Olomouckého kraje",
+      "candidate_qids": [
+        "Q10857286"
+      ],
+      "supported_claim_candidates": [
+        "Q10857286"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--pardubicky-kraj",
+      "query": "Zastupitelstvo Pardubického kraje",
+      "candidate_qids": [
+        "Q27974728"
+      ],
+      "supported_claim_candidates": [
+        "Q27974728"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--plzensky-kraj",
+      "query": "Zastupitelstvo Plzeňského kraje",
+      "candidate_qids": [
+        "Q21874797"
+      ],
+      "supported_claim_candidates": [
+        "Q21874797"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--stredocesky-kraj",
+      "query": "Zastupitelstvo Středočeského kraje",
+      "candidate_qids": [
+        "Q27970216"
+      ],
+      "supported_claim_candidates": [
+        "Q27970216"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--ustecky-kraj",
+      "query": "Zastupitelstvo Ústeckého kraje",
+      "candidate_qids": [
+        "Q26678626"
+      ],
+      "supported_claim_candidates": [
+        "Q26678626"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--vysocina",
+      "query": "Zastupitelstvo kraje Vysočina",
+      "candidate_qids": [
+        "Q27923767"
+      ],
+      "supported_claim_candidates": [
+        "Q27923767"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "czech-republic--zlinsky-kraj",
+      "query": "Zastupitelstvo Zlínského kraje",
+      "candidate_qids": [
+        "Q27923823"
+      ],
+      "supported_claim_candidates": [
+        "Q27923823"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--di-yogyakarta",
+      "query": "Yogyakarta Regional House of Representatives",
+      "candidate_qids": [
+        "Q25461896"
+      ],
+      "supported_claim_candidates": [],
+      "rejected_candidates": [
+        "Q25461896"
+      ],
+      "outcome": "returned_item_rejected_wrong_jurisdiction_level",
+      "individual_finding": "Q25461896 is the legislature of Yogyakarta CITY (P1001 Q7568), not the Special Region provincial legislature in the inventory. Matching city name does not satisfy the first-level body identity.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--jawa-tengah",
+      "query": "Central Java Regional House of Representatives",
+      "candidate_qids": [
+        "Q25461159"
+      ],
+      "supported_claim_candidates": [
+        "Q25461159"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--kalimantan-tengah",
+      "query": "Central Kalimantan Regional House of Representatives",
+      "candidate_qids": [
+        "Q25461958"
+      ],
+      "supported_claim_candidates": [
+        "Q25461958"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--kepulauan-riau",
+      "query": "Riau Islands Regional House of Representatives",
+      "candidate_qids": [
+        "Q25461939"
+      ],
+      "supported_claim_candidates": [
+        "Q25461939"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "malaysia--melaka",
+      "query": "Malacca State Legislative Assembly",
+      "candidate_qids": [
+        "Q6740811"
+      ],
+      "supported_claim_candidates": [
+        "Q6740811"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Named institutional item has a matching legislative type and country/jurisdiction claims. This confirms a compatible identifier lead; primary ownership and media/publication gates remain separate.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--flevoland",
+      "query": "Provinciale Staten van Flevoland",
+      "candidate_qids": [
+        "Q17511162"
+      ],
+      "supported_claim_candidates": [
+        "Q17511162"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--gelderland",
+      "query": "Provinciale Staten van Gelderland",
+      "candidate_qids": [
+        "Q17511167"
+      ],
+      "supported_claim_candidates": [
+        "Q17511167"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--groningen",
+      "query": "Provinciale Staten van Groningen",
+      "candidate_qids": [
+        "Q17052387"
+      ],
+      "supported_claim_candidates": [
+        "Q17052387"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--noord-holland",
+      "query": "Provinciale Staten van Noord-Holland",
+      "candidate_qids": [
+        "Q18167052"
+      ],
+      "supported_claim_candidates": [
+        "Q18167052"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--overijssel",
+      "query": "Provinciale Staten van Overijssel",
+      "candidate_qids": [
+        "Q27647950"
+      ],
+      "supported_claim_candidates": [
+        "Q27647950"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--utrecht",
+      "query": "Provinciale Staten van Utrecht",
+      "candidate_qids": [
+        "Q27647191"
+      ],
+      "supported_claim_candidates": [
+        "Q27647191"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--zeeland",
+      "query": "Provinciale Staten van Zeeland",
+      "candidate_qids": [
+        "Q27648047"
+      ],
+      "supported_claim_candidates": [
+        "Q27648047"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "netherlands--zuid-holland",
+      "query": "Provinciale Staten van Zuid-Holland",
+      "candidate_qids": [
+        "Q17511179"
+      ],
+      "supported_claim_candidates": [
+        "Q17511179"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific States-Provincial item, Netherlands and province jurisdiction match. Some P856 claims use older routes; current provider/ownership must use the primary reviewed site, not blindly adopt a historical Wikidata URL.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "serbia--vojvodina",
+      "query": "Assembly of Vojvodina",
+      "candidate_qids": [
+        "Q3365531"
+      ],
+      "supported_claim_candidates": [
+        "Q3365531"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "Q3365531 names the provincial Assembly of Vojvodina, has Serbia P17 and the assembly website. P1001 is absent; this is not inferred or written into Wikidata.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--fribourg-freiburg",
+      "query": "Grand Conseil Fribourg",
+      "candidate_qids": [
+        "Q664559"
+      ],
+      "supported_claim_candidates": [
+        "Q664559"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--glarus",
+      "query": "Landrat Glarus",
+      "candidate_qids": [
+        "Q1147334"
+      ],
+      "supported_claim_candidates": [
+        "Q1147334"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--jura",
+      "query": "Parlement Jura",
+      "candidate_qids": [
+        "Q2391710"
+      ],
+      "supported_claim_candidates": [
+        "Q2391710"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--luzern",
+      "query": "Kantonsrat Luzern",
+      "candidate_qids": [
+        "Q2732017"
+      ],
+      "supported_claim_candidates": [
+        "Q2732017"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--obwalden",
+      "query": "Kantonsrat Obwalden",
+      "candidate_qids": [
+        "Q113156837"
+      ],
+      "supported_claim_candidates": [
+        "Q113156837"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--schwyz",
+      "query": "Kantonsrat Schwyz",
+      "candidate_qids": [
+        "Q1728101"
+      ],
+      "supported_claim_candidates": [
+        "Q1728101"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--st-gallen",
+      "query": "Kantonsrat St. Gallen",
+      "candidate_qids": [
+        "Q2082614"
+      ],
+      "supported_claim_candidates": [
+        "Q2082614"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--valais-wallis",
+      "query": "Grand Conseil Valais",
+      "candidate_qids": [
+        "Q2275463"
+      ],
+      "supported_claim_candidates": [
+        "Q2275463"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--vaud-waadt",
+      "query": "Grand Conseil Vaud",
+      "candidate_qids": [
+        "Q2131740"
+      ],
+      "supported_claim_candidates": [
+        "Q2131740"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--zug",
+      "query": "Kantonsrat Zug",
+      "candidate_qids": [
+        "Q1948527",
+        "Q113162956"
+      ],
+      "supported_claim_candidates": [],
+      "rejected_candidates": [],
+      "outcome": "duplicate_or_scope_identifier_requires_resolution",
+      "individual_finding": "Q1948527 and Q113162956 both have Switzerland/Zug claims and legislative labels but differ in type/scope. Retain both pending current-institution versus term/body reconciliation; no arbitrary first-result acceptance.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--zurich",
+      "query": "Kantonsrat Zürich",
+      "candidate_qids": [
+        "Q2110002"
+      ],
+      "supported_claim_candidates": [
+        "Q2110002"
+      ],
+      "rejected_candidates": [],
+      "outcome": "claims_support_named_institution_primary_and_media_gates_remain",
+      "individual_finding": "The specific parliament name, Switzerland and canton-jurisdiction claims match the current primary parliamentary names already reviewed in the Swiss correction register. Current provider designation/playback/conditions remain separate gates.",
+      "source_search_report": "reports/discovery/2026-10-24-institution-alias-search.json",
+      "claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "summary": {
+    "claims_support_named_institution_primary_and_media_gates_remain": 39,
+    "duplicate_or_scope_identifier_requires_resolution": 1,
+    "duplicate_or_sparse_identifier_requires_resolution": 1,
+    "returned_item_rejected_wrong_jurisdiction_level": 1
+  }
+}

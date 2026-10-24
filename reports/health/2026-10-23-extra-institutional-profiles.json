@@ -1,0 +1,25 @@
+{
+  "method": "Individual exact legislative/profile route retrieval with normal TLS; government subdomain identity and scoped contents assessed separately from playback.",
+  "results": [
+    {
+      "key": "silesia-flag",
+      "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Silesian_Voivodeship.svg",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "lds-contact",
+      "url": "https://lanaodelsur.gov.ph/contact-us/",
+      "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>"
+    },
+    {
+      "key": "misocc",
+      "url": "https://sp.misocc.gov.ph/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "key": "negor",
+      "url": "https://sp.negor.gov.ph/NegrosOr/Legislative/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}

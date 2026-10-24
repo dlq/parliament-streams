@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "A provincial-government announcement dated 25 August 2026 explicitly designates @LegislaturadelChubut23-27 as the Honorable Legislatura del Chubut channel. Ordinary sittings dated 15 and 1 October 2026 were visually checked at 10461 and 11564 seconds, beyond their long introductory films: deputies Vanesa Abril and Tatiana Alejandra Goic are identified at chamber microphones. A Social Legislation, Health and Work committee recording at 1800 seconds shows nursing department head Cecilia Varela in Sala de Plenarios Dr. Jorge Aubia. Selected decoded media and frames advanced in Chromium and WebKit. This establishes sampled recordings, not current live or complete committee coverage. The older legislature homepage remains held for unrelated non-institutional content; it was not used as a current viewing destination.",
+    "The current provincial-government announcement independently designates the public provider channel. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. The older institutional website could not be reliably reviewed because it served unexpected content. No prior-linking condition was found in the reviewed government announcement/provider material; this is not complete legal certification.",
+    "Evidence: reports/discovery/2026-10-23-chubut-review.json"
+  ],
+  "channel": {
+    "id": "argentina-chubut-legislature-webcasts",
+    "name": "Chubut Legislature Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Chubut",
+    "legislature": "Honorable Legislatura de la Provincia del Chubut",
+    "external_ids": {
+      "wikidata_qid": "Q18419590",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q18419590",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact legislature Q18419590 revision 2526117415 has legislative type, Argentina P17 and Chubut P1001. Its P856 is the older held institutional host; P2397 is absent. Current provider ownership is corroborated separately by the provincial-government announcement, not asserted as a Wikidata claim."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@LegislaturadelChubut23-27/streams",
+    "provenance_note": "A provincial-government announcement dated 25 August 2026 explicitly designates @LegislaturadelChubut23-27 as the Honorable Legislatura del Chubut channel. Ordinary sittings dated 15 and 1 October 2026 were visually checked at 10461 and 11564 seconds, beyond their long introductory films: deputies Vanesa Abril and Tatiana Alejandra Goic are identified at chamber microphones. A Social Legislation, Health and Work committee recording at 1800 seconds shows nursing department head Cecilia Varela in Sala de Plenarios Dr. Jorge Aubia. Selected decoded media and frames advanced in Chromium and WebKit. This establishes sampled recordings, not current live or complete committee coverage. The older legislature homepage remains held for unrelated non-institutional content; it was not used as a current viewing destination.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Spanish institutional/provider metadata; muted playback does not independently verify all spoken tracks. Captions, sign-language and audio-description coverage remain unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.youtube.com/@LegislaturadelChubut23-27/streams",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The current provincial-government announcement independently designates the public provider channel. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. The older institutional website could not be reliably reviewed because it served unexpected content. No prior-linking condition was found in the reviewed government announcement/provider material; this is not complete legal certification.",
+      "evidence": [
+        "https://capacitacion.chubut.gov.ar/noticias/convocatoria-violencia-digital-de-genero",
+        "https://www.youtube.com/@LegislaturadelChubut23-27/streams"
+      ],
+      "recommendation": "Open the officially designated viewing service; independent reuse, current live and complete room coverage remain unresolved."
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "allPassed": true,
+  "checks": [
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Brazilian state polygons and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 1280,
+      "catalogue": 197,
+      "regions": 99,
+      "validatedNewEntries": 9,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Brazilian state polygons and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 320,
+      "catalogue": 197,
+      "regions": 99,
+      "validatedNewEntries": 9,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Brazilian state polygons and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 1280,
+      "catalogue": 197,
+      "regions": 99,
+      "validatedNewEntries": 9,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Brazilian state polygons and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 320,
+      "catalogue": 197,
+      "regions": 99,
+      "validatedNewEntries": 9,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "checked_on": "2026-10-23",
+  "evidence_recovery": "Recovered intact allPassed/checks output from the original Brazilian browser run console log after the Caldas run reused its temporary script output filename. These are the original197-source/99-region/nine-entry checks, not the later Caldas checks."
+}

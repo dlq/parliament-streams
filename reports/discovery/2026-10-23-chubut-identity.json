@@ -1,0 +1,69 @@
+{
+  "qid": "Q18419590",
+  "revision": 2526117415,
+  "labels": {
+    "es": {
+      "language": "es",
+      "value": "Legislatura de la Provincia del Chubut"
+    },
+    "en": {
+      "language": "en",
+      "value": "Chubut legislature"
+    },
+    "vec": {
+      "language": "vec",
+      "value": "Lejislatura de ła Provincia del Chubut"
+    },
+    "zh": {
+      "language": "zh",
+      "value": "丘布特省立法机关"
+    }
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Einkammerparlament in Argentinien"
+    },
+    "en": {
+      "language": "en",
+      "value": "legislative body of Chubut Province, Argentina"
+    },
+    "es": {
+      "language": "es",
+      "value": "edificio oficial encargado de ejercer el poder legislativo de la Provincia del Chubut, Argentina"
+    }
+  },
+  "claims": {
+    "P31": [
+      {
+        "entity-type": "item",
+        "numeric-id": 37002670,
+        "id": "Q37002670"
+      },
+      {
+        "entity-type": "item",
+        "numeric-id": 11204,
+        "id": "Q11204"
+      }
+    ],
+    "P17": [
+      {
+        "entity-type": "item",
+        "numeric-id": 414,
+        "id": "Q414"
+      }
+    ],
+    "P1001": [
+      {
+        "entity-type": "item",
+        "numeric-id": 45007,
+        "id": "Q45007"
+      }
+    ],
+    "P131": [],
+    "P856": [
+      "https://legislaturadelchubut.gob.ar/"
+    ],
+    "P2397": []
+  }
+}

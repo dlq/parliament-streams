@@ -1,0 +1,533 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "daegu-1",
+      "body_id": "south-korea--daegu",
+      "url": "https://www.youtube.com/watch?v=AwSD2kvqCvk&t=4814s",
+      "video": true,
+      "offset": 4814,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:24:39.228Z",
+      "status": 200,
+      "title": "제329회 임시회 제2차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 4817.947593,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7080.401,
+        "frames": 294,
+        "tracks": []
+      },
+      "later": {
+        "time": 4820.161906,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7080.401,
+        "frames": 358,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-daegu-1-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "daegu-2",
+      "body_id": "south-korea--daegu",
+      "url": "https://www.youtube.com/watch?v=SECviLhZ2VY&t=5183s",
+      "video": true,
+      "offset": 5183,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:24:52.125Z",
+      "status": 200,
+      "title": "제329회 임시회 개회식 및 제1차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 5186.935878,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7622.941,
+        "frames": 405,
+        "tracks": []
+      },
+      "later": {
+        "time": 5189.145639,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7622.941,
+        "frames": 471,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-daegu-2-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "gyeongsangbuk-1",
+      "body_id": "south-korea--gyeongsangbuk",
+      "url": "https://www.youtube.com/watch?v=rIJlg4rAGpU&t=1053s",
+      "video": true,
+      "offset": 1053,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:25:04.980Z",
+      "status": 200,
+      "title": "1st Plenary Session of the 362nd Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1056.933087,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 2105.121,
+        "frames": 380,
+        "tracks": []
+      },
+      "later": {
+        "time": 1059.141133,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 2105.121,
+        "frames": 445,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangbuk-1-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "gyeongsangbuk-2",
+      "body_id": "south-korea--gyeongsangbuk",
+      "url": "https://www.youtube.com/watch?v=hRpgTe8QZgI&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:25:18.819Z",
+      "status": 200,
+      "title": "2nd Plenary Session of the 361st Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.956239,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4070.081,
+        "frames": 203,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.169346,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4070.081,
+        "frames": 270,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangbuk-2-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "incheon-1",
+      "body_id": "south-korea--incheon",
+      "url": "https://www.youtube.com/watch?v=wwSSXfjA9KY&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:25:32.404Z",
+      "status": 200,
+      "title": "제313회 인천광역시의회 임시회_제5차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.952316,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 12749.621,
+        "frames": 227,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.162806,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 12749.621,
+        "frames": 294,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-incheon-1-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "incheon-2",
+      "body_id": "south-korea--incheon",
+      "url": "https://www.youtube.com/watch?v=R00uf_ymFHY&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:25:45.047Z",
+      "status": 200,
+      "title": "313th Incheon Metropolitan Council Extraordinary Session_4th Plenary Meeting - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.933795,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 5256.581,
+        "frames": 415,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.14363,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 5256.581,
+        "frames": 481,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-incheon-2-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "daegu-1",
+      "body_id": "south-korea--daegu",
+      "url": "https://www.youtube.com/watch?v=AwSD2kvqCvk&t=4814s",
+      "video": true,
+      "offset": 4814,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:25:58.036Z",
+      "status": 200,
+      "title": "제329회 임시회 제2차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 4817.603037913,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7080.401,
+        "frames": 266,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 4819.814331496,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7080.401,
+        "frames": 332,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-daegu-1-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "daegu-2",
+      "body_id": "south-korea--daegu",
+      "url": "https://www.youtube.com/watch?v=SECviLhZ2VY&t=5183s",
+      "video": true,
+      "offset": 5183,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:26:10.565Z",
+      "status": 200,
+      "title": "제329회 임시회 개회식 및 제1차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 5186.527981526,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7622.941,
+        "frames": 378,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 5188.735312649,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7622.941,
+        "frames": 438,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-daegu-2-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "gyeongsangbuk-1",
+      "body_id": "south-korea--gyeongsangbuk",
+      "url": "https://www.youtube.com/watch?v=rIJlg4rAGpU&t=1053s",
+      "video": true,
+      "offset": 1053,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:26:23.250Z",
+      "status": 200,
+      "title": "1st Plenary Session of the 362nd Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1056.525773863,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 2105.121,
+        "frames": 281,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1058.737669946,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 2105.121,
+        "frames": 339,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangbuk-1-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "gyeongsangbuk-2",
+      "body_id": "south-korea--gyeongsangbuk",
+      "url": "https://www.youtube.com/watch?v=hRpgTe8QZgI&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:26:36.234Z",
+      "status": 200,
+      "title": "2nd Plenary Session of the 361st Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.610821652,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4070.081,
+        "frames": 164,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.823722942,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4070.081,
+        "frames": 242,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-gyeongsangbuk-2-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "incheon-1",
+      "body_id": "south-korea--incheon",
+      "url": "https://www.youtube.com/watch?v=wwSSXfjA9KY&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:26:48.819Z",
+      "status": 200,
+      "title": "제313회 인천광역시의회 임시회_제5차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.533960173,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 12749.621,
+        "frames": 189,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.745329297,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 12749.621,
+        "frames": 255,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-incheon-1-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    },
+    {
+      "key": "incheon-2",
+      "body_id": "south-korea--incheon",
+      "url": "https://www.youtube.com/watch?v=R00uf_ymFHY&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:27:02.116Z",
+      "status": 200,
+      "title": "313th Incheon Metropolitan Council Extraordinary Session_4th Plenary Meeting - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.44083589,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 5256.581,
+        "frames": 368,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.653569224,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 5256.581,
+        "frames": 434,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-incheon-2-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council chamber and plenary chair/member, interpreter; decoded recorded proceedings at the stated offset. No live or source-wide accessibility inference."
+    }
+  ]
+}

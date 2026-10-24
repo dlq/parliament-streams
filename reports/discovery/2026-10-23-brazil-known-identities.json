@@ -1,0 +1,1442 @@
+{
+  "research_date": "2026-10-23",
+  "no_bulk_search_or_rate_limit_retry": true,
+  "results": [
+    {
+      "id": "brazil--assembleia-legislativa-de-mato-grosso-do-sul",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20de%20Mato%20Grosso%20do%20Sul",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q9633190",
+      "revision": 2499948831,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa do Mato Grosso do Sul"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Mato Grosso do Sul"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633190$8A1DA7D8-6CE8-4CDC-96D9-FB662A7E9BDF",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633190$23D45510-D173-4D86-A1B4-9710109AC24A",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633190$608C1EA1-BFB0-4B27-B833-89BB3B0A60E9",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "15ab45040cfafa3a5179ac12e312f4106835f9c8",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 43319,
+                  "id": "Q43319"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633190$9446dd2f-4bf8-e84a-a03f-0cdae914dce3",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "ab69734bcc7598df1ef7922e0cfc0afea56f21ff",
+              "datavalue": {
+                "value": "http://www.al.ms.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d3341820d45f6bb2097e8460656f7cd8fea3cf2a",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 5146,
+                      "id": "Q5146"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q9633190$3D969278-F401-419A-9A94-DBDAE6096FDB",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-da-paraiba",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20da%20Para%C3%ADba",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q9633173",
+      "revision": 2492396842,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa da Paraíba"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Paraíba"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633173$34A775CD-9789-4CBA-955C-9A9625A549AA",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633173$2709DCDB-E539-4696-82BD-15620C6B3E63",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633173$5A720422-FB1B-47D7-BF61-94F72C14DE6D",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "a9ef07046f7129fcff8a319309b9db965c8dda14",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 38088,
+                  "id": "Q38088"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633173$e9e38bfb-4bff-17ec-b34f-0803a5a95599",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "4a695a9730f863e37ae45b3eeb60521b87420018",
+              "datavalue": {
+                "value": "http://www.al.pb.leg.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q9633173$293C72A1-2A87-43E5-A4CE-DCE1F0D01B66",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-de-goias",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20de%20Goi%C3%A1s",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q9633183",
+      "revision": 2475720632,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa de Goiás"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Goiás"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633183$5D1B23F4-8FAB-4182-98F3-94AE53B9B928",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633183$B295C883-8C35-4A75-BFDF-2EABE47BD758",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633183$79D64643-BC60-4DD6-A40F-297D285FB924",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "daf0bc81b03571a4838b142d88eebe70e6f6e108",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 41587,
+                  "id": "Q41587"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633183$9d5f80a2-4a19-7e82-bbf2-074ab6b805bc",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "f32ef40bc2ce7f2ebd306cad176bd240629f147a",
+              "datavalue": {
+                "value": "http://www.al.go.leg.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q9633183$89468259-19E4-44BD-ABC8-5E1672BC9082",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-de-mato-grosso",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20de%20Mato%20Grosso",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q16498710",
+      "revision": 2492395385,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa do Mato Grosso"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Mato Grosso"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16498710$C7EE1F7B-9BA4-4475-A3BB-9DD7ADE819D8",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16498710$BA463707-F1AD-44AC-9BE7-553E8810CD75",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16498710$B2BF1412-CF34-4E6A-8655-E35956BA3E02",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "b81ad23e8320a3d127a9d5ea220b6b0c4343a0fb",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 42824,
+                  "id": "Q42824"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16498710$f2e5e743-4ca7-d5c9-9635-38b6c865606c",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "462040a48fe58e7a5b0551a8dea3a71caf333856",
+              "datavalue": {
+                "value": "http://www.al.mt.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q16498710$0D41A759-FB31-4372-ACA2-0F73E04E9594",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-de-pernambuco",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20de%20Pernambuco",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q9633197",
+      "revision": 2492397088,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa de Pernambuco"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Pernambuco"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633197$8709848B-78A4-4707-BFF0-1C130165025F",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633197$2289C5D8-224C-404B-BD07-982295DD887D",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633197$EDA56A16-96FF-4D52-9CAB-D15E661909AB",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9424852ca7d9d48269148c57acbefacca1899882",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "b7f8bea3bb10c237323eb448dc4798948923bd5c",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11921,
+                          "id": "Q11921"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "c60dcd7ce4a131da0fecb08849ee78e27d2263e1",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 40942,
+                  "id": "Q40942"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P467": [
+                {
+                  "snaktype": "value",
+                  "property": "P467",
+                  "hash": "9cfac7075aceb764f0b8ac07001b32002743f905",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 9633197,
+                      "id": "Q9633197"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P467"
+            ],
+            "id": "Q9633197$6c3f1cf9-43e5-53ad-93b0-0586bb6c76e4",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "95fecc7ad65b779a82088f54cab43566f63b7841",
+              "datavalue": {
+                "value": "http://www.alepe.pe.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q9633197$4C0E6390-B71A-4D90-AB4F-67D772E51B0C",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-de-rondonia",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20de%20Rond%C3%B4nia",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q16494760",
+      "revision": 2475720677,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa de Rondônia"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Rondônia"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16494760$E72279BC-B280-4154-8182-9487CA66CC83",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16494760$226A1974-7CC9-42C2-BA07-540EC6F76AFE",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16494760$27F1E354-8F95-4EA2-BF2C-D3F1BB118161",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "528f607ae6b952ba6111d8879946fcaab5125135",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 43235,
+                  "id": "Q43235"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16494760$76be00cd-4b0a-97b5-bde2-c74ad44df1b6",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "c07b8a640b950a156d6122e0f190e30ceee5ffdc",
+              "datavalue": {
+                "value": "http://www.al.ro.leg.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q16494760$1C90BF9D-123A-4C69-982D-6B9CEF8A73DD",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-do-ceara",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20do%20Cear%C3%A1",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q13163502",
+      "revision": 2492392060,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Ceará"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa do Ceará"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q13163502$CB4B9B5C-6FB8-4BBD-9E95-D20F1FF0C6E1",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q13163502$374E79C3-6579-43B5-AB8C-72BF56030A8F",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q13163502$31FD7A0E-8A54-4ACD-B32C-4A9ECE03BC2A",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "87a62560cd33096ed9229b1df3950bf6356c4011",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 40123,
+                  "id": "Q40123"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q13163502$605d02ab-444a-85a0-57f1-46133cbd5dd6",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "3aa0c5344bdabceef8efdd679a259bc44720860e",
+              "datavalue": {
+                "value": "http://www.al.ce.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q13163502$066E082D-0C43-4C13-B985-D389B3F6269F",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-do-parana",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20do%20Paran%C3%A1",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q9633230",
+      "revision": 2492396956,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa do Paraná"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Paraná"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633230$884DF5A0-0DFE-45D6-95E8-FC7232D351C2",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633230$0EDD4DB0-CE1D-4F50-89B8-860EEEE491E0",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633230$1FD20D8E-7186-48EE-975E-4A6479FC5A2D",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "ab5b2c72b7806b835f3621ddacc2cf6e4627e291",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 15499,
+                  "id": "Q15499"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633230$0dd3f281-4178-2053-8a46-c6c141a006c2",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "9496964ff6b3348a1f236767e7add344b8664cd7",
+              "datavalue": {
+                "value": "http://www.alep.pr.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q9633230$6E772092-7D00-49BD-A6DE-B52F7CE7CE2C",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-do-rio-de-janeiro",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20do%20Rio%20de%20Janeiro",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q6583209",
+      "revision": 2492403968,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Rio de Janeiro"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa do Rio de Janeiro"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q6583209$9B359890-929F-4C13-ACFA-AB3A957DDD76",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q6583209$0914CCA6-B8E5-4C3A-AC62-D6D630243050",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q6583209$71C705D3-7293-494F-9D93-BFE5FFA69485",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "7407024751a0df896edcd69b34e044e8d3871feb",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 41428,
+                  "id": "Q41428"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q6583209$31181f34-4c6a-ccf6-2b59-15529610ac95",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "447ad1e812e9bfb7fdec229cd969d200a0b698c5",
+              "datavalue": {
+                "value": "http://www.alerj.rj.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q6583209$B55DDAD5-C7C8-40BD-8070-CEC4D2DC4185",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "brazil--assembleia-legislativa-do-tocantins",
+      "discovery_page": "https://pt.wikipedia.org/wiki/Assembleia%20Legislativa%20do%20Tocantins",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q9633245",
+      "revision": 2475720691,
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Legislativa do Tocantins"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislative Assembly of Tocantins"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6518196,
+                  "id": "Q6518196"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633245$AF81ABD3-895A-42DA-B0D3-8C72D1E9E353",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633245$231D587B-94D9-4D1B-89EE-4CEFE5744FB1",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 155,
+                  "id": "Q155"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633245$23317F5D-D33A-4268-9009-1C695AB1E4DC",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "b6ba59e8e3ea97f736c6231a82a28f676cb70385",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 43695,
+                  "id": "Q43695"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q9633245$4c81ac85-4f84-ab0e-3797-e66e731d229f",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "9c3dfb71def7c8503ae9750a6c8ae17cda01707e",
+              "datavalue": {
+                "value": "http://www.al.to.gov.br/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 750553,
+                      "id": "Q750553"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q9633245$A89E4ACF-6289-4D14-A55E-000D801E9ACB",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    }
+  ]
+}

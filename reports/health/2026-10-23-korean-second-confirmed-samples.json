@@ -1,0 +1,533 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "busan-1",
+      "body_id": "south-korea--busan",
+      "url": "https://www.youtube.com/watch?v=-W1i_jFr0rw&t=7811s",
+      "video": true,
+      "offset": 7811,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:41:35.061Z",
+      "status": 200,
+      "title": "부산광역시의회 제339회 임시회 제4차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 7814.931606,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 11487.021,
+        "frames": 447,
+        "tracks": []
+      },
+      "later": {
+        "time": 7817.140818,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 11487.021,
+        "frames": 514,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-busan-1-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "busan-2",
+      "body_id": "south-korea--busan",
+      "url": "https://www.youtube.com/watch?v=TYK2OGINRw0&t=16500s",
+      "video": true,
+      "offset": 16500,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:41:48.468Z",
+      "status": 200,
+      "title": "부산광역시의회 제339회 임시회 제3차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 16503.949864,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 18809.221,
+        "frames": 251,
+        "tracks": []
+      },
+      "later": {
+        "time": 16506.158453,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 18809.221,
+        "frames": 317,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-busan-2-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "chungnam-1",
+      "body_id": "south-korea--chungcheongnam",
+      "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=15141s",
+      "video": true,
+      "offset": 15141,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:42:01.655Z",
+      "status": 200,
+      "title": "제371회 임시회 제4차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 15144.945551,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22266.241,
+        "frames": 283,
+        "tracks": []
+      },
+      "later": {
+        "time": 15147.155403,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22266.241,
+        "frames": 348,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-chungnam-1-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "chungnam-2",
+      "body_id": "south-korea--chungcheongnam",
+      "url": "https://www.youtube.com/watch?v=ggqR49FOH7M&t=15166s",
+      "video": true,
+      "offset": 15166,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:42:14.101Z",
+      "status": 200,
+      "title": "제371회 임시회 제3차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 15169.934788,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22303.761,
+        "frames": 353,
+        "tracks": []
+      },
+      "later": {
+        "time": 15172.145415,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22303.761,
+        "frames": 419,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-chungnam-2-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "jeonbuk-1",
+      "body_id": "south-korea--jeonbuk",
+      "url": "https://www.youtube.com/watch?v=wsDN0Dtwxmw&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:42:27.262Z",
+      "status": 200,
+      "title": "[LIVE] 📺 제432회 임시회 제4차 본회의(2026.10.23.) 📢 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.925721,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 15410.501,
+        "frames": 483,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.137136,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 15410.501,
+        "frames": 549,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonbuk-1-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "jeonbuk-2",
+      "body_id": "south-korea--jeonbuk",
+      "url": "https://www.youtube.com/watch?v=KIki5X0QgMw&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:42:39.988Z",
+      "status": 200,
+      "title": "[LIVE] 📺 제432회 임시회 제3차 본회의(2026.10.14.) 📢 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.935002,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7801.541,
+        "frames": 411,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.144921,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7801.541,
+        "frames": 478,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonbuk-2-chromium.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "busan-1",
+      "body_id": "south-korea--busan",
+      "url": "https://www.youtube.com/watch?v=-W1i_jFr0rw&t=7811s",
+      "video": true,
+      "offset": 7811,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:42:53.767Z",
+      "status": 200,
+      "title": "부산광역시의회 제339회 임시회 제4차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 7814.604597643,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 11487.021,
+        "frames": 234,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 7816.815530726,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 11487.021,
+        "frames": 294,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-busan-1-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "busan-2",
+      "body_id": "south-korea--busan",
+      "url": "https://www.youtube.com/watch?v=TYK2OGINRw0&t=16500s",
+      "video": true,
+      "offset": 16500,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:43:06.690Z",
+      "status": 200,
+      "title": "부산광역시의회 제339회 임시회 제3차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 16503.549163066,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 18809.221,
+        "frames": 219,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 16505.761099275,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 18809.221,
+        "frames": 285,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-busan-2-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "chungnam-1",
+      "body_id": "south-korea--chungcheongnam",
+      "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=15141s",
+      "video": true,
+      "offset": 15141,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:43:19.514Z",
+      "status": 200,
+      "title": "제371회 임시회 제4차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 15141.001,
+        "width": 0,
+        "height": 0,
+        "ready": 1,
+        "duration": 22266.241,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 15141.001,
+        "width": 0,
+        "height": 0,
+        "ready": 1,
+        "duration": 22266.241,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": false,
+      "sample_offset_reached": true,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-chungnam-1-webkit.png",
+      "visual_review": "Zero decoded frames at the selected offset; not counted as confirmed proceedings. Successful later retry recorded separately."
+    },
+    {
+      "key": "chungnam-2",
+      "body_id": "south-korea--chungcheongnam",
+      "url": "https://www.youtube.com/watch?v=ggqR49FOH7M&t=15166s",
+      "video": true,
+      "offset": 15166,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:43:34.836Z",
+      "status": 200,
+      "title": "제371회 임시회 제3차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 15169.554928988,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22303.761,
+        "frames": 321,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 15171.765535612,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22303.761,
+        "frames": 381,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-chungnam-2-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "jeonbuk-1",
+      "body_id": "south-korea--jeonbuk",
+      "url": "https://www.youtube.com/watch?v=wsDN0Dtwxmw&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:43:47.955Z",
+      "status": 200,
+      "title": "[LIVE] 📺 제432회 임시회 제4차 본회의(2026.10.23.) 📢 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.530545666,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 15410.501,
+        "frames": 452,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.742901291,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 15410.501,
+        "frames": 512,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonbuk-1-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    },
+    {
+      "key": "jeonbuk-2",
+      "body_id": "south-korea--jeonbuk",
+      "url": "https://www.youtube.com/watch?v=KIki5X0QgMw&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:44:00.807Z",
+      "status": 200,
+      "title": "[LIVE] 📺 제432회 임시회 제3차 본회의(2026.10.14.) 📢 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.5296121,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7801.541,
+        "frames": 382,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.741655392,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7801.541,
+        "frames": 442,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonbuk-2-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    }
+  ]
+}

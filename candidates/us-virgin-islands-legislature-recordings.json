@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution currently designates the viewing provider. 22October2026 Rules/Judiciary, member at microphone under Bill36-0277 comprehensive probate-code caption and LegITTV logo; selected point is bill discussion, not nominee block from beginning of description. 20October2026 Budget/Appropriations/Finance, senator MarvinA.Blyden at handheld microphone under named vice-chair/36thLegislature caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+    "Evidence: reports/discovery/2026-10-24-three-regional-archive-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "us-virgin-islands-legislature-recordings",
+    "name": "United States Virgin Islands Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "United States Virgin Islands",
+    "legislature": "Legislature of the Virgin Islands",
+    "external_ids": {
+      "wikidata_qid": "Q6518465",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q6518465",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Exact legislature item Q6518465 has jurisdiction Q11703 (US Virgin Islands) and an institutional website claim; P17 is absent and was not invented. Primary institution/provider and territorial authority review corroborate the relationship. Current revision 2433306284; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://legvi.org/",
+    "provenance_note": "Official institution currently designates the viewing provider. 22October2026 Rules/Judiciary, member at microphone under Bill36-0277 comprehensive probate-code caption and LegITTV logo; selected point is bill discussion, not nominee block from beginning of description. 20October2026 Budget/Appropriations/Finance, senator MarvinA.Blyden at handheld microphone under named vice-chair/36thLegislature caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://legvi.org/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "evidence": [
+        "https://legvi.org/"
+      ],
+      "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+    }
+  }
+}

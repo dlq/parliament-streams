@@ -1,0 +1,158 @@
+{
+  "method": "Normal public Wikidata search API, one institutional name at a time; candidates are not accepted without exact institutional claim and primary crosscheck. Stop on rate limit, no alternate endpoint retry.",
+  "results": [
+    {
+      "id": "colombia--bolivar",
+      "query": "Asamblea Departamental de Bolívar",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Bol%C3%ADvar&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092559",
+          "label": "asamblea departamental de Bolívar",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092559"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--boyaca",
+      "query": "Asamblea Departamental de Boyacá",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Boyac%C3%A1&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092546",
+          "label": "asamblea departamental de Boyacá",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092546"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--casanare",
+      "query": "Asamblea Departamental de Casanare",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Casanare&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092547",
+          "label": "asamblea departamental de Casanare",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092547"
+        },
+        {
+          "id": "Q140193840",
+          "label": "Asamblea Departamental de Casanare",
+          "description": "Legislatura departamental en Colombia",
+          "url": "//www.wikidata.org/wiki/Q140193840"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--cesar",
+      "query": "Asamblea Departamental de Cesar",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Cesar&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q21564847",
+          "label": "asamblea departamental de Cesar",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q21564847"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--guaviare",
+      "query": "Asamblea Departamental de Guaviare",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Guaviare&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092595",
+          "label": "asamblea departamental de Guaviare",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092595"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--la-guajira",
+      "query": "Asamblea Departamental de La Guajira",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+La+Guajira&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q5707807",
+          "label": "asamblea departamental de La Guajira",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q5707807"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--magdalena",
+      "query": "Asamblea Departamental de Magdalena",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Magdalena&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092552",
+          "label": "asamblea departamental de Magdalena",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092552"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--meta",
+      "query": "Asamblea Departamental de Meta",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Meta&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092583",
+          "label": "asamblea departamental de Meta",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092583"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--narino",
+      "query": "Asamblea Departamental de Nariño",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Nari%C3%B1o&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092555",
+          "label": "asamblea departamental de Nariño",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092555"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--quindio",
+      "query": "Asamblea Departamental de Quindío",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+Quind%C3%ADo&language=es&uselang=es&format=json&limit=4",
+      "matches": [
+        {
+          "id": "Q51092551",
+          "label": "asamblea departamental de Quindío",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092551"
+        }
+      ],
+      "outcome": "identity_search_requires_exact_review"
+    },
+    {
+      "id": "colombia--san-andres-providencia-y-santa-catalina",
+      "query": "Asamblea Departamental de San Andrés, Providencia y Santa Catalina",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Asamblea+Departamental+de+San+Andr%C3%A9s%2C+Providencia+y+Santa+Catalina&language=es&uselang=es&format=json&limit=4",
+      "outcome": "identity_search_unresolved",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  ]
+}

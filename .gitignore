@@ -49,3 +49,6 @@ data/schedules.json
 .env
 .env.*
 !.env.example
+
+# Persistent local research responses and shared service cooldown
+.cache/wikidata/

@@ -1,0 +1,2045 @@
+{
+  "research_date": "2026-10-24",
+  "scope": "Inventory completeness reconciliation B:24assigned countries under maintained EIU Democracy Index2024 baseline(published2025),25full+46flawed democracies. National/chamber and regional/special-status universe first; no stream,EPG or rights validation.",
+  "baseline_report": "reports/discovery/2026-10-22-subnational-research.json",
+  "country_count": 24,
+  "existing_subnational_rows": 349,
+  "conclusion": "No complete-inventory certificate. Concrete omissions: six Indian upper-house chamber records; named special-status authority review sets for ten Indian Sixth Schedule councils and three Tokelauan Taupulega. Several local exclusions need accurate scope wording; local ordinance power is not equivalent to zero authority.",
+  "global_caveats": [
+    "All24assigned countries addressed; absence of identified omission is not proof that no institution exists.",
+    "National names are a distinct inventory grain from whole legislatures, viewing channels or subnational jurisdictions.",
+    "No invented assemblies from territory names, executive offices or administrative subdivisions.",
+    "Committee rooms are service children, not separate legislatures.",
+    "No catalogue,master inventory,eligibility or rights changes made by this report."
+  ],
+  "countries": [
+    {
+      "country": "Guyana",
+      "national_chambers_or_constitutional_bodies": [
+        "National Assembly"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 10,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 10
+      },
+      "existing_named_bodies": [
+        {
+          "id": "guyana--barima-waini",
+          "institution": "Barima-Waini Regional Democratic Council"
+        },
+        {
+          "id": "guyana--pomeroon-supenaam",
+          "institution": "Pomeroon-Supenaam Regional Democratic Council"
+        },
+        {
+          "id": "guyana--essequibo-islands-west-demerara",
+          "institution": "Essequibo Islands-West Demerara Regional Democratic Council"
+        },
+        {
+          "id": "guyana--demerara-mahaica",
+          "institution": "Demerara-Mahaica Regional Democratic Council"
+        },
+        {
+          "id": "guyana--mahaica-berbice",
+          "institution": "Mahaica-Berbice Regional Democratic Council"
+        },
+        {
+          "id": "guyana--east-berbice-corentyne",
+          "institution": "East Berbice-Corentyne Regional Democratic Council"
+        },
+        {
+          "id": "guyana--cuyuni-mazaruni",
+          "institution": "Cuyuni-Mazaruni Regional Democratic Council"
+        },
+        {
+          "id": "guyana--potaro-siparuni",
+          "institution": "Potaro-Siparuni Regional Democratic Council"
+        },
+        {
+          "id": "guyana--upper-takutu-upper-essequibo",
+          "institution": "Upper Takutu-Upper Essequibo Regional Democratic Council"
+        },
+        {
+          "id": "guyana--upper-demerara-upper-berbice",
+          "institution": "Upper Demerara-Upper Berbice Regional Democratic Council"
+        }
+      ],
+      "primary_urls": [
+        "https://www.parliament.gov.gy/constitution.pdf",
+        "https://dpi.gov.gy/know-your-local-government/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Ten named regional councils match the government description of ten administrative regions. They are regional local-government organs, excluded under the maintained parliamentary/devolved-legislature scope. Binding decisions exist; do not describe them as merely advisory.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Review exclusion wording against Constitution arts71–78; no missing first-level regional name identified.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Hungary",
+      "national_chambers_or_constitutional_bodies": [
+        "Országgyűlés"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 20,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 20
+      },
+      "existing_named_bodies": [
+        {
+          "id": "hungary--bacs-kiskun",
+          "institution": "Bács-Kiskun Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--baranya",
+          "institution": "Baranya Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--bekes",
+          "institution": "Békés Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--borsod-abauj-zemplen",
+          "institution": "Borsod-Abaúj-Zemplén Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--csongrad-csanad",
+          "institution": "Csongrád-Csanád Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--fejer",
+          "institution": "Fejér Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--gyor-moson-sopron",
+          "institution": "Győr-Moson-Sopron Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--hajdu-bihar",
+          "institution": "Hajdú-Bihar Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--heves",
+          "institution": "Heves Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--jasz-nagykun-szolnok",
+          "institution": "Jász-Nagykun-Szolnok Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--komarom-esztergom",
+          "institution": "Komárom-Esztergom Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--nograd",
+          "institution": "Nógrád Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--pest",
+          "institution": "Pest Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--somogy",
+          "institution": "Somogy Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--szabolcs-szatmar-bereg",
+          "institution": "Szabolcs-Szatmár-Bereg Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--tolna",
+          "institution": "Tolna Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--vas",
+          "institution": "Vas Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--veszprem",
+          "institution": "Veszprém Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--zala",
+          "institution": "Zala Vármegyei Közgyűlés"
+        },
+        {
+          "id": "hungary--budapest",
+          "institution": "Fővárosi Közgyűlés"
+        }
+      ],
+      "primary_urls": [
+        "https://njt.jog.gov.hu/jogszabaly/en/2011-4301-02-00"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Nineteen county assemblies and Budapest are represented. Fundamental Law arts31–35 treats these as local government and permits local decrees; exclusion is structural, not absence of normative powers.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Current English legal text is as of15 April2025. County-name terminology after that date is not certified by this source; retain native-name review.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Iceland",
+      "national_chambers_or_constitutional_bodies": [
+        "Alþingi"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 0,
+      "existing_eligibility_counts": {},
+      "existing_named_bodies": [],
+      "primary_urls": [
+        "https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf",
+        "https://ministryoftransport.is/page/947122a2-c44d-41b9-9c6e-6e37f3ac14c5/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Constitution supports national legislature and municipal self-government rather than a devolved regional chamber tier. Zero subnational rows is not an omitted list of provincial parliaments.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Municipal councils and regional cooperation bodies excluded by scope; no fresh municipality census performed.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "India",
+      "national_chambers_or_constitutional_bodies": [
+        "Lok Sabha",
+        "Rajya Sabha"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 31,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 31
+      },
+      "existing_named_bodies": [
+        {
+          "id": "india--andhra-pradesh",
+          "institution": "Andhra Pradesh Legislative Assembly"
+        },
+        {
+          "id": "india--arunachal-pradesh",
+          "institution": "Arunachal Pradesh Legislative Assembly"
+        },
+        {
+          "id": "india--assam",
+          "institution": "Assam Legislative Assembly"
+        },
+        {
+          "id": "india--bihar",
+          "institution": "Bihar Legislative Assembly"
+        },
+        {
+          "id": "india--chhattisgarh",
+          "institution": "Chhattisgarh Legislative Assembly"
+        },
+        {
+          "id": "india--delhi",
+          "institution": "Delhi Legislative Assembly"
+        },
+        {
+          "id": "india--goa",
+          "institution": "Goa Legislative Assembly"
+        },
+        {
+          "id": "india--gujarat",
+          "institution": "Gujarat Legislative Assembly"
+        },
+        {
+          "id": "india--haryana",
+          "institution": "Haryana Legislative Assembly"
+        },
+        {
+          "id": "india--himachal-pradesh",
+          "institution": "Himachal Pradesh Legislative Assembly"
+        },
+        {
+          "id": "india--jammu-and-kashmir",
+          "institution": "Jammu and Kashmir Legislative Assembly"
+        },
+        {
+          "id": "india--jharkhand",
+          "institution": "Jharkhand Legislative Assembly"
+        },
+        {
+          "id": "india--karnataka",
+          "institution": "Karnataka Legislative Assembly"
+        },
+        {
+          "id": "india--kerala",
+          "institution": "Kerala Legislative Assembly"
+        },
+        {
+          "id": "india--madhya-pradesh",
+          "institution": "Madhya Pradesh Legislative Assembly"
+        },
+        {
+          "id": "india--maharashtra",
+          "institution": "Maharashtra Legislative Assembly"
+        },
+        {
+          "id": "india--manipur",
+          "institution": "Manipur Legislative Assembly"
+        },
+        {
+          "id": "india--meghalaya",
+          "institution": "Meghalaya Legislative Assembly"
+        },
+        {
+          "id": "india--mizoram",
+          "institution": "Mizoram Legislative Assembly"
+        },
+        {
+          "id": "india--nagaland",
+          "institution": "Nagaland Legislative Assembly"
+        },
+        {
+          "id": "india--odisha",
+          "institution": "Odisha Legislative Assembly"
+        },
+        {
+          "id": "india--puducherry",
+          "institution": "Puducherry Legislative Assembly"
+        },
+        {
+          "id": "india--punjab-india",
+          "institution": "Punjab, India Legislative Assembly"
+        },
+        {
+          "id": "india--rajasthan",
+          "institution": "Rajasthan Legislative Assembly"
+        },
+        {
+          "id": "india--sikkim",
+          "institution": "Sikkim Legislative Assembly"
+        },
+        {
+          "id": "india--tamil-nadu",
+          "institution": "Tamil Nadu Legislative Assembly"
+        },
+        {
+          "id": "india--telangana",
+          "institution": "Telangana Legislative Assembly"
+        },
+        {
+          "id": "india--tripura",
+          "institution": "Tripura Legislative Assembly"
+        },
+        {
+          "id": "india--uttar-pradesh",
+          "institution": "Uttar Pradesh Legislative Assembly"
+        },
+        {
+          "id": "india--west-bengal",
+          "institution": "West Bengal Legislative Assembly"
+        },
+        {
+          "id": "india--uttarakhand",
+          "institution": "Uttarakhand Legislative Assembly"
+        }
+      ],
+      "primary_urls": [
+        "https://sansad.in/poi/state-legislatures",
+        "https://igod.gov.in/leg/L004/organizations",
+        "https://www.mea.gov.in/Images/pdf1/S6.pdf",
+        "https://www.mha.gov.in/MHA1/Par2017/pdfs/par2015-pdfs/ls-110815/3564.pdf",
+        "https://www.apc.neva.gov.in/",
+        "https://vidhanparishad.bihar.gov.in/",
+        "https://www.klc.neva.gov.in/",
+        "https://mls.org.in/pdf/VdnMadlSmitya/D-15/Hb%201573%20%28Council%20Rules%29%202022.pdf",
+        "https://www.telangana.gov.in/departments/legislative-affairs/",
+        "https://www.vidhanparishad.up.gov.in/",
+        "https://tribal.gov.in/downloads/other-important-reports/XaxaCommitteeReportMay-June2014.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "All31 named Assemblies are present, but legislature rows are actually lower-house records: six Legislative Councils are absent as named chambers. Autonomous Sixth Schedule councils constitute a separate below-first-level special-status review set.",
+      "proposed_named_additions_or_chamber_corrections": [
+        "Andhra Pradesh Legislative Council",
+        "Bihar Legislative Council",
+        "Karnataka Legislative Council",
+        "Maharashtra Legislative Council",
+        "Telangana Legislative Council",
+        "Uttar Pradesh Legislative Council"
+      ],
+      "unresolved_or_caveat": "Add six chamber children without adding six jurisdictions. Review ten Sixth Schedule autonomous councils individually; do not count all district councils as eligible. President-rule/suspension and current service activity are separate from institutional existence.",
+      "inventory_certified_complete": false,
+      "additional_special_status_scope_review_candidates": [
+        "Bodoland Territorial Council",
+        "Karbi Anglong Autonomous Council",
+        "Dima Hasao/North Cachar Hills Autonomous Council",
+        "Khasi Hills Autonomous District Council",
+        "Jaintia Hills Autonomous District Council",
+        "Garo Hills Autonomous District Council",
+        "Tripura Tribal Areas Autonomous District Council",
+        "Chakma Autonomous District Council",
+        "Lai Autonomous District Council",
+        "Mara Autonomous District Council"
+      ],
+      "special_status_evidence_limit": "2015Home Ministry named enumeration plus Sixth Schedule legal powers; current2026continuity/name/effective statutory amendments for each body remain to be checked. These are not ten new first-level states.",
+      "named_upper_chamber_evidence": [
+        {
+          "institution": "Andhra Pradesh Legislative Council",
+          "primary_url": "https://www.apc.neva.gov.in/",
+          "scope": "Own-institution or government publication identifies this chamber; existence evidence only, not playback validation."
+        },
+        {
+          "institution": "Bihar Legislative Council",
+          "primary_url": "https://vidhanparishad.bihar.gov.in/",
+          "scope": "Own-institution or government publication identifies this chamber; existence evidence only, not playback validation."
+        },
+        {
+          "institution": "Karnataka Legislative Council",
+          "primary_url": "https://www.klc.neva.gov.in/",
+          "scope": "Own-institution or government publication identifies this chamber; existence evidence only, not playback validation."
+        },
+        {
+          "institution": "Maharashtra Legislative Council",
+          "primary_url": "https://mls.org.in/pdf/VdnMadlSmitya/D-15/Hb%201573%20%28Council%20Rules%29%202022.pdf",
+          "scope": "Own-institution or government publication identifies this chamber; existence evidence only, not playback validation."
+        },
+        {
+          "institution": "Telangana Legislative Council",
+          "primary_url": "https://www.telangana.gov.in/departments/legislative-affairs/",
+          "scope": "Own-institution or government publication identifies this chamber; existence evidence only, not playback validation."
+        },
+        {
+          "institution": "Uttar Pradesh Legislative Council",
+          "primary_url": "https://www.vidhanparishad.up.gov.in/",
+          "scope": "Own-institution or government publication identifies this chamber; existence evidence only, not playback validation."
+        }
+      ],
+      "source_access_limits": [
+        "Digital Sansad currently exposes Assembly/Council selector but dynamically renders some list entries; retain government search-index results as such.",
+        "IGOD direct open returned502; cached/indexed list is not fresh successful body-page retrieval.",
+        "Constitutional Sixth Schedule PDF and2015Home Ministry list are dated;2026Mizoram own-government speech corroborates contemporary three-council activity, not complete ten-body current certification."
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "national_chambers_or_constitutional_bodies": [
+        "Dewan Perwakilan Rakyat",
+        "Dewan Perwakilan Daerah",
+        "Majelis Permusyawaratan Rakyat"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification. Parent national reconciliation adds separately scoped DPD/MPR candidates; IPU ordinary-chamber count is not treated as full constitutional-body inventory.",
+      "existing_subnational_rows": 38,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 38
+      },
+      "existing_named_bodies": [
+        {
+          "id": "indonesia--aceh",
+          "institution": "Dewan Perwakilan Rakyat Aceh"
+        },
+        {
+          "id": "indonesia--sumatera-utara",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sumatera Utara"
+        },
+        {
+          "id": "indonesia--sumatera-barat",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sumatera Barat"
+        },
+        {
+          "id": "indonesia--riau",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Riau"
+        },
+        {
+          "id": "indonesia--kepulauan-riau",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau"
+        },
+        {
+          "id": "indonesia--jambi",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jambi"
+        },
+        {
+          "id": "indonesia--sumatera-selatan",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sumatera Selatan"
+        },
+        {
+          "id": "indonesia--kepulauan-bangka-belitung",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Bangka Belitung"
+        },
+        {
+          "id": "indonesia--bengkulu",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Bengkulu"
+        },
+        {
+          "id": "indonesia--lampung",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Lampung"
+        },
+        {
+          "id": "indonesia--dki-jakarta",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi DKI Jakarta"
+        },
+        {
+          "id": "indonesia--jawa-barat",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Barat"
+        },
+        {
+          "id": "indonesia--banten",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Banten"
+        },
+        {
+          "id": "indonesia--jawa-tengah",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Tengah"
+        },
+        {
+          "id": "indonesia--di-yogyakarta",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi DI Yogyakarta"
+        },
+        {
+          "id": "indonesia--jawa-timur",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Timur"
+        },
+        {
+          "id": "indonesia--bali",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Bali"
+        },
+        {
+          "id": "indonesia--nusa-tenggara-barat",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Nusa Tenggara Barat"
+        },
+        {
+          "id": "indonesia--nusa-tenggara-timur",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Nusa Tenggara Timur"
+        },
+        {
+          "id": "indonesia--kalimantan-barat",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Barat"
+        },
+        {
+          "id": "indonesia--kalimantan-tengah",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Tengah"
+        },
+        {
+          "id": "indonesia--kalimantan-selatan",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Selatan"
+        },
+        {
+          "id": "indonesia--kalimantan-timur",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Timur"
+        },
+        {
+          "id": "indonesia--kalimantan-utara",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Utara"
+        },
+        {
+          "id": "indonesia--sulawesi-utara",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Utara"
+        },
+        {
+          "id": "indonesia--gorontalo",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Gorontalo"
+        },
+        {
+          "id": "indonesia--sulawesi-tengah",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Tengah"
+        },
+        {
+          "id": "indonesia--sulawesi-barat",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Barat"
+        },
+        {
+          "id": "indonesia--sulawesi-selatan",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Selatan"
+        },
+        {
+          "id": "indonesia--sulawesi-tenggara",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Tenggara"
+        },
+        {
+          "id": "indonesia--maluku",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Maluku"
+        },
+        {
+          "id": "indonesia--maluku-utara",
+          "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Maluku Utara"
+        },
+        {
+          "id": "indonesia--papua",
+          "institution": "Dewan Perwakilan Rakyat Papua"
+        },
+        {
+          "id": "indonesia--papua-barat",
+          "institution": "Dewan Perwakilan Rakyat Papua Barat"
+        },
+        {
+          "id": "indonesia--papua-selatan",
+          "institution": "Dewan Perwakilan Rakyat Papua Selatan"
+        },
+        {
+          "id": "indonesia--papua-tengah",
+          "institution": "Dewan Perwakilan Rakyat Papua Tengah"
+        },
+        {
+          "id": "indonesia--papua-pegunungan",
+          "institution": "Dewan Perwakilan Rakyat Papua Pegunungan"
+        },
+        {
+          "id": "indonesia--papua-barat-daya",
+          "institution": "Dewan Perwakilan Rakyat Papua Barat Daya"
+        }
+      ],
+      "primary_urls": [
+        "https://kab-lannyjaya.kpu.go.id/blog/read/8555_daftar-38-provinsi-di-indonesia-beserta-ibu-kotanya",
+        "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_10703_1717733836.pdf",
+        "https://dpr-papua.go.id/wp-content/uploads/2023/04/PERDASI-MRP.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Named38 provincial representative bodies correspond to the KPU provincial list, including six Papua-region provinces. DPR and DPD are distinct national representative bodies; MPR is their constitutional joint institution, not a third equal ordinary chamber.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Papuan Majelis Rakyat bodies have special cultural/consent roles: record a separate scope decision rather than treating them as interchangeable DPRP chambers. Current Jakarta naming and Nusantara governing status require legal-effective-date tracking; no inferred Nusantara parliament.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Ireland",
+      "national_chambers_or_constitutional_bodies": [
+        "Dáil Éireann",
+        "Seanad Éireann"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 3,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 3
+      },
+      "existing_named_bodies": [
+        {
+          "id": "ireland--eastern-and-midland",
+          "institution": "Eastern and Midland Regional Assembly"
+        },
+        {
+          "id": "ireland--northern-and-western",
+          "institution": "Northern and Western Regional Assembly"
+        },
+        {
+          "id": "ireland--southern",
+          "institution": "Southern Regional Assembly"
+        }
+      ],
+      "primary_urls": [
+        "https://www.gov.ie/en/department-of-housing-local-government-and-heritage/publications/regional-assemblies/",
+        "https://www.localgov.ie/about-local-government/regional-assemblies"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "The official three regional assemblies match all three existing rows. Their regional planning/EU-funding coordination role supports exclusion under maintained parliamentary scope.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Oireachtas umbrella must map to both named houses. County/city councils are not an omitted devolved legislature tier.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Israel",
+      "national_chambers_or_constitutional_bodies": [
+        "Knesset"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 0,
+      "existing_eligibility_counts": {},
+      "existing_named_bodies": [],
+      "primary_urls": [
+        "https://main.knesset.gov.il/EN/About/Pages/KnessetWork.aspx",
+        "https://main.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Knesset is the national legislative authority; no first-level devolved legislature identified in this framework pass.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Municipal/regional councils excluded. Palestinian institutions are not to be silently entered as Israeli subnational legislatures; territorial claims/control do not establish constitutional parentage.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Italy",
+      "national_chambers_or_constitutional_bodies": [
+        "Camera dei deputati",
+        "Senato della Repubblica"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 22,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 22
+      },
+      "existing_named_bodies": [
+        {
+          "id": "italy--consiglio-regionale-delle-marche",
+          "institution": "Consiglio regionale delle Marche"
+        },
+        {
+          "id": "italy--assemblea-regionale-siciliana",
+          "institution": "Assemblea regionale Siciliana"
+        },
+        {
+          "id": "italy--consiglio-della-provincia-autonoma-di-bolzano",
+          "institution": "Consiglio della Provincia Autonoma di Bolzano"
+        },
+        {
+          "id": "italy--consiglio-della-provincia-autonoma-di-trento",
+          "institution": "Consiglio della Provincia Autonoma di Trento"
+        },
+        {
+          "id": "italy--consiglio-regionale-dellabruzzo",
+          "institution": "Consiglio regionale dell’Abruzzo"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-basilicata",
+          "institution": "Consiglio regionale della Basilicata"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-calabria",
+          "institution": "Consiglio regionale della Calabria"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-campania",
+          "institution": "Consiglio regionale della Campania"
+        },
+        {
+          "id": "italy--assemblea-legislativa-della-regione-emilia-romagna",
+          "institution": "Assemblea legislativa della Regione Emilia-Romagna"
+        },
+        {
+          "id": "italy--consiglio-regionale-del-friuli-venezia-giulia",
+          "institution": "Consiglio regionale del Friuli Venezia Giulia"
+        },
+        {
+          "id": "italy--consiglio-regionale-del-lazio",
+          "institution": "Consiglio regionale del Lazio"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-liguria",
+          "institution": "Consiglio regionale della Liguria"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-lombardia",
+          "institution": "Consiglio regionale della Lombardia"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-toscana",
+          "institution": "Consiglio regionale della Toscana"
+        },
+        {
+          "id": "italy--consiglio-regionale-del-molise",
+          "institution": "Consiglio regionale del Molise"
+        },
+        {
+          "id": "italy--consiglio-regionale-del-piemonte",
+          "institution": "Consiglio regionale del Piemonte"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-puglia",
+          "institution": "Consiglio regionale della Puglia"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-sardegna",
+          "institution": "Consiglio regionale della Sardegna"
+        },
+        {
+          "id": "italy--consiglio-regionale-del-trentino-alto-adige",
+          "institution": "Consiglio regionale del Trentino-Alto Adige"
+        },
+        {
+          "id": "italy--assemblea-legislativa-della-regione-umbria",
+          "institution": "Assemblea legislativa della Regione Umbria"
+        },
+        {
+          "id": "italy--consiglio-regionale-della-valle-daosta",
+          "institution": "Consiglio regionale della Valle d’Aosta"
+        },
+        {
+          "id": "italy--consiglio-regionale-del-veneto",
+          "institution": "Consiglio regionale del Veneto"
+        }
+      ],
+      "primary_urls": [
+        "https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-v/articolo-117",
+        "https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-v/articolo-121",
+        "https://www.calrenet.eu/members/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Existing22 names represent20 regional councils plus the autonomous provincial councils of Trento and Bolzano. Trentino–Alto Adige regional council remains a distinct institution even though its members are the provincial councillors.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Do not deduplicate Trentino regional and two provincial institutions by shared membership; ordinary provincial/metropolitan/municipal councils remain excluded. Constitution differentiates regional legislation and ordinary local regulation.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Jamaica",
+      "national_chambers_or_constitutional_bodies": [
+        "House of Representatives",
+        "Senate"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 14,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 14
+      },
+      "existing_named_bodies": [
+        {
+          "id": "jamaica--kingston-and-st-andrew",
+          "institution": "Kingston and St Andrew Municipal Corporation"
+        },
+        {
+          "id": "jamaica--st-elizabeth",
+          "institution": "St Elizabeth Municipal Corporation"
+        },
+        {
+          "id": "jamaica--westmoreland",
+          "institution": "Westmoreland Municipal Corporation"
+        },
+        {
+          "id": "jamaica--st-mary",
+          "institution": "St Mary Municipal Corporation"
+        },
+        {
+          "id": "jamaica--st-ann",
+          "institution": "St Ann Municipal Corporation"
+        },
+        {
+          "id": "jamaica--portmore",
+          "institution": "Portmore Municipal Corporation"
+        },
+        {
+          "id": "jamaica--portland",
+          "institution": "Portland Municipal Corporation"
+        },
+        {
+          "id": "jamaica--trelawny",
+          "institution": "Trelawny Municipal Corporation"
+        },
+        {
+          "id": "jamaica--st-james",
+          "institution": "St James Municipal Corporation"
+        },
+        {
+          "id": "jamaica--st-thomas",
+          "institution": "St Thomas Municipal Corporation"
+        },
+        {
+          "id": "jamaica--clarendon",
+          "institution": "Clarendon Municipal Corporation"
+        },
+        {
+          "id": "jamaica--hanover",
+          "institution": "Hanover Municipal Corporation"
+        },
+        {
+          "id": "jamaica--manchester",
+          "institution": "Manchester Municipal Corporation"
+        },
+        {
+          "id": "jamaica--st-catherine",
+          "institution": "St Catherine Municipal Corporation"
+        }
+      ],
+      "primary_urls": [
+        "https://www.japarliament.gov.jm/index.php?Itemid=193&id=13&option=com_content&view=category",
+        "https://opm.gov.jm/prime-minister-dr-the-most-honourable-andrew-holness-announces-new-cabinet-and-government-senate-appointments/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Existing14 municipal corporations are local-government screening rows, not14 devolved parliaments. National houses must remain separate named institutions.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Portmore is included in existing local rows, but this pass does not certify every municipal-boundary/status change as of October2026; such changes do not establish another parliamentary tier.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Japan",
+      "national_chambers_or_constitutional_bodies": [
+        "House of Representatives",
+        "House of Councillors"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 47,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 47
+      },
+      "existing_named_bodies": [
+        {
+          "id": "japan--hokkaido",
+          "institution": "北海道議会"
+        },
+        {
+          "id": "japan--aomori",
+          "institution": "青森県議会"
+        },
+        {
+          "id": "japan--iwate",
+          "institution": "岩手県議会"
+        },
+        {
+          "id": "japan--akita",
+          "institution": "秋田県議会"
+        },
+        {
+          "id": "japan--miyagi",
+          "institution": "宮城県議会"
+        },
+        {
+          "id": "japan--yamagata",
+          "institution": "山形県議会"
+        },
+        {
+          "id": "japan--fukushima",
+          "institution": "福島県議会"
+        },
+        {
+          "id": "japan--tokyo",
+          "institution": "東京都議会"
+        },
+        {
+          "id": "japan--kanagawa",
+          "institution": "神奈川県議会"
+        },
+        {
+          "id": "japan--chiba",
+          "institution": "千葉県議会"
+        },
+        {
+          "id": "japan--ibaraki",
+          "institution": "茨城県議会"
+        },
+        {
+          "id": "japan--tochigi",
+          "institution": "栃木県議会"
+        },
+        {
+          "id": "japan--saitama",
+          "institution": "埼玉県議会"
+        },
+        {
+          "id": "japan--gunma",
+          "institution": "群馬県議会"
+        },
+        {
+          "id": "japan--yamanashi",
+          "institution": "山梨県議会"
+        },
+        {
+          "id": "japan--nagano",
+          "institution": "長野県議会"
+        },
+        {
+          "id": "japan--niigata",
+          "institution": "新潟県議会"
+        },
+        {
+          "id": "japan--aichi",
+          "institution": "愛知県議会"
+        },
+        {
+          "id": "japan--mie",
+          "institution": "三重県議会"
+        },
+        {
+          "id": "japan--shizuoka",
+          "institution": "静岡県議会"
+        },
+        {
+          "id": "japan--gifu",
+          "institution": "岐阜県議会"
+        },
+        {
+          "id": "japan--toyama",
+          "institution": "富山県議会"
+        },
+        {
+          "id": "japan--ishikawa",
+          "institution": "石川県議会"
+        },
+        {
+          "id": "japan--fukui",
+          "institution": "福井県議会"
+        },
+        {
+          "id": "japan--kyoto",
+          "institution": "京都府議会"
+        },
+        {
+          "id": "japan--osaka",
+          "institution": "大阪府議会"
+        },
+        {
+          "id": "japan--hyogo",
+          "institution": "兵庫県議会"
+        },
+        {
+          "id": "japan--nara",
+          "institution": "奈良県議会"
+        },
+        {
+          "id": "japan--wakayama",
+          "institution": "和歌山県議会"
+        },
+        {
+          "id": "japan--shiga",
+          "institution": "滋賀県議会"
+        },
+        {
+          "id": "japan--hiroshima",
+          "institution": "広島県議会"
+        },
+        {
+          "id": "japan--okayama",
+          "institution": "岡山県議会"
+        },
+        {
+          "id": "japan--tottori",
+          "institution": "鳥取県議会"
+        },
+        {
+          "id": "japan--shimane",
+          "institution": "島根県議会"
+        },
+        {
+          "id": "japan--yamaguchi",
+          "institution": "山口県議会"
+        },
+        {
+          "id": "japan--kagawa",
+          "institution": "香川県議会"
+        },
+        {
+          "id": "japan--tokushima",
+          "institution": "徳島県議会"
+        },
+        {
+          "id": "japan--kochi",
+          "institution": "高知県議会"
+        },
+        {
+          "id": "japan--ehime",
+          "institution": "愛媛県議会"
+        },
+        {
+          "id": "japan--fukuoka",
+          "institution": "福岡県議会"
+        },
+        {
+          "id": "japan--oita",
+          "institution": "大分県議会"
+        },
+        {
+          "id": "japan--saga",
+          "institution": "佐賀県議会"
+        },
+        {
+          "id": "japan--nagasaki",
+          "institution": "長崎県議会"
+        },
+        {
+          "id": "japan--miyazaki",
+          "institution": "宮崎県議会"
+        },
+        {
+          "id": "japan--kumamoto",
+          "institution": "熊本県議会"
+        },
+        {
+          "id": "japan--kagoshima",
+          "institution": "鹿児島県議会"
+        },
+        {
+          "id": "japan--okinawa",
+          "institution": "沖縄県議会"
+        }
+      ],
+      "primary_urls": [
+        "https://www.gichokai.gr.jp/b15.asp",
+        "https://www.shugiin.go.jp/internet/itdb_english.nsf/html/statics/english/constitution_e.htm",
+        "https://ndlsearch.ndl.go.jp/en/rnavi/politics/Japan_gikai_local"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "All47 prefectural assembly names match the speakers association directory individually. Constitution arts93–94 supports assemblies and ordinance power.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Municipal and special-ward assemblies are real deliberative/ordinance bodies but below the requested first-level tier. Do not expand from47 to all1788local entities cited by the NDL. Nagasaki remains eligible on the same constitutional basis.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Latvia",
+      "national_chambers_or_constitutional_bodies": [
+        "Saeima"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 5,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 5
+      },
+      "existing_named_bodies": [
+        {
+          "id": "latvia--kurzeme",
+          "institution": "Kurzemes plānošanas reģiona Attīstības padome"
+        },
+        {
+          "id": "latvia--latgale",
+          "institution": "Latgales plānošanas reģiona Attīstības padome"
+        },
+        {
+          "id": "latvia--riga",
+          "institution": "Rīgas plānošanas reģiona Attīstības padome"
+        },
+        {
+          "id": "latvia--vidzeme",
+          "institution": "Vidzemes plānošanas reģiona Attīstības padome"
+        },
+        {
+          "id": "latvia--zemgale",
+          "institution": "Zemgales plānošanas reģiona Attīstības padome"
+        }
+      ],
+      "primary_urls": [
+        "https://likumi.lv/ta/en/en/id/61002"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Regional Development Law s5 names all five planning regions; all five development councils are present. Planning coordination/development functions do not make them parliamentary chambers.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Municipal councils and planning regions must not be described as equivalent geographic or legislative tiers.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Lesotho",
+      "national_chambers_or_constitutional_bodies": [
+        "National Assembly",
+        "Senate"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 10,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 10
+      },
+      "existing_named_bodies": [
+        {
+          "id": "lesotho--butha-buthe",
+          "institution": "Butha-Buthe District Council"
+        },
+        {
+          "id": "lesotho--leribe",
+          "institution": "Leribe District Council"
+        },
+        {
+          "id": "lesotho--berea",
+          "institution": "Berea District Council"
+        },
+        {
+          "id": "lesotho--mokhotlong",
+          "institution": "Mokhotlong District Council"
+        },
+        {
+          "id": "lesotho--maseru",
+          "institution": "Maseru District Council"
+        },
+        {
+          "id": "lesotho--mafeteng",
+          "institution": "Mafeteng District Council"
+        },
+        {
+          "id": "lesotho--mohale-s-hoek",
+          "institution": "Mohale’s Hoek District Council"
+        },
+        {
+          "id": "lesotho--thaba-tseka",
+          "institution": "Thaba-Tseka District Council"
+        },
+        {
+          "id": "lesotho--qacha-s-nek",
+          "institution": "Qacha’s Nek District Council"
+        },
+        {
+          "id": "lesotho--quthing",
+          "institution": "Quthing District Council"
+        }
+      ],
+      "primary_urls": [
+        "https://nationalassembly.parliament.ls/",
+        "https://senate.parliament.ls/",
+        "https://www.gov.ls/the-senate/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Two national houses are individually established by own/government pages. Ten district councils remain local-government exclusion rows.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "The national sources do not independently enumerate all ten district councils; existing names retained rather than freshly certified. Councils electing senators are not additional upper houses.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Lithuania",
+      "national_chambers_or_constitutional_bodies": [
+        "Seimas"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 10,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 10
+      },
+      "existing_named_bodies": [
+        {
+          "id": "lithuania--alytus",
+          "institution": "Alytaus regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--kaunas",
+          "institution": "Kauno regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--klaipeda",
+          "institution": "Klaipėdos regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--marijampole",
+          "institution": "Marijampolės regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--panevezys",
+          "institution": "Panevėžio regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--siauliai",
+          "institution": "Šiaulių regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--taurage",
+          "institution": "Tauragės regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--telsiai",
+          "institution": "Telšių regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--utena",
+          "institution": "Utenos regiono plėtros taryba"
+        },
+        {
+          "id": "lithuania--vilnius",
+          "institution": "Vilniaus regiono plėtros taryba"
+        }
+      ],
+      "primary_urls": [
+        "https://www.lrs.lt/home/Konstitucija/Konstitucija.htm",
+        "https://vrm.lrv.lt/uploads/vrm/documents/files/ENG_versija/Lithuanian%20Regional%20Policy%20%28White%20Paper%29.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Constitution distinguishes national Seimas, municipal self-government and government administration of higher territorial units. Existing ten regional development councils are coordination entities, not regional parliaments.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "English constitutional and regional white-paper versions are dated; use current Lithuanian constitution for changed provisions. This pass does not certify a current individual regional-council director roster.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Luxembourg",
+      "national_chambers_or_constitutional_bodies": [
+        "Chambre des Députés"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 0,
+      "existing_eligibility_counts": {},
+      "existing_named_bodies": [],
+      "primary_urls": [
+        "https://www.chd.lu/fr/RevisionsConstitution",
+        "https://www.chd.lu/sites/default/files/2023-04/Constitution_en%203%20langues.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Revised constitution effective1July2023 supplies parliamentary framework. Communes/cantons do not establish a first-level parliamentary tier.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Conseil d’État is part of the legislative process but not a second elected parliamentary chamber. Zero regional rows should carry explicit no-in-scope-tier explanation.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Malaysia",
+      "national_chambers_or_constitutional_bodies": [
+        "Dewan Rakyat",
+        "Dewan Negara"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 13,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 13
+      },
+      "existing_named_bodies": [
+        {
+          "id": "malaysia--johor",
+          "institution": "Dewan Undangan Negeri Johor"
+        },
+        {
+          "id": "malaysia--kedah-darulaman",
+          "institution": "Dewan Undangan Negeri Kedah Darulaman"
+        },
+        {
+          "id": "malaysia--kelantan",
+          "institution": "Dewan Undangan Negeri Kelantan"
+        },
+        {
+          "id": "malaysia--melaka",
+          "institution": "Dewan Undangan Negeri Melaka"
+        },
+        {
+          "id": "malaysia--negeri-sembilan",
+          "institution": "Dewan Undangan Negeri Negeri Sembilan"
+        },
+        {
+          "id": "malaysia--pahang",
+          "institution": "Dewan Undangan Negeri Pahang"
+        },
+        {
+          "id": "malaysia--penang",
+          "institution": "Dewan Undangan Negeri Penang"
+        },
+        {
+          "id": "malaysia--perak",
+          "institution": "Dewan Undangan Negeri Perak"
+        },
+        {
+          "id": "malaysia--perlis",
+          "institution": "Dewan Undangan Negeri Perlis"
+        },
+        {
+          "id": "malaysia--sabah",
+          "institution": "Dewan Undangan Negeri Sabah"
+        },
+        {
+          "id": "malaysia--sarawak",
+          "institution": "Dewan Undangan Negeri Sarawak"
+        },
+        {
+          "id": "malaysia--selangor",
+          "institution": "Dewan Undangan Negeri Selangor"
+        },
+        {
+          "id": "malaysia--terengganu",
+          "institution": "Dewan Undangan Negeri Terengganu"
+        }
+      ],
+      "primary_urls": [
+        "https://www.parlimen.gov.my/p/pautan03.html?lang=en",
+        "https://www.malaysia.gov.my/en/government/malaysiarulingsystem/kerajaan-negeri"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Parliament directory lists13 state assemblies corresponding to all13 existing rows. Sabah/Sarawak are states with assemblies, not duplicate special-territory parliaments.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Kuala Lumpur, Labuan and Putrajaya federal territories do not justify invented state assemblies. Direct directory retrieval timed out; indexed official full list was retained and agrees with existing names.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Malta",
+      "national_chambers_or_constitutional_bodies": [
+        "House of Representatives"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 6,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 6
+      },
+      "existing_named_bodies": [
+        {
+          "id": "malta--gozo",
+          "institution": "Gozo Regional Council"
+        },
+        {
+          "id": "malta--southern",
+          "institution": "Southern Regional Council"
+        },
+        {
+          "id": "malta--port",
+          "institution": "Port Regional Council"
+        },
+        {
+          "id": "malta--western",
+          "institution": "Western Regional Council"
+        },
+        {
+          "id": "malta--eastern",
+          "institution": "Eastern Regional Council"
+        },
+        {
+          "id": "malta--northern",
+          "institution": "Northern Regional Council"
+        }
+      ],
+      "primary_urls": [
+        "https://legislation.mt/getpdf/615c39b732d0f71dac0f45ac",
+        "https://regjunghawdex.gov.mt/en/about-local-council-2/",
+        "https://nao.gov.mt/wp-content/uploads/2023/11/LCNov2023.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Six regional councils match the current regional scheme, including Gozo; these are local-government cooperation bodies rather than devolved parliamentary chambers.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Some official synopsis pages still say five regional committees; prefer amended legal schedule and six-region own-government description. Gozo name alone does not establish Rodrigues-style autonomous legislative status.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Mauritius",
+      "national_chambers_or_constitutional_bodies": [
+        "National Assembly"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 1,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 1
+      },
+      "existing_named_bodies": [
+        {
+          "id": "mauritius--rodrigues",
+          "institution": "Rodrigues Regional Assembly"
+        }
+      ],
+      "primary_urls": [
+        "https://assembly-rra.govmu.org/Pages/About-Us/The-Parliament.aspx",
+        "https://dpp.govmu.org/Documents/ODPP-Rodrigues/RRA%20Act.pdf",
+        "https://president.govmu.org/president/acts-regulations/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Rodrigues Regional Assembly is represented. Its statute distinguishes regional regulations from regional bills enacted through the national Parliament; own institutional site calls it a parliament.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Retain eligibility but precise power description is needed: avoid claiming all regional measures are independently enacted primary laws.2025amendment exists and must be read for any membership/current-power metadata. Agaléga/Cargados Carajos and Chagos administrative developments do not by themselves establish additional elected chambers.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Moldova",
+      "national_chambers_or_constitutional_bodies": [
+        "Parlamentul Republicii Moldova"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 36,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 34,
+        "eligible_legislature": 2
+      },
+      "existing_named_bodies": [
+        {
+          "id": "moldova--anenii-noi",
+          "institution": "Consiliul raional Anenii Noi"
+        },
+        {
+          "id": "moldova--basarabeasca",
+          "institution": "Consiliul raional Basarabeasca"
+        },
+        {
+          "id": "moldova--briceni",
+          "institution": "Consiliul raional Briceni"
+        },
+        {
+          "id": "moldova--cahul",
+          "institution": "Consiliul raional Cahul"
+        },
+        {
+          "id": "moldova--cantemir",
+          "institution": "Consiliul raional Cantemir"
+        },
+        {
+          "id": "moldova--calarasi",
+          "institution": "Consiliul raional Călărași"
+        },
+        {
+          "id": "moldova--causeni",
+          "institution": "Consiliul raional Căușeni"
+        },
+        {
+          "id": "moldova--cimislia",
+          "institution": "Consiliul raional Cimișlia"
+        },
+        {
+          "id": "moldova--criuleni",
+          "institution": "Consiliul raional Criuleni"
+        },
+        {
+          "id": "moldova--donduseni",
+          "institution": "Consiliul raional Dondușeni"
+        },
+        {
+          "id": "moldova--drochia",
+          "institution": "Consiliul raional Drochia"
+        },
+        {
+          "id": "moldova--dubasari",
+          "institution": "Consiliul raional Dubăsari"
+        },
+        {
+          "id": "moldova--edinet",
+          "institution": "Consiliul raional Edineț"
+        },
+        {
+          "id": "moldova--falesti",
+          "institution": "Consiliul raional Fălești"
+        },
+        {
+          "id": "moldova--floresti",
+          "institution": "Consiliul raional Florești"
+        },
+        {
+          "id": "moldova--glodeni",
+          "institution": "Consiliul raional Glodeni"
+        },
+        {
+          "id": "moldova--hincesti",
+          "institution": "Consiliul raional Hîncești"
+        },
+        {
+          "id": "moldova--ialoveni",
+          "institution": "Consiliul raional Ialoveni"
+        },
+        {
+          "id": "moldova--leova",
+          "institution": "Consiliul raional Leova"
+        },
+        {
+          "id": "moldova--nisporeni",
+          "institution": "Consiliul raional Nisporeni"
+        },
+        {
+          "id": "moldova--ocnita",
+          "institution": "Consiliul raional Ocnița"
+        },
+        {
+          "id": "moldova--orhei",
+          "institution": "Consiliul raional Orhei"
+        },
+        {
+          "id": "moldova--rezina",
+          "institution": "Consiliul raional Rezina"
+        },
+        {
+          "id": "moldova--riscani",
+          "institution": "Consiliul raional Rîșcani"
+        },
+        {
+          "id": "moldova--singerei",
+          "institution": "Consiliul raional Sîngerei"
+        },
+        {
+          "id": "moldova--soroca",
+          "institution": "Consiliul raional Soroca"
+        },
+        {
+          "id": "moldova--straseni",
+          "institution": "Consiliul raional Strășeni"
+        },
+        {
+          "id": "moldova--soldanesti",
+          "institution": "Consiliul raional Șoldănești"
+        },
+        {
+          "id": "moldova--stefan-voda",
+          "institution": "Consiliul raional Ștefan Vodă"
+        },
+        {
+          "id": "moldova--taraclia",
+          "institution": "Consiliul raional Taraclia"
+        },
+        {
+          "id": "moldova--telenesti",
+          "institution": "Consiliul raional Telenești"
+        },
+        {
+          "id": "moldova--ungheni",
+          "institution": "Consiliul raional Ungheni"
+        },
+        {
+          "id": "moldova--chisinau",
+          "institution": "Consiliul municipal Chișinău"
+        },
+        {
+          "id": "moldova--balti",
+          "institution": "Consiliul municipal Bălți"
+        },
+        {
+          "id": "moldova--gagauzia",
+          "institution": "Adunarea Populară a Găgăuziei"
+        },
+        {
+          "id": "moldova--transnistria-de-facto",
+          "institution": "Верховный Совет"
+        }
+      ],
+      "primary_urls": [
+        "https://presedinte.md/app/webroot/Constitutia_RM/Constitutia_2024_ro.pdf",
+        "https://www.justice.gov.md/en/content/constitutional-court-admitted-complaint-filed-minister-justice",
+        "https://constcourt.md/ccdocview.php?docid=895&l=ro&tip=hotariri"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Gagauzia People’s Assembly and de-facto Transnistrian Supreme Council are already present, alongside34 local exclusions.2026constitutional ruling limits certain Gagauz appointment/electoral competences rather than demonstrating abolition of the assembly.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Keep de-facto status/recognition separate from eligibility and geographic claims. Administrative-reform proposals are not automatically enacted replacements for existing councils.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Mongolia",
+      "national_chambers_or_constitutional_bodies": [
+        "State Great Khural"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 22,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 22
+      },
+      "existing_named_bodies": [
+        {
+          "id": "mongolia--niislel",
+          "institution": "Нийслэл Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--arkhangai",
+          "institution": "Архангай Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--bayan-olgii",
+          "institution": "Баян-Өлгий Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--bayankhongor",
+          "institution": "Баянхонгор Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--bulgan",
+          "institution": "bulgan.khural.mn Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--govi-altai",
+          "institution": "Говь-Алтай Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--govisumber",
+          "institution": "govisumber.khural.mn Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--darkhan-uul",
+          "institution": "Дархан-Уул Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--dornogovi",
+          "institution": "Дорноговь Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--dornod",
+          "institution": "Дорнод Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--dundgovi",
+          "institution": "Дундговь Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--zavkhan",
+          "institution": "Завхан Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--orkhon",
+          "institution": "orkhon.khural.mn Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--uvurkhangai",
+          "institution": "Өвөрхангай Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--omnogovi",
+          "institution": "Өмнөговь Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--sukhbaatar",
+          "institution": "Сүхбаатар Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--selenge",
+          "institution": "Сэлэнгэ Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--tov",
+          "institution": "Төв Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--uvs",
+          "institution": "Увс Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--khovd",
+          "institution": "Ховд Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--khovsgol",
+          "institution": "Хөвсгөл Иргэдийн Төлөөлөгчдийн Хурал"
+        },
+        {
+          "id": "mongolia--khentii",
+          "institution": "Хэнтий Иргэдийн Төлөөлөгчдийн Хурал"
+        }
+      ],
+      "primary_urls": [
+        "https://en.constitutionalcourt.mn/the-constitution-of-mongolia/",
+        "https://constitutionalcourt.mn/монгол-улсын-үндсэн-хууль/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Existing21aimag and capital-city Citizens’ Representatives’ Khurals cover the first-level local tier. Constitution reserves national legislation to the State Great Khural while authorising binding local resolutions.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Exclusion must be explained by parliamentary scope rather than lack of all lawmaking effect. Three existing institution labels contain website hostnames(bulgan,govisumber,orkhon); replace with proper Mongolian names after institution-specific confirmation. Older official English constitution pages retain76members; updated text gives126.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Montenegro",
+      "national_chambers_or_constitutional_bodies": [
+        "Skupština Crne Gore"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 0,
+      "existing_eligibility_counts": {},
+      "existing_named_bodies": [],
+      "primary_urls": [
+        "https://api.skupstina.me/media/files/1708526717-constitution-of-montenegro.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Constitution arts114–117 identifies municipality as basic local-government form, with municipal assembly/president. Zero in-scope first-level parliamentary rows is consistent with that framework.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Municipal assemblies can adopt statutes/general acts but are excluded municipal institutions; name alone Skupština does not establish a devolved legislature.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Namibia",
+      "national_chambers_or_constitutional_bodies": [
+        "National Assembly",
+        "National Council"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 14,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 14
+      },
+      "existing_named_bodies": [
+        {
+          "id": "namibia--khomas",
+          "institution": "Khomas Regional Council"
+        },
+        {
+          "id": "namibia--erongo",
+          "institution": "Erongo Regional Council"
+        },
+        {
+          "id": "namibia--otjozondjupa",
+          "institution": "Otjozondjupa Regional Council"
+        },
+        {
+          "id": "namibia--kavango-west",
+          "institution": "Kavango West Regional Council"
+        },
+        {
+          "id": "namibia--kavango-east",
+          "institution": "Kavango East Regional Council"
+        },
+        {
+          "id": "namibia--zambezi",
+          "institution": "Zambezi Regional Council"
+        },
+        {
+          "id": "namibia--ohangwena",
+          "institution": "Ohangwena Regional Council"
+        },
+        {
+          "id": "namibia--oshana",
+          "institution": "Oshana Regional Council"
+        },
+        {
+          "id": "namibia--oshikoto",
+          "institution": "Oshikoto Regional Council"
+        },
+        {
+          "id": "namibia--omusati",
+          "institution": "Omusati Regional Council"
+        },
+        {
+          "id": "namibia--kunene",
+          "institution": "Kunene Regional Council"
+        },
+        {
+          "id": "namibia--hardap",
+          "institution": "Hardap Regional Council"
+        },
+        {
+          "id": "namibia--kharas",
+          "institution": "ǁKharas Regional Council"
+        },
+        {
+          "id": "namibia--omaheke",
+          "institution": "Omaheke Regional Council"
+        }
+      ],
+      "primary_urls": [
+        "https://www.gov.na/documents/869282/1009139/Constitution.pdf/7f759212-50dc-88ff-bce1-fce045da829b?download=true&t=1656589184709",
+        "https://www.parliament.na/history/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "National Assembly and National Council are distinct national houses. Constitution art108 describes regional-council executive/delegated duties, supporting structural exclusion of existing14 regional councils.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Parliament history/general-information pages retain pre2014seat/region figures. Do not overwrite current metadata using those stale counts; national upper house must not be conflated with14 regional councils.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "Netherlands",
+      "national_chambers_or_constitutional_bodies": [
+        "Tweede Kamer",
+        "Eerste Kamer"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 18,
+      "existing_eligibility_counts": {
+        "eligible_legislature": 15,
+        "outside_default_scope": 3
+      },
+      "existing_named_bodies": [
+        {
+          "id": "netherlands--drenthe",
+          "institution": "Provinciale Staten Drenthe"
+        },
+        {
+          "id": "netherlands--flevoland",
+          "institution": "Provinciale Staten Flevoland"
+        },
+        {
+          "id": "netherlands--fryslan",
+          "institution": "Provinciale Staten Fryslân"
+        },
+        {
+          "id": "netherlands--gelderland",
+          "institution": "Provinciale Staten Gelderland"
+        },
+        {
+          "id": "netherlands--groningen",
+          "institution": "Provinciale Staten Groningen"
+        },
+        {
+          "id": "netherlands--limburg",
+          "institution": "Provinciale Staten Limburg"
+        },
+        {
+          "id": "netherlands--noord-brabant",
+          "institution": "Provinciale Staten Noord-Brabant"
+        },
+        {
+          "id": "netherlands--noord-holland",
+          "institution": "Provinciale Staten Noord-Holland"
+        },
+        {
+          "id": "netherlands--overijssel",
+          "institution": "Provinciale Staten Overijssel"
+        },
+        {
+          "id": "netherlands--utrecht",
+          "institution": "Provinciale Staten Utrecht"
+        },
+        {
+          "id": "netherlands--zeeland",
+          "institution": "Provinciale Staten Zeeland"
+        },
+        {
+          "id": "netherlands--zuid-holland",
+          "institution": "Provinciale Staten Zuid-Holland"
+        },
+        {
+          "id": "netherlands--aruba",
+          "institution": "Parlamento di Aruba"
+        },
+        {
+          "id": "netherlands--curacao",
+          "institution": "Parlamento di Kòrsou"
+        },
+        {
+          "id": "netherlands--sint-maarten",
+          "institution": "Parliament of Sint Maarten"
+        },
+        {
+          "id": "netherlands--bonaire",
+          "institution": "Bonaire Island Council"
+        },
+        {
+          "id": "netherlands--saba",
+          "institution": "Saba Island Council"
+        },
+        {
+          "id": "netherlands--sint-eustatius",
+          "institution": "Sint Eustatius Island Council"
+        }
+      ],
+      "primary_urls": [
+        "https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands",
+        "https://english.kiesraad.nl/elections/elections-of-the-island-councils",
+        "https://www.statiagovernment.com/governance/island-council",
+        "https://www.raadvanstate.nl/adviezen/@113253/w04-18-0286-vo/"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Twelve provincial assemblies plus Aruba,Curaçao,SintMaarten parliaments are represented. Three BES Island Councils are also named as local exclusions. They can enact local ordinances; Kiesraad explicitly compares them to municipal councils.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "Keep Kingdom-country relationships distinct from Netherlands-province relationships. BES exclusion requires municipal-equivalent scope rationale, not claim of no normative authority. Water boards remain functional local bodies, not provincial parliamentary chambers.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "New Zealand",
+      "national_chambers_or_constitutional_bodies": [
+        "House of Representatives"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 20,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 17,
+        "eligible_legislature": 3
+      },
+      "existing_named_bodies": [
+        {
+          "id": "new-zealand--auckland-council",
+          "institution": "Auckland Council"
+        },
+        {
+          "id": "new-zealand--bay-of-plenty-regional-council",
+          "institution": "Bay of Plenty Regional Council"
+        },
+        {
+          "id": "new-zealand--gisborne-district-council",
+          "institution": "Gisborne District Council"
+        },
+        {
+          "id": "new-zealand--greater-wellington-regional-council",
+          "institution": "Greater Wellington Regional Council"
+        },
+        {
+          "id": "new-zealand--hawke-s-bay-regional-council",
+          "institution": "Hawke's Bay Regional Council"
+        },
+        {
+          "id": "new-zealand--horizons-regional-council",
+          "institution": "Horizons Regional Council"
+        },
+        {
+          "id": "new-zealand--northland-regional-council",
+          "institution": "Northland Regional Council"
+        },
+        {
+          "id": "new-zealand--taranaki-regional-council",
+          "institution": "Taranaki Regional Council"
+        },
+        {
+          "id": "new-zealand--waikato-regional-council",
+          "institution": "Waikato Regional Council"
+        },
+        {
+          "id": "new-zealand--chatham-islands-council",
+          "institution": "Chatham Islands Council"
+        },
+        {
+          "id": "new-zealand--environment-canterbury",
+          "institution": "Environment Canterbury"
+        },
+        {
+          "id": "new-zealand--environment-southland",
+          "institution": "Environment Southland"
+        },
+        {
+          "id": "new-zealand--marlborough-district-council",
+          "institution": "Marlborough District Council"
+        },
+        {
+          "id": "new-zealand--nelson-city-council",
+          "institution": "Nelson City Council"
+        },
+        {
+          "id": "new-zealand--otago-regional-council",
+          "institution": "Otago Regional Council"
+        },
+        {
+          "id": "new-zealand--tasman-district-council",
+          "institution": "Tasman District Council"
+        },
+        {
+          "id": "new-zealand--west-coast-regional-council",
+          "institution": "West Coast Regional Council"
+        },
+        {
+          "id": "new-zealand--cook-islands",
+          "institution": "Parliament of the Cook Islands"
+        },
+        {
+          "id": "new-zealand--niue",
+          "institution": "Niue Assembly"
+        },
+        {
+          "id": "new-zealand--tokelau",
+          "institution": "General Fono"
+        }
+      ],
+      "primary_urls": [
+        "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific/cook-islands?l=en_NZ",
+        "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific/tokelau",
+        "https://www.mfat.govt.nz/assets/OIA/OIA-2023/OIA-28505-US-recognition-of-Cook-Islands-and-Niue-30-March-2023.pdf",
+        "https://www.tokelau.org.nz/About+Us/Administration.html"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Cook Islands Parliament,Niue Assembly and Tokelau General Fono are already represented separately from17local exclusions. Own Tokelau administration describes legislative powers delegated to three Taupulega and national matters re-delegated to General Fono.",
+      "proposed_named_additions_or_chamber_corrections": [
+        "Taupulega of Atafu",
+        "Taupulega of Nukunonu",
+        "Taupulega of Fakaofo"
+      ],
+      "unresolved_or_caveat": "Add named special-status scope reviews for Atafu,Nukunonu,Fakaofo Taupulega; do not yet claim they meet the project first-level rule. Cook Islands/Niue are self-governing states in free association, not ordinary New Zealand regions. Ross Dependency does not imply an elected parliament.",
+      "inventory_certified_complete": false
+    },
+    {
+      "country": "North Macedonia",
+      "national_chambers_or_constitutional_bodies": [
+        "Sobranie"
+      ],
+      "national_evidence_scope": "Named inventory baseline, primary framework and retained national country research; not fresh individual media or membership certification.",
+      "existing_subnational_rows": 9,
+      "existing_eligibility_counts": {
+        "outside_default_scope": 9
+      },
+      "existing_named_bodies": [
+        {
+          "id": "north-macedonia--skopje-planning-region",
+          "institution": "Совет за развој на Скопски плански регион"
+        },
+        {
+          "id": "north-macedonia--east-planning-region",
+          "institution": "Совет за развој на Источен плански регион"
+        },
+        {
+          "id": "north-macedonia--southeast-planning-region",
+          "institution": "Совет за развој на Југоисточен плански регион"
+        },
+        {
+          "id": "north-macedonia--northeast-planning-region",
+          "institution": "Совет за развој на Североисточен плански регион"
+        },
+        {
+          "id": "north-macedonia--pelagonia-planning-region",
+          "institution": "Совет за развој на Пелагониски плански регион"
+        },
+        {
+          "id": "north-macedonia--vardar-planning-region",
+          "institution": "Совет за развој на Вардарски плански регион"
+        },
+        {
+          "id": "north-macedonia--southwest-planning-region",
+          "institution": "Совет за развој на Југозападен плански регион"
+        },
+        {
+          "id": "north-macedonia--polog-planning-region",
+          "institution": "Совет за развој на Полошки плански регион"
+        },
+        {
+          "id": "north-macedonia--skopje",
+          "institution": "Совет на Град Скопје"
+        }
+      ],
+      "primary_urls": [
+        "https://www.sobranie.mk/the-constitution-of-the-republic-ofmacedonia-ns_article-constitution-of-the-republic-of-north-macedonia",
+        "https://portal.mdt.gov.mk/post-body-files/zakoni-regulativa-file-mPf4.pdf"
+      ],
+      "evidence_level": "Primary constitutional/directory or own-government content reviewed through public web search/open; individual site inspection not implied for every listed body.",
+      "as_of": "2026-10-24 research; each historical legal/directory version retains its own effective-date limits.",
+      "finding": "Constitution arts114–117 establishes municipal self-government; existing eight planning-region councils and City of Skopje are local/coordination exclusions.",
+      "proposed_named_additions_or_chamber_corrections": [],
+      "unresolved_or_caveat": "No regional legislative tier established by this framework. Current individual planning-council membership/name changes not independently certified.",
+      "inventory_certified_complete": false
+    }
+  ]
+}

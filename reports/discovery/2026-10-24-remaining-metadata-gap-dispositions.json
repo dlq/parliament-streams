@@ -1,0 +1,655 @@
+{
+  "reviewed_on": "2026-10-24",
+  "method": "Targeted country/body searches for all24remaining Philippine boards and individual document follow-up for North Central Sri Lanka and NgäbeBuglé. Every gap receives a source-specific outcome. Exact document fetches, indexed leads, historical references, access blocks, size limits and conflicting source dates remain distinct. Scoped supporting references do not silently replace unresolved current owned legislature URLs.",
+  "records": [
+    {
+      "body_id": "panama--ngabe-bugle-comarca",
+      "country": "Panama",
+      "institution": "Congreso General Comarca Ngäbe–Buglé",
+      "reviewed_on": "2026-10-24",
+      "finding": "Health ministry2024assessment returned200but exceeded the5MBbounded-document limit before content was parsed. Indexed Congress governance text remains a lead; self-claimed Congress website ownership and current media remain unresolved.",
+      "observed_urls": [
+        {
+          "url": "https://www.minsa.gob.pa/sites/default/files/publicacion-general/asis_ngabe_bugle_2024-final_2_1_2.pdf",
+          "outcome": "bounded_document_size_limit_not_reviewed",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:27:27.282848+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--abra",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Abra",
+      "reviewed_on": "2026-10-24",
+      "finding": "A government-hosted indexed copy of a2022Abra board resolution failed hostname certificate verification on beta2022.pasigcity.gov.ph. Normal TLS retained; no content/ownership acceptance. Current government-news search mentions board members but is not an owned legislative site.",
+      "observed_urls": [
+        {
+          "url": "https://beta2022.pasigcity.gov.ph/storage/city_resolution/2022/07/20/6333e3a3b59d71664344995Reso27-11.PDF",
+          "outcome": "access_transport_or_document_hold",
+          "status": null,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'beta2022.pasigcity.gov.ph'. (_ssl.c:1010)>",
+          "checked_at_utc": "2026-10-24T05:27:21.127670+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--antique",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Antique",
+      "reviewed_on": "2026-10-24",
+      "finding": "DSWD Field OfficeVI describes an SP social-services committee member presiding over an interagency convergence meeting. This is an official reference to a member/committee role, not an owned board website, full membership, plenary recording or media-provider designation.",
+      "observed_urls": [
+        {
+          "url": "https://fo6.dswd.gov.ph/2026/06/4ps-antique-strengthens-social-services-through-interagency-convergence-programs/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:20:39.207682+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--basilan",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Basilan",
+      "reviewed_on": "2026-10-24",
+      "finding": "COMELEC2025canvassing-venuePDFpage1 identifies the SP session hall in the Capitol Building, Isabela City, separately from city/municipal halls. Address reference only, not a current institutional website or recording service.",
+      "observed_urls": [
+        {
+          "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/2025NLEListOfCanvassers/BASILAN.pdf",
+          "outcome": "pdf_text_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:27:17.542630+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--capiz",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Capiz",
+      "reviewed_on": "2026-10-24",
+      "finding": "COMELEC2025canvassing-venuePDFpage1 identifies the SP session hall on the third floor of the Provincial Capitol Building, Roxas City. This is an address reference; the province-site403hold and unverified livestream-provider lead remain separate.",
+      "observed_urls": [
+        {
+          "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/2025NLEListOfCanvassers/CAPIZ.pdf",
+          "outcome": "pdf_text_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:27:19.534776+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--catanduanes",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Catanduanes",
+      "reviewed_on": "2026-10-24",
+      "finding": "The Education Division home index lists UM267series2026 inviting attendance at an SP education-committee meeting. The specific invitation document has not been read. No owned legislature route or video provider accepted.",
+      "observed_urls": [
+        {
+          "url": "https://catanduanes.deped.gov.ph/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:29.011945+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--davao-de-oro",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Davao de Oro",
+      "reviewed_on": "2026-10-24",
+      "finding": "Own province announcement names the elected provincial-board members for both districts in May2025. It supports a dated institutional/membership reference, not current completeness or media ownership.",
+      "observed_urls": [
+        {
+          "url": "https://davaodeoro.gov.ph/2025/05/14/comelec-davao-de-oro-proclaims-winners-of-2025-midterm-elections/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:20:42.637661+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--davao-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Davao del Norte",
+      "reviewed_on": "2026-10-24",
+      "finding": "CDA title identifies the board, but the page posted1July2026 describes a23rd regular session dated6December2026 and a cooperative registration22August2026 preceding anOctober2025 award. These chronology conflicts are preserved; do not certify a current sitting date or membership from it.",
+      "observed_urls": [
+        {
+          "url": "https://cda.gov.ph/updates/write-up-on-the-commendation-of-sangguniang-panlalawigan-of-davao-del-norte-to-davao-del-norte-csf-cooperative/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:20:45.088024+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--guimaras",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Guimaras",
+      "reviewed_on": "2026-10-24",
+      "finding": "The indexed provincial ordinance register resolved toHTTP404 in the local check. Indexed2025ordinance and2022inaugural-session references remain leads; no owned viewing service confirmed.",
+      "observed_urls": [
+        {
+          "url": "https://guimaras.gov.ph/ordinances/",
+          "outcome": "access_or_transport_hold",
+          "status": null,
+          "error": "HTTP Error 404: Not Found",
+          "checked_at_utc": "2026-10-24T05:20:48.454689+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--ifugao",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Ifugao",
+      "reviewed_on": "2026-10-24",
+      "finding": "The primary province one-page organizational chart was read through the web document viewer and names the board, presiding vice-governor,12members and secretary. A later direct fetch returned403, preserved. Chart structure is not a verified current roster or media ownership.",
+      "observed_urls": [
+        {
+          "url": "https://ifugao.gov.ph/wp-content/uploads/2025/07/PROVINCIAL-STRUCTURE.pdf",
+          "outcome": "access_transport_or_document_hold",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden",
+          "checked_at_utc": "2026-10-24T05:27:15.453065+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--kalinga",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Kalinga",
+      "reviewed_on": "2026-10-24",
+      "finding": "Targeted search located the province GAD-codePDF naming the board, but the web document fetch returned403. Indexed snippets are not promoted to current owned-site or media confirmation.",
+      "observed_urls": [],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--laguna",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Laguna",
+      "reviewed_on": "2026-10-24",
+      "finding": "The exact provincial budget-news URL returnedHTTP200 but the fetched shell contained no readable board article. This is not accepted content confirmation or proof of absent proceedings.",
+      "observed_urls": [
+        {
+          "url": "https://laguna.gov.ph/news/programs-to-continue-as-laguna-supplemental-budget-approved-gov-sol-aragones-says-this-is-the-peoples-money",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:20:50.190097+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--marinduque",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Marinduque",
+      "reviewed_on": "2026-10-24",
+      "finding": "The province inaugural-session page returnedHTTP403; no retry/workaround. The indexed page title is a lead, not newly read content.",
+      "observed_urls": [
+        {
+          "url": "https://marinduque.gov.ph/inaugural-session-ng-ika-17-sangguniang-panlalawigan-isinagawa/",
+          "outcome": "access_or_transport_hold",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden",
+          "checked_at_utc": "2026-10-24T05:20:51.877546+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--masbate",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Masbate",
+      "reviewed_on": "2026-10-24",
+      "finding": "CDA account names an SP member attending a cooperative launch on behalf of the governor. This confirms a scoped governmental reference only, not a dedicated legislative website, ordinary sitting or provider.",
+      "observed_urls": [
+        {
+          "url": "https://cda.gov.ph/updates/write-up-on-the-launching-program-and-start-up-course-in-masbate-csf-cooperative/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:08.730202+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--misamis-occidental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Misamis Occidental",
+      "reviewed_on": "2026-10-24",
+      "finding": "Supreme Court decisionGR260116 dated11July2023 explicitly names the board and describes a member elected in2019. Judicial/historical reference only, not current officers or a legislature-owned website.",
+      "observed_urls": [
+        {
+          "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69225",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:20:53.822677+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--negros-oriental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Negros Oriental",
+      "reviewed_on": "2026-10-24",
+      "finding": "The indexed legislative-management subdomain failed DNS resolution. A province-hosted2022resolution and historical national repository references remain unvalidated leads, not a current functioning media service.",
+      "observed_urls": [
+        {
+          "url": "https://sp.negor.gov.ph/NegrosOr/Legislative/",
+          "outcome": "access_or_transport_hold",
+          "status": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "checked_at_utc": "2026-10-24T05:20:56.388261+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--northern-samar",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Northern Samar",
+      "reviewed_on": "2026-10-24",
+      "finding": "CDA account specifically cites SP Resolution378series2025 authorizing a grant and names an SP representative. This is government project reporting, not a legislature-owned video archive. Prior403on the province itself is retained.",
+      "observed_urls": [
+        {
+          "url": "https://cda.gov.ph/updates/cda-region-viii-celebrates-milestone-with-the-launch-of-northern-samar-csf-cooperative/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:11.332282+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--romblon",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Romblon",
+      "reviewed_on": "2026-10-24",
+      "finding": "The2026government statistics press-releasePDF returned403; no retry/workaround. Indexed legislative-digitization news describes an authorized-user document system, not a public viewing service.",
+      "observed_urls": [
+        {
+          "url": "https://rssomimaropa.psa.gov.ph/system/files/attachment-dir/PR%2020226%20-%20057%202nd%20Quarter%20RPSC%20meeting.pdf",
+          "outcome": "access_transport_or_document_hold",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden",
+          "checked_at_utc": "2026-10-24T05:27:23.265126+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--siquijor",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Siquijor",
+      "reviewed_on": "2026-10-24",
+      "finding": "Targeted search found government reporting of an SP majority leader and session hall, plus the2025COMELECseat-adjustment reference. No legislature-owned website or official media-provider designation was corroborated; no claim of no broadcasts.",
+      "observed_urls": [],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--sulu",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Sulu",
+      "reviewed_on": "2026-10-24",
+      "finding": "Supreme Court decision explicitly cites provincial-board Resolution049-2018 authorizing the provincial representation. Historical litigation reference; no current owned service or full membership inferred.",
+      "observed_urls": [
+        {
+          "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69588",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:14.533419+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--tarlac",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Tarlac",
+      "reviewed_on": "2026-10-24",
+      "finding": "Presidential Proclamation233of2023 refers to a Tarlac board request for the province holiday. A historical institutional reference, not an owned legislature website or media service.",
+      "observed_urls": [
+        {
+          "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/7/96509",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:17.370158+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--zambales",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zambales",
+      "reviewed_on": "2026-10-24",
+      "finding": "The exact DILG regional event page returnedHTTP403. Indexed named-board-member reporting remains a lead, not newly read primary content.",
+      "observed_urls": [
+        {
+          "url": "https://region3.dilg.gov.ph/zambales/index.php/news-events/1220-2024-11-11-02-29-19",
+          "outcome": "access_or_transport_hold",
+          "status": null,
+          "error": "HTTP Error 307: Temporary Redirect",
+          "checked_at_utc": "2026-10-24T05:21:19.123310+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--zamboanga-sibugay",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga Sibugay",
+      "reviewed_on": "2026-10-24",
+      "finding": "RA8973 sections13–14 specifically establish the provincial legislative body and ordinance/resolution/appropriation functions. The charter corroborates legislative authority and structure; it does not prove current membership, owned website or broadcasts.",
+      "observed_urls": [
+        {
+          "url": "https://elibrary.judiciary.gov.ph//thebookshelf//showdocs/2/5842",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:19.833294+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--zamboanga-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Norte",
+      "reviewed_on": "2026-10-24",
+      "finding": "The Education Division DA63series2026PDFis indexed with a copy of a23September2025board ordinance. The document viewer rejected the18,091,073byte response as too large; the exact document remains a lead, not fully read/current membership or owned-media evidence.",
+      "observed_urls": [],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "philippines--zamboanga-del-sur",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Sur",
+      "reviewed_on": "2026-10-24",
+      "finding": "The Agriculture Department project report explicitly describes board approval in a17July2025session. This is a dated government institutional reference, not current media-provider ownership.",
+      "observed_urls": [
+        {
+          "url": "https://miadp.da.gov.ph/subanen-vision-gains-ground-adaif-of-cadt-no-r09-lak-0609-109-ancestral-domain-of-lakewood-earns-provincial-council-approval/",
+          "outcome": "primary_content_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:21:24.684954+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    },
+    {
+      "body_id": "sri-lanka--north-central",
+      "country": "Sri Lanka",
+      "institution": "North Central Provincial Council",
+      "reviewed_on": "2026-10-24",
+      "finding": "Ministry directoryPDFpage6 explicitly lists the Office of the Secretary to the North Central Provincial Council at the Anuradhapura complex. Other officeholder entries show it is a dated directory; no current secretariat-holder, elected membership or council-owned website is certified. The chief-secretary executive office is not substituted for the legislature.",
+      "observed_urls": [
+        {
+          "url": "https://mpclg.gov.lk/web/images/divisions/Contact_Details_of_Provincial_Councils_compressed-compressed.pdf",
+          "outcome": "pdf_text_requires_individual_review",
+          "status": 200,
+          "error": null,
+          "checked_at_utc": "2026-10-24T05:27:23.922704+00:00"
+        }
+      ],
+      "outcome": "scoped_reference_or_access_limit_owned_institutional_route_still_unresolved",
+      "confirmed_current_owned_institutional_url": null,
+      "official_viewing_service_confirmed": false,
+      "not_claimed": [
+        "current_complete_membership",
+        "decoded_legislative_recordings",
+        "media_licence",
+        "no_broadcast_exists"
+      ]
+    }
+  ],
+  "missing_owned_or_exact_institutional_routes_still": 26,
+  "source_reports": [
+    "reports/health/2026-10-24-remaining-primary-reference-content.json",
+    "reports/health/2026-10-24-remaining-reference-pdfs.json"
+  ],
+  "web_document_checks": [
+    {
+      "body_id": "philippines--ifugao",
+      "url": "https://ifugao.gov.ph/wp-content/uploads/2025/07/PROVINCIAL-STRUCTURE.pdf",
+      "outcome": "primary_one_page_chart_read_web_viewer",
+      "scope": "Structure only; subsequent local403retained."
+    },
+    {
+      "body_id": "philippines--kalinga",
+      "url": "https://kalingaprovince.gov.ph/wp-content/uploads/2023/08/UPDATED-GAD-CODE-OF-THE-PROVINCIAL-GOVERNMENT-OF-KALINGA.pdf",
+      "outcome": "web_document_http403_hold"
+    },
+    {
+      "body_id": "philippines--zamboanga-del-norte",
+      "url": "https://zn.deped.gov.ph/files/memos/2026/DA.No.63s.2026.pdf",
+      "outcome": "web_document_size_limit_18091073_bytes"
+    }
+  ]
+}

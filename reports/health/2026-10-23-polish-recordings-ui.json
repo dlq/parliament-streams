@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-23T21:17:43.570Z",
+  "allPassed": true,
+  "checks": [
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Łódź Voivodeship regional polygon and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 1280,
+      "catalogue": 168,
+      "regions": 70,
+      "validatedNewEntries": 2,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Łódź Voivodeship regional polygon and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 320,
+      "catalogue": 168,
+      "regions": 70,
+      "validatedNewEntries": 2,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Łódź Voivodeship regional polygon and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 1280,
+      "catalogue": 168,
+      "regions": 70,
+      "validatedNewEntries": 2,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Łódź Voivodeship regional polygon and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 320,
+      "catalogue": 168,
+      "regions": 70,
+      "validatedNewEntries": 2,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

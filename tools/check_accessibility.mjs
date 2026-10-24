@@ -13,7 +13,13 @@ const canonicalFallbacks = JSON.parse(await readFile(join(root, "data/fallbacks.
 const [hlsPackage, d3Package] = await Promise.all(["hls.js", "d3"].map(async (name) =>
   JSON.parse(await readFile(join(root, "node_modules", name, "package.json"), "utf8"))
 ));
-const documentedAdmin1 = JSON.parse(await readFile(join(root, "site/assets/maps/documented-admin1.geojson"), "utf8"));
+const [primaryAdmin1, lienchiangAdmin1] = await Promise.all([
+  "documented-admin1.geojson", "lienchiang-odbl.geojson",
+].map(async (name) => JSON.parse(await readFile(join(root, "site/assets/maps", name), "utf8"))));
+const documentedAdmin1 = {
+  type: "FeatureCollection",
+  features: [...primaryAdmin1.features, ...lienchiangAdmin1.features],
+};
 const expectedRegionalNames = new Set(canonicalCatalogue.channels
   .filter((channel) => channel.jurisdiction_level === "subnational")
   .map((channel) => channel.country_or_region));
@@ -31,7 +37,7 @@ const expectedJurisdictionCount = new Set(canonicalCatalogue.channels.map(
 )).size;
 const expectedDocumentedCountryCodes = new Set(canonicalCatalogue.channels
   .filter((channel) => channel.jurisdiction_level === "national")
-  .map((channel) => channel.country_or_region === "Taiwan" ? "TW" : channel.external_ids?.ipu_country_code)
+  .map((channel) => ({ Taiwan: "TW", "Cook Islands": "CK", Panama: "PA" }[channel.country_or_region] ?? channel.external_ids?.ipu_country_code))
   .filter(Boolean));
 documentedAdmin1.features.forEach((feature) => {
   expectedDocumentedCountryCodes.add(feature.properties.parent_code);
@@ -432,8 +438,12 @@ try {
 
   for (const width of [1280, 320]) {
     await page.setViewportSize({ width, height: 900 });
+    for (const search of ["Neuquen", "Neuquén", "Neuque\u0301n"]) {
+      await page.locator("#search").fill(search);
+      assert.equal(await page.locator('[data-channel-id="argentina-neuquen-legislature-webcasts"]').count(), 1);
+    }
     await page.locator("#search").fill("Canada");
-    for (const region of ["Alberta", "Ontario", "Quebec"]) {
+    for (const region of ["Alberta", "Ontario", "Quebec", "New Brunswick"]) {
       const expected = canonicalCatalogue.channels.filter((channel) => channel.country_or_region === region);
       assert(expected.length > 0);
       for (const channel of expected) {
@@ -625,7 +635,7 @@ try {
   await page.reload();
   await page.waitForSelector(".channel-button");
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await page.locator("#primary-navigation > a:visible").count(), 3);
+  assert.equal(await page.locator("#primary-navigation > a:visible").count(), 4);
   assert.equal(await page.locator("#primary-navigation .github-link").isVisible(), false);
   assert((await page.locator("#primary-navigation > a:visible").first().boundingBox()).height >= 40);
   assert((await page.locator("#search").boundingBox()).y < 800);
@@ -717,7 +727,7 @@ try {
   );
   await schedulePage.setViewportSize({ width: 320, height: 800 });
   assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await schedulePage.locator("#schedule-primary-navigation > a:visible").count(), 3);
+  assert.equal(await schedulePage.locator("#schedule-primary-navigation > a:visible").count(), 4);
   await schedulePage.locator('.iptv-disclosure > summary').click();
   assert.equal(await schedulePage.locator('.iptv-disclosure').getAttribute('lang'), 'fr');
   assert.equal(await schedulePage.locator('.iptv-disclosure > summary').innerText(), 'Utiliser dans une application IPTV');
@@ -757,7 +767,13 @@ try {
     expectedDocumentedCountryCodes.size,
   );
   assert.equal(await mapPage.locator(".map-region").count(), expectedRegionalNames.size);
-  assert.match(await mapPage.locator("#map-detail").innerText(), /Canada.*31 sources/s);
+  const canadianRegionalNames = new Set(documentedAdmin1.features
+    .filter((feature) => feature.properties.parent_code === "CA")
+    .map((feature) => feature.properties.name));
+  const canadianSourceCount = canonicalCatalogue.channels.filter((channel) =>
+    channel.country_or_region === "Canada" || canadianRegionalNames.has(channel.country_or_region)
+  ).length;
+  assert.match(await mapPage.locator("#map-detail").innerText(), new RegExp(`Canada.*${canadianSourceCount} sources`, "s"));
   assert.equal(
     await mapPage
       .getByRole("button", { name: "Alberta, Documented, Subnational", exact: true })
@@ -773,8 +789,15 @@ try {
     "rgb(182, 41, 58)",
   );
   assert.equal(
-    await mapPage.getByRole("button", { name: /Brazil National · 1 source/ }).getAttribute("aria-pressed"),
+    await mapPage.locator('#jurisdiction-list button[data-jurisdiction="national:Brazil"]').getAttribute("aria-pressed"),
     "true",
+  );
+  const expectedBrazilNationalSources = canonicalCatalogue.channels.filter((channel) =>
+    channel.jurisdiction_level === "national" && channel.country_or_region === "Brazil"
+  ).length;
+  assert.match(
+    await mapPage.locator('#jurisdiction-list button[data-jurisdiction="national:Brazil"]').innerText(),
+    new RegExp(`Brazil.*National.*${expectedBrazilNationalSources} sources?`, "si"),
   );
   await mapPage.getByRole("button", { name: "International", exact: true }).click();
   assert.equal(await mapPage.locator("#supranational-picker").count(), 0);
@@ -786,7 +809,13 @@ try {
   assert.match(await mapPage.locator("#map-detail").innerText(), /European Union.*27.*Member States/si);
   assert.equal(await mapPage.locator(".map-country.is-member").count(), 26);
   await mapPage.getByRole("button", { name: "Germany, Member State", exact: true }).click();
-  assert.match(await mapPage.locator("#map-detail").innerText(), /EU · Member State.*Germany.*4 sources/s);
+  const germanRegionalNames = new Set(documentedAdmin1.features
+    .filter((feature) => feature.properties.parent_code === "DE")
+    .map((feature) => feature.properties.name));
+  const germanSourceCount = canonicalCatalogue.channels.filter((channel) =>
+    channel.country_or_region === "Germany" || germanRegionalNames.has(channel.country_or_region)
+  ).length;
+  assert.match(await mapPage.locator("#map-detail").innerText(), new RegExp(`EU · Member State.*Germany.*${germanSourceCount} sources`, "s"));
   await mapPage.getByRole("button", { name: "Zoom in", exact: true }).click();
   await mapPage.waitForTimeout(300);
   const transformBeforeSubnational = await mapPage.locator(".map-viewport").getAttribute("transform");
@@ -807,6 +836,10 @@ try {
   assert.notEqual(await mapPage.locator(".map-viewport").getAttribute("transform"), null);
   assert.match(await mapPage.locator("#map-detail .map-source-list a").first().getAttribute("href"), /source=scottish-parliament-tv/);
   await assertNoAxeViolations(mapPage, "Desktop coverage map");
+  for (const search of ["Neuquen", "Neuquén", "Neuque\u0301n"]) {
+    await mapPage.locator("#map-search").fill(search);
+    assert.equal(await mapPage.locator('#jurisdiction-list button[data-jurisdiction="subnational:Neuquén"]').count(), 1);
+  }
   for (const [country, region, sourceId, code] of [
     ["Canada", "Alberta", "alberta-assembly-online", "CA"],
     ["Argentina", "Córdoba", "argentina-cordoba-legislature-live", "AR"],
@@ -853,10 +886,62 @@ try {
   await mapPage.reload();
   await mapPage.waitForSelector(".map-country.is-documented");
   assert.equal(await mapPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await mapPage.locator("#map-primary-navigation > a:visible").count(), 3);
+  assert.equal(await mapPage.locator("#map-primary-navigation > a:visible").count(), 4);
   assert((await mapPage.locator("#world-map").boundingBox()).height <= 220);
   await assertNoAxeViolations(mapPage, "Mobile coverage map");
   await mapPage.close();
+
+  const institutionsPage = await context.newPage();
+  const institutionErrors = [];
+  institutionsPage.on("pageerror", (error) => institutionErrors.push(error.message));
+  await institutionsPage.goto(`${baseUrl}institutions.html?lang=en`);
+  await institutionsPage.waitForSelector(".institution-country");
+  await assertSearchMetadata(institutionsPage, "institutions.html");
+  assert.equal(await institutionsPage.locator(".institution-country").count(), 71);
+  assert.equal(await institutionsPage.locator(".institution-country[open]").count(), 0);
+  assert.match(await institutionsPage.locator("#institution-results").innerText(), /Entries: 948 · Country groups: 71/);
+  assert.equal(await institutionsPage.locator("#locale-select option").count(), 23);
+  await assertNoAxeViolations(institutionsPage, "Desktop legislature inventory");
+  await institutionsPage.locator("#institution-search").fill("Canada");
+  await institutionsPage.locator("#canada--alberta").waitFor();
+  assert.equal(await institutionsPage.locator(".institution-country").count(), 1);
+  await institutionsPage.locator("#institution-search").fill("Alberta");
+  assert.match(await institutionsPage.locator("#canada--alberta .institution-name").innerText(), /Alberta/);
+  const albertaSource = institutionsPage.locator("#canada--alberta .institution-viewing a").first();
+  assert.match(await albertaSource.getAttribute("href"), /source=alberta/);
+  await institutionsPage.locator("#canada--alberta .institution-evidence > summary").click();
+  const correction = new URL(await institutionsPage.locator("#canada--alberta .institutions-links a").getAttribute("href"));
+  assert.equal(correction.searchParams.get("template"), "contribution.yml");
+  assert.equal(new URL(correction.searchParams.get("page")).searchParams.get("status"), "all");
+  assert.match(correction.searchParams.get("context"), /canada--alberta/);
+  await assertNoAxeViolations(institutionsPage, "Expanded institution evidence");
+  await institutionsPage.locator("#institution-clear").click();
+  await institutionsPage.locator("#institution-status").selectOption("specific_authority_evidence_hold");
+  assert.equal(await institutionsPage.locator(".institution-row").count(), 8);
+  assert.equal(await institutionsPage.locator('.institution-row[data-status="eligible_legislature"]').count(), 0);
+  await institutionsPage.locator("#institution-status").selectOption("outside_default_scope");
+  assert.match(await institutionsPage.locator("#institution-results").innerText(), /Entries: 462/);
+  await institutionsPage.locator("#institution-search").fill("unfindable-institution-xyz");
+  assert.equal(await institutionsPage.locator(".institution-country").count(), 0);
+  assert.match(await institutionsPage.locator(".institution-empty").innerText(), /No matching institutions/);
+  await institutionsPage.locator("#institution-clear").click();
+  await institutionsPage.locator("#locale-select").selectOption("fr");
+  assert.equal(await institutionsPage.locator("html").getAttribute("lang"), "fr");
+  assert.equal(await institutionsPage.locator("#institutions-title").innerText(), await institutionsPage.evaluate(() => window.ParliamentStreamsInstitutionsI18n.message("fr", "title")));
+  assert.match(await institutionsPage.locator("#institutions-nav-catalogue").getAttribute("href"), /lang=fr/);
+  await assertSearchMetadata(institutionsPage, "institutions.html");
+  assert.deepEqual(await institutionsPage.evaluate(() => window.ParliamentStreamsI18n.locales.filter(([locale]) => window.ParliamentStreamsInstitutionsI18n.coverage(locale).missing.length).map(([locale]) => locale)), []);
+  await institutionsPage.setViewportSize({ width: 320, height: 800 });
+  await institutionsPage.locator("#institution-country").selectOption("Canada");
+  assert.equal(await institutionsPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  assert.equal(await institutionsPage.locator("#institutions-navigation > a:visible").count(), 4);
+  await assertNoAxeViolations(institutionsPage, "Mobile localized legislature inventory");
+  const inventoryFileUrl = new URL("../site/institutions.html", import.meta.url);
+  inventoryFileUrl.search = "?lang=en&q=Alberta";
+  await institutionsPage.goto(inventoryFileUrl.href);
+  await institutionsPage.locator("#canada--alberta").waitFor();
+  assert.deepEqual(institutionErrors, []);
+  await institutionsPage.close();
 
   const filePage = await context.newPage();
   const fileUrl = new URL("../site/index.html", import.meta.url);

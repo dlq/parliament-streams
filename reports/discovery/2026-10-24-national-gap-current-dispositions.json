@@ -1,0 +1,282 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "All16current target-country national catalogue gaps. Montenegro/Serbia are now published and therefore removed from this current gap view, without erasing their earlier observations. A catalogue gap is not absence of official broadcasts; primary routes, different chambers, source errors and access holds remain distinct.",
+  "records": [
+    {
+      "country": "Albania",
+      "selected_primary_route": "https://www.parlament.al/",
+      "prior_check_timestamp": "2026-10-24T02:52:19.538Z",
+      "selected_http_status": 200,
+      "selected_access_outcome": "rendered_primary_route_requires_source_specific_review",
+      "individual_finding": "Own site live control is marked no-live. The linked current plenary-news article is an official legislative report, but selected navigation did not expose decoded proceedings. No hidden API or consent route was used.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json",
+        "reports/health/2026-10-24-national-visible-controls.json"
+      ]
+    },
+    {
+      "country": "Belgium",
+      "selected_primary_route": "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+      "prior_check_timestamp": "2026-10-24T02:51:14.275Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Bulgaria",
+      "selected_primary_route": "https://www.parliament.bg/tv/video",
+      "prior_check_timestamp": "2026-10-24T02:51:54.638Z",
+      "selected_http_status": 200,
+      "selected_access_outcome": "rendered_primary_route_requires_source_specific_review",
+      "individual_finding": "Exact institutionQ639704 and own parliament.bg correspondence supported. The actual role=tab archive control was located and clicked:16October2026 shows a source-player No compatible source error inChromium/WebKit;15October shows the same error inChromium. The15OctoberWebKit run exposed a primary MP4 URL but remained atreadyState0 without decoded content. This is a specific source-player/accessibility-of-media finding, not proof no other archive or service exists.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json",
+        "reports/health/2026-10-24-bulgaria-actual-archive-tab.json",
+        "reports/health/2026-10-24-bulgaria-player-error-followup.json"
+      ]
+    },
+    {
+      "country": "Cyprus",
+      "selected_primary_route": "https://www.parliament.cy/",
+      "prior_check_timestamp": "2026-10-24T02:51:16.626Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Hungary",
+      "selected_primary_route": "https://www.parlament.hu/elo-kozvetitesek",
+      "prior_check_timestamp": "2026-10-24T02:52:11.867Z",
+      "selected_http_status": 200,
+      "selected_access_outcome": "access_challenge_no_further_interaction",
+      "individual_finding": "HTTP 200 page is a CAPTCHA, not a successful institutional content validation. No challenge interaction.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Iceland",
+      "selected_primary_route": "https://www.althingi.is/utsendingar/",
+      "prior_check_timestamp": "2026-10-24T02:51:06.000Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Latvia",
+      "selected_primary_route": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+      "prior_check_timestamp": "2026-10-24T02:51:26.780Z",
+      "selected_http_status": null,
+      "selected_access_outcome": "navigation_or_rendering_error",
+      "individual_finding": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Lesotho",
+      "selected_primary_route": "https://parliament.ls/",
+      "prior_check_timestamp": "2026-10-24T02:52:53.200Z",
+      "selected_http_status": 200,
+      "selected_access_outcome": "rendered_primary_route_requires_source_specific_review",
+      "individual_finding": "Own parliament links both chamber sites; designated video pages inspected are virtual tours, not legislative business. Embedded tour titles or channel links are not counted as proceedings.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json",
+        "reports/health/2026-10-24-national-visible-controls.json"
+      ]
+    },
+    {
+      "country": "Malta",
+      "selected_primary_route": "https://parlament.mt/en/home/",
+      "prior_check_timestamp": "2026-10-24T02:51:12.010Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Moldova",
+      "selected_primary_route": "https://parlament.md/Portals/",
+      "prior_check_timestamp": "2026-10-24T02:52:23.385Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Philippines",
+      "selected_primary_route": "https://www.senate.gov.ph/",
+      "prior_check_timestamp": "2026-10-24T02:51:51.845Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Poland",
+      "selected_primary_route": "https://www.sejm.gov.pl/",
+      "prior_check_timestamp": "2026-10-24T02:52:16.276Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Singapore",
+      "selected_primary_route": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+      "prior_check_timestamp": "2026-10-24T02:52:25.701Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "access_challenge_no_further_interaction",
+      "individual_finding": "CloudFront returned an access error. No workaround attempted.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "South Africa",
+      "selected_primary_route": "https://www.parliament.gov.za/parliament-tv",
+      "prior_check_timestamp": "2026-10-24T02:51:19.235Z",
+      "selected_http_status": 500,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP 500 explicitly says the URL was blocked. No further interaction.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "selected_primary_route": "https://www.ttparliament.org/parliament-channel/",
+      "prior_check_timestamp": "2026-10-24T02:52:28.137Z",
+      "selected_http_status": null,
+      "selected_access_outcome": "navigation_or_rendering_error",
+      "individual_finding": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    },
+    {
+      "country": "Uruguay",
+      "selected_primary_route": "https://www.parlamento.gub.uy/",
+      "prior_check_timestamp": "2026-10-24T02:51:08.413Z",
+      "selected_http_status": 403,
+      "selected_access_outcome": "http_error_with_rendered_body",
+      "individual_finding": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved.",
+      "current_national_catalogue_record_present": false,
+      "not_claimed": [
+        "no_official_stream_exists",
+        "every_chamber_and_committee_checked_live",
+        "audible_tracks_or_complete_accessibility_certified"
+      ],
+      "evidence_reports": [
+        "reports/health/2026-10-24-national-formal-browser.json"
+      ]
+    }
+  ]
+}

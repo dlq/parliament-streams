@@ -1,0 +1,77 @@
+{
+  "method": "Normal navigation to exact provider iframe URLs currently designated by the official parliament; no hidden endpoints or access workarounds.",
+  "results": [
+    {
+      "body_id": "national:Serbia",
+      "url": "https://www.videonet.co.rs/nsrsZasedanje1.htm",
+      "checked_at": "2026-10-24T03:22:03.803Z",
+      "status": 200,
+      "title": "nsrsZasedanje1",
+      "frames": [
+        "https://www.youtube.com/embed/5dqT0i_2WcM?rel=0&controls=1&showinfo=0&autoplay=1"
+      ],
+      "links": [
+        {
+          "text": "iPad/iPhone/Android",
+          "url": "http://www.videonet.co.rs/nsrsZasedanje1i.htm"
+        }
+      ],
+      "media": [],
+      "outcome": "designated_provider_navigation_requires_review"
+    },
+    {
+      "body_id": "national:Serbia",
+      "url": "https://www.videonet.co.rs/nsrsOdbori1.htm",
+      "checked_at": "2026-10-24T03:22:06.960Z",
+      "status": 200,
+      "title": "nsrsOdbori1",
+      "frames": [
+        "https://rrr.sz.xlcdn.com/?account=frametv&file=nsOdbor1&type=live&service=wowza&poster=nsrsLogo.png&output=player"
+      ],
+      "links": [
+        {
+          "text": "iPad/iPhone/Android",
+          "url": "https://www.videonet.co.rs/nsrsOdbori1i.htm"
+        }
+      ],
+      "media": [],
+      "outcome": "designated_provider_navigation_requires_review"
+    },
+    {
+      "body_id": "national:Serbia",
+      "url": "https://www.videonet.co.rs/nsrsArhiva1.htm",
+      "checked_at": "2026-10-24T03:22:09.674Z",
+      "status": 200,
+      "title": "nsrsArhiva1",
+      "frames": [],
+      "links": [
+        {
+          "text": "Седнице Народне скупштине",
+          "url": "https://www.videonet.co.rs/nsrsArhiva14Z.htm"
+        },
+        {
+          "text": "Седнице одбора и осталих радних тела",
+          "url": "https://www.videonet.co.rs/nsrsArhiva14O.htm"
+        },
+        {
+          "text": "Јавна слушања",
+          "url": "https://www.videonet.co.rs/nsrsArhiva14J.htm"
+        },
+        {
+          "text": "Активности председника Народне скупштине",
+          "url": "https://www.videonet.co.rs/nsrsArhiva14P.htm"
+        },
+        {
+          "text": "Конференције за новинаре",
+          "url": "https://www.videonet.co.rs/nsrsArhiva14K.htm"
+        },
+        {
+          "text": "Остале активности Народне скупштине",
+          "url": "https://www.videonet.co.rs/nsrsArhiva14Os.htm"
+        }
+      ],
+      "media": [],
+      "outcome": "designated_provider_navigation_requires_review"
+    }
+  ]
+}

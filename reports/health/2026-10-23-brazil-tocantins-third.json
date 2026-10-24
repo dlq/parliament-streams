@@ -1,0 +1,93 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "brazil-tocantins-third",
+      "body_id": "brazil--assembleia-legislativa-do-tocantins",
+      "url": "https://www.youtube.com/watch?v=t7mfLsMOb4g&t=600s",
+      "video": true,
+      "offset": 600,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T23:02:54.952Z",
+      "status": 200,
+      "title": "253ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n0:15 / 0:14\n253ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026\nTV Aleto\n5.58k subscribers\nSubscribe\n0\n64 views  Streamed 3 wk ago\n253ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 \nmore\n\n30:53\nNew\n'He's That Guy' Watch Barack Obama Rip Trump Apart With Just Three Words | US Midterms 2026 | N18G\nCNN-News18\n777k\n3 days ago\n19:41\nNew\nCultura 63 I Esmat recovers 19th-century historical documents and inspires a musical\nTV Aleto\n6\n9 hr ago\nAuto-dubbed\n5:02\n11ª SESSÃO ORDINÁRIA DO 2° PERÍODO DE 2026\nCâmara Municipal Coronel Ezequiel/RN\n113\nStreamed 10 days ago\n11:27\nNew\nBayern München vs Arsenal | UEFA Champions League Highlights | Matchday 3 | 2026-2027\nDAZN Football\nand 2 more\n346k\n2 days ago\n22:26\nNew\n‘We have all the cards’: Trump on Canada trade talks | CTV National News at 5:30 for Oct. 23, 2026\nCTV News\n3.2k\n29 min ago\n5:51\nNew\nPétition réclamant la démission de Ruba Ghazal: «Pas de vaccin pour la bêtise», lance Amir Khadir\nTVA Nouvelles\n3k\n2 hr ago\n1:35\n11ª SESSÃO ORDINÁRIA DO 2° PERÍODO DE 2026\nCâmara Municipal Coronel Ezequiel/RN\n11\nStreamed 10 days ago\n39:31\nMan Uses FREE ABANDONED PALLETS to Build a House in the Forest | Full Build by @lesnoy\nTechFreeze\n2.2m\n4 mo ago\n2:29\nNew\nTrump announces tariff exemptions with Canada-U.S. trade deal 'very close'\nCTV News\n0\n2 min ago\n16:22\nNew\nCan Sweden’s Gripen Survive Without American Tech?\nWes O'Donnell\n95k\n7 hr ago\nLIVE\nLIVE | SpaceX Launches Falcon 9 Carrying 24 Starlink Satellites From Californ",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 14.601,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 14.601,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-brazil-tocantins-third-chromium.png"
+    },
+    {
+      "key": "brazil-tocantins-third",
+      "body_id": "brazil--assembleia-legislativa-do-tocantins",
+      "url": "https://www.youtube.com/watch?v=t7mfLsMOb4g&t=600s",
+      "video": true,
+      "offset": 600,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T23:03:10.261Z",
+      "status": 200,
+      "title": "253ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 - YouTube",
+      "excerpt": " CA\nSkip navigation\nSign in\n\n0:15 / 0:14\n253ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026\nTV Aleto\n5.58K subscribers\nSubscribe\n0\nShare\nSave\n64 views  Streamed 3 weeks ago\n253ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 29/09/2026 \n...more\n",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 14.601,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 14.601,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-brazil-tocantins-third-webkit.png"
+    }
+  ]
+}

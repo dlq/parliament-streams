@@ -1,0 +1,266 @@
+{
+  "checked_at": "2026-10-24T03:35:02.349345+00:00",
+  "scope": "Twenty individually reviewed official viewing links. Exact institutions, primary designation and selected recorded business confirmed; current live/all rooms/audio/accessibility/reuse remain scoped and unresolved. This is not an HTTP-only or full-service certification.",
+  "results": [
+    {
+      "id": "canada-new-brunswick-committee-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official assembly webcasts designate Public Accounts recordings for 1 and 2 October 2026. Both decode in Chromium and WebKit. The first 1 October sample shows a listener; a later 3600-second sample confirms a participant speaking at a lit committee microphone. The 2 October sample shows a separate participant speaking. Original, English and French interpretation selectors are present; only default playback was tested, muted. Plenary and current live coverage remain unverified.",
+      "evidence_report": "reports/discovery/2026-10-24-canada-new-brunswick-committee-recordings-review.json",
+      "unresolved": [
+        "current_live_and_full_room_inventory_unverified",
+        "audible_quality_and_all_audio_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_unestablished",
+        "optional_flag_asset_pending_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "finland-aland-lagting-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: The parliament live page explicitly designates its YouTube plenary archive. Distinct 28 and 30 September 2026 recordings decode in Chromium and WebKit; selected frames show different speakers at the parliamentary lectern with crest and lit microphone. Parliamentary rules establish legislative and budgetary powers within autonomy and Swedish as the working language. This validates selected archived plenaries, not all sessions, live or committees.",
+      "evidence_report": "reports/discovery/2026-10-24-finland-aland-lagting-recordings-review.json",
+      "unresolved": [
+        "current_live_and_full_room_inventory_unverified",
+        "audible_quality_and_all_audio_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_unestablished",
+        "optional_flag_asset_pending_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "montenegro-parliament-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: The parliament website designates its official recording channel, corroborated by the exact institution item and provider ID. Selected 19 October 2026 plenary and 21 October Economy, Finance and Budget Committee recordings decode in Chromium and WebKit; frames show a standing plenary speaker and a committee participant speaking at lit microphones. Dates are the official titles. This is selected archived proceedings validation; current live, every room and audible language variants remain unverified.",
+      "evidence_report": "reports/discovery/2026-10-24-montenegro-parliament-recordings-review.json",
+      "unresolved": [
+        "current_live_and_full_room_inventory_unverified",
+        "audible_quality_and_all_audio_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_unestablished",
+        "optional_flag_asset_pending_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "germany-hesse-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 108th plenary7June2022, Boris Rhein at lectern under TOP1 caption. Visible provider licence row says Creative Commons Attribution; work-specific label, not blanket current-service permission. 107th plenary2June2022, Frank Grobe at lectern under TOP58 caption. Visible provider CCAttribution row; exact linked instrument and scope require review. Current2026 coverage unconfirmed. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "germany-sachsischer-landtag-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. Land budget2027/2028 debate clip, finance official at plenary lectern; description dates introduction26August2026. A debate segment is not full-session archive validation. 18December2024 minister-president election, member at plenary lectern under official assembly identity. Historical sitting separate from2026 budget segment. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "indonesia-aceh-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption. DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "japan-hyogo-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. September2026 regular-session closing sitting: member at plenary lectern with inset interpreter. Recent upload, exact calendar date not read in selected frame. September2026 regular-session general questions day3, separate member reading at plenary lectern with inset interpreter. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "japan-tokushima-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 7October2026 closing sitting of September regular session, member reading at chamber lectern. 18September2026 general questions, named member Atsushi Fusukawa at chamber lectern, agenda description on external organizations/newhall/schools. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "south-africa-northern-cape-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 4March2026 premier Zamani Saul replying to State of Province debate at chamber lectern, matching named/date/assembly overlay. 3March2026 State of Province debate, crossfade between speaker and chamber with matching assembly/date overlay; selected moment is a camera transition. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "south-africa-western-cape-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 10September2026 13:00 Budget committee, socio-economic/infrastructure/basic-services slides with remote participant tiles and parliamentary banner. 10September2026 09:00 Budget committee,2026/27 safety outcome indicators with remote participant tiles. Same date separate morning/afternoon meetings, not two plenary dates. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "spain-parlamento-de-cantabria-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. Health committee22October2026, man speaking at table microphone, institutional identity and provider description. Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "spain-parlamento-de-la-rioja-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 63rd plenary1October2026, Cristina Maiso speaking at chamber lectern under named deputy caption. Spain, distinct from Argentine LaRioja. 62nd plenary17September2026, Gonzalo Capellán speaking at lectern under regional-government-president caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "taiwan-penghu-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 6October2026/ROC115, fifth review committee county-government questions, member and official exchanging at microphones, matching western-clock date. 5October2026/ROC115, third/fourth review committees questions, Xu Guozheng and official exchanging at microphones, matching western-clock date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "taiwan-tainan-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive. Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "united-states-district-of-columbia-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 14July2026 Committee of Whole, chair Mendelson at lit desk microphone, date/source ticker and visible spoken-caption overlay. Selected point is committee, not independently confirmed subsequent legislative-meeting segment. 30June2026 Committee of Whole, woman speaking at lit desk microphone with dated source ticker and spoken-caption overlay. Caption accuracy/all-source availability untested. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "united-states-kansas-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 21October2026 Joint Administrative Rules/Regulations committee, senators/representatives discussing at table with nameplates. Not plenary. 20October2026 Special Committee on340BProgram, witness reading at committee lectern; separate committee. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "united-states-mississippi-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide. 1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "united-states-wyoming-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 21October2026 SchoolFinanceRecalibration AMpart2, witness at table microphone and visible spoken-caption line; caption accuracy/source-wide availability untested. 20October2026 SchoolFacilities PM, witnesses discussing at table microphones with spoken-caption line. Different committee/day, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "uruguay-canelones-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 20October2026 ordinary sitting/citation20, César Lista reading at lit desk microphone under named placard and department parliament branding. 6October2026 ordinary sitting/citation19, Daniel Paris reading at lit desk microphone with institutional branding. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    },
+    {
+      "id": "uruguay-montevideo-recordings",
+      "status": "ok",
+      "note": "Scoped publication review: Official institution currently designates the viewing provider. 22October2026 ordinary sitting, legislative secretary reading at lit microphone under JDM logo and desk label. 15October2026 ordinary sitting, member Rodríguez speaking at lit desk microphone with department chamber identity. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "evidence_report": "reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json",
+      "unresolved": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ]
+    }
+  ]
+}

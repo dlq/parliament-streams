@@ -1,0 +1,744 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Resolve ten named Indian Sixth Schedule institutional scope questions only; primary constitutional/own/state/Union evidence. No broadcast validation or publication.",
+  "input_report": "reports/discovery/2026-10-24-inventory-reconciliation.json",
+  "scope_policy": "docs/catalogue-scope.md",
+  "summary": {
+    "scope_candidates_reviewed": 10,
+    "eligible_legislature": 10,
+    "outside_default_scope": 0,
+    "specific_authority_evidence_hold": 0,
+    "new_first_level_states": 0,
+    "automatic_catalogue_promotions": 0,
+    "additional_precise_territorial_leads_checked": 1,
+    "additional_precise_authority_evidence_holds": 1
+  },
+  "decision_method": "Project classification based on substantive autonomous territorial lawmaking, finance and executive accountability. Constitutionally limited or nested authority is not rejected solely for sitting below state level; a council title or government-directory local-body category is not decisive.",
+  "sixth_schedule_2026": {
+    "source": "constitution_2026",
+    "finding": "Article 244(2) and the Sixth Schedule establish autonomous territorial councils. Paragraph 3 covers land, non-reserved forest, inheritance, marriage/divorce and custom; Assam has extra grants in 3A/3B. Laws require assent and official publication. Paragraphs 7/8 provide funds, tax powers and CAG reporting to councils;13 requires discussion of relevant state estimates. Paragraphs 15/16 allow intervention. These are bounded legislatures, not sovereign states.",
+    "assent_and_supremacy": {
+      "assam": "Paragraph 3(3) as amended,3A/3B and12: Governor assent; concurrent-list measures reserved to President; state-law application follows the scheduled subject rules.",
+      "meghalaya": "Paragraph 3(3),11,12A: Governor assent/publication; conflicting Meghalaya legislation prevails to the stated extent.",
+      "tripura": "Paragraph 3(3),11,12AA: Governor assent/publication; scheduled subjects have specific state-law application arrangements.",
+      "mizoram": "Paragraph 3(3),11,12B: Governor assent/publication; scheduled subjects have specific state-law application arrangements."
+    },
+    "scope_inference": "Substantive territorial legislation plus finance/executive control satisfies the maintained special-status legislature rule. This is an explicit project judgement, not a claim that each council is a state legislature under Article 168."
+  },
+  "sources": {
+    "constitution_2026": {
+      "title": "Government of India, Legislative Department: Constitution of India, as on 1 May 2026",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf",
+      "method": "primary_pdf_text_review_and_local_pypdf_extraction",
+      "version_scope": "Preface dated 1 May 2026; incorporates amendments through the 106th Amendment Act, 2023. Sixth Schedule including state-specific footnotes read; no claim of certification of every later instrument.",
+      "pdf_sha256": "4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+      "pdf_pages_zero_based": [
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        334,
+        335
+      ],
+      "locators": [
+        "Article  244(2)",
+        "Sixth Schedule paragraphs 2, 3, 3A, 3B, 7, 8, 11, 12, 12A, 12AA, 12B, 13, 15, 16 and 20/table"
+      ]
+    },
+    "assam_btc_governance": {
+      "title": "Assam Administrative Staff College: Governance in Bodoland Territorial Region",
+      "url": "https://aasc.assam.gov.in/sites/default/files/swf_utility_folder/departments/aasc_webcomindia_org_oid_4/portlet/level_3/btr.pdf",
+      "method": "primary_state_government_pdf_content_review",
+      "locators": [
+        "slides 2–5: constitution, powers and legislative assembly",
+        "slides 7–10: fund devolution, plans and budget",
+        "slides 14–15: fund rules, annual accounts and audit"
+      ],
+      "finding": "State training material distinguishes BTC legislative assembly and executive machinery, council approval of its own budget and annual plan, state appropriation/grants for entrusted functions, and laying CAG reports before the assembly. Institutional powers evidence; slide seat counts and officeholders are not adopted as a fresh roster."
+    },
+    "kaac_current": {
+      "title": "Karbi Anglong Autonomous Council: own institutional page",
+      "url": "https://karbianglong.co.in/index.php",
+      "method": "primary_own_institution_page_content_review",
+      "finding": "Page names KAAC as a Sixth Schedule self-governing institution and describes legislative, executive and judicial functions. October 2026 administrative notices appear alongside an older footer date; neither certifies every incumbent or enactment."
+    },
+    "nchac_current": {
+      "title": "North Cachar Hills / Dima Hasao Autonomous Council: own institutional page",
+      "url": "https://nchac.in/",
+      "method": "primary_own_institution_page_content_review",
+      "finding": "Header retains North Cachar Hills Autonomous Council; page also uses Dima Hasao Autonomous Council and says it is a Sixth Schedule district council. A Dimasa Kachari Customary Law Bill, 2026 is listed as uploaded 1 October 2026. A listed Bill is not proof of assent or commencement; inconsistent historical/member-count snippets are not used as current metadata."
+    },
+    "khadc_intro": {
+      "title": "Khasi Hills Autonomous District Council: jurisdiction",
+      "url": "https://khadc.nic.in/archive/Introductory.htm",
+      "method": "primary_own_institution_page_content_review",
+      "finding": "Own introduction identifies the constitutional council and its executive, legislative and judicial remit across the Khasi Hills autonomous area, encompassing multiple present civil districts. It distinguishes traditional Hima/Elaka units below it."
+    },
+    "khadc_land_act": {
+      "title": "Khasi Hills Autonomous District (Regulation and Administration of Land) Act, 2021",
+      "url": "https://khadc.nic.in/acts_rules_regulations_bills/Acts_Rules_arranged/KHAD_Regulation_and_Administration_of_Land_Act_2021.pdf",
+      "method": "primary_gazetted_law_pdf_text_review",
+      "locators": [
+        "cover and enactment preamble",
+        "sections 22–23",
+        "assent certificate"
+      ],
+      "finding": "Council passed this land-tenure enactment on 10 November 2021; Governor assented 30 August 2022; gazetted 2 September 2022. Section 22 subjects specified executive difficulty-removal action to council approval; section 23 provides for rules. This is enacted territorial land legislation, beyond an ordinary service bylaw."
+    },
+    "meghalaya_rules": {
+      "title": "Assam and Meghalaya Autonomous Districts (Constitution of District Councils) Rules, 1951, council-hosted compilation",
+      "url": "https://khadc.nic.in/acts_rules_regulations_bills/misc/AD_Rules.pdf",
+      "method": "primary_search_index_excerpt_review_with_unsuccessful_local_pdf_followup",
+      "locators": [
+        "rule  22: collective responsibility and no-confidence",
+        "financial-procedure chapter"
+      ],
+      "finding": "Rule 22 explicitly makes the Executive Committee collectively responsible to the District Council and removable by a council no-confidence vote. The web reader rejected the 10.6 MB file size; this is a reader limit, not an institutional absence. Compilation is structural evidence and is not represented as a complete 2026 amendment consolidation. Normal local download then timed out after 45 seconds; no complete local text read is claimed."
+    },
+    "jhadc_current": {
+      "title": "Jaintia Hills Autonomous District Council, Jowai: own site",
+      "url": "https://jhadc.nic.in/",
+      "method": "primary_own_institution_search_index_content_review",
+      "finding": "Government-hosted council page names JHADC, its chairman and executive offices and carries September/October 2026 notices. Direct web-reader requests timed out. Indexed content corroborates name and continued institutional presence; no claim of fresh direct retrieval or certified present membership."
+    },
+    "jhadc_cag": {
+      "title": "Comptroller and Auditor General: Jaintia Hills Autonomous District Council, year ended 31 March 2018",
+      "url": "https://cag.gov.in/uploads/download_audit_report/2018/Jaintia-Hills-Audit-Report-of-2017-18-0689dcbb7ea0368.84559581.pdf",
+      "method": "primary_auditor_search_index_content_review",
+      "locators": [
+        "chapter I, section 1.4: administrative set-up",
+        "chapter II: district fund"
+      ],
+      "finding": "Historical auditor description distinguishes a legislative secretary, council-elected Chief Executive Member and Executive Committee, with council district-fund accounts. Direct PDF returned 404; this is scoped indexed auditor evidence for the recorded period, not a fresh complete PDF read or 2026 audit finding."
+    },
+    "meghalaya_2025": {
+      "title": "Meghalaya District Council Affairs Department: General Elections, 2025",
+      "url": "https://megdca.gov.in/elections 2025.html",
+      "method": "primary_state_government_search_index_content_review",
+      "finding": "State page lists separate KHADC and JHADC election/result and executive-member notifications. It corroborates distinct institutions; the direct web-reader timed out and the 2025 notices are not a guarantee of every October 2026 officeholder."
+    },
+    "ghadc_current": {
+      "title": "Garo Hills Autonomous District Council: own institutional site",
+      "url": "https://www.ghadc.nic.in/index.html",
+      "method": "primary_own_institution_page_content_review",
+      "finding": "Own page identifies GHADC under Article 244(2)/Sixth Schedule, based in Tura, across five civil districts. It carries 19 August 2026 judicial recruitment notices and an executive-secretariat contact. Administrative notices corroborate the institution, not continuous elected sittings."
+    },
+    "ghadc_acts": {
+      "title": "Garo Hills Autonomous District Council: Acts, Rules and Regulations",
+      "url": "https://www.ghadc.nic.in/governance/acts-and-rules.html",
+      "method": "primary_own_institution_law_index_content_review",
+      "finding": "Council law index includes land/revenue, land transfer, forest, marriage, social-custom and taxation enactments, as well as village/town committee laws. Index read; no claim that every listed historical law or amendment was independently revalidated."
+    },
+    "tripura_cag": {
+      "title": "Comptroller and Auditor General: Tripura Tribal Areas Autonomous District Council, 2018–19",
+      "url": "https://cag.gov.in/webroot/uploads/download_audit_report/2024/TTAADC-Report-2018-19_Tripura_Full-Report-068d151ae9ec6c9.90657330.pdf",
+      "method": "primary_constitutional_auditor_pdf_content_review",
+      "locators": [
+        "chapter I, sections1.1–1.3",
+        "chapter II, section2.7: budgetary processes"
+      ],
+      "finding": "Auditor distinguishes the original 1979 statute/1982 council from Sixth Schedule operation beginning April 1985, and discusses own lawmaking, transferred functions, funds and budget controls. Historical financial observations are retained as historical, not a 2026 performance assessment."
+    },
+    "tripura_current": {
+      "title": "Akashvani / News on AIR: TTAADC oath-taking notice, 24 April 2026",
+      "url": "https://newsonair.gov.in/ttaadc-oath-taking-ceremony-to-be-held-on-april-27-at-khumulwng-council-bhavan/",
+      "method": "government_public_broadcaster_report_of_official_notification",
+      "finding": "Government broadcaster reports the council CEO notice for newly elected members and chairman/Chief Executive Member selection. It supports 2026 institutional continuity, not a verified October roster or all subsequent events."
+    },
+    "cadc_current": {
+      "title": "CADC passes budget for 2026–27,24 August 2026",
+      "url": "https://www.cadc.gov.in/2026/08/24/cadc-passes-budget-for-2026-27-amounting-to-rs-24843-49-lakhs/",
+      "method": "primary_own_institution_sitting_account_content_review",
+      "finding": "Council reports its11th council emergency-session sitting, executive presentation, house discussion and voting on local-receipt reappropriation and grants. This directly demonstrates legislative budget control and a dated sitting; it does not certify all later sitting or executive status."
+    },
+    "cadc_laws": {
+      "title": "Chakma Autonomous District Council: gazetted allocation of business rules",
+      "url": "https://www.cadc.gov.in/wp-content/uploads/acts-rules/CADC-Allocation-of-Business-Rule-2009.pdf",
+      "method": "primary_gazette_pdf_search_index_excerpt_review",
+      "locators": [
+        "legislative department and law/judicial department allocations"
+      ],
+      "finding": "Gazetted allocations distinguish legislative business from executive administration and identify customary-law, inheritance and judicial functions. This is a historical organisation instrument, not a whole current law consolidation."
+    },
+    "mizoram_department": {
+      "title": "Mizoram District Council & Minority Affairs Department: MADC Acts & Rules",
+      "url": "https://dcma.mizoram.gov.in/page/madc-acts-rules",
+      "method": "primary_state_government_page_content_review",
+      "finding": "State department names Lai, Mara and Chakma as separate autonomous councils and links their own sites. It retains MADC constitution/conduct-of-business, fund, executive and town/village legislation. The MADC 2002 PDF and own MADC root returned 403; no access restriction was bypassed."
+    },
+    "mizoram_acts": {
+      "title": "Mizoram District Council & Minority Affairs Department: gazetted Act & Rules index",
+      "url": "https://dcma.mizoram.gov.in/page/act-rules",
+      "method": "primary_state_government_search_index_content_review",
+      "finding": "State index separately lists Mara marriage/divorce 2024 and non-agricultural land-settlement 2011 enactments, and Chakma agricultural-land 1982 and land/revenue 2002 Acts. Search-index content read; direct reader returned 403. Enactment titles support substantive subjects; their entire current text was not read."
+    },
+    "ladc_structure": {
+      "title": "Lai Autonomous District Council: institutional history and functions",
+      "url": "https://ladc.mizoram.gov.in/page/brief-history-of-ladc",
+      "method": "primary_own_institution_page_content_review",
+      "finding": "Own account distinguishes Lai/Pawi from Mara/Lakher, describes the lawmaking council, separate executive/legislative secretariats, taxes and executive answers to member questions. It is a history/structure page, not a validated current seat or officeholder list."
+    },
+    "ladc_rules": {
+      "title": "Lai Autonomous District Council (Constitution, Conduct of Business etc.) Rules, 2002",
+      "url": "https://ladc.mizoram.gov.in/uploads/attachments/2025/05/2b14d978ca60061da52bdc68a1d7d58d/the-ladc-constitution-conduct-of-business-etc-rules-2002.pdf",
+      "method": "primary_own_hosted_rules_pdf_text_review",
+      "locators": [
+        "rule 6: legislative and executive separation",
+        "rule 25 and84: executive collective responsibility/no-confidence",
+        "budget chapter, PDF pp 59–65: grants and refusal/reduction"
+      ],
+      "finding": "Rules expressly separate legislative, executive and judicial functions; the house can remove the executive on no-confidence and refuse/reduce district-fund demands. This principal 2002 text is used for the operative institutional architecture, not unamended current seat counts; later amendments require their own metadata versioning."
+    },
+    "fnta_revised_bill_2026": {
+      "title": "Nagaland Gazette, 15 September 2026: revised Frontier Nagaland Territorial Authority Bill, 2026",
+      "url": "https://govtpress.nagaland.gov.in/wp-content/uploads/2026/09/15-September-GB-1_compressed.pdf",
+      "method": "primary_gazette_pdf_download_and_individual_rendered_page_review",
+      "document_sha256": "10d265c3acf94f80a2490e8281e9e8172330827a4be0d846920d73bb0c7110ee",
+      "version_scope": "Part V, Bill publication under Rule 72, notification AS/LEG-22/Bill/FNTA/2026/298 dated 1 September 2026. This is a revised Bill, not evidence of gubernatorial assent or commencement.",
+      "pdf_pages_zero_based_visually_read": [
+        55,
+        56,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "locators": [
+        "clause 1(3): commencement by notified date",
+        "clauses 10–12: territorial lawmaking resolution, state examination, Governor assent and publication",
+        "clauses 19 and 27: funds/audit and intervention"
+      ],
+      "finding": "Revised Bill expressly includes legislative powers and a house resolution process over transferred subjects; Governor assent and gazette publication are required. State direction, grants, audit and suspension remain. Original March executive-only wording cannot decide the revised institution. Full issue contains image-based body text: a negative text-search result is not an absence finding."
+    },
+    "fnta_march_statement": {
+      "title": "Nagaland DIPR: Chief Minister statement on FNTA Bill, 27 March 2026",
+      "url": "https://ipr.nagaland.gov.in/STATEMENT-OF-THE-CHIEF-MINISTER-Dr.-NEIPHIU-RIO-ON-THE-FNTA-BILL-2026-ON-27th-MARCH-2026",
+      "method": "primary_state_government_page_content_review",
+      "finding": "Records constitutional concerns about conferring legislative powers through state law and deferral of the original March Bill. This precedes the revised September Bill and is not used as a final exclusion."
+    },
+    "fnta_september_statement": {
+      "title": "Nagaland DIPR: Rio calls FNTA a step towards inclusive and equitable development",
+      "url": "https://ipr.nagaland.gov.in/index.php/rio-calls-fnta-a-step-towards-inclusive-and-equitable-development",
+      "method": "primary_state_government_page_content_review",
+      "finding": "Body describes the Chief Minister commending the revised Bill for consideration/passing on 3 September 2026. CMS admin date says 3 August 2026, conflicting with the body; the legal Gazette controls Bill identity/date. Neither date label supplies a final assent or commencement instrument."
+    },
+    "nagaland_acts_directory": {
+      "title": "Nagaland State Portal: Act & Rules directory",
+      "url": "https://www.nagaland.gov.in/act-rules",
+      "method": "primary_state_government_directory_content_review",
+      "finding": "Directory read through current listed items; no FNTA Act entry identified. Incomplete directory coverage is not proof no assent or notification exists."
+    },
+    "nagaland_later_gazette_index": {
+      "title": "Nagaland Printing & Stationery: Gazette 30 September 2026",
+      "url": "https://govtpress.nagaland.gov.in/egazette-30-september-2026/",
+      "download_url": "https://govtpress.nagaland.gov.in/wp-content/uploads/2026/10/30-September-new-GB_compressed.pdf",
+      "method": "primary_index_and_link_read_with_failed_full_document_retrieval",
+      "finding": "Official index/download identified. Web reader rejected 11.3 MB file; normal downloads timed out after 45 and 120 seconds without a usable PDF. No statement about the issue contents or absence of FNTA Act is made."
+    }
+  },
+  "records": [
+    {
+      "id": "scope-review--india--bodoland-territorial-council",
+      "country": "India",
+      "original_candidate_name": "Bodoland Territorial Council",
+      "current_inventory_name": "Bodoland Territorial Council",
+      "aliases": [
+        "Bodoland Territorial Council Legislative Assembly"
+      ],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Assam",
+        "state_inventory_id": "india--assam",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 3B",
+        "Sixth Schedule paragraph 12 as amended for Assam"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "assam_btc_governance"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Assam. Preserve BTC as the constitutional council and its legislative-assembly formation; do not add an independent state or a duplicate legislature for the BTR geographic name. The broader constitutional subject grant and separate legislative budget control satisfy project scope.",
+      "identity_and_currentness_note": "Council name retained as BTC; BTR names its territory. A 2020 political settlement is not treated as self-executing enlargement of every constitutional grant or council seat count.",
+      "assent_and_supremacy_framework": "assam",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--karbi-anglong-autonomous-council",
+      "country": "India",
+      "original_candidate_name": "Karbi Anglong Autonomous Council",
+      "current_inventory_name": "Karbi Anglong Autonomous Council",
+      "aliases": [],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Assam",
+        "state_inventory_id": "india--assam",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 3A",
+        "Sixth Schedule paragraph 12 as amended for Assam"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "kaac_current"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Assam. Its constitutionally enumerated additional subjects and separate legislative/executive organs meet the project test; ordinary town and village institutions beneath it are not included by this decision.",
+      "identity_and_currentness_note": "Keep KAAC distinct from the statutory Karbi Welfare Autonomous Council for Karbi communities outside its area. Do not equate civil-district subdivision with creation of another council.",
+      "assent_and_supremacy_framework": "assam",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--dima-hasao-north-cachar-hills-autonomous-council",
+      "country": "India",
+      "original_candidate_name": "Dima Hasao/North Cachar Hills Autonomous Council",
+      "current_inventory_name": "North Cachar Hills Autonomous Council (Dima Hasao)",
+      "aliases": [
+        "Dima Hasao Autonomous Council",
+        "North Cachar Hills Autonomous Council",
+        "NCHAC",
+        "DHAC"
+      ],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Assam",
+        "state_inventory_id": "india--assam",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 3A",
+        "Sixth Schedule paragraph 12 as amended for Assam"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "nchac_current"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Assam. Constitutional North Cachar Hills and own-site Dima Hasao describe the same council; the distinct lawmaking grant clears scope without needing a current Bill to have received assent.",
+      "identity_and_currentness_note": "Preserve both legal and current display names and one institutional identity. No new institution is inferred from the district rename; 2026 customary-law Bill listing is not an enactment claim.",
+      "assent_and_supremacy_framework": "assam",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--khasi-hills-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Khasi Hills Autonomous District Council",
+      "current_inventory_name": "Khasi Hills Autonomous District Council",
+      "aliases": [],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Meghalaya",
+        "state_inventory_id": "india--meghalaya",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12A"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "khadc_intro",
+        "khadc_land_act",
+        "meghalaya_rules",
+        "meghalaya_2025"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Meghalaya. The assented territorial land Act and council control of its executive establish substantive lawmaking and accountability beyond ordinary service bylaws.",
+      "identity_and_currentness_note": "The autonomous area crosses multiple civil districts and contains traditional Hima/Elaka units; do not create five parliaments from those district names or automatically promote every traditional council.",
+      "assent_and_supremacy_framework": "meghalaya",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--jaintia-hills-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Jaintia Hills Autonomous District Council",
+      "current_inventory_name": "Jaintia Hills Autonomous District Council",
+      "aliases": [],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Meghalaya",
+        "state_inventory_id": "india--meghalaya",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12A"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "jhadc_current",
+        "jhadc_cag",
+        "meghalaya_rules",
+        "meghalaya_2025"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Meghalaya. It is a distinct constitutional district council with a legislative wing, council-selected executive and district fund, rather than a civil-district administration or a municipal board.",
+      "identity_and_currentness_note": "Keep it separate from KHADC and from East/West Jaintia Hills civil administrations. Historical auditor findings and 2025 state notices are dated structural corroboration, not a 2026 elected-member certification.",
+      "assent_and_supremacy_framework": "meghalaya",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--garo-hills-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Garo Hills Autonomous District Council",
+      "current_inventory_name": "Garo Hills Autonomous District Council",
+      "aliases": [],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Meghalaya",
+        "state_inventory_id": "india--meghalaya",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12A"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "ghadc_current",
+        "ghadc_acts",
+        "meghalaya_rules"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Meghalaya. Own law index corroborates land, forest and social-custom legislation under the constitutional grant; council/executive accountability is recorded by the regional conduct-of-business framework.",
+      "identity_and_currentness_note": "One autonomous council encompasses five civil districts. Its institutional existence in law is retained without asserting uninterrupted elected operation, a current term, or the current force of every historical listed Act.",
+      "assent_and_supremacy_framework": "meghalaya",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--tripura-tribal-areas-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Tripura Tribal Areas Autonomous District Council",
+      "current_inventory_name": "Tripura Tribal Areas Autonomous District Council",
+      "aliases": [
+        "TTAADC"
+      ],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Tripura",
+        "state_inventory_id": "india--tripura",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12AA"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "tripura_cag",
+        "tripura_current"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Tripura. Constitutional territorial lawmaking and a distinct council budget/executive structure clear the scope gate; it is not simply the sum of ordinary village committees.",
+      "identity_and_currentness_note": "Preserve the historical 1979 statutory origin/1982 operation separately from Sixth Schedule operation from 1985. Proposed Tipra Territorial Council naming or expansion is not adopted without an enacted operative instrument.",
+      "assent_and_supremacy_framework": "tripura",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--chakma-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Chakma Autonomous District Council",
+      "current_inventory_name": "Chakma Autonomous District Council",
+      "aliases": [],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Mizoram",
+        "state_inventory_id": "india--mizoram",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12B"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "cadc_current",
+        "cadc_laws",
+        "mizoram_department",
+        "mizoram_acts"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Mizoram. Territorial lawmaking plus a directly documented house vote on executive financial proposals clears scope; constitutional assent and state grant controls do not make it merely an advisory council.",
+      "identity_and_currentness_note": "Retain council-in-law independently of periods of Governor administration. The 24 August 2026 sitting report is dated confirmation, not certification of the executive or electoral situation on every subsequent date.",
+      "assent_and_supremacy_framework": "mizoram",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--lai-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Lai Autonomous District Council",
+      "current_inventory_name": "Lai Autonomous District Council",
+      "aliases": [
+        "Pawi Autonomous District Council (historical name)"
+      ],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Mizoram",
+        "state_inventory_id": "india--mizoram",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12B"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "ladc_structure",
+        "ladc_rules",
+        "mizoram_department"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Mizoram. Explicit legislative vesting, house control of executive confidence and power to reject/reduce demands meet the project authority test.",
+      "identity_and_currentness_note": "Lai/Pawi and Mara/Lakher are separate successor identities; never map Pawi to Mara. Do not copy principal 2002 membership figures over later amendments or infer current operation solely from historical rules.",
+      "assent_and_supremacy_framework": "mizoram",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    },
+    {
+      "id": "scope-review--india--mara-autonomous-district-council",
+      "country": "India",
+      "original_candidate_name": "Mara Autonomous District Council",
+      "current_inventory_name": "Mara Autonomous District Council",
+      "aliases": [
+        "Lakher Autonomous District Council (historical name)"
+      ],
+      "authority_status": "eligible_legislature",
+      "scope_question_resolved": true,
+      "inventory_grain": "autonomous_special_status_legislative_institution",
+      "relationship": {
+        "state": "Mizoram",
+        "state_inventory_id": "india--mizoram",
+        "kind": "nested_constitutional_autonomous_territory_within_state",
+        "not_a_new_first_level_state": true,
+        "not_a_state_upper_or_lower_chamber": true
+      },
+      "legal_basis": [
+        "Constitution Article 244(2)",
+        "Sixth Schedule paragraphs 2,3,7,8,11,13,15,16,20",
+        "Sixth Schedule paragraph 12B"
+      ],
+      "shared_legal_framework": "sixth_schedule_2026",
+      "institution_sources": [
+        "mizoram_department",
+        "mizoram_acts",
+        "ladc_structure"
+      ],
+      "finding": "Eligible autonomous territorial legislature within Mizoram. The constitutional grant, separately maintained legislative/executive/fund instruments and substantive land and family-law enactment index establish territorial normative government beyond ordinary municipal regulation.",
+      "identity_and_currentness_note": "Own-site 403 and unavailable 2002 PDF do not erase a clear constitutional grant. Current elected composition/activity remains unasserted. Avoid the apparent Pawi-to-Mara error in one historical CAG introductory snippet; current Constitution and state/own Lai account distinguish Lai/Pawi and Mara/Lakher.",
+      "assent_and_supremacy_framework": "mizoram",
+      "evidence_date": "2026-10-24",
+      "legal_existence_scope": "Constitutional institution and subject powers confirmed; this pass does not certify each current member, term, suspension order or actual sitting.",
+      "remaining_authority_instrument": null,
+      "automatic_catalogue_promotion": false,
+      "validation_domains_not_started": [
+        "metadata_completion",
+        "official_streams",
+        "programme_guides",
+        "reuse_and_rebroadcast_rights"
+      ]
+    }
+  ],
+  "retrieval_limits": [
+    {
+      "url": "https://www.mha.gov.in/MHA1/Par 2017/LS04082026.html",
+      "method": "primary_search_index_listing_plus_direct404",
+      "finding": "Search index lists Home Ministry Lok Sabha Q 2745,4August 2026; direct page404confirmed by normal fetch. An external transcription identifies all ten, but its text is not relied on to replace the primary legal and council/state evidence. No claim that the official answer PDF was freshly read."
+    },
+    {
+      "url": "https://ttaadc.gov.in/",
+      "method": "direct_web_reader_timeout",
+      "finding": "Own root could not be read by this tool; legal scope supported independently by constitutional grant and auditor record, not by inferring absence."
+    }
+  ],
+  "inventory_reconciliation": {
+    "action": "Add ten eligible special-status institutional rows nested in Assam 3, Meghalaya 3, Tripura 1, Mizoram 3, preserving original scope candidate IDs in a crosswalk.",
+    "counting": "These ten are separate autonomous territorial councils, not ten extra first-level states and not state upper houses. Existing 31Assembly jurisdictions plus six Council chamber children remain distinct grains.",
+    "identity_corrections": [
+      "North Cachar Hills/Dima Hasao is one institution.",
+      "Lai/Pawi and Mara/Lakher are separate.",
+      "Bodoland Territorial Region is territorial naming, not a second council."
+    ],
+    "class_boundary": "This decision covers the ten constitutionally defined Sixth Schedule autonomous territorial institutions. The maintained first-level and autonomous special-status scope excludes ordinary village/municipal bodies, Fifth Schedule advisory representation and routine statutory welfare/development councils; it does not require an exhaustive census of all such below-tier bodies. A newly operative territorial legislature would receive a specific review.",
+    "future_or_proposed_instruments": "Political accords and reported proposals to expand/rename councils are not treated as operative constitutional amendments without enacted instruments.",
+    "new_or_changed_territorial_instruments_screened": "One precise additional 2026 territorial lead was checked: FNTA. Revised September Bill confirmed, final assented/operative instrument not retrieved; record one specific authority-evidence hold separately from the ten resolved Sixth Schedule bodies."
+  },
+  "all_ten_scope_decided": true,
+  "all_current_electoral_activity_certified": false,
+  "ten_named_sixth_schedule_inventory_questions_resolved": true,
+  "additional_precise_territorial_leads": [
+    {
+      "id": "scope-review--india--frontier-nagaland-territorial-authority",
+      "country": "India",
+      "name": "Frontier Nagaland Territorial Authority (FNTA)",
+      "relationship": {
+        "state": "Nagaland",
+        "kind": "proposed_or_new_autonomous_territorial_institution_within_state",
+        "territory_named_in_revised_bill": [
+          "Tuensang",
+          "Mon",
+          "Longleng",
+          "Kiphire",
+          "Noklak",
+          "Shamator"
+        ],
+        "not_a_new_first_level_state": true
+      },
+      "authority_status": "specific_authority_evidence_hold",
+      "original_ten_question": false,
+      "finding": "A concrete revised territorial Bill exists and provides substantive normative powers; institutional eligibility in force cannot be certified from that Bill or political statements. Preserve as one exact statutory-currentness hold, not as an ordinary-village exclusion and not as an eleventh Sixth Schedule council.",
+      "primary_source_ids": [
+        "fnta_revised_bill_2026",
+        "fnta_march_statement",
+        "fnta_september_statement",
+        "nagaland_acts_directory",
+        "nagaland_later_gazette_index"
+      ],
+      "remaining_authority_instrument": [
+        "Final assented Frontier Nagaland Territorial Authority Act, 2026, including the enacted lawmaking clauses after September amendments",
+        "Gazette commencement/constitution notification under the final Act showing which provisions are operative"
+      ],
+      "automatic_catalogue_promotion": false,
+      "evidence_date": "2026-10-24"
+    }
+  ]
+}

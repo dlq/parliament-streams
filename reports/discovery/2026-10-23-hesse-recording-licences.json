@@ -1,0 +1,46 @@
+{
+  "method": "Rendered licence rows/links of the two specific historical recordings; no source-wide licence assumption.",
+  "results": [
+    {
+      "key": "remaining-germany-hesse-1",
+      "body_id": "germany--hesse",
+      "url": "https://www.youtube.com/watch?v=-DN8BOxzd2E",
+      "status": 200,
+      "title": "108. Plenarsitzung - 07.06.2022 - YouTube",
+      "licenseLinks": [
+        {
+          "text": "Creative Commons Attribution licence (reuse allowed)",
+          "url": "https://www.youtube.com/t/creative_commons"
+        }
+      ],
+      "licenseRows": [
+        "Licence",
+        "Creative Commons Attribution licence (reuse allowed)"
+      ],
+      "outcome": "work_specific_license_review"
+    },
+    {
+      "key": "remaining-germany-hesse-2",
+      "body_id": "germany--hesse",
+      "url": "https://www.youtube.com/watch?v=5dWDv1VL-P8",
+      "status": 200,
+      "title": "107. Plenarsitzung - 02.06.2022 - YouTube",
+      "licenseLinks": [
+        {
+          "text": "Creative Commons Attribution licence (reuse allowed)",
+          "url": "https://www.youtube.com/t/creative_commons"
+        }
+      ],
+      "licenseRows": [
+        "Licence",
+        "Creative Commons Attribution licence (reuse allowed)"
+      ],
+      "outcome": "work_specific_license_review"
+    }
+  ],
+  "current_help_followup": {
+    "source": "https://support.google.com/youtube/answer/2797468",
+    "linked_current_license": "https://creativecommons.org/licenses/by/4.0/",
+    "assessment": "Each selected work displays CCAttribution and links to YouTube licence help. Current help points toCCBY4.0; do not infer that the original2022 grant necessarily used that version or that all other Hesse recordings share it. No source-wide media permission change."
+  }
+}

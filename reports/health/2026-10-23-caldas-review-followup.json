@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-23T23:18:17.971333+00:00",
+  "method": "Exact institution, primary provider designation and selected muted archives; not all-service certification",
+  "results": [
+    {
+      "id": "colombia-caldas-assembly-recordings",
+      "status": "ok",
+      "confirmed_scope": "Official assembly website designates its recording provider. Confirmed21October2026 plenary with metropolitan-area director Juan Martín Dussán López speaking at chamber microphone;20October archive contains the Finance Secretariat management/investment presentation at5000seconds. Both selected archives decode in Chromium/WebKit. The20October1200second sample is an institutional video shown during the sitting, not a direct member speech. The separate upload titled22October shows21October on-screen; that exact date is unresolved and is not used as an independently dated third sitting.",
+      "unresolved": [
+        "current_live_and_full_room_inventory_unverified",
+        "audible_quality_and_all_audio_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_unestablished",
+        "upload_titled22October_vs_onscreen21October_unreconciled",
+        "optional_flag_asset_pending_after_commons_http429_neutral_mark_used"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "sejong-operations",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=C8htAMFVhts&t=2400s",
+      "video": true,
+      "offset": 2400,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:59:09.696Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 운영위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 2403.94862,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 438,
+        "tracks": []
+      },
+      "later": {
+        "time": 2406.15548,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 504,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "standby_not_a_substantive_sample",
+      "screenshot": "/tmp/continue-sejong-operations-chromium.png",
+      "visual_review": "Scheduled-start slate at2400seconds, not substantive proceedings."
+    },
+    {
+      "key": "daejeon-plenary-1",
+      "body_id": "south-korea--daejeon",
+      "url": "http://webcast.daejeon.go.kr/caster/player/vodplayer.xdo?uid=2904&startPS=1802",
+      "video": true,
+      "offset": 1802,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:59:24.994Z",
+      "status": 200,
+      "title": "대전광역시의회 인터넷방송 - 제299회 [정례회] 제1차 본회의",
+      "advertisement": false,
+      "first": {
+        "time": 1802,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 1802,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": true,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-daejeon-plenary-1-chromium.png"
+    },
+    {
+      "key": "sejong-operations",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=C8htAMFVhts&t=2400s",
+      "video": true,
+      "offset": 2400,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:59:41.729Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 운영위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 2403.603699229,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 408,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 2405.815557146,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 468,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "standby_not_a_substantive_sample",
+      "screenshot": "/tmp/continue-sejong-operations-webkit.png",
+      "visual_review": "Scheduled-start slate at2400seconds, not substantive proceedings."
+    },
+    {
+      "key": "daejeon-plenary-1",
+      "body_id": "south-korea--daejeon",
+      "url": "http://webcast.daejeon.go.kr/caster/player/vodplayer.xdo?uid=2904&startPS=1802",
+      "video": true,
+      "offset": 1802,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:59:54.276Z",
+      "status": 200,
+      "title": "대전광역시의회 인터넷방송 - 제299회 [정례회] 제1차 본회의",
+      "advertisement": false,
+      "first": {
+        "time": 1802,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 1802,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": true,
+      "outcome": "inspection_error",
+      "screenshot": "/tmp/continue-daejeon-plenary-1-webkit.png",
+      "error": "TimeoutError: page.screenshot: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n"
+    }
+  ]
+}

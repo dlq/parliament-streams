@@ -2,7 +2,7 @@
 // The deployed Pages artifact places its JSON beside this script; local server
 // previews serve the repository's data directory one level above site/.
 const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
-const { message: mapMessage, countrySearchTerms } = window.ParliamentStreamsMapI18n;
+const { message: mapMessage, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
@@ -85,6 +85,56 @@ function renderDailyHero() {
 }
 
 const jurisdictionFlagAssets = {
+  "Buenos Aires Province": "assets/flags/buenos-aires-province.svg",
+  "Catamarca": "assets/flags/catamarca.svg",
+  "Buenos Aires City": "assets/flags/buenos-aires-city.svg",
+  "La Rioja, Argentina": "assets/flags/la-rioja-argentina.svg",
+  "Gyeongsangnam-do": "assets/flags/gyeongsangnam.svg",
+  "Sejong": "assets/flags/sejong.svg",
+  "Busan": "assets/flags/busan.svg",
+  "Chungcheongnam-do": "assets/flags/chungcheongnam.svg",
+  "Jeonbuk State": "assets/flags/jeonbuk.svg",
+  "Daegu": "assets/flags/daegu.svg",
+  "Gyeongsangbuk-do": "assets/flags/gyeongsangbuk.svg",
+  "Incheon": "assets/flags/incheon.svg",
+  "Silesian Voivodeship": "assets/flags/silesian.svg",
+  "Łódź Voivodeship": "assets/flags/lodz.svg",
+  Poland: "assets/flags/pl.svg",
+  Chubut: "assets/flags/chubut.svg",
+  "North Kalimantan": "assets/flags/north-kalimantan.svg",
+  Arauca: "assets/flags/arauca.svg", "Caquetá": "assets/flags/caqueta.svg", Risaralda: "assets/flags/risaralda.svg",
+  Corrientes: "assets/flags/corrientes.svg",
+  "Neuquén": "assets/flags/neuquen.svg",
+  Sicily: "assets/flags/sicily.svg",
+  "West Virginia": "assets/flags/west-virginia.svg",
+  "Slovenia": "assets/flags/si.svg",
+  "Cape Verde": "assets/flags/cv.svg",
+  "Lithuania": "assets/flags/lt.svg",
+  "Malaysia": "assets/flags/my.svg",
+  "Suriname": "assets/flags/sr.svg",
+  "Dominican Republic": "assets/flags/do.svg",
+  "Argentina": "assets/flags/ar.svg",
+  "Namibia": "assets/flags/na.svg",
+  "North Macedonia": "assets/flags/mk.svg",
+  "Ghana": "assets/flags/gh.svg",
+  "Colombia": "assets/flags/co.svg",
+  "Guyana": "assets/flags/gy.svg",
+  "Timor-Leste": "assets/flags/tl.svg",
+  "Jamaica": "assets/flags/jm.svg",
+  "Sri Lanka": "assets/flags/lk.svg",
+  "Panama": "assets/flags/pa.svg",
+  "Croatia": "assets/flags/hr.svg",
+  "Botswana": "assets/flags/bw.svg",
+  "Indonesia": "assets/flags/id.svg",
+  "South Korea": "assets/flags/kr.svg",
+  "Tyrol": "assets/flags/tirol.svg",
+  "Appenzell Ausserrhoden": "assets/flags/appenzell-ausserrhoden.svg",
+  "Wallonia": "assets/flags/wallonia.svg",
+  "Brussels-Capital Region": "assets/flags/brussels.svg",
+  "British Virgin Islands": "assets/flags/vg.svg",
+  "Montserrat": "assets/flags/ms.svg",
+
+  "Cook Islands": "assets/flags/ck.svg", Guernsey: "assets/flags/gg.svg",
   Bermuda: "assets/flags/bm.svg",
   "Cayman Islands": "assets/flags/ky.svg", "Turks and Caicos Islands": "assets/flags/tc.svg",
   Guam: "assets/flags/gu.svg", "Puerto Rico": "assets/flags/pr.svg", Gibraltar: "assets/flags/gi.svg",
@@ -176,6 +226,34 @@ const jurisdictionFlagAssets = {
 };
 
 const jurisdictionCodes = {
+  Serbia: "RS",
+  "United States Virgin Islands": "VI",
+  Montenegro: "ME", "Åland": "AX",
+  Poland: "PL",
+  "Slovenia": "SI",
+  "Cape Verde": "CV",
+  "Lithuania": "LT",
+  "Malaysia": "MY",
+  "Suriname": "SR",
+  "Dominican Republic": "DO",
+  "Argentina": "AR",
+  "Namibia": "NA",
+  "North Macedonia": "MK",
+  "Ghana": "GH",
+  "Colombia": "CO",
+  "Guyana": "GY",
+  "Timor-Leste": "TL",
+  "Jamaica": "JM",
+  "Sri Lanka": "LK",
+  "Panama": "PA",
+  "Croatia": "HR",
+  "Botswana": "BW",
+  "Indonesia": "ID",
+  "South Korea": "KR",
+  "British Virgin Islands": "VG",
+  "Montserrat": "MS",
+
+  "Cook Islands": "CK", Guernsey: "GG",
   Bermuda: "BM",
   "Cayman Islands": "KY", "Turks and Caicos Islands": "TC",
   Guam: "GU", "Puerto Rico": "PR", Gibraltar: "GI",
@@ -317,6 +395,30 @@ const subnationalJurisdictionNames = {
 };
 
 const languageCodes = {
+  Serbian: "sr",
+  Montenegrin: "cnr",
+  "Slovenian": "sl",
+  "Lithuanian": "lt",
+  "Malay": "ms",
+  "Macedonian": "mk",
+  "Albanian": "sq",
+  "Tetum": "tet",
+  "Sinhala": "si",
+  "Tamil": "ta",
+  "Indonesian": "id",
+  "Korean": "ko",
+  "Croatian": "hr",
+  "Setswana": "tn",
+  "Cape Verdean Creole": "kea",
+  "Czech": "cs",
+  "Finnish": "fi",
+  "Swedish": "sv",
+  "Japanese": "ja",
+  "Catalan": "ca",
+  "Valencian": "ca-valencia",
+  "Basque": "eu",
+  "Tahitian": "ty",
+
   Danish: "da", Dutch: "nl", English: "en", Estonian: "et", French: "fr", Gaelic: "gd", German: "de",
   Greek: "el", Hebrew: "he", Hindi: "hi", Inuktitut: "iu", Irish: "ga", Italian: "it",
   Luxembourgish: "lb", Mandarin: "zh", Mongolian: "mn", Norwegian: "no", Portuguese: "pt",
@@ -350,6 +452,8 @@ function jurisdictionName(name) {
     ?? devolvedJurisdictionNames[state.locale]?.[name]
     ?? subnationalJurisdictionNames[state.locale]?.[name];
   if (specialName) return specialName;
+  const sharedName = window.ParliamentStreamsMapI18n?.jurisdictionName(state.locale, name);
+  if (sharedName && sharedName !== name) return sharedName;
   const code = jurisdictionCodes[name];
   if (!code) return name;
   const displayName = new Intl.DisplayNames([state.locale], { type: "region", fallback: "code" }).of(code);
@@ -493,6 +597,7 @@ function sourceNameMarkup(name) { return name.replaceAll(" - ", "<br>"); }
 function languageMarkup(language) {
   const displayNames = new Intl.DisplayNames([state.locale], { type: "language", fallback: "code" });
   return language.split(" / ").map((name) => {
+    if (name === "Unknown") return t("a11yUnknown");
     const code = name === "Multilingual" ? "mul" : languageCodes[name];
     if (!code) return name;
     const displayName = localeLanguageNames[state.locale]?.[code] ?? displayNames.of(code);
@@ -540,9 +645,9 @@ function renderSortHeaders() {
 }
 function optionValues(key) { return [...new Set(state.channels.map((channel) => channel[key]))].sort(); }
 function filteredChannels() {
-  const search = elements.search.value.trim().toLocaleLowerCase();
+  const search = normalizeSearchText(elements.search.value.trim());
   return state.channels.filter((channel) => {
-    const searchable = [channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), countrySearchTerms(state.locale, channel), channel.language].join(" ").toLocaleLowerCase();
+    const searchable = normalizeSearchText([channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), countrySearchTerms(state.locale, channel), channel.language].join(" "));
     return (!search || searchable.includes(search))
       && (!elements.level.value || channel.jurisdiction_level === elements.level.value)
       && (!elements.format.value || channel.source_type === elements.format.value);

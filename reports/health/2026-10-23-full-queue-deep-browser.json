@@ -1,0 +1,1635 @@
+{
+  "checked_at": "2026-10-23T16:01:13.781996+00:00",
+  "scope": "Normal provider recording playback and decoded frames, including timestamps beyond opening slates. NATV on-air continuity separately measured. This does not establish stable HLS exports, all rooms/languages or independent reuse.",
+  "results": [
+    {
+      "id": "slovenia-national-council-webcasts",
+      "status": "ok",
+      "note": "The National Council is the national upper chamber, as separately identified by IPU, with legislative initiative and suspensive-veto functions. The 43rd plenary and a public education/culture committee recording play; it is not a municipal council. National Assembly and TV SLO3 coverage are separate, unvalidated leads.",
+      "samples": [
+        {
+          "key": "slovenia-plenary",
+          "url": "https://www.youtube.com/watch?v=sf3D7Fi3i6E",
+          "title": "43. seja Državnega sveta Republike Slovenije - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.535112,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 20850.021,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.768375,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 20850.021,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "slovenia-committee",
+          "url": "https://www.youtube.com/watch?v=eu8LJ1aBuoo&t=1414s",
+          "title": "14. izredna seja Komisije za izobraževanje, kulturo, znanost, šport in mladino - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1417.555343,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 5658.521,
+              "frames": 145,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1419.788826,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 5658.521,
+              "frames": 212,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cape-verde-national-assembly-antv",
+      "status": "ok",
+      "note": "Official ANTV index embeds plenary recordings from 8 and 9 October 2026 and reports no current live events. Current on-air plenary and committee coverage remain unvalidated.",
+      "samples": [
+        {
+          "key": "capeverde-plenary",
+          "url": "https://www.youtube.com/watch?v=tkCBt14T3Hg",
+          "title": "Sessão Ordinária de 09 de outubro de 2026. - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.556717,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 12347.221,
+              "frames": 110,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.794958,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 12347.221,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "capeverde-second",
+          "url": "https://www.youtube.com/watch?v=lAH_YoxS36w",
+          "title": "Sessão Ordinária de 8 de outubro de 2026. - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.555195,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7728.661,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.786079,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7728.661,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lithuania-seimas-committee-webcasts",
+      "status": "ok",
+      "note": "The official Seimas homepage directly links both sampled 21 October Social Affairs/Labour and Budget/Finance videos on Atviras Seimas 2. The main Atviras Seimas channel also links the overflow channel. This record validates committee archive playback; it does not certify all upcoming events or the main plenary service.",
+      "samples": [
+        {
+          "key": "lithuania-committee",
+          "url": "https://www.youtube.com/watch?v=Gyz3cPlPWiQ",
+          "title": "2026-10-21 Socialinių reikalų ir darbo komiteto posėdis - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.59583,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 9540.061,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.848335,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 9540.061,
+              "frames": 179,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "lithuania-budget",
+          "url": "https://www.youtube.com/watch?v=C1NTzLx3kBE",
+          "title": "2026-10-21 Biudžeto ir finansų komiteto posėdis - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.562776,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 6714.041,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.794238,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 6714.041,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malaysia-parliament-webcasts",
+      "status": "ok",
+      "note": "Official Parliament footer designates this channel. Dewan Rakyat and Kamar Khas recordings labelled 22 October 2026 play beyond their opening slates. Dewan Negara and all public committee channels are not certified by those two samples.",
+      "samples": [
+        {
+          "key": "malaysia-plenary",
+          "url": "https://www.youtube.com/watch?v=Ajh2CpJrMOY&t=4460s",
+          "title": "LANGSUNG: Persidangan Dewan Rakyat | Mesyuarat Ketiga Penggal Kelima | 22 Oktober 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 4463.533628,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 17840.761,
+              "frames": 239,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 4465.767614,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 17840.761,
+              "frames": 306,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "malaysia-specialchamber",
+          "url": "https://www.youtube.com/watch?v=kFzJv9Udsfg&t=854s",
+          "title": "LANGSUNG: Sesi Kamar Khas | Mesyuarat Ketiga Penggal Kelima | 22 Oktober 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 857.534542,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 3418.081,
+              "frames": 170,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 859.769244,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 3418.081,
+              "frames": 237,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suriname-national-assembly-webcasts",
+      "status": "ok",
+      "note": "Official DNA site designates its channel. A 22 October 2026 public sitting plays beyond the slate. A second same-day sample still shows a holding graphic at the sampled timestamp, so it is not evidence of active chamber business.",
+      "samples": [
+        {
+          "key": "suriname-second",
+          "url": "https://www.youtube.com/watch?v=OSH_TvR1eVI&t=2133s",
+          "title": "22 OKTOBER 2026 - OPENBARE VERGADERING VAN DE NATIONALE ASSEMBLEE - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 2136.56619,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8534.961,
+              "frames": 204,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 2138.797466,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8534.961,
+              "frames": 271,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dominican-republic-deputies-webcasts",
+      "status": "ok",
+      "note": "The official Chamber links the channel and plenary playlists. Sessions 15 and 16, labelled 20 and 21 October 2026, play. The footer terms-of-use destination returned 404; no independent reuse permission is assumed. Senate coverage remains separate.",
+      "samples": [
+        {
+          "key": "dominican-plenary",
+          "url": "https://www.youtube.com/watch?v=VUvLb_lzfBM",
+          "title": "EN VIVO | Segunda Legislatura Ordinaria 2026, Sesión Ordinaria No.016 miercoles 21 de octubre. 2026. - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.53932,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 11114.501,
+              "frames": 110,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.770555,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 11114.501,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "dominican-second",
+          "url": "https://www.youtube.com/watch?v=jHtZm5GSjSI",
+          "title": "EN VIVO | Segunda Legislatura Ordinaria 2026, Sesión Ordinaria No.015 martes 20 de octubre. 2026. - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.54144,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 10210.041,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.769877,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 10210.041,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "argentina-chamber-deputies-webcasts",
+      "status": "ok",
+      "note": "Institution-linked channel: 21 October special plenary and 20 October Energy/Fuels Committee proceedings play. Senado TV is a separate upper-chamber lead.",
+      "samples": [
+        {
+          "key": "argentina-plenary",
+          "url": "https://www.youtube.com/watch?v=Vh43cjQB9yY",
+          "title": "🇦🇷 SESIÓN ESPECIAL: 21 de octubre de 2026 - Diputados Argentina - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.561395,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 42895.581,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.789926,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 42895.581,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "argentina-committee",
+          "url": "https://www.youtube.com/watch?v=gw04-6Eujgo",
+          "title": "COMISIÓN: ENERGÍA Y COMBUSTIBLES - 20-10-2026 - INFORMATIVA: Biocombustibles - Diputados - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.563787,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 9517.781,
+              "frames": 112,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.798277,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 9517.781,
+              "frames": 179,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "namibia-parliament-webcasts",
+      "status": "ok",
+      "note": "Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated.",
+      "samples": [
+        {
+          "key": "namibia-plenary",
+          "url": "https://www.youtube.com/watch?v=GmnjJDCHaLo&t=2132s",
+          "title": "22 OCTOBER 2026, FOURTH SESSION, EIGHTH PARLIAMENT, NATIONAL ASSEMBLY - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 2135.550633,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8528.781,
+              "frames": 210,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 2137.785301,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8528.781,
+              "frames": 277,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "namibia-second",
+          "url": "https://www.youtube.com/watch?v=JWlkaTZl9V4",
+          "title": "21 OCTOBER 2026, FOURTH SESSION, EIGHTH PARLIAMENT, NATIONAL ASSEMBLY - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.600336,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 9434.881,
+              "frames": 112,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.833081,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 9434.881,
+              "frames": 179,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "north-macedonia-assembly-webcasts",
+      "status": "ok",
+      "note": "Official Assembly channel: 19 October plenary and 22 October Finance/Budget Committee proceedings play beyond the initial room/slate footage. Not every language track or room is validated.",
+      "samples": [
+        {
+          "key": "northmacedonia-plenary",
+          "url": "https://www.youtube.com/watch?v=g3vd4_-qH-s&t=915s",
+          "title": "Седница бр. 126,125,121 на Собрание на Р. Северна Македонија 19.10.2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 918.561337,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 3663.361,
+              "frames": 221,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 920.793024,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 3663.361,
+              "frames": 288,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "northmacedonia-committee",
+          "url": "https://www.youtube.com/watch?v=JkZpWvacjxk&t=2287s",
+          "title": "Седница бр. 81 на Комисија за финансирање и буџет - Сала „Борис Трајковски“ 22.10.2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 2290.535717,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9150.401,
+              "frames": 129,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 2292.765826,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9150.401,
+              "frames": 196,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghana-parliament-committee-webcasts",
+      "status": "ok",
+      "note": "The official Parliament Watch links designate this channel. Public Accounts Committee recordings labelled 19 and 20 October 2026 play. Homepage lists the next plenary meeting from 3 November; current plenary on-air coverage is not claimed.",
+      "samples": [
+        {
+          "key": "ghana-accounts",
+          "url": "https://www.youtube.com/watch?v=TPC_szRE-oY&t=3299s",
+          "title": "Public Accounts Committee - Tuesday, 20th October, 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3302.536805,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 13199.561,
+              "frames": 210,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 3304.768053,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 13199.561,
+              "frames": 276,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "ghana-accounts-second",
+          "url": "https://www.youtube.com/watch?v=Ro_eIiRNLhA",
+          "title": "Public Accounts Committee - Monday, 19th October, 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.53239,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14203.641,
+              "frames": 110,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.763057,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14203.641,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colombia-house-representatives-webcasts",
+      "status": "ok",
+      "note": "The official Chamber links its provider channel. Plenary proceedings labelled 19 and 20 October 2026 play. Canal Congreso and concurrent public-hearing services are separate leads.",
+      "samples": [
+        {
+          "key": "colombia-plenary",
+          "url": "https://www.youtube.com/watch?v=nu38CaRDtQg",
+          "title": "Plenaria Cámara de Representantes: Proyectos de Ley - 20/10/2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.537226,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 12940.021,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.775268,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 12940.021,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "colombia-second",
+          "url": "https://www.youtube.com/watch?v=0Ox_1QBXBpg",
+          "title": "Plenaria Cámara de Representantes: Proyectos de Ley - 19/10/2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.536114,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 12844.801,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.766787,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 12844.801,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guyana-national-assembly-webcasts",
+      "status": "ok",
+      "note": "The official Parliament site designates this channel. The fifth sitting of the thirteenth Parliament, labelled 2026, plays beyond its black opening. Youth debating competitions in the same listing are not counted as legislative sittings. Footer copyright/disclaimer links lead to committee-business content rather than a usable media licence.",
+      "samples": [
+        {
+          "key": "guyana-plenary",
+          "url": "https://www.youtube.com/watch?v=msHBIYaq7yE&t=3169s",
+          "title": "5TH SITTING - THIRTEENTH PARLIAMENT 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3172.556078,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 12676.421,
+              "frames": 249,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 3174.787654,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 12676.421,
+              "frames": 316,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timor-leste-national-parliament-archive",
+      "status": "ok",
+      "note": "Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation.",
+      "samples": [
+        {
+          "key": "timorleste-plenary",
+          "url": "https://www.youtube.com/watch?v=0TctzsdCK3I",
+          "title": "WEDNESDAY PLENARY SESSION - JULY 15, 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.530469,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 1120.121,
+              "frames": 110,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.760141,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 1120.121,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "timorleste-second",
+          "url": "https://www.youtube.com/watch?v=EK6O79PgZwI&t=3588s",
+          "title": "REUNIÃO PLENARIA DE SEGUNDA-FEIRA DIA 15 DE JUNHO DE 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3591.589688,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14352.161,
+              "frames": 147,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 3593.82164,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14352.161,
+              "frames": 214,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brazil-tv-senado-official",
+      "status": "ok",
+      "note": "Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.",
+      "samples": [
+        {
+          "key": "brazil-senate-live",
+          "url": "https://www.youtube.com/watch?v=Epq2lI0jW-o",
+          "title": "Ao vivo - TV Senado - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 16199.227065,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 19795.7,
+              "frames": 112,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 16201.458,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 19795.7,
+              "frames": 179,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "brazil-senate-recording",
+          "url": "https://www.youtube.com/watch?v=LO7Z1PeRgr4",
+          "title": "Ao vivo - TV Senado - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.5121,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 25576.361,
+              "frames": 110,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.741976,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 25576.361,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jamaica-parliament-pbcj-recordings",
+      "status": "ok",
+      "note": "The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles.",
+      "samples": [
+        {
+          "key": "jamaica-accounts",
+          "url": "https://www.youtube.com/watch?v=R1FlmNjlkjs&t=1800s",
+          "title": "Public Accounts Committee - October 20, 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.545739,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8609.841,
+              "frames": 119,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.778439,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 8609.841,
+              "frames": 186,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "jamaica-domesticviolence",
+          "url": "https://www.youtube.com/watch?v=wHOIYfWH3ps&t=1800s",
+          "title": "Joint Select Committee appointed to review the Domestic Violence Act || October 22, 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.545145,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7591.361,
+              "frames": 221,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.784411,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7591.361,
+              "frames": 288,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sri-lanka-parliament-recordings",
+      "status": "ok",
+      "note": "Official house and committee archive navigation identifies 23 October 2026 House and 21 October Public Enterprises Committee clips. Both decode and advance (initial quality 238x134). Live routes, all archive segments and all language tracks remain unvalidated.",
+      "samples": [
+        {
+          "key": "srilanka-house-clip",
+          "url": "https://www.parliament.lk/en/parliament-live/chamber-on-demand/video/1432/19268",
+          "title": "Parliament of Sri Lanka - Proceedings of the House (2026-10-23)",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3.349635,
+              "width": 238,
+              "height": 134,
+              "ready": 4,
+              "duration": 468.138,
+              "frames": 88,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5.577478,
+              "width": 238,
+              "height": 134,
+              "ready": 4,
+              "duration": 468.138,
+              "frames": 143,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "srilanka-committee-clip",
+          "url": "https://www.parliament.lk/en/parliament-live/committee-on-demand/video/542/2319",
+          "title": "Parliament of Sri Lanka - Committee on Public Enterprises (2026-10-21)",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1.962228,
+              "width": 238,
+              "height": 134,
+              "ready": 4,
+              "duration": 3340.949,
+              "frames": 53,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 4.196462,
+              "width": 238,
+              "height": 134,
+              "ready": 4,
+              "duration": 3340.949,
+              "frames": 109,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panama-national-assembly-committee-webcasts",
+      "status": "ok",
+      "note": "An official Assembly article/footer explicitly links this provider through its public click-out URL. Budget and Labour/Health/Social Development Committee recordings play at 20 minutes. No current plenary or standing TVL feed is claimed. The IPU profile failed to fetch; identity uses the verified Wikidata legislature and institutional provider chain, with a separate PA country-code mapping.",
+      "samples": [
+        {
+          "key": "panama-budget",
+          "url": "https://www.youtube.com/watch?v=P3F_z1avhFA&t=1200s",
+          "title": "COMISION DE PRESUPUESTO - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.539453,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 5525.021,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.774803,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 5525.021,
+              "frames": 177,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "panama-labor",
+          "url": "https://www.youtube.com/watch?v=nA9N_iyvzpc&t=1200s",
+          "title": "COMMITTEE ON LABOR, HEALTH AND SOCIAL DEVELOPMENT - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.566343,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 6790.181,
+              "frames": 112,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.802226,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 6790.181,
+              "frames": 179,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "croatia-parliament-committee-webcasts",
+      "status": "ok",
+      "note": "The official notice for the Information/Informatization/Media Committee 25th meeting on 22 September 2026 links the sampled recording. Its normal watch page identifies the Saborska TV - odbori channel. Recording plays at 20 minutes. Plenary broadcast and other committee rooms remain unvalidated.",
+      "samples": [
+        {
+          "key": "croatia-committee",
+          "url": "https://www.youtube.com/watch?v=aW9NaVT0_Xo&t=1200s",
+          "title": "25. sjednica Odbora za informiranje, informatizaciju i medije - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.535653,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 5945.041,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.772523,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 5945.041,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "botswana-national-assembly-webcasts",
+      "status": "ok",
+      "note": "The official Watch-Live page explicitly designates @BWPARLIAMENT. Legislative sittings labelled 20 and 21 August 2026 play at 20 minutes. Ntlo ya Dikgosi advisory meetings appear in the same channel but are not independently promoted as a law-making chamber.",
+      "samples": [
+        {
+          "key": "botswana-assembly",
+          "url": "https://www.youtube.com/watch?v=M8AxZYghfSI&t=1200s",
+          "title": "3RD MEETING OF THE 2ND SESSION OF THE 13TH PARLIAMENT - LEGISLATIVE MEETING 21/08/26 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.567004,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 15093.681,
+              "frames": 154,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.813895,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 15093.681,
+              "frames": 221,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "botswana-assembly-second",
+          "url": "https://www.youtube.com/watch?v=GfZ5_neCzGQ&t=1200s",
+          "title": "3RD MEETING OF THE 2ND SESSION OF THE 13TH PARLIAMENT - LEGISLATIVE MEETING 20/08/26 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.558235,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 22540.241,
+              "frames": 195,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.792038,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 22540.241,
+              "frames": 262,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indonesia-dpr-committee-video-archive",
+      "status": "ok",
+      "note": "Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots.",
+      "samples": [
+        {
+          "key": "indonesia-budget-watch",
+          "url": "https://www.youtube.com/watch?v=qkww_GtUBhc&t=120s",
+          "title": "BANGGAR DPR RI RAKER DENGAN PARA MENKO KABINET MERAH PUTIH - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 123.539946,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 655.001,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 125.783725,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 655.001,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "indonesia-budget-second-watch",
+          "url": "https://www.youtube.com/watch?v=LIzpB6CAaiI&t=1200s",
+          "title": "BANGGAR DPR RI RDPU DENGAN WAKETUM KADIN INDONESIA & KEPALA EKONOM BANK MANDIRI - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.544588,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 8840.021,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.785821,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 8840.021,
+              "frames": 178,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-korea-natv-onair",
+      "status": "ok",
+      "note": "Official internet proceedings portal links NATV. The on-air player advances for more than 20 seconds, with a growing live MediaSource duration. Sampled output shows committee/audit coverage labelled 10.22; broadcaster on-air output is not proof of a currently live sitting or every committee stream.",
+      "samples": [
+        {
+          "key": "korea-natv-onair",
+          "url": "https://www.natv.go.kr/natv/onair.do",
+          "title": "National Assembly Television on-air",
+          "status": 200,
+          "first": [
+            {
+              "time": 3.851144,
+              "duration": 10.001,
+              "ready": 4,
+              "width": 854,
+              "height": 480,
+              "frames": 62,
+              "source_kind": "MediaSource",
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "time": 23.861287,
+              "duration": 30.020157,
+              "ready": 4,
+              "width": 854,
+              "height": 480,
+              "frames": 662,
+              "source_kind": "MediaSource",
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "austria-tirol-landtag-webcasts",
+      "status": "ok",
+      "note": "Official live page links the Landtag channel. Morning and afternoon of 1 October 2026 play at quarter-length timestamps. Both sampled videos visibly include a sign-language interpretation inset; its language and service-wide coverage remain unreviewed.",
+      "samples": [
+        {
+          "key": "tirol-morning",
+          "url": "https://www.youtube.com/watch?v=ETW0ulOe4K8&t=3630s",
+          "title": "01.10.2026 | 31. Landtagssitzung - Vormittag - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3633.536089,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14520.401,
+              "frames": 258,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 3635.790124,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14520.401,
+              "frames": 325,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "tirol-afternoon",
+          "url": "https://www.youtube.com/watch?v=IQB9Brvovdo&t=5477s",
+          "title": "01.10.2026 | 31. Landtagssitzung - Nachmittag - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 5480.574512,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 21910.721,
+              "frames": 165,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 5482.805107,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 21910.721,
+              "frames": 232,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switzerland-appenzell-ausserrhoden-kantonsrat-archive",
+      "status": "ok",
+      "note": "Official cantonal Parliament page directly links the sampled channel. Sittings of 24 August and 15 June 2026 play beyond holding graphics. A newly published constitution is dated effective 1 January 2027 and was not treated as current law; a retrieved older consolidation was dated 2000 and was not claimed current either.",
+      "samples": [
+        {
+          "key": "appenzell-august",
+          "url": "https://www.youtube.com/watch?v=kDN08VzhI2U&t=7021s",
+          "title": "Kantonsratssitzung vom 24. August 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 7024.542195,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 28085.041,
+              "frames": 141,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 7026.776194,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 28085.041,
+              "frames": 208,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "appenzell-june",
+          "url": "https://www.youtube.com/watch?v=5TKAIs4_zZw&t=3697s",
+          "title": "Kantonsratssitzung vom 15. Juni 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 3700.49597,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14790.081,
+              "frames": 167,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 3702.726258,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14790.081,
+              "frames": 234,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belgium-wallonia-parliament-webcasts",
+      "status": "ok",
+      "note": "Institution-linked channel: 14 October 2026 plenary and committee recordings play beyond opening graphics. Official terms expressly allow links and reproduction of parliamentary debates/recordings with source acknowledgement and context integrity; framing website pages needs permission.",
+      "samples": [
+        {
+          "key": "wallonia-plenary",
+          "url": "https://www.youtube.com/watch?v=YZ7D5g9zkL0&t=6267s",
+          "title": "Séance plénière du 14/10/2026 à 14:00 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 6270.541518,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 25070.361,
+              "frames": 167,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 6272.773769,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 25070.361,
+              "frames": 234,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "wallonia-committee",
+          "url": "https://www.youtube.com/watch?v=rrand_dHFWc&t=1841s",
+          "title": "Réunion de commission du 14/10/2026 à 9:30 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1844.5319,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7365.041,
+              "frames": 141,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1846.763075,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7365.041,
+              "frames": 208,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belgium-brussels-parliament-committee-webcasts",
+      "status": "ok",
+      "note": "Official site explicitly links its proceedings channel. Environment and Economic Affairs Committee recordings labelled 21 October 2026 play beyond the empty-room opening. Other chambers/rooms and Common Community Commission proceedings remain separately unvalidated.",
+      "samples": [
+        {
+          "key": "brussels-environment",
+          "url": "https://www.youtube.com/watch?v=uw-BZ-t5tEs&t=2735s",
+          "title": "21/10/2026 - Commission Environnement - Commissie Leefmilieu - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 2738.556424,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 10940.166666666666,
+              "frames": 257,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 2740.888838,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 10940.166666666666,
+              "frames": 326,
+              "tracks": []
+            }
+          ]
+        },
+        {
+          "key": "brussels-economy",
+          "url": "https://www.youtube.com/watch?v=qr_bo9Rl34o&t=2319s",
+          "title": "21/10/2026 - Commission Aff. économiques - Commissie Economische zaken - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 2322.541805,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9276.301,
+              "frames": 193,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 2324.773906,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9276.301,
+              "frames": 260,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "british-virgin-islands-house-assembly-webcasts",
+      "status": "ok",
+      "note": "Official House website links the channel and identifies its legislative role. A fifth-sitting/third-session/fifth-House continuation plays beyond its recess slate. Another sampled continuation remains in recess at the chosen timestamp. The government overview has a conflicting membership summary; use the constitutional text for powers and do not repeat those membership figures.",
+      "samples": [
+        {
+          "key": "bvi-sitting",
+          "url": "https://www.youtube.com/watch?v=fJyYb2n3wKE&t=7337s",
+          "title": "CONTINUATION OF THE FIFTH SITTING OF THE THIRD SESSION OF THE FIFTH HOUSE OF ASSEMBLY - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 7340.557572,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 29348.161,
+              "frames": 171,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 7342.787241,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 29348.161,
+              "frames": 238,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "montserrat-legislative-assembly-webcasts",
+      "status": "ok",
+      "note": "The official site explicitly designates its channel. Meeting 18 of the 18th Parliament, Part 3, plays beyond the opening graphic and shows chamber debate. Part 2 opens in an empty room at the sampled time. Footer terms/privacy links point to a fintech website-template vendor; they are not treated as institutional media permissions.",
+      "samples": [
+        {
+          "key": "montserrat-sitting",
+          "url": "https://www.youtube.com/watch?v=aZrhu9gCpTY&t=1969s",
+          "title": "Meeting No. 18 of the 18th Parliament of Montserrat Part 3 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1972.557035,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7879.901,
+              "frames": 145,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1974.789106,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 7879.901,
+              "frames": 212,
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

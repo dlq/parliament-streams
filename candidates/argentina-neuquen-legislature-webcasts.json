@@ -1,0 +1,70 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Argentine provincial legislature with substantive provincial legislation under Constitution Articles121–123. Legislature identity Q41144338 matches the official provincial institution, not a municipal deliberative council.",
+    "Official provenance and proceedings: The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed.",
+    "Source conditions: Institutional/provider pages establish public viewing but no independent audiovisual reuse permission was found. Retain the official link-out; provider manifest extraction, embedding and redistribution are not enabled.",
+    "Evidence: reports/discovery/2026-10-23-validation-second-pass.json",
+    "Added as official link-out; regional flag, parent-country search, map and planned event/recording-index links reconciled."
+  ],
+  "channel": {
+    "id": "argentina-neuquen-legislature-webcasts",
+    "name": "Neuquén Legislature Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Neuquén",
+    "legislature": "Honorable Legislatura de la Provincia del Neuquén",
+    "external_ids": {
+      "wikidata_qid": "Q41144338",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q41144338",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Matched legislature Q41144338 revision 2488333218 against the official institution and its designated viewing service. Geographic-entity IDs are not substituted for legislative bodies."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/user/prensalegislaturanqn/streams",
+    "provenance_note": "The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed. A sign-language interpreter is visible in the 21 October Neuquén sample; language and complete coverage remain unreviewed."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://legislaturaneuquen.gob.ar/Agenda.aspx?mes=10&anio=2026",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Institutional/provider pages establish public viewing but no independent audiovisual reuse permission was found. Retain the official link-out; provider manifest extraction, embedding and redistribution are not enabled.",
+      "evidence": [
+        "https://legislaturaneuquen.gob.ar/EnVivo",
+        "https://legislaturaneuquen.gob.ar/"
+      ],
+      "recommendation": "Open the official viewing service. Independent playback/reuse, current live room coverage and an implemented XMLTV parser remain separate checks."
+    }
+  }
+}

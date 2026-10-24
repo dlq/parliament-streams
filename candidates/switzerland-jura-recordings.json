@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution currently designates the viewing provider. 2 September 2026 chair introducing first-reading conciliation legislation, under the Jura parliamentary identity. 1 July 2026 chair handling third-reading political-rights and party-finance transparency legislation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "Public official-institution designation establishes viewing, not a blanket independent audiovisual reuse grant. The Glarus provider privacy link returned404 and does not establish video permissions; Jura supplied speech text is not a media licence. Personal-use permission remains pending; no rehosting, provider embed or IPTV export. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+    "Evidence: reports/discovery/2026-10-24-glarus-jura-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "switzerland-jura-recordings",
+    "name": "Jura Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Jura",
+    "legislature": "Parlement de la République et Canton du Jura",
+    "external_ids": {
+      "wikidata_qid": "Q2391710",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2391710",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Exact named legislature, Switzerland P17Q39 and matching canton jurisdiction claims corroborated with the current primary institutional page and explicitly designated archive. Entity revision 2384538399. Claims and current primary crosscheck: reports/discovery/2026-10-24-complete-candidate-claim-fetch.json.  Current retained item revision 2384538399; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+      }
+    ],
+    "language": "French",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://ju.recapp.ch/",
+    "provenance_note": "Official institution currently designates the viewing provider. 2 September 2026 chair introducing first-reading conciliation legislation, under the Jura parliamentary identity. 1 July 2026 chair handling third-reading political-rights and party-finance transparency legislation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://ju.recapp.ch/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Public official-institution designation establishes viewing, not a blanket independent audiovisual reuse grant. The Glarus provider privacy link returned404 and does not establish video permissions; Jura supplied speech text is not a media licence. Personal-use permission remains pending; no rehosting, provider embed or IPTV export. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "evidence": [
+        "https://www.jura.ch/PLT/",
+        "https://ju.recapp.ch/"
+      ],
+      "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+    }
+  }
+}

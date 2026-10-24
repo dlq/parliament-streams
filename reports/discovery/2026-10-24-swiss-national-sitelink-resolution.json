@@ -1,0 +1,2978 @@
+{
+  "checked_at": "2026-10-24T04:38:40.617164+00:00",
+  "scope": "Exact-title sitelink resolution hypotheses through the same cached Wikidata API, not an alternate endpoint or legal authority proof. Missing titles are not proof of absent institution items; returned claims still require primary crosscheck.",
+  "jobs": {
+    "switzerland--aargau": [
+      "Grand Council of Aargau"
+    ],
+    "switzerland--appenzell-innerrhoden": [
+      "Grand Council of Appenzell Innerrhoden"
+    ],
+    "switzerland--basel-landschaft": [
+      "Landrat of Basel-Landschaft"
+    ],
+    "switzerland--basel-stadt": [
+      "Grand Council of Basel-Stadt",
+      "Grand Council of Basel-City"
+    ],
+    "switzerland--geneve-genf": [
+      "Grand Council of Geneva"
+    ],
+    "switzerland--graubunden": [
+      "Grand Council of Grisons",
+      "Grand Council of Graubünden"
+    ],
+    "switzerland--neuchatel-neuenburg": [
+      "Grand Council of Neuchâtel"
+    ],
+    "switzerland--nidwalden": [
+      "Landrat of Nidwalden",
+      "Cantonal Council of Nidwalden"
+    ],
+    "switzerland--schaffhausen": [
+      "Cantonal Council of Schaffhausen"
+    ],
+    "switzerland--solothurn": [
+      "Cantonal Council of Solothurn"
+    ],
+    "switzerland--thurgau": [
+      "Grand Council of Thurgau"
+    ],
+    "switzerland--ticino-tessin": [
+      "Grand Council of Ticino"
+    ],
+    "switzerland--uri": [
+      "Landrat of Uri"
+    ],
+    "national:Serbia": [
+      "National Assembly (Serbia)",
+      "National Assembly of Serbia"
+    ],
+    "national:Bulgaria": [
+      "National Assembly (Bulgaria)",
+      "National Assembly of Bulgaria"
+    ]
+  },
+  "request_url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&maxlag=5&props=info%7Clabels%7Cdescriptions%7Cclaims&sites=enwiki&titles=Grand+Council+of+Aargau%7CGrand+Council+of+Appenzell+Innerrhoden%7CLandrat+of+Basel-Landschaft%7CGrand+Council+of+Basel-Stadt%7CGrand+Council+of+Basel-City%7CGrand+Council+of+Geneva%7CGrand+Council+of+Grisons%7CGrand+Council+of+Graub%C3%BCnden%7CGrand+Council+of+Neuch%C3%A2tel%7CLandrat+of+Nidwalden%7CCantonal+Council+of+Nidwalden%7CCantonal+Council+of+Schaffhausen%7CCantonal+Council+of+Solothurn%7CGrand+Council+of+Thurgau%7CGrand+Council+of+Ticino%7CLandrat+of+Uri%7CNational+Assembly+%28Serbia%29%7CNational+Assembly+of+Serbia%7CNational+Assembly+%28Bulgaria%29%7CNational+Assembly+of+Bulgaria",
+  "cache_hit": false,
+  "outcome": "sitelink_candidates_require_primary_crosscheck",
+  "normalized": null,
+  "entities": {
+    "-1": {
+      "qid": "-1",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-2": {
+      "qid": "-2",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-3": {
+      "qid": "-3",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-4": {
+      "qid": "-4",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-5": {
+      "qid": "-5",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-6": {
+      "qid": "-6",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-7": {
+      "qid": "-7",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "-8": {
+      "qid": "-8",
+      "missing": true,
+      "revision": null,
+      "labels": {},
+      "descriptions": {},
+      "sitelinks": {},
+      "claims": {
+        "P31": [],
+        "P17": [],
+        "P1001": [],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q664357": {
+      "qid": "Q664357",
+      "missing": false,
+      "revision": 2502688911,
+      "labels": {
+        "gsw": {
+          "language": "gsw",
+          "value": "Grosser Rot vom Kanton Aargau"
+        },
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Kantons Aargau"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Aargau"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Grote Raad van Aargau"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Большой совет Аргау"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Gran Consell d'Argòvia"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du canton d'Argovie"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio del Canton Argovia"
+        },
+        "es": {
+          "language": "es",
+          "value": "Gran Consejo de Argovia"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "Marele Consiliu al Argoviei"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Aargau, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Parlament des Kantons Aargau"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "парлаент швейцарского кантона Аргау"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal d'Argovie"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento del Canton Argovia"
+        },
+        "es": {
+          "language": "es",
+          "value": "Parlamento del cantón de Argovia, Suiza"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "parlament cantonal din Elveția"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q664357$5ba29f10-4664-2d98-4c92-eeb05aed64e9",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q664357$91993105-D6A8-4706-886D-35980D427516",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q664357$0C33852D-DC0F-4AA3-BEB5-5BB2D98101D0",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "73ac0eb929269166930c3be9258bb7e800ba803e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11972,
+                  "id": "Q11972"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q664357$c47dc5d1-47b2-0ad6-6fb4-db0a2c205711",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "90d6b179f8c35dc4cbeb0a35d5fae441987b4028",
+              "datavalue": {
+                "value": "https://www.ag.ch/grossrat/grweb/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q664357$a70a7f41-4595-e41f-6cac-edbf420e622b",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q1547522": {
+      "qid": "Q1547522",
+      "missing": false,
+      "revision": 2542662922,
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Kantons Appenzell Innerrhoden"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Appenzell Innerrhoden"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du canton d'Appenzell Rhodes-Intérieures"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio del Canton Appenzello Interno"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Veliki svet Kantona Appenzell Innerrhoden"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "cantonal parliament"
+        },
+        "de": {
+          "language": "de",
+          "value": "Kantonsparlament in Appenzell Innerrhoden"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal d'Appenzell Rhodes-Intérieures"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento cantonale svizzero"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "kantonalni parlament Appenzell Innerrhoden"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547522$81263f6a-4653-bfc0-8e32-cdb0d9508992",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7a7ba6db36296df97223b5da870f72210cb32091",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 113032545,
+                  "id": "Q113032545"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547522$6c12b7a9-4f88-5bd6-c1d2-a8cb98b22d41",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547522$cd883a54-428f-3fe9-b209-ebab02f8ed20",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "ce510e171fa5ef779bbfe0641b321f39dc6ebd6c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12094,
+                  "id": "Q12094"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547522$4e995d00-42e8-bd37-d729-97425c53d2ea",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "6ab4d75c2f0a0d67d2e6c4fb717327b01d2dd5aa",
+              "datavalue": {
+                "value": "https://www.ai.ch/politik/grosser-rat",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q1547522$37020a15-4e9d-7194-8c1e-93988d8a83a7",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q670958": {
+      "qid": "Q670958",
+      "missing": false,
+      "revision": 2550079023,
+      "labels": {
+        "gsw": {
+          "language": "gsw",
+          "value": "Dr Basler Groossi Root"
+        },
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Kantons Basel-Stadt"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du canton de Bâle-Ville"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Basel-Stadt"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Grote Raad van Bazel-Stad"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "Granda Konsilio de Bazel-Urbo"
+        },
+        "he": {
+          "language": "he",
+          "value": "המועצה העליונה של בזל-שטאדט"
+        }
+      },
+      "descriptions": {
+        "de": {
+          "language": "de",
+          "value": "Parlament des Kantons Basel-Stadt, Schweiz"
+        },
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Basel-Stadt, Switzerland"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Bâle-Ville"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q670958$54513d3b-4239-24f5-2252-cc7ba57734eb",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7a7ba6db36296df97223b5da870f72210cb32091",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 113032545,
+                  "id": "Q113032545"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q670958$e399507a-41d9-30d6-2317-ff51c849859c",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "ad2148f0d22df065faa9592d3d4a83de7c69bf49",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "c17f8e1239dcdc9647588373bdad0f35284a6e7e",
+                      "datavalue": {
+                        "value": "https://www.bs.ch/",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q670958$55dc187b-44b3-f1c9-926c-81e7a6b66f11",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q670958$F8A8066A-14E9-49F3-9BF0-12F3BD844ADD",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "efa4aeb142322bdab4616bc56305fafd6c902136",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12172,
+                  "id": "Q12172"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q670958$0396a831-46ef-04c1-9c06-ea480f5da720",
+            "rank": "normal"
+          }
+        ],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q509892": {
+      "qid": "Q509892",
+      "missing": false,
+      "revision": 2550004911,
+      "labels": {
+        "nl": {
+          "language": "nl",
+          "value": "Grote Raad van Genève"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Geneva"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand conseil du canton de Genève"
+        },
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Kantons Genf"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio del Canton Ginevra"
+        },
+        "az": {
+          "language": "az",
+          "value": "Cenevrə Böyük Şurası"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Gran Consell del cantó de Ginebra"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "legislature of the canton of Geneva, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Kantonsparlament von Genf"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Genève"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento del Canton Ginevra, Svizzera"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q509892$577e02b3-4382-dc9d-bf41-9bf8bd536769",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q509892$6BF2E85B-0E39-40F4-BB00-58F7B8A65A63",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "868e460199b069cf5ca1205a7eaa6b046f23169f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11917,
+                  "id": "Q11917"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q509892$9c84b56c-4056-2740-a08e-c7c5935507f8",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "68010aab24c465ba4e9157c2d1207fe299ca2297",
+              "datavalue": {
+                "value": "https://ge.ch/grandconseil/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "d197d0a5efa4b4c23a302a829dd3ef43684fe002",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 150,
+                      "id": "Q150"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q509892$53fd4408-4a8f-7a36-5a50-397226dfabc5",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q1843380": {
+      "qid": "Q1843380",
+      "missing": false,
+      "revision": 2467047830,
+      "labels": {
+        "nl": {
+          "language": "nl",
+          "value": "Grote Raad van Graubünden"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Grisons"
+        },
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Kantons Graubünden"
+        },
+        "rm": {
+          "language": "rm",
+          "value": "Cussegl grond dal chantun Grischun"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio del Cantone dei Grigioni"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du canton des Grisons"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Gran Consell dels Grisons"
+        }
+      },
+      "descriptions": {
+        "de": {
+          "language": "de",
+          "value": "Kantonales Parlament im Kanton Graubünden"
+        },
+        "en": {
+          "language": "en",
+          "value": "cantonal parliament of the canton of Grisons (Switzerland)"
+        },
+        "rm": {
+          "language": "rm",
+          "value": "parlament chantunal dal chantun Grischun"
+        },
+        "it": {
+          "language": "it",
+          "value": "autorità legislativa del Cantone dei Grigioni"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal des Grisons"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q1843380$533c1a69-40cc-5aeb-6459-3aca0e95fa3f",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1843380$F370182D-A40C-4B7E-84B5-2D99F4D4CA5D",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7a7ba6db36296df97223b5da870f72210cb32091",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 113032545,
+                  "id": "Q113032545"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1843380$2a3ad7a9-4b8d-a7e8-f018-ff363beb6eb7",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q1843380$286fb960-4549-ea83-2b34-82606ae0ca51",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "49d3b011cf125c87df1a16aeccc18a718cde11b8",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11925,
+                  "id": "Q11925"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1843380$68d0ec81-412e-11e6-4674-8b3df8b27a22",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "81376feeff648543939e38fad22ae3b5bdb5e57b",
+              "datavalue": {
+                "value": "https://www.gr.ch/DE/institutionen/parlament/Seiten/GrosserRat.aspx",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q1843380$c932b23a-41de-a51d-5966-4e73f298eff9",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q2529663": {
+      "qid": "Q2529663",
+      "missing": false,
+      "revision": 2384537498,
+      "labels": {
+        "nl": {
+          "language": "nl",
+          "value": "Grote Raad van Neuchâtel"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Neuchâtel"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du Canton de Neuchâtel"
+        },
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat Neuenburg"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio"
+        },
+        "rm": {
+          "language": "rm",
+          "value": "Cussegl grond dal chantun Neuchâtel"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Gran Consell de Neuchâtel"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Veliki svet Neuchâtela"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Neuchâtel, Switzerland"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Neuchâtel"
+        },
+        "ar": {
+          "language": "ar",
+          "value": "منظمة"
+        },
+        "de": {
+          "language": "de",
+          "value": "Parlament des Kantons Neuenburg, Schweiz"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "kantonalni parlament švicarskega kantona Neuchâtel"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q2529663$8B9AE0E7-258E-472B-A3F7-2B27BF637ECC",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "20b3c9267c82af90c6e03e3b112a810207b32cc0",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 43229,
+                  "id": "Q43229"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2529663$016D06DA-61DF-4BD9-A4EF-DB8D78AE6E31",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q2529663$3732D281-118A-4182-AD8A-6850363F36F9",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "92257045747641134000088d0c86eec3d548fa58",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12738,
+                  "id": "Q12738"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2529663$d39866df-437a-e9f1-0648-d80067bd99de",
+            "rank": "normal"
+          }
+        ],
+        "P856": [],
+        "P2397": [],
+        "P571": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P571",
+              "hash": "8dce993a6b276bba67f0d9ff5db6aabdfc9fe5a0",
+              "datavalue": {
+                "value": {
+                  "time": "+1848-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 9,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q2529663$9560B7A8-E19D-4B38-816F-9F884660A1A6",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "305d7faece7d84e3bd4cbf723b88c28cced9a3d2",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "296579078923de6ed509542576768aa84024b98b",
+                      "datavalue": {
+                        "value": "https://it.wikipedia.org/w/index.php?title=Gran_Consiglio_(Neuchâtel)&oldid=95787248",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P576": []
+      }
+    },
+    "Q2678577": {
+      "qid": "Q2678577",
+      "missing": false,
+      "revision": 2381993911,
+      "labels": {
+        "nl": {
+          "language": "nl",
+          "value": "Kantonsraad van Solothurn"
+        },
+        "en": {
+          "language": "en",
+          "value": "Cantonal Council of Solothurn"
+        },
+        "de": {
+          "language": "de",
+          "value": "Kantonsrat des Kantons Solothurn"
+        },
+        "en-ca": {
+          "language": "en-ca",
+          "value": "Cantonal Council of Solothurn"
+        },
+        "en-gb": {
+          "language": "en-gb",
+          "value": "Cantonal Council of Solothurn"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Conseil cantonal de Soleure"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio"
+        },
+        "gl": {
+          "language": "gl",
+          "value": "Consello cantonal de Soleura"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Solothurn, Switzerland"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Soleure"
+        },
+        "de": {
+          "language": "de",
+          "value": "Parlament des Kantons Solothurn in der Schweiz"
+        },
+        "gl": {
+          "language": "gl",
+          "value": "parlamento do cantón de Soleura, Suíza"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2678577$7e4be174-458b-13f0-6c97-4efe86156c4c",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2678577$AA9CAA24-9C92-488F-ACC9-D993B4F109E4",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "3625c473ac12d64e85ad3abc27d934ca28a65fda",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11929,
+                  "id": "Q11929"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2678577$2545c711-490f-165c-7e96-86a32a726df4",
+            "rank": "normal"
+          }
+        ],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q1547525": {
+      "qid": "Q1547525",
+      "missing": false,
+      "revision": 2526179157,
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Kantons Thurgau"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Thurgau"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Grote Raad van Thurgau"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du canton de Thurgovie"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio (Turgovia)"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Thurgau, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Parlament des Kantons Thurgau"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Thurgovie"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547525$456d12ae-4f7b-c4c4-6972-46033d947c41",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547525$ab47efd0-4440-0b96-0e60-c3afce34491a",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "79bae335ae8f761b2e8a559755379967dfeb083a",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "765681cd395ef44389b3c96faf88c9a8c3f10546",
+                      "datavalue": {
+                        "value": "https://www.tg.ch/parlament.html/4",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "035c8d6e31ecf953fb5fba3160908846e15ea1e3",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2023-04-13T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854",
+                  "P813"
+                ]
+              }
+            ]
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547525$6b675f63-4e96-333b-02d9-ed3ac277676d",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "c8540a0f621c04219e91fe2352ca99eee74bca15",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12713,
+                  "id": "Q12713"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1547525$71779dfa-4405-019f-5871-c12b009ae990",
+            "rank": "normal"
+          }
+        ],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q2048795": {
+      "qid": "Q2048795",
+      "missing": false,
+      "revision": 2418663823,
+      "labels": {
+        "nl": {
+          "language": "nl",
+          "value": "Gran Consiglio van Ticino"
+        },
+        "en": {
+          "language": "en",
+          "value": "Grand Council of Ticino"
+        },
+        "de": {
+          "language": "de",
+          "value": "Grosser Rat des Tessins"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Grand Conseil du canton du Tessin"
+        },
+        "lmo": {
+          "language": "lmo",
+          "value": "Gran Consili (Tesin)"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Veliki svet Ticina"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Gran Consell de Ticino"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Ticino, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Kantonsparlament des Tessins"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento del Canton Ticino"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal du Tessin"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2048795$f01cd9fe-4e45-9d4e-d528-fc5a8c227209",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2048795$A13AB822-56A1-47B8-9283-A7A9A28709A4",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "a19dd321747a49ac2fa3884706c2f554995ed205",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12724,
+                  "id": "Q12724"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2048795$797ad4bd-40cf-bf4f-61a6-f1313dfb1d53",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "fe5c4289ebd0e40f1abc2f87c0687398840e6004",
+              "datavalue": {
+                "value": "http://www4.ti.ch/index.php?id=36534",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q2048795$D4DBA989-F738-462F-B75A-98F12325E648",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2397": [],
+        "P571": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P571",
+              "hash": "dff3fec30d99bddf58dac01e8ed762b3135835ce",
+              "datavalue": {
+                "value": {
+                  "time": "+1803-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 9,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q2048795$4C27C303-6C28-4E46-9156-7460A4AD7B1E",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "8321144eceed20dd19849f47ccb22e401d76a1dc",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "9dda6378f2eafef7f6033c40c46d5b1d0a9af4d7",
+                      "datavalue": {
+                        "value": "https://it.wikipedia.org/w/index.php?title=Gran_Consiglio_(Ticino)&oldid=97341136",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P576": []
+      }
+    },
+    "Q1287500": {
+      "qid": "Q1287500",
+      "missing": false,
+      "revision": 2393759235,
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Landrat des Kantons Uri"
+        },
+        "en": {
+          "language": "en",
+          "value": "Landrat of Uri"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Landraad van Uri"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Landrat du canton d'Uri"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio (Uri)"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "assembly of the Swiss canton of Uri"
+        },
+        "de": {
+          "language": "de",
+          "value": "Gesetzgeber im Kanton Uri"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal d'Uri"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1287500$b1319818-411b-a80f-8f7b-258be3971bc7",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1287500$D13FDC81-08A2-4794-A4A5-609C9735020F",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "d82ffe4a636e52720f1457abebf7eaa205b010e3",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12404,
+                  "id": "Q12404"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1287500$24703eac-458f-1e1c-8428-5765c7a84902",
+            "rank": "normal"
+          }
+        ],
+        "P856": [],
+        "P2397": [],
+        "P571": [],
+        "P576": []
+      }
+    },
+    "Q920222": {
+      "qid": "Q920222",
+      "missing": false,
+      "revision": 2551326415,
+      "labels": {
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "塞尔维亚国会"
+        },
+        "zh-hant": {
+          "language": "zh-hant",
+          "value": "塞爾維亞國會"
+        },
+        "zh-hk": {
+          "language": "zh-hk",
+          "value": "塞爾維亞國會"
+        },
+        "pl": {
+          "language": "pl",
+          "value": "Zgromadzenie Narodowe Republiki Serbii"
+        },
+        "be": {
+          "language": "be",
+          "value": "Народная Скупшчына Сербіі"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Assemblée nationale"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Народная скупщина Сербии"
+        },
+        "es": {
+          "language": "es",
+          "value": "Asamblea Nacional de Serbia"
+        },
+        "sr-el": {
+          "language": "sr-el",
+          "value": "Narodna skupština Republike Srbije"
+        },
+        "sr-ec": {
+          "language": "sr-ec",
+          "value": "Народна скупштина Републике Србије"
+        },
+        "en": {
+          "language": "en",
+          "value": "National Assembly of Serbia"
+        },
+        "uk": {
+          "language": "uk",
+          "value": "Народні збори Сербії"
+        },
+        "it": {
+          "language": "it",
+          "value": "Assemblea Nazionale di Serbia"
+        },
+        "be-tarask": {
+          "language": "be-tarask",
+          "value": "Парлямэнт Сэрбіі"
+        },
+        "de": {
+          "language": "de",
+          "value": "Nationalversammlung"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "国民議会"
+        },
+        "bg": {
+          "language": "bg",
+          "value": "Скупщина"
+        },
+        "sh": {
+          "language": "sh",
+          "value": "Narodna skupština Republike Srbije"
+        },
+        "hr": {
+          "language": "hr",
+          "value": "Srbijanski parlament"
+        },
+        "ka": {
+          "language": "ka",
+          "value": "სერბეთის ეროვნული ასამბლეა"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "塞尔维亚国会"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Nacional da Sérvia"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "Serbias parlament"
+        },
+        "tr": {
+          "language": "tr",
+          "value": "Sırbistan Ulusal Meclisi"
+        },
+        "sr": {
+          "language": "sr",
+          "value": "Народна скупштина Републике Србије"
+        },
+        "mk": {
+          "language": "mk",
+          "value": "Народно собрание на Србија"
+        },
+        "el": {
+          "language": "el",
+          "value": "Εθνοσυνέλευση της Σερβίας"
+        },
+        "ko": {
+          "language": "ko",
+          "value": "국민의회"
+        },
+        "hy": {
+          "language": "hy",
+          "value": "Սերբիայի խորհրդարան"
+        },
+        "da": {
+          "language": "da",
+          "value": "Serbiens parlament"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Narodna skupština Republike Srbije"
+        },
+        "he": {
+          "language": "he",
+          "value": "הפרלמנט הסרבי"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "Serbiens nationalförsamling"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "Adunarea Națională a Serbiei"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "Nacia Asembleo de Respubliko Serbio"
+        },
+        "id": {
+          "language": "id",
+          "value": "Majelis Nasional"
+        },
+        "ast": {
+          "language": "ast",
+          "value": "Asamblea Nacional de Serbia"
+        },
+        "cy": {
+          "language": "cy",
+          "value": "Cynulliad Cenedlaethol Serbia"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Assemblea Nacional de Sèrbia"
+        },
+        "ar": {
+          "language": "ar",
+          "value": "جميعة صربيا الوطنية"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "Národní shromáždění Srbské republiky"
+        },
+        "ary": {
+          "language": "ary",
+          "value": "لجمعية لوطنية د صربيا"
+        },
+        "fi": {
+          "language": "fi",
+          "value": "Serbian kansalliskokous"
+        },
+        "vec": {
+          "language": "vec",
+          "value": "Asenblea Nasionałe de Sèrbia"
+        },
+        "eu": {
+          "language": "eu",
+          "value": "Serbiako Biltzar Nazionala"
+        },
+        "bs": {
+          "language": "bs",
+          "value": "Narodna skupština Republike Srbije"
+        },
+        "sq": {
+          "language": "sq",
+          "value": "Asambleja Kombëtare (Serbi)"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Narodna skupščina Srbije"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "Szerb Nemzetgyűlés"
+        },
+        "ga": {
+          "language": "ga",
+          "value": "Comhthionól Náisiúnta na Seirbia"
+        },
+        "tt": {
+          "language": "tt",
+          "value": "Сербия халык җыелышы"
+        },
+        "lv": {
+          "language": "lv",
+          "value": "Serbijas Republikas Tautas sapulce"
+        },
+        "lmo": {
+          "language": "lmo",
+          "value": "Assemblea nazzional (Serbia)"
+        },
+        "vi": {
+          "language": "vi",
+          "value": "Quốc hội Serbia"
+        },
+        "az": {
+          "language": "az",
+          "value": "Milli Assambleya (Serbiya)"
+        },
+        "gv": {
+          "language": "gv",
+          "value": "Çhionnal Ashoonagh y Terb"
+        }
+      },
+      "descriptions": {
+        "de": {
+          "language": "de",
+          "value": "Parlament von Serbien"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement monocaméral de la Serbie"
+        },
+        "en": {
+          "language": "en",
+          "value": "legislature of Serbia"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "парламент Сербии"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "セルビア共和国の立法府"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "unuĉambra parlamento de Serbio"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "parlament unicameral de Sèrbia"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "zákonodárný orgán v Srbsku"
+        },
+        "sr": {
+          "language": "sr",
+          "value": "највише представничко тело и носилац уставотворне и законодавне власти у Србији"
+        },
+        "eu": {
+          "language": "eu",
+          "value": "Serbiako Errepublikako parlamentua"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento unicamerale della Serbia"
+        },
+        "bs": {
+          "language": "bs",
+          "value": "najviše zakonodavno tijelo Srbije"
+        },
+        "uk": {
+          "language": "uk",
+          "value": "парламент Сербії"
+        },
+        "pl": {
+          "language": "pl",
+          "value": "unikameralny parlament Republiki Serbii"
+        },
+        "sr-ec": {
+          "language": "sr-ec",
+          "value": "највише представничко тело и носилац уставотворне и законодавне власти у Републици Србији"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "zakonodajna veja oblasti Srbije"
+        },
+        "ko": {
+          "language": "ko",
+          "value": "세르비아의 일원제 국회"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "parlament Szerbiában"
+        },
+        "lv": {
+          "language": "lv",
+          "value": "Serbijas parlaments"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "parlamentul unicameral al Serbiei"
+        },
+        "vi": {
+          "language": "vi",
+          "value": "cơ quan lập pháp của Serbia"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "lagstiftande församlingen i Serbien"
+        },
+        "lmo": {
+          "language": "lmo",
+          "value": "parlament de la Serbia"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q920222$BC8A9992-CD96-4278-BA15-974A2C348C03",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "5bc2178523d8c63914febc1570024609c3a9f8ce",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 2266479,
+                  "id": "Q2266479"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q920222$e0ce5bcb-4adf-0851-fd5c-b7373e7b1423",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "89615be40a48723ec29c6caa6fe077c25517abaa",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 403,
+                  "id": "Q403"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q920222$6CC14114-EEF0-46ED-B9D1-02E5797859B5",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "e612232c38082f32610937d8c9d9545e64081b40",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 403,
+                  "id": "Q403"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q920222$0BBBA788-853B-4629-9A6F-D5427A76E488",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "0aa83fa0d26f75fbb2c5a095b81054e14dfb0d26",
+              "datavalue": {
+                "value": "http://www.parlament.gov.rs/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "5e6142b270e00e9c160691e4e3c1e5a6ae510c50",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 2839566,
+                      "id": "Q2839566"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "3ac65ea2842129be26801ca316a37281bc5f5e93",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 9299,
+                      "id": "Q9299"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1860,
+                      "id": "Q1860"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q920222$6D1926DA-E799-46C8-943B-B8462846F11A",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2397": [],
+        "P571": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P571",
+              "hash": "490d39b1e9f0790dac7f30225d8bd3bade607c73",
+              "datavalue": {
+                "value": {
+                  "time": "+1903-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 9,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q920222$DE014A3F-05B3-49E7-A696-CE4AEE0936C4",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "f69e6ad720456e69956c4b5bd6bcee5d0600e0a8",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "a03d1ef345bfa36d774d0f5544e2da40ae8cd474",
+                      "datavalue": {
+                        "value": "https://it.wikipedia.org/w/index.php?title=Assemblea_nazionale_(Serbia)&oldid=100047699",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P4656"
+                ]
+              }
+            ]
+          }
+        ],
+        "P576": []
+      }
+    },
+    "Q639704": {
+      "qid": "Q639704",
+      "missing": false,
+      "revision": 2553104385,
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Narodno Sabranie"
+        },
+        "be": {
+          "language": "be",
+          "value": "Народны сход Балгарыі"
+        },
+        "bg": {
+          "language": "bg",
+          "value": "Народно събрание"
+        },
+        "en": {
+          "language": "en",
+          "value": "National Assembly of Bulgaria"
+        },
+        "es": {
+          "language": "es",
+          "value": "Asamblea Nacional de Bulgaria"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Assemblée nationale"
+        },
+        "it": {
+          "language": "it",
+          "value": "Assemblea Nazionale della Bulgaria"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "国民議会"
+        },
+        "mk": {
+          "language": "mk",
+          "value": "Народно собрание на Бугарија"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Narodno Sobranie"
+        },
+        "pl": {
+          "language": "pl",
+          "value": "Zgromadzenie Narodowe"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Народное собрание Болгарии"
+        },
+        "sr": {
+          "language": "sr",
+          "value": "Народно собрање Републике Бугарске"
+        },
+        "tr": {
+          "language": "tr",
+          "value": "Ulusal Meclis"
+        },
+        "uk": {
+          "language": "uk",
+          "value": "Народні збори Болгарії"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "Bulgarias parlament"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "Assembleia Nacional da Bulgária"
+        },
+        "be-tarask": {
+          "language": "be-tarask",
+          "value": "Народны сход Баўгарыі"
+        },
+        "da": {
+          "language": "da",
+          "value": "Bulgariens parlament"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "保加利亚国民议会"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "Adunarea Națională a Bulgariei"
+        },
+        "ko": {
+          "language": "ko",
+          "value": "불가리아 국민의회"
+        },
+        "el": {
+          "language": "el",
+          "value": "Εθνοσυνέλευση της Βουλγαρίας"
+        },
+        "he": {
+          "language": "he",
+          "value": "האספה הלאומית הבולגרית"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Assemblea Nacional"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "Bulgariens nationalförsamling"
+        },
+        "hy": {
+          "language": "hy",
+          "value": "Բուլղարիայի խորհրդարան"
+        },
+        "eo": {
+          "language": "eo",
+          "value": "Nacia Asembleo de Bulgario"
+        },
+        "ast": {
+          "language": "ast",
+          "value": "Asamblea Nacional de Bulgaria"
+        },
+        "tt": {
+          "language": "tt",
+          "value": "Болгария милли җыелышы"
+        },
+        "cy": {
+          "language": "cy",
+          "value": "Y Cynulliad Cenedlaethol"
+        },
+        "ar": {
+          "language": "ar",
+          "value": "جمعية بلغاريا الوطنية"
+        },
+        "ba": {
+          "language": "ba",
+          "value": "Болгария милли йыйылышы"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "Nemzetgyűlés"
+        },
+        "vi": {
+          "language": "vi",
+          "value": "Quốc hội Bulgaria"
+        },
+        "id": {
+          "language": "id",
+          "value": "Majelis Nasional (Bulgaria)"
+        },
+        "ary": {
+          "language": "ary",
+          "value": "لجمعية لوطنية د بلغاريا"
+        },
+        "vec": {
+          "language": "vec",
+          "value": "Asenblea Nasionałe de Bulgaria"
+        },
+        "eu": {
+          "language": "eu",
+          "value": "Bulgariako Biltzar Nazionala"
+        },
+        "ckb": {
+          "language": "ckb",
+          "value": "ئەنجومەنی نیشتمانی بولگاریا"
+        },
+        "fi": {
+          "language": "fi",
+          "value": "Bulgarian kansalliskokous"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "Národní shromáždění Bulharska"
+        },
+        "ga": {
+          "language": "ga",
+          "value": "Comhthionól Náisiúnta na Bulgáire"
+        },
+        "sq": {
+          "language": "sq",
+          "value": "Asambleja Kombëtare (Bullgari)"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Narodna skupščina Bolgarije"
+        },
+        "fa": {
+          "language": "fa",
+          "value": "مجلس ملی بلغارستان"
+        },
+        "gl": {
+          "language": "gl",
+          "value": "Asemblea Nacional de Bulgaria"
+        },
+        "et": {
+          "language": "et",
+          "value": "Rahvuskogu (Bulgaaria)"
+        },
+        "gv": {
+          "language": "gv",
+          "value": "Çhionnal Ashoonagh y Vulgeyr"
+        }
+      },
+      "descriptions": {
+        "fr": {
+          "language": "fr",
+          "value": "parlement monocaméral de la Bulgarie"
+        },
+        "en": {
+          "language": "en",
+          "value": "parliament of Bulgaria"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "het parlement van Bulgarije"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "высший законодательный орган"
+        },
+        "de": {
+          "language": "de",
+          "value": "Parlament von Bulgarien"
+        },
+        "el": {
+          "language": "el",
+          "value": "κοινοβούλιο της Βουλγαρίας"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "parlament de Bulgària"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "ブルガリア共和国の立法府"
+        },
+        "cy": {
+          "language": "cy",
+          "value": "senedd Bwlgaria"
+        },
+        "hu": {
+          "language": "hu",
+          "value": "bolgár parlament"
+        },
+        "es": {
+          "language": "es",
+          "value": "Asamblea legislativa unicameral de Bulgaria."
+        },
+        "bg": {
+          "language": "bg",
+          "value": "държавният орган, който упражнява законодателната власт в Република България"
+        },
+        "ary": {
+          "language": "ary",
+          "value": "لبرلمان د بلغاريا"
+        },
+        "ar": {
+          "language": "ar",
+          "value": "برلمان بلغاريا"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "Bulgariens parlament"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento unicamerale della Bulgaria"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "bulharský parlament"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "enodomni parlament Bolgarije"
+        },
+        "ko": {
+          "language": "ko",
+          "value": "불가리아 공화국의 입법부"
+        },
+        "vi": {
+          "language": "vi",
+          "value": "cơ quan lập pháp đơn viện của Bulgaria"
+        },
+        "ro": {
+          "language": "ro",
+          "value": "parlamentul unicameral al Bulgariei"
+        },
+        "uk": {
+          "language": "uk",
+          "value": "однопалатний парламент Болгарії"
+        }
+      },
+      "sitelinks": {},
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q639704$B7477D67-11FD-406F-9C6C-091612CD8EA4",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "9ac9411445a4489d011f680b11c0963503225fa5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 219,
+                  "id": "Q219"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q639704$1EF13DEF-795B-4447-B3E5-941F867BF220",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "fea9f24995a223789197779c648e1c86ffe61c9d",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 219,
+                  "id": "Q219"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q639704$0383720a-4462-82b6-efb2-8d7a78283d19",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "3209f647686c3c3f5ab23f5b66ead448dfcd9ad8",
+              "datavalue": {
+                "value": "https://www.parliament.bg",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "fedde648141d18b59b7e181936680bd2f4a3300b",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 7918,
+                      "id": "Q7918"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1860,
+                      "id": "Q1860"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q639704$DCDA84CD-2F61-4726-917E-40373082413B",
+            "rank": "normal"
+          }
+        ],
+        "P2397": [],
+        "P571": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P571",
+              "hash": "5a096211e995d2ba364534643d37d5d3b82a44c1",
+              "datavalue": {
+                "value": {
+                  "time": "+1879-02-10T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 11,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q639704$71d70ea5-422e-d703-c075-c1ec3ecd9ada",
+            "rank": "normal"
+          }
+        ],
+        "P576": []
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. APBD2026 amendment plenary, budget-body report conclusions slides with speaker inset; institutional BerlianTV DPRD Jateng branding. Governor explaining amended2026 budget, fiscal structure slides and speaker inset under assembly provider branding. Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "indonesia-jawa-tengah-recordings",
+    "name": "Central Java Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Central Java",
+    "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Tengah",
+    "external_ids": {
+      "wikidata_qid": "Q25461159",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q25461159",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Wikidata revision 2507008731; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "Indonesian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://dprd.jatengprov.go.id/",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. APBD2026 amendment plenary, budget-body report conclusions slides with speaker inset; institutional BerlianTV DPRD Jateng branding. Governor explaining amended2026 budget, fiscal structure slides and speaker inset under assembly provider branding. Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://dprd.jatengprov.go.id/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://dprd.jatengprov.go.id/",
+        "https://www.youtube.com/@BerlianTVDPRDJateng",
+        "https://www.youtube.com/watch?v=KVKCN4lwAj8&pp=0gcJCT8LAYcqIYzv"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

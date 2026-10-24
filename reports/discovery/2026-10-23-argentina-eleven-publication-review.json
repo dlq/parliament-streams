@@ -1,0 +1,2612 @@
+{
+  "research_date": "2026-10-23",
+  "decision": "publish_eleven_scoped_official_recording_services",
+  "records": [
+    {
+      "body_id": "argentina--buenos-aires",
+      "catalogue_id": "argentina-buenos-aires-deputies-webcasts",
+      "institution": "Honorable Cámara de Diputados de la Provincia de Buenos Aires",
+      "region": "Buenos Aires Province",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "Two ordinary Deputies sittings,20October and29September2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters.",
+      "identity": {
+        "qid": "Q4985544",
+        "revision": 2288504789,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "9a26e8d79578c6c69a5c3948e4da4ccccf8b353c",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 320289,
+                    "id": "Q320289"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985544$39AD2112-36B8-4493-9BF8-8A31B95B8FF1",
+              "rank": "normal",
+              "references": [
+                {
+                  "hash": "b56c16941adcaf1e18974e852cff8ec864d788b7",
+                  "snaks": {
+                    "P854": [
+                      {
+                        "snaktype": "value",
+                        "property": "P854",
+                        "hash": "3c4be6dca5c9b424dca2ebc4750fb013f4491d64",
+                        "datavalue": {
+                          "value": "https://www.comunicaciontucuman.gob.ar/noticia/seguridad/205941/capacitaron-cadetes-policia-investigacion-delitos-linea-contra-ninos",
+                          "type": "string"
+                        },
+                        "datatype": "url"
+                      }
+                    ],
+                    "P1476": [
+                      {
+                        "snaktype": "value",
+                        "property": "P1476",
+                        "hash": "26badf5b6b317d47d57fcd102b46d45a7c20e98e",
+                        "datavalue": {
+                          "value": {
+                            "text": "Capacitaron a cadetes de la Policía en la investigación de delitos en línea contra niños",
+                            "language": "es"
+                          },
+                          "type": "monolingualtext"
+                        },
+                        "datatype": "monolingualtext"
+                      }
+                    ]
+                  },
+                  "snaks-order": [
+                    "P854",
+                    "P1476"
+                  ]
+                }
+              ]
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985544$ffbbd3fa-43c5-083b-5677-df325c7df243",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985544$8B4E23BB-E4B1-448A-8D48-8C90DB4CC342",
+              "rank": "normal",
+              "references": [
+                {
+                  "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                  "snaks": {
+                    "P143": [
+                      {
+                        "snaktype": "value",
+                        "property": "P143",
+                        "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 328,
+                            "id": "Q328"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "snaks-order": [
+                    "P143"
+                  ]
+                }
+              ]
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "9da155625f668ab7400d4913d92bb7d06acb3737",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44754,
+                    "id": "Q44754"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985544$397182cd-4cd5-2c1e-c095-dc5b32ae4d0d",
+              "rank": "normal",
+              "references": [
+                {
+                  "hash": "506b2b018150707f9bf897e09f537caa74d214d2",
+                  "snaks": {
+                    "P854": [
+                      {
+                        "snaktype": "value",
+                        "property": "P854",
+                        "hash": "112305b15536eea45155c5648f16d6ada4f4a9dd",
+                        "datavalue": {
+                          "value": "https://www.eltrecetv.com.ar/telenoche/2023/09/22/allanaron-la-casa-de-chocolate-rigau-se-encontraron-48-tarjetas-de-debito-y-un-millon-200-mil-pesos/",
+                          "type": "string"
+                        },
+                        "datatype": "url"
+                      }
+                    ],
+                    "P1476": [
+                      {
+                        "snaktype": "value",
+                        "property": "P1476",
+                        "hash": "72922618bd35656e1d5c329add0e47ddf952f536",
+                        "datavalue": {
+                          "value": {
+                            "text": "Allanaron la casa de Chocolate Rigau: se encontraron 48 tarjetas de débito y un millón 200 mil pesos",
+                            "language": "es"
+                          },
+                          "type": "monolingualtext"
+                        },
+                        "datatype": "monolingualtext"
+                      }
+                    ]
+                  },
+                  "snaks-order": [
+                    "P854",
+                    "P1476"
+                  ]
+                }
+              ]
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "859823b31f04f3f8137a9c66f294f1f7371616cf",
+                "datavalue": {
+                  "value": "https://www.hcdiputados-ba.gov.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q4985544$a4bd5c2b-4389-e09a-d4b9-06b44fe8805e",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.hcdiputados-ba.gov.ar/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/DiputadosBA"
+          },
+          {
+            "text": "TRANSMISIÓN EN VIVO",
+            "url": "https://www.youtube.com/user/DiputadosBA"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/DiputadosBA"
+          },
+          {
+            "text": "Transmisión en vivo",
+            "url": "https://www.youtube.com/user/DiputadosBA"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-buenos-aires-1",
+          "url": "https://www.youtube.com/watch?v=KypeCfrDA_I&t=8645s",
+          "offset": 8645,
+          "decoded_time": 8648.451661782,
+          "decoded_frames_advanced": true,
+          "title": "SESIÓN ORDINARIA - 20 DE OCTUBRE DE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+          "visual_observation": "Two ordinary Deputies sittings,20October and29September2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-buenos-aires-1",
+          "url": "https://www.youtube.com/watch?v=KypeCfrDA_I&t=8645s",
+          "offset": 8645,
+          "decoded_time": 8648.916538,
+          "decoded_frames_advanced": true,
+          "title": "SESIÓN ORDINARIA - 20 DE OCTUBRE DE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+          "visual_observation": "Two ordinary Deputies sittings,20October and29September2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-buenos-aires-2",
+          "url": "https://www.youtube.com/watch?v=i6VAxadbajM&t=11391s",
+          "offset": 11391,
+          "decoded_time": 11394.519278791,
+          "decoded_frames_advanced": true,
+          "title": "SESIÓN ORDINARIA - 29 DE SEPTIEMBRE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+          "visual_observation": "Two ordinary Deputies sittings,20October and29September2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-buenos-aires-2",
+          "url": "https://www.youtube.com/watch?v=i6VAxadbajM&t=11391s",
+          "offset": 11391,
+          "decoded_time": 11394.919314,
+          "decoded_frames_advanced": true,
+          "title": "SESIÓN ORDINARIA - 29 DE SEPTIEMBRE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+          "visual_observation": "Two ordinary Deputies sittings,20October and29September2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "other_provincial_chamber_not_covered_by_this_service"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "buenos-aires-province",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Buenos_Aires.svg",
+        "author": "Matías Hiribarne, Facundo Bailo, Ignacio Rossi, Esteban Carrasco and Fernando Barroso [ 2 ] (Vector graphics image by Starchild )",
+        "source_credit": "SVG from here based on",
+        "licensetpl_short": [
+          "Public domain",
+          "PDM",
+          "CC BY 4.0"
+        ],
+        "licensetpl_long": [
+          "Public domain",
+          "Creative Commons Public Domain Mark 1.0",
+          "Creative Commons Attribution 4.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/publicdomain/mark/1.0/",
+          "https://creativecommons.org/licenses/by/4.0"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bandera_de_la_Provincia_de_Buenos_Aires.svg",
+        "outcome": "licensed_asset_downloaded_unchanged",
+        "license_selected": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "asset_path": "site/assets/flags/buenos-aires-province.svg",
+        "bytes": 13590,
+        "sha256": "f6bc97aecc0df83be2a027c457f49e6d484ab019ad7841267b293508b198afc2",
+        "modified": false
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-B",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--catamarca",
+      "catalogue_id": "argentina-catamarca-senate-recordings",
+      "institution": "Cámara de Senadores de la Provincia de Catamarca",
+      "region": "Catamarca",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "23rd and22nd ordinary Senate sittings2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later6000second sample shows the chair reading into a microphone.",
+      "identity": {
+        "qid": "Q56248161",
+        "revision": 2247105437,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "adc49a009742c9ab9f057f5920c930a437829574",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 2570643,
+                    "id": "Q2570643"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56248161$30d40854-4983-6ab0-c49b-90c1fa1fcb7f",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56248161$8c7f96ed-4d5c-21c0-b47c-cf153dfafafa",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56248161$4a2a058f-4190-4352-5509-296c7296cafa",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "f39c6f4a65c89832bb0029fe6b19caa597173aea",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44756,
+                    "id": "Q44756"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56248161$9e59e904-4956-d5a3-25e6-dc5fcd835332",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "d9b1f9f15d479c24845722de7e58f3e193f489a5",
+                "datavalue": {
+                  "value": "https://senadodecatamarca.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q56248161$fc0bc1a0-4f80-9e89-7168-0ec29a993b49",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://senadodecatamarca.gob.ar/",
+        "links": [
+          {
+            "text": "Youtube",
+            "url": "https://www.youtube.com/channel/UC2HnM2bfuyDnqg1BTeBd8Eg"
+          },
+          {
+            "text": "Youtube",
+            "url": "https://www.youtube.com/channel/UC2HnM2bfuyDnqg1BTeBd8Eg"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-catamarca-1",
+          "url": "https://www.youtube.com/watch?v=378CywsDD5s&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.549067467,
+          "decoded_frames_advanced": true,
+          "title": "EN VIVO: VIGÉSIMA TERCERA SESIÓN ORDINARIA 2026 - YouTube",
+          "visual_observation": "23rd and22nd ordinary Senate sittings2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later6000second sample shows the chair reading into a microphone."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-catamarca-1",
+          "url": "https://www.youtube.com/watch?v=378CywsDD5s&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.921533,
+          "decoded_frames_advanced": true,
+          "title": "EN VIVO: VIGÉSIMA TERCERA SESIÓN ORDINARIA 2026 - YouTube",
+          "visual_observation": "23rd and22nd ordinary Senate sittings2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later6000second sample shows the chair reading into a microphone."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-catamarca-2",
+          "url": "https://www.youtube.com/watch?v=s3Gaiz6rumI&t=6000s",
+          "offset": 6000,
+          "decoded_time": 6003.529733222,
+          "decoded_frames_advanced": true,
+          "title": "EN VIVO: VIGÉSIMA SEGUNDA SESIÓN ORDINARIA 2026 - YouTube",
+          "visual_observation": "23rd and22nd ordinary Senate sittings2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later6000second sample shows the chair reading into a microphone."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-catamarca-2",
+          "url": "https://www.youtube.com/watch?v=s3Gaiz6rumI&t=6000s",
+          "offset": 6000,
+          "decoded_time": 6003.951008,
+          "decoded_frames_advanced": true,
+          "title": "EN VIVO: VIGÉSIMA SEGUNDA SESIÓN ORDINARIA 2026 - YouTube",
+          "visual_observation": "23rd and22nd ordinary Senate sittings2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later6000second sample shows the chair reading into a microphone."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "other_provincial_chamber_not_covered_by_this_service"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "catamarca",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Catamarca.svg",
+        "author": "Fabián Martinena [ 1 ] (Vector graphics image by 3188a )",
+        "source_credit": "SVG from https://www.argentina.gob.ar/catamarca/simbolos",
+        "licensetpl_short": [
+          "CC BY 4.0"
+        ],
+        "licensetpl_long": [
+          "Creative Commons Attribution 4.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/licenses/by/4.0"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bandera_de_la_Provincia_de_Catamarca.svg",
+        "outcome": "licensed_asset_downloaded_unchanged",
+        "license_selected": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "asset_path": "site/assets/flags/catamarca.svg",
+        "bytes": 24554,
+        "sha256": "026a7c7cf6e2d9db7766c9c71c9961f6e987b0cf033157e8828ee069327e60eb",
+        "modified": false
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-K",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--ciudad-autonoma-de-buenos-aires",
+      "catalogue_id": "argentina-buenos-aires-city-legislature-webcasts",
+      "institution": "Legislatura de la Ciudad Autónoma de Buenos Aires",
+      "region": "Buenos Aires City",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "Budget/Treasury/Financial Administration/Tax Policy committee and joint Economic Development/Constitutional Affairs/Budget committees; members speaking at meeting-table microphones under matching committee captions. These are committee recordings, not two plenary sittings.",
+      "identity": {
+        "qid": "Q4985519",
+        "revision": 2463427417,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "7ee60ef6537bdcbde1463163b61345e4bb4153f5",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 3154693,
+                    "id": "Q3154693"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985519$0e5efcae-443e-c5a4-117b-ac555240aaf1",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985519$3ED5A485-09D5-45EF-BFB4-9660873D2872",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985519$e5111ddf-4dab-dfe4-5b92-1d7364c6a85b",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985519$a8fc6886-44c6-f988-8c2a-369e1f6e3f87",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "e3490390b181b39dcebc2216c66784caf65a1c74",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 1486,
+                    "id": "Q1486"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q4985519$5d36186a-4bd0-3e01-3215-cc8a35326190",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "0d70958f8cc4697581fe89d50c1768b36d4ef6dd",
+                "datavalue": {
+                  "value": "https://www.legislatura.gov.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q4985519$90594728-43e1-ed39-b0d0-39286571b1d7",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.legislatura.gob.ar/InfoSesion/",
+        "links": [
+          {
+            "text": "Canal audiovisual",
+            "url": "https://www.youtube.com/user/LegislaturaCABA"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/LegislaturaCABA"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-ciudad-autonoma-de-buenos-aires-1",
+          "url": "https://www.youtube.com/watch?v=QJG5YeeSKlQ&t=652s",
+          "offset": 652,
+          "decoded_time": 655.529323112,
+          "decoded_frames_advanced": true,
+          "title": "Deputies - Budget and Treasury, Financial Administration, and Tax Policy Committee - YouTube",
+          "visual_observation": "Budget/Treasury/Financial Administration/Tax Policy committee and joint Economic Development/Constitutional Affairs/Budget committees; members speaking at meeting-table microphones under matching committee captions. These are committee recordings, not two plenary sittings."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-ciudad-autonoma-de-buenos-aires-1",
+          "url": "https://www.youtube.com/watch?v=QJG5YeeSKlQ&t=652s",
+          "offset": 652,
+          "decoded_time": 655.950297,
+          "decoded_frames_advanced": true,
+          "title": "Deputies - Budget and Treasury, Financial Administration, and Tax Policy Committee - YouTube",
+          "visual_observation": "Budget/Treasury/Financial Administration/Tax Policy committee and joint Economic Development/Constitutional Affairs/Budget committees; members speaking at meeting-table microphones under matching committee captions. These are committee recordings, not two plenary sittings."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-ciudad-autonoma-de-buenos-aires-2",
+          "url": "https://www.youtube.com/watch?v=YDb7CUrwSbU&t=442s",
+          "offset": 442,
+          "decoded_time": 445.530875148,
+          "decoded_frames_advanced": true,
+          "title": "Members of Parliament - Economic Development Committee together with Constitutional Affairs and B... - YouTube",
+          "visual_observation": "Budget/Treasury/Financial Administration/Tax Policy committee and joint Economic Development/Constitutional Affairs/Budget committees; members speaking at meeting-table microphones under matching committee captions. These are committee recordings, not two plenary sittings."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-ciudad-autonoma-de-buenos-aires-2",
+          "url": "https://www.youtube.com/watch?v=YDb7CUrwSbU&t=442s",
+          "offset": 442,
+          "decoded_time": 445.923612,
+          "decoded_frames_advanced": true,
+          "title": "Members of Parliament - Economic Development Committee together with Constitutional Affairs and B... - YouTube",
+          "visual_observation": "Budget/Treasury/Financial Administration/Tax Policy committee and joint Economic Development/Constitutional Affairs/Budget committees; members speaking at meeting-table microphones under matching committee captions. These are committee recordings, not two plenary sittings."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established"
+      ],
+      "source_conditions": {
+        "url": "https://www.legislatura.gob.ar/banners/terminos-y-condiciones313.html",
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added. The reviewed terms assert ownership of site material and set access/security conditions without supplying an independent session-video reuse grant. No prior consent condition for an ordinary external link was identified in that reviewed page."
+      },
+      "flag": {
+        "key": "buenos-aires-city",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Ciudad_de_Buenos_Aires.svg",
+        "author": "Original design Juan de Garay; vector Hurfer, based on original vector Ginés90.",
+        "source_credit": "SVG based on this image",
+        "licensetpl_short": [
+          "CC BY 2.5 ar"
+        ],
+        "licensetpl_long": [
+          "Creative Commons Attribution 2.5 ar"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/licenses/by/2.5/ar/deed.en"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Bandera_de_la_Ciudad_de_Buenos_Aires.svg",
+        "outcome": "licensed_asset_downloaded_unchanged",
+        "license_selected": "CC BY 2.5 AR",
+        "license_url": "https://creativecommons.org/licenses/by/2.5/ar/",
+        "asset_path": "site/assets/flags/buenos-aires-city.svg",
+        "bytes": 301620,
+        "sha256": "6fc510addb6d197c54a693498ae1250dd74c4de94c81613ad9ae54a285c078d2",
+        "modified": false
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-C",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--la-rioja",
+      "catalogue_id": "argentina-la-rioja-legislature-recordings",
+      "institution": "Legislatura de la Provincia de La Rioja",
+      "region": "La Rioja, Argentina",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "12th and11th ordinary sittings of141st legislative period; deputies speaking at chamber desk microphones after earlier opening/standing moments. Argentine institution and jurisdiction Q44796, not Spain’s Parliament of La Rioja.",
+      "identity": {
+        "qid": "Q56316480",
+        "revision": 2247102796,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56316480$3c247ccf-43b5-c738-c519-417fa06be622",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56316480$d0096188-4e74-7d42-5ccb-6af024770b70",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56316480$6006345a-4d74-962d-e9c8-dc578d5128a7",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "ca3074713bd6a4adefa8f956e2386f6496cfc20c",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44796,
+                    "id": "Q44796"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q56316480$e17cf014-4eee-086a-0628-fd4b1df05096",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "9df85b8c5938eb2d024faeb86808a0534a5cbbfc",
+                "datavalue": {
+                  "value": "https://legislaturalarioja.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q56316480$2334918f-4fa6-6cf4-817a-b06601199973",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://legislaturalarioja.gob.ar/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@legislaturalr"
+          },
+          {
+            "text": "TRANSMISIÓN EN VIVO\n\nCanal de YouTube",
+            "url": "https://www.youtube.com/@legislaturalr"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UCdVmZM0qL7qBF_n9Xr94ztA"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-la-rioja-1",
+          "url": "https://www.youtube.com/watch?v=K0eEbHhFkoc&t=10373s",
+          "offset": 10373,
+          "decoded_time": 10376.476123421,
+          "decoded_frames_advanced": true,
+          "title": "12° Sesión Ordinaria del 141° Período Legislativa - YouTube",
+          "visual_observation": "12th and11th ordinary sittings of141st legislative period; deputies speaking at chamber desk microphones after earlier opening/standing moments. Argentine institution and jurisdiction Q44796, not Spain’s Parliament of La Rioja."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-la-rioja-1",
+          "url": "https://www.youtube.com/watch?v=K0eEbHhFkoc&t=10373s",
+          "offset": 10373,
+          "decoded_time": 10376.924287,
+          "decoded_frames_advanced": true,
+          "title": "12° Sesión Ordinaria del 141° Período Legislativa - YouTube",
+          "visual_observation": "12th and11th ordinary sittings of141st legislative period; deputies speaking at chamber desk microphones after earlier opening/standing moments. Argentine institution and jurisdiction Q44796, not Spain’s Parliament of La Rioja."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-la-rioja-2",
+          "url": "https://www.youtube.com/watch?v=Bu-_G5TwX9A&t=3852s",
+          "offset": 3852,
+          "decoded_time": 3855.535813339,
+          "decoded_frames_advanced": true,
+          "title": "11th Ordinary Session of the 141st Legislative Period - YouTube",
+          "visual_observation": "12th and11th ordinary sittings of141st legislative period; deputies speaking at chamber desk microphones after earlier opening/standing moments. Argentine institution and jurisdiction Q44796, not Spain’s Parliament of La Rioja."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-la-rioja-2",
+          "url": "https://www.youtube.com/watch?v=Bu-_G5TwX9A&t=3852s",
+          "offset": 3852,
+          "decoded_time": 3855.955238,
+          "decoded_frames_advanced": true,
+          "title": "11th Ordinary Session of the 141st Legislative Period - YouTube",
+          "visual_observation": "12th and11th ordinary sittings of141st legislative period; deputies speaking at chamber desk microphones after earlier opening/standing moments. Argentine institution and jurisdiction Q44796, not Spain’s Parliament of La Rioja."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "session12_chat_mentions_inaudibility_at_unspecified_points_comments_are_not_audio_verification"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "la-rioja-argentina",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_La_Rioja.svg",
+        "author": "Goverment of La Rioja Province (vector graphics by: Lu1g1-ktupq ).",
+        "source_credit": "Flag of La Rioja on Commons .",
+        "licensetpl_short": [
+          "Public domain"
+        ],
+        "licensetpl_long": [
+          "Public domain"
+        ],
+        "licensetpl_link": [],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bandera_de_la_Provincia_de_La_Rioja.svg",
+        "outcome": "licensed_asset_downloaded_unchanged",
+        "license_selected": "public domain",
+        "license_url": null,
+        "asset_path": "site/assets/flags/la-rioja-argentina.svg",
+        "bytes": 4696,
+        "sha256": "80393f74c248c81865ed431a7f3d71b294e835f679df2a008a2b5ff1a47c7bb9",
+        "modified": false
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-F",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--mendoza",
+      "catalogue_id": "argentina-mendoza-deputies-recordings",
+      "institution": "Cámara de Diputados de la Provincia de Mendoza",
+      "region": "Mendoza",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "Deputies sittings21and14October2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business.",
+      "identity": {
+        "qid": "Q97369212",
+        "revision": 2350229977,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "9a26e8d79578c6c69a5c3948e4da4ccccf8b353c",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 320289,
+                    "id": "Q320289"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q97369212$68406fec-4e64-5d62-2236-25b65d48349e",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q97369212$c6c931f2-4990-8eda-b4e8-30a64e528ab4",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q97369212$d72ed3dc-4719-2712-6091-548292c43a58",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "ea34889242f15fa02ef7b5f23c752c8089f3afdb",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44797,
+                    "id": "Q44797"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q97369212$f1819d49-4c15-0f8d-81d5-d098ed987842",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "aa742b81c26c39bd4d376011ad89f3426677d998",
+                "datavalue": {
+                  "value": "https://www.hcdmza.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q97369212$84818f59-421f-9f44-ec85-99983933e445",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.hcdmza.gob.ar/site/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/prensadiputadosmza"
+          },
+          {
+            "text": "Mirá la sesión en Vivo",
+            "url": "https://www.youtube.com/@prensadiputadosmza/live"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/prensadiputadosmza"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-mendoza-1",
+          "url": "https://www.youtube.com/watch?v=1NXePUuGqUM&t=8614s",
+          "offset": 8614,
+          "decoded_time": 8617.536353784,
+          "decoded_frames_advanced": true,
+          "title": "Miércoles de Sesión 21 de octubre 2026 - YouTube",
+          "visual_observation": "Deputies sittings21and14October2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-mendoza-1",
+          "url": "https://www.youtube.com/watch?v=1NXePUuGqUM&t=8614s",
+          "offset": 8614,
+          "decoded_time": 8617.940118,
+          "decoded_frames_advanced": true,
+          "title": "Miércoles de Sesión 21 de octubre 2026 - YouTube",
+          "visual_observation": "Deputies sittings21and14October2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-mendoza-2",
+          "url": "https://www.youtube.com/watch?v=fx0anTo7X3U&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.539594077,
+          "decoded_frames_advanced": true,
+          "title": "Miercoles de Sesión - 14 de octubre 2026 - YouTube",
+          "visual_observation": "Deputies sittings21and14October2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-mendoza-2",
+          "url": "https://www.youtube.com/watch?v=fx0anTo7X3U&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.936205,
+          "decoded_frames_advanced": true,
+          "title": "Miercoles de Sesión - 14 de octubre 2026 - YouTube",
+          "visual_observation": "Deputies sittings21and14October2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "other_provincial_chamber_not_covered_by_this_service",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "mendoza",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Mendoza.svg",
+        "author": "Bernardo O'Higgins (1778–1842) (Vector graphics images by B1mbo , Tonyjeff , James2813 and SamsonBVB )",
+        "source_credit": "This vector image includes elements that have been taken or adapted from this file: Flag of the Army of the Andes.svg (by James2813 ).",
+        "licensetpl_short": [
+          "Public domain",
+          "PDM",
+          "CC BY 4.0"
+        ],
+        "licensetpl_long": [
+          "Public domain",
+          "Creative Commons Public Domain Mark 1.0",
+          "Creative Commons Attribution 4.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/publicdomain/mark/1.0/",
+          "https://creativecommons.org/licenses/by/4.0"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-M",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--rio-negro",
+      "catalogue_id": "argentina-rio-negro-legislature-recordings",
+      "institution": "Legislatura de la Provincia de Río Negro",
+      "region": "Río Negro",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "Sittings24and3September2026; Facundo López discussing municipal financial compensation and Luciano Delgado Sempé discussing a services/concessions regulator, named members and topic captions. Earlier presentations are separate non-confirming samples.",
+      "identity": {
+        "qid": "Q41143698",
+        "revision": 2248890703,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q41143698$259027E8-9D23-451D-9E30-E5F0000835B5",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q41143698$d8121a06-422e-bfbc-2e68-66e88407aaff",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q41143698$fe68cdab-452f-ba64-b509-41734937c98a",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "4f5a39fef3e072053b842304414a58a717d55aa1",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44802,
+                    "id": "Q44802"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q41143698$4b8ac09d-4de5-7502-33ee-00e4618db898",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "267319aeca50ff45cd66665e6266e0c2aa75a2ed",
+                "datavalue": {
+                  "value": "https://web.legisrn.gov.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q41143698$98645ee1-436c-ba1a-c358-feadece96b8a",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://web.legisrn.gov.ar/vivo",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/LRNVIDEO"
+          },
+          {
+            "text": "Ver últimas sesiones transmitidas",
+            "url": "https://www.youtube.com/playlist?list=PLEMvFpBNv3Kg4xTdgvp_ExpXRuDkXPnwe"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-rio-negro-1",
+          "url": "https://www.youtube.com/watch?v=d7fjEVaZ10Y&t=29171s",
+          "offset": 29171,
+          "decoded_time": 29174.548933928,
+          "decoded_frames_advanced": true,
+          "title": "Sesión Legislatura de Río Negro 24-09-2026 - YouTube",
+          "visual_observation": "Sittings24and3September2026; Facundo López discussing municipal financial compensation and Luciano Delgado Sempé discussing a services/concessions regulator, named members and topic captions. Earlier presentations are separate non-confirming samples."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-rio-negro-2",
+          "url": "https://www.youtube.com/watch?v=8zoFBRFN3_4&t=27567s",
+          "offset": 27567,
+          "decoded_time": 27570.541038946,
+          "decoded_frames_advanced": true,
+          "title": "Sesión Legislatura de Río Negro 03-09-2026 - YouTube",
+          "visual_observation": "Sittings24and3September2026; Facundo López discussing municipal financial compensation and Luciano Delgado Sempé discussing a services/concessions regulator, named members and topic captions. Earlier presentations are separate non-confirming samples."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-rio-negro-1",
+          "url": "https://www.youtube.com/watch?v=d7fjEVaZ10Y&t=29171s",
+          "offset": 29171,
+          "decoded_time": 29174.94674,
+          "decoded_frames_advanced": true,
+          "title": "Sesión Legislatura de Río Negro 24-09-2026 - YouTube",
+          "visual_observation": "Sittings24and3September2026; Facundo López discussing municipal financial compensation and Luciano Delgado Sempé discussing a services/concessions regulator, named members and topic captions. Earlier presentations are separate non-confirming samples."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-rio-negro-2",
+          "url": "https://www.youtube.com/watch?v=8zoFBRFN3_4&t=27567s",
+          "offset": 27567,
+          "decoded_time": 27570.943035,
+          "decoded_frames_advanced": true,
+          "title": "Sesión Legislatura de Río Negro 03-09-2026 - YouTube",
+          "visual_observation": "Sittings24and3September2026; Facundo López discussing municipal financial compensation and Luciano Delgado Sempé discussing a services/concessions regulator, named members and topic captions. Earlier presentations are separate non-confirming samples."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "rio-negro",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_del_R%C3%ADo_Negro.svg",
+        "author": "Original: Daniel Cuomo Vector: Hellerick",
+        "source_credit": "Own work based on: http://www1.rionegro.com.ar/diario/2009/03/27/1238122482165.php , https://web.legisrn.gov.ar/legislativa/legislacion/documento?id=8196",
+        "licensetpl_short": [
+          "CC BY 4.0"
+        ],
+        "licensetpl_long": [
+          "Creative Commons Attribution 4.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/licenses/by/4.0"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bandera_de_la_Provincia_del_R%C3%ADo_Negro.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-R",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--salta",
+      "catalogue_id": "argentina-salta-deputies-recordings",
+      "institution": "Cámara de Diputados de la Provincia de Salta",
+      "region": "Salta",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "25th and24th ordinary sittings of128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding.",
+      "identity": {
+        "qid": "Q40323582",
+        "revision": 2247286599,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "9a26e8d79578c6c69a5c3948e4da4ccccf8b353c",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 320289,
+                    "id": "Q320289"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q40323582$54d4cc5b-4f00-f0ba-0f5c-987b46d6862e",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q40323582$d6e55ee8-4774-0167-5a68-1ad80511a084",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q40323582$d86c6eba-49d8-73b8-5a15-95e13643c85c",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "2456e923c027cdebdf858642b0356348c062d649",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44803,
+                    "id": "Q44803"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q40323582$f734ac60-4470-2134-a819-bbfa1a667c7d",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "835e2cbc55db599edb23449d3dda35a8e7d025cd",
+                "datavalue": {
+                  "value": "https://www.diputadosalta.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q40323582$8f3450db-4fee-ad8b-e599-25c482407d0b",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.diputadosalta.gob.ar/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://youtube.com/user/DiputadoSalta"
+          },
+          {
+            "text": "",
+            "url": "https://youtube.com/user/DiputadoSalta"
+          },
+          {
+            "text": "Youtube",
+            "url": "https://www.youtube.com/user/DiputadoSalta"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-salta-1",
+          "url": "https://www.youtube.com/watch?v=IiJmzg9bKak&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.528161227,
+          "decoded_frames_advanced": true,
+          "title": "VIVO - 25° SESIÓN ORDINARIA - 128º período de sesiones ordinarias - YouTube",
+          "visual_observation": "25th and24th ordinary sittings of128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-salta-2",
+          "url": "https://www.youtube.com/watch?v=AGTsMml3AWs&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.559056685,
+          "decoded_frames_advanced": true,
+          "title": "VIVO - 24° SESIÓN ORDINARIA - 128º período de sesiones ordinarias - YouTube",
+          "visual_observation": "25th and24th ordinary sittings of128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-salta-1",
+          "url": "https://www.youtube.com/watch?v=IiJmzg9bKak&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.956005,
+          "decoded_frames_advanced": true,
+          "title": "VIVO - 25° SESIÓN ORDINARIA - 128º período de sesiones ordinarias - YouTube",
+          "visual_observation": "25th and24th ordinary sittings of128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-salta-2",
+          "url": "https://www.youtube.com/watch?v=AGTsMml3AWs&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.922653,
+          "decoded_frames_advanced": true,
+          "title": "VIVO - 24° SESIÓN ORDINARIA - 128º período de sesiones ordinarias - YouTube",
+          "visual_observation": "25th and24th ordinary sittings of128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "other_provincial_chamber_not_covered_by_this_service",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "salta",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Salta.svg",
+        "author": "Students of Nicolás Avellaneda School of Salta (Vector graphics by Gorivero ) This W3C-unspecified vector image was created with Inkscape .",
+        "source_credit": "Based on this image",
+        "licensetpl_short": [
+          "CC BY 4.0"
+        ],
+        "licensetpl_long": [
+          "Creative Commons Attribution 4.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/licenses/by/4.0"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_la_Provincia_de_Salta.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-A",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--san-juan",
+      "catalogue_id": "argentina-san-juan-deputies-recordings",
+      "institution": "Cámara de Diputados de la Provincia de San Juan",
+      "region": "San Juan",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "11th ordinary sitting22October and10th ordinary sitting24September2026; members speaking at chamber desk microphones under session/date captions. The item lacks P1001; country, exact institution label/site and primary session branding supply the scoped identity crosscheck.",
+      "identity": {
+        "qid": "Q54823916",
+        "revision": 1586350703,
+        "claims": {
+          "P31": [],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q54823916$5297F092-02BE-4A8C-A48C-92F0CECC1862",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "f62330666319fe9dc6ac5f86dfd992fbdf85496b",
+                "datavalue": {
+                  "value": "http://diputadossanjuan.gob.ar",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "id": "Q54823916$64a264f9-80a0-4219-8557-b692c940a54e",
+              "rank": "normal",
+              "references": [
+                {
+                  "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                  "snaks": {
+                    "P143": [
+                      {
+                        "snaktype": "value",
+                        "property": "P143",
+                        "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 328,
+                            "id": "Q328"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "snaks-order": [
+                    "P143"
+                  ]
+                }
+              ]
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://diputadossanjuan.gob.ar/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@camaradediputadosdesanjuan660"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UCdaBPf51idsbBbJ4yPmlucQ"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-san-juan-1",
+          "url": "https://www.youtube.com/watch?v=52fZMVLOukI&t=6101s",
+          "offset": 6101,
+          "decoded_time": 6104.533436156,
+          "decoded_frames_advanced": true,
+          "title": "11ª Sesión Período Ordinaria - 22 de Octubre 2026. - YouTube",
+          "visual_observation": "11th ordinary sitting22October and10th ordinary sitting24September2026; members speaking at chamber desk microphones under session/date captions. The item lacks P1001; country, exact institution label/site and primary session branding supply the scoped identity crosscheck."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-san-juan-2",
+          "url": "https://www.youtube.com/watch?v=QwL776NjkwM&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.531152827,
+          "decoded_frames_advanced": true,
+          "title": "10ª Sesión Período Ordinaria - 24 de septiembre 2026. - YouTube",
+          "visual_observation": "11th ordinary sitting22October and10th ordinary sitting24September2026; members speaking at chamber desk microphones under session/date captions. The item lacks P1001; country, exact institution label/site and primary session branding supply the scoped identity crosscheck."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-san-juan-1",
+          "url": "https://www.youtube.com/watch?v=52fZMVLOukI&t=6101s",
+          "offset": 6101,
+          "decoded_time": 6104.941124,
+          "decoded_frames_advanced": true,
+          "title": "11ª Sesión Período Ordinaria - 22 de Octubre 2026. - YouTube",
+          "visual_observation": "11th ordinary sitting22October and10th ordinary sitting24September2026; members speaking at chamber desk microphones under session/date captions. The item lacks P1001; country, exact institution label/site and primary session branding supply the scoped identity crosscheck."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-san-juan-2",
+          "url": "https://www.youtube.com/watch?v=QwL776NjkwM&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.92394,
+          "decoded_frames_advanced": true,
+          "title": "10ª Sesión Período Ordinaria - 24 de septiembre 2026. - YouTube",
+          "visual_observation": "11th ordinary sitting22October and10th ordinary sitting24September2026; members speaking at chamber desk microphones under session/date captions. The item lacks P1001; country, exact institution label/site and primary session branding supply the scoped identity crosscheck."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "san-juan",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_San_Juan_Province.svg",
+        "author": "Borja Toranzo de Zavalla, Jacinta Angulo de Rojo, and Félix de la Roza de Junco",
+        "source_credit": "SVG based on this image , here Flags of the World",
+        "licensetpl_short": [
+          "Public domain",
+          "PDM"
+        ],
+        "licensetpl_long": [
+          "Public domain",
+          "Creative Commons Public Domain Mark 1.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/publicdomain/mark/1.0/"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_the_San_Juan_Province.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "public domain",
+        "license_url": null
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-J",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--santa-cruz",
+      "catalogue_id": "argentina-santa-cruz-deputies-webcasts",
+      "institution": "Cámara de Diputados de la Provincia de Santa Cruz",
+      "region": "Santa Cruz, Argentina",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations.",
+      "identity": {
+        "qid": "Q5795778",
+        "revision": 2247312171,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q5795778$ED685159-479B-4F12-8869-BB6036E7FAC9",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q5795778$052ca1ae-43bb-09ea-2c2f-f247e165dffb",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q5795778$660286cc-4237-a8e9-7032-b07b624b5111",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "4a9efe0b2c02b0a5a4bb2d62f0fcffe73946d560",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44821,
+                    "id": "Q44821"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q5795778$cd8e2bac-4f4e-8059-2220-490a82c75426",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "ff244b868405bde813de0c927755b37c3e13cd0f",
+                "datavalue": {
+                  "value": "https://camaradelpueblo.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q5795778$09dbaa7f-4e12-0d83-7899-7aa3e09b9cde",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://diputadosdesantacruz.gob.ar/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@DiputadosdeSantaCruz"
+          },
+          {
+            "text": "youtube",
+            "url": "https://www.youtube.com/@DiputadosdeSantaCruz"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-santa-cruz-1",
+          "url": "https://www.youtube.com/watch?v=3T02-A9M1ns&t=9000s",
+          "offset": 9000,
+          "decoded_time": 9003.533465562,
+          "decoded_frames_advanced": true,
+          "title": "14° Sesión Ordinaria | 53° Periodo Legislativo - YouTube",
+          "visual_observation": "14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-santa-cruz-2",
+          "url": "https://www.youtube.com/watch?v=RBUt-d6h7Mw&t=2587s",
+          "offset": 2587,
+          "decoded_time": 2590.556141801,
+          "decoded_frames_advanced": true,
+          "title": "STANDING COMMITTEES | BUDGET AND FINANCE - YouTube",
+          "visual_observation": "14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-santa-cruz-1",
+          "url": "https://www.youtube.com/watch?v=3T02-A9M1ns&t=9000s",
+          "offset": 9000,
+          "decoded_time": 9003.956874,
+          "decoded_frames_advanced": true,
+          "title": "14° Sesión Ordinaria | 53° Periodo Legislativo - YouTube",
+          "visual_observation": "14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-santa-cruz-2",
+          "url": "https://www.youtube.com/watch?v=RBUt-d6h7Mw&t=2587s",
+          "offset": 2587,
+          "decoded_time": 2590.941553,
+          "decoded_frames_advanced": true,
+          "title": "STANDING COMMITTEES | BUDGET AND FINANCE - YouTube",
+          "visual_observation": "14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": "https://diputadosdesantacruz.gob.ar/?page_id=280",
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added. The reviewed terms set general lawful-use and access/security conditions; they do not establish independent session-video reuse permission. No prior consent condition for an ordinary external link was identified in that reviewed page."
+      },
+      "flag": {
+        "key": "santa-cruz",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Santa_Cruz.svg",
+        "author": "Unknown (Vector graphics image by Gorivero )",
+        "source_credit": "SVG based on this image",
+        "licensetpl_short": [
+          "CC BY 4.0"
+        ],
+        "licensetpl_long": [
+          "Creative Commons Attribution 4.0"
+        ],
+        "licensetpl_link": [
+          "https://creativecommons.org/licenses/by/4.0"
+        ],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bandera_de_la_Provincia_de_Santa_Cruz.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-Z",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--tierra-del-fuego",
+      "catalogue_id": "argentina-tierra-del-fuego-legislature-webcasts",
+      "institution": "Legislatura de la Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+      "region": "Tierra del Fuego",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "Fourth ordinary sitting1October2026 with legislative secretary Nadia Luján reading, and21August2026 public hearing for the provincial children/adolescents ombudsman with Sebastián Medina speaking. The hearing is distinct from a plenary sitting.",
+      "identity": {
+        "qid": "Q16589934",
+        "revision": 2272407606,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16589934$1C8C791A-2C2C-48E3-A23B-E06419B4954D",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16589934$f156bd21-4cbc-e449-5c6b-d2af2aed5a63",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16589934$f4386f79-43fa-736e-5526-e4f579871146",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "b8812710c8ce07d7ed26885281a2805152a19260",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44832,
+                    "id": "Q44832"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16589934$bc6b30a3-4b41-0322-50a0-5345e8477b9a",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "359e9923a970e5fe92fa0377aedea8105ee53231",
+                "datavalue": {
+                  "value": "https://www.legistdf.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q16589934$70839a8b-4e97-14b6-8586-f0c6eb8d1dd6",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.legistdf.gob.ar/",
+        "links": [
+          {
+            "text": "YOUTUBE",
+            "url": "https://www.youtube.com/@PrensaLegislativaTDF"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-tierra-del-fuego-1",
+          "url": "https://www.youtube.com/watch?v=dFrL0lVaQQw&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.542903868,
+          "decoded_frames_advanced": true,
+          "title": "4ª SESIÓN ORDINARIA · 01/10/2026 - YouTube",
+          "visual_observation": "Fourth ordinary sitting1October2026 with legislative secretary Nadia Luján reading, and21August2026 public hearing for the provincial children/adolescents ombudsman with Sebastián Medina speaking. The hearing is distinct from a plenary sitting."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-tierra-del-fuego-2",
+          "url": "https://www.youtube.com/watch?v=z8GSzYbdThg&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.465990423,
+          "decoded_frames_advanced": true,
+          "title": "AUDIENCIA PÚBLICA - DEFENSOR PROVINCIAL DE DERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES - YouTube",
+          "visual_observation": "Fourth ordinary sitting1October2026 with legislative secretary Nadia Luján reading, and21August2026 public hearing for the provincial children/adolescents ombudsman with Sebastián Medina speaking. The hearing is distinct from a plenary sitting."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-tierra-del-fuego-1",
+          "url": "https://www.youtube.com/watch?v=dFrL0lVaQQw&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.930706,
+          "decoded_frames_advanced": true,
+          "title": "4ª SESIÓN ORDINARIA · 01/10/2026 - YouTube",
+          "visual_observation": "Fourth ordinary sitting1October2026 with legislative secretary Nadia Luján reading, and21August2026 public hearing for the provincial children/adolescents ombudsman with Sebastián Medina speaking. The hearing is distinct from a plenary sitting."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-tierra-del-fuego-2",
+          "url": "https://www.youtube.com/watch?v=z8GSzYbdThg&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.923645,
+          "decoded_frames_advanced": true,
+          "title": "AUDIENCIA PÚBLICA - DEFENSOR PROVINCIAL DE DERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES - YouTube",
+          "visual_observation": "Fourth ordinary sitting1October2026 with legislative secretary Nadia Luján reading, and21August2026 public hearing for the provincial children/adolescents ombudsman with Sebastián Medina speaking. The hearing is distinct from a plenary sitting."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "tierra-del-fuego",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Tierra_del_Fuego.svg",
+        "author": "Teresa Beatriz Martínez [ 1 ] (Vector graphics image by Urmas )",
+        "source_credit": "SVG based on this file",
+        "licensetpl_short": [
+          "Public domain"
+        ],
+        "licensetpl_long": [
+          "Public domain"
+        ],
+        "licensetpl_link": [],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Bandera_de_la_Provincia_de_Tierra_del_Fuego.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "public domain",
+        "license_url": null
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-V",
+        "scope": "Generalized navigation geometry; no additional claimed-area geometry imported for Tierra del Fuego."
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "argentina--tucuman",
+      "catalogue_id": "argentina-tucuman-legislature-recordings",
+      "institution": "Honorable Legislatura de Tucumán",
+      "region": "Tucumán",
+      "decision": "publish_official_institution_recording_link",
+      "confirmed_scope": "Ordinary sitting15October and special ordinary sitting30September2026; chamber business and a member presenting the General Legislation Commission’s juvenile-criminal-regime report. The commission caption identifies the report’s origin, not a separately verified committee-room feed.",
+      "identity": {
+        "qid": "Q54823903",
+        "revision": 2488334327,
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q54823903$6e2189d5-4529-b55d-5965-372fabe5f455",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 11204,
+                    "id": "Q11204"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q54823903$4e195884-4d1a-f6b6-a0cb-ee42e8248db0",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 414,
+                    "id": "Q414"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q54823903$2C86E799-7896-4C30-9EF9-3A9F3C7E50D2",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "a8da36e8f7c54d6e6c9b1f94ea18d9fa7d649eaf",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 44829,
+                    "id": "Q44829"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q54823903$6f5fbade-48d7-0a38-3cdb-85ec60e8ec46",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "09978a8465cea72d484af938ee20d3cbb9181208",
+                "datavalue": {
+                  "value": "https://legislaturadetucuman.gob.ar/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1321,
+                        "id": "Q1321"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q54823903$ffa04d55-4526-fcb2-eb2a-1842d09aa34a",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.legislaturadetucuman.gob.ar/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@legislaturatucuman951"
+          },
+          {
+            "text": "Youtube",
+            "url": "https://www.youtube.com/@legislaturatucuman951"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "argentina-tucuman-1",
+          "url": "https://www.youtube.com/watch?v=6sOY3DJglv0&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.536602079,
+          "decoded_frames_advanced": true,
+          "title": "SESION ORDINARIA 15-10-2026 - YouTube",
+          "visual_observation": "Ordinary sitting15October and special ordinary sitting30September2026; chamber business and a member presenting the General Legislation Commission’s juvenile-criminal-regime report. The commission caption identifies the report’s origin, not a separately verified committee-room feed."
+        },
+        {
+          "engine": "webkit",
+          "key": "argentina-tucuman-2",
+          "url": "https://www.youtube.com/watch?v=Xfmo-mYVXeM&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.537441581,
+          "decoded_frames_advanced": true,
+          "title": "SESION ESPECIAL ORDINARIA 30-09-2026 - YouTube",
+          "visual_observation": "Ordinary sitting15October and special ordinary sitting30September2026; chamber business and a member presenting the General Legislation Commission’s juvenile-criminal-regime report. The commission caption identifies the report’s origin, not a separately verified committee-room feed."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-tucuman-1",
+          "url": "https://www.youtube.com/watch?v=6sOY3DJglv0&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.914667,
+          "decoded_frames_advanced": true,
+          "title": "SESION ORDINARIA 15-10-2026 - YouTube",
+          "visual_observation": "Ordinary sitting15October and special ordinary sitting30September2026; chamber business and a member presenting the General Legislation Commission’s juvenile-criminal-regime report. The commission caption identifies the report’s origin, not a separately verified committee-room feed."
+        },
+        {
+          "engine": "chromium",
+          "key": "argentina-tucuman-2",
+          "url": "https://www.youtube.com/watch?v=Xfmo-mYVXeM&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.931976,
+          "decoded_frames_advanced": true,
+          "title": "SESION ESPECIAL ORDINARIA 30-09-2026 - YouTube",
+          "visual_observation": "Ordinary sitting15October and special ordinary sitting30September2026; chamber business and a member presenting the General Legislation Commission’s juvenile-criminal-regime report. The commission caption identifies the report’s origin, not a separately verified committee-room feed."
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_chamber_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "regional_flag_asset_download_pending_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "flag": {
+        "key": "tucuman",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_Tucum%C3%A1n.svg",
+        "author": "Manuel Belgrano",
+        "source_credit": "SVG based on this image",
+        "licensetpl_short": [
+          "Public domain"
+        ],
+        "licensetpl_long": [
+          "Public domain"
+        ],
+        "licensetpl_link": [],
+        "asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Tucum%C3%A1n.svg",
+        "outcome": "source_and_license_reviewed_asset_download_pending_after_rate_limit",
+        "license_selected": "public domain",
+        "license_url": null
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "AR-T",
+        "scope": "Generalized province/autonomous-city navigation outline."
+      },
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "authority_framework": "argentina-provinces-and-autonomous-capital in reports/discovery/2026-10-23-legislative-priority.json",
+  "flag_asset_hold": "Four licensed assets downloaded; Commons returned429 on fifth download. Stopped immediately; seven neutral marks retain explicit pending-asset gates.",
+  "all_metadata_and_streams_certified": false
+}

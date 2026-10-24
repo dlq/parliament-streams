@@ -37,6 +37,7 @@ CAPTION_LANGUAGE_NAMES: dict[str, tuple[str, ...]] = {
     "mn": ("mongolian",),
     "nl": ("dutch",),
     "no": ("norwegian",),
+    "pl": ("polish",),
     "pt": ("portuguese",),
     "sk": ("slovak",),
     "sv": ("swedish",),

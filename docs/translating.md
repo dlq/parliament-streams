@@ -17,6 +17,7 @@ and include:
    or wording used by the official legislature.
 
 Try the [catalogue](https://dlq.ca/parliament-streams/),
+[Legislatures page](https://dlq.ca/parliament-streams/institutions.html),
 [map](https://dlq.ca/parliament-streams/map.html) or
 [schedule](https://dlq.ca/parliament-streams/schedule.html) with the language
 selector. A shared URL can also set the language, for example `?lang=fr`.
@@ -27,6 +28,7 @@ Screenshots are useful when text wraps badly or a control is unclear.
 - Natural wording, spelling, punctuation and consistent terminology.
 - Names for legislatures, jurisdictions, committees and parliamentary business.
 - Search/filter labels, source details and accessibility instructions.
+- Legislature inventory statuses, scope explanations and contribution prompts.
 - IPTV setup, copy-button feedback and the VLC desktop instructions.
 - Dates, numbers, plural forms and text that overflows on mobile.
 - Keyboard and screen-reader pronunciation, including language annotations.
@@ -54,17 +56,19 @@ coverage does not establish translation quality.
 
 ## Editing The Translation Files
 
-The translation tables are in `site/i18n.js`, `site/map-i18n.js`,
-`site/schedule-i18n.js` and `site/iptv.js`. The Czech, Finnish, Swedish and
-Traditional Chinese packs live in `site/extra-locales.js`. Some jurisdiction
+The translation tables are in `site/i18n.js`, `site/institutions-i18n.js`,
+`site/map-i18n.js`, `site/schedule-i18n.js` and `site/iptv.js`. The Czech, Finnish,
+Swedish and Traditional Chinese packs live in `site/extra-locales.js`. Some jurisdiction
 names are localized through the browser's `Intl.DisplayNames` data. See
 [site and language behaviour](public-site.md) for fallback and content rules.
 
 Preserve message keys, placeholder names such as `{count}` and `{date}`, and
 locale-specific plural forms. Translate the interface consistently across
-catalogue, map, schedule and IPTV/VLC surfaces. Official programme titles,
-source names and rights notes retain their recorded language; changes to their
-meaning need separate source evidence.
+catalogue, Legislatures, map, schedule and IPTV/VLC surfaces. The working
+legislature inventory has interface messages in all 23 locales, while its
+English research notes and recorded institution names retain their language.
+Official programme titles, source names and rights notes retain their recorded
+language; changes to their meaning need separate source evidence.
 
 For a pull request, name the locale and affected pages, and explain any
 terminology choices. Run `npm run check:site` after setting up the

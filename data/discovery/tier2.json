@@ -3,7 +3,7 @@
   "tier": "tier2",
   "source_report": "reports/health/2026-08-14-tier2-democracy-hls.json",
   "scope": "Democracy-priority tier2 parliamentary stream discovery targets",
-  "method": "Maintained official/discovery pages and previously researched manifest candidates. Scheduled audits may discover evidence but never modify the catalogue automatically.",
+  "method": "Maintained official/discovery pages and previously researched manifest candidates. Scheduled audits may discover evidence but never modify the catalogue automatically. Edition clarification (2026-10-24): this maintained country list retains the EIU Democracy Index 2024 baseline, published in 2025; it is not yet reconciled to the actual 2025 edition. See docs/catalogue-scope.md#research-priorities-and-democracy-tiers.",
   "countries": [
     {
       "country": "France",

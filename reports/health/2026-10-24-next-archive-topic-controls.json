@@ -1,0 +1,515 @@
+{
+  "method": "Normal visible date/session controls followed on primary-designated services, navigation only. Public video tabs selected where present; no API/consent/login bypass.",
+  "results": [
+    {
+      "id": "basel",
+      "body_id": "switzerland--basel-stadt",
+      "url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl/",
+      "steps": [
+        "35. Sitzung",
+        "36. Sitzung"
+      ],
+      "checked_at": "2026-10-24T05:16:48.116Z",
+      "status": 200,
+      "steps_results": [],
+      "final_url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl/?agendaItemUid=48fdfd6b-6a35-4bcc-8e3e-eb4d10a78ae0&startPage=true&unitName=default",
+      "title": "Gianna Hablützel-Bürki • Mitglied des Grossen Rates | Mitteilungen und Genehmigung der Tagesordnung - Audiovisuelles Archiv des Grossen Rates des Kantons Basel-Stadt",
+      "labels": [],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-bs-viewer.s3.ewstorage.ch/mediaDash/6abf58a0a192df1eda8b1e3d_converted_media_file_1791972516708.mp4#t=715.946,813.292"
+        }
+      ],
+      "links": [
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "text_cache": "/tmp/topics-basel.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-basel.png"
+    },
+    {
+      "id": "zurich",
+      "body_id": "switzerland--zurich",
+      "url": "https://zh.recapp.ch/shareparl/",
+      "steps": [
+        "September"
+      ],
+      "checked_at": "2026-10-24T05:16:48.117Z",
+      "status": 200,
+      "steps_results": [
+        {
+          "label": "September",
+          "labels": [
+            "2026/Oktober/173. KR-Sitzung vom 19.10.2026",
+            "Oktober",
+            "173. KR-Sitzung vom 19.10.2026",
+            "Mitteilungen",
+            "333/2026 Volkswirtschaftliche Kosten des Hitzesommers 2026",
+            "332a/2023 Standesinitiative zur Einführung einer nationalen Elternzeit",
+            "6047 Gesetz über den Jugendschutz bei öffentlichen Filmvorführungen und Trägermedien, Aufhebung",
+            "438a/2020 Anpassung der Möglichkeit zur Bildung von finanzpolitischen Reserven im Gemeindegesetz",
+            "6034a Gesetz über die Gerichts- und Behördenorganisation im Zivil- und Strafprozess, Änderung, Zurich International Commercial Court und weitere Anpassungen im Zivilprozess",
+            "237/2024 Entflechtung von Staatsaufgaben zwischen Kanton und Gemeinden",
+            "Verschiedenes",
+            "September",
+            "172. KR-Sitzung vom 28.09.2026, Nachmittag",
+            "171. KR-Sitzung vom 28.09.2026, Vormittag",
+            "170. KR-Sitzung vom 21.09.2026",
+            "169. KR-Sitzung vom 14.09.2026",
+            "168. KR-Sitzung vom 07.09.2026",
+            "August",
+            "Juli",
+            "Juni",
+            "Mai",
+            "April",
+            "März",
+            "Februar",
+            "Januar",
+            "2025",
+            "2024",
+            "2023"
+          ]
+        }
+      ],
+      "final_url": "https://zh.recapp.ch/shareparl?agendaItemUid=a4534c4b-2dcc-4a5a-9d61-7effbda5dfc6",
+      "title": "Romaine Rogenmoser • Präsidium | Mitteilungen - Audiovisuelles Archiv des Kantonsrates Zürich",
+      "labels": [
+        "2026/Oktober/173. KR-Sitzung vom 19.10.2026",
+        "Oktober",
+        "173. KR-Sitzung vom 19.10.2026",
+        "Mitteilungen",
+        "333/2026 Volkswirtschaftliche Kosten des Hitzesommers 2026",
+        "332a/2023 Standesinitiative zur Einführung einer nationalen Elternzeit",
+        "6047 Gesetz über den Jugendschutz bei öffentlichen Filmvorführungen und Trägermedien, Aufhebung",
+        "438a/2020 Anpassung der Möglichkeit zur Bildung von finanzpolitischen Reserven im Gemeindegesetz",
+        "6034a Gesetz über die Gerichts- und Behördenorganisation im Zivil- und Strafprozess, Änderung, Zurich International Commercial Court und weitere Anpassungen im Zivilprozess",
+        "237/2024 Entflechtung von Staatsaufgaben zwischen Kanton und Gemeinden",
+        "Verschiedenes",
+        "September",
+        "172. KR-Sitzung vom 28.09.2026, Nachmittag",
+        "171. KR-Sitzung vom 28.09.2026, Vormittag",
+        "170. KR-Sitzung vom 21.09.2026",
+        "169. KR-Sitzung vom 14.09.2026",
+        "168. KR-Sitzung vom 07.09.2026",
+        "August",
+        "Juli",
+        "Juni",
+        "Mai",
+        "April",
+        "März",
+        "Februar",
+        "Januar",
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-zh-viewer.s3.ewstorage.ch/mediaDash/6acf3942d44ba4f128e3fdaf_converted_media_file_1792404540560.mp4#t=2011.1,2199.708"
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": "https://zh.recapp.ch/shareparl?startPage=true&unitName=default"
+        },
+        {
+          "text": "Rechtliches",
+          "url": "https://zh.recapp.ch/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "text_cache": "/tmp/topics-zurich.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-zurich.png"
+    },
+    {
+      "id": "thurgau",
+      "body_id": "switzerland--thurgau",
+      "url": "https://grvisio.tg.ch/",
+      "steps": [],
+      "checked_at": "2026-10-24T05:16:57.285Z",
+      "status": 200,
+      "steps_results": [],
+      "final_url": "https://grvisio.tg.ch/shareparl?agendaItemUid=ced8d2ad-bd19-461d-a035-3e5df9d5ce23&startPage=true&unitName=default",
+      "title": "Felix Meier, Präsident, SP und Gew. | Sitzungsbeginn [unvollständig wegen technischer Probleme - wird in Kürze behoben] - GRvisio: Audiovisuelles Sitzungsarchiv des Grossen Rates des Kantons Thurgau",
+      "labels": [
+        "2026/Grosser Rat - 21.10.2026",
+        "Grosser Rat - 21.10.2026",
+        " Sitzungsbeginn [unvollständig wegen technischer Probleme - wird in Kürze behoben]",
+        "1 Amtsgelübde von Kantonsrat Marco Bertschinger (24/WA 51/375)",
+        "2 Ersatzwahl eines Mitgliedes der Justizkommission für den Rest der Amts- dauer (24/WA 53/383)",
+        "3 Kantonsbürgerrechtsgesuche (24/EB 9/344)",
+        "4 24/IN 18/191 Interpellation von Gabriel Macedo, Markus Bürgi, Thomas Leu, Martina Pfiffner Müller, Martin Brenner vom 27. August 2025 \"Zukunftsfähige Gemeindestrukturen im Kanton Thurgau\" (24/IN 18/191)",
+        "5 24/PI 4/226 Parlamentarische Initiative von Peter Bühler, Aline Butscher-Indergand, Barbara Dätwyler Weber, Isabelle Vonlanthen-Specker, Lukas Madörin, Stefan Leuthold, Roland Wyss, Franz Eugster vom 19. November 2025 \"Parla- mentarische demokratische Mitwirkungsrechte bei Behördenreferenden stärken\" (24/PI 4/226)",
+        "6 24/BS 21/304 Beschluss des Grossen Rates über die Teilrevision des Kantonalen Richtplans 2024/2025 (Stand: Februar 2026) (24/BS 21/304)",
+        " Fortsetzung Sitzung",
+        "6 24/BS 21/304 Beschluss des Grossen Rates über die Teilrevision des Kantonalen Richt- plans 2024/2025 (Stand: Februar 2026) (24/BS 21/304)",
+        "7 24/PI 7/363 Parlamentarische Initiative von Stefan Leuthold, Sabina Peter Köstli, Marina Bruggmann, Elisabeth Rickenbach, Brigitta Engeli-Sager vom 1. Juli 2026 \"Sicherstellung des ärztlichen Notfalldienstes im Kanton Thurgau\" (24/PI 7/363)",
+        "8 24/MO 35/272 Motion von Isabelle Vonlanthen-Specker, Reto Ammann, Christina Fäsi, Ma- nuela Fritschi, Jürgen Häberli, Linda Hess, Patrick Siegenthaler vom 18. Februar 2026 \"Kantonale Chip- und Registrierungspflicht für Hauskatzen und Regelung des Umgangs mit nicht gechipten Tieren\" (24/MO 35/272)",
+        " Sitzungsende",
+        "Grosser Rat - 28.09.2026",
+        "Grosser Rat - 16.09.2026",
+        "Grosser Rat - 02.09.2026",
+        "Grosser Rat - 19.08.2026",
+        "Grosser Rat - 01.07.2026",
+        "Grosser Rat - 10.06.2026",
+        "Grosser Rat - 27.05.2026",
+        "Grosser Rat - 29.04.2026",
+        "Grosser Rat - 01.04.2026",
+        "Grosser Rat - 18.03.2026",
+        "Grosser Rat - 04.03.2026",
+        "Grosser Rat - 18.02.2026",
+        "Grosser Rat - 04.02.2026",
+        "Grosser Rat - 14.01.2026",
+        "2025",
+        "2024"
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-tg-viewer.s3.ewstorage.ch/mediaDash/6ac60b065978dc357b2822ce_converted_media_file_1792580756081.mp4#t=,95.413"
+        }
+      ],
+      "links": [
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "text_cache": "/tmp/topics-thurgau.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-thurgau.png"
+    },
+    {
+      "id": "st-gallen",
+      "body_id": "switzerland--st-gallen",
+      "url": "https://sg.recapp.ch/shareparl/",
+      "steps": [
+        "Dienstag, 3. März 2026"
+      ],
+      "checked_at": "2026-10-24T05:16:56.385Z",
+      "status": 200,
+      "steps_results": [
+        {
+          "label": "Dienstag, 3. März 2026",
+          "labels": [
+            "2026/Frühjahrssession/Montag, 2. März 2026",
+            "Frühjahrssession",
+            "Montag, 2. März 2026",
+            "01.26.03 Gültigkeit der Wahl von drei Ersatzmitgliedern in den Kantonsrat (Brigitte Borghi, Renaldo Vanzo, Nicole Hayoz)",
+            "13.26.01 Wahl der Regierungspräsidentin oder des Regierungspräsidenten der Amtsdauer 2026/2027 (Frühjahrssession 2026)",
+            "22.25.07 VII. Nachtrag zum Gerichtsgesetz (Wohnsitzpflicht)",
+            "22.25.08 XIV. Nachtrag zum Einführungsgesetz zur Bundesgesetzgebung über die Krankenversicherung",
+            "36.25.01 Kantonsratsbeschluss über den Bau des Stützbauwerks Valurrank der Kantonsstrasse Nr. 76 in Bad Ragaz",
+            "40.25.04 Berichterstattung über den Erfolg des St.Galler Energiekonzepts 2021–2030",
+            "22.25.13 IV. Nachtrag zum Planungs- und Baugesetz",
+            "22.25.09 IX. Nachtrag zum Strassengesetz",
+            "42.25.12 Mehr Schutz vor potenziell gefährlichen Hunden",
+            "51.25.40 Der Amtsärztliche Dienst braucht Unterstützung! Können die amtsärztlichen Aufgaben auch in Zukunft noch erfüllt werden?",
+            "51.25.58 Immer mehr St.Galler Vereine müssen Steuererklärungen ausfüllen – ist dies für die Freiwilligenarbeit förderlich?",
+            "51.25.63 Digitalisierung als strategischer Hebel für Effizienz, Transparenz und Sparziele",
+            "51.25.74 Einführung einer allgemeinen Stimmpflicht bei Abstimmungen und Wahlen im Kanton St.Gallen?",
+            "51.25.78 Auswirkungen des geplanten EU-Vertragspakets auf die Anerkennung beruflicher Qualifikationen",
+            "51.25.79 Auswirkungen des geplanten EU-Vertragspakets auf Universitäten und Hochschulen",
+            "51.25.106 Schwache Steuerkraft-Entwicklung: Sind wir für wertschöpfungs- und forschungsintensive Unternehmen steuerlich attraktiv?",
+            "51.25.108 Die Schweiz sagt JA zu kantonalen Liegenschaftssteuern auf Zweitliegenschaften – was macht der Kanton St.Gallen?",
+            "Dienstag, 3. März 2026",
+            "42.26.02 Fehlanreize in der Motorfahrzeugbesteuerung korrigieren",
+            "51.26.02 Systemwechsel bei Fahrzeugbesteuerung: Ertragsneutralität oder verdeckte Steuererhöhung?",
+            "51.26.03 Systemwechsel bei den Strassenverkehrsabgaben – wo bleibt die Kosten- und Ertragsneutralität?",
+            "51.26.14 Auswirkungen der Revision der Steuer für Personenwagen und Motorräder",
+            "51.26.15 Wil West: Abstimmen bis es der St.Galler Regierung passt?",
+            "51.26.16 Zusätzliche Einsparungen über 60 Mio. Franken – Personalabbau auf Kosten von Sicherheit, Bildung und Gesundheitswesen?",
+            "22.25.13 IV. Nachtrag zum Planungs- und Baugesetz",
+            "33.26.04 Kantonsratsbeschluss über die Genehmigung des Aufgaben- und Finanzplans 2027–2029",
+            "22.25.04 Nachtrag zum Gesetz über die soziale Sicherung und Integration von Menschen mit Behinderung (Finanzierung ambulante Leistungen im Bereich Wohnen)",
+            "22.25.05 II. Nachtrag zum Gesetz über die soziale Sicherung und Integration von Menschen mit Behinderung (Behindertengleichstellungsrechte)",
+            "22.25.06 III. Nachtrag zum Gesetz über die soziale Sicherung und Integration von Menschen mit Behinderung (Inklusive familienergänzende Kinderbetreuung)",
+            "41.25.03 Keine steuerliche Benachteiligung für Schweizer Grenzgänger in der beruflichen Vorsorge (Titel der Antwort: Keine steuerliche Benachteiligung für Schweizer Grenzgängerinnen und Grenzgänger in der beruflichen Vorsorge)",
+            "42.25.18 Open Source Software – St.Galler Nachvollzug des Art. 9 EMBAG",
+            "42.25.19 Lotteriefonds: Förderung von Sport, Bildung, Innovation, Soziales und Kultur im Gleichschritt",
+            "42.25.21 OECD-Steuereinnahmen für die MINT-Förderung",
+            "51.25.41 Vorwärts-Strategie: Welche Schritte und Anpassungen wären für einen urteilskonformen Weiterbetrieb des Kathi Wil nötig?",
+            "51.25.64 Strassenverengung und Verkehrsschikanen in Lichtensteig: Was macht der Kanton, wenn seine Umfahrungsstrasse gesperrt ist?",
+            "51.25.70 Beteiligungsmodell für Windkraftanlagen",
+            "51.25.72 Tempo-30-Intervalle und -Zonen auf verkehrsorientierten Strassen (dynamische Geschwindigkeitssignalisation)",
+            "51.25.81 Islamischer Religionsunterricht an Schulen im Kanton St.Gallen",
+            "51.25.84 Guten Boden und Aushub besser nutzen",
+            "51.25.91 Umsetzung des Klima- und Innovationsgesetzes im kantonalen Förderprogramm Energie",
+            "51.25.93 Verhaltensökonomische Ansätze im Energiekonzept St.Gallen 2021–2030 – entfalten sie Wirkung?",
+            "51.25.110 Demenzstrategie: Wird die Zugehende Beratung nach dem Pilotprojekt verstetigt?",
+            "Mittwoch, 4. März 2026",
+            "Sommersession",
+            "Herbstsession",
+            "2025"
+          ]
+        }
+      ],
+      "final_url": "https://sg.recapp.ch/shareparl?agendaItemUid=ee901b7f-8d49-4fd2-91b7-47a4b73cba2f&startPage=true&unitName=sg",
+      "title": "Unterlagen | 01.26.03 Gültigkeit der Wahl von drei Ersatzmitgliedern in den Kantonsrat (Brigitte Borghi, Renaldo Vanzo, Nicole Hayoz) - Audiovisuelles Protokoll des Kantonsrates St.Gallen",
+      "labels": [
+        "2026/Frühjahrssession/Montag, 2. März 2026",
+        "Frühjahrssession",
+        "Montag, 2. März 2026",
+        "01.26.03 Gültigkeit der Wahl von drei Ersatzmitgliedern in den Kantonsrat (Brigitte Borghi, Renaldo Vanzo, Nicole Hayoz)",
+        "13.26.01 Wahl der Regierungspräsidentin oder des Regierungspräsidenten der Amtsdauer 2026/2027 (Frühjahrssession 2026)",
+        "22.25.07 VII. Nachtrag zum Gerichtsgesetz (Wohnsitzpflicht)",
+        "22.25.08 XIV. Nachtrag zum Einführungsgesetz zur Bundesgesetzgebung über die Krankenversicherung",
+        "36.25.01 Kantonsratsbeschluss über den Bau des Stützbauwerks Valurrank der Kantonsstrasse Nr. 76 in Bad Ragaz",
+        "40.25.04 Berichterstattung über den Erfolg des St.Galler Energiekonzepts 2021–2030",
+        "22.25.13 IV. Nachtrag zum Planungs- und Baugesetz",
+        "22.25.09 IX. Nachtrag zum Strassengesetz",
+        "42.25.12 Mehr Schutz vor potenziell gefährlichen Hunden",
+        "51.25.40 Der Amtsärztliche Dienst braucht Unterstützung! Können die amtsärztlichen Aufgaben auch in Zukunft noch erfüllt werden?",
+        "51.25.58 Immer mehr St.Galler Vereine müssen Steuererklärungen ausfüllen – ist dies für die Freiwilligenarbeit förderlich?",
+        "51.25.63 Digitalisierung als strategischer Hebel für Effizienz, Transparenz und Sparziele",
+        "51.25.74 Einführung einer allgemeinen Stimmpflicht bei Abstimmungen und Wahlen im Kanton St.Gallen?",
+        "51.25.78 Auswirkungen des geplanten EU-Vertragspakets auf die Anerkennung beruflicher Qualifikationen",
+        "51.25.79 Auswirkungen des geplanten EU-Vertragspakets auf Universitäten und Hochschulen",
+        "51.25.106 Schwache Steuerkraft-Entwicklung: Sind wir für wertschöpfungs- und forschungsintensive Unternehmen steuerlich attraktiv?",
+        "51.25.108 Die Schweiz sagt JA zu kantonalen Liegenschaftssteuern auf Zweitliegenschaften – was macht der Kanton St.Gallen?",
+        "Dienstag, 3. März 2026",
+        "42.26.02 Fehlanreize in der Motorfahrzeugbesteuerung korrigieren",
+        "51.26.02 Systemwechsel bei Fahrzeugbesteuerung: Ertragsneutralität oder verdeckte Steuererhöhung?",
+        "51.26.03 Systemwechsel bei den Strassenverkehrsabgaben – wo bleibt die Kosten- und Ertragsneutralität?",
+        "51.26.14 Auswirkungen der Revision der Steuer für Personenwagen und Motorräder",
+        "51.26.15 Wil West: Abstimmen bis es der St.Galler Regierung passt?",
+        "51.26.16 Zusätzliche Einsparungen über 60 Mio. Franken – Personalabbau auf Kosten von Sicherheit, Bildung und Gesundheitswesen?",
+        "22.25.13 IV. Nachtrag zum Planungs- und Baugesetz",
+        "33.26.04 Kantonsratsbeschluss über die Genehmigung des Aufgaben- und Finanzplans 2027–2029",
+        "22.25.04 Nachtrag zum Gesetz über die soziale Sicherung und Integration von Menschen mit Behinderung (Finanzierung ambulante Leistungen im Bereich Wohnen)",
+        "22.25.05 II. Nachtrag zum Gesetz über die soziale Sicherung und Integration von Menschen mit Behinderung (Behindertengleichstellungsrechte)",
+        "22.25.06 III. Nachtrag zum Gesetz über die soziale Sicherung und Integration von Menschen mit Behinderung (Inklusive familienergänzende Kinderbetreuung)",
+        "41.25.03 Keine steuerliche Benachteiligung für Schweizer Grenzgänger in der beruflichen Vorsorge (Titel der Antwort: Keine steuerliche Benachteiligung für Schweizer Grenzgängerinnen und Grenzgänger in der beruflichen Vorsorge)",
+        "42.25.18 Open Source Software – St.Galler Nachvollzug des Art. 9 EMBAG",
+        "42.25.19 Lotteriefonds: Förderung von Sport, Bildung, Innovation, Soziales und Kultur im Gleichschritt",
+        "42.25.21 OECD-Steuereinnahmen für die MINT-Förderung",
+        "51.25.41 Vorwärts-Strategie: Welche Schritte und Anpassungen wären für einen urteilskonformen Weiterbetrieb des Kathi Wil nötig?",
+        "51.25.64 Strassenverengung und Verkehrsschikanen in Lichtensteig: Was macht der Kanton, wenn seine Umfahrungsstrasse gesperrt ist?",
+        "51.25.70 Beteiligungsmodell für Windkraftanlagen",
+        "51.25.72 Tempo-30-Intervalle und -Zonen auf verkehrsorientierten Strassen (dynamische Geschwindigkeitssignalisation)",
+        "51.25.81 Islamischer Religionsunterricht an Schulen im Kanton St.Gallen",
+        "51.25.84 Guten Boden und Aushub besser nutzen",
+        "51.25.91 Umsetzung des Klima- und Innovationsgesetzes im kantonalen Förderprogramm Energie",
+        "51.25.93 Verhaltensökonomische Ansätze im Energiekonzept St.Gallen 2021–2030 – entfalten sie Wirkung?",
+        "51.25.110 Demenzstrategie: Wird die Zugehende Beratung nach dem Pilotprojekt verstetigt?",
+        "Mittwoch, 4. März 2026",
+        "Sommersession",
+        "Herbstsession",
+        "2025"
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-sg-viewer.s3.ewstorage.ch/mediaDash/69a5845488dc2e72bd0dca1e_converted_media_file_1772473214708.mp4#t=15287.3,15287.3"
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": "https://sg.recapp.ch/shareparl?startPage=true&unitName=sg"
+        },
+        {
+          "text": "Rechtliches",
+          "url": "https://sg.recapp.ch/shareparl/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "text_cache": "/tmp/topics-st-gallen.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-st-gallen.png"
+    },
+    {
+      "id": "vaud",
+      "body_id": "switzerland--vaud-waadt",
+      "url": "https://www.sonomix.ch/live/gcvd/3511",
+      "steps": [],
+      "checked_at": "2026-10-24T05:17:05.949Z",
+      "status": 200,
+      "steps_results": [],
+      "final_url": "https://www.sonomix.ch/live/gcvd/3511",
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "labels": [],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://play.vod2.infomaniak.com/single/1jijk03uoaomz/1jhvl2uqemvp2/1jijk03uoaopg"
+        },
+        {
+          "tag": "SOURCE",
+          "src": "https://play.vod2.infomaniak.com/single/1jijk03uoaomz/1jhvl2uqemvp2/1jijk03uoaopg"
+        }
+      ],
+      "links": [],
+      "text_cache": "/tmp/topics-vaud.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-vaud.png"
+    },
+    {
+      "id": "valais",
+      "body_id": "switzerland--valais-wallis",
+      "url": "https://vs.recapp.ch/",
+      "steps": [],
+      "checked_at": "2026-10-24T05:17:05.596Z",
+      "status": 200,
+      "steps_results": [],
+      "final_url": "https://vs.recapp.ch/shareparl?agendaItemUid=cffd6f7f-b1e9-46a6-bb80-0ae4814dd409&startPage=true",
+      "title": "Salutations et communications - Grand Conseil Canton du Valais",
+      "labels": [
+        "2026",
+        "septembre",
+        "8 septembre",
+        "9 septembre",
+        "10 septembre",
+        "11 septembre",
+        "juin",
+        "mai",
+        "mars",
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014",
+        "2013",
+        "2012",
+        "2011",
+        "2010",
+        "2009"
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-vs-viewer.s3.ewstorage.ch/mediaDash/6a7ed437ac54b075e5dc62a2_converted_media_file_1788863443128.mp4#t=592.299,902.752"
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": "https://vs.recapp.ch/shareparl?startPage=true&unitName=default"
+        },
+        {
+          "text": "Mentions légales",
+          "url": "https://vs.recapp.ch/shareparl/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "text_cache": "/tmp/topics-valais.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-valais.png"
+    },
+    {
+      "id": "bulgaria",
+      "body_id": "national:Bulgaria",
+      "url": "https://www.parliament.bg/bg/video/ID/2035",
+      "steps": [],
+      "checked_at": "2026-10-24T05:17:13.628Z",
+      "status": 200,
+      "steps_results": [],
+      "tab_matches": 1,
+      "final_url": "https://www.parliament.bg/bg/video/ID/2035",
+      "title": "Видео - Народно събрание на Република България",
+      "labels": [],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://parliament.bg/Gallery/video/archive-2026_10_16_1.mp4"
+        }
+      ],
+      "links": [
+        {
+          "text": "Български",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "English",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "КОНСТИТУЦИЯ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "НАРОДНИ ПРЕДСТАВИТЕЛИ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "KОМИСИИ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Аудиовизуален архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ПАРЛАМЕНТАРНА ДЕЙНОСТ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Видео архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ЗА МЕДИИТЕ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "ОПОЗНАЙ ПАРЛАМЕНТА",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "ПОЛЕЗНА ИНФОРМАЦИЯ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Видео",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "НАЧАЛО",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "ВИДЕО АРХИВ 1",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "АРХИВ ПЛЕНАРНИ ЗАСЕДАНИЯ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "АРХИВ ЗАСЕДАНИЯ НА КОМИСИИ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCzLUN0HmnNAMEEMynMXPBqw"
+        }
+      ],
+      "text_cache": "/tmp/topics-bulgaria.txt",
+      "outcome": "visible_archive_topics_require_review",
+      "screenshot": "/tmp/topics-bulgaria.png"
+    }
+  ]
+}

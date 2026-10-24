@@ -1,0 +1,77 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Primary evidence: https://data.ipu.org/parliament/JM/",
+    "The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles.",
+    "Source conditions: Houses of Parliament allows attributed noncommercial reproduction of its own site material with accuracy and no endorsement conditions; commercial reuse needs consent. This is not a blanket grant for PBCJ or third-party audiovisual material. Use the official programme index and keep independent playback disabled.",
+    "Full decision and playback chain: reports/discovery/2026-10-23-full-queue-decisions.json",
+    "Catalogue, flags, localized country/jurisdiction search, map and planned schedule-source links reconciled. Link-out only; no HLS or implemented EPG promotion."
+  ],
+  "channel": {
+    "id": "jamaica-parliament-pbcj-recordings",
+    "name": "Jamaica Parliamentary Recordings (PBCJ)",
+    "jurisdiction_level": "national",
+    "country_or_region": "Jamaica",
+    "legislature": "Houses of Parliament of Jamaica",
+    "external_ids": {
+      "wikidata_qid": "Q122635",
+      "ipu_country_code": "JM",
+      "ipu_parliament_code": "JM",
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q122635",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q122635 revision 2554816344 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/JM/",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://pbcjamaica.org/show/parliamentsenate/",
+    "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"jamaica-senate-recording\", \"tracks\": []}, {\"key\": \"jamaica-accounts\", \"tracks\": []}, {\"key\": \"jamaica-domesticviolence\", \"tracks\": []}]. "
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://pbcjamaica.org/show/parliamentsenate/",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "noncommercial_pending_review",
+      "summary": "Houses of Parliament allows attributed noncommercial reproduction of its own site material with accuracy and no endorsement conditions; commercial reuse needs consent. This is not a blanket grant for PBCJ or third-party audiovisual material. Use the official programme index and keep independent playback disabled.",
+      "evidence": [
+        "https://japarliament.gov.jm/index.php?option=com_content&view=article&id=51&Itemid=13",
+        "https://pbcjamaica.org/show/parliamentsenate/"
+      ],
+      "recommendation": "Use the official parliamentary programme index and check the actual recording content. A provider-live title may be stale and public-service programming may be on air. Independent reuse of broadcaster media remains unverified."
+    }
+  }
+}

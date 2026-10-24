@@ -1,0 +1,136 @@
+{
+  "method": "Visible date-scoped legislative agenda selection; this records source-generated public deep links, not a claim of decoded business or confirmed audio.",
+  "results": [
+    {
+      "id": "zurich-oct",
+      "body_id": "switzerland--zurich",
+      "url": "https://zh.recapp.ch/shareparl/",
+      "dates": [
+        "173. KR-Sitzung vom 19.10.2026"
+      ],
+      "topic": "6047 Gesetz über den Jugendschutz",
+      "checked_at": "2026-10-24T05:18:08.525Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: 173. KR-Sitzung vom 19.10.2026"
+    },
+    {
+      "id": "sg-mar2",
+      "body_id": "switzerland--st-gallen",
+      "url": "https://sg.recapp.ch/shareparl/",
+      "dates": [
+        "Montag, 2. März 2026"
+      ],
+      "topic": "22.25.07 VII. Nachtrag zum Gerichtsgesetz",
+      "checked_at": "2026-10-24T05:18:11.766Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: Montag, 2. März 2026"
+    },
+    {
+      "id": "zurich-sep",
+      "body_id": "switzerland--zurich",
+      "url": "https://zh.recapp.ch/shareparl/",
+      "dates": [
+        "September",
+        "172. KR-Sitzung vom 28.09.2026, Nachmittag"
+      ],
+      "topic": "Gesetz",
+      "checked_at": "2026-10-24T05:18:08.525Z",
+      "scoped_topics": [
+        "172. KR-Sitzung vom 28.09.2026, Nachmittag",
+        "Mitteilungen08:31",
+        "61b/2021 Thesaurierender Fonds für Uferwege08:31",
+        "88a/2022 ZVV-Grundversorgung in Randstunden und am Wochenende09:07",
+        "364d/2020 Sicheres und effizientes Velofahren dank Behebung der 1'200 Schwachstellen bei der Veloinfrastruktur09:28",
+        "424c/2021 Anpassung der Wohnbauförderungsverordnung zur Stärkung des gemeinnützigen Wohnungsbaus im Kanton Zürich10:23",
+        "102/2024 Mehr als BIP - Ökonomie des Wohlergehens10:44",
+        "Verschiedenes11:26"
+      ],
+      "outcome": "selection_unresolved",
+      "error": "Error: No matching legislative topic within date"
+    },
+    {
+      "id": "sg-mar3",
+      "body_id": "switzerland--st-gallen",
+      "url": "https://sg.recapp.ch/shareparl/",
+      "dates": [
+        "Dienstag, 3. März 2026"
+      ],
+      "topic": "22.25.04 Nachtrag zum Gesetz",
+      "checked_at": "2026-10-24T05:18:14.773Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: Dienstag, 3. März 2026"
+    },
+    {
+      "id": "tg-oct",
+      "body_id": "switzerland--thurgau",
+      "url": "https://grvisio.tg.ch/",
+      "dates": [
+        "Grosser Rat - 21.10.2026"
+      ],
+      "topic": "Parlamentarische Initiative von Peter Bühler",
+      "checked_at": "2026-10-24T05:18:15.076Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: Grosser Rat - 21.10.2026"
+    },
+    {
+      "id": "tg-sep",
+      "body_id": "switzerland--thurgau",
+      "url": "https://grvisio.tg.ch/",
+      "dates": [
+        "Grosser Rat - 28.09.2026"
+      ],
+      "topic": "Gesetz|Motion|Interpellation|Beschluss",
+      "checked_at": "2026-10-24T05:18:17.740Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: Grosser Rat - 28.09.2026"
+    },
+    {
+      "id": "vs-sep9",
+      "body_id": "switzerland--valais-wallis",
+      "url": "https://vs.recapp.ch/",
+      "dates": [
+        "9 septembre"
+      ],
+      "topic": "loi|Décret|Loi",
+      "checked_at": "2026-10-24T05:18:22.024Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: 9 septembre"
+    },
+    {
+      "id": "vs-sep8",
+      "body_id": "switzerland--valais-wallis",
+      "url": "https://vs.recapp.ch/",
+      "dates": [
+        "8 septembre"
+      ],
+      "topic": "Loi sur la détention des chiens",
+      "checked_at": "2026-10-24T05:18:19.053Z",
+      "outcome": "selection_unresolved",
+      "error": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[role=treeitem]').first() to be visible\u001b[22m\n"
+    },
+    {
+      "id": "bs-35",
+      "body_id": "switzerland--basel-stadt",
+      "url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl/",
+      "dates": [
+        "35. Sitzung"
+      ],
+      "topic": "Gesetz|Ratschlag|Motion|Bericht",
+      "checked_at": "2026-10-24T05:18:30.051Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: 35. Sitzung"
+    },
+    {
+      "id": "bs-36",
+      "body_id": "switzerland--basel-stadt",
+      "url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl/",
+      "dates": [
+        "36. Sitzung"
+      ],
+      "topic": "Gesetz|Ratschlag|Motion|Bericht",
+      "checked_at": "2026-10-24T05:18:35.792Z",
+      "outcome": "selection_unresolved",
+      "error": "Error: Date label not yet available: 36. Sitzung"
+    }
+  ]
+}

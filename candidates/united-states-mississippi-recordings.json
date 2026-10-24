@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Official institution currently designates the viewing provider. 13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide. 1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "Terms page renders example-page/LoremIpsum template content. It does not establish substantive audiovisual permission; document as a source-policy gap. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+    "Evidence: reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "united-states-mississippi-recordings",
+    "name": "Mississippi Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Mississippi",
+    "legislature": "Mississippi Legislature",
+    "external_ids": {
+      "wikidata_qid": "Q6879217",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q6879217",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Select legislature Q6879217, not a COVID outbreak item. The reviewed generic legal template remains inadequate media permission evidence. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.legislature.ms.gov/",
+    "provenance_note": "Official institution currently designates the viewing provider. 13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide. 1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.legislature.ms.gov/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Terms page renders example-page/LoremIpsum template content. It does not establish substantive audiovisual permission; document as a source-policy gap. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "evidence": [
+        "https://www.legislature.ms.gov/"
+      ],
+      "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "research_date": "2026-10-23",
+  "body_id": "poland--slaskie",
+  "catalogue_id": "poland-silesian-sejmik-recordings",
+  "decision": "publish_official_archive_link_with_explicit_browser_limitation",
+  "confirmed": {
+    "identity": {
+      "id": "Q7514834",
+      "lastrevid": 2555604304,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Silesian Regional Assembly"
+        },
+        "pl": {
+          "language": "pl",
+          "value": "Sejmik Województwa Śląskiego"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Сеймик Силезского воеводства"
+        },
+        "de": {
+          "language": "de",
+          "value": "Regionalversammlung Schlesien"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q7514834$65AAAC23-2499-427E-9DAE-343582F4DE19",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "80a5ad700a55e9e49060c3efd768ee2725435b4e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 675911,
+                  "id": "Q675911"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q7514834$fc7f3e78-45f3-a838-83ab-77602e939895",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "88bdf0debebfba0d0f20c85ee32a18fb3e6c71a6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 36,
+                  "id": "Q36"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q7514834$0541e3f7-42e7-d322-aad9-80a8085db4c5",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "1a9c312c7cac3fe8cf55404adeb94f6b99f2c416",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 54181,
+                  "id": "Q54181"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q7514834$fb42a044-4798-2d32-60b8-cb98aef667a5",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "f167c802341cb58ceb4963dc61715acce9202b94",
+              "datavalue": {
+                "value": "http://sejmik.slaskie.pl/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "b9b821e8a9140ec208fb522e0aa113d5742f6fba",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 809,
+                      "id": "Q809"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q7514834$82002b58-4ce3-3793-059e-1e68b38043b3",
+            "rank": "normal"
+          }
+        ],
+        "P2397": null
+      }
+    },
+    "official_dated_session_pages": [
+      "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji/sesja-nr-vii312026-posiedzenie-nr-1-z-dnia-2026-10-19.html",
+      "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji/sesja-nr-vii302026-posiedzenie-nr-1-z-dnia-2026-09-21.html"
+    ],
+    "webkit_recorded_samples": [
+      {
+        "key": "silesia-oct",
+        "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji/sesja-nr-vii312026-posiedzenie-nr-1-z-dnia-2026-10-19.html",
+        "time_seconds": 1208.020325625143,
+        "duration_seconds": 5925.824,
+        "decoded_frames_advanced": true,
+        "screenshot": "/tmp/resume-silesia-oct-webkit.png",
+        "visual_observation": "Regional assembly session page and chamber video: speaker at lectern, dais and regional/Polish institutional setting, not a promotional film or empty opening slate."
+      },
+      {
+        "key": "silesia-sep",
+        "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji/sesja-nr-vii302026-posiedzenie-nr-1-z-dnia-2026-09-21.html",
+        "time_seconds": 1202.4585485413925,
+        "duration_seconds": 3901.013,
+        "decoded_frames_advanced": true,
+        "screenshot": "/tmp/resume-silesia-sep-webkit.png",
+        "visual_observation": "Regional assembly session page and chamber video: speaker at lectern, dais and regional/Polish institutional setting, not a promotional film or empty opening slate."
+      }
+    ]
+  },
+  "browser_limitations": "Chromium native HLS playback failed in both selected pages; WebKit succeeded for both. Initial September seek stalled, normal resume at1200 seconds advanced. No claim that all browsers play.",
+  "source_conditions_report": "reports/health/2026-10-23-silesia-source-conditions.json",
+  "permission": "Official bulletin archive link only. Published default reuse conditions call for source/time attribution and disclosure of processing, preserve the public-affairs purpose of disclosed personal data and reserve source-specific conditions for protected works. No prior-linking consent requirement was identified in the reviewed page; this does not establish an independent audiovisual licence. Retain personal-use permission pending. No embedded player or HLS/IPTV export is added; observed manifests are dated video on demand, not stable live services.",
+  "unresolved": [
+    "chromium_playback_not_confirmed",
+    "current_live_not_observed",
+    "complete_committee_and_room_inventory_not_verified",
+    "all_spoken_tracks_not_audibly_verified",
+    "source_wide_captions_sign_variant_audio_description_unknown",
+    "independent_audiovisual_reuse_not_established"
+  ],
+  "all_metadata_and_streams_certified": false,
+  "earlier_overlay_hold_resolved": "Visible cookie acknowledgement was used; no forced clicks, overlay removal or hidden-player bypass.",
+  "evidence_reports": [
+    "reports/health/2026-10-23-silesia-normal-playback.json",
+    "reports/health/2026-10-23-silesia-visible-playback.json",
+    "reports/health/2026-10-23-silesia-resume-playback.json"
+  ],
+  "flag": {
+    "source": "https://commons.wikimedia.org/wiki/File:POL_wojew%C3%B3dztwo_%C5%9Bl%C4%85skie_flag.svg",
+    "authors": "Barbara Widłak; vector JDavid; later simplification Colohisto",
+    "license": "public domain",
+    "modified": false
+  },
+  "map": {
+    "source": "Natural Earth Admin1 public domain",
+    "source_feature": "PL-SL",
+    "current_iso": "PL-24"
+  }
+}

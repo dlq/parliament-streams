@@ -1,0 +1,19 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "later-bbsk-0",
+      "body_ids": [
+        "slovakia--banskobystricky-kraj"
+      ],
+      "url": "https://www.youtube.com/watch?v=cuxcGBztj7Q&t=7175s",
+      "title": "ZASTUPITE\u013dSTVO BBSK, 24.9.2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Banska Bystrica26th regional assembly sitting,24September2026; later sample shows named-member roll for vote17 and agenda7 proposal for date of next sitting, TV ESO and regional crest. This confirms substantive voting beyond the opening, not current live or every room.",
+      "sample_time_seconds": 7180.325119,
+      "screenshot": "/tmp/provider-sample-later-bbsk-0.png",
+      "full_service_certified": false
+    }
+  ]
+}

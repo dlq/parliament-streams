@@ -1,0 +1,58 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "chungnam-1",
+      "body_id": "south-korea--chungcheongnam",
+      "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=15141s",
+      "video": true,
+      "offset": 15141,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:44:33.957Z",
+      "status": 200,
+      "title": "제371회 임시회 제4차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 15148.604848623,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22266.241,
+        "frames": 372,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 15150.818576706,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 22266.241,
+        "frames": 432,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-chungnam-1-webkit.png",
+      "visual_review": "Reviewed screenshot: identified council member or executive answering at chamber lectern, session caption and interpreter. Selected recorded proceedings only."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "method": "Exact source-linked primary conditions PDFs, normal TLS, bounded read, no retry/bypass; privacy declarations are not audiovisual reuse licences.",
+  "results": [
+    {
+      "body": "basel-stadt",
+      "url": "https://grosserrat.bs.ch/images/dateien/Nutzungsbedingungen_Video-Bild-Ton_2024.pdf",
+      "checked_at": "2026-10-24T04:30:11.462623+00:00",
+      "status": 200,
+      "final_url": "https://grosserrat.bs.ch/images/dateien/Nutzungsbedingungen_Video-Bild-Ton.pdf",
+      "bytes": 27311,
+      "local_pdf": "/tmp/swiss-basel-stadt-terms.pdf",
+      "outcome": "bounded_primary_pdf_retained_requires_content_review",
+      "individual_content_review": {
+        "reviewed_on": "2026-10-24",
+        "finding": "Source conditions permit free information-media and noncommercial use/download with immediate Grosser Rat Basel-Stadt attribution, no misleading context and limited editing. Broader commercial/advertising use is excluded; modification beyond the listed adjustments requires written consent. This is conditional permission, not public domain or an unrestricted licence."
+      }
+    },
+    {
+      "body": "glarus-recapp-privacy",
+      "url": "https://gl.recapp.ch/shareparl/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf",
+      "checked_at": "2026-10-24T04:30:13.031693+00:00",
+      "outcome": "inspection_error",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

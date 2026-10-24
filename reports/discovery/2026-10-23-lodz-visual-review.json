@@ -1,0 +1,32 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "lodz-0",
+      "body_ids": [
+        "poland--odzkie"
+      ],
+      "url": "https://www.youtube.com/watch?v=fKEddcPTQSQ&t=1200s",
+      "title": "31 Sesja Sejmiku Wojewodztwa \u0141\u00f3dzkiego - wer z napisami - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Lodz Sejmik 22 September2026, named voting roll for amendment of multi-year financial forecast, institutional crest and interpreter. Record on-screen date separately from indexed session number.",
+      "sample_time_seconds": 1205.335026,
+      "screenshot": "/tmp/provider-sample-lodz-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "lodz-1",
+      "body_ids": [
+        "poland--odzkie"
+      ],
+      "url": "https://www.youtube.com/watch?v=7cECiPc1GMU&t=1200s",
+      "title": "XXIX sesja Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego 02-07-2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Lodz councillor Beata Drozdz speaking at chamber microphone, 2 July2026 date, subtitles and interpreter visible; visibility in these samples is not complete-source accessibility certification.",
+      "sample_time_seconds": 1205.331787,
+      "screenshot": "/tmp/provider-sample-lodz-1.png",
+      "full_service_certified": false
+    }
+  ]
+}

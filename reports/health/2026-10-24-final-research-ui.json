@@ -1,0 +1,68 @@
+{
+  "method": "Regular Playwright because Browser plugin is unavailable; local generated site, desktop and mobile, Chromium and WebKit. Checks rendering, search and map navigation, not source audiovisual quality.",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 243,
+      "regional_outlines": 143,
+      "parent_country_searches": 19,
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 243,
+      "regional_outlines": 143,
+      "parent_country_searches": 19,
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 243,
+      "regional_outlines": 143,
+      "parent_country_searches": 19,
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 243,
+      "regional_outlines": 143,
+      "parent_country_searches": 19,
+      "passed": true
+    }
+  ],
+  "reviewed_on": "2026-10-24",
+  "assertion_scope": {
+    "new_catalogue_parent_searches": 19,
+    "regional_map_detail_checks": 18,
+    "planned_schedule_links": 19,
+    "french_parent_country_search": "États-Unis finds U.S. Virgin Islands in catalogue and map",
+    "page_errors_and_horizontal_overflow": "none observed in four contexts; console messages were not independently collected",
+    "map_assets": "142 main regional features plus one separately licensed Lienchiang ODbL feature",
+    "screenshots_visually_reviewed": "Final Lienchiang map/detail layouts at 1280px and 320px in Chromium and WebKit",
+    "not_asserted": "Source media/audio/accessibility quality is not certified by these local UI checks."
+  }
+}

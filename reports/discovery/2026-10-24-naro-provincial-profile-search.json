@@ -1,0 +1,248 @@
+{
+  "checked_at": "2026-10-24T02:54:11.788402+00:00",
+  "method": "Normal public agency-index search form with its observed q parameter, sequential two-second spacing; exact institution/profile review still required. Repository profiles are not a council-owned viewing service or a current membership list.",
+  "results": [
+    {
+      "id": "philippines--abra",
+      "jurisdiction": "Abra",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Abra",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--antique",
+      "jurisdiction": "Antique",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Antique",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--apayao",
+      "jurisdiction": "Apayao",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Apayao",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--basilan",
+      "jurisdiction": "Basilan",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Basilan",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--batanes",
+      "jurisdiction": "Batanes",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Batanes",
+      "status": 200,
+      "profiles": [
+        {
+          "text": "Office of the Sangguniang Panlalawigan - Basco, Batanes",
+          "url": "https://naro.law.upd.edu.ph/agencies/office-of-the-sangguniang-panlalawigan--basco,-batanes"
+        }
+      ],
+      "outcome": "profile_candidates_require_exact_office_review"
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "jurisdiction": "Camarines Sur",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Camarines+Sur",
+      "status": 200,
+      "profiles": [
+        {
+          "text": "Sangguniang Panlalawigan, Pili, Camarines Sur",
+          "url": "https://naro.law.upd.edu.ph/agencies/sangguniang-panlalawigan,-pili,-camarines-sur"
+        }
+      ],
+      "outcome": "profile_candidates_require_exact_office_review"
+    },
+    {
+      "id": "philippines--capiz",
+      "jurisdiction": "Capiz",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Capiz",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--catanduanes",
+      "jurisdiction": "Catanduanes",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Catanduanes",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--davao-de-oro",
+      "jurisdiction": "Davao de Oro",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Davao+de+Oro",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--davao-del-norte",
+      "jurisdiction": "Davao del Norte",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Davao+del+Norte",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--guimaras",
+      "jurisdiction": "Guimaras",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Guimaras",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--ifugao",
+      "jurisdiction": "Ifugao",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Ifugao",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--kalinga",
+      "jurisdiction": "Kalinga",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Kalinga",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--laguna",
+      "jurisdiction": "Laguna",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Laguna",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--maguindanao-del-norte",
+      "jurisdiction": "Maguindanao del Norte",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Maguindanao+del+Norte",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--maguindanao-del-sur",
+      "jurisdiction": "Maguindanao del Sur",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Maguindanao+del+Sur",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--marinduque",
+      "jurisdiction": "Marinduque",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Marinduque",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--masbate",
+      "jurisdiction": "Masbate",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Masbate",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--misamis-occidental",
+      "jurisdiction": "Misamis Occidental",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Misamis+Occidental",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--negros-oriental",
+      "jurisdiction": "Negros Oriental",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Negros+Oriental",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--northern-samar",
+      "jurisdiction": "Northern Samar",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Northern+Samar",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--romblon",
+      "jurisdiction": "Romblon",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Romblon",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--siquijor",
+      "jurisdiction": "Siquijor",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Siquijor",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--sulu",
+      "jurisdiction": "Sulu",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Sulu",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--tarlac",
+      "jurisdiction": "Tarlac",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Tarlac",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--zambales",
+      "jurisdiction": "Zambales",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Zambales",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "jurisdiction": "Zamboanga Sibugay",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Zamboanga+Sibugay",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--zamboanga-del-norte",
+      "jurisdiction": "Zamboanga del Norte",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Zamboanga+del+Norte",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    },
+    {
+      "id": "philippines--zamboanga-del-sur",
+      "jurisdiction": "Zamboanga del Sur",
+      "search_url": "https://naro.law.upd.edu.ph/agencies?q=Zamboanga+del+Sur",
+      "status": 200,
+      "profiles": [],
+      "outcome": "no_exact_profile_in_this_repository_search_not_absence"
+    }
+  ]
+}

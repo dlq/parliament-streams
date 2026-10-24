@@ -1,0 +1,125 @@
+{
+  "research_date": "2026-10-23",
+  "results": [
+    {
+      "id": "brazil--assembleia-legislativa-de-alagoas",
+      "decision": "player_offscreen_not_certified",
+      "note": "TV Assembleia page but no player visible in screenshot; advancing measurement alone not proof.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "colombia--cesar",
+      "decision": "opening_slate",
+      "note": "Assembly logo at start; later provider samples reviewed separately.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "india--sikkim",
+      "decision": "government_information_not_proceedings",
+      "note": "Government video gallery, PM health scheme promotional thumbnail; no legislative business.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "portugal--assembleia-legislativa-da-regiao-autonoma-dos-acores",
+      "decision": "identified_proceedings",
+      "note": "Azores 22 October 2026 tourism incentive policy debate, Mariana Damasio deputy named in index; chamber chair, speaker and interpreter.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "slovakia--trenciansky-kraj",
+      "decision": "meeting_opening_requires_later_business_sample",
+      "note": "Trencin 28th assembly meeting 7 September 2026, agenda approval caption, chair and interpreter; later substantive business needed.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "spain--parlamento-de-cantabria",
+      "decision": "opening_slate_consent_overlay",
+      "note": "19 October plenary page with title slate behind cookie notice; no consent action or business certification.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "spain--cortes-de-castilla-y-leon",
+      "decision": "opening_slate",
+      "note": "Institution logo, agenda timestamps indicate later business but not sampled here.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "switzerland--aargau",
+      "decision": "audio_or_voting_graphic_requires_further_review",
+      "note": "Recapp named Urs Pluss and agenda with voting graphic, not visible chamber footage.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "united-states--maryland",
+      "decision": "website_tutorial_not_proceedings",
+      "note": "Introduction to MGA website, 2-minute tutorial.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "united-states--louisiana",
+      "decision": "opening_film",
+      "note": "Capitol aerial film, no legislative business at this point.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "united-states--nebraska",
+      "decision": "network_promo_not_proceedings",
+      "note": "Nebraska public-media historical station promo.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "united-states--vermont",
+      "decision": "educational_clip_not_proceedings",
+      "note": "The Bill Process From Draft to Law educational recording.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "uruguay--san-jose",
+      "decision": "recess_slate",
+      "note": "Cancer prevention graphic labelled Cuarto Intermedio in recorded ordinary sitting.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "uruguay--salto",
+      "decision": "opening_slate",
+      "note": "Welcome president graphic; separate later provider samples establish actual business.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    },
+    {
+      "id": "belgium--parlement-de-wallonie",
+      "decision": "institutional_film_not_proceedings",
+      "note": "Presentation film on video index.",
+      "reviewed_on": "2026-10-23",
+      "source_report": "reports/health/2026-10-23-native-archive-followup.json",
+      "full_service_certified": false
+    }
+  ]
+}

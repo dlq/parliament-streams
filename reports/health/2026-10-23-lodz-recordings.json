@@ -1,0 +1,104 @@
+{
+  "started_at": "2026-10-23T20:02:45.333Z",
+  "method": "Up to two substantive-title recording leads per discovered provider, normal public Chromium, two concurrent pages and 26-second inspection bound. Muted sample after seeking beyond opening material where duration permits. Technical progress is provisional until visual content and primary institution/provider identity are checked; short clips, adverts, unavailable and live-offline pages are held.",
+  "total_jobs": 2,
+  "completed_jobs": 2,
+  "halted_for_access_limit": false,
+  "provider_dispositions": [],
+  "results": [
+    {
+      "key": "lodz-0",
+      "body_ids": [
+        "poland--odzkie"
+      ],
+      "provider_url": "https://www.youtube.com/playlist?list=PL1hmQBv550sOxkxe3slS48Q75Quc87gL_",
+      "url": "https://www.youtube.com/watch?v=fKEddcPTQSQ&t=1200s",
+      "sample_offset_seconds": 1200,
+      "purpose": "Official council-session playlist; selected full sitting, technical/content review still required.",
+      "checked_at": "2026-10-23T20:02:45.471Z",
+      "proceedings_verified": false,
+      "advancing_media_signal": true,
+      "status": 200,
+      "title": "31 Sesja Sejmiku Wojewodztwa Łódzkiego - wer z napisami - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n20:00 / 2:26:00\n31 Sesja Sejmiku Wojewodztwa Łódzkiego - wer z napisami\nŁódzkie dla Ciebie\n1.88k subscribers\nSubscribe\n0\nShare\nSave\n175 views  2 weeks ago\nObserwuj nas 👇👇👇\nFACEBOOK:   / wojewodztwo.lodzkie  \nINSTAGRAM:   / wojewodztwo.lodzkie   …\n...more\n\n3:01:43\nNew\nXXXII sesja Sejmiku Województwa Łódzkiego  (20.10.2026 r.)\nŁódzkie dla Ciebie\n1k\nStreamed 3 days ago\n1:00:04\nNew\nNawyki, które niszczą twój mózg. Jak umysł wpływa na zdrowie? Stres vs. nuda II Joanna Wojsiat #84\nhoryzonty\n122k\n2 days ago\n43:04\nNew\nBeata Pawlikowska szczerze jak nigdy! Wielka miłość do Cejrowskiego i życiowe zakręty\nKozaczek\n57k\n7 hr ago\n1:10:20\nNew\nCompany data in ChatGPT? Expert says what you absolutely should not do - Mateusz Chrobok in Bizne...\nBiznes Klasa\n334k\n5 days ago\nAuto-dubbed\n3:12:37\nVII sesja Młodzieżowego Sejmiku Województwa Łódzkiego III kadencji (25.09.2026)\nŁódzkie dla Ciebie\n226\nStreamed 4 wk ago\n18:44\nNew\nInformacje Dnia 23.10.2026 [20.00]\nRadio Maryja\n1.6k\n",
+      "advertisement": false,
+      "seek": 1200,
+      "first": [
+        {
+          "time": 1203.330836,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 8760.661,
+          "frames": 88
+        }
+      ],
+      "later": [
+        {
+          "time": 1205.335026,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 8760.661,
+          "frames": 137
+        }
+      ],
+      "short_clip": false,
+      "outcome": "advancing_media_requires_visual_identity_review",
+      "screenshot": "/tmp/provider-sample-lodz-0.png",
+      "player_box": {
+        "x": 16,
+        "y": 68,
+        "width": 880,
+        "height": 495
+      }
+    },
+    {
+      "key": "lodz-1",
+      "body_ids": [
+        "poland--odzkie"
+      ],
+      "provider_url": "https://www.youtube.com/playlist?list=PL1hmQBv550sOxkxe3slS48Q75Quc87gL_",
+      "url": "https://www.youtube.com/watch?v=7cECiPc1GMU&t=1200s",
+      "sample_offset_seconds": 1200,
+      "purpose": "Official council-session playlist; selected full sitting, technical/content review still required.",
+      "checked_at": "2026-10-23T20:02:45.471Z",
+      "proceedings_verified": false,
+      "advancing_media_signal": true,
+      "status": 200,
+      "title": "XXIX sesja Sejmiku Województwa Łódzkiego 02-07-2026 - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n20:00 / 1:26:44\nXXIX sesja Sejmiku Województwa Łódzkiego 02-07-2026\nŁódzkie dla Ciebie\n1.88k subscribers\nSubscribe\n0\nShare\nSave\n157 views  3 months ago\nObserwuj nas 👇👇👇\nFACEBOOK:   / wojewodztwo.lodzkie  \nINSTAGRAM:   / wojewodztwo.lodzkie   …\n...more\n\nComments\n \n \n \n \n2:26:01\n31 Sesja Sejmiku Wojewodztwa Łódzkiego - wer z napisami\nŁódzkie dla Ciebie\n175\n2 wk ago\n3:01:43\nNew\nXXXII sesja Sejmiku Województwa Łódzkiego  (20.10.2026 r.)\nŁódzkie dla Ciebie\n1k\nStreamed 3 days ago\n1:01:16\nUROCZYSTE POSIEDZENIE SENATU POLITECHNIKI ŁÓDZKIEJ - 14.05.2025\nPolitechnika Łódzka Lodz University of Technology\n1k\nStreamed 1 yr ago\n27:02\nNew\n'Offer Was Not...': Canada's Chief Negotiator Backs Carney, Reveals Why Trump Tariff Talks Collapsed\nHook Global\n191k\n22 hr ago\n43:04\nNew\nBeata Pawlikowska szczerze jak nigdy! Wielka miłość do Cejrowskiego i życiowe zakręty\nKozaczek\n57k\n7 hr ago\n57:46\nSpotkanie wokół książki „Politycy XX wieku”- #EkSocCzyta – Literatura Faktu na EkSocu.",
+      "advertisement": false,
+      "seek": 1200,
+      "first": [
+        {
+          "time": 1203.328091,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 5204.161,
+          "frames": 114
+        }
+      ],
+      "later": [
+        {
+          "time": 1205.331787,
+          "width": 640,
+          "height": 360,
+          "ready": 4,
+          "duration": 5204.161,
+          "frames": 164
+        }
+      ],
+      "short_clip": false,
+      "outcome": "advancing_media_requires_visual_identity_review",
+      "screenshot": "/tmp/provider-sample-lodz-1.png",
+      "player_box": {
+        "x": 16,
+        "y": 68,
+        "width": 912,
+        "height": 513
+      }
+    }
+  ]
+}

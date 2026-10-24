@@ -1,0 +1,1482 @@
+{
+  "research_date": "2026-10-23",
+  "no_bulk_search_or_rate_limit_retry": true,
+  "results": [
+    {
+      "id": "argentina--buenos-aires",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Diputados%20de%20la%20Provincia%20de%20Buenos%20Aires",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q4985544",
+      "revision": 2288504789,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Buenos Aires Province Chamber of Deputies"
+        },
+        "es": {
+          "language": "es",
+          "value": "Cámara de Diputados de la Provincia de Buenos Aires"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "9a26e8d79578c6c69a5c3948e4da4ccccf8b353c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 320289,
+                  "id": "Q320289"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985544$39AD2112-36B8-4493-9BF8-8A31B95B8FF1",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "b56c16941adcaf1e18974e852cff8ec864d788b7",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "3c4be6dca5c9b424dca2ebc4750fb013f4491d64",
+                      "datavalue": {
+                        "value": "https://www.comunicaciontucuman.gob.ar/noticia/seguridad/205941/capacitaron-cadetes-policia-investigacion-delitos-linea-contra-ninos",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P1476": [
+                    {
+                      "snaktype": "value",
+                      "property": "P1476",
+                      "hash": "26badf5b6b317d47d57fcd102b46d45a7c20e98e",
+                      "datavalue": {
+                        "value": {
+                          "text": "Capacitaron a cadetes de la Policía en la investigación de delitos en línea contra niños",
+                          "language": "es"
+                        },
+                        "type": "monolingualtext"
+                      },
+                      "datatype": "monolingualtext"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854",
+                  "P1476"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985544$ffbbd3fa-43c5-083b-5677-df325c7df243",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985544$8B4E23BB-E4B1-448A-8D48-8C90DB4CC342",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "9da155625f668ab7400d4913d92bb7d06acb3737",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44754,
+                  "id": "Q44754"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985544$397182cd-4cd5-2c1e-c095-dc5b32ae4d0d",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "506b2b018150707f9bf897e09f537caa74d214d2",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "112305b15536eea45155c5648f16d6ada4f4a9dd",
+                      "datavalue": {
+                        "value": "https://www.eltrecetv.com.ar/telenoche/2023/09/22/allanaron-la-casa-de-chocolate-rigau-se-encontraron-48-tarjetas-de-debito-y-un-millon-200-mil-pesos/",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P1476": [
+                    {
+                      "snaktype": "value",
+                      "property": "P1476",
+                      "hash": "72922618bd35656e1d5c329add0e47ddf952f536",
+                      "datavalue": {
+                        "value": {
+                          "text": "Allanaron la casa de Chocolate Rigau: se encontraron 48 tarjetas de débito y un millón 200 mil pesos",
+                          "language": "es"
+                        },
+                        "type": "monolingualtext"
+                      },
+                      "datatype": "monolingualtext"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854",
+                  "P1476"
+                ]
+              }
+            ]
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "859823b31f04f3f8137a9c66f294f1f7371616cf",
+              "datavalue": {
+                "value": "https://www.hcdiputados-ba.gov.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q4985544$a4bd5c2b-4389-e09a-d4b9-06b44fe8805e",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--catamarca",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Senadores%20de%20la%20Provincia%20de%20Catamarca",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q56248161",
+      "revision": 2247105437,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Cámara de Senadores de la Provincia de Catamarca"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "adc49a009742c9ab9f057f5920c930a437829574",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 2570643,
+                  "id": "Q2570643"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56248161$30d40854-4983-6ab0-c49b-90c1fa1fcb7f",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56248161$8c7f96ed-4d5c-21c0-b47c-cf153dfafafa",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56248161$4a2a058f-4190-4352-5509-296c7296cafa",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "f39c6f4a65c89832bb0029fe6b19caa597173aea",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44756,
+                  "id": "Q44756"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56248161$9e59e904-4956-d5a3-25e6-dc5fcd835332",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "d9b1f9f15d479c24845722de7e58f3e193f489a5",
+              "datavalue": {
+                "value": "https://senadodecatamarca.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q56248161$fc0bc1a0-4f80-9e89-7168-0ec29a993b49",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--ciudad-autonoma-de-buenos-aires",
+      "discovery_page": "https://es.wikipedia.org/wiki/Legislatura%20de%20la%20Ciudad%20Aut%C3%B3noma%20de%20Buenos%20Aires",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q4985519",
+      "revision": 2463427417,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Buenos Aires City Legislature"
+        },
+        "es": {
+          "language": "es",
+          "value": "Legislatura de la Ciudad Autónoma de Buenos Aires"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7ee60ef6537bdcbde1463163b61345e4bb4153f5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3154693,
+                  "id": "Q3154693"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985519$0e5efcae-443e-c5a4-117b-ac555240aaf1",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985519$3ED5A485-09D5-45EF-BFB4-9660873D2872",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985519$e5111ddf-4dab-dfe4-5b92-1d7364c6a85b",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985519$a8fc6886-44c6-f988-8c2a-369e1f6e3f87",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "e3490390b181b39dcebc2216c66784caf65a1c74",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1486,
+                  "id": "Q1486"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q4985519$5d36186a-4bd0-3e01-3215-cc8a35326190",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "0d70958f8cc4697581fe89d50c1768b36d4ef6dd",
+              "datavalue": {
+                "value": "https://www.legislatura.gov.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q4985519$90594728-43e1-ed39-b0d0-39286571b1d7",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--la-rioja",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Diputados%20de%20la%20Provincia%20de%20La%20Rioja",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "argentina--mendoza",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Diputados%20de%20la%20Provincia%20de%20Mendoza",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q97369212",
+      "revision": 2350229977,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Cámara de Diputados de la Provincia de Mendoza"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "9a26e8d79578c6c69a5c3948e4da4ccccf8b353c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 320289,
+                  "id": "Q320289"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q97369212$68406fec-4e64-5d62-2236-25b65d48349e",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q97369212$c6c931f2-4990-8eda-b4e8-30a64e528ab4",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q97369212$d72ed3dc-4719-2712-6091-548292c43a58",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "ea34889242f15fa02ef7b5f23c752c8089f3afdb",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44797,
+                  "id": "Q44797"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q97369212$f1819d49-4c15-0f8d-81d5-d098ed987842",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "aa742b81c26c39bd4d376011ad89f3426677d998",
+              "datavalue": {
+                "value": "https://www.hcdmza.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q97369212$84818f59-421f-9f44-ec85-99983933e445",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--rio-negro",
+      "discovery_page": "https://es.wikipedia.org/wiki/Legislatura%20de%20la%20Provincia%20de%20R%C3%ADo%20Negro",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q41143698",
+      "revision": 2248890703,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Legislature of Río Negro"
+        },
+        "es": {
+          "language": "es",
+          "value": "Legislatura de la Provincia de Río Negro"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q41143698$259027E8-9D23-451D-9E30-E5F0000835B5",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q41143698$d8121a06-422e-bfbc-2e68-66e88407aaff",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q41143698$fe68cdab-452f-ba64-b509-41734937c98a",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "4f5a39fef3e072053b842304414a58a717d55aa1",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44802,
+                  "id": "Q44802"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q41143698$4b8ac09d-4de5-7502-33ee-00e4618db898",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "267319aeca50ff45cd66665e6266e0c2aa75a2ed",
+              "datavalue": {
+                "value": "https://web.legisrn.gov.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q41143698$98645ee1-436c-ba1a-c358-feadece96b8a",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--salta",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Diputados%20de%20la%20Provincia%20de%20Salta",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q40323582",
+      "revision": 2247286599,
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Chamber of Deputies of Salta"
+        },
+        "es": {
+          "language": "es",
+          "value": "Cámara de Diputados de Salta"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "9a26e8d79578c6c69a5c3948e4da4ccccf8b353c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 320289,
+                  "id": "Q320289"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q40323582$54d4cc5b-4f00-f0ba-0f5c-987b46d6862e",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q40323582$d6e55ee8-4774-0167-5a68-1ad80511a084",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q40323582$d86c6eba-49d8-73b8-5a15-95e13643c85c",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "2456e923c027cdebdf858642b0356348c062d649",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44803,
+                  "id": "Q44803"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q40323582$f734ac60-4470-2134-a819-bbfa1a667c7d",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "835e2cbc55db599edb23449d3dda35a8e7d025cd",
+              "datavalue": {
+                "value": "https://www.diputadosalta.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q40323582$8f3450db-4fee-ad8b-e599-25c482407d0b",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--san-juan",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Diputados%20de%20la%20Provincia%20de%20San%20Juan",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q54823916",
+      "revision": 1586350703,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Cámara de Diputados de la Provincia de San Juan"
+        },
+        "en": {
+          "language": "en",
+          "value": "Chamber of Deputies of San Juan"
+        }
+      },
+      "claims": {
+        "P31": [],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q54823916$5297F092-02BE-4A8C-A48C-92F0CECC1862",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "f62330666319fe9dc6ac5f86dfd992fbdf85496b",
+              "datavalue": {
+                "value": "http://diputadossanjuan.gob.ar",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q54823916$64a264f9-80a0-4219-8557-b692c940a54e",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--santa-cruz",
+      "discovery_page": "https://es.wikipedia.org/wiki/C%C3%A1mara%20de%20Diputados%20de%20la%20Provincia%20de%20Santa%20Cruz",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q5795778",
+      "revision": 2247312171,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Cámara de Diputados de la Provincia de Santa Cruz"
+        },
+        "en": {
+          "language": "en",
+          "value": "Santa Cruz Chamber of Deputies"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5795778$ED685159-479B-4F12-8869-BB6036E7FAC9",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5795778$052ca1ae-43bb-09ea-2c2f-f247e165dffb",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5795778$660286cc-4237-a8e9-7032-b07b624b5111",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "4a9efe0b2c02b0a5a4bb2d62f0fcffe73946d560",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44821,
+                  "id": "Q44821"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5795778$cd8e2bac-4f4e-8059-2220-490a82c75426",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "ff244b868405bde813de0c927755b37c3e13cd0f",
+              "datavalue": {
+                "value": "https://camaradelpueblo.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q5795778$09dbaa7f-4e12-0d83-7899-7aa3e09b9cde",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--tierra-del-fuego",
+      "discovery_page": "https://es.wikipedia.org/wiki/Legislatura%20de%20la%20Provincia%20de%20Tierra%20del%20Fuego%2C%20Ant%C3%A1rtida%20e%20Islas%20del%20Atl%C3%A1ntico%20Sur",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q16589934",
+      "revision": 2272407606,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Legislatura de la Provincia de Tierra del Fuego"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislature of Tierra del Fuego"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16589934$1C8C791A-2C2C-48E3-A23B-E06419B4954D",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16589934$f156bd21-4cbc-e449-5c6b-d2af2aed5a63",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16589934$f4386f79-43fa-736e-5526-e4f579871146",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "b8812710c8ce07d7ed26885281a2805152a19260",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44832,
+                  "id": "Q44832"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16589934$bc6b30a3-4b41-0322-50a0-5345e8477b9a",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "359e9923a970e5fe92fa0377aedea8105ee53231",
+              "datavalue": {
+                "value": "https://www.legistdf.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q16589934$70839a8b-4e97-14b6-8586-f0c6eb8d1dd6",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "argentina--tucuman",
+      "discovery_page": "https://es.wikipedia.org/wiki/Legislatura%20de%20la%20Provincia%20de%20Tucum%C3%A1n",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q54823903",
+      "revision": 2488334327,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Legislatura de la Provincia de Tucumán"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislature of Tucumán"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q54823903$6e2189d5-4529-b55d-5965-372fabe5f455",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q54823903$4e195884-4d1a-f6b6-a0cb-ee42e8248db0",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q54823903$2C86E799-7896-4C30-9EF9-3A9F3C7E50D2",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "a8da36e8f7c54d6e6c9b1f94ea18d9fa7d649eaf",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44829,
+                  "id": "Q44829"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q54823903$6f5fbade-48d7-0a38-3cdb-85ec60e8ec46",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "09978a8465cea72d484af938ee20d3cbb9181208",
+              "datavalue": {
+                "value": "https://legislaturadetucuman.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q54823903$ffa04d55-4526-fcb2-eb2a-1842d09aa34a",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "research_date": "2026-10-24",
+  "decision": "publish_nine_scoped_official_recording_links",
+  "records": [
+    {
+      "body_id": "germany--thuringer-landtag",
+      "catalogue_id": "germany-thuringer-landtag-recordings",
+      "institution": "Thüringer Landtag",
+      "region": "Thuringia",
+      "qid": "Q896075",
+      "entity_revision": 2544449961,
+      "primary_reference": "https://www.thueringer-landtag.de/",
+      "primary_provider_designation": [
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/channel/UCCAO9JctC_kraxU_vFb-Ibw"
+        }
+      ],
+      "identity_finding": "Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 58th sitting continuation9October2026 at14:09, member at branded lectern. Separate recording part of same sitting as other sample. 58th sitting9October2026 at09:34, woman at branded lectern; same sitting/date, not a second independent plenary date. Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-germany-thuringer-landtag-1",
+          "url": "https://www.youtube.com/watch?v=YOsXrwzE6IY&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business_part",
+          "observation": "58th sitting continuation9October2026 at14:09, member at branded lectern. Separate recording part of same sitting as other sample.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-germany-thuringer-landtag-2",
+          "url": "https://www.youtube.com/watch?v=cRMjff1Uy4Q&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business_part",
+          "observation": "58th sitting9October2026 at09:34, woman at branded lectern; same sitting/date, not a second independent plenary date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Social/private sharing allowed within conditions; broader use requires written permission unless specific conditions apply. Printed official papers/protocol exceptions do not automatically license video. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "DE-TH",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "japan--fukui",
+      "catalogue_id": "japan-fukui-recordings",
+      "institution": "福井県議会",
+      "region": "Fukui",
+      "qid": "Q11591505",
+      "entity_revision": 2491304544,
+      "primary_reference": "https://www.pref.fukui.lg.jp/gikai/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCjfd0zvLfSwBfzGsff8NOLg"
+        }
+      ],
+      "identity_finding": "Specific Fukui Prefectural AssemblyQ11591505 and Japan/prefecture/site correspondence reviewed. Two budget/accounts questioner segments are from one2October2026committee, not two dates.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 Budget/Accounts special committee, Tomonobu Shimizu speaking at standing desk microphone. September regular-session period, October actual meeting date. Same2October2026 Budget/Accounts committee, Daisuke Watanabe speaking at desk microphone. Separate member segment, not a second sitting date. Specific Fukui Prefectural AssemblyQ11591505 and Japan/prefecture/site correspondence reviewed. Two budget/accounts questioner segments are from one2October2026committee, not two dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-japan-fukui-1",
+          "url": "https://www.youtube.com/watch?v=t_WT45nkTR0&t=1200s",
+          "offset": 1200,
+          "decision": "identified_budget_committee_segment",
+          "observation": "2October2026 Budget/Accounts special committee, Tomonobu Shimizu speaking at standing desk microphone. September regular-session period, October actual meeting date.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-japan-fukui-2",
+          "url": "https://www.youtube.com/watch?v=0cj_jNDFpKY&t=1200s",
+          "offset": 1200,
+          "decision": "identified_budget_committee_segment",
+          "observation": "Same2October2026 Budget/Accounts committee, Daisuke Watanabe speaking at desk microphone. Separate member segment, not a second sitting date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "JP-18",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "japan--fukushima",
+      "catalogue_id": "japan-fukushima-recordings",
+      "institution": "福島県議会",
+      "region": "Fukushima",
+      "qid": "Q11593337",
+      "entity_revision": 2491304612,
+      "primary_reference": "https://www.pref.fukushima.lg.jp/site/gikai/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg?si=-Oad0gcJL17JeEYh"
+        },
+        {
+          "text": "https://www.youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg",
+          "url": "https://www.youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg"
+        },
+        {
+          "text": "議会中継",
+          "url": "https://youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg?si=G2K2zIpYoO_C_-sS"
+        }
+      ],
+      "identity_finding": "Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 General Review committee, Yuichi Mayama question segment with chamber officials and inset interpreter. Standing member approaching microphone at selected moment. Same2October2026 committee, Saori Ohashi question segment: General Affairs director answering at lectern, named caption and inset interpreter. Separate question segment of same meeting, not another date. Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-japan-fukushima-1",
+          "url": "https://www.youtube.com/watch?v=1WxISJRgnHQ&t=649s",
+          "offset": 649,
+          "decision": "identified_review_committee_segment",
+          "observation": "2October2026 General Review committee, Yuichi Mayama question segment with chamber officials and inset interpreter. Standing member approaching microphone at selected moment.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-japan-fukushima-2",
+          "url": "https://www.youtube.com/watch?v=1hXdYeUKD2k&t=913s",
+          "offset": 913,
+          "decision": "identified_review_committee_segment",
+          "observation": "Same2October2026 committee, Saori Ohashi question segment: General Affairs director answering at lectern, named caption and inset interpreter. Separate question segment of same meeting, not another date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "Assembly website information is copyrighted; private copying/statutory quotation exceptions do not give general permission to reproduce/modify material. No blanket session-video grant. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "JP-07",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "japan--iwate",
+      "catalogue_id": "japan-iwate-recordings",
+      "institution": "岩手県議会",
+      "region": "Iwate",
+      "qid": "Q11474798",
+      "entity_revision": 2491304466,
+      "primary_reference": "https://www.pref.iwate.jp/gikai/index.html",
+      "primary_provider_designation": [
+        {
+          "text": "岩手県議会公式チャンネル（YouTube）",
+          "url": "https://www.youtube.com/channel/UC7llJipxaCPCBoAMz055g5Q"
+        }
+      ],
+      "identity_finding": "Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 Saito Shin general-question segment, prefectural Health/Welfare department official answering from chamber desk; September regular-session period. Same5October2026 sitting, Hagino Yukihiro at plenary lectern with named party/member caption. Separate member segment, not another sitting date. Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-japan-iwate-1",
+          "url": "https://www.youtube.com/watch?v=kRwlnc7G_Nw&t=1200s",
+          "offset": 1200,
+          "decision": "identified_general_question_segment",
+          "observation": "5October2026 Saito Shin general-question segment, prefectural Health/Welfare department official answering from chamber desk; September regular-session period.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-japan-iwate-2",
+          "url": "https://www.youtube.com/watch?v=jlP9Za7MelM&t=1200s",
+          "offset": 1200,
+          "decision": "identified_general_question_segment",
+          "observation": "Same5October2026 sitting, Hagino Yukihiro at plenary lectern with named party/member caption. Separate member segment, not another sitting date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "JP-03",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "taiwan--hsinchu-city",
+      "catalogue_id": "taiwan-hsinchu-city-recordings",
+      "institution": "新竹市議會",
+      "region": "Hsinchu City",
+      "qid": "Q11084017",
+      "entity_revision": 2434122606,
+      "primary_reference": "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+      "primary_provider_designation": [
+        {
+          "text": "議事直播",
+          "url": "https://www.youtube.com/channel/UCnit-yB80zHt800dSTr42Vw/live"
+        }
+      ],
+      "identity_finding": "Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 (ROC115.10.05), regular-session general questions: members and executive official exchange over community mental-health slide; west-calendar clock matchesROC date. Same5October2026 sitting, different member segment on police/fire health-check support with questioner and official in split screen. Separate segment, not another date. Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-taiwan-hsinchu-city-1",
+          "url": "https://www.youtube.com/watch?v=qLghZJFBL5s&t=1200s",
+          "offset": 1200,
+          "decision": "identified_question_segment",
+          "observation": "5October2026 (ROC115.10.05), regular-session general questions: members and executive official exchange over community mental-health slide; west-calendar clock matchesROC date.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-taiwan-hsinchu-city-2",
+          "url": "https://www.youtube.com/watch?v=kQFUGzIB5Hc&t=1200s",
+          "offset": 1200,
+          "decision": "identified_question_segment",
+          "observation": "Same5October2026 sitting, different member segment on police/fire health-check support with questioner and official in split screen. Separate segment, not another date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "TW-HSZ",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--kalimantan-tengah",
+      "catalogue_id": "indonesia-kalimantan-tengah-recordings",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Tengah",
+      "region": "Central Kalimantan",
+      "qid": "Q25461958",
+      "entity_revision": 2482943619,
+      "primary_reference": "https://dprd.kalteng.go.id/",
+      "primary_provider_designation": [
+        {
+          "text": "Subscribe",
+          "url": "https://www.youtube.com/@dprdkalteng"
+        },
+        {
+          "text": "Youtube",
+          "url": "https://www.youtube.com/@DPRDKALTENG"
+        }
+      ],
+      "identity_finding": "Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. Ninth plenary of first2026 sitting period, member reading at DPRD Kalteng lectern under Rapat Paripurna caption; recent upload, exact date not independently read from frame. Eighth plenary of first2026 sitting period, separate member reading at same branded assembly lectern; exact meeting date not independently established. Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-indonesia-kalimantan-tengah-1",
+          "url": "https://www.youtube.com/watch?v=OBqadeFriww&t=8473s",
+          "offset": 8473,
+          "decision": "identified_plenary_business",
+          "observation": "Ninth plenary of first2026 sitting period, member reading at DPRD Kalteng lectern under Rapat Paripurna caption; recent upload, exact date not independently read from frame.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-indonesia-kalimantan-tengah-2",
+          "url": "https://www.youtube.com/watch?v=CRz14VG4nAM&t=3400s",
+          "offset": 3400,
+          "decision": "identified_plenary_business",
+          "observation": "Eighth plenary of first2026 sitting period, separate member reading at same branded assembly lectern; exact meeting date not independently established.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "ID-KT",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--jawa-tengah",
+      "catalogue_id": "indonesia-jawa-tengah-recordings",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Tengah",
+      "region": "Central Java",
+      "qid": "Q25461159",
+      "entity_revision": 2507008731,
+      "primary_reference": "https://dprd.jatengprov.go.id/",
+      "primary_provider_designation": [
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/@BerlianTVDPRDJateng"
+        },
+        {
+          "text": "Dampak Media Sosial Pada Perkembangan Anak di Jawa Tengah",
+          "url": "https://www.youtube.com/watch?v=KVKCN4lwAj8&pp=0gcJCT8LAYcqIYzv"
+        },
+        {
+          "text": "Wujudkan Warga Jateng BERSINAR (Bersih dari Narkoba)",
+          "url": "https://www.youtube.com/watch?v=naE0G8Q3oMk&pp=0gcJCT8LAYcqIYzv"
+        },
+        {
+          "text": "DPRD Jateng Punya Peran Penting Arah Pembangunan Daerah",
+          "url": "https://www.youtube.com/watch?v=Pu3LkekbPDk"
+        },
+        {
+          "text": "Pengibaran Bendera Merah Putih, HUT ke-79 RI",
+          "url": "https://www.youtube.com/watch?v=siV6QOMm4Qs"
+        },
+        {
+          "text": "Implementasi Nilai Pancasila Perekat Bangsa bagi Generasi Z",
+          "url": "https://www.youtube.com/watch?v=AnGiU3iRTEU"
+        }
+      ],
+      "identity_finding": "Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. APBD2026 amendment plenary, budget-body report conclusions slides with speaker inset; institutional BerlianTV DPRD Jateng branding. Governor explaining amended2026 budget, fiscal structure slides and speaker inset under assembly provider branding. Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-indonesia-jawa-tengah-1",
+          "url": "https://www.youtube.com/watch?v=khxoLpQZk3Q&t=733s",
+          "offset": 733,
+          "decision": "identified_budget_report",
+          "observation": "APBD2026 amendment plenary, budget-body report conclusions slides with speaker inset; institutional BerlianTV DPRD Jateng branding.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-indonesia-jawa-tengah-2",
+          "url": "https://www.youtube.com/watch?v=FV710SLdHRI&t=1200s",
+          "offset": 1200,
+          "decision": "identified_budget_explanation",
+          "observation": "Governor explaining amended2026 budget, fiscal structure slides and speaker inset under assembly provider branding.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "ID-JT",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "indonesia--di-yogyakarta",
+      "catalogue_id": "indonesia-di-yogyakarta-recordings",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi DI Yogyakarta",
+      "region": "Yogyakarta",
+      "qid": "Q25463081",
+      "entity_revision": 2507461254,
+      "primary_reference": "https://jdih-dprd-diy.jogjaprov.go.id/",
+      "primary_provider_designation": [
+        {
+          "text": "@dprddiy",
+          "url": "https://youtube.com/@dprddiy?si=BNl6746wyyjigoJY"
+        }
+      ],
+      "identity_finding": "Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 30September2026 plenary, member reading at assembly lectern under matching dated ticker. 23September2026 plenary, separate speaker reading at branded assembly lectern under matching dated ticker. Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-indonesia-di-yogyakarta-1",
+          "url": "https://www.youtube.com/watch?v=b7RYHucs7Sk&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "30September2026 plenary, member reading at assembly lectern under matching dated ticker.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-indonesia-di-yogyakarta-2",
+          "url": "https://www.youtube.com/watch?v=jecRBEWgQ9c&t=1200s",
+          "offset": 1200,
+          "decision": "identified_plenary_business",
+          "observation": "23September2026 plenary, separate speaker reading at branded assembly lectern under matching dated ticker.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "ID-YO",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "south-africa--free-state",
+      "catalogue_id": "south-africa-free-state-recordings",
+      "institution": "Free State Provincial Legislature",
+      "region": "Free State",
+      "qid": "Q17053115",
+      "entity_revision": 2472350002,
+      "primary_reference": "https://fsl.gov.za/",
+      "primary_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/@freestatelegislature"
+        }
+      ],
+      "identity_finding": "Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries.",
+      "confirmed_scope": "Official institution/provider designation and retained selected-recording validation from23October2026. 3September2026 Public Accounts/Finance and Education/Health/SocialServices joint committees, WomenDevelopment programme targets/performance slide under assembly dated committee banner. 1September2026 Public Accounts/Finance and CooperativeGovernance/Premier joint committees,2026/27 performance targets slide under dated assembly banner. Not two plenaries. Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "selected_recordings": [
+        {
+          "key": "remaining-south-africa-free-state-1",
+          "url": "https://www.youtube.com/watch?v=1bxKMuTQRIM&t=1200s",
+          "offset": 1200,
+          "decision": "identified_joint_committee_presentation",
+          "observation": "3September2026 Public Accounts/Finance and Education/Health/SocialServices joint committees, WomenDevelopment programme targets/performance slide under assembly dated committee banner.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-south-africa-free-state-2",
+          "url": "https://www.youtube.com/watch?v=zVLhLMpZUAk&t=1200s",
+          "offset": 1200,
+          "decision": "identified_joint_committee_presentation",
+          "observation": "1September2026 Public Accounts/Finance and CooperativeGovernance/Premier joint committees,2026/27 performance targets slide under dated assembly banner. Not two plenaries.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_not_established",
+        "selected_recording_dates_parts_and_committee_scope_retain_specific_limits",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_feature": "ZA-FS",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "scope_rule": "A verified official archive may be listed with accurately described recorded-business samples from two parts/member segments of one sitting. Different dates strengthen continuity evidence but are not invented or required to describe a limited official viewing resource. This does not establish current live or full-service certification.",
+  "retained_media_report": "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+  "identity_claim_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+  "not_claimed": [
+    "fresh_replay_of_the_retained_samples",
+    "independent_dates_for_same_meeting_parts",
+    "current_live_every_room_full_audio_accessibility",
+    "independent_video_licence"
+  ]
+}

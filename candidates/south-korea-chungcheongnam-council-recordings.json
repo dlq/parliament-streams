@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The council website explicitly designates its YouTube service. Two distinct recorded sittings (371st extraordinary session, third and fourth plenaries) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+    "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+    "Evidence: reports/discovery/2026-10-23-korean-second-three-publication-review.json"
+  ],
+  "channel": {
+    "id": "south-korea-chungcheongnam-council-recordings",
+    "name": "Chungcheongnam-do Council Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Chungcheongnam-do",
+    "legislature": "충청남도의회",
+    "external_ids": {
+      "wikidata_qid": "Q16100275",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q16100275",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact council Q16100275, revision 2510976436, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+      }
+    ],
+    "language": "Korean",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+    "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (371st extraordinary session, third and fourth plenaries) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+        "method": "GET",
+        "kind": "official_institution_video_and_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+      "evidence": [
+        "https://council.chungnam.go.kr/kr/cast/plenary.do"
+      ],
+      "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+    }
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Fresh authority-only attempt on three exact remaining Panama legal holds before metadata, streams, EPG or rights.",
+  "rule_source": "docs/catalogue-scope.md",
+  "source_register": "data/discovery/institutions.json",
+  "user_scope": "First-level and autonomous special-status legislatures; not every below-tier individual-community or people-representative body. Operative customary law can establish eligibility without a national state Act.",
+  "summary": {
+    "candidates_researched": 3,
+    "authority_gates_cleared": 0,
+    "new_exclusions": 0,
+    "specific_authority_evidence_holds_retained": 3,
+    "identity_distinctions_strengthened": 3,
+    "catalogue_sources_added": 0
+  },
+  "decision_note": "This completes the documented bounded search, not the three authority clearances. The records preserve specific evidence holds because newly found primary recognition/identity evidence does not supply the missing operative allocation. Failure to retrieve a document is not proof of non-enactment or lack of customary law.",
+  "records": [
+    {
+      "country": "Panama",
+      "reviewed_on": "2026-10-24",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "recommended_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_authority_gate_resolved": false,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "review_outcome": "new_primary_evidence_review_completed_specific_hold_retained",
+      "id": "panama--naso-tjer-di",
+      "name": "Consejo General Pueblo Naso Tjer-di",
+      "jurisdiction_label": "Comarca Naso Tjër Di / Naso traditional regional government",
+      "aliases": [
+        "Consejo General Naso",
+        "Consejo Naso Tjer Di"
+      ],
+      "relationship": "autonomous_special_status_comarca_traditional_council_distinct_from_king_peoples_assembly_and_municipal_council",
+      "primary_evidence_refs": [
+        "naso-law",
+        "naso-law-register",
+        "condipi-2025",
+        "condipi-date",
+        "coonapip-statute",
+        "naso-mingob-2025",
+        "naso-2026-goal",
+        "naso-draft-process",
+        "naso-draft-excerpts",
+        "naso-2026-current"
+      ],
+      "primary_urls": [
+        "https://www.gacetaoficial.gob.pa/pdfTemp/29170_A/GacetaNo_29170a_20201207.pdf",
+        "https://infojuridica.procuraduria-admon.gob.pa/t_normas_print.php?numsec=55500",
+        "https://www.gacetaoficial.gob.pa/storage/gacetas/2025/01/30204/110126.pdf",
+        "https://legispan.asamblea.gob.pa/tabloids/e01ccbd3-a385-4828-af56-b921d8993604",
+        "https://coonapipanama.org/wp-content/uploads/2023/08/Estatuto-junio-2018.pdf",
+        "https://www.mingob.gob.pa/viceministra-de-asuntos-indigenas-y-autoridades-naso-abordan-temas-de-interes-para-esa-comarca/",
+        "https://www.mingob.gob.pa/wp-content/uploads/2026/01/Memoria-2025-FINAL-BAJA-1.pdf",
+        "https://www.fscindigenousfoundation.org/es/tag/comarca-naso-tjer-di/",
+        "https://alt-perubolivia.org/wp-content/uploads/2023/03/4.1-PPT-Paisajes-culturales-NASO.FINAL-compres.pdf",
+        "https://www.mingob.gob.pa/se-realiza-mesa-de-trabajo-que-busca-establecer-limites-y-demarcacion-de-comarcas/"
+      ],
+      "confirmed_findings": [
+        "Distinct traditional Council and broader people’s assembly are established; the legacy Council entry must not be relabelled Congreso General without authority.",
+        "Executive sanction and customary adoption are different evidentiary questions; a 180-article draft was validated in 2023.",
+        "Territorial lawmaking may ultimately belong to the people’s assembly, the Council, or a combination; no eligibility is inferred for the King or municipal council alone."
+      ],
+      "unresolved_findings": [
+        "No sanctioning decree, official2026 promulgation/commencement record, or complete currently applied customary Charter was located in this bounded pass.",
+        "Selected draft environmental rules do not settle the Council’s general binding norm-making, financial oversight and control/removal of executive authorities."
+      ],
+      "precise_resolution_required": [
+        "Recover the complete Council-validated180-article Charter and its adoption resolution; establish whether and when it became operative as customary territorial law.",
+        "Locate any executive decree sanctioning that Charter and its Gazette number, promulgation and commencement; if it was not sanctioned, do not infer that customary authority cannot nevertheless exist.",
+        "Read the actual allocation between Council, King and people’s assembly, including binding territorial norms, funds/budgets and executive accountability. If the assembly is the legislative organ, correct the institution identity rather than clearing the municipal council."
+      ],
+      "research_attempts": [
+        "Searched exact accented/unaccented Charter titles with2026, decree, sanction, adoption and promulgation terms across Gazette, Ministry, Presidency, Assembly and Procuraduría indexes.",
+        "Rechecked Infojurídica Law 188 metadata, official Gazette advanced-search page, ministry 2025process/2026 goal and current 2026boundary report.",
+        "Official Gazette advanced-search form was readable but not submitted: web reader has no form interaction and browser inventory was empty. Direct GazettePDF command download returned an anti-bot HTML shell; no security challenge was bypassed.",
+        "Read participant draft-validation report and concrete Charter excerpt slides. No full operative Charter recovered; no negative enactment certificate claimed."
+      ]
+    },
+    {
+      "country": "Panama",
+      "reviewed_on": "2026-10-24",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "recommended_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_authority_gate_resolved": false,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "review_outcome": "new_primary_evidence_review_completed_specific_hold_retained",
+      "id": "panama--bugle-people",
+      "name": "Congreso General Buglé",
+      "jurisdiction_label": "Buglé people; distinct representation within and beyond joint comarca institutions",
+      "aliases": [
+        "Congreso Buglé",
+        "Congreso General del Pueblo Buglé",
+        "Consejo Regional Buglé (historical organisational label)"
+      ],
+      "relationship": "people_wide_indigenous_congress_distinct_from_joint_ngabe_bugle_comarca_congress_territorial_autonomy_not_yet_proved",
+      "primary_evidence_refs": [
+        "condipi-2025",
+        "condipi-date",
+        "coonapip-statute",
+        "bugle-consultation",
+        "ngabe-bugle-charter",
+        "bugle-draft-lead",
+        "coonapip-current",
+        "coonapip-2011-label"
+      ],
+      "primary_urls": [
+        "https://www.gacetaoficial.gob.pa/storage/gacetas/2025/01/30204/110126.pdf",
+        "https://legispan.asamblea.gob.pa/tabloids/e01ccbd3-a385-4828-af56-b921d8993604",
+        "https://coonapipanama.org/wp-content/uploads/2023/08/Estatuto-junio-2018.pdf",
+        "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+        "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ngobe_bugle_arreglado.pdf",
+        "https://es.slideshare.net/slideshow/coonapip-ii-foro-de-mujeres-bugle-elaborado-por-yanel-venado-jimenez-coinapip-panama/269493813",
+        "https://coonapip-panama.org/",
+        "https://coonapip.blogspot.com/2011/07/comunicado-al-pais-gobierno-de-panama.html"
+      ],
+      "confirmed_findings": [
+        "This is a separately recognised traditional organism, not merely an alias or typo for the already eligible joint comarca congress.",
+        "Its own presidency is separate from the joint comarca cacicazgo; the consultation record distinguishes both delegations.",
+        "Recognition for CONDIPI and COONAPIP establishes representation, not a separate autonomous legislative jurisdiction."
+      ],
+      "unresolved_findings": [
+        "The adopted Buglé-specific regulation/statute, commencement and defined territorial application were not found.",
+        "The evidence does not establish independent binding territorial norm-making or budget/executive control; joint-comarca Charter powers cannot supply these missing allocations."
+      ],
+      "precise_resolution_required": [
+        "Obtain the approved Congreso del Pueblo Buglé internal/customary regulation, adoption minutes or resolutions and effective-date evidence, including any final successor to the proposal described by the COONAPIP forum report.",
+        "Establish whether that instrument creates autonomous special-status territorial jurisdiction rather than only people-wide representation, cultural consultation or an internal association.",
+        "Identify the operative provisions for general binding norms, territorial revenue/funds/budget accountability, and executive appointment/removal/reporting; show their allocation relative to the joint comarca congress to avoid duplicate publication."
+      ],
+      "research_attempts": [
+        "Searched Congreso General Buglé/Congreso Buglé/Consejo Regional Buglé with statute, charter, internal regulation, norms, territory and budget terms in Ministry, Gazette, Judiciary, COONAPIP and public indexes.",
+        "Reviewed the enacted 2025 CONDIPI amendment,2018 own-organisation statute,2018 consultation testimony and joint-comarca original authority clauses.",
+        "Inspected COONAPIP public document index. Its own umbrella statute/regulation and joint-comarca plan are not the missing Buglé governing instrument. Search endpoints on old/new sites were unavailable.",
+        "Located an attributed COONAPIP forum-report lead on an internal-regulation proposal; not promoted to proof of final adoption."
+      ]
+    },
+    {
+      "country": "Panama",
+      "reviewed_on": "2026-10-24",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "recommended_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_authority_gate_resolved": false,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "review_outcome": "new_primary_evidence_review_completed_specific_hold_retained",
+      "id": "panama--guna-dagargunyala",
+      "name": "Congreso General Guna Dagargunyala",
+      "jurisdiction_label": "Territorio Ancestral Tule/Guna de Tagarkunyala (Púcuro/Paya, Darién)",
+      "aliases": [
+        "Congreso General del Territorio Ancestral de Tagarkunyala",
+        "Congreso General de Dagargunyala",
+        "Territorio Ancestral Tule de Tagarkunyala",
+        "Tagarkunyal",
+        "Takargunyala",
+        "Tagargunyala"
+      ],
+      "relationship": "ancestral_customary_territorial_congress_distinct_from_gunayala_madungandi_wargandi_and_community_sagladuras",
+      "primary_evidence_refs": [
+        "condipi-2025",
+        "condipi-date",
+        "coonapip-statute",
+        "dagargunyala-judgment",
+        "dagargunyala-own-guna-2026",
+        "bugle-consultation",
+        "coonapip-current",
+        "collective-land-law"
+      ],
+      "primary_urls": [
+        "https://www.gacetaoficial.gob.pa/storage/gacetas/2025/01/30204/110126.pdf",
+        "https://legispan.asamblea.gob.pa/tabloids/e01ccbd3-a385-4828-af56-b921d8993604",
+        "https://coonapipanama.org/wp-content/uploads/2023/08/Estatuto-junio-2018.pdf",
+        "https://repositoriodigital.organojudicial.gob.pa/bitstream/handle/001/231/Entrada%20N%C2%B0%201490-18.pdf?isAllowed=y&sequence=5",
+        "https://www.gunayala.org.pa/index_Gigga.htm",
+        "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+        "https://coonapip-panama.org/",
+        "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf"
+      ],
+      "confirmed_findings": [
+        "The 2025 decree’s Tagarkunyala wording and 2018 COONAPIP Dagargunyala wording concern the separately recognised ancestral-territory Congress; identity is no longer an undefined generic Guna lead.",
+        "The 2020 judgment ties Tagarkunyal’s collective-territory claim to Púcuro and Paya in Darién; the 2026 Guna Congress notice independently identifies a separate leadership.",
+        "The ministry describes a customary territorial structure distinct from the three statutory Guna comarcas and its two local sagladuras. Number of communities alone does not decide regional-autonomy eligibility."
+      ],
+      "unresolved_findings": [
+        "No complete Congress-specific customary statute, territorial normative code or operative resolutions showing binding rules and financial/executive accountability were recovered.",
+        "The 2020 land judgment leaves the ANATI adjudication outside its decision; it neither grants nor denies legislature status. No current title or parliamentary status is inferred."
+      ],
+      "precise_resolution_required": [
+        "Obtain an authentic Congress-specific customary governing instrument or adopted general resolutions showing the Congress’s jurisdiction and their binding territorial effect, adoption/currentness and review/enforcement process.",
+        "Recover provisions or documented exercised powers for finance/budget/fund accountability and appointment/removal/reporting of territorial authorities.",
+        "Distinguish ancestral regional government from the Púcuro/Paya local assemblies; do not import Gunayala Fundamental Law, its budgets or cross-region cultural declarations without an express applicable grant. A national state Act is not required if operative customary authority can be proved."
+      ],
+      "research_attempts": [
+        "Searched Dagargunyala/Tagarkunyala/Tagargunyala/Takargunyala and Púcuro/Paya variants with statutes, fundamental law, internal regulations, budgets, norms and resolutions.",
+        "Read official2025 recognition,2018 organisational statute and the full2020 primary judgment, including its express limit on adjudicating the title proceeding.",
+        "Checked current 2026 own-GunaCongress/COONAPIP accounts and the COONAPIP public legal-document index.",
+        "Searches repeatedly returned Gunayala’s own laws and budgets or common Guna cultural resolutions; these were rejected as competence evidence for Dagargunyala. Ministry 15.5MiB consultationPDF exceeded reader size; actual indexed territory/organ sections were retained with that limit."
+      ]
+    }
+  ],
+  "primary_source_register": {
+    "condipi-2025": {
+      "url": "https://www.gacetaoficial.gob.pa/storage/gacetas/2025/01/30204/110126.pdf",
+      "instrument": "Executive Decree 4 of 20 January 2025, modifying Executive Decree 203/2018",
+      "sections": "articles 1–2 and5; Gazette 30204,24 January 2025",
+      "findings": "The enacted CONDIPI framework lists Congreso Buglé, Congreso General del Territorio Ancestral de Tagarkunyala and Consejo Naso Tjer Di separately from the joint Ngäbe–Buglé comarca congress. This supplies recognition and distinct identity in a national public-policy consultation body; it does not allocate each member territorial legislative powers. Commencement is promulgation.",
+      "evidence_level": "primary_official_gazette_full_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Published24 January 2025; read24 October 2026. Date cross-checked against Assembly Legispan because PDF handwriting OCR is unclear."
+    },
+    "condipi-date": {
+      "url": "https://legispan.asamblea.gob.pa/tabloids/e01ccbd3-a385-4828-af56-b921d8993604",
+      "instrument": "National Assembly Legispan, Gazette 30204 record",
+      "sections": "Executive Decree 4 entry",
+      "findings": "Confirms instrument date20 January 2025 and publication24 January 2025.",
+      "evidence_level": "primary_legislative_official_register_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Read24 October 2026; date/identity cross-check, not a new grant of competence."
+    },
+    "coonapip-statute": {
+      "url": "https://coonapipanama.org/wp-content/uploads/2023/08/Estatuto-junio-2018.pdf",
+      "instrument": "COONAPIP Statute, approved23 June 2018",
+      "sections": "articles 7–8; approval clause; participant annex",
+      "findings": "Separately represents the Naso Council through its King/Queen, Dagargunyala through its general cacique and the Buglé people’s congress through its president. The joint comarca representation is a different membership. This is COONAPIP’s own statute, not the three members’ territorial governing instruments.",
+      "evidence_level": "primary_indigenous_organisation_statute_pdf_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Approved23 June 2018, institutional copy retrieved24 October 2026; used for legal-organ distinctness, not a2026 personnel census."
+    },
+    "naso-law": {
+      "url": "https://www.gacetaoficial.gob.pa/pdfTemp/29170_A/GacetaNo_29170a_20201207.pdf",
+      "instrument": "Law 188 of 4 December 2020 creating Comarca Naso Tjër Di",
+      "sections": "articles 7–17,19–22; Gazette 29170-A,7 December 2020",
+      "findings": "Traditional Council comprises the King and elected community delegates, with consensus/consultation/coordination/administration functions. The people’s assembly is a separate expression/decision organ; powers are referred to the Organic Charter. The municipal council is distinct. Customary land governance and comarca finances do not by themselves allocate legislative and financial control to the inventoried Council.",
+      "evidence_level": "primary_search_index_official_statute_section_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Enacted 2020 law. Actual article 9–14 text retrieved from official indexed Gazette. Direct PDF extraction exposes page headers; screenshot calls did not return usable pixels and command download returned an anti-bot HTML shell. No claim of visual-page review."
+    },
+    "naso-law-register": {
+      "url": "https://infojuridica.procuraduria-admon.gob.pa/t_normas_print.php?numsec=55500",
+      "instrument": "Procuraduría Infojurídica, Law 188 record",
+      "sections": "general details; references posteriores",
+      "findings": "Records Law 188, Gazette 29170-A and commencement the day after promulgation, hence8 December 2020. Its later-reference table is blank in the indexed snapshot. That blank table is not proof that no later Charter was enacted.",
+      "evidence_level": "primary_official_legal_register_indexed_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Indexed print snapshot dated26 May 2026, retrieved24 October 2026; not an exhaustive database search through today."
+    },
+    "naso-mingob-2025": {
+      "url": "https://www.mingob.gob.pa/viceministra-de-asuntos-indigenas-y-autoridades-naso-abordan-temas-de-interes-para-esa-comarca/",
+      "instrument": "Ministry of Government meeting with Naso authorities",
+      "sections": "7 July 2025 institutional report",
+      "findings": "The ministry says the Organic Charter is to be presented to the President and that its team will review the regulatory document with Naso authorities. This is evidence of the process at that date, not proof of final enactment or non-enactment in 2026.",
+      "evidence_level": "primary_responsible_ministry_page_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Explicitly7 July 2025, not2026."
+    },
+    "naso-2026-goal": {
+      "url": "https://www.mingob.gob.pa/wp-content/uploads/2026/01/Memoria-2025-FINAL-BAJA-1.pdf",
+      "instrument": "Ministry of Government, Memoria2025",
+      "sections": "printed page 47, goals",
+      "findings": "Lists sanctioning the Naso Organic Charter among forward goals. The plan was rechecked but is not treated as a current enactment register.",
+      "evidence_level": "primary_ministry_report_indexed_section_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Report about 2025, posted January 2026; its future goal cannot establish whether later2026 promulgation occurred."
+    },
+    "naso-draft-process": {
+      "url": "https://www.fscindigenousfoundation.org/es/tag/comarca-naso-tjer-di/",
+      "instrument": "FSC Indigenous Foundation, first-hand account of the Naso drafting project",
+      "sections": "Consejo General valida el borrador, event2 May 2023",
+      "findings": "The project partner records Council validation of a 180-article draft in Bonyik, with the King and community representatives. Draft validation is distinct from executive sanction or proof of a current customary promulgation.",
+      "evidence_level": "primary_participant_project_account_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Event2 May 2023; undated archive wrapper read24 October 2026. Partner account, not the Council’s complete operative text."
+    },
+    "naso-draft-excerpts": {
+      "url": "https://alt-perubolivia.org/wp-content/uploads/2023/03/4.1-PPT-Paisajes-culturales-NASO.FINAL-compres.pdf",
+      "instrument": "FSC Indigenous Foundation presentation, Enfoque de Derecho en el Paisaje Cultural Indígena—Caso Comarca Naso",
+      "sections": "PDF pages 28–29; draft articles 108–109,114–117",
+      "findings": "Construction-stage excerpts propose an environmental direction, river-protection rules and Council/King environmental-plan approval. They supply concrete draft normative content but omit the complete adoption, commencement and general financial/executive allocation.",
+      "evidence_level": "primary_project_participant_presentation_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Hosted in a2023/03 path; slides expressly describe construction of the Charter and summarise selected provisions. Not a sanctioned 2026 Charter or an authority-clearance instrument."
+    },
+    "naso-2026-current": {
+      "url": "https://www.mingob.gob.pa/se-realiza-mesa-de-trabajo-que-busca-establecer-limites-y-demarcacion-de-comarcas/",
+      "instrument": "Ministry of Government, comarca boundary working group",
+      "sections": "30 April 2026",
+      "findings": "Confirms continuing official work on Naso boundary verification. It reports territorial administration, not Charter sanction or legislative allocation.",
+      "evidence_level": "primary_current_responsible_ministry_page_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Explicitly30 April 2026; separates current territory work from the unresolved Charter question."
+    },
+    "ngabe-bugle-charter": {
+      "url": "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ngobe_bugle_arreglado.pdf",
+      "instrument": "Executive Decree 194 of 25 August 1999, Ngäbe–Buglé Organic Charter",
+      "sections": "articles 46–52,57–59; Gazette 23882,9 September 1999",
+      "findings": "The joint comarca congress is the normative/decision organ of the Ngäbe–Buglé population, including Buglé members. Its binding resolutions and financial/executive controls cannot simply be transferred to the separately recognised people-wide Congreso Buglé.",
+      "evidence_level": "primary_judiciary_statute_indexed_section_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Original1999 version; later amendments exist. Used to disambiguate organs, not to certify the current composition/election regime."
+    },
+    "bugle-consultation": {
+      "url": "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+      "instrument": "Ministry-published PN-L1157 sociocultural analysis, March 2019",
+      "sections": "Consulta 5, Taller Buglé,17 October 2018; printed page19; territorial-governance matrix",
+      "findings": "The workshop records separate Buglé leadership and joint-comarca participants, explaining that Buglé people live in the comarca but have their own leadership. The matrix identifies Dagargunyala customary territorial government. Neither supplies the missing member-specific operative powers.",
+      "evidence_level": "primary_ministry_project_consultation_record_indexed_section_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "ReportMarch 2019, uploadedOctober 2025; event17 October 2018. Direct reader rejected15.5MiB size; actual indexed sections read. Do not report it as a newly researched2025/2026 legal grant."
+    },
+    "bugle-draft-lead": {
+      "url": "https://es.slideshare.net/slideshow/coonapip-ii-foro-de-mujeres-bugle-elaborado-por-yanel-venado-jimenez-coinapip-panama/269493813",
+      "instrument": "II Foro de Mujeres Buglé, attributed to Yanel Venado Jiménez/COONAPIP",
+      "sections": "indexed discussion of Congreso del Pueblo Buglé internal-regulation proposal",
+      "findings": "A possible first-hand organisation-report lead says the congress worked on a proposed internal regulation. The complete adopted regulation, approval record and territorial scope were not recovered; platform attribution alone does not establish operative authority.",
+      "evidence_level": "unverified_primary_authorship_lead_not_clearance_evidence",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Platform indexed recently; publication/adoption date and version not established. Kept as a targeted retrieval lead, not a conclusion that it remains a draft today."
+    },
+    "dagargunyala-judgment": {
+      "url": "https://repositoriodigital.organojudicial.gob.pa/bitstream/handle/001/231/Entrada%20N%C2%B0%201490-18.pdf?isAllowed=y&sequence=5",
+      "instrument": "Supreme Court, Third Chamber, Entrada 1490-18, judgment7 February 2020",
+      "sections": "PDFpages1–3,8,14–15 and23",
+      "findings": "Identifies Tagarkunyal/Tagarkunyala with the Púcuro/Paya ancestral collective-territory claim in Darién. The court expressly does not adjudicate the pending ANATI title proceeding; it decides legality of the park decree. It therefore neither establishes nor denies the Congress’s legislature status.",
+      "evidence_level": "primary_judicial_judgment_full_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Judgment7 February 2020; historical title-proceeding status must not be projected to2026."
+    },
+    "dagargunyala-own-guna-2026": {
+      "url": "https://www.gunayala.org.pa/index_Gigga.htm",
+      "instrument": "General Guna Congress information service, meeting with Dagargunyala leadership",
+      "sections": "SIC20/05/2026-92",
+      "findings": "Recognises Dagargunyala as a separate ancestral territory near the Panama–Colombia border, with its own cacique general and Baya leadership. This corroborates organ identity, not application of Gunayala’s own Fundamental Law to another territory.",
+      "evidence_level": "primary_peer_indigenous_government_current_institutional_account_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Explicit20 May 2026 event; site hosts many Gunayala legal/budget notices, which must not be misattributed to Dagargunyala."
+    },
+    "coonapip-current": {
+      "url": "https://coonapip-panama.org/",
+      "instrument": "COONAPIP current institutional directory",
+      "sections": "traditional authorities; current publications",
+      "findings": "Lists Naso, the ancestral Tule territory of Tagarkunyala and the Buglé presidency distinctly. Current organisational recognition does not replace each body’s governing instrument.",
+      "evidence_level": "primary_indigenous_organisation_current_directory_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Read24 October 2026; directory is current organisational evidence, not independent certification of every officeholder."
+    },
+    "collective-land-law": {
+      "url": "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf",
+      "instrument": "Law 72 of 23 December 2008, collective land adjudication outside comarcas",
+      "sections": "articles 4–5,13, as quoted and applied in Entrada 1490-18",
+      "findings": "Collective title and traditional representation are not by themselves a territorial legislative allocation. Customary law may still qualify if its actual territorial normative and accountability framework is established.",
+      "evidence_level": "statute_provisions_verified_through_primary_judicial_quotation",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Law 2008; provisions read in the 2020 judicial decision. No unsupported claim of a freshly consolidated full text."
+    },
+    "coonapip-2011-label": {
+      "url": "https://coonapip.blogspot.com/2011/07/comunicado-al-pais-gobierno-de-panama.html",
+      "instrument": "COONAPIP public organisational communiqué",
+      "sections": "11 July 2011 communiqué, posted12 July 2011; member list and board table",
+      "findings": "Uses Consejo Regional Buglé for the separate member and Congreso General Comarca Ngäbe-Buglé for the joint comarca. Historical alias evidence, not a current territorial competence instrument.",
+      "evidence_level": "primary_own_organisation_historical_announcement_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Historical2011 label only; the enacted2025 decree and2018 statute provide newer distinct-body names."
+    }
+  },
+  "global_access_limits": [
+    "The web PDF screenshot interface returned text image placeholders without usable pixels. No legal findings are labelled visual review.",
+    "Browser inventory was empty; no interactive official-Gazette form search could be completed. Indexed official Gazette/Procuraduría searches were performed instead.",
+    "No external messages, document requests or outreach were sent. No legal text was invented from a missing attachment."
+  ],
+  "later_phase_work_performed": false,
+  "custodian_routes_for_later_document_request": [
+    {
+      "institution": "Ministerio de Gobierno — Viceministerio de Asuntos Indígenas, coordinated with legal/archive offices",
+      "basis": "The responsible ministry’s Naso Charter review account identifies VAI as the active state-side interlocutor; current structure and directory supply an institutional route. This does not certify that the office holds every customary instrument.",
+      "primary_urls": [
+        "https://www.mingob.gob.pa/estructura-del-ministerio-de-gobierno/",
+        "https://www.mingob.gob.pa/directorio-telefonico/",
+        "https://www.mingob.gob.pa/oficina-de-equiparacion-de-oportunidades/"
+      ],
+      "published_routing": {
+        "VAI_asesores": "504-4702",
+        "VAI_relaciones_publicas": "504-4701",
+        "secretaria_general_archivologia": [
+          "504-4688",
+          "504-4689"
+        ],
+        "central": [
+          "512-2000",
+          "512-7200"
+        ],
+        "correspondence_address": "Condado Business Center, Vía Ricardo J. Alfaro, entrada de Condado del Rey. Apdo. Postal087605915, Zona1, Panamá."
+      },
+      "verified_on": "2026-10-24",
+      "currentness_limit": "Maintained official directory/footer read on this date; telephone receipt/actual archival custody not tested. ANTAI’s named-email listing repeats a2020 directory and is not treated as verified current contact."
+    },
+    {
+      "institution": "COONAPIP — routing to Naso Council, Congreso Buglé and Tagarkunyala Congress",
+      "primary_url": "https://coonapip-panama.org/",
+      "published_email": "comunicacion@coonapip-panama.org",
+      "basis": "Maintained own directory identifies all three authorities and publishes this communication route. Actual operative customary instruments must come from the relevant Congress/Council or authenticated records, not an umbrella organisational statute.",
+      "verified_on": "2026-10-24",
+      "currentness_limit": "No message sent; no assumption that a reply or document-production agreement exists."
+    }
+  ]
+}

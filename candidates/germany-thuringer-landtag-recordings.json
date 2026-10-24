@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. 58th sitting continuation9October2026 at14:09, member at branded lectern. Separate recording part of same sitting as other sample. 58th sitting9October2026 at09:34, woman at branded lectern; same sitting/date, not a second independent plenary date. Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "Social/private sharing allowed within conditions; broader use requires written permission unless specific conditions apply. Printed official papers/protocol exceptions do not automatically license video. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "germany-thuringer-landtag-recordings",
+    "name": "Thuringia Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Thuringia",
+    "legislature": "Thüringer Landtag",
+    "external_ids": {
+      "wikidata_qid": "Q896075",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q896075",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Wikidata revision 2544449961; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "German",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.thueringer-landtag.de/",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 58th sitting continuation9October2026 at14:09, member at branded lectern. Separate recording part of same sitting as other sample. 58th sitting9October2026 at09:34, woman at branded lectern; same sitting/date, not a second independent plenary date. Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.thueringer-landtag.de/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Social/private sharing allowed within conditions; broader use requires written permission unless specific conditions apply. Printed official papers/protocol exceptions do not automatically license video. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://www.thueringer-landtag.de/",
+        "https://www.youtube.com/channel/UCCAO9JctC_kraxU_vFb-Ibw"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

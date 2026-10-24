@@ -1,0 +1,1844 @@
+{
+  "research_date": "2026-10-23",
+  "scope": "75 provincial boards lacking institutional URL metadata at start of follow-up",
+  "publication_rule": "No discovered website/QID is automatically accepted or promoted; individual primary institution review required. Geographic jurisdiction IDs are not legislative IDs.",
+  "results": [
+    {
+      "id": "philippines--abra",
+      "board_qid": "Q4668700",
+      "board_label": {
+        "language": "en",
+        "value": "Abra Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2168308921,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13711",
+      "jurisdiction_revision": 2545168344,
+      "jurisdiction_label": {
+        "language": "en",
+        "value": "Abra"
+      },
+      "published_government_websites": [
+        "http://www.abra.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.abra.gov.ph/",
+          "checked_at": "2026-10-23T18:09:52.859585+00:00",
+          "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>"
+        },
+        {
+          "url": "https://www.abra.gov.ph/",
+          "checked_at": "2026-10-23T18:09:55.599823+00:00",
+          "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "id": "philippines--agusan-del-norte",
+      "board_qid": "Q4694608",
+      "board_label": {
+        "language": "en",
+        "value": "Agusan del Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337866575,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13714",
+      "jurisdiction_revision": 2547894198,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://www.agusandelnorte.gov.ph"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.agusandelnorte.gov.ph",
+          "checked_at": "2026-10-23T18:09:52.856503+00:00",
+          "status": 200,
+          "final_url": "http://www.agusandelnorte.gov.ph",
+          "title": "Province of Agusan del Norte",
+          "text_excerpt": "Province of Agusan del Norte",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "philippines--agusan-del-sur",
+      "board_qid": "Q4694609",
+      "board_label": {
+        "language": "en",
+        "value": "Agusan del Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337866576,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [],
+      "jurisdiction_qid": "Q13721",
+      "jurisdiction_revision": 2547894175,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://agusandelsur.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://agusandelsur.gov.ph/",
+          "checked_at": "2026-10-23T18:09:52.819810+00:00",
+          "status": 200,
+          "final_url": "https://agusandelsur.gov.ph/",
+          "title": "Province of Agusan del Sur",
+          "text_excerpt": "Province of Agusan del Sur GOV.PH Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Esperanza Prosperidad San Luis Sibagat Talacogon Bunawan La Paz Loreto Rosario Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report BID Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations News and Features People’s Television Network DXGP 89.7 FM Tourism – Unlock the Landlocked Naliyagan Festival Career and Opportunities ARTA Citizens Charter Client Satisfaction Measurement CSR Report 2023 CSM Report 2024 IP Phone Directory Emergency Hotline Inquiries Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Esperanza Prosperidad San Luis Sibagat Talacogon Bunawan La Paz Loreto Rosario Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report BID Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations News and Features People’s Television Network DXGP 89.7 FM Tourism – Unlock the Landlocked Naliyagan Festival Career and Opportunities ARTA Citizens Charter Client Satisfaction Measurement CSR Report 2023 CSM Report 2024 IP Phone Directory Emergency Hotline Inquiries GOV.PH Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Bunawan Esperanza La Paz Loreto Prosperidad Rosario San Francisco San Luis Santa Josefa Sibagat Talacogon Trento Veruela Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report Bid Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Bunawan Esperanza La Paz Loreto Prosperidad Rosario San Francisco San Luis Santa Josefa Sibagat Talacogon Trento Veruela Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Re",
+          "links": [
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://pgas.ph/lts/legislations",
+              "label": "Resolution and Ordinances"
+            }
+          ]
+        },
+        {
+          "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+          "checked_at": "2026-10-23T18:09:54.676411+00:00",
+          "status": 200,
+          "final_url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+          "title": "Legislative Branch",
+          "text_excerpt": "Legislative Branch GOV.PH Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Esperanza Prosperidad San Luis Sibagat Talacogon Bunawan La Paz Loreto Rosario Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report BID Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations News and Features People’s Television Network DXGP 89.7 FM Tourism – Unlock the Landlocked Naliyagan Festival Career and Opportunities ARTA Citizens Charter Client Satisfaction Measurement CSR Report 2023 CSM Report 2024 IP Phone Directory Emergency Hotline Inquiries Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Esperanza Prosperidad San Luis Sibagat Talacogon Bunawan La Paz Loreto Rosario Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report BID Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations News and Features People’s Television Network DXGP 89.7 FM Tourism – Unlock the Landlocked Naliyagan Festival Career and Opportunities ARTA Citizens Charter Client Satisfaction Measurement CSR Report 2023 CSM Report 2024 IP Phone Directory Emergency Hotline Inquiries GOV.PH Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Bunawan Esperanza La Paz Loreto Prosperidad Rosario San Francisco San Luis Santa Josefa Sibagat Talacogon Trento Veruela Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report Bid Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Bunawan Esperanza La Paz Loreto Prosperidad Rosario San Francisco San Luis Santa Josefa Sibagat Talacogon Trento Veruela Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report Bid",
+          "links": [
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://pgas.ph/lts/legislations",
+              "label": "Resolution and Ordinances"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Committees"
+            }
+          ]
+        },
+        {
+          "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+          "checked_at": "2026-10-23T18:09:55.719443+00:00",
+          "status": 200,
+          "final_url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+          "title": "Statutes - Province of Agusan del Sur",
+          "text_excerpt": "Statutes - Province of Agusan del Sur GOV.PH Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Esperanza Prosperidad San Luis Sibagat Talacogon Bunawan La Paz Loreto Rosario Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report BID Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations News and Features People’s Television Network DXGP 89.7 FM Tourism – Unlock the Landlocked Naliyagan Festival Career and Opportunities ARTA Citizens Charter Client Satisfaction Measurement CSR Report 2023 CSM Report 2024 IP Phone Directory Emergency Hotline Inquiries Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Esperanza Prosperidad San Luis Sibagat Talacogon Bunawan La Paz Loreto Rosario Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report BID Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations News and Features People’s Television Network DXGP 89.7 FM Tourism – Unlock the Landlocked Naliyagan Festival Career and Opportunities ARTA Citizens Charter Client Satisfaction Measurement CSR Report 2023 CSM Report 2024 IP Phone Directory Emergency Hotline Inquiries GOV.PH Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Bunawan Esperanza La Paz Loreto Prosperidad Rosario San Francisco San Luis Santa Josefa Sibagat Talacogon Trento Veruela Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Disclosure Report Bid Documents Request for Quotation (RFQ) Bid Results Abstract of Bids as Calculated BAC Notices Compliances Accredited Civil Society Organizations Home About Government Officials Governor Provincial Hymn Municipalities Bayugan City Bunawan Esperanza La Paz Loreto Prosperidad Rosario San Francisco San Luis Santa Josefa Sibagat Talacogon Trento Veruela Branches Executive Branch Legislative Branch Statutes Sangguniang Panlalawigan Board Members Sangguniang Panlalawigan Committees Transparency Gender and Development (GAD) Corner Full Financial Di",
+          "links": [
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/",
+              "label": "Legislative Branch"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/statutes/",
+              "label": "Statutes"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-board-members/",
+              "label": "Sangguniang Panlalawigan Board Members"
+            },
+            {
+              "url": "https://agusandelsur.gov.ph/branches/legislative-branch/sangguniang-panlalawigan-committees/",
+              "label": "Sangguniang Panlalawigan Committees"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philippines--aklan",
+      "board_qid": "Q4701431",
+      "board_label": {
+        "language": "en",
+        "value": "Aklan Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1351861558,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13723",
+      "jurisdiction_revision": 2549819461,
+      "jurisdiction_label": {
+        "language": "en",
+        "value": "Aklan"
+      },
+      "published_government_websites": [
+        "http://aklan.gov.ph"
+      ],
+      "page_checks": [
+        {
+          "url": "http://aklan.gov.ph",
+          "checked_at": "2026-10-23T18:09:52.748253+00:00",
+          "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>"
+        },
+        {
+          "url": "https://aklan.gov.ph",
+          "checked_at": "2026-10-23T18:09:54.047526+00:00",
+          "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "id": "philippines--albay",
+      "board_qid": "Q4709465",
+      "board_label": {
+        "language": "en",
+        "value": "Albay Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1340475025,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13726",
+      "jurisdiction_revision": 2545168168,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://albay.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://albay.gov.ph/",
+          "checked_at": "2026-10-23T18:09:52.777853+00:00",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://albay.gov.ph/",
+          "checked_at": "2026-10-23T18:09:54.008229+00:00",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "id": "philippines--antique",
+      "board_qid": "Q4775170",
+      "board_label": {
+        "language": "en",
+        "value": "Antique Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337894160,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--apayao",
+      "board_qid": "Q4779255",
+      "board_label": {
+        "language": "en",
+        "value": "Apayao Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1335366059,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--aurora",
+      "board_qid": "Q17063787",
+      "board_label": {
+        "language": "en",
+        "value": "Aurora Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2381353421,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 11204,
+          "id": "Q11204"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13730",
+      "jurisdiction_revision": 2545168254,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://www.aurora.gov.ph"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.aurora.gov.ph",
+          "checked_at": "2026-10-23T18:09:55.243400+00:00",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        },
+        {
+          "url": "https://www.aurora.gov.ph",
+          "checked_at": "2026-10-23T18:09:55.735067+00:00",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "id": "philippines--basilan",
+      "board_qid": "Q4867291",
+      "board_label": {
+        "language": "en",
+        "value": "Basilan Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1343104326,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--batanes",
+      "board_qid": "Q4868571",
+      "board_label": {
+        "language": "en",
+        "value": "Batanes Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1335394781,
+      "board_types": [],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--batangas",
+      "board_qid": "Q4868604",
+      "board_label": {
+        "language": "en",
+        "value": "Batangas Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337932823,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 11204,
+          "id": "Q11204"
+        }
+      ],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--benguet",
+      "board_qid": "Q4887842",
+      "board_label": {
+        "language": "en",
+        "value": "Benguet Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337946473,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--biliran",
+      "board_qid": "Q4907797",
+      "board_label": {
+        "language": "en",
+        "value": "Biliran Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1351972608,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--bohol",
+      "board_qid": "Q4938196",
+      "board_label": {
+        "language": "en",
+        "value": "Bohol Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1399742175,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--bukidnon",
+      "board_qid": "Q4986859",
+      "board_label": {
+        "language": "en",
+        "value": "Bukidnon Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1348870863,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--bulacan",
+      "board_qid": "Q17027114",
+      "board_label": {
+        "language": "en",
+        "value": "Bulacan Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1339236219,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--camarines-norte",
+      "board_qid": "Q17064489",
+      "board_label": {
+        "language": "en",
+        "value": "Camarines Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1339244625,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "board_qid": "Q104847329",
+      "board_label": {
+        "language": "en",
+        "value": "Camarines Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358741272,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--camiguin",
+      "board_qid": "Q104847339",
+      "board_label": {
+        "language": "en",
+        "value": "Camiguin Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358741290,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--capiz",
+      "board_qid": "Q104847347",
+      "board_label": {
+        "language": "en",
+        "value": "Capiz Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358741292,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--catanduanes",
+      "board_qid": "Q104848670",
+      "board_label": {
+        "language": "en",
+        "value": "Catanduanes Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358746437,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--cebu",
+      "board_qid": "Q22330280",
+      "board_label": {
+        "language": "en",
+        "value": "Cebu Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2509431843,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        },
+        {
+          "entity-type": "item",
+          "numeric-id": 37002670,
+          "id": "Q37002670"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13786",
+      "jurisdiction_revision": 2545168058,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://www.cebu.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.cebu.gov.ph/",
+          "checked_at": "2026-10-23T18:09:56.842737+00:00",
+          "status": 200,
+          "final_url": "https://www.cebu.gov.ph/",
+          "title": "Province of Cebu: Official Website, Government & Tourism",
+          "text_excerpt": "Province of Cebu: Official Website, Government & Tourism Skip to content The Official Website of the Province of Cebu is continuously being improved to better serve every Cebuano. Some photos featured on this site are sourced from third-party contributors — proper credit is given to the original owners whenever applicable. ABOUT Close ABOUT Open ABOUT History and Heritage Symbols of the Province Culture & People Governance and Leadership Governance and Leadership Flavors of Cebu Tourism Destination Ideal Investment Hub GOVERNOR's OFFICE Close GOVERNOR's OFFICE Open GOVERNOR's OFFICE The People's Governor Executive Departments & Offices Attached Hospitals & District Hospitals Governors of Cebu LEGISLATIVE Close LEGISLATIVE Open LEGISLATIVE Vice Governor Sangguniang Panlalawigan Cities and Municipalities Past Vice Governors SERVICES Close SERVICES Open SERVICES Who may avail Requirements/documents Step-by-step procedure Fees Processing time / SLA Responsible office Contact info PROJECTS NEWS CHARTER & TRANSPARENCY Close CHARTER & TRANSPARENCY Open CHARTER & TRANSPARENCY Mandate & Functions Names of Officials with salaries / ranks Annual Financial Reports (Budget, COA) Annual Procurement Plan & Procurement Monitoring Reports Approved Budgets and Targets Citizen Charter Programs & Projects, Beneficiaries, Status QMS Certification (if any) submit a report ATO ANG SUGBO! No Cebuano is left behind Cebu, officially the Province of Cebu, is a first-class province in Central Visayas, Philippines. Known as the “Queen City of the South,” it is the oldest province in the country and a thriving hub of history, culture, trade, and tourism. See More Tourism Education Health Environment Investment Services of the Province of Cebu Certificates, Permits, and IDs Assistance in availing government documents, licenses, and clearances. Coming Soon Business and Trade Services for business registration, taxation, banking support, and product monitoring. Coming Soon Disaster and Weather Programs and response for disaster preparedness, weather updates, and emergency concerns. Coming Soon Registrations, Applications, and Ordinances Guidance on applications, local ordinances, and community services. Coming Soon Education, Training, and Competencies Support through enrollment, training, seminars, and capacity-building programs. Coming Soon Agricultural Services Education, resources, and support for farmers and agricultural development. Coming Soon Health Programs and services on healthcare, facilities, and medical assistance. Coming Soon Housing Assistance with settlements, infrastru",
+          "links": [
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+              "label": "LEGISLATIVE"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": "Sangguniang Panlalawigan"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": "Cities and Municipalities"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": "Past Vice Governors"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/14145/2026-cebu-childrens-code-approved-by-provincial-board/",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/14145/2026-cebu-childrens-code-approved-by-provincial-board/",
+              "label": "2026 Cebu Children’s Code Approved by Provincial Board"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+              "label": "Legislative"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": "Sangguniang Panlalawigan"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": "Cities and Municipalities"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": "Past Vice Governors"
+            }
+          ]
+        },
+        {
+          "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+          "checked_at": "2026-10-23T18:10:00.646867+00:00",
+          "status": 200,
+          "final_url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+          "title": "Cebu Legislature | Sangguniang Panlalawigan & Governance",
+          "text_excerpt": "Cebu Legislature | Sangguniang Panlalawigan & Governance Skip to content The Official Website of the Province of Cebu is continuously being improved to better serve every Cebuano. Some photos featured on this site are sourced from third-party contributors — proper credit is given to the original owners whenever applicable. ABOUT Close ABOUT Open ABOUT History and Heritage Symbols of the Province Culture & People Governance and Leadership Governance and Leadership Flavors of Cebu Tourism Destination Ideal Investment Hub GOVERNOR's OFFICE Close GOVERNOR's OFFICE Open GOVERNOR's OFFICE The People's Governor Executive Departments & Offices Attached Hospitals & District Hospitals Governors of Cebu LEGISLATIVE Close LEGISLATIVE Open LEGISLATIVE Vice Governor Sangguniang Panlalawigan Cities and Municipalities Past Vice Governors SERVICES Close SERVICES Open SERVICES Who may avail Requirements/documents Step-by-step procedure Fees Processing time / SLA Responsible office Contact info PROJECTS NEWS CHARTER & TRANSPARENCY Close CHARTER & TRANSPARENCY Open CHARTER & TRANSPARENCY Mandate & Functions Names of Officials with salaries / ranks Annual Financial Reports (Budget, COA) Annual Procurement Plan & Procurement Monitoring Reports Approved Budgets and Targets Citizen Charter Programs & Projects, Beneficiaries, Status QMS Certification (if any) submit a report Vice Governors & Sangguniang Panlalawigan Vice Governor Vice Gov. Glenn Anthony Ocampo Soco Current Vice Governor Origin: Mandaue City Sangguniang Panlalawigan Vice Gov. Glenn Anthony Ocampo Soco​ District: Vice Governor, Province of Cebu Role: Presiding Officer, 17th Sangguniang Panlalawigan Hon. Lakambini G. Reluya District: 1st District of Cebu Role: Chairman, Committee on Women, Family and Minors Chairman, Committee on Commerce and Industry Hon. Antonio D. Bacaltos Jr. District: 1st District of Cebu Role: Chairman, Committee on Human Rights and Labor Chairman, Committee on Planning and Development Hon. Raymond Joseph. Calderon District: 2nd District of Cebu Role: Chairman, Committee on Provincial/Municipal Properties Chairman, Committee on Basic Education Hon. Stanley S. Caminero District: 2nd District of Cebu Role: Chairman, Committee on Public Health and Social Services Chairman, Committee on Energy Hon. Julius Anthony Corominas District: 3rd District of Cebu Role: Chairman, Committee on Traffic and Transportation Chairman, Committee on Senior Citizens Hon. Dason Lorenz A. Lagon District: 3rd District of Cebu Role: Chairman, Committee on Differently-abled Persons Hon. Nelson J. Mondigo District: 4th Di",
+          "links": [
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+              "label": "LEGISLATIVE"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": "Sangguniang Panlalawigan"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": "Cities and Municipalities"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": "Past Vice Governors"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+              "label": "Legislative"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": "Sangguniang Panlalawigan"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": "Cities and Municipalities"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": "Past Vice Governors"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            }
+          ]
+        },
+        {
+          "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+          "checked_at": "2026-10-23T18:10:03.563551+00:00",
+          "status": 200,
+          "final_url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+          "title": "Cebu Legislature | Sangguniang Panlalawigan & Governance",
+          "text_excerpt": "Cebu Legislature | Sangguniang Panlalawigan & Governance Skip to content The Official Website of the Province of Cebu is continuously being improved to better serve every Cebuano. Some photos featured on this site are sourced from third-party contributors — proper credit is given to the original owners whenever applicable. ABOUT Close ABOUT Open ABOUT History and Heritage Symbols of the Province Culture & People Governance and Leadership Governance and Leadership Flavors of Cebu Tourism Destination Ideal Investment Hub GOVERNOR's OFFICE Close GOVERNOR's OFFICE Open GOVERNOR's OFFICE The People's Governor Executive Departments & Offices Attached Hospitals & District Hospitals Governors of Cebu LEGISLATIVE Close LEGISLATIVE Open LEGISLATIVE Vice Governor Sangguniang Panlalawigan Cities and Municipalities Past Vice Governors SERVICES Close SERVICES Open SERVICES Who may avail Requirements/documents Step-by-step procedure Fees Processing time / SLA Responsible office Contact info PROJECTS NEWS CHARTER & TRANSPARENCY Close CHARTER & TRANSPARENCY Open CHARTER & TRANSPARENCY Mandate & Functions Names of Officials with salaries / ranks Annual Financial Reports (Budget, COA) Annual Procurement Plan & Procurement Monitoring Reports Approved Budgets and Targets Citizen Charter Programs & Projects, Beneficiaries, Status QMS Certification (if any) submit a report Vice Governors & Sangguniang Panlalawigan Vice Governor Vice Gov. Glenn Anthony Ocampo Soco Current Vice Governor Origin: Mandaue City Sangguniang Panlalawigan Vice Gov. Glenn Anthony Ocampo Soco​ District: Vice Governor, Province of Cebu Role: Presiding Officer, 17th Sangguniang Panlalawigan Hon. Lakambini G. Reluya District: 1st District of Cebu Role: Chairman, Committee on Women, Family and Minors Chairman, Committee on Commerce and Industry Hon. Antonio D. Bacaltos Jr. District: 1st District of Cebu Role: Chairman, Committee on Human Rights and Labor Chairman, Committee on Planning and Development Hon. Raymond Joseph. Calderon District: 2nd District of Cebu Role: Chairman, Committee on Provincial/Municipal Properties Chairman, Committee on Basic Education Hon. Stanley S. Caminero District: 2nd District of Cebu Role: Chairman, Committee on Public Health and Social Services Chairman, Committee on Energy Hon. Julius Anthony Corominas District: 3rd District of Cebu Role: Chairman, Committee on Traffic and Transportation Chairman, Committee on Senior Citizens Hon. Dason Lorenz A. Lagon District: 3rd District of Cebu Role: Chairman, Committee on Differently-abled Persons Hon. Nelson J. Mondigo District: 4th Di",
+          "links": [
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+              "label": "LEGISLATIVE"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": "Sangguniang Panlalawigan"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": "Cities and Municipalities"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": "Past Vice Governors"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/",
+              "label": "Legislative"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#board-members",
+              "label": "Sangguniang Panlalawigan"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#sanguniang-panglalawigan",
+              "label": "Cities and Municipalities"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#past-vice-governors",
+              "label": "Past Vice Governors"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": ""
+            },
+            {
+              "url": "https://www.cebu.gov.ph/vice-governor-sangguniang-panlalawigan/#vice-governors",
+              "label": "Vice Governor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philippines--davao-oriental",
+      "board_qid": "Q104848694",
+      "board_label": {
+        "language": "en",
+        "value": "Davao Oriental Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1576625054,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13806",
+      "jurisdiction_revision": 2553735963,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://www.davaooriental.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.davaooriental.gov.ph/",
+          "checked_at": "2026-10-23T18:09:56.795068+00:00",
+          "status": 200,
+          "final_url": "http://www.davaooriental.gov.ph/",
+          "title": "",
+          "text_excerpt": "Error. Page cannot be displayed. Please contact your service provider for more details.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "philippines--davao-de-oro",
+      "board_qid": "Q104848679",
+      "board_label": {
+        "language": "en",
+        "value": "Davao de Oro Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358746476,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--davao-del-norte",
+      "board_qid": "Q104848681",
+      "board_label": {
+        "language": "en",
+        "value": "Davao del Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358746492,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--dinagat-islands",
+      "board_qid": "Q104848702",
+      "board_label": {
+        "language": "en",
+        "value": "Dinagat Islands Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358746584,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--eastern-samar",
+      "board_qid": "Q104848743",
+      "board_label": {
+        "language": "en",
+        "value": "Eastern Samar Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358744889,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--guimaras",
+      "board_qid": "Q104848746",
+      "board_label": {
+        "language": "en",
+        "value": "Guimaras Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358744892,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--ifugao",
+      "board_qid": "Q104848773",
+      "board_label": {
+        "language": "en",
+        "value": "Ifugao Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358745082,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--ilocos-norte",
+      "board_qid": "Q104848780",
+      "board_label": {
+        "language": "en",
+        "value": "Ilocos Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358745097,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--ilocos-sur",
+      "board_qid": "Q104848791",
+      "board_label": {
+        "language": "en",
+        "value": "Ilocos Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358745156,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--iloilo",
+      "board_qid": "Q104848800",
+      "board_label": {
+        "language": "en",
+        "value": "Iloilo Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358745193,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--isabela",
+      "board_qid": "Q104849128",
+      "board_label": {
+        "language": "en",
+        "value": "Isabela Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358736404,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--kalinga",
+      "board_qid": "Q104849143",
+      "board_label": {
+        "language": "en",
+        "value": "Kalinga Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358736424,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--laguna",
+      "board_qid": "Q17075212",
+      "board_label": {
+        "language": "en",
+        "value": "Laguna Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2173213609,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 11204,
+          "id": "Q11204"
+        }
+      ],
+      "board_countries": [],
+      "jurisdiction_qid": "Q13840",
+      "jurisdiction_revision": 2548071411,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://www.laguna.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.laguna.gov.ph/",
+          "checked_at": "2026-10-23T18:09:58.074566+00:00",
+          "status": 200,
+          "final_url": "http://laguna.gov.ph/",
+          "title": "Home | Provincial Government of Laguna",
+          "text_excerpt": "Home | Provincial Government of Laguna Emergency Hotline: 0919-417-3698 (Globe) / 0919-417-3698 (Smart) Provincial Government of Laguna Home News Full Disclosure ARTA Provincial Hospitals Laguna University Directory Tourism Invest in Laguna Careers Latest News STUDENTS OF LAGUNA UNDER THE SPES PROGRAM, RECEIVE THEIR GRANTS LOS BAÑOS, LAGUNA — The Salary Distribution for the youth and students who participated in the Special Program for Employment Students, commonly known as SPES, was held this Friday, October 23. Luibic Jacob, Representative of the Provincial Government and Gov. Sol Aragones attended the activity. October 23, 2026 PROVINCIAL GOVERNMENT HOLDS 10TH LAGUNA HOUSING SUMMIT FOR HOMEOWNERS’ ASSOCIATIONS CALAMBA CITY, LAGUNA — The Provincial Government of Laguna, through the Provincial Urban Development and Housing Office (PUDHO), held the 10th Laguna Housing Summit on October 23 at the Multi-purpose Hall of the Laguna Provincial Capitol Extension Office in Calamba City. The event, themed “Tahanan, Pamayanan, Kinabukasan”, brought together 1,080 participants from homeowners’ associations (HOAs) across the province in observance of National Shelter Month. October 23, 2026 BENEFICIARIES OF THE MEDICAL AND BURIAL ASSISTANCE PROGRAM FROM THE FOURTH DISTRICT OF THE PROVINCIAL GOVERNMENT IMMEDIATELY RECEIVED ASSISTANCE SANTA CRUZ, LAGUNA – The distribution of immediate assistance by the Provincial Government, under the leadership of Gov. Sol Aragones, has continues through the 'Medical and Burial Assistance Program' which the distribution was held at the Cultural Center of Laguna, Friday, October 23. October 23, 2026 LAGUNA PROVINCIAL GOVERNMENT STRENGTHENS SAFETY MARSHALS’ EMERGENCY RESPONSE SKILLS THROUGH BLS AND FIRST AID TRAINING CALAMBA CITY, LAGUNA — The Provincial Government of Laguna, under the leadership of Governor Sol Aragones, strengthened the emergency response capabilities of its Safety Marshals through the Basic Life Support (BLS) and Standard First Aid (SFA) Training Course held from October 19 to 23. October 23, 2026 Portals Iskolar ng Laguna PLEIS GAD BalinkBayan COVID-19 Statistics Republic of the Philippines Navigation About News Full Disclosure ARTA Procurements Privacy Statement Contact Us #524862 Provincial Government of Laguna Provincial Capitol Compound, P. Guevarra St. Santa Cruz, Laguna.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "philippines--lanao-del-norte",
+      "board_qid": "Q104849485",
+      "board_label": {
+        "language": "en",
+        "value": "Lanao del Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739025,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--lanao-del-sur",
+      "board_qid": "Q104849490",
+      "board_label": {
+        "language": "en",
+        "value": "Lanao del Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739026,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--leyte",
+      "board_qid": "Q25052320",
+      "board_label": {
+        "language": "en",
+        "value": "Leyte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1342218040,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--maguindanao-del-norte",
+      "board_qid": "Q135675596",
+      "board_label": {
+        "language": "en",
+        "value": "Maguindanao del Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2389787764,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 11204,
+          "id": "Q11204"
+        }
+      ],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--maguindanao-del-sur",
+      "board_qid": "Q135675607",
+      "board_label": {
+        "language": "en",
+        "value": "Maguindanao del Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2389787723,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 11204,
+          "id": "Q11204"
+        }
+      ],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--marinduque",
+      "board_qid": "Q104849492",
+      "board_label": {
+        "language": "en",
+        "value": "Marinduque Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739035,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--masbate",
+      "board_qid": "Q104849507",
+      "board_label": {
+        "language": "en",
+        "value": "Masbate Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739139,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--misamis-occidental",
+      "board_qid": "Q30672202",
+      "board_label": {
+        "language": "en",
+        "value": "Misamis Occidental Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1350801413,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--misamis-oriental",
+      "board_qid": "Q104849513",
+      "board_label": {
+        "language": "en",
+        "value": "Misamis Oriental Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739140,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--mountain-province",
+      "board_qid": "Q104849520",
+      "board_label": {
+        "language": "en",
+        "value": "Mountain Province Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739092,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--negros-occidental",
+      "board_qid": "Q24901516",
+      "board_label": {
+        "language": "en",
+        "value": "Negros Occidental Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337104941,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--negros-oriental",
+      "board_qid": "Q24882645",
+      "board_label": {
+        "language": "en",
+        "value": "Negros Oriental Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337098713,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--northern-samar",
+      "board_qid": "Q104849538",
+      "board_label": {
+        "language": "en",
+        "value": "Northern Samar Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739293,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--nueva-ecija",
+      "board_qid": "Q104849541",
+      "board_label": {
+        "language": "en",
+        "value": "Nueva Ecija Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2224365305,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 11204,
+          "id": "Q11204"
+        }
+      ],
+      "board_countries": [],
+      "jurisdiction_qid": "Q13865",
+      "jurisdiction_revision": 2548064482,
+      "jurisdiction_label": {
+        "language": "en",
+        "value": "Nueva Ecija"
+      },
+      "published_government_websites": [
+        "https://www.nuevaecija.ph/"
+      ],
+      "page_checks": []
+    },
+    {
+      "id": "philippines--nueva-vizcaya",
+      "board_qid": "Q104849545",
+      "board_label": {
+        "language": "en",
+        "value": "Nueva Vizcaya Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739220,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--occidental-mindoro",
+      "board_qid": "Q104849550",
+      "board_label": {
+        "language": "en",
+        "value": "Occidental Mindoro Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739339,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--oriental-mindoro",
+      "board_qid": "Q104849552",
+      "board_label": {
+        "language": "en",
+        "value": "Oriental Mindoro Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739320,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--palawan",
+      "board_qid": "Q104849558",
+      "board_label": {
+        "language": "en",
+        "value": "Palawan Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739272,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--pampanga",
+      "board_qid": "Q104849563",
+      "board_label": {
+        "language": "en",
+        "value": "Pampanga Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739309,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--pangasinan",
+      "board_qid": "Q104849567",
+      "board_label": {
+        "language": "en",
+        "value": "Pangasinan Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739350,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--quezon",
+      "board_qid": "Q104849569",
+      "board_label": {
+        "language": "en",
+        "value": "Quezon Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739349,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--quirino",
+      "board_qid": "Q104849572",
+      "board_label": {
+        "language": "en",
+        "value": "Quirino Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739373,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--rizal",
+      "board_qid": "Q104849580",
+      "board_label": {
+        "language": "en",
+        "value": "Rizal Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358739405,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--romblon",
+      "board_qid": "Q25053789",
+      "board_label": {
+        "language": "en",
+        "value": "Romblon Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1339479459,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--samar",
+      "board_qid": "Q104849724",
+      "board_label": {
+        "language": "en",
+        "value": "Samar Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358740031,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--sarangani",
+      "board_qid": "Q104849734",
+      "board_label": {
+        "language": "en",
+        "value": "Sarangani Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358740069,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--siquijor",
+      "board_qid": "Q22330307",
+      "board_label": {
+        "language": "en",
+        "value": "Siquijor Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1464795622,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--sorsogon",
+      "board_qid": "Q104849825",
+      "board_label": {
+        "language": "en",
+        "value": "Sorsogon Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358747993,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--south-cotabato",
+      "board_qid": "Q104849827",
+      "board_label": {
+        "language": "en",
+        "value": "South Cotabato Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358748019,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--southern-leyte",
+      "board_qid": "Q25052560",
+      "board_label": {
+        "language": "en",
+        "value": "Southern Leyte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1337119293,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--sultan-kudarat",
+      "board_qid": "Q104849846",
+      "board_label": {
+        "language": "en",
+        "value": "Sultan Kudarat Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358748060,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--sulu",
+      "board_qid": "Q104850163",
+      "board_label": {
+        "language": "en",
+        "value": "Sulu Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749865,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--surigao-del-norte",
+      "board_qid": "Q104850165",
+      "board_label": {
+        "language": "en",
+        "value": "Surigao del Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2099286228,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13889",
+      "jurisdiction_revision": 2547895427,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://surigaodelnorte.gov.ph"
+      ],
+      "page_checks": [
+        {
+          "url": "http://surigaodelnorte.gov.ph",
+          "checked_at": "2026-10-23T18:10:00.741188+00:00",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://surigaodelnorte.gov.ph",
+          "checked_at": "2026-10-23T18:10:02.948949+00:00",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "id": "philippines--surigao-del-sur",
+      "board_qid": "Q104850168",
+      "board_label": {
+        "language": "en",
+        "value": "Surigao del Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749881,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--tarlac",
+      "board_qid": "Q104850175",
+      "board_label": {
+        "language": "en",
+        "value": "Tarlac Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749894,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--tawi-tawi",
+      "board_qid": "Q104850180",
+      "board_label": {
+        "language": "en",
+        "value": "Tawi-Tawi Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749905,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--zambales",
+      "board_qid": "Q104850188",
+      "board_label": {
+        "language": "en",
+        "value": "Zambales Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749930,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "board_qid": "Q104850209",
+      "board_label": {
+        "language": "en",
+        "value": "Zamboanga Sibugay Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749929,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    },
+    {
+      "id": "philippines--zamboanga-del-norte",
+      "board_qid": "Q104850193",
+      "board_label": {
+        "language": "en",
+        "value": "Zamboanga del Norte Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 2307908826,
+      "board_types": [
+        {
+          "entity-type": "item",
+          "numeric-id": 7417961,
+          "id": "Q7417961"
+        }
+      ],
+      "board_countries": [
+        {
+          "entity-type": "item",
+          "numeric-id": 928,
+          "id": "Q928"
+        }
+      ],
+      "jurisdiction_qid": "Q13899",
+      "jurisdiction_revision": 2547894696,
+      "jurisdiction_label": null,
+      "published_government_websites": [
+        "http://www.zanorte.gov.ph/"
+      ],
+      "page_checks": [
+        {
+          "url": "http://www.zanorte.gov.ph/",
+          "checked_at": "2026-10-23T18:10:01.246361+00:00",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        },
+        {
+          "url": "https://www.zanorte.gov.ph/",
+          "checked_at": "2026-10-23T18:10:01.762443+00:00",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "id": "philippines--zamboanga-del-sur",
+      "board_qid": "Q104850208",
+      "board_label": {
+        "language": "en",
+        "value": "Zamboanga del Sur Provincial Board"
+      },
+      "method": "Wikidata jurisdiction-to-province website discovery, followed by normal public primary site requests. Website assertions are discovery only until individually corroborated.",
+      "board_revision": 1358749928,
+      "board_types": [],
+      "board_countries": [],
+      "error": "No unique P1001 jurisdiction claim; province website discovery not completed from this sparse item. Retain the board label as a candidate only."
+    }
+  ]
+}

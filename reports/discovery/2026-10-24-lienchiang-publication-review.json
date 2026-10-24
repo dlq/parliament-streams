@@ -1,0 +1,54 @@
+{
+  "research_date": "2026-10-24",
+  "decision": "publish_scoped_lienchiang_recording_link",
+  "records": [
+    {
+      "body_id": "taiwan--lienchiang",
+      "catalogue_id": "taiwan-lienchiang-recordings",
+      "institution": "連江縣議會",
+      "qid": "Q15919452",
+      "entity_revision": 2407548504,
+      "primary_reference": "https://www.mtcc.gov.tw/",
+      "primary_provider_designation": [
+        {
+          "text": "議事影音(直播)",
+          "url": "https://www.youtube.com/channel/UCLFeXjIoUzY-FiVlWvL6b8Q"
+        }
+      ],
+      "confirmed_scope": "Own Lienchiang County Council site explicitly designates the viewing provider. 22October2026 (ROC115), afternoon county-government questions: member Zhou Ruiguo and official at microphones under full council banner; recording part2. Same22October2026 morning questions, female member questioning official at council microphones; separate part of same dated sitting, not second meeting date. Selected recordings decoded inChromium/WebKit with retained individual visual findings from23October. These are morning/afternoon parts of22October2026, not independent dates or full live/room coverage.",
+      "identity_finding": "Specific Lienchiang County CouncilQ15919452, TaiwanQ865 and Lienchiang jurisdiction/site claims reviewed against the primary council and provider. Not the mainland Lianjiang legislature. Entity revision 2407548504.",
+      "selected_recordings": [
+        {
+          "key": "remaining-taiwan-lienchiang-1",
+          "url": "https://www.youtube.com/watch?v=4JlV2CmnXx0&t=1200s",
+          "offset": 1200,
+          "decision": "identified_question_business_part",
+          "observation": "22October2026 (ROC115), afternoon county-government questions: member Zhou Ruiguo and official at microphones under full council banner; recording part2.",
+          "decoded_and_offset_reached_both_engines": true
+        },
+        {
+          "key": "remaining-taiwan-lienchiang-2",
+          "url": "https://www.youtube.com/watch?v=b97OCslNXhs&t=1200s",
+          "offset": 1200,
+          "decision": "identified_question_business_part",
+          "observation": "Same22October2026 morning questions, female member questioning official at council microphones; separate part of same dated sitting, not second meeting date.",
+          "decoded_and_offset_reached_both_engines": true
+        }
+      ],
+      "source_conditions": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Personal-use permission pending; official viewing link only, no extracted stream, independent embed, IPTV export or implemented XMLTV parser.",
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_all_tracks_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "same_sitting_parts_do_not_establish_independent_date_continuity",
+        "map_outline_source_year2017_not_current_cadastral_survey",
+        "optional_flag_unverified_neutral_mark_used"
+      ],
+      "map_source_file": "site/assets/maps/lienchiang-odbl.geojson",
+      "map_source_shape": "Matsu Islands / TW-LIE",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "retained_media_report": "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+  "map_method": "Missing Natural Earth coverage is supplied by a separate openly available ODbL geoBoundaries/OpenStreetMap derivative. Its licence,2017source year, original source identity and winding correction remain explicit; the other map dataset is not relicensed."
+}

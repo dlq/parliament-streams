@@ -1,0 +1,379 @@
+{
+  "research_date": "2026-10-23",
+  "body_id": "national:Montenegro",
+  "catalogue_id": "montenegro-parliament-recordings",
+  "decision": "publish_scoped_official_viewing_link",
+  "confirmed_scope": "The parliament website designates its official recording channel, corroborated by the exact institution item and provider ID. Selected 19 October 2026 plenary and 21 October Economy, Finance and Budget Committee recordings decode in Chromium and WebKit; frames show a standing plenary speaker and a committee participant speaking at lit microphones. Dates are the official titles. This is selected archived proceedings validation; current live, every room and audible language variants remain unverified.",
+  "exact_identity": {
+    "qid": "Q1579497",
+    "revision": null,
+    "labels": {
+      "de": {
+        "language": "de",
+        "value": "Parlament von Montenegro"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "Parlement du Monténégro"
+      },
+      "en": {
+        "language": "en",
+        "value": "Parliament of Montenegro"
+      },
+      "it": {
+        "language": "it",
+        "value": "Assemblea del Montenegro"
+      },
+      "sr": {
+        "language": "sr",
+        "value": "Скупштина Црне Горе"
+      },
+      "pt": {
+        "language": "pt",
+        "value": "Parlamento do Montenegro"
+      },
+      "es": {
+        "language": "es",
+        "value": "Parlamento de Montenegro"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "黑山國會"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "モンテネグロ国民議会"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "Parlamentul Muntenegrului"
+      },
+      "id": {
+        "language": "id",
+        "value": "Parlemen Montenegro"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "Montenegron parlamentti"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "legislative body of Montenegro"
+      },
+      "sr": {
+        "language": "sr",
+        "value": "највиши законодавни и уставотворни орган у Црној Гори"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "parlement monocaméral du Monténégro"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "Montenegron yksikamarinen kansanedustuslaitos"
+      },
+      "es": {
+        "language": "es",
+        "value": "Órgano legislativo de Montenegro"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "蒙特內哥羅立法機關"
+      },
+      "it": {
+        "language": "it",
+        "value": "parlamento monocamerale del Montenegro"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "モンテネグロの立法府"
+      }
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 37002670,
+                "id": "Q37002670"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1579497$D3542139-7104-4366-B38E-0FDB1334EA65",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "9a6ca2aee54f0231ca1ab0696f5252124af9afaa",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 236,
+                "id": "Q236"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1579497$c5abdf0f-428d-7a08-aaab-390cfa1c2fb9",
+          "rank": "normal"
+        }
+      ],
+      "P1001": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1001",
+            "hash": "02aa954798b4038596ee87751fb20fd74ae302a1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 236,
+                "id": "Q236"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1579497$B8FFD263-63E2-48A3-9A64-3B71F501E583",
+          "rank": "normal"
+        }
+      ],
+      "P856": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P856",
+            "hash": "fa01226819ac055a40850908af46f421204031bd",
+            "datavalue": {
+              "value": "https://www.skupstina.me/",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P407": [
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "f77c653ae9a1671669ed16e578fd823b7837e291",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 8821,
+                    "id": "Q8821"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 1860,
+                    "id": "Q1860"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P407"
+          ],
+          "id": "Q1579497$862A6CEC-B22F-4051-922F-B72AE8F6D1E5",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P2397": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2397",
+            "hash": "bf02d6d1c8ee06ef700957135378975ab110d6e8",
+            "datavalue": {
+              "value": "UC2V1QkN_HVpR6ZcNjHQ3Ykw",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "1422a1860418c427bb58293703996069ee1ac5b7",
+                "datavalue": {
+                  "value": {
+                    "time": "+2012-06-20T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P1810": [
+              {
+                "snaktype": "value",
+                "property": "P1810",
+                "hash": "4917797ef67618ed493dd4f63e1e655ebeeeb63a",
+                "datavalue": {
+                  "value": "Skupština Crne Gore",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ],
+            "P3744": [
+              {
+                "snaktype": "value",
+                "property": "P3744",
+                "hash": "d27060a048b20ea1c34c9ebf7ce3e1e6df17f64b",
+                "datavalue": {
+                  "value": {
+                    "amount": "+26100",
+                    "unit": "1"
+                  },
+                  "type": "quantity"
+                },
+                "datatype": "quantity"
+              }
+            ],
+            "P3740": [
+              {
+                "snaktype": "value",
+                "property": "P3740",
+                "hash": "064eab1ea6a5698776ce30b2f267e2e6e8b87c61",
+                "datavalue": {
+                  "value": {
+                    "amount": "+2154",
+                    "unit": "1"
+                  },
+                  "type": "quantity"
+                },
+                "datatype": "quantity"
+              }
+            ],
+            "P5436": [
+              {
+                "snaktype": "value",
+                "property": "P5436",
+                "hash": "593a76e22673765ef9a61bbe50b57e85f11ce101",
+                "datavalue": {
+                  "value": {
+                    "amount": "+12096076",
+                    "unit": "1"
+                  },
+                  "type": "quantity"
+                },
+                "datatype": "quantity"
+              }
+            ],
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "12b797532d744a749e48f512019816d3d9ea1830",
+                "datavalue": {
+                  "value": {
+                    "time": "+2024-08-18T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580",
+            "P1810",
+            "P3744",
+            "P3740",
+            "P5436",
+            "P585"
+          ],
+          "id": "Q1579497$47ECD26F-45C5-43AA-8F45-409275A027E3",
+          "rank": "normal"
+        }
+      ],
+      "P571": [],
+      "P576": [],
+      "P361": [],
+      "P1365": [],
+      "P1366": []
+    }
+  },
+  "primary_provider_report": "reports/health/2026-10-24-next-provider-indexes.json",
+  "ipu_reference": "https://data.ipu.org/parliament/ME/ME-LC01/working-methods/structure/",
+  "playback_evidence": [
+    "reports/health/2026-10-24-next-recording-followup.json"
+  ],
+  "source_conditions": "The reviewed institutional navigation designates public viewing; no blanket independent audiovisual reuse grant was established. Personal-use permission remains pending. Link to the official institution and its designated archive.",
+  "remaining_gates": [
+    "current_live_and_full_room_inventory_unverified",
+    "audible_quality_and_all_audio_tracks_unverified",
+    "source_wide_captions_sign_variants_audio_description_unknown",
+    "independent_audiovisual_reuse_unestablished",
+    "optional_flag_asset_pending_neutral_legislature_mark_used"
+  ],
+  "all_metadata_and_streams_certified": false
+}

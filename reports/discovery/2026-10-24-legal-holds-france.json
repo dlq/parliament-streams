@@ -1,0 +1,274 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Three exact French legal holds only; first-level/autonomous legislative-authority gate. No media/metadata/EPG/rights work.",
+  "policy_source": "docs/catalogue-scope.md",
+  "summary": {
+    "starting_holds": 3,
+    "individually_reviewed": 3,
+    "eligible_legislature": 0,
+    "outside_default_scope": 3,
+    "remaining_specific_holds": 0,
+    "new_catalogue_services": 0
+  },
+  "reason_for_changing_disposition": "A hold should identify an unresolved operative instrument, not demand indefinite proof against every hypothetical future delegation. The reviewed ordinary framework requires a separate subject-specific authorization. Guadeloupe’s former mandate has an explicit expiry; the2026paragraph3practice review lists successful use by Guadeloupe/Martinique and names unsuccessful Guyane requests. Current paragraph2adaptation is independently conditional underLO7411-6. Apply default scope with an exact reopening test; do not infer an exhaustive denial of every adaptation grant from that practice report.",
+  "consistency_note": "Do not exclude merely because rules are delegated, bounded or called regulations. The accepted Czech/Croatian/Japanese/provincial cases have affirmative substantive regional norm-making grants under their ordinary framework. These three records were held specifically for an unproved separate Article73grant; a general route for requesting one is not itself that affirmative grant. This decision does not deny ordinary regulatory, budget or representative powers.",
+  "sources": {
+    "guadeloupe-request": {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048080122",
+      "title": "Guadeloupe AP/22-19,30June2022; JORF17September2023",
+      "provisions": "recitals; articles1–3",
+      "method": "primary_official_gazette_indexed_full_text_review_direct_reader403",
+      "finding": "The council states the earlier grant expired27June2021. It requests a new parliamentary grant and replaces its November2021request. Publication records a request, not its approval."
+    },
+    "an-2026": {
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B2905.html",
+      "title": "National Assembly report2905,10June2026",
+      "provisions": "Introduction, Article73practice; commentary on energy habilitation",
+      "method": "primary_parliamentary_report_full_page_review",
+      "finding": "For Article73paragraph3 habilitation-fixation, the report identifies successful use by Guadeloupe and Martinique. It says Guadeloupe’s2022energy request and three specifically named Guyane requests had no legislative follow-through. It does not exhaustively deny every paragraph2adaptation or every later enactment."
+    },
+    "regional-framework": {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000006149299/2026-06-13/",
+      "title": "CGCT, overseas regions, current2026structure",
+      "provisions": "LO4435-6,LO4435-6-1,LO4435-9–12",
+      "method": "primary_official_statutory_indexed_section_text_review",
+      "finding": "A specific law or Conseil-d’État decree grants the habilitation according to the subject. The enabling procedure and possible one-time extension do not themselves supply a fresh grant."
+    },
+    "common-adaptation": {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052078435",
+      "title": "CGCT LO7411-1, effective1January2026",
+      "provisions": "LO7411-1",
+      "method": "primary_official_statutory_full_article_review",
+      "finding": "Guyane, Martinique and Mayotte can be authorized to adapt laws/regulations. The wording establishes eligibility to seek authorization, not an automatic authorization."
+    },
+    "common-grant": {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052078426",
+      "title": "CGCT LO7411-6, effective1January2026",
+      "provisions": "LO7411-6",
+      "method": "primary_official_statutory_indexed_full_article_review",
+      "finding": "A law grants legislative adaptation; a Conseil-d’État decree grants regulatory-only adaptation. The grant is time-limited to assembly renewal."
+    },
+    "common-rule-setting": {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052080982",
+      "title": "CGCT LO7412-1, effective1January2026",
+      "provisions": "LO7412-1; seeLO7412-2–3",
+      "method": "primary_official_statutory_full_article_review",
+      "finding": "The three assemblies may receive bounded rule-setting grants under Article73; this is a conditional framework, distinct from an enacted body-specific grant."
+    },
+    "mayotte-reorganization": {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000052078248/2026-02-21",
+      "title": "Organic Law2025-793 of11August2025,Article1",
+      "provisions": "Article1; currentCGCTLO7411/LO7412",
+      "method": "primary_official_statutory_article_and_current_concordance_review",
+      "finding": "Mayotte’s reorganization relocates and extends the common habilitation procedure. Preserve the2026Department-Region/Assembly identity; renumbering does not prove a subject-specific lawmaking grant."
+    },
+    "mayotte-government-ordinance": {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054456323",
+      "title": "Ordinance2026-647 of22July2026",
+      "provisions": "preamble,articles4and26",
+      "method": "primary_official_ordinance_indexed_text_review",
+      "finding": "Social-security adaptation is by the national Government under constitutionalArticle38. It is not an Article73grant to the Mayotte Assembly."
+    },
+    "martinique-actual-grant": {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054360963",
+      "title": "Law2026-574 of30June2026,JORF1July2026",
+      "provisions": "articles1–2",
+      "method": "primary_official_enacted_law_full_text_review",
+      "finding": "The new energy/water/sanitation grant names the Martinique Assembly. It does not authorize Guadeloupe, Guyane or Mayotte merely because their enabling framework is shared."
+    },
+    "ordinary-region": {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006164693",
+      "title": "CGCT ordinary regional competences",
+      "provisions": "L4221-1–3",
+      "method": "primary_official_statutory_indexed_section_text_review",
+      "finding": "Regional deliberation operates within attributed competences; the council approves its budget and makes regional plans/proposals. Those real regulatory, planning and financial powers are acknowledged, rather than denied."
+    },
+    "ordinary-guyane": {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000024407668/2026-06-22",
+      "title": "CGCT ordinary Guyane competences",
+      "provisions": "L7151-1–2; L7111-2; L7161-1",
+      "method": "primary_official_statutory_indexed_section_text_review",
+      "finding": "The Assembly governs territorial affairs and development within a combined departmental/regional framework, with its own budget. This is affirmative evidence of representative/administrative powers; authority clearance under the project rule still needs substantive autonomous normative powers beyond that proved framework."
+    },
+    "ordinary-mayotte": {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052092591/2026-03-17",
+      "title": "CGCT L7311-1, effective1January2026",
+      "provisions": "L7311-1; L7311-3",
+      "method": "primary_official_statutory_indexed_full_article_review",
+      "finding": "Mayotte exercises the competences assigned by law to departments and overseas regions. The combined framework has real regulation/budget functions; Article73subject-specific authorization is a separate legal mechanism."
+    }
+  },
+  "records": [
+    {
+      "id": "france--guadeloupe",
+      "country": "France",
+      "name": "Conseil régional Guadeloupe",
+      "previous_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "outside_default_scope",
+      "reviewed_on": "2026-10-24",
+      "decision_basis": "Close the current-scope hold as outside_default_scope on the evidenced ordinary regional framework and expired special grant. Preserve its real historical territorial legislation. A possible future renewal is a reopening event, not an unknown institution that must remain indefinitely unclassified.",
+      "scope_question_resolved": true,
+      "decision_character": "Project default-scope classification of the proved framework; not a judicial finding, a complete legislative-consolidation certificate or proof that no later grant could exist.",
+      "actual_institution_exists": true,
+      "conditional_legislative_capacity_preserved": true,
+      "historical_legislative_authority": {
+        "confirmed_previous_energy_grant_expired_on": "2021-06-27",
+        "expiry_source": "guadeloupe-request",
+        "rules_adopted_under_prior_grant_not_automatically_repealed": true
+      },
+      "primary_evidence_refs": [
+        "guadeloupe-request",
+        "an-2026",
+        "regional-framework",
+        "martinique-actual-grant",
+        "ordinary-region"
+      ],
+      "primary_urls": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048080122",
+        "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B2905.html",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000006149299/2026-06-13/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054360963",
+        "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006164693"
+      ],
+      "remaining_authority_instruments": [],
+      "reopening_evidence": [
+        "A body-specific enacted/operative Article73grant or another substantive autonomous territorial legislative allocation, with subjects, commencement, expiry/renewal and the assembly authorized.",
+        "Do not reopen merely on the generic enabling procedure, a pending request, continued applicability of old measures, a national-governmentArticle38ordinance, or a renamed territorial authority."
+      ],
+      "currentness_limit": "National Assembly negative practice review is dated10June2026; targeted searches through24October2026located no later operative grant for this assembly. Search silence is not treated as universal proof of non-enactment. Classification rests on the positively evidenced ordinary/conditional framework, with the exact reopening test retained.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_work_started": false,
+      "ordinary_regulatory_and_budget_powers_acknowledged": true,
+      "confirmed_findings": [
+        "The council is a real first-level regional authority with ordinary regulatory, planning and budget powers.",
+        "Its published AP/22-19 renewal request explicitly dates expiry of the former energy grant to27June2021.",
+        "AN2905,10June2026records that request without legislative follow-through; the2026grant inspected names Martinique."
+      ]
+    },
+    {
+      "id": "france--guyane",
+      "country": "France",
+      "name": "Assemblée de Guyane",
+      "previous_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "outside_default_scope",
+      "reviewed_on": "2026-10-24",
+      "decision_basis": "Close the current-scope hold as outside_default_scope on the reviewed framework: combined departmental/regional administration plus an unactivated subject-specific habilitation procedure. Retain the Assembly as a known institution. An autonomy proposal or unsuccessful request is not a missing operative grant.",
+      "scope_question_resolved": true,
+      "decision_character": "Project default-scope classification of the proved framework; not a judicial finding, a complete legislative-consolidation certificate or proof that no later grant could exist.",
+      "actual_institution_exists": true,
+      "conditional_legislative_capacity_preserved": true,
+      "historical_legislative_authority": {},
+      "primary_evidence_refs": [
+        "an-2026",
+        "common-adaptation",
+        "common-grant",
+        "common-rule-setting",
+        "martinique-actual-grant",
+        "ordinary-guyane"
+      ],
+      "primary_urls": [
+        "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B2905.html",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052078435",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052078426",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052080982",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054360963",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000024407668/2026-06-22"
+      ],
+      "remaining_authority_instruments": [],
+      "reopening_evidence": [
+        "A body-specific enacted/operative Article73grant or another substantive autonomous territorial legislative allocation, with subjects, commencement, expiry/renewal and the assembly authorized.",
+        "Do not reopen merely on the generic enabling procedure, a pending request, continued applicability of old measures, a national-governmentArticle38ordinance, or a renamed territorial authority."
+      ],
+      "currentness_limit": "National Assembly negative practice review is dated10June2026; targeted searches through24October2026located no later operative grant for this assembly. Search silence is not treated as universal proof of non-enactment. Classification rests on the positively evidenced ordinary/conditional framework, with the exact reopening test retained.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_work_started": false,
+      "ordinary_regulatory_and_budget_powers_acknowledged": true,
+      "confirmed_findings": [
+        "The Assembly is a real combined departmental/regional institution; ordinary affairs, planning and budget powers are preserved.",
+        "Current2026CGCTLO7411/LO7412provides a conditional route to legislative/regulatory authorization, not an automatic grant.",
+        "AN2905specifically records three unsuccessful Guyane requests; it is not an exhaustive denial of every Article73paragraph2adaptation."
+      ]
+    },
+    {
+      "id": "france--mayotte",
+      "country": "France",
+      "name": "Assemblée de Mayotte",
+      "previous_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "outside_default_scope",
+      "reviewed_on": "2026-10-24",
+      "decision_basis": "Close the current-scope hold as outside_default_scope on the reviewed framework: the 2026Department-Region Assembly remains a combined departmental/regional authority with a conditional habilitation route, rather than a proved autonomous territorial legislative mandate. National-government reconstruction/social ordinances and the renamed Assembly are distinct from a local lawmaking grant.",
+      "scope_question_resolved": true,
+      "decision_character": "Project default-scope classification of the proved framework; not a judicial finding, a complete legislative-consolidation certificate or proof that no later grant could exist.",
+      "actual_institution_exists": true,
+      "conditional_legislative_capacity_preserved": true,
+      "historical_legislative_authority": {},
+      "primary_evidence_refs": [
+        "an-2026",
+        "common-adaptation",
+        "common-grant",
+        "common-rule-setting",
+        "mayotte-reorganization",
+        "mayotte-government-ordinance",
+        "martinique-actual-grant",
+        "ordinary-mayotte"
+      ],
+      "primary_urls": [
+        "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B2905.html",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052078435",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052078426",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052080982",
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000052078248/2026-02-21",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054456323",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054360963",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052092591/2026-03-17"
+      ],
+      "remaining_authority_instruments": [],
+      "reopening_evidence": [
+        "A body-specific enacted/operative Article73grant or another substantive autonomous territorial legislative allocation, with subjects, commencement, expiry/renewal and the assembly authorized.",
+        "Do not reopen merely on the generic enabling procedure, a pending request, continued applicability of old measures, a national-governmentArticle38ordinance, or a renamed territorial authority."
+      ],
+      "currentness_limit": "National Assembly negative practice review is dated10June2026; targeted searches through24October2026located no later operative grant for this assembly. Search silence is not treated as universal proof of non-enactment. Classification rests on the positively evidenced ordinary/conditional framework, with the exact reopening test retained.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_work_started": false,
+      "ordinary_regulatory_and_budget_powers_acknowledged": true,
+      "confirmed_findings": [
+        "The2026Department-Region/Assembly identity and combined departmental/regional competences are confirmed.",
+        "CurrentLO7411/LO7412provides a conditional authorization process; the renaming/reorganization is not itself a subject-specific grant.",
+        "The inspected2026social-security ordinance is a national-governmentArticle38instrument, and the newArticle73energy/water law names Martinique."
+      ]
+    }
+  ],
+  "research_attempts": {
+    "queries": [
+      "site:legifrance.gouv.fr Guadeloupe habilitation2026 énergie2025",
+      "site:legifrance.gouv.fr Guyane habilitation2026assemblée loi",
+      "site:legifrance.gouv.fr Mayotte habilitationassemblée2026article73",
+      "site:ctguyane.fr habilitation2026",
+      "Guyane habilitation article73 2026",
+      "Mayotte habilitation article73 2026",
+      "Guadeloupe habilitation2026renouvellement loi énergie",
+      "site:legifrance.gouv.fr Guadeloupe2016habilitationmandat",
+      "site:legifrance.gouv.fr Guadeloupe AP/22-19",
+      "site:legifrance.gouv.fr Guyane Mayotte LO7311habilitée",
+      "site:legifrance.gouv.fr Guyane habilitationlégislative2026",
+      "site:legifrance.gouv.fr Mayotte habilitationlégislative2026",
+      "site:legifrance.gouv.fr assembléesdeGuyaneMartiniqueMayotte habilitées",
+      "site:legifrance.gouv.fr LO7411-1 LO7411-6 LO7412-1"
+    ],
+    "read_primary_materials": "Guadeloupepublishedrequest;AN2905completepage;current2026CGCTclauses;MayotterorganizationandArticle38ordinance;Martiniqueactualgrant. No claim of a search across every individualJORFentry.",
+    "access_limits": [
+      "GuadeloupeJORFrequest directreader403; fullindexedofficialtext includingexpiryandoperativearticlesread.",
+      "Some broadCGCTsectionURLsreturned403; specificarticlepagesandindexedclausestextwereavailable.",
+      "No browser/network failure interpreted as no legal authority."
+    ]
+  },
+  "all_eleven_cleared_by_this_report": false,
+  "independent_review": {
+    "reviewer": "separate_agent_primary_framework_and_claim_scope_review",
+    "finding": "Dated project default-scope exclusion with reopening supported. Broad claims about allArticle73grants narrowed: AN2905success list concernsparagraph3and namedGuyane requests;paragraph2adaptation treated separately usingcurrentCGCT.",
+    "not_an_exhaustive_legal_consolidation_certificate": true,
+    "reviewers": 2,
+    "ordinary_framework_clarification": "Both reviews support a dated project scope exclusion, acknowledging ordinary regulatory and budget powers. Primary ordinary-competence citations added; paragraph2/paragraph3claims distinguished."
+  },
+  "prior_functional_framework_report": "reports/discovery/2026-10-23-authority-completion.json"
+}

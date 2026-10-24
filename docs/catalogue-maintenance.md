@@ -104,6 +104,21 @@ Manual edits to `data/channels.json` are still possible for bulk, reviewed
 changes, but run `make site-data` immediately afterward. Never edit
 `site/catalogue-data.js` as an independent source.
 
+## Scope Recorded Viewing Evidence
+
+An official archive can be listed with carefully scoped recorded-business
+samples when institutional identity and provider ownership are independently
+supported. Two member segments or morning/afternoon parts of one sitting are
+not two meeting dates: retain that limitation in provenance and the publication
+review. Ceremonies, introductory films and youth competitions are not ordinary
+legislative business. Selected muted playback does not establish current live,
+every room, audible tracks, complete accessibility or permission to redistribute.
+
+The map combines the main regional collection with the separately licensed
+`site/assets/maps/lienchiang-odbl.geojson`. Preserve that dataset's ODbL notice,
+source/year, visible attribution and winding; do not silently relabel it as
+Natural Earth or change the other map-data licences.
+
 ## Validate And Report
 
 Create deterministic inputs for the static or Playwright validators:
@@ -314,3 +329,37 @@ The verification target checks JSON syntax, schema and cross-record rules,
 generated-data drift, Ruff formatting and linting, strict mypy, Python
 compilation, unit and branch coverage, HTML validity, Axe results, responsive
 browser behavior, and keyboard/accessibility assertions.
+
+## Cached Wikidata Research
+
+Use `tools/wikidata_research.py` for new research batches rather than issuing
+independent requests from each script. For example:
+
+```sh
+uv run python tools/wikidata_research.py \
+  '{"action":"wbsearchentities","search":"Ålands lagting","language":"sv","uselang":"en","limit":3}'
+```
+
+The ignored `.cache/wikidata/` directory retains successful search responses,
+including empty results, for 24 hours and entity responses for seven days.
+A cache hit makes no network request, even during a service cooldown. Retained
+successful search evidence can be imported with `WikidataClient.import_search`;
+these entries identify the source report and their narrower retained-field scope.
+Do not import failed searches as empty results. An empty result still requires
+alias research and is not evidence that the institution has no item.
+
+A shared file lock serializes batches. Normal requests are spaced three seconds
+apart. Transient HTTP/service, network and API errors (including HTTP-200 `maxlag`) persist an
+increasing cooldown: 60 seconds, 120, 240 and so on, capped at one hour. A longer
+`Retry-After`, including an HTTP date, takes precedence. Authentication/access
+blocks receive at least a one-day hold; do not work around them. Success resets
+the failure streak. Cache files retain their original fetch/expiry dates.
+
+The CLI makes one attempt and exits with status 75 when cooling down. Python
+callers catch `Cooldown` and use its `seconds` field to defer the next attempt;
+keep long waits outside blocking UI/tool calls. Reuse the same cache directory
+across batches so restarting research does not reset the cooldown. `maxlag=5`
+and normal TLS remain enabled. Cache evidence is not independent verification
+of institutional identity, legislative authority, playback or reuse permission.
+
+Rejected query parameters and other ordinary client errors return CLI status 2, with three-second request spacing but no service-failure increment. Correct those queries before retrying; genuine cooldowns return status75. Error messages go to stderr, keeping successful JSON output parseable.

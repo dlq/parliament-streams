@@ -1,0 +1,1996 @@
+{
+  "research_date": "2026-10-23",
+  "decision": "publish_nine_scoped_official_recording_services_keep_tocantins_second_sample_open",
+  "records": [
+    {
+      "body_id": "brazil--assembleia-legislativa-de-mato-grosso-do-sul",
+      "catalogue_id": "brazil-mato-grosso-do-sul-assembly-recordings",
+      "institution": "Assembleia Legislativa de Mato Grosso do Sul",
+      "region": "Mato Grosso do Sul",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Plenary sitting 21 October 2026 with a member speaking at the chamber microphone, and the Constitution/Justice/Drafting committee of that date with members conducting table business. Inset interpreters visible.",
+      "identity": {
+        "qid": "Q9633190",
+        "revision": 2499948831,
+        "country": "Q155",
+        "jurisdiction": "Q43319",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633190$8A1DA7D8-6CE8-4CDC-96D9-FB662A7E9BDF",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633190$23D45510-D173-4D86-A1B4-9710109AC24A",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633190$608C1EA1-BFB0-4B27-B833-89BB3B0A60E9",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "15ab45040cfafa3a5179ac12e312f4106835f9c8",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 43319,
+                    "id": "Q43319"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633190$9446dd2f-4bf8-e84a-a03f-0cdae914dce3",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "ab69734bcc7598df1ef7922e0cfc0afea56f21ff",
+                "datavalue": {
+                  "value": "http://www.al.ms.gov.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d3341820d45f6bb2097e8460656f7cd8fea3cf2a",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 5146,
+                        "id": "Q5146"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q9633190$3D969278-F401-419A-9A94-DBDAE6096FDB",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://al.ms.gov.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/c/assembleialegislativadems"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/c/assembleialegislativadems"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-do-sul-1",
+          "url": "https://www.youtube.com/watch?v=CvJ6fBybIhQ&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.583904464,
+          "decoded_frames_advanced": true,
+          "title": "Plenary Session - 10/21/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-do-sul-1",
+          "url": "https://www.youtube.com/watch?v=CvJ6fBybIhQ&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.9578,
+          "decoded_frames_advanced": true,
+          "title": "Plenary Session - 10/21/2026 - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-do-sul-2",
+          "url": "https://www.youtube.com/watch?v=cb_h4CkCY7o&t=966s",
+          "offset": 966,
+          "decoded_time": 969.540317393,
+          "decoded_frames_advanced": true,
+          "title": "Constitution, Justice and Drafting Committee Meeting - 10/21/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-do-sul-2",
+          "url": "https://www.youtube.com/watch?v=cb_h4CkCY7o&t=966s",
+          "offset": 966,
+          "decoded_time": 969.956414,
+          "decoded_frames_advanced": true,
+          "title": "Constitution, Justice and Drafting Committee Meeting - 10/21/2026 - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-MS"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-da-paraiba",
+      "catalogue_id": "brazil-paraiba-assembly-recordings",
+      "institution": "Assembleia Legislativa da Paraíba",
+      "region": "Paraíba",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Ordinary sittings 14 October and 11 August 2026 with members speaking at the lectern and inset interpreters. The August replay is unlisted but explicitly linked on the assembly's public website. The separately decoded PEC36/2021 committee is historical and does not confirm current committee coverage.",
+      "identity": {
+        "qid": "Q9633173",
+        "revision": 2492396842,
+        "country": "Q155",
+        "jurisdiction": "Q38088",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633173$34A775CD-9789-4CBA-955C-9A9625A549AA",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633173$2709DCDB-E539-4696-82BD-15620C6B3E63",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633173$5A720422-FB1B-47D7-BF61-94F72C14DE6D",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "a9ef07046f7129fcff8a319309b9db965c8dda14",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 38088,
+                    "id": "Q38088"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633173$e9e38bfb-4bff-17ec-b34f-0803a5a95599",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "4a695a9730f863e37ae45b3eeb60521b87420018",
+                "datavalue": {
+                  "value": "http://www.al.pb.leg.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q9633173$293C72A1-2A87-43E5-A4CE-DCE1F0D01B66",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.al.pb.leg.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/legislativopb"
+          },
+          {
+            "text": "TV ASSEMBLEIA PB",
+            "url": "https://www.youtube.com/@LegislativoPB"
+          },
+          {
+            "text": "Ver todos os vídeos",
+            "url": "https://youtube.com/playlist?list=UUAS064DsBXJTdK8kt0CuAKA&si=cLwKeMeOyIqUWc7c"
+          },
+          {
+            "text": "11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA",
+            "url": "https://www.youtube.com/watch?v=oID0li95Tu8"
+          },
+          {
+            "text": "16/06/2026 | JORNADA MÁRCIA BARBOSA – NENHUMA VIOLÊNCIA DE RAÇA E GÊNERO PODE SER INVISIBILIZADA",
+            "url": "https://www.youtube.com/watch?v=u8z3gaapRdk"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-da-paraiba-1",
+          "url": "https://www.youtube.com/watch?v=uTICxL3U0CE&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.550852228,
+          "decoded_frames_advanced": true,
+          "title": "10/14/2026 | ORDINARY SESSION - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-da-paraiba-1",
+          "url": "https://www.youtube.com/watch?v=uTICxL3U0CE&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.956165,
+          "decoded_frames_advanced": true,
+          "title": "10/14/2026 | ORDINARY SESSION - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-paraiba-second",
+          "url": "https://www.youtube.com/watch?v=oID0li95Tu8&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.905558,
+          "decoded_frames_advanced": true,
+          "title": "11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA. - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-paraiba-second",
+          "url": "https://www.youtube.com/watch?v=oID0li95Tu8&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.513635733,
+          "decoded_frames_advanced": true,
+          "title": "11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA. - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used",
+        "historical_2021_committee_not_current_committee_confirmation"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-PB"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-de-goias",
+      "catalogue_id": "brazil-goias-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado de Goiás",
+      "region": "Goiás",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Extraordinary plenary and Mixed Committee 22 October 2026: members speaking at desk/table microphones under matching dated captions. Inset interpreters visible in both.",
+      "identity": {
+        "qid": "Q9633183",
+        "revision": 2475720632,
+        "country": "Q155",
+        "jurisdiction": "Q41587",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633183$5D1B23F4-8FAB-4182-98F3-94AE53B9B928",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633183$B295C883-8C35-4A75-BFDF-2EABE47BD758",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633183$79D64643-BC60-4DD6-A40F-297D285FB924",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "daf0bc81b03571a4838b142d88eebe70e6f6e108",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 41587,
+                    "id": "Q41587"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633183$9d5f80a2-4a19-7e82-bbf2-074ab6b805bc",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "f32ef40bc2ce7f2ebd306cad176bd240629f147a",
+                "datavalue": {
+                  "value": "http://www.al.go.leg.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q9633183$89468259-19E4-44BD-ABC8-5E1672BC9082",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://portal.al.go.leg.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UC62tBsh6awMUD5cyBrjvr8Q"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UC62tBsh6awMUD5cyBrjvr8Q"
+          },
+          {
+            "text": "SESSÃO EXTRAORDINÁRIA - 22/10/2026\n\n23/10/2026",
+            "url": "https://www.youtube.com/watch?v=xiU47cCXVfI"
+          },
+          {
+            "text": "SESSÃO ORDINÁRIA - 22/10/2026\n\n23/10/2026",
+            "url": "https://www.youtube.com/watch?v=osUDFZHlvBg"
+          },
+          {
+            "text": "AGORA GOIÁS\n\n23/10/2026",
+            "url": "https://www.youtube.com/watch?v=q4yA8bC6Y8Q"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-goias-1",
+          "url": "https://www.youtube.com/watch?v=xiU47cCXVfI&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.544602333,
+          "decoded_frames_advanced": true,
+          "title": "Extraordinary Session - 10/22/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-goias-1",
+          "url": "https://www.youtube.com/watch?v=xiU47cCXVfI&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.922592,
+          "decoded_frames_advanced": true,
+          "title": "Extraordinary Session - 10/22/2026 - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-goias-2",
+          "url": "https://www.youtube.com/watch?v=ZIyRcD4EMls&t=438s",
+          "offset": 438,
+          "decoded_time": 441.544411986,
+          "decoded_frames_advanced": true,
+          "title": "Joint Committee - 10/22/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-goias-2",
+          "url": "https://www.youtube.com/watch?v=ZIyRcD4EMls&t=438s",
+          "offset": 438,
+          "decoded_time": 441.926435,
+          "decoded_frames_advanced": true,
+          "title": "Joint Committee - 10/22/2026 - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-GO"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-de-mato-grosso",
+      "catalogue_id": "brazil-mato-grosso-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado de Mato Grosso",
+      "region": "Mato Grosso",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Ordinary plenary 21 October 2026 and Constitution/Justice/Drafting committee 20 October 2026: members speaking at lectern/table microphones under dated assembly captions, with inset interpreters.",
+      "identity": {
+        "qid": "Q16498710",
+        "revision": 2492395385,
+        "country": "Q155",
+        "jurisdiction": "Q42824",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16498710$C7EE1F7B-9BA4-4475-A3BB-9DD7ADE819D8",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16498710$BA463707-F1AD-44AC-9BE7-553E8810CD75",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16498710$B2BF1412-CF34-4E6A-8655-E35956BA3E02",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "b81ad23e8320a3d127a9d5ea220b6b0c4343a0fb",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 42824,
+                    "id": "Q42824"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16498710$f2e5e743-4ca7-d5c9-9635-38b6c865606c",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "462040a48fe58e7a5b0551a8dea3a71caf333856",
+                "datavalue": {
+                  "value": "http://www.al.mt.gov.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q16498710$0D41A759-FB31-4372-ACA2-0F73E04E9594",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.al.mt.gov.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UCIxlLEYzjWPLb_CXpc-e74w"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UCIxlLEYzjWPLb_CXpc-e74w"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/channel/UCIxlLEYzjWPLb_CXpc-e74w"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-1",
+          "url": "https://www.youtube.com/watch?v=PP3nPzNPZ3Q&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.545155807,
+          "decoded_frames_advanced": true,
+          "title": "In-Person and Remote Ordinary Session - 10/21/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-1",
+          "url": "https://www.youtube.com/watch?v=PP3nPzNPZ3Q&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.950474,
+          "decoded_frames_advanced": true,
+          "title": "In-Person and Remote Ordinary Session - 10/21/2026 - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-2",
+          "url": "https://www.youtube.com/watch?v=_zwvMMrxk30&t=1039s",
+          "offset": 1039,
+          "decoded_time": 1042.550223232,
+          "decoded_frames_advanced": true,
+          "title": "Ordinary Meeting of the Constitution, Justice and Drafting Committee - 10/20/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-mato-grosso-2",
+          "url": "https://www.youtube.com/watch?v=_zwvMMrxk30&t=1039s",
+          "offset": 1039,
+          "decoded_time": 1042.936089,
+          "decoded_frames_advanced": true,
+          "title": "Ordinary Meeting of the Constitution, Justice and Drafting Committee - 10/20/2026 - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-MT"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-de-pernambuco",
+      "catalogue_id": "brazil-pernambuco-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado de Pernambuco",
+      "region": "Pernambuco",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Plenary 13 October 2026 with Renato Antunes speaking at the lectern, and committee public hearing 23 September 2026 on regulation of behaviour analysis for people with ASD, João Paulo Costa speaking. Inset interpreters visible; hearing is distinct from plenary.",
+      "identity": {
+        "qid": "Q9633197",
+        "revision": 2492397088,
+        "country": "Q155",
+        "jurisdiction": "Q40942",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633197$8709848B-78A4-4707-BFF0-1C130165025F",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633197$2289C5D8-224C-404B-BD07-982295DD887D",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633197$EDA56A16-96FF-4D52-9CAB-D15E661909AB",
+              "rank": "normal",
+              "references": [
+                {
+                  "hash": "9424852ca7d9d48269148c57acbefacca1899882",
+                  "snaks": {
+                    "P143": [
+                      {
+                        "snaktype": "value",
+                        "property": "P143",
+                        "hash": "b7f8bea3bb10c237323eb448dc4798948923bd5c",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 11921,
+                            "id": "Q11921"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "snaks-order": [
+                    "P143"
+                  ]
+                }
+              ]
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "c60dcd7ce4a131da0fecb08849ee78e27d2263e1",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 40942,
+                    "id": "Q40942"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P467": [
+                  {
+                    "snaktype": "value",
+                    "property": "P467",
+                    "hash": "9cfac7075aceb764f0b8ac07001b32002743f905",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 9633197,
+                        "id": "Q9633197"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P467"
+              ],
+              "id": "Q9633197$6c3f1cf9-43e5-53ad-93b0-0586bb6c76e4",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "95fecc7ad65b779a82088f54cab43566f63b7841",
+                "datavalue": {
+                  "value": "http://www.alepe.pe.gov.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q9633197$4C0E6390-B71A-4D90-AB4F-67D772E51B0C",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.alepe.pe.gov.br/",
+        "links": [
+          {
+            "text": "Alepe - Youtube",
+            "url": "https://youtube.com/@assembleiape"
+          },
+          {
+            "text": "",
+            "url": "https://youtube.com/@assembleiape"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-pernambuco-1",
+          "url": "https://www.youtube.com/watch?v=gHC5zMRrMY4&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.546155594,
+          "decoded_frames_advanced": true,
+          "title": "PLENARY SESSION | 10/13/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-pernambuco-1",
+          "url": "https://www.youtube.com/watch?v=gHC5zMRrMY4&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.921626,
+          "decoded_frames_advanced": true,
+          "title": "PLENARY SESSION | 10/13/2026 - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-pernambuco-2",
+          "url": "https://www.youtube.com/watch?v=M4zRfnuZCHw&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.558191421,
+          "decoded_frames_advanced": true,
+          "title": "PUBLIC HEARING: REGULATION OF BEHAVIOR ANALYSIS FOR PEOPLE WITH ASD | 09/23/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-pernambuco-2",
+          "url": "https://www.youtube.com/watch?v=M4zRfnuZCHw&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.93872,
+          "decoded_frames_advanced": true,
+          "title": "PUBLIC HEARING: REGULATION OF BEHAVIOR ANALYSIS FOR PEOPLE WITH ASD | 09/23/2026 - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": "https://www.alepe.pe.gov.br/termos-de-uso-e-politica-de-privacidade/",
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added. Reviewed Alepe terms address lawful use, intellectual-property responsibilities and personal-data protection; no blanket session-video licence or prior ordinary-link consent condition was identified."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-PE"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-de-rondonia",
+      "catalogue_id": "brazil-rondonia-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado de Rondônia",
+      "region": "Rondônia",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Ordinary sittings 13 and 6 October 2026: Cássio Góes speaking at the lectern and chair Alex Redano speaking from the dais. Interpreter visible in the first selected sample; no source-wide interpretation claim.",
+      "identity": {
+        "qid": "Q16494760",
+        "revision": 2475720677,
+        "country": "Q155",
+        "jurisdiction": "Q43235",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16494760$E72279BC-B280-4154-8182-9487CA66CC83",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16494760$226A1974-7CC9-42C2-BA07-540EC6F76AFE",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16494760$27F1E354-8F95-4EA2-BF2C-D3F1BB118161",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "528f607ae6b952ba6111d8879946fcaab5125135",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 43235,
+                    "id": "Q43235"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q16494760$76be00cd-4b0a-97b5-bde2-c74ad44df1b6",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "c07b8a640b950a156d6122e0f190e30ceee5ffdc",
+                "datavalue": {
+                  "value": "http://www.al.ro.leg.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q16494760$1C90BF9D-123A-4C69-982D-6B9CEF8A73DD",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.al.ro.leg.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@ALE.RONDONIA"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@ALE.RONDONIA"
+          },
+          {
+            "text": "Ver mais vídeos...",
+            "url": "https://www.youtube.com/@ALE.RONDONIA/streams"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-rondonia-1",
+          "url": "https://www.youtube.com/watch?v=w39GvsSrQq8&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.547721306,
+          "decoded_frames_advanced": true,
+          "title": "SESSÃO ORDINÁRIA | Deliberações de matérias e projetos 13/10/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-rondonia-1",
+          "url": "https://www.youtube.com/watch?v=w39GvsSrQq8&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.951112,
+          "decoded_frames_advanced": true,
+          "title": "SESSÃO ORDINÁRIA | Deliberações de matérias e projetos 13/10/2026 - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-de-rondonia-2",
+          "url": "https://www.youtube.com/watch?v=bXGVpwmZrTg&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.548555838,
+          "decoded_frames_advanced": true,
+          "title": "SESSÃO ORDINÁRIA | Deliberações de matérias e projetos 06/10/2026 - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-de-rondonia-2",
+          "url": "https://www.youtube.com/watch?v=bXGVpwmZrTg&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.95259,
+          "decoded_frames_advanced": true,
+          "title": "SESSÃO ORDINÁRIA | Deliberações de matérias e projetos 06/10/2026 - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-RO"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-do-ceara",
+      "catalogue_id": "brazil-ceara-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado do Ceará",
+      "region": "Ceará",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "80th ordinary sitting 20 October 2026: Sérgio Aguiar at the lectern with an inset interpreter; Work/Administration/Public Service committee with table business. Committee title/description says 20 September while displayed upload timing suggests October; exact committee date remains unreconciled.",
+      "identity": {
+        "qid": "Q13163502",
+        "revision": 2492392060,
+        "country": "Q155",
+        "jurisdiction": "Q40123",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q13163502$CB4B9B5C-6FB8-4BBD-9E95-D20F1FF0C6E1",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q13163502$374E79C3-6579-43B5-AB8C-72BF56030A8F",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q13163502$31FD7A0E-8A54-4ACD-B32C-4A9ECE03BC2A",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "87a62560cd33096ed9229b1df3950bf6356c4011",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 40123,
+                    "id": "Q40123"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q13163502$605d02ab-444a-85a0-57f1-46133cbd5dd6",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "3aa0c5344bdabceef8efdd679a259bc44720860e",
+                "datavalue": {
+                  "value": "http://www.al.ce.gov.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q13163502$066E082D-0C43-4C13-B985-D389B3F6269F",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.al.ce.gov.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/@Plenario-ALECE"
+          },
+          {
+            "text": "Jornal Alece - Edição da Noite - 12.12.2024\n\n(Abre em nova janela)",
+            "url": "https://www.youtube.com/watch?v=qY0NA9JiCyA"
+          },
+          {
+            "text": "Jornal Alece - Edição da Manhã - 13.12.2024\n\n(Abre em nova janela)",
+            "url": "https://www.youtube.com/watch?v=bWU3VByqzpM"
+          },
+          {
+            "text": "Questão de Ordem discute o conceito urbano das cidades compactas\n\n(Abre em nova janela)",
+            "url": "https://www.youtube.com/watch?v=TgHlkGIzCF8"
+          },
+          {
+            "text": "Jornal Alece - Edição da Noite - 11.12.2024\n\n(Abre em nova janela)",
+            "url": "https://www.youtube.com/watch?v=Hm2kDvN7r5Y&t=272s"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-do-ceara-1",
+          "url": "https://www.youtube.com/watch?v=LQtZ-NF-x6g&t=580s",
+          "offset": 580,
+          "decoded_time": 583.539465973,
+          "decoded_frames_advanced": true,
+          "title": "09/20/2026 - Technical Committees Meeting - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-do-ceara-1",
+          "url": "https://www.youtube.com/watch?v=LQtZ-NF-x6g&t=580s",
+          "offset": 580,
+          "decoded_time": 583.959396,
+          "decoded_frames_advanced": true,
+          "title": "09/20/2026 - Technical Committees Meeting - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-ceara-plenary-extra",
+          "url": "https://www.youtube.com/watch?v=dDa0DAsceik&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.957298,
+          "decoded_frames_advanced": true,
+          "title": "80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026 - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-ceara-plenary-extra",
+          "url": "https://www.youtube.com/watch?v=dDa0DAsceik&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.603859318,
+          "decoded_frames_advanced": true,
+          "title": "80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026 - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used",
+        "committee_title_date_vs_upload_timing_unreconciled"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-CE"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-do-parana",
+      "catalogue_id": "brazil-parana-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado do Paraná",
+      "region": "Paraná",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "Plenary 20 October 2026: member speaking at lectern with interpreter; health-accountability hearing of that date showing the state health secretariat's maternal mortality 2021–2026 slides. The hearing is separate from a plenary sitting.",
+      "identity": {
+        "qid": "Q9633230",
+        "revision": 2492396956,
+        "country": "Q155",
+        "jurisdiction": "Q15499",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633230$884DF5A0-0DFE-45D6-95E8-FC7232D351C2",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633230$0EDD4DB0-CE1D-4F50-89B8-860EEEE491E0",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633230$1FD20D8E-7186-48EE-975E-4A6479FC5A2D",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "ab5b2c72b7806b835f3621ddacc2cf6e4627e291",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 15499,
+                    "id": "Q15499"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q9633230$0dd3f281-4178-2053-8a46-c6c141a006c2",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "9496964ff6b3348a1f236767e7add344b8664cd7",
+                "datavalue": {
+                  "value": "http://www.alep.pr.gov.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d23405ce65d732957813e18277b36b3a723be311",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 750553,
+                        "id": "Q750553"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q9633230$6E772092-7D00-49BD-A6DE-B52F7CE7CE2C",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.assembleia.pr.leg.br/",
+        "links": [
+          {
+            "text": "REPRISE",
+            "url": "https://youtube.com/live/pqwrUcKCENU?feature=share"
+          },
+          {
+            "text": "TV Assembleia",
+            "url": "https://www.youtube.com/user/TVSinalAssembleiaPR"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/TVSinalAssembleiaPR"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-do-parana-1",
+          "url": "https://www.youtube.com/watch?v=pqwrUcKCENU&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.551696769,
+          "decoded_frames_advanced": true,
+          "title": "LIVE – 10/20 | Assembly holds Plenary Session - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-do-parana-1",
+          "url": "https://www.youtube.com/watch?v=pqwrUcKCENU&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.930937,
+          "decoded_frames_advanced": true,
+          "title": "LIVE – 10/20 | Assembly holds Plenary Session - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-do-parana-2",
+          "url": "https://www.youtube.com/watch?v=gn3bWyGl1uk&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.548368064,
+          "decoded_frames_advanced": true,
+          "title": "LIVE – 10/20 | Public hearing presents summary of health actions and investments in Paraná - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-do-parana-2",
+          "url": "https://www.youtube.com/watch?v=gn3bWyGl1uk&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.963761,
+          "decoded_frames_advanced": true,
+          "title": "LIVE – 10/20 | Public hearing presents summary of health actions and investments in Paraná - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-PR"
+      },
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "brazil--assembleia-legislativa-do-rio-de-janeiro",
+      "catalogue_id": "brazil-rio-de-janeiro-assembly-recordings",
+      "institution": "Assembleia Legislativa do Estado do Rio de Janeiro",
+      "region": "Rio de Janeiro",
+      "decision": "publish_scoped_official_institution_recording_link",
+      "confirmed_scope": "ALERJ Cumprase public hearing on implementing doulas/humanized-childbirth laws (onscreen 25 June 2026), and Sport/Leisure committee public hearing on sea sport and social inclusion (onscreen 18 August 2026). Both show speakers in identified assembly hearings; these are not two validated plenaries. First recording's upload timing differs from its onscreen meeting date.",
+      "identity": {
+        "qid": "Q6583209",
+        "revision": 2492403968,
+        "country": "Q155",
+        "jurisdiction": "Q41428",
+        "claims": {
+          "P31": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a9d2b9570d288f1b9038743147e69f296930552f",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 6518196,
+                    "id": "Q6518196"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q6583209$9B359890-929F-4C13-ACFA-AB3A957DDD76",
+              "rank": "normal"
+            },
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P31",
+                "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 37002670,
+                    "id": "Q37002670"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q6583209$0914CCA6-B8E5-4C3A-AC62-D6D630243050",
+              "rank": "normal"
+            }
+          ],
+          "P17": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P17",
+                "hash": "90114304161d20f1934075ea47b8a33a76e95138",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 155,
+                    "id": "Q155"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q6583209$71C705D3-7293-494F-9D93-BFE5FFA69485",
+              "rank": "normal"
+            }
+          ],
+          "P1001": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P1001",
+                "hash": "7407024751a0df896edcd69b34e044e8d3871feb",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 41428,
+                    "id": "Q41428"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              "type": "statement",
+              "id": "Q6583209$31181f34-4c6a-ccf6-2b59-15529610ac95",
+              "rank": "normal"
+            }
+          ],
+          "P856": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "447ad1e812e9bfb7fdec229cd969d200a0b698c5",
+                "datavalue": {
+                  "value": "http://www.alerj.rj.gov.br/",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "id": "Q6583209$B55DDAD5-C7C8-40BD-8070-CEC4D2DC4185",
+              "rank": "normal"
+            }
+          ],
+          "P2397": []
+        }
+      },
+      "primary_provider_designation": {
+        "source": "https://www.alerj.rj.gov.br/",
+        "links": [
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/dcsalerj"
+          },
+          {
+            "text": "TV ALERJ",
+            "url": "https://www.youtube.com/user/AlerjTV"
+          },
+          {
+            "text": "TV ALERJ",
+            "url": "https://www.youtube.com/user/AlerjTV"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/dcsalerj"
+          },
+          {
+            "text": "",
+            "url": "https://www.youtube.com/user/dcsalerj"
+          }
+        ]
+      },
+      "recorded_checks": [
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-do-rio-de-janeiro-1",
+          "url": "https://www.youtube.com/watch?v=Tn_eqfd_mrY&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.548096121,
+          "decoded_frames_advanced": true,
+          "title": "Alerj debate aplicação e os desafios da implementação da Lei das Doulas e da Lei do Parto Humanizado - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-do-rio-de-janeiro-1",
+          "url": "https://www.youtube.com/watch?v=Tn_eqfd_mrY&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.950062,
+          "decoded_frames_advanced": true,
+          "title": "Alerj debate aplicação e os desafios da implementação da Lei das Doulas e da Lei do Parto Humanizado - YouTube",
+          "visually_reviewed": true
+        },
+        {
+          "engine": "webkit",
+          "key": "brazil-assembleia-legislativa-do-rio-de-janeiro-2",
+          "url": "https://www.youtube.com/watch?v=ZzPC112yXE8&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.546696902,
+          "decoded_frames_advanced": true,
+          "title": "Audiência Pública | Debate sobre o esporte no mar como ferramenta de inclusão social e cidadania - YouTube",
+          "visually_reviewed": false
+        },
+        {
+          "engine": "chromium",
+          "key": "brazil-assembleia-legislativa-do-rio-de-janeiro-2",
+          "url": "https://www.youtube.com/watch?v=ZzPC112yXE8&t=1200s",
+          "offset": 1200,
+          "decoded_time": 1203.947408,
+          "decoded_frames_advanced": true,
+          "title": "Audiência Pública | Debate sobre o esporte no mar como ferramenta de inclusão social e cidadania - YouTube",
+          "visually_reviewed": true
+        }
+      ],
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_plenary_and_committee_room_inventory_unverified",
+        "audible_quality_and_all_spoken_or_auto_dubbed_tracks_not_verified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established",
+        "optional_regional_flag_asset_not_downloaded_after_commons_http429_neutral_mark_used",
+        "selected_evidence_is_hearings_not_plenary_playback",
+        "first_hearing_onscreen_meeting_date_vs_upload_timing_differs"
+      ],
+      "source_conditions": {
+        "url": null,
+        "assessment": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added."
+      },
+      "map": {
+        "source": "Natural Earth Admin1 public domain",
+        "feature": "BR-RJ"
+      },
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "authority_framework": "brazil-state-assemblies in reports/discovery/2026-10-23-legislative-priority.json",
+  "method": "Two engines decoded each selected recording; one captured Chromium frame per distinct recording visually reviewed. Extra Ceará/Paraíba frames also visually reviewed in WebKit. Muted video only.",
+  "parana_route_correction": {
+    "old": "http://www.alep.pr.gov.br",
+    "old_https_result": "certificate_authority_invalid_no_bypass",
+    "current": "https://www.assembleia.pr.leg.br/",
+    "primary_corroboration": [
+      "https://www.assembleia.pr.leg.br/assembleia/perguntas-frequentes",
+      "https://www.gcau-consulta.casacivil.pr.gov.br/gcau_internet/servicoLivreConsultaAgrupadorInternet.do?action=gerarPdf&codAgrupadorInternet=149"
+    ],
+    "note": "Current own website designates TVSinalAssembleiaPR and exact selected plenary; Casa Civil current institution directory independently corroborates the current institutional domain. Not a claim that Wikidata P856 has been updated."
+  },
+  "tocantins_hold": {
+    "body_id": "brazil--assembleia-legislativa-do-tocantins",
+    "confirmed": "Exact assembly identity, own provider designation and one substantive ordinary recording.",
+    "unresolved": "Second separate substantive recording not established: selected254th,253rd and165th replay titles resolve to142.341s,14.601s and8.881s short uploads, below requested sample offsets. Latest indexed266th/267th are20s/42s; no claim of full-session coverage or service absence.",
+    "publication": "remain_unpublished_follow_up_recording_inventory"
+  },
+  "all_metadata_and_streams_certified": false
+}

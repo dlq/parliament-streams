@@ -1,0 +1,15 @@
+{
+  "method": "One different in-recording point,4800s, in WebKit following the unsuccessful3600s sample. Normal source page/native readiness/play, no URL or media-source substitution. A success here would not erase the earlier stall.",
+  "results": [
+    {
+      "body_id": "switzerland--geneve-genf",
+      "id": "geneva-oct1-other",
+      "url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:33:45.707Z",
+      "muted": true,
+      "error": "TimeoutError: page.waitForFunction: Timeout 15000ms exceeded.",
+      "outcome": "unresolved"
+    }
+  ]
+}

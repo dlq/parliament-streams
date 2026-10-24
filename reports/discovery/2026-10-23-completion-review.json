@@ -1,0 +1,2081 @@
+{
+  "research_date": "2026-10-23",
+  "scope": "Follow-up of the 118 institutional URL gaps after the 57-route Corrientes batch.",
+  "summary": {
+    "starting_missing_urls": 118,
+    "additional_routes_identified": 40,
+    "remaining_missing_urls": 78,
+    "catalogue_sources_before_promotions": 161,
+    "all_652_fully_verified": false,
+    "catalogue_sources_after_promotions": 165,
+    "catalogued_eligible_bodies": 67,
+    "eligible_bodies_without_matched_service": 585,
+    "playback_certification_scope": "Selected distinct recordings only; no current-live or all-room certification."
+  },
+  "institutional_route_corrections": [
+    {
+      "id": "philippines--agusan-del-norte",
+      "url": "https://www.agusandelnorte.gov.ph/government/contact-us",
+      "previous_value": null,
+      "scope": "government_contact_directory",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--aklan",
+      "url": "https://aklan.gov.ph/directory/",
+      "previous_value": null,
+      "scope": "government_contact_directory_indexed",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 403,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--aurora",
+      "url": "https://auroraprovince.gov.ph/elected-officials/",
+      "previous_value": null,
+      "scope": "primary_officials_profile_web_reader",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 403,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--batangas",
+      "url": "https://portal.batangas.gov.ph/contact-us/",
+      "previous_value": null,
+      "scope": "government_contact_directory",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--biliran",
+      "url": "https://bp-sangguniangpanlalawigan.com/",
+      "previous_value": null,
+      "scope": "institution_primary_government_crosslink",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--bohol",
+      "url": "https://bohol.gov.ph/legislative/sangguniang-panlalawigan-of-bohol/",
+      "previous_value": null,
+      "scope": "institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--bukidnon",
+      "url": "https://bukidnon.gov.ph/sanguniang-panlalawigan/governance/",
+      "previous_value": null,
+      "scope": "institution_profile_indexed_access_blocked",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 403,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--bulacan",
+      "url": "https://sp.bulacan.gov.ph/",
+      "previous_value": null,
+      "scope": "institution_primary_government_crosslink",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--camarines-norte",
+      "url": "https://camsnorte.com/the-sanggunian/",
+      "previous_value": null,
+      "scope": "institution_profile_via_government_redirect",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--dinagat-islands",
+      "url": "https://dinagatislands.gov.ph/sangguniang-panlalawigan/",
+      "previous_value": null,
+      "scope": "institution_profile_content_sparse",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--iloilo",
+      "url": "https://iloilo.gov.ph/en/sangguniang%20panlalawigan",
+      "previous_value": null,
+      "scope": "institution_secretariat_directory",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--mountain-province",
+      "url": "http://mountainprovince.gov.ph/officials/legislative/board-members/",
+      "previous_value": null,
+      "scope": "institution_profile_content_sparse",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--negros-occidental",
+      "url": "https://www.negros-occ.gov.ph/elected-officials-2025/",
+      "previous_value": null,
+      "scope": "institution_officials_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--nueva-ecija",
+      "url": "https://www.nuevaecija.ph/sangguniang-panlalawigan/",
+      "previous_value": null,
+      "scope": "institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--nueva-vizcaya",
+      "url": "https://nuevavizcaya.gov.ph/legislative-branch-2025/",
+      "previous_value": null,
+      "scope": "institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--oriental-mindoro",
+      "url": "https://ormindoro.gov.ph/sp/",
+      "previous_value": null,
+      "scope": "institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--pampanga",
+      "url": "https://pampanga.gov.ph/index.php/government/sangguniang-panlalawigan",
+      "previous_value": null,
+      "scope": "designated_legislative_collection_sparse",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--pangasinan",
+      "url": "https://www.pangasinan.gov.ph/department/sangguniang-panlalawigan/",
+      "previous_value": null,
+      "scope": "institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--rizal",
+      "url": "https://www.rizalprovince.ph/pages/board%20members.html",
+      "previous_value": null,
+      "scope": "institution_officials_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--sorsogon",
+      "url": "https://sorsogon.gov.ph/about/legislative/",
+      "previous_value": null,
+      "scope": "institution_officials_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--south-cotabato",
+      "url": "https://southcotabato.gov.ph/provincial-officials/",
+      "previous_value": null,
+      "scope": "institution_officials_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--southern-leyte",
+      "url": "https://southernleyte.gov.ph/osp/",
+      "previous_value": null,
+      "scope": "institution_profile_indexed_access_blocked",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 403,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--surigao-del-norte",
+      "url": "https://surigaodelnorte.gov.ph/sp-resolutions/",
+      "previous_value": null,
+      "scope": "legislative_collection_indexed_access_blocked",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 403,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "philippines--surigao-del-sur",
+      "url": "https://surigaodelsur.gov.ph/departments",
+      "previous_value": null,
+      "scope": "government_office_directory",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--arauca",
+      "url": "https://www.asambleadepartamentodearauca.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--caqueta",
+      "url": "https://www.asamblea-caqueta.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--casanare",
+      "url": "https://asamblea-casanare.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--la-guajira",
+      "url": "https://www.asamblea-laguajira.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--magdalena",
+      "url": "https://www.asamblea-magdalena.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page_indexed_render_sparse",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--norte-de-santander",
+      "url": "https://www.asamblea-nortedesantander.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--risaralda",
+      "url": "https://asamblearisaralda.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "colombia--vaupes",
+      "url": "https://www.asambleadeptalvaupes.gov.co/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--kepulauan-bangka-belitung",
+      "url": "https://www.dprd.babelprov.go.id/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--dki-jakarta",
+      "url": "https://www.jakarta.go.id/dprd-dki-jakarta",
+      "previous_value": null,
+      "scope": "government_institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--kalimantan-utara",
+      "url": "https://dprd.kaltaraprov.go.id/sekilas-dprd/",
+      "previous_value": null,
+      "scope": "institution_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--kepulauan-riau",
+      "url": "https://dprd.kepriprov.go.id/",
+      "previous_value": null,
+      "scope": "institution_secretariat_content_http403",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 403,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--sumatera-utara",
+      "url": "https://dprd.sumutprov.go.id/",
+      "previous_value": null,
+      "scope": "institution_page",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--sumatera-selatan",
+      "url": "https://dprd.sumselprov.go.id/jdih/public/",
+      "previous_value": null,
+      "scope": "institution_legal_portal",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "indonesia--maluku",
+      "url": "https://dprd.malukuprov.go.id/",
+      "previous_value": null,
+      "scope": "government_directory_designation_tls_hold",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": null,
+      "access_error": "Error: page.goto: net::ERR_CERT_DATE_INVALID at https://dprd.malukuprov.go.id/\nCall log:\n\u001b[2m  - navigating to \"https://dprd.malukuprov.go.id/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "evidence_report": "reports/health/2026-10-23-completion-pages-3.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    },
+    {
+      "id": "sri-lanka--eastern",
+      "url": "https://ep.gov.lk/councilindex.html",
+      "previous_value": null,
+      "scope": "council_secretariat_profile",
+      "review_method": "individual_primary_identity_and_designation_review",
+      "access_status": 200,
+      "access_error": null,
+      "evidence_report": "reports/health/2026-10-23-completion-pages-2.json",
+      "limitation": "Institutional route identification only. Does not certify current membership, current live playback, all rooms, spoken languages or media reuse. Indexed or officially designated routes retain their explicit access/content limitations."
+    }
+  ],
+  "remaining_by_country": {
+    "Argentina": 1,
+    "Colombia": 2,
+    "Indonesia": 18,
+    "Panama": 4,
+    "Philippines": 41,
+    "Sri Lanka": 2,
+    "Suriname": 10
+  },
+  "wrong_jurisdiction_corrections": [
+    {
+      "id": "philippines--leyte",
+      "rejected_url": "https://southernleyte.gov.ph/osp/",
+      "reason": "Separate province"
+    }
+  ],
+  "limitations": [
+    "Grouped targeted searches were discovery, not individual page or playback certification.",
+    "Blank, blocked, expired-certificate and missing pages remain access/content limitations; never evidence of no broadcasts.",
+    "The 652-body authority classification is separate from complete service verification."
+  ],
+  "evidence_reports": [
+    "reports/health/2026-10-23-completion-pages.json",
+    "reports/health/2026-10-23-completion-pages-2.json",
+    "reports/health/2026-10-23-completion-pages-3.json",
+    "reports/health/2026-10-23-completion-providers.json"
+  ],
+  "promotions": [
+    {
+      "key": "kaltara",
+      "row": "indonesia--kalimantan-utara",
+      "cid": "indonesia-north-kalimantan-legislative-webcasts",
+      "name": "North Kalimantan Legislative Webcasts",
+      "region": "North Kalimantan",
+      "parent": "ID",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Utara",
+      "language": "Indonesian",
+      "primary": "https://dprd.kaltaraprov.go.id/sekilas-dprd/",
+      "url": "https://www.youtube.com/@dprdprov.kaltara/streams",
+      "flag": "north-kalimantan",
+      "notes": "The provincial legislature profile explicitly designates @dprdprov.kaltara. A KPID selection hearing and a separate plenary presentation of the 2024 government accountability report were visually checked beyond opening graphics, at 30 and 20 minutes respectively. The hearing room banner, legislators, plenary room and institutional branding match the provincial DPRD. These historical recordings do not establish current live coverage."
+    },
+    {
+      "key": "arauca",
+      "row": "colombia--arauca",
+      "cid": "colombia-arauca-assembly-webcasts",
+      "name": "Arauca Assembly Webcasts",
+      "region": "Arauca",
+      "parent": "CO",
+      "institution": "Asamblea Departamental de Arauca",
+      "language": "Spanish",
+      "primary": "https://www.asambleadepartamentodearauca.gov.co/",
+      "url": "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+      "flag": "arauca",
+      "notes": "The departmental assembly homepage explicitly designates channel UCqTycM15CbUe1zv5Xo0n1zw. Ordinary sittings labelled 22 and 21 October 2026 were visually reviewed at ten minutes with speakers, chamber flags and institutional room setting. Current live and every committee room remain separate checks."
+    },
+    {
+      "key": "caqueta",
+      "row": "colombia--caqueta",
+      "cid": "colombia-caqueta-assembly-webcasts",
+      "name": "Caquetá Assembly Webcasts",
+      "region": "Caquetá",
+      "parent": "CO",
+      "institution": "Asamblea Departamental del Caquetá",
+      "language": "Spanish",
+      "primary": "https://www.asamblea-caqueta.gov.co/",
+      "url": "https://www.youtube.com/channel/UCnv4PhFlCBm4pXvHOzkaCfg/streams",
+      "flag": "caqueta",
+      "notes": "The departmental assembly homepage explicitly designates channel UCnv4PhFlCBm4pXvHOzkaCfg. An environmental public hearing labelled 22 October 2026 and a distinct victims-policy sitting labelled 21 October were visually checked at ten and thirty minutes. Deputies, chamber nameplates, assembly branding and substantive presentations are visible. The latter topic also matches the homepage order-of-day entry for 21 October. One WebKit inspection was interrupted by a detached provider frame; the same sample passed a bounded retry. Current live and complete committee coverage remain unverified."
+    },
+    {
+      "key": "risaralda",
+      "row": "colombia--risaralda",
+      "cid": "colombia-risaralda-assembly-webcasts",
+      "name": "Risaralda Assembly Webcasts",
+      "region": "Risaralda",
+      "parent": "CO",
+      "institution": "Asamblea Departamental de Risaralda",
+      "language": "Spanish",
+      "primary": "https://asamblearisaralda.gov.co/",
+      "url": "https://www.youtube.com/@asambleadepartamental-comu59/streams",
+      "flag": "risaralda",
+      "notes": "The assembly homepage explicitly labels @asambleadepartamental-comu59/streams as its live-session destination. Ordinary sittings labelled 22 and 21 October 2026 were checked at forty minutes, beyond introductory tourism material, and show substantive 2027 legal and education budget presentations with regional institutional branding. Finance and planning committee recordings also appear in the provider index but were not individually playback-certified. Current live and full room coverage remain unresolved."
+    }
+  ],
+  "assets": {
+    "flags": [
+      {
+        "title": "File:Flag of Arauca.svg",
+        "page": {
+          "pageid": 1421393,
+          "ns": 6,
+          "title": "File:Flag of Arauca.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Arauca.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flag_of_Arauca.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1421393",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2016-03-26 07:52:03",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Flag of Arauca",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "With insignia|Self-published work|PD-self|Horizontal bicolor red and green flags|SVG flags of Arauca Department",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Flag of <a href=\"https://en.wikipedia.org/wiki/Arauca_Department\" class=\"extiw\" title=\"en:Arauca Department\">Arauca</a>, <a href=\"https://en.wikipedia.org/wiki/Colombia\" class=\"extiw\" title=\"en:Colombia\">Colombia</a>. Created by <a href=\"//commons.wikimedia.org/wiki/User:Fibonacci\" title=\"User:Fibonacci\">Fibonacci</a>, based on <a href=\"//commons.wikimedia.org/wiki/User:Chlewey\" title=\"User:Chlewey\">Carlos E. Thompson</a>'s PD image.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2006-11-28",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "Drawn by <a href=\"//commons.wikimedia.org/wiki/User:Fibonacci\" title=\"User:Fibonacci\">User:Fibonacci</a><br><a rel=\"nofollow\" class=\"external text\" href=\"http://www.arauca.gov.co/\">Gobernación de Arauca</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Fibonacci\" title=\"User:Fibonacci\">Fibonacci</a>",
+                  "source": "commons-desc-page"
+                },
+                "Permission": {
+                  "value": "<table style=\"width:100%; clear:both; margin:0.5em auto; border-spacing:8px; background-color:var(--background-color-neutral-subtle,#f7f8ff); border:2px solid #8888aa;color: inherit;\" lang=\"en\" dir=\"ltr\" class=\"layouttemplate restrictiontemplate restriction-insignia\">\n<tbody><tr>\n<td style=\"border:none; width:64px;\"><figure class=\"mw-halign-center\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/Commons:Non-copyright_restrictions\" title=\"Insignia\"><img alt=\"Insignia\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coat-elements-2.png/120px-Coat-elements-2.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"77\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coat-elements-2.png/250px-Coat-elements-2.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"609\" data-file-height=\"731\"></a><figcaption>Insignia</figcaption></figure>\n</td>\n<td style=\"border:none;\">This image shows a <a href=\"https://en.wikipedia.org/wiki/flag\" class=\"extiw\" title=\"w:flag\">flag</a>, a <a href=\"https://en.wikipedia.org/wiki/coat_of_arms\" class=\"extiw\" title=\"w:coat of arms\">coat of arms</a>, a <a href=\"https://en.wikipedia.org/wiki/seal_(emblem)\" class=\"extiw\" title=\"w:seal (emblem)\">seal</a> or some other official <b><a href=\"https://en.wikipedia.org/wiki/insignia\" class=\"extiw\" title=\"w:insignia\">insignia</a></b>. The use of such symbols is restricted in many countries. These restrictions are independent of the <a href=\"https://en.wikipedia.org/wiki/copyright\" class=\"extiw\" title=\"w:copyright\">copyright</a> status.\n</td></tr></tbody></table>\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>I, the copyright holder of this work, release this work into the <b><a href=\"https://en.wikipedia.org/wiki/en:public_domain\" class=\"extiw\" title=\"w:en:public domain\">public domain</a></b>. This applies worldwide.<br><small>In some countries this may not be legally possible; if so:</small><br><i>I grant anyone the right to use this work <b>for any purpose</b>, without any conditions, unless such conditions are required by law.</i>\n</td></tr></tbody></table>",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "insignia",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "File:Flag of Caquetá.svg",
+        "page": {
+          "pageid": 1585586,
+          "ns": 6,
+          "title": "File:Flag of Caquetá.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_Caquet%C3%A1.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flag_of_Caquet%C3%A1.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1585586",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2018-09-02 01:54:55",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Flag of Caquetá",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "GFDL|License migration completed|With insignia|Self-published work|SVG flags of Caquetá Department",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Flag of <a href=\"https://en.wikipedia.org/wiki/Caquet%C3%A1_Department\" class=\"extiw\" title=\"en:Caquetá Department\">Caquetá</a>, <a href=\"https://en.wikipedia.org/wiki/Colombia\" class=\"extiw\" title=\"en:Colombia\">Colombia</a>. Created by <a href=\"//commons.wikimedia.org/wiki/User:Fibonacci\" title=\"User:Fibonacci\">Fibonacci</a>, based on <a href=\"//commons.wikimedia.org/wiki/User:Chlewey\" title=\"User:Chlewey\">Carlos E. Thompson</a>'s GFDL image.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2007-01-21",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "Drawn by <a href=\"//commons.wikimedia.org/wiki/User:Fibonacci\" title=\"User:Fibonacci\">User:Fibonacci</a><br><a rel=\"nofollow\" class=\"external text\" href=\"http://www.caqueta.gov.co/\">Gobernación del Caquetá</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Fibonacci\" title=\"User:Fibonacci\">Fibonacci</a>",
+                  "source": "commons-desc-page"
+                },
+                "Permission": {
+                  "value": "I, the copyright holder of this work, hereby publish it under the following license:",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "insignia",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "File:Flag of Risaralda Department.svg",
+        "page": {
+          "pageid": 1231828,
+          "ns": 6,
+          "title": "File:Flag of Risaralda Department.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Risaralda_Department.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flag_of_Risaralda_Department.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1231828",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2006-10-01 00:48:30",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Flag of Risaralda Department",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "PD ineligible|Flags with white stars|SVG flags of Risaralda Department|Green and white flags of Colombia|Plain green SVG star icons|White on flags with green fields",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Flag of Risaralda department, Colombia",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Madden\" title=\"User:Madden\">Madden</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "File:Flag of North Kalimantan.svg",
+        "page": {
+          "pageid": 108004944,
+          "ns": 6,
+          "title": "File:Flag of North Kalimantan.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_North_Kalimantan.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Kalimantan.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=108004944",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2021-07-30 11:40:53",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Flag of North Kalimantan",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "North Kalimantan|PD Indonesia|Vector images using elements from other vector images|SVG flags of provinces of Indonesia|Buceros rhinoceros in art",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "This <a href=\"https://en.wikipedia.org/wiki/vector_image\" class=\"extiw\" title=\"w:vector image\">vector image</a> includes elements that have been taken or adapted from this file:",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2021-05-10",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://peraturan.bpk.go.id/Details/187297/perda-prov-kalimantan-utara-no-3-tahun-2021\">Lampiran II Peraturan Daerah Provinsi Kalimantan Utara Nomor 3 Tahun 2021</a> (Annex II of Regional Regulation of North Kalimantan Province No 3 Year 2021)",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Germenfer\" title=\"User:Germenfer\">Germenfer</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Flag_of_North_Kalimantan.svg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "north_kalimantan_boundary": {
+      "boundaryID": "IDN-ADM1-30024224",
+      "boundaryName": "Indonesia",
+      "boundaryISO": "IDN",
+      "boundaryYearRepresented": "2019",
+      "boundaryType": "ADM1",
+      "boundaryCanonical": "Province; Provinsi",
+      "boundarySource": "OCHA Regional Office for Asia and the Pacific (ROAP), HDX",
+      "boundaryLicense": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseDetail": "nan",
+      "licenseSource": "data.humdata.org/dataset/cod-ab-idn",
+      "boundarySourceURL": "data.humdata.org/dataset/cod-ab-idn",
+      "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+      "buildDate": "Dec 12, 2023",
+      "Continent": "Asia",
+      "UNSDG-region": "Eastern and South-Eastern Asia",
+      "UNSDG-subregion": "South-Eastern Asia",
+      "worldBankIncomeGroup": "Lower-middle-income Countries",
+      "admUnitCount": "34",
+      "meanVertices": "78898.0",
+      "minVertices": "4329",
+      "maxVertices": "306644",
+      "meanPerimeterLengthKM": "3525.1106155721845",
+      "minPerimeterLengthKM": "347.7274139715147",
+      "maxPerimeterLengthKM": "10017.833549493236",
+      "meanAreaSqKM": "55619.91268177464",
+      "minAreaSqKM": "653.8747041929523",
+      "maxAreaSqKM": "314033.03777157987",
+      "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/IDN/ADM1/geoBoundaries-IDN-ADM1-all.zip",
+      "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/IDN/ADM1/geoBoundaries-IDN-ADM1.geojson",
+      "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/IDN/ADM1/geoBoundaries-IDN-ADM1.topojson",
+      "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/IDN/ADM1/geoBoundaries-IDN-ADM1-PREVIEW.png",
+      "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/IDN/ADM1/geoBoundaries-IDN-ADM1_simplified.geojson"
+    },
+    "map_transformations": [
+      "Colombian Polygon geometries normalized to MultiPolygon.",
+      "Coordinates rounded to six decimals.",
+      "North Kalimantan rings reversed for D3 spherical winding."
+    ]
+  },
+  "not_promoted": [
+    {
+      "id": "philippines--aurora",
+      "url": "https://www.youtube.com/watch?v=hMlqr3DGCt4",
+      "reason": "Official home embeds a 5:40 PGA IN ACTION news item; a session title and thumbnail are not a full proceedings service. The 30-minute playback request exceeded duration. Full-session provider remains unresolved."
+    },
+    {
+      "id": "colombia--casanare",
+      "reason": "The officially linked Live tab exposes a 49-second fragment; video archive and Facebook need fuller proceedings review."
+    },
+    {
+      "id": "colombia--la-guajira",
+      "reason": "Officially designated YouTube has a small historical collection of speeches/news. Full-session service and newer designated Facebook recordings remain unresolved."
+    },
+    {
+      "id": "philippines--iloilo",
+      "reason": "The official video index inspected contains hymn/tourism/job-fair material. Its provincial provider must be checked separately for legislative business."
+    },
+    {
+      "id": "philippines--surigao-del-sur",
+      "reason": "The page labelled LIVE STREAMING embeds an edited event video and lists executive/civic functions. No own-board proceedings verified."
+    },
+    {
+      "id": "panama--ngabe-bugle-comarca",
+      "reason": "ngobebugle.org repeats Wikipedia and credits private site administration; no current institutional ownership or proceedings designation corroborated. Not accepted as the congress website."
+    }
+  ],
+  "remaining_metadata_records": [
+    {
+      "id": "argentina--chubut",
+      "country": "Argentina",
+      "jurisdiction": "Chubut",
+      "institution": "Legislatura Chubut",
+      "status": "unresolved_metadata",
+      "reason": "Root previously served unrelated French file listing; indexed legislative subpage now times out. Do not accept the host until current primary institutional control/content is corroborated.",
+      "page_observations": [
+        {
+          "url": "https://legislaturadelchubut.gob.ar/versiones-taquigraficas/sesiones-2026/",
+          "status": null,
+          "title": null,
+          "error": "TimeoutError: page.goto: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://legislaturadelchubut.gob.ar/versiones-taquigraficas/sesiones-2026/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "colombia--antioquia",
+      "country": "Colombia",
+      "jurisdiction": "Antioquia",
+      "institution": "Asamblea Departamental de Antioquia",
+      "status": "unresolved_metadata",
+      "reason": "Known assembly leads retain access/ownership limitations; an access error is not absence of broadcasts.",
+      "page_observations": [
+        {
+          "url": "https://asambleadeantioquia.gov.co/",
+          "status": 403,
+          "title": "",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "colombia--valle-del-cauca",
+      "country": "Colombia",
+      "jurisdiction": "Valle del Cauca",
+      "institution": "Asamblea Departamental de Valle del Cauca",
+      "status": "unresolved_metadata",
+      "reason": "Known assembly leads retain access/ownership limitations; an access error is not absence of broadcasts.",
+      "page_observations": [
+        {
+          "url": "https://asambleavalledelcauca.gov.co/",
+          "status": 500,
+          "title": "Error de la base de datos",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--bengkulu",
+      "country": "Indonesia",
+      "jurisdiction": "Bengkulu",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Bengkulu",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--jawa-barat",
+      "country": "Indonesia",
+      "jurisdiction": "Jawa Barat",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Barat",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.jabarprov.go.id/ppid/informasi-berkala",
+          "status": 403,
+          "title": "Halaman Tidak Dapat Dibuka",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--kalimantan-barat",
+      "country": "Indonesia",
+      "jurisdiction": "Kalimantan Barat",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Barat",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.kalbarprov.go.id/sekretariat-dprd/sotk/",
+          "status": 403,
+          "title": "Attention Required! | Cloudflare",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--kalimantan-selatan",
+      "country": "Indonesia",
+      "jurisdiction": "Kalimantan Selatan",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Selatan",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.kalselprov.go.id/",
+          "status": 403,
+          "title": "Just a moment...",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--lampung",
+      "country": "Indonesia",
+      "jurisdiction": "Lampung",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Lampung",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://jdih.lampungprov.go.id/pages/anggota-jdih",
+          "status": 403,
+          "title": "Akses Terbatas",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--maluku-utara",
+      "country": "Indonesia",
+      "jurisdiction": "Maluku Utara",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Maluku Utara",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--nusa-tenggara-barat",
+      "country": "Indonesia",
+      "jurisdiction": "Nusa Tenggara Barat",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Nusa Tenggara Barat",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd-ntbprov.go.id/",
+          "status": 403,
+          "title": "403: Freeze! Police Chase in Progress | Pongery WAF",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--nusa-tenggara-timur",
+      "country": "Indonesia",
+      "jurisdiction": "Nusa Tenggara Timur",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Nusa Tenggara Timur",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--papua-barat",
+      "country": "Indonesia",
+      "jurisdiction": "Papua Barat",
+      "institution": "Dewan Perwakilan Rakyat Papua Barat",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--papua-barat-daya",
+      "country": "Indonesia",
+      "jurisdiction": "Papua Barat Daya",
+      "institution": "Dewan Perwakilan Rakyat Papua Barat Daya",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--papua-pegunungan",
+      "country": "Indonesia",
+      "jurisdiction": "Papua Pegunungan",
+      "institution": "Dewan Perwakilan Rakyat Papua Pegunungan",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--papua-selatan",
+      "country": "Indonesia",
+      "jurisdiction": "Papua Selatan",
+      "institution": "Dewan Perwakilan Rakyat Papua Selatan",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--riau",
+      "country": "Indonesia",
+      "jurisdiction": "Riau",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Riau",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.riau.go.id/",
+          "status": null,
+          "title": null,
+          "error": "TimeoutError: page.goto: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dprd.riau.go.id/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--sulawesi-barat",
+      "country": "Indonesia",
+      "jurisdiction": "Sulawesi Barat",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Barat",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--sulawesi-selatan",
+      "country": "Indonesia",
+      "jurisdiction": "Sulawesi Selatan",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Selatan",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.sulselprov.go.id/web/",
+          "status": null,
+          "title": null,
+          "error": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://dprd.sulselprov.go.id/web/\nCall log:\n\u001b[2m  - navigating to \"https://dprd.sulselprov.go.id/web/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--sulawesi-tengah",
+      "country": "Indonesia",
+      "jurisdiction": "Sulawesi Tengah",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Tengah",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.sultengprov.go.id/",
+          "status": null,
+          "title": null,
+          "error": "Error: page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://dprd.sultengprov.go.id/\nCall log:\n\u001b[2m  - navigating to \"https://dprd.sultengprov.go.id/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--sulawesi-tenggara",
+      "country": "Indonesia",
+      "jurisdiction": "Sulawesi Tenggara",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Tenggara",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "indonesia--sumatera-barat",
+      "country": "Indonesia",
+      "jurisdiction": "Sumatera Barat",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sumatera Barat",
+      "status": "unresolved_metadata",
+      "reason": "Exact current DPRD/DPRP institutional route remains unresolved; government executive and MRP consultative pages cannot substitute. Recorded access errors remain separate from identity.",
+      "page_observations": [
+        {
+          "url": "https://dprd.sumbarprov.go.id/home/index",
+          "status": null,
+          "title": null,
+          "error": "Error: page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://dprd.sumbarprov.go.id/home/index\nCall log:\n\u001b[2m  - navigating to \"https://dprd.sumbarprov.go.id/home/index\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "panama--embera-wounaan-comarca",
+      "country": "Panama",
+      "jurisdiction": "Emberá-Wounaan comarca",
+      "institution": "Congreso General Comarca Emberá Wounaan",
+      "status": "unresolved_metadata",
+      "reason": "Exact current congress ownership/provider designation unresolved; educational descriptions, cultural bodies and reportage do not establish its own proceedings service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "panama--guna-madungandi",
+      "country": "Panama",
+      "jurisdiction": "Guna Madungandí",
+      "institution": "Congreso General Comarca Guna Madungandí",
+      "status": "unresolved_metadata",
+      "reason": "Exact current congress ownership/provider designation unresolved; educational descriptions, cultural bodies and reportage do not establish its own proceedings service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "panama--guna-wargandi",
+      "country": "Panama",
+      "jurisdiction": "Guna Wargandí",
+      "institution": "Congreso General Comarca Guna Wargandi",
+      "status": "unresolved_metadata",
+      "reason": "Exact current congress ownership/provider designation unresolved; educational descriptions, cultural bodies and reportage do not establish its own proceedings service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "panama--ngabe-bugle-comarca",
+      "country": "Panama",
+      "jurisdiction": "Ngäbe-Buglé comarca",
+      "institution": "Congreso General Comarca Ngäbe–Buglé",
+      "status": "unresolved_metadata",
+      "reason": "Exact current congress ownership/provider designation unresolved; educational descriptions, cultural bodies and reportage do not establish its own proceedings service.",
+      "page_observations": [
+        {
+          "url": "https://ngobebugle.org/congreso-general",
+          "status": 200,
+          "title": "Congreso General - Ngobe Bugle | Un Futuro Sostenible",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--abra",
+      "country": "Philippines",
+      "jurisdiction": "Abra",
+      "institution": "Sangguniang Panlalawigan ng Abra",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--albay",
+      "country": "Philippines",
+      "jurisdiction": "Albay",
+      "institution": "Sangguniang Panlalawigan ng Albay",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--antique",
+      "country": "Philippines",
+      "jurisdiction": "Antique",
+      "institution": "Sangguniang Panlalawigan ng Antique",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--apayao",
+      "country": "Philippines",
+      "jurisdiction": "Apayao",
+      "institution": "Sangguniang Panlalawigan ng Apayao",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--basilan",
+      "country": "Philippines",
+      "jurisdiction": "Basilan",
+      "institution": "Sangguniang Panlalawigan ng Basilan",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--batanes",
+      "country": "Philippines",
+      "jurisdiction": "Batanes",
+      "institution": "Sangguniang Panlalawigan ng Batanes",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "country": "Philippines",
+      "jurisdiction": "Camarines Sur",
+      "institution": "Sangguniang Panlalawigan ng Camarines Sur",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--capiz",
+      "country": "Philippines",
+      "jurisdiction": "Capiz",
+      "institution": "Sangguniang Panlalawigan ng Capiz",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://capiz.gov.ph/",
+          "status": 403,
+          "title": "",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--catanduanes",
+      "country": "Philippines",
+      "jurisdiction": "Catanduanes",
+      "institution": "Sangguniang Panlalawigan ng Catanduanes",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--davao-oriental",
+      "country": "Philippines",
+      "jurisdiction": "Davao Oriental",
+      "institution": "Sangguniang Panlalawigan ng Davao Oriental",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://davaooriental.gov.ph/category/resolutions/page/40/",
+          "status": null,
+          "title": null,
+          "error": "Error: page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://davaooriental.gov.ph/category/resolutions/page/40/\nCall log:\n\u001b[2m  - navigating to \"https://davaooriental.gov.ph/category/resolutions/page/40/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--davao-de-oro",
+      "country": "Philippines",
+      "jurisdiction": "Davao de Oro",
+      "institution": "Sangguniang Panlalawigan ng Davao de Oro",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://davaodeoro.gov.ph/",
+          "status": 403,
+          "title": "Just a moment...",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--davao-del-norte",
+      "country": "Philippines",
+      "jurisdiction": "Davao del Norte",
+      "institution": "Sangguniang Panlalawigan ng Davao del Norte",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--guimaras",
+      "country": "Philippines",
+      "jurisdiction": "Guimaras",
+      "institution": "Sangguniang Panlalawigan ng Guimaras",
+      "status": "unresolved_metadata",
+      "reason": "Previously indexed legislative indexes and root return 404 in this pass. Find a current institution-designated replacement; do not mark a dead route verified.",
+      "page_observations": [
+        {
+          "url": "https://guimaras.gov.ph/ordinances/",
+          "status": 404,
+          "title": "404 Not Found",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        },
+        {
+          "url": "https://guimaras.gov.ph/",
+          "status": 404,
+          "title": "404 Not Found",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--ifugao",
+      "country": "Philippines",
+      "jurisdiction": "Ifugao",
+      "institution": "Sangguniang Panlalawigan ng Ifugao",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--ilocos-norte",
+      "country": "Philippines",
+      "jurisdiction": "Ilocos Norte",
+      "institution": "Sangguniang Panlalawigan ng Ilocos Norte",
+      "status": "unresolved_metadata",
+      "reason": "Previously indexed /officials route is now 404; replacement government homepage renders but the new legislature profile route has not been corroborated.",
+      "page_observations": [
+        {
+          "url": "https://ilocosnorte.gov.ph/officials",
+          "status": 404,
+          "title": "Not Found",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        },
+        {
+          "url": "https://ilocosnorte.gov.ph/",
+          "status": 200,
+          "title": "Provincial Government of Ilocos Norte | Laravel",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--kalinga",
+      "country": "Philippines",
+      "jurisdiction": "Kalinga",
+      "institution": "Sangguniang Panlalawigan ng Kalinga",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--laguna",
+      "country": "Philippines",
+      "jurisdiction": "Laguna",
+      "institution": "Sangguniang Panlalawigan ng Laguna",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://laguna.gov.ph/",
+          "status": 200,
+          "title": "Home | Provincial Government of Laguna",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        },
+        {
+          "url": "https://laguna.gov.ph/news/laguna-board-restores-committee-posts-agarao-returns-to-finance-gomez-leads-peace-and-order",
+          "status": 200,
+          "title": "Latest News | Provincial Government of Laguna",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--lanao-del-norte",
+      "country": "Philippines",
+      "jurisdiction": "Lanao del Norte",
+      "institution": "Sangguniang Panlalawigan ng Lanao del Norte",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://lanaodelnorte.gov.ph/departments/",
+          "status": 403,
+          "title": "403 Forbidden",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--lanao-del-sur",
+      "country": "Philippines",
+      "jurisdiction": "Lanao del Sur",
+      "institution": "Sangguniang Panlalawigan ng Lanao del Sur",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--leyte",
+      "country": "Philippines",
+      "jurisdiction": "Leyte",
+      "institution": "Sangguniang Panlalawigan ng Leyte",
+      "status": "unresolved_metadata",
+      "reason": "Wrong Southern Leyte lead removed. Leyte province root is separately identified but blocked; exact provincial-board service remains unresolved.",
+      "page_observations": [
+        {
+          "url": "https://leyteprovince.gov.ph/",
+          "status": 403,
+          "title": "403 Forbidden",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--maguindanao-del-norte",
+      "country": "Philippines",
+      "jurisdiction": "Maguindanao del Norte",
+      "institution": "Sangguniang Panlalawigan ng Maguindanao del Norte",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--maguindanao-del-sur",
+      "country": "Philippines",
+      "jurisdiction": "Maguindanao del Sur",
+      "institution": "Sangguniang Panlalawigan ng Maguindanao del Sur",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--marinduque",
+      "country": "Philippines",
+      "jurisdiction": "Marinduque",
+      "institution": "Sangguniang Panlalawigan ng Marinduque",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://marinduque.gov.ph/contact-us/",
+          "status": 403,
+          "title": "403 Forbidden",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--masbate",
+      "country": "Philippines",
+      "jurisdiction": "Masbate",
+      "institution": "Sangguniang Panlalawigan ng Masbate",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--misamis-occidental",
+      "country": "Philippines",
+      "jurisdiction": "Misamis Occidental",
+      "institution": "Sangguniang Panlalawigan ng Misamis Occidental",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--misamis-oriental",
+      "country": "Philippines",
+      "jurisdiction": "Misamis Oriental",
+      "institution": "Sangguniang Panlalawigan ng Misamis Oriental",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--negros-oriental",
+      "country": "Philippines",
+      "jurisdiction": "Negros Oriental",
+      "institution": "Sangguniang Panlalawigan ng Negros Oriental",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--northern-samar",
+      "country": "Philippines",
+      "jurisdiction": "Northern Samar",
+      "institution": "Sangguniang Panlalawigan ng Northern Samar",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://northernsamar.gov.ph/",
+          "status": 403,
+          "title": "Just a moment...",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-3.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--palawan",
+      "country": "Philippines",
+      "jurisdiction": "Palawan",
+      "institution": "Sangguniang Panlalawigan ng Palawan",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--quirino",
+      "country": "Philippines",
+      "jurisdiction": "Quirino",
+      "institution": "Sangguniang Panlalawigan ng Quirino",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://quirinoprovince.gov.ph/legislative-officials/",
+          "status": 403,
+          "title": "403 Forbidden",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--romblon",
+      "country": "Philippines",
+      "jurisdiction": "Romblon",
+      "institution": "Sangguniang Panlalawigan ng Romblon",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--samar",
+      "country": "Philippines",
+      "jurisdiction": "Samar",
+      "institution": "Sangguniang Panlalawigan ng Samar",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--sarangani",
+      "country": "Philippines",
+      "jurisdiction": "Sarangani",
+      "institution": "Sangguniang Panlalawigan ng Sarangani",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--siquijor",
+      "country": "Philippines",
+      "jurisdiction": "Siquijor",
+      "institution": "Sangguniang Panlalawigan ng Siquijor",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--sultan-kudarat",
+      "country": "Philippines",
+      "jurisdiction": "Sultan Kudarat",
+      "institution": "Sangguniang Panlalawigan ng Sultan Kudarat",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--sulu",
+      "country": "Philippines",
+      "jurisdiction": "Sulu",
+      "institution": "Sangguniang Panlalawigan ng Sulu",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--tarlac",
+      "country": "Philippines",
+      "jurisdiction": "Tarlac",
+      "institution": "Sangguniang Panlalawigan ng Tarlac",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--zambales",
+      "country": "Philippines",
+      "jurisdiction": "Zambales",
+      "institution": "Sangguniang Panlalawigan ng Zambales",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://www.zambales.gov.ph/",
+          "status": 530,
+          "title": "Cloudflare Tunnel error | www.zambales.gov.ph | Cloudflare",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "country": "Philippines",
+      "jurisdiction": "Zamboanga Sibugay",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga Sibugay",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://sibugay.gov.ph/",
+          "status": 403,
+          "title": "Just a moment...",
+          "error": null,
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--zamboanga-del-norte",
+      "country": "Philippines",
+      "jurisdiction": "Zamboanga del Norte",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Norte",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "philippines--zamboanga-del-sur",
+      "country": "Philippines",
+      "jurisdiction": "Zamboanga del Sur",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Sur",
+      "status": "unresolved_metadata",
+      "reason": "Exact legislative profile and institutional provider designation remain uncorroborated; general provincial or election pages are discovery context.",
+      "page_observations": [
+        {
+          "url": "https://spzambosur.com/jagger/index.php",
+          "status": null,
+          "title": null,
+          "error": "Error: page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://spzambosur.com/jagger/index.php\nCall log:\n\u001b[2m  - navigating to \"https://spzambosur.com/jagger/index.php\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages-2.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "sri-lanka--north-central",
+      "country": "Sri Lanka",
+      "jurisdiction": "North Central",
+      "institution": "North Central Provincial Council",
+      "status": "unresolved_metadata",
+      "reason": "Exact council-secretariat route/current status unresolved; executive administration and old national directory links do not certify elected council sittings.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "sri-lanka--western",
+      "country": "Sri Lanka",
+      "jurisdiction": "Western",
+      "institution": "Western Provincial Council",
+      "status": "unresolved_metadata",
+      "reason": "Exact council-secretariat route/current status unresolved; executive administration and old national directory links do not certify elected council sittings.",
+      "page_observations": [
+        {
+          "url": "https://wp.gov.lk/en/web-directory/",
+          "status": null,
+          "title": null,
+          "error": "TimeoutError: page.goto: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://wp.gov.lk/en/web-directory/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+          "evidence_report": "reports/health/2026-10-23-completion-pages.json"
+        }
+      ],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--brokopondo",
+      "country": "Suriname",
+      "jurisdiction": "Brokopondo",
+      "institution": "Districtsraad Brokopondo",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--commewijne",
+      "country": "Suriname",
+      "jurisdiction": "Commewijne",
+      "institution": "Districtsraad Commewijne",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--coronie",
+      "country": "Suriname",
+      "jurisdiction": "Coronie",
+      "institution": "Districtsraad Coronie",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--marowijne",
+      "country": "Suriname",
+      "jurisdiction": "Marowijne",
+      "institution": "Districtsraad Marowijne",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--nickerie",
+      "country": "Suriname",
+      "jurisdiction": "Nickerie",
+      "institution": "Districtsraad Nickerie",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--para",
+      "country": "Suriname",
+      "jurisdiction": "Para",
+      "institution": "Districtsraad Para",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--paramaribo",
+      "country": "Suriname",
+      "jurisdiction": "Paramaribo",
+      "institution": "Districtsraad Paramaribo",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--saramacca",
+      "country": "Suriname",
+      "jurisdiction": "Saramacca",
+      "institution": "Districtsraad Saramacca",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--sipaliwini",
+      "country": "Suriname",
+      "jurisdiction": "Sipaliwini",
+      "institution": "Districtsraad Sipaliwini",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    },
+    {
+      "id": "suriname--wanica",
+      "country": "Suriname",
+      "jurisdiction": "Wanica",
+      "institution": "Districtsraad Wanica",
+      "status": "unresolved_metadata",
+      "reason": "District commissioner/executive pages and election or swearing-in notices are not an exact Districtsraad institutional viewing service.",
+      "page_observations": [],
+      "individual_full_review_complete": false,
+      "next_action": "Resolve the exact institution-controlled legislative page, then follow its own provider links and validate substantive proceedings."
+    }
+  ],
+  "verification": {
+    "focused_ui_report": "reports/health/2026-10-23-completion-ui.json",
+    "playback_report": "reports/health/2026-10-23-completion-validation.json",
+    "all_four_desktop_mobile_browser_flows_passed": true,
+    "repository_checks": "make verify passed: catalogue/candidates/history/generated data, formatting, lint, typing, compilation, Python tests/coverage, HTML and browser accessibility checks. git diff --check passed."
+  }
+}

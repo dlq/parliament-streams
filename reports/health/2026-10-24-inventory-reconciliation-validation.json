@@ -1,0 +1,46 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Inventory reconciliation and repository verification; no deployment or live-service claims.",
+  "inventory": {
+    "path": "data/discovery/institutions.json",
+    "sha256": "ef7e531e2d1a205d5744c3826fe87722463ed72665475073ae6c7714a0efd4f5",
+    "country_groups": 71,
+    "mixed_grain_records": 1412,
+    "original_scope_decisions": 19,
+    "specific_authority_holds": 11
+  },
+  "verification": {
+    "inventory_validator": "passed",
+    "json_parse": "163 research/discovery JSON files passed",
+    "unit_tests": {
+      "run": 125,
+      "skipped": 1,
+      "result": "passed",
+      "new_inventory_regression_tests": 10
+    },
+    "coverage_percent": 91,
+    "format": "passed",
+    "lint": "passed",
+    "mypy": "passed:40sourcefiles",
+    "html_validation": "passed",
+    "accessibility": "passed using existing check after permitted local-server rerun",
+    "diff_whitespace": "passed"
+  },
+  "command_notes": [
+    {
+      "command": "make verify",
+      "result": "All preceding checks passed; accessibility subprocess could not bind127.0.0.1 inside sandbox.",
+      "log_sha256": "e10fd52f9cc184c3a59f3776b506dff094618295ba3d31c942fa66c5c7437a57"
+    },
+    {
+      "command": "npm run check:a11y",
+      "result": "passed(exit0) with local-server permission",
+      "log_sha256": "0df5d6dd2aa5316ca7763b0ddf0c8b8940fb769ea1e7482b3ba97b6559b8f783"
+    }
+  ],
+  "independent_review": "Second agent checked aliases, all99regional consistency applications, additionalEurope/Papua records, exact652-service-cohort pointers and hold instruments; no current data mismatch found. Suggested validator guards implemented and regression-tested.",
+  "catalogue_sources_added": 0,
+  "external_changes_performed": false,
+  "exhaustive_census_certified": false,
+  "all_metadata_stream_epg_rights_validated": false
+}

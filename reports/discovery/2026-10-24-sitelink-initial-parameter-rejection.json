@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-10-24T04:34:36.879720+00:00",
+  "scope": "Exact-title sitelink resolution hypotheses through the same cached Wikidata API, not an alternate endpoint or legal authority proof. Missing titles are not proof of absent institution items; returned claims still require primary crosscheck.",
+  "jobs": {
+    "switzerland--aargau": [
+      "Grand Council of Aargau"
+    ],
+    "switzerland--appenzell-innerrhoden": [
+      "Grand Council of Appenzell Innerrhoden"
+    ],
+    "switzerland--basel-landschaft": [
+      "Landrat of Basel-Landschaft"
+    ],
+    "switzerland--basel-stadt": [
+      "Grand Council of Basel-Stadt",
+      "Grand Council of Basel-City"
+    ],
+    "switzerland--geneve-genf": [
+      "Grand Council of Geneva"
+    ],
+    "switzerland--graubunden": [
+      "Grand Council of Grisons",
+      "Grand Council of Graubünden"
+    ],
+    "switzerland--neuchatel-neuenburg": [
+      "Grand Council of Neuchâtel"
+    ],
+    "switzerland--nidwalden": [
+      "Landrat of Nidwalden",
+      "Cantonal Council of Nidwalden"
+    ],
+    "switzerland--schaffhausen": [
+      "Cantonal Council of Schaffhausen"
+    ],
+    "switzerland--solothurn": [
+      "Cantonal Council of Solothurn"
+    ],
+    "switzerland--thurgau": [
+      "Grand Council of Thurgau"
+    ],
+    "switzerland--ticino-tessin": [
+      "Grand Council of Ticino"
+    ],
+    "switzerland--uri": [
+      "Landrat of Uri"
+    ],
+    "national:Serbia": [
+      "National Assembly (Serbia)",
+      "National Assembly of Serbia"
+    ],
+    "national:Bulgaria": [
+      "National Assembly (Bulgaria)",
+      "National Assembly of Bulgaria"
+    ]
+  },
+  "request_url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&maxlag=5&normalize=1&props=info%7Clabels%7Cdescriptions%7Cclaims%7Csitelinks&sitefilter=enwiki&sites=enwiki&titles=Grand+Council+of+Aargau%7CGrand+Council+of+Appenzell+Innerrhoden%7CLandrat+of+Basel-Landschaft%7CGrand+Council+of+Basel-Stadt%7CGrand+Council+of+Basel-City%7CGrand+Council+of+Geneva%7CGrand+Council+of+Grisons%7CGrand+Council+of+Graub%C3%BCnden%7CGrand+Council+of+Neuch%C3%A2tel%7CLandrat+of+Nidwalden%7CCantonal+Council+of+Nidwalden%7CCantonal+Council+of+Schaffhausen%7CCantonal+Council+of+Solothurn%7CGrand+Council+of+Thurgau%7CGrand+Council+of+Ticino%7CLandrat+of+Uri%7CNational+Assembly+%28Serbia%29%7CNational+Assembly+of+Serbia%7CNational+Assembly+%28Bulgaria%29%7CNational+Assembly+of+Bulgaria",
+  "outcome": "shared_cache_or_backoff_hold",
+  "error": "Wikidata cooldown: 60s remaining (API params-illegal)",
+  "retry_in_seconds": 60
+}

@@ -1,0 +1,216 @@
+{
+  "research_date": "2026-10-23",
+  "no_bulk_search_or_rate_limit_retry": true,
+  "results": [
+    {
+      "id": "colombia--caldas",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Caldas",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q21708048",
+      "revision": 1373460380,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Asamblea Departamental de Caldas"
+        }
+      },
+      "claims": {
+        "P31": [],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "a8320512b697f7ca13d984a9e107863e3fdba021",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 739,
+                  "id": "Q739"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q21708048$557F08A0-6649-4305-A13B-1868961B5BBF",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [],
+        "P856": [],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "colombia--bolivar",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Bol%C3%ADvar",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--boyaca",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Boyac%C3%A1",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--casanare",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Casanare",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--cesar",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Cesar",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--guaviare",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Guaviare",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--la-guajira",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20La%20Guajira",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q5707807",
+      "revision": 2318603960,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "asamblea departamental de La Guajira"
+        },
+        "en": {
+          "language": "en",
+          "value": "departmental assembly of La Guajira"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5707807$7C972BD8-9B14-495E-BEC9-C22072D10AB9",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "a8320512b697f7ca13d984a9e107863e3fdba021",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 739,
+                  "id": "Q739"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5707807$78954AE5-76E5-4267-824C-83736139D3A8",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "1ec1a78a0189f1ca731dbc7a918437db2692341e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 272747,
+                  "id": "Q272747"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q5707807$af3cc697-470c-a484-4aa2-f3d7c8e474fb",
+            "rank": "normal"
+          }
+        ],
+        "P856": [],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "colombia--magdalena",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Magdalena",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--meta",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Meta",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--narino",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Nari%C3%B1o",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--quindio",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Quind%C3%ADo",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--san-andres-providencia-y-santa-catalina",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20San%20Andr%C3%A9s%2C%20Providencia%20y%20Santa%20Catalina",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--santander",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Santander",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "colombia--tolima",
+      "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Tolima",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

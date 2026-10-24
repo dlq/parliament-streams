@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-23T21:51:51.570908+00:00",
+  "method": "Exact institution, primary provider designation, two selected recordings in both browsers; source-condition review separate from playback",
+  "results": [
+    {
+      "id": "south-korea-jeonnam-gwangju-council-recordings",
+      "status": "ok",
+      "confirmed_scope": "exact_identity_and_selected_plenary_and_committee_recordings_in_both_browsers",
+      "unresolved": [
+        "current_regional_flag_not_verified_standard_legislature_mark_used",
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established",
+        "separate_current_public_session_copyright_policy_not_located"
+      ]
+    }
+  ]
+}

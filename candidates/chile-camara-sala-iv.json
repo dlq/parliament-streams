@@ -2,11 +2,12 @@
   "candidate_version": 1,
   "status": "researching",
   "created_on": "2026-10-22",
-  "updated_on": "2026-10-22",
+  "updated_on": "2026-10-23",
   "decision_notes": [
     "Official-page browser discovery and sample media validated. Keep researching until room identity, schedule mapping, and rights scope are established. Evidence: reports/health/2026-10-22-targeted-media-followup.json.",
     "Follow-up 2026-10-22: Official television page now returned 403 in Chromium and web access. Earlier bounded HLS sample remains dated evidence, not a fresh playback certification. Exact room/event, schedule and rights remain unresolved.",
-    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json."
+    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json.",
+    "23 October local / 24 October UTC recheck: HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved. Evidence: reports/health/2026-10-24-national-formal-browser.json"
   ],
   "channel": {
     "id": "chile-camara-sala-iv",

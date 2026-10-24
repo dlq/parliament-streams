@@ -1,0 +1,57 @@
+{
+  "method": "Regular Playwright because Browser plugin is unavailable; local generated site, desktop and mobile, Chromium and WebKit. Checks rendering, search and map navigation, not source audiovisual quality.",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 233,
+      "regional_outlines": 133,
+      "parent_country_searches": 9,
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 233,
+      "regional_outlines": 133,
+      "parent_country_searches": 9,
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 233,
+      "regional_outlines": 133,
+      "parent_country_searches": 9,
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "routes": [
+        "catalogue",
+        "map",
+        "schedule"
+      ],
+      "source_count": 233,
+      "regional_outlines": 133,
+      "parent_country_searches": 9,
+      "passed": true
+    }
+  ]
+}

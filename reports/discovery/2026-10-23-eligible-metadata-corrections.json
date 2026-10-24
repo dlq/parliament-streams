@@ -1,0 +1,234 @@
+{
+  "reviewed_on": "2026-10-23",
+  "method": "Individual review of fetched primary page titles and institutional content, distinguishing provincial legislative pages from governors, municipal bodies and national hearings. No country/language inference establishes broadcast language.",
+  "corrections": [
+    {
+      "id": "indonesia--jambi",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd-jambiprov.go.id/",
+      "evidence_title": "DPRD Provinsi Jambi | DPRD-JAMBIPROV.GO.ID",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--kalimantan-tengah",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd.kalteng.go.id/",
+      "evidence_title": "DPRD Provinsi Kalimantan Tengah - Bersama Membangun Kalteng",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "argentina--la-rioja",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://legislaturalarioja.gob.ar/",
+      "evidence_title": "Legislatura de la provincia de La Rioja",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "colombia--atlantico",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://asamblea-atlantico.gov.co/",
+      "evidence_title": "Inicio · Asamblea Departamental del Atlántico",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "colombia--cesar",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://asambleacesar.gov.co/",
+      "evidence_title": "Inicio | Asamblea Departamental del Cesar",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "colombia--cordoba",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://asamblea-cordoba.gov.co/",
+      "evidence_title": "Asamblea de Córdoba – Asamblea de Córdoba Herramientas de accesibilidad Aumentar texto Disminuir texto Escala de grises Alto contraste Contraste negativo Fondo claro Subrayar enlaces Fuente legible Restablecer",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--banten",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd-bantenprov.go.id/",
+      "evidence_title": "Beranda - DPRD Provinsi Banten",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--gorontalo",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd.gorontaloprov.go.id/",
+      "evidence_title": "Deprov Gorontalo - Media Parlemen",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--jawa-tengah",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd.jatengprov.go.id/",
+      "evidence_title": "DPRD Jateng – Portal Resmi DPRD Provinsi Jawa Tengah Facebook X YouTube Instagram Expand Expand Expand Expand Expand Search Facebook X Instagram Search Toggle Menu Video Terbaru! Video Terbaru! Video Terbaru! Video Terbaru! Video Terbaru! Video Terbaru! Video Terbaru! Video Terbaru! Scroll to top Scroll to top Expand Expand Expand Expand Expand Tog",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--jawa-timur",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd.jatimprov.go.id/",
+      "evidence_title": "Website Resmi DPRD Jawa Timur",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--kalimantan-timur",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprd.kaltimprov.go.id/",
+      "evidence_title": "Selamat Datang - Website DPRD Provinsi Kalimantan Timur",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--papua",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dpr.papua.go.id/home",
+      "evidence_title": "DEWAN PERWAKILAN RAKYAT PROVINSI PAPUA",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "indonesia--papua-tengah",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://dprpapuatengah.go.id/",
+      "evidence_title": "Website Resmi - DPR Papua Tengah",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--cagayan",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://sp.cagayan.gov.ph/",
+      "evidence_title": "Sangguniang Panlalawigan ng Cagayan | Official Website",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--bataan",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://bataan.gov.ph/departments/sangguniang-panlalawigan/",
+      "evidence_title": "Sangguniang Panlalawigan - Bataan.gov.ph",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--davao-occidental",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://davaooccidental.gov.ph/government-legislative/",
+      "evidence_title": "Government-Legislative - PROVINCIAL GOVERNMENT OF DAVAO OCCIDENTAL",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--davao-del-sur",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://davaodelsur.gov.ph/sp-legislative/",
+      "evidence_title": "SP-LEGISLATIVE - Provincial Government of Davao del Sur",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--cavite",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://cavite.gov.ph/provincial-offices/office-of-the-sangguniang-panlalawigan/",
+      "evidence_title": "Office of the Sangguniang Panlalawigan - Provincial Government of Cavite Facebook Expand Toggle Menu Scroll to top Scroll to top Expand",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--cotabato",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://cotabatoprov.gov.ph/directory-of-offices/vice-governor-and-sangguniang-panlalawigan/",
+      "evidence_title": "Vice-Governor and Sangguniang Panlalawigan – Province of Cotabato",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "philippines--la-union",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://launion.gov.ph/department/sangguniang-panlalawigan/",
+      "evidence_title": "Sangguniang Panlalawigan - Provincial Government of La Union",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "argentina--cordoba",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://legislaturacba.gob.ar/",
+      "evidence_title": "HOME - Legislatura de la Provincia de Córdoba iconos home iconos home iconos home iconos home iconos home iconos home",
+      "review_method": "individual_review_of_retrieved_primary_institutional_page",
+      "limitation": "Reviewed the retrieved primary institutional/provincial-government page: page identity, legislative navigation or board membership match this exact body and country. This establishes an institutional contact route, not a validated broadcast, external identifier, complete chamber inventory or current elected sitting."
+    },
+    {
+      "id": "argentina--corrientes",
+      "field": "official_url",
+      "previous_value": null,
+      "value": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+      "evidence_title": "Sesiones en vivo – Honorable Cámara de Diputados de la Provincia de Corrientes",
+      "review_method": "individual_review_of_primary_institutional_page_and_exact_provider_recordings",
+      "scope": "lower_chamber_only",
+      "limitation": "Provincial Chamber of Deputies, not the municipal council. This is one chamber of a bicameral legislature; Senate and committees remain separate work."
+    }
+  ],
+  "lead_identity_findings": [
+    {
+      "id": "argentina--corrientes",
+      "url": "https://concejocorrientes.gob.ar/",
+      "decision": "different_level_municipal_body",
+      "note": "Corrientes capital municipal council is not the provincial Chamber of Deputies. The provincial lead hcdcorrientes.gov.ar remains separate."
+    },
+    {
+      "id": "indonesia--aceh",
+      "url": "https://dprd.acehbesarkab.go.id/",
+      "decision": "different_level_regency_body",
+      "note": "Aceh Besar regency DPRD is not the Aceh provincial DPRA."
+    },
+    {
+      "id": "indonesia--gorontalo",
+      "url": "https://dprd.gorontalokota.go.id/",
+      "decision": "different_level_city_body",
+      "note": "Gorontalo city DPRD is not the provincial DPRD at dprd.gorontaloprov.go.id."
+    },
+    {
+      "id": "philippines--batangas",
+      "url": "https://sb.taysan.gov.ph/",
+      "decision": "different_level_municipal_body",
+      "note": "Taysan municipal Sangguniang Bayan is not the Batangas provincial Sangguniang Panlalawigan."
+    }
+  ],
+  "new_catalogue_services": 0,
+  "later_followup_report": "reports/discovery/2026-10-23-metadata-followup.json",
+  "snapshot_note": "Earlier pass snapshot; later follow-up updates current URL/coverage counts and promotes Corrientes."
+}

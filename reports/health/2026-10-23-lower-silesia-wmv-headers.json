@@ -1,0 +1,35 @@
+{
+  "research_date": "2026-10-23",
+  "source": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+  "scope": "Published WMV URLs and same-host HTTPS alternatives, HEAD only; no media file downloaded and no decoded playback certification.",
+  "results": [
+    {
+      "url": "http://multimedia.dolnyslask.pl/SESJA%20XXX.wmv",
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "video/x-ms-wmv",
+      "content_length": "5875137009"
+    },
+    {
+      "url": "http://multimedia.dolnyslask.pl/SESJA%20XXIX.wmv",
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "video/x-ms-wmv",
+      "content_length": "4720083334"
+    },
+    {
+      "url": "https://multimedia.dolnyslask.pl/SESJA%20XXX.wmv",
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "video/x-ms-wmv",
+      "content_length": "5875137009"
+    },
+    {
+      "url": "https://multimedia.dolnyslask.pl/SESJA%20XXIX.wmv",
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "video/x-ms-wmv",
+      "content_length": "4720083334"
+    }
+  ]
+}

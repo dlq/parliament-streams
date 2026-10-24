@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-24T06:00:02.711351+00:00",
+  "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TWN/ADM1/geoBoundaries-TWN-ADM1_simplified.geojson",
+  "metadata_url": "https://www.geoboundaries.org/api/current/gbOpen/TWN/ADM1/",
+  "boundary_id": "TWN-ADM1-90331920",
+  "source_year": "2017",
+  "licence": "ODbL-1.0",
+  "scope": "Potential Lienchiang/Matsu navigation geometry missing from Natural Earth Admin1. Administrative names, geography, licence attribution and winding require review before use.",
+  "status": 200,
+  "final_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/TWN/ADM1/geoBoundaries-TWN-ADM1_simplified.geojson",
+  "outcome": "reviewed_and_used_separate_odbl_navigation_dataset",
+  "features": 22,
+  "published_derivative": "site/assets/maps/lienchiang-odbl.geojson",
+  "spherical_winding_normalized": true,
+  "geometry_scope": "Six island polygons,2017source year, not current cadastral boundaries."
+}

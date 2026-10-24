@@ -1,0 +1,142 @@
+{
+  "method": "Two dated official committee webcasts in Chromium/WebKit, muted advancing decoded-frame and offset checks. Interpretation links are documented but not all audio tracks audibly tested.",
+  "results": [
+    {
+      "body_id": "canada--new-brunswick",
+      "url": "https://www.legnb.ca/en/webcasts/1254",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T02:59:11.619Z",
+      "offset": 1200,
+      "muted": true,
+      "status": 200,
+      "title": "Standing Committee on Public Accounts - October 01, 2026 - Legislative Assembly of New Brunswick",
+      "first": {
+        "time": 1203.49929,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 267,
+        "error": null
+      },
+      "later": {
+        "time": 1205.705016,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 333,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_committee_listener_later_speech_confirmed",
+      "screenshot": "/tmp/next-nb-1254-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Participant listening; this initial frame is not speech confirmation. Later 3600-second sample confirms a speaker at a lit committee microphone."
+    },
+    {
+      "body_id": "canada--new-brunswick",
+      "url": "https://www.legnb.ca/en/webcasts/1255",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T02:59:28.613Z",
+      "offset": 1200,
+      "muted": true,
+      "status": 200,
+      "title": "Standing Committee on Public Accounts - October 02, 2026 - Legislative Assembly of New Brunswick",
+      "first": {
+        "time": 1202.830311,
+        "duration": 16240.449999999997,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 247,
+        "error": null
+      },
+      "later": {
+        "time": 1205.038243,
+        "duration": 16240.449999999997,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 313,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-nb-1255-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Participant speaking at a lit red table microphone during the Public Accounts committee recording."
+    },
+    {
+      "body_id": "canada--new-brunswick",
+      "url": "https://www.legnb.ca/en/webcasts/1254",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T02:59:43.864Z",
+      "offset": 1200,
+      "muted": true,
+      "status": 200,
+      "title": "Standing Committee on Public Accounts - October 01, 2026 - Legislative Assembly of New Brunswick",
+      "first": {
+        "time": 1203.360631928,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 229,
+        "error": null
+      },
+      "later": {
+        "time": 1205.565997885,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 304,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_committee_listener_later_speech_confirmed",
+      "screenshot": "/tmp/next-nb-1254-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Participant listening; this initial frame is not speech confirmation. Later 3600-second sample confirms a speaker at a lit committee microphone."
+    },
+    {
+      "body_id": "canada--new-brunswick",
+      "url": "https://www.legnb.ca/en/webcasts/1255",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T02:59:59.277Z",
+      "offset": 1200,
+      "muted": true,
+      "status": 200,
+      "title": "Standing Committee on Public Accounts - October 02, 2026 - Legislative Assembly of New Brunswick",
+      "first": {
+        "time": 1203.18680208,
+        "duration": 16240.449999999997,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 229,
+        "error": null
+      },
+      "later": {
+        "time": 1205.398177079,
+        "duration": 16240.449999999997,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 289,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-nb-1255-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Participant speaking at a lit red table microphone during the Public Accounts committee recording."
+    }
+  ],
+  "review_scope": "Selected muted decoded frames visually reviewed in both engines. Meeting dates come from institution-designated titles, not an independently read meeting clock; audible tracks and complete service coverage are unverified."
+}

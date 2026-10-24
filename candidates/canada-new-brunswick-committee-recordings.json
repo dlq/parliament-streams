@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Official assembly webcasts designate Public Accounts recordings for 1 and 2 October 2026. Both decode in Chromium and WebKit. The first 1 October sample shows a listener; a later 3600-second sample confirms a participant speaking at a lit committee microphone. The 2 October sample shows a separate participant speaking. Original, English and French interpretation selectors are present; only default playback was tested, muted. Plenary and current live coverage remain unverified.",
+    "The assembly disclaimer permits specified educational, private-study, research and reporting reproduction with accuracy and unofficial-version conditions. Its precise applicability to independent redistribution of the webcast remains unestablished; permission stays pending for that use.",
+    "Evidence: reports/discovery/2026-10-24-canada-new-brunswick-committee-recordings-review.json"
+  ],
+  "channel": {
+    "id": "canada-new-brunswick-committee-recordings",
+    "name": "New Brunswick Legislative Assembly Committee Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "New Brunswick",
+    "legislature": "Legislative Assembly of New Brunswick",
+    "external_ids": {
+      "wikidata_qid": "Q1516914",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1516914",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact legislative institution confirmed against P17/P1001/P856 and current primary institution navigation. Legislative term, speaker post and broadcaster items excluded. Claims snapshot: reports/discovery/2026-10-24-institution-claim-review.json; the response did not retain a revision number."
+      }
+    ],
+    "language": "English / French",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.legnb.ca/en/webcasts",
+    "provenance_note": "Official assembly webcasts designate Public Accounts recordings for 1 and 2 October 2026. Both decode in Chromium and WebKit. The first 1 October sample shows a listener; a later 3600-second sample confirms a participant speaking at a lit committee microphone. The 2 October sample shows a separate participant speaking. Original, English and French interpretation selectors are present; only default playback was tested, muted. Plenary and current live coverage remain unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete captions, sign-language variants or audio description established. Selected tests were muted; language metadata is institutional context, not audible certification. Original, English and French interpretation selectors observed; all tracks and interpretation accuracy untested."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.legnb.ca/en/webcasts",
+        "method": "GET",
+        "kind": "official_recording_and_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The assembly disclaimer permits specified educational, private-study, research and reporting reproduction with accuracy and unofficial-version conditions. Its precise applicability to independent redistribution of the webcast remains unestablished; permission stays pending for that use.",
+      "evidence": [
+        "https://www.legnb.ca/en/webcasts",
+        "https://www.legnb.ca/en/disclaimer"
+      ],
+      "recommendation": "Use official viewing links; independently establish redistribution rights, current live, all rooms and accessibility before expanding playback claims."
+    }
+  }
+}

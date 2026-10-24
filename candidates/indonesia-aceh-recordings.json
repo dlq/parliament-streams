@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Official institution currently designates the viewing provider. DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption. DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+    "Evidence: reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "indonesia-aceh-recordings",
+    "name": "Aceh Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Aceh",
+    "legislature": "Dewan Perwakilan Rakyat Aceh",
+    "external_ids": {
+      "wikidata_qid": "Q12481397",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q12481397",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+      }
+    ],
+    "language": "Indonesian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://dpra.acehprov.go.id/",
+    "provenance_note": "Official institution currently designates the viewing provider. DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption. DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://dpra.acehprov.go.id/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "evidence": [
+        "https://dpra.acehprov.go.id/"
+      ],
+      "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+    }
+  }
+}

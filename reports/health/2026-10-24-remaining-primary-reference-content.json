@@ -1,0 +1,406 @@
+{
+  "method": "New exact published government URLs found by targeted institutional search; ordinary TLS, one bounded request per URL, no block bypass. Source content is not accepted until individual review, no audiovisual validation.",
+  "results": [
+    {
+      "body_id": "philippines--antique",
+      "url": "https://fo6.dswd.gov.ph/2026/06/4ps-antique-strengthens-social-services-through-interagency-convergence-programs/",
+      "checked_at_utc": "2026-10-24T05:20:39.207682+00:00",
+      "scope": "Government agency report of an SP social-services committee member; not an owned parliamentary website.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://fo6.dswd.gov.ph/2026/06/4ps-antique-strengthens-social-services-through-interagency-convergence-programs/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-antique.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [
+        {
+          "text": "KALAHI-CIDSS (Kapit Bisig Laban sa Kahirapan-Comprehensive and Integrated Delivery of Social Services)",
+          "url": "https://ncddp.dswd.gov.ph/"
+        },
+        {
+          "text": "Sustainable Livelihood Program",
+          "url": "https://livelihood.dswd.gov.ph/"
+        },
+        {
+          "text": "KALAHI-CIDSS (Kapit Bisig Laban sa Kahirapan-Comprehensive and Integrated Delivery of Social Services)",
+          "url": "https://ncddp.dswd.gov.ph/"
+        },
+        {
+          "text": "Sustainable Livelihood Program",
+          "url": "https://livelihood.dswd.gov.ph/"
+        }
+      ],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--davao-de-oro",
+      "url": "https://davaodeoro.gov.ph/2025/05/14/comelec-davao-de-oro-proclaims-winners-of-2025-midterm-elections/",
+      "checked_at_utc": "2026-10-24T05:20:42.637661+00:00",
+      "scope": "Own provincial announcement of elected SP members in 2025; not independently current membership or a media service.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://davaodeoro.gov.ph/2025/05/14/comelec-davao-de-oro-proclaims-winners-of-2025-midterm-elections/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-davao-de-oro.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--davao-del-norte",
+      "url": "https://cda.gov.ph/updates/write-up-on-the-commendation-of-sangguniang-panlalawigan-of-davao-del-norte-to-davao-del-norte-csf-cooperative/",
+      "checked_at_utc": "2026-10-24T05:20:45.088024+00:00",
+      "scope": "Government agency account of a board resolution; not a legislature-owned site.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://cda.gov.ph/updates/write-up-on-the-commendation-of-sangguniang-panlalawigan-of-davao-del-norte-to-davao-del-norte-csf-cooperative/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-davao-del-norte.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "PANLALAWIGAN",
+        "Panlalawigan",
+        "SANGGUNIANG"
+      ],
+      "links": [
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        },
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        },
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        }
+      ],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--guimaras",
+      "url": "https://guimaras.gov.ph/ordinances/",
+      "checked_at_utc": "2026-10-24T05:20:48.454689+00:00",
+      "scope": "Own province ordinance register; document publication, not decoded video.",
+      "viewing_service_confirmed": false,
+      "outcome": "access_or_transport_hold",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "body_id": "philippines--laguna",
+      "url": "https://laguna.gov.ph/news/programs-to-continue-as-laguna-supplemental-budget-approved-gov-sol-aragones-says-this-is-the-peoples-money",
+      "checked_at_utc": "2026-10-24T05:20:50.190097+00:00",
+      "scope": "Own province report of March 2026 SP budget proceedings; not a video service.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://laguna.gov.ph/news/programs-to-continue-as-laguna-supplemental-budget-approved-gov-sol-aragones-says-this-is-the-peoples-money",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-laguna.txt",
+      "matched_terms": [],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--marinduque",
+      "url": "https://marinduque.gov.ph/inaugural-session-ng-ika-17-sangguniang-panlalawigan-isinagawa/",
+      "checked_at_utc": "2026-10-24T05:20:51.877546+00:00",
+      "scope": "Own province report of the 17th board inaugural session; not verified current full membership or recorded business.",
+      "viewing_service_confirmed": false,
+      "outcome": "access_or_transport_hold",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "body_id": "philippines--misamis-occidental",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69225",
+      "checked_at_utc": "2026-10-24T05:20:53.822677+00:00",
+      "scope": "Supreme Court 2023 decision names the provincial board; historical judicial reference, not an owned service.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69225",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-misamis-occidental.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "PANLALAWIGAN",
+        "Panlalawigan",
+        "SANGGUNIANG"
+      ],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--negros-oriental",
+      "url": "https://sp.negor.gov.ph/NegrosOr/Legislative/",
+      "checked_at_utc": "2026-10-24T05:20:56.388261+00:00",
+      "scope": "Provincial-board subdomain legislative management system; current content and access must be inspected.",
+      "viewing_service_confirmed": false,
+      "outcome": "access_or_transport_hold",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "body_id": "philippines--masbate",
+      "url": "https://cda.gov.ph/updates/write-up-on-the-launching-program-and-start-up-course-in-masbate-csf-cooperative/",
+      "checked_at_utc": "2026-10-24T05:21:08.730202+00:00",
+      "scope": "Government agency account of an SP member; not an owned parliamentary website.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://cda.gov.ph/updates/write-up-on-the-launching-program-and-start-up-course-in-masbate-csf-cooperative/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-masbate.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        },
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        },
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        }
+      ],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--northern-samar",
+      "url": "https://cda.gov.ph/updates/cda-region-viii-celebrates-milestone-with-the-launch-of-northern-samar-csf-cooperative/",
+      "checked_at_utc": "2026-10-24T05:21:11.332282+00:00",
+      "scope": "Government agency report of a specific SP grant resolution; not a viewing-service designation.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://cda.gov.ph/updates/cda-region-viii-celebrates-milestone-with-the-launch-of-northern-samar-csf-cooperative/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-northern-samar.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        },
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        },
+        {
+          "text": "Video Gallery",
+          "url": "https://cda.gov.ph/videos/"
+        }
+      ],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--sulu",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69588",
+      "checked_at_utc": "2026-10-24T05:21:14.533419+00:00",
+      "scope": "Supreme Court decision cites the provincial board authorization; scoped legal reference, not current media ownership.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/69588",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-sulu.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--tarlac",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/7/96509",
+      "checked_at_utc": "2026-10-24T05:21:17.370158+00:00",
+      "scope": "2023 presidential proclamation refers to provincial-board request; historical reference, not an owned website.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/7/96509",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-tarlac.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--zambales",
+      "url": "https://region3.dilg.gov.ph/zambales/index.php/news-events/1220-2024-11-11-02-29-19",
+      "checked_at_utc": "2026-10-24T05:21:19.123310+00:00",
+      "scope": "DILG account names provincial-board members in October 2024; historical governmental report.",
+      "viewing_service_confirmed": false,
+      "outcome": "access_or_transport_hold",
+      "error": "HTTP Error 307: Temporary Redirect"
+    },
+    {
+      "body_id": "philippines--zamboanga-sibugay",
+      "url": "https://elibrary.judiciary.gov.ph//thebookshelf//showdocs/2/5842",
+      "checked_at_utc": "2026-10-24T05:21:19.833294+00:00",
+      "scope": "Republic Act8973 sections13-14 specifically create and describe the provincial legislature; not current officers or broadcasts.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://elibrary.judiciary.gov.ph//thebookshelf//showdocs/2/5842",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-zamboanga-sibugay.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "PANLALAWIGAN",
+        "Panlalawigan",
+        "SANGGUNIANG"
+      ],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--zamboanga-del-sur",
+      "url": "https://miadp.da.gov.ph/subanen-vision-gains-ground-adaif-of-cadt-no-r09-lak-0609-109-ancestral-domain-of-lakewood-earns-provincial-council-approval/",
+      "checked_at_utc": "2026-10-24T05:21:24.684954+00:00",
+      "scope": "Agriculture project account of July2025 board approval; not owned media.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://miadp.da.gov.ph/subanen-vision-gains-ground-adaif-of-cadt-no-r09-lak-0609-109-ancestral-domain-of-lakewood-earns-provincial-council-approval/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-zamboanga-del-sur.txt",
+      "matched_terms": [
+        "Sangguniang",
+        "Panlalawigan"
+      ],
+      "links": [],
+      "outcome": "primary_content_requires_individual_review"
+    },
+    {
+      "body_id": "philippines--catanduanes",
+      "url": "https://catanduanes.deped.gov.ph/",
+      "checked_at_utc": "2026-10-24T05:21:29.011945+00:00",
+      "scope": "Education division lists SP education committee invitation; follow the specific document before accepting as reference.",
+      "viewing_service_confirmed": false,
+      "status": 200,
+      "final_url": "https://catanduanes.deped.gov.ph/",
+      "title": null,
+      "text_cache": "/tmp/remaining-primary-catanduanes.txt",
+      "matched_terms": [
+        "PANLALAWIGAN",
+        "Panlalawigan",
+        "SANGGUNIANG"
+      ],
+      "links": [
+        {
+          "text": "DM No. 1267,S.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/DM-No.-1267,S.2026---DESIGNATION-OF-MR.-REYMOND-M.-COSAL-AS-SCHOOLS-DIVISION-COUNSELOR.pdf"
+        },
+        {
+          "text": "DM No. 1254,S.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/DM-No.-1254,S.2026--DIVISION-GUIDELINES-ON-THE-IMPLEMENTATION-OF-THE-JOINT-DELIVERY-VOUCHER-PROGRAM-FOR-ELIGIBLE-HIGH-SCHOOLS-OFFERING-TECHNICAL-VOCATIONAL-LIVELIHOOD--TVL--AND-TEC.pdf"
+        },
+        {
+          "text": "DM No. 1242,S.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/DM-No.-1242,S.2026---RESCHEDULING-OF-THE-ORIENTATTION-ON-DM-NO.-059,-S.2026-_-GUIDELINES-ON-THE-DELIVERY-OF-SCHOOL-HEALTH-SERVICES-FOR-SY-2026-2027.pdf"
+        },
+        {
+          "text": "DM No. 1233,S.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/DM-No_et8dq4m6.-1233,S.2026--CORRIGENDUM-TO-DIVISION-MEMORANDUM-NO.-1228,-S.-2026--ORIENTATION-ON-DEPED-MEMORANDUM-NO.-059,-S.-2026-GUIDELINES-ON-THE-DELIVERY-OF-SCHOOL-HEALTH-SERVICES-FOR-.pdf"
+        },
+        {
+          "text": "DM No. 1228, S.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/DM-No.-1228,-S.2026---ORIENTATION-ON-DEPED-MEMO-NO-059,-S.2026---GUIDELINES-ON-THE-DELIVERY-OF-SCHOOL-HEALTH-SERVICES-FOR-SY-2026-2027.pdf"
+        },
+        {
+          "text": "UM No. 419, s.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/UM-No.-419,-s.2026---DISSEMINATION-OF-MEMO-FROM-THE-OFFICE-OF-THE-UNDERSECRETARY-FOR-FINANCE-RE-INVITATION-TO-WATCH-LIVE-BROADCAST-OF-THE-8TH-SESSION-OF-SULONG-TUNGO-SA-MATALINONG-PANANALAPI.pdf"
+        },
+        {
+          "text": "DM No. 1223,S.2026",
+          "url": "https://catanduanes.deped.gov.ph/files/DM-No.-1223,S.2026--ADDENDUM-TO-DIVISION-MEMORANDUM-NO.-1215-S.-2026-RE-CONDUCT-OF-LEARNING-RESOURCES-MONITORING-AND-EVALUATION-VALIDATION-OF-INVENTORY-AND-DELIVERY-OF-LEARNING-RES.pdf"
+        },
+        {
+          "text": "BID DOCS_Goods-2026-06",
+          "url": "https://catanduanes.deped.gov.ph/files/BID-DOCS_Goods-2026-06---Procurement,-Delivery,-Installation,---Maintenance-of-Managed-Services-for-Low-Earth-Orbit--LEO--Satellite-Connectivity-with-Solar-Powered-Battery-Systems.pdf"
+        },
+        {
+          "text": "Bid-Bulletin_Goods-2026-06_001",
+          "url": "https://catanduanes.deped.gov.ph/files/Bid-Bulletin_Goods-2026-06_001-Procurement,-Delivery,-Installation,---Maintenance-of-Managed-Services-for-Low-Earth-Orbit--LEO--Satellite-Connectivity-with-Solar-Powered-Battery-Systems.pdf"
+        },
+        {
+          "text": "Invitation to Bid",
+          "url": "https://catanduanes.deped.gov.ph/files/Invitation-to-Bid-Procurement,-Delivery,-Installation---Maintenance-of-Managed-Services-for-Low-Earth-Orbit--LEO--Satellite-Connectivity-with-Solar-Powered-Battery-Systems.pdf"
+        },
+        {
+          "text": "Bid_Bulletin_No._2026-04_001",
+          "url": "https://catanduanes.deped.gov.ph/files/Bid_Bulletin_No._2026-04_001---Procurement-of-Provision-of-Printing-and-Delivery-of-Reading-Materials-for-Key-Stage-1--Kindergarten-to-Grade-3-.pdf"
+        },
+        {
+          "text": "Invitation to Bid",
+          "url": "https://catanduanes.deped.gov.ph/files/ITB---Goods-2026-04---PROCUREMENT-OF-PROVISION-OF-PRINTING-AND-DELIVERY-OF-READING-MATERIALS-FOR-KEY-STAGE-1--KINDERGARTEN-TO-GRADE-3-.pdf"
+        },
+        {
+          "text": "Request for Quotation for Lease of Venue with Food and Accommodation PR No. 2025-404",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-2025-404---Bridging-Primer-on-the-Development-of-Teacher-Ready-Video-Tutorials.pdf"
+        },
+        {
+          "text": "INVITATION TO BID",
+          "url": "https://catanduanes.deped.gov.ph/files/INVITATION-TO-BID-for-Procurement-of-Senior-High-School-Technical-Vocational-Livelihood--TVL0-Track.pdf"
+        },
+        {
+          "text": "Request for Quotation for Goods and Services",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-2025-081---Distribution-and-Delivery-of-Learning-Materials-to-Schools--Php-297,000.00-.pdf"
+        },
+        {
+          "text": "PR No. 2025-081",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-2025-081---Distribution-and-Delivery-of-Learning-Materials-to-Schools--Php-297,000.00-.pdf"
+        },
+        {
+          "text": "Request for Quotation for Goods and Services",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-2025-043---Procurement-of-Senior-High-School-Technical-Vocational-Livelihood--TVL--Track-Learning-Tools-and-Equipment--LTE---Php-105,-000.00-.pdf"
+        },
+        {
+          "text": "PR No. 2025-043",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-2025-043---Procurement-of-Senior-High-School-Technical-Vocational-Livelihood--TVL--Track-Learning-Tools-and-Equipment--LTE---Php-105,-000.00-.pdf"
+        },
+        {
+          "text": "Request for Quotation for Goods and Services PR No. 2024-01-004",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-2024-01-004---Procurement-of-Meals-for-the-Division-Cliniquing-Sessions-for-the-Regional-Schools-Press-Conference--RSPC--Qualifiers.pdf"
+        },
+        {
+          "text": "Request for Quotation PR No. 2024-308",
+          "url": "https://catanduanes.deped.gov.ph/files/Request-for-Quotation-PR-No.-2024-308-Procurement-of-Supply-and-Delivery-of-Grocery-Items-and-Incentives-for-the-2024-Year-End-Performance-Evaluation.pdf"
+        },
+        {
+          "text": "Request for Quotation PR No. 2024-289",
+          "url": "https://catanduanes.deped.gov.ph/files/Request-for-Quotation-PR-No.-2024-289-Procurement-of-Senior-High-School-Technical-Vocational-Livelihood--TVL--Track-Learning-Tools-and-Equipment--LTE-.pdf"
+        },
+        {
+          "text": "Request for Quotation",
+          "url": "https://catanduanes.deped.gov.ph/files/PR-No.-017-Delivery-Vehicle-Rental-Including-the-Following-Services--Hauling-of-SME-from-Metro-Mobilla-Corporation,-Pampanga,.pdf"
+        },
+        {
+          "text": "Invitation to Bid",
+          "url": "https://catanduanes.deped.gov.ph/files/Invitation-to-Bid---Procurement-of-Project-Under-CY-2021-Hauling-Delivery-of-School-Furniture.pdf"
+        },
+        {
+          "text": "Invitation to Bid - Procurement of Technical Vocational Livelihood (TVL) Tools and Equipment",
+          "url": "https://catanduanes.deped.gov.ph/files/Invitation-to-Bid---Procurement-of-Technical-Vocational-Livelihood--TVL--Tools-and-Equipment.pdf"
+        },
+        {
+          "text": "Invitation to Bid - 3 Day Division Live-In Training-Workshop for Kindergarten Teachers",
+          "url": "https://catanduanes.deped.gov.ph/files/Invitation-to-Bid--3-day--Div-Live-in-Training-Workshop-for-Kindergarte.pdf"
+        }
+      ],
+      "outcome": "primary_content_requires_individual_review"
+    }
+  ]
+}

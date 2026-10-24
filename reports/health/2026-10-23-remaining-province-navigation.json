@@ -1,0 +1,283 @@
+{
+  "method": "Normal TLS, one bounded province-root read per known discovery URL, three concurrent distinct hosts; no root automatically accepted as a legislature route. Explicit navigation requires individual follow-through.",
+  "results": [
+    {
+      "id": "philippines--apayao",
+      "url": "https://www.apayao.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--basilan",
+      "url": "https://www.basilan.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "url": "https://camarinessur.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "status": 200,
+      "final_url": "https://camarinessur.gov.ph/",
+      "legislative_navigation": [
+        {
+          "text": "Citizen's Charter",
+          "url": "https://camarinessur.gov.ph/transparency/citizens-charter"
+        },
+        {
+          "text": "Citizen's Charter",
+          "url": "https://camarinessur.gov.ph/transparency/citizens-charter"
+        },
+        {
+          "text": "ARTA Compliance \n                                 RA 11032 Anti-Red Tape",
+          "url": "https://camarinessur.gov.ph/transparency/citizens-charter"
+        }
+      ],
+      "title": "",
+      "outcome": "exact_legislative_navigation_found_requires_review"
+    },
+    {
+      "id": "philippines--capiz",
+      "url": "https://capiz.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--catanduanes",
+      "url": "https://catanduanes.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--davao-de-oro",
+      "url": "https://www.davaodeoro.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--davao-del-norte",
+      "url": "https://www.davaodelnorte.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error timed out>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--guimaras",
+      "url": "https://guimaras.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--ifugao",
+      "url": "https://www.ifugao.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--kalinga",
+      "url": "https://www.kalinga.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--lanao-del-sur",
+      "url": "https://www.lanaodelsur.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--marinduque",
+      "url": "https://www.marinduque.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--masbate",
+      "url": "https://masbate.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--misamis-occidental",
+      "url": "https://misocc.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--misamis-oriental",
+      "url": "https://www.misamisoriental.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--negros-oriental",
+      "url": "https://www.negor.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--northern-samar",
+      "url": "https://northernsamar.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--romblon",
+      "url": "https://romblonparadise.com/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--samar",
+      "url": "https://samar.lgu-ph.com/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "status": 200,
+      "final_url": "https://samar.lgu-ph.com/",
+      "legislative_navigation": [],
+      "title": "Provincial Officials of Samar",
+      "outcome": "no_exact_legislative_navigation_in_selected_root"
+    },
+    {
+      "id": "philippines--siquijor",
+      "url": "https://siquijorprovince.com/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "status": 200,
+      "final_url": "https://siquijorprovince.com/",
+      "legislative_navigation": [],
+      "title": "Home - Siquijor Province",
+      "outcome": "no_exact_legislative_navigation_in_selected_root"
+    },
+    {
+      "id": "philippines--sulu",
+      "url": "https://www.sulu.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.sulu.gov.ph'. (_ssl.c:1129)>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--tarlac",
+      "url": "https://www.tarlac.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "url": "https://www.sibugayprovince.com/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "url": "https://sibugay.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--zamboanga-del-norte",
+      "url": "https://www.zanorte.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--zamboanga-del-sur",
+      "url": "https://www.zamboangadelsur.gov.ph",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--abra",
+      "url": "https://abra.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--antique",
+      "url": "https://antique.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--batanes",
+      "url": "https://batanes.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "url": "https://www.camsur.com/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "status": 200,
+      "final_url": "https://www.camsur.com/",
+      "legislative_navigation": [
+        {
+          "text": "Citizen's Charter",
+          "url": "https://www.camsur.com/transparency/citizens-charter"
+        },
+        {
+          "text": "Citizen's Charter",
+          "url": "https://www.camsur.com/transparency/citizens-charter"
+        },
+        {
+          "text": "ARTA Compliance \n                                 RA 11032 Anti-Red Tape",
+          "url": "https://www.camsur.com/transparency/citizens-charter"
+        }
+      ],
+      "title": "",
+      "outcome": "exact_legislative_navigation_found_requires_review"
+    },
+    {
+      "id": "philippines--maguindanao-del-norte",
+      "url": "https://maguindanaodelnorte.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "outcome": "access_hold_not_evidence_of_no_service"
+    },
+    {
+      "id": "philippines--maguindanao-del-sur",
+      "url": "https://maguindanaodelsur.gov.ph/",
+      "scope": "Executive/province root is a discovery starting point, not a legislative URL.",
+      "status": 200,
+      "final_url": "http://www.maguindanaodelsur.gov.ph/gov/",
+      "legislative_navigation": [
+        {
+          "text": "Citizen's Charter",
+          "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+        },
+        {
+          "text": "Citizen's Charter",
+          "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+        },
+        {
+          "text": "",
+          "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+        }
+      ],
+      "title": "HOME",
+      "outcome": "exact_legislative_navigation_found_requires_review"
+    }
+  ]
+}

@@ -1,0 +1,1005 @@
+{
+  "checked_at": "2026-10-24T03:07:43.670296+00:00",
+  "method": "Normal Wikidata search API, one request at a time with 2.5-second spacing following a successful post-cooldown probe. Search results are candidates, not exact matches. Stop on HTTP429, Retry-After, or API maxlag. Entity claims fetched later in bounded API batches, subject to the same stop rule.",
+  "results": [
+    {
+      "id": "indonesia--kalimantan-tengah",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Tengah",
+      "query": "Dewan Perwakilan Rakyat Daerah Kalimantan Tengah",
+      "language": "id",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Dewan+Perwakilan+Rakyat+Daerah+Kalimantan+Tengah&language=id&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+      "country": "Belgium",
+      "institution": "Parlement de la Fédération Wallonie-Bruxelles",
+      "query": "Parlement de la Fédération Wallonie-Bruxelles",
+      "language": "fr",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Parlement+de+la+F%C3%A9d%C3%A9ration+Wallonie-Bruxelles&language=fr&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q2477569",
+          "label": "Parliament of the French Community",
+          "description": "legislative assembly of the French Community of Belgium",
+          "url": "//www.wikidata.org/wiki/Q2477569"
+        }
+      ]
+    },
+    {
+      "id": "germany--brandenburg",
+      "country": "Germany",
+      "institution": "Brandenburg",
+      "query": "Landtag Brandenburg",
+      "language": "de",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Landtag+Brandenburg&language=de&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q521764",
+          "label": "Landtag of Brandenburg",
+          "description": "legislature of the state of Brandenburg, Germany",
+          "url": "//www.wikidata.org/wiki/Q521764"
+        },
+        {
+          "id": "Q1669082",
+          "label": "Landtag Brandenburg",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q1669082"
+        },
+        {
+          "id": "Q1803952",
+          "label": "Landtag Brandenburg",
+          "description": "Wikimedia disambiguation page",
+          "url": "//www.wikidata.org/wiki/Q1803952"
+        }
+      ]
+    },
+    {
+      "id": "germany--hesse",
+      "country": "Germany",
+      "institution": "Hesse",
+      "query": "Hessischer Landtag",
+      "language": "de",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Hessischer+Landtag&language=de&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q510511",
+          "label": "Landtag of Hesse",
+          "description": "Parliament of the German State of Hesse",
+          "url": "//www.wikidata.org/wiki/Q510511"
+        },
+        {
+          "id": "Q28738798",
+          "label": "Hessischer Landtag, library",
+          "description": "library in Germany",
+          "url": "//www.wikidata.org/wiki/Q28738798"
+        },
+        {
+          "id": "Q17934943",
+          "label": "Hessischer Landtag aufgelöst",
+          "description": "Wikinews article",
+          "url": "//www.wikidata.org/wiki/Q17934943"
+        }
+      ]
+    },
+    {
+      "id": "germany--landtag-mecklenburg-vorpommern",
+      "country": "Germany",
+      "institution": "Landtag Mecklenburg-Vorpommern",
+      "query": "Landtag Mecklenburg-Vorpommern",
+      "language": "de",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Landtag+Mecklenburg-Vorpommern&language=de&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q882738",
+          "label": "Landtag of Mecklenburg-Vorpommern",
+          "description": "diet of the state of Mecklenburg-Vorpommern, Germany",
+          "url": "//www.wikidata.org/wiki/Q882738"
+        },
+        {
+          "id": "Q1692966",
+          "label": "Landtag Mecklenburg-Vorpommern",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q1692966"
+        }
+      ]
+    },
+    {
+      "id": "germany--landtag-niedersachsen",
+      "country": "Germany",
+      "institution": "Landtag Niedersachsen",
+      "query": "Niedersächsischer Landtag",
+      "language": "de",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Nieders%C3%A4chsischer+Landtag&language=de&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q319994",
+          "label": "Landtag of Lower Saxony",
+          "description": "parliament of the state of Lower Saxony, Germany",
+          "url": "//www.wikidata.org/wiki/Q319994"
+        },
+        {
+          "id": "Q130988309",
+          "label": "Archiv des Niedersächsischen Landtages",
+          "description": "parliamentary archives in Hanover, Germany",
+          "url": "//www.wikidata.org/wiki/Q130988309"
+        }
+      ]
+    },
+    {
+      "id": "germany--sachsischer-landtag",
+      "country": "Germany",
+      "institution": "Sächsischer Landtag",
+      "query": "Sächsischer Landtag",
+      "language": "de",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=S%C3%A4chsischer+Landtag&language=de&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q884824",
+          "label": "Landtag of Saxony",
+          "description": "Parliament of the German Free State of Saxony",
+          "url": "//www.wikidata.org/wiki/Q884824"
+        },
+        {
+          "id": "Q1440358",
+          "label": "Landtag of the Kingdom of Saxony",
+          "description": "legislative body of the Kingdom of Saxony from 1831 to 1918",
+          "url": "//www.wikidata.org/wiki/Q1440358"
+        },
+        {
+          "id": "Q1618988",
+          "label": "Saxon Landtag",
+          "description": "German Landtag building",
+          "url": "//www.wikidata.org/wiki/Q1618988"
+        },
+        {
+          "id": "Q2378729",
+          "label": "Sächsischer Landtag (1946–1952)",
+          "description": "parliament in Saxony, 1946–1952",
+          "url": "//www.wikidata.org/wiki/Q2378729"
+        }
+      ]
+    },
+    {
+      "id": "germany--thuringer-landtag",
+      "country": "Germany",
+      "institution": "Thüringer Landtag",
+      "query": "Thüringer Landtag",
+      "language": "de",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Th%C3%BCringer+Landtag&language=de&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q896075",
+          "label": "Landtag of Thuringia",
+          "description": "parliament of the German state of Thuringia",
+          "url": "//www.wikidata.org/wiki/Q896075"
+        },
+        {
+          "id": "Q2430843",
+          "label": "Thüringer Landtag (1946–1952)",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q2430843"
+        },
+        {
+          "id": "Q2430848",
+          "label": "Thüringer Landtag (Weimarer Republik)",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q2430848"
+        },
+        {
+          "id": "Q17968669",
+          "label": "Thüringer Landtagssitzungen werden ab sofort live übertragen",
+          "description": "Wikinews article",
+          "url": "//www.wikidata.org/wiki/Q17968669"
+        }
+      ]
+    },
+    {
+      "id": "indonesia--aceh",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Aceh",
+      "query": "Dewan Perwakilan Rakyat Aceh",
+      "language": "id",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Dewan+Perwakilan+Rakyat+Aceh&language=id&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q12481397",
+          "label": "Aceh House of Representatives",
+          "description": "unicameral legislature of Aceh, Indonesia",
+          "url": "//www.wikidata.org/wiki/Q12481397"
+        }
+      ]
+    },
+    {
+      "id": "indonesia--di-yogyakarta",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi DI Yogyakarta",
+      "query": "Dewan Perwakilan Rakyat Daerah Daerah Istimewa Yogyakarta",
+      "language": "id",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Dewan+Perwakilan+Rakyat+Daerah+Daerah+Istimewa+Yogyakarta&language=id&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "indonesia--jawa-tengah",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Tengah",
+      "query": "Dewan Perwakilan Rakyat Daerah Jawa Tengah",
+      "language": "id",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Dewan+Perwakilan+Rakyat+Daerah+Jawa+Tengah&language=id&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "indonesia--kepulauan-riau",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau",
+      "query": "Dewan Perwakilan Rakyat Daerah Kepulauan Riau",
+      "language": "id",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Dewan+Perwakilan+Rakyat+Daerah+Kepulauan+Riau&language=id&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "italy--consiglio-della-provincia-autonoma-di-bolzano",
+      "country": "Italy",
+      "institution": "Consiglio della Provincia Autonoma di Bolzano",
+      "query": "Consiglio provinciale di Bolzano",
+      "language": "it",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Consiglio+provinciale+di+Bolzano&language=it&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "italy--consiglio-regionale-della-campania",
+      "country": "Italy",
+      "institution": "Consiglio regionale della Campania",
+      "query": "Consiglio regionale della Campania",
+      "language": "it",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Consiglio+regionale+della+Campania&language=it&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q21190093",
+          "label": "Regional Council of Campania",
+          "description": "legislative assembly of the Italian region of Campania",
+          "url": "//www.wikidata.org/wiki/Q21190093"
+        }
+      ]
+    },
+    {
+      "id": "japan--fukui",
+      "country": "Japan",
+      "institution": "福井県議会",
+      "query": "Fukui Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fukui+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11591505",
+          "label": "Fukui Prefectural Assembly",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q11591505"
+        }
+      ]
+    },
+    {
+      "id": "japan--fukushima",
+      "country": "Japan",
+      "institution": "福島県議会",
+      "query": "Fukushima Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fukushima+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11593337",
+          "label": "Fukushima Prefectural Assembly",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q11593337"
+        }
+      ]
+    },
+    {
+      "id": "japan--hyogo",
+      "country": "Japan",
+      "institution": "兵庫県議会",
+      "query": "Hyogo Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Hyogo+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11393166",
+          "label": "Hyōgo Prefectural Assembly",
+          "description": "prefectural parliament of Hyogo Prefecture, Japan",
+          "url": "//www.wikidata.org/wiki/Q11393166"
+        }
+      ]
+    },
+    {
+      "id": "japan--iwate",
+      "country": "Japan",
+      "institution": "岩手県議会",
+      "query": "Iwate Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Iwate+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11474798",
+          "label": "Iwate Prefectural Assembly",
+          "description": "Parliament of Iwate, Japan",
+          "url": "//www.wikidata.org/wiki/Q11474798"
+        }
+      ]
+    },
+    {
+      "id": "japan--kanagawa",
+      "country": "Japan",
+      "institution": "神奈川県議会",
+      "query": "Kanagawa Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Kanagawa+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11589236",
+          "label": "Kanagawa Prefectural Assembly",
+          "description": "parliament of Kanagawa, Japan",
+          "url": "//www.wikidata.org/wiki/Q11589236"
+        }
+      ]
+    },
+    {
+      "id": "japan--tokushima",
+      "country": "Japan",
+      "institution": "徳島県議会",
+      "query": "Tokushima Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Tokushima+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11490001",
+          "label": "Tokushima Prefectural Assembly",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q11490001"
+        }
+      ]
+    },
+    {
+      "id": "moldova--gagauzia",
+      "country": "Moldova",
+      "institution": "Adunarea Populară a Găgăuziei",
+      "query": "People's Assembly of Gagauzia",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=People%27s+Assembly+of+Gagauzia&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q2985913",
+          "label": "People's Assembly of Gagauzia",
+          "description": "Wikimedia list article",
+          "url": "//www.wikidata.org/wiki/Q2985913"
+        }
+      ]
+    },
+    {
+      "id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira",
+      "country": "Portugal",
+      "institution": "Assembleia Legislativa de Região Autónoma da Madeira",
+      "query": "Legislative Assembly of Madeira",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Legislative+Assembly+of+Madeira&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q2867080",
+          "label": "Legislative Assembly of Madeira",
+          "description": "legislature of the Portuguese autonomous region of Madeira",
+          "url": "//www.wikidata.org/wiki/Q2867080"
+        }
+      ]
+    },
+    {
+      "id": "south-africa--eastern-cape",
+      "country": "South Africa",
+      "institution": "Eastern Cape Provincial Legislature",
+      "query": "Eastern Cape Provincial Legislature",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Eastern+Cape+Provincial+Legislature&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q5330037",
+          "label": "Eastern Cape Provincial Legislature",
+          "description": "legislature of the Eastern Cape Province",
+          "url": "//www.wikidata.org/wiki/Q5330037"
+        }
+      ]
+    },
+    {
+      "id": "south-africa--free-state",
+      "country": "South Africa",
+      "institution": "Free State Provincial Legislature",
+      "query": "Free State Provincial Legislature",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Free+State+Provincial+Legislature&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "south-africa--northern-cape",
+      "country": "South Africa",
+      "institution": "Northern Cape Provincial Legislature",
+      "query": "Northern Cape Provincial Legislature",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Northern+Cape+Provincial+Legislature&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q15262569",
+          "label": "Northern Cape Provincial Legislature",
+          "description": "legislature of the Northern Cape Province",
+          "url": "//www.wikidata.org/wiki/Q15262569"
+        }
+      ]
+    },
+    {
+      "id": "south-africa--western-cape",
+      "country": "South Africa",
+      "institution": "Western Cape Provincial Legislature",
+      "query": "Western Cape Provincial Parliament",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Western+Cape+Provincial+Parliament&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q17081929",
+          "label": "Western Cape Provincial Parliament",
+          "description": "legislature of the Western Cape Province",
+          "url": "//www.wikidata.org/wiki/Q17081929"
+        }
+      ]
+    },
+    {
+      "id": "spain--cortes-de-castilla-y-leon",
+      "country": "Spain",
+      "institution": "Cortes de Castilla y León",
+      "query": "Cortes de Castilla y León",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Cortes+de+Castilla+y+Le%C3%B3n&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q3755695",
+          "label": "Cortes of Castile and León",
+          "description": "legislature of the Autonomous Community of Castile and León, Spain",
+          "url": "//www.wikidata.org/wiki/Q3755695"
+        }
+      ]
+    },
+    {
+      "id": "spain--parlamento-de-canarias",
+      "country": "Spain",
+      "institution": "Parlamento de Canarias",
+      "query": "Parlamento de Canarias",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Parlamento+de+Canarias&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q4843653",
+          "label": "Canarian Parliament",
+          "description": "regional parliament",
+          "url": "//www.wikidata.org/wiki/Q4843653"
+        }
+      ]
+    },
+    {
+      "id": "spain--parlamento-de-cantabria",
+      "country": "Spain",
+      "institution": "Parlamento de Cantabria",
+      "query": "Parlamento de Cantabria",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Parlamento+de+Cantabria&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q3082759",
+          "label": "Parliament of Cantabria",
+          "description": "legislature of the Autonomous Community of Cantabria in Spain",
+          "url": "//www.wikidata.org/wiki/Q3082759"
+        }
+      ]
+    },
+    {
+      "id": "spain--parlamento-de-la-rioja",
+      "country": "Spain",
+      "institution": "Parlamento de La Rioja",
+      "query": "Parlamento de La Rioja",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Parlamento+de+La+Rioja&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q4589988",
+          "label": "Parliament of La Rioja",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q4589988"
+        }
+      ]
+    },
+    {
+      "id": "taiwan--hsinchu-city",
+      "country": "Taiwan",
+      "institution": "新竹市議會",
+      "query": "新竹市議會",
+      "language": "zh",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=%E6%96%B0%E7%AB%B9%E5%B8%82%E8%AD%B0%E6%9C%83&language=zh&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q11084017",
+          "label": "Hsinchu City Council",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q11084017"
+        },
+        {
+          "id": "Q101501872",
+          "label": "Hsinchu City Council Hall",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q101501872"
+        },
+        {
+          "id": "Q93491066",
+          "label": "Stone Lions of Hsinchu City Council Hall",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q93491066"
+        }
+      ]
+    },
+    {
+      "id": "taiwan--kinmen",
+      "country": "Taiwan",
+      "institution": "金門縣議會",
+      "query": "金門縣議會",
+      "language": "zh",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=%E9%87%91%E9%96%80%E7%B8%A3%E8%AD%B0%E6%9C%83&language=zh&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q15914537",
+          "label": "Kinmen County Council",
+          "description": "legislature of Kinmen County, Taiwan",
+          "url": "//www.wikidata.org/wiki/Q15914537"
+        }
+      ]
+    },
+    {
+      "id": "taiwan--lienchiang",
+      "country": "Taiwan",
+      "institution": "連江縣議會",
+      "query": "連江縣議會",
+      "language": "zh",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=%E9%80%A3%E6%B1%9F%E7%B8%A3%E8%AD%B0%E6%9C%83&language=zh&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q15919452",
+          "label": "Lienchiang County Council",
+          "description": "legislature of Lienchiang County, Taiwan",
+          "url": "//www.wikidata.org/wiki/Q15919452"
+        }
+      ]
+    },
+    {
+      "id": "taiwan--penghu",
+      "country": "Taiwan",
+      "institution": "澎湖縣議會",
+      "query": "澎湖縣議會",
+      "language": "zh",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=%E6%BE%8E%E6%B9%96%E7%B8%A3%E8%AD%B0%E6%9C%83&language=zh&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q15915051",
+          "label": "Penghu County Council",
+          "description": "legislature of Penghu County, Taiwan",
+          "url": "//www.wikidata.org/wiki/Q15915051"
+        }
+      ]
+    },
+    {
+      "id": "taiwan--tainan",
+      "country": "Taiwan",
+      "institution": "臺南市議會",
+      "query": "臺南市議會",
+      "language": "zh",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=%E8%87%BA%E5%8D%97%E5%B8%82%E8%AD%B0%E6%9C%83&language=zh&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q113493742",
+          "label": "Tainan City Council",
+          "description": "legislature of Tainan City, Taiwan (provincial city, 1950-2010)",
+          "url": "//www.wikidata.org/wiki/Q113493742"
+        },
+        {
+          "id": "Q7676191",
+          "label": "Tainan City Council",
+          "description": "legislature of Tainan City, Taiwan",
+          "url": "//www.wikidata.org/wiki/Q7676191"
+        },
+        {
+          "id": "Q10911356",
+          "label": "Old Tainan Prefecture Council",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q10911356"
+        },
+        {
+          "id": "Q136516980",
+          "label": "臺南市議會民治議事廳",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q136516980"
+        }
+      ]
+    },
+    {
+      "id": "united-states--american-samoa",
+      "country": "United States",
+      "institution": "American Samoa Fono",
+      "query": "American Samoa Fono",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=American+Samoa+Fono&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q1267503",
+          "label": "American Samoa Fono",
+          "description": "territorial legislature of American Samoa",
+          "url": "//www.wikidata.org/wiki/Q1267503"
+        }
+      ]
+    },
+    {
+      "id": "united-states--district-of-columbia",
+      "country": "United States",
+      "institution": "Council of the District of Columbia",
+      "query": "Council of the District of Columbia",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Council+of+the+District+of+Columbia&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q6527389",
+          "label": "Council of the District of Columbia",
+          "description": "legislative branch of the local government of the District of Columbia, in the United States",
+          "url": "//www.wikidata.org/wiki/Q6527389"
+        },
+        {
+          "id": "Q5176536",
+          "label": "Council of the District of Columbia Period 15",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q5176536"
+        },
+        {
+          "id": "Q5176537",
+          "label": "Council of the District of Columbia Period 16",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q5176537"
+        },
+        {
+          "id": "Q5176533",
+          "label": "Council of the District of Columbia Period 13",
+          "description": null,
+          "url": "//www.wikidata.org/wiki/Q5176533"
+        }
+      ]
+    },
+    {
+      "id": "united-states--kansas",
+      "country": "United States",
+      "institution": "Kansas Legislature",
+      "query": "Kansas Legislature",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Kansas+Legislature&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q3270271",
+          "label": "Kansas Legislature",
+          "description": "state legislature of Kansas",
+          "url": "//www.wikidata.org/wiki/Q3270271"
+        },
+        {
+          "id": "Q1525545",
+          "label": "Kansas House of Representatives",
+          "description": "lower house of the legislature of the U.S. state of Kansas",
+          "url": "//www.wikidata.org/wiki/Q1525545"
+        },
+        {
+          "id": "Q1525955",
+          "label": "Kansas Senate",
+          "description": "upper house of the Kansas Legislature",
+          "url": "//www.wikidata.org/wiki/Q1525955"
+        },
+        {
+          "id": "Q70180357",
+          "label": "Kansas legislature looks at universal health care access. A perspective analysis of the Canadian system and the Oregon Health Care Act",
+          "description": "scientific article published on 01 April 1991",
+          "url": "//www.wikidata.org/wiki/Q70180357"
+        }
+      ]
+    },
+    {
+      "id": "united-states--mississippi",
+      "country": "United States",
+      "institution": "Mississippi Legislature",
+      "query": "Mississippi Legislature",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mississippi+Legislature&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q6879217",
+          "label": "Mississippi Legislature",
+          "description": "bicameral legislature of the U.S. state of Mississippi",
+          "url": "//www.wikidata.org/wiki/Q6879217"
+        },
+        {
+          "id": "Q104874302",
+          "label": "Mississippi Legislature COVID-19 outbreak",
+          "description": "2020 Mississippi COVID-19 Outbreak",
+          "url": "//www.wikidata.org/wiki/Q104874302"
+        }
+      ]
+    },
+    {
+      "id": "united-states--united-states-virgin-islands",
+      "country": "United States",
+      "institution": "Legislature of the Virgin Islands",
+      "query": "Legislature of the Virgin Islands",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Legislature+of+the+Virgin+Islands&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q6518465",
+          "label": "Legislature of the Virgin Islands",
+          "description": "territorial legislature of the United States Virgin Islands",
+          "url": "//www.wikidata.org/wiki/Q6518465"
+        }
+      ]
+    },
+    {
+      "id": "united-states--wyoming",
+      "country": "United States",
+      "institution": "Wyoming Legislature",
+      "query": "Wyoming Legislature",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Wyoming+Legislature&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q3270276",
+          "label": "Wyoming Legislature",
+          "description": "state legislature",
+          "url": "//www.wikidata.org/wiki/Q3270276"
+        }
+      ]
+    },
+    {
+      "id": "uruguay--canelones",
+      "country": "Uruguay",
+      "institution": "Junta Departamental de Canelones",
+      "query": "Junta Departamental de Canelones",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta+Departamental+de+Canelones&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q65553492",
+          "label": "Junta de Canelones",
+          "description": "parliaments of Canelones",
+          "url": "//www.wikidata.org/wiki/Q65553492"
+        }
+      ]
+    },
+    {
+      "id": "uruguay--durazno",
+      "country": "Uruguay",
+      "institution": "Junta Departamental de Durazno",
+      "query": "Junta Departamental de Durazno",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta+Departamental+de+Durazno&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "uruguay--florida",
+      "country": "Uruguay",
+      "institution": "Junta Departamental de Florida",
+      "query": "Junta Departamental de Florida",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta+Departamental+de+Florida&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "uruguay--montevideo",
+      "country": "Uruguay",
+      "institution": "Junta Departamental de Montevideo",
+      "query": "Junta Departamental de Montevideo",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta+Departamental+de+Montevideo&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "candidate_items_require_review",
+      "matches": [
+        {
+          "id": "Q5956468",
+          "label": "Junta Departamental de Montevideo",
+          "description": "Parliament of Montevideo",
+          "url": "//www.wikidata.org/wiki/Q5956468"
+        },
+        {
+          "id": "Q1713700",
+          "label": "Palacio Gómez",
+          "description": "parliament building of Montevideo",
+          "url": "//www.wikidata.org/wiki/Q1713700"
+        }
+      ]
+    },
+    {
+      "id": "uruguay--paysandu",
+      "country": "Uruguay",
+      "institution": "Junta Departamental de Paysandú",
+      "query": "Junta Departamental de Paysandú",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta+Departamental+de+Paysand%C3%BA&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    },
+    {
+      "id": "uruguay--salto",
+      "country": "Uruguay",
+      "institution": "Junta Departamental de Salto",
+      "query": "Junta Departamental de Salto",
+      "language": "es",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Junta+Departamental+de+Salto&language=es&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": null,
+      "outcome": "no_result_not_proof_of_no_item",
+      "matches": []
+    }
+  ],
+  "previous_attempts": [
+    {
+      "id": "japan--fukushima",
+      "country": "Japan",
+      "institution": "福島県議会",
+      "query": "Fukushima Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fukushima+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "outcome": "api_error_hold",
+      "error": {
+        "code": "maxlag",
+        "info": "Waiting for wdqs1012: 5.45 seconds lagged.",
+        "host": "wdqs1012",
+        "lag": 5.45,
+        "type": "wikibase-queryservice",
+        "queryserviceLag": 327,
+        "*": "See https://www.wikidata.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
+      }
+    },
+    {
+      "id": "japan--fukushima",
+      "country": "Japan",
+      "institution": "福島県議会",
+      "query": "Fukushima Prefectural Assembly",
+      "language": "en",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fukushima+Prefectural+Assembly&language=en&uselang=en&format=json&limit=4&maxlag=5",
+      "http_status": 200,
+      "retry_after": "5",
+      "outcome": "api_error_hold",
+      "error": {
+        "code": "maxlag",
+        "info": "Waiting for wdqs1012: 7.4 seconds lagged.",
+        "host": "wdqs1012",
+        "lag": 7.4,
+        "type": "wikibase-queryservice",
+        "queryserviceLag": 444,
+        "*": "See https://www.wikidata.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
+      }
+    }
+  ]
+}

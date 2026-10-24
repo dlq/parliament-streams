@@ -2,12 +2,13 @@
   "candidate_version": 1,
   "status": "researching",
   "created_on": "2026-10-22",
-  "updated_on": "2026-10-22",
+  "updated_on": "2026-10-23",
   "decision_notes": [
     "Chromium returned HTTP 200 and displayed a live service for plenary, committee and delegation proceedings, currently with no broadcast. Senate legal notices require prior webmaster notification for hyperlinks as well as attribution and noncommercial context. No notification was sent; promotion remains pending that condition and confirmation of its applicable scope.",
     "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json.",
     "Follow-up 2026-10-22: Live service HTTP 200 and explicitly off-air. Official hyperlink conditions still include prior webmaster notification and attribution/noncommercial conditions. No outreach sent.",
-    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json."
+    "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json.",
+    "23 October local / 24 October UTC recheck: Official live page rendered off-air with archived navigation; legal prior-link notification condition still prevents publication. No notification sent. Evidence: reports/health/2026-10-24-national-formal-browser.json"
   ],
   "channel": {
     "id": "france-senate",

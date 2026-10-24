@@ -1,0 +1,211 @@
+{
+  "research_date": "2026-10-23",
+  "decision": "publish_three_official_institution_links_with_scoped_recording_evidence",
+  "records": [
+    {
+      "key": "busan",
+      "region": "Busan",
+      "name": "Busan Metropolitan Council Recordings",
+      "inst": "부산광역시의회",
+      "qid": "Q16096697",
+      "url": "https://council.busan.go.kr/council/index",
+      "terms": "https://council.busan.go.kr/council/copyright",
+      "id": "south-korea-busan-council-recordings",
+      "body": "south-korea--busan",
+      "recording_checks": [
+        {
+          "key": "busan-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=-W1i_jFr0rw&t=7811s",
+          "offset": 7811,
+          "time": 7814.931606,
+          "frames_advanced": true,
+          "title": "부산광역시의회 제339회 임시회 제4차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "busan-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=TYK2OGINRw0&t=16500s",
+          "offset": 16500,
+          "time": 16503.949864,
+          "frames_advanced": true,
+          "title": "부산광역시의회 제339회 임시회 제3차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "busan-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=-W1i_jFr0rw&t=7811s",
+          "offset": 7811,
+          "time": 7814.604597643,
+          "frames_advanced": true,
+          "title": "부산광역시의회 제339회 임시회 제4차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "busan-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=TYK2OGINRw0&t=16500s",
+          "offset": 16500,
+          "time": 16503.549163066,
+          "frames_advanced": true,
+          "title": "부산광역시의회 제339회 임시회 제3차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        }
+      ],
+      "identity_revision": 2513114120,
+      "provider_designation": {
+        "text": "유튜브",
+        "url": "https://www.youtube.com/channel/UCH3zFGQV84l4uBVOXnjw46Q"
+      },
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established"
+      ]
+    },
+    {
+      "key": "chungcheongnam",
+      "region": "Chungcheongnam-do",
+      "name": "Chungcheongnam-do Council Recordings",
+      "inst": "충청남도의회",
+      "qid": "Q16100275",
+      "url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+      "terms": null,
+      "id": "south-korea-chungcheongnam-council-recordings",
+      "body": "south-korea--chungcheongnam",
+      "recording_checks": [
+        {
+          "key": "chungnam-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=15141s",
+          "offset": 15141,
+          "time": 15144.945551,
+          "frames_advanced": true,
+          "title": "제371회 임시회 제4차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "chungnam-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=ggqR49FOH7M&t=15166s",
+          "offset": 15166,
+          "time": 15169.934788,
+          "frames_advanced": true,
+          "title": "제371회 임시회 제3차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "chungnam-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=ggqR49FOH7M&t=15166s",
+          "offset": 15166,
+          "time": 15169.554928988,
+          "frames_advanced": true,
+          "title": "제371회 임시회 제3차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "chungnam-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=15141s",
+          "offset": 15141,
+          "time": 15148.604848623,
+          "frames_advanced": true,
+          "title": "제371회 임시회 제4차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        }
+      ],
+      "identity_revision": 2510976436,
+      "provider_designation": {
+        "text": "YOUTUBE",
+        "url": "https://www.youtube.com/channel/UC9vraW8OxKuqPNosTqUYcrg"
+      },
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established",
+        "separate_current_public_session_copyright_policy_not_located"
+      ]
+    },
+    {
+      "key": "jeonbuk",
+      "region": "Jeonbuk State",
+      "name": "Jeonbuk State Council Recordings",
+      "inst": "전북특별자치도의회",
+      "qid": "Q21060148",
+      "url": "https://www.jbstatecouncil.jeonbuk.kr/jbassem/main",
+      "terms": null,
+      "id": "south-korea-jeonbuk-council-recordings",
+      "body": "south-korea--jeonbuk",
+      "recording_checks": [
+        {
+          "key": "jeonbuk-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=wsDN0Dtwxmw&t=1200s",
+          "offset": 1200,
+          "time": 1203.925721,
+          "frames_advanced": true,
+          "title": "[LIVE] 📺 제432회 임시회 제4차 본회의(2026.10.23.) 📢 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "jeonbuk-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=KIki5X0QgMw&t=1200s",
+          "offset": 1200,
+          "time": 1203.935002,
+          "frames_advanced": true,
+          "title": "[LIVE] 📺 제432회 임시회 제3차 본회의(2026.10.14.) 📢 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "jeonbuk-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=wsDN0Dtwxmw&t=1200s",
+          "offset": 1200,
+          "time": 1203.530545666,
+          "frames_advanced": true,
+          "title": "[LIVE] 📺 제432회 임시회 제4차 본회의(2026.10.23.) 📢 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "jeonbuk-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=KIki5X0QgMw&t=1200s",
+          "offset": 1200,
+          "time": 1203.5296121,
+          "frames_advanced": true,
+          "title": "[LIVE] 📺 제432회 임시회 제3차 본회의(2026.10.14.) 📢 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        }
+      ],
+      "identity_revision": 2513869376,
+      "provider_designation": {
+        "text": "",
+        "url": "https://www.youtube.com/@jeonbukstatecouncil"
+      },
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established",
+        "separate_current_public_session_copyright_policy_not_located"
+      ],
+      "authority_primary_followup": {
+        "url": "https://www.jbstatecouncil.jeonbuk.kr/jbassem/contents/councilStatus",
+        "confirmed": "The council explicitly describes its autonomous legislative status and ordinance-enactment function, alongside decision-making, representation and executive oversight. This supports the catalogue legislative bar; it does not certify every special-Act delegation."
+      }
+    }
+  ],
+  "authority_evidence": "reports/discovery/2026-10-23-authority-completion.json",
+  "map_evidence": "Natural Earth Admin1 KR-26, KR-44, KR-45; source-year and generalized navigation limits retained",
+  "all_metadata_and_streams_certified": false,
+  "playback_retry": "Chungnam first WebKit seek initially stalled (zero decoded frames); a normal repeat with longer wait advanced. Original failure retained in initial report; successful retry retained separately."
+}

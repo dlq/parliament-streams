@@ -1,0 +1,62 @@
+{
+  "method": "Normal source viewer navigation through committed response, inspected rendered video state across visible player frames. No TLS/challenge bypass; awaiting page commitment avoids equating a DOMContentLoaded timeout with no playable video.",
+  "results": [
+    {
+      "key": "seoul-webkit-diagnostic",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=86981ceff73e4733ab4057d4cb8857f0afba8aacf2bd76ca31b81cafd232da83f647be764543a764&pos=244&code=C010&th=12&session=339&order=1",
+      "engine": "webkit",
+      "offset": 244,
+      "requests": [],
+      "errors": [],
+      "status": 200,
+      "title": "영상보기 팝업창",
+      "videos": [],
+      "screenshot": "/tmp/seoul-webkit-diagnostic.png",
+      "error": "TimeoutError: page.screenshot: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n"
+    },
+    {
+      "key": "daejeon-chromium-diagnostic",
+      "url": "http://webcast.daejeon.go.kr/caster/player/vodplayer.xdo?uid=2904&startPS=1802",
+      "engine": "chromium",
+      "offset": 1802,
+      "requests": [
+        {
+          "url": "http://webcast.daejeon.go.kr/css/font.css",
+          "status": 404
+        },
+        {
+          "url": "http://webcast.daejeon.go.kr/css/font.css",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "errors": [],
+      "status": 200,
+      "title": "대전광역시의회 인터넷방송 - 제299회 [정례회] 제1차 본회의",
+      "videos": [
+        {
+          "frame_url": "http://webcast.daejeon.go.kr/caster/player/vodplayer.xdo?uid=2904&startPS=1802",
+          "first": {
+            "time": 1802,
+            "width": 0,
+            "ready": 0,
+            "duration": null,
+            "frames": 0,
+            "error": null,
+            "source": "http://webcast.daejeon.go.kr/mp4//2026/%EC%A0%9C299%ED%9A%8C%20%ED%8E%B8%EC%A7%91%EB%B3%B8/260901%20%EB%B3%B8%ED%9A%8C%EC%9D%98%201%EC%B0%A8%20%ED%8E%B8%EC%A7%91%EB%B3%B8.mp4"
+          },
+          "later": {
+            "time": 1802,
+            "width": 0,
+            "ready": 0,
+            "duration": null,
+            "frames": 0,
+            "error": null,
+            "source": "http://webcast.daejeon.go.kr/mp4//2026/%EC%A0%9C299%ED%9A%8C%20%ED%8E%B8%EC%A7%91%EB%B3%B8/260901%20%EB%B3%B8%ED%9A%8C%EC%9D%98%201%EC%B0%A8%20%ED%8E%B8%EC%A7%91%EB%B3%B8.mp4"
+          },
+          "advancing": false
+        }
+      ],
+      "screenshot": "/tmp/daejeon-chromium-diagnostic.png"
+    }
+  ]
+}

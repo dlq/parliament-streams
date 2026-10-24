@@ -1,0 +1,513 @@
+{
+  "reviewed_on": "2026-10-24",
+  "method": "Further targeted searches across all 26 gaps; individually read public government, external-host and tourism pages; normal Chromium directory selection; bounded government-PDF extraction. Web-reader content, search-only leads, normal-browser access blocks, scope mismatches and confirmed government institutional references remain distinct. No access workaround or outreach.",
+  "starting_unresolved_routes": 26,
+  "new_confirmed_government_institutional_references": 3,
+  "remaining_unresolved_routes": 23,
+  "remaining_by_country": {
+    "Philippines": 21,
+    "Panama": 1,
+    "Sri Lanka": 1
+  },
+  "new_viewing_services": 0,
+  "catalogue_sources_unchanged": 243,
+  "records": [
+    {
+      "body_id": "panama--ngabe-bugle-comarca",
+      "country": "Panama",
+      "institution": "Congreso General Comarca Ngäbe–Buglé",
+      "reviewed_on": "2026-10-24",
+      "outcome": "historical_reference_and_unverified_external_site",
+      "finding": "Ministry reporting explicitly identifies the extraordinary Congress at Pueblo Nuevo on 13 November 2022 and links a ministry video. This is historical government reporting, not a designated full proceedings service. NgobeBugle.org cites Wikipedia and describes the XI Congress of 2011; its current Congress ownership is not corroborated. The ministry assessment exceeds the increased 25MB local limit and remains unread.",
+      "evidence_urls": [
+        "https://www.mingob.gob.pa/ministro-tejada-participa-en-el-congreso-general-extraordinario-de-la-comarca-ngabe-bugle/",
+        "https://ngobebugle.org/congreso-general"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--abra",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Abra",
+      "reviewed_on": "2026-10-24",
+      "outcome": "access_and_ownership_hold",
+      "finding": "The recorded provincial domain remains inaccessible to the web reader, with prior TLS failures preserved. Targeted board searches return national-government resolution/member reports and a social-page mirror, without a newly corroborated owned legislature route. Do not confuse the provincial board with an election canvassing board.",
+      "evidence_urls": [
+        "https://www.abra.gov.ph/",
+        "https://pia.gov.ph/news/abra-declared-insurgency-free-province/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--antique",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Antique",
+      "reviewed_on": "2026-10-24",
+      "outcome": "portal_discovery_access_hold",
+      "finding": "A May 2026 news report describes an official ordinances/resolutions portal under the province Legislative menu. The primary province root returns 403 in the web reader. The specific portal URL and current public content cannot be confirmed from the accessible evidence; news reporting is a lead, not primary ownership or video validation.",
+      "evidence_urls": [
+        "https://www.panaynews.net/antique-launches-online-portal-for-ordinances-resolutions/",
+        "https://antique.gov.ph/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--basilan",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Basilan",
+      "reviewed_on": "2026-10-24",
+      "outcome": "access_and_institutional_scope_hold",
+      "finding": "The recorded provincial root is inaccessible to the web reader. New national-government search results include an electoral canvassing board and provincial training/solar projects; these do not identify a legislature-owned route or proceedings provider.",
+      "evidence_urls": [
+        "https://www.basilan.gov.ph/",
+        "https://pia.gov.ph/news/basilan-completes-provincial-canvassing-of-generally-peaceful-orderly-polls/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--capiz",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Capiz",
+      "reviewed_on": "2026-10-24",
+      "outcome": "confirmed_shared_government_legislative_route",
+      "finding": "The provincial root links its government-officials, directory and citizen-charter pages. These identify the provincial board, presiding vice-governor and secretary; the charter designates a board-services PDF. This confirms a shared government legislative reference. The web reader returns content, while normal Chromium receives 403; both outcomes are retained. Current full membership, document contents and a video provider are not certified.",
+      "evidence_urls": [
+        "https://capiz.gov.ph/citizens-charter/",
+        "https://capiz.gov.ph/government-officials/",
+        "https://capiz.gov.ph/provincial-directory/"
+      ],
+      "confirmed_institutional_reference_url": "https://capiz.gov.ph/citizens-charter/",
+      "confirmed_reference_scope": "Shared provincial-government legislative services index with explicitly designated board document; not a standalone owned media service.",
+      "owned_or_exact_institutional_route_still_unresolved": false,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Establish current official media-provider designation, exact service identity and substantive recordings; retain language/accessibility/reuse follow-up.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--catanduanes",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Catanduanes",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_access_and_media_designation_hold",
+      "finding": "The exact provincial root returns 403. The education-division index still provides a board education-committee invitation lead, not a board-owned site. Municipal Viga/San Andres and tourism services are not substituted for the provincial legislature.",
+      "evidence_urls": [
+        "https://provinceofcatanduanes.gov.ph/",
+        "https://catanduanes.deped.gov.ph/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--davao-de-oro",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Davao de Oro",
+      "reviewed_on": "2026-10-24",
+      "outcome": "shared_government_without_specific_board_route",
+      "finding": "The current provincial home and department index open, but the department list is executive and contains template/demo links. Do not follow those as parliamentary routes. The 2025 inauguration/election pages and older budget ordinance remain dated board references; a current legislature section/provider is not established.",
+      "evidence_urls": [
+        "https://davaodeoro.gov.ph/",
+        "https://davaodeoro.gov.ph/executive/",
+        "https://fdpp.davaodeoro.gov.ph/images/2025_PBO/AB_CY2025_GF.pdf"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--davao-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Davao del Norte",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_navigation_timeout",
+      "finding": "A national planning-office page and government procurement notice corroborate the provincial domain. Its root times out in the web reader. A 2025 citizen-charter PDF remains a document lead; the earlier CDA chronology conflicts are not used to certify a current sitting.",
+      "evidence_urls": [
+        "https://www.davaodelnorte.gov.ph/",
+        "https://dro11.depdev.gov.ph/davao-region/davao-del-norte/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--guimaras",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Guimaras",
+      "reviewed_on": "2026-10-24",
+      "outcome": "current_primary_route_404",
+      "finding": "Both the previously recorded ordinance route and the current provincial root return 404 in the web reader. Indexed official news about the eleventh board and historical newsletters remain references, without a newly confirmed current legislative route.",
+      "evidence_urls": [
+        "https://guimaras.gov.ph/",
+        "https://guimaras.gov.ph/news-updates/page/2/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--ifugao",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Ifugao",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_access_hold",
+      "finding": "The primary province root returns 403. The previously read organizational chart establishes structure, while new government reporting refers to a 2026 board resolution. Neither establishes an accessible current legislature-owned site, complete roster or viewing provider.",
+      "evidence_urls": [
+        "https://ifugao.gov.ph/",
+        "https://pia.gov.ph/news/ifugao-attains-state-of-stable-internal-peace-security/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--kalinga",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Kalinga",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_access_hold",
+      "finding": "The primary province root returns 403. National-government reporting names Resolution 2026-203; the previously blocked GAD-code PDF remains a document lead. An owned legislature route and video provider remain unresolved.",
+      "evidence_urls": [
+        "https://kalingaprovince.gov.ph/",
+        "https://pia.gov.ph/news/kalinga-now-under-state-of-stable-internal-peace-and-security/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--laguna",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Laguna",
+      "reviewed_on": "2026-10-24",
+      "outcome": "confirmed_shared_government_legislative_route",
+      "finding": "Normal rendered navigation reveals the Office of the Secretary to the Sangguniang Panlalawigan in the government directory. Selecting sp.secretariat displays the office label but no populated contact panel. This is a specific shared institutional reference, not a standalone board website or complete roster. A rendered March 2026 budget article is dated reporting, not decoded video.",
+      "evidence_urls": [
+        "https://laguna.gov.ph/directory",
+        "https://laguna.gov.ph/news/laguna-supplemental-budget-unanimously-approved-in-record-breaking-special-session"
+      ],
+      "confirmed_institutional_reference_url": "https://laguna.gov.ph/directory",
+      "confirmed_reference_scope": "Rendered provincial-government directory explicitly identifies the legislative secretariat; selected office panel has no populated contact details.",
+      "owned_or_exact_institutional_route_still_unresolved": false,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Establish current official media-provider designation, exact service identity and substantive recordings; retain language/accessibility/reuse follow-up.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--marinduque",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Marinduque",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_access_provider_ownership_hold",
+      "finding": "The primary province root returns 403. Search results also expose January 2023 and October 2022 board-session uploads. These are historical audiovisual leads only: current institution/provider designation and decoded proceedings have not been confirmed in this follow-up.",
+      "evidence_urls": [
+        "https://marinduque.gov.ph/",
+        "https://www.youtube.com/watch?v=66BXrVSNa8I",
+        "https://www.youtube.com/watch?v=Pb2BssgJ6r8"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--masbate",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Masbate",
+      "reviewed_on": "2026-10-24",
+      "outcome": "external_host_designation_hold",
+      "finding": "A vendor-hosted site claims to be the provincial website and exposes board-member and ordinance navigation. The board-member route fails in the web reader, while the ordinance page has table headings but no documents in returned content. Government designation of this vendor host is not corroborated; do not substitute Masbate City or municipal boards.",
+      "evidence_urls": [
+        "https://masbate.mycreativepanda.com/press-releases/news-and-events/",
+        "https://masbate.mycreativepanda.com/ordinances/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--misamis-occidental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Misamis Occidental",
+      "reviewed_on": "2026-10-24",
+      "outcome": "confirmed_government_legislature_page",
+      "finding": "The provincial government root explicitly links its Legislative menu to a board page describing its legislative mission and vision. This confirms an exact government-hosted institutional page. The web reader returns content, while Chromium receives 403; neither grants audiovisual reuse or validates broadcasts. The separately discovered sp.misocc.gov.ph contact lead is inaccessible.",
+      "evidence_urls": [
+        "https://misocc.gov.ph/",
+        "https://misocc.gov.ph/sanguniang-panlalawigan/",
+        "https://sp.misocc.gov.ph/contact/"
+      ],
+      "confirmed_institutional_reference_url": "https://misocc.gov.ph/sanguniang-panlalawigan/",
+      "confirmed_reference_scope": "Exact government-hosted legislature page, designated by the provincial Legislative menu; mission/vision reference, not verified full roster or video service.",
+      "owned_or_exact_institutional_route_still_unresolved": false,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Establish current official media-provider designation, exact service identity and substantive recordings; retain language/accessibility/reuse follow-up.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--negros-oriental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Negros Oriental",
+      "reviewed_on": "2026-10-24",
+      "outcome": "external_host_and_currentness_hold",
+      "finding": "Negor.website exposes a claimed provincial directory with an SP-office contact and old transparency headings. Its SP-resolution navigation times out. Ownership/designation of this alternative host is not independently corroborated, and the previously recorded government legislative subdomain DNS failure remains. No current media service is accepted.",
+      "evidence_urls": [
+        "https://negor.website/contact-us/",
+        "https://negor.website/sp-resolutions/",
+        "https://sp.negor.gov.ph/NegrosOr/Legislative/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--northern-samar",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Northern Samar",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_document_access_hold",
+      "finding": "The indexed province-hosted 2023 ordinance PDF returns 403 in the web reader. The government cooperative-project report and election-venue directory are supporting references; neither supplies a verified current public legislature route or media designation.",
+      "evidence_urls": [
+        "https://northernsamar.gov.ph/wp-content/uploads/2024/04/ord2023-18.pdf"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--romblon",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Romblon",
+      "reviewed_on": "2026-10-24",
+      "outcome": "no_correlated_provincial_legislative_route",
+      "finding": "Targeted searches return a government provincial/municipal directory, provincial social-page mirrors and many municipal councils. These are not a specific verified provincial legislature service. The prior government-statistics PDF access hold remains. No absence of broadcasts is inferred.",
+      "evidence_urls": [
+        "https://mimaropa.dilg.gov.ph/contact-us/field-office/",
+        "https://mimaropa.dilg.gov.ph/dilg-romblon/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--siquijor",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Siquijor",
+      "reviewed_on": "2026-10-24",
+      "outcome": "tourism_video_service_wrong_institution",
+      "finding": "The province-named domain identifies itself as the Provincial Tourism Office website. Its featured-videos page explicitly describes destination/tourism videos. This is useful exclusion evidence for this route, not a legislature service and not proof that provincial-board recordings do not exist.",
+      "evidence_urls": [
+        "https://siquijorprovince.com/",
+        "https://siquijorprovince.com/featured-videos/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--sulu",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Sulu",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_access_and_route_hold",
+      "finding": "The recorded provincial root is inaccessible to the web reader. Search results retain historical provincial-board, legal and university references, without a newly corroborated current owned legislative route or designated viewing provider.",
+      "evidence_urls": [
+        "https://www.sulu.gov.ph/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--tarlac",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Tarlac",
+      "reviewed_on": "2026-10-24",
+      "outcome": "historical_and_personal_routes_only",
+      "finding": "Searches distinguish the provincial board from Tarlac City and municipal councils. Gerona government reporting describes a 2021 provincial-board session; an indexed board social-page mirror and officials campaign pages are not accepted as current institution-owned media designation.",
+      "evidence_urls": [
+        "https://geronatarlac.gov.ph/sanguniang-panlalawigan-ng-tarlac/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--zambales",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zambales",
+      "reviewed_on": "2026-10-24",
+      "outcome": "primary_http_530_hold",
+      "finding": "The province root returns HTTP 530 in the web reader. Government procurement descriptions of the legislative building establish neither a board webpage nor broadcast access. Earlier DILG evidence has raw HTTP 307 versus a prose 403 finding; preserve that discrepancy rather than certifying a single response.",
+      "evidence_urls": [
+        "https://www.zambales.gov.ph/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--zamboanga-sibugay",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga Sibugay",
+      "reviewed_on": "2026-10-24",
+      "outcome": "self_described_legislative_document_system_ownership_hold",
+      "finding": "A public legislative information system identifies the province, capitol address and fourteen 2025 ordinances. Its records are promising institutional leads. Independent current government designation/ownership is not corroborated, and no audiovisual proceedings service has been validated.",
+      "evidence_urls": [
+        "https://spsibugay.net/jagger/ordinances.php"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--zamboanga-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Norte",
+      "reviewed_on": "2026-10-24",
+      "outcome": "dated_ordinance_confirmed_owned_route_unresolved",
+      "finding": "The 18,091,073-byte education-division PDF is now text-extracted within a 25MB local limit. Pages 1-2 identify the March 2026 advisory and attached 23 September 2025 board-session ordinance; pages 11-12 contain certification/approval material. OCR is noisy, including the ordinance-number rendering, and current officers are not inferred. This closes the size-only inspection gap, not the owned-site or media gap; the recorded province domain remains inaccessible.",
+      "evidence_urls": [
+        "https://zn.deped.gov.ph/files/memos/2026/DA.No.63s.2026.pdf",
+        "https://www.zanorte.gov.ph/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "philippines--zamboanga-del-sur",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Sur",
+      "reviewed_on": "2026-10-24",
+      "outcome": "self_described_legislative_document_system_ownership_hold",
+      "finding": "The public SP document system returns institution-specific ordinances and March 2025 resolutions through the web reader, with a linked social feed. Normal Chromium navigation times out. Government ownership/designation and current audiovisual proceedings remain unresolved; no social-provider or live-service confirmation is inferred.",
+      "evidence_urls": [
+        "https://www.spzambosur.com/"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    },
+    {
+      "body_id": "sri-lanka--north-central",
+      "country": "Sri Lanka",
+      "institution": "North Central Provincial Council",
+      "reviewed_on": "2026-10-24",
+      "outcome": "newer_directory_lead_website_unresolved",
+      "finding": "A government-hosted July 2025 directory search result separately lists the North Central Council Secretariat, while giving a website for North Western, not North Central. Its direct PDF fetch times out. The earlier ministry directory remains a read dated address reference. Do not substitute the executive chief-secretary office or the Central Province website.",
+      "evidence_urls": [
+        "https://secretariat.wp.gov.lk/en/wp-content/uploads/2025/09/TD-2025-Publication-2025-July-2.pdf"
+      ],
+      "confirmed_institutional_reference_url": null,
+      "confirmed_reference_scope": null,
+      "owned_or_exact_institutional_route_still_unresolved": true,
+      "official_audiovisual_service_confirmed": false,
+      "previous_evidence_report": "reports/discovery/2026-10-24-remaining-metadata-gap-dispositions.json",
+      "next_action": "Resolve the specific access, ownership, currentness or institutional-scope finding above before accepting an institutional route or media provider.",
+      "no_broadcast_absence_claim": true
+    }
+  ],
+  "raw_followup_reports": [
+    "reports/health/2026-10-24-institutional-route-rendered-followup.json",
+    "reports/health/2026-10-24-laguna-secretariat-directory.json",
+    "reports/health/2026-10-24-large-institutional-document-followup.json"
+  ]
+}

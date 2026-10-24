@@ -1,0 +1,93 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "brazil-tocantins-march",
+      "body_id": "brazil--assembleia-legislativa-do-tocantins",
+      "url": "https://www.youtube.com/watch?v=dahSAJkDwzA&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T23:03:45.636Z",
+      "status": 200,
+      "title": "165ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 10/03/2026 - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n0:09 / 0:08\n165ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 10/03/2026\nTV Aleto\n5.58k subscribers\nSubscribe\n0\nShare\nSave\n83 views  Streamed 7 months ago\n165ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 10/03/2026 \n...more\n\n",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 8.881,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 8.881,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-brazil-tocantins-march-chromium.png"
+    },
+    {
+      "key": "brazil-tocantins-march",
+      "body_id": "brazil--assembleia-legislativa-do-tocantins",
+      "url": "https://www.youtube.com/watch?v=dahSAJkDwzA&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T23:04:02.722Z",
+      "status": 200,
+      "title": "165ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 10/03/2026 - YouTube",
+      "excerpt": " CA\nSkip navigation\nSign in\n\n0:09 / 0:08\n165ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 10/03/2026\nTV Aleto\n5.58K subscribers\nSubscribe\n0\n83 views  Streamed 7mo ago\n165ª SESSÃO ORDINÁRIA DA 10ª LEGISLATURA - 10/03/2026 \nmore\n",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 8.881,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": 8.881,
+        "frames": 0,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-brazil-tocantins-march-webkit.png"
+    }
+  ]
+}

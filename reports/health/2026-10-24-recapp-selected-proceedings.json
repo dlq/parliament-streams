@@ -1,0 +1,303 @@
+{
+  "method": "Initial test limitation: date clicks did not isolate the chosen session agenda, and programmatic seeking paused this player. These observations do not establish selected-date validation or a source playback failure. Corrected date-scoped/visible-Play testing is retained separately.",
+  "results": [
+    {
+      "body_id": "switzerland--glarus",
+      "url": "https://gl.recapp.ch/",
+      "date": "21. Oktober",
+      "topic": "2026-52 Änderung des Gesetzes über das Gesundheitswesen",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T04:22:59.302Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [],
+      "outcome": "inspection_error",
+      "error": "Error: No visible substantive legislative agenda item found",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--glarus",
+      "url": "https://gl.recapp.ch/",
+      "date": "26. August",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T04:23:05.691Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [
+        "2026-53 Memorialsantrag Glarner Bienenfreunde «Anpassung des Gesetzes über die Bienenzucht zum Erhalt der gefährdeten Dunklen Biene»; Zulässig- und Erheblicherklärung",
+        "2026-52 Änderung des Gesetzes über das Gesundheitswesen",
+        "2026-54 A. Änderung der Verfassung des Kantons Glarus B. Änderung des Gesetzes über den Finanzausgleich zwischen dem Kanton und den Gemeinden C. Wirksamkeitsbericht 2026 über den Finanzausgleich zwischen dem Kanton und den Gemeinden",
+        "2022-42 Gewährung eines Rahmenkredits über 3’008’000 Franken für Beiträge an Sportanlagen gemäss Kantonalem Sportanlagenkonzept II in den Jahren 2027–2030",
+        "2026-57 Motion Fridolin Staub, Bilten «Grundsteuer»",
+        "2026-56 Motion Kommission Finanzen und Steuern «Liegenschaftssteuer auf Zweitwohnungen»",
+        "2025-73 Motion Mathias Zopfi, Engi, und Unterzeichnende «Verankerung des Vogelschutzes im Raumentwicklungs- und Baugesetz»",
+        "2026-9 Motion Martin Baumgartner, Engi, und Mitunterzeichner «Faire Vertretung der Wahlkreise des Kantons Glarus im Landrat»",
+        "2026-7 Motion FDP-Fraktion «Wärmewende ohne Ideologie – technologieoffen, planbar und wirtschaftlich»"
+      ],
+      "selected_topic": "2026-52 Änderung des Gesetzes über das Gesundheitswesen",
+      "page_title": "Zingg Samuel • Präsident | 2026-52 Änderung des Gesetzes über das Gesundheitswesen - Audiovisuelles Archiv des Landrates",
+      "current_breadcrumb": [
+        "Audiovisuelles Archiv des Landrates",
+        "SUCHEN",
+        "2026",
+        "21. Oktober",
+        "2026-29 Feststellung der Präsenz",
+        "2026-30 Traktandenliste",
+        "2026-53 Memorialsantrag Glarner Bienenfreunde «Anpassung des Gesetzes über die Bienenzucht zum Erhalt der gefährdeten Dunklen Biene»; Zulässig- und Erheblicherklärung",
+        "2026-52 Änderung des Gesetzes über das Gesundheitswesen"
+      ],
+      "segment_bounds": {
+        "start": 542.212,
+        "end": 625.202
+      },
+      "media_src": "https://recapp-prod-gl-viewer.s3.ewstorage.ch/mediaDash/6ad7542bf661afa82c7aba2f_converted_media_file_1792588164241.mp4#t=221.013,247.109",
+      "first": {
+        "time": 562.212,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 213,
+        "error": null
+      },
+      "later": {
+        "time": 562.212,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 213,
+        "error": null
+      },
+      "decoded": false,
+      "inside_selected_segment": true,
+      "outcome": "selected_segment_decode_or_boundary_unconfirmed",
+      "screenshot": "/tmp/recapp-selected-switzerland--glarus-chromium-1.png",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--jura",
+      "url": "https://ju.recapp.ch/",
+      "date": "2 septembre",
+      "topic": "9 Modification de la loi concernant la Chambre cantonale de conciliation (première lecture)",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T04:23:21.820Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [],
+      "outcome": "inspection_error",
+      "error": "Error: No visible substantive legislative agenda item found",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--jura",
+      "url": "https://ju.recapp.ch/",
+      "date": "1 juillet",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T04:23:28.534Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [
+        "6 Rapport du Gouvernement sur la politique extérieure du canton du Jura 2025",
+        "9 Modification de la loi concernant la Chambre cantonale de conciliation (première lecture)",
+        "10 Motion no 1552 Arrivée des plateformes de VTC dans le canton du Jura : garantir une concurrence loyale et le respect du droit du travail. Jelica Aubry-Janketic (PS)",
+        "11 Motion no 1553 Création d'une fonction d'infirmière cantonale. Rémy Meury (CS-POP)",
+        "12 Motion no 1555 Ouverture dominicale de certaines stations de lavage. Martin Braichet (PLR)",
+        "34 Modification de la loi sur l’exécution des peines et mesures (LEPM) (deuxième lecture)",
+        "38 Motion no 1556 Le bénévolat, une force jurassienne à reconnaître. Julien Loichat (PS)",
+        "44 Motion no 1554 Demande de révision partielle de la loi sur les communes (LCom). Suzanne Maitre-Schindelholz (PS)",
+        "8 Modification de la loi sur les droits politiques (volet I – réalisation de l’initiative « Partis politiques : place à la transparence ! ») (troisième lecture)",
+        "15 Modification de la loi sur l’exécution des peines et mesures (LEPM) (première lecture)"
+      ],
+      "selected_topic": "9 Modification de la loi concernant la Chambre cantonale de conciliation (première lecture)",
+      "page_title": "Macquat Fabrice • député | Modification de la loi concernant la Chambre cantonale de conciliation (première lecture) - Archives audiovisuelles du Parlement du canton du Jura",
+      "current_breadcrumb": [
+        "Archives audiovisuelles du Parlement du canton du Jura",
+        "RECHERCHE",
+        "2026",
+        "/",
+        "2 septembre",
+        "2 septembre",
+        "1 ",
+        "Communications"
+      ],
+      "segment_bounds": {
+        "start": 4714.706,
+        "end": 4725.337
+      },
+      "media_src": "https://recapp-prod-ju-viewer.s3.ewstorage.ch/mediaDash/6a8d3deda806c92b608299cf_converted_media_file_1788346689284.mp4#t=1.575,458.994",
+      "first": {
+        "time": 4717.36375,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 267,
+        "error": null
+      },
+      "later": {
+        "time": 4717.36375,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 267,
+        "error": null
+      },
+      "decoded": false,
+      "inside_selected_segment": true,
+      "outcome": "selected_segment_decode_or_boundary_unconfirmed",
+      "screenshot": "/tmp/recapp-selected-switzerland--jura-chromium-3.png",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--glarus",
+      "url": "https://gl.recapp.ch/",
+      "date": "21. Oktober",
+      "topic": "2026-52 Änderung des Gesetzes über das Gesundheitswesen",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T04:23:45.671Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [],
+      "outcome": "inspection_error",
+      "error": "Error: No visible substantive legislative agenda item found",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--glarus",
+      "url": "https://gl.recapp.ch/",
+      "date": "26. August",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T04:23:52.571Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [
+        "2026-53 Memorialsantrag Glarner Bienenfreunde «Anpassung des Gesetzes über die Bienenzucht zum Erhalt der gefährdeten Dunklen Biene»; Zulässig- und Erheblicherklärung",
+        "2026-52 Änderung des Gesetzes über das Gesundheitswesen",
+        "2026-54 A. Änderung der Verfassung des Kantons Glarus B. Änderung des Gesetzes über den Finanzausgleich zwischen dem Kanton und den Gemeinden C. Wirksamkeitsbericht 2026 über den Finanzausgleich zwischen dem Kanton und den Gemeinden",
+        "2022-42 Gewährung eines Rahmenkredits über 3’008’000 Franken für Beiträge an Sportanlagen gemäss Kantonalem Sportanlagenkonzept II in den Jahren 2027–2030",
+        "2026-57 Motion Fridolin Staub, Bilten «Grundsteuer»",
+        "2026-56 Motion Kommission Finanzen und Steuern «Liegenschaftssteuer auf Zweitwohnungen»",
+        "2025-73 Motion Mathias Zopfi, Engi, und Unterzeichnende «Verankerung des Vogelschutzes im Raumentwicklungs- und Baugesetz»",
+        "2026-9 Motion Martin Baumgartner, Engi, und Mitunterzeichner «Faire Vertretung der Wahlkreise des Kantons Glarus im Landrat»",
+        "2026-7 Motion FDP-Fraktion «Wärmewende ohne Ideologie – technologieoffen, planbar und wirtschaftlich»"
+      ],
+      "selected_topic": "2026-52 Änderung des Gesetzes über das Gesundheitswesen",
+      "page_title": "Zingg Samuel • Präsident | 2026-52 Änderung des Gesetzes über das Gesundheitswesen - Audiovisuelles Archiv des Landrates",
+      "current_breadcrumb": [
+        "Audiovisuelles Archiv des Landrates",
+        "SUCHEN",
+        "2026",
+        "21. Oktober",
+        "2026-29 Feststellung der Präsenz",
+        "2026-30 Traktandenliste",
+        "2026-53 Memorialsantrag Glarner Bienenfreunde «Anpassung des Gesetzes über die Bienenzucht zum Erhalt der gefährdeten Dunklen Biene»; Zulässig- und Erheblicherklärung",
+        "2026-52 Änderung des Gesetzes über das Gesundheitswesen"
+      ],
+      "segment_bounds": {
+        "start": 542.212,
+        "end": 625.202
+      },
+      "media_src": "https://recapp-prod-gl-viewer.s3.ewstorage.ch/mediaDash/6ad7542bf661afa82c7aba2f_converted_media_file_1792588164241.mp4#t=221.013,247.109",
+      "first": {
+        "time": 562.212,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 49,
+        "error": null
+      },
+      "later": {
+        "time": 562.212,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 83,
+        "error": null
+      },
+      "decoded": false,
+      "inside_selected_segment": true,
+      "outcome": "selected_segment_decode_or_boundary_unconfirmed",
+      "screenshot": "/tmp/recapp-selected-switzerland--glarus-webkit-1.png",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--jura",
+      "url": "https://ju.recapp.ch/",
+      "date": "2 septembre",
+      "topic": "9 Modification de la loi concernant la Chambre cantonale de conciliation (première lecture)",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T04:24:09.006Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [],
+      "outcome": "inspection_error",
+      "error": "Error: No visible substantive legislative agenda item found",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    },
+    {
+      "body_id": "switzerland--jura",
+      "url": "https://ju.recapp.ch/",
+      "date": "1 juillet",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T04:24:17.684Z",
+      "muted": true,
+      "status": 200,
+      "available_legislative_topics": [
+        "6 Rapport du Gouvernement sur la politique extérieure du canton du Jura 2025",
+        "9 Modification de la loi concernant la Chambre cantonale de conciliation (première lecture)",
+        "10 Motion no 1552 Arrivée des plateformes de VTC dans le canton du Jura : garantir une concurrence loyale et le respect du droit du travail. Jelica Aubry-Janketic (PS)",
+        "11 Motion no 1553 Création d'une fonction d'infirmière cantonale. Rémy Meury (CS-POP)",
+        "12 Motion no 1555 Ouverture dominicale de certaines stations de lavage. Martin Braichet (PLR)",
+        "34 Modification de la loi sur l’exécution des peines et mesures (LEPM) (deuxième lecture)",
+        "38 Motion no 1556 Le bénévolat, une force jurassienne à reconnaître. Julien Loichat (PS)",
+        "44 Motion no 1554 Demande de révision partielle de la loi sur les communes (LCom). Suzanne Maitre-Schindelholz (PS)",
+        "8 Modification de la loi sur les droits politiques (volet I – réalisation de l’initiative « Partis politiques : place à la transparence ! ») (troisième lecture)",
+        "15 Modification de la loi sur l’exécution des peines et mesures (LEPM) (première lecture)"
+      ],
+      "selected_topic": "9 Modification de la loi concernant la Chambre cantonale de conciliation (première lecture)",
+      "page_title": "Macquat Fabrice • député | Modification de la loi concernant la Chambre cantonale de conciliation (première lecture) - Archives audiovisuelles du Parlement du canton du Jura",
+      "current_breadcrumb": [
+        "Archives audiovisuelles du Parlement du canton du Jura",
+        "RECHERCHE",
+        "2026",
+        "/",
+        "2 septembre",
+        "2 septembre",
+        "1 ",
+        "Communications"
+      ],
+      "segment_bounds": {
+        "start": 4714.706,
+        "end": 4725.337
+      },
+      "media_src": "https://recapp-prod-ju-viewer.s3.ewstorage.ch/mediaDash/6a8d3deda806c92b608299cf_converted_media_file_1788346689284.mp4#t=1.575,458.994",
+      "first": {
+        "time": 4717.36375,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 262,
+        "error": null
+      },
+      "later": {
+        "time": 4717.36375,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 405,
+        "error": null
+      },
+      "decoded": false,
+      "inside_selected_segment": true,
+      "outcome": "selected_segment_decode_or_boundary_unconfirmed",
+      "screenshot": "/tmp/recapp-selected-switzerland--jura-webkit-3.png",
+      "date_attribution_verified": false,
+      "test_scope_limitation": "Agenda selection was not scoped to the chosen date; seeking paused playback. Do not use this as a service failure or correct-date recording validation."
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "method": "Normally rendered linked legal/copyright pages, two independent hosts at a time, no TLS/challenge/rate-limit bypass. Filtered paragraphs are evidence for manual scope review, not automatic permission.",
+  "results": [
+    {
+      "body_id": "germany--hesse",
+      "url": "https://hessischer-landtag.de/impressum",
+      "status": 200,
+      "final_url": "https://hessischer-landtag.de/impressum",
+      "title": "Impressum | Hessischer Landtag",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "Haben Sie Anregungen, Fragen oder ist Ihnen ein Fehler oder verwaister Link aufgefallen?"
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Impressum identifies publisher but supplies no blanket audiovisual grant. Two specific2022 uploads display CreativeCommonsAttribution and link to YouTube’s licence help; this does not license every recording or settle the historical licence version."
+    },
+    {
+      "body_id": "germany--brandenburg",
+      "url": "https://www.landtag.brandenburg.de/de/impressum/24219",
+      "status": 200,
+      "final_url": "https://www.landtag.brandenburg.de/de/impressum/24219",
+      "title": "Impressum - Landtag Brandenburg",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "Urheberrechtliche Hinweise",
+        "Nutzungsbedingungen für digitales Bildmaterial des Landtages Brandenburg",
+        "Nutzungsbedingungen für das Videomaterial (Livestream und Mediathek) des Landtages Brandenburg",
+        "Bitte beachten Sie außerdem das geltende Urheberrecht bei der Veröffentlichung von Beiträgen. Auf den einzelnen Social-Media-Kanälen gelten darüber hinaus jeweils die Nutzungsbedingungen von Facebook/Instagram, X und Google/YouTube.",
+        "Wir nutzen Cookie auf unserer Website. Einige dieser Cookies sind systemrelevant, andere helfen uns bei der Optimierung unserer Website und Ihres Website-Erlebnisses. Da wir Ihre Privatsphäre respektieren, bitten wir Sie um die Einwilligung zur Nutzung von Cookies. In unserer Datenschutzerklärung kann diese Einwilligung später jederzeit widerrufen bzw. geändert werden. Dort erhalten Sie auch weitere Informationen zu den verwendeten Cookies. Bitte beachten Sie, dass bei der Nichtannahme von Cookies die Funktionalität unserer Website eingeschränkt sein kann."
+      ],
+      "links": [
+        {
+          "text": "CC",
+          "url": "http://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Specific video policy separately reviewed: political reporting, political/educational and noncommercial private uses permitted under source attribution/watermark, integrity, alteration and third-party-rights conditions. Commercial advertising excluded; some editing/overlays require written consent. Conditional grant, not unrestricted use."
+    },
+    {
+      "body_id": "germany--landtag-mecklenburg-vorpommern",
+      "url": "https://www.landtag-mv.de/impressum",
+      "status": 200,
+      "final_url": "https://www.landtag-mv.de/impressum",
+      "title": "Impressum - Landtag Mecklenburg-Vorpommern",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "Alle im Internetangebot des Landtages Mecklenburg-Vorpommern veröffentlichten Bilder, Dokumente usw. unterliegen dem Copyright des Landtages Mecklenburg-Vorpommern. Ein Download oder Ausdruck dieser Veröffentlichungen ist ausschließlich für den persönlichen Gebrauch gestattet. Alle darüber hinaus gehenden Verwendungen, insbesondere die kommerzielle Nutzung und Verbreitung, sind grundsätzlich nicht gestattet und bedürfen der schriftlichen Genehmigung des Landtages Mecklenburg-Vorpommern.",
+        "Der Landtag Mecklenburg-Vorpommern übernimmt keine Verantwortung für die Inhalte von externen Webseiten, die mit der Webseite des Landtages Mecklenburg-Vorpommern verknüpft sind. Der Landtag Mecklenburg-Vorpommern hat keinen Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Webseiten. Das Setzen von externen Links bedeutet nicht, dass sich der Landtag Mecklenburg-Vorpommern die hinter dem Verweis oder Link liegenden Inhalte zu eigen macht. Sobald der Landtag Mecklenburg-Vorpommern Kenntnis von Rechtsverstößen durch externe Links erlangt, werden diese externen Links sofort gelöscht.",
+        "Diese Website nutzt Cookies und vergleichbare Funktionen zur Verarbeitung von Endgeräteinformationen und personenbezogenen Daten. Die Verarbeitung dient der Einbindung von Inhalten, externen Diensten und Elementen Dritter, der statistischen Analyse/Messung, der personalisierten Werbung sowie der Einbindung sozialer Medien. Je nach Funktion werden dabei Daten an Dritte weitergegeben und an Dritte in Ländern, in denen kein angemessenes Datenschutzniveau vorliegt und von diesen verarbeitet wird, z. B. die USA. Ihre Einwilligung ist stets freiwillig, für die Nutzung unserer Website nicht erforderlich und kann jederzeit auf unserer Seite abgelehnt oder widerrufen werden."
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Published material protected; personal download/printing allowed, broader use/distribution including commercial use requires written permission. No blanket third-party video reuse grant."
+    },
+    {
+      "body_id": "germany--landtag-niedersachsen",
+      "url": "https://www.landtag-niedersachsen.de/impressum/",
+      "status": 200,
+      "final_url": "https://www.landtag-niedersachsen.de/impressum/",
+      "title": "Impressum | Landtag Niedersachsen",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "Im Impressum finden Sie die gesetzlich vorgeschriebenen Informationen zu den Herausgebern dieser Website und der Social-Media-Kanäle des Niedersächsischen Landtages. Sie finden außerdem Hinweise zum Urheberrecht sowie zum Haftungsausschuss für fremde Inhalte. Darüber hinaus informieren wir Sie über die Nutzungsbedingungen für diese Website.",
+        "Link zum Kontaktformular",
+        "Der Niedersächsische Landtag ist gemäß § 7 Abs. 1 Telemediengesetz (TMG) für eigene Inhalte auf seinen Seiten nach den allgemeinen Gesetzen verantwortlich. Das Internetangebot des Niedersächsischen Landtages enthält aber auch Links zu externen Webseiten, also zu fremden Inhalten. Zum Zeitpunkt der Linksetzung waren ausdrücklich keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten Seiten hat der Niedersächsische Landtag keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten auf diesen verlinkten Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcher Informationen entstehen, ist gemäß der §§ 8 und 9 TMG nicht der Niedersächsische Landtag, sondern der jeweilige Anbieter oder Betreiber verantwortlich. Es haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.",
+        "Die auf den Internetseiten des Niedersächsischen Landtages verwendeten Texte, Bilder, Grafiken, Ton-, Video- oder Animationsdateien sind urheberrechtlich geschützt. Sie dürfen im Rahmen der Sozialen Netzwerke und zum privaten Gebrauch geteilt, gepostet und weiterverbreitet werden. Die Präsidentin des Niedersächsischen Landtages besitzt das Verwertungsrecht. Eine anderweitige Vervielfältigung oder Verwendung ist nur nach vorheriger Genehmigung des Landtages bzw. des Urhebers gestattet.",
+        "Für die Verwendung von Bildern aus dem Bildarchiv Pressefotos gelten diese Nutzungsbedingungen.",
+        "Für Plenar-TV gelten die dort veröffentlichten Nutzungsbedingungen.",
+        "Drucksachen und Plenarprotokolle des Niedersächsischen Landtags genießen als amtliche Werke im Sinne des § 5 Abs. 2 Urheberrechtsgesetz (UrhG) keinen urheberrechtlichen Schutz, d. h. die Dokumente dürfen abgespeichert und an anderen Stellen, auch im Internet, veröffentlicht werden. Sie unterliegen jedoch dem Änderungsverbot gemäß § 62 Abs. 1 bis 3 UrhG und dem Gebot der Quellenangabe gemäß § 63 Abs. 1 und 2 UrhG."
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Generic site sharing/private-use allowances do not override specific PlenarTV policy: comprehensive rights described for speakers’ own contributions with attribution. No general third-party PlenarTV redistribution grant established."
+    },
+    {
+      "body_id": "germany--sachsischer-landtag",
+      "url": "https://www.landtag.sachsen.de/de/impressum.cshtml",
+      "status": 200,
+      "final_url": "https://www.landtag.sachsen.de/de/impressum.cshtml",
+      "title": "Impressum | Der Sächsische Landtag",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "Das Angebot des Sächsischen Landtages enthält Links zu externen Internetseiten Dritter, auf deren Inhalt der Landtag keinen Einfluss hat und die er sich ausdrücklich nicht zu eigen macht. Dies gilt ausdrücklich auch für die Internetseiten der im Sächsischen Landtag vertretenen Fraktionen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf möglich Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zu diesem Zeitpunkt nicht erkennbar. Eine nachträgliche Veränderung der verlinkten Internetseiten schließt die Möglichkeit ein, dass rechtswidrige oder strafbare Inhalte ohne Wissen des Sächsischen Landtages eingebracht werden. Bei Bekanntwerden der Rechtsverletzungen werden derartige Links umgehend entfernt.",
+        "Urheberrechtliche Hinweise",
+        "Alle im Internetangebot des Sächsischen Landtags verwendeten Inhalte sind urheberrechtlich geschützt. Sofern zur Verwendung von im Internetangebot veröffentlichten Inhalten spezielle Nutzungsbedingungen festgelegt sind, gelten diese vorrangig. Im Übrigen ist ein Download oder Ausdruck von Inhalten ausschließlich für den persönlichen Gebrauch gestattet. Alle darüberhinausgehenden Verwendungen, insbesondere die kommerzielle Nutzung und Verbreitung, sind nicht gestattet und bedürfen der schriftlichen Genehmigung des Sächsischen Landtags. Dieser wird ggf. auch Kontakt zum jeweiligen Urheber oder Nutzungsberechtigten der Inhalte herstellen.",
+        "Diese Seite nutzt Website Tracking-Technologien von Dritten, um ihre Dienste anzubieten, stetig zu verbessern und Werbung entsprechend der Interessen der Nutzer anzuzeigen. Ich bin damit einverstanden und kann meine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen oder ändern."
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Protected site content; personal downloads/printing only unless specific conditions apply; broader distribution/commercial use requires written permission."
+    },
+    {
+      "body_id": "germany--thuringer-landtag",
+      "url": "https://www.thueringer-landtag.de/impressum/",
+      "status": 200,
+      "final_url": "https://www.thueringer-landtag.de/impressum/",
+      "title": "Impressum | Thüringer Landtag",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "URHEBERRECHT UND KENNZEICHNUNGSPFLICHT",
+        "Die auf den Internetseiten des Thüringer Landtags verwendeten Inhalte, Beiträge, Grafiken und Bilder sind urheberrechtlich geschützt. Sie dürfen im Rahmen der Sozialen Netzwerke und zum privaten Gebrauch geteilt, gepostet und weiterverbreitet werden. Der Präsident des Thüringer Landtags besitzt das Verwertungsrecht.",
+        "Sofern zur Verwendung von veröffentlichten Inhalten spezielle Nutzungsbedingungen festgelegt sind, gelten diese vorrangig. Im Übrigen sind Ausdrucke und Downloads nur zum persönlichen Gebrauch gestattet. Jegliche darüber hinausgehende Verwendung, insbesondere die kommerzielle Nutzung und Verbreitung, bedarf der schriftlichen Einwilligung, d.h. der vorherigen Zustimmung des Präsidenten des Thüringer Landtags bzw. des Urhebers.",
+        "Drucksachen und Plenarprotokolle des Thüringer Landtags genießen als amtliche Werke im Sinne von § 5 Abs. 2 Urheberrechtsgesetz (UrhG) keinen urheberrechtlichen Schutz. Sie unterliegen jedoch dem Änderungsverbot gemäß § 62 Abs. 1 bis 3 UrhG und dem Gebot der Quellenangabe gemäß § 63 Abs. 1 und 2 UrhG. Der Thüringer Landtag von übernimmt keine Gewähr für das Nichtbestehen eventueller Rechte Dritter.",
+        "Das Internetangebot des Thüringer Landtags enthält aber auch Links zu externen Webseiten, also zu fremden Inhalten. Auf diese Inhalte hat der Landtag keinen Einfluss und macht sie sich ausdrücklich nicht zu eigen. Für die Inhalte dieser Internetseiten ist gemäß der §§ 8 und 9 TMG nicht der Landtag, sondern der jeweilige Anbieter oder Betreiber verantwortlich. Der Landtag übernimmt dafür keine Haftung.",
+        "Bei der erstmaligen Verknüpfung mit fremden Internetangeboten werden diese gründlich auf mögliche Rechtsverstöße überprüft. Durch eine nachträgliche Veränderung der verlinkten Internetseiten ist es allerdings möglich, dass rechtswidrige oder strafbare Inhalte ohne Wissen des Landtags eingebracht werden. Eine ständige Kontrolle der externen Links ohne konkrete Hinweise auf Rechtsverstöße ist leider nicht möglich. Nach § 7 Abs. 2 TMG ist der Landtag auch nicht verpflichtet, die von ihm übermittelten oder gespeicherten fremden Informationen zu überwachen oder nach Umständen zu suchen, die auf eine rechtswidrige Tätigkeit hinweisen. Bei Bekanntwerden von Rechtsverletzungen auf diesen Internetseiten wird die Verknüpfung jedoch unverzüglich entfernt. Die Verpflichtung zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleibt von der Nichtverantwortlichkeit des Landtags unberührt.",
+        "Das Internetangebot des Thüringer Landtags enthält aber auch Links zu externen Webseiten, also zu fremden Inhalten. Auf diese Inhalte hat der Landtag keinen Einfluss und macht sie sich ausdrücklich nicht zu eigen. Für die Inhalte dieser Internetseiten ist gemäß der §§ 8 und 9 TMG nicht der Landtag, sondern der jeweilige Anbieter oder Betreiber verantwortlich. Der Landtag übernimmt dafür keine Haftung.",
+        "Bei der erstmaligen Verknüpfung mit fremden Internetangeboten werden diese gründlich auf mögliche Rechtsverstöße überprüft. Durch eine nachträgliche Veränderung der verlinkten Internetseiten ist es allerdings möglich, dass rechtswidrige oder strafbare Inhalte ohne Wissen des Landtags eingebracht werden. Eine ständige Kontrolle der externen Links ohne konkrete Hinweise auf Rechtsverstöße ist leider nicht möglich. Nach § 7 Abs. 2 TMG ist der Landtag auch nicht verpflichtet, die von ihm übermittelten oder gespeicherten fremden Informationen zu überwachen oder nach Umständen zu suchen, die auf eine rechtswidrige Tätigkeit hinweisen. Bei Bekanntwerden von Rechtsverletzungen auf diesen Internetseiten wird die Verknüpfung jedoch unverzüglich entfernt. Die Verpflichtung zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleibt von der Nichtverantwortlichkeit des Landtags unberührt.",
+        "Der Thüringer Landtag übernimmt keine Verantwortung für die Inhalte von externen Internetseiten, auf die auf seinen Internetseiten verlinkt worden ist."
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Social/private sharing allowed within conditions; broader use requires written permission unless specific conditions apply. Printed official papers/protocol exceptions do not automatically license video."
+    },
+    {
+      "body_id": "italy--consiglio-della-provincia-autonoma-di-bolzano",
+      "url": "https://www.landtag-bz.org/de/impressum",
+      "status": 200,
+      "final_url": "https://www.landtag-bz.org/de/impressum",
+      "title": "Autonome Provinz Bozen - Südtirol",
+      "access_limited": false,
+      "relevant_paragraphs": [],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "HTTP200 but captured legal page remains a Loading shell with publisher contact information; actual substantive reuse notice not established. Do not treat200 as a reviewed licence."
+    },
+    {
+      "body_id": "italy--consiglio-regionale-della-campania",
+      "url": "https://www.cr.campania.it/note-legali",
+      "status": 200,
+      "final_url": "https://www.cr.campania.it/note-legali",
+      "title": "Note Legali | Consiglio regionale della Campania",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "La visualizzazione, il download e qualunque utilizzo dei dati pubblicati sul presente Sito comporta accettazione delle presenti note legali e delle condizioni della licenza con cui sono pubblicati. Salvo ove diversamente indicato, i dati pubblicati sul presente sito sono messi a disposizione con licenza CC-BY 4.0, il cui testo integrale è disponibile al seguente indirizzo: https://creativecommons.org/licenses/by/4.0/it/legalcode.",
+        "Questo significa che, ove non diversamente specificato, i contenuti di questo sito sono liberamente distribuibili e riutilizzabili, a patto che sia sempre citata la fonte e – ove possibile - riportato l'indirizzo web della pagina originale.",
+        "Nei social media, ognuno è responsabile dei contenuti che pubblica e delle opinioni che esprime. Non saranno, comunque, tollerati insulti, volgarità, offese, minacce e, in generale, atteggiamenti violenti o diffamatori. L’interesse degli argomenti rispetto alle attività del Consiglio è un requisito essenziale: non è possibile in alcun modo utilizzare questi spazi per scopi diversi da quelli istituzionali. Non sarà tollerata alcuna forma di pubblicità, spam o promozione di interessi privati o di attività illegali e non sono ammessi contenuti che violino il diritto d’autore, né l’utilizzo non autorizzato di marchi registrati.",
+        "In ogni caso - ove il social media lo permetta - saranno rimossi dallo staff tutti i post, i commenti o i materiali audio/video che presentano un linguaggio non appropriato, minaccioso, violento, volgare o irrispettoso, che presentano contenuti illeciti, offensivi, osceni, ingannevoli, allarmisti, discriminatori, che promuovono o sostengono attività illegali, che violano il copyright."
+      ],
+      "links": [
+        {
+          "text": "https://creativecommons.org/licenses/by/4.0/it/legalcode",
+          "url": "https://creativecommons.org/licenses/by/4.0/it/legalcode"
+        }
+      ],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Website data/contents defaultCCBY4.0 unless otherwise noted, requiring attribution and originalURL where possible. Applicability to each externally hosted audiovisual recording remains to be checked; site licence alone is not blanket provider permission."
+    },
+    {
+      "body_id": "japan--fukushima",
+      "url": "https://www.pref.fukushima.lg.jp/site/gikai/sonota-tyosaku.html",
+      "status": 200,
+      "final_url": "https://www.pref.fukushima.lg.jp/site/gikai/sonota-tyosaku.html",
+      "title": "著作権、免責事項 - 福島県ホームページ",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "　「福島県議会ホームページ」に掲載されている個々の情報(文章、写真、イラストなど)は、著作権の対象となっています。また、「福島県議会ホームページ」全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。",
+        "　「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容を改変することもできません。",
+        "　「福島県議会ホームページ」に掲載されている情報の正確さには万全を期していますが、福島県議会は利用者が当ホームページの情報を用いて行う一切の行為について、いかなる責任も負いません。",
+        "　また、いかなる場合でも福島県は、利用者が「福島県議会ホームページ」にアクセスしたために被った損害、損失に対して一切の責任を負いません。",
+        "※2 ブラウザでCookie（クッキー）が使用できる設定になっていない、または、ブラウザがCookie（クッキー）に対応していない場合はご利用頂けません。",
+        "Copyright © 2014 Fukushima Prefecture.All Rights Reserved."
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Assembly website information is copyrighted; private copying/statutory quotation exceptions do not give general permission to reproduce/modify material. No blanket session-video grant."
+    },
+    {
+      "body_id": "spain--parlamento-de-canarias",
+      "url": "https://www.parcan.es/aviso/",
+      "status": 200,
+      "final_url": "https://www.parcan.es/aviso/",
+      "title": "Aviso Legal - Parlamento de Canarias",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "La información que se ofrece en este sitio está sujeta a una cláusula de exención de responsabilidad, a un aviso de Copyright y a las normas aplicables a la protección de datos personales.",
+        "contiene en algunas ocasiones enlaces con páginas externas sobre las que los servicios del Parlamento de Canarias no tiene control alguno y respecto de las cuales declinan toda responsabilidad;",
+        "© Parlamento de Canarias. Reproducción autorizada siempre que se cite la fuente, salvo que se indique lo contrario. En aquellos casos en que sea necesaria una autorización previa para la reproducción o el uso de datos textuales o multimedia (sonidos, imágenes, programas, etc.), dicha autorización cancelará la autorización general antes citada y mencionará claramente las posibles restricciones de uso.",
+        "Esta web utiliza cookies propias y de terceros para ofrecerle una mejor experiencia y servicio. De cumplimiento con la legislación vigente, es necesario que acepte o rechace explícitamente estas cookies. Para más información consulte nuestra Política de cookies."
+      ],
+      "links": [
+        {
+          "text": "aviso de Copyright",
+          "url": "https://european-union.europa.eu/legal-notice_es"
+        }
+      ],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "General reproduction permission with source attribution unless otherwise indicated; specifically restricted textual/multimedia material may require prior authorization overriding the general notice. Recording-specific applicability remains open."
+    },
+    {
+      "body_id": "spain--parlamento-de-cantabria",
+      "url": "https://parlamento-cantabria.es/informacion-general/terminos-y-condiciones-legales",
+      "status": 200,
+      "final_url": "https://parlamento-cantabria.es/informacion-general/terminos-y-condiciones-legales",
+      "title": "Términos y condiciones legales | Parlamento de Cantabria",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "De conformidad con lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (en adelante, “LOPD”), se informa que todos los datos personales que el Usuario facilite a través de este Sitio Web serán incorporados y tratados en los ficheros titularidad de Parlamento de Cantabria para las siguientes finalidades: posibilitar la prestación de los servicios solicitados por el Usuario, atender sus solicitudes, así como mantenerle informado, incluso por medios electrónicos, sobre los servicios del Parlamento de Cantabria. Si no desea recibir este tipo de comunicaciones puede comunicárnoslo enviando un correo electrónico a info@parlamento-cantabria.es.",
+        "La cumplimentación de todos los datos solicitados a través del Sitio Web es necesaria para lograr una óptima prestación de los servicios puestos a disposición del Usuario. De no facilitarse todos los datos, no se garantiza que la información y servicios facilitados puedan prestarse, se presten correctamente o se ajusten a las necesidades del Usuario.",
+        "Los menores de 14 años no deben facilitar sus datos personales al Parlamento de Cantabria sin el previo consentimiento de sus padres o tutores. Por favor, si eres menor pide antes a tus padres o tutores que se pongan en contacto con nosotros.",
+        "Antes de facilitar en el Sitio Web datos personales relativos a terceras personas, el Usuario deberá obtener su previo y expreso consentimiento, habiéndoles informado de los términos contenidos en esta Política de privacidad. El Usuario se obliga a mantener indemne al Parlamento de Cantabria ante cualquier posible reclamación, multa, pena o sanción que pueda venir obligada a soportar como consecuencia del incumplimiento por parte del Usuario del deber descrito en este párrafo.",
+        "Las cookies son un conjunto de datos que un servidor deposita en el navegador del Usuario y que puede solicitar posteriormente para reconocerle a lo largo de una serie de visitas. Esto es, se trata de un pequeño archivo de texto que queda almacenado en la memoria caché del equipo o en el disco duro del ordenador y que servirá para identificar al Usuario cuando se conecte nuevamente a esa página web. Su objetivo es registrar la visita del usuario y guardar cierta información. Según la duración de las cookies, las cookies más comunes y generalizadas son las cookies de sesión y las cookies permanentes. Las cookies de sesión son temporales y permiten una navegación continúa al Usuario con relación a una página web; suelen almacenarse en la memoria caché del equipo y el propio Usuario puede, mediante la configuración de su navegador, eliminarlas. Las cookies permanentes se almacenan en el disco duro del equipo del Usuario de forma permanente para seguir la navegación del Usuario; el Usuario también puede configurarlas mediante su navegador.",
+        "Esta web utiliza cookies de terceros y propias para optimizar el servicio, no recaba ni cede datos de carácter personal de los usuarios sin su conocimiento. Conforme a lo dispuesto en el artículo 22.2 de la Ley 34/2002 , de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, pedimos su permiso para obtener datos estadísticos de su navegación por el sitio web"
+      ],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Reviewed page is primarily personal-data/cookie/privacy provisions; no independent audiovisual grant established from it."
+    },
+    {
+      "body_id": "taiwan--kinmen",
+      "url": "https://www.kmcc.gov.tw/8983/8990/33036/",
+      "status": 200,
+      "final_url": "https://www.kmcc.gov.tw/8983/8990/33036/",
+      "title": "金門縣議會全球資訊網 - 著作權聲明",
+      "access_limited": false,
+      "relevant_paragraphs": [
+        "一、金門縣議會全球資訊網站上刊載之所有內容，除著作權法規定不得為著作權之標的（如法律、命令、公務員撰擬之講稿、新聞稿等…請參考著作權法第9條規定）外，其他包括文字敘述、攝影、圖片、錄音、影像及其他資訊，均受著作權法保護。",
+        "二、上述不得為著作權標的者，任何人均得自由利用，歡迎各界廣為利用。",
+        "三、本會網站資訊內容受著作權法保護者，除有合理使用情形外，應取得該著作財產權人同意或授權後，方得利用。",
+        "1.本網站上所刊載以本會名義公開發表之著作，即著作人為本會者，在合理範圍內，得重製、公開播送或公開傳輸，利用時，並請註明出處。",
+        "4.其他合理使用情形，請參考著作權法第四十四條至第六十五條之規定。",
+        "五、除了合於著作權法第八十條之一非移除或變更權利管理電子資訊， 否則無法合法利用著作；或者因為錄製或傳輸系統轉換時，技術上必須要移除或變更的情況之外，本會網站所標示之權利管理電子資訊，未經許可，不得移除或變更。",
+        "六、連結至本會網站：一般而言，任何網站連結至本會網站，毋須經過本會同意，然而連結須明白標示本會名稱，若是連結會誤導使用者，本會將不允許此連結行為。",
+        "七、本會網站之相關連結：為供網路使用者便利，本會網站僅提供相關網站之連結，對利用人涉及該網站內容之使用行為，本會不負責任。",
+        "八、免責聲明：本會網站所提供相關連結網站之網頁或資料，均為被連結網站所提供，相關權利為該等網站或合法權利人所有，本會不擔保其正確性、即時性或完整性。"
+      ],
+      "links": [
+        {
+          "text": "著作權聲明",
+          "url": "https://www.kmcc.gov.tw/8983/8990/33036/"
+        }
+      ],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Copyright notice generally permits clearly labelled nonmisleading incoming links without consent. Protected audiovisual reuse remains conditional; sampled provider descriptions explicitly reserve reproduction/editing/public transmission without permission. Linking permission is distinct from video permission."
+    },
+    {
+      "body_id": "united-states--mississippi",
+      "url": "https://www.legislature.ms.gov/terms-and-conditions/",
+      "status": 200,
+      "final_url": "https://www.legislature.ms.gov/terms-and-conditions/",
+      "title": "Terms and Conditions | MISSISSIPPI LEGISLATURE",
+      "access_limited": false,
+      "relevant_paragraphs": [],
+      "links": [],
+      "outcome": "scoped_notice_review_with_limits",
+      "manual_assessment": "Terms page renders example-page/LoremIpsum template content. It does not establish substantive audiovisual permission; document as a source-policy gap."
+    },
+    {
+      "body_id": "spain--parlamento-de-la-rioja",
+      "url": "https://www.parlamento-larioja.org/aviso-legal",
+      "error": "TimeoutError: page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.parlamento-larioja.org/aviso-legal\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "outcome": "policy_access_unresolved",
+      "manual_assessment": "Linked legal page inspection timed out. Retain access/review gap; no inference that terms or a licence are absent."
+    }
+  ],
+  "specific_video_policy_followups": [
+    {
+      "body_id": "germany--brandenburg",
+      "url": "https://www.landtag.brandenburg.de/de/impressum/nutzungsbedingungen_fuer_das_videomaterial_(livestream_und_mediathek)_des_landtages_brandenburg/24902",
+      "method": "Read linked primary video policy",
+      "assessment": "Specific video policy separately reviewed: political reporting, political/educational and noncommercial private uses permitted under source attribution/watermark, integrity, alteration and third-party-rights conditions. Commercial advertising excluded; some editing/overlays require written consent. Conditional grant, not unrestricted use."
+    },
+    {
+      "body_id": "germany--landtag-niedersachsen",
+      "url": "https://www.landtag-niedersachsen.de/plenar-tv-nutzungsbedingungen/",
+      "method": "Read linked primary PlenarTV policy",
+      "assessment": "Generic site sharing/private-use allowances do not override specific PlenarTV policy: comprehensive rights described for speakers’ own contributions with attribution. No general third-party PlenarTV redistribution grant established."
+    }
+  ]
+}

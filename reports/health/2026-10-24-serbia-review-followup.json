@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-24T04:48:45.282025+00:00",
+  "scope": "Selected official archived proceedings and exact institutional publication review; not live/all-room certification.",
+  "results": [
+    {
+      "id": "serbia-national-assembly-recordings",
+      "status": "ok",
+      "note": "The official National Assembly archive explicitly designates Videonet, whose plenary index links the selected MP4 archives. Two samples decode in Chromium and WebKit: the 31 August 2026 voting-day recording shows the presiding officer at the branded parliamentary dais with a lit microphone; a part of the 28 August recording shows Marina Mijatović speaking at a lit seat microphone with her source caption. Chairing context is not described as a separately identified speech. These are selected archived proceedings, not a validated current-live channel or complete sitting inventory.",
+      "unresolved": [
+        "current_live_committee_and_full_room_inventory_unverified",
+        "audible_quality_and_all_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_unestablished",
+        "selected_MP4_parts_do_not_certify_complete_sitting_coverage",
+        "optional_flag_unverified_neutral_legislature_mark_used"
+      ]
+    }
+  ]
+}

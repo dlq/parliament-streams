@@ -1,0 +1,609 @@
+{
+  "research_date": "2026-10-23",
+  "own_provider_routes_checked": 14,
+  "selected_recording_checks": 44,
+  "distinct_recording_captures_visually_reviewed": 22,
+  "exact_items_with_claims": 2,
+  "item_lookup_hold": "Wikidata public search API returnedHTTP429 on SanAndres search; stopped immediately, no entity fetches or alternate endpoint retries afterward. Search labels are retained as candidates, not verified full claims.",
+  "records": [
+    {
+      "body_id": "colombia--caldas",
+      "institution": "Asamblea Departamental de Caldas",
+      "official_url": "https://www.asambleadecaldas.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "@AsambleadeCaldas",
+          "url": "https://www.youtube.com/@AsambleadeCaldas"
+        }
+      ],
+      "exact_item": "Q21708048",
+      "item_search_candidates": [],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=hdgCfvULVc4&t=1200s",
+          "offset": 1200,
+          "decision": "identified_proceedings_date_conflict",
+          "observation": "Juanita Espeleta Noreña, territorial development official, at chamber microphone; upload says22October2026 while on-screen clock says21October2026. Exact meeting date unreconciled.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ktFTDc_OwsE&t=1200s",
+          "offset": 1200,
+          "decision": "identified_proceedings",
+          "observation": "Juan Martín Dussán López, metropolitan-area director, speaking at chamber microphone, dated21October2026 on-screen.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "provider_title_vs_onscreen_session_date_or_type_conflict"
+      ],
+      "publication": "published_official_institutional_link",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--bolivar",
+      "institution": "Asamblea Departamental de Bolívar",
+      "official_url": "https://www.asambleadebolivar.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "Instagram",
+          "url": "https://www.youtube.com/channel/UCNLpqfETyT8BalKL44N65EA"
+        },
+        {
+          "text": "Youtube",
+          "url": "https://www.youtube.com/channel/UCNLpqfETyT8BalKL44N65EA"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092559",
+          "label": "asamblea departamental de Bolívar",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092559"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=dW-953uTTTo&t=8782s",
+          "offset": 8782,
+          "decision": "identified_legislative_presentation",
+          "observation": "Eighth ordinary sitting: sport/recreation programme presentation slides with speaker inset and assembly branding; separate from earlier logo animation.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EppHOBZMw9s&t=15880s",
+          "offset": 15880,
+          "decision": "identified_proceedings",
+          "observation": "Seventh ordinary sitting: member speaking into desk microphone under assembly branding, after earlier logo animation.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--boyaca",
+      "institution": "Asamblea Departamental de Boyacá",
+      "official_url": "https://asamblea-boyaca.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "@asambleadeboyacacomunica",
+          "url": "https://www.youtube.com/channel/UCBgaf3NwdU_Uvf9qVuNMr9g"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092546",
+          "label": "asamblea departamental de Boyacá",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092546"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=DGQ0v8YTkzk&t=5000s",
+          "offset": 5000,
+          "decision": "standby_not_business",
+          "observation": "Development Plan committee title, but selected5000second frame still says En instantes estaremos en vivo. Earlier7118second frame showed standing members; substantive committee business remains unconfirmed.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Yqi-deIjL6s&t=6500s",
+          "offset": 6500,
+          "decision": "identified_proceedings",
+          "observation": "20October2026 plenary: members at desk microphones, Juan Camilo Morales Rodríguez with raised hand and Jairo Pacheco Suárez named. Earlier near-empty chamber sample not counted.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "second_substantive_recording_unconfirmed_standby_or_recess"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--casanare",
+      "institution": "Asamblea Departamental de Casanare",
+      "official_url": "https://asamblea-casanare.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "@Youtube",
+          "url": "https://www.youtube.com/channel/UCFvURYe-n9Yy_9-1WaCdaVw"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092547",
+          "label": "asamblea departamental de Casanare",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092547"
+        },
+        {
+          "id": "Q140193840",
+          "label": "Asamblea Departamental de Casanare",
+          "description": "Legislatura departamental en Colombia",
+          "url": "//www.wikidata.org/wiki/Q140193840"
+        }
+      ],
+      "selected_recorded_scope": [],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "two_ambiguous_wikidata_item_candidates_not_resolved",
+        "substantive_recorded_business_not_established_in_previous_selected_samples"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--cesar",
+      "institution": "Asamblea Departamental de Cesar",
+      "official_url": "https://asambleacesar.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UC8K3MXXFwiIIqYTCjbT1QNw/live"
+        },
+        {
+          "text": "PLENARIA\n22 de octubre de 2026\n8va Sesión Ordinaria 22/10/2026 | 3er Periodo de Sesiones Ordinarias de 2026\nOctava Sesión Ordinari",
+          "url": "https://www.youtube.com/watch?v=asJe0WHQu_Q"
+        },
+        {
+          "text": "PLENARIA\n22 de octubre de 2026\n9na Sesión Ordinaria 23/10/2026 | 3er Periodo de Sesiones Ordinarias de 2026\nNovena Sesión Ordinari",
+          "url": "https://www.youtube.com/watch?v=GELhfWu1C8Q"
+        },
+        {
+          "text": "COMISIÓN\n22 de octubre de 2026\nSesión de Comisión 21/10/2026 | 3er Periodo de Sesiones Ordinarias de 2026 - 2\nSesión de Comisión d",
+          "url": "https://www.youtube.com/watch?v=UKABgNJp5hw"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UC8K3MXXFwiIIqYTCjbT1QNw"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q21564847",
+          "label": "asamblea departamental de Cesar",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q21564847"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=asJe0WHQu_Q&t=1016s",
+          "offset": 1016,
+          "decision": "identified_proceedings",
+          "observation": "Eighth ordinary sitting22October2026, Miguel Antonio Hinojosa Barros speaking at lit desk microphone under named deputy placard.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UKABgNJp5hw&t=844s",
+          "offset": 844,
+          "decision": "identified_committee_proceedings",
+          "observation": "21October2026 committee: members discussing at chamber table microphones, institutional wall identity. Separate from plenary.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--guaviare",
+      "institution": "Asamblea Departamental de Guaviare",
+      "official_url": "https://www.asamblea-guaviare.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "Asamblea Departamental del Guaviare",
+          "url": "https://www.youtube.com/channel/UC35ZyZcbbK9Hi-meGuJNMYw"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092595",
+          "label": "asamblea departamental de Guaviare",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092595"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=T39jiZCGRHk&t=1200s",
+          "offset": 1200,
+          "decision": "identified_proceedings",
+          "observation": "22October2026 ordinary sitting, members at chamber desks with microphones, assembly branding and ordinary-session description.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oliaSjKCMhY&t=1200s",
+          "offset": 1200,
+          "decision": "identified_opening_sitting",
+          "observation": "21October2026 installation of third ordinary session period, chair/member at microphones; session opening context retained rather than called a second ordinary debate.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--la-guajira",
+      "institution": "Asamblea Departamental de La Guajira",
+      "official_url": "https://www.asamblea-laguajira.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCcLuXA4O9s8A3YcEWKVXwAQ"
+        },
+        {
+          "text": "@Youtube",
+          "url": "https://www.youtube.com/channel/UCcLuXA4O9s8A3YcEWKVXwAQ?view_as=subscriber"
+        }
+      ],
+      "exact_item": "Q5707807",
+      "item_search_candidates": [
+        {
+          "id": "Q5707807",
+          "label": "asamblea departamental de La Guajira",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q5707807"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=BoS1xtwmjfs&t=428s",
+          "offset": 428,
+          "decision": "historical_closing_address_only",
+          "observation": "2020 ordinary-period closing address by president Oriana at assembly microphone. Not a current full-session service confirmation.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "selected_archives_historical_current_service_unconfirmed",
+        "second_substantive_recording_not_established"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--magdalena",
+      "institution": "Asamblea Departamental de Magdalena",
+      "official_url": "https://www.asamblea-magdalena.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "",
+          "url": "https://youtube.com/@asambleadelmagdalena?si=iAV6WhAHqUiyCuCl"
+        },
+        {
+          "text": "@AsambleadelMagdalena",
+          "url": "https://youtube.com/@asambleadelmagdalena?si=iAV6WhAHqUiyCuCl"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092552",
+          "label": "asamblea departamental de Magdalena",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092552"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=guZiKoI8WmU&t=1141s",
+          "offset": 1141,
+          "decision": "identified_committee_proceedings",
+          "observation": "Bolívar Bicentennial commission21October2026, José Madera Lastre speaking at microphone; commission subject, not the separate Department of Bolívar assembly.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zw1Gyvho6ko&t=1200s",
+          "offset": 1200,
+          "decision": "identified_proceedings",
+          "observation": "20October2026 ordinary sitting, deputy Linda Luz Cabarcas Suárez speaking at microphone with named assembly caption.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--meta",
+      "institution": "Asamblea Departamental de Meta",
+      "official_url": "https://www.asamblea-meta.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "@Youtube",
+          "url": "https://www.youtube.com/channel/UCv5qIFMxQIXuHZlfDWPCR7w"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092583",
+          "label": "asamblea departamental de Meta",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092583"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=PodIwlfOefA&t=1200s",
+          "offset": 1200,
+          "decision": "historical_ordinary_sitting_context",
+          "observation": "Provider title identifies ordinary sitting27October2020; masked speaker at assembly lectern/Zoom relay. Specific agenda topic and current service remain unconfirmed.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "selected_archives_historical_current_service_unconfirmed",
+        "second_substantive_recording_not_established"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--narino",
+      "institution": "Asamblea Departamental de Nariño",
+      "official_url": "https://asambleanarino.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "Youtube",
+          "url": "https://www.youtube.com/channel/UCG5mwHiKr_CWwr_Aoas64pQ"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092555",
+          "label": "asamblea departamental de Nariño",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092555"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=qILfLVdy7X4&t=2000s",
+          "offset": 2000,
+          "decision": "identified_proceedings",
+          "observation": "Later2000second sample: member speaking at desk microphone under ordinary-session22October2026 caption; earlier1200second social-media screen share was not a speaker sample.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G6ziKe6OPdc&t=1200s",
+          "offset": 1200,
+          "decision": "identified_proceedings_date_and_type_conflict",
+          "observation": "Member/chair microphones and assembly flags; title says ordinary20October2026 while on-screen caption says extraordinary21October2026. Do not reconcile by assumption.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "provider_title_vs_onscreen_session_date_or_type_conflict"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--quindio",
+      "institution": "Asamblea Departamental de Quindío",
+      "official_url": "https://www.asamblea-quindio.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "Asamblea Departamental Del Quindío",
+          "url": "https://www.youtube.com/@asambleadepartamentalquindio"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [
+        {
+          "id": "Q51092551",
+          "label": "asamblea departamental de Quindío",
+          "description": "departmental legislature in Colombia",
+          "url": "//www.wikidata.org/wiki/Q51092551"
+        }
+      ],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=bxHfJV6GLA8&t=1200s",
+          "offset": 1200,
+          "decision": "historical_proceedings",
+          "observation": "Named deputy Jorge Hernán Gutiérrez Arbeláez speaking at assembly microphone; provider describes legal/contracting presentation, uploaded about four years ago. No current-live inference.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mbjNxILlm80&t=1200s",
+          "offset": 1200,
+          "decision": "historical_legislative_presentation",
+          "observation": "50th ordinary sitting2021, description4November2021: remote deputy tiles and Family Secretariat2022 goals/projects table. These2022 plans do not date the sitting to2022.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "selected_archives_historical_current_service_unconfirmed"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--san-andres-providencia-y-santa-catalina",
+      "institution": "Asamblea Departamental de San Andrés, Providencia y Santa Catalina",
+      "official_url": "https://www.asambleasai.gov.co/actas",
+      "own_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCH81ATQQsc93xuUS0oBDalg"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCH81ATQQsc93xuUS0oBDalg"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=OutGp8-fnv4&t=1200s",
+          "offset": 1200,
+          "decision": "historical_closing_sitting",
+          "observation": "Extraordinary-period closing sitting, chamber members at microphones and full institutional wall title, uploaded about three years ago.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=c3QkAB-WuY8&t=1000s",
+          "offset": 1000,
+          "decision": "recess_not_business",
+          "observation": "21December2022 ordinary-period closing recording still shows recess at selected1000seconds; earlier1200/1827second frames also recess. Second substantive sample remains unconfirmed.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "second_substantive_recording_unconfirmed_standby_or_recess",
+        "selected_archives_historical_current_service_unconfirmed"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--santander",
+      "institution": "Asamblea Departamental de Santander",
+      "official_url": "https://asambleadesantander.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "Youtube",
+          "url": "https://www.youtube.com/channel/UChC_fRHU1inBH0iaCiXlJFw/videos"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [],
+      "selected_recorded_scope": [],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry",
+        "selected_recordings_not_yet_substantive_business_confirmation",
+        "source_copyright_and_terms_review_required"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "colombia--tolima",
+      "institution": "Asamblea Departamental de Tolima",
+      "official_url": "https://asambleatolima.gov.co/",
+      "own_provider_designation": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/@secretariageneralsecretari-z9z"
+        },
+        {
+          "text": "Asamblea Departamental del Tolima Oficial",
+          "url": "https://www.youtube.com/@secretariageneralsecretari-z9z"
+        }
+      ],
+      "exact_item": null,
+      "item_search_candidates": [],
+      "selected_recorded_scope": [
+        {
+          "url": "https://www.youtube.com/watch?v=3evzCFyVXwo&t=1200s",
+          "offset": 1200,
+          "decision": "identified_legislative_presentation",
+          "observation": "Ordinary sitting titled22October2026, presenter at lectern with cattle slaughter-tax slides and assembly/ordinary-session caption.",
+          "decoded_in_both_engines": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6EILCyXWtTM&t=1200s",
+          "offset": 1200,
+          "decision": "identified_legislative_presentation",
+          "observation": "Ordinary sitting titled21October2026, presenter at lectern with budget-law slides and assembly/ordinary-session caption.",
+          "decoded_in_both_engines": true
+        }
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_source_wide_accessibility_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "exact_item_claim_review_pending_after_wikidata_http429_no_retry"
+      ],
+      "publication": "remain_unpublished_precise_followup",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "all_metadata_and_streams_certified": false
+}

@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. 30September2026 plenary, member reading at assembly lectern under matching dated ticker. 23September2026 plenary, separate speaker reading at branded assembly lectern under matching dated ticker. Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "indonesia-di-yogyakarta-recordings",
+    "name": "Yogyakarta Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Yogyakarta",
+    "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi DI Yogyakarta",
+    "external_ids": {
+      "wikidata_qid": "Q25463081",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q25463081",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Wikidata revision 2507461254; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "Indonesian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://jdih-dprd-diy.jogjaprov.go.id/",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 30September2026 plenary, member reading at assembly lectern under matching dated ticker. 23September2026 plenary, separate speaker reading at branded assembly lectern under matching dated ticker. Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://jdih-dprd-diy.jogjaprov.go.id/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://jdih-dprd-diy.jogjaprov.go.id/",
+        "https://youtube.com/@dprddiy?si=BNl6746wyyjigoJY"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

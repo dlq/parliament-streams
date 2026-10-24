@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 (ROC115.10.05), regular-session general questions: members and executive official exchange over community mental-health slide; west-calendar clock matchesROC date. Same5October2026 sitting, different member segment on police/fire health-check support with questioner and official in split screen. Separate segment, not another date. Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "taiwan-hsinchu-city-recordings",
+    "name": "Hsinchu City Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Hsinchu City",
+    "legislature": "新竹市議會",
+    "external_ids": {
+      "wikidata_qid": "Q11084017",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q11084017",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Wikidata revision 2434122606; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "Mandarin",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 (ROC115.10.05), regular-session general questions: members and executive official exchange over community mental-health slide; west-calendar clock matchesROC date. Same5October2026 sitting, different member segment on police/fire health-check support with questioner and official in split screen. Separate segment, not another date. Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+        "https://www.youtube.com/channel/UCnit-yB80zHt800dSTr42Vw/live"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

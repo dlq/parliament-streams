@@ -1,0 +1,99 @@
+{
+  "method": "Actual observed role=tab accessible name selected through normal browser control; previous exact-text probes did not click this control and are not source absence evidence. No hidden API, consent or access workaround.",
+  "results": [
+    {
+      "body_id": "national:Bulgaria",
+      "url": "https://www.parliament.bg/bg/video/ID/2035",
+      "checked_at": "2026-10-24T06:10:47.151Z",
+      "status": 200,
+      "accessible_control": "ВИДЕО АРХИВ ",
+      "title": "Видео - Народно събрание на Република България",
+      "final_url": "https://www.parliament.bg/bg/video/ID/2035",
+      "tab_selected": "true",
+      "media": [],
+      "links": [
+        {
+          "text": "Български",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "English",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "КОНСТИТУЦИЯ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Конституция на Република Българи, 1971, дигитализиран архив",
+          "url": "https://www.parliament.bg/bg/36"
+        },
+        {
+          "text": "НАРОДНИ ПРЕДСТАВИТЕЛИ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Архив 51-о Народно събрание",
+          "url": "https://www.parliament.bg/bg/archive/61"
+        },
+        {
+          "text": "KОМИСИИ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Аудиовизуален архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ПАРЛАМЕНТАРНА ДЕЙНОСТ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Видео архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ЗА МЕДИИТЕ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "ОПОЗНАЙ ПАРЛАМЕНТА",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Архив Народно събрание",
+          "url": "https://www.parliament.bg/bg/archive"
+        },
+        {
+          "text": "ПОЛЕЗНА ИНФОРМАЦИЯ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035"
+        },
+        {
+          "text": "Видео",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "НАЧАЛО",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "ВИДЕО АРХИВ 1",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "АРХИВ ПЛЕНАРНИ ЗАСЕДАНИЯ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        },
+        {
+          "text": "АРХИВ ЗАСЕДАНИЯ НА КОМИСИИ",
+          "url": "https://www.parliament.bg/bg/video/ID/2035#"
+        }
+      ],
+      "text_cache": "/tmp/bulgaria-visible-tab-selected.txt",
+      "screenshot": "/tmp/bulgaria-visible-tab-selected.png",
+      "outcome": "actual_accessible_archive_tab_selected_requires_content_review",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Actual archive tab is selected, with52ndNationalAssembly16October2026heading and visible No compatible source message in the official branded video player. No decoded sitting video is established."
+    }
+  ]
+}

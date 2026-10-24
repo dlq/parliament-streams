@@ -1,0 +1,202 @@
+{
+  "research_date": "2026-10-24",
+  "catalogue_id": "serbia-national-assembly-recordings",
+  "body_id": "national:Serbia",
+  "decision": "publish_scoped_official_archive_link",
+  "confirmed_scope": "The official National Assembly archive explicitly designates Videonet, whose plenary index links the selected MP4 archives. Two samples decode in Chromium and WebKit: the 31 August 2026 voting-day recording shows the presiding officer at the branded parliamentary dais with a lit microphone; a part of the 28 August recording shows Marina Mijatović speaking at a lit seat microphone with her source caption. Chairing context is not described as a separately identified speech. These are selected archived proceedings, not a validated current-live channel or complete sitting inventory.",
+  "identity_claims": {
+    "P31": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 37002670,
+              "id": "Q37002670"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q920222$BC8A9992-CD96-4278-BA15-974A2C348C03",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "hash": "5bc2178523d8c63914febc1570024609c3a9f8ce",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 2266479,
+              "id": "Q2266479"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q920222$e0ce5bcb-4adf-0851-fd5c-b7373e7b1423",
+        "rank": "normal"
+      }
+    ],
+    "P17": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P17",
+          "hash": "89615be40a48723ec29c6caa6fe077c25517abaa",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 403,
+              "id": "Q403"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q920222$6CC14114-EEF0-46ED-B9D1-02E5797859B5",
+        "rank": "normal"
+      }
+    ],
+    "P1001": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1001",
+          "hash": "e612232c38082f32610937d8c9d9545e64081b40",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 403,
+              "id": "Q403"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q920222$0BBBA788-853B-4629-9A6F-D5427A76E488",
+        "rank": "normal"
+      }
+    ],
+    "P856": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P856",
+          "hash": "0aa83fa0d26f75fbb2c5a095b81054e14dfb0d26",
+          "datavalue": {
+            "value": "http://www.parlament.gov.rs/",
+            "type": "string"
+          },
+          "datatype": "url"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P407": [
+            {
+              "snaktype": "value",
+              "property": "P407",
+              "hash": "5e6142b270e00e9c160691e4e3c1e5a6ae510c50",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 2839566,
+                  "id": "Q2839566"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            {
+              "snaktype": "value",
+              "property": "P407",
+              "hash": "3ac65ea2842129be26801ca316a37281bc5f5e93",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 9299,
+                  "id": "Q9299"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            {
+              "snaktype": "value",
+              "property": "P407",
+              "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1860,
+                  "id": "Q1860"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P407"
+        ],
+        "id": "Q920222$6D1926DA-E799-46C8-943B-B8462846F11A",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 328,
+                      "id": "Q328"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "identity_revision": 2551326415,
+  "identity_report": "reports/discovery/2026-10-24-sitelink-parameter-diagnostic.json",
+  "ipu_primary": "https://data.ipu.org/parliament/RS/RS-LC01/",
+  "provider_navigation_reports": [
+    "reports/health/2026-10-24-serbia-official-archive-navigation.json",
+    "reports/health/2026-10-24-serbia-designated-provider.json",
+    "reports/health/2026-10-24-serbia-archive-contents.json"
+  ],
+  "playback_report": "reports/health/2026-10-24-serbia-selected-playback.json",
+  "source_conditions": "The reviewed primary parliamentary/provider navigation establishes public viewing, not a blanket independent audiovisual reuse grant. Personal-use permission remains pending; link to the official archive rather than rehosting, extracting a live channel or exporting these large event recordings to IPTV.",
+  "remaining_gates": [
+    "current_live_committee_and_full_room_inventory_unverified",
+    "audible_quality_and_all_tracks_unverified",
+    "source_wide_captions_sign_variants_audio_description_unknown",
+    "independent_audiovisual_reuse_unestablished",
+    "selected_MP4_parts_do_not_certify_complete_sitting_coverage",
+    "optional_flag_unverified_neutral_legislature_mark_used"
+  ],
+  "all_metadata_and_streams_certified": false
+}

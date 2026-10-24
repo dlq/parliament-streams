@@ -1,0 +1,956 @@
+{
+  "research_date": "2026-10-23",
+  "scope": "All50 institutional-route gaps carried into this continuation; five scoped references identified,45 remain unresolved.",
+  "method": "Targeted individual-name searches, bounded known province-root retrievals and selective exact primary-page follow-through. Search observations are discovery, not official-provider or proceedings validation. Some archive-navigation work still remains internal research.",
+  "checks_complete_for_this_selected_route_pass": true,
+  "comprehensive_metadata_and_stream_validation_complete": false,
+  "records": [
+    {
+      "id": "indonesia--papua-pegunungan",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Papua Pegunungan",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://papuapegunungan.go.id/",
+        "finding": "Targeted exact DPR/secretariat search did not establish an owned current institutional/media route; MRP, executive and national-representative material remain distinct."
+      }
+    },
+    {
+      "id": "indonesia--sulawesi-tenggara",
+      "country": "Indonesia",
+      "institution": "Dewan Perwakilan Rakyat Daerah Provinsi Sulawesi Tenggara",
+      "official_url": "https://simdata.sultraprov.go.id/tabel_opd/Sekretariat%20DPRD",
+      "route_disposition": "scoped_reference_identified",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "individual_primary_review": {
+        "id": "indonesia--sulawesi-tenggara",
+        "previous_value": null,
+        "url": "https://simdata.sultraprov.go.id/tabel_opd/Sekretariat%20DPRD",
+        "scope": "provincial_public_data_portal_legislative_secretariat_collection",
+        "primary_identity_evidence_url": "https://simdata.sultraprov.go.id/tabel_opd/Sekretariat%20DPRD",
+        "research_date": "2026-10-23",
+        "review_method": "individual_primary_exact_office_profile_review",
+        "limitation": "The government SIMDATA page explicitly identifies Sekretariat DPRD and lists legislative faction membership for2024-2029 and the regional legislation programme. HTTP200; not the own legislature homepage or playback."
+      },
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "panama--embera-wounaan-comarca",
+      "country": "Panama",
+      "institution": "Congreso General Comarca Emberá Wounaan",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": null,
+        "finding": "Exact congress search returns statutory/customary authority evidence and secondary news. No current congress-owned provider designated. Do not substitute cultural congresses, separate collective-lands bodies, historical campaign blogs or private encyclopaedic profiles."
+      }
+    },
+    {
+      "id": "panama--guna-madungandi",
+      "country": "Panama",
+      "institution": "Congreso General Comarca Guna Madungandí",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": null,
+        "finding": "Exact congress search returns statutory/customary authority evidence and secondary news. No current congress-owned provider designated. Do not substitute cultural congresses, separate collective-lands bodies, historical campaign blogs or private encyclopaedic profiles."
+      }
+    },
+    {
+      "id": "panama--guna-wargandi",
+      "country": "Panama",
+      "institution": "Congreso General Comarca Guna Wargandi",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": null,
+        "finding": "Exact congress search returns statutory/customary authority evidence and secondary news. No current congress-owned provider designated. Do not substitute cultural congresses, separate collective-lands bodies, historical campaign blogs or private encyclopaedic profiles."
+      }
+    },
+    {
+      "id": "panama--ngabe-bugle-comarca",
+      "country": "Panama",
+      "institution": "Congreso General Comarca Ngäbe–Buglé",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": null,
+        "finding": "Exact congress search returns statutory/customary authority evidence and secondary news. No current congress-owned provider designated. Do not substitute cultural congresses, separate collective-lands bodies, historical campaign blogs or private encyclopaedic profiles."
+      }
+    },
+    {
+      "id": "philippines--abra",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Abra",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://abra.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--antique",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Antique",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://antique.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://www.panaynews.net/antique-launches-online-portal-for-ordinances-resolutions/",
+        "finding": "Secondary report dated11May2026 says own provincial site Legislative > Ordinances and Resolutions; direct provincial homepage403. Exact current route not followed through; secondary report alone is not own-service certification."
+      }
+    },
+    {
+      "id": "philippines--apayao",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Apayao",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.apayao.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://apayao.gov.ph/news/f0rx1acinnmgjmi1tvsz9kgn",
+        "finding": "Current primary account confirms an ordinary provincial-board session and enacted measures; still no exact legislative home/provider route. The www province hostname failed DNS; bare province root retrieved normally."
+      }
+    },
+    {
+      "id": "philippines--basilan",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Basilan",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.basilan.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 404: Not Found",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--batanes",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Batanes",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://batanes.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://naro.law.upd.edu.ph/agencies/office-of-the-sangguniang-panlalawigan--basco%2C-batanes?page=7",
+        "finding": "University-hosted national administrative-rule register identifies the exact issuing provincial office; this is not the office-owned website or proceedings provider."
+      }
+    },
+    {
+      "id": "philippines--camarines-sur",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Camarines Sur",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://camarinessur.gov.ph/",
+          "outcome": "exact_legislative_navigation_found_requires_review",
+          "error": null,
+          "legislative_navigation": [
+            {
+              "text": "Citizen's Charter",
+              "url": "https://camarinessur.gov.ph/transparency/citizens-charter"
+            },
+            {
+              "text": "Citizen's Charter",
+              "url": "https://camarinessur.gov.ph/transparency/citizens-charter"
+            },
+            {
+              "text": "ARTA Compliance \n                                 RA 11032 Anti-Red Tape",
+              "url": "https://camarinessur.gov.ph/transparency/citizens-charter"
+            }
+          ]
+        },
+        {
+          "url": "https://www.camsur.com/",
+          "outcome": "exact_legislative_navigation_found_requires_review",
+          "error": null,
+          "legislative_navigation": [
+            {
+              "text": "Citizen's Charter",
+              "url": "https://www.camsur.com/transparency/citizens-charter"
+            },
+            {
+              "text": "Citizen's Charter",
+              "url": "https://www.camsur.com/transparency/citizens-charter"
+            },
+            {
+              "text": "ARTA Compliance \n                                 RA 11032 Anti-Red Tape",
+              "url": "https://www.camsur.com/transparency/citizens-charter"
+            }
+          ]
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://www.camsur.com/transparency/citizens-charter",
+        "finding": "The own provincial charter page says handbook/certificate not available. National Senate/House footer links are not the provincial board; no route accepted."
+      }
+    },
+    {
+      "id": "philippines--capiz",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Capiz",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://capiz.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://capiz.gov.ph/citizens-charter/",
+        "finding": "Charter collection index identified; direct403. No exact SP document profile retrieved; the generic executive collection is not automatically accepted."
+      }
+    },
+    {
+      "id": "philippines--catanduanes",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Catanduanes",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://catanduanes.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--davao-de-oro",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Davao de Oro",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.davaodeoro.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--davao-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Davao del Norte",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.davaodelnorte.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error timed out>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--guimaras",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Guimaras",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://guimaras.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 404: Not Found",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--ifugao",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Ifugao",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.ifugao.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://spifugao.com/home",
+        "finding": "Specific private-domain legislative site has current indexed session descriptions, but independent governmental designation remains uncorroborated. Normal TLS access previously failed; do not ignore certificate checks."
+      }
+    },
+    {
+      "id": "philippines--kalinga",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Kalinga",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.kalinga.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--laguna",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Laguna",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--lanao-del-sur",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Lanao del Sur",
+      "official_url": "https://lanaodelsur.gov.ph/contact-us/",
+      "route_disposition": "scoped_reference_identified",
+      "starting_root_observations": [
+        {
+          "url": "https://www.lanaodelsur.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "individual_primary_review": {
+        "id": "philippines--lanao-del-sur",
+        "previous_value": null,
+        "url": "https://lanaodelsur.gov.ph/contact-us/",
+        "scope": "government_directory_legislative_office_contact",
+        "primary_identity_evidence_url": "https://lanaodelsur.gov.ph/contact-us/",
+        "research_date": "2026-10-23",
+        "review_method": "individual_primary_exact_office_profile_review",
+        "limitation": "Government directory explicitly identifies Sangguniang Panlalawigan Office. Primary web reader retrieves full directory; direct urllib TLS handshake failed. Exact office contact reference, not full legislative site/media."
+      },
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--leyte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Leyte",
+      "official_url": "https://leyteprovince.gov.ph/wp-content/uploads/2026/04/CITIZENS-CHARTER-Leyte-2nd-Edition.pdf",
+      "route_disposition": "scoped_reference_identified",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "individual_primary_review": {
+        "id": "philippines--leyte",
+        "previous_value": null,
+        "url": "https://leyteprovince.gov.ph/wp-content/uploads/2026/04/CITIZENS-CHARTER-Leyte-2nd-Edition.pdf",
+        "scope": "government_charter_legislative_office_profile_indexed_access_hold",
+        "primary_identity_evidence_url": "https://leyteprovince.gov.ph/wp-content/uploads/2026/04/CITIZENS-CHARTER-Leyte-2nd-Edition.pdf",
+        "research_date": "2026-10-23",
+        "review_method": "individual_primary_exact_office_profile_review",
+        "limitation": "Government-published charter explicitly describes Sangguniang Panlalawigan office and records/secretariat services, printedp52; direct current retrieval403. Indexed scoped reference, not a healthy viewing service or Southern Leyte."
+      },
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--maguindanao-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Maguindanao del Norte",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://maguindanaodelnorte.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--maguindanao-del-sur",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Maguindanao del Sur",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://maguindanaodelsur.gov.ph/",
+          "outcome": "exact_legislative_navigation_found_requires_review",
+          "error": null,
+          "legislative_navigation": [
+            {
+              "text": "Citizen's Charter",
+              "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+            },
+            {
+              "text": "Citizen's Charter",
+              "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+            },
+            {
+              "text": "",
+              "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+            }
+          ]
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--marinduque",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Marinduque",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.marinduque.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://marinduque.gov.ph/wp-content/uploads/2022/04/Updated-2022-Citizens-Charter-of-PGM-Word-Document.pdf",
+        "finding": "Dated2022 charter identifies legislative-secretariat functions (printedp31); later government news confirms activity. Historical document evidence retained without treating it as a current legislature homepage."
+      }
+    },
+    {
+      "id": "philippines--masbate",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Masbate",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://masbate.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--misamis-occidental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Misamis Occidental",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://misocc.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://sp.misocc.gov.ph/",
+        "finding": "Exact SP government subdomain found in secondary discovery, but current requests fail DNS and a primary institutional page was not retrieved. Do not treat secondary links as ownership confirmation."
+      }
+    },
+    {
+      "id": "philippines--misamis-oriental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Misamis Oriental",
+      "official_url": "https://www.misamisoriental.gov.ph/wp-content/uploads/CitizensCharter/Citizens%20Charter%202024.pdf",
+      "route_disposition": "scoped_reference_identified",
+      "starting_root_observations": [
+        {
+          "url": "https://www.misamisoriental.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "individual_primary_review": {
+        "id": "philippines--misamis-oriental",
+        "previous_value": null,
+        "url": "https://www.misamisoriental.gov.ph/wp-content/uploads/CitizensCharter/Citizens%20Charter%202024.pdf",
+        "scope": "government_charter_legislative_office_service_profile",
+        "primary_identity_evidence_url": "https://www.misamisoriental.gov.ph/wp-content/uploads/CitizensCharter/Citizens%20Charter%202024.pdf",
+        "research_date": "2026-10-23",
+        "review_method": "individual_primary_exact_office_profile_review",
+        "limitation": "2024 provincial charter, printedpp16-26 (physicalPDFpp26-36), describes Sangguniang Panlalawigan office, committee reports, sessions and public document provision. Primary text retrieved; PDF screenshot service failed. Dated institutional service profile, not current full membership/playback."
+      },
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--negros-oriental",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Negros Oriental",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.negor.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://sp.negor.gov.ph/NegrosOr/Legislative/",
+        "finding": "Government-domain legislative management system has indexed institutional copyright2015 text; current DNS/web-reader access fails. Retain historical legislative-system lead; current endpoint/identity completeness unresolved."
+      }
+    },
+    {
+      "id": "philippines--northern-samar",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Northern Samar",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://northernsamar.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--romblon",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Romblon",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://romblonparadise.com/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://pia.gov.ph/news/romblon-sp-starts-digitalization-with-cloud-based-system",
+        "finding": "Government news identifies a cloud legislative system rollout but does not designate the public service URL. A later news article describes broader session access; provider route still needs primary corroboration."
+      }
+    },
+    {
+      "id": "philippines--samar",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Samar",
+      "official_url": "https://samar.gov.ph/board-members-profile/",
+      "route_disposition": "scoped_reference_identified",
+      "starting_root_observations": [
+        {
+          "url": "https://samar.lgu-ph.com/",
+          "outcome": "no_exact_legislative_navigation_in_selected_root",
+          "error": null,
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "individual_primary_review": {
+        "id": "philippines--samar",
+        "previous_value": null,
+        "url": "https://samar.gov.ph/board-members-profile/",
+        "scope": "government_provincial_board_profile",
+        "primary_identity_evidence_url": "https://samar.gov.ph/board-members-profile/",
+        "research_date": "2026-10-23",
+        "review_method": "individual_primary_exact_office_profile_review",
+        "limitation": "Government directory explicitly links Board Members Profile; the page separately lists first/second provincial districts. Department-heads directory identifies Office of the Sangguniang Panlalawigan. Current membership completeness not independently reconciled; this is not Eastern Samar or Northern Samar."
+      },
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--siquijor",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Siquijor",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://siquijorprovince.com/",
+          "outcome": "no_exact_legislative_navigation_in_selected_root",
+          "error": null,
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--sulu",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Sulu",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.sulu.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.sulu.gov.ph'. (_ssl.c:1129)>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--tarlac",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Tarlac",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.tarlac.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--zambales",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zambales",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://zamb-web.wedemo.cloud/departments",
+        "finding": "A government-looking demo-host directory has an SP section, but no independent government designation was found. Old province site remains rejected for gambling content."
+      }
+    },
+    {
+      "id": "philippines--zamboanga-del-norte",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Norte",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.zanorte.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "finding": "Targeted provincial-board search and known public province/government leads remain inconclusive. Candidate campaign pages, municipal/youth bodies, executive events and document mentions do not certify the own provincial service."
+      }
+    },
+    {
+      "id": "philippines--zamboanga-del-sur",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga del Sur",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.zamboangadelsur.gov.ph",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://www.spzambosur.com/index.php",
+        "finding": "Private-domain legislative portal with institutional text and ordinance index; exact official current designation remains uncorroborated. Government news of an award ceremony in its building is not a provider designation."
+      }
+    },
+    {
+      "id": "philippines--zamboanga-sibugay",
+      "country": "Philippines",
+      "institution": "Sangguniang Panlalawigan ng Zamboanga Sibugay",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [
+        {
+          "url": "https://www.sibugayprovince.com/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 404: Not Found",
+          "legislative_navigation": []
+        },
+        {
+          "url": "https://sibugay.gov.ph/",
+          "outcome": "access_hold_not_evidence_of_no_service",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "legislative_navigation": []
+        }
+      ],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://spsibugay.net/",
+        "finding": "Private-domain legislative system remains a lead, not independently designated. Known province URL alternatives return403/404; no media claim."
+      }
+    },
+    {
+      "id": "sri-lanka--north-central",
+      "country": "Sri Lanka",
+      "institution": "North Central Provincial Council",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://secretariat.wp.gov.lk/en/wp-content/uploads/2025/06/TD-2025-Publication-1.pdf",
+        "finding": "2025 primary interprovincial directory printedp98 identifies the North Central Council Secretariat separately from Chief Secretariat; lists no council website and leaves Chairman blank. This is not proof of no current service or North Western identity."
+      }
+    },
+    {
+      "id": "suriname--brokopondo",
+      "country": "Suriname",
+      "institution": "Districtsraad Brokopondo",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--commewijne",
+      "country": "Suriname",
+      "institution": "Districtsraad Commewijne",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--coronie",
+      "country": "Suriname",
+      "institution": "Districtsraad Coronie",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--marowijne",
+      "country": "Suriname",
+      "institution": "Districtsraad Marowijne",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--nickerie",
+      "country": "Suriname",
+      "institution": "Districtsraad Nickerie",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--para",
+      "country": "Suriname",
+      "institution": "Districtsraad Para",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--paramaribo",
+      "country": "Suriname",
+      "institution": "Districtsraad Paramaribo",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--saramacca",
+      "country": "Suriname",
+      "institution": "Districtsraad Saramacca",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--sipaliwini",
+      "country": "Suriname",
+      "institution": "Districtsraad Sipaliwini",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    },
+    {
+      "id": "suriname--wanica",
+      "country": "Suriname",
+      "institution": "Districtsraad Wanica",
+      "official_url": null,
+      "route_disposition": "unresolved_after_selected_checks",
+      "starting_root_observations": [],
+      "validation_claim": "No playback, complete metadata or absence-of-service claim follows from search/root retrieval.",
+      "specific_followup": {
+        "source_url": "https://gov.sr/ministeries/ministerie-van-regionale-ontwikkeling/nieuws/10/",
+        "finding": "Targeted Districtsraad-name search and current government installation/election material distinguish the elected council from the executive commissioner. Government2025 installation notices/electoral seat records provide context; no own council viewing URL corroborated. This does not assert no broadcasts."
+      }
+    }
+  ],
+  "summary": {
+    "starting_records": 50,
+    "scoped_routes_identified": 5,
+    "remaining_gaps": 45,
+    "province_roots_attempted": 32,
+    "distinct_provincial_bodies_attempted": 30
+  }
+}

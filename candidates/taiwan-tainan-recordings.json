@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Official institution currently designates the viewing provider. Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive. Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+    "Evidence: reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "taiwan-tainan-recordings",
+    "name": "Tainan Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Tainan",
+    "legislature": "臺南市議會",
+    "external_ids": {
+      "wikidata_qid": "Q7676191",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q7676191",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Select current council Q7676191, whose 2010 inception and predecessor statements distinguish Q113493742 (1950–2010), the former prefecture council and a meeting hall. Current primary provider belongs to the post-merger council. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+      }
+    ],
+    "language": "Mandarin",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.tncc.gov.tw/",
+    "provenance_note": "Official institution currently designates the viewing provider. Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive. Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.tncc.gov.tw/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "evidence": [
+        "https://www.tncc.gov.tw/"
+      ],
+      "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+    }
+  }
+}

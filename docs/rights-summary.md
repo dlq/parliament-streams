@@ -53,10 +53,10 @@ These entries need either written clarification or a future dated terms review.
 
 ## Current Open Queue
 
-As of 2026-10-22:
+As of 2026-10-24 (local working tree):
 
-- 50 of 117 catalogue entries remain permission-pending: 18 official-vendor
-  HLS, five first-party HLS, 26 official pages and one DASH research record.
+- 172 of 243 catalogue entries remain permission-pending: 18 official-vendor
+  HLS, five first-party HLS, 148 official pages and one DASH research record.
 - The previous 28-entry review queue remains classified in the dated report;
   it is a historical subset, not the current total.
 - Later official-page additions retain source-specific terms notes in the

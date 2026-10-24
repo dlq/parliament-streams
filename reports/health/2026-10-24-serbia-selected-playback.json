@@ -1,0 +1,300 @@
+{
+  "method": "Selected MP4 URLs linked by the current institution-designated archive index; normal browser media buffering and range requests, no explicit complete-file download or rehosting. Muted 1200-second checks; advertised content lengths are not measured transferred bytes. All four captures visually reviewed; chairing context distinguished from an identified member speech.",
+  "results": [
+    {
+      "body_id": "national:Serbia",
+      "engine": "chromium",
+      "index_url": "https://www.videonet.co.rs/nsrsArhiva14Z.htm",
+      "url": "https://arhiva.videonet.co.rs/filesnsrs/zasedanja/zas2026083110.mp4",
+      "checked_at": "2026-10-24T03:36:37.159Z",
+      "offset": 1200,
+      "muted": true,
+      "first": {
+        "time": 1204.20332,
+        "duration": 11858.56,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 239,
+        "error": null
+      },
+      "later": {
+        "time": 1206.412618,
+        "duration": 11858.56,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 294,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_identified_parliamentary_chairing_context",
+      "screenshot": "/tmp/serbia-selected-chromium-0.png",
+      "media_responses": [
+        {
+          "status": 206,
+          "content_range": "bytes 0-997922356/997922357",
+          "content_length": "997922357"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 988086272-997922356/997922357",
+          "content_length": "9836085"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 0-997922356/997922357",
+          "content_length": "997922357"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100335616-997922356/997922357",
+          "content_length": "897586741"
+        }
+      ],
+      "visually_reviewed": true,
+      "visual_observation": "Presiding officer seated at the branded parliament dais with a lit red microphone. This frame identifies parliamentary chairing context, not an independently identified speech."
+    },
+    {
+      "body_id": "national:Serbia",
+      "engine": "chromium",
+      "index_url": "https://www.videonet.co.rs/nsrsArhiva14Z.htm",
+      "url": "https://arhiva.videonet.co.rs/filesnsrs/zasedanja/zas2026082810c.mp4",
+      "checked_at": "2026-10-24T03:36:52.631Z",
+      "offset": 1200,
+      "muted": true,
+      "first": {
+        "time": 1204.094203,
+        "duration": 5214.68,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 303,
+        "error": null
+      },
+      "later": {
+        "time": 1206.301655,
+        "duration": 5214.68,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 359,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_identified_member_business",
+      "screenshot": "/tmp/serbia-selected-chromium-1.png",
+      "media_responses": [
+        {
+          "status": 206,
+          "content_range": "bytes 0-436920367/436920368",
+          "content_length": "436920368"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 432537600-436920367/436920368",
+          "content_length": "4382768"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 0-436920367/436920368",
+          "content_length": "436920368"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100171776-436920367/436920368",
+          "content_length": "336748592"
+        }
+      ],
+      "visually_reviewed": true,
+      "visual_observation": "Marina Mijatović standing and speaking at a lit seat microphone in the parliament chamber, with her Cyrillic name and parliamentary group caption. This file is a part of the 28 August recording, not a complete sitting."
+    },
+    {
+      "body_id": "national:Serbia",
+      "engine": "webkit",
+      "index_url": "https://www.videonet.co.rs/nsrsArhiva14Z.htm",
+      "url": "https://arhiva.videonet.co.rs/filesnsrs/zasedanja/zas2026083110.mp4",
+      "checked_at": "2026-10-24T03:37:08.495Z",
+      "offset": 1200,
+      "muted": true,
+      "first": {
+        "time": 1204.3099822500817,
+        "duration": 11858.56,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 196,
+        "error": null
+      },
+      "later": {
+        "time": 1206.5219793327037,
+        "duration": 11858.56,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 247,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_identified_parliamentary_chairing_context",
+      "screenshot": "/tmp/serbia-selected-webkit-2.png",
+      "media_responses": [
+        {
+          "status": 206,
+          "content_range": "bytes 0-1/997922357",
+          "content_length": "2"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 0-997922356/997922357",
+          "content_length": "997922357"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 988086272-997922356/997922357",
+          "content_length": "9836085"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 992673792-997922356/997922357",
+          "content_length": "5248565"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 997916672-997922356/997922357",
+          "content_length": "5685"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 988126105-992673791/997922357",
+          "content_length": "4547687"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 992769625-997916671/997922357",
+          "content_length": "5147047"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 7840-988086271/997922357",
+          "content_length": "988078432"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100401152-988086271/997922357",
+          "content_length": "887685120"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100335616-100401151/997922357",
+          "content_length": "65536"
+        }
+      ],
+      "visually_reviewed": true,
+      "visual_observation": "Presiding officer seated at the branded parliament dais with a lit red microphone. This frame identifies parliamentary chairing context, not an independently identified speech."
+    },
+    {
+      "body_id": "national:Serbia",
+      "engine": "webkit",
+      "index_url": "https://www.videonet.co.rs/nsrsArhiva14Z.htm",
+      "url": "https://arhiva.videonet.co.rs/filesnsrs/zasedanja/zas2026082810c.mp4",
+      "checked_at": "2026-10-24T03:37:24.150Z",
+      "offset": 1200,
+      "muted": true,
+      "first": {
+        "time": 1203.9737172496868,
+        "duration": 5214.68,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 239,
+        "error": null
+      },
+      "later": {
+        "time": 1206.1801593749892,
+        "duration": 5214.68,
+        "width": 1280,
+        "height": 720,
+        "ready": 4,
+        "frames": 292,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_identified_member_business",
+      "screenshot": "/tmp/serbia-selected-webkit-3.png",
+      "media_responses": [
+        {
+          "status": 206,
+          "content_range": "bytes 0-1/436920368",
+          "content_length": "2"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 0-436920367/436920368",
+          "content_length": "436920368"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 432537600-436920367/436920368",
+          "content_length": "4382768"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 434569216-436920367/436920368",
+          "content_length": "2351152"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 436862976-436920367/436920368",
+          "content_length": "57392"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 432577433-434569215/436920368",
+          "content_length": "1991783"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 434665049-436862975/436920368",
+          "content_length": "2197927"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 7840-432537599/436920368",
+          "content_length": "432529760"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100401152-432537599/436920368",
+          "content_length": "332136448"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100139008-100204543/436920368",
+          "content_length": "65536"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100270080-100335615/436920368",
+          "content_length": "65536"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100204544-100401151/436920368",
+          "content_length": "196608"
+        },
+        {
+          "status": 206,
+          "content_range": "bytes 100496983-432537599/436920368",
+          "content_length": "332040617"
+        }
+      ],
+      "visually_reviewed": true,
+      "visual_observation": "Marina Mijatović standing and speaking at a lit seat microphone in the parliament chamber, with her Cyrillic name and parliamentary group caption. This file is a part of the 28 August recording, not a complete sitting."
+    }
+  ]
+}

@@ -1,0 +1,1023 @@
+{
+  "research_date": "2026-10-23",
+  "authority_report": "reports/discovery/2026-10-23-authority-second-pass.json",
+  "method": "Normal public official/archive/provider pages. Advancing decoded video and screenshots of actual legislative business; not decorative homepage animation or slates. Current-live, all-room, independent reuse and EPG implementation are separate gates.",
+  "added": [
+    {
+      "key": "neuquen",
+      "cid": "argentina-neuquen-legislature-webcasts",
+      "region": "Neuquén",
+      "code": "AR",
+      "name": "Neuquén Legislature Webcasts",
+      "legislature": "Honorable Legislatura de la Provincia del Neuquén",
+      "language": "Spanish",
+      "url": "https://www.youtube.com/user/prensalegislaturanqn/streams",
+      "institution_url": "https://legislaturaneuquen.gob.ar/",
+      "authority_urls": [
+        "https://www.congreso.gob.ar/constitucionSeccion4Cap2.php",
+        "https://legislaturaneuquen.gob.ar/"
+      ],
+      "authority": "Argentine provincial legislature with substantive provincial legislation under Constitution Articles121–123. Legislature identity Q41144338 matches the official provincial institution, not a municipal deliberative council.",
+      "notes": "The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed.",
+      "samples": [
+        "neuquen-oct21",
+        "neuquen-oct8"
+      ],
+      "calendar_url": "https://legislaturaneuquen.gob.ar/Agenda.aspx?mes=10&anio=2026",
+      "geometry": {
+        "iso": "AR-Q"
+      },
+      "point": [
+        -70,
+        -38.5
+      ],
+      "ledger_id": "argentina--neuquen",
+      "rights": "Institutional/provider pages establish public viewing but no independent audiovisual reuse permission was found. Retain the official link-out; provider manifest extraction, embedding and redistribution are not enabled.",
+      "terms": [
+        "https://legislaturaneuquen.gob.ar/EnVivo",
+        "https://legislaturaneuquen.gob.ar/"
+      ],
+      "level": "subnational",
+      "identity": {
+        "key": "neuquen",
+        "query": "Legislature of Neuquén",
+        "language": "en",
+        "qid": "Q41144338",
+        "revision": 2488333218,
+        "label": {
+          "language": "en",
+          "value": "legislature of Neuquen"
+        },
+        "description": {
+          "language": "en",
+          "value": "legislative body of Neuquén Province, Argentina"
+        },
+        "websites": [
+          "https://www.legislaturaneuquen.gob.ar/"
+        ],
+        "youtube_ids": []
+      },
+      "permission": "personal_use_pending_review",
+      "availability": "event_based",
+      "calendar_kind": "official_event_or_recording_index",
+      "language_basis": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed."
+    },
+    {
+      "key": "sicily",
+      "cid": "italy-sicily-assembly-video",
+      "region": "Sicily",
+      "code": "IT",
+      "name": "Sicilian Regional Assembly Video",
+      "legislature": "Assemblea Regionale Siciliana",
+      "language": "Italian",
+      "url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+      "institution_url": "https://www.ars.sicilia.it/",
+      "authority_urls": [
+        "https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-v/articolo-117",
+        "https://www.ars.sicilia.it/"
+      ],
+      "authority": "Autonomous regional legislature within Italy; regional legislative powers under the Constitution and Sicily’s special statute. Wikidata Q2707406 identifies the Assembly rather than the island/region.",
+      "notes": "The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence.",
+      "samples": [
+        "sicily-plenary-oct21-middle",
+        "sicily-plenary-oct22-middle",
+        "sicily-committee6",
+        "sicily-antimafia"
+      ],
+      "calendar_url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+      "geometry": {
+        "region_code": "IT-82"
+      },
+      "point": [
+        13.36,
+        38.1
+      ],
+      "ledger_id": "italy--assemblea-regionale-siciliana",
+      "rights": "The official archive and institution-linked provider designate public viewing. The reviewed privacy/cookie page does not establish an independent audiovisual reuse licence. Link to the archive; do not extract or independently embed the media without separate evidence.",
+      "terms": [
+        "https://www.ars.sicilia.it/privacy-cookie-policy",
+        "https://www.ars.sicilia.it/"
+      ],
+      "level": "subnational",
+      "identity": {
+        "key": "sicily",
+        "query": "Sicilian Regional Assembly",
+        "language": "en",
+        "qid": "Q2707406",
+        "revision": 2549985474,
+        "label": {
+          "language": "en",
+          "value": "Sicilian Regional Assembly"
+        },
+        "description": {
+          "language": "en",
+          "value": "Legislative organ of Sicily, Italy"
+        },
+        "websites": [
+          "https://www.ars.sicilia.it"
+        ],
+        "youtube_ids": []
+      },
+      "permission": "personal_use_pending_review",
+      "availability": "event_based",
+      "calendar_kind": "official_event_or_recording_index",
+      "language_basis": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed."
+    },
+    {
+      "key": "westvirginia",
+      "cid": "us-west-virginia-legislature-media",
+      "region": "West Virginia",
+      "code": "US",
+      "name": "West Virginia Legislature Media",
+      "legislature": "West Virginia Legislature",
+      "language": "English",
+      "url": "https://home.wvlegislature.gov/live-media/",
+      "institution_url": "https://www.wvlegislature.gov/",
+      "authority_urls": [
+        "https://www.wvlegislature.gov/WVCODE/WV_CON.cfm"
+      ],
+      "authority": "The state Constitution ArticleVI vests legislative power in the Senate and House of Delegates. This is the state legislature, not a city/county council; institutional Wikidata Q7986861 corroborates identity.",
+      "notes": "The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated.",
+      "samples": [
+        "wv-school-safety",
+        "wv-hearing"
+      ],
+      "calendar_url": "https://home.wvlegislature.gov/live-media/",
+      "geometry": {
+        "iso": "US-WV"
+      },
+      "point": [
+        -81.63,
+        38.35
+      ],
+      "ledger_id": "united-states--west-virginia",
+      "rights": "The linked Terms of Use provides public-information, accuracy and external-link disclaimers, not a blanket audiovisual reuse licence. No independent playback/redistribution permission was established. Keep official link-out.",
+      "terms": [
+        "https://www.wvlegislature.gov/termsofuse.cfm"
+      ],
+      "level": "subnational",
+      "identity": {
+        "key": "westvirginia",
+        "query": "West Virginia Legislature",
+        "language": "en",
+        "qid": "Q7986861",
+        "revision": 2384877852,
+        "label": {
+          "language": "en",
+          "value": "West Virginia Legislature"
+        },
+        "description": {
+          "language": "en",
+          "value": "state legislature of the U.S. state of West Virginia"
+        },
+        "websites": [
+          "http://www.legis.state.wv.us/"
+        ],
+        "youtube_ids": []
+      },
+      "permission": "personal_use_pending_review",
+      "availability": "event_based",
+      "calendar_kind": "official_event_or_recording_index",
+      "language_basis": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed."
+    }
+  ],
+  "playback": [
+    {
+      "id": "argentina-neuquen-legislature-webcasts",
+      "status": "ok",
+      "note": "The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed.",
+      "samples": [
+        {
+          "key": "neuquen-oct21",
+          "url": "https://www.youtube.com/watch?v=E1g8PPGRyH8&t=1800s",
+          "title": "21a. SESIÓN ORDINARIA, miércoles 21 de octubre de 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.458127,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14119.241,
+              "frames": 121,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.692035,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14119.241,
+              "frames": 188,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "neuquen-oct8",
+          "url": "https://www.youtube.com/watch?v=JF6Y2kIxzgw&t=1800s",
+          "title": "20a. SESIÓN ORDINARIA, jueves 08 de octubre de 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.587855,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 11326.501,
+              "frames": 278,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.824502,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 11326.501,
+              "frames": 345,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "italy-sicily-assembly-video",
+      "status": "ok",
+      "note": "The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence.",
+      "samples": [
+        {
+          "key": "sicily-plenary-oct21-middle",
+          "url": "https://www.ars.sicilia.it/agenda/seduta/aula/video/2941591",
+          "title": "",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1811.107722,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 53322.64799999997,
+              "frames": 368,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1813.31309,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 53322.64799999997,
+              "frames": 434,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "sicily-plenary-oct22-middle",
+          "url": "https://www.ars.sicilia.it/agenda/seduta/aula/video/2941595",
+          "title": "",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 12.135511,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 983.873,
+              "frames": 367,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 14.337825,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 983.873,
+              "frames": 433,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "sicily-committee6",
+          "url": "https://www.youtube.com/watch?v=a2J4h6lORAU&t=1200s",
+          "title": "Commissione VI - Seduta del 27/10/2021 - ore 14.00 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1202.687035,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 5000.221,
+              "frames": 213,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1204.918806,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 5000.221,
+              "frames": 280,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "sicily-antimafia",
+          "url": "https://www.youtube.com/watch?v=3T7Cq0ZA64o&t=1800s",
+          "title": "Commissione Antimafia seduta n. 228 del 9 giugno 2021 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.500811,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9091.181,
+              "frames": 190,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.735304,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9091.181,
+              "frames": 257,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "us-west-virginia-legislature-media",
+      "status": "ok",
+      "note": "The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated.",
+      "samples": [
+        {
+          "key": "wv-school-safety",
+          "url": "https://www.youtube.com/watch?v=axz8m2a_BTk&t=1200s",
+          "title": "House General Session on School Safety - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.587327,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 4044.221,
+              "frames": 113,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.835335,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 4044.221,
+              "frames": 180,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "wv-hearing",
+          "url": "https://www.youtube.com/watch?v=1bM_-v4UhIU&t=1200s",
+          "title": "Virtual Public Hearing on SB275 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.535496,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 3448.421,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.839998,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 3448.421,
+              "frames": 180,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "held": [
+    {
+      "id": "uruguay-rivera-departmental-board-webcasts",
+      "reason": "Actual October legislative proceedings and official provider chain validated; separate institutional Wikidata ID not established. Generic body-class or geographic IDs are not substitutes.",
+      "next_action": "Resolve institutional identity evidence under the catalogue contract before promotion; no external Wikidata edit performed.",
+      "samples": [
+        {
+          "key": "rivera-oct21",
+          "country": "Uruguay",
+          "url": "https://www.youtube.com/watch?v=ut61ODMakV4&t=1800s",
+          "status": 200,
+          "title": "Junta Departamental Sesión 21/10/26 - YouTube",
+          "text": "CA\nSkip navigation\nSign in\n30:02 / 1:48:58\nJunta Departamental Sesión 21/10/26\nJunta Departamental de Rivera _ OFICIAL \n421 subscribers\nSubscribe\nLike\nShare\n205 views  Streamed 1 day ago\n No description has been added to this video.\n \n...more\n\nLive chat replay\nSee what others said about this video while it was live.\nOpen panel\nComments\n \n \n \n \n1:06:31\nAprende a leer a la gente en 3 minutos | Bárbara Tijerina, experta en comunicación no verbal\nAprendemos juntos Mex\n4.8m\n1 yr ago\nLIVE\n🔴 DIRECTO | Ceremonia de entrega de los Premios Princesa de Asturias 2026 (23/10/2026)\nCadena SER\n52 watching\n1:45:19\nNew\nDUA - Coord. de Educ. Especial\nMinisterio de Educación Corrientes\n1k\nStreamed 3 days ago\nAuto-dubbed\n3:31:43\nJunta Departamental Sesión 02/09/26\nJunta Departamental de Rivera _ OFICIAL\n533\nStreamed 1 mo ago\n1:21:32\nJunta Departamental Sesión 07/10/26\nJunta Departamental de Rivera _ OFICIAL\n343\nStreamed 2 wk ago\n7:53\nNew\nTrump Nixes Hegseth's Livestream Execution & JD Vance Unleashes New Laugh | The Daily Show\nThe Daily Show\nand Ronny Chieng\n2.2m\n1 day ago\n24:29\nNew\nAt Issue | Can Alberta Premier Danielle Smith control UCP separatists?\nCBC News: The National\n115k\n16 hr ago\n22:14\nNew\nLa tormenta perfecta: cómo podrían PP y Vox perder las elecciones\nJuan Ramón Rallo\n421k\n21 hr ago\n58:48\n#LiveNow | Masiosare: The '68 Movement and Democracy (10/02/2026)\nCanal22\n24k\nStreamed 2 wk ago\nAuto-dubbed\n11:50\nNew\n‘Whoever Took This Decision...’: Carney Disgraces Musk, Trump Over Ukraine Starlink Slowdown\nHook Global\n166k\n4 hr ago\n57:45\nNew\nAl Pan Pan: quiebre de pacto en el Senado abre nuevo frente entre oficialismo y oposición\nEl Mostrador\n2.5k\nStreamed 1 day ago\n2:07:52\n8° SESIÓN ESPECIAL  - 31° REUNIÓN - PERÍODO 2025 - PARTE 2\nConcejo Deliberante Patagones\n150\nStreamed 10 mo ago\n1:42:03\nNew\nLive morning press conference. Wednesday, October 21, 2026 | President Claudia Sheinbaum\nClaudia Sheinbaum Pardo\n408k\nStreamed 2 days ago\nAuto-dubbed\n47:58\nNew\nCaso Luisa González, crisis carcelaria y resultados de los operativos | John Reimberg\nRadio Centro 101.3 FM\n2.7k\n1 hr ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n64k\n7 hr ago\n8:55\nNew\nCarney’s visit to Türkiye and U.S. tension\nCTV News\n3.1k\n1 hr ago\n1:39:24\nSesión Ordinaria  - Martes 27 de mayo del 2025\nJunta Departamental Canelones\n181\nStreamed 1 yr ago\n1:53:49\nNew\nLive Morning Press Conference. Thursday, October 22, 2026 | President Claudia Sheinbaum\nClaudia She",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.24301,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 6538.501,
+              "frames": 130,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.503943,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 6538.501,
+              "frames": 197,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "rivera-oct7",
+          "country": "Uruguay",
+          "url": "https://www.youtube.com/watch?v=kwyRYLk1Z-Q&t=1800s",
+          "status": 200,
+          "title": "Junta Departamental Sesión 07/10/26 - YouTube",
+          "text": "CA\nSkip navigation\nSign in\n30:02 / 1:21:31\nJunta Departamental Sesión 07/10/26\nJunta Departamental de Rivera _ OFICIAL \n421 subscribers\nSubscribe\nLike\n343 views  Streamed 2 wk ago\n No description has been added to this video.\n \nmore\n\nLive chat replay\nSee what others said about this video while it was live.\nOpen panel\nComments\n \n \n \n \n1:48:59\nNew\nJunta Departamental Sesión 21/10/26\nJunta Departamental de Rivera _ OFICIAL\n205\nStreamed 1 day ago\n7:53\nNew\nTrump Nixes Hegseth's Livestream Execution & JD Vance Unleashes New Laugh | The Daily Show\nThe Daily Show\nand Ronny Chieng\n2.2m\n1 day ago\n2:02:43\nJunta Departamental Sesión 16/09/26\nJunta Departamental de Rivera _ OFICIAL\n542\nStreamed 3 wk ago\n52:40\n27/05/2025 Sesión Ordinaria\nHonorable Concejo Deliberante de Quilmes\n182\nStreamed 1 yr ago\n3:45:34\nSesión extraordinaria 11-04-2024\nJunta Departamental Salto\n505\nStreamed 2 yr ago\n2:22:15\nJunta Departamental Sesión 16/09/26\nJunta Departamental de Rivera _ OFICIAL\n356\nStreamed 1 mo ago\n8:51\nNew\nCarney Drops A Warning Trump Won’t Like: Canada Can Wait Until He’s Gone | Trade War | Global News\nThe Financial Express\n19k\n4 hr ago\n57:45\nNew\nAl Pan Pan: quiebre de pacto en el Senado abre nuevo frente entre oficialismo y oposición\nEl Mostrador\n2.5k\nStreamed 1 day ago\n2:30:05\nSesión Ordinaria N°93-2026.\nMunicipalidad de Carrillo\n79\nStreamed 9 days ago\n13:34\nNew\nTrump Makes Strange Guttural Noise During Campaign Rally, Hegseth Breaks Priceless Historic Globe\nThe Tonight Show Starring Jimmy Fallon\n494k\n12 hr ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n64k\n7 hr ago\n1:02:47\nNew\nTomás Mosciatti's Commentary: The Fall of the AFPs\nBio Bio\n229k\n6 days ago\nAuto-dubbed\n2:32:46\nSesión Extraordinaria N°45-2026\nMunicipalidad de Carrillo\n91\nStreamed 7 days ago\n13:43\nNew\nLawrence: Elon Musk threatens Democrats in Congress saying, ‘Live by the sword, die by the sword’\nMS NOW\n779k\n13 hr ago\n17:15\nNew\nJimmy O. Yang on Returning to Hong Kong After 25 Years in “Finally Home” | The Daily Show\nThe Daily Show\n267k\n13 hr ago\n53:43\nSesion Extraordinaria 08 10 2025\nJunta Departamental de Rivera _ OFICIAL\n120\nStreamed 1 yr ago\n27:02\nNew\n'Offer Was Not...': Canada's Chief Negotiator Backs Carney, Reveals Why Trump Tariff Talks Collapsed\nHook Global\n167k\n19 hr ago\n12:15\nNew\nTrump Is Hot for Tim Scott & Susan Collins Side-Eyes Troy Jackson's Second Cousin | The Daily Show\nThe Daily Show\n1.5m\n14 hr ago\n44:00\nNew\nJonatan Viale and Javier Milei",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.501274,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 4891.721,
+              "frames": 174,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.740955,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 4891.721,
+              "frames": 241,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "italy-lombardia-proceedings",
+      "reason": "Automated advancing-media signal came from decorative page-header animation, not a council proceedings player. The room directory designates Mediaportal URLs, but actual chamber/committee footage still needs validation.",
+      "next_action": "Test the exact institution-designated room/recording during or after a sitting; avoid confusing the regional-government media portal with parliamentary proceedings."
+    },
+    {
+      "id": "uruguay-national-chamber",
+      "reason": "Actual 13October 2026 Chamber video plays; Wikidata exact provider identifier and channel institutional backlink corroborate identity. Canonical Parliament page returns403; old diputados apex fails DNS and www route has TLS mismatch. A fresh institution-to-provider forward chain remains unresolved.",
+      "next_action": "Retain as a provenance hold pending an accessible primary institutional designation of the exact provider ID; no TLS bypass.",
+      "samples": [
+        {
+          "key": "uruguay-oct13",
+          "country": "Uruguay",
+          "url": "https://www.youtube.com/watch?v=xgGnkrGpJtk&t=1800s",
+          "status": 200,
+          "title": "Cámara de Representantes. Sesión ordinaria. Martes 13 de octubre de 2026, hora 16:00. - YouTube",
+          "text": "CA\nSkip navigation\nSign in\nPause\nK\n30:02 / 4:43:56\nCámara de Representantes. Sesión ordinaria. Martes 13 de octubre de 2026, hora 16:00.\nCámara de Representantes | Uruguay\n20k subscribers\nSubscribe\n3\nShare\nSave\n532 views  9 days ago\nORDEN DEL DÍA: \n\n …\n...more\n\nComments are turned off. Learn more\n2:27:49\nCámara de Representantes. Sesión ordinaria. Martes 06 de octubre de 2026, hora 16:00.\nCámara de Representantes | Uruguay\n1.7k\nStreamed 2 wk ago\n8:51\nNew\nCarney Drops A Warning Trump Won’t Like: Canada Can Wait Until He’s Gone | Trade War | Global News\nThe Financial Express\n19k\n4 hr ago\n57:45\nNew\nAl Pan Pan: quiebre de pacto en el Senado abre nuevo frente entre oficialismo y oposición\nEl Mostrador\n2.5k\nStreamed 1 day ago\n2:14:54\nNew\nAssermentation du Conseil des ministres\nPaul St-Pierre Plamondon\nand Parti Québécois\n4.5k\n1 day ago\n6:36\nINTERVENCION DIPUTADA AMALIA GRANATA - SESIÓN ORDINARIA Nº17 -PERIODO ORDINARIO 144º- 15/10/26\nIntervenciones de Diputadas y Diputados de Santa Fe\n202\n7 days ago\n23:58\nNew\nAsí Escapó el Juez Renán Andrade Minutos Antes del Allanamiento\nDESPACHO 593\n42k\n2 days ago\n7:53\nNew\nTrump Nixes Hegseth's Livestream Execution & JD Vance Unleashes New Laugh | The Daily Show\nThe Daily Show\nand Ronny Chieng\n2.2m\n1 day ago\n2:18:53\nMozart - Classical Music for Working, Studying & Brain Power\nHALIDONMUSIC\n6.3m\n3 yr ago\n27:02\nNew\n'Offer Was Not...': Canada's Chief Negotiator Backs Carney, Reveals Why Trump Tariff Talks Collapsed\nHook Global\n167k\n19 hr ago\n57:05\nTensión total en el Congreso: Sánchez y Feijóo se dijeron de todo\nMagenta Radio con William López\n358k\nStreamed 6 mo ago\n13:51\nWatch JD Vance SCREAM At Host After CAUGHT In LIE!\nJack Cocchiarella\n8.2m\n1 yr ago\n31:49\nNew\n‘We Will Never Be...’: Mark Carney Sends Defiant Message to Trump From Istanbul\nHook Global\n64k\n7 hr ago\n31:29\nUrdaci stuns Rojo by revealing Sánchez's plan after losing the election\nPeriodista Digital\n1m\n2 wk ago\nAuto-dubbed\n2:00:01\nThe Best of Debussy / Classical Piano Music\nClassical Music Collection\n3m\n2 yr ago\n41:20\nThe money laundering conviction of a White Party councilor's advisor and the debate over exclusiv...\nTV Ciudad\n14k\n1 mo ago\nAuto-dubbed\n16:08\nNew\nTrump's Brain Glitches at SC Rally, Vance & Ramaswamy Spark Fury Over \"Disgusting\" Ad: A Closer Look\nLate Night with Seth Meyers\n1.3m\n15 hr ago\n1:05:39\nFormer CIA Spy: How to Read Anyone, Think Clearly, and Protect Yourself\nMel Robbins\n2.2m\n2 mo ago\n8:54\nINTERVENCION DIPUTADA DE PONTI LUCILA - SESIÓN ORDINARIA N",
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1802.828729,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 17036.041,
+              "frames": 75,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.060624,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 17036.041,
+              "frames": 131,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "regional_flag_sources": [
+    {
+      "file": "neuquen.svg",
+      "commons_file": "Bandera de la Provincia del Neuquen.svg",
+      "license": "CC BY 4.0",
+      "description_url": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_del_Neuquen.svg",
+      "metadata": {
+        "DateTime": {
+          "value": "2025-04-07 06:33:13",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Bandera de la Provincia del Neuquen",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "Flags with trees|With insignia|Unspec SVG created with Inkscape|Flags with yellow stars|Flags with three vertical stripes, one white, two blue|Flags with trisection vertical stripes and with centered coats of arms|SVG flags of Neuquén Province|Unspec New SVG created with Inkscape|Blue and white flags of Argentina|Stars on flags of Argentina|Flags introduced in 1989",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Flag of Neuquén Province of Argentina.",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "1989",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "SVG based on <a href=\"//commons.wikimedia.org/wiki/File:Flag_of_Neuquen_province_in_Argentina.gif\" title=\"File:Flag of Neuquen province in Argentina.gif\">this image</a>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "Aldo Mástice <br> (Vector graphics image by <a href=\"//commons.wikimedia.org/w/index.php?title=User:Lu1g1-ktupq&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Lu1g1-ktupq (page does not exist)\">Lu1g1-ktupq</a>) <div style=\"display:table;width:;vertical-align:middle;direction:ltr;float:left;line-height:22px;height:24px;font-size:.96em;margin:0px;padding:2px 4px 2px 6px;color:var(--color-base,#000);background:var(--background-color-neutral-subtle,#F8F9FA);border:1px solid #BAB;border-collapse:separate;border-spacing:0px;background:#FEE;border:1px solid #600;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Inkscape-ws.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Inkscape-ws.svg/40px-Inkscape-ws.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"22\" height=\"22\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Inkscape-ws.svg/60px-Inkscape-ws.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"390\" data-file-height=\"390\"></a></span> This <i>W3C-unspecified</i> <a href=\"https://en.wikipedia.org/wiki/Vector_images\" class=\"extiw\" title=\"w:Vector images\">vector image</a> was created with <a href=\"https://en.wikipedia.org/wiki/Inkscape\" class=\"extiw\" title=\"w:Inkscape\">Inkscape</a> .</div>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC BY 4.0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Attribution 4.0",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "true",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "https://creativecommons.org/licenses/by/4.0",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "insignia",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc-by-4.0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "size": 122562
+    },
+    {
+      "file": "sicily.svg",
+      "commons_file": "Flag of Sicily (revised).svg",
+      "license": "Public domain",
+      "description_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sicily_(revised).svg",
+      "metadata": {
+        "DateTime": {
+          "value": "2023-03-14 11:50:04",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Flag of Sicily (revised)",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "With insignia|Self-published work|PD-self|SVG created with Inkscape:Important|Flags of Sicily|Diagonal bicolor red and yellow flags|SVG flags of Italy - aspect ratio of 3:2|Valid SVG created with Inkscape:Flags|Flags introduced in 2000|Flags with the Sicilian Triskelion",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Flag of the <a href=\"https://en.wikipedia.org/wiki/Sicily\" class=\"extiw\" title=\"w:Sicily\">Sicilian Region</a>",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2007-05-09",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Angelo.romano\" title=\"User:Angelo.romano\">Angelo Romano</a>",
+          "source": "commons-desc-page"
+        },
+        "Permission": {
+          "value": "<table style=\"width:100%; clear:both; margin:0.5em auto; border-spacing:8px; background-color:var(--background-color-neutral-subtle,#f7f8ff); border:2px solid #8888aa;color: inherit;\" lang=\"en\" dir=\"ltr\" class=\"layouttemplate restrictiontemplate restriction-insignia\">\n<tbody><tr>\n<td style=\"border:none; width:64px;\"><figure class=\"mw-halign-center\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/Commons:Non-copyright_restrictions\" title=\"Insignia\"><img alt=\"Insignia\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coat-elements-2.png/120px-Coat-elements-2.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"77\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coat-elements-2.png/250px-Coat-elements-2.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"609\" data-file-height=\"731\"></a><figcaption>Insignia</figcaption></figure>\n</td>\n<td style=\"border:none;\">This image shows a <a href=\"https://en.wikipedia.org/wiki/flag\" class=\"extiw\" title=\"w:flag\">flag</a>, a <a href=\"https://en.wikipedia.org/wiki/coat_of_arms\" class=\"extiw\" title=\"w:coat of arms\">coat of arms</a>, a <a href=\"https://en.wikipedia.org/wiki/seal_(emblem)\" class=\"extiw\" title=\"w:seal (emblem)\">seal</a> or some other official <b><a href=\"https://en.wikipedia.org/wiki/insignia\" class=\"extiw\" title=\"w:insignia\">insignia</a></b>. The use of such symbols is restricted in many countries. These restrictions are independent of the <a href=\"https://en.wikipedia.org/wiki/copyright\" class=\"extiw\" title=\"w:copyright\">copyright</a> status.\n</td></tr></tbody></table>",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Public domain",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "false",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "insignia",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "pd",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "size": 37079
+    },
+    {
+      "file": "west-virginia.svg",
+      "commons_file": "Flag of West Virginia.svg",
+      "license": "Public domain",
+      "description_url": "https://commons.wikimedia.org/wiki/File:Flag_of_West_Virginia.svg",
+      "metadata": {
+        "DateTime": {
+          "value": "2025-11-09 14:20:20",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Flag of West Virginia",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "PD-author|With insignia|Flags with phrygian caps|Files with derivative versions|Flags with mottos|Flags with banners|Flags with blue borders|SVG flags of West Virginia|Flags with axes|SVG created with Inkscape and Adobe Illustrator|Valid SVG created with Adobe Illustrator:Flags|Inscribed flags, dates|Blue, green, red, white, yellow flags of the United States|Flags with men in the United States|Flowers on flags of the United States|Flags with women in the United States|Inscribed flags, English names|Flags with hammers|Flags with pickaxes|Flags introduced in 1929|Flags with crossed rifles|Laurel on flags of the United States|Flags with centered coat of arms from the United States|Plows on flags of the United States",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Flag%20of%20West%20Virginia\" title=\"w:Flag of West Virginia\" class=\"extiw\">Flag of West Virginia</a>",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2008-04-15",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Militaryace\" title=\"User:Militaryace\">Militaryace</a> &amp; <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Denelson83\" title=\"User:Denelson83\">Denelson83</a>, some elements used are from the xrmap flag collection 2.7.",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Militaryace\" title=\"User:Militaryace\">Militaryace</a>, <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Denelson83\" title=\"User:Denelson83\">Denelson83</a>",
+          "source": "commons-desc-page"
+        },
+        "Permission": {
+          "value": "<table style=\"width:100%; clear:both; margin:0.5em auto; border-spacing:8px; background-color:var(--background-color-neutral-subtle,#f7f8ff); border:2px solid #8888aa;color: inherit;\" lang=\"en\" dir=\"ltr\" class=\"layouttemplate restrictiontemplate restriction-insignia\">\n<tbody><tr><td style=\"border:none; width:64px;\"><figure class=\"mw-halign-center\" typeof=\"mw:File\"><a href=\"https://commons.wikimedia.org/wiki/Commons:Non-copyright_restrictions\" title=\"Insignia\"><img resource=\"https://commons.wikimedia.org/wiki/File:Coat-elements-2.png\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coat-elements-2.png/120px-Coat-elements-2.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Coat-elements-2.png/250px-Coat-elements-2.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" alt=\"Insignia\" data-file-width=\"609\" data-file-height=\"731\" data-file-type=\"bitmap\" height=\"77\" width=\"64\" class=\"mw-file-element\"></a><figcaption>Insignia</figcaption></figure></td>\n<td style=\"border:none;\">This image shows a <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/flag\" title=\"w:flag\" class=\"extiw\">flag</a>, a <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/coat%20of%20arms\" title=\"w:coat of arms\" class=\"extiw\">coat of arms</a>, a <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/seal%20(emblem)\" title=\"w:seal (emblem)\" class=\"extiw\">seal</a> or some other official <b><a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/insignia\" title=\"w:insignia\" class=\"extiw\">insignia</a></b>. The use of such symbols is restricted in many countries. These restrictions are independent of the <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/copyright\" title=\"w:copyright\" class=\"extiw\">copyright</a> status.</td></tr>\n\n</tbody></table><span class=\"mw-empty-elt\"><link rel=\"mw:PageProp/Category\" href=\"./Category:With_insignia#Flag%20of%20West%20Virginia.svg\"></span>",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Public domain",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "false",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "insignia",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "pd",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "size": 581809
+    }
+  ],
+  "provider_date_evidence": [
+    {
+      "id": "axz8m2a_BTk",
+      "title": "House General Session on School Safety - YouTube",
+      "metadata": [
+        {
+          "property": "name",
+          "value": "House General Session on School Safety"
+        },
+        {
+          "property": "description",
+          "value": "Live Streaming Video from the Floor of the West Virginia House of Delegates"
+        },
+        {
+          "property": "name",
+          "value": "West Virginia House of Delegates"
+        },
+        {
+          "property": "datePublished",
+          "value": "2022-06-14T11:14:56-07:00"
+        },
+        {
+          "property": "uploadDate",
+          "value": "2022-06-14T11:14:56-07:00"
+        }
+      ]
+    },
+    {
+      "id": "1bM_-v4UhIU",
+      "title": "Virtual Public Hearing on SB275 - YouTube",
+      "metadata": [
+        {
+          "property": "name",
+          "value": "Virtual Public Hearing on SB275"
+        },
+        {
+          "property": "description",
+          "value": "SB275 , Relating generally to WV Appellate Reorganization Act of 2021Date: March 4, 2021Time: 8:00 AM"
+        },
+        {
+          "property": "name",
+          "value": "West Virginia House of Delegates"
+        },
+        {
+          "property": "datePublished",
+          "value": "2021-03-05T12:54:46-08:00"
+        },
+        {
+          "property": "uploadDate",
+          "value": "2021-03-05T12:54:46-08:00"
+        }
+      ]
+    }
+  ],
+  "publication_limits": [
+    "Three new official link-outs; no HLS exports, IPTV eligibility or implemented XMLTV parser added.",
+    "Neuquén provider titles and official agenda disagree on ordinal session numbers; dates and exact video identities retained without fabricating a reconciliation.",
+    "Sicily session279 contains multiple dated parts; the 22 October 05:42 part is about 16 minutes and was sampled at its opening. Only the 21 October part was checked at 30 minutes.",
+    "West Virginia House samples are historical 2022 and 2021; Senate/current-live and all committee rooms are unvalidated.",
+    "No complete spoken-language, captions, interpretation or service-wide accessibility certification."
+  ],
+  "counts_after_review": {
+    "catalogue_sources": 159,
+    "jurisdiction_levels": {
+      "national": 72,
+      "subnational": 81,
+      "supranational": 6
+    },
+    "regional_jurisdictions": 62,
+    "scope_inventory": {
+      "eligible_legislature": 451,
+      "authority_review_required": 392,
+      "outside_default_scope": 278
+    },
+    "eligible_validation_queue": {
+      "eligible_official_service_validation_pending": 390,
+      "catalogued_service_remaining_rooms_and_live_followup": 61
+    },
+    "formal_candidates": {
+      "promoted": 61,
+      "researching": 4,
+      "rejected": 1
+    }
+  },
+  "coverage_identity_reconciliations": [
+    {
+      "id": "germany--bayerischer-landtag",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "bavaria-landtag-plenum-online"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    },
+    {
+      "id": "germany--landtag-von-baden-wurttemberg",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "baden-wurttemberg-landtag-live"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    },
+    {
+      "id": "spain--corts-valencianes",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "valencia-canal-corts"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    },
+    {
+      "id": "spain--parlamento-de-andalucia",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "andalusia-parliament-tv-live"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    },
+    {
+      "id": "spain--parlament-de-catalunya",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "catalonia-canal-parlament"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    },
+    {
+      "id": "spain--parlamento-de-navarra",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "navarre-parliament-live"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    },
+    {
+      "id": "canada--quebec",
+      "checked_on": "2026-10-23",
+      "catalogue_ids": [
+        "quebec-canal01",
+        "quebec-canal02",
+        "quebec-canal03",
+        "quebec-canal04",
+        "quebec-canal05",
+        "quebec-canal06",
+        "quebec-canal07",
+        "quebec-canal08",
+        "quebec-canal09",
+        "quebec-canal10",
+        "quebec-canal11",
+        "quebec-canal12",
+        "quebec-canal13",
+        "quebec-canal14"
+      ],
+      "basis": "Institutional website domain matches the catalogue’s official/permission source, and institution names identify the same legislature. This is existing coverage reconciliation, not new media validation."
+    }
+  ],
+  "verification": {
+    "make_verify": true,
+    "tests": 109,
+    "skipped": 1,
+    "coverage_percent": 91,
+    "catalogue_channels": 159,
+    "candidate_files": 66,
+    "html_and_axe_accessibility": true,
+    "browser_surfaces": {
+      "engines": [
+        "Chromium",
+        "WebKit"
+      ],
+      "widths": [
+        1280,
+        320
+      ],
+      "prepared_additions_checked": 32,
+      "catalogue_source_count": 159,
+      "regional_geometry_count": 62,
+      "passed": true,
+      "checks": [
+        "all new catalogue searches and official detail links",
+        "loaded flags",
+        "parent-country associations",
+        "French Sicily search",
+        "map list/detail selection and marker keyboard controls",
+        "regional winding and known-point containment",
+        "planned official schedule/index links",
+        "no page/console errors or horizontal overflow",
+        "accented, unaccented and decomposed Neuquén search in catalogue and map"
+      ]
+    },
+    "ledger_consistency": "All 278 scope exclusions have body IDs, sources, rationale, archived media leads and no active publication tasks. All 85 formerly core rows resolved; current eligibility totals1121. Seven reviewed institution-domain/name crosswalks prevent duplicate discovery work.",
+    "search_regression": "Neuquen, Neuquén and Neuque + combining acute + n now match the same source on catalogue and map. Marks outside the common combining-accent block remain intact."
+  },
+  "coverage_matching_corrections": [
+    {
+      "id": "uruguay--florida",
+      "rejected_catalogue_id": "us-fl-legislature-video",
+      "reason": "Departmental Florida in Uruguay is not the US state of Florida. Reject the earlier name-only match."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Eligible departmental legislature under Constitution Article273; not an ordinary municipal council.",
+    "The official government-domain homepage links both the exact channel ID and current stream listing. The 7 and 21 October 2026 proceedings show actual departmental assembly business with advancing decoded video.",
+    "Held: the published-catalogue contract requires a Wikidata ID for the specific legislative institution. Exact Spanish/English searches found no Rivera institutional item. Q5956465 is the generic departmental-board class and territorial IDs must not be substituted. Do not create an external Wikidata entity without separately authorized work.",
+    "Current live, all committee rooms, language/accessibility completeness and independent reuse remain unresolved. Source and playback evidence: reports/discovery/2026-10-23-validation-second-pass.json",
+    "23 October local / 24 October UTC recheck: Official recording index still lists October proceedings. Prior designation and selected substantive playback retained; recovered exact Spanish identity search returned no matches. An exact institution item remains unresolved; no-result is not proof of absence. Evidence: reports/health/2026-10-24-national-formal-browser.json",
+    "24October2026: full proper-name query Junta Departamental de Rivera completed through the shared cached/backoff client and returned no candidate item. Recorded official proceedings remain confirmed separately; exact institutional identifier/publication gate stays unresolved. No-result does not establish item absence. See reports/discovery/2026-10-24-specific-name-recoveries.json."
+  ],
+  "channel": {
+    "id": "uruguay-rivera-departmental-board-webcasts",
+    "name": "Rivera Departmental Board Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Rivera",
+    "legislature": "Junta Departamental de Rivera",
+    "external_ids": {
+      "wikidata_qid": null,
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UCx4wVmrEe0TsFUvxFZsFPSg/streams",
+    "provenance_note": "Source provenance review pending.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": null
+    },
+    "epg_sources": [],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official viewing designated by the institution. Independent audiovisual reuse has not been established.",
+      "evidence": [
+        "https://www.juntaderivera.gub.uy/"
+      ],
+      "recommendation": "Keep as a research candidate until institutional identity requirements and publication surfaces are satisfied."
+    }
+  }
+}

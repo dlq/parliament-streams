@@ -1,0 +1,1078 @@
+{
+  "method": "One normal Chromium navigation per unresolved national route/formal candidate; no CAPTCHA, login, consent or TLS bypass. A root page or video element is not proceedings playback confirmation.",
+  "results": [
+    {
+      "id": "national:Iceland",
+      "institution": "Iceland national legislature",
+      "url": "https://www.althingi.is/utsendingar/",
+      "checked_at": "2026-10-24T02:51:06.000Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.althingi.is/utsendingar/",
+      "title": "Just a moment...",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Iceland.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Uruguay",
+      "institution": "Uruguay national legislature",
+      "url": "https://www.parlamento.gub.uy/",
+      "checked_at": "2026-10-24T02:51:08.413Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://parlamento.gub.uy/",
+      "title": "403 Forbidden",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Uruguay.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Malta",
+      "institution": "Malta national legislature",
+      "url": "https://parlament.mt/en/home/",
+      "checked_at": "2026-10-24T02:51:12.010Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://parlament.mt/en/home/",
+      "title": "Attention Required! | Cloudflare",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Malta.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Belgium",
+      "institution": "Belgium national legislature",
+      "url": "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+      "checked_at": "2026-10-24T02:51:14.275Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.senate.be/www/?LANG=nl&MIval=%2FVideo%2FVideoIndex",
+      "title": "Just a moment...",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Belgium.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Cyprus",
+      "institution": "Cyprus national legislature",
+      "url": "https://www.parliament.cy/",
+      "checked_at": "2026-10-24T02:51:16.626Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.parliament.cy/",
+      "title": "Just a moment...",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Cyprus.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:South Africa",
+      "institution": "South Africa national legislature",
+      "url": "https://www.parliament.gov.za/parliament-tv",
+      "checked_at": "2026-10-24T02:51:19.235Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 500,
+      "final_url": "https://www.parliament.gov.za/parliament-tv",
+      "title": "The URL you requested has been blocked",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-South Africa.png",
+      "individual_content_disposition": "HTTP 500 explicitly says the URL was blocked. No further interaction."
+    },
+    {
+      "id": "national:Montenegro",
+      "institution": "Montenegro national legislature",
+      "url": "https://www.skupstina.me/",
+      "checked_at": "2026-10-24T02:51:23.566Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.skupstina.me/",
+      "title": "Početna stranica - Skupština Crne Gore",
+      "links": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/user/SkupstinaCrneGore/feed"
+        },
+        {
+          "text": "Raspored mjesta u plenarnoj sali",
+          "url": "https://www.skupstina.me/me/raspored-mjesta-u-plenarnoj-sali"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/user/SkupstinaCrneGore/feed"
+        },
+        {
+          "text": "Skupština Crne Gore i ove godine na vodećoj poziciji u regionalnom indeksu otvorenosti",
+          "url": "https://www.skupstina.me/me/clanci/skupstina-crne-gore-i-ove-godine-na-vodecoj-poziciji-u-regionalnom-indeksu-otvorenosti"
+        },
+        {
+          "text": "",
+          "url": "https://rtcg.me/tv/gledaj-tvcg3.html"
+        },
+        {
+          "text": "Sve sjednice",
+          "url": "https://www.youtube.com/@SkupstinaCrneGore/streams"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/watch?v=hZKf91DxOG4&list=UU2V1QkN_HVpR6ZcNjHQ3Ykw"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/watch?v=aVNMELD9Rj4&list=UU2V1QkN_HVpR6ZcNjHQ3Ykw"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/watch?v=jJ3z4tpUGlU&list=UU2V1QkN_HVpR6ZcNjHQ3Ykw"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/watch?v=u83HmNpK2ZE&list=UU2V1QkN_HVpR6ZcNjHQ3Ykw"
+        },
+        {
+          "text": "Video arhiva",
+          "url": "https://www.youtube.com/user/SkupstinaCrneGore/feed"
+        },
+        {
+          "text": "Tviter",
+          "url": "https://twitter.com/SkupstinaCG"
+        }
+      ],
+      "media": [],
+      "frames": [
+        "https://zakoni.skupstina.me/zakoni/web/app.php/akt/searchAkta",
+        "https://zakoni.skupstina.me/zakoni/web/app.php/akt/aktiUProceduri"
+      ],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-national-Montenegro.png",
+      "individual_content_disposition": "Exact institution, current own provider and selected plenary/committee recordings subsequently confirmed; added as a scoped official viewing link."
+    },
+    {
+      "id": "national:Latvia",
+      "institution": "Latvia national legislature",
+      "url": "https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings",
+      "checked_at": "2026-10-24T02:51:26.780Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "outcome": "navigation_or_rendering_error",
+      "error": "TimeoutError: page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.saeima.lv/en/legislative-process/plenary-sittings/video-recordings\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "individual_content_disposition": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+      "frames": []
+    },
+    {
+      "id": "national:Philippines",
+      "institution": "Philippines national legislature",
+      "url": "https://www.senate.gov.ph/",
+      "checked_at": "2026-10-24T02:51:51.845Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.senate.gov.ph/",
+      "title": "Attention Required! | Cloudflare",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Philippines.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Bulgaria",
+      "institution": "Bulgaria national legislature",
+      "url": "https://www.parliament.bg/tv/video",
+      "checked_at": "2026-10-24T02:51:54.638Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.parliament.bg/tv/video",
+      "title": "- Народно събрание на Република България",
+      "links": [
+        {
+          "text": "Български",
+          "url": "https://www.parliament.bg/tv/video#"
+        },
+        {
+          "text": "English",
+          "url": "https://www.parliament.bg/tv/video#"
+        },
+        {
+          "text": "КОНСТИТУЦИЯ",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "НАРОДНИ ПРЕДСТАВИТЕЛИ",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "Архив 51-о Народно събрание",
+          "url": "https://www.parliament.bg/bg/archive/61"
+        },
+        {
+          "text": "KОМИСИИ",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "Аудиовизуален архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ПАРЛАМЕНТАРНА ДЕЙНОСТ",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "Програма за работата на Народното събрание",
+          "url": "https://www.parliament.bg/bg/plenaryprogram"
+        },
+        {
+          "text": "Стенограми от пленарни заседания",
+          "url": "https://www.parliament.bg/bg/plenaryst"
+        },
+        {
+          "text": "Видео архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "Консолидирана версия на Договора за Европейския съюз и Договора за функционирането на Европейския съюз",
+          "url": "http://eur-lex.europa.eu/legal-content/BG/TXT/?qid=1490951984391&uri=CELEX:12016ME/TXT"
+        },
+        {
+          "text": "ЗА МЕДИИТЕ",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "ОПОЗНАЙ ПАРЛАМЕНТА",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "Архив Народно събрание",
+          "url": "https://www.parliament.bg/bg/archive"
+        },
+        {
+          "text": "ПОЛЕЗНА ИНФОРМАЦИЯ",
+          "url": "https://www.parliament.bg/tv/video"
+        },
+        {
+          "text": "Авторско право",
+          "url": "https://www.parliament.bg/bg/terms-of-use"
+        },
+        {
+          "text": "НАЧАЛО",
+          "url": "https://www.parliament.bg/tv/video#"
+        },
+        {
+          "text": "АРХИВ ПЛЕНАРНИ ЗАСЕДАНИЯ",
+          "url": "https://www.parliament.bg/tv/video#"
+        },
+        {
+          "text": "АРХИВ ЗАСЕДАНИЯ НА КОМИСИИ",
+          "url": "https://www.parliament.bg/tv/video#"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCzLUN0HmnNAMEEMynMXPBqw"
+        },
+        {
+          "text": "Контакти",
+          "url": "https://www.parliament.bg/tv/contacts"
+        }
+      ],
+      "media": [],
+      "frames": [],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-national-Bulgaria.png",
+      "individual_content_disposition": "National Assembly primary page rendered; media control provenance and substantive selected proceedings remain unresolved."
+    },
+    {
+      "id": "national:Serbia",
+      "institution": "Serbia national legislature",
+      "url": "https://www.parlament.gov.rs/преноси.2091.html",
+      "checked_at": "2026-10-24T02:52:06.464Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.parlament.gov.rs/%D0%BF%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B8.2091.html",
+      "title": "Народна скупштина Републике Србије | Преноси",
+      "links": [
+        {
+          "text": "",
+          "url": "http://www.youtube.com/user/ParlamentSrbija"
+        },
+        {
+          "text": "",
+          "url": "http://www.youtube.com/user/ParlamentSrbija"
+        },
+        {
+          "text": "",
+          "url": "https://play.google.com/store/apps/details?id=videonet.rs.parlament&hl=sr"
+        }
+      ],
+      "media": [],
+      "frames": [],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-national-Serbia.png",
+      "individual_content_disposition": "Official transmission pages explicitly designate Videonet plenary, committee and archive frames. Followed designated provider navigation; selected business still requires playback and visual identification."
+    },
+    {
+      "id": "national:Hungary",
+      "institution": "Hungary national legislature",
+      "url": "https://www.parlament.hu/elo-kozvetitesek",
+      "checked_at": "2026-10-24T02:52:11.867Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.parlament.hu/elo-kozvetitesek",
+      "title": "CAPTCHA Ellen",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "access_challenge_no_further_interaction",
+      "screenshot": "/tmp/national-formal-national-Hungary.png",
+      "individual_content_disposition": "HTTP 200 page is a CAPTCHA, not a successful institutional content validation. No challenge interaction."
+    },
+    {
+      "id": "national:Poland",
+      "institution": "Poland national legislature",
+      "url": "https://www.sejm.gov.pl/",
+      "checked_at": "2026-10-24T02:52:16.276Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.sejm.gov.pl/",
+      "title": "",
+      "links": [],
+      "media": [],
+      "frames": [
+        "https://www.sejm.gov.pl/_Incapsula_Resource?CWUDNSAI=23&xinfo=6-15826669-0%200NNN%20RT%281792810336676%20121%29%20q%280%20-1%20-1%200%29%20r%281%20-1%29%20B15%2811%2c17483112%2c0%29%20U18&incident_id=1383000700162686376-128127610493800838&edet=15&cinfo=0b000000&rpinfo=0&cip=24.202.72.143&mth=GET"
+      ],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Poland.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Albania",
+      "institution": "Albania national legislature",
+      "url": "https://www.parlament.al/",
+      "checked_at": "2026-10-24T02:52:19.538Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.parlament.al/",
+      "title": "Kuvendi i Shqipërisë",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-national-Albania.png",
+      "individual_content_disposition": "Official homepage rendered and visibly advertises LIVE. No substantive selected player recording validated from this homepage inspection."
+    },
+    {
+      "id": "national:Moldova",
+      "institution": "Moldova national legislature",
+      "url": "https://parlament.md/Portals/",
+      "checked_at": "2026-10-24T02:52:23.385Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://parlament.md/Portals/",
+      "title": "Just a moment...",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-national-Moldova.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "national:Singapore",
+      "institution": "Singapore national legislature",
+      "url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+      "checked_at": "2026-10-24T02:52:25.701Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.mddi.gov.sg/resources/parliament-livestream/",
+      "title": "ERROR: The request could not be satisfied",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "access_challenge_no_further_interaction",
+      "screenshot": "/tmp/national-formal-national-Singapore.png",
+      "individual_content_disposition": "CloudFront returned an access error. No workaround attempted."
+    },
+    {
+      "id": "national:Trinidad and Tobago",
+      "institution": "Trinidad and Tobago national legislature",
+      "url": "https://www.ttparliament.org/parliament-channel/",
+      "checked_at": "2026-10-24T02:52:28.137Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "outcome": "navigation_or_rendering_error",
+      "error": "TimeoutError: page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ttparliament.org/parliament-channel/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "individual_content_disposition": "Navigation timed out within the normal 25-second limit; not proof of no service.",
+      "frames": []
+    },
+    {
+      "id": "national:Lesotho",
+      "institution": "Lesotho national legislature",
+      "url": "https://parliament.ls/",
+      "checked_at": "2026-10-24T02:52:53.200Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://parliament.ls/",
+      "title": "Parliament of Lesotho",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-national-Lesotho.png",
+      "individual_content_disposition": "Official parliamentary homepage rendered; separate upper/lower chamber providers and substantive proceedings remain unconfirmed."
+    },
+    {
+      "id": "chile-camara-sala-iv",
+      "institution": "Camara de Diputadas y Diputados",
+      "url": "https://www.camara.cl/prensa/television.aspx",
+      "formal_candidate": true,
+      "checked_at": "2026-10-24T02:52:59.390Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 403,
+      "final_url": "https://www.camara.cl/prensa/television.aspx",
+      "title": "Attention Required! | Cloudflare",
+      "links": [],
+      "media": [],
+      "frames": [],
+      "access_hold": true,
+      "outcome": "http_error_with_rendered_body",
+      "screenshot": "/tmp/national-formal-chile-camara-sala-iv.png",
+      "individual_content_disposition": "HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved."
+    },
+    {
+      "id": "france-senate",
+      "institution": "Sénat",
+      "url": "https://videos.senat.fr/direct",
+      "formal_candidate": true,
+      "checked_at": "2026-10-24T02:53:01.884Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://videos.senat.fr/direct",
+      "title": "Sénat français - Vidéothèque - En direct",
+      "links": [
+        {
+          "text": "Aller au contenu",
+          "url": "https://videos.senat.fr/direct#contenu"
+        },
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/c/senat"
+        },
+        {
+          "text": "",
+          "url": "https://videos.senat.fr/"
+        },
+        {
+          "text": "Accueil",
+          "url": "https://videos.senat.fr/index"
+        },
+        {
+          "text": "En direct",
+          "url": "https://videos.senat.fr/direct"
+        },
+        {
+          "text": "Voir toutes les vidéos",
+          "url": "https://videos.senat.fr/videos"
+        },
+        {
+          "text": "Par ordre chronologique",
+          "url": "https://videos.senat.fr/videos"
+        },
+        {
+          "text": "Par nombre de vues",
+          "url": "https://videos.senat.fr/videos.vues"
+        },
+        {
+          "text": "Collectivités territoriales",
+          "url": "https://videos.senat.fr/theme.1"
+        },
+        {
+          "text": "Agriculture et pêche",
+          "url": "https://videos.senat.fr/theme.2"
+        },
+        {
+          "text": "Société",
+          "url": "https://videos.senat.fr/theme.3"
+        },
+        {
+          "text": "Affaires étrangères et coopération",
+          "url": "https://videos.senat.fr/theme.4"
+        },
+        {
+          "text": "Police et sécurité",
+          "url": "https://videos.senat.fr/theme.5"
+        },
+        {
+          "text": "Environnement",
+          "url": "https://videos.senat.fr/theme.7"
+        },
+        {
+          "text": "Union européenne",
+          "url": "https://videos.senat.fr/theme.8"
+        },
+        {
+          "text": "Pouvoirs publics et Constitution",
+          "url": "https://videos.senat.fr/theme.9"
+        },
+        {
+          "text": "Budget",
+          "url": "https://videos.senat.fr/theme.10"
+        },
+        {
+          "text": "Traités et conventions",
+          "url": "https://videos.senat.fr/theme.11"
+        },
+        {
+          "text": "Culture",
+          "url": "https://videos.senat.fr/theme.12"
+        },
+        {
+          "text": "Famille",
+          "url": "https://videos.senat.fr/theme.13"
+        },
+        {
+          "text": "Justice",
+          "url": "https://videos.senat.fr/theme.14"
+        },
+        {
+          "text": "Recherche, sciences et techniques",
+          "url": "https://videos.senat.fr/theme.15"
+        },
+        {
+          "text": "Logement et urbanisme",
+          "url": "https://videos.senat.fr/theme.16"
+        },
+        {
+          "text": "Économie et finances, fiscalité",
+          "url": "https://videos.senat.fr/theme.17"
+        },
+        {
+          "text": "Outre-mer",
+          "url": "https://videos.senat.fr/theme.18"
+        },
+        {
+          "text": "Fonction publique",
+          "url": "https://videos.senat.fr/theme.19"
+        },
+        {
+          "text": "Questions sociales et santé",
+          "url": "https://videos.senat.fr/theme.20"
+        },
+        {
+          "text": "Transports",
+          "url": "https://videos.senat.fr/theme.21"
+        },
+        {
+          "text": "Travail",
+          "url": "https://videos.senat.fr/theme.22"
+        },
+        {
+          "text": "Anciens combattants",
+          "url": "https://videos.senat.fr/theme.23"
+        },
+        {
+          "text": "Éducation",
+          "url": "https://videos.senat.fr/theme.24"
+        },
+        {
+          "text": "Sécurité sociale",
+          "url": "https://videos.senat.fr/theme.25"
+        },
+        {
+          "text": "PME, commerce et artisanat",
+          "url": "https://videos.senat.fr/theme.28"
+        },
+        {
+          "text": "Défense",
+          "url": "https://videos.senat.fr/theme.29"
+        },
+        {
+          "text": "Aménagement du territoire",
+          "url": "https://videos.senat.fr/theme.30"
+        },
+        {
+          "text": "Sports",
+          "url": "https://videos.senat.fr/theme.31"
+        },
+        {
+          "text": "Énergie",
+          "url": "https://videos.senat.fr/theme.32"
+        },
+        {
+          "text": "Entreprises",
+          "url": "https://videos.senat.fr/theme.33"
+        },
+        {
+          "text": "Toutes les séances",
+          "url": "https://videos.senat.fr/chaine.seance-publique"
+        },
+        {
+          "text": "Questions au Gouvernement",
+          "url": "https://videos.senat.fr/chaine.questions-au-gouvernement"
+        },
+        {
+          "text": "Présidence du Sénat",
+          "url": "https://videos.senat.fr/commission.PRES"
+        },
+        {
+          "text": "Toutes les vidéos des commissions",
+          "url": "https://videos.senat.fr/chaine.commissions"
+        },
+        {
+          "text": "Commission des affaires économiques",
+          "url": "https://videos.senat.fr/commission.ECON"
+        },
+        {
+          "text": "Commission des affaires étrangères, de la défense et des forces armées",
+          "url": "https://videos.senat.fr/commission.ETRD"
+        },
+        {
+          "text": "Commission des affaires sociales",
+          "url": "https://videos.senat.fr/commission.SOCI"
+        },
+        {
+          "text": "Commission de l'aménagement du territoire et du développement durable",
+          "url": "https://videos.senat.fr/commission.DEVE"
+        },
+        {
+          "text": "Commission de la culture, de l’éducation, de la communication et du sport",
+          "url": "https://videos.senat.fr/commission.AFCL"
+        },
+        {
+          "text": "Commission des finances",
+          "url": "https://videos.senat.fr/commission.FINC"
+        },
+        {
+          "text": "Commission des lois",
+          "url": "https://videos.senat.fr/commission.LOIS"
+        },
+        {
+          "text": "Commission des affaires européennes",
+          "url": "https://videos.senat.fr/commission.AFEU"
+        },
+        {
+          "text": "Toutes les vidéos de l’office et des délégations",
+          "url": "https://videos.senat.fr/chaine.delegations-et-office"
+        },
+        {
+          "text": "Délégation aux collectivités territoriales et à la décentralisation",
+          "url": "https://videos.senat.fr/commission.coll"
+        },
+        {
+          "text": "Délégation aux droits des femmes et à l’égalité des chances entre les hommes et les femmes",
+          "url": "https://videos.senat.fr/commission.DDRO"
+        },
+        {
+          "text": "Délégation aux entreprises",
+          "url": "https://videos.senat.fr/commission.ENTR"
+        },
+        {
+          "text": "Délégation sénatoriale aux outre-mer",
+          "url": "https://videos.senat.fr/commission.OUTR"
+        }
+      ],
+      "media": [],
+      "frames": [],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-france-senate.png",
+      "individual_content_disposition": "Official live page rendered off-air with archived navigation; legal prior-link notification condition still prevents publication. No notification sent."
+    },
+    {
+      "id": "uruguay-rivera-departmental-board-webcasts",
+      "institution": "Junta Departamental de Rivera",
+      "url": "https://www.youtube.com/channel/UCx4wVmrEe0TsFUvxFZsFPSg/streams",
+      "formal_candidate": true,
+      "checked_at": "2026-10-24T02:53:05.489Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.youtube.com/channel/UCx4wVmrEe0TsFUvxFZsFPSg/streams",
+      "title": "Junta Departamental de Rivera _ OFICIAL - YouTube",
+      "links": [
+        {
+          "text": "",
+          "url": "https://www.youtube.com/"
+        },
+        {
+          "text": "Sign in",
+          "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel%252FUCx4wVmrEe0TsFUvxFZsFPSg%252Fstreams&hl=en-GB&ec=65620"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/"
+        },
+        {
+          "text": "Home",
+          "url": "https://www.youtube.com/"
+        },
+        {
+          "text": "Shorts",
+          "url": "https://www.youtube.com/shorts/"
+        },
+        {
+          "text": "Subscriptions",
+          "url": "https://www.youtube.com/feed/subscriptions"
+        },
+        {
+          "text": "You",
+          "url": "https://www.youtube.com/feed/you"
+        },
+        {
+          "text": "1:48:59",
+          "url": "https://www.youtube.com/watch?v=ut61ODMakV4"
+        },
+        {
+          "text": "Junta Departamental Sesión 21/10/26",
+          "url": "https://www.youtube.com/watch?v=ut61ODMakV4"
+        },
+        {
+          "text": "1:21:32",
+          "url": "https://www.youtube.com/watch?v=kwyRYLk1Z-Q"
+        },
+        {
+          "text": "Junta Departamental Sesión 07/10/26",
+          "url": "https://www.youtube.com/watch?v=kwyRYLk1Z-Q"
+        },
+        {
+          "text": "2:02:43",
+          "url": "https://www.youtube.com/watch?v=7yiatLjlDiI"
+        },
+        {
+          "text": "Junta Departamental Sesión 16/09/26",
+          "url": "https://www.youtube.com/watch?v=7yiatLjlDiI"
+        },
+        {
+          "text": "2:22:15",
+          "url": "https://www.youtube.com/watch?v=0HZMgPUhQQA"
+        },
+        {
+          "text": "Junta Departamental Sesión 16/09/26",
+          "url": "https://www.youtube.com/watch?v=0HZMgPUhQQA"
+        },
+        {
+          "text": "3:31:43",
+          "url": "https://www.youtube.com/watch?v=ho_peO46yVE"
+        },
+        {
+          "text": "Junta Departamental Sesión 02/09/26",
+          "url": "https://www.youtube.com/watch?v=ho_peO46yVE"
+        },
+        {
+          "text": "1:09:22",
+          "url": "https://www.youtube.com/watch?v=18ahnF3VXew"
+        },
+        {
+          "text": "Junta Departamental Sesión 19/08/26",
+          "url": "https://www.youtube.com/watch?v=18ahnF3VXew"
+        },
+        {
+          "text": "2:54:43",
+          "url": "https://www.youtube.com/watch?v=dYY1wr_t20Q"
+        },
+        {
+          "text": "Junta Departamental Sesión 05/08/26",
+          "url": "https://www.youtube.com/watch?v=dYY1wr_t20Q"
+        },
+        {
+          "text": "1:11:17",
+          "url": "https://www.youtube.com/watch?v=r5o_BlUO5-c"
+        },
+        {
+          "text": "Junta Departamental Sesión 15/07/26",
+          "url": "https://www.youtube.com/watch?v=r5o_BlUO5-c"
+        },
+        {
+          "text": "1:23:23",
+          "url": "https://www.youtube.com/watch?v=i-sAboqpsSg"
+        },
+        {
+          "text": "Junta Departamental Sesión Extraordinaria 8/7/26",
+          "url": "https://www.youtube.com/watch?v=i-sAboqpsSg"
+        },
+        {
+          "text": "51:41",
+          "url": "https://www.youtube.com/watch?v=kQhU_0xhehA"
+        },
+        {
+          "text": "Junta Departamental Sesión Ordinaria 1/7/26",
+          "url": "https://www.youtube.com/watch?v=kQhU_0xhehA"
+        },
+        {
+          "text": "1:53:40",
+          "url": "https://www.youtube.com/watch?v=jHDUZzJznOU"
+        },
+        {
+          "text": "Junta Departamental Sesión Ordinaria 1/7/26",
+          "url": "https://www.youtube.com/watch?v=jHDUZzJznOU"
+        },
+        {
+          "text": "12:06",
+          "url": "https://www.youtube.com/watch?v=iFEDKK_LWSg"
+        },
+        {
+          "text": "Junta Departamental Sesión Ordinaria 17-06-26",
+          "url": "https://www.youtube.com/watch?v=iFEDKK_LWSg"
+        },
+        {
+          "text": "56:58",
+          "url": "https://www.youtube.com/watch?v=zLPLJG214A0"
+        },
+        {
+          "text": "Junta Departamental Sesión Ordinaria 17-06-26",
+          "url": "https://www.youtube.com/watch?v=zLPLJG214A0"
+        },
+        {
+          "text": "0:39",
+          "url": "https://www.youtube.com/watch?v=0vES0RkhYPc"
+        },
+        {
+          "text": "Junta Departamental Sesión Ordinaria",
+          "url": "https://www.youtube.com/watch?v=0vES0RkhYPc"
+        },
+        {
+          "text": "0:07",
+          "url": "https://www.youtube.com/watch?v=hNsDj-awqik"
+        },
+        {
+          "text": "Sesion Ordinaria 15/10/2025",
+          "url": "https://www.youtube.com/watch?v=hNsDj-awqik"
+        },
+        {
+          "text": "3:49:34",
+          "url": "https://www.youtube.com/watch?v=tSaULbEqa9w"
+        },
+        {
+          "text": "Sesion Ordinaria 15 10 2025",
+          "url": "https://www.youtube.com/watch?v=tSaULbEqa9w"
+        },
+        {
+          "text": "53:43",
+          "url": "https://www.youtube.com/watch?v=HHxvroyQlE8&pp=0gcJCS8MAYcqIYzv"
+        },
+        {
+          "text": "Sesion Extraordinaria 08 10 2025",
+          "url": "https://www.youtube.com/watch?v=HHxvroyQlE8&pp=0gcJCS8MAYcqIYzv"
+        },
+        {
+          "text": "1:15:04",
+          "url": "https://www.youtube.com/watch?v=KM5eumk5JO8"
+        },
+        {
+          "text": "sesom 17 09",
+          "url": "https://www.youtube.com/watch?v=KM5eumk5JO8"
+        },
+        {
+          "text": "59:54",
+          "url": "https://www.youtube.com/watch?v=s8wIWa43Pg8"
+        },
+        {
+          "text": "Sesion Extraordinaria 28 08 2025",
+          "url": "https://www.youtube.com/watch?v=s8wIWa43Pg8"
+        },
+        {
+          "text": "1:50:48",
+          "url": "https://www.youtube.com/watch?v=ew3zB5JE4pA"
+        },
+        {
+          "text": "26/08/2025, La Junta Departamental de Rivera recibió a la Gremial de Conaprole",
+          "url": "https://www.youtube.com/watch?v=ew3zB5JE4pA"
+        },
+        {
+          "text": "2:57:13",
+          "url": "https://www.youtube.com/watch?v=FGi9JwWthG4"
+        },
+        {
+          "text": "20/08/2025",
+          "url": "https://www.youtube.com/watch?v=FGi9JwWthG4"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCx4wVmrEe0TsFUvxFZsFPSg/streams"
+        }
+      ],
+      "media": [
+        {
+          "tag": "VIDEO",
+          "currentTime": 0,
+          "duration": null,
+          "readyState": 0,
+          "width": null,
+          "paused": true
+        }
+      ],
+      "frames": [
+        "about:blank"
+      ],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-uruguay-rivera-departmental-board-webcasts.png",
+      "individual_content_disposition": "Official recording index still lists October proceedings. Prior designation and selected substantive playback retained; recovered exact Spanish identity search returned no matches. An exact institution item remains unresolved; no-result is not proof of absence."
+    },
+    {
+      "id": "france-senate-legal",
+      "institution": "Sénat hyperlink and video conditions",
+      "url": "https://www.senat.fr/mentions-legales.html",
+      "checked_at": "2026-10-24T02:53:08.747Z",
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "publication_validated": false,
+      "status": 200,
+      "final_url": "https://www.senat.fr/mentions-legales.html",
+      "title": "Mentions légales | Sénat",
+      "links": [
+        {
+          "text": "Aller au contenu",
+          "url": "https://www.senat.fr/mentions-legales.html#main"
+        },
+        {
+          "text": "Aller à la navigation",
+          "url": "https://www.senat.fr/mentions-legales.html#nav"
+        },
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/c/senat"
+        },
+        {
+          "text": "Découvrez le fonctionnement de la séance publique",
+          "url": "https://www.senat.fr/travaux-parlementaires/seance-publique.html"
+        },
+        {
+          "text": "Dérouleurs",
+          "url": "https://www.senat.fr/travaux-parlementaires/seance-publique/derouleurs.html"
+        },
+        {
+          "text": "Direct vidéo",
+          "url": "http://videos.senat.fr/video/seance_direct.html"
+        },
+        {
+          "text": "Application \"En séance\"",
+          "url": "https://www.senat.fr/enseance/textes/accueil.html"
+        },
+        {
+          "text": "Délégation aux droits des femmes et à l’égalité des chances entre les hommes et les femmes",
+          "url": "https://www.senat.fr/travaux-parlementaires/office-et-delegations/delegation-aux-droits-des-femmes-et-a-legalite-des-chances.html"
+        },
+        {
+          "text": "Comptes rendus",
+          "url": "https://www.senat.fr/seances/comptes-rendus.html"
+        },
+        {
+          "text": "Les Archives du Sénat",
+          "url": "https://archives.senat.fr/"
+        },
+        {
+          "text": "Assister aux séances",
+          "url": "https://www.senat.fr/le-senat-et-vous/assister-aux-seances.html"
+        },
+        {
+          "text": "L'Europe en séance publique",
+          "url": "https://www.senat.fr/europe-et-international/europe/leurope-en-seance-publique.html"
+        },
+        {
+          "text": "Vidéos",
+          "url": "https://videos.senat.fr/index"
+        },
+        {
+          "text": "",
+          "url": "https://videos.senat.fr/index"
+        },
+        {
+          "text": "",
+          "url": "https://archives.senat.fr/"
+        },
+        {
+          "text": "",
+          "url": "https://www.senat.fr/enseance/textes/accueil.html"
+        },
+        {
+          "text": "",
+          "url": "https://www.senat.fr/basile/rechercheSeance.do"
+        },
+        {
+          "text": "videos.senat.fr",
+          "url": "https://videos.senat.fr/"
+        },
+        {
+          "text": "Partager sur X",
+          "url": "https://twitter.com/share?url=https%3A%2F%2Fwww.senat.fr%2Fmentions-legales.html&text=Mentions%20l%C3%A9gales"
+        },
+        {
+          "text": "Partager sur Facebook",
+          "url": "http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.senat.fr%2Fmentions-legales.html"
+        },
+        {
+          "text": "Partager sur Linkedin",
+          "url": "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.senat.fr%2Fmentions-legales.html&title=Mentions%20l%C3%A9gales"
+        },
+        {
+          "text": "Partager par courriel",
+          "url": "mailto:?subject=Vu%20sur%20le%20site%20S%C3%A9nat%20%3A%20Mentions%20l%C3%A9gales&body=Une%20personne%20vous%20invite%20%C3%A0%20consulter%20une%20page%20du%20site%20du%20S%C3%A9nat%20%3A%20https%3A%2F%2Fwww.senat.fr%2Fmentions-legales.html"
+        },
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/c/senat"
+        },
+        {
+          "text": "Mentions légales",
+          "url": "https://www.senat.fr/mentions-legales.html"
+        }
+      ],
+      "media": [],
+      "frames": [],
+      "access_hold": false,
+      "outcome": "rendered_primary_route_requires_source_specific_review",
+      "screenshot": "/tmp/national-formal-france-senate-legal.png",
+      "individual_content_disposition": "Current primary legal notice still requires prior webmaster notification for hyperlinks, with attribution and noncommercial conditions. No contact made."
+    }
+  ]
+}

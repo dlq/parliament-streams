@@ -1,0 +1,74 @@
+{
+  "method": "Later selected point in the first dated official committee webcast in Chromium/WebKit, muted advancing decoded-frame and offset checks. Interpretation links are documented but not all audio tracks audibly tested.",
+  "results": [
+    {
+      "body_id": "canada--new-brunswick",
+      "url": "https://www.legnb.ca/en/webcasts/1254",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T03:01:15.991Z",
+      "offset": 3600,
+      "muted": true,
+      "status": 200,
+      "title": "Standing Committee on Public Accounts - October 01, 2026 - Legislative Assembly of New Brunswick",
+      "first": {
+        "time": 3602.779109,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 246,
+        "error": null
+      },
+      "later": {
+        "time": 3604.983516,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 312,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-nb-later-1254-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Participant speaking at a lit red table microphone during the Public Accounts committee recording."
+    },
+    {
+      "body_id": "canada--new-brunswick",
+      "url": "https://www.legnb.ca/en/webcasts/1254",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T03:01:31.274Z",
+      "offset": 3600,
+      "muted": true,
+      "status": 200,
+      "title": "Standing Committee on Public Accounts - October 01, 2026 - Legislative Assembly of New Brunswick",
+      "first": {
+        "time": 3603.358172569,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 238,
+        "error": null
+      },
+      "later": {
+        "time": 3605.564326403,
+        "duration": 23573.941999999995,
+        "width": 1920,
+        "height": 1080,
+        "ready": 4,
+        "frames": 298,
+        "error": null
+      },
+      "decoded": true,
+      "offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-nb-later-1254-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Participant speaking at a lit red table microphone during the Public Accounts committee recording."
+    }
+  ],
+  "review_scope": "Selected muted decoded frames visually reviewed in both engines. Meeting dates come from institution-designated titles, not an independently read meeting clock; audible tracks and complete service coverage are unverified."
+}

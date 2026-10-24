@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. Ninth plenary of first2026 sitting period, member reading at DPRD Kalteng lectern under Rapat Paripurna caption; recent upload, exact date not independently read from frame. Eighth plenary of first2026 sitting period, separate member reading at same branded assembly lectern; exact meeting date not independently established. Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "indonesia-kalimantan-tengah-recordings",
+    "name": "Central Kalimantan Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Central Kalimantan",
+    "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Tengah",
+    "external_ids": {
+      "wikidata_qid": "Q25461958",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q25461958",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Wikidata revision 2482943619; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "Indonesian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://dprd.kalteng.go.id/",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. Ninth plenary of first2026 sitting period, member reading at DPRD Kalteng lectern under Rapat Paripurna caption; recent upload, exact date not independently read from frame. Eighth plenary of first2026 sitting period, separate member reading at same branded assembly lectern; exact meeting date not independently established. Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://dprd.kalteng.go.id/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://dprd.kalteng.go.id/",
+        "https://www.youtube.com/@dprdkalteng",
+        "https://www.youtube.com/@DPRDKALTENG"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

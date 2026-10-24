@@ -1,0 +1,306 @@
+{
+  "research_date": "2026-10-23",
+  "scope": "Cook Islands, Bangsamoro and Vojvodina follow-up, plus Guernsey from the remaining special-status inventory. This is a bounded validation batch, not completion of the inventory.",
+  "method": "Normal official-site and provider navigation; public YouTube recording playback measured with advancing time and decoded frames. Chromium and WebKit connection checks; no login, access-control bypass or outreach.",
+  "added": [
+    {
+      "cid": "cook-islands-parliament-archive",
+      "name": "Cook Islands Parliament Archive (September 2020)",
+      "level": "national",
+      "region": "Cook Islands",
+      "leg": "Parliament of the Cook Islands",
+      "language": "Unknown",
+      "url": "https://www.youtube.com/channel/UC6NJVTHu-5eMP88UrGi7KqA/streams",
+      "calendar": "https://parliament.gov.ck/calendar-1/",
+      "entity": {
+        "name": "Parliament of the Cook Islands",
+        "qid": "Q7138950",
+        "revision": 2527249210,
+        "label": {
+          "language": "en",
+          "value": "Parliament of the Cook Islands"
+        },
+        "description": {
+          "language": "en",
+          "value": "unicameral legislature of the Cook Islands"
+        },
+        "official_websites": [
+          "http://www.parliament.gov.ck/"
+        ]
+      },
+      "lid": "new-zealand--cook-islands",
+      "authority": [
+        "https://parliament.gov.ck/wp-content/uploads/2022/07/CONSTITUTION-OF-THE-COOK-ISLANDS-JUNE-2022.pdf",
+        "https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific/cook-islands?l=en_NZ"
+      ],
+      "assessment": "Self-governing state in free association with New Zealand, not a New Zealand province. Constitution reprinted 13 June 2022, articles 13, 39, 70 and 71 establish responsible parliamentary government, general legislation, appropriations and audit scrutiny. Classified national; audit grouping under New Zealand is only a research/search association.",
+      "note": "The official Parliament live page footer designates this YouTube channel. Two full sitting recordings from 29 and 30 September 2020 decoded at 854x480 with advancing time and frames. Historical archive only: the current official live page has no player, the sampled Facebook replay is unavailable, and no current sitting broadcast was validated.",
+      "access": "Audio language coverage was not assessed in the browser playback checks. No text tracks were exposed; captions, sign language and audio description remain unknown.",
+      "terms": [
+        "https://parliament.gov.ck/live/",
+        "https://parliament.gov.ck/parliamenttv/"
+      ],
+      "rights": "Official Parliament pages designate public viewing routes and carry a copyright notice. No independent audiovisual reuse grant was established; provider access does not authorize extraction, embedding or redistribution.",
+      "recommendation": "Historical archive: sampled sittings are from September 2020. Current live coverage is unverified. Open the official channel; independent playback or redistribution requires a separate rights review.",
+      "samples": [
+        {
+          "key": "cook-2020",
+          "url": "https://www.youtube.com/watch?v=cNljHkAPy0Q",
+          "title": "Parliament Sitting - 30 September 2020 - 1pm Session - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.045012,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 8175.021,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.087072,
+            "frames": 186
+          }
+        },
+        {
+          "key": "cook-2020-second",
+          "url": "https://www.youtube.com/watch?v=fTtUFU96rtk",
+          "title": "Parliament Sitting - 29 September 2020 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.023696,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 6200.021,
+            "frames": 126,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.067302,
+            "frames": 186
+          }
+        }
+      ],
+      "live_validated": false
+    },
+    {
+      "cid": "guernsey-states-meeting-recordings",
+      "name": "Guernsey States Meeting Recordings",
+      "level": "subnational",
+      "region": "Guernsey",
+      "leg": "States of Deliberation of Guernsey",
+      "language": "English",
+      "url": "https://parliament.gg/parliamentary-business/meetings",
+      "calendar": "https://parliament.gg/parliamentary-business/meetings",
+      "entity": {
+        "name": "States of Guernsey",
+        "qid": "Q1368324",
+        "revision": 2553243221,
+        "label": {
+          "language": "en",
+          "value": "States of Guernsey"
+        },
+        "description": {
+          "language": "en",
+          "value": "unicameral legislative body of the Bailiwick of Guernsey"
+        },
+        "official_websites": [
+          "https://www.gov.gg/parliament"
+        ]
+      },
+      "lid": "united-kingdom--guernsey",
+      "authority": [
+        "https://parliament.gg/about/system-of-government/how-laws-are-made",
+        "https://parliament.gg/",
+        "https://parliament.gg/parliamentary-business/scrutiny-reports",
+        "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+      ],
+      "assessment": "States of Deliberation: primary laws, ordinances, annual budget and scrutiny of legislation, policy, services and expenditure are documented by Parliament. Guernsey is a Crown Dependency jurisdiction, not part of the United Kingdom. Alderney and Sark have separate legislatures; publication does not claim their proceedings or an ordinary UK subdivision.",
+      "note": "The official 21 October 2026 meeting page links to morning and afternoon recordings on the States of Guernsey channel. Both decoded at 640x360 with advancing time and frames; the afternoon recording is unlisted but explicitly linked by Parliament. The index also designates BBC live coverage, which was not tested on air. A 22 October row has an obvious year typo (0026); raw labels are not reliable XMLTV dates.",
+      "access": "The source and recording metadata are in English; full audio-language coverage was not assessed. No text tracks were exposed. Service-wide captions, sign language and audio description remain unknown.",
+      "terms": [
+        "https://parliament.gg/information/terms-and-conditions"
+      ],
+      "rights": "Parliament encourages links without permission. Site-owned material has a limited research/private-study/internal-circulation reproduction allowance with accuracy and attribution conditions; third-party material is excluded. This does not establish unrestricted audiovisual extraction, embedding or retransmission of linked YouTube or BBC media.",
+      "recommendation": "Open the official meeting index for recordings and the designated live route. Retain link-out only; reviewed site-content permissions do not establish unrestricted reuse of provider media.",
+      "samples": [
+        {
+          "key": "guernsey-am",
+          "url": "https://www.youtube.com/watch?v=0sl5WKU6f9I",
+          "title": "States Meeting 21/10/26 Morning session - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.03446,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 10502.181,
+            "frames": 105,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.063703,
+            "frames": 156
+          }
+        },
+        {
+          "key": "guernsey-pm",
+          "url": "https://www.youtube.com/watch?v=QVKnYsxWNas",
+          "title": "States Meeting afternoon 21/10/26 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.038078,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 10630.221,
+            "frames": 105,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.070425,
+            "frames": 156
+          }
+        }
+      ],
+      "live_validated": false
+    }
+  ],
+  "held": [
+    {
+      "key": "bangsamoro",
+      "jurisdiction": "Bangsamoro",
+      "authority_status": "eligible_legislature",
+      "blocker": "Recorded proceedings play, but a current licensed map must exclude Sulu and include the eight SGA municipalities. Terms clauses 12–14 additionally require written notification for a homepage link and prior permission for internal links; no outreach has been authorized or sent. The public-domain footer conflicts with the detailed copyright/reuse terms, so it is not a sufficient independent-media grant.",
+      "next_action": "Retain hold. Reconcile current boundary against PSA codes and licensed geometry. Prepare a notification/permission request for user review before any outreach. Follow signed RA12317 holdover and 30 October assumption rules; do not infer membership from the homepage headline or calendar.",
+      "sources": [
+        "https://parliament.bangsamoro.gov.ph/terms-of-use/",
+        "https://psa.gov.ph/classification/psgc/summary",
+        "https://psa.gov.ph/content/eight-new-municipalities-bangsamoro-autonomous-region-muslim-mindanao",
+        "https://psa.gov.ph/content/province-sulu-officially-transferred-region-ix-zamboanga-peninsula",
+        "https://www.comelec.gov.ph/php-tpls-attachments/References/RelatedLaws/ElectionLaws/ARMM/RA12317.pdf"
+      ]
+    },
+    {
+      "key": "vojvodina",
+      "jurisdiction": "Vojvodina",
+      "authority_status": "eligible_legislature",
+      "blocker": "Legislative authority and RTV1 sitting coverage are established, but both the live service and podcast page fail to connect in Chromium and WebKit. The Parliament video page still renders Page not found. News clips do not establish a full proceedings service.",
+      "next_action": "Validate a full official sitting recording or RTV1 broadcast using normal public access, and review broadcaster media terms before promotion. The failures are environment observations, not a claim that the service is unavailable to everyone.",
+      "sources": [
+        "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=statut&j=EN",
+        "https://www.skupstinavojvodine.gov.rs/Strana.aspx?s=video&j=EN",
+        "https://rtv.rs/sr_lat/uzivo",
+        "https://www.rtv.rs/sr_lat/servisi/podcast/"
+      ],
+      "connection_checks": [
+        {
+          "engine": "webkit",
+          "key": "rtv-live",
+          "url": "https://rtv.rs/sr_lat/uzivo",
+          "error": "page.goto: Could not connect to the server.\nCall log:\n\u001b[2m  - navigating to \"https://rtv.rs/sr_lat/uzivo\", waiting until \"domcontentloaded\"\u001b[22m\n"
+        },
+        {
+          "engine": "webkit",
+          "key": "rtv-podcast",
+          "url": "https://www.rtv.rs/sr_lat/servisi/podcast/",
+          "error": "page.goto: Could not connect to the server.\nCall log:\n\u001b[2m  - navigating to \"https://www.rtv.rs/sr_lat/servisi/podcast/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+        },
+        {
+          "engine": "chromium",
+          "key": "rtv-live",
+          "url": "https://rtv.rs/sr_lat/uzivo",
+          "error": "page.goto: net::ERR_CONNECTION_REFUSED at https://rtv.rs/sr_lat/uzivo\nCall log:\n\u001b[2m  - navigating to \"https://rtv.rs/sr_lat/uzivo\", waiting until \"domcontentloaded\"\u001b[22m\n"
+        },
+        {
+          "engine": "chromium",
+          "key": "rtv-podcast",
+          "url": "https://www.rtv.rs/sr_lat/servisi/podcast/",
+          "error": "page.goto: net::ERR_CONNECTION_REFUSED at https://www.rtv.rs/sr_lat/servisi/podcast/\nCall log:\n\u001b[2m  - navigating to \"https://www.rtv.rs/sr_lat/servisi/podcast/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+        }
+      ]
+    }
+  ],
+  "iptv_added": false,
+  "xmltv_parser_added": false,
+  "bangsamoro_geography": {
+    "current_psa_summary": "5 provinces, 3 cities, 105 municipalities, 2185 barangays; SGA provincial-level grouping: 8 municipalities and 63 barangays. Summary is not itself licensed boundary geometry.",
+    "sga_municipalities": [
+      "Pahamuddin",
+      "Kadayangan",
+      "Nabalawag",
+      "Old Kaabakan",
+      "Kapalawan",
+      "Malidegao",
+      "Tugunan",
+      "Ligawasan"
+    ],
+    "sulu": "Excluded from BARMM by final Supreme Court ruling; PSA confirms transfer to Region IX under EO91 of 30 July 2025.",
+    "districting": "BAA77 August2025 district allocation was struck down; January2026 official committee report says BAA58 is not revived. Do not reuse the older district allocation.",
+    "geometry_leads": [
+      {
+        "url": "https://datacatalog.worldbank.org/search/dataset/0038272/world-bank-official-boundaries",
+        "license": "CC BY 4.0",
+        "metadata_updated": "2026-10-21",
+        "status": "Candidate source only: actual BARMM/SGA geometry has not been inspected or reconciled."
+      },
+      {
+        "url": "https://data.humdata.org/dataset/cod-ab-phl",
+        "status": "HTTP403; no access controls bypassed."
+      }
+    ],
+    "districting_committee_report": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/CR-No.-196-BTA-Bill-No.-403-407-408-411-415-416-Parliam.pdf"
+  },
+  "validation_limits": {
+    "cook_islands": "Historical 2020 full sitting archive only; current Facebook replay unavailable, empty current live player. Women/youth mock parliaments were not counted as legislature proceedings.",
+    "guernsey": "Two plenary recordings, not live/committee validation. Regional outline selects Guernsey main-island component; overview retains separate GG territorial context including Alderney/Sark. This does not attribute those legislatures to the States of Deliberation.",
+    "browsers": "Playback measured in Chromium. Official homepage access tested in Chromium and WebKit. RTV failures in both engines.",
+    "bangsamoro": "Home page calendar still lists sessions after claimed final sitting; do not infer actual occurrence or elected membership. No outreach sent."
+  },
+  "catalogue_sources": 129,
+  "national_sources": 51,
+  "regional_sources": 72,
+  "regional_jurisdictions": 53,
+  "formal_candidates": {
+    "promoted": 31,
+    "researching": 3,
+    "rejected": 1
+  },
+  "language_validation": "Cook Islands audio language was not assessed and is explicitly Unknown, localized using the existing unknown label. Guernsey source metadata is English; full audio-language coverage was not assessed.",
+  "surface_validation": {
+    "method": "Project Playwright; Browser plugin not available",
+    "engines": [
+      "Chromium",
+      "WebKit"
+    ],
+    "viewport_widths": [
+      1280,
+      320
+    ],
+    "flow": "Catalogue country/jurisdiction search, visible archive limitation, flag loading and official link; localized French New Zealand search; map search/selection/keyboard activation; planned calendars.",
+    "catalogue_sources": 129,
+    "regional_jurisdictions": 53,
+    "geometry_checks": "D3 contains Guernsey main island and Rarotonga, excludes Sark and Alderney from the Guernsey regional shape.",
+    "console_errors": [],
+    "horizontal_overflow": false
+  },
+  "verification": {
+    "python_tests": {
+      "passed": 109,
+      "skipped": 1,
+      "coverage_percent": 91
+    },
+    "schema_candidates_history_snapshot": "passed; 129 channels, 35 candidates, current history and snapshot",
+    "format_lint_types_compile": "passed",
+    "html_accessibility": "passed after adding Cook Islands to the map coverage expectation, which previously assumed national entries had IPU codes",
+    "browser_integration": "Chromium and WebKit, 1280px/320px: search, flags, official links, archive label, French NZ association, map keyboard selection and calendars pass; no console errors or overflow",
+    "iptv": "Strict 4 and broader validated 38 unchanged",
+    "git_diff_check": "passed",
+    "publication": "Local working tree only; not committed, pushed or deployed in this research turn"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Official institution currently designates the viewing provider. Health committee22October2026, man speaking at table microphone, institutional identity and provider description. Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "Reviewed page is primarily personal-data/cookie/privacy provisions; no independent audiovisual grant established from it. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+    "Evidence: reports/discovery/2026-10-24-seventeen-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "spain-parlamento-de-cantabria-recordings",
+    "name": "Cantabria Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Cantabria",
+    "legislature": "Parlamento de Cantabria",
+    "external_ids": {
+      "wikidata_qid": "Q3082759",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q3082759",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://parlamento-cantabria.es/",
+    "provenance_note": "Official institution currently designates the viewing provider. Health committee22October2026, man speaking at table microphone, institutional identity and provider description. Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://parlamento-cantabria.es/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Reviewed page is primarily personal-data/cookie/privacy provisions; no independent audiovisual grant established from it. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "evidence": [
+        "https://parlamento-cantabria.es/"
+      ],
+      "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+    }
+  }
+}

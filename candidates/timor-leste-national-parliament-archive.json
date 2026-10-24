@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Primary evidence: https://data.ipu.org/parliament/TL/TL-LC01/",
+    "Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation.",
+    "Source conditions: The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+    "Full decision and playback chain: reports/discovery/2026-10-23-full-queue-decisions.json",
+    "Catalogue, flags, localized country/jurisdiction search, map and planned schedule-source links reconciled. Link-out only; no HLS or implemented EPG promotion."
+  ],
+  "channel": {
+    "id": "timor-leste-national-parliament-archive",
+    "name": "Timor-Leste National Parliament Video Archive",
+    "jurisdiction_level": "national",
+    "country_or_region": "Timor-Leste",
+    "legislature": "Parlamento Nacional de Timor-Leste",
+    "external_ids": {
+      "wikidata_qid": "Q680806",
+      "ipu_country_code": "TL",
+      "ipu_parliament_code": "TL",
+      "ipu_chamber_code": "TL-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q680806",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q680806 revision 2559682000 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/TL/TL-LC01/",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+      }
+    ],
+    "language": "Tetum / Portuguese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.parlamento.tl/videos",
+    "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"timorleste-plenary\", \"tracks\": []}, {\"key\": \"timorleste-second\", \"tracks\": []}]. "
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.parlamento.tl/videos",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+      "evidence": [
+        "https://www.parlamento.tl/"
+      ],
+      "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+    }
+  }
+}

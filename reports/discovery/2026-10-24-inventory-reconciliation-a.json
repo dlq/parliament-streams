@@ -1,0 +1,3069 @@
+{
+  "report_date": "2026-10-24",
+  "scope": "First 24 alphabetical countries of retained EIU 2024 baseline, published 2025;25 full+46 flaweddemocracies. Inventory first; no tier changes, no stream validation or rights clearance.",
+  "basis": "reports/discovery/2026-10-22-subnational-research.json",
+  "method": [
+    "Read all assigned country rows/country_scope_review and retained legal framework URLs.",
+    "Compare official territorial/chamber frameworks where available; distinguish freshly read content, indexed primary excerpts, blocked routes and retained earlier evidence.",
+    "Separate institutions, chambers, services, legal capacities and territory relationships.",
+    "No assertion all constitutional/statutory reforms through 2026 exhaustively certified; explicit bounded followups kept."
+  ],
+  "country_count": 24,
+  "existing_assigned_subnational_rows": 327,
+  "inventory_complete": false,
+  "concrete_findings": [
+    "Belgium: omitted Assemblée réunie distinct lawmaking capacity, shared membership/services with BrusselsParliament.",
+    "Argentina/Australia:24/8 regionalparent counts hide 32/13 regionalchamber units; explicit childlists supplied.",
+    "France: Mayotte renamed Assemblée deMayotte from 1 Jan 2026; TAAF/Clippertonauxiliaryscope missing.",
+    "Denmark:Østdanmark 2026 preparatorybody and 2027 successor transition must be dated.",
+    "CanadaNunatsiavut/GreeceMountAthos: individual special-status authority candidates, no blanketeligibleclassification.",
+    "FinlandSámiParliament/BotswanaNtloyaDikgosi: explicit cultural/advisoryscope, not inferredlegislativeauthority."
+  ],
+  "records": [
+    {
+      "country": "Albania",
+      "tier": "tier2",
+      "existing_subnational_rows": 12,
+      "existing_authority_counts": {
+        "outside_default_scope": 12
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "albania--berat",
+          "name": "Këshilli i Qarkut Berat",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--diber",
+          "name": "Këshilli i Qarkut Dibër",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--durres",
+          "name": "Këshilli i Qarkut Durrës",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--elbasan",
+          "name": "Këshilli i Qarkut Elbasan",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--fier",
+          "name": "Këshilli i Qarkut Fier",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--gjirokaster",
+          "name": "Këshilli i Qarkut Gjirokastër",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--korce",
+          "name": "Këshilli i Qarkut Korçë",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--kukes",
+          "name": "Këshilli i Qarkut Kukës",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--lezhe",
+          "name": "Këshilli i Qarkut Lezhë",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--shkoder",
+          "name": "Këshilli i Qarkut Shkodër",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--tirane",
+          "name": "Këshilli i Qarkut Tiranë",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "albania--vlore",
+          "name": "Këshilli i Qarkut Vlorë",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Kuvendi i Shqipërisë"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [],
+      "finding": "12 regional councils present; no proposed new core legislature.",
+      "proposed_corrections_or_additions": [
+        "Keep all 12 exclusions linked to Constitution 110–114 and distinguish generally binding local ordinances from primary lawmaking."
+      ],
+      "unresolved": [
+        "Current council legal powers compared consistently against Czech/Colombian regional threshold; no exhaustive post-source law-change review."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.gjk.gov.al/web/constitution_of_albania_2090.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Constitution articles 110–114 distinguish regional self-government and generally binding ordinances from state legislation. Exclusion must turn on the adopted lawmaking threshold, not merely the word council.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.parlament.al/kuvendi/legjislaturat/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "National Assembly identified as single 140-deputy body.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.gjk.gov.al/web/constitution_of_albania_2090.pdf",
+        "https://qbz.gov.al/alfresco/webdav/Aktet/ligj/kuvendi-i-shqiperise/2015/12/17/139/cons-2019-09-19/LIGJ_139-2015_17122015_p%C3%ABrdit%C3%ABsuar.pdf",
+        "https://www.instat.gov.al/en/themes/general-and-regional-statistics/regions/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Argentina",
+      "tier": "tier2",
+      "existing_subnational_rows": 24,
+      "existing_authority_counts": {
+        "eligible_legislature": 24
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "argentina--ciudad-autonoma-de-buenos-aires",
+          "name": "Legislatura Ciudad Autónoma de Buenos Aires",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--buenos-aires",
+          "name": "Legislatura Buenos Aires",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--catamarca",
+          "name": "Legislatura Catamarca",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--chaco",
+          "name": "Legislatura Chaco",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--chubut",
+          "name": "Legislatura Chubut",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--cordoba",
+          "name": "Legislatura Córdoba",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--corrientes",
+          "name": "Legislatura Corrientes",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--entre-rios",
+          "name": "Legislatura Entre Ríos",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--formosa",
+          "name": "Legislatura Formosa",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--jujuy",
+          "name": "Legislatura Jujuy",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--la-pampa",
+          "name": "Legislatura La Pampa",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--la-rioja",
+          "name": "Legislatura La Rioja",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--mendoza",
+          "name": "Legislatura Mendoza",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--misiones",
+          "name": "Legislatura Misiones",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--neuquen",
+          "name": "Legislatura Neuquén",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--rio-negro",
+          "name": "Legislatura Rio Negro",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--salta",
+          "name": "Legislatura Salta",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--san-juan",
+          "name": "Legislatura San Juan",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--san-luis",
+          "name": "Legislatura San Luis",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--santa-cruz",
+          "name": "Legislatura Santa Cruz",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--santa-fe",
+          "name": "Legislatura Santa Fe",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--santiago-del-estero",
+          "name": "Legislatura Santiago del Estero",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--tierra-del-fuego",
+          "name": "Legislatura Tierra del Fuego",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "argentina--tucuman",
+          "name": "Legislatura Tucumán",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Cámara de Diputados de la Nación",
+        "Senado de la Nación"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "argentina-chamber-deputies-webcasts",
+          "legislature": "Honorable Cámara de Diputados de la Nación",
+          "official_url": "https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/streams"
+        }
+      ],
+      "finding": "23 provincial legislatures+CABA present, but institution rows collapse 8 bicameral bodies.",
+      "proposed_corrections_or_additions": [
+        "Create named chamber children for 8 bicameral provinces; retain 24 parent institutions and 32 regional chamber units. Do not add a second institution just because it has 2 chambers."
+      ],
+      "unresolved": [
+        "Verify current 2025 SantaFe Constitution against chamber names/changes when populating child IDs; current government publication does not certify every 2026 stream.",
+        "Falklands/Malvinas sovereignty claims must not duplicate existing UK territory legislature; no position on recognition."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.argentina.gob.ar/normativa/constituciones/provinciales-y-caba",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_page_content_review",
+          "finding": "Government constitution directory enumerates CABA and 23 provinces; retained 24 regional names match this territorial checklist.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.argentina.gob.ar/sites/default/files/revista_diciembre_01d_0.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Government institute publication distinguishes 16 unicameral and 8 bicameral regional legislatures. This is a chamber-grain check; older seat counts are not adopted.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.congreso.gob.ar/poderLegislativo.php",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Congress explicitly comprises national Chamber of Deputies and Senate.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.congreso.gob.ar/constitucionSeccion4Cap2.php",
+        "https://www.argentina.gob.ar/normativa/constituciones/provinciales-y-caba"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false,
+      "proposed_bicameral_chamber_children": [
+        {
+          "jurisdiction": "Buenos Aires",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--buenos-aires"
+        },
+        {
+          "jurisdiction": "Catamarca",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--catamarca"
+        },
+        {
+          "jurisdiction": "Corrientes",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--corrientes"
+        },
+        {
+          "jurisdiction": "Entre Ríos",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--entre-rios"
+        },
+        {
+          "jurisdiction": "Mendoza",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--mendoza"
+        },
+        {
+          "jurisdiction": "Salta",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--salta"
+        },
+        {
+          "jurisdiction": "San Luis",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--san-luis"
+        },
+        {
+          "jurisdiction": "Santa Fe",
+          "chambers": [
+            "Cámara de Diputados",
+            "Cámara de Senadores"
+          ],
+          "parent_id": "argentina--santa-fe"
+        }
+      ],
+      "regional_parent_count": 24,
+      "regional_chamber_count_after_decomposition": 32
+    },
+    {
+      "country": "Australia",
+      "tier": "tier1",
+      "existing_subnational_rows": 11,
+      "existing_authority_counts": {
+        "eligible_legislature": 8,
+        "outside_default_scope": 3
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "australia--australian-capital-territory",
+          "name": "Australian Capital Territory Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--new-south-wales",
+          "name": "New South Wales Parliament",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--northern-territory",
+          "name": "Northern Territory Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--queensland",
+          "name": "Queensland Parliament",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--south-australia",
+          "name": "South Australia Parliament",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--tasmania",
+          "name": "Tasmania Parliament",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--victoria",
+          "name": "Victoria Parliament",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--western-australia",
+          "name": "Western Australia Parliament",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "australia--norfolk-island",
+          "name": "Norfolk Island Regional Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "australia--christmas-island",
+          "name": "Shire of Christmas Island Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "australia--cocos-keeling-islands",
+          "name": "Shire of Cocos (Keeling) Islands Council",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "House of Representatives",
+        "Senate"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "australia-parliament-youtube",
+          "legislature": "Parliament of Australia",
+          "official_url": "https://www.youtube.com/@AUSParliamentLive/live"
+        }
+      ],
+      "finding": "6 state+ACT+NT institutions present;5 bicameral parents need chamber children.",
+      "proposed_corrections_or_additions": [
+        "Represent 13 regional chamber units under 8 parents; retain Norfolk/Christmas/Cocos local councils as exclusions."
+      ],
+      "unresolved": [
+        "External territories without elected legislatures need explicit territory-level no-body dispositions; existing 3 council rows are not an exhaustive external-territory checklist.",
+        "Review Norfolk abolishedAssembly 2015 as historical-only, not a current legislature."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://peo.gov.au/understand-our-parliament/how-parliament-works/three-levels-of-government/three-levels-of-government-governing-australia",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Parliamentary Education Office identifies 6 state and 2 territory parliaments; Queensland and the 2 territories unicameral, other 5 states bicameral.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Policy_Briefs/2025-26/AustraliasfederalstructureundertheConstitution",
+        "https://www.infrastructure.gov.au/territories-regions-cities/territories/norfolk-island/governance-administration",
+        "https://www.anao.gov.au/work/performance-audit/management-of-service-delivery-arrangements-australias-external-territories",
+        "https://www.wa.gov.au/government/document-collections/indian-ocean-territories-regional-planning",
+        "https://www.cpahq.org/directory/australian-capital-territory/",
+        "https://www.cpahq.org/directory/new-south-wales/",
+        "https://www.cpahq.org/directory/northern-territory/",
+        "https://www.cpahq.org/directory/queensland/",
+        "https://www.cpahq.org/directory/south-australia/",
+        "https://www.cpahq.org/directory/tasmania/",
+        "https://www.cpahq.org/directory/victoria/",
+        "https://www.cpahq.org/directory/western-australia/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false,
+      "proposed_bicameral_chamber_children": [
+        {
+          "jurisdiction": "New South Wales",
+          "chambers": [
+            "Legislative Assembly",
+            "Legislative Council"
+          ],
+          "parent_id": "australia--new-south-wales"
+        },
+        {
+          "jurisdiction": "South Australia",
+          "chambers": [
+            "House of Assembly",
+            "Legislative Council"
+          ],
+          "parent_id": "australia--south-australia"
+        },
+        {
+          "jurisdiction": "Tasmania",
+          "chambers": [
+            "House of Assembly",
+            "Legislative Council"
+          ],
+          "parent_id": "australia--tasmania"
+        },
+        {
+          "jurisdiction": "Victoria",
+          "chambers": [
+            "Legislative Assembly",
+            "Legislative Council"
+          ],
+          "parent_id": "australia--victoria"
+        },
+        {
+          "jurisdiction": "Western Australia",
+          "chambers": [
+            "Legislative Assembly",
+            "Legislative Council"
+          ],
+          "parent_id": "australia--western-australia"
+        }
+      ],
+      "regional_parent_count": 8,
+      "regional_chamber_count_after_decomposition": 13
+    },
+    {
+      "country": "Austria",
+      "tier": "tier1",
+      "existing_subnational_rows": 9,
+      "existing_authority_counts": {
+        "eligible_legislature": 9
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "austria--landtag-burgenland",
+          "name": "Landtag Burgenland",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--karntner-landtag",
+          "name": "Kärntner Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--landtag-steiermark",
+          "name": "Landtag Steiermark",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--niederosterreichische-landtag",
+          "name": "Niederösterreichische Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--oberosterreichischer-landtag",
+          "name": "Oberösterreichischer Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--salzburger-landtag",
+          "name": "Salzburger Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--tiroler-landtag",
+          "name": "Tiroler Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--vorarlberger-landtag",
+          "name": "Vorarlberger Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "austria--wiener-landtag",
+          "name": "Wiener Landtag",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Nationalrat",
+        "Bundesrat"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "austria-parliament-mediathek",
+          "legislature": "Austrian Parliament",
+          "official_url": "https://www.parlament.gv.at/aktuelles/mediathek"
+        }
+      ],
+      "finding": "All 9 state Landtage represented.",
+      "proposed_corrections_or_additions": [
+        "Normalize Lower/UpperAustria official German institution spelling and keep Vienna Landtag capacity separate from Gemeinderat."
+      ],
+      "unresolved": [
+        "Institution-level 9/9 match does not certify committees, source metadata or all rooms."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.parlament.gv.at/verstehen/politisches-system/bund-laender/landtage",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Austrian Parliament identifies 9 Landtage and national Nationalrat/Bundesrat.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.parlament.gv.at/verstehen/politisches-system/bund-laender/landtage",
+        "https://www.tirol.gv.at/landtag/unser-parlament/aufgaben/",
+        "https://www.calrenet.eu/members/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Belgium",
+      "tier": "tier2",
+      "existing_subnational_rows": 6,
+      "existing_authority_counts": {
+        "eligible_legislature": 6
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+          "name": "Parlement de la Fédération Wallonie-Bruxelles",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "belgium--parlament-der-deutschsprachigen-gemeinschaft",
+          "name": "Parlament der Deutschsprachigen Gemeinschaft",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "belgium--parlement-bruxellois-brussels-parlement",
+          "name": "Parlement bruxellois · Brussels Parlement",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "belgium--parlement-de-wallonie",
+          "name": "Parlement de Wallonie",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "belgium--vlaams-parlement",
+          "name": "Vlaams Parlement",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "belgium--french-community-commission-of-brussels",
+          "name": "Parlement francophone bruxellois",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Chambre des représentants / Kamer van volksvertegenwoordigers",
+        "Sénat / Senaat"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [],
+      "finding": "6 existing regional/community institution rows; at least 1 distinct lawmaking capacity absent.",
+      "proposed_corrections_or_additions": [
+        "Add Assemblée réunie de la Commission communautaire commune / Verenigde Vergadering van de Gemeenschappelijke Gemeenschapscommissie, relationship shares 89 members/services with Brussels Parliament, adopts ordinances.",
+        "Record Flemish Community Commission regulatory/advisory boundary explicitly; do not duplicate Flemish regional/community merged parliament."
+      ],
+      "unresolved": [
+        "Do not treat contaminated COCOM page as sole authority.",
+        "Regional/cultural geographic coverage and shared broadcast services need deduplication."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.lachambre.be/kvvcr/pdf_sections/pri/fiche/fr_26_00.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_pdf_text_review",
+          "finding": "Chamber factsheet dated 1 Feb 2025, page 2: the Brussels language groups also constitute the Assemblée réunie, which adopts ordinances. Distinct lawmaking capacity is missing from the 6 regional rows.",
+          "as_of_scope": "Factsheet 1 Feb 2025 read 24 Oct 2026; no claim of independent membership or separate broadcasting rooms."
+        },
+        {
+          "url": "https://senlex.senate.be/fr/dia/structure/str_88/article/art_3823_fr_2014-01-06/articleversions",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Special Law 12 Jan 1989 article 68: Assemblée réunie and Collège réuni jointly exercise ordinance lawmaking. Search index returned actual text; direct open cache-missed.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.ccc-ggc.brussels/fr/organisation/assemblee-reunie",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_page_content_review_with_contamination_warning",
+          "finding": "Official page describes 89 Brussels members sitting in Assemblée réunie, but fresh page also contains unrelated casino promotion. Treat as source-quality warning; use independent Chamber factsheet/statute for institutional conclusion.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.senate.be/english/ParlRelationEN.html",
+        "https://www.senate.be/virtualtour/halfrond-pres-vlag_en.html",
+        "https://www.parlement.brussels/le-fonctionnement/",
+        "https://www.parlement.brussels/les-competences/",
+        "https://www.parlement-wallonie.be/les-fonctions-du-depute-wallon",
+        "https://ccf.brussels/qui-sommes-nous/competences/",
+        "https://ccf.brussels/qui-sommes-nous/organes-politiques-et-administratifs/gouvernement-francophone-bruxellois/",
+        "https://www.parlementfrancophone.brussels/le-parlement/fichers-photos-divers/pfb_plaquette_2022_a4_pages.pdf",
+        "https://www.calrenet.eu/members/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Botswana",
+      "tier": "tier2",
+      "existing_subnational_rows": 31,
+      "existing_authority_counts": {
+        "outside_default_scope": 31
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "botswana--gaborone",
+          "name": "Gaborone Town/City Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--tlokweng",
+          "name": "Tlokweng District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--ramotswa",
+          "name": "Ramotswa District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--tonota",
+          "name": "Tonota District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--francistown",
+          "name": "Francistown Town/City Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--jwaneng",
+          "name": "Jwaneng Town/City Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--kanye",
+          "name": "Kanye District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--moshupa",
+          "name": "Moshupa District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--charleshill",
+          "name": "Charleshill District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--sowa",
+          "name": "Sowa Town/City Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--mabutsane",
+          "name": "Mabutsane District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--letlhakeng",
+          "name": "Letlhakeng District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--good-hope",
+          "name": "Good Hope District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--tsabong",
+          "name": "Tsabong District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--hukuntsi",
+          "name": "Hukuntsi District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--ghanzi",
+          "name": "Ghanzi District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--okavango",
+          "name": "Okavango District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--chobe",
+          "name": "Chobe District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--north-east",
+          "name": "North East District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--boteti",
+          "name": "Boteti District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--serowe",
+          "name": "Serowe District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--palapye",
+          "name": "Palapye District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--mahalapye",
+          "name": "Mahalapye District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--selebi-phikwe",
+          "name": "Selebi Phikwe Town/City Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--bobirwa",
+          "name": "Bobirwa District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--kgatleng",
+          "name": "Kgatleng District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--tutume",
+          "name": "Tutume District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--north-west",
+          "name": "North West District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--kweneng",
+          "name": "Kweneng District Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--lobatse",
+          "name": "Lobatse Town/City Council",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "botswana--mogoditshane-thamaga",
+          "name": "Mogoditshane-Thamaga District Council",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "National Assembly"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "botswana-national-assembly-webcasts",
+          "legislature": "National Assembly of Botswana",
+          "official_url": "https://www.youtube.com/@BWPARLIAMENT/streams"
+        }
+      ],
+      "finding": "31 local council exclusions present; no autonomous regional parliament established.",
+      "proposed_corrections_or_additions": [
+        "Add explicit national auxiliary exclusion Ntlo ya Dikgosi, with referral/advisory function, rather than inventing an upper legislative chamber."
+      ],
+      "unresolved": [
+        "31 local councils were not freshly reconciled against every 2026 local reform; count is retained, not certified complete."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://parliament.gov.bw/index.php?Itemid=611&id=221&option=com_content&view=article",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Ntlo ya Dikgosi is an advisory body to National Assembly. Document explicitly as national auxiliary exclusion, not a second coequal legislative chamber.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://gov.bw/ministries/ministry-local-government-and-traditional-affairs",
+        "https://www.iec.gov.bw/images/documents/Local_Government_Act.pdf"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "existing_subnational_rows": 27,
+      "existing_authority_counts": {
+        "eligible_legislature": 27
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "brazil--assembleia-legislativa-do-acre",
+          "name": "Assembleia Legislativa do Acre",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-alagoas",
+          "name": "Assembleia Legislativa de Alagoas",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-amapa",
+          "name": "Assembleia Legislativa do Amapá",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-amazonas",
+          "name": "Assembleia Legislativa do Amazonas",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-da-bahia",
+          "name": "Assembleia Legislativa da Bahia",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-ceara",
+          "name": "Assembleia Legislativa do Ceará",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--camara-legislativa-do-distrito-federal",
+          "name": "Câmara Legislativa do Distrito Federal",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-espirito-santo",
+          "name": "Assembleia Legislativa do Espírito Santo",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-goias",
+          "name": "Assembleia Legislativa de Goiás",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-maranhao",
+          "name": "Assembleia Legislativa do Maranhão",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-mato-grosso",
+          "name": "Assembleia Legislativa de Mato Grosso",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-mato-grosso-do-sul",
+          "name": "Assembleia Legislativa de Mato Grosso do Sul",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-minas-gerais",
+          "name": "Assembleia Legislativa de Minas Gerais",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-para",
+          "name": "Assembleia Legislativa do Pará",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-da-paraiba",
+          "name": "Assembleia Legislativa da Paraíba",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-parana",
+          "name": "Assembleia Legislativa do Paraná",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-pernambuco",
+          "name": "Assembleia Legislativa de Pernambuco",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-piaui",
+          "name": "Assembleia Legislativa do Piauí",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-rio-de-janeiro",
+          "name": "Assembleia Legislativa do Rio de Janeiro",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-rio-grande-do-norte",
+          "name": "Assembleia Legislativa do Rio Grande do Norte",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-rio-grande-do-sul",
+          "name": "Assembleia Legislativa do Rio Grande do Sul",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-rondonia",
+          "name": "Assembleia Legislativa de Rondônia",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-roraima",
+          "name": "Assembleia Legislativa de Roraima",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-santa-catarina",
+          "name": "Assembleia Legislativa de Santa Catarina",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-sergipe",
+          "name": "Assembleia Legislativa de Sergipe",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-de-sao-paulo",
+          "name": "Assembleia Legislativa de São Paulo",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "brazil--assembleia-legislativa-do-tocantins",
+          "name": "Assembleia Legislativa do Tocantins",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Câmara dos Deputados",
+        "Senado Federal"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "brazil-tv-camara",
+          "legislature": "Camara dos Deputados",
+          "official_url": "https://www.camara.leg.br/tv/aovivo"
+        },
+        {
+          "id": "brazil-tv-senado-official",
+          "legislature": "Senado Federal do Brasil",
+          "official_url": "https://www12.senado.leg.br/tv/ao-vivo"
+        }
+      ],
+      "finding": "26 state assemblies+FederalDistrict chamber match fresh official directory.",
+      "proposed_corrections_or_additions": [
+        "Retain 27 single-chamber regional parents and distinguish national Senado/Câmara."
+      ],
+      "unresolved": [
+        "Fernando de Noronha administrative/district council and Indigenous-specific bodies need explicit scope notes if expanding special-status inventory; no automatic eligibility from general regulatory powers."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www2.camara.leg.br/a-camara/estruturaadm/mesa/segundavice/interacao-legislativa/links-relacionados-1/legislativos-estaduais",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_page_content_review",
+          "finding": "National Chamber directory lists 26 state assemblies plus Federal District legislative chamber;27 regional rows match its jurisdiction names.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www12.senado.leg.br/institucional/carta-de-servicos/finalidade-e-competencias-legais",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Senate identifies national bicameral Congress.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www2.camara.leg.br/atividade-legislativa/legislacao/Constituicoes_Brasileiras/constituicao-cidada/constituicao-federal/index.html/CF1988.html/?searchterm=servi%C3%A7os+ambientais",
+        "https://www2.camara.leg.br/a-camara/estruturaadm/mesa/segundavice/interacao-legislativa/links-relacionados-1/legislativos-estaduais"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Bulgaria",
+      "tier": "tier2",
+      "existing_subnational_rows": 0,
+      "existing_authority_counts": {},
+      "existing_subnational_institutions": [],
+      "national_chamber_checklist": [
+        "National Assembly"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [],
+      "finding": "No regional legislature established by constitutional regional administration framework.",
+      "proposed_corrections_or_additions": [
+        "Retain 0 core subnational bodies; document appointed governors, municipality exclusion and auxiliary planning councils."
+      ],
+      "unresolved": [
+        "No exhaustive inventory of advisory development councils or every statute amendment."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://parliament.bg/en/const",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Constitution articles 135–143 provide municipalities/regions and appointed regional governors; no separate regional legislative tier established by these provisions.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.government.bg/en/About-Bulgaria/FORM-OF-GOVERNMENT/Form-of-government",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Government identifies unicameral National Assembly.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.mrrb.bg/static/media/ups/articles/attachments/CEGGPAD%282023%298_22BG07_Technical%20Report_fiscal%20decentralisation_FINALd56a91fd01ee99ab560581f6ced1c293.pdf"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Canada",
+      "tier": "tier1",
+      "existing_subnational_rows": 13,
+      "existing_authority_counts": {
+        "eligible_legislature": 13
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "canada--alberta",
+          "name": "Alberta Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--british-columbia",
+          "name": "British Columbia Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--manitoba",
+          "name": "Manitoba Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--new-brunswick",
+          "name": "New Brunswick Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--newfoundland-and-labrador",
+          "name": "Newfoundland and Labrador Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--northwest-territories",
+          "name": "Northwest Territories Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--nova-scotia",
+          "name": "Nova Scotia Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--nunavut",
+          "name": "Nunavut Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--ontario",
+          "name": "Ontario Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--prince-edward-island",
+          "name": "Prince Edward Island Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--quebec",
+          "name": "Assemblée nationale du Québec",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--saskatchewan",
+          "name": "Saskatchewan Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "canada--yukon",
+          "name": "Yukon Legislative Assembly",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "House of Commons",
+        "Senate"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "cpac-ca",
+          "legislature": "Parliament of Canada",
+          "official_url": "https://www.cpac.ca/en/"
+        },
+        {
+          "id": "canada-house-of-commons-parlvu",
+          "legislature": "House of Commons of Canada",
+          "official_url": "https://parlvu.parl.gc.ca/Harmony/en"
+        },
+        {
+          "id": "canada-senate-senvu",
+          "legislature": "Senate of Canada",
+          "official_url": "https://senparlvu.parl.gc.ca/Harmony/"
+        }
+      ],
+      "finding": "All 10 province+3 territory legislatures present; special autonomous Indigenous bodies not exhausted.",
+      "proposed_corrections_or_additions": [
+        "Add Nunatsiavut Assembly as specific authority/scope candidate under NewfoundlandandLabrador with own Inuit legislation/AssemblyAct; do not classify as municipality or add everybandcouncil.",
+        "Retain 13 core provincial/territorial parents; catalogue CPAC aggregate is not a complete federal chamber inventory."
+      ],
+      "unresolved": [
+        "Nunatsiavut detailed lawmaking powers and scope relationship require review of agreement/Act beyondtitle.",
+        "Other treaty-based self-governments such as Nisga’a/Tłı̨chǫ warrant bounded primary-directory review if included; not a claim that all qualify."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.canada.ca/en/intergovernmental-affairs/services/provinces-territories.html",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Federal intergovernmental directory covers 10 provinces/3 territories and legislative-assembly links.13 existing core rows reconcile to this geography.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://nunatsiavut.com/legislation/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_page_content_review",
+          "finding": "Official Inuit government legislation index identifies consolidated Inuit Laws and Nunatsiavut Assembly Act; supports an explicit autonomous legislature scope candidate beyond 13 province/territory rows.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.nunatsiavut.com/wp-content/uploads/2022/01/CIL-N-2-30-11-2021-Nunatsiavut-Assembly-Act.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_pdf_retrieved_title_only",
+          "finding": "Official Assembly Act retrieved 22 pages; title establishes Assembly/powers subject. Text parser returned empty; no detailedsection-specific legal conclusion inferred.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://laws-lois.justice.gc.ca/eng/const/section-92.html?wbdisable=true",
+        "https://laws-lois.justice.gc.ca/eng/acts/N-27.05/section-18.html",
+        "https://laws-lois.justice.gc.ca/eng/acts/N-28.6/section-23.html",
+        "https://laws-lois.justice.gc.ca/eng/acts/Y-2.01/section-18.html",
+        "https://www.cpahq.org/directory/alberta/",
+        "https://www.cpahq.org/directory/british-columbia/",
+        "https://www.cpahq.org/directory/manitoba/",
+        "https://www.cpahq.org/directory/new-brunswick/",
+        "https://www.cpahq.org/directory/newfoundland-and-labrador/",
+        "https://www.cpahq.org/directory/northwest-territories/",
+        "https://www.cpahq.org/directory/nova-scotia/",
+        "https://www.cpahq.org/directory/nunavut/",
+        "https://www.cpahq.org/directory/ontario/",
+        "https://www.cpahq.org/directory/prince-edward-island/",
+        "https://www.cpahq.org/directory/quebec/",
+        "https://www.cpahq.org/directory/saskatchewan/",
+        "https://www.cpahq.org/directory/yukon/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Cape Verde",
+      "tier": "tier2",
+      "existing_subnational_rows": 0,
+      "existing_authority_counts": {},
+      "existing_subnational_institutions": [],
+      "national_chamber_checklist": [
+        "Assembleia Nacional"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "cape-verde-national-assembly-antv",
+          "legislature": "Assembleia Nacional de Cabo Verde",
+          "official_url": "https://www.parlamento.cv/antv/"
+        }
+      ],
+      "finding": "0 regional legislatures established by retained constitutional framework.",
+      "proposed_corrections_or_additions": [
+        "Keep municipal assemblies outside first-level legislative inventory; islands are not automatically 10 parliaments."
+      ],
+      "unresolved": [
+        "Government PDF is older constitutional edition; later regionalization statutes need dated negative-scope check."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.governo.cv/wp-content/uploads/2019/04/cr.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_pdf_framework_retained_and_retrieved",
+          "finding": "Government-hosted Constitution retrieved 107 pages. Retain municipal local-government framework; this file is not an exhaustive 2026 statute/reform check.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.parlamento.cv/dsdip/arquivos/Livro_40anos.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "National Assembly institutional history describes unicameral structure; historical source, not current member count.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.governo.cv/wp-content/uploads/2019/04/cr.pdf"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "existing_subnational_rows": 16,
+      "existing_authority_counts": {
+        "outside_default_scope": 16
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "chile--arica-y-parinacota",
+          "name": "Consejo Regional de Arica y Parinacota",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--tarapaca",
+          "name": "Consejo Regional de Tarapacá",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--antofagasta",
+          "name": "Consejo Regional de Antofagasta",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--atacama",
+          "name": "Consejo Regional de Atacama",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--coquimbo",
+          "name": "Consejo Regional de Coquimbo",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--valparaiso",
+          "name": "Consejo Regional de Valparaíso",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--metropolitana-de-santiago",
+          "name": "Consejo Regional de Metropolitana de Santiago",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--o-higgins",
+          "name": "Consejo Regional de O’Higgins",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--maule",
+          "name": "Consejo Regional de Maule",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--nuble",
+          "name": "Consejo Regional de Ñuble",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--biobio",
+          "name": "Consejo Regional de Biobío",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--la-araucania",
+          "name": "Consejo Regional de La Araucanía",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--los-rios",
+          "name": "Consejo Regional de Los Ríos",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--los-lagos",
+          "name": "Consejo Regional de Los Lagos",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--aysen",
+          "name": "Consejo Regional de Aysén",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "chile--magallanes",
+          "name": "Consejo Regional de Magallanes",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Cámara de Diputadas y Diputados",
+        "Senado"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "chile-camara-tv",
+          "legislature": "Camara de Diputadas y Diputados",
+          "official_url": "https://www.camara.cl/prensa/television.aspx"
+        }
+      ],
+      "finding": "16 regional councils retained as outside default scope; national 2 chambers separate.",
+      "proposed_corrections_or_additions": [
+        "Add explicit special-territory scope disposition for Rapa Nui and JuanFernández; territorial label is not a legislative assembly."
+      ],
+      "unresolved": [
+        "Specific enacted special-territory governance legislation not freshly examined here; do not infer absence of legislative body from regional count."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.bcn.cl/formacioncivica/detalle_guia?h=10221.3%2F45683",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Congress Library identifies Cámara de Diputados and Senado as national bicameral legislature.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.bcn.cl/leychile/Navegar/imprimir?idNorma=242302&idParte=8563606",
+        "https://www.bcn.cl/leychile/Navegar?idNorma=243771",
+        "https://www.chile.gob.cl/chile/sobre-chile/asi-es-chile/organizacion-territorial/organizacion-territorial"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Colombia",
+      "tier": "tier2",
+      "existing_subnational_rows": 33,
+      "existing_authority_counts": {
+        "eligible_legislature": 32,
+        "outside_default_scope": 1
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "colombia--antioquia",
+          "name": "Asamblea Departamental de Antioquia",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--atlantico",
+          "name": "Asamblea Departamental de Atlántico",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--bogota-d-c",
+          "name": "Concejo de Bogotá",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "colombia--bolivar",
+          "name": "Asamblea Departamental de Bolívar",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--boyaca",
+          "name": "Asamblea Departamental de Boyacá",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--caldas",
+          "name": "Asamblea Departamental de Caldas",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--caqueta",
+          "name": "Asamblea Departamental de Caquetá",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--cauca",
+          "name": "Asamblea Departamental de Cauca",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--cesar",
+          "name": "Asamblea Departamental de Cesar",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--cordoba",
+          "name": "Asamblea Departamental de Córdoba",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--cundinamarca",
+          "name": "Asamblea Departamental de Cundinamarca",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--choco",
+          "name": "Asamblea Departamental de Chocó",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--huila",
+          "name": "Asamblea Departamental de Huila",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--la-guajira",
+          "name": "Asamblea Departamental de La Guajira",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--magdalena",
+          "name": "Asamblea Departamental de Magdalena",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--meta",
+          "name": "Asamblea Departamental de Meta",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--narino",
+          "name": "Asamblea Departamental de Nariño",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--norte-de-santander",
+          "name": "Asamblea Departamental de Norte de Santander",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--quindio",
+          "name": "Asamblea Departamental de Quindío",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--risaralda",
+          "name": "Asamblea Departamental de Risaralda",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--santander",
+          "name": "Asamblea Departamental de Santander",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--sucre",
+          "name": "Asamblea Departamental de Sucre",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--tolima",
+          "name": "Asamblea Departamental de Tolima",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--valle-del-cauca",
+          "name": "Asamblea Departamental de Valle del Cauca",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--arauca",
+          "name": "Asamblea Departamental de Arauca",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--casanare",
+          "name": "Asamblea Departamental de Casanare",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--putumayo",
+          "name": "Asamblea Departamental de Putumayo",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--san-andres-providencia-y-santa-catalina",
+          "name": "Asamblea Departamental de San Andrés, Providencia y Santa Catalina",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--amazonas",
+          "name": "Asamblea Departamental de Amazonas",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--guainia",
+          "name": "Asamblea Departamental de Guainía",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--guaviare",
+          "name": "Asamblea Departamental de Guaviare",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--vaupes",
+          "name": "Asamblea Departamental de Vaupés",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "colombia--vichada",
+          "name": "Asamblea Departamental de Vichada",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Cámara de Representantes",
+        "Senado de la República"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "colombia-house-representatives-webcasts",
+          "legislature": "Cámara de Representantes de Colombia",
+          "official_url": "https://www.youtube.com/@CamaraColombia/streams"
+        }
+      ],
+      "finding": "32 departmental assemblies plus Bogotá exclusion present.",
+      "proposed_corrections_or_additions": [
+        "Retain 32 eligible departmental parents and explicit Bogotá municipal/district scope boundary; national 2 chambers separate."
+      ],
+      "unresolved": [
+        "Constitutional ordinance-power threshold should be compared consistently with other regional councils; special Indigenous territorial authorities not exhaustively inventoried."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.camara.gov.co/directorios/entidades-2/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "National Chamber directory identifies Senate as other chamber.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.cancilleria.gov.co/normograma/compilacion/docs/constitucion_politica_1991.htm",
+        "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=177869",
+        "https://bogotajuridica.gov.co/sisjur/normas/Norma1.jsp?dt=S&i=120817"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Costa Rica",
+      "tier": "tier1",
+      "existing_subnational_rows": 0,
+      "existing_authority_counts": {},
+      "existing_subnational_institutions": [],
+      "national_chamber_checklist": [
+        "Asamblea Legislativa"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "costa-rica-assembly-youtube",
+          "legislature": "Asamblea Legislativa",
+          "official_url": "https://www.youtube.com/@AsambleaCRC/live"
+        }
+      ],
+      "finding": "No provincial legislature created by reviewed constitutional territorial/local framework.",
+      "proposed_corrections_or_additions": [
+        "Retain 0 core regional bodies; distinguish provinces, cantons, municipal and autonomous district councils."
+      ],
+      "unresolved": [
+        "Indigenous territorial associations/consultative bodies not automatically first-level legislatures; reforms beyond reviewed source still bounded."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://pgrweb.go.cr/SCIJ/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=871&nValor3=85571&param1=NRTC&strTipM=TC",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Official legal database Constitution articles 168–169 distinguishes provincial territorial divisions from elected canton municipal governments; no provincial chamber established by these sections.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/oecd-regional-outlook-2023-country-notes_48701f02/costa-rica_35880d95/32b2b306-en.pdf",
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2016/12/open-government-in-costa-rica_g1g717dd/9789264265424-en.pdf"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Croatia",
+      "tier": "tier2",
+      "existing_subnational_rows": 21,
+      "existing_authority_counts": {
+        "outside_default_scope": 21
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "croatia--zagreb-county",
+          "name": "Županijska skupština – Zagreb County",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--krapina-zagorje",
+          "name": "Županijska skupština – Krapina-Zagorje",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--sisak-moslavina",
+          "name": "Županijska skupština – Sisak-Moslavina",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--karlovac",
+          "name": "Županijska skupština – Karlovac",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--varazdin",
+          "name": "Županijska skupština – Varaždin",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--koprivnica-krizevci",
+          "name": "Županijska skupština – Koprivnica-Križevci",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--bjelovar-bilogora",
+          "name": "Županijska skupština – Bjelovar-Bilogora",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--primorje-gorski-kotar",
+          "name": "Županijska skupština – Primorje-Gorski Kotar",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--lika-senj",
+          "name": "Županijska skupština – Lika-Senj",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--virovitica-podravina",
+          "name": "Županijska skupština – Virovitica-Podravina",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--pozega-slavonia",
+          "name": "Županijska skupština – Požega-Slavonia",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--brod-posavina",
+          "name": "Županijska skupština – Brod-Posavina",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--zadar",
+          "name": "Županijska skupština – Zadar",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--osijek-baranja",
+          "name": "Županijska skupština – Osijek-Baranja",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--sibenik-knin",
+          "name": "Županijska skupština – Šibenik-Knin",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--vukovar-srijem",
+          "name": "Županijska skupština – Vukovar-Srijem",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--split-dalmatia",
+          "name": "Županijska skupština – Split-Dalmatia",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--istria",
+          "name": "Županijska skupština – Istria",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--dubrovnik-neretva",
+          "name": "Županijska skupština – Dubrovnik-Neretva",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--me-imurje",
+          "name": "Županijska skupština – Međimurje",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "croatia--city-of-zagreb",
+          "name": "Gradska skupština Grada Zagreba",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Hrvatski sabor"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "croatia-parliament-committee-webcasts",
+          "legislature": "Hrvatski sabor",
+          "official_url": "https://www.youtube.com/@saborskatv-odbori3799/streams"
+        }
+      ],
+      "finding": "20 counties+Zagreb present as 21 exclusions.",
+      "proposed_corrections_or_additions": [
+        "Retain count match; explain why regional general acts fail chosen legislative threshold rather than mere council naming."
+      ],
+      "unresolved": [
+        "Eligibility consistency review against Czech regions is warranted; constitution itself establishes representative/regulatory powers, not parliamentary label."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://mpudt.gov.hr/sustav-lokalne-i-podrucne-regionalne-samouprave-23640/23640",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Ministry identifies 20 counties plus City of Zagreb. Existing 21 rows cover this administrative list.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://usud.hr/hr/ustav-rh",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Constitutional Court text provides elected local/regional representative bodies and counties; representative/regulatory status alone does not settle adopted parliamentary eligibility threshold.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.sabor.hr/en/information-access/important-legislation/constitution-republic-croatia-consolidated-text",
+        "https://mpudt.gov.hr/korisne-informacije/iz-djelokruga/lokalna-i-podrucna-regionalna-samouprava-24398/popis-zupanija-gradova-i-opcina-24402/24402?big=1&lang=sk"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Cyprus",
+      "tier": "tier2",
+      "existing_subnational_rows": 6,
+      "existing_authority_counts": {
+        "outside_default_scope": 5,
+        "eligible_legislature": 1
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "cyprus--nicosia",
+          "name": "Συμβούλιο Επαρχιακού Οργανισμού Αυτοδιοίκησης Λευκωσίας",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "cyprus--limassol",
+          "name": "Συμβούλιο Επαρχιακού Οργανισμού Αυτοδιοίκησης Λεμεσού",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "cyprus--larnaca",
+          "name": "Συμβούλιο Επαρχιακού Οργανισμού Αυτοδιοίκησης Λάρνακας",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "cyprus--paphos",
+          "name": "Συμβούλιο Επαρχιακού Οργανισμού Αυτοδιοίκησης Πάφου",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "cyprus--famagusta",
+          "name": "Συμβούλιο Επαρχιακού Οργανισμού Αυτοδιοίκησης Αμμοχώστου",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "cyprus--northern-cyprus-de-facto",
+          "name": "Cumhuriyet Meclisi",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "House of Representatives"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [],
+      "finding": "5 district organisational exclusions and northern de-facto legislature represented.",
+      "proposed_corrections_or_additions": [
+        "Keep CumhuriyetMeclisi explicitly de-facto and separate from RepublicHouse; no recognition inference.",
+        "Cross-reference Akrotiri/Dhekelia as UK special territories governed by Administrator, not new Cyprus elected chambers."
+      ],
+      "unresolved": [
+        "Ministry district route 403; current list not independently refreshed here.",
+        "Northern legislative identity/recognition disclaimer retained; do not add electoral districts as legislatures."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.gov.cy/moi/en/about/directorate-of-local-government/section-of-district-self-government-organizations/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_route_access_failure",
+          "finding": "Direct ministry route returned 403; retained 5 district-body count not independently refreshed from this route.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.parliament.cy/en/general-information/election-composition-and-dissolution-of-the-house-of-representatives",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Own parliamentary source identifies House of Representatives; seats by districts are electoral geography, not district parliaments.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.gov.uk/government/publications/permanent-joint-operating-bases-pjobs/fd",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "UK primary source confirms Akrotiri/Dhekelia SBA administration is separate UK organisation. Associate with UK territory register, not invented Cypriot regional legislature.",
+          "as_of_scope": "UK page updated 28 Aug 2026."
+        },
+        {
+          "url": "https://www.sbaadministration.org/home/legislation/law_reports/SBA_Law_Reports_1988-2020.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "SBA administration legal reports describe Administrator power to make laws under 1960 Order article 4; lawmaking executive does not establish representative assembly.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.gov.cy/moi/en/about/directorate-of-local-government/section-of-district-self-government-organizations/",
+        "https://ombudsman.gov.ct.tr/DUYURULAR/y252ksek-y246netim-denet231isi-ombudsman-%C4%B0lkan-varol-say%C4%B1n-mehmet-diker-ve-say%C4%B1n-mustafa-kasabal%C4%B1n%C4%B1n-ba%C5%9Fvuru-raporunu-yay%C4%B1nlad%C4%B1",
+        "https://cm.gov.ct.tr/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "existing_subnational_rows": 14,
+      "existing_authority_counts": {
+        "eligible_legislature": 14
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "czech-republic--jihocesky-kraj",
+          "name": "Zastupitelstvo Jihočeský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--jihomoravsky-kraj",
+          "name": "Zastupitelstvo Jihomoravský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--karlovarsky-kraj",
+          "name": "Zastupitelstvo Karlovarský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--kralovehradecky-kraj",
+          "name": "Zastupitelstvo Královéhradecký kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--liberecky-kraj",
+          "name": "Zastupitelstvo Liberecký kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--moravskoslezsky-kraj",
+          "name": "Zastupitelstvo Moravskoslezský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--olomoucky-kraj",
+          "name": "Zastupitelstvo Olomoucký kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--pardubicky-kraj",
+          "name": "Zastupitelstvo Pardubický kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--plzensky-kraj",
+          "name": "Zastupitelstvo Plzeňský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--stredocesky-kraj",
+          "name": "Zastupitelstvo Středočeský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--ustecky-kraj",
+          "name": "Zastupitelstvo Ústecký kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--vysocina",
+          "name": "Zastupitelstvo Vysočina",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--zlinsky-kraj",
+          "name": "Zastupitelstvo Zlínský kraj",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "czech-republic--praha",
+          "name": "Zastupitelstvo hlavního města Prahy",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Poslanecká sněmovna",
+        "Senát"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "czech-chamber-of-deputies",
+          "legislature": "Chamber of Deputies of the Parliament of the Czech Republic",
+          "official_url": "https://www.psp.cz/stream/1"
+        }
+      ],
+      "finding": "14 higherregional representatives including Prague match constitutional territory list.",
+      "proposed_corrections_or_additions": [
+        "Normalize malformed mixed-case Czech institution names and keep Prague regional function distinct from municipal council role."
+      ],
+      "unresolved": [
+        "Reconcile adopted regional general-ordinance threshold with Albanian/Croatian exclusions; count match is not enough to resolve legal consistency."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.psp.cz/docs/laws/1997/347.html",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Chamber-hosted Constitutional Act 347/1997 lists 14 higher self-governing regions including Prague; retained 14 names match.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://pspen.psp.cz/chamber-members/legal-framework/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Official constitutional framework separates parliamentary legislative power from regional/municipal self-government. Keep legal basis with accepted Czech regional eligibility.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.psp.cz/docs/laws/constitution.html",
+        "https://mv.gov.cz/soubor/act-no-129-2000-coll-on-regions-establishment-of-regions.aspx",
+        "https://vlada.gov.cz/assets/vydavatelstvi/vydane-publikace/Ustava-sazba-5-_def.pdf",
+        "https://csu.gov.cz/produkty-archiv/c300438285",
+        "https://crr.gov.cz/media/odkazy/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Denmark",
+      "tier": "tier1",
+      "existing_subnational_rows": 7,
+      "existing_authority_counts": {
+        "outside_default_scope": 5,
+        "eligible_legislature": 2
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "denmark--region-hovedstaden",
+          "name": "Region Hovedstaden regionsråd",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "denmark--region-sjlland",
+          "name": "Region Sjælland regionsråd",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "denmark--region-syddanmark",
+          "name": "Region Syddanmark regionsråd",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "denmark--region-midtjylland",
+          "name": "Region Midtjylland regionsråd",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "denmark--region-nordjylland",
+          "name": "Region Nordjylland regionsråd",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "denmark--greenland",
+          "name": "Inatsisartut",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "denmark--faroe-islands",
+          "name": "Løgtingið",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Folketinget"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "denmark-folketinget",
+          "legislature": "Folketinget",
+          "official_url": "https://www.ft.dk/"
+        }
+      ],
+      "finding": "Greenland/Faroes eligible,5 domesticregional exclusions; upcoming 2027 transition affects broader inventory.",
+      "proposed_corrections_or_additions": [
+        "Add dated RegionØstdanmark preparatory council record 2026 outside default scope, succeedsHovedstaden/Sjælland 1 Jan 2027; preserve existing 2026 parents until transition.",
+        "Keep Inatsisartut and Løgting separate autonomous legislatures rather than Folketing chambers."
+      ],
+      "unresolved": [
+        "Future-healthcouncils are not automatically legislatures; committees/territorial administrative layers excluded."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.ft.dk/samling/20241/lovforslag/l213/20241_l213_som_vedtaget.htm",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_enacted_statute_excerpt_review",
+          "finding": "Enacted transition law sections 6–7 merges Hovedstaden and Sjælland into Østdanmark on 1 Jan 2027; preparatory council operates in 2026. Current 5 regional rows need dated transition relationship, not premature deletion.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://stm.dk/statsministeriet/rigsfaellesskabet/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Prime Minister office distinguishes Faroese/Greenland self-government and their lawmaking responsibilities.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.retsinformation.dk/eli/lta/2009/473",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_statute_excerpt_review",
+          "finding": "Greenland Self-Government Act section 1 places transferred-field legislative power in Inatsisartut.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://lifeindenmark.borger.dk/healthcare/the-danish-healthcare-system/how-the-danish-healthcare-system-works",
+        "https://www.regioner.dk/services/in-english/",
+        "https://um.dk/en/foreign-policy/the-arctic/greenland-and-the-faroe-islands",
+        "https://www.government.fo/en/foreign-relations/constitutional-status",
+        "https://www.regioner.dk/om-os/om-de-fem-regioner/",
+        "https://www.ft.dk/da/Internationalt/Delegationerne/NOR/Arbejde"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Dominican Republic",
+      "tier": "tier2",
+      "existing_subnational_rows": 0,
+      "existing_authority_counts": {},
+      "existing_subnational_institutions": [],
+      "national_chamber_checklist": [
+        "Cámara de Diputados",
+        "Senado de la República"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "dominican-republic-deputies-webcasts",
+          "legislature": "Cámara de Diputados de la República Dominicana",
+          "official_url": "https://www.youtube.com/user/CamaraDiputadosRD/streams"
+        }
+      ],
+      "finding": "0 regional legislative bodies established by retained planning-law framework; national 2 chambers.",
+      "proposed_corrections_or_additions": [
+        "Document regional/provincial development councils as auxiliary planning bodies, not silently absent rows."
+      ],
+      "unresolved": [
+        "RetainedLaw 498-06 legal framework not newly exhaustively amended-law checked."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://camaradediputados.gob.do/nosotros/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Own national Chamber source identifies bicameral Congress with Senate and Chamber. Do not adopt potentially old member counts.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.dgcp.gob.do/transparencia/documentos/marco_legal_de_transparencia/leyes/6_ley_498_06_de_planificacion_e_inversion_publica.pdf"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "existing_subnational_rows": 0,
+      "existing_authority_counts": {},
+      "existing_subnational_institutions": [],
+      "national_chamber_checklist": [
+        "Riigikogu"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "estonia-riigikogu-live-1",
+          "legislature": "Riigikogu",
+          "official_url": "https://www.riigikogu.ee/live/1/en"
+        },
+        {
+          "id": "estonia-riigikogu-live-2",
+          "legislature": "Riigikogu",
+          "official_url": "https://www.riigikogu.ee/live/2/en"
+        }
+      ],
+      "finding": "0 county legislatures; historicalcounty executives ended 2018.",
+      "proposed_corrections_or_additions": [
+        "Preserve 0 core regional count with reformsource; county/municipalcooperation associations are administrative/auxiliary."
+      ],
+      "unresolved": [
+        "2017 reform statement does not alone prove no subsequent 2026 reform; no complete municipal or advisory inventory claimed."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.riigikogu.ee/en/pressiteated/riigikogu-passed-two-acts-concerning-termination-activities-county-governments-local-government-organisation/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_page_historical_reform_content_review",
+          "finding": "Parliament confirms county governments ended 1 Jan 2018; counties remain administrative areas, not implied legislatures.",
+          "as_of_scope": "Statement 14 Jun 2017; modern reform-negative claim still limited to reviewed framework."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.riigikogu.ee/en/pressiteated/riigikogu-passed-two-acts-concerning-termination-activities-county-governments-local-government-organisation/",
+        "https://www.fin.ee/en/regional-administration-and-county-government-reform"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Finland",
+      "tier": "tier1",
+      "existing_subnational_rows": 41,
+      "existing_authority_counts": {
+        "eligible_legislature": 1,
+        "outside_default_scope": 40
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "finland--alands-lagting",
+          "name": "Ålands Lagting",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "finland--etela-karjala-regional-council",
+          "name": "Etelä-Karjala maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--etela-pohjanmaa-regional-council",
+          "name": "Etelä-Pohjanmaa maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--etela-savo-regional-council",
+          "name": "Etelä-Savo maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--hame-regional-council",
+          "name": "Häme maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--kainuu-regional-council",
+          "name": "Kainuu maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--keski-pohjanmaa-regional-council",
+          "name": "Keski-Pohjanmaa maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--keski-suomi-regional-council",
+          "name": "Keski-Suomi maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--kymenlaakso-regional-council",
+          "name": "Kymenlaakso maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--lappi-regional-council",
+          "name": "Lappi maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pirkanmaa-regional-council",
+          "name": "Pirkanmaa maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjanmaa-regional-council",
+          "name": "Pohjanmaa maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjois-karjala-regional-council",
+          "name": "Pohjois-Karjala maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjois-pohjanmaa-regional-council",
+          "name": "Pohjois-Pohjanmaa maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjois-savo-regional-council",
+          "name": "Pohjois-Savo maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--paijat-hame-regional-council",
+          "name": "Päijät-Häme maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--satakunta-regional-council",
+          "name": "Satakunta maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--uusimaa-regional-council",
+          "name": "Uusimaa maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--varsinais-suomi-regional-council",
+          "name": "Varsinais-Suomi maakuntavaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--etela-karjala-wellbeing-county",
+          "name": "Etelä-Karjala aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--etela-pohjanmaa-wellbeing-county",
+          "name": "Etelä-Pohjanmaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--etela-savo-wellbeing-county",
+          "name": "Etelä-Savo aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--ita-uusimaa-wellbeing-county",
+          "name": "Itä-Uusimaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--kainuu-wellbeing-county",
+          "name": "Kainuu aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--kanta-hame-wellbeing-county",
+          "name": "Kanta-Häme aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--keski-pohjanmaa-wellbeing-county",
+          "name": "Keski-Pohjanmaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--keski-suomi-wellbeing-county",
+          "name": "Keski-Suomi aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--keski-uusimaa-wellbeing-county",
+          "name": "Keski-Uusimaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--kymenlaakso-wellbeing-county",
+          "name": "Kymenlaakso aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--lappi-wellbeing-county",
+          "name": "Lappi aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--lansi-uusimaa-wellbeing-county",
+          "name": "Länsi-Uusimaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pirkanmaa-wellbeing-county",
+          "name": "Pirkanmaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjanmaa-wellbeing-county",
+          "name": "Pohjanmaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjois-karjala-wellbeing-county",
+          "name": "Pohjois-Karjala aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjois-pohjanmaa-wellbeing-county",
+          "name": "Pohjois-Pohjanmaa aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--pohjois-savo-wellbeing-county",
+          "name": "Pohjois-Savo aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--paijat-hame-wellbeing-county",
+          "name": "Päijät-Häme aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--satakunta-wellbeing-county",
+          "name": "Satakunta aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--vantaa-and-kerava-wellbeing-county",
+          "name": "Vantaa and Kerava aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--varsinais-suomi-wellbeing-county",
+          "name": "Varsinais-Suomi aluevaltuusto",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "finland--helsinki",
+          "name": "Helsingin kaupunginvaltuusto",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Eduskunta / Riksdagen"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "finland-eduskunta-webcasts",
+          "legislature": "Parliament of Finland",
+          "official_url": "https://verkkolahetys.eduskunta.fi/"
+        }
+      ],
+      "finding": "Åland eligible;18 planning councils+21 wellbeing counties+Helsinki excluded.",
+      "proposed_corrections_or_additions": [
+        "Add explicit SámiParliament cultural-self-government scope disposition using ownstatute/officialguide; not territorial parliament merely because namedParliament.",
+        "MaintainÅland distinct from mainland county and Helsinki service arrangements."
+      ],
+      "unresolved": [
+        "Fresh 2026 wellbeingclassification reconciles 21 counties;18 regionalplanningcouncil names remain retained not fully refreshed.",
+        "Sámi delegated legal powers need precise authority standard before finalexclude/include."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://stat.fi/en/luokitukset/hyvinvointialue/hyvinvointialue_1_20260101",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_current_directory_excerpt_review",
+          "finding": "2026 official classification identifies 21 wellbeing counties plus Helsinki and Åland separately. Existing inventory 21 county+Helsinki+Åland follows correct distinct scope.",
+          "as_of_scope": "Classification 1 Jan 2026."
+        },
+        {
+          "url": "https://www.suomi.fi/citizen/rights-and-participation-in-society/legal-and-consumer-protection/guide/how-finlands-public-administration-works/self-governance",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Official guide distinguishes Åland regional parliament legislative power and Sámi linguistic/cultural self-government; add explicit Sámi authority boundary, not automatic parliament eligibility.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.lagtinget.ax/english/tasks-parliament",
+        "https://stat.fi/meta/kas/kuntayhtyma_en.html",
+        "https://www.suomi.fi/citizen/rights-and-participation-in-society/legal-and-consumer-protection/guide/how-finlands-public-administration-works/wellbeing-services-county",
+        "https://www.calrenet.eu/members/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "existing_subnational_rows": 27,
+      "existing_authority_counts": {
+        "outside_default_scope": 14,
+        "specific_authority_evidence_hold": 3,
+        "eligible_legislature": 10
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "france--auvergne-rhone-alpes",
+          "name": "Conseil régional Auvergne-Rhône-Alpes",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--bourgogne-franche-comte",
+          "name": "Conseil régional Bourgogne-Franche-Comté",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--bretagne",
+          "name": "Conseil régional Bretagne",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--centre-val-de-loire",
+          "name": "Conseil régional Centre-Val de Loire",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--corse",
+          "name": "Assemblée de Corse",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--grand-est",
+          "name": "Conseil régional Grand Est",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--hauts-de-france",
+          "name": "Conseil régional Hauts-de-France",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--ile-de-france",
+          "name": "Conseil régional Île-de-France",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--normandie",
+          "name": "Conseil régional Normandie",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--nouvelle-aquitaine",
+          "name": "Conseil régional Nouvelle-Aquitaine",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--occitanie",
+          "name": "Conseil régional Occitanie",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--pays-de-la-loire",
+          "name": "Conseil régional Pays de la Loire",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--sud-provence-alpes-cote-dazur",
+          "name": "Conseil régional Sud-Provence-Alpes-Côte d’Azur",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--guadeloupe",
+          "name": "Conseil régional Guadeloupe",
+          "eligibility": "specific_authority_evidence_hold"
+        },
+        {
+          "id": "france--guyane",
+          "name": "Assemblée de Guyane",
+          "eligibility": "specific_authority_evidence_hold"
+        },
+        {
+          "id": "france--martinique",
+          "name": "Assemblée de Martinique",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--reunion",
+          "name": "Conseil régional Réunion",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "france--mayotte",
+          "name": "Conseil départemental de Mayotte",
+          "eligibility": "specific_authority_evidence_hold"
+        },
+        {
+          "id": "france--french-polynesia",
+          "name": "Assemblée de la Polynésie française",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--new-caledonia",
+          "name": "Congrès de la Nouvelle-Calédonie",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--new-caledonia-south-province",
+          "name": "Assemblée de la province Sud",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--new-caledonia-north-province",
+          "name": "Assemblée de la province Nord",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--new-caledonia-loyalty-islands-province",
+          "name": "Assemblée de la province des îles Loyauté",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--wallis-and-futuna",
+          "name": "Assemblée territoriale de Wallis et Futuna",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--saint-pierre-and-miquelon",
+          "name": "Conseil territorial de Saint-Pierre-et-Miquelon",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--saint-martin",
+          "name": "Conseil territorial de Saint-Martin",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "france--saint-barthelemy",
+          "name": "Conseil territorial de Saint-Barthélemy",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Assemblée nationale",
+        "Sénat"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "france-national-assembly",
+          "legislature": "Assemblee nationale",
+          "official_url": "https://videos.assemblee-nationale.fr/direct.php"
+        }
+      ],
+      "finding": "27 regional/specialinstitution rows;10 eligible,14 excluded,3 authorityholds retained.",
+      "proposed_corrections_or_additions": [
+        "Correct Conseil départemental de Mayotte to Assemblée de Mayotte, Département-Région from 1 Jan 2026; retain formernamealias/history.",
+        "Add explicit TAAF/Clipperton consultative exclusions; special territory list must include these even with no elected regionalparliament.",
+        "Keep 3 NewCaledonian provincialassemblies separately from Congress; do not duplicate Guyane/Martinique with abolishedparallelcouncils."
+      ],
+      "unresolved": [
+        "Corsica/Guyane/Martinique specificauthorityholds persist; legislative reform proposals are not enactedlaw.",
+        "Ordinarydepartmental/specialmunicipal institutions Lyon/Paris/Alsace need explicit scope boundary; not automatically regionallegislatures."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000052092585/2026-01-01",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_statute_full_article_review",
+          "finding": "CGCT L 7311-4 effective 1 Jan 2026 replaces departmental/regional council references with assemblée de Mayotte and territory with Département-Région. Existing Conseil départemental de Mayotte name needs current-name correction.",
+          "as_of_scope": "Version effective 1 Jan 2026 read 24 Oct 2026."
+        },
+        {
+          "url": "https://www.insee.fr/fr/information/7929497",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_current_directory_excerpt_review",
+          "finding": "Official geography explains Mayotte Département-Région 976 R from 1 Jan 2026 and unique authorities of Guyane/Martinique/Corse.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://taaf.fr/collectivites/conseil-consultatif/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Own TAAF page identifies consultative council; record explicit special-territory exclusion, not representative legislature.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.assemblee-nationale.fr/dyn/dyn/contenu/visualisation/1089992/file/8-Jaune2026_Commissions.pdf",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "2026 National Assembly budget annex identifies Clipperton consultative council created 13 Dec 2023; add explicit auxiliary-scope disposition.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006527579/2026-08-14",
+        "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006164693",
+        "https://www.elections.interieur.gouv.fr/comprendre-elections/pour-qui-je-vote/conseillers-regionaux",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045210127/2022-02-23",
+        "https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000052008159/",
+        "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N54218",
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000031047959",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048080122",
+        "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B2905.html",
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019241099/2026-09-22",
+        "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000052081020/",
+        "https://www.ctguyane.fr/doc-orientation/apl/16_-ResolutionCongres2023-4-13mai2023-Adoptiondesdispositionsrelativesaudiagnosticterritorialdansl-avantprojetdedocumentd-orientation.pdf",
+        "https://www.legifrance.gouv.fr/eli/loi/2026/6/30/MOMO2535016L/jo/texte",
+        "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006149299",
+        "https://www.senat.fr/rap/r25-525/r25-525_mono.html",
+        "https://www.assemblee.pf/travaux/downloadTexte/1310949",
+        "https://www.congres.nc/lassemblee/attributions/focus-sur-la-loi-du-pays/",
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006386121",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000393606/",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000704617/",
+        "https://www.assembleeterritoriale.wf/assemblee/organisation-politique",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000571356/",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006394300",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000006164827/",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031492080",
+        "https://regions-france.org/observatoire-des-politiques-regionales/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Germany",
+      "tier": "tier1",
+      "existing_subnational_rows": 16,
+      "existing_authority_counts": {
+        "eligible_legislature": 16
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "germany--bayerischer-landtag",
+          "name": "Bayerischer Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--bremische-burgerschaft",
+          "name": "Bremische Bürgerschaft",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--hamburgische-burgerschaft",
+          "name": "Hamburgische Bürgerschaft",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--landtag-von-baden-wurttemberg",
+          "name": "Landtag von Baden Württemberg",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--landtag-niedersachsen",
+          "name": "Landtag Niedersachsen",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--landtag-rheinland-pfalz",
+          "name": "Landtag Rheinland-Pfalz",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--landtag-des-saarlandes",
+          "name": "Landtag des Saarlandes",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--schleswig-holsteinischer-landtag",
+          "name": "Schleswig-Holsteinischer Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--landtag-mecklenburg-vorpommern",
+          "name": "Landtag Mecklenburg-Vorpommern",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--sachsischer-landtag",
+          "name": "Sächsischer Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--thuringer-landtag",
+          "name": "Thüringer Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--brandenburg",
+          "name": "Brandenburg",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--north-rhine-westphalia",
+          "name": "North Rhine-Westphalia",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--berlin",
+          "name": "Berlin",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--hesse",
+          "name": "Hessischer Landtag",
+          "eligibility": "eligible_legislature"
+        },
+        {
+          "id": "germany--saxony-anhalt",
+          "name": "Saxony-Anhalt",
+          "eligibility": "eligible_legislature"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Deutscher Bundestag",
+        "Bundesrat"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "germany-bundestag-1",
+          "legislature": "Deutscher Bundestag",
+          "official_url": "https://www.bundestag.de/mediathek"
+        }
+      ],
+      "finding": "All 16 stateparliaments matched against fresh federal directory.",
+      "proposed_corrections_or_additions": [
+        "Normalize 4 geographic placeholders to LandtagBrandenburg, LandtagNordrhein-Westfalen, AbgeordnetenhausvonBerlin, LandtagvonSachsen-Anhalt.",
+        "BremenStadtbürgerschaft municipal capacity remains distinct from stateBürgerschaft; nationalBundesrat is not a 17 thregionalparliament."
+      ],
+      "unresolved": [
+        "Council/election assemblies and committee rooms not extra permanent chambers; no service completeness inferred."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://bundeswahlleiterin.de/service/landtagswahlen.html",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_current_directory_excerpt_review",
+          "finding": "Federal election authority names all 16 Länder and proper parliamentary classes; existing 16 state rows reconcile.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://www.bundestag.de/parlament/wahlen/wahltermine/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Bundestag current election calendar reinforces all 16 state parliament coverage and national federal distinction.",
+          "as_of_scope": "Page states 11 Sep 2026."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.gesetze-im-internet.de/gg/art_70.html",
+        "https://www.bundestag.de/en/parliament/function/legislation/competencies-245700",
+        "https://www.calrenet.eu/members/",
+        "https://www.bundesrat.de/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Ghana",
+      "tier": "tier2",
+      "existing_subnational_rows": 0,
+      "existing_authority_counts": {},
+      "existing_subnational_institutions": [],
+      "national_chamber_checklist": [
+        "Parliament"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "ghana-parliament-committee-webcasts",
+          "legislature": "Parliament of Ghana",
+          "official_url": "https://www.youtube.com/@parliamentofghana816/streams"
+        }
+      ],
+      "finding": "No core regional legislature; regionalcoordinatingcouncils administrative.",
+      "proposed_corrections_or_additions": [
+        "Create explicit 16 RCCadministrative exclusions from primaryentitydirectory if the master intends allfirst-level bodies; currently only country-level exclusion."
+      ],
+      "unresolved": [
+        "Districtassemblies hold statutorylocalpowers but are second/local tier outside currentcore; indigenouschiefs bodies not automatically territoriallegislatures."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://arcc.gov.gh/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_excerpt_review",
+          "finding": "Official Ashanti RCC framework identifies administrative/coordinating function under Act 936; no regional parliament inferred.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        },
+        {
+          "url": "https://ppa.gov.gh/procurement-centre/entity-categorization/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_search_index_directory_excerpt_review",
+          "finding": "Primary public-procurement entity directory names 16 RCCs; useful explicit administrative exclusion inventory, not 16 legislatures.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.judicial.gov.gh/index.php/decentralization-and-local-government"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    },
+    {
+      "country": "Greece",
+      "tier": "tier1",
+      "existing_subnational_rows": 13,
+      "existing_authority_counts": {
+        "outside_default_scope": 13
+      },
+      "existing_subnational_institutions": [
+        {
+          "id": "greece--region-1",
+          "name": "Περιφερειακό Συμβούλιο Αττική",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-2",
+          "name": "Περιφερειακό Συμβούλιο Κεντρική Μακεδονία",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-3",
+          "name": "Περιφερειακό Συμβούλιο Θεσσαλία",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-4",
+          "name": "Περιφερειακό Συμβούλιο Δυτική Ελλάδα",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-5",
+          "name": "Περιφερειακό Συμβούλιο Κρήτη",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-6",
+          "name": "Περιφερειακό Συμβούλιο Ανατολική Μακεδονία και Θράκη",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-7",
+          "name": "Περιφερειακό Συμβούλιο Πελοπόννησος",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-8",
+          "name": "Περιφερειακό Συμβούλιο Στερεά Ελλάδα",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-9",
+          "name": "Περιφερειακό Συμβούλιο Νότιο Αιγαίο",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-10",
+          "name": "Περιφερειακό Συμβούλιο Ήπειρος",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-11",
+          "name": "Περιφερειακό Συμβούλιο Δυτική Μακεδονία",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-12",
+          "name": "Περιφερειακό Συμβούλιο Ιόνια Νησιά",
+          "eligibility": "outside_default_scope"
+        },
+        {
+          "id": "greece--region-13",
+          "name": "Περιφερειακό Συμβούλιο Βόρειο Αιγαίο",
+          "eligibility": "outside_default_scope"
+        }
+      ],
+      "national_chamber_checklist": [
+        "Vouli ton Ellinon"
+      ],
+      "national_checklist_status": "Named expected chamber checklist; not proof of canonical publication/service coverage. Primary sources below are explicit where newly read; otherwise retains institutional register rather than claiming a fresh national legal audit.",
+      "existing_national_catalogue_services": [
+        {
+          "id": "greece-hellenic-parliament-tv",
+          "legislature": "Hellenic Parliament",
+          "official_url": "https://www.hellenicparliament.gr/"
+        }
+      ],
+      "finding": "13 regionalcouncils excluded; MountAthos special-status boundary missing.",
+      "proposed_corrections_or_additions": [
+        "Add HolyCommunity ofMountAthos as specificauthority-review candidate linked to Greece/selfgovernedmonasticterritory; constitution 105 establishes administration/Charterstructure, not automatic parliamentaryeligibility."
+      ],
+      "unresolved": [
+        "Examine Charterallocation ofgeneralrulemaking versusreligiousadministration before finaldisposition; no neweligiblebody claimed."
+      ],
+      "new_primary_evidence": [
+        {
+          "url": "https://www.hellenicparliament.gr/vouli-ton-ellinon/to-politevma/syntagma/article-109/",
+          "reviewed_on": "2026-10-24",
+          "evidence_level": "primary_constitution_full_article_review",
+          "finding": "Constitution 105 explicitly establishes self-governed Mount Athos and Holy Community administration; Charter drawn/voted by 20 monasteries and ratified by Patriarchate/national Parliament. Create specific special-status authority review; do not equate internal monastic administration with eligible territorial parliament.",
+          "as_of_scope": "Framework or directory content read in this pass; no live media, schedule, membership or reuse validation implied."
+        }
+      ],
+      "retained_primary_framework_urls": [
+        "https://www.hellenicparliament.gr/UserFiles/f3c70a23-7696-49db-9148-f24dce6a27c8/2019_SYDAGMA_EN_2022_WEB.pdf",
+        "https://www.hellenicparliament.gr/Vouli-ton-Ellinon/To-Politevma/Syntagma/article-106/",
+        "https://enpe.gr/perifereies/"
+      ],
+      "retained_evidence_scope": "Sources copied from existing authority/country register; not all freshly opened in this pass. Existing search counts are not completeness evidence.",
+      "inventory_completeness": "bounded_framework_reconciliation_with_explicit_open_scope",
+      "streams_or_rights_revalidated": false
+    }
+  ]
+}

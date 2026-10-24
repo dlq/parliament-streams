@@ -1,0 +1,93 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "sejong-operations-business",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=C8htAMFVhts&t=3900s",
+      "video": true,
+      "offset": 3900,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T22:01:04.302Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 운영위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 3903.943161,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 318,
+        "tracks": []
+      },
+      "later": {
+        "time": 3906.154479,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 384,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_committee_business_confirmed",
+      "screenshot": "/tmp/continue-sejong-operations-business-chromium.png",
+      "visual_review": "Operations committee chair presiding at3900seconds after long standby. Actual advancing decoded committee proceedings in each browser."
+    },
+    {
+      "key": "sejong-operations-business",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=C8htAMFVhts&t=3900s",
+      "video": true,
+      "offset": 3900,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T22:01:18.647Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 운영위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 3903.599920089,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 292,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 3905.813095922,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 4534.021,
+        "frames": 352,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_committee_business_confirmed",
+      "screenshot": "/tmp/continue-sejong-operations-business-webkit.png",
+      "visual_review": "Operations committee chair presiding at3900seconds after long standby. Actual advancing decoded committee proceedings in each browser."
+    }
+  ]
+}

@@ -1,0 +1,1336 @@
+{
+  "reviewed_on": "2026-10-24",
+  "summary": {
+    "target_countries": 71,
+    "tier1_countries": 25,
+    "tier2_countries": 46,
+    "index_observation_year": 2024,
+    "index_publication_year": 2025,
+    "country_research_passes_recorded": 71,
+    "regional_inventory_entries": 1122,
+    "recorded_eligible_entries": 652,
+    "recorded_exclusions": 458,
+    "specific_authority_holds": 10,
+    "superseded_entries": 2,
+    "countries_with_regional_rows": 58,
+    "complete_national_and_subnational_chamber_inventory_established": false,
+    "reason": "Country-level searches and authority classification of known inventory entries do not establish an exhaustive national/subnational institutional census. Whole legislatures, individual chambers, associated territories and predecessor institutions have different grains."
+  },
+  "not_claimed": [
+    "all possible institutions enumerated",
+    "all national chambers enumerated",
+    "all subnational second chambers enumerated",
+    "all Indigenous self-government bodies enumerated",
+    "every eligible body has a validated broadcast",
+    "the existing 71-country baseline equals EIU 2025 membership"
+  ],
+  "completion_requirements": [
+    "Reconcile a named national parliament/chamber checklist for every baseline country with primary institutional directories.",
+    "Reconcile first-level state/provincial/devolved/autonomous legislatures against country-specific primary lists, retaining explicit no-regional-legislature scope evidence.",
+    "Split bicameral institutions into chamber records or provide a complete chamber crosswalk, while deduplicating shared services.",
+    "Record every associated/special-status territory and separately scoped Indigenous self-government class, with explicit included/excluded/authority-hold decisions.",
+    "Resolve the ten specific legal-authority holds; preserve the two superseded institutions and their successor mappings.",
+    "Record currentness/as-of dates and counts at each inventory grain. Refresh the EIU edition through a separately documented country-list comparison."
+  ],
+  "countries": [
+    {
+      "country": "Norway",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 15,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 15
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/historisk-informasjon-om-kommune-og-fylkesinndelingen/fylkesinndelingen-fra-2024/id2922222/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "New Zealand",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 20,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 17,
+        "eligible_legislature": 3
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Sweden",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 21,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 21
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://skr.se/kommunerochregioner/regionerlista.8289.html"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Iceland",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/oecd-regional-outlook-2023-country-notes_48701f02/iceland_330e5205/dc08a105-en.pdf",
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/oecd-regional-outlook-2023-country-notes_48701f02/iceland_330e5205/dc08a105-en.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Switzerland",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 26,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 26
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.bayern.landtag.de/parlament/kooperationen/parlamente-in-der-schweiz/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Finland",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 41,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 1,
+        "outside_default_scope": 40
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Denmark",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 7,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 5,
+        "eligible_legislature": 2
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.regioner.dk/om-os/om-de-fem-regioner/",
+        "https://www.ft.dk/da/Internationalt/Delegationerne/NOR/Arbejde"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Ireland",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 3,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 3
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.localgov.ie/about-local-government/regional-assemblies"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Netherlands",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 18,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 15,
+        "outside_default_scope": 3
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://organisaties.overheid.nl/14557/Provincie_Drenthe",
+        "https://organisaties.overheid.nl/14866/Provincie_Flevoland",
+        "https://organisaties.overheid.nl/15184/Provincie_Fryslan",
+        "https://organisaties.overheid.nl/15185/Provincie_Gelderland",
+        "https://organisaties.overheid.nl/15632/Provincie_Groningen",
+        "https://organisaties.overheid.nl/16071/Provincie_Limburg",
+        "https://organisaties.overheid.nl/16317/Provincie_Noord-Brabant",
+        "https://organisaties.overheid.nl/16412/Provincie_Noord-Holland",
+        "https://organisaties.overheid.nl/16771/Provincie_Overijssel",
+        "https://organisaties.overheid.nl/17166/Provincie_Utrecht",
+        "https://organisaties.overheid.nl/18166/Provincie_Zeeland",
+        "https://organisaties.overheid.nl/17466/Provincie_Zuid-Holland"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 3,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Luxembourg",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://luxembourg.public.lu/content/luxembourg/fr/societe-et-culture/territoire-et-climat/territoire.html",
+        "https://luxembourg.public.lu/en/society-and-culture/territoire-et-climat/territoire.html"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Australia",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 11,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 8,
+        "outside_default_scope": 3
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.cpahq.org/directory/australian-capital-territory/",
+        "https://www.cpahq.org/directory/new-south-wales/",
+        "https://www.cpahq.org/directory/northern-territory/",
+        "https://www.cpahq.org/directory/queensland/",
+        "https://www.cpahq.org/directory/south-australia/",
+        "https://www.cpahq.org/directory/tasmania/",
+        "https://www.cpahq.org/directory/victoria/",
+        "https://www.cpahq.org/directory/western-australia/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Taiwan",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 22,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 22
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://ws.moi.gov.tw/001/Upload/OldFile/civil_download_file/%E5%9C%B0%E6%96%B9%E8%AD%B0%E4%BA%8B%E9%80%8F%E6%98%8E%E5%B0%88%E5%8D%80-%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E5%8F%8A%E7%B8%A3%EF%BC%88%E5%B8%82%EF%BC%89%E8%AD%B0%E6%9C%83%E9%80%A3%E7%B5%90%E7%B6%B2%E5%9D%80.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Germany",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 16,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 16
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/",
+        "https://www.bundesrat.de/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Canada",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 13,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 13
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.cpahq.org/directory/alberta/",
+        "https://www.cpahq.org/directory/british-columbia/",
+        "https://www.cpahq.org/directory/manitoba/",
+        "https://www.cpahq.org/directory/new-brunswick/",
+        "https://www.cpahq.org/directory/newfoundland-and-labrador/",
+        "https://www.cpahq.org/directory/northwest-territories/",
+        "https://www.cpahq.org/directory/nova-scotia/",
+        "https://www.cpahq.org/directory/nunavut/",
+        "https://www.cpahq.org/directory/ontario/",
+        "https://www.cpahq.org/directory/prince-edward-island/",
+        "https://www.cpahq.org/directory/quebec/",
+        "https://www.cpahq.org/directory/saskatchewan/",
+        "https://www.cpahq.org/directory/yukon/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 3,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Uruguay",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 19,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 19
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://cnediles.gub.uy/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Japan",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 47,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 47
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.gichokai.gr.jp/b15.asp"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 2,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "United Kingdom",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 21,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 17,
+        "outside_default_scope": 4
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.cpahq.org/directory/scotland/",
+        "https://www.cpahq.org/directory/wales/",
+        "https://www.cpahq.org/directory/northern-ireland/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Costa Rica",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/oecd-regional-outlook-2023-country-notes_48701f02/costa-rica_35880d95/32b2b306-en.pdf",
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2016/12/open-government-in-costa-rica_g1g717dd/9789264265424-en.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Austria",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 9,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 9
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Mauritius",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 1,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 1
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://assembly-rra.govmu.org/Pages/About-Us/The-Parliament.aspx"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Estonia",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.riigikogu.ee/en/pressiteated/riigikogu-passed-two-acts-concerning-termination-activities-county-governments-local-government-organisation/",
+        "https://www.fin.ee/en/regional-administration-and-county-government-reform"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 2,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Spain",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 19,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 17,
+        "outside_default_scope": 2
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 6,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Czech Republic",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 14,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 14
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://crr.gov.cz/media/odkazy/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Portugal",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 2,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 2
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Greece",
+      "tier": "tier1",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 13,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 13
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://enpe.gr/perifereies/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "France",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 27,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 14,
+        "specific_authority_evidence_hold": 3,
+        "eligible_legislature": 10
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://regions-france.org/observatoire-des-politiques-regionales/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Malta",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 6,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 6
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://regjunpunent.gov.mt/?lang=mt"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "United States",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 56,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 56
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.congress.gov/state-legislature-websites"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 4,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Chile",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 16,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 16
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.chile.gob.cl/chile/sobre-chile/asi-es-chile/organizacion-territorial/organizacion-territorial"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Slovenia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.gov.si/en/policies/state-and-society/local-self-government-and-regional-development/local-self-government/",
+        "https://www.gov.si/en/policies/state-and-society/local-self-government-and-regional-development/local-self-government/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Israel",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.oecd.org/en/publications/a-review-of-local-government-finance-in-israel_a5bc4d25-en/full-report/the-israeli-system-of-local-government-finance_11b9d33d.html",
+        "https://www.oecd.org/en/publications/a-review-of-local-government-finance-in-israel_a5bc4d25-en/full-report/the-israeli-system-of-local-government-finance_11b9d33d.html"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "South Korea",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 18,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 16,
+        "historical_institution_superseded": 2
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://mois.go.kr/eng/sub/a03/citiesProvinces/screen.do"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Latvia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 5,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 5
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.varam.gov.lv/lv/planosanas-regioni"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Belgium",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 6,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 6
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Botswana",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 31,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 31
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://gov.bw/ministries/ministry-local-government-and-traditional-affairs"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Lithuania",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 10,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 10
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.oecd.org/en/publications/social-economy-in-europe_12970cca-en/lithuania_a5151a40-en.html"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Cape Verde",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.governo.cv/wp-content/uploads/2019/04/cr.pdf",
+        "https://www.governo.cv/wp-content/uploads/2019/04/cr.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Italy",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 22,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 22
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.calrenet.eu/members/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 2,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Poland",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 16,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 16
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://polskieregiony.pl/konwent-przewodniczacych-sejmikow-wojewodztw-rp/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Cyprus",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 6,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 5,
+        "eligible_legislature": 1
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.gov.cy/moi/en/about/directorate-of-local-government/section-of-district-self-government-organizations/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "India",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 31,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 31
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.cpahq.org/directory/andhra-pradesh/",
+        "https://www.cpahq.org/directory/arunachal-pradesh/",
+        "https://www.cpahq.org/directory/assam/",
+        "https://www.cpahq.org/directory/bihar/",
+        "https://www.cpahq.org/directory/chhattisgarh/",
+        "https://www.cpahq.org/directory/delhi/",
+        "https://www.cpahq.org/directory/goa/",
+        "https://www.cpahq.org/directory/gujarat/",
+        "https://www.cpahq.org/directory/haryana/",
+        "https://www.cpahq.org/directory/himachal-pradesh/",
+        "https://www.cpahq.org/directory/jammu-and-kashmir/",
+        "https://www.cpahq.org/directory/jharkhand/",
+        "https://www.cpahq.org/directory/karnataka/",
+        "https://www.cpahq.org/directory/kerala/",
+        "https://www.cpahq.org/directory/madhya-pradesh/",
+        "https://www.cpahq.org/directory/maharashtra/",
+        "https://www.cpahq.org/directory/manipur/",
+        "https://www.cpahq.org/directory/meghalaya/",
+        "https://www.cpahq.org/directory/mizoram/",
+        "https://www.cpahq.org/directory/nagaland/",
+        "https://www.cpahq.org/directory/odisha/",
+        "https://www.cpahq.org/directory/puducherry/",
+        "https://www.cpahq.org/directory/punjab-india/",
+        "https://www.cpahq.org/directory/rajasthan/",
+        "https://www.cpahq.org/directory/sikkim/",
+        "https://www.cpahq.org/directory/tamil-nadu/",
+        "https://www.cpahq.org/directory/telangana/",
+        "https://www.cpahq.org/directory/tripura/",
+        "https://www.cpahq.org/directory/uttar-pradesh/",
+        "https://www.cpahq.org/directory/west-bengal/",
+        "https://www.cpahq.org/directory/uttarakhand/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 2,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Slovakia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 8,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 8
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://mirri.gov.sk/mpsr/irop-programove-obdobie-2014-2020/kontakty-irop/kontakty-so/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "South Africa",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 9,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 9
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.cpahq.org/directory/eastern-cape/",
+        "https://www.cpahq.org/directory/free-state/",
+        "https://www.cpahq.org/directory/gauteng/",
+        "https://www.cpahq.org/directory/kwazulu-natal/",
+        "https://www.cpahq.org/directory/limpopo/",
+        "https://www.cpahq.org/directory/mpumalanga/",
+        "https://www.cpahq.org/directory/north-west/",
+        "https://www.cpahq.org/directory/northern-cape/",
+        "https://www.cpahq.org/directory/western-cape/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Malaysia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 13,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 13
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.cpahq.org/directory/johor/",
+        "https://www.cpahq.org/directory/kedah-darulaman/",
+        "https://www.cpahq.org/directory/kelantan/",
+        "https://www.cpahq.org/directory/melaka/",
+        "https://www.cpahq.org/directory/negeri-sembilan/",
+        "https://www.cpahq.org/directory/pahang/",
+        "https://www.cpahq.org/directory/penang/",
+        "https://www.cpahq.org/directory/perak/",
+        "https://www.cpahq.org/directory/perlis/",
+        "https://www.cpahq.org/directory/sabah/",
+        "https://www.cpahq.org/directory/sarawak/",
+        "https://www.cpahq.org/directory/selangor/",
+        "https://www.cpahq.org/directory/terengganu/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 1,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 1
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://tobagolegislature.org/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Timor-Leste",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://raeoa.tl/governance/",
+        "https://raeoa.tl/governance/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Panama",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 12,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 5,
+        "specific_authority_evidence_hold": 7
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://spcommreports.ohchr.org/TMResultsBase/DownLoadFile?gId=39510"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Suriname",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 10,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 10
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://verkiezingen.gov.sr/storage/pdf/Grondwet.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Jamaica",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 14,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 14
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.localgovjamaica.gov.jm/about-us/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Montenegro",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://rm.coe.int/0900001680b4cb27",
+        "https://rm.coe.int/monitoring-of-the-application-of-the-european-charter-of-local-self-go/1680aecea6"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Philippines",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 83,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 83
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://psa.gov.ph/classification/psgc"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Dominican Republic",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.dgcp.gob.do/transparencia/documentos/marco_legal_de_transparencia/leyes/6_ley_498_06_de_planificacion_e_inversion_publica.pdf",
+        "https://www.dgcp.gob.do/transparencia/documentos/marco_legal_de_transparencia/leyes/6_ley_498_06_de_planificacion_e_inversion_publica.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Mongolia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 22,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 22
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://legalinfo.mn/mn/detail?lawId=16106891904801&type=2"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Argentina",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 24,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 24
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.argentina.gob.ar/normativa/constituciones/provinciales-y-caba"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Hungary",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 20,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 20
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.ksh.hu/regionalatlas_counties?lang=en"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Croatia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 21,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 21
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://mpudt.gov.hr/korisne-informacije/iz-djelokruga/lokalna-i-podrucna-regionalna-samouprava-24398/popis-zupanija-gradova-i-opcina-24402/24402?big=1&lang=sk"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Brazil",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 27,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 27
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www2.camara.leg.br/a-camara/estruturaadm/mesa/segundavice/interacao-legislativa/links-relacionados-1/legislativos-estaduais"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 2,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Namibia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 14,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 14
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://murd.gov.na/en/sub-national-governments"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Indonesia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 38,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 38
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://kab-lannyjaya.kpu.go.id/blog/read/8555_daftar-38-provinsi-di-indonesia-beserta-ibu-kotanya"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Colombia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 33,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 32,
+        "outside_default_scope": 1
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://bogotajuridica.gov.co/sisjur/normas/Norma1.jsp?dt=S&i=120817"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Bulgaria",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.mrrb.bg/static/media/ups/articles/attachments/CEGGPAD%282023%298_22BG07_Technical%20Report_fiscal%20decentralisation_FINALd56a91fd01ee99ab560581f6ced1c293.pdf",
+        "https://www.mrrb.bg/static/media/ups/articles/attachments/CEGGPAD%282023%298_22BG07_Technical%20Report_fiscal%20decentralisation_FINALd56a91fd01ee99ab560581f6ced1c293.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "North Macedonia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 9,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 9
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://rm.coe.int/report-north-macedonia-en/488029b23d"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Thailand",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 77,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 77
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.nso.go.th/public/e-book/Statistical-Yearbook/SYB-2026/14/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Serbia",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 2,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 2
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.refworld.org/sites/default/files/2025-07/constitution_of_the_republic_of_serbia.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Ghana",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.judicial.gov.gh/index.php/decentralization-and-local-government",
+        "https://www.judicial.gov.gh/index.php/decentralization-and-local-government"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Albania",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 12,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 12
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.instat.gov.al/en/themes/general-and-regional-statistics/regions/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Sri Lanka",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 9,
+      "recorded_authority_classifications": {
+        "eligible_legislature": 9
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://elections.gov.lk/en/elections/faq_elections_E.html"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Singapore",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 0,
+      "recorded_authority_classifications": {},
+      "country_scope_status": "scope_reviewed_no_core_regional_legislature_established",
+      "source_inventory_references": [
+        "https://www.cdc.gov.sg/about-us/office-of-the-mayors/our-mayors/",
+        "https://www.cdc.gov.sg/about-us/office-of-the-mayors/our-mayors/"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Guyana",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 10,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 10
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://gecom.org.gy/public/assets/docs/laws/Cap_28.09_Local_Democratic_Organs.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 1,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Lesotho",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 10,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 10
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://www.gov.ls/wp-content/uploads/2022/03/Third-National-Communication.pdf"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    },
+    {
+      "country": "Moldova",
+      "tier": "tier2",
+      "national_country_research_pass_recorded": true,
+      "national_chamber_census_complete": false,
+      "regional_inventory_entries": 36,
+      "recorded_authority_classifications": {
+        "outside_default_scope": 34,
+        "eligible_legislature": 2
+      },
+      "country_scope_status": "inventory_initial_search_complete_followup_open",
+      "source_inventory_references": [
+        "https://statistica.gov.md/en/statistic_indicator_details/29"
+      ],
+      "complete_regional_institution_and_chamber_census_established": false,
+      "national_catalogue_source_records": 0,
+      "catalogue_source_count_is_not_chamber_count": true
+    }
+  ],
+  "source_reports": [
+    "data/discovery/tier1.json",
+    "data/discovery/tier2.json",
+    "reports/discovery/2026-10-22-country-research.json",
+    "reports/discovery/2026-10-22-subnational-research.json",
+    "reports/discovery/2026-10-23-legislative-priority.json"
+  ]
+}

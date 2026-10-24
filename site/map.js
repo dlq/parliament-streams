@@ -1,19 +1,21 @@
 (() => {
 const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
-const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount, subnationalParents, countrySearchTerms } = window.ParliamentStreamsMapI18n;
+const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount, subnationalParents, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
-const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261022-territorial-next", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261022-territorial-next", appScriptUrl);
+const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261024-recording-reconciliation", appScriptUrl);
+const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261024-recording-reconciliation", appScriptUrl);
+const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261024-recording-reconciliation", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 
 
 
 const fallbackCountryNames = {
+  RS: "Serbia",
   AR: "Argentina", AT: "Austria", AU: "Australia", BR: "Brazil", CA: "Canada", CL: "Chile", CR: "Costa Rica", DE: "Germany",
   CZ: "Czech Republic", FI: "Finland", SE: "Sweden", DK: "Denmark", EE: "Estonia", ES: "Spain", FR: "France", GB: "United Kingdom", GR: "Greece",
   IE: "Ireland", IL: "Israel", IN: "India", IT: "Italy", LU: "Luxembourg", MN: "Mongolia",
@@ -115,7 +117,8 @@ function canonicalFeatureCode(feature) {
 }
 
 function nationalCode(channel) {
-  if (channel.country_or_region === "Taiwan") return "TW";
+  const countryCodeOverride = { Taiwan: "TW", "Cook Islands": "CK", Panama: "PA" }[channel.country_or_region];
+  if (countryCodeOverride) return countryCodeOverride;
   return channel.external_ids?.ipu_country_code ?? null;
 }
 
@@ -284,14 +287,14 @@ function modeIncludes(group) {
 }
 
 function visibleJurisdictions() {
-  const needle = state.search.trim().toLocaleLowerCase();
+  const needle = normalizeSearchText(state.search.trim());
   return groupedJurisdictions()
     .filter(modeIncludes)
     .filter((group) => {
       const organization = group.level === "supranational" ? state.supranational.find((candidate) => candidate.catalogue_jurisdiction === group.name) : null;
       const displayName = organization ? organizationName(organization) : group.level === "national" ? countryName(nationalCode(group.channels[0])) : jurisdictionName(group.name);
       const countryNames = group.channels.map((channel) => countrySearchTerms(state.locale, channel)).join(" ");
-      return !needle || `${displayName} ${countryNames} ${group.name} ${group.channels.map((channel) => `${channel.name} ${channel.legislature}`).join(" ")}`.toLocaleLowerCase().includes(needle);
+      return !needle || normalizeSearchText(`${displayName} ${countryNames} ${group.name} ${group.channels.map((channel) => `${channel.name} ${channel.legislature}`).join(" ")}`).includes(needle);
     })
     .sort((a, b) => jurisdictionName(a.name).localeCompare(jurisdictionName(b.name), state.locale));
 }
@@ -541,7 +544,14 @@ async function init() {
   if (!catalogue || !supranational) throw new Error(mt("mapUnavailable"));
   state.channels = catalogue.channels;
   state.supranational = supranational.organizations;
-  [state.geometry, state.admin1Geometry] = await Promise.all([d3.json(geometryUrl), d3.json(admin1GeometryUrl)]);
+  const [geometry, admin1Geometry, lienchiangGeometry] = await Promise.all([
+    d3.json(geometryUrl), d3.json(admin1GeometryUrl), d3.json(lienchiangGeometryUrl),
+  ]);
+  state.geometry = geometry;
+  state.admin1Geometry = {
+    type: "FeatureCollection",
+    features: [...admin1Geometry.features, ...lienchiangGeometry.features],
+  };
 
   document.querySelector("#jurisdiction-count").textContent = formatNumber(groupedJurisdictions().length);
   document.querySelector("#source-count").textContent = formatNumber(state.channels.length);

@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-23T21:03:38.282115+00:00",
+  "method": "human scoped publication review combining exact primary identity and browser playback",
+  "results": [
+    {
+      "id": "poland-lodz-sejmik-recordings",
+      "status": "ok",
+      "note": "The regional government bulletin explicitly lists dated Sejmik recordings and links the exact provider videos. Three distinct ordinary sittings (16 June, 2 July and 22 September 2026) were checked in Chromium and WebKit with decoded frames and advancing playback after introductions/recesses. Content observations include regional-state report debate, a named member speaking and debate on a regional assembly position. Exact institution Q8081138 is a Polish legislative body with jurisdiction Q54158. This is an official recorded-proceedings archive; current live and full committee coverage remain unverified.",
+      "confirmed_scope": "identity_and_three_recorded_sittings",
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_not_verified",
+        "all_spoken_tracks_not_audibly_verified",
+        "source_wide_captions_sign_variant_audio_description_unknown",
+        "independent_audiovisual_reuse_not_established"
+      ]
+    }
+  ]
+}

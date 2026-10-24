@@ -1,0 +1,77 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Primary evidence: https://data.ipu.org/parliament/NA/",
+    "Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated.",
+    "Source conditions: The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+    "Full decision and playback chain: reports/discovery/2026-10-23-full-queue-decisions.json",
+    "Catalogue, flags, localized country/jurisdiction search, map and planned schedule-source links reconciled. Link-out only; no HLS or implemented EPG promotion."
+  ],
+  "channel": {
+    "id": "namibia-parliament-webcasts",
+    "name": "Namibia Parliament Webcasts",
+    "jurisdiction_level": "national",
+    "country_or_region": "Namibia",
+    "legislature": "Parliament of Namibia",
+    "external_ids": {
+      "wikidata_qid": "Q4167580",
+      "ipu_country_code": "NA",
+      "ipu_parliament_code": "NA",
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q4167580",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q4167580 revision 2557111681 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/NA/",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UCueeiEi-sE0Ru0WDMk6dC3w/streams",
+    "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"namibia-plenary\", \"tracks\": []}, {\"key\": \"namibia-second\", \"tracks\": []}]. "
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.youtube.com/channel/UCueeiEi-sE0Ru0WDMk6dC3w/streams",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+      "evidence": [
+        "https://www.parliament.na/",
+        "https://www.parliament.na/disclaimer/"
+      ],
+      "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+    }
+  }
+}

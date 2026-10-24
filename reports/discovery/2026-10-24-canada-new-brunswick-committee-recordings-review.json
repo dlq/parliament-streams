@@ -1,0 +1,361 @@
+{
+  "research_date": "2026-10-23",
+  "body_id": "canada--new-brunswick",
+  "catalogue_id": "canada-new-brunswick-committee-recordings",
+  "decision": "publish_scoped_official_viewing_link",
+  "confirmed_scope": "Official assembly webcasts designate Public Accounts recordings for 1 and 2 October 2026. Both decode in Chromium and WebKit. The first 1 October sample shows a listener; a later 3600-second sample confirms a participant speaking at a lit committee microphone. The 2 October sample shows a separate participant speaking. Original, English and French interpretation selectors are present; only default playback was tested, muted. Plenary and current live coverage remain unverified.",
+  "exact_identity": {
+    "qid": "Q1516914",
+    "revision": null,
+    "labels": {
+      "de": {
+        "language": "de",
+        "value": "Legislativversammlung von New Brunswick"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "Assemblée législative du Nouveau-Brunswick"
+      },
+      "en": {
+        "language": "en",
+        "value": "Legislative Assembly of New Brunswick"
+      },
+      "es": {
+        "language": "es",
+        "value": "Asamblea Legislativa de Nuevo Brunswick"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "新不倫瑞克省議會"
+      },
+      "it": {
+        "language": "it",
+        "value": "Assemblea legislativa del Nuovo Brunswick"
+      },
+      "sv": {
+        "language": "sv",
+        "value": "New Brunswicks lagstiftande församling"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "single house, former lower house, of New Brunswick legislature"
+      },
+      "de": {
+        "language": "de",
+        "value": "historischer Teil eines Parlaments in Kanada"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "unique chambre de la législature du Nouveau-Brunswick"
+      }
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "b114909bdead7332984d987facb8af02a9066839",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 2867136,
+                "id": "Q2867136"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1516914$22b34593-40ff-0dc0-ada2-be70433c70a8",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "11f43b09e0f03968c16a6bf62c01ae57d650aacb",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 110315658,
+                "id": "Q110315658"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1516914$daea3bab-4900-1a70-4169-9861ab8aa011",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "248147df9d673e48e8697162d4c658fd19baefd4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 375928,
+                "id": "Q375928"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "fabb4359c858d61012b85fad565d735556b1f26c",
+                "datavalue": {
+                  "value": {
+                    "time": "+1784-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P582": [
+              {
+                "snaktype": "value",
+                "property": "P582",
+                "hash": "24730c1f02fa9d487a94034a71b1a453271d0266",
+                "datavalue": {
+                  "value": {
+                    "time": "+1891-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580",
+            "P582"
+          ],
+          "id": "Q1516914$e81469e0-4692-2bec-139a-b6366bfc4d7c",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 37002670,
+                "id": "Q37002670"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "cfb066f3b97e6d5f969ae59796fcc45d3d249e57",
+                "datavalue": {
+                  "value": {
+                    "time": "+1891-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580"
+          ],
+          "id": "Q1516914$5651370e-4101-f59b-fb2a-fa57c0d950f6",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "a3723c4c3601569aebcc86e0f0c5c3697821da1b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 16,
+                "id": "Q16"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1516914$67b9465c-4575-6bfc-1815-942656cf844c",
+          "rank": "normal"
+        }
+      ],
+      "P1001": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1001",
+            "hash": "52ab6cb23a10ebc3a3c7bbd69966725024a2b146",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1965,
+                "id": "Q1965"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1516914$080dbd82-428f-4d47-6b1b-8e8fbc4a5041",
+          "rank": "normal"
+        }
+      ],
+      "P856": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P856",
+            "hash": "28f7929d16196c65dd3f35bae55747c644342b07",
+            "datavalue": {
+              "value": "https://www.legnb.ca/",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P407": [
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "d197d0a5efa4b4c23a302a829dd3ef43684fe002",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 150,
+                    "id": "Q150"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              },
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 1860,
+                    "id": "Q1860"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P407"
+          ],
+          "id": "Q1516914$9da185d5-4419-7ccd-405a-0abbd5f16bda",
+          "rank": "normal"
+        }
+      ],
+      "P2397": [],
+      "P571": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P571",
+            "hash": "70e725adc9d6bbe8ec804b61ac8340097b33253c",
+            "datavalue": {
+              "value": {
+                "time": "+1784-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            },
+            "datatype": "time"
+          },
+          "type": "statement",
+          "id": "Q1516914$ce287db6-4d43-3c42-645f-261f38931ba5",
+          "rank": "normal"
+        }
+      ],
+      "P576": [],
+      "P361": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P361",
+            "hash": "814b48e6c94e506a67394cceb31c802a56d97f19",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 3251036,
+                "id": "Q3251036"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1516914$4684d9d0-48b7-ef0f-070f-ad47169394db",
+          "rank": "normal"
+        }
+      ],
+      "P1365": [],
+      "P1366": []
+    }
+  },
+  "primary_provider_report": "reports/health/2026-10-24-eligible-media-rendered.json",
+  "source_conditions_report": "reports/health/2026-10-24-three-publication-conditions.json",
+  "playback_evidence": [
+    "reports/health/2026-10-24-new-brunswick-playback.json",
+    "reports/health/2026-10-24-new-brunswick-later-playback.json"
+  ],
+  "source_conditions": "The assembly disclaimer permits specified educational, private-study, research and reporting reproduction with accuracy and unofficial-version conditions. Its precise applicability to independent redistribution of the webcast remains unestablished; permission stays pending for that use.",
+  "remaining_gates": [
+    "current_live_and_full_room_inventory_unverified",
+    "audible_quality_and_all_audio_tracks_unverified",
+    "source_wide_captions_sign_variants_audio_description_unknown",
+    "independent_audiovisual_reuse_unestablished",
+    "optional_flag_asset_pending_neutral_legislature_mark_used"
+  ],
+  "all_metadata_and_streams_certified": false
+}

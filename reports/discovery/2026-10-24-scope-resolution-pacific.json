@@ -1,0 +1,369 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Five assigned authority/institutional-relationship questions only. No metadata, streams, EPG, rights, catalogue, masters or deployment changes.",
+  "input_register": "reports/discovery/2026-10-24-inventory-reconciliation.json",
+  "scope_rule": "docs/catalogue-scope.md",
+  "summary": {
+    "assigned_candidates": 5,
+    "individually_reviewed": 5,
+    "eligible_legislature": 2,
+    "outside_default_scope": 3,
+    "specific_authority_evidence_hold": 0,
+    "extra_ordinary_chambers_inferred": 0,
+    "extra_jurisdictions_inferred": 0,
+    "all_scope_questions_resolved": true
+  },
+  "sources": [
+    {
+      "id": "id-constitution",
+      "title": "1945 Constitution, as amended: DPR constitutional-document index",
+      "url": "https://www.dpr.go.id/dokumen/jdih/undang-undang-dasar",
+      "evidence_level": "primary_legal_text_search_index_review",
+      "finding": "Articles 20 and20A give DPR ordinary legislation, budget and scrutiny functions; Articles 22C–22D establish directly elected DPD and specified legislative participation. Article 2(1) combines DPR and DPD members in MPR. Articles 3 and37 assign MPR constitutional amendment powers.",
+      "currentness_limits": "Reader returned navigation only; indexed constitutional clauses were inspected. No complete later-case-law census or individual 2026 membership review.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "id-dpd-functions",
+      "title": "DPD: functions, tasks and powers",
+      "url": "https://orchard.dpd.go.id/profile/fungsi-tugas-wewenang",
+      "evidence_level": "primary_institutional_page_content_review",
+      "finding": "DPD describes legislative, budget and scrutiny functions under Article 22D: regional-bill initiative and discussion, budget/tax/education/religion advice, implementation scrutiny reported to DPR, and regional legislative-programme participation.",
+      "currentness_limits": "Page read24 October 2026; it is an institutional explanation, not independent evidence that every function is exercised in each proceeding.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "id-mk-92",
+      "title": "Constitutional Court decision 92/PUU-X/2012,27 March 2013",
+      "url": "https://mkri.id/public/content/persidangan/putusan/putusan_sidang_92%20PUU%202012%20-%20DPD%20-%20telah%20ucap%2027%20Maret%202013.pdf",
+      "evidence_level": "primary_judgment_relevant_reasons_content_review",
+      "finding": "Reasons[3.18.1]–[3.18.3], printedpp 244–248, distinguish DPD bill initiative/discussion from final approval: DPD may participate through opinion at second-level DPR debate, but final bill agreement remains DPR and President.",
+      "currentness_limits": "Historical authoritative ruling read at the court’s own URL. No claim to have audited every subsequent judgment.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "id-mpr-functions",
+      "title": "MPR: standing, tasks and powers",
+      "url": "https://www.mpr.go.id/tentang-mpr/Kedudukan%2C-Tugas%2C-dan-Wewenang",
+      "evidence_level": "primary_institutional_search_index_excerpt_review",
+      "finding": "Own institutional explanation identifies MPR membership as DPR and DPD members under Article 2(1), and constitutional amendment, presidential inauguration/removal and specified vacancy-election powers under the Constitution and Law 17/2014 as amended by Law 13/2019.",
+      "currentness_limits": "Direct reader403; indexed own-institution content inspected. No claim of fresh direct-page rendering or exhaustive 2026 statutory consolidation.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "id-dpd-2024-rules",
+      "title": "DPD Regulation2/2024 on standing orders: official BPK legal register",
+      "url": "https://peraturan.bpk.go.id/Details/314069/peraturan-dpd-no-2-tahun-2024",
+      "evidence_level": "primary_legal_register_search_index_excerpt_review",
+      "finding": "Register identifies the 2024 standing orders as in force from30 September 2024 and replacing 2022 standing orders; it describes DPD legislative, scrutiny and budget functions and DPD members’ MPR role.",
+      "currentness_limits": "Register/abstract read through index;125-page operative regulation was not fully extracted. Constitution and judgment establish the scope finding.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-act",
+      "title": "Tokelau Act 1948, sections 3,3A–3F and6",
+      "url": "https://www.legislation.govt.nz/act/public/1948/24/en/latest/#dlm247577",
+      "evidence_level": "primary_enacted_consolidated_legal_text_content_review",
+      "finding": "PCO lists Act in force, version28 October 2021. Section3A grants General Fono broad territorial rulemaking, taxation and offence powers; sections 3B/3F retain higher-law limits and Administrator disallowance. This is a direct statutory General Fono grant.",
+      "currentness_limits": "Latest displayed consolidation read24 October 2026. It does not itself establish the present extent of each Taupulega’s internal constitutional/delegated powers.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-village-rules",
+      "title": "Tokelau Village Incorporation Regulations 1986, regulations 3–7,14–15,18–19",
+      "url": "https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1991/4/en/2007-09-03/DLM117935/",
+      "evidence_level": "primary_enacted_legal_text_search_index_content_review",
+      "finding": "PCO’s displayed in-force reprint is as at1 October 1997. It incorporates all three villages, places their management in Taupulega, provides accounts/audit, and grants rules for village/island wellbeing, including taxes and fine-backed offences. Regulation18(4) subordinates them to General Fono rules;19 requires Taupulega resolution and village publication.",
+      "currentness_limits": "Full indexed relevant text read; direct reader403 and PDF attempt returned an empty file. The 1997 reprint cannot certify later General Fono amendments; no obsolete fine amount or 2026 financial procedure is adopted.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-admin",
+      "title": "Government of Tokelau: administration",
+      "url": "https://www.tokelau.org.nz/About+Us/Administration.html",
+      "evidence_level": "primary_government_page_content_review",
+      "finding": "Government describes Administrator administrative and legislative powers delegated to three Taupulega as highest authority, with national matters re-delegated to General Fono and most public-service delivery devolved to villages.",
+      "currentness_limits": "Undated summary; its delegation formulation must be reconciled with operative instruments. Displayed officeholder/seat-count details are not adopted as current.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-history",
+      "title": "Government of Tokelau: A History of Government 2008, pp27–29,64",
+      "url": "https://www.tokelau.org.nz/site/tokelau/files/Tokelau%20A%20History%20of%20Government%20FINAL.pdf",
+      "evidence_level": "primary_government_historical_explanation_content_review",
+      "finding": "Own-government history distinguishes executive devolution in 2004 from 1996 statutory General Fono lawmaking; its legislative diagram separately retains the three Taupulega’s village-rule powers.",
+      "currentness_limits": "Historical framework explanation through 2008, not proof of subsequent constitutional changes.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-devolution-review",
+      "title": "Government of Tokelau: Devolution Review Report",
+      "url": "https://www.tokelau.org.nz/site/tokelau/Devolution%20Review%20Report.pdf",
+      "evidence_level": "primary_government_report_search_index_excerpt_review",
+      "finding": "Review describes 2003 decision effectiveJuly 2004 transferring village public services, staff and budgets while retaining national standards, external relations, shipping and other national functions.",
+      "currentness_limits": "Describes historical implementation, not the complete signed delegation instrument or current consolidated village law.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-draft-package",
+      "title": "Government of Tokelau: Self Determination Package",
+      "url": "https://www.tokelau.org.nz/About+Us/Government/Self+Determination+Package.html",
+      "evidence_level": "primary_government_document_content_review",
+      "finding": "The package identifies the 2005 draft constitution and proposed free-association treaty for the 2006/2007 referenda. Its constitution text conditions commencement on repeal of the 1948 Act.",
+      "currentness_limits": "Draft constitutional arrangements must not be substituted for enacted current powers; the 1948 Act is still listed in force.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-draft-constitution",
+      "title": "MFAT-origin Constitution PDF retained by FAO, schedule1",
+      "url": "https://faolex.fao.org/docs/pdf/tok209463.pdf",
+      "evidence_level": "primary_legal_proposal_reproduction_content_review",
+      "finding": "Schedule1 expressly conditions this constitution’s commencement on repeal of Tokelau Act 1948. Draft article7’s village consultation/rejection provisions therefore do not alone prove present operative village veto authority.",
+      "currentness_limits": "PDF bears MFAT footer but no current amendment certification; used only to identify the commencement problem.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-2014-matrix",
+      "title": "Government of Tokelau: January–June 2014 sector report, printedp16",
+      "url": "https://www.tokelau.org.nz/site/tokelau/TNSP%20Results%20Matrix%20as%20at%2030%20June%202014.pdf",
+      "evidence_level": "primary_government_report_relevant_page_content_review",
+      "finding": "Lists Constitution with amendments and Election Rules 2013 in the law-review programme. July 2013 endorsement concerns review of Constitution Committee roles/responsibilities; the report does not supply an enacted 2013 constitutional amendment text.",
+      "currentness_limits": "Historical progress report; no 2013 New Zealand Tokelau Amendment Act is inferred.",
+      "reviewed_on": "2026-10-24"
+    },
+    {
+      "id": "tk-2022-election-rules",
+      "title": "General Fono decisions1–3 November 2022 and National Election Rules 2022, MFAT OIA28717",
+      "url": "https://www.mfat.govt.nz/assets/OIA/OIA-2023/OIA-28717-Tokelau-Briefings-27-July-2023.pdf",
+      "evidence_level": "primary_released_legislative_decision_and_rule_content_review",
+      "finding": "Printedpp4–6 record endorsement of 2022 national-election rules and Taupulega electoral roles;2013 amendments are mentioned in the election-rule discussion. This confirms later operative development without supplying the full current internal constitution.",
+      "currentness_limits": "Released27 July 2023; relevant pages read, not every 2022 decision or later rule. Election rules are not a new legislative-power grant.",
+      "reviewed_on": "2026-10-24"
+    }
+  ],
+  "records": [
+    {
+      "id": "national-scope--indonesia-dpd",
+      "name": "Dewan Perwakilan Daerah (DPD)",
+      "country": "Indonesia",
+      "status": "eligible_legislature",
+      "authority_status": "eligible_legislature",
+      "scope_role": "national_co_legislative_representative_body",
+      "decision_basis": "Eligible for the national legislative inventory: constitutional regional-bill initiative and substantive bill deliberation, implementation scrutiny and budget advice establish a national legislative participant. Its lack of final bill assent is preserved, rather than describing it as an equal-power upper chamber.",
+      "relationships": [
+        "distinct_from_DPR",
+        "DPD_members_also_members_of_MPR",
+        "same_Indonesia_national_jurisdiction"
+      ],
+      "primary_evidence_refs": [
+        "id-constitution",
+        "id-dpd-functions",
+        "id-mk-92",
+        "id-dpd-2024-rules"
+      ],
+      "legal_citations": [
+        "UUD 1945 Articles 2,3,20,20A,22C–22D,23 and37"
+      ],
+      "evidence_level": "primary_constitution_judgment_or_institutional_explanation_with_stated_access_limits",
+      "currentness_limits": "Authority/relationship decision as at24 October 2026; no 2026 membership, individual service, committee, metadata, programme or rights certification.",
+      "automatic_extra_ordinary_chamber_count": false,
+      "automatic_extra_jurisdiction_count": false,
+      "automatic_catalogue_promotion": false,
+      "scope_question_resolved": true
+    },
+    {
+      "id": "national-scope--indonesia-mpr",
+      "name": "Majelis Permusyawaratan Rakyat (MPR)",
+      "country": "Indonesia",
+      "status": "eligible_legislature",
+      "authority_status": "eligible_legislature",
+      "scope_role": "joint_constitutional_legislative_organ",
+      "decision_basis": "Eligible as the national joint constitutional organ with power to amend/adopt constitutional provisions. It is composed of DPR and DPD members, with presidential constitutional functions; it is not a third ordinary billmaking chamber or another set of independently elected members.",
+      "relationships": [
+        "composed_of_DPR_and_DPD_members",
+        "constitutional_joint_formation",
+        "same_Indonesia_national_jurisdiction"
+      ],
+      "primary_evidence_refs": [
+        "id-constitution",
+        "id-mpr-functions"
+      ],
+      "legal_citations": [
+        "UUD 1945 Articles 2(1),3,7B,8 and37",
+        "Law 17/2014 Articles 4–5, as amended by Law 13/2019"
+      ],
+      "evidence_level": "primary_constitution_judgment_or_institutional_explanation_with_stated_access_limits",
+      "currentness_limits": "Authority/relationship decision as at24 October 2026; no 2026 membership, individual service, committee, metadata, programme or rights certification.",
+      "automatic_extra_ordinary_chamber_count": false,
+      "automatic_extra_jurisdiction_count": false,
+      "automatic_catalogue_promotion": false,
+      "scope_question_resolved": true
+    },
+    {
+      "id": "scope-review--new-zealand--taupulega-of-atafu",
+      "name": "Taupulega of Atafu",
+      "country": "New Zealand",
+      "associated_territory": "Tokelau",
+      "status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "scope_role": "constituent_atoll_traditional_governing_and_village_rulemaking_body",
+      "relationships": [
+        "constituent_atoll_of_Tokelau",
+        "traditional_authority_distinct_from_General_Fono",
+        "not_a_New_Zealand_province",
+        "not_an_extra_national_chamber"
+      ],
+      "decision_basis": "Confirmed statutory powers are corporate village/island-affairs rulemaking and local management, subordinate to General Fono rules; the delegated public-service role does not establish a separate autonomous territorial legislature. Under the adopted first-level/autonomous special-status boundary and ordinary village exclusion, retain this institution outside the default eligible inventory. This does not deny its real lawmaking powers or traditional constitutional importance.",
+      "confirmed_evidence_refs": [
+        "tk-act",
+        "tk-village-rules",
+        "tk-admin",
+        "tk-history",
+        "tk-devolution-review"
+      ],
+      "legal_citations": [
+        "Tokelau Act 1948 sections 3,3A–3F",
+        "Tokelau Village Incorporation Regulations 1986 regulations 3–7,14–15,18–19, including 1996 amendments"
+      ],
+      "counterevidence_or_inadequate_shortcuts": [
+        "The own-government delegation summary is substantive evidence but is not the full operative grant.",
+        "Tax/offence-backed local rules alone cannot bypass the ordinary municipal exclusion.",
+        "A national consultative or rejection role in the uncommenced referendum draft is not proof of an operative present village veto.",
+        "A service-delivery devolution is not by itself legislative authority.",
+        "The undated highest-authority summary is retained and weighed; it does not displace the enacted village-remit limitation or by itself turn each nuku into an autonomous territorial legislature."
+      ],
+      "currentness_evidence_refs": [
+        "tk-draft-package",
+        "tk-draft-constitution",
+        "tk-2014-matrix",
+        "tk-2022-election-rules"
+      ],
+      "evidence_level": "primary_enacted_village_remit_and_government_function_review_with_currentness_limits",
+      "currentness_limits": "NZ Act latest displayed 28 October 2021; village reprint 1 October 1997. Later internal developments are acknowledged; this is a current catalogue-scope exclusion on the proved institutional remit, subject to reopening on operative contrary authority evidence. No present officeholders, broadcasts or permissions checked.",
+      "automatic_extra_ordinary_chamber_count": false,
+      "automatic_extra_jurisdiction_count": false,
+      "automatic_catalogue_promotion": false,
+      "scope_question_resolved": true,
+      "individual_candidate_review_completed": true,
+      "reopening_evidence": [
+        "Operative internal Constitution of Tokelau, with adoption/commencement instrument and all subsequent amendments, separately from the 2005–2007 self-determination draft.",
+        "Signed Administrator delegation to the three Taupulega effective 2004 and Taupulega subdelegation of national functions to General Fono, with present amendments or replacement instruments.",
+        "Operative Village Incorporation Rules 1986 as altered by General Fono instruments, including the 2004 village incorporation changes referenced by General Fono, and later amendments affecting normative competence, finance and executive accountability."
+      ],
+      "reopening_test": "Reopen if operative instruments demonstrate autonomous territorial legislative status and substantive lawmaking authority beyond the proved village/local-government remit; a current consolidated internal constitution or signed delegation may supply such evidence. Their present non-recovery alone does not create an authority hold."
+    },
+    {
+      "id": "scope-review--new-zealand--taupulega-of-nukunonu",
+      "name": "Taupulega of Nukunonu",
+      "country": "New Zealand",
+      "associated_territory": "Tokelau",
+      "status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "scope_role": "constituent_atoll_traditional_governing_and_village_rulemaking_body",
+      "relationships": [
+        "constituent_atoll_of_Tokelau",
+        "traditional_authority_distinct_from_General_Fono",
+        "not_a_New_Zealand_province",
+        "not_an_extra_national_chamber"
+      ],
+      "decision_basis": "Confirmed statutory powers are corporate village/island-affairs rulemaking and local management, subordinate to General Fono rules; the delegated public-service role does not establish a separate autonomous territorial legislature. Under the adopted first-level/autonomous special-status boundary and ordinary village exclusion, retain this institution outside the default eligible inventory. This does not deny its real lawmaking powers or traditional constitutional importance.",
+      "confirmed_evidence_refs": [
+        "tk-act",
+        "tk-village-rules",
+        "tk-admin",
+        "tk-history",
+        "tk-devolution-review"
+      ],
+      "legal_citations": [
+        "Tokelau Act 1948 sections 3,3A–3F",
+        "Tokelau Village Incorporation Regulations 1986 regulations 3–7,14–15,18–19, including 1996 amendments"
+      ],
+      "counterevidence_or_inadequate_shortcuts": [
+        "The own-government delegation summary is substantive evidence but is not the full operative grant.",
+        "Tax/offence-backed local rules alone cannot bypass the ordinary municipal exclusion.",
+        "A national consultative or rejection role in the uncommenced referendum draft is not proof of an operative present village veto.",
+        "A service-delivery devolution is not by itself legislative authority.",
+        "The undated highest-authority summary is retained and weighed; it does not displace the enacted village-remit limitation or by itself turn each nuku into an autonomous territorial legislature."
+      ],
+      "currentness_evidence_refs": [
+        "tk-draft-package",
+        "tk-draft-constitution",
+        "tk-2014-matrix",
+        "tk-2022-election-rules"
+      ],
+      "evidence_level": "primary_enacted_village_remit_and_government_function_review_with_currentness_limits",
+      "currentness_limits": "NZ Act latest displayed 28 October 2021; village reprint 1 October 1997. Later internal developments are acknowledged; this is a current catalogue-scope exclusion on the proved institutional remit, subject to reopening on operative contrary authority evidence. No present officeholders, broadcasts or permissions checked.",
+      "automatic_extra_ordinary_chamber_count": false,
+      "automatic_extra_jurisdiction_count": false,
+      "automatic_catalogue_promotion": false,
+      "scope_question_resolved": true,
+      "individual_candidate_review_completed": true,
+      "reopening_evidence": [
+        "Operative internal Constitution of Tokelau, with adoption/commencement instrument and all subsequent amendments, separately from the 2005–2007 self-determination draft.",
+        "Signed Administrator delegation to the three Taupulega effective 2004 and Taupulega subdelegation of national functions to General Fono, with present amendments or replacement instruments.",
+        "Operative Village Incorporation Rules 1986 as altered by General Fono instruments, including the 2004 village incorporation changes referenced by General Fono, and later amendments affecting normative competence, finance and executive accountability."
+      ],
+      "reopening_test": "Reopen if operative instruments demonstrate autonomous territorial legislative status and substantive lawmaking authority beyond the proved village/local-government remit; a current consolidated internal constitution or signed delegation may supply such evidence. Their present non-recovery alone does not create an authority hold."
+    },
+    {
+      "id": "scope-review--new-zealand--taupulega-of-fakaofo",
+      "name": "Taupulega of Fakaofo",
+      "country": "New Zealand",
+      "associated_territory": "Tokelau",
+      "status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "scope_role": "constituent_atoll_traditional_governing_and_village_rulemaking_body",
+      "relationships": [
+        "constituent_atoll_of_Tokelau",
+        "traditional_authority_distinct_from_General_Fono",
+        "not_a_New_Zealand_province",
+        "not_an_extra_national_chamber"
+      ],
+      "decision_basis": "Confirmed statutory powers are corporate village/island-affairs rulemaking and local management, subordinate to General Fono rules; the delegated public-service role does not establish a separate autonomous territorial legislature. Under the adopted first-level/autonomous special-status boundary and ordinary village exclusion, retain this institution outside the default eligible inventory. This does not deny its real lawmaking powers or traditional constitutional importance.",
+      "confirmed_evidence_refs": [
+        "tk-act",
+        "tk-village-rules",
+        "tk-admin",
+        "tk-history",
+        "tk-devolution-review"
+      ],
+      "legal_citations": [
+        "Tokelau Act 1948 sections 3,3A–3F",
+        "Tokelau Village Incorporation Regulations 1986 regulations 3–7,14–15,18–19, including 1996 amendments"
+      ],
+      "counterevidence_or_inadequate_shortcuts": [
+        "The own-government delegation summary is substantive evidence but is not the full operative grant.",
+        "Tax/offence-backed local rules alone cannot bypass the ordinary municipal exclusion.",
+        "A national consultative or rejection role in the uncommenced referendum draft is not proof of an operative present village veto.",
+        "A service-delivery devolution is not by itself legislative authority.",
+        "The undated highest-authority summary is retained and weighed; it does not displace the enacted village-remit limitation or by itself turn each nuku into an autonomous territorial legislature."
+      ],
+      "currentness_evidence_refs": [
+        "tk-draft-package",
+        "tk-draft-constitution",
+        "tk-2014-matrix",
+        "tk-2022-election-rules"
+      ],
+      "evidence_level": "primary_enacted_village_remit_and_government_function_review_with_currentness_limits",
+      "currentness_limits": "NZ Act latest displayed 28 October 2021; village reprint 1 October 1997. Later internal developments are acknowledged; this is a current catalogue-scope exclusion on the proved institutional remit, subject to reopening on operative contrary authority evidence. No present officeholders, broadcasts or permissions checked.",
+      "automatic_extra_ordinary_chamber_count": false,
+      "automatic_extra_jurisdiction_count": false,
+      "automatic_catalogue_promotion": false,
+      "scope_question_resolved": true,
+      "individual_candidate_review_completed": true,
+      "reopening_evidence": [
+        "Operative internal Constitution of Tokelau, with adoption/commencement instrument and all subsequent amendments, separately from the 2005–2007 self-determination draft.",
+        "Signed Administrator delegation to the three Taupulega effective 2004 and Taupulega subdelegation of national functions to General Fono, with present amendments or replacement instruments.",
+        "Operative Village Incorporation Rules 1986 as altered by General Fono instruments, including the 2004 village incorporation changes referenced by General Fono, and later amendments affecting normative competence, finance and executive accountability."
+      ],
+      "reopening_test": "Reopen if operative instruments demonstrate autonomous territorial legislative status and substantive lawmaking authority beyond the proved village/local-government remit; a current consolidated internal constitution or signed delegation may supply such evidence. Their present non-recovery alone does not create an authority hold."
+    }
+  ],
+  "access_limitations": [
+    "DPD own functions page, MK judgment, NZAct and own Tokelau pages/report pages were read; source-specific indexed-only limits are retained.",
+    "2016 Tokelau consolidated village-law PDF returned410 at https://www.paclii.org/tk/legis/consol_act_2016/vir 1986345.pdf; the content was not treated as fetched.",
+    "The 2004 General Fono decisions page identifies village incorporation changes but omits operative resolution text in the accessible extraction; the index heading is not a consolidated law.",
+    "No signed delegation text or current internal constitutional consolidation was recovered in this pass. These are the named remaining authority evidence gaps, not generic future research."
+  ],
+  "scope_boundary_applied": "First-level and autonomous special-status legislatures, retaining ordinary village/municipal exclusions. No blanket expansion to every traditional or Indigenous body below that tier."
+}

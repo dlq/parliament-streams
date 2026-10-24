@@ -10,6 +10,15 @@ ones. The coverage map includes all published subnational jurisdictions, with
 location dots for tiny outlines. Shared search associations preserve territorial
 relationships without presenting Crown Dependencies as UK subdivisions.
 
+The [Legislatures page](https://dlq.ca/parliament-streams/institutions.html)
+opens the working institution inventory, including authority decisions and
+remaining research gaps. It is broader than the video catalogue: an eligible
+legislature does not automatically have a verified stream, programme guide or
+reuse permission. Its interface supports all 23 locales; institution names and
+English research notes retain their recorded language. Use the page's
+contribution links to suggest a missing body or provide official evidence for
+a correction, including unresolved legislative-authority questions.
+
 Its dedicated programme guide presents the latest
 six-hourly schedule snapshot as compact Now/Next channel listings, with
 jurisdiction and listing-status filters, source-published times, explicit
@@ -105,6 +114,10 @@ For a quick local preview, run `npm ci` once to prepare the browser libraries,
 then open `site/index.html` directly. The checked-in
 `site/catalogue-data.js` snapshot allows the page to work without a local
 server. It is generated from the canonical JSON and checked for drift by CI.
+The Legislatures page similarly reads `site/institutions-data.js`, generated
+from the operational institution register with `make institution-site-data`.
+`make institution-site-data-check` checks that snapshot for drift, and
+`make institution-inventory-validate` checks the underlying register.
 YouTube does not permit iframe playback from a `file://` page because it has no
 HTTP origin/referrer; the direct-file preview therefore shows a link to the
 public catalogue instead of a broken player.
@@ -131,9 +144,10 @@ language in the site header or use `?lang=fr` (substituting a supported locale
 code) in a shared URL; the selection is also stored locally in the browser.
 Chinese browser locales for Taiwan, Hong Kong, and Macao select Traditional
 Chinese unless an explicit Simplified Chinese script is requested. The four
-additional packs live in `site/extra-locales.js`; catalogue, map, schedule, and
-IPTV/VLC messages are checked for complete key coverage. Czech source counts
-use the locale's plural categories. Dates, numbers, and sorting use `Intl`.
+additional packs live in `site/extra-locales.js`; catalogue, map, schedule,
+Legislatures and IPTV/VLC messages are checked for complete key coverage. Czech
+source counts use the locale's plural categories. Dates, numbers, and sorting
+use `Intl`.
 
 IPTV setup, copy feedback, and VLC desktop instructions follow the selected
 language on both the catalogue and schedule pages. The external VideoLAN

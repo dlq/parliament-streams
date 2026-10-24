@@ -1,0 +1,143 @@
+{
+  "method": "Only source-designated chamber websites and visible official archive/news controls; no hidden APIs or off-site ownership assumptions. Access errors stop interaction.",
+  "results": [
+    {
+      "id": "lesotho-senate",
+      "url": "http://senate.parliament.ls/",
+      "checked_at": "2026-10-24T03:43:46.010Z",
+      "status": 200,
+      "links": [
+        {
+          "text": "Virtual Tour – Videos",
+          "url": "http://senate.parliament.ls/videos"
+        }
+      ],
+      "media": [],
+      "outcome": "visible_primary_navigation_followed_requires_content_review",
+      "final_url": "http://senate.parliament.ls/",
+      "title": "Lesotho Senate",
+      "screenshot": "/tmp/national-visible-lesotho-senate.png",
+      "non_media_social_widgets_observed": true
+    },
+    {
+      "id": "lesotho-assembly",
+      "url": "http://nationalassembly.parliament.ls/",
+      "checked_at": "2026-10-24T03:43:53.445Z",
+      "status": 200,
+      "links": [
+        {
+          "text": "Virtual Tour – Video",
+          "url": "http://nationalassembly.parliament.ls/videos"
+        }
+      ],
+      "media": [],
+      "outcome": "visible_primary_navigation_followed_requires_content_review",
+      "final_url": "http://nationalassembly.parliament.ls/",
+      "title": "The National Assembly of Lesotho",
+      "screenshot": "/tmp/national-visible-lesotho-assembly.png",
+      "non_media_social_widgets_observed": true
+    },
+    {
+      "id": "bulgaria-calendar",
+      "url": "https://www.parliament.bg/bg/video",
+      "checked_at": "2026-10-24T03:44:00.221Z",
+      "status": 200,
+      "calendarLinks": [
+        {
+          "text": "Органиграма на Народното събрание",
+          "url": "https://www.parliament.bg/pub/Org_adm_05.2026.pdf"
+        }
+      ],
+      "links": [
+        {
+          "text": "Български",
+          "url": "https://www.parliament.bg/bg/video#"
+        },
+        {
+          "text": "English",
+          "url": "https://www.parliament.bg/bg/video#"
+        },
+        {
+          "text": "КОНСТИТУЦИЯ",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "НАРОДНИ ПРЕДСТАВИТЕЛИ",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "KОМИСИИ",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "Аудиовизуален архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ПАРЛАМЕНТАРНА ДЕЙНОСТ",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "Видео архив",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ЗА МЕДИИТЕ",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ОПОЗНАЙ ПАРЛАМЕНТА",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "ПОЛЕЗНА ИНФОРМАЦИЯ",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "Видео",
+          "url": "https://www.parliament.bg/bg/video"
+        },
+        {
+          "text": "НАЧАЛО",
+          "url": "https://www.parliament.bg/bg/video#"
+        },
+        {
+          "text": "АРХИВ ПЛЕНАРНИ ЗАСЕДАНИЯ",
+          "url": "https://www.parliament.bg/bg/video#"
+        },
+        {
+          "text": "АРХИВ ЗАСЕДАНИЯ НА КОМИСИИ",
+          "url": "https://www.parliament.bg/bg/video#"
+        },
+        {
+          "text": "",
+          "url": "https://www.youtube.com/channel/UCzLUN0HmnNAMEEMynMXPBqw"
+        },
+        {
+          "text": "",
+          "url": "https://www.facebook.com/%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE-%D1%81%D1%8A%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D0%A0%D0%B5%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0-%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F-155895645128166/"
+        }
+      ],
+      "media": [],
+      "outcome": "visible_primary_navigation_followed_requires_content_review",
+      "final_url": "https://www.parliament.bg/bg/video",
+      "title": "Видео - Народно събрание на Република България",
+      "screenshot": "/tmp/national-visible-bulgaria-calendar.png",
+      "non_media_social_widgets_observed": false
+    },
+    {
+      "id": "albania-proceedings-news",
+      "url": "https://www.parlament.al/",
+      "checked_at": "2026-10-24T03:44:05.674Z",
+      "status": 200,
+      "followed_visible_news": true,
+      "links": [],
+      "media": [],
+      "outcome": "visible_primary_navigation_followed_requires_content_review",
+      "final_url": "https://www.parlament.al/lajme/621d79cc-ac47-48bc-ad57-97996bd8eaec",
+      "title": "Kuvendi i Shqipërisë",
+      "screenshot": "/tmp/national-visible-albania-proceedings-news.png",
+      "non_media_social_widgets_observed": false
+    }
+  ]
+}

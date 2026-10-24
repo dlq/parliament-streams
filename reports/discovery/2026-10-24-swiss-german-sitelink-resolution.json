@@ -1,0 +1,924 @@
+{
+  "checked_at": "2026-10-24T05:13:52.603601+00:00",
+  "request_url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&maxlag=5&props=info%7Clabels%7Cdescriptions%7Cclaims&sites=dewiki&titles=Landrat+%28Basel-Landschaft%29%7CLandrat+%28Nidwalden%29%7CKantonsrat+%28Schaffhausen%29",
+  "scope": "German exact-title sitelink hypotheses for three unresolved Swiss parliament items. Returned identities require primary crosscheck; missing titles do not prove absence.",
+  "outcome": "returned_entity_candidates",
+  "previous_holds": [
+    {
+      "checked_at": "2026-10-24T05:13:52.603601+00:00",
+      "outcome": "held",
+      "error": "Wikidata cooldown: 60s remaining (API maxlag)"
+    }
+  ],
+  "cache_hit": false,
+  "source_fetched_at": 1792818926.4457102,
+  "entities": {
+    "Q1803685": {
+      "pageid": 1734903,
+      "ns": 0,
+      "title": "Q1803685",
+      "lastrevid": 2384643015,
+      "modified": "2025-07-26T20:48:28Z",
+      "type": "item",
+      "id": "Q1803685",
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Landrat von Basel-Landschaft"
+        },
+        "en": {
+          "language": "en",
+          "value": "Landrat of Basel-Landschaft"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Landraad van Basel-Landschaft"
+        },
+        "gsw": {
+          "language": "gsw",
+          "value": "Dr Landroot vom Kanton Basel-Landschaft"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Landrat de Bâle-Campagne"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio del Canton Basilea Campagna"
+        },
+        "hy": {
+          "language": "hy",
+          "value": "Լանդրատ Բազել-Լանդ-Լանդքաֆտ"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Basel-Landschaft, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Kantonsparlament des Kantons Basel-Landschaft in der Schweiz"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Bâle-Camapgne"
+        },
+        "it": {
+          "language": "it",
+          "value": "parlamento del Canton Basilea Campagna, Svizzera"
+        },
+        "hy": {
+          "language": "hy",
+          "value": "Բազել-լանդշաֆտ կանտոնի խորհրդարան, Շվեյցարիա"
+        }
+      },
+      "claims": {
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "e4e05f796ddd0726ce7e575bde3b5b15419c6e65",
+              "datavalue": {
+                "value": {
+                  "amount": "+90",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q1803685$2ef91244-49d9-85eb-76c4-183cfeede69f",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$3abc275f-4a3d-347f-a11e-94c95e69bf50",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7a7ba6db36296df97223b5da870f72210cb32091",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 113032545,
+                  "id": "Q113032545"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$fd53da0d-41ef-0295-1bac-f3d5b3b246c4",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "14b7426c766f7563ae6b05f14b6ac64ab1b53988",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "deb2491e4c5f1d6148b1694bd85536aa3bf89993",
+                      "datavalue": {
+                        "value": "https://www.baselland.ch/politik-und-behorden/behoerdenverzeichnis",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P854"
+                ]
+              }
+            ]
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "5a00c7835227d1059fd69b7c5a1f28472d766d36",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12146,
+                  "id": "Q12146"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$388e75cb-40cf-d202-b602-fe12bb699361",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$9f032206-40a7-8bcb-52ed-387020c6e726",
+            "rank": "normal"
+          }
+        ],
+        "P2671": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2671",
+              "hash": "3ebbefd6774328b7c154563a4d7cce2f27d8cada",
+              "datavalue": {
+                "value": "/g/12168ls9",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q1803685$EC4E6B11-6F6D-4FAF-9057-12F4CBC6EA53",
+            "rank": "normal"
+          }
+        ],
+        "P910": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P910",
+              "hash": "98e98112881189aed5a2b2f70066bfcaf81912b2",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 106327022,
+                  "id": "Q106327022"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$9FD73435-1BC5-41D9-BDD0-D3F4FD710D02",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "1e85f160148c5c22f910a2743523cb56c6919955",
+              "datavalue": {
+                "value": "https://www.baselland.ch/politik-und-behorden/landrat-parlament",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q1803685$551db53f-4602-8af1-b50b-abc4a8b268a9",
+            "rank": "normal"
+          }
+        ],
+        "P159": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P159",
+              "hash": "769776e6ab844ef0c6cdabd7e294b594ab126721",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 68972,
+                  "id": "Q68972"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$392258b5-4f00-83cd-bf39-5bec80f895cc",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P2670": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2670",
+              "hash": "c9081aac72e5f0a430cfadfe06d152538f3819a6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 98497237,
+                  "id": "Q98497237"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$66fb6bf3-419a-ece9-e936-0426be8b7754",
+            "rank": "normal"
+          }
+        ],
+        "P6365": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6365",
+              "hash": "ac2eb377ba8f8107264b1b21e77edd67b295cb89",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 8998650,
+                  "id": "Q8998650"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1803685$fac3ad45-4b56-70a5-1921-1b23a2a0cf92",
+            "rank": "normal"
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "cb8fba43162f8695c6b7943491176d73b20f9469",
+              "datavalue": {
+                "value": "Landrat of Basel-Landschaft",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q1803685$51c648f6-4796-6dfa-1989-b61b8602dd5f",
+            "rank": "normal"
+          }
+        ]
+      }
+    },
+    "Q1755180": {
+      "pageid": 1687860,
+      "ns": 0,
+      "title": "Q1755180",
+      "lastrevid": 2469342722,
+      "modified": "2026-03-04T14:25:42Z",
+      "type": "item",
+      "id": "Q1755180",
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Landrat des Kantons Nidwalden"
+        },
+        "en": {
+          "language": "en",
+          "value": "Landrat of Nidwalden"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Landraad van Nidwalden"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Landrat de Nidwald"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio (Nidvaldo)"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Nidwalden, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Kantonales Parlament"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Nidwald"
+        }
+      },
+      "claims": {
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "7c570e76fd9147cf36e24c617a61e0da40fdbe36",
+              "datavalue": {
+                "value": {
+                  "amount": "+60",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q1755180$b2fb5a33-416a-0aba-bf36-4ca062d0456e",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1755180$efa59f9a-4671-3f3a-e243-0161e98cc3a4",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1755180$7def2afb-475c-aa97-fc5b-e72542e99afa",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "ca0ae42bde0589d42c56278e7a46fc21832cabc5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12592,
+                  "id": "Q12592"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1755180$b9426427-493e-0254-2ec0-3f725c449087",
+            "rank": "normal"
+          }
+        ],
+        "P2671": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2671",
+              "hash": "414388a5bf3ab13033ce8b8c905e94aa40226adb",
+              "datavalue": {
+                "value": "/g/121bctsq",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q1755180$2AA6DC1C-530E-4F52-A8DC-C084104A0F2C",
+            "rank": "normal"
+          }
+        ],
+        "P910": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P910",
+              "hash": "cfc4593b24ca176e1ab02ae5d217a41816b598c5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 106327038,
+                  "id": "Q106327038"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1755180$8E970AB8-A3B7-4EED-BB7D-E99292FEBDCB",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "d183ec4d3cc13163078077569bcfa85395ad3170",
+              "datavalue": {
+                "value": "https://www.nw.ch/landratmain/2114",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q1755180$e8e42345-4a3b-d8fe-9d6a-b2415a284f03",
+            "rank": "normal"
+          }
+        ],
+        "P2670": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2670",
+              "hash": "55680fdf2e8fafcc49e0a0438c92dd9033ece712",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 98497242,
+                  "id": "Q98497242"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1755180$b2ec44d7-4006-47b3-c22b-aaf76baa1941",
+            "rank": "normal"
+          }
+        ],
+        "P6365": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6365",
+              "hash": "ce9739a54d3a3112338984c013c6454c70273b39",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 17253454,
+                  "id": "Q17253454"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1755180$888d1493-427d-2444-f7cc-69f9610268e2",
+            "rank": "normal"
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "aefef9556a5388399602208275505dc5ebd237a6",
+              "datavalue": {
+                "value": "Landrat of Nidwalden",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q1755180$d6ed66c6-44b3-74b5-6d17-2826699788ac",
+            "rank": "normal"
+          }
+        ]
+      }
+    },
+    "Q1728100": {
+      "pageid": 1661139,
+      "ns": 0,
+      "title": "Q1728100",
+      "lastrevid": 2393759165,
+      "modified": "2025-08-18T12:26:59Z",
+      "type": "item",
+      "id": "Q1728100",
+      "labels": {
+        "de": {
+          "language": "de",
+          "value": "Kantonsrat (Schaffhausen)"
+        },
+        "en": {
+          "language": "en",
+          "value": "Cantonal Council of Schaffhausen"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Kantonsraad van Schaffhausen"
+        },
+        "sco": {
+          "language": "sco",
+          "value": "Cantonal Cooncil o Schaffhausen"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Conseil cantonal de Schaffhouse"
+        },
+        "it": {
+          "language": "it",
+          "value": "Gran Consiglio (Sciaffusa)"
+        }
+      },
+      "descriptions": {
+        "en": {
+          "language": "en",
+          "value": "parliament of the canton of Schaffhausen, Switzerland"
+        },
+        "de": {
+          "language": "de",
+          "value": "Parlament des Kantons Schaffhausen"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "parlement cantonal de Schaffhouse"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "kantonsparlement van het kanton Schaffhausen"
+        }
+      },
+      "claims": {
+        "P1342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1342",
+              "hash": "7c570e76fd9147cf36e24c617a61e0da40fdbe36",
+              "datavalue": {
+                "value": {
+                  "amount": "+60",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "id": "Q1728100$a46f7a2c-48ee-1240-23b4-8336d609873c",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "273c0f8698e26baecf4ca85a1ba610a921bb7bff",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 667186,
+                  "id": "Q667186"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1728100$38666a03-410f-f361-21aa-abfc04770e7f",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "72649de3bac2e56da4b2eca1af96de4a619af9bc",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 39,
+                  "id": "Q39"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1728100$e6336200-411d-ca3c-8bb6-10c9c7d73561",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "e965c9d6e2e30ae94ab65c75ab8dfb284c2dcfc9",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12697,
+                  "id": "Q12697"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1728100$7fadfedb-4193-74a8-7967-5fc09232dc28",
+            "rank": "normal"
+          }
+        ],
+        "P2671": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2671",
+              "hash": "56e7711b5e89dc78273ab039c7248e491469410f",
+              "datavalue": {
+                "value": "/g/120l2jq7",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q1728100$BA0AC138-9633-4E83-BBC7-16513A57E367",
+            "rank": "normal"
+          }
+        ],
+        "P910": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P910",
+              "hash": "ff16bb52bdf9b822d9c8cd433cdd0b44eeedf571",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 106327041,
+                  "id": "Q106327041"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1728100$D3AADAF8-8E57-4FD9-99CA-C8E2EF0662CA",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "6e4c6a5fd9e8ee46008b568ddc7f400d9def7735",
+              "datavalue": {
+                "value": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-40609-DE.html",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 188,
+                      "id": "Q188"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q1728100$59bf464d-4cf5-4c05-1b2d-7beec370b789",
+            "rank": "normal"
+          }
+        ],
+        "P2670": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2670",
+              "hash": "43e336816f77a393f4baa2eda30a5823fba613df",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 98497244,
+                  "id": "Q98497244"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1728100$27edbe22-44e1-00ea-de69-5d1eaddc3988",
+            "rank": "normal"
+          }
+        ],
+        "P6365": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6365",
+              "hash": "c9a461904b463f1d48f5e6e9e5d9b16a8c477e7f",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 19479539,
+                  "id": "Q19479539"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q1728100$269411a0-4d93-94f8-7385-94d8b3d343ea",
+            "rank": "normal"
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "6d42f0280877b8f2f9a8ce26d506b3f7fa07e546",
+              "datavalue": {
+                "value": "Cantonal Council of Schaffhausen",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q1728100$c9c99fda-4ae1-64f3-2426-9632d45544e0",
+            "rank": "normal"
+          }
+        ]
+      }
+    }
+  }
+}

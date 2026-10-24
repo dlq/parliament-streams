@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the Parliament Streams working inventory of national, regional and autonomous legislatures. Review evidence and help document missing institutions and official broadcasts.">
+    <title>Legislatures · Parliament Streams</title>
+    <link rel="canonical" href="https://dlq.ca/parliament-streams/institutions.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Parliament Streams">
+    <meta property="og:url" content="https://dlq.ca/parliament-streams/institutions.html">
+    <meta property="og:title" content="Legislatures · Parliament Streams">
+    <meta property="og:description" content="Explore the Parliament Streams working inventory of national, regional and autonomous legislatures. Review evidence and help document missing institutions and official broadcasts.">
+    <meta property="og:image" content="https://dlq.ca/parliament-streams/assets/brand/parliament-streams-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Parliament Streams: Parliamentary video, documented.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Legislatures · Parliament Streams">
+    <meta name="twitter:description" content="Explore the Parliament Streams working inventory of national, regional and autonomous legislatures. Review evidence and help document missing institutions and official broadcasts.">
+    <meta name="twitter:image" content="https://dlq.ca/parliament-streams/assets/brand/parliament-streams-social.png">
+    <meta name="twitter:image:alt" content="Parliament Streams: Parliamentary video, documented.">
+    <script type="application/ld+json" id="page-structured-data">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://dlq.ca/parliament-streams/#website","url":"https://dlq.ca/parliament-streams/","name":"Parliament Streams"},{"@type":"CollectionPage","@id":"https://dlq.ca/parliament-streams/institutions.html#page","url":"https://dlq.ca/parliament-streams/institutions.html","name":"Legislatures · Parliament Streams","description":"Explore the Parliament Streams working inventory of national, regional and autonomous legislatures. Review evidence and help document missing institutions and official broadcasts.","isPartOf":{"@id":"https://dlq.ca/parliament-streams/#website"},"inLanguage":"en"}]}</script>
+    <link rel="icon" href="assets/brand/parliaments-favicon.png?v=20260816-green" type="image/png" sizes="256x256">
+    <link rel="apple-touch-icon" href="assets/brand/parliaments-favicon.png?v=20260816-green">
+    <link rel="stylesheet" href="styles.css?v=20261024-legislature-inventory">
+    <link rel="stylesheet" href="institutions.css?v=20261024-legislature-inventory">
+  </head>
+  <body class="institutions-page">
+    <a class="skip-link" id="institutions-skip" href="#institution-list">Skip to legislatures</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" id="institutions-brand" href="./" aria-label="Parliament Streams home">
+          <img class="brand-mark" src="assets/brand/parliaments-mark.png" alt="">
+          <span>Parliament Streams</span>
+        </a>
+        <nav id="institutions-navigation" aria-label="Primary navigation">
+          <a id="institutions-nav-catalogue" href="./">Catalogue</a>
+          <a id="institutions-nav-current" href="institutions.html" aria-current="page">Legislatures</a>
+          <a id="institutions-nav-map" href="map.html">Coverage map</a>
+          <a id="institutions-nav-schedule" href="schedule.html">Schedule</a>
+          <a class="github-link" href="https://github.com/dlq/parliament-streams">GitHub</a>
+        </nav>
+        <label class="locale-control"><span class="visually-hidden" id="institutions-language">Language</span><select id="locale-select"></select></label>
+      </div>
+    </header>
+    <main>
+      <div class="institutions-intro">
+        <h1 id="institutions-title">Legislatures</h1>
+        <p class="lede" id="institutions-lede">Explore the institutions in our research, and help fill the gaps.</p>
+        <p class="institutions-reviewed" id="institutions-reviewed"></p>
+      </div>
+      <details class="institutions-contribute">
+        <summary id="contribute-title">Help improve this list</summary>
+        <p id="contribute-copy">Missing an institution or an official broadcast? Have a correction, translation, accessibility finding or another idea? Contributions of any size are welcome.</p>
+        <div class="institutions-links">
+          <a id="contribute-institution" href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">Suggest an institution</a>
+          <a id="contribute-source" href="https://github.com/dlq/parliament-streams/issues/new?template=source_correction.yml">Share an official broadcast</a>
+          <a id="contribute-translation" href="https://github.com/dlq/parliament-streams/issues/new?template=translation_review.yml">Help with translation</a>
+          <a id="contribute-other" href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">Other contributions</a>
+        </div>
+      </details>
+      <details class="institutions-scope">
+        <summary id="scope-title">Scope and method</summary>
+        <div>
+          <p id="scope-copy">Our current research covers 71 country groups from the EIU Democracy Index 2024 baseline, including first-level and autonomous special-status legislatures. Chambers and distinct legislative organs are listed within their institutions where applicable. This is a working inventory; completeness and viewing-service validation remain separate.</p>
+          <p id="scope-names">Institution names follow the source records; research notes are available in English.</p>
+          <p id="scope-service">No documented viewing source is a research gap; it does not establish that the institution has no broadcasts.</p>
+          <div class="institutions-links">
+            <a id="scope-notes" href="https://github.com/dlq/parliament-streams/blob/main/docs/catalogue-scope.md" lang="en">Research notes (English)</a>
+            <a id="scope-data" href="https://github.com/dlq/parliament-streams/blob/main/data/discovery/institutions.json">Download inventory JSON</a>
+            <a id="contribution-guide" href="https://github.com/dlq/parliament-streams/blob/main/CONTRIBUTING.md">Contribution guide</a>
+          </div>
+        </div>
+      </details>
+      <div class="institutions-filters" role="search" aria-labelledby="institution-search-label">
+        <label class="institutions-search"><span id="institution-search-label">Search country or institution</span><input id="institution-search" type="search" autocomplete="off" aria-describedby="institution-search-hint"></label>
+        <label><span id="institution-country-label">Country</span><select id="institution-country"></select></label>
+        <label><span id="institution-status-label">Research status</span><select id="institution-status"></select></label>
+      </div>
+      <p id="institution-search-hint" class="institutions-hint">Country searches include regional institutions and associated territories.</p>
+      <div class="institutions-results">
+        <p id="institution-results" role="status" aria-live="polite">Loading institutions…</p>
+        <button id="institution-clear" type="button" hidden>Clear filters</button>
+      </div>
+      <div id="institution-list" tabindex="-1"></div>
+      <noscript><p>This research inventory needs JavaScript to filter its entries. <a href="https://github.com/dlq/parliament-streams/blob/main/data/discovery/institutions.json">Read the inventory on GitHub</a> or <a href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">suggest a contribution</a>.</p></noscript>
+    </main>
+    <footer class="site-footer">
+      <span id="institutions-footer">Parliament Streams is an independent research catalogue.</span>
+      <a href="https://github.com/dlq/parliament-streams">GitHub</a>
+      <a href="sitemap.xml" lang="en">Sitemap</a>
+    </footer>
+    <script defer src="seo.js?v=20261024-legislature-inventory"></script>
+    <script defer src="extra-locales.js?v=20261022-locales"></script>
+    <script defer src="i18n.js?v=20261022-locales"></script>
+    <script defer src="map-i18n.js?v=20261024-recording-reconciliation"></script>
+    <script defer src="schedule-i18n.js?v=20261022-locales"></script>
+    <script defer src="institutions-i18n.js?v=20261024-legislature-inventory"></script>
+    <script defer src="institutions-data.js?v=20261024-legislature-inventory"></script>
+    <script defer src="institutions.js?v=20261024-legislature-inventory"></script>
+  </body>
+</html>

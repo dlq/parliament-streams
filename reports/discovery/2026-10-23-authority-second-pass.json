@@ -1,0 +1,1201 @@
+{
+  "research_date": "2026-10-23",
+  "scope_rule": "docs/catalogue-scope.md",
+  "method": "Primary current institutional/statutory explanations, with explicit historical-reference and special-status caveats. These are legislative-scope decisions, not source-media promotions.",
+  "decisions": [
+    {
+      "id": "india--andhra-pradesh",
+      "country": "India",
+      "jurisdiction": "Andhra Pradesh",
+      "institution": "Andhra Pradesh Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--arunachal-pradesh",
+      "country": "India",
+      "jurisdiction": "Arunachal Pradesh",
+      "institution": "Arunachal Pradesh Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--assam",
+      "country": "India",
+      "jurisdiction": "Assam",
+      "institution": "Assam Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--bihar",
+      "country": "India",
+      "jurisdiction": "Bihar",
+      "institution": "Bihar Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--chhattisgarh",
+      "country": "India",
+      "jurisdiction": "Chhattisgarh",
+      "institution": "Chhattisgarh Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--goa",
+      "country": "India",
+      "jurisdiction": "Goa",
+      "institution": "Goa Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--gujarat",
+      "country": "India",
+      "jurisdiction": "Gujarat",
+      "institution": "Gujarat Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--haryana",
+      "country": "India",
+      "jurisdiction": "Haryana",
+      "institution": "Haryana Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--himachal-pradesh",
+      "country": "India",
+      "jurisdiction": "Himachal Pradesh",
+      "institution": "Himachal Pradesh Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--jharkhand",
+      "country": "India",
+      "jurisdiction": "Jharkhand",
+      "institution": "Jharkhand Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--karnataka",
+      "country": "India",
+      "jurisdiction": "Karnataka",
+      "institution": "Karnataka Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--kerala",
+      "country": "India",
+      "jurisdiction": "Kerala",
+      "institution": "Kerala Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--madhya-pradesh",
+      "country": "India",
+      "jurisdiction": "Madhya Pradesh",
+      "institution": "Madhya Pradesh Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--maharashtra",
+      "country": "India",
+      "jurisdiction": "Maharashtra",
+      "institution": "Maharashtra Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--manipur",
+      "country": "India",
+      "jurisdiction": "Manipur",
+      "institution": "Manipur Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--meghalaya",
+      "country": "India",
+      "jurisdiction": "Meghalaya",
+      "institution": "Meghalaya Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--mizoram",
+      "country": "India",
+      "jurisdiction": "Mizoram",
+      "institution": "Mizoram Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--nagaland",
+      "country": "India",
+      "jurisdiction": "Nagaland",
+      "institution": "Nagaland Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--odisha",
+      "country": "India",
+      "jurisdiction": "Odisha",
+      "institution": "Odisha Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--punjab-india",
+      "country": "India",
+      "jurisdiction": "Punjab, India",
+      "institution": "Punjab, India Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--rajasthan",
+      "country": "India",
+      "jurisdiction": "Rajasthan",
+      "institution": "Rajasthan Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--sikkim",
+      "country": "India",
+      "jurisdiction": "Sikkim",
+      "institution": "Sikkim Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--tamil-nadu",
+      "country": "India",
+      "jurisdiction": "Tamil Nadu",
+      "institution": "Tamil Nadu Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--telangana",
+      "country": "India",
+      "jurisdiction": "Telangana",
+      "institution": "Telangana Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--tripura",
+      "country": "India",
+      "jurisdiction": "Tripura",
+      "institution": "Tripura Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--uttar-pradesh",
+      "country": "India",
+      "jurisdiction": "Uttar Pradesh",
+      "institution": "Uttar Pradesh Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--west-bengal",
+      "country": "India",
+      "jurisdiction": "West Bengal",
+      "institution": "West Bengal Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--uttarakhand",
+      "country": "India",
+      "jurisdiction": "Uttarakhand",
+      "institution": "Uttarakhand Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-state-legislatures"
+    },
+    {
+      "id": "india--delhi",
+      "country": "India",
+      "jurisdiction": "Delhi",
+      "institution": "Delhi Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-delhi-assembly"
+    },
+    {
+      "id": "india--puducherry",
+      "country": "India",
+      "jurisdiction": "Puducherry",
+      "institution": "Puducherry Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-puducherry-assembly"
+    },
+    {
+      "id": "india--jammu-and-kashmir",
+      "country": "India",
+      "jurisdiction": "Jammu and Kashmir",
+      "institution": "Jammu and Kashmir Legislative Assembly",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "india-jammu-kashmir-assembly"
+    },
+    {
+      "id": "malaysia--johor",
+      "country": "Malaysia",
+      "jurisdiction": "Johor",
+      "institution": "Dewan Undangan Negeri Johor",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--kedah-darulaman",
+      "country": "Malaysia",
+      "jurisdiction": "Kedah Darulaman",
+      "institution": "Dewan Undangan Negeri Kedah Darulaman",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--kelantan",
+      "country": "Malaysia",
+      "jurisdiction": "Kelantan",
+      "institution": "Dewan Undangan Negeri Kelantan",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--melaka",
+      "country": "Malaysia",
+      "jurisdiction": "Melaka",
+      "institution": "Dewan Undangan Negeri Melaka",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--negeri-sembilan",
+      "country": "Malaysia",
+      "jurisdiction": "Negeri Sembilan",
+      "institution": "Dewan Undangan Negeri Negeri Sembilan",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--pahang",
+      "country": "Malaysia",
+      "jurisdiction": "Pahang",
+      "institution": "Dewan Undangan Negeri Pahang",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--penang",
+      "country": "Malaysia",
+      "jurisdiction": "Penang",
+      "institution": "Dewan Undangan Negeri Penang",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--perak",
+      "country": "Malaysia",
+      "jurisdiction": "Perak",
+      "institution": "Dewan Undangan Negeri Perak",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--perlis",
+      "country": "Malaysia",
+      "jurisdiction": "Perlis",
+      "institution": "Dewan Undangan Negeri Perlis",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--sabah",
+      "country": "Malaysia",
+      "jurisdiction": "Sabah",
+      "institution": "Dewan Undangan Negeri Sabah",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--sarawak",
+      "country": "Malaysia",
+      "jurisdiction": "Sarawak",
+      "institution": "Dewan Undangan Negeri Sarawak",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--selangor",
+      "country": "Malaysia",
+      "jurisdiction": "Selangor",
+      "institution": "Dewan Undangan Negeri Selangor",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "malaysia--terengganu",
+      "country": "Malaysia",
+      "jurisdiction": "Terengganu",
+      "institution": "Dewan Undangan Negeri Terengganu",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "malaysia-state-legislatures"
+    },
+    {
+      "id": "spain--asamblea-de-madrid",
+      "country": "Spain",
+      "jurisdiction": "Asamblea de Madrid",
+      "institution": "Asamblea de Madrid",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--asamblea-regional-de-murcia",
+      "country": "Spain",
+      "jurisdiction": "Asamblea Regional de Murcia",
+      "institution": "Asamblea Regional de Murcia",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--cortes-de-aragon",
+      "country": "Spain",
+      "jurisdiction": "Cortes de Aragón",
+      "institution": "Cortes de Aragón",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--cortes-de-castilla-y-leon",
+      "country": "Spain",
+      "jurisdiction": "Cortes de Castilla y León",
+      "institution": "Cortes de Castilla y León",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--cortes-de-castilla-la-mancha",
+      "country": "Spain",
+      "jurisdiction": "Cortes de Castilla – La Mancha",
+      "institution": "Cortes de Castilla – La Mancha",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--corts-valencianes",
+      "country": "Spain",
+      "jurisdiction": "Corts Valencianes",
+      "institution": "Corts Valencianes",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--eusko-legebiltzarra-parlamento-vasco",
+      "country": "Spain",
+      "jurisdiction": "Eusko Legebiltzarra – Parlamento Vasco",
+      "institution": "Eusko Legebiltzarra – Parlamento Vasco",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--junta-general-del-principado-de-asturias",
+      "country": "Spain",
+      "jurisdiction": "Junta General del Principado de Asturias",
+      "institution": "Junta General del Principado de Asturias",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlamento-de-andalucia",
+      "country": "Spain",
+      "jurisdiction": "Parlamento de Andalucía",
+      "institution": "Parlamento de Andalucía",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlamento-de-canarias",
+      "country": "Spain",
+      "jurisdiction": "Parlamento de Canarias",
+      "institution": "Parlamento de Canarias",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlamento-de-galicia",
+      "country": "Spain",
+      "jurisdiction": "Parlamento de Galicia",
+      "institution": "Parlamento de Galicia",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlament-de-catalunya",
+      "country": "Spain",
+      "jurisdiction": "Parlament de Catalunya",
+      "institution": "Parlament de Catalunya",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--asamblea-de-extremadura",
+      "country": "Spain",
+      "jurisdiction": "Asamblea de Extremadura",
+      "institution": "Asamblea de Extremadura",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlament-de-les-illes-balears",
+      "country": "Spain",
+      "jurisdiction": "Parlament de les Illes Balears",
+      "institution": "Parlament de les Illes Balears",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlamento-de-la-rioja",
+      "country": "Spain",
+      "jurisdiction": "Parlamento de La Rioja",
+      "institution": "Parlamento de La Rioja",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlamento-de-navarra",
+      "country": "Spain",
+      "jurisdiction": "Parlamento de Navarra",
+      "institution": "Parlamento de Navarra",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "spain--parlamento-de-cantabria",
+      "country": "Spain",
+      "jurisdiction": "Parlamento de Cantabria",
+      "institution": "Parlamento de Cantabria",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "spain-autonomous-community-parliaments"
+    },
+    {
+      "id": "switzerland--aargau",
+      "country": "Switzerland",
+      "jurisdiction": "Aargau",
+      "institution": "Kanton Aargau",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--basel-landschaft",
+      "country": "Switzerland",
+      "jurisdiction": "Basel-Landschaft",
+      "institution": "Kanton Basel-Landschaft",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--basel-stadt",
+      "country": "Switzerland",
+      "jurisdiction": "Basel-Stadt",
+      "institution": "Kanton Basel-Stadt",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--geneve-genf",
+      "country": "Switzerland",
+      "jurisdiction": "Genève (Genf)",
+      "institution": "Kanton Genève (Genf)",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--fribourg-freiburg",
+      "country": "Switzerland",
+      "jurisdiction": "Fribourg (Freiburg)",
+      "institution": "Kanton Fribourg (Freiburg)",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--graubunden",
+      "country": "Switzerland",
+      "jurisdiction": "Graubünden",
+      "institution": "Kanton Graubünden",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--luzern",
+      "country": "Switzerland",
+      "jurisdiction": "Luzern",
+      "institution": "Kanton Luzern",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--jura",
+      "country": "Switzerland",
+      "jurisdiction": "Jura",
+      "institution": "Kanton Jura",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--nidwalden",
+      "country": "Switzerland",
+      "jurisdiction": "Nidwalden",
+      "institution": "Kanton Nidwalden",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--neuchatel-neuenburg",
+      "country": "Switzerland",
+      "jurisdiction": "Neuchatel (Neuenburg)",
+      "institution": "Kanton Neuchatel (Neuenburg)",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--schaffhausen",
+      "country": "Switzerland",
+      "jurisdiction": "Schaffhausen",
+      "institution": "Kanton Schaffhausen",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--obwalden",
+      "country": "Switzerland",
+      "jurisdiction": "Obwalden",
+      "institution": "Kanton Obwalden",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--solothurn",
+      "country": "Switzerland",
+      "jurisdiction": "Solothurn",
+      "institution": "Kanton Solothurn",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--schwyz",
+      "country": "Switzerland",
+      "jurisdiction": "Schwyz",
+      "institution": "Kanton Schwyz",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--thurgau",
+      "country": "Switzerland",
+      "jurisdiction": "Thurgau",
+      "institution": "Kanton Thurgau",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--st-gallen",
+      "country": "Switzerland",
+      "jurisdiction": "St. Gallen",
+      "institution": "Kanton St. Gallen",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--uri",
+      "country": "Switzerland",
+      "jurisdiction": "Uri",
+      "institution": "Kanton Uri",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--ticino-tessin",
+      "country": "Switzerland",
+      "jurisdiction": "Ticino (Tessin)",
+      "institution": "Kanton Ticino (Tessin)",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--vaud-waadt",
+      "country": "Switzerland",
+      "jurisdiction": "Vaud (Waadt)",
+      "institution": "Kanton Vaud (Waadt)",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--valais-wallis",
+      "country": "Switzerland",
+      "jurisdiction": "Valais (Wallis)",
+      "institution": "Kanton Valais (Wallis)",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--zurich",
+      "country": "Switzerland",
+      "jurisdiction": "Zürich",
+      "institution": "Kanton Zürich",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--zug",
+      "country": "Switzerland",
+      "jurisdiction": "Zug",
+      "institution": "Kanton Zug",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "swiss-cantonal-parliaments"
+    },
+    {
+      "id": "switzerland--glarus",
+      "country": "Switzerland",
+      "jurisdiction": "Glarus",
+      "institution": "Kanton Glarus",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "glarus-landrat-landsgemeinde"
+    },
+    {
+      "id": "switzerland--appenzell-innerrhoden",
+      "country": "Switzerland",
+      "jurisdiction": "Appenzell Innerrhoden",
+      "institution": "Kanton Appenzell Innerrhoden",
+      "previous_status": "core_legislature_candidate",
+      "decision": "eligible_legislature",
+      "framework_id": "appenzell-innerrhoden-grosser-rat-landsgemeinde"
+    },
+    {
+      "id": "france--auvergne-rhone-alpes",
+      "country": "France",
+      "jurisdiction": "Auvergne-Rhône-Alpes",
+      "institution": "Conseil régional Auvergne-Rhône-Alpes",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--bourgogne-franche-comte",
+      "country": "France",
+      "jurisdiction": "Bourgogne-Franche-Comté",
+      "institution": "Conseil régional Bourgogne-Franche-Comté",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--bretagne",
+      "country": "France",
+      "jurisdiction": "Bretagne",
+      "institution": "Conseil régional Bretagne",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--centre-val-de-loire",
+      "country": "France",
+      "jurisdiction": "Centre-Val de Loire",
+      "institution": "Conseil régional Centre-Val de Loire",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--grand-est",
+      "country": "France",
+      "jurisdiction": "Grand Est",
+      "institution": "Conseil régional Grand Est",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--hauts-de-france",
+      "country": "France",
+      "jurisdiction": "Hauts-de-France",
+      "institution": "Conseil régional Hauts-de-France",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--ile-de-france",
+      "country": "France",
+      "jurisdiction": "Île-de-France",
+      "institution": "Conseil régional Île-de-France",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--normandie",
+      "country": "France",
+      "jurisdiction": "Normandie",
+      "institution": "Conseil régional Normandie",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--nouvelle-aquitaine",
+      "country": "France",
+      "jurisdiction": "Nouvelle-Aquitaine",
+      "institution": "Conseil régional Nouvelle-Aquitaine",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--occitanie",
+      "country": "France",
+      "jurisdiction": "Occitanie",
+      "institution": "Conseil régional Occitanie",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--pays-de-la-loire",
+      "country": "France",
+      "jurisdiction": "Pays de la Loire",
+      "institution": "Conseil régional Pays de la Loire",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "france--sud-provence-alpes-cote-dazur",
+      "country": "France",
+      "jurisdiction": "Sud-Provence-Alpes-Côte d’Azur",
+      "institution": "Conseil régional Sud-Provence-Alpes-Côte d’Azur",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "france-ordinary-mainland-regional-councils"
+    },
+    {
+      "id": "spain--ceuta",
+      "country": "Spain",
+      "jurisdiction": "Ceuta",
+      "institution": "Asamblea de Ceuta",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "ceuta-melilla-special-municipal-autonomy"
+    },
+    {
+      "id": "spain--melilla",
+      "country": "Spain",
+      "jurisdiction": "Melilla",
+      "institution": "Asamblea de Melilla",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "ceuta-melilla-special-municipal-autonomy"
+    },
+    {
+      "id": "australia--christmas-island",
+      "country": "Australia",
+      "jurisdiction": "Christmas Island",
+      "institution": "Shire of Christmas Island Council",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "australian-indian-ocean-shire-councils"
+    },
+    {
+      "id": "australia--cocos-keeling-islands",
+      "country": "Australia",
+      "jurisdiction": "Cocos (Keeling) Islands",
+      "institution": "Shire of Cocos (Keeling) Islands Council",
+      "previous_status": "authority_review_required",
+      "decision": "outside_default_scope",
+      "framework_id": "australian-indian-ocean-shire-councils"
+    }
+  ],
+  "frameworks": [
+    {
+      "id": "india-state-legislatures",
+      "country": "India",
+      "decision": "eligible_legislature",
+      "assessment": "The Supreme Court of India explains that state legislatures enact statutes on State List and Concurrent List subjects. These 28 named state assemblies qualify as components of state legislatures; a legislative council, where present, is another chamber and requires its own service checks. Union territories are assessed under their separate legal bases.",
+      "sources": [
+        "https://www.sci.gov.in/constitution/"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "This settles the constitutional scope gate, not current assembly membership, adjournment, dissolution or President’s Rule. Confirm current institutional activity before describing a recording as a current/live sitting, particularly Manipur. Municipal councils remain outside scope.",
+      "jurisdiction_ids": [
+        "india--andhra-pradesh",
+        "india--arunachal-pradesh",
+        "india--assam",
+        "india--bihar",
+        "india--chhattisgarh",
+        "india--goa",
+        "india--gujarat",
+        "india--haryana",
+        "india--himachal-pradesh",
+        "india--jharkhand",
+        "india--karnataka",
+        "india--kerala",
+        "india--madhya-pradesh",
+        "india--maharashtra",
+        "india--manipur",
+        "india--meghalaya",
+        "india--mizoram",
+        "india--nagaland",
+        "india--odisha",
+        "india--punjab-india",
+        "india--rajasthan",
+        "india--sikkim",
+        "india--tamil-nadu",
+        "india--telangana",
+        "india--tripura",
+        "india--uttar-pradesh",
+        "india--west-bengal",
+        "india--uttarakhand"
+      ]
+    },
+    {
+      "id": "india-delhi-assembly",
+      "country": "India",
+      "decision": "eligible_legislature",
+      "assessment": "Article239AA establishes Delhi’s Legislative Assembly and substantive State/Concurrent List lawmaking with reserved-subject exceptions. Official Assembly material confirms budget and collective ministerial responsibility/no-confidence functions. Delhi is a national-capital union territory with a legislature, not an ordinary municipal council.",
+      "sources": [
+        "https://delhiassembly.delhi.gov.in/sites/default/files/2023-06/7thassemblywhoswho.pdf",
+        "https://delhiassembly.delhi.gov.in/dlas/no-confidence-motions",
+        "https://www.mha.gov.in/union-territories-divisions"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Reserved subjects and subsequent central legislation constrain its powers; this is not full statehood or a claim of legislative supremacy.",
+      "jurisdiction_ids": [
+        "india--delhi"
+      ]
+    },
+    {
+      "id": "india-puducherry-assembly",
+      "country": "India",
+      "decision": "eligible_legislature",
+      "assessment": "The Home Ministry’s current territory list identifies Puducherry as one of three union territories with legislatures. Its linked Government of Union Territories Act1963 section18 grants State/Concurrent List lawmaking; financial and ministerial-responsibility provisions establish its parliamentary role. It qualifies separately from ordinary municipal councils.",
+      "sources": [
+        "https://www.mha.gov.in/union-territories-divisions",
+        "https://www.mha.gov.in/files/acts_rules_documets/GovernmentUnionterritoriesAct1963.pdf"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Primary Act PDF fetched and section18 read normally. The MHA page also retains a stale introductory reference to two territories; use its explicit updated eight-territory list, not that old introduction. Central parliamentary powers remain.",
+      "jurisdiction_ids": [
+        "india--puducherry"
+      ]
+    },
+    {
+      "id": "india-jammu-kashmir-assembly",
+      "country": "India",
+      "decision": "eligible_legislature",
+      "assessment": "The Jammu and Kashmir Reorganisation Act2019 section32 gives the union-territory assembly State/Concurrent List lawmaking except Public Order and Police. The Home Ministry identifies its legislature separately from Ladakh. This is the post-2019 union-territory institution, not the former state’s abolished upper chamber.",
+      "sources": [
+        "https://www.indiacode.nic.in/bitstream/123456789/12030/7/a2019-34.pdf",
+        "https://www.mha.gov.in/union-territories-divisions",
+        "https://www.mha.gov.in/jammu-kashmir-ladakh-affairs"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Retain the territorial/status qualification and current statutory constraints; do not use the former state constitution or an old Legislative Council webcast as proof of a current chamber.",
+      "jurisdiction_ids": [
+        "india--jammu-and-kashmir"
+      ]
+    },
+    {
+      "id": "malaysia-state-legislatures",
+      "country": "Malaysia",
+      "decision": "eligible_legislature",
+      "assessment": "The current federal MyGovernment institutional description identifies Dewan Undangan Negeri as elected state lawmaking assemblies. Federal constitutional Articles74/77 and the Ninth Schedule divide legislative subjects; the Selangor assembly independently explains enactments and assent. The 13 state assemblies qualify; federal territories do not acquire a state assembly by analogy.",
+      "sources": [
+        "https://www.malaysia.gov.my/my/government/sistem-pemerintahan-negara/state-government",
+        "https://dewan.selangor.gov.my/pengenalan/",
+        "https://sagc.sabah.gov.my/sites/default/files/law/NinthSchedule.pdf"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "The Sabah schedule PDF is expressly a September2012 reference edition. It corroborates the framework, not a complete current subject-by-subject legal consolidation. Sabah/Sarawak special allocations and current institutional/media status need separate source checks.",
+      "jurisdiction_ids": [
+        "malaysia--johor",
+        "malaysia--kedah-darulaman",
+        "malaysia--kelantan",
+        "malaysia--melaka",
+        "malaysia--negeri-sembilan",
+        "malaysia--pahang",
+        "malaysia--penang",
+        "malaysia--perak",
+        "malaysia--perlis",
+        "malaysia--sabah",
+        "malaysia--sarawak",
+        "malaysia--selangor",
+        "malaysia--terengganu"
+      ]
+    },
+    {
+      "id": "spain-autonomous-community-parliaments",
+      "country": "Spain",
+      "decision": "eligible_legislature",
+      "assessment": "The Constitution and current Ministry of Territorial Policy explain autonomous-community self-government through their statutes and legislative assemblies. The ministry’s comparative statutory parliament chapter covers all17 communities’ legislation, budget and government control. They qualify as autonomous legislatures; Ceuta and Melilla have distinct statutes and are not included in this decision.",
+      "sources": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+        "https://mptmd.gob.es/portal/politica-territorial/autonomica/info_basica/organiz_institucional_ccaa.html",
+        "https://mptmd.gob.es/portal/politica-territorial/autonomica/estatutos_autonomia/estatutos_materias"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "The ministry labels its comparative table as statutes current in March2011. Use it for the structural lawmaking distinction, with the current institutional page and Constitution; it is not a certification of every later statutory amendment, current membership or broadcast service.",
+      "jurisdiction_ids": [
+        "spain--asamblea-de-madrid",
+        "spain--asamblea-regional-de-murcia",
+        "spain--cortes-de-aragon",
+        "spain--cortes-de-castilla-y-leon",
+        "spain--cortes-de-castilla-la-mancha",
+        "spain--corts-valencianes",
+        "spain--eusko-legebiltzarra-parlamento-vasco",
+        "spain--junta-general-del-principado-de-asturias",
+        "spain--parlamento-de-andalucia",
+        "spain--parlamento-de-canarias",
+        "spain--parlamento-de-galicia",
+        "spain--parlament-de-catalunya",
+        "spain--asamblea-de-extremadura",
+        "spain--parlament-de-les-illes-balears",
+        "spain--parlamento-de-la-rioja",
+        "spain--parlamento-de-navarra",
+        "spain--parlamento-de-cantabria"
+      ]
+    },
+    {
+      "id": "swiss-cantonal-parliaments",
+      "country": "Switzerland",
+      "decision": "eligible_legislature",
+      "assessment": "The Federal Chancellery’s current CHInfo explanation identifies a parliament, government and constitution for each of the26 cantons, with cantonal responsibility and taxation. These are constituent-canton parliaments, not communal councils. Cantonal lawmaking is subject to popular votes; Appenzell Innerrhoden and Glarus retain distinct Landsgemeinde arrangements, assessed separately below.",
+      "sources": [
+        "https://www.ch-info.swiss/en/die-schweiz/foederalismus",
+        "https://www.ch.ch/de/politisches-system/kantone/rolle-und-zusammensetzung-der-kantonsregierungen/"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Framework-level scope classification only, not an individual audit of all current cantonal constitutional versions, parliament rooms or media rights. Cantonal institutions and communal parliaments must remain distinct.",
+      "jurisdiction_ids": [
+        "switzerland--aargau",
+        "switzerland--basel-landschaft",
+        "switzerland--basel-stadt",
+        "switzerland--geneve-genf",
+        "switzerland--fribourg-freiburg",
+        "switzerland--graubunden",
+        "switzerland--luzern",
+        "switzerland--jura",
+        "switzerland--nidwalden",
+        "switzerland--neuchatel-neuenburg",
+        "switzerland--schaffhausen",
+        "switzerland--obwalden",
+        "switzerland--solothurn",
+        "switzerland--schwyz",
+        "switzerland--thurgau",
+        "switzerland--st-gallen",
+        "switzerland--uri",
+        "switzerland--ticino-tessin",
+        "switzerland--vaud-waadt",
+        "switzerland--valais-wallis",
+        "switzerland--zurich",
+        "switzerland--zug"
+      ]
+    },
+    {
+      "id": "glarus-landrat-landsgemeinde",
+      "country": "Switzerland",
+      "decision": "eligible_legislature",
+      "assessment": "Current official cantonal constitutional text Articles82/89 identifies the Landrat as parliament and supreme supervisory body: it prepares Landsgemeinde legislation, enacts authorized ordinances, and can legislate urgently pending the next Landsgemeinde. Article90 gives budget/accounts powers. The Landsgemeinde itself enacts constitutional/statutory law. This is a cantonal legislative system, not a municipal assembly.",
+      "sources": [
+        "https://gesetze.gl.ch/app/de/texts_of_law/I%20A%2F1%2F1",
+        "https://www.landsgemeinde.gl.ch/topics/allgemeine-informationen"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Do not present the representative Landrat as the sole final lawmaker; distinguish Landrat and Landsgemeinde events and require actual proceedings/source validation.",
+      "jurisdiction_ids": [
+        "switzerland--glarus"
+      ]
+    },
+    {
+      "id": "appenzell-innerrhoden-grosser-rat-landsgemeinde",
+      "country": "Switzerland",
+      "decision": "eligible_legislature",
+      "assessment": "The canton’s official explanation distinguishes the Landsgemeinde, the GrosserRat and the executive Standeskommission. The cantonal parliament prepares constitutional/statutory proposals for the Landsgemeinde, enacts implementing ordinances and resolutions, supervises all authorities and determines budget, tax rate and accounts. It qualifies as part of the cantonal parliamentary/legislative system, not an ordinary local council.",
+      "sources": [
+        "https://www.ai.ch/politik",
+        "https://www.ch-info.swiss/en/die-schweiz/foederalismus"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Final primary lawmaking is shared with the Landsgemeinde, so do not imply autonomous final Act-making by the GrosserRat alone. Verify exact event identity before any addition.",
+      "jurisdiction_ids": [
+        "switzerland--appenzell-innerrhoden"
+      ]
+    },
+    {
+      "id": "france-ordinary-mainland-regional-councils",
+      "country": "France",
+      "decision": "outside_default_scope",
+      "assessment": "Constitution Article72 grants regulatory power for assigned competencies, and CGCT L4221-1 limits regional deliberations to powers allocated by national law. The Interior Ministry describes their development, transport/education and coordination role and removal of the general-competence clause. These12 ordinary mainland regional councils are outside the catalogue’s substantive autonomous-lawmaking scope; elected membership, budget votes and service regulations alone are insufficient.",
+      "sources": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006527579/2026-08-14",
+        "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006164693",
+        "https://www.elections.interieur.gouv.fr/comprendre-elections/pour-qui-je-vote/conseillers-regionaux"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "This is the project scope interpretation of ordinary statutory regional powers, not a claim of no regulatory force. It does not decide Corsica, Article73/74 overseas habilitations, New Caledonia/provinces or French Polynesia; those need their individual current arrangements.",
+      "jurisdiction_ids": [
+        "france--auvergne-rhone-alpes",
+        "france--bourgogne-franche-comte",
+        "france--bretagne",
+        "france--centre-val-de-loire",
+        "france--grand-est",
+        "france--hauts-de-france",
+        "france--ile-de-france",
+        "france--normandie",
+        "france--nouvelle-aquitaine",
+        "france--occitanie",
+        "france--pays-de-la-loire",
+        "france--sud-provence-alpes-cote-dazur"
+      ]
+    },
+    {
+      "id": "ceuta-melilla-special-municipal-autonomy",
+      "country": "Spain",
+      "decision": "outside_default_scope",
+      "assessment": "Their current autonomy statutes Articles12/13/21 distinguish budget, scrutiny, proposals to national lawmakers and regulatory norm-making from autonomous-community legislative power. The Constitutional Court’s STC240/2006 expressly rejects legislative power for Ceuta and locates such legislation at state level. These special autonomous city assemblies remain outside this catalogue scope; regulatory sanctions and the right to propose a national law do not make them autonomous lawmaking parliaments.",
+      "sources": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1995-6358",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-1995-6359",
+        "https://www.boe.es/buscar/doc.php?id=BOE-T-2006-14886&lang=es"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Retain special-city status rather than labelling them autonomous communities. Older draft statutes promising legislative powers and litigants’ arguments in judgments are not enacted law or the court’s holding. Reopen on an enacted change to powers.",
+      "jurisdiction_ids": [
+        "spain--ceuta",
+        "spain--melilla"
+      ]
+    },
+    {
+      "id": "australian-indian-ocean-shire-councils",
+      "country": "Australia",
+      "decision": "outside_default_scope",
+      "assessment": "The Australian National Audit Office’s current external-territory service-delivery audit identifies Christmas Island and Cocos(Keeling) shires as local councils providing specific local-government functions such as waste services. WA’s current planning explanation expressly identifies the Christmas shire as local government. Their elected councils and local laws do not constitute territorial self-government legislatures.",
+      "sources": [
+        "https://www.anao.gov.au/work/performance-audit/management-of-service-delivery-arrangements-australias-external-territories",
+        "https://www.wa.gov.au/government/document-collections/indian-ocean-territories-regional-planning"
+      ],
+      "source_review": "Primary published statutory/institutional explanation read; framework-level scope application, with institution-specific media gates retained.",
+      "limitations": "Do not call the islands ordinary parts of Western Australia. Commonwealth territorial responsibility, applied WA law and service arrangements are distinct from a self-governing ACT/NT-style legislature.",
+      "jurisdiction_ids": [
+        "australia--christmas-island",
+        "australia--cocos-keeling-islands"
+      ]
+    }
+  ],
+  "counts": {
+    "eligible_legislature": 85,
+    "outside_default_scope": 16
+  },
+  "inventory_counts_after_review": {
+    "eligible_legislature": 451,
+    "authority_review_required": 392,
+    "outside_default_scope": 278
+  }
+}

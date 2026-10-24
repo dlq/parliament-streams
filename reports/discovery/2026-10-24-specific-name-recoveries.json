@@ -1,0 +1,251 @@
+{
+  "started_at": "2026-10-24T05:54:02.205524+00:00",
+  "method": "Full institution wording after earlier shortened/generic aliases. Persistent shared cache,3s spacing and increasing cooldown; stop on service hold, no retry loop bypass. Candidates are not accepted until claims/primary review.",
+  "results": [
+    {
+      "body_id": "uruguay--rivera",
+      "query": "Junta Departamental de Rivera",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.205769+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Rivera&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792811629.057302
+    },
+    {
+      "body_id": "uruguay--artigas",
+      "query": "Junta Departamental de Artigas",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.207113+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Artigas&uselang=en",
+      "matches": [
+        {
+          "id": "Q139486644",
+          "label": "Junta Departamental de Artigas",
+          "description": null
+        }
+      ],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814217.690975
+    },
+    {
+      "body_id": "uruguay--cerro-largo",
+      "query": "Junta Departamental de Cerro Largo",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.207709+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Cerro+Largo&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814220.935862
+    },
+    {
+      "body_id": "uruguay--colonia",
+      "query": "Junta Departamental de Colonia",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.208185+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Colonia&uselang=en",
+      "matches": [
+        {
+          "id": "Q118669297",
+          "label": "Junta Departamental de Colonia",
+          "description": "Parlamento de Colonia"
+        }
+      ],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814224.190014
+    },
+    {
+      "body_id": "uruguay--durazno",
+      "query": "Junta Departamental de Durazno",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.208538+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Durazno&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": false,
+      "source_fetched_at": 1792821242.3820071
+    },
+    {
+      "body_id": "uruguay--flores",
+      "query": "Junta Departamental de Flores",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.384510+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Flores&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814227.459562
+    },
+    {
+      "body_id": "uruguay--florida",
+      "query": "Junta Departamental de Florida",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:02.385446+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Florida&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": false,
+      "source_fetched_at": 1792821245.645062
+    },
+    {
+      "body_id": "uruguay--lavalleja",
+      "query": "Junta Departamental de Lavalleja",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:05.647968+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Lavalleja&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814230.7128792
+    },
+    {
+      "body_id": "uruguay--maldonado",
+      "query": "Junta Departamental de Maldonado",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:05.648883+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Maldonado&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814233.955411
+    },
+    {
+      "body_id": "uruguay--paysandu",
+      "query": "Junta Departamental de Paysandú",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:05.649607+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Paysand%C3%BA&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": false,
+      "source_fetched_at": 1792821248.9396858
+    },
+    {
+      "body_id": "uruguay--rocha",
+      "query": "Junta Departamental de Rocha",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:08.944647+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Rocha&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814237.214473
+    },
+    {
+      "body_id": "uruguay--rio-negro",
+      "query": "Junta Departamental de Río Negro",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:08.946462+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+R%C3%ADo+Negro&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814240.458291
+    },
+    {
+      "body_id": "uruguay--salto",
+      "query": "Junta Departamental de Salto",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:08.948067+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Salto&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": false,
+      "source_fetched_at": 1792821252.2306812
+    },
+    {
+      "body_id": "uruguay--san-jose",
+      "query": "Junta Departamental de San José",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:12.234496+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+San+Jos%C3%A9&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814243.710708
+    },
+    {
+      "body_id": "uruguay--soriano",
+      "query": "Junta Departamental de Soriano",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:12.236985+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Soriano&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814246.9492962
+    },
+    {
+      "body_id": "uruguay--tacuarembo",
+      "query": "Junta Departamental de Tacuarembó",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:12.238807+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Tacuaremb%C3%B3&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814250.210132
+    },
+    {
+      "body_id": "uruguay--treinta-y-tres",
+      "query": "Junta Departamental de Treinta y Tres",
+      "language": "es",
+      "checked_at": "2026-10-24T05:54:12.240457+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+Departamental+de+Treinta+y+Tres&uselang=en",
+      "matches": [],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": true,
+      "source_fetched_at": 1792814253.445884
+    },
+    {
+      "body_id": "germany--berlin",
+      "query": "Abgeordnetenhaus von Berlin",
+      "language": "de",
+      "checked_at": "2026-10-24T05:54:12.241744+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Abgeordnetenhaus+von+Berlin&uselang=en",
+      "matches": [
+        {
+          "id": "Q640859",
+          "label": "Berlin House of Representatives",
+          "description": "state parliament of Berlin"
+        },
+        {
+          "id": "Q896995",
+          "label": "state election in Berlin",
+          "description": "type of elections in Germany"
+        },
+        {
+          "id": "Q28737655",
+          "label": "Berlin House of Representatives library",
+          "description": "library in Germany"
+        }
+      ],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": false,
+      "source_fetched_at": 1792821255.515798
+    },
+    {
+      "body_id": "united-kingdom--anguilla",
+      "query": "Anguilla House of Assembly",
+      "language": "en",
+      "checked_at": "2026-10-24T05:54:15.519221+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Anguilla+House+of+Assembly&uselang=en",
+      "matches": [
+        {
+          "id": "Q4763974",
+          "label": "Anguilla House of Assembly",
+          "description": "unicameral legislature of Anguilla"
+        }
+      ],
+      "outcome": "successful_search_candidate_scope_unreviewed",
+      "cache_hit": false,
+      "source_fetched_at": 1792821258.80686
+    }
+  ],
+  "remaining_unattempted_ids": [],
+  "last_updated_at": "2026-10-24T05:54:18.811280+00:00"
+}

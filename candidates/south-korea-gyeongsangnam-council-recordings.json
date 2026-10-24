@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The council website designates its YouTube service. Selected recordings of 437th extraordinary session, first and second plenaries were visually reviewed in Chromium and WebKit with advancing decoded video. Gyeongsangnam samples show a member delivering a five-minute speech and another member approaching the lectern during ordinary chamber proceedings, with inset interpreters. This confirms the selected recordings, not current live or every committee/room. Some provider recordings are labelled auto-dubbed; muted tests do not verify audio-track selection.",
+    "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+    "Evidence: reports/discovery/2026-10-23-sejong-gyeongsangnam-publication-review.json"
+  ],
+  "channel": {
+    "id": "south-korea-gyeongsangnam-council-recordings",
+    "name": "Gyeongsangnam-do Council Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Gyeongsangnam-do",
+    "legislature": "경상남도의회",
+    "external_ids": {
+      "wikidata_qid": "Q16094835",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q16094835",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact council Q16094835, revision 2514154242, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+      }
+    ],
+    "language": "Korean",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://council.gyeongnam.go.kr/kr/main.do",
+    "provenance_note": "The council website designates its YouTube service. Selected recordings of 437th extraordinary session, first and second plenaries were visually reviewed in Chromium and WebKit with advancing decoded video. Gyeongsangnam samples show a member delivering a five-minute speech and another member approaching the lectern during ordinary chamber proceedings, with inset interpreters. This confirms the selected recordings, not current live or every committee/room. Some provider recordings are labelled auto-dubbed; muted tests do not verify audio-track selection.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "Inset interpreters are visible in both selected plenary samples. Their language and source-wide coverage are not established. Complete captions and audio description remain unknown; muted samples do not certify spoken-language or auto-dubbed track selection."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://council.gyeongnam.go.kr/kr/main.do",
+        "method": "GET",
+        "kind": "official_institution_video_and_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+      "evidence": [
+        "https://council.gyeongnam.go.kr/kr/main.do"
+      ],
+      "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+    }
+  }
+}

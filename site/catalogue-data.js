@@ -1,7 +1,7 @@
 window.PARLIAMENT_STREAMS_CATALOGUE = {
   "schema_version": 9,
   "generated_from": "curated research and live endpoint validation",
-  "generated_on": "2026-10-22",
+  "generated_on": "2026-10-24",
   "description": "Public parliamentary stream and source catalogue maintained through research notes, official pages, and live endpoint validation.",
   "channels": [
     {
@@ -6156,7 +6156,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       ],
       "permission": {
         "status": "personal_use_pending_review",
-        "summary": "The Assembly publishes House and committee proceedings in multiple official languages. Generic Government of the Northwest Territories terms allow non-commercial reproduction or redistribution with acknowledgement, but this review did not locate an Assembly-specific video reuse statement or explicit third-party playback terms.",
+        "summary": "The Assembly publishes House and committee proceedings in multiple official languages. Generic Government of the Northwest Territories terms allow non-commercial reproduction or redistribution with acknowledgement, but this review did not locate an Assembly-specific video reuse statement or explicit third-party playback terms. On 23 October 2026 the cited generic terms URL and its root terms page returned HTTP 404; the earlier terms observation is historical evidence and current Assembly-specific audiovisual conditions remain unresolved.",
         "evidence": [
           "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
           "https://www.justice.gov.nt.ca/en/terms-of-use/page/2/"
@@ -8768,7 +8768,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "name": "Japan Senate (Sangiin) WebTV",
       "jurisdiction_level": "national",
       "country_or_region": "Japan",
-      "legislature": "Senate of Japan (Sangiin)",
+      "legislature": "House of Councillors of Japan",
       "external_ids": {
         "wikidata_qid": "Q548911",
         "ipu_country_code": "JP",
@@ -8797,7 +8797,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "playback_url": null,
       "playback_policy": "link_out",
       "official_url": "https://www.webtv.sangiin.go.jp/webtv/index.php",
-      "provenance_note": "Official Sangiin proceedings service cross-linked from the House of Representatives WebTV. Chromium returned HTTP 200 and displayed a meeting calendar, plenary and committee selection and archived meetings. IPU Parline records the English upper-house name as Senate from 23 July 2026; constitutional quotations may retain House of Councillors. No persistent HLS channel or active live media was validated.",
+      "provenance_note": "Official Sangiin proceedings service cross-linked from the House of Representatives WebTV. Chromium returned HTTP 200 and displayed a meeting calendar, plenary and committee selection and archived meetings. IPU Parline records the English upper-house name as Senate from 23 July 2026; constitutional quotations may retain House of Councillors. No persistent HLS channel or active live media was validated. Institutional English name checked against https://www.sangiin.go.jp/eng/ on 2026-10-24; the Wikidata English label is not used to replace the chamber’s own name.",
       "technical_status": "link_only",
       "stability_risk": "medium",
       "availability": "event_based",
@@ -10224,6 +10224,7754 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "browser_player",
           "status": "ok",
           "note": "The official Parliament homepage designates the Sliq Harmony service for listening. Public archive recordings of Senate AM 7 October 2026 and House PM 2 October 2026 both passed advancing audio playback in WebKit. Chromium fails to load the same media manifest with a CORS error; the service has a browser compatibility limitation. Audio archive only; on-air live coverage and video were not validated."
+        }
+      ]
+    },
+    {
+      "id": "cook-islands-parliament-archive",
+      "name": "Cook Islands Parliament Archive (September 2020)",
+      "jurisdiction_level": "national",
+      "country_or_region": "Cook Islands",
+      "legislature": "Parliament of the Cook Islands",
+      "external_ids": {
+        "wikidata_qid": "Q7138950",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7138950",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q7138950 revision 2527249210 checked against the official institutional identity. Official Parliament live-page footer designates the sampled channel."
+        }
+      ],
+      "language": "Unknown",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UC6NJVTHu-5eMP88UrGi7KqA/streams",
+      "provenance_note": "Self-governing state in free association with New Zealand, not a New Zealand province. Constitution reprinted 13 June 2022, articles 13, 39, 70 and 71 establish responsible parliamentary government, general legislation, appropriations and audit scrutiny. Classified national; audit grouping under New Zealand is only a research/search association. The official Parliament live page footer designates this YouTube channel. Two full sitting recordings from 29 and 30 September 2020 decoded at 854x480 with advancing time and frames. Historical archive only: the current official live page has no player, the sampled Facebook replay is unavailable, and no current sitting broadcast was validated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Audio language coverage was not assessed in the browser playback checks. No text tracks were exposed; captions, sign language and audio description remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://parliament.gov.ck/calendar-1/",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official Parliament pages designate public viewing routes and carry a copyright notice. No independent audiovisual reuse grant was established; provider access does not authorize extraction, embedding or redistribution.",
+        "evidence": [
+          "https://parliament.gov.ck/live/",
+          "https://parliament.gov.ck/parliamenttv/"
+        ],
+        "recommendation": "Historical archive: sampled sittings are from September 2020. Current live coverage is unverified. Open the official channel; independent playback or redistribution requires a separate rights review."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T13:22:42.617Z",
+          "report_path": "reports/health/2026-10-23-territorial-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Parliament live page footer designates this YouTube channel. Two full sitting recordings from 29 and 30 September 2020 decoded at 854x480 with advancing time and frames. Historical archive only: the current official live page has no player, the sampled Facebook replay is unavailable, and no current sitting broadcast was validated."
+        }
+      ]
+    },
+    {
+      "id": "guernsey-states-meeting-recordings",
+      "name": "Guernsey States Meeting Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Guernsey",
+      "legislature": "States of Deliberation of Guernsey",
+      "external_ids": {
+        "wikidata_qid": "Q1368324",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1368324",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1368324 revision 2553243221 checked against the official institutional identity. Wikidata retains the older gov.gg/parliament URL, which returned a security block; current parliament.gg identifies the States and links its dated proceedings."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://parliament.gg/parliamentary-business/meetings",
+      "provenance_note": "States of Deliberation: primary laws, ordinances, annual budget and scrutiny of legislation, policy, services and expenditure are documented by Parliament. Guernsey is a Crown Dependency jurisdiction, not part of the United Kingdom. Alderney and Sark have separate legislatures; publication does not claim their proceedings or an ordinary UK subdivision. The official 21 October 2026 meeting page links to morning and afternoon recordings on the States of Guernsey channel. Both decoded at 640x360 with advancing time and frames; the afternoon recording is unlisted but explicitly linked by Parliament. The index also designates BBC live coverage, which was not tested on air. A 22 October row has an obvious year typo (0026); raw labels are not reliable XMLTV dates.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "The source and recording metadata are in English; full audio-language coverage was not assessed. No text tracks were exposed. Service-wide captions, sign language and audio description remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://parliament.gg/parliamentary-business/meetings",
+          "method": "GET",
+          "kind": "official_meeting_calendar"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Parliament encourages links without permission. Site-owned material has a limited research/private-study/internal-circulation reproduction allowance with accuracy and attribution conditions; third-party material is excluded. This does not establish unrestricted audiovisual extraction, embedding or retransmission of linked YouTube or BBC media.",
+        "evidence": [
+          "https://parliament.gg/information/terms-and-conditions"
+        ],
+        "recommendation": "Open the official meeting index for recordings and the designated live route. Retain link-out only; reviewed site-content permissions do not establish unrestricted reuse of provider media."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T13:22:42.617Z",
+          "report_path": "reports/health/2026-10-23-territorial-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official 21 October 2026 meeting page links to morning and afternoon recordings on the States of Guernsey channel. Both decoded at 640x360 with advancing time and frames; the afternoon recording is unlisted but explicitly linked by Parliament. The index also designates BBC live coverage, which was not tested on air. A 22 October row has an obvious year typo (0026); raw labels are not reliable XMLTV dates."
+        }
+      ]
+    },
+    {
+      "id": "slovenia-national-council-webcasts",
+      "name": "Slovenia National Council Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Slovenia",
+      "legislature": "Državni svet Republike Slovenije",
+      "external_ids": {
+        "wikidata_qid": "Q953810",
+        "ipu_country_code": "SI",
+        "ipu_parliament_code": "SI",
+        "ipu_chamber_code": "SI-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q953810",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q953810 revision 2550096344 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/SI/SI-UC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Slovenian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCHZMFuV0JworHCa9H0pZfOg/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The National Council is the national upper chamber, as separately identified by IPU, with legislative initiative and suspensive-veto functions. The 43rd plenary and a public education/culture committee recording play; it is not a municipal council. National Assembly and TV SLO3 coverage are separate, unvalidated leads.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"slovenia-plenary\", \"tracks\": []}, {\"key\": \"slovenia-committee\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCHZMFuV0JworHCa9H0pZfOg/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.ds-rs.si/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The National Council is the national upper chamber, as separately identified by IPU, with legislative initiative and suspensive-veto functions. The 43rd plenary and a public education/culture committee recording play; it is not a municipal council. National Assembly and TV SLO3 coverage are separate, unvalidated leads."
+        }
+      ]
+    },
+    {
+      "id": "cape-verde-national-assembly-antv",
+      "name": "Cabo Verde National Assembly ANTV",
+      "jurisdiction_level": "national",
+      "country_or_region": "Cape Verde",
+      "legislature": "Assembleia Nacional de Cabo Verde",
+      "external_ids": {
+        "wikidata_qid": "Q1718790",
+        "ipu_country_code": "CV",
+        "ipu_parliament_code": "CV",
+        "ipu_chamber_code": "CV-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1718790",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1718790 revision 2557284353 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CV/CV-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Portuguese / Cape Verdean Creole",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parlamento.cv/antv/",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official ANTV index embeds plenary recordings from 8 and 9 October 2026 and reports no current live events. Current on-air plenary and committee coverage remain unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"capeverde-plenary\", \"tracks\": []}, {\"key\": \"capeverde-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parlamento.cv/antv/",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.parlamento.cv/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official ANTV index embeds plenary recordings from 8 and 9 October 2026 and reports no current live events. Current on-air plenary and committee coverage remain unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "lithuania-seimas-committee-webcasts",
+      "name": "Seimas Committee Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Lithuania",
+      "legislature": "Lietuvos Respublikos Seimas",
+      "external_ids": {
+        "wikidata_qid": "Q374152",
+        "ipu_country_code": "LT",
+        "ipu_parliament_code": "LT",
+        "ipu_chamber_code": "LT-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q374152",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q374152 revision 2551546437 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/LT/LT-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Lithuanian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@AtvirasSeimas2/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official Seimas homepage directly links both sampled 21 October Social Affairs/Labour and Budget/Finance videos on Atviras Seimas 2. The main Atviras Seimas channel also links the overflow channel. This record validates committee archive playback; it does not certify all upcoming events or the main plenary service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"lithuania-committee\", \"tracks\": []}, {\"key\": \"lithuania-budget\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@AtvirasSeimas2/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.lrs.lt/"
+        ],
+        "recommendation": "Open the official viewing service. This is a committee archive; plenary and other rooms remain separately unvalidated. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Seimas homepage directly links both sampled 21 October Social Affairs/Labour and Budget/Finance videos on Atviras Seimas 2. The main Atviras Seimas channel also links the overflow channel. This record validates committee archive playback; it does not certify all upcoming events or the main plenary service."
+        }
+      ]
+    },
+    {
+      "id": "malaysia-parliament-webcasts",
+      "name": "Malaysia Parliament Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Malaysia",
+      "legislature": "Parlimen Malaysia",
+      "external_ids": {
+        "wikidata_qid": "Q2986392",
+        "ipu_country_code": "MY",
+        "ipu_parliament_code": "MY",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2986392",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q2986392 revision 2559705467 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/MY/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Malay",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCu2I5HXcZudP59E5Ld10K_g/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official Parliament footer designates this channel. Dewan Rakyat and Kamar Khas recordings labelled 22 October 2026 play beyond their opening slates. Dewan Negara and all public committee channels are not certified by those two samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"malaysia-plenary\", \"tracks\": []}, {\"key\": \"malaysia-specialchamber\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCu2I5HXcZudP59E5Ld10K_g/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.parlimen.gov.my/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official Parliament footer designates this channel. Dewan Rakyat and Kamar Khas recordings labelled 22 October 2026 play beyond their opening slates. Dewan Negara and all public committee channels are not certified by those two samples."
+        }
+      ]
+    },
+    {
+      "id": "suriname-national-assembly-webcasts",
+      "name": "Suriname National Assembly Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Suriname",
+      "legislature": "De Nationale Assemblée",
+      "external_ids": {
+        "wikidata_qid": "Q1760847",
+        "ipu_country_code": "SR",
+        "ipu_parliament_code": "SR",
+        "ipu_chamber_code": "SR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1760847",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1760847 revision 2555683545 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/SR/SR-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Dutch",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/user/dnasuriname/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official DNA site designates its channel. A 22 October 2026 public sitting plays beyond the slate. A second same-day sample still shows a holding graphic at the sampled timestamp, so it is not evidence of active chamber business.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"suriname-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/user/dnasuriname/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "no_third_party_reuse",
+        "summary": "DNA permits certain attributed use of website information, but its disclaimer expressly requires written permission for multimedia reproduction and commercial use. The copyright page also reserves photography rights. Retain official link-out only; no independent video reuse is established.",
+        "evidence": [
+          "https://www.dna.sr/copyright/disclaimer/",
+          "https://www.dna.sr/copyright/auteursrechten/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official DNA site designates its channel. A 22 October 2026 public sitting plays beyond the slate. A second same-day sample still shows a holding graphic at the sampled timestamp, so it is not evidence of active chamber business."
+        }
+      ]
+    },
+    {
+      "id": "dominican-republic-deputies-webcasts",
+      "name": "Dominican Republic Chamber of Deputies Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Dominican Republic",
+      "legislature": "Cámara de Diputados de la República Dominicana",
+      "external_ids": {
+        "wikidata_qid": "Q320280",
+        "ipu_country_code": "DO",
+        "ipu_parliament_code": "DO",
+        "ipu_chamber_code": "DO-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q320280",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q320280 revision 2555122890 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/DO/DO-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/user/CamaraDiputadosRD/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official Chamber links the channel and plenary playlists. Sessions 15 and 16, labelled 20 and 21 October 2026, play. The footer terms-of-use destination returned 404; no independent reuse permission is assumed. Senate coverage remains separate.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"dominican-plenary\", \"tracks\": []}, {\"key\": \"dominican-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/user/CamaraDiputadosRD/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://camaradediputados.gob.do/",
+          "https://camaradediputados.gob.do/terminos-de-uso"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Chamber links the channel and plenary playlists. Sessions 15 and 16, labelled 20 and 21 October 2026, play. The footer terms-of-use destination returned 404; no independent reuse permission is assumed. Senate coverage remains separate."
+        }
+      ]
+    },
+    {
+      "id": "argentina-chamber-deputies-webcasts",
+      "name": "Argentina Chamber of Deputies Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Argentina",
+      "legislature": "Honorable Cámara de Diputados de la Nación",
+      "external_ids": {
+        "wikidata_qid": "Q629133",
+        "ipu_country_code": "AR",
+        "ipu_parliament_code": "AR",
+        "ipu_chamber_code": "AR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q629133",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q629133 revision 2555387764 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/AR/AR-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Institution-linked channel: 21 October special plenary and 20 October Energy/Fuels Committee proceedings play. Senado TV is a separate upper-chamber lead.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"argentina-plenary\", \"tracks\": []}, {\"key\": \"argentina-committee\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.hcdn.gob.ar/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Institution-linked channel: 21 October special plenary and 20 October Energy/Fuels Committee proceedings play. Senado TV is a separate upper-chamber lead."
+        }
+      ]
+    },
+    {
+      "id": "namibia-parliament-webcasts",
+      "name": "Namibia Parliament Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Namibia",
+      "legislature": "Parliament of Namibia",
+      "external_ids": {
+        "wikidata_qid": "Q4167580",
+        "ipu_country_code": "NA",
+        "ipu_parliament_code": "NA",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4167580",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q4167580 revision 2557111681 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/NA/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCueeiEi-sE0Ru0WDMk6dC3w/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"namibia-plenary\", \"tracks\": []}, {\"key\": \"namibia-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCueeiEi-sE0Ru0WDMk6dC3w/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.parliament.na/",
+          "https://www.parliament.na/disclaimer/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "north-macedonia-assembly-webcasts",
+      "name": "North Macedonia Assembly Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "North Macedonia",
+      "legislature": "Собрание на Република Северна Македонија",
+      "external_ids": {
+        "wikidata_qid": "Q1258164",
+        "ipu_country_code": "MK",
+        "ipu_parliament_code": "MK",
+        "ipu_chamber_code": "MK-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1258164",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1258164 revision 2556701315 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/MK/MK-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Macedonian / Albanian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCD5qpVe9-yNv4Xu4b3EuKFw/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official Assembly channel: 19 October plenary and 22 October Finance/Budget Committee proceedings play beyond the initial room/slate footage. Not every language track or room is validated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"northmacedonia-plenary\", \"tracks\": []}, {\"key\": \"northmacedonia-committee\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCD5qpVe9-yNv4Xu4b3EuKFw/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.sobranie.mk/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official Assembly channel: 19 October plenary and 22 October Finance/Budget Committee proceedings play beyond the initial room/slate footage. Not every language track or room is validated."
+        }
+      ]
+    },
+    {
+      "id": "ghana-parliament-committee-webcasts",
+      "name": "Ghana Parliament Committee Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Ghana",
+      "legislature": "Parliament of Ghana",
+      "external_ids": {
+        "wikidata_qid": "Q1807513",
+        "ipu_country_code": "GH",
+        "ipu_parliament_code": "GH",
+        "ipu_chamber_code": "GH-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1807513",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1807513 revision 2556919514 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/GH/GH-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@parliamentofghana816/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official Parliament Watch links designate this channel. Public Accounts Committee recordings labelled 19 and 20 October 2026 play. Homepage lists the next plenary meeting from 3 November; current plenary on-air coverage is not claimed.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"ghana-accounts\", \"tracks\": []}, {\"key\": \"ghana-accounts-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@parliamentofghana816/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://parliament.gh/disclaimer",
+          "https://www.parliament.gh/"
+        ],
+        "recommendation": "Open the official viewing service. This is a committee archive; plenary and other rooms remain separately unvalidated. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Parliament Watch links designate this channel. Public Accounts Committee recordings labelled 19 and 20 October 2026 play. Homepage lists the next plenary meeting from 3 November; current plenary on-air coverage is not claimed."
+        }
+      ]
+    },
+    {
+      "id": "colombia-house-representatives-webcasts",
+      "name": "Colombia House of Representatives Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Colombia",
+      "legislature": "Cámara de Representantes de Colombia",
+      "external_ids": {
+        "wikidata_qid": "Q1571756",
+        "ipu_country_code": "CO",
+        "ipu_parliament_code": "CO",
+        "ipu_chamber_code": "CO-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1571756",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1571756 revision 2555360032 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CO/CO-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@CamaraColombia/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official Chamber links its provider channel. Plenary proceedings labelled 19 and 20 October 2026 play. Canal Congreso and concurrent public-hearing services are separate leads.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"colombia-plenary\", \"tracks\": []}, {\"key\": \"colombia-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@CamaraColombia/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.camara.gov.co/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Chamber links its provider channel. Plenary proceedings labelled 19 and 20 October 2026 play. Canal Congreso and concurrent public-hearing services are separate leads."
+        }
+      ]
+    },
+    {
+      "id": "guyana-national-assembly-webcasts",
+      "name": "Guyana National Assembly Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Guyana",
+      "legislature": "National Assembly of Guyana",
+      "external_ids": {
+        "wikidata_qid": "Q1512579",
+        "ipu_country_code": "GY",
+        "ipu_parliament_code": "GY",
+        "ipu_chamber_code": "GY-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1512579",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1512579 revision 2555616798 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/GY/GY-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCFcGxVIBPlx_l5eXfEl7jgw/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official Parliament site designates this channel. The fifth sitting of the thirteenth Parliament, labelled 2026, plays beyond its black opening. Youth debating competitions in the same listing are not counted as legislative sittings. Footer copyright/disclaimer links lead to committee-business content rather than a usable media licence.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"guyana-plenary\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCFcGxVIBPlx_l5eXfEl7jgw/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://parliament.gov.gy/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Parliament site designates this channel. The fifth sitting of the thirteenth Parliament, labelled 2026, plays beyond its black opening. Youth debating competitions in the same listing are not counted as legislative sittings. Footer copyright/disclaimer links lead to committee-business content rather than a usable media licence."
+        }
+      ]
+    },
+    {
+      "id": "timor-leste-national-parliament-archive",
+      "name": "Timor-Leste National Parliament Video Archive",
+      "jurisdiction_level": "national",
+      "country_or_region": "Timor-Leste",
+      "legislature": "Parlamento Nacional de Timor-Leste",
+      "external_ids": {
+        "wikidata_qid": "Q680806",
+        "ipu_country_code": "TL",
+        "ipu_parliament_code": "TL",
+        "ipu_chamber_code": "TL-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q680806",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q680806 revision 2559682000 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/TL/TL-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Tetum / Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parlamento.tl/videos",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"timorleste-plenary\", \"tracks\": []}, {\"key\": \"timorleste-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parlamento.tl/videos",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.parlamento.tl/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation."
+        }
+      ]
+    },
+    {
+      "id": "brazil-tv-senado-official",
+      "name": "Brazil TV Senado",
+      "jurisdiction_level": "national",
+      "country_or_region": "Brazil",
+      "legislature": "Senado Federal do Brasil",
+      "external_ids": {
+        "wikidata_qid": "Q2119413",
+        "ipu_country_code": "BR",
+        "ipu_parliament_code": "BR",
+        "ipu_chamber_code": "BR-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2119413",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q2119413 revision 2557962810 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/BR/BR-UC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www12.senado.leg.br/tv/ao-vivo",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"brazil-senate-live\", \"tracks\": []}, {\"key\": \"brazil-senate-recording\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www12.senado.leg.br/tv/ao-vivo",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "noncommercial_pending_review",
+        "summary": "The broad reproduction summary is limited by the specific TV Senado terms: no commercial/advertising or political/ideological use; preserve logo/credits/context; third-party transfer and some uses need authorization. Third-party footage may be cleared only for the broadcaster. Retain official link-out; no unrestricted redistribution grant is inferred.",
+        "evidence": [
+          "https://www12.senado.leg.br/assessoria-de-imprensa/politica-de-uso"
+        ],
+        "recommendation": "Watch the official TV Senado service. Preserve its specific use restrictions; do not infer unrestricted redistribution or that on-air TV is a live chamber sitting."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots."
+        }
+      ]
+    },
+    {
+      "id": "jamaica-parliament-pbcj-recordings",
+      "name": "Jamaica Parliamentary Recordings (PBCJ)",
+      "jurisdiction_level": "national",
+      "country_or_region": "Jamaica",
+      "legislature": "Houses of Parliament of Jamaica",
+      "external_ids": {
+        "wikidata_qid": "Q122635",
+        "ipu_country_code": "JM",
+        "ipu_parliament_code": "JM",
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q122635",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q122635 revision 2554816344 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/JM/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://pbcjamaica.org/show/parliamentsenate/",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"jamaica-senate-recording\", \"tracks\": []}, {\"key\": \"jamaica-accounts\", \"tracks\": []}, {\"key\": \"jamaica-domesticviolence\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://pbcjamaica.org/show/parliamentsenate/",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "noncommercial_pending_review",
+        "summary": "Houses of Parliament allows attributed noncommercial reproduction of its own site material with accuracy and no endorsement conditions; commercial reuse needs consent. This is not a blanket grant for PBCJ or third-party audiovisual material. Use the official programme index and keep independent playback disabled.",
+        "evidence": [
+          "https://japarliament.gov.jm/index.php?option=com_content&view=article&id=51&Itemid=13",
+          "https://pbcjamaica.org/show/parliamentsenate/"
+        ],
+        "recommendation": "Use the official parliamentary programme index and check the actual recording content. A provider-live title may be stale and public-service programming may be on air. Independent reuse of broadcaster media remains unverified."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles."
+        }
+      ]
+    },
+    {
+      "id": "sri-lanka-parliament-recordings",
+      "name": "Sri Lanka Parliament Proceedings Archive",
+      "jurisdiction_level": "national",
+      "country_or_region": "Sri Lanka",
+      "legislature": "Parliament of Sri Lanka",
+      "external_ids": {
+        "wikidata_qid": "Q1450753",
+        "ipu_country_code": "LK",
+        "ipu_parliament_code": "LK",
+        "ipu_chamber_code": "LK-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1450753",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1450753 revision 2559609958 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/LK/LK-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Sinhala / Tamil / English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parliament.lk/en/parliament-live/chamber-on-demand",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official house and committee archive navigation identifies 23 October 2026 House and 21 October Public Enterprises Committee clips. Both decode and advance (initial quality 238x134). Live routes, all archive segments and all language tracks remain unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"srilanka-house-clip\", \"tracks\": []}, {\"key\": \"srilanka-committee-clip\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parliament.lk/en/parliament-live/chamber-on-demand",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.parliament.lk/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official house and committee archive navigation identifies 23 October 2026 House and 21 October Public Enterprises Committee clips. Both decode and advance (initial quality 238x134). Live routes, all archive segments and all language tracks remain unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "panama-national-assembly-committee-webcasts",
+      "name": "Panama National Assembly Committee Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Panama",
+      "legislature": "Asamblea Nacional de Panamá",
+      "external_ids": {
+        "wikidata_qid": "Q1368588",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1368588",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1368588 revision 2555113015 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/user/AsambleaNacionalPa/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. An official Assembly article/footer explicitly links this provider through its public click-out URL. Budget and Labour/Health/Social Development Committee recordings play at 20 minutes. No current plenary or standing TVL feed is claimed. The IPU profile failed to fetch; identity uses the verified Wikidata legislature and institutional provider chain, with a separate PA country-code mapping.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"panama-budget\", \"tracks\": []}, {\"key\": \"panama-labor\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/user/AsambleaNacionalPa/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.asamblea.gob.pa/"
+        ],
+        "recommendation": "Open the official viewing service. This is a committee archive; plenary and other rooms remain separately unvalidated. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "An official Assembly article/footer explicitly links this provider through its public click-out URL. Budget and Labour/Health/Social Development Committee recordings play at 20 minutes. No current plenary or standing TVL feed is claimed. The IPU profile failed to fetch; identity uses the verified Wikidata legislature and institutional provider chain, with a separate PA country-code mapping."
+        }
+      ]
+    },
+    {
+      "id": "croatia-parliament-committee-webcasts",
+      "name": "Croatia Parliament Committee Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Croatia",
+      "legislature": "Hrvatski sabor",
+      "external_ids": {
+        "wikidata_qid": "Q371576",
+        "ipu_country_code": "HR",
+        "ipu_parliament_code": "HR",
+        "ipu_chamber_code": "HR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q371576",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q371576 revision 2558989698 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/HR/HR-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Croatian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@saborskatv-odbori3799/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official notice for the Information/Informatization/Media Committee 25th meeting on 22 September 2026 links the sampled recording. Its normal watch page identifies the Saborska TV - odbori channel. Recording plays at 20 minutes. Plenary broadcast and other committee rooms remain unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"croatia-committee\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@saborskatv-odbori3799/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://sabor.hr/"
+        ],
+        "recommendation": "Open the official viewing service. This is a committee archive; plenary and other rooms remain separately unvalidated. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official notice for the Information/Informatization/Media Committee 25th meeting on 22 September 2026 links the sampled recording. Its normal watch page identifies the Saborska TV - odbori channel. Recording plays at 20 minutes. Plenary broadcast and other committee rooms remain unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "botswana-national-assembly-webcasts",
+      "name": "Botswana National Assembly Webcasts",
+      "jurisdiction_level": "national",
+      "country_or_region": "Botswana",
+      "legislature": "National Assembly of Botswana",
+      "external_ids": {
+        "wikidata_qid": "Q859658",
+        "ipu_country_code": "BW",
+        "ipu_parliament_code": "BW",
+        "ipu_chamber_code": "BW-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q859658",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q859658 revision 2559913419 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/BW/BW-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "English / Setswana",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@BWPARLIAMENT/streams",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. The official Watch-Live page explicitly designates @BWPARLIAMENT. Legislative sittings labelled 20 and 21 August 2026 play at 20 minutes. Ntlo ya Dikgosi advisory meetings appear in the same channel but are not independently promoted as a law-making chamber.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"botswana-assembly\", \"tracks\": []}, {\"key\": \"botswana-assembly-second\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@BWPARLIAMENT/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://www.botswanaspeaks.gov.bw/article/373/watch-live",
+          "https://www.botswanaspeaks.gov.bw/disclaimer"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official Watch-Live page explicitly designates @BWPARLIAMENT. Legislative sittings labelled 20 and 21 August 2026 play at 20 minutes. Ntlo ya Dikgosi advisory meetings appear in the same channel but are not independently promoted as a law-making chamber."
+        }
+      ]
+    },
+    {
+      "id": "indonesia-dpr-committee-video-archive",
+      "name": "Indonesia DPR Committee Video Archive",
+      "jurisdiction_level": "national",
+      "country_or_region": "Indonesia",
+      "legislature": "Dewan Perwakilan Rakyat Republik Indonesia",
+      "external_ids": {
+        "wikidata_qid": "Q2670027",
+        "ipu_country_code": "ID",
+        "ipu_parliament_code": "ID",
+        "ipu_chamber_code": "ID-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2670027",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q2670027 revision 2558606893 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ID/ID-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Indonesian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://tvrparlemen.dpr.go.id/video_akd",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"indonesia-budget-watch\", \"tracks\": []}, {\"key\": \"indonesia-budget-second-watch\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://tvrparlemen.dpr.go.id/video_akd",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+        "evidence": [
+          "https://tvrparlemen.dpr.go.id/"
+        ],
+        "recommendation": "Historical committee archive: portal import dates can differ from the actual recording dates. Use the official index or its normal provider watch links if an embedded player fails. Independent media reuse and live commission coverage remain unvalidated."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-natv-onair",
+      "name": "South Korea National Assembly Television",
+      "jurisdiction_level": "national",
+      "country_or_region": "South Korea",
+      "legislature": "대한민국 국회",
+      "external_ids": {
+        "wikidata_qid": "Q494162",
+        "ipu_country_code": "KR",
+        "ipu_parliament_code": "KR",
+        "ipu_chamber_code": "KR-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q494162",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q494162 revision 2558218265 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/KR/KR-LC01/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.natv.go.kr/natv/onair.do",
+      "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official internet proceedings portal links NATV. The on-air player advances for more than 20 seconds, with a growing live MediaSource duration. Sampled output shows committee/audit coverage labelled 10.22; broadcaster on-air output is not proof of a currently live sitting or every committee stream.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "always_on",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"korea-natv-onair\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.natv.go.kr/natv/onair.do",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Only works wholly owned by NATV and explicitly marked with a KOGL licence are freely usable under the indicated KOGL type. Unmarked works require prior consultation. No KOGL type was established for the sampled on-air programme; retain official link-out and no independent media reuse.",
+        "evidence": [
+          "https://www.natv.go.kr/natv/info/natvCopyright.do"
+        ],
+        "recommendation": "Watch the official NATV on-air player. Broadcast output can be a recorded programme. Verify a work-specific KOGL mark and its conditions before reuse; unmarked material needs prior consultation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official internet proceedings portal links NATV. The on-air player advances for more than 20 seconds, with a growing live MediaSource duration. Sampled output shows committee/audit coverage labelled 10.22; broadcaster on-air output is not proof of a currently live sitting or every committee stream."
+        }
+      ]
+    },
+    {
+      "id": "austria-tirol-landtag-webcasts",
+      "name": "Tyrol Landtag Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Tyrol",
+      "legislature": "Tiroler Landtag",
+      "external_ids": {
+        "wikidata_qid": "Q1668433",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1668433",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q1668433 revision 2549954736 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.tirol.gv.at/landtag/live/",
+      "provenance_note": "Official Landtag explanation establishes state legislation, election/control/no-confidence of the government, budget approval and audit scrutiny. First-level Austrian state legislature. Official live page links the Landtag channel. Morning and afternoon of 1 October 2026 play at quarter-length timestamps. Both sampled videos visibly include a sign-language interpretation inset; its language and service-wide coverage remain unreviewed.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"tirol-morning\", \"tracks\": []}, {\"key\": \"tirol-afternoon\", \"tracks\": []}]. Visible sign-language interpretation inset in both sampled Tyrol sittings; language and completeness remain unreviewed."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.tirol.gv.at/landtag/live/",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official pages designate public viewing and retain copyright notices; no independent audiovisual reuse grant was established. Keep the official link rather than extracting, embedding or redistributing provider media.",
+        "evidence": [
+          "https://www.tirol.gv.at/landtag/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official live page links the Landtag channel. Morning and afternoon of 1 October 2026 play at quarter-length timestamps. Both sampled videos visibly include a sign-language interpretation inset; its language and service-wide coverage remain unreviewed."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-appenzell-ausserrhoden-kantonsrat-archive",
+      "name": "Appenzell Ausserrhoden Cantonal Council Archive",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Appenzell Ausserrhoden",
+      "legislature": "Kantonsrat Appenzell Ausserrhoden",
+      "external_ids": {
+        "wikidata_qid": "Q4775545",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4775545",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q4775545 revision 2388568320 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCBYKiVXWhglTX3rFhr_253Q/streams",
+      "provenance_note": "Official current institutional page identifies the lawmaking body, its laws/ordinances and supervision of government/administration/courts. The official 2026 budget after the Council decision confirms its budget role. First-level Swiss canton. Official cantonal Parliament page directly links the sampled channel. Sittings of 24 August and 15 June 2026 play beyond holding graphics. A newly published constitution is dated effective 1 January 2027 and was not treated as current law; a retrieved older consolidation was dated 2000 and was not claimed current either. The legal collection UI confirms version 1512 is effective from 26 November 2023 through 31 December 2026; the 2027 replacement is listed separately.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"appenzell-august\", \"tracks\": []}, {\"key\": \"appenzell-june\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCBYKiVXWhglTX3rFhr_253Q/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official pages designate public viewing and retain copyright notices; no independent audiovisual reuse grant was established. Keep the official link rather than extracting, embedding or redistributing provider media.",
+        "evidence": [
+          "https://ar.ch/metanavigation/impressum-rechtliches/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official cantonal Parliament page directly links the sampled channel. Sittings of 24 August and 15 June 2026 play beyond holding graphics. A newly published constitution is dated effective 1 January 2027 and was not treated as current law; a retrieved older consolidation was dated 2000 and was not claimed current either."
+        }
+      ]
+    },
+    {
+      "id": "belgium-wallonia-parliament-webcasts",
+      "name": "Wallonia Parliament Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Wallonia",
+      "legislature": "Parlement de Wallonie",
+      "external_ids": {
+        "wikidata_qid": "Q2449493",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2449493",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q2449493 revision 2550149855 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCUuYqgfbrMsn2Qx4TLXb_9A/streams",
+      "provenance_note": "Official explanation establishes decrees with force of law, budget decrees and government scrutiny including confidence/no-confidence. Regional legislature of federal Belgium. Institution-linked channel: 14 October 2026 plenary and committee recordings play beyond opening graphics. Official terms expressly allow links and reproduction of parliamentary debates/recordings with source acknowledgement and context integrity; framing website pages needs permission.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"wallonia-plenary\", \"tracks\": []}, {\"key\": \"wallonia-committee\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCUuYqgfbrMsn2Qx4TLXb_9A/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "The legal notice distinguishes ordinary site content from debates: parliamentary debates and their audiovisual recordings may be reproduced, with source attribution and no distortion of the meaning when excerpted. Ordinary material remains private/noncommercial unless otherwise permitted, and framing site pages needs formal permission. This addition retains official link-out and does not claim a stable independently reusable stream.",
+        "evidence": [
+          "https://www.parlement-wallonie.be/mentions-legales"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Institution-linked channel: 14 October 2026 plenary and committee recordings play beyond opening graphics. Official terms expressly allow links and reproduction of parliamentary debates/recordings with source acknowledgement and context integrity; framing website pages needs permission."
+        }
+      ]
+    },
+    {
+      "id": "belgium-brussels-parliament-committee-webcasts",
+      "name": "Brussels Parliament Committee Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Brussels-Capital Region",
+      "legislature": "Parlement de la Région de Bruxelles-Capitale / Brussels Hoofdstedelijk Parlement",
+      "external_ids": {
+        "wikidata_qid": "Q435623",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q435623",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q435623 revision 2550150366 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "French / Dutch",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/c/parlementbrusselslive/streams",
+      "provenance_note": "Official Parliament explains regional ordinances, regional revenue/expenditure budgets and government scrutiny including parliamentary questions and no-confidence. This is a federal-region legislature, not an ordinary municipal council. Official site explicitly links its proceedings channel. Environment and Economic Affairs Committee recordings labelled 21 October 2026 play beyond the empty-room opening. Other chambers/rooms and Common Community Commission proceedings remain separately unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"brussels-environment\", \"tracks\": []}, {\"key\": \"brussels-economy\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/c/parlementbrusselslive/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official pages designate public viewing and retain copyright notices; no independent audiovisual reuse grant was established. Keep the official link rather than extracting, embedding or redistributing provider media.",
+        "evidence": [
+          "https://www.parlement.brussels/"
+        ],
+        "recommendation": "Open the official viewing service. This is a committee archive; plenary and other rooms remain separately unvalidated. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official site explicitly links its proceedings channel. Environment and Economic Affairs Committee recordings labelled 21 October 2026 play beyond the empty-room opening. Other chambers/rooms and Common Community Commission proceedings remain separately unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "british-virgin-islands-house-assembly-webcasts",
+      "name": "British Virgin Islands House of Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "British Virgin Islands",
+      "legislature": "House of Assembly of the Virgin Islands",
+      "external_ids": {
+        "wikidata_qid": "Q5914704",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5914704",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q5914704 revision 2385736319 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@houseofassemblyvi2922/streams",
+      "provenance_note": "The Constitution establishes the territorial legislature and general lawmaking power (sections 62 and 71), together with public-finance and ministerial-government provisions. British Overseas Territory; separate VG map parent and UK search association. Official House website links the channel and identifies its legislative role. A fifth-sitting/third-session/fifth-House continuation plays beyond its recess slate. Another sampled continuation remains in recess at the chosen timestamp. The government overview has a conflicting membership summary; use the constitutional text for powers and do not repeat those membership figures.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"bvi-sitting\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@houseofassemblyvi2922/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official pages designate public viewing and retain copyright notices; no independent audiovisual reuse grant was established. Keep the official link rather than extracting, embedding or redistributing provider media.",
+        "evidence": [
+          "https://hoa.gov.vg/",
+          "https://gov.vg/privacy-policy"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "Official House website links the channel and identifies its legislative role. A fifth-sitting/third-session/fifth-House continuation plays beyond its recess slate. Another sampled continuation remains in recess at the chosen timestamp. The government overview has a conflicting membership summary; use the constitutional text for powers and do not repeat those membership figures."
+        }
+      ]
+    },
+    {
+      "id": "montserrat-legislative-assembly-webcasts",
+      "name": "Montserrat Legislative Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Montserrat",
+      "legislature": "Legislative Assembly of Montserrat",
+      "external_ids": {
+        "wikidata_qid": "Q21029427",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21029427",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Wikidata legislature Q21029427 revision 2345741997 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@MontserratLegislativeAssembly/streams",
+      "provenance_note": "Official Assembly Business describes primary Acts, scrutiny and subsidiary legislation; Constitution section 71 gives general lawmaking and the Constitution establishes ministerial government/public-finance controls. British Overseas Territory, not an ordinary UK administrative subdivision. The official site explicitly designates its channel. Meeting 18 of the 18th Parliament, Part 3, plays beyond the opening graphic and shows chamber debate. Part 2 opens in an empty room at the sampled time. Footer terms/privacy links point to a fintech website-template vendor; they are not treated as institutional media permissions.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"montserrat-sitting\", \"tracks\": []}]. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@MontserratLegislativeAssembly/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed official pages designate public viewing and retain copyright notices; no independent audiovisual reuse grant was established. Keep the official link rather than extracting, embedding or redistributing provider media.",
+        "evidence": [
+          "https://parliament.ms/"
+        ],
+        "recommendation": "Open the official viewing service. Retain link-out playback; media reuse and an implemented XMLTV parser require their own evidence."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:01:13.781996+00:00",
+          "report_path": "reports/health/2026-10-23-full-queue-deep-browser.json",
+          "method": "browser_player",
+          "status": "ok",
+          "note": "The official site explicitly designates its channel. Meeting 18 of the 18th Parliament, Part 3, plays beyond the opening graphic and shows chamber debate. Part 2 opens in an empty room at the sampled time. Footer terms/privacy links point to a fintech website-template vendor; they are not treated as institutional media permissions."
+        }
+      ]
+    },
+    {
+      "id": "argentina-neuquen-legislature-webcasts",
+      "name": "Neuquén Legislature Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Neuquén",
+      "legislature": "Honorable Legislatura de la Provincia del Neuquén",
+      "external_ids": {
+        "wikidata_qid": "Q41144338",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q41144338",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Matched legislature Q41144338 revision 2488333218 against the official institution and its designated viewing service. Geographic-entity IDs are not substituted for legislative bodies."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/user/prensalegislaturanqn/streams",
+      "provenance_note": "The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed. A sign-language interpreter is visible in the 21 October Neuquén sample; language and complete coverage remain unreviewed."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://legislaturaneuquen.gob.ar/Agenda.aspx?mes=10&anio=2026",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Institutional/provider pages establish public viewing but no independent audiovisual reuse permission was found. Retain the official link-out; provider manifest extraction, embedding and redistribution are not enabled.",
+        "evidence": [
+          "https://legislaturaneuquen.gob.ar/EnVivo",
+          "https://legislaturaneuquen.gob.ar/"
+        ],
+        "recommendation": "Open the official viewing service. Independent playback/reuse, current live room coverage and an implemented XMLTV parser remain separate checks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:46:28.564521+00:00",
+          "report_path": "reports/health/2026-10-23-legislative-followup-browser.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed."
+        }
+      ]
+    },
+    {
+      "id": "italy-sicily-assembly-video",
+      "name": "Sicilian Regional Assembly Video",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Sicily",
+      "legislature": "Assemblea Regionale Siciliana",
+      "external_ids": {
+        "wikidata_qid": "Q2707406",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2707406",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Matched legislature Q2707406 revision 2549985474 against the official institution and its designated viewing service. Geographic-entity IDs are not substituted for legislative bodies."
+        }
+      ],
+      "language": "Italian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+      "provenance_note": "The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed. No service-wide caption/sign-language/audio-description guarantee established."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The official archive and institution-linked provider designate public viewing. The reviewed privacy/cookie page does not establish an independent audiovisual reuse licence. Link to the archive; do not extract or independently embed the media without separate evidence.",
+        "evidence": [
+          "https://www.ars.sicilia.it/privacy-cookie-policy",
+          "https://www.ars.sicilia.it/"
+        ],
+        "recommendation": "Open the official viewing service. Independent playback/reuse, current live room coverage and an implemented XMLTV parser remain separate checks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:46:28.564521+00:00",
+          "report_path": "reports/health/2026-10-23-legislative-followup-browser.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence."
+        }
+      ]
+    },
+    {
+      "id": "us-west-virginia-legislature-media",
+      "name": "West Virginia Legislature Media",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "West Virginia",
+      "legislature": "West Virginia Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q7986861",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7986861",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Matched legislature Q7986861 revision 2384877852 against the official institution and its designated viewing service. Geographic-entity IDs are not substituted for legislative bodies."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://home.wvlegislature.gov/live-media/",
+      "provenance_note": "The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed. No service-wide caption/sign-language/audio-description guarantee established."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://home.wvlegislature.gov/live-media/",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The linked Terms of Use provides public-information, accuracy and external-link disclaimers, not a blanket audiovisual reuse licence. No independent playback/redistribution permission was established. Keep official link-out.",
+        "evidence": [
+          "https://www.wvlegislature.gov/termsofuse.cfm"
+        ],
+        "recommendation": "Open the official viewing service. Independent playback/reuse, current live room coverage and an implemented XMLTV parser remain separate checks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T16:46:28.564521+00:00",
+          "report_path": "reports/health/2026-10-23-legislative-followup-browser.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated."
+        }
+      ]
+    },
+    {
+      "id": "argentina-corrientes-deputies-webcasts",
+      "name": "Corrientes Chamber of Deputies Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Corrientes",
+      "legislature": "Honorable Cámara de Diputados de la Provincia de Corrientes",
+      "external_ids": {
+        "wikidata_qid": "Q56316686",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q56316686",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative chamber Q56316686 revision 2346089827; institutional label, lower/upper-chamber role and official P856 URL match the primary chamber site. Not the province, city or municipal council."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+      "provenance_note": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Spanish institutional/session metadata; muted playback tests do not independently certify all spoken languages, alternate audio or complete accessibility. An interpreter is visible in both Deputies samples; sign-language code, full-recording coverage and caption quality were not assessed."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://hcdcorrientes.gov.ar/sesiones/orden-del-dia/",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Reviewed the primary institution/viewing pages and their copyright notices. They designate public viewing but no independent audiovisual reuse grant was established in the reviewed pages. Retain an official link-out; do not enable embedded playback, manifest extraction or redistribution. No source-specific prior-linking condition was found in these reviewed pages; this is not an exhaustive legal certification.",
+        "evidence": [
+          "https://hcdcorrientes.gov.ar/",
+          "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+        ],
+        "recommendation": "Open the official viewing service; independent media reuse and complete current-live/committee coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T18:17:24.358242+00:00",
+          "report_path": "reports/health/2026-10-23-corrientes-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "argentina-corrientes-senate-recordings",
+      "name": "Corrientes Senate Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Corrientes",
+      "legislature": "Honorable Cámara de Senadores de la Provincia de Corrientes",
+      "external_ids": {
+        "wikidata_qid": "Q40323796",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q40323796",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative chamber Q40323796 revision 2346089745; institutional label, lower/upper-chamber role and official P856 URL match the primary chamber site. Not the province, city or municipal council."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCG53mcv5LYAOzJrLGnGTy-A/streams",
+      "provenance_note": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Spanish institutional/session metadata; muted playback tests do not independently certify all spoken languages, alternate audio or complete accessibility. No service-wide caption, sign-language or audio-description guarantee established."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.senadoctes.gov.ar/vt.php",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Reviewed the primary institution/viewing pages and their copyright notices. They designate public viewing but no independent audiovisual reuse grant was established in the reviewed pages. Retain an official link-out; do not enable embedded playback, manifest extraction or redistribution. No source-specific prior-linking condition was found in these reviewed pages; this is not an exhaustive legal certification.",
+        "evidence": [
+          "https://www.senadoctes.gov.ar/",
+          "https://www.senadoctes.gov.ar/sesionesenvivo.php",
+          "https://www.senadoctes.gov.ar/sesionesenaudio.php"
+        ],
+        "recommendation": "Open the official viewing service; independent media reuse and complete current-live/committee coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T18:17:24.358242+00:00",
+          "report_path": "reports/health/2026-10-23-corrientes-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated."
+        }
+      ]
+    },
+    {
+      "id": "indonesia-north-kalimantan-legislative-webcasts",
+      "name": "North Kalimantan Legislative Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "North Kalimantan",
+      "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Utara",
+      "external_ids": {
+        "wikidata_qid": "Q25470476",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q25470476",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution Q25470476, revision 2482943627; legislative type, country and P1001 jurisdiction match the primary institution. P856 and P2397 are absent from this item; official URL and provider ownership were corroborated independently from primary links, not invented as Wikidata claims."
+        }
+      ],
+      "language": "Indonesian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@dprdprov.kaltara/streams",
+      "provenance_note": "The provincial legislature profile explicitly designates @dprdprov.kaltara. A KPID selection hearing and a separate plenary presentation of the 2024 government accountability report were visually checked beyond opening graphics, at 30 and 20 minutes respectively. The hearing room banner, legislators, plenary room and institutional branding match the provincial DPRD. These historical recordings do not establish current live coverage. Selected decoded media time and frames advanced in Chromium and WebKit.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Indonesian institutional and provider metadata. Muted playback does not independently verify every spoken language; captions, sign-language and audio-description coverage remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@dprdprov.kaltara/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public institutional pages explicitly designate the viewing service. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. Reviewed institution/footer notices and, for the Colombian assemblies, their policy page and linked Mi Colombia Digital operator terms. Those platform terms govern government site provision and do not grant this project media reuse rights. No source-specific prior-linking condition was found in the reviewed material; this is not a complete legal certification.",
+        "evidence": [
+          "https://dprd.kaltaraprov.go.id/sekilas-dprd/",
+          "https://www.youtube.com/@dprdprov.kaltara/streams"
+        ],
+        "recommendation": "Open the officially designated viewing service. Independent reuse rights and complete live/room coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T18:49:42.777546+00:00",
+          "report_path": "reports/health/2026-10-23-completion-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The provincial legislature profile explicitly designates @dprdprov.kaltara. A KPID selection hearing and a separate plenary presentation of the 2024 government accountability report were visually checked beyond opening graphics, at 30 and 20 minutes respectively. The hearing room banner, legislators, plenary room and institutional branding match the provincial DPRD. These historical recordings do not establish current live coverage."
+        }
+      ]
+    },
+    {
+      "id": "colombia-arauca-assembly-webcasts",
+      "name": "Arauca Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Arauca",
+      "legislature": "Asamblea Departamental de Arauca",
+      "external_ids": {
+        "wikidata_qid": "Q51092556",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092556",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution Q51092556, revision 2329956527; legislative type, country and P1001 jurisdiction match the primary institution. P856 and P2397 are absent from this item; official URL and provider ownership were corroborated independently from primary links, not invented as Wikidata claims."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+      "provenance_note": "The departmental assembly homepage explicitly designates channel UCqTycM15CbUe1zv5Xo0n1zw. Ordinary sittings labelled 22 and 21 October 2026 were visually reviewed at ten minutes with speakers, chamber flags and institutional room setting. Current live and every committee room remain separate checks. Selected decoded media time and frames advanced in Chromium and WebKit.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Spanish institutional and provider metadata. Muted playback does not independently verify every spoken language; captions, sign-language and audio-description coverage remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public institutional pages explicitly designate the viewing service. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. Reviewed institution/footer notices and, for the Colombian assemblies, their policy page and linked Mi Colombia Digital operator terms. Those platform terms govern government site provision and do not grant this project media reuse rights. No source-specific prior-linking condition was found in the reviewed material; this is not a complete legal certification.",
+        "evidence": [
+          "https://www.asambleadepartamentodearauca.gov.co/",
+          "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+          "https://www.asambleadepartamentodearauca.gov.co/politicas"
+        ],
+        "recommendation": "Open the officially designated viewing service. Independent reuse rights and complete live/room coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T18:49:42.777546+00:00",
+          "report_path": "reports/health/2026-10-23-completion-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The departmental assembly homepage explicitly designates channel UCqTycM15CbUe1zv5Xo0n1zw. Ordinary sittings labelled 22 and 21 October 2026 were visually reviewed at ten minutes with speakers, chamber flags and institutional room setting. Current live and every committee room remain separate checks."
+        }
+      ]
+    },
+    {
+      "id": "colombia-caqueta-assembly-webcasts",
+      "name": "Caquetá Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Caquetá",
+      "legislature": "Asamblea Departamental del Caquetá",
+      "external_ids": {
+        "wikidata_qid": "Q51092549",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092549",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution Q51092549, revision 2324431382; legislative type, country and P1001 jurisdiction match the primary institution. P856 and P2397 are absent from this item; official URL and provider ownership were corroborated independently from primary links, not invented as Wikidata claims."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCnv4PhFlCBm4pXvHOzkaCfg/streams",
+      "provenance_note": "The departmental assembly homepage explicitly designates channel UCnv4PhFlCBm4pXvHOzkaCfg. An environmental public hearing labelled 22 October 2026 and a distinct victims-policy sitting labelled 21 October were visually checked at ten and thirty minutes. Deputies, chamber nameplates, assembly branding and substantive presentations are visible. The latter topic also matches the homepage order-of-day entry for 21 October. One WebKit inspection was interrupted by a detached provider frame; the same sample passed a bounded retry. Current live and complete committee coverage remain unverified. Selected decoded media time and frames advanced in Chromium and WebKit.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Spanish institutional and provider metadata. Muted playback does not independently verify every spoken language; captions, sign-language and audio-description coverage remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/channel/UCnv4PhFlCBm4pXvHOzkaCfg/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public institutional pages explicitly designate the viewing service. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. Reviewed institution/footer notices and, for the Colombian assemblies, their policy page and linked Mi Colombia Digital operator terms. Those platform terms govern government site provision and do not grant this project media reuse rights. No source-specific prior-linking condition was found in the reviewed material; this is not a complete legal certification.",
+        "evidence": [
+          "https://www.asamblea-caqueta.gov.co/",
+          "https://www.youtube.com/channel/UCnv4PhFlCBm4pXvHOzkaCfg/streams",
+          "https://www.asamblea-caqueta.gov.co/politicas"
+        ],
+        "recommendation": "Open the officially designated viewing service. Independent reuse rights and complete live/room coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T18:49:42.777546+00:00",
+          "report_path": "reports/health/2026-10-23-completion-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The departmental assembly homepage explicitly designates channel UCnv4PhFlCBm4pXvHOzkaCfg. An environmental public hearing labelled 22 October 2026 and a distinct victims-policy sitting labelled 21 October were visually checked at ten and thirty minutes. Deputies, chamber nameplates, assembly branding and substantive presentations are visible. The latter topic also matches the homepage order-of-day entry for 21 October. One WebKit inspection was interrupted by a detached provider frame; the same sample passed a bounded retry. Current live and complete committee coverage remain unverified."
+        }
+      ]
+    },
+    {
+      "id": "colombia-risaralda-assembly-webcasts",
+      "name": "Risaralda Assembly Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Risaralda",
+      "legislature": "Asamblea Departamental de Risaralda",
+      "external_ids": {
+        "wikidata_qid": "Q51092550",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092550",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution Q51092550, revision 2012212091; legislative type, country and P1001 jurisdiction match the primary institution. P856 and P2397 are absent from this item; official URL and provider ownership were corroborated independently from primary links, not invented as Wikidata claims."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@asambleadepartamental-comu59/streams",
+      "provenance_note": "The assembly homepage explicitly labels @asambleadepartamental-comu59/streams as its live-session destination. Ordinary sittings labelled 22 and 21 October 2026 were checked at forty minutes, beyond introductory tourism material, and show substantive 2027 legal and education budget presentations with regional institutional branding. Finance and planning committee recordings also appear in the provider index but were not individually playback-certified. Current live and full room coverage remain unresolved. Selected decoded media time and frames advanced in Chromium and WebKit.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Spanish institutional and provider metadata. Muted playback does not independently verify every spoken language; captions, sign-language and audio-description coverage remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@asambleadepartamental-comu59/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public institutional pages explicitly designate the viewing service. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. Reviewed institution/footer notices and, for the Colombian assemblies, their policy page and linked Mi Colombia Digital operator terms. Those platform terms govern government site provision and do not grant this project media reuse rights. No source-specific prior-linking condition was found in the reviewed material; this is not a complete legal certification.",
+        "evidence": [
+          "https://asamblearisaralda.gov.co/",
+          "https://www.youtube.com/@asambleadepartamental-comu59/streams",
+          "https://asamblearisaralda.gov.co/politicas"
+        ],
+        "recommendation": "Open the officially designated viewing service. Independent reuse rights and complete live/room coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T18:49:42.777546+00:00",
+          "report_path": "reports/health/2026-10-23-completion-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "The assembly homepage explicitly labels @asambleadepartamental-comu59/streams as its live-session destination. Ordinary sittings labelled 22 and 21 October 2026 were checked at forty minutes, beyond introductory tourism material, and show substantive 2027 legal and education budget presentations with regional institutional branding. Finance and planning committee recordings also appear in the provider index but were not individually playback-certified. Current live and full room coverage remain unresolved."
+        }
+      ]
+    },
+    {
+      "id": "argentina-chubut-legislature-webcasts",
+      "name": "Chubut Legislature Webcasts",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Chubut",
+      "legislature": "Honorable Legislatura de la Provincia del Chubut",
+      "external_ids": {
+        "wikidata_qid": "Q18419590",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q18419590",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislature Q18419590 revision 2526117415 has legislative type, Argentina P17 and Chubut P1001. Its P856 is the older held institutional host; P2397 is absent. Current provider ownership is corroborated separately by the provincial-government announcement, not asserted as a Wikidata claim."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@LegislaturadelChubut23-27/streams",
+      "provenance_note": "A provincial-government announcement dated 25 August 2026 explicitly designates @LegislaturadelChubut23-27 as the Honorable Legislatura del Chubut channel. Ordinary sittings dated 15 and 1 October 2026 were visually checked at 10461 and 11564 seconds, beyond their long introductory films: deputies Vanesa Abril and Tatiana Alejandra Goic are identified at chamber microphones. A Social Legislation, Health and Work committee recording at 1800 seconds shows nursing department head Cecilia Varela in Sala de Plenarios Dr. Jorge Aubia. Selected decoded media and frames advanced in Chromium and WebKit. This establishes sampled recordings, not current live or complete committee coverage. The older legislature homepage remains held for unrelated non-institutional content; it was not used as a current viewing destination.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Spanish institutional/provider metadata; muted playback does not independently verify all spoken tracks. Captions, sign-language and audio-description coverage remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.youtube.com/@LegislaturadelChubut23-27/streams",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The current provincial-government announcement independently designates the public provider channel. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. The older institutional website could not be reliably reviewed because it served unexpected content. No prior-linking condition was found in the reviewed government announcement/provider material; this is not complete legal certification.",
+        "evidence": [
+          "https://capacitacion.chubut.gov.ar/noticias/convocatoria-violencia-digital-de-genero",
+          "https://www.youtube.com/@LegislaturadelChubut23-27/streams"
+        ],
+        "recommendation": "Open the officially designated viewing service; independent reuse, current live and complete room coverage remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T19:40:49.713990+00:00",
+          "report_path": "reports/health/2026-10-23-chubut-validation.json",
+          "method": "static_http",
+          "status": "ok",
+          "note": "A provincial-government announcement dated 25 August 2026 explicitly designates @LegislaturadelChubut23-27 as the Honorable Legislatura del Chubut channel. Ordinary sittings dated 15 and 1 October 2026 were visually checked at 10461 and 11564 seconds, beyond their long introductory films: deputies Vanesa Abril and Tatiana Alejandra Goic are identified at chamber microphones. A Social Legislation, Health and Work committee recording at 1800 seconds shows nursing department head Cecilia Varela in Sala de Plenarios Dr. Jorge Aubia. Selected decoded media and frames advanced in Chromium and WebKit. This establishes sampled recordings, not current live or complete committee coverage. The older legislature homepage remains held for unrelated non-institutional content; it was not used as a current viewing destination."
+        }
+      ]
+    },
+    {
+      "id": "poland-lodz-sejmik-recordings",
+      "name": "Łódź Regional Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Łódź Voivodeship",
+      "legislature": "Sejmik Województwa Łódzkiego",
+      "external_ids": {
+        "wikidata_qid": "Q8081138",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q8081138",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact regional assembly Q8081138 revision 2555604310: P31 legislature and voivodeship sejmik, Poland P17 Q36, jurisdiction P1001 Q54158; no P856/P2397. Official bulletin independently establishes lawmaking role and exact provider recording links."
+        }
+      ],
+      "language": "Polish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+      "provenance_note": "The regional government bulletin explicitly lists dated Sejmik recordings and links the exact provider videos. Three distinct ordinary sittings (16 June, 2 July and 22 September 2026) were checked in Chromium and WebKit with decoded frames and advancing playback after introductions/recesses. Content observations include regional-state report debate, a named member speaking and debate on a regional assembly position. Exact institution Q8081138 is a Polish legislative body with jurisdiction Q54158. This is an official recorded-proceedings archive; current live and full committee coverage remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [
+          "pl"
+        ],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Polish text burned into the picture and sign-language interpreters were visually observed in selected June/July samples; September business sample shows an interpreter. Sign language variant, complete recording/room coverage, selectable tracks and audio description are unverified. Muted tests do not certify all spoken-language tracks."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official government bulletin viewing link. Reviewed the bulletin reuse page and its scanned Marshal Order 21/25 of 25 March 2025, especially chapter 3, physical PDF pages 8-9: it sets procedures for reuse requests/offers and possible preparation costs. No specific prior-linking consent condition was identified in the reviewed material; no independent audiovisual redistribution licence was established. Retain personal-use permission pending, link out to the bulletin, and exclude from direct playback/IPTV.",
+        "evidence": [
+          "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+          "https://bip.lodzkie.pl/ponowne-wykorzystywanie",
+          "https://bip.lodzkie.pl/files/21-25.pdf"
+        ],
+        "recommendation": "Use the official recording archive; media reuse, live and complete room/track coverage remain separate reviews."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:03:38.282115+00:00",
+          "report_path": "reports/health/2026-10-23-lodz-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "The regional government bulletin explicitly lists dated Sejmik recordings and links the exact provider videos. Three distinct ordinary sittings (16 June, 2 July and 22 September 2026) were checked in Chromium and WebKit with decoded frames and advancing playback after introductions/recesses. Content observations include regional-state report debate, a named member speaking and debate on a regional assembly position. Exact institution Q8081138 is a Polish legislative body with jurisdiction Q54158. This is an official recorded-proceedings archive; current live and full committee coverage remain unverified."
+        }
+      ]
+    },
+    {
+      "id": "poland-silesian-sejmik-recordings",
+      "name": "Silesian Regional Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Silesian Voivodeship",
+      "legislature": "Sejmik Województwa Śląskiego",
+      "external_ids": {
+        "wikidata_qid": "Q7514834",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7514834",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q7514834 revision 2555604304 has legislative/sejmik types, Poland P17 Q36, Silesian jurisdiction P1001 Q54181 and P856 sejmik.slaskie.pl. The public bulletin provides dated session identity separately."
+        }
+      ],
+      "language": "Polish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+      "provenance_note": "The Silesian regional-government bulletin publishes dated ordinary Sejmik session recordings. Sessions VII/30/2026 (21 September) and VII/31/2026 (19 October) were visually reviewed beyond the opening at 1200 seconds in WebKit, with advancing decoded 1920x1080 video, speakers at the chamber lectern and officials on the dais. Normal visible cookie acknowledgement and player controls were used. The official page uses native HLS: Chromium did not decode either selected recording in these checks, while WebKit played both after a normal resume following seek. Use the official viewing page; browser compatibility is source-dependent. Current live, every committee and all audio/language tracks remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Polish institution/session metadata; muted playback does not verify all spoken-language tracks. The October page says synchronized captions will be added after preparation; this notice is not confirmation that captions are already complete. Sign language and audio description remain unknown."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+          "method": "GET",
+          "kind": "official_event_or_recording_index"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official bulletin archive link only. Published default reuse conditions call for source/time attribution and disclosure of processing, preserve the public-affairs purpose of disclosed personal data and reserve source-specific conditions for protected works. No prior-linking consent requirement was identified in the reviewed page; this does not establish an independent audiovisual licence. Retain personal-use permission pending. No embedded player or HLS/IPTV export is added; observed manifests are dated video on demand, not stable live services.",
+        "evidence": [
+          "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+          "https://bip.slaskie.pl/katalog-uslug/ponowne-wykorzystywanie-informacji-sektora-publicznego.html"
+        ],
+        "recommendation": "Open the official archive in a browser supporting its native HLS player; broader playback compatibility, live/committee coverage and reuse remain unresolved."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:16:54.228492+00:00",
+          "report_path": "reports/health/2026-10-23-silesia-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The Silesian regional-government bulletin publishes dated ordinary Sejmik session recordings. Sessions VII/30/2026 (21 September) and VII/31/2026 (19 October) were visually reviewed beyond the opening at 1200 seconds in WebKit, with advancing decoded 1920x1080 video, speakers at the chamber lectern and officials on the dais. Normal visible cookie acknowledgement and player controls were used. The official page uses native HLS: Chromium did not decode either selected recording in these checks, while WebKit played both after a normal resume following seek. Use the official viewing page; browser compatibility is source-dependent. Current live, every committee and all audio/language tracks remain unverified."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-daegu-council-recordings",
+      "name": "Daegu Metropolitan Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Daegu",
+      "legislature": "대구광역시의회",
+      "external_ids": {
+        "wikidata_qid": "Q16095349",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16095349",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16095349, revision 2505979165, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.daegu.go.kr/",
+      "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (329th extraordinary session, first plenary (8 October 2026) and second plenary (19 October 2026)) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.daegu.go.kr/",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. The council copyright policy applies KOGL conditions to individually marked works; it does not establish a blanket licence for session video. Attribution and any work-specific noncommercial/no-derivatives limits must be respected. No prior consent condition for ordinary external links was identified in the reviewed policy. Audiovisual reuse remains pending.",
+        "evidence": [
+          "https://council.daegu.go.kr/",
+          "https://council.daegu.go.kr/kr/cms/copyright"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:38:26.551441+00:00",
+          "report_path": "reports/health/2026-10-23-korean-three-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-gyeongsangbuk-council-recordings",
+      "name": "Gyeongsangbuk-do Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Gyeongsangbuk-do",
+      "legislature": "경상북도의회",
+      "external_ids": {
+        "wikidata_qid": "Q16093885",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16093885",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16093885, revision 2514048284, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.gb.go.kr/",
+      "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (362nd first plenary and 361st second plenary) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.gb.go.kr/",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. The council copyright policy applies KOGL conditions to individually marked works; it does not establish a blanket licence for session video. Attribution and any work-specific noncommercial/no-derivatives limits must be respected. No prior consent condition for ordinary external links was identified in the reviewed policy. Audiovisual reuse remains pending.",
+        "evidence": [
+          "https://council.gb.go.kr/",
+          "https://council.gb.go.kr/kr/cms/copyright"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:38:26.551441+00:00",
+          "report_path": "reports/health/2026-10-23-korean-three-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-incheon-council-recordings",
+      "name": "Incheon Metropolitan Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Incheon",
+      "legislature": "인천광역시의회",
+      "external_ids": {
+        "wikidata_qid": "Q16099448",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16099448",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16099448, revision 2505899418, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.icouncil.go.kr/",
+      "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (313th fourth and fifth plenaries) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.icouncil.go.kr/",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. Its own site designates the video provider. The reviewed CCTV/privacy policy is not a licence for public session recordings; a current, separate audiovisual reuse permission was not established. Retain permission pending and do not embed, rehost or export provider streams.",
+        "evidence": [
+          "https://www.icouncil.go.kr/"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:38:26.551441+00:00",
+          "report_path": "reports/health/2026-10-23-korean-three-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-busan-council-recordings",
+      "name": "Busan Metropolitan Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Busan",
+      "legislature": "부산광역시의회",
+      "external_ids": {
+        "wikidata_qid": "Q16096697",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16096697",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16096697, revision 2513114120, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.busan.go.kr/council/index",
+      "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (339th extraordinary session, third and fourth plenaries) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.busan.go.kr/council/index",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. The council copyright policy applies KOGL conditions to individually marked works; it does not establish a blanket licence for session video. Attribution and any work-specific noncommercial/no-derivatives limits must be respected. No prior consent condition for ordinary external links was identified in the reviewed policy. Audiovisual reuse remains pending.",
+        "evidence": [
+          "https://council.busan.go.kr/council/index",
+          "https://council.busan.go.kr/council/copyright"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:45:17.274719+00:00",
+          "report_path": "reports/health/2026-10-23-korean-second-three-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-chungcheongnam-council-recordings",
+      "name": "Chungcheongnam-do Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Chungcheongnam-do",
+      "legislature": "충청남도의회",
+      "external_ids": {
+        "wikidata_qid": "Q16100275",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16100275",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16100275, revision 2510976436, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+      "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (371st extraordinary session, third and fourth plenaries) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+        "evidence": [
+          "https://council.chungnam.go.kr/kr/cast/plenary.do"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:45:17.274719+00:00",
+          "report_path": "reports/health/2026-10-23-korean-second-three-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-jeonbuk-council-recordings",
+      "name": "Jeonbuk State Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Jeonbuk State",
+      "legislature": "전북특별자치도의회",
+      "external_ids": {
+        "wikidata_qid": "Q21060148",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21060148",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q21060148, revision 2513869376, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.jbstatecouncil.jeonbuk.kr/jbassem/main",
+      "provenance_note": "The council website explicitly designates its YouTube service. Two distinct recorded sittings (432nd extraordinary session, third plenary (14 October 2026) and fourth plenary (23 October 2026)) were visually reviewed beyond opening slates in Chromium and WebKit, with advancing decoded video, a presiding chair or member speaking in the identified chamber and an inset sign-language interpreter. This confirms selected recorded proceedings; current live, every committee/room and all language tracks remain unverified. Open the council website and its designated video service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected recorded samples. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.jbstatecouncil.jeonbuk.kr/jbassem/main",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+        "evidence": [
+          "https://www.jbstatecouncil.jeonbuk.kr/jbassem/main"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:45:17.274719+00:00",
+          "report_path": "reports/health/2026-10-23-korean-second-three-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-jeonnam-gwangju-council-recordings",
+      "name": "Jeonnam–Gwangju Integrated Special City Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Jeonnam–Gwangju Integrated Special City",
+      "legislature": "전남광주통합특별시의회",
+      "external_ids": {
+        "wikidata_qid": "Q140198355",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q140198355",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact Korean council label Q140198355, revision2505878630, linked from its institution article and matched to the current council branding. The item has no P31/P17/P1001/P856 claims: those are not asserted. Current institutional identity and legislative succession are independently corroborated by the own council website and enacted special-city framework; predecessor Gwangju and Jeollanam council IDs are not substituted."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+      "provenance_note": "The current successor council website designates its YouTube service. A plenary review report and an Administration/Fire Committee meeting from its fourth extraordinary session were visually reviewed at1200 seconds in Chromium and WebKit, with advancing decoded video, members speaking in the identified chambers and successor-council branding. An interpreter is visible in the plenary sample. This confirms selected recorded proceedings of the integrated council, separately from predecessor archives; current live, every room and all language tracks remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "An inset interpreter is visible in the selected plenary sample, not confirmed in the committee sample. This does not establish language identity, every sitting or every feed. Complete caption coverage and audio description remain unknown; muted playback does not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. Its own site designates the video provider. A separate, current audiovisual reuse permission was not established from the reviewed own navigation; the sparse identity item is not a reuse licence. Retain permission pending and do not embed, rehost or export provider streams.",
+        "evidence": [
+          "https://council.jeonnam-gwangju.go.kr/jngjassem/main"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T21:51:51.570908+00:00",
+          "report_path": "reports/health/2026-10-23-korean-merged-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-gyeongsangnam-council-recordings",
+      "name": "Gyeongsangnam-do Council Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Gyeongsangnam-do",
+      "legislature": "경상남도의회",
+      "external_ids": {
+        "wikidata_qid": "Q16094835",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16094835",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16094835, revision 2514154242, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.gyeongnam.go.kr/kr/main.do",
+      "provenance_note": "The council website designates its YouTube service. Selected recordings of 437th extraordinary session, first and second plenaries were visually reviewed in Chromium and WebKit with advancing decoded video. Gyeongsangnam samples show a member delivering a five-minute speech and another member approaching the lectern during ordinary chamber proceedings, with inset interpreters. This confirms the selected recordings, not current live or every committee/room. Some provider recordings are labelled auto-dubbed; muted tests do not verify audio-track selection.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreters are visible in both selected plenary samples. Their language and source-wide coverage are not established. Complete captions and audio description remain unknown; muted samples do not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.gyeongnam.go.kr/kr/main.do",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+        "evidence": [
+          "https://council.gyeongnam.go.kr/kr/main.do"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:07:04.464392+00:00",
+          "report_path": "reports/health/2026-10-23-sejong-gyeongsangnam-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "south-korea-sejong-council-recordings",
+      "name": "Sejong City Council Committee Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Sejong",
+      "legislature": "세종특별자치시의회",
+      "external_ids": {
+        "wikidata_qid": "Q16097908",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16097908",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact council Q16097908, revision 2505917211, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+        }
+      ],
+      "language": "Korean",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://council.sejong.go.kr/",
+      "provenance_note": "The council website designates its YouTube service. Selected recordings of 109th regular session, Education/Safety Committee third meeting and Operations Committee third meeting were visually reviewed in Chromium and WebKit with advancing decoded video and the respective committee chairs conducting business. Long opening and recess sections were retained as separate non-confirming samples: Education/Safety at5400seconds and Operations at3900seconds show committee business. No plenary, current-live or full committee/room coverage is inferred.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No interpreter is established in the selected Education/Safety and Operations Committee samples; other variants remain unverified. Complete captions and audio description remain unknown; muted samples do not certify spoken-language or auto-dubbed track selection."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://council.sejong.go.kr/",
+          "method": "GET",
+          "kind": "official_institution_video_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+        "evidence": [
+          "https://council.sejong.go.kr/"
+        ],
+        "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:07:04.464392+00:00",
+          "report_path": "reports/health/2026-10-23-sejong-gyeongsangnam-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-buenos-aires-deputies-webcasts",
+      "name": "Buenos Aires Province Deputies Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Buenos Aires Province",
+      "legislature": "Honorable Cámara de Diputados de la Provincia de Buenos Aires",
+      "external_ids": {
+        "wikidata_qid": "Q4985544",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4985544",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q4985544, revision2288504789, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.hcdiputados-ba.gov.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. Two ordinary Deputies sittings,20October and29September2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreters visible in the two selected Deputies recordings; their language and source-wide coverage are not established. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.hcdiputados-ba.gov.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.hcdiputados-ba.gov.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-catamarca-senate-recordings",
+      "name": "Catamarca Senate Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Catamarca",
+      "legislature": "Cámara de Senadores de la Provincia de Catamarca",
+      "external_ids": {
+        "wikidata_qid": "Q56248161",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q56248161",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q56248161, revision2247105437, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://senadodecatamarca.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. 23rd and22nd ordinary Senate sittings2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later6000second sample shows the chair reading into a microphone. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://senadodecatamarca.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://senadodecatamarca.gob.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-buenos-aires-city-legislature-webcasts",
+      "name": "Buenos Aires City Legislature Committee Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Buenos Aires City",
+      "legislature": "Legislatura de la Ciudad Autónoma de Buenos Aires",
+      "external_ids": {
+        "wikidata_qid": "Q4985519",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4985519",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q4985519, revision2463427417, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.legislatura.gob.ar/InfoSesion/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. Budget/Treasury/Financial Administration/Tax Policy committee and joint Economic Development/Constitutional Affairs/Budget committees; members speaking at meeting-table microphones under matching committee captions. These are committee recordings, not two plenary sittings. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.legislatura.gob.ar/InfoSesion/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added. The reviewed terms assert ownership of site material and set access/security conditions without supplying an independent session-video reuse grant. No prior consent condition for an ordinary external link was identified in that reviewed page.",
+        "evidence": [
+          "https://www.legislatura.gob.ar/InfoSesion/",
+          "https://www.legislatura.gob.ar/banners/terminos-y-condiciones313.html"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-la-rioja-legislature-recordings",
+      "name": "La Rioja Legislature Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "La Rioja, Argentina",
+      "legislature": "Legislatura de la Provincia de La Rioja",
+      "external_ids": {
+        "wikidata_qid": "Q56316480",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q56316480",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q56316480, revision2247102796, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://legislaturalarioja.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. 12th and11th ordinary sittings of141st legislative period; deputies speaking at chamber desk microphones after earlier opening/standing moments. Argentine institution and jurisdiction Q44796, not Spain’s Parliament of La Rioja. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://legislaturalarioja.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://legislaturalarioja.gob.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-mendoza-deputies-recordings",
+      "name": "Mendoza Deputies Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Mendoza",
+      "legislature": "Cámara de Diputados de la Provincia de Mendoza",
+      "external_ids": {
+        "wikidata_qid": "Q97369212",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q97369212",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q97369212, revision2350229977, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.hcdmza.gob.ar/site/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. Deputies sittings21and14October2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.hcdmza.gob.ar/site/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.hcdmza.gob.ar/site/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-rio-negro-legislature-recordings",
+      "name": "Río Negro Legislature Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Río Negro",
+      "legislature": "Legislatura de la Provincia de Río Negro",
+      "external_ids": {
+        "wikidata_qid": "Q41143698",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q41143698",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q41143698, revision2248890703, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://web.legisrn.gov.ar/vivo",
+      "provenance_note": "Own legislature website explicitly designates the video provider. Sittings24and3September2026; Facundo López discussing municipal financial compensation and Luciano Delgado Sempé discussing a services/concessions regulator, named members and topic captions. Earlier presentations are separate non-confirming samples. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://web.legisrn.gov.ar/vivo",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://web.legisrn.gov.ar/vivo"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-salta-deputies-recordings",
+      "name": "Salta Deputies Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Salta",
+      "legislature": "Cámara de Diputados de la Provincia de Salta",
+      "external_ids": {
+        "wikidata_qid": "Q40323582",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q40323582",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q40323582, revision2247286599, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.diputadosalta.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. 25th and24th ordinary sittings of128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.diputadosalta.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.diputadosalta.gob.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-san-juan-deputies-recordings",
+      "name": "San Juan Deputies Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "San Juan",
+      "legislature": "Cámara de Diputados de la Provincia de San Juan",
+      "external_ids": {
+        "wikidata_qid": "Q54823916",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q54823916",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q54823916, revision1586350703, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. P1001 is absent; own provincial legislature identity and exact official site provide the scoped jurisdiction crosscheck."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://diputadossanjuan.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. 11th ordinary sitting22October and10th ordinary sitting24September2026; members speaking at chamber desk microphones under session/date captions. The item lacks P1001; country, exact institution label/site and primary session branding supply the scoped identity crosscheck. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://diputadossanjuan.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://diputadossanjuan.gob.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-santa-cruz-deputies-webcasts",
+      "name": "Santa Cruz Deputies And Committee Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Santa Cruz, Argentina",
+      "legislature": "Cámara de Diputados de la Provincia de Santa Cruz",
+      "external_ids": {
+        "wikidata_qid": "Q5795778",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5795778",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q5795778, revision2247312171, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://diputadosdesantacruz.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. 14th ordinary sitting of53rd legislative period and Budget/Finance standing committee; chamber business and named committee member María Agostina Mora Doldán speaking into a microphone. Earlier title/recess cards remain non-confirmations. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://diputadosdesantacruz.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added. The reviewed terms set general lawful-use and access/security conditions; they do not establish independent session-video reuse permission. No prior consent condition for an ordinary external link was identified in that reviewed page.",
+        "evidence": [
+          "https://diputadosdesantacruz.gob.ar/",
+          "https://diputadosdesantacruz.gob.ar/?page_id=280"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-tierra-del-fuego-legislature-webcasts",
+      "name": "Tierra del Fuego Legislature Recordings And Hearings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Tierra del Fuego",
+      "legislature": "Legislatura de la Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+      "external_ids": {
+        "wikidata_qid": "Q16589934",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16589934",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q16589934, revision2272407606, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.legistdf.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. Fourth ordinary sitting1October2026 with legislative secretary Nadia Luján reading, and21August2026 public hearing for the provincial children/adolescents ombudsman with Sebastián Medina speaking. The hearing is distinct from a plenary sitting. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.legistdf.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.legistdf.gob.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "argentina-tucuman-legislature-recordings",
+      "name": "Tucumán Legislature Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Tucumán",
+      "legislature": "Honorable Legislatura de Tucumán",
+      "external_ids": {
+        "wikidata_qid": "Q54823903",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q54823903",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact institution Q54823903, revision2488334327, Spanish label and Argentina P17 Q414 crosschecked with its own named institution/provider. Jurisdiction claims were reviewed separately from the media service."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.legislaturadetucuman.gob.ar/",
+      "provenance_note": "Own legislature website explicitly designates the video provider. Ordinary sitting15October and special ordinary sitting30September2026; chamber business and a member presenting the General Legislation Commission’s juvenile-criminal-regime report. The commission caption identifies the report’s origin, not a separately verified committee-room feed. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected samples. Speaker/topic lower thirds are not treated as complete captions. Caption coverage and audio description remain unknown; Spanish institutional/session metadata does not certify every audible or auto-dubbed track."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.legislaturadetucuman.gob.ar/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. A blanket audiovisual reuse licence was not established from the reviewed own site/navigation. Retain personal-use permission pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.legislaturadetucuman.gob.ar/"
+        ],
+        "recommendation": "Use the official institution website and designated recording service; independently confirm reuse, current live and complete chamber/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T22:35:18.547688+00:00",
+          "report_path": "reports/health/2026-10-23-argentina-eleven-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-mato-grosso-do-sul-assembly-recordings",
+      "name": "Mato Grosso do Sul Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Mato Grosso do Sul",
+      "legislature": "Assembleia Legislativa de Mato Grosso do Sul",
+      "external_ids": {
+        "wikidata_qid": "Q9633190",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9633190",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q9633190, revision 2499948831; Brazil P17 Q155 and jurisdiction P1001 Q43319 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://al.ms.gov.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Plenary sitting 21 October 2026 with a member speaking at the chamber microphone, and the Constitution/Justice/Drafting committee of that date with members conducting table business. Inset interpreters visible. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://al.ms.gov.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://al.ms.gov.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-paraiba-assembly-recordings",
+      "name": "Paraíba Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Paraíba",
+      "legislature": "Assembleia Legislativa da Paraíba",
+      "external_ids": {
+        "wikidata_qid": "Q9633173",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9633173",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q9633173, revision 2492396842; Brazil P17 Q155 and jurisdiction P1001 Q38088 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.al.pb.leg.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Ordinary sittings 14 October and 11 August 2026 with members speaking at the lectern and inset interpreters. The August replay is unlisted but explicitly linked on the assembly's public website. The separately decoded PEC36/2021 committee is historical and does not confirm current committee coverage. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.al.pb.leg.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.al.pb.leg.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-goias-assembly-recordings",
+      "name": "Goiás Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Goiás",
+      "legislature": "Assembleia Legislativa do Estado de Goiás",
+      "external_ids": {
+        "wikidata_qid": "Q9633183",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9633183",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q9633183, revision 2475720632; Brazil P17 Q155 and jurisdiction P1001 Q41587 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://portal.al.go.leg.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Extraordinary plenary and Mixed Committee 22 October 2026: members speaking at desk/table microphones under matching dated captions. Inset interpreters visible in both. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://portal.al.go.leg.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://portal.al.go.leg.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-mato-grosso-assembly-recordings",
+      "name": "Mato Grosso Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Mato Grosso",
+      "legislature": "Assembleia Legislativa do Estado de Mato Grosso",
+      "external_ids": {
+        "wikidata_qid": "Q16498710",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16498710",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q16498710, revision 2492395385; Brazil P17 Q155 and jurisdiction P1001 Q42824 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.al.mt.gov.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Ordinary plenary 21 October 2026 and Constitution/Justice/Drafting committee 20 October 2026: members speaking at lectern/table microphones under dated assembly captions, with inset interpreters. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.al.mt.gov.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.al.mt.gov.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-pernambuco-assembly-recordings",
+      "name": "Pernambuco Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Pernambuco",
+      "legislature": "Assembleia Legislativa do Estado de Pernambuco",
+      "external_ids": {
+        "wikidata_qid": "Q9633197",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9633197",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q9633197, revision 2492397088; Brazil P17 Q155 and jurisdiction P1001 Q40942 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.alepe.pe.gov.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Plenary 13 October 2026 with Renato Antunes speaking at the lectern, and committee public hearing 23 September 2026 on regulation of behaviour analysis for people with ASD, João Paulo Costa speaking. Inset interpreters visible; hearing is distinct from plenary. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.alepe.pe.gov.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added. Reviewed Alepe terms address lawful use, intellectual-property responsibilities and personal-data protection; no blanket session-video licence or prior ordinary-link consent condition was identified.",
+        "evidence": [
+          "https://www.alepe.pe.gov.br/",
+          "https://www.alepe.pe.gov.br/termos-de-uso-e-politica-de-privacidade/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-rondonia-assembly-recordings",
+      "name": "Rondônia Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Rondônia",
+      "legislature": "Assembleia Legislativa do Estado de Rondônia",
+      "external_ids": {
+        "wikidata_qid": "Q16494760",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16494760",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q16494760, revision 2475720677; Brazil P17 Q155 and jurisdiction P1001 Q43235 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.al.ro.leg.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Ordinary sittings 13 and 6 October 2026: Cássio Góes speaking at the lectern and chair Alex Redano speaking from the dais. Interpreter visible in the first selected sample; no source-wide interpretation claim. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.al.ro.leg.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.al.ro.leg.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-ceara-assembly-recordings",
+      "name": "Ceará Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Ceará",
+      "legislature": "Assembleia Legislativa do Estado do Ceará",
+      "external_ids": {
+        "wikidata_qid": "Q13163502",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q13163502",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q13163502, revision 2492392060; Brazil P17 Q155 and jurisdiction P1001 Q40123 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.al.ce.gov.br/",
+      "provenance_note": "Own assembly website designates its recording provider. 80th ordinary sitting 20 October 2026: Sérgio Aguiar at the lectern with an inset interpreter; Work/Administration/Public Service committee with table business. Committee title/description says 20 September while displayed upload timing suggests October; exact committee date remains unreconciled. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.al.ce.gov.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.al.ce.gov.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-parana-assembly-recordings",
+      "name": "Paraná Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Paraná",
+      "legislature": "Assembleia Legislativa do Estado do Paraná",
+      "external_ids": {
+        "wikidata_qid": "Q9633230",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9633230",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q9633230, revision 2492396956; Brazil P17 Q155 and jurisdiction P1001 Q15499 reviewed against its own institutional identity and designated recordings. Wikidata retains the older alep.pr.gov.br site; current assembleia.pr.leg.br route is separately corroborated by Paraná Casa Civil current government directory and the assembly FAQ."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.assembleia.pr.leg.br/",
+      "provenance_note": "Own assembly website designates its recording provider. Plenary 20 October 2026: member speaking at lectern with interpreter; health-accountability hearing of that date showing the state health secretariat's maternal mortality 2021–2026 slides. The hearing is separate from a plenary sitting. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.assembleia.pr.leg.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.assembleia.pr.leg.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "brazil-rio-de-janeiro-assembly-recordings",
+      "name": "Rio de Janeiro Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Rio de Janeiro",
+      "legislature": "Assembleia Legislativa do Estado do Rio de Janeiro",
+      "external_ids": {
+        "wikidata_qid": "Q6583209",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q6583209",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact assembly Q6583209, revision 2492403968; Brazil P17 Q155 and jurisdiction P1001 Q41428 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+        }
+      ],
+      "language": "Portuguese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.alerj.rj.gov.br/",
+      "provenance_note": "Own assembly website designates its recording provider. ALERJ Cumprase public hearing on implementing doulas/humanized-childbirth laws (onscreen 25 June 2026), and Sport/Leisure committee public hearing on sea sport and social inclusion (onscreen 18 August 2026). Both show speakers in identified assembly hearings; these are not two validated plenaries. First recording's upload timing differs from its onscreen meeting date. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No sign-language variant established in the selected hearing samples. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.alerj.rj.gov.br/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+        "evidence": [
+          "https://www.alerj.rj.gov.br/"
+        ],
+        "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:06:31.712705+00:00",
+          "report_path": "reports/health/2026-10-23-brazil-nine-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "colombia-caldas-assembly-recordings",
+      "name": "Caldas Departmental Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Caldas",
+      "legislature": "Asamblea Departamental de Caldas",
+      "external_ids": {
+        "wikidata_qid": "Q21708048",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21708048",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact Spanish assembly label and Colombia P17 Q739, revision1373460380; primary assembly identity/provider corroborates Caldas department. Item lacks P1001/P856; do not invent jurisdiction/site claims or substitute a territorial item."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.asambleadecaldas.gov.co/",
+      "provenance_note": "Official assembly website designates its recording provider. Confirmed21October2026 plenary with metropolitan-area director Juan Martín Dussán López speaking at chamber microphone;20October archive contains the Finance Secretariat management/investment presentation at5000seconds. Both selected archives decode in Chromium/WebKit. The20October1200second sample is an institutional video shown during the sitting, not a direct member speech. The separate upload titled22October shows21October on-screen; that exact date is unresolved and is not used as an independently dated third sitting.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Speaker/topic captions are not full subtitles; muted samples do not verify audible Spanish/all audio tracks."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.asambleadecaldas.gov.co/",
+          "method": "GET",
+          "kind": "official_institution_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Official institutional viewing link only; no blanket independent audiovisual reuse permission was established from the reviewed own navigation. Personal-use permission remains pending. No provider embed, rehosting, extracted manifest or IPTV export is added.",
+        "evidence": [
+          "https://www.asambleadecaldas.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated archive; independently confirm reuse, all rooms/live, accessibility and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-23T23:18:17.971333+00:00",
+          "report_path": "reports/health/2026-10-23-caldas-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Validation recorded."
+        }
+      ]
+    },
+    {
+      "id": "canada-new-brunswick-committee-recordings",
+      "name": "New Brunswick Legislative Assembly Committee Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "New Brunswick",
+      "legislature": "Legislative Assembly of New Brunswick",
+      "external_ids": {
+        "wikidata_qid": "Q1516914",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1516914",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution confirmed against P17/P1001/P856 and current primary institution navigation. Legislative term, speaker post and broadcaster items excluded. Claims snapshot: reports/discovery/2026-10-24-institution-claim-review.json; the response did not retain a revision number."
+        }
+      ],
+      "language": "English / French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.legnb.ca/en/webcasts",
+      "provenance_note": "Official assembly webcasts designate Public Accounts recordings for 1 and 2 October 2026. Both decode in Chromium and WebKit. The first 1 October sample shows a listener; a later 3600-second sample confirms a participant speaking at a lit committee microphone. The 2 October sample shows a separate participant speaking. Original, English and French interpretation selectors are present; only default playback was tested, muted. Plenary and current live coverage remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete captions, sign-language variants or audio description established. Selected tests were muted; language metadata is institutional context, not audible certification. Original, English and French interpretation selectors observed; all tracks and interpretation accuracy untested."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.legnb.ca/en/webcasts",
+          "method": "GET",
+          "kind": "official_recording_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The assembly disclaimer permits specified educational, private-study, research and reporting reproduction with accuracy and unofficial-version conditions. Its precise applicability to independent redistribution of the webcast remains unestablished; permission stays pending for that use.",
+        "evidence": [
+          "https://www.legnb.ca/en/webcasts",
+          "https://www.legnb.ca/en/disclaimer"
+        ],
+        "recommendation": "Use official viewing links; independently establish redistribution rights, current live, all rooms and accessibility before expanding playback claims."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official assembly webcasts designate Public Accounts recordings for 1 and 2 October 2026. Both decode in Chromium and WebKit. The first 1 October sample shows a listener; a later 3600-second sample confirms a participant speaking at a lit committee microphone. The 2 October sample shows a separate participant speaking. Original, English and French interpretation selectors are present; only default playback was tested, muted. Plenary and current live coverage remain unverified."
+        }
+      ]
+    },
+    {
+      "id": "finland-aland-lagting-recordings",
+      "name": "Åland Parliament Plenary Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Åland",
+      "legislature": "Ålands lagting",
+      "external_ids": {
+        "wikidata_qid": "Q1091494",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1091494",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution confirmed against P17/P1001/P856 and current primary institution navigation. Legislative term, speaker post and broadcaster items excluded. Claims snapshot: reports/discovery/2026-10-24-institution-claim-review.json; the response did not retain a revision number."
+        }
+      ],
+      "language": "Swedish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.lagtinget.ax/live",
+      "provenance_note": "The parliament live page explicitly designates its YouTube plenary archive. Distinct 28 and 30 September 2026 recordings decode in Chromium and WebKit; selected frames show different speakers at the parliamentary lectern with crest and lit microphone. Parliamentary rules establish legislative and budgetary powers within autonomy and Swedish as the working language. This validates selected archived plenaries, not all sessions, live or committees.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete captions, sign-language variants or audio description established. Selected tests were muted; language metadata is institutional context, not audible certification. "
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.lagtinget.ax/live",
+          "method": "GET",
+          "kind": "official_recording_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed institutional live page designates public viewing; no blanket independent audiovisual reuse grant was established. Personal-use permission remains pending. Link to the official service.",
+        "evidence": [
+          "https://www.lagtinget.ax/live",
+          "https://www.lagtinget.ax/lagtinget/lagtings-och-arbetsordningen/lagtingsordningen"
+        ],
+        "recommendation": "Use official viewing links; independently establish redistribution rights, current live, all rooms and accessibility before expanding playback claims."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: The parliament live page explicitly designates its YouTube plenary archive. Distinct 28 and 30 September 2026 recordings decode in Chromium and WebKit; selected frames show different speakers at the parliamentary lectern with crest and lit microphone. Parliamentary rules establish legislative and budgetary powers within autonomy and Swedish as the working language. This validates selected archived plenaries, not all sessions, live or committees."
+        }
+      ]
+    },
+    {
+      "id": "montenegro-parliament-recordings",
+      "name": "Montenegro Parliament Recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Montenegro",
+      "legislature": "Parliament of Montenegro",
+      "external_ids": {
+        "wikidata_qid": "Q1579497",
+        "ipu_country_code": "ME",
+        "ipu_parliament_code": "ME",
+        "ipu_chamber_code": "ME-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1579497",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Exact legislative institution confirmed against P17/P1001/P856 and current primary institution navigation. Legislative term, speaker post and broadcaster items excluded. Claims snapshot: reports/discovery/2026-10-24-institution-claim-review.json; the response did not retain a revision number."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/ME/ME-LC01/working-methods/structure/",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "IPU primary page names Montenegro Parliament and its unicameral structure; retrieved through web reader after local Python TLS failure. Identity and procedure reference, not a media permission grant."
+        }
+      ],
+      "language": "Montenegrin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.skupstina.me/",
+      "provenance_note": "The parliament website designates its official recording channel, corroborated by the exact institution item and provider ID. Selected 19 October 2026 plenary and 21 October Economy, Finance and Budget Committee recordings decode in Chromium and WebKit; frames show a standing plenary speaker and a committee participant speaking at lit microphones. Dates are the official titles. This is selected archived proceedings validation; current live, every room and audible language variants remain unverified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Muted decoded samples do not certify audible language, interpretation or sound quality."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.skupstina.me/",
+          "method": "GET",
+          "kind": "official_recording_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed institutional navigation designates public viewing; no blanket independent audiovisual reuse grant was established. Personal-use permission remains pending. Link to the official institution and its designated archive.",
+        "evidence": [
+          "https://www.skupstina.me/"
+        ],
+        "recommendation": "Use official viewing links; independently establish redistribution rights, current live, all rooms and accessibility before expanding playback claims."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: The parliament website designates its official recording channel, corroborated by the exact institution item and provider ID. Selected 19 October 2026 plenary and 21 October Economy, Finance and Budget Committee recordings decode in Chromium and WebKit; frames show a standing plenary speaker and a committee participant speaking at lit microphones. Dates are the official titles. This is selected archived proceedings validation; current live, every room and audible language variants remain unverified."
+        }
+      ]
+    },
+    {
+      "id": "germany-hesse-recordings",
+      "name": "Hesse Historical Plenary Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Hesse",
+      "legislature": "Hessischer Landtag",
+      "external_ids": {
+        "wikidata_qid": "Q510511",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q510511",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select current Landtag Q510511; library and dissolution headline items are not institutional identities. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://hessischer-landtag.de/",
+      "provenance_note": "Official institution currently designates the viewing provider. 108th plenary7June2022, Boris Rhein at lectern under TOP1 caption. Visible provider licence row says Creative Commons Attribution; work-specific label, not blanket current-service permission. 107th plenary2June2022, Frank Grobe at lectern under TOP58 caption. Visible provider CCAttribution row; exact linked instrument and scope require review. Current2026 coverage unconfirmed. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://hessischer-landtag.de/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Impressum identifies publisher but supplies no blanket audiovisual grant. Two specific2022 uploads display CreativeCommonsAttribution and link to YouTube’s licence help; this does not license every recording or settle the historical licence version. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://hessischer-landtag.de/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 108th plenary7June2022, Boris Rhein at lectern under TOP1 caption. Visible provider licence row says Creative Commons Attribution; work-specific label, not blanket current-service permission. 107th plenary2June2022, Frank Grobe at lectern under TOP58 caption. Visible provider CCAttribution row; exact linked instrument and scope require review. Current2026 coverage unconfirmed. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "germany-sachsischer-landtag-recordings",
+      "name": "Saxony Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Saxony",
+      "legislature": "Sächsischer Landtag",
+      "external_ids": {
+        "wikidata_qid": "Q884824",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q884824",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select current legislature Q884824. Reject historical Kingdom/GDR chambers and Q1618988, which is the parliamentary building despite an ambiguous search label. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.landtag.sachsen.de/de",
+      "provenance_note": "Official institution currently designates the viewing provider. Land budget2027/2028 debate clip, finance official at plenary lectern; description dates introduction26August2026. A debate segment is not full-session archive validation. 18December2024 minister-president election, member at plenary lectern under official assembly identity. Historical sitting separate from2026 budget segment. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.landtag.sachsen.de/de",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Protected site content; personal downloads/printing only unless specific conditions apply; broader distribution/commercial use requires written permission. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.landtag.sachsen.de/de"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. Land budget2027/2028 debate clip, finance official at plenary lectern; description dates introduction26August2026. A debate segment is not full-session archive validation. 18December2024 minister-president election, member at plenary lectern under official assembly identity. Historical sitting separate from2026 budget segment. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "indonesia-aceh-recordings",
+      "name": "Aceh Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Aceh",
+      "legislature": "Dewan Perwakilan Rakyat Aceh",
+      "external_ids": {
+        "wikidata_qid": "Q12481397",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q12481397",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Indonesian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://dpra.acehprov.go.id/",
+      "provenance_note": "Official institution currently designates the viewing provider. DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption. DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://dpra.acehprov.go.id/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://dpra.acehprov.go.id/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. DPRA2026 plenary: deputy chair reading from dais under Wakil Ketua DPRA placard and official DPR Aceh caption. DPRA2026 plenary, Muhammad Raji Firdana presenting Nasdem final view on draft Aceh qanun accounting for fiscal2025 budget implementation. Fiscal2025 is not the sitting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "japan-hyogo-recordings",
+      "name": "Hyogo Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Hyogo",
+      "legislature": "兵庫県議会",
+      "external_ids": {
+        "wikidata_qid": "Q11393166",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11393166",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://web.pref.hyogo.lg.jp/gikai/index.html",
+      "provenance_note": "Official institution currently designates the viewing provider. September2026 regular-session closing sitting: member at plenary lectern with inset interpreter. Recent upload, exact calendar date not read in selected frame. September2026 regular-session general questions day3, separate member reading at plenary lectern with inset interpreter. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://web.pref.hyogo.lg.jp/gikai/index.html",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://web.pref.hyogo.lg.jp/gikai/index.html"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. September2026 regular-session closing sitting: member at plenary lectern with inset interpreter. Recent upload, exact calendar date not read in selected frame. September2026 regular-session general questions day3, separate member reading at plenary lectern with inset interpreter. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "japan-tokushima-recordings",
+      "name": "Tokushima Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Tokushima",
+      "legislature": "徳島県議会",
+      "external_ids": {
+        "wikidata_qid": "Q11490001",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11490001",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.pref.tokushima.lg.jp/gikai/",
+      "provenance_note": "Official institution currently designates the viewing provider. 7October2026 closing sitting of September regular session, member reading at chamber lectern. 18September2026 general questions, named member Atsushi Fusukawa at chamber lectern, agenda description on external organizations/newhall/schools. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.pref.tokushima.lg.jp/gikai/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.pref.tokushima.lg.jp/gikai/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 7October2026 closing sitting of September regular session, member reading at chamber lectern. 18September2026 general questions, named member Atsushi Fusukawa at chamber lectern, agenda description on external organizations/newhall/schools. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "south-africa-northern-cape-recordings",
+      "name": "Northern Cape Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Northern Cape",
+      "legislature": "Northern Cape Provincial Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q15262569",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15262569",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.ncpleg.gov.za/",
+      "provenance_note": "Official institution currently designates the viewing provider. 4March2026 premier Zamani Saul replying to State of Province debate at chamber lectern, matching named/date/assembly overlay. 3March2026 State of Province debate, crossfade between speaker and chamber with matching assembly/date overlay; selected moment is a camera transition. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.ncpleg.gov.za/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.ncpleg.gov.za/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 4March2026 premier Zamani Saul replying to State of Province debate at chamber lectern, matching named/date/assembly overlay. 3March2026 State of Province debate, crossfade between speaker and chamber with matching assembly/date overlay; selected moment is a camera transition. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "south-africa-western-cape-recordings",
+      "name": "Western Cape Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Western Cape",
+      "legislature": "Western Cape Provincial Parliament",
+      "external_ids": {
+        "wikidata_qid": "Q17081929",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17081929",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.wcpp.gov.za/",
+      "provenance_note": "Official institution currently designates the viewing provider. 10September2026 13:00 Budget committee, socio-economic/infrastructure/basic-services slides with remote participant tiles and parliamentary banner. 10September2026 09:00 Budget committee,2026/27 safety outcome indicators with remote participant tiles. Same date separate morning/afternoon meetings, not two plenary dates. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.wcpp.gov.za/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.wcpp.gov.za/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 10September2026 13:00 Budget committee, socio-economic/infrastructure/basic-services slides with remote participant tiles and parliamentary banner. 10September2026 09:00 Budget committee,2026/27 safety outcome indicators with remote participant tiles. Same date separate morning/afternoon meetings, not two plenary dates. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "spain-parlamento-de-cantabria-recordings",
+      "name": "Cantabria Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Cantabria",
+      "legislature": "Parlamento de Cantabria",
+      "external_ids": {
+        "wikidata_qid": "Q3082759",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3082759",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://parlamento-cantabria.es/",
+      "provenance_note": "Official institution currently designates the viewing provider. Health committee22October2026, man speaking at table microphone, institutional identity and provider description. Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://parlamento-cantabria.es/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Reviewed page is primarily personal-data/cookie/privacy provisions; no independent audiovisual grant established from it. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://parlamento-cantabria.es/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. Health committee22October2026, man speaking at table microphone, institutional identity and provider description. Education/VocationalTraining/Universities committee21October2026, woman reading at table microphone. Separate committee, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "spain-parlamento-de-la-rioja-recordings",
+      "name": "La Rioja, Spain Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "La Rioja, Spain",
+      "legislature": "Parlamento de La Rioja",
+      "external_ids": {
+        "wikidata_qid": "Q4589988",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4589988",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parlamento-larioja.org/",
+      "provenance_note": "Official institution currently designates the viewing provider. 63rd plenary1October2026, Cristina Maiso speaking at chamber lectern under named deputy caption. Spain, distinct from Argentine LaRioja. 62nd plenary17September2026, Gonzalo Capellán speaking at lectern under regional-government-president caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parlamento-larioja.org/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Linked legal page inspection timed out. Retain access/review gap; no inference that terms or a licence are absent. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.parlamento-larioja.org/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 63rd plenary1October2026, Cristina Maiso speaking at chamber lectern under named deputy caption. Spain, distinct from Argentine LaRioja. 62nd plenary17September2026, Gonzalo Capellán speaking at lectern under regional-government-president caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "taiwan-penghu-recordings",
+      "name": "Penghu Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Penghu",
+      "legislature": "澎湖縣議會",
+      "external_ids": {
+        "wikidata_qid": "Q15915051",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15915051",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Mandarin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.phcouncil.gov.tw/",
+      "provenance_note": "Official institution currently designates the viewing provider. 6October2026/ROC115, fifth review committee county-government questions, member and official exchanging at microphones, matching western-clock date. 5October2026/ROC115, third/fourth review committees questions, Xu Guozheng and official exchanging at microphones, matching western-clock date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.phcouncil.gov.tw/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.phcouncil.gov.tw/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 6October2026/ROC115, fifth review committee county-government questions, member and official exchanging at microphones, matching western-clock date. 5October2026/ROC115, third/fourth review committees questions, Xu Guozheng and official exchanging at microphones, matching western-clock date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "taiwan-tainan-recordings",
+      "name": "Tainan Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Tainan",
+      "legislature": "臺南市議會",
+      "external_ids": {
+        "wikidata_qid": "Q7676191",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7676191",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select current council Q7676191, whose 2010 inception and predecessor statements distinguish Q113493742 (1950–2010), the former prefecture council and a meeting hall. Current primary provider belongs to the post-merger council. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Mandarin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.tncc.gov.tw/",
+      "provenance_note": "Official institution currently designates the viewing provider. Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive. Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.tncc.gov.tw/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.tncc.gov.tw/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. Construction committee2October2026, members at table microphones in identified council committee room; provider labels edited audiovisual archive. Finance/Economics committee2October2026, member at lit microphone with council nameplate. Different committee same day, not two plenaries; edited archive label does not grant rebroadcast permission. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "united-states-district-of-columbia-recordings",
+      "name": "District of Columbia Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "District of Columbia",
+      "legislature": "Council of the District of Columbia",
+      "external_ids": {
+        "wikidata_qid": "Q6527389",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q6527389",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select enduring council Q6527389, not numbered legislative periods. Its legislative eligibility is the documented District Home Rule authority, not the word council. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://dccouncil.gov/",
+      "provenance_note": "Official institution currently designates the viewing provider. 14July2026 Committee of Whole, chair Mendelson at lit desk microphone, date/source ticker and visible spoken-caption overlay. Selected point is committee, not independently confirmed subsequent legislative-meeting segment. 30June2026 Committee of Whole, woman speaking at lit desk microphone with dated source ticker and spoken-caption overlay. Caption accuracy/all-source availability untested. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://dccouncil.gov/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://dccouncil.gov/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 14July2026 Committee of Whole, chair Mendelson at lit desk microphone, date/source ticker and visible spoken-caption overlay. Selected point is committee, not independently confirmed subsequent legislative-meeting segment. 30June2026 Committee of Whole, woman speaking at lit desk microphone with dated source ticker and spoken-caption overlay. Caption accuracy/all-source availability untested. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "united-states-kansas-recordings",
+      "name": "Kansas Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Kansas",
+      "legislature": "Kansas Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q3270271",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3270271",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select bicameral institution Q3270271 for the shared service; chamber items are distinct rather than substitute identifiers. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.kslegislature.gov/b2025_26/",
+      "provenance_note": "Official institution currently designates the viewing provider. 21October2026 Joint Administrative Rules/Regulations committee, senators/representatives discussing at table with nameplates. Not plenary. 20October2026 Special Committee on340BProgram, witness reading at committee lectern; separate committee. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.kslegislature.gov/b2025_26/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.kslegislature.gov/b2025_26/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 21October2026 Joint Administrative Rules/Regulations committee, senators/representatives discussing at table with nameplates. Not plenary. 20October2026 Special Committee on340BProgram, witness reading at committee lectern; separate committee. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "united-states-mississippi-recordings",
+      "name": "Mississippi Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Mississippi",
+      "legislature": "Mississippi Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q6879217",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q6879217",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select legislature Q6879217, not a COVID outbreak item. The reviewed generic legal template remains inadequate media permission evidence. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.legislature.ms.gov/",
+      "provenance_note": "Official institution currently designates the viewing provider. 13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide. 1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.legislature.ms.gov/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Terms page renders example-page/LoremIpsum template content. It does not establish substantive audiovisual permission; document as a source-policy gap. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.legislature.ms.gov/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 13October2026 Cybersecurity SelectCommittee room216, GregMallette security-baselines slides, chamber inset and matching date on slide. 1October2026 Joint Redistricting/Reapportionment hearing, committee/witnesses at room microphones under matching dated banner. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "united-states-wyoming-recordings",
+      "name": "Wyoming Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Wyoming",
+      "legislature": "Wyoming Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q3270276",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3270276",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.wyoleg.gov/",
+      "provenance_note": "Official institution currently designates the viewing provider. 21October2026 SchoolFinanceRecalibration AMpart2, witness at table microphone and visible spoken-caption line; caption accuracy/source-wide availability untested. 20October2026 SchoolFacilities PM, witnesses discussing at table microphones with spoken-caption line. Different committee/day, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.wyoleg.gov/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.wyoleg.gov/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 21October2026 SchoolFinanceRecalibration AMpart2, witness at table microphone and visible spoken-caption line; caption accuracy/source-wide availability untested. 20October2026 SchoolFacilities PM, witnesses discussing at table microphones with spoken-caption line. Different committee/day, not plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "uruguay-canelones-recordings",
+      "name": "Canelones Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Canelones",
+      "legislature": "Junta Departamental de Canelones",
+      "external_ids": {
+        "wikidata_qid": "Q65553492",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q65553492",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.juntadecanelones.gub.uy/",
+      "provenance_note": "Official institution currently designates the viewing provider. 20October2026 ordinary sitting/citation20, César Lista reading at lit desk microphone under named placard and department parliament branding. 6October2026 ordinary sitting/citation19, Daniel Paris reading at lit desk microphone with institutional branding. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.juntadecanelones.gub.uy/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.juntadecanelones.gub.uy/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 20October2026 ordinary sitting/citation20, César Lista reading at lit desk microphone under named placard and department parliament branding. 6October2026 ordinary sitting/citation19, Daniel Paris reading at lit desk microphone with institutional branding. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "uruguay-montevideo-recordings",
+      "name": "Montevideo Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Montevideo",
+      "legislature": "Junta Departamental de Montevideo",
+      "external_ids": {
+        "wikidata_qid": "Q5956468",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5956468",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Select legislative board Q5956468 with Montevideo jurisdiction and Uruguay country claims; Palacio Gómez is a building despite sharing an institutional site. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.juntamvd.gub.uy/public/",
+      "provenance_note": "Official institution currently designates the viewing provider. 22October2026 ordinary sitting, legislative secretary reading at lit microphone under JDM logo and desk label. 15October2026 ordinary sitting, member Rodríguez speaking at lit desk microphone with department chamber identity. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.juntamvd.gub.uy/public/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.juntamvd.gub.uy/public/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T03:35:02.349345+00:00",
+          "report_path": "reports/health/2026-10-24-current-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication review: Official institution currently designates the viewing provider. 22October2026 ordinary sitting, legislative secretary reading at lit microphone under JDM logo and desk label. 15October2026 ordinary sitting, member Rodríguez speaking at lit desk microphone with department chamber identity. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "colombia-bolivar-recordings",
+      "name": "Bolívar Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Bolívar",
+      "legislature": "Asamblea Departamental de Bolívar",
+      "external_ids": {
+        "wikidata_qid": "Q51092559",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092559",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Country and exact department jurisdiction claims corroborate the named departmental assembly against its retained primary institutional/provider designation. No P856 was invented where absent; selected content/currentness/rights gates remain separate. Claims and current primary crosscheck: reports/discovery/2026-10-24-colombia-recovered-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.asambleadebolivar.gov.co/",
+      "provenance_note": "Official institution currently designates the viewing provider. Eighth ordinary sitting: sport/recreation programme presentation slides with speaker inset and assembly branding; separate from earlier logo animation. Seventh ordinary sitting: member speaking into desk microphone under assembly branding, after earlier logo animation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.asambleadebolivar.gov.co/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The primary institution designates its public viewing provider. No blanket independent audiovisual reuse grant was established. Platform/operator terms are not a licence for these recordings. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.asambleadebolivar.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. Eighth ordinary sitting: sport/recreation programme presentation slides with speaker inset and assembly branding; separate from earlier logo animation. Seventh ordinary sitting: member speaking into desk microphone under assembly branding, after earlier logo animation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "colombia-cesar-recordings",
+      "name": "Cesar Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Cesar",
+      "legislature": "Asamblea Departamental de Cesar",
+      "external_ids": {
+        "wikidata_qid": "Q21564847",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21564847",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Country and exact department jurisdiction claims corroborate the named departmental assembly against its retained primary institutional/provider designation. No P856 was invented where absent; selected content/currentness/rights gates remain separate. Claims and current primary crosscheck: reports/discovery/2026-10-24-colombia-recovered-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://asambleacesar.gov.co/",
+      "provenance_note": "Official institution currently designates the viewing provider. Eighth ordinary sitting22October2026, Miguel Antonio Hinojosa Barros speaking at lit desk microphone under named deputy placard. 21October2026 committee: members discussing at chamber table microphones, institutional wall identity. Separate from plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://asambleacesar.gov.co/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The primary institution designates its public viewing provider. No blanket independent audiovisual reuse grant was established. Platform/operator terms are not a licence for these recordings. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://asambleacesar.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. Eighth ordinary sitting22October2026, Miguel Antonio Hinojosa Barros speaking at lit desk microphone under named deputy placard. 21October2026 committee: members discussing at chamber table microphones, institutional wall identity. Separate from plenary. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "colombia-guaviare-recordings",
+      "name": "Guaviare Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Guaviare",
+      "legislature": "Asamblea Departamental de Guaviare",
+      "external_ids": {
+        "wikidata_qid": "Q51092595",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092595",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Country and exact department jurisdiction claims corroborate the named departmental assembly against its retained primary institutional/provider designation. No P856 was invented where absent; selected content/currentness/rights gates remain separate. Claims and current primary crosscheck: reports/discovery/2026-10-24-colombia-recovered-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.asamblea-guaviare.gov.co/",
+      "provenance_note": "Official institution currently designates the viewing provider. 22October2026 ordinary sitting, members at chamber desks with microphones, assembly branding and ordinary-session description. 21October2026 installation of third ordinary session period, chair/member at microphones; session opening context retained rather than called a second ordinary debate. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.asamblea-guaviare.gov.co/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The primary institution designates its public viewing provider. No blanket independent audiovisual reuse grant was established. Platform/operator terms are not a licence for these recordings. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.asamblea-guaviare.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. 22October2026 ordinary sitting, members at chamber desks with microphones, assembly branding and ordinary-session description. 21October2026 installation of third ordinary session period, chair/member at microphones; session opening context retained rather than called a second ordinary debate. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "colombia-magdalena-recordings",
+      "name": "Magdalena Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Magdalena",
+      "legislature": "Asamblea Departamental de Magdalena",
+      "external_ids": {
+        "wikidata_qid": "Q51092552",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092552",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Country and exact department jurisdiction claims corroborate the named departmental assembly against its retained primary institutional/provider designation. No P856 was invented where absent; selected content/currentness/rights gates remain separate. Claims and current primary crosscheck: reports/discovery/2026-10-24-colombia-recovered-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.asamblea-magdalena.gov.co/",
+      "provenance_note": "Official institution currently designates the viewing provider. Bolívar Bicentennial commission21October2026, José Madera Lastre speaking at microphone; commission subject, not the separate Department of Bolívar assembly. 20October2026 ordinary sitting, deputy Linda Luz Cabarcas Suárez speaking at microphone with named assembly caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.asamblea-magdalena.gov.co/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The primary institution designates its public viewing provider. No blanket independent audiovisual reuse grant was established. Platform/operator terms are not a licence for these recordings. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.asamblea-magdalena.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. Bolívar Bicentennial commission21October2026, José Madera Lastre speaking at microphone; commission subject, not the separate Department of Bolívar assembly. 20October2026 ordinary sitting, deputy Linda Luz Cabarcas Suárez speaking at microphone with named assembly caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "colombia-quindio-recordings",
+      "name": "Quindío Historical Assembly Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Quindío",
+      "legislature": "Asamblea Departamental de Quindío",
+      "external_ids": {
+        "wikidata_qid": "Q51092551",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092551",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Country and exact department jurisdiction claims corroborate the named departmental assembly against its retained primary institutional/provider designation. No P856 was invented where absent; selected content/currentness/rights gates remain separate. Claims and current primary crosscheck: reports/discovery/2026-10-24-colombia-recovered-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.asamblea-quindio.gov.co/",
+      "provenance_note": "Official institution currently designates the viewing provider. Named deputy Jorge Hernán Gutiérrez Arbeláez speaking at assembly microphone; provider describes legal/contracting presentation, uploaded about four years ago. No current-live inference. 50th ordinary sitting2021, description4November2021: remote deputy tiles and Family Secretariat2022 goals/projects table. These2022 plans do not date the sitting to2022. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.asamblea-quindio.gov.co/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The primary institution designates its public viewing provider. No blanket independent audiovisual reuse grant was established. Platform/operator terms are not a licence for these recordings. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.asamblea-quindio.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. Named deputy Jorge Hernán Gutiérrez Arbeláez speaking at assembly microphone; provider describes legal/contracting presentation, uploaded about four years ago. No current-live inference. 50th ordinary sitting2021, description4November2021: remote deputy tiles and Family Secretariat2022 goals/projects table. These2022 plans do not date the sitting to2022. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "colombia-tolima-recordings",
+      "name": "Tolima Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Tolima",
+      "legislature": "Asamblea Departamental de Tolima",
+      "external_ids": {
+        "wikidata_qid": "Q51092572",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51092572",
+          "checked_on": "2026-10-23",
+          "confidence": "high",
+          "notes": "Country and exact department jurisdiction claims corroborate the named departmental assembly against its retained primary institutional/provider designation. No P856 was invented where absent; selected content/currentness/rights gates remain separate. Claims and current primary crosscheck: reports/discovery/2026-10-24-colombia-recovered-identity-dispositions.json. No revision number was retained in this response."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://asambleatolima.gov.co/",
+      "provenance_note": "Official institution currently designates the viewing provider. Ordinary sitting titled22October2026, presenter at lectern with cattle slaughter-tax slides and assembly/ordinary-session caption. Ordinary sitting titled21October2026, presenter at lectern with budget-law slides and assembly/ordinary-session caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://asambleatolima.gov.co/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The primary institution designates its public viewing provider. No blanket independent audiovisual reuse grant was established. Platform/operator terms are not a licence for these recordings. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://asambleatolima.gov.co/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. Ordinary sitting titled22October2026, presenter at lectern with cattle slaughter-tax slides and assembly/ordinary-session caption. Ordinary sitting titled21October2026, presenter at lectern with budget-law slides and assembly/ordinary-session caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "spain-cortes-de-castilla-y-leon-recordings",
+      "name": "Castile and León Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Castile and León",
+      "legislature": "Cortes de Castilla y León",
+      "external_ids": {
+        "wikidata_qid": "Q3755695",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3755695",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json.  Current retained item revision 2531969118; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.ccyl.es/",
+      "provenance_note": "Official institution currently designates the viewing provider. PL11M, woman speaking at chamber lectern with assembly identity. Number is retained as session code, not converted into calendar date. PL10T, chair reading from dais microphone with assembly identity. Calendar date not shown in selected frame. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.ccyl.es/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.ccyl.es/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. PL11M, woman speaking at chamber lectern with assembly identity. Number is retained as session code, not converted into calendar date. PL10T, chair reading from dais microphone with assembly identity. Calendar date not shown in selected frame. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "spain-parlamento-de-canarias-recordings",
+      "name": "Canary Islands Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Canary Islands",
+      "legislature": "Parlamento de Canarias",
+      "external_ids": {
+        "wikidata_qid": "Q4843653",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4843653",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Institution-specific label, country/jurisdiction and available site claims compared with the retained primary institution and its designated viewing service. Missing Wikidata properties were not invented. Claims and current primary crosscheck: reports/discovery/2026-10-24-deferred-identity-dispositions.json.  Current retained item revision 2490725915; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+        }
+      ],
+      "language": "Spanish",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parcan.es/",
+      "provenance_note": "Official institution currently designates the viewing provider. DS137, woman speaking at parliament lectern; exact calendar date absent from captured frame. DS136 afternoon, separate split-screen member/chair exchange at parliament lectern. Session code retained without inventing date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parcan.es/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "General reproduction permission with source attribution unless otherwise indicated; specifically restricted textual/multimedia material may require prior authorization overriding the general notice. Recording-specific applicability remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.parcan.es/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. DS137, woman speaking at parliament lectern; exact calendar date absent from captured frame. DS136 afternoon, separate split-screen member/chair exchange at parliament lectern. Session code retained without inventing date. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "us-virgin-islands-legislature-recordings",
+      "name": "United States Virgin Islands Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "United States Virgin Islands",
+      "legislature": "Legislature of the Virgin Islands",
+      "external_ids": {
+        "wikidata_qid": "Q6518465",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q6518465",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact legislature item Q6518465 has jurisdiction Q11703 (US Virgin Islands) and an institutional website claim; P17 is absent and was not invented. Primary institution/provider and territorial authority review corroborate the relationship. Current revision 2433306284; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://legvi.org/",
+      "provenance_note": "Official institution currently designates the viewing provider. 22October2026 Rules/Judiciary, member at microphone under Bill36-0277 comprehensive probate-code caption and LegITTV logo; selected point is bill discussion, not nominee block from beginning of description. 20October2026 Budget/Appropriations/Finance, senator MarvinA.Blyden at handheld microphone under named vice-chair/36thLegislature caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://legvi.org/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://legvi.org/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. 22October2026 Rules/Judiciary, member at microphone under Bill36-0277 comprehensive probate-code caption and LegITTV logo; selected point is bill discussion, not nominee block from beginning of description. 20October2026 Budget/Appropriations/Finance, senator MarvinA.Blyden at handheld microphone under named vice-chair/36thLegislature caption. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "serbia-national-assembly-recordings",
+      "name": "Serbia National Assembly Recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Serbia",
+      "legislature": "National Assembly of the Republic of Serbia",
+      "external_ids": {
+        "wikidata_qid": "Q920222",
+        "ipu_country_code": "RS",
+        "ipu_parliament_code": "RS",
+        "ipu_chamber_code": "RS-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q920222",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact current institution Q920222, Serbia country/jurisdiction Q403 and own parliamentary website claims corroborated against the primary site; revision 2551326415."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/RS/RS-LC01/",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Primary IPU page names Serbia National Assembly and confirms its unicameral parliamentary structure. Identity/authority evidence only, not a media reuse grant."
+        }
+      ],
+      "language": "Serbian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+      "provenance_note": "The official National Assembly archive explicitly designates Videonet, whose plenary index links the selected MP4 archives. Two samples decode in Chromium and WebKit: the 31 August 2026 voting-day recording shows the presiding officer at the branded parliamentary dais with a lit microphone; a part of the 28 August recording shows Marina Mijatović speaking at a lit seat microphone with her source caption. Chairing context is not described as a separately identified speech. These are selected archived proceedings, not a validated current-live channel or complete sitting inventory.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language or audio-description coverage established. Named speaker captions identify the speaker; they are not full subtitles. Muted samples do not certify audible Serbian, interpretation or sound quality."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+          "method": "GET",
+          "kind": "official_recording_and_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The reviewed primary parliamentary/provider navigation establishes public viewing, not a blanket independent audiovisual reuse grant. Personal-use permission remains pending; link to the official archive rather than rehosting, extracting a live channel or exporting these large event recordings to IPTV.",
+        "evidence": [
+          "https://www.parlament.gov.rs/преноси/архива.2082.html",
+          "https://www.parlament.gov.rs/преноси.2091.html"
+        ],
+        "recommendation": "Use the official archive and source-designated files; independently establish reuse, live/all-room coverage and media accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T04:48:45.282025+00:00",
+          "report_path": "reports/health/2026-10-24-serbia-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "The official National Assembly archive explicitly designates Videonet, whose plenary index links the selected MP4 archives. Two samples decode in Chromium and WebKit: the 31 August 2026 voting-day recording shows the presiding officer at the branded parliamentary dais with a lit microphone; a part of the 28 August recording shows Marina Mijatović speaking at a lit seat microphone with her source caption. Chairing context is not described as a separately identified speech. These are selected archived proceedings, not a validated current-live channel or complete sitting inventory."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-glarus-recordings",
+      "name": "Glarus Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Glarus",
+      "legislature": "Landrat des Kantons Glarus",
+      "external_ids": {
+        "wikidata_qid": "Q1147334",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1147334",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact named legislature, Switzerland P17Q39 and matching canton jurisdiction claims corroborated with the current primary institutional page and explicitly designated archive. Entity revision 2393769829. Claims and current primary crosscheck: reports/discovery/2026-10-24-complete-candidate-claim-fetch.json.  Current retained item revision 2393769829; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://gl.recapp.ch/",
+      "provenance_note": "Official institution currently designates the viewing provider. 21 October 2026 parliamentary voting/chairing transition, with health-law agenda selected; initial vote display is not attributed to a particular bill. 26 August 2026 chair handling the bird-protection motion2025-73, a docket number rather than the meeting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://gl.recapp.ch/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public official-institution designation establishes viewing, not a blanket independent audiovisual reuse grant. The Glarus provider privacy link returned404 and does not establish video permissions; Jura supplied speech text is not a media licence. Personal-use permission remains pending; no rehosting, provider embed or IPTV export. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.gl.ch/parlament/landrat.html/250/l/de",
+          "https://gl.recapp.ch/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. 21 October 2026 parliamentary voting/chairing transition, with health-law agenda selected; initial vote display is not attributed to a particular bill. 26 August 2026 chair handling the bird-protection motion2025-73, a docket number rather than the meeting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-jura-recordings",
+      "name": "Jura Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Jura",
+      "legislature": "Parlement de la République et Canton du Jura",
+      "external_ids": {
+        "wikidata_qid": "Q2391710",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2391710",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact named legislature, Switzerland P17Q39 and matching canton jurisdiction claims corroborated with the current primary institutional page and explicitly designated archive. Entity revision 2384538399. Claims and current primary crosscheck: reports/discovery/2026-10-24-complete-candidate-claim-fetch.json.  Current retained item revision 2384538399; reports/discovery/2026-10-24-complete-candidate-claim-fetch.json."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://ju.recapp.ch/",
+      "provenance_note": "Official institution currently designates the viewing provider. 2 September 2026 chair introducing first-reading conciliation legislation, under the Jura parliamentary identity. 1 July 2026 chair handling third-reading political-rights and party-finance transparency legislation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "No complete caption, sign-language variant or audio-description coverage established. Some samples show interpretation/captions, as individually recorded; coverage and accuracy are not service-wide. Muted samples do not certify audible language or sound quality. Language metadata is contextual, not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://ju.recapp.ch/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public official-institution designation establishes viewing, not a blanket independent audiovisual reuse grant. The Glarus provider privacy link returned404 and does not establish video permissions; Jura supplied speech text is not a media licence. Personal-use permission remains pending; no rehosting, provider embed or IPTV export. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+        "evidence": [
+          "https://www.jura.ch/PLT/",
+          "https://ju.recapp.ch/"
+        ],
+        "recommendation": "Use the official institution and designated service. Independently establish media redistribution rights, current live, all rooms and audible tracks."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official institution currently designates the viewing provider. 2 September 2026 chair introducing first-reading conciliation legislation, under the Jura parliamentary identity. 1 July 2026 chair handling third-reading political-rights and party-finance transparency legislation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-thurgau-recordings",
+      "name": "Thurgau Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Thurgau",
+      "legislature": "Grosser Rat des Kantons Thurgau",
+      "external_ids": {
+        "wikidata_qid": "Q1547525",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1547525",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific named parliament, Switzerland Q39 and matching canton jurisdiction claims reviewed against the current primary parliamentary name/designation. Wikidata revision 2526179157; claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://grvisio.tg.ch/",
+      "provenance_note": "Official parliamentary archive, with selected recorded proceedings confirmed. 21 October2026: president Felix Meier speaking at the lit chair microphone while introducing initiative24/PI4/226 about democratic participation in authority referendums. 28 September2026: president Felix Meier handling motion24/MO29/200 about barbed wire and flexible pasture nets. The2025 dates in motion wording are not sitting dates. The archive labels its21October opening incomplete because of technical problems; selected later business plays, but this does not resolve the missing opening.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted video checks do not certify audible quality, all spoken languages, captions, signing or audio description. Unknown fields remain unknown; source-specific archive limitations are retained in provenance."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://grvisio.tg.ch/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Primary Thurgau usage notice reserves protected-content reproduction absent prior written consent or statutory exceptions; downloading does not transfer rights. Public archive designation is not an independent audiovisual reuse grant. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+        "evidence": [
+          "https://parlament.tg.ch/",
+          "https://grvisio.tg.ch/",
+          "https://parlament.tg.ch/de/datenschutz/"
+        ],
+        "recommendation": "Use the source-designated viewing service; independently confirm reuse, current live, full room inventory, audible tracks and accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official parliamentary archive, with selected recorded proceedings confirmed. 21 October2026: president Felix Meier speaking at the lit chair microphone while introducing initiative24/PI4/226 about democratic participation in authority referendums. 28 September2026: president Felix Meier handling motion24/MO29/200 about barbed wire and flexible pasture nets. The2025 dates in motion wording are not sitting dates. The archive labels its21October opening incomplete because of technical problems; selected later business plays, but this does not resolve the missing opening."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-zurich-recordings",
+      "name": "Zurich Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Zurich",
+      "legislature": "Kantonsrat des Kantons Zürich",
+      "external_ids": {
+        "wikidata_qid": "Q2110002",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2110002",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific named parliament, Switzerland Q39 and matching canton jurisdiction claims reviewed against the current primary parliamentary name/designation. Wikidata revision 2549971659; claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://zh.recapp.ch/shareparl/",
+      "provenance_note": "Official parliamentary archive, with selected recorded proceedings confirmed. 19 October2026 sitting173: chair Romaine Rogenmoser handling proceedings with youth-protection film/media repeal item6047 selected. Initial frames contain a crossfade and prior-item graphics; a later Chromium sample in the same speaker segment clearly shows the chair. 28 September2026 afternoon sitting172: chair Romaine Rogenmoser reading/speaking at the lit microphone on the accumulating shore-path fund item61b/2021. Do not attribute the initial October crossfade or prior graphics to an exact new-item vote. Later settled Chromium playback confirmed the chair; the later WebKit repeat did not advance, while the original selected-segment test did.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted video checks do not certify audible quality, all spoken languages, captions, signing or audio description. Unknown fields remain unknown; source-specific archive limitations are retained in provenance."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://zh.recapp.ch/shareparl/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The current own parliamentary website explicitly designates this Recapp archive. Source-wide audiovisual redistribution permission has not been established; the provider legal/privacy link is not treated as a media licence. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+        "evidence": [
+          "https://www.kantonsrat.zh.ch/",
+          "https://zh.recapp.ch/shareparl/"
+        ],
+        "recommendation": "Use the source-designated viewing service; independently confirm reuse, current live, full room inventory, audible tracks and accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official parliamentary archive, with selected recorded proceedings confirmed. 19 October2026 sitting173: chair Romaine Rogenmoser handling proceedings with youth-protection film/media repeal item6047 selected. Initial frames contain a crossfade and prior-item graphics; a later Chromium sample in the same speaker segment clearly shows the chair. 28 September2026 afternoon sitting172: chair Romaine Rogenmoser reading/speaking at the lit microphone on the accumulating shore-path fund item61b/2021. Do not attribute the initial October crossfade or prior graphics to an exact new-item vote. Later settled Chromium playback confirmed the chair; the later WebKit repeat did not advance, while the original selected-segment test did."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-vaud-waadt-recordings",
+      "name": "Vaud Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Vaud",
+      "legislature": "Grand Conseil du canton de Vaud",
+      "external_ids": {
+        "wikidata_qid": "Q2131740",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2131740",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific named parliament, Switzerland Q39 and matching canton jurisdiction claims reviewed against the current primary parliamentary name/designation. Wikidata revision 2396308876; claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.sonomix.ch/live/gcvd/",
+      "provenance_note": "Official parliamentary archive, with selected recorded proceedings confirmed. 6 October2026 morning: a member is reading/speaking at a lit seat microphone, with source Point6 overlay and parliamentary chapter navigation. 6 October2026 afternoon: a woman is speaking/reading at a lit microphone during the question-hour portion, with source Point3 overlay. No speaker identity or specific oral answer is independently inferred. These are separate morning and afternoon recordings of the same date, not two independently dated sittings. Source footer reserves rights; no current-live observation or source-wide caption guarantee is implied.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted video checks do not certify audible quality, all spoken languages, captions, signing or audio description. Unknown fields remain unknown; source-specific archive limitations are retained in provenance."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.sonomix.ch/live/gcvd/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The own vd.ch Grand Conseil page explicitly designates the Sonomix viewing service. Its footer reserves rights. No blanket audiovisual copying, independent embed or rebroadcast permission is inferred from public viewing. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+        "evidence": [
+          "https://www.vd.ch/gc",
+          "https://www.sonomix.ch/live/gcvd/"
+        ],
+        "recommendation": "Use the source-designated viewing service; independently confirm reuse, current live, full room inventory, audible tracks and accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T05:40:48.933466+00:00",
+          "report_path": "reports/health/2026-10-24-additional-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped selected-recording publication review: Official parliamentary archive, with selected recorded proceedings confirmed. 6 October2026 morning: a member is reading/speaking at a lit seat microphone, with source Point6 overlay and parliamentary chapter navigation. 6 October2026 afternoon: a woman is speaking/reading at a lit microphone during the question-hour portion, with source Point3 overlay. No speaker identity or specific oral answer is independently inferred. These are separate morning and afternoon recordings of the same date, not two independently dated sittings. Source footer reserves rights; no current-live observation or source-wide caption guarantee is implied."
+        }
+      ]
+    },
+    {
+      "id": "germany-thuringer-landtag-recordings",
+      "name": "Thuringia Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Thuringia",
+      "legislature": "Thüringer Landtag",
+      "external_ids": {
+        "wikidata_qid": "Q896075",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q896075",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Wikidata revision 2544449961; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.thueringer-landtag.de/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 58th sitting continuation9October2026 at14:09, member at branded lectern. Separate recording part of same sitting as other sample. 58th sitting9October2026 at09:34, woman at branded lectern; same sitting/date, not a second independent plenary date. Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.thueringer-landtag.de/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Social/private sharing allowed within conditions; broader use requires written permission unless specific conditions apply. Printed official papers/protocol exceptions do not automatically license video. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://www.thueringer-landtag.de/",
+          "https://www.youtube.com/channel/UCCAO9JctC_kraxU_vFb-Ibw"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 58th sitting continuation9October2026 at14:09, member at branded lectern. Separate recording part of same sitting as other sample. 58th sitting9October2026 at09:34, woman at branded lectern; same sitting/date, not a second independent plenary date. Current LandtagQ896075 with Germany/Thuringia/site claims; historical chambers excluded. Both selected videos are morning/afternoon parts of sitting58on9October2026, not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "japan-fukui-recordings",
+      "name": "Fukui Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Fukui",
+      "legislature": "福井県議会",
+      "external_ids": {
+        "wikidata_qid": "Q11591505",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11591505",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific Fukui Prefectural AssemblyQ11591505 and Japan/prefecture/site correspondence reviewed. Two budget/accounts questioner segments are from one2October2026committee, not two dates. Wikidata revision 2491304544; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.pref.fukui.lg.jp/gikai/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 Budget/Accounts special committee, Tomonobu Shimizu speaking at standing desk microphone. September regular-session period, October actual meeting date. Same2October2026 Budget/Accounts committee, Daisuke Watanabe speaking at desk microphone. Separate member segment, not a second sitting date. Specific Fukui Prefectural AssemblyQ11591505 and Japan/prefecture/site correspondence reviewed. Two budget/accounts questioner segments are from one2October2026committee, not two dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.pref.fukui.lg.jp/gikai/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://www.pref.fukui.lg.jp/gikai/",
+          "https://www.youtube.com/channel/UCjfd0zvLfSwBfzGsff8NOLg"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 Budget/Accounts special committee, Tomonobu Shimizu speaking at standing desk microphone. September regular-session period, October actual meeting date. Same2October2026 Budget/Accounts committee, Daisuke Watanabe speaking at desk microphone. Separate member segment, not a second sitting date. Specific Fukui Prefectural AssemblyQ11591505 and Japan/prefecture/site correspondence reviewed. Two budget/accounts questioner segments are from one2October2026committee, not two dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "japan-fukushima-recordings",
+      "name": "Fukushima Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Fukushima",
+      "legislature": "福島県議会",
+      "external_ids": {
+        "wikidata_qid": "Q11593337",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11593337",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Wikidata revision 2491304612; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.pref.fukushima.lg.jp/site/gikai/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 General Review committee, Yuichi Mayama question segment with chamber officials and inset interpreter. Standing member approaching microphone at selected moment. Same2October2026 committee, Saori Ohashi question segment: General Affairs director answering at lectern, named caption and inset interpreter. Separate question segment of same meeting, not another date. Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.pref.fukushima.lg.jp/site/gikai/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Assembly website information is copyrighted; private copying/statutory quotation exceptions do not give general permission to reproduce/modify material. No blanket session-video grant. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://www.pref.fukushima.lg.jp/site/gikai/",
+          "https://youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg?si=-Oad0gcJL17JeEYh",
+          "https://www.youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 General Review committee, Yuichi Mayama question segment with chamber officials and inset interpreter. Standing member approaching microphone at selected moment. Same2October2026 committee, Saori Ohashi question segment: General Affairs director answering at lectern, named caption and inset interpreter. Separate question segment of same meeting, not another date. Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "japan-iwate-recordings",
+      "name": "Iwate Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Iwate",
+      "legislature": "岩手県議会",
+      "external_ids": {
+        "wikidata_qid": "Q11474798",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11474798",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Wikidata revision 2491304466; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Japanese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.pref.iwate.jp/gikai/index.html",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 Saito Shin general-question segment, prefectural Health/Welfare department official answering from chamber desk; September regular-session period. Same5October2026 sitting, Hagino Yukihiro at plenary lectern with named party/member caption. Separate member segment, not another sitting date. Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.pref.iwate.jp/gikai/index.html",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://www.pref.iwate.jp/gikai/index.html",
+          "https://www.youtube.com/channel/UC7llJipxaCPCBoAMz055g5Q"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 Saito Shin general-question segment, prefectural Health/Welfare department official answering from chamber desk; September regular-session period. Same5October2026 sitting, Hagino Yukihiro at plenary lectern with named party/member caption. Separate member segment, not another sitting date. Specific Iwate Prefectural AssemblyQ11474798 and Japan/prefecture/site correspondence reviewed. Two general-question segments are from one5October2026sitting; source September-session wording is not the actual October meeting date. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "taiwan-hsinchu-city-recordings",
+      "name": "Hsinchu City Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Hsinchu City",
+      "legislature": "新竹市議會",
+      "external_ids": {
+        "wikidata_qid": "Q11084017",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q11084017",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Wikidata revision 2434122606; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Mandarin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 (ROC115.10.05), regular-session general questions: members and executive official exchange over community mental-health slide; west-calendar clock matchesROC date. Same5October2026 sitting, different member segment on police/fire health-check support with questioner and official in split screen. Separate segment, not another date. Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+          "https://www.youtube.com/channel/UCnit-yB80zHt800dSTr42Vw/live"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 5October2026 (ROC115.10.05), regular-session general questions: members and executive official exchange over community mental-health slide; west-calendar clock matchesROC date. Same5October2026 sitting, different member segment on police/fire health-check support with questioner and official in split screen. Separate segment, not another date. Specific Hsinchu City CouncilQ11084017 is distinct from Hsinchu County. Both general-question recordings are separate member segments from5October2026(ROC115.10.05), not independent dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "indonesia-kalimantan-tengah-recordings",
+      "name": "Central Kalimantan Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Central Kalimantan",
+      "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Tengah",
+      "external_ids": {
+        "wikidata_qid": "Q25461958",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q25461958",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Wikidata revision 2482943619; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Indonesian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://dprd.kalteng.go.id/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. Ninth plenary of first2026 sitting period, member reading at DPRD Kalteng lectern under Rapat Paripurna caption; recent upload, exact date not independently read from frame. Eighth plenary of first2026 sitting period, separate member reading at same branded assembly lectern; exact meeting date not independently established. Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://dprd.kalteng.go.id/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://dprd.kalteng.go.id/",
+          "https://www.youtube.com/@dprdkalteng",
+          "https://www.youtube.com/@DPRDKALTENG"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. Ninth plenary of first2026 sitting period, member reading at DPRD Kalteng lectern under Rapat Paripurna caption; recent upload, exact date not independently read from frame. Eighth plenary of first2026 sitting period, separate member reading at same branded assembly lectern; exact meeting date not independently established. Provincial assemblyQ25461958 has Indonesia P17Q252 and Central Kalimantan P1001Q3891. Current own institutional/provider references match. Ninth/eighth first2026period plenary recordings are substantive, but exact calendar dates were not independently read. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "indonesia-jawa-tengah-recordings",
+      "name": "Central Java Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Central Java",
+      "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Tengah",
+      "external_ids": {
+        "wikidata_qid": "Q25461159",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q25461159",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Wikidata revision 2507008731; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Indonesian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://dprd.jatengprov.go.id/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. APBD2026 amendment plenary, budget-body report conclusions slides with speaker inset; institutional BerlianTV DPRD Jateng branding. Governor explaining amended2026 budget, fiscal structure slides and speaker inset under assembly provider branding. Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://dprd.jatengprov.go.id/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://dprd.jatengprov.go.id/",
+          "https://www.youtube.com/@BerlianTVDPRDJateng",
+          "https://www.youtube.com/watch?v=KVKCN4lwAj8&pp=0gcJCT8LAYcqIYzv"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. APBD2026 amendment plenary, budget-body report conclusions slides with speaker inset; institutional BerlianTV DPRD Jateng branding. Governor explaining amended2026 budget, fiscal structure slides and speaker inset under assembly provider branding. Provincial assemblyQ25461159 has Indonesia P17Q252 and Central Java P1001Q3557. Primary DPRD Jateng explicitly designates BerlianTV. Selected2026amended-budget report and governor explanation are not represented as independently dated sittings. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "indonesia-di-yogyakarta-recordings",
+      "name": "Yogyakarta Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Yogyakarta",
+      "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi DI Yogyakarta",
+      "external_ids": {
+        "wikidata_qid": "Q25463081",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q25463081",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Wikidata revision 2507461254; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "Indonesian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://jdih-dprd-diy.jogjaprov.go.id/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 30September2026 plenary, member reading at assembly lectern under matching dated ticker. 23September2026 plenary, separate speaker reading at branded assembly lectern under matching dated ticker. Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://jdih-dprd-diy.jogjaprov.go.id/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://jdih-dprd-diy.jogjaprov.go.id/",
+          "https://youtube.com/@dprddiy?si=BNl6746wyyjigoJY"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 30September2026 plenary, member reading at assembly lectern under matching dated ticker. 23September2026 plenary, separate speaker reading at branded assembly lectern under matching dated ticker. Q25463081 is the Special Region provincial legislature, with Indonesia P17Q252 and province jurisdictionQ3741. Reject Q25461896, the Yogyakarta CITY body. The own provincial DPRD legal-information site designates the reviewed provider;23and30September2026plenary samples retain separate dates. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "south-africa-free-state-recordings",
+      "name": "Free State Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Free State",
+      "legislature": "Free State Provincial Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q17053115",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17053115",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Wikidata revision 2472350002; primary/provider and selected media findings are independently retained in the publication report."
+        }
+      ],
+      "language": "English",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://fsl.gov.za/",
+      "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 3September2026 Public Accounts/Finance and Education/Health/SocialServices joint committees, WomenDevelopment programme targets/performance slide under assembly dated committee banner. 1September2026 Public Accounts/Finance and CooperativeGovernance/Premier joint committees,2026/27 performance targets slide under dated assembly banner. Not two plenaries. Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://fsl.gov.za/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://fsl.gov.za/",
+          "https://www.youtube.com/@freestatelegislature"
+        ],
+        "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Official institution/provider designation and retained selected-recording validation from23October2026. 3September2026 Public Accounts/Finance and Education/Health/SocialServices joint committees, WomenDevelopment programme targets/performance slide under assembly dated committee banner. 1September2026 Public Accounts/Finance and CooperativeGovernance/Premier joint committees,2026/27 performance targets slide under dated assembly banner. Not two plenaries. Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage."
+        }
+      ]
+    },
+    {
+      "id": "taiwan-lienchiang-recordings",
+      "name": "Lienchiang Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Lienchiang",
+      "legislature": "連江縣議會",
+      "external_ids": {
+        "wikidata_qid": "Q15919452",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15919452",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific Lienchiang County CouncilQ15919452, TaiwanQ865 and Lienchiang jurisdiction/site claims reviewed against the primary council and provider. Not the mainland Lianjiang legislature. Entity revision 2407548504."
+        }
+      ],
+      "language": "Mandarin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.mtcc.gov.tw/",
+      "provenance_note": "Own Lienchiang County Council site explicitly designates the viewing provider. 22October2026 (ROC115), afternoon county-government questions: member Zhou Ruiguo and official at microphones under full council banner; recording part2. Same22October2026 morning questions, female member questioning official at council microphones; separate part of same dated sitting, not second meeting date. Selected recordings decoded inChromium/WebKit with retained individual visual findings from23October. These are morning/afternoon parts of22October2026, not independent dates or full live/room coverage.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected muted recordings do not certify audible quality, all languages, complete captions, signing or audio description. Source language metadata is contextual."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.mtcc.gov.tw/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Personal-use permission pending; official viewing link only, no extracted stream, independent embed, IPTV export or implemented XMLTV parser.",
+        "evidence": [
+          "https://www.mtcc.gov.tw/",
+          "https://www.youtube.com/channel/UCLFeXjIoUzY-FiVlWvL6b8Q"
+        ],
+        "recommendation": "Use the official council and designated viewing service; independently verify current live, full rooms, audible tracks, source-wide accessibility and reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-24T06:14:30.216701+00:00",
+          "report_path": "reports/health/2026-10-24-reconciled-archives-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Own Lienchiang County Council site explicitly designates the viewing provider. 22October2026 (ROC115), afternoon county-government questions: member Zhou Ruiguo and official at microphones under full council banner; recording part2. Same22October2026 morning questions, female member questioning official at council microphones; separate part of same dated sitting, not second meeting date. Selected recordings decoded inChromium/WebKit with retained individual visual findings from23October. These are morning/afternoon parts of22October2026, not independent dates or full live/room coverage."
         }
       ]
     }

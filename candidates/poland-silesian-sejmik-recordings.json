@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The Silesian regional-government bulletin publishes dated ordinary Sejmik session recordings. Sessions VII/30/2026 (21 September) and VII/31/2026 (19 October) were visually reviewed beyond the opening at 1200 seconds in WebKit, with advancing decoded 1920x1080 video, speakers at the chamber lectern and officials on the dais. Normal visible cookie acknowledgement and player controls were used. The official page uses native HLS: Chromium did not decode either selected recording in these checks, while WebKit played both after a normal resume following seek. Use the official viewing page; browser compatibility is source-dependent. Current live, every committee and all audio/language tracks remain unverified.",
+    "Official bulletin archive link only. Published default reuse conditions call for source/time attribution and disclosure of processing, preserve the public-affairs purpose of disclosed personal data and reserve source-specific conditions for protected works. No prior-linking consent requirement was identified in the reviewed page; this does not establish an independent audiovisual licence. Retain personal-use permission pending. No embedded player or HLS/IPTV export is added; observed manifests are dated video on demand, not stable live services.",
+    "Evidence: reports/discovery/2026-10-23-silesia-publication-review.json"
+  ],
+  "channel": {
+    "id": "poland-silesian-sejmik-recordings",
+    "name": "Silesian Regional Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Silesian Voivodeship",
+    "legislature": "Sejmik Województwa Śląskiego",
+    "external_ids": {
+      "wikidata_qid": "Q7514834",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q7514834",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact assembly Q7514834 revision 2555604304 has legislative/sejmik types, Poland P17 Q36, Silesian jurisdiction P1001 Q54181 and P856 sejmik.slaskie.pl. The public bulletin provides dated session identity separately."
+      }
+    ],
+    "language": "Polish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+    "provenance_note": "The Silesian regional-government bulletin publishes dated ordinary Sejmik session recordings. Sessions VII/30/2026 (21 September) and VII/31/2026 (19 October) were visually reviewed beyond the opening at 1200 seconds in WebKit, with advancing decoded 1920x1080 video, speakers at the chamber lectern and officials on the dais. Normal visible cookie acknowledgement and player controls were used. The official page uses native HLS: Chromium did not decode either selected recording in these checks, while WebKit played both after a normal resume following seek. Use the official viewing page; browser compatibility is source-dependent. Current live, every committee and all audio/language tracks remain unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Polish institution/session metadata; muted playback does not verify all spoken-language tracks. The October page says synchronized captions will be added after preparation; this notice is not confirmation that captions are already complete. Sign language and audio description remain unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official bulletin archive link only. Published default reuse conditions call for source/time attribution and disclosure of processing, preserve the public-affairs purpose of disclosed personal data and reserve source-specific conditions for protected works. No prior-linking consent requirement was identified in the reviewed page; this does not establish an independent audiovisual licence. Retain personal-use permission pending. No embedded player or HLS/IPTV export is added; observed manifests are dated video on demand, not stable live services.",
+      "evidence": [
+        "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+        "https://bip.slaskie.pl/katalog-uslug/ponowne-wykorzystywanie-informacji-sektora-publicznego.html"
+      ],
+      "recommendation": "Open the official archive in a browser supporting its native HLS player; broader playback compatibility, live/committee coverage and reuse remain unresolved."
+    }
+  }
+}

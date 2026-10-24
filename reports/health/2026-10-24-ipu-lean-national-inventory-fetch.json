@@ -1,0 +1,16 @@
+{
+  "url": "https://data.ipu.org/wp-json/v1/data-explorer?lang=en&current_page=1&per_page=500&fields=country_code%2Ccountry_name%2Cchamber_code%2Cchamber_name%2Cparliament_name%2Cstructure_of_parliament%2Cis_suspended_chamber%2Cis_suspended_parliament%2Cparliamentary_website_url&region=&subregion=&country=&country_grouping=&structure=&date=2026-10-24&keyword=&sort=country_name&language=&show_notes=true&show_sources=true",
+  "checked_at_utc": "2026-10-24T15:14:05.152576+00:00",
+  "method": "Public IPU data-explorer endpoint and parameter names published in page configuration; bounded field selection, single request, no retries. API full response previously exceeded local resource limit, not an access denial.",
+  "http_status": 200,
+  "bytes": 315073,
+  "sha256": "9c26861deeb606912d7cfbf3fa020f7efc0fd259e6da407e666043fc9d9c22f9",
+  "outcome": "fetched_requires_individual_reconciliation",
+  "response_keys": [
+    "table_array",
+    "page",
+    "per_page",
+    "total_results",
+    "api_link"
+  ]
+}

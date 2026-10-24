@@ -1,0 +1,550 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Inventory/legislative-authority resolution of four exact19-question candidate IDs under first-level and autonomous special-status scope. No metadata, streams, EPG or rights pass.",
+  "source_register": "reports/discovery/2026-10-24-inventory-reconciliation.json",
+  "rule_source": "docs/catalogue-scope.md",
+  "summary": {
+    "original_candidates_reviewed": 4,
+    "eligible_original_candidates": 2,
+    "outside_default_scope_original_candidates": 2,
+    "specific_authority_evidence_holds": 0,
+    "distinct_corrected_eligible_organ": 1,
+    "new_catalogue_sources": 0,
+    "additional_canadian_regional_legislatures": 3
+  },
+  "records": [
+    {
+      "id": "scope-review--belgium--assemblee-reunie-de-la-commission-communautaire-commune-verenigde-vergadering-van-de-gemeenschappelijke-gemeenschapscommissie",
+      "country": "Belgium",
+      "name": "Assemblée réunie de la Commission communautaire commune / Verenigde Vergadering van de Gemeenschappelijke Gemeenschapscommissie",
+      "reviewed_on": "2026-10-24",
+      "authority_status": "eligible_legislature",
+      "decision": "Retain as a distinct eligible statutory legislative formation sharing the Brussels Parliament membership; create a formation relationship rather than an extra territory or separately elected chamber.",
+      "relationship": "autonomous_federated_bicommunity_lawmaking_formation_shared_brussels_membership",
+      "inventory_grain": "institution_or_distinct_constitutional_formation",
+      "legislative_authority_finding": "Special Law of 12 January 1989 article 68(1) expressly gives the Assemblée réunie and Collège réuni joint ordinance-making authority and gives the members initiative. The Chamber factsheet independently identifies bicommunity institutions and personal matters including health and social policy. This is substantive lawmaking over assigned community competences.",
+      "budget_and_executive_control_finding": "Article 82(1) applies the Special Financing Law article 50 annual budget, accounts and Court of Audit framework to COCOM with adaptations. The April 2026 official committee agenda addresses oral questions and requests for explanations to Collège réuni ministers; scrutiny is exercised in this legislative formation.",
+      "scope_limits": [
+        "The same 89 Brussels regional members also form this assembly; do not count another population, legislature building or presumed broadcast service.",
+        "COCOM ordinances and its service-organising regulations are different legal capacities. Do not use the latter alone to establish eligibility.",
+        "The earlier COCOM organisation page contained unrelated casino material; its claims are corroborated using independent parliamentary publications and law. It is not the sole authority."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.lachambre.be/kvvcr/pdf_sections/pri/fiche/fr_26_00.pdf",
+          "instrument": "Belgian Chamber factsheet 26.00, La Région de Bruxelles-Capitale",
+          "provisions": "page 2: commissions communautaires / Assemblée réunie",
+          "finding": "The two Brussels language groups also constitute the Assemblée réunie and adopt ordinances within bicommunity competences.",
+          "evidence_level": "primary_pdf_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Factsheet dated 1 February 2025; read on 24 October 2026."
+        },
+        {
+          "url": "https://senlex.senate.be/fr/dia/structure/str_95/article/art_3823_fr_2014-01-06",
+          "instrument": "Special Law of 12 January 1989 relative aux institutions bruxelloises",
+          "provisions": "article 68(1)",
+          "finding": "The assembly and college jointly legislate by ordinance; both college and assembly members have initiative.",
+          "evidence_level": "primary_search_index_statute_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Senate SenLex indexed statutory text reviewed; direct reader returned cache miss. Not a newly certified complete 2026 consolidation."
+        },
+        {
+          "url": "https://senlex.senate.be/fr/dia/structure/str_41/article/art_3900_fr_2014-01-06/articleversions",
+          "instrument": "Special Law of 12 January 1989 relative aux institutions bruxelloises",
+          "provisions": "article 82(1)",
+          "finding": "Applies articles 50, 68 quinquies and 69 of the Special Financing Law to COCOM and the college with necessary adaptations.",
+          "evidence_level": "primary_search_index_statute_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; authority/identity review only."
+        },
+        {
+          "url": "https://senlex.senate.be/nl/dia/structure/str_119/article/art_4909_fr_2014-01-06/articleversions",
+          "instrument": "Special Financing Law of 16 January 1989",
+          "provisions": "article 50(1)",
+          "finding": "Annual budget voting, approval of accounts, parliamentary receipt of general accounts with Court of Audit observations, and inclusion of all receipts and expenses.",
+          "evidence_level": "primary_search_index_statute_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; authority/identity review only."
+        },
+        {
+          "url": "https://weblex.brussels/display_pdf.php?info=convoc_fr&key=34085",
+          "instrument": "Official Assemblée réunie committee summons",
+          "provisions": "23 April 2026, Commission de la santé et de l’aide aux personnes",
+          "finding": "Requests for explanations and oral questions are directed to the relevant Collège réuni members.",
+          "evidence_level": "primary_search_index_official_agenda_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Summons dated 21 April for 23 April 2026. Evidence of the named formation/scrutiny relationship; no programme-guide work performed."
+        }
+      ],
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "recommended_inventory_id": "belgium--commission-communautaire-commune",
+      "shared_membership_with": "belgium--brussels-capital-region"
+    },
+    {
+      "id": "scope-review--canada--nunatsiavut-assembly",
+      "country": "Canada",
+      "name": "Nunatsiavut Assembly",
+      "reviewed_on": "2026-10-24",
+      "authority_status": "eligible_legislature",
+      "decision": "Add the Nunatsiavut Assembly as a regional autonomous special-status legislature under the Labrador Inuit treaty/constitution. Provincial nesting does not remove its regional legislative status.",
+      "relationship": "regional_treaty_based_inuit_self_government_within_newfoundland_and_labrador_canada",
+      "inventory_grain": "institution_or_distinct_constitutional_formation",
+      "legislative_authority_finding": "The treaty establishes legislative and executive institutions and grants lawmaking in substantive fields, including education and health (chapter 17, parts 17.12 and 17.13). Labrador Inuit Constitution 4.18.1 vests that treaty-defined lawmaking competence in the Assembly; 4.18.2 requires Assembly passage and presidential assent. This establishes a regional legislature, beyond collective ownership or consultation.",
+      "budget_and_executive_control_finding": "Constitution 4.1.3 assigns lawmaking and government oversight. Sections 3.2.7–3.2.8 require the First Minister to retain Assembly confidence; 8.8.3 requires Assembly approval of the annual consolidated financial plan. Assembly Act 51–53 provides witness/document powers with jurisdictional and judicial/independent-body exceptions.",
+      "scope_limits": [
+        "This is not a fourth Canadian territory or a province. Retain the autonomous Inuit government relationship within Newfoundland and Labrador.",
+        "Treaty lawmaking has subject, territorial and personal limits; federal/provincial conflict rules differ by field. Do not describe it as unlimited sovereignty.",
+        "Local Inuit Community Councils remain a separate local-government class; the regional Assembly decision does not automatically include them.",
+        "The legal decision does not certify current membership, every constitutional amendment, or media availability."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.rcaanc-cirnac.gc.ca/eng/1293647179208/1542904949105",
+          "instrument": "Labrador Inuit Land Claims Agreement, official federal publication",
+          "provisions": "2.1.1; 17.2.1; 17.3.3; 17.12.1–17.12.6; 17.13.1",
+          "finding": "Treaty-protected self-government requires legislative/executive institutions and provides actual education/health lawmaking; competence and conflict rules are specifically delimited.",
+          "evidence_level": "primary_agreement_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Official federal treaty text read on 24 October 2026. This finding concerns the established legislative framework, not a legal opinion on every later amendment."
+        },
+        {
+          "url": "https://www.nunatsiavut.com/wp-content/uploads/2021/06/IL-2005-02-Nunatsiavut-Constitution-Act_.pdf",
+          "instrument": "Labrador Inuit Constitution, Schedule A to Nunatsiavut Constitution Act",
+          "provisions": "3.2.7–3.2.8; 4.1.1–4.1.3; 4.18.1–4.18.8; 8.8.3",
+          "finding": "Assembly is the regional parliament, enacts treaty-competent Inuit laws, approves the government financial plan and sustains the First Minister through confidence.",
+          "evidence_level": "primary_pdf_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Original enacted 1 December 2005 source; core authority corroborated by treaty and maintained current legislation index. Not a fresh consolidated membership/seat-count certification."
+        },
+        {
+          "url": "https://www.nunatsiavut.com/wp-content/uploads/2022/01/CIL-N-2-30-11-2021-Nunatsiavut-Assembly-Act.pdf",
+          "instrument": "Nunatsiavut Assembly Act, CIL N-2 (30-11-2021)",
+          "provisions": "sections 51–53; parts 2 and 7",
+          "finding": "Act provides the Assembly/committees with powers to compel witnesses and documents, subject to stated jurisdictional and judicial/independent-body limits; legislative-process part is identified.",
+          "evidence_level": "primary_search_index_statute_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Consolidation through 30 November 2021 lists amendments through IL 2021-04. PDF reader reported 22 pages but no text and screenshots cache-missed; direct PDF retrieval returned403. Actual indexed sections 51–53 were read; no claim of full-PDF inspection."
+        },
+        {
+          "url": "https://nunatsiavut.com/legislation/",
+          "instrument": "Nunatsiavut Government maintained legislation register",
+          "provisions": "IL 2026-02 Budget Act 2026; IL 2026-03 Inuit Communities Quarries Act 2026; constitutional and Assembly Acts",
+          "finding": "Maintained government register identifies 2026 budget and substantive legislation, alongside the regional constitutional/Assembly framework.",
+          "evidence_level": "primary_page_content_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Register reviewed 24 October 2026; 2026 Budget item dated 6 March and Quarries Act item dated 24 September. These are continuity/identity pointers, not a review of programme guides or individual websites."
+        }
+      ],
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "recommended_inventory_id": "canada--nunatsiavut"
+    },
+    {
+      "id": "scope-review--finland--sami-parliament-of-finland",
+      "country": "Finland",
+      "name": "Sámi Parliament of Finland",
+      "reviewed_on": "2026-10-24",
+      "authority_status": "outside_default_scope",
+      "decision": "Retain in the excluded/boundary ledger as an Indigenous cultural self-government and representative body. Its current enacted powers do not establish an autonomous territorial legislature under the project rule.",
+      "relationship": "constitutional_linguistic_and_cultural_self_government_representative_body",
+      "inventory_grain": "institution_or_distinct_constitutional_formation",
+      "legislative_authority_finding": "Act 974/1995 as amended by Act 414/2025 sections1,5–6 establishes cultural/linguistic self-government, own decisions in that remit, representation, initiatives and proposals. Sections9–9 b strengthen negotiation/cooperation aimed at agreement or consent for state measures affecting Sámi rights. They do not confer a general power to enact substantive territorial laws.",
+      "budget_and_executive_control_finding": "Sections2,8 and13–15 provide state financing, autonomous use of operating funds and cultural grants, and an internal board implementing plenary decisions. These are real self-government powers, but managing institutional grants/operations and participating in state decisions does not satisfy the territorial lawmaking and territorial executive-control gate.",
+      "scope_limits": [
+        "This is a scope decision, not a denial of Sámi constitutional status or self-determination.",
+        "The new cooperation and negotiation duties must not be reduced to a casual consultation label. The current reform and aim of obtaining consent are expressly retained.",
+        "Do not apply the result to Åland or automatically to Sámi institutions in other countries.",
+        "Act 414/2025 commencement/transitional provisions leave pending pre-commencement section 9 matters under the former rules and preserve the sitting term; do not infer an immediate new election/composition in 2025."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.finlex.fi/api/media/statute/895343/mainPdf/main.pdf?timestamp=2025-12-09T12%3A08%3A32.974Z",
+          "instrument": "Act 414/2025 amending the Act on the Sámi Parliament",
+          "provisions": "sections1–2,5–9 b,13–15; commencement/transitional clauses",
+          "finding": "Enacted powers concern self-government in language/culture, representation, own grants/operations and strengthened public-authority cooperation/negotiation. No territorial legislative grant appears in those operative provisions.",
+          "evidence_level": "primary_pdf_statute_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Promulgated27 June 2025; published2 July 2025; in force1 August 2025. Finnish operative provisions and commencement read; older English translations were not substituted."
+        },
+        {
+          "url": "https://samediggi.fi/en/the-sami-parliament/",
+          "instrument": "Sámi Parliament own institutional account",
+          "provisions": "2025 reform; Funding and Grant Allocation; official position/operations",
+          "finding": "Describes self-government, grant authority, state funding, representations and cooperation under the reformed Act.",
+          "evidence_level": "primary_page_content_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Own current page expressly incorporates the1 August 2025 reform; draft 2026 funding figure is not adopted as final budget data."
+        },
+        {
+          "url": "https://samediggi.fi/en/decision-making/obligation-to-cooperate-and-negotiate-under-the-sami-parliament-act/",
+          "instrument": "Sámi Parliament own account of revised cooperation/negotiation",
+          "provisions": "sections9–9 b, negotiations and rights safeguard",
+          "finding": "Clarifies the aim of consensus or consent, FPIC-oriented cooperation, early engagement, information and influence before state decisions.",
+          "evidence_level": "primary_page_content_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; authority/identity review only."
+        },
+        {
+          "url": "https://samediggi.fi/en/decision-making/sami-parliaments-plenum/",
+          "instrument": "Sámi Parliament own plenary description",
+          "provisions": "Plenum role",
+          "finding": "Describes plenary authority principally exercised through statements, proposals and other comments.",
+          "evidence_level": "primary_page_content_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; authority/identity review only."
+        }
+      ],
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false
+    },
+    {
+      "id": "scope-review--greece--holy-community-of-mount-athos",
+      "country": "Greece",
+      "name": "Holy Community of Mount Athos",
+      "reviewed_on": "2026-10-24",
+      "authority_status": "outside_default_scope",
+      "decision": "Resolve the original candidate as the wrong organ for the legislative inventory: Holy Community is the regular administrative body. Retain a cross-reference to the distinct extraordinary twenty-member Synaxis as the qualifying autonomous legislative organ.",
+      "relationship": "regular_administrative_body_of_constitutionally_self_governed_monastic_territory",
+      "inventory_grain": "institution_or_distinct_constitutional_formation",
+      "legislative_authority_finding": "Constitution 105(2) assigns administration to the Holy Community. Charter 43 identifies the extraordinary twenty-member Synaxis as the highest legislative/judicial organ and expressly excludes the regular representatives from that legislative body. The original Community name must not absorb the Synaxis lawmaking powers.",
+      "budget_and_executive_control_finding": "Charter 35 makes the Community approve the common-fund budget and additional expenses and inspect executive accounts; Holy Epistasia executes. Administrative finance control alone does not make this particular organ the legislature.",
+      "scope_limits": [
+        "Mount Athos remains a constitutionally self-governed part of Greece; Greek sovereignty and state public-order supervision are preserved.",
+        "Do not classify every monastery council, spiritual tribunal or the Holy Epistasia as a legislature.",
+        "The identity correction does not exclude all Mount Athos territorial lawmaking; the corrected Synaxis is recorded separately below.",
+        "The Charter/decree text is published by a constituent monastery. It is not a current consolidated state-gazette certificate; current constitutional article105 independently confirms the governing framework."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.hellenicparliament.gr/Vouli-ton-Ellinon/To-Politevma/Syntagma/article-109/",
+          "instrument": "Constitution of Greece",
+          "provisions": "article105(1)–(5)",
+          "finding": "Self-government/Greek sovereignty, Holy Community administration, Charter ratification and state/Patriarchal supervision are explicit.",
+          "evidence_level": "primary_constitution_full_article_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Current Parliament constitutional article read24 October 2026; English parliamentary PDF also checked."
+        },
+        {
+          "url": "https://www.esphigmenou.gr/p/kxao.html",
+          "instrument": "Charter of Mount Athos10 May 1924 and ratifying legislative decree10/16 September 1926",
+          "provisions": "Charter11,14,35–36,40,43; decree 6",
+          "finding": "Own monastery law text separates administrative Community, executive Epistasia and legislative Synaxis. Synaxis fixes compulsory fund contributions; non-spiritual regulations require ministerial confirmation.",
+          "evidence_level": "primary_constituent_institution_statute_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Undated institutional republication of foundational law; not certified as an exhaustive 2026 consolidation."
+        },
+        {
+          "url": "https://stelexi.army.gr/wp-content/uploads/2024/07/odigos_1i_tax_kd-al_okt_21.pdf",
+          "instrument": "Greek Army government guide",
+          "provisions": "Mount Athos governance description",
+          "finding": "Independently describes Synaxis legislative, Holy Community administrative and Epistasia executive roles.",
+          "evidence_level": "primary_search_index_government_guide_excerpt_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Guide labelled October 2021 and hosted 2024. Corroborating institutional description; not sole source of legislative powers."
+        }
+      ],
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "related_inventory_correction": {
+        "id": "greece--mount-athos--extraordinary-twenty-member-synaxis",
+        "name": "Extraordinary Twenty-Member Synaxis of Mount Athos / Έκτακτη Εικοσαμελής Σύναξη",
+        "authority_status": "eligible_legislature",
+        "inventory_grain": "autonomous_special_status_territorial_legislative_organ",
+        "relationship": "distinct_from_regular_holy_community_and_executive_holy_epistasia",
+        "decision": "Retain the corrected organ as eligible autonomous special-status territorial lawmaking; do not treat it as an ordinary municipality or as a second jurisdiction.",
+        "legal_basis": "Charter 43 names the legislative organ; ratifying decree 6 empowers it to enact regulations consistent with the Charter, subject to ministerial confirmation (Patriarchal approval for purely spiritual provisions). Charter 36 grants determination of compulsory common-fund contributions; decree 33 provides for setting court expenses/fees by Synaxis regulation.",
+        "scope_reasoning": "The constitutional territorial regime and binding non-spiritual rules/compulsory territorial institutional revenue clear the autonomous special-status bar. Spiritual/monastic status alone neither establishes nor defeats eligibility. Finance/executive administration is divided among the Synaxis, Community and Epistasia; record their distinct roles.",
+        "legal_authority_gate_resolved": true,
+        "automatic_catalogue_promotion": false,
+        "same_jurisdiction_as_original_candidate": true,
+        "new_independent_chamber_or_jurisdiction_count_not_inferred": true,
+        "currentness_limit": "Foundational law was read from a constituent institution; no claim that every 1926 provision remains wholly unamended. Current Constitution 105 and independent government description corroborate organ separation."
+      }
+    }
+  ],
+  "counting_note": "The corrected Athos Synaxis replaces a misidentified legislative-organ candidate; it is not a second Mount Athos jurisdiction. COCOM is a distinct formation sharing Brussels regional membership.",
+  "scope_questions_resolved_not_complete_country_census_certificate": true,
+  "no_external_messages_or_upstream_edits": true,
+  "additional_regional_inventory_records": [
+    {
+      "country": "Canada",
+      "authority_status": "eligible_legislature",
+      "inventory_grain": "autonomous_special_status_regional_legislature",
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "id": "canada--nisgaa-lisims",
+      "name": "Wilp Si’ayuukhl Nisg̱a’a",
+      "jurisdiction": "Nisg̱a’a Nation / Nisg̱a’a Lands",
+      "parent_first_level_jurisdiction": "British Columbia",
+      "relationship": "central_regional_treaty_autonomous_legislature_distinct_from_four_village_governments",
+      "decision": "Add the central regional legislative house of Nisg̱a’a Lisims Government; do not add the four subsidiary village councils or advisory Council of Elders as regional legislatures.",
+      "legislative_authority_finding": "Nisg̱a’a Constitution31 establishes the legislative house;32 gives it treaty-defined legislative powers;34 prescribes passage and presidential signature. Its own maintained government account confirms broad concurrent lawmaking under the Treaty.",
+      "budget_and_executive_control_finding": "Constitution37 makes Executive authority subject to constitutional/house assignments and directions;38 provides qualified removal of officers;57–58 require laws allocating funds and prescribing budget preparation/approval.",
+      "scope_limits": [
+        "Regional treaty-autonomous government within British Columbia; not another Canadian province or territory.",
+        "The special general assembly under Constitution30 makes recommendations; do not substitute it for Wilp Si’ayuukhl Nisg̱a’a.",
+        "The government warns that its migrated online law collection is incomplete. Foundational competence is established, but no claim is made that every current amendment or current seat count was validated."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.nisgaanation.ca/wp-content/uploads/2024/07/Constitution-of-the-Nisgaa-Nation-1998-10-01.pdf",
+          "instrument": "Constitution of the Nisg̱a’a Nation",
+          "provisions": "sections30–34,37–38,57–58",
+          "finding": "Regional legislative house, legislative passage, executive directions/removal framework, financial allocation and budget law powers are separately specified.",
+          "evidence_level": "primary_pdf_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Constitution ratified October 1998; institutional publication retrieved24 October 2026. Used for core authority, not an exhaustive current consolidation."
+        },
+        {
+          "url": "https://www.nisgaanation.ca/government/nisgaa-lisims-government/government-structure/",
+          "instrument": "Nisg̱a’a Lisims Government institutional account",
+          "provisions": "NLG legislative/executive/village-government structure",
+          "finding": "Own maintained government page identifies the legislative house, separate executive and four subsidiary village governments.",
+          "evidence_level": "primary_page_content_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; inventory/authority evidence only."
+        },
+        {
+          "url": "https://www.nisgaanation.ca/government/statutes-regulations/nisgaa-law-making-authority/",
+          "instrument": "Nisg̱a’a law-making authority",
+          "provisions": "Treaty and law-collection scope",
+          "finding": "Broad treaty lawmaking concurrent with federal and provincial authority; current law collection is explicitly incomplete.",
+          "evidence_level": "primary_search_index_own_institution_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; inventory/authority evidence only."
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "authority_status": "eligible_legislature",
+      "inventory_grain": "autonomous_special_status_regional_legislature",
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "id": "canada--tlicho",
+      "name": "Tłı̨chǫ Assembly",
+      "jurisdiction": "Tłı̨chǫ Government / Tłı̨chǫ Lands",
+      "parent_first_level_jurisdiction": "Northwest Territories",
+      "relationship": "central_regional_treaty_autonomous_legislature_distinct_from_four_community_governments",
+      "decision": "Add the central Tłı̨chǫ Assembly as the regional treaty-autonomous legislative institution. The four community governments and annual gathering are distinct organs.",
+      "legislative_authority_finding": "Tłı̨chǫ Constitution8.1 vests enactment of laws in the Assembly. Treaty7.4 supplies substantive lands/resources, public rules, social/education and taxation jurisdictions;7.5 supplies limits and conditions. This is regional treaty authority over the four-community government.",
+      "budget_and_executive_control_finding": "Constitution8.5(a)–(c),(f),(i) authorizes functions/funds and performance review, financial powers and legislation; the own government strategic account confirms Assembly approval of annual budgets and laws and executive reporting.",
+      "scope_limits": [
+        "Preserve the central-government/individual-community distinction; no additional province/territory is created.",
+        "Some powers are personal to Tłı̨chǫ citizens and others territorially apply to non-citizens; treaty limitations and general-law conflicts are not waived.",
+        "The direct Constitution reader returned403. Exact sections8.1 and8.5 were read from indexed own-government text, independently corroborated by the official federal treaty and own published implementation/strategy descriptions."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.tlicho.ca/sites/default/files/documents/government/tlichoconstitution.pdf",
+          "instrument": "Tłı̨chǫ Constitution",
+          "provisions": "sections8.1,8.2 and8.5(a)–(c),(f),(i)",
+          "finding": "Assembly enacts treaty-competent laws, represents four communities and controls functions/funds, performance review and financial/legislative powers.",
+          "evidence_level": "primary_search_index_own_constitution_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Direct PDF reader returned403; actual indexed section text was read. No full current consolidated PDF claim."
+        },
+        {
+          "url": "https://www.rcaanc-cirnac.gc.ca/eng/1292948193972/1543262085000?wbdisable=true",
+          "instrument": "Tłı̨chǫ Land Claims and Self-Government Agreement, federal publication",
+          "provisions": "chapter7:7.1,7.4,7.5; chapter8 community governments",
+          "finding": "Regional self-government has explicit substantive lawmaking and taxation powers with specific jurisdictional limits, distinct from the community governments.",
+          "evidence_level": "primary_agreement_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Read on 24 October 2026; inventory/authority evidence only."
+        },
+        {
+          "url": "https://tlicho.ca/sites/default/files/documents/government/2021-25TGStrategicFrameworkandIntentions.pdf",
+          "instrument": "Tłı̨chǫ own government Strategic Framework 2021–2025",
+          "provisions": "Assembly role/accountability flow, page35",
+          "finding": "Assembly monitors progress and approves annual budgets and laws; Executive implements and reports.",
+          "evidence_level": "primary_search_index_own_government_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Dated strategy corroborates governance allocation; not adopted as current 2026 programming or a fiscal audit."
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "authority_status": "eligible_legislature",
+      "inventory_grain": "autonomous_special_status_regional_legislature",
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "id": "canada--cree-nation-eeyou-istchee",
+      "name": "Council of the Cree Nation Government / Conseil du Gouvernement de la nation crie",
+      "jurisdiction": "Cree Nation of Eeyou Istchee — regional treaty government",
+      "parent_first_level_jurisdiction": "Quebec",
+      "relationship": "regional_treaty_autonomous_lawmaking_council_distinct_from_local_first_nation_councils_and_eeyou_istchee_james_bay_municipal_government",
+      "decision": "Add the regional Cree Nation Government council in its treaty lawmaking capacity. Keep the Grand Council corporate/representative identity and the mixed Eeyou Istchee James Bay Regional Government separate.",
+      "legislative_authority_finding": "Governance Agreement2.1–2.3 establishes local/regional arrangements;4.8 defines regional territorial reach;8.12 gives environmental/natural-resource/pollution lawmaking and8.15 direct taxation. Constitution11.1–11.3 places enactment/publication in the regional council. These operative regional treaty powers establish more than a coordinating service board.",
+      "budget_and_executive_control_finding": "Quebec Act respecting the Cree Nation Government(G-1.031)46–49 assigns executive powers through council bylaws/appointments;81–83 requires annual council budget adoption and accessible accounts. Constitution11 establishes a public regional lawmaking procedure.",
+      "scope_limits": [
+        "CategoryIA and related treaty land scope is specifically delimited; this is not a legislature with blanket jurisdiction throughout all of Quebec or all of Eeyou Istchee.",
+        "Agreement8.8 expressly conditions exercise of marriage/matrimonial-property/language-culture powers8.2,8.3 and8.6 on implementation agreements with Quebec. Those instruments have not been independently established here; eligibility relies on the separate operative regional powers8.12/8.15, not an assumption that all conditional powers are active.",
+        "The provincial municipal powers held in other legal capacities do not determine this treaty-law capacity.",
+        "Local Cree First Nation councils remain excluded by the requested individual-community tier boundary; do not duplicate them as regional legislatures."
+      ],
+      "primary_evidence": [
+        {
+          "url": "https://www.rcaanc-cirnac.gc.ca/eng/1504798011685/1542989671051",
+          "instrument": "Agreement on Cree Nation Governance 2017, official federal text",
+          "provisions": "2.1–2.3;4.8;8.8;8.12–8.17",
+          "finding": "Specifies regional treaty government and territorial laws, operative environment/taxation grants and separate Quebec implementation conditions for designated additional fields.",
+          "evidence_level": "primary_agreement_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Signed18 July 2017; framework reviewed24 October 2026. No inference that every conditional jurisdiction is currently exercised."
+        },
+        {
+          "url": "https://www.cngov.ca/wp-content/uploads/2018/03/07_-_constitution_of_the_cree_nation_of_eeyou_istchee-1.pdf",
+          "instrument": "Constitution of the Cree Nation of Eeyou Istchee",
+          "provisions": "PartIII, chapter11,11.1–11.3",
+          "finding": "Regional council adopts laws in public meeting by majority of all council members; laws are published and registered.",
+          "evidence_level": "primary_pdf_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Institutional constitutional text retrieved24 October 2026; individual local First Nation financial provisions were not misassigned to the regional council."
+        },
+        {
+          "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/G-1.031",
+          "instrument": "Loi sur le Gouvernement de la nation crie, Quebec official publisher",
+          "provisions": "46–49;81–83",
+          "finding": "Regional council assigns executive powers, selects executive members and approves annual budgets; accounts are available to council members.",
+          "evidence_level": "primary_search_index_statute_section_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Official text labelled current to23 February 2026 in indexed source. Direct English reader502; actual French statutory sections read."
+        }
+      ]
+    }
+  ],
+  "canadian_regional_class_boundary": {
+    "reviewed_on": "2026-10-24",
+    "user_scope": "First-level and autonomous special-status legislatures; no expansion to every below-tier Indigenous or tribal government.",
+    "directory_evidence": [
+      {
+        "url": "https://www.rcaanc-cirnac.gc.ca/eng/1566482924303/1566482963919",
+        "instrument": "Canada collaborative self-government fiscal policy",
+        "provisions": "AnnexA1-25–A1-27; ScheduleB",
+        "finding": "The federal policy explicitly groups Nisg̱a’a,Nunatsiavut andTłı̨chǫ as central governments with subsidiary community governments.",
+        "evidence_level": "primary_search_index_federal_policy_section_text_review",
+        "reviewed_on": "2026-10-24",
+        "currentness": "Policy framework published 2019; not a complete 2026 list of every Indigenous governance arrangement."
+      },
+      {
+        "url": "https://rcaanc-cirnac.gc.ca/eng/1573225148041/1573225175098",
+        "instrument": "Implementation of modern treaties and self-government agreements",
+        "provisions": "AnnexesA/B and Cree Nation Governance discussion",
+        "finding": "Federal agreement list supplies a bounded class cross-check; explicitly includes Cree regional governance as well as local and sectoral arrangements.",
+        "evidence_level": "primary_page_content_review",
+        "reviewed_on": "2026-10-24",
+        "currentness": "This is the provisional July 2015–March 2018 annual report. It was used as a historical class checklist, then individual current institutional/legal sources were used for the named additions; not misrepresented as a 2026 complete directory."
+      },
+      {
+        "url": "https://www.rcaanc-cirnac.gc.ca/eng/1100100030604/1542740089024",
+        "instrument": "Federal Quebec final-agreement directory",
+        "provisions": "Crees of Eeyou Istchee: final agreements",
+        "finding": "Maintained federal directory identifies the 2017 Cree Nation Governance Agreement separately from Nunavik land-claim instruments.",
+        "evidence_level": "primary_search_index_federal_directory_text_review",
+        "reviewed_on": "2026-10-24",
+        "currentness": "Read on 24 October 2026; inventory/authority evidence only."
+      }
+    ],
+    "included_regional_central_bodies": [
+      "Nunatsiavut Assembly",
+      "Wilp Si’ayuukhl Nisg̱a’a",
+      "Tłı̨chǫ Assembly",
+      "Council of the Cree Nation Government"
+    ],
+    "excluded_by_tier_or_function": [
+      {
+        "class": "individual-community band,village or equivalent local governments",
+        "examples": [
+          "Nisg̱a’a village governments",
+          "Tłı̨chǫ community governments",
+          "Nunatsiavut Inuit Community Councils",
+          "individual Cree First Nation councils",
+          "individual Yukon First Nation governments",
+          "Déline community self-government",
+          "Tsawwassen,Tla’amin,Westbank,Sechelt andSiouxValley individual-community governments"
+        ],
+        "disposition": "outside_default_scope_by_user_tier_boundary",
+        "finding": "No conclusion that these lack self-government/lawmaking; they are below the requested regional inventory tier and not added individually."
+      },
+      {
+        "class": "single-sector regional agreements",
+        "examples": [
+          "Mi’kmaq education agreement institutions",
+          "Anishinabek education agreement institutions"
+        ],
+        "disposition": "outside_default_scope_sectoral_body",
+        "finding": "Sector education governance is not a general territorial legislature under the maintained scope."
+      },
+      {
+        "class": "land-claimcorporation or prospective/self-government negotiation",
+        "disposition": "not_automatic_legislature",
+        "finding": "A modern land claim, representative corporation, unsigned proposal or agreement-in-principle does not alone establish a current regional legislature. No claim that every negotiation or Indigenous association was individually reviewed."
+      }
+    ],
+    "all_indigenous_government_census_certified": false,
+    "ordinary_municipal_exclusion_preserved": true
+  },
+  "corrected_organ_inventory_records": [
+    {
+      "id": "greece--mount-athos--extraordinary-twenty-member-synaxis",
+      "name": "Extraordinary Twenty-Member Synaxis of Mount Athos / Έκτακτη Εικοσαμελής Σύναξη",
+      "authority_status": "eligible_legislature",
+      "inventory_grain": "autonomous_special_status_territorial_legislative_organ",
+      "relationship": "distinct_from_regular_holy_community_and_executive_holy_epistasia",
+      "decision": "Retain the corrected organ as eligible autonomous special-status territorial lawmaking; do not treat it as an ordinary municipality or as a second jurisdiction.",
+      "legal_basis": "Charter 43 names the legislative organ; ratifying decree 6 empowers it to enact regulations consistent with the Charter, subject to ministerial confirmation (Patriarchal approval for purely spiritual provisions). Charter 36 grants determination of compulsory common-fund contributions; decree 33 provides for setting court expenses/fees by Synaxis regulation.",
+      "scope_reasoning": "The constitutional territorial regime and binding non-spiritual rules/compulsory territorial institutional revenue clear the autonomous special-status bar. Spiritual/monastic status alone neither establishes nor defeats eligibility. Finance/executive administration is divided among the Synaxis, Community and Epistasia; record their distinct roles.",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "same_jurisdiction_as_original_candidate": true,
+      "new_independent_chamber_or_jurisdiction_count_not_inferred": true,
+      "currentness_limit": "Foundational law was read from a constituent institution; no claim that every 1926 provision remains wholly unamended. Current Constitution 105 and independent government description corroborate organ separation.",
+      "country": "Greece",
+      "jurisdiction": "Mount Athos",
+      "parent_country": "Greece",
+      "reviewed_on": "2026-10-24",
+      "primary_evidence": [
+        {
+          "url": "https://www.hellenicparliament.gr/Vouli-ton-Ellinon/To-Politevma/Syntagma/article-109/",
+          "instrument": "Constitution of Greece",
+          "provisions": "article105(1)–(5)",
+          "finding": "Self-government/Greek sovereignty, Holy Community administration, Charter ratification and state/Patriarchal supervision are explicit.",
+          "evidence_level": "primary_constitution_full_article_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Current Parliament constitutional article read24 October 2026; English parliamentary PDF also checked."
+        },
+        {
+          "url": "https://www.esphigmenou.gr/p/kxao.html",
+          "instrument": "Charter of Mount Athos10 May 1924 and ratifying legislative decree10/16 September 1926",
+          "provisions": "Charter11,14,35–36,40,43; decree 6",
+          "finding": "Own monastery law text separates administrative Community, executive Epistasia and legislative Synaxis. Synaxis fixes compulsory fund contributions; non-spiritual regulations require ministerial confirmation.",
+          "evidence_level": "primary_constituent_institution_statute_text_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Undated institutional republication of foundational law; not certified as an exhaustive 2026 consolidation."
+        },
+        {
+          "url": "https://stelexi.army.gr/wp-content/uploads/2024/07/odigos_1i_tax_kd-al_okt_21.pdf",
+          "instrument": "Greek Army government guide",
+          "provisions": "Mount Athos governance description",
+          "finding": "Independently describes Synaxis legislative, Holy Community administrative and Epistasia executive roles.",
+          "evidence_level": "primary_search_index_government_guide_excerpt_review",
+          "reviewed_on": "2026-10-24",
+          "currentness": "Guide labelled October 2021 and hosted 2024. Corroborating institutional description; not sole source of legislative powers."
+        }
+      ]
+    }
+  ]
+}

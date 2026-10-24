@@ -1,0 +1,70 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Provincial legislative chamber; separate institutional Wikidata item corroborated against its own official website.",
+    "Proceedings: The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+    "Publication posture: Reviewed the primary institution/viewing pages and their copyright notices. They designate public viewing but no independent audiovisual reuse grant was established in the reviewed pages. Retain an official link-out; do not enable embedded playback, manifest extraction or redistribution. No source-specific prior-linking condition was found in these reviewed pages; this is not an exhaustive legal certification.",
+    "Evidence: reports/discovery/2026-10-23-metadata-followup.json",
+    "Promoted as an official viewing link; regional flag, parent-country search, map geometry and planned event indexes reconciled."
+  ],
+  "channel": {
+    "id": "argentina-corrientes-deputies-webcasts",
+    "name": "Corrientes Chamber of Deputies Webcasts",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Corrientes",
+    "legislature": "Honorable Cámara de Diputados de la Provincia de Corrientes",
+    "external_ids": {
+      "wikidata_qid": "Q56316686",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q56316686",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact legislative chamber Q56316686 revision 2346089827; institutional label, lower/upper-chamber role and official P856 URL match the primary chamber site. Not the province, city or municipal council."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+    "provenance_note": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Spanish institutional/session metadata; muted playback tests do not independently certify all spoken languages, alternate audio or complete accessibility. An interpreter is visible in both Deputies samples; sign-language code, full-recording coverage and caption quality were not assessed."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://hcdcorrientes.gov.ar/sesiones/orden-del-dia/",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Reviewed the primary institution/viewing pages and their copyright notices. They designate public viewing but no independent audiovisual reuse grant was established in the reviewed pages. Retain an official link-out; do not enable embedded playback, manifest extraction or redistribution. No source-specific prior-linking condition was found in these reviewed pages; this is not an exhaustive legal certification.",
+      "evidence": [
+        "https://hcdcorrientes.gov.ar/",
+        "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+      ],
+      "recommendation": "Open the official viewing service; independent media reuse and complete current-live/committee coverage remain unresolved."
+    }
+  }
+}

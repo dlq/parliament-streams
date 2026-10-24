@@ -1,0 +1,71 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The regional government bulletin explicitly lists dated Sejmik recordings and links the exact provider videos. Three distinct ordinary sittings (16 June, 2 July and 22 September 2026) were checked in Chromium and WebKit with decoded frames and advancing playback after introductions/recesses. Content observations include regional-state report debate, a named member speaking and debate on a regional assembly position. Exact institution Q8081138 is a Polish legislative body with jurisdiction Q54158. This is an official recorded-proceedings archive; current live and full committee coverage remain unverified.",
+    "Official government bulletin viewing link. Reviewed the bulletin reuse page and its scanned Marshal Order 21/25 of 25 March 2025, especially chapter 3, physical PDF pages 8-9: it sets procedures for reuse requests/offers and possible preparation costs. No specific prior-linking consent condition was identified in the reviewed material; no independent audiovisual redistribution licence was established. Retain personal-use permission pending, link out to the bulletin, and exclude from direct playback/IPTV.",
+    "Evidence: reports/discovery/2026-10-23-lodz-publication-review.json"
+  ],
+  "channel": {
+    "id": "poland-lodz-sejmik-recordings",
+    "name": "Łódź Regional Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Łódź Voivodeship",
+    "legislature": "Sejmik Województwa Łódzkiego",
+    "external_ids": {
+      "wikidata_qid": "Q8081138",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q8081138",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact regional assembly Q8081138 revision 2555604310: P31 legislature and voivodeship sejmik, Poland P17 Q36, jurisdiction P1001 Q54158; no P856/P2397. Official bulletin independently establishes lawmaking role and exact provider recording links."
+      }
+    ],
+    "language": "Polish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+    "provenance_note": "The regional government bulletin explicitly lists dated Sejmik recordings and links the exact provider videos. Three distinct ordinary sittings (16 June, 2 July and 22 September 2026) were checked in Chromium and WebKit with decoded frames and advancing playback after introductions/recesses. Content observations include regional-state report debate, a named member speaking and debate on a regional assembly position. Exact institution Q8081138 is a Polish legislative body with jurisdiction Q54158. This is an official recorded-proceedings archive; current live and full committee coverage remain unverified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "source_dependent",
+      "caption_languages": [
+        "pl"
+      ],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "Polish text burned into the picture and sign-language interpreters were visually observed in selected June/July samples; September business sample shows an interpreter. Sign language variant, complete recording/room coverage, selectable tracks and audio description are unverified. Muted tests do not certify all spoken-language tracks."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official government bulletin viewing link. Reviewed the bulletin reuse page and its scanned Marshal Order 21/25 of 25 March 2025, especially chapter 3, physical PDF pages 8-9: it sets procedures for reuse requests/offers and possible preparation costs. No specific prior-linking consent condition was identified in the reviewed material; no independent audiovisual redistribution licence was established. Retain personal-use permission pending, link out to the bulletin, and exclude from direct playback/IPTV.",
+      "evidence": [
+        "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+        "https://bip.lodzkie.pl/ponowne-wykorzystywanie",
+        "https://bip.lodzkie.pl/files/21-25.pdf"
+      ],
+      "recommendation": "Use the official recording archive; media reuse, live and complete room/track coverage remain separate reviews."
+    }
+  }
+}

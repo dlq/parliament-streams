@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The parliament live page explicitly designates its YouTube plenary archive. Distinct 28 and 30 September 2026 recordings decode in Chromium and WebKit; selected frames show different speakers at the parliamentary lectern with crest and lit microphone. Parliamentary rules establish legislative and budgetary powers within autonomy and Swedish as the working language. This validates selected archived plenaries, not all sessions, live or committees.",
+    "The reviewed institutional live page designates public viewing; no blanket independent audiovisual reuse grant was established. Personal-use permission remains pending. Link to the official service.",
+    "Evidence: reports/discovery/2026-10-24-finland-aland-lagting-recordings-review.json"
+  ],
+  "channel": {
+    "id": "finland-aland-lagting-recordings",
+    "name": "Åland Parliament Plenary Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Åland",
+    "legislature": "Ålands lagting",
+    "external_ids": {
+      "wikidata_qid": "Q1091494",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1091494",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact legislative institution confirmed against P17/P1001/P856 and current primary institution navigation. Legislative term, speaker post and broadcaster items excluded. Claims snapshot: reports/discovery/2026-10-24-institution-claim-review.json; the response did not retain a revision number."
+      }
+    ],
+    "language": "Swedish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.lagtinget.ax/live",
+    "provenance_note": "The parliament live page explicitly designates its YouTube plenary archive. Distinct 28 and 30 September 2026 recordings decode in Chromium and WebKit; selected frames show different speakers at the parliamentary lectern with crest and lit microphone. Parliamentary rules establish legislative and budgetary powers within autonomy and Swedish as the working language. This validates selected archived plenaries, not all sessions, live or committees.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete captions, sign-language variants or audio description established. Selected tests were muted; language metadata is institutional context, not audible certification. "
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.lagtinget.ax/live",
+        "method": "GET",
+        "kind": "official_recording_and_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed institutional live page designates public viewing; no blanket independent audiovisual reuse grant was established. Personal-use permission remains pending. Link to the official service.",
+      "evidence": [
+        "https://www.lagtinget.ax/live",
+        "https://www.lagtinget.ax/lagtinget/lagtings-och-arbetsordningen/lagtingsordningen"
+      ],
+      "recommendation": "Use official viewing links; independently establish redistribution rights, current live, all rooms and accessibility before expanding playback claims."
+    }
+  }
+}

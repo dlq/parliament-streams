@@ -1,0 +1,272 @@
+{
+  "method": "Two engines, one recording at a time per engine; normal TLS, muted selected decoded-frame comparison. Opening/recess/presentation samples must be visually distinguished from legislative business. No rate-limit retries or challenge bypass.",
+  "requestedChecks": 8,
+  "stoppedForAccessLimit": false,
+  "results": [
+    {
+      "key": "next-montenegro-budget-21oct",
+      "body_id": "national:Montenegro",
+      "url": "https://www.youtube.com/watch?v=aVNMELD9Rj4&t=1200s",
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-24T02:58:38.959Z",
+      "status": 200,
+      "title": "158. sjednica Odbora za ekonomiju, finansije i budžet, 21.10.2026. - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.450946819,
+        "width": 854,
+        "height": 480,
+        "duration": 21148.561,
+        "ready": 4,
+        "frames": 460
+      },
+      "later": {
+        "time": 1205.656456152,
+        "width": 854,
+        "height": 480,
+        "duration": 21148.561,
+        "ready": 4,
+        "frames": 535
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-montenegro-budget-21oct-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Man speaking at a lit table microphone in the branded parliamentary committee room."
+    },
+    {
+      "key": "next-montenegro-budget-21oct",
+      "body_id": "national:Montenegro",
+      "url": "https://www.youtube.com/watch?v=aVNMELD9Rj4&t=1200s",
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-24T02:58:38.765Z",
+      "status": 200,
+      "title": "158. sjednica Odbora za ekonomiju, finansije i budžet, 21.10.2026. - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.920604,
+        "width": 854,
+        "height": 480,
+        "duration": 21148.561,
+        "ready": 4,
+        "frames": 492
+      },
+      "later": {
+        "time": 1206.126629,
+        "width": 854,
+        "height": 480,
+        "duration": 21148.561,
+        "ready": 4,
+        "frames": 558
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-montenegro-budget-21oct-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Man speaking at a lit table microphone in the branded parliamentary committee room."
+    },
+    {
+      "key": "next-montenegro-plenary-19oct",
+      "body_id": "national:Montenegro",
+      "url": "https://www.youtube.com/watch?v=jJ3z4tpUGlU&t=1200s",
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-24T02:58:51.268Z",
+      "status": 200,
+      "title": "Prva sjednica Drugog redovnog zasijedanja u 2026. godini - nastavak, 19.10.2026. - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.448258393,
+        "width": 854,
+        "height": 480,
+        "duration": 39275.161,
+        "ready": 4,
+        "frames": 457
+      },
+      "later": {
+        "time": 1205.65302306,
+        "width": 854,
+        "height": 480,
+        "duration": 39275.161,
+        "ready": 4,
+        "frames": 534
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-montenegro-plenary-19oct-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Member standing and speaking at a lit seat microphone in the occupied branded plenary chamber."
+    },
+    {
+      "key": "next-montenegro-plenary-19oct",
+      "body_id": "national:Montenegro",
+      "url": "https://www.youtube.com/watch?v=jJ3z4tpUGlU&t=1200s",
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-24T02:58:52.118Z",
+      "status": 200,
+      "title": "Prva sjednica Drugog redovnog zasijedanja u 2026. godini - nastavak, 19.10.2026. - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.935312,
+        "width": 854,
+        "height": 480,
+        "duration": 39275.161,
+        "ready": 4,
+        "frames": 493
+      },
+      "later": {
+        "time": 1206.13945,
+        "width": 854,
+        "height": 480,
+        "duration": 39275.161,
+        "ready": 4,
+        "frames": 560
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-montenegro-plenary-19oct-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Member standing and speaking at a lit seat microphone in the occupied branded plenary chamber."
+    },
+    {
+      "key": "next-aland-plenary-30sep",
+      "body_id": "finland--alands-lagting",
+      "url": "https://www.youtube.com/watch?v=p3ILFFdy_Nk&t=1200s",
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-24T02:59:02.994Z",
+      "status": 200,
+      "title": "Plenum den 30 september 2026 kl. 09:30 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.545959155,
+        "width": 854,
+        "height": 480,
+        "duration": 4857.021,
+        "ready": 4,
+        "frames": 294
+      },
+      "later": {
+        "time": 1205.752112906,
+        "width": 854,
+        "height": 480,
+        "duration": 4857.021,
+        "ready": 4,
+        "frames": 354
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-aland-plenary-30sep-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Man reading and speaking at the lectern with parliamentary crest and red microphone; the two dates show distinct speakers."
+    },
+    {
+      "key": "next-aland-plenary-30sep",
+      "body_id": "finland--alands-lagting",
+      "url": "https://www.youtube.com/watch?v=p3ILFFdy_Nk&t=1200s",
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-24T02:59:04.113Z",
+      "status": 200,
+      "title": "Plenum den 30 september 2026 kl. 09:30 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.928875,
+        "width": 854,
+        "height": 480,
+        "duration": 4857.021,
+        "ready": 4,
+        "frames": 373
+      },
+      "later": {
+        "time": 1206.135728,
+        "width": 854,
+        "height": 480,
+        "duration": 4857.021,
+        "ready": 4,
+        "frames": 439
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-aland-plenary-30sep-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Man reading and speaking at the lectern with parliamentary crest and red microphone; the two dates show distinct speakers."
+    },
+    {
+      "key": "next-aland-plenary-28sep",
+      "body_id": "finland--alands-lagting",
+      "url": "https://www.youtube.com/watch?v=no8aPAb85Jw&t=1200s",
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-24T02:59:14.696Z",
+      "status": 200,
+      "title": "Plenum den 28 september 2026 kl. 13:00 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.444856335,
+        "width": 854,
+        "height": 480,
+        "duration": 11735.101,
+        "ready": 4,
+        "frames": 455
+      },
+      "later": {
+        "time": 1205.652328918,
+        "width": 854,
+        "height": 480,
+        "duration": 11735.101,
+        "ready": 4,
+        "frames": 530
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-aland-plenary-28sep-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Man reading and speaking at the lectern with parliamentary crest and red microphone; the two dates show distinct speakers."
+    },
+    {
+      "key": "next-aland-plenary-28sep",
+      "body_id": "finland--alands-lagting",
+      "url": "https://www.youtube.com/watch?v=no8aPAb85Jw&t=1200s",
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-24T02:59:16.118Z",
+      "status": 200,
+      "title": "Plenum den 28 september 2026 kl. 13:00 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.920432,
+        "width": 854,
+        "height": 480,
+        "duration": 11735.101,
+        "ready": 4,
+        "frames": 489
+      },
+      "later": {
+        "time": 1206.124693,
+        "width": 854,
+        "height": 480,
+        "duration": 11735.101,
+        "ready": 4,
+        "frames": 555
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "decoded_and_visually_identified_proceedings",
+      "screenshot": "/tmp/next-aland-plenary-28sep-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Man reading and speaking at the lectern with parliamentary crest and red microphone; the two dates show distinct speakers."
+    }
+  ],
+  "review_scope": "Selected muted decoded frames visually reviewed in both engines. Meeting dates come from institution-designated titles, not an independently read meeting clock; audible tracks and complete service coverage are unverified."
+}

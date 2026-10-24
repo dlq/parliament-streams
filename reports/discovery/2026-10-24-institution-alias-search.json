@@ -1,0 +1,1931 @@
+{
+  "started_at": "2026-10-24T04:05:45.842820+00:00",
+  "method": "Individual alternative institutional search wording for empty first searches and territory-only Swiss queries. Shared persistent cache/increasing cooldown; no item-absence inference and no automatic entity acceptance.",
+  "results": [
+    {
+      "body_id": "argentina--chaco",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Chaco",
+      "query": "Cámara de Diputados del Chaco",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:15:56.932428+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+del+Chaco&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--entre-rios",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Entre Ríos",
+      "query": "Legislatura de Entre Ríos",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:00.251143+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Legislatura+de+Entre+R%C3%ADos&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--formosa",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Formosa",
+      "query": "Cámara de Diputados de Formosa",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:03.533705+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+de+Formosa&uselang=en",
+      "matches": [
+        {
+          "id": "Q5795771",
+          "label": "Formosa Chamber of Deputies",
+          "description": "legislative body of Formosa Province, Argentina"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "argentina--jujuy",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Jujuy",
+      "query": "Legislatura de Jujuy",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:06.787207+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Legislatura+de+Jujuy&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--la-pampa",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura La Pampa",
+      "query": "Cámara de Diputados de La Pampa",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:10.012682+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+de+La+Pampa&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--misiones",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Misiones",
+      "query": "Cámara de Representantes de Misiones",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:13.258251+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Representantes+de+Misiones&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--san-luis",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura San Luis",
+      "query": "Legislatura de San Luis",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:16.507026+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Legislatura+de+San+Luis&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--santa-fe",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Santa Fe",
+      "query": "Legislatura de Santa Fe",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:19.763415+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Legislatura+de+Santa+Fe&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "argentina--santiago-del-estero",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Santiago del Estero",
+      "query": "Cámara de Diputados de Santiago del Estero",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:23.007794+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+de+Santiago+del+Estero&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "australia--tasmania",
+      "country": "Australia",
+      "institution_as_recorded": "Tasmania Parliament",
+      "query": "Parliament of Tasmania",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:26.230447+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Parliament+of+Tasmania&uselang=en",
+      "matches": [
+        {
+          "id": "Q3365524",
+          "label": "Parliament of Tasmania",
+          "description": "bicameral parliament in Tasmania"
+        },
+        {
+          "id": "Q114530224",
+          "label": "Former Members – Parliament of Tasmania",
+          "description": "biographical database of Tasmanian MPs"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "austria--niederosterreichische-landtag",
+      "country": "Austria",
+      "institution_as_recorded": "Niederösterreichische Landtag",
+      "query": "Landtag Niederösterreichische Landtag",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:29.475325+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Landtag+Nieder%C3%B6sterreichische+Landtag&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "canada--nova-scotia",
+      "country": "Canada",
+      "institution_as_recorded": "Nova Scotia Legislative Assembly",
+      "query": "Nova Scotia House of Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:32.724916+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Nova+Scotia+House+of+Assembly&uselang=en",
+      "matches": [
+        {
+          "id": "Q320273",
+          "label": "Nova Scotia House of Assembly",
+          "description": "single house, former lower house, of Nova Scotia Legislature"
+        },
+        {
+          "id": "Q127287966",
+          "label": "Nova Scotia House of Assembly tartan",
+          "description": "official tartan of the Nova Scotia House of Assembly"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "colombia--atlantico",
+      "country": "Colombia",
+      "institution_as_recorded": "Asamblea Departamental de Atlántico",
+      "query": "Asamblea Departamental del Atlántico",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:36.065052+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Asamblea+Departamental+del+Atl%C3%A1ntico&uselang=en",
+      "matches": [
+        {
+          "id": "Q51092565",
+          "label": "departmental assembly of Atlántico",
+          "description": "departmental legislature in Colombia"
+        },
+        {
+          "id": "Q109311398",
+          "label": "Asamblea Departamental del Atlántico",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--jihocesky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Jihočeský kraj",
+      "query": "Zastupitelstvo Jihočeského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:39.298368+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Jiho%C4%8Desk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q27974731",
+          "label": "South Bohemian Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--jihomoravsky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Jihomoravský kraj",
+      "query": "Zastupitelstvo Jihomoravského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:42.533289+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Jihomoravsk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q20982295",
+          "label": "South Moravian Region Assembly",
+          "description": null
+        },
+        {
+          "id": "Q21012554",
+          "label": "Zastupitelstvo Jihomoravského kraje 2000–2004",
+          "description": null
+        },
+        {
+          "id": "Q21041045",
+          "label": "Zastupitelstvo Jihomoravského kraje 2008–2012",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--karlovarsky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Karlovarský kraj",
+      "query": "Zastupitelstvo Karlovarského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:45.791238+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Karlovarsk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q27974662",
+          "label": "Karlovy Vary Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--kralovehradecky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Královéhradecký kraj",
+      "query": "Zastupitelstvo Královéhradeckého kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:49.092492+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Kr%C3%A1lov%C3%A9hradeck%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q10857284",
+          "label": "Hradec Králové Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--liberecky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Liberecký kraj",
+      "query": "Zastupitelstvo Libereckého kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:52.341356+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Libereck%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q10857285",
+          "label": "Liberec Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--moravskoslezsky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Moravskoslezský kraj",
+      "query": "Zastupitelstvo Moravskoslezského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:55.627615+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Moravskoslezsk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q27974730",
+          "label": "Moravian-Silesian Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--olomoucky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Olomoucký kraj",
+      "query": "Zastupitelstvo Olomouckého kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:16:58.868295+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Olomouck%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q10857286",
+          "label": "Olomouc Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--pardubicky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Pardubický kraj",
+      "query": "Zastupitelstvo Pardubického kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:02.110107+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Pardubick%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q27974728",
+          "label": "Pardubice Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--plzensky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Plzeňský kraj",
+      "query": "Zastupitelstvo Plzeňského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:05.406922+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Plze%C5%88sk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q21874797",
+          "label": "Plzeň Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--stredocesky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Středočeský kraj",
+      "query": "Zastupitelstvo Středočeského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:08.672827+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+St%C5%99edo%C4%8Desk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q27970216",
+          "label": "Central Bohemian Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--ustecky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Ústecký kraj",
+      "query": "Zastupitelstvo Ústeckého kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:12.141350+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+%C3%9Asteck%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q26678626",
+          "label": "Ústí nad Labem Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--vysocina",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Vysočina",
+      "query": "Zastupitelstvo kraje Vysočina",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:15.408241+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+kraje+Vyso%C4%8Dina&uselang=en",
+      "matches": [
+        {
+          "id": "Q27923767",
+          "label": "Vysočina Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "czech-republic--zlinsky-kraj",
+      "country": "Czech Republic",
+      "institution_as_recorded": "Zastupitelstvo Zlínský kraj",
+      "query": "Zastupitelstvo Zlínského kraje",
+      "language": "cs",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:18.673191+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=cs&limit=3&maxlag=5&search=Zastupitelstvo+Zl%C3%ADnsk%C3%A9ho+kraje&uselang=en",
+      "matches": [
+        {
+          "id": "Q27923823",
+          "label": "Zlín Region Assembly",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "france--new-caledonia-north-province",
+      "country": "France",
+      "institution_as_recorded": "Assemblée de la province Nord",
+      "query": "Assemblée de New Caledonia North Province",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:21.942643+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Assembl%C3%A9e+de+New+Caledonia+North+Province&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "france--new-caledonia-south-province",
+      "country": "France",
+      "institution_as_recorded": "Assemblée de la province Sud",
+      "query": "Assemblée de New Caledonia South Province",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:25.171322+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Assembl%C3%A9e+de+New+Caledonia+South+Province&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "india--punjab-india",
+      "country": "India",
+      "institution_as_recorded": "Punjab, India Legislative Assembly",
+      "query": "Punjab Legislative Assembly India",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:28.431628+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Punjab+Legislative+Assembly+India&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "indonesia--di-yogyakarta",
+      "country": "Indonesia",
+      "institution_as_recorded": "Dewan Perwakilan Rakyat Daerah Provinsi DI Yogyakarta",
+      "query": "Yogyakarta Regional House of Representatives",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:31.682834+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Yogyakarta+Regional+House+of+Representatives&uselang=en",
+      "matches": [
+        {
+          "id": "Q25461896",
+          "label": "Regional House of Representatives of Yogyakarta City",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "indonesia--dki-jakarta",
+      "country": "Indonesia",
+      "institution_as_recorded": "Dewan Perwakilan Rakyat Daerah Provinsi DKI Jakarta",
+      "query": "DKI Jakarta legislative assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:34.974772+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=DKI+Jakarta+legislative+assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "indonesia--jawa-tengah",
+      "country": "Indonesia",
+      "institution_as_recorded": "Dewan Perwakilan Rakyat Daerah Provinsi Jawa Tengah",
+      "query": "Central Java Regional House of Representatives",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:38.284025+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Central+Java+Regional+House+of+Representatives&uselang=en",
+      "matches": [
+        {
+          "id": "Q25461159",
+          "label": "Central Java Regional House of Representatives",
+          "description": "unicameral legislature of Central Java, Indonesia"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "indonesia--kalimantan-tengah",
+      "country": "Indonesia",
+      "institution_as_recorded": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Tengah",
+      "query": "Central Kalimantan Regional House of Representatives",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:41.541555+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Central+Kalimantan+Regional+House+of+Representatives&uselang=en",
+      "matches": [
+        {
+          "id": "Q25461958",
+          "label": "Central Kalimantan Regional House of Representatives",
+          "description": "unicameral legislature of Central Kalimantan, Indonesia"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "indonesia--kepulauan-riau",
+      "country": "Indonesia",
+      "institution_as_recorded": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau",
+      "query": "Riau Islands Regional House of Representatives",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:44.779266+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Riau+Islands+Regional+House+of+Representatives&uselang=en",
+      "matches": [
+        {
+          "id": "Q25461939",
+          "label": "Riau Islands Regional House of Representatives",
+          "description": "unicameral legislature of Riau Islands, Indonesia"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "italy--assemblea-legislativa-della-regione-emilia-romagna",
+      "country": "Italy",
+      "institution_as_recorded": "Assemblea legislativa della Regione Emilia-Romagna",
+      "query": "Assemblea legislativa della Regione Emilia-Romagna legislative assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:48.072042+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Assemblea+legislativa+della+Regione+Emilia-Romagna+legislative+assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "italy--assemblea-legislativa-della-regione-umbria",
+      "country": "Italy",
+      "institution_as_recorded": "Assemblea legislativa della Regione Umbria",
+      "query": "Assemblea legislativa della Regione Umbria legislative assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:51.289239+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Assemblea+legislativa+della+Regione+Umbria+legislative+assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "italy--consiglio-della-provincia-autonoma-di-bolzano",
+      "country": "Italy",
+      "institution_as_recorded": "Consiglio della Provincia Autonoma di Bolzano",
+      "query": "Consiglio provinciale di Bolzano",
+      "language": "it",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:54.524882+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=it&limit=3&maxlag=5&search=Consiglio+provinciale+di+Bolzano&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "malaysia--kedah-darulaman",
+      "country": "Malaysia",
+      "institution_as_recorded": "Dewan Undangan Negeri Kedah Darulaman",
+      "query": "Kedah Darulaman legislative assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:17:57.746137+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Kedah+Darulaman+legislative+assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "malaysia--melaka",
+      "country": "Malaysia",
+      "institution_as_recorded": "Dewan Undangan Negeri Melaka",
+      "query": "Malacca State Legislative Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:00.959207+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Malacca+State+Legislative+Assembly&uselang=en",
+      "matches": [
+        {
+          "id": "Q6740811",
+          "label": "Malacca State Legislative Assembly",
+          "description": "legislative branch of the Malacca state government"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--flevoland",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Flevoland",
+      "query": "Provinciale Staten van Flevoland",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:04.241570+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Flevoland&uselang=en",
+      "matches": [
+        {
+          "id": "Q17511162",
+          "label": "States-Provincial of Flevoland",
+          "description": "States Provincial of Flevoland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--fryslan",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Fryslân",
+      "query": "Provinciale Staten van Fryslân",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:07.499376+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Frysl%C3%A2n&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "netherlands--gelderland",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Gelderland",
+      "query": "Provinciale Staten van Gelderland",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:10.720759+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Gelderland&uselang=en",
+      "matches": [
+        {
+          "id": "Q17511167",
+          "label": "States-Provincial of Gelderland",
+          "description": "provincial council in Gelderland, Netherlands"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--groningen",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Groningen",
+      "query": "Provinciale Staten van Groningen",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:13.970799+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Groningen&uselang=en",
+      "matches": [
+        {
+          "id": "Q17052387",
+          "label": "States-Provincial of Groningen",
+          "description": "provincial council in Groningen, Netherlands"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--noord-holland",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Noord-Holland",
+      "query": "Provinciale Staten van Noord-Holland",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:17.254178+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Noord-Holland&uselang=en",
+      "matches": [
+        {
+          "id": "Q18167052",
+          "label": "States-Provincial of North Holland",
+          "description": "provincial council in North Holland, Netherlands"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--overijssel",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Overijssel",
+      "query": "Provinciale Staten van Overijssel",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:20.593844+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Overijssel&uselang=en",
+      "matches": [
+        {
+          "id": "Q27647950",
+          "label": "States-Provincial of Overijssel",
+          "description": "Dutch parliament"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--utrecht",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Utrecht",
+      "query": "Provinciale Staten van Utrecht",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:23.909803+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Utrecht&uselang=en",
+      "matches": [
+        {
+          "id": "Q27647191",
+          "label": "States-Provincial of Utrecht",
+          "description": "provincial council in Utrecht, Netherlands"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--zeeland",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Zeeland",
+      "query": "Provinciale Staten van Zeeland",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:27.197010+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Zeeland&uselang=en",
+      "matches": [
+        {
+          "id": "Q27648047",
+          "label": "States-Provincial of Zeeland",
+          "description": "provincial council in Zeeland, Netherlands"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "netherlands--zuid-holland",
+      "country": "Netherlands",
+      "institution_as_recorded": "Provinciale Staten Zuid-Holland",
+      "query": "Provinciale Staten van Zuid-Holland",
+      "language": "nl",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:30.465089+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=nl&limit=3&maxlag=5&search=Provinciale+Staten+van+Zuid-Holland&uselang=en",
+      "matches": [
+        {
+          "id": "Q17511179",
+          "label": "States-Provincial of South Holland",
+          "description": "provincial council in South Holland, Netherlands"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "panama--embera-wounaan-comarca",
+      "country": "Panama",
+      "institution_as_recorded": "Congreso General Comarca Emberá Wounaan",
+      "query": "Congreso General Emberá-Wounaan",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:33.704297+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Congreso+General+Ember%C3%A1-Wounaan&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "panama--guna-madungandi",
+      "country": "Panama",
+      "institution_as_recorded": "Congreso General Comarca Guna Madungandí",
+      "query": "Congreso General Guna Madungandí",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:36.994847+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Congreso+General+Guna+Madungand%C3%AD&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "panama--guna-wargandi",
+      "country": "Panama",
+      "institution_as_recorded": "Congreso General Comarca Guna Wargandi",
+      "query": "Congreso General Guna Wargandí",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:40.226154+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Congreso+General+Guna+Wargand%C3%AD&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "panama--guna-yala",
+      "country": "Panama",
+      "institution_as_recorded": "Congreso General Comarca Gunayala",
+      "query": "Congreso General Guna Yala",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:43.502596+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Congreso+General+Guna+Yala&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "panama--ngabe-bugle-comarca",
+      "country": "Panama",
+      "institution_as_recorded": "Congreso General Comarca Ngäbe–Buglé",
+      "query": "Congreso General Ngäbe-Buglé",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:46.741552+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Congreso+General+Ng%C3%A4be-Bugl%C3%A9&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "serbia--vojvodina",
+      "country": "Serbia",
+      "institution_as_recorded": "Assembly of the Autonomous Province of Vojvodina",
+      "query": "Assembly of Vojvodina",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:49.991494+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Assembly+of+Vojvodina&uselang=en",
+      "matches": [
+        {
+          "id": "Q3365531",
+          "label": "Assembly of Vojvodina",
+          "description": "provincial legislature in Serbia"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "slovakia--banskobystricky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Banskobystrický samosprávny kraj",
+      "query": "Banskobystrický kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:53.253837+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Banskobystrick%C3%BD+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--bratislavsky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Bratislavský samosprávny kraj",
+      "query": "Bratislavský kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:56.474901+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Bratislavsk%C3%BD+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--kosicky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Košický samosprávny kraj",
+      "query": "Košický kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:18:59.696401+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Ko%C5%A1ick%C3%BD+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--nitriansky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Nitriansky samosprávny kraj",
+      "query": "Nitriansky kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:03.001474+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Nitriansky+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--presovsky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Prešovský samosprávny kraj",
+      "query": "Prešovský kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:06.222844+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Pre%C5%A1ovsk%C3%BD+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--trenciansky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Trenčiansky samosprávny kraj",
+      "query": "Trenčiansky kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:09.444490+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Tren%C4%8Diansky+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--trnavsky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Trnavský samosprávny kraj",
+      "query": "Trnavský kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:12.665244+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Trnavsk%C3%BD+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "slovakia--zilinsky-kraj",
+      "country": "Slovakia",
+      "institution_as_recorded": "Zastupiteľstvo Žilinský samosprávny kraj",
+      "query": "Žilinský kraj Regional Assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:15.916663+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=%C5%BDilinsk%C3%BD+kraj+Regional+Assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "south-africa--free-state",
+      "country": "South Africa",
+      "institution_as_recorded": "Free State Provincial Legislature",
+      "query": "Free State Provincial Legislature",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:19.178877+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Free+State+Provincial+Legislature&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "south-africa--kwazulu-natal",
+      "country": "South Africa",
+      "institution_as_recorded": "KwaZulu-Natal Provincial Legislature",
+      "query": "KwaZulu-Natal legislative assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:22.424827+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=KwaZulu-Natal+legislative+assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "south-africa--limpopo",
+      "country": "South Africa",
+      "institution_as_recorded": "Limpopo Provincial Legislature",
+      "query": "Limpopo Provincial Legislature",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:25.642832+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Limpopo+Provincial+Legislature&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "spain--cortes-de-castilla-la-mancha",
+      "country": "Spain",
+      "institution_as_recorded": "Cortes de Castilla – La Mancha",
+      "query": "Parlamento de Cortes de Castilla – La Mancha",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:28.704897+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Parlamento+de+Cortes+de+Castilla+%E2%80%93+La+Mancha&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "spain--eusko-legebiltzarra-parlamento-vasco",
+      "country": "Spain",
+      "institution_as_recorded": "Eusko Legebiltzarra – Parlamento Vasco",
+      "query": "Parlamento de Eusko Legebiltzarra – Parlamento Vasco",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:31.940886+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Parlamento+de+Eusko+Legebiltzarra+%E2%80%93+Parlamento+Vasco&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "sri-lanka--central",
+      "country": "Sri Lanka",
+      "institution_as_recorded": "Central Provincial Council",
+      "query": "Central Provincial Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:35.179626+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Central+Provincial+Council&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "sri-lanka--north-central",
+      "country": "Sri Lanka",
+      "institution_as_recorded": "North Central Provincial Council",
+      "query": "North Central Provincial Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:38.243296+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=North+Central+Provincial+Council&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "sri-lanka--north-western",
+      "country": "Sri Lanka",
+      "institution_as_recorded": "North Western Provincial Council",
+      "query": "North Western Provincial Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:41.308758+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=North+Western+Provincial+Council&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "sri-lanka--sabaragamuwa",
+      "country": "Sri Lanka",
+      "institution_as_recorded": "Sabaragamuwa Provincial Council",
+      "query": "Sabaragamuwa Provincial Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:44.372890+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Sabaragamuwa+Provincial+Council&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "sri-lanka--southern",
+      "country": "Sri Lanka",
+      "institution_as_recorded": "Southern Provincial Council",
+      "query": "Southern Provincial Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:47.437033+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Southern+Provincial+Council&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "sri-lanka--western",
+      "country": "Sri Lanka",
+      "institution_as_recorded": "Western Provincial Council",
+      "query": "Western Provincial Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:50.500485+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Western+Provincial+Council&uselang=en",
+      "matches": [],
+      "cache_hit": true,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--brokopondo",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Brokopondo",
+      "query": "Brokopondo District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:53.563917+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Brokopondo+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--commewijne",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Commewijne",
+      "query": "Commewijne District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:19:56.793412+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Commewijne+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--coronie",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Coronie",
+      "query": "Coronie District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:00.005730+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Coronie+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--marowijne",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Marowijne",
+      "query": "Marowijne District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:03.258231+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Marowijne+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--nickerie",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Nickerie",
+      "query": "Nickerie District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:06.528232+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Nickerie+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--para",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Para",
+      "query": "Para District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:09.760191+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Para+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--paramaribo",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Paramaribo",
+      "query": "Paramaribo District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:12.991504+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Paramaribo+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--saramacca",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Saramacca",
+      "query": "Saramacca District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:16.198026+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Saramacca+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--sipaliwini",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Sipaliwini",
+      "query": "Sipaliwini District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:19.421832+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Sipaliwini+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "suriname--wanica",
+      "country": "Suriname",
+      "institution_as_recorded": "Districtsraad Wanica",
+      "query": "Wanica District Council",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:22.641567+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Wanica+District+Council&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--aargau",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grosser Rat des Kantons Aargau",
+      "query": "Grosser Rat Aargau",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:25.905917+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Grosser+Rat+Aargau&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--appenzell-innerrhoden",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grosser Rat des Kantons Appenzell Innerrhoden",
+      "query": "Grosser Rat Appenzell Innerrhoden",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:29.152330+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Grosser+Rat+Appenzell+Innerrhoden&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--basel-landschaft",
+      "country": "Switzerland",
+      "institution_as_recorded": "Landrat des Kantons Basel-Landschaft",
+      "query": "Landrat Basel-Landschaft",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:32.441553+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Landrat+Basel-Landschaft&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--basel-stadt",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grosser Rat des Kantons Basel-Stadt",
+      "query": "Grosser Rat Basel-Stadt",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:35.706137+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Grosser+Rat+Basel-Stadt&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--fribourg-freiburg",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grand Conseil du canton de Fribourg",
+      "query": "Grand Conseil Fribourg",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:38.929198+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Grand+Conseil+Fribourg&uselang=en",
+      "matches": [
+        {
+          "id": "Q664559",
+          "label": "Grand Council of Fribourg",
+          "description": "parliament of the canton of Fribourg, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--geneve-genf",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grand Conseil du canton de Genève",
+      "query": "Grand Conseil Genève",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:42.216505+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Grand+Conseil+Gen%C3%A8ve&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--glarus",
+      "country": "Switzerland",
+      "institution_as_recorded": "Landrat des Kantons Glarus",
+      "query": "Landrat Glarus",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:45.790999+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Landrat+Glarus&uselang=en",
+      "matches": [
+        {
+          "id": "Q1147334",
+          "label": "Landrat of Glarus",
+          "description": "parliament of the canton of Glarus, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--graubunden",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grosser Rat des Kantons Graubünden",
+      "query": "Grosser Rat Graubünden",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:49.030191+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Grosser+Rat+Graub%C3%BCnden&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--jura",
+      "country": "Switzerland",
+      "institution_as_recorded": "Parlement de la République et Canton du Jura",
+      "query": "Parlement Jura",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:52.455104+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Parlement+Jura&uselang=en",
+      "matches": [
+        {
+          "id": "Q2391710",
+          "label": "Parliament of Jura",
+          "description": "parliament of the canton of Jura, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--luzern",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Luzern",
+      "query": "Kantonsrat Luzern",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:55.848606+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Luzern&uselang=en",
+      "matches": [
+        {
+          "id": "Q2732017",
+          "label": "Cantonal Council of Lucerne",
+          "description": "parliament of the canton of Lucerne, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--neuchatel-neuenburg",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grand Conseil du canton de Neuchâtel",
+      "query": "Grand Conseil Neuchâtel",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:20:59.215036+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Grand+Conseil+Neuch%C3%A2tel&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--nidwalden",
+      "country": "Switzerland",
+      "institution_as_recorded": "Landrat des Kantons Nidwalden",
+      "query": "Landrat Nidwalden",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:02.447665+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Landrat+Nidwalden&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--obwalden",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Obwalden",
+      "query": "Kantonsrat Obwalden",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:05.737219+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Obwalden&uselang=en",
+      "matches": [
+        {
+          "id": "Q113156837",
+          "label": "Kantonsrat Obwalden",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--schaffhausen",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Schaffhausen",
+      "query": "Kantonsrat Schaffhausen",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:09.032181+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Schaffhausen&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--schwyz",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Schwyz",
+      "query": "Kantonsrat Schwyz",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:12.340928+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Schwyz&uselang=en",
+      "matches": [
+        {
+          "id": "Q1728101",
+          "label": "Cantonal Council of Schwyz",
+          "description": "parliament of canton Schwyz"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--solothurn",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Solothurn",
+      "query": "Kantonsrat Solothurn",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:15.571733+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Solothurn&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--st-gallen",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons St. Gallen",
+      "query": "Kantonsrat St. Gallen",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:18.823387+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+St.+Gallen&uselang=en",
+      "matches": [
+        {
+          "id": "Q2082614",
+          "label": "Cantonal Council of Sankt Gallen",
+          "description": "parliament of the canton of Sankt Gallen, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--thurgau",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grosser Rat des Kantons Thurgau",
+      "query": "Grosser Rat Thurgau",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:22.142927+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Grosser+Rat+Thurgau&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--ticino-tessin",
+      "country": "Switzerland",
+      "institution_as_recorded": "Gran Consiglio della Repubblica e Cantone Ticino",
+      "query": "Gran Consiglio Ticino",
+      "language": "it",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:25.635091+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=it&limit=3&maxlag=5&search=Gran+Consiglio+Ticino&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--uri",
+      "country": "Switzerland",
+      "institution_as_recorded": "Landrat des Kantons Uri",
+      "query": "Landrat Uri",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:28.970771+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Landrat+Uri&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "switzerland--valais-wallis",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grosser Rat des Kantons Wallis",
+      "query": "Grand Conseil Valais",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:32.274879+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Grand+Conseil+Valais&uselang=en",
+      "matches": [
+        {
+          "id": "Q2275463",
+          "label": "Grand Council of Valais",
+          "description": "parliament of the canton of Valais, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--vaud-waadt",
+      "country": "Switzerland",
+      "institution_as_recorded": "Grand Conseil du canton de Vaud",
+      "query": "Grand Conseil Vaud",
+      "language": "fr",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:35.526382+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=fr&limit=3&maxlag=5&search=Grand+Conseil+Vaud&uselang=en",
+      "matches": [
+        {
+          "id": "Q2131740",
+          "label": "Grand Council of Vaud",
+          "description": "Legislature of the canton of Vaud"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--zug",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Zug",
+      "query": "Kantonsrat Zug",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:38.773324+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Zug&uselang=en",
+      "matches": [
+        {
+          "id": "Q1948527",
+          "label": "Cantonal Council of Zug",
+          "description": "parliament of the canton of Zug, Switzerland"
+        },
+        {
+          "id": "Q113162956",
+          "label": "Kantonsrat Zug",
+          "description": null
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "switzerland--zurich",
+      "country": "Switzerland",
+      "institution_as_recorded": "Kantonsrat des Kantons Zürich",
+      "query": "Kantonsrat Zürich",
+      "language": "de",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:42.108442+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=de&limit=3&maxlag=5&search=Kantonsrat+Z%C3%BCrich&uselang=en",
+      "matches": [
+        {
+          "id": "Q2110002",
+          "label": "Cantonal Council of Zürich",
+          "description": "parliament of the Canton of Zürich, Switzerland"
+        }
+      ],
+      "cache_hit": false,
+      "outcome": "candidate_items_require_exact_review"
+    },
+    {
+      "body_id": "united-kingdom--sark",
+      "country": "United Kingdom",
+      "institution_as_recorded": "Chief Pleas of Sark",
+      "query": "Sark legislative assembly",
+      "language": "en",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:45.417056+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=3&maxlag=5&search=Sark+legislative+assembly&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--cerro-largo",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Cerro Largo",
+      "query": "Junta de Cerro Largo",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:48.680005+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Cerro+Largo&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--durazno",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Durazno",
+      "query": "Junta de Durazno",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:51.902127+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Durazno&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--flores",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Flores",
+      "query": "Junta de Flores",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:55.191087+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Flores&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--florida",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Florida",
+      "query": "Junta de Florida",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:21:58.443427+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Florida&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--lavalleja",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Lavalleja",
+      "query": "Junta de Lavalleja",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:01.991120+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Lavalleja&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--maldonado",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Maldonado",
+      "query": "Junta de Maldonado",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:05.214946+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Maldonado&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--paysandu",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Paysandú",
+      "query": "Junta de Paysandú",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:08.478098+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Paysand%C3%BA&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--rio-negro",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Río Negro",
+      "query": "Junta de Río Negro",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:11.727981+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+R%C3%ADo+Negro&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--rivera",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Rivera",
+      "query": "Junta de Rivera",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:14.961982+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Rivera&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--rocha",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Rocha",
+      "query": "Junta de Rocha",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:18.232029+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Rocha&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--salto",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Salto",
+      "query": "Junta de Salto",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:21.453579+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Salto&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--san-jose",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de San José",
+      "query": "Junta de San José",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:24.685789+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+San+Jos%C3%A9&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--soriano",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Soriano",
+      "query": "Junta de Soriano",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:27.914495+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Soriano&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--tacuarembo",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Tacuarembó",
+      "query": "Junta de Tacuarembó",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:31.165653+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Tacuaremb%C3%B3&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    },
+    {
+      "body_id": "uruguay--treinta-y-tres",
+      "country": "Uruguay",
+      "institution_as_recorded": "Junta Departamental de Treinta y Tres",
+      "query": "Junta de Treinta y Tres",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:22:34.398335+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=Junta+de+Treinta+y+Tres&uselang=en",
+      "matches": [],
+      "cache_hit": false,
+      "outcome": "no_result_after_tested_alias_not_proof_of_no_item"
+    }
+  ],
+  "queue_size": 123,
+  "finished_at": "2026-10-24T04:22:37.659162+00:00",
+  "remaining_unattempted_ids": [],
+  "previous_hold_attempts": [
+    {
+      "body_id": "argentina--chaco",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Chaco",
+      "query": "Cámara de Diputados del Chaco",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:05:45.843108+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+del+Chaco&uselang=en",
+      "outcome": "shared_cache_or_backoff_hold",
+      "error": "Wikidata cooldown: 60s remaining (API maxlag)",
+      "retry_in_seconds": 60
+    },
+    {
+      "body_id": "argentina--chaco",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Chaco",
+      "query": "Cámara de Diputados del Chaco",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:07:40.415618+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+del+Chaco&uselang=en",
+      "outcome": "shared_cache_or_backoff_hold",
+      "error": "Wikidata cooldown: 120s remaining (API maxlag)",
+      "retry_in_seconds": 120
+    },
+    {
+      "body_id": "argentina--chaco",
+      "country": "Argentina",
+      "institution_as_recorded": "Legislatura Chaco",
+      "query": "Cámara de Diputados del Chaco",
+      "language": "es",
+      "scope": "Alternate search wording only; not a confirmed new formal institution name.",
+      "checked_at": "2026-10-24T04:10:46.868504+00:00",
+      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=es&limit=3&maxlag=5&search=C%C3%A1mara+de+Diputados+del+Chaco&uselang=en",
+      "outcome": "shared_cache_or_backoff_hold",
+      "error": "Wikidata cooldown: 240s remaining (API maxlag)",
+      "retry_in_seconds": 240
+    }
+  ]
+}

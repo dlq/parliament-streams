@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Primary evidence: https://data.ipu.org/parliament/BR/BR-UC01/",
+    "Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.",
+    "Source conditions: The broad reproduction summary is limited by the specific TV Senado terms: no commercial/advertising or political/ideological use; preserve logo/credits/context; third-party transfer and some uses need authorization. Third-party footage may be cleared only for the broadcaster. Retain official link-out; no unrestricted redistribution grant is inferred.",
+    "Full decision and playback chain: reports/discovery/2026-10-23-full-queue-decisions.json",
+    "Catalogue, flags, localized country/jurisdiction search, map and planned schedule-source links reconciled. Link-out only; no HLS or implemented EPG promotion."
+  ],
+  "channel": {
+    "id": "brazil-tv-senado-official",
+    "name": "Brazil TV Senado",
+    "jurisdiction_level": "national",
+    "country_or_region": "Brazil",
+    "legislature": "Senado Federal do Brasil",
+    "external_ids": {
+      "wikidata_qid": "Q2119413",
+      "ipu_country_code": "BR",
+      "ipu_parliament_code": "BR",
+      "ipu_chamber_code": "BR-UC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2119413",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q2119413 revision 2557962810 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/BR/BR-UC01/",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+      }
+    ],
+    "language": "Portuguese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www12.senado.leg.br/tv/ao-vivo",
+    "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "always_on",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"brazil-senate-live\", \"tracks\": []}, {\"key\": \"brazil-senate-recording\", \"tracks\": []}]. "
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www12.senado.leg.br/tv/ao-vivo",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "noncommercial_pending_review",
+      "summary": "The broad reproduction summary is limited by the specific TV Senado terms: no commercial/advertising or political/ideological use; preserve logo/credits/context; third-party transfer and some uses need authorization. Third-party footage may be cleared only for the broadcaster. Retain official link-out; no unrestricted redistribution grant is inferred.",
+      "evidence": [
+        "https://www12.senado.leg.br/assessoria-de-imprensa/politica-de-uso"
+      ],
+      "recommendation": "Watch the official TV Senado service. Preserve its specific use restrictions; do not infer unrestricted redistribution or that on-air TV is a live chamber sitting."
+    }
+  }
+}

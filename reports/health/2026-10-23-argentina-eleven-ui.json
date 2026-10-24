@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-23T22:44:10.640Z",
+  "allPassed": true,
+  "checks": [
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Argentine province and autonomous-city polygons and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 1280,
+      "catalogue": 188,
+      "regions": 90,
+      "validatedNewEntries": 11,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Argentine province and autonomous-city polygons and source links; schedule -> planned indexes",
+      "engine": "chromium",
+      "width": 320,
+      "catalogue": 188,
+      "regions": 90,
+      "validatedNewEntries": 11,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Argentine province and autonomous-city polygons and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 1280,
+      "catalogue": 188,
+      "regions": 90,
+      "validatedNewEntries": 11,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "browser_path": "Regular Playwright: Browser plugin not available",
+      "flow": "Catalogue search -> exact institution details/link; map search -> Argentine province and autonomous-city polygons and source links; schedule -> planned indexes",
+      "engine": "webkit",
+      "width": 320,
+      "catalogue": 188,
+      "regions": 90,
+      "validatedNewEntries": 11,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "additional_verification": "All11 selected regional polygon bounding-box centres are inside the SVG viewport after the known260ms map transition, in all four browser/width flows. Earlier offscreen screenshot was mid-transition; no application change required."
+}

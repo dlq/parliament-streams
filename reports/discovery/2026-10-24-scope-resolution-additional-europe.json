@@ -1,0 +1,478 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Bounded resolution of known additional inventory scope notes: three Basque foral legislatures; Norwegian/Swedish Sámi institutions; Longyearbyen; Luxembourg Conseil d’État; RAEOA/Ataúro; Fernando de Noronha. Inventory/authority only.",
+  "rule_source": "docs/catalogue-scope.md",
+  "user_scope": "First-level and autonomous special-status legislatures; ordinary municipal and individual-community governments excluded.",
+  "source_register": "reports/discovery/2026-10-24-inventory-reconciliation.json",
+  "summary": {
+    "records_reviewed": 11,
+    "eligible_legislature": 3,
+    "outside_default_scope": 8,
+    "specific_authority_evidence_holds": 0,
+    "new_catalogue_sources": 0
+  },
+  "common_basque_finding": "The three historical territories are nested in the Basque Country but have a distinct protected foral regime, substantial territorial tax/normative authority and parliamentary budget/executive control. Under the user’s autonomous special-status scope, nesting alone does not exclude them. Law 27/1983 article 6(2) reserves formal Ley rank to the Basque Parliament; its article 8 separately recognises Juntas Normas Forales in exclusive fields, including substitution of Basque legislation. This decision does not equate every Norma Foral with an Act of the Basque Parliament.",
+  "records": [
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "spain--basque-country--araba-juntas-generales",
+      "country": "Spain",
+      "name": "Juntas Generales de Álava / Arabako Batzar Nagusiak",
+      "jurisdiction": "Historical Territory of Álava/Araba",
+      "parent_jurisdiction": "Basque Country autonomous community, Spain",
+      "relationship": "autonomous_special_status_foral_territory_nested_within_autonomous_community",
+      "authority_status": "eligible_legislature",
+      "decision": "Add this distinct foral territorial legislature under the autonomous special-status scope; retain its nesting under the Basque Country.",
+      "legislative_authority_finding": "Shares the statute-protected territorial normative and tax regime explained in common_basque_finding; individual institutional provision identifies this organ.",
+      "budget_and_executive_control_finding": "Own institutional text gives the Juntas territorial budget approval, election of the Diputado General and control of the foral executive.",
+      "primary_evidence_refs": [
+        "basque-statute",
+        "basque-territories-law",
+        "basque-tax-agreement",
+        "araba-institution"
+      ],
+      "scope_limits": [
+        "Not an additional autonomous community or national chamber.",
+        "Formal Normas Forales do not all have rank of Ley; eligibility rests on substantive protected foral authority and executive/budget accountability.",
+        "Do not extend this finding to ordinary Spanish provincial deputations, cabildos or island councils without their own authority review."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "spain--basque-country--bizkaia-juntas-generales",
+      "country": "Spain",
+      "name": "Juntas Generales de Bizkaia / Bizkaiko Batzar Nagusiak",
+      "jurisdiction": "Historical Territory of Bizkaia",
+      "parent_jurisdiction": "Basque Country autonomous community, Spain",
+      "relationship": "autonomous_special_status_foral_territory_nested_within_autonomous_community",
+      "authority_status": "eligible_legislature",
+      "decision": "Add this distinct foral territorial legislature under the autonomous special-status scope; retain its nesting under the Basque Country.",
+      "legislative_authority_finding": "Shares the statute-protected territorial normative and tax regime explained in common_basque_finding; individual institutional provision identifies this organ.",
+      "budget_and_executive_control_finding": "Own institutional text gives the Juntas territorial budget approval, election of the Diputado General and control of the foral executive.",
+      "primary_evidence_refs": [
+        "basque-statute",
+        "basque-territories-law",
+        "basque-tax-agreement",
+        "bizkaia-institution"
+      ],
+      "scope_limits": [
+        "Not an additional autonomous community or national chamber.",
+        "Formal Normas Forales do not all have rank of Ley; eligibility rests on substantive protected foral authority and executive/budget accountability.",
+        "Do not extend this finding to ordinary Spanish provincial deputations, cabildos or island councils without their own authority review."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "spain--basque-country--gipuzkoa-juntas-generales",
+      "country": "Spain",
+      "name": "Juntas Generales de Gipuzkoa / Gipuzkoako Batzar Nagusiak",
+      "jurisdiction": "Historical Territory of Gipuzkoa",
+      "parent_jurisdiction": "Basque Country autonomous community, Spain",
+      "relationship": "autonomous_special_status_foral_territory_nested_within_autonomous_community",
+      "authority_status": "eligible_legislature",
+      "decision": "Add this distinct foral territorial legislature under the autonomous special-status scope; retain its nesting under the Basque Country.",
+      "legislative_authority_finding": "Shares the statute-protected territorial normative and tax regime explained in common_basque_finding; individual institutional provision identifies this organ.",
+      "budget_and_executive_control_finding": "Own institutional text gives the Juntas territorial budget approval, election of the Diputado General and control of the foral executive.",
+      "primary_evidence_refs": [
+        "basque-statute",
+        "basque-territories-law",
+        "basque-tax-agreement",
+        "gipuzkoa-institution"
+      ],
+      "scope_limits": [
+        "Not an additional autonomous community or national chamber.",
+        "Formal Normas Forales do not all have rank of Ley; eligibility rests on substantive protected foral authority and executive/budget accountability.",
+        "Do not extend this finding to ordinary Spanish provincial deputations, cabildos or island councils without their own authority review."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "norway--sami-parliament",
+      "country": "Norway",
+      "name": "Sámediggi / Sametinget (Sámi Parliament of Norway)",
+      "jurisdiction": "Sámi people in Norway; nonterritorial representative jurisdiction",
+      "parent_jurisdiction": "Norway",
+      "relationship": "national_indigenous_representative_and_cultural_autonomy_institution",
+      "authority_status": "outside_default_scope",
+      "decision": "Retain an explicit exclusion from first-level/autonomous territorial legislature inventory.",
+      "legislative_authority_finding": "Statutory consultation, representation and specifically assigned decisions are substantial, but do not establish a general autonomous territorial lawmaking jurisdiction.",
+      "budget_and_executive_control_finding": "Controls its internal administration and delegated Sámi-purpose funds; grant/flag regulations and elected organisation do not constitute territorial legislative government.",
+      "primary_evidence_refs": [
+        "norway-sami-act"
+      ],
+      "scope_limits": [
+        "Do not describe it as powerless or merely informal consultation.",
+        "Sápmi cultural geography and language-administration areas are not a new territorial legislature boundary."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "sweden--sami-parliament",
+      "country": "Sweden",
+      "name": "Sametinget (Sámi Parliament of Sweden)",
+      "jurisdiction": "Sámi people in Sweden; nonterritorial representative jurisdiction",
+      "parent_jurisdiction": "Sweden",
+      "relationship": "national_indigenous_elected_representative_body_and_special_state_agency",
+      "authority_status": "outside_default_scope",
+      "decision": "Retain an explicit exclusion from first-level/autonomous territorial legislature inventory.",
+      "legislative_authority_finding": "Current Sametingslag defines a special agency with Sámi cultural and assigned administrative/consultation tasks, rather than autonomous territorial legislative competence.",
+      "budget_and_executive_control_finding": "Elected plenum chooses an accountable board and administers funds; those powers belong to the specified agency framework.",
+      "primary_evidence_refs": [
+        "sweden-sami-act"
+      ],
+      "scope_limits": [
+        "Distinct assessment from Finland/Norway; not an exclusion based on its name or Indigenous status.",
+        "Do not confuse actual public-authority decisions with general territorial lawmaking."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "norway--svalbard--longyearbyen-local-council",
+      "country": "Norway",
+      "name": "Longyearbyen lokalstyre / Longyearbyen Community Council",
+      "jurisdiction": "Longyearbyen planning area, Svalbard",
+      "parent_jurisdiction": "Svalbard under Norwegian sovereignty",
+      "relationship": "municipal_like_local_government_within_special_status_territory",
+      "authority_status": "outside_default_scope",
+      "decision": "Exclude this local council; do not invent a Svalbard-wide territorial parliament.",
+      "legislative_authority_finding": "The chapter 5 local-government framework covers Longyearbyen’s planning area, with municipal-like services and regulation rather than autonomous Svalbard territorial legislation.",
+      "budget_and_executive_control_finding": "Has meaningful local budget, service and administrative decisions, but remains within the excluded municipal tier.",
+      "primary_evidence_refs": [
+        "svalbard-law",
+        "svalbard-policy"
+      ],
+      "scope_limits": [
+        "Exclusion is by local tier and function, not by the term council.",
+        "Governor/central government administration of the archipelago is distinct from this elected local body."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "luxembourg--conseil-detat",
+      "country": "Luxembourg",
+      "name": "Conseil d’État",
+      "jurisdiction": "Luxembourg, national constitutional review/advisory institution",
+      "parent_jurisdiction": "Luxembourg",
+      "relationship": "national_constitutional_advisory_institution_with_suspensive_legislative_role",
+      "authority_status": "outside_default_scope",
+      "decision": "Record the role explicitly; do not add a second national parliamentary chamber.",
+      "legislative_authority_finding": "Constitutional opinions and agreement to waive the Chamber’s second vote include a real suspensive power, but the Chamber retains law adoption.",
+      "budget_and_executive_control_finding": "No separate territorial executive or budget-legislature relationship is established by this Council’s constitutional role.",
+      "primary_evidence_refs": [
+        "luxembourg-constitution",
+        "luxembourg-role",
+        "luxembourg-council-law"
+      ],
+      "scope_limits": [
+        "Not excluded merely because unelected: the decisive point is its constitutional organ/function within a unicameral system.",
+        "Do not call its role purely consultative or claim it has no influence over enactment timing."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "timor-leste--oecusse-ambeno--authority",
+      "country": "Timor-Leste",
+      "name": "Autoridade da Região Administrativa Especial de Oe-Cusse Ambeno",
+      "jurisdiction": "Região Administrativa Especial de Oe-Cusse Ambeno",
+      "parent_jurisdiction": "Timor-Leste",
+      "relationship": "centrally_supervised_regional_deliberative_administrative_authority",
+      "authority_status": "outside_default_scope",
+      "decision": "Record an administrative special region without an eligible regional parliament.",
+      "legislative_authority_finding": "The operative 2026 decree identifies the Authority’s administrative deliberative class, applying municipal administrative competences; the founding framework excludes legislative autonomy.",
+      "budget_and_executive_control_finding": "Authority/President manage supervised plans, budgets and expenditure; this is not parliamentary control by a separate representative legislature.",
+      "primary_evidence_refs": [
+        "raeo-foundation",
+        "raeo-2026"
+      ],
+      "scope_limits": [
+        "Special regional status and the term deliberative do not alone establish a parliament.",
+        "Use DL 1/2026; the repealed2015 organisational decree alone is insufficient."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "timor-leste--oecusse-ambeno--consultative-council",
+      "country": "Timor-Leste",
+      "name": "Conselho Consultivo da Região Administrativa Especial de Oe-Cusse Ambeno",
+      "jurisdiction": "Região Administrativa Especial de Oe-Cusse Ambeno",
+      "parent_jurisdiction": "Timor-Leste",
+      "relationship": "regional_administrative_presidents_consultative_council",
+      "authority_status": "outside_default_scope",
+      "decision": "Retain separately as a nonlegislative organ of the same region.",
+      "legislative_authority_finding": "DL 1/2026 articles 14–17 expressly constitute a consultative council to the regional President, with municipal consultative-law functions.",
+      "budget_and_executive_control_finding": "Consultation in supervised regional administration is not a separate legislative budget or executive confidence chamber.",
+      "primary_evidence_refs": [
+        "raeo-2026"
+      ],
+      "scope_limits": [
+        "Same special region as the Authority record; not another territory."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "timor-leste--atauro--general-council",
+      "country": "Timor-Leste",
+      "name": "Conselho Geral da Autoridade Administrativa de Ataúro",
+      "jurisdiction": "Island of Ataúro",
+      "parent_jurisdiction": "Timor-Leste",
+      "relationship": "local_state_administrative_authority_deliberative_supervisory_council",
+      "authority_status": "outside_default_scope",
+      "decision": "Retain an explicit administrative-authority exclusion, including its General Council.",
+      "legislative_authority_finding": "DL 82/2023 gives administrative oversight and proposals to ministers, not an autonomous territorial legislative power.",
+      "budget_and_executive_control_finding": "General Council approves plans/budgets subject to ministerial homologation. Its supervisory power is real; central tutelage appoints sector representatives and directs the authority.",
+      "primary_evidence_refs": [
+        "atauro-foundation",
+        "atauro-implementation"
+      ],
+      "scope_limits": [
+        "Do not describe the Council as merely ceremonial; it has administrative approval and scrutiny functions.",
+        "The ministerial oversight and local administrative class, rather than appointment alone, determine scope."
+      ]
+    },
+    {
+      "reviewed_on": "2026-10-24",
+      "legal_authority_gate_resolved": true,
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_and_rights_review_performed": false,
+      "inventory_id_status": "suggested_stable_id_for_integration_not_existing_catalogue_id",
+      "id": "brazil--pernambuco--fernando-de-noronha-district-council",
+      "country": "Brazil",
+      "name": "Conselho Distrital de Fernando de Noronha",
+      "jurisdiction": "Distrito Estadual de Fernando de Noronha",
+      "parent_jurisdiction": "Pernambuco state, Brazil",
+      "relationship": "state_territorial_autarchy_elected_consultation_and_scrutiny_council",
+      "authority_status": "outside_default_scope",
+      "decision": "Retain an explicit exclusion; Pernambuco’s state legislature supplies legislative authority.",
+      "legislative_authority_finding": "Organic Law36–37 gives consultation/scrutiny and proposals through the administrator/state process; local street naming and internal resolutions do not establish regional lawmaking.",
+      "budget_and_executive_control_finding": "Council approves accounts and reviews budget proposals, but district spending is in Pernambuco’s budget law; the governor appoints the administrator.",
+      "primary_evidence_refs": [
+        "noronha-organic-law",
+        "noronha-current-class"
+      ],
+      "scope_limits": [
+        "Election, account approval and public hearings are acknowledged; they do not by themselves make this a territorial legislature.",
+        "The separate environmental council CONDIMA is not the elected District Council."
+      ]
+    }
+  ],
+  "primary_source_register": {
+    "basque-statute": {
+      "url": "https://boe.es/diario_boe/txt.php?id=BOE-A-1979-30177&lang=es",
+      "instrument": "Organic Law 3/1979, Basque Statute of Autonomy",
+      "provisions": "articles 24,37,41",
+      "finding": "Protects the historical territories’ own foral institutions and exclusive competences, including their budgets; article 41 preserves territorial tax-regime powers.",
+      "evidence_level": "primary_official_statute_section_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Foundational statute read through official BOE text; no complete amendment census certified."
+    },
+    "basque-territories-law": {
+      "url": "https://boe.es/buscar/act.php?id=BOE-A-2012-5193",
+      "instrument": "Basque Law 27/1983, relations between common institutions and foral organs",
+      "provisions": "articles 6(2),7,8(1)(a)",
+      "finding": "Article6(2) reserves formal law rank to the Basque Parliament. Article8 separately recognises foral normative authority in exclusive fields, including replacement of Basque legislation through Juntas Normas Forales.",
+      "evidence_level": "primary_official_consolidated_statute_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "BOE consolidation labels latest update31 December 2021; consolidated text is informational."
+    },
+    "basque-tax-agreement": {
+      "url": "https://www.boe.es/buscar/pdf/2002/BOE-A-2002-9969-consolidado.pdf",
+      "instrument": "Law 12/2002, Economic Agreement with the Basque Country",
+      "provisions": "annex, article1",
+      "finding": "Competent institutions of the historical territories may establish and regulate their territorial tax regimes.",
+      "evidence_level": "primary_search_index_official_statute_section_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Current BOE PDF indexed text read; full latest-amendment consolidation not certified."
+    },
+    "araba-institution": {
+      "url": "https://www.jjggalava.eus/funciones-generales",
+      "instrument": "Juntas Generales de Álava institutional account quoting Norma Foral 7 March 1983",
+      "provisions": "article 4; general functions",
+      "finding": "Identifies the Juntas as representative organ with normative power, election of the Diputado General, budget approval and executive control.",
+      "evidence_level": "primary_institution_page_and_quoted_statutory_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Maintained institutional page read24 October 2026; quoted core provision, not a complete contemporary law consolidation."
+    },
+    "bizkaia-institution": {
+      "url": "https://jjggbizkaia.eus/documents/8778164/0/A02-I%2B2023%2Bnoviem%2B(1).pdf/2b516b33-0d93-fede-d799-8b12850876bb?t=1751881013374",
+      "instrument": "Norma Foral 3/1987, election, organisation, regime and functioning of Bizkaia institutions",
+      "provisions": "articles 4–7",
+      "finding": "The Juntas exercise normative power, elect the Diputado General, approve budgets and control the Diputación; Normas Forales outrank executive decrees.",
+      "evidence_level": "primary_own_institution_statute_pdf_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "November 2023 institutional compilation linked by current Juntas normative index; no complete 2026 amendment census."
+    },
+    "gipuzkoa-institution": {
+      "url": "https://egoitza.gipuzkoa.eus/ogasuna/normativa/docs/0001202c.pdf",
+      "instrument": "Norma Foral 6/2005, institutional organisation, government and administration of Gipuzkoa",
+      "provisions": "articles 4–6",
+      "finding": "The elected Juntas exercise normative power, choose the Diputado General, approve territorial budgets and control the executive; article 6 identifies the Normas Forales regime.",
+      "evidence_level": "primary_own_government_statute_pdf_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Informational consolidation effective24 March 2021, expressly without official legal character. Core authority corroborates Basque statute/Law 27/1983; no claim of every 2026 amendment."
+    },
+    "norway-sami-act": {
+      "url": "https://www.regjeringen.no/en/documents/the-sami-act-/id449701/",
+      "instrument": "Sámi Act, official government English publication",
+      "provisions": "sections1-6,2-1,2-12,2-14; chapter 4",
+      "finding": "Combines elected representation, statements and referrals, grant administration/regulations, internal governance and statutory consultation; this is not a general territorial legislative jurisdiction.",
+      "evidence_level": "primary_official_statute_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Government publication dated2 July 2025 includes consultation chapter 4. Used for legal class, not all subsequent administrative delegations."
+    },
+    "sweden-sami-act": {
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sametingslag-19921433_sfs-1992-1433/",
+      "instrument": "Sametingslag 1992:1433",
+      "provisions": "1kap1§;2kap1–1a,4–5§§;3kap2§",
+      "finding": "Defines a special agency focused on Sámi culture, grants, consultation, language, planning participation and other assigned tasks; elected plenum and accountable board are within that nonterritorial framework.",
+      "evidence_level": "primary_official_current_consolidated_statute_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Riksdag text explicitly amended through SFS 2026:136; current retrieved law, not an older reform proposal."
+    },
+    "svalbard-law": {
+      "url": "https://lovdata.no/lov/1925-07-17-11/jf",
+      "instrument": "Svalbard Act1925 chapter 5",
+      "provisions": "sections29–32",
+      "finding": "Local self-government applies to Longyearbyen’s planning area; the elected local council acts for that local entity.",
+      "evidence_level": "primary_search_index_statute_section_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Indexed actual statute reviewed; direct reader unavailable. Current class corroborated by2023–24 government white paper; no complete 2026 consolidation claim."
+    },
+    "svalbard-policy": {
+      "url": "https://www.regjeringen.no/en/documents/meld.-st.-26-20232024/id3041130/?ch=2",
+      "instrument": "Meld.St26(2023–2024), Svalbard",
+      "provisions": "sections2.2.3 and2.6.3",
+      "finding": "Council jurisdiction is limited to the Longyearbyen planning area. Its legal framework applies many Local Government Act provisions; the Governor is the government’s highest archipelago representative.",
+      "evidence_level": "primary_current_framework_government_white_paper_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "2023–24 parliamentary white paper, read24 October 2026; municipal-like class, not current personnel verification."
+    },
+    "luxembourg-constitution": {
+      "url": "https://conseil-etat.public.lu/fr/legislation/extraits_constitution.html",
+      "instrument": "Luxembourg Constitution, official Conseil d’État extracts",
+      "provisions": "articles 78(4),95",
+      "finding": "The Council gives opinions. Refusal to agree to dispense with the Chamber’s second vote imposes a minimum three-month interval, rather than a Council law-adoption vote.",
+      "evidence_level": "primary_own_institution_constitution_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Explicit version in force1 July 2023, reviewed24 October 2026."
+    },
+    "luxembourg-role": {
+      "url": "https://gouvernement.lu/fr/systeme-politique/conseil-etat.html",
+      "instrument": "Luxembourg government: Conseil d’État",
+      "provisions": "legislative attributions and suspensive veto",
+      "finding": "Government describes Luxembourg as unicameral and recognises the Council’s real suspensive veto, exceeding ordinary consultation but not making it a second chamber.",
+      "evidence_level": "primary_government_institutional_framework_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Read on 24 October 2026; inventory and authority only."
+    },
+    "luxembourg-council-law": {
+      "url": "https://conseil-etat.public.lu/fr/legislation/Loidu16juin2017.html",
+      "instrument": "Modified Law 16 June 2017 on organisation of the Conseil d’État",
+      "provisions": "article19",
+      "finding": "Public plenary decisions agree or refuse the second-vote waiver; refusal must be reasoned.",
+      "evidence_level": "primary_own_institution_statute_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Maintained modified-law text read24 October 2026; constitutional role corroborated by current official framework."
+    },
+    "raeo-foundation": {
+      "url": "https://mj.gov.tl/jornal/?q=node%2F6670",
+      "instrument": "Law 3/2014 creating RAEOA, original text",
+      "provisions": "preamble;articles8–10,16–24",
+      "finding": "Original scheme expressly excludes legislative competence; regional orders/regulations implement national law. Authority and consultative organs administer rather than form a regional parliament.",
+      "evidence_level": "primary_gazette_original_statute_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Original2014 text only; amended2019/2022/2023. Current organ classification is separately anchored in DL 1/2026, not this unamended text alone."
+    },
+    "raeo-2026": {
+      "url": "https://www.mj.gov.tl/jornal/public/docs/2026/serie_1/SERIE_I_NO_4_C.pdf",
+      "instrument": "Decree-Law 1/2026, RAEOA",
+      "provisions": "articles 1–8,10–17,26–28,33–34",
+      "finding": "Current framework retains a deliberative Authority, executive President and Consultative Council under central tutelage; municipal administrative law supplies duties and subsidiary rules. Plans, budgeting and expenditure remain administratively supervised.",
+      "evidence_level": "primary_official_gazette_statute_pdf_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Operative instrument2 February 2026, applying Law 3/2014 as amended through 18/2023. Article34 revokes DL 5/2015. No inference that its administrative autonomy creates a legislature."
+    },
+    "atauro-foundation": {
+      "url": "https://mj.gov.tl/jornal/public/docs/2023/serie_1/SERIE_I_NO_44_B.pdf",
+      "instrument": "Decree-Law 82/2023, Autoridade Administrativa de Ataúro",
+      "provisions": "articles 2,4–8,13–17",
+      "finding": "Creates a local administrative authority under ministerial tutelage. General Council supervises services and approves administrative plans/budgets for superior homologation; substantive local regulatory proposals go to the responsible minister.",
+      "evidence_level": "primary_official_gazette_statute_pdf_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Published23 November 2023; later ministerial implementation and current 2026 ministry directory corroborate continued administrative class. No complete amendment census."
+    },
+    "atauro-implementation": {
+      "url": "https://mj.gov.tl/jornal/public/docs/2024/serie_1/SERIE_I_NO_23.pdf",
+      "instrument": "Ministerial Diploma42/2024",
+      "provisions": "preamble;article1 and annex",
+      "finding": "Homologates the General Council’s organisation rules and identifies the authority as a local state-administration service, implementing DL 82/2023.",
+      "evidence_level": "primary_official_gazette_ministerial_instrument_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Published5 June 2024, distinguishing administrative implementation from autonomous territorial legislation."
+    },
+    "noronha-organic-law": {
+      "url": "https://www.noronha.pe.gov.br/wp-content/uploads/2022/09/LEI-No-11.304-DE-28-DE-DEZEMBRO-DE-1995.pdf",
+      "instrument": "Pernambuco Law 11.304/1995, Fernando de Noronha Organic Law",
+      "provisions": "articles 16,36–37,43,51",
+      "finding": "Elected district council advises, scrutinises, approves accounts and proposes legislation through the administrator/state process. The governor appoints the administrator and the district budget integrates Pernambuco’s budget law.",
+      "evidence_level": "primary_own_district_organic_law_pdf_section_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "District-hosted PDF includes amendments at least through March 2022; not represented as fully consolidated through 2026."
+    },
+    "noronha-current-class": {
+      "url": "https://www.noronha.pe.gov.br/transparencia/informacoes-institucionais/",
+      "instrument": "Fernando de Noronha institutional transparency page",
+      "provisions": "institutional nature and2025 district council",
+      "finding": "Describes the district as part of the state executive’s indirect administration, linked under Law 18.139/2023; lists the district council separately.",
+      "evidence_level": "primary_own_district_current_institutional_page_text_review",
+      "reviewed_on": "2026-10-24",
+      "currentness": "Maintained page read24 October 2026; its council roster is expressly2025, so no2026-personnel certification."
+    }
+  },
+  "counting_note": "Three additions are distinct foral institutions beneath one existing autonomous community. RAEOA’s Authority and Consultative Council are two excluded organs of one region; do not count them as two territories. Suggested IDs require root integration/deduplication.",
+  "bounded_review_limits": [
+    "Not a certification of all 71 countries’ completeness or all2026 statutory amendments.",
+    "Australia/France/Chile remaining special-territory class notes are assigned to the parent; Papua assigned separately.",
+    "Metadata, institutional route accessibility, services, streams, EPG and media rights remain later-phase work."
+  ],
+  "no_external_messages_or_upstream_edits": true
+}

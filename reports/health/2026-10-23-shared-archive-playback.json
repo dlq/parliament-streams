@@ -1,0 +1,440 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Follow at most two public archive/recorded-meeting links from selected official media indexes. No login, TLS, challenge or consent bypass. A selected link and decoded playback remain provisional until content/identity review.",
+  "total_jobs": 4,
+  "completed_jobs": 4,
+  "results": [
+    {
+      "id": "poland--dolnoslaskie",
+      "country": "poland",
+      "institution": "DOLNY \u015aL\u0104SK\u00a0>\u00a0Sejmik\u00a0>\u00a0Aktualno\u015bci",
+      "institution_url": "https://umwd.dolnyslask.pl/sejmik/aktualnosci/",
+      "start_url": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+      "checked_at": "2026-10-23T19:59:01.157Z",
+      "navigation": [
+        {
+          "url": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+          "status": 200,
+          "final_url": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+          "title": "DOLNY \u015aL\u0104SK\u00a0>\u00a0Sejmik\u00a0>\u00a0Retransmisje z sesji Sejmiku",
+          "excerpt": "Strona g\u0142\u00f3wna\nDla medi\u00f3w\ne-Puap\nBIP\nTwitter\nFacebook\nDla nies\u0142ysz\u0105cych\nInformacja o plikach cookies\nwersja graficzna\nwersja dla niedowidz\u0105cych\n \nSEJMIK\nURZ\u0104D MARSZA\u0141KOWSKI\nFUNDUSZE EUROPEJSKIE\nEDUKACJA\nZDROWIE\nKULTURA\nROZW\u00d3J OBSZAR\u00d3W WIEJSKICH\nBIURO W BRUKSELI\nSPORT\nPROJEKTY SPO\u0141ECZNE\n(NIE)PE\u0141NOSPRAWNI\nROZW\u00d3J REGIONALNY\nGOSPODARKA\nWSP\u00d3\u0141PRACA Z ZAGRANIC\u0104\nJEDNOSTKI ORGANIZACYJNE\nTURYSTYKA\nTRANSPORT I DROGI\nKOLEJE\nBEZPIECZE\u0143STWO\nROZW\u00d3J MIAST I AGLOMERACJI\nM\u0141ODY DOLNY \u015aL\u0104SK\nSPO\u0141ECZE\u0143STWO INFORMACYJNE\nEWT\nDOLNY \u015aL\u0104SKSejmikRetransmisje z sesji Sejmiku\nAktualno\u015bci\nSejmik i jego organy\nPrace Sejmiku i jego organ\u00f3w\nRadni wojew\u00f3dztwa\nPetycje\nPatronaty\nOdznaczenia i nagrody Sejmiku\nKancelaria Sejmiku\nR"
+        }
+      ],
+      "proceedings_verified": false,
+      "remaining_links": [
+        {
+          "text": "",
+          "url": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+          "score": 25
+        },
+        {
+          "text": "Retransmisje z sesji Sejmiku",
+          "url": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+          "score": 25
+        },
+        {
+          "text": "Retransmisje z sesji Sejmiku",
+          "url": "https://umwd.dolnyslask.pl/sejmik/retransmisje-z-sesji-sejmiku/",
+          "score": 25
+        }
+      ],
+      "outcome": "archive_or_event_navigation_unresolved"
+    },
+    {
+      "id": "poland--slaskie",
+      "country": "poland",
+      "institution": "Strona g\u0142\u00f3wna - Sejmik Wojew\u00f3dztwa \u015al\u0105skiego",
+      "institution_url": "https://sejmik.slaskie.pl/",
+      "start_url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/",
+      "checked_at": "2026-10-23T19:59:01.158Z",
+      "navigation": [
+        {
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/",
+          "status": 200,
+          "final_url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/",
+          "title": "Transmisja i nagrania sesji - Biuletyn Informacji Publicznej Samorz\u0105du Wojew\u00f3dztwa \u015al\u0105skiego",
+          "excerpt": "\ud83c\udf6a Polityka cookies & prywatno\u015bci\n\nInformujemy, i\u017c w celu optymalizacji tre\u015bci dost\u0119pnych w naszym serwisie i dostosowania ich do Pa\u0144stwa indywidualnych potrzeb korzystamy z informacji zapisanych za pomoc\u0105 plik\u00f3w cookies na urz\u0105dzeniach ko\u0144cowych u\u017cytkownik\u00f3w. Pliki cookies u\u017cytkownik mo\u017ce kontrolowa\u0107 za pomoc\u0105 ustawie\u0144 swojej przegl\u0105darki internetowej. Dalsze korzystanie z naszego serwisu internetowego bez zmiany ustawie\u0144 przegl\u0105darki internetowej oznacza, i\u017c u\u017cytkownik akceptuje stosowanie plik\u00f3w cookies.\n\nAkceptuj\u0119Poka\u017c wszystkie\nPrzejd\u017a do g\u0142\u00f3wnej tre\u015bci\nPrzejd\u017a do menu\nPrzejd\u017a do stopki (dane kontaktowe)\nPrzejd\u017a do mapy serwisu\nStrona g\u0142\u00f3wna\nMapa serwisu\nKontakt\nJ\u0119zyk migowy\nDla niepe\u0142n",
+          "followed_link": {
+            "text": "Harmonogram sesji Sejmiku ",
+            "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/harmonogram",
+            "score": 25
+          }
+        },
+        {
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/harmonogram",
+          "status": 200,
+          "final_url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/harmonogram",
+          "title": "Harmonogram sesji - Biuletyn Informacji Publicznej Samorz\u0105du Wojew\u00f3dztwa \u015al\u0105skiego",
+          "excerpt": "\ud83c\udf6a Polityka cookies & prywatno\u015bci\n\nInformujemy, i\u017c w celu optymalizacji tre\u015bci dost\u0119pnych w naszym serwisie i dostosowania ich do Pa\u0144stwa indywidualnych potrzeb korzystamy z informacji zapisanych za pomoc\u0105 plik\u00f3w cookies na urz\u0105dzeniach ko\u0144cowych u\u017cytkownik\u00f3w. Pliki cookies u\u017cytkownik mo\u017ce kontrolowa\u0107 za pomoc\u0105 ustawie\u0144 swojej przegl\u0105darki internetowej. Dalsze korzystanie z naszego serwisu internetowego bez zmiany ustawie\u0144 przegl\u0105darki internetowej oznacza, i\u017c u\u017cytkownik akceptuje stosowanie plik\u00f3w cookies.\n\nAkceptuj\u0119Poka\u017c wszystkie\nPrzejd\u017a do g\u0142\u00f3wnej tre\u015bci\nPrzejd\u017a do menu\nPrzejd\u017a do stopki (dane kontaktowe)\nPrzejd\u017a do mapy serwisu\nStrona g\u0142\u00f3wna\nMapa serwisu\nKontakt\nJ\u0119zyk migowy\nDla niepe\u0142n",
+          "followed_link": {
+            "text": "Protoko\u0142y z sesji Sejmiku ",
+            "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/protokoly",
+            "score": 25
+          }
+        },
+        {
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/protokoly",
+          "status": 200,
+          "final_url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/protokoly",
+          "title": "Protoko\u0142y - Biuletyn Informacji Publicznej Samorz\u0105du Wojew\u00f3dztwa \u015al\u0105skiego",
+          "excerpt": "\ud83c\udf6a Polityka cookies & prywatno\u015bci\n\nInformujemy, i\u017c w celu optymalizacji tre\u015bci dost\u0119pnych w naszym serwisie i dostosowania ich do Pa\u0144stwa indywidualnych potrzeb korzystamy z informacji zapisanych za pomoc\u0105 plik\u00f3w cookies na urz\u0105dzeniach ko\u0144cowych u\u017cytkownik\u00f3w. Pliki cookies u\u017cytkownik mo\u017ce kontrolowa\u0107 za pomoc\u0105 ustawie\u0144 swojej przegl\u0105darki internetowej. Dalsze korzystanie z naszego serwisu internetowego bez zmiany ustawie\u0144 przegl\u0105darki internetowej oznacza, i\u017c u\u017cytkownik akceptuje stosowanie plik\u00f3w cookies.\n\nAkceptuj\u0119Poka\u017c wszystkie\nPrzejd\u017a do g\u0142\u00f3wnej tre\u015bci\nPrzejd\u017a do menu\nPrzejd\u017a do stopki (dane kontaktowe)\nPrzejd\u017a do mapy serwisu\nStrona g\u0142\u00f3wna\nMapa serwisu\nKontakt\nJ\u0119zyk migowy\nDla niepe\u0142n",
+          "followed_link": {
+            "text": "Uchwa\u0142a Sejmiku nr VII/31/15/2026 z dnia 2026-10-19",
+            "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/uchwaly/uchwala-sejmiku-nr-vii31152026-z-dnia-2026-10-19.html",
+            "score": 5
+          }
+        }
+      ],
+      "proceedings_verified": false,
+      "remaining_links": [
+        {
+          "text": "Harmonogram sesji Sejmiku ",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/harmonogram",
+          "score": 25
+        },
+        {
+          "text": "Protoko\u0142y z sesji Sejmiku ",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/protokoly",
+          "score": 25
+        },
+        {
+          "text": "Uchwa\u0142a Sejmiku nr VII/31/15/2026 z dnia 2026-10-19",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/uchwaly/uchwala-sejmiku-nr-vii31152026-z-dnia-2026-10-19.html",
+          "score": 5
+        },
+        {
+          "text": "Uchwa\u0142a Sejmiku nr VII/31/14/2026 z dnia 2026-10-19",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/uchwaly/uchwala-sejmiku-nr-vii31142026-z-dnia-2026-10-19.html",
+          "score": 5
+        },
+        {
+          "text": "Uchwa\u0142a Sejmiku nr VII/31/10/2026 z dnia 2026-10-19",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/uchwaly/uchwala-sejmiku-nr-vii31102026-z-dnia-2026-10-19.html",
+          "score": 5
+        },
+        {
+          "text": "Uchwa\u0142a Sejmiku nr VII/31/9/2026 z dnia 2026-10-19",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/uchwaly/uchwala-sejmiku-nr-vii3192026-z-dnia-2026-10-19.html",
+          "score": 5
+        },
+        {
+          "text": "Uchwa\u0142a Sejmiku nr VII/31/8/2026 z dnia 2026-10-19",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/uchwaly/uchwala-sejmiku-nr-vii3182026-z-dnia-2026-10-19.html",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/protokoly?p=2026",
+          "score": 5
+        }
+      ],
+      "outcome": "further_archive_navigation_required"
+    },
+    {
+      "id": "poland--odzkie",
+      "country": "poland",
+      "institution": "Sejmik - lodzkie.pl",
+      "institution_url": "https://www.lodzkie.pl/sejmik",
+      "start_url": "https://www.lodzkie.pl/sejmik/transmisja-obrad-sesji",
+      "checked_at": "2026-10-23T19:59:01.157Z",
+      "navigation": [
+        {
+          "url": "https://www.lodzkie.pl/sejmik/transmisja-obrad-sesji",
+          "status": 200,
+          "final_url": "https://www.lodzkie.pl/sejmik/transmisja-obrad-sesji",
+          "title": "Transmisja obrad sesji - lodzkie.pl",
+          "excerpt": "Serwis u\u017cywa plik\u00f3w cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzi\u0119ki nim mo\u017cemy indywidualnie dostosowa\u0107 stron\u0119 do Pa\u0144stwa potrzeb. Ka\u017cdy mo\u017ce zaakceptowa\u0107 pliki cookies albo ma mo\u017cliwo\u015b\u0107 wy\u0142\u0105czenia ich w przegl\u0105darce, dzi\u0119ki czemu nie b\u0119d\u0105 zbierane \u017cadne informacje.\n\nDowiedz si\u0119 wi\u0119cej\n\nPrzejd\u017a do tre\u015bci\nPrzejd\u017a do menu g\u0142\u00f3wnego\nPrzejd\u017a do wyszukiwarki\nlodzkie.pl\nStrona g\u0142\u00f3wna\nProjekty realizowane przez wojew\u00f3dztwo \u0142\u00f3dzkie w ramach FE\u0141 2021-2027\nAktualno\u015bci\nUrz\u0105d\nWojew\u00f3dztwo\nZarz\u0105d\nSejmik\nMultimedia\nMarka Regionalna\nKontakt\nStrona g\u0142\u00f3wna \nSejmik \nTransmisja obrad sesji\nTransmisje sesji Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego\n\nTransmisje sesji Sejmiku Wojew\u00f3dz",
+          "followed_link": {
+            "text": "Terminy obrad sesji",
+            "url": "https://bip.lodzkie.pl/plan-pracy-sw%C5%82",
+            "score": 25
+          }
+        },
+        {
+          "url": "https://bip.lodzkie.pl/plan-pracy-sw%C5%82",
+          "status": 200,
+          "final_url": "https://bip.lodzkie.pl/plan-pracy-sw%C5%82",
+          "title": "Plan Pracy SW\u0141 - www.bip.lodzkie.pl",
+          "excerpt": "Przejd\u017a do tre\u015bci\nPrzejd\u017a do menu g\u0142\u00f3wnego\nPrzejd\u017a do wyszukiwarki\nBiuletyn Informacji Publicznej\nWojew\u00f3dztwa \u0141\u00f3dzkiego\nStrona g\u0142\u00f3wna Biuletynu Informacji Publicznej\nWojew\u00f3dztwo \u0141\u00f3dzkie\nSejmik\nZarz\u0105d\nUrz\u0105d Marsza\u0142kowski\nOg\u0142oszenia\nKontakt\nWyszukaj\nJeste\u015b tutaj: \u00a0\nStrona g\u0142\u00f3wna /\nPlan Pracy SW\u0141\nPlan Pracy SW\u0141 (VII kadencja)\n17.12.2025 - 15:11\nPlan pracy Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego na 2026 r.\nCzytaj dalej...\u00a0Plan pracy Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego na 2026 r.\n31.12.2024 - 09:57\nPlan pracy Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego na 2025 r.\nCzytaj dalej...\u00a0Plan pracy Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego na 2025 r.\n20.12.2023 - 13:52\nPlan pracy Sejmiku Wojew\u00f3dztwa \u0141\u00f3dzkiego na 2024 r.\nCzytaj dalej...\u00a0Plan pracy",
+          "followed_link": {
+            "text": "2026",
+            "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026",
+            "score": 30
+          }
+        },
+        {
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026",
+          "status": 200,
+          "final_url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026",
+          "title": "2026 - www.bip.lodzkie.pl",
+          "excerpt": "Przejd\u017a do tre\u015bci\nPrzejd\u017a do menu g\u0142\u00f3wnego\nPrzejd\u017a do wyszukiwarki\nBiuletyn Informacji Publicznej\nWojew\u00f3dztwa \u0141\u00f3dzkiego\nStrona g\u0142\u00f3wna Biuletynu Informacji Publicznej\nWojew\u00f3dztwo \u0141\u00f3dzkie\nSejmik\nZarz\u0105d\nUrz\u0105d Marsza\u0142kowski\nOg\u0142oszenia\nKontakt\nWyszukaj\nJeste\u015b tutaj: \u00a0\nStrona g\u0142\u00f3wna /\nZarz\u0105d /\nInformacje z posiedze\u0144 Zarz\u0105du /\n2026\nInformacje z posiedze\u0144 Zarz\u0105du Wojew\u00f3dztwa \u0141\u00f3dzkiego za 2026 r.\nNumer\tData\n43/26\t05.10.2026 r.\n42/26\t29.09.2026 r.\n41/26\t25.09.2026 r.\n40/26\t21.09.2026 r.\n39/26\t14.09.2026 r.\n38/26\t04.09.2026 r.\n37/26\t25.08.2026 r.\n36/26\t18.08.2026 r.\n35/26\t07.08.2026 r.\n34/26\t04.08.2026 r.\n33/26\t28.07.2026 r.\n32/26\t16.07.2026 r.\n31/26\t07.07.2026 r.\n30/26\t30.06.2026 r.\n29/26\t26.06.2026 r",
+          "followed_link": {
+            "text": "Transmisja z sesji",
+            "url": "https://bip.lodzkie.pl/sejmik-wojewodztwa/mlodziezowy-sejmik-wojewodztwa-lodzkiego/transmisja-z-sesji",
+            "score": 25
+          }
+        }
+      ],
+      "proceedings_verified": false,
+      "remaining_links": [
+        {
+          "text": "Przejd\u017a do tre\u015bci",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026#maincontent",
+          "score": 30
+        },
+        {
+          "text": "Przejd\u017a do menu g\u0142\u00f3wnego",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026#dj-megamenu674",
+          "score": 30
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026",
+          "score": 30
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026",
+          "score": 30
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026",
+          "score": 30
+        },
+        {
+          "text": "",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2026#",
+          "score": 30
+        },
+        {
+          "text": "Transmisja z sesji",
+          "url": "https://bip.lodzkie.pl/sejmik-wojewodztwa/mlodziezowy-sejmik-wojewodztwa-lodzkiego/transmisja-z-sesji",
+          "score": 25
+        },
+        {
+          "text": "Informacje z posiedze\u0144 Zarz\u0105du",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego",
+          "score": 25
+        },
+        {
+          "text": "2025",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2025",
+          "score": 25
+        },
+        {
+          "text": "2024",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2024",
+          "score": 25
+        },
+        {
+          "text": "2023",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2023",
+          "score": 25
+        },
+        {
+          "text": "2022",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2022",
+          "score": 25
+        },
+        {
+          "text": "Informacje z posiedze\u0144 Zarz\u0105du",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego",
+          "score": 25
+        },
+        {
+          "text": "2025",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2025",
+          "score": 25
+        },
+        {
+          "text": "2024",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2024",
+          "score": 25
+        },
+        {
+          "text": "2023",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2023",
+          "score": 25
+        },
+        {
+          "text": "2022",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2022",
+          "score": 25
+        },
+        {
+          "text": "Informacje z posiedze\u0144 Zarz\u0105du",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego",
+          "score": 25
+        },
+        {
+          "text": "2025",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2025",
+          "score": 25
+        },
+        {
+          "text": "2024",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2024",
+          "score": 25
+        },
+        {
+          "text": "2023",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2023",
+          "score": 25
+        },
+        {
+          "text": "2022",
+          "url": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/informacje-z-posiedzen-zarzadu-wojewodztwa-lodzkiego/posiedzenia-2022",
+          "score": 25
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/wojewodztwo-lodzkie/finanse-i-majatek/budzet/budzet-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/wojewodztwo-lodzkie/finanse-i-majatek/wieloletnia-prognoza-finansowa/wieloletnia-prognoza-finansowa-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/wojewodztwo-lodzkie/finanse-i-majatek/sprawozdawczosc/sprawozdawczosc-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/wojewodztwo-lodzkie/finanse-i-majatek/dotacje/dotacje-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/wojewodztwo-lodzkie/finanse-i-majatek/poreczenia/poreczenia-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/wojewodztwo-lodzkie/finanse-i-majatek/dlug-zobowiazania/dlug-zobowiazania-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/urzad-marszalkowski/petycje/petycje-2026",
+          "score": 5
+        },
+        {
+          "text": "2026",
+          "url": "https://bip.lodzkie.pl/ogloszenia/nieruchomosci/2026",
+          "score": 5
+        }
+      ],
+      "outcome": "further_archive_navigation_required"
+    },
+    {
+      "id": "slovakia--banskobystricky-kraj",
+      "country": "slovakia",
+      "institution": "Zastupite\u013estvo a poslanci | BBSK",
+      "institution_url": "https://www.bbsk.sk/sekcie/poslanci-zastupitelstvo",
+      "start_url": "https://www.bbsk.sk/zasadnutia-zastupitestva-bbsk-2022-2026",
+      "checked_at": "2026-10-23T19:59:01.158Z",
+      "navigation": [
+        {
+          "url": "https://www.bbsk.sk/zasadnutia-zastupitestva-bbsk-2022-2026",
+          "status": 200,
+          "final_url": "https://www.bbsk.sk/zasadnutia-zastupitestva-bbsk-2022-2026",
+          "title": "Zasadnutia Zastupite\u013estva BBSK 2022-2026 | BBSK",
+          "excerpt": "Sko\u010di\u0165 na obsah\n BBSK.sk\nE-slu\u017eby\n\u00daradn\u00e9 hodiny\nEN\nSK\nH\u013eada\u0165\nOtvori\u0165 / Zatvori\u0165\nMenu\nSko\u010di\u0165 na za\u010diatok str\u00e1nky\n Domov\n Zasadnutia Zastupite\u013estva BBSK 2022-2026\nZasadnutia Zastupite\u013estva BBSK 2022-2026\n\nZoznam zasadnut\u00ed Zastupite\u013estva BBSK vo volebnom obdob\u00ed 2022-2026\n\nRokovac\u00ed poriadok ZBBSK a Harmonogram zasadnut\u00ed ZBBSK s\u00fa dostupn\u00e9 na str\u00e1nke D\u00f4le\u017eit\u00e9 dokumenty.\u00a0\n\nNa str\u00e1nke tveso.sk m\u00f4\u017eete sledova\u0165 priame prenosy zo zasadnut\u00ed ZBBSK, ako aj arch\u00edv jednotliv\u00fdch zasadnut\u00ed. Inform\u00e1cie k zasadnutiam Zastupite\u013estva BBSK (ZBBSK) v predch\u00e1dzaj\u00facich volebn\u00fdch obdobiach n\u00e1jdete na str\u00e1nke Arch\u00edv.\u00a0\n\n\u010c\u00edslo zasadnutia\nD\u00e1tum zasadnutia\nMiesto zasadnutia\n\u010c\u00edslo\nzasadnutia ZBBSK\tD\u00e1tum a \u010das zasadnutia\tMie",
+          "followed_link": {
+            "text": "arch\u00edv jednotliv\u00fdch zasadnut\u00ed.",
+            "url": "https://bbonline.sk/tveso/archiv-zasadnuti-zastupitelstva-bbsk/",
+            "score": 25
+          }
+        },
+        {
+          "url": "https://bbonline.sk/tveso/archiv-zasadnuti-zastupitelstva-bbsk/",
+          "status": 200,
+          "final_url": "https://bbonline.sk/tveso/archiv-zasadnuti-zastupitelstva-bbsk/",
+          "title": "ARCH\u00cdV ZASADNUT\u00cd ZASTUPITE\u013dSTVA BBSK - TV ESO",
+          "excerpt": "Spr\u00e1vy\n\u0160port\nBlog\nReality\nPr\u00e1ca\nPo\u010dasie\nPodujatia\nObedov\u00e9 menu\nO TV ESO\nArch\u00edv\nPonuka\nPartneri a klienti\nKontakt\nObjavi\u0165 viac\nBansk\u00e1 Bystrica sprievodca\nLok\u00e1lne spr\u00e1vy\nOnline noviny\n \n\u0160tvrtok 17.2.2022\nARCH\u00cdV ZASADNUT\u00cd ZASTUPITE\u013dSTVA BBSK\n\n\n\n\n Zdie\u013ea\u0165\nOtvori\u0165 gal\u00e9riu (6)\n\nZa obsah podstr\u00e1nok TV ESO zodpoved\u00e1 ESO MEDIA, s.r.o.\n\n\u010eal\u0161ie vide\u00e1\nZobraz v\u0161etky\n\nMSZ ZVOLEN 2026\n\nMSZ ZVOLEN, 28.9.2026\n25.9.2026\n\n\u0160port TV ESO\n\nU19 YOUTH NATIONS CUP 2026\n23.9.2026\n\nZASTUPITE\u013dSTVO BBSK 2026\n\nZASTUPITE\u013dSTVO BBSK, 24.9.2026\n23.9.2026\n\nMSZ Bansk\u00e1 Bystrica 2026\n\nMSZ BANSK\u00c1 BYSTRICA, 8.9.2026\n7.9.2026\n\nMSZ Brezno 2026\n\nMSZ BREZNO, 3.9.2026\n2.9.2026\n\nMSZ ZVOLEN 2026\n\nMSZ ZVOLEN, 31.8.2026\n28.8.2026\nVyh\u013ead\u00e1van",
+          "followed_link": {
+            "text": "Arch\u00edv",
+            "url": "https://bbonline.sk/tv-eso/archiv/",
+            "score": 25
+          }
+        },
+        {
+          "url": "https://bbonline.sk/tv-eso/archiv/",
+          "status": 200,
+          "final_url": "https://bbonline.sk/tv-eso/archiv/",
+          "title": "Arch\u00edv - TV ESO",
+          "excerpt": "Spr\u00e1vy\n\u0160port\nBlog\nReality\nPr\u00e1ca\nPo\u010dasie\nPodujatia\nObedov\u00e9 menu\nO TV ESO\nArch\u00edv\nPonuka\nPartneri a klienti\nKontakt\nArch\u00edv\n\t\n\n\n\t\n\n\n\t\n Zdie\u013ea\u0165\n\nZa obsah podstr\u00e1nok TV ESO zodpoved\u00e1 ESO MEDIA, s.r.o.\n\n\u010eal\u0161ie vide\u00e1\nZobraz v\u0161etky\n\nMSZ ZVOLEN 2026\n\nMSZ ZVOLEN, 28.9.2026\n25.9.2026\n\n\u0160port TV ESO\n\nU19 YOUTH NATIONS CUP 2026\n23.9.2026\n\nZASTUPITE\u013dSTVO BBSK 2026\n\nZASTUPITE\u013dSTVO BBSK, 24.9.2026\n23.9.2026\n\nMSZ Bansk\u00e1 Bystrica 2026\n\nMSZ BANSK\u00c1 BYSTRICA, 8.9.2026\n7.9.2026\n\nMSZ Brezno 2026\n\nMSZ BREZNO, 3.9.2026\n2.9.2026\n\nMSZ ZVOLEN 2026\n\nMSZ ZVOLEN, 31.8.2026\n28.8.2026\nVyh\u013ead\u00e1vanie\n \nTV ESO\n\nObjavi\u0165 viac\nBansk\u00e1 Bystrica sprievodca\nLok\u00e1lne spr\u00e1vy\nOnline noviny\n\u0160portov\u00e9 v\u00fdsledky\nBlogovacie slu\u017eby\nObjav mest\u00e1\nObj",
+          "followed_link": {
+            "text": "",
+            "url": "https://bbonline.sk/tveso/archiv-sport/",
+            "score": 25
+          }
+        }
+      ],
+      "proceedings_verified": false,
+      "remaining_links": [
+        {
+          "text": "Arch\u00edv",
+          "url": "https://bbonline.sk/tv-eso/archiv/",
+          "score": 25
+        },
+        {
+          "text": "",
+          "url": "https://bbonline.sk/tveso/archiv-sport/",
+          "score": 25
+        },
+        {
+          "text": "",
+          "url": "https://bbonline.sk/tveso/archiv-zastupitelstvo/",
+          "score": 25
+        },
+        {
+          "text": "",
+          "url": "https://bbonline.sk/tv-eso/archiv/#",
+          "score": 25
+        },
+        {
+          "text": "Nastavenia cookies",
+          "url": "https://bbonline.sk/tv-eso/archiv/#",
+          "score": 25
+        },
+        {
+          "text": "MSZ ZVOLEN 2026\n\nMSZ ZVOLEN, 28.9.2026\n25.9.2026",
+          "url": "https://bbonline.sk/tveso/msz-zvolen-28-9-2026/",
+          "score": 5
+        },
+        {
+          "text": "\u0160port TV ESO\n\nU19 YOUTH NATIONS CUP 2026\n23.9.2026",
+          "url": "https://bbonline.sk/tveso/u19-youth-nations-cup-2026/",
+          "score": 5
+        },
+        {
+          "text": "ZASTUPITE\u013dSTVO BBSK 2026\n\nZASTUPITE\u013dSTVO BBSK, 24.9.2026\n23.9.2026",
+          "url": "https://bbonline.sk/tveso/zastupitelstvo-bbsk-24-9-2026/",
+          "score": 5
+        },
+        {
+          "text": "MSZ Bansk\u00e1 Bystrica 2026\n\nMSZ BANSK\u00c1 BYSTRICA, 8.9.2026\n7.9.2026",
+          "url": "https://bbonline.sk/tveso/msz-banska-bystrica-8-9-2026/",
+          "score": 5
+        },
+        {
+          "text": "MSZ Brezno 2026\n\nMSZ BREZNO, 3.9.2026\n2.9.2026",
+          "url": "https://bbonline.sk/tveso/msz-brezno-3-9-2026/",
+          "score": 5
+        },
+        {
+          "text": "MSZ ZVOLEN 2026\n\nMSZ ZVOLEN, 31.8.2026\n28.8.2026",
+          "url": "https://bbonline.sk/tveso/msz-zvolen-31-8-2026/",
+          "score": 5
+        }
+      ],
+      "outcome": "further_archive_navigation_required"
+    }
+  ],
+  "method_limitations": "Heuristic bounded navigation may reach contact/minutes, history, youth or sports pages. This is not exhaustive source-specific archive interaction or no-service proof. Exact later page/player reviews supersede these paths."
+}

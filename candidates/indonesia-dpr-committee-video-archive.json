@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Primary evidence: https://data.ipu.org/parliament/ID/ID-LC01/",
+    "Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots.",
+    "Source conditions: The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+    "Full decision and playback chain: reports/discovery/2026-10-23-full-queue-decisions.json",
+    "Catalogue, flags, localized country/jurisdiction search, map and planned schedule-source links reconciled. Link-out only; no HLS or implemented EPG promotion."
+  ],
+  "channel": {
+    "id": "indonesia-dpr-committee-video-archive",
+    "name": "Indonesia DPR Committee Video Archive",
+    "jurisdiction_level": "national",
+    "country_or_region": "Indonesia",
+    "legislature": "Dewan Perwakilan Rakyat Republik Indonesia",
+    "external_ids": {
+      "wikidata_qid": "Q2670027",
+      "ipu_country_code": "ID",
+      "ipu_parliament_code": "ID",
+      "ipu_chamber_code": "ID-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2670027",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q2670027 revision 2558606893 and its official institutional identity/provider cross-link checked. This identifies the legislature, not a generic broadcaster, executive or building."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/ID/ID-LC01/",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Primary IPU profile parsed through the web reader confirms national parliament/chamber identity. The local HTTP client failed TLS negotiation, which is retained as an environment limitation rather than a missing institution. IPU identity is not media or reuse evidence."
+      }
+    ],
+    "language": "Indonesian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://tvrparlemen.dpr.go.id/video_akd",
+    "provenance_note": "National legislature/chamber identity cross-checked against the institution, Wikidata and the primary IPU profile where accessible. This is separate from media and rights evidence. Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No service-wide media accessibility guarantee was established. Institutional/source metadata; complete spoken-language and interpretation-track coverage was not assessed in muted browser playback checks. Sample text-track metadata: [{\"key\": \"indonesia-budget-watch\", \"tracks\": []}, {\"key\": \"indonesia-budget-second-watch\", \"tracks\": []}]. "
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://tvrparlemen.dpr.go.id/video_akd",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The reviewed official viewing pages designate public access, but no independent audiovisual reuse grant was established. Institutional ownership and working platform playback are not permission to extract, embed or redistribute media.",
+      "evidence": [
+        "https://tvrparlemen.dpr.go.id/"
+      ],
+      "recommendation": "Historical committee archive: portal import dates can differ from the actual recording dates. Use the official index or its normal provider watch links if an embedded player fails. Independent media reuse and live commission coverage remain unvalidated."
+    }
+  }
+}

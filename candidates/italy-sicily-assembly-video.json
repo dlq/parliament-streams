@@ -1,0 +1,70 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Autonomous regional legislature within Italy; regional legislative powers under the Constitution and Sicily’s special statute. Wikidata Q2707406 identifies the Assembly rather than the island/region.",
+    "Official provenance and proceedings: The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence.",
+    "Source conditions: The official archive and institution-linked provider designate public viewing. The reviewed privacy/cookie page does not establish an independent audiovisual reuse licence. Link to the archive; do not extract or independently embed the media without separate evidence.",
+    "Evidence: reports/discovery/2026-10-23-validation-second-pass.json",
+    "Added as official link-out; regional flag, parent-country search, map and planned event/recording-index links reconciled."
+  ],
+  "channel": {
+    "id": "italy-sicily-assembly-video",
+    "name": "Sicilian Regional Assembly Video",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Sicily",
+    "legislature": "Assemblea Regionale Siciliana",
+    "external_ids": {
+      "wikidata_qid": "Q2707406",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2707406",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Matched legislature Q2707406 revision 2549985474 against the official institution and its designated viewing service. Geographic-entity IDs are not substituted for legislative bodies."
+      }
+    ],
+    "language": "Italian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+    "provenance_note": "The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed. No service-wide caption/sign-language/audio-description guarantee established."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The official archive and institution-linked provider designate public viewing. The reviewed privacy/cookie page does not establish an independent audiovisual reuse licence. Link to the archive; do not extract or independently embed the media without separate evidence.",
+      "evidence": [
+        "https://www.ars.sicilia.it/privacy-cookie-policy",
+        "https://www.ars.sicilia.it/"
+      ],
+      "recommendation": "Open the official viewing service. Independent playback/reuse, current live room coverage and an implemented XMLTV parser remain separate checks."
+    }
+  }
+}

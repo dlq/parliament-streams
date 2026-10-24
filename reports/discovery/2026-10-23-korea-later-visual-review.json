@@ -1,0 +1,110 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "later-korea-000-0",
+      "body_ids": [
+        "south-korea--busan"
+      ],
+      "url": "https://www.youtube.com/watch?v=-W1i_jFr0rw&t=7811s",
+      "title": "\ubd80\uc0b0\uad11\uc5ed\uc2dc\uc758\ud68c \uc81c339\ud68c \uc784\uc2dc\ud68c \uc81c4\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Busan plenary4 member Song U-hyeon, administration/culture committee caption, five-minute free speech at lectern and interpreter.",
+      "sample_time_seconds": 7816.342424,
+      "screenshot": "/tmp/provider-sample-later-korea-000-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-000-1",
+      "body_ids": [
+        "south-korea--busan"
+      ],
+      "url": "https://www.youtube.com/watch?v=TYK2OGINRw0&t=12790s",
+      "title": "\ubd80\uc0b0\uad11\uc5ed\uc2dc\uc758\ud68c \uc81c339\ud68c \uc784\uc2dc\ud68c \uc81c3\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "opening_or_interlude_requires_other_sample",
+      "note": "Busan plenary3 still starting slate at68percent.",
+      "sample_time_seconds": 12795.363256,
+      "screenshot": "/tmp/provider-sample-later-korea-000-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-003-0",
+      "body_ids": [
+        "south-korea--chungcheongnam"
+      ],
+      "url": "https://www.youtube.com/watch?v=hbl19DV96RE&t=15141s",
+      "title": "\uc81c371\ud68c \uc784\uc2dc\ud68c \uc81c4\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Chungnam plenary4 committee review report and plenary3 provincial/education administration questions, speakers at lectern with interpreter.",
+      "sample_time_seconds": 15146.27066,
+      "screenshot": "/tmp/provider-sample-later-korea-003-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-003-1",
+      "body_ids": [
+        "south-korea--chungcheongnam"
+      ],
+      "url": "https://www.youtube.com/watch?v=ggqR49FOH7M&t=15166s",
+      "title": "\uc81c371\ud68c \uc784\uc2dc\ud68c \uc81c3\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Chungnam plenary4 committee review report and plenary3 provincial/education administration questions, speakers at lectern with interpreter.",
+      "sample_time_seconds": 15171.31783,
+      "screenshot": "/tmp/provider-sample-later-korea-003-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-004-0",
+      "body_ids": [
+        "south-korea--daegu"
+      ],
+      "url": "https://www.youtube.com/watch?v=AwSD2kvqCvk&t=4814s",
+      "title": "\uc81c329\ud68c \uc784\uc2dc\ud68c \uc81c2\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Daegu presiding chair conducting plenary2/1, council chair plate and interpreter.",
+      "sample_time_seconds": 4819.294793,
+      "screenshot": "/tmp/provider-sample-later-korea-004-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-004-1",
+      "body_ids": [
+        "south-korea--daegu"
+      ],
+      "url": "https://www.youtube.com/watch?v=SECviLhZ2VY&t=5183s",
+      "title": "\uc81c329\ud68c \uc784\uc2dc\ud68c \uac1c\ud68c\uc2dd \ubc0f \uc81c1\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Daegu presiding chair conducting plenary2/1, council chair plate and interpreter.",
+      "sample_time_seconds": 5188.318947,
+      "screenshot": "/tmp/provider-sample-later-korea-004-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-008-0",
+      "body_ids": [
+        "south-korea--sejong"
+      ],
+      "url": "https://www.youtube.com/watch?v=pRsTZWyDxr8&t=18017s",
+      "title": "[\uc138\uc885\uc2dc\uc758\ud68c] \uc81c109\ud68c \uc815\ub840\ud68c \uad50\uc548\uc704 \uc81c3\ucc28 \ud68c\uc758 - YouTube",
+      "decision": "recess_requires_other_sample",
+      "note": "Sejong committee recordings show recess graphics at roughly5hours, not substantive business.",
+      "sample_time_seconds": 18022.291208,
+      "screenshot": "/tmp/provider-sample-later-korea-008-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later-korea-008-1",
+      "body_ids": [
+        "south-korea--sejong"
+      ],
+      "url": "https://www.youtube.com/watch?v=SyhazEqap4g&t=18028s",
+      "title": "[\uc138\uc885\uc2dc\uc758\ud68c] \uc81c109\ud68c \uc815\ub840\ud68c \ub3c4\ud658\uc704 \uc81c3\ucc28 \ud68c\uc758 - YouTube",
+      "decision": "recess_requires_other_sample",
+      "note": "Sejong committee recordings show recess graphics at roughly5hours, not substantive business.",
+      "sample_time_seconds": 18033.31733,
+      "screenshot": "/tmp/provider-sample-later-korea-008-1.png",
+      "full_service_certified": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Self-governing state in free association with New Zealand, not a New Zealand province. Constitution reprinted 13 June 2022, articles 13, 39, 70 and 71 establish responsible parliamentary government, general legislation, appropriations and audit scrutiny. Classified national; audit grouping under New Zealand is only a research/search association.",
+    "The official Parliament live page footer designates this YouTube channel. Two full sitting recordings from 29 and 30 September 2020 decoded at 854x480 with advancing time and frames. Historical archive only: the current official live page has no player, the sampled Facebook replay is unavailable, and no current sitting broadcast was validated.",
+    "Identity, legal authority, source conditions, playback and surfaces: reports/discovery/2026-10-23-territorial-validation.json",
+    "Catalogue, localized names, flag, constitutional/search association, coverage map and planned calendar reconciled."
+  ],
+  "channel": {
+    "id": "cook-islands-parliament-archive",
+    "name": "Cook Islands Parliament Archive (September 2020)",
+    "jurisdiction_level": "national",
+    "country_or_region": "Cook Islands",
+    "legislature": "Parliament of the Cook Islands",
+    "external_ids": {
+      "wikidata_qid": "Q7138950",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q7138950",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Wikidata legislature Q7138950 revision 2527249210 checked against the official institutional identity. Official Parliament live-page footer designates the sampled channel."
+      }
+    ],
+    "language": "Unknown",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UC6NJVTHu-5eMP88UrGi7KqA/streams",
+    "provenance_note": "Self-governing state in free association with New Zealand, not a New Zealand province. Constitution reprinted 13 June 2022, articles 13, 39, 70 and 71 establish responsible parliamentary government, general legislation, appropriations and audit scrutiny. Classified national; audit grouping under New Zealand is only a research/search association. The official Parliament live page footer designates this YouTube channel. Two full sitting recordings from 29 and 30 September 2020 decoded at 854x480 with advancing time and frames. Historical archive only: the current official live page has no player, the sampled Facebook replay is unavailable, and no current sitting broadcast was validated.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Audio language coverage was not assessed in the browser playback checks. No text tracks were exposed; captions, sign language and audio description remain unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://parliament.gov.ck/calendar-1/",
+        "method": "GET",
+        "kind": "official_meeting_calendar"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official Parliament pages designate public viewing routes and carry a copyright notice. No independent audiovisual reuse grant was established; provider access does not authorize extraction, embedding or redistribution.",
+      "evidence": [
+        "https://parliament.gov.ck/live/",
+        "https://parliament.gov.ck/parliamenttv/"
+      ],
+      "recommendation": "Historical archive: sampled sittings are from September 2020. Current live coverage is unverified. Open the official channel; independent playback or redistribution requires a separate rights review."
+    }
+  }
+}

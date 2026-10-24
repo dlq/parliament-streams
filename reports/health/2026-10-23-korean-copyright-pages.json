@@ -1,0 +1,24 @@
+{
+  "method": "Individual public council copyright-policy retrieval, normal TLS. Terms claims assessed separately from decoded playback.",
+  "results": [
+    {
+      "key": "busan",
+      "url": "https://council.busan.go.kr/council/copyright",
+      "status": 200,
+      "source_condition_findings": "KOGL applies to individually marked works: type1 attribution, type2 noncommercial, type3 no derivatives, type4 both. Attribution remains required. No blanket session-video licence established."
+    },
+    {
+      "key": "daegu",
+      "url": "https://council.daegu.go.kr/kr/cms/copyright",
+      "status": 200,
+      "source_condition_findings": "KOGL applies to individually marked works: type1 attribution, type2 noncommercial, type3 no derivatives, type4 both. Attribution remains required. No blanket session-video licence established."
+    },
+    {
+      "key": "gyeongsangbuk",
+      "url": "https://council.gb.go.kr/kr/cms/copyright",
+      "status": 200,
+      "source_condition_findings": "KOGL applies to individually marked works: type1 attribution, type2 noncommercial, type3 no derivatives, type4 both. Attribution remains required. No blanket session-video licence established.",
+      "additional_condition": "Policy requests prior consultation for use of unmarked material. Publishing an ordinary official institutional navigation link does not assert reuse permission."
+    }
+  ]
+}

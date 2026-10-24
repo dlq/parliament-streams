@@ -1,0 +1,71 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Provincial legislative chamber; separate institutional Wikidata item corroborated against its own official website.",
+    "Proceedings: The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+    "Publication posture: Reviewed the primary institution/viewing pages and their copyright notices. They designate public viewing but no independent audiovisual reuse grant was established in the reviewed pages. Retain an official link-out; do not enable embedded playback, manifest extraction or redistribution. No source-specific prior-linking condition was found in these reviewed pages; this is not an exhaustive legal certification.",
+    "Evidence: reports/discovery/2026-10-23-metadata-followup.json",
+    "Promoted as an official viewing link; regional flag, parent-country search, map geometry and planned event indexes reconciled."
+  ],
+  "channel": {
+    "id": "argentina-corrientes-senate-recordings",
+    "name": "Corrientes Senate Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Corrientes",
+    "legislature": "Honorable Cámara de Senadores de la Provincia de Corrientes",
+    "external_ids": {
+      "wikidata_qid": "Q40323796",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q40323796",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact legislative chamber Q40323796 revision 2346089745; institutional label, lower/upper-chamber role and official P856 URL match the primary chamber site. Not the province, city or municipal council."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UCG53mcv5LYAOzJrLGnGTy-A/streams",
+    "provenance_note": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Spanish institutional/session metadata; muted playback tests do not independently certify all spoken languages, alternate audio or complete accessibility. No service-wide caption, sign-language or audio-description guarantee established."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.senadoctes.gov.ar/vt.php",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Reviewed the primary institution/viewing pages and their copyright notices. They designate public viewing but no independent audiovisual reuse grant was established in the reviewed pages. Retain an official link-out; do not enable embedded playback, manifest extraction or redistribution. No source-specific prior-linking condition was found in these reviewed pages; this is not an exhaustive legal certification.",
+      "evidence": [
+        "https://www.senadoctes.gov.ar/",
+        "https://www.senadoctes.gov.ar/sesionesenvivo.php",
+        "https://www.senadoctes.gov.ar/sesionesenaudio.php"
+      ],
+      "recommendation": "Open the official viewing service; independent media reuse and complete current-live/committee coverage remain unresolved."
+    }
+  }
+}

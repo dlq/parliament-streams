@@ -1,0 +1,205 @@
+{
+  "research_date": "2026-10-23",
+  "decision": "publish_three_official_institution_links_with_scoped_recording_evidence",
+  "records": [
+    {
+      "key": "daegu",
+      "region": "Daegu",
+      "name": "Daegu Metropolitan Council Recordings",
+      "inst": "대구광역시의회",
+      "qid": "Q16095349",
+      "url": "https://council.daegu.go.kr/",
+      "terms": "https://council.daegu.go.kr/kr/cms/copyright",
+      "id": "south-korea-daegu-council-recordings",
+      "body": "south-korea--daegu",
+      "recording_checks": [
+        {
+          "key": "daegu-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=AwSD2kvqCvk&t=4814s",
+          "offset": 4814,
+          "time": 4817.947593,
+          "frames_advanced": true,
+          "title": "제329회 임시회 제2차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "daegu-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=SECviLhZ2VY&t=5183s",
+          "offset": 5183,
+          "time": 5186.935878,
+          "frames_advanced": true,
+          "title": "제329회 임시회 개회식 및 제1차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "daegu-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=AwSD2kvqCvk&t=4814s",
+          "offset": 4814,
+          "time": 4817.603037913,
+          "frames_advanced": true,
+          "title": "제329회 임시회 제2차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "daegu-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=SECviLhZ2VY&t=5183s",
+          "offset": 5183,
+          "time": 5186.527981526,
+          "frames_advanced": true,
+          "title": "제329회 임시회 개회식 및 제1차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        }
+      ],
+      "identity_revision": 2505979165,
+      "provider_designation": {
+        "text": "유튜브 바로가기",
+        "url": "https://www.youtube.com/channel/UCb5fdR-nG-jXdSgo5DGBVhA"
+      },
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established"
+      ]
+    },
+    {
+      "key": "gyeongsangbuk",
+      "region": "Gyeongsangbuk-do",
+      "name": "Gyeongsangbuk-do Council Recordings",
+      "inst": "경상북도의회",
+      "qid": "Q16093885",
+      "url": "https://council.gb.go.kr/",
+      "terms": "https://council.gb.go.kr/kr/cms/copyright",
+      "id": "south-korea-gyeongsangbuk-council-recordings",
+      "body": "south-korea--gyeongsangbuk",
+      "recording_checks": [
+        {
+          "key": "gyeongsangbuk-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=rIJlg4rAGpU&t=1053s",
+          "offset": 1053,
+          "time": 1056.933087,
+          "frames_advanced": true,
+          "title": "1st Plenary Session of the 362nd Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "gyeongsangbuk-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=hRpgTe8QZgI&t=1200s",
+          "offset": 1200,
+          "time": 1203.956239,
+          "frames_advanced": true,
+          "title": "2nd Plenary Session of the 361st Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "gyeongsangbuk-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=rIJlg4rAGpU&t=1053s",
+          "offset": 1053,
+          "time": 1056.525773863,
+          "frames_advanced": true,
+          "title": "1st Plenary Session of the 362nd Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "gyeongsangbuk-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=hRpgTe8QZgI&t=1200s",
+          "offset": 1200,
+          "time": 1203.610821652,
+          "frames_advanced": true,
+          "title": "2nd Plenary Session of the 361st Extraordinary Session of the Gyeongsangbuk-do Provincial Council - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        }
+      ],
+      "identity_revision": 2514048284,
+      "provider_designation": {
+        "text": "유튜브",
+        "url": "https://www.youtube.com/channel/UCTPz5NyNp837pvvhjICNgLQ"
+      },
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established"
+      ]
+    },
+    {
+      "key": "incheon",
+      "region": "Incheon",
+      "name": "Incheon Metropolitan Council Recordings",
+      "inst": "인천광역시의회",
+      "qid": "Q16099448",
+      "url": "https://www.icouncil.go.kr/",
+      "terms": null,
+      "id": "south-korea-incheon-council-recordings",
+      "body": "south-korea--incheon",
+      "recording_checks": [
+        {
+          "key": "incheon-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=wwSSXfjA9KY&t=1200s",
+          "offset": 1200,
+          "time": 1203.952316,
+          "frames_advanced": true,
+          "title": "제313회 인천광역시의회 임시회_제5차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "incheon-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=R00uf_ymFHY&t=1200s",
+          "offset": 1200,
+          "time": 1203.933795,
+          "frames_advanced": true,
+          "title": "313th Incheon Metropolitan Council Extraordinary Session_4th Plenary Meeting - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "incheon-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=wwSSXfjA9KY&t=1200s",
+          "offset": 1200,
+          "time": 1203.533960173,
+          "frames_advanced": true,
+          "title": "제313회 인천광역시의회 임시회_제5차 본회의 - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        },
+        {
+          "key": "incheon-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=R00uf_ymFHY&t=1200s",
+          "offset": 1200,
+          "time": 1203.44083589,
+          "frames_advanced": true,
+          "title": "313th Incheon Metropolitan Council Extraordinary Session_4th Plenary Meeting - YouTube",
+          "visual_observation": "Council plenary chair or member speaking in the identified chamber, with inset interpreter; selected recording only."
+        }
+      ],
+      "identity_revision": 2505899418,
+      "provider_designation": {
+        "text": "인천시의회 유튜브",
+        "url": "https://www.youtube.com/c/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%EC%9D%98%ED%9A%8C"
+      },
+      "unresolved": [
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established",
+        "separate_current_public_session_copyright_policy_not_located"
+      ]
+    }
+  ],
+  "authority_evidence": "reports/discovery/2026-10-23-authority-completion.json",
+  "map_evidence": "reports/discovery/2026-10-23-gunwi-boundary-reconstruction.json",
+  "all_metadata_and_streams_certified": false
+}

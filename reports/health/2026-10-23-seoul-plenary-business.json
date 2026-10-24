@@ -1,0 +1,50 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "seoul-plenary-business",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=4761599bcbf2cfbb7a0dd278c09324517264e7f092be2131b4138bacc5f23dc2421aae8758f5a353&pos=896&code=A011&th=12&session=339&order=1",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T22:09:04.533Z",
+      "status": 200,
+      "title": "영상보기 팝업창",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-seoul-plenary-business-chromium.png"
+    },
+    {
+      "key": "seoul-plenary-business",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=4761599bcbf2cfbb7a0dd278c09324517264e7f092be2131b4138bacc5f23dc2421aae8758f5a353&pos=896&code=A011&th=12&session=339&order=1",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T22:09:25.586Z",
+      "error": "TimeoutError: page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://ms.smc.seoul.kr/cast/viewer/record.do?key=4761599bcbf2cfbb7a0dd278c09324517264e7f092be2131b4138bacc5f23dc2421aae8758f5a353&pos=896&code=A011&th=12&session=339&order=1\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "outcome": "inspection_error"
+    }
+  ]
+}

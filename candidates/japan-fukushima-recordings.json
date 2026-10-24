@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 General Review committee, Yuichi Mayama question segment with chamber officials and inset interpreter. Standing member approaching microphone at selected moment. Same2October2026 committee, Saori Ohashi question segment: General Affairs director answering at lectern, named caption and inset interpreter. Separate question segment of same meeting, not another date. Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "Assembly website information is copyrighted; private copying/statutory quotation exceptions do not give general permission to reproduce/modify material. No blanket session-video grant. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "japan-fukushima-recordings",
+    "name": "Fukushima Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Fukushima",
+    "legislature": "福島県議会",
+    "external_ids": {
+      "wikidata_qid": "Q11593337",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q11593337",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Wikidata revision 2491304612; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "Japanese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.pref.fukushima.lg.jp/site/gikai/",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 2October2026 General Review committee, Yuichi Mayama question segment with chamber officials and inset interpreter. Standing member approaching microphone at selected moment. Same2October2026 committee, Saori Ohashi question segment: General Affairs director answering at lectern, named caption and inset interpreter. Separate question segment of same meeting, not another date. Specific Fukushima Prefectural AssemblyQ11593337 and Japan/prefecture/site correspondence reviewed. First2October2026General Review segment shows the member approaching/at the microphone; the second shows a named director answering. These are parts of one committee, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.pref.fukushima.lg.jp/site/gikai/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Assembly website information is copyrighted; private copying/statutory quotation exceptions do not give general permission to reproduce/modify material. No blanket session-video grant. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://www.pref.fukushima.lg.jp/site/gikai/",
+        "https://youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg?si=-Oad0gcJL17JeEYh",
+        "https://www.youtube.com/channel/UCSfabvdAekyHNxIbv67Y3sg"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

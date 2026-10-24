@@ -1,0 +1,23 @@
+{
+  "research_date": "2026-10-23",
+  "catalogue_id": "argentina-chubut-legislature-webcasts",
+  "identity_report": "reports/discovery/2026-10-23-chubut-identity.json",
+  "primary_provider_designation": "https://capacitacion.chubut.gov.ar/noticias/convocatoria-violencia-digital-de-genero",
+  "provider": "https://www.youtube.com/@LegislaturadelChubut23-27/streams",
+  "proceedings": "A provincial-government announcement dated 25 August 2026 explicitly designates @LegislaturadelChubut23-27 as the Honorable Legislatura del Chubut channel. Ordinary sittings dated 15 and 1 October 2026 were visually checked at 10461 and 11564 seconds, beyond their long introductory films: deputies Vanesa Abril and Tatiana Alejandra Goic are identified at chamber microphones. A Social Legislation, Health and Work committee recording at 1800 seconds shows nursing department head Cecilia Varela in Sala de Plenarios Dr. Jorge Aubia. Selected decoded media and frames advanced in Chromium and WebKit. This establishes sampled recordings, not current live or complete committee coverage. The older legislature homepage remains held for unrelated non-institutional content; it was not used as a current viewing destination.",
+  "rights": "The current provincial-government announcement independently designates the public provider channel. No independent audiovisual reuse grant was established. Retain an official viewing link with permission pending; no embedded player, direct-manifest redistribution or IPTV addition. The older institutional website could not be reliably reviewed because it served unexpected content. No prior-linking condition was found in the reviewed government announcement/provider material; this is not complete legal certification.",
+  "flag": {
+    "file": "site/assets/flags/chubut.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_del_Chubut.svg",
+    "author": "Roxana Vanesa Jones; SVG redraw SiBr4",
+    "license": "CC BY 4.0",
+    "modified": false
+  },
+  "map": {
+    "source": "Natural Earth Admin1 public domain",
+    "iso_3166_2": "AR-U",
+    "modification": "Polygon normalized to MultiPolygon, coordinates rounded to six decimals"
+  },
+  "publication": "official_link_out_permission_pending",
+  "complete_live_and_room_certification": false
+}

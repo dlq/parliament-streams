@@ -1,0 +1,97 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "brazil-paraiba-second",
+      "body_id": "brazil--assembleia-legislativa-da-paraiba",
+      "url": "https://www.youtube.com/watch?v=oID0li95Tu8&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T23:03:23.070Z",
+      "status": 200,
+      "title": "11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA. - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n20:00 / 2:05:40\n11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA.\nUnlisted\nTV ASSEMBLEIA PB\n27.6k subscribers\nSubscribe\n5\n274 views  Streamed 2 mo ago  #ALPB #Paraiba #JoaoPessoa\nTRANSMISSÃO DA ASSEMBLEIA LEGISLATIVA DA PARAÍBA\n\n📡 TV ASSEMBLEIA – CANAL 8.2 …\nmore\n\n",
+      "advertisement": false,
+      "first": {
+        "time": 1203.905558,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 7540.421,
+        "frames": 498,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.118167,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 7540.421,
+        "frames": 565,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-brazil-paraiba-second-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Ordinary sittings 14 October and 11 August 2026 with members speaking at the lectern and inset interpreters. The August replay is unlisted but explicitly linked on the assembly's public website. The separately decoded PEC36/2021 committee is historical and does not confirm current committee coverage."
+    },
+    {
+      "key": "brazil-paraiba-second",
+      "body_id": "brazil--assembleia-legislativa-da-paraiba",
+      "url": "https://www.youtube.com/watch?v=oID0li95Tu8&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T23:03:36.205Z",
+      "status": 200,
+      "title": "11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA. - YouTube",
+      "excerpt": " CA\nSkip navigation\nSign in\n\n20:00 / 2:05:40\n11/08/2026 | SESSÃO ORDINÁRIA – ASSEMBLEIA LEGISLATIVA DA PARAÍBA.\nUnlisted\nTV ASSEMBLEIA PB\n27.6K subscribers\nSubscribe\n5\nShare\nSave\n274 views  Streamed 2 months ago  #ALPB #Paraiba #JoaoPessoa\nTRANSMISSÃO DA ASSEMBLEIA LEGISLATIVA DA PARAÍBA\n\n📡 TV ASSEMBLEIA – CANAL 8.2 …\n...more\n",
+      "advertisement": false,
+      "first": {
+        "time": 1203.513635733,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 7540.421,
+        "frames": 458,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.720832899,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 7540.421,
+        "frames": 527,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-brazil-paraiba-second-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Ordinary sittings 14 October and 11 August 2026 with members speaking at the lectern and inset interpreters. The August replay is unlisted but explicitly linked on the assembly's public website. The separately decoded PEC36/2021 committee is historical and does not confirm current committee coverage."
+    }
+  ]
+}

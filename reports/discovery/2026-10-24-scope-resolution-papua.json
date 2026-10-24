@@ -1,0 +1,408 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Bounded inventory-only resolution of the six Papuan Majelis Rakyat bodies explicitly flagged in the Indonesia regional inventory; no streams, metadata validation, EPG, rights or publication.",
+  "input_reports": [
+    "reports/discovery/2026-10-24-inventory-reconciliation-b.json",
+    "reports/discovery/2026-10-24-inventory-reconciliation.json"
+  ],
+  "scope_policy": "docs/catalogue-scope.md",
+  "decision_method": "First-level and autonomous special-status legislatures require substantive territorial legislative authority with financial/executive-control functions. Special rights-consent institutions are assessed on their actual allocation, not their titles, Indigenous identity, election process or meeting style.",
+  "summary": {
+    "named_institutions_reviewed": 6,
+    "eligible_legislature": 0,
+    "outside_default_scope": 6,
+    "specific_authority_evidence_hold": 0,
+    "additional_legislative_chambers": 0,
+    "new_provincial_jurisdictions": 0,
+    "automatic_catalogue_promotions": 0
+  },
+  "shared_legal_findings": {
+    "current_statute": "UU 2/2021 replaces Articles 1, 5, 7 and 20. DPRP plus the governor form provincial government; MRP is a distinct cultural representation of Indigenous Papuans. The Act places both in each provincial capital and assigns DPRP provincial enactment, APBD and general supervision. Article 20 retains MRP consideration/consent to Perdasus and specified rights-sensitive matters.",
+    "consent_is_real": "PP 54/2004 Article 38 provides the Perdasus consideration/consent procedure, including its deemed-consent period; the provincial government and DPRP enact the resulting Perdasus. MRP is not reduced to a voluntary advisory body.",
+    "finance_and_scrutiny": "PP 54/2004 Articles 42–44 permit rights-related information/reconsideration requests and submission of MRP's own institutional spending to DPRP; that is distinct from approving the province's APBD. Internal rules/decisions under Articles 45/54 are not a general territorial legislative grant.",
+    "territorial_relationship": "PP 54/2004 Article 74 provides for MRP in successor provinces. The six named current provincial institutions are separately corroborated; the report neither merges them nor duplicates their existing DPRP rows.",
+    "currentness": "The 2021 statute supersedes older nomination text; PP 64/2008 alters financial provisions. PP 106/2021 preserves non-conflicting prior rules under Article 103. Its 2025 amendment changes development-steering governance, not the MRP legislative allocation.",
+    "classification_inference": "Outside_default_scope is the project's functional catalogue judgement under its chosen legislative-authority rule, not a denial of the institutions' legal significance or a universal constitutional label."
+  },
+  "records": [
+    {
+      "id": "scope-review--indonesia--majelis-rakyat-papua",
+      "country": "Indonesia",
+      "province": "Papua",
+      "institution_name": "Majelis Rakyat Papua Provinsi Papua",
+      "aliases": [
+        "Majelis Rakyat Papua",
+        "MRP Papua"
+      ],
+      "status": "outside_default_scope",
+      "legal_existence": "confirmed_statutory_institution_with_named_own_or_provincial_corroboration",
+      "institution_type": "provincial_cultural_and_indigenous_rights_consent_representative_body",
+      "relationship": {
+        "jurisdiction_id": "indonesia--papua",
+        "eligible_provincial_legislature_name": "Dewan Perwakilan Rakyat Papua",
+        "role": "Separate statutory rights-consent partner within the same province; not an additional general legislative chamber or a new jurisdiction.",
+        "national_MPR_distinct": true
+      },
+      "legal_basis": [
+        "UU 21/2001 as amended by UU 2/2021: Articles 1(1), 1(7–11), 5(1–3), 7, 20",
+        "PP 54/2004: Articles 38, 42–45, 54 and 74, read subject to the superior amended Act and PP 64/2008",
+        "PP 106/2021: Article 1 definitions, Article 103; PP 46/2025 current amendment checked"
+      ],
+      "preserved_substantive_power": "MRP consideration and consent is legally required in the specified Perdasus process; the institution also has Indigenous-rights representation and scrutiny/reconsideration rights. This is not a finding that it has no legally consequential power.",
+      "scope_reason": "The current statute assigns provincial enactment, APBD adoption and general executive/policy supervision to DPRP with the governor. MRP is the separate cultural/Indigenous-rights consent institution, without the general territorial legislative-finance role required for an additional catalogue legislature. Constitutional cultural representation or a parliamentary-style plenary alone does not supply that role.",
+      "individual_identity_evidence": "The province directory and designated MRP website identify the original Papua provincial institution. The wider Papua-region legal definition does not make this one MRP a chamber for all six current provinces.",
+      "evidence_source_ids": [
+        "uu_2021",
+        "pp_2004",
+        "pp_2008",
+        "pp_2021",
+        "pp_2025",
+        "papua_identity"
+      ],
+      "scope_decision_complete": true,
+      "remaining_authority_instrument": null,
+      "current_electoral_activity_certified": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "scope-review--indonesia--majelis-rakyat-papua-barat",
+      "country": "Indonesia",
+      "province": "Papua Barat",
+      "institution_name": "Majelis Rakyat Papua Provinsi Papua Barat",
+      "aliases": [
+        "Majelis Rakyat Papua Barat",
+        "MRP Papua Barat"
+      ],
+      "status": "outside_default_scope",
+      "legal_existence": "confirmed_statutory_institution_with_named_own_or_provincial_corroboration",
+      "institution_type": "provincial_cultural_and_indigenous_rights_consent_representative_body",
+      "relationship": {
+        "jurisdiction_id": "indonesia--papua-barat",
+        "eligible_provincial_legislature_name": "Dewan Perwakilan Rakyat Papua Barat",
+        "role": "Separate statutory rights-consent partner within the same province; not an additional general legislative chamber or a new jurisdiction.",
+        "national_MPR_distinct": true
+      },
+      "legal_basis": [
+        "UU 21/2001 as amended by UU 2/2021: Articles 1(1), 1(7–11), 5(1–3), 7, 20",
+        "PP 54/2004: Articles 38, 42–45, 54 and 74, read subject to the superior amended Act and PP 64/2008",
+        "PP 106/2021: Article 1 definitions, Article 103; PP 46/2025 current amendment checked"
+      ],
+      "preserved_substantive_power": "MRP consideration and consent is legally required in the specified Perdasus process; the institution also has Indigenous-rights representation and scrutiny/reconsideration rights. This is not a finding that it has no legally consequential power.",
+      "scope_reason": "The current statute assigns provincial enactment, APBD adoption and general executive/policy supervision to DPRP with the governor. MRP is the separate cultural/Indigenous-rights consent institution, without the general territorial legislative-finance role required for an additional catalogue legislature. Constitutional cultural representation or a parliamentary-style plenary alone does not supply that role.",
+      "individual_identity_evidence": "The own provincial MRP secretariat identifies a separate West Papua institution. It is distinct both from the original Papua MRP and from the Southwest Papua successor-area MRP.",
+      "evidence_source_ids": [
+        "uu_2021",
+        "pp_2004",
+        "pp_2008",
+        "pp_2021",
+        "pp_2025",
+        "papua_barat_identity"
+      ],
+      "scope_decision_complete": true,
+      "remaining_authority_instrument": null,
+      "current_electoral_activity_certified": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "scope-review--indonesia--majelis-rakyat-papua-selatan",
+      "country": "Indonesia",
+      "province": "Papua Selatan",
+      "institution_name": "Majelis Rakyat Papua Provinsi Papua Selatan",
+      "aliases": [
+        "Majelis Rakyat Papua Selatan",
+        "MRP Papua Selatan"
+      ],
+      "status": "outside_default_scope",
+      "legal_existence": "confirmed_statutory_institution_with_named_own_or_provincial_corroboration",
+      "institution_type": "provincial_cultural_and_indigenous_rights_consent_representative_body",
+      "relationship": {
+        "jurisdiction_id": "indonesia--papua-selatan",
+        "eligible_provincial_legislature_name": "Dewan Perwakilan Rakyat Papua Selatan",
+        "role": "Separate statutory rights-consent partner within the same province; not an additional general legislative chamber or a new jurisdiction.",
+        "national_MPR_distinct": true
+      },
+      "legal_basis": [
+        "UU 21/2001 as amended by UU 2/2021: Articles 1(1), 1(7–11), 5(1–3), 7, 20",
+        "PP 54/2004: Articles 38, 42–45, 54 and 74, read subject to the superior amended Act and PP 64/2008",
+        "PP 106/2021: Article 1 definitions, Article 103; PP 46/2025 current amendment checked"
+      ],
+      "preserved_substantive_power": "MRP consideration and consent is legally required in the specified Perdasus process; the institution also has Indigenous-rights representation and scrutiny/reconsideration rights. This is not a finding that it has no legally consequential power.",
+      "scope_reason": "The current statute assigns provincial enactment, APBD adoption and general executive/policy supervision to DPRP with the governor. MRP is the separate cultural/Indigenous-rights consent institution, without the general territorial legislative-finance role required for an additional catalogue legislature. Constitutional cultural representation or a parliamentary-style plenary alone does not supply that role.",
+      "individual_identity_evidence": "The provincial government records deputy-chair appointments on 31 July 2025 for the 2023–2028 MRP term and expressly describes its cultural representation.",
+      "evidence_source_ids": [
+        "uu_2021",
+        "pp_2004",
+        "pp_2008",
+        "pp_2021",
+        "pp_2025",
+        "papua_selatan_identity"
+      ],
+      "scope_decision_complete": true,
+      "remaining_authority_instrument": null,
+      "current_electoral_activity_certified": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "scope-review--indonesia--majelis-rakyat-papua-tengah",
+      "country": "Indonesia",
+      "province": "Papua Tengah",
+      "institution_name": "Majelis Rakyat Papua Provinsi Papua Tengah",
+      "aliases": [
+        "Majelis Rakyat Papua Tengah",
+        "MRP Papua Tengah"
+      ],
+      "status": "outside_default_scope",
+      "legal_existence": "confirmed_statutory_institution_with_named_own_or_provincial_corroboration",
+      "institution_type": "provincial_cultural_and_indigenous_rights_consent_representative_body",
+      "relationship": {
+        "jurisdiction_id": "indonesia--papua-tengah",
+        "eligible_provincial_legislature_name": "Dewan Perwakilan Rakyat Papua Tengah",
+        "role": "Separate statutory rights-consent partner within the same province; not an additional general legislative chamber or a new jurisdiction.",
+        "national_MPR_distinct": true
+      },
+      "legal_basis": [
+        "UU 21/2001 as amended by UU 2/2021: Articles 1(1), 1(7–11), 5(1–3), 7, 20",
+        "PP 54/2004: Articles 38, 42–45, 54 and 74, read subject to the superior amended Act and PP 64/2008",
+        "PP 106/2021: Article 1 definitions, Article 103; PP 46/2025 current amendment checked"
+      ],
+      "preserved_substantive_power": "MRP consideration and consent is legally required in the specified Perdasus process; the institution also has Indigenous-rights representation and scrutiny/reconsideration rights. This is not a finding that it has no legally consequential power.",
+      "scope_reason": "The current statute assigns provincial enactment, APBD adoption and general executive/policy supervision to DPRP with the governor. MRP is the separate cultural/Indigenous-rights consent institution, without the general territorial legislative-finance role required for an additional catalogue legislature. Constitutional cultural representation or a parliamentary-style plenary alone does not supply that role.",
+      "individual_identity_evidence": "The own site names this province's MRP and describes its cultural structure. Its old powers page is version-checked against the 2021 statute; MPR-delegate approval is not imported as current authority.",
+      "evidence_source_ids": [
+        "uu_2021",
+        "pp_2004",
+        "pp_2008",
+        "pp_2021",
+        "pp_2025",
+        "papua_tengah_identity",
+        "papua_tengah_old_powers_page"
+      ],
+      "scope_decision_complete": true,
+      "remaining_authority_instrument": null,
+      "current_electoral_activity_certified": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "scope-review--indonesia--majelis-rakyat-papua-pegunungan",
+      "country": "Indonesia",
+      "province": "Papua Pegunungan",
+      "institution_name": "Majelis Rakyat Papua Provinsi Papua Pegunungan",
+      "aliases": [
+        "Majelis Rakyat Papua Pegunungan",
+        "MRP Papua Pegunungan"
+      ],
+      "status": "outside_default_scope",
+      "legal_existence": "confirmed_statutory_institution_with_named_own_or_provincial_corroboration",
+      "institution_type": "provincial_cultural_and_indigenous_rights_consent_representative_body",
+      "relationship": {
+        "jurisdiction_id": "indonesia--papua-pegunungan",
+        "eligible_provincial_legislature_name": "Dewan Perwakilan Rakyat Papua Pegunungan",
+        "role": "Separate statutory rights-consent partner within the same province; not an additional general legislative chamber or a new jurisdiction.",
+        "national_MPR_distinct": true
+      },
+      "legal_basis": [
+        "UU 21/2001 as amended by UU 2/2021: Articles 1(1), 1(7–11), 5(1–3), 7, 20",
+        "PP 54/2004: Articles 38, 42–45, 54 and 74, read subject to the superior amended Act and PP 64/2008",
+        "PP 106/2021: Article 1 definitions, Article 103; PP 46/2025 current amendment checked"
+      ],
+      "preserved_substantive_power": "MRP consideration and consent is legally required in the specified Perdasus process; the institution also has Indigenous-rights representation and scrutiny/reconsideration rights. This is not a finding that it has no legally consequential power.",
+      "scope_reason": "The current statute assigns provincial enactment, APBD adoption and general executive/policy supervision to DPRP with the governor. MRP is the separate cultural/Indigenous-rights consent institution, without the general territorial legislative-finance role required for an additional catalogue legislature. Constitutional cultural representation or a parliamentary-style plenary alone does not supply that role.",
+      "individual_identity_evidence": "The own-site primary index names the institution and reports a January 2026 plenary. A plenary, work plan and institutional spending do not establish general provincial legislative powers.",
+      "evidence_source_ids": [
+        "uu_2021",
+        "pp_2004",
+        "pp_2008",
+        "pp_2021",
+        "pp_2025",
+        "papua_pegunungan_identity"
+      ],
+      "scope_decision_complete": true,
+      "remaining_authority_instrument": null,
+      "current_electoral_activity_certified": false,
+      "automatic_catalogue_promotion": false
+    },
+    {
+      "id": "scope-review--indonesia--majelis-rakyat-papua-barat-daya",
+      "country": "Indonesia",
+      "province": "Papua Barat Daya",
+      "institution_name": "Majelis Rakyat Papua Provinsi Papua Barat Daya",
+      "aliases": [
+        "Majelis Rakyat Papua Barat Daya",
+        "MRP Papua Barat Daya"
+      ],
+      "status": "outside_default_scope",
+      "legal_existence": "confirmed_statutory_institution_with_named_own_or_provincial_corroboration",
+      "institution_type": "provincial_cultural_and_indigenous_rights_consent_representative_body",
+      "relationship": {
+        "jurisdiction_id": "indonesia--papua-barat-daya",
+        "eligible_provincial_legislature_name": "Dewan Perwakilan Rakyat Papua Barat Daya",
+        "role": "Separate statutory rights-consent partner within the same province; not an additional general legislative chamber or a new jurisdiction.",
+        "national_MPR_distinct": true
+      },
+      "legal_basis": [
+        "UU 21/2001 as amended by UU 2/2021: Articles 1(1), 1(7–11), 5(1–3), 7, 20",
+        "PP 54/2004: Articles 38, 42–45, 54 and 74, read subject to the superior amended Act and PP 64/2008",
+        "PP 106/2021: Article 1 definitions, Article 103; PP 46/2025 current amendment checked"
+      ],
+      "preserved_substantive_power": "MRP consideration and consent is legally required in the specified Perdasus process; the institution also has Indigenous-rights representation and scrutiny/reconsideration rights. This is not a finding that it has no legally consequential power.",
+      "scope_reason": "The current statute assigns provincial enactment, APBD adoption and general executive/policy supervision to DPRP with the governor. MRP is the separate cultural/Indigenous-rights consent institution, without the general territorial legislative-finance role required for an additional catalogue legislature. Constitutional cultural representation or a parliamentary-style plenary alone does not supply that role.",
+      "individual_identity_evidence": "The own institutional history and province directory independently distinguish this MRP from the DPR Papua Barat Daya. The chair's dated own-site interview also describes the cultural role.",
+      "evidence_source_ids": [
+        "uu_2021",
+        "pp_2004",
+        "pp_2008",
+        "pp_2021",
+        "pp_2025",
+        "papua_barat_daya_identity",
+        "papua_barat_daya_directory",
+        "papua_barat_daya_chair"
+      ],
+      "scope_decision_complete": true,
+      "remaining_authority_instrument": null,
+      "current_electoral_activity_certified": false,
+      "automatic_catalogue_promotion": false
+    }
+  ],
+  "sources": {
+    "uu_2021": {
+      "title": "UU 2/2021: Second amendment of UU 21/2001 on Papuan special autonomy",
+      "url": "https://mrp.papuabaratdayaprov.go.id/storage//documents/UU%20Nomor%202%20Tahun%202021_1709527639_compressed.pdf",
+      "discovery_page": "https://mrp.papuabaratdayaprov.go.id/document/public/documents/UU%20Nomor%202%20Tahun%202021_1709527639_compressed.pdf",
+      "method": "primary_statutory_copy_linked_by_own_institution_downloaded_and_locally_extracted",
+      "version_scope": "Assented and promulgated 19 July 2021, LN 155/TLN 6697; 40 PDF pages. This amending Act is read alongside surviving older provisions, not presented as a fully consolidated code.",
+      "pdf_sha256": "8f2e82ac6fa7a0dd9d876317cb26adb68383e57a59cc267e7bbd20eff58bac1a",
+      "locators": [
+        "Article I: replacement Articles 1(1), 1(7–11), 5(1–3), 7(1)(d–i), 20(1)(a–e), 76",
+        "PDF pages 3–4, 7–8, 10–13, 25–26"
+      ]
+    },
+    "uu_base_metadata": {
+      "title": "National legal database: UU 21/2001, amendment relationships",
+      "url": "https://peraturan.go.id/id/uu-no-21-tahun-2001",
+      "method": "primary_legal_database_metadata_direct_read",
+      "version_scope": "Berlaku listing links UU 35/2008 and UU 2/2021; metadata alone is not the current consolidated text."
+    },
+    "pp_2004": {
+      "title": "PP 54/2004 on Majelis Rakyat Papua",
+      "url": "https://peraturan.go.id/files/pp54-2004.pdf",
+      "method": "primary_pdf_direct_text_review",
+      "version_scope": "Principal 2004 rules read subject to PP 64/2008 and the superior 2021 Act; obsolete gubernatorial-nomination/MPR-delegate rules are not adopted as current.",
+      "locators": [
+        "Articles 1(6–7), 36, 38(1–5), 42–45, 54, 74",
+        "PDF pages 26–33, 37, 46 (one-based)"
+      ]
+    },
+    "pp_2008": {
+      "title": "PP 64/2008: Amendment of PP 54/2004",
+      "url": "https://peraturan.bpk.go.id/Download/37408/PP%2064%20Tahun%202008.pdf",
+      "metadata_url": "https://peraturan.bpk.go.id/Details/4881/pp-no-64-tahun-2008",
+      "method": "primary_legal_database_metadata_and_full_pdf_direct_read",
+      "version_scope": "Promulgated 9 October 2008; changes MRP remuneration, facilities and operational expenditure provisions, including Article 65; does not allocate provincial legislation/APBD approval to MRP.",
+      "locators": [
+        "Article I, points 1–9; replacement Article 65 and inserted Article 67A",
+        "PDF pages 1–7"
+      ]
+    },
+    "pp_2021": {
+      "title": "PP 106/2021 on authority and institutions implementing Papuan special autonomy",
+      "url": "https://mrp.papuatengahprov.go.id/storage/documents/PP%20Nomor%20106%20Tahun%202021_1709527717.pdf",
+      "discovery_page": "https://mrp.papuatengahprov.go.id/halaman/peraturan-hukum/pp-nomor-106-tahun-2021",
+      "method": "primary_statutory_copy_linked_by_own_institution_pdf_direct_text_review",
+      "version_scope": "97-page principal rules; Article 1 definitions and closing/territorial-division provisions inspected. Does not repeal all prior special-autonomy rules: Article 103 preserves provisions that do not conflict. Read with PP 46/2025.",
+      "locators": [
+        "Articles 1(1), 1(10–13), 92–94, 103",
+        "PDF pages 2–4, 62–63, 67"
+      ]
+    },
+    "pp_2025": {
+      "title": "PP 46/2025: Amendment of PP 106/2021",
+      "url": "https://peraturan.go.id/files/pp-no-46-tahun-2025.pdf",
+      "method": "primary_pdf_full_text_direct_read",
+      "version_scope": "Promulgated 7 October 2025; changes only Articles 86 and 90 concerning the BP3OKP development steering body, executive committee and secretariat. No new MRP general legislative grant in this amendment.",
+      "locators": [
+        "Article I, replacement Articles 86 and 90; Article II",
+        "PDF pages 2–4"
+      ]
+    },
+    "bpk_2025_analysis": {
+      "title": "BPK Papua: Peran Majelis Rakyat Papua dalam Perlindungan Lingkungan Hidup (2025)",
+      "url": "https://papua.bpk.go.id/wp-content/uploads/2025/04/Tulisan-Hukum-Papua-Peran-MRP_20250414073044.pdf",
+      "method": "primary_institution_legal_analysis_pdf_direct_read",
+      "version_scope": "Government auditor-authored explanatory legal analysis; corroborates the cultural/consent distinction, but statutory texts determine the allocation.",
+      "locators": [
+        "PDF pages 4–5; references to UU 21/2001 as amended by UU 2/2021 and PP 54/2004 as amended by PP 64/2008"
+      ]
+    },
+    "papua_identity": {
+      "title": "Majelis Rakyat Papua official institutional website",
+      "url": "https://mrp.papua.go.id/home",
+      "directory_url": "https://www.papua.go.id/pages/instansi/majelis-rakyat-papua",
+      "method": "own_institution_direct_content_read_with_provincial_directory_designation",
+      "version_scope": "Institutional identity and 2026 activity entries visible on 24 October 2026; not a complete current member or uninterrupted sitting certificate."
+    },
+    "papua_barat_identity": {
+      "title": "Sekretariat Majelis Rakyat Papua Barat official website",
+      "url": "https://mrp.papuabaratprov.go.id/",
+      "method": "own_institution_direct_content_read",
+      "version_scope": "Provincial MRP secretariat, customary/religion/women units and 2026 entries identify the distinct West Papua institution; no complete current roster claim."
+    },
+    "papua_selatan_identity": {
+      "title": "Papua Selatan government: appointment of two MRP deputy chairs",
+      "url": "https://papuaselatan.go.id/berita/gubernur-apolo-lantik-dua-wakil-ketua-majelis-rakyat-papua-selatan",
+      "method": "provincial_government_direct_content_read",
+      "version_scope": "Dated 31 July 2025; describes the 2023–2028 institution and its cultural representation. Dated existence corroboration, not certification of every October 2026 officeholder."
+    },
+    "papua_tengah_identity": {
+      "title": "Majelis Rakyat Papua Provinsi Papua Tengah official website",
+      "url": "https://mrp.papuatengahprov.go.id/",
+      "method": "own_institution_direct_content_read",
+      "version_scope": "Identifies itself as Lembaga Kultural with customary, women and religion working groups and 2026 institutional entries."
+    },
+    "papua_tengah_old_powers_page": {
+      "title": "MRP Papua Tengah: Tugas Dan Kewenangan",
+      "url": "https://mrp.papuatengahprov.go.id/halaman/tugas-dan-kewenangan",
+      "method": "own_institution_direct_read_version_conflict_identified",
+      "version_scope": "Page reproduces pre-2021 Article 20, including obsolete consent to MPR regional delegates. Not used as current law; the downloaded UU 2/2021 replacement is used instead."
+    },
+    "papua_pegunungan_identity": {
+      "title": "Majelis Rakyat Papua Pegunungan official institutional site and 2026 plenary report",
+      "url": "https://mrp-papuapegunungan.go.id/",
+      "activity_url": "https://mrp-papuapegunungan.go.id/artikel/detail/mrp-papua-pegunungan-gelar-rapat-pleno-pembukaan-masa-sidang-i-tahun-2026",
+      "method": "own_institution_primary_search_index_read_direct_reader_empty",
+      "version_scope": "Primary index identifies institution and a 27 January 2026 report about the 22 January opening plenary. Direct root/article readers returned no extractable text, so no whole-page direct reading or current membership certification is claimed."
+    },
+    "papua_barat_daya_identity": {
+      "title": "MRP Papua Barat Daya: institutional history",
+      "url": "https://mrp.papuabaratdayaprov.go.id/page/sejarah-mrp-pbd",
+      "method": "own_institution_direct_content_read",
+      "version_scope": "Describes its distinct cultural representation and customary, religion and women components."
+    },
+    "papua_barat_daya_directory": {
+      "title": "Papua Barat Daya provincial government: MRP secretariat",
+      "url": "https://papuabaratdayaprov.go.id/page/133/sekretariat-majelis-rakyat-papua-barat-daya.html",
+      "method": "provincial_government_directory_direct_content_read",
+      "version_scope": "Provincial directory separately identifies MRP secretariat and DPR Papua Barat Daya secretariat; same-province institutions, not duplicate names."
+    },
+    "papua_barat_daya_chair": {
+      "title": "MRP Papua Barat Daya own-site republication: chair explains cultural institution",
+      "url": "https://mrp.papuabaratdayaprov.go.id/news/alfons-kambu-mrp-itu-lembaga-culture-bukan-lembaga-legislatif",
+      "method": "own_site_republication_of_chair_press_interview_direct_read",
+      "version_scope": "Published 17 February 2026, reporting a chair interview on 11 February. Institutional corroboration, not a statute. Casual consultative descriptions are not used to erase statutory Perdasus consent."
+    }
+  },
+  "access_and_version_limits": [
+    "National legal/BPKP/DPR copies of UU 2/2021 encountered timeouts or inaccessible responses. The observed official MRP viewer linked a public PDF that was successfully downloaded and locally extracted instead; a web-reader failure was not treated as missing law.",
+    "PP 106/2021 national-reader timeouts and one normal local HTTPS protocol error were resolved through the observed official MRP direct download. Its PDF was directly read through the web reader.",
+    "Papua Pegunungan own root and article returned empty direct-reader text. Its primary search index is identified explicitly as the identity evidence method; this is not claimed as full direct article inspection.",
+    "No all-member, election, continuous-sitting or every-amendment-to-provincial-Perdasus certification is made. Those are unnecessary to settle this bounded statutory authority allocation.",
+    "The old MRP Papua Tengah powers page retains a superseded MPR-delegate provision. It is evidence of a source-version problem, not of a current additional parliamentary function."
+  ],
+  "inventory_integration": {
+    "retain_six_named_exclusions": true,
+    "retain_existing_six_DPRP_rows": true,
+    "do_not_add_six_new_jurisdictions_or_chambers": true,
+    "do_not_confuse_MRP_with_national_MPR": true,
+    "reopen_trigger": "A specific enacted operative instrument assigning MRP a general territorial legislative and financial/executive-control role, or an explicit project scope change.",
+    "below_tier_expansion": "None; this closes an explicitly named six-province special-autonomy class and does not launch an exhaustive Indigenous/local-body census."
+  }
+}

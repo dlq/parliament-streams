@@ -1,0 +1,97 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "caldas-third",
+      "body_id": "colombia--caldas",
+      "url": "https://www.youtube.com/watch?v=7CuMRv4Xxts&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T23:13:41.748Z",
+      "status": 200,
+      "title": "20 de octubre 2026 - Sesión Plenaria - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n20:00 / 2:54:25\n20 de octubre 2026 - Sesión Plenaria\nAsamblea de Caldas\n453 subscribers\nSubscribe\n4\nShare\nSave\n216 views  Streamed 3 days ago\nPresentación informe de gestión de la Secretaría de Hacienda Departamental correspondiente a la vigencia 2026;  Social …\n...more\n\nLive chat replay\nSee what others said about this video while it was live.\nOpen panel\n0 Comments\nSort by\nAdd a comment…\n2:44:21\nNew\n21 de octubre 2026 - Sesión Plenaria\nAsamblea de Caldas\n111\nStreamed 2 days ago\n30:17\nUNE langue, TROIS façons de parler français ! (France vs Québec vs Belgique)\nLe French Club\nand 2 more\n208k\n13 days ago\n1:39:27\nNew\nOctober 22, 2026 - Plenary Session\nAsamblea de Caldas\n156\nStreamed 1 day ago\nAuto-dubbed\n44:55\nNew\n¿Podrá gobernar ADLE sin coalición en el congreso?\nA Fondo\n14k\n23 hr ago\n48:39\nThe THREATS that FORCED DANIEL CORONELL to FLEE to the U.S. and leave HIS LIFE IN COLOMBIA behind 🎙️\nMarcelo Longobardi\n471k\n3 wk ago\nAuto-dubbed\n0:59\nNew\n#Treasury| John Alexander Alzate Quiceno\nAsamblea de Caldas\n4\n2 days ago\nAuto-dubbed\n29:46\nNew\nClemencia Vargas, hija de VARGAS LLERAS REVELA EL SECRETO más preciado DE SU PADRE\nCanal REDMÁSTV\n13k\n22 hr ago\n11:03\nGuillaume Lemay-Thivierge brise le silence sur son annulation | Une époque formidable\nTélé-Québec\n238k\n11 mo ago\n22:15\nRevelations about Thélyson Orélien: his former employer speaks out\nTocsin\nand 2 more\n131k\n3 wk ago\nAuto-dubbed\n1:19:09\nOctober 8, 2026 - Plenary Session\nAsamblea de Caldas\n147\nStreamed 2 wk ago\nAuto-dubbed\n1:08:39\nChantal Hébert on the U.S., Mark Carney, and Alberta | Off the Record with Patrice Roy\nRadio-Canada Info\nand 2 more\n989k\n1 mo ago\n36:22\nNew\nFirst Lady accounts for $54 billion after Chocó earthquake | Daniel Coronell\nDaniel Coronell\n113k\n4 days ago\nAuto-dubbed\n2:11:29\nDébat Mélenchon VS Zemmour - Le replay\nJEAN-LUC MÉLENCHON\n10m\n5 yr ago\n47:16\nNew\nTrump announces tariff exemptions with Canada-U.S. trade deal 'close' | Power Play for Oct. 23, 2026\nCTV News\n955\n21 min ago\n13:34\nNew\nWhy was Rodrigo Lara fired? Details of his departure and the role of Carlos Suárez | Noticias UNO\nNoticiasUnoColombia\n228\n13 min ago\nAuto-dubbed\n54:56\nNew\nVerónica Alcocer came off worse ",
+      "advertisement": false,
+      "first": {
+        "time": 1203.896586,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 10465.081,
+        "frames": 498,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.107243,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 10465.081,
+        "frames": 564,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "institutional_video_with_chamber_inset_not_member_speech",
+      "screenshot": "/tmp/continue-caldas-third-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "Institutional worker/mining video shown in main panel with chamber inset; not member speech."
+    },
+    {
+      "key": "caldas-third",
+      "body_id": "colombia--caldas",
+      "url": "https://www.youtube.com/watch?v=7CuMRv4Xxts&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T23:13:56.271Z",
+      "status": 200,
+      "title": "20 de octubre 2026 - Sesión Plenaria - YouTube",
+      "excerpt": " CA\nSkip navigation\n\n20:00 / 2:54:25\n20 de octubre 2026 - Sesión Plenaria\nAsamblea de Caldas\n453 subscribers\nSubscribe\n4\nShare\nSave\n221 views  Streamed 3 days ago\nPresentación informe de gestión de la Secretaría de Hacienda Departamental correspondiente a la vigencia 2026;  Social …\n...more\nLive chat replay\nSee what others said about this video while it was live.\nOpen panel\n\n2:44:21\nNew\n21 de octubre 2026 - Sesión Plenaria\nAsamblea de Caldas\n111\nStreamed 2d ago\n\n30:53\nNew\n'He's That Guy' Watch Barack Obama Rip Trump Apart With Just Three Words | US Midterms 2026 | N18G\nCNN-News18\n778K\n3d ago\n\n39:31\nMan Uses FREE ABANDONED PALLETS to Build a House in the Forest | Full Build by @lesnoy\nTechFreeze\n2.2M\n4mo ago\n27:26\nDescubrió un TUMOR GIGANTE y preparó su TESTAMENTO: María Elvira Samper\nCanal REDMÁSTV\n422K\n2w ago",
+      "advertisement": false,
+      "first": {
+        "time": 1203.517393572,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 10465.081,
+        "frames": 463,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.732603572,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 10465.081,
+        "frames": 525,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "institutional_video_with_chamber_inset_not_member_speech",
+      "screenshot": "/tmp/continue-caldas-third-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "Institutional worker/mining video shown in main panel with chamber inset; not member speech."
+    }
+  ]
+}

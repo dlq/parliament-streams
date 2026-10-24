@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Own assembly website designates its recording provider. ALERJ Cumprase public hearing on implementing doulas/humanized-childbirth laws (onscreen 25 June 2026), and Sport/Leisure committee public hearing on sea sport and social inclusion (onscreen 18 August 2026). Both show speakers in identified assembly hearings; these are not two validated plenaries. First recording's upload timing differs from its onscreen meeting date. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+    "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+    "Evidence: reports/discovery/2026-10-23-brazil-nine-publication-review.json"
+  ],
+  "channel": {
+    "id": "brazil-rio-de-janeiro-assembly-recordings",
+    "name": "Rio de Janeiro Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Rio de Janeiro",
+    "legislature": "Assembleia Legislativa do Estado do Rio de Janeiro",
+    "external_ids": {
+      "wikidata_qid": "Q6583209",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q6583209",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact assembly Q6583209, revision 2492403968; Brazil P17 Q155 and jurisdiction P1001 Q41428 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+      }
+    ],
+    "language": "Portuguese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.alerj.rj.gov.br/",
+    "provenance_note": "Own assembly website designates its recording provider. ALERJ Cumprase public hearing on implementing doulas/humanized-childbirth laws (onscreen 25 June 2026), and Sport/Leisure committee public hearing on sea sport and social inclusion (onscreen 18 August 2026). Both show speakers in identified assembly hearings; these are not two validated plenaries. First recording's upload timing differs from its onscreen meeting date. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No sign-language variant established in the selected hearing samples. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.alerj.rj.gov.br/",
+        "method": "GET",
+        "kind": "official_institution_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added.",
+      "evidence": [
+        "https://www.alerj.rj.gov.br/"
+      ],
+      "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+    }
+  }
+}

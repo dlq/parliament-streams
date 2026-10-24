@@ -1,0 +1,169 @@
+{
+  "method": "Only source-designated chamber websites and visible official archive/news controls; no hidden APIs or off-site ownership assumptions. Access errors stop interaction.",
+  "results": [
+    {
+      "id": "lesotho-senate-video",
+      "url": "http://senate.parliament.ls/videos",
+      "checked_at": "2026-10-24T03:45:44.676Z",
+      "status": 200,
+      "links": [
+        {
+          "text": "Skip to content",
+          "url": "http://senate.parliament.ls/videos/#content"
+        },
+        {
+          "text": "",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "Officers Of The House",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "Business Of The House",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "Publications",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "News",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "Adverts",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "Media",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "Virtual Tour – Videos",
+          "url": "http://senate.parliament.ls/videos"
+        },
+        {
+          "text": "Events",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "FOR MORE VIDEOS VISIT SENATE OF LESOTHO YOUTUBE CHANNEL",
+          "url": "https://www.youtube.com/channel/UCv8eqr_sD4reT_evUwDPy0w"
+        },
+        {
+          "text": "",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://senate.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://senate.parliament.ls/videos/#"
+        }
+      ],
+      "media": [
+        {
+          "tag": "IFRAME",
+          "src": "https://www.youtube.com/embed/zfuz54yJGBs?feature=oembed"
+        }
+      ],
+      "outcome": "visible_primary_navigation_followed_requires_content_review",
+      "final_url": "http://senate.parliament.ls/videos/",
+      "title": "videos – Lesotho Senate",
+      "screenshot": "/tmp/national-visible-lesotho-senate-video.png"
+    },
+    {
+      "id": "lesotho-assembly-video",
+      "url": "http://nationalassembly.parliament.ls/videos",
+      "checked_at": "2026-10-24T03:45:53.180Z",
+      "status": 200,
+      "links": [
+        {
+          "text": "Skip to content",
+          "url": "http://nationalassembly.parliament.ls/videos/#content"
+        },
+        {
+          "text": "",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "Officers Of The House",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "Business Of The House",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "Publications",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "News",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "Adverts",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "Media",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "Virtual Tour – Video",
+          "url": "http://nationalassembly.parliament.ls/videos"
+        },
+        {
+          "text": "Events",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "FOR MORE VIDEOS VISIT NATIONAL ASSEMBLY OF LESOTHO YOUTUBE CHANNEL",
+          "url": "https://www.youtube.com/channel/UCy9HrRA2mawlTcza8lqxlgQ"
+        },
+        {
+          "text": "",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        },
+        {
+          "text": "",
+          "url": "http://nationalassembly.parliament.ls/videos/#"
+        }
+      ],
+      "media": [
+        {
+          "tag": "IFRAME",
+          "src": "https://www.youtube.com/embed/nbqJebuQQ1A?feature=oembed"
+        }
+      ],
+      "outcome": "visible_primary_navigation_followed_requires_content_review",
+      "final_url": "http://nationalassembly.parliament.ls/videos/",
+      "title": "videos – The National Assembly of Lesotho",
+      "screenshot": "/tmp/national-visible-lesotho-assembly-video.png"
+    }
+  ]
+}

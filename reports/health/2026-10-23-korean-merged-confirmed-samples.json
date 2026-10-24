@@ -1,0 +1,181 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "jeonnam-gwangju-1",
+      "body_id": "south-korea--jeonnam-gwangju",
+      "url": "https://www.youtube.com/watch?v=cC4dfc7yRYM&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:48:00.901Z",
+      "status": 200,
+      "title": "제4회 임시회 제6차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.923115,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 20240.061,
+        "frames": 483,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.134633,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 20240.061,
+        "frames": 547,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonnam-gwangju-1-chromium.png",
+      "visual_review": "Current successor branding; plenary member delivering review report with interpreter."
+    },
+    {
+      "key": "jeonnam-gwangju-2",
+      "body_id": "south-korea--jeonnam-gwangju",
+      "url": "https://www.youtube.com/watch?v=C2f-gizqLG8&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:48:13.896Z",
+      "status": 200,
+      "title": "제4회 임시회 제2차 행정소방위원회 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.959981,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7675.021,
+        "frames": 204,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.17034,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7675.021,
+        "frames": 270,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonnam-gwangju-2-chromium.png",
+      "visual_review": "Current successor branding; Administration/Fire Committee member speaking into microphone. Interpreter not established in this sample."
+    },
+    {
+      "key": "jeonnam-gwangju-1",
+      "body_id": "south-korea--jeonnam-gwangju",
+      "url": "https://www.youtube.com/watch?v=cC4dfc7yRYM&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:48:26.778Z",
+      "status": 200,
+      "title": "제4회 임시회 제6차 본회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.450896116,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 20240.061,
+        "frames": 436,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.663770949,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 20240.061,
+        "frames": 509,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonnam-gwangju-1-webkit.png",
+      "visual_review": "Current successor branding; plenary member delivering review report with interpreter."
+    },
+    {
+      "key": "jeonnam-gwangju-2",
+      "body_id": "south-korea--jeonnam-gwangju",
+      "url": "https://www.youtube.com/watch?v=C2f-gizqLG8&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:48:39.990Z",
+      "status": 200,
+      "title": "제4회 임시회 제2차 행정소방위원회 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 1203.531616954,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7675.021,
+        "frames": 170,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.74302687,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 7675.021,
+        "frames": 230,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-jeonnam-gwangju-2-webkit.png",
+      "visual_review": "Current successor branding; Administration/Fire Committee member speaking into microphone. Interpreter not established in this sample."
+    }
+  ]
+}

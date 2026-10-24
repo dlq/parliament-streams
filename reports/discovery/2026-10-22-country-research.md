@@ -399,6 +399,7 @@ Sources checked:
 
 Findings:
 - Broad and targeted official-domain searches did not resolve a current national live-player page; official parliamentary records mention House YouTube transmissions. No third-party Parlamento TV listing promoted.
+- 23 October second pass: actual13October2026 national Chamber video plays, with exact Wikidata provider ID and channel backlink corroboration; an accessible fresh institution-to-provider forward designation remains unresolved. Rivera’s separate departmental footage passes but its specific institutional ID is missing. See 2026-10-23-validation-second-pass.json.
 
 Unresolved leads:
 - [ ] House/Senate official YouTube provenance and current live entry points Next: Retry national sites in browser, follow institutional social/video links, distinguish House/Senate and committees from Mercosur and Montevideo services. Sources: https://www.parlamento.gub.uy/, https://www.diputados.gub.uy/
@@ -698,6 +699,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `slovenia-national-council-webcasts`.  23 October deep validation: slovenia-national-council-webcasts: The National Council is the national upper chamber, as separately identified by IPU, with legislative initiative and suspensive-veto functions. The 43rd plenary and a public education/culture committee recording play; it is not a municipal council. National Assembly and TV SLO3 coverage are separate, unvalidated leads.
+
 Searches run:
 - Državni zbor Državni svet neposredni prenosi seje odbori RTV
 - Slovenia parliament official live TV SLO 3 committee streams
@@ -706,9 +709,11 @@ Sources checked:
 - [National Council](https://www.ds-rs.si/) — web_page_open; National parliamentary broadcasts. Official council site links its YouTube presence and committee activity.
 - [RTV SLO 3 live](https://365.rtvslo.si/vzivo/tvs3) — web_page_open_blocked; National parliamentary broadcasts. Not accessible through tool.
 - [European Parliament broadcaster directory](https://www.europarl.europa.eu/at-your-service/sl/stay-informed/channels-covering-parliaments) — web_search_result_only; National parliamentary broadcasts. Official directory identifies TV Slovenija 3 as Assembly/Council and committee coverage.
+- [23 October validated official viewing service](https://www.youtube.com/channel/UCHZMFuV0JworHCa9H0pZfOg/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The National Council is the national upper chamber, as separately identified by IPU, with legislative initiative and suspensive-veto functions. The 43rd plenary and a public education/culture committee recording play; it is not a municipal council. National Assembly and TV SLO3 coverage are separate, unvalidated leads.
 
 Findings:
 - National Assembly/Council and TV SLO 3 are new source families for catalogue research.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: slovenia-national-council-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] National Assembly/Council and TV SLO 3 are new source families for catalogue research. Next: Open dz-rs.si and broadcaster live directory in browser, verify national chamber and committee feeds, geography and reuse constraints. Sources: https://www.ds-rs.si/, https://365.rtvslo.si/vzivo/tvs3, https://www.europarl.europa.eu/at-your-service/sl/stay-informed/channels-covering-parliaments
@@ -735,15 +740,19 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `south-korea-natv-onair`.  23 October deep validation: south-korea-natv-onair: Official internet proceedings portal links NATV. The on-air player advances for more than 20 seconds, with a growing live MediaSource duration. Sampled output shows committee/audit coverage labelled 10.22; broadcaster on-air output is not proof of a currently live sitting or every committee stream.
+
 Searches run:
 - 국회방송 국회 의사중계 인터넷 생중계 위원회
 - Korea National Assembly official live committees NATV webcast
 
 Sources checked:
 - [Assembly internet proceedings](https://assembly.webcast.go.kr/) — web_page_open_empty; National parliament and committee broadcasts. Empty parsed page; indexed official result lists concurrent committee live/VOD and plenary options.
+- [23 October validated official viewing service](https://www.natv.go.kr/natv/onair.do) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official internet proceedings portal links NATV. The on-air player advances for more than 20 seconds, with a growing live MediaSource duration. Sampled output shows committee/audit coverage labelled 10.22; broadcaster on-air output is not proof of a currently live sitting or every committee stream.
 
 Findings:
 - Official internet proceedings and NATV are national candidates not yet catalogued.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: south-korea-natv-onair. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official internet proceedings and NATV are national candidates not yet catalogued. Next: Resolve dynamic live committee cards, NATV official cross-link and player identities; distinguish quick VOD from live. Sources: https://assembly.webcast.go.kr/
@@ -797,6 +806,8 @@ Watchlist additions:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `botswana-national-assembly-webcasts`.  23 October deep validation: botswana-national-assembly-webcasts: The official Watch-Live page explicitly designates @BWPARLIAMENT. Legislative sittings labelled 20 and 21 August 2026 play at 20 minutes. Ntlo ya Dikgosi advisory meetings appear in the same channel but are not independently promoted as a law-making chamber.
+
 Searches run:
 - Botswana Parliament official live proceedings committees television
 - site:parliament.gov.bw live broadcast
@@ -804,9 +815,11 @@ Searches run:
 Sources checked:
 - [Botswana Speaks events](https://www.botswanaspeaks.gov.bw/category/2/events) — web_page_open; National parliament and committee broadcasts. Institutional events page links Watch-Live and says National Assembly proceedings are on its official YouTube channel.
 - [Government DailyNews committee broadcasting](https://dailynews.gov.bw/news-detail/91995) — web_search_result_only; National parliament and committee broadcasts. Indexed government report describes BTV2 committee broadcasting.
+- [23 October validated official viewing service](https://www.youtube.com/@BWPARLIAMENT/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official Watch-Live page explicitly designates @BWPARLIAMENT. Legislative sittings labelled 20 and 21 August 2026 play at 20 minutes. Ntlo ya Dikgosi advisory meetings appear in the same channel but are not independently promoted as a law-making chamber.
 
 Findings:
 - Official Assembly YouTube and BTV2 committee coverage are candidates; Ntlo ya Dikgosi coverage needs separate confirmation.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: botswana-national-assembly-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official Assembly YouTube and BTV2 committee coverage are candidates; Ntlo ya Dikgosi coverage needs separate confirmation. Next: Follow Watch-Live institutional link, verify channel identity and live event behavior; check BTV2 official player and advisory-chamber video. Sources: https://www.botswanaspeaks.gov.bw/category/2/events, https://dailynews.gov.bw/news-detail/91995
@@ -819,6 +832,8 @@ Watchlist additions:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `lithuania-seimas-committee-webcasts`.  23 October deep validation: lithuania-seimas-committee-webcasts: The official Seimas homepage directly links both sampled 21 October Social Affairs/Labour and Budget/Finance videos on Atviras Seimas 2. The main Atviras Seimas channel also links the overflow channel. This record validates committee archive playback; it does not certify all upcoming events or the main plenary service.
+
 Searches run:
 - Seimas tiesiogiai komitetai transliacijos oficialus LRT Seimas
 - Lithuania parliament official live committee webcasts
@@ -826,9 +841,11 @@ Searches run:
 Sources checked:
 - [Seimas](https://www.lrs.lt/) — web_page_open_blocked; National parliamentary live/video. Fetch failed.
 - [Atviras Seimas institutional channel](https://www.youtube.com/channel/UCN6ZSYI-7pxml6bE_zrTgow) — web_search_result_only; National parliamentary live/video. Channel description lists plenary and committee live/recordings and overflow Atviras Seimas 2; institutional backlink still needed.
+- [23 October validated official viewing service](https://www.youtube.com/@AtvirasSeimas2/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official Seimas homepage directly links both sampled 21 October Social Affairs/Labour and Budget/Finance videos on Atviras Seimas 2. The main Atviras Seimas channel also links the overflow channel. This record validates committee archive playback; it does not certify all upcoming events or the main plenary service.
 
 Findings:
 - Seimas video and overflow committee channel are new candidates.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: lithuania-seimas-committee-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Seimas video and overflow committee channel are new candidates. Next: Follow institutional live/video links in browser; verify both provider identities, concurrent coverage and terms. Sources: https://www.lrs.lt/, https://www.youtube.com/channel/UCN6ZSYI-7pxml6bE_zrTgow
@@ -841,15 +858,19 @@ Watchlist additions:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `cape-verde-national-assembly-antv`.  23 October deep validation: cape-verde-national-assembly-antv: Official ANTV index embeds plenary recordings from 8 and 9 October 2026 and reports no current live events. Current on-air plenary and committee coverage remain unvalidated.
+
 Searches run:
 - Assembleia Nacional Cabo Verde televisão direto comissões oficial
 - Cabo Verde parlamento canal transmissão ao vivo RTC
 
 Sources checked:
 - [ANTV Canal Parlamento](https://www.parlamento.cv/antv/) — web_page_open; National parliamentary live/video. Official portal embeds dated YouTube plenary sessions and has ao vivo option.
+- [23 October validated official viewing service](https://www.parlamento.cv/antv/) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official ANTV index embeds plenary recordings from 8 and 9 October 2026 and reports no current live events. Current on-air plenary and committee coverage remain unvalidated.
 
 Findings:
 - Official ANTV live/event portal is a new catalogue candidate.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: cape-verde-national-assembly-antv. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official ANTV live/event portal is a new catalogue candidate. Next: Inspect live option/provider identity, distinguish ended plenary embeds from current live, check committee coverage and terms. Sources: https://www.parlamento.cv/antv/
@@ -979,6 +1000,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `malaysia-parliament-webcasts`.  23 October deep validation: malaysia-parliament-webcasts: Official Parliament footer designates this channel. Dewan Rakyat and Kamar Khas recordings labelled 22 October 2026 play beyond their opening slates. Dewan Negara and all public committee channels are not certified by those two samples.
+
 Searches run:
 - Parlimen Malaysia siaran langsung Dewan Rakyat Negara jawatankuasa rasmi
 - Malaysia parliament official committee live webcast
@@ -986,9 +1009,11 @@ Searches run:
 Sources checked:
 - [Parliament](https://www.parlimen.gov.my/) — web_page_open_blocked; National parliamentary live/video. Fetch failed.
 - [RTM parliamentary broadcast report](https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/ahli-parlimen-boleh-tonton-sidang-dewan-rakyat-di-rtm/) — web_search_result_only; National parliamentary live/video. Indexed public-broadcaster report confirms official Parliament YouTube and RTM live coverage.
+- [23 October validated official viewing service](https://www.youtube.com/channel/UCu2I5HXcZudP59E5Ld10K_g/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official Parliament footer designates this channel. Dewan Rakyat and Kamar Khas recordings labelled 22 October 2026 play beyond their opening slates. Dewan Negara and all public committee channels are not certified by those two samples.
 
 Findings:
 - Dewan Rakyat/Negara official video and RTM Parliament are new candidates; old webcast URLs are not assumed current.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: malaysia-parliament-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Dewan Rakyat/Negara official video and RTM Parliament are new candidates; old webcast URLs are not assumed current. Next: Resolve institutional live/both-chamber provider links and any public committee coverage; validate current RTM player. Sources: https://www.parlimen.gov.my/, https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/ahli-parlimen-boleh-tonton-sidang-dewan-rakyat-di-rtm/
@@ -1015,15 +1040,19 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `timor-leste-national-parliament-archive`.  23 October deep validation: timor-leste-national-parliament-archive: Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation.
+
 Searches run:
 - Parlamento Nacional Timor Leste direto transmissão comissões oficial
 - Timor Leste parliament official live TV parliamentary channel
 
 Sources checked:
 - [National Parliament](https://www.parlamento.tl/) — web_page_open; National parliamentary live/video. Official EM DIRETO section links parliamentary YouTube videos and Canal Parlamento; some linked committee items are field reports, not hearings.
+- [23 October validated official viewing service](https://www.parlamento.tl/videos) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official homepage and Canal Parlamento designate dated plenary recordings, including 15 July and 15 June 2026. Both play beyond opening graphics. The legacy /parlamentotl/streams handle returns 404; use the official video index. Committee field visits are not committee-hearing validation.
 
 Findings:
 - Official Canal Parlamento/YouTube family is a new candidate; committee reports are not counted as live committee-room feeds.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: timor-leste-national-parliament-archive. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official Canal Parlamento/YouTube family is a new candidate; committee reports are not counted as live committee-room feeds. Next: Follow Canal Parlamento and institution-linked channel; verify live plenary and actual committee hearing coverage, terms. Sources: https://www.parlamento.tl/
@@ -1032,6 +1061,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `panama-national-assembly-committee-webcasts`.  23 October deep validation: panama-national-assembly-committee-webcasts: An official Assembly article/footer explicitly links this provider through its public click-out URL. Budget and Labour/Health/Social Development Committee recordings play at 20 minutes. No current plenary or standing TVL feed is claimed. The IPU profile failed to fetch; identity uses the verified Wikidata legislature and institutional provider chain, with a separate PA country-code mapping.
+
 Searches run:
 - Asamblea Nacional Panamá en vivo comisiones ANTV oficial
 - Panama parlamento canal televisión oficial directo
@@ -1039,9 +1070,11 @@ Searches run:
 Sources checked:
 - [National Assembly](https://www.asamblea.gob.pa/) — web_page_open_blocked; National parliamentary live/video. Fetch failed.
 - [Assembly TV status statement](https://www.asamblea.gob.pa/Noticias/Noticias/Vicepresidenta-Cano-aclara-situaci%C3%B3n-de-la-TV-y-Web-de-la-Asamblea-Nacional) — web_search_result_only; National parliamentary live/video. Indexed 2024 statement described administrative reactivation; not proof of current live availability.
+- [23 October validated official viewing service](https://www.youtube.com/user/AsambleaNacionalPa/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. An official Assembly article/footer explicitly links this provider through its public click-out URL. Budget and Labour/Health/Social Development Committee recordings play at 20 minutes. No current plenary or standing TVL feed is claimed. The IPU profile failed to fetch; identity uses the verified Wikidata legislature and institutional provider chain, with a separate PA country-code mapping.
 
 Findings:
 - Assembly TVL and official plenary/committee channels remain candidates; third-party news simulcasts excluded.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: panama-national-assembly-committee-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Assembly TVL and official plenary/committee channels remain candidates; third-party news simulcasts excluded. Next: Inspect current institutional video/social links, verify whether TVL is currently live and map committee sources. Sources: https://www.asamblea.gob.pa/, https://www.asamblea.gob.pa/Noticias/Noticias/Vicepresidenta-Cano-aclara-situaci%C3%B3n-de-la-TV-y-Web-de-la-Asamblea-Nacional
@@ -1050,15 +1083,19 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `suriname-national-assembly-webcasts`.  23 October deep validation: suriname-national-assembly-webcasts: Official DNA site designates its channel. A 22 October 2026 public sitting plays beyond the slate. A second same-day sample still shows a holding graphic at the sampled timestamp, so it is not evidence of active chamber business.
+
 Searches run:
 - De Nationale Assemblee Suriname live uitzending commissies officieel
 - Suriname parliament official live DNA TV
 
 Sources checked:
 - [National Assembly](https://www.dna.sr/?level=1) — web_page_open; National parliamentary live/video. Official Live Streaming & Video Producties section links institution videos and DNA TV productions.
+- [23 October validated official viewing service](https://www.youtube.com/user/dnasuriname/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official DNA site designates its channel. A 22 October 2026 public sitting plays beyond the slate. A second same-day sample still shows a holding graphic at the sampled timestamp, so it is not evidence of active chamber business.
 
 Findings:
 - DNA TV and institutional live-video portal are new candidates; linked news clips are not proof of a standing live feed.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: suriname-national-assembly-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] DNA TV and institutional live-video portal are new candidates; linked news clips are not proof of a standing live feed. Next: Follow institutional live-feed/mobile and provider links; verify current plenary/committee coverage and rights. Sources: https://www.dna.sr/?level=1
@@ -1067,6 +1104,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `jamaica-parliament-pbcj-recordings`.  23 October deep validation: jamaica-parliament-pbcj-recordings: The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles.
+
 Searches run:
 - Jamaica parliament official live House Senate committees PBCJ
 - site:japarliament.gov.jm live broadcast
@@ -1074,9 +1113,11 @@ Searches run:
 Sources checked:
 - [Houses of Parliament](https://japarliament.gov.jm/) — web_page_open; National parliamentary live/video. Official site says meetings can be viewed through PBCJ and links youtube.com/user/pbcjamaica; lists committee meetings.
 - [PBCJ Parliament/Senate](https://pbcjamaica.org/show/parliamentsenate/) — web_page_open; National parliamentary live/video. Public broadcaster describes Parliament Live programme.
+- [23 October validated official viewing service](https://pbcjamaica.org/show/parliamentsenate/) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The Parliament homepage explicitly designates PBCJ and its YouTube channel. Public Accounts and Domestic Violence Committee recordings show actual proceedings at 30 minutes. Both a provider-live Senate title and a separately archived Senate-labelled video show public-service programming at the sampled positions; Senate chamber activity is not validated by those titles.
 
 Findings:
 - Institution-to-PBCJ provenance is established for House, Senate and public committee video; new catalogue family.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: jamaica-parliament-pbcj-recordings. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Institution-to-PBCJ provenance is established for House, Senate and public committee video; new catalogue family. Next: Inspect current PBCJ live/player and parliamentary event embeds, separate general channel schedule from parliamentary sessions. Sources: https://japarliament.gov.jm/, https://pbcjamaica.org/show/parliamentsenate/
@@ -1122,6 +1163,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `dominican-republic-deputies-webcasts`.  23 October deep validation: dominican-republic-deputies-webcasts: The official Chamber links the channel and plenary playlists. Sessions 15 and 16, labelled 20 and 21 October 2026, play. The footer terms-of-use destination returned 404; no independent reuse permission is assumed. Senate coverage remains separate.
+
 Searches run:
 - Cámara Diputados Senado República Dominicana en vivo comisiones oficial televisión
 - República Dominicana TV Cámara Senado canal oficial directo
@@ -1129,9 +1172,11 @@ Searches run:
 Sources checked:
 - [Chamber of Deputies](https://camaradediputados.gob.do/) — web_page_open; National parliamentary live/video. Official site opens; indexed current live section.
 - [Senate](https://www.senadord.gob.do/) — web_page_open; National parliamentary live/video. Official page has Transmisión en Vivo section.
+- [23 October validated official viewing service](https://www.youtube.com/user/CamaraDiputadosRD/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official Chamber links the channel and plenary playlists. Sessions 15 and 16, labelled 20 and 21 October 2026, play. The footer terms-of-use destination returned 404; no independent reuse permission is assumed. Senate coverage remains separate.
 
 Findings:
 - Both national chambers have official video-service candidates absent from catalogue.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: dominican-republic-deputies-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Both national chambers have official video-service candidates absent from catalogue. Next: Inspect each live player and institutional provider cross-link; map public committee events and rights. Sources: https://camaradediputados.gob.do/, https://www.senadord.gob.do/
@@ -1157,6 +1202,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `argentina-chamber-deputies-webcasts`.  23 October deep validation: argentina-chamber-deputies-webcasts: Institution-linked channel: 21 October special plenary and 20 October Energy/Fuels Committee proceedings play. Senado TV is a separate upper-chamber lead.
+
 Searches run:
 - Diputados Senado Argentina en vivo comisiones DTV Senado TV oficial
 - Congreso Argentina canales oficiales vivo comisiones
@@ -1164,9 +1211,11 @@ Searches run:
 Sources checked:
 - [Chamber of Deputies](https://www.hcdn.gob.ar/) — web_page_open_blocked; National parliamentary live/video. Fetch failed.
 - [Senate](https://www.senado.gob.ar/) — web_page_open; National parliamentary live/video. Official upper-house site opens.
+- [23 October validated official viewing service](https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Institution-linked channel: 21 October special plenary and 20 October Energy/Fuels Committee proceedings play. Senado TV is a separate upper-chamber lead.
 
 Findings:
 - DTV and Senado TV are distinct national candidates; committee event players may be separate from standing TV channels.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: argentina-chamber-deputies-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] DTV and Senado TV are distinct national candidates; committee event players may be separate from standing TV channels. Next: Follow institutional TV links, verify current provider identities and concurrent committee broadcasts with terms. Sources: https://www.hcdn.gob.ar/, https://www.senado.gob.ar/
@@ -1193,6 +1242,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `croatia-parliament-committee-webcasts`.  23 October deep validation: croatia-parliament-committee-webcasts: The official notice for the Information/Informatization/Media Committee 25th meeting on 22 September 2026 links the sampled recording. Its normal watch page identifies the Saborska TV - odbori channel. Recording plays at 20 minutes. Plenary broadcast and other committee rooms remain unvalidated.
+
 Searches run:
 - Hrvatski sabor sjednice odbori uživo saborska televizija službeno
 - Croatia parliament official live committees HRT Sabor
@@ -1200,9 +1251,11 @@ Searches run:
 Sources checked:
 - [Sabor public committee webcast notice](https://sabor.hr/index.php/hr/press/kratke-obavijesti/informacija-o-internetskom-prijenosu-uzivo-25-sjednice-odbora-za-0) — web_page_open_blocked; National parliamentary live/video. Fetch failed; indexed September 2026 institutional notice links Sabor YouTube for a committee meeting.
 - [Sabor FAQ](https://www.sabor.hr/index.php/hr/cesta-pitanja) — web_search_result_only; National parliamentary live/video. Indexed FAQ describes chamber live and archived proceedings.
+- [23 October validated official viewing service](https://www.youtube.com/@saborskatv-odbori3799/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official notice for the Information/Informatization/Media Committee 25th meeting on 22 September 2026 links the sampled recording. Its normal watch page identifies the Saborska TV - odbori channel. Recording plays at 20 minutes. Plenary broadcast and other committee rooms remain unvalidated.
 
 Findings:
 - Official chamber webcast and public committee YouTube are new candidates.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: croatia-parliament-committee-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official chamber webcast and public committee YouTube are new candidates. Next: Inspect current institutional video portal/YouTube backlink; establish public committee player identity and reuse terms. Sources: https://sabor.hr/index.php/hr/press/kratke-obavijesti/informacija-o-internetskom-prijenosu-uzivo-25-sjednice-odbora-za-0, https://www.sabor.hr/index.php/hr/cesta-pitanja
@@ -1210,6 +1263,8 @@ Unresolved leads:
 ## Brazil (tier2)
 
 Status: **reviewed**. National catalogue records before this research pass: `brazil-tv-camara`.
+
+Promoted official viewing links: `brazil-tv-senado-official`.  23 October deep validation: brazil-tv-senado-official: Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.
 
 Searches run:
 - Câmara Senado Brasil TV ao vivo comissões canais oficiais
@@ -1219,9 +1274,11 @@ Sources checked:
 - [TV Câmara reception/embed](https://www.camara.leg.br/tv/como-sintonizar) — web_page_open; National parliamentary live/video. Official page publishes camara.leg.br/tv/aovivo/embed iframe.
 - [TV Senado live](https://www12.senado.leg.br/tv/ao-vivo) — web_page_open_blocked; National parliamentary live/video. Not accessible through tool.
 - [Senate communication services](https://www12.senado.leg.br/assessoria-de-imprensa/lista-dos-servicos-da-secom) — web_search_result_only; National parliamentary live/video. Indexed institution description says TV Senado offers eight live channels for plenary/committees.
+- [23 October validated official viewing service](https://www12.senado.leg.br/tv/ao-vivo) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official TV Senado page embeds its designated on-air provider. On-air TV and a retained channel recording play, but sampled output includes non-plenary programming; this validates the parliamentary broadcaster, not a currently live chamber or its eight parallel slots.
 
 Findings:
 - TV Senado and eight-channel family are leads beyond existing TV Câmara; official lower-house embed is explicitly documented.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: brazil-tv-senado-official. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] TV Senado and eight-channel family are leads beyond existing TV Câmara; official lower-house embed is explicitly documented. Next: Resolve Senate eight-slot player directory and Câmara simultaneous committee streams; verify identities/terms without guessing CDN routes. Sources: https://www.camara.leg.br/tv/como-sintonizar, https://www12.senado.leg.br/tv/ao-vivo, https://www12.senado.leg.br/assessoria-de-imprensa/lista-dos-servicos-da-secom
@@ -1230,15 +1287,19 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `namibia-parliament-webcasts`.  23 October deep validation: namibia-parliament-webcasts: Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated.
+
 Searches run:
 - Namibia Parliament official live National Assembly National Council committees NBC
 - site:parliament.na live stream
 
 Sources checked:
 - [Parliament](https://www.parliament.na/) — web_page_open; National parliamentary live/video. Official home links Watch Live/Facebook and Parliament YouTube; dated current Assembly video appears.
+- [23 October validated official viewing service](https://www.youtube.com/channel/UCueeiEi-sE0Ru0WDMk6dC3w/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Institution-linked parliamentary channel: National Assembly sittings labelled 21 and 22 October 2026 play beyond opening slates. National Council and public committee recordings remain separately unvalidated.
 
 Findings:
 - Institution-linked live video is a new candidate; Assembly, Council and committees need separate event mapping.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: namibia-parliament-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Institution-linked live video is a new candidate; Assembly, Council and committees need separate event mapping. Next: Follow institution provider links; verify Council/public committee availability and distinguish outreach clips from hearings. Sources: https://www.parliament.na/
@@ -1247,6 +1308,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `indonesia-dpr-committee-video-archive`.  23 October deep validation: indonesia-dpr-committee-video-archive: Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots.
+
 Searches run:
 - DPR DPD MPR TV Parlemen siaran langsung komisi resmi
 - Indonesia parliament official live committee streams TVR Parlemen
@@ -1254,9 +1317,11 @@ Searches run:
 Sources checked:
 - [TVR Parlemen live](https://tvrparlemen.dpr.go.id/live) — web_page_open; National parliamentary live/video. Official DPR live service states live parliamentary meetings; links AKD live and channel list.
 - [Regional Representative Council](https://www.dpd.go.id/) — web_page_open_empty; National parliamentary live/video. Empty parsed page.
+- [23 October validated official viewing service](https://tvrparlemen.dpr.go.id/video_akd) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official AKD archive embeds the sampled budget-committee videos. Embedded player context failed; normal public watch pages play. Archive cards dated 22 October 2026 are import/catalogue dates: the first provider description identifies 2 December 2024 and is only 10m55s. Treat as historical recordings, not October 2026 meetings or validated live commission slots.
 
 Findings:
 - DPR TVR Parlemen and AKD committee channels are new candidates; DPD/MPR require their own official mapping.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: indonesia-dpr-committee-video-archive. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] DPR TVR Parlemen and AKD committee channels are new candidates; DPD/MPR require their own official mapping. Next: Follow official channel list and AKD live slots, confirm committee room/event identities; inspect DPD/MPR institutional provider links. Sources: https://tvrparlemen.dpr.go.id/live, https://www.dpd.go.id/
@@ -1264,6 +1329,8 @@ Unresolved leads:
 ## Colombia (tier2)
 
 Status: **reviewed**. National catalogue records before this research pass: none.
+
+Promoted official viewing links: `colombia-house-representatives-webcasts`.  23 October deep validation: colombia-house-representatives-webcasts: The official Chamber links its provider channel. Plenary proceedings labelled 19 and 20 October 2026 play. Canal Congreso and concurrent public-hearing services are separate leads.
 
 Searches run:
 - Senado Cámara Colombia Canal Congreso en vivo comisiones oficial
@@ -1273,9 +1340,11 @@ Sources checked:
 - [Senate](https://www.senado.gov.co/) — web_page_open; National parliamentary live/video. Official site includes YouTube iframe.
 - [House of Representatives](https://www.camara.gov.co/) — web_page_open; National parliamentary live/video. Official institutional home opens.
 - [RTVC Canal Congreso relay](https://parrilla.rtvc.gov.co/node/38829) — web_search_result_only; National parliamentary live/video. Indexed public-broadcaster programme describes Senate/House plenary and committee live/delayed coverage.
+- [23 October validated official viewing service](https://www.youtube.com/@CamaraColombia/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official Chamber links its provider channel. Plenary proceedings labelled 19 and 20 October 2026 play. Canal Congreso and concurrent public-hearing services are separate leads.
 
 Findings:
 - Canal Congreso and chamber/committee provider families are new candidates.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: colombia-house-representatives-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Canal Congreso and chamber/committee provider families are new candidates. Next: Follow current institutional TV/provider links, map simultaneous commission streams and check reuse terms. Sources: https://www.senado.gov.co/, https://www.camara.gov.co/, https://parrilla.rtvc.gov.co/node/38829
@@ -1301,6 +1370,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `north-macedonia-assembly-webcasts`.  23 October deep validation: north-macedonia-assembly-webcasts: Official Assembly channel: 19 October plenary and 22 October Finance/Budget Committee proceedings play beyond the initial room/slate footage. Not every language track or room is validated.
+
 Searches run:
 - Собрание директен пренос комисии собраниски канал
 - North Macedonia parliament official live committee streams MRT
@@ -1308,9 +1379,11 @@ Searches run:
 Sources checked:
 - [Assembly television service](https://www.sobranie.mk/parliament-channel-tv-studio.nspx) — web_page_open; National parliamentary live/video. Official service page opens.
 - [Assembly home](https://www.sobranie.mk/home.nspx) — web_page_open; National parliamentary live/video. Official home opens; indexed navigation has Live broadcast.
+- [23 October validated official viewing service](https://www.youtube.com/channel/UCD5qpVe9-yNv4Xu4b3EuKFw/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official Assembly channel: 19 October plenary and 22 October Finance/Budget Committee proceedings play beyond the initial room/slate footage. Not every language track or room is validated.
 
 Findings:
 - Official Assembly TV/live family is a new candidate. Multi-room coverage reported by implementation partner needs confirmation at the institution player.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: north-macedonia-assembly-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official Assembly TV/live family is a new candidate. Multi-room coverage reported by implementation partner needs confirmation at the institution player. Next: Resolve current live/committee-room directory and MRT parliamentary service; verify each room rather than relying on partner description. Sources: https://www.sobranie.mk/parliament-channel-tv-studio.nspx, https://www.sobranie.mk/home.nspx
@@ -1354,6 +1427,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `ghana-parliament-committee-webcasts`.  23 October deep validation: ghana-parliament-committee-webcasts: The official Parliament Watch links designate this channel. Public Accounts Committee recordings labelled 19 and 20 October 2026 play. Homepage lists the next plenary meeting from 3 November; current plenary on-air coverage is not claimed.
+
 Searches run:
 - Ghana parliament official live committees Parliament TV
 - site:parliament.gh live broadcast
@@ -1361,9 +1436,11 @@ Searches run:
 Sources checked:
 - [Parliament](https://www.parliament.gh/) — web_page_open_blocked; National parliamentary live/video. Fetch failed.
 - [Institutional committees](https://parliament.gh/committees) — web_search_result_only; National parliamentary live/video. Indexed official committee directory; no current player established.
+- [23 October validated official viewing service](https://www.youtube.com/@parliamentofghana816/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official Parliament Watch links designate this channel. Public Accounts Committee recordings labelled 19 and 20 October 2026 play. Homepage lists the next plenary meeting from 3 November; current plenary on-air coverage is not claimed.
 
 Findings:
 - Official Parliament YouTube appeared in discovery but institutional backlink and committee livestream availability remain unresolved; GhanaWeb rebroadcast excluded.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: ghana-parliament-committee-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official Parliament YouTube appeared in discovery but institutional backlink and committee livestream availability remain unresolved; GhanaWeb rebroadcast excluded. Next: Retry institutional site in browser, establish official channel provenance and inspect plenary/public committee feeds. Sources: https://www.parliament.gh/, https://parliament.gh/committees
@@ -1390,6 +1467,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `sri-lanka-parliament-recordings`.  23 October deep validation: sri-lanka-parliament-recordings: Official house and committee archive navigation identifies 23 October 2026 House and 21 October Public Enterprises Committee clips. Both decode and advance (initial quality 238x134). Live routes, all archive segments and all language tracks remain unvalidated.
+
 Searches run:
 - Sri Lanka parliament official live committees Parliament TV
 - site:parliament.lk live broadcast committees
@@ -1397,9 +1476,11 @@ Searches run:
 Sources checked:
 - [Committee video archive](https://www.parliament.lk/en/parliament-live/committee-on-demand) — web_page_open; National parliamentary live/video. Official page lists dated Public Finance, Public Enterprises and Public Accounts committee videos and links Committee Live.
 - [Chamber archive](https://www.parliament.lk/en/parliament-live/chamber-on-demand) — web_page_open; National parliamentary live/video. Official page links WATCH LIVE and dated chamber videos.
+- [23 October validated official viewing service](https://www.parliament.lk/en/parliament-live/chamber-on-demand) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. Official house and committee archive navigation identifies 23 October 2026 House and 21 October Public Enterprises Committee clips. Both decode and advance (initial quality 238x134). Live routes, all archive segments and all language tracks remain unvalidated.
 
 Findings:
 - Institutional chamber and committee live services are new candidates; archives are separately labelled.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: sri-lanka-parliament-recordings. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Institutional chamber and committee live services are new candidates; archives are separately labelled. Next: Follow current Chamber Live and Committee Live links, verify provider identities, concurrent committee slots and published usage conditions. Sources: https://www.parliament.lk/en/parliament-live/committee-on-demand, https://www.parliament.lk/en/parliament-live/chamber-on-demand
@@ -1425,6 +1506,8 @@ Unresolved leads:
 
 Status: **reviewed**. National catalogue records before this research pass: none.
 
+Promoted official viewing links: `guyana-national-assembly-webcasts`.  23 October deep validation: guyana-national-assembly-webcasts: The official Parliament site designates this channel. The fifth sitting of the thirteenth Parliament, labelled 2026, plays beyond its black opening. Youth debating competitions in the same listing are not counted as legislative sittings. Footer copyright/disclaimer links lead to committee-business content rather than a usable media licence.
+
 Searches run:
 - Guyana Parliament official live National Assembly committees
 - site:parliament.gov.gy live video
@@ -1432,9 +1515,11 @@ Searches run:
 Sources checked:
 - [Parliament](https://www.parliament.gov.gy/) — web_page_open_blocked; National parliamentary live/video. Fetch failed; indexed official home lists Live Stream and video recordings.
 - [Committee business](https://parliament.gov.gy/committee-business) — web_search_result_only; National parliamentary live/video. Indexed institution page describes committee activity; no public live player resolved.
+- [23 October validated official viewing service](https://www.youtube.com/channel/UCFcGxVIBPlx_l5eXfEl7jgw/streams) — primary_chain_and_deep_browser; chamber/committee or accurately labelled broadcaster/archive service. The official Parliament site designates this channel. The fifth sitting of the thirteenth Parliament, labelled 2026, plays beyond its black opening. Youth debating competitions in the same listing are not counted as legislative sittings. Footer copyright/disclaimer links lead to committee-business content rather than a usable media licence.
 
 Findings:
 - Official National Assembly live portal is a new candidate; committee video availability unresolved.
+- 23 October follow-up: the initial 22 October findings above are historical; official viewing links now added after source-specific validation: guyana-national-assembly-webcasts. See 2026-10-23-full-queue-decisions.json. Other chamber/committee/live coverage remains separate.
 
 Unresolved leads:
 - [ ] Official National Assembly live portal is a new candidate; committee video availability unresolved. Next: Inspect official live embed and institutional provider cross-links; confirm any public committee broadcasts and terms. Sources: https://www.parliament.gov.gy/, https://parliament.gov.gy/committee-business

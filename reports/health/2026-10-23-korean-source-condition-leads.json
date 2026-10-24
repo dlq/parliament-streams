@@ -1,0 +1,179 @@
+{
+  "method": "Exact council root, two concurrent distinct hosts; explicit policy/provider links extracted for individual review. No policy licence inferred from footer alone.",
+  "results": [
+    {
+      "id": "south-korea--busan",
+      "url": "https://council.busan.go.kr/council/index",
+      "status": 200,
+      "final_url": "https://council.busan.go.kr/council/index",
+      "condition_links": [
+        {
+          "text": "저작권보호정책",
+          "url": "https://council.busan.go.kr/council/copyright"
+        }
+      ],
+      "provider_designations": [
+        {
+          "text": "유튜브",
+          "url": "https://www.youtube.com/channel/UCH3zFGQV84l4uBVOXnjw46Q"
+        }
+      ],
+      "outcome": "primary_page_retrieved_source_conditions_require_review"
+    },
+    {
+      "id": "south-korea--chungcheongnam",
+      "url": "https://council.chungnam.go.kr/",
+      "outcome": "access_hold",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "south-korea--daegu",
+      "url": "https://council.daegu.go.kr/",
+      "status": 200,
+      "final_url": "https://council.daegu.go.kr/",
+      "condition_links": [
+        {
+          "text": "저작권정책",
+          "url": "https://council.daegu.go.kr/kr/cms/copyright"
+        }
+      ],
+      "provider_designations": [
+        {
+          "text": "유튜브 바로가기",
+          "url": "https://www.youtube.com/channel/UCb5fdR-nG-jXdSgo5DGBVhA"
+        }
+      ],
+      "outcome": "primary_page_retrieved_source_conditions_require_review"
+    },
+    {
+      "id": "south-korea--gyeongsangbuk",
+      "url": "https://council.gb.go.kr/",
+      "status": 200,
+      "final_url": "https://council.gb.go.kr/",
+      "condition_links": [
+        {
+          "text": "저작권정책",
+          "url": "https://council.gb.go.kr/kr/cms/copyright"
+        },
+        {
+          "text": "저작권정책",
+          "url": "https://council.gb.go.kr/kr/cms/copyright"
+        },
+        {
+          "text": "저작권정책",
+          "url": "https://council.gb.go.kr/kr/cms/copyright"
+        }
+      ],
+      "provider_designations": [
+        {
+          "text": "유튜브",
+          "url": "https://www.youtube.com/channel/UCTPz5NyNp837pvvhjICNgLQ"
+        },
+        {
+          "text": "미래에 의회에서 만나요 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-10-18 \n\t\t\t\t\t\t\t\t 유트브",
+          "url": "https://www.youtube.com/watch?v=mdnJTFZr040"
+        },
+        {
+          "text": "전통시장 장보기라 쓰고 시장 브이로그라 부른다 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-10-06 \n\t\t\t\t\t\t\t\t 유트브",
+          "url": "https://www.youtube.com/watch?v=OaXJM1ZKXzw"
+        },
+        {
+          "text": "미래에 의회에서 만나요 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-10-18  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=mdnJTFZr040"
+        },
+        {
+          "text": "전통시장 장보기라 쓰고 시장 브이로그라 부른다 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-10-06  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=OaXJM1ZKXzw"
+        },
+        {
+          "text": "몇개고! 사이소! 다있소!  \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-10-02  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=DhyX3RDAnLU"
+        },
+        {
+          "text": "‘빈집 털어 새집 줄게’ MV 공개 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-09-21  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=tEBrvBF7O7A"
+        },
+        {
+          "text": "경상북도의회 의원연수회 궁금해 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-09-16  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=pAmnzB_z4oo"
+        },
+        {
+          "text": "제13대 슬로건 홍보 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-31  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/shorts/k7jHykMXrHc"
+        },
+        {
+          "text": "경북도의회 을지연습 현장 점검 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-21  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/shorts/9dfRxonEL4s"
+        },
+        {
+          "text": "경북도의회 폭염&가뭄 피해 현장확인 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-21  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/shorts/fjAIbuBzrv4"
+        },
+        {
+          "text": "번아웃 온 교직원에게 나타난 수상한 남자 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-21  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=-CJApNJpBK4"
+        },
+        {
+          "text": "길거리 무단방치 킥보드 비켜! \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-21  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/watch?v=XcFYcLSea0A"
+        },
+        {
+          "text": "일본 방위백서 강력 규탄 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-13  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/shorts/K6zH2T5rTOY"
+        },
+        {
+          "text": "의장단, 상임위원장 워크숍 \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t 2026-08-13  \n\t\t\t\t\t\t\t\t 유튜브",
+          "url": "https://www.youtube.com/shorts/zzfp7zJsfRU"
+        },
+        {
+          "text": "유튜브 더보기",
+          "url": "https://www.youtube.com/c/%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84%EC%9D%98%ED%9A%8C"
+        }
+      ],
+      "outcome": "primary_page_retrieved_source_conditions_require_review"
+    },
+    {
+      "id": "south-korea--incheon",
+      "url": "https://www.icouncil.go.kr/",
+      "status": 200,
+      "final_url": "https://www.icouncil.go.kr/",
+      "condition_links": [],
+      "provider_designations": [
+        {
+          "text": "인천시의회 유튜브",
+          "url": "https://www.youtube.com/c/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%EC%9D%98%ED%9A%8C"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/FU3DOn5aOPg"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/DTMNHBNfer0"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/xPH-LuuAGZE"
+        },
+        {
+          "text": "",
+          "url": "https://youtube.com/live/qZogL6I3G0A"
+        },
+        {
+          "text": "유튜브",
+          "url": "https://www.youtube.com/c/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%EC%9D%98%ED%9A%8C"
+        }
+      ],
+      "outcome": "primary_page_retrieved_source_conditions_require_review"
+    },
+    {
+      "id": "south-korea--jeonbuk",
+      "url": "https://www.jbstatecouncil.jeonbuk.kr/",
+      "status": 200,
+      "final_url": "https://www.jbstatecouncil.jeonbuk.kr/",
+      "condition_links": [],
+      "provider_designations": [],
+      "outcome": "primary_page_retrieved_source_conditions_require_review"
+    }
+  ]
+}

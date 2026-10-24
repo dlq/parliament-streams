@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-23T13:22:42.617Z",
+  "scope": "Dated recording playback only; neither addition establishes current live coverage, stable HLS or redistribution rights.",
+  "results": [
+    {
+      "id": "cook-islands-parliament-archive",
+      "status": "ok",
+      "note": "The official Parliament live page footer designates this YouTube channel. Two full sitting recordings from 29 and 30 September 2020 decoded at 854x480 with advancing time and frames. Historical archive only: the current official live page has no player, the sampled Facebook replay is unavailable, and no current sitting broadcast was validated.",
+      "samples": [
+        {
+          "key": "cook-2020",
+          "url": "https://www.youtube.com/watch?v=cNljHkAPy0Q",
+          "title": "Parliament Sitting - 30 September 2020 - 1pm Session - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.045012,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 8175.021,
+            "frames": 125,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.087072,
+            "frames": 186
+          }
+        },
+        {
+          "key": "cook-2020-second",
+          "url": "https://www.youtube.com/watch?v=fTtUFU96rtk",
+          "title": "Parliament Sitting - 29 September 2020 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.023696,
+            "width": 854,
+            "height": 480,
+            "ready": 4,
+            "duration": 6200.021,
+            "frames": 126,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.067302,
+            "frames": 186
+          }
+        }
+      ]
+    },
+    {
+      "id": "guernsey-states-meeting-recordings",
+      "status": "ok",
+      "note": "The official 21 October 2026 meeting page links to morning and afternoon recordings on the States of Guernsey channel. Both decoded at 640x360 with advancing time and frames; the afternoon recording is unlisted but explicitly linked by Parliament. The index also designates BBC live coverage, which was not tested on air. A 22 October row has an obvious year typo (0026); raw labels are not reliable XMLTV dates.",
+      "samples": [
+        {
+          "key": "guernsey-am",
+          "url": "https://www.youtube.com/watch?v=0sl5WKU6f9I",
+          "title": "States Meeting 21/10/26 Morning session - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.03446,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 10502.181,
+            "frames": 105,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.063703,
+            "frames": 156
+          }
+        },
+        {
+          "key": "guernsey-pm",
+          "url": "https://www.youtube.com/watch?v=QVKnYsxWNas",
+          "title": "States Meeting afternoon 21/10/26 - YouTube",
+          "http_status": 200,
+          "first": {
+            "tag": "VIDEO",
+            "time": 4.038078,
+            "width": 640,
+            "height": 360,
+            "ready": 4,
+            "duration": 10630.221,
+            "frames": 105,
+            "tracks": []
+          },
+          "later": {
+            "time": 6.070425,
+            "frames": 156
+          }
+        }
+      ]
+    }
+  ]
+}

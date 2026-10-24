@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official parliamentary archive, with selected recorded proceedings confirmed. 21 October2026: president Felix Meier speaking at the lit chair microphone while introducing initiative24/PI4/226 about democratic participation in authority referendums. 28 September2026: president Felix Meier handling motion24/MO29/200 about barbed wire and flexible pasture nets. The2025 dates in motion wording are not sitting dates. The archive labels its21October opening incomplete because of technical problems; selected later business plays, but this does not resolve the missing opening.",
+    "Primary Thurgau usage notice reserves protected-content reproduction absent prior written consent or statutory exceptions; downloading does not transfer rights. Public archive designation is not an independent audiovisual reuse grant. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+    "Evidence: reports/discovery/2026-10-24-three-further-swiss-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "switzerland-thurgau-recordings",
+    "name": "Thurgau Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Thurgau",
+    "legislature": "Grosser Rat des Kantons Thurgau",
+    "external_ids": {
+      "wikidata_qid": "Q1547525",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1547525",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific named parliament, Switzerland Q39 and matching canton jurisdiction claims reviewed against the current primary parliamentary name/designation. Wikidata revision 2526179157; claims are identifier evidence, not media/rights certification."
+      }
+    ],
+    "language": "German",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://grvisio.tg.ch/",
+    "provenance_note": "Official parliamentary archive, with selected recorded proceedings confirmed. 21 October2026: president Felix Meier speaking at the lit chair microphone while introducing initiative24/PI4/226 about democratic participation in authority referendums. 28 September2026: president Felix Meier handling motion24/MO29/200 about barbed wire and flexible pasture nets. The2025 dates in motion wording are not sitting dates. The archive labels its21October opening incomplete because of technical problems; selected later business plays, but this does not resolve the missing opening.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted video checks do not certify audible quality, all spoken languages, captions, signing or audio description. Unknown fields remain unknown; source-specific archive limitations are retained in provenance."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://grvisio.tg.ch/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Primary Thurgau usage notice reserves protected-content reproduction absent prior written consent or statutory exceptions; downloading does not transfer rights. Public archive designation is not an independent audiovisual reuse grant. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+      "evidence": [
+        "https://parlament.tg.ch/",
+        "https://grvisio.tg.ch/",
+        "https://parlament.tg.ch/de/datenschutz/"
+      ],
+      "recommendation": "Use the source-designated viewing service; independently confirm reuse, current live, full room inventory, audible tracks and accessibility."
+    }
+  }
+}

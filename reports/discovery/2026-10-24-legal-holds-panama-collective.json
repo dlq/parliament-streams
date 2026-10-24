@@ -1,0 +1,509 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Four named Panama legal holds only; operative authority and territorial scope before metadata, streams, EPG or rights.",
+  "input_register": "data/discovery/institutions.json",
+  "policy_source": "docs/catalogue-scope.md",
+  "summary": {
+    "records_reviewed": 4,
+    "eligible_legislature": 0,
+    "outside_default_scope": 0,
+    "specific_authority_evidence_hold": 4,
+    "legal_holds_resolved": 0,
+    "new_catalogue_sources": 0,
+    "bounded_primary_research_pass_complete": true,
+    "all_operative_governing_instruments_obtained": false
+  },
+  "common_legal_findings": {
+    "statutory_recognition": "Law 72/2008 Articles 13–15 protect coordination/consent and provide for traditional-organization recognition; Law 467/2025 Articles 77–79 recognize binding traditional-justice decisions and necessary resources.",
+    "classification_rule": "First-level or autonomous special-status territorial legislature with substantive binding general norms and budget/executive-control powers; customary authority can qualify without a sovereign or comarca label.",
+    "non_inferences": [
+      "No inference that unwritten customary law is invalid.",
+      "No inference that collective land ownership or national-development participation proves parliamentary legislative powers.",
+      "No inference that being nested in a district/province or representing few communities defeats autonomy.",
+      "No transfer of the separate Emberá-Wounaan comarca Charter to these institutions.",
+      "Unavailable governing instruments are not evidence of absence of authority."
+    ]
+  },
+  "sources": [
+    {
+      "id": "law72",
+      "title": "Law 72 of 23 December 2008, Gazette 26193 (30 December 2008)",
+      "url": "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf",
+      "source_type": "enacted_law_judiciary_copy",
+      "sections": "Articles 2–6,9,11–16; downloaded PDF text pages 5–8",
+      "read_access_scope": "Downloaded complete 9-page Legispan/judiciary PDF; read relevant law text.",
+      "finding": "Collective title is issued to communities represented by traditional authorities. Articles 13–14 require resource-management coordination and free, prior and informed consent; Article 15 expressly provides executive recognition of traditional organization and authorities. Article 16 finances demarcation. These provisions preserve governance but do not name each congress’s full allocation of powers."
+    },
+    {
+      "id": "decree223",
+      "title": "ANATI current normative directory: Executive Decree 223 of 29 June 2010",
+      "url": "https://www.anati.gob.pa/normativas/",
+      "source_type": "government_legal_directory",
+      "sections": "Laws/decrees list; Gazette 26571,7 July 2010",
+      "read_access_scope": "Search-indexed official directory passage; direct page 403. Decree article text not certified in this pass.",
+      "finding": "ANATI continues to list the Law 72 implementing decree; a titling-procedure reference is not a congress-level legislative charter."
+    },
+    {
+      "id": "law467",
+      "title": "Law 467 of 24 April 2025, Gazette 30265 (25 April 2025)",
+      "url": "https://www.organojudicial.gob.pa/uploads/blogs.dir/2/2025/07/665/ley-467-de-2025.pdf",
+      "source_type": "enacted_law_judiciary_gazette_copy",
+      "sections": "Title III,Articles 77–79; Article 113; official Gazette page 23",
+      "read_access_scope": "Read search-indexed official PDF text of Articles 77–79 and 113; opened 33-page PDF is predominantly image text.",
+      "finding": "Traditional justice in comarcas and collective lands is recognized; traditional-authority decisions must be obeyed unless revoked or annulled by competent authority, with necessary resources guaranteed. This is legally consequential jurisdiction, not a specific assignment of general legislative or budget-approval power to these four congresses."
+    },
+    {
+      "id": "law467_status",
+      "title": "Procuraduría de la Administración: Law 467 legal status",
+      "url": "https://infojuridica.procuraduria-admon.gob.pa/norma_screen.php?numsec=64619",
+      "source_type": "government_legal_status_register",
+      "sections": "Vigencia 25 April 2025; subrogation of Law 16/2016; Decree 25/2025 and 6 May 2025 erratum links",
+      "read_access_scope": "Read indexed official status/relationship entries.",
+      "finding": "Use Law 467 rather than the superseded 2016 community-justice law; the noted erratum concerns Article 97, not Articles 77–79."
+    },
+    {
+      "id": "condipi2025",
+      "title": "Executive Decree 4 of 20 January 2025, Gazette 30204 (24 January 2025)",
+      "url": "https://www.gacetaoficial.gob.pa/pdfTemp/30204/GacetaNo_30204_20250124.pdf",
+      "source_type": "enacted_decree_official_gazette",
+      "sections": "Amendment to Decree 203/2018, representation list of 12 traditional organizations",
+      "read_access_scope": "Read indexed official Gazette passage naming all four organizations; full 43 MB Gazette exceeded web reader limit.",
+      "finding": "All four named bodies are recognized participants in the national development-governance framework. The representation list does not itself allocate broad territorial legislative powers."
+    },
+    {
+      "id": "ministry2019",
+      "title": "MinGob-hosted Análisis Sociocultural PN-L 1157, March 2019",
+      "url": "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+      "source_type": "government_project_fieldwork_and_governance_account",
+      "sections": "Printed/PDFpp 42–48,Table 8,notes 66,72,77; p 45 clan decision-making",
+      "read_access_scope": "Downloaded full 232-page PDF; extracted/readpp 42–49 and targeted consultation passages. File hosted 2025, substantive report datedMarch 2019.",
+      "finding": "Describes distinct general, regional and local structures, customary decisions, own Wounaan collective lands plus comarca membership, Alto Bayano communities and Bribri clan consensus. Note 77 contains an apparent Ngäbe-Buglé/Emberá-Wounaan label slip; that sentence is not used as an operative jurisdiction rule."
+    },
+    {
+      "id": "tuira2023",
+      "title": "FSC Indigenous Foundation: Continúa el proceso de fortalecimiento de la gobernanza tradicional",
+      "url": "https://www.fscindigenousfoundation.org/es/tag/cartas-organicas/",
+      "source_type": "primary_project_implementer_participant_account",
+      "sections": "Tierras Colectivas Emberá,Wounaan y Eyabida; May 2023 validation and 2022–23 workshops",
+      "read_access_scope": "Read complete project account, including named authorities and regulation subjects. No regulation text/download or adoption resolution supplied on the page.",
+      "finding": "A Tuira regional regulation process covered justice, authority/marriage certification, resource rights and restrictions on outsiders. This confirms substantive governance; regional validation is not proof of the General Congress’s complete current governing instrument or financial controls."
+    },
+    {
+      "id": "wounaan_charter2023",
+      "title": "FSC Indigenous Foundation: Carta Orgánica project account",
+      "url": "https://www.fscindigenousfoundation.org/es/tag/carta-organica/",
+      "source_type": "primary_project_implementer_participant_account",
+      "sections": "Sobre el proyecto; Congreso Nacional del Pueblo Wounaan",
+      "read_access_scope": "Read complete account; Wounaan section identifies a people-wide charter process. Main article concerns Naso, whose 180 articles and validation date are not attributed to Wounaan.",
+      "finding": "Identifies a distinct Wounaan Charter process and nationwide community representation. It does not publish the adopted Wounaan Charter or certify its operative allocation of powers."
+    },
+    {
+      "id": "collective_own2009",
+      "title": "COONAPIP territorial workshop report: Tierras Colectivas Emberá-Wounaan",
+      "url": "https://www.forestcarbonpartnership.org/sites/fcp/files/Documents/PDF/Jul2010/III%20Informe_Final_REDD_Tierras_Colectivas_ED.pdf",
+      "source_type": "primary_indigenous_organization_workshop_account_historical",
+      "sections": "1.1.5 Organización Social;2009 territorial workshop, hostedJuly 2010",
+      "read_access_scope": "Read indexed PDF passage; direct FCPF  host 403.",
+      "finding": "Own organizational account distinguishes the General Congress from the comarca and lists five regional congresses. Historical community counts and membership are not treated as current legal boundaries."
+    },
+    {
+      "id": "wounaan_own2009",
+      "title": "COONAPIP territorial workshop report: Congreso Nacional Wounaan",
+      "url": "https://www.forestcarbonpartnership.org/sites/fcp/files/Documents/PDF/Jul2010/V%20Info%20final%20REDD_Congreso_Wounaan.pdf",
+      "source_type": "primary_indigenous_organization_workshop_account_historical",
+      "sections": "1.1.1 Antecedentes Históricos;1.1.2 communities",
+      "read_access_scope": "Read indexed PDF passages; direct FCPF  host 403.",
+      "finding": "Separates Wounaan national affiliation from the comarca/collective-lands jurisdiction of some members and identifies its own eastern communities. It records an organization formed 2001; ministry-project accounts elsewhere say 1998, so the founding date is not resolved or used to decide scope."
+    },
+    {
+      "id": "alto_own2009",
+      "title": "COONAPIP territorial workshop report: Emberá Alto Bayano",
+      "url": "https://www.forestcarbonpartnership.org/sites/fcp/files/Documents/PDF/Jul2010/VIII_Informe_REDD_Embera_Alto_Bayano_.pdf",
+      "source_type": "primary_indigenous_organization_workshop_account_historical",
+      "sections": "p 7 Organización Social",
+      "read_access_scope": "Read indexed PDF passage; direct FCPF  host access limited.",
+      "finding": "Describes the General Congress above local congresses and Council of Nokos, and the communities’ ordinary district/provincial location. This is evidence of the institution’s distinct customary structure, not a finding that nesting extinguishes autonomy."
+    },
+    {
+      "id": "alto_agreement2015",
+      "title": "MinGob: Ministro Henríquez firma acuerdo con miembros del Congreso de Alto Bayano",
+      "url": "https://www.mingob.gob.pa/ministro-henriquez-firma-acuerdo-con-miembros-del-congreso-de-alto-bayano/",
+      "source_type": "government_direct_agreement_account",
+      "sections": "13 October 2015; agreement signatories and land-title commitments",
+      "read_access_scope": "Read full indexed ministry release.",
+      "finding": "Identifies the cacique and Congress president as separate agreement signatories for Ipetí and Majé collective-land issues. It supplies no general legislative charter."
+    },
+    {
+      "id": "three_congresses2024",
+      "title": "MinGob: Inicia proceso de consultas con los pueblos indígenas",
+      "url": "https://www.mingob.gob.pa/inicia-proceso-de-consultas-con-los-pueblos-indigenas/",
+      "source_type": "government_direct_meeting_account",
+      "sections": "9 July 2024 participants",
+      "read_access_scope": "Read ministry text naming the three separately represented Emberá congresses.",
+      "finding": "Comarca, collective-lands and Alto Bayano leaders are separately identified; their powers must not be merged."
+    },
+    {
+      "id": "wounaan_minas2026",
+      "title": "MinGob/MINSA PMAS: Nuevo Centro de Salud de Puerto Lara",
+      "url": "https://www.mingob.gob.pa/wp-content/uploads/2026/04/PMAS-PUERTO-LARA.pdf",
+      "source_type": "government_project_document_with_traditional_land_authorization_reference",
+      "sections": "pp 12,18;Annex 3 pp 57–66; consultation 21 September 2022",
+      "read_access_scope": "Read searchable published PDF text including location, grant statement and annex index. The scanned signed land-authorization instrument was not independently transcribed/read. HostedApril 2026 does not redating 2022 consultation.",
+      "finding": "Places Puerto Lara in the Wounaan Congress’s territory and reports its land-use/administration authorization for MINSA. It does not establish a general legislative/financial constitution."
+    },
+    {
+      "id": "wounaan_own2021",
+      "title": "Wounaan authors: Wounaan Storying as Intervention",
+      "url": "https://www.mdpi.com/2313-5778/5/4/91",
+      "source_type": "primary_research_and_institution_member_account",
+      "sections": "Project origins; national congress plenary approvals 2017/2019; FUNDEPW distinction",
+      "read_access_scope": "Read indexed original-research passages; indigenous Congress leaders/members are coauthors.",
+      "finding": "Records national plenary approval for community projects and distinguishes the sibling NGO. Project consent and NGO administration are not automatically a legislative budget or executive-accountability system."
+    },
+    {
+      "id": "bribri_ministry2017",
+      "title": "MinGob: reunión con autoridades del territorio Bribri",
+      "url": "https://www.mingob.gob.pa/en-mingob-se-reunen-con-autoridades-del-territorio-bribri/",
+      "source_type": "government_direct_meeting_account",
+      "sections": "30 July 2017; Bulú/rey and Council president",
+      "read_access_scope": "Read full ministry page.",
+      "finding": "Confirms distinct traditional executive and Council offices and a territorial-governance agenda; does not publish the operative Council rules."
+    },
+    {
+      "id": "bribri_plans2025",
+      "title": "ACICAFOC: Bribri community plans adopted 13 July 2025",
+      "url": "https://www.acicafoc.org/2025/07/14/comunidades-bribri-de-panama/",
+      "source_type": "primary_project_implementer_participant_account",
+      "sections": "Assembly adoption;PDC and Conservation Plan 2025–2035",
+      "read_access_scope": "Read complete participant account; neither adopted plan text nor detailed maps/budget clauses attached.",
+      "finding": "El Guabo,Namüwökir,Dakle and Bris approved plans with land-use rules and Council strengthening. Their full normative reach and institutional accountability require the actual plans and governing instrument."
+    },
+    {
+      "id": "bribri_court_lead2026",
+      "title": "Supreme Court Sala Tercera Bribri/ANATI case in Gazette 30597 B,25 August 2026",
+      "url": "https://www.gacetaoficial.gob.pa/storage/gacetas/2026/08/30597_B/GacetaNo_30597b_20260825.pdf",
+      "source_type": "official_judgment_indexed_passage_limited_access",
+      "sections": "Gazettepp 31,34; embedded judgmentpp 17,20",
+      "read_access_scope": "Read indexed official passages about 2019/2021 ANATI decisions and coordinate/jurisdiction issues. Individual 21-page PDF opened but text inaccessible; terminal retrieval returnedHTML. Judgment date, full dispositif and all grounds not certified.",
+      "finding": "A current official litigation lead warns against describing Bribri title/delimitation as settled. It is not used to negate customary authority or decide legislative scope."
+    }
+  ],
+  "records": [
+    {
+      "id": "panama--embera-and-wounaan-collective-lands",
+      "country": "Panama",
+      "name": "Congreso General Tierras Colectivas Emberá y Wounaan",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_hold_review_complete": true,
+      "legal_hold_resolved": false,
+      "decision_basis": "Retain a specific authority evidence hold. The General Congress and local/community decision structures are documented separately from the comarca. The Tuira regulation process covers justice, authority certification, resource rights and outsider restrictions; generic law recognizes collective-land customary justice. The current congress-level allocation of general binding norm-making, financial approval and executive accountability is not established by the instruments obtained; neither eligibility nor an ordinary-local/cultural-only exclusion is justified.",
+      "territorial_and_institutional_reach": "A distinct multi-community General Congress outside the statutory Emberá-Wounaan comarca, with regional congresses documented in its own account. The 2023 Tuira regulation belongs to a regional formation within this network; its scope cannot be silently expanded to all five historical regions or the General Congress.",
+      "confirmed_legally_consequential_powers": "The General Congress and local/community decision structures are documented separately from the comarca. The Tuira regulation process covers justice, authority certification, resource rights and outsider restrictions; generic law recognizes collective-land customary justice.",
+      "not_yet_established": [
+        "Exact current territorial/community membership and jurisdiction of the General Congress versus Tuira and other regions.",
+        "Which body may adopt/amend/enforce general rules across the collective-lands network.",
+        "General Congress approval/audit of territorial finance and its appointment, removal or supervision of caciques/administration."
+      ],
+      "remaining_authority_instruments": [
+        "Current adopted governing statute/Carta Orgánica or authenticated customary-law record of the General Congress, with territorial annex and adoption/amendment record.",
+        "Full Reglamento Interno de la Región del Tuira validated in May 2023 and its final adoption/operative record, identifying powers reserved to the General Congress.",
+        "The applicable executive recognition/coordination instrument under Law 72 Article 15, if issued, and congress resolutions or customary rules establishing budget and executive controls."
+      ],
+      "relationships": [
+        {
+          "type": "distinct_collective_lands_institution_not_comarca_chamber",
+          "institution_id": "panama--embera-wounaan-comarca"
+        },
+        {
+          "type": "distinct_general_congress_with_related_customary_communities",
+          "institution_id": "panama--embera-alto-bayano"
+        }
+      ],
+      "primary_evidence_refs": [
+        "law72",
+        "decree223",
+        "law467",
+        "law467_status",
+        "condipi2025",
+        "ministry2019",
+        "collective_own2009",
+        "tuira2023",
+        "three_congresses2024"
+      ],
+      "primary_urls": [
+        "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf",
+        "https://www.anati.gob.pa/normativas/",
+        "https://www.organojudicial.gob.pa/uploads/blogs.dir/2/2025/07/665/ley-467-de-2025.pdf",
+        "https://infojuridica.procuraduria-admon.gob.pa/norma_screen.php?numsec=64619",
+        "https://www.gacetaoficial.gob.pa/pdfTemp/30204/GacetaNo_30204_20250124.pdf",
+        "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+        "https://www.fscindigenousfoundation.org/es/tag/cartas-organicas/",
+        "https://www.forestcarbonpartnership.org/sites/fcp/files/Documents/PDF/Jul2010/III%20Informe_Final_REDD_Tierras_Colectivas_ED.pdf",
+        "https://www.mingob.gob.pa/inicia-proceso-de-consultas-con-los-pueblos-indigenas/"
+      ],
+      "evidence_level": "operative_generic_statutes_plus_named_primary_governance_evidence; exact_congress_governing_instrument_incomplete",
+      "currentness_limit": "Dated 2026 review with sources of differing dates; no claim that an unobtained charter has not been adopted. No current electoral-activity or exhaustive amendment certificate.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_reviewed": false,
+      "principal_missing_governing_instrument": "Current adopted governing statute/Carta Orgánica or authenticated customary-law record of the General Congress, with territorial annex and adoption/amendment record.",
+      "adoption_questions": [
+        "Which exact text or authenticated customary-law record is currently operative, who adopted or recognized it, on what date, and what later amendments apply?",
+        "Does this named General Congress/Council itself enact binding general norms across a defined autonomous territory, approve and scrutinize its finances, and supervise/remove the executive; which provisions establish each power?"
+      ],
+      "source_custodians": [
+        {
+          "institution": "Congreso General Tierras Colectivas Emberá y Wounaan",
+          "custodian_scope": "Authenticated adopted governing instrument, customary competence record, assembly adoption/amendment resolutions and financial/executive-control rules.",
+          "verified_direct_public_contact": null,
+          "route_note": "Do not invent a current personal contact or use unofficial social-media names; the ministry correspondence route can identify the current institutional custodian."
+        },
+        {
+          "institution": "Ministerio de Gobierno — Viceministerio de Asuntos Indígenas; Dirección de Correspondencias for routing",
+          "custodian_scope": "Executive recognition/coordination records and the ministry-held copies of traditional governing instruments; ask the relevant congress to authenticate its own operative customary instrument.",
+          "verified_public_route": "MinGob Dirección de Correspondencias, Condado Business Center, Vía Ricardo J. Alfaro, Entrada de Condado del Rey; central telephone512-2000/512-7200. No message sent.",
+          "verification_url": "https://www.mingob.gob.pa/en-mingob-se-reunen-con-autoridades-del-territorio-bribri/",
+          "verification_scope": "Official page footer supplies ministry correspondence address/central telephone; body identifies the Indigenous Affairs vice-ministry. This is a verified general route, not a separately verified direct archive officer or congress contact."
+        }
+      ]
+    },
+    {
+      "id": "panama--embera-alto-bayano",
+      "country": "Panama",
+      "name": "Congreso General Emberá Alto Bayano",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_hold_review_complete": true,
+      "legal_hold_resolved": false,
+      "decision_basis": "Retain a specific authority evidence hold. Its own organizational account places local congresses and Council of Nokos below the General Congress. Government agreements and 2024 meetings separately recognize the cacique and congress leadership, and collective-land/customary justice law preserves consequential community authority. The current congress-level allocation of general binding norm-making, financial approval and executive accountability is not established by the instruments obtained; neither eligibility nor an ordinary-local/cultural-only exclusion is justified.",
+      "territorial_and_institutional_reach": "General Congress for the Alto Bayano Emberá collective-land communities in eastern Panamá, distinct from both the Darién collective-lands congress and Madungandí. Primary accounts identify Ipetí,Piriatí and Majé/Unión communities, but contemporary exact membership requires its governing record. Ordinary district location is not by itself disqualifying.",
+      "confirmed_legally_consequential_powers": "Its own organizational account places local congresses and Council of Nokos below the General Congress. Government agreements and 2024 meetings separately recognize the cacique and congress leadership, and collective-land/customary justice law preserves consequential community authority.",
+      "not_yet_established": [
+        "Operative distribution of general lawmaking between the General Congress, local congresses and Nokos.",
+        "Territorial application to Ipetí,Piriatí,Majé Cordillera andUnión and relationship to individual land titles.",
+        "Assembly finance approval and control of cacique/administration rather than only project consultation."
+      ],
+      "remaining_authority_instruments": [
+        "Current adopted Reglamento/Estatuto del Congreso General Emberá de Alto Bayano or authenticated governing customary instrument, with adoption record and community/territorial coverage.",
+        "The applicable executive recognition/coordination instrument under Law 72 Article 15, if issued; precise general norm-making clauses and enforceable congress resolutions.",
+        "Congress-level financial rules/approved accounts and appointment, removal or reporting rules governing the cacique and administration."
+      ],
+      "relationships": [
+        {
+          "type": "distinct_general_congress_not_comarca_chamber",
+          "institution_id": "panama--embera-wounaan-comarca"
+        },
+        {
+          "type": "distinct_collective_lands_network",
+          "institution_id": "panama--embera-and-wounaan-collective-lands"
+        },
+        {
+          "type": "neighbouring_distinct_comarca_not_parent_chamber",
+          "institution_id": "panama--guna-madungandi"
+        }
+      ],
+      "primary_evidence_refs": [
+        "law72",
+        "decree223",
+        "law467",
+        "law467_status",
+        "condipi2025",
+        "ministry2019",
+        "alto_own2009",
+        "alto_agreement2015",
+        "three_congresses2024"
+      ],
+      "primary_urls": [
+        "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf",
+        "https://www.anati.gob.pa/normativas/",
+        "https://www.organojudicial.gob.pa/uploads/blogs.dir/2/2025/07/665/ley-467-de-2025.pdf",
+        "https://infojuridica.procuraduria-admon.gob.pa/norma_screen.php?numsec=64619",
+        "https://www.gacetaoficial.gob.pa/pdfTemp/30204/GacetaNo_30204_20250124.pdf",
+        "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+        "https://www.forestcarbonpartnership.org/sites/fcp/files/Documents/PDF/Jul2010/VIII_Informe_REDD_Embera_Alto_Bayano_.pdf",
+        "https://www.mingob.gob.pa/ministro-henriquez-firma-acuerdo-con-miembros-del-congreso-de-alto-bayano/",
+        "https://www.mingob.gob.pa/inicia-proceso-de-consultas-con-los-pueblos-indigenas/"
+      ],
+      "evidence_level": "operative_generic_statutes_plus_named_primary_governance_evidence; exact_congress_governing_instrument_incomplete",
+      "currentness_limit": "Dated 2026 review with sources of differing dates; no claim that an unobtained charter has not been adopted. No current electoral-activity or exhaustive amendment certificate.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_reviewed": false,
+      "principal_missing_governing_instrument": "Current adopted Reglamento/Estatuto del Congreso General Emberá de Alto Bayano or authenticated governing customary instrument, with adoption record and community/territorial coverage.",
+      "adoption_questions": [
+        "Which exact text or authenticated customary-law record is currently operative, who adopted or recognized it, on what date, and what later amendments apply?",
+        "Does this named General Congress/Council itself enact binding general norms across a defined autonomous territory, approve and scrutinize its finances, and supervise/remove the executive; which provisions establish each power?"
+      ],
+      "source_custodians": [
+        {
+          "institution": "Congreso General Emberá Alto Bayano",
+          "custodian_scope": "Authenticated adopted governing instrument, customary competence record, assembly adoption/amendment resolutions and financial/executive-control rules.",
+          "verified_direct_public_contact": null,
+          "route_note": "Do not invent a current personal contact or use unofficial social-media names; the ministry correspondence route can identify the current institutional custodian."
+        },
+        {
+          "institution": "Ministerio de Gobierno — Viceministerio de Asuntos Indígenas; Dirección de Correspondencias for routing",
+          "custodian_scope": "Executive recognition/coordination records and the ministry-held copies of traditional governing instruments; ask the relevant congress to authenticate its own operative customary instrument.",
+          "verified_public_route": "MinGob Dirección de Correspondencias, Condado Business Center, Vía Ricardo J. Alfaro, Entrada de Condado del Rey; central telephone512-2000/512-7200. No message sent.",
+          "verification_url": "https://www.mingob.gob.pa/en-mingob-se-reunen-con-autoridades-del-territorio-bribri/",
+          "verification_scope": "Official page footer supplies ministry correspondence address/central telephone; body identifies the Indigenous Affairs vice-ministry. This is a verified general route, not a separately verified direct archive officer or congress contact."
+        }
+      ]
+    },
+    {
+      "id": "panama--wounaan-people",
+      "country": "Panama",
+      "name": "Congreso Nacional Pueblo Wounaan",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_hold_review_complete": true,
+      "legal_hold_resolved": false,
+      "decision_basis": "Retain a specific authority evidence hold. Primary indigenous and government accounts document plenary approvals, its own collective-land communities and a Puerto Lara land-use authorization. Law 467 recognizes consequential traditional justice. Members’ existing comarca jurisdiction and nationwide affiliation overlap; the 2010 account explicitly distinguishes them. The current congress-level allocation of general binding norm-making, financial approval and executive accountability is not established by the instruments obtained; neither eligibility nor an ordinary-local/cultural-only exclusion is justified.",
+      "territorial_and_institutional_reach": "People-wide Wounaan congress with members inside the Emberá-Wounaan comarca and other congress territories, plus its own collective-land communities outside them. This is not simply a third chamber of the comarca, nor merely an NGO: WPNP/CNPW and the sibling FUNDEPW must remain distinct. The name National does not establish a national parliamentary chamber.",
+      "confirmed_legally_consequential_powers": "Primary indigenous and government accounts document plenary approvals, its own collective-land communities and a Puerto Lara land-use authorization. Law 467 recognizes consequential traditional justice. Members’ existing comarca jurisdiction and nationwide affiliation overlap; the 2010 account explicitly distinguishes them.",
+      "not_yet_established": [
+        "Whether the current Wounaan Charter grants the national plenary autonomous territorial general-law powers over specified own lands or primarily coordination/consent alongside local/comarca institutions.",
+        "Current adoption, territory, membership and conflict rules of the Charter developed in 2022–23.",
+        "Congress budget approval and accountability of the cacique/administration/FUNDEPW; NGO financial personality is not the same grant."
+      ],
+      "remaining_authority_instruments": [
+        "Full adopted Carta Orgánica del Congreso Nacional del Pueblo Wounaan/Wounaan Podpa Nʌm Pömaam from the 2022–23 process, its adoption/amendment/operative record and territorial/competence annex.",
+        "Applicable traditional-organization recognition instrument under Law 72 Article 15, if issued, and rules separating CNPW territorial powers from comarca and other congress powers.",
+        "Financial statute and plenary resolutions establishing who approves/audits resources and controls the cacique/executive, with FUNDEPW’s separate role."
+      ],
+      "relationships": [
+        {
+          "type": "overlapping_people_wide_membership_distinct_from_comarca_jurisdiction",
+          "institution_id": "panama--embera-wounaan-comarca"
+        },
+        {
+          "type": "overlapping_customary_membership_distinct_institution",
+          "institution_id": "panama--embera-and-wounaan-collective-lands"
+        }
+      ],
+      "primary_evidence_refs": [
+        "law72",
+        "decree223",
+        "law467",
+        "law467_status",
+        "condipi2025",
+        "ministry2019",
+        "wounaan_own2009",
+        "wounaan_charter2023",
+        "wounaan_minas2026",
+        "wounaan_own2021"
+      ],
+      "primary_urls": [
+        "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf",
+        "https://www.anati.gob.pa/normativas/",
+        "https://www.organojudicial.gob.pa/uploads/blogs.dir/2/2025/07/665/ley-467-de-2025.pdf",
+        "https://infojuridica.procuraduria-admon.gob.pa/norma_screen.php?numsec=64619",
+        "https://www.gacetaoficial.gob.pa/pdfTemp/30204/GacetaNo_30204_20250124.pdf",
+        "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+        "https://www.fscindigenousfoundation.org/es/tag/carta-organica/",
+        "https://www.forestcarbonpartnership.org/sites/fcp/files/Documents/PDF/Jul2010/V%20Info%20final%20REDD_Congreso_Wounaan.pdf",
+        "https://www.mingob.gob.pa/wp-content/uploads/2026/04/PMAS-PUERTO-LARA.pdf",
+        "https://www.mdpi.com/2313-5778/5/4/91"
+      ],
+      "evidence_level": "operative_generic_statutes_plus_named_primary_governance_evidence; exact_congress_governing_instrument_incomplete",
+      "currentness_limit": "Dated 2026 review with sources of differing dates; no claim that an unobtained charter has not been adopted. No current electoral-activity or exhaustive amendment certificate.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_reviewed": false,
+      "principal_missing_governing_instrument": "Full adopted Carta Orgánica del Congreso Nacional del Pueblo Wounaan/Wounaan Podpa Nʌm Pömaam from the 2022–23 process, its adoption/amendment/operative record and territorial/competence annex.",
+      "adoption_questions": [
+        "Which exact text or authenticated customary-law record is currently operative, who adopted or recognized it, on what date, and what later amendments apply?",
+        "Does this named General Congress/Council itself enact binding general norms across a defined autonomous territory, approve and scrutinize its finances, and supervise/remove the executive; which provisions establish each power?"
+      ],
+      "source_custodians": [
+        {
+          "institution": "Congreso Nacional Pueblo Wounaan",
+          "custodian_scope": "Authenticated adopted governing instrument, customary competence record, assembly adoption/amendment resolutions and financial/executive-control rules.",
+          "verified_direct_public_contact": null,
+          "route_note": "Do not invent a current personal contact or use unofficial social-media names; the ministry correspondence route can identify the current institutional custodian."
+        },
+        {
+          "institution": "Ministerio de Gobierno — Viceministerio de Asuntos Indígenas; Dirección de Correspondencias for routing",
+          "custodian_scope": "Executive recognition/coordination records and the ministry-held copies of traditional governing instruments; ask the relevant congress to authenticate its own operative customary instrument.",
+          "verified_public_route": "MinGob Dirección de Correspondencias, Condado Business Center, Vía Ricardo J. Alfaro, Entrada de Condado del Rey; central telephone512-2000/512-7200. No message sent.",
+          "verification_url": "https://www.mingob.gob.pa/en-mingob-se-reunen-con-autoridades-del-territorio-bribri/",
+          "verification_scope": "Official page footer supplies ministry correspondence address/central telephone; body identifies the Indigenous Affairs vice-ministry. This is a verified general route, not a separately verified direct archive officer or congress contact."
+        }
+      ]
+    },
+    {
+      "id": "panama--bribri-people",
+      "country": "Panama",
+      "name": "Consejo General Pueblo Bribri",
+      "prior_authority_status": "specific_authority_evidence_hold",
+      "authority_status": "specific_authority_evidence_hold",
+      "legal_hold_review_complete": true,
+      "legal_hold_resolved": false,
+      "decision_basis": "Retain a specific authority evidence hold. Government identifies the Council and Bulú as distinct offices; fieldwork records clan-consensus decisions. Participatory 2025 plans include land-use/conservation rules and strengthen the Council. Generic law respects traditional authority, but its specific allocation cannot be inferred from a title application or development-plan report. The current congress-level allocation of general binding norm-making, financial approval and executive accountability is not established by the instruments obtained; neither eligibility nor an ordinary-local/cultural-only exclusion is justified.",
+      "territorial_and_institutional_reach": "Council and Bulú of the Panamanian Bribri ancestral territory in Bocas del Toro, not the Costa Rican Bribri development associations. The ministry describes clan-based consensus;2025 participant evidence names El Guabo,Namüwökir,Dakle and Bris. Do not make territorial title or cross-border jurisdiction claims from ethnic continuity.",
+      "confirmed_legally_consequential_powers": "Government identifies the Council and Bulú as distinct offices; fieldwork records clan-consensus decisions. Participatory 2025 plans include land-use/conservation rules and strengthen the Council. Generic law respects traditional authority, but its specific allocation cannot be inferred from a title application or development-plan report.",
+      "not_yet_established": [
+        "Authenticated operative Council/Bulú customary rules and the territorial versus family/clan reach of general decisions.",
+        "Full adopted 2025–2035 plans, binding rules, enforcement and who may amend them.",
+        "Council control over territorial budgets, executive appointments/removal/reporting and relation to ordinary local/national administration."
+      ],
+      "remaining_authority_instruments": [
+        "Current governing customary instrument or authenticated record of Consejo General Bribri/Bulú competencies, including territorial/community reach and adoption/recognition history.",
+        "Full Plan de Desarrollo Comunitario and Plan de Conservación Comunitario 2025–2035 adopted 13 July 2025, with assembly minutes, maps, binding-rule and accountability provisions.",
+        "Any applicable executive recognition/coordination instrument under Law 72 Article 15, plus Council financial and executive-accountability rules; obtain full current court/title records separately before claiming settled delimitation."
+      ],
+      "relationships": [],
+      "primary_evidence_refs": [
+        "law72",
+        "decree223",
+        "law467",
+        "law467_status",
+        "condipi2025",
+        "ministry2019",
+        "bribri_ministry2017",
+        "bribri_plans2025",
+        "bribri_court_lead2026"
+      ],
+      "primary_urls": [
+        "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/PUEBLOS_INDIGENAS/ley_72_de_2008_que_establece_el_procedimiento_especial_para_la_adjudicacion_de_la_propiedad_colectiva_de_tierra_de_los_pueblos_indigenas_que_no_estan.pdf",
+        "https://www.anati.gob.pa/normativas/",
+        "https://www.organojudicial.gob.pa/uploads/blogs.dir/2/2025/07/665/ley-467-de-2025.pdf",
+        "https://infojuridica.procuraduria-admon.gob.pa/norma_screen.php?numsec=64619",
+        "https://www.gacetaoficial.gob.pa/pdfTemp/30204/GacetaNo_30204_20250124.pdf",
+        "https://www.mingob.gob.pa/wp-content/uploads/2025/10/Analisis-Sociocultural-PN-L1157-marzo-2019-.pdf",
+        "https://www.mingob.gob.pa/en-mingob-se-reunen-con-autoridades-del-territorio-bribri/",
+        "https://www.acicafoc.org/2025/07/14/comunidades-bribri-de-panama/",
+        "https://www.gacetaoficial.gob.pa/storage/gacetas/2026/08/30597_B/GacetaNo_30597b_20260825.pdf"
+      ],
+      "evidence_level": "operative_generic_statutes_plus_named_primary_governance_evidence; exact_congress_governing_instrument_incomplete",
+      "currentness_limit": "Dated 2026 review with sources of differing dates; no claim that an unobtained charter has not been adopted. No current electoral-activity or exhaustive amendment certificate.",
+      "automatic_catalogue_promotion": false,
+      "metadata_stream_epg_rights_reviewed": false,
+      "principal_missing_governing_instrument": "Current governing customary instrument or authenticated record of Consejo General Bribri/Bulú competencies, including territorial/community reach and adoption/recognition history.",
+      "adoption_questions": [
+        "Which exact text or authenticated customary-law record is currently operative, who adopted or recognized it, on what date, and what later amendments apply?",
+        "Does this named General Congress/Council itself enact binding general norms across a defined autonomous territory, approve and scrutinize its finances, and supervise/remove the executive; which provisions establish each power?"
+      ],
+      "source_custodians": [
+        {
+          "institution": "Consejo General Pueblo Bribri",
+          "custodian_scope": "Authenticated adopted governing instrument, customary competence record, assembly adoption/amendment resolutions and financial/executive-control rules.",
+          "verified_direct_public_contact": null,
+          "route_note": "Do not invent a current personal contact or use unofficial social-media names; the ministry correspondence route can identify the current institutional custodian."
+        },
+        {
+          "institution": "Ministerio de Gobierno — Viceministerio de Asuntos Indígenas; Dirección de Correspondencias for routing",
+          "custodian_scope": "Executive recognition/coordination records and the ministry-held copies of traditional governing instruments; ask the relevant congress to authenticate its own operative customary instrument.",
+          "verified_public_route": "MinGob Dirección de Correspondencias, Condado Business Center, Vía Ricardo J. Alfaro, Entrada de Condado del Rey; central telephone512-2000/512-7200. No message sent.",
+          "verification_url": "https://www.mingob.gob.pa/en-mingob-se-reunen-con-autoridades-del-territorio-bribri/",
+          "verification_scope": "Official page footer supplies ministry correspondence address/central telephone; body identifies the Indigenous Affairs vice-ministry. This is a verified general route, not a separately verified direct archive officer or congress contact."
+        }
+      ]
+    }
+  ],
+  "access_and_currentness_limits": [
+    "Some official/indigenous documents were available only through indexed passages; each source records that limitation.",
+    "Government hosting dates are not assumed to be adoption or fieldwork dates.",
+    "FSC andACICAFOC describe their own participatory projects; they are primary evidence for those processes, not enacted-law repositories.",
+    "No outreach was performed. Missing customary documents cannot be fabricated or treated as negative proof.",
+    "This completed research pass retains four exact legal holds; it does not clear these bodies for service validation."
+  ]
+}

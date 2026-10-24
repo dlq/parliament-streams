@@ -1,0 +1,502 @@
+{
+  "method": "Normal public source-designated recording pages, muted native playback and bounded seek inside the selected full recording where duration permits. Captured decoded frames require individual visual review; no audio-language/quality, current live, all-room or rights certification. Vaud samples are separate morning/afternoon parts of one date, not two dates.",
+  "results": [
+    {
+      "id": "vaud-oct6-am",
+      "body_id": "switzerland--vaud-waadt",
+      "url": "https://www.sonomix.ch/live/gcvd/3509",
+      "date": "6 October2026 morning",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:22:29.018Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "headings": [
+        "Chapitres",
+        "Grand Conseil Vaudois",
+        "Partager"
+      ],
+      "text_tail": "4LEG152 EMPL (1er débat) sur l'organisation de la prévention des radicalisations (LPREV).\n\n01:00:56\n\n19. 23POS55 Postulat Nicola Di Giulio et consorts - \" Qui se préoccupe de l'état de santé de nos policières et policiers ? \n\n02:08:46\n\n20. 25LEG247 Exposé des motifs (1e débat) Exposé des motifs et projet de loi modifiant la loi du 11 décembre 2018 sur les ressources naturelles du sous-sol (LRNSS) et projet de décret accordant au Conseil d'Etat un crédit d'investissement de CHF 19'945'000 pour financer la prospection du sous-sol vaudois et favoriser la transition énergétique et climatique et la sécurité d'approvisionnement et Rapport du Conseil d'Etat sur la motion Laurent Balsiger et consorts au nom de Sébastien Humbert, Nicolas Suter et Pierre Wahlen - Mieux connaître le sous-sol vaudois pour favoriser la transition énergétique et climatique et la sécurité d'approvisionnement (23MOT29).\n\n02:17:40\nGrand Conseil Vaudois\n\nMardi 6 octobre 2026 à 09h30\n\n \nPARTAGER\n \n       \n \nPartager à un instant T\n\n© 2026  Régie et production\n\n© 2026 Sonomix, tous droits réservés. Réalisé par ivimédia.",
+      "media_src": "https://play.vod2.infomaniak.com/single/1jijk03uo9gus/1jhvl2uqemvp2/1jijk03uo9iq0",
+      "duration": 9153.04,
+      "requested_time": 1200,
+      "first": {
+        "time": 1201.465307,
+        "width": 1280,
+        "height": 720,
+        "frames": 322,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1203.074226,
+        "width": 1280,
+        "height": 720,
+        "frames": 402,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-vaud-oct6-am-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Vaud parliamentary member speaking/reading at a lit seat microphone; morning Point6 and afternoon question-hour Point3 are separate recordings of one date, not two dates or independently identified speakers."
+    },
+    {
+      "id": "vaud-oct6-pm",
+      "body_id": "switzerland--vaud-waadt",
+      "url": "https://www.sonomix.ch/live/gcvd/3511",
+      "date": "6 October2026 afternoon",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:22:29.018Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "headings": [
+        "Chapitres",
+        "Grand Conseil Vaudois",
+        "Partager"
+      ],
+      "text_tail": "P_1) Réponse du Conseil d'Etat au Grand Conseil aux observations de la Commission des finances (COFIN) sur le budget 2026. Rapporteur(s) de commission: Florence Gross\n\n01:11:50\n\n36. (26_MOT_62) Motion Yannick Maury et consorts au nom de Sergei Aschwanden, Elodie Lopez, Oriane Sarrasin, Céline Baux et David Vogel - Pour un registre vaudois et romand des personnes interdites d’exercer dans l’accueil de la petite enfance (Développement et demande de prise en considération immédiate). Auteur : Yannick Maury\n\n01:27:51\n\n37. (26_MOT_71) Motion Marc-Olivier Buffat et consorts au nom Cédric Weissert(UDC), Nicolas Suter (PLR)Jérome de Bénédictis ( V lib) - Clarifier l’application de la réforme de la LI et de la LICom sur le calcul du revenu imposable et le rendement de la fortune (art. 29 LI, art. 8 LICom) (Développement et demande de prise en considération immédiate). Auteur : Marc-Olivier Buffat\n\n01:46:19\nGrand Conseil Vaudois\n\nMardi 6 octobre 2026 à 14h00\n\n \nPARTAGER\n \n       \n \nPartager à un instant T\n\n© 2026  Régie et production\n\n© 2026 Sonomix, tous droits réservés. Réalisé par ivimédia.",
+      "media_src": "https://play.vod2.infomaniak.com/single/1jijk03uoaomz/1jhvl2uqemvp2/1jijk03uoaopg",
+      "duration": 11011.04,
+      "requested_time": 1200,
+      "first": {
+        "time": 1201.321433,
+        "width": 1280,
+        "height": 720,
+        "frames": 128,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1203.023438,
+        "width": 1280,
+        "height": 720,
+        "frames": 213,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-vaud-oct6-pm-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Vaud parliamentary member speaking/reading at a lit seat microphone; morning Point6 and afternoon question-hour Point3 are separate recordings of one date, not two dates or independently identified speakers."
+    },
+    {
+      "id": "geneva-oct1",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "date": "Source heading to be read",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:22:36.907Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil de Genève",
+      "headings": [
+        "\n            République et canton de Genève\n        ",
+        "\n            Grand Conseil\n        ",
+        "Recherche aide",
+        "\n            Vidéo du\n            jeudi 1 octobre 2026            à\n            17h        ",
+        "\n            3e\n            législature -\n            4e\n            année -\n            5e\n            session -\n            23e\n            séance\n        ",
+        "Ordre du jour",
+        "\n                            Points initiaux16h59:32\n                        ",
+        "\n                            E 3234 ...17h21:10\n                        ",
+        "\n                            E 325417h21:19\n                        ",
+        "\n                            M 303217h35:42\n                        ",
+        "\n                            PL 13728-A17h36:51\n                        ",
+        "\n                            PL 13730-A17h51:53\n                        ",
+        "\n                            M 268818h14:46\n                        ",
+        "\n                            M 3060-A18h16:05\n                        ",
+        "\n                            P 2260-A18h25:44\n                        ",
+        "\n                            Fin de séance18h50:33\n                        "
+      ],
+      "text_tail": "ane Florey (UDC)\n17h53:52\nM. Marc Saudan (LJS)\n17h58:16\nMme Clarisse Di Rosa (Ve)\n18h00:24\nMme Natacha Buffet-Desfayes (PLR)\n18h03:31\nMme Léna Strasser (S)\n18h06:05\nMme Patricia Bidaux (LC)\n18h08:21\nM. Stéphane Florey (UDC)\n18h10:12\nM. Arber Jahija (MCG)\n18h12:12\nM. Thierry Apothéloz\n18h12:44\nLa présidente\n18h14:14\nM 268818h14:46\nLa présidente\n18h14:46\nM. Yves de Matteis (Ve)\n18h15:06\nLa présidente\n18h15:16\nM 3060-A18h16:05\nLa présidente\n18h16:05\nM. Julien Nicolet-dit-Félix (Ve)\n18h16:36\nM. Pierre Conne (PLR)\n18h21:05\nM. Julien Nicolet-dit-Félix (Ve)\n18h24:10\nLa présidente\n18h24:59\nP 2260-A18h25:44\nLa présidente\n18h25:44\nMme Christina Meissner (LC)\n18h26:41\nM. Sylvain Thévoz (S)\n18h30:27\nMme Céline Bartolomucci (Ve)\n18h33:28\nMme Joëlle Fiss (PLR)\n18h36:12\nM. Marc Falquet (UDC)\n18h38:10\nM. Vincent Subilia (PLR)\n18h39:38\nM. Jacques Jeannerat (LJS)\n18h41:06\nM. Sylvain Thévoz (S)\n18h42:02\nMme Céline Bartolomucci (Ve)\n18h44:44\nMme Christina Meissner (LC)\n18h45:33\nM. Thierry Apothéloz\n18h47:53\nLa présidente\n18h49:26\nFin de séance18h50:33\nLa présidente\n18h50:33\n\nRetour à la liste des vidéos",
+      "media_src": "http://www.grandconseil-ge.ch/video/030405_23.m4v",
+      "duration": 6987.766,
+      "requested_time": 1200,
+      "first": {
+        "time": 1201.258001,
+        "width": 1280,
+        "height": 720,
+        "frames": 135,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1202.86807,
+        "width": 1280,
+        "height": 720,
+        "frames": 183,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-geneva-oct1-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Geneva1October2026 voting-result board with agenda/navigation visible; decoded parliamentary procedure, not a speech or a bill-specific outcome independently inferred."
+    },
+    {
+      "id": "geneva-jan22",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030308/42/",
+      "date": "22 January2026,17h",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:22:36.947Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil de Genève",
+      "headings": [
+        "\n            République et canton de Genève\n        ",
+        "\n            Grand Conseil\n        ",
+        "Recherche aide",
+        "\n            Vidéo du\n            jeudi 22 janvier 2026            à\n            17h        ",
+        "\n            3e\n            législature -\n            3e\n            année -\n            8e\n            session -\n            42e\n            séance\n        ",
+        "Chargement en cours ...",
+        "\n                            \n                        "
+      ],
+      "text_tail": "RÉPUBLIQUE ET CANTON DE GENÈVE\nGrand Conseil\nContact\n \nImprimer\n \nConditions d'utilisation\n \nCouleurs des liens\n \nAccord-GC\n \nAccueil\nGrand Conseil\nSessions\nDocuments de séance\nCalendrier\nDiffusion en direct\nDiffusion en différé\nArchives procès-verbaux\nPublications\nSecrétariat\nMémorial\nFAQ\nRecherche \n \n\nRecherche avancée\n\nVIDÉO DU JEUDI 22 JANVIER 2026 À 17H\n3e législature - 3e année - 8e session - 42e séance\nChargement en cours ...\n\nRetour à la liste des vidéos",
+      "media_src": "http://www.grandconseil-ge.ch/video/030308_42.m4v",
+      "duration": 6767.92,
+      "requested_time": 1200,
+      "first": {
+        "time": 1200,
+        "width": 1280,
+        "height": 720,
+        "frames": 68,
+        "paused": true,
+        "ready": 1,
+        "error": null
+      },
+      "later": {
+        "time": 1200,
+        "width": 1280,
+        "height": 720,
+        "frames": 73,
+        "paused": true,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": false,
+      "outcome": "decoded_playback_unconfirmed",
+      "screenshot": "/tmp/swiss-native-geneva-jan22-chromium.png"
+    },
+    {
+      "id": "zug-sep24",
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2abc884a8ba46775365211",
+      "date": "24 September2026 morning",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:22:46.439Z",
+      "muted": true,
+      "status": 200,
+      "title": "Kantonsratssitzung vom 24. September 2026 - Vormittag – Archive",
+      "headings": [
+        "Kantonsratssitzung vom 24. September 2026 - Vormittag – Archive"
+      ],
+      "text_tail": "0%\n0:00\n/\n4:26:29\nStart\n0:00\nKantonsratssitzung vom 24. September 2026 - Vormittag – Archive\n\nLivestream der Kantonsratssitzung (Vormittag) vom 24. September 2026",
+      "media_src": "blob:https://kantonzug.euvideocdn.com/404089bc-ea1b-482d-95d5-eb1d6d3496df",
+      "duration": 15989,
+      "requested_time": 1200,
+      "first": {
+        "time": 1200.03351,
+        "width": 1920,
+        "height": 1080,
+        "frames": 9,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1201.639464,
+        "width": 1920,
+        "height": 1080,
+        "frames": 58,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-zug-sep24-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Zug24September2026 chair at the standing dais microphone handling chamber proceedings;27August2026 chair/chamber vote-handling context. No independently identified member speech, current live, all-day completeness or audible quality certified."
+    },
+    {
+      "id": "zug-aug27",
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2ab6124a8ba4677535eaac",
+      "date": "27 August2026 morning",
+      "engine": "chromium",
+      "checked_at": "2026-10-24T05:22:47.313Z",
+      "muted": true,
+      "status": 200,
+      "title": "Kantonsratssitzung vom 27. August 2026 - Vormittag – Archive",
+      "headings": [
+        "Kantonsratssitzung vom 27. August 2026 - Vormittag – Archive"
+      ],
+      "text_tail": "0%\n0:00\n/\n4:38:23\nStart\n0:00\nKantonsratssitzung vom 27. August 2026 - Vormittag – Archive\n\nLivestream der Kantonsratssitzung (Vormittag) vom 27. August 2026",
+      "media_src": "blob:https://kantonzug.euvideocdn.com/7a67180c-18a9-4687-aa9c-4aa700328698",
+      "duration": 16703,
+      "requested_time": 1200,
+      "first": {
+        "time": 1200,
+        "width": 1280,
+        "height": 720,
+        "frames": 92,
+        "paused": false,
+        "ready": 1,
+        "error": null
+      },
+      "later": {
+        "time": 1200.233723,
+        "width": 1280,
+        "height": 720,
+        "frames": 105,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-zug-aug27-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Zug24September2026 chair at the standing dais microphone handling chamber proceedings;27August2026 chair/chamber vote-handling context. No independently identified member speech, current live, all-day completeness or audible quality certified."
+    },
+    {
+      "id": "vaud-oct6-am",
+      "body_id": "switzerland--vaud-waadt",
+      "url": "https://www.sonomix.ch/live/gcvd/3509",
+      "date": "6 October2026 morning",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:22:56.418Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "headings": [
+        "Chapitres",
+        "Grand Conseil Vaudois",
+        "Partager"
+      ],
+      "text_tail": "LEG152 EMPL (1er débat) sur l'organisation de la prévention des radicalisations (LPREV).\n\n01:00:56\n\n19. 23POS55 Postulat Nicola Di Giulio et consorts - \" Qui se préoccupe de l'état de santé de nos policières et policiers ? \n\n02:08:46\n\n20. 25LEG247 Exposé des motifs (1e débat) Exposé des motifs et projet de loi modifiant la loi du 11 décembre 2018 sur les ressources naturelles du sous-sol (LRNSS) et projet de décret accordant au Conseil d'Etat un crédit d'investissement de CHF 19'945'000 pour financer la prospection du sous-sol vaudois et favoriser la transition énergétique et climatique et la sécurité d'approvisionnement et Rapport du Conseil d'Etat sur la motion Laurent Balsiger et consorts au nom de Sébastien Humbert, Nicolas Suter et Pierre Wahlen - Mieux connaître le sous-sol vaudois pour favoriser la transition énergétique et climatique et la sécurité d'approvisionnement (23MOT29).\n\n02:17:40\nGrand Conseil Vaudois\n\nMardi 6 octobre 2026 à 09h30\n\n \nPARTAGER\n \n       \n \nPartager à un instant T\n\n© 2026   Régie et production\n\n© 2026 Sonomix, tous droits réservés. Réalisé par ivimédia.",
+      "media_src": "https://play.vod2.infomaniak.com/single/1jijk03uo9gus/1jhvl2uqemvp2/1jijk03uo9iq0",
+      "duration": 9153,
+      "requested_time": 1200,
+      "first": {
+        "time": 1201.669245374673,
+        "width": 1280,
+        "height": 720,
+        "frames": 362,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1203.274364000191,
+        "width": 1280,
+        "height": 720,
+        "frames": 470,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-vaud-oct6-am-webkit.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Vaud parliamentary member speaking/reading at a lit seat microphone; morning Point6 and afternoon question-hour Point3 are separate recordings of one date, not two dates or independently identified speakers."
+    },
+    {
+      "id": "vaud-oct6-pm",
+      "body_id": "switzerland--vaud-waadt",
+      "url": "https://www.sonomix.ch/live/gcvd/3511",
+      "date": "6 October2026 afternoon",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:22:56.419Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "headings": [
+        "Chapitres",
+        "Grand Conseil Vaudois",
+        "Partager"
+      ],
+      "text_tail": "_1) Réponse du Conseil d'Etat au Grand Conseil aux observations de la Commission des finances (COFIN) sur le budget 2026. Rapporteur(s) de commission: Florence Gross\n\n01:11:50\n\n36. (26_MOT_62) Motion Yannick Maury et consorts au nom de Sergei Aschwanden, Elodie Lopez, Oriane Sarrasin, Céline Baux et David Vogel - Pour un registre vaudois et romand des personnes interdites d’exercer dans l’accueil de la petite enfance (Développement et demande de prise en considération immédiate). Auteur : Yannick Maury\n\n01:27:51\n\n37. (26_MOT_71) Motion Marc-Olivier Buffat et consorts au nom Cédric Weissert(UDC), Nicolas Suter (PLR)Jérome de Bénédictis ( V lib) - Clarifier l’application de la réforme de la LI et de la LICom sur le calcul du revenu imposable et le rendement de la fortune (art. 29 LI, art. 8 LICom) (Développement et demande de prise en considération immédiate). Auteur : Marc-Olivier Buffat\n\n01:46:19\nGrand Conseil Vaudois\n\nMardi 6 octobre 2026 à 14h00\n\n \nPARTAGER\n \n       \n \nPartager à un instant T\n\n© 2026   Régie et production\n\n© 2026 Sonomix, tous droits réservés. Réalisé par ivimédia.",
+      "media_src": "https://play.vod2.infomaniak.com/single/1jijk03uoaomz/1jhvl2uqemvp2/1jijk03uoaopg",
+      "duration": 11011,
+      "requested_time": 1200,
+      "first": {
+        "time": 1202.0253736248294,
+        "width": 1280,
+        "height": 720,
+        "frames": 176,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1203.633946957866,
+        "width": 1280,
+        "height": 720,
+        "frames": 274,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-vaud-oct6-pm-webkit.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Vaud parliamentary member speaking/reading at a lit seat microphone; morning Point6 and afternoon question-hour Point3 are separate recordings of one date, not two dates or independently identified speakers."
+    },
+    {
+      "id": "geneva-oct1",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030405/23/",
+      "date": "Source heading to be read",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:23:04.993Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil de Genève",
+      "headings": [
+        "\n            République et canton de Genève\n        ",
+        "\n            Grand Conseil\n        ",
+        "Recherche aide",
+        "\n            Vidéo du\n            jeudi 1 octobre 2026            à\n            17h        ",
+        "\n            3e\n            législature -\n            4e\n            année -\n            5e\n            session -\n            23e\n            séance\n        ",
+        "Chargement en cours ...",
+        "\n                            \n                        "
+      ],
+      "text_tail": "RÉPUBLIQUE ET CANTON DE GENÈVE\nGrand Conseil\nContact\n Imprimer\n Conditions d'utilisation\n Couleurs des liens\n Accord-GC\n Accueil\nGrand Conseil\nSessions\nDocuments de séance\nCalendrier\nDiffusion en direct\nDiffusion en différé\nArchives procès-verbaux\nPublications\nSecrétariat\nMémorial\nFAQ\nRecherche    \n\nRecherche avancée\n\nVIDÉO DU JEUDI 1 OCTOBRE 2026 À 17H\n3e législature - 4e année - 5e session - 23e séance\n\nChargement en cours ...\n\nRetour à la liste des vidéos",
+      "media_src": "http://www.grandconseil-ge.ch/video/030405_23.m4v",
+      "outcome": "playback_or_access_unresolved",
+      "error": "Error: locator.evaluate: AbortError: The operation was aborted.",
+      "media_state": [
+        {
+          "src": "http://www.grandconseil-ge.ch/video/030405_23.m4v",
+          "ready": 1
+        }
+      ]
+    },
+    {
+      "id": "geneva-jan22",
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030308/42/",
+      "date": "22 January2026,17h",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:23:05.939Z",
+      "muted": true,
+      "status": 200,
+      "title": "Grand Conseil de Genève",
+      "headings": [
+        "\n            République et canton de Genève\n        ",
+        "\n            Grand Conseil\n        ",
+        "Recherche aide",
+        "\n            Vidéo du\n            jeudi 22 janvier 2026            à\n            17h        ",
+        "\n            3e\n            législature -\n            3e\n            année -\n            8e\n            session -\n            42e\n            séance\n        ",
+        "Chargement en cours ...",
+        "\n                            \n                        "
+      ],
+      "text_tail": "RÉPUBLIQUE ET CANTON DE GENÈVE\nGrand Conseil\nContact\n Imprimer\n Conditions d'utilisation\n Couleurs des liens\n Accord-GC\n Accueil\nGrand Conseil\nSessions\nDocuments de séance\nCalendrier\nDiffusion en direct\nDiffusion en différé\nArchives procès-verbaux\nPublications\nSecrétariat\nMémorial\nFAQ\nRecherche    \n\nRecherche avancée\n\nVIDÉO DU JEUDI 22 JANVIER 2026 À 17H\n3e législature - 3e année - 8e session - 42e séance\n\nChargement en cours ...\n\nRetour à la liste des vidéos",
+      "media_src": "http://www.grandconseil-ge.ch/video/030308_42.m4v",
+      "outcome": "playback_or_access_unresolved",
+      "error": "Error: locator.evaluate: AbortError: The operation was aborted.",
+      "media_state": [
+        {
+          "src": "http://www.grandconseil-ge.ch/video/030308_42.m4v",
+          "ready": 1
+        }
+      ]
+    },
+    {
+      "id": "zug-sep24",
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2abc884a8ba46775365211",
+      "date": "24 September2026 morning",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:23:11.706Z",
+      "muted": true,
+      "status": 200,
+      "title": "Kantonsratssitzung vom 24. September 2026 - Vormittag – Archive",
+      "headings": [
+        "Kantonsratssitzung vom 24. September 2026 - Vormittag – Archive"
+      ],
+      "text_tail": "0:00\n/\n4:26:29\nStart\n0:00\nKantonsratssitzung vom 24. September 2026 - Vormittag – Archive\n\nLivestream der Kantonsratssitzung (Vormittag) vom 24. September 2026",
+      "media_src": "blob:https://kantonzug.euvideocdn.com/b5a5be2b-7aa1-4a51-a075-e02c19745ee4",
+      "duration": 15989,
+      "requested_time": 1200,
+      "first": {
+        "time": 1200.950759568,
+        "width": 1920,
+        "height": 1080,
+        "frames": 33,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1202.557752734,
+        "width": 1920,
+        "height": 1080,
+        "frames": 93,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-zug-sep24-webkit.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Zug24September2026 chair at the standing dais microphone handling chamber proceedings;27August2026 chair/chamber vote-handling context. No independently identified member speech, current live, all-day completeness or audible quality certified."
+    },
+    {
+      "id": "zug-aug27",
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a2ab6124a8ba4677535eaac",
+      "date": "27 August2026 morning",
+      "engine": "webkit",
+      "checked_at": "2026-10-24T05:23:13.309Z",
+      "muted": true,
+      "status": 200,
+      "title": "Kantonsratssitzung vom 27. August 2026 - Vormittag – Archive",
+      "headings": [
+        "Kantonsratssitzung vom 27. August 2026 - Vormittag – Archive"
+      ],
+      "text_tail": "0:00\n/\n4:38:23\nStart\n0:00\nKantonsratssitzung vom 27. August 2026 - Vormittag – Archive\n\nLivestream der Kantonsratssitzung (Vormittag) vom 27. August 2026",
+      "media_src": "blob:https://kantonzug.euvideocdn.com/6c08b201-d41e-4e51-b712-5da1341e31b0",
+      "duration": 16703,
+      "requested_time": 1200,
+      "first": {
+        "time": 1200.1,
+        "width": 1920,
+        "height": 1080,
+        "frames": 14,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "later": {
+        "time": 1201.501838327,
+        "width": 1920,
+        "height": 1080,
+        "frames": 65,
+        "paused": false,
+        "ready": 4,
+        "error": null
+      },
+      "decoded": true,
+      "outcome": "decoded_recording_requires_visual_review",
+      "screenshot": "/tmp/swiss-native-zug-aug27-webkit.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Zug24September2026 chair at the standing dais microphone handling chamber proceedings;27August2026 chair/chamber vote-handling context. No independently identified member speech, current live, all-day completeness or audible quality certified."
+    }
+  ]
+}

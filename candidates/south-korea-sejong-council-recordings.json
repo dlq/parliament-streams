@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The council website designates its YouTube service. Selected recordings of 109th regular session, Education/Safety Committee third meeting and Operations Committee third meeting were visually reviewed in Chromium and WebKit with advancing decoded video and the respective committee chairs conducting business. Long opening and recess sections were retained as separate non-confirming samples: Education/Safety at5400seconds and Operations at3900seconds show committee business. No plenary, current-live or full committee/room coverage is inferred.",
+    "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+    "Evidence: reports/discovery/2026-10-23-sejong-gyeongsangnam-publication-review.json"
+  ],
+  "channel": {
+    "id": "south-korea-sejong-council-recordings",
+    "name": "Sejong City Council Committee Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Sejong",
+    "legislature": "세종특별자치시의회",
+    "external_ids": {
+      "wikidata_qid": "Q16097908",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q16097908",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact council Q16097908, revision 2505917211, Korean institution label, South Korea country and corresponding first-level jurisdiction claims reviewed alongside its own site. The metropolitan/provincial council has legislative authority under the recorded Korean framework; English municipal-council labels do not mean a town council."
+      }
+    ],
+    "language": "Korean",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://council.sejong.go.kr/",
+    "provenance_note": "The council website designates its YouTube service. Selected recordings of 109th regular session, Education/Safety Committee third meeting and Operations Committee third meeting were visually reviewed in Chromium and WebKit with advancing decoded video and the respective committee chairs conducting business. Long opening and recess sections were retained as separate non-confirming samples: Education/Safety at5400seconds and Operations at3900seconds show committee business. No plenary, current-live or full committee/room coverage is inferred.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No interpreter is established in the selected Education/Safety and Operations Committee samples; other variants remain unverified. Complete captions and audio description remain unknown; muted samples do not certify spoken-language or auto-dubbed track selection."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://council.sejong.go.kr/",
+        "method": "GET",
+        "kind": "official_institution_video_and_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official council website link only. Its own site designates the video provider. No current, separate audiovisual reuse permission was established by the reviewed institutional/video navigation and search. Retain permission pending and do not embed, rehost or export provider streams.",
+      "evidence": [
+        "https://council.sejong.go.kr/"
+      ],
+      "recommendation": "Use the official website and designated video service. Independent video reuse, complete room inventory and current live require separate confirmation."
+    }
+  }
+}

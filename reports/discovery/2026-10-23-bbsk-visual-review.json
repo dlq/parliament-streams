@@ -1,0 +1,19 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "bbsk-0",
+      "body_ids": [
+        "slovakia--banskobystricky-kraj"
+      ],
+      "url": "https://www.youtube.com/watch?v=cuxcGBztj7Q&t=1200s",
+      "title": "ZASTUPITE\u013dSTVO BBSK, 24.9.2026 - YouTube",
+      "decision": "meeting_opening_requires_later_business_sample",
+      "note": "Banska Bystrica region chairman at microphone, regional and Slovak flags, TV ESO/BBSK branding and26th regional assembly sitting caption; current agenda caption Otvorenie is opening. This frame confirms institutional meeting setting, not yet a substantive business sample.",
+      "sample_time_seconds": 1205.338164,
+      "screenshot": "/tmp/provider-sample-bbsk-0.png",
+      "full_service_certified": false
+    }
+  ]
+}

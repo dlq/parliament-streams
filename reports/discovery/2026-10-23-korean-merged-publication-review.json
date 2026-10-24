@@ -1,0 +1,76 @@
+{
+  "research_date": "2026-10-23",
+  "decision": "publish_three_official_institution_links_with_scoped_recording_evidence",
+  "records": [
+    {
+      "key": "jeonnam-gwangju",
+      "region": "Jeonnam–Gwangju Integrated Special City",
+      "name": "Jeonnam–Gwangju Integrated Special City Council Recordings",
+      "inst": "전남광주통합특별시의회",
+      "qid": "Q140198355",
+      "url": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+      "terms": null,
+      "id": "south-korea-jeonnam-gwangju-council-recordings",
+      "body": "south-korea--jeonnam-gwangju",
+      "recording_checks": [
+        {
+          "key": "jeonnam-gwangju-1",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=cC4dfc7yRYM&t=1200s",
+          "offset": 1200,
+          "time": 1203.923115,
+          "frames_advanced": true,
+          "title": "제4회 임시회 제6차 본회의 - YouTube",
+          "visual_observation": "Successor-council plenary review report (interpreter visible) or committee member speaking at microphone; selected recorded proceedings only."
+        },
+        {
+          "key": "jeonnam-gwangju-2",
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=C2f-gizqLG8&t=1200s",
+          "offset": 1200,
+          "time": 1203.959981,
+          "frames_advanced": true,
+          "title": "제4회 임시회 제2차 행정소방위원회 - YouTube",
+          "visual_observation": "Successor-council plenary review report (interpreter visible) or committee member speaking at microphone; selected recorded proceedings only."
+        },
+        {
+          "key": "jeonnam-gwangju-1",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=cC4dfc7yRYM&t=1200s",
+          "offset": 1200,
+          "time": 1203.450896116,
+          "frames_advanced": true,
+          "title": "제4회 임시회 제6차 본회의 - YouTube",
+          "visual_observation": "Successor-council plenary review report (interpreter visible) or committee member speaking at microphone; selected recorded proceedings only."
+        },
+        {
+          "key": "jeonnam-gwangju-2",
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=C2f-gizqLG8&t=1200s",
+          "offset": 1200,
+          "time": 1203.531616954,
+          "frames_advanced": true,
+          "title": "제4회 임시회 제2차 행정소방위원회 - YouTube",
+          "visual_observation": "Successor-council plenary review report (interpreter visible) or committee member speaking at microphone; selected recorded proceedings only."
+        }
+      ],
+      "identity_revision": 2505878630,
+      "provider_designation": {
+        "text": "",
+        "url": "https://www.youtube.com/@%EC%A0%84%EB%82%A8%EA%B4%91%EC%A3%BC%ED%86%B5%ED%95%A9%EC%8B%9C%EC%9D%98%ED%9A%8C"
+      },
+      "unresolved": [
+        "current_regional_flag_not_verified_standard_legislature_mark_used",
+        "current_live_not_observed",
+        "complete_committee_and_room_inventory_unverified",
+        "full_caption_and_audio_description_coverage_unknown",
+        "spoken_and_auto_dubbed_tracks_not_audibly_verified",
+        "independent_audiovisual_reuse_not_established",
+        "separate_current_public_session_copyright_policy_not_located"
+      ]
+    }
+  ],
+  "authority_evidence": "reports/discovery/2026-10-23-authority-completion.json",
+  "map_evidence": "Union of public-domain Natural Earth KR-29 and KR-46; successor special Act and current own council reviewed separately; navigation outline, not current cadastral geometry.",
+  "all_metadata_and_streams_certified": false
+}

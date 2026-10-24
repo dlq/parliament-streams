@@ -1,0 +1,147 @@
+{
+  "research_date": "2026-10-23",
+  "no_bulk_search_or_rate_limit_retry": true,
+  "results": [
+    {
+      "id": "argentina--la-rioja",
+      "discovery_page": "https://es.wikipedia.org/wiki/Legislatura%20de%20la%20Provincia%20de%20La%20Rioja",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q56316480",
+      "revision": 2247102796,
+      "labels": {
+        "es": {
+          "language": "es",
+          "value": "Legislatura de la Provincia de La Rioja"
+        },
+        "en": {
+          "language": "en",
+          "value": "Legislature of La Rioja"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56316480$3c247ccf-43b5-c738-c519-417fa06be622",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "46f9c2b008e7848114b0b4b8f8602a5a1359134e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 11204,
+                  "id": "Q11204"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56316480$d0096188-4e74-7d42-5ccb-6af024770b70",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "d06759986db6ed52e2f976b2051127431e51a8be",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 414,
+                  "id": "Q414"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56316480$6006345a-4d74-962d-e9c8-dc578d5128a7",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "ca3074713bd6a4adefa8f956e2386f6496cfc20c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 44796,
+                  "id": "Q44796"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q56316480$e17cf014-4eee-086a-0628-fd4b1df05096",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "9df85b8c5938eb2d024faeb86808a0534a5cbbfc",
+              "datavalue": {
+                "value": "https://legislaturalarioja.gob.ar/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q56316480$2334918f-4fa6-6cf4-817a-b06601199973",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    }
+  ]
+}

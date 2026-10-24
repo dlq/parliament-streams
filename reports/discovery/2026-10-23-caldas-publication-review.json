@@ -1,0 +1,92 @@
+{
+  "research_date": "2026-10-23",
+  "body_id": "colombia--caldas",
+  "catalogue_id": "colombia-caldas-assembly-recordings",
+  "decision": "publish_scoped_official_institutional_recording_link",
+  "confirmed_scope": "Official assembly website designates its recording provider. Confirmed21October2026 plenary with metropolitan-area director Juan Martín Dussán López speaking at chamber microphone;20October archive contains the Finance Secretariat management/investment presentation at5000seconds. Both selected archives decode in Chromium/WebKit. The20October1200second sample is an institutional video shown during the sitting, not a direct member speech. The separate upload titled22October shows21October on-screen; that exact date is unresolved and is not used as an independently dated third sitting.",
+  "identity": {
+    "id": "colombia--caldas",
+    "discovery_page": "https://es.wikipedia.org/wiki/Asamblea%20Departamental%20de%20Caldas",
+    "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+    "qid": "Q21708048",
+    "revision": 1373460380,
+    "labels": {
+      "es": {
+        "language": "es",
+        "value": "Asamblea Departamental de Caldas"
+      }
+    },
+    "claims": {
+      "P31": [],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "a8320512b697f7ca13d984a9e107863e3fdba021",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 739,
+                "id": "Q739"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q21708048$557F08A0-6649-4305-A13B-1868961B5BBF",
+          "rank": "normal"
+        }
+      ],
+      "P1001": [],
+      "P856": [],
+      "P2397": []
+    },
+    "outcome": "exact_claims_require_primary_crosscheck"
+  },
+  "primary_provider_designation": {
+    "id": "colombia--caldas",
+    "previous_url": "https://www.asambleadecaldas.gov.co/",
+    "url": "https://www.asambleadecaldas.gov.co/",
+    "status": 200,
+    "final_url": "https://www.asambleadecaldas.gov.co/",
+    "title": "Visita el sitio oficial de la Asamblea de Caldas. Encuentra información sobre sesiones, proyectos de ordenanza, noticias normativas. Participa en la democracia y conoce el trabajo de Diputados.",
+    "access_limited": false,
+    "links": [
+      {
+        "text": "@AsambleadeCaldas",
+        "url": "https://www.youtube.com/@AsambleadeCaldas"
+      }
+    ],
+    "outcome": "own_page_navigation_requires_review"
+  },
+  "selected_archives": [
+    {
+      "url": "https://www.youtube.com/watch?v=ktFTDc_OwsE&t=1200s",
+      "scope": "21October2026 member/official at microphone",
+      "both_engines_decoded": true,
+      "chromium_capture_visually_reviewed": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7CuMRv4Xxts&t=5000s",
+      "scope": "20October archive Finance Secretariat investment/management presentation slides",
+      "both_engines_decoded": true,
+      "both_engine_captures_visually_reviewed": true
+    }
+  ],
+  "source_conditions": "Official institutional viewing link only; no blanket independent audiovisual reuse permission was established from the reviewed own navigation. Personal-use permission remains pending. No provider embed, rehosting, extracted manifest or IPTV export is added.",
+  "remaining_gates": [
+    "current_live_and_full_room_inventory_unverified",
+    "audible_quality_and_all_audio_tracks_unverified",
+    "source_wide_captions_sign_variants_audio_description_unknown",
+    "independent_audiovisual_reuse_unestablished",
+    "upload_titled22October_vs_onscreen21October_unreconciled",
+    "optional_flag_asset_pending_after_commons_http429_neutral_mark_used"
+  ],
+  "map": {
+    "source": "Natural Earth Admin1 public domain",
+    "feature": "CO-CAL"
+  },
+  "all_metadata_and_streams_certified": false
+}

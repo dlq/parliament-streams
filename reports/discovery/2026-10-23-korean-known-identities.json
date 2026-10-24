@@ -1,0 +1,537 @@
+{
+  "research_date": "2026-10-23",
+  "no_bulk_search_or_rate_limit_retry": true,
+  "results": [
+    {
+      "id": "south-korea--busan",
+      "discovery_page": "https://en.wikipedia.org/wiki/Busan_Metropolitan_Council",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q16096697",
+      "revision": 2513114120,
+      "labels": {
+        "ko": {
+          "language": "ko",
+          "value": "부산광역시의회"
+        },
+        "en": {
+          "language": "en",
+          "value": "Busan municipal council"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7ee60ef6537bdcbde1463163b61345e4bb4153f5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3154693,
+                  "id": "Q3154693"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16096697$0119985d-46ae-3c0f-e17d-d85a82491e87",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "451b03fd832a83d8e469183c005feea9c8e3f472",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3308596,
+                  "id": "Q3308596"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16096697$64A12188-C3DE-4044-811F-BEBAF71B069D",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16096697$78E14005-6D00-4417-B9DA-53C6C7053E8C",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "ab4105e4f6c3449ba4a6ca949a3aaafaa67f5be8",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 884,
+                  "id": "Q884"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16096697$b297b257-42ec-cb00-03a4-3cea4a157890",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "038d6223afa09eb762cd3a2a9d1a05b657d2383c",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 16520,
+                  "id": "Q16520"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16096697$08171982-2AA5-492D-AD4D-E2AEB48E70F3",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "f356d48791919f045438b86c92e21f22b351b9ca",
+              "datavalue": {
+                "value": "https://council.busan.go.kr",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q16096697$0e964ca0-42f3-3018-ac9c-11732db6a4e2",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "south-korea--chungcheongnam",
+      "discovery_page": "https://en.wikipedia.org/wiki/South_Chungcheong_Provincial_Council",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "south-korea--daegu",
+      "discovery_page": "https://en.wikipedia.org/wiki/Daegu_Metropolitan_Council",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q16095349",
+      "revision": 2505979165,
+      "labels": {
+        "ko": {
+          "language": "ko",
+          "value": "대구광역시의회"
+        },
+        "en": {
+          "language": "en",
+          "value": "Daegu municipal council"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7ee60ef6537bdcbde1463163b61345e4bb4153f5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3154693,
+                  "id": "Q3154693"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16095349$f7703871-45de-fd08-3567-fff08db4036e",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "451b03fd832a83d8e469183c005feea9c8e3f472",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3308596,
+                  "id": "Q3308596"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16095349$E76FE8B9-F64E-46CA-B7AC-4AA8F389EC6D",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16095349$DCF24581-DD85-4608-97CA-38E39D38869C",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "ab4105e4f6c3449ba4a6ca949a3aaafaa67f5be8",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 884,
+                  "id": "Q884"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16095349$d0dc6418-4b9a-0446-5ebe-945d7658fe84",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "863119caae36f36e643a6ba2ee9b6a2ccc7abbac",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 20927,
+                  "id": "Q20927"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16095349$B290751D-50CE-4667-8F1A-1F59AEC4BD53",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "3679c15435080818bee61f524a1e585770d498d8",
+              "datavalue": {
+                "value": "http://council.daegu.go.kr",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q16095349$c43f44de-46b1-7752-b2fd-10932ee9f9ee",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "south-korea--gyeongsangbuk",
+      "discovery_page": "https://en.wikipedia.org/wiki/North_Gyeongsang_Provincial_Council",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "south-korea--incheon",
+      "discovery_page": "https://en.wikipedia.org/wiki/Incheon_Metropolitan_Council",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "qid": "Q16099448",
+      "revision": 2505899418,
+      "labels": {
+        "ko": {
+          "language": "ko",
+          "value": "인천광역시의회"
+        },
+        "en": {
+          "language": "en",
+          "value": "Incheon Metropolitan Council"
+        }
+      },
+      "claims": {
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "7ee60ef6537bdcbde1463163b61345e4bb4153f5",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3154693,
+                  "id": "Q3154693"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16099448$bf198375-4e32-20e3-57c6-29018d3ad8fd",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "451b03fd832a83d8e469183c005feea9c8e3f472",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3308596,
+                  "id": "Q3308596"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16099448$BA7B485D-052E-4DEA-81A7-8F0260220241",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "a5b3dd00d866228ac2b8cc93c02290ba1c1591e6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 37002670,
+                  "id": "Q37002670"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16099448$9CD9FE1B-E507-4F33-A47F-1C3C2112E395",
+            "rank": "normal"
+          }
+        ],
+        "P17": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P17",
+              "hash": "ab4105e4f6c3449ba4a6ca949a3aaafaa67f5be8",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 884,
+                  "id": "Q884"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16099448$382f8ac5-4453-e4ef-c594-8a0d6c92baac",
+            "rank": "normal"
+          }
+        ],
+        "P1001": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1001",
+              "hash": "fd6b8d5fa69720becee1a76097414bc0ab75b76d",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 20934,
+                  "id": "Q20934"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q16099448$FA5BC24A-50AD-41D3-93CD-F1A0B6E22A6F",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "16c1c61584e330a88cc820db3d157153de5e1bad",
+              "datavalue": {
+                "value": "http://www.icouncil.go.kr",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "a10335a425d19169dd856e0a5f71735853eab0ab",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 9176,
+                      "id": "Q9176"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q16099448$977306fc-4bab-cb9a-a449-0b24c9792d45",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "75e5fa31c2fd25446bbbf4f9f3971b6e0ec9382c",
+              "datavalue": {
+                "value": "http://www.icouncil.go.kr/open_content/main/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "a10335a425d19169dd856e0a5f71735853eab0ab",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 9176,
+                      "id": "Q9176"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q16099448$3286d29c-4d7a-7424-e884-d83331d71d40",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "e579d6d5054cd90cbcf72e1fc5077c6e3391f0d7",
+              "datavalue": {
+                "value": "http://www.icouncil.go.kr/open_content/en/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1860,
+                      "id": "Q1860"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q16099448$65cac45a-4c4c-14a6-9de5-ba044e44078f",
+            "rank": "normal"
+          }
+        ],
+        "P2397": []
+      },
+      "outcome": "exact_claims_require_primary_crosscheck"
+    },
+    {
+      "id": "south-korea--jeollabuk-do",
+      "discovery_page": "https://en.wikipedia.org/wiki/North_Jeolla_Provincial_Council",
+      "method": "Known institution article provides exact Wikidata link; single known entity fetched for claims. Wikipedia text is not authority or provider designation evidence.",
+      "outcome": "identity_lookup_unresolved",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

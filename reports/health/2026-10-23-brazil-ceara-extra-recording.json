@@ -1,0 +1,97 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "brazil-ceara-plenary-extra",
+      "body_id": "brazil--assembleia-legislativa-do-ceara",
+      "url": "https://www.youtube.com/watch?v=dDa0DAsceik&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T22:52:21.054Z",
+      "status": 200,
+      "title": "80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026 - YouTube",
+      "excerpt": "CA\nSkip navigation\nSign in\n20:00 / 1:25:45\n80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026\nAuto-dubbed\nSistema ALECE de Comunicação\n6.9k subscribers\nSubscribe\n1\n266 views  Streamed 3 days ago\n80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026 \nmore\n\n",
+      "advertisement": false,
+      "first": {
+        "time": 1203.957298,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 5145.121,
+        "frames": 204,
+        "tracks": []
+      },
+      "later": {
+        "time": 1206.166541,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 5145.121,
+        "frames": 270,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-brazil-ceara-plenary-extra-chromium.png",
+      "visually_reviewed": true,
+      "visual_observation": "80th ordinary sitting 20 October 2026: Sérgio Aguiar at the lectern with an inset interpreter; Work/Administration/Public Service committee with table business. Committee title/description says 20 September while displayed upload timing suggests October; exact committee date remains unreconciled."
+    },
+    {
+      "key": "brazil-ceara-plenary-extra",
+      "body_id": "brazil--assembleia-legislativa-do-ceara",
+      "url": "https://www.youtube.com/watch?v=dDa0DAsceik&t=1200s",
+      "video": true,
+      "offset": 1200,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T22:52:34.265Z",
+      "status": 200,
+      "title": "80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026 - YouTube",
+      "excerpt": " CA\nSkip navigation\nSign in\n\n20:00 / 1:25:45\n80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026\nAuto-dubbed\nSistema ALECE de Comunicação\n6.9K subscribers\nSubscribe\n1\nShare\nSave\n266 views  Streamed 3 days ago\n80th Ordinary Session of the 4th Legislative Session of the 31st Legislature - 10/20/2026 \n...more\nComments\n    \n50:47\nNew\nA MALDIÇÃO DO INCUMBENTE APERTA O CERCO A LULA | WW\nCNN Brasil\n294K\nStreamed 20h ago\n\n56:46\nNew\nComo Lula se envolveu com o escândalo do Banco Master\nSpotniks\n719K\n1d ago\n\n18:24\nNew\nI Fact-Checked Every Stunt in the Tesla Roadster Reveal\nEngineering Explained\n768K\n8h ago\n\n27:27\nImpeachment de Moraes é prioridade, diz Nikolas Ferreira à CNN; veja a íntegra | HORA H\nCNN Brasil\n1.7M\n2w ago\n\n40:13\nNew\nWe Investigated the Tactics of Real Estate Influencers | Investigation\nRadio-Canada Info\n33K\n5h ago\n\n1:29:39\nNew\nLive: Congress promulgates the end of the 6x1 work schedule and retirement for health agents\nBohn Gass\n19K\nStreamed 7d ago\nAuto-dubbed\n\n58:58\nDr. Enéas Carneiro - Roda Viva - 1994 - Áudio HD\nEneasTV\n813K\n10y ago\n1:14:12\n64ª SESSÃO ORDINÁRIA DA 2ª SESSÃO LEGISLATIVA - 23ª LEGISLATURA.\nCâmara de Barbalha\n92\nStreamed 2w ago\n57:52\nNew\nMichigan U.S. Senate Final Debate: Mike Rogers vs Abdul El-Sayed\nWXYZ-TV Detroit | Channel 7\n854K\n1d ago\n2:31:55\n144ª Sessão Plenária Ordinária da 20ª Legislatura. Câmara Municipal de Itacoatiara.\nCâmara Municipal de Itacoatiara Amazonas\n129\nStreamed 9d ago\n22:26\nNew\n‘We have all th",
+      "advertisement": false,
+      "first": {
+        "time": 1203.603859318,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 5145.121,
+        "frames": 170,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 1205.814814443,
+        "width": 640,
+        "height": 360,
+        "ready": 4,
+        "duration": 5145.121,
+        "frames": 230,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "selected_recorded_proceedings_visually_confirmed",
+      "screenshot": "/tmp/continue-brazil-ceara-plenary-extra-webkit.png",
+      "visually_reviewed": true,
+      "visual_observation": "80th ordinary sitting 20 October 2026: Sérgio Aguiar at the lectern with an inset interpreter; Work/Administration/Public Service committee with table business. Committee title/description says 20 September while displayed upload timing suggests October; exact committee date remains unreconciled."
+    }
+  ]
+}

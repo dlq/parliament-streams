@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Own assembly website designates its recording provider. Plenary 13 October 2026 with Renato Antunes speaking at the lectern, and committee public hearing 23 September 2026 on regulation of behaviour analysis for people with ASD, João Paulo Costa speaking. Inset interpreters visible; hearing is distinct from plenary. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+    "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added. Reviewed Alepe terms address lawful use, intellectual-property responsibilities and personal-data protection; no blanket session-video licence or prior ordinary-link consent condition was identified.",
+    "Evidence: reports/discovery/2026-10-23-brazil-nine-publication-review.json"
+  ],
+  "channel": {
+    "id": "brazil-pernambuco-assembly-recordings",
+    "name": "Pernambuco Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Pernambuco",
+    "legislature": "Assembleia Legislativa do Estado de Pernambuco",
+    "external_ids": {
+      "wikidata_qid": "Q9633197",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q9633197",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact assembly Q9633197, revision 2492397088; Brazil P17 Q155 and jurisdiction P1001 Q40942 reviewed against its own institutional identity and designated recordings. Legacy HTTP references are retained in evidence; the current own site loads over normal HTTPS."
+      }
+    ],
+    "language": "Portuguese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.alepe.pe.gov.br/",
+    "provenance_note": "Own assembly website designates its recording provider. Plenary 13 October 2026 with Renato Antunes speaking at the lectern, and committee public hearing 23 September 2026 on regulation of behaviour analysis for people with ASD, João Paulo Costa speaking. Inset interpreters visible; hearing is distinct from plenary. Two selected recordings decode and advance in Chromium and WebKit; captured Chromium frames were visually reviewed, with additional WebKit visual review for the new Ceará and Paraíba samples. Muted samples do not certify audible quality, current live or complete room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "Inset interpreter visible in selected footage; language and source-wide coverage not independently established. Speaker/topic lower thirds and scrolling news tickers are not complete captions. Captions, audio description, audible quality and all spoken/auto-dubbed tracks remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.alepe.pe.gov.br/",
+        "method": "GET",
+        "kind": "official_institution_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official institutional viewing link only. No independent blanket audiovisual reuse grant was established from the reviewed source navigation. Personal-use permission remains pending; no provider embed, extracted media, rehosting or IPTV export is added. Reviewed Alepe terms address lawful use, intellectual-property responsibilities and personal-data protection; no blanket session-video licence or prior ordinary-link consent condition was identified.",
+      "evidence": [
+        "https://www.alepe.pe.gov.br/",
+        "https://www.alepe.pe.gov.br/termos-de-uso-e-politica-de-privacidade/"
+      ],
+      "recommendation": "Use the official institutional viewing route; independently confirm audiovisual reuse, current live and complete plenary/committee coverage."
+    }
+  }
+}

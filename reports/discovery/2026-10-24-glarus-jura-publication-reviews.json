@@ -1,0 +1,102 @@
+{
+  "research_date": "2026-10-24",
+  "decision": "publish_two_scoped_official_recording_links",
+  "records": [
+    {
+      "body_id": "switzerland--glarus",
+      "catalogue_id": "switzerland-glarus-recordings",
+      "institution": "Landrat des Kantons Glarus",
+      "region": "Glarus",
+      "primary_reference": "https://www.gl.ch/parlament/landrat.html/250/l/de",
+      "primary_provider_designation": [
+        {
+          "text": "Audiovisuelles Archiv",
+          "url": "https://gl.recapp.ch/"
+        },
+        {
+          "text": "Audiovisuelles Archiv",
+          "url": "https://gl.recapp.ch/"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "wikidata_qid": "Q1147334",
+      "identity_finding": "Exact named legislature, Switzerland P17Q39 and matching canton jurisdiction claims corroborated with the current primary institutional page and explicitly designated archive. Entity revision 2393769829.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 21 October 2026 parliamentary voting/chairing transition, with health-law agenda selected; initial vote display is not attributed to a particular bill. 26 August 2026 chair handling the bird-protection motion2025-73, a docket number rather than the meeting year. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "url": "https://gl.recapp.ch/shareparl?agendaItemUid=5953e664-1fbf-4155-89ae-90a95127ffff&scroll=true&autoplay=false",
+          "decision": "identified_recorded_legislative_proceedings",
+          "observation": "21 October 2026 parliamentary voting/chairing transition, with health-law agenda selected; initial vote display is not attributed to a particular bill.",
+          "selected_clip_decoded_in_both_engines": true,
+          "both_engine_captures_visually_reviewed": true
+        },
+        {
+          "url": "https://gl.recapp.ch/shareparl?agendaItemUid=2192f1f0-3869-452e-b3a2-35f4a2927b56&scroll=true&autoplay=false",
+          "decision": "identified_recorded_legislative_proceedings",
+          "observation": "26 August 2026 chair handling the bird-protection motion2025-73, a docket number rather than the meeting year.",
+          "selected_clip_decoded_in_both_engines": true,
+          "both_engine_captures_visually_reviewed": true
+        }
+      ],
+      "source_conditions": "Public official-institution designation establishes viewing, not a blanket independent audiovisual reuse grant. The Glarus provider privacy link returned404 and does not establish video permissions; Jura supplied speech text is not a media licence. Personal-use permission remains pending; no rehosting, provider embed or IPTV export. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "CH-GL",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--jura",
+      "catalogue_id": "switzerland-jura-recordings",
+      "institution": "Parlement de la République et Canton du Jura",
+      "region": "Jura",
+      "primary_reference": "https://www.jura.ch/PLT/",
+      "primary_provider_designation": [
+        {
+          "text": "Archives audiovisuelles du Parlement jurassien",
+          "url": "https://ju.recapp.ch/"
+        }
+      ],
+      "identity_report": "reports/discovery/2026-10-24-complete-candidate-claim-fetch.json",
+      "wikidata_qid": "Q2391710",
+      "identity_finding": "Exact named legislature, Switzerland P17Q39 and matching canton jurisdiction claims corroborated with the current primary institutional page and explicitly designated archive. Entity revision 2384538399.",
+      "confirmed_scope": "Official institution currently designates the viewing provider. 2 September 2026 chair introducing first-reading conciliation legislation, under the Jura parliamentary identity. 1 July 2026 chair handling third-reading political-rights and party-finance transparency legislation. Both selected recordings decoded in Chromium and WebKit and captured content was visually reviewed. This is selected recorded-business evidence, not all-service certification.",
+      "selected_recordings": [
+        {
+          "url": "https://ju.recapp.ch/shareparl?agendaItemUid=9ba4ecc3-4f33-4a79-9be1-6bd7c7ca3439&scroll=true&autoplay=false",
+          "decision": "identified_recorded_legislative_proceedings",
+          "observation": "2 September 2026 chair introducing first-reading conciliation legislation, under the Jura parliamentary identity.",
+          "selected_clip_decoded_in_both_engines": true,
+          "both_engine_captures_visually_reviewed": true
+        },
+        {
+          "url": "https://ju.recapp.ch/shareparl?agendaItemUid=faa36471-ffea-4030-9a5b-e230b6ef0dd2&scroll=true&autoplay=false",
+          "decision": "identified_recorded_legislative_proceedings",
+          "observation": "1 July 2026 chair handling third-reading political-rights and party-finance transparency legislation.",
+          "selected_clip_decoded_in_both_engines": true,
+          "both_engine_captures_visually_reviewed": true
+        }
+      ],
+      "source_conditions": "Public official-institution designation establishes viewing, not a blanket independent audiovisual reuse grant. The Glarus provider privacy link returned404 and does not establish video permissions; Jura supplied speech text is not a media licence. Personal-use permission remains pending; no rehosting, provider embed or IPTV export. Published as an official viewing link with personal-use permission pending; no blanket independent video licence, embedded player, extracted stream or IPTV eligibility is inferred.",
+      "remaining_gates": [
+        "current_live_and_complete_chamber_room_inventory_unverified",
+        "audible_quality_and_all_language_tracks_unverified",
+        "source_wide_captions_sign_variants_audio_description_unknown",
+        "independent_audiovisual_reuse_scope_unestablished",
+        "optional_flag_asset_unverified_neutral_legislature_mark_used"
+      ],
+      "map_feature": "CH-JU",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "not_claimed": [
+    "all_eligible_bodies_fully_validated",
+    "current_live_or_every_room",
+    "audible_track_or_accessibility_certification",
+    "independent_video_reuse_grant"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "research_date": "2026-10-23",
+  "source": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KOR/ADM2/geoBoundaries-KOR-ADM2.geojson",
+  "boundary_id": "KOR-ADM2-91817680",
+  "source_year": 2020,
+  "license": "CC BY 3.0",
+  "source_attribution": "geoBoundaries; citypopulation.de",
+  "modification": "Aggregate county geometries with membership checked against the council district lists; correct generalized-boundary representative-point errors for Dalseong and Uljin; move whole Gunwi-gun to Daegu under Act19155 effective1July2023. Daegu9 county/urban districts; Gyeongsangbuk22. This is a documented reconstruction, not a claim that2020 geometry is a new2026 official cadastral survey.",
+  "membership_sources": [
+    "https://council.daegu.go.kr/kr/cms/copyright",
+    "https://council.gb.go.kr/kr/cms/copyright",
+    "https://www.citypopulation.de/en/southkorea/admin/"
+  ],
+  "legal_source": "https://www.law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010202&lsId=014378&lsRvsGubun=all",
+  "source_limitations": {
+    "api_advertised_unit_count": 229,
+    "download_feature_count": 228,
+    "unassigned_elsewhere_in_country": [
+      "Yeongdo-gu",
+      "Yeonsu-gu"
+    ],
+    "interpretation": "Countrywide mismatch retained; target counts8+23 before transfer agree with reviewed administrative structure. Other regions not reconstructed or certified."
+  },
+  "checks": {
+    "valid_polygons": true,
+    "gunwi_in_daegu": true,
+    "gunwi_not_in_gyeongsangbuk": true,
+    "interior_overlap_area_square_degrees": 0.0,
+    "d3_winding": "Each component checked independently; rings oriented so spherical area is below a hemisphere. Initial unconditional reversal failed the automated browser check and was corrected before completion."
+  },
+  "county_membership": {
+    "KR-27": [
+      "Dong-gu",
+      "Suseong-gu",
+      "Buk-gu [North Distrikt]",
+      "Seo-gu [West District]",
+      "Jung-gu [Central District]",
+      "Nam-gu [South District]",
+      "Dalseo-gu",
+      "Dalseong-gun",
+      "Gunwi-gun"
+    ],
+    "KR-47": [
+      "Yeongdeok-gun",
+      "Pohang-si",
+      "Gyeongju-si",
+      "Yeongju-si",
+      "Bonghwa-gun",
+      "Yeongyang-gun",
+      "Mungyeong-si",
+      "Yecheon-gun",
+      "Andong-si",
+      "Cheongsong-gun",
+      "Yeongcheon-si",
+      "Uiseong-gun",
+      "Sangju-si",
+      "Gumi-si",
+      "Gyeongsan-si",
+      "Cheongdo-gun",
+      "Chilgok-gun",
+      "Goryeong-gun",
+      "Seongju-gun",
+      "Gimcheon-si",
+      "Ulleung-gun",
+      "Uljin-gun"
+    ]
+  }
+}

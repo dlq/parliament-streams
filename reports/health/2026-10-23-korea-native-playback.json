@@ -1,0 +1,104 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Normal public archive navigation and visible agenda-item clicks. No source media files downloaded, rights still pending; frame progress requires manual content review.",
+  "results": [
+    {
+      "id": "south-korea--daejeon",
+      "url": "https://council.daejeon.go.kr/svc/cms/cast/Plenarysession.do",
+      "target": "김영미 의원, 대전시 재정구조 개선",
+      "checked_at": "2026-10-23T19:55:17.968Z",
+      "proceedings_verified": false,
+      "status": 200,
+      "title": "전자회의록:대전광역시의회",
+      "excerpt": "본문으로 바로가기\nGNB메뉴 바로가기\n대전광역시의회\n의원정보\n상임위원회\n청소년의회\n회의록\n홍보관\nLANGUAGE\n전자회의록\n영상회의록\n의안정보\n영상회의록\n본회의\n상임위원회\n특별위원회\n시정질문\n5분자유발언\n영상검색\n\n > 영상회의록 > 본회의\n\n본회의\n제10대\n제9대\n제8대\n제7대\n제6대\n제5대\n제4대\n\n01. 회수/차수 선택\n\n제299회[정례회](2026.09.01~2026.09.21)\n1차(2026.09.01 화요일)\n2차(2026.09.02 수요일)\n3차(2026.09.21 월요일)\n제298회[임시회](2026.08.13~2026.08.13)\n제297회[임시회](2026.07.07~2026.07.24)\n1\n\n02. 안건명 선택\n\n제299회 [정례회] 제1차 [02:28:58]\n\n제1차 본회의 개의 선포\n고제열 의원, 대전광역시장 교육감 및 관계공무원 출석요구안\n서다운 의원, 희귀질환 아동의 권리보장을 위한 국가 지원 체계 강화 촉구 건의안\n김영미 의원, 대전시 재정구조 개선 및 향후 재원 조달 방안 등\n구본환 의원, 대전월드컵경기장 유휴공간의 시민 생활체육 공간으로 개선 제안 등\n정근모 의원 본도심-신도심 간 균형발전 방안 등\n최대성 의원, 책임과 균형발전, 시민이 체감하는 예산 제도 운영\n최지연 의원, 갑천생태호수공원 야간 안전강화를 위한 자율주행 순찰로봇 도입 촉구\n\n(35242) 대전광역시 서구 둔산로 100\n\n© 2023 DAEJEON METROPOLITAN COUNCIL",
+      "error": "TimeoutError: locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('김영미 의원, 대전시 재정구조 개선').first()\u001b[22m\n\u001b[2m    - locator resolved to <a target=\"_blank\" onclick=\"playerdo(this.href); return false;\" title=\"김영미 의원, 대전시 재정구조 개선 및 향후 재원 조달 방안 등, 새창으로 열립니다.\" href=\"http://webcast.daejeon.go.kr/caster/player/vodplayer.xdo?uid=2904&startPS=2077\">김영미 의원, 대전시 재정구조 개선 및 향후 재원 조달 방안 등</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    7 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+      "outcome": "inspection_error"
+    },
+    {
+      "id": "south-korea--chungcheongnam",
+      "url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+      "target": "제10항 2026년도 제2회 충청남도 추가경정예산안 제안설명",
+      "checked_at": "2026-10-23T19:55:25.950Z",
+      "proceedings_verified": false,
+      "status": 200,
+      "title": "본회의 > 다시보기 > 인터넷방송 > 충청남도의회",
+      "excerpt": "\n의회소개\n의원광장\n의정활동\n의회소식\n회의록\n인터넷방송\n참여마당\n정보공개\n누리집안내\n인터넷방송\n생방송\n다시보기\n본회의\n상임위원회\n특별위원회\n행정사무감사\n행정사무조사\n의정동영상\n홈으로\n인터넷방송\n다시보기\n본회의\nSNS 공유 URL 복사\n본회의\n회의 동영상을 임의로 저장·편집·배포할 경우 저작권법 제124조 및 제136조에 의거하여 처벌 받을 수 있음을 유념하시기 바랍니다.\n대수선택\n\n대수구분\n\n제13대\n제12대\n제11대\n제10대\n제9대\n제8대\n제7대\n제6대\n제5대\n제4대\n제3대\n제2대\n제1대\n\n \n\n회수/차수 선택\n 371회[임시회](2026.09.01 ~ 2026.09.15)\n 제1차(2026.09.01 화요일)       바로보기\n 제2차(2026.09.02 수요일)       바로보기\n 제3차(2026.09.03 목요일)       바로보기\n 제4차(2026.09.15 화요일)       바로보기\n 370회[임시회](2026.07.14 ~ 2026.07.29)\n 369회[임시회](2026.07.01 ~ 2026.07.03)\n1\n안건명 선택\n\n제371회 [임시회] 제1차\n\n개회\n개회사\n개의\n의회사무처 신임간부 소개\n충청남도교육청 신임간부 소개\n제1항 제371회 충청남도의회 임시회 회기결정의 건\n제2항 제371회 충청남도의회 임시회 회의록 서명의원 선출의 건\n제3항 도지사·교육감 및 관계공무원 출석 요구의 건\n제4항 재단법인 충남연구원 원장 후보자 인사청문특별위원회 구성 결의안\n제5항 재단법인 충남테크노파크 원장 후보자 인사청문특별위원회 구성 결의안\n제6항 충남신용보증재단 이사장 후보자 인사청문특별위원회 구성 결의안\n제4항 재단법인 충남연구원 원장 후보자 인사청문특별위원회 구성 결의안\n제5항 재단법인 충남테크노파크 원장 후보자 인사청문특별위원회 구성 결의안\n제6항 충남신용보증재단 이사장 후보자 인사청문특별위원회 구성 결의안\n제7항 재단법인 충남연구원 원장 후보자 인사청문특별위원회 위원 선임의 건\n제8항 재단법인 충남테크노파크 원장 후보자 인사청문특별위원회 위원 선임의 건\n제9항 충남신용보증재단 이사장 후보자 인사청문특별위원회 위원 선임의 건\n충청남도 신임간부 소개\n제10항 2026년도 제2회 충청남도 추가경정예산안 제안설명\n김영춘 의원 5분 발언\n- 충남 스마트팜 정책, 내실 있는 점검과 대책이 필요하다.\n김은나 의원 5분 발언\n- 아이들의 안전지대, 충남에는 왜 ‘아동보호구역’이 없습니까?\n노한섭 의원 5분 발언\n- 송전탑 위에 송전탑, 충남은 더 이상 감당할 수 없다!\n정병인 의원 5분 발언\n- 충남안전교육센터 설립을 제안하며\n박병훈 의원 5분 발언\n- 지방소멸의 새로운 해법, 충남형 은퇴자마을을 준비해야 합니다.\n정근수 의원 5분 발언\n- 아이들의 등굣길은 교육복지입니다.\n박유경 의원 5분 발언\n- 대한민국 에너지 정책의 새로운 표준, 충남이 만들어야 한다.\n장재석 의원 5분 발언\n- 기억에서 치유까지, 충남형 석면피해 통합관리 지원체계 구축이 필요합니다.\n장승재 의원 5분 발언\n- 충남도립박물관의 필요성\n이지윤 의원 5분 발언\n- 충남 어린이집 보육인력 공백 해소를 위한 제언\n설미경 의원 5분 발언\n- 2029 전국체전, 대회 그 이후를 준비해야 합니다.\n이상근 의원 5분 발언\n- 추경 예산 20% 의무절감, 재정혁신인가 행정편의인가\n강종국 의원 5분 발언\n- 소나무재선충병 대확산 위기, 골든타임을 지키기 위한 충남도 차원의 총력 대응 촉구\n홍기후 의원 5분 발언\n- 정의로운 전환 지원센터의 설립 필요성에 대한 제언\n민병희 의원 5분 발언\n- 폭염과 네팔 재난이 묻고 있습니다 “충남은 기후재난에 준비되어 있는가?”\n박상선 의원 5분 발언\n- 2027 세계청년대회를 위한 준비가 필요하다.\n산회\n만족도 조사 \n\n이 페이지에서 제공하는 정보에 대하여 만족하십니까?\n\n \n만족도 조사\n 매우만족  만족  보통  불만족  매우불만족\n등록\n자료관리부서 부서명 : 홍보담당관실 전화 : 041-635-5389\n중앙정부기관\n전국 시·도의회\n충청남도 시·군의회\n충청남도 시·군\n충청남도교육청·교육지원청\nTOP\n개인정보처리방침 전화번호안내 사이트맵 청사위치 인트라넷\n[ 32416 ] 충청남도 예산군 삽교읍 도청대로 600(의회동) TEL. 041) 635-5053 / FAX. FAX. 041)635-5282\n\nCOPYRIGHT © 2019 CHUNGCHEONGNAM-DO COUNCIL. ALL RIGHTS RESERVED.\n\n방문자통계\n\n오늘 : 1,448\n이번달 : 126,895",
+      "pages": [
+        "https://council.chungnam.go.kr/kr/cast/plenary.do",
+        "https://council.chungnam.go.kr/viewer/video/minutes/3956.do?pos=1812"
+      ],
+      "first": [
+        {
+          "tag": "VIDEO",
+          "time": 0.008578,
+          "width": 1920,
+          "ready": 4,
+          "duration": 7829.788633,
+          "frames": 4
+        }
+      ],
+      "later": [
+        {
+          "tag": "VIDEO",
+          "time": 1813.034085,
+          "width": 1920,
+          "ready": 4,
+          "duration": 7829.788633,
+          "frames": 52
+        }
+      ],
+      "advancing_media_signal": true,
+      "outcome": "advancing_media_requires_content_review",
+      "screenshot": "/tmp/korea-native-south-korea--chungcheongnam.png"
+    },
+    {
+      "id": "south-korea--sejong",
+      "url": "https://council.sejong.go.kr/ibs/plenarysession.do",
+      "target": "긴급현안질문(김현미 의원)",
+      "checked_at": "2026-10-23T19:55:40.611Z",
+      "proceedings_verified": false,
+      "status": 200,
+      "title": "본회의 : 세종특별자치시의회",
+      "excerpt": "본문으로 바로가기\nGNB메뉴 바로가기\n\n세종특별자치시의회\n의원누리집\n홍보관\n의정모니터\nLANGUAGE\n시청\n감사위원회\n의회소개\n의원광장\n의정활동\n시민참여\n소통마당\n의회소식\n회의록\n의정활동 정보공개\n\n회의록\n의회소개\n의원광장\n의정활동\n시민참여\n소통마당\n의회소식\n회의록\n의정활동 정보공개\n이용안내\n영상회의록\n전자회의록\n영상회의록\n생방송\n본회의\n본회의\n의회운영위원회\n행정복지위원회\n경제문화위원회\n도시환경위원회\n교육안전위원회\n예산결산특별위원회\n인사청문특별위원회\n5분발언\n시정질문\n본회의\n의회운영\n행정복지\n경제문화\n도시환경\n교육안전\n예산결산\n인사청문\n5분발언\n시정질문\n\n홈 > 회의록 > 영상회의록 > 본회의\n\n본회의\n제5대\n제4대\n제3대\n제2대\n\n01. 회수/차수 선택\n\n제109회[정례회](2026.09.29~2026.10.26)\n1차(2026.09.29 화요일)\n2차(2026.10.08 목요일)\n제108회[임시회](2026.07.15~2026.07.30)\n제107회[임시회](2026.07.01~2026.07.03)\n  1  \n\n02. 안건명 선택\n\n제109회 [정례회] 제1차 [03:11:34]\n\n전체영상보기\n개회식\n개회사\n간부 공무원 소개\n의사보고(의사입법담당관)\n5분 자유발언(강해정 의원)_청소년 도박 중독, 개인과 가정만의 문제가 아니다 -예방에서 회복까지, 세종형 청소년 도박 중독 안전망\n5분 자유발언(정연희 의원)_조치원 제2청사, 지역균형발전의 새로운 출발\n5분 자유발언(김동호 의원)_자족기능의 역설, 집현동은 기능을 상실했다 -세종테크밸리 규제 개선 및 생활권 정상화 촉구-\n5분 자유발언(곽효정 의원)_AI가 답을 만드는 시대, 교육은 판단하는 힘을 길러야 한다\n5분 자유발언(유인호 의원)_글로벌 진로탐험대, 꼭 해야 합니까? -교육적 효과와 재정의 지속가능성에 대한 철저한 검증을 촉구하며-\n5분 자유발언(김창연 의원)_시민은 안전하게, 보행은 편안하게, 세종은 행정수도 답게!\n1. 제109회 세종특별자치시의회 정례회 회기 결정의 건\n2. 제109회 세종특별자치시의회 정례회 회의록 서명의원 선임의 건\n3. 2026년도 제2회 세종특별자치시교육비특별회계 세입·세출 추가경정예산안 제출에 따른 시정연설과 제안설명의 건\n4. 세종 교육의 방향과 과제에 관한 긴급현안질문\n- 긴급현안질문(김현미 의원)_공약 이행이 교육정책의 목표가 되어서는 안됩니다\n5. 글로벌 진로탐험대 사업의 절차 확인과 그 실효성에 관한 긴급현안질문\n- 긴급현안질문(노종용 의원)_글로벌 진로탐험대, 출발보다 먼저 세워야 할 진로교육의 기준에 대하여\n6. 금강수목원 재개장 협약에서 미흡했던 소통과 협치에 관한 긴급현안질문\n- 긴급현안질문(박란희 의원)_금강수목원 재개장, 절차적 정당성과 지속 가능한 미래\n7. (재)세종시문화관광재단 임원추천위원회 위원 추천의 건\n8. 휴회의 건(2026.9.30.~10.7.\n8일간)\n산회\n\n정부부처\n광역시도\n광역시도의회\n세종특별자치시청 누리집\n개인정보처리방침\n영상정보처리기기방침\n위치안내\n(우)30151 세종특별자치시 한누리대로 2120 (보람동)TEL 044-300-7000 (평일 09:00~18:00 / 점심시간:12:00~13:00)FAX 044-300-7219\n\n© 2022 SEJONG CITY COUNCIL",
+      "error": "TimeoutError: locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('긴급현안질문(김현미 의원)').first()\u001b[22m\n\u001b[2m    - locator resolved to <a target=\"_blank\" onclick=\"playerdo(this.href); return false;\" title=\"- 긴급현안질문(김현미 의원)_공약 이행이 교육정책의 목표가 되어서는 안됩니다, 새창으로 열립니다.\" href=\"https://counciltv.sejong.go.kr/caster/player/player2.xdo?uid=1555&startPS=3881\">- 긴급현안질문(김현미 의원)_공약 이행이 교육정책의 목표가 되어서는 안됩니다</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    7 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+      "outcome": "inspection_error"
+    },
+    {
+      "id": "south-korea--incheon",
+      "url": "https://record.icouncil.go.kr/vod/index.do",
+      "target": "제313회 제5차 본회의",
+      "checked_at": "2026-10-23T19:55:48.368Z",
+      "proceedings_verified": false,
+      "status": 200,
+      "title": "인천광역시의회 영상회의록",
+      "excerpt": "의회홈페이지\n전자회의록\n의안정보\n최근 영상회의록\n회의별검색\n의원별검색\n시정질문\n5분자유발언\n상세검색\n시민의 뜻을 충실히 대변하는 통로\n인천광역시의회 영상회의록\n여러분의 홈페이지 방문을 진심으로 환영합니다.\n영상회의록은 회의내용을 영상으로 서비스를\n제공합니다. 마음껏 감상하시기 바랍니다.\n생방송 일정\n\n 2026년 10월 \n\n일\n월\n화\n수\n목\n금\n토\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n생방송 현황\n2026-10-24\n\n현재 진행중인 생방송이 없습니다.\n\n최근영상회의록\n제313회 제5차 본회의\n2026-09-18\n제313회 제2차 예산결산특별위원회\n2026-09-16\n제313회 제1차 예산결산특별위원회\n2026-09-15\n제313회 제4차 행정안전위원회\n2026-09-14\n제313회 제4차 본회의\n2026-09-11\n영상검색\n대수\n10대\n9대\n8대\n7대\n6대\n5대\n4대\n3대\n회의\n전체회의\n본회의\n상임위원회\n예결산특별위원회\n특별위원회\n행정사무감사\n행정사무조사\n검색어\n본회의\n제313회 제5차 본회의\n2026-09-18\n제313회 제4차 본회의\n2026-09-11\n제313회 제3차 본회의\n2026-09-10\n제313회 제2차 본회의\n2026-09-09\n제313회 제1차 본회의\n2026-09-01\n상임위원회\n제313회 제4차 행정안전위원회\n2026-09-14\n제313회 제1차 의회운영위원회\n2026-09-11\n제313회 제3차 문화복지위원회\n2026-09-08\n제313회 제4차 환경교통위원회\n2026-09-08\n제313회 제4차 도시건설위원회\n2026-09-08\n[21554] 인천광역시 남동구 정각로 35 (구월동) TEL:(032) 440-6000 | (평일 09:00 ~ 18:00)\nCopyright ⓒ all rights reserved.\n전국 시도의회\n서울특별시의회\n부산광역시의회\n대구광역시의회\n인천광역시의회\n대전광역시의회\n울산광역시의회\n전남광주통합특별시의회\n경기도의회\n경상북도의회\n경상남도의회\n강원특별자치도의회\n충청북도의회\n충청남도의회\n전북특별자치도의회\n세종특별자치시의회\n제주특별자치도의회",
+      "pages": [
+        "https://record.icouncil.go.kr/vod/index.do",
+        "https://record.icouncil.go.kr/vod/viewer.do?cvUid=3881&seek=undefined"
+      ],
+      "first": [
+        {
+          "tag": "VIDEO",
+          "time": 0,
+          "width": 0,
+          "ready": 0,
+          "duration": null,
+          "frames": 0
+        }
+      ],
+      "later": [
+        {
+          "tag": "VIDEO",
+          "time": 0,
+          "width": 0,
+          "ready": 0,
+          "duration": null,
+          "frames": 0
+        }
+      ],
+      "advancing_media_signal": false,
+      "outcome": "no_progress_observed",
+      "screenshot": "/tmp/korea-native-south-korea--incheon.png"
+    }
+  ]
+}

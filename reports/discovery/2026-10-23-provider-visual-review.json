@@ -1,0 +1,3126 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "provider-001-0",
+      "body_ids": [
+        "colombia--caldas"
+      ],
+      "url": "https://www.youtube.com/watch?v=hdgCfvULVc4&t=1200s",
+      "title": "October 22, 2026 - Plenary Session - YouTube",
+      "decision": "identified_proceedings_content_visible",
+      "note": "Caldas assembly branding, distinct 22/21 October 2026 on-screen dates and named territorial/metropolitan officials speaking at chamber microphones are visible.",
+      "sample_time_seconds": 1205.422549,
+      "screenshot": "/tmp/provider-sample-provider-001-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-001-1",
+      "body_ids": [
+        "colombia--caldas"
+      ],
+      "url": "https://www.youtube.com/watch?v=ktFTDc_OwsE&t=1200s",
+      "title": "21 de octubre 2026 - Sesi\u00f3n Plenaria - YouTube",
+      "decision": "identified_proceedings_content_visible",
+      "note": "Caldas assembly branding, distinct 22/21 October 2026 on-screen dates and named territorial/metropolitan officials speaking at chamber microphones are visible.",
+      "sample_time_seconds": 1205.338675,
+      "screenshot": "/tmp/provider-sample-provider-001-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-002-0",
+      "body_ids": [
+        "philippines--bangsamoro"
+      ],
+      "url": "https://www.youtube.com/watch?v=JqBoKPiXGHo&t=1200s",
+      "title": "Second BTA Parliament holds Session No. 126 (Resumption) of its fourth regular session. - YouTube",
+      "decision": "identified_session_presentation_visible",
+      "note": "Bangsamoro Parliament fourth-regular-session caption and a member speaking with a substantive photo presentation are visible. Existing source-linking permission and boundary holds remain.",
+      "sample_time_seconds": 1205.291953,
+      "screenshot": "/tmp/provider-sample-provider-002-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-002-1",
+      "body_ids": [
+        "philippines--bangsamoro"
+      ],
+      "url": "https://www.youtube.com/watch?v=JLfyMQyMA-Q&t=1200s",
+      "title": "Second BTA Parliament holds Session No. 126 (Resumption) of its fourth regular session. - YouTube",
+      "decision": "session_presentation_slide_visible",
+      "note": "A thank-you slide appears within the captioned Bangsamoro fourth regular session, on a different dated continuation; no opening slate. This frame alone does not identify a current speaker.",
+      "sample_time_seconds": 1205.335235,
+      "screenshot": "/tmp/provider-sample-provider-002-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-003-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-mato-grosso-do-sul"
+      ],
+      "url": "https://www.youtube.com/watch?v=CvJ6fBybIhQ&t=1200s",
+      "title": "Plenary Session - 10/21/2026 - YouTube",
+      "decision": "identified_plenary_and_committee_visible",
+      "note": "Mato Grosso do Sul plenary speaker and a separate Constitution/Justice/Redaction committee chair are visible, with institutional branding and 21 October 2026 labels. An interpreter appears in the plenary sample; source-wide coverage is unverified.",
+      "sample_time_seconds": 1205.366142,
+      "screenshot": "/tmp/provider-sample-provider-003-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-003-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-mato-grosso-do-sul"
+      ],
+      "url": "https://www.youtube.com/watch?v=cb_h4CkCY7o&t=966s",
+      "title": "Constitution, Justice and Drafting Committee Meeting - 10/21/2026 - YouTube",
+      "decision": "identified_plenary_and_committee_visible",
+      "note": "Mato Grosso do Sul plenary speaker and a separate Constitution/Justice/Redaction committee chair are visible, with institutional branding and 21 October 2026 labels. An interpreter appears in the plenary sample; source-wide coverage is unverified.",
+      "sample_time_seconds": 971.239839,
+      "screenshot": "/tmp/provider-sample-provider-003-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-004-0",
+      "body_ids": [
+        "indonesia--kalimantan-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=OBqadeFriww&t=1200s",
+      "title": "RAPAT PARIPURNA KE - 9 MASA PERSIDANGAN I TAHUN SIDANG 2026 - YouTube",
+      "decision": "session_title_slate_requires_later_sample",
+      "note": "Central Kalimantan plenary meeting 9/8 title/agenda slates remain on screen at twenty minutes. Moving playback is not yet evidence of deliberative business.",
+      "sample_time_seconds": 1205.293996,
+      "screenshot": "/tmp/provider-sample-provider-004-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-004-1",
+      "body_ids": [
+        "indonesia--kalimantan-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=CRz14VG4nAM&t=1200s",
+      "title": "8TH PLENARY MEETING, FIRST SESSION PERIOD, 2026 LEGISLATIVE YEAR - YouTube",
+      "decision": "session_title_slate_requires_later_sample",
+      "note": "Central Kalimantan plenary meeting 9/8 title/agenda slates remain on screen at twenty minutes. Moving playback is not yet evidence of deliberative business.",
+      "sample_time_seconds": 1205.317175,
+      "screenshot": "/tmp/provider-sample-provider-004-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-010-0",
+      "body_ids": [
+        "argentina--buenos-aires"
+      ],
+      "url": "https://www.youtube.com/watch?v=KypeCfrDA_I&t=1200s",
+      "title": "SESI\u00d3N ORDINARIA - 20 DE OCTUBRE DE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+      "decision": "opening_branding_requires_later_sample",
+      "note": "Buenos Aires provincial Deputies institutional/ordinary-session slates remain at twenty minutes; later business needs a separate sample.",
+      "sample_time_seconds": 1205.29841,
+      "screenshot": "/tmp/provider-sample-provider-010-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-010-1",
+      "body_ids": [
+        "argentina--buenos-aires"
+      ],
+      "url": "https://www.youtube.com/watch?v=i6VAxadbajM&t=1200s",
+      "title": "SESI\u00d3N ORDINARIA - 29 DE SEPTIEMBRE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+      "decision": "opening_branding_requires_later_sample",
+      "note": "Buenos Aires provincial Deputies institutional/ordinary-session slates remain at twenty minutes; later business needs a separate sample.",
+      "sample_time_seconds": 1205.339659,
+      "screenshot": "/tmp/provider-sample-provider-010-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-011-0",
+      "body_ids": [
+        "argentina--formosa"
+      ],
+      "url": "https://www.youtube.com/watch?v=_4eB9f2_jiY&t=1200s",
+      "title": "APERTURA DEL 53\u00b0 PERIODO DE SESIONES ORDINARIAS DE LA C\u00c1MARA DE DIPUTADOS DE FORMOSA - YouTube",
+      "decision": "constituent_convention_not_ordinary_chamber",
+      "note": "The Formosa samples show oath-taking/constitutional-convention branding and a constituent speaker. Do not substitute these for ordinary provincial Chamber of Deputies proceedings without separate identity/scope review.",
+      "sample_time_seconds": 1205.276209,
+      "screenshot": "/tmp/provider-sample-provider-011-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-011-1",
+      "body_ids": [
+        "argentina--formosa"
+      ],
+      "url": "https://www.youtube.com/watch?v=gmVoadHz-ik&t=1200s",
+      "title": "HONORABLE CONVENCI\u00d3N CONSTITUYENTE D\u00c9CIMA CUARTA SESI\u00d3N PLENARIA - YouTube",
+      "decision": "constituent_convention_not_ordinary_chamber",
+      "note": "The Formosa samples show oath-taking/constitutional-convention branding and a constituent speaker. Do not substitute these for ordinary provincial Chamber of Deputies proceedings without separate identity/scope review.",
+      "sample_time_seconds": 1205.354854,
+      "screenshot": "/tmp/provider-sample-provider-011-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-012-0",
+      "body_ids": [
+        "argentina--corrientes"
+      ],
+      "url": "https://www.youtube.com/watch?v=yqp13Se4dvA&t=1200s",
+      "title": "17\u00aa Sesi\u00f3n Ordinaria - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Corrientes Deputies: named speakers Cesar Daniel Lezcano and Norberto Ast, ordinary sittings 17 and 16; chamber branding and interpreter inset visible.",
+      "sample_time_seconds": 1205.2944,
+      "screenshot": "/tmp/provider-sample-provider-012-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-012-1",
+      "body_ids": [
+        "argentina--corrientes"
+      ],
+      "url": "https://www.youtube.com/watch?v=kZeKcl8u5wQ&t=1200s",
+      "title": "16th Ordinary Session - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Corrientes Deputies: named speakers Cesar Daniel Lezcano and Norberto Ast, ordinary sittings 17 and 16; chamber branding and interpreter inset visible.",
+      "sample_time_seconds": 1205.317604,
+      "screenshot": "/tmp/provider-sample-provider-012-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-013-0",
+      "body_ids": [
+        "argentina--catamarca"
+      ],
+      "url": "https://www.youtube.com/watch?v=378CywsDD5s&t=1200s",
+      "title": "EN VIVO: VIG\u00c9SIMA TERCERA SESI\u00d3N ORDINARIA 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Catamarca Senate chair at microphone, 23rd ordinary sitting 2026, chamber and Senate branding visible.",
+      "sample_time_seconds": 1205.278298,
+      "screenshot": "/tmp/provider-sample-provider-013-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-013-1",
+      "body_ids": [
+        "argentina--catamarca"
+      ],
+      "url": "https://www.youtube.com/watch?v=s3Gaiz6rumI&t=1200s",
+      "title": "EN VIVO: VIG\u00c9SIMA SEGUNDA SESI\u00d3N ORDINARIA 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Star-field film over ordinary-sitting title; no proceedings in selected sample.",
+      "sample_time_seconds": 1205.338088,
+      "screenshot": "/tmp/provider-sample-provider-013-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-015-0",
+      "body_ids": [
+        "argentina--la-rioja"
+      ],
+      "url": "https://www.youtube.com/watch?v=K0eEbHhFkoc&t=1200s",
+      "title": "12\u00b0 Sesi\u00f3n Ordinaria del 141\u00b0 Per\u00edodo Legislativa - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "La Rioja ordinary sittings 12 and 11, chamber and members visible but standing ceremonial/opening moment; substantive debate not established by these stills.",
+      "sample_time_seconds": 1205.293633,
+      "screenshot": "/tmp/provider-sample-provider-015-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-015-1",
+      "body_ids": [
+        "argentina--la-rioja"
+      ],
+      "url": "https://www.youtube.com/watch?v=Bu-_G5TwX9A&t=1200s",
+      "title": "11th Ordinary Session of the 141st Legislative Period - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "La Rioja ordinary sittings 12 and 11, chamber and members visible but standing ceremonial/opening moment; substantive debate not established by these stills.",
+      "sample_time_seconds": 1205.314763,
+      "screenshot": "/tmp/provider-sample-provider-015-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-017-0",
+      "body_ids": [
+        "argentina--ciudad-autonoma-de-buenos-aires"
+      ],
+      "url": "https://www.youtube.com/watch?v=QJG5YeeSKlQ&t=652s",
+      "title": "Deputies - Budget and Treasury, Financial Administration, and Tax Policy Committee - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Buenos Aires City budget/finance and joint economic/constitutional/budget committees; participants at microphones and matching committee captions.",
+      "sample_time_seconds": 657.273037,
+      "screenshot": "/tmp/provider-sample-provider-017-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-017-1",
+      "body_ids": [
+        "argentina--ciudad-autonoma-de-buenos-aires"
+      ],
+      "url": "https://www.youtube.com/watch?v=YDb7CUrwSbU&t=442s",
+      "title": "Members of Parliament - Economic Development Committee together with Constitutional Affairs and B... - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Buenos Aires City budget/finance and joint economic/constitutional/budget committees; participants at microphones and matching committee captions.",
+      "sample_time_seconds": 447.338355,
+      "screenshot": "/tmp/provider-sample-provider-017-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-018-0",
+      "body_ids": [
+        "argentina--mendoza"
+      ],
+      "url": "https://www.youtube.com/watch?v=1NXePUuGqUM&t=1200s",
+      "title": "Mi\u00e9rcoles de Sesi\u00f3n 21 de octubre 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Mendoza Deputies logo animation, no substantive proceedings at this point.",
+      "sample_time_seconds": 1205.275653,
+      "screenshot": "/tmp/provider-sample-provider-018-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-018-1",
+      "body_ids": [
+        "argentina--mendoza"
+      ],
+      "url": "https://www.youtube.com/watch?v=fx0anTo7X3U&t=1200s",
+      "title": "Miercoles de Sesi\u00f3n - 14 de octubre 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Mendoza member Beatriz Martinez at microphone, UCR caption, session branding.",
+      "sample_time_seconds": 1205.274904,
+      "screenshot": "/tmp/provider-sample-provider-018-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-020-0",
+      "body_ids": [
+        "argentina--rio-negro"
+      ],
+      "url": "https://www.youtube.com/watch?v=d7fjEVaZ10Y&t=1200s",
+      "title": "Sesi\u00f3n Legislatura de R\u00edo Negro 24-09-2026 - YouTube",
+      "decision": "chamber_ceremony_requires_later_business_sample",
+      "note": "Rio Negro chamber presentation/interview with award recipient, not substantive legislative business in selected frames.",
+      "sample_time_seconds": 1205.250033,
+      "screenshot": "/tmp/provider-sample-provider-020-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-020-1",
+      "body_ids": [
+        "argentina--rio-negro"
+      ],
+      "url": "https://www.youtube.com/watch?v=8zoFBRFN3_4&t=1200s",
+      "title": "Sesi\u00f3n Legislatura de R\u00edo Negro 03-09-2026 - YouTube",
+      "decision": "chamber_ceremony_requires_later_business_sample",
+      "note": "Rio Negro chamber presentation/interview with award recipient, not substantive legislative business in selected frames.",
+      "sample_time_seconds": 1205.336242,
+      "screenshot": "/tmp/provider-sample-provider-020-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-021-0",
+      "body_ids": [
+        "argentina--san-juan"
+      ],
+      "url": "https://www.youtube.com/watch?v=52fZMVLOukI&t=1200s",
+      "title": "11\u00aa Sesi\u00f3n Per\u00edodo Ordinaria - 22 de Octubre 2026. - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "San Juan 11th ordinary sitting 22 October 2026, members milling/standing; later business sample needed.",
+      "sample_time_seconds": 1205.273499,
+      "screenshot": "/tmp/provider-sample-provider-021-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-021-1",
+      "body_ids": [
+        "argentina--san-juan"
+      ],
+      "url": "https://www.youtube.com/watch?v=QwL776NjkwM&t=1200s",
+      "title": "10\u00aa Sesi\u00f3n Per\u00edodo Ordinaria - 24 de septiembre 2026. - YouTube",
+      "decision": "identified_proceedings",
+      "note": "San Juan 10th ordinary sitting 24 September 2026, member reading into desk microphone, legislature branding.",
+      "sample_time_seconds": 1205.255795,
+      "screenshot": "/tmp/provider-sample-provider-021-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-023-0",
+      "body_ids": [
+        "argentina--salta"
+      ],
+      "url": "https://www.youtube.com/watch?v=IiJmzg9bKak&t=1200s",
+      "title": "VIVO - 25\u00b0 SESI\u00d3N ORDINARIA - 128\u00ba per\u00edodo de sesiones ordinarias - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Salta Deputies Geronimo Arjona at chamber microphone, named caption and legislature branding in both samples.",
+      "sample_time_seconds": 1205.29099,
+      "screenshot": "/tmp/provider-sample-provider-023-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-023-1",
+      "body_ids": [
+        "argentina--salta"
+      ],
+      "url": "https://www.youtube.com/watch?v=AGTsMml3AWs&t=1200s",
+      "title": "VIVO - 24\u00b0 SESI\u00d3N ORDINARIA - 128\u00ba per\u00edodo de sesiones ordinarias - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Salta Deputies Geronimo Arjona at chamber microphone, named caption and legislature branding in both samples.",
+      "sample_time_seconds": 1205.238434,
+      "screenshot": "/tmp/provider-sample-provider-023-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-024-0",
+      "body_ids": [
+        "argentina--santa-cruz"
+      ],
+      "url": "https://www.youtube.com/watch?v=3T02-A9M1ns&t=1200s",
+      "title": "14\u00b0 Sesi\u00f3n Ordinaria | 53\u00b0 Periodo Legislativo - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Santa Cruz ordinary-sitting/committee title animation only at sampled point.",
+      "sample_time_seconds": 1205.292925,
+      "screenshot": "/tmp/provider-sample-provider-024-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-024-1",
+      "body_ids": [
+        "argentina--santa-cruz"
+      ],
+      "url": "https://www.youtube.com/watch?v=RBUt-d6h7Mw&t=1200s",
+      "title": "STANDING COMMITTEES | BUDGET AND FINANCE - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Santa Cruz ordinary-sitting/committee title animation only at sampled point.",
+      "sample_time_seconds": 1205.243268,
+      "screenshot": "/tmp/provider-sample-provider-024-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-026-0",
+      "body_ids": [
+        "argentina--tucuman"
+      ],
+      "url": "https://www.youtube.com/watch?v=6sOY3DJglv0&t=1200s",
+      "title": "SESION ORDINARIA 15-10-2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tucuman ordinary sitting, chair and members at legislative desks, session caption.",
+      "sample_time_seconds": 1205.250875,
+      "screenshot": "/tmp/provider-sample-provider-026-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-026-1",
+      "body_ids": [
+        "argentina--tucuman"
+      ],
+      "url": "https://www.youtube.com/watch?v=Xfmo-mYVXeM&t=1200s",
+      "title": "SESION ESPECIAL ORDINARIA 30-09-2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Tucuman General Legislation committee, speaker at microphone and bill on juvenile criminal regime caption.",
+      "sample_time_seconds": 1205.319164,
+      "screenshot": "/tmp/provider-sample-provider-026-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-028-0",
+      "body_ids": [
+        "argentina--tierra-del-fuego"
+      ],
+      "url": "https://www.youtube.com/watch?v=dFrL0lVaQQw&t=1200s",
+      "title": "4\u00aa SESI\u00d3N ORDINARIA \u00b7 01/10/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tierra del Fuego ordinary sitting 1 October 2026, Nadia Lujan legislative secretary caption and chamber branding.",
+      "sample_time_seconds": 1205.288947,
+      "screenshot": "/tmp/provider-sample-provider-028-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-028-1",
+      "body_ids": [
+        "argentina--tierra-del-fuego"
+      ],
+      "url": "https://www.youtube.com/watch?v=z8GSzYbdThg&t=1200s",
+      "title": "AUDIENCIA P\u00daBLICA - DEFENSOR PROVINCIAL DE DERECHOS DE NI\u00d1AS, NI\u00d1OS Y ADOLESCENTES - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Tierra del Fuego provincial ombudsman public hearing, named Sebastian Medina at microphone and legislative caption.",
+      "sample_time_seconds": 1205.314424,
+      "screenshot": "/tmp/provider-sample-provider-028-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-031-0",
+      "body_ids": [
+        "belgium--parlement-de-la-federation-wallonie-bruxelles"
+      ],
+      "url": "https://www.youtube.com/watch?v=qxrHF9yx-6M&t=1200s",
+      "title": "Commission des Sports du 20/10/2026 \u00e0 10h00 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Federation Wallonia-Brussels, Audrey Adam IHECS and deputy Sophie Pécriaux identified in committee room captions.",
+      "sample_time_seconds": 1205.273375,
+      "screenshot": "/tmp/provider-sample-provider-031-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-031-1",
+      "body_ids": [
+        "belgium--parlement-de-la-federation-wallonie-bruxelles"
+      ],
+      "url": "https://www.youtube.com/watch?v=9Js3SEK2vk0&t=1200s",
+      "title": "Commission de l'Enfance du 20/10/26 \u00e0 10:00 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Federation Wallonia-Brussels, Audrey Adam IHECS and deputy Sophie Pécriaux identified in committee room captions.",
+      "sample_time_seconds": 1205.327927,
+      "screenshot": "/tmp/provider-sample-provider-031-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-032-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-goias"
+      ],
+      "url": "https://www.youtube.com/watch?v=xiU47cCXVfI&t=1200s",
+      "title": "Extraordinary Session - 10/22/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Goias extraordinary sitting and mixed committee, 22 October 2026, microphones, institution crest and interpreter visible.",
+      "sample_time_seconds": 1205.29117,
+      "screenshot": "/tmp/provider-sample-provider-032-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-032-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-goias"
+      ],
+      "url": "https://www.youtube.com/watch?v=ZIyRcD4EMls&t=438s",
+      "title": "Joint Committee - 10/22/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Goias extraordinary sitting and mixed committee, 22 October 2026, microphones, institution crest and interpreter visible.",
+      "sample_time_seconds": 443.314005,
+      "screenshot": "/tmp/provider-sample-provider-032-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-033-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-da-paraiba"
+      ],
+      "url": "https://www.youtube.com/watch?v=uTICxL3U0CE&t=1200s",
+      "title": "10/14/2026 | ORDINARY SESSION - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Paraiba member at lectern with interpreter inset.",
+      "sample_time_seconds": 1205.237902,
+      "screenshot": "/tmp/provider-sample-provider-033-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-033-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-da-paraiba"
+      ],
+      "url": "https://www.youtube.com/watch?v=wroYUWJ3x3Y&t=335s",
+      "title": "ORDINARY MEETING OF THE SPECIAL COMMITTEE ON CONSTITUTIONAL AMENDMENT PROPOSAL NO. 36/2021 - YouTube",
+      "decision": "legislative_document_screen_share",
+      "note": "Paraiba special committee PEC36/2021 constitutional amendment report on audit court positions is legible; screen-share rather than room view.",
+      "sample_time_seconds": 340.275808,
+      "screenshot": "/tmp/provider-sample-provider-033-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-034-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-mato-grosso"
+      ],
+      "url": "https://www.youtube.com/watch?v=PP3nPzNPZ3Q&t=1200s",
+      "title": "In-Person and Remote Ordinary Session - 10/21/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Mato Grosso ordinary sitting 21 October and Constitution Justice Redaction committee 20 October, institutional TV branding and interpreter.",
+      "sample_time_seconds": 1205.278594,
+      "screenshot": "/tmp/provider-sample-provider-034-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-034-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-mato-grosso"
+      ],
+      "url": "https://www.youtube.com/watch?v=_zwvMMrxk30&t=1039s",
+      "title": "Ordinary Meeting of the Constitution, Justice and Drafting Committee - 10/20/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Mato Grosso ordinary sitting 21 October and Constitution Justice Redaction committee 20 October, institutional TV branding and interpreter.",
+      "sample_time_seconds": 1044.401821,
+      "screenshot": "/tmp/provider-sample-provider-034-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-035-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-pernambuco"
+      ],
+      "url": "https://www.youtube.com/watch?v=gHC5zMRrMY4&t=1200s",
+      "title": "PLENARY SESSION | 10/13/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Pernambuco Renato Antunes plenary 13 October and Joao Paulo Costa public hearing 23 September, assembly TV branding and interpreter.",
+      "sample_time_seconds": 1205.312666,
+      "screenshot": "/tmp/provider-sample-provider-035-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-035-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-pernambuco"
+      ],
+      "url": "https://www.youtube.com/watch?v=M4zRfnuZCHw&t=1200s",
+      "title": "PUBLIC HEARING: REGULATION OF BEHAVIOR ANALYSIS FOR PEOPLE WITH ASD | 09/23/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Pernambuco Renato Antunes plenary 13 October and Joao Paulo Costa public hearing 23 September, assembly TV branding and interpreter.",
+      "sample_time_seconds": 1205.323292,
+      "screenshot": "/tmp/provider-sample-provider-035-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-037-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-rondonia"
+      ],
+      "url": "https://www.youtube.com/watch?v=w39GvsSrQq8&t=1200s",
+      "title": "SESS\u00c3O ORDIN\u00c1RIA | Delibera\u00e7\u00f5es de mat\u00e9rias e projetos 13/10/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Rondonia ordinary sittings, Cassio Goes and chair Alex Redano named at microphones; ALE/RO and interpreter inset.",
+      "sample_time_seconds": 1205.275451,
+      "screenshot": "/tmp/provider-sample-provider-037-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-037-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-rondonia"
+      ],
+      "url": "https://www.youtube.com/watch?v=bXGVpwmZrTg&t=1200s",
+      "title": "SESS\u00c3O ORDIN\u00c1RIA | Delibera\u00e7\u00f5es de mat\u00e9rias e projetos 06/10/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Rondonia ordinary sittings, Cassio Goes and chair Alex Redano named at microphones; ALE/RO and interpreter inset.",
+      "sample_time_seconds": 1205.337321,
+      "screenshot": "/tmp/provider-sample-provider-037-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-038-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-de-sao-paulo"
+      ],
+      "url": "https://www.youtube.com/watch?v=oTNAW8CmUtY&t=1200s",
+      "title": "Debate: Subnational International Relations and Development - YouTube",
+      "decision": "studio_discussion_not_proceedings",
+      "note": "Sao Paulo G20 city debate, remote studio guest; not a legislature sitting sample.",
+      "sample_time_seconds": 1205.271692,
+      "screenshot": "/tmp/provider-sample-provider-038-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-039-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-ceara"
+      ],
+      "url": "https://www.youtube.com/watch?v=sZEqOzX2-0M&t=1200s",
+      "title": "Solemn Session - 51st Anniversary of the Fortaleza Association of Female Merchants and Leaders (A... - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "Ceara certificate presentation/photo opportunity.",
+      "sample_time_seconds": 1205.244927,
+      "screenshot": "/tmp/provider-sample-provider-039-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-039-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-ceara"
+      ],
+      "url": "https://www.youtube.com/watch?v=LQtZ-NF-x6g&t=580s",
+      "title": "09/20/2026 - Technical Committees Meeting - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Ceara Work Administration Public Service committee, members at chair microphones and caption.",
+      "sample_time_seconds": 585.276859,
+      "screenshot": "/tmp/provider-sample-provider-039-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-040-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-acre"
+      ],
+      "url": "https://www.youtube.com/watch?v=bDxJ1Z-ECB8&t=781s",
+      "title": "20.10.2026 - SESS\u00c3O ORDIN\u00c1RIA - YouTube",
+      "decision": "institutional_speaker_requires_session_context",
+      "note": "Acre Edvaldo Magalhaes at lectern, institution flags; selected frame alone does not establish ordinary business.",
+      "sample_time_seconds": 786.317741,
+      "screenshot": "/tmp/provider-sample-provider-040-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-040-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-acre"
+      ],
+      "url": "https://www.youtube.com/watch?v=_RaAoB61CFw&t=1200s",
+      "title": "15.10.2026 - SESS\u00c3O SOLENE EM HOMENAGEM AOS 7 ANOS DA PATRULHA MARIA DA PENHA NO ACRE - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "Acre solemn sitting honoring seven years of Maria da Penha patrol, rather than ordinary legislative business.",
+      "sample_time_seconds": 1205.28883,
+      "screenshot": "/tmp/provider-sample-provider-040-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-043-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-parana"
+      ],
+      "url": "https://www.youtube.com/watch?v=pqwrUcKCENU&t=1200s",
+      "title": "LIVE \u2013 10/20 | Assembly holds Plenary Session - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Parana plenary member at lectern, TV Assembleia and session caption, interpreter.",
+      "sample_time_seconds": 1205.315211,
+      "screenshot": "/tmp/provider-sample-provider-043-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-043-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-parana"
+      ],
+      "url": "https://www.youtube.com/watch?v=gn3bWyGl1uk&t=1200s",
+      "title": "LIVE \u2013 10/20 | Public hearing presents summary of health actions and investments in Paran\u00e1 - YouTube",
+      "decision": "hearing_presentation_screen_share",
+      "note": "Parana health hearing slide on maternal mortality 2021-2026 with state health secretariat and assembly branding.",
+      "sample_time_seconds": 1205.310467,
+      "screenshot": "/tmp/provider-sample-provider-043-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-044-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-tocantins"
+      ],
+      "url": "https://www.youtube.com/watch?v=nIeOERfNg_Q&t=637s",
+      "title": "249th Ordinary Session of the 10th Legislature - 09/22/2026 - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "Tocantins chamber members milling and interpreter, business not established at selected point.",
+      "sample_time_seconds": 642.315728,
+      "screenshot": "/tmp/provider-sample-provider-044-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-046-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-rio-de-janeiro"
+      ],
+      "url": "https://www.youtube.com/watch?v=Tn_eqfd_mrY&t=1200s",
+      "title": "Alerj debate aplica\u00e7\u00e3o e os desafios da implementa\u00e7\u00e3o da Lei das Doulas e da Lei do Parto Humanizado - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Rio de Janeiro public hearings: doulas/humanized childbirth law and sea sport social inclusion, named witness Ingem Mendes, ALERJ captions.",
+      "sample_time_seconds": 1205.136164,
+      "screenshot": "/tmp/provider-sample-provider-046-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-046-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-rio-de-janeiro"
+      ],
+      "url": "https://www.youtube.com/watch?v=ZzPC112yXE8&t=1200s",
+      "title": "Audi\u00eancia P\u00fablica | Debate sobre o esporte no mar como ferramenta de inclus\u00e3o social e cidadania - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Rio de Janeiro public hearings: doulas/humanized childbirth law and sea sport social inclusion, named witness Ingem Mendes, ALERJ captions.",
+      "sample_time_seconds": 1205.345032,
+      "screenshot": "/tmp/provider-sample-provider-046-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-047-0",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-rio-de-janeiro"
+      ],
+      "url": "https://www.youtube.com/watch?v=wOHRUD4wkNk&t=875s",
+      "title": "Solemn Session in Honor of Hemorio - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "ALERJ solemn sessions, one local councillor guest; insufficient ordinary-business sample.",
+      "sample_time_seconds": 880.273234,
+      "screenshot": "/tmp/provider-sample-provider-047-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-047-1",
+      "body_ids": [
+        "brazil--assembleia-legislativa-do-rio-de-janeiro"
+      ],
+      "url": "https://www.youtube.com/watch?v=eS0YmsbLbco&t=1200s",
+      "title": "SESS\u00c3O SOLENE DEP. THIAGO GAGLIASSO - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "ALERJ solemn sessions, one local councillor guest; insufficient ordinary-business sample.",
+      "sample_time_seconds": 1205.338094,
+      "screenshot": "/tmp/provider-sample-provider-047-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-048-0",
+      "body_ids": [
+        "colombia--arauca"
+      ],
+      "url": "https://www.youtube.com/watch?v=8358IKSdVDY&t=1200s",
+      "title": "Tercer Periodo Sesiones Ordinarias 22-10-2026. - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Arauca CRES manager Alonso Campino presenting and deputy Fernando Corce Peroza at assembly microphone with institutional crest and room flags.",
+      "sample_time_seconds": 1205.271424,
+      "screenshot": "/tmp/provider-sample-provider-048-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-048-1",
+      "body_ids": [
+        "colombia--arauca"
+      ],
+      "url": "https://www.youtube.com/watch?v=lpk14PPSqpo&t=479s",
+      "title": "Tercer Periodo Sesiones Ordinarias 21-10-2026. - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Arauca CRES manager Alonso Campino presenting and deputy Fernando Corce Peroza at assembly microphone with institutional crest and room flags.",
+      "sample_time_seconds": 484.321533,
+      "screenshot": "/tmp/provider-sample-provider-048-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-049-0",
+      "body_ids": [
+        "colombia--boyaca"
+      ],
+      "url": "https://www.youtube.com/watch?v=DGQ0v8YTkzk&t=1200s",
+      "title": "SESI\u00d3N COMISI\u00d3N DE PLAN DE DEARROLLO D\u00cdA 23 DE OCTUBRE DEL 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Boyaca stand-by slate.",
+      "sample_time_seconds": 1203.703091,
+      "screenshot": "/tmp/provider-sample-provider-049-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-049-1",
+      "body_ids": [
+        "colombia--boyaca"
+      ],
+      "url": "https://www.youtube.com/watch?v=Yqi-deIjL6s&t=1200s",
+      "title": "SESI\u00d3N PLENARIA D\u00cdA 20 DE OCTUBRE DEL 2026 - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "Boyaca near-empty chamber, participants standing; no business at this point.",
+      "sample_time_seconds": 1205.315516,
+      "screenshot": "/tmp/provider-sample-provider-049-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-050-0",
+      "body_ids": [
+        "colombia--caqueta"
+      ],
+      "url": "https://www.youtube.com/watch?v=GsP-dA8cz-Y&t=1200s",
+      "title": "Continua Audiencia P\u00fablica de medio ambiente 22 de octubre - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Caqueta room and desk nameplates, attendees and a speaker reading at microphone, assembly branding.",
+      "sample_time_seconds": 1205.293048,
+      "screenshot": "/tmp/provider-sample-provider-050-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-050-1",
+      "body_ids": [
+        "colombia--caqueta"
+      ],
+      "url": "https://www.youtube.com/watch?v=OM3F5Rtc-4g&t=1200s",
+      "title": "Sesi\u00f3n del 22 de octubre, Audiencia P\u00fablica sobre medio ambiente, contaminaci\u00f3n de los rios. - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Caqueta room and desk nameplates, attendees and a speaker reading at microphone, assembly branding.",
+      "sample_time_seconds": 1205.337278,
+      "screenshot": "/tmp/provider-sample-provider-050-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-051-0",
+      "body_ids": [
+        "colombia--bolivar"
+      ],
+      "url": "https://www.youtube.com/watch?v=dW-953uTTTo&t=1200s",
+      "title": "OCTAVA SESION DEL TERCER PERIODO DE SESIONES ORDINARIAS DE LA HONORABLE ASAMBLEA - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Bolivar assembly logo animation only.",
+      "sample_time_seconds": 1205.297242,
+      "screenshot": "/tmp/provider-sample-provider-051-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-051-1",
+      "body_ids": [
+        "colombia--bolivar"
+      ],
+      "url": "https://www.youtube.com/watch?v=EppHOBZMw9s&t=1200s",
+      "title": "SEPTIMA SESION DEL TERCER PERIODO DE SESIONES ORDINARIAS DE LA HONORABLE ASAMBLEA - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Bolivar assembly logo animation only.",
+      "sample_time_seconds": 1205.250709,
+      "screenshot": "/tmp/provider-sample-provider-051-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-053-0",
+      "body_ids": [
+        "colombia--cesar"
+      ],
+      "url": "https://www.youtube.com/watch?v=asJe0WHQu_Q&t=1016s",
+      "title": "\ud83d\udd34 EN VIVO | 8va #Sesi\u00f3nOrdinaria 22/10/2026 | 3er Periodo de Sesiones Ordinarias de 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Cesar deputy Miguel Antonio Hinojosa Barros named at microphone and separate assembly chamber/committee discussion.",
+      "sample_time_seconds": 1021.335659,
+      "screenshot": "/tmp/provider-sample-provider-053-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-053-1",
+      "body_ids": [
+        "colombia--cesar"
+      ],
+      "url": "https://www.youtube.com/watch?v=UKABgNJp5hw&t=844s",
+      "title": "\ud83d\udd34 EN VIVO | #Sesi\u00f3nDeComisi\u00f3n 21/10/2026 | 3er Periodo de Sesiones Ordinarias de 2026 - 2 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Cesar deputy Miguel Antonio Hinojosa Barros named at microphone and separate assembly chamber/committee discussion.",
+      "sample_time_seconds": 849.321932,
+      "screenshot": "/tmp/provider-sample-provider-053-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-054-0",
+      "body_ids": [
+        "colombia--guaviare"
+      ],
+      "url": "https://www.youtube.com/watch?v=T39jiZCGRHk&t=1200s",
+      "title": "Tercer Periodo de Sesiones Ordinarias - Jueves 22 de Octubre de 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Guaviare chamber members at desks and microphones, assembly branding, separate dated provider recordings.",
+      "sample_time_seconds": 1205.24581,
+      "screenshot": "/tmp/provider-sample-provider-054-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-054-1",
+      "body_ids": [
+        "colombia--guaviare"
+      ],
+      "url": "https://www.youtube.com/watch?v=oliaSjKCMhY&t=1200s",
+      "title": "Instalaci\u00f3n Tercer Periodo de Sesiones Ordinarias -Mi\u00e9rcoles 21 de Octubre de 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Guaviare chamber members at desks and microphones, assembly branding, separate dated provider recordings.",
+      "sample_time_seconds": 1204.485334,
+      "screenshot": "/tmp/provider-sample-provider-054-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-055-0",
+      "body_ids": [
+        "colombia--la-guajira"
+      ],
+      "url": "https://www.youtube.com/watch?v=BoS1xtwmjfs&t=428s",
+      "title": "Palabras de Clausura 3er per\u00edodo de sesiones ordinarias 2020 Presidenta ORIANA - YouTube",
+      "decision": "identified_proceedings",
+      "note": "La Guajira masked members at assembly microphones with institutional clothing/room branding; historical recording.",
+      "sample_time_seconds": 433.290063,
+      "screenshot": "/tmp/provider-sample-provider-055-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-056-0",
+      "body_ids": [
+        "colombia--magdalena"
+      ],
+      "url": "https://www.youtube.com/watch?v=guZiKoI8WmU&t=1141s",
+      "title": "OCTOBER 21, 2026 - MAGDALENA DEPARTMENTAL ASSEMBLY BOLIVAR BICENTENNIAL COMMISSION SESSION - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Magdalena Jose Madera Lastre witness and deputy Linda Luz Cabarcas Suarez identified at microphones.",
+      "sample_time_seconds": 1146.399281,
+      "screenshot": "/tmp/provider-sample-provider-056-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-056-1",
+      "body_ids": [
+        "colombia--magdalena"
+      ],
+      "url": "https://www.youtube.com/watch?v=zw1Gyvho6ko&t=1200s",
+      "title": "OCTOBER 20, 2026 - ORDINARY SESSION OF THE THIRD PERIOD OF THE MAGDALENA DEPARTMENTAL ASSEMBLY - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Magdalena Jose Madera Lastre witness and deputy Linda Luz Cabarcas Suarez identified at microphones.",
+      "sample_time_seconds": 1205.293629,
+      "screenshot": "/tmp/provider-sample-provider-056-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-057-0",
+      "body_ids": [
+        "colombia--meta"
+      ],
+      "url": "https://www.youtube.com/watch?v=PodIwlfOefA&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria octubre 27 de 2020. - YouTube",
+      "decision": "institutional_speaker_requires_session_context",
+      "note": "Meta podium speaker, state crest and Zoom relay; exact ordinary business context still needs corroboration.",
+      "sample_time_seconds": 1205.309999,
+      "screenshot": "/tmp/provider-sample-provider-057-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-058-0",
+      "body_ids": [
+        "colombia--narino"
+      ],
+      "url": "https://www.youtube.com/watch?v=qILfLVdy7X4&t=1200s",
+      "title": "SESI\u00d3N ORDINARIAORDEN DEL D\u00cdA 22 DE OCTUBRE DE 2026 - YouTube",
+      "decision": "legislative_presentation_screen_share",
+      "note": "Narino ordinary sitting 22 October 2026 shares a social media criticism about mining votes; presenter/chamber not visible at this point.",
+      "sample_time_seconds": 1205.308853,
+      "screenshot": "/tmp/provider-sample-provider-058-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-058-1",
+      "body_ids": [
+        "colombia--narino"
+      ],
+      "url": "https://www.youtube.com/watch?v=G6ziKe6OPdc&t=1200s",
+      "title": "Sesi\u00f3n ordinaria 20 de octubre 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Narino extraordinary sitting 21 October, chair microphones and members speaking, institutional flags/caption.",
+      "sample_time_seconds": 1205.268453,
+      "screenshot": "/tmp/provider-sample-provider-058-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-059-0",
+      "body_ids": [
+        "colombia--risaralda"
+      ],
+      "url": "https://www.youtube.com/watch?v=zLMxewqbMEo&t=1200s",
+      "title": "22 OCTUBRE TERCER PER\u00cdODO DE SESIONES ORDINARIAS OCTUBRE \u2013 NOVIEMBRE 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Risaralda tourism/institutional film; earlier separate 40-minute samples already verified actual proceedings.",
+      "sample_time_seconds": 1205.330167,
+      "screenshot": "/tmp/provider-sample-provider-059-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-059-1",
+      "body_ids": [
+        "colombia--risaralda"
+      ],
+      "url": "https://www.youtube.com/watch?v=OKt8GYk3R-o&t=1200s",
+      "title": "21 DE OCTUBRE TERCER PER\u00cdODO DE SESIONES ORDINARIASOCTUBRE \u2013 NOVIEMBRE 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Risaralda tourism/institutional film; earlier separate 40-minute samples already verified actual proceedings.",
+      "sample_time_seconds": 1205.300454,
+      "screenshot": "/tmp/provider-sample-provider-059-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-061-0",
+      "body_ids": [
+        "colombia--quindio"
+      ],
+      "url": "https://www.youtube.com/watch?v=bxHfJV6GLA8&t=1200s",
+      "title": "EN VIVO SESI\u00d3N ASAMBLEA DEPARTAMENTAL DEL QUIND\u00cdO - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Quindio deputy Jorge Hernan Gutierrez Arbelaez at assembly microphone, institution caption.",
+      "sample_time_seconds": 1205.322085,
+      "screenshot": "/tmp/provider-sample-provider-061-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-061-1",
+      "body_ids": [
+        "colombia--quindio"
+      ],
+      "url": "https://www.youtube.com/watch?v=mbjNxILlm80&t=1200s",
+      "title": "QUINCUAG\u00c9SIMA SESI\u00d3N ORDINARIA/ ASAMBLEA DEPARTAMENTAL DEL QUIND\u00cdO 2021 - YouTube",
+      "decision": "legislative_presentation_screen_share",
+      "note": "Quindio remote sitting with named deputy tiles and family secretariat 2022 goals/projects table.",
+      "sample_time_seconds": 1205.313715,
+      "screenshot": "/tmp/provider-sample-provider-061-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-062-0",
+      "body_ids": [
+        "colombia--san-andres-providencia-y-santa-catalina"
+      ],
+      "url": "https://www.youtube.com/watch?v=OutGp8-fnv4&t=1200s",
+      "title": "Clausura Sesiones Extraordinarias - YouTube",
+      "decision": "identified_proceedings",
+      "note": "San Andres Providencia Santa Catalina assembly room, members at microphones and full institutional wall title.",
+      "sample_time_seconds": 1205.337474,
+      "screenshot": "/tmp/provider-sample-provider-062-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-062-1",
+      "body_ids": [
+        "colombia--san-andres-providencia-y-santa-catalina"
+      ],
+      "url": "https://www.youtube.com/watch?v=c3QkAB-WuY8&t=1200s",
+      "title": "CIERRE SESIONES ORDINARIAS ASAMBLEA DEPARTAMENTAL SAN ANDRES ISLAS 21/12/2022 - YouTube",
+      "decision": "recess_requires_other_sample",
+      "note": "Explicit recess slate, no proceedings in this sample.",
+      "sample_time_seconds": 1205.266913,
+      "screenshot": "/tmp/provider-sample-provider-062-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-064-0",
+      "body_ids": [
+        "colombia--tolima"
+      ],
+      "url": "https://www.youtube.com/watch?v=3evzCFyVXwo&t=1200s",
+      "title": "ORDINARY SESSION 10/22/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tolima ordinary sessions, presenters at lectern with cattle-tax and budget-law presentation slides, institution branding.",
+      "sample_time_seconds": 1205.309584,
+      "screenshot": "/tmp/provider-sample-provider-064-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-064-1",
+      "body_ids": [
+        "colombia--tolima"
+      ],
+      "url": "https://www.youtube.com/watch?v=6EILCyXWtTM&t=1200s",
+      "title": "ORDINARY SESSION 10/21/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tolima ordinary sessions, presenters at lectern with cattle-tax and budget-law presentation slides, institution branding.",
+      "sample_time_seconds": 1205.291707,
+      "screenshot": "/tmp/provider-sample-provider-064-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-070-0",
+      "body_ids": [
+        "germany--brandenburg"
+      ],
+      "url": "https://www.youtube.com/watch?v=0f893Q_daGI&t=403s",
+      "title": "Der Neue Landtag Brandenburg - YouTube",
+      "decision": "institutional_film_not_proceedings",
+      "note": "Brandenburg exterior building film.",
+      "sample_time_seconds": 408.333771,
+      "screenshot": "/tmp/provider-sample-provider-070-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-070-1",
+      "body_ids": [
+        "germany--brandenburg"
+      ],
+      "url": "https://www.youtube.com/watch?v=ynLRH8FDlz4&t=1200s",
+      "title": "6. Sitzung der Parlamentarischen Konferenz Berlin-Brandenburg am 27.11.2025 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Brandenburg named RBB acting editor Pieper at hearing microphone.",
+      "sample_time_seconds": 1205.288473,
+      "screenshot": "/tmp/provider-sample-provider-070-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-072-0",
+      "body_ids": [
+        "germany--hesse"
+      ],
+      "url": "https://www.youtube.com/watch?v=-DN8BOxzd2E&t=1200s",
+      "title": "108. Plenarsitzung - 07.06.2022 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hesse Boris Rhein TOP1 and Frank Grobe TOP58 at plenary lectern.",
+      "sample_time_seconds": 1205.312527,
+      "screenshot": "/tmp/provider-sample-provider-072-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-072-1",
+      "body_ids": [
+        "germany--hesse"
+      ],
+      "url": "https://www.youtube.com/watch?v=5dWDv1VL-P8&t=1200s",
+      "title": "107. Plenarsitzung - 02.06.2022 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hesse Boris Rhein TOP1 and Frank Grobe TOP58 at plenary lectern.",
+      "sample_time_seconds": 1205.29076,
+      "screenshot": "/tmp/provider-sample-provider-072-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-073-0",
+      "body_ids": [
+        "germany--landtag-mecklenburg-vorpommern"
+      ],
+      "url": "https://www.youtube.com/watch?v=LgVUzRwcqMU&t=532s",
+      "title": "53. \u00f6ffentliche Sitzung der Enquete-Kommission \u201eJung sein in MV\u201c \u2013 am 29. Mai 2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Mecklenburg-Vorpommern hearing room and remote witness tiles, dated 29 May 2026.",
+      "sample_time_seconds": 537.312648,
+      "screenshot": "/tmp/provider-sample-provider-073-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-073-1",
+      "body_ids": [
+        "germany--landtag-mecklenburg-vorpommern"
+      ],
+      "url": "https://www.youtube.com/watch?v=zwz3j3ORqaQ&t=1200s",
+      "title": "Landesfinale \"Jugend debattiert\" 2026 - YouTube",
+      "decision": "youth_event_not_legislature_proceedings",
+      "note": "Jugend debattiert state final, not elected-member business.",
+      "sample_time_seconds": 1205.26962,
+      "screenshot": "/tmp/provider-sample-provider-073-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-075-0",
+      "body_ids": [
+        "germany--landtag-niedersachsen"
+      ],
+      "url": "https://www.youtube.com/watch?v=wwX5ctWxG7Q&t=608s",
+      "title": "The Lower Saxony State Parliament: Debate, Decision, Encounter (english subtitles) - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Lower Saxony chamber members and chair at desks in sitting.",
+      "sample_time_seconds": 613.312054,
+      "screenshot": "/tmp/provider-sample-provider-075-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-075-1",
+      "body_ids": [
+        "germany--landtag-niedersachsen"
+      ],
+      "url": "https://www.youtube.com/watch?v=Ujn03FdsE2E&t=1200s",
+      "title": "75 Jahre Nieders\u00e4chsischer Landtag: Der Festakt - YouTube",
+      "decision": "institutional_message_not_proceedings",
+      "note": "Lower Saxony office-address message with Germany/UK flags, not parliamentary business.",
+      "sample_time_seconds": 1205.312503,
+      "screenshot": "/tmp/provider-sample-provider-075-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-076-0",
+      "body_ids": [
+        "germany--saxony-anhalt"
+      ],
+      "url": "https://www.youtube.com/watch?v=M3eBxR6c8Ks&t=1200s",
+      "title": "Livestream von LSALandtag - YouTube",
+      "decision": "institutional_lectern_requires_session_context",
+      "note": "Saxony-Anhalt speaker at named Landtag lectern; exact event/ordinary-business identity needs context.",
+      "sample_time_seconds": 1205.330554,
+      "screenshot": "/tmp/provider-sample-provider-076-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-076-1",
+      "body_ids": [
+        "germany--saxony-anhalt"
+      ],
+      "url": "https://www.youtube.com/watch?v=NHeHl-tZXxE&t=1200s",
+      "title": "Gespr\u00e4chsforum im Landtag von Sachsen-Anhalt: Fluchtpunkt Botschaft Prag - YouTube",
+      "decision": "institutional_discussion_not_certified_business",
+      "note": "Seated interview/discussion microphone, no chamber context in sample.",
+      "sample_time_seconds": 1205.278032,
+      "screenshot": "/tmp/provider-sample-provider-076-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-077-0",
+      "body_ids": [
+        "germany--sachsischer-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=nZhDNFxvxUg&t=1200s",
+      "title": "Landtag debattiert Landeshaushalt 2027/2028 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Saxony plenary lectern speakers with chair behind, chamber setting; individual names not legible.",
+      "sample_time_seconds": 1205.335506,
+      "screenshot": "/tmp/provider-sample-provider-077-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-077-1",
+      "body_ids": [
+        "germany--sachsischer-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=ijh1pKGqqZc&t=1200s",
+      "title": "Landtag w\u00e4hlt Michael Kretschmer zum Ministerpr\u00e4sidenten - Live-\u00dcbertragung - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Saxony plenary lectern speakers with chair behind, chamber setting; individual names not legible.",
+      "sample_time_seconds": 1205.270459,
+      "screenshot": "/tmp/provider-sample-provider-077-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-078-0",
+      "body_ids": [
+        "germany--thuringer-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=YOsXrwzE6IY&t=1200s",
+      "title": "58. Sitzung des 8. Th\u00fcringer Landtags Fortsetzung - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Thuringia plenary lectern, state emblem and 9 October 2026 broadcast date.",
+      "sample_time_seconds": 1205.334118,
+      "screenshot": "/tmp/provider-sample-provider-078-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-078-1",
+      "body_ids": [
+        "germany--thuringer-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=cRMjff1Uy4Q&t=1200s",
+      "title": "58. Sitzung des 8. Th\u00fcringer Landtags - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Thuringia plenary lectern, state emblem and 9 October 2026 broadcast date.",
+      "sample_time_seconds": 1205.273151,
+      "screenshot": "/tmp/provider-sample-provider-078-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-079-0",
+      "body_ids": [
+        "india--rajasthan"
+      ],
+      "url": "https://www.youtube.com/watch?v=MqV3a5qzY8I&t=1200s",
+      "title": "Address by the Honorable Governor during the fifth session of the 16th Rajasthan Legislative Asse... - YouTube",
+      "decision": "governor_address_requires_ordinary_business_sample",
+      "note": "Rajasthan governor addresses in chamber, institutional flags/crest and dates; ceremonial opening scope rather than ordinary debate.",
+      "sample_time_seconds": 1205.282986,
+      "screenshot": "/tmp/provider-sample-provider-079-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-079-1",
+      "body_ids": [
+        "india--rajasthan"
+      ],
+      "url": "https://www.youtube.com/watch?v=XzbO8HQIiNU&t=1200s",
+      "title": "Address by the Honorable Governor during the third session of the 16th Rajasthan Legislative Asse... - YouTube",
+      "decision": "governor_address_requires_ordinary_business_sample",
+      "note": "Rajasthan governor addresses in chamber, institutional flags/crest and dates; ceremonial opening scope rather than ordinary debate.",
+      "sample_time_seconds": 1205.285883,
+      "screenshot": "/tmp/provider-sample-provider-079-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-080-0",
+      "body_ids": [
+        "indonesia--aceh"
+      ],
+      "url": "https://www.youtube.com/watch?v=Fl_FghQxZ9k&t=954s",
+      "title": "RAPAT PARIPURNA DPRA TAHUN 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Aceh deputy chair reading at microphone; separate member Muhammad Raji Firdana presenting faction position on 2025 budget accountability qanun.",
+      "sample_time_seconds": 959.271812,
+      "screenshot": "/tmp/provider-sample-provider-080-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-080-1",
+      "body_ids": [
+        "indonesia--aceh"
+      ],
+      "url": "https://www.youtube.com/watch?v=U7QJUFqPXow&t=1200s",
+      "title": "RAPAT PARIPURNA DPRA TAHUN 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Aceh deputy chair reading at microphone; separate member Muhammad Raji Firdana presenting faction position on 2025 budget accountability qanun.",
+      "sample_time_seconds": 1205.252995,
+      "screenshot": "/tmp/provider-sample-provider-080-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-081-0",
+      "body_ids": [
+        "indonesia--di-yogyakarta"
+      ],
+      "url": "https://www.youtube.com/watch?v=b7RYHucs7Sk&t=1200s",
+      "title": "RAPAT PARIPURNA DPRD DIY - 30 September 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Yogyakarta members reading into lectern microphones, plenary captions 30 and 23 September 2026.",
+      "sample_time_seconds": 1205.271987,
+      "screenshot": "/tmp/provider-sample-provider-081-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-081-1",
+      "body_ids": [
+        "indonesia--di-yogyakarta"
+      ],
+      "url": "https://www.youtube.com/watch?v=jecRBEWgQ9c&t=1200s",
+      "title": "RAPAT PARIPURNA DPRD DIY - 23 September 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Yogyakarta members reading into lectern microphones, plenary captions 30 and 23 September 2026.",
+      "sample_time_seconds": 1205.292539,
+      "screenshot": "/tmp/provider-sample-provider-081-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-082-0",
+      "body_ids": [
+        "indonesia--jawa-timur"
+      ],
+      "url": "https://www.youtube.com/watch?v=MtxmaK_2jq0&t=1200s",
+      "title": "RAPAT PARIPURNA ISTIMEWA MEMPERINGATI HARI JADI PROVINSI JAWA TIMUR KE-81 TAHUN 2026 - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "East Java choir performances in chamber, no legislative debate in selected samples.",
+      "sample_time_seconds": 1205.272745,
+      "screenshot": "/tmp/provider-sample-provider-082-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-082-1",
+      "body_ids": [
+        "indonesia--jawa-timur"
+      ],
+      "url": "https://www.youtube.com/watch?v=8tYXoUhpfA0&t=1200s",
+      "title": "RAPAT PARIPURNA ISTIMEWA MENDENGARKAN PIDATO KENEGARAAN PRESIDEN REPUBLIK INDONESIA - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "East Java choir performances in chamber, no legislative debate in selected samples.",
+      "sample_time_seconds": 1205.27083,
+      "screenshot": "/tmp/provider-sample-provider-082-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-083-0",
+      "body_ids": [
+        "indonesia--dki-jakarta"
+      ],
+      "url": "https://www.youtube.com/watch?v=ZvTO1WEokW0&t=1200s",
+      "title": "Preliminary Session The 54th Abang None Jakarta 2026 - YouTube",
+      "decision": "wrong_body_event_not_legislature_proceedings",
+      "note": "Jakarta Abang None cultural competition title slate, not legislature proceedings.",
+      "sample_time_seconds": 1205.33536,
+      "screenshot": "/tmp/provider-sample-provider-083-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-084-0",
+      "body_ids": [
+        "indonesia--kalimantan-utara"
+      ],
+      "url": "https://www.youtube.com/watch?v=ohFIa97lq5U&t=1200s",
+      "title": "Paripurna HUT ke 13 Kaltara - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "North Kalimantan anniversary graphic at this point; separate earlier plenary/hearing samples already checked.",
+      "sample_time_seconds": 1205.271512,
+      "screenshot": "/tmp/provider-sample-provider-084-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-085-0",
+      "body_ids": [
+        "indonesia--kepulauan-riau"
+      ],
+      "url": "https://www.youtube.com/watch?v=uuhBlrQPS50&t=1200s",
+      "title": "Rapat Paripurna Peringatan Hari Jadi Provinsi Kepulauan Riau ke - 24 Tahun 2026 - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "Riau Islands seated ceremonial participant at microphone, later business needed.",
+      "sample_time_seconds": 1205.313781,
+      "screenshot": "/tmp/provider-sample-provider-085-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-085-1",
+      "body_ids": [
+        "indonesia--kepulauan-riau"
+      ],
+      "url": "https://www.youtube.com/watch?v=4SfQJhidzO8&t=1200s",
+      "title": "Rapat Paripurna Laphir Banggar DPRD Prov. Kepri terhadap Ranperda tentang APBDP T.A 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Riau Islands speaker at lectern, plenary final budget-committee report caption.",
+      "sample_time_seconds": 1205.268153,
+      "screenshot": "/tmp/provider-sample-provider-085-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-086-0",
+      "body_ids": [
+        "indonesia--jawa-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=khxoLpQZk3Q&t=733s",
+      "title": "Penetapan Raperda Perubahan APBD TA 2026 - Paripurna - YouTube",
+      "decision": "identified_proceedings_with_slides",
+      "note": "Central Java budget committee conclusion/recommendations and revised 2026 APBD figures, live speaker inset and Berlian TV branding.",
+      "sample_time_seconds": 738.251106,
+      "screenshot": "/tmp/provider-sample-provider-086-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-086-1",
+      "body_ids": [
+        "indonesia--jawa-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=FV710SLdHRI&t=1200s",
+      "title": "Penjelasan Gubernur atas Perubahan APBD 2026 Jateng - Paripurna - YouTube",
+      "decision": "identified_proceedings_with_slides",
+      "note": "Central Java budget committee conclusion/recommendations and revised 2026 APBD figures, live speaker inset and Berlian TV branding.",
+      "sample_time_seconds": 1205.27513,
+      "screenshot": "/tmp/provider-sample-provider-086-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-087-0",
+      "body_ids": [
+        "indonesia--papua"
+      ],
+      "url": "https://www.youtube.com/watch?v=c2sgyghGUPk&t=594s",
+      "title": "PART 01 Plenary Session for the Handover & Funeral Service of Papua DPR Member the Late Frangklin... - YouTube",
+      "decision": "low_resolution_rotated_room_view_not_certified",
+      "note": "Papua sideways phone recording of official chamber/event, exact business and identity not established.",
+      "sample_time_seconds": 599.309782,
+      "screenshot": "/tmp/provider-sample-provider-087-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-090-0",
+      "body_ids": [
+        "indonesia--papua-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=pbsY_fY6vew&t=1200s",
+      "title": "PENUTUPAN RAPAT PARIPURNA - YouTube",
+      "decision": "institutional_lectern_requires_session_context",
+      "note": "Central Papua speakers at provincial crest lectern and flags, source is provincial government; legislative rather than executive event identity requires corroboration.",
+      "sample_time_seconds": 1205.310646,
+      "screenshot": "/tmp/provider-sample-provider-090-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-090-1",
+      "body_ids": [
+        "indonesia--papua-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=WvMxavIv_UM&t=1200s",
+      "title": "RAPAT PARIPURNA TAHAP IV - YouTube",
+      "decision": "institutional_lectern_requires_session_context",
+      "note": "Central Papua speakers at provincial crest lectern and flags, source is provincial government; legislative rather than executive event identity requires corroboration.",
+      "sample_time_seconds": 1205.269641,
+      "screenshot": "/tmp/provider-sample-provider-090-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-091-0",
+      "body_ids": [
+        "italy--assemblea-legislativa-della-regione-umbria"
+      ],
+      "url": "https://www.youtube.com/watch?v=jPxaZaVf0rY&t=1200s",
+      "title": "Umbria Legislative Assembly Session July 30, 2026 - 2 - YouTube",
+      "decision": "public_event_not_certified_business",
+      "note": "Umbria library/event room audience speaker, not visibly ordinary legislative business.",
+      "sample_time_seconds": 1205.310454,
+      "screenshot": "/tmp/provider-sample-provider-091-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-093-0",
+      "body_ids": [
+        "italy--consiglio-della-provincia-autonoma-di-bolzano"
+      ],
+      "url": "https://www.youtube.com/watch?v=JW7A5eYxRZY&t=1200s",
+      "title": "2026.10.15 - Livestream | S\u00fcdtiroler Landtag - Consiglio della Provincia autonoma di Bolzano - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Bolzano bilingual connection-at-start-of-sitting slate only.",
+      "sample_time_seconds": 1205.291404,
+      "screenshot": "/tmp/provider-sample-provider-093-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-093-1",
+      "body_ids": [
+        "italy--consiglio-della-provincia-autonoma-di-bolzano"
+      ],
+      "url": "https://www.youtube.com/watch?v=ScdB764iRls&t=1200s",
+      "title": "2026.10.14 - Livestream | S\u00fcdtiroler Landtag - Consiglio della Provincia autonoma di Bolzano - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Bolzano bilingual connection-at-start-of-sitting slate only.",
+      "sample_time_seconds": 1205.312422,
+      "screenshot": "/tmp/provider-sample-provider-093-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-096-0",
+      "body_ids": [
+        "italy--consiglio-regionale-della-campania"
+      ],
+      "url": "https://www.youtube.com/watch?v=h8b3WzWhx5s&t=1200s",
+      "title": "Council Meeting of August 27, 2026 - Afternoon session - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Campania chair Massimiliano Manfredi at microphone, regional council and 27 August 2026 captions.",
+      "sample_time_seconds": 1205.256919,
+      "screenshot": "/tmp/provider-sample-provider-096-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-102-0",
+      "body_ids": [
+        "japan--fukushima"
+      ],
+      "url": "https://www.youtube.com/watch?v=1WxISJRgnHQ&t=649s",
+      "title": "September 2026 Regular Session, October 2nd: General Review Committee (Councilmember Yuichi Mayama) - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Fukushima chamber and named administrative official at lectern answering members, interpreter inset.",
+      "sample_time_seconds": 654.29275,
+      "screenshot": "/tmp/provider-sample-provider-102-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-102-1",
+      "body_ids": [
+        "japan--fukushima"
+      ],
+      "url": "https://www.youtube.com/watch?v=1hXdYeUKD2k&t=913s",
+      "title": "September 2026 Regular Session: October 2nd Comprehensive Review Committee (Councilmember Saori O... - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Fukushima chamber and named administrative official at lectern answering members, interpreter inset.",
+      "sample_time_seconds": 918.333456,
+      "screenshot": "/tmp/provider-sample-provider-102-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-103-0",
+      "body_ids": [
+        "japan--fukui"
+      ],
+      "url": "https://www.youtube.com/watch?v=t_WT45nkTR0&t=1200s",
+      "title": "Fukui Prefectural Assembly, September 2026 Regular Session, Budget and Settlement Special Committ... - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Fukui committee members standing at desk microphones, chair/secretariat visible; exact individual names not transcribed.",
+      "sample_time_seconds": 1205.270633,
+      "screenshot": "/tmp/provider-sample-provider-103-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-103-1",
+      "body_ids": [
+        "japan--fukui"
+      ],
+      "url": "https://www.youtube.com/watch?v=0cj_jNDFpKY&t=1200s",
+      "title": "Fukui Prefectural Assembly, September 2026 Regular Session, Budget and Settlement Special Committ... - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Fukui committee members standing at desk microphones, chair/secretariat visible; exact individual names not transcribed.",
+      "sample_time_seconds": 1205.246836,
+      "screenshot": "/tmp/provider-sample-provider-103-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-104-0",
+      "body_ids": [
+        "japan--hyogo"
+      ],
+      "url": "https://www.youtube.com/watch?v=zdScTC6wPHw&t=1200s",
+      "title": "\u5175\u5eab\u770c\u8b70\u4f1a\u3000\uff19\u6708\u5b9a\u4f8b\u4f1a\u30e9\u30a4\u30d6\u914d\u4fe1\uff08\u9589\u4f1a\uff09 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hyogo chamber lectern speaker and presiding chair, interpreter inset; exact speaker not independently transcribed.",
+      "sample_time_seconds": 1205.291833,
+      "screenshot": "/tmp/provider-sample-provider-104-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-104-1",
+      "body_ids": [
+        "japan--hyogo"
+      ],
+      "url": "https://www.youtube.com/watch?v=ixbExq4JS34&t=1200s",
+      "title": "\u5175\u5eab\u770c\u8b70\u4f1a\u3000\uff19\u6708\u5b9a\u4f8b\u4f1a\u30e9\u30a4\u30d6\u914d\u4fe1\uff08\u4e00\u822c\u8cea\u554f\uff13\u65e5\u76ee\uff09 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hyogo plenary lectern and Kanagawa desk microphone speaker respectively; interpreter visible.",
+      "sample_time_seconds": 1205.315751,
+      "screenshot": "/tmp/provider-sample-provider-104-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-105-0",
+      "body_ids": [
+        "japan--kanagawa"
+      ],
+      "url": "https://www.youtube.com/watch?v=_QmIuFeEL_A&t=1200s",
+      "title": "\u4ee4\u548c\uff15\u5e74\u5ea6\u8b70\u4f1a\u5831\u544a\u4f1a\u3000\u751f\u4e2d\u7d99 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hyogo plenary lectern and Kanagawa desk microphone speaker respectively; interpreter visible.",
+      "sample_time_seconds": 1205.291668,
+      "screenshot": "/tmp/provider-sample-provider-105-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-105-1",
+      "body_ids": [
+        "japan--kanagawa"
+      ],
+      "url": "https://www.youtube.com/watch?v=SqLI7O-vaS0&t=1200s",
+      "title": "\u4ee4\u548c\uff14\u5e74\u5ea6\u8b70\u4f1a\u5831\u544a\u4f1a\u3000\u751f\u4e2d\u7d99 - YouTube",
+      "decision": "public_meeting_requires_event_context",
+      "note": "Kanagawa offsite meeting in gym/hall, desk nameplates and interpreter, exact hearing identity still needed.",
+      "sample_time_seconds": 1205.33118,
+      "screenshot": "/tmp/provider-sample-provider-105-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-106-0",
+      "body_ids": [
+        "japan--iwate"
+      ],
+      "url": "https://www.youtube.com/watch?v=kRwlnc7G_Nw&t=1200s",
+      "title": "\uff1c\u5ca9\u624b\u770c\u8b70\u4f1a\uff1e\u3000\uff19\u6708\u8b70\u4f1a\u5b9a\u4f8b\u4f1a\u3000\u4ee4\u548c\uff18\u5e7410\u6708\uff15\u65e5\uff08\u6708\uff09\u4e00\u822c\u8cea\u554f\uff08\u6589\u85e4\u3000\u4fe1\u8b70\u54e1\uff09 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Iwate committee desk speaker and separate plenary lectern with named member caption and prefectural flag.",
+      "sample_time_seconds": 1205.268532,
+      "screenshot": "/tmp/provider-sample-provider-106-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-106-1",
+      "body_ids": [
+        "japan--iwate"
+      ],
+      "url": "https://www.youtube.com/watch?v=jlP9Za7MelM&t=1200s",
+      "title": "\uff1c\u5ca9\u624b\u770c\u8b70\u4f1a\uff1e\u3000\uff19\u6708\u8b70\u4f1a\u5b9a\u4f8b\u4f1a\u3000\u4ee4\u548c\uff18\u5e7410\u6708\uff15\u65e5\uff08\u6708\uff09\u4e00\u822c\u8cea\u554f\uff08\u306f\u304e\u306e\u3000\u5e78\u5f18\u8b70\u54e1\uff09 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Iwate committee desk speaker and separate plenary lectern with named member caption and prefectural flag.",
+      "sample_time_seconds": 1205.279648,
+      "screenshot": "/tmp/provider-sample-provider-106-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-108-0",
+      "body_ids": [
+        "japan--miyazaki"
+      ],
+      "url": "https://www.youtube.com/watch?v=YTDHKGDwLFA&t=870s",
+      "title": "Miyazaki Prefectural Assembly Special Program: February 2026 Regular Session, Day 2 - YouTube",
+      "decision": "edited_legislative_information_programme",
+      "note": "Miyazaki special-committee explanatory slide with YouAndUMK TV branding; not an unedited sitting sample.",
+      "sample_time_seconds": 875.252665,
+      "screenshot": "/tmp/provider-sample-provider-108-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-108-1",
+      "body_ids": [
+        "japan--miyazaki"
+      ],
+      "url": "https://www.youtube.com/watch?v=i-yMDMosJg0&t=870s",
+      "title": "Miyazaki Prefectural Assembly Special Program: February 2026 Regular Session, Day 1 - YouTube",
+      "decision": "edited_legislative_information_programme",
+      "note": "Miyazaki TV programme includes Atsushi Yasuda representative question footage; edited programme rather than full proceedings evidence.",
+      "sample_time_seconds": 875.249469,
+      "screenshot": "/tmp/provider-sample-provider-108-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-109-0",
+      "body_ids": [
+        "japan--tokushima"
+      ],
+      "url": "https://www.youtube.com/watch?v=kJkgCaFx0gc&t=1200s",
+      "title": "\u5fb3\u5cf6\u770c\u8b70\u4f1a\u3000\u4ee4\u548c8\u5e749\u6708\u5b9a\u4f8b\u4f1a\uff08\u9589\u4f1a\u3000\u4ee4\u548c8\u5e7410\u67087\u65e5\uff09 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tokushima members speaking at plenary lectern; exact names not transcribed.",
+      "sample_time_seconds": 1205.295035,
+      "screenshot": "/tmp/provider-sample-provider-109-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-109-1",
+      "body_ids": [
+        "japan--tokushima"
+      ],
+      "url": "https://www.youtube.com/watch?v=E2xeZROut8w&t=1200s",
+      "title": "\u5fb3\u5cf6\u770c\u8b70\u4f1a\u3000\u4ee4\u548c8\u5e749\u6708\u5b9a\u4f8b\u4f1a\uff08\u4e00\u822c\u8cea\u554f\u3000\u6276\u5ddd\u6566\u8b70\u54e1\u3000\u4ee4\u548c8\u5e749\u670818\u65e5\uff09 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tokushima members speaking at plenary lectern; exact names not transcribed.",
+      "sample_time_seconds": 1205.315745,
+      "screenshot": "/tmp/provider-sample-provider-109-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-112-0",
+      "body_ids": [
+        "moldova--gagauzia"
+      ],
+      "url": "https://www.youtube.com/watch?v=Jqk7XD-xw7o&t=1200s",
+      "title": "September 9 | Extraordinary Session of the People's Assembly of Gagauzia - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Gagauzia assembly committee/roundtable room, members at microphones, Moldovan and autonomous flags.",
+      "sample_time_seconds": 1205.272274,
+      "screenshot": "/tmp/provider-sample-provider-112-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-120-0",
+      "body_ids": [
+        "panama--guna-yala"
+      ],
+      "url": "https://www.youtube.com/watch?v=BBmOg6L2bcg&t=618s",
+      "title": "SESION DE LA MA\u00d1ANA 23/10/26. ASAMBLEA GENERAL DADNAGWEDUBBIR 2 - YouTube",
+      "decision": "congress_meeting_requires_event_identity",
+      "note": "Guna Yala congress hall with named chairs, community flag and microphone speakers, exact session and territorial identity require primary agenda corroboration.",
+      "sample_time_seconds": 622.885956,
+      "screenshot": "/tmp/provider-sample-provider-120-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-120-1",
+      "body_ids": [
+        "panama--guna-yala"
+      ],
+      "url": "https://www.youtube.com/watch?v=yGzGLZ7FS2s&t=1200s",
+      "title": "SESION DE LA MA\u00d1ANA 23/10/26. ASAMBLEA GENERAL DADNAGWEDUBBIR - YouTube",
+      "decision": "congress_meeting_requires_event_identity",
+      "note": "Guna Yala congress hall with named chairs, community flag and microphone speakers, exact session and territorial identity require primary agenda corroboration.",
+      "sample_time_seconds": 1204.946919,
+      "screenshot": "/tmp/provider-sample-provider-120-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-130-0",
+      "body_ids": [
+        "poland--lubuskie"
+      ],
+      "url": "https://www.youtube.com/watch?v=2L8v_hqCzOw&t=1200s",
+      "title": "Debata: Dezinformacja - bro\u0144 masowego przekazu - YouTube",
+      "decision": "public_event_not_certified_business",
+      "note": "Lubuskie press podium group and commemorative speaker; ordinary council business not established.",
+      "sample_time_seconds": 1205.254302,
+      "screenshot": "/tmp/provider-sample-provider-130-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-130-1",
+      "body_ids": [
+        "poland--lubuskie"
+      ],
+      "url": "https://www.youtube.com/watch?v=TfUQUZ3F5C8&t=1200s",
+      "title": "Debata: Niepodleg\u0142a. Samorz\u0105dna. - YouTube",
+      "decision": "public_event_not_certified_business",
+      "note": "Lubuskie press podium group and commemorative speaker; ordinary council business not established.",
+      "sample_time_seconds": 1205.332644,
+      "screenshot": "/tmp/provider-sample-provider-130-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-135-0",
+      "body_ids": [
+        "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira"
+      ],
+      "url": "https://www.youtube.com/watch?v=b8ON_7MG7WU&t=1200s",
+      "title": "Sess\u00e3o Plen\u00e1ria N\u00ba 1 - Elei\u00e7\u00e3o da Mesa da Assembleia Legislativa da Madeira - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Madeira legislative chamber, presiding chair, member at desk, institutional crest and interpreter.",
+      "sample_time_seconds": 1205.267317,
+      "screenshot": "/tmp/provider-sample-provider-135-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-135-1",
+      "body_ids": [
+        "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira"
+      ],
+      "url": "https://www.youtube.com/watch?v=pwPkx_PqHy4&t=1200s",
+      "title": "Sess\u00e3o Solene Comemorativa do \u201cDIA DA REGI\u00c3O AUT\u00d3NOMA DA MADEIRA E DAS COMUNIDADES MADEIRENSES\u201d. - YouTube",
+      "decision": "ceremonial_address_requires_ordinary_business_sample",
+      "note": "Madeira lectern with 50-year anniversary graphics and flags, ceremonial address context.",
+      "sample_time_seconds": 1205.270633,
+      "screenshot": "/tmp/provider-sample-provider-135-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-138-0",
+      "body_ids": [
+        "south-africa--eastern-cape"
+      ],
+      "url": "https://www.youtube.com/watch?v=yCr6lp7w6Ts&t=1200s",
+      "title": "Disability Session: Focus on Albinism - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Eastern Cape SOPA debate 2026 slate only.",
+      "sample_time_seconds": 1205.328354,
+      "screenshot": "/tmp/provider-sample-provider-138-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-138-1",
+      "body_ids": [
+        "south-africa--eastern-cape"
+      ],
+      "url": "https://www.youtube.com/watch?v=24sEO4MHc_o&t=1200s",
+      "title": "Plenary | House Sitting - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Eastern Cape plenary house sitting 30 October 2025, member at desk microphone, legislature URL and interpreter.",
+      "sample_time_seconds": 1205.312546,
+      "screenshot": "/tmp/provider-sample-provider-138-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-141-0",
+      "body_ids": [
+        "south-africa--free-state"
+      ],
+      "url": "https://www.youtube.com/watch?v=1bxKMuTQRIM&t=1200s",
+      "title": "\ud83d\udd34 LIVE | Joint Portfolio Committees Meeting - YouTube",
+      "decision": "identified_committee_presentation",
+      "note": "Free State joint portfolio committee captions 3 and 1 September 2026, programme targets/results slide presentations and Teams relay.",
+      "sample_time_seconds": 1205.274644,
+      "screenshot": "/tmp/provider-sample-provider-141-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-141-1",
+      "body_ids": [
+        "south-africa--free-state"
+      ],
+      "url": "https://www.youtube.com/watch?v=zVLhLMpZUAk&t=1200s",
+      "title": "\ud83d\udd34 LIVE | Joint Portfolio Committees Meeting - YouTube",
+      "decision": "identified_committee_presentation",
+      "note": "Free State joint portfolio committee captions 3 and 1 September 2026, programme targets/results slide presentations and Teams relay.",
+      "sample_time_seconds": 1205.240079,
+      "screenshot": "/tmp/provider-sample-provider-141-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-143-0",
+      "body_ids": [
+        "south-africa--western-cape"
+      ],
+      "url": "https://www.youtube.com/watch?v=xbBKRvOJmDU&t=1200s",
+      "title": "Budget Committee, 10 September 2026, 13:00 - YouTube",
+      "decision": "identified_committee_presentation",
+      "note": "Western Cape budget committee remote participants and socioeconomic/infrastructure and outcome-indicator slides.",
+      "sample_time_seconds": 1205.276354,
+      "screenshot": "/tmp/provider-sample-provider-143-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-143-1",
+      "body_ids": [
+        "south-africa--western-cape"
+      ],
+      "url": "https://www.youtube.com/watch?v=2upx1VQurQA&t=1200s",
+      "title": "Budget Committee, 10 September 2026, 09:00 - YouTube",
+      "decision": "identified_committee_presentation",
+      "note": "Western Cape budget committee remote participants and socioeconomic/infrastructure and outcome-indicator slides.",
+      "sample_time_seconds": 1205.313189,
+      "screenshot": "/tmp/provider-sample-provider-143-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-144-0",
+      "body_ids": [
+        "south-africa--northern-cape"
+      ],
+      "url": "https://www.youtube.com/watch?v=43NJzAEzcsY&t=1078s",
+      "title": "House Sitting | Premiers Reply on State of the Province Address (SOPA) Wednesday 04 March 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Northern Cape premier Zamani Saul reply on SOPA 4 March 2026 and separate house debate 3 March, institutional chamber/crest.",
+      "sample_time_seconds": 1083.288545,
+      "screenshot": "/tmp/provider-sample-provider-144-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-144-1",
+      "body_ids": [
+        "south-africa--northern-cape"
+      ],
+      "url": "https://www.youtube.com/watch?v=Dsxcc0VX4Rc&t=1200s",
+      "title": "House Sitting | Debate | State of the Province Address (SOPA) Tuesday 03 March 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Northern Cape premier Zamani Saul reply on SOPA 4 March 2026 and separate house debate 3 March, institutional chamber/crest.",
+      "sample_time_seconds": 1205.353073,
+      "screenshot": "/tmp/provider-sample-provider-144-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-147-0",
+      "body_ids": [
+        "south-korea--busan"
+      ],
+      "url": "https://www.youtube.com/watch?v=dokgYpW4zDs&t=1200s",
+      "title": "\ubd80\uc0b0 \ubbfc\uc0dd 100\uc77c \ube44\uc0c1\uc870\uce58 \ub300\ucc45\ud68c\uc758\u31632026.07.01. - YouTube",
+      "decision": "executive_press_event_not_legislature_proceedings",
+      "note": "Busan mayor press-conference setting and executive city branding, not city assembly.",
+      "sample_time_seconds": 1205.272255,
+      "screenshot": "/tmp/provider-sample-provider-147-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-149-0",
+      "body_ids": [
+        "south-korea--jeonnam-gwangju"
+      ],
+      "url": "https://www.youtube.com/watch?v=cC4dfc7yRYM&t=1200s",
+      "title": "\uc81c4\ud68c \uc784\uc2dc\ud68c \uc81c6\ucc28 \ubcf8\ud68c\uc758 - YouTube",
+      "decision": "identified_proceedings_identity_crosswalk_pending",
+      "note": "Jeonnam-Gwangju branded council plenary report and administrative committee, interpreter in plenary; current exact institutional identity still needs independent crosswalk.",
+      "sample_time_seconds": 1205.277392,
+      "screenshot": "/tmp/provider-sample-provider-149-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-149-1",
+      "body_ids": [
+        "south-korea--jeonnam-gwangju"
+      ],
+      "url": "https://www.youtube.com/watch?v=C2f-gizqLG8&t=1200s",
+      "title": "\uc81c4\ud68c \uc784\uc2dc\ud68c \uc81c2\ucc28 \ud589\uc815\uc18c\ubc29\uc704\uc6d0\ud68c - YouTube",
+      "decision": "identified_proceedings_identity_crosswalk_pending",
+      "note": "Jeonnam-Gwangju branded council plenary report and administrative committee, interpreter in plenary; current exact institutional identity still needs independent crosswalk.",
+      "sample_time_seconds": 1205.27026,
+      "screenshot": "/tmp/provider-sample-provider-149-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-150-0",
+      "body_ids": [
+        "south-korea--seoul"
+      ],
+      "url": "https://www.youtube.com/watch?v=mr2MNg7mcCk&t=1200s",
+      "title": "Hearing the Voices of Global Talent - YouTube",
+      "decision": "executive_conference_not_legislature_proceedings",
+      "note": "Seoul global-talent migration policy conference, executive speaker and Seoul map; not council sitting.",
+      "sample_time_seconds": 1205.335523,
+      "screenshot": "/tmp/provider-sample-provider-150-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-152-0",
+      "body_ids": [
+        "spain--cortes-de-castilla-y-leon"
+      ],
+      "url": "https://www.youtube.com/watch?v=mZZutlZZSNw&t=1200s",
+      "title": "Sesion Plenaria - PL 11 M - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Castile and Leon lectern members speaking, institutional chamber branding.",
+      "sample_time_seconds": 1205.270662,
+      "screenshot": "/tmp/provider-sample-provider-152-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-152-1",
+      "body_ids": [
+        "spain--cortes-de-castilla-y-leon"
+      ],
+      "url": "https://www.youtube.com/watch?v=_WnZ6jmsmu4&t=1200s",
+      "title": "Sesion Plenaria - PL 10 T - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Castile and Leon lectern members speaking, institutional chamber branding.",
+      "sample_time_seconds": 1205.332225,
+      "screenshot": "/tmp/provider-sample-provider-152-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-153-0",
+      "body_ids": [
+        "spain--parlamento-de-canarias"
+      ],
+      "url": "https://www.youtube.com/watch?v=Zdyth9OSRR0&t=1200s",
+      "title": "Pleno Parlamento DS137 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Canary Islands lectern speaker and desk exchange, parliamentary room setting.",
+      "sample_time_seconds": 1205.331114,
+      "screenshot": "/tmp/provider-sample-provider-153-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-153-1",
+      "body_ids": [
+        "spain--parlamento-de-canarias"
+      ],
+      "url": "https://www.youtube.com/watch?v=pxjaq9md4K0&t=1200s",
+      "title": "Pleno Parlamento DS136 (tarde) - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Canary Islands lectern speaker and desk exchange, parliamentary room setting.",
+      "sample_time_seconds": 1205.310617,
+      "screenshot": "/tmp/provider-sample-provider-153-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-154-0",
+      "body_ids": [
+        "spain--parlamento-de-cantabria"
+      ],
+      "url": "https://www.youtube.com/watch?v=ZiyRdt-bvHo&t=925s",
+      "title": "Health Commission - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Cantabria members at committee microphones with papers and parliament branding.",
+      "sample_time_seconds": 930.292655,
+      "screenshot": "/tmp/provider-sample-provider-154-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-154-1",
+      "body_ids": [
+        "spain--parlamento-de-cantabria"
+      ],
+      "url": "https://www.youtube.com/watch?v=3ZJYR2lbeZQ&t=1200s",
+      "title": "Committee on Education, Vocational Training and Universities - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Cantabria members at committee microphones with papers and parliament branding.",
+      "sample_time_seconds": 1205.334374,
+      "screenshot": "/tmp/provider-sample-provider-154-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-155-0",
+      "body_ids": [
+        "spain--parlamento-de-la-rioja"
+      ],
+      "url": "https://www.youtube.com/watch?v=vYFaASzY2XA&t=1200s",
+      "title": "Sesi\u00f3n Plenaria n\u00ba63 (01/10/2026) - YouTube",
+      "decision": "identified_proceedings",
+      "note": "La Rioja Spain Cristina Maiso deputy and Gonzalo Capellan regional president at plenary lectern, named captions.",
+      "sample_time_seconds": 1205.290992,
+      "screenshot": "/tmp/provider-sample-provider-155-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-155-1",
+      "body_ids": [
+        "spain--parlamento-de-la-rioja"
+      ],
+      "url": "https://www.youtube.com/watch?v=hHfzx13X2qM&t=1200s",
+      "title": "Sesi\u00f3n Plenaria n\u00ba62 (17/09/2026) - YouTube",
+      "decision": "identified_proceedings",
+      "note": "La Rioja Spain Cristina Maiso deputy and Gonzalo Capellan regional president at plenary lectern, named captions.",
+      "sample_time_seconds": 1205.333107,
+      "screenshot": "/tmp/provider-sample-provider-155-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-163-0",
+      "body_ids": [
+        "taiwan--hsinchu-city"
+      ],
+      "url": "https://www.youtube.com/watch?v=qLghZJFBL5s&t=1200s",
+      "title": "115.10.05 \u5e02\u653f\u7e3d\u8cea\u8a62 \u6797\u76c8\u5fb9 \u5433\u65ed\u8c50 \u694a\u73b2\u5b9c - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hsinchu City 11th council 8th regular sitting, 5 October 2026, split-screen official answers/member questions on community mental health and police/fire medical exams.",
+      "sample_time_seconds": 1205.28791,
+      "screenshot": "/tmp/provider-sample-provider-163-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-163-1",
+      "body_ids": [
+        "taiwan--hsinchu-city"
+      ],
+      "url": "https://www.youtube.com/watch?v=kQFUGzIB5Hc&t=1200s",
+      "title": "115.10.05 \u5e02\u653f\u7e3d\u8cea\u8a62 \u5289\u5eb7\u5f65 \u8521\u60e0\u5a77 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Hsinchu City 11th council 8th regular sitting, 5 October 2026, split-screen official answers/member questions on community mental health and police/fire medical exams.",
+      "sample_time_seconds": 1205.27068,
+      "screenshot": "/tmp/provider-sample-provider-163-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-164-0",
+      "body_ids": [
+        "taiwan--kinmen"
+      ],
+      "url": "https://www.youtube.com/watch?v=V4QUOZqp9As&t=1200s",
+      "title": "10/23/2025 Kinmen County Council 8th Session, 8th Regular Meeting-2 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Kinmen chamber split-view desk questions/answers with councillor/official participants; exact names not transcribed.",
+      "sample_time_seconds": 1205.291567,
+      "screenshot": "/tmp/provider-sample-provider-164-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-164-1",
+      "body_ids": [
+        "taiwan--kinmen"
+      ],
+      "url": "https://www.youtube.com/watch?v=4amEjl0t5_Q&t=1200s",
+      "title": "10/22/2025 8th Regular Session of the 8th Kinmen County Council - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Kinmen chamber split-view desk questions/answers with councillor/official participants; exact names not transcribed.",
+      "sample_time_seconds": 1205.331668,
+      "screenshot": "/tmp/provider-sample-provider-164-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-165-0",
+      "body_ids": [
+        "taiwan--lienchiang"
+      ],
+      "url": "https://www.youtube.com/watch?v=4JlV2CmnXx0&t=1200s",
+      "title": "\u9023\u6c5f\u7e23\u8b70\u6703\u7b2c8\u5c46\u7b2c8\u6b21\u5b9a\u671f\u5927\u6703(\u7e23\u653f\u7e3d\u8cea\u8a62)1151022-2 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Lienchiang 8th council 8th ordinary sitting county-government questioning, 22 October 2026, numbered member desks and split view.",
+      "sample_time_seconds": 1205.272223,
+      "screenshot": "/tmp/provider-sample-provider-165-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-165-1",
+      "body_ids": [
+        "taiwan--lienchiang"
+      ],
+      "url": "https://www.youtube.com/watch?v=b97OCslNXhs&t=1200s",
+      "title": "\u9023\u6c5f\u7e23\u8b70\u6703\u7b2c8\u5c46\u7b2c8\u6b21\u5b9a\u671f\u5927\u6703(\u7e23\u653f\u7e3d\u8cea\u8a62)1151022 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Lienchiang 8th council 8th ordinary sitting county-government questioning, 22 October 2026, numbered member desks and split view.",
+      "sample_time_seconds": 1205.312933,
+      "screenshot": "/tmp/provider-sample-provider-165-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-166-0",
+      "body_ids": [
+        "taiwan--penghu"
+      ],
+      "url": "https://www.youtube.com/watch?v=liIUFGNfLvs&t=1200s",
+      "title": "[1151006AM]\u7b2c\u4e94\u5be9\u67e5\u59d4\u54e1\u6703\u7e23\u653f\u7e3d\u8cea\u8a62 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Penghu desk questions/answers 6 and 5 October 2026, named/numbered council participants and microphones.",
+      "sample_time_seconds": 1205.272425,
+      "screenshot": "/tmp/provider-sample-provider-166-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-166-1",
+      "body_ids": [
+        "taiwan--penghu"
+      ],
+      "url": "https://www.youtube.com/watch?v=0BNdyjZhQwk&t=1200s",
+      "title": "[1151005AM]\u7b2c\u4e09\u3001\u56db\u5be9\u67e5\u59d4\u54e1\u6703\u7e23\u653f\u7e3d\u8cea\u8a62 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Penghu desk questions/answers 6 and 5 October 2026, named/numbered council participants and microphones.",
+      "sample_time_seconds": 1205.308378,
+      "screenshot": "/tmp/provider-sample-provider-166-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-167-0",
+      "body_ids": [
+        "taiwan--tainan"
+      ],
+      "url": "https://www.youtube.com/watch?v=5s5jqQKE_hA&t=1200s",
+      "title": "20261002\u5efa\u8a2d\u59d4\u54e1\u6703\u5be9\u67e5\u8b70\u6848 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Tainan committee meeting table, speaker microphones and named desk plates; exact committee coverage requires metadata followup.",
+      "sample_time_seconds": 1205.229586,
+      "screenshot": "/tmp/provider-sample-provider-167-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-167-1",
+      "body_ids": [
+        "taiwan--tainan"
+      ],
+      "url": "https://www.youtube.com/watch?v=HxDUf9LC_N8&t=1200s",
+      "title": "20261002\u8ca1\u7d93\u59d4\u54e1\u6703\u5be9\u67e5\u8b70\u6848 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Tainan committee meeting table, speaker microphones and named desk plates; exact committee coverage requires metadata followup.",
+      "sample_time_seconds": 1205.352095,
+      "screenshot": "/tmp/provider-sample-provider-167-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-168-0",
+      "body_ids": [
+        "united-states--american-samoa"
+      ],
+      "url": "https://www.youtube.com/watch?v=xsa1US_wjkY&t=1200s",
+      "title": "Senate Hearing January 30, 2024. Medicaid Referral Program - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "American Samoa Senate hearing 30 January 2024, 38th legislature 3rd regular session; member at microphone with Fono crest/caption.",
+      "sample_time_seconds": 1205.269022,
+      "screenshot": "/tmp/provider-sample-provider-168-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-170-0",
+      "body_ids": [
+        "united-states--district-of-columbia"
+      ],
+      "url": "https://www.youtube.com/watch?v=x0fTWlqCCq0&t=1200s",
+      "title": "July 14, 2026 Committee of the Whole Meeting and Legislative Meeting - YouTube",
+      "decision": "identified_proceedings",
+      "note": "District of Columbia Committee of Whole 14 July 2026, chair at microphone, regular meeting/law caption.",
+      "sample_time_seconds": 1205.332934,
+      "screenshot": "/tmp/provider-sample-provider-170-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-170-1",
+      "body_ids": [
+        "united-states--district-of-columbia"
+      ],
+      "url": "https://www.youtube.com/watch?v=8xdC7t26qts&t=1200s",
+      "title": "June 30, 2026 Committee of the Whole Meeting and Legislative Meeting - YouTube",
+      "decision": "identified_proceedings",
+      "note": "DC Committee of Whole additional meeting 30 June 2026, councillor at microphone and matching caption.",
+      "sample_time_seconds": 1205.286972,
+      "screenshot": "/tmp/provider-sample-provider-170-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-171-0",
+      "body_ids": [
+        "united-states--kansas"
+      ],
+      "url": "https://www.youtube.com/watch?v=BBGuDlcya5s&t=1200s",
+      "title": "Joint Committee on Administrative Rules and Regulations 10/21/2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Kansas committee members at named Senate desks and separate witness at hearing lectern, Webex relay.",
+      "sample_time_seconds": 1205.309392,
+      "screenshot": "/tmp/provider-sample-provider-171-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-171-1",
+      "body_ids": [
+        "united-states--kansas"
+      ],
+      "url": "https://www.youtube.com/watch?v=MdQQBOJGrk8&t=1200s",
+      "title": "Special Committee on the 340B Program 10/20/2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Kansas committee members at named Senate desks and separate witness at hearing lectern, Webex relay.",
+      "sample_time_seconds": 1205.289363,
+      "screenshot": "/tmp/provider-sample-provider-171-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-173-0",
+      "body_ids": [
+        "united-states--mississippi"
+      ],
+      "url": "https://www.youtube.com/watch?v=LMZXG5kL1cM&t=1200s",
+      "title": "Cybersecurity Select Committee - Room 216, 13 October, 2026; 9:00 AM - YouTube",
+      "decision": "identified_committee_presentation",
+      "note": "Mississippi government cybersecurity minimum protections slide dated 13 October 2026 with Senate committee room inset.",
+      "sample_time_seconds": 1205.331698,
+      "screenshot": "/tmp/provider-sample-provider-173-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-173-1",
+      "body_ids": [
+        "united-states--mississippi"
+      ],
+      "url": "https://www.youtube.com/watch?v=cBl6OS-gY2k&t=1200s",
+      "title": "Joint Committee On Redistricting and Reapportionment - 1 October, 2026: 6:00 PM - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Mississippi joint redistricting hearing 1 October 2026, committee members and public hearing room.",
+      "sample_time_seconds": 1205.287384,
+      "screenshot": "/tmp/provider-sample-provider-173-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-174-0",
+      "body_ids": [
+        "united-states--montana"
+      ],
+      "url": "https://www.youtube.com/watch?v=902uJuc6Qus&t=418s",
+      "title": "Legislator Training - Introduction to Committees - YouTube",
+      "decision": "historical_committee_recording",
+      "note": "Montana Senate Highways and Transportation 7 March 2017 Room405 caption, witness podium; archive proof only.",
+      "sample_time_seconds": 423.33281,
+      "screenshot": "/tmp/provider-sample-provider-174-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-175-0",
+      "body_ids": [
+        "united-states--wyoming"
+      ],
+      "url": "https://www.youtube.com/watch?v=Q4Jj3igjPZI&t=1200s",
+      "title": "Select Committee on School Finance Recalibration, October 21, 2026 - AM 2 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Wyoming Recalibration Committee and School Facilities Committee witnesses at microphones, named committee captions.",
+      "sample_time_seconds": 1205.291442,
+      "screenshot": "/tmp/provider-sample-provider-175-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-175-1",
+      "body_ids": [
+        "united-states--wyoming"
+      ],
+      "url": "https://www.youtube.com/watch?v=5KSwfFtoH_o&t=1200s",
+      "title": "Select Committee on School Facilities, October 20, 2026 - PM - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Wyoming Recalibration Committee and School Facilities Committee witnesses at microphones, named committee captions.",
+      "sample_time_seconds": 1205.330812,
+      "screenshot": "/tmp/provider-sample-provider-175-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-176-0",
+      "body_ids": [
+        "uruguay--canelones"
+      ],
+      "url": "https://www.youtube.com/watch?v=rpEsJ39VZcE&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria - Citaci\u00f3n 20/2026 - Martes 20 de octubre del 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Canelones Cesar Lista and Daniel Paris at named board desks/microphones, Junta Departamental branding.",
+      "sample_time_seconds": 1205.270927,
+      "screenshot": "/tmp/provider-sample-provider-176-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-176-1",
+      "body_ids": [
+        "uruguay--canelones"
+      ],
+      "url": "https://www.youtube.com/watch?v=S6kN4KgH-Zk&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria - Citaci\u00f3n 19/2026 - Martes 6 de octubre del 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Canelones Cesar Lista and Daniel Paris at named board desks/microphones, Junta Departamental branding.",
+      "sample_time_seconds": 1205.309581,
+      "screenshot": "/tmp/provider-sample-provider-176-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-177-0",
+      "body_ids": [
+        "uruguay--durazno"
+      ],
+      "url": "https://www.youtube.com/watch?v=6X4fkYe2zu4&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria - 22 de Octubre 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Durazno Claudio Gonzalez and Andres Petit caption/desk plates at board microphones.",
+      "sample_time_seconds": 1205.291908,
+      "screenshot": "/tmp/provider-sample-provider-177-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-177-1",
+      "body_ids": [
+        "uruguay--durazno"
+      ],
+      "url": "https://www.youtube.com/watch?v=ShbOlxn7JFU&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria - 15 de Octubre 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Durazno Claudio Gonzalez and Andres Petit caption/desk plates at board microphones.",
+      "sample_time_seconds": 1205.313841,
+      "screenshot": "/tmp/provider-sample-provider-177-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-178-0",
+      "body_ids": [
+        "uruguay--florida"
+      ],
+      "url": "https://www.youtube.com/watch?v=YtniS5dsH1c&t=1200s",
+      "title": "Sesi\u00f3n ordinaria correspondiente al d\u00eda viernes 21 de agosto de 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Florida departmental board chamber, chair/member microphones and flags, ongoing sitting room.",
+      "sample_time_seconds": 1205.287121,
+      "screenshot": "/tmp/provider-sample-provider-178-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-178-1",
+      "body_ids": [
+        "uruguay--florida"
+      ],
+      "url": "https://www.youtube.com/watch?v=RlDcvfyQmtw&t=303s",
+      "title": "Sesi\u00f3n extraordinaria correspondiente al jueves 6 de agosto de 2026 - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "Florida extraordinary-sitting caption 6 August, people standing at selected point.",
+      "sample_time_seconds": 308.330239,
+      "screenshot": "/tmp/provider-sample-provider-178-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-179-0",
+      "body_ids": [
+        "uruguay--maldonado"
+      ],
+      "url": "https://www.youtube.com/watch?v=JOqReSdXxFQ&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria 20 de Octubre de 2026 - YouTube",
+      "decision": "institutional_film_not_proceedings",
+      "note": "Maldonado coastal drone film.",
+      "sample_time_seconds": 1205.376018,
+      "screenshot": "/tmp/provider-sample-provider-179-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-179-1",
+      "body_ids": [
+        "uruguay--maldonado"
+      ],
+      "url": "https://www.youtube.com/watch?v=CkZOaYdX200&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria 13 de Octubre de 2026 - YouTube",
+      "decision": "ceremonial_sample_not_ordinary_business",
+      "note": "Maldonado uniformed officials/award-style event, not ordinary debate at selected point.",
+      "sample_time_seconds": 1205.351866,
+      "screenshot": "/tmp/provider-sample-provider-179-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-180-0",
+      "body_ids": [
+        "united-states--united-states-virgin-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=tJ2782liUB4&t=1200s",
+      "title": "10-22-26 Committee on Rules and Judiciary - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "US Virgin Islands Rules/Judiciary committee 22 October 2026 stand-by slate.",
+      "sample_time_seconds": 1205.287621,
+      "screenshot": "/tmp/provider-sample-provider-180-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-180-1",
+      "body_ids": [
+        "united-states--united-states-virgin-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=VVvroSTqp7w&t=1200s",
+      "title": "10-20-26 The Committee on Budget, Appropriations and Finance - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "US Virgin Islands budget appropriations finance committee, Senator Marvin Blyden vice chair named, 20 October 2026.",
+      "sample_time_seconds": 1205.313635,
+      "screenshot": "/tmp/provider-sample-provider-180-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-181-0",
+      "body_ids": [
+        "uruguay--montevideo"
+      ],
+      "url": "https://www.youtube.com/watch?v=nYKI3veD4po&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria del 22 de octubre de 2026 - JDM - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Montevideo ordinary-sitting/preliminary-half-hour start-time slates.",
+      "sample_time_seconds": 1205.269749,
+      "screenshot": "/tmp/provider-sample-provider-181-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-181-1",
+      "body_ids": [
+        "uruguay--montevideo"
+      ],
+      "url": "https://www.youtube.com/watch?v=ujQ6ayMNV1Y&t=1200s",
+      "title": "Sesi\u00f3n Ordinaria del 15 de octubre de 2026 - JDM - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Montevideo ordinary-sitting/preliminary-half-hour start-time slates.",
+      "sample_time_seconds": 1205.272794,
+      "screenshot": "/tmp/provider-sample-provider-181-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-182-0",
+      "body_ids": [
+        "uruguay--rocha"
+      ],
+      "url": "https://www.youtube.com/watch?v=ZN5aMqVuQD8&t=1200s",
+      "title": "Extraordinary Session No. 72 - YouTube",
+      "decision": "public_meeting_requires_event_context",
+      "note": "Rocha offsite public meeting, audience microphone and officials table, exact legislative event not established by selected frames.",
+      "sample_time_seconds": 1205.27314,
+      "screenshot": "/tmp/provider-sample-provider-182-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-182-1",
+      "body_ids": [
+        "uruguay--rocha"
+      ],
+      "url": "https://www.youtube.com/watch?v=7Mv7TAZ5x20&t=324s",
+      "title": "Extraordinary Session No. 72 - YouTube",
+      "decision": "public_meeting_requires_event_context",
+      "note": "Rocha offsite public meeting, audience microphone and officials table, exact legislative event not established by selected frames.",
+      "sample_time_seconds": 329.329771,
+      "screenshot": "/tmp/provider-sample-provider-182-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-183-0",
+      "body_ids": [
+        "uruguay--paysandu"
+      ],
+      "url": "https://www.youtube.com/watch?v=udfsvkNKQ10&t=1200s",
+      "title": "\ud83d\udd34 EN VIVO \ud83c\udfdb\ufe0f Sesi\u00f3n Ordinaria | Junta Departamental de Paysand\u00fa \ud83c\uddfa\ud83c\uddfe \ud83d\udcc5 19 de Octubre - 19:00 Hs. - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Paysandu presiding table and member desk speech, Junta Departamental branding and chamber view.",
+      "sample_time_seconds": 1205.269691,
+      "screenshot": "/tmp/provider-sample-provider-183-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-183-1",
+      "body_ids": [
+        "uruguay--paysandu"
+      ],
+      "url": "https://www.youtube.com/watch?v=BEKlu5Umv7w&t=1028s",
+      "title": "\ud83d\udd34 EN VIVO \ud83c\udfdb\ufe0f Sesi\u00f3n Especial | Junta Departamental de Paysand\u00fa \ud83c\uddfa\ud83c\uddfe \ud83d\udcc5 19 de Octubre 18:00 Hs. - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Paysandu presiding table and member desk speech, Junta Departamental branding and chamber view.",
+      "sample_time_seconds": 1033.273429,
+      "screenshot": "/tmp/provider-sample-provider-183-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-185-0",
+      "body_ids": [
+        "uruguay--salto"
+      ],
+      "url": "https://www.youtube.com/watch?v=4TSd31c0zdU&t=1200s",
+      "title": "Ordinary Session 10/15/2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Salto member Lidia Arrieta reading and separate presiding chair at microphones, institutional captions.",
+      "sample_time_seconds": 1205.287783,
+      "screenshot": "/tmp/provider-sample-provider-185-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-185-1",
+      "body_ids": [
+        "uruguay--salto"
+      ],
+      "url": "https://www.youtube.com/watch?v=YPfzd1cKwag&t=1200s",
+      "title": "Sesi\u00f3n ordinaria 01-10-2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Salto member Lidia Arrieta reading and separate presiding chair at microphones, institutional captions.",
+      "sample_time_seconds": 1205.311663,
+      "screenshot": "/tmp/provider-sample-provider-185-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-188-0",
+      "body_ids": [
+        "italy--assemblea-regionale-siciliana"
+      ],
+      "url": "https://www.youtube.com/watch?v=aTODKS9KmuM&t=1200s",
+      "title": "16th Plenary session of the Euro-Mediterranean Regional and Local Assembly (ARLEM) - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Sicily assembly committee meeting in historic room and remote witness Ruggero Razza with Sala Pompeiana inset, ARS branding.",
+      "sample_time_seconds": 1205.269065,
+      "screenshot": "/tmp/provider-sample-provider-188-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-188-1",
+      "body_ids": [
+        "italy--assemblea-regionale-siciliana"
+      ],
+      "url": "https://www.youtube.com/watch?v=a2J4h6lORAU&t=1200s",
+      "title": "Commissione VI - Seduta del 27/10/2021 - ore 14.00 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Sicily assembly committee meeting in historic room and remote witness Ruggero Razza with Sala Pompeiana inset, ARS branding.",
+      "sample_time_seconds": 1205.312443,
+      "screenshot": "/tmp/provider-sample-provider-188-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-189-0",
+      "body_ids": [
+        "canada--northwest-territories"
+      ],
+      "url": "https://www.youtube.com/watch?v=7SSo4EzUqUc&t=1200s",
+      "title": "20th Assembly, 1st Session, Day 100 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Northwest Territories Members Statements, 20th Assembly 1st Session, standing chamber member at microphone, institution URL visible.",
+      "sample_time_seconds": 1205.288226,
+      "screenshot": "/tmp/provider-sample-provider-189-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-189-1",
+      "body_ids": [
+        "canada--northwest-territories"
+      ],
+      "url": "https://www.youtube.com/watch?v=H7TFd5xmCwY&t=1200s",
+      "title": "20th Assembly, 1st Session, Day 99 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Northwest Territories Members Statements, 20th Assembly 1st Session, standing chamber member at microphone, institution URL visible.",
+      "sample_time_seconds": 1205.317269,
+      "screenshot": "/tmp/provider-sample-provider-189-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-190-0",
+      "body_ids": [
+        "argentina--cordoba"
+      ],
+      "url": "https://www.youtube.com/watch?v=20UsW6NsWGU&t=1200s",
+      "title": "Quinta sesi\u00f3n del Foro de la Cultura Democr\u00e1tica - 20-08-2026 - YouTube",
+      "decision": "public_event_not_certified_business",
+      "note": "Cordoba democratic culture interreligious forum title slate, not ordinary business.",
+      "sample_time_seconds": 1205.288811,
+      "screenshot": "/tmp/provider-sample-provider-190-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-190-1",
+      "body_ids": [
+        "argentina--cordoba"
+      ],
+      "url": "https://www.youtube.com/watch?v=6GgVWeRu1Fw&t=1200s",
+      "title": "16\u00aa SESI\u00d3N ORDINARIA - 148\u00ba PERIODO LEGISLATIVO - 22 DE SEPTIEMBRE DE 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Cordoba Juan Manuel Llamosas, 16th ordinary sitting 22 September 2026, legislator desk and interpreter.",
+      "sample_time_seconds": 1205.309979,
+      "screenshot": "/tmp/provider-sample-provider-190-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-191-0",
+      "body_ids": [
+        "united-kingdom--montserrat"
+      ],
+      "url": "https://www.youtube.com/watch?v=4179RoedJdo&t=1200s",
+      "title": "Opening of the Eighteenth Session of the 18th Parliament of Montserrat 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Montserrat member at lectern and separate chair/clerk table with mace, territory flags and debate setting.",
+      "sample_time_seconds": 1205.290991,
+      "screenshot": "/tmp/provider-sample-provider-191-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-191-1",
+      "body_ids": [
+        "united-kingdom--montserrat"
+      ],
+      "url": "https://www.youtube.com/watch?v=623iwGNBqiU&t=1200s",
+      "title": "Budget Debate Day 1 - Afternoon Session - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Montserrat member at lectern and separate chair/clerk table with mace, territory flags and debate setting.",
+      "sample_time_seconds": 1205.273224,
+      "screenshot": "/tmp/provider-sample-provider-191-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-193-0",
+      "body_ids": [
+        "belgium--parlement-bruxellois-brussels-parlement"
+      ],
+      "url": "https://www.youtube.com/watch?v=uw-BZ-t5tEs&t=1200s",
+      "title": "21/10/2026 - Commission Environnement - Commissie Leefmilieu - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Brussels parliamentary committee rooms, members at microphones, selected environment/economy provider titles.",
+      "sample_time_seconds": 1205.288779,
+      "screenshot": "/tmp/provider-sample-provider-193-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-193-1",
+      "body_ids": [
+        "belgium--parlement-bruxellois-brussels-parlement"
+      ],
+      "url": "https://www.youtube.com/watch?v=qr_bo9Rl34o&t=1200s",
+      "title": "21/10/2026 - Commission Aff. \u00e9conomiques - Commissie Economische zaken - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Brussels parliamentary committee rooms, members at microphones, selected environment/economy provider titles.",
+      "sample_time_seconds": 1205.33412,
+      "screenshot": "/tmp/provider-sample-provider-193-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-194-0",
+      "body_ids": [
+        "austria--tiroler-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=IQB9Brvovdo&t=1200s",
+      "title": "01.10.2026 | 31. Landtagssitzung - Nachmittag - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tirol Petra Wohlfahrtstatter agenda28-32 and Benedikt Lentsch current-affairs debate, Landtag flags/branding and interpreter in second.",
+      "sample_time_seconds": 1205.267044,
+      "screenshot": "/tmp/provider-sample-provider-194-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-194-1",
+      "body_ids": [
+        "austria--tiroler-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=ETW0ulOe4K8&t=1200s",
+      "title": "01.10.2026 | 31. Landtagssitzung - Vormittag - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Tirol Petra Wohlfahrtstatter agenda28-32 and Benedikt Lentsch current-affairs debate, Landtag flags/branding and interpreter in second.",
+      "sample_time_seconds": 1205.274396,
+      "screenshot": "/tmp/provider-sample-provider-194-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-195-0",
+      "body_ids": [
+        "argentina--neuquen"
+      ],
+      "url": "https://www.youtube.com/watch?v=E1g8PPGRyH8&t=1200s",
+      "title": "21a. SESI\u00d3N ORDINARIA, mi\u00e9rcoles 21 de octubre de 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Neuquen legislative sitting stand-by slate.",
+      "sample_time_seconds": 1205.311914,
+      "screenshot": "/tmp/provider-sample-provider-195-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-195-1",
+      "body_ids": [
+        "argentina--neuquen"
+      ],
+      "url": "https://www.youtube.com/watch?v=JF6Y2kIxzgw&t=1200s",
+      "title": "20a. SESI\u00d3N ORDINARIA, jueves 08 de octubre de 2026 - YouTube",
+      "decision": "chamber_view_requires_later_business_sample",
+      "note": "Neuquen 20th ordinary sitting 8 October 2026, standing members; later business sample needed.",
+      "sample_time_seconds": 1205.292086,
+      "screenshot": "/tmp/provider-sample-provider-195-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-196-0",
+      "body_ids": [
+        "canada--alberta"
+      ],
+      "url": "https://www.youtube.com/watch?v=OCVMjhhKQOU&t=1200s",
+      "title": "Standing Committee on the Alberta Heritage Savings Trust Fund - Octiober 16th, 2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Alberta Heritage Savings Trust Fund standing committee, named participants at microphones and committee room.",
+      "sample_time_seconds": 1205.292762,
+      "screenshot": "/tmp/provider-sample-provider-196-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-196-1",
+      "body_ids": [
+        "canada--alberta"
+      ],
+      "url": "https://www.youtube.com/watch?v=M2cOfuFh9MU&t=1200s",
+      "title": "Standing Committee on the Alberta Heritage Savings Trust Fund - September 29th, 2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Alberta Heritage Savings Trust Fund standing committee, named participants at microphones and committee room.",
+      "sample_time_seconds": 1205.333369,
+      "screenshot": "/tmp/provider-sample-provider-196-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-197-0",
+      "body_ids": [
+        "belgium--parlement-de-wallonie"
+      ],
+      "url": "https://www.youtube.com/watch?v=YZ7D5g9zkL0&t=1200s",
+      "title": "S\u00e9ance pl\u00e9ni\u00e8re du 14/10/2026 \u00e0 14:00 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Wallonia parliament logo only at these points.",
+      "sample_time_seconds": 1205.29648,
+      "screenshot": "/tmp/provider-sample-provider-197-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-197-1",
+      "body_ids": [
+        "belgium--parlement-de-wallonie"
+      ],
+      "url": "https://www.youtube.com/watch?v=rrand_dHFWc&t=1200s",
+      "title": "R\u00e9union de commission du 14/10/2026 \u00e0 9:30 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Wallonia parliament logo only at these points.",
+      "sample_time_seconds": 1205.312171,
+      "screenshot": "/tmp/provider-sample-provider-197-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-198-0",
+      "body_ids": [
+        "germany--landtag-von-baden-wurttemberg"
+      ],
+      "url": "https://www.youtube.com/watch?v=xL9byJBe7Lw&t=1200s",
+      "title": "Landesfinale \"Jugend debattiert\" Baden-W\u00fcrttemberg, 17. April 2026, 15:00 Uhr - YouTube",
+      "decision": "youth_event_not_legislature_proceedings",
+      "note": "Baden-Wurttemberg Jugend debattiert state final and youth panel; not elected legislature business.",
+      "sample_time_seconds": 1205.267495,
+      "screenshot": "/tmp/provider-sample-provider-198-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-198-1",
+      "body_ids": [
+        "germany--landtag-von-baden-wurttemberg"
+      ],
+      "url": "https://www.youtube.com/watch?v=_v4qd8U9WWk&t=1200s",
+      "title": "Landesfinale \"Jugend debattiert\" Baden-W\u00fcrttemberg, 19. April 2024, 16:30 Uhr - YouTube",
+      "decision": "youth_event_not_legislature_proceedings",
+      "note": "Baden-Wurttemberg Jugend debattiert state final and youth panel; not elected legislature business.",
+      "sample_time_seconds": 1205.311407,
+      "screenshot": "/tmp/provider-sample-provider-198-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-199-0",
+      "body_ids": [
+        "germany--bayerischer-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=N9nQgCbVM4Y&t=1200s",
+      "title": "90. Plenarsitzung der 19. Wahlperiode | Bayerischer Landtag - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Bavaria chamber lectern members speaking, Landtag branding; exact speaker names not transcribed.",
+      "sample_time_seconds": 1205.312946,
+      "screenshot": "/tmp/provider-sample-provider-199-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-199-1",
+      "body_ids": [
+        "germany--bayerischer-landtag"
+      ],
+      "url": "https://www.youtube.com/watch?v=UeDHXZc5izs&t=1200s",
+      "title": "89. Plenarsitzung der 19. Wahlperiode | Bayerischer Landtag - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Bavaria chamber lectern members speaking, Landtag branding; exact speaker names not transcribed.",
+      "sample_time_seconds": 1205.271828,
+      "screenshot": "/tmp/provider-sample-provider-199-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-200-0",
+      "body_ids": [
+        "france--new-caledonia"
+      ],
+      "url": "https://www.youtube.com/watch?v=fO1f0jXxwRI&t=985s",
+      "title": "Solemn session of Monday, October 19, 2026 at 3:00 PM - YouTube",
+      "decision": "ceremonial_address_requires_ordinary_business_sample",
+      "note": "New Caledonia solemn session with visiting European Commission executive VP Stephane Sejourne, named caption; not ordinary territorial business.",
+      "sample_time_seconds": 990.239938,
+      "screenshot": "/tmp/provider-sample-provider-200-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-200-1",
+      "body_ids": [
+        "france--new-caledonia"
+      ],
+      "url": "https://www.youtube.com/watch?v=nCvVvIe1mP0&t=1200s",
+      "title": "Public session of October 14, 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "New Caledonia public sitting 14 October 2026 title screen.",
+      "sample_time_seconds": 1205.316324,
+      "screenshot": "/tmp/provider-sample-provider-200-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-201-0",
+      "body_ids": [
+        "japan--nagasaki"
+      ],
+      "url": "https://www.youtube.com/watch?v=hcr-kvBnQRk&t=870s",
+      "title": "\u4ee4\u548c\uff18\u5e74\uff16\u6708\u5b9a\u4f8b\u4f1a\u300c\u770c\u8b70\u4f1a\u30ea\u30dd\u30fc\u30c8\u300d2026.8.1\u653e\u9001 - YouTube",
+      "decision": "edited_legislative_information_programme",
+      "note": "Nagasaki general-question programme excerpts, 24 June and 18 March, member questions and interpreters; footage real but selected half-hour edited programme rather than full-sitting proof.",
+      "sample_time_seconds": 875.233618,
+      "screenshot": "/tmp/provider-sample-provider-201-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-201-1",
+      "body_ids": [
+        "japan--nagasaki"
+      ],
+      "url": "https://www.youtube.com/watch?v=PDoej9r5Mco&t=870s",
+      "title": "\u4ee4\u548c\uff18\u5e74\uff13\u6708\u5b9a\u4f8b\u4f1a\u300c\u770c\u8b70\u4f1a\u30ea\u30dd\u30fc\u30c8\u300d2026.4.25\u653e\u9001 - YouTube",
+      "decision": "edited_legislative_information_programme",
+      "note": "Nagasaki general-question programme excerpts, 24 June and 18 March, member questions and interpreters; footage real but selected half-hour edited programme rather than full-sitting proof.",
+      "sample_time_seconds": 875.272674,
+      "screenshot": "/tmp/provider-sample-provider-201-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-203-0",
+      "body_ids": [
+        "france--french-polynesia"
+      ],
+      "url": "https://www.youtube.com/watch?v=FEidsGCMQjM&t=1200s",
+      "title": "Troisi\u00e8me s\u00e9ance de la session budg\u00e9taire du jeudi 15 octobre 2026 - VO - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "French Polynesia 15 October budget sitting slate only.",
+      "sample_time_seconds": 1205.331829,
+      "screenshot": "/tmp/provider-sample-provider-203-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-203-1",
+      "body_ids": [
+        "france--french-polynesia"
+      ],
+      "url": "https://www.youtube.com/watch?v=xxmzImWPwqk&t=1200s",
+      "title": "Troisi\u00e8me s\u00e9ance de la session budg\u00e9taire du jeudi 15 octobre 2026 - VF - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "French Polynesia 15 October budget sitting slate only.",
+      "sample_time_seconds": 1205.315509,
+      "screenshot": "/tmp/provider-sample-provider-203-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-206-0",
+      "body_ids": [
+        "new-zealand--cook-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=xYQxgo3tRgk&t=525s",
+      "title": "Parliament Sitting - 30 September 2020 - 7:30pm - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Cook Islands speaker Niki Rattle chair and separate member standing in parliament, flag/desk identification.",
+      "sample_time_seconds": 530.304975,
+      "screenshot": "/tmp/provider-sample-provider-206-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-206-1",
+      "body_ids": [
+        "new-zealand--cook-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=sooASyvUhdM&t=403s",
+      "title": "Parliament Sitting - 30 September 2020 - 5pm - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Cook Islands speaker Niki Rattle chair and separate member standing in parliament, flag/desk identification.",
+      "sample_time_seconds": 408.340916,
+      "screenshot": "/tmp/provider-sample-provider-206-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-207-0",
+      "body_ids": [
+        "spain--corts-valencianes"
+      ],
+      "url": "https://www.youtube.com/watch?v=75OEYzKoSMA&t=520s",
+      "title": "PETITIONS COMMITTEE - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Valencia committee presiding table and plenary member at desk with interpreter, Corts branding.",
+      "sample_time_seconds": 525.288275,
+      "screenshot": "/tmp/provider-sample-provider-207-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-207-1",
+      "body_ids": [
+        "spain--corts-valencianes"
+      ],
+      "url": "https://www.youtube.com/watch?v=XE6jdL1u0os&t=1200s",
+      "title": "PLENARY SESSION OF THE VALENCIAN PARLIAMENT - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Valencia committee presiding table and plenary member at desk with interpreter, Corts branding.",
+      "sample_time_seconds": 1205.275722,
+      "screenshot": "/tmp/provider-sample-provider-207-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-210-0",
+      "body_ids": [
+        "united-kingdom--british-virgin-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=fJyYb2n3wKE&t=1200s",
+      "title": "CONTINUATION OF THE FIFTH SITTING OF THE THIRD SESSION OF THE FIFTH HOUSE OF ASSEMBLY - YouTube",
+      "decision": "identified_proceedings",
+      "note": "British Virgin Islands chamber members speaking, separate Premier Natalio Wheatley identified, House crest.",
+      "sample_time_seconds": 1205.354474,
+      "screenshot": "/tmp/provider-sample-provider-210-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-210-1",
+      "body_ids": [
+        "united-kingdom--british-virgin-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=lsT8VhvBVEA&t=1200s",
+      "title": "CONTINUATION OF THE FIFTH SITTING OF THE THIRD SESSION OF THE FIFTH HOUSE OF ASSEMBLY - YouTube",
+      "decision": "identified_proceedings",
+      "note": "British Virgin Islands chamber members speaking, separate Premier Natalio Wheatley identified, House crest.",
+      "sample_time_seconds": 1205.34599,
+      "screenshot": "/tmp/provider-sample-provider-210-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-211-0",
+      "body_ids": [
+        "united-kingdom--isle-of-man"
+      ],
+      "url": "https://www.youtube.com/watch?v=JESL6TOEIR8&t=1200s",
+      "title": "Social Affairs Policy Review Committee - Oral Evidence - Health and Social Care & Manx Care - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Isle of Man Tynwald committee room and witness Teresa Cope chief executive Manx Care, named desks and crest.",
+      "sample_time_seconds": 1205.236992,
+      "screenshot": "/tmp/provider-sample-provider-211-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-211-1",
+      "body_ids": [
+        "united-kingdom--isle-of-man"
+      ],
+      "url": "https://www.youtube.com/watch?v=tjlgj4QMrUs&t=1200s",
+      "title": "Public Accounts Committee - Oral Evidence Hearing - Health Care Funding - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Isle of Man Tynwald committee room and witness Teresa Cope chief executive Manx Care, named desks and crest.",
+      "sample_time_seconds": 1205.313338,
+      "screenshot": "/tmp/provider-sample-provider-211-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-212-0",
+      "body_ids": [
+        "united-kingdom--cayman-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=BXNY8j7ndhs&t=1200s",
+      "title": "Finance Committee | 8 October 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Cayman finance committee starting-soon 8 October and parliament resume-shortly 5 October slates.",
+      "sample_time_seconds": 1205.299206,
+      "screenshot": "/tmp/provider-sample-provider-212-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-212-1",
+      "body_ids": [
+        "united-kingdom--cayman-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=5Po-C74sHDE&t=1200s",
+      "title": "Fourth Sitting of the Second Meeting of the 2026-2027 Session | 5 October 2026 | Part 3 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Cayman finance committee starting-soon 8 October and parliament resume-shortly 5 October slates.",
+      "sample_time_seconds": 1205.313751,
+      "screenshot": "/tmp/provider-sample-provider-212-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-213-0",
+      "body_ids": [
+        "united-kingdom--northern-ireland"
+      ],
+      "url": "https://www.youtube.com/watch?v=BR0exlGGdbU&t=1200s",
+      "title": "Committee for Agriculture, Environment and Rural Affairs - Thursday 22 October 2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Northern Ireland committee room members/witnesses, agriculture/environment and economy captions/room banners.",
+      "sample_time_seconds": 1205.297961,
+      "screenshot": "/tmp/provider-sample-provider-213-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-213-1",
+      "body_ids": [
+        "united-kingdom--northern-ireland"
+      ],
+      "url": "https://www.youtube.com/watch?v=3SnSdQusNu8&t=1200s",
+      "title": "Committee for The Executive Office - Wednesday 21 October 2026 - YouTube",
+      "decision": "identified_committee_proceedings",
+      "note": "Northern Ireland committee room members/witnesses, agriculture/environment and economy captions/room banners.",
+      "sample_time_seconds": 1205.272832,
+      "screenshot": "/tmp/provider-sample-provider-213-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-214-0",
+      "body_ids": [
+        "united-kingdom--turks-and-caicos-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=SoF6j5RH4j0&t=1200s",
+      "title": "1st Sitting - 6th Meeting - 2nd Session - 13th Legislature of the TCI - 22 Oct 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Turks and Caicos rotating coat-of-arms graphic only.",
+      "sample_time_seconds": 1205.265118,
+      "screenshot": "/tmp/provider-sample-provider-214-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "provider-214-1",
+      "body_ids": [
+        "united-kingdom--turks-and-caicos-islands"
+      ],
+      "url": "https://www.youtube.com/watch?v=-xMcOXIjp0w&t=1200s",
+      "title": "2nd Sitting - 5th Meeting - 2nd Session - 13th Legislature of the TCI - 16 Oct 2026 - YouTube",
+      "decision": "opening_or_interlude_requires_later_sample",
+      "note": "Turks and Caicos rotating coat-of-arms graphic only.",
+      "sample_time_seconds": 1205.311625,
+      "screenshot": "/tmp/provider-sample-provider-214-1.png",
+      "full_service_certified": false
+    }
+  ]
+}

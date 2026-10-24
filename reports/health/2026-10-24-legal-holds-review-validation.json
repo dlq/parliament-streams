@@ -1,0 +1,39 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "All eleven initial legal holds; evidence reconciliation and repository checks only.",
+  "result": "passed",
+  "reviewed_cases": 11,
+  "closed_current_default_scope_exclusions": 3,
+  "remaining_specific_authority_holds": 8,
+  "new_eligible_authority_clearances": 0,
+  "unit_tests": {
+    "run": 128,
+    "skipped": 1,
+    "new_inventory_module_tests": 13,
+    "result": "passed"
+  },
+  "checks": {
+    "institution_inventory_validator": "passed",
+    "all_168_research_and_discovery_json_files": "parsed",
+    "ruff_check_and_format_changed_python": "passed",
+    "mypy_changed_validator": "passed",
+    "git_diff_whitespace": "passed"
+  },
+  "independent_review": {
+    "france_scope_reviews": 2,
+    "combined_inventory_source_case_review": "passed; minor French confirmed-finding arrays populated"
+  },
+  "inventory_status_counts": {
+    "eligible_legislature": 940,
+    "historical_institution_superseded": 2,
+    "outside_default_scope": 462,
+    "specific_authority_evidence_hold": 8
+  },
+  "artifact_hashes": {
+    "reports/discovery/2026-10-24-legal-holds-review.json": "72cf30fb9b023766fa936c0618a99ad3fd790adda40d5788fcb604a932f256b5",
+    "data/discovery/institutions.json": "eeef20c52fe866325364536516722d1343501df52df32551a4bf2ad1ed091323"
+  },
+  "outreach_sent": false,
+  "metadata_stream_epg_rights_phase_started": false,
+  "all_legal_questions_resolved": false
+}

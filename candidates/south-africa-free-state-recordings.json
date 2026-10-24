@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Official institution/provider designation and retained selected-recording validation from23October2026. 3September2026 Public Accounts/Finance and Education/Health/SocialServices joint committees, WomenDevelopment programme targets/performance slide under assembly dated committee banner. 1September2026 Public Accounts/Finance and CooperativeGovernance/Premier joint committees,2026/27 performance targets slide under dated assembly banner. Not two plenaries. Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+    "Evidence: reports/discovery/2026-10-24-nine-reconciled-recording-publication-reviews.json"
+  ],
+  "channel": {
+    "id": "south-africa-free-state-recordings",
+    "name": "Free State Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Free State",
+    "legislature": "Free State Provincial Legislature",
+    "external_ids": {
+      "wikidata_qid": "Q17053115",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q17053115",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Wikidata revision 2472350002; primary/provider and selected media findings are independently retained in the publication report."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://fsl.gov.za/",
+    "provenance_note": "Official institution/provider designation and retained selected-recording validation from23October2026. 3September2026 Public Accounts/Finance and Education/Health/SocialServices joint committees, WomenDevelopment programme targets/performance slide under assembly dated committee banner. 1September2026 Public Accounts/Finance and CooperativeGovernance/Premier joint committees,2026/27 performance targets slide under dated assembly banner. Not two plenaries. Q17053115 is the Free State Legislature, with South Africa P17Q258, province P1001Q160284 and fsl.gov.za website. The own institution designates the provider; selected1and3September2026recordings are joint-committee programme/targets presentations, not two plenaries. Both selected recordings decoded inChromium/WebKit, with individual visual dispositions retained. Same-day/part recordings do not establish independent-date continuity, current live or full room coverage.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected muted playback and visible interpreters/captions where specifically observed do not certify audible language/quality or source-wide captions, signing or audio description. Contextual language metadata is not an all-track claim."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://fsl.gov.za/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open. Official viewing link only, personal-use permission pending; no independent embed, extracted stream, IPTV export or implemented XMLTV parser.",
+      "evidence": [
+        "https://fsl.gov.za/",
+        "https://www.youtube.com/@freestatelegislature"
+      ],
+      "recommendation": "Use the official institution and designated viewing service; independently confirm applicable video permissions and current live/full rooms/audio/accessibility."
+    }
+  }
+}

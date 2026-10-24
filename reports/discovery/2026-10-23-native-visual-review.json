@@ -1,0 +1,132 @@
+{
+  "research_date": "2026-10-23",
+  "method": "All 18 advancing native-page signals visually reviewed. Moving video, news, receptions, educational material and off-air animations are distinguished from identified legislature proceedings.",
+  "results": [
+    {
+      "id": "indonesia--jambi",
+      "url": "https://dprd-jambiprov.go.id/video",
+      "decision": "edited_news_not_full_proceedings",
+      "note": "Jambi TV news presenter and Seputar Jambi branding; a short news item, consistent with the earlier held inauguration clip.",
+      "screenshot": "/tmp/native-lead-indonesia--jambi.png"
+    },
+    {
+      "id": "germany--schleswig-holsteinischer-landtag",
+      "url": "https://www.landtag.ltsh.de/aktuelles/streaming/",
+      "decision": "music_reception_not_proceedings",
+      "note": "The advancing player shows a singer, piano and reception setting by the waterfront. Runtime alone is not evidence of a plenary sitting.",
+      "screenshot": "/tmp/native-lead-germany--schleswig-holsteinischer-landtag.png"
+    },
+    {
+      "id": "indonesia--papua",
+      "url": "https://dpr.papua.go.id/pages/video",
+      "decision": "edited_news_not_full_proceedings",
+      "note": "Multiple videos show protest/flood field visits and institutional news thumbnails; the observed clips do not establish an own plenary sitting.",
+      "screenshot": "/tmp/native-lead-indonesia--papua.png"
+    },
+    {
+      "id": "new-zealand--tokelau",
+      "url": "https://www.tokelau.org.nz/site/tokelau/files/SIDS/MyTokelauVideo.mp4",
+      "decision": "general_promotional_film_not_proceedings",
+      "note": "The selected MyTokelauVideo.mp4 is a general SIDS/site film with flag opening; no General Fono proceeding designation established.",
+      "screenshot": "/tmp/native-lead-new-zealand--tokelau.png"
+    },
+    {
+      "id": "moldova--transnistria-de-facto",
+      "url": "https://vspmr.org/information/video/",
+      "decision": "video_news_not_full_proceedings",
+      "note": "The selected \u0412\u0438\u0434\u0435\u043e\u043d\u043e\u0432\u043e\u0441\u0442\u0438 index shows short field/history clips; no own legislative business identified in this sample.",
+      "screenshot": "/tmp/native-lead-moldova--transnistria-de-facto.png"
+    },
+    {
+      "id": "philippines--eastern-samar",
+      "url": "https://easternsamar.gov.ph/videos/",
+      "decision": "community_news_not_proceedings",
+      "note": "The short video shows community/relief activity outside a chamber, not provincial-board deliberation.",
+      "screenshot": "/tmp/native-lead-philippines--eastern-samar.png"
+    },
+    {
+      "id": "philippines--surigao-del-sur",
+      "url": "https://surigaodelsur.gov.ph/live",
+      "decision": "executive_visit_news_not_proceedings",
+      "note": "The video is labelled a City of Passi/Iloilo delegation visit and shows aerial campus footage; not the provincial board\u2019s proceedings.",
+      "screenshot": "/tmp/native-lead-philippines--surigao-del-sur.png"
+    },
+    {
+      "id": "poland--wielkopolskie",
+      "url": "https://www.umww.pl/transmisje-obrad-sejmiku",
+      "decision": "council_rollcall_visible_needs_later_business_check",
+      "note": "The video displays XXVIII Sesja Sejmiku Wojew\u00f3dztwa Wielkopolskiego and member attendance/quorum. This is council session material; later substantive business and a second dated sitting still need checking.",
+      "screenshot": "/tmp/native-lead-poland--wielkopolskie.png"
+    },
+    {
+      "id": "spain--parlamento-de-la-rioja",
+      "url": "https://www.parlamento-larioja.org/conoce-el-parlamento/video-institucional-1",
+      "decision": "institutional_film_not_proceedings",
+      "note": "The selected entry is explicitly V\u00eddeo institucional del Parlamento de La Rioja, with opening institutional logo; not a designated plenary archive sample.",
+      "screenshot": "/tmp/native-lead-spain--parlamento-de-la-rioja.png"
+    },
+    {
+      "id": "united-states--connecticut",
+      "url": "http://ct-n.com/CTNplayer.asp?livestream=2",
+      "decision": "broadcaster_information_slate",
+      "note": "CT-N Live Stream 2 is advancing but displays a network information slate. No legislature sitting identified in the sampled output.",
+      "screenshot": "/tmp/native-lead-united-states--connecticut.png"
+    },
+    {
+      "id": "united-states--kansas",
+      "url": "http://sg001-harmony.sliq.net/00287/Harmony/en/PowerBrowser/RoomRouter?location=house&viewMode=1#handoutFile_",
+      "decision": "explicit_off_air_loop",
+      "note": "The player states no live webcasts are currently in progress. Its short animated loop is not an active sitting.",
+      "screenshot": "/tmp/native-lead-united-states--kansas.png"
+    },
+    {
+      "id": "united-states--united-states-virgin-islands",
+      "url": "https://legvi.org/media/#live",
+      "decision": "promotional_loop_not_proceedings",
+      "note": "The captured media is a legislative website/app promotional graphic and Watch Now entry, not visible deliberation.",
+      "screenshot": "/tmp/native-lead-united-states--united-states-virgin-islands.png"
+    },
+    {
+      "id": "canada--british-columbia",
+      "url": "https://www.leg.bc.ca/parliamentary-business/broadcasts-and-webcasts",
+      "decision": "media_not_visible_in_capture",
+      "note": "Page header/control-room photograph is visible; short media elements advancing offscreen do not establish a sitting.",
+      "screenshot": "/tmp/native-lead-canada--british-columbia.png"
+    },
+    {
+      "id": "canada--northwest-territories",
+      "url": "https://www.ntlegislativeassembly.ca/legislative-business/watch-session",
+      "decision": "chamber_proceedings_visible_limited_detail",
+      "note": "The official Watch Session page shows a small live chamber inset with members and a standing participant; source identity is the Assembly page. Resolution limits speaker/date checks; current rooms and full coverage remain unresolved.",
+      "screenshot": "/tmp/native-lead-canada--northwest-territories.png"
+    },
+    {
+      "id": "canada--ontario",
+      "url": "https://www.ola.org/en/legislative-business/video",
+      "decision": "educational_clip_not_proceedings",
+      "note": "The embedded feature is Ontario\u2019s Three Branches of Government, an educational video, not the requested legislature sitting.",
+      "screenshot": "/tmp/native-lead-canada--ontario.png"
+    },
+    {
+      "id": "argentina--cordoba",
+      "url": "https://legislaturacba.gob.ar/vivo/",
+      "decision": "recess_or_opening_slate",
+      "note": "Legislature of C\u00f3rdoba session label is visible, but the sampled frame says the sitting continues shortly after an intermission; this frame is not deliberative business.",
+      "screenshot": "/tmp/native-lead-argentina--cordoba.png"
+    },
+    {
+      "id": "netherlands--noord-brabant",
+      "url": "https://noordbrabant.bestuurlijkeinformatie.nl/Agenda/Index/f43c2898-ed16-4971-ad5a-cb26361ebd5b",
+      "decision": "identified_council_proceedings_visible",
+      "note": "The official iBabs page identifies Provinciale Staten on 16 October 2026, chair I.R. Adema; the video shows Ina Adema identified as chair of Provinciale Staten.",
+      "screenshot": "/tmp/native-lead-netherlands--noord-brabant.png"
+    },
+    {
+      "id": "united-kingdom--gibraltar",
+      "url": "https://www.parliament.gi/about/ceremonial-opening",
+      "decision": "ceremonial_archive_not_complete_current_validation",
+      "note": "The page contains dated ceremonial openings (2015, 2019 and 2023). Some opening/chamber scenes are visible, but this probe does not newly certify current ordinary sittings.",
+      "screenshot": "/tmp/native-lead-united-kingdom--gibraltar.png"
+    }
+  ]
+}

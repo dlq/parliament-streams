@@ -1,0 +1,58 @@
+{
+  "research_date": "2026-10-23",
+  "method": "Human review of browser-captured player frames, paired with the recorded primary/provider chain and video metadata. A content observation is not an independent media licence, complete language/accessibility certification or current-live guarantee.",
+  "results": [
+    {
+      "key": "later2-provider-004-0",
+      "body_ids": [
+        "indonesia--kalimantan-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=OBqadeFriww&t=8473s",
+      "title": "RAPAT PARIPURNA KE - 9 MASA PERSIDANGAN I TAHUN SIDANG 2026 - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Central Kalimantan plenary speakers at institutional lectern, provincial DPRD crest; first contains recess-report caption.",
+      "sample_time_seconds": 8478.317451,
+      "screenshot": "/tmp/provider-sample-later2-provider-004-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later2-provider-004-1",
+      "body_ids": [
+        "indonesia--kalimantan-tengah"
+      ],
+      "url": "https://www.youtube.com/watch?v=CRz14VG4nAM&t=3400s",
+      "title": "8TH PLENARY MEETING, FIRST SESSION PERIOD, 2026 LEGISLATIVE YEAR - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Central Kalimantan plenary speakers at institutional lectern, provincial DPRD crest; first contains recess-report caption.",
+      "sample_time_seconds": 3405.332544,
+      "screenshot": "/tmp/provider-sample-later2-provider-004-1.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later2-provider-010-0",
+      "body_ids": [
+        "argentina--buenos-aires"
+      ],
+      "url": "https://www.youtube.com/watch?v=KypeCfrDA_I&t=8645s",
+      "title": "SESI\u00d3N ORDINARIA - 20 DE OCTUBRE DE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Buenos Aires Deputies Monica Schlotthauer on Hospital Esteves and Facundo Tignanelli at chamber desks, named captions and interpreters.",
+      "sample_time_seconds": 8650.316129,
+      "screenshot": "/tmp/provider-sample-later2-provider-010-0.png",
+      "full_service_certified": false
+    },
+    {
+      "key": "later2-provider-010-1",
+      "body_ids": [
+        "argentina--buenos-aires"
+      ],
+      "url": "https://www.youtube.com/watch?v=i6VAxadbajM&t=11391s",
+      "title": "SESI\u00d3N ORDINARIA - 29 DE SEPTIEMBRE 2026 - DIPUTADOS PROVINCIA DE BUENOS AIRES - YouTube",
+      "decision": "identified_proceedings",
+      "note": "Buenos Aires Deputies Monica Schlotthauer on Hospital Esteves and Facundo Tignanelli at chamber desks, named captions and interpreters.",
+      "sample_time_seconds": 11397.723816,
+      "screenshot": "/tmp/provider-sample-later2-provider-010-1.png",
+      "full_service_certified": false
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "checked_at": "2026-10-23T16:46:28.564521+00:00",
+  "method": "Normal public official/archive/provider pages. Advancing decoded video and screenshots of actual legislative business; not decorative homepage animation or slates. Current-live, all-room, independent reuse and EPG implementation are separate gates.",
+  "results": [
+    {
+      "id": "argentina-neuquen-legislature-webcasts",
+      "status": "ok",
+      "note": "The official institution homepage/live page links this exact provider channel. Actual proceedings from the 8 and 21 October 2026 ordinary sittings play beyond opening graphics. The embedded live-page recording did not start on this attempt; normal public watch pages did. The official agenda has different ordinal session numbers from the provider titles, so dates, institution, chamber footage and exact provider IDs are retained without claiming an exact event-number reconciliation. Committee and current live coverage remain unvalidated. A sign-language interpreter is visible in one sampled recording; language and full-service coverage are unreviewed.",
+      "samples": [
+        {
+          "key": "neuquen-oct21",
+          "url": "https://www.youtube.com/watch?v=E1g8PPGRyH8&t=1800s",
+          "title": "21a. SESIÓN ORDINARIA, miércoles 21 de octubre de 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.458127,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14119.241,
+              "frames": 121,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.692035,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 14119.241,
+              "frames": 188,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "neuquen-oct8",
+          "url": "https://www.youtube.com/watch?v=JF6Y2kIxzgw&t=1800s",
+          "title": "20a. SESIÓN ORDINARIA, jueves 08 de octubre de 2026 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.587855,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 11326.501,
+              "frames": 278,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.824502,
+              "width": 854,
+              "height": 480,
+              "ready": 4,
+              "duration": 11326.501,
+              "frames": 345,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "italy-sicily-assembly-video",
+      "status": "ok",
+      "note": "The official Lavori d’Aula archive exposes dated video segments through normal public controls. The 21 October 2026 segment plays at 30 minutes and the 22 October 05:42 segment plays from its opening with actual chamber business visible; both decode advancing frames. The session 279 index spans several dates and video parts, so a part is not counted as a separate channel. The institution-linked YouTube channel additionally has validated committee VI/Antimafia recordings from 2021; these are historical. Live plenary and current committee coverage remain unvalidated. The decorative homepage video is not proceedings evidence.",
+      "samples": [
+        {
+          "key": "sicily-plenary-oct21-middle",
+          "url": "https://www.ars.sicilia.it/agenda/seduta/aula/video/2941591",
+          "title": "",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1811.107722,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 53322.64799999997,
+              "frames": 368,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1813.31309,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 53322.64799999997,
+              "frames": 434,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "sicily-plenary-oct22-middle",
+          "url": "https://www.ars.sicilia.it/agenda/seduta/aula/video/2941595",
+          "title": "",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 12.135511,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 983.873,
+              "frames": 367,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 14.337825,
+              "width": 1280,
+              "height": 720,
+              "ready": 4,
+              "duration": 983.873,
+              "frames": 433,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "sicily-committee6",
+          "url": "https://www.youtube.com/watch?v=a2J4h6lORAU&t=1200s",
+          "title": "Commissione VI - Seduta del 27/10/2021 - ore 14.00 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1202.687035,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 5000.221,
+              "frames": 213,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1204.918806,
+              "width": 256,
+              "height": 144,
+              "ready": 4,
+              "duration": 5000.221,
+              "frames": 280,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "sicily-antimafia",
+          "url": "https://www.youtube.com/watch?v=3T7Cq0ZA64o&t=1800s",
+          "title": "Commissione Antimafia seduta n. 228 del 9 giugno 2021 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1803.500811,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9091.181,
+              "frames": 190,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1805.735304,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 9091.181,
+              "frames": 257,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "us-west-virginia-legislature-media",
+      "status": "ok",
+      "note": "The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated.",
+      "samples": [
+        {
+          "key": "wv-school-safety",
+          "url": "https://www.youtube.com/watch?v=axz8m2a_BTk&t=1200s",
+          "title": "House General Session on School Safety - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.587327,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 4044.221,
+              "frames": 113,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.835335,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 4044.221,
+              "frames": 180,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        },
+        {
+          "key": "wv-hearing",
+          "url": "https://www.youtube.com/watch?v=1bM_-v4UhIU&t=1200s",
+          "title": "Virtual Public Hearing on SB275 - YouTube",
+          "status": 200,
+          "first": [
+            {
+              "tag": "VIDEO",
+              "time": 1203.535496,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 3448.421,
+              "frames": 111,
+              "tracks": []
+            }
+          ],
+          "later": [
+            {
+              "tag": "VIDEO",
+              "time": 1205.839998,
+              "width": 640,
+              "height": 360,
+              "ready": 4,
+              "duration": 3448.421,
+              "frames": 180,
+              "tracks": []
+            }
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

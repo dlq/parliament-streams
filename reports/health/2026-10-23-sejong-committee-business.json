@@ -1,0 +1,93 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "sejong-committee-business",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=SyhazEqap4g&t=5400s",
+      "video": true,
+      "offset": 5400,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T21:54:56.455Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 도환위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 5403.961225,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 204,
+        "tracks": []
+      },
+      "later": {
+        "time": 5406.172603,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 270,
+        "tracks": []
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "recess_not_a_substantive_sample",
+      "screenshot": "/tmp/continue-sejong-committee-business-chromium.png",
+      "visual_review": "Urban/Environment recess card at5400seconds, not substantive proceedings."
+    },
+    {
+      "key": "sejong-committee-business",
+      "body_id": "south-korea--sejong",
+      "url": "https://www.youtube.com/watch?v=SyhazEqap4g&t=5400s",
+      "video": true,
+      "offset": 5400,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T21:55:09.420Z",
+      "status": 200,
+      "title": "[세종시의회] 제109회 정례회 도환위 제3차 회의 - YouTube",
+      "advertisement": false,
+      "first": {
+        "time": 5403.605229869,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 168,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "later": {
+        "time": 5405.817016202,
+        "width": 854,
+        "height": 480,
+        "ready": 4,
+        "duration": 26512.001,
+        "frames": 229,
+        "tracks": [
+          {
+            "language": "",
+            "kind": "forced"
+          },
+          {
+            "language": "",
+            "kind": "forced"
+          }
+        ]
+      },
+      "advancing": true,
+      "sample_offset_reached": true,
+      "outcome": "recess_not_a_substantive_sample",
+      "screenshot": "/tmp/continue-sejong-committee-business-webkit.png",
+      "visual_review": "Urban/Environment recess card at5400seconds, not substantive proceedings."
+    }
+  ]
+}

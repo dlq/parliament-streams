@@ -1,12 +1,177 @@
 # Changelog
 
+## 24 October — Public Legislature Inventory And Contribution Paths
+
+Added a searchable Legislatures page for the working inventory across all 71
+baseline country groups. Country groups, nested chambers, authority statuses and
+expandable evidence keep confirmed eligibility separate from viewing-service
+validation. Explicit source matches link to the catalogue; exclusions and
+historical institutions remain available through filters. The interface supports
+23 locales while preserving recorded institution names and English research notes.
+
+Missing institutions, official broadcasts, translations, corrections, accessibility
+findings and other ideas have dedicated contribution links. Individual records
+prefill their correction reports. Shared navigation, the sitemap, documentation
+and CI include the new page and its generated snapshot. Python, HTML,
+accessibility and Chromium/WebKit desktop/mobile checks pass.
+
+## 24 October — Eleven Legal Holds Reviewed
+
+All 11 starting cases have further primary-source findings. Three French cases
+are reclassified as current default-scope exclusions with dated reopening tests;
+**eight specific holds remain**: seven Panamanian cases and FNTA. The new evidence
+confirms traditional legal/justice authority and FNTA amended-Bill passage without
+inventing the missing allocation, assent or commencement. The operational register
+is updated. Later metadata, streams, EPG and rights work remains deferred.
+[Case findings](reports/discovery/2026-10-24-legal-holds-review.md) ·
+[Document-request drafts](reports/discovery/2026-10-24-legal-document-requests.md)
+(drafts only; nothing sent).
+
+
+## Earlier 24 October — Institution Inventory Reconciled
+
+All 19 original scope questions are decided: **14 eligible, five outside scope**.
+The operational register applies national/regional chamber crosswalks, comparable
+regional autonomies and 22 corrections to older exclusions. It covers all 71
+baseline country groups under the confirmed first-level/autonomous boundary.
+**Eleven specific legal-instrument holds remained at this stage**; no exhaustive census or full
+service validation is claimed. The older 652-body stream register remains its
+original cohort. [Findings and holds](reports/discovery/2026-10-24-inventory-reconciliation.md)
+· [Operational register](data/discovery/README.md).
+
+## Current Individual Follow-up — 24 October
+
+Local catalogue: **243 sources / 143 mapped regional jurisdictions**. Within the earlier 652-body cohort, **143 have catalogue records / 509 lack a published service**; **23 institutional-reference/route gaps** remain. Thirteen further regional recording services are added in this follow-up, with same-sitting parts, historical footage and browser limits explicitly scoped. All 490 first searches, 123 alias searches and 19 further full-name searches completed; identifier leads still require individual primary crosschecks. The service-evidence register reconciles that original 652-body cohort and 150 formal candidates without treating recorded checks as full validation. [Current evidence and unresolved claims](docs/research-status.md). The inventory crosswalk resolves the 19 original questions; the subsequent legal review leaves eight named holds. It does not certify an exhaustive census. [Inventory findings](reports/discovery/2026-10-24-inventory-reconciliation.md).
+
+## 23 October — Continued Identity And Recording Validation
+
+Added32 official viewing links since the Chubut follow-up: Łódź, Silesia, nine current Korean councils, eleven Argentine provincial/city services nine Brazilian state assemblies and Caldas, Colombia. Local catalogue: **198 sources / 100 mapped regional jurisdictions**, **100 eligible bodies covered / 552 without a published service**. Five scoped institutional references leave **45 URL gaps**. Exact institutional IDs, own provider designation and selected recorded proceedings support the additions; scope and browser limitations are retained individually. All new Brazilian entries are reconciled across catalogue, parent-country search, map and planned event navigation.
+
+Confirmed scope and unresolved claims remain separate. Silesia has a Chromium playback limitation; seven Korean councils retain named access/playback gaps. Tocantins has one confirmed recording but its next selected titles are short stubs; keep the second substantive-recording gate open. Ceará's committee date is unreconciled. Banská Bystrica/TV ESO remains held for its explicit deep-link consent condition. Video reuse, current live, every room, complete language/accessibility and audible quality remain open. Four Argentine flag assets are attributed; subsequent optional asset downloads stopped after Commons429 and use neutral marks. The wider research task is unfinished. [Current evidence and limits](docs/research-status.md) · [Per-body register](reports/discovery/2026-10-23-comprehensive-followup.json).
+
+Colombia: fourteen primary/provider routes and44 playback checks have scoped outcomes;13 assemblies remain unpublished. Wikidata429 stopped exact-item follow-up without retries. Search candidates remain unverified claims, and historical/standby/recess footage is distinguished from current substantive proceedings. The independent47-lead pass is complete:47 primary routes,91 distinct recordings/182 technical checks,91 captured frames visually reviewed and eight secure route corrections. Exact identity review remains deferred after the rate limit; the wider task remains unfinished.
+
+## Comprehensive follow-up — 23 October 2026
+
+Added Chubut’s officially designated recordings:166 local sources,68 mapped regional jurisdictions. Resolved 28 further scoped institutional routes (50 URL gaps remain) and corrected 26 executive/shared-portal substitutions. Reconciled all 652 eligible records with specific evidence and remaining gates; this is not full live/all-room certification. Chubut desktop/mobile Chromium/WebKit flows and `make verify` pass. [Current status](docs/research-status.md) · [Full evidence register](reports/discovery/2026-10-23-comprehensive-followup.json).
+
+## Provincial follow-up — 23 October 2026
+
+Added Arauca, Caquetá, Risaralda and North Kalimantan official viewing services after exact identity/provider designation and two-engine proceedings checks. Local catalogue: 165 sources / 67 mapped regional jurisdictions. Regional flags, parent-country search and planned recording indexes reconciled; no direct HLS, strict IPTV or XMLTV parser addition.
+
+Resolved 40 further institutional routes, leaving 78 of the original 175 missing URLs after both metadata follow-ups. Removed the Southern Leyte/Leyte false match. Blocked, sparse, dead and non-proceedings leads retain explicit limits. [Evidence](reports/discovery/2026-10-23-completion-review.md).
+
+## 23 October — Corrientes And Metadata Follow-up
+
+Added two Corrientes official viewing links with separate chamber IDs: Deputies’
+2026 sittings and historical Senate recordings. Two recordings per chamber play
+past the opening in Chromium/WebKit. Flag, provincial boundary, Argentina search
+and planned indexes reconciled; local catalogue 161 sources / 63 regional bodies.
+Current live, committees, Senate audio/date mapping and complete language/media
+accessibility remain open. No new IPTV eligibility or XMLTV parser added.
+
+Resolved 57 of the 175 institutional URL gaps; 118 remain. Corroborated ten
+Philippine board-item IDs against primary pages; other discovered IDs stay leads.
+Chubut’s directory-listed host serves unrelated content and remains held.
+The [follow-up](reports/discovery/2026-10-23-metadata-followup.md) tracks every
+start-of-batch target and distinguishes reviewed records from work not revisited.
+Python/catalogue checks and corrected site accessibility checks pass; focused
+Chromium/WebKit desktop/mobile checks pass. Changes remain local.
+
+## 23 October — Eligible Metadata And Stream Evidence Pass
+
+Created per-body audit/gap records for all 652 eligible regional and territorial
+legislatures. Checked 2,185 recorded URLs by bounded HTTP and attempted one selected
+normal public Chromium route for each body, with hard-deadline retries for stalled
+pages. This is initial screening, not comprehensive identity, language, provider,
+proceedings, room, permission or accessibility clearance.
+
+Filled 22 missing institutional URLs and flagged four municipal/regency false
+matches. Another 175 institutional URLs remain missing. Two official Corrientes
+lower-house recordings (14 October / 23 September 2026) play after 30 minutes in
+Chromium and WebKit; required institutional ID, publication metadata and broader
+coverage remain unresolved. Jambi’s playable historical inauguration news clip
+is not a full-session service. No catalogue entry, HLS export or XMLTV parser
+was added. Local catalogue remains 159 sources / 62 regional jurisdictions.
+
+[Audit, exact evidence and individual gaps](reports/discovery/2026-10-23-eligible-metadata-stream-audit.md).
+Changes remain local and uncommitted.
+
+## 23 October — Full Authority Classification
+
+Assessed all 392 former generic authority reviews: 200 eligible, 180 excluded,
+ten specific legal evidence holds and two historical Korean predecessors.
+Added the Jeonnam–Gwangju successor separately. The 1,122-row inventory now has
+652 eligible bodies, 458 exclusions, ten specific holds and two predecessors.
+The ten legal questions are still unresolved; each names the exact evidence
+needed. No generic/core review labels remain.
+
+The eligible-service queue contains 590 bodies without matched catalogue
+coverage and 62 with existing coverage. Corrected Colombia Córdoba's false
+match to Argentina's source. Normalized the 177 earlier eligible decisions’
+source references into the common authority register without claiming a fresh
+review. No viewing service, HLS feed or XMLTV parser was added in this pass;
+the local catalogue remains 159 sources and 62 mapped regional jurisdictions.
+
+See [full decisions and holds](reports/discovery/2026-10-23-authority-completion.md)
+and [authority register and validation queue](reports/discovery/2026-10-23-legislative-priority.md).
+Work remains local and uncommitted.
+
+## 23 October — Second Authority And Viewing-Service Pass
+
+Resolved the remaining 85 core legislative candidates as eligible under primary
+frameworks, preserving Indian union-territory and Swiss Landsgemeinde distinctions.
+Documented 16 further exclusions: twelve ordinary mainland French regional
+councils, Ceuta/Melilla, and Christmas/Cocos shires. Corsica/overseas arrangements
+were separate at this stage. Scope snapshot: 451 eligible, 392 unresolved, 278 excluded.
+The later full authority pass above supersedes those scope counts.
+
+Added Neuquén, Sicily and West Virginia as official link-outs, with institution
+IDs, decoded proceedings samples, flags, parent-country search, map and planned
+calendar/index links. Local catalogue: 159 sources; 62 regional jurisdictions.
+Rivera footage passes, but a required institutional ID is unresolved; retain a
+research candidate. Lombardy’s initial player signal was header animation.
+See [second-pass evidence](reports/discovery/2026-10-23-validation-second-pass.md)
+and [authority decisions](reports/discovery/2026-10-23-authority-second-pass.md).
+Accent-insensitive catalogue/map search now finds Neuquén without typing the
+accent. Existing coverage is matched by institutional identity and country
+context; Florida Department is not confused with the US state.
+No IPTV or implemented XMLTV parser added; work remains local.
+
+
+## 23 October — Legislative Priority And Full-Queue Follow-Up
+
+The local catalogue now contains 156 sources (72 national, 78 regional/territorial,
+six supranational) and 59 mapped regional jurisdictions. The new pass adds 27
+validated official viewing links after the Cook Islands/Guernsey additions;
+102 sources are link-outs. This is local work, not a deployment assertion.
+National coverage reaches 53/71 target countries; 18 gaps and additional
+chamber/committee families remain. Screening completed 931 access lead families
+and 318 regional player routes; these counts do not certify usable streams.
+
+Prioritize the 366 bodies with established legislative authority. Resolve the
+85 remaining core candidates and 408 borderline authority reviews separately.
+All 262 excluded inventory rows now have specific reasons and primary sources;
+their old media leads remain archived outside active publication work.
+See [full-queue decisions](reports/discovery/2026-10-23-full-queue-decisions.md)
+and [legislative priorities/exclusions](reports/discovery/2026-10-23-legislative-priority.md).
+No direct HLS, strict IPTV or implemented XMLTV parser eligibility is added.
+
+
 All notable changes to the documentation and data project are recorded here.
 This changelog begins with the 2026-06-19 conversion from the retired SwiftUI
 application. Earlier application work remains available in Git history.
 
-## Unreleased - 2026-10-22
+## Unreleased - 2026-10-23
 
 ### Added
+
+- Cook Islands Parliament’s officially linked September 2020 sitting archive,
+  explicitly labelled historical and classified as national coverage for a
+  self-governing state in free association. Guernsey’s official meeting recordings
+  also added after dated playback checks, with flags, localized names, map,
+  country search associations and planned calendars. Bangsamoro remains held on
+  current geography and hyperlink conditions; Vojvodina on proceedings access.
 
 - Bermuda Parliament’s official audio archive after advancing House and Senate
   playback in WebKit, with the Chromium CORS limitation and reproduction

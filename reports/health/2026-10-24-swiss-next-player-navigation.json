@@ -1,0 +1,837 @@
+{
+  "method": "Exact public archive/provider links observed in primary parliamentary navigation. No login/consent/access workaround; page and player discovery are not decoded legislative-business validation.",
+  "results": [
+    {
+      "body_id": "switzerland--zurich",
+      "url": "https://zh.recapp.ch/shareparl/",
+      "label": "Primary-designated session database",
+      "checked_at": "2026-10-24T05:02:32.647Z",
+      "status": 200,
+      "title": "Romaine Rogenmoser • Präsidium | Mitteilungen - Audiovisuelles Archiv des Kantonsrates Zürich",
+      "final_url": "https://zh.recapp.ch/shareparl?agendaItemUid=a4534c4b-2dcc-4a5a-9d61-7effbda5dfc6",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--zurich.txt",
+      "media": [],
+      "links": [
+        {
+          "text": "",
+          "url": "https://zh.recapp.ch/shareparl?startPage=true&unitName=default"
+        },
+        {
+          "text": "Rechtliches",
+          "url": "https://zh.recapp.ch/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "treeLabels": [
+        "2026",
+        "Oktober",
+        "173. KR-Sitzung vom 19.10.2026",
+        "Mitteilungen02:16",
+        "333/2026 Volkswirtschaftliche Kosten des Hitzesommers 202602:19",
+        "332a/2023 Standesinitiative zur Einführung einer nationalen Elternzeit02:20",
+        "6047 Gesetz über den Jugendschutz bei öffentlichen Filmvorführungen und Trägermedien, Aufhebung03:35",
+        "438a/2020 Anpassung der Möglichkeit zur Bildung von finanzpolitischen Reserven im Gemeindegesetz04:30",
+        "6034a Gesetz über die Gerichts- und Behördenorganisation im Zivil- und Strafprozess, Änderung, Zurich International Commercial Court und weitere Anpassungen im Zivilprozess04:42",
+        "237/2024 Entflechtung von Staatsaufgaben zwischen Kanton und Gemeinden05:22",
+        "Verschiedenes05:56",
+        "September",
+        "August",
+        "Juli",
+        "Juni",
+        "Mai",
+        "April",
+        "März",
+        "Februar",
+        "Januar",
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--zurich.png"
+    },
+    {
+      "body_id": "switzerland--st-gallen",
+      "url": "https://sg.recapp.ch/shareparl/",
+      "label": "Primary-designated audiovisual minutes",
+      "checked_at": "2026-10-24T05:02:32.648Z",
+      "status": 200,
+      "title": "Unterlagen | 01.26.03 Gültigkeit der Wahl von drei Ersatzmitgliedern in den Kantonsrat (Brigitte Borghi, Renaldo Vanzo, Nicole Hayoz) - Audiovisuelles Protokoll des Kantonsrates St.Gallen",
+      "final_url": "https://sg.recapp.ch/shareparl?agendaItemUid=ee901b7f-8d49-4fd2-91b7-47a4b73cba2f&startPage=true&unitName=sg",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--st-gallen.txt",
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-sg-viewer.s3.ewstorage.ch/mediaDash/69a5845488dc2e72bd0dca1e_converted_media_file_1772473214708.mp4#t=15287.3,15287.3"
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": "https://sg.recapp.ch/shareparl?startPage=true&unitName=sg"
+        },
+        {
+          "text": "Rechtliches",
+          "url": "https://sg.recapp.ch/shareparl/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "treeLabels": [
+        "2026/Frühjahrssession/Montag, 2. März 2026",
+        "Frühjahrssession",
+        "Montag, 2. März 2026",
+        "01.26.03 Gültigkeit der Wahl von drei Ersatzmitgliedern in den Kantonsrat (Brigitte Borghi, Renaldo Vanzo, Nicole Hayoz)",
+        "13.26.01 Wahl der Regierungspräsidentin oder des Regierungspräsidenten der Amtsdauer 2026/2027 (Frühjahrssession 2026)",
+        "22.25.07 VII. Nachtrag zum Gerichtsgesetz (Wohnsitzpflicht)",
+        "22.25.08 XIV. Nachtrag zum Einführungsgesetz zur Bundesgesetzgebung über die Krankenversicherung",
+        "36.25.01 Kantonsratsbeschluss über den Bau des Stützbauwerks Valurrank der Kantonsstrasse Nr. 76 in Bad Ragaz",
+        "40.25.04 Berichterstattung über den Erfolg des St.Galler Energiekonzepts 2021–2030",
+        "22.25.13 IV. Nachtrag zum Planungs- und Baugesetz",
+        "22.25.09 IX. Nachtrag zum Strassengesetz",
+        "42.25.12 Mehr Schutz vor potenziell gefährlichen Hunden",
+        "51.25.40 Der Amtsärztliche Dienst braucht Unterstützung! Können die amtsärztlichen Aufgaben auch in Zukunft noch erfüllt werden?",
+        "51.25.58 Immer mehr St.Galler Vereine müssen Steuererklärungen ausfüllen – ist dies für die Freiwilligenarbeit förderlich?",
+        "51.25.63 Digitalisierung als strategischer Hebel für Effizienz, Transparenz und Sparziele",
+        "51.25.74 Einführung einer allgemeinen Stimmpflicht bei Abstimmungen und Wahlen im Kanton St.Gallen?",
+        "51.25.78 Auswirkungen des geplanten EU-Vertragspakets auf die Anerkennung beruflicher Qualifikationen",
+        "51.25.79 Auswirkungen des geplanten EU-Vertragspakets auf Universitäten und Hochschulen",
+        "51.25.106 Schwache Steuerkraft-Entwicklung: Sind wir für wertschöpfungs- und forschungsintensive Unternehmen steuerlich attraktiv?",
+        "51.25.108 Die Schweiz sagt JA zu kantonalen Liegenschaftssteuern auf Zweitliegenschaften – was macht der Kanton St.Gallen?",
+        "Dienstag, 3. März 2026",
+        "Mittwoch, 4. März 2026",
+        "Sommersession",
+        "Herbstsession",
+        "2025"
+      ],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--st-gallen.png"
+    },
+    {
+      "body_id": "switzerland--basel-stadt",
+      "url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl?fromDate=20261014&toDate=20261021",
+      "label": "Audiovisuelles Protokoll",
+      "checked_at": "2026-10-24T05:02:32.648Z",
+      "status": 200,
+      "title": "Gianna Hablützel-Bürki • Mitglied des Grossen Rates | Mitteilungen und Genehmigung der Tagesordnung - Audiovisuelles Archiv des Grossen Rates des Kantons Basel-Stadt",
+      "final_url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl/?agendaItemUid=48fdfd6b-6a35-4bcc-8e3e-eb4d10a78ae0&startPage=true&unitName=default",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--basel-stadt.txt",
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "https://recapp-prod-bs-viewer.s3.ewstorage.ch/mediaDash/6abf58a0a192df1eda8b1e3d_converted_media_file_1791972516708.mp4#t=715.946,813.292"
+        }
+      ],
+      "links": [
+        {
+          "text": "Rechtliches",
+          "url": "https://ratsprotokolle.grosserrat.bs.ch/shareparl/shareparl/policy/201105_Datenschutzerkl%C3%A4rung_mediaparl.pdf"
+        },
+        {
+          "text": "powered by\nrecapp",
+          "url": "https://www.recapp.ch/"
+        }
+      ],
+      "treeLabels": [],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--basel-stadt.png"
+    },
+    {
+      "body_id": "switzerland--vaud-waadt",
+      "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10",
+      "label": "Visible October2026 archive",
+      "checked_at": "2026-10-24T05:02:37.852Z",
+      "status": 200,
+      "title": "Grand Conseil Vaudois | Sonomix",
+      "final_url": "https://www.sonomix.ch/live/gcvd/?date=2026-10",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--vaud-waadt.txt",
+      "media": [],
+      "links": [
+        {
+          "text": "Séances en 2026",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Octobre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10"
+        },
+        {
+          "text": "Septembre",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-9"
+        },
+        {
+          "text": "Août",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-8"
+        },
+        {
+          "text": "Juin",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-6"
+        },
+        {
+          "text": "Mai",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-5"
+        },
+        {
+          "text": "Avril",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-4"
+        },
+        {
+          "text": "Mars",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-3"
+        },
+        {
+          "text": "Février",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-2"
+        },
+        {
+          "text": "Janvier",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-1"
+        },
+        {
+          "text": "Séances en 2025",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2024",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2023",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2022",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2021",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2020",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2019",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2018",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2017",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2016",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2015",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2014",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2013",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2012",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2011",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        },
+        {
+          "text": "Séances en 2010",
+          "url": "https://www.sonomix.ch/live/gcvd/?date=2026-10#"
+        }
+      ],
+      "treeLabels": [],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--vaud-waadt.png"
+    },
+    {
+      "body_id": "switzerland--fribourg-freiburg",
+      "url": "https://www.parlinfo.fr.ch/fr/sessionen/sitzung/",
+      "label": "Primary-designated sessions",
+      "checked_at": "2026-10-24T05:02:37.407Z",
+      "status": 200,
+      "title": "Programmes et dates des sessions du Grand Conseil | Parlinfo",
+      "final_url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil?date_start=01.01.2025&resultsType=current&page=1",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--fribourg-freiburg.txt",
+      "media": [],
+      "links": [
+        {
+          "text": "Navigation",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil#nav"
+        },
+        {
+          "text": "Contenu",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil#main"
+        },
+        {
+          "text": "Membres",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil?date_start=01.01.2025&resultsType=current&page=1"
+        },
+        {
+          "text": "Organes",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil?date_start=01.01.2025&resultsType=current&page=1"
+        },
+        {
+          "text": "Sessions",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil?date_start=01.01.2025&resultsType=current&page=1"
+        },
+        {
+          "text": "Programmes et dates",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil"
+        },
+        {
+          "text": "Débats en public et en direct",
+          "url": "https://www.fr.ch/parlinfo/debats-en-public-et-en-direct"
+        },
+        {
+          "text": "Bases légales",
+          "url": "https://www.fr.ch/parlinfo/bases-legales-directives"
+        },
+        {
+          "text": "Français (Langue active)",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil?date_start=01.01.2025&resultsType=current&page=1"
+        },
+        {
+          "text": "Deutsch",
+          "url": "https://www.fr.ch/de/parlinfo/programme-und-sessionen-des-grossen-rates?date_start=01.01.2025&resultsType=current&page=1"
+        },
+        {
+          "text": "Programmes et dates des sessions du Grand Conseil",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil?date_start=01.01.2025&resultsType=current&page=1"
+        },
+        {
+          "text": "Dates des sessions en 2026 (PDF, 111.95k)",
+          "url": "https://www.fr.ch/document/516546"
+        },
+        {
+          "text": "Dates des sessions en 2027 (PDF, 351.19k)",
+          "url": "https://www.fr.ch/document/552226"
+        },
+        {
+          "text": "Dates des sessions en 2028 (PDF, 19k)",
+          "url": "https://www.fr.ch/document/594106"
+        },
+        {
+          "text": "Séance d'octobre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/430c38c764514127b9b2b0da67231c06"
+        },
+        {
+          "text": "Séance d'octobre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/abafb567fd7d4c4ea7924f81381f0ba8"
+        },
+        {
+          "text": "Session d'octobre 2026 - Elections judiciaires",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/329f7b8095b947439b2a5949ed7c87bb"
+        },
+        {
+          "text": "Session d'octobre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/60688d678114435998ae15361a2ac784"
+        },
+        {
+          "text": "Session d'octobre 2026 - Elections judiciaires",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/adc0dd8cc37f46e28a0302bf9f003143"
+        },
+        {
+          "text": "Session d'octobre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/e54ccb83397644929f3f20f60c42e41e"
+        },
+        {
+          "text": "Séance de septembre 2026 - Séance de relevée",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/b4643bd2dcfc4ae0b8cb921a4a04170c"
+        },
+        {
+          "text": "Séance de septembre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/a9af5d6d53ae48e1b263e5abb9c04111"
+        },
+        {
+          "text": "Séance de septembre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/61aeaacb61aa4828989d8ccfc396f51c"
+        },
+        {
+          "text": "Séance de septembre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/60d8def6d7134d5683ec4b47a22ca9e7"
+        },
+        {
+          "text": "Session de septembre 2026 - Elections judiciaires",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/3d49292024004f2fb9768860d8cdc49b"
+        },
+        {
+          "text": "Session de septembre 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/796c90ed31af4172989004f71e0e17ec"
+        },
+        {
+          "text": "Session de juin 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/d4e26f05d2964183adc4266078d8d7dd"
+        },
+        {
+          "text": "Session de juin 2026 - Elections judiciaires",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/e209f0b898cf40f6a37a9646fe2a2747"
+        },
+        {
+          "text": "Session de juin 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/0ba2533cb4d1480e91e7eab03b2d3e02"
+        },
+        {
+          "text": "Session de juin 2026 - Elections judiciaires",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/d671e3ca314444128c2bff60798fcfe7"
+        },
+        {
+          "text": "Session de juin 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/541dcccd69bd41caa6a80849e3d49f76"
+        },
+        {
+          "text": "Session de juin 2026 - Séance ordinaire",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/7b1313aa5c864df297761ded7c007ff8"
+        },
+        {
+          "text": "Session de juin 2026 - Elections judiciaires",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/0edebaee9af5402eae51ea47654e07aa"
+        },
+        {
+          "text": "Session de mai 2026 - Séance de relevée",
+          "url": "https://www.fr.ch/parlinfo/programmes-et-dates-des-sessions-du-grand-conseil/d646b951a56b49d281af516ccaf56f1b"
+        }
+      ],
+      "treeLabels": [],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--fribourg-freiburg.png"
+    },
+    {
+      "body_id": "switzerland--geneve-genf",
+      "url": "https://ge.ch/grandconseil/sessions/video/030308/42/",
+      "label": "Vidéo",
+      "checked_at": "2026-10-24T05:02:38.239Z",
+      "status": 200,
+      "title": "Grand Conseil de Genève",
+      "final_url": "https://ge.ch/grandconseil/sessions/video/030308/42/",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--geneve-genf.txt",
+      "media": [
+        {
+          "tag": "VIDEO",
+          "src": "http://www.grandconseil-ge.ch/video/030308_42.m4v"
+        },
+        {
+          "tag": "SOURCE",
+          "src": "http://www.grandconseil-ge.ch/video/030308_42.m4v"
+        }
+      ],
+      "links": [
+        {
+          "text": "Conditions d'utilisation",
+          "url": "https://ge.ch/grandconseil/divers/conditions/"
+        },
+        {
+          "text": "Sessions",
+          "url": "https://ge.ch/grandconseil/sessions/seances/"
+        },
+        {
+          "text": "Documents de séance",
+          "url": "https://ge.ch/grandconseil/sessions/seances/"
+        },
+        {
+          "text": "Calendrier",
+          "url": "https://ge.ch/grandconseil/sessions/calendrier/2026/"
+        },
+        {
+          "text": "Diffusion en direct",
+          "url": "https://ge.ch/grandconseil/sessions/live/"
+        },
+        {
+          "text": "Diffusion en différé",
+          "url": "https://ge.ch/grandconseil/sessions/videos/2026/"
+        },
+        {
+          "text": "Archives procès-verbaux",
+          "url": "https://ge.ch/grandconseil/sessions/archives/"
+        },
+        {
+          "text": "Séances",
+          "url": "https://ge.ch/grandconseil/memorial/seances-last/"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Exhortation16h58:38",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n16h58:38",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "RD 165216h58:57",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n16h58:57",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "RD 165317h02:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h02:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Points initiaux17h03:48",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h03:48",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Jean-Marc Guinchard (LC)\n17h04:27",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h04:44",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Mme Louise Trottet (Ve)\n17h05:59",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h06:13",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Thierry Cerutti (MCG)\n17h07:23",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h07:32",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Murat-Julian Alder (PLR)\n17h10:56",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h11:14",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Jean-Marc Guinchard (LC)\n17h11:48",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h12:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Marc Saudan (LJS)\n17h13:05",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h13:20",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n17h14:45",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h15:04",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Mme Louise Trottet (Ve)\n17h15:37",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h15:44",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Thierry Cerutti (MCG)\n17h16:22",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h16:30",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n17h17:05",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h17:19",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "RD 165017h18:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h18:16",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n17h25:47",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "RD 165117h28:40",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h28:40",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Francisco Taboada (LJS)\n17h29:46",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h31:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Fin des points initiaux17h31:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h31:10",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Jean-Marc Guinchard (LC)\n17h31:57",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h32:18",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Mme Louise Trottet (Ve)\n17h32:28",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h32:53",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "GR 55017h33:53",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h33:53",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Christian Flury (MCG)\n17h34:14",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h38:09",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "E 3174 ...17h38:45",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h38:45",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "PL 13578-B17h39:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n17h39:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Yves Nidegger (UDC)\n17h39:45",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Julien Nicolet-dit-Félix (Ve)\n17h42:49",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Francisco Taboada (LJS)\n17h47:42",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Jean-Pierre Pasquier (PLR)\n17h49:30",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Christian Flury (MCG)\n17h52:24",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Mme Alia Chaker Mangeat (LC)\n17h54:09",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Diego Esteban (S)\n17h56:54",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Julien Nicolet-dit-Félix (Ve)\n18h00:03",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n18h01:23",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "PL 13143-B18h02:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n18h02:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Jacques Blondin (LC)\n18h06:41",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. François Baertschi (MCG)\n18h08:07",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Grégoire Carasso (S)\n18h09:01",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n18h10:39",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M 3047-A18h11:09",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n18h11:09",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Stéphane Florey (UDC)\n18h12:00",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Philippe de Rougemont (Ve)\n18h13:09",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Amar Madani (MCG)\n18h16:30",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Sébastien Desfayes (LC)\n18h19:39",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n18h23:43",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Djawed Sangdel (LJS)\n18h26:31",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Mme Diane Barbier-Mueller (PLR)\n18h30:01",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Mme Danièle Magnin (MCG)\n18h34:03",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Christian Steiner (MCG)\n18h35:28",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Matthieu Jotterand (S)\n18h37:19",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Amar Madani (MCG)\n18h38:48",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Philippe de Rougemont (Ve)\n18h39:41",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Stéphane Florey (UDC)\n18h40:11",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "M. Nicolas Walder\n18h42:52",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n18h45:48",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Fin de séance18h46:51",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "La présidente\n18h46:51",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "",
+          "url": "https://ge.ch/grandconseil/sessions/video/030308/42/#"
+        },
+        {
+          "text": "Retour à la liste des vidéos",
+          "url": "https://ge.ch/grandconseil/sessions/videos/2026/"
+        }
+      ],
+      "treeLabels": [],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--geneve-genf.png"
+    },
+    {
+      "body_id": "switzerland--zug",
+      "url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a3ce95bac55558c81510b77",
+      "label": "Direkt zur Übertragung",
+      "checked_at": "2026-10-24T05:02:41.928Z",
+      "status": 200,
+      "title": "Kantonsratssitzung vom 29. Oktober 2026 - Vormittag",
+      "final_url": "https://kantonzug.euvideocdn.com/player/index.html?live=6a3ce95bac55558c81510b77",
+      "body_text_cache": "/tmp/next-swiss-player-switzerland--zug.txt",
+      "media": [],
+      "links": [],
+      "treeLabels": [],
+      "outcome": "designated_player_navigation_requires_individual_review",
+      "screenshot": "/tmp/next-swiss-player-switzerland--zug.png"
+    }
+  ]
+}

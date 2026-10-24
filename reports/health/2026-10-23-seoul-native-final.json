@@ -1,0 +1,84 @@
+{
+  "method": "Browser plugin not available; regular Playwright, normal TLS and visible controls, muted selected playback with explicit seek and decoded-frame comparison; no source-wide live or accessibility inference.",
+  "results": [
+    {
+      "key": "seoul-operation-2",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=040b45528b60967f7e582a0e446574aeaca8b5404cabc68b122fd9aa73dd65d73a26c9f0dfbec1c0&pos=0&code=C010&th=12&session=339&order=2",
+      "video": true,
+      "offset": 240,
+      "engine": "chromium",
+      "checked_at": "2026-10-23T22:01:35.454Z",
+      "status": 200,
+      "title": "영상보기 팝업창",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-seoul-operation-2-chromium.png"
+    },
+    {
+      "key": "seoul-operation-2",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=040b45528b60967f7e582a0e446574aeaca8b5404cabc68b122fd9aa73dd65d73a26c9f0dfbec1c0&pos=0&code=C010&th=12&session=339&order=2",
+      "video": true,
+      "offset": 240,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T22:01:55.758Z",
+      "status": 200,
+      "title": "영상보기 팝업창",
+      "advertisement": false,
+      "first": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "later": {
+        "time": 0,
+        "width": 0,
+        "height": 0,
+        "ready": 0,
+        "duration": null,
+        "frames": 0,
+        "tracks": []
+      },
+      "advancing": false,
+      "sample_offset_reached": false,
+      "outcome": "playback_or_seek_unconfirmed",
+      "screenshot": "/tmp/continue-seoul-operation-2-webkit.png"
+    },
+    {
+      "key": "seoul-operation-1-retry",
+      "body_id": "south-korea--seoul",
+      "url": "https://ms.smc.seoul.kr/cast/viewer/record.do?key=86981ceff73e4733ab4057d4cb8857f0afba8aacf2bd76ca31b81cafd232da83f647be764543a764&pos=244&code=C010&th=12&session=339&order=1",
+      "video": true,
+      "offset": 244,
+      "engine": "webkit",
+      "checked_at": "2026-10-23T22:02:15.247Z",
+      "error": "TimeoutError: page.goto: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://ms.smc.seoul.kr/cast/viewer/record.do?key=86981ceff73e4733ab4057d4cb8857f0afba8aacf2bd76ca31b81cafd232da83f647be764543a764&pos=244&code=C010&th=12&session=339&order=1\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "outcome": "inspection_error"
+    }
+  ]
+}

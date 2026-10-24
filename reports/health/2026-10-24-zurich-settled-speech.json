@@ -1,0 +1,67 @@
+{
+  "method": "Same public speech link, native muted playback at least7seconds into its actual selected segment to avoid attributing an initial crossfade to the new agenda item. No arbitrary seek or source mutation.",
+  "results": [
+    {
+      "body_id": "switzerland--zurich",
+      "id": "zh-current-settled",
+      "engine": "chromium",
+      "url": "https://zh.recapp.ch/shareparl?agendaItemUid=1137f348-a941-4c51-a26b-b76106735d04&scroll=true&autoplay=false",
+      "checked_at": "2026-10-24T05:29:14.599Z",
+      "muted": true,
+      "bounds": {
+        "start": 6765.226,
+        "end": 6793.386
+      },
+      "first": {
+        "time": 6772.242051,
+        "width": 960,
+        "height": 540,
+        "frames": 382
+      },
+      "later": {
+        "time": 6773.554834,
+        "width": 960,
+        "height": 540,
+        "frames": 415
+      },
+      "decoded": true,
+      "inside_bounds": true,
+      "title": "Romaine Rogenmoser • Präsidium | 6047 Gesetz über den Jugendschutz bei öffentlichen Filmvorführungen und Trägermedien, Aufhebung - Audiovisuelles Archiv des Kantonsrates Zürich",
+      "outcome": "decoded_later_in_same_selected_speech_requires_visual_review",
+      "screenshot": "/tmp/zurich-settled-chromium.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Settled view of Romaine Rogenmoser at a lit chair microphone, source Traktandum4 and matching youth-protection repeal item6047. Chromium advances; the later WebKit repeat has a readable frame but did not meet frame-advance check."
+    },
+    {
+      "body_id": "switzerland--zurich",
+      "id": "zh-current-settled",
+      "engine": "webkit",
+      "url": "https://zh.recapp.ch/shareparl?agendaItemUid=1137f348-a941-4c51-a26b-b76106735d04&scroll=true&autoplay=false",
+      "checked_at": "2026-10-24T05:29:29.566Z",
+      "muted": true,
+      "bounds": {
+        "start": 6765.226,
+        "end": 6793.386
+      },
+      "first": {
+        "time": 6772.244207916813,
+        "width": 960,
+        "height": 540,
+        "frames": 338
+      },
+      "later": {
+        "time": 6773.553676249914,
+        "width": 960,
+        "height": 540,
+        "frames": 338
+      },
+      "decoded": false,
+      "inside_bounds": true,
+      "title": "Romaine Rogenmoser • Präsidium | 6047 Gesetz über den Jugendschutz bei öffentlichen Filmvorführungen und Trägermedien, Aufhebung - Audiovisuelles Archiv des Kantonsrates Zürich",
+      "outcome": "unconfirmed",
+      "screenshot": "/tmp/zurich-settled-webkit.png",
+      "captured_frame_individually_reviewed": true,
+      "visual_observation": "Settled view of Romaine Rogenmoser at a lit chair microphone, source Traktandum4 and matching youth-protection repeal item6047. Chromium advances; the later WebKit repeat has a readable frame but did not meet frame-advance check."
+    }
+  ]
+}

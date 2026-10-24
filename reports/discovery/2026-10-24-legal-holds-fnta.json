@@ -1,0 +1,299 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Revisit the precise FNTA legal hold using later official gazettes, legislative records and current official statements. Inventory/authority only; no metadata, streams, EPG, rights or publication work.",
+  "institution_id": "india--frontier-nagaland-territorial-authority",
+  "previous_review_id": "scope-review--india--frontier-nagaland-territorial-authority",
+  "institution_name": "Frontier Nagaland Territorial Authority (FNTA)",
+  "country": "India",
+  "previous_status": "specific_authority_evidence_hold",
+  "recommended_authority_status": "specific_authority_evidence_hold",
+  "authority_hold_resolved": false,
+  "research_pass_complete": true,
+  "resolution_required": [
+    {
+      "instrument": "Assented final Frontier Nagaland Territorial Authority Act, 2026, or an authenticated official publication identifying its Act number and assent date together with the final text.",
+      "purpose": "Establish enactment and final operative wording rather than treating an introduced or passed Bill as an assented Act; compare the territorial lawmaking, executive and financial provisions with the September revised Bill."
+    },
+    {
+      "instrument": "Official Gazette commencement notification under the final Act, including any different dates for individual provisions, and the constitution/establishment order if separately required.",
+      "purpose": "Establish whether and when the legislature and relevant grants actually came into force. Verify the final version of the revised Bill's clause 1(3) commencement mechanism."
+    }
+  ],
+  "result": "The amended Bill's passage on 3 September 2026 is now verified in an official Assembly bulletin reproduced in the fully retrieved 30 September Gazette. The final assented Act and commencement/constitution instruments were not verified. The public archive ends at 30 September and other official registers have demonstrably incomplete coverage. Retain the exact hold; do not convert this into nonexistence, exclusion, or a proven pre-operative Act.",
+  "relationship": {
+    "state": "Nagaland",
+    "kind": "proposed_or_new_autonomous_territorial_institution_within_state",
+    "territory": [
+      "Tuensang",
+      "Mon",
+      "Longleng",
+      "Kiphire",
+      "Noklak",
+      "Shamator"
+    ],
+    "not_a_new_state": true,
+    "not_a_sixth_schedule_council": true
+  },
+  "institution_in_force_and_activity": {
+    "political_agreement": "The 5 February 2026 tripartite agreement is confirmed by the Union Home Ministry; an agreement is not the assented state Act or its commencement instrument.",
+    "introduced_revised_bill": "Confirmed: official 15 September Gazette, Part V, notification AS/LEG-22/Bill/FNTA/2026/298 of 1 September 2026.",
+    "passage": "Confirmed: 3 September 2026 Assembly bulletin, items 11–13, including the preamble amendment and unanimous passage.",
+    "governor_assent": "Not verified; no final Act number or assent date established in the primary sources inspected.",
+    "relevant_provisions_in_force": "Not verified; separate commencement may apply to different provisions under revised Bill clause 1(3).",
+    "authority_eligibility_in_force": "Not certified while final enactment/commencement remain unverified. The revised territorial normative framework is substantive enough to require a final-instrument check, not a local-council dismissal.",
+    "interim_council": "Do not substitute agreement-based interim arrangements, nominations or related disputes for proof of a commenced elected territorial legislature. No current interim-constitution order was certified here.",
+    "current_elected_operation": "Not certified; no election/constitution/sitting or officeholder claim follows from the Bill's passage.",
+    "status_not_inferred": [
+      "nonexistent",
+      "outside_default_scope",
+      "eligible_legislature",
+      "assented_but_not_yet_commenced"
+    ]
+  },
+  "new_primary_evidence": [
+    {
+      "source_id": "gazette_30_september",
+      "finding": "Full official issue retrieved successfully after normal resumable download. The visually inspected cover marks Part IV (Acts) Nil. OCR of PDF pages 1–67 covered the government-notification and current Assembly-bulletin portion; the only FNTA hits were introduction/withdrawal/passage, not an assented Act or commencement notice."
+    },
+    {
+      "source_id": "gazette_30_september",
+      "locators": [
+        "PDF page 58: Extraordinary No.64 dated 1 September 2026, AS/LEG-24/2025/319, Bulletin Part-I(No.1)",
+        "PDF page 59, item 7: March Bill withdrawn by voice vote",
+        "PDF page 61, item 12: revised FNTA Bill introduced",
+        "PDF page 62: Extraordinary No.65 dated 3 September 2026, AS/LEG-24/2025/319, Bulletin Part-I(No.2)",
+        "PDF page 66 / printed page 5, items 11–13: preamble amendment adopted, discussion, unanimous passage"
+      ],
+      "finding": "This is direct primary parliamentary evidence of the September legislative stage. Reporting assent to other Bills on 1 September does not establish assent to the FNTA Bill introduced that day and passed two days later."
+    },
+    {
+      "source_id": "gazette_15_september",
+      "finding": "Fresh OCR of PDF pages 1–37 checked the cover, appointments and government-notification portion for an FNTA commencement/constitution notice; none was identified. The FNTA instrument previously read in Part V remains an introduced Bill, not a final Act."
+    },
+    {
+      "source_id": "official_passage_notice",
+      "finding": "Official DIPR account independently describes the preamble amendment and unanimous passage. Its CMS footer says August 03 2026, inconsistent with the named ninth session; date is anchored to the actual Assembly bulletin and other official September/October statements, not that footer."
+    },
+    {
+      "source_id": "official_october_cabinet",
+      "finding": "Official Home Department Cabinet statement dated by its 10 October 2026 meeting records introduction on 1 September and passage on 3 September. It supplies no assent date, final Act number or commencement notification."
+    },
+    {
+      "source_id": "gazette_archive",
+      "finding": "The public 2026 archive and latest-issues page list 30 September 2026 as the newest issue on this review date; the issue page says posted 9 October. This is a publication-coverage limit, not proof that no later instrument exists."
+    },
+    {
+      "source_id": "neva_public_form",
+      "finding": "Both FNTA title searches returned No Records Founds. A separately fetched public state bill dashboard returned 52 rows including test/demo entries, ending with an introduced Bill dated 4 March 2025. Its missing FNTA record is therefore not a reliable absence or assent finding."
+    }
+  ],
+  "sources": {
+    "gazette_30_september": {
+      "title": "Nagaland Gazette, 30 September 2026; includes September Assembly Extraordinary bulletins",
+      "url": "https://govtpress.nagaland.gov.in/wp-content/uploads/2026/10/30-September-new-GB_compressed.pdf",
+      "issue_page": "https://govtpress.nagaland.gov.in/egazette-30-september-2026/",
+      "method": "primary_official_pdf_download_text_extraction_native_OCR_and_relevant_page_visual_review",
+      "pdf_bytes": 11323638,
+      "pdf_pages": 123,
+      "pdf_sha256": "e7b7b17f7092c033952b0d36d704291bbf0dbc09f63825b546f85334f7307aea",
+      "visually_reviewed_pages_one_based": [
+        1,
+        58,
+        62,
+        66
+      ],
+      "evidence_scope": "Cover and government/Assembly portion through PDF page 67 examined; later historical/other appended pages were not represented as a full visual census. No claim that a search of this one issue certifies every later or extraordinary Gazette.",
+      "fresh_ocr_page_range_one_based": [
+        1,
+        67
+      ]
+    },
+    "gazette_15_september": {
+      "title": "Nagaland Gazette, 15 September 2026, revised FNTA Bill in Part V",
+      "url": "https://govtpress.nagaland.gov.in/wp-content/uploads/2026/09/15-September-GB-1_compressed.pdf",
+      "method": "existing_official_PDF_fresh_native_OCR_of_government_notices_plus_prior_individual_Bill_page_visual_review",
+      "pdf_pages": 144,
+      "pdf_sha256": "10d265c3acf94f80a2490e8281e9e8172330827a4be0d846920d73bb0c7110ee",
+      "prior_visually_reviewed_bill_pages_one_based": [
+        55,
+        56,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "locators": [
+        "Notification AS/LEG-22/Bill/FNTA/2026/298, 1 September 2026",
+        "Revised Bill clauses 1(3), 3, 8–12; finance/control provisions"
+      ],
+      "evidence_scope": "Proposed/revised text only; statutory short-title wording inside a Bill is not evidence of assent.",
+      "fresh_ocr_page_range_one_based": [
+        1,
+        37
+      ]
+    },
+    "gazette_archive": {
+      "title": "Government Press official 2026 Gazette archive",
+      "url": "https://govtpress.nagaland.gov.in/egazette-2026/",
+      "latest_issues_url": "https://govtpress.nagaland.gov.in/egazette-latest/",
+      "method": "primary_direct_web_read",
+      "evidence_scope": "Latest listed issue 30 September 2026; footer updated 9 October 2026. No later October issue supplied in the inspected list."
+    },
+    "official_passage_notice": {
+      "title": "DIPR: Consideration and adoption of amendment and passing of FNTA Bill, 2026",
+      "url": "https://ipr.nagaland.gov.in/consideration-and-adoption-of-amendment-and-passing-of-the-frontier-nagaland-territorial-authority-bill-2026",
+      "method": "primary_direct_web_read",
+      "evidence_scope": "Describes passage in the ninth Assembly session; erroneous August CMS footer not adopted as event date."
+    },
+    "official_october_cabinet": {
+      "title": "DIPR/Home Department: State Cabinet statement, meeting of 10 October 2026",
+      "url": "https://ipr.nagaland.gov.in/NAGALAND-STATE-CABINET-LAUDES-VISIONARY-LEADERSHIP-OF-PRIME-MINISTER-NARENDRA-MODI",
+      "method": "primary_direct_web_read",
+      "evidence_scope": "Confirms introduction/passage dates; not an assent or commencement statement."
+    },
+    "official_september_cm": {
+      "title": "DIPR: CM concluding FNTA remarks on 3 September 2026",
+      "url": "https://ipr.nagaland.gov.in/index.php/rio-calls-fnta-a-step-towards-inclusive-and-equitable-development",
+      "method": "primary_direct_web_read",
+      "evidence_scope": "Describes legislative debate and proposed authority; not final assent/commencement."
+    },
+    "union_mha_february": {
+      "title": "Union Home Ministry monthly major achievements, February 2026",
+      "url": "https://www.mha.gov.in/sites/default/files/2026-03/MonthlymajorFebuary_30032026.pdf",
+      "method": "primary_PDF_search_index_read",
+      "locators": [
+        "Page 2, item 12"
+      ],
+      "evidence_scope": "Agreement and intended legislative/executive/financial autonomy only; no final state enactment claim."
+    },
+    "state_acts": {
+      "title": "Nagaland State Portal: Act & Rules",
+      "url": "https://www.nagaland.gov.in/act-rules",
+      "method": "primary_direct_web_read",
+      "evidence_scope": "No FNTA Act entry identified in the displayed list. Its newest specific legal listing was a 2026 recruitment-rule amendment, with substantive Act listings mainly through 2025; incomplete registry coverage cannot prove nonenactment."
+    },
+    "assembly_site": {
+      "title": "Nagaland Legislative Assembly official website and notifications",
+      "url": "https://nla.nagaland.gov.in/",
+      "notifications_url": "https://nla.nagaland.gov.in/notifications/",
+      "method": "primary_direct_web_read",
+      "evidence_scope": "Notifications page contains 2024/2025 session items and site footer 31 July 2026; no FNTA final instrument identified there."
+    },
+    "neva_public_form": {
+      "title": "Nagaland Assembly public NeVA Bills form and dashboard",
+      "url": "https://nagaland.neva.gov.in/Bill?IsStateDashBoard=True",
+      "homepage": "https://nagaland.neva.gov.in/",
+      "search_endpoint": "https://nagaland.neva.gov.in/Bill/FetchDataListBillsBySearch",
+      "dashboard_url": "https://nagaland.neva.gov.in/Bill/GetBillStateDashBoardData?UnitCode=NL",
+      "method": "public_form_HTML_and_its_observed_public_GET_search_dashboard_downloaded_with_ordinary_public_navigation_cookies",
+      "searches": [
+        {
+          "BillTitle": "Frontier",
+          "AssemblyID": 14,
+          "FromYear": 2026,
+          "ToYear": 2026,
+          "HouseCode": "NL",
+          "result": "No Records Founds"
+        },
+        {
+          "BillTitle": "Frontier",
+          "AssemblyID": 0,
+          "FromYear": 0,
+          "ToYear": 0,
+          "HouseCode": "NL",
+          "result": "No Records Founds"
+        }
+      ],
+      "evidence_scope": "Dashboard returned 52 rows including test/demo data; latest row introduced 4 March 2025. This proves the FNTA search is not a complete current legal register; no final status inferred."
+    },
+    "governor_site": {
+      "title": "Lok Bhavan, Nagaland, current Governor website linked by State Portal",
+      "url": "https://lokbhavan.nagaland.gov.in/",
+      "method": "normal_public_HTML_download_after_web_reader_timeout",
+      "evidence_scope": "Current home and public searches downloaded successfully through normal requests. FNTA search returned no results; assent search returned only generic RTI and constitutional-role pages. Footer updated 5 October 2026; no specific FNTA assent record found, without treating an incomplete search as proof of nonassent."
+    }
+  },
+  "attempts": [
+    {
+      "route": "Current official Gazette issue and archive",
+      "urls": [
+        "https://govtpress.nagaland.gov.in/egazette-2026/",
+        "https://govtpress.nagaland.gov.in/egazette-latest/",
+        "https://govtpress.nagaland.gov.in/egazette-30-september-2026/",
+        "https://govtpress.nagaland.gov.in/wp-content/uploads/2026/10/30-September-new-GB_compressed.pdf"
+      ],
+      "outcome": "Archive/index read. Normal PDF fetch timed out at 60 seconds with 11,214,852 of 11,323,638 bytes, then ordinary HTTP resume completed the full file. Read the actual government/Assembly portion with local OCR; earlier timeout no longer the principal barrier."
+    },
+    {
+      "route": "Separate commencement in earlier September government notices",
+      "urls": [
+        "https://govtpress.nagaland.gov.in/wp-content/uploads/2026/09/15-September-GB-1_compressed.pdf"
+      ],
+      "outcome": "Fresh native OCR on PDF pages 1–37 yielded no FNTA commencement/constitution hit; no absence claim outside the inspected pages."
+    },
+    {
+      "route": "State Acts and Assembly registers",
+      "urls": [
+        "https://www.nagaland.gov.in/act-rules",
+        "https://nla.nagaland.gov.in/notifications/",
+        "https://nagaland.neva.gov.in/Bill?IsStateDashBoard=True"
+      ],
+      "outcome": "No assented FNTA instrument found. NeVA web reader cache misses/redirects were followed with successful normal public HTML and its linked public search/dashboard, revealing stale/demo coverage. No authentication, private route or access-control bypass used."
+    },
+    {
+      "route": "Governor sites",
+      "urls": [
+        "https://rajbhavan.nagaland.gov.in/",
+        "https://lokbhavan.nagaland.gov.in/",
+        "https://lokbhavan.nagaland.gov.in/?s=FNTA",
+        "https://lokbhavan.nagaland.gov.in/?s=assent"
+      ],
+      "outcome": "Old Raj Bhavan and current Lok Bhavan web-reader requests timed out. Current Lok Bhavan home and both public searches downloaded normally. FNTA returned no results; assent returned only generic RTI and Roles & Responsibility pages. No specific assent instrument found; no negative legal conclusion inferred."
+    },
+    {
+      "route": "Official-domain instrument searches",
+      "queries": [
+        "site.govtpress.nagaland.gov.in \"Frontier Nagaland\" \"Act\" 2026",
+        "site.nagaland.gov.in \"Frontier Nagaland Territorial Authority\" \"Act\" 2026",
+        "site.ipr.nagaland.gov.in \"FNTA\" \"assent\"",
+        "\"Frontier Nagaland\" \"commencement notification\"",
+        "\"FNTA\" \"Act No.\" \"2026\"",
+        "\"Frontier Nagaland\" site:indiacode.nic.in",
+        "\"Frontier Nagaland\" site:egazette.gov.in",
+        "\"Frontier Nagaland\" site:mha.gov.in \"2026\" \"Act\"",
+        "site:lokbhavan.nagaland.gov.in \"FNTA\"",
+        "site:lokbhavan.nagaland.gov.in \"assent\" \"2026\"",
+        "site:nla.nagaland.gov.in FNTA",
+        "site:nagaland.neva.gov.in FNTA"
+      ],
+      "outcome": "Located official agreement and passage statements, not a verifiable final assented Act or commencement/constitution instrument. Search non-results are not treated as legal nonexistence."
+    },
+    {
+      "route": "Other official entrances",
+      "urls": [
+        "https://assembly.nagaland.gov.in/",
+        "https://nagalandassembly.nic.in/",
+        "https://dpa.nagaland.gov.in/"
+      ],
+      "outcome": "Unreachable/inaccessible through the web reader; the state-designated nla.nagaland.gov.in and linked NeVA records were inspected instead."
+    },
+    {
+      "route": "Rendering and OCR",
+      "outcome": "Pypdf extracted mainly headings from scanned pages. Initial native OCR in the restricted process returned errors; a normal approved local native OCR run succeeded. Relevant cover/bulletin pages visually verified. OCR is a search aid, not a guarantee against every transcription miss."
+    },
+    {
+      "route": "Interactive-browser fallback",
+      "outcome": "Computer-use tool reported no in-app browser available and browser inventory empty. Public HTTP form navigation succeeded instead. No private browser session or credentials were used."
+    }
+  ],
+  "decision_limits": [
+    "No verified assent date, Act number or commencement date is supplied. A Bill containing the future short title Act, 2026 is not itself an assented Act.",
+    "Do not mark the institution pre-operative merely because commencement was not found: proof of final enactment and noncommencement would be needed for that narrower lifecycle conclusion.",
+    "The Gazette cover and bounded searches do not prove no extraordinary or unpublished-to-this-archive instrument exists.",
+    "Statements by ministers, newspapers calling it an Act, the political agreement and proposed interim selections do not substitute for the exact legal instruments.",
+    "Eligibility in force, establishment/constitution, elections/current operation and broadcast readiness are separate findings. No downstream validation started."
+  ],
+  "integration_recommendation": "Retain the existing india--frontier-nagaland-territorial-authority row and its specific_authority_evidence_hold. Replace the old generic download-timeout explanation with the newly verified Gazette passage and the two exact missing instruments. Keep outside active eligible-service validation until resolved; do not create six district legislatures or classify it as a Sixth Schedule council."
+}

@@ -1,0 +1,149 @@
+{
+  "research_date": "2026-10-24",
+  "decision": "publish_three_scoped_official_recording_links",
+  "records": [
+    {
+      "body_id": "switzerland--thurgau",
+      "catalogue_id": "switzerland-thurgau-recordings",
+      "institution": "Grosser Rat des Kantons Thurgau",
+      "region": "Thurgau",
+      "qid": "Q1547525",
+      "entity_revision": 2526179157,
+      "primary_reference": "https://parlament.tg.ch/",
+      "official_viewing_url": "https://grvisio.tg.ch/",
+      "confirmed_scope": "Official parliamentary archive, with selected recorded proceedings confirmed. 21 October2026: president Felix Meier speaking at the lit chair microphone while introducing initiative24/PI4/226 about democratic participation in authority referendums. 28 September2026: president Felix Meier handling motion24/MO29/200 about barbed wire and flexible pasture nets. The2025 dates in motion wording are not sitting dates. The archive labels its21October opening incomplete because of technical problems; selected later business plays, but this does not resolve the missing opening.",
+      "selected_recordings": [
+        {
+          "url": "https://grvisio.tg.ch/shareparl?agendaItemUid=0c3365d2-ec40-4f06-9221-22896fae38d2&unitName=default&scroll=true&autoplay=false",
+          "finding": "21 October2026: president Felix Meier speaking at the lit chair microphone while introducing initiative24/PI4/226 about democratic participation in authority referendums.",
+          "decoded_in_engines": [
+            "chromium",
+            "webkit"
+          ],
+          "captured_frames_individually_reviewed": true
+        },
+        {
+          "url": "https://grvisio.tg.ch/shareparl?agendaItemUid=ce95947c-f5bc-44de-be5e-ce505ddfe1b5&unitName=default&scroll=true&autoplay=false",
+          "finding": "28 September2026: president Felix Meier handling motion24/MO29/200 about barbed wire and flexible pasture nets. The2025 dates in motion wording are not sitting dates.",
+          "decoded_in_engines": [
+            "chromium",
+            "webkit"
+          ],
+          "captured_frames_individually_reviewed": true
+        }
+      ],
+      "source_conditions": "Primary Thurgau usage notice reserves protected-content reproduction absent prior written consent or statutory exceptions; downloading does not transfer rights. Public archive designation is not an independent audiovisual reuse grant. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+      "source_specific_limits": [
+        "The archive labels its21October opening incomplete because of technical problems; selected later business plays, but this does not resolve the missing opening."
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_all_tracks_unverified",
+        "source_wide_caption_signing_audio_description_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "optional_flag_asset_unverified_neutral_mark_used"
+      ],
+      "map_source_feature": "CH-TG",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--zurich",
+      "catalogue_id": "switzerland-zurich-recordings",
+      "institution": "Kantonsrat des Kantons Zürich",
+      "region": "Zurich",
+      "qid": "Q2110002",
+      "entity_revision": 2549971659,
+      "primary_reference": "https://www.kantonsrat.zh.ch/",
+      "official_viewing_url": "https://zh.recapp.ch/shareparl/",
+      "confirmed_scope": "Official parliamentary archive, with selected recorded proceedings confirmed. 19 October2026 sitting173: chair Romaine Rogenmoser handling proceedings with youth-protection film/media repeal item6047 selected. Initial frames contain a crossfade and prior-item graphics; a later Chromium sample in the same speaker segment clearly shows the chair. 28 September2026 afternoon sitting172: chair Romaine Rogenmoser reading/speaking at the lit microphone on the accumulating shore-path fund item61b/2021. Do not attribute the initial October crossfade or prior graphics to an exact new-item vote. Later settled Chromium playback confirmed the chair; the later WebKit repeat did not advance, while the original selected-segment test did.",
+      "selected_recordings": [
+        {
+          "url": "https://zh.recapp.ch/shareparl?agendaItemUid=1137f348-a941-4c51-a26b-b76106735d04&scroll=true&autoplay=false",
+          "finding": "19 October2026 sitting173: chair Romaine Rogenmoser handling proceedings with youth-protection film/media repeal item6047 selected. Initial frames contain a crossfade and prior-item graphics; a later Chromium sample in the same speaker segment clearly shows the chair.",
+          "decoded_in_engines": [
+            "chromium",
+            "webkit"
+          ],
+          "captured_frames_individually_reviewed": true
+        },
+        {
+          "url": "https://zh.recapp.ch/shareparl?agendaItemUid=57c62bf6-90a1-4017-b272-65e80edfba1b&scroll=true&autoplay=false",
+          "finding": "28 September2026 afternoon sitting172: chair Romaine Rogenmoser reading/speaking at the lit microphone on the accumulating shore-path fund item61b/2021.",
+          "decoded_in_engines": [
+            "chromium",
+            "webkit"
+          ],
+          "captured_frames_individually_reviewed": true
+        }
+      ],
+      "source_conditions": "The current own parliamentary website explicitly designates this Recapp archive. Source-wide audiovisual redistribution permission has not been established; the provider legal/privacy link is not treated as a media licence. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+      "source_specific_limits": [
+        "Do not attribute the initial October crossfade or prior graphics to an exact new-item vote. Later settled Chromium playback confirmed the chair; the later WebKit repeat did not advance, while the original selected-segment test did."
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_all_tracks_unverified",
+        "source_wide_caption_signing_audio_description_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "optional_flag_asset_unverified_neutral_mark_used"
+      ],
+      "map_source_feature": "CH-ZH",
+      "all_metadata_and_streams_certified": false
+    },
+    {
+      "body_id": "switzerland--vaud-waadt",
+      "catalogue_id": "switzerland-vaud-waadt-recordings",
+      "institution": "Grand Conseil du canton de Vaud",
+      "region": "Vaud",
+      "qid": "Q2131740",
+      "entity_revision": 2396308876,
+      "primary_reference": "https://www.vd.ch/gc",
+      "official_viewing_url": "https://www.sonomix.ch/live/gcvd/",
+      "confirmed_scope": "Official parliamentary archive, with selected recorded proceedings confirmed. 6 October2026 morning: a member is reading/speaking at a lit seat microphone, with source Point6 overlay and parliamentary chapter navigation. 6 October2026 afternoon: a woman is speaking/reading at a lit microphone during the question-hour portion, with source Point3 overlay. No speaker identity or specific oral answer is independently inferred. These are separate morning and afternoon recordings of the same date, not two independently dated sittings. Source footer reserves rights; no current-live observation or source-wide caption guarantee is implied.",
+      "selected_recordings": [
+        {
+          "url": "https://www.sonomix.ch/live/gcvd/3509",
+          "finding": "6 October2026 morning: a member is reading/speaking at a lit seat microphone, with source Point6 overlay and parliamentary chapter navigation.",
+          "decoded_in_engines": [
+            "chromium",
+            "webkit"
+          ],
+          "captured_frames_individually_reviewed": true
+        },
+        {
+          "url": "https://www.sonomix.ch/live/gcvd/3511",
+          "finding": "6 October2026 afternoon: a woman is speaking/reading at a lit microphone during the question-hour portion, with source Point3 overlay. No speaker identity or specific oral answer is independently inferred.",
+          "decoded_in_engines": [
+            "chromium",
+            "webkit"
+          ],
+          "captured_frames_individually_reviewed": true
+        }
+      ],
+      "source_conditions": "The own vd.ch Grand Conseil page explicitly designates the Sonomix viewing service. Its footer reserves rights. No blanket audiovisual copying, independent embed or rebroadcast permission is inferred from public viewing. Published as an official viewing link, personal-use permission pending. No extracted live stream or IPTV export.",
+      "source_specific_limits": [
+        "These are separate morning and afternoon recordings of the same date, not two independently dated sittings. Source footer reserves rights; no current-live observation or source-wide caption guarantee is implied."
+      ],
+      "remaining_gates": [
+        "current_live_and_complete_room_inventory_unverified",
+        "audible_quality_and_all_tracks_unverified",
+        "source_wide_caption_signing_audio_description_unverified",
+        "independent_audiovisual_reuse_unestablished",
+        "optional_flag_asset_unverified_neutral_mark_used"
+      ],
+      "map_source_feature": "CH-VD",
+      "all_metadata_and_streams_certified": false
+    }
+  ],
+  "evidence_reports": [
+    "reports/health/2026-10-24-five-swiss-recapp-selected-segments.json",
+    "reports/health/2026-10-24-zurich-settled-speech.json",
+    "reports/health/2026-10-24-swiss-native-selected-recordings.json"
+  ],
+  "not_claimed": [
+    "all_eligible_bodies_fully_validated",
+    "all_current_live_or_rooms",
+    "audible_or_complete_accessibility_certification",
+    "independent_video_reuse_grant"
+  ]
+}

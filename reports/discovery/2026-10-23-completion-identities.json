@@ -1,0 +1,222 @@
+[
+  {
+    "key": "kaltara",
+    "qid": "Q25470476",
+    "revision": 2482943627,
+    "labels": {
+      "id": {
+        "language": "id",
+        "value": "Dewan Perwakilan Rakyat Daerah Provinsi Kalimantan Utara"
+      },
+      "en": {
+        "language": "en",
+        "value": "North Kalimantan Regional House of Representatives"
+      },
+      "su": {
+        "language": "su",
+        "value": "Déwan Pangwakil Rahayat Daérah Propinsi Kalimantan Kalér"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "unicameral legislature of North Kalimantan, Indonesia"
+      },
+      "id": {
+        "language": "id",
+        "value": "lembaga legislatif satu kamar di Kalimantan Utara, Indonesia"
+      }
+    },
+    "claims": {
+      "P31": [
+        {
+          "entity-type": "item",
+          "numeric-id": 19751617,
+          "id": "Q19751617"
+        }
+      ],
+      "P17": [
+        {
+          "entity-type": "item",
+          "numeric-id": 252,
+          "id": "Q252"
+        }
+      ],
+      "P1001": [
+        {
+          "entity-type": "item",
+          "numeric-id": 3903,
+          "id": "Q3903"
+        }
+      ],
+      "P131": [],
+      "P856": [],
+      "P2397": []
+    }
+  },
+  {
+    "key": "arauca",
+    "qid": "Q51092556",
+    "revision": 2329956527,
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "departmental assembly of Arauca"
+      },
+      "es": {
+        "language": "es",
+        "value": "asamblea departamental de Arauca"
+      },
+      "vec": {
+        "language": "vec",
+        "value": "Asenblea departementałe de Arauca"
+      },
+      "gl": {
+        "language": "gl",
+        "value": "Asemblea Departamental de Arauca"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "departmental legislature in Colombia"
+      }
+    },
+    "claims": {
+      "P31": [
+        {
+          "entity-type": "item",
+          "numeric-id": 37002670,
+          "id": "Q37002670"
+        }
+      ],
+      "P17": [
+        {
+          "entity-type": "item",
+          "numeric-id": 739,
+          "id": "Q739"
+        }
+      ],
+      "P1001": [
+        {
+          "entity-type": "item",
+          "numeric-id": 230223,
+          "id": "Q230223"
+        }
+      ],
+      "P131": [],
+      "P856": [],
+      "P2397": []
+    }
+  },
+  {
+    "key": "caqueta",
+    "qid": "Q51092549",
+    "revision": 2324431382,
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "departmental assembly of Caquetá"
+      },
+      "es": {
+        "language": "es",
+        "value": "asamblea departamental de Caquetá"
+      },
+      "vec": {
+        "language": "vec",
+        "value": "Asenblea departementałe de Caquetá"
+      },
+      "gl": {
+        "language": "gl",
+        "value": "Asemblea Departamental de Caquetá"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "departmental legislature in Colombia"
+      }
+    },
+    "claims": {
+      "P31": [
+        {
+          "entity-type": "item",
+          "numeric-id": 37002670,
+          "id": "Q37002670"
+        }
+      ],
+      "P17": [
+        {
+          "entity-type": "item",
+          "numeric-id": 739,
+          "id": "Q739"
+        }
+      ],
+      "P1001": [
+        {
+          "entity-type": "item",
+          "numeric-id": 13985,
+          "id": "Q13985"
+        }
+      ],
+      "P131": [],
+      "P856": [],
+      "P2397": []
+    }
+  },
+  {
+    "key": "risaralda",
+    "qid": "Q51092550",
+    "revision": 2012212091,
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "departmental assembly of Risaralda"
+      },
+      "es": {
+        "language": "es",
+        "value": "asamblea departamental de Risaralda"
+      },
+      "vec": {
+        "language": "vec",
+        "value": "Asenblea departementałe de Risaralda"
+      },
+      "gl": {
+        "language": "gl",
+        "value": "Asemblea Departamental de Risaralda"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "departmental legislature in Colombia"
+      }
+    },
+    "claims": {
+      "P31": [
+        {
+          "entity-type": "item",
+          "numeric-id": 37002670,
+          "id": "Q37002670"
+        }
+      ],
+      "P17": [
+        {
+          "entity-type": "item",
+          "numeric-id": 739,
+          "id": "Q739"
+        }
+      ],
+      "P1001": [
+        {
+          "entity-type": "item",
+          "numeric-id": 13993,
+          "id": "Q13993"
+        }
+      ],
+      "P131": [],
+      "P856": [],
+      "P2397": []
+    }
+  }
+]

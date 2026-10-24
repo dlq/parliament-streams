@@ -1,0 +1,69 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "The state Constitution ArticleVI vests legislative power in the Senate and House of Delegates. This is the state legislature, not a city/county council; institutional Wikidata Q7986861 corroborates identity.",
+    "Official provenance and proceedings: The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated.",
+    "Source conditions: The linked Terms of Use provides public-information, accuracy and external-link disclaimers, not a blanket audiovisual reuse licence. No independent playback/redistribution permission was established. Keep official link-out.",
+    "Evidence: reports/discovery/2026-10-23-validation-second-pass.json",
+    "Added as official link-out; regional flag, parent-country search, map and planned event/recording-index links reconciled."
+  ],
+  "channel": {
+    "id": "us-west-virginia-legislature-media",
+    "name": "West Virginia Legislature Media",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "West Virginia",
+    "legislature": "West Virginia Legislature",
+    "external_ids": {
+      "wikidata_qid": "Q7986861",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q7986861",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Matched legislature Q7986861 revision 2384877852 against the official institution and its designated viewing service. Geographic-entity IDs are not substituted for legislative bodies."
+      }
+    ],
+    "language": "English",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://home.wvlegislature.gov/live-media/",
+    "provenance_note": "The maintained official media hub directly designates House/Senate provider channels, Senate committee-room links and archived audio. Two historical House recordings (school-safety session and SB275 virtual public hearing) show actual proceedings with advancing decoded video. Their provider dates are retained separately; this does not certify current live or Senate/committee-room playback. The page reports no meetings scheduled on 23 October 2026; its live embeds did not start on this attempt. School-safety provider publication: 14 June 2022. SB275 hearing description dates the event 4 March 2021, while provider publication is 5 March 2021; these dates are not conflated.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Institutional/source metadata. Playback checks were muted; full spoken-language and interpretation/accessibility coverage is unreviewed. No service-wide caption/sign-language/audio-description guarantee established."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://home.wvlegislature.gov/live-media/",
+        "method": "GET",
+        "kind": "official_event_or_recording_index"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The linked Terms of Use provides public-information, accuracy and external-link disclaimers, not a blanket audiovisual reuse licence. No independent playback/redistribution permission was established. Keep official link-out.",
+      "evidence": [
+        "https://www.wvlegislature.gov/termsofuse.cfm"
+      ],
+      "recommendation": "Open the official viewing service. Independent playback/reuse, current live room coverage and an implemented XMLTV parser remain separate checks."
+    }
+  }
+}

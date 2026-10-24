@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-23",
+  "updated_on": "2026-10-23",
+  "decision_notes": [
+    "Official assembly website designates its recording provider. Confirmed21October2026 plenary with metropolitan-area director Juan Martín Dussán López speaking at chamber microphone;20October archive contains the Finance Secretariat management/investment presentation at5000seconds. Both selected archives decode in Chromium/WebKit. The20October1200second sample is an institutional video shown during the sitting, not a direct member speech. The separate upload titled22October shows21October on-screen; that exact date is unresolved and is not used as an independently dated third sitting.",
+    "Official institutional viewing link only; no blanket independent audiovisual reuse permission was established from the reviewed own navigation. Personal-use permission remains pending. No provider embed, rehosting, extracted manifest or IPTV export is added.",
+    "Evidence: reports/discovery/2026-10-23-caldas-publication-review.json"
+  ],
+  "channel": {
+    "id": "colombia-caldas-assembly-recordings",
+    "name": "Caldas Departmental Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Caldas",
+    "legislature": "Asamblea Departamental de Caldas",
+    "external_ids": {
+      "wikidata_qid": "Q21708048",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q21708048",
+        "checked_on": "2026-10-23",
+        "confidence": "high",
+        "notes": "Exact Spanish assembly label and Colombia P17 Q739, revision1373460380; primary assembly identity/provider corroborates Caldas department. Item lacks P1001/P856; do not invent jurisdiction/site claims or substitute a territorial item."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.asambleadecaldas.gov.co/",
+    "provenance_note": "Official assembly website designates its recording provider. Confirmed21October2026 plenary with metropolitan-area director Juan Martín Dussán López speaking at chamber microphone;20October archive contains the Finance Secretariat management/investment presentation at5000seconds. Both selected archives decode in Chromium/WebKit. The20October1200second sample is an institutional video shown during the sitting, not a direct member speech. The separate upload titled22October shows21October on-screen; that exact date is unresolved and is not used as an independently dated third sitting.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "No complete caption, sign-language variant or audio-description coverage established. Speaker/topic captions are not full subtitles; muted samples do not verify audible Spanish/all audio tracks."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.asambleadecaldas.gov.co/",
+        "method": "GET",
+        "kind": "official_institution_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official institutional viewing link only; no blanket independent audiovisual reuse permission was established from the reviewed own navigation. Personal-use permission remains pending. No provider embed, rehosting, extracted manifest or IPTV export is added.",
+      "evidence": [
+        "https://www.asambleadecaldas.gov.co/"
+      ],
+      "recommendation": "Use the official institution and designated archive; independently confirm reuse, all rooms/live, accessibility and audible tracks."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "method": "Normal TLS primary-source navigation; no access or consent workaround",
+  "results": [
+    {
+      "key": "nb-disclaimer",
+      "url": "https://www.legnb.ca/en/disclaimer",
+      "checked_at": "2026-10-24T03:18:45.616055+00:00",
+      "status": 200,
+      "final_url": "https://www.legnb.ca/en/disclaimer",
+      "condition_links": [
+        {
+          "url": "/en/disclaimer",
+          "text": "Disclaimer"
+        }
+      ],
+      "outcome": "primary_content_requires_review",
+      "individual_disposition": "Primary disclaimer permits specified educational, private study, research and reporting reproduction with accuracy and unofficial-version conditions. Exact webcast redistribution scope remains unresolved; permission is pending."
+    },
+    {
+      "key": "aland-rules",
+      "url": "https://www.lagtinget.ax/lagtinget/lagtings-och-arbetsordningen/lagtingsordningen",
+      "checked_at": "2026-10-24T03:18:45.779912+00:00",
+      "status": 200,
+      "final_url": "https://www.lagtinget.ax/lagtinget/lagtings-och-arbetsordningen/lagtingsordningen",
+      "condition_links": [],
+      "outcome": "primary_content_requires_review",
+      "individual_disposition": "Sections 3 and 4 establish Swedish working language and legislative/budget powers within autonomy; this is a legislature, not an ordinary municipal council."
+    },
+    {
+      "key": "aland-live",
+      "url": "https://www.lagtinget.ax/live",
+      "checked_at": "2026-10-24T03:18:47.205804+00:00",
+      "status": 200,
+      "final_url": "https://www.lagtinget.ax/live",
+      "condition_links": [],
+      "outcome": "primary_content_requires_review",
+      "individual_disposition": "Current own page designates the YouTube plenary archive and describes the parliament law-making, budget and government-scrutiny functions. No independent audiovisual reuse grant established."
+    },
+    {
+      "key": "montenegro-ipu",
+      "url": "https://data.ipu.org/parliament/ME/ME-LC01/working-methods/structure/",
+      "checked_at": "2026-10-24T03:18:47.470202+00:00",
+      "outcome": "inspection_error",
+      "error": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>",
+      "individual_disposition": "Local Python TLS negotiation failed. The exact primary IPU URL was separately opened by the web reader and confirms Montenegro Parliament and unicameral structure; no TLS bypass used."
+    },
+    {
+      "key": "montenegro-root",
+      "url": "https://www.skupstina.me/",
+      "checked_at": "2026-10-24T03:18:47.568872+00:00",
+      "status": 200,
+      "final_url": "https://www.skupstina.me/",
+      "condition_links": [],
+      "outcome": "primary_content_requires_review",
+      "individual_disposition": "Own institutional navigation previously rendered in Chromium designates the exact recording provider. A bounded static fetch is a shell, not independent playback proof. No general audiovisual reuse grant established."
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "Bounded authority consistency comparison across six countries/seven classes; inventory only. No masters, catalogue, metadata, streams, EPG or rights edits.",
+  "baseline": "reports/discovery/2026-10-23-authority-completion.json",
+  "policy": "docs/catalogue-scope.md",
+  "policy_application": "Same functional first-level/combined-territorial regional-ordinance threshold; no sovereign-or-Act-title requirement, no blanket council inclusion, municipal exclusion retained.",
+  "finding": "The Czech/Croatian asymmetry was not justified by the retained sources. Correct Croatian county/Zagreb scope and Budapest’s separate combined territorial-capital scope; keep materially narrower coordination/local-administration exclusions with accurate powers wording.",
+  "summary": {
+    "countries": 6,
+    "classes": 7,
+    "existing_inventory_ids_reviewed": 99,
+    "keep_eligible": 14,
+    "change_outside_to_eligible": 22,
+    "keep_outside": 63,
+    "specific_authority_evidence_hold": 0,
+    "new_jurisdictions": 0,
+    "new_catalogue_sources": 0,
+    "master_updates_applied": false
+  },
+  "sources": [
+    {
+      "id": "cz-constitution",
+      "title": "Czech Constitution, Articles 99–105",
+      "url": "https://www.psp.cz/docs/laws/constitution.html",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Higher territorial units are constitutionally distinct from municipalities; assemblies have their own budgets and Article 104(3) generally binding ordinances within their jurisdiction. Article 105 separately addresses delegated state administration.",
+      "currentness_limits": "Parliament-hosted text lists amendments through 2013. Article 104 is not a claim that regional duties can be imposed without a statutory basis."
+    },
+    {
+      "id": "cz-regions-act",
+      "title": "Ministry-hosted English Regions Act 129/2000, sections 1–8",
+      "url": "https://mv.gov.cz/soubor/act-no-129-2000-coll-on-regions-establishment-of-regions.aspx",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Sections 2,4 distinguish independent competence from delegated state functions. Section 6 allows assembly regulations imposing obligations only where stipulated by law; section 7 separately concerns delegated executive directives. Section 8 provides promulgation and legal effect.",
+      "currentness_limits": "Downloaded primary ministry PDF,10 pages, translation incorporating amendments through 2002. Used with retained baseline and Constitution; not a full 2026 procedural consolidation."
+    },
+    {
+      "id": "cz-regions-list",
+      "title": "Constitutional Act 347/1997, higher self-governing units",
+      "url": "https://www.psp.cz/docs/laws/1997/347.html",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "The listed higher territorial units include Prague. Combined regional capacity is the relevant comparison, not ordinary municipal councils.",
+      "currentness_limits": "Parliament-hosted text indicates 2011 amendments; reader character encoding is degraded. Existing 14 IDs retained; no new territorial count inferred."
+    },
+    {
+      "id": "hr-constitution",
+      "title": "Croatian Constitution, Articles 133–138",
+      "url": "https://www.sabor.hr/en/information-access/important-legislation/constitution-republic-croatia-consolidated-text",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Counties are regional self-government units, distinct from municipalities/towns; Zagreb may have county status. Broad regional affairs, autonomous internal organisation, legality-only state oversight and own revenues are constitutionally protected.",
+      "currentness_limits": "Official parliamentary English consolidated text; no later procedural amendment census implied."
+    },
+    {
+      "id": "hr-act",
+      "title": "Local and Regional Self-Government Act, official 2013 consolidation",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_19_323.html",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Articles 18,20 establish own regional remit; 35,35 a–b,36 and 71 provide assembly general acts, executive questioning/reports and budget control. Articles 73–76 provide publication, legal effect and executive implementation of general acts affecting legal rights/obligations.",
+      "currentness_limits": "Official 2013 consolidation read at relevant clauses. Later 2017,2019,2020 changes exist; current ministry explanations corroborate core powers, not every procedural detail."
+    },
+    {
+      "id": "hr-current-ministry",
+      "title": "Responsible ministry: local and regional government system, especially FAQ54–56",
+      "url": "https://mpudt.gov.hr/sustav-lokalne-i-podrucne-regionalne-samouprave-23640/23640",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_responsible_ministry_search_index_content_review",
+      "finding": "Current ministry explanation retains own-remit county general acts, official publication/entry into force and implementation through individual rights/obligations decisions. County remit extends across several regional policy sectors.",
+      "currentness_limits": "Own-government indexed relevant text read; this is a corroborating explanation, not an invented new regional legislative statute."
+    },
+    {
+      "id": "hr-zagreb",
+      "title": "Zagreb Assembly: city statute, English translation, Articles 39–41",
+      "url": "https://skupstina.zagreb.hr/UserDocsImages/Engleski%20WEB/Statut%20Grada%20Zagreba_engleski%20prijevod.pdf",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_own_statute_search_index_excerpt_review",
+      "finding": "Own statute distinguishes representative regulation of self-governing relations from executive tasks, reserves general acts/budget to Assembly and applies the city/county institutional arrangement.",
+      "currentness_limits": "Historical English translation; old seat counts and currency thresholds are not adopted. Supports functional comparison alongside Constitution/current ministry account."
+    },
+    {
+      "id": "al-qark-act",
+      "title": "Law 139/2015 on local self-government, Articles 31,72–77,85, government-hosted copy",
+      "url": "https://qarkuvlore.gov.al/wp-content/uploads/2020/03/Ligj-Nr.1392015-Per-veteqeverisjen-vendore.pdf",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_enacted_law_government_copy_search_index_content_review",
+      "finding": "Qark own function is regional-policy construction/implementation and harmonisation with state policy; further functions are statutory/delegated. Representation is constituted from municipalities. Norms/standards attach to allocated functions and cannot impair constituent municipal autonomy.",
+      "currentness_limits": "Government-hosted copy, not full 2026 amendment consolidation. No inference that indirectly chosen membership alone disqualifies a legislature."
+    },
+    {
+      "id": "al-own-current-functions",
+      "title": "Elbasan qark own statutory functions",
+      "url": "https://qarkuelbasan.gov.al/funksionet-e-qarkut/",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_own_institution_statutory_explanation_search_index_review",
+      "finding": "Own current-facing functions page reproduces Law 139/2015 Article 31 policy/delegation scope and Article 77 council powers.",
+      "currentness_limits": "Direct reader 403; own indexed text corroborates statutory remit, not every regional current practice."
+    },
+    {
+      "id": "hu-constitution",
+      "title": "Hungary Fundamental Law, Ministry of Justice English consolidation, Articles 31–35",
+      "url": "https://njt.jog.gov.hu/jogszabaly/en/2011-4301-02-00",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Articles 32–33 establish representative-body decree authority, autonomous administration and budgets; Article 32(2) permits local decrees on social relations unregulated by Acts or under statutory authorisation, subject to law.",
+      "currentness_limits": "Direct download returned a 43-page official PDF expressly as in force 1 October 2026, incorporating 17th Amendment. Informational English translation. Reader timeout was overcome by reading that ordinary public download."
+    },
+    {
+      "id": "hu-local-act",
+      "title": "Hungary Local Government Act CLXXXIX/2011, current 1 October 2026 text",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2011-189-00-00",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Sections 3(3), 22–26 expressly give Budapest combined territorial/municipal capacity and broad capital-wide functions. Section 42 reserves decree-making to the representative body. Section 27 assigns counties development/rural-development/coordination; section 10 voluntary tasks does not by itself demonstrate a wider substantive county legislative grant.",
+      "currentness_limits": "Current native consolidation dated 1 October 2026 read. The old fixed .66 URL is 9 June 2024 and does not govern currentness. The 2026 text uses megye; individual formal-name updates are deferred to metadata stage."
+    },
+    {
+      "id": "gy-constitution",
+      "title": "Guyana Constitution, Articles 71–78",
+      "url": "https://old.parliament.gov.gy/constitution.pdf",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_constitution_search_index_content_review",
+      "finding": "Article 75 requires autonomous local organs with binding decisions; Article 76 permits statutory revenue powers and Article 77 aligns regional programmes with national plans. This is substantial self-government, not merely advice.",
+      "currentness_limits": "Official parliamentary indexed constitutional text read; direct PDF reader failed. It must be read with the actual statute implementing local regulation."
+    },
+    {
+      "id": "gy-act",
+      "title": "Guyana Local Democratic Organs Act, Cap 28: 09, ministry law collection",
+      "url": "https://www.mola.gov.gy/public/laws/Volume%208%20Cap.%2028.04%20-%2036.011696911949.pdf",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "Printed pp. 11–14: section 7 permits local-area regulations/revenue/compulsory acquisition with Minister approval; 13 extends relevant provisions to RDCs. Section 32 applies municipal/district framework with exceptions; 33 requires programmes consistent with national policy. Regulation exists, but within the local-administration framework.",
+      "currentness_limits": "Official ministry index download read locally; displayed law reprint is LRO 1/2012. The collection’s newer hosting does not make it a 2026 consolidation. Later chair/election amendments are not taken as a new broad legislative grant."
+    },
+    {
+      "id": "gy-ministry-index",
+      "title": "Guyana Ministry of Legal Affairs law index, chapter 028: 09",
+      "url": "https://www.mola.gov.gy/public/index.php/laws-of-guyana?page=20",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "The ministry’s actual Local Democratic Organs Act link designates the downloaded PDF used in this review.",
+      "currentness_limits": "Link provenance only; collection recency does not certify the reprint date of every chapter."
+    },
+    {
+      "id": "mn-constitution",
+      "title": "Mongolian Constitution, Articles 57–63, current own Court native text",
+      "url": "https://constitutionalcourt.mn/монгол-улсын-үндсэн-хууль/",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "First-level aimag/capital representative Khurals are self-governing bodies; local decisions are binding within constitutional/statutory competence. Article 62 independent local decisions and 63 resolutions are not erased by the scope exclusion.",
+      "currentness_limits": "Own Court native text read with official-hosted English statutory translation. No national seat-count or current membership claim is made."
+    },
+    {
+      "id": "mn-units-act",
+      "title": "Mongolia 2020 revised Units and Governance Act, Articles 4,6,9,21,24,33–35",
+      "url": "https://legalinfo.mn/en/edtl/16532201415661",
+      "reviewed_on": "2026-10-24",
+      "evidence_level": "primary_legal_text_content_review",
+      "finding": "CRKs decide assigned local economic/social functions, budgets, taxes within statutory limits and governor scrutiny. Article 35.1.14 specifically conditions administrative normative acts on special statutory empowerment and registration; 35.1.16 permits trade/service procedures. These are actual regulatory powers, not a general autonomous regional legislative mandate.",
+      "currentness_limits": "State legal portal labels English an unofficial translation. Relevant native/translated framework clauses reviewed; not an exhaustive inventory of every sectoral delegation."
+    }
+  ],
+  "classes": [
+    {
+      "id": "czech-higher-territorial-assemblies-consistency",
+      "country": "Czech Republic",
+      "affected_existing_inventory_ids": [
+        "czech-republic--jihocesky-kraj",
+        "czech-republic--jihomoravsky-kraj",
+        "czech-republic--karlovarsky-kraj",
+        "czech-republic--kralovehradecky-kraj",
+        "czech-republic--liberecky-kraj",
+        "czech-republic--moravskoslezsky-kraj",
+        "czech-republic--olomoucky-kraj",
+        "czech-republic--pardubicky-kraj",
+        "czech-republic--plzensky-kraj",
+        "czech-republic--stredocesky-kraj",
+        "czech-republic--ustecky-kraj",
+        "czech-republic--vysocina",
+        "czech-republic--zlinsky-kraj",
+        "czech-republic--praha"
+      ],
+      "affected_existing_inventory_count": 14,
+      "previous_authority_status": "eligible_legislature",
+      "authority_status": "eligible_legislature",
+      "recommendation": "keep",
+      "decision_basis": "Retain 14 eligible higher territorial assemblies under existing substantive regional-ordinance rule. Independent regional norms differ from delegated executive directives. The accepted status does not mean unlimited or sovereign lawmaking; duties still require legal support. Prague qualifies in constitutionally established higher territorial capacity.",
+      "primary_urls": [
+        "https://www.psp.cz/docs/laws/constitution.html",
+        "https://mv.gov.cz/soubor/act-no-129-2000-coll-on-regions-establishment-of-regions.aspx",
+        "https://www.psp.cz/docs/laws/1997/347.html"
+      ],
+      "primary_evidence_refs": [
+        "cz-constitution",
+        "cz-regions-act",
+        "cz-regions-list"
+      ],
+      "legal_citations": [
+        "Constitution Articles 99–105",
+        "Regions Act 129/2000 sections 1–8 and retained assembly/budget framework",
+        "Constitutional Act 347/1997"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "consistency_implication": "The same own-remit normative/budget/executive-control test must apply to Croatian regional assemblies; an English local-government label cannot decide either outcome."
+    },
+    {
+      "id": "croatian-counties-and-capital-consistency",
+      "country": "Croatia",
+      "affected_existing_inventory_ids": [
+        "croatia--zagreb-county",
+        "croatia--krapina-zagorje",
+        "croatia--sisak-moslavina",
+        "croatia--karlovac",
+        "croatia--varazdin",
+        "croatia--koprivnica-krizevci",
+        "croatia--bjelovar-bilogora",
+        "croatia--primorje-gorski-kotar",
+        "croatia--lika-senj",
+        "croatia--virovitica-podravina",
+        "croatia--pozega-slavonia",
+        "croatia--brod-posavina",
+        "croatia--zadar",
+        "croatia--osijek-baranja",
+        "croatia--sibenik-knin",
+        "croatia--vukovar-srijem",
+        "croatia--split-dalmatia",
+        "croatia--istria",
+        "croatia--dubrovnik-neretva",
+        "croatia--me-imurje",
+        "croatia--city-of-zagreb"
+      ],
+      "affected_existing_inventory_count": 21,
+      "previous_authority_status": "outside_default_scope",
+      "authority_status": "eligible_legislature",
+      "recommendation": "change",
+      "decision_basis": "Change 21 existing exclusions to eligible regional assemblies for project scope: 20 counties plus Zagreb in full combined county capacity. Own-remit general acts, multi-sector regional functions, budget control and executive scrutiny meet the same functional ordinance threshold used for Czech regions. Prior service-only wording under-described their authority.",
+      "primary_urls": [
+        "https://www.sabor.hr/en/information-access/important-legislation/constitution-republic-croatia-consolidated-text",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_19_323.html",
+        "https://mpudt.gov.hr/sustav-lokalne-i-podrucne-regionalne-samouprave-23640/23640",
+        "https://skupstina.zagreb.hr/UserDocsImages/Engleski%20WEB/Statut%20Grada%20Zagreba_engleski%20prijevod.pdf"
+      ],
+      "primary_evidence_refs": [
+        "hr-constitution",
+        "hr-act",
+        "hr-current-ministry",
+        "hr-zagreb"
+      ],
+      "legal_citations": [
+        "Constitution Articles 133–138",
+        "LRSG Act Articles 18,20,35–36,71,73–76",
+        "Zagreb statute Articles 39–41"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "ordinary_municipality_exclusion_preserved": "Other Croatian municipal/city councils stay excluded; performing a particular county service does not itself make an ordinary city a county-tier legislature.",
+      "currentness_limits": "The 2013 official consolidation is corroborated by current ministry powers explanations. Do not reuse historical executive appointment mechanics, seats or currency values."
+    },
+    {
+      "id": "albanian-qark-coordination-consistency",
+      "country": "Albania",
+      "affected_existing_inventory_ids": [
+        "albania--berat",
+        "albania--diber",
+        "albania--durres",
+        "albania--elbasan",
+        "albania--fier",
+        "albania--gjirokaster",
+        "albania--korce",
+        "albania--kukes",
+        "albania--lezhe",
+        "albania--shkoder",
+        "albania--tirane",
+        "albania--vlore"
+      ],
+      "affected_existing_inventory_count": 12,
+      "previous_authority_status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "recommendation": "keep",
+      "decision_basis": "Retain 12 qark exclusions because operative own remit is policy coordination/harmonisation and allocated/delegated functions, not a general autonomous regional normative legislature. Binding decisions, standards, finances and executive organisation are acknowledged. Indirect representation is not the disqualifying criterion.",
+      "primary_urls": [
+        "https://qarkuvlore.gov.al/wp-content/uploads/2020/03/Ligj-Nr.1392015-Per-veteqeverisjen-vendore.pdf",
+        "https://qarkuelbasan.gov.al/funksionet-e-qarkut/"
+      ],
+      "primary_evidence_refs": [
+        "al-qark-act",
+        "al-own-current-functions"
+      ],
+      "legal_citations": [
+        "Law 139/2015 Articles 31,72–77,85"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "reopening_evidence": "An enacted additional grant of substantive autonomous regional legislation beyond policy coordination/delegation; not merely a new stream or council label."
+    },
+    {
+      "id": "hungarian-county-development-consistency",
+      "country": "Hungary",
+      "affected_existing_inventory_ids": [
+        "hungary--bacs-kiskun",
+        "hungary--baranya",
+        "hungary--bekes",
+        "hungary--borsod-abauj-zemplen",
+        "hungary--csongrad-csanad",
+        "hungary--fejer",
+        "hungary--gyor-moson-sopron",
+        "hungary--hajdu-bihar",
+        "hungary--heves",
+        "hungary--jasz-nagykun-szolnok",
+        "hungary--komarom-esztergom",
+        "hungary--nograd",
+        "hungary--pest",
+        "hungary--somogy",
+        "hungary--szabolcs-szatmar-bereg",
+        "hungary--tolna",
+        "hungary--vas",
+        "hungary--veszprem",
+        "hungary--zala"
+      ],
+      "affected_existing_inventory_count": 19,
+      "previous_authority_status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "recommendation": "keep",
+      "decision_basis": "Retain the 19 county exclusions for the narrower territorial-development, rural-development and coordination remit in section 27, while acknowledging real constitutional decree and budget powers. Section 10 voluntary tasks were considered; the reviewed grant does not establish broad normative authority across general regional affairs beyond that county-development remit. Budapest has separately established broad combined capital/territorial functions.",
+      "primary_urls": [
+        "https://njt.jog.gov.hu/jogszabaly/en/2011-4301-02-00",
+        "https://njt.jog.gov.hu/jogszabaly/2011-189-00-00"
+      ],
+      "primary_evidence_refs": [
+        "hu-constitution",
+        "hu-local-act"
+      ],
+      "legal_citations": [
+        "Fundamental Law Articles 31–35",
+        "Local Government Act sections 10–11,27,42"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "counterevidence_considered": "General decree powers and voluntary tasks are real. Exclusion rests on the specific breadth of county competence, rather than denying normative force or requiring sovereign/unlimited power.",
+      "currentness_limits": "Current 1 October 2026 native section 27 read; current text omits earlier spatial-planning wording and uses megye. Preserve dated earlier wording/name rather than silently treating it as current."
+    },
+    {
+      "id": "budapest-combined-territorial-capital-consistency",
+      "country": "Hungary",
+      "affected_existing_inventory_ids": [
+        "hungary--budapest"
+      ],
+      "affected_existing_inventory_count": 1,
+      "previous_authority_status": "outside_default_scope",
+      "authority_status": "eligible_legislature",
+      "recommendation": "change",
+      "decision_basis": "Change Budapest’s existing exclusion to eligible in its combined territorial/capital capacity. The current statute expressly supplies that dual tier; constitutional own-remit decrees and broad cross-district regulatory functions, assembly-reserved lawmaking, budget and executive control satisfy the same combined-capital regional test as Prague and Zagreb. Do not bundle it with the 19 narrow county-development assemblies.",
+      "primary_urls": [
+        "https://njt.jog.gov.hu/jogszabaly/en/2011-4301-02-00",
+        "https://njt.jog.gov.hu/jogszabaly/2011-189-00-00"
+      ],
+      "primary_evidence_refs": [
+        "hu-constitution",
+        "hu-local-act"
+      ],
+      "legal_citations": [
+        "Fundamental Law Articles 32–35",
+        "Local Government Act sections 3(3),22–26,41–42,68"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "ordinary_municipality_exclusion_preserved": "No inclusion of Budapest district councils or ordinary county-right cities; those remain municipal organs. The capital-wide territorial tier and substantive powers must both be present."
+    },
+    {
+      "id": "guyana-rdc-local-administration-consistency",
+      "country": "Guyana",
+      "affected_existing_inventory_ids": [
+        "guyana--barima-waini",
+        "guyana--pomeroon-supenaam",
+        "guyana--essequibo-islands-west-demerara",
+        "guyana--demerara-mahaica",
+        "guyana--mahaica-berbice",
+        "guyana--east-berbice-corentyne",
+        "guyana--cuyuni-mazaruni",
+        "guyana--potaro-siparuni",
+        "guyana--upper-takutu-upper-essequibo",
+        "guyana--upper-demerara-upper-berbice"
+      ],
+      "affected_existing_inventory_count": 10,
+      "previous_authority_status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "recommendation": "keep",
+      "decision_basis": "Retain 10 RDC exclusions under the local-administration rule. Constitutional autonomy/binding decisions are real. The implemented general local regulation requires ministerial approval and is framed as area management, revenue and local-government acquisition/business; national-policy development alignment remains. Those combined limits distinguish it from an autonomous general regional ordinance assembly.",
+      "primary_urls": [
+        "https://old.parliament.gov.gy/constitution.pdf",
+        "https://www.mola.gov.gy/public/laws/Volume%208%20Cap.%2028.04%20-%2036.011696911949.pdf",
+        "https://www.mola.gov.gy/public/index.php/laws-of-guyana?page=20"
+      ],
+      "primary_evidence_refs": [
+        "gy-constitution",
+        "gy-act",
+        "gy-ministry-index"
+      ],
+      "legal_citations": [
+        "Constitution Articles 71–78",
+        "Local Democratic Organs Act Cap 28: 09 sections 6–7,13,32–33"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "reopening_evidence": "A later enacted broad autonomous regional lawmaking grant or constitutional/statutory decision removing the operative scope limits; new source ownership/playback cannot settle authority.",
+      "currentness_limits": "The official downloaded chapter is LRO 1/2012, not a certified 2026 consolidation. Preserve this limit; latest hosting date and consultation on reform are not enacted authority changes."
+    },
+    {
+      "id": "mongolian-aimag-capital-administration-consistency",
+      "country": "Mongolia",
+      "affected_existing_inventory_ids": [
+        "mongolia--niislel",
+        "mongolia--arkhangai",
+        "mongolia--bayan-olgii",
+        "mongolia--bayankhongor",
+        "mongolia--bulgan",
+        "mongolia--govi-altai",
+        "mongolia--govisumber",
+        "mongolia--darkhan-uul",
+        "mongolia--dornogovi",
+        "mongolia--dornod",
+        "mongolia--dundgovi",
+        "mongolia--zavkhan",
+        "mongolia--orkhon",
+        "mongolia--uvurkhangai",
+        "mongolia--omnogovi",
+        "mongolia--sukhbaatar",
+        "mongolia--selenge",
+        "mongolia--tov",
+        "mongolia--uvs",
+        "mongolia--khovd",
+        "mongolia--khovsgol",
+        "mongolia--khentii"
+      ],
+      "affected_existing_inventory_count": 22,
+      "previous_authority_status": "outside_default_scope",
+      "authority_status": "outside_default_scope",
+      "recommendation": "keep",
+      "decision_basis": "Retain 22 first-level Khural exclusions on the actual local-competence framework: budgets, governor scrutiny, assigned economic/social administration, bounded taxation and specifically empowered administrative normative acts. Constitutional binding resolutions and residual local decisions remain real; they do not establish the broad autonomous regional legislative tier required by the project.",
+      "primary_urls": [
+        "https://constitutionalcourt.mn/монгол-улсын-үндсэн-хууль/",
+        "https://legalinfo.mn/en/edtl/16532201415661"
+      ],
+      "primary_evidence_refs": [
+        "mn-constitution",
+        "mn-units-act"
+      ],
+      "legal_citations": [
+        "Constitution Articles 57–63",
+        "2020 Units and Governance Act Articles 4,6,9,21,24,33–35, especially 35.1.14"
+      ],
+      "all_affected_ids_already_in_baseline": true,
+      "creates_new_jurisdiction": false,
+      "automatic_catalogue_promotion": false,
+      "reopening_evidence": "A substantive autonomous territorial legislative grant, rather than a further sector-specific administrative rule or the shared Khural name.",
+      "currentness_limits": "Unofficial English statutory translation on state portal; limits of sectoral normative delegation acknowledged. No claim that every sectoral delegation has been audited."
+    }
+  ],
+  "downloaded_primary_document_checks": [
+    {
+      "source_id": "cz-regions-act",
+      "sha256": "7329679e624aa52b13b6b96a4c898fc79db08f95fb41981917098f29625afde6",
+      "bytes": 186174,
+      "format": "PDF",
+      "local_temporary_copy_not_tracked": true
+    },
+    {
+      "source_id": "hu-constitution",
+      "sha256": "3d1ea5c2ea13510529a86652ba469b85b06b76277ba7f325f4db24ef6765515f",
+      "bytes": 723110,
+      "format": "PDF",
+      "local_temporary_copy_not_tracked": true
+    },
+    {
+      "source_id": "gy-act",
+      "sha256": "6b57725e48b12786453d4cf29e1498f3bcfcc074b830388a0eb243322f031fa9",
+      "bytes": 1230740,
+      "format": "PDF",
+      "local_temporary_copy_not_tracked": true
+    }
+  ],
+  "important_limits": [
+    "Eligibility here is the catalogue’s functional scope classification, not a claim that the bodies are sovereign/state-legislative parliaments in national constitutional terminology.",
+    "A general-act label, budget, elected status or regional name alone is insufficient; evaluate territorial position, breadth/independence of normative competence and representative financial/executive control together.",
+    "Only these 99 existing records were compared in this bounded pass; this report does not certify every other excluded class worldwide.",
+    "The historical 652 eligible service-review cohort must remain historical. Apply current 22 authority changes as dated overrides, then do separate metadata/media/EPG/rights work."
+  ]
+}

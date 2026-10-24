@@ -1,0 +1,12 @@
+{
+  "url": "https://api.data.ipu.org/v1/chambers?page%5Bsize%5D=500",
+  "checked_at_utc": "2026-10-24T15:11:43.016715+00:00",
+  "method": "Documented public IPU Parline API, current-data default; one bounded request, no retries or access workaround.",
+  "http_status": 200,
+  "bytes": 25000001,
+  "sha256": "ea5f812f93355fc28a7b5503d9572b9c3a8bd7d4b8c29950f72aad09b679824b",
+  "outcome": "request_limit_not_absence",
+  "error": "bounded response limit",
+  "response_complete": false,
+  "sha256_scope": "First25,000,001bytes only; bounded partial response, not a full-document checksum."
+}
