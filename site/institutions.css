@@ -32,9 +32,15 @@
 .institution-country-count { color: var(--muted); font-size: .75rem; }
 .institution-rows, .institution-children { margin: 0; padding: 0; list-style: none; }
 .institution-rows { padding: 0 0 .75rem 1.65rem; }
-.institution-children { margin-left: .4rem; padding-left: 1.15rem; border-left: 2px solid var(--faint); }
+.institution-children { --institution-indent: 1.65rem; position: relative; margin-top: .55rem; }
+.institution-children::before { content: ""; position: absolute; inset-block: 0; inset-inline-start: .4rem; border-inline-start: 2px solid var(--faint); pointer-events: none; }
 .institution-row { min-width: 0; border-top: 1px solid var(--faint); padding: .75rem 0 .55rem; scroll-margin-top: 1rem; }
+.institution-row:has(> .institution-children) { padding-bottom: 0; }
+.institution-children > .institution-row { position: relative; border-top: 0; }
+.institution-children > .institution-row::before { content: ""; position: absolute; inset-block-start: 0; inset-inline: var(--institution-indent) 0; border-top: 1px solid var(--faint); }
 .institution-row-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(110px, .22fr) minmax(175px, .32fr); align-items: start; gap: .7rem; }
+.institution-children .institution-row-heading > div:first-child { padding-inline-start: var(--institution-indent); }
+.institution-children .institution-evidence { margin-inline-start: var(--institution-indent); }
 .institution-name { margin: 0; font-size: .88rem; line-height: 1.4; font-weight: 650; overflow-wrap: anywhere; }
 .institution-jurisdiction { display: block; margin-top: .2rem; color: var(--muted); font-size: .74rem; line-height: 1.4; }
 .institution-status { color: var(--green); font-size: .74rem; font-weight: 650; line-height: 1.5; }
@@ -57,6 +63,7 @@
 @media (max-width: 800px) {
   .institution-row-heading { grid-template-columns: minmax(0, 1fr) auto; }
   .institution-viewing { grid-column: 1 / -1; }
+  .institution-children .institution-viewing { padding-inline-start: var(--institution-indent); }
 }
 @media (max-width: 680px) {
   .institutions-page main { padding-top: 1.4rem; }
@@ -72,5 +79,8 @@
   .institution-row-heading > div:first-child { width: 100%; }
   .institution-viewing { flex: 1; min-width: 150px; }
   .institution-evidence > summary { min-height: 40px; padding: .6rem 0; }
-  .institution-children { padding-left: .75rem; margin-left: 0; }
+  .institution-children { --institution-indent: 1rem; }
+  .institution-children::before { inset-inline-start: 0; }
+  .institution-children .institution-row-heading { padding-inline-start: var(--institution-indent); }
+  .institution-children .institution-row-heading > div:first-child, .institution-children .institution-viewing { padding-inline-start: 0; }
 }

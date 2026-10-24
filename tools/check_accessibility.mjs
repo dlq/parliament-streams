@@ -902,6 +902,19 @@ try {
   assert.match(await institutionsPage.locator("#institution-results").innerText(), /Entries: 948 · Country groups: 71/);
   assert.equal(await institutionsPage.locator("#locale-select option").count(), 23);
   await assertNoAxeViolations(institutionsPage, "Desktop legislature inventory");
+  await institutionsPage.locator("#institution-country").selectOption("Argentina");
+  const legislatureHeading = institutionsPage.locator("#argentina--buenos-aires > .institution-row-heading");
+  const chamberHeading = institutionsPage.locator("#argentina--buenos-aires--organ--camara-de-diputados > .institution-row-heading");
+  for (const width of [1280, 801]) {
+    await institutionsPage.setViewportSize({ width, height: 900 });
+    for (const column of [".institution-status", ".institution-viewing"]) {
+      const legislatureColumn = await legislatureHeading.locator(column).boundingBox();
+      const chamberColumn = await chamberHeading.locator(column).boundingBox();
+      assert(Math.abs(legislatureColumn.x - chamberColumn.x) < 1, `Nested chamber ${column} must align at ${width}px`);
+    }
+  }
+  await institutionsPage.setViewportSize({ width: 1280, height: 900 });
+  await institutionsPage.locator("#institution-clear").click();
   await institutionsPage.locator("#institution-search").fill("Canada");
   await institutionsPage.locator("#canada--alberta").waitFor();
   assert.equal(await institutionsPage.locator(".institution-country").count(), 1);
