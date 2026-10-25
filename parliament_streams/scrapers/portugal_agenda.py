@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import re
-from collections.abc import Callable
 from datetime import UTC, datetime
 from html import unescape
 from typing import Any, cast
@@ -12,14 +11,14 @@ from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 from .common import (
+    Fetcher as Fetcher,
+)
+from .common import (
     FetchRequest,
     ParsedSchedule,
     ScheduleEvent,
-    ScheduleMetadata,
     ScraperSource,
-    format_utc_timestamp,
-    local_time_label,
-    normalized_events,
+    build_upcoming_schedule,
 )
 
 INDEX_URL = "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx"
@@ -30,8 +29,6 @@ SOURCE: ScraperSource = {
     "method": "GET",
     "notes": "Resolves the current legislature folder and its official JSON agenda download.",
 }
-
-Fetcher = Callable[[FetchRequest, int, int], str]
 
 
 def _link(html: str, pattern: str, base_url: str) -> str:
@@ -84,20 +81,10 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
             continue
         events.append({"start": start, "title": title})
 
-    events.sort(key=lambda event: event["start"])
-    upcoming = [event for event in events if event["start"] >= now]
-    if not upcoming:
-        return {}
-    next_event = upcoming[0]
-    schedule: ScheduleMetadata = {
-        "current_event_title": None,
-        "current_event_time": None,
-        "next_event_title": next_event["title"],
-        "next_event_time": local_time_label(next_event["start"], "Europe/Lisbon"),
-        "next_event_start": format_utc_timestamp(next_event["start"]),
-        "confidence": "official_open_data_agenda",
-    }
-    schedule["events"] = normalized_events(
-        "portugal-artv", events, now, source_timezone="Europe/Lisbon"
+    return build_upcoming_schedule(
+        "portugal-artv",
+        events,
+        now,
+        source_timezone="Europe/Lisbon",
+        confidence="official_open_data_agenda",
     )
-    return {"portugal-artv": schedule}

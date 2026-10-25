@@ -6,7 +6,8 @@ import copy
 import unittest
 from pathlib import Path
 
-from tools.validate_institution_inventory import load_object, validate_inventory
+from parliament_streams.catalogue import load_json_object
+from tools.validate_institution_inventory import validate_inventory
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -14,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class InstitutionInventoryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.inventory = load_object(ROOT / "data/discovery/institutions.json")
+        cls.inventory = load_json_object(ROOT / "data/discovery/institutions.json")
 
     def test_current_register_is_consistent(self) -> None:
         validate_inventory(self.inventory, ROOT)

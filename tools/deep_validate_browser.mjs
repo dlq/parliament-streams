@@ -109,7 +109,14 @@ function looksLikeManifestUrl(url) {
   return lower.includes(".m3u8") || lower.includes(".mpd");
 }
 
-function manifestKind(url) {
+function manifestKind(url, contentType = "", body = "") {
+  const prefix = body.trimStart().slice(0, 256).toLowerCase();
+  if (prefix.startsWith("#extm3u")) return "hls";
+  if (prefix.includes("<mpd")) return "dash";
+  const type = contentType.toLowerCase();
+  if (type.includes("dash+xml")) return "dash";
+  if (type.includes("mpegurl")) return "hls";
+  if (!looksLikeManifestUrl(url)) return null;
   return url.toLowerCase().includes(".mpd") ? "dash" : "hls";
 }
 
@@ -165,7 +172,7 @@ async function checkManifestFormat(url) {
     }
     const text = Buffer.concat(chunks).toString("utf8");
     const trimmed = text.trimStart().slice(0, 256).toLowerCase();
-    const kind = manifestKind(url);
+    const kind = manifestKind(url, contentType ?? "", text) ?? "hls";
     const ok =
       response.ok && ((kind === "hls" && trimmed.startsWith("#extm3u")) || (kind === "dash" && trimmed.includes("<mpd")));
     return {
@@ -181,7 +188,7 @@ async function checkManifestFormat(url) {
   } catch (error) {
     return {
       url,
-      kind: manifestKind(url),
+      kind: manifestKind(url) ?? "hls",
       ok: false,
       http_status: null,
       content_type: null,
@@ -213,18 +220,17 @@ async function inspectPage(browser, target, pageUrl, rules) {
   const responses = [];
   const errors = [];
 
-  function record(url, source) {
-    if (looksLikeManifestUrl(url)) {
-      discovered.set(url, source);
-    }
+  function record(url, source, contentType = "") {
+    const kind = manifestKind(url, contentType);
+    if (kind) discovered.set(url, source);
+    return kind;
   }
 
   page.on("request", (request) => record(request.url(), "request"));
-  page.on("response", async (response) => {
+  page.on("response", (response) => {
     const url = response.url();
     const contentType = response.headers()["content-type"] ?? "";
-    if (looksLikeManifestUrl(url) || contentType.includes("mpegurl") || contentType.includes("dash+xml")) {
-      record(url, "response");
+    if (record(url, "response", contentType)) {
       responses.push({
         url,
         status: response.status(),
@@ -373,7 +379,7 @@ async function main() {
     checked_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
     scope: "Browser manifest checks and unverified page-link observations for maintained institutional and catalogue routes.",
     method:
-      "Muted Chromium loads maintained pages, records bounded DOM link/media observations separately, captures .m3u8/.mpd network references, and checks discovered manifest formats. Observed links are not followed to establish ownership, legislative content, programme mapping or rights. Authenticated, geo-blocked, DRM and interaction-gated players remain unresolved.",
+      "Muted Chromium loads maintained pages, records bounded DOM link/media observations separately, captures manifest network references by URL or response MIME, and checks discovered manifest formats. Observed links are not followed to establish ownership, legislative content, programme mapping or rights. Authenticated, geo-blocked, DRM and interaction-gated players remain unresolved.",
     inputs: args.inputs,
     countries: [...countries.values()],
     pages: pageResults,
@@ -397,5 +403,5 @@ async function main() {
   console.log(`REPORT ${args.output}`);
 }
 
-export { collectTargets, pageLeadObservations, parseArgs };
+export { collectTargets, manifestKind, pageLeadObservations, parseArgs };
 if (process.argv[1] && new URL(import.meta.url).pathname === process.argv[1]) await main();

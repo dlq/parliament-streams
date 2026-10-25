@@ -62,3 +62,8 @@ documents the review and promotion commands.
 
 Some dated [reports](../reports/README.md) are also explicit maintenance inputs.
 Preserve those paths and evidence when changing a current record.
+
+[Data validation and coverage](../docs/data-validation.md) lists the enforced
+schemas and cross-format publication checks. `make data-products-check` exercises
+the export contracts offline; Pages validates its actual collected/exported
+bundle before publication.

@@ -10,8 +10,6 @@ from datetime import date
 from pathlib import Path
 from typing import cast
 
-from jsonschema import Draft202012Validator, FormatChecker
-
 from .catalogue import (
     DEFAULT_CATALOGUE_PATH,
     DEFAULT_FALLBACKS_PATH,
@@ -20,6 +18,7 @@ from .catalogue import (
     load_fallbacks,
     load_json_object,
 )
+from .data_contracts import require_json_schema
 from .epg_audit import audit_epg_sources
 from .healthcheck import DEFAULT_RETRIES, DEFAULT_TIMEOUT_SECONDS, run_healthcheck
 from .iptv import write_iptv_exports
@@ -54,9 +53,7 @@ from .schedule_collection import (
 from .schedule_quality import assess_schedules
 from .site_data import DEFAULT_SITE_DATA_PATH
 from .validation import (
-    DEFAULT_SCHEMA_PATH,
     CatalogueValidationError,
-    load_schema,
     require_valid_candidate,
     validate_candidate,
     validate_catalogue,
@@ -67,6 +64,13 @@ from .validation import (
 def _write_json_stdout(value: object) -> None:
     json.dump(value, sys.stdout, ensure_ascii=False, indent=2)
     sys.stdout.write("\n")
+
+
+def _write_report(report: object, output: Path | None) -> None:
+    if output:
+        write_json(output, report)
+    else:
+        _write_json_stdout(report)
 
 
 def _store(args: argparse.Namespace) -> CatalogueStore:
@@ -255,19 +259,13 @@ def _cmd_seed(args: argparse.Namespace) -> int:
 
 def _cmd_identity_audit(args: argparse.Namespace) -> int:
     report = audit_identities(load_catalogue(args.catalogue))
-    if args.output:
-        write_json(args.output, report)
-    else:
-        _write_json_stdout(report)
+    _write_report(report, args.output)
     return 1 if report["counts"]["error"] else 0
 
 
 def _cmd_health_diff(args: argparse.Namespace) -> int:
     report = compare_health_reports(load_json_object(args.before), load_json_object(args.after))
-    if args.output:
-        write_json(args.output, report)
-    else:
-        _write_json_stdout(report)
+    _write_report(report, args.output)
     return 1 if args.fail_on_regression and report["regressions"] else 0
 
 
@@ -279,10 +277,7 @@ def _cmd_health_check(args: argparse.Namespace) -> int:
         channel_ids=set(args.channel_ids) if args.channel_ids else None,
         workers=args.workers,
     )
-    if args.output:
-        write_json(args.output, report)
-    else:
-        _write_json_stdout(report)
+    _write_report(report, args.output)
     return 1 if args.fail_on_error and report["counts"].get("error", 0) else 0
 
 
@@ -309,14 +304,7 @@ def _cmd_iptv_export(args: argparse.Namespace) -> int:
 
 def _load_schedule_snapshot(path: Path) -> ScheduleSnapshot:
     snapshot = cast(ScheduleSnapshot, load_json_object(path))
-    errors = list(
-        Draft202012Validator(
-            load_schema(DEFAULT_SCHEMA_PATH.with_name("schedules.schema.json")),
-            format_checker=FormatChecker(),
-        ).iter_errors(snapshot)
-    )
-    if errors:
-        raise ValueError("Invalid schedule snapshot: " + errors[0].message)
+    require_json_schema(snapshot, "schedules.schema.json", label="schedule snapshot")
     return snapshot
 
 
@@ -324,6 +312,7 @@ def _cmd_schedules_audit(args: argparse.Namespace) -> int:
     report = assess_schedules(
         load_catalogue(args.catalogue), _load_schedule_snapshot(args.schedules)
     ).report
+    require_json_schema(report, "epg-quality.schema.json", label="EPG quality report")
     write_json(args.output, report)
     _write_json_stdout(report["counts"])
     return 0
@@ -363,10 +352,7 @@ def _cmd_epg_audit(args: argparse.Namespace) -> int:
         retries=args.retries,
         workers=args.workers,
     )
-    if args.output:
-        write_json(args.output, report)
-    else:
-        _write_json_stdout(report)
+    _write_report(report, args.output)
     return 1 if args.fail_on_error and report["counts"]["error"] else 0
 
 
@@ -377,20 +363,14 @@ def _cmd_links_audit(args: argparse.Namespace) -> int:
         retries=args.retries,
         workers=args.workers,
     )
-    if args.output:
-        write_json(args.output, report)
-    else:
-        _write_json_stdout(report)
+    _write_report(report, args.output)
     failures = report["counts"]["error"] + report["counts"]["not_found"]
     return 1 if args.fail_on_error and failures else 0
 
 
 def _cmd_playback_policy_audit(args: argparse.Namespace) -> int:
     report = audit_playback_policies(load_catalogue(args.catalogue))
-    if args.output:
-        write_json(args.output, report)
-    else:
-        _write_json_stdout(report)
+    _write_report(report, args.output)
     if args.fail_on_error and report["counts"]["error"]:
         return 1
     return 1 if args.fail_on_review and report["counts"]["review"] else 0

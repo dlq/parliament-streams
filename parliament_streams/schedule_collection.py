@@ -17,7 +17,11 @@ from urllib.request import Request, urlopen
 
 import certifi
 
+from .data_contracts import require_json_schema
 from .scrapers import SCRAPERS
+from .scrapers.common import (
+    Fetcher as Fetcher,
+)
 from .scrapers.common import (
     FetchRequest,
     NormalizedScheduleEvent,
@@ -80,7 +84,6 @@ class ScheduleSnapshot(TypedDict):
     sources: dict[str, SourceResult]
 
 
-Fetcher = Callable[[FetchRequest, int, int], str]
 Parser = Callable[..., ParsedSchedule]
 RequestFactory = Callable[[datetime], list[FetchRequest]]
 SourceCollector = Callable[[Fetcher, datetime, int, int], tuple[ParsedSchedule, list[str]]]
@@ -179,10 +182,7 @@ def _derive_legacy_fields(
         event
         for event in events
         if event["status"] == "scheduled"
-        and (
-            _parsed_timestamp(event.get("start")) is None
-            or cast(datetime, _parsed_timestamp(event.get("start"))) >= now
-        )
+        and ((start := _parsed_timestamp(event.get("start"))) is None or start >= now)
     ]
     next_event = min(upcoming, key=lambda event: event.get("start", ""), default=None)
     for position, event in (("current", current), ("next", next_event)):
@@ -450,6 +450,7 @@ def collect_schedules(
 
 
 def write_snapshot(path: Path, snapshot: ScheduleSnapshot) -> None:
+    require_json_schema(snapshot, "schedules.schema.json", label="schedule snapshot")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps(snapshot, ensure_ascii=False, indent=2, sort_keys=True) + "\n",

@@ -62,15 +62,15 @@
 .map-detail h2 { font-size: 2rem; }
 .map-detail h3 { margin: 1.35rem 0 .5rem; font-family: inherit; font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; }
 .map-detail-summary { margin: .35rem 0 0; color: var(--muted); font-size: .78rem; }
-.map-source-list, .map-region-list, .supranational-list { margin: 0; padding: 0; border-top: 1px solid var(--faint); list-style: none; }
-.map-source-list li, .map-region-list li, .supranational-list li { border-bottom: 1px solid var(--faint); }
-.map-source-list a, .map-region-list a, .supranational-list a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .65rem; align-items: center; min-height: 42px; padding: .5rem .15rem; text-decoration: none; }
-.map-source-list a:hover, .map-region-list a:hover, .supranational-list a:hover { color: var(--red); }
-.map-source-list small, .map-region-list small, .supranational-list small { color: var(--muted); font-size: .66rem; }
+.map-source-list, .map-region-list { margin: 0; padding: 0; border-top: 1px solid var(--faint); list-style: none; }
+.map-source-list li, .map-region-list li { border-bottom: 1px solid var(--faint); }
+.map-source-list a, .map-region-list a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .65rem; align-items: center; min-height: 42px; padding: .5rem .15rem; text-decoration: none; }
+.map-source-list a:hover, .map-region-list a:hover { color: var(--red); }
+.map-source-list small, .map-region-list small { color: var(--muted); font-size: .66rem; }
 .map-source-posture { color: var(--muted); font-size: .61rem; font-weight: 700; text-transform: uppercase; }
 .map-source-posture.is-playable { color: var(--green); }
 .map-detail-empty { margin: 2rem 0; color: var(--muted); line-height: 1.6; }
-.map-detail .text-link { display: inline-block; margin-top: 1rem; font-size: .75rem; }
+.map-detail .text-link { display: inline-flex; align-items: center; min-height: 32px; margin-top: 1rem; font-size: .75rem; }
 .map-parent-button { margin-top: 1rem; padding: 0; border: 0; background: transparent; color: var(--red); font-size: .75rem; font-weight: 700; text-align: left; cursor: pointer; }
 .map-parent-button:hover { text-decoration: underline; }
 .supranational-heading { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: .7rem; align-items: center; }

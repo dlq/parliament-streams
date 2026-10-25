@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dlq/parliament-streams/schema/institution-site-data.schema.json",
+  "title": "Generated public legislature inventory snapshot",
+  "description": "The projection published as site/institutions-data.js; raw research inventory validation remains separate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reviewed_on", "countries", "records", "scope"],
+  "properties": {
+    "reviewed_on": {"type": "string", "format": "date"},
+    "countries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "code"],
+        "properties": {
+          "name": {"$ref": "#/$defs/text"},
+          "code": {"type": "string", "pattern": "^[A-Z]{2}$"}
+        }
+      }
+    },
+    "records": {"type": "array", "items": {"$ref": "#/$defs/institution"}},
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "country_baseline", "territorial_boundary", "default_statuses",
+        "record_count_is_not_a_jurisdiction_legislature_or_service_count",
+        "complete_exhaustive_institutional_census_certified",
+        "catalogue_links_do_not_certify_current_playback_or_rights"
+      ],
+      "properties": {
+        "country_baseline": {"$ref": "#/$defs/text"},
+        "territorial_boundary": {"$ref": "#/$defs/text"},
+        "default_statuses": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/status"}},
+        "record_count_is_not_a_jurisdiction_legislature_or_service_count": {"const": true},
+        "complete_exhaustive_institutional_census_certified": {"const": false},
+        "catalogue_links_do_not_certify_current_playback_or_rights": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1},
+    "texts": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+    "urls": {"type": "array", "uniqueItems": true, "items": {"type": "string", "format": "iri"}},
+    "status": {
+      "type": "string",
+      "enum": ["eligible_legislature", "outside_default_scope", "specific_authority_evidence_hold", "historical_institution_superseded"]
+    },
+    "followup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["report", "reviewed_on", "scope", "unresolved", "report_url"],
+      "properties": {
+        "report": {"type": "string", "pattern": "^reports/discovery/.+\\.json$"},
+        "reviewed_on": {"type": "string", "format": "date"},
+        "scope": {
+          "description": "A retained report can describe scope as prose or structured metadata; neither is a service-completeness claim.",
+          "type": ["string", "object"]
+        },
+        "unresolved": {"$ref": "#/$defs/texts"},
+        "report_url": {"type": "string", "format": "iri"}
+      }
+    },
+    "service_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage", "reviewed_on", "followups"],
+      "properties": {
+        "stage": {"enum": ["partial_source_followup", "historical_service_checks_only", "not_recorded"]},
+        "reviewed_on": {"anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]},
+        "followups": {"type": "array", "items": {"$ref": "#/$defs/followup"}}
+      }
+    },
+    "institution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "country", "name", "aliases", "jurisdiction_label", "level", "kind", "status",
+        "relationships", "catalogue_ids", "decision_basis", "remaining_authority_instruments",
+        "primary_urls", "report_urls", "service_review"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/text"},
+        "country": {"$ref": "#/$defs/text"},
+        "name": {"$ref": "#/$defs/text"},
+        "aliases": {"$ref": "#/$defs/texts"},
+        "jurisdiction_label": {"$ref": "#/$defs/text"},
+        "level": {"$ref": "#/$defs/text"},
+        "kind": {"$ref": "#/$defs/text"},
+        "status": {"$ref": "#/$defs/status"},
+        "relationships": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "institution_id"],
+            "properties": {"type": {"$ref": "#/$defs/text"}, "institution_id": {"$ref": "#/$defs/text"}}
+          }
+        },
+        "catalogue_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}},
+        "decision_basis": {"$ref": "#/$defs/text"},
+        "remaining_authority_instruments": {"$ref": "#/$defs/texts"},
+        "primary_urls": {"$ref": "#/$defs/urls"},
+        "report_urls": {"$ref": "#/$defs/urls"},
+        "service_review": {"$ref": "#/$defs/service_review"}
+      }
+    }
+  }
+}

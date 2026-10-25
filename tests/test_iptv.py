@@ -4,12 +4,20 @@ import tempfile
 import unittest
 from pathlib import Path
 from typing import cast
+from unittest.mock import patch
 from xml.etree import ElementTree as ET
 
 from parliament_streams import cli
 from parliament_streams.catalogue import load_catalogue
-from parliament_streams.iptv import render_playlist, render_xmltv, select_iptv_hls_channels
+from parliament_streams.data_contracts import require_json_schema
+from parliament_streams.iptv import (
+    render_playlist,
+    render_xmltv,
+    select_iptv_hls_channels,
+    write_iptv_exports,
+)
 from parliament_streams.schedule_collection import ScheduleSnapshot
+from parliament_streams.schedule_quality import assess_schedules
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -29,6 +37,20 @@ class IPTVTests(unittest.TestCase):
                 "channels": {
                     self.channel["id"]: {"events": events, "scraper": "brazil-tv-camara", **fields}
                 }
+            },
+        )
+
+    def empty_snapshot(self):
+        schema = json.loads((ROOT / "schema/schedules.schema.json").read_text())
+        return cast(
+            ScheduleSnapshot,
+            {
+                "schema_version": 3,
+                "generated_at": "2026-10-07T12:00:00Z",
+                "refresh_interval_hours": 6,
+                "channels": {},
+                "sources": {},
+                "counts": {key: 0 for key in schema["properties"]["counts"]["required"]},
             },
         )
 
@@ -97,19 +119,7 @@ class IPTVTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory)
             schedules = path / "schedules.json"
-            schema = json.loads((ROOT / "schema/schedules.schema.json").read_text())
-            schedules.write_text(
-                json.dumps(
-                    {
-                        "schema_version": 3,
-                        "generated_at": "2026-10-07T12:00:00Z",
-                        "refresh_interval_hours": 6,
-                        "channels": {},
-                        "sources": {},
-                        "counts": {key: 0 for key in schema["properties"]["counts"]["required"]},
-                    }
-                )
-            )
+            schedules.write_text(json.dumps(self.empty_snapshot()))
             self.assertEqual(
                 cli.main(
                     [
@@ -137,6 +147,11 @@ class IPTVTests(unittest.TestCase):
                 preferred = (path / f"{name}.m3u").read_bytes()
                 self.assertTrue(preferred.startswith(b"#EXTM3U "))
                 self.assertEqual(preferred, (path / f"{name}.m3u8").read_bytes())
+            require_json_schema(
+                json.loads((path / "epg-quality.json").read_text()),
+                "epg-quality.schema.json",
+                label="published EPG quality report",
+            )
             schedules.write_text('{"channels": {}}')
             self.assertEqual(
                 cli.main(
@@ -150,3 +165,33 @@ class IPTVTests(unittest.TestCase):
                 ),
                 2,
             )
+
+    def test_invalid_quality_product_cannot_partially_write_exports(self):
+        snapshot = self.empty_snapshot()
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "exports"
+            output.mkdir()
+            existing = output / "stable-hls.m3u"
+            existing.write_bytes(b"previous playlist\n")
+            new_output = Path(directory) / "new"
+            for defect in ("invalid_timestamp", "negative_count", "incomplete_channel"):
+                with self.subTest(defect=defect):
+                    assessment = assess_schedules(self.catalogue, snapshot)
+                    if defect == "invalid_timestamp":
+                        assessment.report["generated_at"] = "not-a-timestamp"
+                    elif defect == "negative_count":
+                        assessment.report["counts"]["events"] = -1
+                    else:
+                        assessment.report["channels"] = {"example": {"source": "cpac"}}
+                    with patch("parliament_streams.iptv.assess_schedules", return_value=assessment):
+                        for destination in (output, new_output):
+                            with self.assertRaisesRegex(ValueError, "Invalid EPG quality report"):
+                                write_iptv_exports(
+                                    self.catalogue,
+                                    snapshot,
+                                    destination,
+                                    "https://example.org/epg.xml",
+                                )
+                    self.assertEqual(existing.read_bytes(), b"previous playlist\n")
+                    self.assertEqual(list(output.iterdir()), [existing])
+                    self.assertFalse(new_output.exists())

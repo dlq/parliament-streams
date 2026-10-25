@@ -965,6 +965,7 @@ try {
   assert.equal(await mapPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
   assert.equal(await mapPage.locator("#map-primary-navigation > a:visible").count(), 4);
   assert((await mapPage.locator("#world-map").boundingBox()).height <= 220);
+  assert((await mapPage.locator("#map-detail .text-link").boundingBox()).height >= 24, "The complete-catalogue link must retain a full mobile pointer target");
   await assertNoAxeViolations(mapPage, "Mobile coverage map");
   await mapPage.close();
 
@@ -1067,6 +1068,33 @@ try {
   assert.equal(new URL(correction.searchParams.get("page")).searchParams.get("status"), "all");
   assert.match(correction.searchParams.get("context"), /canada--alberta/);
   await assertNoAxeViolations(institutionsPage, "Expanded institution evidence");
+  const structuredScopeRecord = await institutionsPage.evaluate(() => {
+    const record = window.PARLIAMENT_STREAMS_INSTITUTIONS.records.find((row) =>
+      row.service_review?.followups?.some((followup) => followup.scope && typeof followup.scope === "object"));
+    return {
+      id: record.id,
+      scopes: record.service_review.followups.filter((followup) => followup.scope && typeof followup.scope === "object").map((followup) => followup.scope),
+    };
+  });
+  await institutionsPage.locator("#institution-search").fill(structuredScopeRecord.id);
+  const structuredScopeRow = institutionsPage.locator(`[id="${structuredScopeRecord.id}"]`);
+  await structuredScopeRow.locator(".institution-evidence > summary").click();
+  await structuredScopeRow.locator("dl.institution-service-scope").first().waitFor();
+  const renderedScopes = await structuredScopeRow.locator("dl.institution-service-scope").evaluateAll((notes) => notes.map((note) => ({
+    lang: note.lang,
+    labels: [...note.querySelectorAll("dt")].map((node) => node.textContent),
+    values: [...note.querySelectorAll("dd")].map((node) => node.textContent),
+  })));
+  assert.deepEqual(renderedScopes, structuredScopeRecord.scopes.map((scope) => ({
+    lang: "en",
+    labels: Object.keys(scope).map((key) => {
+      const label = key.replaceAll("_", " ");
+      return label.charAt(0).toUpperCase() + label.slice(1);
+    }),
+    values: Object.values(scope).map((value) => typeof value === "string" ? value : JSON.stringify(value)),
+  })));
+  assert.doesNotMatch(await structuredScopeRow.innerText(), /\[object Object\]/);
+  await assertNoAxeViolations(institutionsPage, "Structured institution review scope");
   await institutionsPage.locator("#institution-clear").click();
   await institutionsPage.locator("#institution-status").selectOption("specific_authority_evidence_hold");
   assert.equal(await institutionsPage.locator(".institution-row").count(), 8);
@@ -1105,6 +1133,62 @@ try {
   assert.match(await filePage.locator(".youtube-file-notice").innerText(), /La lecture n’a pas pu démarrer/);
   await assertNoAxeViolations(filePage, "Direct-file YouTube fallback");
   await filePage.close();
+
+  const storageContext = await browser.newContext({ viewport: { width: 1280, height: 900 }, locale: "en-CA" });
+  await storageContext.addInitScript(() => {
+    Object.defineProperty(window, "localStorage", {
+      get() { throw new DOMException("Storage is unavailable in this preview", "SecurityError"); },
+    });
+  });
+  await storageContext.route("**/*", (route) => {
+    const request = route.request();
+    return request.resourceType() === "media" || new URL(request.url()).origin !== new URL(baseUrl).origin
+      ? route.abort() : route.continue();
+  });
+  const storagePage = await storageContext.newPage();
+  const storageErrors = [];
+  storagePage.on("pageerror", (error) => storageErrors.push(error.message));
+  await storagePage.goto(baseUrl);
+  await storagePage.locator(".channel-button").first().waitFor();
+  assert.equal(await storagePage.locator("html").getAttribute("lang"), "en");
+  assert.equal(await storagePage.evaluate(() => window.ParliamentStreamsI18n.readLocalePreference()), null);
+  await storagePage.locator("#search").fill("Canada");
+  await storagePage.locator("#locale-select").selectOption("fr");
+  assert.equal(await storagePage.locator("#search").inputValue(), "Canada");
+  await storagePage.locator('[data-channel-id="alberta-assembly-online"]').waitFor();
+  assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
+  assert.equal(await storagePage.locator(".iptv-disclosure").getAttribute("lang"), "fr");
+  assert.match(await storagePage.locator("#nav-institutions").getAttribute("href"), /lang=fr/);
+
+  await storagePage.goto(`${baseUrl}schedule.html`);
+  const scheduleOption = storagePage.locator('#schedule-jurisdiction option:not([value=""])').first();
+  await scheduleOption.waitFor({ state: "attached" });
+  const scheduleJurisdiction = await scheduleOption.getAttribute("value");
+  await storagePage.locator("#schedule-jurisdiction").selectOption(scheduleJurisdiction);
+  await storagePage.locator("#locale-select").selectOption("fr");
+  assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
+  assert.equal(await storagePage.locator("#schedule-jurisdiction").inputValue(), scheduleJurisdiction);
+  assert.equal(await storagePage.locator(".iptv-disclosure").getAttribute("lang"), "fr");
+
+  await storagePage.goto(`${baseUrl}institutions.html`);
+  await storagePage.locator(".institution-country").first().waitFor();
+  await storagePage.locator("#institution-search").fill("Alberta");
+  await storagePage.locator("#locale-select").selectOption("fr");
+  await storagePage.locator("#canada--alberta").waitFor();
+  assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
+  assert.equal(await storagePage.locator("#institution-search").inputValue(), "Alberta");
+
+  await storagePage.goto(`${baseUrl}map.html`);
+  await storagePage.locator(".map-country.is-documented").first().waitFor();
+  await storagePage.locator("#locale-select").selectOption("fr");
+  await storagePage.waitForURL(/lang=fr/);
+  await storagePage.locator(".map-country.is-documented").first().waitFor();
+  await storagePage.locator("#map-search").fill("Alberta");
+  await storagePage.locator("#map-search").press("Enter");
+  assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
+  assert.match(await storagePage.locator("#map-detail").innerText(), /Alberta/);
+  assert.deepEqual(storageErrors, []);
+  await storageContext.close();
 } finally {
   await browser.close();
   server.close();

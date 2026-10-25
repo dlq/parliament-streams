@@ -3,25 +3,13 @@
 from __future__ import annotations
 
 import argparse
-import json
 from collections import Counter
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
-AUTHORITY_STATUSES = {
-    "eligible_legislature",
-    "outside_default_scope",
-    "specific_authority_evidence_hold",
-    "historical_institution_superseded",
-}
-
-
-def load_object(path: Path) -> dict[str, Any]:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict):
-        raise ValueError(f"{path}: expected an object")
-    return data
+from parliament_streams.catalogue import load_json_object
+from parliament_streams.inventory.projection import AUTHORITY_STATUSES
 
 
 def unique_by(rows: list[dict[str, Any]], key: str, label: str) -> dict[str, dict[str, Any]]:
@@ -51,14 +39,16 @@ def validate_inventory(data: dict[str, Any], root: Path) -> None:
     targets = {
         row["country"]
         for tier in ("tier1", "tier2")
-        for row in load_object(root / f"data/discovery/{tier}.json")["countries"]
+        for row in load_json_object(root / f"data/discovery/{tier}.json")["countries"]
     }
     if len(countries) != len(set(countries)) or set(countries) != targets:
         raise ValueError("Country scope differs from the maintained Tier1/Tier2 baseline")
 
     records = unique_by(data["records"], "id", "Institution records")
-    historical = load_object(root / "reports/discovery/2026-10-22-subnational-research.json")
-    national = load_object(root / "reports/discovery/2026-10-24-national-chamber-inventory.json")
+    historical = load_json_object(root / "reports/discovery/2026-10-22-subnational-research.json")
+    national = load_json_object(
+        root / "reports/discovery/2026-10-24-national-chamber-inventory.json"
+    )
     retained_ids = {row["id"] for row in historical["jurisdictions"]} | {
         row["id"] for row in national["national_chambers"]
     }
@@ -93,7 +83,7 @@ def validate_inventory(data: dict[str, Any], root: Path) -> None:
                 raise ValueError(f"{institution_id}: missing source report {source['report']}")
             path = source["report"]
             if path not in source_ids:
-                source_ids[path] = referenced_ids(load_object(root / path))
+                source_ids[path] = referenced_ids(load_json_object(root / path))
             if source["record_id"] not in source_ids[path]:
                 raise ValueError(f"{institution_id}: provenance record does not exist in {path}")
 
@@ -126,7 +116,7 @@ def validate_inventory(data: dict[str, Any], root: Path) -> None:
         if set(row["known_scope_hold_ids"]) != holds:
             raise ValueError(f"{country}: authority holds missing from country crosswalk")
 
-    overlay = load_object(root / "reports/discovery/2026-10-24-inventory-reconciliation.json")
+    overlay = load_json_object(root / "reports/discovery/2026-10-24-inventory-reconciliation.json")
     original_ids = {row["id"] for row in overlay["named_scope_review_candidates"]}
     decisions = unique_by(
         data["original_scope_decision_crosswalk"], "candidate_id", "Scope decisions"
@@ -174,7 +164,7 @@ def validate_inventory(data: dict[str, Any], root: Path) -> None:
 
     review = data.get("legal_hold_review")
     if review:
-        source_review = load_object(root / review["report"])
+        source_review = load_json_object(root / review["report"])
         reviewed = unique_by(source_review["records"], "id", "Legal hold review")
         starting = set(review["starting_hold_ids"])
         if set(reviewed) != starting or set(review["reviewed_institution_ids"]) != starting:
@@ -252,7 +242,7 @@ def main() -> int:
     )
     args = parser.parse_args()
     try:
-        data = load_object(args.path)
+        data = load_json_object(args.path)
         validate_inventory(data, Path(__file__).resolve().parents[1])
     except (OSError, ValueError, KeyError, TypeError) as error:
         parser.error(str(error))

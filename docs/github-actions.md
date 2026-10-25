@@ -1,5 +1,10 @@
 # GitHub Actions And Review Queues
 
+[Data validation and coverage](data-validation.md) describes the JSON schemas and
+cross-format publication gate. CI checks an offline export bundle; Pages checks
+its actual generated schedules, playlists, XMLTV and quality report before
+uploading the publication artifact.
+
 The automation maintains two different lists:
 
 | List | Canonical file | What a row means |

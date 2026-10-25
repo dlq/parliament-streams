@@ -18,6 +18,8 @@ from typing import Any
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from parliament_streams.catalogue import load_json_object  # noqa: E402
+from parliament_streams.inventory.projection import SERVICE_REGISTER_REPORT  # noqa: E402
 from parliament_streams.inventory.reviews import (  # noqa: E402
     ROOT,
     load_reviews,
@@ -113,7 +115,7 @@ def build_targets(
         ):
             catalogue_bodies[channel_id].append(body["id"])
     for body in historical.get("eligible_bodies", []):
-        if body["body_id"] in eligible:
+        if body["body_id"] in eligible and "catalogue_crosswalk" not in eligible[body["body_id"]]:
             for channel_id in body.get("catalogue_ids", []):
                 catalogue_bodies[channel_id].append(body["body_id"])
     for channel in catalogue["channels"]:
@@ -197,14 +199,11 @@ def main() -> int:
     parser.add_argument("--validate-only", action="store_true")
     args = parser.parse_args()
 
-    def load(path: str) -> dict[str, Any]:
-        return dict(json.loads((ROOT / path).read_text(encoding="utf-8")))
-
     targets, coverage = build_targets(
-        load("data/discovery/institutions.json"),
-        load("data/channels.json"),
-        load("reports/discovery/2026-10-24-current-validation-register.json"),
-        [load(f"data/discovery/{tier}.json") for tier in ("tier1", "tier2")],
+        load_json_object(ROOT / "data/discovery/institutions.json"),
+        load_json_object(ROOT / "data/channels.json"),
+        load_json_object(ROOT / SERVICE_REGISTER_REPORT),
+        [load_json_object(ROOT / f"data/discovery/{tier}.json") for tier in ("tier1", "tier2")],
         load_reviews(),
         args.rotation,
     )

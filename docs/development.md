@@ -3,6 +3,9 @@
 [Documentation index](README.md) · [Catalogue maintenance](catalogue-maintenance.md) ·
 [Naming and compatibility](naming-conventions.md)
 
+[Data validation and coverage](data-validation.md) explains publication schemas,
+format checks, the static-type boundary and the scope of coverage metrics.
+
 Run these commands from the repository root. Local checks use the working
 catalogue; live audits separately contact third-party sources.
 

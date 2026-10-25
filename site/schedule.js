@@ -1,5 +1,5 @@
 (() => {
-const { locales, message, supportedLocale } = window.ParliamentStreamsI18n;
+const { locales, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
@@ -9,7 +9,7 @@ const localCatalogueUrl = new URL("../data/channels.json", scriptUrl);
 const schedulesUrl = new URL("./data/schedules.json", scriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", scriptUrl);
 const query = new URLSearchParams(window.location.search);
-const locale = supportedLocale(query.get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
+const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
 const state = { channels: [], schedules: {}, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", listingFilter: "" };
 
 const flagAssets = window.ParliamentStreamsFlags;
@@ -217,7 +217,7 @@ async function init() {
   elements.locale.value = state.locale;
   elements.locale.addEventListener("change", () => {
     state.locale = supportedLocale(elements.locale.value);
-    localStorage.setItem("parliament-streams-locale", state.locale);
+    writeLocalePreference(state.locale);
     const url = new URL(window.location.href);
     url.searchParams.set("lang", state.locale);
     history.replaceState({}, "", url);

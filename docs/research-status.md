@@ -36,12 +36,14 @@ flag bring flag coverage to **256 records**, with **13 neutral marks** retaining
 their design/adoption gaps.
 [Flag evidence](../reports/discovery/2026-10-25-continued-catalogue-flags.json).
 
-The monthly discovery plan now has **1,462 unique check targets**, including all
+The monthly discovery plan now has **1,463 unique check targets**, including all
 269 catalogue records. Of 940 eligible identities, 938 have ordinary page routes;
 Ngäbe–Buglé's General Congress and Sri Lanka's North Central province retain
 document-only route gaps. Inventory monitoring validates **1,743 deduplicated
-evidence sources**. These are offline input checks; the updated scheduled jobs
-have not run against these uncommitted additions.
+evidence sources**. These are offline input checks; they do not confirm current
+URL access, programme coverage or reuse rights. Strict schema validation also
+encoded two space-containing evidence links and removed one malformed historical
+VOD seed while retaining its official viewing-page leads and original report.
 
 Local desktop, 390px and 320px checks cover all new catalogue links, exact public
 crosswalks, country searches, flags, map locations and planned programme links.

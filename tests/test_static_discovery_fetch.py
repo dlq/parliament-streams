@@ -25,6 +25,47 @@ class Response(io.BytesIO):
 
 
 class StaticDiscoveryFetchTests(unittest.TestCase):
+    def test_explicit_manifest_formats_override_missing_or_conflicting_extensions(self):
+        cases = [
+            ("hls", "/opaque", b"#EXTM3U\n", "ok"),
+            ("dash", "/opaque", b"<MPD></MPD>", "ok"),
+            ("hls", "/manifest.mpd", b"#EXTM3U\n", "ok"),
+            ("dash", "/playlist.m3u8", b"<MPD></MPD>", "ok"),
+            ("hls", "/manifest.mpd", b"<MPD></MPD>", "warning"),
+            ("dash", "/playlist.m3u8", b"#EXTM3U\n", "warning"),
+            ("dash", "/opaque", b"<html>Player only</html>", "warning"),
+            ("official_page", "/manifest.mpd", b"<html>Player only</html>", "page_ok"),
+        ]
+        for kind, path, body, status in cases:
+            with self.subTest(kind=kind, path=path, body=body):
+                with patch.object(static, "fetch", return_value={"http_status": 200, "body": body}):
+                    result = static.check_discovery_target(kind, f"https://example.test{path}", 8)
+                self.assertEqual(result["status"], status)
+                self.assertEqual(result["kind"], kind)
+                if kind != "official_page":
+                    self.assertNotIn("page_leads", result)
+        with patch.object(static, "fetch", return_value={"http_status": 503, "error": "HTTP 503"}):
+            result = static.check_discovery_target("dash", "https://example.test/opaque", 8)
+        self.assertEqual(result["status"], "error")
+
+    def test_country_manifest_counts_preserve_explicit_formats(self):
+        targets = [
+            {"kind": "dash", "url": "https://example.test/opaque"},
+            {"kind": "hls", "url": "https://example.test/conflicting.mpd"},
+        ]
+        with patch.object(
+            static,
+            "fetch",
+            side_effect=[
+                {"http_status": 200, "body": b"<MPD></MPD>"},
+                {"http_status": 200, "body": b"#EXTM3U\n"},
+            ],
+        ):
+            result = static.check_country({"country": "Example", "results": targets}, 8)
+        self.assertEqual(result["open_dash_count"], 1)
+        self.assertEqual(result["open_hls_count"], 1)
+        self.assertTrue(result["has_open_hls"])
+
     def test_serbian_catalogue_route_is_encoded_for_the_real_http_wire(self):
         original = "https://www.parlament.gov.rs/преноси/архива.2082.html"
         expected = (

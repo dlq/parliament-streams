@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections.abc import Iterator
 from datetime import date
 from pathlib import Path, PurePosixPath
 from typing import Any
@@ -136,6 +137,25 @@ def load_reviews(root: Path = ROOT) -> list[tuple[str, dict[str, Any]]]:
     return result
 
 
+def _review_rows(
+    inventory: dict[str, Any], reviews: list[tuple[str, dict[str, Any]]]
+) -> Iterator[tuple[str, dict[str, Any], dict[str, Any], dict[str, Any]]]:
+    """Validate exact identities before projecting any routes, report paths or notes."""
+    eligible = {
+        row["id"]: row
+        for row in inventory["records"]
+        if row["authority_status"] == "eligible_legislature"
+    }
+    for path, report in reviews:
+        seen: set[str] = set()
+        for row in report["records"]:
+            key = row["id"]
+            if key not in eligible or key in seen:
+                raise ValueError(f"{path}: duplicate, unknown or noneligible identity {key}")
+            seen.add(key)
+            yield path, report, row, eligible[key]
+
+
 def reviewed_routes(
     inventory: dict[str, Any], reviews: list[tuple[str, dict[str, Any]]]
 ) -> list[dict[str, Any]]:
@@ -144,58 +164,45 @@ def reviewed_routes(
     An institutional route may be blocked today; monitoring it is not a claim of
     successful access. Named media routes remain research leads until publication.
     """
-    eligible = {
-        row["id"]: row
-        for row in inventory["records"]
-        if row["authority_status"] == "eligible_legislature"
-    }
     result: dict[tuple[str, str, str], dict[str, Any]] = {}
-    for path, report in reviews:
-        seen: set[str] = set()
-        for row in report["records"]:
-            key = row["id"]
-            if key not in eligible or key in seen:
-                raise ValueError(f"{path}: duplicate, unknown or noneligible identity {key}")
-            seen.add(key)
-            values = [
-                ("institution", row, INSTITUTION_FIELDS),
-                ("institution", row.get("metadata", {}), INSTITUTION_FIELDS),
-                ("media", row.get("official_media", {}), MEDIA_FIELDS),
-            ]
-            for purpose, section, fields in values:
-                if not isinstance(section, dict):
-                    continue
-                for field in sorted(fields):
-                    value = section.get(field)
-                    for item in value if isinstance(value, list) else [value]:
-                        url = maintained_page_url(item)
-                        if not url:
-                            continue
-                        identity = (key, purpose, url)
-                        route = result.setdefault(
-                            identity,
-                            {
-                                "record_id": key,
-                                "country": eligible[key]["country"],
-                                "purpose": purpose,
-                                "url": url,
-                                "reports": [],
-                            },
-                        )
-                        if path not in route["reports"]:
-                            route["reports"].append(path)
+    for path, _report, row, institution in _review_rows(inventory, reviews):
+        key = row["id"]
+        values = [
+            ("institution", row, INSTITUTION_FIELDS),
+            ("institution", row.get("metadata", {}), INSTITUTION_FIELDS),
+            ("media", row.get("official_media", {}), MEDIA_FIELDS),
+        ]
+        for purpose, section, fields in values:
+            if not isinstance(section, dict):
+                continue
+            for field in sorted(fields):
+                value = section.get(field)
+                for item in value if isinstance(value, list) else [value]:
+                    url = maintained_page_url(item)
+                    if not url:
+                        continue
+                    identity = (key, purpose, url)
+                    route = result.setdefault(
+                        identity,
+                        {
+                            "record_id": key,
+                            "country": institution["country"],
+                            "purpose": purpose,
+                            "url": url,
+                            "reports": [],
+                        },
+                    )
+                    if path not in route["reports"]:
+                        route["reports"].append(path)
     return [result[key] for key in sorted(result)]
 
 
 def review_reports_by_id(
     inventory: dict[str, Any], reviews: list[tuple[str, dict[str, Any]]]
 ) -> dict[str, list[str]]:
-    # Validate all exact identities even when a review contains no reusable page route.
-    reviewed_routes(inventory, reviews)
     result: dict[str, list[str]] = {}
-    for path, report in reviews:
-        for row in report["records"]:
-            result.setdefault(row["id"], []).append(path)
+    for path, _report, row, _institution in _review_rows(inventory, reviews):
+        result.setdefault(row["id"], []).append(path)
     return {key: sorted(set(paths)) for key, paths in result.items()}
 
 
@@ -203,25 +210,23 @@ def review_notes_by_id(
     inventory: dict[str, Any], reviews: list[tuple[str, dict[str, Any]]]
 ) -> dict[str, list[dict[str, Any]]]:
     """Keep dated unresolved findings attached to their report, never a completion claim."""
-    review_reports_by_id(inventory, reviews)
     result: dict[str, list[dict[str, Any]]] = {}
-    for path, report in reviews:
-        for row in report["records"]:
-            notes = row.get("unresolved", row.get("unresolved_dimensions", []))
-            if not isinstance(notes, list):
-                notes = []
-            result.setdefault(row["id"], []).append(
-                {
-                    "report": path,
-                    "reviewed_on": row.get("reviewed_on", report["reviewed_on"]),
-                    "scope": report.get("scope", "Individual source follow-up"),
-                    "unresolved": [
-                        sanitize_value(
-                            note.replace("_", " ") if re.fullmatch(r"[a-z0-9_]+", note) else note
-                        )
-                        for note in notes
-                        if isinstance(note, str)
-                    ],
-                }
-            )
+    for path, report, row, _institution in _review_rows(inventory, reviews):
+        notes = row.get("unresolved", row.get("unresolved_dimensions", []))
+        if not isinstance(notes, list):
+            notes = []
+        result.setdefault(row["id"], []).append(
+            {
+                "report": path,
+                "reviewed_on": row.get("reviewed_on", report["reviewed_on"]),
+                "scope": report.get("scope", "Individual source follow-up"),
+                "unresolved": [
+                    sanitize_value(
+                        note.replace("_", " ") if re.fullmatch(r"[a-z0-9_]+", note) else note
+                    )
+                    for note in notes
+                    if isinstance(note, str)
+                ],
+            }
+        )
     return result

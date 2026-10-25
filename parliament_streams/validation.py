@@ -2,15 +2,14 @@
 
 from __future__ import annotations
 
-import json
 from copy import deepcopy
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from typing import Any, cast
 
-from jsonschema import Draft202012Validator, FormatChecker
-
+from .catalogue import load_json_object
+from .data_contracts import schema_validator
 from .models import CandidateRecord, Catalogue, ChannelRecord, FallbackCatalogue
 from .scrapers import SCRAPERS
 
@@ -67,17 +66,11 @@ class CatalogueValidationError(ValueError):
 
 
 def load_schema(path: Path = DEFAULT_SCHEMA_PATH) -> dict[str, Any]:
-    value = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(value, dict):
-        raise ValueError(f"{path} must contain a JSON object")
-    return cast(dict[str, Any], value)
+    return load_json_object(path)
 
 
 def load_fallbacks_schema(path: Path = DEFAULT_FALLBACKS_SCHEMA_PATH) -> dict[str, Any]:
-    value = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(value, dict):
-        raise ValueError(f"{path} must contain a JSON object")
-    return cast(dict[str, Any], value)
+    return load_json_object(path)
 
 
 def _json_path(parts: list[object]) -> str:
@@ -88,9 +81,10 @@ def _json_path(parts: list[object]) -> str:
 
 
 def _schema_issues(document: object, schema: dict[str, Any]) -> list[ValidationIssue]:
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    validator = schema_validator(schema)
     errors = sorted(
-        validator.iter_errors(document), key=lambda error: _json_path(list(error.absolute_path))
+        validator.iter_errors(cast(Any, document)),
+        key=lambda error: _json_path(list(error.absolute_path)),
     )
     return [
         ValidationIssue(_json_path(list(error.absolute_path)), "schema", error.message)
@@ -491,7 +485,7 @@ def validate_candidate(
             issues.append(
                 ValidationIssue("$", "candidate-fields", f"Unexpected fields: {', '.join(extra)}")
             )
-    if candidate.get("candidate_version") != 1:
+    if type(candidate.get("candidate_version")) is not int or candidate["candidate_version"] != 1:
         issues.append(
             ValidationIssue(
                 "$.candidate_version", "candidate-version", "Only candidate version 1 is supported"

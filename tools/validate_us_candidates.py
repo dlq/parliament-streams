@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from jsonschema import Draft202012Validator, FormatChecker
+from parliament_streams.data_contracts import schema_validator
 
 EXPECTED_STATE_CODES = {
     "AL",
@@ -65,7 +65,7 @@ EXPECTED_STATE_CODES = {
 
 def validate_file(path: Path, schema: dict[str, Any]) -> list[str]:
     value = json.loads(path.read_text(encoding="utf-8"))
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    validator = schema_validator(schema)
     errors = sorted(validator.iter_errors(value), key=lambda error: list(error.absolute_path))
     messages = [f"{path}: {error.json_path}: {error.message}" for error in errors]
 

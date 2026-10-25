@@ -10,6 +10,8 @@ on:
       - "data/channels.json"
       - "data/fallbacks.json"
       - "data/schedules.json"
+      - "data/supranational.json"
+      - "schema/**"
       - "parliament_streams/**"
       - "pyproject.toml"
       - "uv.lock"
@@ -18,6 +20,7 @@ on:
       - "tools/build_vendor_assets.mjs"
       - "tools/version_site_assets.mjs"
       - "tools/verify_pages_revision.py"
+      - "tools/validate_data_products.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -111,6 +114,10 @@ jobs:
           --schedules _site/data/schedules.json
           --output-dir _site/data
           --epg-url https://dlq.ca/parliament-streams/data/epg.xml
+      - name: Validate published data products and cross-format links
+        run: >-
+          uv run --locked python tools/validate_data_products.py
+          --data-dir _site/data
       - name: Summarize guide quality
         run: |
           {

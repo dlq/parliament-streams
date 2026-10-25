@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { collectTargets, pageLeadObservations, parseArgs } from "../tools/deep_validate_browser.mjs";
+import { collectTargets, manifestKind, pageLeadObservations, parseArgs } from "../tools/deep_validate_browser.mjs";
 
 const pageRules = JSON.parse(await fs.readFile(new URL("../parliament_streams/page_lead_rules.json", import.meta.url), "utf8"));
 const pageOptions = { baseUrl: "https://assembly.test/media/", pageUrl: "https://assembly.test/original", rules: pageRules };
@@ -30,6 +30,28 @@ test("network budgets and explicit unlimited page count are parsed without chang
   assert.equal(args.budgetSeconds, 1800);
   assert.equal(parseArgs(["--input", "a", "--output", "b"]).maxPages, 4);
   assert.throws(() => parseArgs(["--input", "a", "--output", "b", "--budget-seconds", "-1"]));
+});
+
+test("opaque manifest routes retain advertised HLS or DASH formats without assuming playback", () => {
+  const url = "https://assembly.test/player/resource?id=42";
+  assert.equal(manifestKind(url, "application/vnd.apple.mpegurl"), "hls");
+  assert.equal(manifestKind(url, "application/x-mpegURL; charset=utf-8"), "hls");
+  assert.equal(manifestKind(url, "application/dash+xml"), "dash");
+  assert.equal(manifestKind(url, "application/json"), null);
+  assert.equal(manifestKind(url), null);
+  assert.equal(manifestKind("https://assembly.test/live.m3u8?session=42"), "hls");
+  assert.equal(manifestKind("https://assembly.test/live.mpd?session=42"), "dash");
+});
+
+test("manifest body signatures take precedence over URL and MIME hints", () => {
+  const hls = "\uFEFF  #EXTM3U\n#EXT-X-VERSION:3\n";
+  const dash = '<?xml version="1.0"?>\n<MPD xmlns="urn:mpeg:dash:schema:mpd:2011"></MPD>';
+  const opaqueUrl = "https://assembly.test/player/resource?id=42";
+  assert.equal(manifestKind(opaqueUrl, "application/octet-stream", hls), "hls");
+  assert.equal(manifestKind(opaqueUrl, "application/xml", dash), "dash");
+  assert.equal(manifestKind("https://assembly.test/live.m3u8", "application/vnd.apple.mpegurl", dash), "dash");
+  assert.equal(manifestKind("https://assembly.test/live.mpd", "application/dash+xml", hls), "hls");
+  assert.equal(manifestKind(opaqueUrl, "application/json", '{"status":"ok"}'), null);
 });
 
 test("rendered provider channels, archives and programme links remain unverified observations", () => {

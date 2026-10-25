@@ -6,7 +6,11 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check catalogue-site-data-check institution-site-data-check format-check lint type-check compile coverage test-js accessibility-check
+verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check catalogue-site-data-check institution-site-data-check data-products-check format-check lint type-check compile coverage test-js accessibility-check
+
+.PHONY: data-products-check
+data-products-check:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_data_products.py
 
 research-secrets-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/sanitize_research_evidence.py --check-tracked

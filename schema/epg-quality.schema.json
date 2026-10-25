@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dlq.github.io/parliament-streams/schema/epg-quality.schema.json",
+  "title": "Parliament Streams EPG quality report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "counts", "channels"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["events", "exportable", "excluded", "channels_with_events"],
+      "properties": {
+        "events": { "$ref": "#/$defs/count" },
+        "exportable": { "$ref": "#/$defs/count" },
+        "excluded": { "$ref": "#/$defs/count" },
+        "channels_with_events": { "$ref": "#/$defs/count" }
+      },
+      "patternProperties": {
+        "^excluded_[a-z_]+$": { "$ref": "#/$defs/count" }
+      }
+    },
+    "channels": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/channel_quality" }
+    }
+  },
+  "$defs": {
+    "count": { "type": "integer", "minimum": 0 },
+    "exclusion_reason": {
+      "enum": [
+        "unverified_channel_mapping",
+        "duplicate_id",
+        "cancelled",
+        "empty_title",
+        "missing_time_range",
+        "invalid_timestamp",
+        "nonpositive_duration",
+        "duplicate_programme",
+        "overlapping_programme"
+      ]
+    },
+    "channel_quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source", "scope", "linear_guide_eligible", "events", "exportable",
+        "overlap_pairs", "inferred_ends", "assumed_dates", "stale", "exclusions",
+        "excluded_events"
+      ],
+      "properties": {
+        "source": { "type": "string", "minLength": 1 },
+        "scope": {
+          "enum": [
+            "broadcast_schedule", "event_directory", "institutional_agenda",
+            "live_event_metadata", "unreviewed"
+          ]
+        },
+        "linear_guide_eligible": { "type": "boolean" },
+        "events": { "$ref": "#/$defs/count" },
+        "exportable": { "$ref": "#/$defs/count" },
+        "overlap_pairs": { "$ref": "#/$defs/count" },
+        "inferred_ends": { "$ref": "#/$defs/count" },
+        "assumed_dates": { "$ref": "#/$defs/count" },
+        "stale": { "type": "boolean" },
+        "exclusions": {
+          "type": "object",
+          "propertyNames": { "$ref": "#/$defs/exclusion_reason" },
+          "additionalProperties": { "$ref": "#/$defs/count" }
+        },
+        "excluded_events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "reasons"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "reasons": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": { "$ref": "#/$defs/exclusion_reason" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

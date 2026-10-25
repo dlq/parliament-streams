@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+from .data_contracts import require_json_schema
 from .models import Catalogue, ChannelRecord
 from .schedule_collection import ScheduleSnapshot
 from .schedule_quality import (
@@ -126,6 +127,7 @@ def write_iptv_exports(
     stable = select_iptv_hls_channels(catalogue)
     validated = select_iptv_hls_channels(catalogue, include_non_always_on=True)
     assessment = assess_schedules(catalogue, snapshot)
+    require_json_schema(assessment.report, "epg-quality.schema.json", label="EPG quality report")
     xml, programmes, skipped = render_xmltv(catalogue, snapshot, assessment)
     output_dir.mkdir(parents=True, exist_ok=True)
     # A channel list is extended M3U, not an HLS media/master manifest. GitHub

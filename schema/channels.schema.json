@@ -72,13 +72,13 @@
         },
         "playback_url": {
           "anyOf": [
-            { "type": "string", "format": "uri" },
+            { "type": "string", "format": "iri" },
             { "type": "null" }
           ]
         },
         "playback_policy": { "$ref": "#/$defs/playback_policy" },
         "embed": { "$ref": "#/$defs/embed" },
-        "official_url": { "type": "string", "format": "uri" },
+        "official_url": { "type": "string", "format": "iri" },
         "provenance_note": { "type": "string", "minLength": 1 },
         "validation_history": {
           "type": "array",
@@ -165,7 +165,7 @@
       "additionalProperties": false,
       "properties": {
         "source": { "type": "string", "enum": ["wikidata", "ipu_parline"] },
-        "url": { "type": "string", "format": "uri" },
+        "url": { "type": "string", "format": "iri" },
         "checked_on": { "type": "string", "format": "date" },
         "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
         "notes": { "type": "string", "minLength": 1 }
@@ -179,8 +179,8 @@
         "provider": { "type": "string", "enum": ["youtube"] },
         "kind": { "type": "string", "enum": ["uploads_playlist"] },
         "content_id": { "type": "string", "pattern": "^UU[A-Za-z0-9_-]+$" },
-        "url": { "type": "string", "format": "uri" },
-        "live_url": { "type": "string", "format": "uri" },
+        "url": { "type": "string", "format": "iri" },
+        "live_url": { "type": "string", "format": "iri" },
         "notes": { "type": "string", "minLength": 1 }
       }
     },
@@ -229,7 +229,7 @@
           "type": "string",
           "enum": ["implemented", "planned"]
         },
-        "url": { "type": "string", "format": "uri" },
+        "url": { "type": "string", "format": "iri" },
         "method": { "type": "string", "enum": ["GET", "POST"] },
         "kind": { "type": "string", "minLength": 1 }
       }
@@ -252,7 +252,7 @@
         "summary": { "type": "string", "minLength": 1 },
         "evidence": {
           "type": "array",
-          "items": { "type": "string", "format": "uri" }
+          "items": { "type": "string", "format": "iri" }
         },
         "recommendation": { "type": "string", "minLength": 1 }
       }

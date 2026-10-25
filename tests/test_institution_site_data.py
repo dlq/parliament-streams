@@ -12,12 +12,13 @@ from contextlib import redirect_stderr
 from pathlib import Path
 from typing import Any
 
+from parliament_streams.catalogue import load_json_object
+from parliament_streams.data_contracts import require_json_schema
 from parliament_streams.inventory.projection import (
     REPORT_BASE_URL,
     build_payload,
     countries_for_scope,
     http_urls,
-    load_object,
     report_urls,
 )
 from parliament_streams.inventory.reviews import load_reviews
@@ -332,6 +333,32 @@ class InstitutionSnapshotTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unknown status"):
             self.payload_records()
 
+    def test_projection_rejects_wrong_public_field_types_before_rendering(self) -> None:
+        self.inventory["records"][0]["aliases"] = "A single string is not an alias list"
+        with self.assertRaisesRegex(ValueError, "Invalid institution site data.*aliases"):
+            build_payload(self.inventory, self.catalogue, self.directory)
+
+    def test_public_schema_rejects_unknown_fields_invalid_dates_and_completion_claims(self) -> None:
+        payload = build_payload(self.inventory, self.catalogue, self.directory)
+        variants = []
+        unknown = copy.deepcopy(payload)
+        unknown["records"][0]["unreviewed_stream"] = "https://example.test/live"
+        variants.append(unknown)
+        invalid_date = copy.deepcopy(payload)
+        invalid_date["records"][0]["service_review"]["reviewed_on"] = "yesterday"
+        variants.append(invalid_date)
+        false_claim = copy.deepcopy(payload)
+        false_claim["scope"]["complete_exhaustive_institutional_census_certified"] = True
+        variants.append(false_claim)
+        for variant in variants:
+            with (
+                self.subTest(variant=variant),
+                self.assertRaisesRegex(ValueError, "Invalid institution site data"),
+            ):
+                require_json_schema(
+                    variant, "institution-site-data.schema.json", label="institution site data"
+                )
+
     def test_broken_relationship_and_duplicate_identity_fail(self) -> None:
         self.inventory["records"][3]["relationships"][0]["institution_id"] = "missing-parent"
         with self.assertRaisesRegex(ValueError, "broken institution relationship"):
@@ -402,12 +429,12 @@ class InstitutionSnapshotTests(unittest.TestCase):
 class CurrentInstitutionSnapshotTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.inventory = load_object(DEFAULT_INVENTORY_PATH)
+        cls.inventory = load_json_object(DEFAULT_INVENTORY_PATH)
         cls.payload = build_payload(
             cls.inventory,
-            load_object(DEFAULT_CATALOGUE_PATH),
-            load_object(DEFAULT_DIRECTORY_PATH),
-            load_object(DEFAULT_SERVICE_REGISTER_PATH),
+            load_json_object(DEFAULT_CATALOGUE_PATH),
+            load_json_object(DEFAULT_DIRECTORY_PATH),
+            load_json_object(DEFAULT_SERVICE_REGISTER_PATH),
             load_reviews(),
         )
 
@@ -459,7 +486,7 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
 
     def test_all_current_body_source_crosswalks_are_preserved_exactly(self) -> None:
         rows = {row["id"]: row for row in self.payload["records"]}
-        register = load_object(DEFAULT_SERVICE_REGISTER_PATH)
+        register = load_json_object(DEFAULT_SERVICE_REGISTER_PATH)
         self.assertEqual(
             sum(bool(body["catalogue_ids"]) for body in register["eligible_bodies"]), 143
         )

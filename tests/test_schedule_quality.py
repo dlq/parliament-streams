@@ -81,6 +81,23 @@ class ScheduleQualityTests(unittest.TestCase):
             self.assertEqual(assessment.report["counts"]["exportable"], 0)
             self.assertEqual(assessment.report["counts"]["excluded_unverified_channel_mapping"], 1)
 
+    def test_channels_with_events_excludes_retained_empty_channel_rows(self):
+        snapshot = self.snapshot("cpac", "cpac-ca", [self.event])
+        snapshot["channels"]["brazil-tv-camara"] = {
+            "scraper": "brazil-tv-camara",
+            "events": [],
+        }
+        report = assess_schedules(self.catalogue, snapshot).report
+        self.assertEqual(
+            report["counts"],
+            {"events": 1, "exportable": 1, "excluded": 0, "channels_with_events": 1},
+        )
+        self.assertEqual(set(report["channels"]), {"cpac-ca", "brazil-tv-camara"})
+        empty = report["channels"]["brazil-tv-camara"]
+        self.assertEqual(empty["events"], 0)
+        self.assertEqual(empty["exportable"], 0)
+        self.assertEqual(empty["scope"], "broadcast_schedule")
+
     def test_overlap_cluster_quarantines_every_conflict_but_keeps_adjacent_events(self):
         events = [
             self.event,

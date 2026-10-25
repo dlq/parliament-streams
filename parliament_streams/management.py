@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import csv
-import hashlib
 import json
 import os
 import tempfile
@@ -174,6 +173,14 @@ class CatalogueStore:
         require_valid_catalogue(catalogue)
         return catalogue
 
+    def _finish_change(self, catalogue: Catalogue, *, persist: bool) -> Catalogue:
+        """Validate every staged change, including a dry run, before returning it."""
+        if persist:
+            return self.commit(catalogue)
+        catalogue["generated_on"] = date.today().isoformat()
+        require_valid_catalogue(catalogue)
+        return catalogue
+
     def commit(self, catalogue: Catalogue, *, generated_on: date | None = None) -> Catalogue:
         prepared = deepcopy(catalogue)
         prepared["generated_on"] = (generated_on or date.today()).isoformat()
@@ -207,11 +214,7 @@ class CatalogueStore:
             channels.append(deepcopy(channel))
         else:
             channels[existing] = deepcopy(channel)
-        if persist:
-            return self.commit(catalogue)
-        catalogue["generated_on"] = date.today().isoformat()
-        require_valid_catalogue(catalogue)
-        return catalogue
+        return self._finish_change(catalogue, persist=persist)
 
     def update(self, channel_id: str, channel: ChannelRecord, *, persist: bool = True) -> Catalogue:
         if channel.get("id") != channel_id:
@@ -220,11 +223,7 @@ class CatalogueStore:
         for index, existing in enumerate(catalogue["channels"]):
             if existing["id"] == channel_id:
                 catalogue["channels"][index] = deepcopy(channel)
-                if persist:
-                    return self.commit(catalogue)
-                catalogue["generated_on"] = date.today().isoformat()
-                require_valid_catalogue(catalogue)
-                return catalogue
+                return self._finish_change(catalogue, persist=persist)
         raise KeyError(f"Unknown catalogue id: {channel_id}")
 
     def remove(self, channel_id: str, *, persist: bool = True) -> Catalogue:
@@ -233,11 +232,7 @@ class CatalogueStore:
         if len(retained) == len(catalogue["channels"]):
             raise KeyError(f"Unknown catalogue id: {channel_id}")
         catalogue["channels"] = retained
-        if persist:
-            return self.commit(catalogue)
-        catalogue["generated_on"] = date.today().isoformat()
-        require_valid_catalogue(catalogue)
-        return catalogue
+        return self._finish_change(catalogue, persist=persist)
 
 
 def scaffold_candidate(
@@ -545,8 +540,6 @@ def playback_policy_for_candidate(source_type: SourceType) -> PlaybackPolicy:
         return "provider_embed"
     if source_type == "official_page":
         return "link_out"
-    if source_type == "direct_dash":
-        return "research_only"
     return "research_only"
 
 
@@ -565,14 +558,6 @@ def export_csv(catalogue: Catalogue, output: TextIO) -> None:
         )
 
 
-def file_sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(64 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
 __all__ = [
     "CatalogueStore",
     "CatalogueValidationError",
@@ -580,7 +565,6 @@ __all__ = [
     "audit_identities",
     "compare_health_reports",
     "export_csv",
-    "file_sha256",
     "generate_validation_seed",
     "load_candidate",
     "promote_candidate",

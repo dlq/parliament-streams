@@ -12,11 +12,11 @@ from typing import Any
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from parliament_streams.catalogue import load_json_object  # noqa: E402
 from parliament_streams.inventory.projection import (  # noqa: E402
     DIRECTORY_REPORT,
     SERVICE_REGISTER_REPORT,
     build_payload,
-    load_object,
 )
 from parliament_streams.inventory.reviews import load_reviews  # noqa: E402
 
@@ -40,10 +40,10 @@ def render_site_data(
     if service_reviews is None and inventory_path == DEFAULT_INVENTORY_PATH:
         service_reviews = load_reviews()
     payload = build_payload(
-        load_object(inventory_path),
-        load_object(catalogue_path),
-        load_object(directory_path),
-        load_object(service_register_path),
+        load_json_object(inventory_path),
+        load_json_object(catalogue_path),
+        load_json_object(directory_path),
+        load_json_object(service_register_path),
         service_reviews,
     )
     text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
@@ -74,7 +74,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         reviews = (
             [
-                (path.resolve().relative_to(ROOT).as_posix(), load_object(path))
+                (path.resolve().relative_to(ROOT).as_posix(), load_json_object(path))
                 for path in args.review
             ]
             if args.review is not None

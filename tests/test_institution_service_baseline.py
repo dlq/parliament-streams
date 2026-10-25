@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from typing import Any
 
-from parliament_streams.inventory.projection import load_object
+from parliament_streams.catalogue import load_json_object
 from tools.build_institution_service_baseline import (
     DIRECTORY,
     HISTORICAL,
@@ -284,12 +284,12 @@ class InstitutionServiceBaselineTests(unittest.TestCase):
 
 class CurrentInstitutionServiceBaselineTests(unittest.TestCase):
     def test_current_inventory_is_covered_by_exact_eligible_identity(self) -> None:
-        inventory = load_object(ROOT / "data/discovery/institutions.json")
+        inventory = load_json_object(ROOT / "data/discovery/institutions.json")
         result = build_baseline(
             inventory,
-            load_object(ROOT / "data/channels.json"),
-            load_object(ROOT / DIRECTORY),
-            load_object(ROOT / HISTORICAL),
+            load_json_object(ROOT / "data/channels.json"),
+            load_json_object(ROOT / DIRECTORY),
+            load_json_object(ROOT / HISTORICAL),
             [],
             REVIEWED_ON,
         )

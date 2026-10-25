@@ -3,13 +3,14 @@
 from __future__ import annotations
 
 import re
-from collections.abc import Callable
 from datetime import UTC, datetime
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 from .common import (
-    FetchRequest,
+    Fetcher as Fetcher,
+)
+from .common import (
     ParsedSchedule,
     ScheduleEvent,
     ScheduleMetadata,
@@ -35,7 +36,6 @@ SOURCE: ScraperSource = {
     "notes": "Parses server-rendered upcoming event cards from ParlVU and SenVu Harmony pages.",
 }
 
-Fetcher = Callable[[FetchRequest, int, int], str]
 EVENT_RE = re.compile(
     r'<div class="divEvent"[\s\S]*?<a(?P<attrs>[^>]*)>[\s\S]*?'
     r'<td colspan="2" class="tdEventTitle">([\s\S]*?)</td>[\s\S]*?'

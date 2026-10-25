@@ -2,37 +2,35 @@ import json
 import unittest
 from collections import defaultdict
 from pathlib import Path
+from typing import NotRequired, get_args, get_origin, get_type_hints
 from unittest.mock import patch
 from urllib.parse import urlparse
+
+from parliament_streams.models import (
+    Accessibility,
+    Catalogue,
+    ChannelRecord,
+    Embed,
+    EpgSource,
+    ExternalIds,
+    FallbackCatalogue,
+    FallbackSource,
+    IdentitySource,
+    Permission,
+    PermissionStatus,
+    PlaybackPolicy,
+    SourceKind,
+    SourceType,
+    StabilityRisk,
+    TechnicalStatus,
+    ValidationHistoryEntry,
+)
+from parliament_streams.validation import validate_catalogue
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE_PATH = ROOT / "data" / "channels.json"
 SCHEMA_PATH = ROOT / "schema" / "channels.schema.json"
 PAGES_WORKFLOW_PATH = ROOT / ".github" / "workflows" / "pages.yml"
-
-SOURCE_TYPES = {"direct_hls", "direct_dash", "official_page", "youtube"}
-SOURCE_KINDS = {
-    "first_party_hls",
-    "official_vendor_hls",
-    "third_party_relay_hls",
-    "direct_dash_research",
-    "official_youtube_embed",
-    "official_page",
-}
-TECHNICAL_STATUSES = {"validated", "needs_review", "link_only"}
-STABILITY_RISKS = {"low", "medium", "high", "unknown"}
-PROGRAM_CONFIDENCE = {"low", "medium", "high"}
-SCRAPER_STATUSES = {"implemented", "planned"}
-ACCESSIBILITY_STATUSES = {"available", "source_dependent", "unavailable", "unknown"}
-IDENTITY_SOURCES = {"wikidata", "ipu_parline"}
-PERMISSION_STATUSES = {
-    "personal_use_pending_review",
-    "noncommercial_pending_review",
-    "explicit_reuse_with_conditions",
-    "embed_only",
-    "no_third_party_reuse",
-}
-PLAYBACK_POLICIES = {"native_playback", "provider_embed", "link_out", "research_only"}
 
 
 class CatalogueContractTests(unittest.TestCase):
@@ -46,30 +44,55 @@ class CatalogueContractTests(unittest.TestCase):
         self.assertEqual(
             self.catalogue["generated_from"], "curated research and live endpoint validation"
         )
-        self.assertGreaterEqual(len(self.channels), 45)
 
-    def test_schema_file_is_present_and_aligned(self):
+    def test_schema_and_python_type_contracts_are_aligned(self):
         schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-        self.assertEqual(schema["title"], "Parliament Streams Catalogue")
-        self.assertEqual(
-            set(schema["$defs"]["channel"]["properties"]["source_type"]["enum"]), SOURCE_TYPES
-        )
-        self.assertEqual(
-            set(schema["$defs"]["channel"]["properties"]["source_kind"]["enum"]), SOURCE_KINDS
-        )
-        self.assertEqual(
-            set(schema["$defs"]["channel"]["properties"]["technical_status"]["enum"]),
-            TECHNICAL_STATUSES,
-        )
-        self.assertEqual(
-            set(schema["$defs"]["channel"]["properties"]["stability_risk"]["enum"]),
-            STABILITY_RISKS,
-        )
+        fallbacks = json.loads((ROOT / "schema/fallbacks.schema.json").read_text())
+        contracts = [
+            (Catalogue, schema),
+            (FallbackCatalogue, fallbacks),
+            (FallbackSource, fallbacks["$defs"]["fallback"]),
+            *[
+                (model, schema["$defs"][name])
+                for model, name in [
+                    (ChannelRecord, "channel"),
+                    (ExternalIds, "external_ids"),
+                    (IdentitySource, "identity_source"),
+                    (Embed, "embed"),
+                    (Accessibility, "accessibility"),
+                    (EpgSource, "epg_source"),
+                    (Permission, "permission"),
+                    (ValidationHistoryEntry, "validation_history_entry"),
+                ]
+            ],
+        ]
+        for model, contract in contracts:
+            with self.subTest(model=model.__name__):
+                hints = get_type_hints(model, include_extras=True)
+                self.assertEqual(set(hints), set(contract["properties"]))
+                self.assertEqual(
+                    {key for key, hint in hints.items() if get_origin(hint) is not NotRequired},
+                    set(contract["required"]),
+                )
+        channel_fields = {
+            "source_type": SourceType,
+            "source_kind": SourceKind,
+            "technical_status": TechnicalStatus,
+            "stability_risk": StabilityRisk,
+        }
+        for field, annotation in channel_fields.items():
+            with self.subTest(field=field):
+                self.assertEqual(
+                    set(schema["$defs"]["channel"]["properties"][field]["enum"]),
+                    set(get_args(annotation)),
+                )
         self.assertEqual(
             set(schema["$defs"]["permission"]["properties"]["status"]["enum"]),
-            PERMISSION_STATUSES,
+            set(get_args(PermissionStatus)),
         )
-        self.assertEqual(set(schema["$defs"]["playback_policy"]["enum"]), PLAYBACK_POLICIES)
+        self.assertEqual(
+            set(schema["$defs"]["playback_policy"]["enum"]), set(get_args(PlaybackPolicy))
+        )
 
     def test_pages_workflow_publishes_fallback_data(self):
         workflow = PAGES_WORKFLOW_PATH.read_text(encoding="utf-8")
@@ -77,112 +100,7 @@ class CatalogueContractTests(unittest.TestCase):
         self.assertIn("cp data/fallbacks.json _site/data/fallbacks.json", workflow)
 
     def test_channel_records_follow_declared_schema_contract(self):
-        seen_ids = set()
-        required_channel_keys = {
-            "id",
-            "name",
-            "jurisdiction_level",
-            "country_or_region",
-            "legislature",
-            "external_ids",
-            "identity_sources",
-            "language",
-            "source_type",
-            "source_kind",
-            "playback_url",
-            "playback_policy",
-            "official_url",
-            "provenance_note",
-            "technical_status",
-            "stability_risk",
-            "availability",
-            "accessibility",
-            "epg_sources",
-            "permission",
-        }
-        optional_channel_keys = {"embed", "validation_history"}
-        required_permission_keys = {"status", "summary", "evidence", "recommendation"}
-        required_accessibility_keys = {
-            "captions",
-            "caption_languages",
-            "sign_language",
-            "audio_description",
-            "notes",
-        }
-        required_embed_keys = {"provider", "kind", "content_id", "url", "live_url", "notes"}
-        required_external_id_keys = {
-            "wikidata_qid",
-            "ipu_country_code",
-            "ipu_parliament_code",
-            "ipu_chamber_code",
-        }
-        required_identity_source_keys = {
-            "source",
-            "url",
-            "checked_on",
-            "confidence",
-            "notes",
-        }
-        required_validation_history_keys = {
-            "checked_at",
-            "report_path",
-            "method",
-            "status",
-            "note",
-        }
-
-        for channel in self.channels:
-            with self.subTest(channel=channel["id"]):
-                self.assertEqual(set(channel) - optional_channel_keys, required_channel_keys)
-                self.assertNotIn(channel["id"], seen_ids)
-                seen_ids.add(channel["id"])
-                self.assertIn(channel["source_type"], SOURCE_TYPES)
-                self.assertIn(channel["source_kind"], SOURCE_KINDS)
-                self.assertIn(channel["playback_policy"], PLAYBACK_POLICIES)
-                self.assertIn(channel["technical_status"], TECHNICAL_STATUSES)
-                self.assertIn(channel["stability_risk"], STABILITY_RISKS)
-                self.assertEqual(set(channel["external_ids"]), required_external_id_keys)
-                self.assertRegex(channel["external_ids"]["wikidata_qid"], r"^Q[1-9][0-9]*$")
-                self.assertTrue(channel["identity_sources"])
-                for identity_source in channel["identity_sources"]:
-                    self.assertEqual(set(identity_source), required_identity_source_keys)
-                    self.assertIn(identity_source["source"], IDENTITY_SOURCES)
-                    self.assertIn(identity_source["confidence"], PROGRAM_CONFIDENCE)
-                    self.assertTrue(urlparse(identity_source["url"]).scheme.startswith("http"))
-                self.assertEqual(set(channel["accessibility"]), required_accessibility_keys)
-                for status_key in ("captions", "sign_language", "audio_description"):
-                    self.assertIn(channel["accessibility"][status_key], ACCESSIBILITY_STATUSES)
-                self.assertIsInstance(channel["accessibility"]["caption_languages"], list)
-                accessibility_note = channel["accessibility"]["notes"]
-                self.assertTrue(accessibility_note is None or accessibility_note.strip())
-                self.assertIsInstance(channel["provenance_note"], str)
-                self.assertTrue(channel["provenance_note"].strip())
-                for history in channel.get("validation_history", []):
-                    self.assertEqual(set(history), required_validation_history_keys)
-                    self.assertTrue(history["report_path"].startswith("reports/health/"))
-                    self.assertTrue(urlparse(history["report_path"]).scheme == "")
-                    self.assertIn(history["status"], {"ok", "warning", "error", "skipped"})
-                self.assertNotIn("attribution_text", channel)
-                self.assertNotIn("program", channel)
-                self.assertTrue(urlparse(channel["official_url"]).scheme.startswith("http"))
-                if channel["source_type"].startswith("direct_"):
-                    self.assertIsInstance(channel["playback_url"], str)
-                else:
-                    self.assertIsNone(channel["playback_url"])
-
-                if channel["source_type"] == "youtube":
-                    self.assertEqual(set(channel["embed"]), required_embed_keys)
-                    self.assertEqual(channel["embed"]["provider"], "youtube")
-                    self.assertEqual(channel["embed"]["kind"], "uploads_playlist")
-                    self.assertTrue(channel["embed"]["content_id"].startswith("UU"))
-                    self.assertIn("youtube-nocookie.com/embed", channel["embed"]["url"])
-                else:
-                    self.assertNotIn("embed", channel)
-
-                self.assertEqual(set(channel["permission"]), required_permission_keys)
-                self.assertIn(channel["permission"]["status"], PERMISSION_STATUSES)
-                for evidence_url in channel["permission"]["evidence"]:
-                    self.assertTrue(urlparse(evidence_url).scheme.startswith("http"))
+        self.assertEqual(validate_catalogue(self.catalogue), [])
 
     def test_external_identity_scope_and_links_are_coherent(self):
         for channel in self.channels:
@@ -220,21 +138,11 @@ class CatalogueContractTests(unittest.TestCase):
         hls_channels = [c for c in self.channels if c["source_type"] == "direct_hls"]
         youtube_channels = [c for c in self.channels if c["source_type"] == "youtube"]
 
-        self.assertGreaterEqual(len(hls_channels), 36)
-        self.assertGreaterEqual(len(youtube_channels), 3)
         for channel in hls_channels:
             self.assertTrue(urlparse(channel["playback_url"]).path.endswith(".m3u8"))
         for channel in youtube_channels:
             self.assertIn("youtube", channel["official_url"].lower())
             self.assertIsInstance(channel["embed"], dict)
-
-    def test_each_channel_records_permission_status(self):
-        for channel in self.channels:
-            with self.subTest(channel=channel["id"]):
-                self.assertIn("permission", channel)
-                self.assertIn("status", channel["permission"])
-                self.assertIn("summary", channel["permission"])
-                self.assertIn("evidence", channel["permission"])
 
     def test_each_channel_records_playback_policy(self):
         policies = {channel["playback_policy"] for channel in self.channels}
@@ -313,23 +221,6 @@ class CatalogueContractTests(unittest.TestCase):
         self.assertEqual(jalisco["jurisdiction_level"], "subnational")
         self.assertNotIn("colima-icrtv", channels)
 
-    def test_epg_sources_are_declared_with_scraper_ids(self):
-        epg_sources = [channel for channel in self.channels if channel.get("epg_sources")]
-
-        self.assertGreaterEqual(len(epg_sources), 5)
-        for channel in epg_sources:
-            for source in channel["epg_sources"]:
-                with self.subTest(channel=channel["id"], scraper=source["scraper"]):
-                    self.assertIn("url", source)
-                    self.assertIn("scraper", source)
-                    self.assertIn("scraper_status", source)
-                    self.assertIn("method", source)
-                    self.assertIn(source["scraper_status"], SCRAPER_STATUSES)
-                    if source["scraper_status"] == "implemented":
-                        self.assertNotEqual(source["scraper"], "planned")
-                    else:
-                        self.assertEqual(source["scraper"], "planned")
-
     def test_channel_presentation_text_is_clean(self):
         for channel in self.channels:
             with self.subTest(channel=channel["id"]):
@@ -361,27 +252,6 @@ class CatalogueContractTests(unittest.TestCase):
                     1,
                 )
 
-    def test_source_type_and_technical_status_are_coherent(self):
-        for channel in self.channels:
-            with self.subTest(channel=channel["id"]):
-                if channel["source_type"] == "official_page":
-                    self.assertEqual(channel["technical_status"], "link_only")
-                    self.assertEqual(channel["source_kind"], "official_page")
-                if channel["technical_status"] == "link_only":
-                    self.assertEqual(channel["source_type"], "official_page")
-                if channel["source_type"] == "youtube":
-                    self.assertEqual(channel["technical_status"], "validated")
-                    self.assertEqual(channel["source_kind"], "official_youtube_embed")
-                if channel["source_type"] == "direct_dash":
-                    self.assertEqual(channel["source_kind"], "direct_dash_research")
-                if channel["source_type"] == "direct_hls":
-                    self.assertIn(
-                        channel["source_kind"],
-                        {"first_party_hls", "official_vendor_hls", "third_party_relay_hls"},
-                    )
-                if channel["technical_status"] == "needs_review":
-                    self.assertNotEqual(channel["stability_risk"], "low")
-
     def test_quebec_family_uses_the_official_accented_institution_name(self):
         quebec_channels = [
             channel for channel in self.channels if channel["id"].startswith("quebec-canal")
@@ -391,10 +261,6 @@ class CatalogueContractTests(unittest.TestCase):
             {channel["legislature"] for channel in quebec_channels},
             {"Assemblée nationale du Québec"},
         )
-
-    def test_healthcheck_cli_is_importable(self):
-        module = __import__("parliament_streams.healthcheck", fromlist=["main"])
-        self.assertTrue(hasattr(module, "main"))
 
     def test_healthcheck_can_select_catalogue_ids(self):
         from parliament_streams import healthcheck

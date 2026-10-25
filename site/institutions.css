@@ -53,6 +53,9 @@
 .institution-evidence > summary { width: fit-content; min-height: 32px; padding: .3rem 0; color: var(--muted); cursor: pointer; }
 .institution-evidence-content { max-width: 850px; padding: .25rem .75rem .65rem; border-left: 2px solid var(--faint); color: var(--muted); overflow-wrap: anywhere; }
 .institution-evidence-content p { margin: .4rem 0 .7rem; }
+.institution-service-scope { margin: .4rem 0 .7rem; }
+.institution-service-scope dt { margin-top: .35rem; color: var(--ink); font-weight: 650; }
+.institution-service-scope dd { margin: .12rem 0 .45rem; }
 .institution-evidence-content h4 { margin: .8rem 0 .3rem; color: var(--ink); font-size: .76rem; }
 .institution-evidence-content ul { padding-left: 1.2rem; }
 .institution-evidence-content li { margin: .35rem 0; }

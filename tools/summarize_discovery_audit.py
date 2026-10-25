@@ -117,19 +117,23 @@ def main() -> int:
     args = parser.parse_args()
 
     decisions = parse_discovery_decisions(load_json_object(args.decisions))
+    static_reports = [(str(path), load_json_object(path)) for path in args.static]
+    browser_reports = [(str(path), load_json_object(path)) for path in args.browser]
     report = build_discovery_findings(
         load_catalogue(),
-        [(str(path), load_json_object(path)) for path in args.static],
-        [(str(path), load_json_object(path)) for path in args.browser],
+        static_reports,
+        browser_reports,
         decisions=decisions,
         page_decisions=parse_discovery_decisions(load_json_object(args.page_decisions)),
     )
     output = dict(report)
     if args.coverage:
         coverage = load_json_object(args.coverage)
-        static = [load_json_object(path) for path in args.static]
-        browser = [load_json_object(path) for path in args.browser]
-        coverage = network_coverage(coverage, static, browser)
+        coverage = network_coverage(
+            coverage,
+            [document for _, document in static_reports],
+            [document for _, document in browser_reports],
+        )
         output["coverage"] = coverage
         identities: dict[str, set[str]] = {}
         for source in coverage["sources"]:

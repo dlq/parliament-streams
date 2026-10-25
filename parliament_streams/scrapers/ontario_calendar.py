@@ -8,12 +8,9 @@ from datetime import UTC, datetime
 from .common import (
     ParsedSchedule,
     ScheduleEvent,
-    ScheduleMetadata,
     ScraperSource,
+    build_upcoming_schedule,
     clean_html,
-    format_utc_timestamp,
-    local_time_label,
-    normalized_events,
     parse_iso,
 )
 
@@ -56,19 +53,10 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         for event in events
         if re.search(r"\b(house|sitting|question period)\b", event["title"], re.IGNORECASE)
     ]
-    house_events = [event for event in relevant_events if event["start"] >= now]
-    if not house_events:
-        return {}
-    next_event = house_events[0]
-    schedule: ScheduleMetadata = {
-        "current_event_title": None,
-        "current_event_time": None,
-        "next_event_title": next_event["title"],
-        "next_event_time": local_time_label(next_event["start"]),
-        "next_event_start": format_utc_timestamp(next_event["start"]),
-        "confidence": "official_legislature_calendar_house_event",
-    }
-    schedule["events"] = normalized_events(
-        "ontario-house-en", relevant_events, now, source_timezone="America/Toronto"
+    return build_upcoming_schedule(
+        "ontario-house-en",
+        relevant_events,
+        now,
+        source_timezone="America/Toronto",
+        confidence="official_legislature_calendar_house_event",
     )
-    return {"ontario-house-en": schedule}

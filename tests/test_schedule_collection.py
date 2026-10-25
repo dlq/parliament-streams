@@ -1,3 +1,4 @@
+import copy
 import json
 import tempfile
 import unittest
@@ -16,14 +17,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ScheduleCollectionTests(unittest.TestCase):
-    def test_published_snapshot_matches_schema(self):
-        schema = json.loads((ROOT / "schema/schedules.schema.json").read_text(encoding="utf-8"))
-        snapshot_path = ROOT / "data/schedules.json"
-        if not snapshot_path.exists():
-            self.skipTest("generated data/schedules.json is not present")
-        snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
-        Draft202012Validator(schema, format_checker=FormatChecker()).validate(snapshot)
-
     def test_epg_audit_deduplicates_and_classifies_sources(self):
         catalogue = {
             "schema_version": 1,
@@ -252,6 +245,30 @@ class ScheduleCollectionTests(unittest.TestCase):
             output = Path(directory) / "nested" / "schedules.json"
             schedule_collection.write_snapshot(output, snapshot)
             self.assertEqual(json.loads(output.read_text())["schema_version"], 3)
+
+    def test_write_snapshot_rejects_malformed_products_before_writing(self):
+        with patch.object(schedule_collection, "SCRAPERS", {}):
+            snapshot = schedule_collection.collect_schedules(
+                now=datetime(2026, 8, 17, 12, tzinfo=UTC)
+            )
+        missing_sources = copy.deepcopy(snapshot)
+        del missing_sources["sources"]
+        invalid_timestamp = copy.deepcopy(snapshot)
+        invalid_timestamp["generated_at"] = "not-a-timestamp"
+        negative_count = copy.deepcopy(snapshot)
+        negative_count["counts"]["events"] = -1
+        with tempfile.TemporaryDirectory() as directory:
+            existing = Path(directory) / "schedules.json"
+            schedule_collection.write_snapshot(existing, snapshot)
+            original_bytes = existing.read_bytes()
+            new_output = Path(directory) / "new" / "schedules.json"
+            for malformed in (missing_sources, invalid_timestamp, negative_count):
+                with self.subTest(snapshot=malformed):
+                    for output in (existing, new_output):
+                        with self.assertRaisesRegex(ValueError, "Invalid schedule snapshot"):
+                            schedule_collection.write_snapshot(output, malformed)
+                    self.assertEqual(existing.read_bytes(), original_bytes)
+                    self.assertFalse(new_output.parent.exists())
 
     def test_error_can_retain_unexpired_future_events_from_previous_snapshot(self):
         source = ModuleType("source")

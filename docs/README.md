@@ -15,6 +15,7 @@ from the repository root unless stated otherwise.
 | [GitHub Actions and review queues](github-actions.md) | Inventory versus catalogue checks, schedules, deployment gates and human review handoffs |
 | [Development and validation](development.md) | Setup, verification and live discovery tools |
 | [Naming and compatibility](naming-conventions.md) | Domain vocabulary, operation names and stable data/command interfaces |
+| [Data validation and coverage](data-validation.md) | Product schemas, cross-format checks, static-type scope and coverage measurements |
 | [Public site and languages](public-site.md) | Playback, deployment, caching, localization and local previews |
 | [Public Legislatures page](https://dlq.ca/parliament-streams/institutions.html) | Working institution inventory, authority decisions, research gaps and ways to contribute evidence |
 | [Help with translation](translating.md) | Phrase-level suggestions, supported locales and translation files |

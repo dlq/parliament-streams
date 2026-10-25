@@ -12,11 +12,8 @@ from .common import (
     FetchRequest,
     ParsedSchedule,
     ScheduleEvent,
-    ScheduleMetadata,
     ScraperSource,
-    format_utc_timestamp,
-    local_time_label,
-    normalized_events,
+    build_upcoming_schedule,
 )
 
 API_URL = "https://webtv.senato.it/api/palimpsest"
@@ -77,23 +74,10 @@ def parse(*payloads: str, now: datetime | None = None) -> ParsedSchedule:
                 }
             )
 
-    events.sort(key=lambda event: event["start"])
-    if not events:
-        return {}
-
-    upcoming = [event for event in events if event["start"] >= now]
-    if not upcoming:
-        return {}
-    next_event = upcoming[0]
-    schedule: ScheduleMetadata = {
-        "current_event_title": None,
-        "current_event_time": None,
-        "next_event_title": next_event["title"],
-        "next_event_time": local_time_label(next_event["start"], "Europe/Rome"),
-        "next_event_start": format_utc_timestamp(next_event["start"]),
-        "confidence": "official_schedule_api",
-    }
-    schedule["events"] = normalized_events(
-        "italy-senate", events, now, source_timezone="Europe/Rome"
+    return build_upcoming_schedule(
+        "italy-senate",
+        events,
+        now,
+        source_timezone="Europe/Rome",
+        confidence="official_schedule_api",
     )
-    return {"italy-senate": schedule}

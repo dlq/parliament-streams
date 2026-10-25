@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from datetime import UTC, datetime
 from hashlib import sha256
 from html import unescape
@@ -35,6 +36,9 @@ class FetchRequest(TypedDict):
     method: str
     headers: dict[str, str]
     body: NotRequired[dict[str, str]]
+
+
+Fetcher = Callable[[FetchRequest, int, int], str]
 
 
 class ScheduleEvent(TypedDict):
@@ -197,3 +201,30 @@ def local_time_label(value: datetime, tz_name: str = "America/Toronto") -> str:
 def checked_label(now: datetime | None = None, tz_name: str = "America/Toronto") -> str:
     now = now or datetime.now(UTC)
     return f"Checked {local_time_label(now, tz_name)}"
+
+
+def build_upcoming_schedule(
+    channel_id: str,
+    events: list[ScheduleEvent],
+    now: datetime,
+    *,
+    source_timezone: str,
+    confidence: str,
+) -> ParsedSchedule:
+    """Build next-only metadata and retain the source's complete parsed event list."""
+    ordered = sorted(events, key=lambda event: event["start"])
+    next_event = next((event for event in ordered if event["start"] >= now), None)
+    if next_event is None:
+        return {}
+    schedule: ScheduleMetadata = {
+        "current_event_title": None,
+        "current_event_time": None,
+        "next_event_title": next_event["title"],
+        "next_event_time": local_time_label(next_event["start"], source_timezone),
+        "next_event_start": format_utc_timestamp(next_event["start"]),
+        "confidence": confidence,
+    }
+    schedule["events"] = normalized_events(
+        channel_id, ordered, now, source_timezone=source_timezone
+    )
+    return {channel_id: schedule}

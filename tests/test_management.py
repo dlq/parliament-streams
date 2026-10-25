@@ -22,7 +22,6 @@ from parliament_streams.management import (
     audit_identities,
     compare_health_reports,
     export_csv,
-    file_sha256,
     generate_validation_seed,
     load_candidate,
     promote_candidate,
@@ -315,6 +314,8 @@ class ValidationTests(unittest.TestCase):
             {"candidate-fields", "candidate-version", "candidate-status", "candidate-notes"}
             <= codes
         )
+        malformed["candidate_version"] = True
+        self.assertIn("candidate-version", {issue.code for issue in validate_candidate(malformed)})
         malformed["channel"] = "invalid"
         self.assertIn("candidate-channel", {issue.code for issue in validate_candidate(malformed)})
         with self.assertRaises(CatalogueValidationError):
@@ -386,7 +387,7 @@ class ManagementTests(unittest.TestCase):
     def tearDown(self):
         self.directory.cleanup()
 
-    def test_json_loaders_site_data_and_hash(self):
+    def test_json_loaders_and_site_data(self):
         catalogue = load_catalogue(self.catalogue_path)
         fallbacks = load_fallbacks(self.fallbacks_path)
         self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
@@ -430,7 +431,6 @@ class ManagementTests(unittest.TestCase):
         self.assertFalse(
             site_data_is_current(self.catalogue_path, self.fallbacks_path, self.site_path)
         )
-        self.assertEqual(len(file_sha256(self.catalogue_path)), 64)
 
         array_path = self.root / "array.json"
         array_path.write_text("[]", encoding="utf-8")

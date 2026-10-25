@@ -19,7 +19,7 @@ import urllib.request
 from datetime import UTC
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, NoReturn
 
 API = "https://www.wikidata.org/w/api.php"
 DEFAULT_CACHE = Path(__file__).resolve().parents[1] / ".cache" / "wikidata"
@@ -85,7 +85,7 @@ class WikidataClient:
         reason: str,
         retry_after: str | None = None,
         access_block: bool = False,
-    ) -> None:
+    ) -> NoReturn:
         now = time.time()
         failures = int(state.get("consecutive_failures", 0)) + 1
         delay = max(
@@ -138,10 +138,8 @@ class WikidataClient:
                     error.headers.get("Retry-After"),
                     access_block=error.code in {401, 403},
                 )
-                raise AssertionError("unreachable") from error
             except (OSError, ValueError) as error:
                 self._hold(state, f"network or response error: {type(error).__name__}")
-                raise AssertionError("unreachable") from error
             if "error" in data:
                 code = data["error"].get("code", "error")
                 if code in QUERY_ERRORS:

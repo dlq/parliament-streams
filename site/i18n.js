@@ -844,5 +844,22 @@ function supportedLocale(candidate) {
   return locales.find(([code]) => code.split("-")[0] === language)?.[0] ?? "en";
 }
 
-window.ParliamentStreamsI18n = { locales, localizedLabel, message, supportedLocale, translationCoverage };
+function readLocalePreference() {
+  try {
+    return localStorage.getItem("parliament-streams-locale");
+  } catch {
+    // Storage can be unavailable in private or local-file previews.
+    return null;
+  }
+}
+
+function writeLocalePreference(locale) {
+  try {
+    localStorage.setItem("parliament-streams-locale", locale);
+  } catch {
+    // The selected language still works for the current page and its links.
+  }
+}
+
+window.ParliamentStreamsI18n = { locales, localizedLabel, message, readLocalePreference, supportedLocale, translationCoverage, writeLocalePreference };
 })();

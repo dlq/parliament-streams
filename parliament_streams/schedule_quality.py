@@ -116,7 +116,9 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
             except ValueError:
                 reasons[index].add("invalid_timestamp")
                 continue
-            if end <= start:
+            # XMLTV writes whole seconds; a source interval must remain positive
+            # at that precision. Keep original instants for overlap assessment.
+            if end.replace(microsecond=0) <= start.replace(microsecond=0):
                 reasons[index].add("nonpositive_duration")
                 continue
             key = (start.isoformat(), end.isoformat(), event["title"].strip())
@@ -176,7 +178,7 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
         "events": total,
         "exportable": exported,
         "excluded": total - exported,
-        "channels_with_events": len(report["channels"]),
+        "channels_with_events": sum(row["events"] > 0 for row in channels),
         **{f"excluded_{reason}": count for reason, count in sorted(total_reasons.items())},
     }
     return ScheduleAssessment(report, exportable_events_by_channel)

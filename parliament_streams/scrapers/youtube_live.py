@@ -3,13 +3,14 @@
 from __future__ import annotations
 
 import re
-from collections.abc import Callable
 from datetime import UTC, datetime
 from html import unescape
 from urllib.parse import parse_qs, urlparse
 
 from .common import (
-    FetchRequest,
+    Fetcher as Fetcher,
+)
+from .common import (
     ParsedSchedule,
     ScheduleMetadata,
     ScraperSource,
@@ -37,8 +38,6 @@ SOURCE: ScraperSource = {
         "when a channel page does not expose a clear watch video."
     ),
 }
-
-Fetcher = Callable[[FetchRequest, int, int], str]
 
 VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 CANONICAL_RE = re.compile(

@@ -1,5 +1,29 @@
 # Changelog
 
+## 25 October — Code Audit And Data Product Contracts
+
+Removed unreachable UI styles/sort modes, an unused hash helper, unreachable
+Wikidata guards and six redundant or checkout-dependent tests. Consolidated JSON
+readers, report writing, review-route validation and four next-event parser
+assemblers while preserving their source-specific behavior. Fixed cleared
+catalogue crosswalks being revived by discovery, structured research-note
+rendering, opaque manifest detection, blocked-storage locale handling and the
+quality report's count of channels with actual events. Fractional schedule times
+are compared at XMLTV's whole-second precision, with collapsed ranges excluded.
+
+New schemas cover public inventory snapshots, supranational map context and EPG
+quality. Declared standard format dependencies enforce timestamps and
+international URLs instead of silently skipping checks; a bounded cache reuses
+only pure IRI parsing. Strict validation exposed two space-containing evidence
+links and one malformed historical VOD seed, repaired in maintained inputs while
+retaining original research evidence.
+
+CI checks an offline export bundle; Pages checks its actual generated bundle
+before publication. Cross-product checks cover playlist aliases and source IDs,
+XMLTV structure/times/content, reviewed feed mappings and quality counts. See
+[data validation and coverage](docs/data-validation.md) for schema, type and
+coverage boundaries.
+
 ## 25 October — Consistent Domain And Operation Names
 
 Reviewed tracked file names and handwritten Python/JavaScript names. Shared

@@ -9,12 +9,18 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from parliament_streams.inventory.projection import build_payload, load_object, safe_http_url
+from parliament_streams.catalogue import load_json_object
+from parliament_streams.inventory.projection import (
+    DIRECTORY_REPORT,
+    SERVICE_REGISTER_REPORT,
+    build_payload,
+    safe_http_url,
+)
 from parliament_streams.inventory.reviews import load_reviews
 
 ROOT = Path(__file__).resolve().parents[1]
-HISTORICAL = "reports/discovery/2026-10-24-current-validation-register.json"
-DIRECTORY = "reports/discovery/2026-10-24-national-chamber-inventory.json"
+HISTORICAL = SERVICE_REGISTER_REPORT
+DIRECTORY = DIRECTORY_REPORT
 DIMENSIONS = {
     "metadata": ["preferred_name", "current_activity", "institutional_route", "exact_identifiers"],
     "official_media": ["provider_designation", "chambers_and_rooms", "languages", "playback"],
@@ -189,7 +195,10 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="fail if the saved baseline is stale")
     args = parser.parse_args()
     reviews = (
-        [(path.resolve().relative_to(ROOT).as_posix(), load_object(path)) for path in args.review]
+        [
+            (path.resolve().relative_to(ROOT).as_posix(), load_json_object(path))
+            for path in args.review
+        ]
         if args.review is not None
         else load_reviews()
     )
@@ -197,17 +206,17 @@ def main() -> int:
     if reviewed_on is None:
         if not args.output.exists():
             parser.error("--reviewed-on is required for a new baseline")
-        reviewed_on = load_object(args.output)["reviewed_on"]
+        reviewed_on = load_json_object(args.output)["reviewed_on"]
     result = build_baseline(
-        load_object(ROOT / "data/discovery/institutions.json"),
-        load_object(ROOT / "data/channels.json"),
-        load_object(ROOT / DIRECTORY),
-        load_object(ROOT / HISTORICAL),
+        load_json_object(ROOT / "data/discovery/institutions.json"),
+        load_json_object(ROOT / "data/channels.json"),
+        load_json_object(ROOT / DIRECTORY),
+        load_json_object(ROOT / HISTORICAL),
         reviews,
         reviewed_on,
     )
     if args.check:
-        if not args.output.exists() or load_object(args.output) != result:
+        if not args.output.exists() or load_json_object(args.output) != result:
             parser.error("service baseline is stale; regenerate it with all maintained reviews")
         print("Current service baseline matches catalogue, inventory and all review reports")
         return 0

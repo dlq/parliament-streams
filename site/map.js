@@ -1,5 +1,5 @@
 (() => {
-const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
+const { locales, localizedLabel, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount, subnationalParents, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
@@ -24,7 +24,7 @@ const fallbackCountryNames = {
 };
 
 const query = new URLSearchParams(window.location.search);
-const locale = supportedLocale(query.get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
+const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
 const state = { channels: [], supranational: [], geometry: null, subnationalGeometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null };
 const elements = {
   map: document.querySelector("#world-map"),
@@ -604,7 +604,7 @@ async function init() {
   elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
   elements.locale.value = state.locale;
   elements.locale.addEventListener("change", () => {
-    localStorage.setItem("parliament-streams-locale", elements.locale.value);
+    writeLocalePreference(elements.locale.value);
     const params = new URLSearchParams(window.location.search);
     params.set("lang", elements.locale.value);
     window.location.search = params.toString();

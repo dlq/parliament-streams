@@ -169,8 +169,13 @@ def _static_manifests(report: dict[str, Any], evidence: str) -> Iterable[Manifes
             url = result.get("url")
             if result.get("status") != "ok" or not isinstance(url, str):
                 continue
-            kind: ManifestKind = "dash" if ".mpd" in url.lower() else "hls"
-            yield country_name, tier, kind, url, evidence
+            kind = result.get("kind")
+            if kind not in {"hls", "dash"}:
+                try:
+                    kind = "dash" if urlsplit(url).path.lower().endswith(".mpd") else "hls"
+                except ValueError:
+                    continue
+            yield country_name, tier, cast(ManifestKind, kind), url, evidence
 
 
 def _browser_manifests(report: dict[str, Any], evidence: str) -> Iterable[ManifestObservation]:

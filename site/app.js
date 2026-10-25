@@ -1,7 +1,7 @@
 (() => {
 // The deployed Pages artifact places its JSON beside this script; local server
 // previews serve the repository's data directory one level above site/.
-const { locales, localizedLabel, message, supportedLocale } = window.ParliamentStreamsI18n;
+const { locales, localizedLabel, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
 const { message: mapMessage, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
@@ -56,7 +56,7 @@ const heroImages = [
   },
 ];
 
-const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
+const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? readLocalePreference() ?? navigator.language);
 const state = { channels: [], fallbacks: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
 const elements = {
   stats: document.querySelector("#catalogue-stats"),
@@ -389,7 +389,7 @@ function applyStaticTranslations() {
 }
 function setLocale(locale) {
   state.locale = supportedLocale(locale);
-  localStorage.setItem("parliament-streams-locale", state.locale);
+  writeLocalePreference(state.locale);
   const url = new URL(window.location.href);
   url.searchParams.set("lang", state.locale);
   history.replaceState({}, "", url);
@@ -482,16 +482,13 @@ function sentenceCase(value) {
   return phrase.charAt(0).toUpperCase() + phrase.slice(1);
 }
 function sortValue(channel, key) {
-  return {
-    source: channel.name,
-    jurisdiction: jurisdictionName(channel.country_or_region),
-    format: label(channel.source_type),
-    mode: playbackModeSortValue(channel),
-    language: channel.language,
-    access: label(channel.technical_status),
-    playback: label(channel.playback_policy),
-    use: label(channel.permission.status),
-  }[key];
+  switch (key) {
+    case "source": return channel.name;
+    case "jurisdiction": return jurisdictionName(channel.country_or_region);
+    case "mode": return playbackModeSortValue(channel);
+    case "language": return channel.language;
+    default: return undefined;
+  }
 }
 function renderSortHeaders() {
   elements.sortHeaders.forEach((header) => {
@@ -509,14 +506,14 @@ function renderSortHeaders() {
 function optionValues(key) { return [...new Set(state.channels.map((channel) => channel[key]))].sort(); }
 function filteredSources() {
   const search = normalizeSearchText(elements.search.value.trim());
+  const collator = new Intl.Collator(state.locale, { numeric: true, sensitivity: "base" });
   return state.channels.filter((channel) => {
     const searchable = normalizeSearchText([channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), countrySearchTerms(state.locale, channel), channel.language].join(" "));
     return (!search || searchable.includes(search))
       && (!elements.level.value || channel.jurisdiction_level === elements.level.value)
       && (!elements.format.value || channel.source_type === elements.format.value);
   }).sort((left, right) => {
-    const result = new Intl.Collator(state.locale, { numeric: true, sensitivity: "base" })
-      .compare(sortValue(left, state.sort.key), sortValue(right, state.sort.key));
+    const result = collator.compare(sortValue(left, state.sort.key), sortValue(right, state.sort.key));
     return state.sort.direction === "ascending" ? result : -result;
   });
 }
@@ -668,7 +665,6 @@ function localEventTime(start, fallback) {
 function programmeMarkup(channel) {
   const schedule = state.schedules[channel.id];
   if (!schedule) return "";
-  const record = schedule;
   const programmeLine = (labelKey, title, time, start, url, language, location) => {
     const titleMarkup = url
       ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer"${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)} ↗</a>`
@@ -676,31 +672,29 @@ function programmeMarkup(channel) {
     const metadata = [localEventTime(start, time), languageDisplayName(language), location].filter(Boolean).map(escapeHtml).join(" · ");
     return `<span class="programme-line"><strong lang="${state.locale}">${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <span class="programme-time">· ${metadata}</span>` : ""}</span>`;
   };
-  const current = record.current_event_title
+  const current = schedule.current_event_title
     ? programmeLine(
       "nowProgramme",
-      record.current_event_title,
-      record.current_event_time,
-      record.current_event_start,
-      record.current_event_url,
-      record.current_event_language,
-      record.current_event_location,
+      schedule.current_event_title,
+      schedule.current_event_time,
+      schedule.current_event_start,
+      schedule.current_event_url,
+      schedule.current_event_language,
+      schedule.current_event_location,
     )
     : "";
-  const next = record.next_event_title
+  const next = schedule.next_event_title
     ? programmeLine(
       "nextProgramme",
-      record.next_event_title,
-      record.next_event_time,
-      record.next_event_start,
-      record.next_event_url,
-      record.next_event_language,
-      record.next_event_location,
+      schedule.next_event_title,
+      schedule.next_event_time,
+      schedule.next_event_start,
+      schedule.next_event_url,
+      schedule.next_event_language,
+      schedule.next_event_location,
     )
     : "";
-  const freshness = schedule
-    ? `<span class="detail-subtitle programme-fetch-status">${t("scheduleCollected", { date: escapeHtml(new Date(schedule.fetched_at).toLocaleString(state.locale)) })}</span>`
-    : "";
+  const freshness = `<span class="detail-subtitle programme-fetch-status">${t("scheduleCollected", { date: escapeHtml(new Date(schedule.fetched_at).toLocaleString(state.locale)) })}</span>`;
   return `<div class="programme-record" aria-live="polite">
     ${current}
     ${next}${freshness}

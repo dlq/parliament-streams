@@ -62,7 +62,9 @@ def fetch(url: str, timeout: int) -> dict[str, Any]:
     return result
 
 
-def manifest_kind(url: str) -> str:
+def manifest_kind(url: str, explicit_kind: str | None = None) -> str:
+    if explicit_kind in {"hls", "dash"}:
+        return explicit_kind
     return "dash" if urlparse(url).path.lower().endswith(".mpd") else "hls"
 
 
@@ -84,14 +86,17 @@ def check_discovery_target(kind: str, url: str, timeout: int) -> dict[str, Any]:
         result.update(status="error", note=fetched["error"])
         return result
 
-    if kind in {"hls", "discovered_manifest"} and manifest_kind(url) == "hls":
+    expected_manifest = (
+        manifest_kind(url, kind) if kind in {"hls", "dash", "discovered_manifest"} else None
+    )
+    if expected_manifest == "hls":
         if looks_like_hls(body):
             result.update(status="ok", note="HLS manifest detected")
         else:
             result.update(status="warning", note="Reachable but not HLS manifest")
         return result
 
-    if kind in {"dash", "discovered_manifest"} and manifest_kind(url) == "dash":
+    if expected_manifest == "dash":
         if looks_like_dash(body):
             result.update(status="ok", note="DASH MPD detected")
         else:
@@ -171,12 +176,14 @@ def check_country(
     open_hls = sum(
         1
         for result in results
-        if result.get("status") == "ok" and manifest_kind(result.get("url", "")) == "hls"
+        if result.get("status") == "ok"
+        and manifest_kind(result.get("url", ""), result.get("kind")) == "hls"
     )
     open_dash = sum(
         1
         for result in results
-        if result.get("status") == "ok" and manifest_kind(result.get("url", "")) == "dash"
+        if result.get("status") == "ok"
+        and manifest_kind(result.get("url", ""), result.get("kind")) == "dash"
     )
 
     return {

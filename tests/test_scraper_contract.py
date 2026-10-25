@@ -33,10 +33,6 @@ class ScraperContractTests(unittest.TestCase):
         registry = importlib.import_module("parliament_streams.scrapers")
         self.assertEqual(set(self.scraper_ids), set(registry.SCRAPERS))
 
-    def test_scraper_cli_is_importable(self):
-        module = importlib.import_module("parliament_streams.scrapers.__main__")
-        self.assertTrue(hasattr(module, "main"))
-
 
 if __name__ == "__main__":
     unittest.main()

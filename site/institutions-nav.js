@@ -2,20 +2,12 @@
   const links = document.querySelectorAll("#nav-institutions, #map-nav-institutions, #schedule-nav-institutions");
   if (!links.length) return;
 
-  const { supportedLocale } = window.ParliamentStreamsI18n;
+  const { readLocalePreference, supportedLocale } = window.ParliamentStreamsI18n;
   const { message } = window.ParliamentStreamsInstitutionsI18n;
   const selector = document.querySelector("#locale-select");
 
-  function storedLocale() {
-    try {
-      return localStorage.getItem("parliament-streams-locale");
-    } catch {
-      return null;
-    }
-  }
-
   function updateInstitutionNavigationLinks() {
-    const locale = supportedLocale(selector?.value || new URLSearchParams(window.location.search).get("lang") || storedLocale() || navigator.language);
+    const locale = supportedLocale(selector?.value || new URLSearchParams(window.location.search).get("lang") || readLocalePreference() || navigator.language);
     links.forEach((link) => {
       const label = message(locale, "title");
       link.textContent = label;

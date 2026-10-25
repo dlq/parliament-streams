@@ -23,7 +23,12 @@ from urllib.parse import urldefrag, urlsplit
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from parliament_streams.inventory.projection import exact_chamber_catalogue_ids  # noqa: E402
+from parliament_streams.catalogue import load_json_object  # noqa: E402
+from parliament_streams.inventory.projection import (  # noqa: E402
+    DIRECTORY_REPORT,
+    SERVICE_REGISTER_REPORT,
+    exact_chamber_catalogue_ids,
+)
 from parliament_streams.inventory.reviews import load_reviews, reviewed_routes  # noqa: E402
 from parliament_streams.inventory.sources import (  # noqa: E402
     derive_directory_sources,
@@ -38,8 +43,8 @@ from tools.institution_inventory_fetch import HostGate, fetch_source  # noqa: E4
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "data/discovery/institutions.json"
-DIRECTORY = ROOT / "reports/discovery/2026-10-24-national-chamber-inventory.json"
-SERVICES = ROOT / "reports/discovery/2026-10-24-current-validation-register.json"
+DIRECTORY = ROOT / DIRECTORY_REPORT
+SERVICES = ROOT / SERVICE_REGISTER_REPORT
 DECISIONS = ROOT / "data/discovery/inventory-review-decisions.json"
 USER_AGENT = "ParliamentStreamsInventoryReview/1.0 (+https://github.com/dlq/parliament-streams)"
 IPU_SOURCE_ID = "ipu-national-chambers"
@@ -81,13 +86,6 @@ LEGISLATURE_WORDS = re.compile(
     r"संसद|विधान|مجلس|כנסת|council of states",
     re.IGNORECASE,
 )
-
-
-def load_object(path: Path) -> dict[str, Any]:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict):
-        raise ValueError(f"{path}: expected a JSON object")
-    return data
 
 
 def digest(value: Any) -> str:
@@ -1030,14 +1028,16 @@ def main() -> int:
         parser.error("timeout/size/stale-days must be positive, workers 1–12, limit nonnegative")
     try:
         if args.validate_baseline:
-            validate_baseline(load_object(args.validate_baseline))
+            validate_baseline(load_json_object(args.validate_baseline))
             return 0
-        inventory = load_object(args.inventory)
-        directory = load_object(args.directory)
-        services = load_object(args.service_register)
-        decisions = load_object(args.decisions)
+        inventory = load_json_object(args.inventory)
+        directory = load_json_object(args.directory)
+        services = load_json_object(args.service_register)
+        decisions = load_json_object(args.decisions)
         decision_ids(decisions)
-        baseline = load_object(args.baseline) if args.baseline and args.baseline.exists() else None
+        baseline = (
+            load_json_object(args.baseline) if args.baseline and args.baseline.exists() else None
+        )
         if baseline is not None:
             validate_baseline(baseline)
         today = datetime.now(UTC).date()
@@ -1046,7 +1046,7 @@ def main() -> int:
             services,
             today.isoformat(),
             load_reviews(),
-            load_object(ROOT / "data/channels.json"),
+            load_json_object(ROOT / "data/channels.json"),
             directory,
         )
         if args.validate_inputs:

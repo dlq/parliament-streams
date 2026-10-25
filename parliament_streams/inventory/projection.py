@@ -2,13 +2,13 @@
 
 from __future__ import annotations
 
-import json
 import re
 from datetime import date
-from pathlib import Path, PurePosixPath
+from pathlib import PurePosixPath
 from typing import Any
 from urllib.parse import quote, urlsplit
 
+from parliament_streams.data_contracts import require_json_schema
 from parliament_streams.inventory.reviews import (
     review_notes_by_id,
     review_reports_by_id,
@@ -27,14 +27,6 @@ AUTHORITY_STATUSES = {
 }
 # Taiwan has an own-institution directory entry rather than an IPU country record.
 COUNTRY_CODE_OVERRIDES = {"Taiwan": "TW"}
-
-
-def load_object(path: Path) -> dict[str, Any]:
-    """Read a source object, keeping malformed input out of the published snapshot."""
-    value = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(value, dict):
-        raise ValueError(f"{path}: expected a JSON object")
-    return value
 
 
 def safe_http_url(value: Any) -> str | None:
@@ -275,7 +267,7 @@ def build_payload(
             }
         )
     records.sort(key=lambda row: (row["country"], row["name"].casefold(), row["id"]))
-    return {
+    payload = {
         "reviewed_on": inventory["reviewed_on"],
         "countries": countries,
         "records": records,
@@ -288,3 +280,5 @@ def build_payload(
             "catalogue_links_do_not_certify_current_playback_or_rights": True,
         },
     }
+    require_json_schema(payload, "institution-site-data.schema.json", label="institution site data")
+    return payload

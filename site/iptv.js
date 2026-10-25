@@ -54,11 +54,11 @@
   for (const [locale, pack] of Object.entries(window.ParliamentStreamsExtraLocales ?? {})) translations[locale] = pack.iptv;
   const coverage = (locale) => allKeys.filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
   window.ParliamentStreamsIptvI18n = { coverage };
-  const { supportedLocale } = window.ParliamentStreamsI18n;
+  const { readLocalePreference, supportedLocale } = window.ParliamentStreamsI18n;
   const urls = ['stable-hls.m3u', 'validated-hls.m3u', 'epg.xml'].map((name) => `https://dlq.ca/parliament-streams/data/${name}`);
   const escape = (text) => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
   function render() {
-    const locale = supportedLocale(document.querySelector('#locale-select').value || new URLSearchParams(location.search).get('lang') || localStorage.getItem('parliament-streams-locale') || navigator.language);
+    const locale = supportedLocale(document.querySelector('#locale-select').value || new URLSearchParams(location.search).get('lang') || readLocalePreference() || navigator.language);
     const messages = translations[locale] ?? translations.en;
     hosts.forEach((host) => {
       const open = host.querySelector('details')?.open ?? false;

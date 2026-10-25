@@ -8,6 +8,36 @@ from parliament_streams.models import Catalogue
 
 
 class DiscoveryFindingsTests(unittest.TestCase):
+    def test_static_findings_preserve_explicit_formats_before_legacy_path_inference(self) -> None:
+        cases = [
+            ("dash", "https://example.test/opaque", "dash"),
+            ("hls", "https://example.test/conflicting.mpd", "hls"),
+            ("dash", "https://example.test/conflicting.m3u8", "dash"),
+            (None, "https://example.test/legacy.m3u8?fallback=other.mpd", "hls"),
+            ("discovered_manifest", "https://example.test/legacy.MPD?session=1", "dash"),
+        ]
+        static = {
+            "tier": "tier1",
+            "countries": [
+                {
+                    "country": "Example",
+                    "results": [
+                        {"status": "ok", "kind": kind, "url": url} for kind, url, _expected in cases
+                    ],
+                }
+            ],
+        }
+        report = build_discovery_findings(
+            cast(Catalogue, {"channels": []}),
+            [("static.json", static)],
+            [],
+            checked_at="2026-10-25T00:00:00Z",
+        )
+        self.assertEqual(
+            {row["url"]: row["kind"] for row in report["findings"]},
+            {url: expected for _kind, url, expected in cases},
+        )
+
     def test_reports_catalogued_and_review_manifests_without_duplicates(self) -> None:
         catalogue = cast(
             Catalogue,

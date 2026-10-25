@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dlq/parliament-streams/schema/supranational.schema.json",
+  "title": "Parliament Streams supranational map context",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_on", "description", "organizations"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_on": { "type": "string", "format": "date" },
+    "description": { "$ref": "#/$defs/text" },
+    "organizations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "catalogue_jurisdiction", "name", "short_name",
+          "relationship_label", "relationship_label_plural", "flag",
+          "member_country_codes", "source_url", "checked_on"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "catalogue_jurisdiction": { "$ref": "#/$defs/text" },
+          "name": { "$ref": "#/$defs/text" },
+          "short_name": { "$ref": "#/$defs/text" },
+          "relationship_label": { "$ref": "#/$defs/text" },
+          "relationship_label_plural": { "$ref": "#/$defs/text" },
+          "flag": { "type": "string", "pattern": "^assets/flags/[a-z0-9][a-z0-9-]*\\.svg$" },
+          "member_country_codes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+          },
+          "source_url": { "type": "string", "format": "iri", "pattern": "^https://" },
+          "checked_on": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "text": { "type": "string", "minLength": 1, "pattern": "\\S" }
+  }
+}

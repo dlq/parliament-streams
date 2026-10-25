@@ -11,7 +11,9 @@ from .catalogue import (
     DEFAULT_FALLBACKS_PATH,
     load_catalogue,
     load_fallbacks,
+    load_json_object,
 )
+from .data_contracts import require_json_schema
 from .models import Catalogue, FallbackCatalogue
 
 DEFAULT_SITE_DATA_PATH = Path(__file__).resolve().parents[1] / "site" / "catalogue-data.js"
@@ -22,17 +24,11 @@ SCHEDULE_ASSIGNMENT = "window.PARLIAMENT_STREAMS_SCHEDULES = "
 
 def load_supranational(path: Path = DEFAULT_SUPRANATIONAL_PATH) -> dict[str, Any]:
     """Load the map's supranational membership context."""
-    value = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(value, dict):
-        raise ValueError(f"Expected a JSON object in {path}")
-    return value
-
-
-def load_schedules(path: Path = DEFAULT_SCHEDULES_PATH) -> dict[str, Any]:
-    """Load the retained schedule snapshot used by local file previews."""
-    value = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(value, dict):
-        raise ValueError(f"Expected a JSON object in {path}")
+    value = load_json_object(path)
+    require_json_schema(value, "supranational.schema.json", label="supranational map context")
+    organizations = value["organizations"]
+    if len({item["id"] for item in organizations}) != len(organizations):
+        raise ValueError("Supranational organization IDs must be unique")
     return value
 
 
@@ -40,7 +36,7 @@ def load_optional_schedules(
     path: Path = DEFAULT_SCHEDULES_PATH,
 ) -> dict[str, Any] | None:
     """Load a generated schedule snapshot when the current checkout has one."""
-    return load_schedules(path) if path.exists() else None
+    return load_json_object(path) if path.exists() else None
 
 
 def render_site_data_payload(
@@ -49,18 +45,17 @@ def render_site_data_payload(
     supranational: dict[str, Any] | None = None,
     schedules: dict[str, Any] | None = None,
 ) -> str:
-    payload = json.dumps(catalogue, ensure_ascii=False, indent=2)
-    content = f"window.PARLIAMENT_STREAMS_CATALOGUE = {payload};\n"
-    if fallbacks is not None:
-        fallback_payload = json.dumps(fallbacks, ensure_ascii=False, indent=2)
-        content += f"window.PARLIAMENT_STREAMS_FALLBACKS = {fallback_payload};\n"
-    if supranational is not None:
-        supranational_payload = json.dumps(supranational, ensure_ascii=False, indent=2)
-        content += f"window.PARLIAMENT_STREAMS_SUPRANATIONAL = {supranational_payload};\n"
-    if schedules is not None:
-        schedule_payload = json.dumps(schedules, ensure_ascii=False, indent=2)
-        content += f"window.PARLIAMENT_STREAMS_SCHEDULES = {schedule_payload};\n"
-    return content
+    datasets = (
+        ("CATALOGUE", catalogue),
+        ("FALLBACKS", fallbacks),
+        ("SUPRANATIONAL", supranational),
+        ("SCHEDULES", schedules),
+    )
+    return "".join(
+        f"window.PARLIAMENT_STREAMS_{name} = {json.dumps(value, ensure_ascii=False, indent=2)};\n"
+        for name, value in datasets
+        if value is not None
+    )
 
 
 def render_site_data(

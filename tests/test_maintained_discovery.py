@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import copy
+import io
 import json
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from parliament_streams.catalogue import load_json_object
 from parliament_streams.inventory.reviews import (
     ROOT,
     load_reviews,
@@ -17,6 +19,7 @@ from parliament_streams.inventory.reviews import (
     reviewed_routes,
 )
 from tools.build_discovery_targets import build_targets
+from tools.summarize_discovery_audit import main as summarize_main
 from tools.summarize_discovery_audit import network_coverage
 from tools.validate_democracy_tier_static import check_country, run
 
@@ -149,6 +152,65 @@ class MaintainedDiscoveryTests(unittest.TestCase):
         targets, coverage = build_targets(*source, "2026-10")
         self.assertIn("catalogue", targets)
         self.assertEqual(coverage["counts"]["catalogue_records_with_page_routes"], 2)
+
+    def test_current_crosswalk_can_clear_a_historical_catalogue_association(self):
+        inventory, catalogue, historical, watchlists, _ = inputs()
+        inventory["records"][1]["catalogue_crosswalk"] = {"catalogue_ids": []}
+        historical["eligible_bodies"] = [{"body_id": "child", "catalogue_ids": ["service"]}]
+        _, coverage = build_targets(inventory, catalogue, historical, watchlists, [], "2026-10")
+        source = next(
+            row
+            for row in coverage["sources"]
+            if row["url"] == catalogue["channels"][0]["official_url"]
+        )
+        self.assertNotIn("child", source["record_ids"])
+        self.assertIn("child", coverage["identity_source_gaps"])
+        self.assertEqual(coverage["counts"]["catalogue_records_with_page_routes"], 1)
+
+    def test_summary_uses_one_snapshot_read_for_each_evidence_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            url = "https://assembly.ca/watch"
+            documents = {
+                "static": {
+                    "countries": [
+                        {
+                            "country": "Canada",
+                            "results": [{"kind": "official_page", "url": url, "status": "page_ok"}],
+                        }
+                    ]
+                },
+                "browser": {
+                    "countries": [],
+                    "pages": [{"page_url": url, "page_status": 200, "validations": []}],
+                },
+                "coverage": {
+                    "sources": [{"url": url, "record_ids": ["one"]}],
+                    "identity_source_gaps": [],
+                },
+                "decisions": {"decision_version": 1, "decisions": []},
+                "page-decisions": {"decision_version": 1, "decisions": []},
+            }
+            arguments = ["summarize-discovery"]
+            for name, document in documents.items():
+                path = root / f"{name}.json"
+                path.write_text(json.dumps(document), encoding="utf-8")
+                arguments.extend([f"--{name}", str(path)])
+            output = root / "findings.json"
+            arguments.extend(["--output", str(output)])
+            with (
+                patch("sys.argv", arguments),
+                patch("sys.stdout", io.StringIO()),
+                patch(
+                    "tools.summarize_discovery_audit.load_json_object", wraps=load_json_object
+                ) as load,
+            ):
+                self.assertEqual(summarize_main(), 0)
+            for name in ("static", "browser"):
+                reads = [call.args[0] for call in load.call_args_list]
+                self.assertEqual(reads.count(root / f"{name}.json"), 1)
+            result = load_json_object(output)
+            self.assertEqual(result["coverage"]["identity_checks"][0]["static_successful_urls"], 1)
 
     def test_monthly_rotation_changes_order_without_dropping_targets(self):
         first, _ = build_targets(*inputs(), "2026-10")

@@ -5,8 +5,6 @@
   const data = window.PARLIAMENT_STREAMS_INSTITUTIONS;
   const query = new URLSearchParams(window.location.search);
   const byId = (id) => document.getElementById(id);
-  let storedLocale;
-  try { storedLocale = localStorage.getItem("parliament-streams-locale"); } catch { /* Private previews can disable storage. */ }
   const statuses = {
     eligible_legislature: "eligible",
     specific_authority_evidence_hold: "unresolved",
@@ -14,7 +12,7 @@
     historical_institution_superseded: "historical",
   };
   const state = {
-    locale: shared.supportedLocale(query.get("lang") ?? storedLocale ?? navigator.language),
+    locale: shared.supportedLocale(query.get("lang") ?? shared.readLocalePreference() ?? navigator.language),
     search: query.get("q") ?? "",
     country: query.get("country") ?? "",
     status: Object.hasOwn(statuses, query.get("status")) || query.get("status") === "all" ? query.get("status") : "default",
@@ -104,6 +102,24 @@
     try { history.replaceState(null, "", url); } catch { /* file previews may disallow history changes. */ }
   }
 
+  function reviewScopeNote(scope) {
+    const structured = scope !== null && typeof scope === "object" && !Array.isArray(scope);
+    const note = element(structured ? "dl" : "p", "institution-service-scope");
+    note.lang = "en";
+    if (!structured) {
+      note.textContent = String(scope);
+      return note;
+    }
+    for (const [key, value] of Object.entries(scope)) {
+      const label = key.replaceAll("_", " ");
+      note.append(
+        element("dt", "", label.charAt(0).toUpperCase() + label.slice(1)),
+        element("dd", "", typeof value === "string" ? value : JSON.stringify(value)),
+      );
+    }
+    return note;
+  }
+
   function evidence(row) {
     const disclosure = element("details", "institution-evidence");
     disclosure.append(element("summary", "", message("details")));
@@ -132,11 +148,7 @@
         stage.lang = "en";
         body.append(stage);
         for (const followup of service.followups ?? []) {
-          if (followup.scope) {
-            const scope = element("p", "institution-service-scope", followup.scope);
-            scope.lang = "en";
-            body.append(scope);
-          }
+          if (followup.scope) body.append(reviewScopeNote(followup.scope));
           if (followup.unresolved?.length) {
             body.append(element("h4", "", message("missingEvidence")));
             const gaps = element("ul", "institution-service-gaps");
@@ -287,7 +299,7 @@
   byId("institution-status").addEventListener("change", (event) => { state.status = event.target.value; openCountries = new Set(); updateUrl(); render(); });
   byId("locale-select").addEventListener("change", (event) => {
     state.locale = event.target.value;
-    try { localStorage.setItem("parliament-streams-locale", state.locale); } catch { /* Keep the selected language for this page. */ }
+    shared.writeLocalePreference(state.locale);
     updateUrl(); localize(); render();
   });
   byId("institution-clear").addEventListener("click", () => {
