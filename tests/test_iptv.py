@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 
 from parliament_streams import cli
 from parliament_streams.catalogue import load_catalogue
-from parliament_streams.iptv import hls_channels, render_playlist, render_xmltv
+from parliament_streams.iptv import render_playlist, render_xmltv, select_iptv_hls_channels
 from parliament_streams.schedule_collection import ScheduleSnapshot
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,7 +33,7 @@ class IPTVTests(unittest.TestCase):
         )
 
     def test_selection_respects_playback_rights_and_stability(self):
-        self.assertEqual(len(hls_channels(self.catalogue)), 1)
+        self.assertEqual(len(select_iptv_hls_channels(self.catalogue)), 1)
         for field, value in [
             ("availability", "event_based"),
             ("stability_risk", "high"),
@@ -43,12 +43,16 @@ class IPTVTests(unittest.TestCase):
         ]:
             changed = copy.deepcopy(self.catalogue)
             changed["channels"][0][field] = value
-            self.assertEqual(hls_channels(changed), [])
+            self.assertEqual(select_iptv_hls_channels(changed), [])
         self.channel["availability"] = "sitting_only"
-        self.assertEqual(len(hls_channels(self.catalogue, include_event_based=True)), 1)
+        self.assertEqual(
+            len(select_iptv_hls_channels(self.catalogue, include_non_always_on=True)), 1
+        )
         for status in ["no_third_party_reuse", "embed_only"]:
             self.channel["permission"]["status"] = status
-            self.assertEqual(hls_channels(self.catalogue, include_event_based=True), [])
+            self.assertEqual(
+                select_iptv_hls_channels(self.catalogue, include_non_always_on=True), []
+            )
 
     def test_playlist_utf8_attributes_and_injection(self):
         self.channel["name"] = 'Câmara "TV"\n#EXTINF: injected'
@@ -126,7 +130,7 @@ class IPTVTests(unittest.TestCase):
             self.assertTrue(
                 all(
                     c["id"] in all_ids
-                    for c in hls_channels(load_catalogue(ROOT / "data/channels.json"))
+                    for c in select_iptv_hls_channels(load_catalogue(ROOT / "data/channels.json"))
                 )
             )
             for name in ("stable-hls", "validated-hls"):

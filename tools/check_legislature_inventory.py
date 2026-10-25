@@ -42,7 +42,7 @@ DIRECTORY = ROOT / "reports/discovery/2026-10-24-national-chamber-inventory.json
 SERVICES = ROOT / "reports/discovery/2026-10-24-current-validation-register.json"
 DECISIONS = ROOT / "data/discovery/inventory-review-decisions.json"
 USER_AGENT = "ParliamentStreamsInventoryReview/1.0 (+https://github.com/dlq/parliament-streams)"
-IPU_ID = "ipu-national-chambers"
+IPU_SOURCE_ID = "ipu-national-chambers"
 REVIEW_ORDER = {
     kind: index
     for index, kind in enumerate(
@@ -96,7 +96,7 @@ def digest(value: Any) -> str:
     ).hexdigest()
 
 
-def fetch_url(value: str) -> str | None:
+def normalize_evidence_url(value: str) -> str | None:
     """Strip document fragments, preserving significant paths and query parameters."""
     return safe_public_url(urldefrag(value)[0])
 
@@ -117,7 +117,7 @@ def plan_sources(
         # The reviewed dated API export is replaced with one current complete request.
         if urlsplit(url).hostname == "data.ipu.org" and "/data-explorer" in urlsplit(url).path:
             return
-        normalized = fetch_url(url)
+        normalized = normalize_evidence_url(url)
         key = "source-" + digest(normalized or url)[:20]
         source = sources.setdefault(
             key,
@@ -170,7 +170,7 @@ def plan_sources(
                 add(channels[channel_id]["official_url"], record["country"], key)
     return [
         {
-            "id": IPU_ID,
+            "id": IPU_SOURCE_ID,
             "url": ipu_api_url(today),
             "kind": "ipu",
             "countries": inventory["scope"]["countries"],
@@ -182,7 +182,7 @@ def plan_sources(
     ]
 
 
-def observation(
+def build_source_observation(
     source: dict[str, Any],
     fetched: dict[str, Any],
     previous: dict[str, Any] | None,
@@ -311,7 +311,7 @@ def compare_ipu(
                 finding(
                     "proposed_addition",
                     "National chamber not matched in reviewed IPU crosswalk",
-                    IPU_ID,
+                    IPU_SOURCE_ID,
                     external_id=code,
                     country_code=row["country_code"],
                     name=row["name"],
@@ -333,7 +333,7 @@ def compare_ipu(
                 finding(
                     "proposed_rename",
                     "National chamber directory name differs",
-                    IPU_ID,
+                    IPU_SOURCE_ID,
                     record_ids=[old["id"]],
                     external_id=code,
                     before=old["name"],
@@ -345,13 +345,13 @@ def compare_ipu(
             "source_published_institution_urls",
             reference.get("source_published_parliamentary_urls", []),
         )
-        old_urls = sorted({url for raw in published_urls if (url := fetch_url(raw))})
+        old_urls = sorted({url for raw in published_urls if (url := normalize_evidence_url(raw))})
         if row.get("website_urls_known", True) and sorted(row["website_urls"]) != old_urls:
             findings.append(
                 finding(
                     "directory_metadata_changed",
                     "National chamber website links differ",
-                    IPU_ID,
+                    IPU_SOURCE_ID,
                     record_ids=[old["id"]],
                     external_id=code,
                     field="website_urls",
@@ -370,7 +370,7 @@ def compare_ipu(
                 finding(
                     "activity_review",
                     "IPU suspension/activity flag differs",
-                    IPU_ID,
+                    IPU_SOURCE_ID,
                     record_ids=[old["id"]],
                     external_id=code,
                     before=before_suspended,
@@ -388,7 +388,7 @@ def compare_ipu(
                     finding(
                         "directory_metadata_changed",
                         f"IPU {label} differs",
-                        IPU_ID,
+                        IPU_SOURCE_ID,
                         record_ids=[old["id"]],
                         external_id=code,
                         field=field,
@@ -403,7 +403,7 @@ def compare_ipu(
                 finding(
                     "proposed_removal",
                     "Reviewed national chamber missing from complete IPU directory",
-                    IPU_ID,
+                    IPU_SOURCE_ID,
                     record_ids=[old["id"]],
                     external_id=code,
                     name=old["name"],
@@ -519,7 +519,9 @@ def compare_evidence(
     return findings
 
 
-def review_dates(inventory: dict[str, Any], today: date, stale_days: int) -> list[dict[str, Any]]:
+def stale_review_findings(
+    inventory: dict[str, Any], today: date, stale_days: int
+) -> list[dict[str, Any]]:
     groups: dict[tuple[str, str], list[str]] = {}
     for row in inventory["records"]:
         date_text = row.get(
@@ -582,8 +584,8 @@ def validate_baseline(baseline: dict[str, Any]) -> None:
             or not isinstance(row, dict)
             or row.get("source_id") != source_id
             or not re.fullmatch(r"[a-f0-9]{64}", row.get("fingerprint", ""))
-            or not fetch_url(row.get("url", ""))
-            or not fetch_url(row.get("final_url", ""))
+            or not normalize_evidence_url(row.get("url", ""))
+            or not normalize_evidence_url(row.get("final_url", ""))
             or not isinstance(row.get("links"), list)
             or not isinstance(row.get("chambers"), list)
         ):
@@ -593,7 +595,7 @@ def validate_baseline(baseline: dict[str, Any]) -> None:
             if (
                 not isinstance(item, dict)
                 or not isinstance(item.get("name"), str)
-                or not fetch_url(item.get("url", ""))
+                or not normalize_evidence_url(item.get("url", ""))
             ):
                 raise ValueError("Malformed directory link in prior inventory snapshot")
     seen: set[str] = set()
@@ -643,7 +645,7 @@ def proposal_resolved(
                     {
                         url
                         for raw in row.get("source_published_institution_urls", [])
-                        if (url := fetch_url(raw))
+                        if (url := normalize_evidence_url(raw))
                     }
                 )
                 == proposal.get("after")
@@ -686,10 +688,10 @@ def build_report(
         url
         for row in inventory["records"]
         for raw in row.get("primary_urls", []) + row.get("source_published_institution_urls", [])
-        if (url := fetch_url(raw))
+        if (url := normalize_evidence_url(raw))
     }
     known_urls |= {row["url"] for row in sources if row["record_ids"]}
-    findings: list[dict[str, Any]] = review_dates(inventory, today, stale_days)
+    findings: list[dict[str, Any]] = stale_review_findings(inventory, today, stale_days)
     successful = 0
     checks: list[dict[str, Any]] = []
     for source in sources:
@@ -705,7 +707,7 @@ def build_report(
         try:
             if not response.get("ok"):
                 raise ValueError(response.get("error", "Source unavailable"))
-            current = observation(source, response, previous, codes)
+            current = build_source_observation(source, response, previous, codes)
             if source["kind"] == "ipu":
                 findings.extend(compare_ipu(current, directory, inventory))
             elif previous:

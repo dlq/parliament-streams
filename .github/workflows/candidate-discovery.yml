@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   discover:
-    name: Tier 1 and Tier 2 candidate discovery
+    name: Discover viewing and programme source leads
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -53,7 +53,7 @@ jobs:
           uv run --locked python tools/build_discovery_targets.py \
             --output-dir reports/automated/candidate-discovery/targets
 
-      - name: Run static manifest discovery
+      - name: Check discovery targets over HTTP
         run: |
           for tier in tier1 tier2 catalogue; do
             uv run --locked python tools/validate_democracy_tier_static.py \
@@ -62,7 +62,7 @@ jobs:
               --timeout 12 --workers 8 --budget-seconds 360
           done
 
-      - name: Inspect official players in Chromium
+      - name: Inspect rendered source pages in Chromium
         run: >-
           node tools/deep_validate_browser.mjs
           --input reports/automated/candidate-discovery/targets/tier1-targets.json

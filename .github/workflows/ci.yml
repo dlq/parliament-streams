@@ -41,7 +41,7 @@ jobs:
       - name: Install site test dependencies
         run: npm ci
 
-      - name: Install accessibility test browser
+      - name: Install site-test browser
         run: npx playwright install --with-deps chromium
 
       - name: Check Python formatting
@@ -56,11 +56,11 @@ jobs:
       - name: Validate catalogue and candidate management rules
         run: make catalogue-validate candidates-validate
 
-      - name: Validate site accessibility
+      - name: Check site rendering, interactions and accessibility
         run: make accessibility-check
 
       - name: Verify JSON, research rules, history, site data, tests, and coverage
         run: >-
           make json-check fallbacks-validate discovery-targets-validate
           us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check
-          validation-history-check site-data-check institution-site-data-check compile coverage test-js
+          validation-history-check catalogue-site-data-check institution-site-data-check compile coverage test-js

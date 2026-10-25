@@ -104,7 +104,7 @@ function parseArgs(argv) {
   return args;
 }
 
-function isManifestUrl(url) {
+function looksLikeManifestUrl(url) {
   const lower = url.toLowerCase();
   return lower.includes(".m3u8") || lower.includes(".mpd");
 }
@@ -139,7 +139,7 @@ async function collectTargets(reportInputs, maxPages) {
   return targets;
 }
 
-async function validateManifest(url) {
+async function checkManifestFormat(url) {
   const started = Date.now();
   try {
     const response = await fetch(url, {
@@ -176,7 +176,7 @@ async function validateManifest(url) {
       content_type: contentType,
       final_url: response.url,
       elapsed_ms: Date.now() - started,
-      note: ok ? "Manifest validated" : "Fetched but body did not validate as manifest",
+      note: ok ? "Manifest format detected; playback not checked." : "HTTP response or body did not pass the manifest format check.",
     };
   } catch (error) {
     return {
@@ -214,7 +214,7 @@ async function inspectPage(browser, target, pageUrl, rules) {
   const errors = [];
 
   function record(url, source) {
-    if (isManifestUrl(url)) {
+    if (looksLikeManifestUrl(url)) {
       discovered.set(url, source);
     }
   }
@@ -223,7 +223,7 @@ async function inspectPage(browser, target, pageUrl, rules) {
   page.on("response", async (response) => {
     const url = response.url();
     const contentType = response.headers()["content-type"] ?? "";
-    if (isManifestUrl(url) || contentType.includes("mpegurl") || contentType.includes("dash+xml")) {
+    if (looksLikeManifestUrl(url) || contentType.includes("mpegurl") || contentType.includes("dash+xml")) {
       record(url, "response");
       responses.push({
         url,
@@ -275,7 +275,7 @@ async function inspectPage(browser, target, pageUrl, rules) {
 
   const validations = [];
   for (const [url, source] of [...discovered].slice(0, 10)) {
-    const validation = await validateManifest(url);
+    const validation = await checkManifestFormat(url);
     validations.push({ ...validation, discovery_source: source });
   }
 

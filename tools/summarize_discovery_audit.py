@@ -1,4 +1,4 @@
-"""Summarize validated discovery results that are absent from the catalogue."""
+"""Summarize manifest observations and viewing/programme leads for human review."""
 
 from __future__ import annotations
 

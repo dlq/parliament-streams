@@ -14,7 +14,7 @@
     }
   }
 
-  function render() {
+  function updateInstitutionNavigationLinks() {
     const locale = supportedLocale(selector?.value || new URLSearchParams(window.location.search).get("lang") || storedLocale() || navigator.language);
     links.forEach((link) => {
       const label = message(locale, "title");
@@ -27,7 +27,7 @@
     });
   }
 
-  render();
-  selector?.addEventListener("change", () => queueMicrotask(render));
-  window.addEventListener("pageshow", render);
+  updateInstitutionNavigationLinks();
+  selector?.addEventListener("change", () => queueMicrotask(updateInstitutionNavigationLinks));
+  window.addEventListener("pageshow", updateInstitutionNavigationLinks);
 })();

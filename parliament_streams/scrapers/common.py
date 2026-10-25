@@ -117,7 +117,7 @@ def parse_iso(value: str) -> datetime | None:
         return None
 
 
-def utc_event_start(value: datetime) -> str:
+def format_utc_timestamp(value: datetime) -> str:
     """Return an RFC 3339 UTC timestamp suitable for client-side localization."""
     return value.astimezone(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
 
@@ -159,7 +159,7 @@ def normalized_events(
                 (
                     channel_id,
                     title.casefold(),
-                    utc_event_start(event["start"]),
+                    format_utc_timestamp(event["start"]),
                     event.get("location", "").casefold(),
                 )
             )
@@ -170,7 +170,7 @@ def normalized_events(
             "identifier_kind": identifier_kind,
             "title": title,
             "status": _event_status(event, now),
-            "start": utc_event_start(event["start"]),
+            "start": format_utc_timestamp(event["start"]),
             "start_basis": event.get("start_basis", "source"),
         }
         if event.get("url"):
@@ -180,7 +180,7 @@ def normalized_events(
         if event.get("language"):
             record["language"] = event["language"]
         if event.get("end"):
-            record["end"] = utc_event_start(event["end"])
+            record["end"] = format_utc_timestamp(event["end"])
             record["end_basis"] = event.get("end_basis", "source")
         if source_timezone:
             record["source_timezone"] = source_timezone

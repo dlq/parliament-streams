@@ -45,8 +45,8 @@ SENSITIVE_NAMES = {
 ENCODED_COMPONENT = re.compile(r"(?:%[0-9a-fA-F]{2}|[A-Za-z0-9_~-])+")
 
 
-def secret_matches(text: str) -> list[str]:
-    """Return one type per recognized credential occurrence, never matched values."""
+def detect_secret_types(text: str) -> list[str]:
+    """Return one credential type per recognized occurrence, never matched values."""
     counts: Counter[str] = Counter()
     for _ in range(5):
         current = Counter(kind for kind, pattern in SECRET_PATTERNS for _ in pattern.finditer(text))
@@ -81,7 +81,7 @@ def _redact_patterns(text: str) -> str:
     return text
 
 
-def _sensitive_name(name: str) -> bool:
+def _is_sensitive_query_name(name: str) -> bool:
     # Decode names as well as values: some pages double-encode their query strings.
     for _ in range(4):
         decoded = unquote(name)
@@ -126,7 +126,7 @@ def _sanitize_url(value: str, depth: int) -> str:
     # urlsplit leaves credentials escaped in netloc. Never retain userinfo.
     netloc = parsed.netloc.rsplit("@", 1)[-1]
     query = [
-        (name, REDACTED if _sensitive_name(name) else sanitize_text(item, depth + 1))
+        (name, REDACTED if _is_sensitive_query_name(name) else sanitize_text(item, depth + 1))
         for name, item in parse_qsl(parsed.query, keep_blank_values=True)
     ]
     result = urlunsplit(

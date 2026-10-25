@@ -108,7 +108,9 @@ class ScheduleQualityTests(unittest.TestCase):
             row = result.report["channels"]["cpac-ca"]
             self.assertEqual(row["overlap_pairs"], 2)
             self.assertEqual(row["exclusions"]["overlapping_programme"], 3)
-            self.assertEqual([e["id"] for e in result.approved["cpac-ca"]], ["four"])
+            self.assertEqual(
+                [e["id"] for e in result.exportable_events_by_channel["cpac-ca"]], ["four"]
+            )
 
     def test_time_defects_duplicates_cancellation_and_empty_titles(self):
         events = [

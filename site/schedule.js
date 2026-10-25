@@ -10,13 +10,13 @@ const schedulesUrl = new URL("./data/schedules.json", scriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", scriptUrl);
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], schedules: {}, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", status: "" };
+const state = { channels: [], schedules: {}, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", listingFilter: "" };
 
 const flagAssets = window.ParliamentStreamsFlags;
 
 const elements = {
   jurisdiction: document.querySelector("#schedule-jurisdiction"),
-  status: document.querySelector("#schedule-status"),
+  listingFilter: document.querySelector("#schedule-status"),
   list: document.querySelector("#schedule-list"),
   results: document.querySelector("#schedule-results"),
   empty: document.querySelector("#schedule-empty"),
@@ -30,7 +30,7 @@ function st(key, values) { return scheduleMessage(state.locale, key, values); }
 function setText(id, value) { document.querySelector(`#${id}`).textContent = value; }
 function escapeHtml(value) { return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;"); }
 
-function canPlay(channel) {
+function isPlaybackEnabled(channel) {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }
 
@@ -65,7 +65,7 @@ function localEventTime(start, fallback) {
 
 function hasCurrent(schedule) { return !isUnavailableTitle(schedule.current_event_title); }
 function hasNext(schedule) { return !isUnavailableTitle(schedule.next_event_title); }
-function isLive(schedule) {
+function isScheduleMarkedLive(schedule) {
   return /\b(in progress|live)\b/i.test(schedule.current_event_status ?? "")
     || /\b(live now|ao vivo)\b/i.test(schedule.current_event_title ?? "")
     || /\b(live now|en direct|ao vivo)\b/i.test(schedule.current_event_time ?? "");
@@ -91,7 +91,7 @@ function eventMarkup(schedule, position) {
   const language = schedule[`${position}_event_language`];
   const metadata = [location].filter(Boolean).join(" · ");
   const languageAttribute = language ? ` lang="${escapeHtml(language)}"` : "";
-  return `${current && isLive(schedule) ? `<span class="programme-live">${escapeHtml(st("now"))}</span>` : ""}
+  return `${current && isScheduleMarkedLive(schedule) ? `<span class="programme-live">${escapeHtml(st("now"))}</span>` : ""}
     ${time ? `<span class="programme-time">${escapeHtml(time)}</span>` : ""}
     <strong class="programme-title"${languageAttribute}>${escapeHtml(title)}</strong>
     ${metadata ? `<span class="programme-meta">${escapeHtml(metadata)}</span>` : ""}`;
@@ -103,13 +103,13 @@ function visibleRows() {
     .filter(({ channel }) => channel)
     .filter(({ channel }) => !state.jurisdiction || channel.country_or_region === state.jurisdiction)
     .filter(({ channel, schedule }) => {
-      if (state.status === "current") return hasCurrent(schedule);
-      if (state.status === "next") return hasNext(schedule);
-      if (state.status === "playable") return canPlay(channel);
+      if (state.listingFilter === "current") return hasCurrent(schedule);
+      if (state.listingFilter === "next") return hasNext(schedule);
+      if (state.listingFilter === "playable") return isPlaybackEnabled(channel);
       return true;
     })
     .sort((left, right) => {
-      const liveDifference = Number(isLive(right.schedule)) - Number(isLive(left.schedule));
+      const liveDifference = Number(isScheduleMarkedLive(right.schedule)) - Number(isScheduleMarkedLive(left.schedule));
       if (liveDifference) return liveDifference;
       return jurisdictionName(left.channel).localeCompare(jurisdictionName(right.channel), state.locale)
         || left.channel.name.localeCompare(right.channel.name, state.locale);
@@ -126,24 +126,24 @@ function render() {
       <td><div class="schedule-channel${flag ? "" : " schedule-channel--no-flag"}">${flag ? `<img class="schedule-flag" src="${flag}" alt="">` : ""}<div><strong>${escapeHtml(channel.name)}</strong><span>${escapeHtml(jurisdictionName(channel))} · ${escapeHtml(channel.legislature)}</span>${schedule.stale ? `<span class="schedule-channel-stale">${escapeHtml(st("stale"))}</span>` : ""}</div></div></td>
       <td data-label="${escapeHtml(st("now"))}">${eventMarkup(schedule, "current")}</td>
       <td data-label="${escapeHtml(st("next"))}">${eventMarkup(schedule, "next")}</td>
-      <td><div class="schedule-actions">${canPlay(channel) ? `<a class="schedule-watch" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : ""}<a class="schedule-details" href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></div></td>
+      <td><div class="schedule-actions">${isPlaybackEnabled(channel) ? `<a class="schedule-watch" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : ""}<a class="schedule-details" href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></div></td>
     </tr>`;
   }).join("");
-  renderOfficialSchedules();
+  renderUnparsedScheduleLinks();
 }
 
-function officialScheduleSources(channel) {
+function unparsedScheduleSources(channel) {
   return channel.epg_sources.filter((source) => source.method === "GET"
     && source.scraper_status === "planned" && !/api|json|zip/i.test(source.kind));
 }
 
-function renderOfficialSchedules() {
+function renderUnparsedScheduleLinks() {
   // Calendars and dated-event indexes remain useful before an automated guide
   // parser exists. Keep these links separate from programme/now-next rows.
   const links = new Map();
   for (const channel of state.channels) {
     if (state.jurisdiction && channel.country_or_region !== state.jurisdiction) continue;
-    for (const source of officialScheduleSources(channel)) {
+    for (const source of unparsedScheduleSources(channel)) {
       if (!links.has(source.url)) links.set(source.url, { channel, url: source.url });
     }
   }
@@ -158,7 +158,7 @@ function renderOfficialSchedules() {
 
 function renderFilters() {
   const jurisdictions = [...new Set(state.channels
-    .filter((channel) => Object.hasOwn(state.schedules, channel.id) || officialScheduleSources(channel).length)
+    .filter((channel) => Object.hasOwn(state.schedules, channel.id) || unparsedScheduleSources(channel).length)
     .map((channel) => channel.country_or_region))]
     .sort((a, b) => localizedJurisdictionName(state.locale, a).localeCompare(localizedJurisdictionName(state.locale, b), state.locale));
   elements.jurisdiction.innerHTML = `<option value="">${escapeHtml(t("allJur"))}</option>${jurisdictions.map((name) => {
@@ -167,7 +167,7 @@ function renderFilters() {
   }).join("")}`;
   if (!jurisdictions.includes(state.jurisdiction)) state.jurisdiction = "";
   elements.jurisdiction.value = state.jurisdiction;
-  elements.status.innerHTML = `<option value="">${escapeHtml(st("allChannels"))}</option><option value="current">${escapeHtml(st("current"))}</option><option value="next">${escapeHtml(st("upcoming"))}</option><option value="playable">${escapeHtml(t("metricPlayable"))}</option>`;
+  elements.listingFilter.innerHTML = `<option value="">${escapeHtml(st("allChannels"))}</option><option value="current">${escapeHtml(st("current"))}</option><option value="next">${escapeHtml(st("upcoming"))}</option><option value="playable">${escapeHtml(t("metricPlayable"))}</option>`;
 }
 
 function applyTranslations() {
@@ -224,7 +224,7 @@ async function init() {
     applyTranslations();
     renderFilters();
     elements.jurisdiction.value = state.jurisdiction;
-    elements.status.value = state.status;
+    elements.listingFilter.value = state.listingFilter;
     renderFreshness();
     render();
   });
@@ -252,7 +252,7 @@ async function init() {
     history.replaceState({}, "", url);
     render();
   });
-  elements.status.addEventListener("change", () => { state.status = elements.status.value; render(); });
+  elements.listingFilter.addEventListener("change", () => { state.listingFilter = elements.listingFilter.value; render(); });
 }
 
 init().catch((error) => {

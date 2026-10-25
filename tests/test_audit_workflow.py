@@ -10,7 +10,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.build_audit_issue_plan import main, schedule_issue_plan
+from tools.build_schedule_issue_plan import build_schedule_issue_plan, main
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,10 +23,10 @@ class ScheduleIssuePolicyTests(unittest.TestCase):
             "cold-baseline-error": {"status": "error", "consecutive_failures": 0},
             "no-data": {"status": "empty", "consecutive_failures": 0},
         }
-        self.assertEqual(schedule_issue_plan({"sources": sources}), {"actions": []})
+        self.assertEqual(build_schedule_issue_plan({"sources": sources}), {"actions": []})
 
     def test_repeated_errors_open_and_confirmed_success_closes(self):
-        plan = schedule_issue_plan(
+        plan = build_schedule_issue_plan(
             {
                 "sources": {
                     "recovered": {"status": "ok", "consecutive_failures": 0},
@@ -56,7 +56,7 @@ class ScheduleIssuePolicyTests(unittest.TestCase):
             {"sources": {"one": {"status": "error", "consecutive_failures": 3, "error": []}}},
         ):
             with self.subTest(snapshot=snapshot), self.assertRaises(ValueError):
-                schedule_issue_plan(snapshot)
+                build_schedule_issue_plan(snapshot)
 
     def test_cli_writes_only_a_validated_plan(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -141,7 +141,7 @@ class AuditWorkflowControlFlowTests(unittest.TestCase):
 
     def test_schedule_issue_updates_consume_the_tested_policy_plan(self):
         body = self.steps["Update repeated schedule-source failure issues"]
-        self.assertIn("python tools/build_audit_issue_plan.py", body)
+        self.assertIn("python tools/build_schedule_issue_plan.py", body)
         self.assertIn("reports/automated/schedule-issue-plan.json", body)
         self.assertIn("'.actions[]", body)
         self.assertIn('[[ "$action" == "close" && -n "$number" ]]', body)

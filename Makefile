@@ -1,4 +1,4 @@
-.PHONY: verify research-secrets-check test test-python test-js test-browser coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check inventory-review validation-history validation-history-check site-data site-data-check institution-site-data institution-site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
+.PHONY: verify research-secrets-check test test-python test-js test-browser coverage json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check inventory-review validation-history validation-history-check catalogue-site-data catalogue-site-data-check site-data site-data-check institution-site-data institution-site-data-check compile format format-check lint type-check accessibility-check healthcheck links-audit epg-audit playback-policy-audit schedules site
 
 UV ?= uv
 UV_RUN ?= $(UV) run --locked --extra dev
@@ -6,7 +6,7 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check site-data-check institution-site-data-check format-check lint type-check compile coverage test-js accessibility-check
+verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check catalogue-site-data-check institution-site-data-check format-check lint type-check compile coverage test-js accessibility-check
 
 research-secrets-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/sanitize_research_evidence.py --check-tracked
@@ -60,11 +60,15 @@ validation-history:
 validation-history-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) parliament-streams validation-history-refresh --check
 
-site-data:
-	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_site_data.py
+catalogue-site-data:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_catalogue_site_data.py
 
-site-data-check:
-	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_site_data.py --check
+catalogue-site-data-check:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_catalogue_site_data.py --check
+
+site-data: catalogue-site-data
+
+site-data-check: catalogue-site-data-check
 
 institution-site-data:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_institution_site_data.py

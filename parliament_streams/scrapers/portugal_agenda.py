@@ -17,9 +17,9 @@ from .common import (
     ScheduleEvent,
     ScheduleMetadata,
     ScraperSource,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
-    utc_event_start,
 )
 
 INDEX_URL = "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx"
@@ -94,7 +94,7 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
         "current_event_time": None,
         "next_event_title": next_event["title"],
         "next_event_time": local_time_label(next_event["start"], "Europe/Lisbon"),
-        "next_event_start": utc_event_start(next_event["start"]),
+        "next_event_start": format_utc_timestamp(next_event["start"]),
         "confidence": "official_open_data_agenda",
     }
     schedule["events"] = normalized_events(

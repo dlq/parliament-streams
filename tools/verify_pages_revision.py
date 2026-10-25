@@ -1,4 +1,4 @@
-"""Fail closed unless current main has successful full CI and CodeQL for its exact SHA."""
+"""Verify that current main has successful full CI and CodeQL for its pinned SHA."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ class GateError(RuntimeError):
     """A revision cannot safely be published."""
 
 
-class API(Protocol):
+class GitHubReadAPI(Protocol):
     def get(self, path: str, parameters: dict[str, str] | None = None) -> dict[str, Any]: ...
 
 
@@ -54,7 +54,7 @@ class GitHubAPI:
 
 
 @dataclass
-class Verification:
+class RevisionVerification:
     pending: list[str]
     successful_runs: dict[str, int]
 
@@ -68,13 +68,15 @@ def validate_context(repository: str, sha: str, event: str, ref: str) -> None:
         raise GateError("Only trusted main push, schedule, or manual runs may publish")
 
 
-def require_current_main(api: API, repository: str, sha: str) -> None:
+def require_current_main(api: GitHubReadAPI, repository: str, sha: str) -> None:
     current = api.get(f"repos/{repository}/git/ref/heads/main")
     if current.get("object", {}).get("sha") != sha:
         raise GateError("Main has advanced or no longer identifies the pinned deployment revision")
 
 
-def workflow_runs(api: API, repository: str, workflow: str, sha: str) -> list[dict[str, Any]]:
+def workflow_runs(
+    api: GitHubReadAPI, repository: str, workflow: str, sha: str
+) -> list[dict[str, Any]]:
     runs: list[dict[str, Any]] = []
     for page in range(1, 11):
         data = api.get(
@@ -95,7 +97,7 @@ def workflow_runs(api: API, repository: str, workflow: str, sha: str) -> list[di
     raise GateError(f"Cannot establish the latest {workflow} run from its complete API history")
 
 
-def inspect_revision(api: API, repository: str, sha: str) -> Verification:
+def inspect_revision(api: GitHubReadAPI, repository: str, sha: str) -> RevisionVerification:
     require_current_main(api, repository, sha)
     pending: list[str] = []
     successful: dict[str, int] = {}
@@ -123,11 +125,11 @@ def inspect_revision(api: API, repository: str, sha: str) -> Verification:
     if not pending:
         # Close the API-read window as far as possible before publication.
         require_current_main(api, repository, sha)
-    return Verification(pending, successful)
+    return RevisionVerification(pending, successful)
 
 
 def wait_for_verification(
-    api: API,
+    api: GitHubReadAPI,
     repository: str,
     sha: str,
     *,
@@ -135,7 +137,7 @@ def wait_for_verification(
     interval: float = 20,
     clock: Callable[[], float] = time.monotonic,
     sleep: Callable[[float], None] = time.sleep,
-) -> Verification:
+) -> RevisionVerification:
     deadline = clock() + timeout
     while True:
         result = inspect_revision(api, repository, sha)

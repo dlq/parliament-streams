@@ -1,4 +1,4 @@
-"""Refresh static HLS/DASH validation from a previous democracy-tier report."""
+"""Inspect maintained discovery targets, manifest formats and unverified page leads."""
 
 from __future__ import annotations
 
@@ -75,7 +75,7 @@ def looks_like_dash(body: bytes) -> bool:
     return b"<mpd" in sample
 
 
-def validate_candidate(kind: str, url: str, timeout: int) -> dict[str, Any]:
+def check_discovery_target(kind: str, url: str, timeout: int) -> dict[str, Any]:
     fetched = fetch(url, timeout)
     body = fetched.pop("body", b"")
     result = {**fetched, "kind": kind, "url": url}
@@ -115,7 +115,7 @@ def validate_candidate(kind: str, url: str, timeout: int) -> dict[str, Any]:
     return result
 
 
-def iter_seed_candidates(country: dict[str, Any]) -> Iterable[dict[str, str]]:
+def iter_seed_targets(country: dict[str, Any]) -> Iterable[dict[str, str]]:
     seen: set[tuple[str, str]] = set()
     for result in country.get("results", []):
         kind = result.get("kind")
@@ -138,17 +138,15 @@ def check_country(
     results = []
     seen: set[tuple[str, str]] = set()
 
-    for candidate in iter_seed_candidates(country):
-        key = (candidate["kind"], candidate["url"])
+    for target in iter_seed_targets(country):
+        key = (target["kind"], target["url"])
         if key in seen:
             continue
         seen.add(key)
         if deadline is not None and time.monotonic() >= deadline:
-            results.append(
-                {**candidate, "status": "unattempted", "note": "Network budget exhausted"}
-            )
+            results.append({**target, "status": "unattempted", "note": "Network budget exhausted"})
             continue
-        result = validate_candidate(candidate["kind"], candidate["url"], timeout)
+        result = check_discovery_target(target["kind"], target["url"], timeout)
         results.append(result)
         for discovered_url in result.get("discovered_manifests", []):
             discovered_kind = manifest_kind(discovered_url)
@@ -166,7 +164,7 @@ def check_country(
                     }
                 )
                 continue
-            discovered = validate_candidate(discovered_kind, discovered_url, timeout)
+            discovered = check_discovery_target(discovered_kind, discovered_url, timeout)
             discovered["kind"] = "discovered_manifest"
             results.append(discovered)
 
@@ -216,7 +214,7 @@ def run(
         "countries": countries,
         "coverage": {
             "planned": sum(
-                len(list(iter_seed_candidates(country))) for country in source["countries"]
+                len(list(iter_seed_targets(country))) for country in source["countries"]
             ),
             "unattempted": sum(
                 result["status"] == "unattempted"

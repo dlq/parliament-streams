@@ -1,5 +1,22 @@
 # Changelog
 
+## 25 October — Consistent Domain And Operation Names
+
+Reviewed tracked file names and handwritten Python/JavaScript names. Shared
+helpers now distinguish discovery targets and observations from formal source
+candidates, URL encoding/normalization from fetching, XMLTV-exportable events
+from general schedule approval, and schedule live labels from media playback.
+Catalogue CLI messages describe source records, including viewing pages and
+archives. [Naming and compatibility](docs/naming-conventions.md) records the
+vocabulary and the schema, identifier, protocol and command names kept stable.
+
+Maintenance script names now identify catalogue snapshot generation, schedule
+issue planning and exact-revision Pages verification. The complete local browser
+suite lives in `tools/check_site.mjs`; the former accessibility script and npm
+commands remain compatible. Existing `make site-data` commands remain aliases
+for the explicit `catalogue-site-data` commands. Public data and evidence paths
+are preserved.
+
 ## 25 October — Repository Navigation And Maintenance Boundaries
 
 Document the catalogue and legislature inventory as separate maintained lists,

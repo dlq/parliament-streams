@@ -167,7 +167,7 @@ class MaintainedDiscoveryTests(unittest.TestCase):
             "country": "Canada",
             "results": [{"kind": "official_page", "url": "https://parl.ca/"}],
         }
-        with patch("tools.validate_democracy_tier_static.validate_candidate") as fetch:
+        with patch("tools.validate_democracy_tier_static.check_discovery_target") as fetch:
             result = check_country(country, 12, deadline=0)
         fetch.assert_not_called()
         self.assertEqual(result["results"][0]["status"], "unattempted")
@@ -192,7 +192,7 @@ class MaintainedDiscoveryTests(unittest.TestCase):
                 )
             )
             with patch(
-                "tools.validate_democracy_tier_static.validate_candidate",
+                "tools.validate_democracy_tier_static.check_discovery_target",
                 return_value={
                     "kind": "hls",
                     "url": "https://cdn.example.org/live.m3u8?token=private-value",

@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-def schedule_issue_plan(snapshot: dict[str, Any]) -> dict[str, Any]:
+def build_schedule_issue_plan(snapshot: dict[str, Any]) -> dict[str, Any]:
     """Only repeated errors open alerts, and only current parsed data closes them."""
     sources = snapshot.get("sources")
     if not isinstance(sources, dict):
@@ -54,7 +54,7 @@ def main(argv: list[str] | None = None) -> int:
         snapshot = json.loads(args.schedules.read_text(encoding="utf-8"))
         if not isinstance(snapshot, dict):
             raise ValueError("Schedule snapshot must be an object")
-        plan = schedule_issue_plan(snapshot)
+        plan = build_schedule_issue_plan(snapshot)
     except (OSError, ValueError) as error:
         parser.error(str(error))
     args.output.parent.mkdir(parents=True, exist_ok=True)

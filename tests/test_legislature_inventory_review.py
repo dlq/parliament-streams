@@ -8,9 +8,9 @@ from typing import Any
 from unittest.mock import patch
 
 from parliament_streams.inventory.sources import ipu_api_url
-from parliament_streams.research_evidence import secret_matches
+from parliament_streams.research_evidence import detect_secret_types
 from tools.check_legislature_inventory import (
-    IPU_ID,
+    IPU_SOURCE_ID,
     build_report,
     collect_sources,
     compare_evidence,
@@ -20,7 +20,7 @@ from tools.check_legislature_inventory import (
     markdown_text,
     plan_sources,
     render_markdown,
-    review_dates,
+    stale_review_findings,
     validate_baseline,
 )
 
@@ -131,7 +131,7 @@ def ipu_body(chambers: list[dict[str, Any]], total: int | None = None) -> bytes:
 
 def source_fixture(kind: str = "evidence") -> dict[str, Any]:
     return {
-        "id": IPU_ID if kind == "ipu" else "country-directory",
+        "id": IPU_SOURCE_ID if kind == "ipu" else "country-directory",
         "url": ipu_api_url(TODAY.isoformat()) if kind == "ipu" else "https://www.parl.ca/directory",
         "kind": kind,
         "countries": ["Canada"],
@@ -610,7 +610,7 @@ class LegislatureInventoryReviewTests(unittest.TestCase):
         future.update(id="future", latest_legal_hold_review={"reviewed_on": "2026-11-02"})
         invalid.update(id="invalid", latest_legal_hold_review={"reviewed_on": "unknown"})
         inventory["records"].extend([recent, future, invalid])
-        findings = review_dates(inventory, TODAY, 365)
+        findings = stale_review_findings(inventory, TODAY, 365)
         by_kind = {row["kind"]: row["record_ids"] for row in findings}
         self.assertEqual(by_kind["stale_review"], ["national--ca-lc01", "national--ca-uc01"])
         self.assertEqual(by_kind["future_review_date"], ["future"])
@@ -633,7 +633,7 @@ class LegislatureInventoryReviewTests(unittest.TestCase):
         inventory["reviewed_on"] = "2025-11-01"
         inventory["records"][0]["institution_reviewed_on"] = TODAY.isoformat()
         inventory["records"][0]["latest_legal_hold_review"] = {"reviewed_on": "2024-11-01"}
-        findings = review_dates(inventory, TODAY, 365)
+        findings = stale_review_findings(inventory, TODAY, 365)
         self.assertEqual(len(findings), 1)
         self.assertEqual(findings[0]["kind"], "stale_review")
         self.assertEqual(findings[0]["record_ids"], ["national--ca-uc01"])
@@ -668,7 +668,7 @@ class LegislatureInventoryReviewTests(unittest.TestCase):
         )
         report, snapshot = report_for(source, fetched_fixture(source, body))
         encoded = json.dumps([report, snapshot])
-        self.assertEqual(secret_matches(encoded), [])
+        self.assertEqual(detect_secret_types(encoded), [])
         self.assertNotIn(key, encoded)
         self.assertIn("key=REDACTED", snapshot["sources"][source["id"]]["links"][0]["url"])
         changed_key = body.replace(key, "AIza" + "B" * 35)
@@ -684,7 +684,7 @@ class LegislatureInventoryReviewTests(unittest.TestCase):
             "error": "Failed https://maps.example.org/?key=" + "AIza" + "A" * 35,
         }
         report, snapshot = report_for(source, response)
-        self.assertEqual(secret_matches(json.dumps([report, snapshot])), [])
+        self.assertEqual(detect_secret_types(json.dumps([report, snapshot])), [])
         self.assertIn("key=REDACTED", report["checks"][0]["error"])
 
     def test_source_plan_includes_current_exact_catalogue_and_reviewed_institution_routes(

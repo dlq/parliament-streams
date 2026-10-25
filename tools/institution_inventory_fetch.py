@@ -17,7 +17,7 @@ from urllib.request import HTTPRedirectHandler, HTTPSHandler, Request, build_ope
 
 import certifi
 
-from parliament_streams.healthcheck import request_url
+from parliament_streams.healthcheck import encode_http_url
 from parliament_streams.inventory.sources import safe_public_url
 
 USER_AGENT = "ParliamentStreamsInventoryReview/1.0 (+https://github.com/dlq/parliament-streams)"
@@ -49,7 +49,7 @@ def _public_endpoint(url: str) -> tuple[str, str]:
             raise ValueError("Evidence target returned a malformed DNS address") from error
         if not address.is_global:
             raise ValueError("Evidence target resolves to a non-public address")
-    return request_url(normalized), host
+    return encode_http_url(normalized), host
 
 
 class PublicRedirects(HTTPRedirectHandler):

@@ -14,9 +14,9 @@ from .common import (
     ScheduleEvent,
     ScheduleMetadata,
     ScraperSource,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
-    utc_event_start,
 )
 
 API_URL = "https://webtv.senato.it/api/palimpsest"
@@ -90,7 +90,7 @@ def parse(*payloads: str, now: datetime | None = None) -> ParsedSchedule:
         "current_event_time": None,
         "next_event_title": next_event["title"],
         "next_event_time": local_time_label(next_event["start"], "Europe/Rome"),
-        "next_event_start": utc_event_start(next_event["start"]),
+        "next_event_start": format_utc_timestamp(next_event["start"]),
         "confidence": "official_schedule_api",
     }
     schedule["events"] = normalized_events(

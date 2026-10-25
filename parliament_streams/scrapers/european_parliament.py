@@ -13,10 +13,10 @@ from .common import (
     ScheduleMetadata,
     ScraperSource,
     clean_html,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
     parse_iso,
-    utc_event_start,
 )
 
 CHANNEL_ID = "european-parliament-multimedia-centre"
@@ -96,9 +96,9 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
         "confidence": "official_schedule",
     }
     if current:
-        schedule["current_event_start"] = utc_event_start(current["start"])
+        schedule["current_event_start"] = format_utc_timestamp(current["start"])
     if upcoming:
-        schedule["next_event_start"] = utc_event_start(upcoming["start"])
+        schedule["next_event_start"] = format_utc_timestamp(upcoming["start"])
     schedule["events"] = normalized_events(
         CHANNEL_ID, parsed, now, source_timezone="Europe/Brussels"
     )

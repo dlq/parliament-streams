@@ -11,10 +11,10 @@ from .common import (
     ScheduleMetadata,
     ScraperSource,
     clean_html,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
     parse_iso,
-    utc_event_start,
 )
 
 CHANNEL_IDS = [
@@ -65,7 +65,7 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         "current_event_time": None,
         "next_event_title": next_event["title"],
         "next_event_time": local_time_label(next_event["start"]),
-        "next_event_start": utc_event_start(next_event["start"]),
+        "next_event_start": format_utc_timestamp(next_event["start"]),
         "confidence": "official_legislature_calendar_house_event",
     }
     schedule["events"] = normalized_events(

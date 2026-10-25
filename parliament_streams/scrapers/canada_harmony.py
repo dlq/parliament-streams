@@ -15,9 +15,9 @@ from .common import (
     ScheduleMetadata,
     ScraperSource,
     clean_html,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
-    utc_event_start,
 )
 
 HOUSE_URL = "https://parlvu.parl.gc.ca/Harmony/en"
@@ -201,7 +201,7 @@ def parse(
     if current and current.get("language"):
         schedule["current_event_language"] = current["language"]
     if current:
-        schedule["current_event_start"] = utc_event_start(current["start"])
+        schedule["current_event_start"] = format_utc_timestamp(current["start"])
     if next_event:
         if next_event.get("url"):
             schedule["next_event_url"] = next_event["url"]
@@ -213,7 +213,7 @@ def parse(
             schedule["next_event_location"] = next_event["location"]
         if next_event.get("language"):
             schedule["next_event_language"] = next_event["language"]
-        schedule["next_event_start"] = utc_event_start(next_event["start"])
+        schedule["next_event_start"] = format_utc_timestamp(next_event["start"])
     schedule["events"] = normalized_events(
         channel_id, events, now, source_timezone="America/Toronto"
     )

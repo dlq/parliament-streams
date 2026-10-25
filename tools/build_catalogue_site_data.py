@@ -13,7 +13,7 @@ def main() -> int:
     args = parser.parse_args()
     if args.check:
         if not site_data_is_current():
-            parser.error("site/catalogue-data.js is stale; run `make site-data`")
+            parser.error("site/catalogue-data.js is stale; run `make catalogue-site-data`")
         return 0
 
     write_site_data()

@@ -1,4 +1,4 @@
-"""Compare democracy-tier discovery results with the canonical catalogue."""
+"""Compare maintained discovery observations with the canonical catalogue."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from .models import Catalogue
 from .page_discovery import PageLead, PageLeadKind, classify_page_links, safe_lead_url
 
 ManifestKind = Literal["hls", "dash"]
-ManifestCandidate = tuple[str, str, ManifestKind, str, str]
+ManifestObservation = tuple[str, str, ManifestKind, str, str]
 DecisionDisposition = Literal[
     "event_specific",
     "insecure_legacy",
@@ -54,7 +54,7 @@ class DiscoveryFindingsReport(TypedDict):
 
 
 def parse_discovery_decisions(document: dict[str, Any]) -> list[DiscoveryDecision]:
-    """Validate and return the maintained manifest-review decisions."""
+    """Validate maintained decisions for manifest observations or page leads."""
     if document.get("decision_version") != 1:
         raise ValueError("Discovery decisions must use decision_version 1")
     raw_decisions = document.get("decisions")
@@ -159,7 +159,7 @@ def _matches_catalogued_family(url: str, known_urls: set[str]) -> bool:
     return False
 
 
-def _static_manifests(report: dict[str, Any], evidence: str) -> Iterable[ManifestCandidate]:
+def _static_manifests(report: dict[str, Any], evidence: str) -> Iterable[ManifestObservation]:
     tier = str(report.get("tier") or report.get("target_tier") or "unknown")
     for country in report.get("countries", []):
         country_name = country.get("country")
@@ -173,7 +173,7 @@ def _static_manifests(report: dict[str, Any], evidence: str) -> Iterable[Manifes
             yield country_name, tier, kind, url, evidence
 
 
-def _browser_manifests(report: dict[str, Any], evidence: str) -> Iterable[ManifestCandidate]:
+def _browser_manifests(report: dict[str, Any], evidence: str) -> Iterable[ManifestObservation]:
     for country in report.get("countries", []):
         country_name = country.get("country")
         tier_report = str(country.get("tier_report", ""))

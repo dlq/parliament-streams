@@ -14,10 +14,10 @@ from .common import (
     ScheduleMetadata,
     ScraperSource,
     clean_html,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
     parse_iso,
-    utc_event_start,
 )
 
 CHANNEL_ID = "un-web-tv"
@@ -100,13 +100,13 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         "confidence": "official_live_schedule",
     }
     if current:
-        schedule["current_event_start"] = utc_event_start(current["start"])
+        schedule["current_event_start"] = format_utc_timestamp(current["start"])
         schedule["current_event_url"] = current["url"]
         schedule["current_event_id"] = current["event_id"]
         schedule["current_event_status"] = "Live now"
         schedule["current_event_language"] = current["language"]
     if next_event:
-        schedule["next_event_start"] = utc_event_start(next_event["start"])
+        schedule["next_event_start"] = format_utc_timestamp(next_event["start"])
         schedule["next_event_url"] = next_event["url"]
         schedule["next_event_id"] = next_event["event_id"]
         schedule["next_event_status"] = "Upcoming"

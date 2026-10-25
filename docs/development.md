@@ -1,6 +1,7 @@
 # Development And Validation
 
-[Documentation index](README.md) · [Catalogue maintenance](catalogue-maintenance.md)
+[Documentation index](README.md) · [Catalogue maintenance](catalogue-maintenance.md) ·
+[Naming and compatibility](naming-conventions.md)
 
 Run these commands from the repository root. Local checks use the working
 catalogue; live audits separately contact third-party sources.
@@ -54,9 +55,11 @@ relying on a system Python.
 the HTML/browser checks. JavaScript tests have their own target rather than
 running implicitly under `make discovery-plan-validate`.
 
-The local browser runner, `tools/check_accessibility.mjs`, runs the whole suite
+The local browser runner, `tools/check_site.mjs`, runs the whole suite
 and has no command-line filtering or `--help` mode. Run it through the commands
-above without extra arguments. Its Chromium process is launched with audio muted.
+above without extra arguments. `npm run check:browser` selects the browser portion;
+the former `tools/check_accessibility.mjs` path remains a compatibility entry
+point. Its Chromium process is launched with audio muted.
 This local suite is separate from the live third-party browser audit below.
 
 For complete verification:
@@ -133,9 +136,10 @@ NODE_PATH=/path/to/node_modules node tools/deep_validate_browser.mjs \
   --output reports/health/YYYY-MM-DD-tier1-tier2-deep-browser-validation.json
 ```
 
-The browser validator uses Playwright's Chromium automation to load official
+The browser discovery tool uses Playwright's Chromium automation to load maintained
 pages, wait for player scripts, capture `.m3u8` and `.mpd` network/DOM
-references, and validate discovered manifests. It is intentionally separate
+references, observe viewing/programme links, and check discovered manifest formats.
+These observations do not certify decoded playback or reuse rights. It is separate
 from `make verify` because it performs live network checks against third-party
 sites and can be affected by geofencing, cookies, JavaScript changes, sitting
 hours, authentication prompts, and player behavior.

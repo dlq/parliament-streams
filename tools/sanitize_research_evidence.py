@@ -13,9 +13,9 @@ if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from parliament_streams.research_evidence import (  # noqa: E402
+    detect_secret_types,
     sanitize_text,
     sanitize_value,
-    secret_matches,
 )
 
 
@@ -30,7 +30,7 @@ def _check_paths(paths: list[Path]) -> int:
         except (OSError, UnicodeDecodeError):
             continue
         for number, line in enumerate(text.splitlines(), start=1):
-            counts = Counter(secret_matches(line))
+            counts = Counter(detect_secret_types(line))
             if counts:
                 findings += sum(counts.values())
                 types = ", ".join(f"{kind}={count}" for kind, count in sorted(counts.items()))

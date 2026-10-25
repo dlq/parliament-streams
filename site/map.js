@@ -7,7 +7,7 @@ const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
 const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261025-holds", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261025-holds", appScriptUrl);
+const subnationalGeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261025-holds", appScriptUrl);
 const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261025-holds", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
@@ -25,7 +25,7 @@ const fallbackCountryNames = {
 
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], supranational: [], geometry: null, admin1Geometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null };
+const state = { channels: [], supranational: [], geometry: null, subnationalGeometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null };
 const elements = {
   map: document.querySelector("#world-map"),
   detail: document.querySelector("#map-detail"),
@@ -122,7 +122,7 @@ function nationalCode(channel) {
   return channel.external_ids?.ipu_country_code ?? null;
 }
 
-function canPlay(channel) {
+function isPlaybackEnabled(channel) {
   return channel.playback_policy === "native_playback" || channel.playback_policy === "provider_embed";
 }
 
@@ -182,7 +182,7 @@ function allCatalogueCoverageCodes() {
 function renderLegend() {
   elements.workspace.classList.toggle("is-supranational", state.mode === "supranational");
   document.querySelector("#legend-location").hidden = !["all", "subnational"].includes(state.mode)
-    || !state.admin1Geometry?.features.some(isInstitutionLocation);
+    || !state.subnationalGeometry?.features.some(isInstitutionLocation);
   document.querySelector("#legend-location-label").textContent = mt("institutionLocation");
   if (state.mode === "supranational") {
     elements.legendDocumented.textContent = mt("memberCovered");
@@ -207,7 +207,7 @@ function channelsForRegion(name) {
 }
 
 function sourcePosture(channel) {
-  if (canPlay(channel)) return [t("sourcePlayable"), "is-playable"];
+  if (isPlaybackEnabled(channel)) return [t("sourcePlayable"), "is-playable"];
   if (channel.playback_policy === "link_out") return [t("sourceLinkOut"), ""];
   return [t("sourceResearch"), ""];
 }
@@ -255,7 +255,7 @@ function renderDetail() {
   if (state.selectedRegion && (state.mode === "all" || state.mode === "subnational")) {
     const regionalChannels = channelsForRegion(state.selectedRegion);
     const parentCode = subnationalParents[state.selectedRegion];
-    const feature = state.admin1Geometry.features.find((item) => item.properties.name === state.selectedRegion);
+    const feature = state.subnationalGeometry.features.find((item) => item.properties.name === state.selectedRegion);
     const locationNote = isInstitutionLocation(feature)
       ? `<div class="map-location-note"><p>${escapeHtml(mt("locationOnly"))}</p><p lang="en">${escapeHtml(feature.properties.scope_note)}</p><a href="${escapeHtml(feature.properties.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("supportingEvidence"))} ↗</a></div>` : "";
     elements.detail.innerHTML = `<p class="map-detail-summary">${escapeHtml(countryName(parentCode))} · ${escapeHtml(levelLabel("subnational"))}</p>
@@ -320,7 +320,7 @@ function selectJurisdiction(group) {
     state.selectedSupranationalCountry = null;
   }
   render();
-  focusSelectedArea();
+  focusSelectedFeature();
   document.querySelector("#map-detail").scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
@@ -447,7 +447,7 @@ function renderMap() {
     return Math.max(x1 - x0, y1 - y0) < 4;
   };
   const regionLabel = (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("documented")}, ${levelLabel("subnational")}`;
-  const areaFeatures = showRegions ? state.admin1Geometry.features.filter((feature) => feature.geometry.type === "MultiPolygon") : [];
+  const areaFeatures = showRegions ? state.subnationalGeometry.features.filter((feature) => feature.geometry.type === "MultiPolygon") : [];
   const regions = regionLayer.selectAll("path.map-region").data(areaFeatures, (feature) => feature.properties.name);
   regions.exit().remove();
   regions.enter().append("path").merge(regions)
@@ -488,7 +488,7 @@ function renderMap() {
 
   // Location markers identify an institution's seat, never a territorial extent.
   // Keep them separate from generalized area outlines and tiny-island dots.
-  const locations = showRegions ? state.admin1Geometry.features.filter(isInstitutionLocation) : [];
+  const locations = showRegions ? state.subnationalGeometry.features.filter(isInstitutionLocation) : [];
   regionLayer.selectAll("line.map-location-leader").data(locations, (feature) => feature.properties.name)
     .join("line")
     .attr("class", "map-location-leader")
@@ -547,9 +547,9 @@ function zoomToFeature(feature, maximumScale) {
   d3.select(elements.map).transition().duration(260).call(state.zoom.transform, d3.zoomIdentity.translate(x, y).scale(scale));
 }
 
-function focusSelectedArea() {
+function focusSelectedFeature() {
   if (state.selectedRegion) {
-    const region = state.admin1Geometry.features.find((feature) => feature.properties.name === state.selectedRegion);
+    const region = state.subnationalGeometry.features.find((feature) => feature.properties.name === state.selectedRegion);
     if (region) zoomToFeature(region, 8);
     return;
   }
@@ -623,18 +623,18 @@ async function init() {
   if (!catalogue || !supranational) throw new Error(mt("mapUnavailable"));
   state.channels = catalogue.channels;
   state.supranational = supranational.organizations;
-  const [geometry, admin1Geometry, lienchiangGeometry] = await Promise.all([
-    d3.json(geometryUrl), d3.json(admin1GeometryUrl), d3.json(lienchiangGeometryUrl),
+  const [geometry, primarySubnationalGeometry, lienchiangGeometry] = await Promise.all([
+    d3.json(geometryUrl), d3.json(subnationalGeometryUrl), d3.json(lienchiangGeometryUrl),
   ]);
   state.geometry = geometry;
-  state.admin1Geometry = {
+  state.subnationalGeometry = {
     type: "FeatureCollection",
-    features: [...admin1Geometry.features, ...lienchiangGeometry.features],
+    features: [...primarySubnationalGeometry.features, ...lienchiangGeometry.features],
   };
 
   document.querySelector("#jurisdiction-count").textContent = formatNumber(groupedJurisdictions().length);
   document.querySelector("#source-count").textContent = formatNumber(state.channels.length);
-  document.querySelector("#playable-count").textContent = formatNumber(state.channels.filter(canPlay).length);
+  document.querySelector("#playable-count").textContent = formatNumber(state.channels.filter(isPlaybackEnabled).length);
 
   elements.modes.forEach((button) => button.addEventListener("click", () => {
     state.mode = button.dataset.mode;

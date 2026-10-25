@@ -17,7 +17,7 @@ on:
       - "package-lock.json"
       - "tools/build_vendor_assets.mjs"
       - "tools/version_site_assets.mjs"
-      - "tools/check_pages_verification.py"
+      - "tools/verify_pages_revision.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -48,7 +48,7 @@ jobs:
       - name: Require successful CI and CodeQL for current main
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 tools/check_pages_verification.py --sha "$DEPLOY_SHA"
+        run: python3 tools/verify_pages_revision.py --sha "$DEPLOY_SHA"
 
   deploy:
     needs: verify_revision
@@ -83,7 +83,7 @@ jobs:
         run: npm ci
       # Full tests/accessibility are required by the exact-SHA CI gate above.
       - name: Verify catalogue and assembled data snapshots
-        run: make catalogue-validate site-data-check institution-site-data-check
+        run: make catalogue-validate catalogue-site-data-check institution-site-data-check
       - name: Restore the preceding schedule snapshot
         uses: actions/cache/restore@v6
         with:
@@ -133,6 +133,6 @@ jobs:
       - name: Recheck exact revision and successful checks before publication
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/check_pages_verification.py --sha "$DEPLOY_SHA" --wait-seconds 0
+        run: python tools/verify_pages_revision.py --sha "$DEPLOY_SHA" --wait-seconds 0
       - id: deployment
         uses: actions/deploy-pages@v5

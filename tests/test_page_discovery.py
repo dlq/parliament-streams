@@ -11,7 +11,7 @@ from unittest.mock import patch
 from parliament_streams.discovery import build_discovery_findings
 from parliament_streams.models import Catalogue
 from parliament_streams.page_discovery import classify_page_links, extract_page_leads
-from tools.validate_democracy_tier_static import run, validate_candidate
+from tools.validate_democracy_tier_static import check_discovery_target, run
 
 SOURCE = "https://assembly.example/"
 
@@ -171,7 +171,7 @@ class PageDiscoveryTests(unittest.TestCase):
                 "body": b'<a href="/watch">Watch video</a>',
             },
         ):
-            result = validate_candidate("official_page", SOURCE, 1)
+            result = check_discovery_target("official_page", SOURCE, 1)
         self.assertEqual(result["status"], "page_ok")
         self.assertEqual(result["page_leads"][0]["url"], SOURCE + "watch")
         self.assertNotIn("validated_manifest_count", result)

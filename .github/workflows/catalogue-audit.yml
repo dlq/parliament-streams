@@ -185,7 +185,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          uv run --locked python tools/build_audit_issue_plan.py \
+          uv run --locked python tools/build_schedule_issue_plan.py \
             --schedules reports/automated/schedules.json \
             --output reports/automated/schedule-issue-plan.json
           gh label create schedule-regression \
@@ -339,7 +339,7 @@ jobs:
           uv run --locked parliament-streams seed \
             --output reports/automated/catalogue-seed.json
 
-      - name: Discover and validate browser-loaded manifests
+      - name: Inspect rendered pages and check manifest formats
         run: >-
           node tools/deep_validate_browser.mjs
           --input reports/automated/catalogue-seed.json

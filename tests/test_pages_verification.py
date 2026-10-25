@@ -6,9 +6,9 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from tools.check_pages_verification import (
+from tools.verify_pages_revision import (
     GateError,
-    Verification,
+    RevisionVerification,
     inspect_revision,
     main,
     validate_context,
@@ -60,7 +60,7 @@ class PagesVerificationTests(unittest.TestCase):
 
     def test_success_requires_both_exact_sha_workflows_and_current_main(self) -> None:
         result = inspect_revision(self.api, REPOSITORY, SHA)
-        self.assertEqual(result, Verification([], {"ci.yml": 1, "codeql.yml": 1}))
+        self.assertEqual(result, RevisionVerification([], {"ci.yml": 1, "codeql.yml": 1}))
         self.assertEqual(sum(path.endswith("git/ref/heads/main") for path, _ in self.api.calls), 2)
         for _, parameters in self.api.calls:
             if parameters:
@@ -142,10 +142,10 @@ class PagesVerificationTests(unittest.TestCase):
             )
 
     def test_waits_for_pending_then_accepts_both_successes(self) -> None:
-        pending = Verification(["ci.yml: queued"], {"codeql.yml": 1})
-        ready = Verification([], {"ci.yml": 2, "codeql.yml": 1})
+        pending = RevisionVerification(["ci.yml: queued"], {"codeql.yml": 1})
+        ready = RevisionVerification([], {"ci.yml": 2, "codeql.yml": 1})
         sleep = MagicMock()
-        with patch("tools.check_pages_verification.inspect_revision", side_effect=[pending, ready]):
+        with patch("tools.verify_pages_revision.inspect_revision", side_effect=[pending, ready]):
             result = wait_for_verification(
                 self.api, REPOSITORY, SHA, timeout=20, clock=lambda: 0, sleep=sleep
             )
@@ -194,8 +194,8 @@ class PagesVerificationTests(unittest.TestCase):
         with (
             patch.dict("os.environ", environment),
             patch("sys.argv", ["gate", "--sha", SHA]),
-            patch("tools.check_pages_verification.subprocess.run") as checkout,
-            patch("tools.check_pages_verification.GitHubAPI") as api,
+            patch("tools.verify_pages_revision.subprocess.run") as checkout,
+            patch("tools.verify_pages_revision.GitHubAPI") as api,
             patch("sys.stderr", new_callable=io.StringIO) as stderr,
         ):
             checkout.return_value.stdout = OTHER_SHA
@@ -213,8 +213,8 @@ class PagesVerificationTests(unittest.TestCase):
         with (
             patch.dict("os.environ", environment),
             patch("sys.argv", ["gate", "--sha", SHA, "--wait-seconds", "0"]),
-            patch("tools.check_pages_verification.subprocess.run") as checkout,
-            patch("tools.check_pages_verification.GitHubAPI") as api,
+            patch("tools.verify_pages_revision.subprocess.run") as checkout,
+            patch("tools.verify_pages_revision.GitHubAPI") as api,
             patch("sys.stderr", new_callable=io.StringIO) as stderr,
         ):
             checkout.return_value.stdout = SHA
@@ -233,7 +233,7 @@ class PagesVerificationTests(unittest.TestCase):
         self.assertIn('cron: "17 */6 * * *"', workflow)
         self.assertIn("workflow_dispatch:", workflow)
         self.assertNotIn("workflow_run:", workflow)
-        self.assertIn("tools/check_pages_verification.py", workflow)
+        self.assertIn("tools/verify_pages_revision.py", workflow)
         self.assertLess(deploy.index("upload-pages-artifact"), deploy.index("--wait-seconds 0"))
         self.assertLess(deploy.index("--wait-seconds 0"), deploy.index("actions/deploy-pages"))
         self.assertIn("schedules-collect", deploy)

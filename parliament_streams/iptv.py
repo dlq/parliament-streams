@@ -9,7 +9,7 @@ from xml.etree import ElementTree as ET
 from .models import Catalogue, ChannelRecord
 from .schedule_collection import ScheduleSnapshot
 from .schedule_quality import (
-    LINEAR_CHANNELS,
+    LINEAR_GUIDE_CHANNELS_BY_SCRAPER,
     ScheduleAssessment,
     assess_schedules,
     parsed_time,
@@ -22,8 +22,13 @@ def _line(value: str) -> str:
     return " ".join(value.replace('"', "'").split())
 
 
-def hls_channels(catalogue: Catalogue, *, include_event_based: bool = False) -> list[ChannelRecord]:
-    """Select supported, validated, lower-risk HLS under the catalogue policy."""
+def select_iptv_hls_channels(
+    catalogue: Catalogue, *, include_non_always_on: bool = False
+) -> list[ChannelRecord]:
+    """Select supported, validated, lower-risk HLS for the exported playlists.
+
+    The broader list includes both sitting-only and event-based sources.
+    """
     return sorted(
         (
             channel
@@ -33,7 +38,7 @@ def hls_channels(catalogue: Catalogue, *, include_event_based: bool = False) -> 
             and channel["playback_policy"] == "native_playback"
             and channel["stability_risk"] in {"low", "medium"}
             and channel["permission"]["status"] not in {"no_third_party_reuse", "embed_only"}
-            and (include_event_based or channel["availability"] == "always_on")
+            and (include_non_always_on or channel["availability"] == "always_on")
         ),
         key=lambda channel: channel["id"],
     )
@@ -66,8 +71,12 @@ def render_xmltv(
     root = ET.Element("tv", {"generator-info-name": "Parliament Streams"})
     exported = 0
     skipped = assessment.report["counts"]["excluded"]
-    ids = {channel["id"] for channel in hls_channels(catalogue, include_event_based=True)}
-    ids.update(channel_id for mapped in LINEAR_CHANNELS.values() for channel_id in mapped)
+    ids = {
+        channel["id"] for channel in select_iptv_hls_channels(catalogue, include_non_always_on=True)
+    }
+    ids.update(
+        channel_id for mapped in LINEAR_GUIDE_CHANNELS_BY_SCRAPER.values() for channel_id in mapped
+    )
     channels = sorted(
         (channel for channel in catalogue["channels"] if channel["id"] in ids),
         key=lambda channel: channel["id"],
@@ -80,7 +89,7 @@ def render_xmltv(
         schedule = snapshot["channels"].get(channel["id"])
         if not schedule:
             continue
-        for event in assessment.approved.get(channel["id"], []):
+        for event in assessment.exportable_events_by_channel.get(channel["id"], []):
             start, end = parsed_time(event["start"]), parsed_time(event["end"])
             title = event["title"].strip()
             node = ET.SubElement(
@@ -114,8 +123,8 @@ def write_iptv_exports(
     catalogue: Catalogue, snapshot: ScheduleSnapshot, output_dir: Path, epg_url: str
 ) -> dict[str, int]:
     """Write static outputs beside the deployed schedule snapshot."""
-    stable = hls_channels(catalogue)
-    validated = hls_channels(catalogue, include_event_based=True)
+    stable = select_iptv_hls_channels(catalogue)
+    validated = select_iptv_hls_channels(catalogue, include_non_always_on=True)
     assessment = assess_schedules(catalogue, snapshot)
     xml, programmes, skipped = render_xmltv(catalogue, snapshot, assessment)
     output_dir.mkdir(parents=True, exist_ok=True)

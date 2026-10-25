@@ -720,7 +720,7 @@ class CliTests(unittest.TestCase):
     def test_validate_list_and_show_commands(self):
         result, output, _ = self.run_cli("validate")
         self.assertEqual(result, 0)
-        self.assertIn(f"{CANONICAL_CHANNEL_COUNT} channels", output)
+        self.assertIn(f"{CANONICAL_CHANNEL_COUNT} sources", output)
 
         result, output, _ = self.run_cli("list", "--level", "subnational")
         self.assertEqual(result, 0)
@@ -788,7 +788,7 @@ class CliTests(unittest.TestCase):
         )
         result, output, _ = self.run_cli("candidate-promote", str(candidate))
         self.assertEqual(result, 0)
-        self.assertIn(f"{CANONICAL_CHANNEL_COUNT + 1} channels", output)
+        self.assertIn(f"{CANONICAL_CHANNEL_COUNT + 1} sources", output)
         self.assertEqual(load_candidate(candidate)["status"], "promoted")
         self.assertIn("Promoted to", load_candidate(candidate)["decision_notes"][-1])
 

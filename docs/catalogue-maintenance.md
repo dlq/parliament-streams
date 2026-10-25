@@ -308,10 +308,10 @@ uv run python -m parliament_streams.scrapers \
 ```
 
 The Node-based browser tools use the official Playwright and Axe integrations.
-`tools/check_accessibility.mjs` is part of `make verify` and tests the local
+`tools/check_site.mjs` is part of `make verify` and tests the local
 catalogue UI; `tools/deep_validate_browser.mjs` is an explicit live research
-tool that inspects third-party player traffic. Neither tool builds or runs the
-deployed static site. The deep validator requires explicit input and output
+tool that observes rendered pages, viewing/programme links and manifest formats.
+Neither tool builds or runs the deployed static site. The discovery tool requires explicit input and output
 report paths; see [development and validation](development.md) for the full
 invocation.
 

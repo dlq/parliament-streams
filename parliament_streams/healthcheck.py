@@ -30,8 +30,12 @@ def _response_headers(response: HTTPResponse | HTTPError) -> dict[str, str]:
     return {key.lower(): value for key, value in response.headers.items()}
 
 
-def _request_url(url: str) -> str:
-    """Encode international URLs for HTTP without changing existing escapes."""
+def encode_http_url(url: str) -> str:
+    """Encode international URLs for HTTP without changing existing escapes.
+
+    Encoding is not an access decision. Callers with public-host or redirect
+    restrictions must apply those separately.
+    """
     parts = urlsplit(url)
     if url.isascii():
         return url
@@ -55,14 +59,6 @@ def _request_url(url: str) -> str:
     )
 
 
-def request_url(url: str) -> str:
-    """Encode a URL for HTTP transport without treating it as an access decision.
-
-    Callers with public-host or redirect restrictions must apply those separately.
-    """
-    return _request_url(url)
-
-
 def _fetch_once(
     url: str,
     timeout: int,
@@ -75,7 +71,7 @@ def _fetch_once(
         try:
             try:
                 request = Request(
-                    request_url(url), headers={"User-Agent": USER_AGENT, **(headers or {})}
+                    encode_http_url(url), headers={"User-Agent": USER_AGENT, **(headers or {})}
                 )
                 response = urlopen(request, timeout=timeout)
             except ValueError as error:

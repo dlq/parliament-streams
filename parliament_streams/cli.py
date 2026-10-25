@@ -87,7 +87,7 @@ def _cmd_validate(args: argparse.Namespace) -> int:
         for issue in issues:
             print(issue.render(), file=sys.stderr)
         return 1
-    print(f"Catalogue valid: {len(catalogue['channels'])} channels")
+    print(f"Catalogue valid: {len(catalogue['channels'])} sources")
     return 0
 
 
@@ -211,7 +211,7 @@ def _cmd_candidate_promote(args: argparse.Namespace) -> int:
     )
     require_valid_candidate(candidate)
     write_json(args.candidate, candidate)
-    print(f"Promoted candidate; catalogue now has {len(catalogue['channels'])} channels")
+    print(f"Promoted candidate; catalogue now has {len(catalogue['channels'])} sources")
     return 0
 
 
@@ -220,7 +220,7 @@ def _cmd_add(args: argparse.Namespace) -> int:
         load_channel(args.record), replace=args.replace, persist=not args.dry_run
     )
     action = "Would write" if args.dry_run else "Wrote"
-    print(f"{action} {len(catalogue['channels'])} channels")
+    print(f"{action} {len(catalogue['channels'])} sources")
     return 0
 
 
@@ -229,7 +229,7 @@ def _cmd_update(args: argparse.Namespace) -> int:
         args.channel_id, load_channel(args.record), persist=not args.dry_run
     )
     action = "Would update" if args.dry_run else "Updated"
-    print(f"{action} {args.channel_id}; catalogue has {len(catalogue['channels'])} channels")
+    print(f"{action} {args.channel_id}; catalogue has {len(catalogue['channels'])} sources")
     return 0
 
 
@@ -238,7 +238,7 @@ def _cmd_remove(args: argparse.Namespace) -> int:
         raise ValueError("Removal requires --yes; use --dry-run to preview")
     catalogue = _store(args).remove(args.channel_id, persist=not args.dry_run)
     action = "Would remove" if args.dry_run else "Removed"
-    print(f"{action} {args.channel_id}; catalogue has {len(catalogue['channels'])} channels")
+    print(f"{action} {args.channel_id}; catalogue has {len(catalogue['channels'])} sources")
     return 0
 
 
@@ -420,7 +420,7 @@ def _cmd_validation_history_refresh(args: argparse.Namespace) -> int:
     if not args.dry_run:
         _store(args).commit(catalogue)
     action = "Would refresh" if args.dry_run else "Refreshed"
-    print(f"{action} validation history for {populated} of {len(catalogue['channels'])} channels")
+    print(f"{action} validation history for {populated} of {len(catalogue['channels'])} sources")
     return 0
 
 
@@ -464,7 +464,7 @@ def build_parser() -> argparse.ArgumentParser:
     list_parser.add_argument("--json", action="store_true")
     list_parser.set_defaults(handler=_cmd_list)
 
-    show_parser = commands.add_parser("show", help="Print one channel record as JSON.")
+    show_parser = commands.add_parser("show", help="Print one catalogue source record as JSON.")
     show_parser.add_argument("channel_id")
     show_parser.set_defaults(handler=_cmd_show)
 
@@ -521,19 +521,19 @@ def build_parser() -> argparse.ArgumentParser:
     candidate_promote.add_argument("candidate", type=Path)
     candidate_promote.set_defaults(handler=_cmd_candidate_promote)
 
-    add_parser = commands.add_parser("add", help="Add a standalone channel record.")
+    add_parser = commands.add_parser("add", help="Add a standalone catalogue source record.")
     add_parser.add_argument("record", type=Path)
     add_parser.add_argument("--replace", action="store_true")
     add_parser.add_argument("--dry-run", action="store_true")
     add_parser.set_defaults(handler=_cmd_add)
 
-    update_parser = commands.add_parser("update", help="Replace one channel record by id.")
+    update_parser = commands.add_parser("update", help="Replace one catalogue source record by ID.")
     update_parser.add_argument("channel_id")
     update_parser.add_argument("record", type=Path)
     update_parser.add_argument("--dry-run", action="store_true")
     update_parser.set_defaults(handler=_cmd_update)
 
-    remove_parser = commands.add_parser("remove", help="Remove one channel record by id.")
+    remove_parser = commands.add_parser("remove", help="Remove one catalogue source record by ID.")
     remove_parser.add_argument("channel_id")
     remove_parser.add_argument("--dry-run", action="store_true")
     remove_parser.add_argument("--yes", action="store_true")

@@ -13,7 +13,7 @@ from .scrapers.common import NormalizedScheduleEvent
 
 # A public institutional calendar is not evidence of a particular broadcast feed.
 # New sources default to unreviewed until their feed mapping is established.
-LINEAR_CHANNELS: dict[str, set[str]] = {
+LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
     "cpac": {"cpac-ca"},
     "brazil-tv-camara": {"brazil-tv-camara"},
     "ebs-grid": {"eu-audiovisual-ebs"},
@@ -56,7 +56,7 @@ class QualityReport(TypedDict):
 @dataclass
 class ScheduleAssessment:
     report: QualityReport
-    approved: dict[str, list[NormalizedScheduleEvent]]
+    exportable_events_by_channel: dict[str, list[NormalizedScheduleEvent]]
 
 
 def parsed_time(value: str) -> datetime:
@@ -66,13 +66,14 @@ def parsed_time(value: str) -> datetime:
     return parsed.astimezone(UTC)
 
 
-def time_provenance(event: NormalizedScheduleEvent, source: str) -> tuple[str, str]:
+def time_provenance(event: NormalizedScheduleEvent, scraper_id: str) -> tuple[str, str]:
     """Recognize legacy cached records from the two known inferring parsers."""
     start = event.get(
-        "start_basis", "collection_date" if source == "brazil-tv-camara" else "unknown"
+        "start_basis", "collection_date" if scraper_id == "brazil-tv-camara" else "unknown"
     )
     end = event.get(
-        "end_basis", "next_listing_start" if source in {"cpac", "brazil-tv-camara"} else "unknown"
+        "end_basis",
+        "next_listing_start" if scraper_id in {"cpac", "brazil-tv-camara"} else "unknown",
     )
     return start, end
 
@@ -86,11 +87,13 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
         "counts": {},
         "channels": {},
     }
-    approved: dict[str, list[NormalizedScheduleEvent]] = {}
+    exportable_events_by_channel: dict[str, list[NormalizedScheduleEvent]] = {}
     total_reasons: Counter[str] = Counter()
     for channel_id, schedule in sorted(snapshot["channels"].items()):
-        source = schedule.get("scraper", "")
-        eligible = channel_id in known and channel_id in LINEAR_CHANNELS.get(source, set())
+        scraper_id = schedule.get("scraper", "")
+        eligible = channel_id in known and channel_id in LINEAR_GUIDE_CHANNELS_BY_SCRAPER.get(
+            scraper_id, set()
+        )
         events = schedule.get("events", [])
         reasons: list[set[str]] = [set() for _ in events]
         intervals: dict[int, tuple[datetime, datetime]] = {}
@@ -138,24 +141,25 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
                     reasons[right].add("overlapping_programme")
         exclusions = Counter(reason for excluded in reasons for reason in excluded)
         total_reasons.update(exclusions)
-        approved[channel_id] = [
+        exportable_events_by_channel[channel_id] = [
             event for event, excluded in zip(events, reasons, strict=True) if not excluded
         ]
         report["channels"][channel_id] = {
-            "source": source,
+            "source": scraper_id,
             "scope": "broadcast_schedule"
-            if source in LINEAR_CHANNELS
-            else SOURCE_SCOPES.get(source, "unreviewed"),
+            if scraper_id in LINEAR_GUIDE_CHANNELS_BY_SCRAPER
+            else SOURCE_SCOPES.get(scraper_id, "unreviewed"),
             "linear_guide_eligible": eligible,
             "events": len(events),
-            "exportable": len(approved[channel_id]),
+            "exportable": len(exportable_events_by_channel[channel_id]),
             "overlap_pairs": overlap_pairs,
             "inferred_ends": sum(
-                bool(event.get("end")) and time_provenance(event, source)[1] == "next_listing_start"
+                bool(event.get("end"))
+                and time_provenance(event, scraper_id)[1] == "next_listing_start"
                 for event in events
             ),
             "assumed_dates": sum(
-                time_provenance(event, source)[0] == "collection_date" for event in events
+                time_provenance(event, scraper_id)[0] == "collection_date" for event in events
             ),
             "stale": schedule.get("stale", False),
             "exclusions": dict(sorted(exclusions.items())),
@@ -167,7 +171,7 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
         }
     channels = report["channels"].values()
     total = sum(row["events"] for row in channels)
-    exported = sum(len(events) for events in approved.values())
+    exported = sum(len(events) for events in exportable_events_by_channel.values())
     report["counts"] = {
         "events": total,
         "exportable": exported,
@@ -175,4 +179,4 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
         "channels_with_events": len(report["channels"]),
         **{f"excluded_{reason}": count for reason, count in sorted(total_reasons.items())},
     }
-    return ScheduleAssessment(report, approved)
+    return ScheduleAssessment(report, exportable_events_by_channel)

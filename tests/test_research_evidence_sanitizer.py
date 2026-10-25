@@ -13,9 +13,9 @@ from urllib.parse import parse_qs, quote, unquote, urlsplit
 
 from parliament_streams.research_evidence import (
     REDACTED,
+    detect_secret_types,
     sanitize_url,
     sanitize_value,
-    secret_matches,
 )
 from tools.sanitize_research_evidence import main
 
@@ -57,13 +57,13 @@ class ResearchEvidenceSanitizerTests(unittest.TestCase):
             parse_qs(parts.query), {"key": [REDACTED], "q": ["Legislature"], "language": ["en"]}
         )
         self.assertEqual(parts.fragment, "map")
-        self.assertEqual(secret_matches(cleaned), [])
+        self.assertEqual(detect_secret_types(cleaned), [])
 
     def test_generic_credentials_are_sanitized_but_not_claimed_as_secrets(self) -> None:
         url = "https://example.org/live?API_KEY=dummy&access_token=dummy&x-amz-signature=dummy"
         url += "&PASSWORD=dummy&credential=dummy&auth=dummy&sessionToken=dummy&apiToken=dummy"
         url += "&lang=fr&monkey=ok"
-        self.assertEqual(secret_matches(url), [])
+        self.assertEqual(detect_secret_types(url), [])
         query = parse_qs(urlsplit(sanitize_url(url)).query)
         for name in [
             "API_KEY",
@@ -110,7 +110,7 @@ class ResearchEvidenceSanitizerTests(unittest.TestCase):
         cleaned = sanitize_value(value)
         self.assertEqual(value, original)
         text = json.dumps(cleaned)
-        self.assertEqual(secret_matches(text), [])
+        self.assertEqual(detect_secret_types(text), [])
         for secret in keys:
             self.assertNotIn(secret, text)
         self.assertNotIn("example-body", text)
@@ -121,23 +121,23 @@ class ResearchEvidenceSanitizerTests(unittest.TestCase):
 
     def test_scanner_counts_types_without_exposing_values_or_generic_query_names(self) -> None:
         text = " ".join(synthetic_keys() + [synthetic_keys()[0]])
-        kinds = secret_matches(text)
+        kinds = detect_secret_types(text)
         self.assertEqual(kinds.count("google_api_key"), 2)
         self.assertEqual(kinds.count("github_token"), 2)
         self.assertEqual(kinds.count("aws_access_key_id"), 2)
-        self.assertEqual(secret_matches("?key=ordinary-map-id&token=unknown-value"), [])
-        self.assertEqual(secret_matches("-----BEGIN " + "PRIVATE KEY-----"), ["private_key"])
+        self.assertEqual(detect_secret_types("?key=ordinary-map-id&token=unknown-value"), [])
+        self.assertEqual(detect_secret_types("-----BEGIN " + "PRIVATE KEY-----"), ["private_key"])
 
     def test_encoded_standalone_credentials_are_detected_and_redacted(self) -> None:
         for key in synthetic_keys():
             encoded = "".join(f"%{ord(char):02X}" for char in key)
             double_encoded = quote(encoded, safe="")
             for value in [encoded, double_encoded]:
-                with self.subTest(kind=secret_matches(key)):
-                    self.assertEqual(secret_matches(value), secret_matches(key))
+                with self.subTest(kind=detect_secret_types(key)):
+                    self.assertEqual(detect_secret_types(value), detect_secret_types(key))
                     cleaned = str(sanitize_value("Error: " + value))
                     self.assertNotIn(key, unquote(unquote(cleaned)))
-                    self.assertEqual(secret_matches(cleaned), [])
+                    self.assertEqual(detect_secret_types(cleaned), [])
 
     def test_sanitization_is_idempotent_and_preserves_nonsecret_url_values(self) -> None:
         value = {"url": "https://example.org/?q=House+of+Commons&lang=fr&key=private"}

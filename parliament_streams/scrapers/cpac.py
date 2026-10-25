@@ -11,10 +11,10 @@ from .common import (
     ScheduleMetadata,
     ScraperSource,
     clean_html,
+    format_utc_timestamp,
     local_time_label,
     normalized_events,
     parse_iso,
-    utc_event_start,
 )
 
 SOURCE: ScraperSource = {
@@ -57,9 +57,9 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         "confidence": "official_schedule",
     }
     if current:
-        schedule["current_event_start"] = utc_event_start(current["start"])
+        schedule["current_event_start"] = format_utc_timestamp(current["start"])
     if next_entry:
-        schedule["next_event_start"] = utc_event_start(next_entry["start"])
+        schedule["next_event_start"] = format_utc_timestamp(next_entry["start"])
     schedule["events"] = normalized_events(
         "cpac-ca", entries, now, source_timezone="America/Toronto"
     )

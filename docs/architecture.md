@@ -2,6 +2,8 @@
 
 This repository maintains legislative-institution records, official viewing
 sources and their evidence, and publishes them as a static website.
+The [naming guide](naming-conventions.md) defines the domain vocabulary and the
+compatibility names retained in data, code and commands.
 
 ## Two Canonical Lists
 
@@ -16,7 +18,7 @@ umbrella legislatures and individual chambers. Their total is not a count of
 usable streams. One institution may have several catalogue sources; inventory
 membership alone does not publish one.
 
-`data/channels.json` is the canonical published catalogue. Every channel record
+`data/channels.json` is the canonical published catalogue. Every catalogue source record
 contains:
 
 - institutional identity links, usually Wikidata and IPU Parline where

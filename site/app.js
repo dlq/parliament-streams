@@ -403,13 +403,13 @@ function setLocale(locale) {
     elements.stats.textContent = t("documented", { count: state.channels.length, date: state.generatedOn });
   }
 }
-function canPlay(channel) {
+function isPlaybackEnabled(channel) {
   const mixedContentBlocked = window.location.protocol === "https:"
     && channel.playback_url?.startsWith("http:");
   return ["native_playback", "provider_embed"].includes(channel.playback_policy)
     && !mixedContentBlocked;
 }
-function sourceStatus(channel) {
+function playbackMode(channel) {
   return {
     native_playback: "playable",
     provider_embed: "fallback",
@@ -417,7 +417,7 @@ function sourceStatus(channel) {
     research_only: "research",
   }[channel.playback_policy] ?? "research";
 }
-function sourceStatusLabel(value) {
+function playbackModeLabel(value) {
   return {
     playable: t("sourcePlayable"),
     link_out: t("sourceLinkOut"),
@@ -425,7 +425,7 @@ function sourceStatusLabel(value) {
     research: t("sourceResearch"),
   }[value] ?? value;
 }
-function sourceStatusDescription(value) {
+function playbackModeDescription(value) {
   return {
     playable: t("sourcePlayableDescription"),
     link_out: t("sourceLinkOutDescription"),
@@ -433,15 +433,15 @@ function sourceStatusDescription(value) {
     research: t("sourceResearchDescription"),
   }[value] ?? "";
 }
-function sourceStatusSortValue(channel) {
+function playbackModeSortValue(channel) {
   const order = {
     playable: 0,
     fallback: 1,
     link_out: 2,
     research: 3,
   };
-  const status = sourceStatus(channel);
-  return `${order[status] ?? 9}-${sourceStatusLabel(status)}`;
+  const status = playbackMode(channel);
+  return `${order[status] ?? 9}-${playbackModeLabel(status)}`;
 }
 function formatDate(value) {
   if (!value) return t("notAvailable");
@@ -450,7 +450,7 @@ function formatDate(value) {
 }
 function renderResearchSummary() {
   document.querySelector("#metric-sources").textContent = state.channels.length;
-  document.querySelector("#metric-playable").textContent = state.channels.filter(canPlay).length;
+  document.querySelector("#metric-playable").textContent = state.channels.filter(isPlaybackEnabled).length;
   document.querySelector("#metric-schedules").textContent = state.channels.filter((channel) =>
     channel.epg_sources.some((source) => source.scraper_status === "implemented")
   ).length;
@@ -486,7 +486,7 @@ function sortValue(channel, key) {
     source: channel.name,
     jurisdiction: jurisdictionName(channel.country_or_region),
     format: label(channel.source_type),
-    mode: sourceStatusSortValue(channel),
+    mode: playbackModeSortValue(channel),
     language: channel.language,
     access: label(channel.technical_status),
     playback: label(channel.playback_policy),
@@ -507,7 +507,7 @@ function renderSortHeaders() {
   });
 }
 function optionValues(key) { return [...new Set(state.channels.map((channel) => channel[key]))].sort(); }
-function filteredChannels() {
+function filteredSources() {
   const search = normalizeSearchText(elements.search.value.trim());
   return state.channels.filter((channel) => {
     const searchable = normalizeSearchText([channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), countrySearchTerms(state.locale, channel), channel.language].join(" "));
@@ -521,7 +521,7 @@ function filteredChannels() {
   });
 }
 function renderList() {
-  const channels = filteredChannels();
+  const channels = filteredSources();
   renderSortHeaders();
   elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
   if (!channels.some((channel) => channel.id === state.selectedId)) {
@@ -530,20 +530,20 @@ function renderList() {
   }
   elements.list.innerHTML = channels.length ? channels.map((channel) => {
     const descriptionId = `${channel.id}-description`;
-    const status = sourceStatus(channel);
-    const playable = canPlay(channel);
+    const status = playbackMode(channel);
+    const playable = isPlaybackEnabled(channel);
     const external = !playable && status !== "research";
-    const actionLabel = playable ? t("watch") : external ? t("official") : sourceStatusLabel(status);
+    const actionLabel = playable ? t("watch") : external ? t("official") : playbackModeLabel(status);
     return `
     <li class="channel-row">
       <button class="channel-button" type="button" data-channel-id="${channel.id}" aria-pressed="${channel.id === state.selectedId}" aria-describedby="${descriptionId}">
         <span><span class="channel-name">${jurisdictionMark(channel.country_or_region)}${sourceNameMarkup(channel.name)}</span><span class="legislature"${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></span>
         <span>${jurisdictionName(channel.country_or_region)}</span>
         <span class="language-list">${languageMarkup(channel.language)}</span>
-        <span class="watch-action source-posture source-posture-${slug(status)}${external ? " row-link-placeholder" : ""}"${external ? ' aria-hidden="true"' : ""} lang="${state.locale}" title="${sourceStatusDescription(status)}">${actionLabel} <span aria-hidden="true">${playable ? "→" : external ? "↗" : ""}</span></span>
+        <span class="watch-action source-posture source-posture-${slug(status)}${external ? " row-link-placeholder" : ""}"${external ? ' aria-hidden="true"' : ""} lang="${state.locale}" title="${playbackModeDescription(status)}">${actionLabel} <span aria-hidden="true">${playable ? "→" : external ? "↗" : ""}</span></span>
       </button>
       ${external ? `<a class="row-direct-watch" href="${channel.official_url}" target="_blank" rel="noreferrer" aria-label="${t("official")}: ${escapeHtml(channel.name)}">${t("official")} <span aria-hidden="true">↗</span></a>` : ""}
-      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${sourceStatusDescription(status)}</span>
+      <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${playbackModeDescription(status)}</span>
     </li>`;
   }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
@@ -828,7 +828,7 @@ function fallbackMarkup(channel) {
     </dd>
   </div>`;
 }
-function researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy) {
+function researchNotesMarkup(channel, playbackMessage, usesLocalizedPlaybackGuidance) {
   if (state.locale === "en") {
     return `<p class="detail-note"><strong>${t("reuse")}</strong> <span lang="en">${channel.permission.summary} ${evidenceMarkup(channel)}</span></p>
       <p class="detail-note"><strong>${t("recommendation")}</strong> <span lang="en">${playbackMessage}</span></p>`;
@@ -840,10 +840,10 @@ function researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy) 
   const accessibilityNote = meaningfulAccessibilityNote(channel)
     ? `<p><strong>Accessibility note.</strong> ${meaningfulAccessibilityNote(channel)}</p>`
     : "";
-  const recommendation = generatedPlaybackPolicy
+  const recommendation = usesLocalizedPlaybackGuidance
     ? ""
     : `<p><strong>Catalogue recommendation.</strong> ${channel.permission.recommendation}</p>`;
-  const localizedPolicy = generatedPlaybackPolicy
+  const localizedPolicy = usesLocalizedPlaybackGuidance
     ? `<p class="detail-note"><strong>${t("recommendation")}</strong> ${playbackMessage}</p>`
     : "";
 
@@ -932,9 +932,9 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   elements.detail.hidden = !channel;
   document.querySelector(".catalogue-layout").classList.toggle("has-selection", Boolean(channel));
   if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">${t("selectSource")}</p>`; closeDetailSheet(); return; }
-  const allowed = canPlay(channel);
+  const allowed = isPlaybackEnabled(channel);
   elements.detail.classList.toggle("is-link-only", !allowed);
-  const generatedPlaybackPolicy = channel.embed?.provider === "youtube" || allowed;
+  const usesLocalizedPlaybackGuidance = channel.embed?.provider === "youtube" || allowed;
   const playbackMessage = channel.embed?.provider === "youtube"
     ? state.locale === "en"
       ? `${channel.embed.notes} ${t("youtubePlaybackPolicy")}`
@@ -951,13 +951,13 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     </div>
     <h3 class="detail-title" id="detail-title" tabindex="-1" aria-live="polite">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · <span${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></p>
-    ${sourceStatus(channel) === "research" ? `<p class="detail-subtitle research-playback-note">${t("sourceResearchDescription")}</p>` : ""}
+    ${playbackMode(channel) === "research" ? `<p class="detail-subtitle research-playback-note">${t("sourceResearchDescription")}</p>` : ""}
     ${allowed ? `<div class="media-frame" id="media-frame">
       <div class="player-placeholder"><button class="placeholder-play-button" data-start-playback type="button" aria-label="${t("watch")}">▶</button><p>${t("ready")}</p></div>
     </div>` : ""}
     <div class="detail-actions">
       ${allowed ? `<button class="play-button" data-start-playback type="button">${t("watch")}</button>` : ""}
-      <a class="official-button" href="${channel.official_url}" target="_blank" rel="noreferrer">${sourceStatus(channel) === "research" ? t("officialEvidence") : t("official")} ↗</a>
+      <a class="official-button" href="${channel.official_url}" target="_blank" rel="noreferrer">${playbackMode(channel) === "research" ? t("officialEvidence") : t("official")} ↗</a>
     </div>
     ${programme ? `<dl class="detail-grid"><div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div></dl>` : ""}
     <details class="source-documentation">
@@ -980,7 +980,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     </details>
     <details class="source-documentation">
       <summary>${t("useGuidance")}</summary>
-      ${researchNotesMarkup(channel, playbackMessage, generatedPlaybackPolicy)}
+      ${researchNotesMarkup(channel, playbackMessage, usesLocalizedPlaybackGuidance)}
     </details>`;
   elements.detail.classList.toggle("is-open", state.detailSheetOpen);
   document.querySelectorAll("[data-start-playback]").forEach((button) => button.addEventListener("click", () => startPlayback(channel)));
