@@ -14,7 +14,7 @@ programme data and reuse rights are separate review questions.
 
 ## Current State
 
-The catalogue has **269 sources** and the inventory has **940 eligible identity
+The catalogue has **270 sources** and the inventory has **940 eligible identity
 records**. The [current service baseline](reports/discovery/2026-10-25-institution-service-baseline.md)
 records exact matches and remaining per-body work. These are different units;
 neither total is a count of fully validated live streams. Completed work and
@@ -55,10 +55,15 @@ older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
 ## Scraper Work
 
+The [25 October coverage pass](reports/epg/2026-10-25-coverage-pass.md) adds Dutch
+room broadcasts, Quebec's separate linear channel and Spain's dated weekly
+parser. The quality report now tracks every catalogue entry through parser,
+collection, mapping and programme availability states. Named holds remain below.
+
 - [ ] Verify feed/room mappings for event platforms; institutional agendas and
   parallel event directories must not become a fictional linear TV guide.
 - [ ] Improve Brazil's source-date/inferred-end handling and investigate official
-  schedules for Greece and Sansad TV. Prefer documented structured sources, then
+  schedules for Greece, Sansad TV and Denmark. Prefer documented structured sources, then
   add narrowly scoped parsers and saved-response fixtures.
 - [ ] Cover empty/off-session responses, changed markup, cancellations, rescheduling,
   overnight events, timezones and daylight-saving transitions. Preserve valid
@@ -72,7 +77,7 @@ older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
 ## Rights And Permission Work
 
-As of this review, **194 of 269 sources** retain a permission status ending in
+As of this review, **194 of 270 sources** retain a permission status ending in
 `pending_review`. This is an evidence queue, not a statement that all uses are
 prohibited or permitted. Catalogue fields and dated source findings govern each
 source's presentation.

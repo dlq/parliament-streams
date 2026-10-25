@@ -1,0 +1,178 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-25",
+  "scope": "Official Greece Hellenic Parliament TV, Spain Canal Parlamento and India Sansad TV1/TV2 linear programme-source assessment; bounded HTTP text and primary indexed page review only.",
+  "does_not_certify": [
+    "Current stream playback",
+    "Embed or rebroadcast rights",
+    "Exhaustive programme coverage",
+    "Historical search-index content as a current schedule"
+  ],
+  "sources": [
+    {
+      "country": "Greece",
+      "channel_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "status": "hold_inaccessible_collection_contract",
+      "maintained_page": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/program",
+      "official_programme_page": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/programma/",
+      "evidence_urls": [
+        "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/programma/",
+        "https://www.hellenicparliament.gr/en/Enimerosi/Vouli-Tileorasi/programma/",
+        "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/Identity/"
+      ],
+      "confirmed": [
+        "The maintained /program route renders the TV homepage; its own Programme link points to /programma/.",
+        "The programme page distinguishes Television transmission from WebTV channels 1, 2 and 3; these must not be merged.",
+        "Indexed official programme content includes local start/end clock ranges and a calendar, with explicit warning that live parliamentary sessions can change the planned broadcasts."
+      ],
+      "probe_results": {
+        "programme_get_http_status": 403,
+        "english_programme_get_http_status": 403,
+        "dated_programme_get_http_status": 403
+      },
+      "unresolved": [
+        "No successful current raw programme response or linked machine payload was obtained, so date-to-listing and overnight semantics have not been validated.",
+        "Do not promote a parser or map WebTV 2/3 listings to the linear television channel."
+      ],
+      "timezone": "Europe/Athens",
+      "parser_added": false,
+      "linear_mapping_enabled": false
+    },
+    {
+      "country": "Spain",
+      "channel_ids": [
+        "spain-canal-parlamento"
+      ],
+      "status": "implemented_live_empty_week_confirmed",
+      "official_programme_page": "https://www.congreso.es/programacion",
+      "evidence_urls": [
+        "https://www.congreso.es/programacion",
+        "https://www.congreso.es/gl/programacion",
+        "https://www.congreso.es/es/programacion?_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_fechaSeleccionada=2026-09-28&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_mvcPath=%2Fview_semanal.jsp&p_p_id=canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal"
+      ],
+      "confirmed": [
+        "Official page explicitly identifies the linear Canal Parlamento broadcast schedule and links the transmission page; it is separate from general Congress agenda and simultaneous Congreso en Directo room feeds.",
+        "The live homepage and weekly view expose a source-dated Monday-to-Sunday range and the actual portlet weekly link.",
+        "The current 19–25 October 2026 week returns a recognized dated empty programme container.",
+        "The indexed 28 September–4 October 2026 page shows clock-timed broadcast rows and Fin Anterior rows, but a live fetch of that same week now also returns a dated empty container. Indexed rows are historical evidence only."
+      ],
+      "probe_results": {
+        "canonical_homepage_browser_ua_http_status": 200,
+        "weekly_browser_ua_http_status": 200,
+        "collector_default_ua_http_status": 403,
+        "transparent_mozilla_project_ua_http_status": 403,
+        "empty_week_parser_checks": [
+          {
+            "name": "current_week",
+            "raw_bytes": 85354,
+            "parsed_channels": 0
+          },
+          {
+            "name": "historical_week",
+            "raw_bytes": 85528,
+            "parsed_channels": 0
+          }
+        ],
+        "runtime_collector": {
+          "status": "success",
+          "parsed_channels": 0,
+          "fetched_pages": [
+            {
+              "url": "https://www.congreso.es/programacion",
+              "bytes": 87293,
+              "user_agent": "Mozilla/5.0"
+            },
+            {
+              "url": "https://www.congreso.es:443/es/programacion?p_p_id=canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_fechaSeleccionada=2026-10-25&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_mvcPath=%2Fview_semanal.jsp",
+              "bytes": 86074,
+              "user_agent": "Mozilla/5.0"
+            }
+          ],
+          "displayed_week": "2026-10-19 through 2026-10-25",
+          "source_local_selected_date": "2026-10-25",
+          "interpretation": "Recognized source-dated empty programme week, not fabricated guide output."
+        }
+      },
+      "implementation": {
+        "module": "parliament_streams.scrapers.spain_canal_parlamento",
+        "source": {
+          "id": "spain-canal-parlamento-weekly",
+          "channel_ids": [
+            "spain-canal-parlamento"
+          ],
+          "url": "https://www.congreso.es/programacion",
+          "method": "GET",
+          "headers": {
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "text/html"
+          },
+          "notes": "Follows the official weekly broadcast link, using its displayed date range. Unknown 'Fin Anterior' starts and last daily ends remain unresolved. The public site currently requires an ordinary browser compatibility User-Agent."
+        },
+        "registry_edited": false,
+        "catalogue_edited": false
+      },
+      "mapping_recommendation": {
+        "scraper_id": "spain-canal-parlamento-weekly",
+        "channel_ids": [
+          "spain-canal-parlamento"
+        ],
+        "scope": "broadcast_schedule",
+        "linear_mapping_evidence": "The official weekly page is labelled Programacion del Canal Parlamento, links the channel transmission page and provides a broadcast timetable; no mapping to the general institutional agenda or other room feeds is proposed.",
+        "registration_ready": true
+      },
+      "time_semantics": {
+        "timezone": "Europe/Madrid",
+        "date_basis": "Displayed source week plus weekday heading; collection chooses date in source timezone, never runner date.",
+        "start_basis": "source",
+        "end_basis_when_known": "next_listing_start",
+        "end_policy": "Only immediately following timed row in the same dated day can close the previous slot. An unknown-start row breaks inference. Daily final slots have no invented end.",
+        "midnight_policy": "Explicit 24:00 becomes next local midnight. Bare decreasing clocks and following ambiguous rollover rows are omitted until a fresh weekday heading; no cross-day end inference.",
+        "dst_policy": "Shared localize_source_time rejects nonexistent or ambiguous local clocks; no arbitrary fold or offset.",
+        "publication": "UTC RFC3339 timestamps plus source_timezone are emitted for shared viewer-local display."
+      },
+      "unresolved": [
+        "The source requires the ordinary Mozilla/5.0 compatibility header at present. Both collector default identified UA and transparent Mozilla-compatible project UA receive 403; the configured ordinary compatibility header succeeds through shared fetch_text for both official pages. Future HTTP errors propagate as collection errors. No challenge, cookie, login or special retry bypass is implemented.",
+        "No nonempty live weekly payload was available on this research date. Parser supports the primary indexed day/table structure, with focused synthetic tests, but a populated live response should be rechecked.",
+        "Week/day unknown-start and last-slot boundaries remain incomplete and are not exportable until supported."
+      ],
+      "tests": {
+        "module": "tests.test_spain_canal_parlamento",
+        "test_methods": 10,
+        "passed": true,
+        "ruff": "passed",
+        "strict_mypy": "passed"
+      }
+    },
+    {
+      "country": "India",
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "status": "hold_current_schedule_unavailable",
+      "official_programme_page": "https://sansadtv.nic.in/program-schedule",
+      "evidence_urls": [
+        "https://sansadtv.nic.in/program-schedule",
+        "https://sansadtv.nic.in/wp-content/uploads/2024/06/FPC-SANSADTV-01-25.06.2024-Tuesday-01-2.pdf"
+      ],
+      "confirmed": [
+        "The official indexed programme-schedule page exists but exposes no programme rows in the available text.",
+        "One official historical PDF is explicitly dated 25 June 2024 and labelled Sansad TV 01, with programme start-clock rows; this does not establish a current source for either channel."
+      ],
+      "probe_results": {
+        "programme_get": "timeout",
+        "homepage_get": "timeout"
+      },
+      "unresolved": [
+        "No current reachable HTML/JSON or officially linked current schedule document was obtained.",
+        "A historical channel 1 PDF is not current coverage and does not validate channel 2 mapping.",
+        "PDF document discovery/extraction, current-date evidence, timezone and next-slot/end handling need a separate validated source contract."
+      ],
+      "timezone": "Asia/Kolkata",
+      "parser_added": false,
+      "linear_mapping_enabled": false
+    }
+  ]
+}

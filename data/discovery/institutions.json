@@ -10786,7 +10786,30 @@
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "quebec-canal01",
+          "quebec-canal02",
+          "quebec-canal03",
+          "quebec-canal04",
+          "quebec-canal05",
+          "quebec-canal06",
+          "quebec-canal07",
+          "quebec-canal08",
+          "quebec-canal09",
+          "quebec-canal10",
+          "quebec-canal11",
+          "quebec-canal12",
+          "quebec-canal13",
+          "quebec-canal14",
+          "quebec-canal-assemblee"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/epg/2026-10-25-canada-guide-mappings.json",
+        "record_id": "canada--quebec",
+        "basis": "The Assembly identifies its separate linear Canal de l’Assemblée as canal17, distinct from the existing canal01–14 event webcasts; the official viewing page and dated weekly programme establish the exact institution and service."
+      }
     },
     {
       "id": "canada--saskatchewan",

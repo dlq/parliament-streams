@@ -1,0 +1,89 @@
+{
+  "reviewed_on": "2026-10-25",
+  "source": "dutch-debat-direct",
+  "scope": "Exact room broadcast guides for existing Tweede Kamer catalogue feeds",
+  "primary_evidence": [
+    {
+      "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+      "finding": "The first-party live page separates plenary and named committee rooms. Public plenary and committee meetings are broadcast; closed meetings are excluded. Planned times may change."
+    },
+    {
+      "url": "https://debatdirect.tweedekamer.nl/",
+      "finding": "Official app bundle declares api.debatdirect.tweedekamer.nl/api and /agenda/YYYY-MM-DD; date/category/location/slug links identify programmes."
+    }
+  ],
+  "inputs": [
+    {
+      "url": "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-25",
+      "retrieved_on": "2026-10-25",
+      "status": 200,
+      "sha256": "51be82d83d76f3ec1adb13375f2726211024cbf9dfbfd1fc3baf519117755ee2"
+    },
+    {
+      "url": "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-26",
+      "retrieved_on": "2026-10-25",
+      "status": 200,
+      "sha256": "a01e3063764387d4bc08c8fa044faf447401273f777a0f70868527a49f7cb3e3"
+    },
+    {
+      "url": "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-27",
+      "retrieved_on": "2026-10-25",
+      "status": 200,
+      "sha256": "989693db69e080d0173f1138d8f2a2829ce30b630e6fdd6b62059a2f9fe974c7"
+    },
+    {
+      "url": "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-28",
+      "retrieved_on": "2026-10-25",
+      "status": 200,
+      "sha256": "0b1d357b1aff1d200cb70965f2e859ca956ff445d09ffa7e3892b23526a9a572"
+    },
+    {
+      "url": "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-29",
+      "retrieved_on": "2026-10-25",
+      "status": 200,
+      "sha256": "e4a0abf6735d1542c6d88506c63e34bd7bbdf84cbd5c9cf53a8c10795f7aaa3d"
+    }
+  ],
+  "room_counts_in_sample": {
+    "troelstrazaal": 6,
+    "wttewaall-van-stoetwegenzaal": 4,
+    "thorbeckezaal": 4,
+    "plenaire-zaal": 14,
+    "studio-tolk-gebarentaal": 1,
+    "suze-groenewegzaal": 5,
+    "groen-van-prinstererzaal": 6,
+    "klompezaal": 2
+  },
+  "mappings": [
+    {
+      "location_id": "plenaire-zaal",
+      "catalogue_id": "netherlands-tweede-kamer",
+      "sample_events": 14,
+      "decision": "reviewed_linear_room_mapping"
+    },
+    {
+      "location_id": "aletta-jacobszaal",
+      "catalogue_id": "netherlands-tweede-kamer-aletta-jacobszaal",
+      "sample_events": 0,
+      "decision": "reviewed_linear_room_mapping_no_events_in_sample"
+    },
+    {
+      "catalogue_id": "netherlands-tweede-kamer-actualiteitenkanaal",
+      "decision": "unresolved_no_affirmative_agenda_location_mapping"
+    }
+  ],
+  "programme_times": "Use source startsAt/endsAt explicit offsets; normalize UTC and retain Europe/Amsterdam. Missing or naive ends remain unknown; no inferred ends.",
+  "collection": "Seven source-calendar dates including today. Each response date must match its requested date and contain a debates collection; genuine empty days stay empty.",
+  "tests": "Exact room separation; current/cancelled events; explicit repeated autumn clocks; missing ends; wrong date/layout; source-local UTC-midnight window.",
+  "limits": [
+    "Schedule plans can change.",
+    "Other room IDs require their own catalogue sources before guide mapping.",
+    "No playback or new reuse clearance."
+  ],
+  "other_recorded_lead": {
+    "id": "denmark-folketinget",
+    "url": "https://www.ft.dk/da/Aktuelt/webtv/TV_kanalen_folketinget",
+    "decision": "collection_hold",
+    "finding": "Primary indexed page exposes dated linear TV listings, but direct bounded HTTP gets403 with both project and ordinary compatible client headers. No working parser is claimed."
+  }
+}

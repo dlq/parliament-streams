@@ -3,9 +3,8 @@
 from __future__ import annotations
 
 import re
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from urllib.parse import urljoin
-from zoneinfo import ZoneInfo
 
 from .common import (
     Fetcher as Fetcher,
@@ -18,6 +17,7 @@ from .common import (
     clean_html,
     format_utc_timestamp,
     local_time_label,
+    localize_source_time,
     normalized_events,
 )
 
@@ -69,16 +69,36 @@ def source_url_for_channel(channel_id: str, urls: list[str]) -> str:
     return URL_BY_CHANNEL.get(channel_id, urls[0])
 
 
-def _parse_start(date_text: str, time_text: str) -> datetime | None:
-    first_time = time_text.split("-", 1)[0].strip()
+def _wall_clock(date_text: str, time_text: str) -> datetime | None:
     for pattern in ("%a, %b %d, %Y %I:%M %p", "%a, %B %d, %Y %I:%M %p"):
         try:
-            return datetime.strptime(f"{date_text} {first_time}", pattern).replace(
-                tzinfo=ZoneInfo("America/Toronto")
-            )
+            return datetime.strptime(f"{date_text} {time_text.strip()}", pattern)
         except ValueError:
             continue
     return None
+
+
+def _parse_start(date_text: str, time_text: str) -> datetime | None:
+    first_time = re.split(r"\s*[-–—]\s*", time_text, maxsplit=1)[0]
+    wall_clock = _wall_clock(date_text, first_time)
+    return localize_source_time(wall_clock, "America/Toronto") if wall_clock else None
+
+
+def _parse_end(date_text: str, time_text: str, start: datetime) -> datetime | None:
+    parts = re.split(r"\s*[-–—]\s*", time_text, maxsplit=1)
+    if len(parts) != 2 or not parts[1].strip():
+        return None
+    end = _wall_clock(date_text, parts[1])
+    local_start = start.replace(tzinfo=None)
+    if end is None or end == local_start:
+        return None
+    if end < local_start:
+        # The published PM-to-AM range crosses midnight; other backwards
+        # ranges are ambiguous and must not become an invented programme end.
+        if start.hour < 12 or end.hour >= 12:
+            return None
+        end += timedelta(days=1)
+    return localize_source_time(end, "America/Toronto")
 
 
 def _attribute(attrs: str, name: str) -> str:
@@ -149,13 +169,18 @@ def parse(
         time_html,
         date_html,
     ) in EVENT_RE.findall(html):
-        start = _parse_start(clean_html(date_html), clean_html(time_html))
+        date_text = clean_html(date_html)
+        time_text = clean_html(time_html)
+        start = _parse_start(date_text, time_text)
         href = _attribute(attrs, "href")
         title_text = _attribute(attrs, "title")
         title = _title(title_text, title_cell_html, description_html)
         event_url = urljoin(base_url, href)
         if start and title:
             event: ScheduleEvent = {"start": start, "title": title, "url": event_url}
+            end = _parse_end(date_text, time_text, start)
+            if end is not None:
+                event["end"] = end
             event_id = _event_id(event_url)
             event_status = _status(title_cell_html)
             location = _location(title_cell_html)

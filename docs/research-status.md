@@ -2,9 +2,26 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
-## Continued Held-Source Review — 25 October 2026
+## EPG Coverage Improvements — 25 October 2026
 
-Thirteen further scoped official viewing links bring the local catalogue to
+The local catalogue now has **270 sources**, including Quebec's separate Canal
+de l'Assemblée official viewing page. **37 entries** have implemented parsers
+across **20 unique URLs**. The [EPG coverage pass](../reports/epg/2026-10-25-coverage-pass.md)
+records a fresh validated export with **83 programmes across four channels**,
+up from the preceding checked deployment's 51 across two. Dutch and Quebec guide
+additions, 65 recovered Canadian event end times, source-date guards and exact
+Italian WebTV1 filtering keep broadcast claims distinct from institutional
+agendas. IPTV playlists remain at four stable / 38 broader entries.
+
+The current baseline links 247 catalogue IDs to 222 exact eligible identities;
+the eligible inventory remains 940. The quality report classifies every catalogue
+ID by parser, collection, mapping and programme state. Missing parsers and named
+access/time/mapping holds remain explicit. All-source checks, UTC/source-zone
+regressions and muted viewer-timezone/browser tests are documented with the pass.
+
+## Earlier Held-Source Review — 25 October 2026
+
+The preceding thirteen-source viewing review brought the catalogue to
 **269 sources**: Iceland, Moldova, Catamarca Deputies, San Luis Deputies, Salta
 Senate, Zug, the French Community, Liberec, Zlín, Madeira, Kepulauan Riau, Chakma
 and Lai. Iceland's confirmed sample is a historical committee archive; other
@@ -14,8 +31,9 @@ Finland already had a catalogue record; its evidence is updated rather than
 adding another entry.
 [Publication decisions](../reports/discovery/2026-10-25-held-source-publication-decisions.json).
 
-The [current baseline](../reports/discovery/2026-10-25-institution-service-baseline.md)
-has **222 exact eligible identity matches**, linking 246 distinct catalogue IDs.
+That viewing-review checkpoint had **222 exact eligible identity matches**,
+linking 246 distinct catalogue IDs. The subsequent EPG pass adds Quebec's
+separate TV service to the [current baseline](../reports/discovery/2026-10-25-institution-service-baseline.md).
 The [25 individual follow-ups](../reports/discovery/2026-10-25-service-review-continued-held-sources.json)
 bring renewed partial checks to **308**, with **632 earlier-only service checks**.
 This continuation does not freshly replay every eligible institution. Retained
@@ -36,10 +54,10 @@ flag bring flag coverage to **256 records**, with **13 neutral marks** retaining
 their design/adoption gaps.
 [Flag evidence](../reports/discovery/2026-10-25-continued-catalogue-flags.json).
 
-The monthly discovery plan now has **1,463 unique check targets**, including all
-269 catalogue records. Of 940 eligible identities, 938 have ordinary page routes;
+The monthly discovery plan now has **1,464 unique check targets**, including all
+270 catalogue records. Of 940 eligible identities, 938 have ordinary page routes;
 Ngäbe–Buglé's General Congress and Sri Lanka's North Central province retain
-document-only route gaps. Inventory monitoring validates **1,743 deduplicated
+document-only route gaps. Inventory monitoring validates **1,744 deduplicated
 evidence sources**. These are offline input checks; they do not confirm current
 URL access, programme coverage or reuse rights. Strict schema validation also
 encoded two space-containing evidence links and removed one malformed historical
@@ -212,16 +230,16 @@ update and regeneration.
 These counts describe the working tree. They do not assert that local changes
 are committed or deployed. `data/channels.json` is the canonical catalogue.
 
-- **269 sources**: 78 national, 185 regional/territorial and six supranational.
+- **270 sources**: 78 national, 186 regional/territorial and six supranational.
 - **163 mapped regional jurisdictions**: 160 outlines and three explicitly
   labelled institution-location markers.
-- 256 catalogue records have sourced jurisdiction flags; 13 remain neutral with
+- 257 catalogue records have sourced jurisdiction flags; 13 remain neutral with
   documented design/adoption gaps. This continuation adds seven assets and
   documents the French Community's reuse of its adopted flag.
   [Flag coverage and source reports](../reports/discovery/2026-10-24-catalogue-flag-coverage.json).
-- 38 native-player sources, three provider embeds, 219 official link-outs and
+- 38 native-player sources, three provider embeds, 220 official link-outs and
   nine research-only records. Strict IPTV exports retain their separate gates.
-- 33 records have implemented schedule metadata, covering 17 unique source URLs.
+- 37 records have implemented schedule metadata, covering 20 unique source URLs.
   Another 241 unique schedule/event URLs remain planned and filterable on the
   schedule page, even if generated guide data is temporarily unavailable.
 - 194 records remain permission-pending. Selected muted playback does not certify

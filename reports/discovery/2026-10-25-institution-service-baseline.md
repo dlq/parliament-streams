@@ -9,13 +9,13 @@ and distinct organs; counts are not interchangeable with jurisdictions or stream
 | Measure | Records | Interpretation |
 | --- | ---: | --- |
 | Eligible identities | 940 | Authority-cleared service queue |
-| Exact catalogue matches | 222 | 246 distinct catalogue IDs; no automatic parent/chamber inheritance |
+| Exact catalogue matches | 222 | 247 distinct catalogue IDs; no automatic parent/chamber inheritance |
 | Without exact documented match | 718 | Crosswalk or service-evidence gap, not proof of no broadcast |
 | Renewed partial source follow-ups | 308 | Specific recorded findings and unresolved questions |
 | Earlier service checks only | 632 | Dated evidence, not a fresh replay in this batch |
 | Expanded identities with no individual disposition | 0 | Evidence coverage, not universal validation |
-| Catalogue sources | 269 | 13 new scoped official viewing links |
-| Sources with implemented guide parsers | 33 | No parser or IPTV admission added |
+| Catalogue sources | 270 | Includes the separate Quebec Canal de l'Assemblée official viewing page |
+| Sources with implemented guide parsers | 37 | Parser coverage is separate from current programmes and IPTV admission |
 
 [This continuation](2026-10-25-held-source-publication-decisions.json) adds thirteen
 sources, documents six missing exact chamber crosswalks and deepens Finland's
@@ -29,6 +29,11 @@ Six new generalized outlines and three labelled institution-location markers
 reconcile the additions with map/search/schedule navigation. A locator is not an
 autonomous or linguistic boundary. Thirteen neutral flag marks retain explicit
 design/adoption gaps; no fictional or parent flags are substituted.
+
+The [subsequent EPG pass](../epg/2026-10-25-coverage-pass.md) adds Quebec's separate
+linear viewing source and exact crosswalk without changing the eligible identity
+count. Dutch, Spanish and Quebec parser additions are scoped to their reviewed
+feeds; institutional event directories retain their guide-mapping holds.
 
 The earlier [24 October baseline](2026-10-24-institution-service-baseline.md)
 remains a dated snapshot. The historical 652-body service cohort is unchanged;

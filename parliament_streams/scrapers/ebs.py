@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import json
+import math
 from datetime import UTC, datetime, timedelta
 from typing import Any
 from urllib.parse import urlencode
+from zoneinfo import ZoneInfo
 
 from .common import (
     FetchRequest,
@@ -33,11 +35,12 @@ SOURCE: ScraperSource = {
 
 
 def request_specs(now: datetime) -> list[FetchRequest]:
-    tomorrow = now.date() + timedelta(days=1)
+    local_date = now.astimezone(ZoneInfo("Europe/Brussels")).date()
+    tomorrow = local_date + timedelta(days=1)
     query = urlencode(
         {
             "channelName": "EBS",
-            "dateFrom": now.strftime("%Y%m%d"),
+            "dateFrom": local_date.strftime("%Y%m%d"),
             "dateTo": tomorrow.strftime("%Y%m%d"),
             "withCompleteThesaurusData": "true",
         }
@@ -52,23 +55,48 @@ def _title(program: dict[str, Any]) -> str:
     return clean_html(str(selected.get("content", "")))
 
 
+def _programme_end(start: datetime, raw_duration: object) -> datetime | None:
+    """Use source seconds without truncating fractional durations or inventing ends."""
+    if isinstance(raw_duration, bool) or not isinstance(raw_duration, (str, int, float)):
+        return None
+    try:
+        duration = float(raw_duration)
+    except (ValueError, TypeError, OverflowError):
+        return None
+    if not math.isfinite(duration) or duration <= 0:
+        return None
+    try:
+        return start + timedelta(seconds=duration)
+    except OverflowError:
+        return None
+
+
 def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     days = json.loads(payload)
     events: list[ScheduleEvent] = []
     for day in days:
+        channel = day.get("channel", {})
+        if channel and channel.get("name") != "EBS":
+            continue
         for program in day.get("programs", []):
+            if (
+                channel.get("id")
+                and program.get("channelId")
+                and program["channelId"] != channel["id"]
+            ):
+                continue
             start = parse_iso(str(program.get("startDatetime", "")))
             title = _title(program)
-            if not start or not title:
+            if not start or start.utcoffset() is None or not title:
                 continue
-            try:
-                duration = int(program.get("duration") or 0)
-            except (ValueError, TypeError):
-                duration = 0
             event: ScheduleEvent = {"start": start, "title": title}
-            if duration > 0:
-                event["end"] = start + timedelta(seconds=duration)
+            if program.get("id"):
+                event["event_id"] = str(program["id"])
+            end = _programme_end(start, program.get("duration"))
+            if end is not None:
+                event["end"] = end
+                event["end_basis"] = "source"
             events.append(event)
     events.sort(key=lambda event: event["start"])
 

@@ -1,5 +1,27 @@
 # Changelog
 
+## 25 October — Broader, Feed-Specific EPG Coverage
+
+Add official Dutch room agendas, a dated Spain Canal Parlamento collector and
+Quebec's separately identified linear Canal de l'Assemblée. The new Quebec
+official viewing-page entry brings the catalogue to 270 sources and retains its
+exact inventory crosswalk, existing map/flag/search support and conservative
+playback policy. Thirty-seven catalogue entries now have implemented parsers.
+
+Recover published Canadian event ends, retain EBS fractional durations and
+official identities, require the Italian Senate's exact WebTV1/13440 feed, and
+guard Brazil's active source weekday. Missing source dates, end times and room
+mappings remain unresolved. UTC serialization rejects naive clocks and source
+localization rejects unresolved DST gaps/folds; browser checks verify actual
+catalogue/schedule times in Toronto, Amsterdam and Auckland.
+
+The fresh local export validates 83 programmes across four channels, compared
+with the preceding checked deployment's 51 across two; 31 programmes belong to
+the newly covered Dutch and Quebec feeds. Playlist admission remains unchanged.
+EPG quality now reports every catalogue entry's parser/collection/mapping/guide
+state, enforced by schema and publication checks and summarized in Pages Actions.
+[Coverage results and remaining queue](reports/epg/2026-10-25-coverage-pass.md).
+
 ## 25 October — Code Audit And Data Product Contracts
 
 Removed unreachable UI styles/sort modes, an unused hash helper, unreachable

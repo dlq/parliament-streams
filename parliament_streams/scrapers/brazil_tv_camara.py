@@ -26,30 +26,54 @@ SOURCE: ScraperSource = {
     "notes": "Extracts time/title rows from the active tab of TV Camara's weekly schedule.",
 }
 
+DAY_IDS = {
+    "segunda_feira": 0,
+    "terca_feira": 1,
+    "quarta_feira": 2,
+    "quinta_feira": 3,
+    "sexta_feira": 4,
+    "sabado": 5,
+    "domingo": 6,
+}
+TAB_PANE_RE = re.compile(
+    r"<div\b([^>]*\bclass\s*=\s*[\"\'][^\"\']*\btab-pane\b[^\"\']*[\"\'][^>]*)>",
+    re.IGNORECASE,
+)
+
 
 def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
-    active = _active_tab_html(html) or html
+    source_tz = ZoneInfo("America/Sao_Paulo")
+    source_now = now.astimezone(source_tz)
+    active = _active_tab_html(html, weekday=source_now.weekday())
+    if active is None:
+        if TAB_PANE_RE.search(html):
+            return {}
+        active = html
     events: list[ScheduleEvent] = []
     pattern = re.compile(
         r"<tr[^>]*>\s*<td[^>]*>\s*<span[^>]*>(\d{1,2}:\d{2})</span>\s*</td>\s*"
         r"<td[^>]*>\s*<span[^>]*>([\s\S]*?)</span>\s*</td>\s*</tr>",
         re.IGNORECASE,
     )
-    source_tz = ZoneInfo("America/Sao_Paulo")
-    source_now = now.astimezone(source_tz)
     for time_text, title_html in pattern.findall(active):
         hour, minute = [int(part) for part in time_text.split(":")]
-        start = source_now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        try:
+            start = source_now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        except ValueError:
+            continue
         title = clean_html(title_html)
         if title:
+            if events and start < events[-1]["start"]:
+                return {}
             events.append({"start": start, "title": title, "start_basis": "collection_date"})
     events.sort(key=lambda item: item["start"])
     if not events:
         return {}
     for event, following in zip(events, events[1:], strict=False):
-        event["end"] = following["start"]
-        event["end_basis"] = "next_listing_start"
+        if following["start"] > event["start"]:
+            event["end"] = following["start"]
+            event["end_basis"] = "next_listing_start"
 
     current = next((event for event in reversed(events) if event["start"] <= now), None)
     next_event = next((event for event in events if event["start"] > now), None)
@@ -74,11 +98,22 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     return {"brazil-tv-camara": schedule}
 
 
-def _active_tab_html(html: str) -> str | None:
-    match = re.search(
-        r'<div[^>]*class="[^"]*\btab-pane\b[^"]*\bactive\b[^"]*"[^>]*>'
-        r"([\s\S]*?)(?=<div[^>]*class=\"[^\"]*\btab-pane\b|</div>\s*</div>\s*</div>)",
-        html,
-        flags=re.IGNORECASE,
-    )
-    return match.group(1) if match else None
+def _active_tab_html(html: str, *, weekday: int) -> str | None:
+    """Select one active source day without assigning other weekday rows to today."""
+    panes = list(TAB_PANE_RE.finditer(html))
+    active: list[tuple[int, re.Match[str]]] = []
+    for index, pane in enumerate(panes):
+        classes = re.search(r"\bclass\s*=\s*[\"']([^\"']*)", pane.group(1), re.IGNORECASE)
+        if classes and "active" in classes.group(1).split():
+            active.append((index, pane))
+    if len(active) != 1:
+        return None
+    index, pane = active[0]
+    day_id = re.search(r"\bid\s*=\s*[\"']([^\"']+)", pane.group(1), re.IGNORECASE)
+    if day_id:
+        if DAY_IDS.get(day_id.group(1)) != weekday:
+            return None
+    elif len(panes) > 1:
+        return None
+    end = panes[index + 1].start() if index + 1 < len(panes) else len(html)
+    return html[pane.end() : end]

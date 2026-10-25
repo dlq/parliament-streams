@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections import Counter
 from dataclasses import dataclass
 from datetime import UTC, datetime
-from typing import TypedDict
+from typing import Literal, NotRequired, TypedDict
 
 from .models import Catalogue
 from .schedule_collection import ScheduleSnapshot
@@ -18,6 +18,12 @@ LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
     "brazil-tv-camara": {"brazil-tv-camara"},
     "ebs-grid": {"eu-audiovisual-ebs"},
     "italian-senate-palimpsest": {"italy-senate"},
+    "dutch-debat-direct": {
+        "netherlands-tweede-kamer",
+        "netherlands-tweede-kamer-aletta-jacobszaal",
+    },
+    "spain-canal-parlamento-weekly": {"spain-canal-parlamento"},
+    "quebec-canal-assemblee": {"quebec-canal-assemblee"},
 }
 SOURCE_SCOPES = {
     "europarl-webstreaming": "event_directory",
@@ -51,6 +57,92 @@ class QualityReport(TypedDict):
     generated_at: str
     counts: dict[str, int]
     channels: dict[str, ChannelQuality]
+    coverage: NotRequired[GuideCoverage]
+
+
+CoverageState = Literal[
+    "parser_planned",
+    "not_collected",
+    "empty",
+    "collection_error",
+    "mapping_unverified",
+    "quality_hold",
+    "guide_available",
+]
+
+
+class ChannelCoverage(TypedDict):
+    parser_ids: list[str]
+    reviewed_parser_ids: list[str]
+    events: int
+    exportable: int
+    state: CoverageState
+
+
+class GuideCoverage(TypedDict):
+    counts: dict[str, int]
+    channels: dict[str, ChannelCoverage]
+
+
+def guide_coverage(
+    catalogue: Catalogue, snapshot: ScheduleSnapshot, quality: dict[str, ChannelQuality]
+) -> GuideCoverage:
+    """Describe every catalogue entry, including sources absent from a parsed snapshot."""
+    rows: dict[str, ChannelCoverage] = {}
+    for channel in catalogue["channels"]:
+        channel_id = channel["id"]
+        parsers = sorted(
+            {
+                source["scraper"]
+                for source in channel["epg_sources"]
+                if source["scraper_status"] == "implemented"
+            }
+        )
+        reviewed = [
+            parser
+            for parser in parsers
+            if channel_id in LINEAR_GUIDE_CHANNELS_BY_SCRAPER.get(parser, set())
+        ]
+        row = quality.get(channel_id)
+        statuses = {
+            source["status"]
+            for parser in parsers
+            if (source := snapshot.get("sources", {}).get(parser)) is not None
+        }
+        events = row["events"] if row else 0
+        exported = row["exportable"] if row else 0
+        state: CoverageState
+        if exported:
+            state = "guide_available"
+        elif events:
+            state = "quality_hold" if row and row["linear_guide_eligible"] else "mapping_unverified"
+        elif not parsers:
+            state = "parser_planned"
+        elif "error" in statuses:
+            state = "collection_error"
+        elif statuses:
+            state = "empty"
+        else:
+            state = "not_collected"
+        rows[channel_id] = {
+            "parser_ids": parsers,
+            "reviewed_parser_ids": reviewed,
+            "events": events,
+            "exportable": exported,
+            "state": state,
+        }
+    return {
+        "counts": {
+            "catalogue_sources": len(rows),
+            "channels_with_parser": sum(bool(row["parser_ids"]) for row in rows.values()),
+            "channels_with_reviewed_mapping": sum(
+                bool(row["reviewed_parser_ids"]) for row in rows.values()
+            ),
+            "channels_with_events": sum(row["events"] > 0 for row in rows.values()),
+            "channels_with_programmes": sum(row["exportable"] > 0 for row in rows.values()),
+        },
+        "channels": rows,
+    }
 
 
 @dataclass
@@ -181,4 +273,5 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
         "channels_with_events": sum(row["events"] > 0 for row in channels),
         **{f"excluded_{reason}": count for reason, count in sorted(total_reasons.items())},
     }
+    report["coverage"] = guide_coverage(catalogue, snapshot, report["channels"])
     return ScheduleAssessment(report, exportable_events_by_channel)

@@ -42,6 +42,9 @@ Current scraper ids:
 - `uk-parliament`
 - `un-webtv-schedule`
 - `youtube-live`
+- `dutch-debat-direct`
+- `spain-canal-parlamento-weekly`
+- `quebec-canal-assemblee`
 
 They parse supplied HTML/JSON strings. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
@@ -51,9 +54,9 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-25, all 269 catalogue source records have at least one official
-schedule, agenda, meeting or dated video-event surface recorded. Thirty-three
-records use implemented parsers across 17 unique URLs; 241 other unique URLs
+As of 2026-10-25, all 270 catalogue source records have at least one official
+schedule, agenda, meeting or dated video-event surface recorded. Thirty-seven
+records use implemented parsers across 20 unique URLs; 241 other unique URLs
 remain planned. These are source-discovery counts, not populated programme-guide
 coverage or proof that every surface describes a broadcast. The jurisdiction filter
 includes both parsed-guide records and planned official calendar/navigation links.
@@ -207,7 +210,9 @@ pending, and no recording or catch-up permission is asserted.
 
 The guide requires a reviewed mapping from the schedule source to a particular
 broadcast feed, plus valid timezone-aware start/end times. The reviewed sources
-are Brazil TV Camara, CPAC, EBS, and the Italian Senate palimpsest. Other sources
+are Brazil TV Camara, CPAC, EBS, the Italian Senate's identified WebTV1/13440 feed,
+the Dutch plenary and Aletta Jacobs rooms, Spain Canal Parlamento, and Quebec's
+separate Canal de l'Assemblée (canal17). Other sources
 default to excluded until their feed mapping is reviewed. European Parliament's
 parallel event directory remains in the website schedule JSON, with room labels,
 but is not exported as a single XMLTV channel. Institutional agendas and other
@@ -227,6 +232,43 @@ or nonpositive EBS durations remain unknown instead of creating zero-length
 programmes. Bounded retained schedules are also labelled in descriptions.
 Official HTML/JSON/calendar URLs in `epg_sources` are research inputs, not
 generally importable IPTV guide URLs.
+
+## Coverage And Remaining Work
+
+The quality report now includes `coverage.counts` and a `coverage.channels` entry
+for every catalogue source, including sources absent from the current snapshot.
+Each entry identifies its implemented and reviewed parsers, event/programme
+counts and one of these states: `parser_planned`, `not_collected`, `empty`,
+`collection_error`, `mapping_unverified`, `quality_hold`, or `guide_available`.
+An XMLTV channel definition is separate from a channel with programme entries.
+Pages includes the coverage totals in its Actions summary, and publication
+validation checks the coverage against the catalogue and collected events.
+Older quality reports without the optional coverage section remain readable.
+
+The [25 October EPG pass](../reports/epg/2026-10-25-coverage-pass.md) records
+the new parsers and the remaining named holds. Dutch agendas use exact room IDs;
+the Actualiteitenkanaal retains its mapping hold. Quebec's linear programme
+belongs to the separately catalogued canal17 service, never the canal01–14 event
+webcasts. Recovered ParlVU/SenVu end times improve website event data while those
+mixed-room directories remain outside the linear guide. Spain's current dated
+view can legitimately be empty. Greece and Denmark retain automated access
+holds, and Sansad TV needs a current accessible programme source.
+
+## Source And Viewer Timezones
+
+Parsers interpret printed clocks in the named source zone, or preserve explicit
+source offsets, then publish RFC 3339 UTC instants with `source_timezone`
+provenance. Source-calendar dates determine request windows, not the collection
+runner's date. A naive timestamp cannot be silently converted using the runner's
+timezone. Ambiguous autumn clocks and nonexistent spring clocks without an
+explicit resolving offset remain unresolved. Printed overnight ends are resolved
+on the correct next calendar date before timezone conversion.
+
+Catalogue and schedule pages display these instants in the viewer's browser
+timezone using the selected UI language; changing language does not change the
+viewer's timezone. XMLTV writes explicit `+0000` offsets at whole-second precision
+for IPTV apps to localize. Regression checks exercise Toronto, Amsterdam and
+Auckland, including DST and local dates that differ from the UTC date.
 
 Generate local files from a collected schedule snapshot:
 

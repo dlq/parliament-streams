@@ -123,7 +123,26 @@ def parse_iso(value: str) -> datetime | None:
 
 def format_utc_timestamp(value: datetime) -> str:
     """Return an RFC 3339 UTC timestamp suitable for client-side localization."""
+    if value.utcoffset() is None:
+        raise ValueError("Schedule timestamps require an explicit source timezone")
     return value.astimezone(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def localize_source_time(value: datetime, timezone: str) -> datetime | None:
+    """Resolve a source wall clock only when its named zone has one valid instant."""
+    if value.tzinfo is not None:
+        raise ValueError("Source wall-clock localization requires a naive datetime")
+    zone = ZoneInfo(timezone)
+    candidates = {
+        candidate.utcoffset(): candidate
+        for fold in (0, 1)
+        if (candidate := value.replace(tzinfo=zone, fold=fold))
+        .astimezone(UTC)
+        .astimezone(zone)
+        .replace(tzinfo=None)
+        == value
+    }
+    return next(iter(candidates.values())) if len(candidates) == 1 else None
 
 
 def _event_status(event: ScheduleEvent, now: datetime) -> str:

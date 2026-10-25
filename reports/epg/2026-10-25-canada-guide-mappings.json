@@ -1,0 +1,231 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Existing Canadian guide metadata, exact feed mapping and source-clock provenance; separate Quebec linear TV programme",
+  "method": "Bounded official HTTP HTML/JSON/JavaScript reads plus official-page text verification. No browser, media request, decoding, playback, third-party ownership inference or catalogue mutation by this review.",
+  "source_time": {
+    "zone": "America/Toronto",
+    "publication": "UTC RFC3339 instants retain source_timezone and source time provenance",
+    "rules": [
+      "Use printed source date and clock; never collection date or runner timezone.",
+      "Resolve local clocks through UTC round trips in the named zone. Ambiguous fall-back and nonexistent spring-forward times remain unresolved.",
+      "Resolve an explicitly printed overnight end on its next calendar date before applying that date's timezone offset.",
+      "Never manufacture an end from a fixed duration, adjacent institutional event or another room."
+    ],
+    "tests": "Dedicated source tests cover summer/winter UTC offsets, DST gap/fold starts and ends, explicit midnight, overnight date rollover, date-only holds and repeat broadcast times."
+  },
+  "checks": {
+    "harmony": {
+      "inputs": [
+        {
+          "url": "https://parlvu.parl.gc.ca/Harmony/en",
+          "retrieved_on": "2026-10-25",
+          "sha256": "9f913ddbc47ac4c2d60dbfd92fa792758a2b0401225e489a5d9c2164368a0bee",
+          "method": "HTTP text only; no media/player playback"
+        },
+        {
+          "url": "https://senparlvu.parl.gc.ca/Harmony/",
+          "retrieved_on": "2026-10-25",
+          "sha256": "4ce8286c63eda0d45aac711f5c6c358fea285028f8364d0e1ffaf0f04a465506",
+          "method": "HTTP text only; no media/player playback"
+        }
+      ],
+      "parser_change": "Recover the second published clock in ScheduledStartFMT-ScheduledEndFMT as the source end; retain separate room events and official IDs.",
+      "observed": {
+        "canada-house-of-commons-parlvu": {
+          "events": 38,
+          "explicit_source_ends_recovered": 38,
+          "source_url": "https://parlvu.parl.gc.ca/Harmony/en"
+        },
+        "canada-senate-senvu": {
+          "events": 27,
+          "explicit_source_ends_recovered": 27,
+          "source_url": "https://senparlvu.parl.gc.ca/Harmony/"
+        }
+      },
+      "xmltv_decision": "Hold both directory channel IDs. Chamber sittings and parallel committee-room events appear together on each institutional portal; complete time ranges do not establish one linear feed."
+    },
+    "quebec_linear": {
+      "inputs": [
+        {
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/index.html",
+          "retrieved_on": "2026-10-25",
+          "sha256": "f0f4d16a0a658143606b7ed35c3311da8878c4e2ff4cdba0e7ba9fca172e93b5",
+          "method": "HTTP text only; no media/player playback"
+        },
+        {
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html",
+          "retrieved_on": "2026-10-25",
+          "sha256": "19987f419c2767a2ad9b22521af57bcc57565549764e94273ce1a430dbc3c935",
+          "method": "HTTP text only; no media/player playback"
+        }
+      ],
+      "exact_mapping": {
+        "official_player_field": "canalActuel",
+        "official_player_value": "17",
+        "official_signal_path_suffix": "/diffusion/canal17/playlist.m3u8",
+        "catalogue_id": "quebec-canal-assemblee",
+        "excluded_event_feeds": "quebec-canal01 through quebec-canal14"
+      },
+      "programme_week": "2026-10-19 through 2026-10-25",
+      "source_last_updated": "2026-10-22 15:20 America/Toronto",
+      "parsed_events": 17,
+      "explicit_source_end_ranges": 17,
+      "remaining_broadcasts_at_review": 4,
+      "quality_assessment_after_exact_registration": {
+        "source": "quebec-canal-assemblee",
+        "scope": "broadcast_schedule",
+        "linear_guide_eligible": true,
+        "events": 17,
+        "exportable": 17,
+        "overlap_pairs": 0,
+        "inferred_ends": 0,
+        "assumed_dates": 0,
+        "stale": false,
+        "exclusions": {},
+        "excluded_events": []
+      },
+      "xmltv_decision": "Ready for this separate channel only, after canonical catalogue/registry/exact allowlist integration. No native HLS or playback validation claim.",
+      "programme_example": [
+        {
+          "id": "generated-1baa40114251646bae70",
+          "identifier_kind": "generated",
+          "title": "Cérémonie d'assermentation des parlementaires du Parti libéral du Québec - En reprise",
+          "status": "scheduled",
+          "start": "2026-10-25T22:00:00Z",
+          "start_basis": "source",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html#dimanche",
+          "language": "fr",
+          "end": "2026-10-25T23:35:00Z",
+          "end_basis": "source",
+          "source_timezone": "America/Toronto"
+        },
+        {
+          "id": "generated-be91edd090cdaff7ee0c",
+          "identifier_kind": "generated",
+          "title": "Cérémonie d'assermentation des parlementaires de Québec solidaire - En reprise",
+          "status": "scheduled",
+          "start": "2026-10-25T23:35:00Z",
+          "start_basis": "source",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html#dimanche",
+          "language": "fr",
+          "end": "2026-10-26T00:30:00Z",
+          "end_basis": "source",
+          "source_timezone": "America/Toronto"
+        },
+        {
+          "id": "generated-624864f50dbe80ee622c",
+          "identifier_kind": "generated",
+          "title": "Cérémonie d'assermentation des parlementaires du Parti conservateur du Québec - En reprise",
+          "status": "scheduled",
+          "start": "2026-10-26T00:30:00Z",
+          "start_basis": "source",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html#dimanche",
+          "language": "fr",
+          "end": "2026-10-26T01:30:00Z",
+          "end_basis": "source",
+          "source_timezone": "America/Toronto"
+        },
+        {
+          "id": "generated-cc9afd79fdb63381670d",
+          "identifier_kind": "generated",
+          "title": "Cérémonie de prestation de serments des membres du Conseil des ministres - En reprise",
+          "status": "scheduled",
+          "start": "2026-10-26T01:30:00Z",
+          "start_basis": "source",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html#dimanche",
+          "language": "fr",
+          "end": "2026-10-26T03:45:00Z",
+          "end_basis": "source",
+          "source_timezone": "America/Toronto"
+        }
+      ],
+      "rights_review": {
+        "url": "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html",
+        "checked_on": "2026-10-25",
+        "result": "Official content terms include attribution, non-commercial use, integrity and separate logo restrictions. Existing legislature identity and conditions were reused in a conservative official-page/link-out proposal."
+      },
+      "shape_guards": [
+        "Require recognizable dated source-day headings and one consistent displayed source week.",
+        "A past displayed week raises a source error; it does not become a healthy empty result.",
+        "Unrecognized nonempty programme rows or day-section markup raise a source error.",
+        "A recognized empty current week returns empty; past broadcasts within the current source week remain available.",
+        "A current dated row with no explicit end remains incomplete without inferred duration."
+      ]
+    },
+    "quebec_event_webcasts": {
+      "source_url": "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeEnDirect",
+      "upcoming_url": "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir",
+      "source_renderer": {
+        "url": "https://www.assnat.qc.ca/scripts/Video.min.js",
+        "retrieved_on": "2026-10-25",
+        "sha256": "86371714b8563fb2d1969e7230dca9d0c298cbdbc61b7ccad7766a337eb0a165",
+        "method": "HTTP text only; no media/player playback"
+      },
+      "current_endpoint_check": {
+        "live_status": 200,
+        "upcoming_status": 200,
+        "live_body": {
+          "d": []
+        },
+        "upcoming_body": {
+          "d": []
+        },
+        "headers": "Official documented JSON AJAX headers; preliminary requests without X-Requested-With returned404."
+      },
+      "parser_change": "When UrlSignal explicitly contains one of canal01–14, retain official IdActivite, UrlPage, Heure and French language. A query parameter or canal17 is not an event-feed mapping.",
+      "remaining_holds": [
+        "Current live/upcoming lists are empty, so no actual dated future feed assignment/end range was observed.",
+        "The official upcoming renderer uses Date/Heure/Titre/Message; these alone cannot select a room feed.",
+        "A live now label and activity clock without a full source date do not become an invented timestamp or end."
+      ],
+      "xmltv_decision": "Existing event feeds remain held until an exact dated start/end is observed for that particular feed."
+    },
+    "ontario": {
+      "calendar_url": "https://www.ola.org/en/legislative-business/calendar/",
+      "primary_broadcast_url": "https://www.ola.org/en/legislative-business/video",
+      "primary_room_schedule_url": "https://www.ola.org/en/legislative-business/video/committees",
+      "access_limitation": "Direct HTTP text requests to current calendar and broadcast pages returned403; no challenge or access-control bypass attempted. Official web-extracted page text was available.",
+      "confirmed_source_structure": "Official video index separates House, committee rooms and media studio. Official committee page separates Room151, Room1 and Room2 and labels their individual livestream schedules. The observed room entries publish starts, without precise closing times.",
+      "parser_change": "An exact naive calendar datetime is interpreted only in America/Toronto with DST ambiguity checks. Date-only values are held instead of being promoted to midnight. No room assignment or programme duration is fabricated.",
+      "remaining_holds": [
+        "Recheck actual current calendar markup when direct text access is available; current legacy heading parser is not claimed to cover modern room-schedule HTML.",
+        "House and room labels alone are insufficient for XMLTV without complete official ranges.",
+        "No close time or per-room event is inferred from institutional timing or other committee events."
+      ],
+      "xmltv_decision": "Retain current institutional-agenda hold; no new Ontario feed allowlist recommendation."
+    }
+  },
+  "integration_requirements": {
+    "new_scraper_module": "parliament_streams/scrapers/quebec_canal_assemblee.py",
+    "registry_entry": "quebec-canal-assemblee -> quebec_canal_assemblee",
+    "exact_linear_allowlist": {
+      "quebec-canal-assemblee": [
+        "quebec-canal-assemblee"
+      ]
+    },
+    "catalogue_proposal": "Prepared in /tmp for the parent integrator; no canonical data edited by this review.",
+    "shared_page_coverage": "Reuse existing Quebec jurisdiction, legislature identity and flag/map grouping for the new official-page source. Existing14 event feeds remain separate."
+  },
+  "verification": {
+    "focused_unittests": 77,
+    "result": "passed",
+    "commands": [
+      "python -B -m unittest tests.test_canada_guide_mappings tests.test_parsers_and_healthcheck tests.test_scraper_contract tests.test_schedule_collection tests.test_schedule_quality",
+      "ruff check on four owned parser modules and dedicated tests",
+      "mypy on four owned parser modules",
+      "git diff --check"
+    ],
+    "limitations": "Parser/data checks establish source timing and exact linear schedule semantics, not stream uptime, media decoding, native playback permission or complete future listings."
+  },
+  "records": [
+    {
+      "id": "canada--quebec",
+      "catalogue_source_id": "quebec-canal-assemblee",
+      "official_url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/index.html",
+      "identity_decision": "The Quebec National Assembly official page identifies a distinct Canal de l’Assemblée linear service using canal17. This is not one of the canal01–14 event webcasts.",
+      "catalogue_scope": "Conservative official_page/link_out source with no native HLS or decoded-playback claim. Reuses the confirmed Assemblée nationale du Québec institutional identity and conditional content terms.",
+      "programme_url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html",
+      "epg_mapping": "Only the separate quebec-canal-assemblee channel may use this dated linear programme."
+    }
+  ]
+}

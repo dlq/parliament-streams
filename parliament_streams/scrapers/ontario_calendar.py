@@ -11,6 +11,7 @@ from .common import (
     ScraperSource,
     build_upcoming_schedule,
     clean_html,
+    localize_source_time,
     parse_iso,
 )
 
@@ -42,7 +43,12 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
         re.IGNORECASE,
     )
     for date_text, title_html in pattern.findall(html):
+        if not re.search(r"[T ]\d{2}:\d{2}", date_text):
+            # A sitting day is not evidence of a broadcast starting at midnight.
+            continue
         start = parse_iso(date_text)
+        if start is not None and start.tzinfo is None:
+            start = localize_source_time(start, "America/Toronto")
         title = clean_html(title_html)
         if start and title:
             events.append({"start": start, "title": title})

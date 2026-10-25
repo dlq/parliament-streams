@@ -1,0 +1,382 @@
+{
+  "checked_on": "2026-10-25",
+  "scope": "Official EBS grid, Italian Senate palimpsest and TV Câmara weekly schedule text: programme times, channel identity, source dates and safe end-time handling.",
+  "method": {
+    "transport": "Bounded HTTPS JSON, HTML and first-party JavaScript only",
+    "maximum_response_bytes": 1048576,
+    "minimum_request_spacing_seconds": 2,
+    "media_downloaded_or_played": false
+  },
+  "fetches": [
+    {
+      "name": "ebs-today",
+      "url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261025&dateTo=20261025&withCompleteThesaurusData=true",
+      "final_url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261025&dateTo=20261025&withCompleteThesaurusData=true",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 325,
+      "sha256": "81bf30941f61ff2e017e548f81fb7548ed79d0409f2b5c41041f1d806f63217b",
+      "json_type": "list",
+      "records": 1,
+      "top_keys": null,
+      "first_item_keys": [
+        "date",
+        "channel",
+        "programs",
+        "warnings"
+      ]
+    },
+    {
+      "name": "ebs-friday",
+      "url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261023&dateTo=20261023&withCompleteThesaurusData=true",
+      "final_url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261023&dateTo=20261023&withCompleteThesaurusData=true",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 155070,
+      "sha256": "01cc932c3d2fbfdbe4d1d5a856a96434326f9b878fbe928bc87bb536537b0051",
+      "json_type": "list",
+      "records": 1,
+      "top_keys": null,
+      "first_item_keys": [
+        "date",
+        "channel",
+        "programs",
+        "warnings"
+      ]
+    },
+    {
+      "name": "italy-today",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-25T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-26T00%3A00%3A00",
+      "final_url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-25T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-26T00%3A00%3A00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "json_type": "list",
+      "records": 0,
+      "top_keys": null
+    },
+    {
+      "name": "italy-friday",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-23T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-24T00%3A00%3A00",
+      "final_url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-23T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-24T00%3A00%3A00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 20206,
+      "sha256": "9081a3ae0dc899487700c2e02b769fa73748f19b1c7c15ad9bb3f38d2507cf23",
+      "json_type": "list",
+      "records": 16,
+      "top_keys": null,
+      "first_item_keys": [
+        "nid",
+        "title",
+        "body",
+        "field_date",
+        "field_vevent_id",
+        "view_node",
+        "field_vevent_playback_status",
+        "field_vevent_playback_status_1",
+        "field_vevent_type",
+        "field_vevent_type_1",
+        "field_vevent_meeting_type",
+        "field_vevent_youtube",
+        "field_media_oembed_video",
+        "field_media_oembed_video_1",
+        "field_vevent_location",
+        "field_vevent_pending",
+        "field_number",
+        "field_channel_id",
+        "field_vevent_channel",
+        "field_channel_id_1",
+        "field_vevent_live_channel",
+        "field_vevent_session",
+        "field_vevent_commissions",
+        "field_vevent_sticky",
+        "field_vevent_ready",
+        "field_vevent_palimpsest_play",
+        "field_commission_short_name",
+        "field_commission_name",
+        "field_vevent_meeting_type_1",
+        "field_vevent_archived",
+        "field_commission_code_type",
+        "youtube_live_button_class"
+      ]
+    },
+    {
+      "name": "italy-home",
+      "url": "https://webtv.senato.it/",
+      "final_url": "https://webtv.senato.it/webtv",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 47324,
+      "sha256": "1b2d84aa31a691960afbd9fd2168108782bbe005dc4205e4754218ed38a1ecc7"
+    },
+    {
+      "name": "ebs-page",
+      "url": "https://audiovisual.ec.europa.eu/en/ebs/grid",
+      "final_url": "https://audiovisual.ec.europa.eu/en/ebs/grid",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 87835,
+      "sha256": "2f203ab3e9644cd7b23d677a82242dcc0ee2d21af7dddc9b542e875842c329f6"
+    },
+    {
+      "name": "ebs-monday",
+      "url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261026&dateTo=20261027&withCompleteThesaurusData=false",
+      "final_url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261026&dateTo=20261027&withCompleteThesaurusData=false",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 26153,
+      "sha256": "2922b562f80ac6e62e679eb5fb6e5e810968cf6df4cac1fc089dc8115fae433b"
+    },
+    {
+      "name": "italy-monday",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-26T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-27T00%3A00%3A00",
+      "final_url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-26T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-27T00%3A00%3A00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 14299,
+      "sha256": "8bc60f1badfd09b7cbcc16a83d8a986e578efa5c0e39f0a77d2385a709173124"
+    },
+    {
+      "name": "italy-thursday",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-22T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-23T00%3A00%3A00",
+      "final_url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-22T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-23T00%3A00%3A00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 17223,
+      "sha256": "f49a9fdb3874df44e76dd847a04dd9b5040bc549d98eb34d861ba004809a0469"
+    },
+    {
+      "name": "italy-script",
+      "url": "https://webtv.senato.it/sites/default/files/js/js_rQKsnin4hryH897L8J54UK-Wh8tLaV7tR3VfoomjJf8.js?scope=footer&delta=2&language=it&theme=senato_webtv&include=eJxNi1EKwCAMQy8k9EhSWSdCa8XW7fqTlcG-Et5LBF1FQd5IRj1zMzeoU9ewH9htb2agm4pfMJCbDCPzFDafuvqB3rTngkZQWQvyZ-MV7AFXUi_k",
+      "final_url": "https://webtv.senato.it/sites/default/files/js/js_rQKsnin4hryH897L8J54UK-Wh8tLaV7tR3VfoomjJf8.js?scope=footer&delta=2&language=it&theme=senato_webtv&include=eJxNi1EKwCAMQy8k9EhSWSdCa8XW7fqTlcG-Et5LBF1FQd5IRj1zMzeoU9ewH9htb2agm4pfMJCbDCPzFDafuvqB3rTngkZQWQvyZ-MV7AFXUi_k",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 812172,
+      "sha256": "d8f17556ed4124fe95e7a5cd306b9004d7d003816963aac36b9c4c4ceafd078b"
+    },
+    {
+      "name": "italy-tuesday",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-20T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-21T00%3A00%3A00",
+      "final_url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-20T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-21T00%3A00%3A00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 49129,
+      "sha256": "cbc5aaf0c9878fd40c4e8ea137704de3e0c20d9ca35b5d5bfa47f78d4c679f63"
+    },
+    {
+      "name": "italy-channel1-metadata",
+      "url": "https://prd-senato.spectar.tv/canale/linear/id/13440/ndvr/true",
+      "final_url": "https://prd-senato.spectar.tv/canale/linear/id/13440/ndvr/true",
+      "status": 200,
+      "content_type": "application/xml; charset=utf-8",
+      "bytes": 1175,
+      "sha256": "4da93d1ddcf9e64cfd9ab0514306207f06ccf79ef0b3e43cafa686b895649aec"
+    },
+    {
+      "name": "italy-event-monday",
+      "url": "https://webtv.senato.it/webtv/altri-video/conferenza-stampa-sui-ricorsi-contro-la-legge-elettorale",
+      "final_url": "https://webtv.senato.it/webtv/altri-video/conferenza-stampa-sui-ricorsi-contro-la-legge-elettorale",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 27839,
+      "sha256": "5c4a2c384ade6f2cbba60c41a94dc4801744876acc2d196b551edc5299af1177"
+    },
+    {
+      "name": "brazil-weekly",
+      "url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "final_url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 57189,
+      "sha256": "d0c09a83b1a639a070119accdaffc0a44209ca6000b050de1dfbb24ec4399ec4"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "ebs-grid",
+      "confirmed": [
+        "The official grid identifies channel EBS by name and channel ID 60771dc55de36aa6eb4759c6.",
+        "The 23 October response includes programme startDatetime and fractional-second duration values.",
+        "The 25 October response has an empty programme list.",
+        "The 26–27 October EBS response contains 13 future programme rows, all with duration zero and no programme end field.",
+        "The completed 23 October rows have real gaps between each programme end and the next programme start, so a next-start boundary is not evidence of programme duration."
+      ],
+      "unresolved": [
+        "Upcoming programme ends remain unknown until the source publishes a positive duration."
+      ],
+      "decision": "Use only positive finite source durations, preserving fractions before whole-second publication. No next-listing end inference. Reject contradictory channel metadata and timezone-naive source timestamps; request the Brussels local calendar day.",
+      "timing_samples": [
+        {
+          "id": "6acddcd54cda7d4921cf1eaa",
+          "startDatetime": "2026-10-23T09:00:10.000Z",
+          "duration": 235,
+          "channelId": "60771dc55de36aa6eb4759c6"
+        },
+        {
+          "id": "6acdd4384cda7d4921cecb4c",
+          "startDatetime": "2026-10-23T10:18:06.560Z",
+          "duration": 2552.04,
+          "channelId": "60771dc55de36aa6eb4759c6"
+        },
+        {
+          "id": "6ad61a304cda7d4921f1c586",
+          "startDatetime": "2026-10-23T12:13:04.200Z",
+          "duration": 4190.44,
+          "channelId": "60771dc55de36aa6eb4759c6"
+        }
+      ],
+      "future_day_counts": [
+        {
+          "date": "20261026",
+          "programmes": 5,
+          "positive_durations": 0
+        },
+        {
+          "date": "20261027",
+          "programmes": 8,
+          "positive_durations": 0
+        }
+      ]
+    },
+    {
+      "source_id": "italian-senate-palimpsest",
+      "confirmed": [
+        "The palimpsest contains simultaneous events assigned to different WebTV channels and duplicate rows.",
+        "The 23 October response has 16 rows across WebTV5, WebTV6, WebTV7 and WebTV8.",
+        "The site identifies WebTV1 (field_channel_id 13440) separately as the satellite channel.",
+        "The satellite programme template lists repertoire start clocks but no dated daily end-time schedule.",
+        "The official player JavaScript reads field_channel_id and builds its linear metadata URL using that numeric ID.",
+        "The WebTV1 / 13440 metadata labels Senato WebTV1 and designates the same SENATO_1_001 HLS base URL already held by the catalogue. No referenced playlist or media was fetched.",
+        "The 20 October palimpsest includes WebTV1 / 13440 entries alongside distinct WebTV2–8 entries.",
+        "A current event page corroborates the date and displayed clock, but its machine datetime has a Z suffix while displaying the same local clock; it is not used to override the existing Rome source timezone."
+      ],
+      "unresolved": [
+        "No event end or duration is present in the sampled palimpsest rows.",
+        "The undated satellite repertoire clocks are not enough to establish an anchored daily sequence."
+      ],
+      "decision": "Only affirmative WebTV1 and 13440 rows describe the catalogue stream. Preserve official node IDs, URLs and room labels, use the requested Rome date with the source clock, and leave ends absent; never infer ends from another event or day. Ambiguous or nonexistent Rome wall clocks are skipped rather than choosing a DST offset.",
+      "channel_mapping": {
+        "catalogue_channel_id": "italy-senate",
+        "required_response_fields": {
+          "field_vevent_channel": "WebTV1",
+          "field_channel_id": "13440"
+        },
+        "primary_metadata_url": "https://prd-senato.spectar.tv/canale/linear/id/13440/ndvr/true",
+        "metadata_title": "Senato WebTV1",
+        "catalogue_hls_base_url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+        "non_programme_duration": {
+          "attribute": "jwplayer:source catchup duration",
+          "value_seconds": 172800,
+          "meaning": "Catch-up buffer for the linear channel, not an event end or duration; excluded from programme timing."
+        }
+      },
+      "minimal_identity_samples": [
+        {
+          "nid": "126145",
+          "title": "Sicurezza e prevenzione del disagio giovanile",
+          "field_date": "12:00",
+          "field_channel_id": "13440",
+          "field_vevent_channel": "WebTV1",
+          "field_vevent_location": "Aula 1a Commissione",
+          "view_node": "http://webtv.senato.it/webtv/commissioni/sicurezza-e-prevenzione-del-disagio-giovanile-2"
+        },
+        {
+          "nid": "126149",
+          "title": "Roma Capitale",
+          "field_date": "12:30",
+          "field_channel_id": "13440",
+          "field_vevent_channel": "WebTV1",
+          "field_vevent_location": "Aula 1a Commissione",
+          "view_node": "http://webtv.senato.it/webtv/commissioni/roma-capitale"
+        },
+        {
+          "nid": "126151",
+          "title": "Indagine conoscitiva sulla gestione, il riutilizzo e il recupero delle batterie agli ioni di litio",
+          "field_date": "12:30",
+          "field_channel_id": "13459",
+          "field_vevent_channel": "WebTV2",
+          "field_vevent_location": "Aula Convegni",
+          "view_node": "http://webtv.senato.it/webtv/commissioni/indagine-conoscitiva-sulla-gestione-il-riutilizzo-e-il-recupero-delle-batterie-agli-ioni-di-litio"
+        }
+      ],
+      "sample_counts": {
+        "2026-10-20": {
+          "rows": 34,
+          "unique_node_ids": 17,
+          "unique_webtv1_node_ids": 3
+        }
+      }
+    },
+    {
+      "source_id": "brazil-tv-camara",
+      "confirmed": [
+        "The official weekly page contains seven weekday tab IDs, with only domingo active in the 25 October response.",
+        "The weekly schedule supplies no broadcast calendar date, date attribute or calendar-week anchor.",
+        "Date strings inside programme titles identify original recordings, not scheduled broadcast dates.",
+        "The active Sunday tab contains 21 programme rows, all in ascending clock order."
+      ],
+      "unresolved": [
+        "Broadcast dates remain inferred from the São Paulo collection date; a weekday label cannot establish the calendar week.",
+        "The final programme has no end time."
+      ],
+      "decision": "Retain collection_date start provenance. Require an active weekday tab to agree with the source-local collection weekday, hold missing/multiple/unknown active day selections, and never combine other weekdays into today. Infer only a strictly later next start within the selected ascending day sequence; leave the final end absent and hold clock rollovers.",
+      "primary_url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "source_timezone": "America/Sao_Paulo",
+      "observed_tab_ids": [
+        "domingo",
+        "segunda_feira",
+        "terca_feira",
+        "quarta_feira",
+        "quinta_feira",
+        "sexta_feira",
+        "sabado"
+      ],
+      "corroborating_primary_article": {
+        "url": "https://www.camara.leg.br/noticias/1313047-acompanhe-aqui-a-cobertura-das-eleicoes-e-a-apuracao-dos-votos",
+        "use": "Corroborates the 25 October election coverage, but this one-off report cannot anchor the recurring weekly parser."
+      },
+      "minimal_shape_example": "<div class=\"tab-pane fade active in show\" id=\"domingo\"><table><tr><td><span>00:30</span></td><td><span>Documentário Artérias: Tiago Gualberto</span></td></tr></table></div>",
+      "parsed_sample_counts": {
+        "events": 21,
+        "events_with_inferred_end": 20,
+        "events_with_source_broadcast_date": 0
+      }
+    }
+  ],
+  "implementation_status": "Three existing parser changes complete. No new catalogue source, registry entry or shared quality eligibility policy was added. Existing-source gaps remain explicit instead of being filled with invented times.",
+  "verification": {
+    "focused_unittest_cases_passed": 65,
+    "strict_mypy_source_files_passed": 3,
+    "media_downloaded_or_played": false,
+    "test_file": "tests/test_existing_source_times.py",
+    "regressions": [
+      "Fractional source duration is preserved before publication.",
+      "Missing/nonpositive/nonfinite durations never gain inferred ends.",
+      "EBS channel mismatch and naive source times are rejected.",
+      "Brussels and Rome source dates remain correct across UTC midnight and DST changes.",
+      "Senate channel identity must match in both fields; duplicate rows deduplicate using official IDs.",
+      "Invalid Senate clocks cannot abort other valid rows.",
+      "No end is manufactured across listing, room or day boundaries.",
+      "Ambiguous/nonexistent Rome DST wall clocks are not guessed.",
+      "Brazil active weekday is checked against São Paulo, even when UTC has crossed midnight.",
+      "Brazil recording dates cannot replace collection-date provenance.",
+      "Inactive weekday rows cannot become today’s programmes or inferred ends.",
+      "Missing/multiple/unknown/stale active tabs and clock rollovers are held."
+    ],
+    "ruff_lint_and_format": "Passed for all three changed adapters and both changed test files.",
+    "unittest_modules": [
+      "tests.test_existing_source_times",
+      "tests.test_parsers_and_healthcheck",
+      "tests.test_schedule_quality",
+      "tests.test_scraper_contract",
+      "tests.test_schedule_collection"
+    ]
+  },
+  "collection_windows": {
+    "ebs-grid": "Today and tomorrow in Europe/Brussels.",
+    "italian-senate-palimpsest": "Today and the next two days in Europe/Rome.",
+    "brazil-tv-camara": "Only the active matching weekday anchored to today in America/Sao_Paulo, with collection_date provenance."
+  }
+}

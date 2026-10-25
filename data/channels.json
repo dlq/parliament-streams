@@ -772,6 +772,13 @@
           "method": "GET",
           "kind": "live_debates_and_agenda_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "dutch-debat-direct",
+          "scraper_status": "implemented",
+          "url": "https://api.debatdirect.tweedekamer.nl/api/agenda",
+          "method": "GET",
+          "kind": "room_broadcast_agenda_api"
         }
       ],
       "permission": {
@@ -856,11 +863,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "url": "https://www.congreso.es/es/programacion",
+          "scraper": "spain-canal-parlamento-weekly",
+          "url": "https://www.congreso.es/programacion",
           "method": "GET",
-          "kind": "canal_parlamento_weekly_schedule",
-          "scraper_status": "planned"
+          "kind": "linear_weekly_broadcast_schedule",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -7194,6 +7201,13 @@
           "method": "GET",
           "kind": "live_debates_and_agenda_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "dutch-debat-direct",
+          "scraper_status": "implemented",
+          "url": "https://api.debatdirect.tweedekamer.nl/api/agenda",
+          "method": "GET",
+          "kind": "room_broadcast_agenda_api"
         }
       ],
       "permission": {
@@ -19780,6 +19794,63 @@
           "note": "Scoped official viewing publication review; no universal current-live, guide or independent reuse certification. The retained council-owned government homepage designates I&PR LADC; the source channel reciprocally links ladc.mizoram.gov.in. Selected 29 July 2026 monsoon and 2 April 2026 budget recordings both decode and advance past 600 seconds in Chromium and WebKit after advertisements/title cards are excluded. Inspected frames show the presiding chair in the monsoon session and member C. Ngunlianthunga speaking from his chamber desk in budget business. Two dates are supported by source titles; complete sitting continuity is not certified."
         }
       ]
+    },
+    {
+      "id": "quebec-canal-assemblee",
+      "name": "Quebec - Canal de l'Assemblée",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Quebec",
+      "legislature": "Assemblée nationale du Québec",
+      "external_ids": {
+        "wikidata_qid": "Q1492249",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1492249",
+          "checked_on": "2026-08-16",
+          "confidence": "high",
+          "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/index.html",
+      "provenance_note": "The Assembly's own Canal de l'Assemblée page identifies its separate linear TV service as canal17 and links to its dated weekly programme. This is distinct from the canal01–14 event webcasts. The official viewing page and programme were checked as text; media playback was not tested.",
+      "technical_status": "link_only",
+      "stability_risk": "low",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": null
+      },
+      "epg_sources": [
+        {
+          "scraper": "quebec-canal-assemblee",
+          "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html",
+          "method": "GET",
+          "kind": "dated_linear_weekly_programme",
+          "scraper_status": "implemented"
+        }
+      ],
+      "permission": {
+        "status": "explicit_reuse_with_conditions",
+        "summary": "Quebec National Assembly terms authorize free reproduction of its videos and audio where the use is reasonable, fair, non-commercial, unmodified, non-prejudicial, and credits the Assembly. Reproducing Assembly, committee, or subcommittee debates in whole or in part for dissemination does not require authorization, subject to the Assembly Act.",
+        "evidence": [
+          "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/index.html",
+          "https://www.assnat.qc.ca/fr/propos-site/droits-propriete-intellectuelle.html"
+        ],
+        "recommendation": "Link to the official viewing page. The Assembly's terms retain attribution, non-commercial use, integrity and no-endorsement conditions; this entry does not enable native playback or grant rights beyond those terms."
+      },
+      "playback_policy": "link_out"
     }
   ]
 }

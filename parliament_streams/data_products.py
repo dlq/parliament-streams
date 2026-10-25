@@ -16,7 +16,12 @@ from .data_contracts import require_json_schema, schema_validator
 from .iptv import select_iptv_hls_channels
 from .models import Catalogue
 from .schedule_collection import ScheduleSnapshot
-from .schedule_quality import LINEAR_GUIDE_CHANNELS_BY_SCRAPER, QualityReport, parsed_time
+from .schedule_quality import (
+    LINEAR_GUIDE_CHANNELS_BY_SCRAPER,
+    QualityReport,
+    guide_coverage,
+    parsed_time,
+)
 from .site_data import load_supranational
 from .validation import require_valid_catalogue, require_valid_fallbacks
 
@@ -88,6 +93,10 @@ def validate_data_products(directory: Path) -> dict[str, int]:
         raise ValueError("Schedule/quality sources do not match the published catalogue")
     if quality["generated_at"] != snapshot["generated_at"]:
         raise ValueError("Schedule and EPG quality snapshots have different timestamps")
+    if "coverage" in quality and quality["coverage"] != guide_coverage(
+        catalogue, snapshot, quality["channels"]
+    ):
+        raise ValueError("EPG coverage differs from catalogue parsers and collected programmes")
     if any(row["scraper"] not in snapshot["sources"] for row in snapshot["channels"].values()):
         raise ValueError("Schedule channel refers to an unrecorded source")
     expected_counts = {

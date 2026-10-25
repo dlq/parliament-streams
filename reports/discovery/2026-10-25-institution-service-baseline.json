@@ -73,7 +73,7 @@
     "legal_holds_excluded_from_service_queue": 8,
     "eligible_records_with_exact_catalogue_matches": 222,
     "eligible_records_without_exact_catalogue_matches": 718,
-    "distinct_catalogue_ids_linked": 246,
+    "distinct_catalogue_ids_linked": 247,
     "historical_service_cohort": 652,
     "outside_historical_service_cohort": 288,
     "records_with_new_source_followups": 308,
@@ -83,11 +83,11 @@
       "partial_source_followup": 308
     },
     "all_dimensions_validated": 0,
-    "catalogue_sources": 269,
-    "catalogue_sources_with_implemented_schedule_parser": 33,
+    "catalogue_sources": 270,
+    "catalogue_sources_with_implemented_schedule_parser": 37,
     "catalogue_aggregate_permission_statuses": {
       "embed_only": 4,
-      "explicit_reuse_with_conditions": 51,
+      "explicit_reuse_with_conditions": 52,
       "no_third_party_reuse": 20,
       "noncommercial_pending_review": 12,
       "personal_use_pending_review": 182
@@ -2228,6 +2228,7 @@
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
       "catalogue_ids": [
+        "quebec-canal-assemblee",
         "quebec-canal01",
         "quebec-canal02",
         "quebec-canal03",

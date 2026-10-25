@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -245,6 +246,157 @@ async function assertIptvLocales(page, localeSelect) {
   await disclosure.locator(':scope > summary').click();
 }
 
+async function newLocalContext(browser, options = {}) {
+  const context = await browser.newContext({ serviceWorkers: "block", ...options });
+  // Install before the first page/navigation, including child frames. The launch
+  // mute flag also suppresses audio paths outside HTMLMediaElement playback.
+  await context.addInitScript(() => {
+    for (const [name, value] of [["muted", true], ["defaultMuted", true], ["volume", 0]]) {
+      const descriptor = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, name);
+      if (descriptor?.configurable === false) {
+        // Remain compatible with the optional external silent-run preload.
+        if (descriptor.get?.call(document.createElement("video")) !== value) {
+          throw new Error("Browser media guard could not guarantee silence");
+        }
+        continue;
+      }
+      Object.defineProperty(HTMLMediaElement.prototype, name, {
+        configurable: false,
+        enumerable: true,
+        get() { return value; },
+        set() {},
+      });
+    }
+    const silence = () => document.querySelectorAll("video,audio").forEach((media) => {
+      media.muted = true;
+      media.defaultMuted = true;
+      media.volume = 0;
+    });
+    new MutationObserver(silence).observe(document, { childList: true, subtree: true });
+    document.addEventListener("play", silence, true);
+  });
+  await context.route("**/*", (route) => {
+    const request = route.request();
+    const url = new URL(request.url());
+    const external = ["http:", "https:"].includes(url.protocol)
+      && !["127.0.0.1", "localhost", "[::1]"].includes(url.hostname);
+    return external || request.resourceType() === "media" ? route.abort() : route.continue();
+  });
+  return context;
+}
+
+async function assertViewerTimezones(browser, baseUrl) {
+  // These are fixed UTC instants, rather than source wall-clock labels or the
+  // test runner's timezone. Each pair crosses one viewer's DST transition.
+  const fixtures = [
+    ["spain-canal-parlamento", "Europe DST", "2026-10-25T00:30:00Z", "2026-10-25T01:30:00Z", "Europe/Madrid"],
+    ["cpac-ca", "Toronto DST", "2026-11-01T05:30:00Z", "2026-11-01T06:30:00Z", "America/Toronto"],
+    ["new-zealand-parliament", "Auckland DST", "2026-09-26T13:30:00Z", "2026-09-26T14:30:00Z", "Pacific/Auckland"],
+  ];
+  const snapshot = {
+    generated_at: "2026-09-01T12:00:00Z",
+    channels: Object.fromEntries(fixtures.map(([id, title, start, next, sourceTimezone]) => [id, {
+      current_event_title: `${title} before`,
+      current_event_time: "SOURCE CLOCK MUST NOT BE DISPLAYED",
+      current_event_start: start,
+      next_event_title: `${title} after`,
+      next_event_time: "SOURCE CLOCK MUST NOT BE DISPLAYED",
+      next_event_start: next,
+      fetched_at: "2026-09-01T12:00:00Z",
+      events: [{ start, source_timezone: sourceTimezone }, { start: next, source_timezone: sourceTimezone }],
+    }])),
+  };
+  // Independently specified civil days, clocks and offset names. Computing the
+  // expected values with the same Intl formatter would hide timezone mistakes.
+  const cases = [
+    {
+      timezoneId: "America/Toronto",
+      expected: [
+        [["Oct 24", "8:30 PM", "EDT", "GMT-4"], ["Oct 24", "9:30 PM", "EDT", "GMT-4"]],
+        [["Nov 1", "1:30 AM", "EDT", "GMT-4"], ["Nov 1", "1:30 AM", "EST", "GMT-5"]],
+        [["Sep 26", "9:30 AM", "EDT", "GMT-4"], ["Sep 26", "10:30 AM", "EDT", "GMT-4"]],
+      ],
+      dutchClocks: ["9:30", "10:30"],
+    },
+    {
+      timezoneId: "Europe/Amsterdam",
+      expected: [
+        [[null, "2:30 AM", "GMT+2", "CEST"], [null, "2:30 AM", "GMT+1", "CET"]],
+        [["Nov 1", "6:30 AM", "GMT+1", "CET"], ["Nov 1", "7:30 AM", "GMT+1", "CET"]],
+        [["Sep 26", "3:30 PM", "GMT+2", "CEST"], ["Sep 26", "4:30 PM", "GMT+2", "CEST"]],
+      ],
+      dutchClocks: ["15:30", "16:30"],
+    },
+    {
+      timezoneId: "Pacific/Auckland",
+      expected: [
+        [[null, "1:30 PM", "GMT+13", "NZDT"], [null, "2:30 PM", "GMT+13", "NZDT"]],
+        [["Nov 1", "6:30 PM", "GMT+13", "NZDT"], ["Nov 1", "7:30 PM", "GMT+13", "NZDT"]],
+        [["Sep 27", "1:30 AM", "GMT+12", "NZST"], ["Sep 27", "3:30 AM", "GMT+13", "NZDT"]],
+      ],
+      dutchClocks: ["1:30", "3:30"],
+    },
+  ];
+  const token = (value) => new RegExp(`(?:^|\\W)${value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:$|\\W)`);
+  const checkTimes = async (locator, expected, label) => {
+    const times = (await locator.allInnerTexts()).map((text) => text.replace(/\s+/g, " ").trim());
+    assert.equal(times.length, 2, `${label}: both programme instants must render`);
+    times.forEach((text, index) => {
+      const [day, clock, ...zones] = expected[index];
+      if (day) assert.match(text, token(day), `${label}: incorrect local calendar day`);
+      else assert.doesNotMatch(text, /\b(?:Sep|Oct|Nov)\b/, `${label}: today's local times should not repeat a calendar date`);
+      assert.match(text, token(clock), `${label}: incorrect local clock`);
+      assert(zones.some((zone) => text.endsWith(zone)), `${label}: incorrect UTC offset: ${text}`);
+      assert(!text.includes("SOURCE CLOCK"), `${label}: source fallback must not replace UTC conversion`);
+    });
+  };
+  for (const { timezoneId, expected, dutchClocks } of cases) {
+    const context = await newLocalContext(browser, { timezoneId, locale: "en", viewport: { width: 1280, height: 900 } });
+    try {
+      await context.route("**/data/schedules.json", (route) => route.fulfill({
+        contentType: "application/json", body: JSON.stringify(snapshot),
+      }));
+      const errors = [];
+      const catalogue = await context.newPage();
+      const schedule = await context.newPage();
+      for (const page of [catalogue, schedule]) {
+        page.on("pageerror", (error) => errors.push(error.message));
+        // The first pair is today in Amsterdam/Auckland but the previous local
+        // date in Toronto, despite sharing today's UTC date. Timers stay real.
+        await page.clock.setFixedTime(new Date("2026-10-25T10:00:00Z"));
+      }
+      await catalogue.goto(`${baseUrl}index.html?lang=en&source=${fixtures[0][0]}`);
+      await catalogue.locator(".programme-record .programme-time").first().waitFor();
+      await assertPageMetadata(catalogue);
+      await schedule.goto(`${baseUrl}schedule.html?lang=en`);
+      await schedule.locator("#schedule-list tr").first().waitFor();
+      await assertPageMetadata(schedule, "schedule.html");
+      for (const [index, [id, title]] of fixtures.entries()) {
+        await catalogue.locator(`[data-channel-id="${id}"]`).click();
+        await checkTimes(catalogue.locator(".programme-record .programme-time"), expected[index], `${timezoneId} catalogue ${title}`);
+        const row = schedule.locator("#schedule-list tr").filter({ hasText: `${title} before` });
+        await checkTimes(row.locator(".programme-time"), expected[index], `${timezoneId} schedule ${title}`);
+      }
+      await schedule.screenshot({ path: join(tmpdir(), `parliament-timezone-${timezoneId.replaceAll("/", "-")}.png`), fullPage: true });
+      for (const page of [catalogue, schedule]) {
+        await page.locator("#locale-select").selectOption("nl");
+        assert.equal(await page.locator("html").getAttribute("lang"), "nl");
+        assert.equal(await page.evaluate(() => Intl.DateTimeFormat().resolvedOptions().timeZone), timezoneId);
+        const times = page === catalogue
+          ? page.locator(".programme-record .programme-time")
+          : page.locator("#schedule-list tr").filter({ hasText: "Auckland DST before" }).locator(".programme-time");
+        for (const [index, clock] of dutchClocks.entries()) {
+          const text = (await times.nth(index).innerText()).replace(/\s+/g, " ");
+          assert.match(text, new RegExp(`\\b0?${clock}\\b`), `${timezoneId}: language change must retain viewer local time`);
+        }
+      }
+      assert.deepEqual(errors, [], `${timezoneId}: timezone rendering must not raise page errors`);
+    } finally {
+      await context.close();
+    }
+  }
+}
+
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const address = server.address();
 assert(address && typeof address === "object");
@@ -252,7 +404,7 @@ const baseUrl = `http://127.0.0.1:${address.port}/site/`;
 const browser = await chromium.launch({ args: ["--mute-audio"] });
 
 try {
-  const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const context = await newLocalContext(browser, { viewport: { width: 1280, height: 900 } });
   // Exercise the actual local HLS library without depending on a live broadcaster.
   const hlsPage = await context.newPage();
   const hlsChannel = canonicalCatalogue.channels.find((channel) =>
@@ -1134,7 +1286,7 @@ try {
   await assertNoAxeViolations(filePage, "Direct-file YouTube fallback");
   await filePage.close();
 
-  const storageContext = await browser.newContext({ viewport: { width: 1280, height: 900 }, locale: "en-CA" });
+  const storageContext = await newLocalContext(browser, { viewport: { width: 1280, height: 900 }, locale: "en-CA" });
   await storageContext.addInitScript(() => {
     Object.defineProperty(window, "localStorage", {
       get() { throw new DOMException("Storage is unavailable in this preview", "SecurityError"); },
@@ -1189,6 +1341,7 @@ try {
   assert.match(await storagePage.locator("#map-detail").innerText(), /Alberta/);
   assert.deepEqual(storageErrors, []);
   await storageContext.close();
+  await assertViewerTimezones(browser, baseUrl);
 } finally {
   await browser.close();
   server.close();

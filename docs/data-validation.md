@@ -16,7 +16,7 @@ or permission to reuse a broadcast.
 | Public legislature snapshot | [institution-site-data.schema.json](../schema/institution-site-data.schema.json), plus exact identity/crosswalk checks in the projection builder. Both generation and drift checks enforce the schema. |
 | Discovery and U.S. target registers | [discovery-targets.schema.json](../schema/discovery-targets.schema.json) and [us-legislature-candidates.schema.json](../schema/us-legislature-candidates.schema.json), plus maintained-scope/identity checks. These are research inputs, not published viewing sources. |
 | Collected schedules | [schedules.schema.json](../schema/schedules.schema.json) before a snapshot is written and when it enters an export/audit. |
-| EPG quality | [epg-quality.schema.json](../schema/epg-quality.schema.json) before export or audit output is written. Publication also checks counters, source identity and the reviewed linear-feed allowlist. |
+| EPG quality | [epg-quality.schema.json](../schema/epg-quality.schema.json) before export or audit output is written. Publication also checks counters, source identity, the reviewed linear-feed allowlist and optional all-catalogue parser/guide coverage. |
 | M3U playlists | Generated extended-M3U structure, HTTP(S) URLs, unique catalogue IDs, eligibility, shared guide URL and byte-identical `.m3u8` compatibility aliases. A channel list is not an HLS media manifest. |
 | XMLTV | UTF-8/well-formed XML, top-level records and required fields, known IDs, complete positive time ranges at whole-second precision, no overlaps, and programme content/counts matched to collected schedules and the quality report. This is the generator's supported subset, not a general XMLTV DTD validator. |
 

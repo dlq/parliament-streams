@@ -112,8 +112,18 @@ class ParserTests(unittest.TestCase):
     def test_italian_senate_json_schedule(self):
         payload = json.dumps(
             [
-                {"title": "Seduta di Assemblea n. 448", "field_date": "13:00"},
-                {"title": "Commissione Affari costituzionali", "field_date": "15.30"},
+                {
+                    "title": "Seduta di Assemblea n. 448",
+                    "field_date": "13:00",
+                    "field_channel_id": "13440",
+                    "field_vevent_channel": "WebTV1",
+                },
+                {
+                    "title": "Commissione Affari costituzionali",
+                    "field_date": "15.30",
+                    "field_channel_id": "13440",
+                    "field_vevent_channel": "WebTV1",
+                },
             ]
         )
         parsed = italian_senate.parse(
