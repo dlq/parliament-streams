@@ -1,5 +1,22 @@
 # Changelog
 
+## 24 October — Scoped Publication And Monitoring Coverage
+
+Added 13 official viewing sources, exact legislature crosswalks, 11 regional map
+outlines, parent-country search and planned programme links. Four old research
+feeds now use supported official viewing pages; nine retain specific research
+holds with clearer localized labels and visible findings. Added 14 sourced flags
+and a shared catalogue/schedule registry; ten unsupported designs remain neutral.
+
+Schedule filters include planned calendars and preserve them when guide data is
+unavailable. Public legislature evidence includes current partial follow-ups.
+Monthly discovery and inventory monitoring now include maintained eligible routes
+and the current catalogue, with explicit budgets, rotation, skipped checks and
+per-identity observations. CI checks current baseline and generated evidence.
+No automatic promotions, new IPTV admissions or XMLTV parsers are implied.
+[Publication decisions](reports/discovery/2026-10-24-institution-publication-decisions.json)
+
+
 ## 24 October — Redact Copied Research Credentials
 
 Redacted Google Maps API key values accidentally retained in third-party embed

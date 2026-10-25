@@ -23,7 +23,7 @@ const MAX_PAGES_PER_COUNTRY = 4;
 const MAX_CONCURRENT_PAGES = 4;
 
 function parseArgs(argv) {
-  const args = { inputs: [], output: null };
+  const args = { inputs: [], output: null, maxPages: MAX_PAGES_PER_COUNTRY, budgetSeconds: 0 };
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     if (arg === "--input") {
@@ -35,6 +35,11 @@ function parseArgs(argv) {
       const output = argv[index + 1];
       if (!output) throw new Error("--output requires a report path.");
       args.output = output;
+      index += 1;
+    } else if (arg === "--max-pages-per-country" || arg === "--budget-seconds") {
+      const value = Number(argv[index + 1]);
+      if (!Number.isInteger(value) || value < 0) throw new Error(`${arg} requires a nonnegative integer.`);
+      args[arg === "--max-pages-per-country" ? "maxPages" : "budgetSeconds"] = value;
       index += 1;
     } else {
       throw new Error(`Unknown argument: ${arg}`);
@@ -59,7 +64,7 @@ async function readJson(path) {
   return JSON.parse(await fs.readFile(path, "utf8"));
 }
 
-async function collectTargets(reportInputs) {
+async function collectTargets(reportInputs, maxPages) {
   const targets = [];
   for (const input of reportInputs) {
     const report = await readJson(input);
@@ -73,7 +78,8 @@ async function collectTargets(reportInputs) {
       targets.push({
         tier_report: input,
         country: country.country,
-        official_pages: officialPages.slice(0, MAX_PAGES_PER_COUNTRY),
+        official_pages: maxPages ? officialPages.slice(0, maxPages) : officialPages,
+        pages_omitted_by_cap: maxPages ? Math.max(0, officialPages.length - maxPages) : 0,
       });
     }
   }
@@ -89,9 +95,22 @@ async function validateManifest(url) {
         Accept: "*/*",
       },
       redirect: "follow",
+      signal: AbortSignal.timeout(12_000),
     });
     const contentType = response.headers.get("content-type");
-    const text = await response.text();
+    const reader = response.body?.getReader();
+    const chunks = [];
+    let size = 0;
+    if (reader) {
+      while (size < 300_000) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        chunks.push(value.subarray(0, 300_000 - size));
+        size += value.length;
+      }
+      await reader.cancel();
+    }
+    const text = Buffer.concat(chunks).toString("utf8");
     const trimmed = text.trimStart().slice(0, 256).toLowerCase();
     const kind = manifestKind(url);
     const ok =
@@ -175,7 +194,7 @@ async function inspectPage(browser, target, pageUrl) {
   }
 
   const validations = [];
-  for (const [url, source] of discovered) {
+  for (const [url, source] of [...discovered].slice(0, 10)) {
     const validation = await validateManifest(url);
     validations.push({ ...validation, discovery_source: source });
   }
@@ -189,6 +208,7 @@ async function inspectPage(browser, target, pageUrl) {
     page_status: pageStatus,
     load_note: loadNote,
     discovered_manifest_count: discovered.size,
+    manifests_omitted_by_cap: Math.max(0, discovered.size - 10),
     validated_manifest_count: validations.filter((item) => item.ok).length,
     responses,
     validations,
@@ -199,7 +219,8 @@ async function inspectPage(browser, target, pageUrl) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const { chromium } = loadPlaywright();
-  const targets = await collectTargets(args.inputs);
+  const targets = await collectTargets(args.inputs, args.maxPages);
+  const deadline = args.budgetSeconds ? Date.now() + args.budgetSeconds * 1000 : Infinity;
   const browser = await chromium.launch({ headless: true });
   const pageTasks = [];
   for (const target of targets) {
@@ -214,7 +235,14 @@ async function main() {
       const taskIndex = nextTask;
       nextTask += 1;
       const { target, pageUrl } = pageTasks[taskIndex];
-      console.log(`INSPECT ${target.country} ${pageUrl}`);
+      if (Date.now() >= deadline) {
+        pageResults[taskIndex] = {
+          country: target.country, tier_report: target.tier_report, page_url: pageUrl,
+          status: "unattempted", load_note: "Network budget exhausted", validations: [],
+        };
+        continue;
+      }
+      console.log(`INSPECT ${target.country} page ${taskIndex + 1}/${pageTasks.length}`);
       pageResults[taskIndex] = await inspectPage(browser, target, pageUrl);
     }
   }
@@ -238,7 +266,7 @@ async function main() {
   for (const pageResult of pageResults) {
     const key = `${pageResult.tier_report}::${pageResult.country}`;
     const country = countries.get(key);
-    country.pages_checked += 1;
+    if (pageResult.status !== "unattempted") country.pages_checked += 1;
     for (const validation of pageResult.validations) {
       if (!validation.ok) {
         continue;
@@ -266,6 +294,12 @@ async function main() {
     inputs: args.inputs,
     countries: [...countries.values()],
     pages: pageResults,
+    coverage: {
+      planned_pages: pageTasks.length,
+      pages_omitted_by_cap: targets.reduce((sum, target) => sum + target.pages_omitted_by_cap, 0),
+      unattempted_pages: pageResults.filter((page) => page.status === "unattempted").length,
+      budget_seconds: args.budgetSeconds,
+    },
   };
 
   await fs.writeFile(args.output, `${JSON.stringify(report, null, 2)}\n`);
@@ -275,12 +309,10 @@ async function main() {
       console.log(
         `FOUND ${country.country} HLS=${country.open_hls_count} DASH=${country.open_dash_count}`,
       );
-      for (const manifest of country.validated_manifests) {
-        console.log(`  ${manifest.kind.toUpperCase()} ${manifest.url}`);
-      }
     }
   }
   console.log(`REPORT ${args.output}`);
 }
 
-await main();
+export { collectTargets, parseArgs };
+if (process.argv[1] && new URL(import.meta.url).pathname === process.argv[1]) await main();

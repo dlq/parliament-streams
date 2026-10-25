@@ -108,7 +108,8 @@ def _is_plausible_live_manifest(url: str) -> bool:
     lower = url.lower()
     path = urlsplit(url).path.lower()
     return not (
-        "\\u" in lower
+        "redacted" in lower
+        or "\\u" in lower
         or "&amp;" in lower
         or lower.endswith(('"', "'"))
         or "/vod" in path

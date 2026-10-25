@@ -932,7 +932,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -971,6 +971,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:31Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -981,13 +988,6 @@
           "checked_at": "2026-08-17T10:32:23Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:48Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1027,7 +1027,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1066,6 +1066,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:31Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1076,13 +1083,6 @@
           "checked_at": "2026-08-17T10:32:25Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:49Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1122,7 +1122,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1161,6 +1161,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1171,13 +1178,6 @@
           "checked_at": "2026-08-17T10:32:26Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:51Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1217,7 +1217,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1256,6 +1256,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1266,13 +1273,6 @@
           "checked_at": "2026-08-17T10:32:27Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:52Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1312,7 +1312,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1351,6 +1351,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1361,13 +1368,6 @@
           "checked_at": "2026-08-17T10:32:28Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:52Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1403,12 +1403,12 @@
         }
       ],
       "language": "French",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
       "official_url": "https://videos.assemblee-nationale.fr/direct.php",
-      "provenance_note": "Official National Assembly HLS candidate; July 2026 health check reached the URL but received a malformed/minimal manifest.",
-      "technical_status": "needs_review",
+      "provenance_note": "Current own video portal exposes live and on-demand navigation and explicitly reports no broadcast at inspection. Retire the obsolete extracted HLS candidate from the published route; link to official video pages. The source expressly permits contextual hyperlinks; prior agreement for multimedia reuse remains separate.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -1453,6 +1453,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current own video portal exposes live and on-demand navigation and explicitly reports no broadcast at inspection. Retire the obsolete extracted HLS candidate from the published route; link to official video pages. The source expressly permits contextual hyperlinks; prior agreement for multimedia reuse remains separate."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1465,16 +1472,9 @@
           "method": "review_followup",
           "status": "warning",
           "note": "Response did not start with #EXTM3U."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:54Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "Response did not start with #EXTM3U."
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "link_out"
     },
     {
       "id": "chile-camara-tv",
@@ -1866,12 +1866,12 @@
         }
       ],
       "language": "French / Luxembourgish",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
-      "official_url": "https://www.chd.lu/",
-      "provenance_note": "Chamber TV HLS candidate from official player infrastructure.",
-      "technical_status": "needs_review",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.chd.lu/fr/direct",
+      "provenance_note": "Current Chamber homepage designates its Vidéos/direct route and lists dated public sittings with broadcast links. Replace the unverified old extracted HLS candidate with the own viewing-page link; current all-stream playback and reuse remain unverified.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -1900,6 +1900,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current Chamber homepage designates its Vidéos/direct route and lists dated public sittings with broadcast links. Replace the unverified old extracted HLS candidate with the own viewing-page link; current all-stream playback and reuse remain unverified."
+        },
+        {
           "checked_at": "2026-10-22T13:49:34Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1912,16 +1919,9 @@
           "method": "review_followup",
           "status": "error",
           "note": "<urlopen error [Errno 51] Network is unreachable>"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:54Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "error",
-          "note": "<urlopen error [Errno 51] Network is unreachable>"
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "link_out"
     },
     {
       "id": "estonia-riigikogu-live-1",
@@ -2043,7 +2043,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
       "official_url": "https://www.riigikogu.ee/live/2/en",
-      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player. Rechecked 2026-10-22: direct and repeated follow-up checks reached a master intermittently but its media rendition returned HTTP 404; retain for research pending successful media validation during an active broadcast.",
+      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player. Rechecked 2026-10-22: direct and repeated follow-up checks reached a master intermittently but its media rendition returned HTTP 404; retain for research pending successful media validation during an active broadcast. 24 October 2026 publication review: Own Live2 page responds; its specific media rendition remains unverified/previously404. General official navigation is distinct from direct-signal validation.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -2074,6 +2074,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Own Live2 page responds; its specific media rendition remains unverified/previously404. General official navigation is distinct from direct-signal validation."
+        },
+        {
           "checked_at": "2026-10-22T13:49:34Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -2083,13 +2090,6 @@
         {
           "checked_at": "2026-08-15T18:27:13Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:17Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -2575,7 +2575,7 @@
       "source_kind": "direct_dash_research",
       "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
       "official_url": "https://att.parliament.mn/live",
-      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television. The official Parliament live/session page is the safer user-facing route; SkyGo source ownership, terms, and app playback strategy need review.",
+      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television. The official Parliament live/session page is the safer user-facing route; SkyGo source ownership, terms, and app playback strategy need review. 24 October 2026 publication review: Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved.",
       "technical_status": "validated",
       "stability_risk": "high",
       "availability": "always_on",
@@ -2607,6 +2607,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved."
+        },
+        {
           "checked_at": "2026-10-22T13:49:35Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -2617,13 +2624,6 @@
           "checked_at": "2026-08-17T10:32:46Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "ok",
-          "note": "DASH MPD detected."
-        },
-        {
-          "checked_at": "2026-08-15T18:28:07Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "ok",
           "note": "DASH MPD detected."
         }
@@ -3959,7 +3959,7 @@
       "source_kind": "official_vendor_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service. 24 October 2026 publication review: Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "sitting_only",
@@ -3995,6 +3995,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status."
+        },
+        {
           "checked_at": "2026-10-22T13:49:38Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -4005,13 +4012,6 @@
           "checked_at": "2026-08-17T10:32:47Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "error",
-          "note": "HTTP 404"
-        },
-        {
-          "checked_at": "2026-08-15T18:28:08Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "error",
           "note": "HTTP 404"
         }
@@ -4380,12 +4380,12 @@
         }
       ],
       "language": "English / Inuktitut",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
       "official_url": "https://www.assembly.nu.ca/webcasts",
-      "provenance_note": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
-      "technical_status": "needs_review",
+      "provenance_note": "Current own webcast page lists live and English/original archive viewing links, including 23 October 2026. Replace the obsolete iSi LIVE extracted HLS candidate with official viewing navigation. One index row reads 2016-10-22 while its linked filename says 2026: no EPG date is inferred from that conflict.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -4415,6 +4415,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current own webcast page lists live and English/original archive viewing links, including 23 October 2026. Replace the obsolete iSi LIVE extracted HLS candidate with official viewing navigation. One index row reads 2016-10-22 while its linked filename says 2026: no EPG date is inferred from that conflict."
+        },
+        {
           "checked_at": "2026-10-22T13:49:38Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -4427,16 +4434,9 @@
           "method": "static_http",
           "status": "error",
           "note": "HTTP 404"
-        },
-        {
-          "checked_at": "2026-08-14T21:29:39Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "link_out"
     },
     {
       "id": "uk-parliament-youtube",
@@ -4944,7 +4944,7 @@
       "source_kind": "first_party_hls",
       "playback_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
       "official_url": "https://www.asamblea.gob.sv/",
-      "provenance_note": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
+      "provenance_note": "Official Asamblea Legislativa domain hosts this plenary HLS manifest. 24 October 2026 publication review: Own institutional homepage now responds with normal browser TLS and designates TV AL. This does not by itself decode the selected live signal or settle its older endpoint TLS/rights issues; preserve specific feed hold pending its actual source-player check.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -4975,6 +4975,13 @@
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Own institutional homepage now responds with normal browser TLS and designates TV AL. This does not by itself decode the selected live signal or settle its older endpoint TLS/rights issues; preserve specific feed hold pending its actual source-player check."
+        },
+        {
           "checked_at": "2026-10-22T13:49:39Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -4985,13 +4992,6 @@
           "checked_at": "2026-08-17T10:32:55Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "error",
-          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
-        },
-        {
-          "checked_at": "2026-08-15T18:28:08Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "error",
           "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
         }
@@ -8427,13 +8427,13 @@
         }
       ],
       "language": "German / French / Italian",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
-      "playback_policy": "research_only",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
       "official_url": "https://www.parlament.ch/en/nr/livestream",
-      "provenance_note": "The official Swiss Parliament live player exposes this Akamai HLS manifest. Parliamentary Services also publish third-party iframe instructions for the National Council stream. Rechecked 2026-10-22: the master returned HTTP 404 in TLS-verified direct requests and the official browser player; a supported active-sitting route must be revalidated before native playback resumes.",
-      "technical_status": "needs_review",
+      "provenance_note": "Current own National Council viewing page identifies the live debate service and warns of automatically generated subtitle errors. Replace the stale extracted Akamai HLS candidate with the supported official page; active-sitting media and independently redistributed endpoints remain unverified.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -8467,6 +8467,13 @@
         "recommendation": "Embed or play the unaltered official National Council stream with clear Swiss Parliament attribution. Review separate terms before modifying, archiving, or redistributing recordings beyond the documented live-embed use."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current own National Council viewing page identifies the live debate service and warns of automatically generated subtitle errors. Replace the stale extracted Akamai HLS candidate with the supported official page; active-sitting media and independently redistributed endpoints remain unverified."
+        },
         {
           "checked_at": "2026-10-22T13:49:45Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
@@ -17979,6 +17986,878 @@
           "method": "review_followup",
           "status": "ok",
           "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Own Lienchiang County Council site explicitly designates the viewing provider. 22October2026 (ROC115), afternoon county-government questions: member Zhou Ruiguo and official at microphones under full council banner; recording part2. Same22October2026 morning questions, female member questioning official at council microphones; separate part of same dated sitting, not second meeting date. Selected recordings decoded inChromium/WebKit with retained individual visual findings from23October. These are morning/afternoon parts of22October2026, not independent dates or full live/room coverage."
+        }
+      ]
+    },
+    {
+      "id": "belgium-house-recordings",
+      "name": "Belgian House Legislative Recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Belgium",
+      "legislature": "De Kamer van volksvertegenwoordigers / La Chambre des représentants",
+      "external_ids": {
+        "wikidata_qid": "Q1347545",
+        "ipu_country_code": "BE",
+        "ipu_parliament_code": "BE",
+        "ipu_chamber_code": "BE-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1347545",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Wikidata own item page names the exact national chamber and country; independently matched to IPU and own chamber site on 24 October 2026."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/BE/BE-LC01/",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact national chamber code from the retained current IPU national-chamber directory, independently matched to the own site."
+        }
+      ],
+      "language": "Dutch / French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://media.dekamer.be/",
+      "provenance_note": "Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Visible VGT/LSFB interpreter insets observed in selected plenary frames. Interpretation accuracy, audible tracks and caption quality remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://media.dekamer.be/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The source offers copied page links, iframe, download and fragment controls. Only its official viewing page is linked; offered controls do not establish general direct-player, rebroadcast, copying, editing or programme-data rights.",
+        "evidence": [
+          "https://www.dekamer.be/kvvcr/index.cfm",
+          "https://media.dekamer.be/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested."
+        }
+      ]
+    },
+    {
+      "id": "czech-senate-recordings",
+      "name": "Czech Senate Legislative Recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Czech Republic",
+      "legislature": "Senát Parlamentu České republiky",
+      "external_ids": {
+        "wikidata_qid": "Q389423",
+        "ipu_country_code": "CZ",
+        "ipu_parliament_code": "CZ",
+        "ipu_chamber_code": "CZ-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q389423",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Wikidata own item page names the exact national chamber and country; independently matched to IPU and own chamber site on 24 October 2026."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CZ/CZ-UC01/",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact national chamber code from the retained current IPU national-chamber directory, independently matched to the own site."
+        }
+      ],
+      "language": "Czech",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.senat.cz/cinnost/webtv/archiv.php",
+      "provenance_note": "Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.senat.cz/cinnost/kalend/index.php",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No source-specific grant for embedding, direct playback, rebroadcast, recording/copying, audiovisual reuse or programme-data republication was established. Link to the official Senate archive; further uses require separate review.",
+        "evidence": [
+          "https://www.senat.cz/",
+          "https://www.senat.cz/cinnost/webtv/archiv.php"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies."
+        }
+      ]
+    },
+    {
+      "id": "spain-alava-recordings",
+      "name": "Álava Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Álava",
+      "legislature": "Juntas Generales de Álava / Arabako Batzar Nagusiak",
+      "external_ids": {
+        "wikidata_qid": "Q4891258",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4891258",
+          "checked_on": "2026-10-24",
+          "confidence": "medium",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://mediateca.jjggalava.eus/search",
+      "provenance_note": "Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Visible Spanish/Basque subtitle text is observed in selected source frames. Coverage, accuracy and audible language/interpretation tracks remain unverified; WebKit later seeks stall."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.jjggalava.eus/agenda",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Institutional notice reserves IP rights and requires authorization for commercial copying/reproduction/distribution; no blanket noncommercial licence or media-specific embed/direct/rebroadcast grant is established. Use only the designated viewing link.",
+        "evidence": [
+          "https://www.jjggalava.eus/es",
+          "https://mediateca.jjggalava.eus/search"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified."
+        }
+      ]
+    },
+    {
+      "id": "spain-bizkaia-recordings",
+      "name": "Bizkaia Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Bizkaia",
+      "legislature": "Juntas Generales de Bizkaia / Bizkaiko Batzar Nagusiak",
+      "external_ids": {
+        "wikidata_qid": "Q3129766",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3129766",
+          "checked_on": "2026-10-24",
+          "confidence": "medium",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://mediateca.jjggbizkaia.eus/activity",
+      "provenance_note": "Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://jjggbizkaia.eus/es/agenda-parlamentaria",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public access and download/transcript controls described by the institution are not a general grant of off-site audiovisual rights. Institutional conditions and provider software credits remain separate; link to the designated portal only.",
+        "evidence": [
+          "https://jjggbizkaia.eus/es/inicio",
+          "https://mediateca.jjggbizkaia.eus/activity"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded."
+        }
+      ]
+    },
+    {
+      "id": "spain-gipuzkoa-recordings",
+      "name": "Gipuzkoa Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Gipuzkoa",
+      "legislature": "Juntas Generales de Gipuzkoa / Gipuzkoako Batzar Nagusiak",
+      "external_ids": {
+        "wikidata_qid": "Q4890912",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4890912",
+          "checked_on": "2026-10-24",
+          "confidence": "medium",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://jggipuzkoa.seneca.tv/activity",
+      "provenance_note": "Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/agenda_parlamentaria.jsp?idioma=es",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Institutional terms condition general reproduction on attribution, unaltered context and exceptions, with some multimedia requiring authorization. Applicability to the separate Seneca host, embedding, direct media and rebroadcast is unresolved. Only the designated viewing page is linked.",
+        "evidence": [
+          "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/index.jsp?idioma=es",
+          "https://jggipuzkoa.seneca.tv/activity"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion."
+        }
+      ]
+    },
+    {
+      "id": "czech-moravian-silesian-recordings",
+      "name": "Moravian-Silesian Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Moravian-Silesian Region",
+      "legislature": "Zastupitelstvo Moravskoslezského kraje",
+      "external_ids": {
+        "wikidata_qid": "Q27974730",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q27974730",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 1405727153; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "Czech",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+      "provenance_note": "Own current 2024–2028 assembly index links programmes, materials, resolutions, minutes and recordings. Fresh 24 October source-native sampling of the 16 September 2026 ninth session decodes initially in Chromium and WebKit; Chromium also advances after a 1200-second seek. The inspected later frame shows the assembly dais and named Josef Bělica agenda-programme discussion marker. WebKit later seeking stalls at exactly1200 seconds; no continuous-live or complete-recording claim is made.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Assembly rules document institutional online broadcast and anonymized archive publication; these and a model information licence are not a third-party audiovisual reuse grant. Link to the official recording index only.",
+        "evidence": [
+          "https://www.msk.cz/",
+          "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own current 2024–2028 assembly index links programmes, materials, resolutions, minutes and recordings. Fresh 24 October source-native sampling of the 16 September 2026 ninth session decodes initially in Chromium and WebKit; Chromium also advances after a 1200-second seek. The inspected later frame shows the assembly dais and named Josef Bělica agenda-programme discussion marker. WebKit later seeking stalls at exactly1200 seconds; no continuous-live or complete-recording claim is made."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-geneva-recordings",
+      "name": "Geneva Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Geneva",
+      "legislature": "Grand Conseil du canton de Genève",
+      "external_ids": {
+        "wikidata_qid": "Q509892",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q509892",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2550004911; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://ge.ch/grandconseil/sessions/videos/2026/",
+      "provenance_note": "Own Grand Conseil navigation designates the video archive. 1 October and 22 January 2026 clips show Stéphane Florey on PL13730-A and Alia Chaker Mangeat on PL13578-B in Chromium; January also decodes in WebKit. October WebKit samples stall or time out.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://ge.ch/grandconseil/sessions/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Source conditions allow third-party dissemination of public-session videos while forbidding alterations without prior written bureau authorization. This publication is an official archive link, without independently implementing redistribution or assuming all other uses are cleared.",
+        "evidence": [
+          "https://ge.ch/grandconseil/index/",
+          "https://ge.ch/grandconseil/sessions/videos/2026/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Grand Conseil navigation designates the video archive. 1 October and 22 January 2026 clips show Stéphane Florey on PL13730-A and Alia Chaker Mangeat on PL13578-B in Chromium; January also decodes in WebKit. October WebKit samples stall or time out."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-st-gallen-recordings",
+      "name": "St Gallen Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "St Gallen",
+      "legislature": "Kantonsrat des Kantons St. Gallen",
+      "external_ids": {
+        "wikidata_qid": "Q2082614",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2082614",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2512733038; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://sg.recapp.ch/shareparl/",
+      "provenance_note": "Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No general independent audiovisual reuse, direct-player, rebroadcast or programme-data grant has been established from the source-specific review. Use the institution-designated audiovisual minutes as an external viewing link.",
+        "evidence": [
+          "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+          "https://sg.recapp.ch/shareparl/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification."
+        }
+      ]
+    },
+    {
+      "id": "germany-mecklenburg-vorpommern-recordings",
+      "name": "Mecklenburg-Vorpommern Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Mecklenburg-Vorpommern",
+      "legislature": "Landtag Mecklenburg-Vorpommern",
+      "external_ids": {
+        "wikidata_qid": "Q882738",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q882738",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2548143679; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@MVLandtag",
+      "provenance_note": "The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.landtag-mv.de/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Published material protected; personal download/printing allowed, broader use/distribution including commercial use requires written permission. No blanket third-party video reuse grant.",
+        "evidence": [
+          "https://www.landtag-mv.de/",
+          "https://www.youtube.com/@MVLandtag"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence."
+        }
+      ]
+    },
+    {
+      "id": "italy-south-tyrol-recordings",
+      "name": "South Tyrol Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "South Tyrol",
+      "legislature": "Consiglio della Provincia Autonoma di Bolzano / Südtiroler Landtag",
+      "external_ids": {
+        "wikidata_qid": "Q458185",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q458185",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2533685446; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German / Italian / Ladin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UC5bOVQNvQJklEksWtmpYByg",
+      "provenance_note": "Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.landtag-bz.org/de/home",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "HTTP200 but captured legal page remains a Loading shell with publisher contact information; actual substantive reuse notice not established. Do not treat200 as a reviewed licence.",
+        "evidence": [
+          "https://www.landtag-bz.org/de/home",
+          "https://www.youtube.com/channel/UC5bOVQNvQJklEksWtmpYByg"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech."
+        }
+      ]
+    },
+    {
+      "id": "italy-campania-recordings",
+      "name": "Campania Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Campania",
+      "legislature": "Consiglio regionale della Campania",
+      "external_ids": {
+        "wikidata_qid": "Q21190093",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21190093",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2478308181; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "Italian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UC9lEB256a-l0bFj98W4tRUA",
+      "provenance_note": "Own regional assembly navigation designates this channel for its sittings. One 27 August 2026 afternoon sitting shows chair Massimiliano Manfredi conducting business under a dated assembly caption, decoded in Chromium and WebKit.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.cr.campania.it/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Website data/contents defaultCCBY4.0 unless otherwise noted, requiring attribution and originalURL where possible. Applicability to each externally hosted audiovisual recording remains to be checked; site licence alone is not blanket provider permission.",
+        "evidence": [
+          "https://www.cr.campania.it/",
+          "https://www.youtube.com/channel/UC9lEB256a-l0bFj98W4tRUA"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own regional assembly navigation designates this channel for its sittings. One 27 August 2026 afternoon sitting shows chair Massimiliano Manfredi conducting business under a dated assembly caption, decoded in Chromium and WebKit."
+        }
+      ]
+    },
+    {
+      "id": "south-africa-eastern-cape-recordings",
+      "name": "Eastern Cape Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Eastern Cape",
+      "legislature": "Eastern Cape Provincial Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q5330037",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5330037",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2470717511; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "English / Xhosa / Afrikaans",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCUwLgYWElaOPyol_zCUyDaA",
+      "provenance_note": "Own provincial legislature navigation designates this channel. The 30 October 2025 House sitting shows a member reading at the chamber desk microphone and decodes in Chromium and WebKit. This is explicitly historical archive coverage; the separate disability public-participation session does not establish current ordinary plenary service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.eclegislature.gov.za/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open.",
+        "evidence": [
+          "https://www.eclegislature.gov.za/",
+          "https://www.youtube.com/channel/UCUwLgYWElaOPyol_zCUyDaA"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own provincial legislature navigation designates this channel. The 30 October 2025 House sitting shows a member reading at the chamber desk microphone and decodes in Chromium and WebKit. This is explicitly historical archive coverage; the separate disability public-participation session does not establish current ordinary plenary service."
+        }
+      ]
+    },
+    {
+      "id": "taiwan-kinmen-recordings",
+      "name": "Kinmen Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Kinmen",
+      "legislature": "金門縣議會",
+      "external_ids": {
+        "wikidata_qid": "Q15914537",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15914537",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2434262463; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "Mandarin Chinese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCssU97D8roqOPbnU4I-OsOw",
+      "provenance_note": "Own county council navigation designates this channel. Two member/executive exchanges decode in Chromium and WebKit. Their titles label 22 and 23 October 2025; recent 2026 upload timing is not used as a meeting date. Listed as an official archive without a current-live or 2026 sitting claim.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.kmcc.gov.tw/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Copyright notice generally permits clearly labelled nonmisleading incoming links without consent. Protected audiovisual reuse remains conditional; sampled provider descriptions explicitly reserve reproduction/editing/public transmission without permission. Linking permission is distinct from video permission.",
+        "evidence": [
+          "https://www.kmcc.gov.tw/",
+          "https://www.youtube.com/channel/UCssU97D8roqOPbnU4I-OsOw"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own county council navigation designates this channel. Two member/executive exchanges decode in Chromium and WebKit. Their titles label 22 and 23 October 2025; recent 2026 upload timing is not used as a meeting date. Listed as an official archive without a current-live or 2026 sitting claim."
         }
       ]
     }

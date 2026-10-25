@@ -122,6 +122,31 @@
         for (const item of row.remaining_authority_instruments) missing.append(element("li", "", item));
         body.append(missing);
       }
+      const service = row.service_review;
+      if (service && service.stage !== "not_recorded") {
+        body.append(element("h4", "", shared.message(state.locale, "sourceDetails")));
+        if (service.reviewed_on) body.append(element("p", "", message("reviewed", { date: localizedDate(service.reviewed_on) })));
+        const stage = element("p", "institution-service-stage", service.stage === "partial_source_followup"
+          ? "Individual source follow-up recorded. This is a partial review; current live access, guide data and reuse permissions remain separate findings."
+          : "Earlier service checks retained. A fresh playback check or complete rights validation is not implied.");
+        stage.lang = "en";
+        body.append(stage);
+        for (const followup of service.followups ?? []) {
+          if (followup.scope) {
+            const scope = element("p", "institution-service-scope", followup.scope);
+            scope.lang = "en";
+            body.append(scope);
+          }
+          if (followup.unresolved?.length) {
+            body.append(element("h4", "", message("missingEvidence")));
+            const gaps = element("ul", "institution-service-gaps");
+            gaps.lang = "en";
+            for (const item of followup.unresolved) gaps.append(element("li", "", item));
+            body.append(gaps);
+          }
+          if (followup.report_url) body.append(link(shared.message(state.locale, "validationReport"), followup.report_url));
+        }
+      }
       const related = row.relationships.map((relation) => records.get(relation.institution_id)).filter(Boolean);
       if (related.length) {
         body.append(element("h4", "", message("relationships")));

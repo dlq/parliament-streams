@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded.",
+    "Public access and download/transcript controls described by the institution are not a general grant of off-site audiovisual rights. Institutional conditions and provider software credits remain separate; link to the designated portal only.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "spain-bizkaia-recordings",
+    "name": "Bizkaia Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Bizkaia",
+    "legislature": "Juntas Generales de Bizkaia / Bizkaiko Batzar Nagusiak",
+    "external_ids": {
+      "wikidata_qid": "Q3129766",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q3129766",
+        "checked_on": "2026-10-24",
+        "confidence": "medium",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+      }
+    ],
+    "language": "Spanish / Basque",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://mediateca.jjggbizkaia.eus/activity",
+    "provenance_note": "Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://jjggbizkaia.eus/es/agenda-parlamentaria",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Public access and download/transcript controls described by the institution are not a general grant of off-site audiovisual rights. Institutional conditions and provider software credits remain separate; link to the designated portal only.",
+      "evidence": [
+        "https://jjggbizkaia.eus/es/inicio",
+        "https://mediateca.jjggbizkaia.eus/activity"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

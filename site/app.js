@@ -84,198 +84,7 @@ function renderDailyHero() {
   elements.heroCredit.innerHTML = `${escapeHtml(hero.credit)} <span aria-hidden="true">↗</span>`;
 }
 
-const jurisdictionFlagAssets = {
-  // Flag sources and remaining neutral marks: 2026-10-24-catalogue-flag-coverage.json
-  "Bolívar": "assets/flags/bolivar-department.svg",
-  "Caldas": "assets/flags/caldas.svg",
-  "Canary Islands": "assets/flags/canary-islands.svg",
-  "Canelones": "assets/flags/canelones.svg",
-  "Cantabria": "assets/flags/cantabria.svg",
-  "Castile and León": "assets/flags/castile-and-leon.svg",
-  "Ceará": "assets/flags/ceara.svg",
-  "Cesar": "assets/flags/cesar.svg",
-  "District of Columbia": "assets/flags/district-of-columbia.svg",
-  "Fukui": "assets/flags/fukui.svg",
-  "Glarus": "assets/flags/glarus.svg",
-  "Goiás": "assets/flags/goias.svg",
-  "Guaviare": "assets/flags/guaviare.svg",
-  "Hesse": "assets/flags/hesse.svg",
-  "Hsinchu City": "assets/flags/hsinchu-city.svg",
-  "Hyogo": "assets/flags/hyogo.svg",
-  "Jura": "assets/flags/jura.svg",
-  "Kansas": "assets/flags/kansas.svg",
-  "La Rioja, Spain": "assets/flags/la-rioja-spain.svg",
-  "Lienchiang": "assets/flags/lienchiang.svg",
-  "Mato Grosso": "assets/flags/mato-grosso.svg",
-  "Mato Grosso do Sul": "assets/flags/mato-grosso-do-sul.svg",
-  "Mendoza": "assets/flags/mendoza.svg",
-  "Mississippi": "assets/flags/mississippi.svg",
-  "Montenegro": "assets/flags/me.svg",
-  "New Brunswick": "assets/flags/new-brunswick.svg",
-  "Paraná": "assets/flags/parana.svg",
-  "Paraíba": "assets/flags/paraiba.svg",
-  "Penghu": "assets/flags/penghu.svg",
-  "Pernambuco": "assets/flags/pernambuco.svg",
-  "Quindío": "assets/flags/quindio.svg",
-  "Rio de Janeiro": "assets/flags/rio-de-janeiro-state.svg",
-  "Rondônia": "assets/flags/rondonia.svg",
-  "Río Negro": "assets/flags/rio-negro.svg",
-  "Salta": "assets/flags/salta.svg",
-  "San Juan": "assets/flags/san-juan.svg",
-  "Santa Cruz, Argentina": "assets/flags/santa-cruz-argentina.svg",
-  "Saxony": "assets/flags/saxony.svg",
-  "Serbia": "assets/flags/rs.svg",
-  "Tainan": "assets/flags/tainan.svg",
-  "Thurgau": "assets/flags/thurgau.svg",
-  "Thuringia": "assets/flags/thuringia.svg",
-  "Tierra del Fuego": "assets/flags/tierra-del-fuego.svg",
-  "Tolima": "assets/flags/tolima.svg",
-  "Tucumán": "assets/flags/tucuman.svg",
-  "United States Virgin Islands": "assets/flags/vi.svg",
-  "Vaud": "assets/flags/vaud.svg",
-  "Wyoming": "assets/flags/wyoming.svg",
-  "Zurich": "assets/flags/zurich.svg",
-  "Åland": "assets/flags/ax.svg",
-  // End of 24 October flag additions.
-  "Buenos Aires Province": "assets/flags/buenos-aires-province.svg",
-  "Catamarca": "assets/flags/catamarca.svg",
-  "Buenos Aires City": "assets/flags/buenos-aires-city.svg",
-  "La Rioja, Argentina": "assets/flags/la-rioja-argentina.svg",
-  "Gyeongsangnam-do": "assets/flags/gyeongsangnam.svg",
-  "Sejong": "assets/flags/sejong.svg",
-  "Busan": "assets/flags/busan.svg",
-  "Chungcheongnam-do": "assets/flags/chungcheongnam.svg",
-  "Jeonbuk State": "assets/flags/jeonbuk.svg",
-  "Daegu": "assets/flags/daegu.svg",
-  "Gyeongsangbuk-do": "assets/flags/gyeongsangbuk.svg",
-  "Incheon": "assets/flags/incheon.svg",
-  "Silesian Voivodeship": "assets/flags/silesian.svg",
-  "Łódź Voivodeship": "assets/flags/lodz.svg",
-  Poland: "assets/flags/pl.svg",
-  Chubut: "assets/flags/chubut.svg",
-  "North Kalimantan": "assets/flags/north-kalimantan.svg",
-  Arauca: "assets/flags/arauca.svg", "Caquetá": "assets/flags/caqueta.svg", Risaralda: "assets/flags/risaralda.svg",
-  Corrientes: "assets/flags/corrientes.svg",
-  "Neuquén": "assets/flags/neuquen.svg",
-  Sicily: "assets/flags/sicily.svg",
-  "West Virginia": "assets/flags/west-virginia.svg",
-  "Slovenia": "assets/flags/si.svg",
-  "Cape Verde": "assets/flags/cv.svg",
-  "Lithuania": "assets/flags/lt.svg",
-  "Malaysia": "assets/flags/my.svg",
-  "Suriname": "assets/flags/sr.svg",
-  "Dominican Republic": "assets/flags/do.svg",
-  "Argentina": "assets/flags/ar.svg",
-  "Namibia": "assets/flags/na.svg",
-  "North Macedonia": "assets/flags/mk.svg",
-  "Ghana": "assets/flags/gh.svg",
-  "Colombia": "assets/flags/co.svg",
-  "Guyana": "assets/flags/gy.svg",
-  "Timor-Leste": "assets/flags/tl.svg",
-  "Jamaica": "assets/flags/jm.svg",
-  "Sri Lanka": "assets/flags/lk.svg",
-  "Panama": "assets/flags/pa.svg",
-  "Croatia": "assets/flags/hr.svg",
-  "Botswana": "assets/flags/bw.svg",
-  "Indonesia": "assets/flags/id.svg",
-  "South Korea": "assets/flags/kr.svg",
-  "Tyrol": "assets/flags/tirol.svg",
-  "Appenzell Ausserrhoden": "assets/flags/appenzell-ausserrhoden.svg",
-  "Wallonia": "assets/flags/wallonia.svg",
-  "Brussels-Capital Region": "assets/flags/brussels.svg",
-  "British Virgin Islands": "assets/flags/vg.svg",
-  "Montserrat": "assets/flags/ms.svg",
-
-  "Cook Islands": "assets/flags/ck.svg", Guernsey: "assets/flags/gg.svg",
-  Bermuda: "assets/flags/bm.svg",
-  "Cayman Islands": "assets/flags/ky.svg", "Turks and Caicos Islands": "assets/flags/tc.svg",
-  Guam: "assets/flags/gu.svg", "Puerto Rico": "assets/flags/pr.svg", Gibraltar: "assets/flags/gi.svg",
-  Drenthe: "assets/flags/drenthe.svg",
-  Limburg: "assets/flags/limburg.svg",
-  "Noord-Brabant": "assets/flags/noord-brabant.svg",
-  Bern: "assets/flags/bern.svg",
-  Jersey: "assets/flags/je.svg",
-  "Isle of Man": "assets/flags/im.svg",
-  "French Polynesia": "assets/flags/pf.svg",
-  "New Caledonia": "assets/flags/nc.svg",
-  "Sint Maarten": "assets/flags/sx.svg",
-  "Austria": "assets/flags/at.svg",
-  "Japan": "assets/flags/jp.svg",
-  "Mauritius": "assets/flags/mu.svg",
-  "Switzerland": "assets/flags/ch.svg",
-  "Córdoba": "assets/flags/cordoba.svg",
-  "Nagasaki": "assets/flags/nagasaki.svg",
-  "Santa Catarina": "assets/flags/santa-catarina.svg",
-
-  Alberta: "assets/flags/alberta.svg",
-  Andalusia: "assets/flags/andalusia.svg",
-  Australia: "assets/flags/au.svg",
-  "Baden-Wurttemberg": "assets/flags/baden-wurttemberg.svg",
-  Bavaria: "assets/flags/bavaria.svg",
-  Brazil: "assets/flags/br.svg",
-  "British Columbia": "assets/flags/british-columbia.svg",
-  Canada: "assets/flags/ca.svg",
-  California: "assets/flags/california.svg",
-  Catalonia: "assets/flags/catalonia.svg",
-  Chile: "assets/flags/cl.svg",
-  "Costa Rica": "assets/flags/cr.svg",
-  "Council of Europe": "assets/flags/eu.svg",
-  "Czech Republic": "assets/flags/cz.svg",
-  Denmark: "assets/flags/dk.svg",
-  Finland: "assets/flags/fi.svg",
-  Sweden: "assets/flags/se.svg",
-  "El Salvador": "assets/flags/sv.svg",
-  Estonia: "assets/flags/ee.svg",
-  "European Union": "assets/flags/eu.svg",
-  France: "assets/flags/fr.svg",
-  Florida: "assets/flags/florida.svg",
-  Germany: "assets/flags/de.svg",
-  Greece: "assets/flags/gr.svg",
-  India: "assets/flags/in.svg",
-  Ireland: "assets/flags/ie.svg",
-  Israel: "assets/flags/il.svg",
-  Italy: "assets/flags/it.svg",
-  Jalisco: "assets/flags/jalisco.svg",
-  Luxembourg: "assets/flags/lu.svg",
-  Manitoba: "assets/flags/manitoba.svg",
-  Minnesota: "assets/flags/minnesota.svg",
-  Mongolia: "assets/flags/mn.svg",
-  Navarre: "assets/flags/navarre.svg",
-  Netherlands: "assets/flags/nl.svg",
-  "New Zealand": "assets/flags/nz.svg",
-  "New York": "assets/flags/new-york.svg",
-  "New South Wales": "assets/flags/new-south-wales.svg",
-  "Newfoundland and Labrador": "assets/flags/newfoundland-and-labrador.svg",
-  "North Rhine-Westphalia": "assets/flags/north-rhine-westphalia.svg",
-  "Northwest Territories": "assets/flags/northwest-territories.svg",
-  Nunavut: "assets/flags/nunavut.svg",
-  Ontario: "assets/flags/ontario.svg",
-  Oregon: "assets/flags/oregon.svg",
-  OSCE: "assets/flags/osce.svg",
-  Norway: "assets/flags/no.svg",
-  Portugal: "assets/flags/pt.svg",
-  "Prince Edward Island": "assets/flags/prince-edward-island.svg",
-  Queensland: "assets/flags/queensland.svg",
-  Quebec: "assets/flags/quebec.svg",
-  "Rhode Island": "assets/flags/rhode-island.svg",
-  Saskatchewan: "assets/flags/saskatchewan.svg",
-  Scotland: "assets/flags/scotland.svg",
-  Slovakia: "assets/flags/sk.svg",
-  Spain: "assets/flags/es.svg",
-  Taiwan: "assets/flags/tw.svg",
-  Thailand: "assets/flags/th.svg",
-  Texas: "assets/flags/texas.svg",
-  Utah: "assets/flags/utah.svg",
-  Valencia: "assets/flags/valencia.svg",
-  Victoria: "assets/flags/victoria.svg",
-  Washington: "assets/flags/washington.svg",
-  Wales: "assets/flags/wales.svg",
-  "Western Australia": "assets/flags/western-australia.svg",
-  "Northern Ireland": "assets/flags/northern-ireland.svg",
-  "United Kingdom": "assets/flags/gb.svg",
-  "United States": "assets/flags/us.svg",
-  "United Nations": "assets/flags/un.svg",
-};
+const jurisdictionFlagAssets = window.ParliamentStreamsFlags;
 
 const jurisdictionCodes = {
   Serbia: "RS",
@@ -506,7 +315,9 @@ function jurisdictionName(name) {
   if (specialName) return specialName;
   const sharedName = window.ParliamentStreamsMapI18n?.jurisdictionName(state.locale, name);
   if (sharedName && sharedName !== name) return sharedName;
-  const code = jurisdictionCodes[name];
+  const code = jurisdictionCodes[name] ?? state.channels.find((channel) =>
+    channel.jurisdiction_level === "national" && channel.country_or_region === name
+  )?.external_ids?.ipu_country_code;
   if (!code) return name;
   const displayName = new Intl.DisplayNames([state.locale], { type: "region", fallback: "code" }).of(code);
   return displayName && displayName !== code ? displayName : name;
@@ -1084,6 +895,7 @@ function validationMarkup(channel) {
       <span><strong>${t("validationChecked", { date: formatDate(latest.checked_at) })}</strong></span>
       <span><strong>${t("validationMethod")}</strong> ${validationMethodLabel(latest.method)}</span>
       <span><strong>${t("accessStatus")}</strong> <span class="status status-${slug(latest.status)}">${label(latest.status)}</span></span>
+      ${latest.method === "review_followup" ? `<span lang="en">${escapeHtml(latest.note)}</span>` : ""}
       <a href="${reportUrl}" target="_blank" rel="noreferrer">${t("validationReport")} ↗</a>
     </dd>
   </div>`;
@@ -1139,12 +951,13 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     </div>
     <h3 class="detail-title" id="detail-title" tabindex="-1" aria-live="polite">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · <span${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></p>
+    ${sourceStatus(channel) === "research" ? `<p class="detail-subtitle research-playback-note">${t("sourceResearchDescription")}</p>` : ""}
     ${allowed ? `<div class="media-frame" id="media-frame">
       <div class="player-placeholder"><button class="placeholder-play-button" data-start-playback type="button" aria-label="${t("watch")}">▶</button><p>${t("ready")}</p></div>
     </div>` : ""}
     <div class="detail-actions">
       ${allowed ? `<button class="play-button" data-start-playback type="button">${t("watch")}</button>` : ""}
-      <a class="official-button" href="${channel.official_url}" target="_blank" rel="noreferrer">${t("official")} ↗</a>
+      <a class="official-button" href="${channel.official_url}" target="_blank" rel="noreferrer">${sourceStatus(channel) === "research" ? t("officialEvidence") : t("official")} ↗</a>
     </div>
     ${programme ? `<dl class="detail-grid"><div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div></dl>` : ""}
     <details class="source-documentation">

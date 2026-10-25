@@ -51,11 +51,14 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-24, all 243 catalogue source records have at least one official
+As of 2026-10-24, all 256 catalogue source records have at least one official
 schedule, agenda, meeting or dated video-event surface recorded. Thirty-three
-records use implemented parsers across 17 unique URLs; 215 other unique URLs
+records use implemented parsers across 17 unique URLs; 228 other unique URLs
 remain planned. These are source-discovery counts, not populated programme-guide
-coverage or proof that every surface describes a broadcast. The earlier
+coverage or proof that every surface describes a broadcast. The jurisdiction filter
+includes both parsed-guide records and planned official calendar/navigation links.
+These official links remain available if generated programme data cannot load.
+Catalogue and schedule use the same sourced jurisdiction-flag registry. The earlier
 117-record/106-URL snapshot and the source-by-source discovery baseline in
 `reports/epg-discovery-2026-08-24.md` remain historical evidence.
 

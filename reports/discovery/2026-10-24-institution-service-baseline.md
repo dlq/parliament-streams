@@ -13,8 +13,8 @@ eligible service queue.
 | Measure | Records | Meaning |
 | --- | ---: | --- |
 | Current eligible identity queue | 940 | All exact eligible inventory IDs |
-| Exact documented catalogue matches | 190 | Identity-to-source crosswalks, referencing 220 distinct catalogue IDs |
-| No documented exact catalogue match | 750 | A crosswalk gap; not a finding that no official service exists |
+| Exact documented catalogue matches | 203 | Identity-to-source crosswalks, referencing 233 distinct catalogue IDs |
+| No documented exact catalogue match | 737 | A crosswalk gap; not a finding that no official service exists |
 | Historical regional service cohort | 652 | Earlier metadata/route checks and selected deeper validation; gaps retained |
 | Outside that historical cohort | 288 | New chambers, national identities and newly admitted institutions |
 | New individual source follow-ups in this run | 302 | Partial source checks with dated evidence and unresolved claims |
@@ -34,9 +34,15 @@ The older checks and all 302 renewed follow-ups still have unresolved dimensions
 **Zero unreviewed expanded identities is not zero validation work**; combining
 these buckets into one completion percentage would conceal differences in evidence depth.
 
-The canonical catalogue has 243 sources. Thirty-three source records have an
+The canonical catalogue has 256 sources after 13 scoped official-link promotions. Thirty-three source records have an
 implemented schedule parser. Its aggregate permission labels are retained as
 source evidence, not converted into permission for every use.
+
+The [publication pass](2026-10-24-institution-publication-decisions.json) separately
+records 324 readiness decisions: 13 publish, 47 retain existing exact coverage,
+and 264 specific holds. The baseline's fixed `all_dimensions_validated: false`
+is a coverage-register guardrail, not an assessment that every official link
+must wait for EPG or redistribution clearance.
 
 ## New source follow-ups
 

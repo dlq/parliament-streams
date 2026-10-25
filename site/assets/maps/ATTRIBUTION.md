@@ -161,3 +161,5 @@ link the source and licence. It is loaded separately from documented-admin1.geoj
 and does not change the licences of the other datasets or application code.
 The2017generalization is a navigation outline, not a current cadastral survey
 or a position on territorial status.
+
+Thirteen scoped viewing-service publications reconciled 24 October 2026 add eleven public-domain Natural Earth Admin1 navigation outlines: ES-VI (Álava), ES-BI (Bizkaia), ES-SS (Gipuzkoa), CZ-MO (Moravian-Silesian Region), CH-GE (Geneva), CH-SG (St Gallen), DE-MV (Mecklenburg-Vorpommern), IT-BZ (South Tyrol), ZA-EC (Eastern Cape), TW-KIN (Kinmen), and the union of IT-SA/IT-NA/IT-CE/IT-BN/IT-AV (Campania). Basque foral territories retain their own outlines within the Basque Country; Campania is assembled from its five provincial components. Coordinates rounded to six decimals, MultiPolygon normalized and spherical winding checked. These generalized navigation outlines are not cadastral surveys or positions on territorial status.

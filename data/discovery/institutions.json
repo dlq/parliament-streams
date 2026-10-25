@@ -8332,6 +8332,10 @@
         {
           "report": "reports/discovery/2026-10-24-national-chamber-inventory.json",
           "record_id": "national--be-lc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "national--be-lc01"
         }
       ],
       "service_validation_register": null,
@@ -8339,7 +8343,17 @@
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
       "relationships": [],
-      "aliases": []
+      "aliases": [],
+      "existing_catalogue_ids": [
+        "belgium-house-recordings"
+      ],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "belgium-house-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      }
     },
     {
       "id": "national--be-uc01",
@@ -13668,9 +13682,15 @@
         {
           "report": "reports/discovery/2026-10-24-regional-scope-consistency.json",
           "record_id": "czech-higher-territorial-assemblies-consistency"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "czech-republic--moravskoslezsky-kraj"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "czech-moravian-silesian-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
@@ -13679,7 +13699,15 @@
         "report": "reports/discovery/2026-10-24-regional-scope-consistency.json",
         "class_id": "czech-higher-territorial-assemblies-consistency",
         "historical_authority_status": "eligible_legislature"
-      }
+      },
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "czech-moravian-silesian-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "czech-republic--olomoucky-kraj",
@@ -14056,6 +14084,10 @@
         {
           "report": "reports/discovery/2026-10-24-national-chamber-inventory.json",
           "record_id": "national--cz-uc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "national--cz-uc01"
         }
       ],
       "service_validation_register": null,
@@ -14063,7 +14095,17 @@
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
       "relationships": [],
-      "aliases": []
+      "aliases": [],
+      "existing_catalogue_ids": [
+        "czech-senate-recordings"
+      ],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "czech-senate-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      }
     },
     {
       "id": "denmark--faroe-islands",
@@ -16907,13 +16949,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "germany--landtag-mecklenburg-vorpommern"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "germany--landtag-mecklenburg-vorpommern"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "germany-mecklenburg-vorpommern-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "germany-mecklenburg-vorpommern-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "germany--landtag-niedersachsen",
@@ -22310,13 +22366,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "italy--consiglio-della-provincia-autonoma-di-bolzano"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "italy--consiglio-della-provincia-autonoma-di-bolzano"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "italy-south-tyrol-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "italy-south-tyrol-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "italy--consiglio-della-provincia-autonoma-di-trento",
@@ -22610,13 +22680,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "italy--consiglio-regionale-della-campania"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "italy--consiglio-regionale-della-campania"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "italy-campania-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "italy-campania-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "italy--consiglio-regionale-della-liguria",
@@ -35179,13 +35263,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "south-africa--eastern-cape"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "south-africa--eastern-cape"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "south-africa-eastern-cape-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "south-africa-eastern-cape-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "south-africa--free-state",
@@ -36145,12 +36243,27 @@
         {
           "report": "reports/discovery/2026-10-24-scope-resolution-additional-europe.json",
           "record_id": "spain--basque-country--araba-juntas-generales"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "spain--basque-country--araba-juntas-generales"
         }
       ],
       "service_validation_register": null,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "existing_catalogue_ids": [
+        "spain-alava-recordings"
+      ],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "spain-alava-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "spain--basque-country--bizkaia-juntas-generales",
@@ -36176,12 +36289,27 @@
         {
           "report": "reports/discovery/2026-10-24-scope-resolution-additional-europe.json",
           "record_id": "spain--basque-country--bizkaia-juntas-generales"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "spain--basque-country--bizkaia-juntas-generales"
         }
       ],
       "service_validation_register": null,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "existing_catalogue_ids": [
+        "spain-bizkaia-recordings"
+      ],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "spain-bizkaia-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "spain--basque-country--gipuzkoa-juntas-generales",
@@ -36207,12 +36335,27 @@
         {
           "report": "reports/discovery/2026-10-24-scope-resolution-additional-europe.json",
           "record_id": "spain--basque-country--gipuzkoa-juntas-generales"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "spain--basque-country--gipuzkoa-juntas-generales"
         }
       ],
       "service_validation_register": null,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "existing_catalogue_ids": [
+        "spain-gipuzkoa-recordings"
+      ],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "spain-gipuzkoa-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "spain--ceuta",
@@ -38304,13 +38447,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "switzerland--geneve-genf"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "switzerland--geneve-genf"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "switzerland-geneva-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "switzerland-geneva-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "switzerland--glarus",
@@ -38658,13 +38815,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "switzerland--st-gallen"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "switzerland--st-gallen"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "switzerland-st-gallen-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "switzerland-st-gallen-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "switzerland--thurgau",
@@ -39150,13 +39321,27 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "taiwan--kinmen"
+        },
+        {
+          "report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+          "record_id": "taiwan--kinmen"
         }
       ],
-      "existing_catalogue_ids": [],
+      "existing_catalogue_ids": [
+        "taiwan-kinmen-recordings"
+      ],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "taiwan-kinmen-recordings"
+        ],
+        "reviewed_on": "2026-10-24",
+        "report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "taiwan--lienchiang",

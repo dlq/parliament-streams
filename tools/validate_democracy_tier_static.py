@@ -8,6 +8,7 @@ import html as html_lib
 import json
 import re
 import ssl
+import sys
 import time
 from collections.abc import Iterable
 from datetime import UTC, datetime
@@ -16,6 +17,11 @@ from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from tools.sanitize_research_evidence import sanitize_value  # noqa: E402
 
 USER_AGENT = "parliament-streams-tier-refresh/0.1 (+https://github.com/dlq/parliament-streams)"
 TIMEOUT_SECONDS = 8
@@ -127,7 +133,9 @@ def iter_seed_candidates(country: dict[str, Any]) -> Iterable[dict[str, str]]:
             yield {"kind": kind, "url": url}
 
 
-def check_country(country: dict[str, Any], timeout: int) -> dict[str, Any]:
+def check_country(
+    country: dict[str, Any], timeout: int, deadline: float | None = None
+) -> dict[str, Any]:
     results = []
     seen: set[tuple[str, str]] = set()
 
@@ -136,6 +144,11 @@ def check_country(country: dict[str, Any], timeout: int) -> dict[str, Any]:
         if key in seen:
             continue
         seen.add(key)
+        if deadline is not None and time.monotonic() >= deadline:
+            results.append(
+                {**candidate, "status": "unattempted", "note": "Network budget exhausted"}
+            )
+            continue
         result = validate_candidate(candidate["kind"], candidate["url"], timeout)
         results.append(result)
         for discovered_url in result.get("discovered_manifests", []):
@@ -144,6 +157,16 @@ def check_country(country: dict[str, Any], timeout: int) -> dict[str, Any]:
             if discovered_key in seen:
                 continue
             seen.add(discovered_key)
+            if deadline is not None and time.monotonic() >= deadline:
+                results.append(
+                    {
+                        "kind": "discovered_manifest",
+                        "url": discovered_url,
+                        "status": "unattempted",
+                        "note": "Network budget exhausted",
+                    }
+                )
+                continue
             discovered = validate_candidate(discovered_kind, discovered_url, timeout)
             discovered["kind"] = "discovered_manifest"
             results.append(discovered)
@@ -168,11 +191,17 @@ def check_country(country: dict[str, Any], timeout: int) -> dict[str, Any]:
     }
 
 
-def run(input_path: Path, output_path: Path, timeout: int, workers: int) -> dict[str, Any]:
+def run(
+    input_path: Path, output_path: Path, timeout: int, workers: int, budget_seconds: float = 0
+) -> dict[str, Any]:
     source = json.loads(input_path.read_text(encoding="utf-8"))
     started = time.time()
+    deadline = time.monotonic() + budget_seconds if budget_seconds else None
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(check_country, country, timeout) for country in source["countries"]]
+        futures = [
+            pool.submit(check_country, country, timeout, deadline)
+            for country in source["countries"]
+        ]
         countries = [future.result() for future in futures]
     report = {
         "checked_at": utc_timestamp(),
@@ -186,7 +215,19 @@ def run(input_path: Path, output_path: Path, timeout: int, workers: int) -> dict
         "seed_report": str(input_path),
         "elapsed_seconds": round(time.time() - started, 2),
         "countries": countries,
+        "coverage": {
+            "planned": sum(
+                len(list(iter_seed_candidates(country))) for country in source["countries"]
+            ),
+            "unattempted": sum(
+                result["status"] == "unattempted"
+                for country in countries
+                for result in country["results"]
+            ),
+            "budget_seconds": budget_seconds,
+        },
     }
+    report = dict(sanitize_value(report))
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report
@@ -198,9 +239,17 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--timeout", type=int, default=TIMEOUT_SECONDS)
     parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument(
+        "--budget-seconds",
+        type=float,
+        default=0,
+        help="network budget; zero keeps the historical unlimited explicit run",
+    )
     args = parser.parse_args()
+    if args.timeout <= 0 or not 1 <= args.workers <= 12 or args.budget_seconds < 0:
+        parser.error("timeout must be positive, workers 1–12, budget nonnegative")
 
-    report = run(args.input, args.output, args.timeout, args.workers)
+    report = run(args.input, args.output, args.timeout, args.workers, args.budget_seconds)
     for country in report["countries"]:
         summary = (
             f"{country['country']} HLS {country['open_hls_count']} "

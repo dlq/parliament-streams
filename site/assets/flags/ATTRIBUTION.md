@@ -201,3 +201,27 @@ vector files. Artwork is preserved; any XML declaration cleanup is stated.
 | [Wyoming — `wyoming.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Wyoming.svg>) | User:Dbenbenn | Public domain | none |
 | [Zurich — `zurich.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Z%C3%BCrich.svg>) | Unknown author (source metadata); current SVG revision by Sarang | Public domain | None |
 | [Åland — `ax.svg`](<https://github.com/lipis/flag-icons/blob/v7.3.2/flags/4x3/ax.svg>) | Panayiotis Lipiridis and flag-icons contributors | [MIT](<https://github.com/lipis/flag-icons/blob/v7.3.2/LICENSE>) | None |
+
+## Publication and flag follow-up — 24 October 2026
+
+The following complete jurisdiction flags are used as informational illustrations,
+with source-specific symbol-use notes retained in the [follow-up report](../../../reports/discovery/2026-10-24-catalogue-flags-followup.json).
+Their inclusion does not imply endorsement or a licence to use official symbols
+as branding. Copyright licences apply to the named artwork.
+
+| Jurisdiction / asset source | Creator / credit | Licence | File changes |
+| --- | --- | --- | --- |
+| [Tokushima — `tokushima.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Tokushima_Prefecture.svg>) | Guilherme Paula; Mike Rohsopht | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [Iwate — `iwate.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Iwate_Prefecture.svg>) | Monaneko; Zscout370; Mike Rohsopht | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [Fukushima — `fukushima.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Fukushima_Prefecture.svg>) | Monaneko | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [Magdalena — `magdalena-department.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Magdalena.svg>) | Fibonacci; 2020 stripe-order correction by Bdarcyflynn | [CC BY-SA 3.0](<https://creativecommons.org/licenses/by-sa/3.0/>) | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [Álava — `alava.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_%C3%81lava.svg>) | HansenBCN | [CC BY-SA 4.0](<https://creativecommons.org/licenses/by-sa/4.0>) | None |
+| [Bizkaia — `bizkaia.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_Vizcaya.svg>) | SanchoPanzaXXI | [CC BY-SA 4.0](<https://creativecommons.org/licenses/by-sa/4.0>) | None |
+| [Gipuzkoa — `gipuzkoa.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Guip%C3%BAzcoa.svg>) | HansenBCN | [CC BY-SA 4.0](<https://creativecommons.org/licenses/by-sa/4.0>) | None |
+| [Moravian-Silesian Region — `moravian-silesian.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Moravian-Silesian_Region.svg>) | Tlusťa; Lukáš Mižoch | Public domain | None |
+| [Geneva — `geneva.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Geneva.svg>) | Werner Luzi for Louis Mühlemann; vector Swiss Army | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [St Gallen — `st-gallen.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Sankt_Gallen.svg>) | Unknown original author; Commons SVG contributors | Public domain | None |
+| [Mecklenburg-Vorpommern — `mecklenburg-western-pomerania.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Mecklenburg-Western_Pomerania.svg>) | Commons contributors; original author not identified | Public domain | None |
+| [South Tyrol — `south-tyrol.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_South_Tyrol.svg>) | F l a n k e r | [CC BY 3.0](<https://creativecommons.org/licenses/by/3.0>) | None |
+| [Campania — `campania.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Campania.svg>) | F l a n k e r | Public domain | None |
+| [Kinmen — `kinmen.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Kinmen_County.svg>) | Hairy35061; revisions Akira123 | [CC BY-SA 3.0](<https://creativecommons.org/licenses/by-sa/3.0>) | Removed one nonrendering off-canvas image element referencing an obsolete local file; visible vector artwork unchanged. Normalized XML line endings and trailing whitespace; artwork unchanged. |

@@ -10,7 +10,7 @@ legal holds. Umbrellas, chambers and organs remain separate record grains.
 
 The [current service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md)
 and [per-record queue](../reports/discovery/2026-10-24-institution-service-baseline.json)
-document **190 exact catalogue matches and 750 without a documented match**.
+document **203 exact catalogue matches and 737 without a documented match**.
 The renewed pass now has **302 individual partial source follow-ups**, including
 all **103 main national chamber identities** across the 71 country groups. It
 also covers Canadian treaty legislatures, Basque foral assemblies, ten Indian
@@ -48,16 +48,59 @@ silently converted into programme entries. No implemented XMLTV parser is added.
 The rights pass corrects France's Assembly multimedia classification, records
 the Dutch meeting-material licence separately from occasional events and replaces
 overbroad Canadian House/Senate no-reuse labels with their conditional proceedings
-grants. Existing research-only/link-out policies are retained for France/Canada.
+grants. Canada retains official link-outs; the later publication pass replaces
+France’s extracted research feed with a supported official viewing-page link.
 The current Appenzell leaflet's official-signal restrictions are now fully read.
 [Rights findings and conditions](source-rights-and-permissions.md).
 
 New evidence separates linking, embedding, direct playback, rebroadcast,
 copying/recording, audiovisual reuse and programme-data rights. No record is
-marked complete across every requested dimension. Catalogue sources remain 243;
-authority clearance, source checks and catalogue matches are distinct progress
-measures. The baseline builder performs offline reconciliation, not fresh media
-or rights validation.
+marked complete across every requested dimension. The subsequent publication pass
+adds 13 scoped official viewing links, bringing the catalogue to 256. Authority
+clearance, source checks and catalogue matches are distinct progress measures.
+The baseline builder performs offline reconciliation, not fresh media or rights
+validation.
+
+## Scoped Publication And Integration — 24 October 2026
+
+[Publication decisions](../reports/discovery/2026-10-24-institution-publication-decisions.json)
+cover all 302 renewed identity reviews and 22 additional historical leads:
+**13 publish, 47 retain exact existing catalogue coverage, and 264 retain specific
+publication holds**. The 638 earlier-only service checks remain dated evidence;
+this pass does not claim fresh playback for all 940 eligible identities.
+
+New official viewing links cover the Belgian House, Czech Senate, Álava, Bizkaia,
+Gipuzkoa, Moravian-Silesian Region, Geneva, St Gallen, Mecklenburg-Vorpommern,
+South Tyrol, Campania, Eastern Cape and Kinmen. Every addition has an exact
+inventory crosswalk, candidate, parent-country search mapping, map representation
+and planned programme-navigation link. Recorded-only, historical, selected-clip
+and browser limitations remain in source notes. No additional native player,
+IPTV stream or XMLTV parser is inferred.
+
+France's Assembly, Luxembourg Chamber TV, Nunavut TV and the Swiss National
+Council now link to independently supported official viewing pages. Their old
+extracted endpoints are removed from published records. Nine specific-feed
+research entries retain their own unresolved reasons; the interface calls them
+**Research entry**, distinct from legislative-authority eligibility. The public
+Legislatures evidence disclosure now exposes current source follow-ups and their
+separate unresolved findings.
+
+Four former flag holds and ten new regional flags are resolved with sourced
+assets; Belgium reuses its bundled flag. Catalogue and schedule share the same
+registry. Ten remaining neutral marks have exact design/adoption dispositions;
+Eastern Cape's available Commons drawing is explicitly unofficial.
+[Flag follow-up](../reports/discovery/2026-10-24-catalogue-flags-followup.json).
+
+Monthly discovery now derives targets from the current catalogue, eligible
+inventory, historical routes and maintained service reviews: **1,449 unique
+targets**, **256/256 catalogue sources** and **938/940 eligible identities with
+ordinary page routes**. Ngäbe–Buglé's General Congress and Sri Lanka's North
+Central province retain document-only source gaps. The inventory monitor has
+1,730 deduplicated sources. Time budgets, monthly rotation and per-identity
+attempt/access/skip counts prevent omissions being mistaken for completed checks.
+These actions report findings for review; they do not promote records or add
+programme parsers automatically. CI now checks baseline/snapshot/input consistency.
+The updated scheduled jobs have not yet been dispatched on these local changes.
 
 ## Legal Hold Follow-up — 24 October 2026
 
@@ -115,24 +158,25 @@ update and regeneration.
 These counts describe the working tree. They do not assert that local changes
 are committed or deployed. `data/channels.json` is the canonical catalogue.
 
-- **243 sources**: 74 national, 163 regional/territorial and six supranational.
-- **143 mapped regional jurisdictions**; every published regional entry has geometry.
-- 230 catalogue records have sourced jurisdiction flags. The 63 initially neutral
-  entries now have 50 added assets and 13 explicit neutral dispositions; this
-  includes every addition since the 198-source baseline.
+- **256 sources**: 76 national, 174 regional/territorial and six supranational.
+- **154 mapped regional jurisdictions**; every published regional entry has geometry.
+- 246 catalogue records have sourced jurisdiction flags; ten remain neutral with
+  documented design/adoption gaps. Four former holds and ten new regional flags
+  are resolved; two new national records reuse existing assets.
   [Flag coverage and source reports](../reports/discovery/2026-10-24-catalogue-flag-coverage.json).
-- 38 native-player sources, three provider embeds, 189 official link-outs and
-  13 research-only records. Strict IPTV exports remain unchanged.
+- 38 native-player sources, three provider embeds, 206 official link-outs and
+  nine research-only records. Strict IPTV exports retain their separate gates.
 - 33 records have implemented schedule metadata, covering 17 unique source URLs.
-  Another 215 unique schedule/event URLs remain planned.
-- 168 records remain permission-pending. Selected muted playback does not certify
+  Another 228 unique schedule/event URLs remain planned and filterable on the
+  schedule page, even if generated guide data is temporarily unavailable.
+- 181 records remain permission-pending. Selected muted playback does not certify
   audible tracks or source-wide media accessibility.
-- 150 formal candidates: 145 promoted, four researching and one rejected.
+- 163 formal candidates: 158 promoted, four researching and one rejected.
   The four holds are France Senate, Iceland Althingi, Chile Sala IV and Rivera;
   Skåne remains excluded by the legislative-authority review.
-- **143 of the earlier 652-body cohort have catalogue records; 509 do not.** This
+- **151 of the earlier 652-body cohort have exact catalogue matches; 501 do not.** This
   cohort does not include the newly reconciled institutions/chambers. National
-  catalogue coverage reaches 55 of the 71 target countries; 16 national gaps remain.
+  catalogue coverage reaches 56 of the 71 target countries; 15 national gaps remain.
 
 The [current per-body and candidate register](../reports/discovery/2026-10-24-current-validation-register.json)
 reconciles the earlier 652-body cohort and all 150 formal candidates. It preserves historical
@@ -234,10 +278,12 @@ Yogyakarta's city body instead of the province.
 · [Alias claim dispositions](../reports/discovery/2026-10-24-alias-claim-dispositions.json).
 
 There are 907 retained entity snapshots after the specific-name and sitelink
-follow-ups. Retrieval is not exact-identity verification. All 243 current
-catalogue records have named-institution and claim-relationship reviews, with
+follow-ups. Retrieval is not exact-identity verification. The 243-source catalogue
+at that stage had named-institution and claim-relationship reviews, with
 sparse properties and organization/chamber distinctions retained. Japan's
 upper-house name follows the primary institution's House of Councillors wording.
+The later 13 additions retain their own exact-identity evidence; the three Basque
+sitelink matches explicitly retain a fresh Wikidata-claims API limitation.
 [Published institution reviews](../reports/discovery/2026-10-24-published-institution-claim-review.json)
 · [Cache/backoff workflow](catalogue-maintenance.md#cached-wikidata-research).
 

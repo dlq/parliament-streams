@@ -70,9 +70,9 @@
     "default_displayed_records": 948,
     "eligible_records": 940,
     "legal_holds_excluded_from_service_queue": 8,
-    "eligible_records_with_exact_catalogue_matches": 190,
-    "eligible_records_without_exact_catalogue_matches": 750,
-    "distinct_catalogue_ids_linked": 220,
+    "eligible_records_with_exact_catalogue_matches": 203,
+    "eligible_records_without_exact_catalogue_matches": 737,
+    "distinct_catalogue_ids_linked": 233,
     "historical_service_cohort": 652,
     "outside_historical_service_cohort": 288,
     "records_with_new_source_followups": 302,
@@ -82,14 +82,14 @@
       "partial_source_followup": 302
     },
     "all_dimensions_validated": 0,
-    "catalogue_sources": 243,
+    "catalogue_sources": 256,
     "catalogue_sources_with_implemented_schedule_parser": 33,
     "catalogue_aggregate_permission_statuses": {
       "embed_only": 4,
       "explicit_reuse_with_conditions": 51,
       "no_third_party_reuse": 20,
       "noncommercial_pending_review": 12,
-      "personal_use_pending_review": 156
+      "personal_use_pending_review": 169
     },
     "aggregate_permission_status_is_not_per_use_clearance": true
   },
@@ -3264,7 +3264,9 @@
       "name": "Zastupitelstvo Moravskoslezský kraj",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "czech-moravian-silesian-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "czech-republic--moravskoslezsky-kraj",
@@ -3792,7 +3794,9 @@
       "name": "Landtag Mecklenburg-Vorpommern",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "germany-mecklenburg-vorpommern-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "germany--landtag-mecklenburg-vorpommern",
@@ -5432,7 +5436,9 @@
       "name": "Consiglio della Provincia Autonoma di Bolzano",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "italy-south-tyrol-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "italy--consiglio-della-provincia-autonoma-di-bolzano",
@@ -5592,7 +5598,9 @@
       "name": "Consiglio regionale della Campania",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "italy-campania-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "italy--consiglio-regionale-della-campania",
@@ -6884,7 +6892,9 @@
       "name": "House of Representatives",
       "level": "national",
       "inventory_grain": "chamber",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "belgium-house-recordings"
+      ],
       "historical_service_review": null,
       "source_followups": [
         {
@@ -7228,7 +7238,9 @@
       "name": "Senate",
       "level": "national",
       "inventory_grain": "chamber",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "czech-senate-recordings"
+      ],
       "historical_service_review": null,
       "source_followups": [
         {
@@ -10923,7 +10935,9 @@
       "name": "Eastern Cape Provincial Legislature",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "south-africa-eastern-cape-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "south-africa--eastern-cape",
@@ -11395,7 +11409,9 @@
       "name": "Juntas Generales de Álava / Arabako Batzar Nagusiak",
       "level": "regional_or_associated_territory",
       "inventory_grain": "autonomous_special_status_regional_legislature",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "spain-alava-recordings"
+      ],
       "historical_service_review": null,
       "source_followups": [
         {
@@ -11418,7 +11434,9 @@
       "name": "Juntas Generales de Bizkaia / Bizkaiko Batzar Nagusiak",
       "level": "regional_or_associated_territory",
       "inventory_grain": "autonomous_special_status_regional_legislature",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "spain-bizkaia-recordings"
+      ],
       "historical_service_review": null,
       "source_followups": [
         {
@@ -11441,7 +11459,9 @@
       "name": "Juntas Generales de Gipuzkoa / Gipuzkoako Batzar Nagusiak",
       "level": "regional_or_associated_territory",
       "inventory_grain": "autonomous_special_status_regional_legislature",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "spain-gipuzkoa-recordings"
+      ],
       "historical_service_review": null,
       "source_followups": [
         {
@@ -12147,7 +12167,9 @@
       "name": "Grand Conseil du canton de Genève",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "switzerland-geneva-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "switzerland--geneve-genf",
@@ -12345,7 +12367,9 @@
       "name": "Kantonsrat des Kantons St. Gallen",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "switzerland-st-gallen-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "switzerland--st-gallen",
@@ -12609,7 +12633,9 @@
       "name": "金門縣議會",
       "level": "regional_or_associated_territory",
       "inventory_grain": "legacy_regional_institution_entry",
-      "catalogue_ids": [],
+      "catalogue_ids": [
+        "taiwan-kinmen-recordings"
+      ],
       "historical_service_review": {
         "report": "reports/discovery/2026-10-24-current-validation-register.json",
         "body_id": "taiwan--kinmen",

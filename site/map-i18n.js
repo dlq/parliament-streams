@@ -114,6 +114,17 @@ function sourceCount(locale, count) {
   return forms[index].replace("{count}", new Intl.NumberFormat(locale).format(count));
 }
 const subnationalParents = {
+  "Álava": "ES",
+  "Bizkaia": "ES",
+  "Gipuzkoa": "ES",
+  "Moravian-Silesian Region": "CZ",
+  "Geneva": "CH",
+  "St Gallen": "CH",
+  "Mecklenburg-Vorpommern": "DE",
+  "South Tyrol": "IT",
+  "Campania": "IT",
+  "Eastern Cape": "ZA",
+  "Kinmen": "TW",
   "Lienchiang": "TW",
   "Thuringia": "DE",
   "Fukui": "JP",

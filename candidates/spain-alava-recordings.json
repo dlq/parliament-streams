@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified.",
+    "Institutional notice reserves IP rights and requires authorization for commercial copying/reproduction/distribution; no blanket noncommercial licence or media-specific embed/direct/rebroadcast grant is established. Use only the designated viewing link.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "spain-alava-recordings",
+    "name": "Álava Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Álava",
+    "legislature": "Juntas Generales de Álava / Arabako Batzar Nagusiak",
+    "external_ids": {
+      "wikidata_qid": "Q4891258",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q4891258",
+        "checked_on": "2026-10-24",
+        "confidence": "medium",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+      }
+    ],
+    "language": "Spanish / Basque",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://mediateca.jjggalava.eus/search",
+    "provenance_note": "Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "source_dependent",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Visible Spanish/Basque subtitle text is observed in selected source frames. Coverage, accuracy and audible language/interpretation tracks remain unverified; WebKit later seeks stall."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.jjggalava.eus/agenda",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Institutional notice reserves IP rights and requires authorization for commercial copying/reproduction/distribution; no blanket noncommercial licence or media-specific embed/direct/rebroadcast grant is established. Use only the designated viewing link.",
+      "evidence": [
+        "https://www.jjggalava.eus/es",
+        "https://mediateca.jjggalava.eus/search"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

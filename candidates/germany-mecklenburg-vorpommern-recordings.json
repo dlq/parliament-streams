@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence.",
+    "Published material protected; personal download/printing allowed, broader use/distribution including commercial use requires written permission. No blanket third-party video reuse grant.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "germany-mecklenburg-vorpommern-recordings",
+    "name": "Mecklenburg-Vorpommern Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Mecklenburg-Vorpommern",
+    "legislature": "Landtag Mecklenburg-Vorpommern",
+    "external_ids": {
+      "wikidata_qid": "Q882738",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q882738",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2548143679; these claims are identifier evidence, not media/rights certification."
+      }
+    ],
+    "language": "German",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@MVLandtag",
+    "provenance_note": "The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.landtag-mv.de/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Published material protected; personal download/printing allowed, broader use/distribution including commercial use requires written permission. No blanket third-party video reuse grant.",
+      "evidence": [
+        "https://www.landtag-mv.de/",
+        "https://www.youtube.com/@MVLandtag"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

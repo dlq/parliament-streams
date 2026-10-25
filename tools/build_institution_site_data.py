@@ -5,10 +5,22 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from collections.abc import Sequence
+from datetime import date
 from pathlib import Path, PurePosixPath
 from typing import Any
 from urllib.parse import quote, urlsplit
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from tools.institution_service_sources import (  # noqa: E402
+    load_reviews,
+    review_notes_by_id,
+    review_reports_by_id,
+    reviewed_routes,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INVENTORY_PATH = ROOT / "data/discovery/institutions.json"
@@ -156,6 +168,7 @@ def build_payload(
     catalogue: dict[str, Any],
     directory: dict[str, Any],
     service_register: dict[str, Any] | None = None,
+    service_reviews: list[tuple[str, dict[str, Any]]] | None = None,
 ) -> dict[str, Any]:
     """Project all identities and scope decisions without implying service validation."""
     country_names: list[str] = inventory["scope"]["countries"]
@@ -178,6 +191,12 @@ def build_payload(
             if body_id in service_links:
                 raise ValueError(f"{body_id}: duplicate service crosswalk institution ID")
             service_links[body_id] = set(body.get("catalogue_ids", [])) & channel_ids
+    review_evidence = review_reports_by_id(inventory, service_reviews or [])
+    review_notes = review_notes_by_id(inventory, service_reviews or [])
+    review_institution_urls: dict[str, list[str]] = {}
+    for route in reviewed_routes(inventory, service_reviews or []):
+        if route["purpose"] == "institution":
+            review_institution_urls.setdefault(route["record_id"], []).append(route["url"])
     records: list[dict[str, Any]] = []
     for row in source_records:
         institution_id = row["id"]
@@ -195,8 +214,36 @@ def build_payload(
         explicit = service_links.get(
             institution_id, set(row.get("existing_catalogue_ids", [])) & channel_ids
         )
+        crosswalk = row.get("catalogue_crosswalk")
+        if crosswalk is not None:
+            if not isinstance(crosswalk, dict) or not isinstance(
+                crosswalk.get("catalogue_ids"), list
+            ):
+                raise ValueError(f"{institution_id}: invalid current catalogue crosswalk")
+            if (
+                status != "eligible_legislature"
+                or not isinstance(crosswalk.get("reviewed_on"), str)
+                or date.fromisoformat(crosswalk["reviewed_on"]).isoformat()
+                != crosswalk["reviewed_on"]
+                or not report_urls([crosswalk])
+                or len(crosswalk["catalogue_ids"]) != len(set(crosswalk["catalogue_ids"]))
+            ):
+                raise ValueError(
+                    f"{institution_id}: current crosswalk needs dated eligible evidence"
+                )
+            unknown = set(crosswalk["catalogue_ids"]) - channel_ids
+            if unknown:
+                raise ValueError(
+                    f"{institution_id}: current crosswalk references unknown catalogue IDs"
+                )
+            explicit = set(crosswalk["catalogue_ids"])
         exact = chamber_links.get(institution_id, set())
         evidence_reports = list(row.get("provenance", []))
+        evidence_reports.extend(
+            {"report": path} for path in review_evidence.get(institution_id, [])
+        )
+        if crosswalk is not None:
+            evidence_reports.append({"report": crosswalk.get("report")})
         if institution_id in service_links and explicit:
             evidence_reports.append(
                 {"report": DEFAULT_SERVICE_REGISTER_PATH.relative_to(ROOT).as_posix()}
@@ -220,9 +267,26 @@ def build_payload(
                 "decision_basis": row["decision_basis"],
                 "remaining_authority_instruments": row.get("remaining_authority_instruments", []),
                 "primary_urls": http_urls(
-                    row.get("primary_urls", []) + row.get("source_published_institution_urls", [])
+                    row.get("primary_urls", [])
+                    + row.get("source_published_institution_urls", [])
+                    + review_institution_urls.get(institution_id, [])
                 ),
                 "report_urls": report_urls(evidence_reports),
+                "service_review": {
+                    "stage": "partial_source_followup"
+                    if institution_id in review_evidence
+                    else "historical_service_checks_only"
+                    if institution_id in service_links
+                    else "not_recorded",
+                    "reviewed_on": max(
+                        (note["reviewed_on"] for note in review_notes.get(institution_id, [])),
+                        default=None,
+                    ),
+                    "followups": [
+                        {**note, "report_url": REPORT_BASE_URL + quote(note["report"], safe="/._-")}
+                        for note in review_notes.get(institution_id, [])
+                    ],
+                },
             }
         )
     records.sort(key=lambda row: (row["country"], row["name"].casefold(), row["id"]))
@@ -246,13 +310,17 @@ def render_site_data(
     catalogue_path: Path = DEFAULT_CATALOGUE_PATH,
     directory_path: Path = DEFAULT_DIRECTORY_PATH,
     service_register_path: Path = DEFAULT_SERVICE_REGISTER_PATH,
+    service_reviews: list[tuple[str, dict[str, Any]]] | None = None,
 ) -> str:
     """Render a deterministic external classic script with no fetch requirement."""
+    if service_reviews is None and inventory_path == DEFAULT_INVENTORY_PATH:
+        service_reviews = load_reviews()
     payload = build_payload(
         load_object(inventory_path),
         load_object(catalogue_path),
         load_object(directory_path),
         load_object(service_register_path),
+        service_reviews,
     )
     text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     text = text.replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
@@ -271,10 +339,27 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--directory", type=Path, default=DEFAULT_DIRECTORY_PATH)
     parser.add_argument("--service-register", type=Path, default=DEFAULT_SERVICE_REGISTER_PATH)
     parser.add_argument("--output", type=Path, default=DEFAULT_TARGET_PATH)
+    parser.add_argument(
+        "--review",
+        action="append",
+        type=Path,
+        default=None,
+        help="individual review report; defaults to all maintained reports",
+    )
     args = parser.parse_args(argv)
     try:
+        reviews = (
+            [
+                (path.resolve().relative_to(ROOT).as_posix(), load_object(path))
+                for path in args.review
+            ]
+            if args.review is not None
+            else load_reviews()
+            if args.inventory == DEFAULT_INVENTORY_PATH
+            else []
+        )
         expected = render_site_data(
-            args.inventory, args.catalogue, args.directory, args.service_register
+            args.inventory, args.catalogue, args.directory, args.service_register, reviews
         )
         if args.check:
             if not args.output.exists() or args.output.read_text(encoding="utf-8") != expected:

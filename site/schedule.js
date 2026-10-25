@@ -10,13 +10,9 @@ const schedulesUrl = new URL("./data/schedules.json", scriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", scriptUrl);
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], schedules: {}, generatedAt: null, locale, jurisdiction: "", status: "" };
+const state = { channels: [], schedules: {}, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", status: "" };
 
-const flagAssets = {
-  Brazil: "assets/flags/br.svg", Canada: "assets/flags/ca.svg", "European Union": "assets/flags/eu.svg",
-  Ontario: "assets/flags/ontario.svg", Portugal: "assets/flags/pt.svg", Quebec: "assets/flags/quebec.svg",
-  "United Kingdom": "assets/flags/gb.svg", "United Nations": "assets/flags/un.svg",
-};
+const flagAssets = window.ParliamentStreamsFlags;
 
 const elements = {
   jurisdiction: document.querySelector("#schedule-jurisdiction"),
@@ -136,14 +132,18 @@ function render() {
   renderOfficialSchedules();
 }
 
+function officialScheduleSources(channel) {
+  return channel.epg_sources.filter((source) => source.method === "GET"
+    && source.scraper_status === "planned" && !/api|json|zip/i.test(source.kind));
+}
+
 function renderOfficialSchedules() {
   // Calendars and dated-event indexes remain useful before an automated guide
   // parser exists. Keep these links separate from programme/now-next rows.
   const links = new Map();
   for (const channel of state.channels) {
     if (state.jurisdiction && channel.country_or_region !== state.jurisdiction) continue;
-    for (const source of channel.epg_sources) {
-      if (source.method !== "GET" || source.scraper_status !== "planned" || /api|json|zip/i.test(source.kind)) continue;
+    for (const source of officialScheduleSources(channel)) {
       if (!links.has(source.url)) links.set(source.url, { channel, url: source.url });
     }
   }
@@ -157,12 +157,16 @@ function renderOfficialSchedules() {
 }
 
 function renderFilters() {
-  const jurisdictions = [...new Set(Object.keys(state.schedules).map((id) => state.channels.find((channel) => channel.id === id)).filter(Boolean).map((channel) => channel.country_or_region))]
+  const jurisdictions = [...new Set(state.channels
+    .filter((channel) => Object.hasOwn(state.schedules, channel.id) || officialScheduleSources(channel).length)
+    .map((channel) => channel.country_or_region))]
     .sort((a, b) => localizedJurisdictionName(state.locale, a).localeCompare(localizedJurisdictionName(state.locale, b), state.locale));
   elements.jurisdiction.innerHTML = `<option value="">${escapeHtml(t("allJur"))}</option>${jurisdictions.map((name) => {
     const channel = state.channels.find((item) => item.country_or_region === name);
     return `<option value="${escapeHtml(name)}">${escapeHtml(jurisdictionName(channel))}</option>`;
   }).join("")}`;
+  if (!jurisdictions.includes(state.jurisdiction)) state.jurisdiction = "";
+  elements.jurisdiction.value = state.jurisdiction;
   elements.status.innerHTML = `<option value="">${escapeHtml(st("allChannels"))}</option><option value="current">${escapeHtml(st("current"))}</option><option value="next">${escapeHtml(st("upcoming"))}</option><option value="playable">${escapeHtml(t("metricPlayable"))}</option>`;
 }
 
@@ -194,7 +198,7 @@ function applyTranslations() {
 }
 
 function renderFreshness() {
-  if (!state.generatedAt) { elements.updated.textContent = st("stale"); elements.updated.classList.add("is-stale"); return; }
+  if (!state.generatedAt) { elements.updated.textContent = `${st("guide")} · ${t("notAvailable")}`; elements.updated.classList.add("is-stale"); return; }
   const date = new Date(state.generatedAt);
   elements.updated.textContent = st("updated", { date: new Intl.DateTimeFormat(state.locale, { dateStyle: "medium", timeStyle: "short" }).format(date) });
   elements.updated.classList.toggle("is-stale", Date.now() - date.valueOf() > 12 * 60 * 60 * 1000);
@@ -231,14 +235,23 @@ async function init() {
     catalogue = await fetchJson(catalogueUrl, localCatalogueUrl) ?? catalogue;
     snapshot = await fetchJson(schedulesUrl, localSchedulesUrl) ?? snapshot;
   }
-  if (!catalogue || !snapshot) throw new Error(st("noResults"));
+  if (!catalogue) throw new Error(t("sourceError"));
+  // Official calendars remain usable if generated programme data is unavailable.
+  snapshot ??= {};
   state.channels = catalogue.channels;
   state.schedules = snapshot.channels ?? {};
   state.generatedAt = snapshot.generated_at ?? Object.values(state.schedules).map((item) => item.fetched_at).filter(Boolean).sort().at(-1) ?? null;
   renderFilters();
   renderFreshness();
   render();
-  elements.jurisdiction.addEventListener("change", () => { state.jurisdiction = elements.jurisdiction.value; render(); });
+  elements.jurisdiction.addEventListener("change", () => {
+    state.jurisdiction = elements.jurisdiction.value;
+    const url = new URL(window.location.href);
+    if (state.jurisdiction) url.searchParams.set("jurisdiction", state.jurisdiction);
+    else url.searchParams.delete("jurisdiction");
+    history.replaceState({}, "", url);
+    render();
+  });
   elements.status.addEventListener("change", () => { state.status = elements.status.value; render(); });
 }
 

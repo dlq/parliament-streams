@@ -1,14 +1,17 @@
 {
   "reviewed_on": "2026-10-24",
-  "scope": "Every one of the 63 catalogue jurisdictions using a neutral mark at the start of this pass; all45 additions since the198-source baseline included.",
+  "scope": "Original63 neutral catalogue jurisdictions plus the13 newly published viewing sources. Every currently neutral jurisdiction has a named disposition. Previous baseline243sources is retained separately from expanded runtime totals.",
   "summary": {
-    "catalogue_sources": 243,
+    "catalogue_sources": 256,
     "initial_flagged": 180,
     "initial_neutral": 63,
-    "flags_added": 50,
-    "current_flagged": 230,
-    "current_neutral": 13,
-    "all_missing_jurisdictions_have_recorded_dispositions": true
+    "flags_added": 64,
+    "current_flagged": 246,
+    "current_neutral": 10,
+    "all_missing_jurisdictions_have_recorded_dispositions": true,
+    "initial_catalogue_sources": 243,
+    "new_catalogue_sources": 13,
+    "new_sources_using_existing_flag_assets": 2
   },
   "records": [
     {
@@ -189,9 +192,10 @@
     {
       "catalogue_id": "japan-tokushima-recordings",
       "jurisdiction": "Tokushima",
-      "outcome": "neutral_retained",
-      "asset": null,
-      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+      "outcome": "asset_added",
+      "asset": "tokushima.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json",
+      "followup": "Earlier neutral disposition superseded by source-backed24October follow-up."
     },
     {
       "catalogue_id": "south-africa-northern-cape-recordings",
@@ -301,9 +305,10 @@
     {
       "catalogue_id": "colombia-magdalena-recordings",
       "jurisdiction": "Magdalena",
-      "outcome": "neutral_flag_asset_identity_unresolved",
-      "asset": null,
-      "source_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+      "outcome": "asset_added",
+      "asset": "magdalena-department.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json",
+      "followup": "Earlier neutral disposition superseded by source-backed24October follow-up."
     },
     {
       "catalogue_id": "colombia-quindio-recordings",
@@ -399,16 +404,18 @@
     {
       "catalogue_id": "japan-fukushima-recordings",
       "jurisdiction": "Fukushima",
-      "outcome": "neutral_retained",
-      "asset": null,
-      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+      "outcome": "asset_added",
+      "asset": "fukushima.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json",
+      "followup": "Earlier neutral disposition superseded by source-backed24October follow-up."
     },
     {
       "catalogue_id": "japan-iwate-recordings",
       "jurisdiction": "Iwate",
-      "outcome": "neutral_retained",
-      "asset": null,
-      "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+      "outcome": "asset_added",
+      "asset": "iwate.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json",
+      "followup": "Earlier neutral disposition superseded by source-backed24October follow-up."
     },
     {
       "catalogue_id": "taiwan-hsinchu-city-recordings",
@@ -451,6 +458,107 @@
       "outcome": "asset_added",
       "asset": "lienchiang.svg",
       "source_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json"
+    },
+    {
+      "catalogue_id": "spain-alava-recordings",
+      "jurisdiction": "Álava",
+      "outcome": "asset_added",
+      "asset": "alava.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "spain-bizkaia-recordings",
+      "jurisdiction": "Bizkaia",
+      "outcome": "asset_added",
+      "asset": "bizkaia.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "spain-gipuzkoa-recordings",
+      "jurisdiction": "Gipuzkoa",
+      "outcome": "asset_added",
+      "asset": "gipuzkoa.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "czech-moravian-silesian-recordings",
+      "jurisdiction": "Moravian-Silesian Region",
+      "outcome": "asset_added",
+      "asset": "moravian-silesian.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "switzerland-geneva-recordings",
+      "jurisdiction": "Geneva",
+      "outcome": "asset_added",
+      "asset": "geneva.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "switzerland-st-gallen-recordings",
+      "jurisdiction": "St Gallen",
+      "outcome": "asset_added",
+      "asset": "st-gallen.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "germany-mecklenburg-vorpommern-recordings",
+      "jurisdiction": "Mecklenburg-Vorpommern",
+      "outcome": "asset_added",
+      "asset": "mecklenburg-western-pomerania.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "italy-south-tyrol-recordings",
+      "jurisdiction": "South Tyrol",
+      "outcome": "asset_added",
+      "asset": "south-tyrol.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "italy-campania-recordings",
+      "jurisdiction": "Campania",
+      "outcome": "asset_added",
+      "asset": "campania.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "taiwan-kinmen-recordings",
+      "jurisdiction": "Kinmen",
+      "outcome": "asset_added",
+      "asset": "kinmen.svg",
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "south-africa-eastern-cape-recordings",
+      "jurisdiction": "Eastern Cape",
+      "outcome": "neutral_retained",
+      "asset": null,
+      "source_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+    },
+    {
+      "catalogue_id": "belgium-house-recordings",
+      "jurisdiction": "Belgium",
+      "outcome": "existing_asset_mapped",
+      "asset": "be.svg",
+      "source_report": "site/assets/flags/ATTRIBUTION.md",
+      "finding": "Existing bundled national flag now covers the new national viewing source."
+    },
+    {
+      "catalogue_id": "czech-senate-recordings",
+      "jurisdiction": "Czech Republic",
+      "outcome": "existing_asset_mapped",
+      "asset": "cz.svg",
+      "source_report": "site/assets/flags/ATTRIBUTION.md",
+      "finding": "Existing bundled national flag now covers the new national viewing source."
     }
-  ]
+  ],
+  "followup_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json",
+  "publication_followup": {
+    "new_subnational_jurisdictions_reviewed": 11,
+    "new_subnational_flag_assets": 10,
+    "new_subnational_neutral": 1,
+    "new_national_sources_using_existing_flags": 2,
+    "report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
+  }
 }

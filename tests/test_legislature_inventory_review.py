@@ -687,6 +687,39 @@ class LegislatureInventoryReviewTests(unittest.TestCase):
         self.assertEqual(secret_matches(json.dumps([report, snapshot])), [])
         self.assertIn("key=REDACTED", report["checks"][0]["error"])
 
+    def test_source_plan_includes_current_exact_catalogue_and_reviewed_institution_routes(
+        self,
+    ) -> None:
+        inventory = inventory_fixture()
+        inventory["records"][0]["catalogue_crosswalk"] = {
+            "catalogue_ids": ["house"],
+            "reviewed_on": "2026-10-24",
+            "report": "reports/discovery/publication.json",
+        }
+        catalogue = {
+            "channels": [{"id": "house", "official_url": "https://www.ourcommons.ca/watch"}]
+        }
+        reviews = [
+            (
+                "reports/discovery/followup.json",
+                {
+                    "records": [
+                        {
+                            "id": "national--ca-lc01",
+                            "metadata": {"institutional_url": "https://www.ourcommons.ca/about"},
+                        }
+                    ]
+                },
+            )
+        ]
+        planned = plan_sources(inventory, {}, TODAY.isoformat(), reviews, catalogue)
+        sources = {row["url"]: row for row in planned}
+        for url in ("https://www.ourcommons.ca/watch", "https://www.ourcommons.ca/about"):
+            self.assertEqual(sources[url]["record_ids"], ["national--ca-lc01"])
+        self.assertNotIn(
+            "national--ca-uc01", sources["https://www.ourcommons.ca/watch"]["record_ids"]
+        )
+
     def test_source_plan_deduplicates_references_and_never_reuses_dated_ipu_request(self) -> None:
         inventory = inventory_fixture()
         inventory["records"][0]["primary_urls"].extend(

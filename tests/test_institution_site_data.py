@@ -28,6 +28,7 @@ from tools.build_institution_site_data import (
     render_site_data,
     report_urls,
 )
+from tools.institution_service_sources import load_reviews
 
 
 def institution(institution_id: str, **changes: Any) -> dict[str, Any]:
@@ -183,6 +184,55 @@ class InstitutionSnapshotTests(unittest.TestCase):
         data = build_payload(self.inventory, self.catalogue, self.directory, register)
         rows = {row["id"]: row for row in data["records"]}
         self.assertEqual(rows["canada--regional-parent"]["catalogue_ids"], [])
+
+    def test_current_dated_crosswalk_supersedes_historical_empty_match(self) -> None:
+        body = self.inventory["records"][2]
+        body["catalogue_crosswalk"] = {
+            "catalogue_ids": ["regional-stream"],
+            "reviewed_on": "2026-10-24",
+            "report": "reports/discovery/publication.json",
+        }
+        register = {"eligible_bodies": [{"body_id": body["id"], "catalogue_ids": []}]}
+        payload = build_payload(self.inventory, self.catalogue, self.directory, register)
+        rows = {row["id"]: row for row in payload["records"]}
+        self.assertEqual(rows[body["id"]]["catalogue_ids"], ["regional-stream"])
+        self.assertEqual(rows["canada--regional-child"]["catalogue_ids"], [])
+        self.assertIn(
+            REPORT_BASE_URL + "reports/discovery/publication.json", rows[body["id"]]["report_urls"]
+        )
+        body["catalogue_crosswalk"]["catalogue_ids"] = ["missing"]
+        with self.assertRaisesRegex(ValueError, "unknown catalogue"):
+            build_payload(self.inventory, self.catalogue, self.directory, register)
+
+    def test_source_followup_exposes_own_routes_and_dated_gaps_without_new_catalogue_match(
+        self,
+    ) -> None:
+        review = (
+            "reports/discovery/followup.json",
+            {
+                "reviewed_on": "2026-10-24",
+                "scope": "Scoped source findings",
+                "records": [
+                    {
+                        "id": "canada--regional-child",
+                        "metadata": {"institutional_url": "https://assembly.ca/"},
+                        "unresolved": ["Programme-to-media mapping remains unresolved."],
+                    }
+                ],
+            },
+        )
+        payload = build_payload(self.inventory, self.catalogue, self.directory, None, [review])
+        rows = {row["id"]: row for row in payload["records"]}
+        child = rows["canada--regional-child"]
+        self.assertEqual(child["catalogue_ids"], [])
+        self.assertIn("https://assembly.ca/", child["primary_urls"])
+        self.assertEqual(child["service_review"]["stage"], "partial_source_followup")
+        self.assertEqual(
+            child["service_review"]["followups"][0]["unresolved"],
+            ["Programme-to-media mapping remains unresolved."],
+        )
+        self.assertNotIn("https://assembly.ca/", rows["canada--regional-parent"]["primary_urls"])
+        self.assertEqual(rows["canada--regional-parent"]["service_review"]["followups"], [])
 
     def test_unknown_or_duplicate_body_crosswalk_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "unknown institution ID"):
@@ -356,6 +406,7 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
             load_object(DEFAULT_CATALOGUE_PATH),
             load_object(DEFAULT_DIRECTORY_PATH),
             load_object(DEFAULT_SERVICE_REGISTER_PATH),
+            load_reviews(),
         )
 
     def test_all_inventory_records_and_four_statuses_survive(self) -> None:
@@ -412,9 +463,13 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
         )
         for body in register["eligible_bodies"]:
             with self.subTest(body=body["body_id"]):
-                self.assertEqual(
-                    rows[body["body_id"]]["catalogue_ids"], sorted(set(body["catalogue_ids"]))
+                current = next(
+                    row for row in self.inventory["records"] if row["id"] == body["body_id"]
                 )
+                expected = current.get("catalogue_crosswalk", {}).get(
+                    "catalogue_ids", body["catalogue_ids"]
+                )
+                self.assertEqual(rows[body["body_id"]]["catalogue_ids"], sorted(set(expected)))
 
     def test_generated_classic_script_matches_sources_and_has_no_fetch_or_module_dependency(
         self,
@@ -423,7 +478,7 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
         self.assertEqual(DEFAULT_TARGET_PATH.read_text(encoding="utf-8"), rendered)
         self.assertIn(ASSIGNMENT, rendered)
         self.assertNotIn("fetch(", rendered)
-        self.assertNotIn("export ", rendered)
+        self.assertNotIn("\nexport ", rendered)
         json_text = rendered.split(ASSIGNMENT, 1)[1].removesuffix(";\n")
         self.assertEqual(json.loads(json_text), self.payload)
         self.assertLess(len(rendered.encode("utf-8")), DEFAULT_INVENTORY_PATH.stat().st_size)

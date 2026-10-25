@@ -63,6 +63,13 @@ to the Senate or treating the umbrella as a uniform grant.
 [US C](../reports/discovery/2026-10-24-service-review-us-chambers-c.json) ·
 [Other regional/territorial chambers](../reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json).
 
+The [scoped publication pass](../reports/discovery/2026-10-24-institution-publication-decisions.json)
+adds 13 official viewing links with separate per-source limitations and pending
+independent reuse questions. France's Assembly, Luxembourg, Nunavut and the Swiss
+National Council move from old extracted research feeds to supported official
+viewing-page links. This enables no native playback or redistribution. The other
+nine research records retain specific variant/ownership/access gaps.
+
 No outreach was sent. Source visibility and technically decoded recordings do
 not themselves establish the requested reuse rights.
 

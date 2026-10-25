@@ -1,0 +1,75 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested.",
+    "The source offers copied page links, iframe, download and fragment controls. Only its official viewing page is linked; offered controls do not establish general direct-player, rebroadcast, copying, editing or programme-data rights.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "belgium-house-recordings",
+    "name": "Belgian House Legislative Recordings",
+    "jurisdiction_level": "national",
+    "country_or_region": "Belgium",
+    "legislature": "De Kamer van volksvertegenwoordigers / La Chambre des représentants",
+    "external_ids": {
+      "wikidata_qid": "Q1347545",
+      "ipu_country_code": "BE",
+      "ipu_parliament_code": "BE",
+      "ipu_chamber_code": "BE-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1347545",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Wikidata own item page names the exact national chamber and country; independently matched to IPU and own chamber site on 24 October 2026."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/BE/BE-LC01/",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Exact national chamber code from the retained current IPU national-chamber directory, independently matched to the own site."
+      }
+    ],
+    "language": "Dutch / French",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://media.dekamer.be/",
+    "provenance_note": "Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "Visible VGT/LSFB interpreter insets observed in selected plenary frames. Interpretation accuracy, audible tracks and caption quality remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://media.dekamer.be/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The source offers copied page links, iframe, download and fragment controls. Only its official viewing page is linked; offered controls do not establish general direct-player, rebroadcast, copying, editing or programme-data rights.",
+      "evidence": [
+        "https://www.dekamer.be/kvvcr/index.cfm",
+        "https://media.dekamer.be/"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

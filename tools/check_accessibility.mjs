@@ -475,7 +475,14 @@ try {
   assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch here/);
   await page.locator("#sort-mode").click();
   assert.match(await page.locator("#sort-status").innerText(), /Playback: descending/);
-  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Needs review/);
+  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Research entry/);
+  const researchChannel = canonicalCatalogue.channels.find((channel) => channel.playback_policy === "research_only");
+  assert(researchChannel);
+  const researchRow = page.locator(`[data-channel-id="${researchChannel.id}"]`);
+  await researchRow.click();
+  assert.equal(await page.locator(".research-playback-note").innerText(), "Viewing is not enabled for this research entry. Open its details for the findings and remaining checks.");
+  assert.equal(await page.locator("#detail-panel [data-start-playback]").count(), 0);
+  assert.equal(await page.locator("#detail-panel .official-button").innerText(), "Official watch page ↗");
   await page.locator("#sort-source").click();
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
@@ -600,7 +607,7 @@ try {
   assert.match(await page.locator(".evidence-note").innerText(), /^证据来源。/);
   assert.match(await page.locator(".evidence-note a").first().innerText(), /官方观看页面|支持来源/);
   assert.equal(await page.locator(".research-note-disclosure summary").innerText(), "目录的英文研究说明");
-  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /研究资料/);
+  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /研究条目/);
 
   const search = page.locator("#search");
   await search.focus();
@@ -680,6 +687,12 @@ try {
           next_event_time: "2:00 PM",
           fetched_at: "2026-08-17T12:00:00Z",
         },
+        "italy-senate": {
+          current_event_title: "No programme listed",
+          next_event_title: "Senate sitting",
+          next_event_start: "2026-08-17T16:00:00Z",
+          fetched_at: "2026-08-17T12:00:00Z",
+        },
         "australia-parliament-youtube": {
           current_event_title: "Australia Parliament live",
           current_event_time: "Live now",
@@ -693,7 +706,7 @@ try {
   }));
   await schedulePage.goto(`${baseUrl}schedule.html?lang=en`);
   await schedulePage.waitForSelector("#schedule-list tr");
-  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 3);
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 4);
   assert.match(await schedulePage.locator("#schedule-updated").innerText(), /Schedule updated/);
   assert.equal(await schedulePage.locator(".programme-live").count(), 3);
   assert.match(await schedulePage.locator("#schedule-list").innerText(), /Committee on the Environment/);
@@ -708,10 +721,28 @@ try {
   const europeanRow = schedulePage.locator("#schedule-list tr").filter({ hasText: "Committee on the Environment" });
   assert.equal(await europeanRow.locator(".programme-time").first().innerText(), expectedLocalTime);
   await schedulePage.locator("#schedule-status").selectOption("next");
-  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 2);
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 3);
   await schedulePage.locator("#schedule-status").selectOption("playable");
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 2);
+  assert((await schedulePage.locator(".schedule-watch").evaluateAll((links) => links.map((link) => link.href))).every((href) => href.includes("play=1")));
+  await schedulePage.locator("#schedule-status").selectOption("");
+  await schedulePage.locator("#schedule-jurisdiction").selectOption("Italy");
   assert.equal(await schedulePage.locator("#schedule-list tr").count(), 1);
-  assert.match(await schedulePage.locator(".schedule-watch").getAttribute("href"), /play=1/);
+  assert.match(await schedulePage.locator(".schedule-flag").getAttribute("src"), /assets\/flags\/it\.svg$/);
+  await schedulePage.locator("#schedule-jurisdiction").selectOption("Fukushima");
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 0);
+  assert.equal(await schedulePage.locator("#official-schedules").isVisible(), true);
+  await schedulePage.locator("#official-schedules > summary").click();
+  assert.equal(await schedulePage.locator("#official-schedules-list > li").count(), 1);
+  assert.match(await schedulePage.locator("#official-schedules-list").innerText(), /Fukushima/);
+  assert.equal(new URL(schedulePage.url()).searchParams.get("jurisdiction"), "Fukushima");
+  await schedulePage.locator("#locale-select").selectOption("fr");
+  assert.equal(await schedulePage.locator("#schedule-jurisdiction").inputValue(), "Fukushima");
+  await schedulePage.locator("#locale-select").selectOption("en");
+  await schedulePage.reload();
+  await schedulePage.waitForSelector("#official-schedules-list > li", { state: "attached" });
+  assert.equal(await schedulePage.locator("#schedule-jurisdiction").inputValue(), "Fukushima");
+  await schedulePage.locator("#schedule-jurisdiction").selectOption("");
   await assertSearchMetadata(schedulePage, "schedule.html");
   await assertIptvDisclosure(schedulePage);
   await assertIptvLocales(schedulePage, '#locale-select');
@@ -743,6 +774,14 @@ try {
   assert.equal(await firstScheduleRow.locator("td").nth(1).getAttribute("data-label"), "Maintenant");
   assert.equal(await firstScheduleRow.locator("td").nth(2).getAttribute("data-label"), "À suivre");
   await assertNoAxeViolations(schedulePage, "Mobile programme guide");
+  await schedulePage.unroute("**/data/schedules.json");
+  await schedulePage.route("**/data/schedules.json", (route) => route.fulfill({ status: 404, body: "Not found" }));
+  await schedulePage.goto(`${baseUrl}schedule.html?lang=en&jurisdiction=Fukushima`);
+  await schedulePage.waitForSelector("#official-schedules-list > li", { state: "attached" });
+  assert.equal(await schedulePage.locator("#schedule-jurisdiction").inputValue(), "Fukushima");
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 0);
+  assert.equal(await schedulePage.locator("#official-schedules").isVisible(), true);
+  assert.match(await schedulePage.locator("#schedule-updated").innerText(), /Not available/);
   await schedulePage.close();
 
   const mapPage = await context.newPage();

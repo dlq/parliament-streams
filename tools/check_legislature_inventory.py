@@ -23,6 +23,7 @@ from urllib.parse import urldefrag, urlsplit
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from tools.build_institution_site_data import exact_chamber_catalogue_ids  # noqa: E402
 from tools.institution_inventory_fetch import HostGate, fetch_source  # noqa: E402
 from tools.institution_inventory_sources import (  # noqa: E402
     derive_directory_sources,
@@ -32,6 +33,7 @@ from tools.institution_inventory_sources import (  # noqa: E402
     safe_public_url,
     source_fingerprint,
 )
+from tools.institution_service_sources import load_reviews, reviewed_routes  # noqa: E402
 from tools.sanitize_research_evidence import sanitize_value  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -100,7 +102,12 @@ def fetch_url(value: str) -> str | None:
 
 
 def plan_sources(
-    inventory: dict[str, Any], services: dict[str, Any], today: str
+    inventory: dict[str, Any],
+    services: dict[str, Any],
+    today: str,
+    reviews: list[tuple[str, dict[str, Any]]] | None = None,
+    catalogue: dict[str, Any] | None = None,
+    directory: dict[str, Any] | None = None,
 ) -> list[dict[str, Any]]:
     """Share one fetch across every institution/country citing the same evidence."""
     sources: dict[str, dict[str, Any]] = {}
@@ -139,6 +146,28 @@ def plan_sources(
         url = body.get("official_reference_url")
         if record and record["country"] == body["country"] and url:
             add(url, record["country"], record["id"])
+    for route in reviewed_routes(inventory, reviews or []):
+        add(route["url"], route["country"], route["record_id"])
+    if catalogue is not None:
+        channels = {row["id"]: row for row in catalogue["channels"]}
+        historical = {row["body_id"]: row for row in services.get("eligible_bodies", [])}
+        national = (
+            exact_chamber_catalogue_ids(directory, list(channels.values())) if directory else {}
+        )
+        for key, record in records.items():
+            if record["authority_status"] != "eligible_legislature":
+                continue
+            ids = set(
+                record.get("catalogue_crosswalk", {}).get(
+                    "catalogue_ids",
+                    historical.get(key, {}).get(
+                        "catalogue_ids", record.get("existing_catalogue_ids", [])
+                    ),
+                )
+            )
+            ids |= national.get(key, set())
+            for channel_id in ids & channels.keys():
+                add(channels[channel_id]["official_url"], record["country"], key)
     return [
         {
             "id": IPU_ID,
@@ -1010,7 +1039,14 @@ def main() -> int:
         if baseline is not None:
             validate_baseline(baseline)
         today = datetime.now(UTC).date()
-        sources = plan_sources(inventory, services, today.isoformat())
+        sources = plan_sources(
+            inventory,
+            services,
+            today.isoformat(),
+            load_reviews(),
+            load_object(ROOT / "data/channels.json"),
+            directory,
+        )
         if args.validate_inputs:
             print(f"Inventory monitor inputs valid: {len(sources)} deduplicated sources")
             return 0

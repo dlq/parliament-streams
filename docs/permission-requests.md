@@ -29,9 +29,9 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 168 of 243 catalogue entries use a permission status ending in
-  `pending_review`: 18 official-vendor HLS, three first-party HLS,
-  146 official pages and one DASH research record. Later official-link
+- 181 of 256 catalogue entries use a permission status ending in
+  `pending_review`: 16 official-vendor HLS, three first-party HLS,
+  161 official pages and one DASH research record. Later official-link
   promotions have dated source-condition notes but are not all assigned to
   the older outreach buckets. See [research status](research-status.md).
 - 16 entries in the historical August queue likely need written clarification.

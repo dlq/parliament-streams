@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from tools.build_institution_site_data import build_payload, load_object, safe_http_url
+from tools.institution_service_sources import load_reviews
 
 ROOT = Path(__file__).resolve().parents[1]
 HISTORICAL = "reports/discovery/2026-10-24-current-validation-register.json"
@@ -178,21 +179,38 @@ def build_baseline(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--reviewed-on", required=True)
-    parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--review", action="append", type=Path, default=[])
+    parser.add_argument("--reviewed-on")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=ROOT / "reports/discovery/2026-10-24-institution-service-baseline.json",
+    )
+    parser.add_argument("--review", action="append", type=Path, default=None)
+    parser.add_argument("--check", action="store_true", help="fail if the saved baseline is stale")
     args = parser.parse_args()
-    reviews = [
-        (path.resolve().relative_to(ROOT).as_posix(), load_object(path)) for path in args.review
-    ]
+    reviews = (
+        [(path.resolve().relative_to(ROOT).as_posix(), load_object(path)) for path in args.review]
+        if args.review is not None
+        else load_reviews()
+    )
+    reviewed_on = args.reviewed_on
+    if reviewed_on is None:
+        if not args.output.exists():
+            parser.error("--reviewed-on is required for a new baseline")
+        reviewed_on = load_object(args.output)["reviewed_on"]
     result = build_baseline(
         load_object(ROOT / "data/discovery/institutions.json"),
         load_object(ROOT / "data/channels.json"),
         load_object(ROOT / DIRECTORY),
         load_object(ROOT / HISTORICAL),
         reviews,
-        args.reviewed_on,
+        reviewed_on,
     )
+    if args.check:
+        if not args.output.exists() or load_object(args.output) != result:
+            parser.error("service baseline is stale; regenerate it with all maintained reviews")
+        print("Current service baseline matches catalogue, inventory and all review reports")
+        return 0
     args.output.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

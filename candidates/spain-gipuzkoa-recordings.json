@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion.",
+    "Institutional terms condition general reproduction on attribution, unaltered context and exceptions, with some multimedia requiring authorization. Applicability to the separate Seneca host, embedding, direct media and rebroadcast is unresolved. Only the designated viewing page is linked.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "spain-gipuzkoa-recordings",
+    "name": "Gipuzkoa Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Gipuzkoa",
+    "legislature": "Juntas Generales de Gipuzkoa / Gipuzkoako Batzar Nagusiak",
+    "external_ids": {
+      "wikidata_qid": "Q4890912",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q4890912",
+        "checked_on": "2026-10-24",
+        "confidence": "medium",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+      }
+    ],
+    "language": "Spanish / Basque",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://jggipuzkoa.seneca.tv/activity",
+    "provenance_note": "Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/agenda_parlamentaria.jsp?idioma=es",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Institutional terms condition general reproduction on attribution, unaltered context and exceptions, with some multimedia requiring authorization. Applicability to the separate Seneca host, embedding, direct media and rebroadcast is unresolved. Only the designated viewing page is linked.",
+      "evidence": [
+        "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/index.jsp?idioma=es",
+        "https://jggipuzkoa.seneca.tv/activity"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

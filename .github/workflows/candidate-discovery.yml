@@ -46,37 +46,57 @@ jobs:
           jq -e '.target_version == 1 and .tier == "tier1" and (.countries | length) == 25' data/discovery/tier1.json
           jq -e '.target_version == 1 and .tier == "tier2" and (.countries | length) == 46' data/discovery/tier2.json
 
+      - name: Build discovery plan from all eligible institutions and current catalogue
+        run: |
+          uv run --locked python tools/sanitize_research_evidence.py --check-tracked
+          uv run --locked python tools/build_discovery_targets.py \
+            --output-dir reports/automated/candidate-discovery/targets
+
       - name: Run static manifest discovery
         run: |
-          mkdir -p reports/discovery
-          uv run --locked python tools/validate_democracy_tier_static.py \
-            --input data/discovery/tier1.json \
-            --output reports/discovery/tier1-static.json \
-            --timeout 12 \
-            --workers 8
-          uv run --locked python tools/validate_democracy_tier_static.py \
-            --input data/discovery/tier2.json \
-            --output reports/discovery/tier2-static.json \
-            --timeout 12 \
-            --workers 8
+          for tier in tier1 tier2 catalogue; do
+            uv run --locked python tools/validate_democracy_tier_static.py \
+              --input "reports/automated/candidate-discovery/targets/$tier-targets.json" \
+              --output "reports/automated/candidate-discovery/$tier-static.json" \
+              --timeout 12 --workers 8 --budget-seconds 360
+          done
 
       - name: Inspect official players in Chromium
         run: >-
           node tools/deep_validate_browser.mjs
-          --input data/discovery/tier1.json
-          --input data/discovery/tier2.json
-          --output reports/discovery/browser-validation.json
+          --input reports/automated/candidate-discovery/targets/tier1-targets.json
+          --input reports/automated/candidate-discovery/targets/tier2-targets.json
+          --input reports/automated/candidate-discovery/targets/catalogue-targets.json
+          --max-pages-per-country 0
+          --budget-seconds 1800
+          --output reports/automated/candidate-discovery/browser-validation.json
+
+      - name: Sanitize generated network evidence
+        if: always()
+        run: |
+          for report in reports/automated/candidate-discovery/*-static.json reports/automated/candidate-discovery/browser-validation.json; do
+            if [[ -f "$report" ]]; then
+              uv run --locked python tools/sanitize_research_evidence.py --sanitize "$report"
+            fi
+          done
 
       - name: Identify uncatalogued validated manifests
         run: |
           uv run --locked python tools/summarize_discovery_audit.py \
-            --static reports/discovery/tier1-static.json \
-            --static reports/discovery/tier2-static.json \
-            --browser reports/discovery/browser-validation.json \
-            --output reports/discovery/findings.json
+            --static reports/automated/candidate-discovery/tier1-static.json \
+            --static reports/automated/candidate-discovery/tier2-static.json \
+            --static reports/automated/candidate-discovery/catalogue-static.json \
+            --browser reports/automated/candidate-discovery/browser-validation.json \
+            --coverage reports/automated/candidate-discovery/targets/coverage.json \
+            --output reports/automated/candidate-discovery/findings.json
+
+      - name: Check generated discovery evidence before publication
+        id: evidence_safety
+        if: always() && hashFiles('reports/automated/candidate-discovery/findings.json') != ''
+        run: uv run --locked python tools/sanitize_research_evidence.py --check reports/automated/candidate-discovery
 
       - name: Update candidate review issue
-        if: always() && hashFiles('reports/discovery/findings.json') != ''
+        if: always() && steps.evidence_safety.outcome == 'success' && hashFiles('reports/automated/candidate-discovery/findings.json') != ''
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -93,8 +113,13 @@ jobs:
             --limit 100 \
             --json number,title | \
             jq -r --arg title "$TITLE" '.[] | select(.title == $title) | .number')
-          review_count=$(jq -r '.counts.review' reports/discovery/findings.json)
+          review_count=$(jq -r '.counts.review' reports/automated/candidate-discovery/findings.json)
+          incomplete=$(jq '([.coverage.network_checks[]] | add) + .coverage.counts.identities_without_page_routes' reports/automated/candidate-discovery/findings.json)
           if [[ "$review_count" -eq 0 ]]; then
+            if [[ "$incomplete" -gt 0 ]]; then
+              echo "Discovery has source, access or skipped-check gaps; preserving the existing review issue."
+              exit 0
+            fi
             if [[ -n "$number" ]]; then
               state=$(gh issue view "$number" --json state --jq '.state')
               if [[ "$state" == "OPEN" ]]; then
@@ -110,11 +135,13 @@ jobs:
             echo
             echo "The latest monthly Tier 1 and Tier 2 audit found **$review_count** validated manifest(s) that are not represented by a catalogue playback or embed URL."
             echo
+            echo "Coverage: $(jq -r '.coverage.counts | "\(.eligible_identities) eligible identities; \(.identities_with_page_routes) with page routes; \(.identities_without_page_routes) source gaps; \(.catalogue_records_with_page_routes)/\(.catalogue_records) published sources included"' reports/automated/candidate-discovery/findings.json). Source, access, skipped or capped gaps: $incomplete."
+            echo
             echo "These are research leads, not approved catalogue records. Confirm institutional identity, official provenance, channel stability, schedule semantics, accessibility, and rights before promotion."
             echo
             echo "| Tier | Country | Type | URL |"
             echo "| --- | --- | --- | --- |"
-            jq -r '.findings[] | select(.status == "review") | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/discovery/findings.json
+            jq -r '.findings[] | select(.status == "review") | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/automated/candidate-discovery/findings.json
             echo
             echo "[Workflow evidence and downloadable reports]($RUN_URL)"
           } > candidate-discovery-issue.md
@@ -132,31 +159,35 @@ jobs:
           fi
 
       - name: Write discovery summary
-        if: always()
+        if: always() && steps.evidence_safety.outcome == 'success'
         run: |
           {
             echo "## Tier 1 and Tier 2 candidate discovery"
             echo
             echo "This is review evidence. No catalogue records were changed automatically."
             echo
-            if [[ -f reports/discovery/findings.json ]]; then
-              jq -r '"Validated manifests: \(.counts.validated); already catalogued: \(.counts.catalogued); previously reviewed: \(.counts.reviewed); requiring review: \(.counts.review)"' reports/discovery/findings.json
+            if [[ -f reports/automated/candidate-discovery/findings.json ]]; then
+              jq -r '"Validated manifests: \(.counts.validated); already catalogued: \(.counts.catalogued); previously reviewed: \(.counts.reviewed); requiring review: \(.counts.review)"' reports/automated/candidate-discovery/findings.json
+              echo
+              jq -r '.coverage.counts | "Eligible identities: \(.eligible_identities); with page routes: \(.identities_with_page_routes); explicit source gaps: \(.identities_without_page_routes); published sources: \(.catalogue_records_with_page_routes)/\(.catalogue_records)"' reports/automated/candidate-discovery/findings.json
+              jq -r '.coverage.network_checks | "Unchecked static targets: \(.static_unattempted); unchecked browser pages: \(.browser_unattempted); omitted by page cap: \(.browser_pages_omitted_by_cap); omitted by manifest cap: \(.browser_manifests_omitted_by_cap)"' reports/automated/candidate-discovery/findings.json
+              echo "Plans include all maintained eligible identities; successful access, media validation and promotions remain separate. Month-based ordering rotates budget-limited checks."
               echo
               echo "### Review queue"
               echo
               echo "| Tier | Country | Type | URL |"
               echo "| --- | --- | --- | --- |"
-              jq -r '[.findings[] | select(.status == "review")][0:20][] | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/discovery/findings.json
+              jq -r '[.findings[] | select(.status == "review")][0:20][] | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/automated/candidate-discovery/findings.json
             else
               echo "The discovery run did not produce a findings report. Inspect the job log."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload discovery evidence
-        if: always()
+        if: always() && steps.evidence_safety.outcome == 'success'
         uses: actions/upload-artifact@v7
         with:
           name: candidate-discovery-${{ github.run_id }}
-          path: reports/discovery
+          path: reports/automated/candidate-discovery
           if-no-files-found: warn
           retention-days: 90

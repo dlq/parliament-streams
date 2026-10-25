@@ -11,23 +11,20 @@ do not make it eligible.
 
 ## Protecting The Default Branch
 
-The 24 October 2026 API check confirms that `main` is the public repository's
-default branch and has no branch protection or rulesets. The recommended initial
-setup is an **active branch ruleset targeting the default branch**, with
-**Restrict deletions** and **Block force pushes** enabled. Leave ordinary updates
-available so the current direct-push maintenance workflow continues.
+The active [Protect main history ruleset](https://github.com/dlq/parliament-streams/rules/25801215)
+targets `refs/heads/main` and blocks **deletion** and **force pushes**. The
+24 October 2026 follow-up API check confirms both effective rules. Ordinary
+pushes remain available; there is no bypass list and no pull-request or
+status-check requirement. Normal deployment and maintenance can continue.
 
-Create it under repository **Settings → Rulesets → New ruleset → New branch
-ruleset**; select the default branch as the target and set enforcement to Active.
-These are independent controls; see GitHub's
-[ruleset creation guide](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository).
 The scheduled workflows read repository contents and produce deployment/report
-artifacts or issues; they do not commit or push to `main`.
+artifacts or review issues; they do not commit or push to `main`. These two
+history protections do not restrict those operations.
 
 A later stricter mode can require a pull request and the
 `Verify catalogue and scrapers` check, with zero required approvals for solo
 maintenance. Do not require the Pages deployment as a pre-merge check: it runs
-after changes reach `main`. The inspection made no settings changes.
+after changes reach `main`. [Dated review and activation follow-up](../reports/health/2026-10-24-branch-protection-review.json).
 
 ## Which File Should I Edit?
 
@@ -285,7 +282,12 @@ than overriding current reviewed names, aliases or institution URLs. Country
 reconciliation sources and institution pages provide change signals for regional
 and special-status bodies as well as national ones. Watched sources also include
 legal texts and directories; a reachable reference does not establish that it is
-the institution's own official website or complete metadata coverage.
+the institution's own official website or complete metadata coverage. Explicit
+institutional and viewing-page routes in the dated individual service reviews
+are also monitored, using their exact eligible institution IDs. A reviewed route
+with unresolved access remains a monitored lead, not a successfully validated
+service. Arbitrary prose, raw media files, API/calendar payloads and credential
+URLs are excluded from this added page-route projection.
 
 The result separates proposed additions, possible removals and other changes
 from access failures and review gaps. A disappeared directory entry is a proposed
@@ -375,11 +377,57 @@ difference does not update them automatically.
 
 ## Scheduled Candidate Discovery
 
-The monthly `Candidate Discovery` workflow checks the canonical Tier 1 and
-Tier 2 watchlists in `data/discovery/`. Static checks revisit known manifests
-and inspect official-page HTML; Chromium checks capture player-loaded HLS/DASH
-requests. The findings report deduplicates validated URLs against catalogue
-playback and embed URLs.
+The monthly `Candidate Discovery` workflow builds its inputs with
+`tools/build_discovery_targets.py`. It combines the fixed Tier 1/Tier 2
+watchlists with all eligible inventory identities, exact historical service
+references, explicit routes in individual service-review reports and every
+current catalogue official page. Shared URLs are fetched once while retaining
+all linked institution IDs. Published sources outside the 71 country groups use
+a supplemental catalogue bucket; they are not silently omitted or assigned a
+new democracy tier.
+
+The plan records every eligible ID as having ordinary page routes or an explicit
+source gap. On 24 October, 938 of 940 have such routes; Ngäbe–Buglé's General
+Congress and Sri Lanka's North Central Provincial Council retain only document
+references, not a maintained institutional viewing page. Planning coverage does
+not mean that every route loaded or every player decoded.
+
+Static checks revisit known manifests and inspect official-page HTML; Chromium
+checks capture player-loaded HLS/DASH requests. Each of three static batches has
+a 360-second network budget; the browser phase has 1,800 seconds. The monthly
+run removes the old four-page-per-country cap. Work ordering rotates by month
+so budget exhaustion does not continually omit the same tail. Unattempted URLs,
+page caps and the ten-manifest-per-page limit remain explicit in the evidence.
+The findings report deduplicates validated URLs against catalogue playback and
+embed URLs. This is manifest discovery, not source-wide playback, accessibility,
+EPG or rights certification.
+
+Generated plans, network results and findings are retained in
+`reports/automated/candidate-discovery/`. Network evidence is sanitized before
+summarization and scanned before issues, step summaries or artifacts are
+published. A failed or unavailable scan withholds those outputs. Run the offline
+plan and snapshot preflights with:
+
+```sh
+make discovery-plan-validate service-baseline-check institution-site-data-check
+```
+
+The baseline check reconciles the saved eligible-ID/service-report snapshot
+against the current catalogue and all maintained individual review reports.
+It checks consistency; it never requires or infers that every validation
+dimension is complete. After reviewing new evidence or promoting a service,
+regenerate both the baseline and public institution snapshot:
+
+```sh
+uv run --locked python -m tools.build_institution_service_baseline --reviewed-on YYYY-MM-DD
+make institution-site-data
+```
+
+The public legislature evidence disclosures include each source follow-up's
+date, scope, unresolved findings and report link. Dated `catalogue_crosswalk`
+objects take precedence over the historical service register for newly published
+exact identities. A parent's catalogue match or source notes do not propagate to
+its chambers.
 
 Treat every `review` finding as research intake, not as an approved source.
 Confirm that it represents the intended legislature and a stable channel,
@@ -396,8 +444,9 @@ timestamped event manifest.
 
 The workflow mirrors the current findings into one persistent
 `candidate-discovery` issue so the queue remains visible after artifacts expire.
-Reruns update that issue rather than creating duplicates, and a clean monthly
-run closes it.
+Reruns update that issue rather than creating duplicates. A zero-finding run
+with unchecked or capped work preserves the existing issue; incomplete scanning
+must not be described as a clean review.
 
 The daily catalogue audit separately opens one `stream-regression` issue for
 each newly degraded `always_on` stream and closes it only when the health diff
@@ -416,8 +465,10 @@ manual research identifies a better official page.
 `data/discovery/us-legislatures.json` is the canonical research inventory for
 U.S. expansion. It contains six federal floor, committee, API, and broadcaster
 candidates plus exactly one record for each of the 50 state legislatures. The
-inventory is not a set of catalogue-ready channel records and is not currently
-fed into the monthly Tier 1/Tier 2 browser workflow.
+inventory is a historical research intake list rather than a set of
+catalogue-ready channel records. The reconciled eligible state/chamber records
+and their maintained routes in `data/discovery/institutions.json` now feed the
+monthly discovery plan; the older intake file is not a second independent census.
 
 Validate it directly or through `make verify`:
 

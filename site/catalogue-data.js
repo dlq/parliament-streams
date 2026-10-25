@@ -932,7 +932,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 1; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -971,6 +971,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:31Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -981,13 +988,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:23Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:48Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1027,7 +1027,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1066,6 +1066,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:31Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1076,13 +1083,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:25Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:49Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1122,7 +1122,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 3; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1161,6 +1161,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1171,13 +1178,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:26Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:51Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1217,7 +1217,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 4; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1256,6 +1256,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1266,13 +1273,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:27Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:52Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1312,7 +1312,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
       "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
-      "provenance_note": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review.",
+      "provenance_note": "Official Congreso en Directo signal 5; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -1351,6 +1351,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1361,13 +1368,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:28Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:52Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
         }
@@ -1403,12 +1403,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "language": "French",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "https://assemblee-nationale.akamaized.net/live/live36/stream36.m3u8",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
       "official_url": "https://videos.assemblee-nationale.fr/direct.php",
-      "provenance_note": "Official National Assembly HLS candidate; July 2026 health check reached the URL but received a malformed/minimal manifest.",
-      "technical_status": "needs_review",
+      "provenance_note": "Current own video portal exposes live and on-demand navigation and explicitly reports no broadcast at inspection. Retire the obsolete extracted HLS candidate from the published route; link to official video pages. The source expressly permits contextual hyperlinks; prior agreement for multimedia reuse remains separate.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -1453,6 +1453,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current own video portal exposes live and on-demand navigation and explicitly reports no broadcast at inspection. Retire the obsolete extracted HLS candidate from the published route; link to official video pages. The source expressly permits contextual hyperlinks; prior agreement for multimedia reuse remains separate."
+        },
+        {
           "checked_at": "2026-10-22T13:49:32Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1465,16 +1472,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "review_followup",
           "status": "warning",
           "note": "Response did not start with #EXTM3U."
-        },
-        {
-          "checked_at": "2026-08-15T18:27:54Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "Response did not start with #EXTM3U."
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "link_out"
     },
     {
       "id": "chile-camara-tv",
@@ -1866,12 +1866,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "language": "French / Luxembourgish",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8",
-      "official_url": "https://www.chd.lu/",
-      "provenance_note": "Chamber TV HLS candidate from official player infrastructure.",
-      "technical_status": "needs_review",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "official_url": "https://www.chd.lu/fr/direct",
+      "provenance_note": "Current Chamber homepage designates its Vidéos/direct route and lists dated public sittings with broadcast links. Replace the unverified old extracted HLS candidate with the own viewing-page link; current all-stream playback and reuse remain unverified.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -1900,6 +1900,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current Chamber homepage designates its Vidéos/direct route and lists dated public sittings with broadcast links. Replace the unverified old extracted HLS candidate with the own viewing-page link; current all-stream playback and reuse remain unverified."
+        },
+        {
           "checked_at": "2026-10-22T13:49:34Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -1912,16 +1919,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "review_followup",
           "status": "error",
           "note": "<urlopen error [Errno 51] Network is unreachable>"
-        },
-        {
-          "checked_at": "2026-08-15T18:27:54Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
-          "status": "error",
-          "note": "<urlopen error [Errno 51] Network is unreachable>"
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "link_out"
     },
     {
       "id": "estonia-riigikogu-live-1",
@@ -2043,7 +2043,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://router.euddn.net/862366dd346d6b6392d5231546f3d179/smil:rk_live_2.smil/playlist.m3u8?c=8005",
       "official_url": "https://www.riigikogu.ee/live/2/en",
-      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player. Rechecked 2026-10-22: direct and repeated follow-up checks reached a master intermittently but its media rendition returned HTTP 404; retain for research pending successful media validation during an active broadcast.",
+      "provenance_note": "Official Riigikogu live page exposes this HLS manifest through its player. Rechecked 2026-10-22: direct and repeated follow-up checks reached a master intermittently but its media rendition returned HTTP 404; retain for research pending successful media validation during an active broadcast. 24 October 2026 publication review: Own Live2 page responds; its specific media rendition remains unverified/previously404. General official navigation is distinct from direct-signal validation.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -2074,6 +2074,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Own Live2 page responds; its specific media rendition remains unverified/previously404. General official navigation is distinct from direct-signal validation."
+        },
+        {
           "checked_at": "2026-10-22T13:49:34Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -2083,13 +2090,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         {
           "checked_at": "2026-08-15T18:27:13Z",
           "report_path": "reports/health/2026-08-15-catalogue-health.json",
-          "method": "static_http",
-          "status": "warning",
-          "note": "HLS master detected, but sample variant check failed."
-        },
-        {
-          "checked_at": "2026-08-14T21:29:17Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
           "method": "static_http",
           "status": "warning",
           "note": "HLS master detected, but sample variant check failed."
@@ -2575,7 +2575,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "direct_dash_research",
       "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
       "official_url": "https://att.parliament.mn/live",
-      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television. The official Parliament live/session page is the safer user-facing route; SkyGo source ownership, terms, and app playback strategy need review.",
+      "provenance_note": "SkyGo DASH distribution candidate for parliamentary television. The official Parliament live/session page is the safer user-facing route; SkyGo source ownership, terms, and app playback strategy need review. 24 October 2026 publication review: Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved.",
       "technical_status": "validated",
       "stability_risk": "high",
       "availability": "always_on",
@@ -2607,6 +2607,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved."
+        },
+        {
           "checked_at": "2026-10-22T13:49:35Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -2617,13 +2624,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:46Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "ok",
-          "note": "DASH MPD detected."
-        },
-        {
-          "checked_at": "2026-08-15T18:28:07Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "ok",
           "note": "DASH MPD detected."
         }
@@ -3959,7 +3959,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "official_vendor_hls",
       "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
       "official_url": "https://www.ola.org/en/legislative-business/video",
-      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service.",
+      "provenance_note": "Official-vendor HLS for the Legislative Assembly video service. 24 October 2026 publication review: Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "sitting_only",
@@ -3995,6 +3995,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status."
+        },
+        {
           "checked_at": "2026-10-22T13:49:38Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -4005,13 +4012,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:47Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "error",
-          "note": "HTTP 404"
-        },
-        {
-          "checked_at": "2026-08-15T18:28:08Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "error",
           "note": "HTTP 404"
         }
@@ -4380,12 +4380,12 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "language": "English / Inuktitut",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
       "official_url": "https://www.assembly.nu.ca/webcasts",
-      "provenance_note": "Official-vendor iSi LIVE HLS for the Legislative Assembly of Nunavut webcast service.",
-      "technical_status": "needs_review",
+      "provenance_note": "Current own webcast page lists live and English/original archive viewing links, including 23 October 2026. Replace the obsolete iSi LIVE extracted HLS candidate with official viewing navigation. One index row reads 2016-10-22 while its linked filename says 2026: no EPG date is inferred from that conflict.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -4415,6 +4415,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current own webcast page lists live and English/original archive viewing links, including 23 October 2026. Replace the obsolete iSi LIVE extracted HLS candidate with official viewing navigation. One index row reads 2016-10-22 while its linked filename says 2026: no EPG date is inferred from that conflict."
+        },
+        {
           "checked_at": "2026-10-22T13:49:38Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -4427,16 +4434,9 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "static_http",
           "status": "error",
           "note": "HTTP 404"
-        },
-        {
-          "checked_at": "2026-08-14T21:29:39Z",
-          "report_path": "reports/health/2026-08-14-catalogue-health.json",
-          "method": "static_http",
-          "status": "ok",
-          "note": "HLS manifest detected."
         }
       ],
-      "playback_policy": "research_only"
+      "playback_policy": "link_out"
     },
     {
       "id": "uk-parliament-youtube",
@@ -4944,7 +4944,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_kind": "first_party_hls",
       "playback_url": "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8",
       "official_url": "https://www.asamblea.gob.sv/",
-      "provenance_note": "Official Asamblea Legislativa domain hosts this plenary HLS manifest.",
+      "provenance_note": "Official Asamblea Legislativa domain hosts this plenary HLS manifest. 24 October 2026 publication review: Own institutional homepage now responds with normal browser TLS and designates TV AL. This does not by itself decode the selected live signal or settle its older endpoint TLS/rights issues; preserve specific feed hold pending its actual source-player check.",
       "technical_status": "needs_review",
       "stability_risk": "high",
       "availability": "event_based",
@@ -4975,6 +4975,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "validation_history": [
         {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "warning",
+          "note": "Own institutional homepage now responds with normal browser TLS and designates TV AL. This does not by itself decode the selected live signal or settle its older endpoint TLS/rights issues; preserve specific feed hold pending its actual source-player check."
+        },
+        {
           "checked_at": "2026-10-22T13:49:39Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
           "method": "static_http",
@@ -4985,13 +4992,6 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "checked_at": "2026-08-17T10:32:55Z",
           "report_path": "reports/health/2026-08-17-review-followup-static.json",
           "method": "review_followup",
-          "status": "error",
-          "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
-        },
-        {
-          "checked_at": "2026-08-15T18:28:08Z",
-          "report_path": "reports/health/2026-08-15-review-health.json",
-          "method": "static_http",
           "status": "error",
           "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
         }
@@ -8427,13 +8427,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         }
       ],
       "language": "German / French / Italian",
-      "source_type": "direct_hls",
-      "source_kind": "official_vendor_hls",
-      "playback_url": "https://sc-par-lb-01.akamaized.net/par-dvr/_definst_/aff6577ee8960d06b533389219d9292f/manifest.m3u8",
-      "playback_policy": "research_only",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
       "official_url": "https://www.parlament.ch/en/nr/livestream",
-      "provenance_note": "The official Swiss Parliament live player exposes this Akamai HLS manifest. Parliamentary Services also publish third-party iframe instructions for the National Council stream. Rechecked 2026-10-22: the master returned HTTP 404 in TLS-verified direct requests and the official browser player; a supported active-sitting route must be revalidated before native playback resumes.",
-      "technical_status": "needs_review",
+      "provenance_note": "Current own National Council viewing page identifies the live debate service and warns of automatically generated subtitle errors. Replace the stale extracted Akamai HLS candidate with the supported official page; active-sitting media and independently redistributed endpoints remain unverified.",
+      "technical_status": "link_only",
       "stability_risk": "high",
       "availability": "event_based",
       "accessibility": {
@@ -8467,6 +8467,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "recommendation": "Embed or play the unaltered official National Council stream with clear Swiss Parliament attribution. Review separate terms before modifying, archiving, or redistributing recordings beyond the documented live-embed use."
       },
       "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Current own National Council viewing page identifies the live debate service and warns of automatically generated subtitle errors. Replace the stale extracted Akamai HLS candidate with the supported official page; active-sitting media and independently redistributed endpoints remain unverified."
+        },
         {
           "checked_at": "2026-10-22T13:49:45Z",
           "report_path": "reports/health/2026-10-22-catalogue-health.json",
@@ -17981,6 +17988,878 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "note": "Scoped publication reconciliation of retained23October selected playback and current exact identity/primary evidence: Own Lienchiang County Council site explicitly designates the viewing provider. 22October2026 (ROC115), afternoon county-government questions: member Zhou Ruiguo and official at microphones under full council banner; recording part2. Same22October2026 morning questions, female member questioning official at council microphones; separate part of same dated sitting, not second meeting date. Selected recordings decoded inChromium/WebKit with retained individual visual findings from23October. These are morning/afternoon parts of22October2026, not independent dates or full live/room coverage."
         }
       ]
+    },
+    {
+      "id": "belgium-house-recordings",
+      "name": "Belgian House Legislative Recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Belgium",
+      "legislature": "De Kamer van volksvertegenwoordigers / La Chambre des représentants",
+      "external_ids": {
+        "wikidata_qid": "Q1347545",
+        "ipu_country_code": "BE",
+        "ipu_parliament_code": "BE",
+        "ipu_chamber_code": "BE-LC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1347545",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Wikidata own item page names the exact national chamber and country; independently matched to IPU and own chamber site on 24 October 2026."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/BE/BE-LC01/",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact national chamber code from the retained current IPU national-chamber directory, independently matched to the own site."
+        }
+      ],
+      "language": "Dutch / French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://media.dekamer.be/",
+      "provenance_note": "Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "source_dependent",
+        "audio_description": "unknown",
+        "notes": "Visible VGT/LSFB interpreter insets observed in selected plenary frames. Interpretation accuracy, audible tracks and caption quality remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://media.dekamer.be/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "The source offers copied page links, iframe, download and fragment controls. Only its official viewing page is linked; offered controls do not establish general direct-player, rebroadcast, copying, editing or programme-data rights.",
+        "evidence": [
+          "https://www.dekamer.be/kvvcr/index.cfm",
+          "https://media.dekamer.be/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested."
+        }
+      ]
+    },
+    {
+      "id": "czech-senate-recordings",
+      "name": "Czech Senate Legislative Recordings",
+      "jurisdiction_level": "national",
+      "country_or_region": "Czech Republic",
+      "legislature": "Senát Parlamentu České republiky",
+      "external_ids": {
+        "wikidata_qid": "Q389423",
+        "ipu_country_code": "CZ",
+        "ipu_parliament_code": "CZ",
+        "ipu_chamber_code": "CZ-UC01"
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q389423",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Wikidata own item page names the exact national chamber and country; independently matched to IPU and own chamber site on 24 October 2026."
+        },
+        {
+          "source": "ipu_parline",
+          "url": "https://data.ipu.org/parliament/CZ/CZ-UC01/",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Exact national chamber code from the retained current IPU national-chamber directory, independently matched to the own site."
+        }
+      ],
+      "language": "Czech",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.senat.cz/cinnost/webtv/archiv.php",
+      "provenance_note": "Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.senat.cz/cinnost/kalend/index.php",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No source-specific grant for embedding, direct playback, rebroadcast, recording/copying, audiovisual reuse or programme-data republication was established. Link to the official Senate archive; further uses require separate review.",
+        "evidence": [
+          "https://www.senat.cz/",
+          "https://www.senat.cz/cinnost/webtv/archiv.php"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies."
+        }
+      ]
+    },
+    {
+      "id": "spain-alava-recordings",
+      "name": "Álava Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Álava",
+      "legislature": "Juntas Generales de Álava / Arabako Batzar Nagusiak",
+      "external_ids": {
+        "wikidata_qid": "Q4891258",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4891258",
+          "checked_on": "2026-10-24",
+          "confidence": "medium",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://mediateca.jjggalava.eus/search",
+      "provenance_note": "Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "source_dependent",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Visible Spanish/Basque subtitle text is observed in selected source frames. Coverage, accuracy and audible language/interpretation tracks remain unverified; WebKit later seeks stall."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.jjggalava.eus/agenda",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Institutional notice reserves IP rights and requires authorization for commercial copying/reproduction/distribution; no blanket noncommercial licence or media-specific embed/direct/rebroadcast grant is established. Use only the designated viewing link.",
+        "evidence": [
+          "https://www.jjggalava.eus/es",
+          "https://mediateca.jjggalava.eus/search"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified."
+        }
+      ]
+    },
+    {
+      "id": "spain-bizkaia-recordings",
+      "name": "Bizkaia Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Bizkaia",
+      "legislature": "Juntas Generales de Bizkaia / Bizkaiko Batzar Nagusiak",
+      "external_ids": {
+        "wikidata_qid": "Q3129766",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3129766",
+          "checked_on": "2026-10-24",
+          "confidence": "medium",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://mediateca.jjggbizkaia.eus/activity",
+      "provenance_note": "Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://jjggbizkaia.eus/es/agenda-parlamentaria",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Public access and download/transcript controls described by the institution are not a general grant of off-site audiovisual rights. Institutional conditions and provider software credits remain separate; link to the designated portal only.",
+        "evidence": [
+          "https://jjggbizkaia.eus/es/inicio",
+          "https://mediateca.jjggbizkaia.eus/activity"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded."
+        }
+      ]
+    },
+    {
+      "id": "spain-gipuzkoa-recordings",
+      "name": "Gipuzkoa Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Gipuzkoa",
+      "legislature": "Juntas Generales de Gipuzkoa / Gipuzkoako Batzar Nagusiak",
+      "external_ids": {
+        "wikidata_qid": "Q4890912",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4890912",
+          "checked_on": "2026-10-24",
+          "confidence": "medium",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Exact item recovered through the correspondingly named Spanish article’s Wikidata sitelink, independently matched to the official foral institution. Fresh API claims retrieval is deferred under shared maxlag backoff; no fresh claims review is asserted."
+        }
+      ],
+      "language": "Spanish / Basque",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://jggipuzkoa.seneca.tv/activity",
+      "provenance_note": "Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/agenda_parlamentaria.jsp?idioma=es",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Institutional terms condition general reproduction on attribution, unaltered context and exceptions, with some multimedia requiring authorization. Applicability to the separate Seneca host, embedding, direct media and rebroadcast is unresolved. Only the designated viewing page is linked.",
+        "evidence": [
+          "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/index.jsp?idioma=es",
+          "https://jggipuzkoa.seneca.tv/activity"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion."
+        }
+      ]
+    },
+    {
+      "id": "czech-moravian-silesian-recordings",
+      "name": "Moravian-Silesian Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Moravian-Silesian Region",
+      "legislature": "Zastupitelstvo Moravskoslezského kraje",
+      "external_ids": {
+        "wikidata_qid": "Q27974730",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q27974730",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 1405727153; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "Czech",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+      "provenance_note": "Own current 2024–2028 assembly index links programmes, materials, resolutions, minutes and recordings. Fresh 24 October source-native sampling of the 16 September 2026 ninth session decodes initially in Chromium and WebKit; Chromium also advances after a 1200-second seek. The inspected later frame shows the assembly dais and named Josef Bělica agenda-programme discussion marker. WebKit later seeking stalls at exactly1200 seconds; no continuous-live or complete-recording claim is made.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Assembly rules document institutional online broadcast and anonymized archive publication; these and a model information licence are not a third-party audiovisual reuse grant. Link to the official recording index only.",
+        "evidence": [
+          "https://www.msk.cz/",
+          "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own current 2024–2028 assembly index links programmes, materials, resolutions, minutes and recordings. Fresh 24 October source-native sampling of the 16 September 2026 ninth session decodes initially in Chromium and WebKit; Chromium also advances after a 1200-second seek. The inspected later frame shows the assembly dais and named Josef Bělica agenda-programme discussion marker. WebKit later seeking stalls at exactly1200 seconds; no continuous-live or complete-recording claim is made."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-geneva-recordings",
+      "name": "Geneva Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Geneva",
+      "legislature": "Grand Conseil du canton de Genève",
+      "external_ids": {
+        "wikidata_qid": "Q509892",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q509892",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2550004911; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "French",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://ge.ch/grandconseil/sessions/videos/2026/",
+      "provenance_note": "Own Grand Conseil navigation designates the video archive. 1 October and 22 January 2026 clips show Stéphane Florey on PL13730-A and Alia Chaker Mangeat on PL13578-B in Chromium; January also decodes in WebKit. October WebKit samples stall or time out.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://ge.ch/grandconseil/sessions/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Source conditions allow third-party dissemination of public-session videos while forbidding alterations without prior written bureau authorization. This publication is an official archive link, without independently implementing redistribution or assuming all other uses are cleared.",
+        "evidence": [
+          "https://ge.ch/grandconseil/index/",
+          "https://ge.ch/grandconseil/sessions/videos/2026/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Grand Conseil navigation designates the video archive. 1 October and 22 January 2026 clips show Stéphane Florey on PL13730-A and Alia Chaker Mangeat on PL13578-B in Chromium; January also decodes in WebKit. October WebKit samples stall or time out."
+        }
+      ]
+    },
+    {
+      "id": "switzerland-st-gallen-recordings",
+      "name": "St Gallen Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "St Gallen",
+      "legislature": "Kantonsrat des Kantons St. Gallen",
+      "external_ids": {
+        "wikidata_qid": "Q2082614",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2082614",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2512733038; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://sg.recapp.ch/shareparl/",
+      "provenance_note": "Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No general independent audiovisual reuse, direct-player, rebroadcast or programme-data grant has been established from the source-specific review. Use the institution-designated audiovisual minutes as an external viewing link.",
+        "evidence": [
+          "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+          "https://sg.recapp.ch/shareparl/"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification."
+        }
+      ]
+    },
+    {
+      "id": "germany-mecklenburg-vorpommern-recordings",
+      "name": "Mecklenburg-Vorpommern Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Mecklenburg-Vorpommern",
+      "legislature": "Landtag Mecklenburg-Vorpommern",
+      "external_ids": {
+        "wikidata_qid": "Q882738",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q882738",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2548143679; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/@MVLandtag",
+      "provenance_note": "The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.landtag-mv.de/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Published material protected; personal download/printing allowed, broader use/distribution including commercial use requires written permission. No blanket third-party video reuse grant.",
+        "evidence": [
+          "https://www.landtag-mv.de/",
+          "https://www.youtube.com/@MVLandtag"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence."
+        }
+      ]
+    },
+    {
+      "id": "italy-south-tyrol-recordings",
+      "name": "South Tyrol Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "South Tyrol",
+      "legislature": "Consiglio della Provincia Autonoma di Bolzano / Südtiroler Landtag",
+      "external_ids": {
+        "wikidata_qid": "Q458185",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q458185",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2533685446; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "German / Italian / Ladin",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UC5bOVQNvQJklEksWtmpYByg",
+      "provenance_note": "Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.landtag-bz.org/de/home",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "HTTP200 but captured legal page remains a Loading shell with publisher contact information; actual substantive reuse notice not established. Do not treat200 as a reviewed licence.",
+        "evidence": [
+          "https://www.landtag-bz.org/de/home",
+          "https://www.youtube.com/channel/UC5bOVQNvQJklEksWtmpYByg"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech."
+        }
+      ]
+    },
+    {
+      "id": "italy-campania-recordings",
+      "name": "Campania Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Campania",
+      "legislature": "Consiglio regionale della Campania",
+      "external_ids": {
+        "wikidata_qid": "Q21190093",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21190093",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2478308181; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "Italian",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UC9lEB256a-l0bFj98W4tRUA",
+      "provenance_note": "Own regional assembly navigation designates this channel for its sittings. One 27 August 2026 afternoon sitting shows chair Massimiliano Manfredi conducting business under a dated assembly caption, decoded in Chromium and WebKit.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.cr.campania.it/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Website data/contents defaultCCBY4.0 unless otherwise noted, requiring attribution and originalURL where possible. Applicability to each externally hosted audiovisual recording remains to be checked; site licence alone is not blanket provider permission.",
+        "evidence": [
+          "https://www.cr.campania.it/",
+          "https://www.youtube.com/channel/UC9lEB256a-l0bFj98W4tRUA"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own regional assembly navigation designates this channel for its sittings. One 27 August 2026 afternoon sitting shows chair Massimiliano Manfredi conducting business under a dated assembly caption, decoded in Chromium and WebKit."
+        }
+      ]
+    },
+    {
+      "id": "south-africa-eastern-cape-recordings",
+      "name": "Eastern Cape Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Eastern Cape",
+      "legislature": "Eastern Cape Provincial Legislature",
+      "external_ids": {
+        "wikidata_qid": "Q5330037",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5330037",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2470717511; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "English / Xhosa / Afrikaans",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCUwLgYWElaOPyol_zCUyDaA",
+      "provenance_note": "Own provincial legislature navigation designates this channel. The 30 October 2025 House sitting shows a member reading at the chamber desk microphone and decodes in Chromium and WebKit. This is explicitly historical archive coverage; the separate disability public-participation session does not establish current ordinary plenary service.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.eclegislature.gov.za/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "No separate substantive audiovisual reuse notice established from the reviewed institutional navigation; permission scope remains open.",
+        "evidence": [
+          "https://www.eclegislature.gov.za/",
+          "https://www.youtube.com/channel/UCUwLgYWElaOPyol_zCUyDaA"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own provincial legislature navigation designates this channel. The 30 October 2025 House sitting shows a member reading at the chamber desk microphone and decodes in Chromium and WebKit. This is explicitly historical archive coverage; the separate disability public-participation session does not establish current ordinary plenary service."
+        }
+      ]
+    },
+    {
+      "id": "taiwan-kinmen-recordings",
+      "name": "Kinmen Legislative Recordings",
+      "jurisdiction_level": "subnational",
+      "country_or_region": "Kinmen",
+      "legislature": "金門縣議會",
+      "external_ids": {
+        "wikidata_qid": "Q15914537",
+        "ipu_country_code": null,
+        "ipu_parliament_code": null,
+        "ipu_chamber_code": null
+      },
+      "identity_sources": [
+        {
+          "source": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15914537",
+          "checked_on": "2026-10-24",
+          "confidence": "high",
+          "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2434262463; these claims are identifier evidence, not media/rights certification."
+        }
+      ],
+      "language": "Mandarin Chinese",
+      "source_type": "official_page",
+      "source_kind": "official_page",
+      "playback_url": null,
+      "playback_policy": "link_out",
+      "official_url": "https://www.youtube.com/channel/UCssU97D8roqOPbnU4I-OsOw",
+      "provenance_note": "Own county council navigation designates this channel. Two member/executive exchanges decode in Chromium and WebKit. Their titles label 22 and 23 October 2025; recent 2026 upload timing is not used as a meeting date. Listed as an official archive without a current-live or 2026 sitting claim.",
+      "technical_status": "link_only",
+      "stability_risk": "unknown",
+      "availability": "event_based",
+      "accessibility": {
+        "captions": "unknown",
+        "caption_languages": [],
+        "sign_language": "unknown",
+        "audio_description": "unknown",
+        "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+      },
+      "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.kmcc.gov.tw/",
+          "method": "GET",
+          "kind": "official_recording_or_event_navigation"
+        }
+      ],
+      "permission": {
+        "status": "personal_use_pending_review",
+        "summary": "Copyright notice generally permits clearly labelled nonmisleading incoming links without consent. Protected audiovisual reuse remains conditional; sampled provider descriptions explicitly reserve reproduction/editing/public transmission without permission. Linking permission is distinct from video permission.",
+        "evidence": [
+          "https://www.kmcc.gov.tw/",
+          "https://www.youtube.com/channel/UCssU97D8roqOPbnU4I-OsOw"
+        ],
+        "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+      },
+      "validation_history": [
+        {
+          "checked_at": "2026-10-25T00:49:51Z",
+          "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+          "method": "review_followup",
+          "status": "ok",
+          "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own county council navigation designates this channel. Two member/executive exchanges decode in Chromium and WebKit. Their titles label 22 and 23 October 2025; recent 2026 upload timing is not used as a meeting date. Listed as an official archive without a current-live or 2026 sitting claim."
+        }
+      ]
     }
   ]
 };
@@ -18594,1757 +19473,4 @@ window.PARLIAMENT_STREAMS_SUPRANATIONAL = {
       "checked_on": "2026-08-24"
     }
   ]
-};
-window.PARLIAMENT_STREAMS_SCHEDULES = {
-  "channels": {
-    "brazil-tv-camara": {
-      "confidence": "official_weekly_schedule",
-      "current_event_id": "generated-f53cb05fa199edad1d34",
-      "current_event_start": "2026-08-24T20:30:00Z",
-      "current_event_status": "live",
-      "current_event_time": "Live now",
-      "current_event_title": "Câmara Debate: Os impactos da pirataria no Brasil - Dep. Júlio Lopes (PP-RJ) e Dep. Luiz Carlos Hauly (PODE-PR)",
-      "events": [
-        {
-          "end": "2026-08-24T03:30:00Z",
-          "id": "generated-b61872fd288f9e7bb188",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T03:00:00Z",
-          "status": "completed",
-          "title": "Documentário 100 Anos de Cultura e Conflitos: A Guerra do Paraguai"
-        },
-        {
-          "end": "2026-08-24T04:00:00Z",
-          "id": "generated-53f2058cd06166d4daef",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T03:30:00Z",
-          "status": "completed",
-          "title": "Documentário Deu Bola: Games"
-        },
-        {
-          "end": "2026-08-24T06:30:00Z",
-          "id": "generated-1ae7a03f595426e6d938",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T04:00:00Z",
-          "status": "completed",
-          "title": "Comissão de Educação: Audiência pública: Proibição de licenciaturas 100% EaD e novas diretrizes do CNE (Gravado: 12/08/2026 - Duração: 2h13) com Libras"
-        },
-        {
-          "end": "2026-08-24T08:30:00Z",
-          "id": "generated-35df82d61e8631343f03",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T06:30:00Z",
-          "status": "completed",
-          "title": "Comissão de Desenvolvimento Econômico - Audiência pública: Marco de Fomento à Economia Digital no Brasil (Gravado: 12/08/26 - Duração: 2h03) com Libras"
-        },
-        {
-          "end": "2026-08-24T09:00:00Z",
-          "id": "generated-55ceb99cb32572bf8ae4",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T08:30:00Z",
-          "status": "completed",
-          "title": "Documentário TV Câmara: Memórias: Tarcísio Delgado"
-        },
-        {
-          "end": "2026-08-24T09:30:00Z",
-          "id": "generated-185a473871d6f933e00f",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T09:00:00Z",
-          "status": "completed",
-          "title": "Câmara Debate: Os impactos da pirataria no Brasil - Dep. Júlio Lopes (PP-RJ) e Dep. Luiz Carlos Hauly (PODE-PR)"
-        },
-        {
-          "end": "2026-08-24T09:45:00Z",
-          "id": "generated-ada116286d38b3344204",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T09:30:00Z",
-          "status": "completed",
-          "title": "Palavra Aberta: Direitos das pessoas com TDAH - Dep. Alex Manente (Cidadania-SP)"
-        },
-        {
-          "end": "2026-08-24T10:00:00Z",
-          "id": "generated-2819abf1797a543d3498",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T09:45:00Z",
-          "status": "completed",
-          "title": "Palavra Aberta: Comissão aprova criação do Fundo Nacional de Combate ao Câncer - Dep. Pedro Lucas Fernandes (União-MA)"
-        },
-        {
-          "end": "2026-08-24T10:30:00Z",
-          "id": "generated-46209e716056059fdfcf",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T10:00:00Z",
-          "status": "completed",
-          "title": "Entenda as Eleições: Urna eletrônica - Tecnologia e segurança"
-        },
-        {
-          "end": "2026-08-24T10:45:00Z",
-          "id": "generated-2599f55c65314f1781d1",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T10:30:00Z",
-          "status": "completed",
-          "title": "Palavra Aberta: Reaproveitamento de painéis solares e baterias descartados - Dep. Clodoaldo Magalhães (PV-PE)"
-        },
-        {
-          "end": "2026-08-24T11:00:00Z",
-          "id": "generated-1ca4bf6622e1fee74fbc",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T10:45:00Z",
-          "status": "completed",
-          "title": "Palavra Aberta: Proposta reduz área de proteção ambiental da Baleia Franca - Dep. Geovania de Sá (Republicanos-SC)"
-        },
-        {
-          "end": "2026-08-24T12:00:00Z",
-          "id": "generated-6ebce3652f8c0f80ec37",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T11:00:00Z",
-          "status": "completed",
-          "title": "Painel Eletrônico (AO VIVO)"
-        },
-        {
-          "end": "2026-08-24T13:03:00Z",
-          "id": "generated-125b7eb7eedd6c6dd317",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T12:00:00Z",
-          "status": "completed",
-          "title": "Participação Popular: Saúde mental dos jovens"
-        },
-        {
-          "end": "2026-08-24T14:15:00Z",
-          "id": "generated-439f994e43f6e318367d",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T13:03:00Z",
-          "status": "completed",
-          "title": "Câmara Agora (AO VIVO)"
-        },
-        {
-          "end": "2026-08-24T14:40:00Z",
-          "id": "generated-8b703f305301c37a7b23",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T14:15:00Z",
-          "status": "completed",
-          "title": "Qual a Questão? Quebra de patentes de medicamentos"
-        },
-        {
-          "end": "2026-08-24T15:00:00Z",
-          "id": "generated-a03dcf25ab1f7ce0cece",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T14:40:00Z",
-          "status": "completed",
-          "title": "Interprogramas TV Câmara"
-        },
-        {
-          "end": "2026-08-24T16:00:00Z",
-          "id": "generated-b3f8e37fc1fbec804bfd",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T15:00:00Z",
-          "status": "completed",
-          "title": "Bora Entender: Assessoramento legislativo (AO VIVO)"
-        },
-        {
-          "end": "2026-08-24T16:30:00Z",
-          "id": "generated-5309444fbfa4c1a75f19",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T16:00:00Z",
-          "status": "completed",
-          "title": "Ponto de Vista: A cidade contra as pessoas"
-        },
-        {
-          "end": "2026-08-24T17:00:00Z",
-          "id": "generated-3b0f5be706f0984cc04e",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T16:30:00Z",
-          "status": "completed",
-          "title": "Direto da Câmara (AO VIVO)"
-        },
-        {
-          "end": "2026-08-24T17:15:00Z",
-          "id": "generated-7ac87bc71741d32f498a",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T17:00:00Z",
-          "status": "completed",
-          "title": "Entenda as Eleições: Urna eletrônica - Tecnologia e segurança"
-        },
-        {
-          "end": "2026-08-24T20:30:00Z",
-          "id": "generated-aa458652e6bf3d663951",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T17:15:00Z",
-          "status": "completed",
-          "title": "Secretaria da Mulher - Seminário: 5 Anos do Observatório Nacional da Mulher na Política (Gravado 19/08/26 - Duração: 3h40) com Libras"
-        },
-        {
-          "end": "2026-08-24T21:00:00Z",
-          "id": "generated-f53cb05fa199edad1d34",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T20:30:00Z",
-          "status": "live",
-          "title": "Câmara Debate: Os impactos da pirataria no Brasil - Dep. Júlio Lopes (PP-RJ) e Dep. Luiz Carlos Hauly (PODE-PR)"
-        },
-        {
-          "end": "2026-08-24T21:30:00Z",
-          "id": "generated-c11d9fd56371e3ad6ffd",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T21:00:00Z",
-          "status": "scheduled",
-          "title": "Documentário: Meia Lua Falciforme"
-        },
-        {
-          "end": "2026-08-24T22:00:00Z",
-          "id": "generated-bbd756ad6cb30f646813",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T21:30:00Z",
-          "status": "scheduled",
-          "title": "Elas Pautam: Saúde e dignidade menstrual"
-        },
-        {
-          "end": "2026-08-24T23:00:00Z",
-          "id": "generated-77700da07e9f5a55f2e1",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T22:00:00Z",
-          "status": "scheduled",
-          "title": "Bora Entender: Assessoramento legislativo"
-        },
-        {
-          "end": "2026-08-24T23:30:00Z",
-          "id": "generated-9ebca9828d74cbc1e330",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T23:00:00Z",
-          "status": "scheduled",
-          "title": "Parlamento Brasil: Edição nº 487"
-        },
-        {
-          "end": "2026-08-25T00:00:00Z",
-          "id": "generated-ef9bfc1d168b83c579da",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-24T23:30:00Z",
-          "status": "scheduled",
-          "title": "Documentário: Comunicação violada - Jornalismo sob ataque nas redes"
-        },
-        {
-          "end": "2026-08-25T01:00:00Z",
-          "id": "generated-4d3ccdbecdb455eee200",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-25T00:00:00Z",
-          "status": "scheduled",
-          "title": "Participação Popular: Controle populacional de cães e gatos"
-        },
-        {
-          "end": "2026-08-25T02:00:00Z",
-          "id": "generated-25c83cd44d6e6675a8b7",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-25T01:00:00Z",
-          "status": "scheduled",
-          "title": "Encontro com a Autora: Mary Del Priore"
-        },
-        {
-          "end": "2026-08-25T02:30:00Z",
-          "id": "generated-a36b824d34c4d7c5b2e2",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-25T02:00:00Z",
-          "status": "scheduled",
-          "title": "Ponto de Vista: A cidade contra as pessoas"
-        },
-        {
-          "end": "2026-08-25T02:45:00Z",
-          "id": "generated-70afce49868d29a2f842",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-25T02:30:00Z",
-          "status": "scheduled",
-          "title": "Entenda as Eleições: Urna eletrônica - Tecnologia e segurança"
-        },
-        {
-          "id": "generated-40a6993d90e6594f7613",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Sao_Paulo",
-          "start": "2026-08-25T02:45:00Z",
-          "status": "scheduled",
-          "title": "Palavra Aberta: Reaproveitamento de painéis solares e baterias descartados - Dep. Clodoaldo Magalhães (PV-PE)"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "generated-c11d9fd56371e3ad6ffd",
-      "next_event_start": "2026-08-24T21:00:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-08-24T21:00:00Z",
-      "next_event_title": "Documentário: Meia Lua Falciforme",
-      "scraper": "brazil-tv-camara",
-      "source_url": "https://www.camara.leg.br/tv/programacao-semanal"
-    },
-    "canada-senate-senvu": {
-      "confidence": "official_harmony_upcoming_events_page",
-      "current_event_time": null,
-      "current_event_title": null,
-      "events": [
-        {
-          "id": "15441",
-          "identifier_kind": "official",
-          "language": "en",
-          "location": "Room B45, Senate of Canada Building, 2 Rideau Street, Ottawa ON",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-27T14:00:00Z",
-          "status": "scheduled",
-          "title": "DVSC meeting no. 1 - Subcommittee on Diversity",
-          "url": "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260824/-1/15441"
-        },
-        {
-          "id": "15434",
-          "identifier_kind": "official",
-          "language": "en",
-          "location": "Senate Chamber, Senate of Canada Building, 2 Rideau Street, Ottawa ON",
-          "source_timezone": "America/Toronto",
-          "start": "2026-09-28T22:00:00Z",
-          "status": "scheduled",
-          "title": "Senate sitting no. 87",
-          "url": "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260824/-1/15434"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "15441",
-      "next_event_language": "en",
-      "next_event_location": "Room B45, Senate of Canada Building, 2 Rideau Street, Ottawa ON",
-      "next_event_start": "2026-08-27T14:00:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-08-27T14:00:00Z",
-      "next_event_title": "DVSC meeting no. 1 - Subcommittee on Diversity",
-      "next_event_url": "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260824/-1/15441",
-      "scraper": "canada-harmony",
-      "source_url": "https://senparlvu.parl.gc.ca/Harmony/"
-    },
-    "cpac-ca": {
-      "confidence": "official_schedule",
-      "current_event_id": "generated-52633dc69c31ff6a0f02",
-      "current_event_start": "2026-08-24T20:20:30Z",
-      "current_event_status": "live",
-      "current_event_time": "Live now",
-      "current_event_title": "Public Record",
-      "events": [
-        {
-          "end": "2026-08-24T14:00:00Z",
-          "id": "generated-1bff554b58eaa4d3093b",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T12:46:15Z",
-          "status": "completed",
-          "title": "In Committee from the Senate of Canada"
-        },
-        {
-          "end": "2026-08-24T15:00:00Z",
-          "id": "generated-7ed48754928145b981e7",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T14:00:00Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T15:23:15Z",
-          "id": "generated-a01d7cdaa6e425fda427",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T15:00:00Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T15:59:45Z",
-          "id": "generated-c1a91adb3d5033863c5a",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T15:23:15Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T16:00:00Z",
-          "id": "generated-fa4f6f0bf6fd40930f07",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T15:59:45Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T18:32:45Z",
-          "id": "generated-b520aed4c4ce94f951e9",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T16:00:00Z",
-          "status": "completed",
-          "title": "Headline Politics"
-        },
-        {
-          "end": "2026-08-24T19:20:15Z",
-          "id": "generated-dfd3c893936b9c4fdf03",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T18:32:45Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T19:58:15Z",
-          "id": "generated-c2789c5ac29eaa6597e9",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T19:20:15Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T20:20:30Z",
-          "id": "generated-a9cd617d69643cf361f5",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T19:58:15Z",
-          "status": "completed",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T21:00:00Z",
-          "id": "generated-52633dc69c31ff6a0f02",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T20:20:30Z",
-          "status": "live",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-24T23:00:00Z",
-          "id": "generated-f5096e2eca987516e027",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T21:00:00Z",
-          "status": "scheduled",
-          "title": "Headline Politics"
-        },
-        {
-          "end": "2026-08-25T00:00:00Z",
-          "id": "generated-15ecd7f9f8234274b5b8",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-24T23:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T02:00:00Z",
-          "id": "generated-17a184a97465b9ff4ad4",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T00:00:00Z",
-          "status": "scheduled",
-          "title": "Headline Politics"
-        },
-        {
-          "end": "2026-08-25T04:00:00Z",
-          "id": "generated-d060ebf7587b6f68a0c7",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T02:00:00Z",
-          "status": "scheduled",
-          "title": "Headline Politics"
-        },
-        {
-          "end": "2026-08-25T04:43:15Z",
-          "id": "generated-1edb8d6362910ec757ef",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T04:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T05:26:30Z",
-          "id": "generated-0639ee4610e8ae1fd1b9",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T04:43:15Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T06:27:30Z",
-          "id": "generated-d83b6961ba385ddfccfd",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T05:26:30Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T07:27:30Z",
-          "id": "generated-e7aaa037eee4029c9539",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T06:27:30Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T08:12:30Z",
-          "id": "generated-3bb84072715d90632942",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T07:27:30Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T09:00:00Z",
-          "id": "generated-859c3c6397a547f70792",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T08:12:30Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T10:57:00Z",
-          "id": "generated-c2a953eb0f1bf840460d",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T09:00:00Z",
-          "status": "scheduled",
-          "title": "In Committee from the Senate of Canada"
-        },
-        {
-          "end": "2026-08-25T12:46:20Z",
-          "id": "generated-22b64bce9056be5cf891",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T10:57:00Z",
-          "status": "scheduled",
-          "title": "In Committee from the Senate of Canada"
-        },
-        {
-          "end": "2026-08-25T14:00:00Z",
-          "id": "generated-e538b382b62b57259033",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T12:46:20Z",
-          "status": "scheduled",
-          "title": "In Committee from the Senate of Canada"
-        },
-        {
-          "end": "2026-08-25T14:28:45Z",
-          "id": "generated-31e9ca5cacc2ae345c54",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T14:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T15:00:00Z",
-          "id": "generated-3764625817d25fc8bae3",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T14:28:45Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T15:17:00Z",
-          "id": "generated-99ba9619484137991ae1",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T15:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T16:00:00Z",
-          "id": "generated-fbd99977042c5d8073bf",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T15:17:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T16:17:15Z",
-          "id": "generated-49e5cceb559c45e0dd96",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T16:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T17:00:00Z",
-          "id": "generated-08d33b3d77f3574df9cf",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T16:17:15Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T17:47:15Z",
-          "id": "generated-e2911195eef892d01bb1",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T17:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T18:00:00Z",
-          "id": "generated-2df9e289d39cd26cb43b",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T17:47:15Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T18:26:30Z",
-          "id": "generated-1f34d989f78a67bed889",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T18:00:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T19:04:00Z",
-          "id": "generated-0d71a89385e6d9e51b41",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T18:26:30Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "end": "2026-08-25T20:04:00Z",
-          "id": "generated-4d2c36f124ed9c7836bd",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T19:04:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        },
-        {
-          "id": "generated-0d83974d0e352f06a09c",
-          "identifier_kind": "generated",
-          "source_timezone": "America/Toronto",
-          "start": "2026-08-25T20:04:00Z",
-          "status": "scheduled",
-          "title": "Public Record"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "generated-f5096e2eca987516e027",
-      "next_event_start": "2026-08-24T21:00:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-08-24T21:00:00Z",
-      "next_event_title": "Headline Politics",
-      "scraper": "cpac",
-      "source_url": "https://www.cpac.ca/schedule/"
-    },
-    "eu-audiovisual-ebs": {
-      "confidence": "official_schedule",
-      "current_event_time": null,
-      "current_event_title": null,
-      "events": [
-        {
-          "end": "2026-08-24T10:19:31Z",
-          "id": "generated-b6fc6a3f2f5afc14c48f",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Brussels",
-          "start": "2026-08-24T10:15:10Z",
-          "status": "completed",
-          "title": "Message by President of the European Commission Ursula von der LEYEN at the ONS Conference"
-        },
-        {
-          "end": "2026-08-24T11:23:16Z",
-          "id": "generated-a342c342f351d0cc3306",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Brussels",
-          "start": "2026-08-24T11:15:10Z",
-          "status": "completed",
-          "title": "President of the European Council António COSTA in Kyiv, Ukraine"
-        },
-        {
-          "end": "2026-08-24T14:38:04Z",
-          "id": "generated-17c60ee59255d7826586",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Brussels",
-          "start": "2026-08-24T14:30:10Z",
-          "status": "completed",
-          "title": "EC ARCHIVES"
-        },
-        {
-          "end": "2026-08-24T16:32:14Z",
-          "id": "generated-f2c740674a39a64b5e88",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Brussels",
-          "start": "2026-08-24T16:00:10Z",
-          "status": "completed",
-          "title": "President of the European Council António COSTA in Kyiv, Ukraine"
-        },
-        {
-          "end": "2026-08-24T16:59:41Z",
-          "id": "generated-58f8b50c8356f144b8e8",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Brussels",
-          "start": "2026-08-24T16:45:10Z",
-          "status": "completed",
-          "title": "President of the European Council António COSTA visit to Ukraine"
-        },
-        {
-          "end": "2026-08-25T10:00:00Z",
-          "id": "generated-1aabd72c3110cb244d2d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Brussels",
-          "start": "2026-08-25T10:00:00Z",
-          "status": "scheduled",
-          "title": "EC Midday press briefing of 25/08/2026"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "generated-1aabd72c3110cb244d2d",
-      "next_event_start": "2026-08-25T10:00:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-08-25T10:00:00Z",
-      "next_event_title": "EC Midday press briefing of 25/08/2026",
-      "scraper": "ebs-grid",
-      "source_url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20260824&dateTo=20260825&withCompleteThesaurusData=true"
-    },
-    "portugal-artv": {
-      "confidence": "official_open_data_agenda",
-      "current_event_time": null,
-      "current_event_title": null,
-      "events": [
-        {
-          "id": "generated-29096e54ab4c22a1475f",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Lisbon",
-          "start": "2026-09-08T14:30:00Z",
-          "status": "scheduled",
-          "title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias"
-        },
-        {
-          "id": "generated-6b8b5d79529dabb9ef2c",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Lisbon",
-          "start": "2026-09-09T08:30:00Z",
-          "status": "scheduled",
-          "title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias"
-        },
-        {
-          "id": "generated-5f4d99c9fcb653c13949",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Lisbon",
-          "start": "2026-09-09T10:00:00Z",
-          "status": "scheduled",
-          "title": "Comissão Eventual para a Resiliência Nacional, Prevenção de Catástrofes Naturais e Acompanhamento do Portugal Transformação, Recuperação e Resiliência (PTRR)"
-        },
-        {
-          "id": "generated-92bf85a42c9c09b8f0b7",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Lisbon",
-          "start": "2026-09-09T13:00:00Z",
-          "status": "scheduled",
-          "title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias"
-        },
-        {
-          "id": "generated-c04cdba165dc99b97323",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Lisbon",
-          "start": "2026-09-10T13:00:00Z",
-          "status": "scheduled",
-          "title": "Comissão Eventual para a Resiliência Nacional, Prevenção de Catástrofes Naturais e Acompanhamento do Portugal Transformação, Recuperação e Resiliência (PTRR)"
-        },
-        {
-          "id": "generated-be2447ee869cc6945a1c",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/Lisbon",
-          "start": "2026-09-10T14:00:00Z",
-          "status": "scheduled",
-          "title": "Comissão Eventual para a Resiliência Nacional, Prevenção de Catástrofes Naturais e Acompanhamento do Portugal Transformação, Recuperação e Resiliência (PTRR)"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "generated-29096e54ab4c22a1475f",
-      "next_event_start": "2026-09-08T14:30:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-09-08T14:30:00Z",
-      "next_event_title": "Comissão de Assuntos Constitucionais, Direitos, Liberdades e Garantias",
-      "scraper": "portugal-open-data-agenda",
-      "source_url": "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx"
-    },
-    "uk-parliament-youtube": {
-      "confidence": "official_whatson_calendar_api",
-      "current_event_time": null,
-      "current_event_title": null,
-      "events": [
-        {
-          "id": "generated-8e8a6564b0a8e8b0ccd8",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T10:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Industry and Regulators Committee"
-        },
-        {
-          "id": "generated-2f68d21c4f20ab07e0ec",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T10:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Provision of face-to-face banking services in rural areas"
-        },
-        {
-          "id": "generated-daf3a8248c4995c0076d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T12:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Future of science facilities and laboratories"
-        },
-        {
-          "id": "generated-43cf08045fc24e671fd9",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T13:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Communications and Digital Committee"
-        },
-        {
-          "id": "generated-6a2556daa4eaeb761b41",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T13:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Built Environment Committee"
-        },
-        {
-          "id": "generated-9719622f2a484f78fa4b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T13:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Select & Joint Committees: Education Committee"
-        },
-        {
-          "id": "generated-a2a40b652d33f32b7b5d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T13:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Foreign, Commonwealth and Development (including Topical Questions)"
-        },
-        {
-          "id": "generated-8396e1be93b770e8a51a",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T13:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Baroness Lowe of Armley and Lord Macintosh of Eastwood"
-        },
-        {
-          "id": "generated-8d4fcfeda151f865f3da",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T14:45:00Z",
-          "status": "scheduled",
-          "title": "Lords - Grand Committee: Cyber Security and Resilience (Network and Information Systems) Bill – committee stage (day 1 )"
-        },
-        {
-          "id": "generated-a50a694ace3ed5c76646",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T15:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Future of UK financial services"
-        },
-        {
-          "id": "generated-69c3ed0fbd9685e2cc81",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T16:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Select & Joint Committees: Backbench Business Committee"
-        },
-        {
-          "id": "generated-4710a187781851be641a",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T17:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Impact of local government reorganisation on Cambridgeshire"
-        },
-        {
-          "id": "generated-0bf182be958ee75e22ae",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-01T17:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Aluminium recycling and local authorities"
-        },
-        {
-          "id": "generated-24bd874c4c5e8d8b5260",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Impact of the 2016 EU membership referendum on the UK"
-        },
-        {
-          "id": "generated-eb571133d96e1af7c805",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T09:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Financial Services Regulation Committee"
-        },
-        {
-          "id": "generated-f7c3c7fcbbcaa8332fa7",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T09:15:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Constitution Committee"
-        },
-        {
-          "id": "generated-ff6c333bb01009d1e94c",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T09:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Northern Ireland Scrutiny Committee"
-        },
-        {
-          "id": "generated-db033a596bdcb8da5545",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T09:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: International Relations and Defence Committee"
-        },
-        {
-          "id": "generated-a4708d2eddb5ac964189",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T10:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Potential merits of removing the qualifying period for Disability Living Allowance for children"
-        },
-        {
-          "id": "generated-c68594e15c08d200d43b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T10:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Wales"
-        },
-        {
-          "id": "generated-3785f4f7c0634b1e746d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T11:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Prime Minister's Question Time"
-        },
-        {
-          "id": "generated-e5da9ccb83fa3d097ed0",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T13:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Select & Joint Committees: Women and Equalities Committee"
-        },
-        {
-          "id": "generated-6502b278334f8bdb073f",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T13:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Government support for rural upper tier local authorities"
-        },
-        {
-          "id": "generated-adb98d4c7a26bbebc2de",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T14:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Police and Electoral Commission and investigations in suspected breaches of electoral finance law"
-        },
-        {
-          "id": "generated-a283b02593694249ea03",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T15:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Impact of changes to employer National Insurance contributions on small businesses in Hampshire"
-        },
-        {
-          "id": "generated-18e0c766ffb0553b999f",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T15:15:00Z",
-          "status": "scheduled",
-          "title": "Lords - Grand Committee: Building Safety Levy (Amendment) (England) Regulations 2026"
-        },
-        {
-          "id": "generated-77ba17eeb34e535e8bfd",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-02T15:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Impact of levels of global tin availability on the economy"
-        },
-        {
-          "id": "generated-80785e7ad5cae17337e0",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Digital, Culture, Media and Sport (including Topical Questions)"
-        },
-        {
-          "id": "generated-97b391ecaf8c50d41fec",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T09:10:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Church Commissioners and House of Commons Commission and Public Accounts Commission and Restoration and Renewal Client Board and Speaker’s Committee on the Electoral Commission"
-        },
-        {
-          "id": "generated-ae82a18c3f825830de7d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T09:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Domestic Abuse Act 2021 Committee"
-        },
-        {
-          "id": "generated-d327d37fd6c710931292",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T10:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Opt-out collective court actions and connected litigation funding"
-        },
-        {
-          "id": "generated-55bdb497dd89316076fb",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T11:15:00Z",
-          "status": "scheduled",
-          "title": "Lords - Grand Committee: Cyber Security and Resilience (Network and Information Systems) Bill - committee stage (day 2)"
-        },
-        {
-          "id": "generated-c156e9bc4a7472a68ee4",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T12:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Vaccination rates in England"
-        },
-        {
-          "id": "generated-e280f619b844ee6c401d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-03T14:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Security assessment on global biodiversity loss, ecosystem collapse and national security, published in January 2026"
-        },
-        {
-          "id": "generated-8bfabd5b4c1098703da1",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-04T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Infants, Parents and Carers Bill: Second Reading"
-        },
-        {
-          "id": "generated-64151f05843562fb5303",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-04T09:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Report from the Economic Affairs Committee: 'Preparing for an ageing society '"
-        },
-        {
-          "id": "generated-cca7ce23f24f948c8a0b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-07T13:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: National Resilience Committee"
-        },
-        {
-          "id": "generated-9acb189654d4a7d33743",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-07T13:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Housing, Communities and Local Government (including Topical Questions)"
-        },
-        {
-          "id": "generated-5b36bcf55410daa1d150",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-07T13:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Success of neighbourhood health services in reducing demand for hospital care and accessing primary care"
-        },
-        {
-          "id": "generated-f6b020b9f9384a88a16b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-07T14:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Select & Joint Committees: Public Accounts Committee"
-        },
-        {
-          "id": "generated-e9724dabb50b49e25456",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-07T15:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: e-petition 763161 relating to surrogacy law and legal parenthood"
-        },
-        {
-          "id": "generated-3c839fea1e6a0de526b4",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-07T17:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: e-petition 746640 relating to crimes motivated by misogyny and hate crime law"
-        },
-        {
-          "id": "generated-6b30f6e8325e0a1f5de7",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-08T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Safety of the Jewish community"
-        },
-        {
-          "id": "generated-4abbc144f5ba9ba57d37",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-08T09:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Science and Technology Committee"
-        },
-        {
-          "id": "generated-c7089fb352ad52df379b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-08T10:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Treasury (including Topical Questions)"
-        },
-        {
-          "id": "generated-8a9d56cb113d0575e0e8",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-08T13:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Review of the Data Protection (Adequacy) (United States of America) Regulations 2023"
-        },
-        {
-          "id": "generated-11831a27c6935cab2f3b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-08T14:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Economic Affairs Committee"
-        },
-        {
-          "id": "generated-0fc86d92edd879e2d556",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-08T14:45:00Z",
-          "status": "scheduled",
-          "title": "Lords - Grand Committee: Railways Bill - committee stage (day 1)"
-        },
-        {
-          "id": "generated-92628c8e9eae6fd742f7",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-09T10:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Women and Equalities (including Topical Questions)"
-        },
-        {
-          "id": "generated-41c88f2c7f857624ca6a",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-09T11:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Prime Minister's Question Time"
-        },
-        {
-          "id": "generated-289bf918314c2aec9a95",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-09T14:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Establishment of a regulatory regime for funeral directors"
-        },
-        {
-          "id": "generated-065bd00bb0954f39967a",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-09T15:15:00Z",
-          "status": "scheduled",
-          "title": "Lords - Grand Committee: Cyber Security and Resilience (Network and Information Systems) Bill - committee stage (day 4)"
-        },
-        {
-          "id": "generated-a8d5bfce26ec82e7fbaa",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-10T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Select & Joint Committees: Public Accounts Committee"
-        },
-        {
-          "id": "generated-ba948b24da319921b0ee",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-10T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Cabinet Office (including Topical Questions)"
-        },
-        {
-          "id": "generated-d436deeb7c2fc3f9f8ef",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-10T10:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Lord Jabbar"
-        },
-        {
-          "id": "generated-360d085ad6b4ab177dc7",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-10T11:15:00Z",
-          "status": "scheduled",
-          "title": "Lords - Grand Committee: Railways Bill - committee stage (day 2)"
-        },
-        {
-          "id": "generated-702cfe763fa9045fe9c3",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-10T12:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Potential merits of reform of the vascular sector"
-        },
-        {
-          "id": "generated-3fc55a18e0fba3797f62",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-10T14:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Contribution of fathers and positive male role models to families and society"
-        },
-        {
-          "id": "generated-2fca4653d79c05abf689",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-11T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Terminally Ill Adults (End of Life) Bill: Second Reading"
-        },
-        {
-          "id": "generated-186224f03292ab5c3440",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-11T09:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Leaseholder Remediation (Building Safety) Bill - second reading"
-        },
-        {
-          "id": "generated-f56821d1d013face3abe",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-14T13:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Education (including Topical Questions)"
-        },
-        {
-          "id": "generated-a6fc74c7cef53260b6d8",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-14T13:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Combatting international fraud during the UK's two-year presidency of the Financial Action Task Force"
-        },
-        {
-          "id": "generated-77666a801e6d0658bab5",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-14T14:00:00Z",
-          "status": "scheduled",
-          "title": "Commons - Select & Joint Committees: Public Accounts Committee"
-        },
-        {
-          "id": "generated-2501bc18c3772729aa9d",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-14T15:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: e-petition 762640 relating to a referendum on public ownership of the water sector"
-        },
-        {
-          "id": "generated-c6f8a8315982738a841b",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-15T08:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Westminster Hall: Building safety remediation of residential buildings"
-        },
-        {
-          "id": "generated-235414992fecca98e4dc",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-15T10:30:00Z",
-          "status": "scheduled",
-          "title": "Commons - Main Chamber: Justice (including Topical Questions)"
-        },
-        {
-          "id": "generated-8156f0de8eddf842f972",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-15T13:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Target of 1.5 million new homes in this Parliament"
-        },
-        {
-          "id": "generated-1f1fcca4b0a2b1b27f4c",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-15T14:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: Economic Affairs Committee"
-        },
-        {
-          "id": "generated-c900437ad84cfba2e8b0",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-16T09:30:00Z",
-          "status": "scheduled",
-          "title": "Lords - Select & Joint Committees: International Relations and Defence Committee"
-        },
-        {
-          "id": "generated-274d54080ed8fc0a4754",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-16T14:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Prisoners released on licence serving indeterminate sentences for public protection"
-        },
-        {
-          "id": "generated-86e546c9222573c0df00",
-          "identifier_kind": "generated",
-          "source_timezone": "Europe/London",
-          "start": "2026-09-17T10:00:00Z",
-          "status": "scheduled",
-          "title": "Lords - Main Chamber: Objectives for the G20 summit in 2027"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "generated-8e8a6564b0a8e8b0ccd8",
-      "next_event_start": "2026-09-01T10:00:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-09-01T10:00:00Z",
-      "next_event_title": "Lords - Select & Joint Committees: Industry and Regulators Committee",
-      "scraper": "uk-parliament",
-      "source_url": "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-08-24&endDate=2026-09-24"
-    },
-    "un-web-tv": {
-      "confidence": "official_live_schedule",
-      "current_event_id": "143760",
-      "current_event_language": "en",
-      "current_event_start": "2026-08-24T22:30:00Z",
-      "current_event_status": "live",
-      "current_event_time": "Live now",
-      "current_event_title": "Security Council Media Stakeout",
-      "current_event_url": "https://webtv.un.org/en/asset/k1c/k1cyolgn7e",
-      "events": [
-        {
-          "id": "143760",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-24T22:30:00Z",
-          "status": "live",
-          "title": "Security Council Media Stakeout",
-          "url": "https://webtv.un.org/en/asset/k1c/k1cyolgn7e"
-        },
-        {
-          "id": "143029",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-24T23:00:00Z",
-          "status": "live",
-          "title": "(2nd meeting) Executive Board of UNDP, UNFPA and UNOPS (Second regular session 2026)",
-          "url": "https://webtv.un.org/en/asset/k17/k17fex6nlu"
-        },
-        {
-          "id": "143762",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-24T23:00:00Z",
-          "status": "live",
-          "title": "Maintenance of peace and security of Ukraine - Security Council, 10212th meeting",
-          "url": "https://webtv.un.org/en/asset/k1t/k1tdvfo3eo"
-        },
-        {
-          "id": "143789",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-25T05:45:00Z",
-          "status": "scheduled",
-          "title": "Joint Press Conference for the Indigenous Peoples Caucus, Gender Caucus, Youth Caucus, and Civil Society Organizations - Press Conference, UNCCD COP17",
-          "url": "https://webtv.un.org/en/asset/k12/k12the4mnc"
-        },
-        {
-          "id": "143484",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-25T06:00:00Z",
-          "status": "scheduled",
-          "title": "Ministerial dialogue on Drought Resilience - UNCCD COP17",
-          "url": "https://webtv.un.org/en/asset/k15/k15h2110vk"
-        },
-        {
-          "id": "143631",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-25T06:30:00Z",
-          "status": "scheduled",
-          "title": "WWF: Landscapes of Life – a nature-positive global agenda to protect, manage and restore grasslands, savannahs and rangelands - Press Conference, UNCCD COP17",
-          "url": "https://webtv.un.org/en/asset/k14/k14fqqjsmz"
-        },
-        {
-          "id": "143546",
-          "identifier_kind": "official",
-          "language": "en",
-          "source_timezone": "America/New_York",
-          "start": "2026-08-25T07:30:00Z",
-          "status": "scheduled",
-          "title": "Official Launch of the Drought Resilience Investment Facility (DRIF): Accelerating Finance for Drought Resilience, Water Security and Land Restoration - Action Dome, UNCCD COP17",
-          "url": "https://webtv.un.org/en/asset/k1s/k1s4uvyoet"
-        }
-      ],
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "next_event_id": "143789",
-      "next_event_language": "en",
-      "next_event_start": "2026-08-25T05:45:00Z",
-      "next_event_status": "scheduled",
-      "next_event_time": "2026-08-25T05:45:00Z",
-      "next_event_title": "Joint Press Conference for the Indigenous Peoples Caucus, Gender Caucus, Youth Caucus, and Civil Society Organizations - Press Conference, UNCCD COP17",
-      "next_event_url": "https://webtv.un.org/en/asset/k12/k12the4mnc",
-      "scraper": "un-webtv-schedule",
-      "source_url": "https://webtv.un.org/en/schedule/2026-08-24"
-    }
-  },
-  "counts": {
-    "channels": 7,
-    "complete": 3,
-    "current": 3,
-    "empty": 5,
-    "error": 1,
-    "events": 159,
-    "events_with_end": 71,
-    "events_with_official_id": 9,
-    "events_with_url": 9,
-    "fresh_channels": 7,
-    "ok": 7,
-    "stale_channels": 0,
-    "upcoming": 7
-  },
-  "generated_at": "2026-08-24T20:38:04Z",
-  "refresh_interval_hours": 6,
-  "schema_version": 3,
-  "sources": {
-    "brazil-tv-camara": {
-      "channel_count": 1,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-08-25T02:45:00Z",
-      "coverage_start": "2026-08-24T03:00:00Z",
-      "event_count": 32,
-      "events_with_end": 31,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://www.camara.leg.br/tv/programacao-semanal"
-      ],
-      "used_last_good": false
-    },
-    "canada-harmony": {
-      "channel_count": 1,
-      "channels_expected": 2,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-09-28T22:00:00Z",
-      "coverage_start": "2026-08-27T14:00:00Z",
-      "event_count": 2,
-      "events_with_end": 0,
-      "events_with_official_id": 2,
-      "events_with_url": 2,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://parlvu.parl.gc.ca/Harmony/en",
-        "https://senparlvu.parl.gc.ca/Harmony/"
-      ],
-      "used_last_good": false
-    },
-    "cpac": {
-      "channel_count": 1,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-08-25T20:04:00Z",
-      "coverage_start": "2026-08-24T12:46:15Z",
-      "event_count": 35,
-      "events_with_end": 34,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://www.cpac.ca/schedule/"
-      ],
-      "used_last_good": false
-    },
-    "ebs-grid": {
-      "channel_count": 1,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-08-25T10:00:00Z",
-      "coverage_start": "2026-08-24T10:15:10Z",
-      "event_count": 6,
-      "events_with_end": 6,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20260824&dateTo=20260825&withCompleteThesaurusData=true"
-      ],
-      "used_last_good": false
-    },
-    "europarl-webstreaming": {
-      "channel_count": 0,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "event_count": 0,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "no_events_in_window",
-      "status": "empty",
-      "urls": [
-        "https://multimedia.europarl.europa.eu/_next/data/mn1XdpefUAeUcPpwTz-7w/en/webstreaming.json?view=month&d=2026-08-24"
-      ],
-      "used_last_good": false
-    },
-    "italian-senate-palimpsest": {
-      "channel_count": 0,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "event_count": 0,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "no_events_in_window",
-      "status": "empty",
-      "urls": [
-        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-08-24T00%3A00%3A00&field_date_value%5Bmax%5D=2026-08-25T00%3A00%3A00",
-        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-08-25T00%3A00%3A00&field_date_value%5Bmax%5D=2026-08-26T00%3A00%3A00",
-        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-08-26T00%3A00%3A00&field_date_value%5Bmax%5D=2026-08-27T00%3A00%3A00"
-      ],
-      "used_last_good": false
-    },
-    "new-zealand-parliament": {
-      "channel_count": 0,
-      "channels_expected": 1,
-      "consecutive_failures": 1,
-      "error": "official calendar returned a bot-protection page",
-      "event_count": 0,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "fetch_or_parse_error",
-      "status": "error",
-      "urls": [
-        "https://www3.parliament.nz/en/calendar/"
-      ],
-      "used_last_good": false
-    },
-    "ontario-calendar": {
-      "channel_count": 0,
-      "channels_expected": 6,
-      "consecutive_failures": 0,
-      "event_count": 0,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "no_events_in_window",
-      "status": "empty",
-      "urls": [
-        "https://www.ola.org/en/legislative-business/calendar"
-      ],
-      "used_last_good": false
-    },
-    "portugal-open-data-agenda": {
-      "channel_count": 1,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-09-10T14:00:00Z",
-      "coverage_start": "2026-09-08T14:30:00Z",
-      "event_count": 6,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
-        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=I7d%2ffCscv6ZloBxMJvgMNbi60buAX%2bz9SwVX2nsCiAD7K0KdQsuj30FcVYgusTHJEOELh2cnmjYst8aZi7al9zXZscY%2feiIqgWwrUj7uqHJV2YkuMiTgVzlrLql%2b3FHb9jMUAoV4oQ%2b9EVWFhD9Ns9pSyZ%2bgmLZoxYHz0UVKupHX1Tu6lr74VloufwLdiHHmxlukPyVH0HvyRMbfNBemY%2b6laWCmx7vZwoeNJaSR7ybDBVgj8HXZX9fz3NVDl2mM88acbiin%2bUz2ZO9aSlDu471n8cYiWlqf1i7Gg0pulkmP0x1N1dy%2bjXvtmJO4f2Bh",
-        "https://app.parlamento.pt/webutils/docs/doc.txt?path=19rykiJLyzvGLQ0DGf2MqQG0Rwu56FAvl1w6NnvpjPCuZp%2bQQmb4KKXH0v4%2bIiyp5lldTW%2b8eL0KwbL67edis73QIAipTIIXU%2bcmTCpSY3MfdqQekT%2bpkKC7qISiaBwrv1FEglE3Jyye7ECkexScEUP6fWkV7zy9Il263IeiUeD4IGobX56mWM3EAGxGN%2f9lNfxx9jaN%2bvV4t0i6250qKdyIuP0RErnlSEWnU%2bICr0hk6ytS%2bwKggbYPGTd5norCtBUJUJTbHpv0WlGOVkuJHbdQLqxKBuK%2fpTkd4RiOFQH4%2bk1zA50YrzlQsHJ2LjHTG1hB1D17radtJInhVN7BuW8QRx96DQt89NG1SNjhJ%2bqQTYhZgDuWkfGXqVvU%2fTPHAdMN0CMZKp971MWe31XyZw%3d%3d&fich=AgendaParlamentar_json.txt&Inline=true"
-      ],
-      "used_last_good": false
-    },
-    "quebec-webdiffusion": {
-      "channel_count": 0,
-      "channels_expected": 14,
-      "consecutive_failures": 0,
-      "event_count": 0,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "no_events_in_window",
-      "status": "empty",
-      "urls": [
-        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeEnDirect",
-        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir"
-      ],
-      "used_last_good": false
-    },
-    "uk-parliament": {
-      "channel_count": 1,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-09-17T10:00:00Z",
-      "coverage_start": "2026-09-01T10:00:00Z",
-      "event_count": 71,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-08-24&endDate=2026-09-24"
-      ],
-      "used_last_good": false
-    },
-    "un-webtv-schedule": {
-      "channel_count": 1,
-      "channels_expected": 1,
-      "consecutive_failures": 0,
-      "coverage_end": "2026-08-25T07:30:00Z",
-      "coverage_start": "2026-08-24T22:30:00Z",
-      "event_count": 7,
-      "events_with_end": 0,
-      "events_with_official_id": 7,
-      "events_with_url": 7,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "last_success_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "events",
-      "status": "ok",
-      "urls": [
-        "https://webtv.un.org/en/schedule/2026-08-24"
-      ],
-      "used_last_good": false
-    },
-    "youtube-live": {
-      "channel_count": 0,
-      "channels_expected": 3,
-      "consecutive_failures": 0,
-      "event_count": 0,
-      "events_with_end": 0,
-      "events_with_official_id": 0,
-      "events_with_url": 0,
-      "fetched_at": "2026-08-24T20:38:04Z",
-      "outcome_detail": "no_events_in_window",
-      "status": "empty",
-      "urls": [
-        "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
-        "https://www.youtube.com/@AUSParliamentLive/live",
-        "https://www.youtube.com/@AsambleaCRC/live"
-      ],
-      "used_last_good": false
-    }
-  }
 };

@@ -58,7 +58,8 @@ As of 2026-10-24 (local working tree):
 - France's National Assembly now has `no_third_party_reuse`: its current notice
   distinguishes conditionally reusable official documents from multimedia that
   requires prior agreement. Hyperlinks remain conditionally permitted. The
-  source was already research-only; no active player is disabled by this correction.
+  old extracted feed was research-only. The subsequent publication review replaces
+  it with a confirmed official-page link; no native player is enabled.
   [Dated correction and sources](../reports/discovery/2026-10-24-service-review-france-rights-correction.json).
 - Two Tweede Kamer meeting feeds now have conditional reuse evidence from the
   current Dutch disclaimer and its linked audiovisual licence. The occasional
@@ -77,8 +78,8 @@ As of 2026-10-24 (local working tree):
   `no_third_party_reuse`, while retaining its official viewing link. A legislature's
   provider designation is separate from the provider's audiovisual rights.
   [Current provider conditions](../reports/discovery/2026-10-24-service-review-us-chambers-c.json).
-- 168 of 243 catalogue entries remain permission-pending: 18 official-vendor
-  HLS, three first-party HLS, 146 official pages and one DASH research record.
+- 181 of 256 catalogue entries remain permission-pending: 16 official-vendor
+  HLS, three first-party HLS, 161 official pages and one DASH research record.
 - The previous 28-entry review queue remains classified in the dated report;
   it is a historical subset, not the current total.
 - Later official-page additions retain source-specific terms notes in the

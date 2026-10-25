@@ -1,0 +1,298 @@
+{
+  "checked_at": "2026-10-25T00:49:51Z",
+  "reviewed_on": "2026-10-24",
+  "scope": "Scoped official-viewing publication and existing research-feed policy follow-up, based on dated source evidence. This is a review, not a fresh replay of all recordings or a universal current-live/rights test.",
+  "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json",
+  "results": [
+    {
+      "id": "belgium-house-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own House homepage designates this portal. The 22 October 2026 plenary (56-020396-P146) shows substantive chamber proceedings initially and after a 1200-second seek in Chromium and WebKit. Original/French/Dutch source controls and visible VGT/LSFB interpreter insets are observed; actual audible tracks and interpreting accuracy are untested.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One plenary date sampled; committee and current-live coverage remain unverified.",
+        "No verified programme feed or XMLTV parser; agenda topics/speaker markers are not a complete broadcast guide."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-national-gaps.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "czech-senate-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One muted dated archive sampled in Chromium; other engines, audible tracks, committees, all rooms and current live remain unverified.",
+        "Calendar and weekly-programme navigation are programme leads, without certified end times, mapping or XMLTV."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-national-europe.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-alava-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institution designates its Mediateca. The 21 October 2026 plenary and 23 October Culture/Sport committee decode initially in Chromium and WebKit and after a 1200-second seek in Chromium. Visible subtitle text is observed. WebKit later seeks do not advance; committee multi-file continuity is not certified.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "WebKit later-seek stalls and committee multi-file continuity remain unresolved.",
+        "Actual audio tracks, subtitle accuracy, current live/all-room coverage and XMLTV are unverified.",
+        "Committee duration differs from start/end span; do not derive uninterrupted EPG timings."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-basque-foral.json",
+        "reports/discovery/2026-10-24-service-review-basque-playback-followup.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-bizkaia-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institutional navigation and 2 October launch notice designate the Mediateca. The 6 October 2026 plenary decodes initially and after a 1200-second seek in Chromium and WebKit. Its timeline clock varies with viewer timezone; the Madrid source header stays 09:30. Separate dated committee listings exist but their media were not decoded.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One plenary date sampled; committee recordings, live continuity and actual audio/translation/caption variants remain unverified.",
+        "Upcoming HTML entries coexist with a template placeholder; no XMLTV parser or programme-data licence verified."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-basque-foral.json",
+        "reports/discovery/2026-10-24-service-review-basque-playback-followup.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-gipuzkoa-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own institutional media links designate the Seneca portal. The 14 October 2026 plenary and 22 October Care/Social Policies committee both decode initially and advance after a 1200-second seek in Chromium and WebKit, showing the plenary speaker and committee discussion.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "The committee camera clock differs from its header; exact EPG start remains unresolved.",
+        "Linked RSS contains February 2016 entries and is excluded from programme ingestion.",
+        "Actual audio tracks, complete captions, live/all-room coverage and programme-data transformations remain unverified."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-basque-foral.json",
+        "reports/discovery/2026-10-24-service-review-basque-playback-followup.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "czech-moravian-silesian-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own current 2024–2028 assembly index links programmes, materials, resolutions, minutes and recordings. Fresh 24 October source-native sampling of the 16 September 2026 ninth session decodes initially in Chromium and WebKit; Chromium also advances after a 1200-second seek. The inspected later frame shows the assembly dais and named Josef Bělica agenda-programme discussion marker. WebKit later seeking stalls at exactly1200 seconds; no continuous-live or complete-recording claim is made.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One muted archive date sampled; current live, committee/all-room scope, full continuity and accessibility remain unverified. WebKit later seek stalls; screenshot capture also times out waiting for source fonts.",
+        "Earlier planned 15 September announcement differs from the 16 September occurrence record. No EPG times are inferred from the old announcement."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-czech-regions.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "switzerland-geneva-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Grand Conseil navigation designates the video archive. 1 October and 22 January 2026 clips show Stéphane Florey on PL13730-A and Alia Chaker Mangeat on PL13578-B in Chromium; January also decodes in WebKit. October WebKit samples stall or time out.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "October WebKit playback remains unresolved.",
+        "Current live, full room inventory, audible tracks and complete accessibility are not certified."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-swiss-held-service-dispositions.json",
+        "reports/health/2026-10-24-swiss-next-player-navigation.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "switzerland-st-gallen-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One dated speaker clip in Chromium; second sitting and WebKit sample remain unresolved.",
+        "Current live, full rooms, audible tracks and accessibility remain unverified."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-swiss-held-service-dispositions.json",
+        "reports/health/2026-10-24-swiss-next-player-navigation.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "germany-mecklenburg-vorpommern-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. The own-designated Landtag channel has a substantive 29 May 2026 public inquiry-commission recording, with chair/officials and remote witnesses, decoded in Chromium and WebKit. This is committee coverage; the other sampled youth debate is excluded from the legislative evidence.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One inquiry-commission sample is substantive; the other is a school youth-debate competition. Need a further actual elected-legislature business recording.",
+        "Current live, all rooms, full recording continuity, audible language tracks and comprehensive accessibility remain unverified.",
+        "No implemented EPG/XMLTV parser or new IPTV endpoint is supplied."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+        "reports/discovery/2026-10-24-remaining-positive-current-dispositions.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "italy-south-tyrol-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "Specific LandtagQ458185 is recovered and primary multilingual websites match. One14October2026speech is substantive;15October first-frame posture and a later listener sample do not establish a separate speech. Legal page remains a loading shell.",
+        "Current live, all rooms, full recording continuity, audible language tracks and comprehensive accessibility remain unverified.",
+        "No implemented EPG/XMLTV parser or new IPTV endpoint is supplied."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+        "reports/discovery/2026-10-24-remaining-positive-current-dispositions.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "italy-campania-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own regional assembly navigation designates this channel for its sittings. One 27 August 2026 afternoon sitting shows chair Massimiliano Manfredi conducting business under a dated assembly caption, decoded in Chromium and WebKit.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "One27August2026plenary chair sample is confirmed. Further substantive archive/continuity evidence and exact applicability of siteCCBY4to externally hosted session video remain open.",
+        "Current live, all rooms, full recording continuity, audible language tracks and comprehensive accessibility remain unverified.",
+        "No implemented EPG/XMLTV parser or new IPTV endpoint is supplied."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+        "reports/discovery/2026-10-24-remaining-positive-current-dispositions.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "south-africa-eastern-cape-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own provincial legislature navigation designates this channel. The 30 October 2025 House sitting shows a member reading at the chamber desk microphone and decodes in Chromium and WebKit. This is explicitly historical archive coverage; the separate disability public-participation session does not establish current ordinary plenary service.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "A30October2025ordinary House sample is confirmed; the other is a thematic public-participation session. Historical footage and participation are not asserted to be current ordinary coverage.",
+        "Current live, all rooms, full recording continuity, audible language tracks and comprehensive accessibility remain unverified.",
+        "No implemented EPG/XMLTV parser or new IPTV endpoint is supplied."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+        "reports/discovery/2026-10-24-remaining-positive-current-dispositions.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "taiwan-kinmen-recordings",
+      "status": "ok",
+      "note": "Scoped official-viewing publication review of retained dated evidence; no full live, guide-data or redistribution certification. Own county council navigation designates this channel. Two member/executive exchanges decode in Chromium and WebKit. Their titles label 22 and 23 October 2025; recent 2026 upload timing is not used as a meeting date. Listed as an official archive without a current-live or 2026 sitting claim.",
+      "publication_decision": "publish_scoped_official_link",
+      "unresolved": [
+        "Two council/official exchanges decode. Titles label22/23October2025while upload timing is recent in2026; that can represent historical uploads, not inherently a contradiction. Do not infer2026meeting dates from upload age. Further dated-source corroboration remains open. Ordinary linking permission does not grant video copying/editing/transmission.",
+        "Current live, all rooms, full recording continuity, audible language tracks and comprehensive accessibility remain unverified.",
+        "No implemented EPG/XMLTV parser or new IPTV endpoint is supplied."
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-23-remaining-positive-dispositions.json",
+        "reports/discovery/2026-10-24-remaining-positive-current-dispositions.json"
+      ],
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-congreso-directo-1",
+      "status": "warning",
+      "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-congreso-directo-2",
+      "status": "warning",
+      "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-congreso-directo-3",
+      "status": "warning",
+      "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-congreso-directo-4",
+      "status": "warning",
+      "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "spain-congreso-directo-5",
+      "status": "warning",
+      "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "france-national-assembly",
+      "status": "ok",
+      "note": "Current own video portal exposes live and on-demand navigation and explicitly reports no broadcast at inspection. Retire the obsolete extracted HLS candidate from the published route; link to official video pages. The source expressly permits contextual hyperlinks; prior agreement for multimedia reuse remains separate.",
+      "publication_decision": "publish_official_viewing_link",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "luxembourg-chamber-tv",
+      "status": "ok",
+      "note": "Current Chamber homepage designates its Vidéos/direct route and lists dated public sittings with broadcast links. Replace the unverified old extracted HLS candidate with the own viewing-page link; current all-stream playback and reuse remain unverified.",
+      "publication_decision": "publish_official_viewing_link",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "estonia-riigikogu-live-2",
+      "status": "warning",
+      "note": "Own Live2 page responds; its specific media rendition remains unverified/previously404. General official navigation is distinct from direct-signal validation.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "mongolia-parliament-tv",
+      "status": "warning",
+      "note": "Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "ontario-house-en-cc",
+      "status": "warning",
+      "note": "Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "nunavut-legislative-assembly-tv",
+      "status": "ok",
+      "note": "Current own webcast page lists live and English/original archive viewing links, including 23 October 2026. Replace the obsolete iSi LIVE extracted HLS candidate with official viewing navigation. One index row reads 2016-10-22 while its linked filename says 2026: no EPG date is inferred from that conflict.",
+      "publication_decision": "publish_official_viewing_link",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "el-salvador-legislative-assembly",
+      "status": "warning",
+      "note": "Own institutional homepage now responds with normal browser TLS and designates TV AL. This does not by itself decode the selected live signal or settle its older endpoint TLS/rights issues; preserve specific feed hold pending its actual source-player check.",
+      "publication_decision": "retain_specific_feed_research_hold",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    },
+    {
+      "id": "swiss-national-council-live",
+      "status": "ok",
+      "note": "Current own National Council viewing page identifies the live debate service and warns of automatically generated subtitle errors. Replace the stale extracted Akamai HLS candidate with the supported official page; active-sitting media and independently redistributed endpoints remain unverified.",
+      "publication_decision": "publish_official_viewing_link",
+      "publication_report": "reports/discovery/2026-10-24-institution-publication-decisions.json"
+    }
+  ]
+}

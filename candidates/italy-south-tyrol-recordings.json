@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech.",
+    "HTTP200 but captured legal page remains a Loading shell with publisher contact information; actual substantive reuse notice not established. Do not treat200 as a reviewed licence.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "italy-south-tyrol-recordings",
+    "name": "South Tyrol Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "South Tyrol",
+    "legislature": "Consiglio della Provincia Autonoma di Bolzano / Südtiroler Landtag",
+    "external_ids": {
+      "wikidata_qid": "Q458185",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q458185",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2533685446; these claims are identifier evidence, not media/rights certification."
+      }
+    ],
+    "language": "German / Italian / Ladin",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UC5bOVQNvQJklEksWtmpYByg",
+    "provenance_note": "Own multilingual provincial assembly sites designate this channel. The 14 October 2026 plenary shows a chamber member reading/speaking at a lit desk microphone in Chromium and WebKit. The 15 October samples show chamber context/listening and are not asserted to be a second independently confirmed speech.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.landtag-bz.org/de/home",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "HTTP200 but captured legal page remains a Loading shell with publisher contact information; actual substantive reuse notice not established. Do not treat200 as a reviewed licence.",
+      "evidence": [
+        "https://www.landtag-bz.org/de/home",
+        "https://www.youtube.com/channel/UC5bOVQNvQJklEksWtmpYByg"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

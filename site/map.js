@@ -6,9 +6,9 @@ const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
-const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261024-recording-reconciliation", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261024-recording-reconciliation", appScriptUrl);
-const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261024-recording-reconciliation", appScriptUrl);
+const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261024-publication", appScriptUrl);
+const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261024-publication", appScriptUrl);
+const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261024-publication", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 

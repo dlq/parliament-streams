@@ -1,0 +1,68 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification.",
+    "No general independent audiovisual reuse, direct-player, rebroadcast or programme-data grant has been established from the source-specific review. Use the institution-designated audiovisual minutes as an external viewing link.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "switzerland-st-gallen-recordings",
+    "name": "St Gallen Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "St Gallen",
+    "legislature": "Kantonsrat des Kantons St. Gallen",
+    "external_ids": {
+      "wikidata_qid": "Q2082614",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2082614",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Retained Wikidata entity revision 2512733038; these claims are identifier evidence, not media/rights certification."
+      }
+    ],
+    "language": "German",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://sg.recapp.ch/shareparl/",
+    "provenance_note": "Own Kantonsrat navigation designates its audiovisual minutes. A 2 March 2026 court-law agenda speech by Schulthess-Grabs decodes in Chromium. Default zero-duration Unterlagen entries are document markers, not failed video. The separately attempted 3 March sample did not complete decoded-frame verification.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No general independent audiovisual reuse, direct-player, rebroadcast or programme-data grant has been established from the source-specific review. Use the institution-designated audiovisual minutes as an external viewing link.",
+      "evidence": [
+        "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+        "https://sg.recapp.ch/shareparl/"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

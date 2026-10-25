@@ -31,5 +31,23 @@
     "https://api.github.com/repos/dlq/parliament-streams/rulesets?includes_parents=true",
     "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository",
     "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets"
-  ]
+  ],
+  "activation_followup": {
+    "reviewed_on": "2026-10-24",
+    "authorization": "User requested protection against force pushes and deletion while keeping ordinary pushes and deployments working.",
+    "ruleset_id": 25801215,
+    "ruleset_name": "Protect main history",
+    "url": "https://github.com/dlq/parliament-streams/rules/25801215",
+    "enforcement": "active",
+    "target": "refs/heads/main",
+    "bypass_actors": [],
+    "effective_rules": [
+      "deletion",
+      "non_fast_forward"
+    ],
+    "ordinary_updates_allowed": true,
+    "pull_request_or_status_check_requirement_added": false,
+    "verification": "Read-only GET /repos/dlq/parliament-streams/rules/branches/main returned exactly deletion and non_fast_forward from this repository ruleset.",
+    "earlier_current_block_is_pre_activation_snapshot": true
+  }
 }

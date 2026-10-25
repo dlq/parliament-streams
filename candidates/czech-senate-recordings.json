@@ -1,0 +1,75 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-24",
+  "updated_on": "2026-10-24",
+  "decision_notes": [
+    "Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies.",
+    "No source-specific grant for embedding, direct playback, rebroadcast, recording/copying, audiovisual reuse or programme-data republication was established. Link to the official Senate archive; further uses require separate review.",
+    "Scoped official-link readiness reviewed; current live, full-service accessibility, EPG and independent redistribution remain separate open dimensions. Evidence: reports/discovery/2026-10-24-institution-publication-decisions.json"
+  ],
+  "channel": {
+    "id": "czech-senate-recordings",
+    "name": "Czech Senate Legislative Recordings",
+    "jurisdiction_level": "national",
+    "country_or_region": "Czech Republic",
+    "legislature": "Senát Parlamentu České republiky",
+    "external_ids": {
+      "wikidata_qid": "Q389423",
+      "ipu_country_code": "CZ",
+      "ipu_parliament_code": "CZ",
+      "ipu_chamber_code": "CZ-UC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q389423",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Specific legislature identifier reconciled with its own institutional name and source designation. Wikidata own item page names the exact national chamber and country; independently matched to IPU and own chamber site on 24 October 2026."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/CZ/CZ-UC01/",
+        "checked_on": "2026-10-24",
+        "confidence": "high",
+        "notes": "Exact national chamber code from the retained current IPU national-chamber directory, independently matched to the own site."
+      }
+    ],
+    "language": "Czech",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.senat.cz/cinnost/webtv/archiv.php",
+    "provenance_note": "Own Senate homepage links its dated archive. The 21 October 2026 Senate recording decoded substantive chamber/dais and lectern activity in Chromium at the linked offset and after a later seek. This is Senate-specific evidence, independent of the Chamber of Deputies.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected source-native muted samples establish only the described video scope. Actual audible tracks, language completeness, caption accuracy and complete signing/audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.senat.cz/cinnost/kalend/index.php",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "No source-specific grant for embedding, direct playback, rebroadcast, recording/copying, audiovisual reuse or programme-data republication was established. Link to the official Senate archive; further uses require separate review.",
+      "evidence": [
+        "https://www.senat.cz/",
+        "https://www.senat.cz/cinnost/webtv/archiv.php"
+      ],
+      "recommendation": "Use the official source page for the stated recorded-business scope. Check item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

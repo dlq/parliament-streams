@@ -19,6 +19,7 @@ from the repository root unless stated otherwise.
 | [Operational institution register](../data/discovery/README.md) | Current identities, authority decisions, exclusions and country crosswalks |
 | [Institution inventory reconciliation](../reports/discovery/2026-10-24-inventory-reconciliation.md) | 71-country crosswalk, resolved scope decisions and named legal holds |
 | [Current eligible service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md) | 940 eligible identities, exact catalogue crosswalks and renewed per-use metadata/media/EPG/rights checks |
+| [Scoped publication decisions](../reports/discovery/2026-10-24-institution-publication-decisions.json) | 324 explicit decisions, 13 new official links, exact crosswalks and remaining holds |
 | [Earlier service validation cohort](../reports/discovery/2026-10-24-current-validation-register.md) | Historical 652-body cohort, 243 catalogue sources and 23 scoped institutional URL gaps |
 | [Provincial metadata and proceedings](../reports/discovery/2026-10-23-completion-review.md) | Four further viewing services; 40 more institutional routes resolved; 78 URL gaps remain |
 | [Metadata follow-up and Corrientes](../reports/discovery/2026-10-23-metadata-followup.md) | Two chamber viewing links, 57 institutional routes resolved and 118 remaining URL gaps |

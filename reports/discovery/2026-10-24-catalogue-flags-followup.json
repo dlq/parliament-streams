@@ -1,0 +1,806 @@
+{
+  "reviewed_on": "2026-10-24",
+  "scope": "All13 prior neutral catalogue flags plus11 newly promoted subnational jurisdictions.",
+  "method": "Reconciled prior primary evidence, targeted current primary searches and current Commons file metadata/artwork. Source files downloaded with shared cache, pacing and cooldown. Full jurisdiction flags illustrate identity only; copyright licence, official-symbol use rules and permission to use a symbol as branding remain distinct. Do not replace an uncertain flag with a fabricated flag, coat-of-arms banner or predecessor design.",
+  "supersedes_only_flag_dispositions_in": [
+    "reports/discovery/2026-10-24-catalogue-flag-coverage.json",
+    "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+    "reports/discovery/2026-10-24-catalogue-flags-americas.json"
+  ],
+  "summary": {
+    "jurisdictions_reviewed": 24,
+    "assets_added": 14,
+    "prior_neutral_resolved": 4,
+    "new_jurisdictions_flagged": 10,
+    "neutral_retained": 10,
+    "svg_safety_passed": 14
+  },
+  "records": [
+    {
+      "jurisdiction": "Tokushima",
+      "catalogue_id": "japan-tokushima-recordings",
+      "key": "tokushima",
+      "outcome": "asset_added",
+      "asset_filename": "tokushima.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Tokushima_Prefecture.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Tokushima_Prefecture.svg",
+      "creator": "Guilherme Paula; Mike Rohsopht",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own January2026 answer expressly answers only for the emblem. The earlier inference of a blanket flag prohibition is removed; retain respectful informational full-flag depiction, not an emblem representing this project.",
+      "sources": [
+        {
+          "url": "https://www.pref.tokushima.lg.jp/opinion/7309986/",
+          "finding": "Own January2026 answer expressly answers only for the emblem. The earlier inference of a blanket flag prohibition is removed; retain respectful informational full-flag depiction, not an emblem representing this project."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tokushima_Prefecture.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "908a5a67cc63a2266a9092675b34fdd4f4ee8df01e5d5d90562e1a2a7cb90a5b",
+      "sha256": "98fc13a82576f541896a45eb0fa20513bc5b763b08c4e8b446a86da6fbcfea23",
+      "bytes": 342,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "use_scope": "Informational depiction of the complete jurisdiction flag. The listed source conditions remain recorded; no contact, approval or blanket symbol-use clearance is asserted. Not used as project branding, a seal, or an endorsement.",
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Iwate",
+      "catalogue_id": "japan-iwate-recordings",
+      "key": "iwate",
+      "outcome": "asset_added",
+      "asset_filename": "iwate.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Iwate_Prefecture.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Iwate_Prefecture.svg",
+      "creator": "Monaneko; Zscout370; Mike Rohsopht",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own source identifies the full flag: a white emblem centred on a greenish-grey field. The attached approval instruction names emblem use, not a blanket ban on informational full-flag illustration.",
+      "sources": [
+        {
+          "url": "https://www.pref.iwate.jp/kensei/profile/1000650.html",
+          "finding": "Own source identifies the full flag: a white emblem centred on a greenish-grey field. The attached approval instruction names emblem use, not a blanket ban on informational full-flag illustration."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Iwate_Prefecture.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "a2b4a3c0311aa0690cf09e22f588b9c60258f19d2f38bfe89c54f567724a67ed",
+      "sha256": "292437cd5d42dc760dcdf7b2ad0912224b7029de27b60ba8724227c2b53e5432",
+      "bytes": 459,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "use_scope": "Informational depiction of the complete jurisdiction flag. The listed source conditions remain recorded; no contact, approval or blanket symbol-use clearance is asserted. Not used as project branding, a seal, or an endorsement.",
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Fukushima",
+      "catalogue_id": "japan-fukushima-recordings",
+      "key": "fukushima",
+      "outcome": "asset_added",
+      "asset_filename": "fukushima.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Fukushima_Prefecture.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Fukushima_Prefecture.svg",
+      "creator": "Monaneko",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own source confirms orange-red field and offset white emblem. It asks outside users to contact the prefecture; this is retained as a use note rather than falsely described as a universal prohibition on depicting the flag.",
+      "sources": [
+        {
+          "url": "https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kensyo-hata.html",
+          "finding": "Own source confirms orange-red field and offset white emblem. It asks outside users to contact the prefecture; this is retained as a use note rather than falsely described as a universal prohibition on depicting the flag."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Fukushima_Prefecture.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "091d8d7b2c973739f7346183a19b9ab944e6c38d06f663900bcdba99d7406686",
+      "sha256": "2bba18634ef897a3196f090c3082f3799f483bb94875e41707192c934d3c9bf5",
+      "bytes": 669,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "use_scope": "Informational depiction of the complete jurisdiction flag. The listed source conditions remain recorded; no contact, approval or blanket symbol-use clearance is asserted. Not used as project branding, a seal, or an endorsement.",
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Magdalena",
+      "catalogue_id": "colombia-magdalena-recordings",
+      "key": "magdalena-department",
+      "outcome": "asset_added",
+      "asset_filename": "magdalena-department.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Magdalena.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Magdalena.svg",
+      "creator": "Fibonacci; 2020 stripe-order correction by Bdarcyflynn",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reviewed_on": "2026-10-24",
+      "finding": "Government UPRA regional document page3 visually matches six alternating blue/red stripes and thirty white stars arranged as a larger star. Current rendered Commons page names Magdalena and credits Fibonacci; stale API description/categories naming Norte de Santander are contradicted by the actual artwork and current file page.",
+      "sources": [
+        {
+          "url": "https://upra.gov.co/Kit_Territorial/2-%20Informaci%C3%B3n%20por%20Departamentos/MAGDALENA/2-%20Documento%20Regional%20UPRA%20Magdalena.pdf",
+          "finding": "Government UPRA regional document page3 visually matches six alternating blue/red stripes and thirty white stars arranged as a larger star. Current rendered Commons page names Magdalena and credits Fibonacci; stale API description/categories naming Norte de Santander are contradicted by the actual artwork and current file page."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Magdalena.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "91384cecac91e085375e728ccfaa9ed9e16d9ebcab5fcf1e00f5085c15fb80d8",
+      "sha256": "145bdca5e9ffc43545ff7b2008ba215a5739aedcfaae1b929d0ad7f09e38624b",
+      "bytes": 1082,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_comparison": {
+        "primary_pdf_page": 3,
+        "finding": "Downloaded source flag visually matches government illustration; source artwork contains30 stars, as does the depicted government version. The older2019 decree quotation mentions20; no claim of complete amendment-history review."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Álava",
+      "catalogue_id": "spain-alava-recordings",
+      "key": "alava",
+      "outcome": "asset_added",
+      "asset_filename": "alava.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_%C3%81lava.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_%C3%81lava.svg",
+      "creator": "HansenBCN",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reviewed_on": "2026-10-24",
+      "finding": "Own official bulletin identifies the territorial coat of arms and its placement in the centre of the flag. The sourced full-flag depiction is credited separately from government corporate marks.",
+      "sources": [
+        {
+          "url": "https://www.araba.eus/botha/Boletines/2008/092/2008_092_05361.pdf",
+          "finding": "Own official bulletin identifies the territorial coat of arms and its placement in the centre of the flag. The sourced full-flag depiction is credited separately from government corporate marks."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_%C3%81lava.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "58a8df6b7df41f6154b898b0f05ab1575ad40d5002842cbe40d690bb0af0d4ac",
+      "sha256": "58a8df6b7df41f6154b898b0f05ab1575ad40d5002842cbe40d690bb0af0d4ac",
+      "bytes": 251788,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Bizkaia",
+      "catalogue_id": "spain-bizkaia-recordings",
+      "key": "bizkaia",
+      "outcome": "asset_added",
+      "asset_filename": "bizkaia.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_Vizcaya.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Bandera_de_Vizcaya.svg",
+      "creator": "SanchoPanzaXXI",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reviewed_on": "2026-10-24",
+      "finding": "Own consolidated foral identity law specifies crimson field, centred territorial coat of arms, green oak and red cross. Uses the current2007 arms, not the historic lordship/proposed Arana designs.",
+      "sources": [
+        {
+          "url": "https://jjggbizkaia.eus/documents/8778164/10845456/A4%2Bseptiembre%2B2022.pdf/6e44a6c8-3742-cb2d-4878-8b7859aa0631",
+          "finding": "Own consolidated foral identity law specifies crimson field, centred territorial coat of arms, green oak and red cross. Uses the current2007 arms, not the historic lordship/proposed Arana designs."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Bandera_de_Vizcaya.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "eb640966595b54a63e11749862513b379091df5540df7ba42d10b8258cb96bbe",
+      "sha256": "eb640966595b54a63e11749862513b379091df5540df7ba42d10b8258cb96bbe",
+      "bytes": 660539,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Gipuzkoa",
+      "catalogue_id": "spain-gipuzkoa-recordings",
+      "key": "gipuzkoa",
+      "outcome": "asset_added",
+      "asset_filename": "gipuzkoa.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Guip%C3%BAzcoa.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Flag_of_Guip%C3%BAzcoa.svg",
+      "creator": "HansenBCN",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reviewed_on": "2026-10-24",
+      "finding": "Own foral identity law specifies the traditional white flag with the territorial arms in its centre. File is the current territorial design, not the original Arana proposal.",
+      "sources": [
+        {
+          "url": "https://egoitza.gipuzkoa.eus/ogasuna/normativa/docs/LE0000220030_19900430.HTML",
+          "finding": "Own foral identity law specifies the traditional white flag with the territorial arms in its centre. File is the current territorial design, not the original Arana proposal."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Guip%C3%BAzcoa.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "9ed8fc41a0af58cd9f64892ab53e32e9ff901313b592a729899e717157d37d47",
+      "sha256": "9ed8fc41a0af58cd9f64892ab53e32e9ff901313b592a729899e717157d37d47",
+      "bytes": 350807,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Moravian-Silesian Region",
+      "catalogue_id": "czech-moravian-silesian-recordings",
+      "key": "moravian-silesian",
+      "outcome": "asset_added",
+      "asset_filename": "moravian-silesian.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Moravian-Silesian_Region.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Moravian-Silesian_Region.svg",
+      "creator": "Tlusťa; Lukáš Mižoch",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own regional annual report describes all four flag quarters, including Silesian/Moravian eagles, Ostrava horse and the Opava/Těšín quarter. Source matches the full flag, distinct from the controlled corporate logo.",
+      "sources": [
+        {
+          "url": "https://www.msk.cz/assets/kraj/zivot_v_kraji/vyrocni-zprava-moravskoslezskeho-kraje-za-rok-2023_4.pdf",
+          "finding": "Own regional annual report describes all four flag quarters, including Silesian/Moravian eagles, Ostrava horse and the Opava/Těšín quarter. Source matches the full flag, distinct from the controlled corporate logo."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Moravian-Silesian_Region.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "1dde5e63f826ed9ec894643d5a3f5da8f18761282515bb07eda74c3512ed7ac2",
+      "sha256": "1dde5e63f826ed9ec894643d5a3f5da8f18761282515bb07eda74c3512ed7ac2",
+      "bytes": 186647,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Geneva",
+      "catalogue_id": "switzerland-geneva-recordings",
+      "key": "geneva",
+      "outcome": "asset_added",
+      "asset_filename": "geneva.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Geneva.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Canton_of_Geneva.svg",
+      "creator": "Werner Luzi for Louis Mühlemann; vector Swiss Army",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own canton source refers to its yellow/red flag. Commons full cantonal flag follows the Swiss Army flag-regulation drawing: half eagle and key, not another commune of Geneva.",
+      "sources": [
+        {
+          "url": "https://www.ge.ch/document/nuit-du-sport-genevois-justine-mettraux-caryl-cordt-moller-sacres-sportive-sportif-annee",
+          "finding": "Own canton source refers to its yellow/red flag. Commons full cantonal flag follows the Swiss Army flag-regulation drawing: half eagle and key, not another commune of Geneva."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Geneva.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "d76091314b81ada08f8621ddcbbca54dd74309dbd41b31c067628de3348c3787",
+      "sha256": "ad7e283275ab1a4e942636a13fe8a0d12f3a27a6b1e911a02dae61ac66990363",
+      "bytes": 78194,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "St Gallen",
+      "catalogue_id": "switzerland-st-gallen-recordings",
+      "key": "st-gallen",
+      "outcome": "asset_added",
+      "asset_filename": "st-gallen.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Sankt_Gallen.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Canton_of_Sankt_Gallen.svg",
+      "creator": "Unknown original author; Commons SVG contributors",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own current ordinance defines green/white colours, white bundle and white axe facing the pole. Separate 2025 canton guidance explicitly distinguishes permissible private flag depiction from reserved shield arms.",
+      "sources": [
+        {
+          "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/113.1",
+          "finding": "Own current ordinance defines green/white colours, white bundle and white axe facing the pole. Separate 2025 canton guidance explicitly distinguishes permissible private flag depiction from reserved shield arms."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Sankt_Gallen.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        },
+        {
+          "url": "https://www.sg.ch/content/dam/sgch/politik-verwaltung/abstimmungen-wahlen/Verwendung%20von%20Wappen%20im%20Wahlkampf.pdf",
+          "finding": "10February2025 official guidance permits private flag use when not misleading or unlawful, separately from reserved shield arms."
+        }
+      ],
+      "source_download_sha256": "df7f05a5a1edfe8a301261ab4c59a2db3772352af7d087cf70eb021b8d602358",
+      "sha256": "df7f05a5a1edfe8a301261ab4c59a2db3772352af7d087cf70eb021b8d602358",
+      "bytes": 1096,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Mecklenburg-Vorpommern",
+      "catalogue_id": "germany-mecklenburg-vorpommern-recordings",
+      "key": "mecklenburg-western-pomerania",
+      "outcome": "asset_added",
+      "asset_filename": "mecklenburg-western-pomerania.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Mecklenburg-Western_Pomerania.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Mecklenburg-Western_Pomerania.svg",
+      "creator": "Commons contributors; original author not identified",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own government confirms blue, white, yellow, white and red civilian flag is freely usable. Uses that plain flag; the separately reserved service flag with bull/griffin is not used.",
+      "sources": [
+        {
+          "url": "https://www.regierung-mv.de/service/Landessymbole/Flagge/",
+          "finding": "Own government confirms blue, white, yellow, white and red civilian flag is freely usable. Uses that plain flag; the separately reserved service flag with bull/griffin is not used."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mecklenburg-Western_Pomerania.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "2197a9d685d4130340acce608778b43206122ad7b7320fa37ce87e68ab1a7bcf",
+      "sha256": "2197a9d685d4130340acce608778b43206122ad7b7320fa37ce87e68ab1a7bcf",
+      "bytes": 279,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "South Tyrol",
+      "catalogue_id": "italy-south-tyrol-recordings",
+      "key": "south-tyrol",
+      "outcome": "asset_added",
+      "asset_filename": "south-tyrol.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Tyrol.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_South_Tyrol.svg",
+      "creator": "F l a n k e r",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "reviewed_on": "2026-10-24",
+      "finding": "Own province symbols page depicts the white/red eagle flag and distinguishes official banner/seal/arms authorizations. Sourced full-flag illustration is used only to identify the jurisdiction, not as project branding or an authorized official mark.",
+      "sources": [
+        {
+          "url": "https://autonomie.provinz.bz.it/de/die-symbole-der-autonomie-wappen-siegel-banner",
+          "finding": "Own province symbols page depicts the white/red eagle flag and distinguishes official banner/seal/arms authorizations. Sourced full-flag illustration is used only to identify the jurisdiction, not as project branding or an authorized official mark."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Tyrol.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "5da39c90ae7a57e6098199c48adbc3f2dbc3901c3eba6cde66c172de2d37f034",
+      "sha256": "5da39c90ae7a57e6098199c48adbc3f2dbc3901c3eba6cde66c172de2d37f034",
+      "bytes": 41342,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "use_scope": "Informational depiction of the complete jurisdiction flag. The listed source conditions remain recorded; no contact, approval or blanket symbol-use clearance is asserted. Not used as project branding, a seal, or an endorsement.",
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Campania",
+      "catalogue_id": "italy-campania-recordings",
+      "key": "campania",
+      "outcome": "asset_added",
+      "asset_filename": "campania.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Campania.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Flag_of_Campania.svg",
+      "creator": "F l a n k e r",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-24",
+      "finding": "Own regional law defines white shield with red band and sea-blue gonfalon. Commons full regional flag uses the same arms/blue field; this does not claim a separate flag-adoption instrument was located.",
+      "sources": [
+        {
+          "url": "https://www.regione.campania.it/normativa/userFile/documents/attachments/1447_1_71_storico.pdf",
+          "finding": "Own regional law defines white shield with red band and sea-blue gonfalon. Commons full regional flag uses the same arms/blue field; this does not claim a separate flag-adoption instrument was located."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Campania.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "ed0a1841cdf9f84d5749856bea7e2b3eb737533e797c82a2a577cc1e8eefe449",
+      "sha256": "ed0a1841cdf9f84d5749856bea7e2b3eb737533e797c82a2a577cc1e8eefe449",
+      "bytes": 2386,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Kinmen",
+      "catalogue_id": "taiwan-kinmen-recordings",
+      "key": "kinmen",
+      "outcome": "asset_added",
+      "asset_filename": "kinmen.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Kinmen_County.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Kinmen_County.svg",
+      "creator": "Hairy35061; revisions Akira123",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reviewed_on": "2026-10-24",
+      "finding": "Own county source confirms county flag handed to its delegation. Commons identifies Kinmen County flag, not a separate township or county council emblem. Exact official colour standard is not newly certified.",
+      "sources": [
+        {
+          "url": "https://www.kinmen.gov.tw/News_Content2.aspx?n=98E3CA7358C89100&s=8F704FE97F9D6E7A&sms=BF7D6D478B935644",
+          "finding": "Own county source confirms county flag handed to its delegation. Commons identifies Kinmen County flag, not a separate township or county council emblem. Exact official colour standard is not newly certified."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kinmen_County.svg",
+          "finding": "File identity, current artwork and reuse licence checked; source bytes SHA1 match retrieved metadata."
+        }
+      ],
+      "source_download_sha256": "ce96b9202761579a6dc280e59028576004ef16b2c3c4de55589507bf240e3f8a",
+      "sha256": "80e60b7772d1a0e8605e6584cde8e41e2ccb448e219d7825e4221f2a0eb229eb",
+      "bytes": 19711,
+      "modifications": "Removed one nonrendering off-canvas image element referencing an obsolete local file; visible vector artwork unchanged. Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "XML parsed without entity resolution; no DTD/entities, scripts, event handlers, foreign content, animation or external active resources."
+      },
+      "visual_qa": {
+        "engines": [
+          "Chromium",
+          "WebKit"
+        ],
+        "loaded": true,
+        "source_and_cleaned_screenshots_identical": true
+      }
+    },
+    {
+      "jurisdiction": "Aceh",
+      "catalogue_id": "indonesia-aceh-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "unresolved_current_flag_status",
+      "finding": "Official 19 August2026 report places the Aceh flag issue among matters still seeking central-government attention/solution. The Free Aceh Movement SVG is not installed as settled territorial identification.",
+      "source_page": "https://humas.acehprov.go.id/wagub-bersama-wamendagri-hadiri-pengukuhan-dpp-fkka-aceh/amp/",
+      "sources": [
+        {
+          "url": "https://humas.acehprov.go.id/wagub-bersama-wamendagri-hadiri-pengukuhan-dpp-fkka-aceh/amp/",
+          "finding": "Official 19 August2026 report places the Aceh flag issue among matters still seeking central-government attention/solution. The Free Aceh Movement SVG is not installed as settled territorial identification."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Central Kalimantan",
+      "catalogue_id": "indonesia-kalimantan-tengah-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "exact_flag_drawing_unresolved",
+      "finding": "Current government article explicitly mentions a provincial emblem/logo flag in use, but this bounded check did not match its actual field/construction to the Commons own-work drawing. This is not a finding of no provincial flag.",
+      "source_page": "https://setda.kalteng.go.id/index.php/publikasi/detail/gubernur-agustiar-sabran-saksikan-atraksi-terjun-payung-hut-ke-81-ri-di-kalteng",
+      "sources": [
+        {
+          "url": "https://setda.kalteng.go.id/index.php/publikasi/detail/gubernur-agustiar-sabran-saksikan-atraksi-terjun-payung-hut-ke-81-ri-di-kalteng",
+          "finding": "Current government article explicitly mentions a provincial emblem/logo flag in use, but this bounded check did not match its actual field/construction to the Commons own-work drawing. This is not a finding of no provincial flag."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Central Java",
+      "catalogue_id": "indonesia-jawa-tengah-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "emblem_background_not_flag_adoption",
+      "finding": "The specific law cited by Commons was read: Article13(2) specifies ivory backgrounds for enumerated emblem uses, rather than adopting the depicted rectangular flag; Article16 requires permission for other unlisted uses. Flag identity/use scope remains unresolved, not a blanket statement that informational flag depiction is illegal.",
+      "source_page": "https://jdih.jatengprov.go.id/downloads/produk_hukum/perda/perda_tahun_1984/perda_9_th_1984.pdf",
+      "sources": [
+        {
+          "url": "https://jdih.jatengprov.go.id/downloads/produk_hukum/perda/perda_tahun_1984/perda_9_th_1984.pdf",
+          "finding": "The specific law cited by Commons was read: Article13(2) specifies ivory backgrounds for enumerated emblem uses, rather than adopting the depicted rectangular flag; Article16 requires permission for other unlisted uses. Flag identity/use scope remains unresolved, not a blanket statement that informational flag depiction is illegal."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Yogyakarta",
+      "catalogue_id": "indonesia-di-yogyakarta-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "specific_flag_adoption_unresolved",
+      "finding": "The file links generic PP77/2007 on regional symbols rather than a specific provincial adoption/design instrument. Do not silently convert a licensed emblem on a field into a verified current territorial flag.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Yogyakarta.svg",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Yogyakarta.svg",
+          "finding": "The file links generic PP77/2007 on regional symbols rather than a specific provincial adoption/design instrument. Do not silently convert a licensed emblem on a field into a verified current territorial flag."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Northern Cape",
+      "catalogue_id": "south-africa-northern-cape-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "territorial_flag_not_verified",
+      "finding": "Government province material confirms the coat of arms. No adopted territorial flag construction was verified in this bounded check; a derivative coat-of-arms banner is not installed. No claim of universal flag absence.",
+      "source_page": "https://www.gcis.gov.za/sites/default/files/docs/Land-and-its-people.pdf",
+      "sources": [
+        {
+          "url": "https://www.gcis.gov.za/sites/default/files/docs/Land-and-its-people.pdf",
+          "finding": "Government province material confirms the coat of arms. No adopted territorial flag construction was verified in this bounded check; a derivative coat-of-arms banner is not installed. No claim of universal flag absence."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Western Cape",
+      "catalogue_id": "south-africa-western-cape-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "territorial_flag_not_verified",
+      "finding": "The current official constitutional source permits provincial symbols by legislation but does not itself adopt a flag drawing. General government branding/coat of arms is not sufficient to manufacture a territorial flag.",
+      "source_page": "https://www.wcpp.gov.za/sites/default/files/2023-09-10%20Constitution%20Booklet%20A6%20for%20Web.pdf",
+      "sources": [
+        {
+          "url": "https://www.wcpp.gov.za/sites/default/files/2023-09-10%20Constitution%20Booklet%20A6%20for%20Web.pdf",
+          "finding": "The current official constitutional source permits provincial symbols by legislation but does not itself adopt a flag drawing. General government branding/coat of arms is not sufficient to manufacture a territorial flag."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Free State",
+      "catalogue_id": "south-africa-free-state-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "territorial_flag_not_verified",
+      "finding": "Government material enumerates provincial coats of arms, including Free State. No current adopted flag drawing was verified in this bounded check; older homeland/Orange Free State flags are not substitutes.",
+      "source_page": "https://www.gov.za/sites/default/files/gcis_document/201501/artsandcultureannualreport.pdf",
+      "sources": [
+        {
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201501/artsandcultureannualreport.pdf",
+          "finding": "Government material enumerates provincial coats of arms, including Free State. No current adopted flag drawing was verified in this bounded check; older homeland/Orange Free State flags are not substitutes."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Jeonnam–Gwangju Integrated Special City",
+      "catalogue_id": "south-korea-jeonnam-gwangju-council-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "successor_flag_unverified",
+      "finding": "The existing catalogue and prior review identify the successor council at this route but leave its new territorial flag unverified. This flag pass retains that explicit gap and does not reuse predecessor flags; no new flag/design source is claimed.",
+      "source_page": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+      "sources": [
+        {
+          "url": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+          "finding": "The existing catalogue and prior review identify the successor council at this route but leave its new territorial flag unverified. This flag pass retains that explicit gap and does not reuse predecessor flags; no new flag/design source is claimed."
+        }
+      ],
+      "no_outreach_sent": true,
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-asia-africa.json",
+      "followup": "Prior primary evidence revisited and targeted search repeated; no confirmed replacement drawing established. This is a named unresolved disposition, not a claim that no flag exists."
+    },
+    {
+      "jurisdiction": "Montevideo",
+      "country": "Uruguay",
+      "key": "montevideo",
+      "requested_file_title": "File:Flag of Montevideo Department.svg",
+      "outcome": "neutral_retained",
+      "asset_filename": null,
+      "source_page": "https://www.juntamvd.gub.uy/viejo/data/decretos/10140/12455.htm",
+      "sources": [
+        {
+          "url": "https://www.juntamvd.gub.uy/viejo/data/decretos/10140/12455.htm",
+          "reviewed_on": "2026-10-24",
+          "access": "Primary search-index text read; direct web-reader returned502.",
+          "finding": "Historic Junta resolution12455 explicitly describes the department as lacking its own identifying flag and earlier unsuccessful design competition."
+        },
+        {
+          "url": "https://www.juntamvd.gub.uy/viejo/data/decretos/12272/13418.pdf",
+          "reviewed_on": "2026-10-24",
+          "access": "Primary indexed resolution text.",
+          "finding": "Later resolution13418 discusses a departmental flag design competition. A proposal/competition is not proof of adoption."
+        }
+      ],
+      "confirmed": "No verified current adopted departmental flag asset found in this bounded review.",
+      "unresolved": "Current adoption instrument and approved design, if one has subsequently been adopted; historical absence is not a complete current legal determination.",
+      "fallback": "Keep neutral legislature mark; do not substitute Uruguay, a party flag or an invented design.",
+      "catalogue_id": "uruguay-montevideo-recordings",
+      "prior_report": "reports/discovery/2026-10-24-catalogue-flags-americas.json",
+      "followup": "Current targeted search still locates a proposed flag competition, rather than an adopted flag drawing; retained neutral."
+    },
+    {
+      "jurisdiction": "Eastern Cape",
+      "catalogue_id": "south-africa-eastern-cape-recordings",
+      "asset_filename": null,
+      "outcome": "neutral_retained",
+      "reviewed_on": "2026-10-24",
+      "reason": "unofficial_flag_rejected",
+      "finding": "Commons specifically identifies its Eastern Cape flag drawing as fictitious/proposed/unofficial. Current legislature-hosted government report discusses the national flag; no adopted provincial flag design has been established. Do not substitute a coat-of-arms banner or a former homeland flag.",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Eastern_Cape_Province.png",
+          "finding": "File warning expressly identifies the artwork as fictitious, proposed or unofficial."
+        },
+        {
+          "url": "https://docs.eclegislature.gov.za/annual_report/2024-25%20ANNUAL%20REPORT_SPORTS%2C%20RECREATION%2C%20ARTS%20AND%20CULTURE.pdf",
+          "finding": "Own legislature-hosted government report describes national-symbol education; no current provincial flag construction confirmed."
+        }
+      ]
+    }
+  ]
+}
